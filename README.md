@@ -5,19 +5,9 @@
 </p>
 
 <p align="center"><b>PACSTALL</b></p>
-This is a small project that aims to install dependencies with your package manager then installs the actual package from source.
 
 
 
-<p align="center">
-<a href="https://github.com/Henryws/pacstall"><img src="https://raw.githubusercontent.com/Henryws/pacstall/master/website-images/ezgif.com-video-to-gif.gif"></a>
-</p>
 
-### Installing
 
-You can grab the deb files [here](https://github.com/Henryws/pacstall/releases/latest). If that's not your thing you can run this command:
-
-`sudo wget -q https://raw.githubusercontent.com/Henryws/pacstall/master/pacstall -O /bin/pacstall && sudo echo "Henryws" >> /usr/share/pacstall/repo/pacstallrepo.txt`
-
-DO NOT CLONE THIS REPOSITORY!!
-This serves as the scripts home and the packages. If you clone this repository, you will download all the packages currently available in this repository (which is a lot)
+This is where (as of 1.0.4 Celeste) package scripts for pacstall are located
