@@ -8,6 +8,7 @@ breaks="adapta"
 description="An adaptive Gtk+ theme based on Material Design Guidelines"
 
 prepare() {
+          cd adapta-gtk-theme
           command -v $build_depends
           ./autogen.sh --prefix=/usr
 }
@@ -17,5 +18,5 @@ build() {
 }
 
 install() {
-          sudo porg -lp $pkgname "make install"
+          sudo porg -lp adapta-gtk-theme "make install"
 }
