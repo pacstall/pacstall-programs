@@ -4,7 +4,7 @@ version="27.1"
 url="https://gnu.askapache.com/emacs/emacs-27.1.tar.xz"
 license="GPL"
 build_depends="build-dep"
-depends="texinfo-doc-nonfree gnutls install-info info libx11-dev libxpm-dev libjpeg libpng-dev libgif-dev libtiff5 libgtk2.0-dev libncurses5-dev libxpm-dev automake autoconf libgnutls28-dev"
+depends="texinfo-doc-nonfree gnutls-bin install-info info libx11-dev libxpm-dev libjpeg62 libpng-dev libgif-dev libtiff5 libgtk2.0-dev libncurses5-dev libxpm-dev automake autoconf libgnutls28-dev"
 gives="emacs"
 breaks="afjdsrlkahef"
 prepare() {
