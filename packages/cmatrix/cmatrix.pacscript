@@ -7,7 +7,7 @@ breaks=sgsdfg
 gives="cmatrix"
 
 prepare() {
-          cd cmatrix
+          cd cmatrix-$version
           ./configure
 }
 
