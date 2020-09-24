@@ -14,6 +14,7 @@ prepare() {
 }
 
 build() {
+        echo
 }
 
 install() {
