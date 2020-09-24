@@ -5,6 +5,7 @@ url="https://gnu.askapache.com/emacs/emacs-27.1.tar.xz"
 license="GPL"
 build_depends="build-dep"
 gives="emacs"
+breaks="afjdsrlkahef"
 prepare() {
           cd emacs-27.1
           ./autogen.sh
