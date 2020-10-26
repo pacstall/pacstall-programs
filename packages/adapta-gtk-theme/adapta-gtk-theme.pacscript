@@ -8,7 +8,6 @@ breaks="adapta"
 description="An adaptive Gtk+ theme based on Material Design Guidelines"
 
 prepare() {
-          cd adapta-gtk-theme
           command -v $build_depends
           ./autogen.sh --prefix=/usr
 }
