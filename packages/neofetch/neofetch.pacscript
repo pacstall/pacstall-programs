@@ -9,7 +9,7 @@ breaks="afajse"
 description="Neofetch is a command-line system information tool written in bash 3.2+"
 
 prepare() {
-          cd neofetch-7.1.0
+          true
           
 }
 
