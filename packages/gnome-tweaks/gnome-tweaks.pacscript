@@ -17,5 +17,5 @@ build() {
 }
 
 install() {
-          sudo porg -lp gnome-tweaks "ninja -C builddir install"
+          sudo porg -lp gnome-tweaks "sudo ninja -C builddir install"
 }
