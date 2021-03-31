@@ -1,7 +1,7 @@
 name="kvantum"
 pkgname="kvantum"
 version="0.19.0"
-url="https://github.com/tsujan/Kvantum/releases/download/V0.17.0/Kvantum-0.19.0.tar.xz"
+url="https://github.com/tsujan/Kvantum/releases/download/V0.19.0/Kvantum-0.19.0.tar.xz"
 license="GPL"
 build_depends="g++ cmake"
 depends="libx11-dev qtbase5-dev libqt5svg5-dev libqt5x11extras5-dev libkf5windowsystem-dev"
