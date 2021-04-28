@@ -3,7 +3,7 @@ pkgname="st"
 version="0.16.1"
 url="https://github.com/LukeSmithxyz/st.git"
 license="MIT"
-build_depends="make"
+build_depends="make libharfbuzz-bin libxft-dev libpango1.0-dev"
 depends="fontconfig"
 gives="st"
 
