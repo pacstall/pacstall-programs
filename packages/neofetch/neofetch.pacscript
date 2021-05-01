@@ -18,5 +18,5 @@ build() {
 }
 
 install() {
-          sudo porg -lp neofetch "make install"
+          sudo make install DESTDIR=/usr/src/pacstall/neofetch
 }
