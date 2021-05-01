@@ -8,8 +8,7 @@ depends="libx11-dev qtbase5-dev libqt5svg5-dev libqt5x11extras5-dev libkf5window
 gives="kvantum"
 breaks="qt5-style-kvantum"
 description="Kvantum (by Pedram Pourang, a.k.a. Tsu Jan) is an SVG-based theme engine for Qt, tuned to KDE and LXQt, with an emphasis on elegance, usability and practicality."
-destdir="/usr/src/pacstall/kvantum"
-bindir="usr/local/bin"
+hash="c3c73ee62c23c60342b6a2aaca670e2a6316bc17b51d8666278399c36085ee7b"
 
 prepare() {
           cd Kvantum
@@ -22,5 +21,5 @@ build() {
 }
 
 install() {
-          sudo porg -lp kvantum "make install DESTDIR=$destdir"
+    make install DESTDIR=/usr/src/pacstall/kvantum
 }
