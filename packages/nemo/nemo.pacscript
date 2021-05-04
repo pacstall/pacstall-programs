@@ -9,14 +9,14 @@ gives="nemo"
 breaks="thing"
 
 prepare() {
-          meson build
+          meson --prefix="/usr/src/pacstall/nemo" build 
 }
 
 build() {
         cd build
-        sudo ninja
+        sudo ninja -j$(nproc)
 }
 
 install() {
-          sudo porg -lp nemo "sudo ninja install"
+          sudo DESTDIR=/usr/src/pacstall/nemo ninja install"
 }
