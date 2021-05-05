@@ -22,7 +22,10 @@ install() {
           sudo make install DESTDIR=/usr/src/pacstall
 }
 ```
-the first variable is `name`. It is what pacstall records and is the most important. `name` will be in `/usr/src/pacstall/name` (where pacstall puts files to symlink to the system) and `/var/log/pacstall_installed/name` (a file which holds metadata like version number, date installed, description, etc).
+
+I will be using the word `pkgname` as the name of your package.
+
+the first variable is `name`. It is what pacstall records and is the most important. The contents of `name`, (`pkgname`) will be in `/usr/src/pacstall/pkgname` (where pacstall puts files to symlink to the system) and `/var/log/pacstall_installed/pkgname` (a file which holds metadata like version number, date installed, description, etc).
 
 The next is `version`. It is the version number (obviously). It should (but not required) be using [semver](https://semver.org). As long as the version number can be incremented, it works. When you change this version to a higher number, it will trigger an upgrade when you run `sudo pacstall -Up`.
 
@@ -42,6 +45,8 @@ The `prepare` function is what you run to prepare a package. You don’t need to
 
 The `build` function is what compiles the package. Use multicore as much as possible. To get the number of cores in a system, run `nproc`. You can use that in combination with `-j$(nproc)` to compile on multicore (`make -j$(nproc)`).
 
-The install function installs the package. The most important thing is to install to `/usr/src/pacstall/name`. An example with make would be `sudo make install DESTDIR=/usr/src/pacstall/name`.
+The install function installs the package. The most important thing is to install to `/usr/src/pacstall/pkgname`. An example with make would be `sudo make install DESTDIR=/usr/src/pacstall/pkgname`.
+
+You need to save it as `pkgname.pacscript`. To add a package to `pacstall-programs`, fork it and create a directory in packages called `pkgname` and add the `pkgname.pacscript` inside it. Then send me a pull request.
 
 ### Remember to wrap everything in double quotes
