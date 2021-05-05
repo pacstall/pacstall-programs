@@ -18,10 +18,10 @@ prepare() {
 }
 
 build() {
-        cmake -DCMAKE_INSTALL_PREFIX=/usr/src/pacstall/stellarium -j$(nproc) ../.. 
+        cmake -DCMAKE_INSTALL_PREFIX="/" -j$(nproc) ../.. 
         make -j$(nproc)
 }
 
 install() {
-        sudo make install DESTDIR=/usr/src/pacstall/stellarium
+        sudo make install -j$(nproc) DESTDIR=/usr/src/pacstall/stellarium
 }
