@@ -1,4 +1,4 @@
-name="blang"
+name="blang-git"
 version="0.0.1"
 url="https://github.com/Ganesha2282882/blang/archive/refs/heads/main.zip"
 build_depends="python3 python3-pip python3-minimal"
