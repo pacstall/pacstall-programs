@@ -50,3 +50,5 @@ The install function installs the package. The most important thing is to instal
 You need to save it as `pkgname.pacscript`. To add a package to `pacstall-programs`, fork it and create a directory in packages called `pkgname` and add the `pkgname.pacscript` inside it. Then send me a pull request.
 
 ### Remember to wrap everything in double quotes
+
+You can test it by cd'ing into the directory holding `pkgname.pacscript` and running `sudo pacstall -Il pkgname`. If it works, good! If not, pacstall should tell you what went wrong
