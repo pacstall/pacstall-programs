@@ -1,4 +1,4 @@
-name="Popsicle"
+name="popsicle"
 pkgname="popsicle"
 version="1.3.0"
 url="https://github.com/pop-os/popsicle/archive/refs/tags/1.3.0.zip"
