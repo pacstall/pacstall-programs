@@ -19,8 +19,11 @@ build() {
 }
 
 install() {
-        install -Dm644 "minecraft-launcher.svg"    "/usr/share/icons/hicolor/symbolic/apps/minecraft-launcher.svg"
-        install -Dm644 "minecraft-launcher.desktop"    "/usr/share/applications/minecraft-launcher.desktop"
-        install -Dm755 "minecraft-launcher" "/usr/bin/minecraft-launcher"
-
+        sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/bin
+        sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
+        sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/share/applications
+        chmod +x minecraft-launcher
+        mv minecraft-launcher /usr/src/pacstall/minecraft-launcher/usr/bin
+        mv minecraft-launcher.svg /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
+        mv minecraft-launcher.desktop /usr/src/pacstall/minecraft-launcher/usr/share/applications
 }
