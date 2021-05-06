@@ -17,6 +17,6 @@ build() {
 }
 
 install() {
-    sudo make DESTDIR=/usr/src/pacstall/nano install
+    sudo make install DESTDIR=/usr/src/pacstall/nano
 }
 
