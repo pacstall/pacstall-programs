@@ -9,6 +9,7 @@ depends="neofetch plasma"
 breaks="libfoo-git"
 description=“foo is the ultimate program capable of foo and bar!”
 hash=“2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae”
+removescript="yes"
 prepare() {
           ./autogen.sh
 }
@@ -20,6 +21,14 @@ build() {
 
 install() {
           sudo make install DESTDIR=/usr/src/pacstall
+}
+
+postinst(){
+          echo "Do post install stuff here"
+}
+
+removescript(){
+          rm somedir
 }
 ```
 
@@ -41,11 +50,17 @@ The next is `version`. It is the version number (obviously). It should (but not 
 
 `hash` is the output of running `sha256sum 1.0.zip` (from the example above). You just need the number and not the number + file name.
 
+`removescript` is a variable that is used when you want to signify that something should be done after a package is uninstalled. It should be yes or not in the script at all
+
 The `prepare` function is what you run to prepare a package. You don’t need to cd into the package source directory because pacstall will do that already.
 
 The `build` function is what compiles the package. Use multicore as much as possible. To get the number of cores in a system, run `nproc`. You can use that in combination with `-j$(nproc)` to compile on multicore (`make -j$(nproc)`).
 
 The install function installs the package. The most important thing is to install to `/usr/src/pacstall/pkgname`. An example with make would be `sudo make install DESTDIR=/usr/src/pacstall/pkgname`.
+
+`postinst` is what commands should be run after pkg is installed. If you don't need it, leave it out
+
+`removescript` is what commands should be run after pkg is uninstalled. The contents will be remotely sourced when you trigger a `-R pkg` flag. This is NOT a script uninstalls the package, just what should be run. [Here's an example](https://github.com/Henryws/pacstall-programs/blob/master/packages/tuner/tuner.pacscript) of how that would be done
 
 You need to save it as `pkgname.pacscript`. To add a package to `pacstall-programs`, fork it and create a directory in packages called `pkgname` and add the `pkgname.pacscript` inside it. Then send me a pull request.
 
