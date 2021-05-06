@@ -15,7 +15,7 @@ build() {
 }
 
 install() {
-          sudo mkdir -p  /usr/src/pacstall/blang/bin
-          sudo cp blang  /usr/src/pacstall/blang/bin
-          sudo chmod 755 /usr/src/pacstall/blang/bin/blang
+          sudo mkdir -p  /usr/src/pacstall/blang-git/bin
+          sudo cp blang  /usr/src/pacstall/blang-git/bin
+          sudo chmod 755 /usr/src/pacstall/blang-git/bin/blang
 }
