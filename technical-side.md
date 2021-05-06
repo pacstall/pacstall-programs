@@ -6,7 +6,8 @@
 In Pacstall, the main (long and complicated) scripts are too long to put in `/bin/pacstall` so I put them in `/usr/share/pacstall/scripts/` and they are sourced from pacstall. You can’t just source a script and it runs, because some variables are passed through from pacstall. The smaller flags are in `/bin/pacstall`
 
 ### Where what goes where
-`/tmp/pacstall/pkg` is the temporary building space for packages. Pacstall downloads them into their own directory and builds. One advantage of tmp is that it runs off ram so there is less overhead than running from an ssd or hard drive. This directory will be removed after install (or fail) to 1) reduce RAM, and 2) clear space
+`/tmp/pacstall/pkg` is the temporary building space for packages. Pacstall downloads them into their own directory and builds. One advantage of tmp is that it runs off ram so there is less overhead than running from an ssd or hard drive. This directory will be removed after install (or fail) to 1) reduce RAM, and 2) clear space.
+
 `/usr/src/pacstall/pkg` is where the files for built packages live. They are symlinked to the system from here. If you run `sudo stow -D pkg` from `/usr/src/pacstall`, it will unlink from stow. Then you could run `sudo rm -rf pkg` to completely remove this although pacstall does this with the `-R` flag.
 `/var/log/pacstall_installed/pkg` is a text file containing metadata for the package. It contains the date installed, description, version, and if applicable, a removescript reference
 
