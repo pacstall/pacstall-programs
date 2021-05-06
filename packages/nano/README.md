@@ -3,7 +3,7 @@
 ## Install
 
 ```
-$ pacinstall -I nano
+$ pacstall -I nano
 ```
 
 Homepage: https://www.nano-editor.org/
