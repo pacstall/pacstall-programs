@@ -10,7 +10,7 @@ description="Official Minecraft Launcher"
 hash="e84cadeb55db50d673bb97d3ad1c9ad52f4e5999ed25fdcf3859cec43b5a449e"
 
 prepare() {
-        wget https://gist.githubusercontent.com/aranym0/c752045e3b71bdb5d8c208f57dc12dba/raw/7a6c1864e98c12c64c1cfdbb20cca4cc06b348ae/minecraft-launcher.desktop
+        wget https://gist.githubusercontent.com/aranym0/c752045e3b71bdb5d8c208f57dc12dba/raw/4aa522fe02cd827300ce102b3d5f38ba38798a9c/minecraft-launcher.desktop
         wget https://launcher.mojang.com/download/minecraft-launcher.svg
 }
 
