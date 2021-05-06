@@ -17,8 +17,8 @@ build() {
 }
 
 install() {
-        install -Dm644 "minecraft-launcher.svg"    "$pkgdir/usr/share/icons/hicolor/symbolic/apps/minecraft-launcher.svg"
-        install -Dm644 "$minecraft-launcher.desktop"    "$pkgdir/usr/share/applications/minecraft-launcher.desktop"
-        install -Dm755 "minecraft-launcher" "$pkgdir/usr/bin/minecraft-launcher"
+        install -Dm644 "minecraft-launcher.svg"    "/usr/share/icons/hicolor/symbolic/apps/minecraft-launcher.svg"
+        install -Dm644 "$minecraft-launcher.desktop"    "/usr/share/applications/minecraft-launcher.desktop"
+        install -Dm755 "minecraft-launcher" "/usr/bin/minecraft-launcher"
 
 }
