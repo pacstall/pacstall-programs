@@ -16,8 +16,8 @@ prepare() {
 }
 
 build() {
-  make -j$(nproc) build DESTDIR=/usr/src/pacstall/uwufetch
-  make -j$(nproc) man DESTDIR=/usr/src/pacstall/uwufetch
+  make -j"$(nproc)" build DESTDIR=/usr/src/pacstall/uwufetch
+  make -j"$(nproc)" man DESTDIR=/usr/src/pacstall/uwufetch
 }
 
 install() {
