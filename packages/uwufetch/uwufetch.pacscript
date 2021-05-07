@@ -3,10 +3,10 @@ pkgname="uwufetch"
 version="1.4"
 url="https://github.com/TheDarkBug/uwufetch/archive/refs/tags/1.4.zip"
 description="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
-build_depends="make gcc pandoc"
-depends=""
+build_depends="gcc pandoc"
+optdepends="viu lshw"
 gives="uwufetch"
-breaks="uwufetch-git"
+breaks="uwufetch-git uwufetch-bin"
 hash="062de9ec1af10ce5bccc5cd99ab72511883076c96d6ebb6f21647fb3486ca391"
 
 prepare() {
@@ -16,8 +16,8 @@ prepare() {
 }
 
 build() {
-  make -j$(nproc) build DESTDIR=/usr/src/pacstall/uwufetch
-  make -j$(nproc) man DESTDIR=/usr/src/pacstall/uwufetch
+  make -j"$(nproc)" build DESTDIR=/usr/src/pacstall/uwufetch
+  make -j"$(nproc)" man DESTDIR=/usr/src/pacstall/uwufetch
 }
 
 install() {

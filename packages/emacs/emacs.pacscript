@@ -1,3 +1,4 @@
+name="emacs"
 pkgname="emacs"
 version="27.2"
 url="http://ftpmirror.gnu.org/emacs/emacs-27.2.tar.xz"
@@ -15,5 +16,5 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR=/usr/src/pacstall/emacs-rel
+  sudo make install DESTDIR=/usr/src/pacstall/emacs
 }
