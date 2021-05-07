@@ -8,6 +8,7 @@ optdepends="viu lshw"
 gives="uwufetch"
 breaks="uwufetch-git uwufetch-bin"
 hash="062de9ec1af10ce5bccc5cd99ab72511883076c96d6ebb6f21647fb3486ca391"
+maintainer="wizard-28 <basak.sb2006@gmail.com>"
 
 prepare() {
   sudo mkdir -p /usr/src/pacstall/uwufetch/usr/bin
