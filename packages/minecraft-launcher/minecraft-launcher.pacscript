@@ -1,3 +1,4 @@
+maintainer="aranym <aranym1@pm.me>"
 name="minecraft-launcher"
 pkgname="minecraft-launcher"
 version="921"
