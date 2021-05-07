@@ -1,0 +1,30 @@
+name: test-package-install
+on:
+  pull_request:
+    paths:
+      - 'packages/**/*.pacscript'
+jobs:
+  run-pacstall-install-for-package:
+    runs-on: ubuntu-latest
+    steps:
+      - id: checkout
+        uses: actions/checkout@v2
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      - name: Installing pacstall
+        run: bash -c "$(wget -q https://git.io/JfHDM -O -)"
+      - name: Installing packages with pacstall
+        run: | 
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} == *".pacscript" ]]; then
+              pacscript_file=`basename "${changed_file}"`
+              package_name="${pacscript_file/.pacscript/ }"
+              package_dir=`dirname "${changed_file}"`
+              echo "Running pacstall -I for ${package_name}..."
+              echo "pacstall -Il ${package_name}"
+              cd ${package_dir}
+              pacstall --disable-prompts -Il ${package_name}
+            fi
+          done
+        env:
+          TERM: xterm
