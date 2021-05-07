@@ -18,7 +18,7 @@ Pacstall uses functions throughout the scripts to bring uniformity to the code a
 [*] WARNING: message
 [!] ERROR: message
 ```
-You can call it by running the contents of /usr/share/pacstall/scripts/install-local.sh. Then you can run `fancy_message {info,warn,error} message` to display visually appealing output. Info displays important things like package installed successfully or stuff like that. Warn is when something is not quite right, but will still work. Error should only be used before the script fails.
+You can call it by copying and running the relevant contents of /usr/share/pacstall/scripts/install-local.sh. Then you can run `fancy_message {info,warn,error} message` to display visually appealing output. Info displays important things like package installed successfully or stuff like that. Warn is when something is not quite right, but will still work. Error should only be used before the script fails.
 
 The next function is `ask`. Running this should give a basic prompt asking for input:
 ```bash
