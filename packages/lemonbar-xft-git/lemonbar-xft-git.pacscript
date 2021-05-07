@@ -7,6 +7,7 @@ breaks="bar lemonbar"
 description="A lightweight xcb based bar with ported xft support."
 hash="c2ca60846e0cade326969dd3f1f10e723f1a94d90d0335132b844932e41effff"
 prepare() {
+	true
 }
 
 build() {
@@ -14,5 +15,5 @@ build() {
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall
+          sudo make install DESTDIR=/usr/src/pacstall/lemonbar-xft-git
 }
