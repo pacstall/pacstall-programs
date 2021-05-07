@@ -7,7 +7,7 @@ description="Wine is a compatibility layer capable of running Windows applicatio
 hash="b2503ac9eb32ec861f5a5b883c3f259bbd0b0cea5a71070910bda632b250f532"
 maintainer="Henryws <hwengerstickel@pm.me>"
 prepare() {
-          ./configure
+          ./configure --enable-win64
 }
 
 build() {
