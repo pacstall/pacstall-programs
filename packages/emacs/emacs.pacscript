@@ -16,5 +16,5 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR=/usr/src/pacstall/emacs-rel
+  sudo make install DESTDIR=/usr/src/pacstall/emacs
 }
