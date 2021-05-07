@@ -10,6 +10,7 @@ breaks="libfoo-git"
 description=“foo is the ultimate program capable of foo and bar!”
 hash=“2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae”
 removescript="yes"
+optdepends="bar alacritty"
 prepare() {
           ./autogen.sh
 }
@@ -50,7 +51,9 @@ The next is `version`. It is the version number (obviously). It should (but not 
 
 `hash` is the output of running `sha256sum 1.0.zip` (from the example above). You just need the number and not the number + file name.
 
-`removescript` is a variable that is used when you want to signify that something should be done after a package is uninstalled. It should be yes or not in the script at all
+`removescript` is a variable that is used when you want to signify that something should be done after a package is uninstalled. It should be `yes` or not in the script at all
+
+`optdepends` is where you put optional dependencies. Pacstall will ask the user if they want to install them after the package finishes installing.
 
 The `prepare` function is what you run to prepare a package. You don’t need to cd into the package source directory because pacstall will do that already.
 
