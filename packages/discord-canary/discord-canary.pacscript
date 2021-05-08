@@ -20,6 +20,6 @@ build() {
 
 install() {
         mv discord-canary.desktop /usr/src/pacstall/discord-canary/usr/share/applications/
-        cp -n discord.png /usr/src/pacstall/discord-canary/usr/share/icons/
+        cp discord.png /usr/src/pacstall/discord-canary/usr/share/icons/discord-canary.png
         mv ./* /usr/src/pacstall/discord-canary/usr/share/discord-canary/
 }
