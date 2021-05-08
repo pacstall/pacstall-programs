@@ -1,6 +1,6 @@
 name="pfetch"
 version="0.6.0"
-url="https://github.com/dylanaraps/pfetch/archive/master.zip"
+url="https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.zip"
 build_depends=""
 depends=""
 breaks="pfetch"
