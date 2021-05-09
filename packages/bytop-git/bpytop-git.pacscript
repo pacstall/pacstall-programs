@@ -19,5 +19,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/bpytop
+    sudo make install DESTDIR=/usr/src/pacstall/bpytop-git
 } 
