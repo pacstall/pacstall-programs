@@ -16,7 +16,7 @@ prepare() {
 }
 
 build() {
-   sudo make
+   make -j$(nproc)
 }
 
 install() {
