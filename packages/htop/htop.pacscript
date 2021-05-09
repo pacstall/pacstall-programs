@@ -7,8 +7,6 @@ depends="libncurses5-dev libncursesw5-dev"
 breaks=""
 description=“htop is a cross-platform interactive process viewer.”
 hash="4c2629bd50895bd24082ba2f81f8c972348aa2298cc6edc6a21a7fa18b73990c"
-removescript="no"
-optdepends=""
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
     ./autogen.sh
