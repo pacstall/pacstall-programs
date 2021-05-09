@@ -12,6 +12,8 @@ optdepends=""
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
     ./configure
+    sudo mkdir /usr/src/pacstall/gtkhash/usr/share/icons/hicolor/128x128/apps
+    sudo mkdir /usr/src/pacstall/gtkhash/usr/share/applications
     wget -q https://github.com/WRM-42/GTKHash-ICO-Desktop/blob/main/gtkhash-logo.png
     wget -q https://raw.githubusercontent.com/WRM-42/GTKHash-ICO-Desktop/main/gtkhash.desktop
 }
