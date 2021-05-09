@@ -14,7 +14,7 @@ prepare() {
 }
 
 build() {
-        meson "build" --prefix=/usr/src/pacstall/paper-icon-theme/usr
+        meson "build" --prefix=/usr/src/pacstall/paper-icon-theme/usr > /dev/null
 }
 
 install() {
