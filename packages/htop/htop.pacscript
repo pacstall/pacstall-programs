@@ -11,7 +11,6 @@ removescript="no"
 optdepends=""
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
-    sudo mkdir /usr/src/pacstall/htop
     ./autogen.sh
     ./configure
 }
