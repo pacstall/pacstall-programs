@@ -77,3 +77,4 @@ You can test it by cd'ing into the directory holding `pkgname.pacscript` and run
 
 ### Other
 If you need (for some reason) to download files that aren't part of the package (if it didn't ship a `.desktop`, for example), use [GitHub Gists](https://gist.github.com). When you download it in your pacscript, use `wget -q <gist>` so there is no output. If you need to upload an image (for whatever reason), use [postimg.cc](https://postimg.cc).
+Lastly, do not ask the user for any input unless absolutely necessary. Use external variables to detect what you need to know before asking the user
