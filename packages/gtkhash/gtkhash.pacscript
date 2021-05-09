@@ -13,6 +13,8 @@ maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
     wget -q https://github.com/WRM-42/GTKHash-ICO-Desktop/blob/main/gtkhash-logo.png
     wget -q https://raw.githubusercontent.com/WRM-42/GTKHash-ICO-Desktop/main/gtkhash.desktop
+    sudo mkdir -p /usr/src/pacstall/gtkhash/usr/share/applications
+    sudo mkdir -p /usr/src/pacstall/gtkhash/usr/share/icons/hicolor/128x128/apps
     ./configure
 }
 
@@ -22,6 +24,6 @@ build() {
 
 install() {
     sudo make install DESTDIR=/usr/src/pacstall/gtkhash
-    mv tmp/pacstall/gtkhash-1.4/gtkhash-logo.png /usr/src/pacstall/gtkhash/usr/share/icons/hicolor/128x128/apps
-    mv tmp/pacstall/gtkhash-1.4/gtkhash.desktop /usr/src/pacstall/gtkhash/usr/share/applications
+    mv gtkhash-logo.png /usr/src/pacstall/gtkhash/usr/share/icons/hicolor/128x128/apps
+    mv gtkhash.desktop /usr/src/pacstall/gtkhash/usr/share/applications
 }
