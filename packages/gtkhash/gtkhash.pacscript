@@ -12,8 +12,6 @@ optdepends=""
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
     ./configure
-    wget -q http://0x0.st/-BWT.png
-    wget -q https://gist.githubusercontent.com/WRM-42/37ff456ff73b84d16755d55cbab73b8f/raw/86d6b5e49ba390bd941d8eb5aa4e8151e98c517c/gtkhash.desktop
 }
 
 build() {
@@ -22,6 +20,4 @@ build() {
 
 install() {
     sudo make install DESTDIR=/usr/src/pacstall/gtkhash
-    mv -BWT.png /usr/src/pacstall/gtkhash/usr/share/icons/hicolor/128x128/apps
-    mv gtkhash.desktop /usr/src/pacstall/gtkhash/usr/share/applications
 }
