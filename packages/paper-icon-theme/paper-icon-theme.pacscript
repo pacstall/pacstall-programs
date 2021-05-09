@@ -14,9 +14,9 @@ prepare() {
 }
 
 build() {
-        meson "build" --prefix=/usr/src/pacstall/paper-icon-theme/usr &> /dev/null
+        meson "build" --prefix=/usr/src/pacstall/paper-icon-theme/usr
 }
 
 install() {
-        sudo ninja -C "build" install
+        sudo ninja -C "build" install 2> /dev/null
 }
