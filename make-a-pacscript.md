@@ -10,7 +10,8 @@ breaks="libfoo-git"
 description=“foo is the ultimate program capable of foo and bar!”
 hash=“2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae”
 removescript="yes"
-optdepends="bar alacritty"
+optdepends=("bar: not foo"
+"alacritty: a blazing fast terminal")
 maintainer="Mr. Person <mr.person.protonmail.com>"
 prepare() {
           ./autogen.sh
