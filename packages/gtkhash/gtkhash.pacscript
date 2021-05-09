@@ -11,7 +11,6 @@ removescript="no"
 optdepends=""
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
-    sudo mkdir /usr/src/pacstall/gtkhash
     ./configure
     wget http://0x0.st/-BWT.png
     wget https://gist.githubusercontent.com/WRM-42/37ff456ff73b84d16755d55cbab73b8f/raw/69e335fc2a200831702694c9965bc61c455b6787/gtkhash.desktop
