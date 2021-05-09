@@ -13,7 +13,7 @@ maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
     ./configure
     wget -q http://0x0.st/-BWT.png
-    wget -q https://gist.githubusercontent.com/WRM-42/37ff456ff73b84d16755d55cbab73b8f/raw/94b6bce3552e1206d575b2ced57592b50f2029b8/gtkhash.desktop
+    wget -q https://gist.githubusercontent.com/WRM-42/37ff456ff73b84d16755d55cbab73b8f/raw/86d6b5e49ba390bd941d8eb5aa4e8151e98c517c/gtkhash.desktop
 }
 
 build() {
