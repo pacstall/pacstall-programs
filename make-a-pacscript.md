@@ -37,11 +37,11 @@ removescript(){
 
 I will be using the word `pkgname` as the name of your package.
 
-the first variable is `name`. It is what pacstall records and is the most important. The contents of `name`, (`pkgname`) will be in `/usr/src/pacstall/pkgname` (where pacstall puts files to symlink to the system) and `/var/log/pacstall_installed/pkgname` (a file which holds metadata like version number, date installed, description, etc).
+the first variable is `name`. It is what pacstall records and is the most important. The contents of `name`, (`pkgname`) will be in `/usr/src/pacstall/pkgname` (where pacstall puts files to symlink to the system) and `/var/log/pacstall_installed/pkgname` (a file which holds metadata like version number, date installed, description, etc). Keep it lowercase
 
 The next is `version`. It is the version number (obviously). It should (but not required) be using [semver](https://semver.org). As long as the version number can be incremented, it works. When you change this version to a higher number, it will trigger an upgrade when you run `sudo pacstall -Up`.
 
-`url` is the url of the package. It can end in .tar.xz, .zip, or .git. git is not recommended unless the maintainer does not have a releases page or tags (see st-lukesmith). When using github, use releases or tags (but try in that order).
+`url` is the url of the package. It can end in `.tar.xz`, `.zip`, or `.git`. git is not recommended unless the maintainer does not have a releases page or tags (see st-lukesmith). When using github, use releases or tags (but try in that order).
 
 `build_depends` is the packages needed to compile the package. They are Ubuntu apt package names.
 
