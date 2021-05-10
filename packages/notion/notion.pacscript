@@ -1,12 +1,12 @@
-name="notion"
-pkgname="notion"
-version="4.0.2"
+name="notion-git"
+pkgname="notion-git"
+version="git"
 description="The notion window manager"
 maintainer="edward-riley <edward@edwardriley.co.uk>"
 url="https://github.com/raboof/notion.git"
 depends="build-essential lua5.1 liblua5.1-0-dev libx11-dev libxext-dev libsm-dev gettext libxinerama-dev libxrandr-dev libxft-dev"
 gives="notion"
-breaks=""
+breaks="notion"
 
 prepare() {
     true
@@ -17,5 +17,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/notion
+    sudo make install DESTDIR=/usr/src/pacstall/notion-git
 }
