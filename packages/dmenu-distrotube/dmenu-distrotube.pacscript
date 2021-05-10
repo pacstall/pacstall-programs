@@ -1,5 +1,5 @@
 name="dmenu-distrotube"
-pkgname="dmenu-"
+pkgname="dmenu"
 version="1.4"
 url="https://gitlab.com/dwt1/dmenu-distrotube.git"
 build_depends="libxinerama-dev libxft-dev"
