@@ -16,6 +16,6 @@ build() {
 }
 
 install() {
-        sudo make install DESTDIR=/usr/src/pacstall/dmenu
+        sudo make install DESTDIR=/usr/src/pacstall/dmenu-distrotube
 }
 
