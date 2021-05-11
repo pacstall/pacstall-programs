@@ -1,22 +1,24 @@
 name="micro"
 pkgname="micro"
-version="git"
+version="2.0.8"
 description="The micro text editor"
 maintainer="edward-riley <edward@edwardriley.co.uk>"
-url="https://github.com/zyedidia/micro.git"
-depends="build-essential"
+url="https://github.com/zyedidia/micro/releases/download/v2.0.8/micro-2.0.8-linux64.tar.gz"
+build_depends="build-essential golang"
 gives="micro"
 breaks="micro"
-
+hash="7a705a60fe5da8fdfbb1423b560ae120a59af963ec73e3548ef97a6a688cd7cf"
 prepare() {
     true
 }
 
 build() {
-    make -j$(nproc) build
+    chmod +x micro
 }
 
 install() {
-    make -j$(nproc) build
-    sudo mv micro /usr/src/pacstall/micro
+    sudo mkdir /usr/src/pacstall/micro/
+    sudo mkdir /usr/src/pacstall/micro/usr/
+    sudo mkdir /usr/src/pacstall/micro/usr/bin/
+    sudo cp micro /usr/src/pacstall/micro/usr/bin
 }
