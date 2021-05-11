@@ -17,5 +17,6 @@ build() {
 }
 
 install() {
+    make -j$(nproc) build
     sudo mv micro /usr/src/pacstall/micro
 }
