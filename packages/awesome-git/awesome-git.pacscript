@@ -9,7 +9,8 @@ optdepends=("rlwrap: readline support for awesome-client"
             "dex: autostart your desktop files"
             "librsvg2-dev: for displaying SVG files without scaling artifacts"
             "feh: for icon generation etc"
-            "awesome-extra: additional modules for awesome")
+            "awesome-extra: additional modules for awesome"
+            "awesome-doc: documentation for awesome")
 gives="awesome awesomewm notification-daemon"
 breaks="awesome awesomewm-bin"
 removescript="yes"
