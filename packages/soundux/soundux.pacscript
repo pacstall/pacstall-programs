@@ -12,7 +12,7 @@ build() {
   mkdir -p build
   cd build
   cmake ..
-  cmake --build . --config Release
+  cmake --build . --config Release -j$(nproc)
 }
 
 install() {
