@@ -17,8 +17,6 @@ build() {
 }
 
 install() {
-    sudo mkdir /usr/src/pacstall/micro/
-    sudo mkdir /usr/src/pacstall/micro/usr/
-    sudo mkdir /usr/src/pacstall/micro/usr/bin/
+    sudo mkdir -p /usr/src/pacstall/micro/usr/bin/
     sudo cp micro /usr/src/pacstall/micro/usr/bin
 }
