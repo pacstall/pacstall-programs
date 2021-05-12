@@ -1,3 +1,11 @@
+#  __      __________   ______  
+# /  \    /  \_____  \ /  __  \ 
+# \   \/\/   //  ____/ >      < 
+#  \        //       \/   --   \
+#   \__/\  / \_______ \______  /
+#        \/          \/      \/ 
+maintainer="wizard-28 <basak.sb2006@gmail.com>"
+
 name="i3-gaps"
 pkgname="${name}"
 version="4.19.1"
@@ -8,7 +16,6 @@ gives="i3"
 breaks="i3-git i3-bin i3-gaps-bin i3-wm"
 hash="fb26783dcef33d97f080129b8d0b2b957c486b1241988744e3b9658f1f05646d"
 removescript="yes"
-maintainer="wizard-28 <basak.sb2006@gmail.com>"
 
 prepare() {
 meson builddir && cd builddir
