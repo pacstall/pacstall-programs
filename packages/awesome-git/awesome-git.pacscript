@@ -1,3 +1,11 @@
+#  __      __________   ______  
+# /  \    /  \_____  \ /  __  \ 
+# \   \/\/   //  ____/ >      < 
+#  \        //       \/   --   \
+#   \__/\  / \_______ \______  /
+#        \/          \/      \/ 
+maintainer="wizard-28 <basak.sb2006@gmail.com>"
+
 name="awesome-git"
 pkgname="${name}"
 version="11052021"
@@ -14,7 +22,6 @@ optdepends=("rlwrap: readline support for awesome-client"
 gives="awesome awesomewm notification-daemon"
 breaks="awesome awesomewm-bin"
 removescript="yes"
-maintainer="wizard-28 <basak.sb2006@gmail.com>"
 
 prepare() {
   true
