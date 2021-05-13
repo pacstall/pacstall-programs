@@ -1,3 +1,11 @@
+#  __      __________   ______  
+# /  \    /  \_____  \ /  __  \ 
+# \   \/\/   //  ____/ >      < 
+#  \        //       \/   --   \
+#   \__/\  / \_______ \______  /
+#        \/          \/      \/ 
+maintainer="wizard-28 <basak.sb2006@gmail.com>"
+
 name="bemenu-git"
 pkgname="bemenu"
 version="4b7b483"
@@ -6,7 +14,6 @@ description="Dynamic menu library and client program inspired by dmenu"
 build_depends="libxinerama-dev libxkbcommon-dev libncurses-dev wayland-protocols libwayland-dev libcairo2-dev libpango1.0-dev libpangocairo-1.0-0"
 gives="bemenu"
 breaks="bemenu-bin"
-maintainer="wizard-28 <basak.sb2006@gmail.com>"
 
 prepare() {
     true
