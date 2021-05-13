@@ -12,16 +12,13 @@ breaks=
 description="A fully foss, lightweight fuzzysearching TUI frontend for pacstall using fzf"
 debian=TRUE
 ubuntu=TRUE
-# personal variables used later on
-destination="/usr/src/pacstall/$name"
-PREFIX="/usr"
 ## installation stepps
 #preparations
 prepare() 
 {
-	sudo mkdir -p $destination
-	sudo mkdir -p $destination"/tmp/pacget"
-	sudo mkdir -p $destination$PREFIX"/bin"
+	sudo mkdir -p "/usr/src/pacstall/$name"
+	sudo mkdir -p "/usr/src/pacstall/$name/tmp/pacget"
+	sudo mkdir -p "/usr/src/pacstall/$name/usr/bin"
 }
 # pacget is a bashscript, no need to build anything
 build() 
