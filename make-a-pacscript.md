@@ -7,6 +7,7 @@ url="https://github.com/Henryws/foo/archive/refs/tags/1.0.zip"
 build_depends="vim gcc"
 depends="neofetch plasma"
 breaks="libfoo-git"
+replace="alacritty"
 description=“foo is the ultimate program capable of foo and bar!”
 hash=“2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae”
 removescript="yes"
@@ -50,6 +51,8 @@ The next is `version`. It is the version number (obviously). It should (but not 
 `description` is a description of the package. Try to keep the description as close to the original as possible (e.g neofetch’s is `A command-line system information tool written in bash 3.2+`.)
 
 `breaks` are where you put the packages that will break if you install this package. An example would be foo and foo-git. They both install to the same files, but different sources. It is not needed unless you are making a `-git` package or `-bin`.
+
+`replace` are name of the apt package that this package replaces, the user will be asked to continue before the apt package is removed.
 
 `hash` is the output of running `sha256sum 1.0.zip` (from the example above). You just need the number and not the number + file name.
 
