@@ -9,7 +9,7 @@ prepare() {
 }
 
 build() {
-        cargo build --release
+        cargo build -j$(nproc) --release
 }
 
 install() {
