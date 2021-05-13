@@ -13,8 +13,8 @@ prepare() {
 
 build() {
 	cd gst-plugin-viperfx  
-	cmake .
-	make
+	cmake -j$(nproc) .
+	make -j$(nproc)
 }
 
 install() {
