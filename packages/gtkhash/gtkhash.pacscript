@@ -6,7 +6,7 @@ build_depends="dh-autoreconf libgcrypt-dev libtool nettle-dev libb2-dev openssl 
 depends="libgtk-3-dev libglib2.0-dev"
 breaks=""
 replace="gtkhash"
-description=“gtkhash is a desktop utility for computing message digests or checksums.”
+description="gtkhash is a desktop utility for computing message digests or checksums."
 hash="20b57dbb8f6c6d7323f573c111a11640603a422c5f9da7b302a4981e4adc37c4"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
