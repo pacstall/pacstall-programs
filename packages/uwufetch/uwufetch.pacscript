@@ -19,7 +19,9 @@ breaks="uwufetch-git uwufetch-bin"
 hash="062de9ec1af10ce5bccc5cd99ab72511883076c96d6ebb6f21647fb3486ca391"
 
 prepare() {
-  true
+  sudo mkdir -p /usr/src/pacstall/"${name}"/usr/bin
+  sudo mkdir -p /usr/src/pacstall/"${name}"/usr/lib
+  sudo mkdir -p /usr/src/pacstall/"${name}"/usr/share/man/man1
 }
 
 build() {
