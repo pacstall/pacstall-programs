@@ -24,5 +24,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/bemenu-git
+    sudo make install DESTDIR=/usr/src/pacstall/"${name}"
 }
