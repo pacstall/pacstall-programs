@@ -8,6 +8,11 @@ description="A cross-platform soundboard"
 hash="7e43d77e87c87fae718e4a4455a843d8a4c2f0d21cc783e6bf36dcfe43d0d151"
 maintainer="Soundux developers <info@soundux.rocks>"
 
+prepare() {
+  # Add repository to provide libpipewire-0.3-dev
+  sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
+}
+
 build() {
   mkdir -p build
   cd build
