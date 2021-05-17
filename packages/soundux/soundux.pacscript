@@ -10,7 +10,7 @@ maintainer="Soundux developers <info@soundux.rocks>"
 
 prepare() {
   # Add repository to provide libpipewire-0.3-dev
-  sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
+  sudo add-apt-repository -y ppa:pipewire-debian/pipewire-upstream
   sudo apt install -y libpipewire-0.3-dev
 }
 
