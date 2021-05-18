@@ -16,6 +16,7 @@ optdepends=("bar: not foo"
 ppa=("graphics-drivers/ppa"
 "webupd8team/y-ppa-manager")
 maintainer="Mr. Person <mr.person.protonmail.com>"
+pacdeps=("dmenu" "tuner")
 prepare() {
           ./autogen.sh
 }
@@ -65,6 +66,8 @@ The next is `version`. It is the version number (obviously). It should (but not 
 `ppa` is an array that you can use to install ppa's. It is highly discouraged to use ppa's as they are fundamentaly broken. You do not need to include `ppa:` in the array as pacstall does that for you and it's easier for the end user.
 
 `maintainer` is where you put yourself in the format shown above: `name <email.email.com>`. This makes it easy for people to contact maintainers about issues
+
+`pacdeps` is an array that can install other pacscripts in a repo
 
 The `prepare` function is what you run to prepare a package. You don’t need to cd into the package source directory because pacstall will do that already.
 
