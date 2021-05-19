@@ -7,11 +7,10 @@ depends="libgtk-3-0 libwnck-3-0 libappindicator3-1 libwebkit2gtk-4.0-37 libx11-6
 description="A cross-platform soundboard"
 hash="7e43d77e87c87fae718e4a4455a843d8a4c2f0d21cc783e6bf36dcfe43d0d151"
 maintainer="Soundux developers <info@soundux.rocks>"
+pacdeps=("pipewire-git")
 
 prepare() {
-  # Add repository to provide libpipewire-0.3-dev
-  sudo add-apt-repository -y ppa:pipewire-debian/pipewire-upstream
-  sudo apt install -y libpipewire-0.3-dev
+    true
 }
 
 build() {
