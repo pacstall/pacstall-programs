@@ -16,5 +16,5 @@ build() {
 }
 
 install() {
-          sudo porg -lp st-lukesmith "make install"
+          sudo make install DESTDIR=/usr/src/pacstall/st-lukesmith
 }
