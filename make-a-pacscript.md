@@ -17,6 +17,7 @@ ppa=("graphics-drivers/ppa"
 "webupd8team/y-ppa-manager")
 maintainer="Mr. Person <mr.person.protonmail.com>"
 pacdeps=("dmenu" "tuner")
+patch=("https://dwm.suckless.org/patches/anybar/dwm-anybar-20200810-bb2e722.diff")
 prepare() {
           ./autogen.sh
 }
@@ -68,6 +69,8 @@ The next is `version`. It is the version number (obviously). It should (but not 
 `maintainer` is where you put yourself in the format shown above: `name <email.email.com>`. This makes it easy for people to contact maintainers about issues
 
 `pacdeps` is an array that can install other pacscripts in a repo
+
+`patch` is an array that contains urls to patches you may need. Pacstall will download patches to `PACSTALL_patchesdir` in the root of your source (eg if you have the directory kvantum, Pacstall will make a directory inside of it called `PACSTALL_patchesdir`)
 
 The `prepare` function is what you run to prepare a package. You don’t need to cd into the package source directory because pacstall will do that already.
 
