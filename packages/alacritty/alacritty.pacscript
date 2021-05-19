@@ -13,27 +13,18 @@ build() {
 }
 
 install() {
-        sudo mkdir -p /usr/src/pacstall/${name}/usr/bin
-        sudo mv target/release/alacritty /usr/src/pacstall/${name}/usr/bin
+        sudo install -D target/release/alacritty -t /usr/src/pacstall/${name}/usr/bin
 
-        sudo mkdir -p /usr/src/pacstall/${name}/usr/share/pixmaps
-        sudo mv extra/logo/alacritty-term.svg /usr/src/pacstall/${name}/usr/share/pixmaps/Alacritty.svg
+        sudo install -D extra/logo/alacritty-term.svg /usr/src/pacstall/${name}/usr/share/pixmaps/Alacritty.svg
 
-        sudo mkdir -p /usr/src/pacstall/${name}/usr/share/applications
-        sudo mv extra/linux/Alacritty.desktop /usr/src/pacstall/${name}/usr/share/applications
+        sudo install -D extra/linux/Alacritty.desktop -t /usr/src/pacstall/${name}/usr/share/applications
 
-        sudo mkdir -p /usr/src/pacstall/${name}/usr/share/bash-completion/completions
-        sudo mv extra/completions/alacritty.bash /usr/src/pacstall/${name}/usr/share/bash-completion/completions
-
-        sudo mkdir -p /usr/src/pacstall/${name}/usr/share/fish/completions
-        sudo mv extra/completions/alacritty.fish /usr/src/pacstall/${name}/usr/share/fish/completions
-
-        sudo mkdir -p /usr/src/pacstall/${name}/usr/share/zsh/vendor-completions
-        sudo mv extra/completions/_alacritty /usr/src/pacstall/${name}/usr/share/zsh/vendor-completions
+        sudo install -D extra/completions/alacritty.bash -t /usr/src/pacstall/${name}/usr/share/bash-completion/completions
+        sudo install -D extra/completions/alacritty.fish -t /usr/src/pacstall/${name}/usr/share/fish/completions
+        sudo install -D extra/completions/_alacritty -t /usr/src/pacstall/${name}/usr/share/zsh/vendor-completions
 
         sudo mkdir -p /usr/src/pacstall/${name}/usr/local/share/man/man1
         gzip -c extra/alacritty.man | sudo tee /usr/src/pacstall/${name}/usr/local/share/man/man1/alacritty.1.gz >/dev/null
 
-        sudo mkdir -p /usr/src/pacstall/${name}/usr/doc/share/alacritty
-        sudo mv alacritty.yml /usr/src/pacstall/${name}/usr/doc/share/alacritty
+        sudo install -D alacritty.yml -t /usr/src/pacstall/${name}/usr/doc/share/alacritty
 }
