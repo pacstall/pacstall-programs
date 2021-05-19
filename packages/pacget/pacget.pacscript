@@ -5,10 +5,8 @@ version=1.0
 maintainer="Erik Lundstedt <erik@lundstedt.it>"
 url="https://gitlab.com/Erik.Lundstedt/pacget.git"
 license="Don't Be a Jerk"
-build_depends=
 depends="fzf curl bash"
 gives="$name"
-breaks=
 description="A fully foss, lightweight fuzzysearching TUI frontend for pacstall using fzf"
 debian=TRUE
 ubuntu=TRUE
@@ -28,12 +26,7 @@ true
 #this just coppies the files over and makes the file executable
 install() 
 {
-	sudo cp -p pacget $destination$PREFIX"/bin/"
-	sudo chmod 755 $destination$PREFIX"/bin/pacget"
-}
-# this removes everything in /usr/src/pacstall/pacget
-removescript()
-{
-	sudo rm -rf $destination
+	sudo cp -p pacget /usr/src/pacstall/pacget/bin/pacget
+	sudo chmod 755 /usr/src/pacstall/pacget/bin/pacget/
 }
 
