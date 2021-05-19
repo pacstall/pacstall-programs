@@ -26,7 +26,7 @@ true
 #this just coppies the files over and makes the file executable
 install() 
 {
-	sudo cp -p pacget /usr/src/pacstall/pacget/bin/
+	sudo cp -p pacget /usr/src/pacstall/pacget/bin/pacget
 	sudo chmod 755 /usr/src/pacstall/pacget/bin/pacget/
 }
 
