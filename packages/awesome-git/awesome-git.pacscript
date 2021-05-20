@@ -8,7 +8,7 @@ maintainer="wizard-28 <basak.sb2006@gmail.com>"
 
 name="awesome-git"
 pkgname="${name}"
-version="11052021"
+version="9c5149d"
 url="https://github.com/awesomeWM/awesome.git"
 description="awesome window manager"
 depends="libdbus-1-dev libxcb-xfixes0-dev libxcb-randr0-dev libxcb-xinerama0-dev libxcb-icccm4-dev libxcb-xtest0-dev liblua5.3-dev libcairo2-dev dbus libgdk-pixbuf2.0-dev libxdg-basedir-dev libxkbcommon-x11-dev lua5.3 lua-lgi-dev libpango1.0-dev libstartup-notification0-dev libxcb-cursor-dev libxcb-keysyms1-dev libxcb-util-dev libxcb-xrm-dev libxfixes-dev cmake"
