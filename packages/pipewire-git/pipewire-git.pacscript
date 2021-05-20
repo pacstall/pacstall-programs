@@ -1,7 +1,7 @@
 name="pipewire-git"
 pkgname="pipewire-git"
 version="0.3.27"
-build_depends="meson"
+build_depends="meson libdbus-1-dev"
 url="https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.27/pipewire-0.3.27.zip"
 maintainer="Henryws <hwengerstickel@pm.me>"
 description="PipeWire is a server and user space API to deal with multimedia pipelines"
