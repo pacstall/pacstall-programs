@@ -48,11 +48,7 @@ MAGICK=           # ImageMagick 7 support. Deprecated (read the logs).
 NOGZ="YES"        # Don"t compress .el files.
 ################################################################################
 
-if [[ $CLI == "YES" ]]; then
-  name="emacs-nox-git"
-else
-  name="emacs-git"
-fi
+name="emacs-git"
 version="20062021"
 url="https://github.com/emacs-mirror/emacs.git"
 description="An extensible, customizable, free/libre text editor — and more."
