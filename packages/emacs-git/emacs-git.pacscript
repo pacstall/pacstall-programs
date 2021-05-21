@@ -49,7 +49,7 @@ NOGZ="YES"        # Don"t compress .el files.
 ################################################################################
 
 name="emacs-git"
-version="20062021"
+version="21062021"
 url="https://github.com/emacs-mirror/emacs.git"
 description="An extensible, customizable, free/libre text editor — and more."
 build_depends="git autoconf texinfo"
@@ -57,7 +57,7 @@ depends_nox="libalsaplayer0 libgnutls28-dev libxml2 libjansson-dev gpm"
 depends="${depends_nox} m17n-lib-bin libotf0 libharfbuzz0b"
 gives="${name} emacs emacs-nox"
 breaks="emacs emacs-nox"
-replace="emacs"
+replace="emacs emacs-nox"
 
 if [[ $GOLD == "YES" && ! $CLANG == "YES" ]]; then
   export LD=/usr/bin/ld.gold
@@ -162,49 +162,49 @@ build() {
   )
 
   if [[ $CLANG == "YES" ]]; then
-    _conf+=( '--enable-autodepend' )
+    _conf+=( "--enable-autodepend" )
   fi
 
   if [[ $LTO == "YES" ]]; then
-    _conf+=( '--enable-link-time-optimization' )
+    _conf+=( "--enable-link-time-optimization" )
   fi
 
   if [[ $JIT == "YES" ]]; then
-    _conf+=( '--with-native-compilation' )
+    _conf+=( "--with-native-compilation" )
   fi
 
   if [[ $CLI == "YES" ]]; then
-    _conf+=( '--without-x' '--with-x-toolkit=no' '--without-xft' '--without-lcms2' '--without-rsvg' '--without-jpeg' '--without-gif' '--without-tiff' '--without-png' )
+    _conf+=( "--without-x" "--with-x-toolkit=no" "--without-xft" "--without-lcms2" "--without-rsvg" "--without-jpeg" "--without-gif" "--without-tiff" "--without-png" )
   elif [[ $NOTKIT == "YES" ]]; then
-    _conf+=( '--with-x-toolkit=no' '--without-toolkit-scroll-bars' '--with-xft' '--without-xaw3d' )
+    _conf+=( "--with-x-toolkit=no" "--without-toolkit-scroll-bars" "--with-xft" "--without-xaw3d" )
   elif [[ $LUCID == "YES" ]]; then
-    _conf+=( '--with-x-toolkit=lucid' '--with-xft' '--with-xaw3d' )
+    _conf+=( "--with-x-toolkit=lucid" "--with-xft" "--with-xaw3d" )
   elif [[ $GTK2 == "YES" ]]; then
-    _conf+=( '--with-x-toolkit=gtk2' '--without-gsettings' '--without-xaw3d' )
+    _conf+=( "--with-x-toolkit=gtk2" "--without-gsettings" "--without-xaw3d" )
   else
-    _conf+=( '--with-x-toolkit=gtk3' '--without-xaw3d' )
+    _conf+=( "--with-x-toolkit=gtk3" "--without-xaw3d" )
   fi
 
   if [[ $MAGICK == "YES" ]]; then
-    _conf+=( '--with-imagemagick')
+    _conf+=( "--with-imagemagick")
   else
     _conf+=();
   fi
 
   if [[ $NOCAIRO == "YES" || $CLI == "YES" ]]; then
-    _conf+=( '--without-cairo' )
+    _conf+=( "--without-cairo" )
   fi
 
   if [[ $XWIDGETS == "YES" ]]; then
-    _conf+=( '--with-xwidgets' )
+    _conf+=( "--with-xwidgets" )
   fi
 
   if [[ $NOGZ == "YES" ]]; then
-    _conf+=( '--without-compress-install' )
+    _conf+=( "--without-compress-install" )
   fi
 
   # ctags/etags may be provided by other packages, e.g, universal-ctags
-  _conf+=('--program-transform-name=s/\([ec]tags\)/\1.emacs/')
+  _conf+=("--program-transform-name=s/\([ec]tags\)/\1.emacs/")
 
   ./configure "${_conf[@]}"
 
@@ -222,7 +222,7 @@ build() {
     make -j"${nproc}"
   fi
 
-  # You may need to run this if 'loaddefs.el' files become corrupt.
+  # You may need to run this if "loaddefs.el" files become corrupt.
   #cd "/usr/pacstall/src/emacs-git/lisp"
   #make autoloads
   #cd ../
