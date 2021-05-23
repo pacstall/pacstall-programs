@@ -64,7 +64,7 @@ The next is `version`. It is the version number (obviously). It should (but not 
 
 `optdepends` is where you put optional dependencies. Pacstall will ask the user if they want to install them after the package finishes installing.
 
-`ppa` is an array that you can use to install ppa's. It is highly discouraged to use ppa's as they are fundamentaly broken. You do not need to include `ppa:` in the array as pacstall does that for you and it's easier for the end user.
+`ppa` is an array that you can use to install ppa's. It is highly discouraged to use ppa's as they are fundamentaly broken. You do not need to include `ppa:` in the array as pacstall does that for you and it's easier for the end user. You should only use a ppa if absolutely necessary. Consider making a pacscript instead and putting it in `pacdeps`
 
 `maintainer` is where you put yourself in the format shown above: `name <email.email.com>`. This makes it easy for people to contact maintainers about issues
 
