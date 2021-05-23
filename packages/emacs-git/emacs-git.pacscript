@@ -4,7 +4,7 @@
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
 #        \/          \/      \/ 
-maintainer="wizard-28 <basak.sb2006@gmail.com>"
+maintainer="wizard-28 <wiz28@pm.me>"
 
 ### This pacscript is made with (ported to pacstall) the help of https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=emacs-git
 ################################################################################

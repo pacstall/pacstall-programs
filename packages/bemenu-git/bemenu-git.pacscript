@@ -4,7 +4,7 @@
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
 #        \/          \/      \/ 
-maintainer="wizard-28 <basak.sb2006@gmail.com>"
+maintainer="wizard-28 <wiz28@pm.me>"
 
 name="bemenu-git"
 pkgname="bemenu"
