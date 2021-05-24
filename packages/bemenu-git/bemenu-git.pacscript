@@ -5,7 +5,9 @@
 #   \__/\  / \_______ \______  /
 #        \/          \/      \/ 
 maintainer="wizard-28 <wiz28@pm.me>"
-
+pkgver() {
+    git ls-remote "${url}" master | sed "s/refs\/heads\/.*//"
+}
 name="bemenu-git"
 pkgname="bemenu"
 version="$(pkgver)"
@@ -15,9 +17,7 @@ build_depends="libxinerama-dev libxkbcommon-dev libncurses-dev wayland-protocols
 gives="bemenu"
 breaks="bemenu-bin"
 
-pkgver() {
-    git ls-remote "${url}" master | sed "s/refs\/heads\/.*//"
-}
+
 
 prepare() {
     true
