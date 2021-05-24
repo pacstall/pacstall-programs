@@ -80,7 +80,7 @@ The install function installs the package. The most important thing is to instal
 
 `postinst` is what commands should be run after pkg is installed. If you don't need it, leave it out
 
-`removescript` is what commands should be run after pkg is uninstalled. The contents will be remotely sourced when you trigger a `-R pkg` flag. This is NOT a script uninstalls the package, just what should be run. [Here's an example](https://github.com/Henryws/pacstall-programs/blob/master/packages/tuner/tuner.pacscript) of how that would be done
+`removescript` is what commands should be run after pkg is uninstalled. The contents will be remotely sourced when you trigger a `-R pkg` flag. This is NOT a script uninstalls the package, just what should be run. [Here's an example](https://github.com/pacstall/pacstall-programs/blob/master/packages/tuner/tuner.pacscript) of how that would be done
 
 You need to save it as `pkgname.pacscript`. To add a package to `pacstall-programs`, fork it and create a directory in packages called `pkgname` and add the `pkgname.pacscript` inside it. Then send me a pull request.
 
