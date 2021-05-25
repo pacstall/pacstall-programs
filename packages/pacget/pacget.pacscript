@@ -27,5 +27,5 @@ true
 install() 
 {
 	sudo cp -p pacget /usr/src/pacstall/pacget/usr/bin/pacget
-	sudo chmod 755 /usr/src/pacstall/pacget/usr/bin/pacget/
+	sudo chmod 755 /usr/src/pacstall/pacget/usr/bin/pacget
 }
