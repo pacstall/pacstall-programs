@@ -1,7 +1,7 @@
 #-*- mode: sh ;mode:lsp;mode: minimap  -*-
 name="pacget"
 pkgname="$name"
-version=1.0
+version=1.5
 maintainer="Erik Lundstedt <erik@lundstedt.it>"
 url="https://gitlab.com/Erik.Lundstedt/pacget.git"
 license="Don't Be a Jerk"
@@ -26,7 +26,6 @@ true
 #this just coppies the files over and makes the file executable
 install() 
 {
-	sudo cp -p pacget /usr/src/pacstall/pacget/bin/pacget
-	sudo chmod 755 /usr/src/pacstall/pacget/bin/pacget/
+	sudo cp -p pacget /usr/src/pacstall/pacget/usr/bin/pacget
+	sudo chmod 755 /usr/src/pacstall/pacget/usr/bin/pacget/
 }
-
