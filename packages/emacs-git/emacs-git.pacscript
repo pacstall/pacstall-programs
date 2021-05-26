@@ -49,8 +49,6 @@ NOGZ="YES"        # Don"t compress .el files.
 ################################################################################
 
 name="emacs-git"
-version="21062021"
-url="https://github.com/emacs-mirror/emacs.git"
 description="An extensible, customizable, free/libre text editor — and more."
 build_depends="git autoconf texinfo"
 depends_nox="libalsaplayer0 libgnutls28-dev libxml2 libjansson-dev gpm"
@@ -58,6 +56,11 @@ depends="${depends_nox} m17n-lib-bin libotf0 libharfbuzz0b"
 gives="${name} emacs emacs-nox"
 breaks="emacs emacs-nox"
 replace="emacs emacs-nox"
+url="https://github.com/emacs-mirror/emacs.git"
+pkgver() {
+    git ls-remote "${url}" master | sed "s/refs\/heads\/.*//"
+}
+version="$(pkgver)"
 
 if [[ $GOLD == "YES" && ! $CLANG == "YES" ]]; then
   export LD=/usr/bin/ld.gold
