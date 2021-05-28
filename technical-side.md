@@ -1,5 +1,3 @@
-
-
 ## Pacstall technical stuff
 
 ### Script locations
@@ -9,7 +7,7 @@ In Pacstall, the main (long and complicated) scripts are too long to put in `/bi
 `/tmp/pacstall/pkg` is the temporary building space for packages. Pacstall downloads them into their own directory and builds. One advantage of tmp is that it runs off ram so there is less overhead than running from an ssd or hard drive. This directory will be removed after install (or fail) to 1) reduce RAM, and 2) clear space.
 
 `/usr/src/pacstall/pkg` is where the files for built packages live. They are symlinked to the system from here. If you run `sudo stow -D pkg` from `/usr/src/pacstall`, it will unlink from stow. Then you could run `sudo rm -rf pkg` to completely remove this although pacstall does this with the `-R` flag.
-`/var/log/pacstall_installed/pkg` is a text file containing metadata for the package. It contains the date installed, description, version, and if applicable, a removescript reference
+`/var/log/pacstall_installed/pkg` is a text file containing metadata for the package. It contains the date installed, description, version, dependencies, and if applicable, a removescript reference
 `/var/cache/pacstall` is a directory that pacstall will store pacscripts in. It will make a directory called `pkg`, and inside that, another with the version number with the old pacscript inside
 
 ### API’s (I guess)
