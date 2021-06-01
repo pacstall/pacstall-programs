@@ -220,9 +220,9 @@ build() {
   # are reusing your src directory!
 
   if [[ $JIT == "YES" ]] && [[ $AOT == "YES" ]]; then
-    make -j"${nproc}" NATIVE_FULL_AOT=1
+    make -j"$(nproc)" NATIVE_FULL_AOT=1
   else
-    make -j"${nproc}"
+    make -j"$(nproc)"
   fi
 
   # You may need to run this if "loaddefs.el" files become corrupt.
@@ -232,20 +232,20 @@ build() {
 
   # Optional documentation formats.
   if [[ $DOCS_HTML == "YES" ]]; then
-    make -j"${nproc}" html
+    make -j"$(nproc)" html
   fi
   if [[ $DOCS_PDF == "YES" ]]; then
-    make -j"${nproc}" pdf
+    make -j"$(nproc)" pdf
   fi
 
 }
 
 install() {
-  sudo make -j"${nproc}" DESTDIR="/usr/src/pacstall/${name}" install
+  sudo make -j"$(nproc)" DESTDIR="/usr/src/pacstall/${name}" install
 
   # Install optional documentation formats
-  if [[ $DOCS_HTML == "YES" ]]; then make -j"${nproc}" DESTDIR="/usr/src/pacstall/${name}/" install-html; fi
-  if [[ $DOCS_PDF == "YES" ]]; then make -j"${nproc}" DESTDIR="/usr/src/pacstall/${name}/" install-pdf; fi
+  if [[ $DOCS_HTML == "YES" ]]; then make -j"$(nproc)" DESTDIR="/usr/src/pacstall/${name}/" install-html; fi
+  if [[ $DOCS_PDF == "YES" ]]; then make -j"$(nproc)" DESTDIR="/usr/src/pacstall/${name}/" install-pdf; fi
 }
 
 postinst() {
