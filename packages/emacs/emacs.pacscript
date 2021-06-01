@@ -58,6 +58,7 @@ depends="${depends_nox} m17n-lib-bin libotf0 libharfbuzz0b"
 gives="${name} ${name}-nox"
 breaks="${name}-git ${name}-nox"
 replace="${name}-git ${name}-nox"
+hash="b4a7cc4e78e63f378624e0919215b910af5bb2a0afc819fad298272e9f40c1b9"
 
 if [[ $GOLD == "YES" && ! $CLANG == "YES" ]]; then
   export LD=/usr/bin/ld.gold
