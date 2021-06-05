@@ -1,5 +1,4 @@
 name="soundux"
-pkgname="soundux"
 version="0.2.7"
 url="https://github.com/Soundux/Soundux/releases/download/0.2.7/soundux-0.2.7.tar.gz"
 build_depends="build-essential cmake libx11-dev libxi-dev libwebkit2gtk-4.0-dev libappindicator3-dev libssl-dev libpulse-dev"
