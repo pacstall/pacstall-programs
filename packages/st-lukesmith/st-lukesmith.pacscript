@@ -7,7 +7,7 @@ depends="fontconfig"
 gives="st"
 
 pkgver () {
-  git ls-remote https://github.com/LukeSmithxyz/st.git master | sed "s/refs\/heads\/.*//" # Returns the latest commit hash from remote
+  git ls-remote https://github.com/LukeSmithxyz/st.git master | cut -f1
 }
 version="${pkgver}"
 prepare() {
