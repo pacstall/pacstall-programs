@@ -6,12 +6,8 @@ build_depends="build-essential cmake libx11-dev libxi-dev libwebkit2gtk-4.0-dev 
 depends="libgtk-3-0 libwnck-3-0 libappindicator3-1 libwebkit2gtk-4.0-37 libx11-6 pulseaudio pulseaudio-utils"
 description="A cross-platform soundboard"
 hash="017003fc96f49df30575975f3904c0d8a500e325a9d2bca8c3dc69fed0cab0a7"
-maintainer="Soundux developers <info@soundux.rocks>"
+maintainer="D3SOX <d3sox@protonmail.com>"
 pacdeps=("pipewire-git")
-
-prepare() {
-    true
-}
 
 build() {
   mkdir -p build
