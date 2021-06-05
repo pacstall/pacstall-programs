@@ -9,7 +9,7 @@ gives="st"
 pkgver () {
   git ls-remote https://github.com/LukeSmithxyz/st.git master | cut -f1
 }
-version="${pkgver}"
+version="$(pkgver)"
 prepare() {
           true
 }
