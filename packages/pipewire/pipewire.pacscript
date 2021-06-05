@@ -1,5 +1,5 @@
-name="pipewire-git"
-pkgname="pipewire-git"
+name="pipewire"
+pkgname="pipewire"
 version="0.3.27"
 build_depends="meson libdbus-1-dev"
 url="https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.27/pipewire-0.3.27.zip"
@@ -17,5 +17,5 @@ build() {
 
 install() {
     cd builddir/
-    sudo DESTDIR=/usr/src/pacstall/pipewire-git meson install
+    sudo DESTDIR=/usr/src/pacstall/pipewire meson install
 }
