@@ -1,17 +1,12 @@
 name="soundux"
-pkgname="soundux"
-version="0.2.6"
-url="https://github.com/Soundux/Soundux/releases/download/0.2.6/soundux-0.2.6.tar.gz"
+version="0.2.7"
+url="https://github.com/Soundux/Soundux/releases/download/0.2.7/soundux-0.2.7.tar.gz"
 build_depends="build-essential cmake libx11-dev libxi-dev libwebkit2gtk-4.0-dev libappindicator3-dev libssl-dev libpulse-dev"
 depends="libgtk-3-0 libwnck-3-0 libappindicator3-1 libwebkit2gtk-4.0-37 libx11-6 pulseaudio pulseaudio-utils"
 description="A cross-platform soundboard"
-hash="0cffff520b3d1e69ccbb10599ff1ff3c911d74eb01a4af8dc3d5132fa5535c63"
-maintainer="Soundux developers <info@soundux.rocks>"
-pacdeps=("pipewire-git")
-
-prepare() {
-    true
-}
+hash="017003fc96f49df30575975f3904c0d8a500e325a9d2bca8c3dc69fed0cab0a7"
+maintainer="D3SOX <d3sox@protonmail.com>"
+pacdeps=("pipewire")
 
 build() {
   mkdir -p build
