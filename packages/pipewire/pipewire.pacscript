@@ -5,7 +5,7 @@ build_depends="meson libdbus-1-dev"
 url="https://gitlab.freedesktop.org/$name/$name/-/archive/$version/$name-$version.zip"
 maintainer="Henryws <hwengerstickel@pm.me>"
 description="PipeWire is a server and user space API to deal with multimedia pipelines"
-hash="d942c4be201ae6da4ba513c6b6c98e4d3dff433241acd020f567aa4e4de8982f"
+hash="ee39d3b6643995c30bb94187119590cfafa79b597ebffe216b9f7d6f5d0885b4"
 prepare() {
     meson setup builddir
 }
