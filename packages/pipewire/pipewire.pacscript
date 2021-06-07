@@ -1,5 +1,4 @@
 name="pipewire"
-pkgname="pipewire"
 version="0.3.29"
 build_depends="meson libdbus-1-dev"
 url="https://gitlab.freedesktop.org/$name/$name/-/archive/$version/$name-$version.zip"
