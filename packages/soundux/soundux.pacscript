@@ -1,6 +1,6 @@
 name="soundux"
 version="0.2.7"
-url="https://github.com/Soundux/Soundux/releases/download/0.2.7/soundux-0.2.7.tar.gz"
+url="https://github.com/Soundux/Soundux/releases/download/"$version"/soundux-"$version".tar.gz"
 build_depends="cmake libx11-dev libxi-dev libwebkit2gtk-4.0-dev libappindicator3-dev libssl-dev libpulse-dev"
 depends="libgtk-3-0 libwnck-3-0 libappindicator3-1 libwebkit2gtk-4.0-37 libx11-6 pulseaudio"
 description="A cross-platform soundboard"
