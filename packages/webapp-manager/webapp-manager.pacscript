@@ -1,0 +1,30 @@
+name="webapp-manager"
+version="1.1.2"
+url="https://github.com/linuxmint/webapp-manager/archive/refs/tags/$version.tar.gz"
+build_depends="git"
+depends="python3-bs4 python3-configobj python-gobject python-pillow python3-setproctitle tldextract dconf-cli python3-xapp gir1.2-xapp-1.0"
+breaks=""
+replace=""
+description="Run websites as if they were apps"
+hash="07458737b98ac3058ad0ad72345586811b3dff868b5607f8153f8a8baa754f47"
+optdepends=()
+ppa=()
+maintainer="Zahrun <Zahrun@github.com>"
+pacdeps=()
+patch=()
+prepare() {
+	# Fix typo
+	sed -i 's/range(4)/range(5)/g' "usr/lib/$name/common.py"
+	# Fix desktop file
+	sed -i \$d usr/share/applications/$name.desktop
+}
+
+build() {
+	make buildmo
+}
+
+install() {
+	installdir=/usr/src/pacstall/webapp-manager
+	mkdir -p $installdir
+	cp -r usr etc $installdir
+}
