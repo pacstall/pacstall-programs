@@ -1,7 +1,7 @@
 name="webapp-manager"
 version="1.1.2"
 url="https://github.com/linuxmint/webapp-manager/archive/refs/tags/$version.tar.gz"
-build_depends="git gettext"
+build_depends="gettext"
 depends="gir1.2-xapp-1.0 python3 python3-bs4 python3-configobj python3-gi python3-setproctitle python3-tldextract xapps-common"
 description="Run websites as if they were apps"
 hash="07458737b98ac3058ad0ad72345586811b3dff868b5607f8153f8a8baa754f47"
