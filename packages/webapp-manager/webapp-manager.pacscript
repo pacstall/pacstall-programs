@@ -13,8 +13,6 @@ maintainer="Zahrun <Zahrun@github.com>"
 pacdeps=()
 patch=()
 prepare() {
-	# Silent build
-	sed -i 's/@echo/echo/g' Makefile
 	# Fix typo
 	sed -i 's/range(4)/range(5)/g' "usr/lib/$name/common.py"
 	# Fix desktop file
@@ -22,7 +20,7 @@ prepare() {
 }
 
 build() {
-	make buildmo
+	make all -s
 }
 
 install() {
