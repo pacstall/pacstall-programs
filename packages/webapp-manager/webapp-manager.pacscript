@@ -5,8 +5,6 @@ build_depends="git gettext"
 depends="python3-bs4 python3-configobj python-gobject python-pil python3-setproctitle tldextract dconf-cli python3-xapp gir1.2-xapp-1.0"
 description="Run websites as if they were apps"
 hash="07458737b98ac3058ad0ad72345586811b3dff868b5607f8153f8a8baa754f47"
-optdepends=()
-ppa=()
 maintainer="Zahrun <Zahrun@github.com>"
 prepare() {
 	# Fix typo
