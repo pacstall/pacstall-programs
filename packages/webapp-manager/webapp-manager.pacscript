@@ -8,8 +8,6 @@ hash="07458737b98ac3058ad0ad72345586811b3dff868b5607f8153f8a8baa754f47"
 optdepends=()
 ppa=()
 maintainer="Zahrun <Zahrun@github.com>"
-pacdeps=()
-patch=()
 prepare() {
 	# Fix typo
 	sed -i 's/range(4)/range(5)/g' "usr/lib/$name/common.py"
