@@ -12,7 +12,7 @@ prepare() {
 	# Fix typo
 	sed -i 's/range(4)/range(5)/g' "usr/lib/$name/common.py"
 	# Fix desktop file
-	#sed -i \$d usr/share/applications/$name.desktop
+	mv usr/share/applications/kde4/webapp-manager.desktop usr/share/applications/webapp-manager-kde.desktop
 }
 
 build() {
