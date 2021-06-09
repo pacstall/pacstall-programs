@@ -1,8 +1,8 @@
 name="webapp-manager"
 version="1.1.2"
 url="https://github.com/linuxmint/webapp-manager/archive/refs/tags/$version.tar.gz"
-build_depends="git"
-depends="python3-bs4 python3-configobj python-gobject python-pillow python3-setproctitle tldextract dconf-cli python3-xapp gir1.2-xapp-1.0"
+build_depends="git gettext"
+depends="python3-bs4 python3-configobj python-gobject python-pil python3-setproctitle tldextract dconf-cli python3-xapp gir1.2-xapp-1.0"
 breaks=""
 replace=""
 description="Run websites as if they were apps"
@@ -13,6 +13,8 @@ maintainer="Zahrun <Zahrun@github.com>"
 pacdeps=()
 patch=()
 prepare() {
+	# Silent build
+	sed -i 's/@echo/echo/g' Makefile
 	# Fix typo
 	sed -i 's/range(4)/range(5)/g' "usr/lib/$name/common.py"
 	# Fix desktop file
