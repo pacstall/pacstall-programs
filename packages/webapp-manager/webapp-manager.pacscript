@@ -7,10 +7,12 @@ description="Run websites as if they were apps"
 hash="07458737b98ac3058ad0ad72345586811b3dff868b5607f8153f8a8baa754f47"
 maintainer="Zahrun <Zahrun@github.com>"
 prepare() {
+	# Silent build
+	sed -i 's/@echo/#/g' Makefile
 	# Fix typo
 	sed -i 's/range(4)/range(5)/g' "usr/lib/$name/common.py"
 	# Fix desktop file
-	sed -i \$d usr/share/applications/$name.desktop
+	#sed -i \$d usr/share/applications/$name.desktop
 }
 
 build() {
