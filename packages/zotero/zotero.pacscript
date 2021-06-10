@@ -5,7 +5,6 @@ description="Your personal research assistant"
 hash="653faac4d2e3746dbd0e1c95d095ed8031c38b68183f22ab6708093aba392082"
 maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 
-tarfile="Zotero-${version}_linux-x86_64.tar.bz2"
 
 prepare() {
   # Modify desktop file to point to install location
