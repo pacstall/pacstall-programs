@@ -1,6 +1,6 @@
 # Based on https://aur.archlinux.org/packages/mutt-wizard/
 
-maintainer="Falcon Programmer <programmerfalcon@gmail.com>"
+maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 
 name="mutt-wizard"
 version="3.2.1"
