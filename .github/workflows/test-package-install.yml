@@ -23,7 +23,7 @@ jobs:
               echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -Il ${package_name}"
               cd ${package_dir}
-              pacstall --disable-prompts -Il ${package_name}
+              sudo pacstall --disable-prompts -Il ${package_name}
             fi
           done
         env:
