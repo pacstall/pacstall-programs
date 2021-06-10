@@ -25,5 +25,5 @@ install() {
   installdir=/usr/src/pacstall/${name}/opt/zotero
 
   mkdir -p "${installdir}"
-  sudo cp -r * "${installdir}"
+  sudo cp -r ./ "${installdir}"
 }
