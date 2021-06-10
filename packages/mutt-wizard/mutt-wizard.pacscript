@@ -25,6 +25,14 @@ optdepends=('imagemagick: view images inside of the neomutt TUI'
 # No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
             'cron: set up automatic mail syncing')
 
+prepare() {
+    true
+}
+
+build() {
+    true
+}
+
 install() {
     sudo make DESTDIR="/usr/src/pacstall/$name" install
     sudo install -Dm644 README.md -t "/usr/src/pacstall/$name/usr/local/share/doc/$name"
