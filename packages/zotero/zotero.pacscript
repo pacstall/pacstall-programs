@@ -12,8 +12,6 @@ prepare() {
   sed -i -e "s/^Exec=.*/Exec=\/opt\/zotero\/zotero -url %U/" \
          -e "s/^Icon=.*/Icon=\/opt\/zotero\/zotero.ico/" \
          zotero.desktop
-
-  true
 }
 
 build() {
