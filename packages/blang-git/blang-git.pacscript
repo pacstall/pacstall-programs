@@ -1,9 +1,13 @@
 name="blang-git"
-version="0.0.1"
 url="https://github.com/Ganesha2282882/blang.git"
 build_depends="python3 python3-pip python3-minimal"
 depends="python3-minimal"
 description="blang is a object oriented programming language."
+pkgver() {
+    git ls-remote "${url}" master | cut -f1
+}
+version="$(pkgver)"
+
 prepare() {
           true
           sudo pip3 install pyinstaller
