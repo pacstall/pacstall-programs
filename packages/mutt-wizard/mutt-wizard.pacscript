@@ -1,6 +1,6 @@
 # Based on https://aur.archlinux.org/packages/mutt-wizard/
 
-maintainer="Falcon Programmer <programmerfalcon@gmail.com>"
+maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 
 name="mutt-wizard"
 version="3.2.1"
@@ -24,6 +24,14 @@ optdepends=('imagemagick: view images inside of the neomutt TUI'
 # No Pkg    'protonmail-bridge: use neomutt with protonmail accounts'
 # No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
             'cron: set up automatic mail syncing')
+
+prepare() {
+    true
+}
+
+build() {
+    true
+}
 
 install() {
     sudo make DESTDIR="/usr/src/pacstall/$name" install
