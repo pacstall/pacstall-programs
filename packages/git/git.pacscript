@@ -1,7 +1,7 @@
 name="git"
 pkgname="git"
-version="2.31.1"
-url="https://github.com/git/git/archive/refs/tags/v2.31.1.tar.gz"
+version="2.32.0"
+url="https://www.kernel.org/pub/software/scm/git/git-$version.tar.gz"
 build_depends="dh-autoreconf"
 depends="libcurl4-gnutls-dev libexpat1-dev \
   gettext libz-dev libssl-dev asciidoc xmlto docbook2x install-info"
