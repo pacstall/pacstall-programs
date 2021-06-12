@@ -1,6 +1,6 @@
 name="git"
 version="2.32.0"
-url="https://www.kernel.org/pub/software/scm/$name/$name-"$version".tar.gz"
+url="https://www.kernel.org/pub/software/scm/$name/$name-$version.tar.gz"
 build_depends="dh-autoreconf"
 depends="libcurl4-gnutls-dev libexpat1-dev \
   gettext libz-dev libssl-dev asciidoc xmlto docbook2x install-info"
