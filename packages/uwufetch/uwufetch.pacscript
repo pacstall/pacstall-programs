@@ -14,7 +14,6 @@ description="A meme system info tool for Linux, based on nyan/uwu trend on r/lin
 build_depends="gcc pandoc"
 optdepends=("viu: image preview"
 "lshw: hardware info")
-gives="${name}"
 breaks="${name}-git ${name}-bin"
 hash="062de9ec1af10ce5bccc5cd99ab72511883076c96d6ebb6f21647fb3486ca391"
 removescript="yes"
