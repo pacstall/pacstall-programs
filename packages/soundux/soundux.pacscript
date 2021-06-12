@@ -1,4 +1,5 @@
 name="soundux"
+pkgdir="/usr/src/pacstall/$name"
 version="0.2.7"
 url="https://github.com/Soundux/Soundux/releases/download/$version/soundux-$version.tar.gz"
 build_depends="cmake libx11-dev libxi-dev libwebkit2gtk-4.0-dev libappindicator3-dev libssl-dev libpulse-dev"
@@ -20,5 +21,13 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR=/usr/src/pacstall/soundux
+  sudo make install DESTDIR="$pkgdir"
+  # install binary symlink
+  mkdir -p "$pkgdir/usr/bin/"
+  ln -sf /opt/soundux/soundux "$pkgdir/usr/bin/soundux"
+  
+  # install doc
+  install -Dm 644 -t "$pkgdir/usr/share/doc/$name" "../README.md"
+  # install license
+  install -Dm 644 -t "$pkgdir/usr/share/licenses/$name" "../LICENSE"
 }
