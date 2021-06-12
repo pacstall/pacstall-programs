@@ -23,11 +23,11 @@ build() {
 install() {
   sudo make install DESTDIR="$pkgdir"
   # install binary symlink
-  mkdir -p "$pkgdir/usr/bin/"
-  ln -sf /opt/soundux/soundux "$pkgdir/usr/bin/soundux"
+  sudo mkdir -p "$pkgdir/usr/bin/"
+  sudo ln -sf /opt/soundux/soundux "$pkgdir/usr/bin/soundux"
   
   # install doc
-  install -Dm 644 -t "$pkgdir/usr/share/doc/$name" "../README.md"
+  sudo install -Dm 644 -t "$pkgdir/usr/share/doc/$name" "../README.md"
   # install license
-  install -Dm 644 -t "$pkgdir/usr/share/licenses/$name" "../LICENSE"
+  sudo install -Dm 644 -t "$pkgdir/usr/share/licenses/$name" "../LICENSE"
 }
