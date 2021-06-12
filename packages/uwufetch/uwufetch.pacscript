@@ -19,17 +19,25 @@ breaks="${name}-git ${name}-bin"
 hash="062de9ec1af10ce5bccc5cd99ab72511883076c96d6ebb6f21647fb3486ca391"
 
 prepare() {
+  # Make nessesary directories
   sudo mkdir -p "${pkgdir}"/usr/bin
   sudo mkdir -p "${pkgdir}"/usr/lib
   sudo mkdir -p "${pkgdir}"/usr/share/man/man1
 }
 
 build() {
+  # Build required files
   sudo make -j"$(nproc)" build DESTDIR="${pkgdir}"
   sudo make -j"$(nproc)" man DESTDIR="${pkgdir}"
-
 }
 
 install() {
+  # Install license
+  sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${name}/LICENSE"
+
+  # Install doc
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+  
+  # Install uwufetch
   sudo make install DESTDIR="${pkgdir}"
 }
