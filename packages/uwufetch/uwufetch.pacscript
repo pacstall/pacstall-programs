@@ -17,6 +17,7 @@ optdepends=("viu: image preview"
 gives="${name}"
 breaks="${name}-git ${name}-bin"
 hash="062de9ec1af10ce5bccc5cd99ab72511883076c96d6ebb6f21647fb3486ca391"
+removescript="yes"
 
 prepare() {
   # Make nessesary directories
@@ -40,4 +41,10 @@ install() {
   
   # Install uwufetch
   sudo make install DESTDIR="${pkgdir}"
+}
+
+removescript() {
+  # Remove empty directories 
+  rm -rf "/usr/share/licenses/${name}"
+  rm -rf "/usr/share/doc/${name}"
 }
