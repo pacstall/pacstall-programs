@@ -21,7 +21,7 @@ build() {
 install() {
           sudo make install DESTDIR=/usr/src/pacstall/$name
           sudo install -Dm644 COPYING /usr/src/pacstall/git/usr/share/licenses/$name
-          sudo install -Dm644 README.md -t /usr/src/pacstall/git/usr/share/doc/$name
+          sudo install -Dm644 README.md /usr/src/pacstall/git/usr/share/doc/$name
 }
 
 removescript() {
