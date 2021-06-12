@@ -7,8 +7,10 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="awesome-git"
-pkgname="${name}"
+pkgname="awesome"
+pkgdir="/usr/src/pacstall/${name}"
 description="awesome window manager"
+url="https://github.com/awesomeWM/${pkgname}.git"
 depends="libdbus-1-dev libxcb-xfixes0-dev libxcb-randr0-dev libxcb-xinerama0-dev libxcb-icccm4-dev libxcb-xtest0-dev liblua5.3-dev libcairo2-dev dbus libgdk-pixbuf2.0-dev libxdg-basedir-dev libxkbcommon-x11-dev lua5.3 lua-lgi-dev libpango1.0-dev libstartup-notification0-dev libxcb-cursor-dev libxcb-keysyms1-dev libxcb-util-dev libxcb-xrm-dev libxfixes-dev cmake"
 build_depends="asciidoc docbook-xsl git imagemagick lua-ldoc xmlto"
 optdepends=("rlwrap: readline support for awesome-client"
@@ -17,12 +19,12 @@ optdepends=("rlwrap: readline support for awesome-client"
             "feh: for icon generation etc"
             "awesome-extra: additional modules for awesome"
             "awesome-doc: documentation for awesome")
-gives="awesome awesomewm notification-daemon"
-breaks="awesome awesomewm-bin"
+breaks="${pkgname} ${pkgname}-bin"
 removescript="yes"
-url="https://github.com/awesomeWM/awesome.git"
+
+
 pkgver() {
-    git ls-remote "${url}" master | sed "s/refs\/heads\/.*//"
+    git ls-remote "${url}" master  cut -f1 
 }
 version="$(pkgver)"
 
@@ -31,17 +33,21 @@ prepare() {
 }
 
 build() {
-  make -j"$(nproc)" DESTDIR=/usr/src/pacstall/"${name}"
+  # Build rquired files
+  sudo make -j"$(nproc)" DESTDIR="${pkgdir}"
 }
 
 install() {
-  make install DESTDIR=/usr/src/pacstall/"${name}"
+  # Install awesome
+  sudo make install DESTDIR="${pkgdir}"
 }
 
 postinst(){
-  ln -sf /usr/src/pacstall/"${name}"/usr/local/share/xsessions/awesome.desktop /usr/share/xsessions/awesome.desktop
+  # Install to correct location .desktop file
+  sudo ln -sf "${pkgdir}"/usr/local/share/xsessions/"${pkgname}".desktop /usr/share/xsessions/"${pkgname}".desktop
 }
 
 removescript() {
-  rm -f /usr/share/xsessions/awesome.desktop
+  # Remove desktop file
+  sudo rm -f /usr/share/xsessions/"${pkgname}".desktop
 }

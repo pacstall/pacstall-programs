@@ -36,7 +36,7 @@ install() {
   sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${name}/LICENSE"
 
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+  sudo install -Dm644 "README.md" "${pkgdir}/usr/share/doc/${name}"
   
   # Install uwufetch
   sudo make install DESTDIR="${pkgdir}"

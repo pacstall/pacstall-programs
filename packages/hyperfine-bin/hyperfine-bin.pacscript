@@ -30,7 +30,7 @@ install() {
   sudo install -Dm644 "LICENSE-MIT" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE-MIT"
 
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
+  sudo install -Dm644 "README.md" "${pkgdir}/usr/share/doc/${pkgname}"
 
   # Install binary
   sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
@@ -46,6 +46,7 @@ install() {
 }
 
 removescript() {
-  rm -rf "/usr/share/licenses/hyperfine"
-  rm -rf "/usr/share/doc/hyperfine"
+  # Remove empty directories
+  rm -rf "/usr/share/licenses/${pkgname}"
+  rm -rf "/usr/share/doc/${pkgname}"
 }
