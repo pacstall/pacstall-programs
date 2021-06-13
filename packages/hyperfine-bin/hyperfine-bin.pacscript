@@ -26,11 +26,10 @@ build() {
 
 install() {
   # Install license
-  sudo install -Dm644 "LICENSE-APACHE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE-APACHE"
-  sudo install -Dm644 "LICENSE-MIT" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE-MIT"
+  sudo install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 
   # Install doc
-  sudo install -Dm644 "README.md" "${pkgdir}/usr/share/doc/${pkgname}"
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
   # Install binary
   sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"

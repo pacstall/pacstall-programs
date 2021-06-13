@@ -33,10 +33,10 @@ build() {
 
 install() {
   # Install license
-  sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${name}/LICENSE"
+  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
 
   # Install doc
-  sudo install -Dm644 "README.md" "${pkgdir}/usr/share/doc/${name}"
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   
   # Install uwufetch
   sudo make install DESTDIR="${pkgdir}"
