@@ -50,14 +50,13 @@ NOGZ="YES"        # Don"t compress .el files.
 
 name="emacs-git"
 pkgname="emacs"
-pkgdir="/usr/src/pacstall/${pkgname}"
+pkgdir="/usr/src/pacstall/${name}"
 description="An extensible, customizable, free/libre text editor — and more."
 build_depends="git autoconf texinfo"
 depends_nox="libalsaplayer0 libgnutls28-dev libxml2 libjansson-dev gpm"
 depends="${depends_nox} m17n-lib-bin libotf0 libharfbuzz0b"
-gives="${name} emacs emacs-nox"
-breaks="emacs emacs-nox"
-replace="emacs emacs-nox"
+breaks="${pkgname} ${pkgname}-nox"
+replace="${breaks}"
 url="https://github.com/emacs-mirror/emacs.git"
 pkgver() {
     git ls-remote "${url}" master | cut -f1
