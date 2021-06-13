@@ -26,8 +26,7 @@ build() {
 
 install() {
   # Install license
-  sudo install -Dm644 "LICENSE-APACHE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE-APACHE"
-  sudo install -Dm644 "LICENSE-MIT" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE-MIT"
+  sudo install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
@@ -46,6 +45,8 @@ install() {
 }
 
 removescript() {
-  rm -rf "/usr/share/licenses/hyperfine"
-  rm -rf "/usr/share/doc/hyperfine"
+  # Remove empty directories
+  rm -rf "/usr/share/licenses/${pkgname}"
+  rm -rf "/usr/share/doc/${pkgname}"
 }
+# vim:set ft=sh ts=2 sw=2 et:
