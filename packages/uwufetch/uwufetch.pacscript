@@ -7,28 +7,44 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="uwufetch"
-pkgname="${name}"
 version="1.4"
+pkgdir="/usr/src/pacstall/${name}"
 url="https://github.com/TheDarkBug/${name}/archive/refs/tags/${version}.zip"
 description="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
 build_depends="gcc pandoc"
 optdepends=("viu: image preview"
 "lshw: hardware info")
-gives="${name}"
 breaks="${name}-git ${name}-bin"
 hash="062de9ec1af10ce5bccc5cd99ab72511883076c96d6ebb6f21647fb3486ca391"
+removescript="yes"
 
 prepare() {
-  sudo mkdir -p /usr/src/pacstall/"${name}"/usr/bin
-  sudo mkdir -p /usr/src/pacstall/"${name}"/usr/lib
-  sudo mkdir -p /usr/src/pacstall/"${name}"/usr/share/man/man1
+  # Make nessesary directories
+  sudo mkdir -p "${pkgdir}"/usr/bin
+  sudo mkdir -p "${pkgdir}"/usr/lib
+  sudo mkdir -p "${pkgdir}"/usr/share/man/man1
 }
 
 build() {
-  make -j"$(nproc)" build DESTDIR=/usr/src/pacstall/"${name}"
-  make -j"$(nproc)" man DESTDIR=/usr/src/pacstall/"${name}"
+  # Build required files
+  sudo make -j"$(nproc)" build DESTDIR="${pkgdir}"
+  sudo make -j"$(nproc)" man DESTDIR="${pkgdir}"
 }
 
 install() {
-  sudo make install DESTDIR=/usr/src/pacstall/"${name}"
+  # Install license
+  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
+
+  # Install doc
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+  
+  # Install uwufetch
+  sudo make install DESTDIR="${pkgdir}"
 }
+
+removescript() {
+  # Remove empty directories 
+  rm -rf "/usr/share/licenses/${name}"
+  rm -rf "/usr/share/doc/${name}"
+}
+# vim:set ft=sh ts=2 sw=2 et:

@@ -49,16 +49,17 @@ NOGZ="YES"        # Don"t compress .el files.
 ################################################################################
 
 name="emacs-git"
+pkgname="emacs"
+pkgdir="/usr/src/pacstall/${name}"
 description="An extensible, customizable, free/libre text editor — and more."
 build_depends="git autoconf texinfo"
 depends_nox="libalsaplayer0 libgnutls28-dev libxml2 libjansson-dev gpm"
 depends="${depends_nox} m17n-lib-bin libotf0 libharfbuzz0b"
-gives="${name} emacs emacs-nox"
-breaks="emacs emacs-nox"
-replace="emacs emacs-nox"
+breaks="${pkgname} ${pkgname}-nox"
+replace="${breaks}"
 url="https://github.com/emacs-mirror/emacs.git"
 pkgver() {
-    git ls-remote "${url}" master | sed "s/refs\/heads\/.*//"
+    git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
@@ -241,20 +242,21 @@ build() {
 }
 
 install() {
-  sudo make -j"$(nproc)" DESTDIR="/usr/src/pacstall/${name}" install
+  sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install
 
   # Install optional documentation formats
-  if [[ $DOCS_HTML == "YES" ]]; then make -j"$(nproc)" DESTDIR="/usr/src/pacstall/${name}/" install-html; fi
-  if [[ $DOCS_PDF == "YES" ]]; then make -j"$(nproc)" DESTDIR="/usr/src/pacstall/${name}/" install-pdf; fi
+  if [[ $DOCS_HTML == "YES" ]]; then make -j"$(nproc)" DESTDIR="${pkgdir}" install-html; fi
+  if [[ $DOCS_PDF == "YES" ]]; then make -j"$(nproc)" DESTDIR="${pkgdir}" install-pdf; fi
 }
 
 postinst() {
   # fix user/root permissions on usr/local/share files
-  find /usr/src/pacstall/"${name}"/usr/local/share/emacs/ -print0 | xargs -0 chown root:root
+  find "${pkgdir}"/usr/local/share/emacs/ -print0 | xargs -0 chown root:root
 
   # fix permssions on /var/games
-  mkdir -p /usr/src/pacstall/"${name}"/var/games/emacs
-  chmod 775 /usr/src/pacstall/"${name}"/var/games
-  chmod 775 /usr/src/pacstall/"${name}"/var/games/emacs
-  chown -R root:games /usr/src/pacstall/"${name}"/var/games
+  mkdir -p "${pkgdir}"/var/games/emacs
+  chmod 775 "${pkgdir}"/var/games
+  chmod 775 "${pkgdir}"/var/games/emacs
+  chown -R root:games "${pkgdir}"/var/games
 }
+# vim:set ft=sh ts=2 sw=2 et:
