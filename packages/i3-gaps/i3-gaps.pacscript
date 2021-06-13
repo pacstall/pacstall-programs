@@ -39,3 +39,4 @@ removescript() {
   rm -f /usr/share/xsessions/i3.desktop
   rm -f /usr/share/xsessions/i3-with-shmlog.desktop
 }
+# vim:set ft=sh ts=2 sw=2 et:

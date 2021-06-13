@@ -257,3 +257,4 @@ postinst() {
   chmod 775 ${pkgdir}/var/games/emacs
   chown -R root:games ${pkgdir}/var/games
 }
+# vim:set ft=sh ts=2 sw=2 et:

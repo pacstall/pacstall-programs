@@ -50,3 +50,4 @@ removescript() {
   rm -rf "/usr/share/licenses/${pkgname}"
   rm -rf "/usr/share/doc/${pkgname}"
 }
+# vim:set ft=sh ts=2 sw=2 et:

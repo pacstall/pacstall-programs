@@ -28,3 +28,4 @@ build() {
 install() {
     sudo make install DESTDIR=/usr/src/pacstall/"${name}"
 }
+# vim:set ft=sh ts=2 sw=2 et:
