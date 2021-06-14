@@ -5,11 +5,11 @@ maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 name="mutt-wizard"
 version="3.2.1"
 url="https://github.com/lukesmithxyz/$name/archive/v$version.tar.gz"
-buld_depends=""
 depends="neomutt isync msmtp notmuch pass curl"
 breaks="mutt-wizard mutt-wizard-git"
 description="Simple interface to auto-configure neomutt and isync with safe passwords"
 hash="def5e792d46f217142b489e65f3d4059cdc8fca93eb83bab4474785c897d7f20"
+removescript="yes"
 
 # Some optional dependencies don't currently have an ubuntu package as far as I know,
 # they have been marked with "No Pkg" in the optdepends.
@@ -37,6 +37,11 @@ install() {
     pkgdir="/usr/src/pacstall/$name"
 
     sudo make DESTDIR="$pkgdir" install
-    sudo install -Dm644 README.md -t "${pkgdir}/usr/local/share/doc/$name"
+    sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/$name"
     sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/$name"
+}
+
+removescript() {
+    rm -rf "/usr/share/licenses/$name"
+    rm -rf "/usr/share/doc/$name"
 }
