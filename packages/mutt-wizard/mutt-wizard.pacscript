@@ -34,6 +34,9 @@ build() {
 }
 
 install() {
-    sudo make DESTDIR="/usr/src/pacstall/$name" install
-    sudo install -Dm644 README.md -t "/usr/src/pacstall/$name/usr/local/share/doc/$name"
+    pkgdir="/usr/src/pacstall/$name"
+
+    sudo make DESTDIR="$pkgdir" install
+    sudo install -Dm644 README.md -t "${pkgdir}/usr/local/share/doc/$name"
+    sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/$name"
 }
