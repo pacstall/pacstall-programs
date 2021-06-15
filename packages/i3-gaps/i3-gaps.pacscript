@@ -40,16 +40,16 @@ install() {
 
 postinst() {
   # Install .desktop files
-  ln -sf "${pkgdir}/usr/local/share/xsessions/i3.desktop" "/usr/share/xsessions/i3.desktop"
-  ln -sf "${pkgdir}/usr/local/share/xsessions/i3-with-shmlog.desktop" "/usr/share/xsessions/i3-with-shmlog.desktop"
+  sudo ln -sf "${pkgdir}/usr/local/share/xsessions/i3.desktop" "/usr/share/xsessions/i3.desktop"
+  sudo ln -sf "${pkgdir}/usr/local/share/xsessions/i3-with-shmlog.desktop" "/usr/share/xsessions/i3-with-shmlog.desktop"
 }
 
 removescript() {
   # Remove empty directories
-  rm -rf "/usr/share/licenses/${name}"
-  rm -rf "/usr/share/doc/${name}"
+  sudo rm -rf "/usr/share/licenses/${name}"
+  sudo rm -rf "/usr/share/doc/${name}"
   # Remove .desktop files
-  rm -f "/usr/share/xsessions/i3.desktop"
-  rm -f "/usr/share/xsessions/i3-with-shmlog.desktop"
+  sudo rm -f "/usr/share/xsessions/i3.desktop"
+  sudo rm -f "/usr/share/xsessions/i3-with-shmlog.desktop"
 }
 # vim:set ft=sh ts=2 sw=2 et:

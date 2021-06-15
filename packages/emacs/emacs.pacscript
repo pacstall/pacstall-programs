@@ -243,8 +243,8 @@ install() {
   sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install
 
   # Install optional documentation formats
-  if [[ $DOCS_HTML == "YES" ]]; then make -j"$(nproc)" DESTDIR="${pkgdir}" install-html; fi
-  if [[ $DOCS_PDF == "YES" ]]; then make -j"$(nproc)" DESTDIR="${pkgdir}" install-pdf; fi
+  if [[ $DOCS_HTML == "YES" ]]; then sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install-html; fi
+  if [[ $DOCS_PDF == "YES" ]]; then sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install-pdf; fi
 }
 
 postinst() {
