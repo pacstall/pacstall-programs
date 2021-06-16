@@ -24,12 +24,12 @@ version="$(pkgver)"
 
 prepare() {
   # Install dependencies
-  npm install
+  sudo npm install
 }
 
 build() {
   # Build walc
-  npm run build
+  sudo npm run build
 }
 
 install() {
@@ -41,7 +41,7 @@ install() {
 
   # Install binary
   cd dist/
-  sudo mmv "WALC-*.AppImage" "/usr/bin"
+  sudo mmv "WALC-*.AppImage" "${pkgdir}/usr/bin"
 }
 
 removescript() {
