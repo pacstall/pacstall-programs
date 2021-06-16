@@ -12,6 +12,7 @@ pkgdir="/usr/src/pacstall/${name}"
 description="An unofficial WhatsApp Desktop client for linux systems."
 url="https://github.com/cstayyab/WALC.git"
 depends="nodejs npm"
+buid_depends="mmv"
 breaks="${pkgname} ${pkgname}-bin"
 removescript="yes"
 
@@ -23,12 +24,12 @@ version="$(pkgver)"
 
 prepare() {
   # Install dependencies
-  sudo npm install
+  npm install
 }
 
 build() {
   # Build walc
-  sudo npm prod
+  npm run build
 }
 
 install() {
@@ -39,7 +40,8 @@ install() {
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
   # Install binary
-  sudo install -Dm755 "walc" -t "${pkgdir}/usr/bin"
+  cd dist/
+  sudo mmv "WALC-*.AppImage" "/usr/bin"
 }
 
 removescript() {
