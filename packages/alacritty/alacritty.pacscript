@@ -24,7 +24,7 @@ install() {
         sudo install -D extra/completions/_alacritty -t /usr/src/pacstall/${name}/usr/share/zsh/vendor-completions
 
         sudo mkdir -p /usr/src/pacstall/${name}/usr/local/share/man/man1
-        sudo gzip -c extra/alacritty.man | sudo tee /usr/src/pacstall/${name}/usr/local/share/man/man1/alacritty.1.gz >/dev/null
+        gzip -c extra/alacritty.man | sudo tee /usr/src/pacstall/${name}/usr/local/share/man/man1/alacritty.1.gz >/dev/null
 
         sudo install -D alacritty.yml -t /usr/src/pacstall/${name}/usr/doc/share/alacritty
 }
