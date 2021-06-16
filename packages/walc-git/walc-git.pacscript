@@ -23,12 +23,12 @@ version="$(pkgver)"
 
 prepare() {
   # Install dependencies
-  npm install
+  sudo npm install
 }
 
 build() {
   # Build assets
-  npm run dev
+  sudo npm run dev
 }
 
 install() {
