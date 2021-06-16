@@ -24,12 +24,12 @@ version="$(pkgver)"
 
 prepare() {
   # Install dependencies
-  sudo npm install
+  npm install
 }
 
 build() {
   # Build walc
-  sudo npm run build
+  npm run build
 }
 
 install() {
