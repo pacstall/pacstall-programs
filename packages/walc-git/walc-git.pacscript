@@ -27,8 +27,8 @@ prepare() {
 }
 
 build() {
-  # Build assets
-  sudo npm run dev
+  # Build walc
+  sudo npm prod
 }
 
 install() {
@@ -37,6 +37,9 @@ install() {
 
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
+
+  # Install binary
+  sudo install -Dm755 "walc" -t "${pkgdir}/usr/bin"
 }
 
 removescript() {
