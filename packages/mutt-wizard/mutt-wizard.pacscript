@@ -42,6 +42,6 @@ install() {
 }
 
 removescript() {
-    rm -rf "/usr/share/licenses/$name"
-    rm -rf "/usr/share/doc/$name"
+    sudo rm -rf "/usr/share/licenses/$name"
+    sudo rm -rf "/usr/share/doc/$name"
 }

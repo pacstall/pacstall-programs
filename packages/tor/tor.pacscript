@@ -1,20 +1,20 @@
 name="tor"
-version="0.4.5.8"
+version="0.4.6.5"
 url="https://dist.torproject.org/tor-"$version".tar.gz"
 depends="libevent-dev libnss3-dev libzstd-dev liblzma-dev openssl libssl-dev ca-certificates libseccomp-dev zlib1g zlib1g-dev"
 description="Tor protects your privacy on the internet by hiding the connection between your Internet address and the services you use."
-hash="57ded091e8bcdcebb0013fe7ef4a4439827cb169358c7874fd05fa00d813e227"
+hash="7b6d354e0d9791eace4b51e92211909308297b7aa257993937163d7ee0694cf9"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
-          true
+    true
 }
 
 build() {
-        ./configure
-        make -j$(nproc)
+    ./configure
+    make -j$(nproc)
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall/tor
+    sudo make install DESTDIR=/usr/src/pacstall/tor
 }

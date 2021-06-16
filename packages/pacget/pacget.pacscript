@@ -12,20 +12,17 @@ debian=TRUE
 ubuntu=TRUE
 ## installation stepps
 #preparations
-prepare() 
-{
+prepare() {
 	sudo mkdir -p "/usr/src/pacstall/$name"
 	sudo mkdir -p "/usr/src/pacstall/$name/tmp/pacget"
 	sudo mkdir -p "/usr/src/pacstall/$name/usr/bin"
 }
 # pacget is a bashscript, no need to build anything
-build() 
-{
-true
+build() {
+    true
 }
 #this just coppies the files over and makes the file executable
-install() 
-{
+install() {
 	sudo cp -p pacget /usr/src/pacstall/pacget/usr/bin/pacget
 	sudo chmod 755 /usr/src/pacstall/pacget/usr/bin/pacget
 }

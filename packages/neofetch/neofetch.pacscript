@@ -16,14 +16,13 @@ description="Neofetch is a command-line system information tool written in bash 
 hash="e610da6561f17c8161337d0c4115da310be576e8699fa2add64e14eeb3f3dcf1"
 
 prepare() {
-          true
-          
+    true
 }
 
 build() {
-          true 
+    true 
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall/neofetch
+    sudo make install DESTDIR=/usr/src/pacstall/neofetch
 }

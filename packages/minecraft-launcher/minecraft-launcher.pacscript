@@ -8,8 +8,8 @@ description="Official Minecraft Launcher"
 hash="e84cadeb55db50d673bb97d3ad1c9ad52f4e5999ed25fdcf3859cec43b5a449e"
 
 prepare() {
-        wget -q https://gist.githubusercontent.com/aranym0/c752045e3b71bdb5d8c208f57dc12dba/raw/4aa522fe02cd827300ce102b3d5f38ba38798a9c/minecraft-launcher.desktop
-        wget -q https://launcher.mojang.com/download/minecraft-launcher.svg
+        sudo wget -q https://gist.githubusercontent.com/aranym0/c752045e3b71bdb5d8c208f57dc12dba/raw/4aa522fe02cd827300ce102b3d5f38ba38798a9c/minecraft-launcher.desktop
+        sudo wget -q https://launcher.mojang.com/download/minecraft-launcher.svg
 }
 
 build() {
@@ -21,7 +21,7 @@ install() {
         sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
         sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/share/applications
         chmod +x minecraft-launcher
-        mv minecraft-launcher /usr/src/pacstall/minecraft-launcher/usr/bin
-        mv minecraft-launcher.svg /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
-        mv minecraft-launcher.desktop /usr/src/pacstall/minecraft-launcher/usr/share/applications
+        sudo mv minecraft-launcher /usr/src/pacstall/minecraft-launcher/usr/bin
+        sudo mv minecraft-launcher.svg /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
+        sudo mv minecraft-launcher.desktop /usr/src/pacstall/minecraft-launcher/usr/share/applications
 }
