@@ -19,6 +19,6 @@ install() {
     sudo mkdir -p /usr/src/pacstall/onefetch-bin/usr/bin
     cd /tmp/pacstall
     chmod +x onefetch
-    mv onefetch /usr/src/pacstall/onefetch-bin/usr/bin
+    sudo mv onefetch /usr/src/pacstall/onefetch-bin/usr/bin
 }
 

@@ -11,13 +11,13 @@ pkgver () {
 }
 version="$(pkgver)"
 prepare() {
-          true
+    true
 }
 
 build() {
-         true
+    true
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall/st-lukesmith
+    sudo make install DESTDIR=/usr/src/pacstall/st-lukesmith
 }
