@@ -14,7 +14,7 @@ prepare() {
 
 build() {
     cd build
-    sudo ninja -j$(nproc)
+    ninja -j$(nproc)
 }
 
 install() {
