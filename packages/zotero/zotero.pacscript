@@ -18,11 +18,8 @@ build() {
 }
 
 install() {
-
   sudo install -D zotero.desktop -t /usr/src/pacstall/${name}/usr/share/applications
-
   installdir=/usr/src/pacstall/${name}/opt/zotero
-
-  mkdir -p "${installdir}"
+  sudo mkdir -p "${installdir}"
   sudo cp -r ./ "${installdir}"
 }

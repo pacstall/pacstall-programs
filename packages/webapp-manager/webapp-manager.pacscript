@@ -21,10 +21,10 @@ build() {
 
 install() {
 	installdir=/usr/src/pacstall/webapp-manager
-	mkdir -p $installdir
-	cp -r usr etc $installdir
+	sudo mkdir -p $installdir
+	sudo cp -r usr etc $installdir
 }
 
 postinst() {
-	glib-compile-schemas /usr/share/glib-2.0/schemas/
+	sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 }
