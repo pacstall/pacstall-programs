@@ -41,7 +41,7 @@ install() {
 
   # Install binary
   cd dist/
-  mkdir -p "${pkgdir}/usr/bin"
+  sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mmv "WALC-*.AppImage" "${pkgdir}/usr/bin/walc.AppImage"
 }
 
