@@ -23,6 +23,5 @@ build() {
 }
 #this just coppies the files over and makes the file executable
 install() {
-	sudo cp -p pacget /usr/src/pacstall/pacget/usr/bin/pacget
-	sudo chmod 755 /usr/src/pacstall/pacget/usr/bin/pacget
+ 	sudo install -Dm755 "pacget" "/usr/src/pacstall/pacget/usr/bin/pacget"
 }
