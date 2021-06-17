@@ -13,7 +13,7 @@ homedir="/home/$(logname)"
 description="An unofficial WhatsApp Desktop client for linux systems."
 url="https://github.com/cstayyab/WALC.git"
 depends="nodejs npm"
-buid_depends="mmv"
+build_depends="mmv"
 breaks="${pkgname} ${pkgname}-bin"
 removescript="yes"
 
