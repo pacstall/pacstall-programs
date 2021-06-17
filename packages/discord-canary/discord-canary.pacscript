@@ -17,7 +17,7 @@ build() {
 }
 
 install() {
-        mv discord-canary.desktop /usr/src/pacstall/discord-canary/usr/share/applications/
-        cp discord.png /usr/src/pacstall/discord-canary/usr/share/icons/discord-canary.png
-        mv ./* /usr/src/pacstall/discord-canary/usr/share/discord-canary/
+        sudo mv discord-canary.desktop /usr/src/pacstall/discord-canary/usr/share/applications/
+        sudo cp discord.png /usr/src/pacstall/discord-canary/usr/share/icons/discord-canary.png
+        sudo mv ./* /usr/src/pacstall/discord-canary/usr/share/discord-canary/
 }
