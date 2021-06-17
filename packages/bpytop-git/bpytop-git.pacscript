@@ -13,7 +13,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-    true
+    sudo pip3 install psutil
 }
 
 build() {
@@ -21,6 +21,5 @@ build() {
 }
 
 install() {
-    pip3 install psutil
     sudo make install DESTDIR=/usr/src/pacstall/bpytop-git
 } 

@@ -20,5 +20,5 @@ build() {
 
 install() {
     sudo make install DESTDIR=/usr/src/pacstall/htop
-    mv htop.desktop /usr/src/pacstall/htop/usr/share/applications
+    sudo mv htop.desktop /usr/src/pacstall/htop/usr/share/applications
 }
