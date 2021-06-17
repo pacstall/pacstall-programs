@@ -8,8 +8,8 @@ description="Official Minecraft Launcher"
 hash="e84cadeb55db50d673bb97d3ad1c9ad52f4e5999ed25fdcf3859cec43b5a449e"
 
 prepare() {
-        sudo wget -q https://gist.githubusercontent.com/aranym0/c752045e3b71bdb5d8c208f57dc12dba/raw/4aa522fe02cd827300ce102b3d5f38ba38798a9c/minecraft-launcher.desktop
-        sudo wget -q https://launcher.mojang.com/download/minecraft-launcher.svg
+        wget -q https://gist.githubusercontent.com/aranym0/c752045e3b71bdb5d8c208f57dc12dba/raw/4aa522fe02cd827300ce102b3d5f38ba38798a9c/minecraft-launcher.desktop
+        wget -q https://launcher.mojang.com/download/minecraft-launcher.svg
 }
 
 build() {
