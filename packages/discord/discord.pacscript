@@ -17,7 +17,7 @@ build() {
 }
 
 install() {
-        mv discord.desktop /usr/src/pacstall/discord/usr/share/applications/
-        cp discord.png /usr/src/pacstall/discord/usr/share/icons/
-        mv ./* /usr/src/pacstall/discord/usr/share/discord/
+        sudo mv discord.desktop /usr/src/pacstall/discord/usr/share/applications/
+        sudo cp discord.png /usr/src/pacstall/discord/usr/share/icons/
+        sudo mv ./* /usr/src/pacstall/discord/usr/share/discord/
 }

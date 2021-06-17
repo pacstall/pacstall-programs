@@ -23,6 +23,6 @@ build() {
 
 install() {
     sudo make install DESTDIR=/usr/src/pacstall/gtkhash
-    mv gtkhash-logo.png /usr/src/pacstall/gtkhash/usr/share/icons/hicolor/128x128/apps
-    mv gtkhash.desktop /usr/src/pacstall/gtkhash/usr/share/applications
+    sudo mv gtkhash-logo.png /usr/src/pacstall/gtkhash/usr/share/icons/hicolor/128x128/apps
+    sudo mv gtkhash.desktop /usr/src/pacstall/gtkhash/usr/share/applications
 }

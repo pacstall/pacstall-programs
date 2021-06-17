@@ -21,5 +21,5 @@ build() {
 }
 
 install() {
-    make install DESTDIR=/usr/src/pacstall/kvantum
+    sudo make install DESTDIR=/usr/src/pacstall/kvantum
 }
