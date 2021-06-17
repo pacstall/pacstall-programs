@@ -9,6 +9,7 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="walc-git"
 pkgname="walc"
 pkgdir="/usr/src/pacstall/${name}"
+homedir="/home/$(logname)"
 description="An unofficial WhatsApp Desktop client for linux systems."
 url="https://github.com/cstayyab/WALC.git"
 depends="nodejs npm"
@@ -49,5 +50,13 @@ removescript() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"
+
+  # Remove .desktop file
+  sudo rm -f "${homedir}/.local/share/applications/WALC.desktop"
+
+  # Remove left over .config files
+  if ask "Do you want to remove left over configuration files?" Y; then
+    sudo rm -rf "${homedir}/.config/${pkgname}"
+  fi
 }
 # vim:set ft=sh ts=2 sw=2 et:
