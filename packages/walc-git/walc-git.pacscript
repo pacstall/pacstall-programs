@@ -42,7 +42,7 @@ install() {
   # Install binary
   cd dist/
   sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo mmv "WALC-*.AppImage" "${pkgdir}/usr/bin/walc.AppImage"
+  sudo mmv "WALC-*.AppImage" "${pkgdir}/usr/bin/walc"
 }
 
 removescript() {
