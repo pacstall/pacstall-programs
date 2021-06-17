@@ -8,12 +8,12 @@ depends=""
 gives="popsicle"
 breaks=""
 description="Multiple USB File Flasher"
-hash="4dd0f92f46d0befabd56c0cea50829b4db6d2ae8a8673e3d31c7e4228b02248b "
+hash="4dd0f92f46d0befabd56c0cea50829b4db6d2ae8a8673e3d31c7e4228b02248b"
 
 build() {
-  make -j$(nproc)
+   make -j$(nproc)
 }
 
 install() {
-   make install DESTDIR=/usr/src/pacstall/popsicle
+   sudo make install DESTDIR=/usr/src/pacstall/popsicle
 }
