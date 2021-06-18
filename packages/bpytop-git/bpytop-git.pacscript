@@ -1,6 +1,6 @@
 name="bpytop-git"
 pkgname="bpytop"
-url="https://github.com/aristocratos/$pkgname.git"
+url="https://github.com/aristocratos/$name.git"
 build_depends="make"
 depends="python3 python3-pip python3-distutils"
 description="Linux/OSX/FreeBSD resource monitor."
