@@ -23,8 +23,8 @@ install() {
     sudo make install DESTDIR=/usr/src/pacstall/$name
     sudo install -Dm644 $name-logo.png -t /usr/src/pacstall/$name/usr/share/icons/hicolor/128x128/apps
     sudo install -Dm644 $name.desktop -t /usr/src/pacstall/$name/usr/share/applications
-    sudo install -Dm644 COPYING -t /usr/src/pacstall/git/usr/share/licenses/$name
-    sudo install -Dm644 README.md -t /usr/src/pacstall/git/usr/share/doc/$name
+    sudo install -Dm644 COPYING -t /usr/src/pacstall/$name/usr/share/licenses/$name
+    sudo install -Dm644 README.md -t /usr/src/pacstall/$name/usr/share/doc/$name
 }
 
 removescript() {
