@@ -1,7 +1,7 @@
 name="gtkhash"
 version="1.4"
 url="https://github.com/tristanheaven/$name/releases/download/v$version/$name-$version.tar.xz"
-build_depends="autoconf automake libtool intltool wget"
+build_depends="autoconf automake wget"
 depends="libgtk-3-dev libglib2.0-dev"
 optdepends=("openssl: tls/ssl and crypto library"
 "nettle-dev: cryptographic library"
