@@ -9,7 +9,6 @@ url="https://gitlab.com/Erik.Lundstedt/pacget.git"
 
 license="Don't Be a Jerk"
 depends="fzf curl bash"
-gives="$pkgname"
 description="A fully foss, lightweight fuzzysearching TUI frontend for pacstall using fzf"
 removescript="yes"
 
@@ -40,5 +39,5 @@ install() {
 }
 
 removescript() {
-	rm -rf /usr/src/pacstall/pacget
+	sudo rm -rf "/usr/share/licenses/${pkgname}"
 }
