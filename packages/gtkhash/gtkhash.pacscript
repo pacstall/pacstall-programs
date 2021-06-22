@@ -20,7 +20,7 @@ prepare() {
 }
 
 build() {
-   ./configure
+   ./configure --disable-blake2 --disable-gcrypt 
    make -j$(nproc)
 }
 
