@@ -9,7 +9,7 @@ hash="20b57dbb8f6c6d7323f573c111a11640603a422c5f9da7b302a4981e4adc37c4"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
-    wget -q https://images.sftcdn.net/images/t_app-logo-xl,f_auto/p/dba4e141-ff1b-43d8-9805-fc9474cf06ea/3969648430/gtkhash-gtkhash-icn.png
+    wget -q https://images.sftcdn.net/images/t_app-logo-xl,f_auto/p/dba4e141-ff1b-43d8-9805-fc9474cf06ea/3969648430/$name-$name-icn.png
     wget -q https://raw.githubusercontent.com/WRM-42/GTKHash-ICO-Desktop/main/$name.desktop
 }
 
