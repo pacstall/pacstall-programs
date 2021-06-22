@@ -13,7 +13,7 @@ prepare() {
 }
 
 build() {
-   ./configure
+   ./configure --enable-mbedtls --enable-nettle
    make -j$(nproc)
 }
 
