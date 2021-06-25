@@ -1,6 +1,5 @@
 # GNOME Shell Extension Installer
 
-
 A bash script to install and search extensions from [extensions.gnome.org](https://extensions.gnome.org/).
 
 [![asciicast](https://asciinema.org/a/2kkzsbsd9k4x9xtn028q7w3dn.png)](https://asciinema.org/a/2kkzsbsd9k4x9xtn028q7w3dn)
