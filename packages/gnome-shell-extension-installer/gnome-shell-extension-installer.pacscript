@@ -4,18 +4,18 @@ version="1.7"
 description="A bash script to install and search extensions from extensions.gnome.org."
 maintainer="D-Brox <BroxZuka@protonmail.com>"
 url="https://github.com/brunelli/gnome-shell-extension-installer.git"
-build_depends="perl dbus"
-breaks="gnome-shell-extension-installer"
-gives="gnome-shell-extension-installer"[
+depends="curl perl dbus"
+pkgdir="/usr/src/pacstall/${pkgname}"
 prepare() {
     true
 }
 
 build() {
-    chmod +x gnome-shell-extension-installer
+    true
 }
 
 install() {
-    sudo mkdir -p /usr/src/pacstall/${pkgname}/usr/bin/
-    sudo cp gnome-shell-extension-installer /usr/src/pacstall/${pkgname}/usr/bin
+    sudo install -Dm755 gnome-shell-extension-installer -t "${pkgdir}/usr/bin"
+    sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}"
+    sudo install -Dm644 "README.md" "${pkgdir}/usr/share/doc/${pkgname}"
 }
