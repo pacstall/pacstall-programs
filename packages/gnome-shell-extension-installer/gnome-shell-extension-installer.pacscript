@@ -16,6 +16,6 @@ build() {
 
 install() {
     sudo install -Dm755 gnome-shell-extension-installer -t "${pkgdir}/usr/bin"
-    sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}"
-    sudo install -Dm644 "README.md" "${pkgdir}/usr/share/doc/${pkgname}"
+    sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 }
