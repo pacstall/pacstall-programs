@@ -10,17 +10,17 @@ Simple and powerful voice changer for Linux, written in GTK 3.
 
 ## Features
 
-  -  Built in effects for accurate male and female voices
-  -  Ability to create and load custom presets
-  -  Manual pitch scale for finer adjustment
-  -  Creates its own temporary virtual input device
-  -  A clean and easy to use GUI
+-    Built in effects for accurate male and female voices
+-    Ability to create and load custom presets
+-    Manual pitch scale for finer adjustment
+-    Creates its own temporary virtual input device
+-    A clean and easy to use GUI
 
 ## Usage
 
-  1.  Select a preset or set a custom pitch and flip the switch
-  2.  Change the input device for the application to **Lyrebird Virtual Input**, this can be done in-app or using `pavucontrol` if you're not given the option
-  3.  Ignore any applications that ask if you want to use "Lyrebird Output" (e.g. Discord), this is used internally and isn't necessary to use Lyrebird
+1.    Select a preset or set a custom pitch and flip the switch
+2.    Change the input device for the application to **Lyrebird Virtual Input**, this can be done in-app or using `pavucontrol` if you're not given the option
+3.    Ignore any applications that ask if you want to use "Lyrebird Output" (e.g. Discord), this is used internally and isn't necessary to use Lyrebird
 
 ### Changing using `pavucontrol`
 
