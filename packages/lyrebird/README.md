@@ -63,9 +63,8 @@ volume_boost = "2"
 
 # Donations
 
-Lyrebird is free, open-source software - there is no expectation to pay any amount of money for Lyrebird. However, if you would like to support development we have a Bitcoin address: `bc1qp62nswu34jpdtzu82ng04k0tx02fdxjfmjujz2`. The funds are split between [charpointer](https://github.com/charpointer) and [harrego](https://github.com/harrego), the two lead maintainers of Lyrebird.
+Lyrebird is free, open-source software - there is no expectation to pay any amount of money for Lyrebird. However, if you would like to support development, you can check the Donations README section in the [original repo](https://github.com/lyrebird-voice-changer/lyrebird/blob/master/README.md). The funds are split between [charpointer](https://github.com/charpointer) and [harrego](https://github.com/harrego), the two lead maintainers of Lyrebird.
 
 # v2, the C rewrite
 
 Lyrebird v2 is currently being worked on in branch [c](https://github.com/lyrebird-voice-changer/lyrebird/tree/c). If you are a C developer familiar or willing to learn the Glib API, please come and join us make Lyrebird even better.
-
