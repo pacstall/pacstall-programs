@@ -4,18 +4,6 @@ Simple and powerful voice changer for Linux, written in GTK 3.
 
 ![Lyrebird Screenshot](https://raw.githubusercontent.com/lyrebird-voice-changer/lyrebird/master/preview.png)
 
-## Why
-
-> I decided to write this as a tool for myself, partly for fun and partly because I hate my own voice and since there was no decent Linux voice changers. The UI is based *very* loosely off of Clownfish for Windows, and is very simple and easy to use.
-
-## Features
-
--  Built in effects for accurate male and female voices
--  Ability to create and load custom presets
--  Manual pitch scale for finer adjustment
--  Creates its own temporary virtual input device
--  A clean and easy to use GUI
-
 ## Usage
 
 1.  Select a preset or set a custom pitch and flip the switch
@@ -25,8 +13,6 @@ Simple and powerful voice changer for Linux, written in GTK 3.
 ### Changing using `pavucontrol`
 
 If an app doesn't support live input changing then it can be done with `pavucontrol`. Head to the "Recording" tab and change the input using the drop down next to the application name.
-
-#### I couldn't
 
 For some apps on some distros (like Ubuntu) changing the input won't work. To fix this you need to create a file at `~/.alsoftrc` and add the following contents:
 
@@ -60,11 +46,3 @@ override_pitch_slider = true
 # Boost by 2 dB to make the voice louder
 volume_boost = "2"
 ```
-
-## Donations
-
-Lyrebird is free, open-source software - there is no expectation to pay any amount of money for Lyrebird. However, if you would like to support development, you can check the Donations README section in the [original repo](https://github.com/lyrebird-voice-changer/lyrebird/blob/master/README.md). The funds are split between [charpointer](https://github.com/charpointer) and [harrego](https://github.com/harrego), the two lead maintainers of Lyrebird.
-
-## v2 the C rewrite
-
-Lyrebird v2 is currently being worked on in branch [c](https://github.com/lyrebird-voice-changer/lyrebird/tree/c). If you are a C developer familiar or willing to learn the Glib API, please come and join us make Lyrebird even better.
