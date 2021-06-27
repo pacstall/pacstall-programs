@@ -14,8 +14,8 @@ prepare() {
 }
 
 build() {
-    sudo BIN_PATH="${pkgdir}/usr/bin" SHARE_PATH="/usr/share/${pkgname}" envsubst < "${pkgname}.desktop" > auxfile
-    sudo cat auxfile > "${pkgname}.desktop"
+    sudo sh -c 'BIN_PATH="${pkgdir}/usr/bin" SHARE_PATH="/usr/share/${pkgname}" envsubst < "${pkgname}.desktop" > auxfile'
+    sudo sh -c 'cat auxfile > "${pkgname}.desktop"'
 }
 
 install() {
