@@ -10,17 +10,17 @@ Simple and powerful voice changer for Linux, written in GTK 3.
 
 ## Features
 
--  Built in effects for accurate male and female voices
--  Ability to create and load custom presets
--  Manual pitch scale for finer adjustment
--  Creates its own temporary virtual input device
--  A clean and easy to use GUI
+  -  Built in effects for accurate male and female voices
+  -  Ability to create and load custom presets
+  -  Manual pitch scale for finer adjustment
+  -  Creates its own temporary virtual input device
+  -  A clean and easy to use GUI
 
 ## Usage
 
-1.  Select a preset or set a custom pitch and flip the switch
-2.  Change the input device for the application to **Lyrebird Virtual Input**, this can be done in-app or using `pavucontrol` if you're not given the option
-3.  Ignore any applications that ask if you want to use "Lyrebird Output" (e.g. Discord), this is used internally and isn't necessary to use Lyrebird
+  1.  Select a preset or set a custom pitch and flip the switch
+  2.  Change the input device for the application to **Lyrebird Virtual Input**, this can be done in-app or using `pavucontrol` if you're not given the option
+  3.  Ignore any applications that ask if you want to use "Lyrebird Output" (e.g. Discord), this is used internally and isn't necessary to use Lyrebird
 
 ### Changing using `pavucontrol`
 
@@ -37,7 +37,7 @@ drivers = alsa,pulse,core,oss
 allow-moves=yes
 ```
 
-## Editing Presets
+### Editing Presets
 
 Presets and config is initally stored in `/etc/lyrebird/` however it can be overriden by copying the files to `~/.config/lyrebird/`.
 
@@ -61,10 +61,10 @@ override_pitch_slider = true
 volume_boost = "2"
 ```
 
-# Donations
+## Donations
 
 Lyrebird is free, open-source software - there is no expectation to pay any amount of money for Lyrebird. However, if you would like to support development, you can check the Donations README section in the [original repo](https://github.com/lyrebird-voice-changer/lyrebird/blob/master/README.md). The funds are split between [charpointer](https://github.com/charpointer) and [harrego](https://github.com/harrego), the two lead maintainers of Lyrebird.
 
-# v2 the C rewrite
+## v2 the C rewrite
 
 Lyrebird v2 is currently being worked on in branch [c](https://github.com/lyrebird-voice-changer/lyrebird/tree/c). If you are a C developer familiar or willing to learn the Glib API, please come and join us make Lyrebird even better.
