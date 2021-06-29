@@ -11,6 +11,7 @@ jar_path="${pkgdir}/usr/share/java/${pkgname}"
 removescript="yes"
 
 prepare() {
+    # TachideskJUI release jar
     wget -q "https://github.com/Suwayomi/TachideskJUI/releases/download/v${version}/TachideskJUI-linux-x64-${version}.jar" -O "${name}.jar"
     #Bash file
     wget -q "https://gist.githubusercontent.com/D-Brox/e330f3de88219a2637f5103940ee551a/raw/913ff9ea4252de2c67f8c14d0d882f11e4304f5c/tachidesk-jui" -O "${pkgname}"
@@ -21,6 +22,7 @@ prepare() {
 }
 
 build() {
+    # Build Tachidesk jar, without webUI
     sudo bash "scripts/SetupUnix.sh"
 }
 

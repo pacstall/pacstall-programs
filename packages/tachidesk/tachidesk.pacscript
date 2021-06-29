@@ -10,7 +10,7 @@ removescript="yes"
 
 
 prepare() {
-  # Tachidesk jar (with webUI)
+  # Tachidesk jar, with webUI
   wget -q "https://github.com/Suwayomi/Tachidesk/releases/download/v0.4.3/Tachidesk-v${version%_*}-${version#*_}.jar" -O "${name}.jar"
   # Bash file
   wget -q "https://gist.githubusercontent.com/D-Brox/6c1946d22414e34cf537c1f682482642/raw/b103ae6a59846e515fe22199ef27dacf29226ce4/tachidesk" -O "${pkgname}"
