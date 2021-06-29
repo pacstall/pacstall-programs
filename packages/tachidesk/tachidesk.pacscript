@@ -31,4 +31,7 @@ removescript () {
     sudo rm -rf "/usr/share/licenses/${pkgname}"
     sudo rm -rf "/usr/share/doc/${pkgname}"
     sudo rm -rf "/usr/share/java/${pkgname}"
+    if ask "Do you want to remove left over database files?" Y; then
+      sudo rm -rf "/home/$(logname)/.local/share/${pkgname}"
+    fi
 }
