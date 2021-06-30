@@ -4,7 +4,7 @@ version="0.4.3_r670"
 description="A free and open source manga reader that runs extensions built for Tachiyomi"
 maintainer="D-Brox <BroxZuka@protonmail.com>"
 url="https://github.com/Suwayomi/Tachidesk.git"
-depends=("openjdk-15-jre")
+depends="openjdk-15-jre"
 pkgdir="/usr/src/pacstall/${pkgname}"
 removescript="yes"
 
