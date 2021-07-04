@@ -6,7 +6,7 @@
 
 ## Usage
 
-```
+```console
   clib <command> [options]
 
   Options:
