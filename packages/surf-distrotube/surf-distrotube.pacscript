@@ -3,6 +3,7 @@ pkgname="surf"
 url="https://gitlab.com/dwt1/$name.git"
 build_depends="make"
 depends="libc6 libgcr-3-dev libglib2.0-dev libgtk-3-dev libwebkit2gtk-4.0-dev libx11-6"
+pacdeps=("dmenu")
 breaks="$pkgname"
 replace="$pkgname"
 description="Heavily-patched customized build of the Suckless surf web browser."
