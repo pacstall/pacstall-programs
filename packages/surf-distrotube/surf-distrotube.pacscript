@@ -1,9 +1,5 @@
 name="surf-distrotube"
 pkgname="surf"
-pkgver() {
-    git ls-remote "${url}" master | cut -f1
-}
-version="$(pkgver)"
 url="https://gitlab.com/dwt1/$name.git"
 build_depends="make"
 depends="libc6 libgcr-3-dev libglib2.0-dev libgtk-3-dev libwebkit2gtk-4.0-dev libx11-6"
@@ -13,6 +9,10 @@ description="Heavily-patched customized build of the Suckless surf web browser."
 hash="88a73c57558d0d30752184f517d0b6930133ab506383efd394b60d9a04e6513f"
 removescript="yes"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+pkgver() {
+    git ls-remote "${url}" master | cut -f1
+}
+version="$(pkgver)"
 
 prepare() {
           true
