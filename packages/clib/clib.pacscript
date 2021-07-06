@@ -11,7 +11,7 @@ prepare () {
   true
 }
 build() {
-  sudo make
+  make
 }
 
 install() {
