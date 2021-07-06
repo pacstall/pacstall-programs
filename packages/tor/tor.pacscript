@@ -13,7 +13,7 @@ prepare() {
 }
 
 build() {
-    ./configure --enable-lzma --enable-zstd
+    ./configure --enable-lzma --enable-zstd --enable-nss
     make -j$(nproc)
 }
 
