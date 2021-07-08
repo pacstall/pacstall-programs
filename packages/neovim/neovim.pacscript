@@ -24,3 +24,4 @@ install() {
 
 removescript(){
     rm /usr/src/pacstall/${pkgname}/README.md
+}
