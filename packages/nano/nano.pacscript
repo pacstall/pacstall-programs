@@ -1,11 +1,13 @@
 name="nano"
-version="5.7"
+major_version="5"
+minor_version="8"
+version="${major_version}.${minor_version}"
 license="GPL3"
-url="https://www.nano-editor.org/dist/v5/nano-5.7.tar.gz"
+url="https://www.nano-editor.org/dist/v${major_version}/${name}-${version}.tar.gz"
 build_depends="libncurses-dev groff autoconf automake autopoint gcc gettext git make pkg-config texinfo"
 depends=""
 description="GNU Nano"
-hash="cf32085d257cb9379540cddedede207b43eb41e5acedf01132e09cc2c0e4e4f8"
+hash="f47c7407d4d7b780c4a8fa20706ebf5740c0df41dc0e521a536916660bc18ec4"
 
 prepare() {
     ./autogen.sh
