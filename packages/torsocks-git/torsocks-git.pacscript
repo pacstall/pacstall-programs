@@ -1,6 +1,6 @@
 name="torsocks-git"
 pkgname="torsocks"
-url="https://git.torproject.org/$pkgname.git"
+url="https://git.torproject.org/torsocks.git"
 build_depends="autoconf libtool gcc automake"
 replace="$pkgname"
 description="Wrapper to torify applications"
