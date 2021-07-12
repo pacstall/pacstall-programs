@@ -1,10 +1,10 @@
 name="torsocks-git"
 pkgname="torsocks"
-url="https://git.torproject.org/torsocks.git"
+url="https://github.com/dgoulet/$pkgname"
 build_depends="autoconf libtool gcc automake"
 replace="$pkgname"
 description="Wrapper to torify applications"
-hash="e185245c0bc45d0ba6970da40239238ad4204c36ed207a6f4ab5ba6b5203d2bd"
+hash="9774dc4415f35fc823d134b625cbfee3c62401cac936daf41b60efcb015bce05"
 removescript="yes"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 pacdeps=("tor")
