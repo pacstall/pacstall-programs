@@ -1,5 +1,4 @@
 name="brave-browser-beta"
-pkgname="brave-browser-beta"
 version="1.27.81"
 url="https://github.com/brave/brave-browser/releases/download/v${version}/brave-browser-beta_${version}_amd64.deb"
 gives="brave-browser-beta"
