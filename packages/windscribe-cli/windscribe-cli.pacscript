@@ -1,0 +1,5 @@
+name="windscribe-cli"
+version="1.4-51"
+url="https://assets.staticnetcontent.com/desktop/linux/$name_$version_amd64.deb"
+description="Windscribe is the only free VPN + Firewall that you can use on Linux"
+hash="ee4b8a574445ae1e2f83e6ae0b3fec91272fcd798d4130717ff229583a82d473"
