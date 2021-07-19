@@ -23,7 +23,7 @@ version="$(pkgver)"
 ## installation steps
 #preparations
 prepare() {
-  true
+    true
 }
 # pacget is a bashscript, no need to build anything
 build() {
@@ -31,11 +31,11 @@ build() {
 }
 #this just coppies the files over and makes the file executable
 install() {
-	sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+    sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
     sudo install -Dm755 "pacget" -t "${pkgdir}/usr/bin/"
     sudo install -Dm755 "pacget_install" -t "${pkgdir}/usr/bin/"
 }
 
 removescript() {
-	rm -rf ${pkgdir}/usr/share/licenses/${pkgname}
+    sudo rm -rf "/usr/share/licenses/${pkgname}"
 }
