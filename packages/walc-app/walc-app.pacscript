@@ -6,51 +6,30 @@
 #        \/          \/      \/ 
 maintainer="wizard-28 <wiz28@pm.me>"
 
-name="walc-git"
+name="walc-app"
 pkgname="walc"
 pkgdir="/usr/src/pacstall/${name}"
 homedir="/home/$(logname)"
 description="An unofficial WhatsApp Desktop client for linux systems."
-url="https://github.com/cstayyab/WALC.git"
-depends="nodejs npm"
-build_depends="mmv"
+url="https://github.com/cstayyab/WALC/releases/download/v0.2.1/walc.AppImage"
+hash="6c1e5c004e9c4bc5a8cf15837ce0e6c884fb3ace6397aa6aa95a6738c1960560"
 breaks="${pkgname} ${pkgname}-bin"
 removescript="yes"
 
-
-pkgver() {
-    git ls-remote "${url}" master | cut -f1 
-}
-version="$(pkgver)"
-
 prepare() {
-  # Install dependencies
-  npm install
+  true
 }
 
 build() {
-  # Build walc
-  npm run build
+  true
 }
 
 install() {
-  # Install license
-  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
-
-  # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
-
   # Install binary
-  cd dist/
-  sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo mmv "WALC-*.AppImage" "${pkgdir}/usr/bin/walc"
+  sudo install -Dm755 "walc.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 }
 
 removescript() {
-  # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-  sudo rm -rf "/usr/share/doc/${pkgname}"
-
   # Remove .desktop file
   sudo rm -f "${homedir}/.local/share/applications/WALC.desktop"
 
