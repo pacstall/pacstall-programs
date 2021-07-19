@@ -4,3 +4,4 @@ url="https://github.com/FreeTubeApp/FreeTube/releases/download/v${version}-beta/
 description="The Private YouTube Client"
 hash="00e11b08eea35b0b4000986f29a6ce913c4a91a4486ab8f8df5f98d3f1acbd5d" 
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+gives="freetube-deb"
