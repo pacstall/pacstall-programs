@@ -1,4 +1,4 @@
-name="freetube-bin"
+name="freetube-deb"
 version="0.13.2"
 url="https://github.com/FreeTubeApp/FreeTube/releases/download/v${version}-beta/freetube_${version}_amd64.deb"
 description="The Private YouTube Client"
