@@ -3,6 +3,6 @@
 
 <p align="center"><b>PACSTALL</b></p>
 
-This is where (as of 1.0.4 Celeste) package scripts for pacstall are located
+This is where (as of 1.5.1 Moonlight) package scripts maintained by the pacstall team are located
 
 [![Join our Discord server!](https://invidget.switchblade.xyz/yzrjXJV6K8)](https://discord.gg/yzrjXJV6K8)
