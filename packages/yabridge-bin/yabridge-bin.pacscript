@@ -9,7 +9,7 @@ optdepends=("wine: 32-bit windows emulator"
 "wine64: 64-bit windows emulator")
 maintainer="rain1598 <guacamolek@yandex.com>"
 prepare() {
-          sudo install -D ./* -t /usr/lib/
+          sudo install -D ./* -t $STOWDIR/$name/usr/lib/
 }
 
 build() {
