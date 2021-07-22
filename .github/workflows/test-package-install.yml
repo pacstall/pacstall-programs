@@ -15,6 +15,8 @@ jobs:
         run: bash -c "$(wget -q https://git.io/JsADh -O -)"
       - name: Installing packages with pacstall
         run: | 
+          sudo dpkg --add-architecture i386
+          sudo apt-get update
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
