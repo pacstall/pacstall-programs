@@ -17,8 +17,9 @@ build() {
 }
 
 install() {
-          sudo install -D ./yabridgectl -t /$STOWDIR/$name/usr/bin/
-          sudo install -D ./yabridge-host.exe -t /$STOWDIR/$name/usr/bin/
+          sudo install -D ./yabridgectl -t $STOWDIR/$name/usr/bin/
+          sudo install -D ./yabridge-host.exe -t $STOWDIR/$name/usr/bin/
+          sudo install -D ./yabridge-host.exe.so -t $STOWDIR/$name/usr/bin/
 }
 
 postinst(){
