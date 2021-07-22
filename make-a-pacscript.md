@@ -1,5 +1,5 @@
 ## Creating a pacscript
-This is a pacscript:
+### This is a pacscript:
 ```bash
 name="foo"
 version="1.0"
@@ -28,7 +28,9 @@ build() {
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall
+          # It is recommended for paths to be condensed with
+          # variables and to be wrapped by double quotes
+          sudo make install DESTDIR="$STOWDIR/$name"
 }
 
 postinst(){
@@ -36,13 +38,18 @@ postinst(){
 }
 
 removescript(){
-          rm somedir
+          rm -rf somedir
 }
 ```
+### Built-in variables:
+```
+LOGDIR="/var/log/pacstall" # Package log file directory
+SRCDIR="/tmp/pacstall" # Package installation temporary directory, automatically cleared right after
+STGDIR="/usr/share/pacstall" # Pacstall directory
+STOWDIR="/usr/src/pacstall" # Package install directory
+```
 
-I will be using the word `pkgname` as the name of your package.
-
-the first variable is `name`. It is what pacstall records and is the most important. The contents of `name`, (`pkgname`) will be in `/usr/src/pacstall/pkgname` (where pacstall puts files to symlink to the system) and `/var/log/pacstall_installed/pkgname` (a file which holds metadata like version number, date installed, description, etc). Keep it lowercase
+the first variable is `name`. It is what pacstall records and is the most important. The contents of your package, will be in `/usr/src/pacstall/$name` (where pacstall puts files to symlink to the system) and `/var/log/pacstall/$name` (a file which holds metadata like version number, date installed, description, etc). Keep it lowercase
 
 The next is `version`. It is the version number (obviously). It should (but not required) be using [semver](https://semver.org). As long as the version number can be incremented, it works. When you change this version to a higher number, it will trigger an upgrade when you run `sudo pacstall -Up`.
 
@@ -66,7 +73,7 @@ The next is `version`. It is the version number (obviously). It should (but not 
 
 `ppa` is an array that you can use to install ppa's. It is highly discouraged to use ppa's as they are fundamentaly broken. You do not need to include `ppa:` in the array as pacstall does that for you and it's easier for the end user. You should only use a ppa if absolutely necessary. Consider making a pacscript instead and putting it in `pacdeps`
 
-`maintainer` is where you put yourself in the format shown above: `name <email.email.com>`. This makes it easy for people to contact maintainers about issues
+`maintainer` is where you put yourself in the format shown above: `username <email.example.com>`. This makes it easy for people to contact maintainers about issues
 
 `pacdeps` is an array that can install other pacscripts in a repo
 
@@ -76,24 +83,24 @@ The `prepare` function is what you run to prepare a package. You don’t need to
 
 The `build` function is what compiles the package. Use multicore as much as possible. To get the number of cores in a system, run `nproc`. You can use that in combination with `-j$(nproc)` to compile on multicore (`make -j$(nproc)`).
 
-The install function installs the package. The most important thing is to install to `/usr/src/pacstall/pkgname`. An example with make would be `sudo make install DESTDIR=/usr/src/pacstall/pkgname`.
+The install function installs the package. The most important thing is to install to `/usr/src/pacstall/$name`. An example with make would be `sudo make install DESTDIR=/usr/src/pacstall/$name`.
 
 `postinst` is what commands should be run after pkg is installed. If you don't need it, leave it out
 
 `removescript` is what commands should be run after pkg is uninstalled. The contents will be remotely sourced when you trigger a `-R pkg` flag. This is NOT a script uninstalls the package, just what should be run. [Here's an example](https://github.com/pacstall/pacstall-programs/blob/master/packages/tuner/tuner.pacscript) of how that would be done
 
-You need to save it as `pkgname.pacscript`. To add a package to `pacstall-programs`, fork it and create a directory in packages called `pkgname` and add the `pkgname.pacscript` inside it. Then send me a pull request.
+You need to save it as `$name`.pacscript. To add a package to `pacstall-programs`, fork it and create a directory in packages called `pkgname` and add the `$name`.pacscript inside it. Then send me a pull request.
 
 ### Remember to wrap everything in double quotes
 
-You can test it by cd'ing into the directory holding `pkgname.pacscript` and running `sudo pacstall -Il pkgname`. If it works, good! If not, pacstall should tell you what went wrong
+You can test it by cd'ing into the directory holding `$name`.pacscript and running `sudo pacstall -Il $name`. If it works, good! If not, pacstall should tell you what went wrong
 
 ### Other
 If you need (for some reason) to download files that aren't part of the package (if it didn't ship a `.desktop`, for example), use [GitHub Gists](https://gist.github.com). When you download it in your pacscript, use `wget -q <gist>` so there is no output. If you need to upload an image (for whatever reason), use [postimg.cc](https://postimg.cc).
 Lastly, do not ask the user for any input unless absolutely necessary. Use external variables to detect what you need to know before asking the user.
 
 ### Opening a PR
-When you complete your script, fork this repo and add your script to packages/`pkgname`/`pkgname`.pacscript. Open a PR here and make the title: "Add pkgname" with the label `Package Add`. Please do one PR per package as the auto checker to make sure pacstall can install it works.
+When you complete your script, fork this repo and add your script to packages/`$name`/`$name`.pacscript. Open a PR here and make the title: "Add `$name`" with the label `Package Add`. Please do one PR per package as the auto checker to make sure pacstall can install it works.
 
 ### Updating your package
 When you want to update your package, make sure you are on the latest commit (fetch upstream) and change the `version`, `url`, and `hash` (if used). Then make a PR and use the label `update pkg`
