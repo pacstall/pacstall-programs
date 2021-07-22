@@ -17,8 +17,8 @@ build() {
 }
 
 install() {
-          sudo install -D ./yabridgectl $STOWDIR/$name/usr/bin/
-          sudo install -D ./yabridge-host.exe $STOWDIR/$name/usr/bin/
+          sudo install -D ./yabridgectl /usr/src/pacstall/$name/usr/bin/
+          sudo install -D ./yabridge-host.exe /usr/src/pacstall/$name/usr/bin/
 }
 
 postinst(){
