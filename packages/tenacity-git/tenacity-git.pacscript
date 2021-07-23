@@ -30,9 +30,6 @@ install() {
           sudo make install DESTDIR="$STOWDIR/$name"
 }
 
-postinst(){
-          true
-}
 
 removescript(){
           sudo rm /usr/local/bin/tenacity
