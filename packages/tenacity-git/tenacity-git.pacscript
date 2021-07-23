@@ -1,14 +1,18 @@
 name="tenacity-git"
-version="r23.g098a0225e"
 url="https://github.com/tenacityteam/tenacity.git"
 build_depends="build-essential cmake git python3-pip ffmpeg"
 depends="libgtk2.0-dev libasound2-dev libavformat-dev libjack-jackd2-dev uuid-dev"
 replace="audacity"
 description="FLOSS Audacity Fork. No telemetry, crash reports and other shenanigans like that!"
-hash="c06c60a9ae17b9265840fcd619d2c7a5668f26a94cec80c8785c7997afd4bc96" 
 optdepends="ffmpeg: additional import/export capabilities"
 removescript="yes"
 maintainer="echometer <guacamolek@yandex.com>"
+
+pkgver() {
+    git ls-remote "$(url)" master | cut -f1 
+}
+version="$(pkgver)"
+
 prepare() {
           sudo pip3 install conan
 }
