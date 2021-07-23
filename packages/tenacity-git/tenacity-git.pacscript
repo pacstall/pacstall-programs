@@ -9,7 +9,7 @@ removescript="yes"
 maintainer="echometer <guacamolek@yandex.com>"
 
 pkgver() {
-    git ls-remote "$(url)" master | cut -f1 
+    git ls-remote "${url}" master | cut -f1 
 }
 version="$(pkgver)"
 
