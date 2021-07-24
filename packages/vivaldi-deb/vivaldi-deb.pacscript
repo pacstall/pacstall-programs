@@ -1,4 +1,4 @@
-name="vivaldi"
+name="vivaldi-deb"
 version="4.0.2312.41-1"
 url="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}_amd64.deb"
 description="An advanced browser made with the power user in mind."
