@@ -6,7 +6,7 @@ hash="ffe50c7ca3ee5da0c7110be0763c64b12e8c858131d8e00e3c7954f2c9770a79"
 maintainer="Fahri Korkmaz <fahri.korkmaz@protonmail.ch>"
 
 prepare() {
-        sudo rm -rf /opt/shell-color-scripts
+        true
 }
 
 build() {
