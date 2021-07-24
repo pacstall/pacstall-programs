@@ -5,7 +5,7 @@ build_depends="cargo"
 replace="bat"
 description="A cat(1) clone with wings"
 hash="ab5246c3bec8745c14ca9a0473971f00fbce2fdc1ce7842e0a96676ee5eac2af"
-maintainer="Kai Stian Olstad <kai.stian.olstad@gmail.com>"
+maintainer="Orphaned"
 prepare() {
         true
 }
