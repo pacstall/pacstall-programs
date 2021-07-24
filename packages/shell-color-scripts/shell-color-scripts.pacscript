@@ -14,7 +14,7 @@ build() {
 }
 
 install() {
-        sudo mkdir -p /opt/shell-color-scripts/colorscripts
-        sudo cp colorscript.sh /usr/bin/colorscript
-        sudo cp -rf colorscripts/* /opt/shell-color-scripts/colorscripts
+        sudo install -D colorscript.sh -t "$STOWDIR/$name/usr/bin/"
+        sudo mv "$STOWDIR/$name/usr/bin/colorscript.sh" "$STOWDIR/$name/usr/bin/colorscript"
+        sudo install -D colorscripts/* -t "$STOWDIR/$name/opt/shell-color-scripts/colorscripts"
 }
