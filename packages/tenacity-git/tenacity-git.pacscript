@@ -21,9 +21,9 @@ build() {
         mkdir build
         cd build
         cmake -G "Unix Makefiles" \
-        -DESTDIR="$STOWDIR/$name"
+        -DESTDIR="$STOWDIR/$name" \
         -DCMAKE_BUILD_TYPE=Release \
-        -Duse_ffmpeg=loaded .. 
+        -Duse_ffmpeg=loaded ..
         make -j$(nproc)
 }
 
