@@ -49,7 +49,10 @@ STGDIR="/usr/share/pacstall" # Pacstall directory
 STOWDIR="/usr/src/pacstall" # Package install directory
 ```
 
-the first variable is `name`. It is what pacstall records and is the most important. The contents of your package, will be in `/usr/src/pacstall/$name` (where pacstall puts files to symlink to the system) and `/var/log/pacstall/$name` (a file which holds metadata like version number, date installed, description, etc). Keep it lowercase
+the first variable is `name`. It is what pacstall records and is the most important. The contents of `name`, (`pkgname`) will be in `/usr/src/pacstall/pkgname` (where pacstall puts files to symlink to the system) and `/var/log/pacstall_installed/pkgname` (a file which holds metadata like version number, date installed, description, etc). Use the following naming schema:
+- Keep it lowercase
+- Pacscripts that install from a `deb` file should be called `$name-deb`
+- Pacscripts that install from a git repository should be called `$name-git`
 
 The next is `version`. It is the version number (obviously). It should (but not required) be using [semver](https://semver.org). As long as the version number can be incremented, it works. When you change this version to a higher number, it will trigger an upgrade when you run `sudo pacstall -Up`.
 
@@ -98,6 +101,9 @@ You can test it by cd'ing into the directory holding `$name`.pacscript and runni
 ### Other
 If you need (for some reason) to download files that aren't part of the package (if it didn't ship a `.desktop`, for example), use [GitHub Gists](https://gist.github.com). When you download it in your pacscript, use `wget -q <gist>` so there is no output. If you need to upload an image (for whatever reason), use [postimg.cc](https://postimg.cc).
 Lastly, do not ask the user for any input unless absolutely necessary. Use external variables to detect what you need to know before asking the user.
+
+### Updating the packagelist
+Before submitting a PR please update the `packagelist` inside the root of this repository. Add your package name in alphabetic order into the file. 
 
 ### Opening a PR
 When you complete your script, fork this repo and add your script to packages/`$name`/`$name`.pacscript. Open a PR here and make the title: "Add `$name`" with the label `Package Add`. Please do one PR per package as the auto checker to make sure pacstall can install it works.
