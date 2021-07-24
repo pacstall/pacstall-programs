@@ -1,6 +1,6 @@
 name="shell-color-scripts"
 url="https://gitlab.com/dwt1/shell-color-scripts/-/archive/master/shell-color-scripts-master.tar.gz"
-description="A collection of terminal color scripts. Included 52 beautiful terminal color scripts."
+description="A collection of terminal color scripts."
 hash="ffe50c7ca3ee5da0c7110be0763c64b12e8c858131d8e00e3c7954f2c9770a79"
 maintainer="Fahri Korkmaz <fahri.korkmaz@protonmail.ch>"
 
