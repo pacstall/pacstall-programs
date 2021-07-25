@@ -2,7 +2,7 @@
 [Vivaldi](https://vivaldi.com/) is a freeware web browser that was build for power users.
 
 # Build in features
-![Build in Features screenshot from their web site](https://postimg.cc/D8b2pXTj)
+![Build in Features screenshot from their web site](https://i.postimg.cc/fT8JLcgN/features.png)
 
 # Browser
-![Pacstall Web Site opened with Vivaldi](https://postimg.cc/xXD9w1j0)
+![Pacstall Web Site opened with Vivaldi](https://i.postimg.cc/4xnnhYrh/pacstall-website.png)
