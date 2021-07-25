@@ -17,7 +17,20 @@ optdepends=("libcapi20-dev: for ISDN software"
         "ocl-icd-opencl-dev: opencl support"
         "libpcap-dev: packet capture support"
         "libusb-1.0-0-dev: USB support"
-        "libv4l-dev: video capture support")
+        "libv4l-dev: video capture support"
+        "libcapi20-dev:i386: for 32 bit ISDN software"
+        "liblcms2-dev:i386: 32-bit color management"
+        "libcups2-dev:i386: 32-bit printing support"
+        "libgphoto2-dev:i386: 32-bit still image support"
+        "libsane-dev:i386: 32-bit scanning support"
+        "libgsm1-dev:i386: 32-bit GSM audio codec"
+        "libkrb5-dev:i386: 32-bit kerberos authentication support"
+        "libldap2-dev:i386: 32-bit LDAP support"
+        "samba-dev:i386: 32-bit SMB support"
+        "ocl-icd-opencl-dev:i386: 32-bit opencl support"
+        "libpcap-dev:i386: 32-bit packet capture support"
+        "libusb-1.0-0-dev:i386: 32-bit USB support"
+        "libv4l-dev:i386: 32-bit video capture support")
 maintainer="echometer <guacamolek@yandex.com>"
 
 pkgver() {
