@@ -1,5 +1,5 @@
 # Vivaldi
-[Vivaldi](https://vivaldi.com/) is a free web browser that was build for power users.
+[Vivaldi](https://vivaldi.com/) is a freeware web browser that was build for power users.
 
 # Build in features
 ![Build in Features screenshot from their web site](https://postimg.cc/D8b2pXTj)
