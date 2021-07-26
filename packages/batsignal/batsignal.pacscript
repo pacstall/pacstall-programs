@@ -12,7 +12,7 @@ prepare() {
 }
 
 build() {
-	make -j$(nproc)C
+	make -j$(nproc)
 }
 
 install() {
