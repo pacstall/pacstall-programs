@@ -55,7 +55,7 @@ build() {
         --with-x \
         --with-gstreamer \
         --enable-win64
-        make
+        make -j$(nproc)
         
         cd "../wine32-build"
         export PKG_CONFIG_PATH="/usr/lib32"
