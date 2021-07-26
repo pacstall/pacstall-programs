@@ -65,7 +65,7 @@ build() {
         --with-x \
         --with-gstreamer \
         --with-wine64="../wine64-build"
-        make
+        make -j$(nproc)
         cd ..
 }
 
