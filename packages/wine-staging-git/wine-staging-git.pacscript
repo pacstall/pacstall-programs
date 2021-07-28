@@ -39,34 +39,34 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-        sudo chown -R "$LOGNAME":"$LOGNAME" .
+        echo "login name is: $LOGNAME"
         export CFLAGS="${CFLAGS/-fno-plt/}"
         export LDFLAGS="${LDFLAGS/,-z,now/}"
-        mkdir "wine64-build"
-        mkdir "wine32-build"
-        wget "http://ftp.us.debian.org/debian/pool/main/j/jxrlib/libjxr-dev_1.1-6+b1_i386.deb"
+        sudo mkdir "wine64-build"
+        sudo mkdir "wine32-build"
+        sudo wget "http://ftp.us.debian.org/debian/pool/main/j/jxrlib/libjxr-dev_1.1-6+b1_i386.deb"
         sudo dpkg -i "libjxr-dev_1.1-6+b1_i386.deb"
 }
 
 build() {
         cd "wine64-build"
-        ../configure \
+        sudo ../configure \
         --prefix='/usr' \
         --libdir='/usr/lib' \
         --with-x \
         --with-gstreamer \
         --enable-win64
-        make -j$(nproc)
+        sudo make -j$(nproc)
         
         cd "../wine32-build"
         export PKG_CONFIG_PATH="/usr/lib32"
-        ../configure \
+        sudo ../configure \
         --prefix='/usr' \
         --libdir='/usr/lib32' \
         --with-x \
         --with-gstreamer \
         --with-wine64="../wine64-build"
-        make -j$(nproc)
+        sudo make -j$(nproc)
         cd ..
 }
 
