@@ -13,13 +13,10 @@ prepare() {
 }
 
 build() {
-    sudo sh -c 'BIN_PATH="${pkgdir}/usr/bin" SHARE_PATH="/usr/share/${name}" envsubst < "${name}.desktop" > auxfile'
-    sudo sh -c 'cat auxfile > "${name}.desktop"'
+    true
 }
 
 install() {
-    sudo install -Dm644 "${name}.desktop" -t "${pkgdir}/usr/share/applications"
-    sudo install -Dm644 "icon.png" -t "${pkgdir}/usr/share/${name}"
     sudo cp -rf "app/" "${pkgdir}/usr/share/${name}"
     sudo install -Dm644 "app.py" -t "${pkgdir}/usr/share/${name}"
     sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
