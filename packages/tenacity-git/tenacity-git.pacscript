@@ -18,14 +18,13 @@ prepare() {
 }
 
 build() {
-        sudo chown -R $LOGNAME "$SRCDIR/$name"
-        mkdir build
+        sudo mkdir build
         cd build
-        cmake -G "Unix Makefiles" \
+        sudo cmake -G "Unix Makefiles" \
         -DESTDIR="$STOWDIR/$name" \
         -DCMAKE_BUILD_TYPE=Release \
         -Duse_ffmpeg=loaded ..
-        make -j$(nproc)
+        sudo make -j$(nproc)
 }
 
 install() {
