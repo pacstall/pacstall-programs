@@ -39,6 +39,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
+        sudo chown -R $LOGNAME $SRCDIR
         export CFLAGS="${CFLAGS/-fno-plt/}"
         export LDFLAGS="${LDFLAGS/,-z,now/}"
         mkdir "wine64-build"
