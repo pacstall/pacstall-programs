@@ -18,7 +18,7 @@ prepare() {
 }
 
 build() {
-        sudo chown -R $LOGNAME $SRCDIR
+        sudo chown -R $LOGNAME "$SRCDIR/$name"
         mkdir build
         cd build
         cmake -G "Unix Makefiles" \
