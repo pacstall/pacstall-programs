@@ -39,7 +39,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-        sudo chown -R $LOGNAME "$SRCDIR/$name"
+        sudo chown -R "$LOGNAME":"$LOGNAME" .
         export CFLAGS="${CFLAGS/-fno-plt/}"
         export LDFLAGS="${LDFLAGS/,-z,now/}"
         mkdir "wine64-build"
