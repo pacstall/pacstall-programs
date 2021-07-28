@@ -44,8 +44,8 @@ prepare() {
         export LDFLAGS="${LDFLAGS/,-z,now/}"
         sudo mkdir "wine64-build"
         sudo mkdir "wine32-build"
-        sudo wget "http://ftp.us.debian.org/debian/pool/main/j/jxrlib/libjxr-dev_1.1-6+b1_i386.deb"
-        sudo dpkg -i "libjxr-dev_1.1-6+b1_i386.deb"
+        sudo wget "http://mirrors.kernel.org/ubuntu/pool/universe/j/jxrlib/libjxr-dev_1.1-6build1_i386.deb"
+        sudo dpkg -i "libjxr-dev_1.1-6build1_i386.deb"
 }
 
 build() {
