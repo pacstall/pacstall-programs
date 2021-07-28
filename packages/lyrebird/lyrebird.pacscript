@@ -18,6 +18,7 @@ build() {
 
 install() {
     sudo cp -rf "app/" "${pkgdir}/usr/share/${name}"
+    sudo install -Dm644 "icon.png" -t "${pkgdir}/usr/share/${name}"
     sudo install -Dm644 "app.py" -t "${pkgdir}/usr/share/${name}"
     sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
     sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
