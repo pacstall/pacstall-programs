@@ -1,6 +1,6 @@
 # ULauncher
 
-![](https://ulauncher.io/assets/images/demo.gif)
+![Gif showing ulauncher in action](https://ulauncher.io/assets/images/demo.gif)
 
 ULauncher is an application launcher for Linux. It has the following features:
 - Fuzzy Search: Type in an application name without worrying about spelling. Ulauncher will figure out what you meant. It also remembers your previous choices and automatically selects the best option for you 
