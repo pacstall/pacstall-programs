@@ -42,6 +42,7 @@ prepare() {
         echo "login name is: $LOGNAME"
         export CFLAGS="${CFLAGS/-fno-plt/}"
         export LDFLAGS="${LDFLAGS/,-z,now/}"
+        export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/i386-linux-gnu/pkgconfig:/usr/lib32/pkgconfig"
         sudo mkdir "wine64-build"
         sudo mkdir "wine32-build"
         sudo wget "http://mirrors.kernel.org/ubuntu/pool/universe/j/jxrlib/libjxr-dev_1.1-6build1_i386.deb"
@@ -59,7 +60,6 @@ build() {
         sudo make -j$(nproc)
         
         cd "../wine32-build"
-        export PKG_CONFIG_PATH="/usr/lib32"
         sudo ../configure \
         --prefix='/usr' \
         --libdir='/usr/lib32' \
