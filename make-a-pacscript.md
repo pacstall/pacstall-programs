@@ -1,5 +1,5 @@
 ## Creating a pacscript
-### This is an example of pacscript:
+### This is an example of pacscript
 ```bash
 name="foo"
 version="1.0"
@@ -53,7 +53,7 @@ removescript(){
           rm -rf somedir
 }
 ```
-### Built-in variables:
+### Built-in variables
 ```
 LOGDIR="/var/log/pacstall/metadata" # Package log file directory
 SRCDIR="/tmp/pacstall" # Package installation temporary directory, automatically cleared at the end of install
