@@ -54,7 +54,7 @@ removescript(){
 }
 ```
 ### Built-in variables
-```
+```bash
 LOGDIR="/var/log/pacstall/metadata" # Package log file directory
 SRCDIR="/tmp/pacstall" # Package installation temporary directory, automatically cleared at the end of install
 STGDIR="/usr/share/pacstall" # Pacstall scripts directory
