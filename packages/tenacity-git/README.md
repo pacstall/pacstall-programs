@@ -10,29 +10,28 @@
 
 Tenacity is an easy-to-use multi-track audio editor and recorder for Windows, MacOS, GNU/Linux and other operating systems. It is a fork of the widely popular [Audacity](https://audacityteam.org/) and is being developed by a wide, diverse group of volunteers.
 
-- **Recording** from audio devices (real or virtual)
-- **Export / Import** a wide range of audio formats (extensible with FFmpeg)
-- **High quality** including up to 32-bit float audio support
-- **Plug-ins** providing support for VST, LV2, and AU plugins
-- **Scripting** in the built-in scripting language Nyquist, or in Python, Perl and other languages with named pipes
-- **Editing** arbitrary sampling and multi-track timeline
-- **Accessibility** including editing via keyboard, screen reader support and narration support
-- **Tools** useful in the analysis of signals, including audio
+  - **Recording** from audio devices (real or virtual)
+  - **Export / Import** a wide range of audio formats (extensible with FFmpeg)
+  - **High quality** including up to 32-bit float audio support
+  - **Plug-ins** providing support for VST, LV2, and AU plugins
+  - **Scripting** in the built-in scripting language Nyquist, or in Python, Perl and other languages with named pipes
+  - **Editing** arbitrary sampling and multi-track timeline
+  - **Accessibility** including editing via keyboard, screen reader support and narration support
+  - **Tools** useful in the analysis of signals, including audio
 
-## Why did this project fork [Audacity](https://audacityteam.org)?
+## Why did this project fork [Audacity](https://audacityteam.org)
 
 You can find more information on the causes of the fork here:
 
-- [**Privacy policy which may violate the original project's GPL license**](https://github.com/audacity/audacity/issues/1213)
-- [**Contributor's License Agreement (CLA) which may violate the same GPL license**](https://github.com/audacity/audacity/discussions/932)
-- [**Attempts at adding telemetry using Google services for data collection**](https://github.com/audacity/audacity/pull/835)
+  - [**Privacy policy which may violate the original project's GPL license**](https://github.com/audacity/audacity/issues/1213)
+  - [**Contributor's License Agreement (CLA) which may violate the same GPL license**](https://github.com/audacity/audacity/discussions/932)
+  - [**Attempts at adding telemetry using Google services for data collection**](https://github.com/audacity/audacity/pull/835)
 
 ## Pre-fork Access
 
 The latest Windows and macOS release of the pre-fork version of this repository may be available from the [Audacity website](https://www.audacityteam.org/download/).
 Additionally, one may find help and/or support for the pre-fork releases at the [Audacity Forum](https://forum.audacityteam.org/).
 Developers may find information for the pre-fork releases available at the [Audacity Wiki](https://wiki.audacityteam.org/wiki/For_Developers).
-
 
 ## Getting Started
 
