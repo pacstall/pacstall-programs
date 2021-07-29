@@ -1,0 +1,7 @@
+name="vivaldi-deb"
+version="4.1.2369.11-1"
+url="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}_amd64.deb"
+description="An advanced browser made with the power user in mind."
+gives="vivaldi-stable"
+hash="b2d6a5ddc244f9dd65b26ceda15a116e2d9ffb0f71f018044600e3c5a633cb63"
+maintainer="Fahri Korkmaz <fahri.korkmaz@protonmail.ch>"
