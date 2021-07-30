@@ -5,15 +5,3 @@ url="https://syncandshare.lrz.de/client_deployment/LRZ_Sync_Share_Latest_amd64.d
 description="Sync client for the LRZ Sync+Share service"
 hash="511d735791e8197e5da9f5568c906f1df58747ff1ec9261a832055e8229e2759"
 maintainer="Fahri Korkmaz <fahri.korkmaz@protonmail.ch>"
-
-prepare() {
-    true
-}
-
-build() {
-    true
-}
-
-install() {
-    true
-}
