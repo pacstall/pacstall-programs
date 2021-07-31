@@ -5,7 +5,7 @@ depends="libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386"
 description="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development."
 hash="4adb7b9876ed7a59ae12de5cbfe7a402e1c07be915a4a516a32fef1d30b47276"
 removescript="yes"
-maintainer="Fahri Korkmaz <fahri.korkmaz@protonmail.ch>"
+maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
 
 prepare() {
     true
@@ -17,7 +17,7 @@ build() {
 
 install() {
     # Moving all android studio files to /opt
-    sudo install -D * -t "$STOWDIR/$name/opt/android-studio/"
+    sudo install -D ./* -t "$STOWDIR/$name/opt/android-studio/"
 
     sudo cp -r bin "$STOWDIR/$name/opt/android-studio/"
     sudo cp -r jre "$STOWDIR/$name/opt/android-studio/"
