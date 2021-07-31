@@ -39,34 +39,33 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-        echo "login name is: $LOGNAME"
         export CFLAGS="${CFLAGS/-fno-plt/}"
         export LDFLAGS="${LDFLAGS/,-z,now/}"
         export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/i386-linux-gnu/pkgconfig:/usr/lib32/pkgconfig"
-        sudo mkdir "wine64-build"
-        sudo mkdir "wine32-build"
-        sudo wget "http://mirrors.kernel.org/ubuntu/pool/universe/j/jxrlib/libjxr-dev_1.1-6build1_i386.deb"
+        mkdir "wine64-build"
+        mkdir "wine32-build"
+        wget "http://mirrors.kernel.org/ubuntu/pool/universe/j/jxrlib/libjxr-dev_1.1-6build1_i386.deb"
         sudo dpkg -i "libjxr-dev_1.1-6build1_i386.deb"
 }
 
 build() {
         cd "wine64-build"
-        sudo ../configure \
+        ../configure \
         --prefix='/usr' \
         --libdir='/usr/lib' \
         --with-x \
         --with-gstreamer \
         --enable-win64
-        sudo make -j$(nproc)
+        make -j$(nproc)
         
         cd "../wine32-build"
-        sudo ../configure \
+        ../configure \
         --prefix='/usr' \
         --libdir='/usr/lib32' \
         --with-x \
         --with-gstreamer \
         --with-wine64="../wine64-build"
-        sudo make -j$(nproc)
+        make -j$(nproc)
         cd ..
 }
 
