@@ -1,10 +1,10 @@
 name="webapp-manager"
-version="1.1.2"
+version="1.1.5"
 url="https://github.com/linuxmint/webapp-manager/archive/refs/tags/$version.tar.gz"
 build_depends="gettext"
 depends="gir1.2-xapp-1.0 python3 python3-bs4 python3-configobj python3-gi python3-setproctitle python3-tldextract xapps-common python3-pil"
 description="Run websites as if they were apps"
-hash="07458737b98ac3058ad0ad72345586811b3dff868b5607f8153f8a8baa754f47"
+hash="05c88d7007d5de77d0dda37eb7772a80f72b0421f8140c73ffa457c841c5132b"
 maintainer="Zahrun <Zahrun@github.com>"
 prepare() {
 	# Silent build
@@ -28,3 +28,4 @@ install() {
 postinst() {
 	sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 }
+
