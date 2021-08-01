@@ -1,4 +1,4 @@
-name="brave-browser-beta"
+name="brave-browser-beta-deb"
 version="1.28.98"
 url="https://github.com/brave/brave-browser/releases/download/v${version}/${name}_${version}_amd64.deb"
 gives="brave-browser-beta"
