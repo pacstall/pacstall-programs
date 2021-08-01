@@ -1,0 +1,8 @@
+name="protonmail-bridge-deb"
+gives="protonmail-bridge"
+version="1.8.7-1"
+url="https://protonmail.com/download/bridge/protonmail-bridge_${version}_amd64.deb"
+depends="fonts-dejavu libdouble-conversion3 libpcre2-16-0 libqt5core5a libqt5dbus5 libqt5gui5 libqt5network5 libqt5qml5 libqt5svg5 libqt5widgets5 libxcb-xinerama0 libxcb-xinput0 qt5-gtk-platformtheme qttranslations5-l10n"
+description="ProtonMail Bridge is an application available to all paid users that enables the integration of your ProtonMail account with popular email clients, such as Microsoft Outlook, Mozilla Thunderbird, or Apple Mail. Bridge runs in the background by seamlessly encrypting and decrypting messages as they enter and leave your computer. The app is compatible with most email clients supporting IMAP and SMTP protocols."
+hash="8b1e56cd16f625ae285f8a2d6ff11840973e606520059d79ebd20d050cd03bb8"
+maintainer="Fahri Korkmaz <fahri.korkmaz@protonmail.ch>"
