@@ -1,0 +1,7 @@
+name="webapp-manager-deb"
+gives="webapp-manager"
+version="1.1.5"
+url="http://packages.linuxmint.com/pool/main/w/webapp-manager/webapp-manager_1.1.5_all.deb"
+description="Run websites as if they were apps."
+hash="100a8a9b4f60fdeacae1207137199add8d8866a7a1bed5a8d20af074c6968edb"
+maintainer="Fahri Korkmaz <fahri.korkmaz@protonmail.ch>"
