@@ -25,6 +25,7 @@ jobs:
               echo "pacstall -Il ${package_name}"
               cd ${package_dir}
               pacstall --disable-prompts -Il ${package_name}
+              pacstall --disable-prompts -R ${package_name}
             fi
           done
         env:
