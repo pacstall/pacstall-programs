@@ -4,4 +4,4 @@ url="https://github.com/jgraph/drawio-desktop/releases/download/v${version}/draw
 gives="drawio-desktop"
 description="Diagram drawing application built on web technology"
 hash="ebcbf92f592998597aff4ff7dd04a1e9b99c11f9c7f70f59ee5020d2497cf910"
-maintainer="Falcon Programmer <programmerfalcon@gmail.com>"
+maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
