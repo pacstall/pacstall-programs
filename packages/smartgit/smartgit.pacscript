@@ -39,5 +39,5 @@ postinst(){
 }
 
 removescript(){
-    sudo rm -rf "/usr/bin/smartgit"
+    sudo rm "/usr/bin/smartgit"
 }
