@@ -1,0 +1,7 @@
+name="bitwarden-deb"
+version="1.27.1"
+gives="bitwarden"
+url="https://github.com/bitwarden/desktop/releases/download/v$version/Bitwarden-$version-amd64.deb"
+description="Open Source Password Manager"
+hash="0aac880113c7ae2d35f003a0235ac527d4dddcaf0e6a65d582ea4020d304ec16" 
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

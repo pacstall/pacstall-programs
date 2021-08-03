@@ -1,0 +1,7 @@
+name="nyxt-deb"
+version="2.1.1"
+gives="nyxt"
+url="https://github.com/atlas-engineer/nyxt/releases/download/2.1.1/nyxt_${version}_amd64.deb"
+description="Nyxt - the Internet on your terms."
+hash="4191b1dc56a26059ea211459cf9c2ec19e18ade924b0af5f0189e04824b85fb2" 
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

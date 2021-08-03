@@ -1,0 +1,7 @@
+name="brave-browser-beta-deb"
+version="1.28.98"
+url="https://github.com/brave/brave-browser/releases/download/v${version}/brave-browser-beta_${version}_amd64.deb"
+gives="brave-browser-beta"
+description="Brave Browser Beta: Testing version of world's most unique, privacy friendly web browser"
+hash="7a493b8e6ce2db794f9628cfe0870a0818de9b0c84431f1dba2b732a143c70c4"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

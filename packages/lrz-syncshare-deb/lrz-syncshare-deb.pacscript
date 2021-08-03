@@ -1,0 +1,7 @@
+name="lrz-syncshare-deb"
+version="16.1.100"
+gives="lrz-sync-share"
+url="https://syncandshare.lrz.de/client_deployment/LRZ_Sync_Share_Latest_amd64.deb"
+description="Sync client for the LRZ Sync+Share service"
+hash="511d735791e8197e5da9f5568c906f1df58747ff1ec9261a832055e8229e2759"
+maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
