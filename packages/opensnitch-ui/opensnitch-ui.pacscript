@@ -1,0 +1,7 @@
+name="opensnitch-ui"
+version="1.3.6"
+url="https://github.com/evilsocket/opensnitch/releases/download/v$version/python3-opensnitch-ui_$version-1_all.deb"
+gives="python3-opensnitch-ui"
+description="OpenSnitch is a GNU/Linux port of the Little Snitch application firewall"
+hash="7a6793754387864ede5e46f1f3234de604176f0de01a7d4ea1d84a14cdca3653"
+maintainer="echometer <guacamolek@yandex.com>"
