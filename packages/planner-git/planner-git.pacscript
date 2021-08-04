@@ -6,10 +6,10 @@ description="Task manager with Todoist support designed for GNU/Linux"
 maintainer="echometer <guacamolek@yandex.com>"
 removescript="yes"
 
-pkgover() {
+pkgver() {
     git ls-remote "${url}" master | cut -f1 
 }
-version="$(pkgover)"
+version="$(pkgver)"
 
 prepare() {
     true
