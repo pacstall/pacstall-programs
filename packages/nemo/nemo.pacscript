@@ -4,9 +4,8 @@ version="4.8.6-1"
 url="https://salsa.debian.org/cinnamon-team/nemo/-/archive/debian/4.8.6-1/nemo-debian-4.8.6-1.zip"
 license="GPL"
 build_depends="meson libgtk-3-dev libgirepository1.0-dev libnotify-dev cinnamon-desktop-environment libcinnamon-desktop-dev libgail-3-dev libxml2-dev libxapp-dev libexif-dev libexempi-dev intltool"
-depends=""
 gives="nemo"
-breaks="thing"
+hash="b67d5cc0dd836992f3f9e8d8d85cd782c66680709585ab2b8d7fdab9a58a25e6"
 
 prepare() {
     meson --prefix="/usr/src/pacstall/nemo" build 
