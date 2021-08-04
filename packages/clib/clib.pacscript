@@ -11,11 +11,11 @@ prepare () {
   true
 }
 build() {
-  make -j"${nproc}" PREFIX="${pkgdir}/usr/local/"
+  make -j"${nproc}"
 }
 
 install() {
-  sudo  make install DESTDIR="${pkgdir}" 
+  sudo  make install DESTDIR="${pkgdir}" PREFIX="${pkgdir}/usr/local/"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
 }
 
