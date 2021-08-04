@@ -11,7 +11,7 @@ prepare () {
   true
 }
 build() {
-  make -j"${nproc}"
+  make -j"${nproc}" PREFIX="${pkgdir}/usr/local/"
 }
 
 install() {
