@@ -15,7 +15,7 @@ build() {
 }
 
 install() {
-  sudo  make install DESTDIR="${pkgdir}" 
+  sudo  make install DESTDIR="${pkgdir}" PREFIX="${pkgdir}/usr/local/"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
 }
 
