@@ -1,4 +1,4 @@
-name="opensnitch"
+name="opensnitch-deb"
 version="1.3.6"
 url="https://github.com/evilsocket/opensnitch/releases/download/v$version/opensnitch_$version-1_amd64.deb"
 gives="opensnitch"
