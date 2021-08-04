@@ -51,6 +51,7 @@ nowpm
 nyxt-deb
 onefetch-bin
 opendoas-git
+opensnitch-ui
 pacget-git
 paper-icon-theme
 pfetch
@@ -77,7 +78,7 @@ vivaldi-deb
 walc-app
 webapp-manager
 webapp-manager-deb
-windscribe-cli-deb
+windscribe-cli
 wine64
 yabridgectl-bin
 zotero
