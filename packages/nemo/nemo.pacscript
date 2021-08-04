@@ -17,5 +17,5 @@ build() {
 }
 
 install() {
-    sudo DESTDIR=/usr/src/pacstall/nemo ninja install"
+    sudo DESTDIR=/usr/src/pacstall/nemo ninja install
 }
