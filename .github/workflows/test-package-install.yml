@@ -12,7 +12,9 @@ jobs:
       - id: files
         uses: jitterbit/get-changed-files@v1
       - name: Installing pacstall
-        run: bash -c "$(wget -q https://git.io/JsADh -O -)"
+        run: |
+          bash -c "$(wget -q https://git.io/JsADh -O -)"
+          pacstall -U pacstall develop
       - name: Installing packages with pacstall
         run: | 
           sudo dpkg --add-architecture i386
