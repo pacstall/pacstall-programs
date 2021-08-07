@@ -1,4 +1,4 @@
-name="mailspring"
+name="mailspring-deb"
 version="1.9.1"
 url="https://github.com/Foundry376/Mailspring/releases/download/$version/mailspring-$version-amd64.deb"
 gives="mailspring"
