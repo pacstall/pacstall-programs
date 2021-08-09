@@ -54,7 +54,7 @@ nyxt-deb
 onefetch-bin
 opendoas-git
 opensnitch-deb
-opensnitch-ui
+opensnitch-ui-deb
 pacget-git
 paper-icon-theme
 pfetch
@@ -86,5 +86,5 @@ webapp-manager
 webapp-manager-deb
 windscribe-cli-deb
 wine64
-yabridgectl-bin
+yabridge
 zotero
