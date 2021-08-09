@@ -1,4 +1,4 @@
-name="cutefish"
+name="cutefish-core"
 version="0.3"
 url="https://github.com/cutefishos/core/archive/refs/tags/${version}.zip"
 build_depends="libpolkit-agent-1-dev libpolkit-qt5-1-dev libpulse-dev libsm-dev libxtst-dev libxcb-randr0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxcb-composite0-dev libxcb-damage0-dev libxcb-image0-dev libxcb-util0-dev"
