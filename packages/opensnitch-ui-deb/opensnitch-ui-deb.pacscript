@@ -1,4 +1,4 @@
-name="opensnitch-ui"
+name="opensnitch-ui-deb"
 version="1.3.6"
 url="https://github.com/evilsocket/opensnitch/releases/download/v$version/python3-opensnitch-ui_$version-1_all.deb"
 gives="python3-opensnitch-ui"
