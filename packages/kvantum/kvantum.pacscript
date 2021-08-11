@@ -11,15 +11,15 @@ description="Kvantum (by Pedram Pourang, a.k.a. Tsu Jan) is an SVG-based theme e
 hash="c3c73ee62c23c60342b6a2aaca670e2a6316bc17b51d8666278399c36085ee7b"
 
 prepare() {
-          cd Kvantum
-          mkdir build && cd build
+	cd Kvantum
+	mkdir build && cd build
 }
 
 build() {
-        cmake -j$(nproc) ..
-        make -j$(nproc)
+	cmake -j$(nproc) ..
+	make -j$(nproc)
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/kvantum
+	sudo make install DESTDIR=/usr/src/pacstall/kvantum
 }

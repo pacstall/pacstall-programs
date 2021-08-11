@@ -8,18 +8,18 @@ gives="st"
 description="Distrotube's st build"
 breaks="st"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+	git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
 prepare() {
-    true
+	true
 }
 
 build() {
-    make -j$(nproc)
+	make -j$(nproc)
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/st-distrotube
+	sudo make install DESTDIR=/usr/src/pacstall/st-distrotube
 }

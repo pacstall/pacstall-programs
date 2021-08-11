@@ -10,15 +10,15 @@ description="GNU Nano"
 hash="f47c7407d4d7b780c4a8fa20706ebf5740c0df41dc0e521a536916660bc18ec4"
 
 prepare() {
-    ./autogen.sh
-    ./configure
+	./autogen.sh
+	./configure
 }
 
 build() {
-    make -j$(nproc)
+	make -j$(nproc)
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/nano
+	sudo make install DESTDIR=/usr/src/pacstall/nano
 }
 

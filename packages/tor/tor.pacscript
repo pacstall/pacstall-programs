@@ -7,14 +7,14 @@ hash="3423189ba455372021ed44e0be576d181f2908cbd9bdef202d9c11c950882e12"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
-    true
+	true
 }
 
 build() {
-    ./configure
-    make -j$(nproc)
+	./configure
+	make -j$(nproc)
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/tor
+	sudo make install DESTDIR=/usr/src/pacstall/tor
 }

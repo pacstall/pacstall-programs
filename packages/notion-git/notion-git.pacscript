@@ -7,18 +7,18 @@ depends="build-essential lua5.1 liblua5.1-0-dev libx11-dev libxext-dev libsm-dev
 gives="notion"
 breaks="notion"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+	git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
 prepare() {
-    true
+	true
 }
 
 build() {
-    make -j$(nproc)
+	make -j$(nproc)
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/notion-git
+	sudo make install DESTDIR=/usr/src/pacstall/notion-git
 }

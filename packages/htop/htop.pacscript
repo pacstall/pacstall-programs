@@ -10,15 +10,15 @@ description="htop is a cross-platform interactive process viewer."
 hash="4c2629bd50895bd24082ba2f81f8c972348aa2298cc6edc6a21a7fa18b73990c"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
-    ./autogen.sh
-    ./configure
+	./autogen.sh
+	./configure
 }
 
 build() {
-   make -j$(nproc)
+	make -j$(nproc)
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/htop
-    sudo mv htop.desktop /usr/src/pacstall/htop/usr/share/applications
+	sudo make install DESTDIR=/usr/src/pacstall/htop
+	sudo mv htop.desktop /usr/src/pacstall/htop/usr/share/applications
 }

@@ -17,15 +17,15 @@ optdepends=("libxcb-xkb-dev: xkeyboard"
 "libnl-genl-3-dev: network")
 
 prepare() {
-    mkdir build
-    cd build
+	mkdir build
+	cd build
 }
 
 build() {
-    cmake -j$(nproc) ..
-    make -j$(nproc)
+	cmake -j$(nproc) ..
+	make -j$(nproc)
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/polybar
+	sudo make install DESTDIR=/usr/src/pacstall/polybar
 }

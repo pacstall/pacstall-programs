@@ -10,20 +10,20 @@ hash="2294caa9d2011996499fbd70e4006e4ef55db75b99b6719154c09262e23764ef"
 removescript="yes"
 
 prepare() {
-    true
+	true
 }
 
 build() {
-    make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/usr/src/pacstall/neovim -j"${nproc}"
+	make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/usr/src/pacstall/neovim -j"${nproc}"
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/${pkgname}
-    sudo install -Dm644 "LICENSE" -t "/usr/src/pacstall/${pkgname}/usr/share/licenses/${pkgname}"
-    sudo install -Dm644 "README.md" -t "/usr/src/pacstall/${pkgname}/usr/share/doc/${pkgname}"
+	sudo make install DESTDIR=/usr/src/pacstall/${pkgname}
+	sudo install -Dm644 "LICENSE" -t "/usr/src/pacstall/${pkgname}/usr/share/licenses/${pkgname}"
+	sudo install -Dm644 "README.md" -t "/usr/src/pacstall/${pkgname}/usr/share/doc/${pkgname}"
 }
 
 removescript(){
-    sudo rm -rf "/usr/share/licenses/${pkgname}"
-    sudo rm -rf "/usr/share/doc/${pkgname}"
+	sudo rm -rf "/usr/share/licenses/${pkgname}"
+	sudo rm -rf "/usr/share/doc/${pkgname}"
 }

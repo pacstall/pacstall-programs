@@ -16,26 +16,26 @@ debian="TRUE"
 ubuntu="TRUE"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+	git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
 ## installation steps
 #preparations
 prepare() {
-    true
+	true
 }
 # pacget is a bashscript, no need to build anything
 build() {
-    true
+	true
 }
 #this just coppies the files over and makes the file executable
 install() {
-    sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
-    sudo install -Dm755 "pacget" -t "${pkgdir}/usr/bin/"
-    sudo install -Dm755 "pacget_install" -t "${pkgdir}/usr/bin/"
+	sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+	sudo install -Dm755 "pacget" -t "${pkgdir}/usr/bin/"
+	sudo install -Dm755 "pacget_install" -t "${pkgdir}/usr/bin/"
 }
 
 removescript() {
-    sudo rm -rf "/usr/share/licenses/${pkgname}"
+	sudo rm -rf "/usr/share/licenses/${pkgname}"
 }

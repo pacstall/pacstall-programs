@@ -17,25 +17,25 @@ breaks="${pkgname} ${pkgname}-bin"
 removescript="yes"
 
 prepare() {
-  true
+	true
 }
 
 build() {
-  true
+	true
 }
 
 install() {
-  # Install binary
-  sudo install -Dm755 "walc.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+	# Install binary
+	sudo install -Dm755 "walc.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 }
 
 removescript() {
-  # Remove .desktop file
-  sudo rm -f "${homedir}/.local/share/applications/WALC.desktop"
+	# Remove .desktop file
+	sudo rm -f "${homedir}/.local/share/applications/WALC.desktop"
 
-  # Remove left over .config files
-  if ask "Do you want to remove left over configuration files?" Y; then
-    sudo rm -rf "${homedir}/.config/${pkgname}"
-  fi
+	# Remove left over .config files
+	if ask "Do you want to remove left over configuration files?" Y; then
+	sudo rm -rf "${homedir}/.config/${pkgname}"
+	fi
 }
 # vim:set ft=sh ts=2 sw=2 et:

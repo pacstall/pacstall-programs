@@ -8,7 +8,7 @@ hash="c9e17c1e02355d257952d13072791063240b42ebfb4e0f30cc28fe944aa6de4d"
 maintainer="Harshwardhan Mehrotra <harshwardhanmehrotra@gmail.com>"
 
 prepare() {
-        true
+	true
 }
 
 build() {
@@ -16,6 +16,6 @@ build() {
 }
 
 install() {
-	 sudo make install -j$(nproc) DESTDIR=/usr/src/pacstall/batsignal
+	sudo make install -j$(nproc) DESTDIR=/usr/src/pacstall/batsignal
 
 }

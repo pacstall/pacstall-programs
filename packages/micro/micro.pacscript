@@ -9,14 +9,14 @@ gives="micro"
 breaks="micro"
 hash="7a705a60fe5da8fdfbb1423b560ae120a59af963ec73e3548ef97a6a688cd7cf"
 prepare() {
-    true
+	true
 }
 
 build() {
-    chmod +x micro
+	chmod +x micro
 }
 
 install() {
-    sudo mkdir -p /usr/src/pacstall/micro/usr/bin/
-    sudo cp micro /usr/src/pacstall/micro/usr/bin
+	sudo mkdir -p /usr/src/pacstall/micro/usr/bin/
+	sudo cp micro /usr/src/pacstall/micro/usr/bin
 }

@@ -56,12 +56,12 @@ sudo make uninstall
 ##### Make options:
 
 ```shell
-make build              # builds uwufetch
-make man                # builds the manpage (requires pandoc)
-make debug              # use for debug
-make install            # installs uwufetch (needs root permissons)
-make uninstall          # uninstalls uwufetch (needs root permissons)
-make termux             # build and install for termux
+make build			  # builds uwufetch
+make man				# builds the manpage (requires pandoc)
+make debug			  # use for debug
+make install			# installs uwufetch (needs root permissons)
+make uninstall		  # uninstalls uwufetch (needs root permissons)
+make termux			 # build and install for termux
 make termux_uninstall   # uninstall for termux
 ```
 

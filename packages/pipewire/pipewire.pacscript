@@ -6,15 +6,15 @@ maintainer="Henryws <hwengerstickel@pm.me>"
 description="PipeWire is a server and user space API to deal with multimedia pipelines"
 hash="4c07a4af96058c63bb491222dd47ec73ae85a00a415ddf1c19477253818cd17e"
 prepare() {
-    meson setup builddir
+	meson setup builddir
 }
 
 build() {
-    meson configure builddir -Dprefix=/usr
-    ninja -C builddir
+	meson configure builddir -Dprefix=/usr
+	ninja -C builddir
 }
 
 install() {
-    cd builddir/
-    sudo DESTDIR=/usr/src/pacstall/pipewire meson install
+	cd builddir/
+	sudo DESTDIR=/usr/src/pacstall/pipewire meson install
 }

@@ -11,9 +11,9 @@ prepare() {
 }
 
 build() {
-        make -j$(nproc)
+	make -j$(nproc)
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall/lemonbar-xft-git
+	sudo make install DESTDIR=/usr/src/pacstall/lemonbar-xft-git
 }

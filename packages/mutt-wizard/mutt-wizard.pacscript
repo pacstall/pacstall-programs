@@ -15,33 +15,33 @@ removescript="yes"
 # they have been marked with "No Pkg" in the optdepends.
 
 optdepends=('imagemagick: view images inside of the neomutt TUI'
-            'w3m: view HTML email and images inside of the neomutt TUI'
-            'lynx: view HTML email inside of the neomutt TUI'
-            'links: view HTML email inside of the neomutt TUI'
-            'elinks: view HTML email inside of the neomutt TUI'
-            'urlview: list URLs found in mails to open them in a browser'
-            'abook: contact store and tab completion'
-# No Pkg    'protonmail-bridge: use neomutt with protonmail accounts'
-# No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
-            'cron: set up automatic mail syncing')
+			'w3m: view HTML email and images inside of the neomutt TUI'
+			'lynx: view HTML email inside of the neomutt TUI'
+			'links: view HTML email inside of the neomutt TUI'
+			'elinks: view HTML email inside of the neomutt TUI'
+			'urlview: list URLs found in mails to open them in a browser'
+			'abook: contact store and tab completion'
+# No Pkg	'protonmail-bridge: use neomutt with protonmail accounts'
+# No Pkg	'pam-gnupg: automatically unlock gpg keys at session login'
+			'cron: set up automatic mail syncing')
 
 prepare() {
-    true
+	true
 }
 
 build() {
-    true
+	true
 }
 
 install() {
-    pkgdir="/usr/src/pacstall/$name"
+	pkgdir="/usr/src/pacstall/$name"
 
-    sudo make DESTDIR="$pkgdir" install
-    sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/$name"
-    sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/$name"
+	sudo make DESTDIR="$pkgdir" install
+	sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/$name"
+	sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/$name"
 }
 
 removescript() {
-    sudo rm -rf "/usr/share/licenses/$name"
-    sudo rm -rf "/usr/share/doc/$name"
+	sudo rm -rf "/usr/share/licenses/$name"
+	sudo rm -rf "/usr/share/doc/$name"
 }

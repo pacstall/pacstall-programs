@@ -7,17 +7,17 @@ depends="fontconfig"
 gives="st"
 
 pkgver () {
-  git ls-remote https://github.com/LukeSmithxyz/st.git master | cut -f1
+	git ls-remote https://github.com/LukeSmithxyz/st.git master | cut -f1
 }
 version="$(pkgver)"
 prepare() {
-    true
+	true
 }
 
 build() {
-    true
+	true
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/st-lukesmith
+	sudo make install DESTDIR=/usr/src/pacstall/st-lukesmith
 }

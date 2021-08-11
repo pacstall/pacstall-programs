@@ -7,32 +7,32 @@ breaks="tuner"
 description="Tuner Radio Player - development version"
 removescript="yes"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+	git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
 prepare() {
-    if ask "Are you sure you want to install the development version of Tuner?" Y; then
-        meson builddir --prefix=/usr
-    else
-        exit 1
-    fi
+	if ask "Are you sure you want to install the development version of Tuner?" Y; then
+		meson builddir --prefix=/usr
+	else
+		exit 1
+	fi
 }
 
 build() {
-    ninja -C builddir -j$(nproc)
+	ninja -C builddir -j$(nproc)
 }
 
 install() {
-    sudo DESTDIR=/usr/src/pacstall/$name ninja -C builddir install
+	sudo DESTDIR=/usr/src/pacstall/$name ninja -C builddir install
 }
 
 postinst() {
-        sudo glib-compile-schemas /usr/share/glib-2.0/schemas
-        sudo update-desktop-database -q /usr/share/applications
-        sudo gtk-update-icon-cache -qtf  /usr/share/icons/hicolor
+	sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+	sudo update-desktop-database -q /usr/share/applications
+	sudo gtk-update-icon-cache -qtf  /usr/share/icons/hicolor
 }
 
 removescript() {
-        sudo update-desktop-database -q /usr/share/applications
+	sudo update-desktop-database -q /usr/share/applications
 }

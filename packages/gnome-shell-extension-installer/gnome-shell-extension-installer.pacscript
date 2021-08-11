@@ -8,20 +8,20 @@ pkgdir="/usr/src/pacstall/${name}"
 removescript="yes"
 
 prepare() {
-    true
+	true
 }
 
 build() {
-    true
+	true
 }
 
 install() {
-    sudo install -Dm755 "${name}" -t "${pkgdir}/usr/bin"
-    sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
-    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+	sudo install -Dm755 "${name}" -t "${pkgdir}/usr/bin"
+	sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
+	sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
 }
 
 removescript () {
-    sudo rm -rf "/usr/share/licenses/${name}"
-    sudo rm -rf "/usr/share/doc/${name}"
+	sudo rm -rf "/usr/share/licenses/${name}"
+	sudo rm -rf "/usr/share/doc/${name}"
 }

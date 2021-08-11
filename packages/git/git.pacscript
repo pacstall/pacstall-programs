@@ -10,21 +10,21 @@ hash="6038f06d396ba9dab2eee541c7db6e7f9f847f181ec62f3d8441893f8c469398"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 removescript="yes"
 prepare() {
-          make configure
+	make configure
 }
 
 build() {
-        ./configure
-        make -j$(nproc)
+	./configure
+	make -j$(nproc)
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall/$name
-          sudo install -Dm644 COPYING /usr/src/pacstall/git/usr/share/licenses/$name
-          sudo install -Dm644 README.md /usr/src/pacstall/git/usr/share/doc/$name
+	sudo make install DESTDIR=/usr/src/pacstall/$name
+	sudo install -Dm644 COPYING /usr/src/pacstall/git/usr/share/licenses/$name
+	sudo install -Dm644 README.md /usr/src/pacstall/git/usr/share/doc/$name
 }
 
 removescript() {
-    sudo rm -rf /usr/share/licenses/$name
-    sudo rm -rf /usr/share/doc/$name
+	sudo rm -rf /usr/share/licenses/$name
+	sudo rm -rf /usr/share/doc/$name
 }

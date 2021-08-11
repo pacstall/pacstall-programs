@@ -8,13 +8,13 @@ breaks="nvim"
 hash="982285ae3a92146ac75f37368679a468330f5218ded440e8730d90c506744621"
 
 prepare() {
-          cd src
+	cd src
 }
 
 build() {
-        make -j$(nproc)
+	make -j$(nproc)
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall/vim
+	sudo make install DESTDIR=/usr/src/pacstall/vim
 }

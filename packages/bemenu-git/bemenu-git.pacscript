@@ -16,33 +16,33 @@ breaks="${pkgname}-bin ${pkgname}"
 removescript="yes"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+	git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
 prepare() {
-    true
+	true
 }
 
 build() {
-    # Build nessesary files
-    make -j"$(nproc)"
+	# Build nessesary files
+	make -j"$(nproc)"
 }
 
 install() {
-    # Install license
-    sudo install -Dm644 "LICENSE-CLIENT" "LICENSE-LIB" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+	# Install license
+	sudo install -Dm644 "LICENSE-CLIENT" "LICENSE-LIB" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 
-    # Install doc
-    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
+	# Install doc
+	sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
-    # Install bemenu-git
-    sudo make install DESTDIR="${pkgdir}"
+	# Install bemenu-git
+	sudo make install DESTDIR="${pkgdir}"
 }
 
 removescript() {
-    # Remove empty directories
-    sudo rm -rf "/usr/share/licenses/${pkgname}"
-    sudo rm -rf "/usr/share/doc/${pkgname}"
+	# Remove empty directories
+	sudo rm -rf "/usr/share/licenses/${pkgname}"
+	sudo rm -rf "/usr/share/doc/${pkgname}"
 }
 # vim:set ft=sh ts=2 sw=2 et:

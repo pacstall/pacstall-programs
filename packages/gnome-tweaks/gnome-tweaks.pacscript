@@ -10,13 +10,13 @@ breaks="thing"
 description="Graphical interface for advanced GNOME 3 settings"
 
 prepare() {
-          meson builddir
+	meson builddir
 }
 
 build() {
-        ninja -C builddir
+	ninja -C builddir
 }
 
 install() {
-          sudo DESTDIR=/usr/src/pacstall/gnome-tweaks ninja -C builddir install -j$(nproc)
+	sudo DESTDIR=/usr/src/pacstall/gnome-tweaks ninja -C builddir install -j$(nproc)
 }

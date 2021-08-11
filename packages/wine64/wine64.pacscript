@@ -7,13 +7,13 @@ description="Wine is a compatibility layer capable of running Windows applicatio
 hash="a4fa1d3e82406112225a8610572aede8e9740210c65969f0e2b032b29aed95aa"
 maintainer="Henryws <hwengerstickel@pm.me>"
 prepare() {
-          ./configure --enable-win64
+	./configure --enable-win64
 }
 
 build() {
-          make -j$(nproc)
+	 make -j$(nproc)
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall/wine
+	sudo make install DESTDIR=/usr/src/pacstall/wine
 }

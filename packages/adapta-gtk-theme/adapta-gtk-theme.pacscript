@@ -1,6 +1,5 @@
 name="adapta-gtk-theme"
 pkgname="adapta-gtk-theme"
-#test
 version="1.0"
 url="https://github.com/adapta-project/adapta-gtk-theme.git"
 license="CC-BY-SA"
@@ -10,13 +9,13 @@ breaks="adapta"
 description="An adaptive Gtk+ theme based on Material Design Guidelines"
 
 prepare() {
-          ./autogen.sh --prefix=/usr --enable-parallel
+		./autogen.sh --prefix="/usr" --enable-parallel
 }
 
 build() {
-        make -j$(nproc)
+		make -j$(nproc)
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall/adapta-gtk-theme
+		sudo make install DESTDIR="/usr/src/pacstall/adapta-gtk-theme"
 }

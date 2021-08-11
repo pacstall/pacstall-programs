@@ -9,23 +9,23 @@ hash="0602bf65d79a1495818ab64717951d1c99057ed20e8c7bb621c8d5b693420b81"
 removescript="yes"
 
 prepare() {
-    mkdir build
+	mkdir build
 }
 
 build() {
-    cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/src/pacstall/lagrange/usr -DENABLE_123=ON
+	cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/src/pacstall/lagrange/usr -DENABLE_123=ON
 }
 
 install() {
-    sudo cmake --build . --target install -- -j $(nproc)
+	sudo cmake --build . --target install -- -j $(nproc)
 }
 
 postinst() {
-        sudo glib-compile-schemas /usr/share/glib-2.0/schemas
-        sudo update-desktop-database -q /usr/share/applications
-        sudo gtk-update-icon-cache -qtf  /usr/share/icons/hicolor
+	sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+	sudo update-desktop-database -q /usr/share/applications
+	sudo gtk-update-icon-cache -qtf  /usr/share/icons/hicolor
 }
 
 removescript() {
-        sudo update-desktop-database -q /usr/share/applications
+	sudo update-desktop-database -q /usr/share/applications
 }

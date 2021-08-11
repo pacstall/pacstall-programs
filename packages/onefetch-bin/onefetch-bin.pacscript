@@ -8,17 +8,17 @@ gives="onefetch"
 hash="f2881da9a96778bfa8ce6a5df0151a07be8012b1828e8262a1f7db95f70463dc"
 
 prepare() {
-    true
+	true
 }
 
 build() {
-    true
+	true
 }
 
 install() {
-    sudo mkdir -p /usr/src/pacstall/onefetch-bin/usr/bin
-    cd /tmp/pacstall
-    chmod +x onefetch
-    sudo mv onefetch /usr/src/pacstall/onefetch-bin/usr/bin
+	sudo mkdir -p /usr/src/pacstall/onefetch-bin/usr/bin
+	cd /tmp/pacstall
+	chmod +x onefetch
+	sudo mv onefetch /usr/src/pacstall/onefetch-bin/usr/bin
 }
 
