@@ -18,39 +18,39 @@ hash="fb26783dcef33d97f080129b8d0b2b957c486b1241988744e3b9658f1f05646d"
 removescript="yes"
 
 prepare() {
-  # Make build dir
-  meson builddir && cd builddir
+	# Make build dir
+	meson builddir && cd builddir
 }
 
 build() {
-  # Build i3-gaps
-  meson --prefix "${pkgdir}"
-  ninja
+	# Build i3-gaps
+	meson --prefix "${pkgdir}"
+	ninja
 }
 
 install() {
-  # Install license
-  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
+	# Install license
+	sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
 
-  # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+	# Install doc
+	sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
 
-  # Install i3-gaps
-  DESTDIR="${pkgdir}" sudo ninja install
+	# Install i3-gaps
+	DESTDIR="${pkgdir}" sudo ninja install
 }
 
 postinst() {
-  # Install .desktop files
-  sudo ln -sf "${pkgdir}/usr/local/share/xsessions/${pkgname}.desktop" "/usr/share/xsessions/${pkgname}.desktop"
-  sudo ln -sf "${pkgdir}/usr/local/share/xsessions/${pkgname}-with-shmlog.desktop" "/usr/share/xsessions/${pkgname}-with-shmlog.desktop"
+	# Install .desktop files
+	sudo ln -sf "${pkgdir}/usr/local/share/xsessions/${pkgname}.desktop" "/usr/share/xsessions/${pkgname}.desktop"
+	sudo ln -sf "${pkgdir}/usr/local/share/xsessions/${pkgname}-with-shmlog.desktop" "/usr/share/xsessions/${pkgname}-with-shmlog.desktop"
 }
 
 removescript() {
-  # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${name}"
-  sudo rm -rf "/usr/share/doc/${name}"
-  # Remove .desktop files
-  sudo rm -f "/usr/share/xsessions/${pkgname}.desktop"
-  sudo rm -f "/usr/share/xsessions/${pkgname}-with-shmlog.desktop"
+	# Remove empty directories
+	sudo rm -rf "/usr/share/licenses/${name}"
+	sudo rm -rf "/usr/share/doc/${name}"
+	# Remove .desktop files
+	sudo rm -f "/usr/share/xsessions/${pkgname}.desktop"
+	sudo rm -f "/usr/share/xsessions/${pkgname}-with-shmlog.desktop"
 }
 # vim:set ft=sh ts=2 sw=2 et:

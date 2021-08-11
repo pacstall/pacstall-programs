@@ -17,36 +17,36 @@ hash="0e7a109e99fe34e9dde0f86597fe0a59bc756cb280d0e191d30acdd1226f70c1"
 removescript="yes"
 
 prepare() {
-  true
+	true
 }
 
 build() {
-  true
+	true
 }
 
 install() {
-  # Install license
-  sudo install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+	# Install license
+	sudo install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 
-  # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
+	# Install doc
+	sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
-  # Install binary
-  sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
-  
-  # Install completions
-  sudo install -Dm644 "autocomplete/${pkgname}.bash-completion" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
-  sudo install -Dm644 "autocomplete/${pkgname}.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/${pkgname}.fish"
-  sudo install -Dm644 "autocomplete/_${pkgname}" "${pkgdir}/usr/share/zsh/site-functions/_${pkgname}"
+	# Install binary
+	sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
+	
+	# Install completions
+	sudo install -Dm644 "autocomplete/${pkgname}.bash-completion" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
+	sudo install -Dm644 "autocomplete/${pkgname}.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/${pkgname}.fish"
+	sudo install -Dm644 "autocomplete/_${pkgname}" "${pkgdir}/usr/share/zsh/site-functions/_${pkgname}"
 
-  # Install man page
-  sudo install -Dm644 "${pkgname}.1" "${pkgdir}/usr/share/man/man1/${pkgname}.1"
-  sudo gzip --best "${pkgdir}/usr/share/man/man1/${pkgname}.1"
+	# Install man page
+	sudo install -Dm644 "${pkgname}.1" "${pkgdir}/usr/share/man/man1/${pkgname}.1"
+	sudo gzip --best "${pkgdir}/usr/share/man/man1/${pkgname}.1"
 }
 
 removescript() {
-  # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-  sudo rm -rf "/usr/share/doc/${pkgname}"
+	# Remove empty directories
+	sudo rm -rf "/usr/share/licenses/${pkgname}"
+	sudo rm -rf "/usr/share/doc/${pkgname}"
 }
 # vim:set ft=sh ts=2 sw=2 et:
