@@ -1,7 +1,0 @@
-name="ivpn-deb"
-version="3.3.20"
-url="https://repo.ivpn.net/stable/pool/ivpn_${version}_amd64.deb"
-gives="ivpn"
-description="Official IVPN Desktop app - Base Package"
-hash="9972a0b55e1383df67357d046db238b29c70b7865dcba959037da17b7439f20a"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
