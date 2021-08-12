@@ -6,7 +6,7 @@ replace="audacity"
 description="FLOSS Audacity Fork. No telemetry, crash reports and other shenanigans like that!"
 optdepends="ffmpeg: additional import/export capabilities"
 removescript="yes"
-maintainer="echometer <guacamolek@yandex.com>"
+maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
     git ls-remote "${url}" master | cut -f1 
