@@ -6,7 +6,7 @@ breaks=""
 replace="alacritty"
 description=""
 hash="d668eb885b9705be360f7a69b53d5d2068ae0cab22d1644cc519267b1f395f18"
-maintainer="echometer <guacamolek@yandex.com>"
+maintainer="echometerain <echometer@disroot.org>"
 removescript="true"
 
 prepare() {
