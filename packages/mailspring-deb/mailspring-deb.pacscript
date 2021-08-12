@@ -4,4 +4,4 @@ url="https://github.com/Foundry376/Mailspring/releases/download/$version/mailspr
 gives="mailspring"
 description="A beautiful, fast and fully open source mail client."
 hash="99fa700d84691542c3f5387cb48e72a9be516166491daadb598a5f292dd0ea61"
-maintainer="echometer <guacamolek@yandex.com>"
+maintainer="echometerain <echometer@disroot.org>"
