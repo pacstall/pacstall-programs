@@ -3,6 +3,12 @@
 
 <p align="center"><b>PACSTALL</b></p>
 
-This is where (as of 1.5.1 Moonlight) package scripts maintained by the pacstall team are located
+# NOTE: 
+### This is a development testing branch for upcoming 1.6 Celadon release. Use this at your own risk.
+
+<br>
+<br>
+
+This is where (as of 1.6 Celadon) package scripts maintained by the pacstall team are located
 
 [![Join our Discord server!](https://invidget.switchblade.xyz/yzrjXJV6K8)](https://discord.gg/yzrjXJV6K8)
