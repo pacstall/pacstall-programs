@@ -31,7 +31,7 @@ optdepends=("libcapi20-dev: for ISDN software"
         "libpcap-dev:i386: 32-bit packet capture support"
         "libusb-1.0-0-dev:i386: 32-bit USB support"
         "libv4l-dev:i386: 32-bit video capture support")
-maintainer="echometer <guacamolek@yandex.com>"
+maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
     git ls-remote "${url}" master | cut -f1 
