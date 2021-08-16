@@ -1,6 +1,6 @@
 name="kxstudio-repo"
 version="10.0.3"
-url="https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_$version_all.deb"
+url="https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_$(version)_all.deb"
 gives="kxstudio-repos"
 description="Enables the KXStudio repositories."
 hash="a73597e4575a065acdaa2c0217b167818447e1ca509bc1ad080042c8c47060b1"
