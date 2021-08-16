@@ -6,7 +6,7 @@ description="A modern and transparent way to use Windows VST2 and VST3 plugins o
 hash="5bbe1fc653f511ff84797037bd44dd17375d7fab69cb601446e855ae1a1b4816"
 optdepends=("wine: 32-bit windows emulator"
 "wine64: 64-bit windows emulator")
-maintainer="rain1598 <guacamolek@yandex.com>"
+maintainer="echometerain <echometer@disroot.org>"
 prepare() {
           sudo install -D ./* -t "$STOWDIR/$name/usr/lib/yabridge"
 }

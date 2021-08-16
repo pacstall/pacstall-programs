@@ -1,0 +1,7 @@
+name="ms-teams-deb"
+gives="teams"
+version="1.4.00.7556"
+url="https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_${version}_amd64.deb"
+description="Microsoft Teams for Linux is your chat-centered workspace in Office 365"
+hash="ebd01ef8c63f2e63f665994e20c159c1692d9b3e1a682df929b63d00bb1c5379"
+maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
