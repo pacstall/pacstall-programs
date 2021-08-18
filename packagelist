@@ -38,12 +38,18 @@ hyperfine-bin
 i3-gaps
 ivpn-deb
 kvantum
+<<<<<<< HEAD
 kxstudio-repo
+=======
+>>>>>>> Delete sync-repo.yml
 lagrange
 lemonbar-xft-git
 lrz-syncshare-deb
 lyrebird
+<<<<<<< HEAD
 maitreya8-deb
+=======
+>>>>>>> Delete sync-repo.yml
 micro
 minecraft-launcher
 ms-teams-deb
