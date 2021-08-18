@@ -1,6 +1,6 @@
 name="tor"
 version="0.4.6.7"
-url="https://dist.torproject.org/$name-"$version".tar.gz"
+url="https://dist.torproject.org/$name-$version.tar.gz"
 build_depends="make autoconf"
 replace="tor"
 depends="libevent-dev libnss3-dev libzstd-dev liblzma-dev openssl libssl-dev ca-certificates libseccomp-dev zlib1g-dev"
