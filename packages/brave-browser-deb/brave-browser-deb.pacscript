@@ -1,0 +1,7 @@
+name="brave-browser-deb"
+gives="brave-browser"
+version="1.28.105"
+url="https://github.com/brave/$gives/releases/download/v${version}/${gives}_${version}_amd64.deb"
+description="Secure, Fast & Private Web Browser with Adblocker."
+hash="d44d8a586e6f1d806ea61e8fbfd27a1413ac5297a0c78231fc7f7d650ff1e332"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
