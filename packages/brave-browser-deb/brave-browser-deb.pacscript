@@ -1,7 +1,20 @@
 name="brave-browser-deb"
 gives="brave-browser"
 version="1.28.105"
-url="https://github.com/brave/$gives/releases/download/v${version}/${gives}_${version}_amd64.deb"
+url="https://github.com/brave/brave-browser/archive/refs/tags/v1.28.105.tar.gz"
 description="Secure, Fast & Private Web Browser with Adblocker."
-hash="d44d8a586e6f1d806ea61e8fbfd27a1413ac5297a0c78231fc7f7d650ff1e332"
+hash="a43869da8e21d145f71a61c0eedc37d5908c74e250b73f23e192fd831232c884"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+
+prepare() {
+          wget -q https://github.com/brave/brave-browser/releases/download/v$version/${gives}_${version}_amd64.deb
+}
+
+build() {
+        true
+}
+
+install() {
+          sudo dpkg -i ${gives}_${version}_amd64.deb
+          sudo apt install -f
+}
