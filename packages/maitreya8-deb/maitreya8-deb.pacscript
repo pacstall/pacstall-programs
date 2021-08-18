@@ -1,6 +1,7 @@
 name="maitreya8-deb"
+pkgname="maitreya8"
 version="8.0.1"
-url="https://github.com/martin-pe/${name}/releases/download/v${version}/${name}_u20_${version}_amd64.deb"
+url="https://github.com/martin-pe/${pkgname}/releases/download/v${version}/${pkgname}_u20_${version}_amd64.deb"
 depends="libwxsqlite3-3.0-0 wx-common wx3.0-i18n"
 replace="maitreya8"
 description="Maitreya is a free software for western and Vedic astrology (Jyotish)"
