@@ -1,0 +1,8 @@
+name="epson-inkjet-printer-stylus-nx110-series-deb"
+pkgname="epson-inkjet-printer-stylus-nx110-series"
+version="1.0.0-1lsb3.2"
+url="http://download.ebz.epson.net/dsc/f/01/00/01/68/42/287f0fb8185a2fd39b6ce51df9e7c05bac9b616a/${pkgname}_${version}_amd64.deb"
+depends=""
+description="Driver for Epson Stylus NX110, Epson Stylus SX110, Epson Stylus TX110, Epson Stylus TX111, Epson Stylus TX112 , Epson Stylus TX115, Epson Stylus TX117"
+hash="4bc20572b7f4bf9d4a8fa344e0bc161f38fa2caf7d636973e68945e433e24afb"
+maintainer="Zahrun <Zahrun@github.com>"
