@@ -1,0 +1,7 @@
+name="veracrypt-deb"
+gives="veracrypt"
+version="1.24-Update7"
+url="https://launchpad.net/$gives/trunk/1.24-update7/+download/$gives-$version-Ubuntu-20.04-amd64.deb"
+description="VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux."
+hash="87c9a97d8ae45614f835967cf05c398c9804517a6d0cfe1700b8dfa8905785fc"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
