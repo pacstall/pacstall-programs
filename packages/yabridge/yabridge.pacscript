@@ -28,9 +28,9 @@ postinst(){
           yabridgectl set --path=/usr/lib/yabridge
 }
 removescript(){
-          sudo rm -rf "/usr/bin/yabridgectl"
-          sudo rm -rf "/usr/bin/yabridge-host.exe"
-          sudo rm -rf "/usr/bin/yabridge-host.exe.so"
-          sudo rm -rf "/usr/bin/yabridge-host-32.exe"
-          sudo rm -rf "/usr/bin/yabridge-host-32.exe.so"
+          sudo rm "/usr/bin/yabridgectl"
+          sudo rm "/usr/bin/yabridge-host.exe"
+          sudo rm "/usr/bin/yabridge-host.exe.so"
+          sudo rm "/usr/bin/yabridge-host-32.exe"
+          sudo rm "/usr/bin/yabridge-host-32.exe.so"
 }
