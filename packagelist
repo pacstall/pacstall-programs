@@ -24,6 +24,7 @@ dropbox-deb
 dunst
 emacs
 emacs-git
+epson-inkjet-printer-stylus-nx110-series-deb
 exa
 exploitdb
 fastfetch-git
@@ -34,6 +35,7 @@ gnome-shell-extension-installer
 gnome-tweaks
 google-chrome-deb
 gtkhash
+heroic-games-launcher-deb
 htop
 hyperfine-bin
 i3-gaps
@@ -43,6 +45,7 @@ kvantum
 kxstudio-repo
 lagrange
 lemonbar-xft-git
+libresprite-git
 lrz-syncshare-deb
 lyrebird
 maitreya8-deb
@@ -83,6 +86,7 @@ tuner
 tuner-git
 ulauncher-deb
 uwufetch
+veracrypt-deb
 vim
 viper4linux
 vivaldi-deb
