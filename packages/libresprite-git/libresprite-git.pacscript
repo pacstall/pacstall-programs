@@ -1,6 +1,6 @@
 maintainer="echometerain <echometer@disroot.org>"
 
-name=libresprite-beta
+name=libresprite-git
 version=1.2.1-Beta
 description='fork of last GPL version of aseprite'
 depends="libpixman-1-0 libcurl4 libgif7 zlib1g libpng16-16 libjpeg-turbo8 libwebp6 libxcursor1"
