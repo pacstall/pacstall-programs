@@ -14,8 +14,9 @@ build() {
 }
 
 install() {
-	sudo install -Dm755 "waf" "$STOWDIR/$name/home/$LOGNAME/.local/bin/waf"
-	sudo install -dm755 "$STOWDIR/$name/usr/lib"
-	sudo cp -r "./waflib" "$STOWDIR/$name/usr/lib"
-	sudo python3 -m compileall "$STOWDIR/$name/usr/lib/waflib"
+	sudo install -Dm755 "waf" "$STOWDIR/$name/usr/bin/waf"
+}
+
+postinst() {
+	sudo waf 2>"/dev/null"
 }
