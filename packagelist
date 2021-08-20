@@ -16,6 +16,7 @@ brave-browser-nightly-deb
 clib
 cmatrix
 conky-manager
+couture
 discord
 discord-canary
 dmenu
@@ -35,6 +36,7 @@ git
 gnome-shell-extension-installer
 gnome-tweaks
 google-chrome-deb
+graillon
 gtkhash
 heroic-games-launcher-deb
 htop
@@ -69,11 +71,13 @@ opensnitch-deb
 opensnitch-ui-deb
 pacget-git
 paper-icon-theme
+panagement
 pfetch
 pipewire
 polybar
 popsicle
 protonmail-bridge-deb
+renegate
 sed
 shell-color-scripts
 smartgit
