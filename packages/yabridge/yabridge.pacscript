@@ -7,6 +7,7 @@ hash="5bbe1fc653f511ff84797037bd44dd17375d7fab69cb601446e855ae1a1b4816"
 optdepends=("wine: 32-bit windows emulator"
 "wine64: 64-bit windows emulator")
 maintainer="echometerain <echometer@disroot.org>"
+removescript=yes
 prepare() {
           sudo install -D ./* -t "$STOWDIR/$name/usr/lib/yabridge"
 }
@@ -16,11 +17,20 @@ build() {
 }
 
 install() {
-          sudo install -D ./yabridgectl -t "$STOWDIR/$name/usr/bin"
-          sudo install -D ./yabridge-host.exe -t "$STOWDIR/$name/usr/bin"
-          sudo install -D ./yabridge-host.exe.so -t "$STOWDIR/$name/usr/bin"
+          sudo ln -s "$STOWDIR/$name/usr/lib/yabridge/yabridgectl" "/usr/bin"
+          sudo ln -s "$STOWDIR/$name/usr/lib/yabridge/yabridge-host.exe" "/usr/bin"
+          sudo ln -s "$STOWDIR/$name/usr/lib/yabridge/yabridge-host.exe.so" "/usr/bin"
+          sudo ln -s "$STOWDIR/$name/usr/lib/yabridge/yabridge-host-32.exe" "/usr/bin"
+          sudo ln -s "$STOWDIR/$name/usr/lib/yabridge/yabridge-host-32.exe.so" "/usr/bin"
 }
 
 postinst(){
           yabridgectl set --path=/usr/lib/yabridge
+}
+removescript(){
+          sudo rm "/usr/bin/yabridgectl"
+          sudo rm "/usr/bin/yabridge-host.exe"
+          sudo rm "/usr/bin/yabridge-host.exe.so"
+          sudo rm "/usr/bin/yabridge-host-32.exe"
+          sudo rm "/usr/bin/yabridge-host-32.exe.so"
 }
