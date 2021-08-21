@@ -8,6 +8,7 @@ build_depends="g++ libx11-dev libxcursor-dev cmake ninja-build zlib1g-dev libpix
 url="https://github.com/LibreSprite/LibreSprite.git"
 conflicts="aseprite"
 prepare(){
+	git fetch --all --tags --prune
 	git checkout -f "v$version"
 	git submodule update --init --recursive
 	mkdir build
