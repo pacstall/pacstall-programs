@@ -1,7 +1,7 @@
 name="ulauncher-deb"
-version="5.12.0"
+version="5.12.1-beta1"
 gives="ulauncher"
-url="https://github.com/Ulauncher/Ulauncher/releases/download/5.12.0/ulauncher_5.12.0_all.deb"
+https://github.com/Ulauncher/Ulauncher/releases/download/5.12.1-beta1/ulauncher_5.12.1-beta1_all.deb
 description="Application launcher for Linux"
-hash="a2c611bf7215b3d1341b063af8cef04c9263abf2eafcddfea84d4739a050f13f"
+hash="e0ee26457be888e5fa0f11fb797cfef4b479fc1fad15649f23fd62f0de7e3d3f"
 maintainer="Fahri Korkmaz <fahri.korkmaz@protonmail.ch>"
