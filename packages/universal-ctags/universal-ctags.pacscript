@@ -5,7 +5,6 @@ pkgdir="/usr/src/pacstall/${name}"
 url="https://github.com/universal-ctags/ctags.git"
 description="Universal Ctags (abbreviated as u-ctags) is a maintained implementation of ctags. ctags generates an index (or tag) file of language objects found in source files for programming languages. This index makes it easy for text editors and other tools to locate the indexed items."
 build_depends="gcc make pkg-config autoconf automake python3-docutils libseccomp-dev libjansson-dev libyaml-dev libxml2-dev"
-hash="7c25e9ea2c478185610656cbccdbe322b9d1503da07e94a23be96b4f2e6176c5"
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
 
 prepare() {
