@@ -18,9 +18,9 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/$name
-    sudo install -Dm644 COPYING -t /usr/src/pacstall/$name/usr/share/licenses/$name
-    sudo install -Dm644 README.md -t /usr/src/pacstall/$name/usr/share/doc/$name
+    make install DESTDIR=/usr/src/pacstall/$name
+    install -Dm644 COPYING -t /usr/src/pacstall/$name/usr/share/licenses/$name
+    install -Dm644 README.md -t /usr/src/pacstall/$name/usr/share/doc/$name
 }
 
 removescript() {

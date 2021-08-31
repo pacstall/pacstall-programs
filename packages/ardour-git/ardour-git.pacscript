@@ -42,16 +42,16 @@ build() {
 }
 
 install() {
-	sudo ./waf i18n --destdir="$STOWDIR/$name"
-	sudo ./waf install --destdir="$STOWDIR/$name"
+	./waf i18n --destdir="$STOWDIR/$name"
+	./waf install --destdir="$STOWDIR/$name"
 	cd "$STOWDIR/$name/usr/bin"
 	
-	sudo rm ardour6-copy-mixer ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
-	sudo rm ardour6-export ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-export"
-	sudo rm ardour6-fix_bbtppq ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-fix_bbtppq"
-	sudo rm ardour6-new_empty_session ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-new_empty_session"
-	sudo rm ardour6-new_session ;  sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-new_session"
+	rm ardour6-copy-mixer ; ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
+	rm ardour6-export ; ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-export"
+	rm ardour6-fix_bbtppq ; ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-fix_bbtppq"
+	rm ardour6-new_empty_session ; ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-new_empty_session"
+	rm ardour6-new_session ; ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-new_session"
 	
 	# man pages
-	sudo install -vDm 644 "ardour.1" -t "$STOWDIR/$name/usr/share/man/man1/"
+	install -vDm 644 "ardour.1" -t "$STOWDIR/$name/usr/share/man/man1/"
 }

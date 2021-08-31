@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-qt-plugins
+    make install DESTDIR=/usr/src/pacstall/cutefish-qt-plugins
 }

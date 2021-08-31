@@ -15,5 +15,5 @@ build() {
 }
 
 install() {
-    sudo ninja -C "build" install > /dev/null
+    ninja -C "build" install > /dev/null
 }

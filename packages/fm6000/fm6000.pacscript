@@ -16,6 +16,6 @@ build() {
 }
 
 install() {
-        sudo mkdir -p /usr/src/pacstall/fm6000/usr/bin/
-        sudo cp fm6000.pl /usr/src/pacstall/fm6000/usr/bin
+        mkdir -p /usr/src/pacstall/fm6000/usr/bin/
+        cp fm6000.pl /usr/src/pacstall/fm6000/usr/bin
 }

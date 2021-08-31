@@ -26,22 +26,22 @@ build() {
 
 install() {
   # Install license
-  sudo install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
+  install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
   # Install binary
-  sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
-  
+  install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
+
   # Install completions
-  sudo install -Dm644 "autocomplete/${pkgname}.bash-completion" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
-  sudo install -Dm644 "autocomplete/${pkgname}.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/${pkgname}.fish"
-  sudo install -Dm644 "autocomplete/_${pkgname}" "${pkgdir}/usr/share/zsh/site-functions/_${pkgname}"
+  install -Dm644 "autocomplete/${pkgname}.bash-completion" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
+  install -Dm644 "autocomplete/${pkgname}.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/${pkgname}.fish"
+  install -Dm644 "autocomplete/_${pkgname}" "${pkgdir}/usr/share/zsh/site-functions/_${pkgname}"
 
   # Install man page
-  sudo install -Dm644 "${pkgname}.1" "${pkgdir}/usr/share/man/man1/${pkgname}.1"
-  sudo gzip --best "${pkgdir}/usr/share/man/man1/${pkgname}.1"
+  install -Dm644 "${pkgname}.1" "${pkgdir}/usr/share/man/man1/${pkgname}.1"
+  gzip --best "${pkgdir}/usr/share/man/man1/${pkgname}.1"
 }
 
 removescript() {

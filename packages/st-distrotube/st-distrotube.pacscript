@@ -21,5 +21,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/st-distrotube
+    make install DESTDIR=/usr/src/pacstall/st-distrotube
 }

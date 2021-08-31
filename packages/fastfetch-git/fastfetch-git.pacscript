@@ -42,28 +42,28 @@ build() {
 
 install() {
   # Install license
-  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
+  install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
   # Install fastfetch and flashfetch binary
-  sudo install -Dm755 "fastfetch" "flashfetch" -t "${pkgdir}/usr/bin"
+  install -Dm755 "fastfetch" "flashfetch" -t "${pkgdir}/usr/bin"
 
   # Install bash completions
-  sudo install -Dm644 "completions/bash" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
+  install -Dm644 "completions/bash" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
 
   # Install presets
   for file in presets/*; do
-    sudo install -D "$file" -t "${pkgdir}/usr/share/${pkgname}/presets"
+    install -D "$file" -t "${pkgdir}/usr/share/${pkgname}/presets"
   done
 }
 
 removescript() {
   # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-  sudo rm -rf "/usr/share/doc/${pkgname}"
-  sudo rm -rf "/usr/share/${pkgname}"
+  rm -rf "/usr/share/licenses/${pkgname}"
+  rm -rf "/usr/share/doc/${pkgname}"
+  rm -rf "/usr/share/${pkgname}"
 
   # Remove left over directories
   if ask "Do you want to remove the configuration files?" Y; then

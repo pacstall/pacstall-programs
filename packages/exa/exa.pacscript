@@ -15,7 +15,7 @@ build() {
 }
 
 install() {
-    sudo mkdir -p /usr/src/pacstall/exa/usr/bin
-    sudo mv target/release/exa /usr/src/pacstall/exa/usr/bin
-    sudo chmod +x /usr/src/pacstall/exa/usr/bin/exa
+    mkdir -p /usr/src/pacstall/exa/usr/bin
+    mv target/release/exa /usr/src/pacstall/exa/usr/bin
+    chmod +x /usr/src/pacstall/exa/usr/bin/exa
 }

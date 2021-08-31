@@ -22,5 +22,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-icons
+    make install DESTDIR=/usr/src/pacstall/cutefish-icons
 }

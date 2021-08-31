@@ -34,12 +34,12 @@ prepare() {
 
 build() {
   # Build rquired files
-  sudo make -j"$(nproc)" DESTDIR="${pkgdir}"
+  make -j"$(nproc)" DESTDIR="${pkgdir}"
 }
 
 install() {
   # Install awesome
-  sudo make install DESTDIR="${pkgdir}"
+  make install DESTDIR="${pkgdir}"
 }
 
 postinst(){

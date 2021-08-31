@@ -32,17 +32,17 @@ build() {
 
 install() {
   # Install license
-  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
+  install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
   # Install doas
-  sudo make install DESTDIR="${pkgdir}"
+  make install DESTDIR="${pkgdir}"
 
   # Install config file
-  sudo mkdir -p "${pkgdir}/etc"
-  echo "permit persist $LOGNAME as root" | sudo tee "${pkgdir}/etc/doas.conf" > /dev/null
+  mkdir -p "${pkgdir}/etc"
+  echo "permit persist $LOGNAME as root" | tee "${pkgdir}/etc/doas.conf" > /dev/null
 }
 
 removescript() {

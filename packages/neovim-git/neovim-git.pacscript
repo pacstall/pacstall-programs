@@ -13,6 +13,6 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/neovim-git
+    make install DESTDIR=/usr/src/pacstall/neovim-git
 }
 # vim:set ft=sh ts=2 sw=2 et:

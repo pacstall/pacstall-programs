@@ -16,9 +16,9 @@ build() {
 }
 
 install() {
-    sudo mkdir -p /usr/src/pacstall/onefetch-bin/usr/bin
+    mkdir -p /usr/src/pacstall/onefetch-bin/usr/bin
     cd /tmp/pacstall
     chmod +x onefetch
-    sudo mv onefetch /usr/src/pacstall/onefetch-bin/usr/bin
+    mv onefetch /usr/src/pacstall/onefetch-bin/usr/bin
 }
 

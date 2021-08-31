@@ -14,7 +14,7 @@ build() {
 }
 
 install() {
-	sudo install -Dm755 "waf" "$STOWDIR/$name/usr/bin/waf"
+	install -Dm755 "waf" "$STOWDIR/$name/usr/bin/waf"
 }
 
 postinst() {

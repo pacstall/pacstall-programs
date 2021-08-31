@@ -15,5 +15,5 @@ build() {
 }
 
 install() {
-   sudo make install DESTDIR=/usr/src/pacstall/popsicle
+   make install DESTDIR=/usr/src/pacstall/popsicle
 }

@@ -9,7 +9,7 @@ optdepends=("wine: 32-bit windows emulator"
 maintainer="echometerain <echometer@disroot.org>"
 removescript=yes
 prepare() {
-          sudo install -D ./* -t "$STOWDIR/$name/usr/lib/yabridge"
+          install -D ./* -t "$STOWDIR/$name/usr/lib/yabridge"
 }
 
 build() {

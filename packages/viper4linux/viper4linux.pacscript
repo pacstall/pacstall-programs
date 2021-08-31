@@ -6,9 +6,9 @@ description="A Port of Viper4Android to Linux, or in the words of noahbliss: Mak
 hash="fe85277ca63f8a99beb2c347b6d9a268eb783c601c8fcbb7d0366d4797ff9900"
 
 prepare() {
-	sudo mkdir -p /usr/src/pacstall/${name}/usr/lib/x86_64-linux-gnu/gstreamer-1.0/
-	sudo mkdir -p /usr/src/pacstall/${name}/usr/local/bin
-	sudo mkdir -p /usr/src/pacstall/${name}/lib/
+	mkdir -p /usr/src/pacstall/${name}/usr/lib/x86_64-linux-gnu/gstreamer-1.0/
+	mkdir -p /usr/src/pacstall/${name}/usr/local/bin
+	mkdir -p /usr/src/pacstall/${name}/lib/
 }
 
 build() {
@@ -19,14 +19,14 @@ build() {
 
 install() {
 	#These are basically install instructions from https://github.com/Audio4Linux/Viper4Linux
-	sudo cp libgstviperfx.so /usr/src/pacstall/${name}/usr/lib/x86_64-linux-gnu/gstreamer-1.0/
+	cp libgstviperfx.so /usr/src/pacstall/${name}/usr/lib/x86_64-linux-gnu/gstreamer-1.0/
 	
 	cd ..
 	
-	sudo cp viperfx_core_binary/libviperfx_x64_linux.so /usr/src/pacstall/${name}/lib/libviperfx.so
+	cp viperfx_core_binary/libviperfx_x64_linux.so /usr/src/pacstall/${name}/lib/libviperfx.so
 	
 	cd Viper4Linux
 	cp -r viper4linux /usr/src/pacstall/${name}/home/$USER/.config
 	
-	sudo cp viper /usr/src/pacstall/${name}/usr/local/bin
+	cp viper /usr/src/pacstall/${name}/usr/local/bin
 } 

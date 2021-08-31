@@ -17,12 +17,12 @@ build() {
 }
 
 install() {
-    sudo cp -rf "app/" "${pkgdir}/usr/share/${name}"
-    sudo install -Dm644 "icon.png" -t "${pkgdir}/usr/share/${name}"
-    sudo install -Dm644 "app.py" -t "${pkgdir}/usr/share/${name}"
-    sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
-    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
-    sudo install -Dm755 "${name}" -t "${pkgdir}/usr/bin"
+    cp -rf "app/" "${pkgdir}/usr/share/${name}"
+    install -Dm644 "icon.png" -t "${pkgdir}/usr/share/${name}"
+    install -Dm644 "app.py" -t "${pkgdir}/usr/share/${name}"
+    install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
+    install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+    install -Dm755 "${name}" -t "${pkgdir}/usr/bin"
 }
 
 removescript () {

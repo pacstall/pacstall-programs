@@ -38,5 +38,5 @@ build() {
 
 install() {
 	cd build
-	sudo DESTDIR="$STOWDIR/$name" ninja install
+	DESTDIR="$STOWDIR/$name" ninja install
 }
