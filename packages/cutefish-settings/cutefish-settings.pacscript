@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-settings
+    make install DESTDIR=/usr/src/pacstall/cutefish-settings
 }

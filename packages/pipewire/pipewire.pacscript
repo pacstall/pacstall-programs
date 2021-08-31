@@ -16,5 +16,5 @@ build() {
 
 install() {
     cd builddir/
-    sudo DESTDIR=/usr/src/pacstall/pipewire meson install
+    DESTDIR=/usr/src/pacstall/pipewire meson install
 }

@@ -14,5 +14,5 @@ build() {
 }
 
 install() {
-        sudo make install DESTDIR=/usr/src/pacstall/dmenu
+        make install DESTDIR=/usr/src/pacstall/dmenu
 }

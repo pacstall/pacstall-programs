@@ -9,17 +9,16 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-          true
-          sudo pip3 install pyinstaller
+    sudo pip3 install pyinstaller
 }
 
 build() {
-        chmod +x build1
-        ./build1
+    chmod +x build1
+    ./build1
 }
 
 install() {
-          sudo mkdir -p  /usr/src/pacstall/blang-git/usr/bin
-          sudo cp blang  /usr/src/pacstall/blang-git/usr/bin
-          sudo chmod 755 /usr/src/pacstall/blang-git/usr/bin/blang
+    mkdir -p  /usr/src/pacstall/blang-git/usr/bin
+    cp blang  /usr/src/pacstall/blang-git/usr/bin
+    chmod 755 /usr/src/pacstall/blang-git/usr/bin/blang
 }

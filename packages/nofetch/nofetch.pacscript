@@ -14,7 +14,7 @@ build() {
 }
 
 install() {
-    sudo mkdir -p /usr/src/pacstall/nofetch/usr/bin
+    mkdir -p /usr/src/pacstall/nofetch/usr/bin
     chmod +x nofetch
-    sudo mv nofetch /usr/src/pacstall/nofetch/usr/bin
+    mv nofetch /usr/src/pacstall/nofetch/usr/bin
 }

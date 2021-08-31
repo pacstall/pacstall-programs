@@ -30,10 +30,10 @@ build() {
 
 install() {
   # Install license
-  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
+  install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
 
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+  install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
 
   # Install i3-gaps
   DESTDIR="${pkgdir}" sudo ninja install

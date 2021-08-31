@@ -26,7 +26,7 @@ build() {
 
 install() {
   # Install LibreSSL
-  sudo make install DESTDIR="${pkgdir}"
+  make install DESTDIR="${pkgdir}"
 }
 
 postinst() {

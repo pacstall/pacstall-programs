@@ -18,20 +18,20 @@ build() {
 }
 
 install() {
-    sudo install -Dm755 "./licenses"/* -t "$STOWDIR/$name/usr/share/licenses/$name"
-    sudo install -Dm755 "./license.html" -t "$STOWDIR/$name/usr/share/licenses/$name"
-    sudo mkdir -p "$STOWDIR/$name/opt"
-    sudo cp -r "$SRCDIR/$name" -t "$STOWDIR/$name/opt"
-    sudo chmod 755 "$STOWDIR/$name/opt"
+    install -Dm755 "./licenses"/* -t "$STOWDIR/$name/usr/share/licenses/$name"
+    install -Dm755 "./license.html" -t "$STOWDIR/$name/usr/share/licenses/$name"
+    mkdir -p "$STOWDIR/$name/opt"
+    cp -r "$SRCDIR/$name" -t "$STOWDIR/$name/opt"
+    chmod 755 "$STOWDIR/$name/opt"
     
     for _size in 32 48 64 128 256
     do
-        sudo chmod 755 "./bin/smartgit-${_size}.png"
-        sudo mkdir -p "$STOWDIR/$name/usr/share/icons/hicolor/${_size}x${_size}/apps"
-        sudo mv "./bin/smartgit-${_size}.png" "$STOWDIR/$name/usr/share/icons/hicolor/${_size}x${_size}/apps/$name.png"
+        chmod 755 "./bin/smartgit-${_size}.png"
+        mkdir -p "$STOWDIR/$name/usr/share/icons/hicolor/${_size}x${_size}/apps"
+        mv "./bin/smartgit-${_size}.png" "$STOWDIR/$name/usr/share/icons/hicolor/${_size}x${_size}/apps/$name.png"
     done
     
-    sudo chmod 755 "$STOWDIR/$name/opt/$name/bin/smartgit.sh"
+    chmod 755 "$STOWDIR/$name/opt/$name/bin/smartgit.sh"
 }
 
 postinst(){

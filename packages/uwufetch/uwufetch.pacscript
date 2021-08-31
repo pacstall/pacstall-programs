@@ -20,26 +20,26 @@ removescript="yes"
 
 prepare() {
   # Make nessesary directories
-  sudo mkdir -p "${pkgdir}"/usr/bin
-  sudo mkdir -p "${pkgdir}"/usr/lib
-  sudo mkdir -p "${pkgdir}"/usr/share/man/man1
+  mkdir -p "${pkgdir}"/usr/bin
+  mkdir -p "${pkgdir}"/usr/lib
+  mkdir -p "${pkgdir}"/usr/share/man/man1
 }
 
 build() {
   # Build required files
-  sudo make -j"$(nproc)" build DESTDIR="${pkgdir}"
-  sudo make -j"$(nproc)" man DESTDIR="${pkgdir}"
+  make -j"$(nproc)" build DESTDIR="${pkgdir}"
+  make -j"$(nproc)" man DESTDIR="${pkgdir}"
 }
 
 install() {
   # Install license
-  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
+  install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
 
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+  install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   
   # Install uwufetch
-  sudo make install DESTDIR="${pkgdir}"
+  make install DESTDIR="${pkgdir}"
 }
 
 removescript() {

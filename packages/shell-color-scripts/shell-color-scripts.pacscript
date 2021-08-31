@@ -14,6 +14,6 @@ build() {
 }
 
 install() {
-        sudo install -D colorscript.sh "$STOWDIR/$name/usr/bin/colorscript"
-        sudo install -D colorscripts/* -t "$STOWDIR/$name/opt/shell-color-scripts/colorscripts"
+        install -D colorscript.sh "$STOWDIR/$name/usr/bin/colorscript"
+        install -D colorscripts/* -t "$STOWDIR/$name/opt/shell-color-scripts/colorscripts"
 }

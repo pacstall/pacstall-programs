@@ -14,12 +14,12 @@ build() {
 }
 install() {
     # Moving all android studio files to /opt
-    sudo install -D ./* -t "$STOWDIR/$name/opt/android-studio/"
-    sudo cp -r bin "$STOWDIR/$name/opt/android-studio/"
-    sudo cp -r jre "$STOWDIR/$name/opt/android-studio/"
-    sudo cp -r lib "$STOWDIR/$name/opt/android-studio/"
-    sudo cp -r license "$STOWDIR/$name/opt/android-studio/"
-    sudo cp -r plugins "$STOWDIR/$name/opt/android-studio/"
+    install -D ./* -t "$STOWDIR/$name/opt/android-studio/"
+    cp -r bin "$STOWDIR/$name/opt/android-studio/"
+    cp -r jre "$STOWDIR/$name/opt/android-studio/"
+    cp -r lib "$STOWDIR/$name/opt/android-studio/"
+    cp -r license "$STOWDIR/$name/opt/android-studio/"
+    cp -r plugins "$STOWDIR/$name/opt/android-studio/"
     # Creating a launcher in $PATH
     sudo ln -s "$STOWDIR/$name/opt/android-studio/bin/studio.sh" "/usr/bin/android-studio"
 }

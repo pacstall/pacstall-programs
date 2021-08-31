@@ -15,11 +15,11 @@ build() {
 }
 
 install() {
-        sudo install -D target/release/bat -t /usr/src/pacstall/${name}/usr/bin
+        install -D target/release/bat -t /usr/src/pacstall/${name}/usr/bin
 
-        sudo install -D target/release/build/bat-*/out/assets/completions/bat.fish -t /usr/src/pacstall/${name}/usr/share/fish/completions
-        sudo install -D target/release/build/bat-*/out/assets/completions/bat.zsh /usr/src/pacstall/${name}/usr/share/zsh/vendor-completions/_bat
+        install -D target/release/build/bat-*/out/assets/completions/bat.fish -t /usr/src/pacstall/${name}/usr/share/fish/completions
+        install -D target/release/build/bat-*/out/assets/completions/bat.zsh /usr/src/pacstall/${name}/usr/share/zsh/vendor-completions/_bat
 
-        sudo mkdir -p /usr/src/pacstall/${name}/usr/local/share/man/man1
-        gzip -c target/release/build/bat-*/out/assets/manual/bat.1 | sudo tee /usr/src/pacstall/${name}/usr/local/share/man/man1/${name}.1.gz >/dev/null
+        mkdir -p /usr/src/pacstall/${name}/usr/local/share/man/man1
+        gzip -c target/release/build/bat-*/out/assets/manual/bat.1 | tee /usr/src/pacstall/${name}/usr/local/share/man/man1/${name}.1.gz >/dev/null
 }

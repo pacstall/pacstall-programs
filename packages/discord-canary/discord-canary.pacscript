@@ -7,9 +7,9 @@ description="Chat for Communities and Friends - Unstable"
 hash="12b6930d129deadd1cf54ebcb5245d1a4781d617ea352e0a51ec045f090bf22a"
 
 prepare() {
-        sudo mkdir -p /usr/src/pacstall/discord-canary/usr/share/discord-canary/
-        sudo mkdir -p /usr/src/pacstall/discord-canary/usr/share/applications/
-        sudo mkdir -p /usr/src/pacstall/discord-canary/usr/share/icons/
+        mkdir -p /usr/src/pacstall/discord-canary/usr/share/discord-canary/
+        mkdir -p /usr/src/pacstall/discord-canary/usr/share/applications/
+        mkdir -p /usr/src/pacstall/discord-canary/usr/share/icons/
 }
 
 build() {
@@ -17,7 +17,7 @@ build() {
 }
 
 install() {
-        sudo mv discord-canary.desktop /usr/src/pacstall/discord-canary/usr/share/applications/
-        sudo cp discord.png /usr/src/pacstall/discord-canary/usr/share/icons/discord-canary.png
-        sudo mv ./* /usr/src/pacstall/discord-canary/usr/share/discord-canary/
+        mv discord-canary.desktop /usr/src/pacstall/discord-canary/usr/share/applications/
+        cp discord.png /usr/src/pacstall/discord-canary/usr/share/icons/discord-canary.png
+        mv ./* /usr/src/pacstall/discord-canary/usr/share/discord-canary/
 }

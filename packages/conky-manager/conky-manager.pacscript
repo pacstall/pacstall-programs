@@ -15,5 +15,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/conky-manager
+    make install DESTDIR=/usr/src/pacstall/conky-manager
 }

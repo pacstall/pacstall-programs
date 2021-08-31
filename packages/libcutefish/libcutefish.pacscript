@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/libcutefish
+    make install DESTDIR=/usr/src/pacstall/libcutefish
 }

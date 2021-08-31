@@ -28,12 +28,12 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR="$pkgdir"
+  make install DESTDIR="$pkgdir"
   
   # install doc
-  sudo install -Dm 644 -t "$pkgdir/usr/share/doc/$name" "../README.md"
+  install -Dm 644 -t "$pkgdir/usr/share/doc/$name" "../README.md"
   # install license
-  sudo install -Dm 644 -t "$pkgdir/usr/share/licenses/$name" "../LICENSE"
+  install -Dm 644 -t "$pkgdir/usr/share/licenses/$name" "../LICENSE"
 }
 
 removescript() {

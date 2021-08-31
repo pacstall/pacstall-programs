@@ -18,5 +18,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/$name
+    make install DESTDIR=/usr/src/pacstall/$name
 }

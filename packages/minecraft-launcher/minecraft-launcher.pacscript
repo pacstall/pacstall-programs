@@ -17,11 +17,11 @@ build() {
 }
 
 install() {
-        sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/bin
-        sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
-        sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/share/applications
+        mkdir -p /usr/src/pacstall/minecraft-launcher/usr/bin
+        mkdir -p /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
+        mkdir -p /usr/src/pacstall/minecraft-launcher/usr/share/applications
         chmod +x minecraft-launcher
-        sudo mv minecraft-launcher /usr/src/pacstall/minecraft-launcher/usr/bin
-        sudo mv minecraft-launcher.svg /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
-        sudo mv minecraft-launcher.desktop /usr/src/pacstall/minecraft-launcher/usr/share/applications
+        mv minecraft-launcher /usr/src/pacstall/minecraft-launcher/usr/bin
+        mv minecraft-launcher.svg /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
+        mv minecraft-launcher.desktop /usr/src/pacstall/minecraft-launcher/usr/share/applications
 }

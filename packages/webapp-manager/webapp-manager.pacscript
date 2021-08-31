@@ -21,8 +21,8 @@ build() {
 
 install() {
 	installdir=/usr/src/pacstall/webapp-manager
-	sudo mkdir -p $installdir
-	sudo cp -r usr etc $installdir
+	mkdir -p $installdir
+	cp -r usr etc $installdir
 }
 
 postinst() {

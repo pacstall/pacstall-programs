@@ -9,7 +9,7 @@ description="Distrotube's dmenu build"
 breaks="dmenu dmenu_run dmenu_path"
 
 prepare() {
-          true
+        true
 }
 
 build() {
@@ -17,6 +17,6 @@ build() {
 }
 
 install() {
-        sudo make install DESTDIR=/usr/src/pacstall/dmenu-distrotube
+        make install DESTDIR=/usr/src/pacstall/dmenu-distrotube
 }
 

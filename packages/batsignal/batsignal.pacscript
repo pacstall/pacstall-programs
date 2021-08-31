@@ -16,6 +16,6 @@ build() {
 }
 
 install() {
-	 sudo make install -j$(nproc) DESTDIR=/usr/src/pacstall/batsignal
+	make install -j$(nproc) DESTDIR=/usr/src/pacstall/batsignal
 
 }

@@ -22,5 +22,5 @@ build() {
 }
 
 install() {
-    sudo make install -j$(nproc) DESTDIR=/usr/src/pacstall/stellarium
+    make install -j$(nproc) DESTDIR=/usr/src/pacstall/stellarium
 }

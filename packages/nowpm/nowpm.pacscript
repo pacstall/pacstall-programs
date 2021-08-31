@@ -15,7 +15,7 @@ build() {
 }
 
 install() {
-    sudo mkdir -p /usr/src/pacstall/nowpm/usr/bin
+    mkdir -p /usr/src/pacstall/nowpm/usr/bin
     chmod +x nowpm
-    sudo mv nowpm /usr/src/pacstall/nowpm/usr/bin
+    mv nowpm /usr/src/pacstall/nowpm/usr/bin
 }

@@ -7,9 +7,9 @@ description="Chat for Communities and Friends"
 hash="adede954e9c696d96e254759b539527a24ab1d42f0d548c5c4309d1a3fc3c25e"
 
 prepare() {
-        sudo mkdir -p /usr/src/pacstall/discord/usr/share/discord/
-        sudo mkdir -p /usr/src/pacstall/discord/usr/share/applications/
-        sudo mkdir -p /usr/src/pacstall/discord/usr/share/icons/
+        mkdir -p /usr/src/pacstall/discord/usr/share/discord/
+        mkdir -p /usr/src/pacstall/discord/usr/share/applications/
+        mkdir -p /usr/src/pacstall/discord/usr/share/icons/
 }
 
 build() {
@@ -17,7 +17,7 @@ build() {
 }
 
 install() {
-        sudo mv discord.desktop /usr/src/pacstall/discord/usr/share/applications/
-        sudo cp discord.png /usr/src/pacstall/discord/usr/share/icons/
-        sudo mv ./* /usr/src/pacstall/discord/usr/share/discord/
+        mv discord.desktop /usr/src/pacstall/discord/usr/share/applications/
+        cp discord.png /usr/src/pacstall/discord/usr/share/icons/
+        mv ./* /usr/src/pacstall/discord/usr/share/discord/
 }

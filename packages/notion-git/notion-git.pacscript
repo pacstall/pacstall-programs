@@ -20,5 +20,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/notion-git
+    make install DESTDIR=/usr/src/pacstall/notion-git
 }

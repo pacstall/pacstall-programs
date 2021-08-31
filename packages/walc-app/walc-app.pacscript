@@ -26,7 +26,7 @@ build() {
 
 install() {
   # Install binary
-  sudo install -Dm755 "walc.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+  install -Dm755 "walc.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 }
 
 removescript() {

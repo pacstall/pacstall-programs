@@ -31,13 +31,13 @@ build() {
 
 install() {
     # Install license
-    sudo install -Dm644 "LICENSE-CLIENT" "LICENSE-LIB" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+    install -Dm644 "LICENSE-CLIENT" "LICENSE-LIB" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 
     # Install doc
-    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
+    install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
     # Install bemenu-git
-    sudo make install DESTDIR="${pkgdir}"
+    make install DESTDIR="${pkgdir}"
 }
 
 removescript() {
