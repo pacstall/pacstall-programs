@@ -16,7 +16,7 @@ version="$(pkgver)"
 
 prepare() {
     git fetch --all --tags --prune
-    git checkout tags/$version -b $version
+    git checkout "tags/${version}" -b "${version}"
 }
 
 build() {
