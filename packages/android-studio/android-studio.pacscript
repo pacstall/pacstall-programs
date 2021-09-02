@@ -1,9 +1,9 @@
 name="android-studio"
-version="2020.3.1.23"
+version="2020.3.1.24"
 url="https://redirector.gvt1.com/edgedl/android/studio/ide-zips/$version/android-studio-$version-linux.tar.gz"
 depends="libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386"
 description="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development."
-hash="5317a55d645098c22e79c3433f550893cbafd6ae53a527877ab1d3b2566cb21b"
+hash="f498ac0446b1fe32d9d5dda2b508049eb6732d9499619e2adf5ec9bb1166124d"
 removescript="yes"
 maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
 prepare() {
