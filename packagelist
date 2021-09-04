@@ -18,13 +18,14 @@ clib
 cmatrix
 conky-manager
 couture
-git-delta-deb
+dbeaver-ce-deb
 discord
 discord-canary
 dmenu
 dmenu-distrotube
 drawio-desktop-deb
 dropbox-deb
+duf-deb
 dunst
 emacs
 emacs-git
@@ -32,9 +33,11 @@ epson-inkjet-printer-stylus-nx110-series-deb
 exa
 exploitdb
 fastfetch-git
+fblog-deb
 fm6000
 freetube-deb
 git
+git-delta-deb
 gnome-shell-extension-installer
 gnome-tweaks
 google-chrome-deb
