@@ -1,0 +1,7 @@
+name="mullvad-vpn-deb"
+gives="mullvad-vpn"
+version="2021.4"
+url="https://mullvad.net/media/app/MullvadVPN-${version}_amd64.deb"
+description="The Mullvad VPN client app for desktop."
+hash="2671c6e2a0fa9c7da5ed10981e66fb52cce7d26accb05b4c1d0ddc2a95dcab4d"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
