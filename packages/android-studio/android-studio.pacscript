@@ -21,7 +21,7 @@ install() {
     cp -r license "$STOWDIR/$name/opt/android-studio/"
     cp -r plugins "$STOWDIR/$name/opt/android-studio/"
     # Creating a launcher in $PATH
-    sudo ln -s "$STOWDIR/$name/opt/android-studio/bin/studio.sh" "/usr/bin/android-studio"
+    ln -s "$STOWDIR/$name/opt/android-studio/bin/studio.sh" "/usr/bin/android-studio"
 }
 postinst(){
     # Creating .desktop file
@@ -33,14 +33,14 @@ postinst(){
     echo 'Icon=/opt/android-studio/bin/studio.png'          >> /usr/share/applications/android-studio.desktop
     echo 'Exec=/usr/bin/android-studio'                     >> /usr/share/applications/android-studio.desktop
     echo 'Name=Android Studio'                              >> /usr/share/applications/android-studio.desktop
-    sudo update-desktop-database -q
+    update-desktop-database -q
     # Finished installation
     fancy_message info "Finished installation. Please start Android Studio to configure it!"
 }
 removescript(){
     # Removing .desktop file
-    sudo rm /usr/share/applications/android-studio.desktop
-    sudo update-desktop-database -q
+    rm /usr/share/applications/android-studio.desktop
+    update-desktop-database -q
     # Removing launcher
-    sudo rm /usr/bin/android-studio
+    rm /usr/bin/android-studio
 }
