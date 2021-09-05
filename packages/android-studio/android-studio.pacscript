@@ -21,7 +21,7 @@ install() {
     cp -r license "$STOWDIR/$name/opt/android-studio/"
     cp -r plugins "$STOWDIR/$name/opt/android-studio/"
     # Creating a launcher in $PATH
-    ln -s "$STOWDIR/$name/opt/android-studio/bin/studio.sh" "/usr/bin/android-studio"
+    sudo ln -s "$STOWDIR/$name/opt/android-studio/bin/studio.sh" "/usr/bin/android-studio"
 }
 postinst(){
     # Creating .desktop file
