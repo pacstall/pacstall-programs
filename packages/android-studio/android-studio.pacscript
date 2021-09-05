@@ -42,5 +42,5 @@ removescript(){
     rm /usr/share/applications/android-studio.desktop
     update-desktop-database -q
     # Removing launcher
-    rm /usr/bin/android-studio
+    sudo rm /usr/bin/android-studio
 }
