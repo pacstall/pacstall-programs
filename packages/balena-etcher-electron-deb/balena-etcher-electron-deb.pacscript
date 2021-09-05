@@ -1,0 +1,8 @@
+name="balena-etcher-electron-deb"
+version="1.5.122"
+pkgname="balena-etcher-electron"
+gives="balena-etcher-electron"
+url="https://github.com/balena-io/etcher/releases/download/v${version}/balena-etcher-electron_${version}_amd64.deb"
+description="Flash OS images to SD cards & USB drives, safely and easily."
+hash="4dab329e4cf2cbc5086a5427eaa848b8f5837e57f8a4befa0f67338048a3acfc"
+maintainer="KwonNam Son <kwon37xi@gmail.com>"
