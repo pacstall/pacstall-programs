@@ -1,0 +1,7 @@
+name="virtualbox-deb"
+gives="virtualbox"
+version="6.1_6.1.26-145957"
+url="https://download.${gives}.org/${gives}/${version}/${gives}-${version}_Ubuntu_eoan_amd64.deb"
+description="VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use."
+hash="4a2a68bece2e115e31d2428295be3d8844042de3435fc701943f23cc46ea341f"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
