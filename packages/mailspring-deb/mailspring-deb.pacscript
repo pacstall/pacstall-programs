@@ -1,5 +1,5 @@
 name="mailspring-deb"
-version="1.9.1"
+version="1.9.2"
 url="https://github.com/Foundry376/Mailspring/releases/download/$version/mailspring-$version-amd64.deb"
 gives="mailspring"
 description="A beautiful, fast and fully open source mail client."
