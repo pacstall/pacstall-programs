@@ -3,7 +3,7 @@ version="1.0"
 url="https://github.com/zcot/conky-manager2.git"
 build_depends="valac libgee-0.8-dev libgtk-3-dev libjson-glib-dev gettext libgettextpo-dev p7zip-full imagemagick
 "
-depends=""
+depends="conky rsync"
 description="Simple tool for managing Conky configs"
 
 prepare() {
