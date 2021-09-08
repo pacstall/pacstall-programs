@@ -28,7 +28,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-  true
+  sudo pip3 install --upgrade cmake
 }
 
 build() {
