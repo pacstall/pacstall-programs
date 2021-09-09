@@ -33,14 +33,14 @@ postinst(){
     echo 'Icon=/opt/android-studio/bin/studio.png'          >> /usr/share/applications/android-studio.desktop
     echo 'Exec=/usr/bin/android-studio'                     >> /usr/share/applications/android-studio.desktop
     echo 'Name=Android Studio'                              >> /usr/share/applications/android-studio.desktop
-    update-desktop-database -q
+    sudo update-desktop-database -q
     # Finished installation
     fancy_message info "Finished installation. Please start Android Studio to configure it!"
 }
 removescript(){
     # Removing .desktop file
     rm /usr/share/applications/android-studio.desktop
-    update-desktop-database -q
+    sudo update-desktop-database -q
     # Removing launcher
     sudo rm /usr/bin/android-studio
 }
