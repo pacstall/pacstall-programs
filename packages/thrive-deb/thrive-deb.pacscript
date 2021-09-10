@@ -1,4 +1,5 @@
 name="thrive"
+gives="thrive-launcher"
 version="1.2.8"
 description="Thrive launcher is a desktop application that manages downloading and installing the game releases"
 url="https://github.com/Revolutionary-Games/Thrive-Launcher/releases/download/v${version}/thrive-launcher_${version}_amd64.deb"
