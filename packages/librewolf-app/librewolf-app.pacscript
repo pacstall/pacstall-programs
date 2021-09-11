@@ -26,7 +26,7 @@ build() {
 
 install() {
   # Install appimage
-  sudo install -Dm755 "LibreWolf-${version}.x86_64.AppImage" "${pkgdir}/usr/bin/"
+  sudo install -Dm755 "LibreWolf-${version}.x86_64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 }
 
 removescript() {
