@@ -32,5 +32,10 @@ install() {
 removescript() {
   # Remove .desktop file
   rm -f ~/.local/share/applications/userapp-LibreWolf-R8NL90.desktop
+
+  # Delete .librewolf
+  if ask "Do you want to delete ~/.librewolf/ files?" Y; then
+    rm -rf ~/.librewolf/
+  fi
 }
 # vim:set ft=sh ts=2 sw=2 et:
