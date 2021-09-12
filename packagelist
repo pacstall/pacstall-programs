@@ -20,7 +20,7 @@ brave-browser-nightly-deb
 caprine-deb
 clib
 cmatrix
-conky-manager
+conky-manager-zcot-git
 couture
 cutefish-calculator
 cutefish-core
@@ -47,6 +47,7 @@ emacs-git
 epson-inkjet-printer-stylus-nx110-series-deb
 exa
 exploitdb
+fast
 fastfetch-git
 fblog-deb
 fishui
@@ -75,6 +76,7 @@ lemonbar-xft-git
 libcutefish
 libresprite-git
 libressl
+librewolf-app
 lrz-syncshare-deb
 lsd-deb
 lutris-deb
