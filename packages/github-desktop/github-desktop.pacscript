@@ -1,4 +1,4 @@
-name="desktop"
+name="github-desktop"
 pkgname="github-desktop"
 version="2.9.3"
 url="https://github.com/shiftkey/desktop/releases/download/release-${version}-linux1/GitHubDesktop-linux-${version}-linux1.deb"
