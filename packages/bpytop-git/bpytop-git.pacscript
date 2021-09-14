@@ -13,7 +13,7 @@ version="$(pkgver)"
 removescript="yes"
 
 prepare() {
-    sudo pip3 install psutil
+    sudo pip3 install --upgrade psutil
 }
 
 build() {
