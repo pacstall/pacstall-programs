@@ -1,0 +1,7 @@
+name="lutris-deb"
+version="v0.5.8.4"
+gives="lutris"
+url="https://github.com/lutris/lutris/releases/download/v0.5.8.4/lutris_0.5.8.4_all.deb"
+description="open source gaming platform"
+hash="9cb1f12dd3626bfb17104688041beecb635404018c9a720f5f51fd8ff7c3a5e0" 
+maintainer="D-Brox <BroxZuka@protonmail.com>"

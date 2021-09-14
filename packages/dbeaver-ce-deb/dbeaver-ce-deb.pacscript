@@ -1,0 +1,8 @@
+name="dbeaver-ce-deb"
+pkgname="dbeaver-ce"
+version="21.2.0"
+gives="dbeaver-ce"
+url="https://github.com/dbeaver/dbeaver/releases/download/${version}/dbeaver-ce_${version}_amd64.deb"
+description="Free universal database tool and SQL client"
+hash="f72ea76c2b81cd337347cb8d5ac7e7c81351a5dad5500a10df63f9022a94d3ca"
+maintainer="KwonNam Son <kwon37xi@gmail.com>"
