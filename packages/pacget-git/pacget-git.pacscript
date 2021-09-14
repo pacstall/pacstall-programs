@@ -9,7 +9,6 @@ url="https://gitlab.com/Erik.Lundstedt/pacget.git"
 
 license="Don't Be a Jerk"
 depends="fzf curl bash"
-gives="$pkgname"
 description="A fully foss, lightweight fuzzysearching TUI frontend for pacstall using fzf"
 removescript="yes"
 
@@ -32,12 +31,12 @@ build() {
 }
 #this just copies the files over and makes the file executable
 install() {
-	install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
-	install -Dm755 "pacget" "/usr/src/$name/pacget/usr/bin/pacget"
+	sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+	sudo install -Dm755 "pacget" "/usr/src/$name/pacget/usr/bin/pacget"
 }
 
 removescript() {
-	rm -rf /usr/src/pacstall/pacget
-	rm -rf "/usr/share/licenses/${pkgname}"
+	sudo rm -rf /usr/src/pacstall/pacget
+	sudo rm -rf "/usr/share/licenses/${pkgname}"
 }
 # vim:set ft=sh ts=4 sw=4 noet:
