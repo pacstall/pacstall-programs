@@ -36,7 +36,6 @@ install() {
 }
 
 removescript() {
-	sudo rm -rf /usr/src/pacstall/pacget
 	sudo rm -rf "/usr/share/licenses/${pkgname}"
 }
 # vim:set ft=sh ts=4 sw=4 noet:
