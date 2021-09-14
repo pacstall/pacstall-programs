@@ -1,0 +1,7 @@
+name="github-desktop"
+pkgname="github-desktop"
+version="2.9.3"
+url="https://github.com/shiftkey/desktop/releases/download/release-${version}-linux1/GitHubDesktop-linux-${version}-linux1.deb"
+description="GitHub Desktop is an open source Electron-based GitHub app. It is written in TypeScript and uses React."
+hash="7b75c38d543955cb12fcc1b136c0ecda1efb8e8640cfc98d9fe4b0aea894011d"
+maintainer="TwilightBlood <hwengerstickel@pm.me>"
