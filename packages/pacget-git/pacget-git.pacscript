@@ -32,7 +32,7 @@ build() {
 #this just copies the files over and makes the file executable
 install() {
 	sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
-	sudo install -Dm755 "pacget" "/usr/src/$name/pacget/usr/bin/pacget"
+	sudo install -Dm755 "pacget" "${pkgdir}/usr/bin/pacget"
 }
 
 removescript() {
