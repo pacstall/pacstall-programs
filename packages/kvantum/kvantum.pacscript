@@ -16,7 +16,7 @@ prepare() {
 }
 
 build() {
-        cmake -j$(nproc) ..
+        cmake ..
         make -j$(nproc)
 }
 
