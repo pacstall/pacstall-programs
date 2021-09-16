@@ -34,7 +34,6 @@ cutefish-settings
 cutefish-statusbar
 cutefish-wallpapers
 dbeaver-ce-deb
-github-desktop
 discord
 discord-canary
 dmenu
@@ -56,6 +55,7 @@ fm6000
 freetube-deb
 git
 git-delta-deb
+github-desktop
 gnome-shell-extension-installer
 gnome-tweaks
 google-chrome-deb
@@ -119,8 +119,8 @@ shell-color-scripts
 smartgit
 soundux
 st-distrotube
-stellarium
 st-lukesmith
+stellarium
 surf
 surf-distrotube
 telegram-bin
