@@ -1,0 +1,7 @@
+name="microsoft-edge-dev-deb"
+gives="microsoft-edge-dev"
+version="95.0.1011.1-1"
+url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${version}_amd64.deb"
+description="Want to see what we were working on last week? Our Dev channel offers the latest builds available for Linux."
+hash="3a9d318081b471f4d5359c8bb54a3c689acd866705bde9ca2c2b8ed92348979e"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

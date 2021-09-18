@@ -1,0 +1,7 @@
+name="brave-browser-nightly-deb"
+version="1.31.41"
+url="https://github.com/brave/brave-browser/releases/download/v${version}/brave-browser-nightly_${version}_amd64.deb"
+gives="brave-browser-nightly"
+description="The Brave browser is a fast, private and secure web browser for PC, Mac and mobile. This is the nightly build of Brave Browser"
+hash="d6ecc93c6a0b50cd5a225ac0d4e8440f926a894eadca3255230b1351324dd6d6"
+maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"

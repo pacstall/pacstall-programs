@@ -1,0 +1,8 @@
+name="duf-deb"
+pkgname="duf"
+version="0.6.2"
+gives="duf"
+url="https://github.com/muesli/duf/releases/download/v${version}/duf_${version}_linux_amd64.deb"
+description="Disk Usage/Free Utility - a better 'df' alternative"
+hash="a73f3190aa0e6e78d3ee55d51f680df8c8fa2045ee1ac862c4afe662af19759f"
+maintainer="KwonNam Son <kwon37xi@gmail.com>"

@@ -1,0 +1,7 @@
+name="microsoft-edge-beta-deb"
+gives="microsoft-edge-beta"
+version="94.0.992.19-1"
+url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${version}_amd64.deb"
+description="The Beta channel is the most stable Microsoft Edge preview experience."
+hash="eafefe618a2212cf1d2cc8d2a9cd1c00155248f71a221e14bf1a72011e614ad2"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
