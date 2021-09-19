@@ -1,7 +1,7 @@
 name="cantata-deb"
 pkgname="cantata-deb"
 version="2.4.2"
-url="https://launchpad.net/~ubuntuhandbook1/+archive/ubuntu/cantata-qt/+files/cantata_2.4.2-0build1~ubuntu20.10_amd64.deb"
+url="https://launchpad.net/~ubuntuhandbook1/+archive/ubuntu/cantata-qt/+files/cantata_2.4.0-0build1~ubuntu18.04_amd64.deb"
 license="GPL"
 depends="mpd media-player-info fonts-font-awesome libcddb2 libebur128-1 libmusicbrainz5cc2v5 libqt5multimedia5"
 gives="cantata-deb"
