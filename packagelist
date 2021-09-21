@@ -90,6 +90,7 @@ micro
 microsoft-edge-beta-deb
 microsoft-edge-dev-deb
 minecraft-launcher
+moka-icon-theme
 ms-teams-deb
 mullvad-vpn-deb
 mutt-wizard
@@ -123,8 +124,8 @@ shell-color-scripts
 smartgit
 soundux
 st-distrotube
-st-lukesmith
 stellarium
+st-lukesmith
 surf
 surf-distrotube
 telegram-bin
@@ -141,6 +142,7 @@ vim
 viper4linux
 virtualbox-deb
 vivaldi-deb
+vivarium
 vscode-deb
 vscodium-deb
 waf-git
