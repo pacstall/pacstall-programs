@@ -86,6 +86,8 @@ lsd-deb
 lutris-deb
 lyrebird
 maitreya8-deb
+makedeb
+makedeb-makepkg
 micro
 microsoft-edge-beta-deb
 microsoft-edge-dev-deb
