@@ -1,9 +1,17 @@
 name="cantata-deb"
 pkgname="cantata-deb"
 version="2.4.2"
-url="https://launchpad.net/~ubuntuhandbook1/+archive/ubuntu/cantata-qt/+files/cantata_2.4.0-0build1~ubuntu18.04_amd64.deb"
+url="https://launchpad.net/~ubuntuhandbook1/+archive/ubuntu/cantata-qt"
 license="GPL"
 depends="mpd media-player-info fonts-font-awesome libcddb2 libebur128-1 libmusicbrainz5cc2v5 libqt5multimedia5"
 gives="cantata-deb"
 description="Cantata is a graphical client for MPD. It is support for Linux, MacOSX, and Windows, Multiple MPD collections and it has a Highly customizable layout."
-hash="9f9a1f674aca7b2313fa9888ac8e488fa6c0bbb6e4339f1a9a882b0687105508"
+
+prepare() {
+          sudo add-apt-repository ppa:ubuntuhandbook1/cantata-qt -y
+          sudo apt-get update
+}
+
+install() {
+    sudo pckon install cantata -y
+}
