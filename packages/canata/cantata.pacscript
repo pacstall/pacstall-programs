@@ -6,7 +6,6 @@ depends="mpd media-player-info fonts-font-awesome libcddb2 qttools5-dev qtbase5-
 description="Cantata is a graphical client for MPD. It is support for Linux, MacOSX, and Windows, Multiple MPD collections and it has a Highly customizable layout."
 maintainer="ty1118 <tylerbj16@gmail.com>"
 hash="3ed25d0c838720af7ed08b89a30f3e05d6952d40a5f520f29b3558b2eacdec82"
-
 prepare() {
     mkdir build
     cd build
