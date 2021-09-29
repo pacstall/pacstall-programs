@@ -16,7 +16,10 @@ bitwig-studio-3-deb
 blang-git
 bpytop-git
 brave-browser-beta-deb
+brave-browser-deb
 brave-browser-nightly-deb
+brave-keyring-deb
+cantata
 caprine-deb
 clib
 cmatrix
@@ -53,6 +56,7 @@ fblog-deb
 fishui
 fm6000
 freetube-deb
+fsearch-git
 git
 git-delta-deb
 github-desktop
@@ -83,10 +87,13 @@ lsd-deb
 lutris-deb
 lyrebird
 maitreya8-deb
+makedeb
+makedeb-makepkg
 micro
 microsoft-edge-beta-deb
 microsoft-edge-dev-deb
 minecraft-launcher
+moka-icon-theme
 ms-teams-deb
 mullvad-vpn-deb
 mutt-wizard
@@ -120,13 +127,14 @@ shell-color-scripts
 smartgit
 soundux
 st-distrotube
-st-lukesmith
 stellarium
+st-lukesmith
 surf
 surf-distrotube
 telegram-bin
 thrive-deb
 tor
+touchegg-deb
 tuner
 tuner-git
 ulauncher-deb
@@ -137,6 +145,7 @@ vim
 viper4linux
 virtualbox-deb
 vivaldi-deb
+vivarium
 vscode-deb
 vscodium-deb
 waf-git
