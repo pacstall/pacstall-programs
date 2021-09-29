@@ -1,0 +1,7 @@
+name="brave-keyring-deb"
+gives="brave-keyring"
+version="1.12-1"
+url="https://brave-browser-apt-release.s3.brave.com/pool/main/b/${gives}/${gives}_${version}.deb"
+description="Brave Browser keyring and repository files as a necessary dependency for brave-browser-deb"
+hash="ea09c830fd538ae0a9a04c9756bcd762da02faa5b8973a072979f3007f28f29d"
+maintainer="Zahrun <Zahrun@github.com>"
