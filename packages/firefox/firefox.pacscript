@@ -18,7 +18,7 @@ build() {
 }
 
 install() {
-    sudo mv ./browser/chrome/icons/default/default128.png /usr/src/pacstall/firefox/usr/share/icons
+    sudo mv ./browser/chrome/icons/default/default128.png /usr/src/pacstall/firefox/usr/share/pixmaps
     sudo mv ./firefox.desktop /usr/src/pacstall/firefox/usr/share/applications
     sudo mv ./* /usr/src/pacstall/firefox/usr/bin
 }
