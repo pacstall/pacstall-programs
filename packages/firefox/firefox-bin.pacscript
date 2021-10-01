@@ -10,7 +10,7 @@ prepare() {
     sudo mkdir -p /usr/src/pacstall/firefox-bin/usr/share/icons
     sudo mkdir -p /usr/src/pacstall/firefox-bin/usr/bin
     sudo mkdir -p /usr/src/pacstall/firefox-bin/usr/share/applications
-    wget -q https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/firefox/firefox.desktop
+    wget -q https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/firefox/firefox-bin.desktop
 }
 
 build() {
