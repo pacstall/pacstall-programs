@@ -7,7 +7,7 @@ description="Safe and easy web browser from Mozilla"
 hash="a3ba62122a6cde1d7d2ebf96e765ea57ea3e9a312d2161e0ac70923946844689"
 
 prepare() {
-    sudo mkdir -p /usr/src/pacstall/firefox-bin/usr/share/icons
+    sudo mkdir -p /usr/src/pacstall/firefox-bin/usr/share/pixmaps
     sudo mkdir -p /usr/src/pacstall/firefox-bin/usr/bin
     sudo mkdir -p /usr/src/pacstall/firefox-bin/usr/share/applications
     wget -q https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/firefox/firefox-bin.desktop
