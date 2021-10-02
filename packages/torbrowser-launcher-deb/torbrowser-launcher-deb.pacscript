@@ -1,0 +1,7 @@
+name="torbrowser-launcher-deb"
+gives="torbrowser-launcher"
+version="0.3.5-1"
+url="https://github.com/WRM-42/${name}/raw/main/${gives}_${version}_all.deb"
+description="Securely and easily download, verify, install, and launch Tor Browser in Linux."
+hash="4b9ecf3881eb46fb44396e3130305e17cf9c6474114bc2721802283c49919dd1"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
