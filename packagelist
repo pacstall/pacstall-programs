@@ -17,6 +17,7 @@ blang-git
 bpytop-git
 brave-browser-beta-deb
 brave-browser-deb
+brave-browser-dev-deb
 brave-browser-nightly-deb
 brave-keyring-deb
 cantata
@@ -45,6 +46,7 @@ drawio-desktop-deb
 dropbox-deb
 duf-deb
 dunst
+electronmail-deb
 emacs
 emacs-git
 epson-inkjet-printer-stylus-nx110-series-deb
@@ -70,6 +72,7 @@ heroic-games-launcher-deb
 htop
 hyperfine-bin
 i3-gaps
+i3lock-color
 insync-deb
 ivpn-deb
 ivpn-ui-deb
@@ -134,6 +137,8 @@ surf-distrotube
 telegram-bin
 thrive-deb
 tor
+torbrowser-launcher-deb
+torguard-deb
 touchegg-deb
 tuner
 tuner-git

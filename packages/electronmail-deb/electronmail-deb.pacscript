@@ -1,0 +1,7 @@
+name="electronmail-deb"
+gives="electron-mail"
+version="4.12.9"
+url="https://github.com/vladimiry/ElectronMail/releases/download/v${version}/${gives}-${version}-linux-amd64.deb"
+description="Unofficial ProtonMail Desktop App."
+hash="0a09bd23fd2ddd0cd3f797b698f3030971c4c3c189e20dd67e9868cb17d33511"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
