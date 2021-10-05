@@ -18,7 +18,7 @@ postinst(){
 		focal | groovy)
 			;;
 		*)
-			sudo sed -i s/$codename/groovy/g /etc/apt/sources.list.d/gezakovacs-ubuntu-ppa-$codename.list
+			sudo sed -i "s/$codename/groovy/g" "/etc/apt/sources.list.d/gezakovacs-ubuntu-ppa-$codename.list"
 			sudo apt update
 			sudo apt install -y libqtgui4
 			;;
