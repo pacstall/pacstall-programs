@@ -8,10 +8,10 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="librewolf-app"
 pkgname="librewolf"
-version="92.0-1"
+version="92.0.1-1"
 description="A fork of Firefox, focused on privacy, security and freedom."
-url="https://gitlab.com/librewolf-community/browser/appimage/-/jobs/1580351789/artifacts/raw/LibreWolf-${version}.x86_64.AppImage"
-hash="41569a9b5c1f58ab4dc26ef72d0c8363c43b5d33082046de5ebaf10c62a2e1d8"
+url="https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/latest/LibreWolf.x86_64.AppImage"
+hash="e9a7893c3259a3dbe87ee7aa8993d89d6ba96b399e8932b149ea3cd3860f036c"
 breaks="${pkgname}-deb ${pkgname}-bin ${pkgname}-git"
 removescript="yes"
 pkgdir="${STOWDIR}/${name}"
@@ -26,7 +26,7 @@ build() {
 
 install() {
   # Install appimage
-  sudo install -Dm755 "LibreWolf-${version}.x86_64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "LibreWolf.x86_64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
   
   # Download icon
   wget -q https://librewolf-community.gitlab.io/images/logo.png
