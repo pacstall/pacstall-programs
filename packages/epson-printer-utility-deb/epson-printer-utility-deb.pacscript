@@ -13,7 +13,7 @@ postinst(){
 	sudo systemctl enable ecbd.service
 	sudo systemctl start ecbd.service
 	# fix ppa if ubuntu release is posterior to groovy
-	codename=`lsb_release -cs`
+	codename=$(lsb_release -cs)
 	case $codename in
 		focal | groovy)
 			;;
