@@ -11,9 +11,9 @@ prepare() {
 }
 
 build() {
-    make -j$(nproc)
+	true
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/pfetch
+	sudo install -Dm755 $name -t  "$STOWDIR/$name/usr/bin"
 }
