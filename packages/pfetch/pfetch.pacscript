@@ -5,7 +5,7 @@ build_depends=""
 depends=""
 breaks="pfetch"
 description="A lightweight and simple fetch tool"
-hash="625c8cfd62279f37dea0849aee7c9fcc89c83f6215ff8540c198ebdc7c470653"
+hash="ec85100a912c0bdd06a82a9647d19a5c6d1d51c3a262d60b9ac8f17570fbfb39"
 prepare() {
 	true
 }
