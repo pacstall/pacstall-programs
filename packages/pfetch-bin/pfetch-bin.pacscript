@@ -16,5 +16,5 @@ build() {
 }
 
 install() {
-	sudo install -Dm755 $name -t  "$STOWDIR/$name/usr/bin"
+	sudo install -Dm755 $pkgname -t  "$STOWDIR/$name/usr/bin"
 }
