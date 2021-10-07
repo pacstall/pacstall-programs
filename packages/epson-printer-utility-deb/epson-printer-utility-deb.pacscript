@@ -9,6 +9,9 @@ hash="417b637173c0b866a94eb5d9785aecbcd10fc99fd1d7149eb49f02f450e6b61f"
 maintainer="Zahrun <Zahrun@github.com>"
 
 postinst(){
+	# install .desktop file
+	wget -q https://gist.github.com/Zahrun/0759d7356d7b55985292b65642e976f6/raw/c9ef796e550812456dc2990879118ad1a481d792/epson-printer-utility.desktop
+	sudo install -Dm644 "$gives.desktop" "$STOWDIR/$name/usr/share/applications/"
 	# enable service to avoid communication error
 	sudo systemctl enable ecbd.service
 	sudo systemctl start ecbd.service
