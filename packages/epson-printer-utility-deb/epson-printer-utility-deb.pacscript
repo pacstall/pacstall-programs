@@ -30,4 +30,6 @@ postinst(){
 
 removescript(){
 	sudo rm /usr/share/applications/${gives}.desktop
+	sudo systemctl disable ecbd.service
+	sudo systemctl stop ecbd.service
 }
