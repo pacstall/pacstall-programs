@@ -14,6 +14,6 @@ build() {
 }
 
 install() {
-	sudo install -Dm755 $pkgname -t  "$STOWDIR/$name/usr/bin"
+	sudo install -Dm755 $pkgname -t "$STOWDIR/$name/usr/bin"
 	sudo install -Dm644 "LICENSE.md" -t "$STOWDIR/$name/usr/share/licenses/$pkgname"
 }
