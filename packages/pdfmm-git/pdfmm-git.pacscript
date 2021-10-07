@@ -1,6 +1,6 @@
 name="pdfmm-git"
 pkgname="pdfmm"
-description="pdfmm (for \"pdf minus minus\", or \"pdf--\") is a graphical assistant to reduce the size of PDF files."
+description="pdfmm (for 'pdf minus minus', or 'pdf--') is a graphical assistant to reduce the size of PDF files."
 url="https://github.com/jpfleury/${pkgname}/archive/master.zip"
 depends="bash sed zenity ghostscript"
 breaks="${pkgname}"
