@@ -11,7 +11,7 @@ maintainer="Zahrun <Zahrun@github.com>"
 postinst(){
 	# install .desktop file
 	wget -q https://gist.github.com/Zahrun/0759d7356d7b55985292b65642e976f6/raw/c9ef796e550812456dc2990879118ad1a481d792/epson-printer-utility.desktop
-	sudo install -Dm644 "$gives.desktop" "$STOWDIR/$name/usr/share/applications/"
+	sudo install -Dm644 "$gives.desktop" "/usr/share/applications/"
 	# enable service to avoid communication error
 	sudo systemctl enable ecbd.service
 	sudo systemctl start ecbd.service
@@ -22,8 +22,12 @@ postinst(){
 			;;
 		*)
 			sudo sed -i "s/$codename/groovy/g" "/etc/apt/sources.list.d/gezakovacs-ubuntu-ppa-$codename.list"
-			sudo apt update
-			sudo apt install -y libqtgui4
 			;;
 	esac
+	sudo apt update
+	sudo apt install -y libqtgui4
+}
+
+removescript(){
+	sudo rm /usr/share/applications/${gives}.desktop
 }
