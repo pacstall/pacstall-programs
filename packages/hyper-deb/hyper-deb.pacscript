@@ -1,0 +1,6 @@
+name="hyper-deb"
+gives="hyper"
+url="https://github.com/vercel/hyper/releases/download/v3.1.4/hyper_3.1.4_amd64.deb"
+version="3.1.4"
+hash="e02d2fc789bfa23389979a309ec6dab1216222b27d91f2495a1d32e23fc31884"
+maintainer="TwilightBlood <hwengerstickel@pm.me>"
