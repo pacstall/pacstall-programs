@@ -7,7 +7,7 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="uwufetch"
-version="1.6"
+version="1.7"
 pkgdir="/usr/src/pacstall/${name}"
 url="https://github.com/TheDarkBug/${name}/archive/refs/tags/${version}.zip"
 description="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
@@ -15,7 +15,7 @@ build_depends="gcc"
 optdepends=("viu: image preview"
 "lshw: hardware info")
 breaks="${name}-git ${name}-bin"
-hash="6741bdc0f7f0ca4ebd46a38f02672d412086f7017242aff1f2bf4d872c417a9a"
+hash="ed737f29442db0b82def11ba2902f136c8205750493d4b5222639be071c5a3c3"
 removescript="yes"
 
 prepare() {
