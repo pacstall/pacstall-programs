@@ -13,6 +13,7 @@ batsignal
 bemenu-git
 bitwarden-deb
 bitwig-studio-3-deb
+bitwig-studio-deb
 blang-git
 bpytop-git
 brave-browser-beta-deb
@@ -42,6 +43,7 @@ discord
 discord-canary
 dmenu
 dmenu-distrotube
+dotdrop
 drawio-desktop-deb
 dropbox-deb
 duf-deb
@@ -71,6 +73,7 @@ grive2
 gtkhash
 heroic-games-launcher-deb
 htop
+hyper-deb
 hyperfine-bin
 i3-gaps
 i3lock-color
@@ -93,6 +96,7 @@ lyrebird
 maitreya8-deb
 makedeb
 makedeb-makepkg
+mangohud
 micro
 microsoft-edge-beta-deb
 microsoft-edge-dev-deb
@@ -109,7 +113,10 @@ nofetch
 notion-git
 nowpm
 nyxt-deb
+obs-backgroundremoval
+obs-backgroundremoval-git
 onefetch-bin
+onnxruntime-1-7-0-bin
 opendoas-git
 opensnitch-deb
 opensnitch-ui-deb
@@ -118,7 +125,7 @@ pacget-git
 panagement
 paper-icon-theme
 pdfmm-git
-pfetch
+pfetch-bin
 pipewire
 planner-git
 polybar
@@ -135,8 +142,10 @@ stellarium
 st-lukesmith
 surf
 surf-distrotube
+suru-icon-theme
 telegram-bin
 thrive-deb
+tmux
 tor
 torbrowser-launcher-deb
 torguard-deb
