@@ -1,0 +1,7 @@
+name="bitwig-studio-deb"
+gives="bitwig-studio"
+version="4.0.4"
+url="https://downloads-eu.bitwig.com/stable/${version}/${gives}-${version}.deb"
+description="Digital audio workstation for music production, remixing and live performance"
+hash="437043d67372c000f386ada82e84a9bbbb0aa8f443aa16642f6d94b8135cd3e9"
+maintainer="Zahrun <Zahrun@github.com>"

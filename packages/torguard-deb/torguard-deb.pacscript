@@ -1,0 +1,7 @@
+name="torguard-deb"
+gives="torguard"
+version="4.7.5"
+url="https://${gives}.net/downloads/new/${gives}-latest-amd64.deb"
+description="TorGuard VPN Software."
+hash="f6706b70c8a8438d96e7080cd7838db4f591645a4991bab74e73d749aa40bc05"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
