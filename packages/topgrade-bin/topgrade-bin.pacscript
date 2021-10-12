@@ -6,7 +6,7 @@ description="Upgrades everything on your system"
 hash="f2f61d5833030ff545dedd42a65d7d75e510017de5748da3dd6a9bd6fb32ff52"
 
 prepare() {
-        true
+	true
 }
 
 build() {
@@ -14,5 +14,5 @@ build() {
 }
 
 install() {
-        sudo install -Dm755 "$pkgname" -t "$STOWDIR/$name/usr/bin"
+	sudo install -Dm755 "$pkgname" -t "$STOWDIR/$name/usr/bin"
 }
