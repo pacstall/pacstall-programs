@@ -1,6 +1,7 @@
 name='spotify-client-deb'
 gives='spotify'
-breaks='spotify-git spotify-app spotify-bin spotify'
+pkgname='spotify-client'
+breaks="${pkgname} ${pkgname}-git ${pkgname}-app ${pkgname}-bin spotify"
 version='1:1.1.68.632.g2b11de83'
 url='http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${version}_amd64.deb'
 description='Spotify streaming music client'
