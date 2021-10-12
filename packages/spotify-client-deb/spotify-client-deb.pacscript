@@ -1,5 +1,6 @@
 name='spotify-client-deb'
 gives='spotify-client'
+breaks='spotify'
 version='1:1.1.68.632.g2b11de83'
 url='http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.1.68.632.g2b11de83_amd64.deb'
 description='Spotify streaming music client'
