@@ -17,7 +17,7 @@ build() {
 install() {
 	sudo install -Dm755 "lib/lib${pkgname}.so.${version}" -t "$STOWDIR/$name/usr/local/lib"
 	cd $STOWDIR/$name/usr/local/lib
-	sudo rm "lib${pkgname}.so"
+	sudo rm "lib${pkgname}.so" 2> /dev/null
 	sudo ln -s "./lib${pkgname}.so.${version}" "lib${pkgname}.so"
 	cd - > /dev/null
 	rm lib/*
