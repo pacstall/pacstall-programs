@@ -24,15 +24,7 @@ install() {
     sudo ln -s "$STOWDIR/$name/opt/android-studio/bin/studio.sh" "/usr/bin/android-studio"
 }
 postinst(){
-    # Creating .desktop file
-    echo '#!/usr/bin/env xdg-open'                          >  /usr/share/applications/android-studio.desktop
-    echo '[Desktop Entry]'                                  >> /usr/share/applications/android-studio.desktop
-    echo 'Version=2020.3.1.22'                              >> /usr/share/applications/android-studio.desktop
-    echo 'Type=Application'                                 >> /usr/share/applications/android-studio.desktop
-    echo 'Terminal=false'                                   >> /usr/share/applications/android-studio.desktop
-    echo 'Icon=/opt/android-studio/bin/studio.png'          >> /usr/share/applications/android-studio.desktop
-    echo 'Exec=/usr/bin/android-studio'                     >> /usr/share/applications/android-studio.desktop
-    echo 'Name=Android Studio'                              >> /usr/share/applications/android-studio.desktop
+    wget https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/android-studio/android-studio.desktop -O /usr/src/pacstall/usr/share/applications/android-studio.desktop
     sudo update-desktop-database -q
     # Finished installation
     fancy_message info "Finished installation. Please start Android Studio to configure it!"
