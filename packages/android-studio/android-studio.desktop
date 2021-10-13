@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=2020.3.1.22
+Type=Application
+Terminal=false
+Icon=/opt/android-studio/bin/studio.png
+Exec=/usr/bin/android-studio
+Name=Android Studio
