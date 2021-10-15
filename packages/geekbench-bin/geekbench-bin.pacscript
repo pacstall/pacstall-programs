@@ -19,6 +19,8 @@ install(){
 	sudo install -Dm644 "${gives}.plar" -t "$STOWDIR/$name/opt/$gives/"
 	sudo mkdir -p "$STOWDIR/$name/usr/bin"
 	cd "$STOWDIR/$name/usr/bin"
-	sudo rm "${gives}5" 2> /dev/null
+	if [[ -f "${gives}5" ]]; then
+		sudo rm "${gives}5"
+	fi
 	sudo ln -s "../../opt/$gives/${gives}5" "${gives}5"
 }
