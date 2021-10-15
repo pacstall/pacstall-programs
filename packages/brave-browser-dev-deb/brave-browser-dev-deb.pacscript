@@ -1,8 +1,8 @@
 name="brave-browser-dev-deb"
 gives="brave-browser-dev"
-version="1.31.72"
+version="1.32.70"
 url="https://github.com/brave/brave-browser/releases/download/v${version}/${gives}_${version}_amd64.deb"
-description="A development build of Brave."
-hash="a063f1a0b6d0ea27c111a28d3271db0158a0e463f815c386b3c75d571a2e4c0a"
+description="A development build of Brave Browser."
+hash="717101a65565d2a364427f22845b2abc7f0943b53e43362373fc881b8b11aea7"
 pacdeps=("brave-keyring-deb")
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
