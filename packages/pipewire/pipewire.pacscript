@@ -1,10 +1,10 @@
 name="pipewire"
-version="0.3.35"
+version="0.3.38"
 build_depends="meson libdbus-1-dev"
 url="https://gitlab.freedesktop.org/$name/$name/-/archive/$version/$name-$version.zip"
 maintainer="Henryws <hwengerstickel@pm.me>"
 description="PipeWire is a server and user space API to deal with multimedia pipelines."
-hash="a12571422fd04b8d323e1b05cf39dc0cc3c4a0a3c740477409905d42c1eafa11"
+hash="998800392d6b235ef1ab9e7490e3001b995b4a6a7951f8b7e3f0eb8a91b35c08"
 prepare() {
     meson setup builddir
 }

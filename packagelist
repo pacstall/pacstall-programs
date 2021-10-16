@@ -13,6 +13,7 @@ batsignal
 bemenu-git
 bitwarden-deb
 bitwig-studio-3-deb
+bitwig-studio-deb
 blang-git
 bpytop-git
 brave-browser-beta-deb
@@ -42,6 +43,7 @@ discord
 discord-canary
 dmenu
 dmenu-distrotube
+dotdrop
 drawio-desktop-deb
 dropbox-deb
 duf-deb
@@ -50,6 +52,7 @@ electronmail-deb
 emacs
 emacs-git
 epson-inkjet-printer-stylus-nx110-series-deb
+epson-printer-utility-deb
 exa
 exploitdb
 fast
@@ -59,8 +62,11 @@ fishui
 fm6000
 freetube-deb
 fsearch-git
+gcmcore-deb
+geekbench-bin
 git
 git-delta-deb
+github-cli-deb
 github-desktop
 gnome-shell-extension-installer
 gnome-tweaks
@@ -70,6 +76,7 @@ grive2
 gtkhash
 heroic-games-launcher-deb
 htop
+hyper-deb
 hyperfine-bin
 i3-gaps
 i3lock-color
@@ -92,6 +99,7 @@ lyrebird
 maitreya8-deb
 makedeb
 makedeb-makepkg
+mangohud
 micro
 microsoft-edge-beta-deb
 microsoft-edge-dev-deb
@@ -108,7 +116,10 @@ nofetch
 notion-git
 nowpm
 nyxt-deb
+obs-backgroundremoval
+obs-backgroundremoval-git
 onefetch-bin
+onnxruntime-1-7-0-bin
 opendoas-git
 opensnitch-deb
 opensnitch-ui-deb
@@ -117,7 +128,7 @@ pacget-git
 panagement
 paper-icon-theme
 pdfmm-git
-pfetch
+pfetch-bin
 pipewire
 planner-git
 polybar
@@ -129,13 +140,17 @@ sed
 shell-color-scripts
 smartgit
 soundux
+spotify-client-deb
 st-distrotube
 stellarium
 st-lukesmith
 surf
 surf-distrotube
+suru-icon-theme
 telegram-bin
 thrive-deb
+tmux
+topgrade-bin
 tor
 torbrowser-launcher-deb
 torguard-deb
