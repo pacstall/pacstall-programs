@@ -17,12 +17,12 @@ build() {
 }
 
 install() {
-    sudo install -Dm755 "${name}" -t "${pkgdir}/usr/bin"
-    sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
-    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+    sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
+    sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${gives}"
+    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"
 }
 
 removescript () {
-    sudo rm -rf "/usr/share/licenses/${name}"
-    sudo rm -rf "/usr/share/doc/${name}"
+    sudo rm -rf "/usr/share/licenses/${gives}"
+    sudo rm -rf "/usr/share/doc/${gives}"
 }
