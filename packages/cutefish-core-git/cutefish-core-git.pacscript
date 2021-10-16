@@ -8,7 +8,7 @@ depends="fishui libpulse-dev libxtst6 libpolkit-agent-1-dev libxcb-randr0-dev li
 description="System backend and start session and more."
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" main | cut -f1
 }
 version="$(pkgver)"
 

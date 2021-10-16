@@ -8,7 +8,7 @@ depends="fishui libfontconfig1 libfreetype-dev libicu-dev libkf5coreaddons-dev l
 description="System Settings application for Cutefish Desktop."
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" main | cut -f1
 }
 version="$(pkgver)"
 

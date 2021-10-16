@@ -7,7 +7,7 @@ build_depends="cmake ninja-build"
 description="CutefishOS's system wallpaper."
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" main | cut -f1
 }
 version="$(pkgver)"
 
