@@ -80,6 +80,7 @@ hyper-deb
 hyperfine-bin
 i3-gaps
 i3lock-color
+imwheel-exclude-patched-git
 insync-deb
 ivpn-deb
 ivpn-ui-deb
