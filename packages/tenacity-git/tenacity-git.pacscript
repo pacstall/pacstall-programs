@@ -23,7 +23,7 @@ build() {
         -DESTDIR="$STOWDIR/$name" \
         -DCMAKE_BUILD_TYPE=Release \
         -Duse_ffmpeg=loaded ..
-	sudo make -j$(nproc)
+	make -j$(nproc)
 }
 
 install() {
