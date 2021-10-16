@@ -4,5 +4,5 @@
 <p align="center">
   <b>PACSTALL PROGRAMS</b>
   <br/>
-  This is where (as of 1.5.1 Moonlight) package scripts maintained by the pacstall team are located
+  This is where (as of 1.6 Celadon) package scripts maintained by the pacstall team are located
 </p>
