@@ -1,6 +1,6 @@
 name="lyrebird-git"
 gives="lyrebird"
-verion="1.1.0"
+version="1.1.0"
 pkgdesc="Simple and powerful voice changer for Linux, written in GTK 3"
 url="https://github.com/lyrebird-voice-changer/lyrebird.git"
 maintainer="D-Brox <BroxZuka@protonmail.com>"
