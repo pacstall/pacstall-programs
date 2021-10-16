@@ -1,5 +1,5 @@
 name="cutefish-filemanager-git"
-pkgname="cutefish-filemanager-git"
+gives="cutefish-filemanager"
 version="0.3-1"
 url="https://github.com/cutefishos/filemanager.git"
 license="GPL-3.0"

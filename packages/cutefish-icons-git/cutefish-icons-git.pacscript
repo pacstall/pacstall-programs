@@ -1,5 +1,5 @@
 name="cutefish-icons-git"
-pkgname="cutefish-icons-git"
+gives="cutefish-icons"
 version="0.3-1"
 url="https://github.com/cutefishos/icons.git"
 license="GPL-3.0"

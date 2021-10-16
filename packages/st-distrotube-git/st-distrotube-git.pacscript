@@ -1,5 +1,4 @@
-name="st-distrotube"
-pkgname="st"
+name="st-distrotube-git"
 maintainer="edward-riley <edward@edwardriley.co.uk>"
 url="https://gitlab.com/dwt1/st-distrotube.git"
 build_depends="make libharfbuzz-bin libxft-dev libpango1.0-dev"
@@ -21,5 +20,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/st-distrotube
+    sudo make install DESTDIR=/usr/src/pacstall/st-distrotube-git
 }

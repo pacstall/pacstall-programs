@@ -1,5 +1,5 @@
-name="fishui"
-pkgname="fishui"
+name="fishui-git"
+gives="fishui"
 version="0.3-1"
 url="https://github.com/cutefishos/fishui.git"
 license="GPL-3.0"
@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/fishui
+    sudo make install DESTDIR=/usr/src/pacstall/fishui-git
 }

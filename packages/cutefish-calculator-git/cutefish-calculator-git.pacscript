@@ -1,5 +1,5 @@
 name="cutefish-calculator-git"
-pkgname="cutefish-calculator-git"
+gives="cutefish-calculator"
 version="0.1-1"
 url="https://github.com/cutefishos/calculator.git"
 license="GPL-3.0"
@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-calculator
+    sudo make install DESTDIR=/usr/src/pacstall/cutefish-calculator-git
 }

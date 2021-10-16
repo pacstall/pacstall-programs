@@ -1,5 +1,5 @@
 name="cutefish-settings-git"
-pkgname="cutefish-settings-git"
+gives="cutefish-settings"
 version="0.3-1"
 url="https://github.com/cutefishos/settings.git"
 license="GPL-3.0"

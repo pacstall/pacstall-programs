@@ -1,4 +1,4 @@
-name="makedeb-makepkg"
+name="makedeb-makepkg-deb"
 version="8.5.2"
 url="https://proget.hunterwittenborn.com/debian-feeds/makedeb/main/makedeb-makepkg/all/makedeb-makepkg_all_${version}-1.deb"
 hash="4381f328580cd30673d128fdb9ec2f1cfd0fba4932269c8c224eafeac98d270b"

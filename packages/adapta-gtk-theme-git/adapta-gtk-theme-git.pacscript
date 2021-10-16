@@ -1,5 +1,5 @@
-name="adapta-gtk-theme"
-pkgname="adapta-gtk-theme"
+name="adapta-gtk-theme-git"
+gives="adapta-gtk-theme"
 version="1.0"
 url="https://github.com/adapta-project/adapta-gtk-theme.git"
 license="CC-BY-SA"

@@ -1,4 +1,4 @@
-name="kxstudio-repo"
+name="kxstudio-repos-deb"
 version="10.0.3"
 url="https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_${version}_all.deb"
 gives="kxstudio-repos"

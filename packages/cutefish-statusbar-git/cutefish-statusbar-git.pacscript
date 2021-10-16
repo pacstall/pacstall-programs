@@ -1,5 +1,5 @@
 name="cutefish-statusbar-git"
-pkgname="cutefish-statusbar-git"
+gives="cutefish-statusbar"
 version="0.3-1"
 url="https://github.com/cutefishos/statusbar.git"
 license="GPL-3.0"

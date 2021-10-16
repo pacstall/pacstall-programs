@@ -1,4 +1,5 @@
-name="suru-icon-theme"
+name="suru-icon-theme-git"
+gives="suru-icon-theme"
 version="0.1"
 maintainer="aranym <aranym1@pm.me>"
 url="https://github.com/snwh/${name}.git"
@@ -10,7 +11,7 @@ prepare() {
 }
 
 build() {
-    meson "build" --prefix=/usr/src/pacstall/suru-icon-theme/usr
+    meson "build" --prefix=/usr/src/pacstall/suru-icon-theme-git/usr
 }
 
 install() {

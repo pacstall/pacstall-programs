@@ -1,5 +1,5 @@
 name="cutefish-qt-plugins-git"
-pkgname="cutefish-qt-plugins-git"
+gives="cutefish-qt-plugins"
 version="0.3-1"
 url="https://github.com/cutefishos/qt-plugins.git"
 license="GPL-3.0"

@@ -1,4 +1,4 @@
-name="st-lukesmith"
+name="st-lukesmith-git"
 pkgname="st"
 url="https://github.com/LukeSmithxyz/st.git"
 license="MIT"
@@ -19,5 +19,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/st-lukesmith
+    sudo make install DESTDIR=/usr/src/pacstall/st-lukesmith-git
 }

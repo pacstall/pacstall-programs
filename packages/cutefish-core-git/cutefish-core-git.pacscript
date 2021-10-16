@@ -1,5 +1,5 @@
 name="cutefish-core-git"
-pkgname="cutefish-core-git"
+gives="cutefish-core"
 version="0.3-1"
 url="https://github.com/cutefishos/core.git"
 license="GPL-3.0"

@@ -1,5 +1,5 @@
 name="cutefish-launcher-git"
-pkgname="cutefish-launcher-git"
+gives="cutefish-launcher"
 version="0.2-1"
 url="https://github.com/cutefishos/launcher.git"
 license="GPL-3.0"

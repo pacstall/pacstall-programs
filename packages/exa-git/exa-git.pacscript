@@ -1,5 +1,5 @@
-name="exa"
-pkgname="exa"
+name="exa-git"
+gives="exa"
 version="0.10.1"
 url="https://github.com/ogham/exa.git"
 build_depends="libgit2-dev cmake rustc"
@@ -15,7 +15,7 @@ build() {
 }
 
 install() {
-    sudo mkdir -p /usr/src/pacstall/exa/usr/bin
-    sudo mv target/release/exa /usr/src/pacstall/exa/usr/bin
-    sudo chmod +x /usr/src/pacstall/exa/usr/bin/exa
+    sudo mkdir -p /usr/src/pacstall/exa-git/usr/bin
+    sudo mv target/release/exa /usr/src/pacstall/exa-git/usr/bin
+    sudo chmod +x /usr/src/pacstall/exa-git/usr/bin/exa
 }

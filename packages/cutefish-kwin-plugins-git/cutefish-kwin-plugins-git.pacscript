@@ -1,5 +1,5 @@
 name="cutefish-kwin-plugins-git"
-pkgname="cutefish-kwin-plugins-git"
+gives="cutefish-kwin-plugins"
 version="0.2-1"
 url="https://github.com/cutefishos/kwin-plugins.git"
 license="GPL-3.0"

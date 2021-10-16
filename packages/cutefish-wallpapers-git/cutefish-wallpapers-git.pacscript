@@ -1,5 +1,5 @@
 name="cutefish-wallpapers-git"
-pkgname="cutefish-wallpapers-git"
+gives="cutefish-wallpapers"
 version="0.2-1"
 url="https://github.com/cutefishos/wallpapers.git"
 license="GPL-3.0"

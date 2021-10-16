@@ -1,4 +1,4 @@
-name="fm6000"
+name="fm6000-git"
 version="5.0"
 url="https://github.com/anhsirk0/fetch-master-6000.git"
 build_depends=""
@@ -16,6 +16,6 @@ build() {
 }
 
 install() {
-        sudo mkdir -p /usr/src/pacstall/fm6000/usr/bin/
-        sudo cp fm6000.pl /usr/src/pacstall/fm6000/usr/bin
+        sudo mkdir -p /usr/src/pacstall/fm6000-git/usr/bin/
+        sudo cp fm6000.pl /usr/src/pacstall/fm6000-git/usr/bin
 }

@@ -1,5 +1,5 @@
 name="cutefish-dock-git"
-pkgname="cutefish-dock-git"
+gives="cutefish-dock"
 version="0.3-1"
 url="https://github.com/cutefishos/dock.git"
 license="GPL-3.0"
