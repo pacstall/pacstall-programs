@@ -21,5 +21,7 @@ install() {
 	sudo make install DESTDIR="$STOWDIR/$name"
 	cd "$STOWDIR/$name/usr/local/"
 	sudo mkdir -p share
-	sudo mv man share/
+	if [[ -d man ]]; then
+		sudo mv man share/
+	fi
 }
