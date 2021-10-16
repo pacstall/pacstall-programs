@@ -7,7 +7,7 @@ build_depends="extra-cmake-modules ninja-build"
 description="System default icon theme of CutefishOS."
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" main | cut -f1
 }
 version="$(pkgver)"
 

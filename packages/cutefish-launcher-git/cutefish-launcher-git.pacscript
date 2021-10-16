@@ -8,7 +8,7 @@ depends="fishui libcutefish libkf5windowsystem-dev"
 description="CutefishOS's full-screen application launcher"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" main | cut -f1
 }
 version="$(pkgver)"
 

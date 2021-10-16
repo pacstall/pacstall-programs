@@ -8,7 +8,7 @@ depends="fishui libcutefish kio libkf5solid-dev"
 description="Cutefish File Manager, simple to use, beautiful, and retain the classic PC interactive design."
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" main | cut -f1
 }
 version="$(pkgver)"
 
