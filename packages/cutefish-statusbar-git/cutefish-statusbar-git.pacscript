@@ -1,5 +1,5 @@
-name="cutefish-statusbar"
-pkgname="cutefish-statusbar"
+name="cutefish-statusbar-git"
+pkgname="cutefish-statusbar-git"
 version="0.3-1"
 url="https://github.com/cutefishos/statusbar.git"
 license="GPL-3.0"
@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-statusbar
+    sudo make install DESTDIR=/usr/src/pacstall/cutefish-statusbar-git
 }

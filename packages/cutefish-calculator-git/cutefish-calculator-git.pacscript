@@ -1,11 +1,11 @@
-name="cutefish-launcher"
-pkgname="cutefish-launcher"
-version="0.2-1"
-url="https://github.com/cutefishos/launcher.git"
+name="cutefish-calculator-git"
+pkgname="cutefish-calculator-git"
+version="0.1-1"
+url="https://github.com/cutefishos/calculator.git"
 license="GPL-3.0"
 build_depends="extra-cmake-modules ninja-build qttools5-dev-tools qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev qttools5-dev"
-depends="fishui libcutefish libkf5windowsystem-dev"
-description="CutefishOS's full-screen application launcher"
+depends="fishui libcutefish"
+description="CutefishOS Calculator."
 
 pkgver() {
     git ls-remote "${url}" master | cut -f1
@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-launcher
+    sudo make install DESTDIR=/usr/src/pacstall/cutefish-calculator
 }

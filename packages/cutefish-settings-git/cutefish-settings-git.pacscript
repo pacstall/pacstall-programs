@@ -1,5 +1,5 @@
-name="cutefish-settings"
-pkgname="cutefish-settings"
+name="cutefish-settings-git"
+pkgname="cutefish-settings-git"
 version="0.3-1"
 url="https://github.com/cutefishos/settings.git"
 license="GPL-3.0"
@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-settings
+    sudo make install DESTDIR=/usr/src/pacstall/cutefish-settings-git
 }

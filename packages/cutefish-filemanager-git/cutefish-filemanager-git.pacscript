@@ -1,5 +1,5 @@
-name="cutefish-filemanager"
-pkgname="cutefish-filemanager"
+name="cutefish-filemanager-git"
+pkgname="cutefish-filemanager-git"
 version="0.3-1"
 url="https://github.com/cutefishos/filemanager.git"
 license="GPL-3.0"
@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-filemanager
+    sudo make install DESTDIR=/usr/src/pacstall/cutefish-filemanager-git
 }

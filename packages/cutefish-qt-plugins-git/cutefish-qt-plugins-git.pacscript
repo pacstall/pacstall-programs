@@ -1,5 +1,5 @@
-name="cutefish-qt-plugins"
-pkgname="cutefish-qt-plugins"
+name="cutefish-qt-plugins-git"
+pkgname="cutefish-qt-plugins-git"
 version="0.3-1"
 url="https://github.com/cutefishos/qt-plugins.git"
 license="GPL-3.0"
@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-qt-plugins
+    sudo make install DESTDIR=/usr/src/pacstall/cutefish-qt-plugins-git
 }

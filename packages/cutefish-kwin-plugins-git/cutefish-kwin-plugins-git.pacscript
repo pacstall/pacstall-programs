@@ -1,5 +1,5 @@
-name="cutefish-kwin-plugins"
-pkgname="cutefish-kwin-plugins"
+name="cutefish-kwin-plugins-git"
+pkgname="cutefish-kwin-plugins-git"
 version="0.2-1"
 url="https://github.com/cutefishos/kwin-plugins.git"
 license="GPL-3.0"
@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-kwin-plugins
+    sudo make install DESTDIR=/usr/src/pacstall/cutefish-kwin-plugins-git
 }

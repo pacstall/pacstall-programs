@@ -1,5 +1,5 @@
-name="cutefish-core"
-pkgname="cutefish-core"
+name="cutefish-core-git"
+pkgname="cutefish-core-git"
 version="0.3-1"
 url="https://github.com/cutefishos/core.git"
 license="GPL-3.0"
@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-core
+    sudo make install DESTDIR=/usr/src/pacstall/cutefish-core-git
 }

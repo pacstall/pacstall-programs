@@ -1,5 +1,5 @@
-name="cutefish-dock"
-pkgname="cutefish-dock"
+name="cutefish-dock-git"
+pkgname="cutefish-dock-git"
 version="0.3-1"
 url="https://github.com/cutefishos/dock.git"
 license="GPL-3.0"
@@ -23,5 +23,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-dock
+    sudo make install DESTDIR=/usr/src/pacstall/cutefish-dock-git
 }

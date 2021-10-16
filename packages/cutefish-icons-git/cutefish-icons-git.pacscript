@@ -1,5 +1,5 @@
-name="cutefish-icons"
-pkgname="cutefish-icons"
+name="cutefish-icons-git"
+pkgname="cutefish-icons-git"
 version="0.3-1"
 url="https://github.com/cutefishos/icons.git"
 license="GPL-3.0"
@@ -22,5 +22,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-icons
+    sudo make install DESTDIR=/usr/src/pacstall/cutefish-icons-git
 }
