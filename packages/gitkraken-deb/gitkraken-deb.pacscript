@@ -1,0 +1,7 @@
+name="gitkraken-deb"
+gives="gitkraken"
+version="8.1.0"
+url="https://release.axocdn.com/linux/${gives}-amd64.deb"
+description="Legendary Git GUI client for Windows, Mac & Linux."
+hash="ae9c798a5afbd365d07ad81b7c9df174bbc13c1f4192bf2af1461c7f75ae8395"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
