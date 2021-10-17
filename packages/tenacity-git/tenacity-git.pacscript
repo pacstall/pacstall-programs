@@ -1,7 +1,7 @@
 name="tenacity-git"
 url="https://github.com/tenacityteam/tenacity.git"
 build_depends="build-essential cmake git python3-pip ffmpeg"
-depends="libgtk2.0-dev libasound2-dev libavformat-dev libjack-jackd2-dev uuid-dev Qt5Widgets libqt5gui5"
+depends="libgtk2.0-dev libasound2-dev libavformat-dev libjack-jackd2-dev uuid-dev libqt5gui5 mp3lame soxr portaudio-dev libwxgtk3.0-gtk3-dev"
 replace="audacity"
 description="FLOSS Audacity Fork. No telemetry, crash reports and other shenanigans like that!"
 optdepends="ffmpeg: additional import/export capabilities"
@@ -23,9 +23,9 @@ build() {
         -DESTDIR="$STOWDIR/$name" \
         -DCMAKE_BUILD_TYPE=Release \
         -Duse_ffmpeg=loaded ..
-        make -j$(nproc)
+	make -j$(nproc)
 }
 
 install() {
-    make install DESTDIR="$STOWDIR/$name"
+    sudo make install DESTDIR="$STOWDIR/$name"
 }
