@@ -8,7 +8,7 @@ depends="kscreen modemmanager-qt-dev libkf5networkmanagerqt-dev libqt5quickcontr
 description="Cutefish System Library."
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" main | cut -f1
 }
 version="$(pkgver)"
 

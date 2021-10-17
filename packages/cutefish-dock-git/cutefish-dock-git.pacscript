@@ -8,7 +8,7 @@ depends="fishui libcutefish libqt5svg5-dev"
 description="CutefishOS application dock."
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" main | cut -f1
 }
 version="$(pkgver)"
 
