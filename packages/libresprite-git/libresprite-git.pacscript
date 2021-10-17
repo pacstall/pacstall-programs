@@ -43,7 +43,7 @@ build() {
 install() {
 	cd build
 	sudo DESTDIR="$STOWDIR/$name" ninja install
-	install -Dm644 "$SRCDIR/libresprite.desktop" \
+	sudo install -Dm644 "$SRCDIR/libresprite.desktop" \
 		"$STOWDIR/$name/usr/share/applications/libresprite.desktop"
 	install -Dm644 "$STOWDIR/$name/usr/share/libresprite/data/icons/ase64.png" \
 		"$STOWDIR/$name/usr/share/pixmaps/libresprite.png"
