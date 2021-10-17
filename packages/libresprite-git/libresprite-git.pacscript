@@ -45,6 +45,6 @@ install() {
 	sudo DESTDIR="$STOWDIR/$name" ninja install
 	sudo install -Dm644 "$SRCDIR/libresprite.desktop" \
 		"$STOWDIR/$name/usr/share/applications/libresprite.desktop"
-	install -Dm644 "$STOWDIR/$name/usr/share/libresprite/data/icons/ase64.png" \
+	sudo install -Dm644 "$STOWDIR/$name/usr/share/libresprite/data/icons/ase64.png" \
 		"$STOWDIR/$name/usr/share/pixmaps/libresprite.png"
 }
