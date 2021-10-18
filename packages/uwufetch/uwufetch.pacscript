@@ -15,7 +15,7 @@ build_depends="gcc"
 optdepends=("viu: image preview"
 "lshw: hardware info")
 breaks="${name}-git ${name}-bin"
-hash="ed737f29442db0b82def11ba2902f136c8205750493d4b5222639be071c5a3c3"
+hash="1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab"
 removescript="yes"
 
 prepare() {
@@ -27,8 +27,8 @@ prepare() {
 
 build() {
   # Build required files
-  sudo make -j"$(nproc)" build DESTDIR="${pkgdir}"
-  sudo make -j"$(nproc)" man DESTDIR="${pkgdir}"
+  make -j"$(nproc)" build DESTDIR="${pkgdir}"
+  make -j"$(nproc)" man DESTDIR="${pkgdir}"
 }
 
 install() {
