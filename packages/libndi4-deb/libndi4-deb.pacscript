@@ -1,0 +1,7 @@
+name="libndi4-deb"
+gives="libndi4"
+version="4.5.1-1"
+obs_ndi_version="4.9.1"
+url="https://github.com/Palakis/obs-ndi/releases/download/${obs_ndi_version}/libndi4_${version}_amd64.deb"
+description="dependency for obs-ndi"
+hash="d82e4231c6543ee978c85d114edd8f038c902b9be858aa6c5e847af39031f30b"
