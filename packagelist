@@ -91,6 +91,7 @@ lagrange
 latte-dock-git
 lemonbar-xft-git
 libcutefish-git
+libndi4-deb
 libresprite-git
 libressl
 librewolf-app
@@ -120,6 +121,7 @@ nowpm
 nyxt-deb
 obs-backgroundremoval
 obs-backgroundremoval-git
+obs-ndi-deb
 onefetch-bin
 onnxruntime-1-7-0-bin
 opendoas-git
