@@ -1,0 +1,7 @@
+name="gitfiend-deb"
+gives="gitfiend"
+version="0.29.0"
+url="https://${gives}.com/resources/GitFiend_${version}_amd64.deb"
+description="A Git client designed for humans."
+hash="c663113cd59a102c11759a6d163f23023182e0ec9d86867ba58fd86d12bf62c0"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
