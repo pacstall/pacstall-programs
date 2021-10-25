@@ -1,0 +1,7 @@
+name="atom-editor-deb"
+gives="atom"
+version="1.58.0"
+url="https://github.com/$gives/$gives/releases/download/v$version/$gives-amd64.deb"
+description="The hackable text editor."
+hash="4310e1af8830952f4efe59349dfaacc39b0588f72449314bd795ed469421d2d5"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
