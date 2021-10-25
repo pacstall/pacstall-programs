@@ -1,0 +1,7 @@
+name="mullvad-vpn-beta-deb"
+gives="mullvad-vpn"
+version="2021.5-beta2"
+url="https://github.com/mullvad/mullvadvpn-app/releases/download/${version}/MullvadVPN-${version}_amd64.deb"
+description="The Mullvad VPN client app for desktop - Beta"
+hash="8f43a939c741db564ec90fc75859c07d9358d19458b5ab8c841020beb7dca558"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
