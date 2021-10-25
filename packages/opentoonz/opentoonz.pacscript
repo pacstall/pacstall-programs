@@ -11,7 +11,7 @@ prepare() {
 
 	sudo mkdir -p "$STOWDIR/$name/home/$LOGNAME/.config/OpenToonz"
 	sudo cp -r "opentoonz/stuff" "$STOWDIR/$name/home/$LOGNAME/.config/OpenToonz/"
-	sudo chown -R $LOGNAME "$STOWDIR/$name/home/$LOGNAME/.config/OpenToonz/"
+	sudo chown -R "$LOGNAME" "$STOWDIR/$name/home/$LOGNAME/.config/OpenToonz/"
 	
 	cd toonz
 	mkdir build
@@ -37,5 +37,4 @@ install() {
 	cd "toonz/build"
 	sudo make install DESTDIR="$STOWDIR/$name"
 	sudo chmod +x "$STOWDIR/$name/opt/$name/bin/opentoonz"
-	sudo ln -s "$STOWDIR/$name/opt/$name/bin/opentoonz" "/usr/bin/opentoonz"
 }
