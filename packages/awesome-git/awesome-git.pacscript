@@ -34,7 +34,7 @@ prepare() {
 
 build() {
   # Build rquired files
-  sudo make -j"$(nproc)" DESTDIR="${pkgdir}"
+  make -j"$(nproc)" DESTDIR="${pkgdir}"
 }
 
 install() {

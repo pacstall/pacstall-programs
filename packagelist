@@ -66,6 +66,8 @@ gcmcore-deb
 geekbench-bin
 git
 git-delta-deb
+gitblade-deb
+gitfiend-deb
 github-cli-deb
 github-desktop
 gitkraken-deb
@@ -91,6 +93,7 @@ lagrange
 latte-dock-git
 lemonbar-xft-git
 libcutefish-git
+libndi4-deb
 libresprite-git
 libressl
 librewolf-app
@@ -120,6 +123,7 @@ nowpm
 nyxt-deb
 obs-backgroundremoval
 obs-backgroundremoval-git
+obs-ndi-deb
 onefetch-bin
 onnxruntime-1-7-0-bin
 opendoas-git
@@ -150,6 +154,7 @@ surf
 surf-distrotube-git
 suru-icon-theme-git
 telegram-bin
+tenacity-git
 thrive-deb
 tmux
 topgrade-bin
@@ -176,6 +181,7 @@ warpinator-deb
 webapp-manager
 webapp-manager-deb
 windscribe-cli-deb
+wine-staging-git
 wine64
 yabridge
 youtube-dl-git
