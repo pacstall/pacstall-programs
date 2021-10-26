@@ -6,6 +6,7 @@ depends="qtchooser qt5-qmake qtbase5-dev-tools qttools5-dev-tools libqt5multimed
 description="An open-source full-featured 2D animation creation software"
 hash="fba0f381fb71ffda89e6423b4d461450d4851f93830342e69e36313070af5990"
 maintainer="echometerain <echometer@disroot.org>"
+gives="opentoonz"
 
 prepare() {
 
