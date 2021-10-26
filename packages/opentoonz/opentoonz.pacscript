@@ -36,5 +36,7 @@ install() {
 
 	cd "toonz/build"
 	sudo make install DESTDIR="$STOWDIR/$name"
+	cd ../../
+	sudo install -Dm644 LICENSE.txt "/usr/src/pacstall/$name/usr/share/licenses/$name/LICENSE.txt"
 	sudo chmod +x "$STOWDIR/$name/opt/$name/bin/opentoonz"
 }
