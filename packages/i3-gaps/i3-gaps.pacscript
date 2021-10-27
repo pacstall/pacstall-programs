@@ -8,6 +8,7 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="i3-gaps"
 pkgname="i3"
+<<<<<<< HEAD
 pkgdir="${STOWDIR}/${name}"
 version="4.20"
 url="https://github.com/Airblader/${pkgname}/releases/download/${version}/${pkgname}-${version}.tar.xz"
@@ -15,6 +16,15 @@ description="i3-gaps – i3 with more features (forked from https://github.com/i
 build_depends="meson ninja-build libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libxcb-shape0-dev"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app ${pkgname}-deb ${name}-bin ${name}-git ${name}-app ${name}-deb"
 hash="01815c98bcf14f2a8856fbe95bafa3e91ff249af216500d96ddc983533d51274"
+=======
+pkgdir="/usr/src/pacstall/${name}"
+version="4.19.1"
+url="https://github.com/Airblader/${pkgname}/releases/download/${version}/${pkgname}-${version}.tar.xz"
+description="i3-gaps – i3 with more features (forked from https://github.com/i3/i3)"
+build_depends="meson ninja-build libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libxcb-shape0-dev"
+breaks="${pkgname}-git ${pkgname}-bin ${pkgname}-gaps-bin ${pkgname}-wm"
+hash="fb26783dcef33d97f080129b8d0b2b957c486b1241988744e3b9658f1f05646d"
+>>>>>>> Update version on readme
 removescript="yes"
 
 prepare() {

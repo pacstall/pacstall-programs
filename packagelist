@@ -111,7 +111,10 @@ microsoft-edge-dev-deb
 minecraft-launcher
 moka-icon-theme
 ms-teams-deb
+<<<<<<< HEAD
 mullvad-vpn-beta-deb
+=======
+>>>>>>> Update version on readme
 mullvad-vpn-deb
 mutt-wizard
 nano

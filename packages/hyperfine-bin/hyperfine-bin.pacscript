@@ -8,12 +8,21 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="hyperfine-bin"
 pkgname="hyperfine"
+<<<<<<< HEAD
 pkgdir="${STOWDIR}/${name}"
 version="1.12.0"
 description="A command-line benchmarking tool"
 url="https://github.com/sharkdp/${pkgname}/releases/download/v${version}/${pkgname}-v${version}-x86_64-unknown-linux-musl.tar.gz"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="b66e7a55fc1b7fd1f6443861f65bde87a4794c4721dee5e11dc0294f27116efc"
+=======
+pkgdir="/usr/src/pacstall/${name}"
+version="1.11.0"
+description="A command-line benchmarking tool"
+url="https://github.com/sharkdp/${pkgname}/releases/download/v${version}/${pkgname}-v${version}-x86_64-unknown-linux-musl.tar.gz"
+breaks="${pkgname}-git"
+hash="0e7a109e99fe34e9dde0f86597fe0a59bc756cb280d0e191d30acdd1226f70c1"
+>>>>>>> Update version on readme
 removescript="yes"
 
 prepare() {
