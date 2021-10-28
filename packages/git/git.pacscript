@@ -1,12 +1,12 @@
 name="git"
-version="2.33.0"
-url="https://mirrors.edge.kernel.org/pub/software/scm/$name/$name-$version.tar.gz"
+version="2.33.1"
+url="https://mirrors.edge.kernel.org/pub/software/scm/${name}/${name}-${version}.tar.gz"
 build_depends="dh-autoreconf"
 depends="libcurl4-gnutls-dev libexpat1-dev \
   gettext libz-dev libssl-dev asciidoc xmlto docbook2x install-info"
 replace="git"
 description="git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals."
-hash="02d909d0bba560d3a1008bd00dd577621ffb57401b09175fab2bf6da0e9704ae"
+hash="02047f8dc8934d57ff5e02aadd8a2fe8e0bcf94a7158da375e48086cc46fce1d"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 removescript="yes"
 
