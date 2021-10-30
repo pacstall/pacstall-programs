@@ -2,10 +2,10 @@ maintainer="echometerain <echometer@disroot.org>"
 name=libresprite-git
 description='fork of last GPL version of aseprite'
 depends="libpixman-1-0 libcurl4 libgif7 zlib1g libpng16-16 libjpeg-turbo8 libwebp6 libxcursor1"
-build_depends="g++ libx11-dev libxcursor-dev cmake ninja-build zlib1g-dev libpixman-1-dev libpng-dev libjpeg-turbo8-dev libtinyxml-dev libwebp-dev libgif-dev libgtest-dev libfreetype-dev libcurlpp-dev libharfbuzz-dev"
+build_depends="g++ libx11-dev libxcursor-dev cmake ninja-build zlib1g-dev libpixman-1-dev libpng-dev libjpeg-turbo8-dev libtinyxml-dev libwebp-dev libgif-dev libgtest-dev libfreetype-dev libcurlpp-dev libharfbuzz-dev libsdl2-image-dev liblua5.3-dev"
 url="https://github.com/LibreSprite/LibreSprite.git"
 breaks="aseprite libresprite-bin libresprite-app libresprite-deb libresprite"
-gives="libresprite aseprite"
+gives="libresprite, aseprite"
 
 pkgver() {
     git ls-remote "${url}" master | cut -f1 
@@ -14,7 +14,6 @@ version="$(pkgver)"
 
 prepare(){
 	git fetch --all --tags --prune
-	git checkout -f "v$version"
 	git submodule update --init --recursive
 	mkdir build
 }
@@ -46,6 +45,6 @@ install() {
 	sudo DESTDIR="$STOWDIR/$name" ninja install
 	cd ..
 	sudo install -Dm755 "libresprite.desktop" "$STOWDIR/$name/usr/share/applications/libresprite.desktop"
-	printf "Icon=/usr/share/pixmaps/libresprite.png" | sudo tee -a "$STOWDIR/$name/usr/share/applications/libresprite.desktop"
+	printf "Icon=libresprite" | sudo tee -a "$STOWDIR/$name/usr/share/applications/libresprite.desktop"
 	sudo install -Dm644 "$STOWDIR/$name/usr/share/libresprite/data/icons/ase64.png" "$STOWDIR/$name/usr/share/pixmaps/libresprite.png"
 }
