@@ -1,0 +1,7 @@
+name="discord-ptb-deb"
+gives="discord-ptb"
+version="0.0.26"
+url="https://dl-ptb.discordapp.net/apps/linux/${version}/${gives}-${version}.deb"
+description="Chat for Communities and Friends - Public Test Build"
+hash="1815a5cef5ddba69b2f97447a37bbdb907ac7e85e090243531d1d4e6cb560534"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
