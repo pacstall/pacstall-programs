@@ -13,7 +13,7 @@ optdepends=("xjadeo: video monitoring"
 			"linuxaudio-new-session-manager: for session management")
 gives="ladspa-host, lv2-host, vst-host, vst3-host"
 url="https://github.com/Ardour/ardour.git"
-removescript=true
+removescript="yes"
 # patch="https://github.com/archlinux/svntogit-community/blob/packages/ardour/trunk/ardour-6.2-vendor_qm-dsp.patch"
 prepare() {
 	git fetch --all --tags --prune
