@@ -9,8 +9,9 @@ maintainer="echometerain <echometer@disroot.org>"
 patch="https://patch-diff.githubusercontent.com/raw/opentoonz/GTS/pull/149.diff"
 
 prepare() {
-	sudo wget https://gist.githubusercontent.com/mrwm/6269117b42d71df9dd1b91fafbc9d4ed/raw/302bd1300e72125c4e1d52b8eef7b5a00c5bf19a/sane-config -P "/usr/bin"
-	sudo chmod +x "/usr/bin/sane-config"
+	sudo mkdir -p "$STOWDIR/$name/usr/bin"
+	sudo wget https://raw.githubusercontent.com/pacstall/pacstall-programs/d09a60781f350e8c3dc01202f09a9cfaa5cd84ca/packages/opentoonz-gts/sane-config -P "$STOWDIR/$name/usr/bin"
+	sudo chmod +x "$STOWDIR/$name/usr/bin/sane-config"
 	git apply "./PACSTALL_patchesdir/149.diff"
 }
 
@@ -22,6 +23,6 @@ build() {
 
 install() {
 	sudo make install DESTDIR="$STOWDIR/$name"
-	mkdir -p "$HOME/.GTS"
+	mkdir -p "/home/$LOGNAME/.GTS"
 	cp "$STOWDIR/$name/usr/local/share/GTS/gts_initial_configuration.txt" "$HOME/.GTS"
 }
