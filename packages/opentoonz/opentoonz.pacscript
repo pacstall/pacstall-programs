@@ -7,12 +7,13 @@ description="An open-source full-featured 2D animation creation software"
 hash="fba0f381fb71ffda89e6423b4d461450d4851f93830342e69e36313070af5990"
 maintainer="echometerain <echometer@disroot.org>"
 gives="opentoonz"
+breaks="opentoonz"
 
 prepare() {
 
-	sudo mkdir -p "$STOWDIR/$name/home/$LOGNAME/.config/OpenToonz"
-	sudo cp -r "opentoonz/stuff" "$STOWDIR/$name/home/$LOGNAME/.config/OpenToonz/"
-	sudo chown -R "$LOGNAME" "$STOWDIR/$name/home/$LOGNAME/.config/OpenToonz/"
+	sudo mkdir -p "/home/$LOGNAME/.config/OpenToonz"
+	sudo cp -r "opentoonz/stuff" "/home/$LOGNAME/.config/OpenToonz/"
+	sudo chown -R "$LOGNAME" "/home/$LOGNAME/.config/OpenToonz/"
 	
 	cd toonz
 	mkdir build
@@ -43,4 +44,12 @@ install() {
 	
 	sudo install -Dm755 "toonz/sources/xdg-data/io.github.OpenToonz.desktop" "$STOWDIR/$name/usr/share/applications/"
 	sudo install -Dm644 "toonz/sources/xdg-data/io.github.OpenToonz.png" "$STOWDIR/$name/usr/share/pixmaps/"
+}
+
+removescript() {
+	
+	ask "Do you want to remove your opentoonz config?" N
+	if [[ $answer -eq 1 ]]; then
+		sudo rm -rf "home/$LOGNAME/.config/OpenToonz/"
+	fi
 }
