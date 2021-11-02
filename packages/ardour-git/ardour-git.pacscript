@@ -13,6 +13,7 @@ optdepends=("xjadeo: video monitoring"
 			"linuxaudio-new-session-manager: for session management")
 gives="ladspa-host, lv2-host, vst-host, vst3-host"
 url="https://github.com/Ardour/ardour.git"
+removescript=true
 # patch="https://github.com/archlinux/svntogit-community/blob/packages/ardour/trunk/ardour-6.2-vendor_qm-dsp.patch"
 prepare() {
 	git fetch --all --tags --prune
@@ -78,4 +79,12 @@ install() {
 		sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/resources/Ardour-icon_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
 	done
 	
+}
+
+removescript() {
+	sudo rm "/usr/bin/ardour6-copy-mixer"
+	sudo rm "/usr/bin/ardour6-export"
+	sudo rm "/usr/bin/ardour6-fix_bbtppq"
+	sudo rm "/usr/bin/ardour6-new_empty_session"
+	sudo rm "/usr/bin/ardour6-copy-new_session"
 }
