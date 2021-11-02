@@ -50,13 +50,13 @@ install() {
 	
 	sudo rm $STOWDIR/$name/usr/bin/ardour6-copy-mixer
 	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
-	sudo rm $STOWDIR/$name/usr/bin/ardour6-export
+	sudo rm "$STOWDIR/$name/usr/bin/ardour6-export"
 	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-export"
-	sudo rm $STOWDIR/$name/usr/bin/ardour6-fix_bbtppq
+	sudo rm "$STOWDIR/$name/usr/bin/ardour6-fix_bbtppq"
 	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-fix_bbtppq"
-	sudo rm $STOWDIR/$name/usr/bin/ardour6-new_empty_session
+	sudo rm "$STOWDIR/$name/usr/bin/ardour6-new_empty_session"
 	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-new_empty_session"
-	sudo rm $STOWDIR/$name/usr/bin/ardour6-new_session
+	sudo rm "$STOWDIR/$name/usr/bin/ardour6-new_session"
 	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-new_session"
 	
 	# man pages
