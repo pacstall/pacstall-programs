@@ -7,6 +7,7 @@ description="GTS is a trace scanning tool developed by Studio Ghibli"
 hash="625c1d63d4b0a8b60d7ac0e8e69d1ec73b259357f11a1246968469daa57a4a9d"
 maintainer="echometerain <echometer@disroot.org>"
 patch="https://patch-diff.githubusercontent.com/raw/opentoonz/GTS/pull/149.diff"
+removescript="yes"
 
 prepare() {
 	sudo mkdir -p "$STOWDIR/$name/usr/bin"
@@ -24,5 +25,12 @@ build() {
 install() {
 	sudo make install DESTDIR="$STOWDIR/$name"
 	mkdir -p "/home/$LOGNAME/.GTS"
-	cp "$STOWDIR/$name/usr/local/share/GTS/gts_initial_configuration.txt" "$HOME/.GTS"
+	cp "$STOWDIR/$name/usr/local/share/GTS/gts_initial_configuration.txt" "/home/$LOGNAME/.GTS"
+}
+
+removescript() {
+	ask "Do you want to remove your GTS configuration?" N
+	if [[ $answer -eq 1 ]]; then
+		sudo rm -rf "/home/$LOGNAME/.GTS"
+	fi
 }
