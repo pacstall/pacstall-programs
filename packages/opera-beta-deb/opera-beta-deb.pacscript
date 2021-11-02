@@ -1,0 +1,7 @@
+name="opera-beta-deb"
+gives="opera-beta"
+version="81.0.4196.27"
+url="https://download3.operacdn.com/pub/opera-beta/${version}/linux/${gives}_${version}_amd64.deb"
+description="Opera is a fast, secure, and user-friendly web browser - Beta"
+hash="7878f1bc3c3ab91f7537d22d94ce84d478eedde9c5ceb9a125230fe4e9e00b02"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
