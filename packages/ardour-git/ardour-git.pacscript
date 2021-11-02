@@ -44,32 +44,38 @@ build() {
 install() {
 	sudo ./waf i18n --destdir="$STOWDIR/$name"
 	sudo ./waf install --destdir="$STOWDIR/$name"
-	cd "$STOWDIR/$name/usr/bin"
 	
-	sudo rm ardour6-copy-mixer ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
-	sudo rm ardour6-export ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-export"
-	sudo rm ardour6-fix_bbtppq ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-fix_bbtppq"
-	sudo rm ardour6-new_empty_session ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-new_empty_session"
-	sudo rm ardour6-new_session ;  sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-new_session"
+	wait
+	
+	sudo rm $STOWDIR/$name/usr/bin/ardour6-copy-mixer
+	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
+	sudo rm $STOWDIR/$name/usr/bin/ardour6-export
+	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-export"
+	sudo rm $STOWDIR/$name/usr/bin/ardour6-fix_bbtppq
+	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-fix_bbtppq"
+	sudo rm $STOWDIR/$name/usr/bin/ardour6-new_empty_session
+	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-new_empty_session"
+	sudo rm $STOWDIR/$name/usr/bin/ardour6-new_session
+	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-new_session"
 	
 	# man pages
 	sudo install -vDm 644 "ardour.1" -t "$STOWDIR/$name/usr/share/man/man1/"
 	
 	# File types
-	install -vDm 644 "build/gtk2_ardour/ardour.xml" -t "$STOWDIR/$name/usr/share/mime/packages/"
+	sudo install -vDm 644 "build/gtk2_ardour/ardour.xml" -t "$STOWDIR/$name/usr/share/mime/packages/"
 
 	# Install .desktop
-	install -vDm644 "build/gtk2_ardour/ardour6.desktop" "$STOWDIR/$name/usr/share/applications/"
+	sudo install -vDm644 "build/gtk2_ardour/ardour6.desktop" "$STOWDIR/$name/usr/share/applications/"
 
 	# Icons
 	for size in 16 22 32 48; do
-		install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/mimetypes"
-		ln -sf "/usr/share/ardour6/icons/application-x-ardour_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/mimetypes/application-x-ardour.png"
+		sudo install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/mimetypes"
+		sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/icons/application-x-ardour_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/mimetypes/application-x-ardour.png"
 	done
 
 	for size in 16 22 32 48 256 512; do
-		install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps"
-		ln -sf "/usr/share/ardour6/resources/Ardour-icon_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
+		sudo install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps"
+		sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/resources/Ardour-icon_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
 	done
-
+	
 }
