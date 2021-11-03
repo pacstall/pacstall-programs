@@ -48,7 +48,7 @@ install() {
 	
 	wait
 	
-	sudo rm $STOWDIR/$name/usr/bin/ardour6-copy-mixer
+	sudo rm "$STOWDIR/$name/usr/bin/ardour6-copy-mixer"
 	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
 	sudo rm "$STOWDIR/$name/usr/bin/ardour6-export"
 	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-export"
