@@ -2,7 +2,6 @@ maintainer="echometerain <echometer@disroot.org>"
 # Author: David Runge <dvzrv@archlinux.org>
 
 name="ardour-git"
-version="6.9"
 description="Professional-grade digital audio workstation"
 depends="libqm-dsp0 libcairo2 libgcc-s1 libglib2.0-0 libglibmm-2.4-1v5 libgtkmm-2.4-1v5 libx11-6 libxml2 libsoundtouch1 libtag1v5 libflac8 libasound2 libatkmm-1.6-1v5 libaubio5 libarchive13 libcairomm-1.0-1v5 libcurl4 libdbus-1-3 libfftw3-3 libfluidsynth2 fontconfig libfreetype6 libgdk-pixbuf-2.0-0 libgtk2.0-0 libgio-cil libglib2.0-cil libglib2.0-0 libcairo-gobject2 jackd2 liblo7 liblilv-0-0 libltc11 libogg0 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpangomm-1.4-1v5 libpulse0 libreadline8 librubberband2 libsamplerate0 libserd-0-0 libsndfile1 libsord-0-0 libsratom-0-0 libsuil-0-0 libusb-1.0-0 libvamp-hostsdk3v5 libvamp-sdk2v5 libwebsockets16"
 
@@ -16,10 +15,12 @@ breaks="ardour, ardour-data"
 url="https://github.com/Ardour/ardour.git"
 removescript="yes"
 # patch="https://github.com/archlinux/svntogit-community/blob/packages/ardour/trunk/ardour-6.2-vendor_qm-dsp.patch"
-prepare() {
-	git fetch --all --tags --prune
-	git checkout $version
-	
+pkgver() {
+    git ls-remote "${url}" master | cut -f1 
+}
+version="$(pkgver)"
+
+prepare() {	
 	# Patch uses vendored version of qm-dsp because qm-dsp >= 1.8.0 is not compatible
 	# will be applied when ubuntu starts supporting qm-dsp 1.8.0
 
