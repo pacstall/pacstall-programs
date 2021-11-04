@@ -1,5 +1,5 @@
 maintainer="echometerain <echometer@disroot.org>"
-# Arthur: David Runge <dvzrv@archlinux.org>
+# Author: David Runge <dvzrv@archlinux.org>
 
 name="ardour-git"
 version="6.9"
