@@ -11,8 +11,8 @@ build_depends="libgio2.0-cil-dev python3 libqm-dsp-dev libcairo2-dev libglib2.0-
 optdepends=("xjadeo: video monitoring"
 			"harvid: video timeline"
 			"linuxaudio-new-session-manager: for session management")
-gives="ladspa-host lv2-host vst-host vst3-host ardour ardour-data"
-breaks="ardour ardour-data"
+gives="ladspa-host, lv2-host, vst-host, vst3-host, ardour, ardour-data"
+breaks="ardour, ardour-data"
 url="https://github.com/Ardour/ardour.git"
 removescript="yes"
 # patch="https://github.com/archlinux/svntogit-community/blob/packages/ardour/trunk/ardour-6.2-vendor_qm-dsp.patch"
