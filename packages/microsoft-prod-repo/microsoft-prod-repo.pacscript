@@ -4,3 +4,4 @@ url="https://packages.microsoft.com/config/ubuntu/21.04/packages-microsoft-prod.
 description="Apt repo configuration for packages.microsoft.com"
 hash="878a1d3a3bff8d3cc829eecbf8e6f574eb1f98e49f2cca376a86c6ad5344ba5c"
 maintainer="echometerain <echometer@disroot.org>"
+gives="packages-microsoft-prod"
