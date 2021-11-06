@@ -1,8 +1,7 @@
 maintainer="echometerain <echometer@disroot.org>"
-# Arthur: David Runge <dvzrv@archlinux.org>
+# Author: David Runge <dvzrv@archlinux.org>
 
 name="ardour-git"
-version="6.9"
 description="Professional-grade digital audio workstation"
 depends="libqm-dsp0 libcairo2 libgcc-s1 libglib2.0-0 libglibmm-2.4-1v5 libgtkmm-2.4-1v5 libx11-6 libxml2 libsoundtouch1 libtag1v5 libflac8 libasound2 libatkmm-1.6-1v5 libaubio5 libarchive13 libcairomm-1.0-1v5 libcurl4 libdbus-1-3 libfftw3-3 libfluidsynth2 fontconfig libfreetype6 libgdk-pixbuf-2.0-0 libgtk2.0-0 libgio-cil libglib2.0-cil libglib2.0-0 libcairo-gobject2 jackd2 liblo7 liblilv-0-0 libltc11 libogg0 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpangomm-1.4-1v5 libpulse0 libreadline8 librubberband2 libsamplerate0 libserd-0-0 libsndfile1 libsord-0-0 libsratom-0-0 libsuil-0-0 libusb-1.0-0 libvamp-hostsdk3v5 libvamp-sdk2v5 libwebsockets16"
 
@@ -11,13 +10,17 @@ build_depends="libgio2.0-cil-dev python3 libqm-dsp-dev libcairo2-dev libglib2.0-
 optdepends=("xjadeo: video monitoring"
 			"harvid: video timeline"
 			"linuxaudio-new-session-manager: for session management")
-gives="ladspa-host, lv2-host, vst-host, vst3-host"
+gives="ladspa-host, lv2-host, vst-host, vst3-host, ardour, ardour-data"
+breaks="ardour, ardour-data"
 url="https://github.com/Ardour/ardour.git"
+removescript="yes"
 # patch="https://github.com/archlinux/svntogit-community/blob/packages/ardour/trunk/ardour-6.2-vendor_qm-dsp.patch"
-prepare() {
-	git fetch --all --tags --prune
-	git checkout $version
-	
+pkgver() {
+    git ls-remote "${url}" master | cut -f1 
+}
+version="$(pkgver)"
+
+prepare() {	
 	# Patch uses vendored version of qm-dsp because qm-dsp >= 1.8.0 is not compatible
 	# will be applied when ubuntu starts supporting qm-dsp 1.8.0
 
@@ -44,14 +47,46 @@ build() {
 install() {
 	sudo ./waf i18n --destdir="$STOWDIR/$name"
 	sudo ./waf install --destdir="$STOWDIR/$name"
-	cd "$STOWDIR/$name/usr/bin"
 	
-	sudo rm ardour6-copy-mixer ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
-	sudo rm ardour6-export ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-export"
-	sudo rm ardour6-fix_bbtppq ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-fix_bbtppq"
-	sudo rm ardour6-new_empty_session ; sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-new_empty_session"
-	sudo rm ardour6-new_session ;  sudo ln -s "../lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-new_session"
+	wait
+	
+	sudo rm "$STOWDIR/$name/usr/bin/ardour6-copy-mixer"
+	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
+	sudo rm "$STOWDIR/$name/usr/bin/ardour6-export"
+	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-export"
+	sudo rm "$STOWDIR/$name/usr/bin/ardour6-fix_bbtppq"
+	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-fix_bbtppq"
+	sudo rm "$STOWDIR/$name/usr/bin/ardour6-new_empty_session"
+	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-new_empty_session"
+	sudo rm "$STOWDIR/$name/usr/bin/ardour6-new_session"
+	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-new_session"
 	
 	# man pages
 	sudo install -vDm 644 "ardour.1" -t "$STOWDIR/$name/usr/share/man/man1/"
+	
+	# File types
+	sudo install -vDm 644 "build/gtk2_ardour/ardour.xml" -t "$STOWDIR/$name/usr/share/mime/packages/"
+
+	# Install .desktop
+	sudo install -vDm644 "build/gtk2_ardour/ardour6.desktop" "$STOWDIR/$name/usr/share/applications/"
+
+	# Icons
+	for size in 16 22 32 48; do
+		sudo install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/mimetypes"
+		sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/icons/application-x-ardour_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/mimetypes/application-x-ardour.png"
+	done
+
+	for size in 16 22 32 48 256 512; do
+		sudo install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps"
+		sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/resources/Ardour-icon_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
+	done
+	
+}
+
+removescript() {
+	sudo rm "/usr/bin/ardour6-copy-mixer"
+	sudo rm "/usr/bin/ardour6-export"
+	sudo rm "/usr/bin/ardour6-fix_bbtppq"
+	sudo rm "/usr/bin/ardour6-new_empty_session"
+	sudo rm "/usr/bin/ardour6-copy-new_session"
 }

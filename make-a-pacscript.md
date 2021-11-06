@@ -8,6 +8,7 @@ build_depends="vim gcc"
 depends="neofetch plasma"
 breaks="libfoo-git"
 replace="alacritty"
+gives="libfoo-1.0-0"
 description="foo is the ultimate program capable of foo and bar!"
 hash="2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae"
 removescript="yes"
@@ -120,6 +121,10 @@ This is where you put the packages that would break if you install this package.
 #### `replace` 
 
 It's the name of the apt package that this package replaces, the user will be asked to continue before the apt package is removed.
+
+#### `gives` 
+
+The name of the apt dependency which this package provides for. Often used in tandem with `replace`.
 
 #### `hash`
 
