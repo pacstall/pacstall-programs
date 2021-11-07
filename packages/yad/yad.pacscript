@@ -19,7 +19,7 @@ prepare() {
 	FLAGS="--enable-icon-browser --enable-gio"
 	dpkg-query -W libwebkit2gtk-4.0-dev > /dev/null 2>&1
 	if [[ $? -eq 0 ]]; then
-		FLAGS="$FLAGS --enable-html"
+		FLAGS+=" --enable-html"
 	fi
 	dpkg-query -W libgspell-1-dev > /dev/null 2>&1
 	if [[ $? -eq 0 ]]; then
