@@ -23,7 +23,7 @@ prepare() {
 	fi
 	dpkg-query -W libgspell-1-dev > /dev/null 2>&1
 	if [[ $? -eq 0 ]]; then
-		FLAGS="$FLAGS --enable-spell"
+		FLAGS+=" --enable-spell"
 	fi
 	dpkg-query -W libgtksourceview-4-dev > /dev/null 2>&1
 	if [[ $? -eq 0 ]]; then
