@@ -21,7 +21,7 @@ install() {
   python3 -m grapejuice_packaging linux_package || python -m grapejuice_packaging linux_package
   cd dist/linux_package
   sudo mkdir -p /usr/src/pacstall/grapejuice-git/
-  sudo tar -xf *.tar.gz -C /usr/src/pacstall/grapejuice-git/
+  sudo tar -xf ./*.tar.gz -C /usr/src/pacstall/grapejuice-git/
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
