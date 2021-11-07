@@ -27,7 +27,7 @@ prepare() {
 	fi
 	dpkg-query -W libgtksourceview-4-dev > /dev/null 2>&1
 	if [[ $? -eq 0 ]]; then
-		FLAGS="$FLAGS --enable-sourceview"
+		FLAGS+=" --enable-sourceview"
 	fi
 }
 
