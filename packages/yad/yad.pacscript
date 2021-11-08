@@ -33,7 +33,7 @@ prepare() {
 
 build() {
 	./configure "$FLAGS"
-	make -j $(nproc)
+	make -j$(nproc)
 }
 
 install() {
