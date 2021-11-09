@@ -59,6 +59,7 @@ exploitdb-git
 fast
 fastfetch-git
 fblog-deb
+ferdi-deb
 fishui-git
 fm6000-git
 freetube-deb
@@ -190,5 +191,6 @@ windscribe-cli-deb
 wine-staging-git
 wine64
 yabridge
+yad
 youtube-dl-git
 zotero
