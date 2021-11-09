@@ -24,7 +24,7 @@ install() {
   python3 -m grapejuice_packaging linux_package || python -m grapejuice_packaging linux_package
   cd dist/linux_package
   sudo mkdir -p $STOWDIR/$name
-  sudo tar -xf ./*.tar.gz -C /$STOWDIR/$name/
+  sudo tar -xf ./*.tar.gz -C "$STOWDIR/$name"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
