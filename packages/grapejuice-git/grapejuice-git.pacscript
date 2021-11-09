@@ -4,7 +4,7 @@ depends="git python3-pip python3-setuptools python3-wheel python3-dev pkg-config
 url="https://gitlab.com/brinkervii/grapejuice.git"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 gives="grapejuice"
-breaks="grapejuice grapejuice-bin"
+breaks="grapejuice grapejuice-bin grapejuice-app grapejuice-deb"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1
