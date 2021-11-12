@@ -3,5 +3,5 @@ gives="torguard"
 version="4.8.2"
 url="https://${gives}.net/downloads/new/${gives}-latest-amd64.deb"
 description="TorGuard VPN Software."
-hash="1903408b75fa99af66ccda6347b2a5b29212a651a41a29b34fac361c9671441e
+hash="1903408b75fa99af66ccda6347b2a5b29212a651a41a29b34fac361c9671441e"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
