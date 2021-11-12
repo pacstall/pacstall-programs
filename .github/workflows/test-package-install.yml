@@ -14,13 +14,14 @@ jobs:
       - name: Installing pacstall
         run: |
           export PACSTALL_SKIP_NETWORK_CHECK=1
-          sudo bash -c "$(wget -q https://git.io/JsADh -O -)" && sudo apt-get remove -y axel
+          sudo bash -c "$(wget -q https://git.io/JsADh -O -)"
+      - name: Installing packages with pacstall
+        run: | 
+          sudo apt-get remove -y axel
           mkdir -p /tmp/pacstall || sudo mkdir -p /tmp/pacstall
           echo "Chowning /tmp/pacstall"
           sudo chown -R $USER:$USER /tmp/pacstall
           ls -ld /tmp/pacstall
-      - name: Installing packages with pacstall
-        run: | 
           sudo dpkg --add-architecture i386
           sudo add-apt-repository universe
           sudo apt-get update
