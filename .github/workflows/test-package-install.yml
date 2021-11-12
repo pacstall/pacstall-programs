@@ -22,7 +22,7 @@ jobs:
           sudo chown -R pacstall:pacstall /tmp/pacstall
       - name: Installing packages with pacstall
         run: |
-          su pacstall
+          sudo su - pacstall
           sudo apt-get remove -y axel
           echo "Chowning /tmp/pacstall"
           sudo dpkg --add-architecture i386
