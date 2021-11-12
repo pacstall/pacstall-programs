@@ -14,8 +14,7 @@ jobs:
       - name: Installing pacstall
         run: |
           export PACSTALL_SKIP_NETWORK_CHECK=1
-          sudo bash -c "$(wget -q https://git.io/JsADh -O -)"
-          sudo apt-get remove -y axel
+          sudo bash -c "$(wget -q https://git.io/JsADh -O -)" && sudo apt-get remove -y axel
           mkdir -p /tmp/pacstall || sudo mkdir -p /tmp/pacstall
           echo "Chowning /tmp/pacstall"
           sudo chown -R $USER:$USER /tmp/pacstall
