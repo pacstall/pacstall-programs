@@ -16,7 +16,8 @@ jobs:
           export PACSTALL_SKIP_NETWORK_CHECK=1
           sudo bash -c "$(wget -q https://git.io/JsADh -O -)"
           sudo apt remove -y axel
-          chmod u+w /tmp/
+          mkdir -p /tmp/pacstall || sudo mkdir -p /tmp/pacstall
+          sudo chown -R $USER:$USER /tmp/pacstall
       - name: Installing packages with pacstall
         run: | 
           sudo dpkg --add-architecture i386
