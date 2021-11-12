@@ -17,6 +17,11 @@ jobs:
           sudo bash -c "$(wget -q https://git.io/JsADh -O -)"
       - name: Installing packages with pacstall
         run: | 
+          sudo apt-get remove -y axel
+          mkdir -p /tmp/pacstall || sudo mkdir -p /tmp/pacstall
+          echo "Chowning /tmp/pacstall"
+          sudo chown -R $USER:$USER /tmp/pacstall
+          ls -ld /tmp/pacstall
           sudo dpkg --add-architecture i386
           sudo add-apt-repository universe
           sudo apt-get update

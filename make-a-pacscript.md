@@ -6,12 +6,11 @@ version="1.0"
 url="https://github.com/Henryws/foo/archive/refs/tags/1.0.zip"
 build_depends="vim gcc"
 depends="neofetch plasma"
-breaks="libfoo-git"
+breaks="libfoo-git libfoo-bin libfoo-app"
 replace="alacritty"
-gives="libfoo-1.0-0"
+gives="libfoo"
 description="foo is the ultimate program capable of foo and bar!"
 hash="2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae"
-removescript="yes"
 optdepends=("bar: not foo"
 "alacritty: a blazing fast terminal")
 ppa=("graphics-drivers/ppa"
@@ -108,15 +107,15 @@ It's an array of pacscripts dependencies. Should be used when the pacscript need
 
 #### `ppa`
 
-It's an array that you can use to install ppa's. It is highly discouraged to use ppa's as they are fundamentaly broken. You do not need to include `ppa:` in the array as pacstall does that for you and it's easier for the end user. You should only use a ppa if absolutely necessary. Consider making a pacscript instead and putting it in `pacdeps`
+It's an array that you can use to install ppa's. It is highly discouraged to use ppa's as they are fundamentaly broken. Consider making a pacscript instead and putting it in `pacdeps`. Only use one if it's absolutely necessary. You do not need to include `ppa:` in the array as pacstall does that for you and it's easier for the end user.
 
 #### `optdepends`
 
-It's where you put optional dependencies. Pacstall will ask the user if they want to install them after the package finishes installing.
+It's where you put optional dependencies. Pacstall will ask the user if they want to install them before the package starts installing.
 
 #### `breaks` 
 
-This is where you put the packages that would break if you install this package. An example would be foo and foo-git. They both install to the same files, but different sources. It is not needed unless you are making a `-git` package or `-bin`.
+This is where you put the packages that would break if you install this package. An example would be foo and foo-git. They both install to the same files, but different sources. It is not needed unless you are making a `-git`, `-bin` or `-deb` package.
 
 #### `replace` 
 
@@ -140,11 +139,11 @@ The `prepare` function is what you run to prepare a package. You don’t need to
 
 #### `build`
 
-The `build` function is what compiles the package. Use multicore as much as possible. To get the number of cores in a system, run `nproc`. You can use that in combination with `-j$(nproc)` to compile on multicore (`make -j$(nproc)`). If the package does not need to be compiled, justuse `true` inside the function.
+The `build` function is what compiles the package. Use multicore as much as possible. To get the number of cores in a system, run `nproc`. You can use that in combination with `-j$(nproc)` to compile on multicore (`make -j$(nproc)`). If the package does not need to be compiled, just use `true` inside the function.
 
 #### `install`
 
-The `install` function is what installs the package. The most important thing is to install to `$STOWDIR/$name`. An example with make would be `sudo make install DESTDIR=$STOWDIR/$name`.
+The `install` function is what installs the package. The most important thing is to install to `$STOWDIR/$name`. An example with make would be `sudo make install DESTDIR="$STOWDIR/$name"`.
 
 #### `postinst` 
 
@@ -164,6 +163,7 @@ You can test it by cd'ing into the directory holding `$name`.pacscript and runni
 
 ### Other
 
+Pacscripts should be feature complete with their respective PKGBUILDS if available.
 If you need (for some reason) to download files that aren't part of the package (if it didn't ship a `.desktop`, for example), we suggest using [GitHub Gists](https://gist.github.com). When you download it in your pacscript, use `wget -q <gist>` so there is no output. If you need to upload an image (for whatever reason), use [postimg.cc](https://postimg.cc).
 Lastly, do not ask the user for any input unless absolutely necessary. Use external variables to detect what you need to know before asking the user.
 
