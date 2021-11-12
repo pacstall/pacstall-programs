@@ -18,12 +18,12 @@ jobs:
           sudo adduser --disabled-password --gecos '' pacstall
           sudo adduser pacstall sudo
           echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers >/dev/null
-          sudo chmod 755 /var/log/pacstall
       - name: Installing packages with pacstall
         run: |
           sudo su - pacstall
           sudo apt-get remove -y axel
           echo "Chowning /tmp/pacstall"
+          sudo chown -R $USER:$USER /var/log/pacstall
           sudo dpkg --add-architecture i386
           sudo add-apt-repository universe
           sudo apt-get update
