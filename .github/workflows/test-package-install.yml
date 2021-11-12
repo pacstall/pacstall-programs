@@ -24,11 +24,11 @@ jobs:
           sudo su - pacstall
           sudo apt-get remove -y axel
           echo "Chowning /tmp/pacstall"
-          sudo chown -R $USER:$USER /var/log/pacstall
+          sudo chown -Rv pacstall:pacstall /var/log/pacstall
           sudo dpkg --add-architecture i386
           sudo add-apt-repository universe
           sudo apt-get update
-          sudo chown -R $USER:$USER /tmp/pacstall
+          sudo chown -Rv pacstall:pacstall /tmp/pacstall
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
@@ -46,11 +46,11 @@ jobs:
           sudo su - pacstall
           sudo apt-get remove -y axel
           echo "Chowning /tmp/pacstall"
-          sudo chown -R $USER:$USER /var/log/pacstall
+          sudo chown -Rv pacstall:pacstall /var/log/pacstall
           sudo dpkg --add-architecture i386
           sudo add-apt-repository universe
           sudo apt-get update
-          sudo chown -R $USER:$USER /tmp/pacstall
+          sudo chown -Rv pacstall:pacstall /tmp/pacstall
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
