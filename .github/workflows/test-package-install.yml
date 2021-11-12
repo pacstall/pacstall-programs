@@ -18,8 +18,9 @@ jobs:
           sudo adduser --disabled-password --gecos '' pacstall
           sudo adduser pacstall sudo
           echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers >/dev/null
-      - name: Installing packages with pacstall (master)
+      - name: Installing packages with pacstall (develop)
         run: |
+          pacstall -PU pacstall develop
           sudo su - pacstall
           sudo apt-get remove -y axel
           echo "Chowning /tmp/pacstall"
@@ -39,9 +40,9 @@ jobs:
               pacstall --disable-prompts -R ${package_name}
             fi
           done
-      - name: Installing packages with pacstall (develop)
+      - name: Installing packages with pacstall (master)
         run: |
-          pacstall -PU pacstall develop
+          pacstall -PU pacstall master
           sudo su - pacstall
           sudo apt-get remove -y axel
           echo "Chowning /tmp/pacstall"
