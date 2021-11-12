@@ -18,8 +18,30 @@ jobs:
           sudo adduser --disabled-password --gecos '' pacstall
           sudo adduser pacstall sudo
           echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers >/dev/null
-      - name: Installing packages with pacstall
+      - name: Installing packages with pacstall (master)
         run: |
+          sudo su - pacstall
+          sudo apt-get remove -y axel
+          echo "Chowning /tmp/pacstall"
+          sudo chown -R $USER:$USER /var/log/pacstall
+          sudo dpkg --add-architecture i386
+          sudo add-apt-repository universe
+          sudo apt-get update
+          sudo chown -R $USER:$USER /tmp/pacstall
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} == *".pacscript" ]]; then
+              pacscript_file=`basename "${changed_file}"`
+              package_name="${pacscript_file/.pacscript/ }"
+              package_dir=`dirname "${changed_file}"`
+              echo "pacstall -Il ${package_name}"
+              cd ${package_dir}
+              pacstall --disable-prompts -Il ${package_name}
+              pacstall --disable-prompts -R ${package_name}
+            fi
+          done
+      - name: Installing packages with pacstall (develop)
+        run: |
+          pacstall -PU pacstall develop
           sudo su - pacstall
           sudo apt-get remove -y axel
           echo "Chowning /tmp/pacstall"
