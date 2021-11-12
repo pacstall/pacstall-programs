@@ -15,13 +15,16 @@ jobs:
         run: |
           export PACSTALL_SKIP_NETWORK_CHECK=1
           sudo bash -c "$(wget -q https://git.io/JsADh -O -)"
+          adduser --disabled-password --gecos '' pacstall
+          adduser pacstall sudo
+          echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+          chmod 755 /var/log/pacstall
+          chown -R pacstall:pacstall /tmp/pacstall
       - name: Installing packages with pacstall
-        run: | 
+        run: |
+          su pacstall
           sudo apt-get remove -y axel
-          mkdir -p /tmp/pacstall || sudo mkdir -p /tmp/pacstall
           echo "Chowning /tmp/pacstall"
-          sudo chmod -R 0777 /tmp/pacstall
-          ls -ld /tmp/pacstall
           sudo dpkg --add-architecture i386
           sudo add-apt-repository universe
           sudo apt-get update
