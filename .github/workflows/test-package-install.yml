@@ -18,8 +18,8 @@ jobs:
           sudo adduser --disabled-password --gecos '' pacstall
           sudo adduser pacstall sudo
           echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers >/dev/null
-          chmod 755 /var/log/pacstall
-          chown -R pacstall:pacstall /tmp/pacstall
+          sudo chmod 755 /var/log/pacstall
+          sudo chown -R pacstall:pacstall /tmp/pacstall
       - name: Installing packages with pacstall
         run: |
           su pacstall
