@@ -12,56 +12,20 @@ jobs:
       - id: files
         uses: jitterbit/get-changed-files@v1
       - name: Installing pacstall
-        run: |
-          export PACSTALL_SKIP_NETWORK_CHECK=1
-          sudo bash -c "$(wget -q https://git.io/JsADh -O -)"
-          sudo adduser --disabled-password --gecos '' pacstall
-          sudo adduser pacstall sudo
-          echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers >/dev/null
-      - name: Installing packages with pacstall (develop)
-        run: |
-          pacstall -PU pacstall develop
-          sudo su - pacstall
-          sudo apt-get remove -y axel
-          echo "Chowning /tmp/pacstall"
-          sudo chown -Rv pacstall:pacstall /var/log/pacstall
-          sudo dpkg --add-architecture i386
-          sudo add-apt-repository universe
-          sudo apt-get update
-          sudo chown -Rv pacstall:pacstall /tmp/pacstall
+        run: bash -c "$(wget -q https://git.io/JsADh -O -)"
+      - name: Installing packages with pacstall
+        run: | 
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
               package_name="${pacscript_file/.pacscript/ }"
               package_dir=`dirname "${changed_file}"`
+              echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -Il ${package_name}"
               cd ${package_dir}
-              pacstall --disable-prompts -Il ${package_name}
-              pacstall --disable-prompts -R ${package_name}
-            fi
-          done
-      - name: Installing packages with pacstall (master)
-        run: |
-          sudo rm -rf /tmp/pacstall
-          pacstall -PU pacstall master
-          sudo su - pacstall
-          sudo apt-get remove -y axel
-          echo "Chowning /tmp/pacstall"
-          sudo chown -Rv pacstall:pacstall /var/log/pacstall
-          sudo dpkg --add-architecture i386
-          sudo add-apt-repository universe
-          sudo apt-get update
-          sudo chown -Rv pacstall:pacstall /tmp/pacstall
-          for changed_file in ${{ steps.files.outputs.added_modified }}; do
-            if [[ ${changed_file} == *".pacscript" ]]; then
-              pacscript_file=`basename "${changed_file}"`
-              package_name="${pacscript_file/.pacscript/ }"
-              package_dir=`dirname "${changed_file}"`
-              echo "pacstall -Il ${package_name}"
-              cd ${package_dir}
-              pacstall --disable-prompts -Il ${package_name}
-              pacstall --disable-prompts -R ${package_name}
+              pacstall -PIl ${package_name}
             fi
           done
         env:
-          TERM: xterm
+          TERM: xterm 
+          
