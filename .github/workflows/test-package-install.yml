@@ -20,7 +20,7 @@ jobs:
           echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers >/dev/null
       - name: Installing packages with pacstall (develop)
         run: |
-	  curl -s https://raw.githubusercontent.com/pacstall/pacstall-programs/master/.github/workflow.sh | bash
+          curl -s https://raw.githubusercontent.com/pacstall/pacstall-programs/master/.github/workflow.sh | bash
 
       - name: Installing packages with pacstall (master)
         run: |
