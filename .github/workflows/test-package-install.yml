@@ -21,7 +21,7 @@ jobs:
       - name: Installing packages with pacstall (develop)
         run: |
           pacstall -PU pacstall develop
-          sed -i 's|export SRCDIR="/tmp/pacstall"|export SRCDIR="$HOME/pacstall"|' /bin/pacstall
+          sudo sed -i 's|export SRCDIR="/tmp/pacstall"|export SRCDIR="$HOME/pacstall"|' /bin/pacstall
           sudo su - pacstall
           echo "Chowning /$HOME/pacstall"
           mkdir -pv $HOME/pacstall
