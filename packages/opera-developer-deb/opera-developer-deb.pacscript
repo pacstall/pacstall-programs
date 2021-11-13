@@ -1,0 +1,8 @@
+name="opera-developer-deb"
+gives="opera-developer"
+version="83.0.4232.0"
+breaks="opera-deb opera-beta-deb"
+url="https://download3.operacdn.com/pub/${gives}/${version}/linux/${gives}_${version}_amd64.deb"
+description="Opera is a fast, secure, and user-friendly web browser - Developer"
+hash="03f7254aa3643ec9caaa4752d08ba73096741c6ae78085294ef943486516a8c7"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
