@@ -21,14 +21,15 @@ jobs:
       - name: Installing packages with pacstall (develop)
         run: |
           pacstall -PU pacstall develop
+          sed -i 's|export SRCDIR="/tmp/pacstall"|export SRCDIR="$HOME/pacstall"|' /bin/pacstall
           sudo su - pacstall
-          echo "Chowning /tmp/pacstall"
-          mkdir -pv /tmp/pacstall
+          echo "Chowning /$HOME/pacstall"
+          mkdir -pv $HOME/pacstall
           sudo chown -Rv pacstall:pacstall /var/log/pacstall
           sudo dpkg --add-architecture i386
           sudo add-apt-repository universe
           sudo apt-get update
-          sudo chown -Rv pacstall:pacstall /tmp/pacstall
+          sudo chown -Rv pacstall:pacstall /$HOME/pacstall
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
