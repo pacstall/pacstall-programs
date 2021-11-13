@@ -42,6 +42,7 @@ jobs:
           done
       - name: Installing packages with pacstall (master)
         run: |
+          sudo rm -rf /tmp/pacstall
           pacstall -PU pacstall master
           sudo su - pacstall
           sudo apt-get remove -y axel
