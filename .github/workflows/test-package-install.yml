@@ -14,7 +14,6 @@ jobs:
       - name: Installing pacstall
         run: |
           sudo apt update
-          sudo apt install wget curl sudo
           bash -c "$(wget -q https://git.io/JfHDM -O -)"
       - name: Installing packages with pacstall
         run: | 
