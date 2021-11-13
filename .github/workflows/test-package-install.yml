@@ -23,6 +23,7 @@ jobs:
           pacstall -PU pacstall develop
           sudo su - pacstall
           echo "Chowning /tmp/pacstall"
+          mkdir -pv /tmp/pacstall
           sudo chown -Rv pacstall:pacstall /var/log/pacstall
           sudo dpkg --add-architecture i386
           sudo add-apt-repository universe
