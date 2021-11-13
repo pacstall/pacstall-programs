@@ -13,11 +13,9 @@ jobs:
         uses: jitterbit/get-changed-files@v1
       - name: Installing pacstall
         run: |
-          apt update
-          apt install wget curl sudo
-          bash -c "$(wget -q https://git.io/JfHDM -O -)"
           sudo apt update
-          sudo apt install wget docker.io
+          sudo apt install wget curl sudo docker.io
+          bash -c "$(wget -q https://git.io/JfHDM -O -)"
           docker pull ghcr.io/pacstall/pacstall:latest
       - name: Installing packages with pacstall
         run: | 
