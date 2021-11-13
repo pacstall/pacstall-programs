@@ -25,7 +25,7 @@ jobs:
           cd ${package_dir}
           pacstall -PIl ${package_name}
           }
-          for changed_file in packagelist packages/opentoonz/opentoonz.pacscript; do
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
           set -- [*].pacscript *.pacscript
           case "$1$2" in
             ('[*].pacscript*.pacscript') ;;
