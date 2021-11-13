@@ -20,27 +20,25 @@ jobs:
           echo '%sudo ALL=(ALL) NOPASSWD:ALL' | sudo tee -a /etc/sudoers >/dev/null
       - name: Installing packages with pacstall (develop)
         run: |
-          pacstall -PU pacstall develop
-          sudo sed -i 's|export SRCDIR="/tmp/pacstall"|export SRCDIR="$HOME/pacstall"|' /bin/pacstall
-          sudo su - pacstall
-          echo "Chowning /$HOME/pacstall"
-          mkdir -pv $HOME/pacstall
-          sudo chown -Rv pacstall:pacstall /var/log/pacstall
-          sudo dpkg --add-architecture i386
-          sudo add-apt-repository universe
-          sudo apt-get update
-          sudo chown -Rv pacstall:pacstall /$HOME/pacstall
+          sudo apt update
+          sudo apt install wget docker.io
+          docker pull ghcr.io/pacstall/pacstall:latest
+
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
-              pacscript_file=`basename "${changed_file}"`
-              package_name="${pacscript_file/.pacscript/ }"
-              package_dir=`dirname "${changed_file}"`
-              echo "pacstall -Il ${package_name}"
-              cd ${package_dir}
-              pacstall --disable-prompts -Il ${package_name}
-              pacstall --disable-prompts -R ${package_name}
+	            pacscript_file=`basename "${changed_file}"`
+	            package_name="${pacscript_file/.pacscript/ }"
+	            package_dir=`dirname "${changed_file}"`
+	            echo "pacstall -Il ${package_name}"
+	            cd ${package_dir}
+	            echo "pacstall -PU pacstall develop" | tee -a /tmp/docker.sh
+	            echo "echo '$(cat ${package_name}.pacscript)"\'" > $package_name.pacscript" | tee -a /tmp/docker.sh >/dev/null
+	            echo "pacstall -PIl $package_name" | tee -a /tmp/docker.sh >/dev/null
+
+	            docker container run -i pacstall:latest /bin/bash -s < /tmp/docker.sh
             fi
           done
+
       - name: Installing packages with pacstall (master)
         run: |
           sudo rm -rf /tmp/pacstall
