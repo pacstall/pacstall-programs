@@ -23,14 +23,9 @@ jobs:
               echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -Il ${package_name}"
               cd ${package_dir}
-              pacstall -PU pacstall develop
-              if ! pacstall -PIl ${package_name}; then
-                exit 1
-              else
-                exit 0
-              fi
+              pacstall -PIl ${package_name}
             fi
           done
         env:
-          TERM: xterm
+          TERM: xterm 
           
