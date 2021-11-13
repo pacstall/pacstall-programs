@@ -30,5 +30,6 @@ jobs:
             fi
           done
         env:
-          TERM: xterm 
+          TERM: xterm
+          shell: bash
           
