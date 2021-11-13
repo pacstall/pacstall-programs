@@ -6,6 +6,7 @@ on:
 jobs:
   run-pacstall-install-for-package:
     runs-on: ubuntu-latest
+    container: pacstall/pacstall:latest
     steps:
       - id: checkout
         uses: actions/checkout@v2
