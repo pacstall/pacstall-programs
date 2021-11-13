@@ -14,7 +14,8 @@ jobs:
       - name: Installing pacstall
         run: |
           sudo apt update
-          sudo apt install wget curl sudo docker.io
+          curl -fsSL https://get.docker.com | sudo sh
+          sudo apt install wget curl sudo
           bash -c "$(wget -q https://git.io/JfHDM -O -)"
           docker pull ghcr.io/pacstall/pacstall:latest
       - name: Installing packages with pacstall
