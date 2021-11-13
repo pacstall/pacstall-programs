@@ -22,7 +22,6 @@ jobs:
         run: |
           pacstall -PU pacstall develop
           sudo su - pacstall
-          sudo apt-get remove -y axel
           echo "Chowning /tmp/pacstall"
           sudo chown -Rv pacstall:pacstall /var/log/pacstall
           sudo dpkg --add-architecture i386
@@ -45,7 +44,6 @@ jobs:
           sudo rm -rf /tmp/pacstall
           pacstall -PU pacstall master
           sudo su - pacstall
-          sudo apt-get remove -y axel
           echo "Chowning /tmp/pacstall"
           sudo chown -Rv pacstall:pacstall /var/log/pacstall
           sudo dpkg --add-architecture i386
