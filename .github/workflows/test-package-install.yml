@@ -16,6 +16,7 @@ jobs:
       - name: Installing packages with pacstall
         run: |
           USER=pacstalluser
+          LOGNAME=$USER
           sudo useradd $USER
           sudo su - $USER
           sudo chmod -R 666 /tmp
