@@ -16,9 +16,10 @@ jobs:
       - name: Installing packages with pacstall
         run: |
           USER=pacstalluser
-          sudo useradd -g wheel pacstalluser
+          sudo useradd $USER
+          su sudo - $USER
           sudo chmod -R 666 /tmp
-          sudo chown -R pacstalluser:pacstalluser /tmp
+          sudo chown -R $USER:$USER /tmp
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
