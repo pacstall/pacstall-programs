@@ -1,0 +1,7 @@
+name="forticlient-deb"
+pkgname="forticlient"
+version="7.0.0.0018"
+url="https://filestore.fortinet.com/forticlient/downloads/forticlient_vpn_${version}_amd64.deb"
+breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app ${pkgname}-deb "
+description="The VPN-only version of FortiClient offers SSL VPN and IPSecVPN, but does not include any support."
+hash="82e5817048a60ff95d2e88b4a95512f9f0035fa37240ce57580c203b5a8a79c9"
