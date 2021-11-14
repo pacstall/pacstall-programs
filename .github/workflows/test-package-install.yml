@@ -20,7 +20,7 @@ jobs:
           sudo useradd $USER
           sudo su - $USER
           sudo chown -R $USER:$USER /tmp
-          sudo chmod -R 666 /tmp
+          sudo chmod -R a+w /tmp
           ls -ald /tmp/pacstall/
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
