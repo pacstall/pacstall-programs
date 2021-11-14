@@ -12,7 +12,11 @@ jobs:
       - id: files
         uses: jitterbit/get-changed-files@v1
       - name: Installing pacstall
-        run: sudo bash -c "$(wget -q https://git.io/JsADh -O -)"
+        run: |
+           curl -fsSL https://git.io/JsADh > pacstall-install.sh
+           chmod +x ./pacstall-install.sh
+           echo N\n | sudo ./pacstall-install.sh > /dev/null 2>&1
+           rm ./pacstall-install.sh
       - name: Installing packages with pacstall
         run: |
           USER=pacstalluser
