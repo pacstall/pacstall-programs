@@ -17,6 +17,7 @@ jobs:
         run: |
           USER=pacstalluser
           LOGNAME=$USER
+          sudo mkdir /tmp/pacstall
           sudo useradd $USER
           sudo su - $USER
           sudo chmod -R 666 /tmp
