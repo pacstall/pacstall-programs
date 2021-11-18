@@ -1,5 +1,6 @@
 name="microsoft-edge-stable-deb"
 gives="microsoft-edge-stable"
+breaks="microsoft-edge-dev-deb microsoft-edge-beta-deb"
 version="95.0.1020.44-1"
 url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${version}_amd64.deb"
 description="The web browser from Microsoft."
