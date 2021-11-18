@@ -59,8 +59,10 @@ exploitdb-git
 fast
 fastfetch-git
 fblog-deb
+ferdi-deb
 fishui-git
 fm6000-git
+forticlient-deb
 freetube-deb
 fsearch-git
 gcmcore-deb
@@ -76,6 +78,7 @@ gnome-shell-extension-installer-git
 gnome-tweaks
 google-chrome-deb
 graillon
+grapejuice-git
 grive2
 gtkhash
 heroic-games-launcher-deb
@@ -135,6 +138,7 @@ opensnitch-ui-deb
 opentoonz-gts
 opera-beta-deb
 opera-deb
+opera-developer-deb
 pacget-git
 panagement
 paper-icon-theme
@@ -189,5 +193,6 @@ windscribe-cli-deb
 wine-staging-git
 wine64
 yabridge
+yad
 youtube-dl-git
 zotero

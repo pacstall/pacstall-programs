@@ -1,0 +1,8 @@
+name="ferdi-deb"
+pkgname="ferdi"
+version="5.6.3"
+url="https://github.com/getferdi/ferdi/releases/download/v${version}/ferdi_${version}_amd64.deb"
+breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app ${pkgname}-deb "
+description="Ferdi is a desktop app that helps you organize how you use your favourite apps by combining them into one application."
+hash="71f5f7c74651c53eacc4c9b6d2e2fc94a84c6eb23fca208756b0533ca2250d21"
+maintainer="Zahrun <Zahrun@github.com>"

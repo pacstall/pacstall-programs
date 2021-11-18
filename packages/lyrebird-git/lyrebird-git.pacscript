@@ -18,17 +18,17 @@ build() {
 }
 
 install() {
-    sudo cp -rf "app/" "${pkgdir}/usr/share/${name}"
-    sudo install -Dm644 "icon.png" -t "${pkgdir}/usr/share/${name}"
-    sudo install -Dm644 "app.py" -t "${pkgdir}/usr/share/${name}"
-    sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
-    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
-    sudo install -Dm755 "${name}" -t "${pkgdir}/usr/bin"
+    sudo cp -rf "app/" "${pkgdir}/usr/share/lyrebird"
+    sudo install -Dm644 "icon.png" -t "${pkgdir}/usr/share/lyrebird"
+    sudo install -Dm644 "app.py" -t "${pkgdir}/usr/share/lyrebird"
+    sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/lyrebird"
+    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/lyrebird"
+    sudo install -Dm755 "lyrebird" -t "${pkgdir}/usr/bin"
 }
 
 removescript () {
-    sudo rm -rf "/usr/share/${name}"
-    sudo rm -rf "/usr/share/licenses/${name}"
-    sudo rm -rf "/usr/share/doc/${name}"
+    sudo rm -rf "/usr/share/lyrebird"
+    sudo rm -rf "/usr/share/licenses/lyrebird"
+    sudo rm -rf "/usr/share/doc/lyrebird"
 }
 

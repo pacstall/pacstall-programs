@@ -13,23 +13,31 @@ jobs:
         uses: jitterbit/get-changed-files@v1
       - name: Installing pacstall
         run: |
-          export PACSTALL_SKIP_NETWORK_CHECK=1
-          sudo bash -c "$(wget -q https://git.io/JsADh -O -)"
+           curl -fsSL https://git.io/JsADh > pacstall-install.sh
+           chmod +x ./pacstall-install.sh
+           echo N\n | sudo ./pacstall-install.sh > /dev/null 2>&1
+           rm ./pacstall-install.sh
       - name: Installing packages with pacstall
-        run: | 
-          sudo dpkg --add-architecture i386
-          sudo add-apt-repository universe
-          sudo apt-get update
+        run: |
+          USER=pacstalluser
+          LOGNAME=$USER
+          sudo useradd $USER
+          sudo su - $USER
+          sudo chown -R $USER:$USER /tmp
+          sudo chmod -R 777 /tmp
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
               package_name="${pacscript_file/.pacscript/ }"
               package_dir=`dirname "${changed_file}"`
+              echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -Il ${package_name}"
               cd ${package_dir}
               pacstall --disable-prompts -Il ${package_name}
-              pacstall --disable-prompts -R ${package_name}
+              ls -al /tmp/pacstall/
             fi
           done
         env:
           TERM: xterm
+          shell: bash
+          
