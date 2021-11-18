@@ -1,0 +1,8 @@
+name="httptoolkit-deb"
+gives="httptoolkit"
+version="1.5.0"
+breaks="httptoolkit httptoolkit-git httptoolkit-bin httptoolkit-app"
+url="https://github.com/${gives}/${gives}-desktop/releases/download/v${version}/HttpToolkit-${version}.deb"
+description="HTTP(S) debugging, development & testing tool."
+hash="6fd81da924ddd7c22f0d8bf59e06cf1245f09a1cf24739f6f836aec198793737"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
