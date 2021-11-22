@@ -1,6 +1,7 @@
 name="dino-git"
 url="https://github.com/Henryws/Dino.git"
-breaks="dino"
+breaks="dino dino-app dino-bin"
+gives="dino"
 description="An extensible database system written in Bash"
 maintainer="Henryws <hwengerstickel@pm.me>"
 
