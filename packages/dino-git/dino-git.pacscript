@@ -19,7 +19,7 @@ build() {
 }
 
 install() {
-  sudo install -dm755 dino /usr/src/pacstall/dino-git/bin/dino
-  sudo install -dm755 programs/* /usr/src/pacstall/dino-git/usr/share/dino/programs
-  sudo install -dm755 LICENSE /usr/src/pacstall/dino-git/usr/share/licenses/"${name}"/LICENSE
+  sudo install -Dm755 dino /usr/src/pacstall/dino-git/usr/bin/dino
+  sudo install -D programs/* -t /usr/src/pacstall/dino-git/usr/share/dino/programs
+  sudo install -Dm755 LICENSE /usr/src/pacstall/dino-git/usr/share/licenses/"${name}"/LICENSE
 }
