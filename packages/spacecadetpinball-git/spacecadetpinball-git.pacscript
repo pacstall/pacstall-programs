@@ -18,6 +18,7 @@ breaks="${pkgname} ${pkgname}-bin ${pkgname}-app ${pkgname}-deb"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 
 }
+version="$(pkgver)"
 
 prepare() {
   # Download game data file
