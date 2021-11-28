@@ -39,6 +39,7 @@ cutefish-settings-git
 cutefish-statusbar-git
 cutefish-wallpapers-git
 dbeaver-ce-deb
+dino-git
 discord
 discord-canary
 discord-ptb-deb
@@ -68,8 +69,8 @@ fsearch-git
 gcmcore-deb
 geekbench-bin
 git
-git-delta-deb
 gitblade-deb
+git-delta-deb
 gitfiend-deb
 github-cli-deb
 github-desktop
@@ -113,6 +114,7 @@ mangohud
 micro
 microsoft-edge-beta-deb
 microsoft-edge-dev-deb
+microsoft-edge-stable-deb
 microsoft-prod-repo
 minecraft-launcher
 moka-icon-theme
@@ -157,6 +159,7 @@ sed
 shell-color-scripts
 smartgit
 soundux
+spacecadetpinball-git
 spotify-client-deb
 st-distrotube-git
 stellarium
@@ -192,8 +195,8 @@ warpinator-deb
 webapp-manager
 webapp-manager-deb
 windscribe-cli-deb
-wine-staging-git
 wine64
+wine-staging-git
 yabridge
 yad
 youtube-dl-git
