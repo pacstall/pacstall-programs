@@ -1,6 +1,8 @@
 name="bazecor-app"
 pkgname="bazecor"
 version="0.3.4"
+gives="bazecor"
+description="Bazecor is the graphical configurator for the Dygma Raise"
 url="https://github.com/Dygmalab/Bazecor/releases/download/v${version}/Bazecor-${version}.AppImage"
 hash="75680b07dc11d59778d03e78efd51c0928f1d333d65e6c3a412d04ac2ae61ff7"
 breaks="bazecor bazecor-bin bazecor-deb bazecor-git"
