@@ -8,4 +8,6 @@ repos:
       - id: check-added-large-files
       - id: file-contents-sorter
         files: packagelist
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
 # vim:set ft=yaml ts=2 sw=2 et:
