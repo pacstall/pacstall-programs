@@ -61,7 +61,7 @@ breaks="${name}-git ${name}-nox"
 replace="${name}-git ${name}-nox"
 hash="b4a7cc4e78e63f378624e0919215b910af5bb2a0afc819fad298272e9f40c1b9"
 
-if [[ $GOLD == "YES" && ! $CLANG == "YES" ]]; then
+if [[ $GOLD == "YES" && $CLANG != "YES" ]]; then
   export LD=/usr/bin/ld.gold
   export CFLAGS+=" -fuse-ld=gold"
   export CXXFLAGS+=" -fuse-ld=gold"
@@ -116,13 +116,13 @@ fi
 
 if [[ $MAGICK == "YES" ]]; then
   depends+=" imagemagick libjpeg-turbo8 giflib-tools"
-elif [[ ! $NOX == "YES" ]] && [[ ! $CLI == "YES" ]]; then
+elif [[ $NOX != "YES" ]] && [[ $CLI != "YES" ]]; then
   depends+=" libjpeg-turbo8 giflib-tools"
 elif [[ $CLI == "YES" ]]; then
   depends+=""
 fi
 
-if [[ ! $NOCAIRO == "YES" ]] && [[ ! $CLI == "YES" ]]; then
+if [[ $NOCAIRO != "YES" ]] && [[ $CLI != "YES" ]]; then
   depends+=" libcairo2"
 fi
 
