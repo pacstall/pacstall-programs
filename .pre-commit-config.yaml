@@ -10,4 +10,11 @@ repos:
         files: packagelist
       - id: mixed-line-ending
         args: ["--fix=lf"]
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 2.1.5
+    hooks:
+      - id: shellcheck
+        types: []
+        args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034"]
+        files: '^.*\.(pacscript)$'
 # vim:set ft=yaml ts=2 sw=2 et:
