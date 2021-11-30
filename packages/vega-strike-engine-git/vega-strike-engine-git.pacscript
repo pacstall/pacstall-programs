@@ -14,7 +14,6 @@ version="$(pkgver)"
 
 prepare(){
 	true
-	echo "$STOWDIR"
 }
 
 build() {
