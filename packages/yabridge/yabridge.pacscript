@@ -1,5 +1,5 @@
 name="yabridge"
-version="3.6.0"
+version="3.7.0"
 url="https://github.com/robbert-vdh/yabridge/releases/download/$version/yabridge-$version.tar.gz"
 build_depends="libxcb1 libxcb1:i386"
 description="A modern and transparent way to use Windows VST2 and VST3 plugins on Linux."
