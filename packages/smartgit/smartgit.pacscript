@@ -23,14 +23,14 @@ install() {
     sudo mkdir -p "$STOWDIR/$name/opt"
     sudo cp -r "$SRCDIR/$name" -t "$STOWDIR/$name/opt"
     sudo chmod 755 "$STOWDIR/$name/opt"
-    
+
     for _size in 32 48 64 128 256
     do
         sudo chmod 755 "./bin/smartgit-${_size}.png"
         sudo mkdir -p "$STOWDIR/$name/usr/share/icons/hicolor/${_size}x${_size}/apps"
         sudo mv "./bin/smartgit-${_size}.png" "$STOWDIR/$name/usr/share/icons/hicolor/${_size}x${_size}/apps/$name.png"
     done
-    
+
     sudo chmod 755 "$STOWDIR/$name/opt/$name/bin/smartgit.sh"
 }
 

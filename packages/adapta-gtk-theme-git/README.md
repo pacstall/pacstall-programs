@@ -254,7 +254,7 @@ GtkSourceView/Gedit Color Scheme Support
 
  > **Note:**
  >
- >   * The color-scheme can be used in Gnome-Builder, Gnome-Sushi, Meld and Gedit if installed to 
+ >   * The color-scheme can be used in Gnome-Builder, Gnome-Sushi, Meld and Gedit if installed to
  >     `~/.local/share/gtksourceview-3.0/styles` or `~/.local/share/gtksourceview-4/styles` directory.
  >   * Currently only dark-variant is supported.
 

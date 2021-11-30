@@ -1,9 +1,9 @@
-#  __      __________   ______  
-# /  \    /  \_____  \ /  __  \ 
-# \   \/\/   //  ____/ >      < 
+#  __      __________   ______
+# /  \    /  \_____  \ /  __  \
+# \   \/\/   //  ____/ >      <
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
-#        \/          \/      \/ 
+#        \/          \/      \/
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="uwufetch"
@@ -37,13 +37,13 @@ install() {
 
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
-  
+
   # Install uwufetch
   sudo make install DESTDIR="${pkgdir}"
 }
 
 removescript() {
-  # Remove empty directories 
+  # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${name}"
   sudo rm -rf "/usr/share/doc/${name}"
 }

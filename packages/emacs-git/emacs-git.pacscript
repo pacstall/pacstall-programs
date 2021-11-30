@@ -1,9 +1,9 @@
-#  __      __________   ______  
-# /  \    /  \_____  \ /  __  \ 
-# \   \/\/   //  ____/ >      < 
+#  __      __________   ______
+# /  \    /  \_____  \ /  __  \
+# \   \/\/   //  ____/ >      <
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
-#        \/          \/      \/ 
+#        \/          \/      \/
 maintainer="wizard-28 <wiz28@pm.me>"
 
 ### This pacscript is made with (ported to pacstall) the help of https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=emacs-git
@@ -38,12 +38,12 @@ LUCID=            # Use the lucid, a.k.a athena, toolkit. Like XEmacs, sorta.
                   # Xft, if you choose no toolkit or Lucid.
                   #
 GTK2=             # GTK2 support. Why would you?
-NOCAIRO=          # Disable here. 
+NOCAIRO=          # Disable here.
 XWIDGETS=         # Use GTK+ widgets pulled from libwebkit2gtk-4.0-37. Usable.
 DOCS_HTML=        # Generate and install html documentation.
 DOCS_PDF=         # Generate and install pdf documentation.
 MAGICK=           # ImageMagick 7 support. Deprecated (read the logs).
-                  # ImageMagick, like flash, won't die... 
+                  # ImageMagick, like flash, won't die...
                   # -->>If you just *believe* you need ImageMagick, you don't.<<--
 NOGZ="YES"        # Don"t compress .el files.
 ################################################################################
@@ -94,7 +94,7 @@ fi
 
 if [[ $JIT == "YES" ]]; then
   if [[ $CLI == "YES" ]]; then
-    depends_nox+=" libgccjit0" 
+    depends_nox+=" libgccjit0"
   else
     depends+=" libgccjit0"
   fi

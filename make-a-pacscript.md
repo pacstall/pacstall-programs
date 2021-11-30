@@ -39,7 +39,7 @@ install() {
           # It is recommended for paths to be condensed with
           # variables and to be wrapped by double quotes
           sudo make install DESTDIR="$STOWDIR/$name"
-          
+
           # If the package comes already compiled, use 'install'
           sudo install -Dm755 $name -t  "$STOWDIR/$name/usr/bin"
 }
@@ -103,7 +103,7 @@ They are the packages needed to compile the package. They must be Ubuntu apt pac
 
 #### `pacdeps`
 
-It's an array of pacscripts dependencies. Should be used when the pacscript needs a package that is not present in the `apt`repositories (see soundux).  
+It's an array of pacscripts dependencies. Should be used when the pacscript needs a package that is not present in the `apt`repositories (see soundux).
 
 #### `ppa`
 
@@ -113,15 +113,15 @@ It's an array that you can use to install ppa's. It is highly discouraged to use
 
 It's where you put optional dependencies. Pacstall will ask the user if they want to install them before the package starts installing.
 
-#### `breaks` 
+#### `breaks`
 
 This is where you put the packages that would break if you install this package. An example would be foo and foo-git. They both install to the same files, but different sources. It is not needed unless you are making a `-git`, `-bin` or `-deb` package.
 
-#### `replace` 
+#### `replace`
 
 It's the name of the apt package that this package replaces, the user will be asked to continue before the apt package is removed.
 
-#### `gives` 
+#### `gives`
 
 The name of the apt dependency which this package provides for. Often used in tandem with `replace`.
 
@@ -145,7 +145,7 @@ The `build` function is what compiles the package. Use multicore as much as poss
 
 The `install` function is what installs the package. The most important thing is to install to `$STOWDIR/$name`. An example with make would be `sudo make install DESTDIR="$STOWDIR/$name"`.
 
-#### `postinst` 
+#### `postinst`
 
 It's a series of commands that should be run after pkg is installed. If you don't need it, leave it out.
 
@@ -169,7 +169,7 @@ Lastly, do not ask the user for any input unless absolutely necessary. Use exter
 
 ### Updating the packagelist
 
-Before submitting a PR please update the `packagelist` inside the root of this repository. Add your package name in alphabetic order into the file. 
+Before submitting a PR please update the `packagelist` inside the root of this repository. Add your package name in alphabetic order into the file.
 
 ### Opening a PR
 When you complete your script, fork this repo and add your script to packages/`$name`/`$name`.pacscript. Open a PR here and make the title: "Add `$name`" with the label `Package Add`. Please do one PR per package to make sure the auto checker can test if the pacscript works.

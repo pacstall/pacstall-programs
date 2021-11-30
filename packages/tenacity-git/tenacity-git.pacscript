@@ -8,7 +8,7 @@ optdepends="ffmpeg: additional import/export capabilities"
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 
+    git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 

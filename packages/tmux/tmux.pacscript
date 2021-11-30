@@ -27,4 +27,3 @@ install() {
           sudo install -Dm0644 COPYING "$STOWDIR/$name/usr/share/licenses/tmux/LICENSE"
 
 }
-

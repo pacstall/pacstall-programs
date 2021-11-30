@@ -20,7 +20,7 @@ prepare() {
 }
 
 build() {
-    true 
+    true
 }
 
 install() {

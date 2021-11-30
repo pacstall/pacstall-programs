@@ -13,7 +13,7 @@ prepare() {
 }
 
 build() {
-	cd gst-plugin-viperfx  
+	cd gst-plugin-viperfx
 	cmake -j$(nproc) .
 	make -j$(nproc)
 }
@@ -21,13 +21,13 @@ build() {
 install() {
 	#These are basically install instructions from https://github.com/Audio4Linux/Viper4Linux
 	sudo cp libgstviperfx.so "$STOWDIR/${name}/usr/lib/x86_64-linux-gnu/gstreamer-1.0/"
-	
+
 	cd ..
-	
+
 	sudo cp "viperfx_core_binary/libviperfx_x64_linux.so" "$STOWDIR/${name}/usr/lib/libviperfx.so"
-	
+
 	cd Viper4Linux
 	sudo cp -r viper4linux "$STOWDIR/${name}/home/$USER/.config/"
-	
+
 	sudo install -Dm755 viper -t "$STOWDIR/${name}/usr/bin"
-} 
+}

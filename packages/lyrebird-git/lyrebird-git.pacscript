@@ -31,4 +31,3 @@ removescript () {
     sudo rm -rf "/usr/share/licenses/lyrebird"
     sudo rm -rf "/usr/share/doc/lyrebird"
 }
-

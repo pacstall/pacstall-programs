@@ -20,7 +20,7 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {	
+prepare() {
 	# Patch uses vendored version of qm-dsp because qm-dsp >= 1.8.0 is not compatible
 	# will be applied when ubuntu starts supporting qm-dsp 1.8.0
 
@@ -47,9 +47,9 @@ build() {
 install() {
 	sudo ./waf i18n --destdir="$STOWDIR/$name"
 	sudo ./waf install --destdir="$STOWDIR/$name"
-	
+
 	wait
-	
+
 	sudo rm "$STOWDIR/$name/usr/bin/ardour6-copy-mixer"
 	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
 	sudo rm "$STOWDIR/$name/usr/bin/ardour6-export"
@@ -60,10 +60,10 @@ install() {
 	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-new_empty_session"
 	sudo rm "$STOWDIR/$name/usr/bin/ardour6-new_session"
 	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-new_session"
-	
+
 	# man pages
 	sudo install -vDm 644 "ardour.1" -t "$STOWDIR/$name/usr/share/man/man1/"
-	
+
 	# File types
 	sudo install -vDm 644 "build/gtk2_ardour/ardour.xml" -t "$STOWDIR/$name/usr/share/mime/packages/"
 
@@ -80,7 +80,7 @@ install() {
 		sudo install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps"
 		sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/resources/Ardour-icon_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
 	done
-	
+
 }
 
 removescript() {

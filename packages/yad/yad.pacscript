@@ -15,7 +15,7 @@ maintainer="echometerain <echometer@disroot.org>"
 prepare() {
 	autoreconf -ivf
 	intltoolize
-	
+
 	FLAGS="--enable-icon-browser --enable-gio"
 	dpkg-query -W libwebkit2gtk-4.0-dev > /dev/null 2>&1
 	if [[ $? -eq 0 ]]; then

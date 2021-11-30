@@ -17,7 +17,7 @@ prepare() {
 }
 
 build() {
-    cmake -DCMAKE_INSTALL_PREFIX="/" -j$(nproc) ../.. 
+    cmake -DCMAKE_INSTALL_PREFIX="/" -j$(nproc) ../..
     make -j$(nproc)
 }
 
