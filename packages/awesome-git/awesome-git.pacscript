@@ -22,7 +22,6 @@ optdepends=("rlwrap: readline support for awesome-client"
 breaks="${pkgname} ${pkgname}-bin"
 removescript="yes"
 
-
 pkgver() {
     git ls-remote "${url}" master | cut -f1
 }
@@ -42,7 +41,7 @@ install() {
   sudo make install DESTDIR="${pkgdir}"
 }
 
-postinst(){
+postinst() {
   # Install to correct location .desktop file
   sudo ln -sf "${pkgdir}"/usr/local/share/xsessions/"${pkgname}".desktop /usr/share/xsessions/"${pkgname}".desktop
 }

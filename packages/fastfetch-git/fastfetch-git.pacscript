@@ -24,7 +24,6 @@ optdepends=("libpci-dev: GPU output"
 breaks="${pkgname} ${pkgname}-bin"
 removescript="yes"
 
-
 pkgver() {
   git ls-remote "${url}" master | cut -f1
 }

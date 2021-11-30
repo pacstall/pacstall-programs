@@ -11,45 +11,45 @@ breaks="${name}-git ${name}-deb ${name}-app ${name}-deb ${name}-bin"
 
 prepare() {
 
-	sudo mkdir -p "/home/$LOGNAME/.config/OpenToonz"
-	sudo cp -r "opentoonz/stuff" "/home/$LOGNAME/.config/OpenToonz/"
-	sudo chown -R "$LOGNAME" "/home/$LOGNAME/.config/OpenToonz/"
+  sudo mkdir -p "/home/$LOGNAME/.config/OpenToonz"
+  sudo cp -r "opentoonz/stuff" "/home/$LOGNAME/.config/OpenToonz/"
+  sudo chown -R "$LOGNAME" "/home/$LOGNAME/.config/OpenToonz/"
 
-	cd toonz
-	mkdir build
-	cd ../
+  cd toonz
+  mkdir build
+  cd ../
 }
 
 build() {
 
-	cd "thirdparty/tiff-4.0.3"
-	./configure --with-pic --disable-jbig
-	make -j$(nproc)
-	cd ../../
+  cd "thirdparty/tiff-4.0.3"
+  ./configure --with-pic --disable-jbig
+  make -j$(nproc)
+  cd ../../
 
-	cd "toonz/build"
-	cmake "../sources"
-	make -j$(nproc)
-	cd ../../
+  cd "toonz/build"
+  cmake "../sources"
+  make -j$(nproc)
+  cd ../../
 
 }
 
 install() {
 
-	cd "toonz/build"
-	sudo make install DESTDIR="$STOWDIR/$name"
-	cd ../../
-	sudo install -Dm644 LICENSE.txt "$STOWDIR/$name/usr/share/licenses/$name/LICENSE.txt"
-	sudo chmod +x "$STOWDIR/$name/opt/$name/bin/opentoonz"
+  cd "toonz/build"
+  sudo make install DESTDIR="$STOWDIR/$name"
+  cd ../../
+  sudo install -Dm644 LICENSE.txt "$STOWDIR/$name/usr/share/licenses/$name/LICENSE.txt"
+  sudo chmod +x "$STOWDIR/$name/opt/$name/bin/opentoonz"
 
-	sudo install -Dm755 "toonz/sources/xdg-data/io.github.OpenToonz.desktop" "$STOWDIR/$name/usr/share/applications/"
-	sudo install -Dm644 "toonz/sources/xdg-data/io.github.OpenToonz.png" "$STOWDIR/$name/usr/share/pixmaps/"
+  sudo install -Dm755 "toonz/sources/xdg-data/io.github.OpenToonz.desktop" "$STOWDIR/$name/usr/share/applications/"
+  sudo install -Dm644 "toonz/sources/xdg-data/io.github.OpenToonz.png" "$STOWDIR/$name/usr/share/pixmaps/"
 }
 
 removescript() {
 
-	ask "Do you want to remove your opentoonz config?" N
-	if [[ $answer -eq 1 ]]; then
-		sudo rm -rf "home/$LOGNAME/.config/OpenToonz/"
-	fi
+  ask "Do you want to remove your opentoonz config?" N
+  if [[ $answer -eq 1 ]]; then
+    sudo rm -rf "home/$LOGNAME/.config/OpenToonz/"
+  fi
 }

@@ -12,13 +12,13 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-	true
+  true
 }
 
 build() {
-	true
+  true
 }
 
 install() {
-	sudo install -Dm755 ${pkgname} -t "$STOWDIR/$name/usr/bin"
+  sudo install -Dm755 ${pkgname} -t "$STOWDIR/$name/usr/bin"
 }

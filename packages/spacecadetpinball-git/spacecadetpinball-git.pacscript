@@ -50,7 +50,7 @@ install() {
   sudo install -Dm755 "bin/SpaceCadetPinball" "${pkgdir}/usr/lib/${pkgname}/${pkgname}"
 
   # Install wrapper script
-  sudo install -Dm755 /dev/stdin "${pkgdir}/usr/bin/${pkgname}" <<END
+  sudo install -Dm755 /dev/stdin "${pkgdir}/usr/bin/${pkgname}" << END
 #!/bin/sh
 # Run program in correct directory so it can find it's resources
 cd /usr/lib/${pkgname}
@@ -59,8 +59,8 @@ END
 
   # Install resources
   (
-  cd Space_Cadet
-  sudo install -m644 ./*.DAT ./*.DOC ./*.MID ./*.BMP ./*.INF ./*.WAV -t "${pkgdir}/usr/lib/${pkgname}"
+    cd Space_Cadet
+    sudo install -m644 ./*.DAT ./*.DOC ./*.MID ./*.BMP ./*.INF ./*.WAV -t "${pkgdir}/usr/lib/${pkgname}"
   )
 
   # Install icon

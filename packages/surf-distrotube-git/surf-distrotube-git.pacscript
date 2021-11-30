@@ -30,7 +30,7 @@ install() {
           sudo install -Dm644 README.md -t /usr/src/pacstall/$name/usr/share/doc/$pkgname
 }
 
-removescript(){
+removescript() {
           sudo rm -rf /usr/share/licenses/$pkgname
           sudo rm -rf /usr/share/doc/$pkgname
 }

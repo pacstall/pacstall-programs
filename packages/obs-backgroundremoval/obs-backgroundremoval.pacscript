@@ -10,28 +10,28 @@ hash="e88bbc902154b5efd46d8fc1dee52fcf079c8ff2ae6593d9f716017fdd1ef601"
 maintainer="Zahrun <Zahrun@github.com>"
 
 prepare() {
-	# install required dependency for codename > focal
-	codename=$(lsb_release -cs)
-	case $codename in
-		focal )
-		;;
-		*)
-			sudo apt install libsimde-dev
-		;;
-	esac
-	# fix CMakeLists
-	sed -i "s/^version_from_git()/set(VERSION $version)/" CMakeLists.txt
-	sed -i "s;LIBDIR}/obs-plugin;LIBDIR}/x86_64-linux-gnu/obs-plugin;" CMakeLists.txt
-	# fix plugin crashes OBS
-	sed -i "s/std::string(newModel);/newModel;/" src/background-filter.cpp
+  # install required dependency for codename > focal
+  codename=$(lsb_release -cs)
+  case $codename in
+    focal) ;;
+
+    *)
+      sudo apt install libsimde-dev
+      ;;
+  esac
+  # fix CMakeLists
+  sed -i "s/^version_from_git()/set(VERSION $version)/" CMakeLists.txt
+  sed -i "s;LIBDIR}/obs-plugin;LIBDIR}/x86_64-linux-gnu/obs-plugin;" CMakeLists.txt
+  # fix plugin crashes OBS
+  sed -i "s/std::string(newModel);/newModel;/" src/background-filter.cpp
 }
 
 build() {
-	mkdir build && cd build
-	cmake -j$(nproc) -DobsIncludePath=/usr/include/obs -DCMAKE_INSTALL_PREFIX:PATH=$STOWDIR/$name/usr .. > /dev/null && cmake --build . -j$(nproc) > /dev/null
+  mkdir build && cd build
+  cmake -j$(nproc) -DobsIncludePath=/usr/include/obs -DCMAKE_INSTALL_PREFIX:PATH=$STOWDIR/$name/usr .. > /dev/null && cmake --build . -j$(nproc) > /dev/null
 }
 
 install() {
-	sudo cmake --install . > /dev/null
-	sudo install -Dm644 "../LICENSE" -t "$STOWDIR/$name/usr/share/licenses/$name"
+  sudo cmake --install . > /dev/null
+  sudo install -Dm644 "../LICENSE" -t "$STOWDIR/$name/usr/share/licenses/$name"
 }

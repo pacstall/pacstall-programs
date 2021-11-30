@@ -24,7 +24,7 @@ install() {
           sudo install -Dm644 README -t /usr/src/pacstall/$name/usr/share/doc/$name
 }
 
-removescript(){
+removescript() {
           sudo rm -rf /usr/share/licenses/$name
           sudo rm -rf /usr/share/doc/$name
 }

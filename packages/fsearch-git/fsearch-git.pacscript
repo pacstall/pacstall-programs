@@ -10,14 +10,14 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-	./autogen.sh
+  ./autogen.sh
 }
 
 build() {
-	./configure
-	make -j$(nproc)
+  ./configure
+  make -j$(nproc)
 }
 
 install() {
-	sudo make install DESTDIR="$STOWDIR/$name"
+  sudo make install DESTDIR="$STOWDIR/$name"
 }

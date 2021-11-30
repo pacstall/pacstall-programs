@@ -8,28 +8,28 @@ description="This is a Printer Utility program for Epson Printer Driver. Using t
 hash="417b637173c0b866a94eb5d9785aecbcd10fc99fd1d7149eb49f02f450e6b61f"
 maintainer="Zahrun <Zahrun@github.com>"
 
-postinst(){
-	# install .desktop file
-	wget -q https://gist.github.com/Zahrun/0759d7356d7b55985292b65642e976f6/raw/c9ef796e550812456dc2990879118ad1a481d792/epson-printer-utility.desktop
-	sudo install -Dm644 "$gives.desktop" "/usr/share/applications/"
-	# enable service to avoid communication error
-	sudo systemctl enable ecbd.service
-	sudo systemctl start ecbd.service
-	# fix ppa if ubuntu release is posterior to groovy
-	codename=$(lsb_release -cs)
-	case $codename in
-		focal | groovy)
-			;;
-		*)
-			sudo sed -i "s/$codename/groovy/g" "/etc/apt/sources.list.d/gezakovacs-ubuntu-ppa-$codename.list"
-			;;
-	esac
-	sudo apt update
-	sudo apt install -y libqtgui4
+postinst() {
+  # install .desktop file
+  wget -q https://gist.github.com/Zahrun/0759d7356d7b55985292b65642e976f6/raw/c9ef796e550812456dc2990879118ad1a481d792/epson-printer-utility.desktop
+  sudo install -Dm644 "$gives.desktop" "/usr/share/applications/"
+  # enable service to avoid communication error
+  sudo systemctl enable ecbd.service
+  sudo systemctl start ecbd.service
+  # fix ppa if ubuntu release is posterior to groovy
+  codename=$(lsb_release -cs)
+  case $codename in
+    focal | groovy) ;;
+
+    *)
+      sudo sed -i "s/$codename/groovy/g" "/etc/apt/sources.list.d/gezakovacs-ubuntu-ppa-$codename.list"
+      ;;
+  esac
+  sudo apt update
+  sudo apt install -y libqtgui4
 }
 
-removescript(){
-	sudo rm /usr/share/applications/${gives}.desktop
-	sudo systemctl disable ecbd.service
-	sudo systemctl stop ecbd.service
+removescript() {
+  sudo rm /usr/share/applications/${gives}.desktop
+  sudo systemctl disable ecbd.service
+  sudo systemctl stop ecbd.service
 }

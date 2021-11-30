@@ -7,18 +7,18 @@ hash="d8544b8941fcc9049b6743c99799b380bd636c6f49b10ed08204719de866f1a1"
 maintainer="echometer <guacamolek@yandex.com>"
 
 prepare() {
-	true
+  true
 }
 
 build() {
-	true
+  true
 }
 
 install() {
-	sudo mkdir -p "$STOWDIR/$name/usr/lib/lv2"
-	sudo mv "./Linux/Linux-64b-LV2-FREE" "$STOWDIR/$name/usr/lib/lv2/Auburn Sounds $_name 2.lv2"
-	sudo mkdir -p "$STOWDIR/$name/usr/lib/vst"
-	sudo mv "./Linux/Linux-64b-VST2-FREE" "$STOWDIR/$name/usr/lib/vst/Auburn Sounds $_name 2.VST2"
-	sudo mkdir -p "$STOWDIR/$name/usr/lib/vst3"
-	sudo mv "./Linux/Linux-64b-VST3-FREE/Auburn Sounds $_name 2.vst3" "$STOWDIR/$name/usr/lib/vst3/Auburn Sounds $_name 2.vst3"
+  sudo mkdir -p "$STOWDIR/$name/usr/lib/lv2"
+  sudo mv "./Linux/Linux-64b-LV2-FREE" "$STOWDIR/$name/usr/lib/lv2/Auburn Sounds $_name 2.lv2"
+  sudo mkdir -p "$STOWDIR/$name/usr/lib/vst"
+  sudo mv "./Linux/Linux-64b-VST2-FREE" "$STOWDIR/$name/usr/lib/vst/Auburn Sounds $_name 2.VST2"
+  sudo mkdir -p "$STOWDIR/$name/usr/lib/vst3"
+  sudo mv "./Linux/Linux-64b-VST3-FREE/Auburn Sounds $_name 2.vst3" "$STOWDIR/$name/usr/lib/vst3/Auburn Sounds $_name 2.vst3"
 }

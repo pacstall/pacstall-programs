@@ -26,7 +26,7 @@ install() {
     sudo install -Dm755 "lyrebird" -t "${pkgdir}/usr/bin"
 }
 
-removescript () {
+removescript()  {
     sudo rm -rf "/usr/share/lyrebird"
     sudo rm -rf "/usr/share/licenses/lyrebird"
     sudo rm -rf "/usr/share/doc/lyrebird"

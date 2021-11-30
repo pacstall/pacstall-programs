@@ -25,6 +25,6 @@ install() {
     sudo DESTDIR="$STOWDIR/$name" ninja install
 }
 
-postinst(){
+postinst() {
     true
 }

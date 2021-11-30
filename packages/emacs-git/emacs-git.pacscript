@@ -84,11 +84,11 @@ if [[ $CLANG == "YES" ]]; then
 fi
 if [[ $LTO == "YES" ]]; then
   if [[ $CLANG != "YES" ]]; then
-  CFLAGS+=" -flto -fuse-linker-plugin"
-  CXXFLAGS+=" -flto -fuse-linker-plugin"
-else
-  CFLAGS+=" -flto"
-  CXXFLAGS+=" -flto"
+    CFLAGS+=" -flto -fuse-linker-plugin"
+    CXXFLAGS+=" -flto -fuse-linker-plugin"
+  else
+    CFLAGS+=" -flto"
+    CXXFLAGS+=" -flto"
   fi
 fi
 
@@ -145,7 +145,7 @@ prepare() {
   if [[ $CHECK == "YES" ]]; then
     make -j"$(nproc)" check
   fi
- }
+}
 
 build() {
   local _conf=(
@@ -157,54 +157,54 @@ build() {
     --with-gameuser=:games
     --with-sound=alsa
     --with-modules
-# Beware https://debbugs.gnu.org/cgi/bugreport.cgi?bug=25228
-# dconf and gconf break font settings you set in ~/.emacs.
-# If you insist you'll need to read that bug report in *full*.
-# Good luck!
-   --without-gconf
-   --without-gsettings
+    # Beware https://debbugs.gnu.org/cgi/bugreport.cgi?bug=25228
+    # dconf and gconf break font settings you set in ~/.emacs.
+    # If you insist you'll need to read that bug report in *full*.
+    # Good luck!
+    --without-gconf
+    --without-gsettings
   )
 
   if [[ $CLANG == "YES" ]]; then
-    _conf+=( "--enable-autodepend" )
+    _conf+=("--enable-autodepend")
   fi
 
   if [[ $LTO == "YES" ]]; then
-    _conf+=( "--enable-link-time-optimization" )
+    _conf+=("--enable-link-time-optimization")
   fi
 
   if [[ $JIT == "YES" ]]; then
-    _conf+=( "--with-native-compilation" )
+    _conf+=("--with-native-compilation")
   fi
 
   if [[ $CLI == "YES" ]]; then
-    _conf+=( "--without-x" "--with-x-toolkit=no" "--without-xft" "--without-lcms2" "--without-rsvg" "--without-jpeg" "--without-gif" "--without-tiff" "--without-png" )
+    _conf+=("--without-x" "--with-x-toolkit=no" "--without-xft" "--without-lcms2" "--without-rsvg" "--without-jpeg" "--without-gif" "--without-tiff" "--without-png")
   elif [[ $NOTKIT == "YES" ]]; then
-    _conf+=( "--with-x-toolkit=no" "--without-toolkit-scroll-bars" "--with-xft" "--without-xaw3d" )
+    _conf+=("--with-x-toolkit=no" "--without-toolkit-scroll-bars" "--with-xft" "--without-xaw3d")
   elif [[ $LUCID == "YES" ]]; then
-    _conf+=( "--with-x-toolkit=lucid" "--with-xft" "--with-xaw3d" )
+    _conf+=("--with-x-toolkit=lucid" "--with-xft" "--with-xaw3d")
   elif [[ $GTK2 == "YES" ]]; then
-    _conf+=( "--with-x-toolkit=gtk2" "--without-gsettings" "--without-xaw3d" )
+    _conf+=("--with-x-toolkit=gtk2" "--without-gsettings" "--without-xaw3d")
   else
-    _conf+=( "--with-x-toolkit=gtk3" "--without-xaw3d" )
+    _conf+=("--with-x-toolkit=gtk3" "--without-xaw3d")
   fi
 
   if [[ $MAGICK == "YES" ]]; then
-    _conf+=( "--with-imagemagick")
+    _conf+=("--with-imagemagick")
   else
-    _conf+=();
+    _conf+=()
   fi
 
   if [[ $NOCAIRO == "YES" || $CLI == "YES" ]]; then
-    _conf+=( "--without-cairo" )
+    _conf+=("--without-cairo")
   fi
 
   if [[ $XWIDGETS == "YES" ]]; then
-    _conf+=( "--with-xwidgets" )
+    _conf+=("--with-xwidgets")
   fi
 
   if [[ $NOGZ == "YES" ]]; then
-    _conf+=( "--without-compress-install" )
+    _conf+=("--without-compress-install")
   fi
 
   # ctags/etags may be provided by other packages, e.g, universal-ctags
