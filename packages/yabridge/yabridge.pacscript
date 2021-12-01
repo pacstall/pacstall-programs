@@ -1,9 +1,9 @@
 name="yabridge"
-version="3.6.0"
+version="3.7.0"
 url="https://github.com/robbert-vdh/yabridge/releases/download/$version/yabridge-$version.tar.gz"
 build_depends="libxcb1 libxcb1:i386"
 description="A modern and transparent way to use Windows VST2 and VST3 plugins on Linux."
-hash="8038bcef74b8cd4d0b05b7318eac74fa241abc5db0b7f92e29ab8d7425c5c8ff"
+hash="46a68052157bd30c4aeb5b0eb84154582408eb099377716e3690518dec048384"
 optdepends=("wine: 32-bit windows emulator"
 "wine64: 64-bit windows emulator")
 maintainer="echometerain <echometer@disroot.org>"
