@@ -15,7 +15,7 @@ repos:
     hooks:
       - id: shellcheck
         types: []
-        args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034"]
+        args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034", "-e", "SC2154"]
         files: '^.*\.(pacscript)$'
       - id: shfmt
         args: ["-i", "2", "-bn", "-ci", "-sr", "-kp", "-s"]
