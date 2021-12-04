@@ -10,7 +10,7 @@ package-repository/
         └── example-package.pacscript
 ```
 
-You can then use `pacstall -A` command to add your repository to your `repolist`. Consult the wiki on more info.
+You can then use `pacstall -A` command to add your repository to your `repolist`. Consult the wiki for more info.
 
 ## How to setup the environment for pacscript development
 
