@@ -1,0 +1,24 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: file-contents-sorter
+        files: packagelist
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 2.1.5
+    hooks:
+      - id: shellcheck
+        types: []
+        args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034", "-e", "SC2154", "-e", "SC2312"]
+        files: '^.*\.(pacscript)$'
+      - id: shfmt
+        args: ["-i", "2", "-bn", "-ci", "-sr", "-kp", "-s"]
+        types: []
+        files: '^.*\.(pacscript)$'
+# vim:set ft=yaml ts=2 sw=2 et:

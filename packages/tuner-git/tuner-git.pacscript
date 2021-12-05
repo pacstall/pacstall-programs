@@ -14,9 +14,9 @@ version="$(pkgver)"
 prepare() {
     if ask "Are you sure you want to install the development version of Tuner?" Y; then
         meson builddir --prefix=/usr
-    else
+  else
         exit 1
-    fi
+  fi
 }
 
 build() {

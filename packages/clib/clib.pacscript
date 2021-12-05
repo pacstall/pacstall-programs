@@ -7,7 +7,7 @@ hash="99640506e1cf69d69451dc5d0db2d8fd169ff8247bda8c6d01dd66e9471ac6a0"
 pkgdir="/usr/src/pacstall/${name}"
 removescript="yes"
 
-prepare () {
+prepare()  {
   true
 }
 build() {

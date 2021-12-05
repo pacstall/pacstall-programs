@@ -1,4 +1,3 @@
-
 name="aws-cli-v2-bin"
 pkgname="aws-cli-v2"
 pkgdir="/usr/src/pacstall/${name}"
@@ -27,7 +26,7 @@ install() {
     sudo install -Dm644 aws-cli_bash_completion "${pkgdir}/etc/bash_completion.d/${pkgname}"
 }
 
-removescript(){
+removescript() {
     sudo rm -f /usr/local/bin/aws
     sudo rm -f /usr/local/bin/aws_completer
 }

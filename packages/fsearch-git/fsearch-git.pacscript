@@ -5,19 +5,19 @@ url="https://github.com/cboxdoerfer/${gives}.git"
 build_depends="git build-essential automake autopoint autoconf libtool pkg-config intltool autoconf-archive libicu-dev libpcre3-dev libglib2.0-dev libgtk-3-dev libxml2-utils"
 
 pkgver() {
-    git ls-remote "https://github.com/cboxdoerfer/${gives}" master | cut -f1 
+    git ls-remote "https://github.com/cboxdoerfer/${gives}" master | cut -f1
 }
 version="$(pkgver)"
 
 prepare() {
-	./autogen.sh
+  ./autogen.sh
 }
 
 build() {
-	./configure
-	make -j$(nproc)
+  ./configure
+  make -j$(nproc)
 }
 
 install() {
-	sudo make install DESTDIR="$STOWDIR/$name"
+  sudo make install DESTDIR="$STOWDIR/$name"
 }

@@ -7,14 +7,14 @@ description="Polybar aims to help users build beautiful and highly customizable 
 maintainer="Henryws <hwengerstickel@pm.me>"
 hash="73210e6d74217acb953b253990b4302343b7b6a7870fe1da9a1855daa44123db"
 optdepends=("libxcb-xkb-dev: xkeyboard"
-"libxcb-xrm-dev: xrdb"
-"libxcb-cursor-dev: cursorclick/scroll"
-"libasound2-dev: alsa"
-"libpulse-dev: pulseaudio"
-"libjsoncpp-dev: json"
-"libmpdclient-dev: mpd"
-"libcurl4-openssl-dev: github"
-"libnl-genl-3-dev: network")
+  "libxcb-xrm-dev: xrdb"
+  "libxcb-cursor-dev: cursorclick/scroll"
+  "libasound2-dev: alsa"
+  "libpulse-dev: pulseaudio"
+  "libjsoncpp-dev: json"
+  "libmpdclient-dev: mpd"
+  "libcurl4-openssl-dev: github"
+  "libnl-genl-3-dev: network")
 
 prepare() {
     mkdir build

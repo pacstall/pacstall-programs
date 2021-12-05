@@ -8,8 +8,8 @@ depends="libqm-dsp0 libcairo2 libgcc-s1 libglib2.0-0 libglibmm-2.4-1v5 libgtkmm-
 build_depends="libgio2.0-cil-dev python3 libqm-dsp-dev libcairo2-dev libglib2.0-dev libglibmm-2.4-dev libgtkmm-2.4-dev libx11-dev libxml2-dev libsoundtouch-dev libtag1-dev libatkmm-1.6-dev libaubio-dev libboost-all-dev libcairomm-1.0-dev libcppunit-dev libdbus-1-dev doxygen libfftw3-dev libflac-dev libfontconfig-dev libfreetype6-dev libgdk-pixbuf2.0-0 graphviz libgtk2.0-dev libhidapi-dev itstool libjack-jackd2-dev libarchive-dev liblo-dev libltc-dev libogg-dev libpulse-dev libsamplerate0-dev libsndfile1-dev libusb-1.0-0-dev libwebsockets-dev liblilv-dev lv2-dev libpango1.0-dev libpangomm-1.4-dev libreadline-dev librubberband-dev libserd-dev libsord-dev libsratom-dev libsuil-dev vamp-plugin-sdk libfluidsynth-dev liblrdf0-dev libraptor2-dev libcurl4-gnutls-dev"
 
 optdepends=("xjadeo: video monitoring"
-			"harvid: video timeline"
-			"linuxaudio-new-session-manager: for session management")
+   "harvid: video timeline"
+   "linuxaudio-new-session-manager: for session management")
 gives="ladspa-host, lv2-host, vst-host, vst3-host, ardour, ardour-data"
 breaks="ardour, ardour-data"
 url="https://github.com/Ardour/ardour.git"
@@ -20,73 +20,73 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {	
-	# Patch uses vendored version of qm-dsp because qm-dsp >= 1.8.0 is not compatible
-	# will be applied when ubuntu starts supporting qm-dsp 1.8.0
+prepare() {
+  # Patch uses vendored version of qm-dsp because qm-dsp >= 1.8.0 is not compatible
+  # will be applied when ubuntu starts supporting qm-dsp 1.8.0
 
-	# unsetting gtk2 rc (FS#54389)
-	sed -e '8iexport GTK2_RC_FILES=/dev/null' -i "gtk2_ardour/ardour.sh.in"
+  # unsetting gtk2 rc (FS#54389)
+  sed -e '8iexport GTK2_RC_FILES=/dev/null' -i "gtk2_ardour/ardour.sh.in"
 }
 
 build() {
-	# export LINKFLAGS="$LDFLAGS"
-	./waf configure --prefix=/usr \
-		--configdir=/etc \
-		--cxx11 \
-		--freedesktop \
-		--lxvst \
-		--nls \
-		--no-phone-home \
-		--optimize \
-		--ptformat \
-		--use-external-libs \
-		--with-backends="alsa,dummy,jack,pulseaudio"
-	./waf build -v
+  # export LINKFLAGS="$LDFLAGS"
+  ./waf configure --prefix=/usr \
+    --configdir=/etc \
+    --cxx11 \
+    --freedesktop \
+    --lxvst \
+    --nls \
+    --no-phone-home \
+    --optimize \
+    --ptformat \
+    --use-external-libs \
+    --with-backends="alsa,dummy,jack,pulseaudio"
+  ./waf build -v
 }
 
 install() {
-	sudo ./waf i18n --destdir="$STOWDIR/$name"
-	sudo ./waf install --destdir="$STOWDIR/$name"
-	
-	wait
-	
-	sudo rm "$STOWDIR/$name/usr/bin/ardour6-copy-mixer"
-	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
-	sudo rm "$STOWDIR/$name/usr/bin/ardour6-export"
-	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-export"
-	sudo rm "$STOWDIR/$name/usr/bin/ardour6-fix_bbtppq"
-	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-fix_bbtppq"
-	sudo rm "$STOWDIR/$name/usr/bin/ardour6-new_empty_session"
-	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-new_empty_session"
-	sudo rm "$STOWDIR/$name/usr/bin/ardour6-new_session"
-	sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-new_session"
-	
-	# man pages
-	sudo install -vDm 644 "ardour.1" -t "$STOWDIR/$name/usr/share/man/man1/"
-	
-	# File types
-	sudo install -vDm 644 "build/gtk2_ardour/ardour.xml" -t "$STOWDIR/$name/usr/share/mime/packages/"
+  sudo ./waf i18n --destdir="$STOWDIR/$name"
+  sudo ./waf install --destdir="$STOWDIR/$name"
 
-	# Install .desktop
-	sudo install -vDm644 "build/gtk2_ardour/ardour6.desktop" "$STOWDIR/$name/usr/share/applications/"
+  wait
 
-	# Icons
-	for size in 16 22 32 48; do
-		sudo install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/mimetypes"
-		sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/icons/application-x-ardour_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/mimetypes/application-x-ardour.png"
-	done
+  sudo rm "$STOWDIR/$name/usr/bin/ardour6-copy-mixer"
+  sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
+  sudo rm "$STOWDIR/$name/usr/bin/ardour6-export"
+  sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-export"
+  sudo rm "$STOWDIR/$name/usr/bin/ardour6-fix_bbtppq"
+  sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-fix_bbtppq"
+  sudo rm "$STOWDIR/$name/usr/bin/ardour6-new_empty_session"
+  sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-new_empty_session"
+  sudo rm "$STOWDIR/$name/usr/bin/ardour6-new_session"
+  sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-new_session"
 
-	for size in 16 22 32 48 256 512; do
-		sudo install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps"
-		sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/resources/Ardour-icon_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
-	done
-	
+  # man pages
+  sudo install -vDm 644 "ardour.1" -t "$STOWDIR/$name/usr/share/man/man1/"
+
+  # File types
+  sudo install -vDm 644 "build/gtk2_ardour/ardour.xml" -t "$STOWDIR/$name/usr/share/mime/packages/"
+
+  # Install .desktop
+  sudo install -vDm644 "build/gtk2_ardour/ardour6.desktop" "$STOWDIR/$name/usr/share/applications/"
+
+  # Icons
+  for size in 16 22 32 48; do
+    sudo install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/mimetypes"
+    sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/icons/application-x-ardour_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/mimetypes/application-x-ardour.png"
+  done
+
+  for size in 16 22 32 48 256 512; do
+    sudo install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps"
+    sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/resources/Ardour-icon_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
+  done
+
 }
 
 removescript() {
-	sudo rm "/usr/bin/ardour6-copy-mixer"
-	sudo rm "/usr/bin/ardour6-export"
-	sudo rm "/usr/bin/ardour6-fix_bbtppq"
-	sudo rm "/usr/bin/ardour6-new_empty_session"
-	sudo rm "/usr/bin/ardour6-copy-new_session"
+  sudo rm "/usr/bin/ardour6-copy-mixer"
+  sudo rm "/usr/bin/ardour6-export"
+  sudo rm "/usr/bin/ardour6-fix_bbtppq"
+  sudo rm "/usr/bin/ardour6-new_empty_session"
+  sudo rm "/usr/bin/ardour6-copy-new_session"
 }
