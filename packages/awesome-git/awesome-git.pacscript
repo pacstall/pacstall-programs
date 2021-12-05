@@ -1,9 +1,9 @@
-#  __      __________   ______  
-# /  \    /  \_____  \ /  __  \ 
-# \   \/\/   //  ____/ >      < 
+#  __      __________   ______
+# /  \    /  \_____  \ /  __  \
+# \   \/\/   //  ____/ >      <
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
-#        \/          \/      \/ 
+#        \/          \/      \/
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="awesome-git"
@@ -22,9 +22,8 @@ optdepends=("rlwrap: readline support for awesome-client"
 breaks="${pkgname} ${pkgname}-bin"
 removescript="yes"
 
-
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 
+    git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
@@ -42,7 +41,7 @@ install() {
   sudo make install DESTDIR="${pkgdir}"
 }
 
-postinst(){
+postinst() {
   # Install to correct location .desktop file
   sudo ln -sf "${pkgdir}"/usr/local/share/xsessions/"${pkgname}".desktop /usr/share/xsessions/"${pkgname}".desktop
 }
