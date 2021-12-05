@@ -22,7 +22,7 @@ install() {
     sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"
 }
 
-removescript () {
+removescript()  {
     sudo rm -rf "/usr/share/licenses/${gives}"
     sudo rm -rf "/usr/share/doc/${gives}"
 }

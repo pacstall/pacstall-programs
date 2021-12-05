@@ -1,9 +1,9 @@
-#  __      __________   ______  
-# /  \    /  \_____  \ /  __  \ 
-# \   \/\/   //  ____/ >      < 
+#  __      __________   ______
+# /  \    /  \_____  \ /  __  \
+# \   \/\/   //  ____/ >      <
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
-#        \/          \/      \/ 
+#        \/          \/      \/
 maintainer="wizard-28 <wiz28@pm.me>"
 
 ### This pacscript is made with (ported to pacstall) the help of https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=emacs-git
@@ -38,12 +38,12 @@ LUCID=            # Use the lucid, a.k.a athena, toolkit. Like XEmacs, sorta.
                   # Xft, if you choose no toolkit or Lucid.
                   #
 GTK2=             # GTK2 support. Why would you?
-NOCAIRO=          # Disable here. 
+NOCAIRO=          # Disable here.
 XWIDGETS=         # Use GTK+ widgets pulled from libwebkit2gtk-4.0-37. Usable.
 DOCS_HTML=        # Generate and install html documentation.
 DOCS_PDF=         # Generate and install pdf documentation.
 MAGICK=           # ImageMagick 7 support. Deprecated (read the logs).
-                  # ImageMagick, like flash, won't die... 
+                  # ImageMagick, like flash, won't die...
                   # -->>If you just *believe* you need ImageMagick, you don't.<<--
 NOGZ="YES"        # Don"t compress .el files.
 ################################################################################
@@ -61,7 +61,7 @@ breaks="${name}-git ${name}-nox"
 replace="${name}-git ${name}-nox"
 hash="b4a7cc4e78e63f378624e0919215b910af5bb2a0afc819fad298272e9f40c1b9"
 
-if [[ $GOLD == "YES" && ! $CLANG == "YES" ]]; then
+if [[ $GOLD == "YES" && $CLANG != "YES" ]]; then
   export LD=/usr/bin/ld.gold
   export CFLAGS+=" -fuse-ld=gold"
   export CXXFLAGS+=" -fuse-ld=gold"
@@ -82,17 +82,17 @@ if [[ $CLANG == "YES" ]]; then
 fi
 if [[ $LTO == "YES" ]]; then
   if [[ $CLANG != "YES" ]]; then
-  CFLAGS+=" -flto -fuse-linker-plugin"
-  CXXFLAGS+=" -flto -fuse-linker-plugin"
-else
-  CFLAGS+=" -flto"
-  CXXFLAGS+=" -flto"
+    CFLAGS+=" -flto -fuse-linker-plugin"
+    CXXFLAGS+=" -flto -fuse-linker-plugin"
+  else
+    CFLAGS+=" -flto"
+    CXXFLAGS+=" -flto"
   fi
 fi
 
 if [[ $JIT == "YES" ]]; then
   if [[ $CLI == "YES" ]]; then
-    depends_nox+=" libgccjit0" 
+    depends_nox+=" libgccjit0"
   else
     depends+=" libgccjit0"
   fi
@@ -116,13 +116,13 @@ fi
 
 if [[ $MAGICK == "YES" ]]; then
   depends+=" imagemagick libjpeg-turbo8 giflib-tools"
-elif [[ ! $NOX == "YES" ]] && [[ ! $CLI == "YES" ]]; then
+elif [[ $NOX != "YES" ]] && [[ $CLI != "YES" ]]; then
   depends+=" libjpeg-turbo8 giflib-tools"
 elif [[ $CLI == "YES" ]]; then
   depends+=""
 fi
 
-if [[ ! $NOCAIRO == "YES" ]] && [[ ! $CLI == "YES" ]]; then
+if [[ $NOCAIRO != "YES" ]] && [[ $CLI != "YES" ]]; then
   depends+=" libcairo2"
 fi
 
@@ -143,7 +143,7 @@ prepare() {
   if [[ $CHECK == "YES" ]]; then
     make -j"$(nproc)" check
   fi
- }
+}
 
 build() {
   local _conf=(
@@ -155,54 +155,54 @@ build() {
     --with-gameuser=:games
     --with-sound=alsa
     --with-modules
-# Beware https://debbugs.gnu.org/cgi/bugreport.cgi?bug=25228
-# dconf and gconf break font settings you set in ~/.emacs.
-# If you insist you'll need to read that bug report in *full*.
-# Good luck!
-   --without-gconf
-   --without-gsettings
+    # Beware https://debbugs.gnu.org/cgi/bugreport.cgi?bug=25228
+    # dconf and gconf break font settings you set in ~/.emacs.
+    # If you insist you'll need to read that bug report in *full*.
+    # Good luck!
+    --without-gconf
+    --without-gsettings
   )
 
   if [[ $CLANG == "YES" ]]; then
-    _conf+=( "--enable-autodepend" )
+    _conf+=("--enable-autodepend")
   fi
 
   if [[ $LTO == "YES" ]]; then
-    _conf+=( "--enable-link-time-optimization" )
+    _conf+=("--enable-link-time-optimization")
   fi
 
   if [[ $JIT == "YES" ]]; then
-    _conf+=( "--with-native-compilation" )
+    _conf+=("--with-native-compilation")
   fi
 
   if [[ $CLI == "YES" ]]; then
-    _conf+=( "--without-x" "--with-x-toolkit=no" "--without-xft" "--without-lcms2" "--without-rsvg" "--without-jpeg" "--without-gif" "--without-tiff" "--without-png" )
+    _conf+=("--without-x" "--with-x-toolkit=no" "--without-xft" "--without-lcms2" "--without-rsvg" "--without-jpeg" "--without-gif" "--without-tiff" "--without-png")
   elif [[ $NOTKIT == "YES" ]]; then
-    _conf+=( "--with-x-toolkit=no" "--without-toolkit-scroll-bars" "--with-xft" "--without-xaw3d" )
+    _conf+=("--with-x-toolkit=no" "--without-toolkit-scroll-bars" "--with-xft" "--without-xaw3d")
   elif [[ $LUCID == "YES" ]]; then
-    _conf+=( "--with-x-toolkit=lucid" "--with-xft" "--with-xaw3d" )
+    _conf+=("--with-x-toolkit=lucid" "--with-xft" "--with-xaw3d")
   elif [[ $GTK2 == "YES" ]]; then
-    _conf+=( "--with-x-toolkit=gtk2" "--without-gsettings" "--without-xaw3d" )
+    _conf+=("--with-x-toolkit=gtk2" "--without-gsettings" "--without-xaw3d")
   else
-    _conf+=( "--with-x-toolkit=gtk3" "--without-xaw3d" )
+    _conf+=("--with-x-toolkit=gtk3" "--without-xaw3d")
   fi
 
   if [[ $MAGICK == "YES" ]]; then
-    _conf+=( "--with-imagemagick")
+    _conf+=("--with-imagemagick")
   else
-    _conf+=();
+    _conf+=()
   fi
 
   if [[ $NOCAIRO == "YES" || $CLI == "YES" ]]; then
-    _conf+=( "--without-cairo" )
+    _conf+=("--without-cairo")
   fi
 
   if [[ $XWIDGETS == "YES" ]]; then
-    _conf+=( "--with-xwidgets" )
+    _conf+=("--with-xwidgets")
   fi
 
   if [[ $NOGZ == "YES" ]]; then
-    _conf+=( "--without-compress-install" )
+    _conf+=("--without-compress-install")
   fi
 
   # ctags/etags may be provided by other packages, e.g, universal-ctags

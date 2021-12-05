@@ -5,23 +5,23 @@ depends=""
 breaks="imwheel"
 description="This project is a fork of imwheel's final official release containing only one change — a patch that repairs imwheel's broken @Exclude command"
 pkgver() {
-	git ls-remote "${url}" refs/heads/master | cut -f1
+  git ls-remote "${url}" refs/heads/master | cut -f1
 }
 version="$(pkgver)"
 
 prepare() {
-	./configure --disable-gpm-doc
+  ./configure --disable-gpm-doc
 }
 
 build() {
-	make
+  make
 }
 
 install() {
-	sudo make install DESTDIR="$STOWDIR/$name"
-	cd "$STOWDIR/$name/usr/local/"
-	sudo mkdir -p share
-	if [[ -d man ]]; then
-		sudo mv man share/
-	fi
+  sudo make install DESTDIR="$STOWDIR/$name"
+  cd "$STOWDIR/$name/usr/local/"
+  sudo mkdir -p share
+  if [[ -d man ]]; then
+    sudo mv man share/
+  fi
 }

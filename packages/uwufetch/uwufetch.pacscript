@@ -1,9 +1,9 @@
-#  __      __________   ______  
-# /  \    /  \_____  \ /  __  \ 
-# \   \/\/   //  ____/ >      < 
+#  __      __________   ______
+# /  \    /  \_____  \ /  __  \
+# \   \/\/   //  ____/ >      <
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
-#        \/          \/      \/ 
+#        \/          \/      \/
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="uwufetch"
@@ -13,7 +13,7 @@ url="https://github.com/TheDarkBug/${name}/archive/refs/tags/${version}.zip"
 description="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
 build_depends="gcc"
 optdepends=("viu: image preview"
-"lshw: hardware info")
+  "lshw: hardware info")
 breaks="${name}-git ${name}-bin"
 hash="1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab"
 removescript="yes"
@@ -37,13 +37,13 @@ install() {
 
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
-  
+
   # Install uwufetch
   sudo make install DESTDIR="${pkgdir}"
 }
 
 removescript() {
-  # Remove empty directories 
+  # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${name}"
   sudo rm -rf "/usr/share/doc/${name}"
 }

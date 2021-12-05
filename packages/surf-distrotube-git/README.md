@@ -37,5 +37,3 @@ instance of tabbed.
 
 [0] http://tools.suckless.org/dmenu
 [1] http://tools.suckless.org/tabbed
-
-

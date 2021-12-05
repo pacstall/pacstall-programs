@@ -6,7 +6,7 @@ build_depends="make libharfbuzz-bin libxft-dev libpango1.0-dev"
 depends="fontconfig"
 gives="st"
 
-pkgver () {
+pkgver()  {
   git ls-remote https://github.com/LukeSmithxyz/st.git master | cut -f1
 }
 version="$(pkgver)"
