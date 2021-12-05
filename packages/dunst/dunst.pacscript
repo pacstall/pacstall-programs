@@ -21,4 +21,3 @@ build() {
 install() {
     sudo make install -j$(nproc) DESTDIR=/usr/src/pacstall/dunst
 }
-

@@ -8,7 +8,7 @@ optdepends="ffmpeg: additional import/export capabilities"
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 
+    git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
@@ -23,7 +23,7 @@ build() {
         -DESTDIR="$STOWDIR/$name" \
         -DCMAKE_BUILD_TYPE=Release \
         -Duse_ffmpeg=loaded ..
-	sudo make -j$(nproc)
+  sudo make -j$(nproc)
 }
 
 install() {

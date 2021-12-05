@@ -5,7 +5,7 @@ build_depends="libxcb1 libxcb1:i386"
 description="A modern and transparent way to use Windows VST2 and VST3 plugins on Linux."
 hash="46a68052157bd30c4aeb5b0eb84154582408eb099377716e3690518dec048384"
 optdepends=("wine: 32-bit windows emulator"
-"wine64: 64-bit windows emulator")
+  "wine64: 64-bit windows emulator")
 maintainer="echometerain <echometer@disroot.org>"
 removescript=yes
 prepare() {
@@ -24,10 +24,10 @@ install() {
           sudo ln -s "$STOWDIR/$name/usr/lib/yabridge/yabridge-host-32.exe.so" "/usr/bin"
 }
 
-postinst(){
+postinst() {
           yabridgectl set --path=/usr/lib/yabridge
 }
-removescript(){
+removescript() {
           sudo rm "/usr/bin/yabridgectl"
           sudo rm "/usr/bin/yabridge-host.exe"
           sudo rm "/usr/bin/yabridge-host.exe.so"

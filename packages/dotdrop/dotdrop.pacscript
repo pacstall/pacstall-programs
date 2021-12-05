@@ -20,5 +20,4 @@ install() {
   sudo install -Dm644 completion/dotdrop.fish "$STOWDIR/"$name"/usr/share/fish/completions/${name}.fish"
 }
 
-
 # vim:set ft=sh ts=2 sw=2 et:

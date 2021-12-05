@@ -14,5 +14,3 @@ $ sudo pacstall -I lagrange
 Lagrange is build with the following build options turned on:
 
 - ENABLE_MPG123
-
-

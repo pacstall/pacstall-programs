@@ -5,11 +5,11 @@ url="https://github.com/dylanaraps/neofetch/archive/7.1.0.zip"
 build_depends=""
 depends=""
 optdepends=("w3m-img: image preview"
-"libsixel-dev: image preview"
-"catimg: image preview"
-"jp2a: image preview"
-"caca-utils: image preview"
-"libcaca-dev: image preview")
+  "libsixel-dev: image preview"
+  "catimg: image preview"
+  "jp2a: image preview"
+  "caca-utils: image preview"
+  "libcaca-dev: image preview")
 gives="neofetch"
 breaks="afajse"
 description="Neofetch is a command-line system information tool written in bash 3.2+"
@@ -20,7 +20,7 @@ prepare() {
 }
 
 build() {
-    true 
+    true
 }
 
 install() {
