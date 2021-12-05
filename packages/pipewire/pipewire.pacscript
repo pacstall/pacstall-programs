@@ -15,6 +15,6 @@ build() {
 }
 
 install() {
-    cd builddir/ || exit 1
+    cd builddir/ || return 1
     sudo DESTDIR=/usr/src/pacstall/pipewire meson install
 }
