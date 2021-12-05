@@ -12,10 +12,10 @@ prepare() {
 }
 
 build() {
-	make -j$(nproc)
+  make -j$(nproc)
 }
 
 install() {
-	 sudo make install -j$(nproc) DESTDIR=/usr/src/pacstall/batsignal
+  sudo make install -j$(nproc) DESTDIR=/usr/src/pacstall/batsignal
 
 }

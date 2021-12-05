@@ -21,4 +21,3 @@ install() {
     chmod +x onefetch
     sudo mv onefetch /usr/src/pacstall/onefetch-bin/usr/bin
 }
-

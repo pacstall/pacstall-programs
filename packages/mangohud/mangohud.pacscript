@@ -6,7 +6,7 @@ hash="aa3f65ece217842c3be1b755c0f3a09b2096f0af475715d3619182a13c6f4fbf"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 
 prepare() {
-  true  
+  true
 }
 
 build() {

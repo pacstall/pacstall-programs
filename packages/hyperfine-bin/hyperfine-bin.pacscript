@@ -1,9 +1,9 @@
-#  __      __________   ______  
-# /  \    /  \_____  \ /  __  \ 
-# \   \/\/   //  ____/ >      < 
+#  __      __________   ______
+# /  \    /  \_____  \ /  __  \
+# \   \/\/   //  ____/ >      <
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
-#        \/          \/      \/ 
+#        \/          \/      \/
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="hyperfine-bin"
@@ -33,7 +33,7 @@ install() {
 
   # Install binary
   sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
-  
+
   # Install completions
   sudo install -Dm644 "autocomplete/${pkgname}.bash-completion" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
   sudo install -Dm644 "autocomplete/${pkgname}.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/${pkgname}.fish"
