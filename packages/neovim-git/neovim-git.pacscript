@@ -4,7 +4,7 @@ description="Neovim is a project that seeks to aggressively refactor Vim source 
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 depends="ninja-build gettext libtool-bin autoconf automake cmake g++ pkg-config unzip"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 
+    git ls-remote "${url}" master | cut -f1
 }
 version="${pkgver}"
 

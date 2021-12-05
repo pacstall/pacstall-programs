@@ -125,7 +125,7 @@ As of version 2.1.0, Cantata uses Qt5's translation framework.
 To generate a new translation for Cantata:
 
 1. Copy translations/blank.ts to cantata_LANG_CODE.ts
-   (Replace LANG_CODE with the language code for the desired language, e.g. 
+   (Replace LANG_CODE with the language code for the desired language, e.g.
    'fr' for French - so this would be cantata_fr.ts)
 2. Open your new ts file with Qt Linguist.
 3. In Qt Linguist set the target language and country.
@@ -237,7 +237,7 @@ c. ${basicArtist} if configured Album cover ${configuredName} contains % and
 
 12. ${url}/${dirFromFile}/${configuredName}.jpg
 13. ${url}/${dirFromFile}/${configuredName}.png
- 
+
 ...the above will be repeated for the parent folder
 
 ...lastly, if user has enabled downloading via last.fm
@@ -249,7 +249,7 @@ Downloaded images will be saved as artist.jpg/png, within the artist folder
 if the folder hierarchy is 2 levels (artist/album/) and the user has write
 permissions. If not, then they will be saved in Cantata's cache folder.
 
-If configured to 'Cache scaled covers', then the resized cover (as displayed) 
+If configured to 'Cache scaled covers', then the resized cover (as displayed)
 will be saved as a PNG within covers-scaled.
 
 
@@ -383,7 +383,7 @@ settings.json is really only intended to be used by Cantata for providers
 stored in its extras github repo. This JSON file has the following syntax:
 
   { "type": "streamType", "url": "Stream listing URL" }
-  
+
   "streamType" can be either di, soma, or listenlive. Cantata contains code to
   download from "Stream listing URL" and parse the response based upon
   "streamType"

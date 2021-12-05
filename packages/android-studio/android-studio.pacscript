@@ -24,11 +24,11 @@ install() {
     sudo install -Dm644 bin/studio.png "$STOWDIR/$name/usr/share/pixmaps/$name.png"
     sudo chmod -R ugo+rX "$STOWDIR/$name/opt"
 }
-postinst(){
+postinst() {
     sudo update-desktop-database -q
     # Finished installation
     fancy_message info "Finished installation. Please start Android Studio to configure it!"
 }
-removescript(){
+removescript() {
     sudo update-desktop-database -q
 }
