@@ -16,9 +16,9 @@ build() {
         # Check if `libutempter-dev` ( optdepends ) is installed
         if dpkg-query -W libutempter-dev > /dev/null 2>&1; then
                 ./configure --enable-utempter
-        else
+  else
                 ./configure
-        fi
+  fi
         make -j$(nproc)
 }
 install() {
@@ -27,4 +27,3 @@ install() {
           sudo install -Dm0644 COPYING "$STOWDIR/$name/usr/share/licenses/tmux/LICENSE"
 
 }
-

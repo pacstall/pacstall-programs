@@ -34,7 +34,7 @@ optdepends=("libcapi20-dev: for ISDN software"
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 
+    git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
@@ -57,7 +57,7 @@ build() {
         --with-gstreamer \
         --enable-win64
         make -j$(nproc)
-        
+
         cd "../wine32-build"
         ../configure \
         --prefix='/usr' \
@@ -82,13 +82,13 @@ install() {
          libdir="$STOWDIR/$name/usr/lib" \
          dlldir="$STOWDIR/$name/usr/lib/wine" \
          install
-         
+
         install -d -m755 "$STOWDIR/$name/usr/share/fontconfig/conf.default"
         install -D -m644 "$SRCDIR/$name/30-win32-aliases.conf" -t "$STOWDIR/$name/usr/share/fontconfig/conf.avail"
         ln -s "../conf.avail/30-win32-aliases.conf" "$STOWDIR/$name/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
-    
+
         install -D -m644 "$SRCDIR/$name/wine-binfmt.conf" "$STOWDIR/$name/usr/lib/binfmt.d/wine.conf"
-        
+
         i686-w64-mingw32-strip --strip-unneeded "$STOWDIR/$name/usr/lib32/wine/i386-windows"/*.dll
         x86_64-w64-mingw32-strip --strip-unneeded "$STOWDIR/$name/usr/lib/wine/x86_64-windows"/*.dll
 }

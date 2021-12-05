@@ -21,8 +21,8 @@ optdepends=('imagemagick: view images inside of the neomutt TUI'
             'elinks: view HTML email inside of the neomutt TUI'
             'urlview: list URLs found in mails to open them in a browser'
             'abook: contact store and tab completion'
-# No Pkg    'protonmail-bridge: use neomutt with protonmail accounts'
-# No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
+  # No Pkg    'protonmail-bridge: use neomutt with protonmail accounts'
+  # No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
             'cron: set up automatic mail syncing')
 
 prepare() {

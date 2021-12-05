@@ -1,9 +1,9 @@
-#  __      __________   ______  
-# /  \    /  \_____  \ /  __  \ 
-# \   \/\/   //  ____/ >      < 
+#  __      __________   ______
+# /  \    /  \_____  \ /  __  \
+# \   \/\/   //  ____/ >      <
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
-#        \/          \/      \/ 
+#        \/          \/      \/
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="spacecadetpinball-git"
@@ -16,7 +16,7 @@ build_depends="libsdl2-dev libsdl2-mixer-dev unrar cmake"
 breaks="${pkgname} ${pkgname}-bin ${pkgname}-app ${pkgname}-deb"
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 
+  git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
@@ -50,7 +50,7 @@ install() {
   sudo install -Dm755 "bin/SpaceCadetPinball" "${pkgdir}/usr/lib/${pkgname}/${pkgname}"
 
   # Install wrapper script
-  sudo install -Dm755 /dev/stdin "${pkgdir}/usr/bin/${pkgname}" <<END
+  sudo install -Dm755 /dev/stdin "${pkgdir}/usr/bin/${pkgname}" << END
 #!/bin/sh
 # Run program in correct directory so it can find it's resources
 cd /usr/lib/${pkgname}
@@ -58,9 +58,9 @@ exec ./${pkgname} "\$@"
 END
 
   # Install resources
-  (
-  cd Space_Cadet
-  sudo install -m644 ./*.DAT ./*.DOC ./*.MID ./*.BMP ./*.INF ./*.WAV -t "${pkgdir}/usr/lib/${pkgname}"
+  ( 
+    cd Space_Cadet
+    sudo install -m644 ./*.DAT ./*.DOC ./*.MID ./*.BMP ./*.INF ./*.WAV -t "${pkgdir}/usr/lib/${pkgname}"
   )
 
   # Install icon

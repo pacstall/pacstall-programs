@@ -29,7 +29,7 @@ build() {
 
 install() {
   sudo make install DESTDIR="$pkgdir"
-  
+
   # install doc
   sudo install -Dm 644 -t "$pkgdir/usr/share/doc/$name" "../README.md"
   # install license

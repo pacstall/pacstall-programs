@@ -70,8 +70,8 @@ fsearch-git
 gcmcore-deb
 geekbench-bin
 git
-gitblade-deb
 git-delta-deb
+gitblade-deb
 gitfiend-deb
 github-cli-deb
 github-desktop
@@ -163,8 +163,8 @@ soundux
 spacecadetpinball-git
 spotify-client-deb
 st-distrotube-git
-stellarium
 st-lukesmith-git
+stellarium
 surf
 surf-distrotube-git
 suru-icon-theme-git
@@ -196,8 +196,8 @@ warpinator-deb
 webapp-manager
 webapp-manager-deb
 windscribe-cli-deb
-wine64
 wine-staging-git
+wine64
 yabridge
 yad
 youtube-dl-git
