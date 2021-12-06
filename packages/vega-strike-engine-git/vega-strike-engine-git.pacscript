@@ -20,8 +20,8 @@ build() {
   mkdir build
   cd build || return 1
   cmake "../engine"
-  cmake --build "./build" -j"$(nproc)" -DCMAKE_BUILD_TYPE=Release
-  make
+  cmake --build "./build" -DCMAKE_BUILD_TYPE=Release
+  make -j"$(nproc)"
   cd ..
 }
 
