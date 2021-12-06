@@ -18,7 +18,7 @@ prepare() {
 
 build() {
   mkdir build
-  cd build || exit
+  cd build || return 1
   cmake "../engine"
   cmake --build "./build" -j"$(nproc)" -DCMAKE_BUILD_TYPE=Release
   make
