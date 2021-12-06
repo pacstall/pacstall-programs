@@ -8,7 +8,7 @@ description="Vega Strike engine"
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+  git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
