@@ -26,7 +26,7 @@ build() {
 }
 
 install() {
-  cd build || exit
+  cd build || return 1
   sudo make install DESTDIR="${STOWDIR}/${name}"
   sudo rm -rf "${STOWDIR}/${name}/usr/include"
   sudo rm -rf "${STOWDIR}/${name}/usr/lib"
