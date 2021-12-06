@@ -6,18 +6,18 @@ pacdeps="vega-strike-engine-git"
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 
+    git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
-prepare(){
-	true
+prepare() {
+  true
 }
 build() {
-	cmake "./CMakeLists.txt"
-	make
+  cmake "./CMakeLists.txt"
+  make
 }
 
 install() {
-	sudo make install DESTDIR="$STOWDIR/$name"
+  sudo make install DESTDIR="${STOWDIR}/${name}"
 }

@@ -8,26 +8,26 @@ description="Vega Strike engine"
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 
+    git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
 
-prepare(){
-	true
+prepare() {
+  true
 }
 
 build() {
-	mkdir build
-	cd build
-	cmake "../engine"
-	cmake --build "./build" -j$(nproc) -DCMAKE_BUILD_TYPE=Release	
-	make
-	cd ..
+  mkdir build
+  cd build || exit
+  cmake "../engine"
+  cmake --build "./build" -j"$(nproc)" -DCMAKE_BUILD_TYPE=Release
+  make
+  cd ..
 }
 
 install() {
-	cd build
-	sudo make install DESTDIR="$STOWDIR/$name"
-	sudo rm -rf "$STOWDIR/$name/usr/include"
-	sudo rm -rf "$STOWDIR/$name/usr/lib"
+  cd build || exit
+  sudo make install DESTDIR="${STOWDIR}/${name}"
+  sudo rm -rf "${STOWDIR}/${name}/usr/include"
+  sudo rm -rf "${STOWDIR}/${name}/usr/lib"
 }
