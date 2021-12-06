@@ -1,9 +1,9 @@
 name="yad"
 version="10.1"
-url="https://github.com/v1cont/yad/archive/refs/tags/v$version.tar.gz"
+url="https://github.com/v1cont/yad/archive/refs/tags/v${version}.tar.gz"
 build_depends="autotools-dev intltool libgtk-3-dev"
 depends="libc6 libcairo2 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libpango-1.0-0 libpangocairo-1.0-0"
-breaks="$name $name-bin $name-app $name-git $name-deb"
+breaks="${name} ${name}-bin ${name}-app ${name}-git ${name}-deb"
 gives="yad"
 description="Yet Another Dialog"
 hash="769e723a8f227ce4430f89fda4c79809ad46fb3c04d34ee466b51cf5e0f1c373"
@@ -17,27 +17,24 @@ prepare() {
   intltoolize
 
   FLAGS="--enable-icon-browser --enable-gio"
-  dpkg-query -W libwebkit2gtk-4.0-dev > /dev/null 2>&1
-  if [[ $? -eq 0 ]]; then
+  if dpkg-query -W libwebkit2gtk-4.0-dev > /dev/null 2>&1; then
     FLAGS+=" --enable-html"
   fi
-  dpkg-query -W libgspell-1-dev > /dev/null 2>&1
-  if [[ $? -eq 0 ]]; then
+  if dpkg-query -W libgspell-1-dev > /dev/null 2>&1; then
     FLAGS+=" --enable-spell"
   fi
-  dpkg-query -W libgtksourceview-4-dev > /dev/null 2>&1
-  if [[ $? -eq 0 ]]; then
+  if dpkg-query -W libgtksourceview-4-dev > /dev/null 2>&1; then
     FLAGS+=" --enable-sourceview"
   fi
 }
 
 build() {
-	./configure " $FLAGS"
-	make -j$(nproc)
+  ./configure " ${FLAGS}"
+  make -j"$(nproc)"
 }
 
 install() {
-  sudo make install DESTDIR="$STOWDIR/$name"
+  sudo make install DESTDIR="${STOWDIR}/${name}"
 }
 
 postinst() {
