@@ -24,9 +24,9 @@ pkgver() {
   # Should be used for -git packages and
   # packages that supply the hash of the
   # newer version.
-  
+
   # git ls-remote "${url}" master | cut -f1
-  
+
   true
 }
 # version="$(pkgver)"
