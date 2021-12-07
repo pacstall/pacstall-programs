@@ -3,10 +3,10 @@
 ```bash
 name="foo"
 version="1.0"
-url="https://github.com/Henryws/foo/archive/refs/tags/1.0.zip"
+url="https://github.com/Henryws/foo/archive/refs/tags/${version}.zip"
 build_depends="vim gcc"
 depends="neofetch plasma"
-breaks="libfoo-git libfoo-bin libfoo-app"
+breaks="${name}-git ${name}-bin ${name}-app"
 replace="alacritty"
 gives="libfoo"
 description="foo is the ultimate program capable of foo and bar!"
@@ -20,37 +20,42 @@ pacdeps=("dmenu" "tuner")
 patch=("https://dwm.suckless.org/patches/anybar/dwm-anybar-20200810-bb2e722.diff")
 
 pkgver() {
-          # Retrieve the new package version here.
-          # Should be used for -git packages and
-          # packages that supply the hash of the
-          # newer version.
+  # Retrieve the new package version here.
+  # Should be used for -git packages and
+  # packages that supply the hash of the
+  # newer version.
+
+  # git ls-remote "${url}" master | cut -f1
+
+  true
 }
+# version="$(pkgver)"
 
 prepare() {
-          ./autogen.sh
+  ./autogen.sh
 }
 
 build() {
-        ./configure
-        make -j$(nproc)
+  ./configure
+  make -j"$(nproc)"
 }
 
 install() {
-          # It is recommended for paths to be condensed with
-          # variables and to be wrapped by double quotes
-          sudo make install DESTDIR="$STOWDIR/$name"
+  # It is recommended for paths to be condensed with
+  # variables and to be wrapped by double quotes
+  sudo make install DESTDIR="${STOWDIR}/${name}"
 
-          # If the package comes already compiled, use 'install'
-          sudo install -Dm755 $name -t  "$STOWDIR/$name/usr/bin"
+  # If the package comes already compiled, use 'install'
+  sudo install -Dm755 ${name} -t "${STOWDIR}/${name}/usr/bin"
 }
 
 postinst(){
-          echo "Do post-install stuff here"
+  echo "Do post-install stuff here"
 }
 
 removescript(){
-          # remove directories that are not removed during removal
-          rm -rf somedir
+  # remove directories that are not removed during removal
+  rm -rf somedir
 }
 ```
 ### Built-in variables
@@ -63,7 +68,7 @@ STOWDIR="/usr/src/pacstall" # Package install directory, symlinked at the end of
 
 #### `name`
 
-It is what pacstall records and is the most important. The contents of `name`, (`pkgname` is the auxiliary name) will be in `/usr/src/pacstall/$name` (where pacstall puts files to symlink to the system) and `/var/log/pacstall_installed/$name` (a file which holds metadata like version number, date installed, description, etc). Use the following naming schema for `$name`:
+It is what pacstall records and is the most important. The contents of `name`, (`pkgname` is the auxiliary name) will be in `/usr/src/pacstall/${name}` (where pacstall puts files to symlink to the system) and `/var/log/pacstall_installed/${name}` (a file which holds metadata like version number, date installed, description, etc). Use the following naming schema for `${name}`:
 - Keep it lowercase
 - Pacscripts that install from a `deb` file should be called `pkgname-deb`
 - Pacscripts that install from a git repository should be called `pkgname-git`
@@ -139,11 +144,11 @@ The `prepare` function is what you run to prepare a package. You don’t need to
 
 #### `build`
 
-The `build` function is what compiles the package. Use multicore as much as possible. To get the number of cores in a system, run `nproc`. You can use that in combination with `-j$(nproc)` to compile on multicore (`make -j$(nproc)`). If the package does not need to be compiled, just use `true` inside the function.
+The `build` function is what compiles the package. Use multicore as much as possible. To get the number of cores in a system, run `nproc`. You can use that in combination with `-j"$(nproc)"` to compile on multicore (`make -j"$(nproc)"`). If the package does not need to be compiled, just use `true` inside the function.
 
 #### `install`
 
-The `install` function is what installs the package. The most important thing is to install to `$STOWDIR/$name`. An example with make would be `sudo make install DESTDIR="$STOWDIR/$name"`.
+The `install` function is what installs the package. The most important thing is to install to `${STOWDIR}/${name}`. An example with make would be `sudo make install DESTDIR="${STOWDIR}/${name}"`.
 
 #### `postinst`
 
@@ -155,11 +160,11 @@ It's a series of commands that should be run after pkg is uninstalled. The conte
 
 ### Pacscript name
 
-You need to save it as `$name`.pacscript. To add a package to `pacstall-programs`, fork it and create a directory in packages called `pkgname` and add the `$name`.pacscript inside it. Then send me a pull request.
+You need to save it as `${name}`.pacscript. To add a package to `pacstall-programs`, fork it and create a directory in packages called `pkgname` and add the `${name}`.pacscript inside it. Then send me a pull request.
 
 ### Remember to wrap everything in double quotes
 
-You can test it by cd'ing into the directory holding `$name`.pacscript and running `sudo pacstall -Il $name`. If it works, good! If not, pacstall should tell you what went wrong
+You can test it by cd'ing into the directory holding `${name}`.pacscript and running `sudo pacstall -Il ${name}`. If it works, good! If not, pacstall should tell you what went wrong
 
 ### Other
 
@@ -172,7 +177,7 @@ Lastly, do not ask the user for any input unless absolutely necessary. Use exter
 Before submitting a PR please update the `packagelist` inside the root of this repository. Add your package name in alphabetic order into the file.
 
 ### Opening a PR
-When you complete your script, fork this repo and add your script to packages/`$name`/`$name`.pacscript. Open a PR here and make the title: "Add `$name`" with the label `Package Add`. Please do one PR per package to make sure the auto checker can test if the pacscript works.
+When you complete your script, fork this repo and add your script to packages/`${name}`/`${name}`.pacscript. Open a PR here and make the title: "Add `${name}`" with the label `Package Add`. Please do one PR per package to make sure the auto checker can test if the pacscript works.
 
 ### Updating your package
 When you want to update your package, make sure you are on the latest commit (fetch upstream) and change the `version`, `url`, and `hash` (if used). Then make a PR and use the label `update pkg`
