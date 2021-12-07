@@ -1,7 +1,7 @@
 name="pdf-mix-tool-git"
 _name="pdf-mix-tool"
 url="https://gitlab.com/scarpetta/pdfmixtool.git"
-build_depends="libqpdf-dev make cmake libmagick++-6.q16-dev libqt5svg5-dev qtbase5-dev qtbase5-dev-tools"
+build_depends="libqpdf-dev make cmake libmagick++-6.q16-dev libqt5svg5-dev qtbase5-dev qtbase5-dev-tools qttools5-dev"
 depends="libqpdf28"
 breaks="${_name} ${_name}-bin ${_name}-app"
 description="a GUI application to split, merge, rotate and mix PDF files"
