@@ -1,6 +1,6 @@
 name="steamtinkerlaunch-git"
 url="https://github.com/frostworx/steamtinkerlaunch.git"
-depends="git make gawk xdotool wget vim xdotool x11-utils"
+depends="gawk xdotool wget vim xdotool x11-utils"
 breaks="steamtinkerlaunch ${name}-git ${name}-deb ${name}-app ${name}-deb ${name}-bin"
 replace="steamtinkerlaunch"
 gives="steamtinkerlaunch"
