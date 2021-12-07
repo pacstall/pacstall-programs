@@ -21,10 +21,8 @@ build() {
   cd build || return 1
   cmake .. -DCMAKE_INSTALL_PREFIX="/usr" -DCMAKE_BUILD_TYPE=Release
   make -j"$(nproc)"
-  cd .. || return 1
 }
 
 install() {
-  cd build || return 1
   sudo make install DESTDIR="${STOWDIR}/${name}"
 }
