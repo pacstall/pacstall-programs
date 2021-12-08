@@ -2,13 +2,14 @@
 ### This is an example of pacscript
 ```bash
 name="foo"
+pkgname="foo" # if this is a -git, -bin, etc. package, this would be the package name without extension
 version="1.0"
 url="https://github.com/Henryws/foo/archive/refs/tags/${version}.zip"
 build_depends="vim gcc"
 depends="neofetch plasma"
-breaks="${name}-git ${name}-bin ${name}-app"
-replace="alacritty"
-gives="libfoo"
+breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app ${pkgname}-deb"
+replace="${pkgname} alacritty"
+gives="${pkgname} libfoo"
 description="foo is the ultimate program capable of foo and bar!"
 hash="2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae"
 optdepends=("bar: not foo"
