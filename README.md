@@ -22,7 +22,7 @@ Here are the development dependencies that you need to install as a developer:
 :-------------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------|
 | [pre-commit](https://pre-commit.com/)      | `sudo pip install pre-commit`                                                                                                             |
 | [shellcheck](https://www.shellcheck.net/)  | `sudo apt install shellcheck`                                                                                                             |
-| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | You can install using [go](https://go.dev/) or download the linux binary from their [releases page](https://github.com/mvdan/sh/releases) |
+| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | `pacstall -PI shfmt-bin` |
 
 After the dependencies are installed simply clone this repository, and use `pre-commit install` to install the pre-configured hooks to your cloned repository.
 
