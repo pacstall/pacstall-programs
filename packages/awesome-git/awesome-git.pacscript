@@ -16,8 +16,6 @@ build_depends="cmake libluajit-5.1-dev lua-lgi-dev x11proto-core-dev libx11-xcb-
 optdepends=("gir1.2-gtk-3.0: for ./themes/gtk/"
             "default-dbus-session-bus: for DBus integration"
             "libdbus-1-dev: for DBus integration and the awesome-client utility"
-            "asciidoctor: for generating man pages"
-            "gzip: for compressing man pages"
             "rlwrap: readline support for awesome-client"
             "dex: autostart your desktop files"
             "librsvg2-dev: for displaying SVG files without scaling artifacts"
