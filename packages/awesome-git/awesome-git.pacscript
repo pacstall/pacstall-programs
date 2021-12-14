@@ -22,7 +22,7 @@ optdepends=("gir1.2-gtk-3.0: for ./themes/gtk/"
             "feh: for icon generation etc"
             "awesome-extra: additional modules for awesome"
             "awesome-doc: documentation for awesome")
-breaks="${pkgname} ${pkgname}-bin"
+breaks="${pkgname} ${pkgname}-bin ${pkgname}-app ${pkgname}-deb"
 
 pkgver() {
     git ls-remote "${url}" master | cut -f1
