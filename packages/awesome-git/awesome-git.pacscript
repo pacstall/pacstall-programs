@@ -8,7 +8,7 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="awesome-git"
 pkgname="awesome"
-pkgdir="/usr/src/pacstall/${name}"
+pkgdir="${STOWDIR}/${name}"
 description="awesome window manager"
 url="https://github.com/awesomeWM/${pkgname}.git"
 depends="libdbus-1-dev libxcb-xfixes0-dev libxcb-randr0-dev libxcb-xinerama0-dev libxcb-icccm4-dev libxcb-xtest0-dev liblua5.3-dev libcairo2-dev dbus libgdk-pixbuf2.0-dev libxdg-basedir-dev libxkbcommon-x11-dev lua5.3 lua-lgi-dev libpango1.0-dev libstartup-notification0-dev libxcb-cursor-dev libxcb-keysyms1-dev libxcb-util-dev libxcb-xrm-dev libxfixes-dev cmake"
