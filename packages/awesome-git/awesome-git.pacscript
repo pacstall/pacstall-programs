@@ -20,7 +20,6 @@ optdepends=("rlwrap: readline support for awesome-client"
             "awesome-extra: additional modules for awesome"
             "awesome-doc: documentation for awesome")
 breaks="${pkgname} ${pkgname}-bin"
-removescript="yes"
 
 pkgver() {
     git ls-remote "${url}" master | cut -f1
