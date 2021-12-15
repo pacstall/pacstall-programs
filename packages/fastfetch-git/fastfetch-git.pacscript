@@ -22,7 +22,7 @@ optdepends=("libpci-dev: GPU output"
             "libxfconf-0-dev: XFWM theme + xfce-terminal font"
             # "libsqlite3-dev: RPM package count"
 )
-breaks="${pkgname} ${pkgname}-bin"
+breaks="${pkgname} ${pkgname}-bin ${pkgname}-deb ${pkgname}-app"
 removescript="yes"
 
 pkgver() {
