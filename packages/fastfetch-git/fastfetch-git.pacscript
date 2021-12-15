@@ -34,8 +34,10 @@ prepare() {
 
 build() {
   # Build fastfetch
-  cmake -j"$(nproc)" .
-  cmake --build . -j"$(nproc)"
+  mkdir -p build/
+  cd build/
+  cmake ..
+  cmake --build .
 }
 
 install() {
