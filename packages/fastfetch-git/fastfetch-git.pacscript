@@ -8,7 +8,7 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fastfetch-git"
 pkgname="fastfetch"
-pkgdir="/usr/src/pacstall/${name}"
+pkgdir="${STOWDIR}/${name}"
 description="Like neofetch, but much faster because written in c"
 url="https://github.com/LinusDierheimer/fastfetch.git"
 build_depends="cmake libpci-dev libvulkan-dev libx11-dev libxrandr-dev libwayland-client0 libwayland-dev libgio-cil libglib2.0-dev libdconf-dev libxfconf-0-dev" # libsqlite3-dev
