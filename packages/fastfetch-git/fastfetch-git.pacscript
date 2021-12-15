@@ -36,9 +36,9 @@ build() {
   # Build fastfetch
   mkdir -p build/
   (
-  cd build/
-  cmake ..
-  cmake --build .
+    cd build/ || return 2
+    cmake ..
+    cmake --build .
   )
 }
 
@@ -57,7 +57,7 @@ install() {
 
   # Install presets
   for file in presets/*; do
-    sudo install -D "$file" -t "${pkgdir}/usr/share/${pkgname}/presets"
+    sudo install -D "${file}" -t "${pkgdir}/usr/share/${pkgname}/presets"
   done
 }
 
