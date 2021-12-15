@@ -35,9 +35,11 @@ prepare() {
 build() {
   # Build fastfetch
   mkdir -p build/
+  (
   cd build/
   cmake ..
   cmake --build .
+  )
 }
 
 install() {
@@ -48,7 +50,7 @@ install() {
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
   # Install fastfetch and flashfetch binary
-  sudo install -Dm755 "fastfetch" "flashfetch" -t "${pkgdir}/usr/bin"
+  sudo install -Dm755 "build/fastfetch" "build/flashfetch" -t "${pkgdir}/usr/bin"
 
   # Install bash completions
   sudo install -Dm644 "completions/bash" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
