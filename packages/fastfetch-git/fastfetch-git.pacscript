@@ -9,7 +9,6 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="fastfetch-git"
 pkgname="fastfetch"
 pkgdir="/usr/src/pacstall/${name}"
-homedir="/home/$(logname)"
 description="Like neofetch, but much faster because written in c"
 url="https://github.com/LinusDierheimer/fastfetch.git"
 build_depends="cmake libpci-dev libx11-dev libxrandr-dev libwayland-client0 libwayland-dev libgio-cil libglib2.0-dev libdconf-dev libxfconf-0-dev libsqlite3-dev"
@@ -66,10 +65,10 @@ removescript() {
 
   # Remove left over directories
   if ask "Do you want to remove the configuration files?" Y; then
-    sudo rm -rf "${homedir}/.config/fastfetch"
+    rm -rf "${homedir}/.config/fastfetch"
   fi
   if ask "Do you want to remove the left over cache?" Y; then
-    sudo rm -rf "${homedir}/.cache/fastfetch"
+    rm -rf "${homedir}/.cache/fastfetch"
   fi
 }
 # vim:set ft=sh ts=2 sw=2 et:
