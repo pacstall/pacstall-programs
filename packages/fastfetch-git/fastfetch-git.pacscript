@@ -22,7 +22,6 @@ optdepends=("libpci-dev: GPU output"
             "libxfconf-0-dev: XFWM theme + xfce-terminal font"
             "libsqlite3-dev: RPM package count")
 breaks="${pkgname} ${pkgname}-bin"
-removescript="yes"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1

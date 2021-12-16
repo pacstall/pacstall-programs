@@ -7,7 +7,6 @@ gives="nvim"
 replace="nvim"
 description="Neovim is a vim fork maintained by the comunity"
 hash="2294caa9d2011996499fbd70e4006e4ef55db75b99b6719154c09262e23764ef"
-removescript="yes"
 
 prepare() {
     true

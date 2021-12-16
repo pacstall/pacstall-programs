@@ -10,7 +10,6 @@ pkgver() {
     git ls-remote "${url}" master | cut -f1
 }
 version="$(pkgver)"
-removescript="yes"
 
 prepare() {
     sudo pip3 install --upgrade psutil
