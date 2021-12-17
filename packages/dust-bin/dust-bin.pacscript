@@ -4,7 +4,7 @@ pkgdir="${STOWDIR}/${name}"
 version="0.7.5"
 description="A more intuitive version of du in rust"
 url="https://github.com/bootandy/dust/releases/download/v${version}/dust-v${version}-x86_64-unknown-linux-musl.tar.gz"
-breaks="${pkgname}"
+gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="6ee34a8b347d58df988c1f796b65a6c56fb5e65d5d2c79ed06c6627228ac4256"
 
