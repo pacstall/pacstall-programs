@@ -59,7 +59,7 @@ END
 
   # Install resources
   (
-    cd Space_Cadet
+    cd Space_Cadet || return 1
     sudo install -m644 ./*.DAT ./*.DOC ./*.MID ./*.BMP ./*.INF ./*.WAV -t "${pkgdir}/usr/lib/${pkgname}"
   )
 
@@ -68,7 +68,7 @@ END
 
   wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
 
-  if [[ $(sha256sum ./${pkgname}.desktop | cut -d" " -f 1) != "6edc9d9e73f430b025d0efe09ecd9027d38f7c2e3562de470a8057939fb1889f" ]]; then
+  if [[ $(sha256sum ./"${pkgname}".desktop | cut -d" " -f 1) != "6edc9d9e73f430b025d0efe09ecd9027d38f7c2e3562de470a8057939fb1889f" ]]; then
     fancy_message error "Downloading desktop file failed. Checksum mismatch"
     return 1
   fi
