@@ -13,7 +13,6 @@ description="A portable fork of the OpenBSD doas command"
 url="https://github.com/Duncaen/OpenDoas.git"
 build_depends="bison libpam0g-dev"
 breaks="${pkgname} ${pkgname}-bin"
-removescript="yes"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1

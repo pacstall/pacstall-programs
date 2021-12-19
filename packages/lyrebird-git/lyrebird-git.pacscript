@@ -7,7 +7,6 @@ maintainer="D-Brox <BroxZuka@protonmail.com>"
 depends="python3 libgtk-3-dev python3-gi python3-gi-cairo gir1.2-gtk-3.0 sox libsox-fmt-pulse pulseaudio"
 build_depends="python3-pip"
 pkgdir="/usr/src/pacstall/${name}"
-removescript="yes"
 
 prepare() {
     sudo pip3 -q install toml

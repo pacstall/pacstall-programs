@@ -7,7 +7,6 @@ breaks="tuner-git"
 depends=""
 description="Discover and listen to internet radio stations."
 hash="4b8cc5941652ebb872793bbc0f3d56e1c5d4423e6cf8d16aaeea25999075c1aa"
-removescript="yes"
 
 prepare() {
     meson builddir --prefix=/usr

@@ -8,7 +8,6 @@ replace="git"
 description="git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals."
 hash="02047f8dc8934d57ff5e02aadd8a2fe8e0bcf94a7158da375e48086cc46fce1d"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
-removescript="yes"
 
 prepare() {
           make configure

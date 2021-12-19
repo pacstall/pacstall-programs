@@ -15,7 +15,6 @@ description="i3-gaps – i3 with more features (forked from https://github.com/i
 build_depends="meson ninja-build libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libxcb-shape0-dev"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app ${pkgname}-deb ${name}-bin ${name}-git ${name}-app ${name}-deb"
 hash="fd8e2db66f1da82a23b671404078f8fc1013ebba1aacd4245e5d1c2d331a3ad8"
-removescript="yes"
 
 prepare() {
   # Make build dir

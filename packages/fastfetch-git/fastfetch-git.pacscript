@@ -23,7 +23,6 @@ optdepends=("libpci-dev: GPU output"
             # "libsqlite3-dev: RPM package count"
 )
 breaks="${pkgname} ${pkgname}-bin ${pkgname}-deb ${pkgname}-app"
-removescript="yes"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1

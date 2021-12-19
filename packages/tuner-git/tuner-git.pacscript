@@ -5,7 +5,6 @@ build_depends="meson valac libgtk-3-dev libgranite-dev libsoup2.4-dev libgstream
 depends=""
 breaks="tuner"
 description="Tuner Radio Player - development version"
-removescript="yes"
 pkgver() {
     git ls-remote "${url}" master | cut -f1
 }

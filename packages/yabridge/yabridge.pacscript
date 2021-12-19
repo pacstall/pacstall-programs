@@ -7,7 +7,6 @@ hash="46a68052157bd30c4aeb5b0eb84154582408eb099377716e3690518dec048384"
 optdepends=("wine: 32-bit windows emulator"
   "wine64: 64-bit windows emulator")
 maintainer="echometerain <echometer@disroot.org>"
-removescript=yes
 prepare() {
   sudo install -D ./* -t "${STOWDIR}/${name}/usr/lib/yabridge"
 }
