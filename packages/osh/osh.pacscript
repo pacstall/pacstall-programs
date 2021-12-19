@@ -12,19 +12,10 @@ MAKEFLAGS=
 
 prepare() {
   mkdir -p tmp
-
-  # HACK: Change `TMP` directory to `./tmp/` for building
-  # We do not want this to expand
-  # shellcheck disable=SC2016
-  sed 's/TMP=${TMPDIR:-\/tmp}/TMP=.\/tmp/' -i "configure"
-
-  # HACK: Change `DESTDIR` by inserting it directly into the file
-  #       Since `DESTDIR="${pkgdir}/ sudo ./install" doesn't work
-  sed "2 i DESTDIR=${pkgdir}" -i "./install"
 }
 
 build() {
-  ./configure --prefix="/usr"
+  TMPDIR="./tmp/" ./configure --prefix="/usr"
 
   # We want this to expand
   # shellcheck disable=SC2248
@@ -32,6 +23,6 @@ build() {
 }
 
 install() {
-  sudo ./install
+  sudo DESTDIR="${pkgdir}" ./install
 }
 # vim:set ft=sh ts=2 sw=2 et:
