@@ -135,6 +135,7 @@ nyxt-deb
 obs-backgroundremoval
 obs-backgroundremoval-git
 obs-ndi-deb
+oil
 onefetch-bin
 onnxruntime-1-7-0-bin
 opendoas-git
@@ -145,7 +146,6 @@ opentoonz-gts
 opera-beta-deb
 opera-deb
 opera-developer-deb
-osh
 pacget-git
 panagement
 paper-icon-theme
