@@ -36,7 +36,7 @@ prepare() {
 build() {
   # Build fastfetch
   mkdir -p build/
-  ( 
+  (
     cd build/ || return 2
     cmake ..
     cmake --build .
