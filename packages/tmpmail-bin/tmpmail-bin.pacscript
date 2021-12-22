@@ -1,3 +1,11 @@
+#  __      __________   ______
+# /  \    /  \_____  \ /  __  \
+# \   \/\/   //  ____/ >      <
+#  \        //       \/   --   \
+#   \__/\  / \_______ \______  /
+#        \/          \/      \/
+maintainer="wizard-28 <wiz28@pm.me>"
+
 name="tmpmail-bin"
 pkgname="tmpmail"
 pkgdir="${STOWDIR}/${name}"
