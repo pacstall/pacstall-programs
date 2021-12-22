@@ -36,7 +36,7 @@ install() {
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
   # Install binary
-  sudo install -Dm755 tmpmail -t "${pkgdir}/usr/bin"
+  sudo install -Dm755 "tmpmail" -t "${pkgdir}/usr/bin"
 }
 
 removescript() {
