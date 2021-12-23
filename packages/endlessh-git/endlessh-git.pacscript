@@ -1,4 +1,5 @@
 name="endlessh-git"
+pkgname="endlessh"
 gives="endlessh"
 breaks="${gives} ${gives}-deb ${gives}-app ${gives}-bin"
 pkgdir="/usr/src/pacstall/${name}"
@@ -24,8 +25,13 @@ build() {
 
 install() {
   sudo make install DESTDIR="${pkgdir}"
-  sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${name}"
-  sudo install -Dm644 UNLICENSE -t "${pkgdir}/usr/share/licenses/${name}"
+  sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${pkgname}"
+  sudo install -Dm644 UNLICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
   sudo install -Dm644 sample-config "${pkgdir}/etc/endlessh/config"
+}
+
+removescript() {
+  sudo rm -rf "/usr/share/licenses/${pkgname}"
+  sudo rm -rf "/usr/share/doc/${pkgname}"
 }
 # vim:set ft=sh ts=2 sw=2 et:
