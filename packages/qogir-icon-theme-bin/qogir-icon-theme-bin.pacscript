@@ -1,3 +1,11 @@
+#  __      __________   ______
+# /  \    /  \_____  \ /  __  \
+# \   \/\/   //  ____/ >      <
+#  \        //       \/   --   \
+#   \__/\  / \_______ \______  /
+#        \/          \/      \/
+maintainer="wizard-28 <wiz28@pm.me>"
+
 name="qogir-icon-theme-bin"
 pkgname="qogir-icon-theme"
 pkgdir="${STOWDIR}/${name}"
