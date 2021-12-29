@@ -6,7 +6,7 @@ url="https://github.com/vitalif/grive2.git"
 build_depends="cmake libgcrypt20-dev libyajl-dev libboost-all-dev libcurl4-openssl-dev libexpat1-dev libcppunit-dev binutils-dev debhelper zlib1g-dev dpkg-dev pkg-config"
 depends="libgcrypt20 libyajl2 libboost-all-dev libcurl4 libexpat1"
 replace="grive"
-breaks="grive2"
+breaks="${pkgname} ${pkgname}-bin ${pkgname}-deb ${pkgname}-app"
 gives="grive2 grive"
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
 
