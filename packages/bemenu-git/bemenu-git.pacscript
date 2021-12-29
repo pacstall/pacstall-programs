@@ -11,7 +11,7 @@ pkgname="bemenu"
 pkgdir="/usr/src/pacstall/${name}"
 description="Dynamic menu library and client program inspired by dmenu (git release)"
 url="https://github.com/Cloudef/bemenu.git"
-build_depends="libxinerama-dev libxkbcommon-dev libncurses-dev wayland-protocols libwayland-dev libcairo2-dev libpango1.0-dev libpangocairo-1.0-0"
+build_depends="scdoc wayland-protocols libcairo-dev libpango1.0-dev libxkbcommon-dev libwayland-dev"
 breaks="${pkgname}-bin ${pkgname}"
 
 pkgver() {
