@@ -154,12 +154,14 @@ paper-icon-theme
 pdf-mix-tool-git
 pdfmm-git
 pfetch-bin
+pipes.sh-bin
 pipewire
 planner-git
 polybar
 pomatez-deb
 popsicle
 protonmail-bridge-deb
+qogir-icon-theme-bin
 renegate
 sed
 shell-color-scripts
@@ -213,4 +215,5 @@ wine64
 yabridge
 yad
 youtube-dl-git
+zentile-bin
 zotero
