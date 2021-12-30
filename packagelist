@@ -46,11 +46,13 @@ discord-canary
 discord-ptb-deb
 dmenu
 dmenu-distrotube
+doas-git
 dotdrop
 drawio-desktop-deb
 dropbox-deb
 duf-deb
 dunst
+dust-bin
 electronmail-deb
 emacs
 emacs-git
@@ -153,12 +155,14 @@ paper-icon-theme
 pdf-mix-tool-git
 pdfmm-git
 pfetch-bin
+pipes.sh-bin
 pipewire
 planner-git
 polybar
 pomatez-deb
 popsicle
 protonmail-bridge-deb
+qogir-icon-theme-bin
 renegate
 sed
 shell-color-scripts
@@ -177,6 +181,7 @@ suru-icon-theme-git
 telegram-bin
 tenacity-git
 thrive-deb
+tmpmail-bin
 tmux
 topgrade-bin
 tor
@@ -211,4 +216,5 @@ wine64
 yabridge
 yad
 youtube-dl-git
+zentile-bin
 zotero
