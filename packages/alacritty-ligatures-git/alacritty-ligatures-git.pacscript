@@ -4,6 +4,7 @@ url="https://github.com/zenixls2/alacritty.git"
 breaks="${name} ${name}-bin ${name}-app"
 build_depends="cargo cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 gzip"
 description="A fast, cross-platform, OpenGL terminal emulator"
+maintainer="Henryws <hwengerstickel@pm.me>"
 pkgver() {
         git ls-remote "${url}" master | cut -f1
 }
