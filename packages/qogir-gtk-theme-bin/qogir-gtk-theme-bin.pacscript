@@ -1,13 +1,13 @@
 name="qogir-gtk-theme-bin"
 pkgname="qogir-gtk-theme"
 pkgdir="${STOWDIR}/${name}"
-version="2021-11-17"
+version="2021-12-25"
 description="Qogir is a flat Design theme for GTK"
 url="https://github.com/vinceliuice/Qogir-theme/archive/${version}.tar.gz"
 depends="gtk3-engines-unico gtk2-engines-murrine gtk2-engines-pixbuf"
 build_depends="libsass1"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-hash="cfd39402ed82759422ae9af4dad5ebd54030145d46fdd40da5d8b6dc020d0dfc"
+hash="fb6b55b88dd6d69814ccd877efc227f3f62c4c73d1cf407bb02d5b93ee345023"
 
 # To specify flags for theme installation you have two options
 # 1. Edit _INSTALL_OPTS, and specify flags there
