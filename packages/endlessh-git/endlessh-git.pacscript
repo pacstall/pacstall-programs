@@ -2,7 +2,7 @@ name="endlessh-git"
 pkgname="endlessh"
 gives="endlessh"
 breaks="${gives} ${gives}-deb ${gives}-app ${gives}-bin"
-pkgdir="/usr/src/pacstall/${name}"
+pkgdir="${STOWDIR}/${name}"
 url="https://github.com/skeeto/endlessh.git"
 description="SSH tarpit that very slowly sends an endless, random SSH banner"
 pkgver() {
@@ -15,7 +15,7 @@ prepare() {
   wget -q https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/endlessh-git/sample-config
   if [[ "$(sha256sum sample-config | cut -d' ' -f 1)" != "f92a2341103a7c6243d7cbc32a3400e0f01ecd5fae12a0731029f6c50ba9f451" ]]; then
     fancy_message error "Checksum for sample config failed"
-    cleanup
+    return 1
   fi
 }
 
