@@ -5,6 +5,7 @@ breaks="${gives} ${gives}-deb ${gives}-app ${gives}-bin"
 pkgdir="${STOWDIR}/${name}"
 url="https://github.com/skeeto/endlessh.git"
 description="SSH tarpit that very slowly sends an endless, random SSH banner"
+maintainer="Henryws <hwengerstickel@pm.me>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1
 }
