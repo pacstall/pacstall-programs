@@ -3,7 +3,7 @@ ci:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.0.1
+    rev: v4.1.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -19,9 +19,9 @@ repos:
       - id: shellcheck
         types: []
         args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034", "-e", "SC2154", "-e", "SC2312"]
-        files: '^.*\.(pacscript)$'
+        files: '^.*\.(pacscript|sh)$'
       - id: shfmt
         args: ["-i", "2", "-bn", "-ci", "-sr", "-kp", "-s"]
         types: []
-        files: '^.*\.(pacscript)$'
+        files: '^.*\.(pacscript|sh)$'
 # vim:set ft=yaml ts=2 sw=2 et:

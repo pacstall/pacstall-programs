@@ -1,6 +1,6 @@
-name="windscribe-cli-deb"
+name="windscribe-legacy-cli-deb"
 gives="windscribe"
 version="1.4-51"
 url="https://assets.staticnetcontent.com/desktop/linux/windscribe-cli_${version}_amd64.deb"
-description="Windscribe CLI"
+description="The old CLI of Windscribe VPN"
 hash="ee4b8a574445ae1e2f83e6ae0b3fec91272fcd798d4130717ff229583a82d473"

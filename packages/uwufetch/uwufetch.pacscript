@@ -16,7 +16,6 @@ optdepends=("viu: image preview"
   "lshw: hardware info")
 breaks="${name}-git ${name}-bin"
 hash="1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab"
-removescript="yes"
 
 prepare() {
   # Make nessesary directories

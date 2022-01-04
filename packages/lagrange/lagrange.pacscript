@@ -6,7 +6,6 @@ build_depends="git cmake libsdl2-dev libssl-dev libpcre3-dev zlib1g-dev libunist
 depends=""
 description="A Beautiful Gemini Client"
 hash="0602bf65d79a1495818ab64717951d1c99057ed20e8c7bb621c8d5b693420b81"
-removescript="yes"
 
 prepare() {
     mkdir build

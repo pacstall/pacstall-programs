@@ -13,7 +13,6 @@ optdepends=("xjadeo: video monitoring"
 gives="ladspa-host, lv2-host, vst-host, vst3-host, ardour, ardour-data"
 breaks="ardour, ardour-data"
 url="https://github.com/Ardour/ardour.git"
-removescript="yes"
 # patch="https://github.com/archlinux/svntogit-community/blob/packages/ardour/trunk/ardour-6.2-vendor_qm-dsp.patch"
 pkgver() {
     git ls-remote "https://github.com/Ardour/ardour.git" master | head -n1 | cut -f1

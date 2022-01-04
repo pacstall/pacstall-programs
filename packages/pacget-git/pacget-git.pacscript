@@ -10,7 +10,6 @@ url="https://gitlab.com/Erik.Lundstedt/pacget.git"
 license="Don't Be a Jerk"
 depends="fzf curl bash"
 description="A fully foss, lightweight fuzzysearching TUI frontend for pacstall using fzf"
-removescript="yes"
 
 debian="TRUE"
 ubuntu="TRUE"
