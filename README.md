@@ -1,6 +1,6 @@
 # Pacstall Programs
 
-This is the default repository of pacscripts which pacstall uses to install software. You can fork this repository and add make your own package repository as long as it follows the basic structure:
+This is the default repository of pacscripts which [pacstall](https://github.com/pacstall/pacstall) uses to install software. You can fork this repository and add make your own package repository as long as it follows the basic structure:
 
 ```monospace
 package-repository/
