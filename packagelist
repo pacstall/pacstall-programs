@@ -1,5 +1,6 @@
 adapta-gtk-theme-git
 alacritty
+amfora-bin
 android-studio
 appimagelauncher-deb
 ardour-git
@@ -73,8 +74,8 @@ fsearch-git
 gcmcore-deb
 geekbench-bin
 git
-git-delta-deb
 gitblade-deb
+git-delta-deb
 gitfiend-deb
 github-cli-deb
 github-desktop
@@ -174,9 +175,9 @@ soundux
 spacecadetpinball-git
 spotify-client-deb
 st-distrotube-git
-st-lukesmith-git
 steamtinkerlaunch-git
 stellarium
+st-lukesmith-git
 surf
 surf-distrotube-git
 suru-icon-theme-git
@@ -214,8 +215,8 @@ wazzapp-deb
 webapp-manager
 webapp-manager-deb
 windscribe-legacy-cli-deb
-wine-staging-git
 wine64
+wine-staging-git
 yabridge
 yad
 youtube-dl-git
