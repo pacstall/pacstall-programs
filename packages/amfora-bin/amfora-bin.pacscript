@@ -10,7 +10,8 @@ url="https://github.com/makeworld-the-better-one/amfora/releases/download/v${ver
 maintainer="Henryws <hwengerstickel@pm.me>"
 
 prepare() {
-  true
+  wget -q https://roboticoverlords.org/amfora.png
+  wget -q https://raw.githubusercontent.com/makeworld-the-better-one/amfora/master/amfora.desktop
 }
 
 build() {
@@ -18,5 +19,7 @@ build() {
 }
 
 install() {
+  sudo install -Dm644 amfora.png "${pkgdir}/usr/share/pixmaps/amfora.png"
+  sudo install -Dm644 amfora.desktop "${pkgdir}/usr/share/applications/amfora.desktop"
   sudo install -Dm755 amfora_"${version}"_linux_64-bit "${pkgdir}/usr/bin/${pkgname}"
 }
