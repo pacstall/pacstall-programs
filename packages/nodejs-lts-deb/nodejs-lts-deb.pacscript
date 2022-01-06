@@ -29,11 +29,3 @@ install() {
   # If the package comes already compiled, use 'install'
   # sudo install -Dm755 ${name} -t "${STOWDIR}/${name}/usr/bin"
 }
-
-postinst(){
-  echo "Do post-install stuff here"
-}
-
-removescript(){
-  # remove directories that are not removed during removal
-}
