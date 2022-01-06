@@ -13,7 +13,6 @@ pkgver() {
 
 version="$(pkgver)"
 url="https://github.com/nodejs/node/archive/v$version/nodejs-$version.tar.gz"
-hash="fbfc347c0f07df1d575b27f660abda97b65f336577797ba56a8837385ddb5fc6d55bf80c95042ff74ad9f4bd12e5188672b8f307a085287db89e1b9fdaba2567"
 
 build() {
   cd "node-$version"
