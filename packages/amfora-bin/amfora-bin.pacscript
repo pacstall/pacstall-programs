@@ -11,7 +11,16 @@ maintainer="Henryws <hwengerstickel@pm.me>"
 
 prepare() {
   wget -q https://roboticoverlords.org/amfora.png
+  if [[ "$(sha256sum amfora.png | cut -d' ' -f 1)" != "3d029d05cff8c42e82685ce7a61fcaa2118e4cbb6a547816a7d5150868a11092" ]]; then
+    fancy_message error "Checksum for amfora.png failed"
+    return 1
+  fi
   wget -q https://raw.githubusercontent.com/makeworld-the-better-one/amfora/master/amfora.desktop
+  if [[ "$(sha256sum amfora.desktop | cut -d' ' -f 1)" != "812e1faad6f6d4817eac60d36813472afebe2980cd2e661151a3d98669274207" ]]; then
+    fancy_message error "Checksum for amfora.desktop failed"
+    return 1
+  fi
+  sed -i '/^Terminal/d' amfora.desktop
 }
 
 build() {
