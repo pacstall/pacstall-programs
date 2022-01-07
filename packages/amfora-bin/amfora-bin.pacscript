@@ -20,7 +20,6 @@ prepare() {
     fancy_message error "Checksum for amfora.desktop failed"
     return 1
   fi
-  sed -i '/^Terminal/d' amfora.desktop
 }
 
 build() {
