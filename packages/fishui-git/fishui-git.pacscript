@@ -14,7 +14,7 @@ version="$(pkgver)"
 
 prepare() {
     mkdir build
-    cd build || exit 1
+    cd build || return 1
 }
 
 build() {
