@@ -18,14 +18,17 @@ This repository maintains a certain standard of commits. To ensure that your com
 
 Here are the development dependencies that you need to install as a developer:
 
-| Dependency                                 | How to install                                                                                                                            |
-:-------------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [pre-commit](https://pre-commit.com/)      | `sudo pip install pre-commit`                                                                                                             |
-| [shellcheck](https://www.shellcheck.net/)  | `sudo apt install shellcheck`                                                                                                             |
-| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | `pacstall -PI shfmt-bin` |
+| Dependency                                          | How to install                      |
+:----------------------------------------------------:|-------------------------------------|
+| [pre-commit](https://pre-commit.com/)               | `sudo pip install pre-commit`       |
+| [shellcheck](https://www.shellcheck.net/)           | `sudo apt install shellcheck`       |
+| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3)          | `pacstall -PI shfmt-bin`            |
+| [editor-config](https://editorconfig.org/#download) | Install the plugin for your editor  |
 
 After the dependencies are installed simply clone this repository, and use `pre-commit install` to install the pre-configured hooks to your cloned repository.
 
 Now, whenever you try to commit a patch all the configured hooks will run and block/fix your code so that it adheres to or standards.
 
 In case for some reason (false positives etc), you want to skip the hooks commit using `git commit --no-verify`
+
+
