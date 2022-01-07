@@ -6,10 +6,10 @@ depends="ninja-build gettext libtool-bin autoconf automake cmake g++ pkg-config 
 pkgver() {
     git ls-remote "${url}" master | cut -f1
 }
-version="${pkgver}"
+version="$(pkgver)"
 
 build() {
-    make -j$(nproc)
+    make -j"$(nproc)"
 }
 
 install() {
