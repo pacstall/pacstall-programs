@@ -18,11 +18,12 @@ This repository maintains a certain standard of commits. To ensure that your com
 
 Here are the development dependencies that you need to install as a developer:
 
-| Dependency                                 | How to install                                                                                                                            |
-:-------------------------------------------:|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [pre-commit](https://pre-commit.com/)      | `sudo pip install pre-commit`                                                                                                             |
-| [shellcheck](https://www.shellcheck.net/)  | `sudo apt install shellcheck`                                                                                                             |
-| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | `pacstall -PI shfmt-bin` |
+| Dependency                                          | How to install                      |
+:----------------------------------------------------:|-------------------------------------|
+| [pre-commit](https://pre-commit.com/)               | `sudo pip install pre-commit`       |
+| [shellcheck](https://www.shellcheck.net/)           | `sudo apt install shellcheck`       |
+| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3)          | `pacstall -PI shfmt-bin`            |
+| [editor-config](https://editorconfig.org/#download) | Install the plugin for your editor  |
 
 After the dependencies are installed simply clone this repository, and use `pre-commit install` to install the pre-configured hooks to your cloned repository.
 
