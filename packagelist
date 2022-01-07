@@ -99,6 +99,7 @@ imwheel-exclude-patched-git
 insync-deb
 ivpn-deb
 ivpn-ui-deb
+jetbrains-toolbox-bin
 kvantum
 kxstudio-repos-deb
 lagrange
