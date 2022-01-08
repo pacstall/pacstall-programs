@@ -7,7 +7,7 @@ build_depends="cmake libgcrypt20-dev libyajl-dev libboost-all-dev libcurl4-opens
 depends="libgcrypt20 libyajl2 libboost-all-dev libcurl4 libexpat1"
 replace="grive"
 breaks="${pkgname} ${pkgname}-bin ${pkgname}-deb ${pkgname}-app"
-gives="grive2 grive"
+gives="grive2"
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
 
 pkgver() {
@@ -21,7 +21,7 @@ prepare() {
 }
 
 build() {
-  cmake -DCMAKE_BUILD_TYPE=Releaes \
+  cmake -DCMAKE_BUILD_TYPE=Release \
         -DCMAKE_INSTALL_PREFIX=/usr \
         ..
   make -j"$(nproc)"
