@@ -7,13 +7,12 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="walc-app"
-pkgname="walc"
-pkgdir="/usr/src/pacstall/${name}"
-homedir="/home/$(logname)"
+version="0.2.1"
+pkgdir="${STOWDIR}/${name}"
 description="An unofficial WhatsApp Desktop client for linux systems."
-url="https://github.com/cstayyab/WALC/releases/download/v0.2.1/walc.AppImage"
+url="https://github.com/cstayyab/WALC/releases/download/v${version}/walc.AppImage"
 hash="6c1e5c004e9c4bc5a8cf15837ce0e6c884fb3ace6397aa6aa95a6738c1960560"
-breaks="${pkgname} ${pkgname}-bin"
+breaks="${pkgname} ${pkgname}-bin ${pkgname}-git ${pkgname}-deb"
 
 prepare() {
   true
