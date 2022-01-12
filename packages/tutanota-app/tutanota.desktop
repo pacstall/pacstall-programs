@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Tutanota
+GenericName=Email Client
+Exec=/usr/bin/tutanota
+Icon=tutanota
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;
+StartupNotify=true
+StartupWMClass=Tutanota
+Categories=Email;Network;Office;
+SingleMainWindow=true
