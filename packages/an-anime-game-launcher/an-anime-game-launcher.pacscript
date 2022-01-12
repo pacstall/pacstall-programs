@@ -34,11 +34,3 @@ install() {
     sudo install -Dm755 "${SRCDIR}/an-anime-game-launcher.sh" "${STOWDIR}/${name}/usr/bin/${name}"
     sudo install -Dm644 "${SRCDIR}/an-anime-game-launcher.desktop" -t "${STOWDIR}/${name}/usr/share/applications"
 }
-
-postinst() {
-    sudo update-desktop-database -q
-}
-
-removescript() {
-    sudo update-desktop-database -q
-}
