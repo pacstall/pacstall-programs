@@ -7,7 +7,6 @@ Icon=tutanota
 Terminal=false
 X-MultipleArgs=false
 Type=Application
-MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;
 StartupNotify=true
 StartupWMClass=Tutanota
 Categories=Email;Network;Office;
