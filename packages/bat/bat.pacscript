@@ -1,10 +1,10 @@
 name="bat"
-version="0.18.3"
+version="0.19.0"
 url="https://github.com/sharkdp/bat/archive/refs/tags/v${version}.tar.gz"
 build_depends="cargo"
 replace="bat"
 description="A cat(1) clone with wings"
-hash="dff7fa5222f40c7b3c783d3ceb0c3ffb35662f1198b00d785f80f3f1523399dd"
+hash="6A920CAD1E7AE069EB9393F5B6883E0A7F2C957186B1075976331DAAA5E0468A"
 maintainer="Orphaned"
 prepare() {
         true
