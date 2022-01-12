@@ -2,7 +2,7 @@ maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 
 pkgname="tutanota"
 name="${pkgname}-app"
-version="1"
+version="3.89.25"
 description="Tutanota is the world's most secure email service, easy to use and private by design."
 url="https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage"
 hash="2ac1ebeeb7be79236a9fc2db26da7a819f3bc52bc3a93bc39c1b7cb45a130673"
