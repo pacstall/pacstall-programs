@@ -1,4 +1,5 @@
-name=an-anime-game-launcher
+name=an-anime-game-launcher-bin
+pkgname=an-anime-game-launcher
 version=2.0.0
 description="An Launcher for a specific anime game written in Electron with auto-patching and playtime tracking function"
 url="https://kaifa.ch/an_anime_game_launcher.tar.gz"
@@ -25,12 +26,12 @@ build() {
 
 install() {
     cd "${SRCDIR}/squashfs-root"
-    sudo install -dm755 "${STOWDIR}/${name}/usr/lib/${name}"
-    sudo cp -dr --no-preserve=ownership resources.neu "${STOWDIR}/${name}/usr/lib/${name}"
-    sudo cp -dr --no-preserve=ownership an-anime-game-launcher "${STOWDIR}/${name}/usr/lib/${name}"
-    sudo cp -dr --no-preserve=ownership public "${STOWDIR}/${name}/usr/lib/${name}"
+    sudo install -dm755 "${STOWDIR}/${pkgname}/usr/lib/${pkgname}"
+    sudo cp -dr --no-preserve=ownership resources.neu "${STOWDIR}/${pkgname}/usr/lib/${pkgname}"
+    sudo cp -dr --no-preserve=ownership an-anime-game-launcher "${STOWDIR}/${pkgname}/usr/lib/${pkgname}"
+    sudo cp -dr --no-preserve=ownership public "${STOWDIR}/${pkgname}/usr/lib/${pkgname}"
 
-    sudo install -Dm644 "${SRCDIR}/icon.png" "${STOWDIR}/${name}/usr/share/pixmaps/${name}.png"
-    sudo install -Dm755 "${SRCDIR}/an-anime-game-launcher.sh" "${STOWDIR}/${name}/usr/bin/${name}"
-    sudo install -Dm644 "${SRCDIR}/an-anime-game-launcher.desktop" -t "${STOWDIR}/${name}/usr/share/applications"
+    sudo install -Dm644 "${SRCDIR}/icon.png" "${STOWDIR}/${pkgname}/usr/share/pixmaps/${pkgname}.png"
+    sudo install -Dm755 "${SRCDIR}/an-anime-game-launcher.sh" "${STOWDIR}/${pkgname}/usr/bin/${pkgname}"
+    sudo install -Dm644 "${SRCDIR}/an-anime-game-launcher.desktop" -t "${STOWDIR}/${pkgname}/usr/share/applications"
 }
