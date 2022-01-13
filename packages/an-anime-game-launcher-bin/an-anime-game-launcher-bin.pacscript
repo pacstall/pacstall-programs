@@ -5,6 +5,8 @@ description="An Launcher for a specific anime game written in Electron with auto
 url="https://kaifa.ch/an_anime_game_launcher.tar.gz"
 hash="63942d038a0b7a58991e1bcc7b458341de58d7a26e6016153001cbf3ad6d77a2"
 maintainer="Marie Piontek <marie@kaifa.ch>"
+gives="${pkgname}"
+breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
 
 depends="libappindicator3-1 tar unzip xdelta3 cabextract git"
 
