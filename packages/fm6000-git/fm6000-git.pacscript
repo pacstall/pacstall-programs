@@ -1,7 +1,6 @@
 name="fm6000-git"
 version="5.0"
 url="https://github.com/anhsirk0/fetch-master-6000.git"
-build_depends=""
 depends="perl"
 breaks="fm6000"
 gives="fm6000"
