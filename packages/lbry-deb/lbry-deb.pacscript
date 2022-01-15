@@ -1,0 +1,7 @@
+name="lbry-deb"
+gives="LBRY"
+version="0.52.0"
+url="https://github.com/lbryio/lbry-desktop/releases/download/v${version}/${gives}_${version}.deb"
+description="A browser and wallet for LBRY, the decentralized, user-controlled content marketplace.."
+hash="09667657f73af3a8860f9f3ed6d62b00b7c1ef7dae39ff34f82ec634f3c5fe4b"
+maintainer="Madiator2011 <admin@madiator.com>"
