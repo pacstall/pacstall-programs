@@ -2,7 +2,7 @@
 name="treefetch-bin"
 pkgname="treefetch"
 pkgdir="${STOWDIR}/${name}"
-version="1.2.1"
+version="2.0.0"
 description="A lightning-fast system fetch tool made with Rust"
 url="https://github.com/angelofallars/treefetch/releases/download/v${version}/treefetch"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
