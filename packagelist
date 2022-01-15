@@ -1,6 +1,7 @@
 adapta-gtk-theme-git
 alacritty
 amfora-bin
+an-anime-game-launcher-bin
 android-studio
 appimagelauncher-deb
 ardour-git
@@ -133,6 +134,7 @@ nano
 neofetch
 neovim
 neovim-git
+nodejs-lts-deb
 nofetch
 notion-git
 nowpm
@@ -170,6 +172,7 @@ renegate
 sed
 shell-color-scripts
 shfmt-bin
+slack-deb
 smartgit
 smplayer-deb
 soundux
