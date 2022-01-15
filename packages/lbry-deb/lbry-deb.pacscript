@@ -1,5 +1,6 @@
 name="lbry-deb"
 gives="LBRY"
+breaks="${gives} ${gives}-bin ${gives}-git ${gives}-app"
 version="0.52.0"
 url="https://github.com/lbryio/lbry-desktop/releases/download/v${version}/${gives}_${version}.deb"
 description="A browser and wallet for LBRY, the decentralized, user-controlled content marketplace."
