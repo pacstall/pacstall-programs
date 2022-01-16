@@ -16,7 +16,7 @@ optdepends=("bar: not foo"
 "alacritty: a blazing fast terminal")
 ppa=("graphics-drivers/ppa"
 "webupd8team/y-ppa-manager")
-maintainer="Mr. Person <mr.person.protonmail.com>"
+maintainer="Mr. Person <mr.person@protonmail.com>"
 pacdeps=("dmenu" "tuner")
 patch=("https://dwm.suckless.org/patches/anybar/dwm-anybar-20200810-bb2e722.diff")
 
