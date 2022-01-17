@@ -1,0 +1,6 @@
+name="minecraft-launcher-deb"
+pkgname="minecraft-launcher-deb"
+version="928"
+url="https://launcher.mojang.com/download/Minecraft.deb"
+description="Official Minecraft Launcher"
+hash="21254b54e59e946adc523898f704592dc7c32b644c618324df80c4b98355ccd0"
