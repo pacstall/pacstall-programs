@@ -11,6 +11,10 @@ pkgver() {
 }
 version="$(pkgver)"
 
+prepare() {
+    true
+}
+
 build() {
     make -j$(nproc)
 }
