@@ -4,7 +4,7 @@ url="https://github.com/sharkdp/bat/archive/refs/tags/v${version}.tar.gz"
 build_depends="cargo"
 replace="bat"
 description="A cat(1) clone with wings"
-hash="6A920CAD1E7AE069EB9393F5B6883E0A7F2C957186B1075976331DAAA5E0468A"
+hash="6a920cad1e7ae069eb9393f5b6883e0a7f2c957186b1075976331daaa5e0468a"
 maintainer="Orphaned"
 prepare() {
         true
