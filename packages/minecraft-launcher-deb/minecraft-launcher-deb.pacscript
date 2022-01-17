@@ -1,5 +1,5 @@
 name="minecraft-launcher-deb"
-pkgname="minecraft-launcher-deb"
+pkgname="minecraft-launcher"
 version="928"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin"
 gives="${pkgname}"
