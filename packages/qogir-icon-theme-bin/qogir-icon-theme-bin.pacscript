@@ -9,11 +9,11 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="qogir-icon-theme-bin"
 pkgname="qogir-icon-theme"
 pkgdir="${STOWDIR}/${name}"
-version="2021-10-14"
+version="2022-01-12"
 description="A colorful design icon theme for linux desktops"
 url="https://github.com/vinceliuice/Qogir-icon-theme/archive/${version}.tar.gz"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-hash="329032fb3a4e3d68a697dbea7fd4389a138c1da55a7433a1dc25803bda568d32"
+hash="afcd0955ead6f9ef73a801cb6fd5917d8ccdd655381b583312e418198d468e10"
 
 prepare() {
   true

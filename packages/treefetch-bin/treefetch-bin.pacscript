@@ -2,11 +2,11 @@
 name="treefetch-bin"
 pkgname="treefetch"
 pkgdir="${STOWDIR}/${name}"
-version="1.2.1"
+version="2.0.0"
 description="A lightning-fast system fetch tool made with Rust"
 url="https://github.com/angelofallars/treefetch/releases/download/v${version}/treefetch"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-hash="36587cf0fb90f73e9f984209ddc3ec2c6768c0edbba82cad4f84ad177b76b21e"
+hash="1a835bafa75ecd2f18a53c3e0d73cf742a579106af03c4c459e5f8c873ee5187"
 maintainer="angelofallars <ba.fallaria@gmail.com>"
 
 prepare() {
