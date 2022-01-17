@@ -1,5 +1,5 @@
 name="minecraft-launcher-deb"
-pkgname="minecraft-launcher-deb"
+pkgname="minecraft-launcher"
 version="928"
 gives="${pkgname}"
 url="https://launcher.mojang.com/download/Minecraft.deb"
