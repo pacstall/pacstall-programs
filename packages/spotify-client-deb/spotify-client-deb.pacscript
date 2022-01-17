@@ -1,5 +1,5 @@
 name='spotify-client-deb'
-gives='spotify'
+gives='spotify-client'
 pkgname='spotify-client'
 breaks="${pkgname} ${pkgname}-git ${pkgname}-app ${pkgname}-bin spotify"
 version='1.1.72.439.gc253025e'
