@@ -8,10 +8,10 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="librewolf-app"
 pkgname="librewolf"
-version="96.0-1 "
+version="96.0.1-1"
 description="A fork of Firefox, focused on privacy, security and freedom."
 url="https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/latest/LibreWolf.x86_64.AppImage"
-hash="1b68a8e8d63bd6e805ff340507597a6821e48804263edae80ce135cd9a1328bc"
+hash="6cfbbe9e8a645e46d36daf048f0bde25b8ff29665cd4948475489b48b8692124"
 breaks="${pkgname}-deb ${pkgname}-bin ${pkgname}-git"
 pkgdir="${STOWDIR}/${name}"
 
