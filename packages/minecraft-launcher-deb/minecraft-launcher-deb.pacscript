@@ -1,7 +1,6 @@
 name="minecraft-launcher-deb"
 pkgname="minecraft-launcher-deb"
 version="928"
-breaks="${pkgname} ${pkgname}-git ${pkgname}-bin"
 gives="${pkgname}"
 url="https://launcher.mojang.com/download/Minecraft.deb"
 description="Official Minecraft Launcher"
