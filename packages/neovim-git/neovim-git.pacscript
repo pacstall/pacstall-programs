@@ -5,7 +5,7 @@ maintainer="TwilightBlood <hwengerstickel@pm.me>"
 depends="ninja-build gettext libtool-bin autoconf automake cmake g++ pkg-config unzip"
 gives="neovim"
 replace="neovim"
-breaks="neovim-bin neovim"
+breaks="neovim-bin neovim neovim-app neovim-deb"
 pkgver() {
     git ls-remote "${url}" master | cut -f1 | head -n1
 }
