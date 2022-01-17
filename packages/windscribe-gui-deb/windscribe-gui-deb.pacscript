@@ -1,6 +1,6 @@
 name="windscribe-gui-deb"
 gives="windscribe"
 version="2.3.15_beta"
-url="https://deploy-do.{gives}.com/apps/${gives}_${version}_amd64.deb"
+url="https://deploy-do.${gives}.com/apps/${gives}_${version}_amd64.deb"
 description="The GUI of Windscribe VPN"
 hash="c69b1d1e6f75c72a9a0a04a06a9faf0ab1fccd3a0efed6a5da1cc310978556c4"
