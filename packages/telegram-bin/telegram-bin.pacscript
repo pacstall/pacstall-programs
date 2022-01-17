@@ -8,11 +8,11 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="telegram-bin"
 pkgname="telegram"
-version="3.3.0"
+version="3.4.3"
 description="Telegram Desktop messaging app"
 url="https://github.com/telegramdesktop/tdesktop/releases/download/v${version}/tsetup.${version}.tar.xz"
 breaks="${pkgname} ${pkgname}-git"
-hash="9e340b983c0cd1ede2f8dea4d596e20606334381bb4cb0a803a3019900016287"
+hash="c6ff9ad17e9337e080f0477a974ff7ca7d41680680758344fbd5300c5bb1623b"
 
 pkgdir="/usr/src/pacstall/${name}"
 

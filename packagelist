@@ -1,5 +1,7 @@
 adapta-gtk-theme-git
 alacritty
+amfora-bin
+an-anime-game-launcher-bin
 android-studio
 appimagelauncher-deb
 ardour-git
@@ -86,6 +88,7 @@ google-earth-pro-stable-deb
 graillon
 grapejuice-git
 grive2
+grive2-git
 gtkhash
 heroic-games-launcher-deb
 htop
@@ -102,6 +105,7 @@ kvantum
 kxstudio-repos-deb
 lagrange
 latte-dock-git
+lbry-deb
 lemonbar-xft-git
 libcutefish-git
 libndi4-deb
@@ -131,6 +135,7 @@ nano
 neofetch
 neovim
 neovim-git
+nodejs-lts-deb
 nofetch
 notion-git
 nowpm
@@ -162,12 +167,15 @@ polybar
 pomatez-deb
 popsicle
 protonmail-bridge-deb
+qogir-gtk-theme-bin
 qogir-icon-theme-bin
 renegate
 sed
 shell-color-scripts
 shfmt-bin
+slack-deb
 smartgit
+smplayer-deb
 soundux
 spacecadetpinball-git
 spotify-client-deb
@@ -178,6 +186,7 @@ stellarium
 surf
 surf-distrotube-git
 suru-icon-theme-git
+teams-for-linux-deb
 telegram-bin
 tenacity-git
 thrive-deb
