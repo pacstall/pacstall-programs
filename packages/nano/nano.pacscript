@@ -1,6 +1,6 @@
 name="nano"
-major_version="5"
-minor_version="8"
+major_version="6"
+minor_version="0"
 version="${major_version}.${minor_version}"
 license="GPL3"
 url="https://www.nano-editor.org/dist/v${major_version}/${name}-${version}.tar.gz"
