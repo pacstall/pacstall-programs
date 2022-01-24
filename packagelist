@@ -101,6 +101,7 @@ imwheel-exclude-patched-git
 insync-deb
 ivpn-deb
 ivpn-ui-deb
+jetbrains-toolbox-bin
 kvantum
 kxstudio-repos-deb
 lagrange
@@ -200,6 +201,7 @@ touchegg-deb
 treefetch-bin
 tuner
 tuner-git
+tutanota-app
 ulauncher-deb
 universal-ctags-git
 uwufetch
