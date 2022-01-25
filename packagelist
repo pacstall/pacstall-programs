@@ -101,6 +101,7 @@ imwheel-exclude-patched-git
 insync-deb
 ivpn-deb
 ivpn-ui-deb
+jetbrains-toolbox-bin
 kvantum
 kxstudio-repos-deb
 lagrange
@@ -126,11 +127,13 @@ microsoft-edge-dev-deb
 microsoft-edge-stable-deb
 microsoft-prod-repo
 minecraft-launcher
+minecraft-launcher-deb
 moka-icon-theme
 ms-teams-deb
 mullvad-vpn-beta-deb
 mullvad-vpn-deb
 mutt-wizard
+nala-deb
 nano
 neofetch
 neovim
@@ -200,6 +203,7 @@ touchegg-deb
 treefetch-bin
 tuner
 tuner-git
+tutanota-app
 ulauncher-deb
 universal-ctags-git
 uwufetch
@@ -219,6 +223,7 @@ warpinator-deb
 wazzapp-deb
 webapp-manager
 webapp-manager-deb
+windscribe-gui-deb
 windscribe-legacy-cli-deb
 wine-staging-git
 wine64
