@@ -9,14 +9,18 @@ prepare() {
     true
 }
 build() {
-    true
+    #making needed directories
+    sudo mkdir -p $STOWDIR/$name/opt/$name
+    sudo mkdir -p $STOWDIR/$name/usr/bin
+    sudo mkdir -p $STOWDIR/$name/usr/share/applications
+    sudo mkdir -p $STOWDIR/$name/usr/share/pixmaps
 }
 install() {
     # Moving all android studio files to /opt
     sudo cp -a bin lib jre plugins license LICENSE.txt build.txt product-info.json "$STOWDIR/$name/opt/$name"
 
     # Creating a launcher in $PATH
-    sudo ln -s "$STOWDIR/$name/opt/android-studio/bin/studio.sh" "$STOWDIR/$name/usr/bin/android-studio"
+    sudo ln -s "$STOWDIR/$name/opt/$name/studio.sh" "$STOWDIR/$name/usr/bin/android-studio"
 
     sudo wget -q https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/android-studio/android-studio.desktop -O "$STOWDIR/$name/usr/share/applications/android-studio.desktop"
 
