@@ -9,8 +9,8 @@ prepare() {
     true
 }
 build() {
-    #making needed directories
-    sudo mkdir -p $STOWDIR/$name/opt/$name $STOWDIR/$name/usr/share/pixmaps $STOWDIR/$name/usr/share/applications $STOWDIR/$name/usr/bin
+    #make needed directories
+    sudo mkdir -p "$STOWDIR/$name/opt/$name" "$STOWDIR/$name/usr/share/pixmaps" "$STOWDIR/$name/usr/share/applications" "$STOWDIR/$name/usr/bin"
 }
 install() {
     # Moving all android studio files to /opt
