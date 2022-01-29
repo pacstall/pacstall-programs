@@ -119,7 +119,6 @@ lutris-deb
 lyrebird-git
 maitreya8-deb
 makedeb-deb
-makedeb-makepkg-deb
 mangohud
 micro
 microsoft-edge-beta-deb
@@ -127,6 +126,7 @@ microsoft-edge-dev-deb
 microsoft-edge-stable-deb
 microsoft-prod-repo
 minecraft-launcher
+minecraft-launcher-deb
 moka-icon-theme
 ms-teams-deb
 mullvad-vpn-beta-deb
