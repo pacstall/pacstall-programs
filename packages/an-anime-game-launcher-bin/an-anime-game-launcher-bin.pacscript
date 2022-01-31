@@ -1,9 +1,9 @@
 name=an-anime-game-launcher-bin
 pkgname=an-anime-game-launcher
-version=2.0.0
-description="An Launcher for a specific anime game with auto-patching and playtime tracking function"
-url="https://kaifa.ch/an_anime_game_launcher.tar.gz"
-hash="6ab539e9189801a33d96e22eb239b7da676e702dc7d822939dd60dee9052c214"
+version=2.1.1
+description="An Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
+url="https://kaifa.ch/an_anime_game_launcher_211.tar.gz"
+hash="9841d7b65f0519e6d8090c75f0c23c5a04f3c88c58de37fe1bb943876e805930"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
@@ -19,7 +19,7 @@ optdepends=(
 )
 
 prepare() {
-    chmod +x "${SRCDIR}/an_anime_game_launcher.AppImage" && "${SRCDIR}/an_anime_game_launcher.AppImage" --appimage-extract
+    sudo chmod +x "${SRCDIR}/an_anime_game_launcher.AppImage" && "${SRCDIR}/an_anime_game_launcher.AppImage" --appimage-extract
 }
 
 build() {
