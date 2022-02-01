@@ -1,7 +1,7 @@
 name="brave-browser-beta-deb"
 gives="brave-browser-beta"
 version="1.36.79"
-breaks="${gives}-bin"
+breaks="${gives}-bin ${gives}-app"
 url="https://github.com/brave/brave-browser/releases/download/v${version}/${gives}_${version}_amd64.deb"
 description="Brave Browser Beta: Testing version of world's most unique, privacy friendly web browser"
 hash="ec3447f75573c535812256e7cf82947d41307278c147fd5e69e698bf906f62e2"
