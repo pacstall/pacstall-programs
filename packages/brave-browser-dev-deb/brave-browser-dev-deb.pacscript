@@ -1,7 +1,7 @@
 name="brave-browser-dev-deb"
 gives="brave-browser-dev"
 version="1.36.76"
-breaks="${gives}-bin"
+breaks="${gives}-bin ${gives}-app"
 url="https://github.com/brave/brave-browser/releases/download/v${version}/${gives}_${version}_amd64.deb"
 description="A development build of Brave Browser."
 hash="ec0bbae6f75cebcd2d5d6683c0ed83837c712718c396a7a7d5e25965e494c94c"
