@@ -20,7 +20,7 @@ install() {
     sudo ln -sf "$STOWDIR/$name/opt/$name/bin/studio.sh" "/usr/bin/android-studio"
     sudo wget -q https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/android-studio/android-studio.desktop -O "$STOWDIR/$name/usr/share/applications/android-studio.desktop"
 
-    sudo install -Dm644 $STOWDIR/$name/opt/$name/bin/studio.svg "$STOWDIR/$name/usr/share/pixmaps/$name.svg"
+    sudo install -Dm644 "$STOWDIR/$name/opt/$name/bin/studio.svg" "$STOWDIR/$name/usr/share/pixmaps/$name.svg"
     sudo chmod -R ugo+rX "$STOWDIR/$name/opt"
 }
 postinst() {
