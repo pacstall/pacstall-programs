@@ -21,6 +21,7 @@ jobs:
         run: |
           USER=pacstalluser
           LOGNAME=$USER
+          mkdir -p /home/$USER
           sudo useradd $USER
           sudo su - $USER
           sudo chown -R $USER:$USER /tmp
