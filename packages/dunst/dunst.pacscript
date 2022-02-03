@@ -1,12 +1,12 @@
 name="dunst"
 pkgname="dunst"
-url="https://github.com/dunst-project/dunst/archive/refs/tags/v1.6.1.tar.gz"
-version="1.6.1"
+version="1.7.3"
+url="https://github.com/dunst-project/dunst/archive/refs/tags/v${version}.tar.gz"
 build_depends="libdbus-1-dev libxinerama1 libxrandr2 libxss1 libxss-dev libgtk-3-dev libnotify-dev"
 gives="dunst"
 replace="dunst"
 description="A highly configurable and lightweight notification daemon."
-hash="cc7d801575f75e92b18d46ee5d3df80aaf331c88b83ec6caabbecf8636310e13"
+hash="150c782690286e163663b0eb2605b733927240159738b8365808b851e0afbbee"
 
 prepare() {
     true
