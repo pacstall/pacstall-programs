@@ -7,7 +7,6 @@ breaks="$name-git"
 replace="$name"
 description="$name is a simple web browser based on WebKit2/GTK+."
 hash="72e582920ba25a646203e93c2d2331d87f03037a28894d6c7e99af00ee043257"
-removescript="yes"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {

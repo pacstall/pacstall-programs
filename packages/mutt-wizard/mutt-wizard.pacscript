@@ -9,7 +9,6 @@ depends="neomutt isync msmtp notmuch pass curl"
 breaks="mutt-wizard mutt-wizard-git"
 description="Simple interface to auto-configure neomutt and isync with safe passwords"
 hash="def5e792d46f217142b489e65f3d4059cdc8fca93eb83bab4474785c897d7f20"
-removescript="yes"
 
 # Some optional dependencies don't currently have an ubuntu package as far as I know,
 # they have been marked with "No Pkg" in the optdepends.

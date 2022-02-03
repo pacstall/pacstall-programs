@@ -7,7 +7,6 @@ build_depends="cmake libx11-dev libxi-dev libwebkit2gtk-4.0-dev libappindicator3
 description="A cross-platform soundboard"
 hash="017003fc96f49df30575975f3904c0d8a500e325a9d2bca8c3dc69fed0cab0a7"
 maintainer="D3SOX <d3sox@protonmail.com>"
-removescript="yes"
 
 _ubuntuver=$(grep "VERSION_ID=" /etc/os-release | grep -o "[0-9]*" | tr -d '[:space:]')
 if [[ ${_ubuntuver} -ge 2010   ]]; then

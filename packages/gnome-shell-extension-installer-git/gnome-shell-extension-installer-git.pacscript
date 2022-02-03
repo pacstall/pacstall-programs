@@ -6,7 +6,6 @@ url="https://github.com/brunelli/gnome-shell-extension-installer.git"
 maintainer="D-Brox <BroxZuka@protonmail.com>"
 depends="curl perl dbus"
 pkgdir="/usr/src/pacstall/${name}"
-removescript="yes"
 
 prepare() {
     true

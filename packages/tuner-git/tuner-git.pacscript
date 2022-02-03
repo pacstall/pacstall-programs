@@ -2,10 +2,8 @@ name="tuner-git"
 license="GPL-3.0"
 url="https://github.com/louis77/tuner.git"
 build_depends="meson valac libgtk-3-dev libgranite-dev libsoup2.4-dev libgstreamer1.0-dev libgstreamer-plugins-bad1.0-dev libjson-glib-dev libgee-0.8-dev libgeocode-glib-dev libgeoclue-2-dev"
-depends=""
 breaks="tuner"
 description="Tuner Radio Player - development version"
-removescript="yes"
 pkgver() {
     git ls-remote "${url}" master | cut -f1
 }
