@@ -157,3 +157,19 @@ banner "Variable/array/function checking"
 gen_report
 banner "Misc reports"
 gen_report "misc_reports"
+
+declare -i count_success
+count_success=0
+for i in "${keys[@]}"; do
+	if [[ "$(get_output "$i" "report" | cut -d'|' -f1)" == "SUCCESS" ]]; then
+		count_success+=1
+	fi
+done
+count_success="${count_success}"+3 # for the 3 critical keys
+if [[ "${count_success}" -gt 5 ]]; then
+	report "This script has the bare minimum keys required plus extra. Success!"
+	exit 0
+else
+	warn "This script has the bare minimum keys required, but for qualities sake, this script did not pass"
+	exit 1
+fi
