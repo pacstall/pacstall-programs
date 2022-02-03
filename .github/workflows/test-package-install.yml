@@ -19,14 +19,8 @@ jobs:
            rm ./pacstall-install.sh
       - name: Installing packages with pacstall
         run: |
-          USER=pacstalluser
-          LOGNAME=$USER
-          sudo useradd $USER
-          sudo adduser $USER sudo
-          sudo sed -i "s/%sudo   ALL=(ALL:ALL) ALL/%sudo  ALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           sudo mkdir -p /home/$USER
           sudo chown -R $USER:$USER /home/$USER
-          sudo su - $USER
           sudo chown -R $USER:$USER /tmp
           sudo chmod -R 777 /tmp
           echo "Loggged in as $(whoami)"
