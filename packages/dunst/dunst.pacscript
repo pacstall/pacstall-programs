@@ -9,13 +9,13 @@ description="A highly configurable and lightweight notification daemon."
 hash="150c782690286e163663b0eb2605b733927240159738b8365808b851e0afbbee"
 
 prepare() {
-    true
+  true
 }
 
 build() {
-    make -j$(nproc)
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install -j$(nproc) DESTDIR=/usr/src/pacstall/dunst
+  sudo make install -j"$(nproc)" DESTDIR=/usr/src/pacstall/dunst
 }
