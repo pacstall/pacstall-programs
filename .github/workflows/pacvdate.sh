@@ -37,9 +37,10 @@ banner() {
 }
 
 critical_keys=('name' 'version' 'url')
+critical_functions=('prepare' 'build' 'install')
 keys=('pkgname' 'build_depends' 'depends' 'breaks' 'replace' 'gives' 'description' 'hash' 'maintainer')
 arrays=('optdepends' 'ppa' 'pacdeps' 'patch')
-functions=('pkgver' 'prepare' 'build' 'install' 'removescript')
+functions=('pkgver' 'removescript')
 
 INPUT="${1:?Missing input file}"
 
@@ -57,7 +58,20 @@ for i in "${critical_keys[@]}"; do
 	else
 		write_results "${i}" "SUCCESS|CRITICAL" "${OUTFILE}"
 	fi
-done
+done &
+wait
+
+# add exception for deb pacscripts which don't need the normal functions
+if [[ "${url##*.}" != "deb" ]]; then
+	for i in "${critical_functions[@]}"; do
+		if [[ "$(type -t "${i}")" == "function" ]]; then
+			write_results "${i}" "SUCCESS|CRITICAL" "${OUTFILE}"
+		else
+			write_results "${i}" "FAILURE|CRITICAL" "${OUTFILE}"
+		fi
+	done &
+	wait
+fi
 
 for i in "${keys[@]}"; do
 	if [[ ! -v "${i}" ]]; then
@@ -65,7 +79,8 @@ for i in "${keys[@]}"; do
 	else
 		write_results "${i}" "SUCCESS|NOTCRITICAL" "${OUTFILE}"
 	fi
-done
+done &
+wait
 
 for i in "${functions[@]}"; do
 	if [[ "$(type -t "${i}")" == "function" ]]; then
@@ -73,7 +88,8 @@ for i in "${functions[@]}"; do
 	else
 		write_results "${i}" "FAILURE|NOTCRITICAL" "${OUTFILE}"
 	fi
-done
+done &
+wait
 
 for i in "${arrays[@]}"; do
 	if [[ ! -v "${i}" ]]; then
@@ -81,7 +97,8 @@ for i in "${arrays[@]}"; do
 	else
 		write_results "${i}" "SUCCESS|NOTCRITICAL" "${OUTFILE}"
 	fi
-done
+done &
+wait
 
 # check for critical variables
 
@@ -135,6 +152,7 @@ if [[ "$(type -t pkgver)" == "function" ]]; then
 		write_results "pkgver" "SUCCESS|CRITICAL" "misc_reports"
 	fi
 fi
+
 banner "Variable/array/function checking"
 gen_report
 banner "Misc reports"

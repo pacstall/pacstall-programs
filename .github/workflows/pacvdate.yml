@@ -20,7 +20,7 @@ jobs:
               package_dir=`dirname "${changed_file}"`
               echo "Validating pacscript: ${package_name}..."
               cd ${package_dir}
-              ../../.github/workflows/pacvdate.sh ${pacscript_file}
+              bash ../../.github/workflows/pacvdate.sh ${pacscript_file}
             fi
           done
         env:
