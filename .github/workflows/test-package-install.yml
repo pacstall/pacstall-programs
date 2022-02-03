@@ -22,7 +22,7 @@ jobs:
           USER=pacstalluser
           LOGNAME=$USER
           sudo useradd $USER
-          sudo adduser (your user name) sudo
+          sudo adduser $USER sudo
           sudo sed -i "s/%sudo   ALL=(ALL:ALL) ALL/%sudo  ALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           sudo mkdir -p /home/$USER
           sudo chown -R $USER:$USER /home/$USER
