@@ -22,7 +22,8 @@ jobs:
           USER=pacstalluser
           LOGNAME=$USER
           sudo useradd $USER
-          mkdir -p /home/$UER
+          sudo mkdir -p /home/$USER
+          sudo chown -R $USER:$USER /home/$USER
           sudo su - $USER
           sudo chown -R $USER:$USER /tmp
           sudo chmod -R 777 /tmp
