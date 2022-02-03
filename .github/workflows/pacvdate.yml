@@ -1,0 +1,28 @@
+name: pacscript-validator
+on:
+  pull_request:
+    paths:
+      - 'packages/**/*.pacscript'
+jobs:
+  run-pacscript-validator:
+    runs-on: ubuntu-latest
+    steps:
+      - id: checkout
+        uses: actions/checkout@v2
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      - name: Validating Pacscript
+        run: |
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} == *".pacscript" ]]; then
+              pacscript_file=`basename "${changed_file}"`
+              package_name="${pacscript_file/.pacscript/ }"
+              package_dir=`dirname "${changed_file}"`
+              echo "Validating pacscript: ${package_name}..."
+              cd ${package_dir}
+              ../../.github/workflows/pacvdate.sh ${pacscript_file}
+            fi
+          done
+        env:
+          TERM: xterm
+          shell: bash
