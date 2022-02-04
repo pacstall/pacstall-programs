@@ -7,6 +7,7 @@ gives="dunst"
 replace="dunst"
 description="A highly configurable and lightweight notification daemon."
 hash="150c782690286e163663b0eb2605b733927240159738b8365808b851e0afbbee"
+maintainer="Henryws <hwengerstickel@pm.me>"
 
 prepare() {
   true
