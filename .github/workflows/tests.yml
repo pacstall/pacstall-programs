@@ -38,8 +38,6 @@ jobs:
         run: |
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo   ALL=(ALL:ALL) ALL/%sudo  ALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
-          sudo mkdir -p /home/$USER
-          sudo chown -R $USER:$USER /home/$USER
           sudo chown -R $USER:$USER /tmp
           sudo chmod -R 777 /tmp
           sudo su - $USER
