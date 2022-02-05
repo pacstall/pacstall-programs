@@ -19,11 +19,12 @@ jobs:
         shell: bash
         USER: dio
         LOGNAME: dio
+        DEBIAN_FRONTEND: noninteractive
     steps:
       - name: Install System Utilities
         run: |
           apt-get update
-          apt-get install curl bash wget git sudo iputils-ping -y
+          apt-get install apt-utils curl bash wget git sudo iputils-ping -y
       - id: checkout
         uses: actions/checkout@v2
       - id: files
