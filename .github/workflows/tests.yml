@@ -37,10 +37,10 @@ jobs:
       - name: Setup Test User
         run: |
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
-          sudo sed -i "s/%sudo   ALL=(ALL:ALL) ALL/%sudo  ALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
-          sudo chown -R $USER /tmp
-          sudo chmod -R 777 /tmp
-          sudo su - dio
+          sed -i "s/%sudo   ALL=(ALL:ALL) ALL/%sudo  ALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
+          chown -R $USER /tmp
+          chmod -R 777 /tmp
+          su - dio
           echo "Loggged in as $(whoami)"
       - name: Installing Packages
         run: |
@@ -53,6 +53,6 @@ jobs:
               echo "pacstall -Il ${package_name}"
               cd ${package_dir}
               pacstall --disable-prompts -Il ${package_name}
-              ls -al /tmp/pacstall/
             fi
           done
+        shell: sudo -u dio bash
