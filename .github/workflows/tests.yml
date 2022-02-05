@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     container: ${{ matrix.OS }}
     steps:
+      - name: install system utilities
+        run: |
+          sudo apt-get install curl wget git ping
       - id: checkout
         uses: actions/checkout@v2
       - id: files
