@@ -3,10 +3,21 @@ on:
   pull_request:
     paths:
       - 'packages/**/*.pacscript'
+defaults:
+  run:
+    shell: bash
 jobs:
   install-package:
+    strategy:
+      matrix:
+        OS: ["ubuntu:latest", "ubuntu:devel", "ubuntu:rolling", "debian:stable", "debian:testing", "debian:unstable"]
     runs-on: ubuntu-latest
+    container: ${{ matrix.OS }}
     steps:
+      - name: install system utilities
+        run: |
+          apt-get update
+          apt-get install curl bash wget git sudo iputils-ping -y
       - id: checkout
         uses: actions/checkout@v2
       - id: files
@@ -15,15 +26,26 @@ jobs:
         run: |
            curl -fsSL https://git.io/JsADh > pacstall-install.sh
            chmod +x ./pacstall-install.sh
-           echo N\n | sudo ./pacstall-install.sh > /dev/null 2>&1
+           echo N\n | sudo ./pacstall-install.sh
            rm ./pacstall-install.sh
-      - name: Installing packages with pacstall
+        env:
+          TERM: xterm
+          shell: bash
+      - name: setup test user
         run: |
+          sudo useradd $USER
+          sudo adduser $USER sudo
+          sudo sed -i "s/%sudo   ALL=(ALL:ALL) ALL/%sudo  ALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           sudo mkdir -p /home/$USER
           sudo chown -R $USER:$USER /home/$USER
           sudo chown -R $USER:$USER /tmp
           sudo chmod -R 777 /tmp
           echo "Loggged in as $(whoami)"
+        env:
+          USER: dio
+          LOGNAME: dio
+      - name: Installing packages with pacstall
+        run: |
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
