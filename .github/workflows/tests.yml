@@ -19,11 +19,12 @@ jobs:
         shell: bash
         USER: dio
         LOGNAME: dio
+        DEBIAN_FRONTEND: noninteractive
     steps:
       - name: Install System Utilities
         run: |
           apt-get update
-          apt-get install curl bash wget git sudo iputils-ping -y
+          apt-get install apt-utils curl bash wget git sudo iputils-ping -y
       - id: checkout
         uses: actions/checkout@v2
       - id: files
@@ -40,10 +41,9 @@ jobs:
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           chown -R $USER /tmp
           chmod -R 777 /tmp
-          su - dio
-          echo "Loggged in as $(whoami)"
       - name: Installing Packages
         run: |
+          export DEBIAN_FRONTEND=noninteractive
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
@@ -56,3 +56,5 @@ jobs:
             fi
           done
         shell: sudo -u dio bash {0}
+        env:
+          DEBIAN_FRONTEND: noninteractive
