@@ -9,7 +9,7 @@ jobs:
       matrix:
         OS: ["ubuntu:latest", "ubuntu:devel", "ubuntu:rolling", "debian:stable", "debian:testing", "debian:unstable"]
     runs-on: ubuntu-latest
-    container: {{ matrix.OS }}
+    container: ${{ matrix.OS }}
     steps:
       - id: checkout
         uses: actions/checkout@v2
