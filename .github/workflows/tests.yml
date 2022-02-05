@@ -14,7 +14,7 @@ jobs:
       - name: install system utilities
         run: |
           apt-get update
-          apt-get install curl wget git sudo iputils-ping -y
+          apt-get install curl bash wget git sudo iputils-ping -y
       - id: checkout
         uses: actions/checkout@v2
       - id: files
@@ -23,8 +23,11 @@ jobs:
         run: |
            curl -fsSL https://git.io/JsADh > pacstall-install.sh
            chmod +x ./pacstall-install.sh
-           echo N\n | sudo ./pacstall-install.sh > /dev/null 2>&1
+           echo N\n | sudo ./pacstall-install.sh
            rm ./pacstall-install.sh
+        env:
+          TERM: xterm
+          shell: bash
       - name: Installing packages with pacstall
         run: |
           sudo mkdir -p /home/$USER
