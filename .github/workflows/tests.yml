@@ -55,4 +55,4 @@ jobs:
               pacstall --disable-prompts -Il ${package_name}
             fi
           done
-        shell: sudo -u dio bash
+        shell: sudo -u dio bash {0}
