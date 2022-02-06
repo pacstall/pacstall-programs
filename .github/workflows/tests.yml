@@ -21,7 +21,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ${{ matrix.OS }}
-      options: --cap-add=NET_RAW --cap-add=IPC_LOCK
       env:
         TERM: xterm
         shell: bash
@@ -51,9 +50,9 @@ jobs:
            export GITHUB_ACTIONS=true
            curl -fsSL https://git.io/JsADh > pacstall-install.sh
            chmod +x ./pacstall-install.sh
-           echo N\n | sudo ./pacstall-install.sh
+           echo N\n | ./pacstall-install.sh
            rm ./pacstall-install.sh
-           sudo -u $USER pacstall -U pacstall ${{ matrix.PACSTALL_VERSION }}
+           sudo -E -u $USER pacstall -U pacstall ${{ matrix.PACSTALL_VERSION }}
       - name: Installing Packages
         run: |
           export DEBIAN_FRONTEND=noninteractive
@@ -69,6 +68,6 @@ jobs:
               pacstall --disable-prompts -Il ${package_name}
             fi
           done
-        shell: sudo -u dio bash {0}
+        shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
