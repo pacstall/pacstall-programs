@@ -21,6 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ${{ matrix.OS }}
+      options: --cap-add=NET_RAW --cap-add=IPC_LOCK
       env:
         TERM: xterm
         shell: bash
