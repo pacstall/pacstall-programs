@@ -14,6 +14,8 @@ You can then use `pacstall -A` command to add your repository to your `repolist`
 
 ## How to setup the environment for pacscript development
 
+If you need help making a pacscript, visit [our wiki](https://github.com/pacstall/pacstall/wiki/Pacscript-101).
+
 This repository maintains a certain standard of commits. To ensure that your commits are up to the standard, we use [pre-commit](https://pre-commit.com/) hooks.
 
 Here are the development dependencies that you need to install as a developer:
