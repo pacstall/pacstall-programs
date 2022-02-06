@@ -11,6 +11,7 @@ jobs:
     strategy:
       matrix:
         OS: ["ubuntu:latest", "ubuntu:devel", "ubuntu:rolling", "debian:stable", "debian:testing", "debian:unstable"]
+        PACSTALL_VERSION: ["master", "develop"]
     runs-on: ubuntu-latest
     container:
       image: ${{ matrix.OS }}
@@ -29,18 +30,19 @@ jobs:
         uses: actions/checkout@v2
       - id: files
         uses: jitterbit/get-changed-files@v1
-      - name: Installing Pacstall
-        run: |
-           curl -fsSL https://git.io/JsADh > pacstall-install.sh
-           chmod +x ./pacstall-install.sh
-           echo N\n | sudo ./pacstall-install.sh
-           rm ./pacstall-install.sh
       - name: Setup Test User
         run: |
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           chown -R $USER /tmp
           chmod -R 777 /tmp
+      - name: Installing Pacstall
+        run: |
+           curl -fsSL https://git.io/JsADh > pacstall-install.sh
+           chmod +x ./pacstall-install.sh
+           echo N\n | sudo ./pacstall-install.sh
+           rm ./pacstall-install.sh
+           sudo -u $USER pacstall -U pacstall ${{ matrix.PACSTALL_VERSION }}
       - name: Installing Packages
         run: |
           export DEBIAN_FRONTEND=noninteractive
