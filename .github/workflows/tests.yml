@@ -47,14 +47,20 @@ jobs:
           chmod -R 777 /tmp
       - name: Installing Pacstall
         run: |
-           export GITHUB_ACTIONS=true
-           curl -fsSL https://git.io/JsADh > pacstall-install.sh
-           chmod +x ./pacstall-install.sh
-           echo N\n | ./pacstall-install.sh
-           rm ./pacstall-install.sh
-           sudo -E -u $USER pacstall -U pacstall ${{ matrix.PACSTALL_VERSION }}
+          export SUDO_USER=$USER
+          curl -fsSL https://git.io/JsADh > pacstall-install.sh
+          chmod +x ./pacstall-install.sh
+          echo N\n | sudo -E ./pacstall-install.sh
+          rm ./pacstall-install.sh
+          pacstall -U pacstall ${{ matrix.PACSTALL_VERSION }}
+          ls -lad /tmp/pacstall
+        shell: sudo -E -u dio bash {0}
+        env:
+          SUDO_USER: dio
       - name: Installing Packages
         run: |
+          export SUDO_USER=$USER
+          curl -fsSL https://git.io/JsADh > pacstall-install.sh
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
