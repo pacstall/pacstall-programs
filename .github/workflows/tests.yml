@@ -63,6 +63,7 @@ jobs:
           curl -fsSL https://git.io/JsADh > pacstall-install.sh
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
+          export TZ=Africa/Libreville
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
