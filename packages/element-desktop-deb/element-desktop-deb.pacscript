@@ -1,6 +1,7 @@
 name="element-desktop-deb"
 gives="element-desktop"
 version="1.9.9"
+breaks="${gives}-bin ${gives}-app"
 url="https://packages.element.io/debian/pool/main/e/element-desktop/element-desktop_${version}_amd64.deb"
 description="Element is a feature-packed Matrix client"
 hash="65577e8cf17cf83a8f6fa531e436024ae347796304a3f69c2f53c3a23b7e6fc1"
