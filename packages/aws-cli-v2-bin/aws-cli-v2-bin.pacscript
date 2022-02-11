@@ -1,12 +1,13 @@
 name="aws-cli-v2-bin"
 pkgname="aws-cli-v2"
 pkgdir="/usr/src/pacstall/${name}"
-version="2.2.35"
+version="2.4.17"
 url="https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${version}.zip"
 description="Universal Command Line Interface for Amazon Web Services v2"
+depends="groff less"
 build_depends="unzip"
 replace="awscli"
-hash="bfdd14ffaa5237a90949ca24a1f8556fa54a47db893546e83b6a45925c9c1be3"
+hash="b4a0e6325caa3aee923d45475e73f42eacb8009de2c936ce6659b03a1ec60f40"
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
 
 prepare() {
