@@ -1,5 +1,5 @@
 name="smartgit"
-version="21.1.0"
+version="21.2.2"
 url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-21_2_2.tar.gz"
 depends="git libgtk-3-0 openjdk-11-jre libcurl4"
 replace="alacritty"
