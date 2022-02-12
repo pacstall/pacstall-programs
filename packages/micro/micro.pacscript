@@ -23,6 +23,3 @@ install() {
     sudo install -Dm644 "./micro.svg" "/usr/src/pacstall/micro/usr/share/pixmaps/micro.svg"
     sudo cp "micro.desktop" "/usr/src/pacstall/micro/usr/share/applications"
 }
-postinst() {
-  sudo update-desktop-database -q
-}
