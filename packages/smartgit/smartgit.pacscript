@@ -1,9 +1,9 @@
 name="smartgit"
 version="21.1.0"
-url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-21_1_0.tar.gz"
+url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-21_2_2.tar.gz"
 depends="git libgtk-3-0 openjdk-11-jre libcurl4"
 replace="alacritty"
-hash="d668eb885b9705be360f7a69b53d5d2068ae0cab22d1644cc519267b1f395f18"
+hash="c3e2672e98190cb72060e27fa26232b7f4b6ffcf62eaf1d01e7ec94ac1d36683"
 maintainer="echometerain <echometer@disroot.org>"
 removescript="true"
 
