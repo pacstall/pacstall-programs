@@ -1,5 +1,5 @@
 name="makedeb-deb"
-version="9.0.1"
+version="9.0.3-1"
 url="https://proget.hunterwittenborn.com/debian-feeds/makedeb/main/makedeb/all/makedeb_all_${version}-1.deb"
 description="makedeb takes PKGBUILD files and creates Debian packages installable with APT"
-hash="46f9af9eff8de3dbf97259d58190899d6843fbc3b002a036eaca033afd44dea2"
+hash="b3fe4934a2c07ba21bd003e79d3a81cd3bb93b53349d970a07d70047cab350ff"
