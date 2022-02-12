@@ -9,6 +9,7 @@ gives="micro"
 breaks="micro"
 hash="98797d745aec85b36a9cedc87ce7656adcd8cc94c909a07edeb6e61538418bed"
 prepare() {
+  true
 }
 
 build() {
