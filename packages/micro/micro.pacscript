@@ -9,7 +9,6 @@ gives="micro"
 breaks="micro"
 hash="98797d745aec85b36a9cedc87ce7656adcd8cc94c909a07edeb6e61538418bed"
 prepare() {
-    sudo mkdir -p "/usr/src/pacstall/micro/usr/bin" "/usr/src/pacstall/micro/usr/share/man/man1" "/usr/src/pacstall/micro/usr/share/applications"
 }
 
 build() {
