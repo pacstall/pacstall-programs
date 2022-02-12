@@ -31,7 +31,7 @@ jobs:
       - name: Install System Utilities
         run: |
           apt-get update
-          apt-get install apt-utils curl bash wget git sudo iputils-ping -y
+          apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration -y
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
@@ -64,7 +64,6 @@ jobs:
           curl -fsSL https://git.io/JsADh > pacstall-install.sh
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
-          export TZ=Africa/Libreville
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
