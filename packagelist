@@ -177,6 +177,7 @@ qogir-icon-theme-bin
 renegate
 sed
 shell-color-scripts
+shellcheck-bin
 shfmt-bin
 slack-deb
 smartgit
