@@ -23,7 +23,7 @@ Here are the development dependencies that you need to install as a developer:
 | Dependency                                          | How to install                      |
 :----------------------------------------------------:|-------------------------------------|
 | [pre-commit](https://pre-commit.com/)               | `sudo pip install pre-commit`       |
-| [shellcheck](https://www.shellcheck.net/)           | `sudo apt install shellcheck`       |
+| [shellcheck](https://www.shellcheck.net/)           | `pacstall -PI shellcheck-bin`       |
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3)          | `pacstall -PI shfmt-bin`            |
 | [editor-config](https://editorconfig.org/#download) | Install the plugin for your editor  |
 
