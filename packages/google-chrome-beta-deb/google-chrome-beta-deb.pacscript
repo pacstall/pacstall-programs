@@ -1,0 +1,8 @@
+name="google-chrome-beta-deb"
+gives="google-chrome-beta"
+breaks="google-chrome-deb google-chrome-dev-deb"
+version="99.0.4844.27-1"
+url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}_amd64.deb"
+description="The web browser built by Google - Beta channel"
+hash="a373f232993894ffd12364f3e8f4b3bdc7282a182385b83972a34656a7316aa8"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
