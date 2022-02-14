@@ -1,7 +1,7 @@
 name="amdgpu-dkms-deb"
 provides="rock-dkms"
 version="5.13.11.21.50.50000-1373630"
-depends="dkms"
+depends="dkms initramfs-tools"
 pacdeps="amdgpu-dkms-firmware-deb"
 url="https://repo.radeon.com/amdgpu/latest/ubuntu/pool/main/a/amdgpu-dkms/amdgpu-dkms_${version}_all.deb"
 description="Amdgpu driver in DKMS format."
