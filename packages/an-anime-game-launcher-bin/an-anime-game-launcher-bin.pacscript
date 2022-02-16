@@ -1,9 +1,9 @@
 name=an-anime-game-launcher-bin
 pkgname=an-anime-game-launcher
-version=2.1.3
+version=2.1.4
 description="An Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
-url="https://kaifa.ch/an_anime_game_launcher_213.tar.gz"
-hash="c6cc65037f80c844c898edff60616146dfb3b03bcc6d5a5b6c8d6db722ab99d0"
+url="https://kaifa.ch/an_anime_game_launcher_214.tar.gz"
+hash="39a2af036be2b15ca65924aa53947b95c01d67487f46d3ffe40a964e41211e75"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
