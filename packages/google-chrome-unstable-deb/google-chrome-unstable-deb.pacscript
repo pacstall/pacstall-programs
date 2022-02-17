@@ -1,0 +1,8 @@
+name="google-chrome-unstable-deb"
+gives="google-chrome-unstable"
+breaks="google-chrome-deb google-chrome-beta-deb"
+version="100.0.4878.0-1"
+url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}_amd64.deb"
+description="The web browser built by Google - Dev channel"
+hash="48213d73041abbc064c84d21d9e9a48c0103817a926ee5799f5829b305c067e0"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

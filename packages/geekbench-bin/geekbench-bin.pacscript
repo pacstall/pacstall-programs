@@ -1,9 +1,9 @@
 name="geekbench-bin"
 gives="geekbench"
-version="5.4.1"
+version="5.4.4"
 url="https://cdn.geekbench.com/Geekbench-${version}-Linux.tar.gz"
 description="Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button"
-hash="d0f83d6c7430584956e01de845ca3917616c68478b0b4657c7b27e865edd7376"
+hash="da489a3fb57f7460c78984eabd513001a00cad2a0bcd8b6f478860b46ea25284"
 
 prepare() {
   true

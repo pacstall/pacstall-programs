@@ -1,0 +1,7 @@
+name="amdgpu-dkms-firmware-deb"
+provides="rock-dkms-firmware"
+version="5.13.11.21.50.50000-1373630"
+url="https://repo.radeon.com/amdgpu/latest/ubuntu/pool/main/a/amdgpu-dkms/amdgpu-dkms-firmware_${version}_all.deb"
+description="Firmware blobs used by amdgpu driver in DKMS format."
+hash="423a8a0826f7c227d131f0af03de4fb692b5b2c1a1c17d05b9e9d34e7e9d1bc7"
+maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
