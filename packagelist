@@ -80,8 +80,8 @@ fsearch-git
 gcmcore-deb
 geekbench-bin
 git
-gitblade-deb
 git-delta-deb
+gitblade-deb
 gitfiend-deb
 github-cli-deb
 github-desktop
@@ -181,8 +181,8 @@ qogir-gtk-theme-bin
 qogir-icon-theme-bin
 renegate
 sed
-shellcheck-bin
 shell-color-scripts
+shellcheck-bin
 shfmt-bin
 slack-deb
 smartgit
@@ -191,11 +191,11 @@ soundux
 spacecadetpinball-git
 spotify-client-deb
 st-distrotube-git
+st-lukesmith-git
 steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
-st-lukesmith-git
 surf
 surf-distrotube-git
 suru-icon-theme-git
@@ -235,8 +235,8 @@ webapp-manager
 webapp-manager-deb
 windscribe-gui-deb
 windscribe-legacy-cli-deb
-wine64
 wine-staging-git
+wine64
 yabridge
 yad
 yafetch-git
