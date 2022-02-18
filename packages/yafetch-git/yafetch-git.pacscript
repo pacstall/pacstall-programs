@@ -1,5 +1,6 @@
 name="yafetch-git"
 gives="yafetch"
+breaks="${gives}-deb ${gives}-bin ${gives}-app"
 url="https://github.com/Henryws/yafetch.git"
 description="Yet another fetch tool"
 maintainer="Henryws <hwengerstickel@pm.me>"
