@@ -6,8 +6,13 @@ maintainer="Henryws <hwengerstickel@pm.me>"
 description="PipeWire is a server and user space API to deal with multimedia pipelines."
 hash="d1bfca55475d7a215d7425afe0f7eda355a0768f91434496bdd7592a6f205932"
 prepare() {
-    if which meson &>/dev/null; then
-        sudo apt remove meson
+    if dpkg -l meson &>/dev/null; then
+        ask "Your meson version is likely outdated, however pip contains a newer version that will compile pipewire correctly. Do you want to remove apt meson and install from pip" Y
+        if [[ $answer -eq 1 ]]; then
+            sudo apt remove meson
+        else
+            return 1
+        fi
     fi
     sudo pip install meson
     meson setup builddir
