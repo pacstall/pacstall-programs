@@ -17,7 +17,7 @@ build() {
 install() {
     cd builddir/ || return 1
     sudo DESTDIR=/usr/src/pacstall/pipewire meson install
-    # Move /lib files to /usr/lib
+    # Move /lib files to /usr/lib, because stow complains about /lib being a symlink
     sudo mkdir -p /usr/src/pacstall/pipewire/usr/lib/udev/rules.d/
     sudo mv /usr/src/pacstall/pipewire/lib/udev/rules.d/90-pipewire-alsa.rules /usr/src/pacstall/pipewire/usr/lib/udev/rules.d/
     sudo rm -r /usr/src/pacstall/pipewire/lib
