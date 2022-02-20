@@ -1,11 +1,16 @@
 name="exa-git"
+pkgname="exa"
 gives="exa"
-version="0.10.1"
 url="https://github.com/ogham/exa.git"
 build_depends="cargo libgit2-dev cmake rustc"
 description="exa is an improved file lister with more features and better defaults"
-#hash="a65a87bd545e969979ae9388f6333167f041a1f09fa9d60b32fd3072348ff6ce"
 maintainer="Henryws <hwengerstickel@pm.me>"
+pkgdir="${STOWDIR}/${name}"
+pkgver() {
+    git ls-remote "${url}" master | cut -f1
+}
+version="$(pkgver)"
+
 prepare() {
     true
 }
@@ -15,7 +20,5 @@ build() {
 }
 
 install() {
-    sudo mkdir -p /usr/src/pacstall/exa-git/usr/bin
-    sudo mv target/release/exa /usr/src/pacstall/exa-git/usr/bin
-    sudo chmod +x /usr/src/pacstall/exa-git/usr/bin/exa
+    sudo install -Dm755 target/release/exa -t "${pkgdir}"/usr/bin
 }
