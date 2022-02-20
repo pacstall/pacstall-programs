@@ -21,5 +21,4 @@ build() {
 
 install() {
     sudo install -Dm755 target/release/exa -t "${pkgdir}"/usr/bin
-    sudo chmod +x "${pkgdir}"/usr/bin/exa
 }
