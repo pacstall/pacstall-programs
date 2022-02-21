@@ -9,7 +9,7 @@ prepare() {
     if dpkg -l meson &>/dev/null; then
         ask "Your meson version is likely outdated, however pip contains a newer version that will compile pipewire correctly. Do you want to remove apt meson and install from pip" Y
         if [[ $answer -eq 1 ]]; then
-            sudo apt remove meson
+            sudo apt purge meson
         else
             return 1
         fi
