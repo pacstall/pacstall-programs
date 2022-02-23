@@ -10,6 +10,6 @@ hash="34abb49981623f7009ce7e06cc7d6aa935c4fbad67e2876e5b58ef72063a63b8"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 
 postinst() {
-# patch to fix AOMP variable.
-sudo patch | tee "/usr/lib/aomp/bin/mymcpu" < "./PACSTALL_patchesdir/fix_AOMP.patch" > /dev/null
+	# patch to fix AOMP variable.
+	sudo patch | tee "/usr/lib/aomp/bin/mymcpu" < "./PACSTALL_patchesdir/fix_AOMP.patch" > /dev/null
 }
