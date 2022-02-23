@@ -1,3 +1,10 @@
+# Detect if the OS is Debian and error out
+if [[ -f /etc/debian_version ]]; then
+    fancy_message error "This script doesn't work on Debian"
+    cleanup # Trigger pacstall cleanups
+    exit 1
+fi
+
 name=an-anime-game-launcher-bin
 pkgname=an-anime-game-launcher
 version=2.2.0
