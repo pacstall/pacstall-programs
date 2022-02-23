@@ -1,9 +1,9 @@
 name="brave-browser-deb"
 gives="brave-browser"
-version="1.35.101"
+version="1.35.103"
 breaks="${gives}-bin ${gives}-git ${gives}-app"
 url="https://github.com/brave/${gives}/releases/download/v${version}/${gives}_${version}_amd64.deb"
 description="Brave Browser: Release version of world's most unique, privacy friendly web browser"
-hash="ab918be91f3b6f78982e233da0942008e55e5f3c8d158eb1f1f43d2ac0cdee09"
+hash="520a5eacaaee376aae29d1537ff8936be75dd86079ee7b7e9aee8a05ee15bd89"
 pacdeps=("brave-keyring-deb")
 maintainer="Zahrun <Zahrun@github.com>"
