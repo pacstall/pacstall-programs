@@ -31,7 +31,8 @@ jobs:
       - name: Install System Utilities
         run: |
           apt-get update
-          apt-get install apt-utils curl bash wget git sudo iputils-ping -y
+          apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration -y
+          ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}

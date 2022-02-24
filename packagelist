@@ -3,6 +3,7 @@ alacritty
 amfora-bin
 an-anime-game-launcher-bin
 android-studio
+aomp-deb
 appimagelauncher-deb
 ardour-git
 atom-editor-deb
@@ -56,6 +57,7 @@ duf-deb
 dunst
 dust-bin
 electronmail-deb
+element-desktop-deb
 emacs
 emacs-git
 endlessh-git
@@ -66,6 +68,8 @@ exploitdb-git
 fast
 fastfetch-git
 fblog-deb
+fennel
+fennel-bin
 ferdi-deb
 fishui-git
 fm6000-git
@@ -84,7 +88,9 @@ gitkraken-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
 go-bin
+google-chrome-beta-deb
 google-chrome-deb
+google-chrome-unstable-deb
 google-earth-pro-stable-deb
 graillon
 grapejuice-git
@@ -176,6 +182,7 @@ qogir-icon-theme-bin
 renegate
 sed
 shell-color-scripts
+shellcheck-bin
 shfmt-bin
 slack-deb
 smartgit
@@ -232,6 +239,7 @@ wine-staging-git
 wine64
 yabridge
 yad
+yafetch-git
 youtube-dl-git
 zentile-bin
 zotero
