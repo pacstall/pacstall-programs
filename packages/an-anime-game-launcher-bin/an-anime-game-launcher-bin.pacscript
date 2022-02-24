@@ -1,3 +1,8 @@
+if [[ "$(lsb_release -si)" == "Debian" ]]; then
+    fancy_message error "This script doesn't work on Debian"
+    cleanup # Trigger pacstall cleanups
+    exit 1
+fi
 name=an-anime-game-launcher-bin
 pkgname=an-anime-game-launcher
 version=2.2.0
