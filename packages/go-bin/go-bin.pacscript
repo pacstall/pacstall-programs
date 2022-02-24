@@ -10,7 +10,7 @@ gives="golang-go"
 replace="golang-go"
 hash="231654bbf2dab3d86c1619ce799e77b03d96f9b50770297c8f4dff8836fc8ca2"
 
-__goroot="/usr/local/${name}"
+__goroot="${STOWDIR}/usr/local/${name}"
 __shell_rcs=("${homedir}/.bashrc" "${homedir}/.zshrc" "${homedir}/.profile")
 
 prepare() {
