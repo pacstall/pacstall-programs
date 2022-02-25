@@ -1,4 +1,4 @@
-if [[ "$(lsb_release -si)" == "Debian" ]]; then
+if [[ "$(grep -Po 'ID=\K[^"]+' /etc/os-release)" == "debian" ]]; then
     fancy_message error "This script doesn't work on Debian"
     cleanup # Trigger pacstall cleanups
     exit 1
