@@ -1,8 +1,8 @@
 name="zotero"
-version="5.0.96.2"
+version="5.0.96.3"
 url="https://download.zotero.org/client/release/${version}/Zotero-${version}_linux-x86_64.tar.bz2"
 description="Your personal research assistant"
-hash="653faac4d2e3746dbd0e1c95d095ed8031c38b68183f22ab6708093aba392082"
+hash="7aa48dce6906368a4627b541caf51f7c510f273dd61d2edbe7e8e05005bf854e"
 maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 
 prepare() {
