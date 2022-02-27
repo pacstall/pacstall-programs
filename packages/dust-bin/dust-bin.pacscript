@@ -9,12 +9,12 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="dust-bin"
 pkgname="dust"
 pkgdir="${STOWDIR}/${name}"
-version="0.7.5"
+version="0.8.0"
 description="A more intuitive version of du in rust"
 url="https://github.com/bootandy/dust/releases/download/v${version}/dust-v${version}-x86_64-unknown-linux-musl.tar.gz"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-hash="6ee34a8b347d58df988c1f796b65a6c56fb5e65d5d2c79ed06c6627228ac4256"
+hash="7be13b7c83d0853c1ac4a456d356b762f319955c63b6c0af5be28d44a7ae6cda"
 
 prepare() {
   true
