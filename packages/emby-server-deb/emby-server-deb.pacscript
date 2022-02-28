@@ -1,0 +1,8 @@
+name="emby-server-deb"
+version="4.6.7.0"
+gives="emby-server"
+breaks="${gives} ${gives}-bin ${gives}-app"
+url="https://github.com/MediaBrowser/Emby.Releases/releases/download/${version}/${name}_${version}_amd64.deb"
+hash="293e5c2780dad33b610b84d35b8db9696a4641f93a9572391f4f1c29b3c601d1"
+description="Emby brings together your personal videos, music, photos, and live television."
+maintainer="Warofzen <warofzen1@protonmail.com>"
