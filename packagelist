@@ -182,6 +182,7 @@ renegate
 sed
 shell-color-scripts
 shellcheck-bin
+shellharden-bin
 shfmt-bin
 slack-deb
 smartgit
