@@ -1,9 +1,9 @@
 name="alacritty"
-version="0.10.0"
+version="0.10.1"
 url="https://github.com/alacritty/alacritty/archive/refs/tags/v${version}.tar.gz"
 build_depends="cargo cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 gzip"
 description="A fast, cross-platform, OpenGL terminal emulator"
-hash="5dee9c94f944b742b0189dd87c43c87175ffadde8049abb4668ca5a3e68fd65a"
+hash="e48d4b10762c2707bb17fd8f89bd98f0dcccc450d223cade706fdd9cfaefb308"
 prepare() {
         true
 }
