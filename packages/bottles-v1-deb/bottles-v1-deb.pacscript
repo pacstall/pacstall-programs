@@ -1,7 +1,6 @@
 name="bottles-v1-deb"
 gives="bottles-v1"
 breaks="${gives} ${gives}-git ${gives}-bin ${gives}-app"
-pacdeps=("wine64")
 version="20201219"
 url="https://github.com/bottlesdevs/Bottles/releases/download/continuous-v1/bottles.${version}.570.deb"
 description="Version 1 of Bottles allowing you to easily install Proton and Wine prefixes."
