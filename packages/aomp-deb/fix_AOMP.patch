@@ -2,9 +2,10 @@
 +++ mymcpu	2022-02-14 16:46:12.790141000 -0800
 @@ -48,6 +48,8 @@
  # Software License Agreement.
- #
-
+ # 
+ 
 +export AOMP=/usr/lib/aomp
 +
  function usage(){
  /bin/cat 2>&1 <<"EOF"
+ 
