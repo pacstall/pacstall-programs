@@ -62,8 +62,6 @@ __set_goroot() {
 }
 
 removescript() {
-  sudo rm -rf "${__goroot}"
-
   for shell_rc in "${__shell_rcs[@]}"; do
     if [ -f "${shell_rc}" ]; then
       if __goroot_is_set "${shell_rc}"; then
