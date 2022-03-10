@@ -33,7 +33,7 @@ install() {
 
 postinst() {
   for shell_rc in "${__shell_rcs[@]}"; do
-    if [ -f "${shell_rc}" ]; then
+    if [[ -f "${shell_rc}" ]]; then
       if __goroot_is_set "${shell_rc}"; then
         __clear_goroot "${shell_rc}"
       fi
@@ -54,16 +54,16 @@ __goroot_is_set() {
 }
 
 __clear_goroot() {
-  sudo sed -i '/export GOROOT=.*/d' "$1"
+  sed -i '/export GOROOT=.*/d' "$1"
 }
 
 __set_goroot() {
-  sudo echo "export GOROOT=\"${__goroot}\"" | sudo tee -a "$1" > /dev/null
+  echo "export GOROOT=\"${__goroot}\"" | tee -a "$1" > /dev/null
 }
 
 removescript() {
   for shell_rc in "${__shell_rcs[@]}"; do
-    if [ -f "${shell_rc}" ]; then
+    if [[ -f "${shell_rc}" ]]; then
       if __goroot_is_set "${shell_rc}"; then
         __clear_goroot "${shell_rc}"
       fi
