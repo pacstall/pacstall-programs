@@ -9,11 +9,11 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="hyperfine-bin"
 pkgname="hyperfine"
 pkgdir="${STOWDIR}/${name}"
-version="1.12.0"
+version="1.13.0"
 description="A command-line benchmarking tool"
 url="https://github.com/sharkdp/${pkgname}/releases/download/v${version}/${pkgname}-v${version}-x86_64-unknown-linux-musl.tar.gz"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-hash="b66e7a55fc1b7fd1f6443861f65bde87a4794c4721dee5e11dc0294f27116efc"
+hash="d22bc7a845195e7f53268b43bb91455e6cb0a7e6a3fc7f89cd307f7261bfc985"
 
 prepare() {
   true
