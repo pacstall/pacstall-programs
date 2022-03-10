@@ -42,7 +42,7 @@ postinst() {
     fi
   done
 
-  echo "> Close and reopen your terminal to start using Go or run one of the following to use it now:"
+  fancy_message info "Close and reopen your terminal to start using Go or run one of the following to use it now:"
   echo -e "\tbash: \tsource ~/.bashrc"
   echo -e "\tzsh: \tsource ~/.zshrc"
   echo -e "\tksh: \t. ~/.profile"
