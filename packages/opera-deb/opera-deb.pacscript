@@ -8,9 +8,11 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="opera-deb"
 gives="opera-stable"
-version="82.0.4227.43"
+breaks="opera-beta-deb opera-developer-deb ${gives}-bin ${gives}-app"
+replace="${gives}"
+version="84.0.4316.31"
 url="https://download5.operacdn.com/pub/opera/desktop/${version}/linux/${gives}_${version}_amd64.deb"
 description="Opera web browser stable release"
-hash="0c585feb676a93ba80da4f89815a862f1177d143f04308570f5d3942e6b6e57d"
+hash="ca94a76ab86d24d427df23adc9d8e67fa5a61c061b39f320df16ad0b14df20c6"
 
 # vim:set ft=sh ts=2 sw=2 et:
