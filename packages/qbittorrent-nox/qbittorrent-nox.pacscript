@@ -1,8 +1,8 @@
 name="qbittorrent-nox"
-breaks="${gives}-bin ${gives}-git ${gives}-app"
-replace="${gives}"
+breaks="${name}-bin ${name}-git"
+replace="qbittorrent"
 version="4.4.1"
-url="https://github.com/${name}/${name}/archive/refs/tags/release-${version}.tar.gz"
+url="https://github.com/qbittorrent/qbittorrent/archive/refs/tags/release-${version}.tar.gz"
 build_depends="build-essential pkg-config automake libtool git libboost-dev libboost-system-dev libboost-chrono-dev libboost-random-dev"
 depends="zlib1g-dev python3 libtorrent-rasterbar libssl-dev libgeoip-dev"
 ppa=("deluge-team/ppa")
