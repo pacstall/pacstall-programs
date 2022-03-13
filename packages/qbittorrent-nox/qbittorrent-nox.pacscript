@@ -3,7 +3,7 @@ breaks="${name}-bin ${name}-git"
 replace="qbittorrent"
 version="4.4.1"
 url="https://github.com/qbittorrent/qbittorrent/archive/refs/tags/release-${version}.tar.gz"
-build_depends="build-essential qt5-qmake pkg-config automake libtool git libboost-dev libboost-system-dev libboost-chrono-dev libboost-random-dev"
+build_depends="build-essential pkg-config automake libtool git libboost-dev libboost-system-dev libboost-chrono-dev libboost-random-dev"
 depends="qt59base qt59svg qt59tools zlib1g-dev python3 libtorrent-rasterbar libssl-dev libgeoip-dev"
 ppa=("deluge-team/ppa"
 "beineri/opt-qt597-xenial")
