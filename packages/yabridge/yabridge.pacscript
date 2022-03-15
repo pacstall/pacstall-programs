@@ -10,6 +10,7 @@ maintainer="echometerain <echometer@disroot.org>"
 prepare() {
   sudo install -D ./* -t "${STOWDIR}/${name}/usr/lib/yabridge"
 }
+repology="yabridge"
 
 build() {
   true
