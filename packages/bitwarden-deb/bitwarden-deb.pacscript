@@ -1,6 +1,7 @@
 name="bitwarden-deb"
 gives="bitwarden"
-breaks="${gives}-bin ${gives}-app ${gives}-git"
+breaks="${gives}-app ${gives}-git"
+replace="${gives}"
 version="1.31.3"
 url="https://github.com/${gives}/desktop/releases/download/v${version}/Bitwarden-${version}-amd64.deb"
 description="Open Source Password Manager"
