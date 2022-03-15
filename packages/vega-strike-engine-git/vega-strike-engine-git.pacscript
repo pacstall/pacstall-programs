@@ -6,6 +6,7 @@ breaks="vega-strike"
 gives="vega-strike"
 description="Vega Strike engine"
 maintainer="echometerain <echometer@disroot.org>"
+repology="vegastrike"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1
