@@ -9,6 +9,7 @@ maintainer="echometerain <echometer@disroot.org>"
 patch="https://patch-diff.githubusercontent.com/raw/opentoonz/GTS/pull/149.diff"
 gives="gts"
 breaks="gts"
+repology="gts-scanning-tool"
 
 prepare() {
   sudo mkdir -p "$STOWDIR/$name/usr/bin"
