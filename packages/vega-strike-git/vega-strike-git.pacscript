@@ -4,6 +4,7 @@ build_depends="make"
 description="Space Flight Simulator and trading game"
 pacdeps="vega-strike-engine-git"
 maintainer="echometerain <echometer@disroot.org>"
+repology="vegastrike-data"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1
