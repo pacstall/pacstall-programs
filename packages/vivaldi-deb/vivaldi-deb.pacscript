@@ -1,5 +1,6 @@
 name="vivaldi-deb"
 version="5.1.2567.57-1"
+repology="vivaldi"
 url="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}_amd64.deb"
 description="An advanced browser made with the power user in mind."
 gives="vivaldi-stable"
