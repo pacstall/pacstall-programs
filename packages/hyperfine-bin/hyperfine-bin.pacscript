@@ -35,7 +35,7 @@ install() {
   sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
 
   # Install completions
-  sudo install -Dm644 "autocomplete/${pkgname}.bash-completion" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
+  sudo install -Dm644 "autocomplete/${pkgname}.bash" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
   sudo install -Dm644 "autocomplete/${pkgname}.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/${pkgname}.fish"
   sudo install -Dm644 "autocomplete/_${pkgname}" "${pkgdir}/usr/share/zsh/site-functions/_${pkgname}"
 
