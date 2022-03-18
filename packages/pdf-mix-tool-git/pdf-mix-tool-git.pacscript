@@ -7,7 +7,6 @@ breaks="${_name} ${_name}-bin ${_name}-app ${_name}-deb"
 description="a GUI application to split, merge, rotate and mix PDF files"
 optdepends=("ImageMagick: image manipulation tool")
 maintainer="echometerain <echometer@disroot.org>"
-repology="pdfmixtool"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1
