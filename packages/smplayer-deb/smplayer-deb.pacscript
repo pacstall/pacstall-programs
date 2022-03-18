@@ -1,6 +1,6 @@
 name="smplayer-deb"
 pkgname="smplayer" # if this is a -git, -bin, etc. package, this would be the package name without extension
-repology="smplayer"
+repology=("project: smplayer")
 version="22.2.0-1"
 url="https://download.opensuse.org/repositories/home:/smplayerdev/Debian_9.0/amd64/smplayer_${version}+1.1_amd64.deb"
 description="Complete front-end for MPlayer/MPV"
