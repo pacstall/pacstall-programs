@@ -1,7 +1,6 @@
 name="aomp-deb"
 gives="aomp"
 version="14.0-3"
-repology="aomp"
 depends="libtinfo5"
 breaks="${gives} ${gives}-git ${gives}-bin ${gives}-app"
 url="https://github.com/ROCm-Developer-Tools/aomp/releases/download/rel_${version}/aomp_Ubuntu1804_${version}_amd64.deb"
