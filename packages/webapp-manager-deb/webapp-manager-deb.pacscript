@@ -1,6 +1,6 @@
 name="webapp-manager-deb"
 gives="webapp-manager"
-repology="webapp-manager"
+repology=("project: webapp-manager")
 version="1.1.9"
 url="https://packages.linuxmint.com/pool/main/w/webapp-manager/webapp-manager_${version}_all.deb"
 description="Run websites as if they were apps."
