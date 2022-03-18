@@ -1,4 +1,5 @@
 name="drawio-desktop-deb"
+repology=("project: drawio-desktop" "visiblename: drawio-desktop")
 version="16.5.1"
 url="https://github.com/jgraph/drawio-desktop/releases/download/v${version}/drawio-amd64-${version}.deb"
 gives="draw.io"
