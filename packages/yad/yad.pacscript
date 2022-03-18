@@ -11,7 +11,7 @@ optdepends=("libwebkit2gtk-4.0-dev: for supporting HTML dialog"
   "libgtksourceview-4-dev: for enabling syntax highlighting in text-info dialog"
   "libgspell-1-dev: for support spell checking in text fields")
 maintainer="echometerain <echometer@disroot.org>"
-repology="yad"
+repology=("project: yad")
 
 prepare() {
   autoreconf -ivf
