@@ -1,6 +1,6 @@
 name="atom-editor-deb"
 gives="atom"
-repology="atom"
+repology=("project: atom")
 version="1.60.0"
 url="https://github.com/${gives}/${gives}/releases/download/v${version}/${gives}-amd64.deb"
 description="The hackable text editor."
