@@ -7,4 +7,4 @@ url="https://github.com/brave/brave-browser/releases/download/v${version}/${give
 description="Development build of Brave Browser"
 hash="57a4a8e65ea963ea95eeac95bfe30a722800c598de274d9af7497f04481c86ec"
 pacdeps=("brave-keyring-deb")
-maintainer="TwilightBlood <hwengerstickel@pm.me>"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
