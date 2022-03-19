@@ -60,6 +60,7 @@ gives="${name} ${name}-nox"
 breaks="${name}-git ${name}-nox"
 replace="${name}-git ${name}-nox"
 hash="b4a7cc4e78e63f378624e0919215b910af5bb2a0afc819fad298272e9f40c1b9"
+repology=("project: emacs")
 
 if [[ $GOLD == "YES" && $CLANG != "YES" ]]; then
   export LD=/usr/bin/ld.gold
