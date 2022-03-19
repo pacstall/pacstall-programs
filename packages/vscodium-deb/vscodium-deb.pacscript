@@ -5,3 +5,4 @@ url="https://github.com/VSCodium/vscodium/releases/download/${version}/${gives}_
 description="Free/Libre open source software binaries for VSCode"
 hash="905f843f1a308381cebaa2487b934f8c1d71e9f0ae9dd401773b753b23de3cf5"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+repology=("project: vscodium")
