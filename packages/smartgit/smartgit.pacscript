@@ -6,6 +6,7 @@ replace="alacritty"
 hash="c3e2672e98190cb72060e27fa26232b7f4b6ffcf62eaf1d01e7ec94ac1d36683"
 maintainer="echometerain <echometer@disroot.org>"
 removescript="true"
+repology=("project: smartgit")
 
 prepare() {
     true
