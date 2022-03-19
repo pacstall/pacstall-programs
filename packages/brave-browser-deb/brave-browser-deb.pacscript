@@ -7,5 +7,5 @@ url="https://github.com/brave/${gives}/releases/download/v${version}/${gives}_${
 description="Release version of world's most unique, privacy friendly web browser"
 hash="c21195d158029ba252cab70541329b337e5bfea2d0741982853ad8bb20be3a52"
 pacdeps=("brave-keyring-deb")
-repology=("project: brave" "visiblename: brave-bin")
+repology=("project: brave")
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
