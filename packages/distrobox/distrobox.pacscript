@@ -4,6 +4,7 @@ repology=("project: distrobox")
 description="Use any linux distribution inside your terminal."
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 url="https://github.com/89luca89/distrobox/archive/refs/tags/${version}.tar.gz"
+depends="podman"
 gives="distrobox"
 breaks="${gives} ${gives}-git ${gives}-bin"
 hash="86c7a6515d8548e258b4acb152e4a622f671c4ffcf1cc1a36d05b5f56bc6a0aa"
