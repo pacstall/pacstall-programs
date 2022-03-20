@@ -5,3 +5,6 @@ url="https://github.com/twpayne/${gives}/releases/download/v${version}/${gives}_
 description="Manage your dotfiles across multiple diverse machines, securely."
 hash="a22fb34d1320d055d767a972d6f069488f83bae7a945c4e5c074e7ea4ddf08d7"
 maintainer="mirenradia <miren_radia@yahoo.co.uk>"
+repology=("project: chezmoi")
+
+# vim:set ft=sh ts=2 sw=2 et:
