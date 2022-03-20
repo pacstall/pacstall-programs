@@ -13,4 +13,3 @@ repology=("project: ${gives}")
 prepare() {
     sudo dpkg --add-architecture i386
 }
-
