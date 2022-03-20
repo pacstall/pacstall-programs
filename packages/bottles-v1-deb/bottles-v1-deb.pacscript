@@ -1,6 +1,6 @@
 name="bottles-v1-deb"
-gives="bottles-v1"
-breaks="${gives} ${gives}-git ${gives}-bin ${gives}-app"
+gives="bottles-v1 com.github.mirkobrombin.bottles bottles"
+breaks="bottles-v1 bottles-git bottles-bin bottles-app "
 version="0458cc87dbd02c7acae52873806b764ea288dfd9"
 url="https://github.com/bottlesdevs/Bottles/releases/download/continuous-v1/bottles.${version}.deb"
 description="Version 1 of Bottles allowing you to easily install Proton and Wine prefixes."
