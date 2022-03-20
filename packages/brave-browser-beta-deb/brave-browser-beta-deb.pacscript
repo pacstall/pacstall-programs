@@ -6,4 +6,5 @@ replace="${gives}"
 url="https://github.com/brave/brave-browser/releases/download/v${version}/${gives}_${version}_amd64.deb"
 description="Testing version of world's most unique, privacy friendly web browser"
 hash="3ba3fa06380c1bdcd63f2cb56437928f7585b3458bcaf0309f8cea8782c38890"
+repology=("project: brave" "visiblename: brave-beta-bin")
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
