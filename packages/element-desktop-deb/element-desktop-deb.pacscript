@@ -1,8 +1,10 @@
 name="element-desktop-deb"
 gives="element-desktop"
-version="1.10.4"
-breaks="${gives} ${gives}-git ${gives}-bin ${gives}-app"
+version="1.10.7"
+replaces="element-desktop"
+repology=("project: element-desktop")
+breaks="${gives}-git ${gives}-bin ${gives}-app"
 url="https://packages.element.io/debian/pool/main/e/element-desktop/element-desktop_${version}_amd64.deb"
 description="Element is a feature-packed Matrix client"
-hash="b50808934b86a9d43a1758733e5cd2d231ee6f1b5bc719a85200be63cf669ab9"
+hash="a150d9baa521732f4778c4fd01058b796e7338c44f77b1180da5da2ced2875e4"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
