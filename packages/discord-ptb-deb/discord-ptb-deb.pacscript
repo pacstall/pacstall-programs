@@ -5,3 +5,4 @@ url="https://dl-ptb.discordapp.net/apps/linux/${version}/${gives}-${version}.deb
 description="Chat for Communities and Friends - Public Test Build"
 hash="d07ff44ae7805024ca4a4bbe1503d3599f2765cf97d8e8cc7c1315df05bedaf9"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+repology=("project: discord-ptb")
