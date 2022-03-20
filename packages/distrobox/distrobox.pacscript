@@ -1,7 +1,8 @@
 name="distrobox"
-version=""
-description=""
-maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com >"
+version="1.2.14"
+repology=("project: distrobox")
+description="Use any linux distribution inside your terminal."
+maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 url="https://raw.githubusercontent.com/89luca89/distrobox/main/install"
 gives="distrobox"
 breaks="${gives} ${gives}-git ${gives}-bin"
