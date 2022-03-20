@@ -9,10 +9,10 @@ breaks="${gives} ${gives}-git ${gives}-bin"
 hash="86c7a6515d8548e258b4acb152e4a622f671c4ffcf1cc1a36d05b5f56bc6a0aa"
 prepare() {
   sudo mkdir -p "/usr/src/pacstall/distrobox/usr"
-  sudo chmod a=rwx "/usr/src/pacstall/distrobox/usr"
 }
 
 install() {
 sudo chmod +x ./install
-./install --prefix "/usr/src/pacstall/distrobox/usr"
+sudo ./install --prefix "/usr/src/pacstall/distrobox/usr"
+sudo chmod a=rwx "/usr/src/pacstall/distrobox/usr" --recursive
 }
