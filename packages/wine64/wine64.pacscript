@@ -16,5 +16,5 @@ build() {
 }
 
 install() {
-          sudo make install DESTDIR=/usr/src/pacstall/wine
+          sudo make install DESTDIR=/usr/src/pacstall/wine64
 }
