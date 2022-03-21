@@ -27,6 +27,7 @@ brave-browser-nightly-deb
 brave-keyring-deb
 cantata
 caprine-deb
+chezmoi-deb
 clib
 cmatrix
 conky-manager-zcot-git
@@ -60,6 +61,7 @@ electronmail-deb
 element-desktop-deb
 emacs
 emacs-git
+emby-server-deb
 endlessh-git
 epson-inkjet-printer-stylus-nx110-series-deb
 epson-printer-utility-deb
@@ -88,6 +90,7 @@ github-desktop
 gitkraken-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
+go-bin
 google-chrome-beta-deb
 google-chrome-deb
 google-chrome-unstable-deb
