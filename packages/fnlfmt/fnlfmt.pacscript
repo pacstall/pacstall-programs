@@ -15,6 +15,7 @@ gives="${pkgname}"
 breaks="${pkgname}-bin ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 depends="lua5.3"
 hash="9e14d6750495c78daa7a474ff2d44bccee260e3d39e55dd61d86986e75bd9def"
+repology=("project: fnlfmt")
 
 prepare() {
   true
