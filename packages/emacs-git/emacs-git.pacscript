@@ -52,9 +52,10 @@ name="emacs-git"
 pkgname="emacs"
 pkgdir="/usr/src/pacstall/${name}"
 description="An extensible, customizable, free/libre text editor — and more."
-build_depends="git autoconf texinfo"
+build_depends="git autoconf texinfo pkg-config libncurses-dev"
 depends_nox="libalsaplayer0 libgnutls28-dev libxml2 libjansson-dev gpm"
 depends="${depends_nox} m17n-lib-bin libotf0 libharfbuzz0b"
+gives="${name}"
 breaks="${pkgname} ${pkgname}-nox"
 replace="${breaks}"
 url="https://github.com/emacs-mirror/emacs.git"
@@ -251,12 +252,12 @@ install() {
 
 postinst() {
   # fix user/root permissions on usr/local/share files
-  find "${pkgdir}"/usr/local/share/emacs/ -print0 | xargs -0 chown root:root
+  find "${pkgdir}"/usr/local/share/emacs/ -print0 | sudo xargs -0 chown root:root
 
   # fix permssions on /var/games
-  mkdir -p "${pkgdir}"/var/games/emacs
-  chmod 775 "${pkgdir}"/var/games
-  chmod 775 "${pkgdir}"/var/games/emacs
-  chown -R root:games "${pkgdir}"/var/games
+  sudo mkdir -p "${pkgdir}"/var/games/emacs
+  sudo chmod 775 "${pkgdir}"/var/games
+  sudo chmod 775 "${pkgdir}"/var/games/emacs
+  sudo chown -R root:games "${pkgdir}"/var/games
 }
 # vim:set ft=sh ts=2 sw=2 et:
