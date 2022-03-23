@@ -5,7 +5,6 @@ url="https://github.com/qtile/qtile.git"
 license="MIT"
 depends="python3-cffi xserver-xorg python3-xcffib python3-cairocffi libpangocairo-1.0-0 python3-pip python3-dbus libpulse-dev pavucontrol"
 description="A full-featured, hackable tiling window manager written and configured in Python"
-maintainer="Ruturajn <nanotiruturaj@gmail.com>"
 
 prepare() {
   cd "${HOME}" || exit
