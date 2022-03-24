@@ -37,3 +37,7 @@ postinst() {
              Type=Application
              Keywords=wm;tiling" | sudo tee -a /usr/share/xsessions/qtile.desktop > /dev/null
 }
+
+removescript() {
+  sudo rm -f /usr/share/xsessions/qtile.desktop /usr/local/bin/qtile
+}
