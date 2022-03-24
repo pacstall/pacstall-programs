@@ -33,9 +33,6 @@ install() {
   Keywords=wm;tiling" | sudo tee -a /usr/src/pacstall/qtile-git/usr/share/xsessions/qtile.desktop > /dev/null
 }
 
-postinst() {
-  true
-}
 
 removescript() {
   sudo rm -f /usr/local/bin/qtile
