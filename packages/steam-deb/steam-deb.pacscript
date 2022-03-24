@@ -12,4 +12,5 @@ repology=("project: ${gives}")
 
 prepare() {
     sudo dpkg --add-architecture i386
+    sudo apt-get update
 }
