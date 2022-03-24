@@ -24,15 +24,13 @@ install() {
   pip3 install dbus-next
   pip3 install .
   sudo python3 setup.py install
-  sudo mkdir -p /usr/src/pacstall/qtile-git
-  sudo cp -r ../qtile /usr/src/pacstall/qtile-git
-  sudo touch /usr/share/xsessions/qtile.desktop
+  sudo mkdir -p /usr/src/pacstall/qtile-git/usr/share/xsessions
   echo "[Desktop Entry]
-             Name=Qtile
-             Comment=Qtile Session
-             Exec=qtile start
-             Type=Application
-             Keywords=wm;tiling" | sudo tee -a /usr/share/xsessions/qtile.desktop > /dev/null
+  Name=Qtile
+  Comment=Qtile Session
+  Exec=qtile start
+  Type=Application
+  Keywords=wm;tiling" | sudo tee -a /usr/src/pacstall/qtile-git/usr/share/xsessions/qtile.desktop > /dev/null
 }
 
 postinst() {
@@ -40,5 +38,5 @@ postinst() {
 }
 
 removescript() {
-  sudo rm -f /usr/share/xsessions/qtile.desktop /usr/local/bin/qtile
+  sudo rm -f /usr/local/bin/qtile
 }
