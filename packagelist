@@ -75,6 +75,7 @@ fennel-bin
 ferdi-deb
 fishui-git
 fm6000-git
+fnlfmt
 forticlient-deb
 freetube-deb
 fsearch-git
@@ -89,6 +90,7 @@ github-desktop
 gitkraken-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
+go-bin
 google-chrome-beta-deb
 google-chrome-deb
 google-chrome-unstable-deb

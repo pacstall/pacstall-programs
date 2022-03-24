@@ -1,7 +1,8 @@
 name="vivaldi-deb"
-version="5.0.2497.32-1"
-url="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}_amd64.deb"
+version="5.1.2567.57"
+repology=("project: vivaldi")
+url="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}-1_amd64.deb"
 description="An advanced browser made with the power user in mind."
 gives="vivaldi-stable"
-hash="fffa0a0f1402920239f694098fa8ae501b21139220836b11c8397d01001e63d0"
-maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
+hash="ffb1f9ea4fc7eb9e99274f13a771999682ab1eef078641df6fcd48c1357ffd7a"
+maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"

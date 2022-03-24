@@ -1,7 +1,8 @@
 name="github-cli-deb"
 gives="gh"
-version="2.5.0"
+version="2.6.0"
 url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version}_linux_amd64.deb"
-description="GitHub's official command line tool."
-hash="30acc72047b0172daccbed494c1f95f235a1ff694f516a227028c42283c917da"
+description="GitHub's official command line tool"
+hash="028b215bba515c3922fa63f033fbb036ce1e54d6b42bfefc808f1c6a081b2e09"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+repology=("project: github-cli")
