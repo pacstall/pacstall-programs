@@ -26,9 +26,6 @@ install() {
   sudo python3 setup.py install
   sudo mkdir -p /usr/src/pacstall/qtile-git
   sudo cp -r ../qtile /usr/src/pacstall/qtile-git
-}
-
-postinst() {
   sudo touch /usr/share/xsessions/qtile.desktop
   echo "[Desktop Entry]
              Name=Qtile
@@ -36,6 +33,10 @@ postinst() {
              Exec=qtile start
              Type=Application
              Keywords=wm;tiling" | sudo tee -a /usr/share/xsessions/qtile.desktop > /dev/null
+}
+
+postinst() {
+  true
 }
 
 removescript() {
