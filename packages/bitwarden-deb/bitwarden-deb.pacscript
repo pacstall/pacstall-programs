@@ -1,7 +1,10 @@
 name="bitwarden-deb"
 gives="bitwarden"
-version="1.31.3"
+breaks="${gives}-app ${gives}-git"
+replace="${gives}"
+version="1.32.1"
 url="https://github.com/${gives}/desktop/releases/download/v${version}/Bitwarden-${version}-amd64.deb"
-description="Open Source Password Manager."
-hash="0122f8f85661e6cb7757967e8ec7ef2c3dba846f4a35523eb61b7b90bf256cbe"
+description="Open Source Password Manager"
+hash="1b593c91fd34110547ff3d9fa07e0d1c2c3cdbf7938bb04c31f915b57e887d0a"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+repology=("project: bitwarden-desktop" "repo: funtoo_1.4")

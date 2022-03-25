@@ -14,6 +14,7 @@ depends="lua5.3"
 url="https://fennel-lang.org/downloads/fennel-${version}"
 breaks="${name}-bin ${name}-git ${name}-deb ${name}-app"
 hash="875ff5e69652d3d38f8e6146350138adf32787390c12a233774f7d1abd180ada"
+repology=("project: fennel")
 
 prepare() {
   true
