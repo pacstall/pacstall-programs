@@ -8,12 +8,13 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="oil"
 pkgdir="${STOWDIR}/${name}"
-version="0.9.7"
+version="0.9.8"
 description="A bash-compatible UNIX shell written in Python"
 url="https://www.oilshell.org/download/oil-${version}.tar.xz"
 gives="oil"
 breaks="${name}-bin ${name}-git ${name}-deb ${name}-app"
-hash="26db8240ceee878b6666b4b0263d4e877854cd02aa285c71592d750836ef97ea"
+hash="3acaf17c9e5d17d027a60d6be878fe683d7de25f7d5fd621e2f219f91f9a1fc1"
+repology=("project: oil-shell")
 
 # Edit MAKEFLAGS here
 MAKEFLAGS=
