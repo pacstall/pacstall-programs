@@ -10,3 +10,4 @@ description="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript eng
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 hash="b0004a3bba73320caa4d675cf5556a6bf439f93445395256ceab77e055ad0d06"
 url="https://deb.nodesource.com/node_${_major_version}.x/pool/main/n/nodejs/nodejs_${version}-deb-1nodesource1_amd64.deb"
+repology=("project: nodejs" "visiblename: nodejs-lts-gallium")
