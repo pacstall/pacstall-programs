@@ -2,7 +2,7 @@ name="qtile-git"
 pkgname="qtile"
 url="https://github.com/qtile/qtile.git"
 license="MIT"
-depends="python3-cffi xserver-xorg python3-xcffib python3-cairocffi libpangocairo-1.0-0 python3-pip python3-dbus libpulse-dev pavucontrol"
+depends="python3-cffi xserver-xorg python3-xcffib python3-cairocffi libpangocairo-1.0-0 python3-pip python3-dbus libpulse-dev pavucontrol python3-testresources"
 description="A full-featured, hackable tiling window manager written and configured in Python"
 maintainer="Ruturajn <nanotiruturaj@gmail.com>"
 
@@ -20,20 +20,9 @@ build() {
 }
 
 install() {
-  pip install --upgrade --no-cache --force-reinstall cairocffi
-  pip3 install dbus-next
-  pip3 install .
-  sudo python3 setup.py install
+  sudo pip3 install --upgrade --no-cache --force-reinstall cairocffi cffi xcffib
+  sudo pip3 install dbus-next
   sudo mkdir -p /usr/src/pacstall/qtile-git/usr/share/xsessions
-  echo "[Desktop Entry]
-  Name=Qtile
-  Comment=Qtile Session
-  Exec=qtile start
-  Type=Application
-  Keywords=wm;tiling" | sudo tee -a /usr/src/pacstall/qtile-git/usr/share/xsessions/qtile.desktop > /dev/null
-}
-
-
-removescript() {
-  sudo rm -f /usr/local/bin/qtile
+  sudo python3 setup.py install --root=/usr/src/pacstall/qtile-git/
+  sudo cp ./resources/qtile.desktop /usr/src/pacstall/qtile-git/usr/share/xsessions/qtile.desktop
 }
