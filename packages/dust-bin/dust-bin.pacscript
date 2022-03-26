@@ -15,6 +15,7 @@ url="https://github.com/bootandy/dust/releases/download/v${version}/dust-v${vers
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="7be13b7c83d0853c1ac4a456d356b762f319955c63b6c0af5be28d44a7ae6cda"
+repology=("project: du-dust")
 
 prepare() {
   true
