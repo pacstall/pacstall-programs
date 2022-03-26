@@ -30,6 +30,7 @@ caprine-deb
 chezmoi-deb
 clib
 cmatrix
+com.github.mirkobrombin.bottles-deb
 conky-manager-zcot-git
 couture
 cutefish-calculator-git
@@ -167,6 +168,7 @@ opera-beta-deb
 opera-deb
 opera-developer-deb
 pacget-git
+paconvert-git
 panagement
 paper-icon-theme
 pdf-mix-tool-git
