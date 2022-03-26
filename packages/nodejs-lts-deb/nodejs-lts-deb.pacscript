@@ -1,7 +1,7 @@
 name="nodejs-lts-deb"
 pkgname="nodejs"
 _major_version="16"
-version="${_major_version}.14.0"
+version="${_major_version}.14.2"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
 replace="${pkgname} node"
 depends="libc6 libgcc1 libstdc++6 python3-minimal ca-certificates"
