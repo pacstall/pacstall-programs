@@ -9,7 +9,7 @@ breaks="${pkgname} ${pkgname}-git ${pkgname}-app ${pkgname}-deb golang golang-gi
 gives="golang-go"
 replace="golang-go"
 hash="e85278e98f57cdb150fe8409e6e5df5343ecb13cebf03a5d5ff12bd55a80264f"
-repology=("project: go" "repo: arch" "subrepo: community" "visiblename: go")
+repology=("project: go")
 
 __goroot="${STOWDIR}/usr/local/${name}"
 __shell_rcs=("${homedir}/.bashrc" "${homedir}/.zshrc" "${homedir}/.profile")
