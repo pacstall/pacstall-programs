@@ -29,7 +29,7 @@ prepare() {
 }
 
 build() {
-  ./configure " ${FLAGS}"
+  ./configure "${FLAGS}"
   make -j"$(nproc)"
 }
 
