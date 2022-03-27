@@ -1,5 +1,5 @@
 name="yad"
-version="11.0"
+version="11.0-1"
 url="https://github.com/v1cont/yad/archive/refs/tags/v${version}.tar.gz"
 build_depends="autotools-dev intltool libgtk-3-dev automake"
 depends="libc6 libcairo2 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libpango-1.0-0 libpangocairo-1.0-0"
@@ -38,5 +38,6 @@ install() {
 }
 
 postinst() {
+  sudo /usr/bin/glib-compile-schemas ${STOWDIR}/${name}/usr/local/share/glib-2.0/schemas
   gtk-update-icon-cache
 }
