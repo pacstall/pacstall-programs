@@ -6,7 +6,7 @@ depends="libc6 libcairo2 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libpango-1.0
 breaks="${name} ${name}-bin ${name}-app ${name}-git ${name}-deb"
 gives="yad"
 description="Yet Another Dialog"
-hash="af20b5a7120ba303ca8845db62c9a7410ae5b5224a3eb3563cd70774a745b9f2"
+hash="9226bbd28b05d8c7cf1f5ad4b22bb6f593a7479d9fe36569e231bf2da216295b"
 optdepends=("libwebkit2gtk-4.0-dev: for supporting HTML dialog"
   "libgtksourceview-4-dev: for enabling syntax highlighting in text-info dialog"
   "libgspell-1-dev: for support spell checking in text fields")
