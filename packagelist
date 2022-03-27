@@ -30,6 +30,7 @@ caprine-deb
 chezmoi-deb
 clib
 cmatrix
+com.github.mirkobrombin.bottles-deb
 conky-manager-zcot-git
 couture
 cutefish-calculator-git
@@ -183,6 +184,7 @@ popsicle
 protonmail-bridge-deb
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
+qtile-git
 renegate
 sed
 shell-color-scripts
