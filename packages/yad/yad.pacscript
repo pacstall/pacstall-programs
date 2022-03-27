@@ -38,6 +38,6 @@ install() {
 }
 
 postinst() {
-  sudo /usr/bin/glib-compile-schemas ${STOWDIR}/${name}/usr/local/share/glib-2.0/schemas
+  sudo "/usr/bin/glib-compile-schemas" "${STOWDIR}/${name}/usr/local/share/glib-2.0/schemas"
   gtk-update-icon-cache
 }
