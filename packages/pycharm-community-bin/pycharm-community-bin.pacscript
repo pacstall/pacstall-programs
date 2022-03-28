@@ -20,8 +20,8 @@ true
 
 install() {
 
-sudo mkdir -p $STOWDIR/$name $application_files_path $desktop_files_path
-sudo cp -R . $application_files_path
+sudo mkdir -p "$STOWDIR/$name $application_files_path $desktop_files_path"
+sudo cp -R . "$application_files_path"
 
 # generate .desktop file
 echo -e "[Desktop Entry]\n\
@@ -32,12 +32,12 @@ Exec=$application_files_path/bin/pycharm.sh\n\
 Path=$application_files_path/bin\n\
 Terminal=false\n\
 Hidden=false\n\
-Categories=Development" | sudo tee $desktop_files_path/PyCharm.desktop >> /dev/null
-sudo chmod +x $desktop_files_path/PyCharm.desktop
+Categories=Development" | sudo tee "$desktop_files_path/PyCharm.desktop" >> /dev/null
+sudo chmod +x "$desktop_files_path/PyCharm.desktop"
 
 }
 
 removescript() {
-sudo rm $desktop_files_path/PyCharm.desktop
-sudo rm -r $application_files_path
+sudo rm "$desktop_files_path/PyCharm.desktop"
+sudo rm -r "$application_files_path"
 }
