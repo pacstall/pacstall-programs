@@ -6,6 +6,7 @@ fi
 
 name="alacritty"
 version="0.10.1"
+repology=("project: alacritty")
 url="https://github.com/alacritty/alacritty/archive/refs/tags/v${version}.tar.gz"
 build_depends="cargo cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 gzip"
 description="A fast, cross-platform, OpenGL terminal emulator"
