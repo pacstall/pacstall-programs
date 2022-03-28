@@ -20,7 +20,7 @@ true
 
 install() {
 
-sudo mkdir -p "$STOWDIR/$name $application_files_path $desktop_files_path"
+sudo mkdir -p "$STOWDIR/$name" "$application_files_path" "$desktop_files_path"
 sudo cp -R . "$application_files_path"
 
 # generate .desktop file
