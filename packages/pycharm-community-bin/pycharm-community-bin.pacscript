@@ -7,6 +7,9 @@ description="Python IDE for professional developers aimed at productivity with a
 url="https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz"
 hash="06ef4152d59b97da1186cdf288588d20d69a689fe75b2140130fa5d8326d07ad"
 
+desktop_files_path="$STOWDIR/$name/usr/share/applications"
+application_files_path="$STOWDIR/$name/usr/bin/$pkgname-$version"
+
 prepare() {
 true
 }
@@ -25,15 +28,16 @@ echo -e "[Desktop Entry]\n\
 Type=Application\n\
 Icon=pycharm-community\n\
 Name=PyCharm Community Edition\n\
-Exec=$STOWDIR/$name/$pkgname-$version/bin/pycharm.sh\n\
-Path=$STOWDIR/$name/$pkgname-$version/bin\n\
+Exec=$application_files_path/bin/pycharm.sh\n\
+Path=$application_files_path/bin\n\
 Terminal=false\n\
 Hidden=false\n\
-Categories=Development" | sudo tee /usr/share/applications/PyCharm.desktop >> /dev/null
-sudo chmod +x /usr/share/applications/PyCharm.desktop
+Categories=Development" | sudo tee $desktop_files_path/PyCharm.desktop >> /dev/null
+sudo chmod +x $desktop_files_path/PyCharm.desktop
 
 }
 
 removescript() {
-sudo rm /usr/share/applications/PyCharm.desktop
+sudo rm $desktop_files_path/PyCharm.desktop
+sudo rm -r $application_files_path
 }
