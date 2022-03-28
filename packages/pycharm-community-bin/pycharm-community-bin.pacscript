@@ -17,8 +17,8 @@ true
 
 install() {
 
-sudo mkdir $STOWDIR/$name
-sudo mv "../$pkgname-$version/" "$STOWDIR/$name"
+sudo mkdir -p $STOWDIR/$name $application_files_path $desktop_files_path
+sudo cp -R . $application_files_path
 
 # create .desktop file
 echo -e "[Desktop Entry]\n\
