@@ -16,7 +16,7 @@ repology=("project: yad")
 prepare() {
   autoreconf -ivf && intltoolize
 
-  FLAGS="--enable-icon-browser --enable-gio"
+  FLAGS=" --enable-icon-browser"
   if dpkg-query -W libwebkit2gtk-4.0-dev > /dev/null 2>&1; then
     FLAGS+=" --enable-html"
   fi
