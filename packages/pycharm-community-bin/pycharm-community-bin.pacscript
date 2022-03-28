@@ -23,10 +23,10 @@ install() {
 sudo mkdir -p $STOWDIR/$name $application_files_path $desktop_files_path
 sudo cp -R . $application_files_path
 
-# create .desktop file
+# generate .desktop file
 echo -e "[Desktop Entry]\n\
 Type=Application\n\
-Icon=pycharm-community\n\
+Icon=$application_files_path/bin/pycharm.svg\n\
 Name=PyCharm Community Edition\n\
 Exec=$application_files_path/bin/pycharm.sh\n\
 Path=$application_files_path/bin\n\
