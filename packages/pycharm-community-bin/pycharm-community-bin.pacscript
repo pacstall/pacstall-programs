@@ -8,36 +8,21 @@ url="https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz"
 hash="06ef4152d59b97da1186cdf288588d20d69a689fe75b2140130fa5d8326d07ad"
 
 desktop_files_path="$STOWDIR/$name/usr/share/applications"
-application_files_path="$STOWDIR/$name/usr/bin/$pkgname-$version"
+application_files_path="$STOWDIR/$name/usr/bin/$pkgname"
 
 prepare() {
-true
+  sudo mkdir -p "$STOWDIR/$name" "$application_files_path" "$desktop_files_path"
 }
 
 build() {
-true
+  true
 }
 
 install() {
+  sudo cp -R . "$application_files_path"
 
-sudo mkdir -p "$STOWDIR/$name" "$application_files_path" "$desktop_files_path"
-sudo cp -R . "$application_files_path"
-
-# generate .desktop file
-echo -e "[Desktop Entry]\n\
-Type=Application\n\
-Icon=$application_files_path/bin/pycharm.svg\n\
-Name=PyCharm Community Edition\n\
-Exec=$application_files_path/bin/pycharm.sh\n\
-Path=$application_files_path/bin\n\
-Terminal=false\n\
-Hidden=false\n\
-Categories=Development" | sudo tee "$desktop_files_path/PyCharm.desktop" >> /dev/null
-sudo chmod +x "$desktop_files_path/PyCharm.desktop"
-
-}
-
-removescript() {
-sudo rm "$desktop_files_path/PyCharm.desktop"
-sudo rm -r "$application_files_path"
+  # grab desktop file
+  # wget -q "https://raw.githubusercontent.com/ObsidianPresidium/pacstall-programs/master/packages/$name/PyCharm.desktop"
+  wget -qO "PyCharm.desktop" "https://pastebin.com/raw/nDYTCNWs" # temporary
+  sudo install -Dm644 "PyCharm.desktop" "$desktop_files_path/PyCharm.desktop"
 }
