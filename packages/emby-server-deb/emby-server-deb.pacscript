@@ -1,5 +1,6 @@
 name="emby-server-deb"
 version="4.6.7.0"
+repology=("project: emby")
 gives="emby-server"
 breaks="${gives} ${gives}-bin ${gives}-app ${gives}-git"
 url="https://github.com/MediaBrowser/Emby.Releases/releases/download/${version}/${name}_${version}_amd64.deb"
