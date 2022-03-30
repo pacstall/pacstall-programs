@@ -32,3 +32,8 @@ After the dependencies are installed simply clone this repository, and use `pre-
 Now, whenever you try to commit a patch all the configured hooks will run and block/fix your code so that it adheres to or standards.
 
 In case for some reason (false positives etc), you want to skip the hooks commit using `git commit --no-verify`
+
+## Stats
+
+<p align="center"><img alt="Repobeats analytics image" src="https://repobeats.axiom.co/api/embed/6339f9352d6dc27063ee90400da619442ee5143b.svg" /></p>
+
