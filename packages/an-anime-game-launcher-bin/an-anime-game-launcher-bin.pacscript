@@ -15,7 +15,7 @@ optdepends=(
     "mangohud: FPS Hud/GUI"
     "gamemode: Game Optimizations"
     "vkbasalt: Required to use custom shaders (install this and reshade-shaders-git)"
-    "reshade-shaders-git: Required by vkBasalt config files (install this and vkbasalt)"
+    #"reshade-shaders-git: Required by vkBasalt config files (install this and vkbasalt)"
 )
 
 prepare() {
