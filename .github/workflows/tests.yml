@@ -1,8 +1,5 @@
 name: tests
 on:
-  pull_request:
-    paths:
-      - 'packages/**/*.pacscript'
   workflow_dispatch:
     inputs:
       debug_enabled:
