@@ -9,7 +9,7 @@ maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
 
-depends="libayatana-appindicator3-1 tar unzip xdelta3 cabextract git iputils"
+depends="libayatana-appindicator3-1 tar unzip xdelta3 cabextract git"
 
 optdepends=(
     "mangohud: FPS Hud/GUI"
