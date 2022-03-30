@@ -10,7 +10,7 @@ hash="551553a4f82beaa8dadc9256800bcc284d7c000081e47aa6ecbb6ff36eacd05f"
 optdepends=("libutempter-dev: Record user sessions to utmp and wtmp files")
 maintainer="Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>"
 prepare() {
-          ./autogen.sh
+	true
 }
 build() {
         # Check if `libutempter-dev` ( optdepends ) is installed

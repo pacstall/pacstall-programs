@@ -35,7 +35,7 @@ jobs:
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
       - id: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - id: files
         uses: jitterbit/get-changed-files@v1
       - name: Setup Test User
