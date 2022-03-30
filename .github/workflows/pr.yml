@@ -1,9 +1,9 @@
 name: "Assign PR Author as Assignee"
 
-on:  
+on:
   pull_request:
     types: [opened, ready_for_review, reopened]
-     
+
 jobs:
   assign-pr-author-as-assignee:
     runs-on: ubuntu-latest
