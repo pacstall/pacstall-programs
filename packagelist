@@ -186,6 +186,7 @@ qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-git
 renegate
+reshade-shaders-git
 sed
 shell-color-scripts
 shellcheck-bin
