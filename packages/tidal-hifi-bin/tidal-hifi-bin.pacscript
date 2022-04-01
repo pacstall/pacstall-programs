@@ -33,6 +33,6 @@ install() {
 
     sudo cp -r ${SRCDIR}/tidal-hifi-${version}/* ${STOWDIR}/${name}/opt/${pkgname}/
     sudo chmod +x "${STOWDIR}/${name}/opt/${pkgname}/tidal-hifi"
-    
+
     sudo ln -s -r "${STOWDIR}/${name}/opt/${pkgname}/tidal-hifi" "${STOWDIR}/${name}/usr/bin/tidal-hifi"
 }
