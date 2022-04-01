@@ -31,8 +31,8 @@ install() {
     # Install the rest of the app
     sudo install -d "${STOWDIR}/${name}/opt/${pkgname}/" "${STOWDIR}/${name}/usr/bin"
 
-    sudo cp -r tidal-hifi-${version}/* ${STOWDIR}/${name}/opt/${pkgname}/
+    sudo cp -r ${SRCDIR}/tidal-hifi-${version}/* ${STOWDIR}/${name}/opt/${pkgname}/
     sudo chmod +x "${STOWDIR}/${name}/opt/${pkgname}/tidal-hifi"
     
-    sudo ln -s "${STOWDIR}/${name}/opt/${pkgname}/tidal-hifi" "${STOWDIR}/${name}/usr/bin/tidal-hifi"
+    sudo ln -s -r "${STOWDIR}/${name}/opt/${pkgname}/tidal-hifi" "${STOWDIR}/${name}/usr/bin/tidal-hifi"
 }
