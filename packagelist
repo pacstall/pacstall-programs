@@ -186,6 +186,7 @@ qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-git
 renegate
+reshade-shaders-git
 sed
 shell-color-scripts
 shellcheck-bin
@@ -210,6 +211,7 @@ teams-for-linux-deb
 telegram-bin
 tenacity-git
 thrive-deb
+tidal-hifi-bin
 tmpmail-bin
 tmux
 topgrade-bin
