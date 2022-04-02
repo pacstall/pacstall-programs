@@ -11,4 +11,4 @@ jobs:
     - name: "Assign Author as Assignee"
       uses: toshimaru/auto-author-assign@v1.5.0
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
