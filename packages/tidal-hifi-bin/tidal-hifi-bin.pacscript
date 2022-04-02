@@ -1,6 +1,6 @@
-name=tidal-hifi-bin
-pkgname=tidal-hifi
-version=2.8.0
+name="tidal-hifi-bin"
+pkgname="tidal-hifi"
+version="2.8.0"
 description="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
 repology=("project: tidal-hifi" "visiblename: tidal-hifi-bin")
 url="https://github.com/Mastermindzh/tidal-hifi/releases/download/${version}/tidal-hifi-${version}.tar.gz"
