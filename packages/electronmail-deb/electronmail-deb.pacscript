@@ -1,8 +1,8 @@
 name="electronmail-deb"
 gives="electron-mail"
 repology=("project: electronmail")
-version="4.13.5"
+version="4.13.6"
 url="https://github.com/vladimiry/ElectronMail/releases/download/v${version}/${gives}-${version}-linux-amd64.deb"
 description="Unofficial ProtonMail Desktop App"
-hash="551eb0ef1e70b9a564276ceac0c8b8083c1112ceb89d5381ea33f8b3da8d77e7"
+hash="0e2ceb2f7820f9427c80053578ff148c044ca3a004fb5cb111c64553d00e290a"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
