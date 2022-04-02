@@ -7,4 +7,4 @@ url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version
 description="GitHub's official command line tool"
 hash="ce393ac41fd97fd27ebdaf81de882150b6d4fc4444afe8f490d74d1312260481"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
-repology=("project: github-cli" "visiblename: ${gives}-bin")
+repology=("project: github-cli")
