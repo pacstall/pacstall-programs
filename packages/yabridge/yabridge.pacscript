@@ -10,17 +10,18 @@ maintainer="echometerain <echometer@disroot.org>"
 prepare() {
   sudo install -D ./* -t "${STOWDIR}/${name}/usr/lib/yabridge"
 }
+repology=("project: yabridge")
 
 build() {
   true
 }
 
 install() {
-  sudo ln -s "${STOWDIR}/${name}/usr/lib/yabridge/yabridgectl" "/usr/bin"
-  sudo ln -s "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host.exe" "/usr/bin"
-  sudo ln -s "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host.exe.so" "/usr/bin"
-  sudo ln -s "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host-32.exe" "/usr/bin"
-  sudo ln -s "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host-32.exe.so" "/usr/bin"
+  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridgectl" "/usr/bin"
+  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host.exe" "/usr/bin"
+  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host.exe.so" "/usr/bin"
+  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host-32.exe" "/usr/bin"
+  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host-32.exe.so" "/usr/bin"
 }
 
 postinst() {

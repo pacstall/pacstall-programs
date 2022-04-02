@@ -1,0 +1,34 @@
+name: Package Request
+description: Request a package to be added to Pacstall repository
+title: "PacReq: <name_of_the_package>"
+labels: ["package request"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Types
+      description: Select the types of pacscripts you're requesting
+      multiple: true
+      options:
+        - -bin (Binary release of the package)
+        - -git (Compiled off of the latest commit of the package)
+        - -app (Appimage of the package)
+        - nosuffix (Compiled off of the released source code)
+        - -deb (Debian achieve release of the package)
+  - type: textarea
+    id: url
+    attributes:
+      label: URL
+      description: Provide the URL of the package
+    validations:
+      required: true
+  - type: textarea
+    id: building
+    attributes:
+      label: Building guide
+      description: Provide the link to the building guide
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else you want to tell us about

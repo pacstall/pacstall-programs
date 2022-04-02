@@ -8,6 +8,7 @@ hash="54b776b401e43f2425bb57e52f0b71cf8a01591dde8fc25727e215e7e8f191de"
 maintainer="echometerain <echometer@disroot.org>"
 gives="opentoonz"
 breaks="${name}-git ${name}-deb ${name}-app ${name}-deb ${name}-bin"
+repology=("project: opentoonz")
 
 prepare() {
 
