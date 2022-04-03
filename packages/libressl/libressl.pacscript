@@ -7,12 +7,13 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="libressl"
-version="3.3.3"
+version="3.4.3"
 pkgdir="/usr/src/pacstall/${name}"
 url="https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-${version}.tar.gz"
 description="LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014, with goals of modernizing the codebase, improving security, and applying best practice development processes."
 breaks="${name}-git ${name}-bin"
-hash="a471565b36ccd1a70d0bd7d37c6e95c43a26a62829b487d9d2cdebfe58be3066"
+hash="ff88bffe354818b3ccf545e3cafe454c5031c7a77217074f533271d63c37f08d"
+repology=("project: libressl")
 
 prepare() {
   # Configure LibreSSL

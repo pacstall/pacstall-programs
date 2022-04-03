@@ -16,6 +16,7 @@ depends="gtk3-engines-unico gtk2-engines-murrine gtk2-engines-pixbuf"
 build_depends="libsass1"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="fb6b55b88dd6d69814ccd877efc227f3f62c4c73d1cf407bb02d5b93ee345023"
+repology=("project: qogir-theme" "repo: nix_unstable")
 
 # To specify flags for theme installation you have two options
 # 1. Edit _INSTALL_OPTS, and specify flags there
