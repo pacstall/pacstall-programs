@@ -1,9 +1,9 @@
 name="chezmoi-deb"
 gives="chezmoi"
-version="2.14.0"
+version="2.15.0"
 url="https://github.com/twpayne/${gives}/releases/download/v${version}/${gives}_${version}_linux_amd64.deb"
 description="Manage your dotfiles across multiple diverse machines, securely."
-hash="a22fb34d1320d055d767a972d6f069488f83bae7a945c4e5c074e7ea4ddf08d7"
+hash="508886fd3ac797847cb0f806ef57f5825e0fa981960160c844b0b689711f6ef9"
 maintainer="mirenradia <miren_radia@yahoo.co.uk>"
 repology=("project: chezmoi")
 
