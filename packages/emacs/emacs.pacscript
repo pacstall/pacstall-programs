@@ -50,7 +50,7 @@ NOGZ="YES"        # Don"t compress .el files.
 
 name="emacs"
 pkgdir="/usr/src/pacstall/${name}"
-version="27.2"
+version="28.1"
 url="http://ftpmirror.gnu.org/emacs/emacs-${version}.tar.xz"
 description="An extensible, customizable, free/libre text editor — and more."
 build_depends="git autoconf texinfo pkg-config libncurses-dev"
@@ -59,7 +59,7 @@ depends="${depends_nox} m17n-lib-bin libotf0 libharfbuzz0b"
 gives="${name}"
 breaks="${name}-git ${name}-nox"
 replace="${name}-git ${name}-nox"
-hash="b4a7cc4e78e63f378624e0919215b910af5bb2a0afc819fad298272e9f40c1b9"
+hash="28b1b3d099037a088f0a4ca251d7e7262eab5ea1677aabffa6c4426961ad75e1"
 repology=("project: emacs")
 
 if [[ $GOLD == "YES" && $CLANG != "YES" ]]; then
