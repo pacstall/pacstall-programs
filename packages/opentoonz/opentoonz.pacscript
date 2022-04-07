@@ -38,13 +38,13 @@ build() {
 install() {
 
   cd "toonz/build"
-  sudo make install DESTDIR="$STOWDIR/$name"
+  sudo make install DESTDIR="${STOWDIR}/${name}"
   cd ../../
-  sudo install -Dm644 LICENSE.txt "$STOWDIR/$name/usr/share/licenses/$name/LICENSE.txt"
-  sudo chmod +x "$STOWDIR/$name/opt/$name/bin/opentoonz"
+  sudo install -Dm644 LICENSE.txt "${STOWDIR}/${name}/usr/share/licenses/$name/LICENSE.txt"
+  sudo chmod +x "${STOWDIR}/${name}/opt/$name/bin/opentoonz"
 
-  sudo install -Dm755 "toonz/sources/xdg-data/io.github.OpenToonz.desktop" "$STOWDIR/$name/usr/share/applications/"
-  sudo install -Dm644 "toonz/sources/xdg-data/io.github.OpenToonz.png" "$STOWDIR/$name/usr/share/pixmaps/"
+  sudo install -Dm755 "toonz/sources/xdg-data/io.github.OpenToonz.desktop" "${STOWDIR}/${name}/usr/share/applications/"
+  sudo install -Dm644 "toonz/sources/xdg-data/io.github.OpenToonz.png" "${STOWDIR}/${name}/usr/share/pixmaps/"
 }
 
 removescript() {
