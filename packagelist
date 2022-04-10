@@ -180,6 +180,7 @@ pipes.sh-bin
 pipewire
 planner-git
 plexmediaserver-deb
+polkit-git
 polybar
 pomatez-deb
 popsicle

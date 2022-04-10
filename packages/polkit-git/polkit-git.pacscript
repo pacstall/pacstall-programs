@@ -1,0 +1,25 @@
+name="polkit-git"
+pkgname="polkit"
+gives="polkit"
+repology=("project: ${pkgname}")
+build_depends="autoconf automake"
+url="https://gitlab.freedesktop.org/${name}/${name}.git"
+description="polkit is a toolkit for defining and handling authorizations. It is used for allowing unprivileged processes to speak to privileged processes"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+pkgver() {
+  git ls-remote "${url}" master | cut -f1
+}
+version="$(pkgver)"
+
+prepare() {
+  ./autogen.sh
+}
+
+build() {
+  ./configure
+  make -j"$(nproc)"
+}
+
+install() {
+  sudo make install DESTDIR="/usr/src/pacstall/${pkgname}"
+}
