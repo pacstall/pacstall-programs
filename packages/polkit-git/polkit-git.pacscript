@@ -3,7 +3,7 @@ pkgname="polkit"
 gives="polkit"
 repology=("project: ${pkgname}")
 build_depends="autoconf automake"
-url="https://gitlab.freedesktop.org/${name}/${name}.git"
+url="https://gitlab.freedesktop.org/${pkgname}/${pkgname}.git"
 description="polkit is a toolkit for defining and handling authorizations. It is used for allowing unprivileged processes to speak to privileged processes"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 pkgver() {
