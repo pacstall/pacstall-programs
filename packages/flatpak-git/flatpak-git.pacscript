@@ -10,7 +10,7 @@ description="Linux application sandboxing and distribution framework"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1
+  git ls-remote "${url}" main | cut -f1
 }
 version="$(pkgver)"
 
