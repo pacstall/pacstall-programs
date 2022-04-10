@@ -1,14 +1,17 @@
-name="flatpak"
-repology=("project: ${name}")
+name="flatpak-git"
+pkgname="flatpak"
+repology=("project: ${pkgname}")
 build_depends="libtool autoconf automake"
 depends="libseccomp-dev appstream libjson-glib-dev bison ostree libarchive-dev gobject-introspection gtk-doc-tools gettext libpcap-dev libxau-dev mate-polkit libgpgme-dev libsoup-gnome2.4-dev libxml2-dev"
-breaks="{name}-git {name}-bin"
-replace="${name}"
-version="1.12.7"
-url="https://github.com/${name}/${name}/releases/download/{version}/${name}-${version}.tar.xz"
+breaks="{pkgname}-bin"
+replace="${pkgname}"
+url="https://github.com/${name}/${name}.git"
 description="Linux application sandboxing and distribution framework"
-hash="6db52a531ce278282ac7ebfb99f66a0bb3eccaf44e864844c2c95c1ee5ba9316"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+pkgver() {
+  git ls-remote "${url}" master | cut -f1
+}
+version="$(pkgver)"
 
 prepare() {
   ./autogen.sh
@@ -20,7 +23,7 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR="/usr/src/pacstall/${name}"
+  sudo make install DESTDIR="/usr/src/pacstall/${pkgname}"
 }
 
 postinst() {
