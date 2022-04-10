@@ -5,7 +5,7 @@ build_depends="libtool autoconf automake"
 depends="libseccomp-dev appstream libjson-glib-dev bison ostree libarchive-dev gobject-introspection gtk-doc-tools gettext libpcap-dev libxau-dev mate-polkit libgpgme-dev libsoup-gnome2.4-dev libxml2-dev"
 breaks="${pkgname}-bin"
 replace="${pkgname}"
-url="https://github.com/${name}/${name}.git"
+url="https://github.com/${pkgname}/${pkgname}.git"
 description="Linux application sandboxing and distribution framework"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 pkgver() {
