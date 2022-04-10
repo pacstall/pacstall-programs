@@ -1,7 +1,6 @@
 name="polkit-git"
 pkgname="polkit"
 gives="polkit"
-repology=("project: ${pkgname}")
 build_depends="autoconf automake libtool"
 depends="gtk-doc-tools libmozjs-91-dev autopoint libglib2.0-dev gir1.2-gmodule-2.0"
 url="https://gitlab.freedesktop.org/${pkgname}/${pkgname}.git"
@@ -22,5 +21,5 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR="/usr/src/pacstall/${pkgname}"
+  sudo make install DESTDIR="${STOWDIR}/${pkgname}"
 }
