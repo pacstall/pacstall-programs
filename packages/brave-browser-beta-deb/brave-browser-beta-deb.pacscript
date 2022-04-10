@@ -1,10 +1,10 @@
 name="brave-browser-beta-deb"
 gives="brave-browser-beta"
-version="1.38.83"
+version="1.38.87"
 breaks="${gives}-bin ${gives}-git ${gives}-app"
 replace="${gives}"
 url="https://github.com/brave/brave-browser/releases/download/v${version}/${gives}_${version}_amd64.deb"
 description="Testing version of world's most unique, privacy friendly web browser"
-hash="92a857fde54da94d8eb39de02b3606498dc8fddd244b2620bb510aaa864816ea"
+hash="00b112ead7ccbd8a33677fc3a458c080b8d35bcca871b7913993c2fd38e0eebf"
 repology=("project: brave" "visiblename: brave-beta-bin")
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
