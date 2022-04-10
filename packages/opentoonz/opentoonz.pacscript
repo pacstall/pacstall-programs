@@ -38,8 +38,8 @@ build() {
 install() {
 
   cd "toonz/build" || return
-  sudo mkdir -P "/usr/src/pacstall/opentoonz/usr/share/pixmaps/"
-  sudo mkdir -P "/usr/src/pacstall/opentoonz/usr/share/applications/"
+  sudo mkdir -p "/usr/src/pacstall/opentoonz/usr/share/pixmaps/"
+  sudo mkdir -p "/usr/src/pacstall/opentoonz/usr/share/applications/"
   sudo make install DESTDIR="${STOWDIR}/${name}"
   cd "../../" || return
   sudo install -Dm644 LICENSE.txt "${STOWDIR}/${name}/usr/share/licenses/${name}/LICENSE.txt"
