@@ -13,7 +13,7 @@ repology=("project: opentoonz")
 prepare() {
 
   sudo mkdir -p "/home/${LOGNAME}/.config/OpenToonz"
-  sudo cp -r "opentoonz/stuff" "/home/${LOGNAME}/.config/OpenToonz/"
+  sudo cp -r "./stuff" "/home/${LOGNAME}/.config/OpenToonz/"
   sudo chown -R "${LOGNAME}" "/home/${LOGNAME}/.config/OpenToonz/"
 
   cd "toonz" || return
