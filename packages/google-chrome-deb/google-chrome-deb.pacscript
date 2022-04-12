@@ -1,5 +1,6 @@
 name="google-chrome-deb"
 gives="google-chrome-stable"
+repology=("project: google-chrome")
 breaks="google-chrome-beta-deb ${gives} google-chrome-dev-deb"
 version="98.0.4758.102-1"
 url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}_amd64.deb"
