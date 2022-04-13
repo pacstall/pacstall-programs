@@ -1,8 +1,10 @@
 name="microsoft-edge-beta-deb"
 gives="microsoft-edge-beta"
 breaks="microsoft-edge-dev-deb microsoft-edge-stable-deb"
-version="99.0.1150.30-1"
+replace="${gives}"
+repology=("project: ${gives}")
+version="101.0.1210.14-1"
 url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${version}_amd64.deb"
 description="The Beta channel is the most stable Microsoft Edge preview experience"
-hash="722bf2cce067e5d6de6325e2ca2a1990691cdfb6538cdf86d69f9dd88df32b6e"
+hash="6f4dd343458f065479d3a412f4b792b7501a19078834430c8259270be222ffd8"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
