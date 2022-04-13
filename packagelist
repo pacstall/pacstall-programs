@@ -194,6 +194,7 @@ shellcheck-bin
 shellharden-bin
 shfmt-bin
 slack-deb
+slop-git
 smartgit
 smplayer-deb
 soundux
