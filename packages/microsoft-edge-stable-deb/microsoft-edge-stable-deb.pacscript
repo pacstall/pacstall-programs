@@ -1,8 +1,10 @@
 name="microsoft-edge-stable-deb"
 gives="microsoft-edge-stable"
 breaks="microsoft-edge-dev-deb microsoft-edge-beta-deb"
-version="98.0.1108.62-1"
+replace="${gives}"
+repology=("project: microsoft-edge")
+version="100.0.1185.39-1"
 url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${version}_amd64.deb"
 description="The web browser from Microsoft"
-hash="180ea48bde3ed492bc9712dbed2c1629576968cc1cc5a5d7f2375af6cbb3b827"
+hash="8e191102372e5ddd0654826b157480f53912de30d83b3c40c37bf9ca42cc2794"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
