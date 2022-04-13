@@ -1,0 +1,10 @@
+name="lyx-deb"
+gives="lyx"
+version="2.3.6.1-1"
+breaks="${gives} ${gives}-git ${gives}-bin ${gives}-app"
+pacdeps=("lyx-common-deb")
+url="https://launchpad.net/~lyx-devel/+archive/ubuntu/release/+build/20788602/+files/lyx_${version}~bionic~ppa1_amd64.deb"
+description="Lyx combines the power and flexibility of TeX/LaTeX into a gui."
+hash="a7e3f3a5d89a963d8efe172157ef207affee75177104c9e7befe68375c972a06"
+maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
+repology=("project: lyx")
