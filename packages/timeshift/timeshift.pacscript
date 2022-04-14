@@ -1,5 +1,5 @@
 name="timeshift"
-repology="timeshift"
+repology=("project: timeshift")
 version="21.09.1"
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 url="https://github.com/teejee2008/timeshift/archive/refs/tags/v${version}.zip"
