@@ -4,7 +4,7 @@ description="An advanced WYSIWYM document processor & LaTeX front-end"
 depends="libqt5svg5 texlive-base python3 imagemagick enchant-2-dev libhunspell-dev file hicolor-icon-theme desktop-file-utils"
 build_depends="bc"
 optdepends=("rcs: built-in version control system"
-  "texlive-latexextra: float wrap support")
+  "texlive-latexextra-base: float wrap support")
 url="https://ftp.lip6.fr/pub/lyx/stable/2.3.x/lyx-${version}.tar.gz"
 hash="6d6f5458ebaac644cdfa35114d029e9ec57b4d930268d6d40bd9795d5c7e7929"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
