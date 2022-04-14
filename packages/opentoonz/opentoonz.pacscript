@@ -48,7 +48,7 @@ install() {
   sudo install -Dm755 "toonz/sources/xdg-data/io.github.OpenToonz.desktop" "${STOWDIR}/${name}/usr/share/applications/"
   sudo install -Dm644 "toonz/sources/xdg-data/io.github.OpenToonz.png" "${STOWDIR}/${name}/usr/share/pixmaps/"
 
-  printf '#!/bin/sh\nsh /opt/opentoonz/bin/opentoonz' | sudo tee "/usr/bin/opentoonz" > "/dev/null"
+  printf '#!/bin/sh\nsh /opt/opentoonz/bin/opentoonz' | sudo tee /usr/bin/opentoonz > /dev/null
   sudo chmod +x "/usr/bin/opentoonz"
 }
 
