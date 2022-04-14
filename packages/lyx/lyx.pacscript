@@ -1,0 +1,28 @@
+name="lyx"
+version="2.3.6.1"
+description="An advanced WYSIWYM document processor & LaTeX front-end"
+depends="qt5-svg texlive-core python imagemagick enchant hunspell file hicolor-icon-theme desktop-file-utils"
+build_depends="bc"
+optdepends=("rcs: built-in version control system"
+  "texlive-latexextra: float wrap support"
+  "python: support for python scripts")
+url="https://ftp.lip6.fr/pub/lyx/stable/2.3.x/lyx-${version}.tar.gz"
+hash="6d6f5458ebaac644cdfa35114d029e9ec57b4d930268d6d40bd9795d5c7e7929"
+maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
+repology=("project: lyx")
+pacdeps=("lyx-common-deb")
+build() {
+  ./configure --prefix=/usr \
+    --enable-qt5
+  make -j$(nproc)
+}
+
+install() {
+  sudo make install DESTDIR="${STOWDIR}/${name}"
+  # install appdata
+  sudo install -Dm644 ./lib/appdata.xml "${STOWDIR}/${name}/usr/share/metainfo/lyx.appdata.xml"
+
+  # install default config file
+  sudo install -Dm644 "./lyxrc.dist" "${STOWDIR}/${name}/etc/lyx/lyxrc.dist"
+  sudo ln -sf "${STOWDIR}/${name}/etc/lyx/lyxrc.dist" "${STOWDIR}/${name}/usr/share/lyx/lyxrc.dist"
+}
