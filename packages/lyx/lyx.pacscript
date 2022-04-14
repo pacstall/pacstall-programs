@@ -10,7 +10,7 @@ hash="6d6f5458ebaac644cdfa35114d029e9ec57b4d930268d6d40bd9795d5c7e7929"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 repology=("project: lyx")
 prepare() {
-true
+  true
 }
 
 build() {
