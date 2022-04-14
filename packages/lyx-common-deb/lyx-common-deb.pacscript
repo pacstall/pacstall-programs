@@ -1,9 +1,0 @@
-name="lyx-common-deb"
-gives="lyx-common"
-version="2.3.6.1-1"
-breaks="${gives} ${gives}-git ${gives}-bin ${gives}-app"
-url="https://launchpad.net/~lyx-devel/+archive/ubuntu/release/+build/20788602/+files/lyx-common_${version}~bionic~ppa1_all.deb"
-description="Common files for Lyx"
-hash="6c0bee34260881a2199eef39f486653f4915f70dfe76032766b4ba302d7342e3"
-maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
-repology=("project: lyx")
