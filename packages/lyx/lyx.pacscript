@@ -24,8 +24,4 @@ install() {
   sudo make install DESTDIR="${STOWDIR}/${name}"
   # install appdata
   sudo install -Dm644 ./lib/appdata.xml "${STOWDIR}/${name}/usr/share/metainfo/lyx.appdata.xml"
-
-  # install default config file
-  sudo install -Dm644 "./lyxrc.dist" "${STOWDIR}/${name}/etc/lyx/lyxrc.dist"
-  sudo ln -sf "${STOWDIR}/${name}/etc/lyx/lyxrc.dist" "${STOWDIR}/${name}/usr/share/lyx/lyxrc.dist"
 }
