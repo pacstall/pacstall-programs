@@ -130,6 +130,7 @@ lsd-deb
 lutris-deb
 lyrebird-git
 lyx-deb
+lyx-common-deb
 maitreya8-deb
 makedeb-deb
 mangohud
@@ -195,6 +196,7 @@ shellcheck-bin
 shellharden-bin
 shfmt-bin
 slack-deb
+slop-git
 smartgit
 smplayer-deb
 soundux
