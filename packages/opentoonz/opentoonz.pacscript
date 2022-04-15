@@ -56,6 +56,6 @@ removescript() {
 
   ask "Do you want to remove your opentoonz config?" N
   if [[ ${answer} -eq 1 ]]; then
-    sudo rm -rf "home/${LOGNAME}/.config/OpenToonz/"
+    rm -rf "/home/${LOGNAME}/.config/OpenToonz/"
   fi
 }
