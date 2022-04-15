@@ -22,7 +22,8 @@ install() {
   sudo cp -R . "$application_files_path"
 
   # grab desktop file
-  # wget -q "https://raw.githubusercontent.com/ObsidianPresidium/pacstall-programs/master/packages/$name/PyCharm.desktop"
-  wget -qO "PyCharm.desktop" "https://pastebin.com/raw/nDYTCNWs" # temporary
+  wget -qO "PyCharm.desktop" "https://raw.githubusercontent.com/ObsidianPresidium/pacstall-programs/master/packages/$name/PyCharm.desktop"
   sudo install -Dm644 "PyCharm.desktop" "$desktop_files_path/PyCharm.desktop"
+
+  sudo cp $application_files_path/bin/pycharm.svg $STOWDIR/$name/usr/share/icons/pycharm.svg
 }

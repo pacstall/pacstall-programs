@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Icon=/usr/src/pacstall/pycharm-community-bin/usr/bin/pycharm-community/bin/pycharm.svg
+Icon=/usr/src/pacstall/pycharm-community-bin/usr/share/icons/pycharm.svg
 Name=PyCharm Community Edition
 Exec=/usr/src/pacstall/pycharm-community-bin/usr/bin/pycharm-community/bin/pycharm.sh
 Path=/usr/src/pacstall/pycharm-community-bin/usr/bin/pycharm-community/bin
