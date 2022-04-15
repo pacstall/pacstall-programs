@@ -75,7 +75,6 @@ fastfetch-git
 fblog-deb
 fennel
 fennel-bin
-ferdi-deb
 fishui-git
 fm6000-git
 fnlfmt
@@ -130,6 +129,7 @@ lrz-syncshare-deb
 lsd-deb
 lutris-deb
 lyrebird-git
+lyx
 maitreya8-deb
 makedeb-deb
 mangohud
@@ -195,6 +195,7 @@ shellcheck-bin
 shellharden-bin
 shfmt-bin
 slack-deb
+slop-git
 smartgit
 smplayer-deb
 soundux

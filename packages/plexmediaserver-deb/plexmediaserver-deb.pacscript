@@ -1,8 +1,10 @@
 name="plexmediaserver-deb"
 gives="plexmediaserver"
-version="1.25.4.5487-648a8f9f9"
+repology=("project: ${gives}")
+version="1.25.9.5721-965587f64"
 breaks="${gives}-bin ${gives}-app"
+replace="${gives}"
 url="https://downloads.plex.tv/plex-media-server-new/${version}/debian/${gives}_${version}_amd64.deb"
 description="Plex organizes all of your personal media so you can easily access and enjoy it"
-hash="783aedba454fe4f42a821d540605dda51928b6b19094b8ac0ab3f45c5d62557c"
+hash="34f7e943c2705c36aaf31a6f49a6f2a9d0ea3168e8a9b7a825dbb8d6785db08d"
 maintainer="WRM-42 <y8bsbazhy@anonaddy.me>"
