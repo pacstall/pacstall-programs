@@ -10,10 +10,6 @@ maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
   sudo groupadd ${name}
 	sudo groupadd piahnsd
-  sudo addRoutingTable ${name}rt
-	sudo addRoutingTable ${name}Onlyrt
-	sudo addRoutingTable ${name}Wgrt
-	sudo addRoutingTable ${name}Fwdrt
 }
 
 build() {
@@ -46,10 +42,6 @@ postinst() {
 removescript() {
   sudo systemctl stop ${name}.service
 	sudo systemctl disable ${name}.service
-  sudo sed -i '/.*${name}rt$/d' /etc/iproute2/rt_tables
-	sudo sed -i '/.*${name}Onlyrt$/d' /etc/iproute2/rt_tables
-	sudo sed -i '/.*${name}Wgrt$/d' /etc/iproute2/rt_tables
-	sudo sed -i '/.*${name}Fwdrt$/d' /etc/iproute2/rt_tables
-	sudo groupdel ${name}
+  sudo groupdel ${name}
 	sudo groupdel piahnsd
 }
