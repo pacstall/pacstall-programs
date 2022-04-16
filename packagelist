@@ -12,6 +12,7 @@ aws-cli-v2-bin
 balena-etcher-electron-deb
 bashtop-git
 bat
+bat-deb
 batsignal
 bazecor-app
 bemenu-git
@@ -25,6 +26,7 @@ brave-browser-deb
 brave-browser-dev-deb
 brave-browser-nightly-deb
 brave-keyring-deb
+btop-bin
 cantata
 caprine-deb
 chezmoi-deb
@@ -73,7 +75,6 @@ fastfetch-git
 fblog-deb
 fennel
 fennel-bin
-ferdi-deb
 fishui-git
 fm6000-git
 fnlfmt
@@ -87,11 +88,12 @@ git-delta-deb
 gitblade-deb
 gitfiend-deb
 github-cli-deb
-github-desktop
+github-desktop-deb
 gitkraken-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
 go-bin
+gomuks-deb
 google-chrome-beta-deb
 google-chrome-deb
 google-chrome-unstable-deb
@@ -128,6 +130,7 @@ lrz-syncshare-deb
 lsd-deb
 lutris-deb
 lyrebird-git
+lyx
 maitreya8-deb
 makedeb-deb
 mangohud
@@ -187,12 +190,14 @@ qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-git
 renegate
+reshade-shaders-git
 sed
 shell-color-scripts
 shellcheck-bin
 shellharden-bin
 shfmt-bin
 slack-deb
+slop-git
 smartgit
 smplayer-deb
 soundux
@@ -211,6 +216,7 @@ teams-for-linux-deb
 telegram-bin
 tenacity-git
 thrive-deb
+tidal-hifi-bin
 tmpmail-bin
 tmux
 topgrade-bin
