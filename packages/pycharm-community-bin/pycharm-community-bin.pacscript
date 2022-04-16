@@ -5,7 +5,7 @@ gives="pycharm-community"
 maintainer="Obsidian <emil-aarestrup@outlook.dk>"
 description="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 url="https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz"
-hash="06ef4152d59b97da1186cdf288588d20d69a689fe75b2140130fa5d8326d07ad"
+hash="35d857df0ac4bd76caba60ac329c9183594be142094d0592f2afa40534be85eb"
 desktop_file_sum="5d2d1a3bf3d81cb7b7fef2d8332932eb9133f89b823ea291551267484e69d74f"
 
 prepare() {
