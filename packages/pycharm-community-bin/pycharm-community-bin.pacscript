@@ -6,7 +6,7 @@ maintainer="Obsidian <emil-aarestrup@outlook.dk>"
 description="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 url="https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz"
 hash="06ef4152d59b97da1186cdf288588d20d69a689fe75b2140130fa5d8326d07ad"
-desktop_file_sum="bd9544b6825b6faf07a314a1b97b3a599d5e2093413108ee0cd00aa5004829de"
+desktop_file_sum="1df6a4d5796e0435fe95b6e169c686e180d440b883d9076125a48a94f8119489"
 
 prepare() {
   wget -qO "pycharm.desktop" "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/PyCharm.desktop"
