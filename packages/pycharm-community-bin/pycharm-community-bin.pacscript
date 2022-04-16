@@ -2,23 +2,18 @@ name="pycharm-community-bin"
 version="2021.3.3"
 pkgname="pycharm-community"
 gives="pycharm-community"
-maintainer="Emil Aarestrup <emil@aarestrup.nu>"
+maintainer="Obsidian <emil-aarestrup@outlook.dk>"
 description="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 url="https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz"
 hash="06ef4152d59b97da1186cdf288588d20d69a689fe75b2140130fa5d8326d07ad"
-
-desktop_files_path="/usr/share/applications"
-application_files_path="/usr/bin/${pkgname}"
-desktop_file_sum="d993cf4b4bce67a1cf7ba7d60e1798eaccbf5381263fbd398d76c261089458d9"
+desktop_file_sum="bd9544b6825b6faf07a314a1b97b3a599d5e2093413108ee0cd00aa5004829de"
 
 prepare() {
-  sudo mkdir -p "${STOWDIR}/${name}" "${application_files_path}" "${desktop_files_path}"
-  wget -qO "PyCharm.desktop" "https://raw.githubusercontent.com/ObsidianPresidium/pacstall-programs/master/packages/${name}/PyCharm.desktop"
-  if [[ "$(sha256sum PyCharm.desktop | cut -d' ' -f 1)" != "${desktop_file_sum}" ]]; then
-    fancy_message error "Checksum for download PyCharm.desktop failed"
+  wget -qO "pycharm.desktop" "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/PyCharm.desktop"
+  if [[ "$(sha256sum pycharm.desktop | cut -d' ' -f 1)" != "${desktop_file_sum}" ]]; then
+    fancy_message error "Checksum for PyCharm.desktop failed"
     return 1
   fi
-
 }
 
 build() {
@@ -26,8 +21,11 @@ build() {
 }
 
 install() {
-  sudo cp -R . "${application_files_path}"
-
-  sudo install -Dm644 "PyCharm.desktop" "${desktop_files_path}/PyCharm.desktop"
-  sudo install -Dm644 "${application_files_path}/bin/pycharm.svg" "/usr/share/icons/pycharm.svg"
+  sudo mkdir -p "${STOWDIR}/${name}/usr/share/licenses/pycharm"
+  sudo mkdir -p "${STOWDIR}/${name}/usr/share/pycharm"
+  sudo mkdir -p "${STOWDIR}/${name}/usr/share/pixmaps"
+  sudo cp -dr --no-preserve='ownership' bin jbr lib plugins "${STOWDIR}/${name}/usr/share/pycharm/"
+  sudo cp -dr --no-preserve='ownership' license "${STOWDIR}/${name}/usr/share/licenses/pycharm/"
+  sudo cp -dr "${STOWDIR}/${name}/usr/share/pycharm/bin/pycharm.png" "${STOWDIR}/${name}/usr/share/pixmaps/"
+  sudo install -Dm 644 PyCharm.desktop -t "${STOWDIR}/${name}"/usr/share/applications/
 }
