@@ -1,8 +1,9 @@
 name="google-chrome-unstable-deb"
 gives="google-chrome-unstable"
 breaks="google-chrome-deb google-chrome-beta-deb"
-version="100.0.4896.20-1"
-url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}_amd64.deb"
+version="102.0.4997.0"
+url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}-1_amd64.deb"
 description="The web browser built by Google - Dev channel"
-hash="04fc9e1a23af58226007eab60fb838d892c7386700d7fda551b275582fd6d8c3"
+hash="d7b0d4cb4bc2665c426a0017059be8409d49853a450b8d56866f1fbddaf08620"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+repology=("project: google-chrome" "repo: Gentoo")
