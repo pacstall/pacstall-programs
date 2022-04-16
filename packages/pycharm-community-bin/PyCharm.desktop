@@ -2,7 +2,7 @@
 Type=Application
 Icon=/usr/share/pixmaps/pycharm.png
 Name=PyCharm Community Edition
-Exec=/usr/share/pycharm/bin/pycharm.sh
+Exec=pycharm
 Path=/usr/share/pycharm/bin
 Terminal=false
 Hidden=false
