@@ -1,5 +1,5 @@
 name="pycharm-community-bin"
-version="2021.3.3"
+version="2022.1"
 pkgname="pycharm-community"
 gives="pycharm-community"
 maintainer="Obsidian <emil-aarestrup@outlook.dk>"
