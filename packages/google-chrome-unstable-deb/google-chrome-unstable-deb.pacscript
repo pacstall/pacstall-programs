@@ -6,4 +6,4 @@ url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${vers
 description="The web browser built by Google - Dev channel"
 hash="d7b0d4cb4bc2665c426a0017059be8409d49853a450b8d56866f1fbddaf08620"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
-repology=("project: google-chrome" "repo: Gentoo")
+repology=("project: google-chrome")
