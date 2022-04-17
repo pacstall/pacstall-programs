@@ -20,6 +20,6 @@ build() {
 }
 
 install() {
-    cd ${name}-${version}
+    cd "${name}-${version}"
     sudo make DESTDIR="${STOWDIR}/${name}" install
 }
