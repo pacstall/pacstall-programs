@@ -20,6 +20,9 @@ build() {
 }
 
 install() {
+    # Extract tgz
+    tar zxvf NoiseTorch_x64.tgz
+
     # Get services from AUR and install
     wget -q "https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pipewire.service?h=noisetorch-bin" -O noisetorch-pipewire.service
     wget -q "https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pulse.service?h=noisetorch-bin" -O noisetorch-pulse.service
