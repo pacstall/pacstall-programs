@@ -259,5 +259,3 @@ postinst() {
   sudo chown -R root:games "${pkgdir}/var/games"
 }
 # vim:set ft=sh ts=2 sw=2 et:
-
-# Just testing
