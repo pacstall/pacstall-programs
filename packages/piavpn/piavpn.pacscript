@@ -10,6 +10,12 @@ maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
   sudo groupadd ${name}
 	sudo groupadd piahnsd
+  sudo mkdir -p ${STOWDIR}/${name}/etc/NetworkManager/conf.d
+  sudo mkdir -p ${STOWDIR}/${name}
+  sudo mkdir -p ${STOWDIR}/${name}/bin
+  sudo mkdir -p ${STOWDIR}/${name}/usr/lib/systemd/system
+  sudo mkdir -p ${STOWDIR}/${name}/usr/share/applications
+  sudo mkdir -p ${STOWDIR}/$name/usr/share/icons/hicolor/1024x1024/apps
 }
 
 build() {
@@ -19,16 +25,16 @@ build() {
 install() {
   chmod +x pia-linux-${version}.run
   ./pia-linux-${version}.run --noexec --target "${SRCDIR}/${name}"
-  sudo install -Dm755 "piafiles" "${STOWDIR}/${name}"
-  sudo install -Dm755 "installfiles" "${STOWDIR}/${name}/bin"
+  cd ${SRCDIR}/${name}
+  sudo cp -a piafiles/* ${STOWDIR}/${name}
+  sudo cp installfiles/*.sh ${STOWDIR}/${name}/bin
   sudo chmod +x ${STOWDIR}/${name}/bin/*.sh
   sudo setcap 'cap_net_bind_service=+ep' ${STOWDIR}/${name}/bin/pia-unbound
   sudo rm ${STOWDIR}/${name}/bin/install-wireguard.sh
 	sudo rm ${STOWDIR}/${name}/bin/pia-uninstall.sh
-  sudo install -Dm644 "installfiles/piavpn.service" "${STOWDIR}/${name}/usr/lib/systemd/system/${name}.service"
-  sudo install -Dm644 "installfiles/piavpn.desktop" "${STOWDIR}/${name}/usr/share/applications"
-  sudo install -Dm644 "installfiles/app-icon.png" "${STOWDIR}/$name/usr/share/icons/hicolor/1024x1024/apps/pia.png"
-	sudo mkdir -p ${STOWDIR}/${name}/etc/NetworkManager/conf.d
+  sudo cp installfiles/piavpn.service ${STOWDIR}/${name}/usr/lib/systemd/system/${name}.service
+  sudo cp installfiles/piavpn.desktop ${STOWDIR}/${name}/usr/share/applications
+  sudo cp installfiles/app-icon.png ${STOWDIR}/$name/usr/share/icons/hicolor/1024x1024/apps/pia.png
 	sudo echo -e "[keyfile]
 unmanaged-devices=interface-name:wgpia*" > ${STOWDIR}/${name}/etc/NetworkManager/conf.d/50-wgpia.conf
   sudo sed -i '/^After/s/syslog.target //' ${STOWDIR}/${name}/usr/lib/systemd/system/${name}.service
