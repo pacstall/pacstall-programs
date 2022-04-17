@@ -1,7 +1,9 @@
 name="ivpn-deb"
-version="3.5.1"
-url="https://repo.ivpn.net/stable/pool/ivpn_${version}_amd64.deb"
 gives="ivpn"
+replace="${gives}"
+repology=("project: ${gives}")
+version="3.7.0"
+url="https://repo.${gives}.net/stable/pool/${gives}_${version}_amd64.deb"
 description="Official IVPN Desktop app - Base Package"
-hash="34937d312a6e69bc2f72bf92d3b791dff222157941e0b616578be2cb5410c5eb"
+hash="7603e2c2edd2355068f34afceaf7d3ef6f0bfff2310b341faa8bd16933f077f6"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

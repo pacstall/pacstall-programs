@@ -1,10 +1,10 @@
 name=an-anime-game-launcher-bin
 pkgname=an-anime-game-launcher
-version=2.2.2
+version=2.3.1
 description="An Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
 url="https://aagl.launcher.moe/dl/an_anime_game_launcher_${version//./}.tar.xz"
-hash="8b741b767cf297f645aacaf1055684bd86b32bb533cde3acfaad67eb3a29b35b"
+hash="d3f780fb146aec6c1a922737c5b9538ba467550217944c5919dea3360d4407dc"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
