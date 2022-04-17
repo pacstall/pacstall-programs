@@ -12,8 +12,6 @@ defaults:
     shell: bash
 jobs:
   install-package:
-    needs: detect-changes
-    if: needs.succeed-if-no-changes.outputs.status == 'failure'
     strategy:
       matrix:
         OS: ["ubuntu:latest", "ubuntu:devel", "ubuntu:rolling", "debian:stable", "debian:testing", "debian:unstable"]
