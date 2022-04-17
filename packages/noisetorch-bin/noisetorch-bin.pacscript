@@ -20,10 +20,10 @@ build() {
 }
 
 install() {
-    # Get icon from github and install it
+    # Get services from AUR and install
     wget -q "https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pipewire.service?h=noisetorch-bin" -O noisetorch-pipewire.service
     wget -q "https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pulse.service?h=noisetorch-bin" -O noisetorch-pulse.service
-    sudo install -D -m644 "noisetorch-{pulse,pipewire}.service" -t "${STOWDIR}/${name}/usr/lib/systemd/user/"
+    sudo install -D -m644 noisetorch-{pulse,pipewire}.service -t "${STOWDIR}/${name}/usr/lib/systemd/user/"
 
     # Install the rest of the app
     sudo install -D -m755 "${SRCDIR}/.local/bin/noisetorch" "${STOWDIR}/${name}/usr/bin/noisetorch"
