@@ -30,3 +30,7 @@ install() {
     sudo ln -s "/usr/share/pycharm/bin/pycharm.sh" "/usr/bin/pycharm"
   sudo install -Dm 644 pycharm.desktop -t "${STOWDIR}/${name}"/usr/share/applications/
 }
+
+removescript() {
+  sudo rm -f /usr/bin/pycharm
+}
