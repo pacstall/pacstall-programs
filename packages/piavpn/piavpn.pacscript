@@ -15,7 +15,7 @@ prepare() {
   sudo mkdir -p ${STOWDIR}/${name}/bin
   sudo mkdir -p ${STOWDIR}/${name}/usr/lib/systemd/system
   sudo mkdir -p ${STOWDIR}/${name}/usr/share/applications
-  sudo mkdir -p ${STOWDIR}/$name/usr/share/icons/hicolor/1024x1024/apps
+  sudo mkdir -p ${STOWDIR}/${name}/usr/share/icons/hicolor/1024x1024/apps
 }
 
 build() {
@@ -32,9 +32,9 @@ install() {
   sudo setcap 'cap_net_bind_service=+ep' ${STOWDIR}/${name}/bin/pia-unbound
   sudo rm ${STOWDIR}/${name}/bin/install-wireguard.sh
 	sudo rm ${STOWDIR}/${name}/bin/pia-uninstall.sh
-  sudo cp installfiles/piavpn.service ${STOWDIR}/${name}/usr/lib/systemd/system/${name}.service
-  sudo cp installfiles/piavpn.desktop ${STOWDIR}/${name}/usr/share/applications
-  sudo cp installfiles/app-icon.png ${STOWDIR}/$name/usr/share/icons/hicolor/1024x1024/apps/pia.png
+  sudo cp installfiles/${name}.service ${STOWDIR}/${name}/usr/lib/systemd/system/${name}.service
+  sudo cp installfiles/${name}.desktop ${STOWDIR}/${name}/usr/share/applications
+  sudo cp installfiles/app-icon.png ${STOWDIR}/${name}/usr/share/icons/hicolor/1024x1024/apps/pia.png
 	sudo echo -e "[keyfile]
 unmanaged-devices=interface-name:wgpia*" > ${STOWDIR}/${name}/etc/NetworkManager/conf.d/50-wgpia.conf
   sudo sed -i '/^After/s/syslog.target //' ${STOWDIR}/${name}/usr/lib/systemd/system/${name}.service
