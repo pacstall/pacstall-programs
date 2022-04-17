@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Icon=/usr/share/pixmaps/pycharm.png
+Icon=pycharm
 Name=PyCharm Community Edition
 Exec=pycharm
 Path=/usr/share/pycharm/bin
