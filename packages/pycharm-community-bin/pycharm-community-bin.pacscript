@@ -28,7 +28,7 @@ install() {
   sudo cp -dr --no-preserve='ownership' bin jbr lib plugins "${STOWDIR}/${name}/usr/share/pycharm/"
   sudo cp -dr --no-preserve='ownership' license "${STOWDIR}/${name}/usr/share/licenses/pycharm/"
   sudo cp -dr "${STOWDIR}/${name}/usr/share/pycharm/bin/pycharm.png" "${STOWDIR}/${name}/usr/share/pixmaps/"
-  if [ "$(which pycharm)" == 1 ]; then # pycharm is already symlinked
+  if [[ "$(command -v pycharm)" == 1 ]]; then # pycharm is already symlinked
     sudo ln -s "/usr/share/pycharm/bin/pycharm.sh" "/usr/bin/pycharm"
   fi
   sudo install -Dm 644 pycharm.desktop -t "${STOWDIR}/${name}"/usr/share/applications/
