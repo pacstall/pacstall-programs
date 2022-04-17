@@ -11,7 +11,23 @@ defaults:
   run:
     shell: bash
 jobs:
+  succeed-if-no-changes:
+    runs-on: ubuntu-latest
+    steps:
+      - id: checkout
+        uses: actions/checkout@v3
+      - id: files
+        uses: jitterbit/get-changed-files@v1
+      - name: Fail if any changes
+        run: |
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} == *".pacscript" ]]; then
+              exit 1
+            fi
+          done
   install-package:
+    needs: detect-changes
+    if: needs.succeed-if-no-changes.outputs.status == 'failure'
     strategy:
       matrix:
         OS: ["ubuntu:latest", "ubuntu:devel", "ubuntu:rolling", "debian:stable", "debian:testing", "debian:unstable"]
