@@ -20,6 +20,5 @@ build() {
 }
 
 install() {
-    cd "${SRCDIR}/${name}-${version}"
     sudo make DESTDIR="${STOWDIR}/${name}" install
 }
