@@ -26,14 +26,14 @@ jobs:
         LOGNAME: dio
         DEBIAN_FRONTEND: noninteractive
     steps:
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
-        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
       - name: Install System Utilities
         run: |
           apt-get update
           apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration -y
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
       - id: checkout
         uses: actions/checkout@v3
       - id: files
@@ -49,7 +49,6 @@ jobs:
           done
       - name: Setup Test User
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           chown -R $USER /tmp
