@@ -1,7 +1,7 @@
 name="discord-canary"
 repology=("project: discord-canary")
 version="0.0.135"
-maintainer="aranym <aranym1@pm.me>"
+maintainer="Warofzen <warofzen1@pm.me>"
 url="https://dl-canary.discordapp.net/apps/linux/${version}/${name}-${version}.tar.gz"
 depends="libc6 libasound2 libatomic1 libgconf-2-4 libnotify4 libnspr4 libnss3 libstdc++6 libxss1 libxtst6 libayatana-appindicator1 libc++1"
 description="Chat for Communities and Friends - Unstable"
