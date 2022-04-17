@@ -27,6 +27,6 @@ install() {
   sudo cp -dr --no-preserve='ownership' bin jbr lib plugins "${STOWDIR}/${name}/usr/share/pycharm/"
   sudo cp -dr --no-preserve='ownership' license "${STOWDIR}/${name}/usr/share/licenses/pycharm/"
   sudo cp -dr "${STOWDIR}/${name}/usr/share/pycharm/bin/pycharm.png" "${STOWDIR}/${name}/usr/share/pixmaps/"
-  sudo ln -s "/usr/share/pycharm/bin/pycharm.sh" "/usr/bin/pycharm"
+    sudo ln -s "/usr/share/pycharm/bin/pycharm.sh" "/usr/bin/pycharm"
   sudo install -Dm 644 pycharm.desktop -t "${STOWDIR}/${name}"/usr/share/applications/
 }
