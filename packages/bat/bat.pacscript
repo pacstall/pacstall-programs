@@ -23,5 +23,3 @@ install() {
         sudo mkdir -p /usr/src/pacstall/${name}/usr/local/share/man/man1
         gzip -c target/release/build/bat-*/out/assets/manual/bat.1 | sudo tee /usr/src/pacstall/${name}/usr/local/share/man/man1/${name}.1.gz > /dev/null
 }
-
-# Just testing
