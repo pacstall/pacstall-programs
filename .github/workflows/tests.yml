@@ -29,6 +29,11 @@ jobs:
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
+      - name: Install System Utilities
+        run: |
+          apt-get update
+          apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration -y
+          ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - id: checkout
         uses: actions/checkout@v3
       - id: files
@@ -42,12 +47,6 @@ jobs:
               break
             fi
           done
-      - name: Install System Utilities
-        run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
-          apt-get update
-          apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration -y
-          ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
         run: |
           [[ -f .no-pacscript-changes ]] && exit ||:
