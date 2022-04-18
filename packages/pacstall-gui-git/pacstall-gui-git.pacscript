@@ -11,7 +11,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-  true
+  sudo mkdir -p "/usr/src/pacstall/pacstall-gui-git/usr/bin" "/usr/src/pacstall/pacstall-gui-git/usr/lib/pacstall-gui"
 }
 
 build() {
