@@ -25,5 +25,5 @@ install() {
 }
 
 postinst() {
-          sudo chmod -R a+w /usr/lib/pacstall-gui
+          sudo chmod -R a+w /usr/src/pacstall/pacstall-gui-git/usr/lib/pacstall-gui
 }
