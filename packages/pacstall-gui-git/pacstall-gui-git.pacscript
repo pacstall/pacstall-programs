@@ -1,6 +1,6 @@
 name="pacstall-gui-git"
 pacdeps=("yad")
-depends="sed adwaita-icon-theme-full"
+depends="sed adwaita-icon-theme"
 url="https://github.com/cat-master21/pacstall-gui.git"
 breaks="${gives} ${gives}-bin ${gives}-deb"
 gives="pacstall-gui"
