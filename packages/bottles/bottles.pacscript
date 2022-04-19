@@ -22,7 +22,7 @@ prepare() {
 build() {
     # remove icons from build as it makes stow angry due to it being symlinked
     sudo sed -ie '43,66d' data/meson.build
-    
+
     sudo meson --prefix='/usr' build
     sudo ninja -C build
 }
@@ -31,11 +31,11 @@ install() {
     # install icons manually via copying
     sudo mkdir -p ${STOWDIR}/${name}/usr/share/icons/hicolor/48/apps
     sudo cp data/icons/hicolor/48/apps/*.svg "${STOWDIR}/${name}/usr/share/icons/hicolor/48/apps"
-    
+
     sudo mkdir -p ${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps
     sudo cp data/icons/hicolor/scalable/apps/*.svg "${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps"
-    
+
     # Install bottles
     sudo DESTDIR="${STOWDIR}/${name}" ninja -C build install
-    
+
 }
