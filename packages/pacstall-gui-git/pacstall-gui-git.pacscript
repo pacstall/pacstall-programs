@@ -13,7 +13,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-  sudo mkdir -p "/usr/src/pacstall/pacstall-gui-git/usr/bin" "/usr/src/pacstall/pacstall-gui-git/usr/lib/pacstall-gui"
+  sudo mkdir -p "${STOWDIR}/${name}/usr/bin" "${STOWDIR}/${name}/usr/lib/pacstall-gui"
 }
 
 build() {
@@ -21,11 +21,11 @@ build() {
 }
 
 install() {
-  sudo install -Dm755 pacstall-gui /usr/src/pacstall/pacstall-gui-git/usr/bin/pacstall-gui
-  sudo mv -f ./settings.sh ./disable-root-check.diff /usr/src/pacstall/pacstall-gui-git/usr/lib/pacstall-gui
-  sudo install -Dm755 LICENSE /usr/src/pacstall/pacstall-gui-git/usr/share/licenses/pacstall-gui/LICENSE
+  sudo install -Dm755 pacstall-gui "${STOWDIR}/${name}/usr/bin/pacstall-gui"
+  sudo mv -f ./settings.sh ./disable-root-check.diff "${STOWDIR}/${name}/usr/lib/pacstall-gui"
+  sudo install -Dm755 LICENSE "${STOWDIR}/${name}/usr/share/licenses/pacstall-gui/LICENSE"
 }
 
 postinst() {
-          sudo chmod -R a+w /usr/src/pacstall/pacstall-gui-git/usr/lib/pacstall-gui
+          sudo chmod -R a+w "${STOWDIR}/${name}/usr/lib/pacstall-gui"
 }
