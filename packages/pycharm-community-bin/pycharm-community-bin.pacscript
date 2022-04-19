@@ -7,13 +7,13 @@ maintainer="Obsidian <emil-aarestrup@outlook.dk>"
 description="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 url="https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz"
 hash="35d857df0ac4bd76caba60ac329c9183594be142094d0592f2afa40534be85eb"
-desktop_file_sum="0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04"
+desktop_file_sum="8caa5e608ad54445e447f4f2f14d250209afc590d3b2b1df53a9bc38e1806e7f"
 
 prepare() {
   #wget -qO "pycharm.desktop" "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/pycharm.desktop"
   wget -qO "pycharm.desktop" "https://raw.githubusercontent.com/ObsidianPresidium/pacstall-programs/master/packages/pycharm-community-bin/pycharm.desktop"
   if [[ "$(sha256sum pycharm.desktop | cut -d' ' -f 1)" != "${desktop_file_sum}" ]]; then
-    fancy_message error "Checksum for PyCharm.desktop failed"
+    fancy_message error "Checksum for pycharm.desktop failed"
     return 1
   fi
 }
