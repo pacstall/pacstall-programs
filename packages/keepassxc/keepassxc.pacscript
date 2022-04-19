@@ -28,5 +28,5 @@ build() {
 }
 
 install() {
-    cmake --build build --target install -- DESTDIR="${STOWDIR}/${name}"
+    sudo cmake --build build --target install -- DESTDIR="${STOWDIR}/${name}"
 }
