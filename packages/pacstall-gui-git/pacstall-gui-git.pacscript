@@ -1,12 +1,11 @@
 name="pacstall-gui-git"
 pacdeps=("yad")
-depends="sed adwaita-icon-theme"
+depends="sed adwaita-icon-theme policykit-1"
 url="https://github.com/cat-master21/pacstall-gui.git"
 breaks="${gives} ${gives}-bin ${gives}-deb"
 gives="pacstall-gui"
 description="A gui for Pacstall written in bash."
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
-
 pkgver() {
   git ls-remote "${url}" master | cut -f1
 }
