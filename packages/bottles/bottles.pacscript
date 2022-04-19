@@ -21,7 +21,8 @@ prepare() {
 
 build() {
     # remove icons from build as it makes stow angry due to it being symlinked
-    sudo sed -ie '43,66d' data/meson.build
+    sudo sed -i '43,66d' data/meson.build
+    sudo sed -i "/dependency('libhandy-1', version: '>= 1.5')/c\dependency('libhandy-1', version: '>= 1.2')" src/meson.build
 
     sudo meson --prefix='/usr' build
     sudo ninja -C build
