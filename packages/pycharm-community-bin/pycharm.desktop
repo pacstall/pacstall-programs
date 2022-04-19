@@ -6,4 +6,4 @@ Exec=pycharm
 Path=/usr/share/pycharm/bin
 Terminal=false
 Hidden=false
-Categories=Development
+Categories=IDE;Development
