@@ -1,4 +1,3 @@
-#!/bin/bash
 name="pycharm-community-bin"
 version="2022.1"
 pkgname="pycharm-community"
