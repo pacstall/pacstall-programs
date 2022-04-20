@@ -12,7 +12,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-  sudo mkdir -p "${STOWDIR}/${name}/usr/bin" "${STOWDIR}/${name}/usr/lib/pacstall-gui"
+  sudo mkdir -p "${STOWDIR}/${name}/usr/bin" "${STOWDIR}/${name}/usr/lib/pacstall-gui" "${STOWDIR}/${name}/usr/share/applications"
 }
 
 build() {
