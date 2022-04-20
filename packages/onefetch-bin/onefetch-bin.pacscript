@@ -1,10 +1,10 @@
 name="onfetch-bin"
 pkgname="onefetch"
-version="2.9.1"
-url="https://github.com/o2sh/onefetch/releases/download/v2.9.1/onefetch-linux.tar.gz"
+version="2.12.0"
+url="https://github.com/o2sh/onefetch/releases/download/v${version}/onefetch-linux.tar.gz"
 description="Git repository summary on your terminal"
 gives="onefetch"
-hash="f2881da9a96778bfa8ce6a5df0151a07be8012b1828e8262a1f7db95f70463dc"
+hash="fa5e8eb59d1175b435140274fa67693cf838b7f33c454509be373b45a8085a18"
 
 prepare() {
     true

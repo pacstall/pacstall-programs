@@ -93,6 +93,7 @@ gitkraken-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
 go-bin
+gomuks-deb
 google-chrome-beta-deb
 google-chrome-deb
 google-chrome-unstable-deb
@@ -114,6 +115,7 @@ insync-deb
 ivpn-deb
 ivpn-ui-deb
 jetbrains-toolbox-bin
+keepassxc
 kvantum
 kxstudio-repos-deb
 lagrange
@@ -129,7 +131,7 @@ lrz-syncshare-deb
 lsd-deb
 lutris-deb
 lyrebird-git
-lyx-common-deb
+lyx
 maitreya8-deb
 makedeb-deb
 mangohud
@@ -152,6 +154,7 @@ neovim
 neovim-git
 nodejs-lts-deb
 nofetch
+noisetorch-bin
 notion-git
 nowpm
 nyxt-deb
@@ -171,8 +174,10 @@ opera-deb
 opera-developer-deb
 pacget-git
 paconvert-git
+pacstall-gui-git
 panagement
 paper-icon-theme
+papirus-icon-theme
 pdf-mix-tool-git
 pdfmm-git
 pfetch-bin
@@ -184,6 +189,8 @@ polybar
 pomatez-deb
 popsicle
 protonmail-bridge-deb
+protonvpn-cli
+protonvpn-nm-lib
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-git
@@ -249,7 +256,6 @@ webapp-manager-deb
 windscribe-gui-deb
 windscribe-legacy-cli-deb
 wine-staging-git
-wine64
 yabridge
 yad
 yafetch-git
