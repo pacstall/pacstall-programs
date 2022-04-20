@@ -23,8 +23,10 @@ install() {
   sudo install -Dm755 pacstall-gui "${STOWDIR}/${name}/usr/bin/pacstall-gui"
   sudo mv -f ./settings.sh ./disable-root-check.diff "${STOWDIR}/${name}/usr/lib/pacstall-gui"
   sudo install -Dm755 LICENSE "${STOWDIR}/${name}/usr/share/licenses/pacstall-gui/LICENSE"
+  sudo mv -f ./pacstall-gui.desktop "${STOWDIR}/${name}/usr/share/applications"
 }
 
 postinst() {
           sudo chmod -R a+w "${STOWDIR}/${name}/usr/lib/pacstall-gui"
+          sudo update-desktop-database -q
 }
