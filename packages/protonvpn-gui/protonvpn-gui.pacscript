@@ -1,6 +1,6 @@
 name="protonvpn-gui"
 gives="protonvpn"
-breaks="${name}-git"
+breaks="${name}-git ${name}-bin"
 replace="${name}"
 repology=("project: ${name}")
 version="1.8.0"
