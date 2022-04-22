@@ -1,6 +1,6 @@
 name="pacstall-gui-git"
 pacdeps=("yad")
-depends="sed adwaita-icon-theme policykit-1"
+depends="sed adwaita-icon-theme policykit-1 desktop-file-utils"
 url="https://github.com/cat-master21/pacstall-gui.git"
 breaks="${gives} ${gives}-bin ${gives}-deb"
 gives="pacstall-gui"
@@ -12,7 +12,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-  sudo mkdir -p "${STOWDIR}/${name}/usr/bin" "${STOWDIR}/${name}/usr/lib/pacstall-gui"
+  sudo mkdir -p "${STOWDIR}/${name}/usr/bin" "${STOWDIR}/${name}/usr/lib/pacstall-gui" "${STOWDIR}/${name}/usr/share/applications"
 }
 
 build() {
@@ -23,8 +23,10 @@ install() {
   sudo install -Dm755 pacstall-gui "${STOWDIR}/${name}/usr/bin/pacstall-gui"
   sudo mv -f ./settings.sh ./disable-root-check.diff "${STOWDIR}/${name}/usr/lib/pacstall-gui"
   sudo install -Dm755 LICENSE "${STOWDIR}/${name}/usr/share/licenses/pacstall-gui/LICENSE"
+  sudo mv -f ./pacstall-gui.desktop "${STOWDIR}/${name}/usr/share/applications"
 }
 
 postinst() {
           sudo chmod -R a+w "${STOWDIR}/${name}/usr/lib/pacstall-gui"
+          sudo update-desktop-database -q
 }
