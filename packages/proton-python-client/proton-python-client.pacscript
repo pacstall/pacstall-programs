@@ -1,5 +1,5 @@
 name="proton-python-client"
-breaks="${name}-git"
+breaks="${name}-git ${name}-bin"
 replace="${name}"
 repology=("project: ${name}")
 version="0.7.1"
