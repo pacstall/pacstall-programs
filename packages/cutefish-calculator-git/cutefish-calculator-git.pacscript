@@ -8,7 +8,7 @@ depends="fishui libcutefish"
 description="CutefishOS Calculator."
 
 pkgver() {
-    git ls-remote "${url}" main | cut -f1
+    git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

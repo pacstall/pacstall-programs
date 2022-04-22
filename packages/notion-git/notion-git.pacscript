@@ -7,7 +7,7 @@ depends="build-essential lua5.1 liblua5.1-0-dev libx11-dev libxext-dev libsm-dev
 gives="notion"
 breaks="notion"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

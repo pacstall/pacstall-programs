@@ -7,7 +7,7 @@ gives="st"
 description="Distrotube's st build"
 breaks="st"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

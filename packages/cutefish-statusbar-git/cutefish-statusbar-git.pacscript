@@ -8,7 +8,7 @@ depends="fishui libcutefish libdbusmenu-qt5-dev libqt5svg5-dev"
 description="Top status bar of CutefishOS"
 
 pkgver() {
-    git ls-remote "${url}" main | cut -f1
+    git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
