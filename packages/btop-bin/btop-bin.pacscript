@@ -8,7 +8,7 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="btop-bin"
 pkgname="btop"
-version="1.2.5"
+version="1.2.6"
 pkgdir="${STOWDIR}/${name}"
 url="https://github.com/aristocratos/btop/releases/download/v${version}/btop-x86_64-linux-musl.tbz"
 description="A monitor of system resourecs, bpytop ported to C++"
