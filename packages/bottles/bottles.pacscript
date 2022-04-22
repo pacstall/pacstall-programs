@@ -1,7 +1,7 @@
 name="bottles"
 version="2022.4.14"
 description="Easily manage wine and proton prefix"
-repology=("project: bottles" "repo: aur")
+repology=("project: bottles")
 url="https://github.com/bottlesdevs/Bottles/archive/${version}-trento-1.tar.gz"
 hash="b81cd8333b6e9b24daf3ef6911f04467846b3f74aa0b8475ca065492df245d9d"
 maintainer="Marie Piontek <marie@kaifa.ch>"
