@@ -30,10 +30,10 @@ build() {
 
 install() {
     # install icons manually via copying
-    sudo mkdir -p ${STOWDIR}/${name}/usr/share/icons/hicolor/48/apps
+    sudo mkdir -p "${STOWDIR}/${name}/usr/share/icons/hicolor/48/apps"
     sudo cp data/icons/hicolor/48/apps/*.svg "${STOWDIR}/${name}/usr/share/icons/hicolor/48/apps"
 
-    sudo mkdir -p ${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps
+    sudo mkdir -p "${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps"
     sudo cp data/icons/hicolor/scalable/apps/*.svg "${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps"
 
     # Install bottles
