@@ -15,7 +15,7 @@ build_depends="scdoc wayland-protocols libcairo-dev libpango1.0-dev libxkbcommon
 breaks="${pkgname}-bin ${pkgname}"
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1
+  git ls-remote "${url}" master | cut -f1 -c1-8
 }
 version="$(pkgver)"
 
