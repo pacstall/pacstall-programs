@@ -8,7 +8,7 @@ depends="libkf5config-dev libkdecorations2-dev libkf5guiaddons-dev libkf5coreadd
 description="CutefishOS KWin Plugins."
 
 pkgver() {
-    git ls-remote "${url}" main | cut -f1
+    git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

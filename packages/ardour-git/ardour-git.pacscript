@@ -15,7 +15,7 @@ breaks="ardour, ardour-data"
 url="https://github.com/Ardour/ardour.git"
 # patch="https://github.com/archlinux/svntogit-community/blob/packages/ardour/trunk/ardour-6.2-vendor_qm-dsp.patch"
 pkgver() {
-    git ls-remote "https://github.com/Ardour/ardour.git" master | head -n1 | cut -f1
+    git ls-remote "https://github.com/Ardour/ardour.git" master | head -n1 | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

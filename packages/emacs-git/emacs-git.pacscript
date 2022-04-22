@@ -60,7 +60,7 @@ breaks="${pkgname} ${pkgname}-nox"
 replace="${breaks}"
 url="https://github.com/emacs-mirror/emacs.git"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

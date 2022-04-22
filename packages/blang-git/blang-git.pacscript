@@ -4,7 +4,7 @@ build_depends="python3 python3-pip python3-minimal"
 depends="python3-minimal"
 description="blang is a object oriented programming language."
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
