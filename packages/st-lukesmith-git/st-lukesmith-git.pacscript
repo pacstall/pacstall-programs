@@ -7,7 +7,7 @@ depends="fontconfig"
 gives="st"
 
 pkgver()  {
-  git ls-remote https://github.com/LukeSmithxyz/st.git master | cut -f1
+  git ls-remote https://github.com/LukeSmithxyz/st.git master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 prepare() {

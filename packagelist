@@ -20,6 +20,7 @@ bitwarden-deb
 bitwig-studio-3-deb
 bitwig-studio-deb
 blang-git
+bottles
 bpytop-git
 brave-browser-beta-deb
 brave-browser-deb
@@ -90,6 +91,7 @@ gitfiend-deb
 github-cli-deb
 github-desktop-deb
 gitkraken-deb
+glow-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
 go-bin
@@ -148,6 +150,7 @@ mullvad-vpn-beta-deb
 mullvad-vpn-deb
 mutt-wizard
 nala-deb
+nala-legacy-deb
 nano
 neofetch
 neovim
@@ -188,8 +191,10 @@ plexmediaserver-deb
 polybar
 pomatez-deb
 popsicle
+proton-python-client
 protonmail-bridge-deb
 protonvpn-cli
+protonvpn-gui
 protonvpn-nm-lib
 qogir-gtk-theme-bin
 qogir-icon-theme-bin

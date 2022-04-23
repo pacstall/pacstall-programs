@@ -6,7 +6,7 @@ description="Task manager with Todoist support designed for GNU/Linux"
 maintainer="echometer <guacamolek@yandex.com>"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

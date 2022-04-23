@@ -1,10 +1,10 @@
 name="tidal-hifi-bin"
 pkgname="tidal-hifi"
-version="2.8.0"
+version="3.0.0"
 description="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
 repology=("project: tidal-hifi" "visiblename: tidal-hifi-bin")
 url="https://github.com/Mastermindzh/tidal-hifi/releases/download/${version}/tidal-hifi-${version}.tar.gz"
-hash="cfcbdbcbec8798ef1fc1c0925b966c457eec66480ea0921f22bb6af74dee9506"
+hash="9d2765d9f84d75acebdd76020a1fb91360eda2c92ea3303775e0afe45ca46f04"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"

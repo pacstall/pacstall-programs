@@ -8,7 +8,7 @@ depends="libkf5windowsystem5 libxcb-icccm4-dev qtquickcontrols2-5-dev qtbase5-pr
 description="FishUI is a GUI library based on QQC2 (Qt Quick Controls 2), every Cutefish application uses it."
 
 pkgver() {
-  git ls-remote "${url}" main | cut -f1
+  git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
