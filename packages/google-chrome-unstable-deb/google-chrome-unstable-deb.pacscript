@@ -1,9 +1,9 @@
 name="google-chrome-unstable-deb"
 gives="google-chrome-unstable"
 breaks="google-chrome-deb google-chrome-beta-deb"
-version="102.0.4997.0"
+version="102.0.5005.12"
 url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}-1_amd64.deb"
 description="The web browser built by Google - Dev channel"
-hash="d7b0d4cb4bc2665c426a0017059be8409d49853a450b8d56866f1fbddaf08620"
+hash="fef03c37ed3dee543ea255b9536d95559690cd4cff3633787b6bce8892328541"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 repology=("project: google-chrome")
