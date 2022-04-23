@@ -9,6 +9,7 @@ gives="gnome-tweaks"
 breaks="${gives} ${gives}-bin ${gives}-git"
 description="Graphical interface for advanced GNOME 3 settings"
 hash="59d9597840335b0d71afd287bec09260e172ff89e14d6d12c3416f23557974ee"
+repology=("project: gnome-tweaks")
 
 prepare() {
           meson builddir
