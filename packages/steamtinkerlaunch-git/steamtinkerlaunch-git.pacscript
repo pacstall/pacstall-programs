@@ -17,7 +17,7 @@ maintainer="echometerain <echometer@disroot.org>"
 pacdeps="yad"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

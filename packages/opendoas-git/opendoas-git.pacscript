@@ -15,7 +15,7 @@ build_depends="bison libpam0g-dev"
 breaks="${pkgname} ${pkgname}-bin"
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

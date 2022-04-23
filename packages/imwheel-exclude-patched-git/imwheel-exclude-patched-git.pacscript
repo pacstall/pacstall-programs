@@ -4,7 +4,7 @@ build_depends="libx11-dev libxtst-dev libxmu-dev"
 breaks="imwheel"
 description="This project is a fork of imwheel's final official release containing only one change — a patch that repairs imwheel's broken @Exclude command"
 pkgver() {
-  git ls-remote "${url}" refs/heads/master | cut -f1
+  git ls-remote "${url}" refs/heads/master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

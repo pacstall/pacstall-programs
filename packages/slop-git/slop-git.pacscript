@@ -8,7 +8,7 @@ breaks="${pkgname}-bin ${pkgname}"
 maintainer="Henryws <hwengerstickel@pm.me>"
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
