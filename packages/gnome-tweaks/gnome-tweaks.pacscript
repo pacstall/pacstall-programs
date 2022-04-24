@@ -8,7 +8,7 @@ depends="gsettings-desktop-schemas python3 gnome-settings-daemon gnome-shell-com
 gives="gnome-tweaks"
 breaks="${gives} ${gives}-bin ${gives}-git"
 description="Graphical interface for advanced GNOME 3 settings"
-hash="36c5fce161f5d8df4b206427b838398a9f4cfa88cc66098e374e92fbd7d665cd"
+hash="59d9597840335b0d71afd287bec09260e172ff89e14d6d12c3416f23557974ee"
 repology=("project: gnome-tweaks")
 
 prepare() {
