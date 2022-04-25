@@ -29,7 +29,7 @@ jobs:
       - name: Install System Utilities
         run: |
           apt-get update
-          apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration -y
+          apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
