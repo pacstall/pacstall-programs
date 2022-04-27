@@ -158,6 +158,7 @@ neovim-git
 nodejs-lts-deb
 nofetch
 noisetorch-bin
+nomachine-deb
 notion-git
 nowpm
 nyxt-deb
@@ -196,6 +197,7 @@ protonmail-bridge-deb
 protonvpn-cli
 protonvpn-gui
 protonvpn-nm-lib
+pycharm-community-bin
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-git
