@@ -1,4 +1,4 @@
-name="minecraft-pi-reborn-bin"
+name="minecraft-pi-reborn-app"
 pkgname="minecraft-pi-reborn"
 version="2.3.5"
 gives="${pkgname}"
