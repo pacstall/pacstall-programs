@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=pycharm
+Name=PyCharm Community Edition
+Exec=pycharm
+Path=/usr/share/pycharm/bin
+Terminal=false
+Hidden=false
+Categories=IDE;Development
