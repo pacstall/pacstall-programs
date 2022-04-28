@@ -4,6 +4,6 @@ url="https://github.com/evilsocket/opensnitch/releases/download/v${version}/pyth
 depends="qt-material"
 gives="python3-opensnitch-ui"
 description="OpenSnitch is a GNU/Linux port of the Little Snitch application firewall"
-hash="f16e698d8e9a7d1372f727b33db67f7ea5e7b14fff649906a67a1ece9fb71a60"
+hash="61fa242bb29d00f5a079d784b54c07ec267a897231023267886c5718443907eb"
 maintainer="echometerain <echometer@disroot.org>"
 repology=("project: opensnitch-ui" "repo: nix_unstable")

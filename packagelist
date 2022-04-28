@@ -144,6 +144,7 @@ microsoft-edge-stable-deb
 microsoft-prod-repo
 minecraft-launcher
 minecraft-launcher-deb
+minecraft-pi-reborn-app
 moka-icon-theme
 ms-teams-deb
 mullvad-vpn-beta-deb
@@ -265,6 +266,7 @@ wine-staging-git
 yabridge
 yad
 yafetch-git
+yandex-browser-stable-deb
 youtube-dl-git
 zentile-bin
 zotero
