@@ -1,0 +1,10 @@
+name="eddie-ui-deb"
+gives="eddie-ui"
+repology=("project: ${gives}")
+breaks="${gives}-bin ${gives}-git"
+replace="${gives}"
+version="2.21.6"
+url="https://eddie.website/repository/apt/pool/main/e/${gives}/${gives}_${version}_amd64.deb"
+description="OpenVPN/WireGuard UI with additional user-friendly features made by AirVPN"
+hash="37ef496c1851d9518a95085101ebd1d558e2305cf7f2c5a65f7c41e6f988a658"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
