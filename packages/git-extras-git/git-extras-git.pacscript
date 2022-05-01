@@ -4,7 +4,7 @@ breaks="${pkgname}-bin"
 replace="${pkgname}"
 description="GIT utilities -- repo summary, repl, changelog population, author commit percentages and more"
 url="https://github.com/tj/git-extras.git"
-depends="git"
+depends="git bsdmainutils"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 
 pkgver() {
