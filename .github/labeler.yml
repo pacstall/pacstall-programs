@@ -1,8 +1,8 @@
 version: 1
 labels:
 - label: "Update Package"
-  title: "upd(.*"
+  title: "^upd(.*"
 - label: "Package Add"
-  title: "add:.*"
+  title: "^add:.*"
 - label: "remove package"
-  title: "rm:.*"
+  title: "^rm:.*"
