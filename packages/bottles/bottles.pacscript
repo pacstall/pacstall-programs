@@ -8,7 +8,7 @@ maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks="${name} ${name}-deb ${name}-app ${name}-git com.github.mirkobrombin.bottles"
 
-depends="gir1.2-gtksource-4 libgtksourceview-4-0 libgtksourceview-4-common libgtksourceview-4-dev libgtk-3-0 hicolor-icon-theme libdconf1 libdconf-dev libhandy-1-0 libhandy-1-dev gir1.2-handy-1 gnutls-bin python3 python3-gi python-gi-dev patool p7zip-full python3-markdown python3-requests python3-yaml cabextract x11-utils libwebkit2gtk-4.0-dev libwebkit2gtk-4.0-37 libglib2.0-dev wine gettext"
+depends="gir1.2-gtksource-4 libgtksourceview-4-0 libgtksourceview-4-common libgtksourceview-4-dev libgtk-3-0 hicolor-icon-theme libdconf1 libdconf-dev libhandy-1-0 libhandy-1-dev gir1.2-handy-1 gnutls-bin python3 python-gi-dev patool p7zip-full python3-markdown python3-requests python3-yaml cabextract x11-utils libwebkit2gtk-4.0-dev libwebkit2gtk-4.0-37 libglib2.0-dev wine gettext"
 optdepends=("gamemode: Increase Performance"
 	    "libvulkan1: Add vulkan support"
 	    "libvkd3d1: Vulkan to Directx (normally installed by wine)"
