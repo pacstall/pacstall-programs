@@ -1,4 +1,5 @@
 name="maitreya8-deb"
+repology=("project: maitreya")
 pkgname="maitreya8"
 version="8.0.1"
 url="https://github.com/martin-pe/${pkgname}/releases/download/v${version}/${pkgname}_u20_${version}_amd64.deb"

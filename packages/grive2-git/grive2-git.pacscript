@@ -11,7 +11,7 @@ gives="grive2"
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

@@ -8,7 +8,7 @@ breaks="aseprite libresprite-bin libresprite-app libresprite-deb libresprite"
 gives="libresprite, aseprite"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1
+    git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

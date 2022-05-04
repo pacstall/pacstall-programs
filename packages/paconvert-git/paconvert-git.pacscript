@@ -6,7 +6,7 @@ description="Paconvert makes converting PKGBUILDS into pacscripts easier."
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 pkgdir="${STOWDIR}/${name}"
 pkgver() {
-  git ls-remote "${url}" master | cut -f1
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

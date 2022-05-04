@@ -1,7 +1,7 @@
 name="makedeb-deb"
-version="11.0.1"
+version="14.0.3"
 repology=("project: makedeb")
-url="https://proget.hunterwittenborn.com/debian-feeds/makedeb/main/makedeb/all/makedeb_all_${version}-1.deb"
-description="makedeb takes PKGBUILD files and creates Debian packages installable with APT"
-hash="cc293e534a6b38027cdfac11a2f93cf771cc0bf9a65149228ceaf11ee2d76383"
+url="https://proget.hunterwittenborn.com/debian-feeds/makedeb/main/makedeb/all/makedeb_all_${version}-stable.deb"
+description="A tool which takes PKGBUILD files and creates Debian packages installable with DPKG/APT"
+hash="3b98a98dc053d6196d10486d19387ddec71bc9196b6c499a4326003a7766fbe9"
 maintainer="Henryws <hwengerstickel@pm.me>"

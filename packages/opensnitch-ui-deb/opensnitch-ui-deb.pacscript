@@ -1,8 +1,9 @@
 name="opensnitch-ui-deb"
-version="1.5.0"
+version="1.5.1"
 url="https://github.com/evilsocket/opensnitch/releases/download/v${version}/python3-opensnitch-ui_${version}-1_all.deb"
+depends="qt-material"
 gives="python3-opensnitch-ui"
 description="OpenSnitch is a GNU/Linux port of the Little Snitch application firewall"
-hash="f997c1a3b70e8bc1b34a8f84dae85e94c5df3604094eb64781a5105705d66d65"
+hash="61fa242bb29d00f5a079d784b54c07ec267a897231023267886c5718443907eb"
 maintainer="echometerain <echometer@disroot.org>"
 repology=("project: opensnitch-ui" "repo: nix_unstable")

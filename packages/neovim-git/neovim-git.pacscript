@@ -7,7 +7,7 @@ gives="neovim"
 replace="neovim"
 breaks="neovim-bin neovim neovim-app neovim-deb"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 | head -n1
+    git ls-remote "${url}" master | head -n1 | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

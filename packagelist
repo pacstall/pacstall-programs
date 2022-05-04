@@ -20,6 +20,7 @@ bitwarden-deb
 bitwig-studio-3-deb
 bitwig-studio-deb
 blang-git
+bottles
 bpytop-git
 brave-browser-beta-deb
 brave-browser-deb
@@ -60,6 +61,7 @@ dropbox-deb
 duf-deb
 dunst
 dust-bin
+eddie-ui-deb
 electronmail-deb
 element-desktop-deb
 emacs
@@ -85,11 +87,13 @@ gcmcore-deb
 geekbench-bin
 git
 git-delta-deb
+git-extras-git
 gitblade-deb
 gitfiend-deb
 github-cli-deb
 github-desktop-deb
 gitkraken-deb
+glow-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
 go-bin
@@ -115,6 +119,7 @@ insync-deb
 ivpn-deb
 ivpn-ui-deb
 jetbrains-toolbox-bin
+keepassxc
 kvantum
 kxstudio-repos-deb
 lagrange
@@ -141,6 +146,7 @@ microsoft-edge-stable-deb
 microsoft-prod-repo
 minecraft-launcher
 minecraft-launcher-deb
+minecraft-pi-reborn-app
 moka-icon-theme
 ms-teams-deb
 mullvad-vpn-beta-deb
@@ -154,6 +160,7 @@ neovim-git
 nodejs-lts-deb
 nofetch
 noisetorch-bin
+nomachine-deb
 notion-git
 nowpm
 nyxt-deb
@@ -173,6 +180,7 @@ opera-deb
 opera-developer-deb
 pacget-git
 paconvert-git
+pacstall-gui-git
 panagement
 paper-icon-theme
 papirus-icon-theme
@@ -186,7 +194,10 @@ plexmediaserver-deb
 polybar
 pomatez-deb
 popsicle
+proton-python-client
 protonmail-bridge-deb
+protonvpn-cli
+protonvpn-gui
 protonvpn-nm-lib
 pycharm-community-bin
 qogir-gtk-theme-bin
@@ -220,6 +231,7 @@ telegram-bin
 tenacity-git
 thrive-deb
 tidal-hifi-bin
+timeshift
 tmpmail-bin
 tmux
 topgrade-bin
@@ -253,10 +265,11 @@ webapp-manager-deb
 windscribe-gui-deb
 windscribe-legacy-cli-deb
 wine-staging-git
-wine64
 yabridge
 yad
 yafetch-git
+yandex-browser-beta-deb
+yandex-browser-stable-deb
 youtube-dl-git
 zentile-bin
 zotero
