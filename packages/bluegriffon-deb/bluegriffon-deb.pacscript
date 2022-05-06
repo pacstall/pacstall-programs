@@ -1,6 +1,6 @@
 name="bluegriffon-deb"
 gives="bluegriffon"
-breaks="bluegriffon bluegriffon-git bluegriffon-bin"
+breaks="${gives} ${gives}-git ${gives}-bin"
 version="3.1"
 description="The next-gen Web and EPUB Editor based on the rendering engine of Firefox"
 hash="83eb53ec8bf9416e52b525508c03440ea0427a3eac409034a72732a7e22994e6"
