@@ -23,6 +23,27 @@ build() {
 }
 
 install() {
-        cd build || exit
         sudo make install
+
+        sudo install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/bash/task.sh" "${pkgdir}/usr/share/bash-completion/completions/task"
+        sudo install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/fish/task.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/task.fish"
+
+        sudo install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/vim/ftdetect/task.vim" "${pkgdir}/usr/share/vim/vimfiles/ftdetect/task.vim"
+        sudo install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/vim/syntax/taskdata.vim" "${pkgdir}/usr/share/vim/vimfiles/syntax/taskdata.vim"
+        sudo install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/vim/syntax/taskedit.vim" "${pkgdir}/usr/share/vim/vimfiles/syntax/taskedit.vim"
+        sudo install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/vim/syntax/taskrc.vim" "${pkgdir}/usr/share/vim/vimfiles/syntax/taskrc.vim"
+
+        sudo install -Dm644 "../LICENSE" "${pkgdir}/usr/share/licenses/task/LICENSE"
+}
+
+removescript() {
+        sudo rm -rf "/usr/share/bash-completion/completions/task"
+        sudo rm -rf "/usr/share/fish/vendor_completions.d/task.fish"
+
+        sudo rm -rf "/usr/share/vim/vimfiles/ftdetect/task.vim"
+        sudo rm -rf "/usr/share/vim/vimfiles/syntax/taskdata.vim"
+        sudo rm -rf "/usr/share/vim/vimfiles/syntax/taskedit.vim"
+        sudo rm -rf "/usr/share/vim/vimfiles/syntax/taskrc.vim"
+
+        sudo rm -rf "/usr/share/licenses/task/LICENSE"
 }
