@@ -5,7 +5,7 @@ breaks="${name}-beta ${name}-canary"
 version="2021.1.1.23"
 url="https://dl.google.com/dl/android/studio/ide-zips/${version}/${name}-${version}-linux.tar.gz"
 depends="libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386"
-description="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development."
+description="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
 hash="b37506cd8ac7a80fe30cd1724e3be5c2d970a7aa6aa3fc9ca745afe3700aabcf"
 maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
 
@@ -19,7 +19,7 @@ build() {
 
 install() {
   # Moving all android studio files to /opt
-  sudo install -d "${STOWDIR}/${name/opt/${name}"
+  sudo install -d "${STOWDIR}/${name}/opt/${name}"
   sudo cp -a bin lib jre plugins license LICENSE.txt build.txt product-info.json "${STOWDIR}/${name}/opt/${name}"
 
   # Creating a launcher in $PATH
