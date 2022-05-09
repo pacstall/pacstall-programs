@@ -9,13 +9,13 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="tmpmail-bin"
 pkgname="tmpmail"
 pkgdir="${STOWDIR}/${name}"
-version="1.2.0"
+version="1.2.1"
 description="A temporary email right from your terminal written in POSIX sh"
 url="https://github.com/sdushantha/tmpmail/archive/refs/tags/v${version}.tar.gz"
 depends="w3m curl jq"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-hash="2f943f8923afb91e66fa48ffe5e70ef8af84a067d69d4e2f543c0fd8b6c759ea"
+hash="f886c2fcb548ae5f0c3e928b91a0761c64da332dbe34289d6820e0cb034ca2fb"
 repology=("project: tmpmail")
 
 prepare() {
