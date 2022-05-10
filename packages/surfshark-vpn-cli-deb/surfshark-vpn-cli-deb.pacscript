@@ -1,0 +1,9 @@
+name="surfshark-vpn-cli-deb"
+gives="surfshark-vpn"
+repology=("project: ${gives}")
+replace="${gives}"
+version="1.1.0"
+url="https://ocean.surfshark.com/debian/pool/main/s/${gives}/${gives}_${version}_amd64.deb"
+description="Surfshark VPN client - CLI version"
+hash="5ef76e6a9f61272ff927ccd965fce4b752de1083c3c4b25aecee513515cca819"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
