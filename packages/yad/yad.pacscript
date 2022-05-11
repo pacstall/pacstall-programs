@@ -8,7 +8,7 @@ gives="yad"
 description="Yet Another Dialog"
 hash="65dbfa72a229f6cbd131470caf4f70fec98fe935a1436acb58c841fa2a8bddde"
 optdepends=("libwebkit2gtk-4.0-dev: for supporting HTML dialog"
-  "libgtksourceview-3-dev: for enabling syntax highlighting in text-info dialog"
+  "libgtksourceview-3.0-dev: for enabling syntax highlighting in text-info dialog"
   "libgspell-1-dev: for support spell checking in text fields")
 maintainer="echometerain <echometer@disroot.org>"
 repology=("project: yad")
