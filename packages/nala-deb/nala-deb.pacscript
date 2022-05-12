@@ -7,7 +7,7 @@ description="Commandline frontend for the apt package manager"
 maintainer="Blake Lee <blake@volian.org>"
 
 release="$(lsb_release -cs)"
-nala_next=('Bullseye' 'focal' 'impish')
+nala_next=('bullseye' 'focal' 'impish')
 
 if [[ " ${nala_next[*]} " =~ " ${release} " ]]; then
   url="https://deb.volian.org/volian/pool/main/n/nala-legacy/nala-legacy_${version}_amd64.deb"
