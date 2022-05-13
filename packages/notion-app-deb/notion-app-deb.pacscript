@@ -1,0 +1,13 @@
+name="notion-app-deb"
+pkgname="notion-app"
+repology=("project: notion-app")
+version="2.0.18-1"
+url="https://github.com/notion-enhancer/notion-repackaged/releases/download/v${version}/${pkgname}_${version}_amd64.deb"
+depends="libgtk-3-0 libnotify4 libnss3 libxss1 libxtst6 xdg-utils libatspi2.0-0 libuuid1 libsecret-1-0"
+breaks="notion-app-enhanced-deb"
+replace="${pkgname}"
+gives="${pkgname}"
+description="The all-in-one workspace for your notes and tasks"
+hash="7246fb0485cc6ecd5f5381d0568b29d77afff3628ee42a486f39d5af8728ff4e"
+optdepends=("libappindicator3-1: a library to allow applications to export a menu into the panel")
+maintainer="IOplus <issa20omais@outlook.com>"
