@@ -1,6 +1,6 @@
 name="notion-app-deb"
 pkgname="notion-app"
-repology=("project: notion-app")
+repology=("project: ${pkgname}")
 version="2.0.18-1"
 url="https://github.com/notion-enhancer/notion-repackaged/releases/download/v${version}/${pkgname}_${version}_amd64.deb"
 depends="libgtk-3-0 libnotify4 libnss3 libxss1 libxtst6 xdg-utils libatspi2.0-0 libuuid1 libsecret-1-0"
