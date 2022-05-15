@@ -212,6 +212,7 @@ shell-color-scripts
 shellcheck-bin
 shellharden-bin
 shfmt-bin
+signal-desktop-deb
 slack-deb
 slop-git
 smartgit
