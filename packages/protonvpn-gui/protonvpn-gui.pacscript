@@ -13,7 +13,7 @@ hash="8ee1003a284618d6f6c78f2048c15a7c179cbce7932a22156084040d4028b5c2"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
-  sudo install -Dm644 "${gives}.desktop" "${STOWDIR}/usr/share/applications/${gives}.desktop"
+  sudo install -Dm644 "${gives}.desktop" "${STOWDIR}/usr/share/applications"
   sudo install -Dm644 "protonvpn_gui/assets/icons/${gives}-logo.png" "${STOWDIR}/usr/share/icons/hicolor/scalable/apps"
 }
 
