@@ -7,3 +7,4 @@ gives="git-delta"
 url="https://github.com/dandavison/delta/releases/download/${version}/git-delta_${version}_amd64.deb"
 description="A viewer for git and diff output"
 hash="e20a306395058765f54f361944fb00fc0292566581dfbbd6917e6ff6df6c30d1"
+repology=("project: git-delta")
