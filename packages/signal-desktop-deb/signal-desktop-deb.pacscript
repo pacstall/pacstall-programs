@@ -1,7 +1,7 @@
 name="signal-desktop-deb"
 pkgname="signal-desktop"
-gives="signal-desktop"
-replace="signal-desktop"
+gives="${pkgname}"
+replace="${pkgname}"
 repology=("project: signal-desktop")
 version="5.43.0"
 url="https://updates.signal.org/desktop/apt/pool/main/s/${gives}/${gives}_${version}_amd64.deb"
