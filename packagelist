@@ -213,6 +213,7 @@ shell-color-scripts
 shellcheck-bin
 shellharden-bin
 shfmt-bin
+signal-desktop-beta-deb
 signal-desktop-deb
 slack-deb
 slop-git
