@@ -1,9 +1,9 @@
 name="bottles"
-version="2022.5.2-trento-3"
+version="2022.5.14-trento-1"
 description="Easily manage wine and proton prefix"
 repology=("project: bottles")
 url="https://github.com/bottlesdevs/Bottles/archive/${version}.tar.gz"
-hash="66b681fd2542feb229e9f2b346d6affea96319d0dcc922d90b8da16651ef06bf"
+hash="48aad92fd18edfafd95b7d9716249a939e63c3b62741378fec8f78db5f08154b"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks="${name} ${name}-deb ${name}-app ${name}-git com.github.mirkobrombin.bottles"
