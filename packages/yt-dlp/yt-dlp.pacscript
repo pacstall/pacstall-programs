@@ -11,7 +11,7 @@ hash="0e427a4df804787e1543a0ca42436564f0122d7a38b8712089ebd31cce39c224"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
-  sudo pip3 install pycryptodomex
+  sudo pip3 install --upgrade pycryptodomex
 }
 
 build() {
