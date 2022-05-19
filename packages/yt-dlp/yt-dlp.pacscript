@@ -22,6 +22,10 @@ install() {
   sudo make install DESTDIR="${STOWDIR}/${name}"
 }
 
+removescript() {
+  sudo pip3 uninstall pycryptodomex
+}
+
 postinst() {
   yt-dlp -help
 }
