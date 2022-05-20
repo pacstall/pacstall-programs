@@ -15,6 +15,7 @@ prepare() {
 }
 
 build() {
+  make pypi-files
   python3 setup.py build
 }
 
