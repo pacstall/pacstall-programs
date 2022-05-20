@@ -15,7 +15,7 @@ prepare() {
 }
 
 build() {
-  make pypi-files
+  make -j"$(nproc)" pypi-files
   python3 setup.py build
 }
 
@@ -25,8 +25,4 @@ install() {
 
 removescript() {
   sudo pip3 uninstall pycryptodomex
-}
-
-postinst() {
-  yt-dlp -help
 }
