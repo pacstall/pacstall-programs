@@ -1,13 +1,13 @@
 name="yt-dlp"
 repology=("project: ${name}")
-version="2022.04.08"
+version="2022.05.18"
 url="https://github.com/${name}/${name}/archive/refs/tags/${version}.tar.gz"
 build_depends="make pandoc zip python3-pytest python3-setuptools"
 optdepends=("mpv: For downloading rstp streams")
 depends="python3 ffmpeg python3-mutagen python3-pip python3-websockets python3-secretstorage python3-brotli python3-certifi python3-xattr atomicparsley rtmpdump"
 breaks="${name}-git ${name}-bin ${name}"
 description="A youtube-dl fork with additional features and fixes"
-hash="0e427a4df804787e1543a0ca42436564f0122d7a38b8712089ebd31cce39c224"
+hash="6bb20a8afd5d4449fbb1bc7032854eb285defc1e46337df0942852e2d26d18f5"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
