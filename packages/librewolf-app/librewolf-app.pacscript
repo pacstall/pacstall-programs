@@ -29,8 +29,8 @@ install() {
   sudo install -Dm755 "LibreWolf.x86_64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 
   # Download icon
-  wget -q https://librewolf-community.gitlab.io/images/logo.png
-  sudo install -Dm644 "logo.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
+  wget -q https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
+  sudo install -Dm644 "icon.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
 
   # Install .desktop file
   wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
