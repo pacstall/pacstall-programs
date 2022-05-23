@@ -1,8 +1,10 @@
 name="gitfiend-deb"
 gives="gitfiend"
+breaks="${gives}-app"
+replace="${gives}"
 repology=("project: ${gives}")
-version="0.32.0"
+version="0.34.0"
 url="https://${gives}.com/resources/GitFiend_${version}_amd64.deb"
 description="A Git client designed for humans"
-hash="885cc8266198430c6e8f6c26574dd4d498b61bc6348e05a3c3f5821e6d2b0f33"
+hash="b5eeeeb4507b60b17f091e07f22536a1b8ebe746eaab31853991f1b7ed688ad6"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

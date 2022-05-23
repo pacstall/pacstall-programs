@@ -20,6 +20,7 @@ bitwarden-deb
 bitwig-studio-3-deb
 bitwig-studio-deb
 blang-git
+bluegriffon-deb
 bottles
 bpytop-git
 brave-browser-beta-deb
@@ -61,6 +62,7 @@ dropbox-deb
 duf-deb
 dunst
 dust-bin
+eddie-ui-deb
 electronmail-deb
 element-desktop-deb
 emacs
@@ -86,6 +88,7 @@ gcmcore-deb
 geekbench-bin
 git
 git-delta-deb
+git-extras-git
 gitblade-deb
 gitfiend-deb
 github-cli-deb
@@ -117,6 +120,7 @@ insync-deb
 ivpn-deb
 ivpn-ui-deb
 jetbrains-toolbox-bin
+kalendar-git
 keepassxc
 kvantum
 kxstudio-repos-deb
@@ -144,13 +148,13 @@ microsoft-edge-stable-deb
 microsoft-prod-repo
 minecraft-launcher
 minecraft-launcher-deb
+minecraft-pi-reborn-app
 moka-icon-theme
 ms-teams-deb
 mullvad-vpn-beta-deb
 mullvad-vpn-deb
 mutt-wizard
 nala-deb
-nala-legacy-deb
 nano
 neofetch
 neovim
@@ -158,6 +162,9 @@ neovim-git
 nodejs-lts-deb
 nofetch
 noisetorch-bin
+nomachine-deb
+notion-app-deb
+notion-app-enhanced-deb
 notion-git
 nowpm
 nyxt-deb
@@ -196,6 +203,7 @@ protonmail-bridge-deb
 protonvpn-cli
 protonvpn-gui
 protonvpn-nm-lib
+pycharm-community-bin
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-git
@@ -206,6 +214,8 @@ shell-color-scripts
 shellcheck-bin
 shellharden-bin
 shfmt-bin
+signal-desktop-beta-deb
+signal-desktop-deb
 slack-deb
 slop-git
 smartgit
@@ -221,7 +231,9 @@ steamtinkerlaunch-git
 stellarium
 surf
 surf-distrotube-git
+surfshark-vpn-cli-deb
 suru-icon-theme-git
+taskwarrior
 teams-for-linux-deb
 telegram-bin
 tenacity-git
@@ -232,7 +244,6 @@ tmpmail-bin
 tmux
 topgrade-bin
 tor
-torbrowser-launcher-deb
 torguard-deb
 touchegg-deb
 treefetch-bin
@@ -264,6 +275,9 @@ wine-staging-git
 yabridge
 yad
 yafetch-git
+yandex-browser-beta-deb
+yandex-browser-stable-deb
 youtube-dl-git
+yt-dlp
 zentile-bin
 zotero

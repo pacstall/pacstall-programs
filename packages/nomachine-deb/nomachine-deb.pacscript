@@ -1,0 +1,12 @@
+name="nomachine-deb"
+gives="nomachine"
+repology=("project: ${gives}")
+version="7.9.2_1"
+_versionmain="7.9"
+_arch="amd64"
+breaks="${gives}-bin ${gives}-app ${gives}-git"
+replace="${gives}"
+url="https://download.nomachine.com/download/${_versionmain}/Linux/${gives}_${version}_${_arch}.deb"
+description="Remote desktop software designed for anyone who wants to access a single or multiple computers."
+hash="da75df8f6521a5947addb5204aba377876381657da811383349011acbe1140ca"
+maintainer="Cameron Computer <cameron.computer@pm.me>"

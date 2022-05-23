@@ -1,4 +1,5 @@
 name="pomatez-deb"
+repology=("project: pomatez")
 pkgname="pomatez"
 version="1.1.0"
 url="https://github.com/roldanjr/${pkgname}/releases/download/v${version}/Pomatez-v${version}-linux.deb"

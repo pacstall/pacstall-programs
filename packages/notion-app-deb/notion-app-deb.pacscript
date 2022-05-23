@@ -1,0 +1,11 @@
+name="notion-app-deb"
+pkgname="notion-app"
+repology=("project: ${pkgname}")
+version="2.0.18-1"
+url="https://github.com/notion-enhancer/notion-repackaged/releases/download/v${version}/${pkgname}_${version}_amd64.deb"
+breaks="${pkgname}-app ${pkgname}-enhanced-deb ${pkgname}-enhanced-app"
+replace="${pkgname}"
+gives="${pkgname}"
+description="The all-in-one workspace for your notes and tasks"
+hash="7246fb0485cc6ecd5f5381d0568b29d77afff3628ee42a486f39d5af8728ff4e"
+maintainer="IOplus <issa20omais@outlook.com>"

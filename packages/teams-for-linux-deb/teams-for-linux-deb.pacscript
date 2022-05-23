@@ -1,4 +1,5 @@
 name="teams-for-linux-deb"
+repology=("project: teams-for-linux")
 pkgname="teams-for-linux"
 version="1.0.24"
 url="https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v${version}/teams-for-linux_${version}_amd64.deb"
