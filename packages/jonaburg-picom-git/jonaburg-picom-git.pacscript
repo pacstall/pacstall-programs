@@ -26,6 +26,4 @@ build() {
 
 install() {
   sudo DESTDIR="${STOWDIR}/${name}" ninja -C build install
-  #sudo mkdir "${STOWDIR}/${name}"/.config
-  #wget -q "https://raw.githubusercontent.com/jonaburg/picom/next/picom.sample.conf" | sudo tee -a "${STOWDIR}/${name}"/.config/picom.conf
 }
