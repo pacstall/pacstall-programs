@@ -1,5 +1,3 @@
-# Author : Ruturajn <nanotiruturaj@gmail.com>
-
 name="jonaburg-picom-git"
 pkgname="jonaburg-picom"
 url="https://github.com/jonaburg/picom.git"
