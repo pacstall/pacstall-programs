@@ -13,10 +13,10 @@ hash="0fb03fa0d3999ad11ea70078e9378cfe3012fdec28555c3f97a6622507e09f16"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
-  sudo mkdir -p ${STOWDIR}/${name}/usr/share/applications
-  sudo mkdir -p ${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps
-  sudo mv ${gives}.desktop ${STOWDIR}/${name}/usr/share/applications
-  sudo mv protonvpn_gui/assets/icons/${gives}-logo.png ${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps
+  sudo mkdir -p "${STOWDIR}/${name}/usr/share/applications"
+  sudo mkdir -p "${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps"
+  sudo mv "${gives}.desktop" "${STOWDIR}/${name}/usr/share/applications"
+  sudo mv "protonvpn_gui/assets/icons/${gives}-logo.png" "${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps"
 }
 
 build() {
