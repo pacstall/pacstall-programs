@@ -87,9 +87,9 @@ fsearch-git
 gcmcore-deb
 geekbench-bin
 git
+gitblade-deb
 git-delta-deb
 git-extras-git
-gitblade-deb
 gitfiend-deb
 github-cli-deb
 github-desktop-deb
@@ -161,6 +161,7 @@ nano
 neofetch
 neovim
 neovim-git
+nerd-fonts-hack
 nodejs-lts-deb
 nofetch
 noisetorch-bin
@@ -200,8 +201,8 @@ plexmediaserver-deb
 polybar
 pomatez-deb
 popsicle
-proton-python-client
 protonmail-bridge-deb
+proton-python-client
 protonvpn-cli
 protonvpn-gui
 protonvpn-nm-lib
@@ -213,8 +214,8 @@ realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
 sed
-shell-color-scripts
 shellcheck-bin
+shell-color-scripts
 shellharden-bin
 shfmt-bin
 signal-desktop-beta-deb
@@ -227,11 +228,11 @@ soundux
 spacecadetpinball-git
 spotify-client-deb
 st-distrotube-git
-st-lukesmith-git
 steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
+st-lukesmith-git
 surf
 surf-distrotube-git
 surfshark-vpn-cli-deb
