@@ -4,6 +4,6 @@ replace="${gives}"
 repology=("project: ${gives}")
 version="0.1.6.1080"
 url="https://repo.yandex.ru/${gives}/deb/pool/main/y/${gives}/${gives}_${version}_amd64.deb"
-description="Cloud service created by Yandex that lets users store files on “cloud” servers and share them with others online"
+description="Cloud service that lets users store files on “cloud” servers and share them with others online"
 hash="47ba503b4dfccecc824386d67d686abe4b5356b8b546e48fce8811b5fa88a718"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
