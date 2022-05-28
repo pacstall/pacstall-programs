@@ -1,6 +1,6 @@
 name="protonvpn-gui"
 gives="protonvpn"
-breaks="${name}-git ${name}-bin"
+breaks="${name}-git"
 replace="${name}"
 repology=("project: ${name}")
 version="1.8.0"
@@ -13,11 +13,12 @@ hash="8ee1003a284618d6f6c78f2048c15a7c179cbce7932a22156084040d4028b5c2"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
-  true
+  sudo install -Dm644 "${gives}.desktop" "${STOWDIR}/usr/share/applications"
+  sudo install -Dm644 "protonvpn_gui/assets/icons/${gives}-logo.png" "${STOWDIR}/usr/share/icons/hicolor/scalable/apps"
 }
 
 build() {
-  true
+  python3 setup.py build
 }
 
 install() {

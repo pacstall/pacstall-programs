@@ -1,11 +1,11 @@
 name="brave-browser-dev-deb"
 gives="brave-browser-dev"
-version="1.39.93"
+version="1.40.76"
 breaks="${gives}-bin ${gives}-git ${gives}-app"
 replace="${gives}"
 url="https://github.com/brave/brave-browser/releases/download/v${version}/${gives}_${version}_amd64.deb"
 description="Development build of Brave Browser"
-hash="efef54629c9c6b7fc324e39a3d8233668fc7ff3d423fffa12b31d3fc33e61ea4"
+hash="1f8e0e211f0a83e97cf866f4402ce89b15bce0349ef59415cd2d6c3fab4989fe"
 pacdeps=("brave-keyring-deb")
 repology=("project: brave" "visiblename: brave-dev-bin")
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

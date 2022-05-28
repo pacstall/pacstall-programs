@@ -1,0 +1,9 @@
+name="realvnc-vnc-viewer-deb"
+gives="realvnc-vnc-viewer"
+breaks="${gives} ${gives}-bin ${gives}-app"
+version="6.22.315"
+description="VNC Viewer, from RealVNC, is remote access software that enables you to securely connect to and control a remote computer"
+hash="b27b0fc88ed8d0f223ccfa59f4858e6ea732e02942b48b2c47d6d757ab184399"
+maintainer="Obsidian <emil@aarestrup.nu>"
+url="https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-${version}-Linux-x64.deb"
+repology=("project: realvnc-vnc-viewer")

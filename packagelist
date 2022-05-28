@@ -115,11 +115,14 @@ hyper-deb
 hyperfine-bin
 i3-gaps
 i3lock-color
+ibhagwan-picom-git
 imwheel-exclude-patched-git
 insync-deb
 ivpn-deb
 ivpn-ui-deb
 jetbrains-toolbox-bin
+jonaburg-picom-git
+kalendar-git
 keepassxc
 kvantum
 kxstudio-repos-deb
@@ -163,6 +166,7 @@ nofetch
 noisetorch-bin
 nomachine-deb
 notion-app-deb
+notion-app-enhanced-deb
 notion-git
 nowpm
 nyxt-deb
@@ -205,6 +209,7 @@ pycharm-community-bin
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-git
+realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
 sed
@@ -212,6 +217,8 @@ shell-color-scripts
 shellcheck-bin
 shellharden-bin
 shfmt-bin
+signal-desktop-beta-deb
+signal-desktop-deb
 slack-deb
 slop-git
 smartgit
@@ -274,5 +281,6 @@ yafetch-git
 yandex-browser-beta-deb
 yandex-browser-stable-deb
 youtube-dl-git
+yt-dlp
 zentile-bin
 zotero

@@ -1,0 +1,11 @@
+name="signal-desktop-deb"
+pkgname="signal-desktop"
+gives="${pkgname}"
+replace="${pkgname}"
+breaks="${pkgname} ${pkgname}-app"
+repology=("project: ${pkgname}")
+version="5.43.0"
+url="https://updates.signal.org/desktop/apt/pool/main/s/${gives}/${gives}_${version}_amd64.deb"
+description="Signal Private Messenger for Linux"
+hash="0d82775996da6a52a141785540edea8498868fdd8273ea70443c7f601222ea08"
+maintainer="Jon Banafato <pacstall@jonafato.com>"

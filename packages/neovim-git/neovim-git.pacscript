@@ -16,7 +16,7 @@ prepare() {
 }
 
 build() {
-    make -j$(nproc)
+    make CMAKE_BUILD_TYPE=Release
 }
 
 install() {
