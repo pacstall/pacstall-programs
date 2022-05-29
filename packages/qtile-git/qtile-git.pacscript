@@ -21,8 +21,9 @@ build() {
 
 install() {
   sudo pip3 install --upgrade --no-cache --force-reinstall cairocffi cffi xcffib
-  sudo pip3 install dbus-next
-  sudo mkdir -p /usr/src/pacstall/qtile-git/usr/share/xsessions
-  sudo python3 setup.py install --root=/usr/src/pacstall/qtile-git/
-  sudo cp ./resources/qtile.desktop /usr/src/pacstall/qtile-git/usr/share/xsessions/qtile.desktop
+  sudo pip3 install dbus-next setuptools-scm setuptools
+  sudo mkdir -p "${STOWDIR}/${name}"/usr/share/xsessions
+  sudo chown root:root ./
+  sudo python3 setup.py install --root="${STOWDIR}/${name}"
+  sudo cp ./resources/qtile.desktop "${STOWDIR}/${name}"/usr/share/xsessions/qtile.desktop
 }
