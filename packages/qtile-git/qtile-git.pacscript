@@ -27,3 +27,7 @@ install() {
   sudo python3 setup.py install --root="${STOWDIR}/${name}"
   sudo cp ./resources/qtile.desktop "${STOWDIR}/${name}"/usr/share/xsessions/qtile.desktop
 }
+
+removescript() {
+  sudo pip3 uninstall dbus-next setuptools-scm setuptools
+}
