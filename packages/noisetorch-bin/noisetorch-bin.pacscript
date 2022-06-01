@@ -1,10 +1,10 @@
 name="noisetorch-bin"
 pkgname="noisetorch"
-version="0.11.5"
+version="0.12.0"
 description="Easy to use noise suppression for PulseAudio"
 repology=("project: noisetorch" "visiblename: noisetorch-bin")
-url="https://github.com/lawl/NoiseTorch/releases/download/${version}/NoiseTorch_x64.tgz"
-hash="c8105a576fbbf79622105228e957cec80a27bce9e5b9b224ef9dfe87fe82f97b"
+url="https://github.com/noisetorch/NoiseTorch/releases/download/v${version}/NoiseTorch_x64_v${version}.tgz"
+hash="641bddd13c62e591f3fe2c799535d721dab9bf856ed8bc0312d408fde1eb7e91"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
@@ -21,7 +21,7 @@ build() {
 
 install() {
     # Extract tgz
-    tar zxf NoiseTorch_x64.tgz
+    tar zxf NoiseTorch_x64_v${version}.tgz
 
     # Get services from AUR and install
     wget -q "https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pipewire.service?h=noisetorch-bin" -O noisetorch-pipewire.service
