@@ -1,5 +1,8 @@
 name="nerd-fonts-hack"
 pkgname="nerd-fonts-hack"
+breaks="${pkgname}"
+gives="${pkgname}"
+repology=("project: nerd-fonts")
 version="2.1.0"
 url="https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/Hack.zip"
 description="Patched font Hack from nerd-fonts library"
