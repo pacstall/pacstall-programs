@@ -1,8 +1,10 @@
 name="gitkraken-deb"
 gives="gitkraken"
 repology=("project: ${gives}")
-version="8.4.0"
-url="https://release.axocdn.com/linux/${gives}-amd64.deb"
+replace="${gives}"
+breaks="${gives}-bin"
+version="8.5.0"
+url="https://release.axocdn.com/linux/GitKraken-v${version}.deb"
 description="Legendary Git GUI client for Windows, Mac & Linux"
-hash="61c5a8ccc70876d4cedbd936af97ce3961ebc223d5647b4d0265bec558c38863"
+hash="4226515f422075a993929c96eaec9455f0d5cd70171061ae681f1307b26b6baa"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
