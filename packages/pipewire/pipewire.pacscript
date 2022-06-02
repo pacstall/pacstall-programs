@@ -1,10 +1,10 @@
 name="pipewire"
-version="0.3.49"
+version="0.3.51"
 build_depends="libdbus-1-dev debhelper-compat findutils libasound2-dev libavcodec-dev libavfilter-dev libavformat-dev libdbus-1-dev libglib2.0-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libsbc-dev libsdl2-dev libudev-dev libva-dev libv4l-dev libx11-dev ninja-build pkg-config python3-docutils python3-pip"
-url="https://gitlab.freedesktop.org/"${name}/"${name}"/-/archive/"${version}"/"${name}-${version}.zip"
+url="https://gitlab.freedesktop.org/${name}/${name}/-/archive/${version}/${name}-${version}.zip"
 maintainer="Henryws <hwengerstickel@pm.me>"
 description="PipeWire is a server and user space API to deal with multimedia pipelines."
-hash="00d48c0014d989103093ac006ca9352c7c31309e49f2e55c35ae4388cedb9290"
+hash="4d3e9da458ebefccaf9e56cf1674e57f7f7c5f7d86d1184115537abbd0a9e650"
 prepare() {
     if dpkg -l meson &>/dev/null; then
         ask "Your meson version is likely outdated, however pip contains a newer version that will compile pipewire correctly. Do you want to remove apt meson and install from pip" Y
