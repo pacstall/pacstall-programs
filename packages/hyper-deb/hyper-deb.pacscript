@@ -1,6 +1,6 @@
 name="hyper-deb"
 gives="hyper"
-version="3.2.0"
+version="3.2.3"
 url="https://github.com/vercel/hyper/releases/download/v${version}/hyper_${version}_amd64.deb"
-hash="f52e0c1bc2f65cb095a316a6210315d98cf60f44e77f8b24308b825ec218dce7"
+hash="0872e41c7f6ee585a59910dae07df29aa83560c0588e8fa4bb1a6ed0e56fe04f"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
