@@ -2,11 +2,11 @@ name="android-studio"
 repology=("project: ${name}")
 replace="${name}"
 breaks="${name}-beta ${name}-canary"
-version="2021.2.1.14"
+version="2021.2.1.15"
 url="https://dl.google.com/dl/android/studio/ide-zips/${version}/${name}-${version}-linux.tar.gz"
 depends="libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386"
 description="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
-hash="e98bb08ae6b4eaa9401b555a294d98615a6ade4c85b43c630a880313eab3c7b3"
+hash="0018e0dfc0dd2921700516f7a2c443377c557788da7fb0a45243ecb4300745be"
 maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
 
 prepare() {
