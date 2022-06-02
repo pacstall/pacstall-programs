@@ -28,7 +28,7 @@ jobs:
     steps:
       - name: Install System Utilities
         run: |
-          sudo dpkg --add-architecture i386
+          dpkg --add-architecture i386
           apt-get update
           apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
