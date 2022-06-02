@@ -2,8 +2,8 @@ name="timeshift"
 repology=("project: timeshift")
 version="22.06.1"
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
-url="https://github.com/teejee2008/timeshift/archive/refs/tags/v${version}.zip"
-hash="ea808691f752bad4a83892cf57a07ce576f6e7a3bb1e3e32a0754fe8b0d070d7"
+url="https://github.com/linuxmint/timeshift/archive/refs/tags/v${version}.zip"
+hash="a41be13aeb59b5792e167e30c7bcc4052750c4bdd28e22f309d674f790f52e4b"
 build_depends="debhelper autotools-dev gzip valac libgtk-3-dev libgee-0.8-dev libjson-glib-dev libvte-2.91-dev"
 depends="rsync btrfs-progs"
 breaks="${name}-git ${name}-deb ${name}-bin ${name}-app"
@@ -15,7 +15,8 @@ prepare()  {
 }
 
 build() {
-    sudo make -j"$(nproc)" all
+    make -j"$(nproc)" app-gtk
+    make -j"$(nproc)" app-console
 }
 
 install() {
