@@ -10,9 +10,9 @@ prepare() {
 }
 
 build() {
-  meson build --prefix=/usr/src/pacstall/mangohud/usr
+  sudo meson build --prefix=/usr/src/pacstall/mangohud/usr
 }
 
 install() {
-  ninja -j$(nproc) -C build install
+  sudo ninja -j$(nproc) -C build install
 }
