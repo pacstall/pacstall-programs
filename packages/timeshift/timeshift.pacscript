@@ -1,9 +1,9 @@
 name="timeshift"
 repology=("project: timeshift")
-version="21.09.1"
+version="22.06.1"
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 url="https://github.com/teejee2008/timeshift/archive/refs/tags/v${version}.zip"
-hash="a82f8c41e18d41843b6604a6e70fd917f773561d7d569f5411ca2a0409e101bd"
+hash="ea808691f752bad4a83892cf57a07ce576f6e7a3bb1e3e32a0754fe8b0d070d7"
 build_depends="debhelper autotools-dev gzip valac libgtk-3-dev libgee-0.8-dev libjson-glib-dev libvte-2.91-dev"
 depends="rsync btrfs-progs"
 breaks="${name}-git ${name}-deb ${name}-bin ${name}-app"
