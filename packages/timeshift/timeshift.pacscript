@@ -15,7 +15,7 @@ prepare()  {
 }
 
 build() {
-    make -j"$(nproc)" all
+    sudo make -j"$(nproc)" all
 }
 
 install() {
