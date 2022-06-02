@@ -9,7 +9,6 @@ description="GNU Nano"
 hash="24c51bb2bddc682f95ae745c743cbceebd836549de66bdfd6af80a40333cc6a7"
 
 prepare() {
-    ./autogen.sh
     ./configure
 }
 
