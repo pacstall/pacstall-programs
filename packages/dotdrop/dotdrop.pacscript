@@ -1,7 +1,7 @@
 name="dotdrop"
-version="1.8.2"
+version="1.9.0"
 url="https://github.com/deadc0de6/dotdrop/archive/refs/tags/v${version}.zip"
-hash="6312f1e7abd91eddcda08bbaabe512a87b006f7b28139c0f482a6d78f877aa07"
+hash="708041846c0f67c595c56e329cf530cfd370346d46e88ed1fae46d3987c6c319"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 depends="python3 python3-docopt python3-setools python3-jinja2 python3-ruamel.yaml python3-magic diffutils"
 
