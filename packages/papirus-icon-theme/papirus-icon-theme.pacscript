@@ -1,9 +1,9 @@
 name="papirus-icon-theme"
-version="20220302"
+version="20220508"
 description="Papirus icon theme"
 repology=("project: papirus-icon-theme" "repo: aur")
 url="https://github.com/PapirusDevelopmentTeam/${name}/archive/${version}/${name}-${version}.tar.gz"
-hash="73230479b6faee3013b3cc6e689b92dca4d3ed0df40a23f899827532573083ce"
+hash="0b17c824de8498dae0e2a0e27d24bf79f42eae4041003b509decb2c1ec69d8db"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks="${name} ${name}-git"
