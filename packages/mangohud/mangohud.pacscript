@@ -1,8 +1,8 @@
 name="mangohud"
-version="0.6.5"
-url="https://github.com/flightlessmango/MangoHud/releases/download/v0.6.5/MangoHud-v0.6.5-Source.tar.xz"
+version="0.6.7-1"
+url="https://github.com/flightlessmango/MangoHud/releases/download/v${version}/MangoHud-v${version}-Source.tar.xz"
 depends="gcc g++ gcc-multilib g++-multilib ninja-build python3-pip python3-setuptools python3-wheel pkg-config mesa-common-dev libx11-dev libxnvctrl-dev libdbus-1-dev glslang-tools"
-hash="aa3f65ece217842c3be1b755c0f3a09b2096f0af475715d3619182a13c6f4fbf"
+hash="5f925a537e611d898db608dd93155ce3c4137326b21376c7d34333181e3da959"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 
 prepare() {
