@@ -10,10 +10,10 @@ name="opera-deb"
 gives="opera-stable"
 breaks="opera-beta-deb opera-developer-deb ${gives}-bin ${gives}-app"
 replace="${gives}"
-version="86.0.4363.32"
+version="87.0.4390.45"
 url="https://download5.operacdn.com/pub/opera/desktop/${version}/linux/${gives}_${version}_amd64.deb"
 description="Opera web browser stable release"
-hash="41c72e7b62a3f05d2c905574d8d36f21b2ed04c508134590c69dceeabaf038a9"
+hash="46e17ab5bdb2071a7b1aa02663a22582277f601321d56ae40ab6af4779b3859a"
 repology=("project: opera")
 
 
