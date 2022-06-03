@@ -16,8 +16,7 @@ prepare()  {
 
 build() {
     sed -i -e 's/--Xcc="-O3" //g' src/makefile
-    make -j"$(nproc)" app-gtk
-    make -j"$(nproc)" app-console
+    make -j"$(nproc)" all
 }
 
 install() {
