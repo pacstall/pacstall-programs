@@ -20,15 +20,20 @@ build() {
 
 install() {
     # Binary
-    sudo install -Dm644 "anydesk" "${STOWDIR}/${name}/usr/bin"
+    sudo mkdir -p "${STOWDIR}/${name}/usr/bin"
+    sudo mv "anydesk" "${STOWDIR}/${name}/usr/bin"
     # Polkit
-    sudo install -Dm644 "./polkit-1/com.anydesk.anydesk.policy" "${STOWDIR}/${name}/usr/share/polkit-1/actions"
+    sudo mkdir -p "${STOWDIR}/${name}/usr/share/polkit-1/actions"
+    sudo mv "./polkit-1/com.anydesk.anydesk.policy" "${STOWDIR}/${name}/usr/share/polkit-1/actions"
     # .desktop
-    sudo install -Dm644 "anydesk.desktop" "${STOWDIR}/${name}/usr/share/applications"
+    sudo mkdir -p "${STOWDIR}/${name}/usr/share/applications"
+    sudo mv "anydesk.desktop" "${STOWDIR}/${name}/usr/share/applications"
     # Systemd
-    sudo install -Dm644 "./systemd/anydesk.service" "${STOWDIR}/${name}/usr/lib/systemd/system/"
+    sudo mkdir -p "${STOWDIR}/${name}/usr/share/anydesk/files/systemd"
+    sudo mv "./systemd/anydesk.service" "${STOWDIR}/${name}/usr/share/anydesk/files/systemd"
     # Icon
-    sudo install -Dm644 "./icons/hicolor/scalable/apps/anydesk.svg" "${STOWDIR}/${name}/usr/share/pixmaps/anydesk.svg"
+    sudo mkdir -p "${STOWDIR}/${name}/usr/share/pixmaps/anydesk.svg"
+    sudo mv "./icons/hicolor/scalable/apps/anydesk.svg" "${STOWDIR}/${name}/usr/share/pixmaps/anydesk.svg"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
