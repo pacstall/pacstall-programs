@@ -24,7 +24,7 @@ install() {
     sudo mv "./bin/gh" "${STOWDIR}/${name}/usr/bin"
     # Man
     sudo mkdir -p "${STOWDIR}/${name}/usr/share/man/man1"
-    sudo mv "./share/man/man1/*" "${STOWDIR}/${name}/usr/share/man/man1"    
+    sudo mv "./share/man/man1/*" "${STOWDIR}/${name}/usr/share/man/man1"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
