@@ -6,6 +6,7 @@ depends="libacl1 libc6 libcanberra0 libgpm2 libpython3-dev libselinux1 libtinfo6
 gives="vim"
 breaks="nvim"
 hash="e96be06c4955cd5b75f0ea026d7845e136d435b9e7621f9534a1034c1a0ca724"
+repology=("project: vim")
 
 prepare() {
           cd src
