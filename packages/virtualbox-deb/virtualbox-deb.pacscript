@@ -1,7 +1,0 @@
-name="virtualbox-deb"
-gives="virtualbox"
-version="6.1.34"
-url="https://download.virtualbox.org/virtualbox/${version}/virtualbox-6.1_${version}-150636.1~Ubuntu~jammy_amd64.deb"
-description="VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use."
-hash="fcd47a4f3d74c5d6a49cb0886bdf6801adca250991454c3ffa07910f994f1025"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
