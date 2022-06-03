@@ -8,7 +8,7 @@ url="https://download.anydesk.com/linux/${gives}-${version}-amd64.tar.gz"
 depends="libc6 libgcc1 libglib2.0-0 libgtk2.0-0 libstdc++6 libx11-6 libxcb-shm0 libxcb1 libpango1.0-0 libcairo2 libxrandr2 libx11-xcb1 libxtst6 libxfixes3 libxdamage1 libgtkglext1"
 description="AnyDesk provides platform independent remote access to personal computers and other devices running the host application - Binary version"
 hash="102e72c75502a4779083320322dd047e2b0c00a25ead7444a00aad1db54325aa"
-maintainer="Mr. Person <mr.person@protonmail.com>"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
     true
