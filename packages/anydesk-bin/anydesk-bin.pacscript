@@ -31,6 +31,9 @@ install() {
     # Systemd
     sudo mkdir -p "${STOWDIR}/${name}/usr/share/anydesk/files/systemd"
     sudo mv "./systemd/anydesk.service" "${STOWDIR}/${name}/usr/share/anydesk/files/systemd"
+    # Init
+    sudo mkdir -p "${STOWDIR}/${name}/usr/share/anydesk/files/init"
+    sudo mv "./init/anydesk" "${STOWDIR}/${name}/usr/share/anydesk/files/init"
     # Icon
     sudo mkdir -p "${STOWDIR}/${name}/usr/share/pixmaps/anydesk.svg"
     sudo mv "./icons/hicolor/scalable/apps/anydesk.svg" "${STOWDIR}/${name}/usr/share/pixmaps/anydesk.svg"
