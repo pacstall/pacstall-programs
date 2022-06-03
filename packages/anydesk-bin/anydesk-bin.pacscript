@@ -19,7 +19,6 @@ build() {
 }
 
 install() {
-    cd anydesk-${version}
     # Binary
     sudo install -Dm644 "anydesk" "${STOWDIR}/${name}/usr/bin"
     # Polkit
