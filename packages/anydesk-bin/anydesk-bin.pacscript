@@ -24,7 +24,7 @@ install() {
     sudo install -Dm644 "anydesk" "${STOWDIR}/${name}/usr/bin"
     # Polkit
     sudo install -Dm644 "./polkit-1/com.anydesk.anydesk.policy" "${STOWDIR}/${name}/usr/share/polkit-1/actions"
-    # .desktop 
+    # .desktop
     sudo install -Dm644 "anydesk.desktop" "${STOWDIR}/${name}/usr/share/applications"
     # Systemd
     sudo install -Dm644 "./systemd/anydesk.service" "${STOWDIR}/${name}/usr/lib/systemd/system/"
