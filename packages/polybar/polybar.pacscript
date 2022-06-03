@@ -15,6 +15,7 @@ optdepends=("libxcb-xkb-dev: xkeyboard"
   "libmpdclient-dev: mpd"
   "libcurl4-openssl-dev: github"
   "libnl-genl-3-dev: network")
+repology=("project: polybar")
 
 prepare() {
     mkdir build
