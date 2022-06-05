@@ -7,7 +7,6 @@ hash="03c0ba2115c14a178ad3ecc63f2103cf55c15ba42bc43978394ba00ad40da80b"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks="${name} ${name}-deb ${name}-app ${name}-git"
-
 optdepends=(
     "docker: enable docker usage"
     "podman: enable podman usage"
