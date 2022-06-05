@@ -14,7 +14,7 @@ optdepends=(
 )
 
 prepare() {
-    true    
+    true
 }
 
 build() {
