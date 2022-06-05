@@ -1,11 +1,11 @@
 name="vim"
 pkgname="vim"
-version="8.2.5052"
+version="8.2.5056"
 url="https://github.com/vim/vim/archive/refs/tags/v${version}.tar.gz"
 depends="libacl1 libc6 libcanberra0 libgpm2 libpython3-dev libselinux1 libtinfo6 vim-common vim-runtime libncurses-dev"
 gives="vim"
 breaks="nvim"
-hash="e96be06c4955cd5b75f0ea026d7845e136d435b9e7621f9534a1034c1a0ca724"
+hash="2a7ed006ba7c6af3210525606444a9c4bd45efb467e9df045eabc5a09bc428f9"
 repology=("project: vim")
 
 prepare() {
