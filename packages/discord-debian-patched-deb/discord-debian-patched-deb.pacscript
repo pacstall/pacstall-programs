@@ -1,0 +1,12 @@
+name="discord-debian-patched-deb"
+pkgname="discord"
+repology=("project: discord")
+version="0.0.17"
+url="https://github.com/saenai255/discord-debian-patched/releases/download/v${version}/discord-debian-patched-${version}.deb"
+hash="34c4ae3a6cfcf8b5b6f6f1f2d28e9ee94badb65b6ee4e55f90806202802e25f3"
+breaks="discord discord-bin discord-deb discord-app"
+gives="discord"
+replace="discord"
+build_depends="git make"
+description="A patched version of the Discord client that runs on Debian"
+maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
