@@ -1,7 +1,7 @@
 name="tor"
 repology=("project: ${name}")
 replace="${name}"
-breaks="${name]-git"
+breaks="${name}-git"
 version="0.4.7.7"
 url="https://dist.torproject.org/${name}-${version}.tar.gz"
 build_depends="make autoconf"
