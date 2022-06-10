@@ -1,6 +1,6 @@
 name="neovim-deb"
 pkgname="neovim"
-gives="nvim" 
+gives="nvim"
 replace="nvim neovim-runtime"
 version="0.7.0"
 url="https://github.com/neovim/${gives}/releases/download/v${version}/nvim-linux64.deb"
