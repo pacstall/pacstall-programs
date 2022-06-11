@@ -23,11 +23,11 @@ install() {
     sudo mv "./subprojects/steam-devices/60-steam-vr.rules" "${STOWDIR}/${name}/lib/udev/rules.d"
     # Icons
     sudo mkdir -p "${STOWDIR}/${name}/usr/share/icons/hicolor"
-    sudo mv "./icons/16x16" "${STOWDIR}/${name}/usr/share/icons/hicolor"
-    sudo mv "./icons/32x32" "${STOWDIR}/${name}/usr/share/icons/hicolor"
-    sudo mv "./icons/256x256" "${STOWDIR}/${name}/usr/share/icons/hicolor"
-    sudo mv "./icons/32x32" "${STOWDIR}/${name}/usr/share/icons/hicolor"
-    sudo mv "./icons/48x48" "${STOWDIR}/${name}/usr/share/icons/hicolor"
+    sudo mv "./icons/16" "${STOWDIR}/${name}/usr/share/icons/hicolor/16x16"
+    sudo mv "./icons/32" "${STOWDIR}/${name}/usr/share/icons/hicolor/32x32"
+    sudo mv "./icons/256" "${STOWDIR}/${name}/usr/share/icons/hicolor/256x256"
+    sudo mv "./icons/32" "${STOWDIR}/${name}/usr/share/icons/hicolor/32x32"
+    sudo mv "./icons/48" "${STOWDIR}/${name}/usr/share/icons/hicolor/48x48"
     # Man
     sudo mkdir -p "${STOWDIR}/${name}/usr/share/man/man6/"
     sudo mv "steam.6" "${STOWDIR}/${name}/usr/share/man/man6"
