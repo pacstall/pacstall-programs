@@ -5,6 +5,6 @@ replace="${gives}"
 version="2.12.1"
 url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version}_linux_amd64.deb"
 description="GitHub's official command line tool"
-hash="534bc870f974ce1e2da2d590fffdcf012f330c3509061d3070b47f485f401a18"
+hash="366a56e3e4c9f6708a1750ad854439cf8ca073e1a5cd95c733c1d9568bd8c757"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 repology=("project: github-cli")
