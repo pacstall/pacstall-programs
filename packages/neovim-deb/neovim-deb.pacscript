@@ -6,4 +6,4 @@ version="0.7.0"
 url="https://github.com/neovim/${gives}/releases/download/v${version}/nvim-linux64.deb"
 description="Vim fork maintained by the community"
 repology=("project: ${pkgname}")
-maintainers="charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>"
+maintainer="charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>"
