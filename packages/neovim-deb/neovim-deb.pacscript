@@ -5,5 +5,5 @@ replace="nvim neovim-runtime"
 version="0.7.0"
 url="https://github.com/neovim/${gives}/releases/download/v${version}/nvim-linux64.deb"
 description="Neovim is a vim fork maintained by the comunity"
-repology={"project: ${pkgname}"}
+repology=("project: ${pkgname}")
 maintainers="charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>"
