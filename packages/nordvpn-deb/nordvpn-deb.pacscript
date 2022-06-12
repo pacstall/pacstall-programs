@@ -1,0 +1,9 @@
+name="nordvpn-deb"
+gives="nordvpn"
+replace="${gives}"
+repology=("project: ${gives}")
+version="3.14.0"
+url="https://repo.nordvpn.com/deb/${gives}/debian/pool/main/${gives}_${version}_amd64.deb"
+description="NordVPN's CLI tool"
+hash="edeb6ede144183101f7893e4bb9f66d8173d771749b208d6e5d4c2d6e8f15f56"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
