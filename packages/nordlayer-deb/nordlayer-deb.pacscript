@@ -1,0 +1,9 @@
+name="nordlayer-deb"
+gives="nordlayer"
+replace="${gives} nordvpnteams"
+repology=("project: ${gives}")
+version="2.3.1"
+url="https://downloads.nordlayer.com/linux/latest/debian/pool/main/${gives}_${version}_amd64.deb"
+description="NordLayer's CLI Tool (formerly known as NordVPN Teams)"
+hash="1243e4c7309b6264dd869119914f5f0bc0440f5e072f0b7d42c8bd5b4f5f12f5"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
