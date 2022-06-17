@@ -1,12 +1,13 @@
 name="topgrade-bin"
 pkgname="topgrade"
-version="8.2.0"
+version="9.0.1"
 url="https://github.com/r-darwish/topgrade/releases/download/v${version}/topgrade-v${version}-x86_64-unknown-linux-gnu.tar.gz"
 description="Upgrades everything on your system"
-hash="5d2588260673d93355744a974f85cff8cb9eceb60fff45e26f625130f051151c"
+hash="f218bf49c64bad6e1cea33f191e849ba1f20309bfd59e7658412d32bd0626572"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
 gives="${pkgname}"
-
+repology=("project: ${pkgname}")
+maintainer="charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>"
 prepare() {
   true
 }
