@@ -7,6 +7,7 @@ description="The minimal, blazing-fast, and infinitely customizable prompt for a
 hash="7124093ae00b24c7c074d9fb45a060ad909d75049d6b200714b3353116f864c5"
 repology=("project: ${pkgname}")
 maintainer="charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>"
+
 prepare() {
   true
 }
