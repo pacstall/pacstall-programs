@@ -1,7 +1,7 @@
 name="dotdrop"
-version="1.9.0"
+version="1.10.0"
 url="https://github.com/deadc0de6/dotdrop/archive/refs/tags/v${version}.zip"
-hash="708041846c0f67c595c56e329cf530cfd370346d46e88ed1fae46d3987c6c319"
+hash="63a24da080aa06cd9048889ccd0d119a31c4dbb1d3e4be4e8739fdb4c7194c46"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 depends="python3 python3-docopt python3-setools python3-setuptools python3-jinja2 python3-ruamel.yaml python3-magic diffutils"
 repology=("project: ${name}")
