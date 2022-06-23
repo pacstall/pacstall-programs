@@ -1,10 +1,10 @@
 name="noisetorch-bin"
 pkgname="noisetorch"
-version="0.12.0"
+version="0.12.2"
 description="Easy to use noise suppression for PulseAudio"
 repology=("project: noisetorch" "visiblename: noisetorch-bin")
 url="https://github.com/noisetorch/NoiseTorch/releases/download/v${version}/NoiseTorch_x64_v${version}.tgz"
-hash="641bddd13c62e591f3fe2c799535d721dab9bf856ed8bc0312d408fde1eb7e91"
+hash="aaa29e76736dc3432197e665f3c868496b5aca52183b67e5a0a1b8fa7913fe60"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
