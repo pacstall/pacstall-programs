@@ -21,7 +21,6 @@ bitwarden-deb
 bitwig-studio-3-deb
 bitwig-studio-deb
 bluegriffon-deb
-bottles
 bpytop-git
 brave-browser-beta-deb
 brave-browser-deb
@@ -165,6 +164,7 @@ neofetch
 neovim
 neovim-deb
 neovim-git
+nerd-fonts-hack
 nodejs-lts-deb
 nofetch
 noisetorch-bin
@@ -281,6 +281,7 @@ warpinator-deb
 wazzapp-deb
 webapp-manager
 webapp-manager-deb
+weechat-git
 windscribe-gui-deb
 wine-staging-git
 yabridge
