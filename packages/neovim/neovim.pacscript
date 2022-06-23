@@ -7,6 +7,7 @@ gives="nvim"
 replace="nvim neovim-runtime"
 description="Neovim is a vim fork maintained by the comunity"
 hash="792a9c55d5d5f4a5148d475847267df309d65fb20f05523f21c1319ea8a6c7df"
+maintainer="TwilightBlood <hwengerstickel@pm.me>"
 repology=("project: ${name}")
 
 prepare() {
