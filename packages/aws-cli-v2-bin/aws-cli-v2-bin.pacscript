@@ -1,13 +1,13 @@
 name="aws-cli-v2-bin"
 pkgname="aws-cli-v2"
-version="2.7.6"
+version="2.7.10"
 url="https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${version}.zip"
 description="Universal Command Line Interface for Amazon Web Services v2"
 depends="groff less"
 build_depends="unzip"
 replace="awscli"
-hash="61565e678db8b0308827295991adb89d961ecbd1d32b68fd192d707c4ba6aef0"
-maintainer="KwonNam Son <kwon37xi@gmail.com>"
+hash="97a059788f337548f5a2bfb686d5d850f69be749acddc87f4e017152aed81e03"
+maintainer="Marie Piontek <marie@kaifa.ch>"
 
 prepare() {
   true
