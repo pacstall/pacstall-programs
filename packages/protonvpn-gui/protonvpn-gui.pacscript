@@ -3,20 +3,18 @@ gives="protonvpn"
 breaks="${name}-git"
 replace="${name}"
 repology=("project: ${name}")
-version="1.9.0"
+version="1.10.0"
 url="https://github.com/ProtonVPN/linux-app/archive/refs/tags/${version}.tar.gz"
 depends="libgtk-3-dev gobject-introspection python3-psutil"
 optdepends=("gnome-shell-extension-appindicator: This extension integrates Ubuntu AppIndicators and KStatusNotifierItems into GNOME Shell")
 pacdeps=("protonvpn-nm-lib" "protonvpn-cli" "proton-python-client")
 description="Official ProtonVPN Linux app (GUI)"
-hash="0fb03fa0d3999ad11ea70078e9378cfe3012fdec28555c3f97a6622507e09f16"
+hash="453becd020481251bc1928fe9551f48d702be9a55dd8c6030b0be48372c67363"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
-  sudo mkdir -p "${STOWDIR}/${name}/usr/share/applications"
-  sudo mkdir -p "${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps"
-  sudo mv "${gives}.desktop" "${STOWDIR}/${name}/usr/share/applications"
-  sudo mv "protonvpn_gui/assets/icons/${gives}-logo.png" "${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps"
+  sudo install -Dm755 "${gives}.desktop" -t "${STOWDIR}/${name}/usr/share/applications"
+  sudo install -Dm755 "protonvpn_gui/assets/icons/${gives}-logo.png" -t "${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps"
 }
 
 build() {
