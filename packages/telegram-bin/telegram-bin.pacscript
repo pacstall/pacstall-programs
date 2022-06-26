@@ -8,7 +8,7 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="telegram-bin"
 pkgname="telegram"
-version="3.7.3"
+version="4.0.1"
 description="Telegram Desktop messaging app"
 url="https://updates.tdesktop.com/tlinux/tsetup.${version}.tar.xz"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
