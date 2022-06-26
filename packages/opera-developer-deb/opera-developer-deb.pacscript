@@ -1,9 +1,9 @@
 name="opera-developer-deb"
 gives="opera-developer"
-version="89.0.4436.0"
+version="90.0.4457.0"
 replace="${gives}"
 repology=("project: opera" "visiblename: ${gives}")
 url="https://get.geo.opera.com/pub/${gives}/${version}/linux/${gives}_${version}_amd64.deb"
 description="Opera is a fast, secure, and user-friendly web browser - Developer channel"
-hash="400049b10c14c46ed656ee3ea10a13b9d376692d10524a0eaf40d92a4f1ec8e2"
+hash="eb448cf88ee12c7e2343d893443dafb5f8025073eee1de2d882f2e1c23d6abc0"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
