@@ -11,7 +11,7 @@ maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 pacdeps=("go-bin")
 
 pkgver() {
-        git ls-remote "${url}" master | cut -f1 | cut -c1-8
+        git ls-remote "${url}" trunk | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
