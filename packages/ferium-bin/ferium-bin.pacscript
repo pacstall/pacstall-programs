@@ -18,7 +18,19 @@ build() {
 
 install() {
   sudo install -Dm755 ferium "${STOWDIR}/${name}/usr/bin/${pkgname}"
+  mkdir -p ~/.config/ferium
+  # create a default config or else ferium will fail to do completions
+  echo '{
+  "active_profile": 0,
+  "active_modpack": 0,
+  "profiles": [],
+  "modpacks": []
+}' | tee ~/.config/ferium/config.json > /dev/null
   "${STOWDIR}/${name}/usr/bin/${pkgname}" complete bash | sudo install -Dm644 /dev/stdin "${STOWDIR}/${name}/usr/share/bash-completion/completions/ferium"
   "${STOWDIR}/${name}/usr/bin/${pkgname}" complete fish | sudo install -Dm644 /dev/stdin "${STOWDIR}/${name}/usr/share/fish/vendor_completions.d/ferium.fish"
   "${STOWDIR}/${name}/usr/bin/${pkgname}" complete zsh | sudo install -Dm644 /dev/stdin "${STOWDIR}/${name}/usr/share/zsh/site-functions/_ferium"
+}
+
+removescript() {
+  rm -f ~/.config/ferium/config.json
 }
