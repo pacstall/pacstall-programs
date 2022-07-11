@@ -1,8 +1,10 @@
 name="duf-deb"
-pkgname="duf"
-version="0.7.0"
 gives="duf"
-url="https://github.com/muesli/duf/releases/download/v${version}/duf_${version}_linux_amd64.deb"
+breaks="${gives}-bin ${gives}-git"
+repology=("project: ${gives}")
+replace="${gives}"
+version="0.7.0"
+url="https://github.com/muesli/${gives}/releases/download/v${version}/${gives}_${version}_linux_amd64.deb"
 description="Disk Usage/Free Utility - a better 'df' alternative"
 hash="f8a7d57c3bc31c2a75de953050c02898698d9e84c95c7ddd68f035c17d3fc360"
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
