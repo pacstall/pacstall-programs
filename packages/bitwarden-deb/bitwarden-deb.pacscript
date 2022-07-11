@@ -7,4 +7,4 @@ url="https://github.com/${gives}/clients/releases/download/desktop-v${version}/B
 description="Open Source Password Manager"
 hash="0262a2fa22d089296625c0a7e40809306c302762f85728683f4c5eb944ee933c"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
-repology=("project: bitwarden-desktop" "repo: funtoo_1.4")
+repology=("project: bitwarden")
