@@ -1,0 +1,9 @@
+name="expressvpn-deb"
+gives="expressvpn"
+version="3.27.1.0-1"
+replace="${gives}"
+url="https://www.expressvpn.com/clients/linux/${gives}_${version}_amd64.deb"
+description="ExpressVPN's CLI tool"
+hash="e4c4e63b3d65130121f84ce2281e05965c77eab61cdf513fa5a97fd4c1a6f753"
+repology=("project: ${gives}")
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
