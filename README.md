@@ -6,8 +6,10 @@ This is the default repository of pacscripts which [pacstall](https://github.com
 package-repository/
 ├── packagelist
 └── packages/
-    └── example-package/
-        └── example-package.pacscript
+    └── example-package1/
+    |   └── example-package1.pacscript
+    └── example-package2/
+        └── example-package2.pacscript
 ```
 
 You can then use `pacstall -A` command to add your repository to your `repolist`. Consult the wiki for more info.
