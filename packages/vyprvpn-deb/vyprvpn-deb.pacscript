@@ -1,0 +1,9 @@
+name="vyprvpn-deb"
+gives="vyprvpn"
+repology=("project: ${gives}")
+version="1.8"
+url="https://support.vyprvpn.com/hc/article_attachments/360054448971/${gives}-linux-cli-${version}.amd64.deb"
+replace="${gives}"
+description="VyprVPN's CLI tool"
+hash="c2c67794b6f4bcdf5f2e3d1e8eeab6a2bff9f452ccc70032b9a408c9f98d5511"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
