@@ -22,6 +22,8 @@ install() {
   sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host.exe.so" "/usr/bin"
   sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host-32.exe" "/usr/bin"
   sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host-32.exe.so" "/usr/bin"
+  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/libyabridge-vst2.so" "/usr/lib"
+  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/libyabridge-vst3.so" "/usr/lib"
 }
 
 postinst() {
