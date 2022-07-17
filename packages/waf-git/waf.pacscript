@@ -1,4 +1,4 @@
-name="waf-git"
+name="waf"
 version="2.0.24"
 url="https://gitlab.com/ita1024/waf/-/archive/waf-$version/waf-waf-$version.zip"
 description="Waf is a Python-based framework for configuring, compiling and installing applications."
