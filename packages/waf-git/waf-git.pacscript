@@ -1,8 +1,8 @@
 name="waf-git"
-version="2.0.22"
+version="2.0.24"
 url="https://gitlab.com/ita1024/waf/-/archive/waf-$version/waf-waf-$version.zip"
 description="Waf is a Python-based framework for configuring, compiling and installing applications."
-hash="533d5e8826bae3859240f1e8ae1ce92140c98baa4dbf6f9ee9e39a07bb6501db"
+hash="87a468f9bf1d8a55151dda6290e230bcdad199df70217a223eb96ac79b94f121"
 maintainer="echometerain <echometer@disroot.org>"
 
 prepare() {
