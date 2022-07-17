@@ -8,13 +8,11 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="opera-deb"
 gives="opera-stable"
-breaks="opera-beta-deb opera-developer-deb ${gives}-bin ${gives}-app"
 replace="${gives}"
-version="87.0.4390.45"
+version="89.0.4447.38"
 url="https://download5.operacdn.com/pub/opera/desktop/${version}/linux/${gives}_${version}_amd64.deb"
-description="Opera web browser stable release"
-hash="46e17ab5bdb2071a7b1aa02663a22582277f601321d56ae40ab6af4779b3859a"
+description="Multi-platform web browser developed by its namesake company Opera"
+hash="60e825494cce085ddd365a24c5001c2cb10c9464a3cd0fcbde2c4e84dd161689"
 repology=("project: opera")
-
 
 # vim:set ft=sh ts=2 sw=2 et:

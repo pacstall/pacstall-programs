@@ -17,7 +17,7 @@ build() {
 }
 
 install() {
-        sudo mv discord.desktop /usr/src/pacstall/discord/usr/share/applications/
-        sudo cp discord.png /usr/src/pacstall/discord/usr/share/icons/
-        sudo mv ./* /usr/src/pacstall/discord/usr/share/discord/
+        sudo install -Dm755 discord.desktop "${STOWDIR}/${name}/usr/share/applications/discord.desktop"
+        sudo install -Dm755 discord.png "${STOWDIR}/${name}/usr/share/icons/discord.png"
+        sudo cp -R ./* "${STOWDIR}/${name}/usr/share/discord/"
 }
