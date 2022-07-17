@@ -18,7 +18,7 @@ build() {
 }
 
 install() {
-        sudo install -Dm755 discord.desktop "${STOWDIR}/${name}/usr/share/applications/discord.desktop"
+        sudo install -Dm755 discord-canary.desktop "${STOWDIR}/${name}/usr/share/applications/discord-canary.desktop"
         sudo install -Dm755 discord.png "${STOWDIR}/${name}/usr/share/icons/discord.png"
-        sudo cp -R ./* "${STOWDIR}/${name}/usr/share/discord/"
+        sudo cp -R ./* "${STOWDIR}/${name}/usr/share/${name}/"
 }
