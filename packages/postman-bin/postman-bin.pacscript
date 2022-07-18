@@ -1,5 +1,5 @@
 name="postman-bin"
-version="9.24.2"
+version="9.22.2"
 description="Build, test, and document your APIs faster"
 repology=("project: postman" "visiblename: postman-bin")
 url="https://dl.pstmn.io/download/${version}/linux64"
