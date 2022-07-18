@@ -1,6 +1,6 @@
 name="discord-deb"
 gives="discord"
-breaks="${gives} ${gives}-app ${gives}-ptb-deb ${gives}-debian-patched-deb"
+breaks="${gives} ${gives}-app ${gives}-debian-patched-deb"
 version="0.0.18"
 description="Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities."
 hash="30758697cb4a6c6074fdfd05e827f52d1daeecb426ff2d468d4c65e75673931a"
