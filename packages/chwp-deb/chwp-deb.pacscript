@@ -8,5 +8,5 @@ pkgver() {
 }
 version="$(pkgver)"
 url="https://github.com/RouHim/chwp/releases/download/v${version}/chwp-x86-64.deb"
-description=" Changes the wallaper from the command line. "
+description="Changes the wallpaper from the command line"
 maintainer="Rouven Himmelstein <rouven@himmelstein.info>"
