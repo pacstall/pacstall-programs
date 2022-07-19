@@ -12,7 +12,6 @@ prepare() {
   sudo mkdir -p "${STOWDIR}/${name}/usr/share/${pkgname}/"
   sudo mkdir -p "${STOWDIR}/${name}/usr/share/applications/"
   sudo mkdir -p "${STOWDIR}/${name}/usr/share/icons/"
-  sudo mkdir -p "${STOWDIR}/${name}/usr/local/bin/"
 }
 
 build() {
