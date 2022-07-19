@@ -7,3 +7,4 @@ repology=("project: ${gives}")
 url="https://github.com/RouHim/chwp/releases/download/v${version}/chwp-x86-64.deb"
 description="Changes the wallpaper from the command line"
 maintainer="Rouven Himmelstein <rouven@himmelstein.info>"
+hash="eb2e15ee144362f5665cc15f274c4ac8fe9c7be463fb076d7265eb29e14afe10"
