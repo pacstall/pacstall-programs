@@ -18,7 +18,7 @@ build() {
 }
 
 install() {
-        sudo mv ${name}.desktop /usr/src/pacstall/${name}/usr/share/applications/
-        sudo cp discord.png /usr/src/pacstall/${name}/usr/share/icons/${name}.png
-        sudo mv ./* /usr/src/pacstall/${name}/usr/share/${name}/
+        sudo install -Dm755 discord-canary.desktop "${STOWDIR}/${name}/usr/share/applications/discord-canary.desktop"
+        sudo install -Dm755 discord.png "${STOWDIR}/${name}/usr/share/icons/discord.png"
+        sudo cp -R ./* "${STOWDIR}/${name}/usr/share/${name}/"
 }
