@@ -1,5 +1,5 @@
 name="nala-deb"
-version="0.9.1"
+version="0.10.0"
 pkgname="nala"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
@@ -11,8 +11,8 @@ nala_next=('bullseye' 'focal' 'impish')
 
 if [[ " ${nala_next[*]} " =~ " ${release} " ]]; then
   url="https://deb.volian.org/volian/pool/main/n/nala-legacy/nala-legacy_${version}_amd64.deb"
-  hash="183bd51167825460123c88f271f0cd5cd0d1ddad2672647f19c901c604ff9883"
+  hash="e59cf23f818857b83f9121149aaafba31fef630fd8f79e32b5676c39f92d5cb6"
 else
   url="https://deb.volian.org/volian/pool/main/n/nala/nala_${version}_all.deb"
-  hash="52a3d5f0d9cd548b1e4755839aba7a46f5cd872edadd3dc51e045912b2d89a50"
+  hash="292e28bac77908471bffb163d2db4c47e2989f46a4fff507562cd06422ec5c1d"
 fi
