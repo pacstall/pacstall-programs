@@ -41,7 +41,7 @@ install() {
   done
 
   # install the program
-  sudo mv ./* "${DEST}/usr/share/${pkgname}/"
+  sudo cp -R ./* "${DEST}/usr/share/${pkgname}/"
 }
 
 postinst() {
