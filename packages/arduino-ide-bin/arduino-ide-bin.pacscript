@@ -46,7 +46,7 @@ install() {
 
 postinst() {
   # link main executable so it is in PATH
-  sudo ln -s "${STOWDIR}/${name}/usr/share/${pkgname}/arduino" "/usr/local/bin/arduino"
+  sudo ln -sf "${STOWDIR}/${name}/usr/share/${pkgname}/arduino" "/usr/local/bin/arduino"
 
   fancy_message info "Please run the following command to authorize access to the Arduino's serial interface: \"sudo usermod -aG uucp dialout ${USER:-$(whoami)}\". You might have to log out and in again for the changes to take effect."
 }
