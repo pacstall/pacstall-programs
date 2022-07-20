@@ -9,6 +9,7 @@ anydesk-deb
 aomp-deb
 appimagelauncher-deb
 ardour-git
+arduino-ide-bin
 awesome-git
 aws-cli-v2-bin
 balena-etcher-electron-deb
@@ -31,6 +32,7 @@ btop-bin
 cantata
 caprine-deb
 chezmoi-deb
+chwp-deb
 clib
 cmatrix
 com.github.mirkobrombin.bottles-deb
@@ -51,6 +53,7 @@ dbeaver-ce-deb
 dino-git
 discord
 discord-canary
+discord-deb
 discord-debian-patched-deb
 discord-ptb-deb
 distrobox
@@ -211,6 +214,7 @@ plexmediaserver-deb
 polybar
 pomatez-deb
 popsicle
+postman-bin
 proton-python-client
 protonmail-bridge-deb
 protonvpn-cli
