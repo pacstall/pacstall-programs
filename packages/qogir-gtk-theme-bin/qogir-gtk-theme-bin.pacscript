@@ -9,13 +9,13 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="qogir-gtk-theme-bin"
 pkgname="qogir-gtk-theme"
 pkgdir="${STOWDIR}/${name}"
-version="2021-12-25"
+version="2022-04-29"
 description="Qogir is a flat Design theme for GTK"
 url="https://github.com/vinceliuice/Qogir-theme/archive/${version}.tar.gz"
 depends="gtk3-engines-unico gtk2-engines-murrine gtk2-engines-pixbuf"
 build_depends="libsass1"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-hash="fb6b55b88dd6d69814ccd877efc227f3f62c4c73d1cf407bb02d5b93ee345023"
+hash="4cbeab82b362fb3ac849009b501112695e7c8a4ae2e6b65d72bac54c3e14703c"
 repology=("project: qogir-theme" "repo: nix_unstable")
 
 # To specify flags for theme installation you have two options
