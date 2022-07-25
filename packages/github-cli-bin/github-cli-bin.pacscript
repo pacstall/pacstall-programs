@@ -7,7 +7,7 @@ repology=("project: ${gives}")
 version="2.14.2"
 url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version}_linux_amd64.tar.gz"
 description="GitHub's official command line tool - Binary version"
-hash="67aa87a824586f55600a5e8b7beb017ad14ba416110db9680c9829064c549c20"
+hash="3d4be4bf3446622c51192529f963d8719a2c78cc545aeab6fefff1c9ecf5b346"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
