@@ -1,11 +1,11 @@
 name="pycharm-community-bin"
-version="2022.1.2"
+version="2022.1.4"
 pkgname="pycharm-community"
 gives="pycharm-community"
 maintainer="Obsidian <emil-aarestrup@outlook.dk>"
 description="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 url="https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz"
-hash="34b9038b0d5fc7fa43ad8b7023b4622d2efe5dd64174539f5d50fc64e23c395d"
+hash="f89ee50c81145c2775ba17253e5b847d4d7b7bbdd5981032d6e397b111686eb1"
 desktop_file_sum="0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04"
 repology=("project: pycharm")
 
@@ -28,7 +28,7 @@ install() {
   sudo cp -dr --no-preserve='ownership' bin jbr lib plugins "${STOWDIR}/${name}/usr/share/pycharm/"
   sudo cp -dr --no-preserve='ownership' license "${STOWDIR}/${name}/usr/share/licenses/pycharm/"
   sudo cp -dr "${STOWDIR}/${name}/usr/share/pycharm/bin/pycharm.png" "${STOWDIR}/${name}/usr/share/pixmaps/"
-  if ! command -v pycharm >/dev/null; then #pycharm is already symlinked
+  if ! command -v pycharm > /dev/null; then #pycharm is already symlinked
     sudo ln -s "/usr/share/pycharm/bin/pycharm.sh" "/usr/bin/pycharm"
   fi
   sudo install -Dm 644 pycharm.desktop -t "${STOWDIR}/${name}"/usr/share/applications/
