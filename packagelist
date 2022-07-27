@@ -4,11 +4,13 @@ alacritty
 amfora-bin
 an-anime-game-launcher-bin
 android-studio
+ani-cli-bin
 anydesk-bin
 anydesk-deb
 aomp-deb
 appimagelauncher-deb
 ardour-git
+arduino-cli-bin
 arduino-ide-bin
 awesome-git
 aws-cli-v2-bin
@@ -284,7 +286,7 @@ vivarium
 vscode-deb
 vscodium-deb
 vyprvpn-deb
-waf
+waf-git
 walc-app
 warpinator-deb
 wazzapp-deb
