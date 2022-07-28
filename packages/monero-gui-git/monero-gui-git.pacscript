@@ -1,0 +1,25 @@
+name="monero-gui-git"
+pkgname="monero-gui"
+url="https://github.com/monero-project/monero-gui.git"
+build_depends="libboost-chrono-dev libboost-date-time-dev libboost-filesystem-dev libboost-locale-dev libboost-program-options-dev libboost-regex-dev libboost-serialization-dev libboost-system-dev libboost-thread-dev build-essential cmake pkg-config libprotobuf-dev protobuf-compiler"
+depends="miniupnpc libunbound-dev graphviz doxygen libunwind8-dev libssl-dev libzmq3-dev libsodium-dev libhidapi-dev libnorm-dev libusb-1.0-0-dev libpgm-dev libgcrypt20-dev"
+breaks="${pkgname}-bin"
+description="Open-source graphical user interface (GUI) wallet developed by the Monero community"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+
+pkgver() {
+    git ls-remote "${url}" master | cut -f1 | cut -c1-8
+}
+version="$(pkgver)"
+
+prepare() {
+    true
+}
+
+build() {
+    make -j"$(nproc)"
+}
+
+install() {
+    sudo make install DESTDIR="${STOWDIR}/${name}"
+}
