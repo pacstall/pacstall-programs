@@ -1,11 +1,11 @@
 name="minecraft-pi-reborn-app"
 pkgname="minecraft-pi-reborn"
-version="2.3.13"
+version="2.4.2"
 gives="${pkgname}"
 breaks="${pkgname}-git ${pkgname}-deb ${pkgname}-bin minecraft-pi-reborn-client"
 description="Minecraft Pi edition reborn with new features and for x86 pc."
-hash="816059d9e7540cba8940ac0d9b03d6de77c8b274e972574590595c4d3d8836c3"
-url="https://jenkins.thebrokenrail.com/job/minecraft-pi-reborn/job/master/219/artifact/out/minecraft-pi-reborn-client-${version}-amd64.AppImage"
+hash="0894fe57a9440a6d65dfaaaac88767c92b1e3f027024c3aa606049c33a7397b4"
+url="https://jenkins.thebrokenrail.com/job/minecraft-pi-reborn/job/master/lastStableBuild/artifact/out/minecraft-pi-reborn-client-${version}-amd64.AppImage"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 
 prepare() {
