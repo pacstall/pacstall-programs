@@ -1,9 +1,9 @@
 name="postman-bin"
-version="9.24.2"
+version="9.25.2"
 description="Build, test, and document your APIs faster"
 repology=("project: postman" "visiblename: postman-bin")
 url="https://kaifa.ch/pacstall/postman-${version}-linux-x64.tar.gz"
-hash="cfb85d7ae366ee1487ce1b2dab1c19ffa25c214af5c083a09447ed488493b115"
+hash="118da102904cd7b04c50d3e2c2daac3fc1228f05e541eacef55e8ecbf73d3896"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="postman"
 breaks="postman postman-deb postman-app"
