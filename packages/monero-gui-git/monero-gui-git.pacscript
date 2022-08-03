@@ -21,5 +21,6 @@ build() {
 }
 
 install() {
+    cd build
     sudo make install DESTDIR="${STOWDIR}/${name}"
 }
