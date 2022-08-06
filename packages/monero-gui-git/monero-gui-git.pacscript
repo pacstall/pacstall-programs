@@ -14,11 +14,11 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-    true
+    git submodule update --init --recursive
 }
 
 build() {
-    make -j"$(nproc)"
+    make release -j"$(nproc)"
 }
 
 install() {
