@@ -32,7 +32,7 @@ build() {
 install() {
   sudo install -Dm755 steamtinkerlaunch -t "${STOWDIR}/${name}/usr/bin"
   sudo install -d "${STOWDIR}/${name}/usr/share/steamtinkerlaunch"
-  sudo cp -r categories eval guicfgs lang misc "${STOWDIR}/${name}/usr/share/steamtinkerlaunch"
+  sudo cp -r collections eval guicfgs lang misc "${STOWDIR}/${name}/usr/share/steamtinkerlaunch"
   sudo install -Dm644 README.md -t "${STOWDIR}/${name}/usr/share/doc/steamtinkerlaunch"
   sudo install -Dm644 "misc/steamtinkerlaunch.desktop" -t "${STOWDIR}/${name}/usr/share/applications"
   sudo install -Dm644 "misc/steamtinkerlaunch.svg" -t "${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps"
