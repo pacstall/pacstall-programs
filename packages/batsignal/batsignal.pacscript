@@ -14,8 +14,8 @@ prepare() {
 }
 
 build() {
-  sed -i '40d' Makefile
-  sed -i '41d' Makefile
+  sed -i '47d' Makefile
+  sed -i '48d' Makefile
   make -j"$(nproc)"
 }
 
