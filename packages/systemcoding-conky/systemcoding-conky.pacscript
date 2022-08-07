@@ -9,13 +9,14 @@ description="System Coding's Version Of Conky"
 breaks="conky"
 
 prepare() {
-          true
+    true
 }
 
+
 build() {
-          true
+    true
 }
 
 install() {
-          sudo install -D conky/.conkyrc -t "${STOWDIR}/${name}"
+    sudo install -D conky/.conkyrc -t "${STOWDIR}/${name}"
 }
