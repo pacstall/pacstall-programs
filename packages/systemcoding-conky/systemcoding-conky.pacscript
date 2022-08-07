@@ -17,5 +17,5 @@ build() {
 }
 
 install() {
-          sudo install -D conky/.conkyrc -t /usr/src/pacstall/systemcoding-conky
+          sudo install -D conky/.conkyrc -t "${STOWDIR}/${name}"
 }
