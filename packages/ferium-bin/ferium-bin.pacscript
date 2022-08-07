@@ -3,9 +3,9 @@ pkgname="ferium"
 breaks="${pkgname}"
 replace="${pkgname}-git"
 repology=("project: ${pkgname}")
-version="4.1.8"
+version="4.1.10"
 url="https://github.com/gorilla-devs/${pkgname}/releases/download/v${version}/${pkgname}-linux-gnu-nogui.zip"
-hash="e7901e1c973eea8b00525f23f49a82a33814c4d51ebdec69a86fed59d31a0a49"
+hash="eb87ea75aa7670b2d510487c74cada1ba74a7889bd5c8766c0b7feb5530c1d8a"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 
 prepare() {
