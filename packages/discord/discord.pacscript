@@ -1,10 +1,10 @@
 name="discord"
-version="0.0.18"
+version="0.0.19"
 maintainer="aranym <aranym1@pm.me>"
 url="https://dl.discordapp.net/apps/linux/$version/$name-$version.tar.gz"
 depends="libc6 libasound2 libatomic1 libgconf-2-4 libnotify4 libnspr4 libnss3 libstdc++6 libxss1 libxtst6 libayatana-appindicator3-1 libc++1"
 description="Chat for Communities and Friends"
-hash="0417389fa437c6e044d77252de0cffe8473074e596e7b34ba76b1a3a5c0e80c2"
+hash="19f4b275d6c617c580e89987a38b54336edcc87579911032ac48997b58db0390"
 
 prepare() {
         sudo mkdir -p /usr/src/pacstall/discord/usr/share/discord/
