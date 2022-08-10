@@ -1,9 +1,9 @@
 name="discord-deb"
 gives="discord"
 breaks="${gives} ${gives}-app ${gives}-debian-patched-deb"
-version="0.0.18"
+version="0.0.19"
 description="Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities"
-hash="30758697cb4a6c6074fdfd05e827f52d1daeecb426ff2d468d4c65e75673931a"
+hash="65c4d4e75af540baf26568033c6a478e0f9e2d6dd46b8a5b539adf9b97a78aa2"
 maintainer="Obsidian <emil@aarestrup.nu>"
 url="https://dl.discordapp.net/apps/linux/${version}/discord-${version}.deb"
 repology=("project: ${gives}")
