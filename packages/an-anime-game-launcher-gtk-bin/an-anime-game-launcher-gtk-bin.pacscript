@@ -1,3 +1,9 @@
+if [[ "$(grep -Po 'ID=\K[^"]+' /etc/os-release)" == "debian" ]]; then
+    fancy_message error "This script doesn't work on Debian"
+    cleanup # Trigger pacstall cleanups
+    exit 1
+fi
+
 name=an-anime-game-launcher-gtk-bin
 pkgname=an-anime-game-launcher
 version=1.0.0
