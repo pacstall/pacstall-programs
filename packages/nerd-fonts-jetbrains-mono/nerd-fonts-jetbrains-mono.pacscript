@@ -22,4 +22,3 @@ install() {
 	sudo rm "${SRCDIR:?}/"*"Windows Compatible.ttf"
 	sudo install -Dm644 "${SRCDIR}/"*.ttf "${STOWDIR}/${name}"/usr/share/fonts/TTF
 }
-
