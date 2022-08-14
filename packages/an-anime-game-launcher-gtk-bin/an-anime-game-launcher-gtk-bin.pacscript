@@ -23,7 +23,7 @@ optdepends=(
 )
 
 prepare() {
-    sudo chmod +x "${SRCDIR}/an-anime-game-launcher"
+    sudo chmod +x "anime-game-launcher"
 }
 
 build() {
@@ -41,9 +41,9 @@ install() {
 
     sudo install -dm755 "${STOWDIR}/${name}/usr/lib/${pkgname}"
     sudo install -dm755 "${STOWDIR}/${name}/usr/bin/"
-    sudo cp an-anime-game-launcher "${STOWDIR}/${name}/usr/lib/${pkgname}/"
+    sudo cp anime-game-launcher "${STOWDIR}/${name}/usr/lib/${pkgname}/"
 
-    sudo ln -s -r "${STOWDIR}/${name}/usr/lib/${pkgname}/an-anime-game-launcher" "${STOWDIR}/${name}/usr/bin/an-anime-game-launcher"
+    sudo ln -s -r "${STOWDIR}/${name}/usr/lib/${pkgname}/anime-game-launcher" "${STOWDIR}/${name}/usr/bin/an-anime-game-launcher"
 }
 
 
