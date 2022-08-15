@@ -1,3 +1,10 @@
+# Cargo version is way outdated on Debian.
+if [[ "$(grep -Po 'ID=\K[^"]+' /etc/os-release)" == "debian" ]]; then
+    fancy_message error "This script doesn't work on Debian"
+    cleanup # Trigger pacstall cleanups
+    exit 1
+fi
+
 name="shellharden"
 pkgname="shellharden"
 version="4.3.0"
