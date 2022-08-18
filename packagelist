@@ -240,7 +240,7 @@ reshade-shaders-git
 sed
 shell-color-scripts
 shellcheck-bin
-shellharden-bin
+shellharden
 shfmt-bin
 signal-desktop-beta-deb
 signal-desktop-deb
