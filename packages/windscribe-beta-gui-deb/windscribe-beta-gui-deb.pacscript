@@ -1,7 +1,7 @@
 name="windscribe-beta-gui-deb"
 gives="windscribe"
 replace="${gives}"
-repology=("project: ${name}")
+repology=("project: ${gives}")
 version="2.4.8_beta"
 url="https://assets.totallyacdn.com/desktop/beta/${gives}_${version}_amd64.deb"
 description="Windscribe's GUI - Beta channel"
