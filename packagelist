@@ -88,6 +88,7 @@ fblog-deb
 fennel
 fennel-bin
 ferium-bin
+firefox-deb
 fishui-git
 fm6000-git
 fnlfmt
@@ -145,11 +146,13 @@ lagrange
 latte-dock-git
 lbry-deb
 lemonbar-xft-git
+lf-bin
 libcutefish-git
 libndi4-deb
 libresprite-git
 libressl
 librewolf-app
+librewolf-deb
 lrz-syncshare-deb
 lsd-deb
 lutris-deb
