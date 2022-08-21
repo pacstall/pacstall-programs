@@ -24,4 +24,3 @@ install() {
   # Install obquit
   sudo python3 setup.py install --root="${pkgdir}"
 }
-
