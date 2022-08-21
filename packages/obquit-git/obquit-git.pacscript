@@ -25,10 +25,3 @@ install() {
   sudo python3 setup.py install --root="${pkgdir}"
 }
 
-postinst() {
-  true
-}
-
-removescript() {
-  true
-}
