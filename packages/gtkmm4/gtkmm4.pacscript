@@ -14,7 +14,7 @@ maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks="${name} ${name}-bin ${name}-deb ${name}-app ${name}-git"
 
-depends="libgtk-4-1 mm-common libpangomm-1.4-1v5 libpangomm-1.4-dev libxkbcommon-dev libxml2-dev libxml2 wayland-scanner++ waylandpp-dev libwayland-dev libxrandr-dev libx11-dev"
+depends="libgtk-4-1 mm-common libpangomm-1.4-1v5 libpangomm-1.4-dev libxkbcommon-dev libxml2-dev libxml2 wayland-scanner++ waylandpp-dev libwayland-dev libxrandr-dev libx11-dev libxi-dev libxi6"
 build_depends="git meson ninja-build"
 
 prepare() {
