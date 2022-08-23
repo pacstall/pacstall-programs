@@ -14,7 +14,7 @@ maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks="${name} ${name}-bin ${name}-deb ${name}-app ${name}-git"
 
-depends="libgtk-4-1 mm-common libpangomm-1.4-1v5 libpangomm-1.4-dev"
+depends="libgtk-4-1 mm-common libpangomm-1.4-1v5 libpangomm-1.4-dev libxkbcommon-dev"
 build_depends="git meson ninja-build"
 
 prepare() {
