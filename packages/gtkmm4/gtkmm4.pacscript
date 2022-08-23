@@ -18,11 +18,9 @@ depends="libgtk-4-1 mm-common libpangomm-1.4-1v5 libpangomm-1.4-dev libxkbcommon
 build_depends="git meson ninja-build"
 
 prepare() {
-    meson configure -Dmaintainer-mode=true
     sed -i "/revision=master/c\revision=glibmm-2-72" subprojects/glibmm-2.68.wrap
-    meson --prefix="/usr" builddir
-    meson configure -Dmaintainer-mode=true
-    meson configure builddir -Dmaintainer-mode=true
+    meson --prefix="/usr" -Dmaintainer-mode=true builddir
+    sudo meson configure builddir/ -Dmaintainer-mode=true
     cd builddir
 }
 
