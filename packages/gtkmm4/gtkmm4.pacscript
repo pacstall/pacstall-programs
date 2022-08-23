@@ -25,7 +25,7 @@ prepare() {
 }
 
 build() {
-    ninja
+    sudo ninja
 }
 
 install() {
