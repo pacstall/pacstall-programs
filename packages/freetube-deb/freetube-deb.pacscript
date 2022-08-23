@@ -1,6 +1,6 @@
 name="freetube-deb"
 gives="freetube"
-version="0.16.0"
+version="0.17.1"
 url="https://github.com/FreeTubeApp/FreeTube/releases/download/v${version}-beta/${gives}_${version}_amd64.deb"
 description="An Open Source YouTube app for privacy."
 hash="e5e7911d8e673796a3adaa1099861c883b3ea6b520065e6e209688d5b1241494"
