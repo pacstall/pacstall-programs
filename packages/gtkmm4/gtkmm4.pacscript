@@ -20,8 +20,8 @@ build_depends="git meson ninja-build"
 prepare() {
     sed -i "/revision=master/c\revision=glibmm-2-72" subprojects/glibmm-2.68.wrap
     meson --prefix="/usr" builddir
-    meson configure -Dmaintainer-mode=true
     cd builddir
+    meson configure -Dmaintainer-mode=true
 }
 
 build() {
