@@ -11,8 +11,8 @@ repology=("project: gtkmm" "visiblename: gtkmm4.0")
 url="https://gitlab.gnome.org/GNOME/gtkmm/-/archive/${version}/gtkmm-${version}.tar.gz"
 hash="89de1024cb6d3f764b4fdca4ebe11791958aa6a8a2f46d7da1da166ccbb61841"
 maintainer="Marie Piontek <marie@kaifa.ch>"
-gives="${pkgname}"
-breaks="${pkgname} ${pkgname}-bin ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
+gives="${name}"
+breaks="${name} ${name}-bin ${name}-deb ${name}-app ${name}-git"
 
 depends="libgtk-4-1 mm-common libpangomm-1.4-1v5 libpangomm-1.4-dev"
 build_depends="git meson ninja-build"
