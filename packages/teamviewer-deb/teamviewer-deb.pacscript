@@ -1,0 +1,9 @@
+name="teamviewer-deb"
+gives="teamviewer"
+breaks="${gives}-bin"
+version="15.33.7"
+description="TeamViewer provides easy, fast and secure remote access and meeting solutions"
+hash="29b9a5e7b0673a5159c1ec492d0753c1fabfb0b1bb961e8445a68f789cbb87db"
+maintainer="Obsidian <emil@aarestrup.nu>"
+url="https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
+repology=("project: teamviewer")
