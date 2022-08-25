@@ -3,6 +3,7 @@ adapta-gtk-theme-git
 alacritty
 amfora-bin
 an-anime-game-launcher-bin
+an-anime-game-launcher-gtk-bin
 android-studio
 ani-cli-bin
 anydesk-bin
@@ -87,6 +88,7 @@ fblog-deb
 fennel
 fennel-bin
 ferium-bin
+firefox-deb
 fishui-git
 fm6000-git
 fnlfmt
@@ -119,6 +121,7 @@ grapejuice-git
 grive2
 grive2-git
 gtkhash
+gtkmm4
 hello
 heroic-games-launcher-deb
 htop
@@ -136,6 +139,7 @@ jetbrains-toolbox-bin
 jonaburg-picom-git
 kalendar-git
 keepassxc
+keybase-deb
 kirc
 kvantum
 kxstudio-repos-deb
@@ -143,16 +147,19 @@ lagrange
 latte-dock-git
 lbry-deb
 lemonbar-xft-git
+lf-bin
 libcutefish-git
 libndi4-deb
 libresprite-git
 libressl
 librewolf-app
+librewolf-deb
 lrz-syncshare-deb
 lsd-deb
 lutris-deb
 lyrebird-git
 lyx
+mailspring-deb
 maitreya8-deb
 makedeb-deb
 mangohud
@@ -176,6 +183,7 @@ neovim
 neovim-deb
 neovim-git
 nerd-fonts-hack
+nerd-fonts-jetbrains-mono
 nodejs-lts-deb
 nofetch
 noisetorch-bin
@@ -187,6 +195,7 @@ notion-app-enhanced-deb
 notion-git
 nowpm
 nyxt-deb
+obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-git
 obs-ndi-deb
@@ -235,7 +244,7 @@ reshade-shaders-git
 sed
 shell-color-scripts
 shellcheck-bin
-shellharden-bin
+shellharden
 shfmt-bin
 signal-desktop-beta-deb
 signal-desktop-deb
@@ -257,6 +266,7 @@ surf
 surf-distrotube-git
 surfshark-vpn-cli-deb
 suru-icon-theme-git
+systemcoding-conky
 taskwarrior
 teams-for-linux-deb
 telegram-bin
