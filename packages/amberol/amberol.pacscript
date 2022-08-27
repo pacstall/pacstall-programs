@@ -18,5 +18,5 @@ build() {
 }
 
 install() {
-  DESTDIR="${STOWDIR}/${name}" sudo ninja -C _builddir install
+  sudo DESTDIR="${STOWDIR}/${name}" ninja -C _builddir install
 }
