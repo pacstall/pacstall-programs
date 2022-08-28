@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Upscayl
+Exec=upscayl
+Terminal=false
+Type=Application
+Icon=upscayl
+StartupWMClass=Upscayl
+X-AppImage-Version=1.1.1
+Comment=Upscayl - Free and Open Source AI Image Upscaler
+Categories=Utility;
