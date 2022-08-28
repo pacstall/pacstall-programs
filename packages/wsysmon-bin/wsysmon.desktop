@@ -2,3 +2,4 @@
 Name=WSysMon
 Exec=wsysmon
 Type=Application
+Icon=utilities-system-monitor
