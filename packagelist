@@ -265,6 +265,7 @@ steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
+sublime-merge-deb
 sublime-text-deb
 surf
 surf-distrotube-git
@@ -309,7 +310,7 @@ wazzapp-deb
 webapp-manager
 webapp-manager-deb
 weechat-git
-windscribe-gui-deb
+windscribe-beta-gui-deb
 wine-staging-git
 yabridge
 yad
