@@ -1,5 +1,4 @@
 maintainer="0x262D <pacstall@copypaste.anonaddy.me>"
-
 name="wsysmon-bin"
 pkgname="wsysmon"
 gives="wsysmon"
