@@ -53,6 +53,7 @@ cutefish-settings-git
 cutefish-statusbar-git
 cutefish-wallpapers-git
 dbeaver-ce-deb
+deskcut-deb
 dino-git
 discord
 discord-canary
@@ -88,6 +89,7 @@ fblog-deb
 fennel
 fennel-bin
 ferium-bin
+feroxbuster-bin
 firefox-deb
 fishui-git
 fm6000-git
@@ -124,6 +126,7 @@ gtkhash
 gtkmm4
 hello
 heroic-games-launcher-deb
+highlight-pointer-bin
 htop
 httptoolkit-deb
 hyper-deb
@@ -264,6 +267,8 @@ steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
+sublime-merge-deb
+sublime-text-deb
 surf
 surf-distrotube-git
 surfshark-vpn-cli-deb
@@ -289,6 +294,7 @@ tuner-git
 tutanota-app
 ulauncher-deb
 universal-ctags-git
+upscayl-app
 uwufetch
 vega-strike-engine-git
 vega-strike-git
@@ -307,7 +313,7 @@ wazzapp-deb
 webapp-manager
 webapp-manager-deb
 weechat-git
-windscribe-gui-deb
+windscribe-beta-gui-deb
 wine-staging-git
 yabridge
 yad
