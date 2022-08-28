@@ -4,7 +4,6 @@ gives="upscayl"
 version="1.1.1"
 description="Upscayl - Free and Open Source AI Image Upscaler for Linux, MacOS and Windows"
 maintainer="0x262D <pacstall@copypaste.anonaddy.me>"
-
 url="https://github.com/TGS963/${gives}/releases/download/v${version}/Upscayl-${version}.AppImage"
 hash="d69f54f6b9d211cedb93d1f05fff4a2f25fe215b72d0988239d56ccb03b9b046"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-bin ${pkgname}-git"
