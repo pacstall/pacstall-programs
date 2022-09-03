@@ -1,6 +1,6 @@
 name="i3blocks-git"
 pkgname="i3blocks"
-pkgdir="/usr/src/pacstall/${name}"
+pkgdir="${STOWDIR}/${name}"
 description="A feed generator for text based status bars"
 url="https://github.com/vivien/${pkgname}.git"
 depends="autoconf gcc make pkgconf"
