@@ -17,7 +17,7 @@ prepare() {
 }
 
 build() {
-  make
+  make -j"$(nproc)"
 }
 
 install() {
