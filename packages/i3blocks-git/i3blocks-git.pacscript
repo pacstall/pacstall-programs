@@ -3,7 +3,7 @@ pkgname="i3blocks"
 pkgdir="/usr/src/pacstall/${name}"
 description="A feed generator for text based status bars"
 url="https://github.com/vivien/${pkgname}.git"
-depends="autoconf gcc make cmake"
+depends="autoconf gcc make pkgconf"
 breaks="${pkgname}"
 maintainer="Lanius <laniusone@pm.me>"
 
