@@ -22,5 +22,5 @@ build() {
 
 install() {
   # Install i3blocks
-  sudo make install DESTDIR=$pkgdir
+  sudo make install DESTDIR="$pkgdir"
 }
