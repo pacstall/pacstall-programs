@@ -101,9 +101,9 @@ gcmcore-deb
 geekbench-bin
 gfn-electron-bin
 git
+gitblade-deb
 git-delta-deb
 git-extras-git
-gitblade-deb
 gitfiend-deb
 github-cli-bin
 github-cli-deb
@@ -124,6 +124,7 @@ grive2
 grive2-git
 gtkhash
 gtkmm4
+harmonoid-deb
 hello
 heroic-games-launcher-deb
 highlight-pointer-bin
@@ -131,8 +132,8 @@ htop
 httptoolkit-deb
 hyper-deb
 hyperfine-bin
+i3blocks-git
 i3-gaps
-i3blocks
 i3lock-color
 ibhagwan-picom-git
 imwheel-exclude-patched-git
@@ -234,8 +235,8 @@ polybar
 pomatez-deb
 popsicle
 postman-bin
-proton-python-client
 protonmail-bridge-deb
+proton-python-client
 protonvpn-cli
 protonvpn-gui
 protonvpn-nm-lib
@@ -248,8 +249,8 @@ realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
 sed
-shell-color-scripts
 shellcheck-bin
+shell-color-scripts
 shellharden
 shfmt-bin
 signal-desktop-beta-deb
@@ -261,13 +262,13 @@ smplayer-deb
 soundux
 spacecadetpinball-git
 spotify-client-deb
-st-distrotube-git
-st-lukesmith-git
 starship-bin
+st-distrotube-git
 steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
+st-lukesmith-git
 sublime-merge-deb
 sublime-text-deb
 surf
