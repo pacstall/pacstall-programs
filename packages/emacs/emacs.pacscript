@@ -17,56 +17,56 @@ maintainer="wizard-28 <wiz28@pm.me>"
 # =================================================
 #
 ################################################################################
-CHECK=            # Run tests. May fail, this is developement after all.
+CHECK= # Run tests. May fail, this is developement after all.
 
-CLANG=            # Use clang.
+CLANG= # Use clang.
 
-GOLD=             # Use the gold linker.
+GOLD= # Use the gold linker.
 
-LTO=              # Enable link-time optimization. Still experimental.
+LTO= # Enable link-time optimization. Still experimental.
 
-JIT="YES"         # Enable native just-in-time compilation.
-                  # This compiles only performance critical elisp files.
-                  #
-                  # To compile all site-lisp on demand ( ELPA, MELPA, whatever),
-                  # add `(setq comp-deferred-compilation t)`
-                  # to your .emacs file.
+JIT="YES" # Enable native just-in-time compilation.
+# This compiles only performance critical elisp files.
+#
+# To compile all site-lisp on demand ( ELPA, MELPA, whatever),
+# add `(setq comp-deferred-compilation t)`
+# to your .emacs file.
 
-AOT="YES"         # Compile all elisp files.
+AOT="YES" # Compile all elisp files.
 
-CLI=              # CLI only binary.
+CLI= # CLI only binary.
 
-GPM=              # Mouse support in Linux console using gpmd.
+GPM= # Mouse support in Linux console using gpmd.
 
-NOTKIT=           # Use no toolkit widgets. Like B&W Twm (001d sk00l).
-                  # Bitmap fonts only, 1337!
+NOTKIT= # Use no toolkit widgets. Like B&W Twm (001d sk00l).
+# Bitmap fonts only, 1337!
 
-PGTK=             # Use native GTK3 build. Supports Wayland, yay!
+PGTK= # Use native GTK3 build. Supports Wayland, yay!
 
-GTK3="YES"        # GTK3 old windowing interface.
+GTK3="YES" # GTK3 old windowing interface.
 
-LUCID=            # Use the lucid, a.k.a athena, toolkit. Like XEmacs, sorta.
-                  #
-                  # Read https://wiki.archlinux.org/index.php/X_resources
-                  # https://en.wikipedia.org/wiki/X_resources
-                  # and https://www.emacswiki.org/emacs/XftGnuEmacs
-                  # for some tips on using outline fonts with
-                  # Xft, if you choose no toolkit or Lucid.
+LUCID= # Use the lucid, a.k.a athena, toolkit. Like XEmacs, sorta.
+#
+# Read https://wiki.archlinux.org/index.php/X_resources
+# https://en.wikipedia.org/wiki/X_resources
+# and https://www.emacswiki.org/emacs/XftGnuEmacs
+# for some tips on using outline fonts with
+# Xft, if you choose no toolkit or Lucid.
 
-XI2="YES"         # Use Xinput2 support.
-                  # https://www.x.org/releases/X11R7.7/doc/inputproto/XI2proto.txt
+XI2="YES" # Use Xinput2 support.
+# https://www.x.org/releases/X11R7.7/doc/inputproto/XI2proto.txt
 
-ALSA=             # Linux sound support.
+ALSA= # Linux sound support.
 
-NOCAIRO=          # Disable here.
+NOCAIRO= # Disable here.
 
-XWIDGETS=         # Use GTK+ widgets pulled from webkit2gtk. Usable.
+XWIDGETS= # Use GTK+ widgets pulled from webkit2gtk. Usable.
 
-DOCS_HTML=        # Generate and install html documentation.
+DOCS_HTML= # Generate and install html documentation.
 
-DOCS_PDF=         # Generate and install pdf documentation.
+DOCS_PDF= # Generate and install pdf documentation.
 
-NOGZ="YES"        # Don't compress .el files.
+NOGZ="YES" # Don't compress .el files.
 # ################################################################################
 
 name="emacs"
@@ -76,7 +76,7 @@ url="http://ftpmirror.gnu.org/emacs/emacs-${version}.tar.xz"
 description="An extensible, customizable, free/libre text editor — and more."
 build_depends="git autoconf texinfo pkg-config libncurses-dev"
 depends_nox="libalsaplayer0 libgnutls28-dev libxml2 libjansson-dev gpm"
-depends="${depends_nox} m17n-lib-bin libotf0 libharfbuzz0b"
+depends="${depends_nox} m17n-lib-bin libharfbuzz0b"
 gives="${name}"
 breaks="${name}-git ${name}-nox"
 replace="${name}-git ${name}-nox"
@@ -173,7 +173,7 @@ if [[ ${DOCS_PDF} == "YES" ]] && [[ ! -d "/usr/local/texlive" ]]; then
 fi
 
 prepare() {
-  [[ -x configure ]] || ( ./autogen.sh git && ./autogen.sh autoconf )
+  [[ -x configure ]] || (./autogen.sh git && ./autogen.sh autoconf)
   if [[ ${CHECK} == "YES" ]]; then
     make -j"$(nproc)" check
   fi
@@ -224,8 +224,8 @@ build() {
     _conf+=("--with-pgtk" "--without-xaw3d")
   fi
 
-  if [[ ${PGTK} != "YES"   ]]; then
-      _conf+=("--without-gsettings")
+  if [[ ${PGTK} != "YES" ]]; then
+    _conf+=("--without-gsettings")
   fi
 
   if [[ ${NOCAIRO} == "YES" || ${CLI} == "YES" || ${NOTKIT} == "YES" || ${LUCID} == "YES" ]]; then
@@ -233,9 +233,9 @@ build() {
   fi
 
   if [[ ${ALSA} == "YES" ]]; then
-      _conf+=("--with-sound=alsa")
+    _conf+=("--with-sound=alsa")
   else
-      _conf+=("--with-sound=no")
+    _conf+=("--with-sound=no")
   fi
 
   if [[ ${XWIDGETS} == "YES" ]]; then
@@ -243,7 +243,7 @@ build() {
   fi
 
   if [[ ${GPM} == "YES" ]]; then
-      true
+    true
   else
     _conf+=("--without-gpm")
   fi
