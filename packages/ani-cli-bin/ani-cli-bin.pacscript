@@ -4,6 +4,7 @@ version="3.4"
 repology=("project: ${pkgname}")
 url="https://github.com/pystardust/ani-cli/releases/download/v${version}/ani-cli"
 hash="8dcefc128f239c2bb792986930deac947a6d5eda1815004832d999d80b719e68"
+description="A cli tool to browse and play anime"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 
 prepare() {
