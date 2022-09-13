@@ -2,11 +2,11 @@ name="nerd-fonts-hack"
 pkgname="nerd-fonts-hack"
 breaks="${pkgname}"
 gives="${pkgname}"
-repology=("project: nerd-fonts")
-version="2.1.0"
+repology=("project: fonts:nerd-fonts")
+version="2.2.2"
 url="https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/Hack.zip"
 description="Patched font Hack from nerd-fonts library"
-hash="70852e59fcffbe31d401f615625bcb9ebb6af72732c2f1fe9b9d5370c2565514"
+hash="1f031b6d08d51f4830eacd00853dddc7fbd4ae0a05e169f2c13f3037dd3359b3"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 
 prepare() {
