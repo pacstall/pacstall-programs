@@ -2,11 +2,11 @@ name="nerd-fonts-jetbrains-mono"
 pkgname="nerd-fonts-jetbrains-mono"
 breaks="${pkgname}"
 gives="${pkgname}"
-repology=("project: nerd-fonts")
-version="2.1.0"
+repology=("project: fonts:nerd-fonts")
+version="2.2.2"
 url="https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/JetBrainsMono.zip"
 description="Patched font JetBrains Mono fron nerd-fonts library"
-hash="842013fa44b6896d4eb91635a81ef75244d78d7f61ff866c9dfd3315a67788cd"
+hash="8b9b6c58081d179ecd50839a6b211dbd24b61e66d87715860129b6138982ee7b"
 maintainer="Damian Bednarczyk <dbednar230@gmail.com>"
 
 prepare() {
