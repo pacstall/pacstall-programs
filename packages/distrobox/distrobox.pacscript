@@ -1,9 +1,9 @@
 name="distrobox"
-version="1.4.0"
+version="1.4.1"
 description="Use any linux distribution inside your terminal"
 repology=("project: distrobox")
 url="https://github.com/89luca89/distrobox/archive/refs/tags/${version}.tar.gz"
-hash="e643a702c3f3f0d7467afe840b4f3ee6e4c369b6464618b6ec09f7ad27eb64f5"
+hash="be3266f77011b30da5d0035e246d4e4a9360b7c90fbd8b90ac581165a00217b8"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks="${name} ${name}-deb ${name}-app ${name}-git"
