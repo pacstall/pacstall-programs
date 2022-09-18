@@ -6,11 +6,11 @@ fi
 
 name="an-anime-game-launcher-gtk-bin"
 pkgname="an-anime-game-launcher"
-version="1.0.4"
+version="1.1.0"
 description="An Launcher for a specific anime game with auto-patching made with libadwaita"
 repology=("project: an-anime-game-launcher-gtk")
 url="https://github.com/an-anime-team/an-anime-game-launcher-gtk/releases/download/${version}/anime-game-launcher"
-hash="bd964de48308db71b6e26dad0fb224d5cdf8085785307a13d975c1eb1697590b"
+hash="6998a454a6d3957c61f0728b9d5017885d8d5af16868c5b4ecd5bd735558fed1"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-bin ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
