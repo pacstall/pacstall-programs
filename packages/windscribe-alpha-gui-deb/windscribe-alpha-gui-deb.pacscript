@@ -1,0 +1,9 @@
+name="windscribe-alpha-gui-deb"
+gives="windscribe"
+replace="${gives}"
+repology=("project: ${gives}")
+version="2.5.6_guinea_pig"
+url="https://assets.totallyacdn.com/desktop/beta/${gives}_${version}_amd64.deb"
+description="Windscribe's GUI - Alpha/Guinea Pig channel"
+hash="d3763ddff9d5041bb4516bca65cbb690cdbaf206461592f7ba97300b3b43e4c3"
+maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
