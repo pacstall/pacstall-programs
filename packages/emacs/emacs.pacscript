@@ -115,9 +115,9 @@ fi
 
 if [[ ${JIT} == "YES" ]]; then
   if [[ ${CLI} == "YES" ]]; then
-    depends_nox+=" libgccjit0"
+    depends_nox+=" libgccjit0 libgccjit-11-dev"
   else
-    depends+=" libgccjit0"
+    depends+=" libgccjit0 libgccjit-11-dev"
   fi
 fi
 
