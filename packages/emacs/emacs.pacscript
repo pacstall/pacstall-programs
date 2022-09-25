@@ -134,7 +134,7 @@ elif [[ ${GTK3} == "YES" ]]; then
   build_depends+=" x11proto-dev libxi-dev"
 fi
 
-if [[ ${NOX} != "YES" ]] && [[ ${CLI} != "YES" ]]; then
+if [[ ${CLI} != "YES" ]]; then
   depends+=" libjpeg-turbo8 libpng16-16 giflib-tools libwebp7 libtiff5 libxpm4"
 elif [[ ${CLI} == "YES" ]]; then
   depends+=""
