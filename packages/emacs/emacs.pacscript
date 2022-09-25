@@ -17,61 +17,62 @@ maintainer="wizard-28 <wiz28@pm.me>"
 # =================================================
 #
 ################################################################################
-CHECK= # Run tests. May fail, this is developement after all.
+CHECK=            # Run tests. May fail, this is developement after all.
 
-CLANG= # Use clang.
+CLANG=            # Use clang.
 
-GOLD= # Use the gold linker.
+GOLD=             # Use the gold linker.
 
-LTO= # Enable link-time optimization. Still experimental.
+LTO=              # Enable link-time optimization. Still experimental.
 
-JIT="YES" # Enable native just-in-time compilation.
-# This compiles only performance critical elisp files.
-#
-# To compile all site-lisp on demand ( ELPA, MELPA, whatever),
-# add `(setq comp-deferred-compilation t)`
-# to your .emacs file.
+JIT="YES"         # Enable native just-in-time compilation. libgccjit is in AUR.
+                  # This compiles only performance critical elisp files.
+                  #
+                  # To compile all site-lisp on demand (repos/AUR packages,
+                  # ELPA, MELPA, whatever), add
+                  #    (setq comp-deferred-compilation t)
+                  # to your .emacs file.
 
-AOT="YES" # Compile all elisp files.
+AOT="YES"         # Compile all elisp files.
 
-CLI= # CLI only binary.
+CLI=              # CLI only binary.
 
-GPM= # Mouse support in Linux console using gpmd.
+GPM=              # Mouse support in Linux console using gpmd.
 
-NOTKIT= # Use no toolkit widgets. Like B&W Twm (001d sk00l).
-# Bitmap fonts only, 1337!
+NOTKIT=           # Use no toolkit widgets. Like B&W Twm (001d sk00l).
+                  # Bitmap fonts only, 1337!
 
-PGTK= # Use native GTK3 build. Supports Wayland, yay!
+PGTK=             # Use native GTK3 build. Supports Wayland, yay!
 
-GTK3="YES" # GTK3 old windowing interface.
+GTK3="YES"        # GTK3 old windowing interface.
 
-LUCID= # Use the lucid, a.k.a athena, toolkit. Like XEmacs, sorta.
-#
-# Read https://wiki.archlinux.org/index.php/X_resources
-# https://en.wikipedia.org/wiki/X_resources
-# and https://www.emacswiki.org/emacs/XftGnuEmacs
-# for some tips on using outline fonts with
-# Xft, if you choose no toolkit or Lucid.
+LUCID=            # Use the lucid, a.k.a athena, toolkit. Like XEmacs, sorta.
+                  #
+                  # Read https://wiki.archlinux.org/index.php/X_resources
+                  # https://en.wikipedia.org/wiki/X_resources
+                  # and https://www.emacswiki.org/emacs/XftGnuEmacs
+                  # for some tips on using outline fonts with
+                  # Xft, if you choose no toolkit or Lucid.
 
-XI2="YES" # Use Xinput2 support.
-# https://www.x.org/releases/X11R7.7/doc/inputproto/XI2proto.txt
+XI2="YES"         # Use Xinput2 support.
+                  # https://www.x.org/releases/X11R7.7/doc/inputproto/XI2proto.txt
 
-ALSA= # Linux sound support.
+ALSA=             # Linux sound support.
 
-NOCAIRO= # Disable here.
+NOCAIRO=          # Disable here.
 
-XWIDGETS= # Use GTK+ widgets pulled from webkit2gtk. Usable.
+XWIDGETS=         # Use GTK+ widgets pulled from webkit2gtk. Usable.
 
-DOCS_HTML= # Generate and install html documentation.
+DOCS_HTML=        # Generate and install html documentation.
 
-DOCS_PDF= # Generate and install pdf documentation.
+DOCS_PDF=         # Generate and install pdf documentation.
 
-NOGZ="YES" # Don't compress .el files.
-# ################################################################################
+NOGZ="YES"        # Don't compress .el files.
+#################################################################################
 
 name="emacs"
 pkgdir="/usr/src/pacstall/${name}"
-version="28.1"
+version="28.2"
 url="http://ftpmirror.gnu.org/emacs/emacs-${version}.tar.xz"
 description="An extensible, customizable, free/libre text editor — and more."
 build_depends="git autoconf texinfo pkg-config libncurses-dev"
@@ -80,7 +81,7 @@ depends="${depends_nox} m17n-lib-bin libharfbuzz0b"
 gives="${name}"
 breaks="${name}-git ${name}-nox"
 replace="${name}-git ${name}-nox"
-hash="28b1b3d099037a088f0a4ca251d7e7262eab5ea1677aabffa6c4426961ad75e1"
+hash="ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488"
 repology=("project: emacs")
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then
