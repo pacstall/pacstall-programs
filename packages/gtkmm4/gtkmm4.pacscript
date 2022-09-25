@@ -5,11 +5,11 @@ if [[ "$(grep -Po 'ID=\K[^"]+' /etc/os-release)" == "debian" ]]; then
 fi
 
 name="gtkmm4"
-version="4.6.1"
+version="4.8.0"
 description="A C++ interface for GTK4 library"
 repology=("project: gtkmm")
 url="https://gitlab.gnome.org/GNOME/gtkmm/-/archive/${version}/gtkmm-${version}.tar.gz"
-hash="fcb4c1976dff727db879907a7d873d1581f7abc70987d2ea766b6f1c8216674d"
+hash="40a9cdb260564ef539bcbc6b736852e44ece0ae96f7c2552097bec2d6e059c6a"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks="${name} ${name}-bin ${name}-deb ${name}-app ${name}-git"
