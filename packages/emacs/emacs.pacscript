@@ -130,7 +130,7 @@ elif [[ ${LUCID} == "YES" ]]; then
   depends+=" dbus hicolor-icon-theme libxinerama1 libxfixes3 liblcms2-2 librsvg2-2 xaw3dg libxrandr2 libxi6 libsm6 libxcb-util1 libxcb1"
   build_depends+=" x11proto-dev"
 elif [[ ${GTK3} == "YES" ]]; then
-  depends+=" libgtk3.0-cil libsm6 libxcb-util1 libxcb1"
+  depends+=" libgtk-3-dev libsm6 libxcb-util1 libxcb1"
   build_depends+=" x11proto-dev libxi-dev"
 fi
 
