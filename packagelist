@@ -53,6 +53,7 @@ cutefish-settings-git
 cutefish-statusbar-git
 cutefish-wallpapers-git
 dbeaver-ce-deb
+deskcut-deb
 dino-git
 discord
 discord-canary
@@ -88,6 +89,7 @@ fblog-deb
 fennel
 fennel-bin
 ferium-bin
+feroxbuster-bin
 firefox-deb
 fishui-git
 fm6000-git
@@ -122,13 +124,17 @@ grive2
 grive2-git
 gtkhash
 gtkmm4
+harmonoid-deb
+headset-deb
 hello
 heroic-games-launcher-deb
+highlight-pointer-bin
 htop
 httptoolkit-deb
 hyper-deb
 hyperfine-bin
 i3-gaps
+i3blocks-git
 i3lock-color
 ibhagwan-picom-git
 imwheel-exclude-patched-git
@@ -141,6 +147,7 @@ kalendar-git
 keepassxc
 keybase-deb
 kirc
+komorebi-fork-deb
 kvantum
 kxstudio-repos-deb
 lagrange
@@ -194,6 +201,7 @@ notion-app-deb
 notion-app-enhanced-deb
 notion-git
 nowpm
+nuclei-bin
 nyxt-deb
 obquit-git
 obs-backgroundremoval
@@ -262,6 +270,8 @@ steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
+sublime-merge-deb
+sublime-text-deb
 surf
 surf-distrotube-git
 surfshark-vpn-cli-deb
@@ -287,6 +297,7 @@ tuner-git
 tutanota-app
 ulauncher-deb
 universal-ctags-git
+upscayl-app
 uwufetch
 vega-strike-engine-git
 vega-strike-git
@@ -298,15 +309,17 @@ vivarium
 vscode-deb
 vscodium-deb
 vyprvpn-deb
-waf-git
+waf
 walc-app
 warpinator-deb
 wazzapp-deb
 webapp-manager
 webapp-manager-deb
 weechat-git
-windscribe-gui-deb
+windscribe-alpha-gui-deb
+windscribe-beta-gui-deb
 wine-staging-git
+wsysmon-bin
 yabridge
 yad
 yafetch-git

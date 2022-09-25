@@ -39,7 +39,7 @@ build() {
   (
     cd build/ || return 2
     cmake ..
-    cmake --build .
+    cmake --build . --target fastfetch --target flashfetch -j "$(nproc)"
   )
 }
 
@@ -57,9 +57,8 @@ install() {
   sudo install -Dm644 "completions/bash" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
 
   # Install presets
-  for file in presets/*; do
-    sudo install -D "${file}" -t "${pkgdir}/usr/share/${pkgname}/presets"
-  done
+  sudo mkdir -p "${pkgdir}/usr/share/${pkgname}/presets"
+  sudo cp -r presets/* "${pkgdir}/usr/share/${pkgname}/presets"
 }
 
 removescript() {
