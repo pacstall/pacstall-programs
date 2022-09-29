@@ -124,6 +124,8 @@ grive2
 grive2-git
 gtkhash
 gtkmm4
+harmonoid-deb
+headset-deb
 hello
 heroic-games-launcher-deb
 highlight-pointer-bin
@@ -132,7 +134,7 @@ httptoolkit-deb
 hyper-deb
 hyperfine-bin
 i3-gaps
-i3blocks
+i3blocks-git
 i3lock-color
 ibhagwan-picom-git
 imwheel-exclude-patched-git
@@ -272,7 +274,6 @@ sublime-merge-deb
 sublime-text-deb
 surf
 surf-distrotube-git
-surfshark-vpn-cli-deb
 suru-icon-theme-git
 systemcoding-conky
 taskwarrior
@@ -307,13 +308,14 @@ vivarium
 vscode-deb
 vscodium-deb
 vyprvpn-deb
-waf-git
+waf
 walc-app
 warpinator-deb
 wazzapp-deb
 webapp-manager
 webapp-manager-deb
 weechat-git
+windscribe-alpha-gui-deb
 windscribe-beta-gui-deb
 wine-staging-git
 wsysmon-bin

@@ -1,8 +1,10 @@
-name="gcmcore-deb"
+name="git-credential-manager-core-deb"
+pkgname="git-credential-manager-core"
 gives="gcmcore"
+repology=("project: ${pkgname}")
 version="2.0.696"
 depends="git"
 url="https://github.com/GitCredentialManager/git-credential-manager/releases/download/v${version}/${gives}-linux_amd64.${version}.deb"
-description="Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services."
+description="Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services"
 hash="caba73101f80c1a789225730d0d1b82941c31707cef6a55fb3cb3caada68d234"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
