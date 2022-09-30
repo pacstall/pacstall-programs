@@ -6,6 +6,7 @@ repology=("project: ${pkgname}")
 version="4.1.10"
 url="https://github.com/gorilla-devs/${pkgname}/releases/download/v${version}/${pkgname}-linux-gnu-nogui.zip"
 hash="eb87ea75aa7670b2d510487c74cada1ba74a7889bd5c8766c0b7feb5530c1d8a"
+description="Fast and multi-source CLI program for managing Minecraft mods"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 
 prepare() {

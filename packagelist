@@ -3,7 +3,6 @@ adapta-gtk-theme-git
 alacritty
 amfora-bin
 an-anime-game-launcher-bin
-an-anime-game-launcher-gtk-bin
 android-studio
 ani-cli-bin
 anydesk-bin
@@ -274,7 +273,6 @@ sublime-merge-deb
 sublime-text-deb
 surf
 surf-distrotube-git
-surfshark-vpn-cli-deb
 suru-icon-theme-git
 systemcoding-conky
 taskwarrior
@@ -316,6 +314,7 @@ wazzapp-deb
 webapp-manager
 webapp-manager-deb
 weechat-git
+windscribe-alpha-gui-deb
 windscribe-beta-gui-deb
 wine-staging-git
 wsysmon-bin
