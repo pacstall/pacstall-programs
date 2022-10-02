@@ -1,12 +1,12 @@
 name="batsignal"
 repology=("project: ${name}")
-version="1.5.1"
+version="1.6.2"
 url="https://github.com/electrickite/batsignal/archive/refs/tags/${version}.tar.gz"
 build_depends="make pkg-config gcc sed"
 depends="libnotify-dev"
 breaks="${name} ${name}-git"
 description="A lightweight battery monitor daemon"
-hash="99f09816529932b73f95d1989dc29fa952468193f7438e232d4e0627be01969b"
+hash="0576257b6b960826799641e15521317a2d075d24f5da0c1abf180e2731022673"
 maintainer="Harshwardhan Mehrotra <harshwardhanmehrotra@gmail.com>"
 
 prepare() {
