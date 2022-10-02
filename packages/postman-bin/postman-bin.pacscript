@@ -37,6 +37,6 @@ postinst() {
 }
 
 removescript() {
-    sudo unlink "/usr/share/icons/hicolor/128x128/apps/postman.png"
-    sudo unlink "/usr/bin/postman"
+    sudo rm -f "/usr/share/icons/hicolor/128x128/apps/postman.png"
+    sudo rm -f "/usr/bin/postman"
 }
