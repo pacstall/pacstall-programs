@@ -1,5 +1,5 @@
 name="linux-headers-deb"
-gives="linux-headers-6.0.0-060000_6.0.0-060000.202210022231_all"
+gives="linux-headers"
 version="6.0"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.0/amd64/linux-headers-6.0.0-060000_6.0.0-060000.202210022231_all.deb"
 description="Ubuntu Linux mainline kernel (Headers)"
