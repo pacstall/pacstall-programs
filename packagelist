@@ -160,6 +160,11 @@ libresprite-git
 libressl
 librewolf-app
 librewolf-deb
+linux-headers-deb
+linux-headers-generic-deb
+linux-image-unsigned-deb
+linux-kernel-deb
+linux-modules-deb
 lrz-syncshare-deb
 lsd-deb
 lutris-deb
