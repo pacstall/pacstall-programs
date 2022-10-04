@@ -1,5 +1,5 @@
 name="linux-image-unsigned-deb"
-gives="linux-image-unsigned"
+gives="linux-image-unsigned-6.0.0-060000-generic_6.0.0-060000.202210022231_amd64"
 version="6.0"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.0/amd64/linux-image-unsigned-6.0.0-060000-generic_6.0.0-060000.202210022231_amd64.deb"
 description="Ubuntu Linux mainline kernel (Unsigned image)"

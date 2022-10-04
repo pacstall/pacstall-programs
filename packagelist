@@ -163,7 +163,7 @@ librewolf-deb
 linux-headers-deb
 linux-headers-generic-deb
 linux-image-unsigned-deb
-linux-kernel-deb
+linux-kernel
 linux-modules-deb
 lrz-syncshare-deb
 lsd-deb
