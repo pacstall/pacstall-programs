@@ -17,6 +17,11 @@ build() {
 }
 
 install() {
+  true
+}
+
+postinst() {
+  yabridgectl set --path="/usr/lib/yabridge"
   sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridgectl" "/usr/bin"
   sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host.exe" "/usr/bin"
   sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host.exe.so" "/usr/bin"
@@ -24,10 +29,6 @@ install() {
   sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host-32.exe.so" "/usr/bin"
   sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/libyabridge-vst2.so" "/usr/lib"
   sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/libyabridge-vst3.so" "/usr/lib"
-}
-
-postinst() {
-  yabridgectl set --path="/usr/lib/yabridge"
 }
 
 removescript() {
