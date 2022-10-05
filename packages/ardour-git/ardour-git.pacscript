@@ -48,7 +48,9 @@ install() {
   sudo ./waf install --destdir="$STOWDIR/$name"
 
   wait
+}
 
+postinst() {
   sudo rm "$STOWDIR/$name/usr/bin/ardour6-copy-mixer"
   sudo ln -sf "$STOWDIR/$name/usr/lib/ardour6/utils/ardour-util.sh" "/usr/bin/ardour6-copy-mixer"
   sudo rm "$STOWDIR/$name/usr/bin/ardour6-export"
@@ -79,7 +81,6 @@ install() {
     sudo install -vdm 755 "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps"
     sudo install -vDm 644 "$STOWDIR/$name/usr/share/ardour6/resources/Ardour-icon_${size}px.png" "$STOWDIR/$name/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
   done
-
 }
 
 removescript() {
