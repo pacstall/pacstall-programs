@@ -1,0 +1,6 @@
+name="xfce4-deb"
+gives="xfce4"
+version="4.16"
+url="http://ftp.de.debian.org/debian/pool/main/x/xfce4/xfce4_4.16_all.deb"
+description="XFCE4 Desktop"
+maintainer="Chadano <chadano@llamawebdesign.co.uk>"
