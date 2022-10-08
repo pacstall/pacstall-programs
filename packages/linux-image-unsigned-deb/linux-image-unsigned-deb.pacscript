@@ -1,0 +1,7 @@
+name="linux-image-unsigned-deb"
+gives="linux-image-unsigned-6.0.0-060000-generic"
+version="6.0"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.0/amd64/linux-image-unsigned-6.0.0-060000-generic_6.0.0-060000.202210022231_amd64.deb"
+description="Ubuntu Linux mainline kernel (Unsigned image)"
+hash="4ba5240d451ca534ae4daa30d9095fe1660c595a54c6f0739705675ac56d8b47"
+maintainer="Chadano <chadano@llamawebdesign.co.uk>"
