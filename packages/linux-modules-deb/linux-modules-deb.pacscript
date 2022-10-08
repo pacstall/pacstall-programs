@@ -1,0 +1,7 @@
+name="linux-modules-deb"
+gives="linux-modules-6.0.0-060000-generic"
+version="6.0"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.0/amd64/linux-modules-6.0.0-060000-generic_6.0.0-060000.202210022231_amd64.deb"
+description="Ubuntu Linux mainline kernel (Linux Modules)"
+hash="90e2e3e0c68975c963207db0efa3b4d7ba67d808422deca6da8c83c91e698aff"
+maintainer="Chadano <chadano@llamawebdesign.co.uk>"

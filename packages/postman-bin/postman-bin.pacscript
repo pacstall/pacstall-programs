@@ -27,9 +27,8 @@ install() {
     sudo install -d "${STOWDIR}/${name}/opt/postman/" "${STOWDIR}/${name}/usr/bin"
     sudo install -d "${STOWDIR}/${name}/usr/share/icons/hicolor/128x128/apps"
 
-    sudo cp -r ${SRCDIR}/Postman/app/* ${STOWDIR}/${name}/opt/postman/
+    sudo cp -r ${SRCDIR}/Postman/app/* "${STOWDIR}/${name}/opt/postman/"
     sudo chmod +x "${STOWDIR}/${name}/opt/postman/postman"
-
 }
 
 postinst() {
