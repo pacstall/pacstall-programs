@@ -1,0 +1,7 @@
+name="linux-headers-deb"
+gives="linux-headers-6.0.0-060000"
+version="6.0"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.0/amd64/linux-headers-6.0.0-060000_6.0.0-060000.202210022231_all.deb"
+description="Ubuntu Linux mainline kernel (Headers)"
+hash="d4454352d82bfa56afb2e62f33a2d9a579870b28564d102cfeb55bd3b29eb712"
+maintainer="Chadano <chadano@llamawebdesign.co.uk>"
