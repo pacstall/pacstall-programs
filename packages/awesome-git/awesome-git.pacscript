@@ -42,7 +42,7 @@ install() {
 
 postinst() {
   # Install to correct location .desktop file
-  sudo ln -sf "${pkgdir}"/usr/local/share/xsessions/"${pkgname}".desktop /usr/share/xsessions/"${pkgname}".desktop
+  sudo ln -sf /usr/local/share/xsessions/"${pkgname}".desktop /usr/share/xsessions/"${pkgname}".desktop
 }
 
 removescript() {
