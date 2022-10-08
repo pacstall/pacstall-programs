@@ -53,5 +53,5 @@ postinst() {
 
 removescript() {
   # remove linked executable
-  sudo rm "/usr/local/bin/arduino"
+  sudo rm -f "/usr/local/bin/arduino"
 }
