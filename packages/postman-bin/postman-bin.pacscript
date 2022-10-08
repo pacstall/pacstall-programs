@@ -30,6 +30,14 @@ install() {
     sudo cp -r ${SRCDIR}/Postman/app/* ${STOWDIR}/${name}/opt/postman/
     sudo chmod +x "${STOWDIR}/${name}/opt/postman/postman"
 
-    sudo ln -s -r "${STOWDIR}/${name}/opt/postman/app/resources/app/assets/icon.png" "${STOWDIR}/${name}/usr/share/icons/hicolor/128x128/apps/postman.png"
-    sudo ln -s -r "${STOWDIR}/${name}/opt/postman/Postman" "${STOWDIR}/${name}/usr/bin/postman"
+}
+
+postinst() {
+    sudo ln -s -r "/opt/postman/app/resources/app/assets/icon.png" "/usr/share/icons/hicolor/128x128/apps/postman.png"
+    sudo ln -s -r "/opt/postman/Postman" "/usr/bin/postman"
+}
+
+removescript() {
+   sudo rm -f "/usr/share/icons/hicolor/128x128/apps/postman.png"
+   sudo rm -f "/usr/bin/postman"
 }
