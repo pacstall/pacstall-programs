@@ -33,7 +33,7 @@ install() {
 }
 
 postinst() {
-    sudo ln -s "$STOWDIR/$name/opt/$name/bin/smartgit.sh" "/usr/bin/smartgit"
+    sudo ln -s "/opt/$name/bin/smartgit.sh" "/usr/bin/smartgit"
 }
 
 removescript() {
