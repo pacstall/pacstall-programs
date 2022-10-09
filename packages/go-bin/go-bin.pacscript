@@ -6,7 +6,6 @@ version="1.19.2"
 description="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
 url="https://go.dev/dl/go${version}.linux-amd64.tar.gz"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-app ${pkgname}-deb golang golang-git golang-deb golang-bin golang-app golang-go"
-gives="golang-go"
 replace="golang-go"
 hash="5e8c5a74fe6470dd7e055a461acda8bb4050ead8c2df70f227e3ff7d8eb7eeb6"
 repology=("project: go")
