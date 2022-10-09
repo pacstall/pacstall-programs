@@ -1,0 +1,7 @@
+name="linux-headers-generic-deb"
+gives="linux-headers-6.0.0-060000-generic"
+version="6.0"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.0/amd64/linux-headers-6.0.0-060000-generic_6.0.0-060000.202210022231_amd64.deb"
+description="Ubuntu Linux mainline kernel (Generic headers)"
+hash="9906c4f728e342cb638b88d76ea654497510c88865f2df33c76cef7ab25b13b4"
+maintainer="Chadano <chadano@llamawebdesign.co.uk>"

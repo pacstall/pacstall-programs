@@ -2,14 +2,15 @@ maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 
 pkgname="tutanota"
 name="${pkgname}-app"
-version="3.89.25"
+version="3.100.2"
 description="Tutanota is the world's most secure email service, easy to use and private by design."
 url="https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage"
 __icon_url="https://icons-for-free.com/download-icon-super+tiny+icons+tutanota-1324450784669328293_256.png"
-__icon_hash="e76f83c33cab7c3b1e7d4c827927e0c883bc7f41cb2e2f3ce7d493cd96970d76"
+__icon_hash="06c8fc033557d9b279f21af4c2e7d925145487e552d94f59ddae5c0e42979c13"
 breaks="${pkgname}-deb ${pkgname}-bin ${pkgname}-git ${pkgname}"
 gives="${pkgname}"
 replace="${pkgname}"
+repology=("project: tutanota" "repo: homebrew_casks")
 
 prepare() {
   true
