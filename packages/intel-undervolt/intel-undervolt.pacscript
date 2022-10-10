@@ -7,8 +7,8 @@ maintainer="Henryws <hwengerstickel@pm.me>"
 description="Tool for undervolting and throttling limits alteration for Intel CPUs"
 
 prepare() {
-  # other flags are '--enable-slogind' and '--enable-openrc'
-  ./configure --enable-systemd
+  # other flags are '--enable-systemd', '--enable-slogind', '--enable-openrc'
+  ./configure
 }
 
 build() {
