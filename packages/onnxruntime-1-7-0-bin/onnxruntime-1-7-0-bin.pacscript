@@ -21,7 +21,7 @@ install() {
 
 postinst() {
   sudo rm -f "/usr/local/lib/lib${pkgname}.so" 2> /dev/null
-  sudo ln -s "/usr/local/lib/lib${pkgname}.so.${version}" "/usr/local/lib/lib${pkgname}.so"
+  sudo ln -sf "/usr/local/lib/lib${pkgname}.so.${version}" "/usr/local/lib/lib${pkgname}.so"
 }
 
 removescript() {
