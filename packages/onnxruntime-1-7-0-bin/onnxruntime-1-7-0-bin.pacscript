@@ -20,7 +20,7 @@ install() {
 }
 
 postinst() {
-  sudo rm "/usr/local/lib/lib${pkgname}.so" 2> /dev/null
+  sudo rm -f "/usr/local/lib/lib${pkgname}.so" 2> /dev/null
   sudo ln -s "/usr/local/lib/lib${pkgname}.so.${version}" "/usr/local/lib/lib${pkgname}.so"
 }
 
