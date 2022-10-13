@@ -1,9 +1,9 @@
 name="firefox-deb"
 gives="firefox"
-version="104.0"
+version="105.0"
 replace="${gives}"
-url="https://launchpad.net/~mozillateam/+archive/ubuntu/ppa/+build/24287972/+files/firefox_${version}+build1-0ubuntu0.16.04.1~mt1_amd64.deb"
+url="http://launchpadlibrarian.net/624606759/firefox_${version}+build2-0ubuntu0.20.04.1_amd64.deb"
 description="Firefox stable, deb version from official PPA"
-hash="8e99026a38a98e795cda8ecaa6ce43cfb702686cac3b757cac31fe1621aa550d"
+hash="sb3aa338d74ed7b9de7fe64a93090f4d92085c532efc060f0e1dccf452d375e58"
 repology=("project: firefox")
 maintainer="Lanius <laniusone@pm.me>"
