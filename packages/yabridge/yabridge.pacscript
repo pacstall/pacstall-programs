@@ -7,33 +7,21 @@ hash="e9b66d48339cec5f3cc929d1da37d73c78c04d98281d051a2cbbe20dfb8f9eba"
 optdepends=("wine: 32-bit windows emulator"
   "wine64: 64-bit windows emulator")
 maintainer="echometerain <echometer@disroot.org>"
-prepare() {
-  sudo install -D ./* -t "${STOWDIR}/${name}/usr/lib/yabridge"
-}
 repology=("project: yabridge")
+
+prepare() {
+  true
+}
 
 build() {
   true
 }
 
 install() {
-  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridgectl" "/usr/bin"
-  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host.exe" "/usr/bin"
-  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host.exe.so" "/usr/bin"
-  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host-32.exe" "/usr/bin"
-  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/yabridge-host-32.exe.so" "/usr/bin"
-  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/libyabridge-vst2.so" "/usr/lib"
-  sudo ln -sf "${STOWDIR}/${name}/usr/lib/yabridge/libyabridge-vst3.so" "/usr/lib"
-}
+  sudo install -dm755 "$pkgdir/usr/bin"
+  sudo install yabridgectl "$pkgdir/usr/bin"
+  sudo install yabridge-host{,-32}.exe{,.so} "$pkgdir/usr/bin"
 
-postinst() {
-  yabridgectl set --path="/usr/lib/yabridge"
-}
-
-removescript() {
-  sudo rm "/usr/bin/yabridgectl"
-  sudo rm "/usr/bin/yabridge-host.exe"
-  sudo rm "/usr/bin/yabridge-host.exe.so"
-  sudo rm "/usr/bin/yabridge-host-32.exe"
-  sudo rm "/usr/bin/yabridge-host-32.exe.so"
+  sudo install -dm755 "$pkgdir/usr/lib"
+  sudo install libyabridge{,-chainloader}-{vst2,vst3}.so "$pkgdir/usr/lib"
 }
