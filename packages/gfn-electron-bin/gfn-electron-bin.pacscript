@@ -39,5 +39,5 @@ postinst() {
 }
 
 removescript() {
-    sudo rm "/usr/bin/geforcenow"
+    sudo rm -f "/usr/bin/geforcenow"
 }
