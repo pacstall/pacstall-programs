@@ -40,5 +40,5 @@ postinst() {
 }
 
 removescript() {
-    sudo rm "/usr/bin/tidal-hifi"
+    sudo rm -f "/usr/bin/tidal-hifi"
 }
