@@ -32,9 +32,9 @@ install() {
     sudo cp -dr --no-preserve=ownership an-anime-game-launcher "${STOWDIR}/${name}/usr/lib/${pkgname}"
     sudo cp -dr --no-preserve=ownership public "${STOWDIR}/${name}/usr/lib/${pkgname}"
 
-    sudo install -Dm644 "${SRCDIR}/64x64.png" "${STOWDIR}/${name}/usr/share/pixmaps/${pkgname}.png"
-    sudo install -Dm755 "${SRCDIR}/an-anime-game-launcher.sh" "${STOWDIR}/${name}/usr/bin/${pkgname}"
-    sudo install -Dm644 "${SRCDIR}/an-anime-game-launcher.desktop" -t "${STOWDIR}/${name}/usr/share/applications"
+    sudo install -Dm644 "64x64.png" "${STOWDIR}/${name}/usr/share/pixmaps/${pkgname}.png"
+    sudo install -Dm755 "an-anime-game-launcher" "${STOWDIR}/${name}/usr/bin/${pkgname}"
+    sudo install -Dm644 "an-anime-game-launcher.desktop" -t "${STOWDIR}/${name}/usr/share/applications"
 }
 
 removescript() {
