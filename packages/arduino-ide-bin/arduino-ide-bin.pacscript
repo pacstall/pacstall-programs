@@ -1,12 +1,12 @@
 name="arduino-ide-bin"
 pkgname="arduino-ide"
-version="1.8.19"
+version="2.0.0"
 repology=("project: arduino")
 maintainer="DismissedGuy <me@mikealmel.ooo>"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
-url="https://downloads.arduino.cc/arduino-${version}-linux64.tar.xz"
+url="https://downloads.arduino.cc/arduino-ide/arduino-ide_${version}_Linux_64bit.zip"
 description="An open-source IDE that makes it easy to write code and upload it to Arduino boards"
-hash="eb68bddc1d1c0120be2fca1350a03ee34531cf37f51847b21210b6e70545bc9b"
+hash="85f889f4447987edd0e2402175e8d46bbfd6e199a12063819dc8e993bb1b7bf3"
 
 prepare() {
   sudo mkdir -p "${STOWDIR}/${name}/usr/share/${pkgname}/"
