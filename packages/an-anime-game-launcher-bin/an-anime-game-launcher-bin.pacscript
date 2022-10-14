@@ -18,7 +18,7 @@ optdepends=(
 )
 
 prepare() {
-    sudo chmod +x "${SRCDIR}/an_anime_game_launcher.AppImage" && "${SRCDIR}/an_anime_game_launcher.AppImage" --appimage-extract
+    sudo chmod +x "${SRCDIR}/an-anime-game-launcher-${version}.AppImage" && "${SRCDIR}/an-anime-game-launcher-${version}.AppImage" --appimage-extract
 }
 
 build() {
