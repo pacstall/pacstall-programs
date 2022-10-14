@@ -1,14 +1,13 @@
-name=an-anime-game-launcher-bin
-pkgname=an-anime-game-launcher
-version=2.3.9
+name="an-anime-game-launcher-bin"
+pkgname="an-anime-game-launcher"
+version="2.4.0"
 description="An Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
-url="https://aagl.launcher.moe/dl/an_anime_game_launcher_${version//./}.tar.xz"
-hash="911a78268588cbe2cd8b874bb109508a5dae01844af76fd1ce4756b93212832c"
+url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${version}/an-anime-game-launcher-${version}.AppImage"
+hash="687e46e29657955bef977ef877bffb9a26041b81891ec8a7ed35f23614e555a4"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
-
 depends="libayatana-appindicator3-1 tar unzip xdelta3 cabextract git"
 
 optdepends=(
