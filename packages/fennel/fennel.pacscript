@@ -8,12 +8,12 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fennel"
 pkgdir="${STOWDIR}/${name}"
-version="1.1.0"
+version="1.2.0"
 description="A Lua Lisp language"
 depends="lua5.3"
 url="https://fennel-lang.org/downloads/fennel-${version}"
 breaks="${name}-bin ${name}-git ${name}-deb ${name}-app"
-hash="a21dfbdefe8e70b7692fd9c91740296e4753f965b55de31c94b7f44c16521095"
+hash="cb4999d1766a6f244d3005f0cd32cc777c7f0ff83bbc7a75e4ec2c2518a3f0dc"
 repology=("project: fennel")
 
 prepare() {
