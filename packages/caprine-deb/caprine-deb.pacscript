@@ -8,10 +8,10 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="caprine-deb"
 gives="caprine"
-version="2.55.6"
+version="2.56.1"
 url="https://github.com/sindresorhus/caprine/releases/download/v${version}/caprine_${version}_amd64.deb"
 description="Elegant Facebook Messenger desktop app"
-hash="f9b5992f9e17d5a647d49848e48e00746d9140af5a158c64a7cb53037417bb9d"
+hash="3933f475442bc964c09d77cc0d0d41b2f3c748eed0315d456895f47b36334cc1"
 repology=("project: caprine")
 
 # vim:set ft=sh ts=2 sw=2 et:

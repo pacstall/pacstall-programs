@@ -24,7 +24,6 @@ install() {
 
   # Creating a launcher in $PATH
   sudo install -d "${STOWDIR}/${name}/usr/bin"
-  sudo ln -s ../../opt/${name}/bin/studio.sh "${STOWDIR}/${name}/usr/bin/${name}"
 
   sudo install -d "${STOWDIR}/${name}/usr/share/applications"
   sudo wget -q https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${name}.desktop -O "$STOWDIR/${name}/usr/share/applications/${name}.desktop"
@@ -34,6 +33,8 @@ install() {
 }
 
 postinst() {
+  sudo ln -sf "/opt/${name}/bin/studio.sh" "/usr/bin/${name}"
+
   sudo update-desktop-database -q
   # Finished installation
   fancy_message info "Finished installation. Please start Android Studio to configure it!"

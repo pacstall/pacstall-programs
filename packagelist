@@ -89,6 +89,7 @@ fennel-bin
 ferium-bin
 feroxbuster-bin
 firefox-deb
+firefox-developer-edition-bin
 fishui-git
 fm6000-git
 fnlfmt
@@ -277,6 +278,7 @@ sublime-merge-deb
 sublime-text-deb
 surf
 surf-distrotube-git
+surfshark-gui-deb
 suru-icon-theme-git
 systemcoding-conky
 taskwarrior
