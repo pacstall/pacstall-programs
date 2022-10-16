@@ -1,4 +1,6 @@
 name="zap"
+pkgname="zap"
+repology=("project: zap")
 version="2.2.1"
 depends="curl grep jq wget"
 url="https://github.com/srevinsaju/zap/releases/download/v2.2.1/zap-amd64"
