@@ -1,6 +1,6 @@
 name="zap"
 version="2.2.1"
-build_depends="curl grep jq wget"
+depends="curl grep jq wget"
 description="A delightful AppImage package manager"
 maintainer="srevinsaju <hello@srev.in>"
 
