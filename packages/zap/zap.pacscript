@@ -9,14 +9,13 @@ description="A delightful AppImage package manager"
 maintainer="srevinsaju <hello@srev.in>"
 
 prepare() {
-        true
+	true
 }
 
-# doesn't need to be built
 build() {
-        true
+	true
 }
 
 install() {
-        sudo cp zap-amd65 "$pkgdir/usr/bin/zap"
+	sudo cp zap-amd65 "$pkgdir/usr/bin/zap"
 }
