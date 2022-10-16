@@ -18,7 +18,3 @@ build() {
 install() {
         sudo cp zap-amd65 "$pkgdir/usr/bin/zap"
 }
-
-removescript() {
-          rm install.sh
-}
