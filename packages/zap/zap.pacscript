@@ -16,7 +16,7 @@ build() {
 }
 
 install() {
-        curl https://raw.githubusercontent.com/srevinsaju/zap/main/install.sh | sudo bash -s
+        sudo cp zap-amd65 "$pkgdir/usr/bin/zap"
 }
 
 removescript() {
