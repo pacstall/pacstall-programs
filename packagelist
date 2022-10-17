@@ -96,10 +96,10 @@ fnlfmt
 forticlient-deb
 freetube-deb
 fsearch-git
-gcmcore-deb
 geekbench-bin
 gfn-electron-bin
 git
+git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
 gitblade-deb
@@ -138,6 +138,7 @@ i3lock-color
 ibhagwan-picom-git
 imwheel-exclude-patched-git
 insync-deb
+intel-undervolt
 ivpn-deb
 ivpn-ui-deb
 jetbrains-toolbox-bin
