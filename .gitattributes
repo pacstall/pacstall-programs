@@ -1,1 +1,2 @@
 *.pacscript linguist-language=Shell
+PACBUILD linguist-language=Shell
