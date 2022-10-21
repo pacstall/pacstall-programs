@@ -82,7 +82,7 @@ jobs:
               echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -I ${package_name}"
               cd ${package_dir}
-              pacstall --disable-prompts -I ${package_name}.pacscript
+              pacstall --disable-prompts -I ${pacscript_file}
             fi
           done
         shell: sudo -E -u dio bash {0}
@@ -160,7 +160,7 @@ jobs:
               echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -Il ${package_name}"
               cd ${package_dir}
-              pacstall --disable-prompts -I ${package_name}.pacscript
+              pacstall --disable-prompts -I ${pacscript_file}
             fi
           done
         shell: sudo -E -u dio bash {0}
