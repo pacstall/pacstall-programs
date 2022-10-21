@@ -69,6 +69,7 @@ jobs:
           SUDO_USER: dio
       - name: Installing Packages
         run: |
+          set -x
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           curl -fsSL https://git.io/JsADh > pacstall-install.sh
@@ -82,7 +83,7 @@ jobs:
               echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -I ${package_name}"
               cd ${package_dir}
-              pacstall --disable-prompts -I ${package_name}.pacscript
+              pacstall --disable-prompts -I ${pacscript_file}
             fi
           done
         shell: sudo -E -u dio bash {0}
@@ -147,6 +148,7 @@ jobs:
           SUDO_USER: dio
       - name: Installing Packages
         run: |
+          set -x
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           curl -fsSL https://git.io/JsADh > pacstall-install.sh
@@ -160,7 +162,7 @@ jobs:
               echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -Il ${package_name}"
               cd ${package_dir}
-              pacstall --disable-prompts -I ${package_name}.pacscript
+              pacstall --disable-prompts -I ${pacscript_file}
             fi
           done
         shell: sudo -E -u dio bash {0}
