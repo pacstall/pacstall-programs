@@ -26,7 +26,7 @@ install() {
   sudo install -d "${STOWDIR}/${name}/usr/bin"
 
   sudo install -d "${STOWDIR}/${name}/usr/share/applications"
-  sudo wget -q https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${name}.desktop -O "$STOWDIR/${name}/usr/share/applications/${name}.desktop"
+  sudo wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${name}.desktop" -O "${STOWDIR}/${name}/usr/share/applications/${name}.desktop"
 
   sudo install -Dm644 bin/studio.png "${STOWDIR}/${name}/usr/share/pixmaps/${name}.png"
   sudo chmod -R ugo+rX "${STOWDIR}/${name}/opt"
@@ -42,4 +42,5 @@ postinst() {
 
 removescript() {
   sudo update-desktop-database -q
+  sudo rm -f "/usr/bin/${name}"
 }
