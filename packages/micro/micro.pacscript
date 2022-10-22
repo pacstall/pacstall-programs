@@ -1,6 +1,6 @@
 name="micro"
 pkgname="micro"
-version="2.0.10"
+version="2.0.11"
 description="A modern and intuitive terminal-based text editor."
 maintainer="edward-riley <edward@edwardriley.co.uk>"
 url="https://github.com/zyedidia/micro/releases/download/v${version}/micro-${version}-linux64.tar.gz"
