@@ -10,13 +10,6 @@ description="Patched font Cascadia Code from Nerd Fonts library"
 hash="b4f4f20ab6bbf55dd9ae7dd1fadd4ef2c608f38922c401afcce373b36a9b0407"
 license="OFL-1.1"
 maintainer="heyzsh <haidarzsh@gmail.com>"
-prepare() {
-    true
-}
-
-build() {
-    true
-}
 
 install() {
     sudo install -d "${pkgdir}"/usr/share/fonts/OTF
