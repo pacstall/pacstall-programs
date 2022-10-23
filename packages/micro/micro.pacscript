@@ -1,16 +1,14 @@
 name="micro"
 pkgname="micro"
-version="2.0.10"
-description="A modern and intuitive terminal-based text editor."
+version="2.0.11"
+description="A modern and intuitive terminal-based text editor"
 maintainer="edward-riley <edward@edwardriley.co.uk>"
 url="https://github.com/zyedidia/micro/releases/download/v${version}/micro-${version}-linux64.tar.gz"
 build_depends="build-essential"
 gives="micro"
 breaks="micro"
-hash="98797d745aec85b36a9cedc87ce7656adcd8cc94c909a07edeb6e61538418bed"
-prepare() {
-  true
-}
+hash="7d820c9247f7348196fef9cf151982433e5d787adc34d81ae26d8d5979b930fe"
+repology=("project: ${name}")
 
 build() {
     chmod +x "./micro"
