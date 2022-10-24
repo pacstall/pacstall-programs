@@ -32,7 +32,7 @@ install() {
 }
 
 postinst() {
-    sudo ln -s -r "/opt/postman/app/resources/app/assets/icon.png" "/usr/share/icons/hicolor/128x128/apps/postman.png"
+    sudo ln -s -r "/opt/postman/resources/app/assets/icon.png" "/usr/share/icons/hicolor/128x128/apps/postman.png"
     sudo ln -s -r "/opt/postman/Postman" "/usr/bin/postman"
 }
 
