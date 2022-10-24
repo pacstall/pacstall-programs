@@ -69,7 +69,6 @@ jobs:
           SUDO_USER: dio
       - name: Installing Packages
         run: |
-          set -x
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           curl -fsSL https://git.io/JsADh > pacstall-install.sh
@@ -148,7 +147,6 @@ jobs:
           SUDO_USER: dio
       - name: Installing Packages
         run: |
-          set -x
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           curl -fsSL https://git.io/JsADh > pacstall-install.sh
