@@ -22,7 +22,6 @@ build() {
 }
 
 install() {
-  cd build
   sudo cmake --install .
   sudo install -Dm644 "../LICENSES/"* -t "${STOWDIR}/${name}/usr/share/licenses/${name}/"
   cd "${STOWDIR}/${name}/usr/lib/x86_64-linux-gnu/"
