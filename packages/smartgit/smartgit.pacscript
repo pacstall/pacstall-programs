@@ -2,6 +2,7 @@ name="smartgit"
 version="21.2.2"
 url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-21_2_2.tar.gz"
 depends="git libgtk-3-0 openjdk-11-jre libcurl4"
+description="Graphical Git client with support for GitHub, Bitbucket and GitLab"
 replace="alacritty"
 hash="c3e2672e98190cb72060e27fa26232b7f4b6ffcf62eaf1d01e7ec94ac1d36683"
 maintainer="echometerain <echometer@disroot.org>"
@@ -33,7 +34,7 @@ install() {
 }
 
 postinst() {
-    sudo ln -s "$STOWDIR/$name/opt/$name/bin/smartgit.sh" "/usr/bin/smartgit"
+    sudo ln -s "/opt/$name/bin/smartgit.sh" "/usr/bin/smartgit"
 }
 
 removescript() {

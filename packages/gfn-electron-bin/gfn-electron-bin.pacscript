@@ -32,6 +32,12 @@ install() {
 
     sudo cp -r ${SRCDIR}/* ${STOWDIR}/${name}/opt/${pkgname}/
     sudo chmod +x "${STOWDIR}/${name}/opt/${pkgname}/geforcenow-electron"
+}
 
-    sudo ln -s -r "${STOWDIR}/${name}/opt/${pkgname}/geforcenow-electron" "${STOWDIR}/${name}/usr/bin/geforcenow"
+postinst() {
+    sudo ln -s -r "/opt/${pkgname}/geforcenow-electron" "/usr/bin/geforcenow"
+}
+
+removescript() {
+    sudo rm -f "/usr/bin/geforcenow"
 }

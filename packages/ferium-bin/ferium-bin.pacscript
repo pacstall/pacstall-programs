@@ -3,9 +3,9 @@ pkgname="ferium"
 breaks="${pkgname}"
 replace="${pkgname}-git"
 repology=("project: ${pkgname}")
-version="4.1.10"
-url="https://github.com/gorilla-devs/${pkgname}/releases/download/v${version}/${pkgname}-linux-gnu-nogui.zip"
-hash="eb87ea75aa7670b2d510487c74cada1ba74a7889bd5c8766c0b7feb5530c1d8a"
+version="4.2.0"
+url="https://github.com/gorilla-devs/${pkgname}/releases/download/v${version}/${pkgname}-linux-nogui.zip"
+hash="151d76a917c012aee9b8e8fa47170974903f6868bdb500598167fe082692dd73"
 description="Fast and multi-source CLI program for managing Minecraft mods"
 maintainer="TwilightBlood <hwengerstickel@pm.me>"
 

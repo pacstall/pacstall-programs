@@ -15,11 +15,15 @@ build() {
 
 install() {
   sudo install -Dm755 "lib/lib${pkgname}.so.${version}" -t "$STOWDIR/$name/usr/local/lib"
-  cd $STOWDIR/$name/usr/local/lib
-  sudo rm "lib${pkgname}.so" 2> /dev/null
-  sudo ln -s "./lib${pkgname}.so.${version}" "lib${pkgname}.so"
-  cd - > /dev/null
-  rm lib/*
   sudo install -Dm644 include/* -t "$STOWDIR/$name/usr/local/include"
   sudo install -Dm644 LICENSE -t "$STOWDIR/$name/usr/share/licenses/$name"
+}
+
+postinst() {
+  sudo rm -f "/usr/local/lib/lib${pkgname}.so" 2> /dev/null
+  sudo ln -sf "/usr/local/lib/lib${pkgname}.so.${version}" "/usr/local/lib/lib${pkgname}.so"
+}
+
+removescript() {
+  sudo rm -f "/usr/local/lib/lib${pkgname}.so"
 }
