@@ -8,8 +8,8 @@ maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="org.freedesktop.secrets"
 breaks="${name} ${name}-bin ${name}-git ${name}-deb"
 
-depends="argon2 botan curl hicolor-icon-theme libxtst6 minizip libpcsclite1 qrencode libqt5x11extras5 libqt5x11extras5-dev libqt5svg5-dev libqt5svg5 libminizip1 libqrencode4 zlib1g-dev libxtst-dev qtbase5-private-dev qttools5-dev qtbase5-dev qt5-qmake qtbase5-dev-tools qtdeclarative5-dev"
-build_depends="cmake asciidoctor libqrencode-dev libbotan-2-dev libargon2-dev libpcsclite-dev libminizip-dev libusb-1.0-0-dev libreadline-dev"
+depends="argon2 botan curl hicolor-icon-theme libxtst6 minizip libpcsclite1 qrencode libqt5x11extras5 libqt5svg5 libminizip1 libqrencode4 qt5-qmake qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools"
+build_depends="cmake asciidoctor libqrencode-dev libbotan-2-dev libargon2-dev libpcsclite-dev libminizip-dev libusb-1.0-0-dev libreadline-dev libqt5x11extras5-dev libqt5svg5-dev zlib1g-dev libxtst-dev qtbase5-private-dev qttools5-dev qtbase5-dev qt5-qmake qtbase5-dev-tools qtdeclarative5-dev"
 optdepends=("xclip: keepassxc-cli clipboard support under X server"
             "wl-clipboard: keepassxc-cli clipboard support under Wayland")
 
