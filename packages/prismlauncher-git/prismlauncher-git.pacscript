@@ -1,4 +1,5 @@
 name="prismlauncher-git"
+gives="prismlauncher"
 url="https://github.com/PrismLauncher/PrismLauncher.git"
 build_depends="qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5core5a libqt5network5 libqt5gui5 cmake ninja-build extra-cmake-modules zlib1g-dev openjdk-17-jdk libgl1-mesa-dev scdoc"
 description="Custom launcher for Minecraft"
