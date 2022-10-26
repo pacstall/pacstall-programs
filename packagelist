@@ -194,6 +194,7 @@ neofetch
 neovim
 neovim-deb
 neovim-git
+nerd-fonts-cascadia-code
 nerd-fonts-hack
 nerd-fonts-jetbrains-mono
 nodejs-lts-deb
@@ -284,6 +285,7 @@ suru-icon-theme-git
 systemcoding-conky
 taskwarrior
 teams-for-linux-deb
+teamviewer-deb
 telegram-bin
 tenacity-git
 thrive-deb
@@ -327,6 +329,7 @@ windscribe-alpha-gui-deb
 windscribe-beta-gui-deb
 wine-staging-git
 wsysmon-bin
+xfce4-deb
 yabridge
 yad
 yafetch-git
