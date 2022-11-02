@@ -1,0 +1,9 @@
+name="wezterm-deb"
+gives="wezterm"
+version="20220905-102802-7d4b8249"
+repology=("project: alacritty")
+url="https://github.com/wez/wezterm/releases/download/${version}/wezterm-${version}.Ubuntu22.04.deb"
+maintainer="awollgarten <awollgaren@posteo.net>"
+description="WezTerm is a GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
+hash="b2da0fdb33da62750431b6f131ebd5452bf05094e55934d8ca76d79a0e2e282b"
+repology={"project: wezterm"}
