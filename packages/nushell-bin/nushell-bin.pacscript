@@ -1,5 +1,6 @@
 #!/usr/bin/bash
-#-*- mode: sh-*-#  __      __________   ______
+#-*- mode: sh-*-
+#  __      __________   ______
 # /  \    /  \_____  \ /  __  \
 # \   \/\/   //  ____/ >      <
 #  \        //       \/   --   \
@@ -15,14 +16,6 @@ url="https://github.com/nushell/nushell/releases/download/${version}/nu-${versio
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="40ba6ca04d19be072eec28499ce8b83711ef7bd8aa213c2d6ecf611b2e6da81e"
 repology=("project: nushell")
-
-prepare() {
-  true
-}
-
-build() {
-  true
-}
 
 install() {
   # binaries
