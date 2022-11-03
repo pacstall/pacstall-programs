@@ -17,8 +17,6 @@ echo $distro
 
 distro_version=$(grep -Po 'VERSION_ID="?\K[^"]+' /etc/os-release)
 
-
-
 name="wezterm-deb"
 gives="wezterm"
 version="20220905-102802-7d4b8249"
