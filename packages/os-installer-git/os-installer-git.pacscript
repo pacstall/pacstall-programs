@@ -22,7 +22,7 @@ prepare() {
 
 build() {
   # Build nessesary files
-  meson --prefix="${STOWDIR}/${name}/usr" --buildtype=release . build
+  meson --prefix="${pkgdir}/usr" --buildtype=release . build
 }
 
 install() {
@@ -33,5 +33,5 @@ install() {
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
   # Install
-  sudo meson install -C build --destdir "${STOWDIR}/${name}/usr"
+  sudo meson install -C build --destdir "${pkgdir}/usr"
 }
