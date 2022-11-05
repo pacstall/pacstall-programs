@@ -1,10 +1,10 @@
 name="tidal-hifi-bin"
 pkgname="tidal-hifi"
-version="4.1.1"
+version="4.3.1"
 description="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
 repology=("project: tidal-hifi" "visiblename: tidal-hifi-bin")
 url="https://github.com/Mastermindzh/tidal-hifi/releases/download/${version}/tidal-hifi-${version}.tar.gz"
-hash="7c7e54fbf9ba2ed0d095a19c291a009a71cf780b524d327a03bb7395d3a5a5e5"
+hash="f408a9b8fd60ac56e2863573fa895c36d9900ef5dc46005714311e26b5b0c743"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
@@ -33,6 +33,12 @@ install() {
 
     sudo cp -r ${SRCDIR}/tidal-hifi-${version}/* ${STOWDIR}/${name}/opt/${pkgname}/
     sudo chmod +x "${STOWDIR}/${name}/opt/${pkgname}/tidal-hifi"
+}
 
-    sudo ln -s -r "${STOWDIR}/${name}/opt/${pkgname}/tidal-hifi" "${STOWDIR}/${name}/usr/bin/tidal-hifi"
+postinst() {
+    sudo ln -s -r "/opt/${pkgname}/tidal-hifi" "/usr/bin/tidal-hifi"
+}
+
+removescript() {
+    sudo rm -f "/usr/bin/tidal-hifi"
 }

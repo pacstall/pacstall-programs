@@ -18,9 +18,12 @@ install() {
   sudo install -Dm755 "${gives}_x86_64" -t "$STOWDIR/$name/opt/$gives"
   sudo install -Dm644 "${gives}.plar" -t "$STOWDIR/$name/opt/$gives/"
   sudo mkdir -p "$STOWDIR/$name/usr/bin"
-  cd "$STOWDIR/$name/usr/bin"
-  if [[ -f "${gives}5" ]]; then
-    sudo rm "${gives}5"
-  fi
-  sudo ln -s "../../opt/$gives/${gives}5" "${gives}5"
+}
+
+postinst() {
+  sudo ln -s "/opt/$gives/${gives}5" "/usr/bin/${gives}5"
+}
+
+removescript() {
+  sudo rm -f "/usr/bin/${gives}5"
 }

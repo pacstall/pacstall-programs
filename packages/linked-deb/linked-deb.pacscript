@@ -1,0 +1,9 @@
+name="linked-deb"
+gives="linked"
+version="1.4.13"
+replace="${gives}"
+url="https://github.com/lostdesign/linked/releases/download/v${version}/linked_${version}_amd64.deb"
+description="linked - daily journaling without distraction"
+repology=("project: linked")
+hash="cd390487ba095533393d843b41ae9f5df4656991d9f3c7e109855bc4d0c6bba9"
+maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"

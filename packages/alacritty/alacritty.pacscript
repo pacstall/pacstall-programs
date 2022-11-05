@@ -5,13 +5,13 @@ if [[ "$(grep -Po 'ID=\K[^"]+' /etc/os-release)" == "debian" ]]; then
 fi
 
 name="alacritty"
-version="0.10.1"
+version="0.11.0"
 repology=("project: alacritty")
 url="https://github.com/alacritty/alacritty/archive/refs/tags/v${version}.tar.gz"
 build_depends="cargo cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 gzip"
 description="A fast, cross-platform, OpenGL terminal emulator"
 maintainer="Warofzen <warofzen1@protonmail.com>"
-hash="e48d4b10762c2707bb17fd8f89bd98f0dcccc450d223cade706fdd9cfaefb308"
+hash="0fb3370c662f5b87d1b9a487aef999195212b192e08f6f68a572fed8fd637e07"
 prepare() {
         true
 }

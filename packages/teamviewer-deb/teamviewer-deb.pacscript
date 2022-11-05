@@ -1,0 +1,13 @@
+name="teamviewer-deb"
+pkgname="teamviewer"
+gives="teamviewer"
+version="15.34.4"
+repology=("project: teamviewer")
+replace="${gives}"
+breaks="${gives} ${gives}-bin ${gives}-git ${gives}-app ${gives}-deb"
+depends="libqt5x11extras5 libqt5quickcontrols2-5 libqt5webengine5 libqt5svg5 hicolor-icon-theme"
+url="https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
+description="Application for remote desktop sharing and online meetings"
+license="custom"
+hash="7fc07489bb4adf733257406104b0648b51bbd1999c4d694be118884a4bfca539"
+maintainer="heyzsh <haidarzsh@gmail.com>"

@@ -41,8 +41,8 @@ install() {
 
 postinst() {
   # Install .desktop files
-  sudo ln -sf "${pkgdir}/usr/local/share/xsessions/${pkgname}.desktop" "/usr/share/xsessions/${pkgname}.desktop"
-  sudo ln -sf "${pkgdir}/usr/local/share/xsessions/${pkgname}-with-shmlog.desktop" "/usr/share/xsessions/${pkgname}-with-shmlog.desktop"
+  sudo ln -sf "/usr/local/share/xsessions/${pkgname}.desktop" "/usr/share/xsessions/${pkgname}.desktop"
+  sudo ln -sf "/usr/local/share/xsessions/${pkgname}-with-shmlog.desktop" "/usr/share/xsessions/${pkgname}-with-shmlog.desktop"
 }
 
 removescript() {

@@ -1,10 +1,10 @@
 name="gfn-electron-bin"
 pkgname="geforcenow-electron"
-version="1.9.0"
+version="1.10.0"
 description="Linux desktop client for GeForce NOW, using Electron"
 repology=("project: geforcenow-electron")
 url="https://github.com/hmlendea/gfn-electron/releases/download/v${version}/geforcenow-electron_${version}_linux.zip"
-hash="8c97a92f9363b6465cf0a92f15d5e396d2691d86ae72df90b009c64712dbe320"
+hash="b9106b7b34c2fd21834526684ccba3a37c2adbb2fb65d04ef2c70c0428e79d1b"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
@@ -32,6 +32,12 @@ install() {
 
     sudo cp -r ${SRCDIR}/* ${STOWDIR}/${name}/opt/${pkgname}/
     sudo chmod +x "${STOWDIR}/${name}/opt/${pkgname}/geforcenow-electron"
+}
 
-    sudo ln -s -r "${STOWDIR}/${name}/opt/${pkgname}/geforcenow-electron" "${STOWDIR}/${name}/usr/bin/geforcenow"
+postinst() {
+    sudo ln -s -r "/opt/${pkgname}/geforcenow-electron" "/usr/bin/geforcenow"
+}
+
+removescript() {
+    sudo rm -f "/usr/bin/geforcenow"
 }
