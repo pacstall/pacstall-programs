@@ -17,6 +17,7 @@ version="$(pkgver)"
 
 prepare() {
   git submodule update --init --recursive
+  fancy_message warn "This can only be built using the latest version of most OSes."
 }
 
 build() {
