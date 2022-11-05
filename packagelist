@@ -86,6 +86,7 @@ fastfetch-git
 fblog-deb
 fennel
 fennel-bin
+ferdium-deb
 ferium-bin
 feroxbuster-bin
 firefox-deb
@@ -95,6 +96,7 @@ fm6000-git
 fnlfmt
 forticlient-deb
 freetube-deb
+fsearch-deb
 fsearch-git
 geekbench-bin
 gfn-electron-bin
@@ -156,11 +158,13 @@ lbry-deb
 lemonbar-xft-git
 lf-bin
 libcutefish-git
+libicu71-deb
 libndi4-deb
 libresprite-git
 libressl
 librewolf-app
 librewolf-deb
+linked-deb
 linux-headers-deb
 linux-headers-generic-deb
 linux-image-unsigned-deb
@@ -208,6 +212,7 @@ notion-app-enhanced-deb
 notion-git
 nowpm
 nuclei-bin
+nushell-bin
 nyxt-deb
 obquit-git
 obs-backgroundremoval
@@ -242,6 +247,7 @@ polybar
 pomatez-deb
 popsicle
 postman-bin
+prismlauncher-git
 proton-python-client
 protonmail-bridge-deb
 protonvpn-cli
