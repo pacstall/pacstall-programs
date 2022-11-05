@@ -3,12 +3,13 @@
 maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 
 name="mutt-wizard"
-version="3.2.1"
+version="3.3.1"
 url="https://github.com/lukesmithxyz/$name/archive/v$version.tar.gz"
+repology=("project: mutt-wizard")
 depends="neomutt isync msmtp notmuch pass curl"
 breaks="mutt-wizard mutt-wizard-git"
 description="Simple interface to auto-configure neomutt and isync with safe passwords"
-hash="def5e792d46f217142b489e65f3d4059cdc8fca93eb83bab4474785c897d7f20"
+hash="4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53"
 
 # Some optional dependencies don't currently have an ubuntu package as far as I know,
 # they have been marked with "No Pkg" in the optdepends.
