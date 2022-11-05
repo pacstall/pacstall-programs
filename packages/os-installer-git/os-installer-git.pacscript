@@ -11,12 +11,12 @@ optdepends=("gnome-disk-utility: Default disk CMD if not set"
             "gnome-control-center: Default wifi CMD if not set")
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 prepare() {
-  true
+  git submodule update --init --recursive
 }
 
 build() {
