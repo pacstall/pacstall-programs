@@ -17,13 +17,12 @@ version="$(pkgver)"
 
 prepare() {
   git config --global --add safe.directory /tmp/pacstall/os-installer
-  git submodule update --init --recursive
   fancy_message warn "This can only be built using the latest version of most OSes."
 }
 
 build() {
   # Build nessesary files
-  meson --prefix="${pkgdir}/usr" --buildtype=release . build
+  meson --prefix="/usr" --buildtype=release . build
 }
 
 install() {
@@ -34,5 +33,5 @@ install() {
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 
   # Install
-  sudo meson install -C build --destdir "${pkgdir}/usr"
+  sudo meson install -C build --destdir "${pkgdir}"
 }
