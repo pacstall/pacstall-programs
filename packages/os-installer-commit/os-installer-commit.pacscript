@@ -12,7 +12,6 @@ optdepends=("gnome-disk-utility: Default disk CMD if not set"
             "gnome-control-center: Default wifi CMD if not set")
 
 prepare() {
-  git config --global --add safe.directory /tmp/pacstall/os-installer
   fancy_message warn "This can only be built using the latest version of most OSes."
 }
 
