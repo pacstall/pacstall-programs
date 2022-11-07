@@ -1,7 +1,7 @@
 name="rhino-linux-xfce4-config"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 description="Rhino Linux XFCE4 configuration."
-url="https://gitlab.gnome.org/p3732/os-installer.git"
+url="https://github.com/rhino-linux/dotfiles/archive/${version}.tar.gz"
 breaks="${pkgname}-bin"
 build_depends="jq"
 optdepends=("xfce4: To use the configuration")
@@ -25,6 +25,8 @@ build() {
 }
 
 install() {
+  # Install doc
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
   sudo cp -r xfce4 "${pkgdir}/etc/skel/.config"
   sudo install -Dm644 "rolling-rhino-default.png" -t /usr/share/backgrounds
