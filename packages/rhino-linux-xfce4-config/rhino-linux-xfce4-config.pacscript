@@ -13,16 +13,16 @@ prepare() {
 }
 
 build() {
-  sudo mkdir -p ${pkgdir}/usr/share/backgrounds
-  sudo mkdir -p ${pkgdir}/usr/share/doc
-  sudo mkdir -p ${pkgdir}/etc/skel/.config
+  sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
+  sudo mkdir -p "${pkgdir}/usr/share/doc"
+  sudo mkdir -p "${pkgdir}/etc/skel/.config"
 }
 
 install() {
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
-  sudo cp -r xfce4 ${pkgdir}/etc/skel/.config
+  sudo cp -r xfce4 "${pkgdir}/etc/skel/.config"
   sudo install -Dm644 "rolling-rhino-default.png" -t /usr/share/backgrounds
 }
 
