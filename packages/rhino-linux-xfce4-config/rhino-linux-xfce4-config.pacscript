@@ -25,8 +25,6 @@ build() {
 }
 
 install() {
-  # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
   sudo cp -r xfce4 "${pkgdir}/etc/skel/.config"
   sudo install -Dm644 "rolling-rhino-default.png" -t /usr/share/backgrounds
