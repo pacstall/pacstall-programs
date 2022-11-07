@@ -102,10 +102,10 @@ fsearch-git
 geekbench-bin
 gfn-electron-bin
 git
+gitblade-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
-gitblade-deb
 gitfiend-deb
 github-cli-bin
 github-cli-deb
@@ -135,8 +135,8 @@ htop
 httptoolkit-deb
 hyper-deb
 hyperfine-bin
-i3-gaps
 i3blocks-git
+i3-gaps
 i3lock-color
 ibhagwan-picom-git
 imwheel-exclude-patched-git
@@ -250,8 +250,8 @@ pomatez-deb
 popsicle
 postman-bin
 prismlauncher-git
-proton-python-client
 protonmail-bridge-deb
+proton-python-client
 protonvpn-cli
 protonvpn-gui
 protonvpn-nm-lib
@@ -264,8 +264,8 @@ realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
 sed
-shell-color-scripts
 shellcheck-bin
+shell-color-scripts
 shellharden
 shfmt-bin
 signal-desktop-beta-deb
@@ -277,13 +277,13 @@ smplayer-deb
 soundux
 spacecadetpinball-git
 spotify-client-deb
-st-distrotube-git
-st-lukesmith-git
 starship-bin
+st-distrotube-git
 steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
+st-lukesmith-git
 sublime-merge-deb
 sublime-text-deb
 surf
@@ -334,6 +334,7 @@ wazzapp-deb
 webapp-manager
 webapp-manager-deb
 weechat-git
+wezterm
 windscribe-alpha-gui-deb
 windscribe-beta-gui-deb
 wine-staging-git
