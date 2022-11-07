@@ -5,7 +5,11 @@ url="https://gitlab.gnome.org/p3732/os-installer.git"
 breaks="${pkgname}-bin"
 build_depends="jq"
 optdepends=("xfce4: To use the configuration")
-version="$(curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/rhino-linux/dotfiles/commits | jq -r '.[1].sha')"
+
+pkgver() {
+  curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/rhino-linux/dotfiles/commits | jq -r '.[1].sha'
+}
+version="$(pkgver)"
 
 prepare() {
   # Is invalid as it contains sysmlinks to /home/httpllamz
