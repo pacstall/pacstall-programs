@@ -7,6 +7,8 @@ build_depends="jq"
 optdepends=("xfce4: To use the configuration")
 
 pkgver() {
+  # May not be the best way to install but it works good
+  sudo apt-get install -y jq
   curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/rhino-linux/dotfiles/commits | jq -r '.[1].sha'
 }
 version="$(pkgver)"
