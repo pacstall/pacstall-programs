@@ -171,6 +171,7 @@ linux-headers-generic-deb
 linux-image-unsigned-deb
 linux-kernel
 linux-modules-deb
+linux-wifi-hotspot-deb
 lrz-syncshare-deb
 lsd-deb
 lutris-deb

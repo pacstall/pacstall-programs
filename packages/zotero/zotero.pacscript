@@ -1,9 +1,9 @@
 name="zotero"
 repology=("project: zotero")
-version="6.0.16"
+version="6.0.18"
 url="https://download.zotero.org/client/release/${version}/Zotero-${version}_linux-x86_64.tar.bz2"
 description="Your personal research assistant"
-hash="3ea0bb3eaa514a6fd8b77a4af13bb372b86d7c949e257ead876c5bda7fc1ba5f"
+hash="308061be182db6a7d43b8da2a5535785d29b70dff460fb452bc3b1f0a95a7c6d"
 maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 
 prepare() {
