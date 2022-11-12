@@ -10,6 +10,7 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="pacup-bin"
 pkgname="pacup"
+gives="pacup"
 version="1.0.0"
 description="Help maintainers update pacscripts"
 url="https://github.com/pacstall/pacup/releases/download/${version}/pacup"
