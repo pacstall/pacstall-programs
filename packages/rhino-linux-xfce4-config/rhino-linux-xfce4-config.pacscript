@@ -1,17 +1,14 @@
 name="rhino-linux-xfce4-config"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 description="Rhino Linux XFCE4 configuration."
-url="https://github.com/rhino-linux/dotfiles/archive/${version}.tar.gz"
-breaks="${pkgname}-bin"
-build_depends="jq"
+breaks="${pkgname}-bin ${pkgname}-git"
 optdepends=("xfce4: To use the configuration")
 
 pkgver() {
-  # May not be the best way to install but it works okay
-  DEBIAN_FRONTEND=noninteractive sudo apt-get install -y jq
-  curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/rhino-linux/dotfiles/commits | jq -r '.[1].sha'
+  curl -s -H "Accept: application/vnd.github+json" https://api.github.com/repos/rhino-linux/dotfiles/commits | grep sha | head -1 | cut -f4 -d'"'
 }
 version="$(pkgver)"
+url="https://github.com/rhino-linux/dotfiles/archive/${version}.tar.gz"
 
 prepare() {
   # Is invalid as it contains sysmlinks to /home/httpllamz
