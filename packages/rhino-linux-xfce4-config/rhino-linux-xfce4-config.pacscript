@@ -11,8 +11,7 @@ version="$(pkgver)"
 url="https://github.com/rhino-linux/dotfiles/archive/${version}.tar.gz"
 
 prepare() {
-  # Is invalid as it contains sysmlinks to /home/httpllamz
-  rm -rf ./xfce4/desktop
+  true
 }
 
 build() {
