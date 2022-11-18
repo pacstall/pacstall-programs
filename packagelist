@@ -232,6 +232,7 @@ opentoonz-gts
 opera-beta-deb
 opera-deb
 opera-developer-deb
+os-installer-commit
 os-installer-git
 pacget-git
 paconvert-git
@@ -266,6 +267,7 @@ qtile-git
 realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
+rhino-linux-xfce4-config
 sed
 shell-color-scripts
 shellcheck-bin
