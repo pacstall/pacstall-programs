@@ -6,14 +6,6 @@ description="LENS is a spectral dynamics processor with unbelievable punch and c
 hash="bd7c1b6ba8f7ad8ac2ee674f881e06f9650cf863ad7ee79d22e30b4d853dad19"
 maintainer="echometerain <echometer@disroot.org>"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
   sudo mkdir -p "$STOWDIR/$name/usr/lib/lv2"
   sudo mv "./Linux/Linux-64b-LV2-FREE" "$STOWDIR/$name/usr/lib/lv2/Auburn Sounds $_name.lv2"
