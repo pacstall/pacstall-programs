@@ -12,7 +12,7 @@ prepare() {
 }
 
 build() {
-    cargo build -j$(nproc) --release --locked
+    cargo build -j"$(nproc)" --release --locked
 }
 
 install() {
