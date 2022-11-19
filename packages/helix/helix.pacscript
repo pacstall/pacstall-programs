@@ -18,7 +18,7 @@ build() {
 install() {
     sudo install -Dm755 target/release/hx -t "${pkgdir}/usr/lib/${name}"
 
-    wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/hx"
+    printf '#!/bin/sh\nHELIX_RUNTIME=/usr/lib/helix/runtime exec /usr/lib/helix/hx "$@"\n' > hx
     sudo install -Dm755 hx -t "${pkgdir}/usr/bin"
 
     rm -f runtime/grammars/.gitkeep
