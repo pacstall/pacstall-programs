@@ -7,10 +7,6 @@ description="A post-modern modal text editor"
 maintainer="Marcin Puc <tranzystorek.io@protonmail.com>"
 hash="c9b184d53bab51e7a9fe81dc8c191a853177abba67ea408e968937f31b50b45a"
 
-prepare() {
-    true
-}
-
 build() {
     cargo build -j"$(nproc)" --release --locked
 }
