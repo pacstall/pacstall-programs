@@ -1,25 +1,26 @@
 name="bat"
-version="0.21.0"
+version="0.22.1"
 url="https://github.com/sharkdp/bat/archive/refs/tags/v${version}.tar.gz"
-build_depends="cargo"
+build_depends="cargo libonig-dev pkg-config"
+depends="libonig5"
 replace="bat"
 description="A cat(1) clone with wings"
-hash="3dff1e52d577d0a105f4afe3fe7722a4a2b8bb2eb3e7a6a5284ac7add586a3ee"
+hash="25e45debf7c86794281d63a51564feefa96fdfdf575381e3adc5c06653ecaeca"
 maintainer="Orphaned"
-prepare() {
-        true
-}
 
 build() {
-        cargo build --release
+    RUSTONIG_SYSTEM_LIBONIG=1 cargo build -j"$(nproc)" --release --locked
 }
 
 install() {
-        sudo install -D target/release/bat -t /usr/src/pacstall/${name}/usr/bin
+    sudo install -Dm755 target/release/bat -t "${pkgdir}/usr/bin"
 
-        sudo install -D target/release/build/bat-*/out/assets/completions/bat.fish -t /usr/src/pacstall/${name}/usr/share/fish/completions
-        sudo install -D target/release/build/bat-*/out/assets/completions/bat.zsh /usr/src/pacstall/${name}/usr/share/zsh/vendor-completions/_bat
+    sudo install -Dm644 "$(find target -name bat.bash -print -quit)" "${pkgdir}/usr/share/bash-completion/completions/bat"
+    sudo install -Dm644 "$(find target -name bat.fish -print -quit)" -t "${pkgdir}/usr/share/fish/vendor_completions.d"
+    sudo install -Dm644 "$(find target -name bat.zsh -print -quit)" "${pkgdir}/usr/share/zsh/vendor-completions/_bat"
 
-        sudo mkdir -p /usr/src/pacstall/${name}/usr/local/share/man/man1
-        gzip -c target/release/build/bat-*/out/assets/manual/bat.1 | sudo tee /usr/src/pacstall/${name}/usr/local/share/man/man1/${name}.1.gz > /dev/null
+    gzip -c "$(find target -name bat.1 | head -n1)" > "${name}.1.gz"
+    sudo install -Dm644 "${name}.1.gz" -t "${pkgdir}/usr/share/man/man1"
+
+    sudo install -Dm644 LICENSE-MIT -t "${pkgdir}/usr/share/licenses/${name}"
 }
