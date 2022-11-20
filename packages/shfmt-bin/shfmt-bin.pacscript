@@ -8,13 +8,13 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="shfmt-bin"
 pkgname="shfmt"
-version="3.4.3"
-pkgdir="/usr/src/pacstall/${name}"
+version="3.5.1"
 url="https://github.com/mvdan/sh/releases/download/v${version}/shfmt_v${version}_linux_amd64"
 description="Format shell programs"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-deb ${pkgname}-app"
-hash="713ef49db9a60a00636814a507da851b58da6b4b98a3627188fba0a61b60f9a8"
+hash="56099a689b68534f98e1f8f05d3df6750ab53e3db68f514ee45595bf5b79d158"
+repology=("project: ${pkgname}")
 
 prepare() {
   true
