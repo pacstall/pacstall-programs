@@ -2,7 +2,7 @@ name="insync-deb"
 pkgname="insync"
 version="3.8.1.50459"
 repology=("project: insync")
-depends="procps pcregrep"
+depends="procps"
 codename="focal"
 hash="428be8951c5dd4b35d68edbf029f94b05dd10e3452c49ecdc819d44fdeca0f6d"
 if [[ "$(lsb_release -is)" == "Debian" ]]; then
