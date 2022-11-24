@@ -12,27 +12,24 @@ build_depends="cargo cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb
 description="A fast, cross-platform, OpenGL terminal emulator"
 maintainer="Warofzen <warofzen1@protonmail.com>"
 hash="0fb3370c662f5b87d1b9a487aef999195212b192e08f6f68a572fed8fd637e07"
-prepare() {
-        true
-}
 
 build() {
-        cargo build -j$(nproc) --release
+    cargo build -j$(nproc) --release --locked
 }
 
 install() {
-        sudo install -D target/release/alacritty -t /usr/src/pacstall/${name}/usr/bin
+    sudo install -Dm755 target/release/alacritty -t "${pkgdir}/usr/bin"
 
-        sudo install -D extra/logo/alacritty-term.svg /usr/src/pacstall/${name}/usr/share/pixmaps/Alacritty.svg
+    sudo install -Dm644 extra/logo/alacritty-term.svg "${pkgdir}/usr/share/icons/hicolor/scalable/apps/Alacritty.svg"
 
-        sudo install -D extra/linux/Alacritty.desktop -t /usr/src/pacstall/${name}/usr/share/applications
+    sudo install -Dm644 extra/linux/Alacritty.desktop -t "${pkgdir}/usr/share/applications"
 
-        sudo install -D extra/completions/alacritty.bash -t /usr/src/pacstall/${name}/usr/share/bash-completion/completions
-        sudo install -D extra/completions/alacritty.fish -t /usr/src/pacstall/${name}/usr/share/fish/completions
-        sudo install -D extra/completions/_alacritty -t /usr/src/pacstall/${name}/usr/share/zsh/vendor-completions
+    sudo install -Dm644 extra/completions/alacritty.bash "${pkgdir}/usr/share/bash-completion/completions/alacritty"
+    sudo install -Dm644 extra/completions/alacritty.fish -t "${pkgdir}/usr/share/fish/vendor_completions.d"
+    sudo install -Dm644 extra/completions/_alacritty -t "${pkgdir}/usr/share/zsh/vendor-completions"
 
-        sudo mkdir -p /usr/src/pacstall/${name}/usr/local/share/man/man1
-        gzip -c extra/alacritty.man | sudo tee /usr/src/pacstall/${name}/usr/local/share/man/man1/alacritty.1.gz > /dev/null
+    gzip -c extra/alacritty.man > alacritty.1.gz
+    sudo install -Dm644 alacritty.1.gz -t "${pkgdir}/usr/share/man/man1"
 
-        sudo install -D alacritty.yml -t /usr/src/pacstall/${name}/usr/doc/share/alacritty
+    sudo install -Dm644 alacritty.yml -t "${pkgdir}/usr/share/examples/alacritty"
 }
