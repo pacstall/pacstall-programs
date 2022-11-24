@@ -25,9 +25,6 @@ EOL
     sudo ln -s "${STOWDIR}/${name}/usr/bin/net.davidotek.pupgui2.sh" "/usr/bin/protonup-qt"
 }
 
-build() {
-}
-
 install() {
     pip3 install --verbose --no-index --no-build-isolation --prefix="${STOWDIR}/${name}/usr" --no-deps .
 
