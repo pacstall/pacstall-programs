@@ -4,7 +4,6 @@ url="https://github.com/DavidoTek/ProtonUp-Qt.git"
 
 depends="python3"
 build_depends="python3 python3-pip"
-
 pkgver() {
     # get the latest tag (newest release version) - master may be broken, tags are releases
     git ls-remote --tags "${url}" | tail -n1 | cut -f1 | cut -c1-8
