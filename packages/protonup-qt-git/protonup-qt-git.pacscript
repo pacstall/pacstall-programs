@@ -1,7 +1,6 @@
 name="protonup-qt-git"
 description="Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris"
 url="https://github.com/DavidoTek/ProtonUp-Qt.git"
-
 depends="python3"
 build_depends="python3 python3-pip"
 pkgver() {
