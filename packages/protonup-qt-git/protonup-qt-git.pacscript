@@ -19,14 +19,16 @@ cat >"${STOWDIR}/${name}/usr/bin/net.davidotek.pupgui2.sh" <<EOL
 #!/bin/bash
 PYTHONPATH=$PYTHONPATH:${STOWDIR}/${name}/usr/local/lib/`ls ${STOWDIR}/${name}/usr/local/lib/ | grep python3`/dist-packages/ python3 -m pupgui2
 EOL
-
-    sudo ln -s "${STOWDIR}/${name}/usr/bin/net.davidotek.pupgui2.sh" "/usr/bin/protonup-qt"
 }
 
 install() {
     pip3 install --verbose --no-index --no-build-isolation --prefix="${STOWDIR}/${name}/usr" --no-deps .
 
     cp -r share "${STOWDIR}/${name}/usr/"
+}
+
+postinst() {
+    sudo ln -s /usr/bin/net.davidotek.pupgui2.sh /usr/bin/protonup-qt
 }
 
 removescript() {
