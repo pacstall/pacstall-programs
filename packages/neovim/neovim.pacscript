@@ -15,9 +15,9 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/${pkgname}
-    sudo install -Dm644 "LICENSE.txt" -t "/usr/src/pacstall/${pkgname}/usr/share/licenses/${pkgname}"
-    sudo install -Dm644 "README.md" -t "/usr/src/pacstall/${pkgname}/usr/share/doc/${pkgname}"
+    sudo make install DESTDIR="${pkgdir}"
+    sudo install -Dm644 "LICENSE.txt" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 }
 
 removescript() {
