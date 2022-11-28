@@ -10,10 +10,6 @@ hash="b4484e130aa962457189f3dee34b8481943c1e395d2d684c6f8b91598494d9ec"
 maintainer="Henryws <hwengerstickel@pm.me>"
 repology=("project: ${name}")
 
-prepare() {
-    true
-}
-
 build() {
     make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/usr -j"$(nproc)"
 }
