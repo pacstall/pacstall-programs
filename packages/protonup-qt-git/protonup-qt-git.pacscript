@@ -12,13 +12,13 @@ version="$(pkgver)"
 prepare() {
     sudo mkdir -p "${STOWDIR}/${name}/usr/bin"
 
-    sed 's/==.*//g' requirements.txt > requirements_nover.txt
-    sed 's/PySide6-Essentials/PySide6/' requirements_nover.txt > requirements.txt
+    sed "s/==.*//g" requirements.txt > requirements_nover.txt
+    sed "s/PySide6-Essentials/PySide6/" requirements_nover.txt > requirements.txt
     pip3 install --verbose --no-index --ignore-installed --prefix="${STOWDIR}/${name}/usr" -r requirements.txt
 
 cat >"${STOWDIR}/${name}/usr/bin/net.davidotek.pupgui2.sh" <<EOL
 #!/bin/bash
-PYTHONPATH=$PYTHONPATH:${STOWDIR}/${name}/usr/local/lib/`ls ${STOWDIR}/${name}/usr/local/lib/ | grep python3`/dist-packages/ python3 -m pupgui2
+PYTHONPATH=$PYTHONPATH:"${STOWDIR}/${name}/usr/local/lib/$(ls ${STOWDIR}/${name}/usr/local/lib/ | grep python3)/dist-packages/" python3 -m pupgui2
 EOL
 }
 
