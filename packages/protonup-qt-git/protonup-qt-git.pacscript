@@ -18,7 +18,7 @@ prepare() {
 
 cat >"${STOWDIR}/${name}/usr/bin/net.davidotek.pupgui2.sh" <<EOL
 #!/bin/bash
-PYTHONPATH=$PYTHONPATH:"${STOWDIR}/${name}/usr/local/lib/$(ls ${STOWDIR}/${name}/usr/local/lib/ | grep python3)/dist-packages/" python3 -m pupgui2
+PYTHONPATH=$PYTHONPATH:"${STOWDIR}/${name}/usr/local/lib/$(ls "${STOWDIR}/${name}/usr/local/lib/" | grep python3)/dist-packages/" python3 -m pupgui2
 EOL
 }
 
