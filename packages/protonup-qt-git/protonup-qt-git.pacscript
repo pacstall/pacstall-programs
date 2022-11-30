@@ -13,7 +13,7 @@ prepare() {
     sudo mkdir -p "${STOWDIR}/${name}/usr/bin"
 
     sed -i -e "s/==.*//g" -e "s/>=.*//g" -e "s/PySide6-Essentials/PySide6/" requirements.txt
-    pip3 install --verbose --no-index --ignore-installed --prefix="${STOWDIR}/${name}/usr" -r requirements.txt
+    pip3 install --verbose --no-index --ignore-installed --prefix="${STOWDIR}/${name}/usr" --index-url https://pypi.org/simple -r requirements.txt
 
 cat >"${STOWDIR}/${name}/usr/bin/net.davidotek.pupgui2.sh" <<EOL
 #!/bin/bash
