@@ -31,6 +31,7 @@ brave-browser-deb
 brave-browser-nightly-deb
 brave-keyring-deb
 btop-bin
+btrfs-du-bin
 cantata
 caprine-deb
 chezmoi-deb
@@ -86,6 +87,7 @@ fastfetch-git
 fblog-deb
 fennel
 fennel-bin
+ferdium-deb
 ferium-bin
 feroxbuster-bin
 firefox-deb
@@ -95,6 +97,7 @@ fm6000-git
 fnlfmt
 forticlient-deb
 freetube-deb
+fsearch-deb
 fsearch-git
 geekbench-bin
 gfn-electron-bin
@@ -125,6 +128,7 @@ gtkhash
 gtkmm4
 harmonoid-deb
 headset-deb
+helix
 hello
 heroic-games-launcher-deb
 highlight-pointer-bin
@@ -154,8 +158,10 @@ lagrange
 latte-dock-git
 lbry-deb
 lemonbar-xft-git
+lens
 lf-bin
 libcutefish-git
+libicu71-deb
 libndi4-deb
 libresprite-git
 libressl
@@ -167,6 +173,7 @@ linux-headers-generic-deb
 linux-image-unsigned-deb
 linux-kernel
 linux-modules-deb
+linux-wifi-hotspot-deb
 lrz-syncshare-deb
 lsd-deb
 lutris-deb
@@ -209,6 +216,7 @@ notion-app-enhanced-deb
 notion-git
 nowpm
 nuclei-bin
+nushell-bin
 nyxt-deb
 obquit-git
 obs-backgroundremoval
@@ -225,9 +233,12 @@ opentoonz-gts
 opera-beta-deb
 opera-deb
 opera-developer-deb
+os-installer-commit
+os-installer-git
 pacget-git
 paconvert-git
 pacstall-gui-git
+pacup-bin
 panagement
 paper-icon-theme
 papirus-icon-theme
@@ -243,6 +254,7 @@ polybar
 pomatez-deb
 popsicle
 postman-bin
+prismlauncher-git
 proton-python-client
 protonmail-bridge-deb
 protonvpn-cli
@@ -256,6 +268,7 @@ qtile-git
 realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
+rhino-linux-xfce4-config
 sed
 shell-color-scripts
 shellcheck-bin
