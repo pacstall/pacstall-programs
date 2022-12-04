@@ -1,9 +1,0 @@
-name="onlyoffice-desktopeditors-deb"
-gives="onlyoffice-desktopeditors"
-version="7.2.1"
-replace="${gives}"
-url="https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${version}/onlyoffice-desktopeditors_amd64.deb"
-description="ONLYOFFICE Desktop Editors is a free office suite that combines text, spreadsheet and presentation editors allowing to create, view and edit documents stored on your Linux PC without an Internet connection."
-repology=("project: onlyoffice-desktopeditors")
-hash="16519e98718803b29e54e81b09a231406ddb0342ab68320ebb9508a312e0b5de"
-maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
