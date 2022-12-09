@@ -270,6 +270,7 @@ realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
 rhino-linux-xfce4-config
+rstudio-deb
 sed
 shell-color-scripts
 shellcheck-bin
@@ -355,6 +356,7 @@ yandex-browser-beta-deb
 yandex-browser-stable-deb
 yandex-disk-deb
 youtube-dl-git
+youtube-music-deb
 yt-dlp
 zap
 zentile-bin
