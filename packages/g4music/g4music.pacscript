@@ -1,7 +1,7 @@
 name="g4music"
 gives="g4music"
 version="1.8.2"
-build_depends="cmake meson valac libgtk-4-dev libgstreamer1.0-dev libadwaita-1-dev"
+build_depends="cmake meson valac libgtk-4-dev libgstreamer1.0-0 libgstreamer1.0-dev libadwaita-1-dev"
 # HACK: https://github.com/pacstall/pacstall/issues/727
 depends="libgtk-4-dev libgstreamer1.0-dev libadwaita-1-dev"
 url="https://gitlab.gnome.org/neithern/g4music/-/archive/v${version}/g4music-v${version}.zip"
