@@ -2,7 +2,7 @@ name="g4music"
 gives="g4music"
 version="1.8.2"
 build_depends="meson valac libgtk-4-dev libgstreamer1.0-dev libadwaita-1-dev"
-#This is a temporary fix, because pacstall doesn't install run-time deps before installation
+# HACK: https://github.com/pacstall/pacstall/issues/727
 depends="libgtk-4-dev libgstreamer1.0-dev libadwaita-1-dev"
 url="https://gitlab.gnome.org/neithern/g4music/-/archive/v${version}/g4music-v${version}.zip"
 repology=("project: g4music")
