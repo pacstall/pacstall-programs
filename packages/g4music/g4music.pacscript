@@ -8,9 +8,6 @@ repology=("project: g4music")
 description="Play your music in an elegant way"
 hash=""
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
-prepare() {
-  true
-}
 build(){
 	meson setup build --buildtype=release
 }
