@@ -11,7 +11,7 @@ maintainer="Henryws <hwengerstickel@pm.me>"
 repology=("project: ${name}")
 
 build() {
-    make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/usr -j"$(nproc)"
+    make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"$(nproc)"
 }
 
 install() {
