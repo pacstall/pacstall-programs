@@ -1,6 +1,6 @@
 name="popcorn-time-deb"
 gives="popcorn-time"
-repology=("project: ${gives}")
+repology=("project: popcorntime")
 version="0.4.9"
 url="https://github.com/popcorn-official/popcorn-desktop/releases/download/v${version}/Popcorn-Time-${version}-amd64.deb"
 description="A multi-platform, free software BitTorrent client that includes an integrated media player"
