@@ -6,6 +6,7 @@ description="Universal Command Line Interface for Amazon Web Services v2"
 depends="groff less"
 build_depends="unzip"
 replace="awscli"
+repology=("project: awscli")
 hash="8f1de286d2c66cc0d0d26f205fdb17d5ed073f1e97f305c522e2d1fd89d5c854"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 
