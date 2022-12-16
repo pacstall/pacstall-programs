@@ -101,7 +101,7 @@ jobs:
               package_dir=`dirname "${changed_file}"`
               echo "Running pacstall -R for ${package_name}..."
               cd ${package_dir}
-              pacstall --disable-prompts -R ${pacscript_file}
+              pacstall --disable-prompts -R ${package_name}
             fi
           done
         shell: sudo -E -u dio bash {0}
@@ -198,7 +198,7 @@ jobs:
               package_dir=`dirname "${changed_file}"`
               echo "Running pacstall -R for ${package_name}..."
               cd ${package_dir}
-              pacstall --disable-prompts -R ${pacscript_file}
+              pacstall --disable-prompts -R ${package_name}
             fi
           done
         shell: sudo -E -u dio bash {0}
