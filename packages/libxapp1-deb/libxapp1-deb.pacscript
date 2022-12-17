@@ -1,0 +1,9 @@
+name="libxapp1-deb"
+gives="libxapp1"
+version="2.4.1"
+repology=("project: xapps")
+pacdeps=("xapps-common-deb")
+url="http://ftp.debian.org/debian/pool/main/x/xapp/libxapp1_${version}-1_amd64.deb"
+hash="f2d3545fc8b4c73c603c80c9b89255fba5b66d79a8abc8b04610de2ec12c0879"
+description="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
+maintainer="Zahrun <Zahrun@github.com>"

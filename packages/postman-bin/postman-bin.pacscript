@@ -1,9 +1,9 @@
 name="postman-bin"
-version="10.0.1"
+version="10.5.2"
 description="Build, test, and document your APIs faster"
 repology=("project: postman" "visiblename: postman-bin")
 url="https://dl.pstmn.io/download/version/${version}/linux64"
-hash="f4bff0f708de0c59481bd2189a61c21f56c81b3ceb423c6c1816bf8359b29e44"
+hash="4257521f370486af7739746aeb317d3ebd4f81a096094aef019ede4474324412"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="postman"
 breaks="postman postman-deb postman-app"
