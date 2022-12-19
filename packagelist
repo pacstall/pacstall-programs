@@ -1,373 +1,377 @@
-1password-cli-bin
-adapta-gtk-theme-git
-alacritty
-amfora-bin
-an-anime-game-launcher-bin
-android-studio
-ani-cli-bin
-anydesk-bin
-anydesk-deb
-aomp-deb
-appimagelauncher-deb
-ardour-git
-arduino-cli-bin
-arduino-ide-bin
-awesome-git
-aws-cli-v2-bin
-balena-etcher-electron-deb
-bat
-bat-deb
-batsignal
-bazecor-app
-bemenu-git
-bitwarden-cli-bin
-bitwarden-deb
-bitwig-studio-3-deb
-bitwig-studio-deb
-bluegriffon-deb
-bpytop-git
-brave-browser-beta-deb
-brave-browser-deb
-brave-browser-nightly-deb
-brave-keyring-deb
-btop-bin
-btrfs-du-bin
-cantata
-caprine-deb
-chezmoi-deb
-chwp-deb
-clib
-cmatrix
-com.github.mirkobrombin.bottles-deb
-conky-manager-zcot-git
-couture
-cutefish-calculator-git
-cutefish-core-git
-cutefish-dock-git
-cutefish-filemanager-git
-cutefish-icons-git
-cutefish-kwin-plugins-git
-cutefish-launcher-git
-cutefish-qt-plugins-git
-cutefish-settings-git
-cutefish-statusbar-git
-cutefish-wallpapers-git
-dbeaver-ce-deb
-deskcut-deb
-dino-git
-discord
-discord-canary
-discord-deb
-discord-ptb-deb
-distrobox
-dmenu
-dmenu-distrotube
-doas-git
-dotdrop
-drawio-desktop-deb
-dropbox-deb
-duf-deb
-dunst
-dust-bin
-eddie-ui-deb
-electronmail-deb
-electrum-git
-element-desktop-deb
-emacs
-emacs-git
-emby-server-deb
-endlessh-git
-epson-inkjet-printer-stylus-nx110-series-deb
-epson-printer-utility-deb
-exa-git
-exploitdb-git
-expressvpn-deb
-fast
-fastfetch-git
-fblog-deb
-fennel
-fennel-bin
-ferdium-deb
-ferium-bin
-feroxbuster-bin
-firefox-deb
-firefox-developer-edition-bin
-fishui-git
-fm6000-git
-fnlfmt
-forticlient-deb
-freetube-deb
-fsearch-deb
-fsearch-git
-geekbench-bin
-gfn-electron-bin
-gir1.2-xapp-1.0-deb
-git
-git-credential-manager-core-deb
-git-delta-deb
-git-extras-git
-gitblade-deb
-gitfiend-deb
-github-cli-bin
-github-cli-deb
-github-desktop-deb
-gitkraken-deb
-glow-deb
-gnome-shell-extension-installer-git
-gnome-tweaks
-go-bin
-gomuks-deb
-google-chrome-beta-deb
-google-chrome-deb
-google-chrome-unstable-deb
-google-earth-pro-stable-deb
-graillon
-grapejuice-git
-grive2
-grive2-git
-gtkhash
-gtkmm4
-harmonoid-deb
-headset-deb
-helix
-hello
-heroic-games-launcher-deb
-highlight-pointer-bin
-htop
-httptoolkit-deb
-hyper-deb
-hyperfine-bin
-hypnotix-deb
-i3-gaps
-i3blocks-git
-i3lock-color
-ibhagwan-picom-git
-imwheel-exclude-patched-git
-insync-deb
-intel-undervolt
-ivpn-deb
-ivpn-ui-deb
-jetbrains-toolbox-bin
-jonaburg-picom-git
-kalendar-git
-keepassxc
-keybase-deb
-kirc
-komorebi-fork-deb
-kvantum
-kxstudio-repos-deb
-lagrange
-latte-dock-git
-lbry-deb
-lemonbar-xft-git
-lens
-lf-bin
-libcutefish-git
-libicu71-deb
-libndi4-deb
-libresprite-git
-libressl
-librewolf-app
-librewolf-deb
-libxapp1-deb
-linked-deb
-linux-headers-deb
-linux-headers-generic-deb
-linux-image-unsigned-deb
-linux-kernel
-linux-modules-deb
-linux-wifi-hotspot-deb
-lrz-syncshare-deb
-lsd-deb
-lutris-deb
-lyrebird-git
-lyx
-mailspring-deb
-maitreya8-deb
-makedeb-deb
-mangohud
-micro
-microsoft-edge-beta-deb
-microsoft-edge-dev-deb
-microsoft-edge-stable-deb
-microsoft-prod-repo
-minecraft-launcher
-minecraft-launcher-deb
-minecraft-pi-reborn-app
-moka-icon-theme
-ms-teams-deb
-mullvad-vpn-beta-deb
-mullvad-vpn-deb
-mutt-wizard
-nala-deb
-nano
-neofetch
-neovim
-neovim-deb
-neovim-git
-nerd-fonts-cascadia-code
-nerd-fonts-hack
-nerd-fonts-jetbrains-mono
-nodejs-lts-deb
-nofetch
-noisetorch-bin
-nomachine-deb
-nordlayer-deb
-nordvpn-deb
-notion-app-deb
-notion-app-enhanced-deb
-notion-git
-nowpm
-nuclei-bin
-nushell-bin
-nyxt-deb
-obquit-git
-obs-backgroundremoval
-obs-backgroundremoval-git
-obs-ndi-deb
-oil
-onefetch-bin
-onlyoffice-desktopeditors-deb
-onnxruntime-1-7-0-bin
-opendoas-git
-opensnitch-deb
-opensnitch-ui-deb
-opentoonz
-opentoonz-gts
-opera-beta-deb
-opera-deb
-opera-developer-deb
-os-installer-commit
-os-installer-git
-pacget-git
-paconvert-git
-pacstall-gui-git
-pacup-bin
-panagement
-paper-icon-theme
-papirus-icon-theme
-pdf-mix-tool-git
-pdfmm-git
-pfetch-bin
-pgmigrate
-pipes.sh-bin
-pipewire
-planner-git
-plexmediaserver-deb
-polybar
-pomatez-deb
-popcorn-time-deb
-popsicle
-postman-bin
-prismlauncher-git
-proton-python-client
-protonmail-bridge-deb
-protonvpn-cli
-protonvpn-gui
-protonvpn-nm-lib
-pulsar-deb
-pycharm-community-bin
-python3-imdbpy-deb
-qogir-gtk-theme-bin
-qogir-icon-theme-bin
-qtile-extras-git
-qtile-git
-realvnc-vnc-viewer-deb
-renegate
-reshade-shaders-git
-rhino-linux-xfce4-config
-rstudio-deb
-sed
-shell-color-scripts
-shellcheck-bin
-shellharden
-shfmt-bin
-signal-desktop-beta-deb
-signal-desktop-deb
-slack-deb
-slop-git
-smartgit
-smplayer-deb
-songrec-deb
-soundux
-spacecadetpinball-git
-spotify-client-deb
-st-distrotube-git
-st-lukesmith-git
-starship-bin
-steam-deb
-steam-launcher-deb
-steamtinkerlaunch-git
-stellarium
-sublime-merge-deb
-sublime-text-deb
-surf
-surf-distrotube-git
-surfshark-gui-deb
-suru-icon-theme-git
-systemcoding-conky
-taskwarrior
-teams-for-linux-deb
-teamviewer-deb
-telegram-bin
-tenacity-git
-thrive-deb
-tidal-hifi-bin
-timeshift
-tixati-deb
-tmpmail-bin
-tmux
-topgrade-bin
-topgrade-musl-bin
-tor
-torbrowser-launcher-git
-torguard-deb
-touchegg-deb
-touchegg-git
-treefetch-bin
-ttf-fira-sans
-tuner
-tuner-git
-tutanota-app
-ulauncher-deb
-universal-ctags-git
-upscayl-app
-uwufetch
-vega-strike-engine-git
-vega-strike-git
-veracrypt-deb
-vim
-viper4linux
-vivaldi-deb
-vivarium
-vscode-deb
-vscodium-deb
-vyprvpn-deb
-waf
-walc-app
-warpinator-deb
-wazzapp-deb
-webapp-manager
-webapp-manager-deb
-webcord-deb
-weechat-git
-windscribe-alpha-gui-deb
-windscribe-beta-gui-deb
-wine-staging-git
-wsysmon-bin
-xapps-common-deb
-xfce4-deb
-yabridge
-yad
-yafetch-git
-yandex-browser-beta-deb
-yandex-browser-stable-deb
-yandex-disk-deb
-youtube-dl-git
-youtube-music-deb
-yt-dlp
-zap
-zentile-bin
-zoho-notebook-deb
-zoom-deb
-zotero
+total 0
+drwxrwxr-x 1 awollgarten awollgarten 9.9K Dec 18 10:12 [0m[01;34m.[0m
+drwxrwxr-x 1 awollgarten awollgarten  228 Dec 18 10:08 [01;34m..[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Dec 18 10:08 [01;34m1password-cli-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   60 Nov  7 18:24 [01;34madapta-gtk-theme-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Dec 18 10:08 [01;34malacritty[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Dec 18 10:08 [01;34mamfora-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   72 Dec 18 10:08 [01;34man-anime-game-launcher-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   92 Nov  7 18:24 [01;34mandroid-studio[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mani-cli-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34manydesk-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34manydesk-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34maomp-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   60 Nov  7 18:24 [01;34mappimagelauncher-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Dec 18 10:08 [01;34mardour-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Dec 18 10:08 [01;34marduino-cli-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34marduino-ide-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mawesome-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Dec 18 10:08 [01;34maws-cli-v2-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   72 Nov  7 18:24 [01;34mbalena-etcher-electron-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   26 Dec 18 10:08 [01;34mbat[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mbat-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mbatsignal[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mbazecor-app[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mbemenu-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mbitwarden-cli-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov 14 19:50 [01;34mbitwarden-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov  7 18:24 [01;34mbitwig-studio-3-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mbitwig-studio-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mbluegriffon-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mbpytop-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   64 Dec 18 10:08 [01;34mbrave-browser-beta-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Dec 18 10:08 [01;34mbrave-browser-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Dec 18 10:08 [01;34mbrave-browser-nightly-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mbrave-keyring-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov 14 19:50 [01;34mbtop-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mbtrfs-du-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mcantata[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mcaprine-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mchezmoi-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mchwp-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   28 Nov  7 18:24 [01;34mclib[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mcmatrix[0m
+drwxrwxr-x 1 awollgarten awollgarten   90 Nov  7 18:24 [01;34mcom.github.mirkobrombin.bottles-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   64 Nov  7 18:24 [01;34mconky-manager-zcot-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Dec 18 10:08 [01;34mcouture[0m
+drwxrwxr-x 1 awollgarten awollgarten   66 Nov  7 18:24 [01;34mcutefish-calculator-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mcutefish-core-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mcutefish-dock-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   68 Nov  7 18:24 [01;34mcutefish-filemanager-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34mcutefish-icons-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Nov  7 18:24 [01;34mcutefish-kwin-plugins-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   62 Nov  7 18:24 [01;34mcutefish-launcher-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   66 Nov  7 18:24 [01;34mcutefish-qt-plugins-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   62 Nov  7 18:24 [01;34mcutefish-settings-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   64 Nov  7 18:24 [01;34mcutefish-statusbar-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   66 Nov  7 18:24 [01;34mcutefish-wallpapers-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mdbeaver-ce-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mdeskcut-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mdino-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Dec 18 10:08 [01;34mdiscord[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Dec 18 10:08 [01;34mdiscord-canary[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Dec 18 10:08 [01;34mdiscord-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov 14 19:50 [01;34mdiscord-ptb-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mdistrobox[0m
+drwxrwxr-x 1 awollgarten awollgarten   30 Nov 14 19:50 [01;34mdmenu[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mdmenu-distrotube[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Nov  7 18:24 [01;34mdoas-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mdotdrop[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34mdrawio-desktop-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mdropbox-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mduf-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   30 Nov  7 18:24 [01;34mdunst[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mdust-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34meddie-ui-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34melectronmail-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34melectrum-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov 14 19:50 [01;34melement-desktop-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   30 Nov  7 18:24 [01;34memacs[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34memacs-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34memby-server-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Nov  7 18:24 [01;34mendlessh-git[0m
+drwxrwxr-x 1 awollgarten awollgarten  108 Nov  7 18:24 [01;34mepson-inkjet-printer-stylus-nx110-series-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Nov  7 18:24 [01;34mepson-printer-utility-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mexa-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mexploitdb-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mexpressvpn-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   28 Nov  7 18:24 [01;34mfast[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mfastfetch-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mfblog-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   32 Nov 14 19:50 [01;34mfennel[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mfennel-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Dec 18 10:08 [01;34mferdium-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mferium-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mferoxbuster-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Dec 18 10:08 [01;34mfirefox-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten  144 Dec 18 10:08 [01;34mfirefox-developer-edition-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mfishui-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mfm6000-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   32 Nov  7 18:24 [01;34mfnlfmt[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mforticlient-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mfreetube-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mfsearch-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mfsearch-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mgeekbench-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mgfn-electron-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Dec 18 10:08 [01;34mgir1.2-xapp-1.0-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   26 Nov  7 18:24 [01;34mgit[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mgitblade-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   82 Dec 18 10:08 [01;34mgit-credential-manager-core-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mgit-delta-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mgit-extras-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mgitfiend-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mgithub-cli-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov 14 19:50 [01;34mgithub-cli-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov 14 19:50 [01;34mgithub-desktop-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mgitkraken-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mglow-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   90 Nov  7 18:24 [01;34mgnome-shell-extension-installer-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mgnome-tweaks[0m
+drwxrwxr-x 1 awollgarten awollgarten   32 Nov 14 19:50 [01;34mgo-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mgomuks-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   64 Nov  7 18:24 [01;34mgoogle-chrome-beta-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Dec 18 10:08 [01;34mgoogle-chrome-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   72 Nov  7 18:24 [01;34mgoogle-chrome-unstable-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   74 Dec 18 10:08 [01;34mgoogle-earth-pro-stable-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Dec 18 10:08 [01;34mgraillon[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mgrapejuice-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   32 Nov  7 18:24 [01;34mgrive2[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mgrive2-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mgtkhash[0m
+drwxrwxr-x 1 awollgarten awollgarten   32 Nov  7 18:24 [01;34mgtkmm4[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Dec 18 10:08 [01;34mharmonoid-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mheadset-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   30 Dec 18 10:08 [01;34mhelix[0m
+drwxrwxr-x 1 awollgarten awollgarten   30 Nov  7 18:24 [01;34mhello[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Dec 18 10:08 [01;34mheroic-games-launcher-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   62 Nov  7 18:24 [01;34mhighlight-pointer-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   28 Nov  7 18:24 [01;34mhtop[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mhttptoolkit-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mhyper-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mhyperfine-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Dec 18 10:08 [01;34mhypnotix-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mi3blocks-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mi3-gaps[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mi3lock-color[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34mibhagwan-picom-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   74 Nov  7 18:24 [01;34mimwheel-exclude-patched-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Dec 18 10:08 [01;34minsync-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mintel-undervolt[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mivpn-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mivpn-ui-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   62 Nov  7 18:24 [01;34mjetbrains-toolbox-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34mjonaburg-picom-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mkalendar-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Dec 18 10:08 [01;34mkeepassxc[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mkeybase-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   28 Nov  7 18:24 [01;34mkirc[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mkomorebi-fork-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mkvantum[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34mkxstudio-repos-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mlagrange[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mlatte-dock-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mlbry-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mlemonbar-xft-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   28 Dec 18 10:08 [01;34mlens[0m
+drwxrwxr-x 1 awollgarten awollgarten   32 Nov  7 18:24 [01;34mlf-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mlibcutefish-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mlibicu71-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mlibndi4-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mlibresprite-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov 14 19:50 [01;34mlibressl[0m
+drwxrwxr-x 1 awollgarten awollgarten   80 Nov  7 18:24 [01;34mlibrewolf-app[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mlibrewolf-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Dec 18 10:08 [01;34mlibxapp1-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mlinked-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mlinux-headers-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Nov  7 18:24 [01;34mlinux-headers-generic-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   68 Nov  7 18:24 [01;34mlinux-image-unsigned-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mlinux-kernel[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mlinux-modules-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   64 Nov 14 19:50 [01;34mlinux-wifi-hotspot-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mlrz-syncshare-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mlsd-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Dec 18 10:08 [01;34mlutris-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mlyrebird-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   26 Nov  7 18:24 [01;34mlyx[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mmailspring-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Dec 18 10:08 [01;34mmaitreya8-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mmakedeb-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mmangohud[0m
+drwxrwxr-x 1 awollgarten awollgarten   30 Nov  7 18:24 [01;34mmicro[0m
+drwxrwxr-x 1 awollgarten awollgarten   66 Dec 18 10:08 [01;34mmicrosoft-edge-beta-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   64 Nov  7 18:24 [01;34mmicrosoft-edge-dev-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Nov  7 18:24 [01;34mmicrosoft-edge-stable-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Dec 18 10:08 [01;34mmicrosoft-prod-repo[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34mminecraft-launcher[0m
+drwxrwxr-x 1 awollgarten awollgarten   64 Nov  7 18:24 [01;34mminecraft-launcher-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten  242 Nov  7 18:24 [01;34mminecraft-pi-reborn-app[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mmoka-icon-theme[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mms-teams-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   60 Nov  7 18:24 [01;34mmullvad-vpn-beta-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mmullvad-vpn-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mmutt-wizard[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mnala-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   28 Nov  7 18:24 [01;34mnano[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mneofetch[0m
+drwxrwxr-x 1 awollgarten awollgarten   32 Dec 18 10:08 [01;34mneovim[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Dec 18 10:08 [01;34mneovim-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mneovim-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   68 Nov  7 18:24 [01;34mnerd-fonts-cascadia-code[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mnerd-fonts-hack[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Nov  7 18:24 [01;34mnerd-fonts-jetbrains-mono[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mnodejs-lts-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mnofetch[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mnoisetorch-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mnomachine-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mnordlayer-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mnordvpn-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mnotion-app-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   66 Nov  7 18:24 [01;34mnotion-app-enhanced-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Dec 18 10:08 [01;34mnotion-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   30 Nov  7 18:24 [01;34mnowpm[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mnuclei-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mnushell-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mnyxt-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mobquit-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   62 Nov  7 18:24 [01;34mobs-backgroundremoval[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Dec 18 10:08 [01;34mobs-backgroundremoval-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mobs-ndi-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   26 Nov  7 18:24 [01;34moil[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34monefetch-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   78 Dec 18 10:08 [01;34monlyoffice-desktopeditors-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   62 Nov  7 18:24 [01;34monnxruntime-1-7-0-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mopendoas-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mopensnitch-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mopensnitch-ui-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mopentoonz[0m
+drwxrwxr-x 1 awollgarten awollgarten   68 Nov  7 18:24 [01;34mopentoonz-gts[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mopera-beta-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mopera-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov  7 18:24 [01;34mopera-developer-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Dec 18 10:08 [01;34mos-installer-commit[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mos-installer-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mpacget-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mpaconvert-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mpacstall-gui-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Dec 18 10:08 [01;34mpacup-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Dec 18 10:08 [01;34mpanagement[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mpaper-icon-theme[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Dec 18 10:08 [01;34mpapirus-icon-theme[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mpdf-mix-tool-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mpdfmm-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mpfetch-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mpgmigrate[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mpipes.sh-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov 14 19:50 [01;34mpipewire[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mplanner-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov  7 18:24 [01;34mplexmediaserver-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34mpolybar[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mpomatez-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Dec 18 10:08 [01;34mpopcorn-time-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mpopsicle[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Dec 18 10:08 [01;34mpostman-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mprismlauncher-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   62 Nov  7 18:24 [01;34mprotonmail-bridge-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   60 Nov  7 18:24 [01;34mproton-python-client[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mprotonvpn-cli[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mprotonvpn-gui[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mprotonvpn-nm-lib[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Dec 18 10:08 [01;34mpulsar-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   92 Nov  7 18:24 [01;34mpycharm-community-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Dec 18 10:08 [01;34mpython3-imdbpy-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov  7 18:24 [01;34mqogir-gtk-theme-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   60 Dec 18 10:08 [01;34mqogir-icon-theme-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mqtile-extras-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mqtile-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   64 Nov  7 18:24 [01;34mrealvnc-vnc-viewer-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Dec 18 10:08 [01;34mrenegate[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov  7 18:24 [01;34mreshade-shaders-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   68 Dec 18 10:08 [01;34mrhino-linux-xfce4-config[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Dec 18 10:08 [01;34mrstudio-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   26 Nov  7 18:24 [01;34msed[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mshellcheck-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov  7 18:24 [01;34mshell-color-scripts[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mshellharden[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Dec 18 10:08 [01;34mshfmt-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   66 Nov  7 18:24 [01;34msignal-desktop-beta-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34msignal-desktop-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mslack-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mslop-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Dec 18 10:08 [01;34msmartgit[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34msmplayer-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Dec 18 10:08 [01;34msongrec-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   34 Nov  7 18:24 [01;34msoundux[0m
+drwxrwxr-x 1 awollgarten awollgarten  112 Nov  7 18:24 [01;34mspacecadetpinball-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34mspotify-client-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mstarship-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34mst-distrotube-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34msteam-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34msteam-launcher-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   62 Nov  7 18:24 [01;34msteamtinkerlaunch-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mstellarium[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mst-lukesmith-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Nov  7 18:24 [01;34msublime-merge-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34msublime-text-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34msurf[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov  7 18:24 [01;34msurf-distrotube-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Dec 18 10:08 [01;34msurfshark-gui-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov  7 18:24 [01;34msuru-icon-theme-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34msystemcoding-conky[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mtaskwarrior[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov  7 18:24 [01;34mteams-for-linux-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mteamviewer-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mtelegram-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Dec 18 10:08 [01;34mtenacity-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mthrive-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mtidal-hifi-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mtimeshift[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mtixati-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mtmpmail-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   28 Nov  7 18:24 [01;34mtmux[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Dec 18 10:08 [01;34mtopgrade-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Dec 18 10:08 [01;34mtopgrade-musl-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   26 Nov  7 18:24 [01;34mtor[0m
+drwxrwxr-x 1 awollgarten awollgarten   66 Nov  7 18:24 [01;34mtorbrowser-launcher-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Dec 18 10:08 [01;34mtorguard-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mtouchegg-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mtouchegg-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mtreefetch-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mttf-fira-sans[0m
+drwxrwxr-x 1 awollgarten awollgarten   30 Nov  7 18:24 [01;34mtuner[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mtuner-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   76 Nov  7 18:24 [01;34mtutanota-app[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mulauncher-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   58 Nov  7 18:24 [01;34muniversal-ctags-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   72 Nov  7 18:24 [01;34mupscayl-app[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34muwufetch[0m
+drwxrwxr-x 1 awollgarten awollgarten   64 Nov  7 18:24 [01;34mvega-strike-engine-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34mvega-strike-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   46 Nov  7 18:24 [01;34mveracrypt-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   26 Nov  7 18:24 [01;34mvim[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mviper4linux[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mvivaldi-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mvivarium[0m
+drwxrwxr-x 1 awollgarten awollgarten   40 Nov  7 18:24 [01;34mvscode-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   44 Nov  7 18:24 [01;34mvscodium-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mvyprvpn-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   26 Nov  7 18:24 [01;34mwaf[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Nov  7 18:24 [01;34mwalc-app[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mwarpinator-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mwazzapp-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34mwebapp-manager[0m
+drwxrwxr-x 1 awollgarten awollgarten   56 Nov  7 18:24 [01;34mwebapp-manager-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Dec 18 10:08 [01;34mwebcord-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mweechat-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   72 Dec 18 10:28 [01;34mwezterm-app[0m
+drwxrwxr-x 1 awollgarten awollgarten   68 Nov  7 18:24 [01;34mwindscribe-alpha-gui-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   66 Nov  7 18:24 [01;34mwindscribe-beta-gui-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Nov  7 18:24 [01;34mwine-staging-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   72 Nov  7 18:24 [01;34mwsysmon-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   52 Dec 18 10:08 [01;34mxapps-common-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   38 Nov  7 18:24 [01;34mxfce4-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Dec 18 10:08 [01;34myabridge[0m
+drwxrwxr-x 1 awollgarten awollgarten   26 Nov  7 18:24 [01;34myad[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34myafetch-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   66 Nov  7 18:24 [01;34myandex-browser-beta-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   70 Nov  7 18:24 [01;34myandex-browser-stable-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   50 Nov  7 18:24 [01;34myandex-disk-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   48 Nov  7 18:24 [01;34myoutube-dl-git[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Dec 18 10:08 [01;34myoutube-music-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   32 Nov  7 18:24 [01;34myt-dlp[0m
+drwxrwxr-x 1 awollgarten awollgarten   26 Dec 18 10:08 [01;34mzap[0m
+drwxrwxr-x 1 awollgarten awollgarten   42 Nov  7 18:24 [01;34mzentile-bin[0m
+drwxrwxr-x 1 awollgarten awollgarten   54 Dec 18 10:08 [01;34mzoho-notebook-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   36 Dec 18 10:08 [01;34mzoom-deb[0m
+drwxrwxr-x 1 awollgarten awollgarten   32 Nov 14 19:50 [01;34mzotero[0m
