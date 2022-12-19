@@ -5,7 +5,6 @@ description="A GPU-accelerated cross-platform terminal emulator and multiplexer 
 url="https://github.com/wez/wezterm/releases/download/${version}/WezTerm-${version}-Ubuntu18.04.AppImage"
 hash="2eddde41f2814619be2cd06e3863003c5c19805d8ce5980fd97660bfd9bead39"
 breaks="${pkgname}-git"
-#pkgdir="${STOWDIR}/${name}"
 repology=("project: wezterm")
 
 install() {
