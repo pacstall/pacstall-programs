@@ -1,20 +1,12 @@
 name="wezterm-app"
 pkgname="wezterm"
 version="20221119-145034-49b9839f"
-description="WezTerm is a GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
+description="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
 url="https://github.com/wez/wezterm/releases/download/${version}/WezTerm-${version}-Ubuntu18.04.AppImage"
 hash="2eddde41f2814619be2cd06e3863003c5c19805d8ce5980fd97660bfd9bead39"
 breaks="${pkgname}-git"
 #pkgdir="${STOWDIR}/${name}"
 repology=("project: wezterm")
-
-prepare() {
-  true
-}
-
-build() {
-  true
-}
 
 install() {
   # Install AppImage
