@@ -1,5 +1,6 @@
 name="wezterm-app"
 pkgname="wezterm"
+gives="wezterm"
 version="20221119-145034-49b9839f"
 description="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
 url="https://github.com/wez/wezterm/releases/download/${version}/WezTerm-${version}-Ubuntu18.04.AppImage"
