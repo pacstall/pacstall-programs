@@ -31,6 +31,7 @@ brave-browser-deb
 brave-browser-nightly-deb
 brave-keyring-deb
 btop-bin
+btrfs-du-bin
 cantata
 caprine-deb
 chezmoi-deb
@@ -100,6 +101,7 @@ fsearch-deb
 fsearch-git
 geekbench-bin
 gfn-electron-bin
+gir1.2-xapp-1.0-deb
 git
 git-credential-manager-core-deb
 git-delta-deb
@@ -127,6 +129,7 @@ gtkhash
 gtkmm4
 harmonoid-deb
 headset-deb
+helix
 hello
 heroic-games-launcher-deb
 highlight-pointer-bin
@@ -134,6 +137,7 @@ htop
 httptoolkit-deb
 hyper-deb
 hyperfine-bin
+hypnotix-deb
 i3-gaps
 i3blocks-git
 i3lock-color
@@ -156,6 +160,7 @@ lagrange
 latte-dock-git
 lbry-deb
 lemonbar-xft-git
+lens
 lf-bin
 libcutefish-git
 libicu71-deb
@@ -164,12 +169,14 @@ libresprite-git
 libressl
 librewolf-app
 librewolf-deb
+libxapp1-deb
 linked-deb
 linux-headers-deb
 linux-headers-generic-deb
 linux-image-unsigned-deb
 linux-kernel
 linux-modules-deb
+linux-wifi-hotspot-deb
 lrz-syncshare-deb
 lsd-deb
 lutris-deb
@@ -220,6 +227,7 @@ obs-backgroundremoval-git
 obs-ndi-deb
 oil
 onefetch-bin
+onlyoffice-desktopeditors-deb
 onnxruntime-1-7-0-bin
 opendoas-git
 opensnitch-deb
@@ -229,9 +237,12 @@ opentoonz-gts
 opera-beta-deb
 opera-deb
 opera-developer-deb
+os-installer-commit
+os-installer-git
 pacget-git
 paconvert-git
 pacstall-gui-git
+pacup-bin
 panagement
 paper-icon-theme
 papirus-icon-theme
@@ -245,6 +256,7 @@ planner-git
 plexmediaserver-deb
 polybar
 pomatez-deb
+popcorn-time-deb
 popsicle
 postman-bin
 prismlauncher-git
@@ -253,7 +265,9 @@ protonmail-bridge-deb
 protonvpn-cli
 protonvpn-gui
 protonvpn-nm-lib
+pulsar-deb
 pycharm-community-bin
+python3-imdbpy-deb
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-extras-git
@@ -261,6 +275,8 @@ qtile-git
 realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
+rhino-linux-xfce4-config
+rstudio-deb
 sed
 shell-color-scripts
 shellcheck-bin
@@ -272,6 +288,7 @@ slack-deb
 slop-git
 smartgit
 smplayer-deb
+songrec-deb
 soundux
 spacecadetpinball-git
 spotify-client-deb
@@ -301,12 +318,14 @@ tixati-deb
 tmpmail-bin
 tmux
 topgrade-bin
+topgrade-musl-bin
 tor
 torbrowser-launcher-git
 torguard-deb
 touchegg-deb
 touchegg-git
 treefetch-bin
+truckersmp-cli
 ttf-fira-sans
 tuner
 tuner-git
@@ -331,11 +350,14 @@ warpinator-deb
 wazzapp-deb
 webapp-manager
 webapp-manager-deb
+webcord-deb
 weechat-git
+wezterm-app
 windscribe-alpha-gui-deb
 windscribe-beta-gui-deb
 wine-staging-git
 wsysmon-bin
+xapps-common-deb
 xfce4-deb
 yabridge
 yad
@@ -344,7 +366,10 @@ yandex-browser-beta-deb
 yandex-browser-stable-deb
 yandex-disk-deb
 youtube-dl-git
+youtube-music-deb
 yt-dlp
 zap
 zentile-bin
+zoho-notebook-deb
+zoom-deb
 zotero

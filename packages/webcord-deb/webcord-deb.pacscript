@@ -1,0 +1,9 @@
+name="webcord-deb"
+gives="webcord"
+version="4.0.0"
+replace="${gives}"
+url="https://github.com/SpacingBat3/WebCord/releases/download/v${version}/webcord_${version}_amd64.deb"
+repology=("project: webcord")
+description="A Discord and Fosscord client implemented directly without Discord API."
+hash="0e5f2070a060f1e10b0a427a11347ce825b113428ab1ad120d76cbe73a3b92b6"
+maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"

@@ -1,6 +1,6 @@
 name="insync-deb"
 pkgname="insync"
-version="3.7.6.50356"
+version="3.8.1.50459"
 repology=("project: insync")
 depends="procps"
 codename="focal"
@@ -9,7 +9,7 @@ if [[ "$(lsb_release -is)" == "Debian" ]]; then
   codename="buster"
   hash="baf1b3c424171d092053c2dd667fa0f167db5a37cd0a94b5eac1bc78d412a1a0"
 fi
-url="https://d2t3ff60b2tol4.cloudfront.net/builds/${pkgname}_${version}-${codename}_amd64.deb"
+url="https://cdn.insynchq.com/builds/linux/insync_${version}-${codename}_amd64.deb"
 replace="insync"
 description="Manage your Google Drive, OneDrive, and Dropbox files straight from your Desktop"
 maintainer="Zahrun <Zahrun@github.com>"

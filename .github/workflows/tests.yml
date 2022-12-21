@@ -88,6 +88,25 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
+      - name: Uninstalling Packages
+        run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
+          export SUDO_USER=$USER
+          export DEBIAN_FRONTEND=noninteractive
+          export GITHUB_ACTIONS=true
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} == *".pacscript" ]]; then
+              pacscript_file=`basename "${changed_file}"`
+              package_name="${pacscript_file/.pacscript/ }"
+              package_dir=`dirname "${changed_file}"`
+              echo "Running pacstall -R for ${package_name}..."
+              cd ${package_dir}
+              pacstall --disable-prompts -R ${package_name}
+            fi
+          done
+        shell: sudo -E -u dio bash {0}
+        env:
+          DEBIAN_FRONTEND: noninteractive
 
   test-on-debian:
     strategy:
@@ -161,6 +180,25 @@ jobs:
               echo "pacstall -Il ${package_name}"
               cd ${package_dir}
               pacstall --disable-prompts -I ${pacscript_file}
+            fi
+          done
+        shell: sudo -E -u dio bash {0}
+        env:
+          DEBIAN_FRONTEND: noninteractive
+      - name: Uninstalling Packages
+        run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
+          export SUDO_USER=$USER
+          export DEBIAN_FRONTEND=noninteractive
+          export GITHUB_ACTIONS=true
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} == *".pacscript" ]]; then
+              pacscript_file=`basename "${changed_file}"`
+              package_name="${pacscript_file/.pacscript/ }"
+              package_dir=`dirname "${changed_file}"`
+              echo "Running pacstall -R for ${package_name}..."
+              cd ${package_dir}
+              pacstall --disable-prompts -R ${package_name}
             fi
           done
         shell: sudo -E -u dio bash {0}

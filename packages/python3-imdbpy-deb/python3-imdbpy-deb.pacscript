@@ -1,0 +1,6 @@
+name="python3-imdbpy-deb"
+gives="python3-imdbpy"
+version="6.8"
+url="http://ftp.debian.org/debian/pool/main/i/imdbpy/python3-imdbpy_${version}-3_all.deb"
+description="A package to retrieve and manage the data of the IMDb movie database about both movies and people"
+maintainer="Zahrun <Zahrun@github.com>"
