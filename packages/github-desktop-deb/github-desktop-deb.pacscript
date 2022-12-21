@@ -1,5 +1,6 @@
 name="github-desktop-deb"
 pkgname="github-desktop"
+gives="github-desktop"
 version="3.1.1"
 url="https://github.com/shiftkey/desktop/releases/download/release-${version}-linux1/GitHubDesktop-linux-${version}-linux1.deb"
 repology=("project: github-desktop" "visiblename: github-desktop" "repo: aur")
