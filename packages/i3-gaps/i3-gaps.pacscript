@@ -9,12 +9,12 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="i3-gaps"
 pkgname="i3"
 pkgdir="${STOWDIR}/${name}"
-version="4.20.1"
+version="4.21.1"
 url="https://github.com/Airblader/${pkgname}/releases/download/${version}/${pkgname}-${version}.tar.xz"
 description="i3-gaps – i3 with more features (forked from https://github.com/i3/i3)"
 build_depends="meson ninja-build libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libxcb-shape0-dev"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app ${pkgname}-deb ${name}-bin ${name}-git ${name}-app ${name}-deb"
-hash="fd8e2db66f1da82a23b671404078f8fc1013ebba1aacd4245e5d1c2d331a3ad8"
+hash="b85f2c58b89d40b330b7f7362bf5c9e63579f705d0f7f87a69aa1bac43ffdfb1"
 repology=("project: i3-gaps")
 
 prepare() {
