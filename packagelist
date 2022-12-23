@@ -103,10 +103,10 @@ geekbench-bin
 gfn-electron-bin
 gir1.2-xapp-1.0-deb
 git
+gitblade-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
-gitblade-deb
 gitfiend-deb
 github-cli-bin
 github-cli-deb
@@ -217,6 +217,7 @@ notion-app-deb
 notion-app-enhanced-deb
 notion-git
 nowpm
+nuclear-deb
 nuclei-bin
 nushell-bin
 nyxt-deb
@@ -259,8 +260,8 @@ popcorn-time-deb
 popsicle
 postman-bin
 prismlauncher-git
-proton-python-client
 protonmail-bridge-deb
+proton-python-client
 protonvpn-cli
 protonvpn-gui
 protonvpn-nm-lib
@@ -277,8 +278,8 @@ reshade-shaders-git
 rhino-linux-xfce4-config
 rstudio-deb
 sed
-shell-color-scripts
 shellcheck-bin
+shell-color-scripts
 shellharden
 shfmt-bin
 signal-desktop-beta-deb
@@ -291,13 +292,13 @@ songrec-deb
 soundux
 spacecadetpinball-git
 spotify-client-deb
-st-distrotube-git
-st-lukesmith-git
 starship-bin
+st-distrotube-git
 steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
+st-lukesmith-git
 sublime-merge-deb
 sublime-text-deb
 surf
