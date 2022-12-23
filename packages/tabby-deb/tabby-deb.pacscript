@@ -1,5 +1,5 @@
 name="tabby-deb"
-gives="tabby"
+gives="tabby-terminal"
 breaks="${gives} ${gives}-app ${gives}-debian-patched-deb"
 version="1.0.187"
 description="A terminal for the modern age"
