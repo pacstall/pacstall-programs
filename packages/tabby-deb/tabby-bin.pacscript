@@ -1,0 +1,9 @@
+name="tabby-deb"
+gives="tabby"
+breaks="${gives} ${gives}-app ${gives}-debian-patched-deb"
+version="1.0.187"
+description="A terminal for the modern age"
+hash="4ee191bad7c099b2952e764d4342002fc2c93d48433ebae6a8cc110c5c1d1de7"
+maintainer="AloneER0"
+url="https://github.com/Eugeny/tabby/releases/download/v${version}/tabby-${version}-linux-x64.deb" 
+repology=("project: ${gives}")
