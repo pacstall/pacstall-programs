@@ -1,8 +1,3 @@
-if [[ "$(grep -Po 'ID=\K[^"]+' /etc/os-release)" == "debian" ]]; then
-    fancy_message error "This script doesn't work on Debian"
-    cleanup # Trigger pacstall cleanups
-    exit 1
-fi
 name="kvantum"
 pkgname="kvantum"
 version="1.0.1"
@@ -13,18 +8,19 @@ depends="libx11-dev qtbase5-dev libqt5svg5-dev libqt5x11extras5-dev libkf5window
 gives="kvantum"
 breaks="qt5-style-kvantum"
 description="Kvantum (by Pedram Pourang, a.k.a. Tsu Jan) is an SVG-based theme engine for Qt, tuned to KDE and LXQt, with an emphasis on elegance, usability and practicality."
+incompatible=('debian:bullseye')
 hash="f7e4530f86544531313fab10267d934b7fa2d5a946b7dd26b2181001f0f8cae0"
 
 prepare() {
-          cd Kvantum
-          mkdir build && cd build
+    cd Kvantum
+    mkdir build && cd build
 }
 
 build() {
-        cmake ..
-        make -j$(nproc)
+    cmake ..
+    make -j$(nproc)
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/kvantum
+    sudo make install DESTDIR="${pkgdir}"
 }
