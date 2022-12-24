@@ -1,9 +1,3 @@
-if [[ "$(grep -Po 'ID=\K[^"]+' /etc/os-release)" == "debian" ]]; then
-    fancy_message error "This script doesn't work on Debian"
-    cleanup # Trigger pacstall cleanups
-    exit 1
-fi
-
 name="alacritty"
 version="0.11.0"
 repology=("project: alacritty")
@@ -11,6 +5,7 @@ url="https://github.com/alacritty/alacritty/archive/refs/tags/v${version}.tar.gz
 build_depends="cargo cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 gzip"
 description="A fast, cross-platform, OpenGL terminal emulator"
 maintainer="Warofzen <warofzen1@protonmail.com>"
+incompatible=('debian:bullseye')
 hash="0fb3370c662f5b87d1b9a487aef999195212b192e08f6f68a572fed8fd637e07"
 
 build() {
