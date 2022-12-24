@@ -11,12 +11,9 @@ description="SVG-based theme engine for Qt"
 incompatible=('debian:bullseye')
 hash="43172e913ef4e275758092fbe76735ab5607182e344337a83a8c8ff616d79d7f"
 
-prepare() {
+build() {
     cd Kvantum
     mkdir build && cd build
-}
-
-build() {
     cmake ..
     make -j$(nproc)
 }
