@@ -4,10 +4,10 @@ gives="gh"
 breaks="${gives}-git ${gives}-deb"
 replace="${gives}"
 repology=("project: ${pkgname}")
-version="2.18.1"
+version="2.21.1"
 url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version}_linux_amd64.tar.gz"
 description="GitHub's official command line tool - Binary version"
-hash="d721dfd1c3f8d5807565ab4df518eacbba7dfcd092c5a7f6adf7f9f0bf31a22f"
+hash="0c0ab559721d2ff05df9d64fcdaca4f8f0b76d177832379116bd5c4d032fea88"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
