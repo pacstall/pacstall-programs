@@ -1,10 +1,10 @@
 name="element-desktop-deb"
 gives="element-desktop"
-version="1.11.14"
+version="1.11.17"
 replace="${gives}"
 repology=("project: ${gives}")
 breaks="${gives}-git ${gives}-bin ${gives}-app"
 url="https://packages.element.io/debian/pool/main/e/${gives}/${gives}_${version}_amd64.deb"
 description="Element is a feature-packed Matrix client"
-hash="5ff1c6dfabd33865c14c51860325a109cb97b8162515be44a00a255fd328b8bf"
+hash="14fee670aff3d844df1d06d6d2dab5987bb0e38b2d63bdc3d982b0b54a64c22f"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
