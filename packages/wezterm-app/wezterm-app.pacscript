@@ -7,7 +7,7 @@ url="https://github.com/wez/wezterm/releases/download/${version}/WezTerm-${versi
 hash="2eddde41f2814619be2cd06e3863003c5c19805d8ce5980fd97660bfd9bead39"
 breaks="${pkgname}-git"
 repology=("project: wezterm")
-maintainer="smokeythemonkey <smokeythemonkey@posteo.net>
+maintainer="smokeythemonkey <smokeythemonkey@posteo.net>"
 
 install() {
   # Install AppImage
