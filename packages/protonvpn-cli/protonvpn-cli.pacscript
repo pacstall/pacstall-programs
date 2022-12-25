@@ -4,6 +4,7 @@ replace="${name}"
 repology=("project: ${name}")
 version="3.13.0"
 url="https://github.com/ProtonVPN/linux-cli/archive/refs/tags/${version}.tar.gz"
+build_depends="python3-setuptools"
 depends="python3-dialog"
 pacdeps=("protonvpn-nm-lib" "proton-python-client")
 description="Official ProtonVPN Linux app (CLI)"
