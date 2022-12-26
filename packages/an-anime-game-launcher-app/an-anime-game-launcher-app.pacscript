@@ -20,6 +20,7 @@ optdepends=(
 install() {
     sudo chmod +x "${SRCDIR}/an-anime-game-launcher-${version}.AppImage"
     sudo install -Dm755 "an-anime-game-launcher-${version}.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+    sudo mkdir -p "${pkgdir}/usr/share/applications"
     echo '[Desktop Entry]
 Name=An Anime Game Launcher
 Icon=an-anime-game-launcher
