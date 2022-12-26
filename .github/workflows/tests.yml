@@ -16,6 +16,7 @@ jobs:
       matrix:
         OS: ["ubuntu:latest", "ubuntu:devel", "ubuntu:rolling"]
         PACSTALL_VERSION: ["master", "develop"]
+      fail-fast: false
     runs-on: ubuntu-latest
     container:
       image: ${{ matrix.OS }}
