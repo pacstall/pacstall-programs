@@ -316,11 +316,9 @@ install() {
   # Install optional documentation formats
   if [[ ${DOCS_HTML} == "YES" ]]; then sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install-html; fi
   if [[ ${DOCS_PDF} == "YES" ]]; then sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install-pdf; fi
-}
 
-postinst() {
   # fix user/root permissions on usr/local/share files
-  find "${pkgdir}/usr/local/share/emacs/" -print0 | sudo xargs -0 chown root:root
+  find "${pkgdir}/usr/share/emacs/" -print0 | sudo xargs -0 chown root:root
 
   # fix permssions on /var/games
   sudo mkdir -p "${pkgdir}/var/games/emacs"
