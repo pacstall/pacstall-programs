@@ -2,7 +2,7 @@
 adapta-gtk-theme-git
 alacritty
 amfora-bin
-an-anime-game-launcher-bin
+an-anime-game-launcher-app
 android-studio
 ani-cli-bin
 anydesk-bin
@@ -138,7 +138,6 @@ httptoolkit-deb
 hyper-deb
 hyperfine-bin
 hypnotix-deb
-i3-gaps
 i3blocks-git
 i3lock-color
 ibhagwan-picom-git
@@ -202,6 +201,7 @@ mutt-wizard
 nala-deb
 nano
 neofetch
+neovide-bin
 neovim
 neovim-deb
 neovim-git
@@ -218,6 +218,7 @@ notion-app-deb
 notion-app-enhanced-deb
 notion-git
 nowpm
+nuclear-deb
 nuclei-bin
 nushell-bin
 nyxt-deb
@@ -306,6 +307,7 @@ surf-distrotube-git
 surfshark-gui-deb
 suru-icon-theme-git
 systemcoding-conky
+tabby-deb
 taskwarrior
 teams-for-linux-deb
 teamviewer-deb
