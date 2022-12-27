@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+# shellcheck disable=2034
 #-*- mode: sh-*-
 #  __      __________   ______
 # /  \    /  \_____  \ /  __  \
@@ -115,9 +116,9 @@ fi
 
 if [[ ${JIT} == "YES" ]]; then
   if [[ ${CLI} == "YES" ]]; then
-    depends_nox+=" libgccjit0 libgccjit-11-dev"
+    depends_nox+=" libgccjit0 libgccjit-10-dev"
   else
-    depends+=" libgccjit0 libgccjit-11-dev"
+    depends+=" libgccjit0 libgccjit-10-dev"
   fi
 fi
 
@@ -135,7 +136,7 @@ elif [[ ${GTK3} == "YES" ]]; then
 fi
 
 if [[ ${CLI} != "YES" ]]; then
-  depends+=" libjpeg-turbo8 libpng16-16 libgif-dev libwebp7 libtiff5 libxpm-dev"
+  depends+=" libjpeg-turbo8 libpng16-16 libgif-dev libwebp6 libtiff5 libxpm-dev"
 elif [[ ${CLI} == "YES" ]]; then
   depends+=""
 fi
