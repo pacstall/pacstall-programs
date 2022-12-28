@@ -2,11 +2,11 @@ name="1password-cli-bin"
 pkgname="1password-cli"
 gives="op"
 repology=("project: ${pkgname}")
-version="2.11.0"
+version="2.12.0"
 url="https://cache.agilebits.com/dist/1P/op2/pkg/v${version}/${gives}_linux_amd64_v${version}.zip"
 description="1Password CLI"
-hash="461106c0e894c7aa6b11d1af7aa692817940f2ed935c83164651520ce7bf3298"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+hash="44a2f93c561ba619d19f45c34fe99ee3585d24e5ab6c9e0599ab99224ac0725b"
+maintainer="WRM-42 <droppings_cledet@aleeas.com>"
 
 prepare() {
     true
