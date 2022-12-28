@@ -19,6 +19,7 @@ url="https://git.sr.ht/~technomancy/fnlfmt/archive/${version}.tar.gz"
 gives="${pkgname}"
 breaks="${pkgname}-bin ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 depends="lua5.3"
+build_depends="lua5.3"
 hash="0a7d7aaf4d88a81b6f13ed02fa88e74ed6c634ba50254de09eeb5a7777ae90d6"
 repology=("project: fnlfmt")
 
