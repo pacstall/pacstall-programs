@@ -1,6 +1,6 @@
 name="firefox-deb"
 gives="firefox"
-version="107.0.1"
+version="108.0.1"
 replace="${gives}"
 #url="http://launchpadlibrarian.net/624606759/firefox_${version}+build2-0ubuntu0.20.04.1_amd64.deb"
 url="https://launchpad.net/~mozillateam/+archive/ubuntu/ppa/+files/firefox_${version}+build1-0ubuntu0.20.04.1~mt1_amd64.deb"
