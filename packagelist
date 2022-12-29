@@ -14,7 +14,7 @@ arduino-cli-bin
 arduino-ide-bin
 awesome-git
 aws-cli-v2-bin
-balena-etcher-electron-deb
+balena-etcher-deb
 bat
 bat-deb
 batsignal
@@ -354,7 +354,6 @@ webapp-manager-deb
 webcord-deb
 weechat-git
 wezterm-app
-windscribe-alpha-gui-deb
 windscribe-beta-gui-deb
 wine-staging-git
 wsysmon-bin
