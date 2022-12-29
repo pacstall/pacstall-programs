@@ -1,9 +1,8 @@
 name="windscribe-beta-gui-deb"
 gives="windscribe"
-replace="${gives}"
 repology=("project: ${gives}")
-version="2.4.8_beta"
-url="https://assets.totallyacdn.com/desktop/beta/${gives}_${version}_amd64.deb"
+version="2.5.12"
+url="https://deploy.totallyacdn.com/desktop-apps/${version}/${gives}_${version}_amd64.deb"
 description="Windscribe's GUI - Beta channel"
-hash="647384b9f2208c2d309485102b3b343be5e822a686a650e596c75118fb167e36"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+hash="600cfa3d1db54fe32e35b1139364d0c0f762589a4afa1170dd43368aab6cb66c"
+maintainer="WRM-42 <droppings_cledet@aleeas.com>"
