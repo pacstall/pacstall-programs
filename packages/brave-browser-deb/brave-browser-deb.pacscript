@@ -8,4 +8,4 @@ description="Release version of world's most unique, privacy friendly web browse
 hash="462beec8c3eba815de4c436b1f8c00a6a1e094f0191d55cc77ceb75a587e1076"
 pacdeps=("brave-keyring-deb")
 repology=("project: brave")
-maintainer="TwilightBlood <hwengerstickel@pm.me>"
+maintainer="Henryws <hwengerstickel@pm.me>"

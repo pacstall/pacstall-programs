@@ -7,4 +7,4 @@ url="https://github.com/brave/brave-browser/releases/download/v${version}/${give
 description="The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel"
 hash="8a5a618122549315691f6d09ff475c9d366fd02883bfc2b60ac9c9561ed82847"
 repology=("project: brave" "visiblename: brave-nightly")
-maintainer="TwilightBlood <hwengerstickel@pm.me>"
+maintainer="Henryws <hwengerstickel@pm.me>"
