@@ -1,9 +1,8 @@
 name="expressvpn-deb"
 gives="expressvpn"
-version="3.27.1.0-1"
-replace="${gives}"
-url="https://www.expressvpn.com/clients/linux/${gives}_${version}_amd64.deb"
+version="3.38.0.3-1"
+url="https://www.expressvpn.works/clients/linux/${gives}_${version}_amd64.deb"
 description="ExpressVPN's CLI tool"
-hash="e4c4e63b3d65130121f84ce2281e05965c77eab61cdf513fa5a97fd4c1a6f753"
+hash="b12f72321aa0d781c52024eaba544262df933178479601ea7f0ccfa5624b62f6"
 repology=("project: ${gives}")
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+maintainer="WRM-42 <droppings_cledet@aleeas.com>"

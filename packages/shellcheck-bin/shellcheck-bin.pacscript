@@ -1,21 +1,11 @@
 name="shellcheck-bin"
-pkgname="shellcheck"
-version="0.8.0"
-pkgdir="${STOWDIR}/${name}"
-gives="${pkgname}"
+version="0.9.0"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-description="ShellCheck is a GPLv3 tool that gives warnings and suggestions for bash/sh shell scripts"
-hash="ab6ee1b178f014d1b86d1e24da20d1139656c8b0ed34d2867fbb834dad02bf0a"
+description="Gives warnings and suggestions for bash/sh shell scripts"
+hash="700324c6dd0ebea0117591c6cc9d7350d9c7c5c287acbad7630fa17b1d4d9e2f"
 url="https://github.com/koalaman/shellcheck/releases/download/v${version}/shellcheck-v${version}.linux.x86_64.tar.xz"
 maintainer="Henryws <hwengerstickel@pm.me>"
-
-prepare() {
-  true
-}
-
-build() {
-  true
-}
+repology=("project: shellcheck")
 
 install() {
   sudo install -Dm644 shellcheck "${pkgdir}/usr/bin/shellcheck"
