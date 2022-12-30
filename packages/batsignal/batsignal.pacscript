@@ -1,17 +1,12 @@
 name="batsignal"
 repology=("project: ${name}")
-version="1.6.2"
+version="1.6.4"
 url="https://github.com/electrickite/batsignal/archive/refs/tags/${version}.tar.gz"
-build_depends="make pkg-config gcc sed"
-depends="libnotify4 libcurl4-opennssl-dev libnotify-dev"
+build_depends="pkg-config libnotify4 libcurl4-opennssl-dev libnotify-dev"
 breaks="${name} ${name}-git"
 description="A lightweight battery monitor daemon"
-hash="0576257b6b960826799641e15521317a2d075d24f5da0c1abf180e2731022673"
+hash="58439dac2b678ab798831fe861c06d2d5c128c4bb4bae1476a62ba1771da3983"
 maintainer="Harshwardhan Mehrotra <harshwardhanmehrotra@gmail.com>"
-
-prepare() {
-  true
-}
 
 build() {
   sed -i '47d' Makefile
@@ -20,5 +15,5 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR="${STOWDIR}/${name}"
+  sudo make install DESTDIR="${pkgdir}"
 }
