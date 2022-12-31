@@ -2,7 +2,7 @@ name="neovim-git"
 gives="neovim"
 url="https://github.com/neovim/neovim.git"
 description="Neovim is a project that seeks to aggressively refactor Vim source code"
-maintainer="TwilightBlood <hwengerstickel@pm.me>"
+maintainer="Henryws <hwengerstickel@pm.me>"
 build_depends="ninja-build gettext libtool-bin autoconf automake cmake g++ pkg-config unzip"
 breaks="neovim-bin neovim neovim-app neovim-deb"
 pkgver() {
