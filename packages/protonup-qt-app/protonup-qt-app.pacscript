@@ -26,5 +26,5 @@ postinst() {
 }
 
 removescript() {
-    true
+    sudo rm -f "/usr/bin/protonup-qt"
 }
