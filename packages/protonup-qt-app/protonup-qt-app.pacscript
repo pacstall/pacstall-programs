@@ -7,8 +7,7 @@ url="https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v${version}/Prot
 hash="7838b5dc3612e11b63de8bae851a044f50ad7380fba79d2486a5cd392048beda"
 
 install() {
-  sudo install -Dm755 "ProtonUp-Qt-$version-x86_64.AppImage" "/usr/src/pacstall/$name/usr/bin/$pkgname"
-  sudo ln -s "/usr/src/pacstall/$name/usr/bin/$pkgname" "/usr/src/pacstall/$name/usr/bin/protonup-qt"
+  sudo install -Dm755 "ProtonUp-Qt-$version-x86_64.AppImage" "${pkgdir}/usr/bin/$pkgname"
   wget -q https://raw.githubusercontent.com/DavidoTek/ProtonUp-Qt/main/share/icons/hicolor/256x256/apps/net.davidotek.pupgui2.png
   sudo install -Dm644 "net.davidotek.pupgui2.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/$pkgname.png"
   sudo mkdir -p "${pkgdir}/usr/share/applications"
@@ -23,7 +22,7 @@ X-AppImage-Version=$version" | sudo tee "${pkgdir}/usr/share/applications/net.da
 }
 
 postinst() {
-    true
+  sudo ln -s "/usr/bin/$pkgname" "/usr/bin/protonup-qt"
 }
 
 removescript() {
