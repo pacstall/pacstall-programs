@@ -1,9 +1,9 @@
 name="smartgit"
-version="22.1.0"
-url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-22_1_0.tar.gz"
-depends="git libgtk-3-0 openjdk-11-jre libcurl4"
+version="22.1.2"
+url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-22_1_2.tar.gz"
+depends="git libgtk-3-0 libcurl4"
 description="Graphical Git client with support for GitHub, Bitbucket and GitLab"
-hash="09cba3aa0bcdbc72b84a2d4a26adef4444774880f65ca3db3972f4cddf9ece95"
+hash="8bff52a2f07cb9b412d74a5c746b02d9c15ca7b6a05122da7258d843142d5fe9"
 maintainer="echometerain <echometer@disroot.org>"
 removescript="true"
 repology=("project: smartgit")
@@ -27,7 +27,7 @@ install() {
         sudo chmod 755 "./bin/smartgit-${_size}.png"
         sudo mkdir -p "$STOWDIR/$name/usr/share/icons/hicolor/${_size}x${_size}/apps"
         sudo mv "./bin/smartgit-${_size}.png" "$STOWDIR/$name/usr/share/icons/hicolor/${_size}x${_size}/apps/$name.png"
-  done
+    done
 
     sudo chmod 755 "$STOWDIR/$name/opt/$name/bin/smartgit.sh"
 }
@@ -37,5 +37,5 @@ postinst() {
 }
 
 removescript() {
-    sudo rm "/usr/bin/smartgit"
+    sudo rm -f "/usr/bin/smartgit"
 }

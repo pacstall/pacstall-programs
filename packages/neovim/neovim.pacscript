@@ -1,17 +1,15 @@
 name="neovim"
-pkgname="neovim"
-version="0.8.1"
+version="0.8.2"
 url="https://github.com/neovim/neovim/archive/refs/tags/v${version}.tar.gz"
 build_depends="gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip build-essential"
-gives="nvim"
 replace="neovim nvim neovim-runtime"
 description="Neovim is a vim fork maintained by the comunity"
-hash="b4484e130aa962457189f3dee34b8481943c1e395d2d684c6f8b91598494d9ec"
+hash="c516c8db73e1b12917a6b2e991b344d0914c057cef8266bce61a2100a28ffcc9"
 maintainer="Henryws <hwengerstickel@pm.me>"
 repology=("project: ${name}")
 
 build() {
-    make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/usr -j"$(nproc)"
+    make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"$(nproc)"
 }
 
 install() {

@@ -1,9 +1,8 @@
 name="yandex-browser-beta-deb"
 gives="yandex-browser-beta"
-replace="${gives}"
 repology=("project: ${gives}")
-version="22.5.0.1879-1"
+version="22.11.3.832-1"
 url="http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${gives}/${gives}_${version}_amd64.deb"
-description="The web browser from Yandex - Beta channel"
-hash="5cfd6f170e3b4c06ec4c50bd1efae04174b5a6073371e89f9ca3641b6cf7e790"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+description="The web browser from Yandex - Beta"
+hash="eeba2ca625c3fdaad98f5db8e1857fdf47ef8cb4631e3fc7071c84cad3d1a87a"
+maintainer="WRM-42 <droppings_cledet@aleeas.com>"

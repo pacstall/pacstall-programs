@@ -1,8 +1,8 @@
 name="vivaldi-deb"
-version="5.4.2753.40"
+version="5.6.2867.50"
 repology=("project: vivaldi")
 url="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}-1_amd64.deb"
 description="An advanced browser made with the power user in mind"
 gives="vivaldi-stable"
-hash="3961f785aec7b1ab8fec71dd681069117cd8a135e8fbf939a7d53331e03b54c9"
+hash="8a26bfbbd442c49e0430f18d5103b3a23c8d8552e5c184c6ba16bff7ff10f882"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"

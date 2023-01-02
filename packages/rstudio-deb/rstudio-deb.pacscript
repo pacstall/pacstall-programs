@@ -1,0 +1,9 @@
+name="rstudio-deb"
+gives="rstudio"
+repology=("project: ${gives}")
+version="2022.12.0.353"
+ver="${version:0:9}-${version:10}"
+url="https://download1.rstudio.org/electron/jammy/amd64/rstudio-${ver}-amd64.deb"
+description="RStudio is an integrated development environment (IDE) for R"
+hash="3006f07798d75aa7b5a06a4764261513b5706d7e142cf1ce3fcb59d6cb96ca12"
+maintainer="Zahrun <Zahrun@github.com>"

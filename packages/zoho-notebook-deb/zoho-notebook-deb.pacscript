@@ -1,0 +1,9 @@
+name="zoho-notebook-deb"
+gives="zoho-notebook"
+version="2.0.1"
+replace="notebook"
+url="https://downloads.zohocdn.com/notebooklinux-desktop/Notebook-${version}.deb"
+repology=("project: zoho-notebook")
+description="The most beautiful note-taking app across devices"
+hash="e961f7e896adcd8647dc1eab5eaf1c18a1c5876ae72c1c21c6432a8c42dc3875"
+maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
