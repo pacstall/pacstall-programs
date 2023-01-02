@@ -6,14 +6,6 @@ description="Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE f
 url="https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v${version}/ProtonUp-Qt-${version}-x86_64.AppImage"
 hash="7838b5dc3612e11b63de8bae851a044f50ad7380fba79d2486a5cd392048beda"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
   sudo install -Dm755 "ProtonUp-Qt-$version-x86_64.AppImage" "/usr/src/pacstall/$name/usr/bin/$pkgname"
   sudo ln -s "/usr/src/pacstall/$name/usr/bin/$pkgname" "/usr/src/pacstall/$name/usr/bin/protonup-qt"
