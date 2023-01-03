@@ -1,5 +1,5 @@
 name="smartgit"
-version="22.1.0"
+version="22.1.2"
 url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-22_1_2.tar.gz"
 depends="git libgtk-3-0 libcurl4"
 description="Graphical Git client with support for GitHub, Bitbucket and GitLab"
