@@ -4,7 +4,7 @@ gives="tre"
 build_depends="cargo rustc"
 description="Tree command, improved."
 url="https://github.com/dduan/tre"
-maintainer="Diego Magdaleno <diegomagdaleno@pm.me"
+maintainer="Diego Magdaleno <diegomagdaleno@pm.me>"
 pkgdir="${STOWDIR}/${name}"
 pkgver() {
 	git ls-remote "${url}" main | cut -f1 | cut -c1-8
