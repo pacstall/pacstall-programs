@@ -99,6 +99,7 @@ forticlient-deb
 freetube-deb
 fsearch-deb
 fsearch-git
+fselect-git
 geekbench-bin
 gfn-electron-bin
 gir1.2-xapp-1.0-deb
@@ -326,6 +327,7 @@ torbrowser-launcher-git
 torguard-deb
 touchegg-deb
 touchegg-git
+tre-git
 treefetch-bin
 truckersmp-cli
 ttf-fira-sans
