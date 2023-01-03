@@ -5,6 +5,7 @@ build_depends="cargo rustc"
 description="Tree command, improved"
 url="https://github.com/dduan/tre.git"
 maintainer="Diego Magdaleno <diegomagdaleno@pm.me>"
+incompatible=("debian:bullseye")
 pkgver() {
 	git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
