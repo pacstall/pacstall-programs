@@ -1,10 +1,9 @@
 name="ivpn-deb"
 gives="ivpn"
-replace="${gives}"
 breaks="${gives}-git"
 repology=("project: ${gives}")
-version="3.9.14"
+version="3.10.0"
 url="https://repo.ivpn.net/stable/pool/${gives}_${version}_amd64.deb"
 description="Official IVPN Desktop app - Base Package"
-hash="3ae5632b8efc2359ec1fe7964db6e05a6ec841c2d511e848b13add11bc4dae29"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+hash="cae1e13e04dfc8c721d2adcb9712d99db443701cede02cc9b44ba349c1559cbf"
+maintainer="WRM-42 <droppings_cledet@aleeas.com>"
