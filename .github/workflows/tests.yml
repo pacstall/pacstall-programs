@@ -114,6 +114,7 @@ jobs:
       matrix:
         OS: ["debian:stable", "debian:testing", "debian:unstable"]
         PACSTALL_VERSION: ["master", "develop"]
+      fail-fast: false
     runs-on: ubuntu-latest
     container:
       image: ${{ matrix.OS }}
