@@ -31,6 +31,7 @@ build() {
 }
 
 install() {
+  cd build || exit
   sudo cmake --install . > /dev/null
   sudo install -Dm644 "../LICENSE" -t "${STOWDIR}/${name}/usr/share/licenses/${name}"
 }

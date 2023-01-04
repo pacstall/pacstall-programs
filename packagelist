@@ -154,6 +154,7 @@ keepassxc
 keybase-deb
 kirc
 komorebi-fork-deb
+koodo-reader-deb
 kvantum
 kxstudio-repos-deb
 lagrange
@@ -239,7 +240,6 @@ opentoonz-gts
 opera-beta-deb
 opera-deb
 opera-developer-deb
-os-installer-commit
 os-installer-git
 pacget-git
 paconvert-git
