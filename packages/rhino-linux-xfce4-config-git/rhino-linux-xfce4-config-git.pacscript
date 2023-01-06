@@ -1,19 +1,15 @@
 name="rhino-linux-xfce4-config-git"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
-description="Rhino Linux XFCE4 configuration."
+description="Rhino Linux XFCE4 configuration"
 breaks="${pkgname}-bin"
 depends="xfce4-whiskermenu-plugin yaru-theme-icon yaru-theme-gtk"
-optdepends=("xfce4: To use the configuration")
+optdepends=("xfce4: to use the configuration")
 
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8 # Returns the latest commit hash from remote
 }
 version="$(pkgver)"
 url="https://github.com/rhino-linux/dotfiles.git"
-
-prepare() {
-  true
-}
 
 build() {
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
