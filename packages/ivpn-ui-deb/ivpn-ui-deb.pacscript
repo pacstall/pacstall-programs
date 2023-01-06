@@ -1,11 +1,10 @@
 name="ivpn-ui-deb"
 gives="ivpn-ui"
 pacdeps=("ivpn-deb")
-replace="${gives}"
 breaks="${gives}-git"
 repology=("project: ${gives}")
-version="3.9.8"
+version="3.10.0"
 url="https://repo.ivpn.net/stable/pool/${gives}_${version}_amd64.deb"
 description="Official IVPN Desktop app - UI Package"
-hash="c818ff2dfb97dcb360d193adfa8aaa261758d1066383e5bed4369f08721e5559"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+hash="7acf5f2bf32d0fdf0d0bfdd92b700deb4e20af54d9caab571bef86172ae7a77e"
+maintainer="WRM-42 <droppings_cledet@aleeas.com>"
