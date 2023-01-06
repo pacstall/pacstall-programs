@@ -6,7 +6,7 @@ depends="xfce4-whiskermenu-plugin yaru-theme-icon yaru-theme-gtk"
 optdepends=("xfce4: To use the configuration")
 
 pkgver() {
-  git ls-remote "${url}" add-1.10-support | cut -f1 | cut -c1-8 # Returns the latest commit hash from remote
+  git ls-remote "${url}" main | cut -f1 | cut -c1-8 # Returns the latest commit hash from remote
 }
 version="$(pkgver)"
 url="https://github.com/rhino-linux/dotfiles.git"
