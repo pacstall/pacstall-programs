@@ -5,17 +5,18 @@ breaks="${pkgname}-bin"
 depends="xfce4-whiskermenu-plugin yaru-theme-icon yaru-theme-gtk"
 optdepends=("xfce4: to use the configuration")
 
+url="https://github.com/rhino-linux/dotfiles.git"
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8 # Returns the latest commit hash from remote
 }
 version="$(pkgver)"
-url="https://github.com/rhino-linux/dotfiles.git"
 
 build() {
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
   sudo mkdir -p "${pkgdir}/usr/share/doc"
   sudo mkdir -p "${pkgdir}/etc/skel/.config"
-  # Is a non-valid symbolic link
+  sudo mkdir -p "${pkgdir}/usr/share/icons"
+  # Is not a valid link
   rm -f xfce4/desktop/icons.screen.latest.rc
 }
 
@@ -25,6 +26,8 @@ install() {
   # Install
   sudo cp -r xfce4 "${pkgdir}/etc/skel/.config"
   sudo install -Dm644 "rolling-rhino-default.png" -t "${pkgdir}/usr/share/backgrounds"
+  sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/backgrounds"
+  sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/backgrounds"
 }
 
 postinst() {
