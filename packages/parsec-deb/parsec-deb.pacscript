@@ -1,0 +1,6 @@
+name="parsec-deb"
+gives="parsec"
+version="150-86e"
+url="https://builds.parsec.app/package/parsec-linux.deb"
+description="Simple, low-latency game streaming"
+hash="c30072f3a4ddac7687f626b8d32876e327791bce164d74448a147ef48ea8eae5"
