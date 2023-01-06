@@ -95,6 +95,7 @@ firefox-developer-edition-bin
 fishui-git
 fm6000-git
 fnlfmt
+font-downloader
 forticlient-deb
 freetube-deb
 fsearch-deb
@@ -279,7 +280,7 @@ qtile-git
 realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
-rhino-linux-xfce4-config
+rhino-linux-xfce4-config-git
 rstudio-deb
 sed
 shellcheck-bin
