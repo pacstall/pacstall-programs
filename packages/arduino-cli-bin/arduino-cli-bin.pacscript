@@ -8,14 +8,6 @@ url="https://github.com/arduino/arduino-cli/releases/download/${version}/${pkgna
 description="An all-in-one solution that provides Boards/Library Managers, sketch builder, board detection, uploader, and many other tools needed to use any Arduino compatible board and platform from command line or machine interfaces"
 hash="febc558bb36a9aeb881ebcce0af6fff955234afda14435791ca41daf492c9cac"
 
-prepare() {
-	true
-}
-
-build() {
-	true
-}
-
 install() {
-	sudo install -Dm755 ${pkgname} -t "${STOWDIR}/${name}/usr/bin"
+  sudo install -Dm755 ${pkgname} -t "${pkgdir}/usr/bin"
 }

@@ -28,7 +28,7 @@ Exec=an-anime-game-launcher
 Type=Application
 Categories=Game;
 Terminal=false
-X-AppImage-Version=2.4.2' | sudo tee "${pkgdir}/usr/share/applications/an-anime-game-launcher.desktop" >/dev/null
+X-AppImage-Version=2.4.2' | sudo tee "${pkgdir}/usr/share/applications/an-anime-game-launcher.desktop" > /dev/null
     wget -q https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/public/icons/64x64.png
     sudo install -Dm644 "64x64.png" "${pkgdir}/usr/share/icons/hicolor/64x64/apps/an-anime-game-launcher.png"
 
