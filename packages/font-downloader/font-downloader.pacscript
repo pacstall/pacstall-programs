@@ -3,7 +3,7 @@ gives="font-downloader"
 version="10.0.0"
 build_depends="meson libhandy-1-dev gettext"
 # HACK: https://github.com/pacstall/pacstall/issues/727
-depends="libgtk-3-dev python3-gi"
+depends="python3-gi libhandy-1-dev"
 url="https://github.com/GustavoPeredo/Font-Downloader/archive/refs/tags/v${version}.zip"
 repology=("project: fontdownloader")
 description="Install fonts from online sources"
