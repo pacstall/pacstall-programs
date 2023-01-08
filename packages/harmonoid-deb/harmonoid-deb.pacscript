@@ -1,4 +1,5 @@
 name="harmonoid-deb"
+gives="harmonoid"
 version="0.3.5"
 url="https://github.com/alexmercerind2/harmonoid-releases/releases/download/v${version}/harmonoid-linux-x86_64.deb"
 description="Plays & manages your music library. Looks beautiful & juicy. Playlists, visuals, synced lyrics, pitch shift, volume boost & more"
