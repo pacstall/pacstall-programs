@@ -5,7 +5,6 @@ build_depends="cmake g++ libgtkmm-3.0-dev gettext libssl-dev libarchive-dev hwin
 breaks="${pkgname}-deb"
 description="Grub Customizer is a graphical interface to configure the GRUB2/BURG settings and menuentries"
 maintainer="Obsidian <emil@aarestrup.nu>"
-repology=("project: ${pkgname}")
 gives="${pkgname}"
 
 pkgver() {
