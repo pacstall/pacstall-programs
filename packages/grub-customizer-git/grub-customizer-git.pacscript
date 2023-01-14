@@ -14,7 +14,7 @@ version="${pkgver}"
 
 build() {
   cmake .
-  make
+  make -j"$(nproc)"
 }
 
 install() {
