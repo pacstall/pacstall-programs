@@ -1,8 +1,7 @@
 name: "Assign PR Author as Assignee"
 
 on:
-  pull_request_target:
-    types: [opened, reopened]
+    workflow_dispatch:
 
 permissions:
   pull-requests: write
