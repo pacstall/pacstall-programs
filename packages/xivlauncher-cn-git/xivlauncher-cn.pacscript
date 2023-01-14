@@ -1,5 +1,5 @@
 name="xivlauncher-cn-git"
-gives="xivlauncher-cn"
+pkgname="xivlauncher-cn"
 repology=("project: xivlauncher-cn")
 version="1.0.2"
 url="https://github.com/ottercorp/XIVLauncher.Core.git"
