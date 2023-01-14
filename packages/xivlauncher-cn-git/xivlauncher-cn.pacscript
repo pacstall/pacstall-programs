@@ -1,7 +1,7 @@
 name="xivlauncher-cn-git"
 gives="xivlauncher-cn"
 repology=("project: xivlauncher-cn")
-version="1.0.2"
+version="1.0.2.0"
 url="https://github.com/ottercorp/XIVLauncher.Core.git"
 license="GPL-3.0"
 build_depends="dotnet-sdk-6.0 git"
