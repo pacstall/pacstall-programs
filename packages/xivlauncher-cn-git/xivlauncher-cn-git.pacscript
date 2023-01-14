@@ -27,5 +27,12 @@ install() {
     sudo install -D -m644 "${srcdir}/misc/linux_distrib/XIVLauncher.desktop" "${pkgdir}/usr/share/applications/XIVLauncher-CN.desktop"
     sudo install -D -m644 "${srcdir}/misc/linux_distrib/512.png" "${pkgdir}/usr/share/pixmaps/xivlauncher.png"
     sudo cp -r "${srcdir}/build/." "${pkgdir}/opt/XIVLauncher/"
-    sudo ln -s ../../opt/XIVLauncher/XIVLauncher.Core "${pkgdir}/usr/bin/xivlauncher-cn"
+}
+
+postinst() {
+    sudo ln -s /opt/XIVLauncher/XIVLauncher.Core /usr/bin/xivlauncher-cn
+}
+
+removescript() {
+    sudo rm -f /usr/bin/xivlauncher-cn
 }
