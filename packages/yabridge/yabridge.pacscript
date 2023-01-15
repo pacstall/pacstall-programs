@@ -22,5 +22,5 @@ install() {
   sudo install yabridge-host{,-32}.exe{,.so} "${pkgdir}/usr/bin"
 
   sudo install -dm755 "${pkgdir}/usr/lib"
-  sudo install libyabridge{,-chainloader}-{vst2,vst3}.so "${pkgdir}/usr/lib"
+  sudo install libyabridge{,-chainloader}-{vst2,vst3,clap}.so "${pkgdir}/usr/lib"
 }
