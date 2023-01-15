@@ -15,7 +15,7 @@ build() {
     git submodule update --init --recursive
     cd  ${srcdir}/src/XIVLauncher.Core
     echo "Building XIVLauncher ${version}"
-    dotnet publish -r linux-x64 --sc -o "${srcdir}/build" --configuration Release 
+    dotnet publish -r linux-x64 --sc -o "${srcdir}/build" --configuration Release
 }
 
 install() {
