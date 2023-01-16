@@ -25,7 +25,7 @@ install() {
   sudo chmod 755 "${pkgdir}/usr/bin/${pkgname}"
 
   # Make a shellscript proxy because copying the binary won't work
-  sudo tee "${pkgdir}/usr/bin/${pkgname}" >/dev/null << END
+  sudo tee "${pkgdir}/usr/bin/${pkgname}" > /dev/null << END
 #!/bin/bash
 ${pkgdir}/firefox "\$@"
 END

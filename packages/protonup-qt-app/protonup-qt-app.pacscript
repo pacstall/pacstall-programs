@@ -19,7 +19,7 @@ Exec=$pkgname
 Type=Application
 Categories=Game;Utility;
 Terminal=false
-X-AppImage-Version=$version" | sudo tee "${pkgdir}/usr/share/applications/net.davidotek.pupgui2.desktop" >/dev/null
+X-AppImage-Version=$version" | sudo tee "${pkgdir}/usr/share/applications/net.davidotek.pupgui2.desktop" > /dev/null
 }
 
 postinst() {
