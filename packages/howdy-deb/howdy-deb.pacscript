@@ -1,0 +1,9 @@
+name="howdy-deb"
+gives="howdy"
+version="2.6.1"
+replace="${gives}"
+url="https://github.com/boltgolt/howdy/releases/download/v${version}/howdy_${version}.deb"
+repology=("project: howdy")
+description="Howdy provides Windows Hello™ style authentication for Linux."
+hash="c104329d8c7f54508b317ac7fb9782eae4104187bac657ee8a80aeeeb406c84f"
+maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
