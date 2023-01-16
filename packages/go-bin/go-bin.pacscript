@@ -14,14 +14,6 @@ repology=("project: go")
 __goroot="${STOWDIR}/usr/local/${name}"
 __shell_rcs=("${homedir}/.bashrc" "${homedir}/.zshrc" "${homedir}/.profile")
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
   # Install binary
   sudo install -Dm755 "bin/go" "${STOWDIR}/${name}/usr/bin/go"
@@ -34,7 +26,7 @@ install() {
 
 postinst() {
   for shell_rc in "${__shell_rcs[@]}"; do
-    if [[ -f "${shell_rc}" ]]; then
+    if [[ -f ${shell_rc} ]]; then
       if __goroot_is_set "${shell_rc}"; then
         __clear_goroot "${shell_rc}"
       fi
@@ -64,7 +56,7 @@ __set_goroot() {
 
 removescript() {
   for shell_rc in "${__shell_rcs[@]}"; do
-    if [[ -f "${shell_rc}" ]]; then
+    if [[ -f ${shell_rc} ]]; then
       if __goroot_is_set "${shell_rc}"; then
         __clear_goroot "${shell_rc}"
       fi

@@ -1,11 +1,11 @@
 name="pycharm-community-bin"
-version="2022.3"
+version="2022.3.1"
 pkgname="pycharm-community"
 gives="pycharm-community"
-maintainer="Obsidian <emil@aarestrup.nu>"
+maintainer="ObsidianPresidium <emil@aarestrup.nu>"
 description="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 url="https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz"
-hash="2a23e3e6c38dd970545634dd6de79eb7f075df7bd782d3b3c8047d670f1261b7"
+hash="b243103f27cfb763106a2f5667d8f201562154755ce9746e81e88c80acd7b316"
 desktop_file_sum="0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04"
 repology=("project: pycharm")
 

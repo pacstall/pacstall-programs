@@ -27,7 +27,7 @@ install() {
         sudo chmod 755 "./bin/smartgit-${_size}.png"
         sudo mkdir -p "$STOWDIR/$name/usr/share/icons/hicolor/${_size}x${_size}/apps"
         sudo mv "./bin/smartgit-${_size}.png" "$STOWDIR/$name/usr/share/icons/hicolor/${_size}x${_size}/apps/$name.png"
-    done
+  done
 
     sudo chmod 755 "$STOWDIR/$name/opt/$name/bin/smartgit.sh"
 }
