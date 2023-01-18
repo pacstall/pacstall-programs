@@ -1,9 +1,9 @@
 name="gir1.2-xapp-1.0-deb"
 gives="gir1.2-xapp-1.0"
-version="2.4.1"
+version="2.4.2"
 repology=("project: xapps")
 pacdeps=("libxapp1-deb")
-url="http://ftp.debian.org/debian/pool/main/x/xapp/gir1.2-xapp-1.0_${version}-1_amd64.deb"
-hash="fc7adfc8db74a8082fb7ad683effc2b03c0a121c3bc229488c14f7f49a5e7956"
+url="http://ftp.debian.org/debian/pool/main/x/xapp/gir1.2-xapp-1.0_${version}-2_amd64.deb"
+hash="e47e97d5c800a338ba88b7236e386595e6a511f25df40b07e679a716316e18c8"
 description="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
 maintainer="Zahrun <Zahrun@github.com>"
