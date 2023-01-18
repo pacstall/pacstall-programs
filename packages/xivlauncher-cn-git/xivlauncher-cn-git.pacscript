@@ -14,7 +14,7 @@ build() {
     mkdir ${srcdir}/build
     git submodule update --init --recursive
     cd  ${srcdir}/src/XIVLauncher.Core
-    dotnet publish -r linux-x64 --sc -o "${srcdir}/build" --configuration Release 
+    dotnet publish -r linux-x64 --sc -o "${srcdir}/build" --configuration Release
 }
 
 install() {
