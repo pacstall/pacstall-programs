@@ -1,0 +1,9 @@
+name="webtorrent-desktop-deb"
+gives="webtorrent-desktop"
+version="0.24.0"
+replace="${gives}"
+url="https://github.com/webtorrent/webtorrent-desktop/releases/download/v${version}/webtorrent-desktop_${version}_amd64.deb"
+repology=("project: webtorrent-desktop")
+description="The streaming torrent app."
+hash="2110c6e81f2ebeae74e8194ec49e80f8357573c57222d2d472623355fb1307b0"
+maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
