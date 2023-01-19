@@ -1,0 +1,10 @@
+name="system76-power-deb"
+gives="system76-power"
+breaks="${gives}"
+version="1.1.23"
+replace="${gives}"
+url="https://launchpad.net/~system76/+archive/ubuntu/pop/+files/system76-power_${version}~1661535605~20.04~b9b6342_amd64.deb"
+repology=("project: system76-power")
+description="system76-power is a utility for managing graphics and power profiles."
+hash="2b6470b45e2814b032bc66b4fce3e2cee0dc1f7cafbf0a969c80a16c25a7e173"
+maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
