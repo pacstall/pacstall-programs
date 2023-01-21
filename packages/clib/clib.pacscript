@@ -5,7 +5,7 @@ name="clib"
 version="2.8.2"
 description="C package manager-ish"
 url="https://github.com/clibs/${name}/archive/refs/tags/${version}.tar.gz"
-depends="gcc libcurl4-openssl-dev"
+depends="gcc libcurl3-gnutls"
 hash="e6bb5bcac18ad64070b70836750a0f3752cbe5fe31e9acd455a700ee57f3a799"
 repology=("project: ${name}")
 
