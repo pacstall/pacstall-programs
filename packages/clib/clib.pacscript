@@ -1,17 +1,16 @@
+#!/usr/bin/bash
+# shellcheck disable=2034,2032,2033
+#-*- mode: sh-*-
 name="clib"
-version="2.8.1"
+version="2.8.2"
 description="C package manager-ish"
 url="https://github.com/clibs/${name}/archive/refs/tags/${version}.tar.gz"
-depends="gcc libcurl4-gnutls-dev"
-hash="0d2330e3c46ce21d7fa3d29f0f99b9527eb5ab323b1efb9b1a0e6915779c74d6"
-pkgdir="/usr/src/pacstall/${name}"
+build_depends="gcc libcurl4-gnutls-dev"
+hash="e6bb5bcac18ad64070b70836750a0f3752cbe5fe31e9acd455a700ee57f3a799"
 repology=("project: ${name}")
 
-prepare()  {
-  true
-}
 build() {
-  make -j"${nproc}"
+  make -j"$(nproc)"
 }
 
 install() {
@@ -22,3 +21,4 @@ install() {
 removescript() {
   sudo rm -rf "/usr/share/licenses/${name}"
 }
+# vim:set ft=sh ts=2 sw=2 et:
