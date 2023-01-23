@@ -29,5 +29,5 @@ postinst(){
 		echo "Interpreting as Y"
 		cp /usr/share/applications/mcontrolcenter.desktop ~/.config/autostart/mcontrolcenter.desktop
 	fi
-		
+
 }
