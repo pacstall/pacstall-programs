@@ -18,16 +18,6 @@ install(){
     	sudo install -Dm644 ${gives}.helper.service $pkgdir/usr/share/dbus-1/system-services/${gives}.helper.service
 }
 postinst(){
-	echo "Do you want this programme to start at startup? (Y|n)"
-	read ans
-	if [ ${ans} == y ] || [ ${ans} == Y ]; then
-		cp /usr/share/applications/mcontrolcenter.desktop ~/.config/autostart/mcontrolcenter.desktop
-		echo "Copied desktop file to ~/.config/autostart folder, programme will now start upon startup."
-	elif [ ${ans} == n ] || [ ${ans} == N ]; then
-		echo "Programme will not start upon startup"
-	else
-		echo "Interpreting as Y"
-		cp /usr/share/applications/mcontrolcenter.desktop ~/.config/autostart/mcontrolcenter.desktop
-	fi
-
+	echo "To start this programme of startup, type:
+	cp /usr/share/applications/mcontrolcenter.desktop ~/.config/autostart/mcontrolcenter.desktop"
 }
