@@ -21,3 +21,6 @@ postinst() {
 	echo "To start this programme of startup, type:
 	cp /usr/share/applications/mcontrolcenter.desktop ~/.config/autostart/mcontrolcenter.desktop"
 }
+removescript() {
+	rm -rf ~/.config/autostart/mcontrolcenter.desktop
+}
