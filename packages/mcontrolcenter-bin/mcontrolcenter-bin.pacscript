@@ -18,8 +18,12 @@ install() {
 	sudo install -Dm644 ${gives}.helper.service "$pkgdir"/usr/share/dbus-1/system-services/${gives}.helper.service
 }
 postinst() {
-	echo "To start this programme of startup, type:
-	cp /usr/share/applications/mcontrolcenter.desktop ~/.config/autostart/mcontrolcenter.desktop"
+	if ask "Do you want this programme to start at startup?" Y; then
+	sudo -u ${PACSTALL_USER} cp /usr/share/applications/mcontrolcenter.desktop ${homedir}/.config/autostart/mcontrolcenter.desktop
+	echo "Copied desktop file to ${homedir}/.config/autostart folder, programme will now start upon startup."
+	else
+		echo "Programme will not start upon startup"
+	fi
 }
 removescript() {
 	rm -f "${homedir}/.config/autostart/mcontrolcenter.desktop"
