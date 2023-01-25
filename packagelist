@@ -91,6 +91,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+firefox-bin
 firefox-deb
 firefox-developer-edition-bin
 fishui-git
@@ -267,6 +268,7 @@ postman-bin
 prismlauncher-git
 proton-python-client
 protonmail-bridge-deb
+protonup-qt-app
 protonvpn-cli
 protonvpn-gui
 protonvpn-nm-lib
