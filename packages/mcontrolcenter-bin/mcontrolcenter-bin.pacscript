@@ -22,5 +22,5 @@ postinst() {
 	cp /usr/share/applications/mcontrolcenter.desktop ~/.config/autostart/mcontrolcenter.desktop"
 }
 removescript() {
-	rm -rf ~/.config/autostart/mcontrolcenter.desktop
+	rm -f "${homedir}/.config/autostart/mcontrolcenter.desktop"
 }
