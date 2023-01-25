@@ -107,10 +107,10 @@ geekbench-bin
 gfn-electron-bin
 gir1.2-xapp-1.0-deb
 git
-gitblade-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
+gitblade-deb
 gitfiend-deb
 github-cli-bin
 github-cli-deb
@@ -266,8 +266,8 @@ popcorn-time-deb
 popsicle
 postman-bin
 prismlauncher-git
-protonmail-bridge-deb
 proton-python-client
+protonmail-bridge-deb
 protonup-qt-app
 protonvpn-cli
 protonvpn-gui
@@ -285,8 +285,8 @@ reshade-shaders-git
 rhino-linux-xfce4-config-git
 rstudio-deb
 sed
-shellcheck-bin
 shell-color-scripts
+shellcheck-bin
 shellharden
 shfmt-bin
 signal-desktop-beta-deb
@@ -299,13 +299,13 @@ songrec-deb
 soundux
 spacecadetpinball-git
 spotify-client-deb
-starship-bin
 st-distrotube-git
+st-lukesmith-git
+starship-bin
 steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
-st-lukesmith-git
 sublime-merge-deb
 sublime-text-deb
 surf
@@ -332,8 +332,8 @@ torbrowser-launcher-git
 torguard-deb
 touchegg-deb
 touchegg-git
-treefetch-bin
 tre-git
+treefetch-bin
 truckersmp-cli
 ttf-fira-sans
 tuner
