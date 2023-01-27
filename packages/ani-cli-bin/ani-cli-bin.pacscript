@@ -9,7 +9,7 @@ maintainer="Henryws <hwengerstickel@pm.me>"
 
 prepare() {
   chmod +x ani-cli
-  wget -q "https://raw.githubusercontent.com/pystardust/ani-cli/master/ani-cli.1"
+  wget -q "https://github.com/pystardust/ani-cli/releases/download/v${version}/ani-cli.1"
   gzip -9n ani-cli.1
 }
 
