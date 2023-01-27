@@ -10,12 +10,12 @@ maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
 
 install() {
 	cd app
-	sudo install -Dm755 ${gives} "$pkgdir"/usr/bin/${gives}
-	sudo install -Dm644 ${gives}.desktop "$pkgdir"/usr/share/applications/${gives}.desktop
-	sudo install -Dm644 ${gives}.svg "$pkgdir"/usr/share/icons/hicolor/scalable/apps/${gives}.svg
-	sudo install -Dm755 ${gives}-helper "$pkgdir"/usr/libexec/${gives}-helper
-	sudo install -Dm644 ${gives}-helper.conf "$pkgdir"/usr/share/dbus-1/system.d/${gives}-helper.conf
-	sudo install -Dm644 ${gives}.helper.service "$pkgdir"/usr/share/dbus-1/system-services/${gives}.helper.service
+	sudo install -Dm755 "${gives}" "$pkgdir"/usr/bin/"${gives}"
+	sudo install -Dm644 "${gives}.desktop" "$pkgdir"/usr/share/applications/"${gives}.desktop"
+	sudo install -Dm644 "${gives}.svg" "$pkgdir"/usr/share/icons/hicolor/scalable/apps/"${gives}.svg"
+	sudo install -Dm755 "${gives}-helper" "$pkgdir"/usr/libexec/"${gives}-helper"
+	sudo install -Dm644 "${gives}-helper.conf" "$pkgdir"/usr/share/dbus-1/system.d/"${gives}-helper.conf"
+	sudo install -Dm644 "${gives}.helper.service" "$pkgdir"/usr/share/dbus-1/system-services/"${gives}.helper.service"
 }
 postinst() {
 	if ask "Do you want this programme to start at startup?" Y; then
