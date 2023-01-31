@@ -9,6 +9,7 @@ anydesk-bin
 anydesk-deb
 aomp-deb
 appimagelauncher-deb
+apx-git
 ardour-git
 arduino-cli-bin
 arduino-ide-bin
@@ -90,7 +91,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
-firefox-deb
+firefox-bin
 firefox-developer-edition-bin
 fishui-git
 fm6000-git
@@ -127,6 +128,7 @@ graillon
 grapejuice-git
 grive2
 grive2-git
+grub-customizer-git
 gtkhash
 gtkmm4
 harmonoid-deb
@@ -277,10 +279,12 @@ qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-extras-git
 qtile-git
+quintom-cursor-theme-git
 realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
 rhino-linux-xfce4-config-git
+rhino-plymouth-theme-git
 rstudio-deb
 sed
 shell-color-scripts
@@ -357,6 +361,7 @@ wazzapp-deb
 webapp-manager
 webapp-manager-deb
 webcord-deb
+webtorrent-desktop-deb
 weechat-git
 wezterm-app
 windscribe-beta-gui-deb

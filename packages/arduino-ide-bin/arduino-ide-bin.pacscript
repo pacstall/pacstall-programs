@@ -12,26 +12,20 @@ prepare() {
   # potential leftover symlink from v1
   sudo rm -f "/usr/local/bin/arduino"
 
-  sudo mkdir -p "${STOWDIR}/${name}/usr/share/${pkgname}/"
-  sudo mkdir -p "${STOWDIR}/${name}/usr/share/applications/"
-  sudo mkdir -p "${STOWDIR}/${name}/usr/share/pixmaps/"
-}
-
-build() {
-  true
+  sudo mkdir -p "${pkgdir}/usr/share/${pkgname}/"
+  sudo mkdir -p "${pkgdir}/usr/share/applications/"
+  sudo mkdir -p "${pkgdir}/usr/share/pixmaps/"
 }
 
 install() {
-  DEST="${STOWDIR}/${name}"
-
   # install files
-  sudo cp -R ./* "${DEST}/usr/share/${pkgname}/"
+  sudo cp -R ./* "${pkgdir}/usr/share/${pkgname}/"
 
   # fetch .desktop file + icon
   wget -q "https://www.arduino.cc/wiki/370832ed4114dd35d498f2f449b4781e/arduino.svg"
-  sudo install -Dm644 "arduino.svg" "${DEST}/usr/share/pixmaps/arduino-ide-v2.svg"
+  sudo install -Dm644 "arduino.svg" "${pkgdir}/usr/share/pixmaps/arduino-ide-v2.svg"
   wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
-  sudo install -Dm644 "arduino-ide-v2.desktop" "${DEST}/usr/share/applications/"
+  sudo install -Dm644 "arduino-ide-v2.desktop" "${pkgdir}/usr/share/applications/"
 }
 
 postinst() {

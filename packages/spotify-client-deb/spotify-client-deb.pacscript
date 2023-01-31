@@ -1,7 +1,7 @@
 name="spotify-client-deb"
 gives="spotify-client"
 pkgname="spotify-client"
-repology=("project: spotify" "repo: scoop")
+repology=("project: spotify")
 breaks="${pkgname}-git ${pkgname}-app ${pkgname}-bin spotify"
 replace="${pkgname}"
 version="1.1.84.716.gc5f8b819"

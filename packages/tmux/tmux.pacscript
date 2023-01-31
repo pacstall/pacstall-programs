@@ -9,21 +9,19 @@ description="A terminal multiplexer"
 hash="b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc"
 optdepends=("libutempter-dev: Record user sessions to utmp and wtmp files")
 maintainer="Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>"
-prepare() {
-	true
-}
-build() {
-        # Check if `libutempter-dev` ( optdepends ) is installed
-        if dpkg-query -W libutempter-dev > /dev/null 2>&1; then
-                ./configure --enable-utempter
-  else
-                ./configure
-  fi
-        make -j$(nproc)
-}
-install() {
-          sudo make install DESTDIR="$STOWDIR/$name"
-          sudo install -Dm755 example_tmux.conf "$STOWDIR/$name/usr/share/tmux/example_tmux.conf"
-          sudo install -Dm0644 COPYING "$STOWDIR/$name/usr/share/licenses/tmux/LICENSE"
 
+build() {
+  # Check if `libutempter-dev` ( optdepends ) is installed
+  if dpkg-query -W libutempter-dev > /dev/null 2>&1; then
+    ./configure --enable-utempter
+  else
+    ./configure
+  fi
+  make -j$(nproc)
+}
+
+install() {
+  sudo make install DESTDIR="${pkgdir}"
+  sudo install -Dm755 example_tmux.conf "${pkgdir}/usr/share/tmux/example_tmux.conf"
+  sudo install -Dm0644 COPYING "${pkgdir}/usr/share/licenses/tmux/LICENSE"
 }

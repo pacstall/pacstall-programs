@@ -5,3 +5,6 @@ description="Discover and collect music on YouTube Headset is a desktop app that
 hash="f3582c22aef8b2081ab84ea0f2933acf4e4a4e6b1b7b8f4265af5a450103c0ca"
 maintainer="Henryws <hwengerstickel@pm.me>"
 repology=("project: headset")
+postinst() {
+        sudo rm -f /etc/apt/sources.list.d/headset.list
+}
