@@ -4,6 +4,7 @@ build_depends="libgtk-4-dev libadwaita-1-dev gettext desktop-file-utils rustc ca
 gives="rhino-setup"
 description="Rhino Linux Setup Prompt"
 maintainer="Wizard28 (+oklopfer)"
+incompatible=("debian:*")
 pkgver() {
     git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
