@@ -3,7 +3,7 @@ url="https://github.com/rhino-linux/rhino-setup.git"
 build_depends="libgtk-4-dev libadwaita-1-dev gettext desktop-file-utils rustc cargo meson ninja-build"
 gives="rhino-setup"
 description="Rhino Linux Setup Prompt"
-maintainer="Wizard28 (+oklopfer)"
+maintainer="Sourajyoti Basak <wiz28@protonmail.com>, Oren Klopfer <oren@taumoda.com>"
 incompatible=("debian:*")
 pkgver() {
     git ls-remote "${url}" master | cut -f1 | cut -c1-8
