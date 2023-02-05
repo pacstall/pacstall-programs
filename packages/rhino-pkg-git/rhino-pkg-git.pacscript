@@ -1,6 +1,7 @@
 name="rhino-pkg-git"
 url="https://github.com/rhino-linux/rhino-pkg.git"
 gives="rhino-pkg"
+build_depends="make gettext"
 depends="gettext"
 description="Rhino-pkg wrapper script"
 maintainer="Henryws <hwengerstickel@pm.me>"
