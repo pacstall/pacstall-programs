@@ -25,7 +25,8 @@ install() {
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
   sudo cp -r xfce4 "${pkgdir}/etc/skel/.config"
-  sudo install -Dm644 "rolling-rhino-default.png" -t "${pkgdir}/usr/share/backgrounds/xfce"
+  sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
+  sudo install -Dm644 "rhino/default.png" -t "${pkgdir}/usr/share/backgrounds/xfce"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
 }
