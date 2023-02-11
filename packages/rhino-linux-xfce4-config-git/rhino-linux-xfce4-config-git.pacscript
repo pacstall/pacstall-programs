@@ -26,7 +26,7 @@ install() {
   # Install
   sudo cp -r xfce4 "${pkgdir}/etc/skel/.config"
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
-  sudo install -Dm644 "rhino/default.png" -t "${pkgdir}/usr/share/backgrounds/xfce"
+  sudo install -Dm644 "rhino/rolling-rhino-default.png" -t "${pkgdir}/usr/share/backgrounds/xfce"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
 }
