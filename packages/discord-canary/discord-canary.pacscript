@@ -1,5 +1,5 @@
 name="discord-canary"
-repology=("project: discord-canary")
+repology=("project: discord-canary" "repo: aur")
 version="0.0.148"
 maintainer="DismissedGuy <me@mikealmel.ooo>"
 url="https://dl-canary.discordapp.net/apps/linux/${version}/${name}-${version}.tar.gz"
