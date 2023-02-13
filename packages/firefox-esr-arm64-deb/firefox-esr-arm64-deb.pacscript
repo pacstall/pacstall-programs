@@ -1,4 +1,4 @@
-name="firefox-esr-deb"
+name="firefox-esr-arm64-deb"
 gives="firefox-esr"
 version="102.7.0esr1"
 url="http://ftp.us.debian.org/debian/pool/main/f/firefox-esr/firefox-esr_${version}_arm64.deb"
