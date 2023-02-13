@@ -93,6 +93,7 @@ ferium-bin
 feroxbuster-bin
 firefox-bin
 firefox-developer-edition-bin
+firefox-esr-arm64-deb
 fishui-git
 fm6000-git
 fnlfmt
