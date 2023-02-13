@@ -1,0 +1,7 @@
+name="linux-image-unsigned-arm64-deb"
+gives="linux-image-unsigned-6.2.0-060200rc8-generic"
+version="6.2.0-rc8"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.2-rc8/arm64/linux-image-unsigned-6.2.0-060200rc8-generic_6.2.0-060200rc8.202302122331_arm64.deb"
+description="Ubuntu Linux mainline kernel (Image)"
+hash="e33bd12437efe23fa962146c380dc3245d18ae5e2bf679fa4e71c58596515d84"
+maintainer="Oren Klopfer <oren@taumoda.com>"

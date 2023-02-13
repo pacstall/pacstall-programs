@@ -178,6 +178,7 @@ linked-deb
 linux-headers-deb
 linux-headers-generic-arm64-deb
 linux-headers-generic-deb
+linux-image-unsigned-arm64-deb
 linux-image-unsigned-deb
 linux-kernel
 linux-modules-arm64-deb
