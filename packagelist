@@ -180,6 +180,7 @@ linux-headers-generic-arm64-deb
 linux-headers-generic-deb
 linux-image-unsigned-arm64-deb
 linux-image-unsigned-deb
+linux-kernel-arm64
 linux-kernel
 linux-modules-arm64-deb
 linux-modules-deb
