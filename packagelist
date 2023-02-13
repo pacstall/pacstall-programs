@@ -176,6 +176,7 @@ librewolf-deb
 libxapp1-deb
 linked-deb
 linux-headers-deb
+linux-headers-generic-arm64-deb
 linux-headers-generic-deb
 linux-image-unsigned-deb
 linux-kernel
