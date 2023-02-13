@@ -176,9 +176,13 @@ librewolf-deb
 libxapp1-deb
 linked-deb
 linux-headers-deb
+linux-headers-generic-arm64-deb
 linux-headers-generic-deb
+linux-image-unsigned-arm64-deb
 linux-image-unsigned-deb
 linux-kernel
+linux-kernel-arm64
+linux-modules-arm64-deb
 linux-modules-deb
 linux-wifi-hotspot-deb
 lrz-syncshare-deb
