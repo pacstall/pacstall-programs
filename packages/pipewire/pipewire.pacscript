@@ -5,6 +5,7 @@ url="https://gitlab.freedesktop.org/${name}/${name}/-/archive/${version}/${name}
 maintainer="Henryws <hwengerstickel@pm.me>"
 description="Server and user space API to deal with multimedia pipelines"
 hash="f5fbe0028b56a9e9cc6c9fbb4e3e73d108bb818895f6fed3cd62d1a1b6fc4c30"
+incompatible=('debian:stable')
 
 prepare() {
     meson setup builddir
