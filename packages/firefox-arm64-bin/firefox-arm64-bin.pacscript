@@ -9,9 +9,9 @@ hash="e457841208d1da863bc0d2ae0b0045b117c5e5a69479c9326176e04ce4e0a185"
 
 install() {
     cd ..
-    sudo install -Dm755 "usr/bin/firefox" "${pkgdir}/usr/bin/"
+    sudo install -Dm755 "usr/bin/firefox" -t "${pkgdir}/usr/bin/"
     sudo cp -r "usr/lib/firefox/" "${pkgdir}/usr/lib/"
-    sudo install -Dm755 "usr/share/applications/firefox.desktop" "${pkgdir}/usr/share/applications/" && sudo mv "${pkgdir}/usr/share/applications/firefox.desktop" "${pkgdir}/usr/share/applications/firefox-stable.desktop"
+    sudo install -Dm755 "usr/share/applications/firefox.desktop" -t "${pkgdir}/usr/share/applications/" && sudo mv "${pkgdir}/usr/share/applications/firefox.desktop" "${pkgdir}/usr/share/applications/firefox-stable.desktop"
     sudo install -Dm644 "usr/share/icons/hicolor/scalable/apps/firefox.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/apps/"
     sudo install -Dm644 "usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/symbolic/apps/"
     for i in 16x16 22x22 24x24 32x32 48x48 64x64 128x128 192x192 256x256 384x384; do
