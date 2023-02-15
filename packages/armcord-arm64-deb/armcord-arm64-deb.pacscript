@@ -1,0 +1,9 @@
+name="armcord-arm64-deb"
+gives="armcord"
+depends="libgtk-3-0 libnotify4 libnss3 libxss1 libxtst6 xdg-utils libatspi2.0-0 libuuid1 libsecret-1-0"
+repology=("project: ${gives}")
+version="3.1.4"
+url="https://eu.armcord.xyz/apt-repo/pool/main/ArmCord_${version}_arm64.deb"
+hash="7059b1b3b1de17e8f1b6667cdbb6d06d1cae5e1431fbec7989321e7d9e79f76f"
+description="Custom client designed to enhance your Discord experience while keeping everything lightweight"
+maintainer="Oren Klopfer <oren@taumoda.com>"

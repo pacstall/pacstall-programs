@@ -1,0 +1,7 @@
+name="linux-modules-arm64-deb"
+gives="linux-modules-6.2.0-060200rc8-generic"
+version="6.2.0-rc8"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.2-rc8/arm64/linux-modules-6.2.0-060200rc8-generic_6.2.0-060200rc8.202302122331_arm64.deb"
+description="Ubuntu Linux mainline kernel (Modules)"
+hash="325c244913df7624866c909ef4d203c310b7317e07f813aad6423a7200c1212d"
+maintainer="Oren Klopfer <oren@taumoda.com>"
