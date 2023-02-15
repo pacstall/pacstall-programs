@@ -3,9 +3,15 @@ gives="firefox"
 version="109.0.1-1"
 repology=("project: ${gives}")
 url="http://mirror.archlinuxarm.org/aarch64/extra/${gives}-${version}-aarch64.pkg.tar.xz"
+build_depends="libarchive-tools"
 description="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 hash="e457841208d1da863bc0d2ae0b0045b117c5e5a69479c9326176e04ce4e0a185"
+
+build() {
+     wget http://mirror.archlinuxarm.org/aarch64/extra/${gives}-${version}-aarch64.pkg.tar.xz
+     tar xvf *.tar.xz
+ }
 
 install() {
     sudo install -Dm755 "usr/bin/firefox" -t "${pkgdir}/usr/bin/firefox"
