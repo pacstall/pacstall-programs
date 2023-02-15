@@ -12,7 +12,7 @@ install() {
     sudo install -Dm755 "usr/bin/firefox" -t "${pkgdir}/usr/bin/firefox"
     sudo cp -r "usr/lib/firefox" "${pkgdir}/usr/lib/"
     sudo install -Dm755 "usr/share/applications/firefox.desktop" -t "${pkgdir}/usr/share/applications/firefox-stable.desktop"
-    sudo install -Dm644 "usr/share/icons/hicolor/16x16/apps/firefox.png" -t "${pkgdir}/usr/share/icons/hicolor/16x16/apps/firefox.png"
+    sudo install -Dm644 "usr/share/icons/hicolor/" -t "${pkgdir}/usr/share/icons/"
     sudo install -Dm644 "usr/share/icons/hicolor/22x22/apps/firefox.png" -t "${pkgdir}/usr/share/icons/hicolor/22x22/apps/firefox.png"
     sudo install -Dm644 "usr/share/icons/hicolor/24x24/apps/firefox.png" -t "${pkgdir}/usr/share/icons/hicolor/24x24/apps/firefox.png"
     sudo install -Dm644 "usr/share/icons/hicolor/32x32/apps/firefox.png" -t "${pkgdir}/usr/share/icons/hicolor/32x32/apps/firefox.png"
