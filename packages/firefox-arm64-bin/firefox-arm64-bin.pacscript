@@ -10,7 +10,7 @@ maintainer="Oren Klopfer <oren@taumoda.com>"
 build() {
     sudo wget http://mirror.archlinuxarm.org/aarch64/extra/${gives}-${version}-aarch64.pkg.tar.xz
     sudo tar xvf *.tar.xz
-
+}
 install() {
     sudo install -Dm755 "usr/bin/firefox" -t "${pkgdir}/usr/bin/firefox"
     sudo cp -r "usr/lib/firefox" "${pkgdir}/usr/lib/"
