@@ -9,12 +9,12 @@ hash="e457841208d1da863bc0d2ae0b0045b117c5e5a69479c9326176e04ce4e0a185"
 
 install() {
     cd ..
-    sudo cp -r "usr/bin/firefox" "${pkgdir}/usr/bin/"
-    sudo cp -r "usr/lib/firefox" "${pkgdir}/usr/lib/"
-    sudo cp -r "usr/share/applications/firefox.desktop" "${pkgdir}/usr/share/applications/firefox-stable.desktop"
-    sudo cp -r "usr/share/icons/hicolor/scalable/apps/firefox.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/"
-    sudo cp -r "usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg" "${pkgdir}/usr/share/icons/hicolor/symbolic/apps/"
+    sudo mkdir "${pkgdir}/usr/bin/" && sudo cp -r "usr/bin/firefox" "${pkgdir}/usr/bin/"
+    sudo mkdir "${pkgdir}/usr/lib/" && sudo cp -r "usr/lib/firefox" "${pkgdir}/usr/lib/"
+    sudo mkdir "${pkgdir}/usr/share/applications/" && sudo cp -r "usr/share/applications/firefox.desktop" "${pkgdir}/usr/share/applications/firefox-stable.desktop"
+    sudo mkdir "${pkgdir}/usr/share/icons/hicolor/scalable/apps/" && sudo cp -r "usr/share/icons/hicolor/scalable/apps/firefox.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/"
+    sudo mkdir "${pkgdir}/usr/share/icons/hicolor/symbolic/apps/" && sudo cp -r "usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg" "${pkgdir}/usr/share/icons/hicolor/symbolic/apps/"
     for i in 16x16 22x22 24x24 32x32 48x48 64x64 128x128 192x192 256x256 384x384; do
-        sudo cp -r "usr/share/icons/hicolor/$i/apps/firefox.png" "${pkgdir}/usr/share/icons/hicolor/$i/apps/"
+        sudo mkdir "${pkgdir}/usr/share/icons/hicolor/$i/apps/" && sudo cp -r "usr/share/icons/hicolor/$i/apps/firefox.png" "${pkgdir}/usr/share/icons/hicolor/$i/apps/"
     done
 }
