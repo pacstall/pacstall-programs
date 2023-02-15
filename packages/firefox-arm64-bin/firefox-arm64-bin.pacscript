@@ -8,7 +8,7 @@ maintainer="Oren Klopfer <oren@taumoda.com>"
 hash="e457841208d1da863bc0d2ae0b0045b117c5e5a69479c9326176e04ce4e0a185"
 
 install() {
-    pwd
+    cd ..
     sudo install -Dm755 "usr/bin/firefox" -t "${pkgdir}/usr/bin/firefox"
     sudo cp -r "usr/lib/firefox" "${pkgdir}/usr/lib/"
     sudo install -Dm755 "usr/share/applications/firefox.desktop" -t "${pkgdir}/usr/share/applications/firefox-stable.desktop"
