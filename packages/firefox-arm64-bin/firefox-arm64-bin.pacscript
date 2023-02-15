@@ -5,7 +5,7 @@ repology=("project: ${gives}")
 url="http://mirror.archlinuxarm.org/aarch64/extra/${gives}-${version}-aarch64.pkg.tar.xz"
 description="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-hash="6c6c7bf560895b3a7e5f265c156a174c7ed9aba19c549c42f69f5a560e4eec21"
+hash="e457841208d1da863bc0d2ae0b0045b117c5e5a69479c9326176e04ce4e0a185"
 
 install() {
     sudo install -Dm755 ./usr/bin/firefox -t "${pkgdir}/usr/bin/firefox"
