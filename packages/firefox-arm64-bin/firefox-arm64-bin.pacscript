@@ -1,0 +1,26 @@
+name="firefox-arm64-bin"
+gives="firefox"
+version="109.0.1-1"
+repology=("project: ${gives}")
+url="http://mirror.archlinuxarm.org/aarch64/extra/${gives}-${version}-aarch64.pkg.tar.xz"
+description="Free and open-source web browser developed by the Mozilla Foundation"
+maintainer="Oren Klopfer <oren@taumoda.com>"
+hash="6c6c7bf560895b3a7e5f265c156a174c7ed9aba19c549c42f69f5a560e4eec21"
+
+install() {
+    sudo install -Dm755 ./usr/bin/firefox -t "${pkgdir}/usr/bin/firefox"
+    sudo cp -r ./usr/lib/firefox "${pkgdir}/usr/lib/"
+    sudo install -Dm755 ./usr/share/applications/firefox.desktop -t "${pkgdir}/usr/share/applications/firefox-stable.desktop"
+    sudo install -Dm644 ./usr/share/icons/hicolor/16x16/apps/firefox.png "${pkgdir}/usr/share/icons/hicolor/16x16/apps/firefox.png"
+    sudo install -Dm644 ./usr/share/icons/hicolor/22x22/apps/firefox.png "${pkgdir}/usr/share/icons/hicolor/22x22/apps/firefox.png"
+    sudo install -Dm644 ./usr/share/icons/hicolor/24x24/apps/firefox.png "${pkgdir}/usr/share/icons/hicolor/24x24/apps/firefox.png"
+    sudo install -Dm644 ./usr/share/icons/hicolor/32x32/apps/firefox.png "${pkgdir}/usr/share/icons/hicolor/32x32/apps/firefox.png"
+    sudo install -Dm644 ./usr/share/icons/hicolor/48x48/apps/firefox.png "${pkgdir}/usr/share/icons/hicolor/48x48/apps/firefox.png"
+    sudo install -Dm644 ./usr/share/icons/hicolor/64x64/apps/firefox.png "${pkgdir}/usr/share/icons/hicolor/64x64/apps/firefox.png"
+    sudo install -Dm644 ./usr/share/icons/hicolor/128x128/apps/firefox.png "${pkgdir}/usr/share/icons/hicolor/128x128/apps/firefox.png"
+    sudo install -Dm644 ./usr/share/icons/hicolor/192x192/apps/firefox.png "${pkgdir}/usr/share/icons/hicolor/192x192/apps/firefox.png"
+    sudo install -Dm644 ./usr/share/icons/hicolor/256x256/apps/firefox.png "${pkgdir}/usr/share/icons/hicolor/256x256/apps/firefox.png"
+    sudo install -Dm644 ./usr/share/icons/hicolor/384x384/apps/firefox.png "${pkgdir}/usr/share/icons/hicolor/384x384/apps/firefox.png"
+    sudo install -Dm644 ./usr/share/icons/hicolor/scalable/apps/firefox.svg "${pkgdir}/usr/share/icons/hicolor/scalable/apps/firefox.svg"
+    sudo install -Dm644 ./usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg "${pkgdir}/usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg"
+}
