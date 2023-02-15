@@ -23,5 +23,5 @@ install() {
     sudo install -Dm644 "usr/share/icons/hicolor/256x256/apps/firefox.png" -t "${pkgdir}/usr/share/icons/hicolor/256x256/apps/firefox.png"
     sudo install -Dm644 "usr/share/icons/hicolor/384x384/apps/firefox.png" -t "${pkgdir}/usr/share/icons/hicolor/384x384/apps/firefox.png"
     sudo install -Dm644 "usr/share/icons/hicolor/scalable/apps/firefox.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/apps/firefox.svg"
-    sudo install -Dm644 "usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg"apps/firefox-symbolic.svg"
+    sudo install -Dm644 "usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg"
 }
