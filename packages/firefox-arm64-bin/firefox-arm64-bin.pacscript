@@ -10,7 +10,7 @@ hash="e457841208d1da863bc0d2ae0b0045b117c5e5a69479c9326176e04ce4e0a185"
 
 build() {
      wget http://mirror.archlinuxarm.org/aarch64/extra/${gives}-${version}-aarch64.pkg.tar.xz
-     tar xvf *.tar.xz
+     tar xvf ${gives}-${version}-aarch64.tar.xz
  }
 
 install() {
