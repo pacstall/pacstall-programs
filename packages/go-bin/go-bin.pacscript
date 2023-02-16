@@ -2,13 +2,13 @@ maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 
 name="go-bin"
 pkgname="go"
-version="1.19.4"
+version="1.20.1"
 description="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
 url="https://go.dev/dl/go${version}.linux-amd64.tar.gz"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-app ${pkgname}-deb golang golang-git golang-deb golang-bin golang-app golang-go"
 gives="golang-go"
 replace="golang-go"
-hash="c9c08f783325c4cf840a94333159cc937f05f75d36a8b307951d5bd959cf2ab8"
+hash="000a5b1fca4f75895f78befeb2eecf10bfff3c428597f3f1e69133b63b911b02"
 repology=("project: go")
 
 __goroot="${STOWDIR}/usr/local/${name}"
