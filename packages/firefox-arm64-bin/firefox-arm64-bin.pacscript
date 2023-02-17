@@ -15,7 +15,7 @@ build() {
 install() {
     cd ..
     sudo install -Dm755 "usr/bin/firefox" -t "${pkgdir}/usr/bin/"
-    sudo cp -r "usr/lib/firefox/*" "${pkgdir}/usr/lib/firefox/"
+    sudo cp -r usr/lib/firefox/* "${pkgdir}/usr/lib/firefox/"
     sudo install -Dm755 "usr/share/applications/firefox.desktop" -t "${pkgdir}/usr/share/applications/" && sudo mv "${pkgdir}/usr/share/applications/firefox.desktop" "${pkgdir}/usr/share/applications/firefox-stable.desktop"
     sudo install -Dm644 "usr/share/icons/hicolor/scalable/apps/firefox.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/apps/"
     sudo install -Dm644 "usr/share/icons/hicolor/symbolic/apps/firefox-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/symbolic/apps/"
