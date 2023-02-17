@@ -18,7 +18,7 @@ install() {
 	sudo install -Dm644 "${gives}.helper.service" "$pkgdir"/usr/share/dbus-1/system-services/"${gives}.helper.service"
 }
 postinst() {
-	if ask "Do you want this programme to start at startup?" Y; then
+	if ask "Do you want this program to start at startup?" Y; then
 		sudo -u "${PACSTALL_USER}" mkdir -p "${homedir}"/.config/autostart
 		sudo -u "${PACSTALL_USER}" cp /usr/share/applications/mcontrolcenter.desktop "${homedir}"/.config/autostart/mcontrolcenter.desktop
 		echo "Copied desktop file to ${homedir}/.config/autostart folder, programme will now start upon startup."
