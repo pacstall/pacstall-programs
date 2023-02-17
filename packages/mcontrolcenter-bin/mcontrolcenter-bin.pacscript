@@ -21,7 +21,7 @@ postinst() {
 	if ask "Do you want this program to start at startup?" Y; then
 		sudo -u "${PACSTALL_USER}" mkdir -p "${homedir}"/.config/autostart
 		sudo -u "${PACSTALL_USER}" cp /usr/share/applications/mcontrolcenter.desktop "${homedir}"/.config/autostart/mcontrolcenter.desktop
-		echo "Copied desktop file to ${homedir}/.config/autostart folder, programme will now start upon startup."
+		echo "Copied desktop file to ${homedir}/.config/autostart folder, program will now start upon startup"
 	else
 		echo "Programme will not start upon startup"
 	fi
