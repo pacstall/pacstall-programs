@@ -1,10 +1,10 @@
 name="ani-cli-bin"
 pkgname="ani-cli"
-version="4.0"
+version="4.1"
 repology=("project: ${pkgname}")
 url="https://github.com/pystardust/ani-cli/releases/download/v${version}/ani-cli"
 depends="grep sed wget mpv aria2 ffmpeg fzf"
-hash="a98b78a3515c06014b572b3c49c1d8bfff6944d15b72fd8157c14ea1501ee0ab"
+hash="718b29903f622cc06e177769bf3b1783f7f82e0a57d4b5de106d604ee00b4449"
 description="A cli tool to browse and play anime"
 maintainer="Henryws <hwengerstickel@pm.me>"
 
