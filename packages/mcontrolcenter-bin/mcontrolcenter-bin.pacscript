@@ -23,7 +23,7 @@ postinst() {
 		sudo -u "${PACSTALL_USER}" cp /usr/share/applications/mcontrolcenter.desktop "${homedir}"/.config/autostart/mcontrolcenter.desktop
 		echo "Copied desktop file to ${homedir}/.config/autostart folder, program will now start upon startup"
 	else
-		echo "Programme will not start upon startup"
+		echo "Program will not start upon startup"
 	fi
 }
 removescript() {
