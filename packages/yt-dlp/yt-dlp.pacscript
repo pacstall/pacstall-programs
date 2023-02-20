@@ -24,5 +24,5 @@ install() {
 }
 
 removescript() {
-  sudo pip3 uninstall pycryptodomex
+  yes | sudo pip3 uninstall pycryptodomex
 }
