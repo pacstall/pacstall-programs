@@ -4,7 +4,7 @@ version="0.3.2"
 depends="libqt5widgets5"
 url="https://github.com/dmitry-s93/MControlCenter/releases/download/${version}/MControlCenter-${version}.tar.gz"
 repology=("project: mcontrolcenter")
-description="An application that allows you to change the settings of MSI laptops."
+description="An application that allows you to change the settings of MSI laptops"
 hash="bab563f692fb3d42494d95de21611d230e0b0736e2e80f08cf8a1b7b990d9f0f"
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
 
