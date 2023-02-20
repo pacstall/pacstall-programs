@@ -29,6 +29,8 @@ postinst() {
 }
 
 removescript() {
-	rm -f "${homedir}/.config/autostart/mcontrolcenter.desktop"
-	fancy_message info "Config file for auto-start is removed"
+	if [[ -f "${homedir}/.config/autostart/mcontrolcenter.desktop" ]]; then
+		rm -f "${homedir}/.config/autostart/mcontrolcenter.desktop"
+		fancy_message info "Config file for auto-start is removed"
+	fi
 }
