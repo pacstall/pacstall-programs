@@ -17,6 +17,7 @@ install() {
 	sudo install -Dm644 "${gives}-helper.conf" "$pkgdir"/usr/share/dbus-1/system.d/"${gives}-helper.conf"
 	sudo install -Dm644 "${gives}.helper.service" "$pkgdir"/usr/share/dbus-1/system-services/"${gives}.helper.service"
 }
+
 postinst() {
 	if ask "Do you want this program to start at startup?" Y; then
 		sudo -u "${PACSTALL_USER}" mkdir -p "${homedir}"/.config/autostart
