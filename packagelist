@@ -13,6 +13,7 @@ apx-git
 ardour-git
 arduino-cli-bin
 arduino-ide-bin
+armcord-arm64-deb
 awesome-git
 aws-cli-v2-bin
 balena-etcher-deb
@@ -91,7 +92,8 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
-firefox-deb
+firefox-arm64-bin
+firefox-bin
 firefox-developer-edition-bin
 fishui-git
 fm6000-git
@@ -173,12 +175,17 @@ libresprite-git
 libressl
 librewolf-app
 librewolf-deb
+libssl1.1-deb
 libxapp1-deb
 linked-deb
 linux-headers-deb
+linux-headers-generic-arm64-deb
 linux-headers-generic-deb
+linux-image-unsigned-arm64-deb
 linux-image-unsigned-deb
 linux-kernel
+linux-kernel-arm64
+linux-modules-arm64-deb
 linux-modules-deb
 linux-wifi-hotspot-deb
 lrz-syncshare-deb
@@ -202,6 +209,7 @@ moka-icon-theme
 ms-teams-deb
 mullvad-vpn-beta-deb
 mullvad-vpn-deb
+muse-hub-deb
 mutt-wizard
 nala-deb
 nano
@@ -251,6 +259,7 @@ pacup-bin
 panagement
 paper-icon-theme
 papirus-icon-theme
+parsec-deb
 pdf-mix-tool-git
 pdfmm-git
 pfetch-bin
@@ -267,6 +276,7 @@ postman-bin
 prismlauncher-git
 proton-python-client
 protonmail-bridge-deb
+protonup-qt-app
 protonvpn-cli
 protonvpn-gui
 protonvpn-nm-lib
@@ -277,10 +287,17 @@ qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-extras-git
 qtile-git
+quintom-cursor-theme-git
 realvnc-vnc-viewer-deb
 renegate
 reshade-shaders-git
+rhino-kvantum-theme-git
+rhino-lightdm-theme-git
 rhino-linux-xfce4-config-git
+rhino-neofetch-git
+rhino-pkg-git
+rhino-plymouth-theme-git
+rhino-setup-git
 rstudio-deb
 sed
 shell-color-scripts
