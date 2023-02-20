@@ -1,10 +1,10 @@
 name="an-anime-game-launcher-app"
 pkgname="an-anime-game-launcher"
-version="2.4.4"
+version="2.4.5"
 description="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
 url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${version}/an-anime-game-launcher-${version}.AppImage"
-hash="0e6729f834363bf5fa1f17d2b871cd57d5a16ee2416fb44b34f4998b4043c8fb"
+hash="5b69461618e76f81ea16e2dd484e6ab2a1f12c8b4c26ce0332b97ad5609b8126"
 maintainer="Henryws <hwengerstickel@pm.me>"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
