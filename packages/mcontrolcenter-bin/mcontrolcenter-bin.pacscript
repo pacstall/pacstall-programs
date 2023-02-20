@@ -26,6 +26,7 @@ postinst() {
 		echo "Program will not start upon startup"
 	fi
 }
+
 removescript() {
 	rm -f "${homedir}/.config/autostart/mcontrolcenter.desktop"
 	fancy_message info "Config file for auto-start is removed"
