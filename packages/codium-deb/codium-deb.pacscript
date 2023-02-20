@@ -1,0 +1,8 @@
+name="codium-deb"
+gives="codium"
+repology=("project: vscodium")
+version="1.75.1.23040"
+url="https://github.com/VSCodium/vscodium/releases/download/${version}/${gives}_${version}_amd64.deb"
+description="VS Code without MS branding/telemetry/licensing"
+hash="d1dcff48c45e4866b73b90c58f32f8c1f95a797d6fd9abb584f9b914a8f84390"
+maintainer="Oren Klopfer <oren@taumoda.com>"
