@@ -1,5 +1,6 @@
 name="boosteroid-deb"
 pkgname="boosteroid"
+repology=("project: boosteroid")
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-bin ${pkgname}-app ${pkgname}-git"
 maintainer="DismissedGuy <me@mikealmel.ooo>"
