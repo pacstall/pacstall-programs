@@ -8,7 +8,6 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fennel-bin"
 pkgname="fennel"
-pkgdir="${STOWDIR}/${name}"
 version="1.3.0"
 description="A Lua Lisp language"
 url="https://fennel-lang.org/downloads/fennel-${version}-x86_64"

@@ -7,7 +7,6 @@ description="Fast and customisable vulnerability scanner based on simple YAML ba
 url="https://github.com/projectdiscovery/${gives}/releases/download/v${version}/${gives}_${version}_linux_amd64.zip"
 hash="6d544d7ceee2c0f80258bb6c18276004e3e1bc76d072bf64a49022b27b8fa0c6"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-git"
-pkgdir="${STOWDIR}/${name}"
 repology=("project: ${pkgname}")
 
 install() {

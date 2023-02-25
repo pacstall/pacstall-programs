@@ -12,7 +12,6 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fnlfmt"
-pkgdir="${STOWDIR}/${name}"
 version="0.3.0"
 description="A more intuitive version of du in rust"
 url="https://git.sr.ht/~technomancy/fnlfmt/archive/${version}.tar.gz"

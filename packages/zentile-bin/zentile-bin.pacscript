@@ -8,7 +8,6 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="zentile-bin"
 pkgname="zentile"
-pkgdir="${STOWDIR}/${name}"
 version="0.1.1"
 description="Automatic Tiling for EWMH Complaint Window Managers."
 url="https://github.com/blrsn/zentile/releases/download/v${version}/${pkgname}_linux_amd64"

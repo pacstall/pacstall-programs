@@ -8,7 +8,6 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="hyperfine-bin"
 pkgname="hyperfine"
-pkgdir="${STOWDIR}/${name}"
 version="1.15.0"
 description="A command-line benchmarking tool"
 url="https://github.com/sharkdp/${pkgname}/releases/download/v${version}/${pkgname}-v${version}-x86_64-unknown-linux-musl.tar.gz"
