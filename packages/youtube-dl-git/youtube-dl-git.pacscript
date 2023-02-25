@@ -6,23 +6,17 @@ description="Command-line program to download videos from YouTube.com and other 
 build_depends="make pandoc python3"
 depends="python3"
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
-
 pkgver() {
-    # find latest tag name
-    git ls-remote --sort='version:refname' --tags ${url} | grep -v '\^{}$' | tail --line=1 | cut --delimiter='/' --fields=3
+  # find latest tag name
+  git ls-remote --sort='version:refname' --tags ${url} | grep -v '\^{}$' | tail --line=1 | cut --delimiter='/' --fields=3
 }
-
 version="$(pkgver)"
 
 prepare() {
-    git fetch --all --tags --prune
-    git checkout "tags/${version}" -b "${version}"
-}
-
-build() {
-    true
+  git fetch --all --tags --prune
+  git checkout "tags/${version}" -b "${version}"
 }
 
 install() {
-    sudo make install PREFIX="${pkgdir}/usr" PYTHON="/usr/bin/env python3"
+  sudo make install PREFIX="${pkgdir}/usr" PYTHON="/usr/bin/env python3"
 }

@@ -13,16 +13,7 @@ description="A fork of Firefox, focused on privacy, security and freedom."
 url="https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/${version}/LibreWolf.x86_64.AppImage"
 hash="ea4071a3a9d3e5808b88e09287e286948a06db5d3a06976fb10c4606c3b05f46"
 breaks="${pkgname}-deb ${pkgname}-bin ${pkgname}-git"
-pkgdir="${STOWDIR}/${name}"
 repology=("project: librewolf")
-
-prepare() {
-  true
-}
-
-build() {
-  true
-}
 
 install() {
   # Install appimage
