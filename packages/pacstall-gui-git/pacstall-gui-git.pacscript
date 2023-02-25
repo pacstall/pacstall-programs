@@ -12,21 +12,17 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-  sudo mkdir -p "${STOWDIR}/${name}/usr/bin" "${STOWDIR}/${name}/usr/lib/pacstall-gui" "${STOWDIR}/${name}/usr/share/applications"
-}
-
-build() {
-  true
+  sudo mkdir -p "${pkgdir}/usr/bin" "${pkgdir}/usr/lib/pacstall-gui" "${pkgdir}/usr/share/applications"
 }
 
 install() {
-  sudo install -Dm755 pacstall-gui "${STOWDIR}/${name}/usr/bin/pacstall-gui"
-  sudo mv -f ./settings.sh "${STOWDIR}/${name}/usr/lib/pacstall-gui"
-  sudo install -Dm755 LICENSE "${STOWDIR}/${name}/usr/share/licenses/pacstall-gui/LICENSE"
-  sudo mv -f ./pacstall-gui.desktop "${STOWDIR}/${name}/usr/share/applications"
+  sudo install -Dm755 pacstall-gui "${pkgdir}/usr/bin/pacstall-gui"
+  sudo mv -f ./settings.sh "${pkgdir}/usr/lib/pacstall-gui"
+  sudo install -Dm755 LICENSE "${pkgdir}/usr/share/licenses/pacstall-gui/LICENSE"
+  sudo mv -f ./pacstall-gui.desktop "${pkgdir}/usr/share/applications"
 }
 
 postinst() {
-          sudo chmod -R a+w "${STOWDIR}/${name}/usr/lib/pacstall-gui"
+          sudo chmod -R a+w "${pkgdir}/usr/lib/pacstall-gui"
           sudo update-desktop-database -q
 }

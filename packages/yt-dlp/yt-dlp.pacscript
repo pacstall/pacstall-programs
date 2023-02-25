@@ -20,7 +20,7 @@ build() {
 }
 
 install() {
-  sudo python3 setup.py install --root="${STOWDIR}/${name}" --optimize=1
+  sudo python3 setup.py install --root="${pkgdir}" --optimize=1
 }
 
 removescript() {

@@ -7,16 +7,7 @@ maintainer="0x262D <pacstall@copypaste.anonaddy.me>"
 url="https://github.com/TGS963/${gives}/releases/download/v${version}/Upscayl-${version}-linux.AppImage"
 hash="aac1585942b91b0ba201a53b637b4033c11e6b51be47f330a03485519be8fdc3"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-bin ${pkgname}-git"
-pkgdir="${STOWDIR}/${name}"
 repology=("project: ${pkgname}")
-
-prepare() {
-  true
-}
-
-build() {
-  true
-}
 
 install() {
   # Install appimage

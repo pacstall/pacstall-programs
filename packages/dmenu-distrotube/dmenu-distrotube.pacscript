@@ -8,14 +8,10 @@ gives="dmenu"
 description="Distrotube's dmenu build"
 breaks="dmenu dmenu_run dmenu_path"
 
-prepare() {
-          true
-}
-
 build() {
-        make -j$(nproc)
+  make -j$(nproc)
 }
 
 install() {
-        sudo make install DESTDIR=/usr/src/pacstall/dmenu-distrotube
+  sudo make install DESTDIR="${pkgdir}"
 }

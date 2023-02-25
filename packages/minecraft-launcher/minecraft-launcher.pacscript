@@ -8,20 +8,16 @@ description="Official Minecraft Launcher"
 hash="b08cb0cb52425afbafdd52a6b2c7d0d94ce0a2d9285f72f47ec2fcdc31e7e0cf"
 
 prepare() {
-        wget -q "https://aur.archlinux.org/cgit/aur.git/plain/minecraft-launcher.desktop?h=minecraft-launcher" -O minecraft-launcher.desktop
-        wget -q https://launcher.mojang.com/download/minecraft-launcher.svg
-}
-
-build() {
-        true
+  wget -q "https://aur.archlinux.org/cgit/aur.git/plain/minecraft-launcher.desktop?h=minecraft-launcher" -O minecraft-launcher.desktop
+  wget -q https://launcher.mojang.com/download/minecraft-launcher.svg
 }
 
 install() {
-        sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/bin
-        sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
-        sudo mkdir -p /usr/src/pacstall/minecraft-launcher/usr/share/applications
-        chmod +x minecraft-launcher
-        sudo mv minecraft-launcher /usr/src/pacstall/minecraft-launcher/usr/bin
-        sudo mv minecraft-launcher.svg /usr/src/pacstall/minecraft-launcher/usr/share/icons/hicolor/symbolic/apps
-        sudo mv minecraft-launcher.desktop /usr/src/pacstall/minecraft-launcher/usr/share/applications
+  sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/symbolic/apps"
+  sudo mkdir -p "${pkgdir}/usr/share/applications"
+  chmod +x minecraft-launcher
+  sudo mv minecraft-launcher "${pkgdir}/usr/bin"
+  sudo mv minecraft-launcher.svg "${pkgdir}/usr/share/icons/hicolor/symbolic/apps"
+  sudo mv minecraft-launcher.desktop "${pkgdir}/usr/share/applications"
 }

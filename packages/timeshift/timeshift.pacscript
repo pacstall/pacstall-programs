@@ -10,15 +10,11 @@ breaks="${name}-git ${name}-deb ${name}-bin ${name}-app"
 replace="timeshift-btrfs"
 description="Timeshift is a system restore utility which takes snapshots of the system at regular intervals. These snapshots can be restored at a later date to undo system changes. Creates incremental snapshots using rsync or BTRFS snapshots using BTRFS tools."
 
-prepare()  {
-    true
-}
-
 build() {
-    sed -i -e 's/--Xcc="-O3" //g' src/makefile
-    make -j"$(nproc)" all
+  sed -i -e 's/--Xcc="-O3" //g' src/makefile
+  make -j"$(nproc)" all
 }
 
 install() {
-    sudo make install DESTDIR="${STOWDIR}/${name}"
+  sudo make install DESTDIR="${pkgdir}"
 }

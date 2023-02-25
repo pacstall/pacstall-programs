@@ -43,8 +43,8 @@ build() {
 }
 
 install() {
-  sudo ./waf i18n --destdir="$STOWDIR/$name"
-  sudo ./waf install --destdir="$STOWDIR/$name"
+  sudo ./waf i18n --destdir="${pkgdir}"
+  sudo ./waf install --destdir="${pkgdir}"
 
   wait
 

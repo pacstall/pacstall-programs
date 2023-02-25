@@ -13,10 +13,6 @@ build_depends="cmake asciidoctor libqrencode-dev libbotan-2-dev libargon2-dev li
 optdepends=("xclip: keepassxc-cli clipboard support under X server"
             "wl-clipboard: keepassxc-cli clipboard support under Wayland")
 
-prepare() {
-    true
-}
-
 build() {
     cmake -S . -B build \
     -DCMAKE_BUILD_TYPE=Release \
@@ -28,5 +24,5 @@ build() {
 }
 
 install() {
-    sudo cmake --build build --target install -- DESTDIR="${STOWDIR}/${name}"
+    sudo cmake --build build --target install -- DESTDIR="${pkgdir}"
 }

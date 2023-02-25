@@ -8,7 +8,6 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="spacecadetpinball-git"
 pkgname="spacecadetpinball"
-pkgdir="/usr/src/pacstall/${name}"
 description='Reverse engineered port of "3D Pinball for Windows – Space Cadet" to Linux'
 url="https://github.com/k4zmu2a/${pkgname}.git"
 depends="timidity freepats libsdl2-2.0-0 libsdl2-mixer-2.0-0"

@@ -69,24 +69,24 @@ build() {
 
 install() {
         cd "wine32-build"
-        mkdir -p "$STOWDIR/$name/usr/lib32/wine"
-        make prefix="$STOWDIR/$name/usr" \
-         libdir="$STOWDIR/$name/usr/lib32" \
-         dlldir="$STOWDIR/$name/usr/lib32/wine" \
+        mkdir -p "${pkgdir}/usr/lib32/wine"
+        make prefix="${pkgdir}/usr" \
+         libdir="${pkgdir}/usr/lib32" \
+         dlldir="${pkgdir}/usr/lib32/wine" \
          install
         cd "../wine64-build"
-        mkdir -p "$STOWDIR/$name/usr/lib/wine"
-        make prefix="$STOWDIR/$name/usr" \
-         libdir="$STOWDIR/$name/usr/lib" \
-         dlldir="$STOWDIR/$name/usr/lib/wine" \
+        mkdir -p "${pkgdir}/usr/lib/wine"
+        make prefix="${pkgdir}/usr" \
+         libdir="${pkgdir}/usr/lib" \
+         dlldir="${pkgdir}/usr/lib/wine" \
          install
 
-        install -d -m755 "$STOWDIR/$name/usr/share/fontconfig/conf.default"
-        install -D -m644 "$SRCDIR/$name/30-win32-aliases.conf" -t "$STOWDIR/$name/usr/share/fontconfig/conf.avail"
-        ln -s "../conf.avail/30-win32-aliases.conf" "$STOWDIR/$name/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
+        install -d -m755 "${pkgdir}/usr/share/fontconfig/conf.default"
+        install -D -m644 "$SRCDIR/$name/30-win32-aliases.conf" -t "${pkgdir}/usr/share/fontconfig/conf.avail"
+        ln -s "../conf.avail/30-win32-aliases.conf" "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
 
-        install -D -m644 "$SRCDIR/$name/wine-binfmt.conf" "$STOWDIR/$name/usr/lib/binfmt.d/wine.conf"
+        install -D -m644 "$SRCDIR/$name/wine-binfmt.conf" "${pkgdir}/usr/lib/binfmt.d/wine.conf"
 
-        i686-w64-mingw32-strip --strip-unneeded "$STOWDIR/$name/usr/lib32/wine/i386-windows"/*.dll
-        x86_64-w64-mingw32-strip --strip-unneeded "$STOWDIR/$name/usr/lib/wine/x86_64-windows"/*.dll
+        i686-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib32/wine/i386-windows"/*.dll
+        x86_64-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib/wine/x86_64-windows"/*.dll
 }

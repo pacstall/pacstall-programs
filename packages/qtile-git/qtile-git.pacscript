@@ -11,21 +11,13 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
   sudo pip3 install --upgrade --no-cache --force-reinstall cairocffi cffi xcffib
   sudo pip3 install dbus-next setuptools-scm setuptools
-  sudo mkdir -p "${STOWDIR}/${name}"/usr/share/xsessions
+  sudo mkdir -p "${pkgdir}"/usr/share/xsessions
   sudo chown root:root ./
-  sudo python3 setup.py install --root="${STOWDIR}/${name}"
-  sudo cp ./resources/qtile.desktop "${STOWDIR}/${name}"/usr/share/xsessions/qtile.desktop
+  sudo python3 setup.py install --root="${pkgdir}"
+  sudo cp ./resources/qtile.desktop "${pkgdir}"/usr/share/xsessions/qtile.desktop
 }
 
 removescript() {

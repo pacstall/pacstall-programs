@@ -12,21 +12,17 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {
-  true
-}
-
 build() {
   mkdir build && cd build || exit
-  cmake .. -DCMAKE_INSTALL_PREFIX="${STOWDIR}/${name}/usr" -GNinja
+  cmake .. -DCMAKE_INSTALL_PREFIX="${pkgdir}/usr" -GNinja
   ninja -j"$(nproc)"
 }
 
 install() {
   cd build || exit
   sudo cmake --install .
-  sudo install -Dm644 "../LICENSES/"* -t "${STOWDIR}/${name}/usr/share/licenses/${name}/"
-  cd "${STOWDIR}/${name}/usr/lib/x86_64-linux-gnu/" || exit
+  sudo install -Dm644 "../LICENSES/"* -t "${pkgdir}/usr/share/licenses/${name}/"
+  cd "${pkgdir}/usr/lib/x86_64-linux-gnu/" || exit
   sudo mkdir qt5
   sudo mv qml qt5
 }

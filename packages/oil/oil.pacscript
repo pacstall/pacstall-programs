@@ -7,7 +7,6 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="oil"
-pkgdir="${STOWDIR}/${name}"
 version="0.14.1"
 description="A bash-compatible UNIX shell written in Python"
 url="https://www.oilshell.org/download/oil-${version}.tar.xz"

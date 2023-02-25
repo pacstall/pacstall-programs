@@ -20,5 +20,5 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR="/usr/src/pacstall/${name}"
+  sudo make install DESTDIR="${pkgdir}"
 }

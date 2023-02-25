@@ -7,12 +7,8 @@ description="A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/G
 hash="9c64ccab1a72ba1dc61cb88d2fbcce1d343fc6b6cdf22c2cc2859bfb2da66fd4"
 maintainer="Henryws <hwengerstickel@pm.me>"
 
-prepare() {
-  true
-}
-
 build() {
-  sudo meson build --prefix=/usr/src/pacstall/mangohud/usr
+  sudo meson build --prefix="${pkgdir}/usr"
 }
 
 install() {

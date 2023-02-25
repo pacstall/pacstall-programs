@@ -28,5 +28,5 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/polybar
+    sudo make install DESTDIR="${pkgdir}"
 }

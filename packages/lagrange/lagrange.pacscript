@@ -11,7 +11,7 @@ prepare() {
 }
 
 build() {
-    cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/src/pacstall/lagrange/usr -DENABLE_123=ON
+    cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="${pkgdir}/usr" -DENABLE_123=ON
 }
 
 install() {

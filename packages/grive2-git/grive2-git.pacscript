@@ -1,6 +1,5 @@
 name="grive2-git"
 pkgname="grive2"
-pkgdir="${STOWDIR}/${name}"
 description="Google Drive client with support for new Drive REST API and partial sync"
 url="https://github.com/vitalif/grive2.git"
 build_depends="cmake libgcrypt20-dev libyajl-dev libboost-all-dev libcurl4-openssl-dev libexpat1-dev libcppunit-dev binutils-dev debhelper zlib1g-dev dpkg-dev pkg-config"

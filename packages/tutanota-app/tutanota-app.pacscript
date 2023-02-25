@@ -16,7 +16,7 @@ repology=("project: tutanota" "repo: homebrew_casks")
 __created_desktop_file="yes"
 install() {
   # Install AppImage
-  sudo install -Dm755 "tutanota-desktop-linux.AppImage" "${STOWDIR}/${name}/usr/bin/${pkgname}"
+  sudo install -Dm755 "tutanota-desktop-linux.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 
   if ask "\nTutanota creates its own desktop file during the first launch.\nDo you want to create a desktop file anyway?" N; then
     # Download icon
@@ -30,7 +30,7 @@ install() {
     fi
 
     # Install .desktop file
-    sudo install -Dm644 "${pkgname}.png" "${STOWDIR}/${name}/usr/share/pixmaps/${pkgname}.png"
+    sudo install -Dm644 "${pkgname}.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
     wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
     sudo install -Dm644 "${pkgname}.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
   else

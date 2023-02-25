@@ -15,27 +15,18 @@ optdepends=("strace: system call tracer"
   "gameconqueror: memory editing for cheating")
 maintainer="echometerain <echometer@disroot.org>"
 pacdeps="yad"
-
 pkgver() {
     git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
-  sudo install -Dm755 steamtinkerlaunch -t "${STOWDIR}/${name}/usr/bin"
-  sudo install -d "${STOWDIR}/${name}/usr/share/steamtinkerlaunch"
-  sudo cp -r collections eval guicfgs lang misc "${STOWDIR}/${name}/usr/share/steamtinkerlaunch"
-  sudo install -Dm644 README.md -t "${STOWDIR}/${name}/usr/share/doc/steamtinkerlaunch"
-  sudo install -Dm644 "misc/steamtinkerlaunch.desktop" -t "${STOWDIR}/${name}/usr/share/applications"
-  sudo install -Dm644 "misc/steamtinkerlaunch.svg" -t "${STOWDIR}/${name}/usr/share/icons/hicolor/scalable/apps"
+  sudo install -Dm755 steamtinkerlaunch -t "${pkgdir}/usr/bin"
+  sudo install -d "${pkgdir}/usr/share/steamtinkerlaunch"
+  sudo cp -r collections eval guicfgs lang misc "${pkgdir}/usr/share/steamtinkerlaunch"
+  sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/steamtinkerlaunch"
+  sudo install -Dm644 "misc/steamtinkerlaunch.desktop" -t "${pkgdir}/usr/share/applications"
+  sudo install -Dm644 "misc/steamtinkerlaunch.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/apps"
 }
 
 postinst() {

@@ -8,7 +8,6 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="opendoas-git"
 pkgname="opendoas"
-pkgdir="/usr/src/pacstall/${name}"
 description="A portable fork of the OpenBSD doas command"
 url="https://github.com/Duncaen/OpenDoas.git"
 build_depends="bison libpam0g-dev"
@@ -18,10 +17,6 @@ pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
-
-prepare() {
-  true
-}
 
 build() {
   ./configure --prefix=/usr --with-timestamp

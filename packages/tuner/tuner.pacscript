@@ -16,7 +16,7 @@ build() {
 }
 
 install() {
-    sudo DESTDIR=/usr/src/pacstall/tuner ninja -C builddir install
+    sudo DESTDIR="${pkgdir}" ninja -C builddir install
 }
 
 postinst() {

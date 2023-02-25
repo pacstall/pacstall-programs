@@ -6,16 +6,12 @@ description="A dynamic tiling Wayland compositor using wlroots, with desktop sem
 build_depends="meson libwlroots-dev xcb libseat-dev libxcb-res0-dev"
 maintainer="Henryws <hwengerstickel@pm.me>"
 
-prepare() {
-  true
-}
-
 build() {
   meson build
   ninja -C build
 }
 
 install() {
-  sudo DESTDIR=/usr/src/pacstall/vivarium ninja -C build install
+  sudo DESTDIR="${pkgdir}" ninja -C build install
 }
 # vim:set ft=sh ts=2 sw=2 et:
