@@ -7,16 +7,7 @@ description="A windows task manager clone for Linux"
 url="https://github.com/SlyFabi/WSysMon/releases/download/${version}/WSysMon"
 hash="ef57a20064c7d97c437cbce19e20f78638430e08bc7c9933cc876e83114fce58"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-git"
-pkgdir="${STOWDIR}/${name}"
 repology=("project: ${pkgname}")
-
-prepare() {
-  true
-}
-
-build() {
-  true
-}
 
 install() {
   # Install appimage

@@ -12,10 +12,6 @@ hash="d6679f7a2a3e96da923b2f04339a966202a24172f1bbc58e56e7982eca2a76dc"
 incompatible=('debian:bullseye')
 maintainer="Henryws <hwengerstickel@pm.me>"
 
-prepare() {
-  true
-}
-
 build() {
   cargo build --release
 }

@@ -10,10 +10,6 @@ hash="910bb48d9b19c0cfeb6ec845eb318515f33a63ea7892a99b2e7b67c6b518bacd"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 repology=("project: lyx")
 
-prepare() {
-  true
-}
-
 build() {
   ./configure --prefix=/usr \
     --enable-qt5 \
@@ -22,7 +18,7 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR="${STOWDIR}/${name}"
+  sudo make install DESTDIR="${pkgdir}"
   # install appdata
-  sudo install -Dm644 ./lib/appdata.xml "${STOWDIR}/${name}/usr/share/metainfo/lyx.appdata.xml"
+  sudo install -Dm644 ./lib/appdata.xml "${pkgdir}/usr/share/metainfo/lyx.appdata.xml"
 }
