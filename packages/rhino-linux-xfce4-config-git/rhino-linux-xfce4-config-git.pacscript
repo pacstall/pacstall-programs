@@ -16,6 +16,7 @@ build() {
   sudo mkdir -p "${pkgdir}/usr/share/doc"
   sudo mkdir -p "${pkgdir}/etc/skel/.config"
   sudo mkdir -p "${pkgdir}/usr/share/icons"
+  sudo mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
   # Is not a valid link
   sudo rm -f xfce4/desktop/icons.screen.latest.rc
 }
@@ -26,7 +27,7 @@ install() {
   # Install
   sudo cp -r xfce4 "${pkgdir}/etc/skel/.config"
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
-  sudo install -Dm644 "rhino/rolling-rhino-default.png" -t "${pkgdir}/usr/share/backgrounds/xfce"
+  sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
 }
