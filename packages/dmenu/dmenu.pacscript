@@ -7,14 +7,10 @@ repology=("project: ${name}")
 description="A generic menu for X"
 hash="d4d4ca77b59140f272272db537e05bb91a5914f56802652dc57e61a773d43792"
 
-prepare() {
-        true
-}
-
 build() {
-        make -j"$(nproc)"
+  make -j"$(nproc)"
 }
 
 install() {
-        sudo make install DESTDIR="${STOWDIR}/${name}"
+  sudo make install DESTDIR="${pkgdir}"
 }

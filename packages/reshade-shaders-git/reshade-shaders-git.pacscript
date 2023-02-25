@@ -8,7 +8,6 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="reshade-shaders-git"
 pkgname="reshade-shaders-git"
-pkgdir="${STOWDIR}/${name}"
 description="A collection of post-processing shaders written in the ReShade FX shader language, to be used by vkBasalt"
 url="https://github.com/crosire/reshade-shaders.git"
 gives="${pkgname}"
@@ -18,14 +17,6 @@ pkgver() {
   git ls-remote "${url}" slim | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
-
-prepare() {
-  true
-}
-
-build() {
-  true
-}
 
 install() {
   sudo install -dm 755 "${pkgdir}/opt/reshade/shaders"
