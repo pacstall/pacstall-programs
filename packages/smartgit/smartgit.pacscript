@@ -5,16 +5,7 @@ depends="git libgtk-3-0 libcurl4"
 description="Graphical Git client with support for GitHub, Bitbucket and GitLab"
 hash="4e7a63445227aa6958d367c68bba31a12e0fd43cda86bc85bcd2e2b49e4d8cce"
 maintainer="echometerain <echometer@disroot.org>"
-removescript="true"
 repology=("project: smartgit")
-
-prepare() {
-    true
-}
-
-build() {
-    true
-}
 
 install() {
     sudo install -Dm755 "./licenses"/* -t "$STOWDIR/$name/usr/share/licenses/$name"

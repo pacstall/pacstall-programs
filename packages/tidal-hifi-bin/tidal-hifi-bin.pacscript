@@ -11,14 +11,6 @@ breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
 
 depends="libxss1 libnss3 libgtk-3-0"
 
-prepare() {
-    true
-}
-
-build() {
-    true
-}
-
 install() {
     # Get icon from github and install it
     wget -q "https://github.com/Mastermindzh/tidal-hifi/raw/master/build/icon.png"

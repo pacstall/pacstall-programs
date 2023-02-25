@@ -17,18 +17,14 @@ prepare() {
   fi
 }
 
-build() {
-  true
-}
-
 install() {
-  sudo mkdir -p "${STOWDIR}/${name}/usr/share/licenses/pycharm"
-  sudo mkdir -p "${STOWDIR}/${name}/usr/share/pycharm"
-  sudo mkdir -p "${STOWDIR}/${name}/usr/share/pixmaps"
-  sudo cp -dr --no-preserve='ownership' bin jbr lib plugins "${STOWDIR}/${name}/usr/share/pycharm/"
-  sudo cp -dr --no-preserve='ownership' license "${STOWDIR}/${name}/usr/share/licenses/pycharm/"
-  sudo cp -dr "${STOWDIR}/${name}/usr/share/pycharm/bin/pycharm.png" "${STOWDIR}/${name}/usr/share/pixmaps/"
-  sudo install -Dm 644 pycharm.desktop -t "${STOWDIR}/${name}"/usr/share/applications/
+  sudo mkdir -p "${pkgdir}/usr/share/licenses/pycharm"
+  sudo mkdir -p "${pkgdir}/usr/share/pycharm"
+  sudo mkdir -p "${pkgdir}/usr/share/pixmaps"
+  sudo cp -dr --no-preserve='ownership' bin jbr lib plugins "${pkgdir}/usr/share/pycharm/"
+  sudo cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/pycharm/"
+  sudo cp -dr "${pkgdir}/usr/share/pycharm/bin/pycharm.png" "${pkgdir}/usr/share/pixmaps/"
+  sudo install -Dm 644 pycharm.desktop -t "${pkgdir}"/usr/share/applications/
 }
 
 postinst() {

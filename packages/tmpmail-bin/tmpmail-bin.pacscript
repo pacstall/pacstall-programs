@@ -17,14 +17,6 @@ breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="8d12f5474b89ee585413ec32cc9991a971a00e8bb63ac8e5a2e736f734f37cfb"
 repology=("project: ${pkgname}")
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
   # Install license
   sudo install -Dm644 "LICENSE" -t "${STOWDIR}/${name}/usr/share/licenses/${pkgname}"

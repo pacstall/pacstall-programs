@@ -9,14 +9,6 @@ hash="06a7e8f1271a9eb5a07bff75c828cc7c2a3c830b436c0bb2faccb3aa92bc4def"
 repology=("project: firefox" "visiblename: firefox-developer-edition")
 __icon_url="https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
   # Make dirs and assign permissions
   sudo mkdir -p "${pkgdir}/usr/bin"

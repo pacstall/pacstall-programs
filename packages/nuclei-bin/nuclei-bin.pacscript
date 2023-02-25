@@ -10,14 +10,6 @@ breaks="${pkgname} ${pkgname}-deb ${pkgname}-git"
 pkgdir="${STOWDIR}/${name}"
 repology=("project: ${pkgname}")
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
   # Install bin
   sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"

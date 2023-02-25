@@ -12,10 +12,6 @@ prepare() {
   sudo mkdir -p "${STOWDIR}/${name}/usr/bin" "${STOWDIR}/${name}/usr/share/metainfo" "${STOWDIR}/${name}/usr/share/applications" "${STOWDIR}/${name}/usr/share/icons/hicolor/256x256/apps"
 }
 
-build() {
-  true
-}
-
 install() {
   sudo install -Dm644 minecraft-pi-reborn-client-${version}-amd64.AppImage "${STOWDIR}/${name}/usr/bin/minecraft-pi-reborn-client"
   sudo chmod +x "${STOWDIR}/${name}/usr/bin/minecraft-pi-reborn-client"

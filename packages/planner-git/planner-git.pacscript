@@ -4,27 +4,18 @@ build_depends="meson ninja-build libgtk-3-dev libgee-0.8-dev libjson-glib-dev li
 depends="libgtk-3-0 libgee-0.8-2 libjson-glib-1.0-0 libjson-glib-1.0-common libsqlite3-0 libsoup2.4-1 libgranite5 libgranite-common libwebkit2gtk-4.0-37 libecal-2.0-1 libedataserver-1.2-26 libpeas-1.0-0 libpeas-common libical3 libhandy-1-0 valac elementary-icon-theme libevolution"
 description="Task manager with Todoist support designed for GNU/Linux"
 maintainer="echometer <guacamolek@yandex.com>"
-
 pkgver() {
     git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
-prepare() {
-    true
-}
-
 build() {
-    meson build --prefix="/usr"
-    cd build
-    ninja
+  meson build --prefix="/usr"
+  cd build
+  ninja
 }
 
 install() {
-    cd build
-    sudo DESTDIR="$STOWDIR/$name" ninja install
-}
-
-postinst() {
-    true
+  cd build
+  sudo DESTDIR="$STOWDIR/$name" ninja install
 }

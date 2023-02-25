@@ -5,18 +5,11 @@ url="https://github.com/microsoft/onnxruntime/releases/download/v${version}/onnx
 description="ONNX Runtime is a cross-platform inference and training machine-learning accelerator."
 hash="0345f45f222208344406d79a6db3280ed2ccc884dc1e064ce6e6951ed4c70606"
 maintainer="Zahrun <Zahrun@github.com>"
-prepare() {
-  true
-}
-
-build() {
-  true
-}
 
 install() {
-  sudo install -Dm755 "lib/lib${pkgname}.so.${version}" -t "$STOWDIR/$name/usr/local/lib"
-  sudo install -Dm644 include/* -t "$STOWDIR/$name/usr/local/include"
-  sudo install -Dm644 LICENSE -t "$STOWDIR/$name/usr/share/licenses/$name"
+  sudo install -Dm755 "lib/lib${pkgname}.so.${version}" -t "${pkgdir}/usr/local/lib"
+  sudo install -Dm644 include/* -t "${pkgdir}/usr/local/include"
+  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/$name"
 }
 
 postinst() {

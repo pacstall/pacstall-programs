@@ -12,15 +12,11 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {
-  true
-}
-
 build() {
   cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" ./
   make -j"$(nproc)"
 }
 
 install() {
-  sudo make install DESTDIR="${STOWDIR}/${name}"
+  sudo make install DESTDIR="${pkgdir}"
 }

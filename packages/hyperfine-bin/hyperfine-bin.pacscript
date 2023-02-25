@@ -16,14 +16,6 @@ breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="38859f8b7cb61f2d76de888eae36c78fbfcbf791fb0ef878ed2dab2a5e91bfb0"
 repology=("project: hyperfine")
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
   # Install license
   sudo install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${pkgname}"

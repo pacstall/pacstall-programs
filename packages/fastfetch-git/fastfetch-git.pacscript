@@ -29,14 +29,10 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {
-  true
-}
-
 build() {
   # Build fastfetch
   mkdir -p build/
-  (
+  ( 
     cd build/ || return 2
     cmake ..
     cmake --build . --target fastfetch --target flashfetch -j "$(nproc)"

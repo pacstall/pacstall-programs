@@ -26,10 +26,6 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {
-  true
-}
-
 build() {
   # Build rquired files
   make -j"$(nproc)" DESTDIR="${pkgdir}"

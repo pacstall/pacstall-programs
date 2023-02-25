@@ -16,16 +16,7 @@ breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="f3d1119cd4f226fe01c82465b53013bddc6a85ed550eadced581a5381804073b"
 repology=("project: fennel")
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
-
   # Install binary
   sudo install -Dm755 "fennel-${version}-x86_64" "${pkgdir}/usr/bin/${pkgname}"
 
