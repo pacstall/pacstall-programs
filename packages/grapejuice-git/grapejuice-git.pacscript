@@ -11,20 +11,12 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
   export PYTHONPATH="$(pwd)/src"
   python3 -m grapejuice_packaging linux_package || python -m grapejuice_packaging linux_package
   cd dist/linux_package
-  sudo mkdir -p "$STOWDIR/$name"
-  sudo tar -xf ./*.tar.gz -C "$STOWDIR/$name"
+  sudo mkdir -p "${pkgdir}"
+  sudo tar -xf ./*.tar.gz -C "${pkgdir}"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:

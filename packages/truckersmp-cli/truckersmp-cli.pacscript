@@ -17,10 +17,6 @@ optdepends=(
     "wine: possibility to use wine"
 )
 
-prepare() {
-    true
-}
-
 build() {
     make
     python3 setup.py build

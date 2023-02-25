@@ -10,21 +10,13 @@ description="GitHub's official command line tool - Binary version"
 hash="76f7e18bdad5ddfdfcab40fce86c8d6f9fb27f9d29c1287cdf71e0d6b45ba84b"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
-prepare() {
-    true
-}
-
-build() {
-    true
-}
-
 install() {
     # Binary
-    sudo mkdir -p "${STOWDIR}/${name}/usr/bin"
-    sudo mv "./bin/gh" "${STOWDIR}/${name}/usr/bin"
+    sudo mkdir -p "${pkgdir}/usr/bin"
+    sudo mv "./bin/gh" "${pkgdir}/usr/bin"
     # Man
-    sudo mkdir -p "${STOWDIR}/${name}/usr/share/man/man1"
-    sudo mv "./share/man/man1" "${STOWDIR}/${name}/usr/share/man"
+    sudo mkdir -p "${pkgdir}/usr/share/man/man1"
+    sudo mv "./share/man/man1" "${pkgdir}/usr/share/man"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:

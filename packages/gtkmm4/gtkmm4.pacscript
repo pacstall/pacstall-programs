@@ -19,7 +19,7 @@ build_depends="git meson ninja-build libxml-parser-perl libxml-xpath-perl"
 
 prepare() {
     sed -i "/revision=master/c\revision=glibmm-2-72" subprojects/glibmm-2.68.wrap
-    meson --prefix="${STOWDIR}/${name}/usr" -Dmaintainer-mode=true builddir
+    meson --prefix="${pkgdir}/usr" -Dmaintainer-mode=true builddir
     meson configure builddir/ -Dmaintainer-mode=true
     cd builddir
 }
@@ -29,5 +29,5 @@ build() {
 }
 
 install() {
-    sudo DESTDIR="${STOWDIR}/${name}" ninja install
+    sudo DESTDIR="${pkgdir}" ninja install
 }

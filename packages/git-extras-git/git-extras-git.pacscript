@@ -13,14 +13,6 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
-  sudo make DESTDIR="${STOWDIR}/${name}" PREFIX=/usr SYSCONFDIR=/etc install
+  sudo make DESTDIR="${pkgdir}" PREFIX=/usr SYSCONFDIR=/etc install
 }

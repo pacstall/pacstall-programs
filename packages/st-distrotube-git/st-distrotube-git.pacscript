@@ -11,14 +11,10 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {
-    true
-}
-
 build() {
-    make -j$(nproc)
+  make -j$(nproc)
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/st-distrotube-git
+  sudo make install DESTDIR="${pkgdir}"
 }

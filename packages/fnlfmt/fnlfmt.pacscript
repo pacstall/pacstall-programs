@@ -12,7 +12,6 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fnlfmt"
-pkgdir="${STOWDIR}/${name}"
 version="0.3.0"
 description="A more intuitive version of du in rust"
 url="https://git.sr.ht/~technomancy/fnlfmt/archive/${version}.tar.gz"
@@ -22,10 +21,6 @@ depends="lua5.3"
 build_depends="lua5.3"
 hash="8baa2f5ed98f449139f6bd8b4859575c4cfeacc60c0a8884ecaa27bc94e69156"
 repology=("project: fnlfmt")
-
-prepare() {
-  true
-}
 
 build() {
   make -j"$(nproc)"

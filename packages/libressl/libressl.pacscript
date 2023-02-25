@@ -8,7 +8,6 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="libressl"
 version="3.6.1"
-pkgdir="/usr/src/pacstall/${name}"
 url="https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-${version}.tar.gz"
 description="LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014, with goals of modernizing the codebase, improving security, and applying best practice development processes."
 breaks="${name}-git ${name}-bin"

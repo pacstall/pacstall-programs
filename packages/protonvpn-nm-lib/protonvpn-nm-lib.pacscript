@@ -10,14 +10,6 @@ description="The ProtonVPN NM (NetworkManager) Library is intended for every Pro
 hash="c8193defd5722a460b4628c54fbc55556caa525e70476a7e15fccf06f155cd97"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
-  sudo python3 setup.py install --root="${STOWDIR}/${name}" --optimize=1
+  sudo python3 setup.py install --root="${pkgdir}" --optimize=1
 }

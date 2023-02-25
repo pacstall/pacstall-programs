@@ -22,7 +22,7 @@ build() {
 }
 
 install() {
-    sudo DESTDIR=/usr/src/pacstall/$name ninja -C builddir install
+    sudo DESTDIR="${pkgdir}" ninja -C builddir install
 }
 
 postinst() {

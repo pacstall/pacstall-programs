@@ -11,5 +11,5 @@ hash="ada7c8a08cb5dfa93748f7a266cf1a2485851dbbc4f3de33ee99c050f2f93183"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 install() {
-    sudo install -Dm755 "${gives}" -t "${STOWDIR}/${name}/usr/bin"
+    sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
 }

@@ -27,11 +27,11 @@ prepare() {
 
 build() {
   mkdir build && cd build || exit
-  cmake -DobsIncludePath=/usr/include/obs -DCMAKE_INSTALL_PREFIX:PATH="${STOWDIR}"/"${name}"/usr .. > /dev/null && cmake --build . -j"$(nproc)" > /dev/null
+  cmake -DobsIncludePath=/usr/include/obs -DCMAKE_INSTALL_PREFIX:PATH="${pkgdir}"/usr .. > /dev/null && cmake --build . -j"$(nproc)" > /dev/null
 }
 
 install() {
   cd build || exit
   sudo cmake --install . > /dev/null
-  sudo install -Dm644 "../LICENSE" -t "${STOWDIR}/${name}/usr/share/licenses/${name}"
+  sudo install -Dm644 "../LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
 }

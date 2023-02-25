@@ -1,6 +1,5 @@
 name="i3blocks-git"
 pkgname="i3blocks"
-pkgdir="${STOWDIR}/${name}"
 description="A feed generator for text based status bars"
 url="https://github.com/vivien/${pkgname}.git"
 build_depends="autoconf gcc make pkgconf"

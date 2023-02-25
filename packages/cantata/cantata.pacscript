@@ -19,7 +19,7 @@ build() {
 }
 
 install() {
-    sudo make install DESTDIR="${STOWDIR}/${name}"
+    sudo make install DESTDIR="${pkgdir}"
 }
 
 # vim:set ft=sh ts=4 sw=4 et:

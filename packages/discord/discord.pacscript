@@ -8,17 +8,13 @@ hash="175c73771e049ba45e7fb1d37bd107ef0871e3d8857340c5a5a40a745aaeaba7"
 repology=("project: ${name}")
 
 prepare() {
-        sudo mkdir -p /usr/src/pacstall/discord/usr/share/discord/
-        sudo mkdir -p /usr/src/pacstall/discord/usr/share/applications/
-        sudo mkdir -p /usr/src/pacstall/discord/usr/share/icons/
-}
-
-build() {
-        true
+        sudo mkdir -p "${pkgdir}/usr/share/discord/"
+        sudo mkdir -p "${pkgdir}/usr/share/applications/"
+        sudo mkdir -p "${pkgdir}/usr/share/icons/"
 }
 
 install() {
-        sudo install -Dm755 discord.desktop "${STOWDIR}/${name}/usr/share/applications/discord.desktop"
-        sudo install -Dm755 discord.png "${STOWDIR}/${name}/usr/share/icons/discord.png"
-        sudo cp -R ./* "${STOWDIR}/${name}/usr/share/discord/"
+        sudo install -Dm755 discord.desktop "${pkgdir}/usr/share/applications/discord.desktop"
+        sudo install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord.png"
+        sudo cp -R ./* "${pkgdir}/usr/share/discord/"
 }

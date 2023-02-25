@@ -8,14 +8,7 @@ breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git ${pkgname}-musl-
 gives="${pkgname}"
 repology=("project: ${pkgname}")
 maintainer="charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>"
-prepare() {
-  true
-}
-
-build() {
-  true
-}
 
 install() {
-  sudo install -Dm755 "${pkgname}" -t "${STOWDIR}/${name}/usr/bin"
+  sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"
 }

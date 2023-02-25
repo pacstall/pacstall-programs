@@ -9,17 +9,10 @@ maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 prepare() {
   # Modify desktop file to point to install location
   sed -i -e "s/^Exec=.*/Exec=\/opt\/zotero\/zotero -url %U/" \
-         -e "s/^Icon=.*/Icon=\/opt\/zotero\/zotero.ico/" \
-         zotero.desktop
-}
-
-build() {
-  true
+    -e "s/^Icon=.*/Icon=\/opt\/zotero\/zotero.ico/" zotero.desktop
 }
 
 install() {
-  pkgdir="${STOWDIR}/${name}"
-
   sudo install -D zotero.desktop -t "${pkgdir}/usr/share/applications"
 
   installdir="${pkgdir}/opt/zotero"

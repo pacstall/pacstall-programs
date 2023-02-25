@@ -9,27 +9,19 @@ description="Android Studio is the official integrated development environment (
 hash="1a725b585786f43b944336caf703360446e3f4b5e6e234057ff121e50ef91d9a"
 maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
   # Moving all android studio files to /opt
-  sudo install -d "${STOWDIR}/${name}/opt/${name}"
-  sudo cp -a bin lib jre plugins license LICENSE.txt build.txt product-info.json "${STOWDIR}/${name}/opt/${name}"
+  sudo install -d "${pkgdir}/opt/${name}"
+  sudo cp -a bin lib jre plugins license LICENSE.txt build.txt product-info.json "${pkgdir}/opt/${name}"
 
   # Creating a launcher in $PATH
-  sudo install -d "${STOWDIR}/${name}/usr/bin"
+  sudo install -d "${pkgdir}/usr/bin"
 
-  sudo install -d "${STOWDIR}/${name}/usr/share/applications"
-  sudo wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${name}.desktop" -O "${STOWDIR}/${name}/usr/share/applications/${name}.desktop"
+  sudo install -d "${pkgdir}/usr/share/applications"
+  sudo wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${name}.desktop" -O "${pkgdir}//usr/share/applications/${name}.desktop"
 
-  sudo install -Dm644 bin/studio.png "${STOWDIR}/${name}/usr/share/pixmaps/${name}.png"
-  sudo chmod -R ugo+rX "${STOWDIR}/${name}/opt"
+  sudo install -Dm644 bin/studio.png "${pkgdir}/usr/share/pixmaps/${name}.png"
+  sudo chmod -R ugo+rX "${pkgdir}/opt"
 }
 
 postinst() {

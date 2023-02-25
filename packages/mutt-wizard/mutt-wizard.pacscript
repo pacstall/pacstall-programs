@@ -15,27 +15,17 @@ hash="4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53"
 # they have been marked with "No Pkg" in the optdepends.
 
 optdepends=('imagemagick: view images inside of the neomutt TUI'
-            'w3m: view HTML email and images inside of the neomutt TUI'
-            'lynx: view HTML email inside of the neomutt TUI'
-            'links: view HTML email inside of the neomutt TUI'
-            'elinks: view HTML email inside of the neomutt TUI'
-            'urlview: list URLs found in mails to open them in a browser'
-            'abook: contact store and tab completion'
-  # No Pkg    'protonmail-bridge: use neomutt with protonmail accounts'
-  # No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
-            'cron: set up automatic mail syncing')
-
-prepare() {
-    true
-}
-
-build() {
-    true
-}
+    'w3m: view HTML email and images inside of the neomutt TUI'
+    'lynx: view HTML email inside of the neomutt TUI'
+    'links: view HTML email inside of the neomutt TUI'
+    'elinks: view HTML email inside of the neomutt TUI'
+    'urlview: list URLs found in mails to open them in a browser'
+    'abook: contact store and tab completion'
+    # No Pkg    'protonmail-bridge: use neomutt with protonmail accounts'
+    # No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
+    'cron: set up automatic mail syncing')
 
 install() {
-    pkgdir="/usr/src/pacstall/$name"
-
     sudo make DESTDIR="$pkgdir" install
     sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/$name"
     sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/$name"

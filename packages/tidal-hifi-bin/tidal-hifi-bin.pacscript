@@ -11,28 +11,20 @@ breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
 
 depends="libxss1 libnss3 libgtk-3-0"
 
-prepare() {
-    true
-}
-
-build() {
-    true
-}
-
 install() {
     # Get icon from github and install it
     wget -q "https://github.com/Mastermindzh/tidal-hifi/raw/master/build/icon.png"
-    sudo install -Dm644 icon.png "${STOWDIR}/${name}/usr/share/pixmaps/${pkgname}.png"
+    sudo install -Dm644 icon.png "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
 
     # Get desktop file and install it
     wget -q "https://aur.archlinux.org/cgit/aur.git/plain/tidal-hifi.desktop?h=tidal-hifi-bin" -O tidal-hifi.desktop
-    sudo install -Dm644 tidal-hifi.desktop -t "${STOWDIR}/${name}/usr/share/applications"
+    sudo install -Dm644 tidal-hifi.desktop -t "${pkgdir}/usr/share/applications"
 
     # Install the rest of the app
-    sudo install -d "${STOWDIR}/${name}/opt/${pkgname}/" "${STOWDIR}/${name}/usr/bin"
+    sudo install -d "${pkgdir}/opt/${pkgname}/" "${pkgdir}/usr/bin"
 
-    sudo cp -r ${SRCDIR}/tidal-hifi-${version}/* ${STOWDIR}/${name}/opt/${pkgname}/
-    sudo chmod +x "${STOWDIR}/${name}/opt/${pkgname}/tidal-hifi"
+    sudo cp -r ${SRCDIR}/tidal-hifi-${version}/* ${pkgdir}/opt/${pkgname}/
+    sudo chmod +x "${pkgdir}/opt/${pkgname}/tidal-hifi"
 }
 
 postinst() {

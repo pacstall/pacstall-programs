@@ -8,18 +8,10 @@ maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks="${name} ${name}-deb ${name}-app ${name}-git"
 optdepends=(
-    "docker: enable docker usage"
-    "podman: enable podman usage"
+  "docker: enable docker usage"
+  "podman: enable podman usage"
 )
 
-prepare() {
-    true
-}
-
-build() {
-    true
-}
-
 install() {
-    sudo ./install -P "${STOWDIR}/${name}/usr"
+  sudo ./install -P "${pkgdir}/usr"
 }

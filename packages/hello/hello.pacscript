@@ -10,15 +10,11 @@ description="GNU implementation of the classic program that prints “Hello, wor
 hash="8d99142afd92576f30b0cd7cb42a8dc6809998bc5d607d88761f512e26c7db20"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
-prepare() {
-    true
-}
-
 build() {
-    ./configure
-    make -j"$(nproc)"
+  ./configure
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR="${STOWDIR}/${name}"
+  sudo make install DESTDIR="${pkgdir}"
 }
