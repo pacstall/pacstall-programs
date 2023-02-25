@@ -20,5 +20,5 @@ build() {
 }
 
 install() {
-          sudo DESTDIR=/usr/src/pacstall/gnome-tweaks ninja -C builddir install -j$(nproc)
+          sudo DESTDIR="${pkgdir}" ninja -C builddir install -j$(nproc)
 }
