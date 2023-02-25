@@ -6,5 +6,5 @@ version="2023.2.0"
 url="https://github.com/${gives}/clients/releases/download/desktop-v${version}/Bitwarden-${version}-amd64.deb"
 description="Open Source Password Manager"
 hash="1362a1a8c082fbc1da4d4848c48b0765fd75ef58681e29284fec00e766922884"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+maintainer="Henryws <hwengerstickel@pm.me>"
 repology=("project: bitwarden")
