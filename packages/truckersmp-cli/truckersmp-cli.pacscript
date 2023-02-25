@@ -11,20 +11,20 @@ maintainer="badlydrawnface <bdface@proton.me>"
 build_depends="python3-setuptools gcc-mingw-w64 libsdl2-dev"
 depends="python3 libsdl2-2.0-0"
 optdepends=(
-    "python3-vdf: automatic steam account detection"
-    "python3-setuptools: get version information"
-    "steam: possibility to use proton"
-    "wine: possibility to use wine"
+  "python3-vdf: automatic steam account detection"
+  "python3-setuptools: get version information"
+  "steam: possibility to use proton"
+  "wine: possibility to use wine"
 )
 
 build() {
-    make
-    python3 setup.py build
+  make
+  python3 setup.py build
 }
 
 install() {
-    sudo python3 setup.py install --root="$pkgdir" --optimize=1 --skip-build
+  sudo python3 setup.py install --root="${pkgdir}" --optimize=1 --skip-build
 
-    sudo install -Dm644 "$pkgname.bash" "$pkgdir/usr/share/bash-completion/completions/$pkgname"
-    sudo install -Dm644 "_$pkgname" "$pkgdir/usr/share/zsh/site-functions/_$pkgname"
+  sudo install -Dm644 "${pkgname}.bash" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
+  sudo install -Dm644 "_${pkgname}" "${pkgdir}/usr/share/zsh/site-functions/_${pkgname}"
 }

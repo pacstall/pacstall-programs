@@ -8,11 +8,11 @@ maintainer="Henryws <hwengerstickel@pm.me>"
 hash="3b3b615829a5adfaa9c9d7cbad4f1460e317650c73d2efa54823bfe99fa0f7e9"
 
 install() {
-    cd ..
-    sudo mkdir -p "${pkgdir}/opt/firefox"
-    sudo cp -r firefox/* "${pkgdir}/opt/firefox"
-    sudo mkdir -p "${pkgdir}/usr/share/applications/"
-    echo '[Desktop Entry]
+  cd ..
+  sudo mkdir -p "${pkgdir}/opt/firefox"
+  sudo cp -r firefox/* "${pkgdir}/opt/firefox"
+  sudo mkdir -p "${pkgdir}/usr/share/applications/"
+  echo '[Desktop Entry]
 Name=Firefox Stable
 Comment=Web Browser
 Exec=/opt/firefox/firefox %u

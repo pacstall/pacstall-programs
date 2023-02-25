@@ -11,10 +11,10 @@ hash="3e131158b52b9435d7e43d1c47ef288b96d005342cc44b8c950bb403851a5b44"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 build() {
-    ./configure --enable-lzma --enable-zstd
-    make -j"$(nproc)"
+  ./configure --enable-lzma --enable-zstd
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR="${pkgdir}"
+  sudo make install DESTDIR="${pkgdir}"
 }

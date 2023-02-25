@@ -8,23 +8,23 @@ description="Discover and listen to internet radio stations."
 hash="4b8cc5941652ebb872793bbc0f3d56e1c5d4423e6cf8d16aaeea25999075c1aa"
 
 prepare() {
-    meson builddir --prefix=/usr
+  meson builddir --prefix=/usr
 }
 
 build() {
-    ninja -C builddir -j$(nproc)
+  ninja -C builddir -j"$(nproc)"
 }
 
 install() {
-    sudo DESTDIR="${pkgdir}" ninja -C builddir install
+  sudo DESTDIR="${pkgdir}" ninja -C builddir install
 }
 
 postinst() {
-    sudo glib-compile-schemas /usr/share/glib-2.0/schemas
-    sudo update-desktop-database -q /usr/share/applications
-    sudo gtk-update-icon-cache -qtf  /usr/share/icons/hicolor
+  sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+  sudo update-desktop-database -q /usr/share/applications
+  sudo gtk-update-icon-cache -qtf /usr/share/icons/hicolor
 }
 
 removescript() {
-    sudo update-desktop-database -q /usr/share/applications
+  sudo update-desktop-database -q /usr/share/applications
 }

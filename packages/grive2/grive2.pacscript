@@ -11,17 +11,17 @@ patch=("https://github.com/vitalif/grive2/commit/b4d6ac055f8f16ac735a70036243bc4
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
 
 prepare() {
-    patch -Np1 -i PACSTALL_patchesdir/b4d6ac055f8f16ac735a70036243bc4ea2334039.patch
+  patch -Np1 -i PACSTALL_patchesdir/b4d6ac055f8f16ac735a70036243bc4ea2334039.patch
 }
 
 build() {
-    mkdir build
-    cd build
-    cmake ..
-    make -j$(nproc)
+  mkdir build
+  cd build
+  cmake ..
+  make -j"$(nproc)"
 }
 
 install() {
-    cd build
-    sudo make install DESTDIR="${pkgdir}"
+  cd build
+  sudo make install DESTDIR="${pkgdir}"
 }

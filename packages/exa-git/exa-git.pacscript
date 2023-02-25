@@ -11,9 +11,9 @@ pkgver() {
 version="$(pkgver)"
 
 build() {
-  cargo build -j$(nproc) --release
+  cargo build -j"$(nproc)" --release
 }
 
 install() {
-  sudo install -Dm755 target/release/exa -t "${pkgdir}"/usr/bin
+  sudo install -Dm755 target/release/exa -t "${pkgdir}/usr/bin"
 }

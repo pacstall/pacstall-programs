@@ -9,19 +9,19 @@ description="Free chat client, fast and light, designed for many operating syste
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 prepare() {
-    ./autogen.sh
+  ./autogen.sh
 }
 
 build() {
-    ./configure
-    make -j"$(nproc)"
+  ./configure
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR="${pkgdir}"
+  sudo make install DESTDIR="${pkgdir}"
 }

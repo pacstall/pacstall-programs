@@ -12,7 +12,7 @@ pkgver() {
 version="$(pkgver)"
 
 install() {
-  export PYTHONPATH="$(pwd)/src"
+  export PYTHONPATH="${PWD}/src"
   python3 -m grapejuice_packaging linux_package || python -m grapejuice_packaging linux_package
   cd dist/linux_package
   sudo mkdir -p "${pkgdir}"
