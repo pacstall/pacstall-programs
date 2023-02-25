@@ -12,7 +12,7 @@ breaks="gts"
 repology=("project: gts-scanning-tool")
 
 prepare() {
-  sudo mkdir -p "${pkdir}/usr/bin"
+  sudo mkdir -p "${pkgdir}/usr/bin"
   sudo wget https://raw.githubusercontent.com/pacstall/pacstall-programs/d09a60781f350e8c3dc01202f09a9cfaa5cd84ca/packages/opentoonz-gts/sane-config -P "${pkgdir}/usr/bin"
   sudo chmod +x "${pkgdir}/usr/bin/sane-config"
   git apply "./PACSTALL_patchesdir/149.diff"
