@@ -1,9 +1,9 @@
 name="postman-bin"
-version="10.9.4"
+version="10.10.3"
 description="Build, test, and document your APIs faster"
 repology=("project: postman" "visiblename: postman-bin")
 url="https://dl.pstmn.io/download/version/${version}/linux64"
-hash="f4e89c4ab48c84801f3f9eb33743a462d67a9b0239af163ffae23a3ae1b309bb"
+hash="33360662fae7a6e2b9a8f84c94f3f8305df37f5255bf88c45e6e690a6b813436"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="postman"
 breaks="postman postman-deb postman-app"
@@ -27,7 +27,7 @@ install() {
     sudo install -d "${STOWDIR}/${name}/opt/postman/" "${STOWDIR}/${name}/usr/bin"
     sudo install -d "${STOWDIR}/${name}/usr/share/icons/hicolor/128x128/apps"
 
-    sudo cp -r ${SRCDIR}/Postman/app/* "${STOWDIR}/${name}/opt/postman/"
+    sudo cp -r "${SRCDIR}/Postman/app/"* "${STOWDIR}/${name}/opt/postman/"
     sudo chmod +x "${STOWDIR}/${name}/opt/postman/postman"
 }
 
