@@ -10,6 +10,10 @@ description="The world's most popular non-default computer lockscreen."
 hash="5df4cd3d515d938630ced981a7f0a6e01344d1ec51d10fd3c3d131d19283df69"
 maintainer="Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>"
 
+build() {
+        ./build.sh
+}
+
 install() {
   cd build
   sudo make install DESTDIR="${pkgdir}"
