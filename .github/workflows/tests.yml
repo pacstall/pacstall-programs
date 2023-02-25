@@ -82,8 +82,9 @@ jobs:
               package_dir=`dirname "${changed_file}"`
               echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -I ${package_name}"
-              cd ${package_dir}
+              pushd ${package_dir}
               pacstall --disable-prompts -I ${pacscript_file}
+              popd
             fi
           done
         shell: sudo -E -u dio bash {0}
@@ -101,8 +102,9 @@ jobs:
               package_name="${pacscript_file/.pacscript/ }"
               package_dir=`dirname "${changed_file}"`
               echo "Running pacstall -R for ${package_name}..."
-              cd ${package_dir}
+              pushd ${package_dir}
               pacstall --disable-prompts -R ${package_name}
+              popd
             fi
           done
         shell: sudo -E -u dio bash {0}
@@ -180,8 +182,9 @@ jobs:
               package_dir=`dirname "${changed_file}"`
               echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -Il ${package_name}"
-              cd ${package_dir}
+              pushd ${package_dir}
               pacstall --disable-prompts -I ${pacscript_file}
+              popd
             fi
           done
         shell: sudo -E -u dio bash {0}
@@ -199,8 +202,9 @@ jobs:
               package_name="${pacscript_file/.pacscript/ }"
               package_dir=`dirname "${changed_file}"`
               echo "Running pacstall -R for ${package_name}..."
-              cd ${package_dir}
+              pushd ${package_dir}
               pacstall --disable-prompts -R ${package_name}
+              popd
             fi
           done
         shell: sudo -E -u dio bash {0}
