@@ -19,7 +19,7 @@ install() {
     # .desktop
     sudo install -Dm755 anydesk.desktop -t "${pkgdir}/usr/share/applications"
     # Systemd
-    sudo mkdir -p "${pkdir}/usr/share/anydesk/files/systemd"
+    sudo mkdir -p "${pkgdir}/usr/share/anydesk/files/systemd"
     sudo mv "./systemd/anydesk.service" "${pkgdir}/usr/share/anydesk/files/systemd"
     # Init
     sudo mkdir -p "${pkgdir}/usr/share/anydesk/files/init"

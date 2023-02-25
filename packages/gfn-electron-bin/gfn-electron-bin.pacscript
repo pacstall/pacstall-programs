@@ -19,7 +19,7 @@ install() {
   sudo install -Dm644 ${SRCDIR}/com.github.hmlendea.${pkgname}.desktop -t "${pkgdir}/usr/share/applications"
 
   # Install the rest of the app
-  sudo install -d "${pkdir}/opt/${pkgname}/" "${pkdir}/usr/bin"
+  sudo install -d "${pkgdir}/opt/${pkgname}/" "${pkgdir}/usr/bin"
 
   sudo cp -r ${SRCDIR}/* ${pkgdir}/opt/${pkgname}/
   sudo chmod +x "${pkgdir}/opt/${pkgname}/geforcenow-electron"

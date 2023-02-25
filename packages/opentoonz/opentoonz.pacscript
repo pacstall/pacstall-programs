@@ -40,20 +40,19 @@ install() {
   cd "toonz/build" || return
   sudo mkdir -p "/usr/src/pacstall/opentoonz/usr/share/pixmaps/"
   sudo mkdir -p "/usr/src/pacstall/opentoonz/usr/share/applications/"
-  sudo make install DESTDIR="${STOWDIR}/${name}"
+  sudo make install DESTDIR="${pkgdir}"
   cd "../../" || return
-  sudo install -Dm644 LICENSE.txt "${STOWDIR}/${name}/usr/share/licenses/${name}/LICENSE.txt"
-  sudo chmod +x "${STOWDIR}/${name}/opt/${name}/bin/opentoonz"
+  sudo install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${name}/LICENSE.txt"
+  sudo chmod +x "${pkgdir}/opt/${name}/bin/opentoonz"
 
-  sudo install -Dm755 "toonz/sources/xdg-data/io.github.OpenToonz.desktop" "${STOWDIR}/${name}/usr/share/applications/"
-  sudo install -Dm644 "toonz/sources/xdg-data/io.github.OpenToonz.png" "${STOWDIR}/${name}/usr/share/pixmaps/"
+  sudo install -Dm755 "toonz/sources/xdg-data/io.github.OpenToonz.desktop" "${pkgdir}/usr/share/applications/"
+  sudo install -Dm644 "toonz/sources/xdg-data/io.github.OpenToonz.png" "${pkgdir}/usr/share/pixmaps/"
 
   printf '#!/bin/sh\nsh /opt/opentoonz/bin/opentoonz' | sudo tee /usr/bin/opentoonz > /dev/null
   sudo chmod +x "/usr/bin/opentoonz"
 }
 
 removescript() {
-
   ask "Do you want to remove your opentoonz config?" N
   if [[ ${answer} -eq 1 ]]; then
     rm -rf "/home/${LOGNAME}/.config/OpenToonz/"

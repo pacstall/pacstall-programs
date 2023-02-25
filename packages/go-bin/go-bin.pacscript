@@ -16,8 +16,8 @@ __shell_rcs=("${homedir}/.bashrc" "${homedir}/.zshrc" "${homedir}/.profile")
 
 install() {
   # Install binary
-  sudo install -Dm755 "bin/go" "${STOWDIR}/${name}/usr/bin/go"
-  sudo install -Dm755 "bin/gofmt" "${STOWDIR}/${name}/usr/bin/gofmt"
+  sudo install -Dm755 "bin/go" "${pkgdir}/usr/bin/go"
+  sudo install -Dm755 "bin/gofmt" "${pkgdir}/usr/bin/gofmt"
 
   sudo mkdir -p "${__goroot}"
   sudo cp -r "." "${__goroot}"

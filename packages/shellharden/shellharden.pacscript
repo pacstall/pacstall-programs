@@ -3,7 +3,6 @@ pkgname="shellharden"
 version="4.3.0"
 repology=("project: ${pkgname}")
 url="https://github.com/anordal/shellharden/archive/refs/tags/v${version}.zip"
-pkgdir="${STOWDIR}/${name}"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 gives="${pkgname}"
 build_depends="rustc cargo"

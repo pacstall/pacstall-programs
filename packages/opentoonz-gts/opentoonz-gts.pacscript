@@ -12,9 +12,9 @@ breaks="gts"
 repology=("project: gts-scanning-tool")
 
 prepare() {
-  sudo mkdir -p "$STOWDIR/$name/usr/bin"
-  sudo wget https://raw.githubusercontent.com/pacstall/pacstall-programs/d09a60781f350e8c3dc01202f09a9cfaa5cd84ca/packages/opentoonz-gts/sane-config -P "$STOWDIR/$name/usr/bin"
-  sudo chmod +x "$STOWDIR/$name/usr/bin/sane-config"
+  sudo mkdir -p "${pkdir}/usr/bin"
+  sudo wget https://raw.githubusercontent.com/pacstall/pacstall-programs/d09a60781f350e8c3dc01202f09a9cfaa5cd84ca/packages/opentoonz-gts/sane-config -P "${pkgdir}/usr/bin"
+  sudo chmod +x "${pkgdir}/usr/bin/sane-config"
   git apply "./PACSTALL_patchesdir/149.diff"
 }
 
@@ -25,9 +25,9 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR="$STOWDIR/$name"
+  sudo make install DESTDIR="${pkgdir}"
   mkdir -p "/home/$LOGNAME/.GTS"
-  cp "$STOWDIR/$name/usr/local/share/GTS/gts_initial_configuration.txt" "/home/$LOGNAME/.GTS"
+  cp "${pkgdir}/usr/local/share/GTS/gts_initial_configuration.txt" "/home/$LOGNAME/.GTS"
 }
 
 removescript() {

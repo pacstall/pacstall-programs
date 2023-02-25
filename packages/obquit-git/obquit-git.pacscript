@@ -1,6 +1,5 @@
 name="obquit-git"
 pkgname="obquit"
-pkgdir="/usr/src/pacstall/${name}"
 description="Utility script for logging out of a session, inspired by Oblogout"
 url="https://github.com/dglava/${pkgname}.git"
 depends="python3-distutils python3-cairo python-gi-dev"

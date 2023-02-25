@@ -73,7 +73,6 @@ NOGZ="YES"        # Don't compress .el files.
 
 name="emacs-git"
 pkgname="emacs"
-pkgdir="/usr/src/pacstall/${name}"
 description="An extensible, customizable, free/libre text editor — and more."
 build_depends="git autoconf texinfo pkg-config libncurses-dev"
 depends_nox="libalsaplayer0 libgnutls28-dev libxml2 libjansson-dev gpm"

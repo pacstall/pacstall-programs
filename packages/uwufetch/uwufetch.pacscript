@@ -8,7 +8,6 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="uwufetch"
 version="1.7"
-pkgdir="/usr/src/pacstall/${name}"
 url="https://github.com/TheDarkBug/${name}/archive/refs/tags/${version}.zip"
 description="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
 build_depends="gcc"

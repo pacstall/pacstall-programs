@@ -1,6 +1,5 @@
 name="youtube-dl-git"
 pkgname="youtube-dl"
-pkgdir="/usr/src/pacstall/${name}"
 url="https://github.com/ytdl-org/youtube-dl.git"
 description="Command-line program to download videos from YouTube.com and other video sites"
 build_depends="make pandoc python3"
