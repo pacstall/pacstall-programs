@@ -12,5 +12,5 @@ depends="gtk-update-icon-cache"
 build_depends="make"
 
 install() {
-    sudo make DESTDIR="${pkgdir}" install
+  sudo make DESTDIR="${pkgdir}" install
 }

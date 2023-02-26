@@ -11,6 +11,6 @@ maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 repology=("project: ${gives}")
 
 prepare() {
-    sudo dpkg --add-architecture i386
-    sudo apt-get update
+  sudo dpkg --add-architecture i386
+  sudo apt-get update
 }

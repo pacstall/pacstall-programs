@@ -22,25 +22,25 @@ optdepends="ffmpeg: additional import/export capabilities"
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-    git ls-remote "${url}" main | cut -f1 | cut -c1-8 | head -n1
+  git ls-remote "${url}" main | cut -f1 | cut -c1-8 | head -n1
 }
 version="$(pkgver)"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "debian:stretch" "debian:buster" "debian:bullseye")
 
 prepare() {
-    sudo pip3 install conan
+  sudo pip3 install conan
 }
 
 build() {
-    mkdir build
-    cd build || exit
-    cmake -G "Unix Makefiles" \
-      -DCMAKE_BUILD_TYPE=Release \
-      -DFFMPEG=ON ..
-    sudo make -j"$(nproc)"
+  mkdir build
+  cd build || exit
+  cmake -G "Unix Makefiles" \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DFFMPEG=ON ..
+  sudo make -j"$(nproc)"
 }
 
 install() {
-    cd build || exit
-    sudo make install DESTDIR="${pkgdir}"
+  cd build || exit
+  sudo make install DESTDIR="${pkgdir}"
 }

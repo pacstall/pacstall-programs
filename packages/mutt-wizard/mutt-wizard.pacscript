@@ -4,7 +4,7 @@ maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 
 name="mutt-wizard"
 version="3.3.1"
-url="https://github.com/lukesmithxyz/$name/archive/v$version.tar.gz"
+url="https://github.com/lukesmithxyz/${name}/archive/v${version}.tar.gz"
 repology=("project: mutt-wizard")
 depends="neomutt isync msmtp notmuch pass curl"
 breaks="mutt-wizard mutt-wizard-git"
@@ -15,23 +15,23 @@ hash="4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53"
 # they have been marked with "No Pkg" in the optdepends.
 
 optdepends=('imagemagick: view images inside of the neomutt TUI'
-    'w3m: view HTML email and images inside of the neomutt TUI'
-    'lynx: view HTML email inside of the neomutt TUI'
-    'links: view HTML email inside of the neomutt TUI'
-    'elinks: view HTML email inside of the neomutt TUI'
-    'urlview: list URLs found in mails to open them in a browser'
-    'abook: contact store and tab completion'
-    # No Pkg    'protonmail-bridge: use neomutt with protonmail accounts'
-    # No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
-    'cron: set up automatic mail syncing')
+  'w3m: view HTML email and images inside of the neomutt TUI'
+  'lynx: view HTML email inside of the neomutt TUI'
+  'links: view HTML email inside of the neomutt TUI'
+  'elinks: view HTML email inside of the neomutt TUI'
+  'urlview: list URLs found in mails to open them in a browser'
+  'abook: contact store and tab completion'
+  # No Pkg    'protonmail-bridge: use neomutt with protonmail accounts'
+  # No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
+  'cron: set up automatic mail syncing')
 
 install() {
-    sudo make DESTDIR="$pkgdir" install
-    sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/$name"
-    sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/$name"
+  sudo make DESTDIR="${pkgdir}" install
+  sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${name}"
+  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
 }
 
 removescript() {
-    sudo rm -rf "/usr/share/licenses/$name"
-    sudo rm -rf "/usr/share/doc/$name"
+  sudo rm -rf "/usr/share/licenses/${name}"
+  sudo rm -rf "/usr/share/doc/${name}"
 }

@@ -10,18 +10,18 @@ optdepends=("apparmor: support for apparmor profiles")
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 pkgver() {
-    git ls-remote "${url}" develop | cut -f1 | cut -c1-8
+  git ls-remote "${url}" develop | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 prepare() {
-    sudo pip3 install distro
+  sudo pip3 install distro
 }
 
 build() {
-    python3 setup.py build
+  python3 setup.py build
 }
 
 install() {
-    sudo python3 setup.py install --root="${pkgdir}" --optimize=1
+  sudo python3 setup.py install --root="${pkgdir}" --optimize=1
 }

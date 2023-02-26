@@ -24,7 +24,7 @@ install() {
     actual_icon_hash="$(sha256sum "${pkgname}.png" | grep -o "[a-z0-9]*" | head -1)"
 
     # Check hash
-    if [ "${__icon_hash}" != "${actual_icon_hash}" ]; then
+    if [[ ${__icon_hash} != "${actual_icon_hash}" ]]; then
       echo "Error! Tutanota icon hash mismatch"
       return 1
     fi
@@ -40,7 +40,7 @@ install() {
 
 postinst() {
   # Return early if nothing else to do
-  if [ "${__created_desktop_file}" = "yes" ]; then
+  if [[ ${__created_desktop_file} == "yes" ]]; then
     return 0
   fi
 

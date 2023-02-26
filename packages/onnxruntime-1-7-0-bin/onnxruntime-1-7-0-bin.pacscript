@@ -9,7 +9,7 @@ maintainer="Zahrun <Zahrun@github.com>"
 install() {
   sudo install -Dm755 "lib/lib${pkgname}.so.${version}" -t "${pkgdir}/usr/local/lib"
   sudo install -Dm644 include/* -t "${pkgdir}/usr/local/include"
-  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/$name"
+  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
 }
 
 postinst() {

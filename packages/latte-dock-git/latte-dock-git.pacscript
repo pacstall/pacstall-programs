@@ -29,7 +29,7 @@ build() {
   # Build rquired files
   mkdir build && cd build
   cmake -DCMAKE_INSTALL_PREFIX=/usr \
-         -DCMAKE_BUILD_TYPE=Master ..
+    -DCMAKE_BUILD_TYPE=Master ..
 }
 
 install() {

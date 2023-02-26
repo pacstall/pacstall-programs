@@ -12,9 +12,9 @@ pkgver() {
 version="$(pkgver)"
 
 build() {
-  cargo build -j$(nproc) --release --locked
+  cargo build -j"$(nproc)" --release --locked
 }
 
 install() {
-  sudo install -Dm755 target/release/tre -t "${pkgdir}"/usr/bin
+  sudo install -Dm755 target/release/tre -t "${pkgdir}/usr/bin"
 }

@@ -7,7 +7,7 @@ breaks="${pkgname}"
 maintainer="Lanius <laniusone@pm.me>"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
@@ -21,5 +21,5 @@ build() {
 
 install() {
   # Install i3blocks
-  sudo make install DESTDIR="$pkgdir"
+  sudo make install DESTDIR="${pkgdir}"
 }

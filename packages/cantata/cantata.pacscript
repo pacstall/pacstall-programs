@@ -9,17 +9,17 @@ repology=("project: ${pkgname}")
 hash="eb7e00ab3f567afaa02ea2c86e2fe811a475afab93182b95922c6eb126821724"
 
 prepare() {
-    mkdir build
-    cd build
+  mkdir build
+  cd build
 }
 
 build() {
-    cmake -DCMAKE_BUILD_TYPE=Release ..
-    make -j"$(nproc)"
+  cmake -DCMAKE_BUILD_TYPE=Release ..
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR="${pkgdir}"
+  sudo make install DESTDIR="${pkgdir}"
 }
 
 # vim:set ft=sh ts=4 sw=4 et:

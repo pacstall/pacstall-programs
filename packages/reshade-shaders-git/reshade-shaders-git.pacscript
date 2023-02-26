@@ -20,7 +20,7 @@ version="$(pkgver)"
 
 install() {
   sudo install -dm 755 "${pkgdir}/opt/reshade/shaders"
-  sudo install -Dm 644 Shaders/*.*  "${pkgdir}/opt/reshade/shaders/"
+  sudo install -Dm 644 Shaders/*.* "${pkgdir}/opt/reshade/shaders/"
   sudo install -dm 755 "${pkgdir}/opt/reshade/textures"
   sudo install -Dm 644 Textures/*.* "${pkgdir}/opt/reshade/textures/"
 }

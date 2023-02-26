@@ -36,7 +36,7 @@ install() {
 
   # Install config file
   sudo mkdir -p "${pkgdir}/etc"
-  echo "permit persist $LOGNAME as root" | sudo tee "${pkgdir}/etc/doas.conf" > /dev/null
+  echo "permit persist ${LOGNAME} as root" | sudo tee "${pkgdir}/etc/doas.conf" > /dev/null
 }
 
 removescript() {
