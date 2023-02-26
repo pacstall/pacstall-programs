@@ -16,12 +16,12 @@ install() {
   sudo install -Dm644 icon.png "${pkgdir}/usr/share/pixmaps/nvidia.png"
 
   # Install desktop file
-  sudo install -Dm644 ${SRCDIR}/com.github.hmlendea.${pkgname}.desktop -t "${pkgdir}/usr/share/applications"
+  sudo install -Dm644 "${SRCDIR}/com.github.hmlendea.${pkgname}.desktop" -t "${pkgdir}/usr/share/applications"
 
   # Install the rest of the app
   sudo install -d "${pkgdir}/opt/${pkgname}/" "${pkgdir}/usr/bin"
 
-  sudo cp -r ${SRCDIR}/* ${pkgdir}/opt/${pkgname}/
+  sudo cp -r "${SRCDIR}"/* "${pkgdir}"/opt/"${pkgname}"/
   sudo chmod +x "${pkgdir}/opt/${pkgname}/geforcenow-electron"
 }
 

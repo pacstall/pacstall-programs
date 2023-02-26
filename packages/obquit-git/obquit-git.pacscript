@@ -6,7 +6,7 @@ depends="python3-distutils python3-cairo python-gi-dev"
 breaks="${pkgname} ${pkgname}-bin"
 maintainer="Lanius <laniusone@pm.me>"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 

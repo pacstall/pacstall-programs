@@ -12,11 +12,11 @@ license="OFL-1.1"
 maintainer="heyzsh <haidarzsh@gmail.com>"
 
 prepare() {
-    unzip * -d .
+  unzip ./* -d .
 }
 
 install() {
-    sudo install -d "${pkgdir}"/usr/share/fonts/TTF
-    sudo install -Dm644 "${SRCDIR}"/*.ttf "${pkgdir}"/usr/share/fonts/TTF
-    sudo install -Dm644 "${SRCDIR}"/OFL.txt "${pkgdir}"/usr/share/licenses/"${pkgname}"/LICENSE
+  sudo install -d "${pkgdir}"/usr/share/fonts/TTF
+  sudo install -Dm644 "${SRCDIR}"/*.ttf "${pkgdir}"/usr/share/fonts/TTF
+  sudo install -Dm644 "${SRCDIR}"/OFL.txt "${pkgdir}"/usr/share/licenses/"${pkgname}"/LICENSE
 }

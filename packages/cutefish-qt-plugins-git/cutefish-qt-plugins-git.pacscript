@@ -8,20 +8,20 @@ depends="libkf5windowsystem-dev libdbusmenu-qt5-dev libqt5xdg-dev qtquickcontrol
 description="Unify Qt application style of CutefishOS"
 
 pkgver() {
-    git ls-remote "${url}" main | cut -f1 | cut -c1-8
+  git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 prepare() {
-    mkdir build
-    cd build
+  mkdir build
+  cd build
 }
 
 build() {
-    cmake ..
-    make -j$(nproc)
+  cmake ..
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR="${pkgdir}"
+  sudo make install DESTDIR="${pkgdir}"
 }

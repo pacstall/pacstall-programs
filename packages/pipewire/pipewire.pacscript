@@ -8,15 +8,15 @@ hash="f5fbe0028b56a9e9cc6c9fbb4e3e73d108bb818895f6fed3cd62d1a1b6fc4c30"
 incompatible=('debian:stable')
 
 prepare() {
-    meson setup builddir
+  meson setup builddir
 }
 
 build() {
-    meson configure builddir -Dprefix=/usr
-    ninja -C builddir
+  meson configure builddir -Dprefix=/usr
+  ninja -C builddir
 }
 
 install() {
-    cd builddir/
-    sudo DESTDIR="${pkgdir}" meson install
+  cd builddir/
+  sudo DESTDIR="${pkgdir}" meson install
 }

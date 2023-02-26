@@ -16,7 +16,7 @@ hash="441edcc9efe356d1906387fa5655fb54d7eb089702a329caf6b45c9226233049"
 repology=("project: oil-shell")
 
 # Edit MAKEFLAGS here
-MAKEFLAGS=
+MAKEFLAGS=()
 
 prepare() {
   mkdir -p tmp
@@ -27,7 +27,7 @@ build() {
 
   # We want this to expand
   # shellcheck disable=SC2248
-  make -j"$(nproc)" ${MAKEFLAGS}
+  make -j"$(nproc)" "${MAKEFLAGS[@]}"
 }
 
 install() {

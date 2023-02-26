@@ -13,7 +13,7 @@ prepare() {
 }
 
 install() {
-  sudo install -Dm644 minecraft-pi-reborn-client-${version}-amd64.AppImage "${pkgdir}/usr/bin/minecraft-pi-reborn-client"
+  sudo install -Dm644 "minecraft-pi-reborn-client-${version}-amd64.AppImage" "${pkgdir}/usr/bin/minecraft-pi-reborn-client"
   sudo chmod +x "${pkgdir}/usr/bin/minecraft-pi-reborn-client"
   sudo wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/minecraft-pi-reborn-app/com.thebrokenrail.MCPIRebornClient.desktop" -O "${pkgdir}/usr/share/applications/com.thebrokenrail.MCPIRebornClient.desktop"
   sudo wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/minecraft-pi-reborn-app/com.thebrokenrail.MCPIRebornClient.appdata.xml" -O "${pkgdir}/usr/share/metainfo/com.thebrokenrail.MCPIRebornClient.appdata.xml"

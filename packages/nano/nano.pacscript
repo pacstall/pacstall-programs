@@ -9,13 +9,13 @@ hash="86f3442768bd2873cec693f83cdf80b4b444ad3cc14760b74361474fc87a4526"
 repology=("project: nano")
 
 prepare() {
-    ./configure
+  ./configure
 }
 
 build() {
-    make -j"$(nproc)"
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR="${pkgdir}"
+  sudo make install DESTDIR="${pkgdir}"
 }

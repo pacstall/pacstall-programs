@@ -1,6 +1,6 @@
 name="opentoonz-gts"
 version="2.5.1"
-url="https://github.com/opentoonz/GTS/archive/refs/tags/v$version.tar.gz"
+url="https://github.com/opentoonz/GTS/archive/refs/tags/v${version}.tar.gz"
 build_depends="libtiff5-dev libfltk1.3-dev libglew-dev libsane-dev libglu1-mesa-dev"
 depends="autoconf libtool autoconf-archive"
 description="GTS is a trace scanning tool developed by Studio Ghibli"
@@ -21,18 +21,18 @@ prepare() {
 build() {
   ./autogen.sh
   ./configure
-  make -j$(nproc)
+  make -j"$(nproc)"
 }
 
 install() {
   sudo make install DESTDIR="${pkgdir}"
-  mkdir -p "/home/$LOGNAME/.GTS"
-  cp "${pkgdir}/usr/local/share/GTS/gts_initial_configuration.txt" "/home/$LOGNAME/.GTS"
+  mkdir -p "/home/${LOGNAME}/.GTS"
+  cp "${pkgdir}/usr/local/share/GTS/gts_initial_configuration.txt" "/home/${LOGNAME}/.GTS"
 }
 
 removescript() {
   ask "Do you want to remove your GTS configuration?" N
-  if [[ $answer -eq 1 ]]; then
-    sudo rm -rf "/home/$LOGNAME/.GTS"
+  if [[ ${answer} -eq 1 ]]; then
+    sudo rm -rf "/home/${LOGNAME}/.GTS"
   fi
 }

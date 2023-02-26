@@ -9,13 +9,13 @@ prepare() {
   sudo mkdir -p "${pkgdir}/usr/lib/x86_64-linux-gnu/gstreamer-1.0"
   sudo mkdir -p "${pkgdir}/usr/local/bin"
   sudo mkdir -p "${pkgdir}/usr/lib"
-  sudo mkdir -p "${pkgdir}/home/$USER/.config"
+  sudo mkdir -p "${pkgdir}/home/${USER}/.config"
 }
 
 build() {
   cd gst-plugin-viperfx
-  cmake -j$(nproc) .
-  make -j$(nproc)
+  cmake -j"$(nproc)" .
+  make -j"$(nproc)"
 }
 
 install() {
@@ -27,7 +27,7 @@ install() {
   sudo cp "viperfx_core_binary/libviperfx_x64_linux.so" "${pkgdir}/usr/lib/libviperfx.so"
 
   cd Viper4Linux
-  sudo cp -r viper4linux "${pkgdir}/home/$USER/.config/"
+  sudo cp -r viper4linux "${pkgdir}/home/${USER}/.config/"
 
   sudo install -Dm755 viper -t "${pkgdir}/usr/bin"
 }

@@ -7,14 +7,14 @@ description="Rhino Linux Setup Prompt"
 maintainer="Sourajyoti Basak <wiz28@protonmail.com>, Oren Klopfer <oren@taumoda.com>"
 incompatible=("debian:*")
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 build() {
-    sudo meson build
+  sudo meson build
 }
 
 install() {
-    sudo DESTDIR="${pkgdir}" ninja -C build install
+  sudo DESTDIR="${pkgdir}" ninja -C build install
 }

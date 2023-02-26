@@ -6,10 +6,10 @@ replace="neofetch"
 description="neofetch branded for Rhino Linux"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 install() {
-    sudo DESTDIR="${pkgdir}" make install
+  sudo DESTDIR="${pkgdir}" make install
 }

@@ -18,15 +18,15 @@ optdepends=("libxcb-xkb-dev: xkeyboard"
 repology=("project: polybar")
 
 prepare() {
-    mkdir build
-    cd build
+  mkdir build
+  cd build
 }
 
 build() {
-    cmake ..
-    make -j$(nproc)
+  cmake ..
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR="${pkgdir}"
+  sudo make install DESTDIR="${pkgdir}"
 }

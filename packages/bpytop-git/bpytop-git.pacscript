@@ -1,6 +1,6 @@
 name="bpytop-git"
 pkgname="bpytop"
-url="https://github.com/aristocratos/$pkgname.git"
+url="https://github.com/aristocratos/${pkgname}.git"
 build_depends="make"
 depends="python3 python3-pip python3-distutils"
 description="Linux/OSX/FreeBSD resource monitor."
@@ -17,11 +17,11 @@ prepare() {
 
 install() {
   sudo make install DESTDIR="${pkgdir}"
-  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/$pkgname"
-  sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/$pkgname"
+  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${pkgname}"
 }
 
 removescript() {
-  sudo rm -rf /usr/share/licenses/$pkgname
-  sudo rm -rf /usr/share/doc/$pkgname
+  sudo rm -rf "/usr/share/licenses/${pkgname}"
+  sudo rm -rf "/usr/share/doc/${pkgname}"
 }

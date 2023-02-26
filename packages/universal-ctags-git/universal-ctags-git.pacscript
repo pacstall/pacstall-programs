@@ -6,34 +6,34 @@ build_depends="gcc make pkg-config autoconf automake python3-docutils libseccomp
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
 
 pkgver() {
-    # find latest tag name
-    git ls-remote --sort='version:refname' --tags ${url} | tail --line=1 | cut --delimiter='/' --fields=3
+  # find latest tag name
+  git ls-remote --sort='version:refname' --tags "${url}" | tail --line=1 | cut --delimiter='/' --fields=3
 }
 
 version="$(pkgver)"
 
 prepare() {
-    git fetch --all --tags --prune
-    git checkout tags/$version -b $version
-    ./autogen.sh
+  git fetch --all --tags --prune
+  git checkout "tags/${version}" -b "${version}"
+  ./autogen.sh
 }
 
 build() {
-    ./configure --prefix="${pkgdir}/usr" --program-transform-name='s/ctags/ctags-universal/'
-    make -j$(nproc)
+  ./configure --prefix="${pkgdir}/usr" --program-transform-name='s/ctags/ctags-universal/'
+  make -j"$(nproc)"
 
 }
 
 install() {
-    sudo make install
+  sudo make install
 }
 
 postinst() {
-    sudo update-alternatives \
-            --install /usr/bin/ctags ctags /usr/bin/ctags-universal 30 \
-            --slave /usr/share/man/man1/ctags.1 ctags.1.gz /usr/share/man/man1/ctags-universal.1
+  sudo update-alternatives \
+    --install /usr/bin/ctags ctags /usr/bin/ctags-universal 30 \
+    --slave /usr/share/man/man1/ctags.1 ctags.1.gz /usr/share/man/man1/ctags-universal.1
 }
 
 removescript() {
-    sudo update-alternatives --remove ctags /usr/bin/ctags-universal
+  sudo update-alternatives --remove ctags /usr/bin/ctags-universal
 }

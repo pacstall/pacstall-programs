@@ -6,87 +6,88 @@ breaks="wine wine64 wine32:i386 libwine libwine:i386 wine-staging-i386:i386"
 replace="wine wine64 wine32:i386 libwine libwine:i386 wine-staging-i386:i386"
 description="Wine is a program which allows running Microsoft Windows programs (including DOS, Windows 3.x, Win32, and Win64 executables) on Unix. It consists of a program loader which loads and executes a Microsoft Windows binary, and a library (called Winelib) that implements Windows API calls using their Unix, X11 or Mac equivalents.  The library may also be used for porting Windows code into native Unix executables."
 optdepends=("libcapi20-dev: for ISDN software"
-        "liblcms2-dev: color management"
-        "libcups2-dev: printing support"
-        "libgphoto2-dev: still image support"
-        "libsane-dev: scanning support"
-        "libgsm1-dev: GSM audio codec"
-        "libkrb5-dev: kerberos authentication support"
-        "libldap2-dev: LDAP support"
-        "samba-dev: SMB support"
-        "ocl-icd-opencl-dev: opencl support"
-        "libpcap-dev: packet capture support"
-        "libusb-1.0-0-dev: USB support"
-        "libv4l-dev: video capture support"
-        "libcapi20-dev:i386: for 32 bit ISDN software"
-        "liblcms2-dev:i386: 32-bit color management"
-        "libcups2-dev:i386: 32-bit printing support"
-        "libgphoto2-dev:i386: 32-bit still image support"
-        "libsane-dev:i386: 32-bit scanning support"
-        "libgsm1-dev:i386: 32-bit GSM audio codec"
-        "libkrb5-dev:i386: 32-bit kerberos authentication support"
-        "libldap2-dev:i386: 32-bit LDAP support"
-        "samba-dev:i386: 32-bit SMB support"
-        "ocl-icd-opencl-dev:i386: 32-bit opencl support"
-        "libpcap-dev:i386: 32-bit packet capture support"
-        "libusb-1.0-0-dev:i386: 32-bit USB support"
-        "libv4l-dev:i386: 32-bit video capture support")
+  "liblcms2-dev: color management"
+  "libcups2-dev: printing support"
+  "libgphoto2-dev: still image support"
+  "libsane-dev: scanning support"
+  "libgsm1-dev: GSM audio codec"
+  "libkrb5-dev: kerberos authentication support"
+  "libldap2-dev: LDAP support"
+  "samba-dev: SMB support"
+  "ocl-icd-opencl-dev: opencl support"
+  "libpcap-dev: packet capture support"
+  "libusb-1.0-0-dev: USB support"
+  "libv4l-dev: video capture support"
+  "libcapi20-dev:i386: for 32 bit ISDN software"
+  "liblcms2-dev:i386: 32-bit color management"
+  "libcups2-dev:i386: 32-bit printing support"
+  "libgphoto2-dev:i386: 32-bit still image support"
+  "libsane-dev:i386: 32-bit scanning support"
+  "libgsm1-dev:i386: 32-bit GSM audio codec"
+  "libkrb5-dev:i386: 32-bit kerberos authentication support"
+  "libldap2-dev:i386: 32-bit LDAP support"
+  "samba-dev:i386: 32-bit SMB support"
+  "ocl-icd-opencl-dev:i386: 32-bit opencl support"
+  "libpcap-dev:i386: 32-bit packet capture support"
+  "libusb-1.0-0-dev:i386: 32-bit USB support"
+  "libv4l-dev:i386: 32-bit video capture support")
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 prepare() {
-        export CFLAGS="${CFLAGS:-/-fno-plt/}"
-        export LDFLAGS="${LDFLAGS:-/,-z,now/}"
-        export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/i386-linux-gnu/pkgconfig:/usr/lib32/pkgconfig"
-        mkdir "wine64-build"
-        mkdir "wine32-build"
+  export CFLAGS="${CFLAGS:-/-fno-plt/}"
+  export LDFLAGS="${LDFLAGS:-/,-z,now/}"
+  export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/i386-linux-gnu/pkgconfig:/usr/lib32/pkgconfig"
+  mkdir "wine64-build"
+  mkdir "wine32-build"
 }
 
 build() {
-        cd "wine64-build"
-        ../configure \
-        --prefix='/usr' \
-        --libdir='/usr/lib' \
-        --with-x \
-        --with-gstreamer \
-        --enable-win64
-        make -j$(nproc)
+  cd "wine64-build"
+  ../configure \
+    --prefix='/usr' \
+    --libdir='/usr/lib' \
+    --with-x \
+    --with-gstreamer \
+    --enable-win64
+  make -j"$(nproc)"
 
-        cd "../wine32-build"
-        ../configure \
-        --prefix='/usr' \
-        --libdir='/usr/lib32' \
-        --with-x \
-        --with-gstreamer \
-        --with-wine64="../wine64-build"
-        make -j$(nproc)
-        cd ..
+  cd "../wine32-build"
+  ../configure \
+    --prefix='/usr' \
+    --libdir='/usr/lib32' \
+    --with-x \
+    --with-gstreamer \
+    --with-wine64="../wine64-build"
+  make -j"$(nproc)"
+  # shellcheck disable=SC2103
+  cd ..
 }
 
 install() {
-        cd "wine32-build"
-        mkdir -p "${pkgdir}/usr/lib32/wine"
-        make prefix="${pkgdir}/usr" \
-         libdir="${pkgdir}/usr/lib32" \
-         dlldir="${pkgdir}/usr/lib32/wine" \
-         install
-        cd "../wine64-build"
-        mkdir -p "${pkgdir}/usr/lib/wine"
-        make prefix="${pkgdir}/usr" \
-         libdir="${pkgdir}/usr/lib" \
-         dlldir="${pkgdir}/usr/lib/wine" \
-         install
+  cd "wine32-build"
+  mkdir -p "${pkgdir}/usr/lib32/wine"
+  make prefix="${pkgdir}/usr" \
+    libdir="${pkgdir}/usr/lib32" \
+    dlldir="${pkgdir}/usr/lib32/wine" \
+    install
+  cd "../wine64-build"
+  mkdir -p "${pkgdir}/usr/lib/wine"
+  make prefix="${pkgdir}/usr" \
+    libdir="${pkgdir}/usr/lib" \
+    dlldir="${pkgdir}/usr/lib/wine" \
+    install
 
-        install -d -m755 "${pkgdir}/usr/share/fontconfig/conf.default"
-        install -D -m644 "$SRCDIR/$name/30-win32-aliases.conf" -t "${pkgdir}/usr/share/fontconfig/conf.avail"
-        ln -s "../conf.avail/30-win32-aliases.conf" "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
+  install -d -m755 "${pkgdir}/usr/share/fontconfig/conf.default"
+  install -D -m644 "${SRCDIR}/${name}/30-win32-aliases.conf" -t "${pkgdir}/usr/share/fontconfig/conf.avail"
+  ln -s "../conf.avail/30-win32-aliases.conf" "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
 
-        install -D -m644 "$SRCDIR/$name/wine-binfmt.conf" "${pkgdir}/usr/lib/binfmt.d/wine.conf"
+  install -D -m644 "${SRCDIR}/${name}/wine-binfmt.conf" "${pkgdir}/usr/lib/binfmt.d/wine.conf"
 
-        i686-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib32/wine/i386-windows"/*.dll
-        x86_64-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib/wine/x86_64-windows"/*.dll
+  i686-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib32/wine/i386-windows"/*.dll
+  x86_64-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib/wine/x86_64-windows"/*.dll
 }

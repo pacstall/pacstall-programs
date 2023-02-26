@@ -10,23 +10,23 @@ incompatible=('debian:*')
 repology=("project: soundux")
 
 build() {
-    mkdir -p build
-    cd build || exit 1
-    cmake ..
-    cmake --build . --config Release -j"$(nproc)"
+  mkdir -p build
+  cd build || exit 1
+  cmake ..
+  cmake --build . --config Release -j"$(nproc)"
 }
 
 install() {
-    cd build/
-    sudo make install DESTDIR="${pkgdir}"
+  cd build/
+  sudo make install DESTDIR="${pkgdir}"
 
-    # install doc
-    sudo install -Dm 644 -t "${pkgdir}/usr/share/doc/${name}" "../README.md"
-    # install license
-    sudo install -Dm 644 -t "${pkgdir}/usr/share/licenses/${name}" "../LICENSE"
+  # install doc
+  sudo install -Dm 644 -t "${pkgdir}/usr/share/doc/${name}" "../README.md"
+  # install license
+  sudo install -Dm 644 -t "${pkgdir}/usr/share/licenses/${name}" "../LICENSE"
 }
 
 removescript() {
-    sudo rm -rf "/usr/share/doc/${name}"
-    sudo rm -rf "/usr/share/licenses/${name}"
+  sudo rm -rf "/usr/share/doc/${name}"
+  sudo rm -rf "/usr/share/licenses/${name}"
 }

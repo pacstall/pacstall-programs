@@ -5,32 +5,32 @@ build_depends="meson valac libgtk-3-dev libgranite-dev libsoup2.4-dev libgstream
 breaks="tuner"
 description="Tuner Radio Player - development version"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 prepare() {
-    if ask "Are you sure you want to install the development version of Tuner?" Y; then
-        meson builddir --prefix=/usr
+  if ask "Are you sure you want to install the development version of Tuner?" Y; then
+    meson builddir --prefix=/usr
   else
-        exit 1
+    exit 1
   fi
 }
 
 build() {
-    ninja -C builddir -j$(nproc)
+  ninja -C builddir -j"$(nproc)"
 }
 
 install() {
-    sudo DESTDIR="${pkgdir}" ninja -C builddir install
+  sudo DESTDIR="${pkgdir}" ninja -C builddir install
 }
 
 postinst() {
-        sudo glib-compile-schemas /usr/share/glib-2.0/schemas
-        sudo update-desktop-database -q /usr/share/applications
-        sudo gtk-update-icon-cache -qtf  /usr/share/icons/hicolor
+  sudo glib-compile-schemas /usr/share/glib-2.0/schemas
+  sudo update-desktop-database -q /usr/share/applications
+  sudo gtk-update-icon-cache -qtf /usr/share/icons/hicolor
 }
 
 removescript() {
-        sudo update-desktop-database -q /usr/share/applications
+  sudo update-desktop-database -q /usr/share/applications
 }
