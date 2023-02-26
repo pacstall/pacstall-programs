@@ -1,7 +1,7 @@
 name="spot-client-git"
 gives="spot-client"
 description="Gtk/Rust native Spotify (premium only) client"
-url="https://github.com/xou816/spot"
+url="https://github.com/xou816/spot.git"
 repology=("project: ${gives}")
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye" "debian:sid")
 maintainer="oklopfer <oren@taumoda.com>"
