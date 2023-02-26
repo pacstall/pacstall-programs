@@ -1,5 +1,8 @@
 # Contributing
 
+## Creating a PR
+* Please **do not** create Pacscripts on GitHub. We use pre-commit to ensure that our repo is of the highest quality, and using GitHub will bypass those checks. We **will not** accept any PR suspected of being made entirely using tools that do not use git directly.
+
 ## PR Etiquette
 
 * Please **do not** click the "Update branch" button every time your branch is out of date. This will cause unnecessary spam to our Discord, will waste the CIs time, and clutter the squash commit.
