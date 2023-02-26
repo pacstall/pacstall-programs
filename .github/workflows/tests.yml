@@ -83,7 +83,7 @@ jobs:
               echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -I ${package_name}"
               pushd ${package_dir}
-              pacstall --disable-prompts -I ${pacscript_file}
+              pacstall --disable-prompts -I ${pacscript_file} || exit 1
               popd
             fi
           done
@@ -103,7 +103,7 @@ jobs:
               package_dir=`dirname "${changed_file}"`
               echo "Running pacstall -R for ${package_name}..."
               pushd ${package_dir}
-              pacstall --disable-prompts -R ${package_name}
+              pacstall --disable-prompts -R ${package_name} || exit 1
               popd
             fi
           done
@@ -183,7 +183,7 @@ jobs:
               echo "Running pacstall -I for ${package_name}..."
               echo "pacstall -Il ${package_name}"
               pushd ${package_dir}
-              pacstall --disable-prompts -I ${pacscript_file}
+              pacstall --disable-prompts -I ${pacscript_file} || exit 1
               popd
             fi
           done
@@ -203,7 +203,7 @@ jobs:
               package_dir=`dirname "${changed_file}"`
               echo "Running pacstall -R for ${package_name}..."
               pushd ${package_dir}
-              pacstall --disable-prompts -R ${package_name}
+              pacstall --disable-prompts -R ${package_name} || exit 1
               popd
             fi
           done
