@@ -13,3 +13,11 @@ version="$(pkgver)"
 install() {
   sudo DESTDIR="${pkgdir}" make install
 }
+
+postinst() {
+  sudo ln -sf "/usr/bin/rhino-pkg" "/usr/bin/rpk"
+}
+
+removescript() {
+  sudo rm -f "/usr/bin/rpk"
+}
