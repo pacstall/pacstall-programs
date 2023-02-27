@@ -8,7 +8,7 @@ maintainer="oklopfer <oren@taumoda.com>"
 depends="libgtk-4-dev libadwaita-1-dev libpulse-dev libasound2-dev libssl-dev openssl"
 build_depends="libgtk-4-dev libadwaita-1-dev libpulse-dev libasound2-dev rustc cargo meson ninja-build cmake openssl libssl-dev"
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
