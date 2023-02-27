@@ -13,7 +13,7 @@ pkgver() {
 version="$(pkgver)"
 
 build() {
-    sudo meson target -Doffline=false --prefix="${pkgdir}/usr"
+  sudo meson target -Doffline=false --prefix="${pkgdir}/usr"
 }
 
 install() {
