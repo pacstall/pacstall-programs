@@ -17,5 +17,5 @@ build() {
 }
 
 install() {
-    sudo DESTDIR="${pkgdir}" ninja install -C target
+  sudo DESTDIR="${pkgdir}" ninja install -C target
 }
