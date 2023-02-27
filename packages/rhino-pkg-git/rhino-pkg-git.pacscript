@@ -15,7 +15,7 @@ install() {
 }
 
 postinst() {
-  sudo ln -sf "/usr/bin/${gives}" "/usr/bin/rpk"
+  sudo ln -sf "/usr/bin/rhino-pkg" "/usr/bin/rpk"
 }
 
 removescript() {
