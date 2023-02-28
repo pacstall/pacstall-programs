@@ -23,8 +23,6 @@ labels:
   title: "^ci:.*"
 - label: "meta"
   title: "^meta:.*"
-- label: "package request"
-  title: "^req:.*"
 - label: "security"
   title: "^sec:.*"
 - label: "question"
