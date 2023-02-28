@@ -1,8 +1,35 @@
-version: 1
+version: 2
 labels:
+# type 1: package-action labels
 - label: "Update Package"
   title: '^upd\(.*'
+- label: "Update Pacscript"
+  title: '^fix\(.*'
+- label: "bug"
+  title: '^bug\(.*'
+- label: "enhancement"
+  title: '^enh\(.*'
+- label: "revert"
+  title: '^rev\(.*'
+  
+# type 2: repo-action labels
 - label: "Package Add"
   title: "^add:.*"
 - label: "remove package"
   title: "^rm:.*"
+- label: "dependencies"
+  title: "^dep:.*"
+- label: "chore"
+  title: "^chore:.*"
+- label: "CI"
+  title: "^ci:.*"
+- label: "help wanted"
+  title: "^help:.*"
+- label: "meta"
+  title: "^meta:.*"
+- label: "package request"
+  title: "^req:.*"
+- label: "security"
+  title: "^sec:.*"
+- label: "question"
+  title: "^qa:.*"
