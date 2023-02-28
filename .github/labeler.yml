@@ -25,5 +25,3 @@ labels:
   title: "^meta:.*"
 - label: "security"
   title: "^sec:.*"
-- label: "question"
-  title: "^qa:.*"
