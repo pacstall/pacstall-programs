@@ -21,8 +21,6 @@ labels:
   title: "^chore:.*"
 - label: "CI"
   title: "^ci:.*"
-- label: "help wanted"
-  title: "^help:.*"
 - label: "meta"
   title: "^meta:.*"
 - label: "package request"
