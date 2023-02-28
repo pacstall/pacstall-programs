@@ -17,8 +17,6 @@ labels:
   title: "^add:.*"
 - label: "remove package"
   title: "^rm:.*"
-- label: "dependencies"
-  title: "^dep:.*"
 - label: "chore"
   title: "^chore:.*"
 - label: "CI"
