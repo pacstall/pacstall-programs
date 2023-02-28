@@ -11,7 +11,7 @@ labels:
   title: '^enh\(.*'
 - label: "revert"
   title: '^rev\(.*'
-  
+
 # type 2: repo-action labels
 - label: "Package Add"
   title: "^add:.*"
