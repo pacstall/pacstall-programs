@@ -23,5 +23,3 @@ labels:
   title: "^ci:.*"
 - label: "meta"
   title: "^meta:.*"
-- label: "security"
-  title: "^sec:.*"
