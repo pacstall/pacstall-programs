@@ -21,5 +21,5 @@ labels:
   title: "^chore:.*"
 - label: "CI"
   title: "^ci:.*"
-- label: "meta"
-  title: "^meta:.*"
+- label: "feature"
+  title: "^feat:.*"
