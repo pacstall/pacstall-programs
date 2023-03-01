@@ -12,7 +12,7 @@ maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
 install() {
   # Moving all android studio files to /opt
   sudo install -d "${pkgdir}/opt/${name}"
-  sudo cp -a bin lib jre plugins license LICENSE.txt build.txt product-info.json "${pkgdir}/opt/${name}"
+  sudo cp -a bin lib jbr plugins license LICENSE.txt build.txt product-info.json "${pkgdir}/opt/${name}"
 
   # Creating a launcher in $PATH
   sudo install -d "${pkgdir}/usr/bin"
