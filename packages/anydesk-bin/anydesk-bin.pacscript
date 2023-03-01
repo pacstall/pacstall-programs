@@ -11,22 +11,22 @@ hash="93ce67407d855b21170e007e3dde324ad7cd0a3922206136bc0fd84d72da2b8a"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 install() {
-    # Binary
-    sudo install -Dm755 ${gives} -t "${pkgdir}/usr/bin"
-    # Polkit
-    sudo mkdir -p "${pkgdir}/usr/share/polkit-1/actions"
-    sudo mv "./polkit-1/com.anydesk.anydesk.policy" "${pkgdir}/usr/share/polkit-1/actions"
-    # .desktop
-    sudo install -Dm755 anydesk.desktop -t "${pkgdir}/usr/share/applications"
-    # Systemd
-    sudo mkdir -p "${pkgdir}/usr/share/anydesk/files/systemd"
-    sudo mv "./systemd/anydesk.service" "${pkgdir}/usr/share/anydesk/files/systemd"
-    # Init
-    sudo mkdir -p "${pkgdir}/usr/share/anydesk/files/init"
-    sudo mv "./init/anydesk" "${pkgdir}/usr/share/anydesk/files/init"
-    # Icon
-    sudo mkdir -p "${pkgdir}/usr/share/pixmaps/anydesk.svg"
-    sudo mv "./icons/hicolor/scalable/apps/anydesk.svg" "${pkgdir}/usr/share/pixmaps/anydesk.svg"
+  # Binary
+  sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
+  # Polkit
+  sudo mkdir -p "${pkgdir}/usr/share/polkit-1/actions"
+  sudo mv "./polkit-1/com.anydesk.anydesk.policy" "${pkgdir}/usr/share/polkit-1/actions"
+  # .desktop
+  sudo install -Dm755 anydesk.desktop -t "${pkgdir}/usr/share/applications"
+  # Systemd
+  sudo mkdir -p "${pkgdir}/usr/share/anydesk/files/systemd"
+  sudo mv "./systemd/anydesk.service" "${pkgdir}/usr/share/anydesk/files/systemd"
+  # Init
+  sudo mkdir -p "${pkgdir}/usr/share/anydesk/files/init"
+  sudo mv "./init/anydesk" "${pkgdir}/usr/share/anydesk/files/init"
+  # Icon
+  sudo mkdir -p "${pkgdir}/usr/share/pixmaps/anydesk.svg"
+  sudo mv "./icons/hicolor/scalable/apps/anydesk.svg" "${pkgdir}/usr/share/pixmaps/anydesk.svg"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:

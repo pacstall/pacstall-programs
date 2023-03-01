@@ -9,5 +9,5 @@ description="An all-in-one solution that provides Boards/Library Managers, sketc
 hash="f6b1cddf3459b1b6ca9dafe36315c2fa1f6f77386ab3795bbad6a117cbe4230b"
 
 install() {
-  sudo install -Dm755 ${pkgname} -t "${pkgdir}/usr/bin"
+  sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"
 }

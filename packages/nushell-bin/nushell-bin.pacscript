@@ -24,12 +24,12 @@ install() {
     -executable \
     -type f \
     -name "nu*" \
-    -exec sudo install -vDm755 -t "$pkgdir/usr/bin" "{}" +
+    -exec sudo install -vDm755 -t "${pkgdir}/usr/bin" "{}" +
 
   # documentation
-  sudo install -vDm644 -t "$pkgdir/usr/share/doc/$pkgname" README.txt
+  sudo install -vDm644 -t "${pkgdir}/usr/share/doc/${pkgname}" README.txt
 
   # license
-  sudo install -vDm644 -t "$pkgdir/usr/share/licenses/$pkgname" LICENSE
+  sudo install -vDm644 -t "${pkgdir}/usr/share/licenses/${pkgname}" LICENSE
 }
 # vim:set ft=sh ts=2 sw=2 et:

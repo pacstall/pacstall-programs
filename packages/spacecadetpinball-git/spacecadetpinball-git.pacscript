@@ -34,9 +34,9 @@ prepare() {
 
 build() {
   cmake -B "build" \
-        -Wno-dev \
-        -DCMAKE_BUILD_TYPE=Release \
-        -DCMAKE_INSTALL_PREFIX=/usr
+    -Wno-dev \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr
 
   make -j"$(nproc)" -C "build"
 }

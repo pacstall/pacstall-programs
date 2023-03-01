@@ -14,7 +14,7 @@ build() {
   ./configure --prefix=/usr \
     --enable-qt5 \
     --enable-build-type=release
-  make -j$(nproc)
+  make -j"$(nproc)"
 }
 
 install() {

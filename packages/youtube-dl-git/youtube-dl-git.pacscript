@@ -7,7 +7,7 @@ depends="python3"
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
 pkgver() {
   # find latest tag name
-  git ls-remote --sort='version:refname' --tags ${url} | grep -v '\^{}$' | tail --line=1 | cut --delimiter='/' --fields=3
+  git ls-remote --sort='version:refname' --tags "${url}" | grep -v '\^{}$' | tail --line=1 | cut --delimiter='/' --fields=3
 }
 version="$(pkgver)"
 

@@ -23,6 +23,6 @@ install() {
 }
 
 postinst() {
-          sudo chmod -R a+w "${pkgdir}/usr/lib/pacstall-gui"
-          sudo update-desktop-database -q
+  sudo chmod -R a+w "${pkgdir}/usr/lib/pacstall-gui"
+  sudo update-desktop-database -q
 }

@@ -8,20 +8,20 @@ depends="fishui libpulse-dev libxtst6 libpolkit-agent-1-dev libxcb-randr0-dev li
 description="System backend and start session and more."
 
 pkgver() {
-    git ls-remote "${url}" main | cut -f1 | cut -c1-8
+  git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 prepare() {
-    mkdir build
-    cd build
+  mkdir build
+  cd build
 }
 
 build() {
-    cmake ..
-    make -j$(nproc)
+  cmake ..
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR="${pkgdir}"
+  sudo make install DESTDIR="${pkgdir}"
 }

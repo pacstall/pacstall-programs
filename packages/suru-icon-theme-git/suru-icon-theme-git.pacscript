@@ -7,9 +7,9 @@ build_depends="meson ninja-build"
 description="Revitalization of the Suru icon set designed for Ubuntu Touch"
 
 build() {
-    meson "build" --prefix="${pkgdir}/usr"
+  meson "build" --prefix="${pkgdir}/usr"
 }
 
 install() {
-    sudo ninja -C "build" install > /dev/null
+  sudo ninja -C "build" install > /dev/null
 }

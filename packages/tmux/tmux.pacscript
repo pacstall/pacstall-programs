@@ -17,7 +17,7 @@ build() {
   else
     ./configure
   fi
-  make -j$(nproc)
+  make -j"$(nproc)"
 }
 
 install() {

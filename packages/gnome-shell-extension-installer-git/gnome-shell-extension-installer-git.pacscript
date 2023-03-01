@@ -7,12 +7,12 @@ maintainer="D-Brox <BroxZuka@protonmail.com>"
 depends="curl perl dbus"
 
 install() {
-    sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
-    sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${gives}"
-    sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"
+  sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
+  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${gives}"
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"
 }
 
-removescript()  {
-    sudo rm -rf "/usr/share/licenses/${gives}"
-    sudo rm -rf "/usr/share/doc/${gives}"
+removescript() {
+  sudo rm -rf "/usr/share/licenses/${gives}"
+  sudo rm -rf "/usr/share/doc/${gives}"
 }
