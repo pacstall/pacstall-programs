@@ -1,5 +1,5 @@
 name="quarto-deb"
-gives="Quarto"
+gives="quarto"
 version="1.2.335"
 url="https://github.com/quarto-dev/quarto-cli/releases/download/v${version}/quarto-${version}-linux-amd64.deb"
 description="Academic, scientific, and technical publishing system built on Pandoc"
