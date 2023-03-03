@@ -1,8 +1,8 @@
 name="thorium-deb"
 gives="thorium-browser-unstable"
-version="109.0.5414.120"
+version="110.0.5481.178"
 description="Chromium fork for linux with extra patches"
 repology=("project: thorium-browser")
 url="https://github.com/Alex313031/Thorium/releases/download/M${version}/thorium-browser_${version}_amd64.deb"
-hash="2e7252f1b450903d42e397710aeb1b595218fbe3d2846993736974e48cad3f8a"
+hash="364492a23ca0bdd6bc2d7ad6d76d9851c4500316d311ada3c22199de1437adb7"
 maintainer="oklopfer <oren@taumoda.com>"
