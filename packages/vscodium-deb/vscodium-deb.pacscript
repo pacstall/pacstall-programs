@@ -1,9 +1,9 @@
 name="vscodium-deb"
 gives="codium"
 breaks="${gives}"
-version="1.75.1.23040"
+version="1.76.0.23062"
 url="https://github.com/VSCodium/vscodium/releases/download/${version}/${gives}_${version}_amd64.deb"
 description="Binary releases of VS Code without MS branding/telemetry/licensing"
-hash="d1dcff48c45e4866b73b90c58f32f8c1f95a797d6fd9abb584f9b914a8f84390"
+hash="07c77f5dd571b5e4ae6ac0ad5f3d2dca3bc2d3bb057c8dc08d7d628d6a70164f"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 repology=("project: vscodium")
