@@ -1,5 +1,5 @@
 name="vivaldi-deb"
-version="5.7.2921.60-1"
+version="5.7.2921.60"
 repology=("project: vivaldi")
 url="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}-1_amd64.deb"
 description="An advanced browser made with the power user in mind"
