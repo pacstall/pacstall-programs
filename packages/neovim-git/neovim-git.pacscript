@@ -1,7 +1,7 @@
 name="neovim-git"
 gives="neovim"
 url="https://github.com/neovim/neovim.git"
-description="Neovim is a project that seeks to aggressively refactor Vim source code"
+description="Vim fork maintained by the community"
 maintainer="Henryws <hwengerstickel@pm.me>"
 build_depends="ninja-build gettext libtool-bin autoconf automake cmake g++ pkg-config unzip"
 breaks="neovim-bin neovim neovim-app neovim-deb"
@@ -11,7 +11,7 @@ pkgver() {
 version="$(pkgver)"
 
 build() {
-  make CMAKE_BUILD_TYPE=Release
+  make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"$(nproc)"
 }
 
 install() {
