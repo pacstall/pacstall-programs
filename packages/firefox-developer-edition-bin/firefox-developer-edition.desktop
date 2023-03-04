@@ -42,7 +42,7 @@ Comment[pt]=Navegue na Internet
 Comment[pt_BR]=Navegue na Internet
 Comment[sk]=Prehliadanie internetu
 Comment[sv]=Surfa på webben
-Exec=/usr/bin/firefox-developer-edition
+Exec=/opt/firefox-developer-edition/firefox-bin
 Icon=firefox-developer-edition
 Terminal=false
 Type=Application
@@ -159,7 +159,7 @@ Name[wo]=Palanteer bu bees
 Name[xh]=Ifestile entsha
 Name[zh-CN]=新建窗口
 Name[zh-TW]=開新視窗
-Exec=/usr/bin/firefox-developer-edition --new-window
+Exec=/opt/firefox-developer-edition/firefox-bin --new-window
 
 [Desktop Action new-private-window]
 Name=Open a New Private Window
@@ -267,10 +267,10 @@ Name[wo]=Panlanteeru biir bu bees
 Name[xh]=Ifestile yangasese entsha
 Name[zh-CN]=新建隐私浏览窗口
 Name[zh-TW]=新增隱私視窗
-Exec=/usr/bin/firefox-developer-edition --private-window
+Exec=/opt/firefox-developer-edition/firefox-bin --private-window
 
 [Desktop Action profile-manager-window]
 Name=Open the Profile Manager
 Name[cs]=Správa profilů
 Name[ro]=Manager de profil
-Exec=/usr/bin/firefox-developer-edition --ProfileManager
+Exec=/opt/firefox-developer-edition/firefox-bin --ProfileManager

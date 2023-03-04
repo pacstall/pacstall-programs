@@ -10,20 +10,13 @@ repology=("project: firefox" "visiblename: firefox-developer-edition")
 __icon_url="https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
 
 install() {
+  cd ..
   # Make dirs and assign permissions
-  sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo cp -r ./* "${pkgdir}"
-  sudo touch "${pkgdir}/usr/bin/${pkgname}"
-  sudo chmod 755 "${pkgdir}/usr/bin/${pkgname}"
-
-  # Make a shellscript proxy because copying the binary won't work
-  sudo tee "${pkgdir}/usr/bin/${pkgname}" > /dev/null << END
-#!/bin/bash
-${pkgdir}/firefox "\$@"
-END
+  sudo mkdir -p "${pkgdir}/opt/firefox-developer-edition"
+  sudo cp -r firefox/* "${pkgdir}/opt/firefox-developer-edition"
 
   # Install the icon for the desktop file
-  wget -O "${pkgname}.png" "${__icon_url}"
+  wget -q -O "${pkgname}.png" "${__icon_url}"
   sudo install -Dm644 "${pkgname}.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
 
   # Install the desktop file
