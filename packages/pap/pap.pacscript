@@ -4,7 +4,7 @@ url="https://github.com/talwat/pap/archive/v${version}.tar.gz"
 description="Swiss army knife for minecraft servers"
 maintainer="Talwat <talwat321@gmail.com>"
 build_depends="golang-go"
-incompatible=('debian:stable')
+incompatible=('debian:bullseye')
 
 build() {
   make
