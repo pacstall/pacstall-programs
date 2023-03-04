@@ -1,0 +1,15 @@
+name="pap"
+version="0.13.2"
+url="https://github.com/talwat/pap/archive/v${version}.tar.gz"
+description="a swiss army knife for minecraft servers."
+maintainer="Talwat <talwat321@gmail.com>"
+build_depends="golang-go"
+
+build() {
+  make clean
+  make
+}
+
+install() {
+  sudo make install PREFIX="${pkgdir}/usr/bin"
+}
