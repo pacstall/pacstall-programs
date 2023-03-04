@@ -2,6 +2,7 @@ name="vscodium-arm64-deb"
 gives="codium"
 breaks="${gives}"
 version="1.76.0.23062"
+arch=("arm64")
 url="https://github.com/VSCodium/vscodium/releases/download/${version}/${gives}_${version}_arm64.deb"
 description="Binary releases of VS Code without MS branding/telemetry/licensing"
 hash="a547bf18eaed69b30bf9b7f246aebb1042a70b960bcdefe1b85b4c95721d980a"

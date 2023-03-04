@@ -1,6 +1,7 @@
 name="firefox-arm64-bin"
 gives="firefox"
 version="110.0-1"
+arch=("arm64")
 repology=("project: ${gives}")
 url="http://mirror.archlinuxarm.org/aarch64/extra/${gives}-${version}-aarch64.pkg.tar.xz"
 description="Free and open-source web browser developed by the Mozilla Foundation"
