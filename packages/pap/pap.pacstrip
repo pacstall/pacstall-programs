@@ -10,5 +10,5 @@ build() {
 }
 
 install() {
-  sudo make install PREFIX="${pkgdir}/usr/bin"
+  sudo make install PREFIX="${pkgdir}/usr"
 }
