@@ -5,6 +5,7 @@ description="Swiss army knife for minecraft servers"
 maintainer="Talwat <talwat321@gmail.com>"
 build_depends="golang-go"
 incompatible=('debian:bullseye')
+repology=("project: ${name}")
 
 build() {
   make -j"$(nproc)"
