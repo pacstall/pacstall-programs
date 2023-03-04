@@ -1,6 +1,7 @@
 name="thorium-arm64-deb"
 gives="thorium-browser-unstable"
 version="109.0.5361.0"
+arch=("arm64")
 description="Chromium fork for linux with extra patches"
 repology=("project: thorium-browser")
 url="https://github.com/Alex313031/Thorium-Special/releases/download/M${version}_2/thorium-browser_${version}_arm64.deb"

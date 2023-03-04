@@ -3,6 +3,7 @@ gives="armcord"
 depends="libgtk-3-0 libnotify4 libnss3 libxss1 libxtst6 xdg-utils libatspi2.0-0 libuuid1 libsecret-1-0"
 repology=("project: ${gives}")
 version="3.1.6"
+arch=("arm64")
 url="https://eu.armcord.xyz/apt-repo/pool/main/ArmCord_${version}_arm64.deb"
 hash="91af21c0784c5535cd4b5ae4b53b37c977d79f2c52991b78d4813ccff7ed5157"
 description="Custom client designed to enhance your Discord experience while keeping everything lightweight"
