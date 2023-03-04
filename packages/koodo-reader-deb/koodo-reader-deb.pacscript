@@ -1,9 +1,9 @@
 name="koodo-reader-deb"
 gives="koodo-reader"
-version="1.5.1"
+version="1.5.2"
 replace="${gives}"
 url="https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo.Reader-${version}.deb"
 repology=("project: koodo-reader")
 description=" A cross-platform ebook reader"
-hash="28414ecbaf7afab1fa0b2891679d17077ad32e800a29e37a5802e06b4bba236b"
+hash="b47a57562d58ed3c537c22fd096cf59d1b5bc59ac348c19cd6ab5f8c7422e513"
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
