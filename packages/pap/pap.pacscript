@@ -7,7 +7,7 @@ build_depends="golang-go"
 incompatible=('debian:bullseye')
 
 build() {
-  make
+  make -j"$(nproc)"
 }
 
 install() {
