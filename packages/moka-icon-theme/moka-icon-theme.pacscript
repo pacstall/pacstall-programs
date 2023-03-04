@@ -6,14 +6,10 @@ build_depends="meson ninja-build"
 description="Moka is a stylized FreeDesktop icon set, created with simplicity in mind."
 hash="b32e82aea4358e087620e852aa20042e791aa957a93de568da1d2223a46c7cd9"
 
-prepare() {
-    true
-}
-
 build() {
-    meson "build" --prefix=/usr/src/pacstall/moka-icon-theme/usr
+  meson "build" --prefix="${pkgdir}/usr"
 }
 
 install() {
-    sudo ninja -C "build" install > /dev/null
+  sudo ninja -C "build" install > /dev/null
 }

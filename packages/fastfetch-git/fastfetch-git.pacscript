@@ -8,19 +8,18 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fastfetch-git"
 pkgname="fastfetch"
-pkgdir="${STOWDIR}/${name}"
 description="Like neofetch, but much faster because written in c"
 url="https://github.com/LinusDierheimer/fastfetch.git"
 build_depends="cmake libpci-dev libvulkan-dev libx11-dev libxrandr-dev libwayland-client0 libwayland-dev libgio-cil libglib2.0-dev libdconf-dev libxfconf-0-dev" # libsqlite3-dev
 optdepends=("libpci-dev: GPU output"
-            "libvulkan-dev: GPU fallback"
-            "libx11-dev: Resolution output"
-            "libxrandr-dev: Refresh rate in resolution output"
-            "libwayland-client0: Best resolution performance + support for monitors with different refresh rates in wayland sessions"
-            "libglib2.0-dev: Output for values that are only stored in GSettings"
-            "libdconf-dev: Output for values that are only stored in DConf"
-            "libxfconf-0-dev: XFWM theme + xfce-terminal font"
-            # "libsqlite3-dev: RPM package count"
+  "libvulkan-dev: GPU fallback"
+  "libx11-dev: Resolution output"
+  "libxrandr-dev: Refresh rate in resolution output"
+  "libwayland-client0: Best resolution performance + support for monitors with different refresh rates in wayland sessions"
+  "libglib2.0-dev: Output for values that are only stored in GSettings"
+  "libdconf-dev: Output for values that are only stored in DConf"
+  "libxfconf-0-dev: XFWM theme + xfce-terminal font"
+  # "libsqlite3-dev: RPM package count"
 )
 breaks="${pkgname} ${pkgname}-bin ${pkgname}-deb ${pkgname}-app"
 
@@ -28,10 +27,6 @@ pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
-
-prepare() {
-  true
-}
 
 build() {
   # Build fastfetch

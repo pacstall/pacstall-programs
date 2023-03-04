@@ -72,7 +72,6 @@ NOGZ="YES"        # Don't compress .el files.
 #################################################################################
 
 name="emacs"
-pkgdir="/usr/src/pacstall/${name}"
 version="28.2"
 url="http://ftpmirror.gnu.org/emacs/emacs-${version}.tar.xz"
 description="An extensible, customizable, free/libre text editor — and more."

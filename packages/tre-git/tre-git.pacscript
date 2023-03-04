@@ -7,14 +7,14 @@ url="https://github.com/dduan/tre.git"
 maintainer="Diego Magdaleno <diegomagdaleno@pm.me>"
 incompatible=("debian:bullseye")
 pkgver() {
-	git ls-remote "${url}" main | cut -f1 | cut -c1-8
+  git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 build() {
-	cargo build -j$(nproc) --release --locked
+  cargo build -j"$(nproc)" --release --locked
 }
 
 install() {
-	sudo install -Dm755 target/release/tre -t "${pkgdir}"/usr/bin
+  sudo install -Dm755 target/release/tre -t "${pkgdir}/usr/bin"
 }

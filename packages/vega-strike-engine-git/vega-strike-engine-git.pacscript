@@ -6,15 +6,10 @@ breaks="vega-strike"
 gives="vega-strike"
 description="Vega Strike engine"
 maintainer="echometerain <echometer@disroot.org>"
-
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
-
-prepare() {
-  true
-}
 
 build() {
   mkdir build
@@ -27,7 +22,7 @@ build() {
 
 install() {
   cd build || return 1
-  sudo make install DESTDIR="${STOWDIR}/${name}"
-  sudo rm -rf "${STOWDIR}/${name}/usr/include"
-  sudo rm -rf "${STOWDIR}/${name}/usr/lib"
+  sudo make install DESTDIR="${pkgdir}"
+  sudo rm -rf "${pkgdir}/usr/include"
+  sudo rm -rf "${pkgdir}/usr/lib"
 }

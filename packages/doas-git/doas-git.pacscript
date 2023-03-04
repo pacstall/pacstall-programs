@@ -8,7 +8,6 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="doas-git"
 pkgname="doas"
-pkgdir="${STOWDIR}/${name}"
 description="A port of OpenBSD's doas(1), an alternative to sudo(1)"
 url="https://github.com/slicer69/doas.git"
 gives="${pkgname}"

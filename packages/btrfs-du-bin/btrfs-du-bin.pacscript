@@ -7,7 +7,7 @@ depends="btrfs-progs"
 repology=("project: ${gives}")
 
 install() {
-    sudo install -vDm755 -t "$pkgdir/usr/bin" "btrfs-du"
+  sudo install -vDm755 -t "${pkgdir}/usr/bin" "btrfs-du"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:

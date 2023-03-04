@@ -8,20 +8,20 @@ depends="kscreen modemmanager-qt-dev libkf5networkmanagerqt-dev libqt5quickcontr
 description="Cutefish System Library."
 
 pkgver() {
-    git ls-remote "${url}" main | cut -f1 | cut -c1-8
+  git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 prepare() {
-    mkdir build
-    cd build
+  mkdir build
+  cd build
 }
 
 build() {
-    cmake ..
-    make -j$(nproc)
+  cmake ..
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/libcutefish-git
+  sudo make install DESTDIR="${pkgdir}"
 }

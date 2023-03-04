@@ -1,6 +1,6 @@
 name="opentoonz-gts"
 version="2.5.1"
-url="https://github.com/opentoonz/GTS/archive/refs/tags/v$version.tar.gz"
+url="https://github.com/opentoonz/GTS/archive/refs/tags/v${version}.tar.gz"
 build_depends="libtiff5-dev libfltk1.3-dev libglew-dev libsane-dev libglu1-mesa-dev"
 depends="autoconf libtool autoconf-archive"
 description="GTS is a trace scanning tool developed by Studio Ghibli"
@@ -12,27 +12,27 @@ breaks="gts"
 repology=("project: gts-scanning-tool")
 
 prepare() {
-  sudo mkdir -p "$STOWDIR/$name/usr/bin"
-  sudo wget https://raw.githubusercontent.com/pacstall/pacstall-programs/d09a60781f350e8c3dc01202f09a9cfaa5cd84ca/packages/opentoonz-gts/sane-config -P "$STOWDIR/$name/usr/bin"
-  sudo chmod +x "$STOWDIR/$name/usr/bin/sane-config"
+  sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo wget https://raw.githubusercontent.com/pacstall/pacstall-programs/d09a60781f350e8c3dc01202f09a9cfaa5cd84ca/packages/opentoonz-gts/sane-config -P "${pkgdir}/usr/bin"
+  sudo chmod +x "${pkgdir}/usr/bin/sane-config"
   git apply "./PACSTALL_patchesdir/149.diff"
 }
 
 build() {
   ./autogen.sh
   ./configure
-  make -j$(nproc)
+  make -j"$(nproc)"
 }
 
 install() {
-  sudo make install DESTDIR="$STOWDIR/$name"
-  mkdir -p "/home/$LOGNAME/.GTS"
-  cp "$STOWDIR/$name/usr/local/share/GTS/gts_initial_configuration.txt" "/home/$LOGNAME/.GTS"
+  sudo make install DESTDIR="${pkgdir}"
+  mkdir -p "/home/${LOGNAME}/.GTS"
+  cp "${pkgdir}/usr/local/share/GTS/gts_initial_configuration.txt" "/home/${LOGNAME}/.GTS"
 }
 
 removescript() {
   ask "Do you want to remove your GTS configuration?" N
-  if [[ $answer -eq 1 ]]; then
-    sudo rm -rf "/home/$LOGNAME/.GTS"
+  if [[ ${answer} -eq 1 ]]; then
+    sudo rm -rf "/home/${LOGNAME}/.GTS"
   fi
 }

@@ -9,5 +9,5 @@ gives="${pkgname}"
 repology=("project: ${pkgname}")
 
 install() {
-  sudo install -Dm755 "${pkgname}" -t "${STOWDIR}/${name}/usr/bin"
+  sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"
 }

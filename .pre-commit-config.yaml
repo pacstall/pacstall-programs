@@ -20,10 +20,15 @@ repos:
     hooks:
       - id: shellcheck
         types: []
-        args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034", "-e", "SC2154", "-e", "SC2312"]
+        args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034", "-e", "SC2154", "-e", "SC2312", "-e", "SC2164"]
         files: '^.*\.(pacscript|sh)$'
       - id: shfmt
-        args: ["-i", "2", "-bn", "-ci", "-sr", "-kp", "-s"]
+        args: ["-i", "2", "-bn", "-ci", "-sr", "-s"]
         types: []
+        exclude: |
+          (?x)^(
+            packages/emacs/emacs.pacscript|
+            packages/emacs-git/emacs-git.pacscript|
+          )$
         files: '^.*\.(pacscript|sh)$'
 # vim:set ft=yaml ts=2 sw=2 et:

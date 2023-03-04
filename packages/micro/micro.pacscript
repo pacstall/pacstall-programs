@@ -11,14 +11,14 @@ hash="7d820c9247f7348196fef9cf151982433e5d787adc34d81ae26d8d5979b930fe"
 repology=("project: ${name}")
 
 build() {
-    chmod +x "./micro"
+  chmod +x "./micro"
 }
 
 install() {
-    sudo install -Dm644 micro "/usr/src/pacstall/micro/usr/bin/micro"
-    tar -czf "micro.1.tar.gz" "micro.1"
-    sudo install -Dm644 micro.1.tar.gz "/usr/src/pacstall/micro/usr/share/man/man1/micro.1.tar.gz"
-    sudo install -Dm644 "./micro.svg" "/usr/src/pacstall/micro/usr/share/pixmaps/micro.svg"
-    sudo install -Dm644 micro.desktop "/usr/src/pacstall/micro/usr/share/applications/micro.desktop"
-    sudo chmod +x "/usr/src/pacstall/micro/usr/bin/micro"
+  sudo install -Dm644 micro "${pkgdir}/usr/bin/micro"
+  tar -czf "micro.1.tar.gz" "micro.1"
+  sudo install -Dm644 micro.1.tar.gz "${pkgdir}/usr/share/man/man1/micro.1.tar.gz"
+  sudo install -Dm644 "./micro.svg" "${pkgdir}/usr/share/pixmaps/micro.svg"
+  sudo install -Dm644 micro.desktop "${pkgdir}/usr/share/applications/micro.desktop"
+  sudo chmod +x "${pkgdir}/usr/bin/micro"
 }

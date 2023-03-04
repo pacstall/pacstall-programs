@@ -1,8 +1,21 @@
-version: 1
+version: 2
 labels:
+# type 1: package-action labels
 - label: "Update Package"
   title: '^upd\(.*'
+- label: "Update Pacscript"
+  title: '^fix\(.*'
+- label: "bug"
+  title: '^bug\(.*'
+
+# type 2: repo-action labels
 - label: "Package Add"
   title: "^add:.*"
 - label: "remove package"
   title: "^rm:.*"
+- label: "chore"
+  title: "^chore:.*"
+- label: "CI"
+  title: "^ci:.*"
+- label: "feature"
+  title: "^feat:.*"
