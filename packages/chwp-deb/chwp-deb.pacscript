@@ -1,5 +1,5 @@
 name="chwp-deb"
-version="1.183.0"
+version="1.187.0"
 gives="chwp"
 breaks="${gives}"
 replace="${gives}"
@@ -7,4 +7,4 @@ repology=("project: ${gives}")
 url="https://github.com/RouHim/chwp/releases/download/v${version}/chwp-x86-64.deb"
 description="Changes the wallpaper from the command line"
 maintainer="Rouven Himmelstein <rouven@himmelstein.info>"
-hash="5a68fe27cda8af987af120ec08e23c903b1ed112b94bbd8c732e249719edb6b0"
+hash="11920df66f6a6783b28bd11ac4253dc1671cfaf63b533877472c0c2bf9c6e2ba"
