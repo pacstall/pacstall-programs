@@ -1,10 +1,10 @@
 name="an-anime-game-launcher-bin"
 pkgname="an-anime-game-launcher"
-version="3.0.1"
+version="3.1.4"
 description="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
 url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${version}/anime-game-launcher"
-hash="b0ad0a582dd925f9071d2ed72bbb42cc227b250d4f1c0feaefa24cd68f521e8d"
+hash="a74ca72a428ce3751bc7a392d90f541c6eb840ba7d4d15a93915f69d915ccf63"
 depends="xdelta3 git"
 maintainer="Henryws <hwengerstickel@pm.me>"
 gives="${pkgname}"
@@ -19,6 +19,7 @@ optdepends=(
 )
 
 install() {
+  sudo chmod +x "anime-game-launcher"
   sudo install -Dm755 "anime-game-launcher" "${pkgdir}/usr/bin/${pkgname}"
   sudo mkdir -p "${pkgdir}/usr/share/applications"
   echo '[Desktop Entry]
