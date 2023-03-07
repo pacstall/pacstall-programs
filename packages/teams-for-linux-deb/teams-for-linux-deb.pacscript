@@ -6,5 +6,5 @@ url="https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v${vers
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
 gives="${pkgname}"
 description="Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron."
-hash="92d88d5f19a7f5a2c9857743c0acf7d8ac6e084bbe4522dba922ef6e"
+hash="e6480d22c3fb084459597968f9cc16be31ea96f21826287ba855d3bcd540e8c1"
 maintainer="matusaurio <matusaurio@github.com>"
