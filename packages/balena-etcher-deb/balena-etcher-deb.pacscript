@@ -1,7 +1,6 @@
 name="balena-etcher-deb"
 gives="balena-etcher"
 repology=("project: balena-etcher")
-gives="balena-etcher-electron"
 version="1.18.4"
 url="https://github.com/balena-io/etcher/releases/download/v${version}/balena-etcher_${version}_amd64.deb"
 description="Flash OS images to SD cards & USB drives, safely and easily."
