@@ -1,5 +1,5 @@
 name="balena-etcher-deb"
-pkgname="balena-etcher"
+gives="balena-etcher"
 repology=("project: balena-etcher")
 gives="balena-etcher-electron"
 version="1.18.4"
