@@ -17,8 +17,7 @@ install() {
   installdir="${pkgdir}/opt/zotero"
   sudo mkdir -p "${installdir}"
   sudo cp -r ./ "${installdir}"
-  sudo install -Dm644 "chrome/icons/default/default16.png" "${pkgdir}/usr/share/icons/hicolor/16x16/apps/zotero.png"
-  sudo install -Dm644 "chrome/icons/default/default32.png" "${pkgdir}/usr/share/icons/hicolor/32x32/apps/zotero.png"
-  sudo install -Dm644 "chrome/icons/default/default48.png" "${pkgdir}/usr/share/icons/hicolor/48x48/apps/zotero.png"
-  sudo install -Dm644 "chrome/icons/default/default256.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/zotero.png"
+  for size in 16 32 48 256; do
+    sudo install -Dm644 "chrome/icons/default/default${size}.png" "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps/zotero.png"
+  done
 }
