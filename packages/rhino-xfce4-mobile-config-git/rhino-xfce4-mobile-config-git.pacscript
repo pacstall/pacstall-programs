@@ -1,7 +1,7 @@
 name="rhino-xfce4-mobile-config-git"
 maintainer="oklopfer <oren@taumoda.com>"
 description="Rhino Linux XFCE4 Mobile configuration"
-depends="xfce4-whiskermenu-plugin yaru-theme-icon yaru-theme-gtk onboard iio-sensor-proxy sxmo-utils dbus-x11 dconf-editor"
+depends="xfce4-whiskermenu-plugin yaru-theme-icon yaru-theme-gtk onboard"
 optdepends=("xfce4: to use the configuration")
 
 url="https://github.com/oklopfer/dotfiles.git"
