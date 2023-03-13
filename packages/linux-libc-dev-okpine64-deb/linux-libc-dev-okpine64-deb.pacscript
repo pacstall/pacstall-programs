@@ -1,6 +1,5 @@
 name="linux-libc-dev-okpine64-deb"
 gives="linux-libc-dev"
-breaks="${gives}"
 replace="${gives}"
 version="6.2.0-okpine64"
 url="https://github.com/oklopfer/debs/raw/master/kernel/6.2.0/okpine64/${gives}_${version}-1_arm64.deb"
