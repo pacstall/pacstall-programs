@@ -1,0 +1,10 @@
+name="linux-libc-dev-okpine64-deb"
+gives="linux-libc-dev"
+breaks="${gives}"
+replace="${gives}"
+version="6.2.0-okpine64"
+url="https://gitlab.com/ook37/linux/-/jobs/3803744938/artifacts/file/${gives}_${version}-1_arm64.deb"
+hash="16ea33045ccf5d412f267f95804e7f82ac453630296b40ecea75c5aee0aab8f0"
+maintainer="oklopfer <oren@taumoda.com>"
+description="Linux kernel libc-dev files built for PinePhone"
+arch=('arm64')
