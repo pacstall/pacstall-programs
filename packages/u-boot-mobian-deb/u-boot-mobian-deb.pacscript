@@ -1,0 +1,9 @@
+name="u-boot-mobian-deb"
+gives="u-boot-menu"
+replace="${gives}"
+version="4.2.1mobian1"
+url="https://repo.mobian-project.org/pool/main/u/${gives}/${gives}_${version}_all.deb"
+description="Deb packaging for u-boot-menu with Mobian patches"
+hash="3ba3016d82ccdfdce7741a5b5eee67cbe1aaecfc2c70897d3c98da1902c53cb9"
+maintainer="oklopfer <oren@taumoda.com>"
+repology=("project: u-boot-menu")
