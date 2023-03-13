@@ -11,7 +11,7 @@ pkgver() {
 version="${pkgver}"
 
 prepare() {
-  ./autogen.sh
+  sudo ./autogen.sh
 }
 
 build() {
