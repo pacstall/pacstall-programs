@@ -1,6 +1,5 @@
 name="xfce4-settings-pine-pro-git"
 gives="xfce4-settings"
-breaks="${gives}"
 replace="${gives}"
 build_depends="xfce4-dev-tools libexo-2-dev libgarcon-1-dev libxfce4ui-2-dev"
 url="https://github.com/oklopfer/xfce4-settings.git"
