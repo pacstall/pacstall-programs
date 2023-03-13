@@ -9,7 +9,7 @@ maintainer="oklopfer <oren@taumoda.com>"
 description="XFCE4 patch that allows PinePhonePro to auto-rotate"
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8` works
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="${pkgver}"
 
