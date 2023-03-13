@@ -3,8 +3,7 @@ gives="xfce4-settings"
 breaks="${gives}"
 replace="${gives}"
 depends="xfce4-dev-tools libexo-2-dev libgarcon-1-dev libxfce4ui-2-dev"
-url="https://github.com/xfce-mirror/xfce4-settings.git"
-patch=("https://github.com/oklopfer/xfce4-settings/blob/patch/1.diff")
+url="https://github.com/oklopfer/xfce4-settings.git"
 maintainer="oklopfer <oren@taumoda.com>"
 description="XFCE4 patch that allows PinePhonePro to auto-rotate"
 
