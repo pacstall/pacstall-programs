@@ -3,7 +3,6 @@ maintainer="oklopfer <oren@taumoda.com>"
 description="Rhino Linux XFCE4 Mobile configuration"
 depends="xfce4-whiskermenu-plugin yaru-theme-icon yaru-theme-gtk onboard"
 optdepends=("xfce4: to use the configuration")
-
 url="https://github.com/oklopfer/dotfiles.git"
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8 # Returns the latest commit hash from remote
