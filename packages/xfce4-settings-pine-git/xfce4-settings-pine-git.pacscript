@@ -1,4 +1,4 @@
-name="xfce4-settings-pine-pro-git"
+name="xfce4-settings-pine-git"
 gives="xfce4-settings"
 replace="${gives}"
 build_depends="xfce4-dev-tools libexo-2-dev libgarcon-1-dev libxfce4ui-2-dev"
