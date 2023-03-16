@@ -1,10 +1,10 @@
 name="pap"
-version="0.13.2"
+version="0.13.4"
 url="https://github.com/talwat/pap/archive/v${version}.tar.gz"
 description="Swiss army knife for minecraft servers"
 maintainer="Talwat <talwat321@gmail.com>"
 build_depends="golang-go"
-hash="6e30ada8a204c41e5b39a514a3cfcf5195e61976360a29069c4e46ae26d5cd26"
+hash="328cf362fd9570919e65c42f47232c1b981bb94c9a0f3cb1d128b906712b0e2d"
 incompatible=('debian:bullseye')
 repology=("project: ${name}")
 
