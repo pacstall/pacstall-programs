@@ -1,9 +1,9 @@
 name="linux-headers-deb"
-gives="linux-headers-6.2.2-060202"
-version="6.2.2"
-buildver="6.2.2-060202.202303031131"
+gives="linux-headers-6.3.0-060300rc2"
+version="6.3.0-rc2"
+buildver="6.3.0-060300rc2.202303122031"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_all.deb"
 description="Ubuntu Linux mainline kernel (Headers)"
-hash="d420539a2518f9c24204ced99568f4d76bfac609cf18c9a7e33e8046fff9b79e"
-arch=('amd64')
+hash="160ec907de9d7d9d8c3152a4e1dd8ce93466db275d9ef5a84a6279297e6614c1"
+arch=('any')
 maintainer="http.llamaz <chadano@llamawebdesign.co.uk>, Oren Klopfer <oren@taumoda.com>"

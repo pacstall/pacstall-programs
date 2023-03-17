@@ -1,9 +1,9 @@
 name="linux-headers-generic-deb"
-gives="linux-headers-6.2.2-060202-generic"
-version="6.2.2"
-buildver="6.2.2-060202.202303031131"
+gives="linux-headers-6.3.0-060300rc2-generic"
+version="6.3.0-rc2"
+buildver="6.3.0-060300rc2.202303122031"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_amd64.deb"
 description="Ubuntu Linux mainline kernel (Generic headers)"
-hash="c768b087daf5e541d17f05162134dd5a7c1f6d8b0efb487bd0597c3df8d4ff2e"
+hash="59cda8738d4c0184c70516d4784330aa91fa6faa86f1912042980f8dbb2296a5"
 arch=('amd64')
 maintainer="http.llamaz <chadano@llamawebdesign.co.uk>, Oren Klopfer <oren@taumoda.com>"
