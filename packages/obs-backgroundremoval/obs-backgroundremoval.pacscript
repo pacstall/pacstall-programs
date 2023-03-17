@@ -15,6 +15,7 @@ pacdeps="onnxruntime-1-7-0-bin"
 breaks="${name}-git"
 description="This plugin is meant to make it easy to replace the background in portrait images and video. It is using a neural network to predict the mask of the portrait and remove the background pixels. It's easily composable with other OBS plugins to replace the background with e.g. an image or a transparent color."
 hash="e88bbc902154b5efd46d8fc1dee52fcf079c8ff2ae6593d9f716017fdd1ef601"
+arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
 
 prepare() {

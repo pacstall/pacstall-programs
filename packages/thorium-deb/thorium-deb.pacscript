@@ -5,4 +5,5 @@ description="Chromium fork for linux with extra patches"
 repology=("project: thorium-browser")
 url="https://github.com/Alex313031/Thorium/releases/download/M${version}/thorium-browser_${version}_amd64.deb"
 hash="364492a23ca0bdd6bc2d7ad6d76d9851c4500316d311ada3c22199de1437adb7"
+arch=('amd64')
 maintainer="oklopfer <oren@taumoda.com>"

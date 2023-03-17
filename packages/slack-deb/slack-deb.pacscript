@@ -6,5 +6,6 @@ replace="${pkgname}"
 description="Slack is a new way to communicate with your team. It's faster, better organized, and more secure than email."
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 hash="ba55c818ba76aa5e3b652e8879a32eab27b7f5d783b6e90e075771cb904d0b02"
+arch=('amd64')
 url="https://downloads.slack-edge.com/releases/linux/${version}/prod/x64/slack-desktop-${version}-amd64.deb"
 repology=("project: slack")

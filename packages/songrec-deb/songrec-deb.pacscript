@@ -6,4 +6,5 @@ url="https://launchpad.net/~marin-m/+archive/ubuntu/songrec/+files/songrec_${ver
 repology=("project: songrec")
 description="SongRec is an open-source Shazam client for Linux, written in Rust."
 hash="5a88ff5491f1b1aeba982bbaf53882cfd6c88f1a5186957dd732719518b1cab9"
+arch=('amd64')
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"

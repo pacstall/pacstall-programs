@@ -6,4 +6,5 @@ url="https://zoom.us/client/${version}/zoom_amd64.deb"
 repology=("project: zoom-videoconference")
 description="Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution."
 hash="b612bc2d421e2e6b51e2cdc4da700020f671eccc23db709c8aaf79fc06facc27"
+arch=('amd64')
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"

@@ -4,6 +4,7 @@ version="6.0.22"
 url="https://download.zotero.org/client/release/${version}/Zotero-${version}_linux-x86_64.tar.bz2"
 description="Your personal research assistant"
 hash="397957e04e42e94103477f9f0d80773b98ac3bcbc006977a86faeafb8919d620"
+arch=('amd64')
 maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 
 prepare() {
