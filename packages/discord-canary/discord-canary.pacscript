@@ -5,6 +5,7 @@ maintainer="DismissedGuy <me@mikealmel.ooo>"
 url="https://dl-canary.discordapp.net/apps/linux/${version}/${name}-${version}.tar.gz"
 depends="libc6 libasound2 libatomic1 libgconf-2-4 libnotify4 libnspr4 libnss3 libstdc++6 libxss1 libxtst6 libayatana-appindicator1 libc++1"
 description="Chat for Communities and Friends - Unstable"
+arch=('amd64')
 hash="f21b83a75bb4b7dfe465b781edb3ea414c3cf8743aac8cb3298515374da041fa"
 
 prepare() {
