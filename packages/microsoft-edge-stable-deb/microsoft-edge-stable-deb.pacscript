@@ -7,4 +7,3 @@ url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${v
 description="The web browser from Microsoft"
 hash="2145019831c529427cf5d0536c4d5370fd3aaf1d5ab99b40c97811fb75dddd30"
 arch=('amd64')
-maintainer="WRM-42 <droppings_cledet@aleeas.com>"

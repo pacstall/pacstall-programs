@@ -5,4 +5,3 @@ url="https://github.com/TheAssassin/AppImageLauncher/releases/download/v${versio
 description="Helper application for Linux distributions serving as a kind of entry point for running and integrating AppImages."
 hash="f4b9db56a6ba7dd091074b14157612986a9f6a0cb3fcd230abfc8f4555c70a7f"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

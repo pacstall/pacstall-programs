@@ -7,7 +7,6 @@ depends="libncurses5-dev libncursesw5-dev"
 replace="htop"
 description="htop is a cross-platform interactive process viewer."
 hash="b5ffac1949a8daaabcffa659c0964360b5008782aae4dfa7702d2323cfb4f438"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
   ./autogen.sh
   ./configure

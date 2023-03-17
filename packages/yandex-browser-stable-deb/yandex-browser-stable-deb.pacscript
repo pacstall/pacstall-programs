@@ -7,4 +7,3 @@ url="http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${gives}/${gives}_${ve
 description="The web browser from Yandex"
 hash="3792b5bca194877cabe5616251ad90deb39a22d09a1e514949f3b51ddfb793fa"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

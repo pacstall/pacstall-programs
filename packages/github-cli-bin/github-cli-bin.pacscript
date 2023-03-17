@@ -9,7 +9,6 @@ url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version
 description="GitHub's official command line tool - Binary version"
 hash="76f7e18bdad5ddfdfcab40fce86c8d6f9fb27f9d29c1287cdf71e0d6b45ba84b"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 install() {
   # Binary

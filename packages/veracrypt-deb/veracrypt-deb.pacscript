@@ -6,4 +6,3 @@ url="https://launchpadlibrarian.net/601954341/${gives}-${version}-Ubuntu-22.04-a
 description="VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux"
 hash="0e477e3db627dec2caeacdaba58e7106fabb898bd78b828463844be7ab746bdd"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

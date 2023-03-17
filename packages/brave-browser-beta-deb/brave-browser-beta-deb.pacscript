@@ -8,4 +8,3 @@ description="Testing version of world's most unique, privacy friendly web browse
 hash="73c9b1bd8c38083ae59116d9d45697a71ccb7df39459af3afd5133ae30408afd"
 arch=('amd64')
 repology=("project: brave" "visiblename: brave-beta-bin")
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

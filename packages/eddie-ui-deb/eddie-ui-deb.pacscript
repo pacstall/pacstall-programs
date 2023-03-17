@@ -8,4 +8,3 @@ url="https://eddie.website/repository/apt/pool/main/e/${gives}/${gives}_${versio
 description="OpenVPN/WireGuard UI with additional user-friendly features made by AirVPN"
 hash="f9e4ece5d96ff8653578cdd037339f429ec874e461f8f1de63b970ad184aad34"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

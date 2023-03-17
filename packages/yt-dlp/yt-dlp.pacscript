@@ -8,7 +8,6 @@ depends="python3 ffmpeg python3-mutagen python3-websockets python3-secretstorage
 breaks="${name}-git ${name}-bin ${name}"
 description="A youtube-dl fork with additional features and fixes"
 hash="37b74a5d88036205e70b38d230930825bfa1798cb24d7e5f2670799f0d47e2be"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 prepare() {
   sudo pip3 install --upgrade pycryptodomex

@@ -7,4 +7,3 @@ url="https://downloads.nordlayer.com/linux/latest/debian/pool/main/${gives}_${ve
 description="NordLayer's CLI Tool"
 hash="650f813e14b451df5595ae410bd1e726682e1f8ffd1141596071c47589c96b32"
 arch=('amd64')
-maintainer="WRM-42 <droppings_cledet@aleeas.com>"

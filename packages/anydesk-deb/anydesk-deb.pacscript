@@ -7,4 +7,3 @@ breaks="${gives}-bin"
 description="AnyDesk provides platform independent remote access to personal computers and other devices running the host application"
 hash="0428029fa9f7fb23c593fad76cfbf94c18f1c84af7aebd69720962dd5c8b77b7"
 arch=('amd64')
-maintainer="WRM-42 <droppings_cledet@aleeas.com>"

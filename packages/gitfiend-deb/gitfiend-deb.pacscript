@@ -8,4 +8,3 @@ url="https://${gives}.com/resources/GitFiend_${version}_amd64.deb"
 description="A Git client designed for humans"
 hash="e35078544a936bcb12ce2a695a279b29d2196a1cc4260284bc432e93f9836795"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
