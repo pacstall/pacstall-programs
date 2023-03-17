@@ -6,4 +6,5 @@ breaks="${gives} ${gives}-git ${gives}-bin ${gives}-app"
 url="https://github.com/ROCm-Developer-Tools/aomp/releases/download/rel_${version}/aomp_Ubuntu2004_${version}_amd64.deb"
 description="Aomp is AMD's version of Clang compiler with RocM and openmp gpu offloading"
 hash="06f853fc22f1a8a926adc08fa2062373262a7a383c13d95eab0e8ee0361bf632"
+arch=('amd64')
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"

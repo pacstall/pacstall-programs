@@ -5,6 +5,7 @@ repology=("project: insync")
 depends="procps"
 codename="focal"
 hash="54ed3ba43e709a19d7f500ab152f2fafaf7da1f813a0ce7f7d9067ae2f7f2f73"
+arch=('amd64')
 if [[ "$(lsb_release -is)" == "Debian" ]]; then
   codename="bullseye"
   hash="9456e8b26ddd2ab3a61c7a030e7053be30ce278cfaed2c4ea72d02d2707c8ea3"

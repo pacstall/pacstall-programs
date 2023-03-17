@@ -14,6 +14,7 @@ url="https://github.com/bootandy/dust/releases/download/v${version}/dust-v${vers
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="c0e52b6cdb1b20bb5879eb3b35885915ce0932416cc02387d1bfbdc436b09ff6"
+arch=('amd64')
 repology=("project: du-dust")
 
 install() {

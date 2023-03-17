@@ -8,4 +8,5 @@ version="1.1.84.716.gc5f8b819-2"
 url="http://repository.spotify.com/pool/non-free/s/${gives}/${gives}_${version}_amd64.deb"
 description="Spotify streaming music client"
 hash="7c5708ae323cc0d83a93236761622c7ca704c24e4291e05cf734c47132597647"
+arch=('amd64')
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

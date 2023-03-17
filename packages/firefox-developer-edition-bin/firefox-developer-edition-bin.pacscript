@@ -6,6 +6,7 @@ description="The browser made for developers. All the latest developer tools in 
 url="https://download-installer.cdn.mozilla.net/pub/devedition/releases/${version}/linux-x86_64/en-US/firefox-${version}.tar.bz2"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="06a7e8f1271a9eb5a07bff75c828cc7c2a3c830b436c0bb2faccb3aa92bc4def"
+arch=('amd64')
 repology=("project: firefox" "visiblename: firefox-developer-edition")
 __icon_url="https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
 

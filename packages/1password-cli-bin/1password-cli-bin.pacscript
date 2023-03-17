@@ -6,6 +6,7 @@ version="2.13.1"
 url="https://cache.agilebits.com/dist/1P/op2/pkg/v${version}/${gives}_linux_amd64_v${version}.zip"
 description="1Password CLI"
 hash="8f9130e947cde2ecd88721d812a25a0df06265bacb8b981f24226cb140d887e9"
+arch=('amd64')
 maintainer="WRM-42 <droppings_cledet@aleeas.com>"
 
 install() {

@@ -6,4 +6,5 @@ url="https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${version}/
 description="Free office suite that combines text, spreadsheet and presentation"
 repology=("project: onlyoffice-desktopeditors")
 hash="91762fbca4541b09907e0b8629a3a079d38ceeb2ec0085eb0d396172c876ecaf"
+arch=('amd64')
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"

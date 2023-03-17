@@ -12,6 +12,7 @@ case ${codename} in
 esac
 pacdeps="onnxruntime-1-7-0-bin"
 breaks="${pkgname}"
+arch=('amd64')
 description="This plugin is meant to make it easy to replace the background in portrait images and video. It is using a neural network to predict the mask of the portrait and remove the background pixels. It's easily composable with other OBS plugins to replace the background with e.g. an image or a transparent color."
 maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {

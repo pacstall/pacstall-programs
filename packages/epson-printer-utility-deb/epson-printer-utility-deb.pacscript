@@ -6,6 +6,7 @@ depends="lsb libqtgui4"
 ppa=("gezakovacs/ppa")
 description="This is a Printer Utility program for Epson Printer Driver. Using this software, you can check ink levels, view error and other status... on EPSON Printers."
 hash="417b637173c0b866a94eb5d9785aecbcd10fc99fd1d7149eb49f02f450e6b61f"
+arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
 
 postinst() {

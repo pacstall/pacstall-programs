@@ -13,6 +13,7 @@ description="A command-line benchmarking tool"
 url="https://github.com/sharkdp/${pkgname}/releases/download/v${version}/${pkgname}-v${version}-x86_64-unknown-linux-musl.tar.gz"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="38859f8b7cb61f2d76de888eae36c78fbfcbf791fb0ef878ed2dab2a5e91bfb0"
+arch=('amd64')
 repology=("project: hyperfine")
 
 install() {

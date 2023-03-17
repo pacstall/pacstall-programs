@@ -6,4 +6,5 @@ version="111.0.5563.41"
 url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}-1_amd64.deb"
 description="The web browser built by Google - Beta channel"
 hash="dcc0dddb215add08fd768d11c4f68566228626b9b1be8db820f7ee260401d26e"
+arch=('amd64')
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

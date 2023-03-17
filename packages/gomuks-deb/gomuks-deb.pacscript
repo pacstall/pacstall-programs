@@ -7,4 +7,5 @@ version="0.2.4"
 url="https://github.com/tulir/${gives}/releases/download/v${version}/${gives}_${version}-1_amd64.deb"
 description="A terminal based Matrix client written in Go"
 hash="69f5da5d36a7a232525cdaf06baceca6d131bb2898f699cbfb236d37b3ccd94e"
+arch=('amd64')
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

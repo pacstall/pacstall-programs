@@ -25,3 +25,4 @@ case "${codename}" in
 esac
 description="FSearch is a fast file search utility, inspired by Everything Search Engine"
 maintainer="Zahrun <Zahrun@github.com>"
+arch=('amd64')

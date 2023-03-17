@@ -9,6 +9,7 @@ breaks="${pkgname} ${pkgname}-git ${pkgname}-app ${pkgname}-deb golang golang-gi
 gives="golang-go"
 replace="golang-go"
 hash="000a5b1fca4f75895f78befeb2eecf10bfff3c428597f3f1e69133b63b911b02"
+arch=('amd64')
 repology=("project: go")
 
 __goroot="${STOWDIR}/usr/local/${name}"
