@@ -6,7 +6,6 @@ depends="libselinux1 libc6 libacl1"
 replace="sed"
 description="sed (stream editor) is a non-interactive command-line text editor."
 hash="f79b0cfea71b37a8eeec8490db6c5f7ae7719c35587f21edb0617f370eeff633"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 build() {
   ./configure

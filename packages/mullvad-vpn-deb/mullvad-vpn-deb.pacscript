@@ -8,4 +8,3 @@ url="https://github.com/mullvad/mullvadvpn-app/releases/download/${version}/Mull
 description="The Mullvad VPN client app for desktop"
 hash="f8d8780988e2be3ac29a887340c4a36fdcf96e000202fa2de6850004f5051314"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

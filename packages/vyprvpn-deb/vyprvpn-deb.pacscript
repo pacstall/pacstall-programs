@@ -7,4 +7,3 @@ replace="${gives}"
 description="VyprVPN's CLI tool"
 hash="c2c67794b6f4bcdf5f2e3d1e8eeab6a2bff9f452ccc70032b9a408c9f98d5511"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

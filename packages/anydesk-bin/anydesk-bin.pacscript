@@ -9,7 +9,6 @@ depends="libc6 libgcc1 libglib2.0-0 libgtk2.0-0 libstdc++6 libx11-6 libxcb-shm0 
 description="Platform independent remote access to personal computers and other devices running the host application - Binary version"
 hash="93ce67407d855b21170e007e3dde324ad7cd0a3922206136bc0fd84d72da2b8a"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 install() {
   # Binary

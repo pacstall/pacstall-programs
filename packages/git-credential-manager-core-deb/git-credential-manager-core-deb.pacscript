@@ -8,4 +8,3 @@ url="https://github.com/GitCredentialManager/git-credential-manager/releases/dow
 description="Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services"
 hash="8f79773116998fb2001a47b5a5266cbe1a737a54325bdab27d2ce6118a84ee7d"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

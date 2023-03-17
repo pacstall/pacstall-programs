@@ -7,4 +7,3 @@ url="https://downloads.plex.tv/plex-media-server-new/${version}/debian/${gives}_
 description="Plex organizes all of your personal media so you can easily access and enjoy it"
 hash="948828797ab8a37df249c8ecb6d1de92c85849ea1eef476a5275e21fc19caf6c"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbazhy@anonaddy.me>"

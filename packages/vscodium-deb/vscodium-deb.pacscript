@@ -6,5 +6,4 @@ url="https://github.com/VSCodium/vscodium/releases/download/${version}/${gives}_
 description="Binary releases of VS Code without MS branding/telemetry/licensing"
 hash="07c77f5dd571b5e4ae6ac0ad5f3d2dca3bc2d3bb057c8dc08d7d628d6a70164f"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 repology=("project: vscodium")
