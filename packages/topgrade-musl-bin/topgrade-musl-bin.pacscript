@@ -6,6 +6,7 @@ description="Upgrades everything on your system"
 hash="49233042fa7361078e00b6b39b59672017c82ea09008ef33a603442eb62142c6"
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git ${pkgname}-bin"
 gives="${pkgname}"
+arch=('amd64')
 repology=("project: ${pkgname}")
 
 install() {

@@ -13,6 +13,7 @@ description="A Lua Lisp language"
 url="https://fennel-lang.org/downloads/fennel-${version}-x86_64"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
 hash="f3d1119cd4f226fe01c82465b53013bddc6a85ed550eadced581a5381804073b"
+arch=('amd64')
 repology=("project: fennel")
 
 install() {

@@ -14,6 +14,7 @@ version="0.76.0"
 description="A new type of shell"
 url="https://github.com/nushell/nushell/releases/download/${version}/nu-${version}-x86_64-unknown-linux-musl.tar.gz"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
+arch=('amd64')
 hash="9281e2873ee6b04b7c2101662a24d88efd091c5fb3665f67e782993e40ffe136"
 repology=("project: nushell")
 

@@ -5,6 +5,7 @@ gives="protonup-qt"
 description="Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris"
 url="https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v${version}/ProtonUp-Qt-${version}-x86_64.AppImage"
 hash="7838b5dc3612e11b63de8bae851a044f50ad7380fba79d2486a5cd392048beda"
+arch=('amd64')
 maintainer="DavidoTek <54072917+DavidoTek@users.noreply.github.com>"
 
 install() {
