@@ -6,6 +6,7 @@ url="https://github.com/sharkdp/${gives}/releases/download/v${version}/bat_${ver
 description="A cat(1) clone with wings"
 hash="1d1b629247ac23d870cfde9f8eebbb4af7468f5c7c0914d9246c50bf0c72c1fd"
 maintainer="Henryws <hwengerstickel@pm.me>"
+arch=('amd64')
 repology=("project: bat-cat")
 
 # vim:set ft=sh ts=2 sw=2 et:

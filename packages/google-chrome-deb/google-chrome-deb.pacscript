@@ -6,4 +6,5 @@ version="110.0.5481.177"
 url="https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${version}-1_amd64.deb"
 description="The popular and trusted web browser by Google"
 hash="42da4fed6d29e95d4ea5db48328d5811e3de8ade4ee9f39a40f967b09053d46b"
+arch=('amd64')
 maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"

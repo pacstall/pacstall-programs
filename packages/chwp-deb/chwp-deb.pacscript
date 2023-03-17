@@ -8,3 +8,4 @@ url="https://github.com/RouHim/chwp/releases/download/v${version}/chwp-x86-64.de
 description="Changes the wallpaper from the command line"
 maintainer="Rouven Himmelstein <rouven@himmelstein.info>"
 hash="11920df66f6a6783b28bd11ac4253dc1671cfaf63b533877472c0c2bf9c6e2ba"
+arch=('amd64')

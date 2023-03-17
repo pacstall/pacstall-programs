@@ -5,4 +5,5 @@ buildver="6.2.2-060202.202303031131"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_amd64.deb"
 description="Ubuntu Linux mainline kernel (Linux Modules)"
 hash="33588b84ed85b28c631fabd734c2f4edcb4a80b354ea23a4680ca56d1af10f71"
+arch=('amd64')
 maintainer="http.llamaz <chadano@llamawebdesign.co.uk>, Oren Klopfer <oren@taumoda.com>"

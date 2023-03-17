@@ -4,6 +4,7 @@ pkgname="nala"
 gives="${pkgname}"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
 description="Commandline frontend for the apt package manager"
+arch=('amd64')
 maintainer="Blake Lee <blake@volian.org>"
 
 release="$(lsb_release -cs)"

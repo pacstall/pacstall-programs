@@ -5,5 +5,6 @@ repology=("project: xapps")
 pacdeps=("xapps-common-deb")
 url="http://ftp.debian.org/debian/pool/main/x/xapp/libxapp1_${version}-2_amd64.deb"
 hash="88d74d4b330332fac0517e6d5d8104e504a0ca1dff0cc2d1ee4fae4597e85daa"
+arch=('amd64')
 description="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
 maintainer="Zahrun <Zahrun@github.com>"

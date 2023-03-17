@@ -6,4 +6,5 @@ version="111.0.1661.15"
 url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${version}-1_amd64.deb"
 description="The web browser from Microsoft - Beta"
 hash="d60af5e6d65ad3d1ff5f85ad3735763326806df9ce998d38e5b6d3dc65ff3a38"
+arch=('amd64')
 maintainer="WRM-42 <droppings_cledet@aleeas.com>"

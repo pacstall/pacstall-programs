@@ -9,4 +9,5 @@ replace="${gives}"
 url="https://download.nomachine.com/download/${_versionmain}/Linux/${gives}_${version}_${_arch}.deb"
 description="Remote desktop software designed for anyone who wants to access a single or multiple computers."
 hash="da75df8f6521a5947addb5204aba377876381657da811383349011acbe1140ca"
+arch=('amd64')
 maintainer="Cameron Computer <cameron.computer@pm.me>"

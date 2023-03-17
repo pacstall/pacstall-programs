@@ -8,6 +8,7 @@ url="https://download.anydesk.com/linux/${gives}-${version}-amd64.tar.gz"
 depends="libc6 libgcc1 libglib2.0-0 libgtk2.0-0 libstdc++6 libx11-6 libxcb-shm0 libxcb1 libpango1.0-dev libcairo2 libxrandr2 libx11-xcb1 libxtst6 libxfixes3 libxdamage1 libgtkglext1"
 description="Platform independent remote access to personal computers and other devices running the host application - Binary version"
 hash="93ce67407d855b21170e007e3dde324ad7cd0a3922206136bc0fd84d72da2b8a"
+arch=('amd64')
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 install() {

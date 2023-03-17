@@ -7,6 +7,7 @@ breaks="${pkgname} ${pkgname}-bin ${pkgname}-app ${pkgname}-deb"
 description="A calendar application using Akonadi to sync with external services (Nextcloud, GMail, ...)"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
 maintainer="Zahrun <Zahrun@github.com>"
+arch=('amd64')
 pkgver() {
   git ls-remote "${url}" refs/heads/master | cut -f1 | cut -c1-8
 }

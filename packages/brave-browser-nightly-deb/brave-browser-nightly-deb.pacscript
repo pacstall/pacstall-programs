@@ -6,5 +6,6 @@ replace="${gives}"
 url="https://github.com/brave/brave-browser/releases/download/v${version}/${gives}_${version}_amd64.deb"
 description="The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel"
 hash="68ce0b8bbe65ffd8c5ffaff52c78387eec328a2c15c812eaa994c331edba28f7"
+arch=('amd64')
 repology=("project: brave" "visiblename: brave-nightly")
 maintainer="Henryws <hwengerstickel@pm.me>"
