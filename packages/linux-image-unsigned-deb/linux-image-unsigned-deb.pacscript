@@ -1,9 +1,9 @@
 name="linux-image-unsigned-deb"
-gives="linux-image-unsigned-6.2.2-060202-generic"
-version="6.2.2"
-buildver="6.2.2-060202.202303031131"
+gives="linux-image-unsigned-6.3.0-060300rc2-generic"
+version="6.3.0-rc2"
+buildver="6.3.0-060300rc2.202303122031"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_amd64.deb"
 description="Ubuntu Linux mainline kernel (Unsigned image)"
-hash="1fb6a75718677721928efa639349307e9bb6cf23e0a64566ec62160336c35255"
+hash="0f74ba8fc7e3e2eb7f090877fa0f8b499c4d216ce4a19c7c49077f25c49a1ebc"
 arch=('amd64')
 maintainer="http.llamaz <chadano@llamawebdesign.co.uk>, Oren Klopfer <oren@taumoda.com>"
