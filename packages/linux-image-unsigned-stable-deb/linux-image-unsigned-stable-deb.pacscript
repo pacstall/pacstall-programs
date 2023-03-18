@@ -1,0 +1,9 @@
+name="linux-image-unsigned-stable-deb"
+gives="linux-image-unsigned-6.2.7-060207-generic"
+version="6.2.7"
+buildver="6.2.7-060207.202303170542"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_amd64.deb"
+description="Ubuntu Linux stable kernel (Unsigned image)"
+hash="78740a80eda0eda5357205d5ed00b20e3b967ffed8713d803959edd870bb7caf"
+arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"

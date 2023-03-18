@@ -1,0 +1,9 @@
+name="linux-image-unsigned-stable-arm64-deb"
+gives="linux-image-unsigned-6.2.7-060207-generic"
+version="6.2.7"
+arch=("arm64")
+buildver="6.2.7-060207.202303170542"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/arm64/${gives}_${buildver}_arm64.deb"
+description="Ubuntu Linux stable kernel (Image)"
+hash="dfcf38da8dcd5b97cf6c53fc95268d457dda475a5d375661dc7d4ba3968a8a56"
+maintainer="Oren Klopfer <oren@taumoda.com>"
