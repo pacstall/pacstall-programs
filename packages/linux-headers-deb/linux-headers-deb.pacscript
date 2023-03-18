@@ -1,6 +1,6 @@
 name="linux-headers-deb"
 gives="linux-headers-6.3.0-060300rc2"
-version="6.3.0-rc2"
+version="6.3-rc2"
 buildver="6.3.0-060300rc2.202303122031"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_all.deb"
 description="Ubuntu Linux mainline kernel (Headers)"
