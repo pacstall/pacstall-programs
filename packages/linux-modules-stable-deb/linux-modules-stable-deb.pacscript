@@ -1,0 +1,9 @@
+name="linux-modules-stable-deb"
+gives="linux-modules-6.2.7-060207-generic"
+version="6.2.7"
+buildver="6.2.7-060207.202303170542"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_amd64.deb"
+description="Ubuntu Linux stable kernel (Linux Modules)"
+hash="e7db093f428105567a7c8cc70b302e2e6a4be428a46217424bc13716e854c5ad"
+arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"

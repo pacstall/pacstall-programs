@@ -1,0 +1,9 @@
+name="linux-headers-stable-deb"
+gives="linux-headers-6.2.7-060207"
+version="6.2.7"
+buildver="6.2.7-060207.202303170542"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_all.deb"
+description="Ubuntu Linux stable kernel (Headers)"
+hash="0f868ab16e20d227d03b14ad6bb9cf30e024390f57481352e5ba6de4f925ac2d"
+arch=('any')
+maintainer="Oren Klopfer <oren@taumoda.com>"
