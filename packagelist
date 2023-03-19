@@ -65,6 +65,7 @@ distrobox
 dmenu
 dmenu-distrotube
 doas-git
+docker-bin
 dotdrop
 drawio-desktop-deb
 dropbox-deb
