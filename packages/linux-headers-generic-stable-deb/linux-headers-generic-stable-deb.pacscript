@@ -1,4 +1,4 @@
-name="linux-headers-stable-generic-deb"
+name="linux-headers-generic-stable-deb"
 gives="linux-headers-6.2.7-060207-generic"
 version="6.2.7"
 buildver="6.2.7-060207.202303170542"
