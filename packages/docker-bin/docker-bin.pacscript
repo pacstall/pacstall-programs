@@ -13,7 +13,7 @@ if [ $(dpkg --print-architecture) = arm64 ]; then
 else
   url="https://download.docker.com/linux/static/stable/x86_64/${gives}-${version}.tgz"
   hash="ec8a71e79125d3ca76f7cc295f35eea225f4450e0ffe0775f103e2952ff580f6"
-  arch=('amd64'); 
+  arch=('amd64');
 fi
 
 install() {
