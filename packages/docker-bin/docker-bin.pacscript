@@ -24,7 +24,3 @@ build() {
 install() {
   sudo cp -r ../${gives}/* -t "${pkgdir}/usr/bin"
 }
-
-postinst() {
-  sudo dockerd
-}
