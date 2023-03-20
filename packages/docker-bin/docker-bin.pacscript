@@ -16,8 +16,11 @@ else
   arch=('amd64');
 fi
 
+build() {
+  sudo mkdir -p "${pkgdir}/usr/bin"
+
 install() {
-  sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
+  sudo cp -r ${gives}/* -t "${pkgdir}/usr/bin"
 }
 
 postinst() {
