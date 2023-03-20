@@ -22,7 +22,6 @@ build() {
 }
 
 install() {
-  echo $CARCH
   sudo cp -r ../${gives}/* -t "${pkgdir}/usr/bin"
 }
 
