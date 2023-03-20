@@ -6,7 +6,7 @@ url="https://github.com/oklopfer/xfce4-settings.git"
 maintainer="oklopfer <oren@taumoda.com>"
 description="XFCE4 patch that allows PinePhonePro to auto-rotate"
 pkgver() {
-    echo 4.18.0
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="${pkgver}"
 
