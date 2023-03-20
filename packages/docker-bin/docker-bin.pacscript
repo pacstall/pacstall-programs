@@ -21,7 +21,7 @@ build() {
 }
 
 install() {
-  sudo cp -r ${gives}/* -t "${pkgdir}/usr/bin"
+  sudo cp -r ../${gives}/* -t "${pkgdir}/usr/bin"
 }
 
 postinst() {
