@@ -18,6 +18,7 @@ fi
 
 build() {
   sudo mkdir -p "${pkgdir}/usr/bin"
+}
 
 install() {
   sudo cp -r ${gives}/* -t "${pkgdir}/usr/bin"
