@@ -5,11 +5,10 @@ build_depends="xfce4-dev-tools libexo-2-dev libgarcon-1-dev libxfce4ui-2-dev"
 url="https://github.com/oklopfer/xfce4-settings.git"
 maintainer="oklopfer <oren@taumoda.com>"
 description="XFCE4 patch that allows PinePhonePro to auto-rotate"
-version="4.18.0"
-
 pkgver() {
-  "${version}"
+    echo 4.18.0
 }
+version="$(pkgver)"
 
 prepare() {
   sudo ./autogen.sh
