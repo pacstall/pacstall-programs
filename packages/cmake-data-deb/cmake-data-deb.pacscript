@@ -2,6 +2,7 @@ name="cmake-data-deb"
 gives="cmake-data"
 version="3.25.1"
 description="CMake data files (modules, templates and documentation)"
+codename="$(lsb_release -cs)"
 case ${codename} in
   bullseye)
     url="http://ftp.debian.org/debian/pool/main/c/cmake/cmake-data_${version}-1~bpo11+1_all.deb"
