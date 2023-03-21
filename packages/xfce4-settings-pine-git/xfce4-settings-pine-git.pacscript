@@ -8,7 +8,7 @@ description="XFCE4 patch that allows PinePhonePro to auto-rotate"
 pkgver() {
   echo 4.18.0
 }
-version="${pkgver}"
+version="$(pkgver)"
 
 prepare() {
   sudo ./autogen.sh
