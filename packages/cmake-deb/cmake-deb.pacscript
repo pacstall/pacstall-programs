@@ -14,6 +14,5 @@ case "${codename}" in
     hash="f78feb5db10ceacf701f41698f555c4be9fe6426f940dfd921b5c4e41fe48a7a"
     ;;
 esac
-
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
