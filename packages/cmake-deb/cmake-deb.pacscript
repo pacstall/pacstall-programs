@@ -7,7 +7,7 @@ codename="$(lsb_release -cs)"
 case "${codename}" in
   "bullseye")
     url="http://ftp.debian.org/debian/pool/main/c/cmake/cmake_${version}-1~bpo11+1_amd64.deb"
-    hash="6c7c8d91c045ccf44c9cc7dc1f05d8431707df4651bf18b4a3ee34847bc205f3"
+    hash="5561f20944ef4d9d3ea496bc92dff5b1d5adea3cfee1fa302a7298bedeb03f9e"
     ;;
   *)
     url="http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_${version}-1_amd64.deb"
