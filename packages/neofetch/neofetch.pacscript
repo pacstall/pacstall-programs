@@ -11,6 +11,10 @@ description="Command-line system information tool"
 hash="e610da6561f17c8161337d0c4115da310be576e8699fa2add64e14eeb3f3dcf1"
 maintainer="Henryws <hwengerstickel@pm.me>"
 
+preinst() {
+  echo test
+}
+
 install() {
   sudo make install DESTDIR="${pkgdir}"
 }
