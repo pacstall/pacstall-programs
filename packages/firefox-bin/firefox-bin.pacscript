@@ -6,7 +6,7 @@ url="https://download-installer.cdn.mozilla.net/pub/firefox/releases/${version}/
 description="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Henryws <hwengerstickel@pm.me>"
 arch=('amd64')
-hash="923da36b1917fbd46809d91758d776be2cea7e157e0f59c3e0d4275d1af87701"
+hash="a4075387fd907882c80a03169df258b329a29d605d7e76afe6f2d4a82a8f66c8"
 
 install() {
   cd ..
