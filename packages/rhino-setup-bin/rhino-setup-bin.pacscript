@@ -1,5 +1,4 @@
 name="rhino-setup-bin"
-url="https://github.com/rhino-linux/rhino-setup.git"
 depends="libgtk-4-dev libadwaita-1-dev gettext desktop-file-utils"
 gives="rhino-setup"
 description="Rhino Linux Setup Prompt"
