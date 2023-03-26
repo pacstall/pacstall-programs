@@ -23,5 +23,5 @@ build() {
 
 install() {
   sudo chmod +x ../usr/local/bin/${gives}
-  sudo cp -rf ../usr "${pkgdir}/usr"
+  sudo cp -rf ../usr/* "${pkgdir}/usr"
 }
