@@ -2,15 +2,11 @@
 #-*- mode: sh ;mode:lsp;-*-
 name="pacget-git"
 pkgname="pacget"
-pkgdir="/usr/src/pacstall/${name}"
-
 maintainer="Erik Lundstedt <erik@lundstedt.it>"
 url="https://gitlab.com/Erik.Lundstedt/pacget.git"
-
 license="Don't Be a Jerk"
 depends="fzf curl bash"
 description="A fully foss, lightweight fuzzysearching TUI frontend for pacstall using fzf"
-
 debian="TRUE"
 ubuntu="TRUE"
 
@@ -20,14 +16,6 @@ pkgver() {
 version="$(pkgver)"
 
 ## installation steps
-#preparations
-prepare() {
-  true
-}
-# pacget is a bashscript, no need to build anything
-build() {
-  true
-}
 #this just copies the files over and makes the file executable
 install() {
   sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"

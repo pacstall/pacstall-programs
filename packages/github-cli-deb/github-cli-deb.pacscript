@@ -6,5 +6,5 @@ version="2.21.1"
 url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version}_linux_amd64.deb"
 description="GitHub's official command line tool"
 hash="56fec432eff9468376853cae3c1c535919a30aced50b8b33109026fe881884d5"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+arch=('amd64')
 repology=("project: github-cli")

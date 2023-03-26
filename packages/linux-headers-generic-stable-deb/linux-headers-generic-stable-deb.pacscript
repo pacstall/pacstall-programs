@@ -1,0 +1,9 @@
+name="linux-headers-generic-stable-deb"
+gives="linux-headers-6.2.7-060207-generic"
+version="6.2.7"
+buildver="6.2.7-060207.202303170542"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_amd64.deb"
+description="Ubuntu Linux stable kernel (Generic headers)"
+hash="4a90d708984d6a8fab68411710be09aa2614fe1be5b5e054a872b155d15faab6"
+arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"

@@ -7,26 +7,23 @@ breaks="${pkgname} ${pkgname}-bin ${pkgname}-app ${pkgname}-deb"
 description="A calendar application using Akonadi to sync with external services (Nextcloud, GMail, ...)"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
 maintainer="Zahrun <Zahrun@github.com>"
+arch=('amd64')
 pkgver() {
   git ls-remote "${url}" refs/heads/master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
-prepare() {
-  true
-}
-
 build() {
   mkdir build && cd build || exit
-  cmake .. -DCMAKE_INSTALL_PREFIX="${STOWDIR}/${name}/usr" -GNinja
+  cmake .. -DCMAKE_INSTALL_PREFIX="${pkgdir}/usr" -GNinja
   ninja -j"$(nproc)"
 }
 
 install() {
   cd build || exit
   sudo cmake --install .
-  sudo install -Dm644 "../LICENSES/"* -t "${STOWDIR}/${name}/usr/share/licenses/${name}/"
-  cd "${STOWDIR}/${name}/usr/lib/x86_64-linux-gnu/" || exit
+  sudo install -Dm644 "../LICENSES/"* -t "${pkgdir}/usr/share/licenses/${name}/"
+  cd "${pkgdir}/usr/lib/x86_64-linux-gnu/" || exit
   sudo mkdir qt5
   sudo mv qml qt5
 }

@@ -5,4 +5,5 @@ repology=("project: nyxt" "repo: void_x86_64")
 url="https://github.com/atlas-engineer/nyxt/releases/download/${version}/nyxt_${version}_amd64.deb"
 description="Nyxt - the Internet on your terms."
 hash="ebbeb6734c97e6ab28e688c39d33ec2cd408a819163c23f73868d928a16f7e30"
+arch=('amd64')
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"

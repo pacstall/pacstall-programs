@@ -7,4 +7,5 @@ depends="libwxsqlite3-3.0-0 wx-common wx3.0-i18n"
 replace="maitreya8"
 description="Maitreya is a free software for western and Vedic astrology (Jyotish)"
 hash="22ca98a2d1e36d7b504e6341e31aec8fbe1296a933c0060a0d87be1e18d080ae"
+arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"

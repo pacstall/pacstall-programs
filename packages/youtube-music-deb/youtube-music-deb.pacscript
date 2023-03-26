@@ -5,4 +5,5 @@ version="1.19.0"
 url="https://github.com/th-ch/youtube-music/releases/download/v${version}/youtube-music_${version}_amd64.deb"
 description="YouTube Music Desktop App bundled with custom plugins (and built-in ad blocker / downloader)"
 hash="f8bebf16cd24463dd830bdf3dbd59cc6a4f44a5422a2b995f1ef8bb260325beb"
+arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"

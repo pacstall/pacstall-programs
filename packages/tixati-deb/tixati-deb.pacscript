@@ -9,4 +9,5 @@ depends="traceroute"
 url="https://download2.tixati.com/download/${gives}_${version}-1_amd64.deb"
 description="Tixati is a peer-to-peer file sharing program that uses the popular BitTorrent protocol"
 hash="c2c66a75389744696c98404eb11b9138cb835f57dd8f6ef212287c47ca0ea8ac"
+arch=('amd64')
 maintainer="heyzsh <haidarzsh@gmail.com>"

@@ -12,6 +12,7 @@ case ${codename} in
 esac
 pacdeps="onnxruntime-1-7-0-bin"
 breaks="${pkgname}"
+arch=('amd64')
 description="This plugin is meant to make it easy to replace the background in portrait images and video. It is using a neural network to predict the mask of the portrait and remove the background pixels. It's easily composable with other OBS plugins to replace the background with e.g. an image or a transparent color."
 maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {
@@ -33,11 +34,11 @@ prepare() {
 
 build() {
   mkdir build && cd build || exit
-  cmake -DobsIncludePath=/usr/include/obs -DCMAKE_INSTALL_PREFIX:PATH="${STOWDIR}"/"${name}"/usr .. > /dev/null && cmake --build . -j"$(nproc)" > /dev/null
+  cmake -DobsIncludePath=/usr/include/obs -DCMAKE_INSTALL_PREFIX:PATH="${pkgdir}"/usr .. > /dev/null && cmake --build . -j"$(nproc)" > /dev/null
 }
 
 install() {
   cd build || exit
   sudo cmake --install . > /dev/null
-  sudo install -Dm644 "../LICENSE" -t "${STOWDIR}/${name}/usr/share/licenses/${name}"
+  sudo install -Dm644 "../LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
 }

@@ -5,4 +5,5 @@ version="4.4.0"
 url="https://github.com/lakinduakash/linux-wifi-hotspot/releases/download/v4.4.0/linux-wifi-hotspot_${version}_amd64.deb"
 description="Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface. It is also able to create a hotspot using the same wifi card which is connected to an AP already ( Similar to Windows 10)."
 hash="f59a6da3cf02ba4e496376f355b5d690343125891d3fa8c22d5430c56fc4aa85"
+arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"

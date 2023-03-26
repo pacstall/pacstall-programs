@@ -7,20 +7,20 @@ build_depends="extra-cmake-modules ninja-build"
 description="System default icon theme of CutefishOS."
 
 pkgver() {
-    git ls-remote "${url}" main | cut -f1 | cut -c1-8
+  git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 prepare() {
-    mkdir build
-    cd build
+  mkdir build
+  cd build
 }
 
 build() {
-    cmake ..
-    make -j$(nproc)
+  cmake ..
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/cutefish-icons-git
+  sudo make install DESTDIR="${pkgdir}"
 }

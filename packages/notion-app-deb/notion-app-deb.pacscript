@@ -8,4 +8,5 @@ replace="${pkgname}"
 gives="${pkgname}"
 description="The all-in-one workspace for your notes and tasks"
 hash="7246fb0485cc6ecd5f5381d0568b29d77afff3628ee42a486f39d5af8728ff4e"
+arch=('amd64')
 maintainer="IOplus <issa20omais@outlook.com>"

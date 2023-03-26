@@ -1,0 +1,11 @@
+name="firefox-arm64-deb"
+gives="firefox"
+version="111.0.1+build2"
+ubversion="23.04"
+arch=("arm64")
+repology=("project: ${gives}")
+incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye" "debian:sid")
+url="https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/${gives}/${gives}_${version}-0ubuntu0.${ubversion}.1~mt1_arm64.deb"
+description="Free and open-source web browser developed by the Mozilla Foundation"
+maintainer="Oren Klopfer <oren@taumoda.com>"
+hash="7cc72011809c7f1a13f5530b575ad4bb35b219cf7a8be50578aaa0b935d061c6"

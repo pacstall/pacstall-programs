@@ -7,17 +7,16 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="oil"
-pkgdir="${STOWDIR}/${name}"
-version="0.13.1"
+version="0.14.1"
 description="A bash-compatible UNIX shell written in Python"
 url="https://www.oilshell.org/download/oil-${version}.tar.xz"
 gives="oil"
 breaks="${name}-bin ${name}-git ${name}-deb ${name}-app"
-hash="2732a7af26d569774e54c97f3817b416a05389091cc526404f1ef73b6b39db89"
+hash="441edcc9efe356d1906387fa5655fb54d7eb089702a329caf6b45c9226233049"
 repology=("project: oil-shell")
 
 # Edit MAKEFLAGS here
-MAKEFLAGS=
+MAKEFLAGS=()
 
 prepare() {
   mkdir -p tmp
@@ -28,7 +27,7 @@ build() {
 
   # We want this to expand
   # shellcheck disable=SC2248
-  make -j"$(nproc)" ${MAKEFLAGS}
+  make -j"$(nproc)" "${MAKEFLAGS[@]}"
 }
 
 install() {

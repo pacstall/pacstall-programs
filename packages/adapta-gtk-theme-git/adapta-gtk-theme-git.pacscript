@@ -20,5 +20,5 @@ build() {
 }
 
 install() {
-  sudo make install DESTDIR="${STOWDIR}/${name}"
+  sudo make install DESTDIR="${pkgdir}"
 }

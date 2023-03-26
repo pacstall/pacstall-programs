@@ -17,16 +17,13 @@ optdepends=("libxcb-xkb-dev: xkeyboard"
   "libnl-genl-3-dev: network")
 repology=("project: polybar")
 
-prepare() {
-    mkdir build
-    cd build
-}
-
 build() {
-    cmake ..
-    make -j$(nproc)
+  mkdir build && cd build
+  cmake ..
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/polybar
+  cd build/
+  sudo make install DESTDIR="${pkgdir}"
 }

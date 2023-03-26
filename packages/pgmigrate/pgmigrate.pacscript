@@ -10,14 +10,10 @@ description="Simple tool to evolve PostgreSQL schema easily"
 hash="ba39ee6198b1132a5306c3cce79d16644c507d7be999fbcc9c039cd3307693f6"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
-prepare() {
-  true
-}
-
 build() {
   python3 setup.py build
 }
 
 install() {
-  sudo python3 setup.py install --root="${STOWDIR}/${name}" --optimize=1
+  sudo python3 setup.py install --root="${pkgdir}" --optimize=1
 }

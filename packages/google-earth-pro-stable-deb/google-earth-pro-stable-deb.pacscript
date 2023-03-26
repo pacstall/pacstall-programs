@@ -7,3 +7,4 @@ breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app ${pkgname}-deb"
 gives="${pkgname}"
 description="Renders a 3D representation of Earth based primarily on satellite imagery"
 hash="d345ee688720f6e1ed44f6a52f2a08518e3d88b746ba520cc2c8553ac070a6b3"
+arch=('amd64')

@@ -6,4 +6,4 @@ url="http://deb.anydesk.com/pool/main/a/${gives}/${gives}_${version}_amd64.deb"
 breaks="${gives}-bin"
 description="AnyDesk provides platform independent remote access to personal computers and other devices running the host application"
 hash="0428029fa9f7fb23c593fad76cfbf94c18f1c84af7aebd69720962dd5c8b77b7"
-maintainer="WRM-42 <droppings_cledet@aleeas.com>"
+arch=('amd64')

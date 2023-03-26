@@ -7,17 +7,9 @@ version="2.7.1"
 description="A fast, simple, recursive content discovery tool written in Rust"
 url="https://github.com/epi052/${gives}/releases/download/${version}/x86_64-linux-${gives}.tar.gz"
 hash="62d088a480f0fc68d3344dc2860f6dc1939deeeb54e9d2dd23513878e97da6cc"
+arch=('amd64')
 breaks="${pkgname} ${pkgname}-deb ${pkgname}-git"
-pkgdir="${STOWDIR}/${name}"
 repology=("project: ${pkgname}")
-
-prepare() {
-  true
-}
-
-build() {
-  true
-}
 
 install() {
   # Install bin

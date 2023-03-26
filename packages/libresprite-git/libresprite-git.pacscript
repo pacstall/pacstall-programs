@@ -8,7 +8,7 @@ breaks="aseprite libresprite-bin libresprite-app libresprite-deb libresprite"
 gives="libresprite, aseprite"
 
 pkgver() {
-    git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
@@ -37,11 +37,13 @@ build() {
     -DFREETYPE_INCLUDE_DIR="/usr/include/freetype2" \
     -DCMAKE_INSTALL_PREFIX:STRING="/usr" ..
   ninja libresprite
+  # shellcheck disable=SC2103
   cd ..
 }
 
 install() {
   cd build
-  sudo DESTDIR="$STOWDIR/$name" ninja install
+  sudo DESTDIR="${pkgdir}" ninja install
+  # shellcheck disable=SC2103
   cd ..
 }

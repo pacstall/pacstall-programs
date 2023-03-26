@@ -1,9 +1,10 @@
 name="onlyoffice-desktopeditors-deb"
 gives="onlyoffice-desktopeditors"
-version="7.2.1"
+version="7.3.0"
 replace="${gives}"
 url="https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${version}/onlyoffice-desktopeditors_amd64.deb"
-description="ONLYOFFICE Desktop Editors is a free office suite that combines text, spreadsheet and presentation editors"
+description="Free office suite that combines text, spreadsheet and presentation"
 repology=("project: onlyoffice-desktopeditors")
-hash="16519e98718803b29e54e81b09a231406ddb0342ab68320ebb9508a312e0b5de"
+hash="91762fbca4541b09907e0b8629a3a079d38ceeb2ec0085eb0d396172c876ecaf"
+arch=('amd64')
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"

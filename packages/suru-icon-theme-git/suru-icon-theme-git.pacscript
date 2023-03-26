@@ -6,14 +6,10 @@ url="https://github.com/snwh/${name}.git"
 build_depends="meson ninja-build"
 description="Revitalization of the Suru icon set designed for Ubuntu Touch"
 
-prepare() {
-    true
-}
-
 build() {
-    meson "build" --prefix=/usr/src/pacstall/suru-icon-theme-git/usr
+  meson "build" --prefix="${pkgdir}/usr"
 }
 
 install() {
-    sudo ninja -C "build" install > /dev/null
+  sudo ninja -C "build" install > /dev/null
 }

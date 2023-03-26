@@ -11,14 +11,6 @@ breaks="${name} ${name}-git"
 depends="gtk-update-icon-cache"
 build_depends="make"
 
-prepare() {
-    true
-}
-
-build() {
-    true
-}
-
 install() {
-    sudo make DESTDIR="${STOWDIR}/${name}" install
+  sudo make DESTDIR="${pkgdir}" install
 }

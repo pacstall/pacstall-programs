@@ -5,5 +5,6 @@ gives="emby-server"
 breaks="${gives} ${gives}-bin ${gives}-git"
 url="https://github.com/MediaBrowser/Emby.Releases/releases/download/${version}/${name}_${version}_amd64.deb"
 hash="8f04b6def1dc8d824dcb915d10fb69ea8c9d26aa1124fbf8d21ed496fba43b08"
+arch=('amd64')
 description="Emby brings together your personal videos, music, photos, and live television"
 maintainer="Warofzen <warofzen1@protonmail.com>"

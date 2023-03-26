@@ -12,13 +12,13 @@ hash="59d9597840335b0d71afd287bec09260e172ff89e14d6d12c3416f23557974ee"
 repology=("project: gnome-tweaks")
 
 prepare() {
-          meson builddir
+  meson builddir
 }
 
 build() {
-        ninja -C builddir
+  ninja -C builddir
 }
 
 install() {
-          sudo DESTDIR=/usr/src/pacstall/gnome-tweaks ninja -C builddir install -j$(nproc)
+  sudo DESTDIR="${pkgdir}" ninja -C builddir install -j"$(nproc)"
 }

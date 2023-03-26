@@ -7,17 +7,16 @@ depends="libncurses5-dev libncursesw5-dev"
 replace="htop"
 description="htop is a cross-platform interactive process viewer."
 hash="b5ffac1949a8daaabcffa659c0964360b5008782aae4dfa7702d2323cfb4f438"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 prepare() {
-    ./autogen.sh
-    ./configure
+  ./autogen.sh
+  ./configure
 }
 
 build() {
-   make -j$(nproc)
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install DESTDIR=/usr/src/pacstall/htop
-    sudo install -Dm755 htop.desktop -t /usr/src/pacstall/htop/usr/share/applications
+  sudo make install DESTDIR="${pkgdir}"
+  sudo install -Dm755 htop.desktop -t "${pkgdir}/usr/share/applications"
 }

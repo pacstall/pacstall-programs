@@ -8,16 +8,7 @@ depends="python3 network-manager network-manager-openvpn openvpn gir1.2-nm-1.0 l
 build_depends="python3-setuptools python3-xdg python3-xdg python3-distro python3-keyring"
 description="The ProtonVPN NM (NetworkManager) Library is intended for every ProtonVPN service user"
 hash="c8193defd5722a460b4628c54fbc55556caa525e70476a7e15fccf06f155cd97"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
-
-prepare() {
-  true
-}
-
-build() {
-  true
-}
 
 install() {
-  sudo python3 setup.py install --root="${STOWDIR}/${name}" --optimize=1
+  sudo python3 setup.py install --root="${pkgdir}" --optimize=1
 }

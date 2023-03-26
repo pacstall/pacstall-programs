@@ -5,4 +5,5 @@ gives="dbeaver-ce"
 url="https://github.com/dbeaver/dbeaver/releases/download/${version}/dbeaver-ce_${version}_amd64.deb"
 description="Free universal database tool and SQL client"
 hash="c0de1b04a2141475027f873311c509e903522993bc134e0f730dcf37fae8be88"
+arch=('amd64')
 maintainer="KwonNam Son <kwon37xi@gmail.com>"

@@ -6,4 +6,4 @@ version="3.10.0"
 url="https://repo.ivpn.net/stable/pool/${gives}_${version}_amd64.deb"
 description="Official IVPN Desktop app - Base Package"
 hash="cae1e13e04dfc8c721d2adcb9712d99db443701cede02cc9b44ba349c1559cbf"
-maintainer="WRM-42 <droppings_cledet@aleeas.com>"
+arch=('amd64')

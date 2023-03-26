@@ -12,15 +12,15 @@ description="Stellarium is a free open source planetarium for your computer. It 
 hash="4c4545cd7f9707dd40d9e48b8b7358b6f68da4be3501cda262f63051ad080aa9"
 
 prepare() {
-    mkdir -p build/unix
-    cd build/unix
+  mkdir -p build/unix
+  cd build/unix
 }
 
 build() {
-    cmake -DCMAKE_INSTALL_PREFIX="/" -j$(nproc) ../..
-    make -j$(nproc)
+  cmake -DCMAKE_INSTALL_PREFIX="/" -j"$(nproc)" ../..
+  make -j"$(nproc)"
 }
 
 install() {
-    sudo make install -j$(nproc) DESTDIR=/usr/src/pacstall/stellarium
+  sudo make install -j"$(nproc)" DESTDIR="${pkgdir}"
 }

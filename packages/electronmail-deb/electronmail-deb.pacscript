@@ -7,4 +7,4 @@ version="5.1.2"
 url="https://github.com/vladimiry/ElectronMail/releases/download/v${version}/${gives}-${version}-linux-amd64.deb"
 description="Unofficial ProtonMail Desktop App"
 hash="1901a591fb59c20182d1c40177a282b99ff6b4b16909528b39c67493dce5764f"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+arch=('amd64')

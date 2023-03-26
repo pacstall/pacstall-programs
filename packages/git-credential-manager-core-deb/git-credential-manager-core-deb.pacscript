@@ -7,4 +7,4 @@ depends="git"
 url="https://github.com/GitCredentialManager/git-credential-manager/releases/download/v${version}/${gives}-linux_amd64.${version}.deb"
 description="Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services"
 hash="8f79773116998fb2001a47b5a5266cbe1a737a54325bdab27d2ce6118a84ee7d"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+arch=('amd64')

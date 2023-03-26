@@ -7,23 +7,16 @@ depends="groff less"
 build_depends="unzip"
 replace="awscli"
 repology=("project: awscli")
+arch=('amd64')
 hash="20826e1647c45c1e28715eb32dd073e8106c9a11506624af6e4c2d628fac9f92"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
-  sudo ./install --install-dir "${STOWDIR}/${name}/usr/local/aws-cli" --bin-dir "/usr/local/bin"
+  sudo ./install --install-dir "${pkgdir}/usr/local/aws-cli" --bin-dir "/usr/local/bin"
 
   # bash autocompletion
   echo "complete -C '/usr/local/bin/aws_completer' aws" > "aws-cli_bash_completion"
 
-  sudo install -Dm644 aws-cli_bash_completion "${STOWDIR}/${name}/etc/bash_completion.d/${pkgname}"
+  sudo install -Dm644 aws-cli_bash_completion "${pkgdir}/etc/bash_completion.d/${pkgname}"
 }
 
 removescript() {

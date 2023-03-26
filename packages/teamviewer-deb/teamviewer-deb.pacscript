@@ -9,5 +9,6 @@ depends="libqt5x11extras5 libqt5quickcontrols2-5 libqt5webengine5 libqt5svg5 hic
 url="https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
 description="Application for remote desktop sharing and online meetings"
 license="custom"
-hash="7fc07489bb4adf733257406104b0648b51bbd1999c4d694be118884a4bfca539"
+hash="6458c6a71da6ef658ec5b890029e6fa67f0bd70b1ffba84e702a9da9a280f862"
+arch=('amd64')
 maintainer="heyzsh <haidarzsh@gmail.com>"

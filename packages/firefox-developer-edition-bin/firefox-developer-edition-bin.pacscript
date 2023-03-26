@@ -1,37 +1,23 @@
 name="firefox-developer-edition-bin"
 maintainer="Paul Cosma (saenai255) <paul.cosma97@gmail.com>"
 pkgname="firefox-developer-edition"
-version="106.0b9"
+version="111.0b5"
 description="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
 url="https://download-installer.cdn.mozilla.net/pub/devedition/releases/${version}/linux-x86_64/en-US/firefox-${version}.tar.bz2"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-hash="d7cef4f3c7330ad8b2e92f70ed587d004df97967be2053feacf718b0eee228a7"
+hash="06a7e8f1271a9eb5a07bff75c828cc7c2a3c830b436c0bb2faccb3aa92bc4def"
+arch=('amd64')
 repology=("project: firefox" "visiblename: firefox-developer-edition")
 __icon_url="https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
 
-prepare() {
-  true
-}
-
-build() {
-  true
-}
-
 install() {
+  cd ..
   # Make dirs and assign permissions
-  sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo cp -r ./* "${pkgdir}"
-  sudo touch "${pkgdir}/usr/bin/${pkgname}"
-  sudo chmod 755 "${pkgdir}/usr/bin/${pkgname}"
-
-  # Make a shellscript proxy because copying the binary won't work
-  sudo tee "${pkgdir}/usr/bin/${pkgname}" > /dev/null << END
-#!/bin/bash
-${pkgdir}/firefox "\$@"
-END
+  sudo mkdir -p "${pkgdir}/opt/firefox-developer-edition"
+  sudo cp -r firefox/* "${pkgdir}/opt/firefox-developer-edition"
 
   # Install the icon for the desktop file
-  wget -O "${pkgname}.png" "${__icon_url}"
+  wget -q -O "${pkgname}.png" "${__icon_url}"
   sudo install -Dm644 "${pkgname}.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
 
   # Install the desktop file
