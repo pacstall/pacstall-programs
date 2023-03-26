@@ -19,7 +19,7 @@ else
 fi
 
 build() {
-  mkdir -p "${pkgdir}/usr"
+  sudo mkdir -p "${pkgdir}/usr"
 }
 
 install() {
