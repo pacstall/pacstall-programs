@@ -1,5 +1,5 @@
 name="rhino-setup-bin"
-depends="libgtk-4-dev libadwaita-1-dev gettext desktop-file-utils"
+depends="gettext desktop-file-utils"
 gives="rhino-setup"
 description="Rhino Linux Setup Prompt"
 maintainer="Sourajyoti Basak <wiz28@protonmail.com>, Oren Klopfer <oren@taumoda.com>"
@@ -22,5 +22,6 @@ build() {
 }
 
 install() {
+  sudo chmod +x ../usr/local/bin/${gives}
   sudo cp -rf ../usr "${pkgdir}/usr"
 }
