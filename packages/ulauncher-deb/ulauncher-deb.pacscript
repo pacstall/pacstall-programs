@@ -1,7 +1,10 @@
 name="ulauncher-deb"
-version="5.14.3"
 gives="ulauncher"
-url="https://github.com/Ulauncher/Ulauncher/releases/download/${version}/ulauncher_${version}_all.deb"
+version="5.15.2"
+arch=("any")
+repology=("project: ${gives}")
+depends="python3-pyinotify gir1.2-keybinder-3.0 gir1.2-webkit2-4.0 gir1.2-notify-0.7 python3-levenshtein python3-websocket python3-xdg wmctrl"
+url="https://github.com/Ulauncher/Ulauncher/releases/download/${version}/${gives}_${version}_all.deb"
 description="Application launcher for Linux"
-hash="fb71520e84a6d0541f10bdf2a42a22986e2f780dadc60a2d2d36c44c7449cafb"
-maintainer="Fahri Korkmaz <fahri.korkmaz@protonmail.ch>"
+maintainer="oklopfer <oren@taumoda.com>"
+hash="41f00a95cd4490a3294a38677ee9eabc0162294e61a21a4d790a46a7a3309633"
