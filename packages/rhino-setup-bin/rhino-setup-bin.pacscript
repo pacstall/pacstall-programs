@@ -1,5 +1,5 @@
 name="rhino-setup-bin"
-depends="gettext desktop-file-utils"
+depends="gettext desktop-file-utils libadwaita-1-0"
 gives="rhino-setup"
 description="Rhino Linux Setup Prompt"
 maintainer="Sourajyoti Basak <wiz28@protonmail.com>, Oren Klopfer <oren@taumoda.com>"
