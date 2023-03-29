@@ -1,9 +1,0 @@
-name="linux-modules-arm64-deb"
-gives="linux-modules-6.3.0-060300rc2-generic"
-version="6.3-rc2"
-arch=("arm64")
-buildver="6.3.0-060300rc2.202303122031"
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/arm64/${gives}_${buildver}_arm64.deb"
-description="Ubuntu Linux mainline kernel (Modules)"
-hash="c4c1d8bebc31088c372845908a9ae04b7921a08cd1d8950169412b9a57db5a36"
-maintainer="Oren Klopfer <oren@taumoda.com>"
