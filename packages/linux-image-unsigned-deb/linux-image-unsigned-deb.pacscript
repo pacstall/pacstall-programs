@@ -2,7 +2,7 @@ name="linux-image-unsigned-deb"
 gives="linux-image-unsigned-6.3.0-060300rc4-generic"
 version="6.3-rc4"
 buildver="6.3.0-060300rc4.202303262231"
-if [[ $CARCH == arm64 ]]; then
+if [[ ${CARCH} == "arm64" ]]; then
    hash="42ed6c046f987efe73067f7059d92567a8f954d461796b548a79d9c00e2e74a6"
    arch=('arm64');
  else

@@ -2,7 +2,7 @@ name="linux-headers-generic-deb"
 gives="linux-headers-6.3.0-060300rc4-generic"
 version="6.3-rc4"
 buildver="6.3.0-060300rc4.202303262231"
-if [[ $CARCH == arm64 ]]; then
+if [[ ${CARCH} == "arm64" ]]; then
    hash="96ed11bb4d39e8e248aa7eb8a02637fe1995864ce8b20b37459d8048b48f1f35"
    arch=('arm64');
  else

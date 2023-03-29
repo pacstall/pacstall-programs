@@ -2,7 +2,7 @@ name="linux-modules-deb"
 gives="linux-modules-6.3.0-060300rc4-generic"
 version="6.3-rc4"
 buildver="6.3.0-060300rc4.202303262231"
-if [[ $CARCH == arm64 ]]; then
+if [[ ${CARCH} == "arm64" ]]; then
    hash="b42d4c192e57c10f6ab7332d292e89c5d30d88185c294aacfc9e62ef7104315f"
    arch=('arm64');
  else
