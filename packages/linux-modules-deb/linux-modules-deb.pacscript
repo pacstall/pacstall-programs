@@ -1,9 +1,14 @@
 name="linux-modules-deb"
-gives="linux-modules-6.3.0-060300rc2-generic"
-version="6.3-rc2"
-buildver="6.3.0-060300rc2.202303122031"
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_amd64.deb"
+gives="linux-modules-6.3.0-060300rc4-generic"
+version="6.3-rc4"
+buildver="6.3.0-060300rc4.202303262231"
+if [[ ${CARCH} == "arm64" ]]; then
+   hash="b42d4c192e57c10f6ab7332d292e89c5d30d88185c294aacfc9e62ef7104315f"
+   arch=('arm64');
+ else
+   hash="d17065e80dfaf818c61f63fbcdc833b51acd2755014553f5a06a8b66628d43b5"
+   arch=('amd64');
+fi
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
 description="Ubuntu Linux mainline kernel (Linux Modules)"
-hash="1470162b134bf71afddc658c8ede19f576a0ec6af90854e32f316786d988b9c3"
-arch=('amd64')
 maintainer="http.llamaz <chadano@llamawebdesign.co.uk>, Oren Klopfer <oren@taumoda.com>"
