@@ -4,7 +4,7 @@ if [[ ${CARCH} == "arm64" ]]; then
   version="110.0.5481.178"
   url="https://github.com/Alex313031/Thorium-Special/releases/download/M${version}_1/thorium-browser_${version}_${CARCH}.deb"
   hash="a429dbb25b30a79674bf4501a541cef6f96b1b5c7c928204535ff726ec56e699"
-  arch=("arm64");
+  arch=("arm64")
 else
   version="110.0.5481.178"
   url="https://github.com/Alex313031/Thorium/releases/download/M${version}/thorium-browser_${version}_${CARCH}.deb"
