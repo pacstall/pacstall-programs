@@ -9,7 +9,7 @@ else
   version="110.0.5481.178"
   url="https://github.com/Alex313031/Thorium/releases/download/M${version}/thorium-browser_${version}_${CARCH}.deb"
   hash="364492a23ca0bdd6bc2d7ad6d76d9851c4500316d311ada3c22199de1437adb7"
-  arch=('amd64');
+  arch=('amd64')
 fi
 maintainer="oklopfer <oren@taumoda.com>"
 description="Chromium fork for linux with extra patches"
