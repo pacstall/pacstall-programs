@@ -11,7 +11,7 @@ pkgver() {
   git ls-remote "${url}" refs/heads/main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
-incompatible=('ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'debian:bullseye')
+incompatible=('ubuntu:jammy' 'ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'debian:bullseye')
 
 build() {
   mkdir build && cd build || exit
