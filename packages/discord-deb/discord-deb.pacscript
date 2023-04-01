@@ -1,9 +1,9 @@
 name="discord-deb"
 gives="discord"
 breaks="${gives} ${gives}-app ${gives}-debian-patched-deb"
-version="0.0.24"
+version="0.0.26"
 description="Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities"
-hash="ba18836ccdb7a2d8e1914a096e2189317a6459c7af2c493d9a34bc81fcbca320"
+hash="7bf15e279743ecde33acdf81974de23d35b1ac9acdee151602f096e4d40d1129"
 maintainer="Obsidian <emil@aarestrup.nu>"
 arch=('amd64')
 url="https://dl.discordapp.net/apps/linux/${version}/discord-${version}.deb"
