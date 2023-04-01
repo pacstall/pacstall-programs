@@ -1,9 +1,9 @@
 name="internxt-deb"
 gives="internxt-drive"
-version="1.9.7"
+version="1.9.8"
 repology=("project: ${gives}")
 url="https://github.com/internxt/drive-desktop/releases/download/v${version}/internxt-drive_${version}_amd64.deb"
 description="The safest cloud storage for all your files, photos, and more"
-hash="c98fff26387c689ad45208e8b2271784fca9443a4f0ed5ecca95b2b3b160cc5b"
+hash="78bec395237cf07815460600e96f6d9f729338dfd8f52003f3763c1816ecbd6b"
 arch=('amd64')
 maintainer="Henryws <hwengerstickel@pm.me>"
