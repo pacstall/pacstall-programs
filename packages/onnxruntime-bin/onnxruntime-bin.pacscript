@@ -3,7 +3,7 @@ pkgname="onnxruntime"
 repology=("project: onnxruntime")
 version="1.14.1"
 url="https://github.com/microsoft/onnxruntime/releases/download/v${version}/onnxruntime-linux-x64-${version}.tgz"
-description="ONNX Runtime is a cross-platform inference and training machine-learning accelerator."
+description="Cross-platform inference and training machine-learning accelerator"
 hash="010585f534d822bf02d54c7cfc53b57aa3eb0cf34f8fb7503ee519ed18e25d29"
 maintainer="Zahrun <Zahrun@github.com>"
 
