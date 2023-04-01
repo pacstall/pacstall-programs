@@ -1,7 +1,7 @@
 name="obs-backgroundremoval-0-4-0"
 version="0.4.0"
 url="https://codeload.github.com/royshil/obs-backgroundremoval/tar.gz/refs/tags/v${version}"
-build_depends="libobs-dev libopencv-dev wget git build-essential cmake"
+build_depends="libobs-dev libopencv-dev cmake"
 # install required dependency for codename > focal
 codename="$(lsb_release -cs)"
 case "${codename}" in
