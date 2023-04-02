@@ -22,11 +22,14 @@ install() {
 
   # Install .desktop file
   sudo install -Dm644 "${SRCDIR}/wezterm/usr/share/applications/org.wezfurlong.wezterm.desktop" "${pkgdir}/usr/share/applications/org.wezfurlong.wezterm.desktop"
+
+  # Install wezterm.sh script
+  sudo install -Dm755 "${SRCDIR}/wezterm/etc/profile.d/wezterm.sh" "${pkgdir}/etc/profile.d/wezterm.sh"
 }
 
 postinst() {
-  sudo chmod +x "${SRCDIR}/wezterm/etc/profile.d/wezterm.sh"
-  sudo "${SRCDIR}/wezterm/etc/profile.d/wezterm.sh"
+  # Run wezterm.sh script to hook up shell integration
+  sudo "/etc/profile.d/wezterm.sh"
 }
 
 removescript() {
