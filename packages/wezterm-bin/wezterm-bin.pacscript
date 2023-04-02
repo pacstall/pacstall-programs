@@ -10,7 +10,6 @@ repology=("project: wezterm")
 maintainer="smokeythemonkey <smokeythemonkey@posteo.net>"
 
 install() {
-
   # Install Binaries
   sudo install -Dm755 "${SRCDIR}/wezterm/usr/bin/wezterm" -t "${pkgdir}/usr/bin/"
   sudo install -Dm755 "${SRCDIR}/wezterm/usr/bin/open-wezterm-here" "${pkgdir}/usr/bin/"
@@ -25,7 +24,7 @@ install() {
   sudo install -Dm644 "${SRCDIR}/wezterm/usr/share/applications/org.wezfurlong.wezterm.desktop" "${pkgdir}/usr/share/applications/org.wezfurlong.wezterm.desktop"
 }
 
-postinst(){
+postinst() {
   sudo chmod +x "${SRCDIR}/wezterm/etc/profile.d/wezterm.sh"
   sudo "${SRCDIR}/wezterm/etc/profile.d/wezterm.sh"
 }
