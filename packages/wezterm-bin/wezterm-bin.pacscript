@@ -40,6 +40,6 @@ removescript() {
 
   # Delete wezterm config
   if ask "Do you want to delete wezterm config files?" N; then
-    rm -rf ~/.config/.wezterm/
+    rm -rf "${homedir}/.config/.wezterm/"
   fi
 }
