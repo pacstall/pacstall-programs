@@ -16,8 +16,8 @@ postinst() {
   ID=ubuntu
   ID_LIKE=debian
   HOME_URL=\"https://rhinolinux.org/\"
-  SUPPORT_URL="https://github.com/rhino-linux"
-  BUG_REPORT_URL="https://github.com/rhino-linux"
-  PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+  SUPPORT_URL=\"https://github.com/rhino-linux\"
+  BUG_REPORT_URL=\"https://github.com/rhino-linux\"
+  PRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"
   UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
 }
