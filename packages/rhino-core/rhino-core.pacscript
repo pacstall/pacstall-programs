@@ -8,7 +8,7 @@ version="2023.1"
 style="(beta)"
 branch="devel"
 postinst() {
-  echo 'PRETTY_NAME="Rhino Linux ${version} ${style}"
+  echo "PRETTY_NAME="Rhino Linux ${version} ${style}"
   NAME="Rhino Linux"
   VERSION_ID="${version}"
   VERSION="${version} ${style}"
@@ -19,5 +19,5 @@ postinst() {
   SUPPORT_URL="https://github.com/rhino-linux"
   BUG_REPORT_URL="https://github.com/rhino-linux"
   PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-  UBUNTU_CODENAME="${branch}"' | sudo tee /usr/lib/os-release > /dev/null
+  UBUNTU_CODENAME="${branch}"" | sudo tee /usr/lib/os-release > /dev/null
 }
