@@ -9,7 +9,7 @@ style="(beta)"
 branch="devel"
 postinst() {
   echo "PRETTY_NAME=\"Rhino Linux ${version} ${style}\"
-  NAME="Rhino Linux"
+  NAME=\"Rhino Linux\"
   VERSION_ID=\"${version}\"
   VERSION=\"${version} ${style}\"
   VERSION_CODENAME=\"${branch}\"
