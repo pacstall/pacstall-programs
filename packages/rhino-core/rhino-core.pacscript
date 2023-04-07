@@ -12,7 +12,7 @@ postinst() {
   NAME="Rhino Linux"
   VERSION_ID="${version}"
   VERSION="${version} ${style}"
-  VERSION_CODENAME="${branch}"
+  VERSION_CODENAME=\"${branch}\"
   ID=ubuntu
   ID_LIKE=debian
   HOME_URL="https://rhinolinux.org/"
