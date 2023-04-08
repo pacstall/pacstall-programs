@@ -1,11 +1,11 @@
 name="helix"
-version="22.12"
+version="23.03"
 repology=("project: helix")
 url="https://github.com/helix-editor/helix/releases/download/${version}/helix-${version}-source.tar.xz"
 build_depends="cargo"
 description="A post-modern modal text editor"
 maintainer="Marcin Puc <tranzystorek.io@protonmail.com>"
-hash="295b42a369fbc6282693eb984a77fb86260f7baf3ba3a8505d62d1c619c2f3f4"
+hash="60e5d8927f2f43807ff4ed3c96e7071746ce23d0b7ebaa27e380723726710703"
 
 build() {
   cargo build -j"$(nproc)" --release --locked
