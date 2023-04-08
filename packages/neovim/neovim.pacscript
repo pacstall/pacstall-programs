@@ -1,10 +1,10 @@
 name="neovim"
-version="0.8.3"
+version="0.9.0"
 url="https://github.com/neovim/neovim/archive/refs/tags/v${version}.tar.gz"
 build_depends="gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip build-essential"
 replace="neovim nvim neovim-runtime"
 description="Neovim is a vim fork maintained by the community"
-hash="adf45ff160e1d89f519b6114732eba03485ae469beb27919b0f7a4f6b44233c1"
+hash="39d79107c54d2f3babcad2cd157c399241c04f6e75e98c18e8afaf2bb5e82937"
 maintainer="Henryws <hwengerstickel@pm.me>"
 repology=("project: ${name}")
 

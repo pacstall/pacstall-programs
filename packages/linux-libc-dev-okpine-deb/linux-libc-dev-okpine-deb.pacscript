@@ -1,0 +1,9 @@
+name="linux-libc-dev-okpine-deb"
+gives="linux-libc-dev"
+replace="${gives}"
+version="6.3.0-rc5"
+url="https://github.com/oklopfer/debs/raw/master/kernel/${version}/${gives}_${version}-1_arm64.deb"
+hash="298e6945274aa49dc9c3ee4a6bc3a30f96b9c98a60c8358c13d1eebac650a324"
+maintainer="oklopfer <oren@taumoda.com>"
+description="Linux kernel libc-dev files built for PinePhone + PinePhone Pro"
+arch=('arm64')
