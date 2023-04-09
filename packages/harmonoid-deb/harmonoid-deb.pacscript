@@ -1,9 +1,9 @@
 name="harmonoid-deb"
 gives="harmonoid"
-version="0.3.6"
+version="0.3.8"
 url="https://github.com/alexmercerind2/harmonoid-releases/releases/download/v${version}/harmonoid-linux-x86_64.deb"
 description="Plays & manages your music library. Looks beautiful & juicy. Playlists, visuals, synced lyrics, pitch shift, volume boost & more"
 repology=("project: harmonoid")
-hash="20fe50c1cd94b192eb34ee70ec4011a14222e40c2cfdb847227464528c72ebbc"
+hash="e0078741f2df5a7146027c88c61547e7c920a0a43bfc21518e1d77f5dd7ec927"
 arch=('amd64')
 maintainer="Henryws <hwengerstickel@pm.me>"
