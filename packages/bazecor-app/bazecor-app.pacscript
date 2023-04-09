@@ -27,6 +27,7 @@ postinst() {
   # Generate the rule file.
   echo "${line}" > tempfile
   echo "added templine"
+  sudo mkdir -p /etc/udev/rules.d/
   sudo mv tempfile /etc/udev/rules.d/50-dygma.rules
 
   # Reload the `udev` rules.
