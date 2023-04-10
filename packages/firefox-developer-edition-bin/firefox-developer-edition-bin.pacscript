@@ -1,11 +1,11 @@
 name="firefox-developer-edition-bin"
 maintainer="Paul Cosma (saenai255) <paul.cosma97@gmail.com>"
 pkgname="firefox-developer-edition"
-version="111.0b5"
+version="112.0b9"
 description="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
 url="https://download-installer.cdn.mozilla.net/pub/devedition/releases/${version}/linux-x86_64/en-US/firefox-${version}.tar.bz2"
 breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-hash="06a7e8f1271a9eb5a07bff75c828cc7c2a3c830b436c0bb2faccb3aa92bc4def"
+hash="c20b68a2391eea7bb3a46da86d4d3bf79cf73026b84b87555c46306e85278ef1"
 arch=('amd64')
 repology=("project: firefox" "visiblename: firefox-developer-edition")
 __icon_url="https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
