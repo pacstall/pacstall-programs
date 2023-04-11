@@ -4,6 +4,6 @@ repology=("project: smplayer")
 version="22.7.0"
 url="https://github.com/smplayer-dev/smplayer/releases/download/v${version}/smplayer_${version}-1.debian-buster_amd64.deb"
 description="Complete front-end for MPlayer/MPV"
-hash="7abd2da166afd7eb24f398802f99a6b42dce3d127355cd7c4dbca953ca6294d0"
+hash="b85ffc5c6d622593d3c0153a0f66defe786fef9659a0b818a101247f0d7a6a21"
 arch=('amd64')
 maintainer="pure-cheekbones <niabcdefg@outlook.com>"
