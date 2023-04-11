@@ -1,13 +1,13 @@
 name="tixati-deb"
 pkgname="tixati"
 gives="tixati"
-version="3.12"
+version="3.17"
 repology=("project: tixati")
 replace="${gives}"
 breaks="${gives}-bin ${gives}-git ${gives}-app"
 depends="traceroute"
 url="https://download2.tixati.com/download/${gives}_${version}-1_amd64.deb"
 description="Tixati is a peer-to-peer file sharing program that uses the popular BitTorrent protocol"
-hash="c2c66a75389744696c98404eb11b9138cb835f57dd8f6ef212287c47ca0ea8ac"
+hash="ee79a3ff906c1fe29049c01e2e8961ef3c2e9fe54639d8e20c159f89ecc3bca0"
 arch=('amd64')
 maintainer="heyzsh <haidarzsh@gmail.com>"
