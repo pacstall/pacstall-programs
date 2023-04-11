@@ -5,6 +5,7 @@ description="A fork of Firefox, focused on privacy, security and freedom"
 breaks="${pkgname}-app ${pkgname}-bin ${pkgname}-git"
 repology=("project: librewolf")
 maintainer="Lanius <laniusone@pm.me>"
+incompatible=('debian:bullseye')
 if [[ ${CARCH} == "amd64" ]]; then
   version="111.0.1-1"
   url="https://deb.librewolf.net/pool/jammy/${gives}-${version}.en-US.ubuntu22.x86_64.deb"
