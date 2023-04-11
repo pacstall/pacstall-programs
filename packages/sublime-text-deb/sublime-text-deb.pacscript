@@ -1,4 +1,4 @@
-name="sublimetext-deb"
+name="sublime-text-deb"
 gives="sublime-text"
 replace="${gives}"
 version="4147"
