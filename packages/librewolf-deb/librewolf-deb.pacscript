@@ -6,7 +6,7 @@ breaks="${pkgname}-app ${pkgname}-bin ${pkgname}-git"
 repology=("project: librewolf")
 maintainer="Lanius <laniusone@pm.me>"
 incompatible=('debian:bullseye')
-case ${CARCH} in
+case "${CARCH}" in
   amd64)
     version="111.0.1-1"
     url="https://deb.librewolf.net/pool/jammy/${gives}-${version}.en-US.ubuntu22.x86_64.deb"
