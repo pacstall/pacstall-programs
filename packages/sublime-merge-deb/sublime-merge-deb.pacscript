@@ -1,4 +1,4 @@
-name="sublimemerge-deb"
+name="sublime-merge-deb"
 gives="sublime-merge"
 replace="${gives}"
 version="2085"
