@@ -2,12 +2,12 @@ name="git"
 replace="${name}"
 repology=("project: git")
 breaks="${name}-${name}"
-version="2.37.1"
+version="2.40.0"
 url="https://www.kernel.org/pub/software/scm/${name}/${name}-${version}.tar.gz"
 build_depends="dh-autoreconf"
 depends="libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev asciidoc xmlto docbook2x install-info"
 description="git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals"
-hash="7dded96a52e7996ce90dd74a187aec175737f680dc063f3f33c8932cf5c8d809"
+hash="ab37c343c0ad097282fd311ab9ca521ab3da836e5c4ed2093994f1b7f8575b09"
 
 prepare() {
   make configure
