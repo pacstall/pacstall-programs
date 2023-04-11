@@ -15,5 +15,4 @@ esac
 repology=("project: koodo-reader")
 arch=('amd64' 'arm64')
 description=" A cross-platform ebook reader"
-hash="b47a57562d58ed3c537c22fd096cf59d1b5bc59ac348c19cd6ab5f8c7422e513"
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
