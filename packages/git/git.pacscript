@@ -13,8 +13,8 @@ prepare() {
 }
 
 build() {
-  ./configure --prefix=/usr
-  make -j"$(nproc)" all
+  ./configure
+  make -j"$(nproc)"
 }
 
 install() {
