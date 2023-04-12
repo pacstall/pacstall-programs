@@ -4,8 +4,8 @@ pacdeps=("rhino-linux-xfce4-config-git" "rhino-kvantum-theme-git" "rhino-plymout
 depends="rhino-linux-xfce4-config-git rhino-kvantum-theme rhino-plymouth-theme rhino-pkg rhino-neofetch"
 description="Transitional package to provide all core Rhino Linux software"
 maintainer="oklopfer <oren@taumoda.com>"
-version="2023.1"
-style="(beta)"
+version="2023.1-beta3"
+style="(mainline)"
 branch="devel"
 postinst() {
   echo "PRETTY_NAME=\"Rhino Linux ${version} ${style}\"
