@@ -325,6 +325,7 @@ shell-color-scripts
 shellcheck-bin
 shellharden
 shfmt-bin
+sidequest-bin
 signal-desktop-beta-deb
 signal-desktop-deb
 slack-deb
