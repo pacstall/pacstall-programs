@@ -1,9 +1,9 @@
 name="gtkmm4"
-version="4.8.0"
+version="4.10.0"
 description="A C++ interface for GTK4 library"
 repology=("project: gtkmm")
 url="https://gitlab.gnome.org/GNOME/gtkmm/-/archive/${version}/gtkmm-${version}.tar.gz"
-hash="40a9cdb260564ef539bcbc6b736852e44ece0ae96f7c2552097bec2d6e059c6a"
+hash="3b86c148fa05652f8c48cacea99cc3a2efbb82ff291d099e3954b702041c51d8"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks="${name} ${name}-bin ${name}-deb ${name}-app ${name}-git"
