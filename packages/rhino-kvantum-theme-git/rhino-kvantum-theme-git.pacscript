@@ -1,5 +1,6 @@
 name="rhino-kvantum-theme-git"
 gives="rhino-kvantum-theme"
+depends="qt5-style-kvantum"
 maintainer="Henryws <hwengerstickel@pm.me>"
 description="Rhino Linux Kvantum theme"
 url="https://github.com/rhino-linux/KvRhino.git"
