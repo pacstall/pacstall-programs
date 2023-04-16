@@ -7,7 +7,7 @@ depends="libfuse2"
 url="https://github.com/neovim/neovim/releases/download/v${version}/nvim.appimage"
 hash="0e1e6d53c6c8055de23bdb33f60bb64af0baf11390669c1b40ecbbf2c7a34547"
 description="Vim fork maintained by the community"
-repology=("project: ${pkgname}")
+repology=("project: neovim")
 maintainer="Henryws <hwengerstickel@pm.me>"
 
 install() {

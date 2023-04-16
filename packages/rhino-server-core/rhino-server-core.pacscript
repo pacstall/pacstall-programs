@@ -1,10 +1,10 @@
-name="rhino-pine-core"
+name="rhino-server-core"
 url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
-pacdeps=("rhino-xfce4-mobile-config-git" "xfce4-settings-pine-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "u-boot-mobian-deb")
-description="Transitional package to provide all core Rhino Linux Mobile software"
+pacdeps=("rhino-pkg-git" "rhino-neofetch-git")
+description="Transitional package to provide minimal core Rhino Linux software"
 maintainer="oklopfer <oren@taumoda.com>"
 version="2023.1-beta3"
-style="(mobile)"
+style="(server)"
 branch="devel"
 postinst() {
   echo "PRETTY_NAME=\"Rhino Linux ${version} ${style}\"
