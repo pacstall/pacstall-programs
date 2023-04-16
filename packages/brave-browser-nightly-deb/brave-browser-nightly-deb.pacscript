@@ -4,6 +4,7 @@ gives="brave-browser-nightly"
 breaks="${gives}-bin ${gives}-app ${gives}-git"
 replace="${gives}"
 url="https://github.com/brave/brave-browser/releases/download/v${version}/${gives}_${version}_amd64.deb"
+homepage='https://brave.com/'
 description="The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel"
 hash="757bd78229fa29bbe7f98f3665414a7f14072155c10029c0c4f3442a62d6a369"
 arch=('amd64')

@@ -2,6 +2,7 @@ name="exa-git"
 pkgname="exa"
 gives="exa"
 url="https://github.com/ogham/exa.git"
+homepage='https://the.exa.website/'
 build_depends="cargo libgit2-dev cmake rustc"
 description="exa is an improved file lister with more features and better defaults"
 maintainer="Henryws <hwengerstickel@pm.me>"
