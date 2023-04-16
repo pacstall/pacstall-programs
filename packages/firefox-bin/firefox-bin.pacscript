@@ -3,6 +3,7 @@ gives="firefox"
 version="112.0"
 repology=("project: ${gives}")
 url="https://download-installer.cdn.mozilla.net/pub/firefox/releases/${version}/linux-x86_64/en-US/firefox-${version}.tar.bz2"
+homepage='https://www.mozilla.org/en-US/firefox'
 description="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Henryws <hwengerstickel@pm.me>"
 arch=('amd64')

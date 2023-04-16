@@ -1,6 +1,7 @@
 name="neovim"
 version="0.9.0"
 url="https://github.com/neovim/neovim/archive/refs/tags/v${version}.tar.gz"
+homepage='https://neovim.io/'
 build_depends="gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip build-essential"
 replace="neovim nvim neovim-runtime"
 description="Neovim is a vim fork maintained by the community"

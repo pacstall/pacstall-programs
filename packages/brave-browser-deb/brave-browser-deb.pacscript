@@ -4,6 +4,7 @@ version="1.50.119"
 breaks="${gives}-bin ${gives}-git ${gives}-app"
 replace="${gives}"
 url="https://github.com/brave/${gives}/releases/download/v${version}/${gives}_${version}_amd64.deb"
+homepage='https://brave.com/'
 description="Release version of world's most unique, privacy friendly web browser"
 hash="3317779fc8b3d2bab02ee0da3013cd4d4a23ea9e6f702aab99698c4b0d6d0187"
 arch=('amd64')

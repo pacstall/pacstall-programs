@@ -7,4 +7,5 @@ hash="7bf15e279743ecde33acdf81974de23d35b1ac9acdee151602f096e4d40d1129"
 maintainer="Obsidian <emil@aarestrup.nu>"
 arch=('amd64')
 url="https://dl.discordapp.net/apps/linux/${version}/discord-${version}.deb"
+homepage='https://discord.com/'
 repology=("project: ${gives}")

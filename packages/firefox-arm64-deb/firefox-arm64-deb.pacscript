@@ -6,6 +6,7 @@ arch=("arm64")
 repology=("project: ${gives}")
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye" "debian:sid")
 url="https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/${gives}/${gives}_${version}-0ubuntu0.${ubversion}.1~mt1_arm64.deb"
+homepage='https://www.mozilla.org/en-US/firefox'
 description="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 hash="3cccfe452bd34387d4eb331e410aaef80b6df288933718d8ce3351f4df6b987f"

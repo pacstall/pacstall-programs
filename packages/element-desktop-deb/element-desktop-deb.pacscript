@@ -5,6 +5,7 @@ replace="${gives}"
 repology=("project: ${gives}")
 breaks="${gives}-git ${gives}-bin ${gives}-app"
 url="https://packages.element.io/debian/pool/main/e/${gives}/${gives}_${version}_amd64.deb"
+url='https://element.io/'
 description="Element is a feature-packed Matrix client"
 hash="fb4762331a8f9e6338c7678a23f8925c31f74d50e4c5fedddd468c36fad9cab6"
 arch=('amd64')
