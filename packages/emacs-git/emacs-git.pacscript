@@ -267,9 +267,7 @@ build() {
     _conf+=("--with-xwidgets")
   fi
 
-  if [[ ${GPM} == "YES" ]]; then
-    true
-  else
+  if [[ ${GPM} != "YES" ]]; then
     _conf+=("--without-gpm")
   fi
 
