@@ -172,12 +172,12 @@ if [[ ${ALSA} == "YES" ]]; then
   fi
 fi
 
-if [[ ${NOCAIRO} != "YES" ]] && [[ ${CLI} != "YES" ]] && [[ ${PGTK} != "YES" ]]; then
+if [[ ${NOCAIRO} != "YES" && ${CLI} != "YES" && ${PGTK} != "YES" ]]; then
   depends+=" libcairo2"
 fi
 
 if [[ ${XWIDGETS} == "YES" ]]; then
-  if [[ ${LUCID} == "YES" ]] || [[ ${NOTKIT} == "YES" ]] || [[ ${CLI} == "YES" ]]; then
+  if [[ ${LUCID} == "YES" || ${NOTKIT} == "YES" || ${CLI} == "YES" ]]; then
     fancy_message error "Xwidgets support *requires* gtk+3!!!"
     exit 1
   else
@@ -193,7 +193,7 @@ if [[ ${GPM} == "YES" ]]; then
   fi
 fi
 
-if [[ ${DOCS_PDF} == "YES" ]] && [[ ! -d "/usr/local/texlive" ]]; then
+if [[ ${DOCS_PDF} == "YES" && ! -d "/usr/local/texlive" ]]; then
   build_depends+=" texlive-base"
 fi
 
