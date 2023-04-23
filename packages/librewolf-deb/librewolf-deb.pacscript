@@ -1,8 +1,8 @@
 name="librewolf-deb"
 gives="librewolf"
-replace="${gives}"
+replace=("${gives}")
 description="A fork of Firefox, focused on privacy, security and freedom"
-breaks="${pkgname}-app ${pkgname}-bin ${pkgname}-git"
+breaks=("${pkgname}-app" "${pkgname}-bin" "${pkgname}-git")
 repology=("project: librewolf")
 maintainer="Lanius <laniusone@pm.me>"
 incompatible=('debian:bullseye')

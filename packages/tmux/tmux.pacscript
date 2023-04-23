@@ -1,10 +1,10 @@
 name="tmux"
 version="3.3"
 url="https://github.com/tmux/tmux/releases/download/${version}/tmux-${version}.tar.gz"
-build_depends="gcc make pkg-config bison"
-depends="libncurses-dev libevent-dev"
-breaks="${name}-git ${name}-bin ${name}-deb ${name}-app"
-replace="tmux"
+build_depends=("gcc" "make" "pkg-config" "bison")
+depends=("libncurses-dev" "libevent-dev")
+breaks=("${name}-git" "${name}-bin" "${name}-deb" "${name}-app")
+replace=("tmux")
 description="A terminal multiplexer"
 hash="b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc"
 optdepends=("libutempter-dev: Record user sessions to utmp and wtmp files")

@@ -2,7 +2,7 @@ name="plexmediaserver-deb"
 gives="plexmediaserver"
 repology=("project: ${gives}")
 version="1.32.0.6918-6f393eda1"
-replace="${gives}"
+replace=("${gives}")
 url="https://downloads.plex.tv/plex-media-server-new/${version}/debian/${gives}_${version}_amd64.deb"
 description="Plex organizes all of your personal media so you can easily access and enjoy it"
 case "${CARCH}" in

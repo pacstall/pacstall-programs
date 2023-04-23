@@ -1,7 +1,7 @@
 name="google-chrome-deb"
 gives="google-chrome-stable"
 repology=("project: ${gives}" "repo: aur")
-replace="${gives}"
+replace=("${gives}")
 version="112.0.5615.49"
 url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}-1_amd64.deb"
 description="The popular and trusted web browser by Google"

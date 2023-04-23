@@ -1,6 +1,6 @@
 name="linux-libc-dev-okpine-deb"
 gives="linux-libc-dev"
-replace="${gives}"
+replace=("${gives}")
 version="6.3.0-rc7"
 url="https://github.com/oklopfer/debs/raw/master/kernel/${version}/${gives}_${version}-1_arm64.deb"
 hash="21f39af647670f63f09239a942cd194e701e830e92ad41fc90bc2ebeb9577a83"

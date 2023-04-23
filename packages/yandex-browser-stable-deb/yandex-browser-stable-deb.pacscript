@@ -1,6 +1,6 @@
 name="yandex-browser-stable-deb"
 gives="yandex-browser-stable"
-replace="${gives}"
+replace=("${gives}")
 repology=("project: yandex-browser")
 version="23.3.1.912-1"
 url="http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${gives}/${gives}_${version}_amd64.deb"

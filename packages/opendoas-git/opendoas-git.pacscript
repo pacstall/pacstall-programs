@@ -10,8 +10,8 @@ name="opendoas-git"
 pkgname="opendoas"
 description="A portable fork of the OpenBSD doas command"
 url="https://github.com/Duncaen/OpenDoas.git"
-build_depends="bison libpam0g-dev"
-breaks="${pkgname} ${pkgname}-bin"
+build_depends=("bison" "libpam0g-dev")
+breaks=("${pkgname}" "${pkgname}-bin")
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
