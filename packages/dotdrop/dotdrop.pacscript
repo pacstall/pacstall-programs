@@ -4,7 +4,7 @@ url="https://github.com/deadc0de6/dotdrop/archive/refs/tags/v${version}.zip"
 hash="c9bb0b3513f983617ab27b57531024c5c160a7602d91dc9f7bdb0d486ad46f39"
 maintainer="Henryws <hwengerstickel@pm.me>"
 description="Save your dotfiles once, deploy them everywhere"
-depends="python3 python3-docopt python3-setools python3-setuptools python3-jinja2 python3-ruamel.yaml python3-magic diffutils"
+depends=("python3" "python3-docopt" "python3-setools" "python3-setuptools" "python3-jinja2" "python3-ruamel.yaml" "python3-magic" "diffutils")
 repology=("project: ${name}")
 
 install() {

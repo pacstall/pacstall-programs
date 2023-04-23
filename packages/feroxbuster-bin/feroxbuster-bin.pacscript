@@ -2,13 +2,13 @@ maintainer="0x262D <pacstall@copypaste.anonaddy.me>"
 name="feroxbuster-bin"
 pkgname="feroxbuster"
 gives="feroxbuster"
-depends="fonts-noto-color-emoji"
+depends=("fonts-noto-color-emoji")
 version="2.9.4"
 description="A fast, simple, recursive content discovery tool written in Rust"
 url="https://github.com/epi052/${gives}/releases/download/v${version}/x86_64-linux-${gives}.tar.gz"
 hash="1e6028adcd5da4243c2f017d48342fccfa98d7622689058cc1479193d783a4d9"
 arch=('amd64')
-breaks="${pkgname} ${pkgname}-deb ${pkgname}-git"
+breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-git")
 repology=("project: ${pkgname}")
 
 install() {

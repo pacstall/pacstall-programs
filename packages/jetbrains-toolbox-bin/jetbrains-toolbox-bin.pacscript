@@ -1,7 +1,7 @@
 name="jetbrains-toolbox-bin"
 pkgname="jetbrains-toolbox"
 version="1.24.12080"
-breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
+breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 replace="${pkgname}"
 gives="${pkgname}"
 description="JetBrains Toolbox is a suite of professional development tools for a range of languages and technologies using JetBrains IDEs"

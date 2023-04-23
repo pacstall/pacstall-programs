@@ -1,11 +1,11 @@
 name="protonvpn-gui"
 gives="protonvpn"
-breaks="${name}-git"
+breaks=("${name}-git")
 replace="${name}"
 repology=("project: ${name}")
 version="1.12.0"
 url="https://github.com/ProtonVPN/linux-app/archive/refs/tags/${version}.tar.gz"
-build_depends="libgtk-3-dev gobject-introspection python3-psutil python3-setuptools"
+build_depends=("libgtk-3-dev" "gobject-introspection" "python3-psutil" "python3-setuptools")
 optdepends=("gnome-shell-extension-appindicator: This extension integrates Ubuntu AppIndicators and KStatusNotifierItems into GNOME Shell")
 pacdeps=("protonvpn-nm-lib" "protonvpn-cli" "proton-python-client")
 description="Official ProtonVPN Linux app (GUI)"

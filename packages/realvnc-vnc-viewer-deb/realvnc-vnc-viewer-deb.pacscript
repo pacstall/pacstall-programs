@@ -1,6 +1,6 @@
 name="realvnc-vnc-viewer-deb"
 gives="realvnc-vnc-viewer"
-breaks="${gives} ${gives}-bin ${gives}-app"
+breaks=("${gives}" "${gives}-bin" "${gives}-app")
 version="7.1.0"
 description="VNC Viewer, from RealVNC, is remote access software that enables you to securely connect to and control a remote computer"
 hash="24a4724856b7d98a46a2ccd73e7a15850fece2262f715bdf48005805d1e1335a"

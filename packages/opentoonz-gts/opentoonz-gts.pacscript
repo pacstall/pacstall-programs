@@ -1,14 +1,14 @@
 name="opentoonz-gts"
 version="2.5.1"
 url="https://github.com/opentoonz/GTS/archive/refs/tags/v${version}.tar.gz"
-build_depends="libtiff5-dev libfltk1.3-dev libglew-dev libsane-dev libglu1-mesa-dev"
-depends="autoconf libtool autoconf-archive"
+build_depends=("libtiff5-dev" "libfltk1.3-dev" "libglew-dev" "libsane-dev" "libglu1-mesa-dev")
+depends=("autoconf" "libtool" "autoconf-archive")
 description="GTS is a trace scanning tool developed by Studio Ghibli"
 hash="625c1d63d4b0a8b60d7ac0e8e69d1ec73b259357f11a1246968469daa57a4a9d"
 maintainer="echometerain <echometer@disroot.org>"
-patch="https://patch-diff.githubusercontent.com/raw/opentoonz/GTS/pull/149.diff"
+patch=("https://patch-diff.githubusercontent.com/raw/opentoonz/GTS/pull/149.diff")
 gives="gts"
-breaks="gts"
+breaks=("gts")
 repology=("project: gts-scanning-tool")
 
 prepare() {

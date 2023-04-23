@@ -1,7 +1,7 @@
 name="mullvad-vpn-deb"
 gives="mullvad-vpn"
 repology=("project: ${gives}")
-breaks="${gives}-beta-deb ${gives}-git"
+breaks=("${gives}-beta-deb" "${gives}-git")
 replace="${gives}"
 version="2023.3"
 url="https://github.com/mullvad/mullvadvpn-app/releases/download/${version}/MullvadVPN-${version}_amd64.deb"

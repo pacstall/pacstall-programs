@@ -1,7 +1,7 @@
 name="eddie-ui-deb"
 gives="eddie-ui"
 repology=("project: ${gives}")
-breaks="${gives}-bin ${gives}-git"
+breaks=("${gives}-bin" "${gives}-git")
 replace="${gives}"
 version="2.21.8"
 url="https://eddie.website/repository/apt/pool/main/e/${gives}/${gives}_${version}_amd64.deb"

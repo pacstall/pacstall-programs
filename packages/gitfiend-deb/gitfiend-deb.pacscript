@@ -1,6 +1,6 @@
 name="gitfiend-deb"
 gives="gitfiend"
-breaks="${gives}-app"
+breaks=("${gives}-app")
 replace="${gives}"
 repology=("project: ${gives}")
 version="0.39.4"

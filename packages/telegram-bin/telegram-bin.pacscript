@@ -11,7 +11,7 @@ pkgname="telegram"
 version="4.8.0"
 description="Telegram Desktop messaging app"
 url="https://updates.tdesktop.com/tlinux/tsetup.${version}.tar.xz"
-breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
+breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="1b9eaa18b246afbef24329870300a2e5c085bda80b624f8674adbd3653492373"
 repology=("project: telegram-desktop")
 

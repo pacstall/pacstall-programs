@@ -1,6 +1,6 @@
 name="vscodium-deb"
 gives="codium"
-breaks="${gives}"
+breaks=("${gives}")
 version="1.77.0.23093"
 if [[ ${CARCH} == "arm64" ]]; then
   hash="0c9aba9d68713516e72eecdeb6d26f14ecd0a5df2a7d9acd055f9edc5b70b205"

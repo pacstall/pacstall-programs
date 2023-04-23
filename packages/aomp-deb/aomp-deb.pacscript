@@ -1,8 +1,8 @@
 name="aomp-deb"
 gives="aomp"
 version="17.0-0"
-depends="libtinfo5"
-breaks="${gives} ${gives}-git ${gives}-bin ${gives}-app"
+depends=("libtinfo5")
+breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
 url="https://github.com/ROCm-Developer-Tools/aomp/releases/download/rel_${version}/aomp_Ubuntu2004_${version}_amd64.deb"
 description="Aomp is AMD's version of Clang compiler with RocM and openmp gpu offloading"
 hash="c3cc4e43df04e3e3c12f56ab1ff9278790cc365f0c0d0a0aa4ae7a6cedc18a70"

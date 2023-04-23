@@ -2,7 +2,7 @@ name="ttf-fira-sans"
 pkgname="ttf-fira-sans"
 version="4.202"
 gives="${pkgname}"
-breaks="${pkgname}"
+breaks=("${pkgname}")
 repology=("project: font-fira")
 replace="${gives}"
 url="https://fonts.google.com/download?family=Fira%20Sans"

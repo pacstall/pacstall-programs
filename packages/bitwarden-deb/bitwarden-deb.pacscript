@@ -1,6 +1,6 @@
 name="bitwarden-deb"
 gives="bitwarden"
-breaks="${gives}-app ${gives}-git"
+breaks=("${gives}-app" "${gives}-git")
 replace="${gives}"
 version="2023.3.2"
 url="https://github.com/${gives}/clients/releases/download/desktop-v${version}/Bitwarden-${version}-amd64.deb"

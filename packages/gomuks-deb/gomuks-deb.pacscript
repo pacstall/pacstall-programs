@@ -1,7 +1,7 @@
 name="gomuks-deb"
 gives="gomuks"
 repology=("project: ${gives}")
-breaks="${gives}-git ${gives}-bin ${gives}-app"
+breaks=("${gives}-git" "${gives}-bin" "${gives}-app")
 replace="${gives}"
 version="0.3.0"
 url="https://github.com/tulir/${gives}/releases/download/v${version}/${gives}_${version}-1_amd64.deb"

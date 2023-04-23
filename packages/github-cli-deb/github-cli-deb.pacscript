@@ -1,6 +1,6 @@
 name="github-cli-deb"
 gives="gh"
-breaks="${gives}-bin ${gives}-git"
+breaks=("${gives}-bin" "${gives}-git")
 replace="${gives}"
 version="2.27.0"
 url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version}_linux_amd64.deb"

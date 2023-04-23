@@ -1,6 +1,6 @@
 name="ferium-bin"
 pkgname="ferium"
-breaks="${pkgname}"
+breaks=("${pkgname}")
 replace="${pkgname}-git"
 repology=("project: ${pkgname}")
 version="4.4.0"

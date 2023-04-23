@@ -3,7 +3,7 @@ gives="docker"
 replace="${gives}"
 repology=("project: ${gives}")
 version="23.0.3"
-depends="procps git iptables"
+depends=("procps" "git" "iptables")
 description="Docker Engine Static Binaries"
 maintainer="oklopfer <oren@taumoda.com>"
 

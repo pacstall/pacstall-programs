@@ -1,6 +1,6 @@
 name="duf-deb"
 gives="duf"
-breaks="${gives}-bin ${gives}-git"
+breaks=("${gives}-bin" "${gives}-git")
 repology=("project: ${gives}")
 replace="${gives}"
 version="0.8.1"

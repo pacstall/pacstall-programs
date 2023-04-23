@@ -2,8 +2,8 @@ name="obquit-git"
 pkgname="obquit"
 description="Utility script for logging out of a session, inspired by Oblogout"
 url="https://github.com/dglava/${pkgname}.git"
-depends="python3-distutils python3-cairo python-gi-dev"
-breaks="${pkgname} ${pkgname}-bin"
+depends=("python3-distutils" "python3-cairo" "python-gi-dev")
+breaks=("${pkgname}" "${pkgname}-bin")
 maintainer="Lanius <laniusone@pm.me>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8

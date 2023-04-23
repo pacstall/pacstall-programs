@@ -14,7 +14,7 @@ gives="pacup"
 version="1.1.0"
 description="Help maintainers update pacscripts"
 url="https://github.com/pacstall/pacup/releases/download/${version}/pacup"
-breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
+breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="05293392b01c7913ce6872c624e9cab630f7575da6392cd867c3a20024e1caa0"
 
 install() {

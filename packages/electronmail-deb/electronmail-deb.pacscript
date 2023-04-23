@@ -1,7 +1,7 @@
 name="electronmail-deb"
 gives="electron-mail"
 replace="${gives}"
-breaks="${gives}-app"
+breaks=("${gives}-app")
 repology=("project: electronmail")
 version="5.1.7"
 url="https://github.com/vladimiry/ElectronMail/releases/download/v${version}/${gives}-${version}-linux-amd64.deb"

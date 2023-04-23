@@ -1,7 +1,7 @@
 name="brave-browser-deb"
 gives="brave-browser"
 version="1.50.125"
-breaks="${gives}-bin ${gives}-git ${gives}-app"
+breaks=("${gives}-bin" "${gives}-git" "${gives}-app")
 replace="${gives}"
 url="https://github.com/brave/${gives}/releases/download/v${version}/${gives}_${version}_amd64.deb"
 homepage='https://brave.com/'

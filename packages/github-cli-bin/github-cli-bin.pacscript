@@ -1,7 +1,7 @@
 name="github-cli-bin"
 pkgname="github-cli"
 gives="gh"
-breaks="${gives}-git ${gives}-deb"
+breaks=("${gives}-git" "${gives}-deb")
 replace="${gives}"
 repology=("project: ${pkgname}")
 version="2.27.0"
