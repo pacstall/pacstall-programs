@@ -1,7 +1,7 @@
 name="webtorrent-desktop-deb"
 gives="webtorrent-desktop"
 version="0.24.0"
-replace="${gives}"
+replace=("${gives}")
 url="https://github.com/webtorrent/webtorrent-desktop/releases/download/v${version}/webtorrent-desktop_${version}_amd64.deb"
 repology=("project: webtorrent-desktop")
 description="The streaming torrent app."

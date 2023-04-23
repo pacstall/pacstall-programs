@@ -9,7 +9,7 @@ description="Taskwarrior is a command line task list management utility with a m
 hash="b1d3a7f000cd0fd60640670064e0e001613c9e1cb2242b9b3a9066c78862cfec"
 maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 breaks=("taskwarrior-app" "taskwarrior-deb" "taskwarrior-bin" "taskwarrior-git")
-replace="taskwarrior"
+replace=("taskwarrior")
 
 build() {
   mkdir build

@@ -1,6 +1,6 @@
 name="tor"
 repology=("project: ${name}")
-replace="${name}"
+replace=("${name}")
 breaks=("${name}-git")
 version="0.4.7.13"
 url="https://dist.torproject.org/${name}-${version}.tar.gz"

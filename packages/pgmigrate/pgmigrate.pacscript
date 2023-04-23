@@ -1,7 +1,7 @@
 name="pgmigrate"
 repology=("project: ${name}")
 breaks="${name}-git"
-replace="${name}"
+replace=("${name}")
 version="1.0.7"
 url="https://github.com/yandex/${name}/archive/refs/tags/${version}.tar.gz"
 depends=("python3" "python3-sqlparse" "python3-yaml" "python3-psycopg2")

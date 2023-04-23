@@ -6,7 +6,7 @@ depends=("libc6" "libgcr-3-dev" "libglib2.0-dev" "libgtk-3-dev" "libwebkit2gtk-4
 pacdeps=("dmenu")
 gives="${pkgname}"
 breaks=("${pkgname}")
-replace="${pkgname}"
+replace=("${pkgname}")
 description="Heavily-patched customized build of the Suckless surf web browser."
 hash="88a73c57558d0d30752184f517d0b6930133ab506383efd394b60d9a04e6513f"
 pkgver() {

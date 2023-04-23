@@ -80,7 +80,7 @@ depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 gives="${name}"
 breaks=("${name}-git" "${name}-nox")
-replace="${name}-git ${name}-nox"
+replace=("${name}-git" "${name}-nox")
 hash="ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488"
 repology=("project: emacs")
 

@@ -1,7 +1,7 @@
 name="element-desktop-deb"
 gives="element-desktop"
 version="1.11.29"
-replace="${gives}"
+replace=("${gives}")
 repology=("project: ${gives}")
 breaks=("${gives}-git" "${gives}-bin" "${gives}-app")
 url="https://packages.element.io/debian/pool/main/e/${gives}/${gives}_${version}_amd64.deb"

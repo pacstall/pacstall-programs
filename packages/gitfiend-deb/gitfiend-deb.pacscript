@@ -1,7 +1,7 @@
 name="gitfiend-deb"
 gives="gitfiend"
 breaks=("${gives}-app")
-replace="${gives}"
+replace=("${gives}")
 repology=("project: ${gives}")
 version="0.39.4"
 url="https://${gives}.com/resources/GitFiend_${version}_amd64.deb"

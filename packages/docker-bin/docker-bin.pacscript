@@ -1,6 +1,6 @@
 name="docker-bin"
 gives="docker"
-replace="${gives}"
+replace=("${gives}")
 repology=("project: ${gives}")
 version="23.0.3"
 depends=("procps" "git" "iptables")

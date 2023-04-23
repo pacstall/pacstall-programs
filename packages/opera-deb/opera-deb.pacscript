@@ -8,7 +8,7 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="opera-deb"
 gives="opera-stable"
-replace="${gives}"
+replace=("${gives}")
 version="97.0.4719.63"
 url="https://deb.opera.com/opera/pool/non-free/o/opera-stable/${gives}_${version}_amd64.deb"
 description="Multi-platform web browser developed by its namesake company Opera"

@@ -1,5 +1,5 @@
 name="git"
-replace="${name}"
+replace=("${name}")
 repology=("project: git")
 breaks=("${name}-${name}")
 version="2.40.0"

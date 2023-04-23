@@ -1,7 +1,7 @@
 name="gitkraken-deb"
 gives="gitkraken"
 repology=("project: ${gives}")
-replace="${gives}"
+replace=("${gives}")
 breaks=("${gives}-bin")
 version="9.3.0"
 url="https://release.axocdn.com/linux/GitKraken-v${version}.deb"

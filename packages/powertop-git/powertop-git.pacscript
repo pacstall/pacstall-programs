@@ -1,6 +1,6 @@
 name="powertop-git"
 gives="powertop"
-replaces="powertop"
+replace=("powertop")
 breaks=("powertop")
 url="https://github.com/fenrus75/powertop.git"
 build_depends=("libpci-dev" "libnl-3-dev" "libnl-genl-3-dev" "gettext" "libgettextpo-dev" "autopoint" "gettext" "libncurses5-dev" "libncursesw5-dev" "libtool-bin" "dh-autoreconf" "autoconf-archive" "pkg-config")

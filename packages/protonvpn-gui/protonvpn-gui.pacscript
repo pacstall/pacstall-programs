@@ -1,7 +1,7 @@
 name="protonvpn-gui"
 gives="protonvpn"
 breaks=("${name}-git")
-replace="${name}"
+replace=("${name}")
 repology=("project: ${name}")
 version="1.12.0"
 url="https://github.com/ProtonVPN/linux-app/archive/refs/tags/${version}.tar.gz"

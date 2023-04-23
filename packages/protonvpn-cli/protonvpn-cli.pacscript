@@ -1,6 +1,6 @@
 name="protonvpn-cli"
 breaks="${name}-git"
-replace="${name}"
+replace=("${name}")
 repology=("project: ${name}")
 version="3.13.0"
 url="https://github.com/ProtonVPN/linux-cli/archive/refs/tags/${version}.tar.gz"

@@ -1,6 +1,6 @@
 name="neovim-app"
 gives="neovim"
-replace="nvim neovim-runtime neovim-deb"
+replace=("nvim" "neovim-runtime" "neovim-deb")
 version="0.9.0"
 build_depends=("libfuse2")
 depends=("libfuse2")

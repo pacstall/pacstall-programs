@@ -1,6 +1,6 @@
 name="android-studio"
 repology=("project: ${name}")
-replace="${name}"
+replace=("${name}")
 breaks=("${name}-beta" "${name}-canary")
 version="2022.3.1.11"
 url="https://dl.google.com/dl/android/studio/ide-zips/${version}/${name}-${version}-linux.tar.gz"

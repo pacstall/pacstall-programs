@@ -1,7 +1,7 @@
 name="anydesk-bin"
 gives="anydesk"
 breaks=("${gives}-deb")
-replace="${gives}"
+replace=("${gives}")
 repology=("project: ${gives}")
 version="6.2.1"
 url="https://download.anydesk.com/linux/${gives}-${version}-amd64.tar.gz"

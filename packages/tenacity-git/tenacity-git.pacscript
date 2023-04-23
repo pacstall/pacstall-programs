@@ -15,7 +15,7 @@ case "${codename}" in
     depends+=("libavcodec59" "libavformat59" "libavutil57" "libflac++10" "libflac8" "libportsmf0v5" "libwxbase3.2-0" "libwxgtk3.2-0")
     ;;
 esac
-replace="audacity"
+replace=("audacity")
 description="FLOSS Audacity Fork. No telemetry, crash reports and other shenanigans like that!"
 
 optdepends=("ffmpeg: additional import/export capabilities")

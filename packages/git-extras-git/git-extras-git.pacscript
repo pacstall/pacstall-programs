@@ -1,7 +1,7 @@
 name="git-extras-git"
 pkgname="git-extras"
 breaks=("${pkgname}-bin")
-replace="${pkgname}"
+replace=("${pkgname}")
 gives="${pkgname}"
 description="GIT utilities -- repo summary, repl, changelog population, author commit percentages and more"
 url="https://github.com/tj/git-extras.git"

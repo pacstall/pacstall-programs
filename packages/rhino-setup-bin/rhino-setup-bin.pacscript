@@ -5,7 +5,7 @@ description="Rhino Linux Setup Prompt"
 maintainer="Sourajyoti Basak <wiz28@protonmail.com>, Oren Klopfer <oren@taumoda.com>"
 incompatible=("debian:*")
 version="v1.3-beta2"
-replace="${gives} ${gives}-git"
+replace=("${gives}" "${gives}-git")
 
 if [[ $CARCH == arm64 ]]; then
   url="https://github.com/rhino-linux/${gives}/releases/download/${version}/${gives}_${version}_${CARCH}.zip"

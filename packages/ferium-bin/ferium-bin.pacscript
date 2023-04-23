@@ -1,7 +1,7 @@
 name="ferium-bin"
 pkgname="ferium"
 breaks=("${pkgname}")
-replace="${pkgname}-git"
+replace=("${pkgname}-git")
 repology=("project: ${pkgname}")
 version="4.4.0"
 url="https://github.com/gorilla-devs/${pkgname}/releases/download/v${version}/${pkgname}-linux-nogui.zip"
