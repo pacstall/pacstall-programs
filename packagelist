@@ -112,10 +112,10 @@ geekbench-bin
 gfn-electron-bin
 gir1.2-xapp-1.0-deb
 git
-gitblade-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
+gitblade-deb
 gitfiend-deb
 github-cli-bin
 github-cli-deb
@@ -249,8 +249,8 @@ obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-0-4-0
 obs-backgroundremoval-git
-obsidian-deb
 obs-ndi-deb
+obsidian-deb
 oil
 onefetch-bin
 onlyoffice-desktopeditors-deb
@@ -289,8 +289,8 @@ popsicle
 postman-bin
 powertop-git
 prismlauncher-git
-protonmail-bridge-deb
 proton-python-client
+protonmail-bridge-deb
 protonup-qt-app
 protonvpn-cli
 protonvpn-gui
@@ -321,8 +321,8 @@ rhino-setup-git
 rhino-xfce4-mobile-config-git
 rstudio-deb
 sed
-shellcheck-bin
 shell-color-scripts
+shellcheck-bin
 shellharden
 shfmt-bin
 sidequest-bin
@@ -337,13 +337,13 @@ soundux
 spacecadetpinball-git
 spot-client-git
 spotify-client-deb
-starship-bin
 st-distrotube-git
+st-lukesmith-git
+starship-bin
 steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
-st-lukesmith-git
 sublime-merge-deb
 sublime-text-deb
 surf
@@ -371,8 +371,8 @@ torbrowser-launcher-git
 torguard-deb
 touchegg-deb
 touchegg-git
-treefetch-bin
 tre-git
+treefetch-bin
 truckersmp-cli
 ttf-fira-sans
 tuner
