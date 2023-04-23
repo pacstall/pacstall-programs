@@ -1,0 +1,21 @@
+name="mymonero-app"
+gives="mymonero"
+version="1.3.3"
+description="The simplest way to use the next-generation private digital currency Monero"
+url="https://github.com/mymonero/mymonero-app-js/releases/download/v${version}/MyMonero-${version}.AppImage"
+hash="fd53a237be201dc6e10cc0a9136fb02be1522622b0de67798c34623ca2ecddef"
+maintainer="Henryws <hwengerstickel@pm.me>"
+__icon_url="https://github.com/mymonero/mymonero-app-js/raw/master/build/icon.png"
+repology=("project: mymonero")
+
+install() {
+    sudo install -Dm755 "MyMonero-${version}.AppImage" "${pkgdir}/usr/bin/mymonero"
+    wget -q -O "MyMonero.png" "${__icon_url}"
+    sudo install -Dm644 "MyMonero.png" "${pkgdir}/usr/share/pixmaps/MyMonero.png"
+    sudo mkdir -p "${pkgdir}/usr/share/applications/"
+    echo "[Desktop Entry]
+    Name=MyMonero
+    Icon=MyMonero
+    Type=Application
+    Exec=/usr/bin/mymonero" | sudo tee "${pkgdir}/usr/share/applications/mymonero.desktop" > /dev/null
+}
