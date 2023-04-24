@@ -3,7 +3,7 @@ gives="btrfs-du"
 version="0.0.7"
 url="https://github.com/nachoparker/btrfs-du/archive/refs/tags/v${version}.tar.gz"
 description="Easily print BTRFS subvolume/snapshot disk usage"
-depends="btrfs-progs"
+depends=("btrfs-progs")
 repology=("project: ${gives}")
 
 install() {

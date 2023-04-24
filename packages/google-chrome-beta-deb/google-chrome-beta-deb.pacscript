@@ -1,7 +1,7 @@
 name="google-chrome-beta-deb"
 gives="google-chrome-beta"
 repology=("project: google-chrome" "visiblename: ${gives}")
-replace="${gives}"
+replace=("${gives}")
 version="113.0.5672.24"
 url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}-1_amd64.deb"
 description="The web browser built by Google - Beta channel"

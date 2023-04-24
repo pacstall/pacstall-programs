@@ -136,7 +136,6 @@ grive2
 grive2-git
 grub-customizer-git
 gtkhash
-gtkmm4
 harmonoid-deb
 headset-deb
 helix
@@ -221,6 +220,7 @@ mullvad-vpn-beta-deb
 mullvad-vpn-deb
 muse-hub-deb
 mutt-wizard
+mymonero-app
 nala-deb
 nano
 neofetch
@@ -260,7 +260,6 @@ opendoas-git
 opensnitch-deb
 opensnitch-ui-deb
 opentoonz
-opentoonz-gts
 opera-beta-deb
 opera-deb
 opera-developer-deb
@@ -325,6 +324,7 @@ shell-color-scripts
 shellcheck-bin
 shellharden
 shfmt-bin
+sidequest-bin
 signal-desktop-beta-deb
 signal-desktop-deb
 slack-deb

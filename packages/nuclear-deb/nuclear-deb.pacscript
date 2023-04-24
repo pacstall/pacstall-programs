@@ -1,6 +1,6 @@
 name="nuclear-deb"
 gives="nuclear"
-breaks="${gives} ${gives}-app"
+breaks=("${gives}" "${gives}-app")
 version="0.6.17"
 _version="e8fcb6"
 description="Streaming music player that finds free music for you"
