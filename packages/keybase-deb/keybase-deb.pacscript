@@ -1,7 +1,7 @@
 name="keybase-deb"
 gives="keybase"
-replace="${gives}"
-breaks="${gives}-git ${gives}-app ${gives}"
+replace=("${gives}")
+breaks=("${gives}-git" "${gives}-app" "${gives}")
 repology=("project: ${gives}")
 # Version and Hash from https://prerelease.keybase.io/deb/dists/stable/main/binary-amd64/Packages
 version="6.0.2-20220610191041.a459abf326"

@@ -1,13 +1,13 @@
 name="linux-headers-generic-deb"
-gives="linux-headers-6.3.0-060300rc4-generic"
-version="6.3-rc4"
-buildver="6.3.0-060300rc4.202303262231"
+gives="linux-headers-6.3.0-060300-generic"
+version="6.3.0"
+buildver="6.3.0-060300.202304232030"
 if [[ ${CARCH} == "arm64" ]]; then
-   hash="96ed11bb4d39e8e248aa7eb8a02637fe1995864ce8b20b37459d8048b48f1f35"
-   arch=('arm64');
- else
-   hash="f2bc20bc76adcba139da2f43c9a1256c25651cbade2cda7acd9192614c5d9c7f"
-   arch=('amd64');
+  hash="9009bc021261e89214c1548d1ff22a9dd493c8ef4266f57f72f68a4f712c2f62"
+  arch=('arm64')
+else
+  hash="8231893ac6333466f41c6eec898d4137fcf11c23bda9f8bace12230c03ead845"
+  arch=('amd64')
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
 description="Ubuntu Linux mainline kernel (Generic headers)"

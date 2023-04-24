@@ -2,7 +2,7 @@ name="universal-ctags-git"
 pkgname="universal-ctags"
 url="https://github.com/universal-ctags/ctags.git"
 description="Universal Ctags (abbreviated as u-ctags) is a maintained implementation of ctags. ctags generates an index (or tag) file of language objects found in source files for programming languages. This index makes it easy for text editors and other tools to locate the indexed items."
-build_depends="gcc make pkg-config autoconf automake python3-docutils libseccomp-dev libjansson-dev libyaml-dev libxml2-dev"
+build_depends=("gcc" "make" "pkg-config" "autoconf" "automake" "python3-docutils" "libseccomp-dev" "libjansson-dev" "libyaml-dev" "libxml2-dev")
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
 
 pkgver() {
