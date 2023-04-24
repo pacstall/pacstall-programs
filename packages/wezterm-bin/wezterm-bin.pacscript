@@ -5,7 +5,7 @@ version="20230408-112425-69ae8472"
 description="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
 url="https://github.com/wez/wezterm/releases/download/${version}/wezterm-${version}.Ubuntu22.04.tar.xz"
 hash="a1a0737438a4af9882139da0d78ffc0d390132db5a37b703aec8ef2b5c252370"
-breaks="${pkgname}-app"
+breaks=("${pkgname}-app")
 repology=("project: wezterm")
 maintainer="smokeythemonkey <smokeythemonkey@posteo.net>"
 

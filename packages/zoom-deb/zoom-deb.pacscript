@@ -1,7 +1,7 @@
 name="zoom-deb"
 gives="zoom"
 version="5.14.2.2046"
-replace="${gives}"
+replace=("${gives}")
 url="https://zoom.us/client/${version}/zoom_amd64.deb"
 repology=("project: zoom-videoconference")
 description="Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution."

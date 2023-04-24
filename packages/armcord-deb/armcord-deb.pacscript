@@ -1,6 +1,6 @@
 name="armcord-deb"
 gives="armcord"
-depends="libgtk-3-0 libnotify4 libnss3 libxss1 libxtst6 xdg-utils libatspi2.0-0 libuuid1 libsecret-1-0"
+depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libsecret-1-0")
 repology=("project: ${gives}")
 version="3.1.7"
 if [[ ${CARCH} == "arm64" ]]; then
