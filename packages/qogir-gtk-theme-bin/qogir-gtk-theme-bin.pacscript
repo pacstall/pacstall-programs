@@ -11,9 +11,9 @@ pkgname="qogir-gtk-theme"
 version="2022-11-09"
 description="Qogir is a flat Design theme for GTK"
 url="https://github.com/vinceliuice/Qogir-theme/archive/${version}.tar.gz"
-depends="gtk2-engines-murrine gtk2-engines-pixbuf"
-build_depends="libsass1"
-breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
+depends=("gtk2-engines-murrine" "gtk2-engines-pixbuf")
+build_depends=("libsass1")
+breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="0075412e14ca9cc012b7eb7fc302524d82af8e872e2f139cddb4ec80201ebe41"
 repology=("project: qogir-theme" "repo: nix_unstable")
 

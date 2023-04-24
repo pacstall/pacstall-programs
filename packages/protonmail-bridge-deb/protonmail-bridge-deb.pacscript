@@ -1,6 +1,6 @@
 name="protonmail-bridge-deb"
 gives="protonmail-bridge"
-breaks="${gives} ${gives}-git"
+breaks=("${gives}" "${gives}-git")
 repology=("project: ${gives}")
 version="3.1.0"
 url="https://github.com/ProtonMail/proton-bridge/releases/download/v${version}/${gives}_${version}-1_amd64.deb"

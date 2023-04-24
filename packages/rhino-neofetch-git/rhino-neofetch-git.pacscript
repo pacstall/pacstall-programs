@@ -2,7 +2,7 @@ name="rhino-neofetch-git"
 url="https://github.com/oklopfer/neofetch-rhino.git"
 gives="rhino-neofetch"
 provides=('neofetch')
-replace="neofetch"
+replace=("neofetch")
 description="neofetch branded for Rhino Linux"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgver() {
