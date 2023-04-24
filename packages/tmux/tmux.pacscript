@@ -1,8 +1,7 @@
 name="tmux"
 version="3.3"
 url="https://github.com/tmux/tmux/releases/download/${version}/tmux-${version}.tar.gz"
-build_depends=("gcc" "make" "pkg-config" "bison")
-depends=("libncurses-dev" "libevent-dev")
+build_depends=("gcc" "make" "pkg-config" "bison" "libncurses-dev" "libevent-dev")
 breaks=("${name}-git" "${name}-bin" "${name}-deb" "${name}-app")
 replace=("tmux")
 description="A terminal multiplexer"
