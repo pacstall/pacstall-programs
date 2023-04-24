@@ -1,17 +1,17 @@
 name="wezterm-app"
 pkgname="wezterm"
 gives="wezterm"
-version="20230326-111934-3666303c"
+version="20230408-112425-69ae8472"
 description="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
 url="https://github.com/wez/wezterm/releases/download/${version}/WezTerm-${version}-Ubuntu20.04.AppImage"
-hash="3ca0c1f2186c78ed628d59d24b4278cb1c6fef8c1023077c45d53710ec5ff380"
-breaks="${pkgname}-bin"
+hash="24281a5369fb56144b4dcaafcaa1df621c2941b1a2d2e5576d76454d287cfd07"
+breaks=("${pkgname}-bin")
 repology=("project: wezterm")
 maintainer="smokeythemonkey <smokeythemonkey@posteo.net>"
 
 install() {
   # Install AppImage
-  sudo install -Dm755 "WezTerm-${version}-Ubuntu18.04.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "WezTerm-${version}-Ubuntu20.04.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 
   # Download icon
   wget -q https://github.com/wez/wezterm/blob/main/assets/icon/terminal.png
