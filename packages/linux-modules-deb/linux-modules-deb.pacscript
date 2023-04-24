@@ -1,12 +1,12 @@
 name="linux-modules-deb"
-gives="linux-modules-6.3.0-060300rc7-generic"
-version="6.3.0-rc7"
-buildver="6.3.0-060300rc7.202304162330"
+gives="linux-modules-6.3.0-060300-generic"
+version="6.3.0"
+buildver="6.3.0-060300.202304232030"
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="535fa4ab3db34cec0d06d568e96a6c5f972ef8cb309e8b48437f6333ccd92224"
+  hash="4ee8ed65f986ca77efd9a5137a2ccb4edd6c02fcbb334946e2a112db7e93a3d3"
   arch=('arm64')
 else
-  hash="76d467a9865a75d11ad02cec108873a3b527f1df376d313993acaa3b4a1b3756"
+  hash="d4ff3d4011f59296a73903fbbe15be1129d093e15c718988e16bcb3d568609a9"
   arch=('amd64')
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
