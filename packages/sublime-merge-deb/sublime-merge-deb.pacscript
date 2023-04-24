@@ -1,6 +1,6 @@
 name="sublime-merge-deb"
 gives="sublime-merge"
-replace="${gives}"
+replace=("${gives}")
 version="2085"
 url="https://download.sublimetext.com/${gives}_build-${version}_amd64.deb"
 description="Sublime text like Git GUI Client"

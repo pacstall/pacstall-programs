@@ -1,6 +1,6 @@
 name="lbry-deb"
 gives="lbry"
-breaks="${gives} ${gives}-bin ${gives}-git ${gives}-app"
+breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app")
 version="0.53.4"
 url="https://github.com/lbryio/lbry-desktop/releases/download/v${version}/LBRY_${version}.deb"
 description="A browser and wallet for LBRY, the decentralized, user-controlled content marketplace."
