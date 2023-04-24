@@ -3,7 +3,7 @@ gives="cutefish-wallpapers"
 version="0.2-1"
 url="https://github.com/cutefishos/wallpapers.git"
 license="GPL-3.0"
-build_depends="cmake ninja-build"
+build_depends=("cmake" "ninja-build")
 description="CutefishOS's system wallpaper."
 
 pkgver() {

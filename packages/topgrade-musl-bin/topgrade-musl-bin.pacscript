@@ -5,7 +5,7 @@ url="https://github.com/topgrade-rs/topgrade/releases/download/v${version}/topgr
 description="Upgrades everything on your system"
 hash="09844a967ea34e90a4c8d95a27cb70af09bc79d6148cf288790bed096b1b00e7"
 arch=('amd64')
-breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git ${pkgname}-bin"
+breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git" "${pkgname}-bin")
 gives="${pkgname}"
 repology=("project: ${pkgname}")
 
