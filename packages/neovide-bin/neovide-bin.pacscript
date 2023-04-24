@@ -13,7 +13,7 @@ pkgname="neovide"
 version="0.10.4"
 description="No nonsense neovim client in Rust"
 url="https://github.com/neovide/neovide/releases/download/${version}/neovide.tar.gz"
-breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
+breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="ea7e27af14245813b9412c4b0d3a18ab278eacaf07ea93fa2cbb9bea7ce3cd0e"
 repology=("project: neovide")
 

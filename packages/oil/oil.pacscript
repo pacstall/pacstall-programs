@@ -11,7 +11,7 @@ version="0.14.2"
 description="A bash-compatible UNIX shell written in Python"
 url="https://www.oilshell.org/download/oil-${version}.tar.xz"
 gives="oil"
-breaks="${name}-bin ${name}-git ${name}-deb ${name}-app"
+breaks=("${name}-bin" "${name}-git" "${name}-deb" "${name}-app")
 hash="23faff0e110b2e928c9d9a9487ce3b17fb953e20981796f9ef87233f9f7e646d"
 repology=("project: oil-shell")
 
