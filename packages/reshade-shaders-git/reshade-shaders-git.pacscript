@@ -11,7 +11,7 @@ pkgname="reshade-shaders-git"
 description="A collection of post-processing shaders written in the ReShade FX shader language, to be used by vkBasalt"
 url="https://github.com/crosire/reshade-shaders.git"
 gives="${pkgname}"
-breaks="${pkgname} ${pkgname}-bin ${pkgname}-deb ${pkgname}-app"
+breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
 
 pkgver() {
   git ls-remote "${url}" slim | cut -f1 | cut -c1-8

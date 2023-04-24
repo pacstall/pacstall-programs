@@ -1,8 +1,8 @@
 name="steamtinkerlaunch-git"
 url="https://github.com/frostworx/steamtinkerlaunch.git"
-depends="gawk xdotool wget vim xdotool x11-utils"
-breaks="steamtinkerlaunch ${name}-git ${name}-deb ${name}-app ${name}-deb ${name}-bin"
-replace="steamtinkerlaunch"
+depends=("gawk" "xdotool" "wget" "vim" "xdotool" "x11-utils")
+breaks=("steamtinkerlaunch" "${name}-git" "${name}-deb" "${name}-app" "${name}-deb" "${name}-bin")
+replace=("steamtinkerlaunch")
 gives="steamtinkerlaunch"
 description="Linux wrapper tool for use with the Steam client for custom launch options and 3rd party programs."
 optdepends=("strace: system call tracer"
@@ -14,7 +14,7 @@ optdepends=("strace: system call tracer"
   "scummvm: VM for point-and-click games"
   "gameconqueror: memory editing for cheating")
 maintainer="echometerain <echometer@disroot.org>"
-pacdeps="yad"
+pacdeps=("yad")
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }

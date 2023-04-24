@@ -1,7 +1,7 @@
 name="zoho-notebook-deb"
 gives="zoho-notebook"
 version="2.0.1"
-replace="notebook"
+replace=("notebook")
 url="https://downloads.zohocdn.com/notebooklinux-desktop/Notebook-${version}.deb"
 repology=("project: zoho-notebook")
 description="The most beautiful note-taking app across devices"
