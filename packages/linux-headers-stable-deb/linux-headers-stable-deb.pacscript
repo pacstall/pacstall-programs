@@ -1,9 +1,9 @@
 name="linux-headers-stable-deb"
-gives="linux-headers-6.2.10-060211"
-version="6.2.11"
-buildver="6.2.11-060211.202304131639"
+gives="linux-headers-6.2.12-060212"
+version="6.2.12"
+buildver="6.2.12-060212.202304201141"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_all.deb"
 description="Ubuntu Linux stable kernel (Headers)"
-hash="1a757a7ee22e32f54d3e800d481a4fb50ddecff1169f33f07043fbb0e8ff9146"
+hash="a072014b4dfff071156eaafae5274d7a6d44128851b5128aa4dd73a0f2c4d894"
 arch=('any')
 maintainer="Oren Klopfer <oren@taumoda.com>"
