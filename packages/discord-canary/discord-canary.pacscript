@@ -1,12 +1,13 @@
 name="discord-canary"
 repology=("project: discord-canary" "repo: aur")
-version="0.0.150"
+version="0.0.151"
 maintainer="DismissedGuy <me@mikealmel.ooo>"
 url="https://dl-canary.discordapp.net/apps/linux/${version}/${name}-${version}.tar.gz"
-depends="libc6 libasound2 libatomic1 libgconf-2-4 libnotify4 libnspr4 libnss3 libstdc++6 libxss1 libxtst6 libayatana-appindicator1 libc++1"
+homepage='https://discord.com/'
+depends=("libc6" "libasound2" "libatomic1" "libgconf-2-4" "libnotify4" "libnspr4" "libnss3" "libstdc++6" "libxss1" "libxtst6" "libayatana-appindicator1" "libc++1")
 description="Chat for Communities and Friends - Unstable"
 arch=('amd64')
-hash="f21b83a75bb4b7dfe465b781edb3ea414c3cf8743aac8cb3298515374da041fa"
+hash="64dfa5106b526a3818b323281919b24d90a95065666fd2ca815bfcf4d0389bb5"
 
 prepare() {
   sudo mkdir -p "${pkgdir}/usr/share/${name}/"

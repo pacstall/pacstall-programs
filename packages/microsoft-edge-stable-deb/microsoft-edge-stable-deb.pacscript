@@ -1,6 +1,6 @@
 name="microsoft-edge-stable-deb"
 gives="microsoft-edge-stable"
-replace="${gives}"
+replace=("${gives}")
 repology=("project: microsoft-edge")
 version="112.0.1722.58"
 url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${version}-1_amd64.deb"
