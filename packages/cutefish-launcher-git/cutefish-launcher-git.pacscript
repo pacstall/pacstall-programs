@@ -3,8 +3,8 @@ gives="cutefish-launcher"
 version="0.2-1"
 url="https://github.com/cutefishos/launcher.git"
 license="GPL-3.0"
-build_depends="extra-cmake-modules ninja-build qttools5-dev-tools qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev qttools5-dev"
-depends="fishui libcutefish libkf5windowsystem-dev"
+build_depends=("extra-cmake-modules" "ninja-build" "qttools5-dev-tools" "qtbase5-dev" "qtdeclarative5-dev" "qtquickcontrols2-5-dev" "qttools5-dev")
+depends=("fishui" "libcutefish" "libkf5windowsystem-dev")
 description="CutefishOS's full-screen application launcher"
 
 pkgver() {

@@ -1,11 +1,11 @@
 name="git-extras-git"
 pkgname="git-extras"
-breaks="${pkgname}-bin"
-replace="${pkgname}"
+breaks=("${pkgname}-bin")
+replace=("${pkgname}")
 gives="${pkgname}"
 description="GIT utilities -- repo summary, repl, changelog population, author commit percentages and more"
 url="https://github.com/tj/git-extras.git"
-depends="git bsdmainutils"
+depends=("git" "bsdmainutils")
 maintainer="Henryws <hwengerstickel@pm.me>"
 
 pkgver() {
