@@ -1,6 +1,6 @@
 name="yandex-disk-deb"
 gives="yandex-disk"
-replace="${gives}"
+replace=("${gives}")
 repology=("project: ${gives}")
 version="0.1.6.1080"
 url="https://repo.yandex.ru/${gives}/deb/pool/main/y/${gives}/${gives}_${version}_amd64.deb"

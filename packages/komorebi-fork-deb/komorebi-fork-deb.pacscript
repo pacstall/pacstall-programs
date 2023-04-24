@@ -1,6 +1,6 @@
 name="komorebi-fork-deb"
 gives="komorebi"
-replace="${gives}"
+replace=("${gives}")
 version="2.2.1"
 url="https://github.com/Komorebi-Fork/${gives}/releases/download/v${version}/${gives}_${version}-1_amd64.deb"
 description="A beautiful and customizable wallpaper manager for Linux"

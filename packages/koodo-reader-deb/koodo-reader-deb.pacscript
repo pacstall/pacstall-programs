@@ -1,7 +1,7 @@
 name="koodo-reader-deb"
 gives="koodo-reader"
 version="1.5.3"
-replace="${gives}"
+replace=("${gives}")
 case "${CARCH}" in
   amd64)
     url="https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo.Reader-${version}-amd64.deb"

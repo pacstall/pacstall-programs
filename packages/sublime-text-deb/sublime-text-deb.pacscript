@@ -1,6 +1,6 @@
 name="sublime-text-deb"
 gives="sublime-text"
-replace="${gives}"
+replace=("${gives}")
 version="4147"
 url="https://download.sublimetext.com/${gives}_build-${version}_amd64.deb"
 description="Sublime text light text editor for programmers"
