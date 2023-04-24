@@ -1,8 +1,8 @@
 name="grub-customizer-git"
 pkgname="grub-customizer"
 url="https://git.launchpad.net/${pkgname}"
-build_depends="cmake g++ libgtkmm-3.0-dev gettext libssl-dev libarchive-dev hwinfo"
-breaks="${pkgname}-deb"
+build_depends=("cmake" "g++" "libgtkmm-3.0-dev" "gettext" "libssl-dev" "libarchive-dev" "hwinfo")
+breaks=("${pkgname}-deb")
 description="Grub Customizer is a graphical interface to configure the GRUB2/BURG settings and menuentries"
 maintainer="ObsidianPresidium <emil@aarestrup.nu>"
 gives="${pkgname}"
