@@ -6,8 +6,8 @@ url="https://dl.pstmn.io/download/version/${version}/linux64"
 hash="41a223f92390191ead79421d2c1dc3e64951958ae76b532813773a517604a01e"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="postman"
-breaks="postman postman-deb postman-app"
-depends="libxss1 libnss3 libgtk-3-0"
+breaks=("postman" "postman-deb" "postman-app")
+depends=("libxss1" "libnss3" "libgtk-3-0")
 
 install() {
   # Get desktop file and install it

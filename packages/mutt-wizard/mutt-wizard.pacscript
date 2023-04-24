@@ -6,8 +6,8 @@ name="mutt-wizard"
 version="3.3.1"
 url="https://github.com/lukesmithxyz/${name}/archive/v${version}.tar.gz"
 repology=("project: mutt-wizard")
-depends="neomutt isync msmtp notmuch pass curl"
-breaks="mutt-wizard mutt-wizard-git"
+depends=("neomutt" "isync" "msmtp" "notmuch" "pass" "curl")
+breaks=("mutt-wizard" "mutt-wizard-git")
 description="Simple interface to auto-configure neomutt and isync with safe passwords"
 hash="4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53"
 

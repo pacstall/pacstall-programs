@@ -1,9 +1,9 @@
 name="obs-backgroundremoval-git"
 pkgname="obs-backgroundremoval"
 url="https://github.com/royshil/obs-backgroundremoval.git"
-build_depends="libobs-dev wget git build-essential libsimde-dev ninja-build"
+build_depends=("libobs-dev" "wget" "git" "build-essential" "libsimde-dev" "ninja-build")
 pacdeps=("onnxruntime-bin" "cmake-deb")
-breaks="${pkgname}"
+breaks=("${pkgname}")
 arch=('amd64')
 description="This plugin is meant to make it easy to replace the background in portrait images and video. It is using a neural network to predict the mask of the portrait and remove the background pixels. It's easily composable with other OBS plugins to replace the background with e.g. an image or a transparent color."
 maintainer="Zahrun <Zahrun@github.com>"

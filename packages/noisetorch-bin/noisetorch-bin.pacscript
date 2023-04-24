@@ -7,8 +7,8 @@ url="https://github.com/noisetorch/NoiseTorch/releases/download/v${version}/Nois
 hash="aaa29e76736dc3432197e665f3c868496b5aca52183b67e5a0a1b8fa7913fe60"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
-breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
-depends="policykit-1"
+breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
+depends=("policykit-1")
 
 install() {
   # Extract tgz
