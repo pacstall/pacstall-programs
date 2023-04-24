@@ -1,20 +1,17 @@
 name="tuner-git"
 license="GPL-3.0"
 url="https://github.com/louis77/tuner.git"
-build_depends="meson valac libgtk-3-dev libgranite-dev libsoup2.4-dev libgstreamer1.0-dev libgstreamer-plugins-bad1.0-dev libjson-glib-dev libgee-0.8-dev libgeocode-glib-dev libgeoclue-2-dev"
-breaks="tuner"
+build_depends=("meson" "valac" "libgtk-3-dev" "libgranite-dev" "libsoup2.4-dev" "libgstreamer1.0-dev" "libgstreamer-plugins-bad1.0-dev" "libjson-glib-dev" "libgee-0.8-dev" "libgeocode-glib-dev" "libgeoclue-2-dev" "libgeocode-glib-dev")
+depends=("desktop-file-utils")
+replace=("tuner")
 description="Tuner Radio Player - development version"
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" github | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
 prepare() {
-  if ask "Are you sure you want to install the development version of Tuner?" Y; then
-    meson builddir --prefix=/usr
-  else
-    exit 1
-  fi
+  meson builddir --prefix=/usr
 }
 
 build() {
