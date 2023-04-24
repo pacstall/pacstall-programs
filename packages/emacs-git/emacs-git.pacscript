@@ -74,12 +74,12 @@ NOGZ="YES"        # Don't compress .el files.
 name="emacs-git"
 pkgname="emacs"
 description="An extensible, customizable, free/libre text editor — and more."
-build_depends="git autoconf texinfo pkg-config libncurses-dev"
-depends_nox="libalsaplayer0 libgnutls28-dev libxml2 libjansson-dev gpm"
-depends="${depends_nox} m17n-lib-bin libharfbuzz0b"
+build_depends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
+depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
+depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 gives="${name}"
-breaks="${name} ${name}-nox"
-replace="${name} ${name}-nox"
+breaks=("${name}" "${name}-nox")
+replace=("${name}" "${name}-nox")
 url="https://github.com/emacs-mirror/emacs.git"
 pkgver() {
     git ls-remote "${url}" master | cut -f1 | cut -c1-8
@@ -125,7 +125,7 @@ if [[ ${CLANG} == "YES" ]]; then
   export AS="/usr/bin/llvm-as"
   export CCFLAGS+=" -fuse-ld=lld"
   export CXXFLAGS+=" -fuse-ld=lld"
-  build_depends+=" clang lld llvm"
+  build_depends+=("clang" "lld" "llvm")
 fi
 if [[ ${LTO} == "YES" ]]; then
   if [[ ${CLANG} != "YES" ]]; then
@@ -139,62 +139,62 @@ fi
 
 if [[ ${JIT} == "YES" ]]; then
   if [[ ${CLI} == "YES" ]]; then
-    depends_nox+=" libgccjit0 libgccjit-10-dev"
+    depends_nox+=("libgccjit0" "libgccjit-10-dev")
   else
-    depends+=" libgccjit0 libgccjit-10-dev"
+    depends+=("libgccjit0" "libgccjit-10-dev")
   fi
 fi
 
 if [[ ${CLI} == "YES" ]]; then
-  depends="${depends_nox}"
+  depends=("${depends_nox[@]}")
 elif [[ ${NOTKIT} == "YES" ]]; then
-  depends+=" dbus hicolor-icon-theme libxinerama1 libxrandr2 liblcms2-2 librsvg2-2 libxfixes3 libxi6 libsm6 libxcb-util1 libxcb1"
-  build_depends+=" x11proto-dev"
+  depends+=("dbus" "hicolor-icon-theme" "libxinerama1" "libxrandr2" "liblcms2-2" "librsvg2-2" "libxfixes3" "libxi6" "libsm6" "libxcb-util1" "libxcb1")
+  build_depends+=("x11proto-dev")
 elif [[ ${LUCID} == "YES" ]]; then
-  depends+=" dbus hicolor-icon-theme libxinerama1 libxfixes3 liblcms2-2 librsvg2-2 xaw3dg libxrandr2 libxi6 libsm6 libxcb-util1 libxcb1"
-  build_depends+=" x11proto-dev"
+  depends+=("dbus" "hicolor-icon-theme" "libxinerama1" "libxfixes3" "liblcms2-2" "librsvg2-2" "xaw3dg" "libxrandr2" "libxi6" "libsm6" "libxcb-util1" "libxcb1")
+  build_depends+=("x11proto-dev")
 elif [[ ${GTK3} == "YES" ]]; then
-  depends+=" ${libgtk_dev} libsm6 libxcb-util1 libxcb1"
-  build_depends+=" x11proto-dev libxi-dev"
+  depends+=("${libgtk_dev}" "libsm6" "libxcb-util1" "libxcb1")
+  build_depends+=("x11proto-dev" "libxi-dev")
 fi
 
 if [[ ${CLI} != "YES" ]]; then
-  depends+=" ${libjpeg_turbo} libpng16-16 libgif-dev ${libwebp} libtiff5 libxpm-dev"
+  depends+=("${libjpeg_turbo}" "libpng16-16" "libgif-dev" "${libwebp}" "libtiff5")
 elif [[ ${CLI} == "YES" ]]; then
-  depends+=""
+  depends+=("")
 fi
 
 if [[ ${ALSA} == "YES" ]]; then
   if [[ ${CLI} == "YES" ]]; then
-    depends_nox+=" libasound2 libatopology2"
+    depends_nox+=("libasound2" "libatopology2")
   else
-    depends+=" libasound2 libatopology2"
+    depends+=("libasound2" "libatopology2")
   fi
 fi
 
-if [[ ${NOCAIRO} != "YES" ]] && [[ ${CLI} != "YES" ]] && [[ ${PGTK} != "YES" ]]; then
-  depends+=" libcairo2"
+if [[ ${NOCAIRO} != "YES" && ${CLI} != "YES" && ${PGTK} != "YES" ]]; then
+  depends+=("libcairo2")
 fi
 
 if [[ ${XWIDGETS} == "YES" ]]; then
-  if [[ ${LUCID} == "YES" ]] || [[ ${NOTKIT} == "YES" ]] || [[ ${CLI} == "YES" ]]; then
+  if [[ ${LUCID} == "YES" || ${NOTKIT} == "YES" || ${CLI} == "YES" ]]; then
     fancy_message error "Xwidgets support *requires* gtk+3!!!"
     exit 1
   else
-    depends+=" libwebkit2gtk-4.0-37"
+    depends+=("libwebkit2gtk-4.0-37")
   fi
 fi
 
 if [[ ${GPM} == "YES" ]]; then
   if [[ ${CLI} == "YES" ]]; then
-    depends_nox+=" libgpm2"
+    depends_nox+=("libgpm2")
   else
-    depends+=" libgpm2"
+    depends+=("libgpm2")
   fi
 fi
 
-if [[ ${DOCS_PDF} == "YES" ]] && [[ ! -d "/usr/local/texlive" ]]; then
-  build_depends+=" texlive-base"
+if [[ ${DOCS_PDF} == "YES" && ! -d "/usr/local/texlive" ]]; then
+  build_depends+=("texlive-base")
 fi
 
 prepare() {
@@ -267,9 +267,7 @@ build() {
     _conf+=("--with-xwidgets")
   fi
 
-  if [[ ${GPM} == "YES" ]]; then
-    true
-  else
+  if [[ ${GPM} != "YES" ]]; then
     _conf+=("--without-gpm")
   fi
 

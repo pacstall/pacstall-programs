@@ -3,8 +3,8 @@ gives="cutefish-dock"
 version="0.3-1"
 url="https://github.com/cutefishos/dock.git"
 license="GPL-3.0"
-build_depends="extra-cmake-modules ninja-build qttools5-dev-tools qtbase5-dev qtdeclarative5-dev qtquickcontrols2-5-dev qttools5-dev libqt5x11extras5-dev libkf5windowsystem-dev"
-depends="fishui libcutefish libqt5svg5-dev"
+build_depends=("extra-cmake-modules" "ninja-build" "qttools5-dev-tools" "qtbase5-dev" "qtdeclarative5-dev" "qtquickcontrols2-5-dev" "qttools5-dev" "libqt5x11extras5-dev" "libkf5windowsystem-dev")
+depends=("fishui" "libcutefish" "libqt5svg5-dev")
 description="CutefishOS application dock."
 
 pkgver() {

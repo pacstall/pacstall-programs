@@ -1,11 +1,11 @@
 name="protonvpn-cli"
 breaks="${name}-git"
-replace="${name}"
+replace=("${name}")
 repology=("project: ${name}")
 version="3.13.0"
 url="https://github.com/ProtonVPN/linux-cli/archive/refs/tags/${version}.tar.gz"
-build_depends="python3-setuptools"
-depends="python3-dialog"
+build_depends=("python3-setuptools")
+depends=("python3-dialog")
 pacdeps=("protonvpn-nm-lib" "proton-python-client")
 description="Official ProtonVPN Linux app (CLI)"
 hash="d295d6c899638a88d615e2cacb078ecf2aee8c771ebb087c9edb43aea25aacd9"
