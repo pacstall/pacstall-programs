@@ -1,11 +1,11 @@
 name="anydesk-bin"
 gives="anydesk"
-breaks="${gives}-deb"
-replace="${gives}"
+breaks=("${gives}-deb")
+replace=("${gives}")
 repology=("project: ${gives}")
 version="6.2.1"
 url="https://download.anydesk.com/linux/${gives}-${version}-amd64.tar.gz"
-depends="libc6 libgcc1 libglib2.0-0 libgtk2.0-0 libstdc++6 libx11-6 libxcb-shm0 libxcb1 libpango1.0-dev libcairo2 libxrandr2 libx11-xcb1 libxtst6 libxfixes3 libxdamage1 libgtkglext1"
+depends=("libc6" "libgcc1" "libglib2.0-0" "libgtk2.0-0" "libstdc++6" "libx11-6" "libxcb-shm0" "libxcb1" "libpango1.0-dev" "libcairo2" "libxrandr2" "libx11-xcb1" "libxtst6" "libxfixes3" "libxdamage1" "libgtkglext1")
 description="Platform independent remote access to personal computers and other devices running the host application - Binary version"
 hash="96a7ded2144ecdaff381c34e49eee3275caaaac00847e91abf5e7783706c989c"
 arch=('amd64')

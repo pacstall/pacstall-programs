@@ -1,6 +1,6 @@
 name="paconvert-git"
 gives="paconvert"
-breaks="${gives}-deb ${gives}-bin ${gives}-app ${gives}-git"
+breaks=("${gives}-deb" "${gives}-bin" "${gives}-app" "${gives}-git")
 url="https://github.com/pacstall/paconvert.git"
 description="Paconvert makes converting PKGBUILDS into pacscripts easier."
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"

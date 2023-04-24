@@ -16,9 +16,9 @@ version="0.3.0"
 description="A more intuitive version of du in rust"
 url="https://git.sr.ht/~technomancy/fnlfmt/archive/${version}.tar.gz"
 gives="${pkgname}"
-breaks="${pkgname}-bin ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
-depends="lua5.3"
-build_depends="lua5.3"
+breaks=("${pkgname}-bin" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
+depends=("lua5.3")
+build_depends=("lua5.3")
 hash="8baa2f5ed98f449139f6bd8b4859575c4cfeacc60c0a8884ecaa27bc94e69156"
 repology=("project: fnlfmt")
 

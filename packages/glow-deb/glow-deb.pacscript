@@ -1,6 +1,6 @@
 name="glow-deb"
 gives="glow"
-replace="${gives}"
+replace=("${gives}")
 version="1.5.0"
 url="https://github.com/charmbracelet/${gives}/releases/download/v${version}/${gives}_${version}_linux_amd64.deb"
 description="Render markdown on the CLI, with pizzazz!"

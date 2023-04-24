@@ -1,7 +1,7 @@
 name="onlyoffice-desktopeditors-deb"
 gives="onlyoffice-desktopeditors"
 version="7.3.3"
-replace="${gives}"
+replace=("${gives}")
 url="https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${version}/onlyoffice-desktopeditors_amd64.deb"
 description="Free office suite that combines text, spreadsheet and presentation"
 repology=("project: onlyoffice-desktopeditors")

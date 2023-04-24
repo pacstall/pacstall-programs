@@ -1,6 +1,6 @@
 name="bat-deb"
 gives="bat"
-replace="${gives}"
+replace=("${gives}")
 version="0.23.0"
 url="https://github.com/sharkdp/${gives}/releases/download/v${version}/bat_${version}_amd64.deb"
 description="A cat(1) clone with wings"
