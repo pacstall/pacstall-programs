@@ -1,9 +1,9 @@
 name="drawio-desktop-deb"
 repology=("project: drawio-desktop" "visiblename: drawio-desktop")
-version="21.1.2"
+version="21.2.1"
 url="https://github.com/jgraph/drawio-desktop/releases/download/v${version}/drawio-amd64-${version}.deb"
 gives="draw.io"
 description="Diagram drawing application built on web technology"
-hash="79f408e4eb15321ecef4e8222f078b4c7ffbc066153bf6d53c8b15f120d813d7"
+hash="66ee32baace526728c4ea4c949daa29bfc5a260bf78ed9436401dc84983b9ffb"
 arch=('amd64')
 maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"

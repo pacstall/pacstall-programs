@@ -1,8 +1,8 @@
 name="pacstall-gui-git"
 pacdeps=("yad")
-depends="sed adwaita-icon-theme policykit-1 desktop-file-utils"
+depends=("sed" "adwaita-icon-theme" "policykit-1" "desktop-file-utils")
 url="https://github.com/cat-master21/pacstall-gui.git"
-breaks="${gives} ${gives}-bin ${gives}-deb"
+breaks=("${gives}" "${gives}-bin" "${gives}-deb")
 gives="pacstall-gui"
 description="A gui for Pacstall written in bash."
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"

@@ -1,7 +1,7 @@
 name="mailspring-deb"
 gives="mailspring"
 version="1.10.8"
-replace="${gives}"
+replace=("${gives}")
 url="https://github.com/Foundry376/Mailspring/releases/download/${version}/mailspring-${version}-amd64.deb"
 description="Mailspring is a new version of Nylas Mail maintained by one of the original authors. It's faster, leaner, and shipping today!"
 hash="697a4f9fab6948ec162ffdf8aa5a49fa89ff1fe5fbdf4dc9d63c2fc1c54e4cdb"
