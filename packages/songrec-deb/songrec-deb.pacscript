@@ -1,7 +1,7 @@
 name="songrec-deb"
 gives="songrec"
 version="0.3.2"
-replace="${gives}"
+replace=("${gives}")
 url="https://launchpad.net/~marin-m/+archive/ubuntu/songrec/+files/songrec_${version}+4kinetic_amd64.deb"
 repology=("project: songrec")
 description="SongRec is an open-source Shazam client for Linux, written in Rust."

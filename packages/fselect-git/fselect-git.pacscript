@@ -1,7 +1,7 @@
 name="fselect-git"
 pkgname="fselect"
 gives="fselect"
-build_depends="cargo rustc"
+build_depends=("cargo" "rustc")
 description="Find files with SQL-like queries"
 url="https://github.com/jhspetersson/fselect.git"
 maintainer="Diego Magdaleno <diegomagdaleno@pm.me>"

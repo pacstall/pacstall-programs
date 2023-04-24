@@ -7,9 +7,8 @@ url="https://github.com/Mastermindzh/tidal-hifi/releases/download/${version}/tid
 hash="77f54e723f81e43df108338a5ef31fdd543632ddf304f69d6bc0244cfceb7b38"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
-breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
-
-depends="libxss1 libnss3 libgtk-3-0"
+breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
+depends=("libxss1" "libnss3" "libgtk-3-0")
 
 install() {
   # Get icon from github and install it

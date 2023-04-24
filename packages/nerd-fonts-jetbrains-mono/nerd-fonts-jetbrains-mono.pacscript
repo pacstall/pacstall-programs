@@ -1,6 +1,6 @@
 name="nerd-fonts-jetbrains-mono"
 pkgname="nerd-fonts-jetbrains-mono"
-breaks="${pkgname}"
+breaks=("${pkgname}")
 gives="${pkgname}"
 #repology=("project: fonts:nerd-fonts")
 version="2.2.2"
