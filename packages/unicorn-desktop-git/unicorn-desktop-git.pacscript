@@ -10,6 +10,11 @@ pkgver() {
 }
 version="$(pkgver)"
 
+build() {
+  mkdir -p "${pkgdir}/usr/share/icons"
+  mkdir -p "${pkgdir}/usr/share/backgrounds"
+}
+
 install() {
   sudo cp -r icons/* "${pkgdir}/usr/share/icons"
   sudo cp -r backgrounds/* "${pkgdir}/usr/share/backgrounds"
