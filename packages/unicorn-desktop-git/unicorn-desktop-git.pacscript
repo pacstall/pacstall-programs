@@ -13,14 +13,17 @@ version="$(pkgver)"
 build() {
   sudo mkdir -p "${pkgdir}/usr/share/icons"
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
+  sudo mkdir -p "${pkgdir}/etc/skel/unicorn/.config"
 }
 
 install() {
+  sudo cp -r .xinitrc "${pkgdir}/etc/skel/unicorn"
+  sudo cp -r .config/* "${pkgdir}/etc/skel/unicorn/.config"
   sudo cp -r icons/* "${pkgdir}/usr/share/icons"
   sudo cp -r backgrounds/* "${pkgdir}/usr/share/backgrounds"
 }
 
 postinst() {
-  sudo cp -r .xinitrc "${homedir}"
-  sudo cp -r .config/* "${homedir}/.config"
+  sudo cp -r "/etc/skel/unicorn/.xinitrc" "${homedir}"
+  sudo cp -r "/etc/skel/unicorn/.config/*" "${homedir}/.config"
 }
