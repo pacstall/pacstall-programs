@@ -34,6 +34,7 @@ install() {
 }
 
 postinst() {
+  sudo mkdir -p "${homedir}/.local/share"
   sudo cp -r "/etc/skel/.config/xfce4" "${homedir}/.config"
   sudo cp -r "/etc/skel/.local/share/onboard" "${homedir}/.local/share"
 }
