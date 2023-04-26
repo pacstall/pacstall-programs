@@ -11,8 +11,8 @@ pkgver() {
 version="$(pkgver)"
 
 build() {
-  mkdir -p "${pkgdir}/usr/share/icons"
-  mkdir -p "${pkgdir}/usr/share/backgrounds"
+  sudo mkdir -p "${pkgdir}/usr/share/icons"
+  sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
 }
 
 install() {
