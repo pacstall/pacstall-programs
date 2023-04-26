@@ -33,5 +33,5 @@ install() {
 }
 
 postinst() {
-  sudo cp -r "${pkgdir}/etc/skel/.config/xfce4" "${homedir}/.config"
+  sudo cp -r "/etc/skel/.config/xfce4" "${homedir}/.config"
 }
