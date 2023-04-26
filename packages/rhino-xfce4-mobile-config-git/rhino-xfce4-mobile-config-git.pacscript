@@ -32,3 +32,8 @@ install() {
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
 }
+
+postinst() {
+  sudo cp -r xfce4 "${homedir}/.config"
+  sudo cp -r onboard "${homedir}/.local/share"
+}
