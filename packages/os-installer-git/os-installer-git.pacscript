@@ -15,11 +15,6 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {
-  git config --global --add safe.directory /tmp/pacstall/os-installer
-  fancy_message warn "This can only be built using the latest version of most OSes."
-}
-
 build() {
   # Build nessesary files
   meson --prefix="/usr" --buildtype=release . build
