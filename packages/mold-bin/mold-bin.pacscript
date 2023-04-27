@@ -16,7 +16,7 @@ hash="bf788940db4a9ac19e7745c821bf6ee18ff4d75441a803d84f86c9f3b0aa2a5e"
 repology=("project: mold")
 
 install() {
-	sudo mkdir -p "${pkgdir}/usr/local"
-	sudo mv ./* "${pkgdir}/usr/local"
+	sudo mkdir -p "${pkgdir}/usr/"
+	sudo mv ./* "${pkgdir}/usr/"
 }
 # vim:set ft=sh ts=2 sw=2 et:
