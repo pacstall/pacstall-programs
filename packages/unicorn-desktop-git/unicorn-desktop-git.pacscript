@@ -24,7 +24,7 @@ install() {
 }
 
 postinst() {
-  sudo mkdir -p "${homedir}/.config"
-  sudo cp -r /etc/skel/unicorn/.xinitrc "${homedir}"
-  sudo cp -r /etc/skel/unicorn/.config/* "${homedir}/.config"
+  mkdir -p "${homedir}/.config"
+  cp -r /etc/skel/unicorn/.xinitrc "${homedir}"
+  cp -r /etc/skel/unicorn/.config/* "${homedir}/.config"
 }
