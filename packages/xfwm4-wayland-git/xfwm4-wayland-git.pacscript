@@ -12,7 +12,7 @@ pkgver() {
 version="$(pkgver)"
 
 build() {
-  sudo meson build
+  sudo meson setup build
 }
 
 install() {
