@@ -7,6 +7,7 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="mold-bin"
+gives="mold"
 version="1.11.0"
 arch=("amd64")
 url="https://github.com/rui314/mold/releases/download/v${version}/mold-${version}-x86_64-linux.tar.gz"
