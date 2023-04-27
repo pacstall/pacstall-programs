@@ -18,4 +18,3 @@ build() {
 install() {
   sudo DESTDIR="${pkgdir}" ninja -C build install
 }
-
