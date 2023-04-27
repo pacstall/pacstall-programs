@@ -11,11 +11,11 @@ __icon_url="https://github.com/mymonero/mymonero-app-js/raw/master/build/icon.pn
 repology=("project: mymonero")
 
 install() {
-    sudo install -Dm755 "MyMonero-${version}.AppImage" "${pkgdir}/usr/bin/mymonero"
-    wget -q -O "MyMonero.png" "${__icon_url}"
-    sudo install -Dm644 "MyMonero.png" "${pkgdir}/usr/share/pixmaps/MyMonero.png"
-    sudo mkdir -p "${pkgdir}/usr/share/applications/"
-    echo "[Desktop Entry]
+  sudo install -Dm755 "MyMonero-${version}.AppImage" "${pkgdir}/usr/bin/mymonero"
+  wget -q -O "MyMonero.png" "${__icon_url}"
+  sudo install -Dm644 "MyMonero.png" "${pkgdir}/usr/share/pixmaps/MyMonero.png"
+  sudo mkdir -p "${pkgdir}/usr/share/applications/"
+  echo "[Desktop Entry]
     Name=MyMonero
     Icon=MyMonero
     Type=Application
