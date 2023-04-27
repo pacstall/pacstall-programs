@@ -32,3 +32,9 @@ install() {
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
 }
+
+postinst() {
+  mkdir -p "${homedir}/.local/share"
+  cp -r "/etc/skel/.config/xfce4" "${homedir}/.config"
+  cp -r "/etc/skel/.local/share/onboard" "${homedir}/.local/share"
+}
