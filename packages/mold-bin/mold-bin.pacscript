@@ -21,7 +21,7 @@ case "${CARCH}" in
     ;;
 esac
 description="A modern linker"
-breaks=("${name}-git" "$name")
+breaks=("${name}-git" "${name}")
 repology=("project: mold")
 
 install() {
