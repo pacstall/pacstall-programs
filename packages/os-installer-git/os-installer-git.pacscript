@@ -17,7 +17,7 @@ version="$(pkgver)"
 
 build() {
   # Build nessesary files
-  meson --prefix="/usr" --buildtype=release . build
+  meson build --prefix="/usr" --buildtype=release
 }
 
 install() {
