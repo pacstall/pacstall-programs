@@ -12,6 +12,8 @@ pkgver() {
 version="$(pkgver)"
 
 build() {
+  ls -l
+  ls -l ../
   sudo meson setup build
 }
 
