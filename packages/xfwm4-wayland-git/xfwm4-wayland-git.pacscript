@@ -11,9 +11,11 @@ pkgver() {
 }
 version="$(pkgver)"
 
+prepare() {
+  git checkout wayland-2
+}
+
 build() {
-  ls -l
-  ls -l ../
   sudo meson setup build
 }
 
