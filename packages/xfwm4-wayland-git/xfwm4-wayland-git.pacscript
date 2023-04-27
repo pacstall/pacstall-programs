@@ -12,7 +12,9 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-  git checkout wayland-2
+  git remote add upstream "${url}"
+  git fetch upstream
+  git checkout upstream/wayland-2
 }
 
 build() {
