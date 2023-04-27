@@ -11,7 +11,7 @@ case "${CARCH}" in
     hash="4ef4cf0a97b7d5352d64e2634632cf9eb79b2594cd6aee66fc31ffbad1cf5b6c"
     arch=("amd64")
     ;;
-  *)
+  arm64)
     hash="07057a2801bbef6b48ac8b985504e6831f220c41521beb85436b5127360ccdec"
     arch=('arm64')
     ;;
