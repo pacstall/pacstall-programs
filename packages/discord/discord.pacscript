@@ -1,11 +1,11 @@
 name="discord"
-version="0.0.26"
+version="0.0.27"
 maintainer="Henryws <hwengerstickel@pm.me>"
 url="https://dl.discordapp.net/apps/linux/${version}/${name}-${version}.tar.gz"
 homepage='https://discord.com/'
 depends=("libc6" "libasound2" "libatomic1" "libgconf-2-4" "libnotify4" "libnspr4" "libnss3" "libstdc++6" "libxss1" "libxtst6" "libayatana-appindicator3-1" "libc++1")
 description="Chat for Communities and Friends"
-hash="30f74dc59241988378346128616bcbd9c98d9b7eff613dbbe66d9b5561d76f06"
+hash="e9f1da88f05cbfb4d0561f936ad20461767f2f03e69c2994fd059728581447b5"
 arch=('amd64')
 repology=("project: ${name}")
 
