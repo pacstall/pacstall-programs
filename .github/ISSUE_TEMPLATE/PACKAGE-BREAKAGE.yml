@@ -39,3 +39,11 @@ body:
       render: shell
     validations:
       required: true
+  - type: textarea
+    id: patch
+    attributes:
+      label: Patch for package
+      description: Can you provide a fix for this package? If so, create a patch and paste it here.
+      render: diff
+    validations:
+      required: false
