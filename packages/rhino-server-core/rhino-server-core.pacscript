@@ -3,7 +3,7 @@ url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
 pacdeps=("rhino-pkg-git" "rhino-neofetch-git")
 description="Transitional package to provide minimal core Rhino Linux software"
 maintainer="oklopfer <oren@taumoda.com>"
-version="2023.1-beta3"
+version="2023.1-beta4"
 style="(server)"
 branch="devel"
 postinst() {
