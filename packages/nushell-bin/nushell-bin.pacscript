@@ -12,10 +12,10 @@ name="nushell-bin"
 pkgname="nushell"
 version="0.79.0"
 description="A new type of shell"
-url="https://github.com/nushell/nushell/releases/download/${version}/nu-${version}-x86_64-unknown-linux-musl.tar.gz"
+url="https://github.com/nushell/nushell/releases/download/${version}/nu-${version}-x86_64-unknown-linux-gnu.tar.gz"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 arch=('amd64')
-hash="d326bf1143dddb51a8e0a3d9d2774c4874b93eaa62ca154a2cf88403b2ff3fa6"
+hash="49b8b37ac084327478a029381ff33d123029b2efaee5fde84c9fd3f2838984bb"
 repology=("project: nushell")
 
 install() {
