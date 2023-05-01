@@ -2,6 +2,7 @@ name="blender-bin"
 gives="blender"
 version="3.5.1"
 url="https://mirrors.ocf.berkeley.edu/blender/release/Blender3.5/blender-${version}-linux-x64.tar.xz"
+homepage='https://www.blender.org/'
 arch=("amd64")
 description="A fully integrated 3D graphics creation suite"
 maintainer="Henryws <hwengerstickel@pm.me>"
