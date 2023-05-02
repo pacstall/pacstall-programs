@@ -1,5 +1,4 @@
 name="dbeaver-ce-deb"
-pkgname="dbeaver-ce"
 version="23.0.3"
 gives="dbeaver-ce"
 url="https://github.com/dbeaver/dbeaver/releases/download/${version}/dbeaver-ce_${version}_amd64.deb"
