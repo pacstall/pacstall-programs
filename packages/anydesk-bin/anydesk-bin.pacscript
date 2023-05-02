@@ -25,8 +25,8 @@ install() {
   sudo mkdir -p "${pkgdir}/usr/share/anydesk/files/init"
   sudo mv "./init/anydesk" "${pkgdir}/usr/share/anydesk/files/init"
   # Icon
-  sudo mkdir -p "${pkgdir}/usr/share/pixmaps/anydesk.svg"
-  sudo mv "./icons/hicolor/scalable/apps/anydesk.svg" "${pkgdir}/usr/share/pixmaps/anydesk.svg"
+  sudo mkdir -p "${pkgdir}/usr/share/hicolor/"
+  sudo mv "./icons/hicolor/"* "${pkgdir}/usr/share/hicolor/"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
