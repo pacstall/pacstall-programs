@@ -5,7 +5,7 @@ description="Transitional package to provide minimal core Rhino Linux software"
 maintainer="oklopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-pine-core")
 production="2023.1-beta4"
-version="${production}_1"
+version="${production}-1"
 style="(server)"
 branch="devel"
 postinst() {
