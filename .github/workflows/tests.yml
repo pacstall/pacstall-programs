@@ -59,7 +59,7 @@ jobs:
         run: |
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
-          curl -fsSL https://git.io/JsADh > pacstall-install.sh
+          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh
           chmod +x ./pacstall-install.sh
           echo N\n | sudo -E ./pacstall-install.sh
           rm ./pacstall-install.sh
@@ -72,7 +72,7 @@ jobs:
         run: |
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
-          curl -fsSL https://git.io/JsADh > pacstall-install.sh
+          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
@@ -152,7 +152,7 @@ jobs:
         run: |
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
-          curl -fsSL https://git.io/JsADh > pacstall-install.sh
+          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh
           chmod +x ./pacstall-install.sh
           echo N\n | sudo -E ./pacstall-install.sh
           rm ./pacstall-install.sh
@@ -165,7 +165,7 @@ jobs:
         run: |
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
-          curl -fsSL https://git.io/JsADh > pacstall-install.sh
+          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
