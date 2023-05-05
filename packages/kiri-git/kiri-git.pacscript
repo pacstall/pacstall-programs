@@ -1,6 +1,5 @@
 name=kiri-git
 repology=("project: kiri")
-epoch="1"
 homepage="https://github.com/leoheck/kiri"
 build_depends=("git" "python3-pip")
 depends=("git" "build-essential" "libgtk-3-dev" "pkg-config" "opam" "python-is-python3" "python3-pip" "kicad" "dos2unix" "coreutils" "zenity" "librsvg2-bin" "imagemagick" "xdotool" "rename")
