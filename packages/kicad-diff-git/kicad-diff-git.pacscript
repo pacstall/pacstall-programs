@@ -11,7 +11,6 @@ arch=("any")
 provides=("kicad-diff")
 conflicts=("kicad-diff")
 url="https://github.com/leoheck/KiCad-Diff.git"
-
 pkgver() {
 	git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
