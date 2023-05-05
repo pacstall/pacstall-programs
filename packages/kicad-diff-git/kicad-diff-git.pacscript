@@ -1,6 +1,5 @@
 name="kicad-diff-git"
 repology=("project: kicad-diff-git")
-epoch="1"
 homepage="https://github.com/leoheck/KiCad-Diff"
 build_depends=("git" "python3-pip")
 depends=("python3")
