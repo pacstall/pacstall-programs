@@ -1,7 +1,7 @@
 name="kicad-diff-git"
 repology=("project: kicad-diff-git")
 homepage="https://github.com/leoheck/KiCad-Diff"
-build_depends=("git" "python3-pip")
+build_depends=("python3-pip")
 depends=("python3")
 gives="kicad-diff"
 description=" Scripts for performing image diffs between pcbnew layout revisions Resources"
