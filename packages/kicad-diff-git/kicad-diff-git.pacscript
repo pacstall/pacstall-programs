@@ -1,6 +1,5 @@
 name="kicad-diff-git"
 repology=("project: kicad-diff-git")
-version="4500fef3"
 epoch="1"
 homepage="https://github.com/leoheck/KiCad-Diff"
 build_depends=("git" "python3-pip")
@@ -13,6 +12,11 @@ provides=("kicad-diff")
 conflicts=("kicad-diff")
 url="https://github.com/leoheck/KiCad-Diff.git"
 
+pkgver() {
+	git ls-remote "${url}" master | cut -f1 | cut -c1-8
+}
+version=$(pkgver)
+
 prepare() {
 	pip install -r requirements.txt
 }
@@ -24,8 +28,4 @@ install() {
 	for bin in "kidiff" "kicad_svg_tweaks" "plot_kicad_pcb"; do
 		sudo ln -s "../../opt/KiCad-Diff/bin/$bin" "$pkgdir/usr/bin/$bin"
 	done
-}
-
-pkgver() {
-	git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
