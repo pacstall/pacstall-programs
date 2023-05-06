@@ -1,11 +1,11 @@
 name="pomatez-deb"
 repology=("project: pomatez")
 pkgname="pomatez"
-version="1.2.2"
+version="1.2.3"
 url="https://github.com/roldanjr/${pkgname}/releases/download/v${version}/Pomatez-v${version}-linux.deb"
 depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libappindicator3-1" "libsecret-1-0")
 gives="pomatez"
 replace=("pomatez")
 description="Stay Focused. Take a Break."
-hash="a796971bfcd97592309e703a470fc01eb39002a640833a37bcb968df1960bce6"
+hash="0dc89a9ef2579ea4da7bcd3e9273017b7d255f8f5b26cf862ab7be83e29dea61"
 maintainer="Zahrun <Zahrun@github.com>"
