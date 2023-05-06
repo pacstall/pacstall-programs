@@ -18,9 +18,9 @@ arch=('amd64')
 repology=("project: clipboard")
 
 install() {
-		sudo install -Dm 755 "lib/libcbwayland.so" "${pkgdir}/usr/lib/libcbwayland.so"
-	  sudo install -Dm 755 "lib/libcbx11.so" "${pkgdir}/usr/lib/libcbx11.so"
+  sudo install -Dm 755 "lib/libcbwayland.so" "${pkgdir}/usr/lib/libcbwayland.so"
+  sudo install -Dm 755 "lib/libcbx11.so" "${pkgdir}/usr/lib/libcbx11.so"
 
-	  sudo install -Dm 755 "bin/cb" "${pkgdir}/usr/bin/cb"
+  sudo install -Dm 755 "bin/cb" "${pkgdir}/usr/bin/cb"
 }
 # vim:set ft=sh ts=2 sw=2 et:
