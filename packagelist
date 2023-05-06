@@ -1,6 +1,5 @@
 1password-cli-bin
 adapta-gtk-theme-git
-rust-motd-deb
 alacritty
 amfora-bin
 an-anime-game-launcher-bin
@@ -325,6 +324,7 @@ rhino-setup-bin
 rhino-setup-git
 rhino-xfce4-mobile-config-git
 rstudio-deb
+rust-motd-deb
 sed
 shell-color-scripts
 shellcheck-bin
