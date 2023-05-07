@@ -1,4 +1,4 @@
-name="conky-manager-zcot-git"
+name="conky-manager"
 url="https://github.com/zcot/conky-manager2.git"
 pkgver() {
   sudo mkdir tempcount && sudo chown "${PACSTALL_USER}" tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b add-1.10-support . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd .. # Returns the latest commit hash from remote
