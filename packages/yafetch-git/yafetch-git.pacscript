@@ -5,7 +5,7 @@ url="https://github.com/Henryws/yafetch.git"
 description="Yet another fetch tool"
 maintainer="Henryws <hwengerstickel@pm.me>"
 pkgver() {
-  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd ..
 }
 version="$(pkgver)"
 

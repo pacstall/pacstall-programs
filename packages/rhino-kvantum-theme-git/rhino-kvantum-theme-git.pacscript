@@ -5,7 +5,7 @@ maintainer="Henryws <hwengerstickel@pm.me>"
 description="Rhino Linux Kvantum theme"
 url="https://github.com/rhino-linux/KvRhino.git"
 pkgver() {
-  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd ..
 }
 version="$(pkgver)"
 

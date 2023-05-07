@@ -22,7 +22,7 @@ optdepends=("ffmpeg: additional import/export capabilities")
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . | head -n1
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd .. | head -n1
 }
 version="$(pkgver)"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "debian:stretch" "debian:buster" "debian:bullseye")

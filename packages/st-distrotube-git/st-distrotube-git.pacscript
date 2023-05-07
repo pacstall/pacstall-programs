@@ -7,7 +7,7 @@ gives="st"
 description="Distrotube's st build"
 breaks="st"
 pkgver() {
-  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd ..
 }
 version="$(pkgver)"
 

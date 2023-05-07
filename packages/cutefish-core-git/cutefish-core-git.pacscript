@@ -8,7 +8,7 @@ depends=("fishui" "libpulse-dev" "libxtst6" "libpolkit-agent-1-dev" "libxcb-rand
 description="System backend and start session and more."
 
 pkgver() {
-  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd ..
 }
 version="$(pkgver)"
 

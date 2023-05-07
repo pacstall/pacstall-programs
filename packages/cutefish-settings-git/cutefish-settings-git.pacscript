@@ -8,7 +8,7 @@ depends=("fishui" "libfontconfig1" "libfreetype-dev" "libicu-dev" "libkf5coreadd
 description="System Settings application for Cutefish Desktop."
 
 pkgver() {
-  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd ..
 }
 version="$(pkgver)"
 

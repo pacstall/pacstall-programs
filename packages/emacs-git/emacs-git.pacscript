@@ -82,7 +82,7 @@ breaks=("${name}" "${name}-nox")
 replace=("${name}" "${name}-nox")
 url="https://github.com/emacs-mirror/emacs.git"
 pkgver() {
-    mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+    mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd ..
 }
 version="$(pkgver)"
 
