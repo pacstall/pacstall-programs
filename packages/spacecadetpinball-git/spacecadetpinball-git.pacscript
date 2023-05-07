@@ -15,7 +15,7 @@ build_depends=("libsdl2-dev" "libsdl2-mixer-dev" "unrar" "cmake")
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-app" "${pkgname}-deb")
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

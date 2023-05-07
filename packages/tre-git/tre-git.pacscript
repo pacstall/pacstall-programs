@@ -7,7 +7,7 @@ url="https://github.com/dduan/tre.git"
 maintainer="Diego Magdaleno <diegomagdaleno@pm.me>"
 incompatible=("debian:bullseye")
 pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
 }
 version="$(pkgver)"
 

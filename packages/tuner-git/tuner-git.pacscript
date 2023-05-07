@@ -6,7 +6,7 @@ depends=("desktop-file-utils")
 replace=("tuner")
 description="Tuner Radio Player - development version"
 pkgver() {
-  git ls-remote "${url}" github | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b github .
 }
 version="$(pkgver)"
 

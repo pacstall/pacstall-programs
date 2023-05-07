@@ -7,7 +7,7 @@ build_depends=("libpci-dev" "libnl-3-dev" "libnl-genl-3-dev" "gettext" "libgette
 maintainer="Henryws <hwengerstickel@pm.me>"
 description="Linux tool used to diagnose issues with power consumption and power management"
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

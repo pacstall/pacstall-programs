@@ -5,7 +5,7 @@ depends=("libgtk-3-0" "libgee-0.8-2" "libjson-glib-1.0-0" "libjson-glib-1.0-comm
 description="Task manager with Todoist support designed for GNU/Linux"
 maintainer="echometer <guacamolek@yandex.com>"
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

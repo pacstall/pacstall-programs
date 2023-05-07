@@ -8,7 +8,7 @@ maintainer="Ruturajn <nanotiruturaj@gmail.com>"
 breaks="compton picom"
 
 pkgver() {
-  git ls-remote "${url}" next-rebase | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b next-rebase .
 }
 version="$(pkgver)"
 

@@ -7,7 +7,7 @@ description="Linux/OSX/FreeBSD resource monitor."
 hash="9ee4aff7dd84b5475401793b925530c3cfad15c9bb3b4b73c9e875daf919d66c"
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

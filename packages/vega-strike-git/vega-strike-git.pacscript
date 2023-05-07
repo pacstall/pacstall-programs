@@ -5,7 +5,7 @@ description="Space Flight Simulator and trading game"
 pacdeps="vega-strike-engine-git"
 maintainer="echometerain <echometer@disroot.org>"
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

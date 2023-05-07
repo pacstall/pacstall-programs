@@ -22,7 +22,7 @@ optdepends=("ffmpeg: additional import/export capabilities")
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8 | head -n1
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . | head -n1
 }
 version="$(pkgver)"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "debian:stretch" "debian:buster" "debian:bullseye")

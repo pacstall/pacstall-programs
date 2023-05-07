@@ -7,7 +7,7 @@ gives="pacstall-gui"
 description="A gui for Pacstall written in bash."
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

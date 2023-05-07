@@ -7,7 +7,7 @@ description="An adaptive Gtk+ theme based on Material Design Guidelines (Legacy)
 maintainer="Henryws <hwengerstickel@pm.me>"
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | head -n1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

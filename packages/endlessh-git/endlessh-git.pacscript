@@ -6,7 +6,7 @@ url="https://github.com/skeeto/endlessh.git"
 description="SSH tarpit that very slowly sends an endless, random SSH banner"
 maintainer="Henryws <hwengerstickel@pm.me>"
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

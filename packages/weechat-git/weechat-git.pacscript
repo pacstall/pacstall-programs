@@ -8,7 +8,7 @@ breaks="${pkgname}-devel ${pkgname}"
 description="Free chat client, fast and light, designed for many operating systems"
 
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

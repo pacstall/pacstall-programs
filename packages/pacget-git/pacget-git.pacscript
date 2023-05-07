@@ -11,7 +11,7 @@ debian="TRUE"
 ubuntu="TRUE"
 
 pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
+  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
 }
 version="$(pkgver)"
 
