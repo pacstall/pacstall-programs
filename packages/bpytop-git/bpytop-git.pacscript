@@ -5,6 +5,14 @@ build_depends=("make" "python3" "python3-pip" "python3-distutils")
 depends=("python3" "python3-pip" "python3-distutils")
 description="Linux/OSX/FreeBSD resource monitor."
 hash="9ee4aff7dd84b5475401793b925530c3cfad15c9bb3b4b73c9e875daf919d66c"
+release="$(lsb_release -cs)"
+modern=("devel" "sid" "lunar" "bookworm" "mantic")
+
+if [[ " ${modern[*]} " =~ " ${release} " ]]; then
+  pyhack="--break-system-packages"
+else
+  pyhack=""
+fi
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
@@ -12,7 +20,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-  sudo pip3 install --upgrade psutil --break-system-packages
+  sudo pip3 install --upgrade psutil ${pyhack}
 }
 
 install() {
