@@ -12,7 +12,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-  sudo pip3 install --upgrade psutil
+  sudo pip3 install --upgrade psutil --break-system-packages
 }
 
 install() {
