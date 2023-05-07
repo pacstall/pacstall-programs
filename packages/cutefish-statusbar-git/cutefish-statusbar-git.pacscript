@@ -8,7 +8,7 @@ depends=("fishui" "libcutefish" "libdbusmenu-qt5-dev" "libqt5svg5-dev")
 description="Top status bar of CutefishOS"
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
 }
 version="$(pkgver)"
 

@@ -16,7 +16,7 @@ optdepends=("strace: system call tracer"
 maintainer="echometerain <echometer@disroot.org>"
 pacdeps=("yad")
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

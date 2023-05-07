@@ -8,7 +8,7 @@ depends=("libkf5windowsystem-dev" "libdbusmenu-qt5-dev" "libqt5xdg-dev" "qtquick
 description="Unify Qt application style of CutefishOS"
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
 }
 version="$(pkgver)"
 

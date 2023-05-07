@@ -8,7 +8,7 @@ breaks=("aseprite" "libresprite-bin" "libresprite-app" "libresprite-deb" "libres
 gives="libresprite"
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

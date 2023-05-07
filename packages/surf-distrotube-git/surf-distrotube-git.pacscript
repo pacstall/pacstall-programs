@@ -10,7 +10,7 @@ replace=("${pkgname}")
 description="Heavily-patched customized build of the Suckless surf web browser."
 hash="88a73c57558d0d30752184f517d0b6930133ab506383efd394b60d9a04e6513f"
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

@@ -8,7 +8,7 @@ depends=("fishui" "libcutefish" "libkf5windowsystem-dev")
 description="CutefishOS's full-screen application launcher"
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
 }
 version="$(pkgver)"
 

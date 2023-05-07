@@ -7,7 +7,7 @@ url="https://github.com/jhspetersson/fselect.git"
 maintainer="Diego Magdaleno <diegomagdaleno@pm.me>"
 incompatible=("debian:bullseye")
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

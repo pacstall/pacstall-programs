@@ -8,7 +8,7 @@ depends=("libkf5config-dev" "libkdecorations2-dev" "libkf5guiaddons-dev" "libkf5
 description="CutefishOS KWin Plugins."
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
 }
 version="$(pkgver)"
 

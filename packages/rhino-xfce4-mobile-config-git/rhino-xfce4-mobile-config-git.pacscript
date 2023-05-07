@@ -6,7 +6,7 @@ optdepends=("xfce4: to use the configuration")
 replace=("rhino-linux-xfce4-config-git")
 url="https://github.com/oklopfer/dotfiles.git"
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . # Returns the latest commit hash from remote
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . # Returns the latest commit hash from remote
 }
 version="$(pkgver)"
 

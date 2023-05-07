@@ -8,7 +8,7 @@ depends=("fishui" "libcutefish" "libqt5svg5-dev")
 description="CutefishOS application dock."
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
 }
 version="$(pkgver)"
 

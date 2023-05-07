@@ -9,7 +9,7 @@ description="Securely and easily download, verify, install, and launch Tor Brows
 optdepends=("apparmor: support for apparmor profiles")
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b develop .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b develop .
 }
 version="$(pkgver)"
 

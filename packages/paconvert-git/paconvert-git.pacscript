@@ -5,7 +5,7 @@ url="https://github.com/pacstall/paconvert.git"
 description="Paconvert makes converting PKGBUILDS into pacscripts easier."
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 
