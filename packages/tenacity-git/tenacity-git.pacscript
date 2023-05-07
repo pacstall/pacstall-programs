@@ -22,7 +22,7 @@ optdepends=("ffmpeg: additional import/export capabilities")
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . | head -n1
+  mkdir tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 cd tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . | head -n1
 }
 version="$(pkgver)"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "debian:stretch" "debian:buster" "debian:bullseye")

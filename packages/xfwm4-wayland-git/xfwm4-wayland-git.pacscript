@@ -8,7 +8,7 @@ description="xfwm4-wayland compositor"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "debian:stretch" "debian:buster" "debian:bullseye")
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b wayland-2 .
+  mkdir tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 cd tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b wayland-2 .
 }
 version="$(pkgver)"
 

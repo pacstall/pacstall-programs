@@ -7,7 +7,7 @@ build_depends=("libpci-dev" "libnl-3-dev" "libnl-genl-3-dev" "gettext" "libgette
 maintainer="Henryws <hwengerstickel@pm.me>"
 description="Linux tool used to diagnose issues with power consumption and power management"
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+  mkdir tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 cd tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

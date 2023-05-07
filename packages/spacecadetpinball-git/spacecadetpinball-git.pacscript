@@ -15,7 +15,7 @@ build_depends=("libsdl2-dev" "libsdl2-mixer-dev" "unrar" "cmake")
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-app" "${pkgname}-deb")
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+  mkdir tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 cd tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

@@ -7,7 +7,7 @@ breaks=("${pkgname}")
 description="Package manager meant to be simple to use, but also powerful with support to installing packages from multiple sources without altering the root filesystem"
 maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
+  mkdir tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 cd tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
 }
 incompatible=("debian:bullseye")
 version="$(pkgver)"

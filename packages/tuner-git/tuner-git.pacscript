@@ -6,7 +6,7 @@ depends=("desktop-file-utils")
 replace=("tuner")
 description="Tuner Radio Player - development version"
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b github .
+  mkdir tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 cd tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b github .
 }
 version="$(pkgver)"
 

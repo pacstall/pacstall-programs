@@ -8,7 +8,7 @@ maintainer="Ruturajn <nanotiruturaj@gmail.com>"
 breaks="compton picom"
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b next-rebase .
+  mkdir tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 cd tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b next-rebase .
 }
 version="$(pkgver)"
 

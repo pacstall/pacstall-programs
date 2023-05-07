@@ -7,7 +7,7 @@ build_depends=("cargo" "libgit2-dev" "cmake" "rustc")
 description="exa is an improved file lister with more features and better defaults"
 maintainer="Henryws <hwengerstickel@pm.me>"
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
+  mkdir tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 cd tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master .
 }
 version="$(pkgver)"
 

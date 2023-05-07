@@ -8,7 +8,7 @@ depends=("libkf5windowsystem5" "libxcb-icccm4-dev" "qtquickcontrols2-5-dev" "qtb
 description="FishUI is a GUI library based on QQC2 (Qt Quick Controls 2), every Cutefish application uses it."
 
 pkgver() {
-  git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
+  mkdir tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 cd tempcount git clone -q --filter=tree:0git clone -q --filter=tree:0 git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main .
 }
 version="$(pkgver)"
 
