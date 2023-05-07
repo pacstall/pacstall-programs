@@ -8,7 +8,7 @@ depends=("kscreen" "modemmanager-qt-dev" "libkf5networkmanagerqt-dev" "libqt5qui
 description="Cutefish System Library."
 
 pkgver() {
-  sudo mkdir tempcount && sudo chown ${PACSTALL_USER} tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd ..
+  sudo mkdir tempcount && sudo chown "${PACSTALL_USER}" tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd ..
 }
 version="$(pkgver)"
 
