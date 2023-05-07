@@ -7,7 +7,7 @@ gives="pacstall-gui"
 description="A gui for Pacstall written in bash."
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 pkgver() {
-  mkdir tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd ..
+  sudo mkdir tempcount && sudo chown ${PACSTALL_USER} tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master . && echo "$(git log --format=%ct.%h)" && sudo rm -r ../tempcount && cd ..
 }
 version="$(pkgver)"
 
