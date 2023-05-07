@@ -1,4 +1,4 @@
-name="conky-manager"
+name="conky-manager-zcot-git"
 url="https://github.com/zcot/conky-manager2.git"
 pkgver() {
   git ls-remote "${url}" add-1.10-support | cut -f1 | cut -c1-8 # Returns the latest commit hash from remote
