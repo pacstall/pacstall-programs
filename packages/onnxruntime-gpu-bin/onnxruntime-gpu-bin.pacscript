@@ -1,4 +1,5 @@
 name="onnxruntime-gpu-bin"
+gives="onnxruntime-gpu"
 pkgname="onnxruntime-gpu"
 repology=("project: onnxruntime-gpu")
 version="1.14.1"
