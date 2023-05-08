@@ -1,7 +1,6 @@
 name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
-build_depends=("xfwm4" "tint2" "rofi" "feh")
-depends=("xfwm4" "tint2" "rofi" "feh")
+depends=("xfwm4" "tint2" "rofi" "feh" "xfdashboard" "xfdashboard-plugins" "plank" "yaru-theme-icon" "yaru-theme-gtk")
 gives="unicorn-desktop"
 description="Unicorn Desktop by the Rhino Linux Team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
@@ -11,20 +10,29 @@ pkgver() {
 version="$(pkgver)"
 
 build() {
-  sudo mkdir -p "${pkgdir}/usr/share/icons"
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
-  sudo mkdir -p "${pkgdir}/etc/skel/unicorn/.config"
+  sudo mkdir -p "${pkgdir}/usr/share/doc"
+  sudo mkdir -p "${pkgdir}/etc/skel/.config"
+  sudo mkdir -p "${pkgdir}/usr/share/icons"
+  sudo mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
 }
 
 install() {
-  sudo cp -r .xinitrc "${pkgdir}/etc/skel/unicorn"
-  sudo cp -r .config/* "${pkgdir}/etc/skel/unicorn/.config"
-  sudo cp -r icons/* "${pkgdir}/usr/share/icons"
-  sudo cp -r backgrounds/* "${pkgdir}/usr/share/backgrounds"
+  # Install doc
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+  # Install
+  for i in xfce4 icons rofi plank autostart; do
+  sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"; 
+  done
+  sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
+  sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
+  sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
+  sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
 }
 
 postinst() {
-  mkdir -p "${homedir}/.config"
-  cp -r /etc/skel/unicorn/.xinitrc "${homedir}"
-  cp -r /etc/skel/unicorn/.config/* "${homedir}/.config"
+  for i in xfce4 icons rofi plank autostart; do
+  cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
+  sudo chown "${PACSTALL_USER}" "${homedir}/.config/${i}";
+  done
 }
