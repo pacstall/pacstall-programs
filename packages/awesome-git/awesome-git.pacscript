@@ -37,6 +37,7 @@ install() {
 
 postinst() {
   # Install to correct location .desktop file
+  sudo mkdir -p /usr/share/xsessions/
   sudo ln -sf /usr/local/share/xsessions/"${pkgname}".desktop /usr/share/xsessions/"${pkgname}".desktop
 }
 
