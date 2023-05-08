@@ -8,3 +8,4 @@ description="OBS plugin to replace the background in portrait images and video"
 hash="02102353b2c89db41efd18bfd7e077c156d9222ca9855730cb1ef0d842a1f748"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
+incompatible=("debian:bullseye")
