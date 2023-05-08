@@ -34,7 +34,7 @@ install() {
 postinst() {
   if ! test -f "${homedir}/.config"; then
   mkdir "${homedir}/.config";
-  fi 
+  fi
   for i in xfce4 icons rofi plank autostart; do
   cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
   sudo chown "${PACSTALL_USER}" "${homedir}/.config/${i}";
