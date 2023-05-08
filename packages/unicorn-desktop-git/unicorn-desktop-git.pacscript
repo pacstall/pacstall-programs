@@ -8,6 +8,7 @@ pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
+incompatible=("debian:*")
 
 build() {
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
@@ -31,6 +32,9 @@ install() {
 }
 
 postinst() {
+  if ! test -f "${homedir}/.config"; then
+  mkdir "${homedir}/.config";
+  fi 
   for i in xfce4 icons rofi plank autostart; do
   cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
   sudo chown "${PACSTALL_USER}" "${homedir}/.config/${i}";
