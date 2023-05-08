@@ -1,5 +1,5 @@
 name="obs-backgroundremoval-deb"
-gives="obs-backgroundremval"
+gives="obs-backgroundremoval"
 repology=("project: ${gives}")
 breaks=("${gives}" "${gives}-git")
 version="0.5.19"
