@@ -23,7 +23,7 @@ install() {
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
   for i in xfce4 icons rofi plank autostart; do
-  sudo cp -r "${i}" "${pkgdir}/etc/skel/.config";
+  sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
@@ -37,6 +37,6 @@ postinst() {
   fi
   for i in xfce4 icons rofi plank autostart; do
   cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
-  sudo chown "${PACSTALL_USER}" "${homedir}/.config/${i}";
+  sudo chown "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
 }
