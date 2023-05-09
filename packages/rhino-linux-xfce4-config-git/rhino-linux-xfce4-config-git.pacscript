@@ -34,5 +34,8 @@ install() {
 }
 
 postinst() {
+  if ! [[ -d "${homedir}/.config" ]]; then
+    mkdir "${homedir}/.config"
+  fi
   cp -r "/etc/skel/.config/xfce4" "${homedir}/.config"
 }
