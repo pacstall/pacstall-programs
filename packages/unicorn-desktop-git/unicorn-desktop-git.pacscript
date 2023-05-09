@@ -2,6 +2,7 @@ name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
 depends=("xfwm4" "tint2" "rofi" "feh" "xfdashboard" "xfdashboard-plugins" "plank" "yaru-theme-icon" "yaru-theme-gtk")
 gives="unicorn-desktop"
+replace=("rhino-xfce4-mobile-config-git" "rhino-linux-xfce4-config-git")
 description="Unicorn Desktop by the Rhino Linux Team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgver() {

@@ -2,7 +2,7 @@ name="rhino-linux-xfce4-config-git"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 description="Rhino Linux XFCE4 configuration"
 breaks=("${pkgname}-bin")
-replace=("rhino-xfce4-mobile-config-git")
+replace=("rhino-xfce4-mobile-config-git" "unicorn-desktop" "unicorn-desktop-git")
 depends=("xfce4-whiskermenu-plugin" "yaru-theme-icon" "yaru-theme-gtk")
 optdepends=("xfce4: to use the configuration")
 
