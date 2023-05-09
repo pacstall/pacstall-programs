@@ -5,8 +5,8 @@ depends=("unicorn-desktop-git" "rhino-kvantum-theme" "rhino-plymouth-theme" "rhi
 description="Transitional package to provide all core Rhino Linux software"
 maintainer="oklopfer <oren@taumoda.com>"
 replace=("rhino-pine-core" "rhino-server-core")
-production="2023.1-beta4"
-version="${production}-1"
+production="2023.1-beta5"
+version="${production}"
 style="(mainline)"
 branch="devel"
 postinst() {
