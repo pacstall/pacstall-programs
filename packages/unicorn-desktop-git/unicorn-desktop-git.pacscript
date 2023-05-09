@@ -32,7 +32,7 @@ install() {
 }
 
 postinst() {
-  if ! test -f "${homedir}/.config"; then
+  if ! [[ -f "${homedir}/.config" ]]; then
   mkdir "${homedir}/.config";
   fi
   for i in xfce4 icons rofi plank autostart; do
