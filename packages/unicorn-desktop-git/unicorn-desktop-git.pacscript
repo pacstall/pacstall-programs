@@ -33,7 +33,7 @@ install() {
 
 postinst() {
   if ! [[ -f "${homedir}/.config" ]]; then
-  mkdir "${homedir}/.config";
+  mkdir "${homedir}/.config"
   fi
   for i in xfce4 icons rofi plank autostart; do
   cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
