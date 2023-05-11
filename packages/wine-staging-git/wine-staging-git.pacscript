@@ -84,11 +84,17 @@ install() {
 
   sudo install -d -m755 "${pkgdir}/usr/share/fontconfig/conf.default"
   sudo install -D -m644 "${SRCDIR}/${name}/30-win32-aliases.conf" -t "${pkgdir}/usr/share/fontconfig/conf.avail"
-  # FIXME: this line doesn't work post 3.0.0
-  ln -s "../conf.avail/30-win32-aliases.conf" "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
 
   sudo install -D -m644 "${SRCDIR}/${name}/wine-binfmt.conf" "${pkgdir}/usr/lib/binfmt.d/wine.conf"
 
   sudo i686-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib32/wine/i386-windows"/*.dll
   sudo x86_64-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib/wine/x86_64-windows"/*.dll
+}
+
+postinst() {
+  sudo ln -s "../conf.avail/30-win32-aliases.conf" "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
+}
+
+removescript() {
+  sudo rm "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
 }
