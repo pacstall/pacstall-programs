@@ -46,5 +46,5 @@ postinst() {
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
-  cat "/usr/share/plank/docks.ini" | dconf load /net/launchpad/plank/docks/
+  cat "/usr/share/plank/docks.ini" | dconf load /net/launchpad/plank/docks/ > /dev/null
 }
