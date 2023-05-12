@@ -1,6 +1,6 @@
 name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
-depends=("xfwm4" "tint2" "rofi" "feh" "xfdashboard" "xfdashboard-plugins" "plank" "yaru-theme-icon" "yaru-theme-gtk")
+depends=("xfwm4" "tint2" "rofi" "feh" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk")
 gives="unicorn-desktop"
 replace=("rhino-xfce4-mobile-config-git" "rhino-linux-xfce4-config-git")
 description="Unicorn Desktop by the Rhino Linux Team"
@@ -30,6 +30,7 @@ install() {
   done
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   sudo cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
+  sudo cp docks.ini "${pkgdir}/usr/share/plank/"
   sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
   sudo cp icons/* "${pkgdir}/usr/share/icons"
   sudo cp applications/* "${pkgdir}/usr/share/applications"
@@ -45,4 +46,5 @@ postinst() {
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
+  cat "/usr/share/plank/docks.ini" | dconf load /net/launchpad/plank/docks/
 }
