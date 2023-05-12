@@ -17,6 +17,7 @@ build() {
   sudo mkdir -p "${pkgdir}/etc/skel/.config"
   sudo mkdir -p "${pkgdir}/usr/share/icons"
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
+  sudo mkdir -p "${pkgdir}/usr/share/applications"
 }
 
 install() {
@@ -29,6 +30,7 @@ install() {
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
   sudo cp icons/* "${pkgdir}/usr/share/icons"
+  sudo cp applications/* "${pkgdir}/usr/share/applications"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
 }
