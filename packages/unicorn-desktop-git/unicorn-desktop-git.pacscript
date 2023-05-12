@@ -46,5 +46,5 @@ postinst() {
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
-  cat "/usr/share/plank/docks.ini" | dconf load /net/launchpad/plank/docks/ > /dev/null
+  cat "/usr/share/plank/docks.ini" | DISPLAY=:0 XAUTHORITY=/home/"${PACSTALL_USER}"/.Xauthority DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus dconf load /net/launchpad/plank/docks/ > /dev/null
 }
