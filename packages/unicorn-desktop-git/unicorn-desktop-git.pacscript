@@ -18,6 +18,7 @@ build() {
   sudo mkdir -p "${pkgdir}/usr/share/icons"
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
   sudo mkdir -p "${pkgdir}/usr/share/applications"
+  sudo mkdir -p "${pkgdir}/usr/share/plank/themes"
 }
 
 install() {
@@ -28,6 +29,7 @@ install() {
     sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
+  sudo cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
   sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
   sudo cp icons/* "${pkgdir}/usr/share/icons"
   sudo cp applications/* "${pkgdir}/usr/share/applications"
