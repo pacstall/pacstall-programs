@@ -6,7 +6,7 @@ depends=("python3-distutils" "python3-cairo" "python-gi-dev")
 breaks=("${pkgname}" "${pkgname}-bin")
 maintainer="Lanius <laniusone@pm.me>"
 pkgver() {
-  sudo mkdir tempcount && sudo chown "${PACSTALL_USER}" tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b master . && git log --format=%ct.%h && sudo rm -r ../tempcount && cd ..
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
