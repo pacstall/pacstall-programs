@@ -1,5 +1,4 @@
 name="papirus-folders"
-gives="${name}"
 version="1.12.1"
 description="Papirus folder theme"
 repology=("project: papirus-folders")
