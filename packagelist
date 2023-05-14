@@ -132,6 +132,7 @@ google-chrome-beta-deb
 google-chrome-deb
 google-chrome-unstable-deb
 google-earth-pro-stable-deb
+goverlay
 graillon
 grapejuice-git
 grive2
@@ -185,6 +186,7 @@ libssl1.1-deb
 libwlroots-dev-deb
 libwlroots11-deb
 libxapp1-deb
+lightpad-git
 linked-deb
 linux-headers-deb
 linux-headers-generic-deb
@@ -253,6 +255,7 @@ nyxt-deb
 obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-0-4-0
+obs-backgroundremoval-deb
 obs-backgroundremoval-git
 obs-ndi-deb
 obsidian-deb

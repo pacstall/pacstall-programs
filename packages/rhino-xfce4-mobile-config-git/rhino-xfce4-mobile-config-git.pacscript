@@ -3,7 +3,7 @@ maintainer="oklopfer <oren@taumoda.com>"
 description="Rhino Linux XFCE4 Mobile configuration"
 depends=("xfce4-whiskermenu-plugin" "yaru-theme-icon" "yaru-theme-gtk" "onboard" "xfce4-helpers" "xiccd")
 optdepends=("xfce4: to use the configuration")
-replace=("rhino-linux-xfce4-config-git")
+replace=("rhino-linux-xfce4-config-git" "unicorn-desktop" "unicorn-desktop-git")
 url="https://github.com/oklopfer/dotfiles.git"
 pkgver() {
   sudo mkdir tempcount && sudo chown "${PACSTALL_USER}" tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && git log --format=%ct.%h && sudo rm -r ../tempcount && cd .. # Returns the latest commit hash from remote
@@ -35,7 +35,9 @@ install() {
 }
 
 postinst() {
-  mkdir -p "${homedir}/.local/share"
+  if ! [[ -d "${homedir}/.local/share" ]]; then
+    mkdir -p "${homedir}/.local/share"
+  fi
   cp -r "/etc/skel/.config/xfce4" "${homedir}/.config"
   cp -r "/etc/skel/.local/share/onboard" "${homedir}/.local/share"
 }

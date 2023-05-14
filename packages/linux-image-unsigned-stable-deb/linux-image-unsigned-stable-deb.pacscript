@@ -1,12 +1,12 @@
 name="linux-image-unsigned-stable-deb"
-gives="linux-image-unsigned-6.2.12-060212-generic"
-version="6.2.12"
-buildver="6.2.12-060212.202304201141"
+gives="linux-image-unsigned-6.3.2-060302-generic"
+version="6.3.2"
+buildver="6.3.2-060302.202305111150"
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="8e6b84efbe0b03cd04c7848ee8bc229a1f2f8238d59f30591290dd815cb04134"
+  hash="eb0a4374dbf7269050023add97f426b886a43d57ffd1227ab5c30560f59290cb"
   arch=('arm64')
 else
-  hash="e91abb4396bb00f8147e210018e013a004586e46fb16a13b63ad2b2faae47a61"
+  hash="57c8ffcd8fd827986dd174b7860aa9c5103c3296a12e70d76c07b0d1c166343a"
   arch=('amd64')
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
