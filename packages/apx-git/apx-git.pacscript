@@ -7,7 +7,7 @@ breaks=("${pkgname}")
 description="Package manager meant to be simple to use, but also powerful with support to installing packages from multiple sources without altering the root filesystem"
 maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {
-  sudo mkdir tempcount && sudo chown "${PACSTALL_USER}" tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && git log --format=%ct.%h && sudo rm -r ../tempcount && cd ..
+  mkdir /tmp/count/ && cd /tmp/count && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && git log --format=%ct.%h && rm -r /tmp/count/
 }
 incompatible=("debian:bullseye")
 version="$(pkgver)"

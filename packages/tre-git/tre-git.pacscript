@@ -7,7 +7,7 @@ url="https://github.com/dduan/tre.git"
 maintainer="Diego Magdaleno <diegomagdaleno@pm.me>"
 incompatible=("debian:bullseye")
 pkgver() {
-  sudo mkdir tempcount && sudo chown "${PACSTALL_USER}" tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && git log --format=%ct.%h && sudo rm -r ../tempcount && cd ..
+  mkdir /tmp/count/ && cd /tmp/count && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && git log --format=%ct.%h && rm -r /tmp/count/
 }
 version="$(pkgver)"
 

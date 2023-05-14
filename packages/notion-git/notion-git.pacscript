@@ -7,7 +7,7 @@ depends=("build-essential" "lua5.1" "liblua5.1-0-dev" "libx11-dev" "libxext-dev"
 gives="notion"
 breaks=("notion")
 pkgver() {
-  sudo mkdir tempcount && sudo chown "${PACSTALL_USER}" tempcount && cd tempcount && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && git log --format=%ct.%h && sudo rm -r ../tempcount && cd ..
+  mkdir /tmp/count/ && cd /tmp/count && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && git log --format=%ct.%h && rm -r /tmp/count/
 }
 version="$(pkgver)"
 
