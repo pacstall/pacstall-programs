@@ -1,7 +1,7 @@
 name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
-depends=("xfwm4" "tint2" "feh" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk")
-pacdeps=("lightpad-git")
+depends=("xfwm4" "tint2" "feh" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme")
+pacdeps=("lightpad-git" "papirus-folders")
 gives="unicorn-desktop"
 replace=("rhino-xfce4-mobile-config-git" "rhino-linux-xfce4-config-git")
 description="Unicorn Desktop by the Rhino Linux Team"
