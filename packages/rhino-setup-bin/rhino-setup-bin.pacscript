@@ -4,16 +4,16 @@ gives="rhino-setup"
 description="Rhino Linux Setup Prompt"
 maintainer="Sourajyoti Basak <wiz28@protonmail.com>, Oren Klopfer <oren@taumoda.com>"
 incompatible=("debian:*")
-version="v1.3-beta2"
+version="v1.3-beta5"
 replace=("${gives}" "${gives}-git")
 
 if [[ $CARCH == arm64 ]]; then
   url="https://github.com/rhino-linux/${gives}/releases/download/${version}/${gives}_${version}_${CARCH}.zip"
-  hash="cf59bbd1dc342c265694c48c05aa25d16b4c95df496e275ffa4aeeb16e25a9e7"
+  hash="b036d9c628ef8cd90d88a8af5c8c4637d2ecd884008c55166bcc262ef82a5b07"
   arch=('arm64')
 else
   url="https://github.com/rhino-linux/${gives}/releases/download/${version}/${gives}_${version}_${CARCH}.zip"
-  hash="2d67356a997f0f78a5a99de5e9b3d74f7d9cf6930153ca130fe86f4aceebba7e"
+  hash="175a0f71854099cccca1a4cdc470f5ea2363a445b3c83706c9cdba6d2bb3d67b"
   arch=('amd64')
 fi
 
