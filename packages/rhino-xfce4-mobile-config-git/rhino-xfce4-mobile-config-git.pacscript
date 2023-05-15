@@ -3,7 +3,7 @@ maintainer="oklopfer <oren@taumoda.com>"
 description="Rhino Linux XFCE4 Mobile configuration"
 depends=("xfce4-whiskermenu-plugin" "yaru-theme-icon" "yaru-theme-gtk" "onboard" "xfce4-helpers" "xiccd")
 optdepends=("xfce4: to use the configuration")
-replace=("rhino-linux-xfce4-config-git" "unicorn-desktop" "unicorn-desktop-git")
+replace=("rhino-linux-xfce4-config-git" "unicorn-desktop" "unicorn-desktop-git" "unicorn-mobile" "unicorn-mobile-git")
 url="https://github.com/oklopfer/dotfiles.git"
 pkgver() {
   mkdir /tmp/count/ && cd /tmp/count && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && git log --format=%ct.%h && rm -r /tmp/count/ # Returns the latest commit hash from remote

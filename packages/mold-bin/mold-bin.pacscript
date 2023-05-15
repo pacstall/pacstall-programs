@@ -25,7 +25,7 @@ breaks=("${name}-git" "${name}")
 repology=("project: mold")
 
 install() {
-	sudo mkdir -p "${pkgdir}/usr/"
-	sudo mv ./* "${pkgdir}/usr/"
+  sudo mkdir -p "${pkgdir}/usr/"
+  sudo mv ./* "${pkgdir}/usr/"
 }
 # vim:set ft=sh ts=2 sw=2 et:
