@@ -1,7 +1,7 @@
 name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
 depends=("xfwm4" "tint2" "feh" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme")
-pacdeps=("lightpad-git" "papirus-folders")
+pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-desktop"
 replace=("rhino-xfce4-mobile-config-git" "rhino-linux-xfce4-config-git")
 description="Unicorn Desktop by the Rhino Linux Team"
@@ -27,7 +27,7 @@ install() {
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
-  for i in xfce4 plank autostart; do
+  for i in xfce4 plank autostart ulauncher; do
     sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
@@ -45,7 +45,7 @@ postinst() {
   if ! [[ -d "${homedir}/.config" ]]; then
     mkdir -p "${homedir}/.config"
   fi
-  for i in xfce4 plank autostart; do
+  for i in xfce4 plank autostart ulauncher; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
