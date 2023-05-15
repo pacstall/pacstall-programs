@@ -7,7 +7,7 @@ replace=("rhino-xfce4-mobile-config-git" "rhino-linux-xfce4-config-git" "unicorn
 description="Unicorn Desktop Mobile variant by the Rhino Linux Team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
+  mkdir /tmp/count/ && cd /tmp/count && git clone -q --filter=tree:0 --depth=1 --no-checkout "${url}" -b main . && git log --format=%ct.%h && rm -r /tmp/count/
 }
 version="$(pkgver)"
 incompatible=("debian:*")
