@@ -1,6 +1,6 @@
 name="u-boot-mobian-deb"
 gives="u-boot-menu"
-replace=("${gives}" "flash-kernel")
+replace=("${gives}")
 version="4.2.2mobian1"
 url="https://repo.mobian-project.org/pool/main/u/${gives}/${gives}_${version}_all.deb"
 description="Deb packaging for u-boot-menu with Mobian patches"
