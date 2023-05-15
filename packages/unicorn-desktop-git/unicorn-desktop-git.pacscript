@@ -47,7 +47,7 @@ postinst() {
   fi
   for i in xfce4 plank autostart ulauncher; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
-    sudo chown "${PACSTALL_USER}" "${homedir}/.config/${i}"
+    sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
   if ! [[ -d "${homedir}/.lightpad" ]]; then
     mkdir -p "${homedir}/.lightpad"
