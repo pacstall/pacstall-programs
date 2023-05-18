@@ -14,5 +14,5 @@ build() {
 }
 
 install() {
-  sudo ninja -j"$(nproc)" -C build install
+  sudo ninja -j"${NCPU}" -C build install
 }

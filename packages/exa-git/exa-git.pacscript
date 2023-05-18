@@ -12,7 +12,7 @@ pkgver() {
 version="$(pkgver)"
 
 build() {
-  cargo build -j"$(nproc)" --release
+  cargo build -j"${NCPU}" --release
 }
 
 install() {

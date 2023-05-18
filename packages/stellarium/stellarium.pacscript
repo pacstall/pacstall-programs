@@ -13,10 +13,10 @@ prepare() {
 
 build() {
   cd build/unix
-  cmake -DCMAKE_INSTALL_PREFIX="/" -j"$(nproc)" ../..
-  make -j"$(nproc)"
+  cmake -DCMAKE_INSTALL_PREFIX="/" -j"${NCPU}" ../..
+  make -j"${NCPU}"
 }
 
 install() {
-  sudo make install -j"$(nproc)" DESTDIR="${pkgdir}"
+  sudo make install -j"${NCPU}" DESTDIR="${pkgdir}"
 }
