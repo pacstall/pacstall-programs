@@ -28,5 +28,5 @@ Actions=Private;
 
 [Desktop Action Private]
 Exec=/opt/firefox/firefox --private-window %u
-Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox-stable.desktop" > /dev/null
+Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
 }
