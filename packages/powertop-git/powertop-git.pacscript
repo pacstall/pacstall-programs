@@ -17,7 +17,7 @@ prepare() {
 }
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 install() {
