@@ -1,9 +1,9 @@
 name="topgrade-bin"
 pkgname="topgrade"
-version="10.3.3"
+version="11.0.2"
 url="https://github.com/topgrade-rs/topgrade/releases/download/v${version}/topgrade-v${version}-x86_64-unknown-linux-gnu.tar.gz"
 description="Upgrades everything on your system"
-hash="65c1a4f278f25b005baa20a0ddd17a97d83ba6fb1044ab58f88eb6473d513e8b"
+hash="bd33022b1fe403278c63d59d571cb555d635ff5c339dc9498c76106dc17d5e65"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git" "${pkgname}-musl-bin")
 gives="${pkgname}"
 repology=("project: ${pkgname}")
