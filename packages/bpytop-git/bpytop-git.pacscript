@@ -8,10 +8,11 @@ hash="9ee4aff7dd84b5475401793b925530c3cfad15c9bb3b4b73c9e875daf919d66c"
 release="$(lsb_release -cs)"
 modern=("devel" "sid" "lunar" "bookworm" "mantic")
 
+# shellcheck disable=SC2076
 if [[ " ${modern[*]} " =~ " ${release} " ]]; then
-  pyhack="--break-system-packages"
+  pyhack=("--break-system-packages")
 else
-  pyhack=""
+  pyhack=()
 fi
 
 pkgver() {
@@ -20,7 +21,7 @@ pkgver() {
 version="$(pkgver)"
 
 prepare() {
-  sudo pip3 install --upgrade psutil ${pyhack}
+  sudo pip3 install --upgrade psutil "${pyhack[@]}"
 }
 
 install() {

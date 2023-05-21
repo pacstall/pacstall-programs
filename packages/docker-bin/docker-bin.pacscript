@@ -7,7 +7,7 @@ depends=("procps" "git" "iptables")
 description="Docker Engine Static Binaries"
 maintainer="oklopfer <oren@taumoda.com>"
 
-if [[ $CARCH == arm64 ]]; then
+if [[ ${CARCH} == arm64 ]]; then
   url="https://download.docker.com/linux/static/stable/aarch64/${gives}-${version}.tgz"
   hash="2f291f561b6534ace74a357bd02676d6015ab83835c65b909f8a9422fa675a1d"
   arch=('arm64')
@@ -22,5 +22,5 @@ build() {
 }
 
 install() {
-  sudo cp -r ../${gives}/* -t "${pkgdir}/usr/bin"
+  sudo cp -r "../${gives}"/* -t "${pkgdir}/usr/bin"
 }

@@ -18,6 +18,6 @@ breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="12414c914ef7021f804be8786d316542202f2680f69190a2a0b98f82bf5e9804"
 
 install() {
-  sudo install -Dm755 "$pkgname" -t "${pkgdir}/usr/bin"
+  sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"
 }
 # vim:set ft=sh ts=2 sw=2 et:
