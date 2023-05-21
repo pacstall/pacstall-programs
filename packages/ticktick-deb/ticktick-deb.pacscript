@@ -1,5 +1,6 @@
 name="ticktick-deb"
 gives="ticktick"
+repology=("project: ticktick" "repo: aur")
 version="1.0.60"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
@@ -20,4 +21,4 @@ case "${CARCH}" in
     ;;
 esac
 homepage="https://ticktick.com"
-description="A powerful to-do & task management app with seamless cloud synchronization across all your devices. Whether you need to schedule an agenda, make memos, share shopping lists, collaborate in a team, or even develop a new habit, TickTick is always here to help you get stuff done and keep life on track"
+description="A powerful to-do & task management app with seamless cloud synchronization across all your devices"
