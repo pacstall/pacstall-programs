@@ -15,4 +15,5 @@ case "${CARCH}" in
     hash="e7ebb4e196ae20e172fe9559c52434d5c2635c66db7faad65566c3938d1137d3"
     arch=('arm64')
     ;;
+  *) return 1 ;;
 esac
