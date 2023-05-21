@@ -22,3 +22,4 @@ case "${CARCH}" in
 esac
 homepage="https://ticktick.com"
 description="A powerful to-do & task management app with seamless cloud synchronization across all your devices"
+maintainer="Arrowsome <ramtintoosi@gmail.com>"
