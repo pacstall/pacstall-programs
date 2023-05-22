@@ -1,11 +1,11 @@
 name="bitwarden-deb"
 gives="bitwarden"
-breaks="${gives}-app ${gives}-git"
-replace="${gives}"
-version="2023.3.2"
+breaks=("${gives}-app" "${gives}-git")
+replace=("${gives}")
+version="2023.4.0"
 url="https://github.com/${gives}/clients/releases/download/desktop-v${version}/Bitwarden-${version}-amd64.deb"
 description="Open Source Password Manager"
-hash="bfec523fdfb71923762341ac38f2ae53700f70382461f8af9b04f3705eab7180"
+hash="7e93f107815d3dee6d99a952463182acadffd1eadace183c4a7b867659acf1b9"
 arch=('amd64')
 maintainer="Henryws <hwengerstickel@pm.me>"
 repology=("project: bitwarden")

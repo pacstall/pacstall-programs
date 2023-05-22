@@ -1,8 +1,8 @@
 name="xfce4-deb"
 gives="xfce4"
-version="4.16"
-url="http://ftp.de.debian.org/debian/pool/main/x/xfce4/xfce4_4.16_all.deb"
+version="4.18"
+url="http://ftp.de.debian.org/debian/pool/main/x/${gives}/${gives}_${version}_all.deb"
 description="XFCE4 Desktop"
-hash="d7191fc06559151df3f96fecd3563fc2c7df91df2db6ce1d95f8c2bf4a58b42d"
+hash="f8635ff525c6d87290fb1a794f67928c198e63f7d900f95c66c0c565697624ff"
 maintainer="http.llamaz <http.llamaz@llamawebdesign.co.uk>"
 repology=("project: xfce4-meta")

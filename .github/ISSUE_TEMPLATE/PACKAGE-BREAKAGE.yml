@@ -1,0 +1,49 @@
+name: Broken Package
+description: Form for identifying broken packages
+title: "Broken: name_of_the_package"
+labels: ["Broken"]
+assignees:
+  - Henryws
+  - wizard-28
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Package name
+      description: What is the name of the broken package.
+      placeholder: shfmt-bin
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What is the version of the broken package.
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: pac_version
+    attributes:
+      label: Pacstall version
+      description: What version of Pacstall are you using?
+      placeholder: 3.11.0
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      placeholder: Run 'pacstall -I pkg', and copy-paste all the output to this box.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: patch
+    attributes:
+      label: Patch for package
+      description: Can you provide a fix for this package? If so, create a patch and paste it here.
+      render: diff
+    validations:
+      required: false

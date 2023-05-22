@@ -1,7 +1,7 @@
 name="endlessh-git"
 pkgname="endlessh"
 gives="endlessh"
-breaks="${gives} ${gives}-deb ${gives}-app ${gives}-bin"
+breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-bin")
 url="https://github.com/skeeto/endlessh.git"
 description="SSH tarpit that very slowly sends an endless, random SSH banner"
 maintainer="Henryws <hwengerstickel@pm.me>"
@@ -20,7 +20,7 @@ prepare() {
 }
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 install() {

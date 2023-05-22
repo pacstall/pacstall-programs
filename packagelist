@@ -26,6 +26,7 @@ bitwarden-cli-bin
 bitwarden-deb
 bitwig-studio-3-deb
 bitwig-studio-deb
+blender-bin
 bluegriffon-deb
 bpytop-git
 brave-browser-beta-deb
@@ -39,6 +40,7 @@ caprine-deb
 chezmoi-deb
 chwp-deb
 clib
+clipboard-bin
 cmake-data-deb
 cmake-deb
 cmatrix
@@ -130,13 +132,13 @@ google-chrome-beta-deb
 google-chrome-deb
 google-chrome-unstable-deb
 google-earth-pro-stable-deb
+goverlay
 graillon
 grapejuice-git
 grive2
 grive2-git
 grub-customizer-git
 gtkhash
-gtkmm4
 harmonoid-deb
 headset-deb
 helix
@@ -181,7 +183,10 @@ libressl
 librewolf-app
 librewolf-deb
 libssl1.1-deb
+libwlroots-dev-deb
+libwlroots11-deb
 libxapp1-deb
+lightpad-git
 linked-deb
 linux-headers-deb
 linux-headers-generic-deb
@@ -216,11 +221,13 @@ minecraft-launcher
 minecraft-launcher-deb
 minecraft-pi-reborn-app
 moka-icon-theme
+mold-bin
 ms-teams-deb
 mullvad-vpn-beta-deb
 mullvad-vpn-deb
 muse-hub-deb
 mutt-wizard
+mymonero-app
 nala-deb
 nano
 neofetch
@@ -248,6 +255,7 @@ nyxt-deb
 obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-0-4-0
+obs-backgroundremoval-deb
 obs-backgroundremoval-git
 obs-ndi-deb
 obsidian-deb
@@ -256,11 +264,11 @@ onefetch-bin
 onlyoffice-desktopeditors-deb
 onnxruntime-1-7-0-bin
 onnxruntime-bin
+onnxruntime-gpu-bin
 opendoas-git
 opensnitch-deb
 opensnitch-ui-deb
 opentoonz
-opentoonz-gts
 opera-beta-deb
 opera-deb
 opera-developer-deb
@@ -272,6 +280,7 @@ pacup-bin
 panagement
 pap
 paper-icon-theme
+papirus-folders
 papirus-icon-theme
 parsec-deb
 pdf-mix-tool-git
@@ -320,11 +329,13 @@ rhino-setup-bin
 rhino-setup-git
 rhino-xfce4-mobile-config-git
 rstudio-deb
+rust-motd-deb
 sed
 shell-color-scripts
 shellcheck-bin
 shellharden
 shfmt-bin
+sidequest-bin
 signal-desktop-beta-deb
 signal-desktop-deb
 slack-deb
@@ -358,6 +369,7 @@ telegram-bin
 tenacity-git
 thorium-deb
 thrive-deb
+ticktick-deb
 tidal-hifi-bin
 timeshift
 tixati-deb
@@ -379,6 +391,8 @@ tuner-git
 tutanota-app
 u-boot-mobian-deb
 ulauncher-deb
+unicorn-desktop-git
+unicorn-mobile-git
 universal-ctags-git
 upscayl-app
 uwufetch
@@ -408,6 +422,8 @@ wsysmon-bin
 xapps-common-deb
 xfce4-deb
 xfce4-settings-pine-git
+xfwm4-wayland-git
+xmind-vana-deb
 yabridge
 yad
 yafetch-git
