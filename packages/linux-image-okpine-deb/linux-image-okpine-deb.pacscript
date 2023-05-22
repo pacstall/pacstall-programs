@@ -1,8 +1,8 @@
 name="linux-image-okpine-deb"
-version="6.3.0"
+version="6.4.0-rc3"
 gives="linux-image-${version}"
 url="https://github.com/oklopfer/debs/raw/master/kernel/${version}/${gives}-okpine_${version}-1_arm64.deb"
-hash="1ae1cb180595a035d4188ae70f46168ab24b82eb739470bdf56e08ec335060cf"
+hash="ae2061762bd4d225bfa07b6a9c53282115fd0a3d2e58639577937903565ab7ba"
 maintainer="oklopfer <oren@taumoda.com>"
 description="Linux kernel image files built for PinePhone + PinePhone Pro"
 arch=('arm64')
