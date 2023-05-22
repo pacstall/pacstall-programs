@@ -1,13 +1,14 @@
 name="obs-backgroundremoval"
 repology=("project: obs-backgroundremoval")
-version="0.5.16"
+version="0.5.19"
 url="https://codeload.github.com/royshil/obs-backgroundremoval/tar.gz/refs/tags/v${version}"
-build_depends="libobs-dev wget git build-essential libsimde-dev ninja-build"
-pacdeps=("onnxruntime-bin" "cmake-deb")
-breaks="${name}-git"
+build_depends=("libobs-dev" "libsimde-dev" "ninja-build")
+pacdeps=("onnxruntime-gpu-bin" "cmake-deb")
+breaks=("${name}-git")
+replace=("${name}")
 arch=('amd64')
-description="This plugin is meant to make it easy to replace the background in portrait images and video. It is using a neural network to predict the mask of the portrait and remove the background pixels. It's easily composable with other OBS plugins to replace the background with e.g. an image or a transparent color."
-hash="054a3030224b8f82f95922f98cac25d6c250d54012fb7aa3f2d44c421453f0e9"
+description="OBS plugin to replace the background in portrait images and video"
+hash="97b803df872d75278fe955a2a53c2ed8e1b7792f6794a2a2e639dfae84a08f72"
 maintainer="Zahrun <Zahrun@github.com>"
 
 incompatible=('ubuntu:jammy' 'ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'debian:bullseye')

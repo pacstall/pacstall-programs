@@ -1,15 +1,14 @@
 name="tidal-hifi-bin"
 pkgname="tidal-hifi"
-version="4.4.0"
+version="5.1.0"
 description="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
 repology=("project: tidal-hifi" "visiblename: tidal-hifi-bin")
 url="https://github.com/Mastermindzh/tidal-hifi/releases/download/${version}/tidal-hifi-${version}.tar.gz"
-hash="77f54e723f81e43df108338a5ef31fdd543632ddf304f69d6bc0244cfceb7b38"
+hash="6bec30f57e384e8ae051f7d1c37a9ceebccf5e19ce24fd89cf0873574cf65c36"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
-breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
-
-depends="libxss1 libnss3 libgtk-3-0"
+breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
+depends=("libxss1" "libnss3" "libgtk-3-0")
 
 install() {
   # Get icon from github and install it

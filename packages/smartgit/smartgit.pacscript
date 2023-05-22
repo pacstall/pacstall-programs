@@ -1,7 +1,7 @@
 name="smartgit"
 version="22.1.5"
 url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-${version//./_}.tar.gz"
-depends="git libgtk-3-0 libcurl4"
+depends=("git" "libgtk-3-0" "libcurl4")
 description="Graphical Git client with support for GitHub, Bitbucket and GitLab"
 hash="b37d6c6040b583b78b3214fd5249a36c19c778f63dc2740f9a01905e0557e23e"
 maintainer="echometerain <echometer@disroot.org>"
