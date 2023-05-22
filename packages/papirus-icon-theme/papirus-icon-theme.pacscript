@@ -6,10 +6,9 @@ url="https://github.com/PapirusDevelopmentTeam/${name}/archive/${version}/${name
 hash="a3e91076f41bd01c754237c9f8339d1c02e286c00998f86be471ffc280542d28"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
-breaks="${name} ${name}-git"
-
-depends="gtk-update-icon-cache"
-build_depends="make"
+breaks=("${name}" "${name}-git")
+depends=("gtk-update-icon-cache")
+build_depends=("make")
 
 install() {
   sudo make DESTDIR="${pkgdir}" install

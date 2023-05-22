@@ -1,13 +1,13 @@
 name="postman-bin"
-version="10.12.0"
+version="10.14.2"
 description="Build, test, and document your APIs faster"
 repology=("project: postman" "visiblename: postman-bin")
 url="https://dl.pstmn.io/download/version/${version}/linux64"
-hash="41a223f92390191ead79421d2c1dc3e64951958ae76b532813773a517604a01e"
+hash="0e5e1c2d542bf941b90d9a065a58bd2ac9e86d9c9beacd53c74d5743f4b1c836"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="postman"
-breaks="postman postman-deb postman-app"
-depends="libxss1 libnss3 libgtk-3-0"
+breaks=("postman" "postman-deb" "postman-app")
+depends=("libxss1" "libnss3" "libgtk-3-0")
 
 install() {
   # Get desktop file and install it

@@ -1,13 +1,13 @@
 name="github-cli-bin"
 pkgname="github-cli"
 gives="gh"
-breaks="${gives}-git ${gives}-deb"
-replace="${gives}"
+breaks=("${gives}-git" "${gives}-deb")
+replace=("${gives}")
 repology=("project: ${pkgname}")
-version="2.27.0"
+version="2.29.0"
 url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version}_linux_amd64.tar.gz"
 description="GitHub's official command line tool - Binary version"
-hash="a3e2987e49ede4e90e0192f64c5e1480d6a1ee3196d51a4fcfbe0ccd0a627747"
+hash="9fe05f43a11a7bf8eacf731422452d1997e6708d4160ef0efcb13c103320390e"
 arch=('amd64')
 
 install() {
