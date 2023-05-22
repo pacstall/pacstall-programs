@@ -11,8 +11,8 @@ pkgname="doas"
 description="A port of OpenBSD's doas(1), an alternative to sudo(1)"
 url="https://github.com/slicer69/doas.git"
 gives="${pkgname}"
-breaks="${pkgname} ${pkgname}-bin ${pkgname}-deb ${pkgname}-app"
-build_depends="make bison flex libpam0g-dev"
+breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
+build_depends=("make" "bison" "flex" "libpam0g-dev")
 hash="b66e7a55fc1b7fd1f6443861f65bde87a4794c4721dee5e11dc0294f27116efc"
 
 pkgver() {

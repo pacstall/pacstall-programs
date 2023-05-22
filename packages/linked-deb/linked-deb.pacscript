@@ -1,7 +1,7 @@
 name="linked-deb"
 gives="linked"
 version="1.4.13"
-replace="${gives}"
+replace=("${gives}")
 url="https://github.com/lostdesign/linked/releases/download/v${version}/linked_${version}_amd64.deb"
 description="linked - daily journaling without distraction"
 repology=("project: linked")
