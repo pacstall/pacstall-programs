@@ -1,10 +1,10 @@
 name="protonmail-bridge-deb"
 gives="protonmail-bridge"
-breaks="${gives} ${gives}-git"
+breaks=("${gives}" "${gives}-git")
 repology=("project: ${gives}")
-version="3.1.0"
+version="3.1.2"
 url="https://github.com/ProtonMail/proton-bridge/releases/download/v${version}/${gives}_${version}-1_amd64.deb"
 description="ProtonMail Bridge is an application available to all paid users that enables the integration of your ProtonMail account with popular email clients, such as Microsoft Outlook, Mozilla Thunderbird, or Apple Mail. Bridge runs in the background by seamlessly encrypting and decrypting messages as they enter and leave your computer. The app is compatible with most email clients supporting IMAP and SMTP protocols"
-hash="0b6946d198197ffe20308df31414b5e0f59e4b4b3b34d56d920a7441f113c8a5"
+hash="0f540ea1efe3c93296891fb4bda50db022b40d3f557cf9e3c5815e6e37d1f27e"
 arch=('amd64')
 maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"

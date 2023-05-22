@@ -1,6 +1,6 @@
 name="deskcut-deb"
 gives="deskcut"
-replace="${gives}"
+replace=("${gives}")
 version="1.5.0"
 url="https://github.com/NayamAmarshe/DeskCut/releases/download/stable-${version}/${gives}_${version}_amd64.deb"
 description="An easy-to-use linux app that lets you create Desktop Shortcuts hassle-free"

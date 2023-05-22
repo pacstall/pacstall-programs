@@ -6,7 +6,7 @@ description="Free and Open Source AI Image Upscaler for Linux, MacOS and Windows
 maintainer="0x262D <pacstall@copypaste.anonaddy.me>"
 url="https://github.com/TGS963/${gives}/releases/download/v${version}/Upscayl-${version}-linux.AppImage"
 hash="aac1585942b91b0ba201a53b637b4033c11e6b51be47f330a03485519be8fdc3"
-breaks="${pkgname} ${pkgname}-deb ${pkgname}-bin ${pkgname}-git"
+breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-bin" "${pkgname}-git")
 repology=("project: ${pkgname}")
 
 install() {

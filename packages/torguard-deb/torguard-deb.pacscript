@@ -1,7 +1,7 @@
 name="torguard-deb"
 gives="torguard"
 repology=("project: ${gives}")
-replace="${gives}"
+replace=("${gives}")
 breaks="${gives}-bin"
 version="4.8.17"
 url="https://updates.torguard.biz/Software/Linux/${gives}-v${version}-amd64.deb"
