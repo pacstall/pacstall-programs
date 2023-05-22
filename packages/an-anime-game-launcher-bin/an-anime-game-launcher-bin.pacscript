@@ -1,15 +1,15 @@
 name="an-anime-game-launcher-bin"
 pkgname="an-anime-game-launcher"
-version="3.3.0"
+version="3.6.0"
 description="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
 url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${version}/anime-game-launcher"
-hash="4117bcf0bd83d3b8deb68ba52c43e0e2f7ba27013fd433ba33bbd4c84bb73503"
-depends="xdelta3 git"
+hash="9353c4530568a4d3806c3c2d3ac40c5a8ea3796098b14cc151a0d083b60703f8"
+depends=("xdelta3" "git")
 maintainer="Henryws <hwengerstickel@pm.me>"
 gives="${pkgname}"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
-breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
+breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
 
 optdepends=(
   "mangohud: FPS Hud/GUI"

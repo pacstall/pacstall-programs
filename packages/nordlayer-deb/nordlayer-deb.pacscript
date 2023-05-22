@@ -1,6 +1,6 @@
 name="nordlayer-deb"
 gives="nordlayer"
-replace="nordvpnteams"
+replace=("nordvpnteams")
 repology=("project: ${gives}")
 version="2.6.0"
 url="https://downloads.nordlayer.com/linux/latest/debian/pool/main/${gives}_${version}_amd64.deb"
