@@ -1,6 +1,6 @@
 name="ivpn-deb"
 gives="ivpn"
-breaks="${gives}-git"
+breaks=("${gives}-git")
 repology=("project: ${gives}")
 version="3.10.14"
 url="https://repo.ivpn.net/stable/pool/${gives}_${version}_amd64.deb"

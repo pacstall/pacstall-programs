@@ -1,13 +1,13 @@
 name="obs-backgroundremoval-0-4-0"
 version="0.4.0"
 url="https://codeload.github.com/royshil/obs-backgroundremoval/tar.gz/refs/tags/v${version}"
-build_depends="libobs-dev libopencv-dev cmake"
+build_depends=("libobs-dev" "libopencv-dev" "cmake")
 # install required dependency for codename > focal
 codename="$(lsb_release -cs)"
 case "${codename}" in
   focal) ;;
   *)
-    build_depends="${build_depends} libsimde-dev"
+    build_depends=("${build_depends[@]}" "libsimde-dev")
     ;;
 esac
 pacdeps=("onnxruntime-1-7-0-bin")

@@ -59,7 +59,7 @@ jobs:
         run: |
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
-          curl -fsSL https://git.io/JsADh > pacstall-install.sh
+          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           chmod +x ./pacstall-install.sh
           echo N\n | sudo -E ./pacstall-install.sh
           rm ./pacstall-install.sh
@@ -72,7 +72,7 @@ jobs:
         run: |
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
-          curl -fsSL https://git.io/JsADh > pacstall-install.sh
+          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
@@ -96,16 +96,9 @@ jobs:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
-          for changed_file in ${{ steps.files.outputs.added_modified }}; do
-            if [[ ${changed_file} == *".pacscript" ]]; then
-              pacscript_file=`basename "${changed_file}"`
-              package_name="${pacscript_file/.pacscript/ }"
-              package_dir=`dirname "${changed_file}"`
-              echo "Running pacstall -R for ${package_name}..."
-              pushd ${package_dir}
-              pacstall --disable-prompts -R ${package_name} || exit 1
-              popd
-            fi
+          for changed_file in $(pacstall -L); do
+              echo "Running pacstall -R for ${changed_file}..."
+              pacstall --disable-prompts -R ${changed_file} || exit 1
           done
         shell: sudo -E -u dio bash {0}
         env:
@@ -159,7 +152,7 @@ jobs:
         run: |
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
-          curl -fsSL https://git.io/JsADh > pacstall-install.sh
+          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           chmod +x ./pacstall-install.sh
           echo N\n | sudo -E ./pacstall-install.sh
           rm ./pacstall-install.sh
@@ -172,7 +165,7 @@ jobs:
         run: |
           [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
-          curl -fsSL https://git.io/JsADh > pacstall-install.sh
+          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
@@ -196,16 +189,9 @@ jobs:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
-          for changed_file in ${{ steps.files.outputs.added_modified }}; do
-            if [[ ${changed_file} == *".pacscript" ]]; then
-              pacscript_file=`basename "${changed_file}"`
-              package_name="${pacscript_file/.pacscript/ }"
-              package_dir=`dirname "${changed_file}"`
-              echo "Running pacstall -R for ${package_name}..."
-              pushd ${package_dir}
-              pacstall --disable-prompts -R ${package_name} || exit 1
-              popd
-            fi
+          for changed_file in $(pacstall -L); do
+              echo "Running pacstall -R for ${changed_file}..."
+              pacstall --disable-prompts -R ${changed_file} || exit 1
           done
         shell: sudo -E -u dio bash {0}
         env:

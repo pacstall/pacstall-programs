@@ -7,8 +7,8 @@ url="https://github.com/hmlendea/gfn-electron/releases/download/v${version}/gefo
 hash="b9106b7b34c2fd21834526684ccba3a37c2adbb2fb65d04ef2c70c0428e79d1b"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
-breaks="${pkgname} ${pkgname}-deb ${pkgname}-app ${pkgname}-git"
-depends="libva2 libva-glx2 libva-drm2 libva-wayland2 libva-x11-2"
+breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
+depends=("libva2" "libva-glx2" "libva-drm2" "libva-wayland2" "libva-x11-2")
 
 install() {
   # Get icon from github and install it

@@ -1,20 +1,20 @@
 name="docker-bin"
 gives="docker"
-replace="${gives}"
+replace=("${gives}" "containerd.io")
 repology=("project: ${gives}")
-version="23.0.3"
-depends="procps git iptables"
+version="24.0.1"
+depends=("procps" "git" "iptables")
 description="Docker Engine Static Binaries"
 maintainer="oklopfer <oren@taumoda.com>"
 
-if [[ $CARCH == arm64 ]]; then
+if [[ ${CARCH} == arm64 ]]; then
   url="https://download.docker.com/linux/static/stable/aarch64/${gives}-${version}.tgz"
-  hash="2f291f561b6534ace74a357bd02676d6015ab83835c65b909f8a9422fa675a1d"
-  arch=('arm64');
+  hash="7856c7ab0bc5f324391a2922781bbda503bcfbdea1d71eb2b8d871ffc7f8b468"
+  arch=('arm64')
 else
   url="https://download.docker.com/linux/static/stable/x86_64/${gives}-${version}.tgz"
-  hash="34b88116ab30c33daa1c780e9be3232bfa092af575edd3436f12c719fb2e44bf"
-  arch=('amd64');
+  hash="298da71767e61b5b9bd40dda26e926d439106eab92df2cf66df6265d4046e3cf"
+  arch=('amd64')
 fi
 
 build() {
@@ -22,5 +22,5 @@ build() {
 }
 
 install() {
-  sudo cp -r ../${gives}/* -t "${pkgdir}/usr/bin"
+  sudo cp -r "../${gives}"/* -t "${pkgdir}/usr/bin"
 }

@@ -1,10 +1,10 @@
 name="github-cli-deb"
 gives="gh"
-breaks="${gives}-bin ${gives}-git"
-replace="${gives}"
-version="2.27.0"
+breaks=("${gives}-bin" "${gives}-git")
+replace=("${gives}")
+version="2.29.0"
 url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version}_linux_amd64.deb"
 description="GitHub's official command line tool"
-hash="2380b4e6d3ca7f0e708d0ebcbaaf0b7e81d5e00d3c8fa4237141c69d47303249"
+hash="42dad6bc89c304f0a5aad797d6c5099eb0805f56c9e167f3d3218828a04f78eb"
 arch=('amd64')
 repology=("project: github-cli")
