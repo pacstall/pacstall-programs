@@ -1,0 +1,9 @@
+name="xmind-vana-deb"
+gives="xmind-vana"
+version="23.05.1745"
+url="https://dl3.xmind.net/Xmind-for-Linux-amd64bit-${version}.deb"
+homepage='https://xmind.app/'
+description="Mind mapping and brainstorming app"
+hash="0a260a95d35b1a3f35a58f20931185a73c95f7e6b821b5645af573a3084530a1"
+repology=("project: xmind")
+arch=("amd64")

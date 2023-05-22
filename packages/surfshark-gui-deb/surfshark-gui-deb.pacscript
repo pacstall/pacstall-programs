@@ -1,9 +1,9 @@
 name="surfshark-gui-deb"
 gives="surfshark"
 repology=("project: surfshark-gui")
-version="1.2.3-1239"
+version="1.3.0-1616"
 url="https://ocean.surfshark.com/debian/pool/main/s/${gives}/${gives}_${version}_amd64.deb"
 description="SurfShark VPN Client"
-hash="b50ef064052aa688a8a85808583259f87ddda9b9bc3a7f06ebf610dcd945bb6c"
+hash="a3ae250cc857ee3e7462452bd60b2bc453bad5df18fef3b2ce0fa4ff7ebb925d"
 arch=('amd64')
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"

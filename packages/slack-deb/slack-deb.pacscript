@@ -1,8 +1,8 @@
 name="slack-deb"
 gives="slack-desktop"
 version="4.31.156"
-breaks="${pkgname} ${pkgname}-git ${pkgname}-bin ${pkgname}-app"
-replace="${pkgname}"
+breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
+replace=("${pkgname}")
 description="Slack is a new way to communicate with your team. It's faster, better organized, and more secure than email."
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 hash="49fdbfcd219af5a40ea761a2665121fd3087fd83eaa510c720cedf2915910136"
