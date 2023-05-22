@@ -9,10 +9,10 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="opera-deb"
 gives="opera-stable"
 replace=("${gives}")
-version="97.0.4719.63"
+version="99.0.4788.13"
 url="https://deb.opera.com/opera/pool/non-free/o/opera-stable/${gives}_${version}_amd64.deb"
 description="Multi-platform web browser developed by its namesake company Opera"
-hash="48a611328dd1a126e1e974c116aeb5c4a5a854b57eba704f36687644c92537d6"
+hash="ffe71b23f51b45c57a4996c42ee9182adf6621c2053af075480bc2a04c1c6fe6"
 arch=('amd64')
 repology=("project: opera")
 
