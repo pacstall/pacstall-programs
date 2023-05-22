@@ -1,11 +1,11 @@
 name="upscayl-app"
 pkgname="upscayl"
 gives="upscayl"
-version="2.0.1"
+version="2.5.1"
 description="Free and Open Source AI Image Upscaler for Linux, MacOS and Windows"
 maintainer="0x262D <pacstall@copypaste.anonaddy.me>"
 url="https://github.com/TGS963/${gives}/releases/download/v${version}/Upscayl-${version}-linux.AppImage"
-hash="aac1585942b91b0ba201a53b637b4033c11e6b51be47f330a03485519be8fdc3"
+hash="98032aec8ee81fd04125e2d44f8986c6587bbcf34fc1ae897905079c6a0281d7"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-bin" "${pkgname}-git")
 repology=("project: ${pkgname}")
 
