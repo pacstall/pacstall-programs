@@ -1,11 +1,11 @@
 name="insync-deb"
 pkgname="insync"
-version="3.8.5.50499"
+version="3.8.6.50504"
 repology=("project: insync")
 depends=("procps")
 arch=('amd64')
 codename="bullseye"
-hash="c8d133a512af4513a51203d2615d4837d22eff341320921f1c22783b8c2cc652"
+hash="d74f1a4d2a09f5c8abf5e81717b73cde36ecf6a9a05394845cd8d603e0576e76"
 url="https://cdn.insynchq.com/builds/linux/insync_${version}-${codename}_amd64.deb"
 gives="insync"
 replace=("insync")
