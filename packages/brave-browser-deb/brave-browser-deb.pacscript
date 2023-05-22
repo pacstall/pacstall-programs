@@ -1,11 +1,11 @@
 name="brave-browser-deb"
 gives="brave-browser"
-version="1.51.114"
+version="1.51.118"
 breaks=("${gives}-bin" "${gives}-git" "${gives}-app")
 url="https://github.com/brave/${gives}/releases/download/v${version}/${gives}_${version}_amd64.deb"
 homepage='https://brave.com/'
 description="Release version of world's most unique, privacy friendly web browser"
-hash="97293099f1aa1f956e59acc442ebd3a43e1eb6de26f8b0859a6c738e450b7e69"
+hash="fceae707833aa1e7d9d9a1b6ad0b2df07e1467feef005cf2a96b27f647ab6fd7"
 arch=('amd64')
 pacdeps=("brave-keyring-deb")
 repology=("project: brave")
