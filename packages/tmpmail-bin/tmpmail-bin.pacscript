@@ -11,9 +11,9 @@ pkgname="tmpmail"
 version="1.2.3"
 description="A temporary email right from your terminal written in POSIX sh"
 url="https://github.com/sdushantha/tmpmail/archive/refs/tags/v${version}.tar.gz"
-depends="w3m curl jq"
+depends=("w3m" "curl" "jq")
 gives="${pkgname}"
-breaks="${pkgname} ${pkgname}-git ${pkgname}-deb ${pkgname}-app"
+breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="8d12f5474b89ee585413ec32cc9991a971a00e8bb63ac8e5a2e736f734f37cfb"
 repology=("project: ${pkgname}")
 

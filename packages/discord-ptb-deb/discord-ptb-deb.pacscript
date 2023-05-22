@@ -1,8 +1,9 @@
 name="discord-ptb-deb"
 gives="discord-ptb"
-version="0.0.41"
+version="0.0.42"
 url="https://dl-ptb.discordapp.net/apps/linux/${version}/${gives}-${version}.deb"
+homepage='https://discord.com/'
 description="Chat for Communities and Friends - Public Test Build"
-hash="5494a9c99ae51d78b14c1dea65a2407422532685ec76c57b24d8256864ed8bb6"
+hash="b5ddff705c4b32ded260cce690b082df591c8480acf169dfc54959d5393bb6a8"
 arch=('amd64')
 repology=("project: ${gives}")

@@ -1,8 +1,9 @@
 name="rhino-linux-xfce4-config-git"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
 description="Rhino Linux XFCE4 configuration"
-breaks="${pkgname}-bin"
-depends="xfce4-whiskermenu-plugin yaru-theme-icon yaru-theme-gtk"
+breaks=("${pkgname}-bin")
+replace=("rhino-xfce4-mobile-config-git" "unicorn-desktop" "unicorn-desktop-git" "unicorn-mobile" "unicorn-mobile-git")
+depends=("xfce4-whiskermenu-plugin" "yaru-theme-icon" "yaru-theme-gtk")
 optdepends=("xfce4: to use the configuration")
 
 url="https://github.com/rhino-linux/dotfiles.git"
@@ -30,4 +31,11 @@ install() {
   sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
+}
+
+postinst() {
+  if ! [[ -d "${homedir}/.config" ]]; then
+    mkdir -p "${homedir}/.config"
+  fi
+  cp -r "/etc/skel/.config/xfce4" "${homedir}/.config"
 }

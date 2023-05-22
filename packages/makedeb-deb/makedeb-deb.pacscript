@@ -1,6 +1,6 @@
 name="makedeb-deb"
 gives="makedeb"
-breaks="${gives} ${gives}-git"
+breaks=("${gives}" "${gives}-git")
 version="16.0.0"
 repology=("project: ${gives}")
 url="https://proget.hunterwittenborn.com/debian-feeds/${gives}/main/${gives}/all/${gives}_all_${version}-stable.deb"
