@@ -11,4 +11,4 @@ else
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
 description="Ubuntu Linux mainline kernel (Generic headers)"
-maintainer="http.llamaz <chadano@llamawebdesign.co.uk>, Oren Klopfer <oren@taumoda.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"

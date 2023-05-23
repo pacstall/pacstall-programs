@@ -5,5 +5,5 @@ version="4.2.2mobian1"
 url="https://repo.mobian-project.org/pool/main/u/${gives}/${gives}_${version}_all.deb"
 description="Deb packaging for u-boot-menu with Mobian patches"
 hash="6fffdf8359c0514e0f841cdf27726e05f582884b55e436235defc2c02d759f31"
-maintainer="oklopfer <oren@taumoda.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: u-boot-menu")
