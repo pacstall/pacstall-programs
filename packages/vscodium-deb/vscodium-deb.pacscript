@@ -11,5 +11,5 @@ else
 fi
 url="https://github.com/VSCodium/vscodium/releases/download/${version}/${gives}_${version}_${CARCH}.deb"
 repology=("project: vscodium")
-maintainer="oklopfer <oren@taumoda.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 description="Binary releases of VS Code without MS branding/telemetry/licensing"

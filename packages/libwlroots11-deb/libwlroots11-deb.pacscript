@@ -3,7 +3,7 @@ gives="libwlroots11"
 replace=("${gives}")
 version="0.16.2-1"
 description="a set of pluggable, composable modules to build a Wayland compositor"
-maintainer="oklopfer <oren@taumoda.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: libwlroots11")
 url="http://ftp.us.debian.org/debian/pool/main/w/wlroots/${gives}_${version}_${CARCH}.deb"
 case "${CARCH}" in

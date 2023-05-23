@@ -11,6 +11,6 @@ else
   hash="74ea7802877e5c8375a9386e185e5bbd057adb56fcde09bc472ed90cc3ef57ed"
   arch=('amd64')
 fi
-maintainer="oklopfer <oren@taumoda.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 description="Chromium fork for linux with extra patches"
 repology=("project: thorium-browser")

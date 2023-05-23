@@ -6,4 +6,4 @@ url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_$
 description="Ubuntu Linux mainline kernel (Headers)"
 hash="22b82613794ee2d08abf60cf2f8f8045ee1ea4c7ffaedeebd4c88e16d19e6cb3"
 arch=('any')
-maintainer="http.llamaz <chadano@llamawebdesign.co.uk>, Oren Klopfer <oren@taumoda.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
