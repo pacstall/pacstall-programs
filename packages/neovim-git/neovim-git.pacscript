@@ -12,7 +12,7 @@ pkgver() {
 version="$(pkgver)"
 
 build() {
-  make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"$(nproc)"
+  make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"${NCPU}"
 }
 
 install() {

@@ -132,6 +132,7 @@ google-chrome-beta-deb
 google-chrome-deb
 google-chrome-unstable-deb
 google-earth-pro-stable-deb
+goverlay
 graillon
 grapejuice-git
 grive2
@@ -185,6 +186,7 @@ libssl1.1-deb
 libwlroots-dev-deb
 libwlroots11-deb
 libxapp1-deb
+lightpad-git
 linked-deb
 linux-headers-deb
 linux-headers-generic-deb
@@ -278,6 +280,7 @@ pacup-bin
 panagement
 pap
 paper-icon-theme
+papirus-folders
 papirus-icon-theme
 parsec-deb
 pdf-mix-tool-git
@@ -366,6 +369,7 @@ telegram-bin
 tenacity-git
 thorium-deb
 thrive-deb
+ticktick-deb
 tidal-hifi-bin
 timeshift
 tixati-deb
@@ -388,6 +392,7 @@ tutanota-app
 u-boot-mobian-deb
 ulauncher-deb
 unicorn-desktop-git
+unicorn-mobile-git
 universal-ctags-git
 upscayl-app
 uwufetch

@@ -8,9 +8,9 @@ maintainer="Henryws <hwengerstickel@pm.me>"
 repology=("project: ${name}")
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 install() {
-  sudo make install -j"$(nproc)" DESTDIR="${pkgdir}"
+  sudo make install -j"${NCPU}" DESTDIR="${pkgdir}"
 }

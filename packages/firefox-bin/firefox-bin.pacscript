@@ -1,13 +1,13 @@
 name="firefox-bin"
 gives="firefox"
-version="113.0"
+version="113.0.1"
 repology=("project: ${gives}")
 url="https://download-installer.cdn.mozilla.net/pub/firefox/releases/${version}/linux-x86_64/en-US/firefox-${version}.tar.bz2"
 homepage='https://www.mozilla.org/en-US/firefox'
 description="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Henryws <hwengerstickel@pm.me>"
 arch=('amd64')
-hash="570d80410aa9333a3749bd538041a0456bf78e83ad27b485aa89f19c07d03890"
+hash="eb0a3398e96c928dcf26cb370f73e759341a96f239a69e020868ca13491e3887"
 
 install() {
   cd ..
@@ -28,5 +28,5 @@ Actions=Private;
 
 [Desktop Action Private]
 Exec=/opt/firefox/firefox --private-window %u
-Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox-stable.desktop" > /dev/null
+Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
 }

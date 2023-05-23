@@ -9,7 +9,7 @@ maintainer="Henryws <hwengerstickel@pm.me>"
 
 build() {
   ./configure
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 install() {

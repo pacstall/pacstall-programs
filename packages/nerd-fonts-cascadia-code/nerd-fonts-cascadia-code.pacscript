@@ -1,13 +1,13 @@
 name="nerd-fonts-cascadia-code"
 pkgname="nerd-fonts-cascadia-code"
-version="2.3.3"
+version="3.0.1"
 gives="${pkgname}"
 breaks=("${pkgname}")
 repology=("project: fonts:nerd-fonts")
 replace=("${gives}")
 url="https://github.com/ryanoasis/nerd-fonts/releases/download/v${version}/CascadiaCode.zip"
 description="Patched font Cascadia Code from Nerd Fonts library"
-hash="644591a9ae4588128e651d7d464daaabc30ff2bede447a921c0374f9d472748f"
+hash="73b8fc00ddf76e46f1bf3496958665a7c9793b33485e67bd293da100663f5a34"
 license="OFL-1.1"
 maintainer="heyzsh <haidarzsh@gmail.com>"
 

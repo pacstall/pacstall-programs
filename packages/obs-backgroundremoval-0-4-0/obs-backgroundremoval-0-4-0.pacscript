@@ -7,7 +7,7 @@ codename="$(lsb_release -cs)"
 case "${codename}" in
   focal) ;;
   *)
-    build_depends="${build_depends} libsimde-dev"
+    build_depends=("${build_depends[@]}" "libsimde-dev")
     ;;
 esac
 pacdeps=("onnxruntime-1-7-0-bin")

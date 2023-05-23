@@ -11,6 +11,7 @@ case "${CARCH}" in
     url="https://github.com/troyeguo/koodo-reader/releases/download/v${version}/Koodo.Reader-${version}-arm64.deb"
     hash="789f997458408ceb2089db84929805f0fd75b0a2a58d34867fc68b62ec36cc4f"
     ;;
+  *) return 1 ;;
 esac
 repology=("project: koodo-reader")
 arch=('amd64' 'arm64')
