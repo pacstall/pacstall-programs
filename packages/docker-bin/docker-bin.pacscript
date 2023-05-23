@@ -5,7 +5,7 @@ repology=("project: ${gives}")
 version="24.0.1"
 depends=("procps" "git" "iptables")
 description="Docker Engine Static Binaries"
-maintainer="oklopfer <oren@taumoda.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 
 if [[ ${CARCH} == arm64 ]]; then
   url="https://download.docker.com/linux/static/stable/aarch64/${gives}-${version}.tgz"
