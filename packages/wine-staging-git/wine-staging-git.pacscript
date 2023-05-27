@@ -31,6 +31,9 @@ optdepends=("libcapi20-dev: for ISDN software"
   "libpcap-dev:i386: 32-bit packet capture support"
   "libusb-1.0-0-dev:i386: 32-bit USB support"
   "libv4l-dev:i386: 32-bit video capture support")
+
+# Translated from : https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=wine-git
+# Original author : Daniel Bermond <dbermond@archlinux.org>
 maintainer="echometerain <echometer@disroot.org>"
 
 pkgver() {
@@ -81,27 +84,17 @@ install() {
     libdir="${pkgdir}/usr/lib" \
     dlldir="${pkgdir}/usr/lib/wine" \
     install
-
+  
   sudo install -d -m755 "${pkgdir}/usr/share/fontconfig/conf.default"
-  sudo install -D -m644 "${SRCDIR}/${name}/30-win32-aliases.conf" -t "${pkgdir}/usr/share/fontconfig/conf.avail"
-
-  sudo install -D -m644 "${SRCDIR}/${name}/wine-binfmt.conf" "${pkgdir}/usr/lib/binfmt.d/wine.conf"
+  wget "https://aur.archlinux.org/cgit/aur.git/plain/30-win32-aliases.conf?h=wine-git" -O "./30-win32-aliases.conf"
+  sudo install -D -m644 "./30-win32-aliases.conf" -t "${pkgdir}/usr/share/fontconfig/conf.avail"
+  sudo install -D -m644 "./30-win32-aliases.conf" -t "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
+  
+  wget "https://aur.archlinux.org/cgit/aur.git/plain/wine-binfmt.conf?h=wine-git" -O "./wine-binfmt.conf"
+  sudo install -D -m644 "./wine-binfmt.conf" "${pkgdir}/usr/lib/binfmt.d/wine.conf"
 
   sudo i686-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib32/wine/i386-windows"/*.dll
   sudo x86_64-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib/wine/x86_64-windows"/*.dll
 
   sudo install -D -m644 "../conf.avail/30-win32-aliases.conf" "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
-  ls
-  echo "###"
-  ls "../"
-  echo "###"
-  ls "../conf.avail/"
-  echo "###"
-  ls "${pkgdir}"
-  echo "###"
-  ls "${SRCDIR}/${name}"
-}
-
-removescript() {
-  sudo rm "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
 }
