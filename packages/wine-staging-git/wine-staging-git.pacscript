@@ -84,12 +84,12 @@ install() {
     libdir="${pkgdir}/usr/lib" \
     dlldir="${pkgdir}/usr/lib/wine" \
     install
-  
+
   sudo install -d -m755 "${pkgdir}/usr/share/fontconfig/conf.default"
   wget "https://aur.archlinux.org/cgit/aur.git/plain/30-win32-aliases.conf?h=wine-git" -O "./30-win32-aliases.conf"
   sudo install -D -m644 "./30-win32-aliases.conf" -t "${pkgdir}/usr/share/fontconfig/conf.avail"
   sudo install -D -m644 "./30-win32-aliases.conf" -t "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
-  
+
   wget "https://aur.archlinux.org/cgit/aur.git/plain/wine-binfmt.conf?h=wine-git" -O "./wine-binfmt.conf"
   sudo install -D -m644 "./wine-binfmt.conf" "${pkgdir}/usr/lib/binfmt.d/wine.conf"
 
