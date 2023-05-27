@@ -47,6 +47,8 @@ prepare() {
   export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/i386-linux-gnu/pkgconfig:/usr/lib32/pkgconfig"
   mkdir "wine64-build"
   mkdir "wine32-build"
+  wget "http://mirrors.kernel.org/ubuntu/pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-dev_1.20.1-1_i386.deb"
+  sudo apt install -y "./libgstreamer-plugins-base1.0-dev_1.20.1-1_i386.deb"
 }
 
 build() {
@@ -95,6 +97,4 @@ install() {
 
   sudo i686-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib32/wine/i386-windows"/*.dll
   sudo x86_64-w64-mingw32-strip --strip-unneeded "${pkgdir}/usr/lib/wine/x86_64-windows"/*.dll
-
-  sudo install -D -m644 "../conf.avail/30-win32-aliases.conf" "${pkgdir}/usr/share/fontconfig/conf.default/30-win32-aliases.conf"
 }
