@@ -5,13 +5,14 @@ version="4.9.4"
 build_version="-3.1"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
+incompatible=("debian:sid" "debian:buster" "debian:stretch" "ubuntu:devel" "ubuntu:18.*" "ubuntu:19.*" "ubuntu:20.*" "ubuntu:21.*")
 arch=("amd64")
 depends=("libc-ares2" "libc6" "libgcc-s1" "libmediainfo0v5" "libqt5core5a" "libqt5dbus5" "libqt5gui5 | libqt5gui5-gles" "libqt5network5" "libqt5svg5" "libqt5widgets5" "libqt5x11extras5" "libsqlite3-0" "libssl3" "libstdc++6" "libudev1" "libxcb1" "libzen0v5" "apt-transport-https" "gpg")
 
 setup_xubuntu_vars() {
   local codename=$1
 
-  case "${ubuntu_codename}" in
+  case "${codename}" in
     lunar)
       distro_release="23.04"
       hash="e1c6d66b9946d0e5a427560a39c0b2affe72714b57b3a41ceefac8304a0a3113"
@@ -38,9 +39,9 @@ if grep -q '^UBUNTU_CODENAME=' /etc/os-release; then
 fi
 
 setup_debian_vars() {
-  local versioncode=$1
+  local codename=$1
 
-  case "${versioncode}" in
+  case "${codename}" in
     bookworm)
       distro_release="testing"
       hash="6fc4eda65d253bb42d4550e6a80fa0a6eda15978fe6dcebb61ff3e7a38c55096"
@@ -57,7 +58,7 @@ setup_debian_vars() {
   distro_base="Debian"
 }
 
-if grep -q '^ID="debian"' /etc/os-release; then
+if grep -q '^ID=debian' /etc/os-release; then
   debian_codename="$(grep '^VERSION_CODENAME=' /etc/os-release | cut -d '=' -f 2)"
   setup_debian_vars "${debian_codename}"
 elif grep -q '^DEBIAN_CODENAME=' /etc/os-release; then
