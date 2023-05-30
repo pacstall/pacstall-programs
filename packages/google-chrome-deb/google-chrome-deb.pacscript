@@ -5,6 +5,6 @@ replace=("${gives}")
 version="113.0.5672.162"
 url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}-1_amd64.deb"
 description="The popular and trusted web browser by Google"
-hash="b1e4e9080d12911f54c0f3ba6a4061510a79e6984ddcae6752174daffcba054b"
+hash="6a624904d7a7ee2ec27e637164ddddd102cc799ffa9c14a05f88762363200bf1"
 arch=('amd64')
 maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
