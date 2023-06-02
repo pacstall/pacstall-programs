@@ -5,7 +5,7 @@ version="4.9.4"
 build_version="-3.1"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
-incompatible=("debian:sid" "debian:buster" "debian:stretch" "ubuntu:devel" "ubuntu:18.*" "ubuntu:19.*" "ubuntu:20.*" "ubuntu:21.*" "ubuntu:23.10")
+incompatible=("debian:sid" "debian:buster" "debian:stretch" "ubuntu:devel" "ubuntu:18.*" "ubuntu:19.*" "ubuntu:20.*" "ubuntu:21.*" "ubuntu:23.10" "ubuntu:mantic")
 arch=("amd64")
 
 setup_xubuntu_vars() {
