@@ -7,7 +7,6 @@ replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
 incompatible=("debian:sid" "debian:buster" "debian:stretch" "ubuntu:devel" "ubuntu:18.*" "ubuntu:19.*" "ubuntu:20.*" "ubuntu:21.*" "ubuntu:23.10")
 arch=("amd64")
-depends=("libc-ares2" "libc6" "libgcc-s1" "libmediainfo0v5" "libqt5core5a" "libqt5dbus5" "libqt5gui5 | libqt5gui5-gles" "libqt5network5" "libqt5svg5" "libqt5widgets5" "libqt5x11extras5" "libsqlite3-0" "libssl3" "libstdc++6" "libudev1" "libxcb1" "libzen0v5" "apt-transport-https" "gpg")
 
 setup_xubuntu_vars() {
   local codename=$1
