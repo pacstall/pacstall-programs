@@ -1,6 +1,6 @@
 name="obs-backgroundremoval"
 repology=("project: obs-backgroundremoval")
-version="0.5.19"
+version="1.0.0"
 url="https://codeload.github.com/royshil/obs-backgroundremoval/tar.gz/refs/tags/v${version}"
 build_depends=("libobs-dev" "libsimde-dev" "ninja-build")
 pacdeps=("onnxruntime-gpu-bin" "cmake-deb")
@@ -8,7 +8,7 @@ breaks=("${name}-git")
 replace=("${name}")
 arch=('amd64')
 description="OBS plugin to replace the background in portrait images and video"
-hash="97b803df872d75278fe955a2a53c2ed8e1b7792f6794a2a2e639dfae84a08f72"
+hash="51450d7efa60108f1214fa599e13dc90a12c8e74d65bd3727887456e964fa38e"
 maintainer="Zahrun <Zahrun@github.com>"
 
 incompatible=('ubuntu:jammy' 'ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'debian:bullseye')
