@@ -1,4 +1,5 @@
 name="insomnia-deb"
+gives="insomnia"
 version="2023.2.2"
 arch=("amd64")
 url="https://github.com/Kong/insomnia/releases/download/core%40${version}/Insomnia.Core-${version}.deb"
