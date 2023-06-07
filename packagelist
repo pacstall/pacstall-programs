@@ -330,6 +330,7 @@ rhino-setup-git
 rhino-xfce4-mobile-config-git
 rstudio-deb
 rust-motd-deb
+schildichat-deb
 sed
 shell-color-scripts
 shellcheck-bin
