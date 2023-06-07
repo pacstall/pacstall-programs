@@ -1,4 +1,5 @@
 name="foliate-deb"
+gives="com.github.johnfactotum.foliate"
 version="2.6.4"
 arch=("any")
 url="https://github.com/johnfactotum/foliate/releases/download/${version}/com.github.johnfactotum.foliate_${version}_all.deb"
