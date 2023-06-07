@@ -155,6 +155,7 @@ i3blocks-git
 i3lock-color
 ibhagwan-picom-git
 imwheel-exclude-patched-git
+insomnia-deb
 insync-deb
 intel-undervolt
 internxt-deb
@@ -331,6 +332,7 @@ rhino-setup-git
 rhino-xfce4-mobile-config-git
 rstudio-deb
 rust-motd-deb
+schildichat-deb
 sed
 shell-color-scripts
 shellcheck-bin

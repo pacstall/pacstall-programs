@@ -1,0 +1,9 @@
+name="schildichat-deb"
+gives="schildichat-desktop"
+version="1.11.30-sc.2"
+arch=("amd64")
+url="https://github.com/SchildiChat/schildichat-desktop/releases/download/v${version}/schildichat-desktop_${version}_amd64.deb"
+hash="ad9bb5cee3c68d9c4d1bf102a50ddaa3dfd2e1005ff1e009e78c82edececc4bc"
+homepage="https://github.com/SchildiChat/schildichat-desktop/"
+description="Matrix client, as Element Web-Desktop fork"
+maintainer="Diegiwg <diegiwg@gmail.com>"
