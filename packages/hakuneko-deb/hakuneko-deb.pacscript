@@ -25,7 +25,6 @@ case "${CARCH}" in
     ;;
   *) return 1 ;;
 esac
-
 homepage="https://github.com/manga-download/hakuneko"
 description="HakuNeko is a cross-platform downloader for manga and anime from various websites."
 maintainer="Diegiwg <diegiwg@gmail.com>"
