@@ -1,0 +1,9 @@
+name="foliate-deb"
+gives="com.github.johnfactotum.foliate"
+version="2.6.4"
+arch=("any")
+url="https://github.com/johnfactotum/foliate/releases/download/${version}/com.github.johnfactotum.foliate_${version}_all.deb"
+hash="fdc7d45a0b357c4a58aa08ddadf581dd21f3761bc6c74a80e39174ce77b75d66"
+homepage="https://johnfactotum.github.io/foliate/"
+description="A simple and modern GTK e-book reader"
+maintainer="Diegiwg <diegiwg@gmail.com>"
