@@ -1,4 +1,5 @@
 name="hakuneko-deb"
+gives="hakuneko-desktop"
 version="8.3.4"
 nightly="20200705.1"
 arch=("amd64" "arm64" "armhf" "armv7l" "i386")
