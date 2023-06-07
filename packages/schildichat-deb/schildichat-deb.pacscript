@@ -1,4 +1,5 @@
 name="schildichat-deb"
+gives="schildichat-desktop"
 version="1.11.30-sc.2"
 arch=("amd64")
 url="https://github.com/SchildiChat/schildichat-desktop/releases/download/v${version}/schildichat-desktop_${version}_amd64.deb"
