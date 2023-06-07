@@ -1,6 +1,6 @@
 name="insomnia-deb"
 version="2023.2.2"
-arch=("any")
+arch=("amd64")
 url="https://github.com/Kong/insomnia/releases/download/core%40${version}/Insomnia.Core-${version}.deb"
 hash="5ccece2ebe5eb72f798e3955a8db90a77ac3f656a87b5b82d4734feba1c97b93"
 homepage="https://github.com/Kong/insomnia/"
