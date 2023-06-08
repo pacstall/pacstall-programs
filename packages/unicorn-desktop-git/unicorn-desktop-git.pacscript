@@ -60,3 +60,4 @@ postinst() {
   cp /etc/skel/.lightpad/* "${homedir}/.lightpad"
   papirus-folders -C violet --theme Papirus-Dark
 }
+
