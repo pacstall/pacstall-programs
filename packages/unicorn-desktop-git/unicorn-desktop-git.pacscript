@@ -15,11 +15,13 @@ incompatible=("debian:*")
 build() {
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
   sudo mkdir -p "${pkgdir}/usr/share/doc"
-  sudo mkdir -p "${pkgdir}/etc/skel/.config"
+  sudo mkdir -p "${pkgdir}/etc/skel/.config/unicorn"
   sudo mkdir -p "${pkgdir}/usr/share/icons"
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
   sudo mkdir -p "${pkgdir}/usr/share/applications"
   sudo mkdir -p "${pkgdir}/usr/share/plank/themes"
+  sudo mkdir -p "${pkgdir}/usr/share/xsessions"
+  sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mkdir -p "${pkgdir}/etc/skel/.lightpad"
 }
 
@@ -27,9 +29,10 @@ install() {
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
-  for i in xfce4 plank autostart ulauncher; do
+  for i in plank autostart ulauncher; do
     sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
+  sudo cp -r xfce4/* "${pkgdir}/etc/skel/.config/unicorn"
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   sudo cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
   sudo cp docks.ini "${pkgdir}/usr/share/plank/"
@@ -37,6 +40,8 @@ install() {
   sudo cp icons/* "${pkgdir}/usr/share/icons"
   sudo cp applications/* "${pkgdir}/usr/share/applications"
   sudo cp lightpad/* "${pkgdir}/etc/skel/.lightpad"
+  sudo install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
+  sudo install -Dm644 "startunicorn" -t "${pkgdir}/usr/bin"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
 }
@@ -45,7 +50,7 @@ postinst() {
   if ! [[ -d "${homedir}/.config" ]]; then
     mkdir -p "${homedir}/.config"
   fi
-  for i in xfce4 plank autostart ulauncher; do
+  for i in unicorn plank autostart ulauncher; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
