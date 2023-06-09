@@ -7,7 +7,6 @@ hash="9a235d1b5d8bb52302f9c8159da828ca7c8de15614233967d484d92cba4e56c2"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
 depends=("libspa-0.2-bluetooth")
-incompatible=('debian:bullseye')
 
 install() {
   sudo install -Dm644 libspa-codec-bluez5-aac.so "${pkgdir}/usr/lib/x86_64-linux-gnu/spa-0.2/bluez5/libspa-codec-bluez5-aac.so"
