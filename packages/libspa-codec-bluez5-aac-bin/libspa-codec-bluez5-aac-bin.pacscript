@@ -7,6 +7,7 @@ hash="381a96c18bc273f4e2fa504e1c8980b28dd2cf0bd5fdfe2b5ee6ee4bb69e459c"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
 depends=("libspa-0.2-bluetooth")
+incompatible=('debian:bullseye')
 
 prepare() {
   dpkg-deb -x libspa-0.2-bluetooth_0.3.65-4~glasgall1_amd64.deb. .
