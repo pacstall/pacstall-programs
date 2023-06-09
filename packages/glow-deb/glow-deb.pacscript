@@ -12,6 +12,7 @@ case "${CARCH}" in
     url="https://github.com/charmbracelet/glow/releases/download/v${version}/glow_${version}_arm64.deb"
     hash="edb4cb7b4f9a531e85be0060109ca7c053d0d02761cc145482f72604f874fed9"
     ;;
+  *) return 1 ;;
 esac
 description="Render markdown on the CLI, with pizzazz!"
 repology=("project: glow")
