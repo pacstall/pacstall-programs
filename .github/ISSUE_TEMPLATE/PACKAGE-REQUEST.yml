@@ -1,6 +1,6 @@
 name: Package Request
 description: Request a package to be added to Pacstall repository
-title: "PacReq: <name_of_the_package>"
+title: "PacReq: name_of_the_package"
 labels: ["package request"]
 body:
   - type: dropdown
