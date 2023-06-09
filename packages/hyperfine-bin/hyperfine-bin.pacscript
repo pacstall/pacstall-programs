@@ -8,11 +8,11 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="hyperfine-bin"
 pkgname="hyperfine"
-version="1.16.1"
+version="1.17.0"
 description="A command-line benchmarking tool"
 url="https://github.com/sharkdp/${pkgname}/releases/download/v${version}/${pkgname}-v${version}-x86_64-unknown-linux-musl.tar.gz"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="f5d26e69fd17200f6b32debe0603b0ff8b1c0cdf2f25463be6da9311f6910613"
+hash="563de47d843810de501e3e6bfcb4571a4ff957eab811c2af87be23d1c599ae47"
 arch=('amd64')
 repology=("project: hyperfine")
 
