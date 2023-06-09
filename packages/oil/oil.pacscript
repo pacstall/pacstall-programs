@@ -7,12 +7,12 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="oil"
-version="0.15.0"
+version="0.16.0"
 description="A bash-compatible UNIX shell written in Python"
 url="https://www.oilshell.org/download/oil-${version}.tar.xz"
 gives="oil"
 breaks=("${name}-bin" "${name}-git" "${name}-deb" "${name}-app")
-hash="d6860ffec461606da825863cd163b1a925f0ab250c6e32197739c11dc9c63318"
+hash="7111c8a8571d1a6d1d620131bc67f377dd8fe6224edbeff249e1d5d68f1dd566"
 repology=("project: oil-shell")
 
 # Edit MAKEFLAGS here
