@@ -3,6 +3,9 @@ gives="hakuneko-desktop"
 version="8.3.4"
 nightly="20200705.1"
 arch=("amd64" "arm64" "armhf" "armv7l" "i386")
+homepage="https://github.com/manga-download/hakuneko"
+description="HakuNeko is a cross-platform downloader for manga and anime from various websites"
+maintainer="Diegiwg <diegiwg@gmail.com>"
 
 case "${CARCH}" in
   amd64)
@@ -27,7 +30,3 @@ case "${CARCH}" in
     ;;
   *) return 1 ;;
 esac
-
-homepage="https://github.com/manga-download/hakuneko"
-description="HakuNeko is a cross-platform downloader for manga and anime from various websites"
-maintainer="Diegiwg <diegiwg@gmail.com>"
