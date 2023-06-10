@@ -1,7 +1,7 @@
 name="whatsie-git"
 gives="whatsie"
 version="4.14.1"
-arch=("any")
+arch=("amd64")
 url="https://github.com/keshavbhatt/whatsie.git"
 homepage="https://github.com/keshavbhatt/whatsie"
 description="Feature rich WhatsApp Client for Desktop Linux"
