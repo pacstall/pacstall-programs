@@ -1,9 +1,13 @@
 name="google-chrome-beta-deb"
 gives="google-chrome-beta"
-repology=("project: google-chrome" "visiblename: ${gives}")
+repology=("project: google-chrome" "visiblename: google-chrome-beta")
 replace=("${gives}")
-version="115.0.5790.24"
-url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${version}-1_amd64.deb"
 description="The web browser built by Google - Beta channel"
-hash="f455a7dc7f6920048513627b86fa6764da96ae00c817326197bc8f2f918d810a"
+maintainer="Diegiwg <diegiwg@gmail.com>"
 arch=('amd64')
+
+pkgver() {
+  curl https://www.ubuntuupdates.org/package/google_chrome/stable/main/base/google-chrome-beta | grep 'amd64.deb' | cut -d'_' -f2
+}
+version="$(pkgver)"
+url="https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-beta/google-chrome-beta_${version}_amd64.deb"
