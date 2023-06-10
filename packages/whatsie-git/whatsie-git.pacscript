@@ -9,7 +9,7 @@ depends=("qtbase5-dev" "qtdeclarative5-dev" "qtlocation5-dev" "libqt5webchannel5
 build_depends=("qtbase5-dev" "qtdeclarative5-dev" "qtlocation5-dev" "libqt5webchannel5-dev" "qtwebengine5-dev" "qtwebengine5-dev-tools" "qtwebengine5-private-dev" "libqt5webengine-data")
 
 pkgver() {
-  git ls-remote "${url}" | grep -i "tags/v" | cut -d '/' -f3 | cut -d 'v' -f2 | sort -r --version-sort | head -n 1
+  git ls-remote "${url}" main | head -n1 | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 
