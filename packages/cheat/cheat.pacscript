@@ -1,5 +1,4 @@
 name="cheat"
-pkgname="arduino-cli"
 gives="cheat"
 repology=("project: cheat")
 version="4.4.0"
