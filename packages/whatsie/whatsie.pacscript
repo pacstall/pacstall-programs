@@ -1,6 +1,5 @@
 name="whatsie"
 gives="whatsie"
-arch=("any")
 homepage="https://github.com/keshavbhatt/whatsie"
 description="Feature rich WhatsApp Client for Desktop Linux"
 maintainer="Diegiwg <diegiwg@gmail.com>"
