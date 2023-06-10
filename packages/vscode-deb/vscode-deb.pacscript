@@ -1,25 +1,24 @@
 name="vscode-deb"
 arch=("amd64" "arm64" "armhf")
 gives="code"
-version="1.78.2"
-
-case "${CARCH}" in
-  amd64)
-    url="http://packages.microsoft.com/repos/code/pool/main/c/code/code_${version}-1683731010_${CARCH}.deb"
-    hash="eeca823ab932d927a12dc85fb2f7fb011e25d8bf61bcb96e807c9add57e9ccd0"
-    ;;
-  arm64)
-    url="http://packages.microsoft.com/repos/code/pool/main/c/code/code_${version}-1683731061_${CARCH}.deb"
-    hash="4d7f0cc976ed1dfde1ceeaadd16829427a477eba1b49ff82dd490395f32eb78c"
-    ;;
-  armhf)
-    url="http://packages.microsoft.com/repos/code/pool/main/c/code/code_${version}-1683730415_${CARCH}.deb"
-    hash="4d7f0cc976ed1dfde1ceeaadd16829427a477eba1b49ff82dd490395f32eb78c"
-    ;;
-  *) return 1 ;;
-esac
-
+version="1.79.0"
 homepage="https://code.visualstudio.com/"
 description="lightweight but powerful source code editor"
 project=("project: vscode")
 maintainer="Diegiwg <diegiwg@gmail.com>"
+
+case "${CARCH}" in
+  amd64)
+    url="http://packages.microsoft.com/repos/code/pool/main/c/code/code_${version}-1686149120_amd64.deb"
+    hash="c629e3cd1bed03ccba0ad43dc6bf995b0e4f053f9553b165161dab9cb68a9990"
+    ;;
+  arm64)
+    url="http://packages.microsoft.com/repos/code/pool/main/c/code/code_${version}-1686148160_arm64.deb"
+    hash="c7bd085c555e11c83491a14d533bcf87a0874ef197f47abd4861268baefed276"
+    ;;
+  armhf)
+    url="http://packages.microsoft.com/repos/code/pool/main/c/code/code_${version}-1686148155_armhf.deb"
+    hash="7edaa8648478cec405ca0c8d96c1474e2ea44cc3f2f13af3358ff78500978d0b"
+    ;;
+  *) return 1 ;;
+esac
