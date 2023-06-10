@@ -4,6 +4,7 @@ repology=("project: cheat")
 version="4.4.0"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
+incompatible=("debian:bookworm" "debian:sid")
 url="https://github.com/cheat/cheat/releases/download/${version}/cheat-linux-amd64.gz"
 homepage="https://github.com/cheat/cheat"
 description="Create and view interactive cheatsheets on the command-line"
