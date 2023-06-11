@@ -17,8 +17,8 @@ case "${codename}" in
     hash="e54ca3865d89a4ff4f84c922c55a0ee03523d6670fdb607434676a1bfa710de6"
     ;;
   *)
-    version="3.2"
-    hash="ba8661f56513bba7de2d48270aecf0b7e226807d8c6f6d898898edbc4ec14743"
+    version="3.4"
+    hash="e54ca3865d89a4ff4f84c922c55a0ee03523d6670fdb607434676a1bfa710de6"
     ;;
 esac
 incompatible=("debian:sid")
