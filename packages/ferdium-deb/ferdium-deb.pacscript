@@ -1,9 +1,9 @@
 name="ferdium-deb"
 gives="ferdium"
 repology=("project: ferdium")
-version="6.2.7"
+version="6.3.0"
 url="https://github.com/ferdium/ferdium-app/releases/download/v${version}/Ferdium-linux-${version}-amd64.deb"
 description="Ferdium is a desktop app that helps you organize how you use your favourite apps by combining them into one application"
-hash="c6c447a5f688f481a61b1a533a1f886163883d84226ca7227b6df3dafcef5aa6"
+hash="de2ddc106c145cd2130012515d5fb1436927623b86d45f35f04be12c1ad57a9f"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
