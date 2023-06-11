@@ -2,7 +2,6 @@ name="xapps-common-deb"
 gives="xapps-common"
 version="2.6.1"
 repology=("project: xapps")
-pacdeps=("libxapp1-deb")
 url="http://packages.linuxmint.com/pool/backport/x/xapp/gir1.2-xapp-1.0_${version}%2bvictoria_amd64.deb"
 hash="8ea4b418570ccd14cb81e80524a81e867b41f2b9ebc4b71cd643580280f190af"
 description="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
