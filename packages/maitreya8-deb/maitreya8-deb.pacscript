@@ -1,6 +1,6 @@
 name="maitreya8-deb"
 repology=("project: maitreya")
-pkgname="maitreya8"
+pkgname="maitreya"
 version="8.0.1b"
 url="https://github.com/martin-pe/${pkgname}/releases/download/v${version}/${pkgname}_${version}_amd64.deb"
 depends=("libwxsqlite3-3.0-0" "wx-common wx3.0-i18n")
