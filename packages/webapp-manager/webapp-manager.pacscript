@@ -8,6 +8,7 @@ hash="8188846ea644a69b143b573dcd5d1c1472d0e968996fb3d3bb1ce6b1ead81658"
 incompatible=("*:jammy")
 url="https://github.com/linuxmint/webapp-manager/archive/refs/tags/${version}.tar.gz"
 maintainer="Zahrun <Zahrun@github.com>"
+
 prepare() {
   # Silent build
   sed -i 's/@echo/#/g' Makefile
