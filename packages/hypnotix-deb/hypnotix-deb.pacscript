@@ -13,7 +13,7 @@ case "${codename}" in
     hash="8da51e1b3522b6afff5f648a1f8bb99346c8573eaff040730497bb9c9cfc457e"
     ;;
 esac
-incompatible=("debian:bookworm" "debian:sid" "ubuntu:lunar" "ubuntu:mantic")
+incompatible=("debian:bullseye" "debian:bookworm" "debian:sid" "ubuntu:lunar" "ubuntu:mantic")
 url="http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_${version}_all.deb"
 description="An IPTV streaming application with support for live TV, movies and series"
 maintainer="Zahrun <Zahrun@github.com>"
