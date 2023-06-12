@@ -2,10 +2,8 @@ name="hypnotix-deb"
 gives="hypnotix"
 repology=("project: ${gives}")
 codename="$(lsb_release -cs)"
+pacdeps=("gir1.2-xapp-1.0-deb")
 case "${codename}" in
-  bullseye)
-    pacdeps=("gir1.2-xapp-1.0-deb")
-    ;;
   bookworm)
     pacdeps=("python3-imdbpy-deb")
     ;;
