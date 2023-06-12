@@ -1,7 +1,7 @@
 name="maitreya-deb"
 repology=("project: maitreya")
 version="8.0.1b"
-url="https://github.com/martin-pe/maitreya/releases/download/v${version}/maitreya_${version}_amd64.deb"
+url="https://github.com/martin-pe/maitreya8/releases/download/v${version}/maitreya8_${version}_amd64.deb"
 depends=("libwxsqlite3-3.0-0" "wx-common wx3.0-i18n")
 replace=("maitreya8")
 description="Maitreya is a free software for western and Vedic astrology (Jyotish)"
