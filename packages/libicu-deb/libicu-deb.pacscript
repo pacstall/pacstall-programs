@@ -1,6 +1,6 @@
 name="libicu-deb"
-gives="libicu"
 version="72.1"
+gives="libicu${version:0:2}"
 url="http://archive.ubuntu.com/ubuntu/pool/main/i/icu/libicu72_${version}-3ubuntu2_amd64.deb"
 description="International Components for Unicode"
 hash="ab965e1ac9665ea93978edf271183bb3332d9ae7db194d148f9b50665c10fa2c"
