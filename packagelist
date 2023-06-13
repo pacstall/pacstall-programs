@@ -180,7 +180,7 @@ lemonbar-xft-git
 lens
 lf-bin
 libcutefish-git
-libicu71-deb
+libicu-deb
 libndi4-deb
 libresprite-git
 libressl
@@ -213,7 +213,7 @@ lutris-deb
 lyrebird-git
 lyx
 mailspring-deb
-maitreya8-deb
+maitreya-deb
 makedeb-deb
 mangohud
 mcontrolcenter-bin

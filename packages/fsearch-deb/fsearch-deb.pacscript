@@ -6,21 +6,21 @@ codename="$(lsb_release -cs)"
 echo "Installing for ${codename}"
 case "${codename}" in
   bullseye)
-    url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_11/amd64/fsearch_${version}-1+3.2_amd64.deb"
-    hash="6c9eaa57fe0d8375d762298cce4109251b91b61cc78696e48d66983d8f49067f"
+    url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_11/amd64/fsearch_${version}-1+3.4_amd64.deb"
+    hash="c6f9c933b2dacc39af8a299aaf0787ac01fbd9849541b262da2d84b9c29d441a"
     ;;
   buster)
-    url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_10/amd64/fsearch_${version}-1+3.1_amd64.deb"
-    hash="aa2bb2c672405315cacd226eaf2c76ddb46166d9321b4b01cd31fa8683834430"
+    url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_10/amd64/fsearch_${version}-1+3.2_amd64.deb"
+    hash="3ed872432982114310d5cacb5dd873da47dd17801758eebfb8976250173e7d52"
     ;;
   jammy)
-    url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_Unstable/amd64/fsearch_${version}-1+3.21_amd64.deb"
-    pacdeps=("libicu71-deb")
-    hash="49cd0ebbbfc33ee8bb8747ee68fcefe76056eb430bf158371f8c1df703dc420d"
+    url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_Unstable/amd64/fsearch_${version}-1+3.167_amd64.deb"
+    pacdeps=("libicu-deb")
+    hash="88d4f2632733dda4be5aa1a9dc522f71a1c074e0b47099cc8e32225365ed69a3"
     ;;
   *)
-    url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_Unstable/amd64/fsearch_${version}-1+3.21_amd64.deb"
-    hash="49cd0ebbbfc33ee8bb8747ee68fcefe76056eb430bf158371f8c1df703dc420d"
+    url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_Unstable/amd64/fsearch_${version}-1+3.167_amd64.deb"
+    hash="88d4f2632733dda4be5aa1a9dc522f71a1c074e0b47099cc8e32225365ed69a3"
     ;;
 esac
 description="FSearch is a fast file search utility, inspired by Everything Search Engine"
