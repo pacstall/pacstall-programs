@@ -44,7 +44,7 @@ install() {
   sudo cp applications/* "${pkgdir}/usr/share/applications"
   sudo cp lightpad/* "${pkgdir}/etc/skel/.lightpad"
   sudo install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
-  sudo install -Dm644 "startunicorn" -t "${pkgdir}/usr/bin"
+  sudo install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
   sudo cp -r onboard "${pkgdir}/etc/skel/.local/share"
