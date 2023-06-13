@@ -8,3 +8,4 @@ hash="4bc20572b7f4bf9d4a8fa344e0bc161f38fa2caf7d636973e68945e433e24afb"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
 repology=("project: ${gives}")
+incompatible=("ubuntu:lunar" "ubuntu: mantic" "debian:*")
