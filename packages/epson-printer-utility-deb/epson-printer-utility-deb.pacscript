@@ -9,6 +9,7 @@ hash="417b637173c0b866a94eb5d9785aecbcd10fc99fd1d7149eb49f02f450e6b61f"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
 repology=("project: ${gives}")
+incompatible=("ubuntu:lunar" "ubuntu: mantic" "debian:*")
 
 postinst() {
   # install .desktop file
