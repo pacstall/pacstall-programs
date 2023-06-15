@@ -1,7 +1,7 @@
 name="apx-git"
 pkgname="apx"
 url="https://github.com/Vanilla-OS/apx.git"
-build_depends="golang-go"
+build_depends=("golang-go")
 pacdeps=("distrobox")
 breaks=("${pkgname}")
 description="Package manager meant to be simple to use, but also powerful with support to installing packages from multiple sources without altering the root filesystem"
@@ -13,7 +13,7 @@ incompatible=("debian:bullseye")
 version="$(pkgver)"
 
 prepare() {
-  sed -i "s;/usr/lib/apx/distrobox;/usr/bin/distrobox;" config/config.json
+  sed -i "s;/usr/share/apx/distrobox;/usr/bin/distrobox;" config/config.json
 }
 
 build() {
