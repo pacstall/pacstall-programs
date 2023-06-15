@@ -1,7 +1,7 @@
 name=kiri-git
 repology=("project: kiri")
 homepage="https://github.com/leoheck/kiri"
-build_depends=("python3-pip")
+build_depends=("python3-pip" "pkg-config")
 depends=("build-essential" "libgtk-3-dev" "pkg-config" "opam" "python-is-python3" "python3-pip" "kicad" "dos2unix" "coreutils" "zenity" "librsvg2-bin" "imagemagick" "xdotool" "rename")
 gives=("kiri")
 description="A tool for reviewing Schematics and Layouts of Git-versioned Kicad-projects, visually"
