@@ -9,7 +9,7 @@ maintainer="Diegiwg <diegiwg@gmail.com>"
 
 case "${CARCH}" in
   amd64)
-    url="https://packages.microsoft.com/repos/code/pool/main/c/code-insiders/code-insiders_1.80.0-1686808276_amd64.deb"
+    url="https://packages.microsoft.com/repos/code/pool/main/c/code-insiders/code-insiders_${version}-1686808276_amd64.deb"
     hash="59de6c1ebd99db65639acbf47da59e94a156cd7b5ae5abd960a3d932593c16dd"
     ;;
   arm64)
