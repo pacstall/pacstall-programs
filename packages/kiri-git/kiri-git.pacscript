@@ -6,16 +6,14 @@ depends=("build-essential" "libgtk-3-dev" "pkg-config" "opam" "python-is-python3
 gives=("kiri")
 description="A tool for reviewing Schematics and Layouts of Git-versioned Kicad-projects, visually"
 maintainer="Marcel Robitaille <mail@marcelrobitaille.me>"
-arch=("any")
 provides=("kiri")
 conflicts=("kiri")
 pacdeps=("kicad-diff-git")
 url="https://github.com/leoheck/kiri.git"
-
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
-version=$(pkgver)
+version="$(pkgver)"
 
 prepare() {
   pip install -r python-requirements.txt
@@ -27,10 +25,19 @@ prepare() {
 }
 
 install() {
-  sudo mkdir -p "${pkgdir}/opt/kiri/"
-  sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo cp -r ./* "${pkgdir}/opt/kiri"
+  sudo mkdir -p "/opt/kiri/"
+  sudo mkdir -p "/usr/bin"
+  sudo cp -r ./* "/opt/kiri"
+}
+
+postinst() {
   for bin in "find_kicad5_sch_hier" "find_kicad6_sch_hier" "fix_svg_vias" "git-imgdiff" "kicad6_sheet_instances" "kicad_rev" "kicad_version" "kicad_version.py" "kicad_version_cliclick" "kicad_version_xdotool" "kiri" "kiri-file-picker" "kiri-server" "plot_kicad_sch" "plot_kicad_sch_macos" "plotgitsch_svg_tweaks"; do
-    sudo ln -s "../../opt/kiri/bin/${bin}" "${pkgdir}/usr/bin/${bin}"
+    sudo ln -sf "../../opt/kiri/bin/${bin}" "/usr/bin/${bin}"
+  done
+}
+
+removescript() {
+  for bin in "find_kicad5_sch_hier" "find_kicad6_sch_hier" "fix_svg_vias" "git-imgdiff" "kicad6_sheet_instances" "kicad_rev" "kicad_version" "kicad_version.py" "kicad_version_cliclick" "kicad_version_xdotool" "kiri" "kiri-file-picker" "kiri-server" "plot_kicad_sch" "plot_kicad_sch_macos" "plotgitsch_svg_tweaks"; do
+    sudo rm -f "/usr/bin/${bin}"
   done
 }
