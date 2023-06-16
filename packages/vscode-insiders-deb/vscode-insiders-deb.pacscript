@@ -17,7 +17,7 @@ case "${CARCH}" in
     hash="7d9f52f5072b37427d3e4df3d74157522b953dba48688a51a9466da1c2669db6"
     ;;
   armhf)
-    url="https://packages.microsoft.com/repos/code/pool/main/c/code-insiders/code-insiders_1.80.0-1686807634_armhf.deb"
+    url="https://packages.microsoft.com/repos/code/pool/main/c/code-insiders/code-insiders_${version}-1686807634_armhf.deb"
     hash="7e4245a22f8d528654ffc368bee1648f5e49b39f87c58a4037e70a622b83ae1b"
     ;;
   *) return 1 ;;
