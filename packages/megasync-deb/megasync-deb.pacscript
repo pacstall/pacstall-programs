@@ -5,7 +5,7 @@ version="4.9.4"
 build_version="-3.1"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
-incompatible=("debian:sid" "debian:buster" "debian:stretch" "debian:testing" "ubuntu:18.*" "ubuntu:19.*" "ubuntu:20.*" "ubuntu:21.*" "ubuntu:22.10" "ubuntu:23.10")
+incompatible=("debian:sid" "*:buster" "*:stretch" "*:jessie" "debian:testing" "*:bionic" "*:focal" "*:kinetic" "*:mantic")
 arch=("amd64")
 
 case "${DISTRO#*:}" in
@@ -29,9 +29,7 @@ case "${DISTRO#*:}" in
     distro_release="11"
     hash="929189eeaed61ce33efba1a3ead6159cde9b9601147a68854345a1b9b955cda5"
     ;;
-  *)
-    return 1
-    ;;
+  *) ;;
 esac
 
 url="https://mega.nz/linux/repo/${distro_base}_${distro_release}/amd64/megasync_${version}${build_version}_amd64.deb"
