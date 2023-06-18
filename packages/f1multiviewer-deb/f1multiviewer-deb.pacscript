@@ -1,4 +1,4 @@
-name="f1multiviewer-bin"
+name="f1multiviewer-deb"
 pkgname="f1multiviewer"
 repology=("project: ${pkgname}")
 version="1.22.2"
@@ -8,7 +8,3 @@ url="https://releases.multiviewer.app/download/113292497/multiviewer-for-f1_${pk
 description="Unofficial desktop client for F1 TV"
 hash="e20b171f7f58791e92682b5a6f7088640fa77585a107cabb4be7c59d8bed6f12"
 arch=('amd64')
-
-install() {
-  sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
-}
