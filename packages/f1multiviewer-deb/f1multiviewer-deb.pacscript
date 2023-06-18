@@ -1,0 +1,10 @@
+name="f1multiviewer-deb"
+gives="multiviewer-for-f1"
+repology=("project: f1multiviewer")
+version="1.22.2"
+maintainer="DismissedGuy <me@mikealmel.ooo>"
+homepage="https://multiviewer.app/"
+url="https://releases.multiviewer.app/download/113292497/multiviewer-for-f1_${version}_amd64.deb"
+description="Unofficial desktop client for F1 TV"
+hash="e20b171f7f58791e92682b5a6f7088640fa77585a107cabb4be7c59d8bed6f12"
+arch=('amd64')
