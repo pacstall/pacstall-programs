@@ -1,5 +1,5 @@
 name="f1multiviewer-deb"
-pkgname="f1multiviewer"
+gives="f1multiviewer"
 repology=("project: ${pkgname}")
 version="1.22.2"
 maintainer="DismissedGuy <me@mikealmel.ooo>"
