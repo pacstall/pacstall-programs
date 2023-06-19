@@ -8,6 +8,7 @@ depends=("libgtk-4-dev" "gir1.2-appstreamglib-1.0" "libappstream-glib8" "libadwa
 url="https://gitlab.gnome.org/World/${name}/-/archive/v${version}/${name}-v${version}.tar.gz"
 hash="e90e4b3329961277aa228e6c0b4ceed640e97f848d520607f8f651212516e4d3"
 maintainer="Oren Klopfer <oren@taumoda.com>"
+incompatible=("ubuntu:20.04" "ubuntu:20.10" "ubuntu:21.04" "ubuntu:21.10" "ubuntu:22.04" "debian:*")
 
 build() {
   sudo meson setup build
