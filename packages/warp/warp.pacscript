@@ -1,5 +1,5 @@
 name="warp"
-gives="app.drey.Warp"
+gives="warp"
 version="0.5.4"
 description="Fast and secure file transfer"
 repology=("project: warp-share-files")
