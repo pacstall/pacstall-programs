@@ -10,16 +10,7 @@ pkgver() {
 }
 version="$(pkgver)"
 
-prepare() {
-  sudo pip3 -q install toml
-}
-
 package() {
-  sudo mkdir -p "${pkgdir}/usr/share/lyrebird/"
-  sudo cp -rf "app/" "${pkgdir}/usr/share/lyrebird/"
-  sudo install -Dm644 "icon.png" -t "${pkgdir}/usr/share/lyrebird/"
-  sudo install -Dm644 "app.py" -t "${pkgdir}/usr/share/lyrebird/"
-  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/lyrebird/"
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/lyrebird/"
-  sudo install -Dm755 "lyrebird" -t "${pkgdir}/usr/bin/"
+  sudo INSTALL_PREFIX="${pkgdir}/usr/local" ./install.sh
+  sudo sed -i "s|${pkgdir%/}||g" "${pkgdir}/usr/local/share/applications/lyrebird.desktop"
 }
