@@ -15,3 +15,4 @@ case "${codename}" in
 esac
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
+repology=("project: cmake" "repo: debian_unstable")

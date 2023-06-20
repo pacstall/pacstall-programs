@@ -1,10 +1,10 @@
 name="gfn-electron-bin"
 pkgname="geforcenow-electron"
-version="1.10.0"
+version="1.11.0"
 description="Linux desktop client for GeForce NOW, using Electron"
 repology=("project: geforcenow-electron")
 url="https://github.com/hmlendea/gfn-electron/releases/download/v${version}/geforcenow-electron_${version}_linux.zip"
-hash="b9106b7b34c2fd21834526684ccba3a37c2adbb2fb65d04ef2c70c0428e79d1b"
+hash="67a4b86a2213f96a7359ff8702d759c1de5d9fb36267ee0d5e57647ac9e44a97"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")

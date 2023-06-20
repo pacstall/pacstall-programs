@@ -1,10 +1,10 @@
 name="rstudio-deb"
 gives="rstudio"
 repology=("project: ${gives}")
-version="2023.03.1+446"
+version="2023.06.0.421"
 ver="${version:0:9}-${version:10}"
 url="https://download1.rstudio.org/electron/jammy/amd64/rstudio-${ver}-amd64.deb"
 description="RStudio is an integrated development environment (IDE) for R"
-hash="464038393a380321afb96793f8775852ce75f29340bd5d49a0c7ccbe77e411c0"
+hash="c5e551fcdda40dab3524a7568abdbdd1e4497e7324d06a620e5daf326a6e0970"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"

@@ -91,6 +91,7 @@ epson-printer-utility-deb
 exa-git
 exploitdb-git
 expressvpn-deb
+f1multiviewer-deb
 fast
 fastfetch-git
 fblog-deb
@@ -180,7 +181,7 @@ lemonbar-xft-git
 lens
 lf-bin
 libcutefish-git
-libicu71-deb
+libicu-deb
 libndi4-deb
 libresprite-git
 libressl
@@ -213,10 +214,11 @@ lutris-deb
 lyrebird-git
 lyx
 mailspring-deb
-maitreya8-deb
+maitreya-deb
 makedeb-deb
 mangohud
 mcontrolcenter-bin
+megasync-deb
 micro
 microsoft-edge-beta-deb
 microsoft-edge-dev-deb
@@ -409,10 +411,12 @@ viper4linux
 vivaldi-deb
 vivarium
 vscode-deb
+vscode-insiders-deb
 vscodium-deb
 vyprvpn-deb
 waf
 walc-app
+warp
 warpinator-deb
 wazzapp-deb
 webapp-manager

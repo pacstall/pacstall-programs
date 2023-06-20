@@ -1,22 +1,13 @@
-#  __      __________   ______
-# /  \    /  \_____  \ /  __  \
-# \   \/\/   //  ____/ >      <
-#  \        //       \/   --   \
-#   \__/\  / \_______ \______  /
-#        \/          \/      \/
-maintainer="wizard-28 <wiz28@pm.me>"
-
 name="telegram-bin"
-pkgname="telegram"
-version="4.8.1"
-description="Telegram Desktop messaging app"
+gives="telegram"
+version="4.8.4"
+homepage="https://telegram.org/"
+description="Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed"
 url="https://updates.tdesktop.com/tlinux/tsetup.${version}.tar.xz"
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="d9652df2c8bcf4bd2d154c22c471acfaa4428fd2c2e1130641c88ef70939266a"
+hash="14c4e6cc012430a65330d532cdf945a5c1bf38ea098368acabe9578c69625008"
 repology=("project: telegram-desktop")
+maintainer="Diegiwg <diegiwg@gmail.com>"
 
 install() {
-  # Install binary
-  sudo install -Dm755 "Telegram" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "Telegram" "${pkgdir}/usr/bin/${gives}"
 }
-# vim:set ft=sh ts=2 sw=2 et:
