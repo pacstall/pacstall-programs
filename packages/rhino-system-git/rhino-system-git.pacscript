@@ -6,7 +6,7 @@ pacdeps=("rhino-pkg-git")
 gives="rhino-system"
 description="System info and upgrade utility by the Rhino Linux team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-incompatible=("debian:*")
+incompatible=("ubuntu:20.04" "ubuntu:20.10" "ubuntu:21.04" "ubuntu:21.10" "ubuntu:22.04" "debian:*")
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
