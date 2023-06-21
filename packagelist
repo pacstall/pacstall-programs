@@ -334,6 +334,7 @@ rhino-plymouth-theme-git
 rhino-server-core
 rhino-setup-bin
 rhino-setup-git
+rhino-system-git
 rhino-xfce4-mobile-config-git
 rstudio-deb
 rust-motd-deb
