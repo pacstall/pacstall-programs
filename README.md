@@ -1,6 +1,6 @@
 # Pacstall Programs
 
-<p><img src="https://repology.org/badge/repository-big/pacstall.svg" alt="Repository status"></p>
+[![Repository status](https://repology.org/badge/repository-big/pacstall.svg)](https://repology.org/repository/pacstall)
 
 This is the default repository of pacscripts which [pacstall](https://github.com/pacstall/pacstall) uses to install software. You can fork this repository and add make your own package repository as long as it follows the basic structure:
 
