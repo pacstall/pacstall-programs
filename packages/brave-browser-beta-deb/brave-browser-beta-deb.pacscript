@@ -6,6 +6,6 @@ url="https://github.com/brave/brave-browser/releases/download/v${version}/${give
 homepage='https://brave.com/'
 description="Testing version of world's most unique, privacy friendly web browser"
 hash="d2ccfb6f5756409c531b01cbb93fe13c8d3916980ca53cb17dfd5697d812ff51"
-arch=('amd64')
+pacdeps=("brave-keyring-deb")
 repology=("project: brave" "visiblename: brave-beta-bin")
 maintainer="Henryws <hwengerstickel@pm.me>"
