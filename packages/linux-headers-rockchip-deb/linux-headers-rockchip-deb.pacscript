@@ -5,5 +5,5 @@ gives="linux-headers-${version}-rockchip"
 url="https://repo.mobian-project.org/pool/main/l/linux-${version}-rockchip/${gives}_${version}${pointver}%2Brockchip-1_arm64.deb"
 hash="caef266ace726ea6e720ef1fe0b77a303dac19d09a35753b77b6a8c8e5260485"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-description="Linux header built for PineTab2 (Mobian kernel)"
+description="Linux kernel header files built for PineTab2 (Mobian kernel)"
 arch=('arm64')
