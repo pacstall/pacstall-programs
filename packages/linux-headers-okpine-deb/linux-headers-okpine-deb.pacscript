@@ -1,8 +1,8 @@
 name="linux-headers-okpine-deb"
-version="6.4.0-rc7"
+version="6.4.0"
 gives="linux-headers-${version}"
 url="https://github.com/oklopfer/debs/raw/master/kernel/${version}/${gives}-okpine_${version}-1_arm64.deb"
-hash="6cb99a8597a27bf30dabb6cc1250f11e79c977a84986e7d4b659ad933094108a"
+hash="bab78532c4f5599ee896f6595bd7313d122d8bedd49934500e59f88a7b383a8b"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 description="Linux kernel header files built for PinePhone + PinePhone Pro"
 arch=('arm64')
