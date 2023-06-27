@@ -1,10 +1,10 @@
 name="onnxruntime-bin"
 pkgname="onnxruntime"
 repology=("project: onnxruntime")
-version="1.15.0"
+version="1.15.1"
 url="https://github.com/microsoft/onnxruntime/releases/download/v${version}/onnxruntime-linux-x64-${version}.tgz"
 description="Cross-platform inference and training machine-learning accelerator"
-hash="1b3e88c0ea8e2770e5c9b11a36886097954a642c054b341992dcef268d8bb902"
+hash="5492f9065f87538a286fb04c8542e9ff7950abb2ea6f8c24993a940006787d87"
 maintainer="Zahrun <Zahrun@github.com>"
 
 install() {
