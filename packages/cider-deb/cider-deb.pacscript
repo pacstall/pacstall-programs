@@ -1,0 +1,9 @@
+name="cider-deb"
+gives="cider"
+version="1.6.1"
+url="https://github.com/ciderapp/Cider/releases/download/v${version}/cider_${version}_amd64.deb"
+homepage='https://cider.sh/'
+description="A new look into listening and enjoying music in style and performance"
+hash="9bcf27d7ae9d3dc6e5f56f7024997a506410f4a5a2d442005bde2b396f136b12"
+maintainer="ajstrongdev <ajstrong.dev@gmail.com>"
+arch=('amd64')
