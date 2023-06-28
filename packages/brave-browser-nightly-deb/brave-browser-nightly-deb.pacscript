@@ -10,4 +10,4 @@ description="The Brave browser is a fast, private and secure web browser for PC,
 hash="18b10150730fe4b294c80115c031f91d8234514d163b42bf188fa5ae242a6ab8"
 arch=('amd64')
 repology=("project: brave" "visiblename: brave-nightly")
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"

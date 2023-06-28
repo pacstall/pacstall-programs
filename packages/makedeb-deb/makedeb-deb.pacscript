@@ -6,4 +6,4 @@ repology=("project: ${gives}")
 url="https://proget.hunterwittenborn.com/debian-feeds/${gives}/main/${gives}/all/${gives}_all_${version}-stable.deb"
 description="A tool which takes PKGBUILD files and creates Debian packages installable with DPKG/APT"
 hash="48b8de3c66da9be1ad1d283002c948dd25cb9e45d5d6725af0db38bbd823d7bd"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"

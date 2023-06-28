@@ -7,7 +7,7 @@ version="4.4.0"
 url="https://github.com/gorilla-devs/${pkgname}/releases/download/v${version}/${pkgname}-linux-nogui.zip"
 hash="e1d7e89c529581e793c887abfeddd89e68024c777f336e41f6623777cff6f05c"
 description="Fast and multi-source CLI program for managing Minecraft mods"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 
 install() {
   sudo install -Dm755 ferium "${pkgdir}/usr/bin/${pkgname}"

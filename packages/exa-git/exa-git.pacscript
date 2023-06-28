@@ -5,7 +5,7 @@ url="https://github.com/ogham/exa.git"
 homepage='https://the.exa.website/'
 build_depends=("cargo" "libgit2-dev" "cmake" "rustc")
 description="exa is an improved file lister with more features and better defaults"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }

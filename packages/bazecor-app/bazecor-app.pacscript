@@ -7,7 +7,7 @@ url="https://github.com/Dygmalab/Bazecor/releases/download/bazecor-${version}/Ba
 depends=("usbutils" "udev")
 hash="a761d4612cd6e733e4a73d398b2e2e910655fee4c3bfe7c5d812ce340223519b"
 breaks=("bazecor" "bazecor-bin" "bazecor-deb" "bazecor-git")
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 repology=("project: bazecor")
 
 install() {

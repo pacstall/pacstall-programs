@@ -7,7 +7,7 @@ build_depends=("gcc" "g++" "gcc-multilib" "g++-multilib" "meson" "ninja-build" "
 description="A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more"
 hash="30d9336b60cbc7fdc2a1ba86ec62b9fb7f2986a2b0f6196ca347f5c13e583c6d"
 incompatible=('debian:bullseye')
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 
 build() {
   sudo meson build --prefix="${pkgdir}/usr"

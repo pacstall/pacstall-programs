@@ -6,7 +6,7 @@ hash="5b7f73e73370996bedebc15f955c9b1cc415a7da0381e8f48f711ec2dfb1cd7f"
 homepage='https://www.blender.org/'
 arch=("amd64")
 description="A fully integrated 3D graphics creation suite"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 repology=("project: blender")
 
 install() {

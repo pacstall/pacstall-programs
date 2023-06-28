@@ -8,4 +8,4 @@ description="Testing version of world's most unique, privacy friendly web browse
 hash="f1a083323a053f4f7755055612817c13ec646c51bc18907130a0e5fcd22a77b2"
 pacdeps=("brave-keyring-deb")
 repology=("project: brave" "visiblename: brave-beta-bin")
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"

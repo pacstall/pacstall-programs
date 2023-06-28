@@ -4,7 +4,7 @@ gives="rhino-pkg"
 build_depends=("make" "gettext")
 depends=("gettext")
 description="Rhino-pkg wrapper script"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }

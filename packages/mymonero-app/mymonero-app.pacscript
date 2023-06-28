@@ -6,7 +6,7 @@ url="https://github.com/mymonero/mymonero-app-js/releases/download/v${version}/M
 build_depends=("libfuse2")
 depends=("libfuse2")
 hash="fd53a237be201dc6e10cc0a9136fb02be1522622b0de67798c34623ca2ecddef"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 __icon_url="https://github.com/mymonero/mymonero-app-js/raw/master/build/icon.png"
 repology=("project: mymonero")
 

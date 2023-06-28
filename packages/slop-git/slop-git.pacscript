@@ -5,7 +5,7 @@ url="https://github.com/naelstrof/slop.git"
 build_depends=("cmake" "libglm-dev" "libxrender-dev" "libxfixes-dev" "libxcomposite-dev" "libxrandr-dev")
 depends=("libglew-dev" "libxext-dev")
 breaks=("${pkgname}-bin" "${pkgname}")
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8

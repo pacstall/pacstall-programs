@@ -3,7 +3,7 @@ gives="yafetch"
 breaks=("${gives}-deb" "${gives}-bin" "${gives}-app" "${gives}-git")
 url="https://github.com/Henryws/yafetch.git"
 description="Yet another fetch tool"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
