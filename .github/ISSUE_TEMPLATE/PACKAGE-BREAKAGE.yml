@@ -3,7 +3,7 @@ description: Form for identifying broken packages
 title: "Broken: name_of_the_package"
 labels: ["Broken"]
 assignees:
-  - Henryws
+  - Elsie19
   - wizard-28
 body:
   - type: input
