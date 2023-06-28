@@ -4,8 +4,8 @@ pacdeps=("rhino-pkg-git" "rhino-neofetch-git")
 description="Transitional package to provide minimal core Rhino Linux software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-pine-core")
-production="2023.1-beta5"
-version="${production}-2"
+production="2023.1-beta6"
+version="${production}-0"
 style="(server)"
 branch="devel"
 postinst() {
