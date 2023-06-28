@@ -1,0 +1,8 @@
+name="mobile-usb-networking-deb"
+gives="mobile-usb-networking"
+version="0.0.4"
+url="https://repo.mobian-project.org/pool/main/m/${gives}/${gives}_${version}_all.deb"
+description="USB networking configuration for mobile devices"
+hash="3cfb704db5a6e7ebef88c5cbf8808b42f714afd1ec40c7f18eae72bbb96c3e63"
+maintainer="Oren Klopfer <oren@taumoda.com>"
+repology=("project: mobile-usb-networking")
