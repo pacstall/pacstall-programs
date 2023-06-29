@@ -10,7 +10,7 @@ breaks=("bazecor" "bazecor-bin" "bazecor-deb" "bazecor-git")
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 repology=("project: bazecor")
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/256x256/apps/" "${pkgdir}/usr/share/applications/"
   echo "[Desktop Entry]
 Name=Bazecor
