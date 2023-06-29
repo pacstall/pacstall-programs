@@ -1,11 +1,11 @@
 name="teams-for-linux-deb"
 repology=("project: teams-for-linux")
 pkgname="teams-for-linux"
-version="1.1.6"
+version="1.1.8"
 url="https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v${version}/teams-for-linux_${version}_amd64.deb"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
 gives="${pkgname}"
 description="Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron."
-hash="2c06cca76528c122c587ea66bdd0175cc12772a70945c8f3e88bb529b772d3c4"
+hash="b760bea426cff140b9bee68db820616ba8af1d733635d5402b8e3473f2c2016e"
 arch=('amd64')
 maintainer="matusaurio <matusaurio@github.com>"
