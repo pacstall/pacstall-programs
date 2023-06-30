@@ -40,7 +40,12 @@ In case for some reason (false positives etc), you want to skip the hooks commit
 Pacstall programs are licensed under the MIT License.
 
 > **Note**
-> MIT license does not apply to the packages built by Pacstall, merely to the files in this repository (the pacscripts, GitHub Action workflows, documentation, etc.). It also might not apply to patches included in pacscripts, which may be derivative works of the packages to which they apply. The aforementioned artifacts are all covered by the licenses of the respective packages.
+> MIT license does not apply to the packages built by Pacstall, merely to the
+files in this repository (the pacscripts, GitHub Action workflows,
+documentation, etc.). It also might not apply to patches included in pacscripts,
+which may be derivative works of the packages to which they apply. The
+aforementioned artifacts are all covered by the licenses of the respective
+packages.
 
 ## Stats
 
