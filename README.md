@@ -35,6 +35,13 @@ Now, whenever you try to commit a patch all the configured hooks will run and bl
 
 In case for some reason (false positives etc), you want to skip the hooks commit using `git commit --no-verify`
 
+## License
+
+Pacstall programs are licensed under the MIT License.
+
+> **Note**
+> MIT license does not apply to the packages built by Pacstall, merely to the files in this repository (the pacscripts, GitHub Action workflows, documentation, etc.). It also might not apply to patches included in pacscripts, which may be derivative works of the packages to which they apply. The aforementioned artifacts are all covered by the licenses of the respective packages.
+
 ## Stats
 
 <p align="center"><img alt="Repobeats analytics image" src="https://repobeats.axiom.co/api/embed/6339f9352d6dc27063ee90400da619442ee5143b.svg" /></p>
