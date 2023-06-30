@@ -2,7 +2,7 @@ name="quintom-cursor-theme-git"
 gives="quintom-cursor-theme"
 url="https://gitlab.com/Burning_Cube/quintom-cursor-theme.git"
 description="A cursor theme designed to look decent"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8

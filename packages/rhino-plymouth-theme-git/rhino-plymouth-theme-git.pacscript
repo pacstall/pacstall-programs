@@ -1,6 +1,6 @@
 name="rhino-plymouth-theme-git"
 gives="rhino-plymouth-theme"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 description="Rhino Linux Plymouth theme"
 url="https://github.com/rhino-linux/plymouth.git"
 pkgver() {

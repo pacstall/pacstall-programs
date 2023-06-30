@@ -6,4 +6,4 @@ url="https://github.com/internxt/drive-desktop/releases/download/v${version}/int
 description="The safest cloud storage for all your files, photos, and more"
 hash="85c8ef9515d2264b62e4bd45a9ed9271221a1dc37760c4038d45582a9079352a"
 arch=('amd64')
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"

@@ -3,7 +3,7 @@ gives="neovim"
 url="https://github.com/neovim/neovim.git"
 homepage='https://neovim.io/'
 description="Vim fork maintained by the community"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 build_depends=("ninja-build" "gettext" "libtool-bin" "autoconf" "automake" "cmake" "g++" "pkg-config" "unzip")
 breaks=("neovim-bin" "neovim" "neovim-app" "neovim-deb")
 pkgver() {

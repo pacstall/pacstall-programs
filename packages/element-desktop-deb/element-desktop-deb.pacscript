@@ -9,4 +9,4 @@ homepage='https://element.io/'
 description="Element is a feature-packed Matrix client"
 hash="26c04c5c19799b0fc044edf173756e844620164b7c0844531b77905f3830d535"
 arch=('amd64')
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"

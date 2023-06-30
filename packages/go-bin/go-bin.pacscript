@@ -12,7 +12,8 @@ hash="d7ec48cde0d3d2be2c69203bc3e0a44de8660b9c09a6e85c4732a3f7dc442612"
 arch=('amd64')
 repology=("project: go")
 
-__goroot="${STOWDIR}/usr/local/${name}"
+__goroot_pkgdir="${pkgdir}/usr/local/${name}"
+__goroot="/usr/local/${name}"
 __shell_rcs=("${homedir}/.bashrc" "${homedir}/.zshrc" "${homedir}/.profile")
 
 install() {
@@ -20,9 +21,22 @@ install() {
   sudo install -Dm755 "bin/go" "${pkgdir}/usr/bin/go"
   sudo install -Dm755 "bin/gofmt" "${pkgdir}/usr/bin/gofmt"
 
-  sudo mkdir -p "${__goroot}"
-  sudo cp -r "." "${__goroot}"
-  sudo chmod -R 755 "${__goroot}"
+  sudo mkdir -p "${__goroot_pkgdir}"
+  sudo cp -r "." "${__goroot_pkgdir}"
+  sudo chmod -R 755 "${__goroot_pkgdir}"
+}
+
+__goroot_is_set() {
+  grep --only-matching -q "GOROOT=.*" < "$1"
+  return $?
+}
+
+__clear_goroot() {
+  sed -i '/export GOROOT=.*/d' "$1"
+}
+
+__set_goroot() {
+  echo "export GOROOT=\"${__goroot}\"" | tee -a "$1" > /dev/null
 }
 
 postinst() {
@@ -40,19 +54,6 @@ postinst() {
   echo -e "\tbash: \tsource ~/.bashrc"
   echo -e "\tzsh: \tsource ~/.zshrc"
   echo -e "\tksh: \t. ~/.profile"
-}
-
-__goroot_is_set() {
-  grep --only-matching -q "GOROOT=.*" < "$1"
-  return $?
-}
-
-__clear_goroot() {
-  sed -i '/export GOROOT=.*/d' "$1"
-}
-
-__set_goroot() {
-  echo "export GOROOT=\"${__goroot}\"" | tee -a "$1" > /dev/null
 }
 
 removescript() {

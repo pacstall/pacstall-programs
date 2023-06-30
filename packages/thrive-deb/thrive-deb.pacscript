@@ -5,5 +5,5 @@ description="Thrive launcher is a desktop application that manages downloading a
 url="https://github.com/Revolutionary-Games/Thrive-Launcher/releases/download/v${version}/thrive-launcher_${version}_amd64.deb"
 hash="36a648f9e23049a8e83db6ef52eefb06d32117e75bb4d0033994b454e944ebfd"
 arch=('amd64')
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 # vim:set ft=sh ts=2 sw=2 et:

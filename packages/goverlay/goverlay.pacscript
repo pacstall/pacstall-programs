@@ -5,7 +5,7 @@ url="https://github.com/benjamimgois/goverlay/releases/download/${version}/gover
 hash="6885e8052d747fd19649c2b5b8273ea879b9046fa21cfa81f8570faaeae00bab"
 depends=("mangohud" "libqt5pas-dev")
 description="Graphical UI to help manage Linux overlays"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 repology=("project: goverlay")
 
 install() {

@@ -6,7 +6,7 @@ gives="${pkgname}"
 description="GIT utilities -- repo summary, repl, changelog population, author commit percentages and more"
 url="https://github.com/tj/git-extras.git"
 depends=("git" "bsdmainutils")
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8

@@ -3,6 +3,7 @@ adapta-gtk-theme-git
 alacritty
 amfora-bin
 an-anime-game-launcher-bin
+ananicy-cpp
 android-studio
 ani-cli-bin
 anydesk-bin
@@ -40,6 +41,7 @@ caprine-deb
 cheat
 chezmoi-deb
 chwp-deb
+cider-deb
 clib
 clipboard-bin
 cmake-data-deb
@@ -198,8 +200,10 @@ linux-headers-deb
 linux-headers-generic-deb
 linux-headers-generic-stable-deb
 linux-headers-okpine-deb
+linux-headers-rockchip-deb
 linux-headers-stable-deb
 linux-image-okpine-deb
+linux-image-rockchip-deb
 linux-image-unsigned-deb
 linux-image-unsigned-stable-deb
 linux-kernel
@@ -227,6 +231,7 @@ microsoft-prod-repo
 minecraft-launcher
 minecraft-launcher-deb
 minecraft-pi-reborn-app
+mobile-usb-networking-deb
 moka-icon-theme
 mold-bin
 ms-teams-deb
@@ -258,7 +263,6 @@ nowpm
 nuclear-deb
 nuclei-bin
 nushell-bin
-nyxt-deb
 obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-0-4-0
@@ -427,6 +431,8 @@ webtorrent-desktop-deb
 weechat-git
 wezterm-app
 wezterm-bin
+whatsie
+whatsie-git
 windscribe-beta-gui-deb
 wine-staging-git
 wsysmon-bin

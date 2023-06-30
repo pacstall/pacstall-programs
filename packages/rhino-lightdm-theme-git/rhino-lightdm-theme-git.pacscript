@@ -1,6 +1,6 @@
 name="rhino-lightdm-theme-git"
 gives="rhino-lightdm-theme"
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
 description="Rhino Linux Lightdm theme"
 url="https://github.com/rhino-linux/lightdm.git"
 pkgver() {

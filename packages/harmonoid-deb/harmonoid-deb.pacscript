@@ -7,4 +7,4 @@ description="Plays & manages your music library. Looks beautiful & juicy. Playli
 repology=("project: harmonoid")
 hash="e0078741f2df5a7146027c88c61547e7c920a0a43bfc21518e1d77f5dd7ec927"
 arch=('amd64')
-maintainer="Henryws <hwengerstickel@pm.me>"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
