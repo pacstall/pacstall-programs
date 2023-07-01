@@ -12,3 +12,4 @@ fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
 description="Ubuntu Linux stable kernel (Unsigned image)"
 maintainer="Oren Klopfer <oren@taumoda.com>"
+repology=("project: linux" "repo: distrowatch")

@@ -6,3 +6,4 @@ hash="bab78532c4f5599ee896f6595bd7313d122d8bedd49934500e59f88a7b383a8b"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 description="Linux kernel header files built for PinePhone + PinePhone Pro"
 arch=('arm64')
+repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")

@@ -12,3 +12,4 @@ fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
 description="Ubuntu Linux mainline kernel (Generic headers)"
 maintainer="Oren Klopfer <oren@taumoda.com>"
+repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")
