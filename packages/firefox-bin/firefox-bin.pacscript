@@ -11,22 +11,22 @@ hash="a2e6b307fa944a9ca9153c3dbe6d4a3c30e6f86d65dea3273f3873bb765246e0"
 
 install() {
   cd ..
-  sudo mkdir -p "${pkgdir}/opt/firefox"
-  sudo cp -r firefox/* "${pkgdir}/opt/firefox"
+  sudo mkdir -p "${pkgdir}/etc/firefox"
+  sudo cp -r firefox/* "${pkgdir}/etc/firefox"
   sudo mkdir -p "${pkgdir}/usr/share/applications/"
   echo '[Desktop Entry]
 Name=Firefox Stable
 Comment=Web Browser
-Exec=/opt/firefox/firefox %u
+Exec=/etc/firefox/firefox %u
 Terminal=false
 Type=Application
-Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+Icon=/etc/firefox/browser/chrome/icons/default/default128.png
 Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
 Actions=Private;
 
 [Desktop Action Private]
-Exec=/opt/firefox/firefox --private-window %u
+Exec=/etc/firefox/firefox --private-window %u
 Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
 }
