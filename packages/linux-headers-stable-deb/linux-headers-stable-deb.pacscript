@@ -7,3 +7,4 @@ description="Ubuntu Linux stable kernel (Headers)"
 hash="be5972e5cd1913a68cd4acdd3409dd1fc713b41115ae55f95394c3f14632a379"
 arch=('any')
 maintainer="Oren Klopfer <oren@taumoda.com>"
+repology=("project: linux" "repo: distrowatch")
