@@ -26,6 +26,7 @@ build() {
   sudo mkdir -p "${pkgdir}/etc/xdg/unicorn"
   sudo mkdir -p "${pkgdir}/usr/share/xsessions"
   sudo mkdir -p "${pkgdir}/usr/share/lightdm.conf.d"
+  sudo mkdir -p "${pkgdir}/usr/bin"
 }
 
 install() {
@@ -35,10 +36,11 @@ install() {
   for i in plank autostart ulauncher; do
     sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
-  sudo cp -r etc/xdg/unicorn/* "${pkgdir}/etc/xdg/unicorn"
+  sudo install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
+  sudo install -Dm755 "xinitrc" -t "${pkgdir}/etc/xdg/unicorn"
   sudo cp -r xfce4 "${pkgdir}/etc/xdg/unicorn"
-  sudo cp usr/share/xsessions/* "${pkgdir}/usr/share/xsessions"
-  sudo cp usr/share/lightdm.conf.d/* "${pkgdir}/usr/share/lightdm.conf.d"
+  sudo install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
+  sudo install -Dm644 "40-unicorn.conf" -t "${pkgdir}/usr/share/lightdm.conf.d"
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   sudo cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
   sudo cp docks.ini "${pkgdir}/usr/share/plank/"
