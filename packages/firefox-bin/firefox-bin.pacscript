@@ -13,6 +13,8 @@ install() {
   cd ..
   sudo mkdir -p "${pkgdir}/etc/firefox"
   sudo cp -r firefox/* "${pkgdir}/etc/firefox"
+  sudo chmod +x "${pkgdir}/etc/firefox/firefox"
+  sudo chmod +x "${pkgdir}/etc/firefox/firefox-bin"
   sudo mkdir -p "${pkgdir}/usr/share/applications/"
   echo '[Desktop Entry]
 Name=Firefox Stable
@@ -27,6 +29,15 @@ StartupNotify=true
 Actions=Private;
 
 [Desktop Action Private]
-Exec=/etc/firefox/firefox --private-window %u
+Exec=/usr/bin/firefox --private-window %u
 Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
+}
+
+postinst() {
+  sudo ln -sf "/etc/firefox/firefox" "/usr/bin/firefox"
+  sudo ln -sf "/etc/firefox/firefox-bin" "/usr/bin/firefox-bin"
+}
+
+removescript() {
+  sudo rm -f "/usr/bin/firefox" "/usr/bin/firefox-bin"
 }
