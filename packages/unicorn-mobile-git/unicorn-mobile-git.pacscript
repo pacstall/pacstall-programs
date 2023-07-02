@@ -1,6 +1,6 @@
 name="unicorn-mobile-git"
 url="https://github.com/oklopfer/unicorn.git"
-depends=("xfwm4" "tint2" "feh" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4")
+depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4")
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-mobile"
 replace=("rhino-xfce4-mobile-config-git" "rhino-linux-xfce4-config-git" "unicorn-desktop" "unicorn-desktop-git")
@@ -23,15 +23,22 @@ build() {
   sudo mkdir -p "${pkgdir}/usr/share/onboard"
   sudo mkdir -p "${pkgdir}/etc/skel/.lightpad"
   sudo mkdir -p "${pkgdir}/etc/skel/.local/share"
+  sudo mkdir -p "${pkgdir}/etc/xdg/unicorn"
+  sudo mkdir -p "${pkgdir}/usr/share/xsessions"
+  sudo mkdir -p "${pkgdir}/usr/share/lightdm.conf.d"
 }
 
 install() {
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
-  for i in xfce4 plank autostart ulauncher; do
+  for i in plank autostart ulauncher; do
     sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
+  sudo cp -r etc/xdg/unicorn/* "${pkgdir}/etc/xdg/unicorn"
+  sudo cp -r xfce4 "${pkgdir}/etc/xdg/unicorn"
+  sudo cp usr/share/xsessions/* "${pkgdir}/usr/share/xsessions"
+  sudo cp usr/share/lightdm.conf.d/* "${pkgdir}/usr/share/lightdm.conf.d"
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   sudo cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
   sudo cp docks.ini "${pkgdir}/usr/share/plank/"
@@ -50,7 +57,7 @@ postinst() {
   if ! [[ -d "${homedir}/.config" ]]; then
     mkdir -p "${homedir}/.config"
   fi
-  for i in xfce4 plank autostart ulauncher; do
+  for i in plank autostart ulauncher; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
