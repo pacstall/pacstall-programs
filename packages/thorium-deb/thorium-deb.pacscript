@@ -1,14 +1,13 @@
 name="thorium-deb"
 gives="thorium-browser"
+version="114.0.5735.134"
 if [[ ${CARCH} == "arm64" ]]; then
-  version="111.0.5563.111"
-  url="https://github.com/Alex313031/Thorium-Special/releases/download/M${version}_2/${gives}_${version}-1_${CARCH}.deb"
-  hash="bddfcf067ee311bed5356887e8d52968b8b69871ab82d48e7ec9379821075546"
+  url="https://github.com/Alex313031/Thorium-Special/releases/download/M${version}-1/${gives}_${version}_${CARCH}.deb"
+  hash="dfebb2acadf3018875e1aab8e5b0d61e533953a87fff7c441ed8a33dd1c5a6f3"
   arch=("arm64")
 else
-  version="112.0.5615.166"
-  url="https://github.com/Alex313031/thorium/releases/download/M${version}/thorium-browser_${version}-1_${CARCH}.deb"
-  hash="74ea7802877e5c8375a9386e185e5bbd057adb56fcde09bc472ed90cc3ef57ed"
+  url="https://github.com/Alex313031/thorium/releases/download/M${version}/${gives}_${version}_${CARCH}.deb"
+  hash="9fc0ec9f690d9b9fec19e8f454a05da609e8bc7203790575f940f0292b71cf9a"
   arch=('amd64')
 fi
 maintainer="Oren Klopfer <oren@taumoda.com>"
