@@ -8,6 +8,6 @@ pkgver() {
 }
 version="$(pkgver)"
 
-pacakge() {
+package() {
   sudo install -Dm644 ./* -t "${pkgdir}/usr/share/plymouth/themes/rhino-spinner/"
 }
