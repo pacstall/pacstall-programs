@@ -7,11 +7,11 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="libressl"
-version="3.6.2"
+version="3.7.3"
 url="https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-${version}.tar.gz"
 description="LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014, with goals of modernizing the codebase, improving security, and applying best practice development processes."
 breaks=("${name}-git" "${name}-bin")
-hash="4be80fff073746cf50b4a8e5babe2795acae98c6b132a9e02519b445dfbfd033"
+hash="7948c856a90c825bd7268b6f85674a8dcd254bae42e221781b24e3f8dc335db3"
 repology=("project: libressl")
 
 prepare() {
