@@ -8,7 +8,7 @@ description="Graphical UI to help manage Linux overlays"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 repology=("project: goverlay")
 
-pacakge() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/bin/" "${pkgdir}/opt/goverlay/" "${pkgdir}/usr/share/applications/" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/"
   echo -e "#!/bin/sh\nQT_QPA_PLATFORM=xcb mangohud --dlsym /opt/goverlay/goverlay" | sudo tee "${pkgdir}/usr/bin/goverlay" > /dev/null
   sudo chmod +x "${pkgdir}/usr/bin/goverlay"

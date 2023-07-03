@@ -15,7 +15,7 @@ prepare() {
   sudo mkdir -p "${pkgdir}/usr/share/icons/"
 }
 
-pacakge() {
+package() {
   sudo install -Dm755 discord.desktop "${pkgdir}/usr/share/applications/discord.desktop"
   sudo install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord.png"
   sudo cp -R ./* "${pkgdir}/usr/share/discord/"

@@ -11,7 +11,7 @@ description="Vim fork maintained by the community"
 repology=("project: neovim")
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 
-pacakge() {
+package() {
   sudo chmod +x nvim.appimage
   sudo install -Dm755 "nvim.appimage" "${pkgdir}/usr/bin/nvim"
 }

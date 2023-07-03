@@ -23,7 +23,7 @@ build() {
   make -j"${NCPU}"
 }
 
-pacakge() {
+package() {
   cd build/
   sudo make install DESTDIR="${pkgdir}"
 }

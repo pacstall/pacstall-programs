@@ -9,7 +9,7 @@ arch=('amd64')
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 repology=("project: shellcheck")
 
-pacakge() {
+package() {
   sudo install -Dm644 shellcheck "${pkgdir}/usr/bin/shellcheck"
   sudo install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
   sudo chmod +x "${pkgdir}/usr/bin/shellcheck"

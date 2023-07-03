@@ -12,7 +12,7 @@ build() {
   make -j"${NCPU}"
 }
 
-pacakge() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
   sudo install -Dm644 COPYING -t "${pkgdir}/usr/share/licenses/${name}"
   sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${name}"

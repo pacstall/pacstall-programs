@@ -9,7 +9,7 @@ description="A fully integrated 3D graphics creation suite"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 repology=("project: blender")
 
-pacakge() {
+package() {
   cd ..
   sudo mkdir -p "${pkgdir}/opt/blender/"
   sudo mkdir -p "${pkgdir}/usr/share/applications/"

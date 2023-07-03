@@ -15,7 +15,7 @@ build() {
   make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"${NCPU}"
 }
 
-pacakge() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
 }
 # vim:set ft=sh ts=2 sw=2 et:

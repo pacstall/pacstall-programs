@@ -13,6 +13,6 @@ build() {
   sudo meson build --prefix="${pkgdir}/usr"
 }
 
-pacakge() {
+package() {
   sudo ninja -j"${NCPU}" -C build install
 }

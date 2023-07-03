@@ -9,6 +9,6 @@ pkgver() {
 }
 version="$(pkgver)"
 
-pacakge() {
+package() {
   sudo install -Dm755 yafetch "${pkgdir}/usr/bin/yafetch"
 }

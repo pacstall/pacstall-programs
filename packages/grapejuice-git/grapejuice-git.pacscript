@@ -11,7 +11,7 @@ pkgver() {
 }
 version="$(pkgver)"
 
-pacakge() {
+package() {
   export PYTHONPATH="${PWD}/src"
   python3 -m grapejuice_packaging linux_package || python -m grapejuice_packaging linux_package
   cd dist/linux_package

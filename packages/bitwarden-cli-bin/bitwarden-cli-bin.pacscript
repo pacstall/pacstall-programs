@@ -10,6 +10,6 @@ description="Bitwarden's command-line interface - Binary"
 hash="6df2bf2a7015e5b603bfa1bfd53c71373140bb43061f31489b005d56494b1008"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 
-pacakge() {
+package() {
   sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
 }

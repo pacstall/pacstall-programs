@@ -22,7 +22,7 @@ prepare() {
   fi
 }
 
-pacakge() {
+package() {
   sudo install -Dm644 amfora.png "${pkgdir}/usr/share/pixmaps/amfora.png"
   sudo install -Dm644 amfora.desktop "${pkgdir}/usr/share/applications/amfora.desktop"
   sudo install -Dm755 "amfora_${version}_linux_64-bit" "${pkgdir}/usr/bin/${pkgname}"

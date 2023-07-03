@@ -15,6 +15,6 @@ build() {
   cargo build -j"${NCPU}" --release
 }
 
-pacakge() {
+package() {
   sudo install -Dm755 target/release/exa -t "${pkgdir}/usr/bin"
 }

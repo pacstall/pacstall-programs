@@ -6,7 +6,7 @@ arch=('amd64')
 description="Minimal zero-dependency utility for testing your internet download speed from terminal"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 
-pacakge() {
+package() {
   sudo mv fast_linux_amd64 fast
   sudo chmod +x fast
   sudo mkdir -p "${pkgdir}/fast/usr/bin"

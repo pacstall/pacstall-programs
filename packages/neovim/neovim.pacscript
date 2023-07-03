@@ -13,7 +13,7 @@ build() {
   make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"${NCPU}"
 }
 
-pacakge() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
   sudo install -Dm644 "LICENSE.txt" -t "${pkgdir}/usr/share/licenses/${pkgname}"
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
