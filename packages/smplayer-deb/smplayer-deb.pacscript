@@ -1,5 +1,5 @@
 name="smplayer-deb"
-name="smplayer"
+gives="smplayer"
 repology=("project: smplayer")
 version="23.6.0"
 url="https://github.com/smplayer-dev/smplayer/releases/download/v${version}/smplayer_${version}-1.debian-buster_amd64.deb"
