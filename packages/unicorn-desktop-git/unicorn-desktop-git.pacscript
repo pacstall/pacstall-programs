@@ -21,22 +21,23 @@ build() {
   sudo mkdir -p "${pkgdir}/usr/share/applications"
   sudo mkdir -p "${pkgdir}/usr/share/plank/themes"
   sudo mkdir -p "${pkgdir}/etc/skel/.lightpad"
-  sudo mkdir -p "${pkgdir}/etc/xdg/unicorn"
+  sudo mkdir -p "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo mkdir -p "${pkgdir}/usr/share/xsessions"
   sudo mkdir -p "${pkgdir}/usr/share/lightdm.conf.d"
   sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/scalable/places"
 }
 
 install() {
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
-  for i in plank autostart ulauncher; do
+  for i in xfce4 plank autostart ulauncher; do
     sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
   sudo install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
-  sudo install -Dm755 "xinitrc" -t "${pkgdir}/etc/xdg/unicorn"
-  sudo cp -r xfce4 "${pkgdir}/etc/xdg/unicorn"
+  sudo install -Dm755 "xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
+  sudo cp -r xfce4 "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
   sudo install -Dm644 "40-unicorn.conf" -t "${pkgdir}/usr/share/lightdm.conf.d"
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
@@ -46,6 +47,7 @@ install() {
   sudo cp icons/* "${pkgdir}/usr/share/icons"
   sudo cp applications/* "${pkgdir}/usr/share/applications"
   sudo cp lightpad/* "${pkgdir}/etc/skel/.lightpad"
+  sudo install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
 }
