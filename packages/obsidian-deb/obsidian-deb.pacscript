@@ -1,9 +1,9 @@
 name="obsidian-deb"
 gives="obsidian"
-version="1.3.4"
+version="1.3.5"
 url="https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/obsidian_${version}_amd64.deb"
 description="Powerful and extensible knowledge base editor that uses markdown"
-hash="61fb80d4226ef5a4b2320b89c3563a2a79f680171f565cd35f13f5b03d2fcecc"
+hash="7c668295015aa743ce350de233569fa0e6e807e1e736193be9192dbec16919a2"
 maintainer="Hepno <me@hepno.dev>"
 arch=("amd64")
 repology=("project: obsidian")
