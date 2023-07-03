@@ -1,5 +1,5 @@
 name="zoho-notebook-deb"
-gives="zoho-notebook"
+gives="notebook"
 version="2.1.0"
 replace=("notebook")
 url="https://downloads.zohocdn.com/notebooklinux-desktop/Notebook-${version}.deb"
