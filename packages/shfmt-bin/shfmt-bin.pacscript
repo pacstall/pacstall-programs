@@ -8,12 +8,12 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="shfmt-bin"
 pkgname="shfmt"
-version="3.6.0"
+version="3.7.0"
 url="https://github.com/mvdan/sh/releases/download/v${version}/shfmt_v${version}_linux_amd64"
 description="Format shell programs"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
-hash="5741a02a641de7e56b8da170e71a97e58050d66a3cf485fb268d6a5a8bb74afb"
+hash="0264c424278b18e22453fe523ec01a19805ce3b8ebf18eaf3aadc1edc23f42e3"
 arch=('amd64')
 repology=("project: ${pkgname}")
 

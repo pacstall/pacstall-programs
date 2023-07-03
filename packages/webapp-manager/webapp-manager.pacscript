@@ -1,10 +1,10 @@
 name="webapp-manager"
-version="1.3.0"
+version="1.3.2"
 build_depends=("gettext")
 depends=("gir1.2-xapp-1.0" "python3" "python3-bs4" "python3-configobj" "python3-gi" "python3-setproctitle" "python3-tldextract" "xapps-common" "python3-pil" "libglib2.0-bin")
 description="Run websites as if they were apps"
 repology=("project: webapp-manager")
-hash="8188846ea644a69b143b573dcd5d1c1472d0e968996fb3d3bb1ce6b1ead81658"
+hash="42fff2dd90ebb24669cc4ca4dec36e05c46ac8c112d2b3fd05b1f8babdf05b8d"
 incompatible=("*:jammy" "*:bullseye")
 url="https://github.com/linuxmint/webapp-manager/archive/refs/tags/${version}.tar.gz"
 maintainer="Zahrun <Zahrun@github.com>"
