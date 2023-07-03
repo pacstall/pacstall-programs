@@ -10,12 +10,12 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="nushell-bin"
 pkgname="nushell"
-version="0.81.0"
+version="0.82.0"
 description="A new type of shell"
 url="https://github.com/nushell/nushell/releases/download/${version}/nu-${version}-x86_64-unknown-linux-gnu.tar.gz"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 arch=('amd64')
-hash="2658ec1c88008a84f2b6082ada05a87bc84a531d0dc5744eab6f1bb040247527"
+hash="90f3e6f093a9b69dc05d7e61a3f7d246b31be3bc8987dfe2f67f941fd8b7282d"
 repology=("project: nushell")
 
 install() {

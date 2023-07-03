@@ -1,9 +1,8 @@
 name="smplayer-deb"
-pkgname="smplayer" # if this is a -git, -bin, etc. package, this would be the package name without extension
+gives="smplayer"
 repology=("project: smplayer")
-version="22.7.0"
+version="23.6.0"
 url="https://github.com/smplayer-dev/smplayer/releases/download/v${version}/smplayer_${version}-1.debian-buster_amd64.deb"
 description="Complete front-end for MPlayer/MPV"
-hash="b85ffc5c6d622593d3c0153a0f66defe786fef9659a0b818a101247f0d7a6a21"
+hash="685030e2e3ee9ad5d95dc266b90c402506b9fe5b193ff05411955ed1db8bedbb"
 arch=('amd64')
-maintainer="pure-cheekbones <niabcdefg@outlook.com>"
