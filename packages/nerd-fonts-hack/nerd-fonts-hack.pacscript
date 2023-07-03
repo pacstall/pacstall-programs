@@ -9,7 +9,7 @@ description="Patched font Hack from nerd-fonts library"
 hash="1f031b6d08d51f4830eacd00853dddc7fbd4ae0a05e169f2c13f3037dd3359b3"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 
-install() {
+pacakge() {
   sudo install -d "${pkgdir}"/usr/share/fonts/TTF
   sudo rm "${SRCDIR:?}/"*"Windows Compatible.ttf"
   sudo install -Dm644 "${SRCDIR}/"*.ttf "${pkgdir}"/usr/share/fonts/TTF

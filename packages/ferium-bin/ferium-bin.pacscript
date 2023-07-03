@@ -9,7 +9,7 @@ hash="e1d7e89c529581e793c887abfeddd89e68024c777f336e41f6623777cff6f05c"
 description="Fast and multi-source CLI program for managing Minecraft mods"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 
-install() {
+pacakge() {
   sudo install -Dm755 ferium "${pkgdir}/usr/bin/${pkgname}"
   # install shell completions
   "${pkgdir}/usr/bin/${pkgname}" complete bash | sudo install -Dm644 /dev/stdin "${pkgdir}/usr/share/bash-completion/completions/ferium"

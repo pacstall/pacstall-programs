@@ -8,7 +8,7 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+pacakge() {
   sudo install -Dm644 rhino-blur.png -t "${pkgdir}/usr/share/pixmaps/"
   sudo install -Dm644 lightdm-gtk-greeter.conf -t "${pkgdir}/etc/lightdm/"
 }

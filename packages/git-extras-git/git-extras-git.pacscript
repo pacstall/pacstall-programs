@@ -13,6 +13,6 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+pacakge() {
   sudo make DESTDIR="${pkgdir}" PREFIX=/usr SYSCONFDIR=/etc install
 }

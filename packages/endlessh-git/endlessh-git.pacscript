@@ -23,7 +23,7 @@ build() {
   make -j"${NCPU}"
 }
 
-install() {
+pacakge() {
   sudo make install DESTDIR="${pkgdir}"
   sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${pkgname}"
   sudo install -Dm644 UNLICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"

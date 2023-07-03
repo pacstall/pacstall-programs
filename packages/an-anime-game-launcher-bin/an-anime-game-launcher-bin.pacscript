@@ -18,7 +18,7 @@ optdepends=(
   #"reshade-shaders-git: Required by vkBasalt config files (install this and vkbasalt)"
 )
 
-install() {
+pacakge() {
   sudo chmod +x "anime-game-launcher"
   sudo install -Dm755 "anime-game-launcher" "${pkgdir}/usr/bin/${pkgname}"
   sudo mkdir -p "${pkgdir}/usr/share/applications"

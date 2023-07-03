@@ -9,7 +9,7 @@ maintainer="Elsie19 <hwengerstickel@pm.me>"
 arch=('amd64')
 hash="a2e6b307fa944a9ca9153c3dbe6d4a3c30e6f86d65dea3273f3873bb765246e0"
 
-install() {
+pacakge() {
   cd ..
   sudo mkdir -p "${pkgdir}/etc/firefox"
   sudo cp -r firefox/* "${pkgdir}/etc/firefox"

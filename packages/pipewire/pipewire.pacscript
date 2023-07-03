@@ -17,7 +17,7 @@ build() {
   ninja -C builddir
 }
 
-install() {
+pacakge() {
   cd builddir/
   sudo DESTDIR="${pkgdir}" meson install
 }

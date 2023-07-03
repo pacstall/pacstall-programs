@@ -15,6 +15,6 @@ build() {
   cargo build --release
 }
 
-install() {
+pacakge() {
   sudo install -Dm755 target/release/shellharden "${pkgdir}"/usr/bin/shellharden
 }
