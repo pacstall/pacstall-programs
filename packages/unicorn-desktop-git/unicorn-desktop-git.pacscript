@@ -23,7 +23,7 @@ build() {
   sudo mkdir -p "${pkgdir}/etc/skel/.lightpad"
   sudo mkdir -p "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo mkdir -p "${pkgdir}/usr/share/xsessions"
-  sudo mkdir -p "${pkgdir}/usr/share/lightdm.conf.d"
+  sudo mkdir -p "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
   sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/scalable/places"
 }
@@ -39,7 +39,7 @@ install() {
   sudo install -Dm755 "xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo cp -r xfce4 "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
-  sudo install -Dm644 "40-unicorn.conf" -t "${pkgdir}/usr/share/lightdm.conf.d"
+  sudo install -Dm644 "40-unicorn.conf" -t "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   sudo cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
   sudo cp docks.ini "${pkgdir}/usr/share/plank/"
