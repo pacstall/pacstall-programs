@@ -14,7 +14,7 @@ prepare() {
   gzip -9n ani-cli.1
 }
 
-install() {
+pacakge() {
   sudo install -Dm755 "./ani-cli" "${pkgdir}/usr/bin/ani-cli"
   sudo install -Dm644 "./ani-cli.1.gz" "${pkgdir}/usr/share/man/man1/ani-cli.1.gz"
 }

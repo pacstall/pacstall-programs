@@ -9,7 +9,7 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+pacakge() {
   sudo mkdir -p "${pkgdir}/etc/skel/.config/Kvantum"
   sudo mv KvRhino{,Dark} "${pkgdir}/etc/skel/.config/Kvantum"
 }

@@ -9,7 +9,7 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+pacakge() {
   sudo mkdir -p "${pkgdir}/usr/share/icons"
   sudo cp -r 'Quintom_Ink Cursors/Quintom_Ink' "${pkgdir}/usr/share/icons"
   sudo cp -r 'Quintom_Snow Cursors/Quintom_Snow' "${pkgdir}/usr/share/icons"
