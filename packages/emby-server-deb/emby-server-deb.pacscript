@@ -1,10 +1,10 @@
 name="emby-server-deb"
-version="4.7.11.0"
+version="4.7.13.0"
 repology=("project: emby")
 gives="emby-server"
 breaks=("${gives}" "${gives}-bin" "${gives}-git")
 url="https://github.com/MediaBrowser/Emby.Releases/releases/download/${version}/${name}_${version}_amd64.deb"
-hash="8f04b6def1dc8d824dcb915d10fb69ea8c9d26aa1124fbf8d21ed496fba43b08"
+hash="de95964faa185782f3dc6df5f8894f02dab631fbd9aec283fb72829617b13cea"
 arch=('amd64')
 description="Emby brings together your personal videos, music, photos, and live television"
 maintainer="Warofzen <warofzen1@protonmail.com>"
