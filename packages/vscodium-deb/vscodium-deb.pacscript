@@ -1,12 +1,12 @@
 name="vscodium-deb"
 gives="codium"
 breaks=("${gives}")
-version="1.78.2.23132"
+version="1.79.2.23166"
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="37b2ae2c9b040f9e24d54b8d853190428b9c1b2ff5f6b0a78a69686dd0712dfb"
+  hash="7fbee66cc710f59649d421f1c9b11f3614dfb00dc92b942ec4fa39a455310f2f"
   arch=('arm64')
 else
-  hash="5f8723d1f82b938780725a009c0c4f0f4cf41644800a122b1501b99d1eb0851a"
+  hash="42de82a96c93c9116b1da0e7f2d429bfe0a72a4d295763d5c0a0b9c1450c6d99"
   arch=('amd64')
 fi
 url="https://github.com/VSCodium/vscodium/releases/download/${version}/${gives}_${version}_${CARCH}.deb"
