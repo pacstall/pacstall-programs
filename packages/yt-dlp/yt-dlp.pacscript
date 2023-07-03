@@ -1,16 +1,25 @@
 name="yt-dlp"
 repology=("project: ${name}")
-version="2023.03.04"
+version="2023.06.22"
 url="https://github.com/${name}/${name}/archive/refs/tags/${version}.tar.gz"
 build_depends=("make" "pandoc" "zip" "python3-pytest" "python3-setuptools" "python3-pip")
 optdepends=("mpv: For downloading rstp streams")
 depends=("python3" "ffmpeg" "python3-mutagen" "python3-websockets" "python3-secretstorage" "python3-brotli" "python3-certifi" "python3-xattr" "atomicparsley" "rtmpdump")
 breaks=("${name}-git" "${name}-bin" "${name}")
 description="A youtube-dl fork with additional features and fixes"
-hash="5e5abfe78b8f92f8b8307231d1e7ed0e462407f4cd861b48a0278559612de9aa"
+hash="6eba89cbcac49b2dab21bbd9ad272c88fb1e97503c839b6fe72e99c02539940e"
+release="$(lsb_release -cs)"
+modern=("devel" "sid" "lunar" "bookworm" "mantic")
+
+# shellcheck disable=SC2076
+if [[ " ${modern[*]} " =~ " ${release} " ]]; then
+  pyhack=("--break-system-packages")
+else
+  pyhack=()
+fi
 
 prepare() {
-  sudo pip3 install --upgrade pycryptodomex
+  sudo pip3 install --upgrade pycryptodomex "${pyhack[@]}"
 }
 
 build() {
@@ -23,5 +32,5 @@ install() {
 }
 
 removescript() {
-  yes | sudo pip3 uninstall pycryptodomex
+  yes | sudo pip3 uninstall pycryptodomex "${pyhack[@]}"
 }
