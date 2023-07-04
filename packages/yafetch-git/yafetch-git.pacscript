@@ -1,7 +1,7 @@
 name="yafetch-git"
 gives="yafetch"
 breaks=("${gives}-deb" "${gives}-bin" "${gives}-app" "${gives}-git")
-url="https://github.com/Henryws/yafetch.git"
+url="https://github.com/Elsie19/yafetch.git"
 description="Yet another fetch tool"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 pkgver() {
