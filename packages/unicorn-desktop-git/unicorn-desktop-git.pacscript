@@ -37,6 +37,7 @@ install() {
   done
   sudo install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
   sudo install -Dm755 "unicorn-session" -t "${pkgdir}/usr/bin"
+  sudo install -Dm755 ".xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo install -Dm755 "xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo cp -r xfce4 "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
