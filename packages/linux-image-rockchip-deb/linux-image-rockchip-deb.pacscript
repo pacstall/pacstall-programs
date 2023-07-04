@@ -1,9 +1,9 @@
 name="linux-image-rockchip-deb"
 version="6.3"
-pointver=".9"
+pointver=".11"
 gives="linux-image-${version}-rockchip"
 url="https://repo.mobian-project.org/pool/main/l/linux-${version}-rockchip/${gives}_${version}${pointver}%2Brockchip-1_arm64.deb"
-hash="df578a948b6d8374f3367a2072d81b1f18bf906971263f3b664ba425a80e4ae7"
+hash="5f1e8fbfbc5b1e2e4c3a35103744c146b2e885fbab6b2ded3d526d677a168378"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 description="Linux kernel image files built for PineTab2 (Mobian kernel)"
 arch=('arm64')
