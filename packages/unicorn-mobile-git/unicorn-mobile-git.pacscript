@@ -1,6 +1,6 @@
 name="unicorn-mobile-git"
 url="https://github.com/oklopfer/unicorn.git"
-depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4")
+depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11")
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-mobile"
 replace=("rhino-xfce4-mobile-config-git" "rhino-linux-xfce4-config-git" "unicorn-desktop" "unicorn-desktop-git")
