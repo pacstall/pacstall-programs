@@ -1,9 +1,9 @@
 name="insomnia-deb"
 gives="insomnia"
-version="2023.3.0"
+version="2023.4.0"
 arch=("amd64")
 url="https://github.com/Kong/insomnia/releases/download/core%40${version}/Insomnia.Core-${version}.deb"
-hash="cc33cf95d13bbd55f020d2d1e41654166404aff9ed804d77e3c703cabfc0df1e"
+hash="eed91dd07689783742bd7d6dd57087aeb436df116b70cb32d67849244a7a9259"
 homepage="https://github.com/Kong/insomnia/"
 description="The open-source, cross-platform API client for GraphQL, REST, WebSockets and gRPC"
 maintainer="Diegiwg <diegiwg@gmail.com>"
