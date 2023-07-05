@@ -1,10 +1,10 @@
 name="protonup-qt-app"
 pkgname="net.davidotek.pupgui2"
-version="2.7.7"
+version="2.8.1"
 gives="protonup-qt"
 description="Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris"
 url="https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v${version}/ProtonUp-Qt-${version}-x86_64.AppImage"
-hash="7838b5dc3612e11b63de8bae851a044f50ad7380fba79d2486a5cd392048beda"
+hash="3faea5044cde979f82cb11eac50286f9d3c6152ff2f9d35f10d3d8c1a42684b8"
 arch=('amd64')
 maintainer="DavidoTek <54072917+DavidoTek@users.noreply.github.com>"
 
