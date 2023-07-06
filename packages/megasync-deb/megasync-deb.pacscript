@@ -19,6 +19,11 @@ case "${DISTRO#*:}" in
     distro_release="22.04"
     hash="69a0ef997f353ade109bfb74a58582e34d23574a23db69ee43a96685f4d2bdcf"
     ;;
+  trixie)
+    distro_base="Debian"
+    distro_release="testing"
+    hash="6a71b09fa3df1f4e1a98f1c89cb8ab4f5aa5e2a63a9e44f3baabaf089b98e483"
+    ;;
   bookworm)
     distro_base="Debian"
     distro_release="12"
