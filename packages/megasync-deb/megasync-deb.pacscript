@@ -1,8 +1,8 @@
 name="megasync-deb"
 gives="megasync"
 repology=("project: megasync")
-version="4.9.4"
-build_version="3.1"
+version="4.9.5"
+build_version="1.1"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
 incompatible=("debian:sid" "*:buster" "*:stretch" "*:jessie" "debian:testing" "*:bionic" "*:focal" "*:kinetic" "*:mantic")
@@ -21,7 +21,7 @@ case "${DISTRO#*:}" in
     ;;
   bookworm)
     distro_base="Debian"
-    distro_release="testing"
+    distro_release="12"
     hash="6fc4eda65d253bb42d4550e6a80fa0a6eda15978fe6dcebb61ff3e7a38c55096"
     ;;
   bullseye)
