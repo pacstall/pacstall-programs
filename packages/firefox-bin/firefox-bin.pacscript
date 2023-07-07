@@ -1,20 +1,20 @@
 name="firefox-bin"
 gives="firefox"
-version="114.0.1"
+version="115.0"
 repology=("project: ${gives}")
 url="https://download-installer.cdn.mozilla.net/pub/firefox/releases/${version}/linux-x86_64/en-US/firefox-${version}.tar.bz2"
 homepage='https://www.mozilla.org/en-US/firefox'
 description="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 arch=('amd64')
-hash="a2e6b307fa944a9ca9153c3dbe6d4a3c30e6f86d65dea3273f3873bb765246e0"
+hash="18c4c5aa3ad3e3773ab00576e317af17e831e8197b7297890bb5d7a3176fc396"
 
 package() {
   cd ..
-  sudo mkdir -p "${pkgdir}/etc/firefox"
-  sudo cp -r firefox/* "${pkgdir}/etc/firefox"
-  sudo chmod +x "${pkgdir}/etc/firefox/firefox"
-  sudo chmod +x "${pkgdir}/etc/firefox/firefox-bin"
+  sudo mkdir -p "${pkgdir}/lib/firefox"
+  sudo cp -r firefox/* "${pkgdir}/lib/firefox"
+  sudo chmod +x "${pkgdir}/lib/firefox/firefox"
+  sudo chmod +x "${pkgdir}/lib/firefox/firefox-bin"
   sudo mkdir -p "${pkgdir}/usr/share/applications/"
   echo '[Desktop Entry]
 Name=Firefox Stable
@@ -29,13 +29,13 @@ StartupNotify=true
 Actions=Private;
 
 [Desktop Action Private]
-Exec=/usr/bin/firefox --private-window %u
+Exec=/lib/firefox/firefox --private-window %u
 Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
 }
 
 postinst() {
-  sudo ln -sf "/etc/firefox/firefox" "/usr/bin/firefox"
-  sudo ln -sf "/etc/firefox/firefox-bin" "/usr/bin/firefox-bin"
+  sudo ln -sf "/lib/firefox/firefox" "/usr/bin/firefox"
+  sudo ln -sf "/lib/firefox/firefox-bin" "/usr/bin/firefox-bin"
 }
 
 removescript() {
