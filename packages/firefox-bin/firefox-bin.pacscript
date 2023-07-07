@@ -19,10 +19,10 @@ package() {
   echo '[Desktop Entry]
 Name=Firefox Stable
 Comment=Web Browser
-Exec=/etc/firefox/firefox %u
+Exec=/lib/firefox/firefox %u
 Terminal=false
 Type=Application
-Icon=/etc/firefox/browser/chrome/icons/default/default128.png
+Icon=/lib/firefox/browser/chrome/icons/default/default128.png
 Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
