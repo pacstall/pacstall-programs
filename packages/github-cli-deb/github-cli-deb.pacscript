@@ -12,5 +12,4 @@ if [[ ${CARCH} == arm64 ]]; then
  fi
 url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version}_linux_${CARCH}.deb"
 description="GitHub's official command line tool"
-arch=('amd64')
 repology=("project: github-cli")
