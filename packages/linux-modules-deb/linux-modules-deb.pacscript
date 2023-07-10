@@ -1,5 +1,5 @@
 name="linux-modules-deb"
-gives="linux-modules-6.5.0-060500rc1"
+gives="linux-modules-6.5.0-060500rc1-generic"
 version="6.5-rc1"
 buildver="6.5.0-060500rc1.202307092131"
 if [[ ${CARCH} == "arm64" ]]; then
