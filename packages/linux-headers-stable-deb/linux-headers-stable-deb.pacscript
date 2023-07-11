@@ -1,10 +1,10 @@
 name="linux-headers-stable-deb"
-gives="linux-headers-6.4.0-060400"
-version="6.4"
-buildver="6.4.0-060400.202306271339"
+gives="linux-headers-6.4.3-060403"
+version="6.4.3"
+buildver="6.4.3-060403.202307110536"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_all.deb"
 description="Ubuntu Linux stable kernel (Headers)"
-hash="b57f5b5b4fc6648a9e78d91684f813fab9b953108a4d63088394dd6703cb5366"
+hash="7e4435bf35104ec9220107469519a99be678cdf1a26253b8a3c0ae1fc73d7165"
 arch=('any')
 maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: linux" "repo: distrowatch")
