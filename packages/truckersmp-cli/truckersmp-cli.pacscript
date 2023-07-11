@@ -22,7 +22,7 @@ build() {
   python3 setup.py build
 }
 
-install() {
+package() {
   sudo python3 setup.py install --root="${pkgdir}" --optimize=1 --skip-build
 
   sudo install -Dm644 "${pkgname}.bash" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
