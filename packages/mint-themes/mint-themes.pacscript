@@ -8,8 +8,8 @@ repology=("project: ${gives}")
 maintainer="badlydrawnface <bdface@proton.me>"
 build_depends=("python3" "sassc")
 optdepends=(
-    "mint-y-icons: Complementary icons for Mint-Y themes."
-    "mint-x-icons: Complementary icons for Mint-X themes."
+  "mint-y-icons: Complementary icons for Mint-Y themes."
+  "mint-x-icons: Complementary icons for Mint-X themes."
 )
 
 build() {
