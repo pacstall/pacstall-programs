@@ -17,6 +17,7 @@ build() {
   make clean
   make -j"${NCPU}"
 }
+
 package() {
   cd "${srcdir}/${pkgname}"
   sudo cp -r usr "${pkgdir}/"
