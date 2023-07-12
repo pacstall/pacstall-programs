@@ -15,8 +15,8 @@ optdepends=(
 )
 build() {
   cd "${srcdir}/${pkgname}"
-  sudo make clean
-  sudo make
+  make clean
+  make -j"${NCPU}"
 }
 package() {
   cd "${srcdir}/${pkgname}"
