@@ -11,6 +11,7 @@ optdepends=(
     "mint-y-icons: Complementary icons for Mint-Y themes."
     "mint-x-icons: Complementary icons for Mint-X themes."
 )
+
 build() {
   cd "${srcdir}/${pkgname}"
   make clean
