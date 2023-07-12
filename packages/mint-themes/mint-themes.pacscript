@@ -1,5 +1,4 @@
 name="mint-themes"
-gives="mint-themes"
 version=2.1.5
 repology=("project: mint-themes")
 url="http://packages.linuxmint.com/pool/main/m/mint-themes/mint-themes_2.1.5.tar.xz"
