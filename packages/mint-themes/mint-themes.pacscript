@@ -18,6 +18,5 @@ build() {
 }
 
 package() {
-  cd "${srcdir}/${pkgname}"
   sudo cp -r usr "${pkgdir}/"
 }
