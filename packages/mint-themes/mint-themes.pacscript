@@ -13,7 +13,6 @@ optdepends=(
 )
 
 build() {
-  cd "${srcdir}/${pkgname}"
   make clean
   make -j"${NCPU}"
 }
