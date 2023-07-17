@@ -15,11 +15,6 @@ build() {
 
 package() {
   sudo make install DESTDIR="${pkgdir}"
-  sudo install -Dm644 "LICENSE.txt" -t "${pkgdir}/usr/share/licenses/${pkgname}"
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
-}
-
-removescript() {
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-  sudo rm -rf "/usr/share/doc/${pkgname}"
+  sudo install -Dm644 "LICENSE.txt" -t "${pkgdir}/usr/share/licenses/${name}"
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
 }
