@@ -1,4 +1,4 @@
-name="microsoft-prod-repo"
+name="microsoft-prod-repo-deb"
 version="22.04"
 url="https://packages.microsoft.com/config/ubuntu/${version}/packages-microsoft-prod.deb"
 description="Apt repo configuration for packages.microsoft.com"
