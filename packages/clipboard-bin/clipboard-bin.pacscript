@@ -17,7 +17,7 @@ hash="d81f0b6d698332041ebeb388fd9ca49a839aad7102f0ac68365098aee78b57cc"
 arch=('amd64')
 repology=("project: clipboard")
 
-install() {
+package() {
   sudo install -Dm 755 "lib/libcbwayland.so" "${pkgdir}/usr/lib/libcbwayland.so"
   sudo install -Dm 755 "lib/libcbx11.so" "${pkgdir}/usr/lib/libcbx11.so"
 

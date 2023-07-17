@@ -11,7 +11,7 @@ build() {
   chmod +x fm6000.pl
 }
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/bin/"
   sudo cp fm6000.pl "${pkgdir}/usr/bin"
 }

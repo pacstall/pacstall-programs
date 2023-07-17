@@ -10,6 +10,6 @@ breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
 repology=("project: ${pkgname}")
 maintainer="charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>"
 
-install() {
+package() {
   sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"
 }

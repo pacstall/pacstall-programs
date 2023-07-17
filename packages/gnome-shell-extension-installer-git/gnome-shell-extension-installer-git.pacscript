@@ -6,7 +6,7 @@ url="https://github.com/brunelli/gnome-shell-extension-installer.git"
 maintainer="D-Brox <BroxZuka@protonmail.com>"
 depends=("curl" "perl" "dbus")
 
-install() {
+package() {
   sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
   sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${gives}"
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"

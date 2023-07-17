@@ -11,7 +11,7 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+package() {
   sudo pip3 install --upgrade --no-cache --force-reinstall cairocffi cffi xcffib
   sudo pip3 install dbus-next setuptools-scm setuptools
   sudo mkdir -p "${pkgdir}"/usr/share/xsessions

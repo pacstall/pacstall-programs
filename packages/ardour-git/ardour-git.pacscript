@@ -42,7 +42,7 @@ build() {
   ./waf build -v
 }
 
-install() {
+package() {
   sudo ./waf i18n --destdir="${pkgdir}"
   sudo ./waf install --destdir="${pkgdir}"
 

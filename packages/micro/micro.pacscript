@@ -14,7 +14,7 @@ build() {
   chmod +x "./micro"
 }
 
-install() {
+package() {
   sudo install -Dm644 micro "${pkgdir}/usr/bin/micro"
   tar -czf "micro.1.tar.gz" "micro.1"
   sudo install -Dm644 micro.1.tar.gz "${pkgdir}/usr/share/man/man1/micro.1.tar.gz"

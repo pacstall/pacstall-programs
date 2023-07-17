@@ -12,6 +12,6 @@ optdepends=(
   "podman: enable podman usage"
 )
 
-install() {
+package() {
   sudo ./install -P "${pkgdir}/usr"
 }

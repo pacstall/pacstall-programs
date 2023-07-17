@@ -17,7 +17,7 @@ breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="ea7e27af14245813b9412c4b0d3a18ab278eacaf07ea93fa2cbb9bea7ce3cd0e"
 repology=("project: neovide")
 
-install() {
+package() {
   sudo install -vDm755 "${pkgname}" -t "${pkgdir}/usr/bin"
 }
 # vim:set ft=sh ts=2 sw=2 et:

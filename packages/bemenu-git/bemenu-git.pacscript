@@ -22,7 +22,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "LICENSE-CLIENT" "LICENSE-LIB" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 

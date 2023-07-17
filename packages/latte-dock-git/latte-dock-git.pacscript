@@ -29,7 +29,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Master ..
 }
 
-install() {
+package() {
   # Install awesome
   cd build/
   sudo make install DESTDIR="${pkgdir}"

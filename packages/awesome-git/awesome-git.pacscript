@@ -30,7 +30,7 @@ build() {
   make -j"$(nproc)" DESTDIR="${pkgdir}"
 }
 
-install() {
+package() {
   # Install awesome
   sudo make install DESTDIR="${pkgdir}"
 }

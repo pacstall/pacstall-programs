@@ -8,7 +8,7 @@ arch=('amd64')
 description="A delightful AppImage package manager"
 maintainer="srevinsaju <hello@srev.in>"
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/bin"
   sudo cp zap-amd64 "${pkgdir}/usr/bin/zap"
   sudo chmod +x "${pkgdir}/usr/bin/zap"

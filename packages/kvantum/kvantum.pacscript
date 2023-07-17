@@ -14,7 +14,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   cd Kvantum/build
   sudo make install DESTDIR="${pkgdir}"
 }

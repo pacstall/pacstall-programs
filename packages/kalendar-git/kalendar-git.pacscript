@@ -19,7 +19,7 @@ build() {
   ninja -j"$(nproc)"
 }
 
-install() {
+package() {
   cd build || exit
   sudo cmake --install .
   sudo install -Dm644 "../LICENSES/"* -t "${pkgdir}/usr/share/licenses/${name}/"

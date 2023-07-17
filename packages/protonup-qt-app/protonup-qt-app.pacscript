@@ -8,7 +8,7 @@ hash="3faea5044cde979f82cb11eac50286f9d3c6152ff2f9d35f10d3d8c1a42684b8"
 arch=('amd64')
 maintainer="DavidoTek <54072917+DavidoTek@users.noreply.github.com>"
 
-install() {
+package() {
   sudo install -Dm755 "ProtonUp-Qt-${version}-x86_64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
   wget -q https://raw.githubusercontent.com/DavidoTek/ProtonUp-Qt/main/share/icons/hicolor/256x256/apps/net.davidotek.pupgui2.png
   sudo install -Dm644 "net.davidotek.pupgui2.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/${pkgname}.png"

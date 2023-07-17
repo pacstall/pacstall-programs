@@ -16,7 +16,7 @@ arch=('amd64')
 breaks=("${pkgname}-deb" "${pkgname}-bin" "${pkgname}-git")
 repology=("project: librewolf")
 
-install() {
+package() {
   # Install appimage
   sudo install -Dm755 "LibreWolf.x86_64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 

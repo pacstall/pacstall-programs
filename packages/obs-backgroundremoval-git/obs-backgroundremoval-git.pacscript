@@ -20,7 +20,7 @@ build() {
   cmake -DUSE_SYSTEM_ONNXRUNTIME=ON -DCMAKE_INSTALL_PREFIX:PATH="${pkgdir}"/usr .. > /dev/null && cmake --build . -j"$(nproc)" > /dev/null
 }
 
-install() {
+package() {
   cd build || exit
   sudo cmake --install . > /dev/null
   sudo mkdir -p "${pkgdir}"/usr/lib/x86_64-linux-gnu/obs-plugins/

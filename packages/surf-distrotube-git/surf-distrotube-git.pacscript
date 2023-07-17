@@ -18,7 +18,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
   sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"

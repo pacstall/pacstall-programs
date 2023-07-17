@@ -15,7 +15,7 @@ breaks=("${name}-bin" "${name}-git" "${name}-deb" "${name}-app")
 hash="858483deb05817c8938c1380d66f93bd4bbc052a7cabab883145e2d31c28fdd5"
 repology=("project: fennel")
 
-install() {
+package() {
   # Install binary
   sudo install -Dm755 "fennel-${version}" "${pkgdir}/usr/bin/${name}"
 }

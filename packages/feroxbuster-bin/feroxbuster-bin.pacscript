@@ -11,7 +11,7 @@ arch=('amd64')
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-git")
 repology=("project: ${pkgname}")
 
-install() {
+package() {
   # Install bin
   sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
 

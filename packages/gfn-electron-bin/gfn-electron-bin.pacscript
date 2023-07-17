@@ -10,7 +10,7 @@ gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
 depends=("libva2" "libva-glx2" "libva-drm2" "libva-wayland2" "libva-x11-2")
 
-install() {
+package() {
   # Get icon from github and install it
   wget -q "https://raw.githubusercontent.com/hmlendea/geforcenow-electron/master/icon.png"
   sudo install -Dm644 icon.png "${pkgdir}/usr/share/pixmaps/nvidia.png"

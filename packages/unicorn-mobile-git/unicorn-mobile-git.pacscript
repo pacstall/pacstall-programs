@@ -30,7 +30,7 @@ build() {
   sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/scalable/places"
 }
 
-install() {
+package() {
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install

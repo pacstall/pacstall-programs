@@ -11,7 +11,7 @@ arch=('amd64')
 repology=("project: firefox" "visiblename: firefox-developer-edition")
 __icon_url="https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
 
-install() {
+package() {
   cd ..
   # Make dirs and assign permissions
   sudo mkdir -p "${pkgdir}/opt/firefox-developer-edition"

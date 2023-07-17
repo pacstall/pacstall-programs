@@ -26,7 +26,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   sudo install -D "${name}" "${pkgdir}/usr/bin/${name}"
 }
 

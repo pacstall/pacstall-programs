@@ -9,7 +9,7 @@ build() {
   python3 ./waf-light build --make-waf --tools='compat,compat15,ocaml,go,cython,scala,erlang,cuda,gcj,boost,pep8,eclipse'
 }
 
-install() {
+package() {
   sudo install -Dm755 "waf" "${pkgdir}/usr/bin/waf"
 }
 

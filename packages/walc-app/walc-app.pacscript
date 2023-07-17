@@ -14,7 +14,7 @@ url="https://github.com/cstayyab/WALC/releases/download/v${version}/${pkgname}.A
 hash="6c1e5c004e9c4bc5a8cf15837ce0e6c884fb3ace6397aa6aa95a6738c1960560"
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-git" "${pkgname}-deb")
 
-install() {
+package() {
   # Install binary
   sudo install -Dm755 "${pkgname}.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 }

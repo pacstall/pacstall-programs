@@ -13,6 +13,6 @@ prepare() {
   sudo mkdir -p "${pkgdir}/usr/bin"
 }
 
-install() {
+package() {
   sudo install -Dm755 ./paconvert "${pkgdir}/usr/bin/paconvert"
 }

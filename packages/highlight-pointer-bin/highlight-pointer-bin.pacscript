@@ -9,7 +9,7 @@ hash="82ad3845ef9ec3626ab1c0fad67614d5c61b26a2bf4e96b669e2a78e0395cb62"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-git")
 repology=("project: ${pkgname}")
 
-install() {
+package() {
   # Install bin
   sudo install -Dm755 "highlight-pointer" "${pkgdir}/usr/bin/${pkgname}"
 }

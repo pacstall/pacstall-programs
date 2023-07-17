@@ -8,6 +8,6 @@ hash="14c4e6cc012430a65330d532cdf945a5c1bf38ea098368acabe9578c69625008"
 repology=("project: telegram-desktop")
 maintainer="Diegiwg <diegiwg@gmail.com>"
 
-install() {
+package() {
   sudo install -Dm755 "Telegram" "${pkgdir}/usr/bin/${gives}"
 }

@@ -17,7 +17,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   sudo install -Dm755 "./grub-customizer" "${pkgdir}/usr/bin/grub-customizer"
   sudo install -Dm755 "./misc/grub-customizer.desktop" "${pkgdir}/usr/share/applications/grub-customizer.desktop"
   sudo install -Dm644 "./misc/manpage.gz" "${pkgdir}/usr/share/man/man1/grub-customizer.1.gz"

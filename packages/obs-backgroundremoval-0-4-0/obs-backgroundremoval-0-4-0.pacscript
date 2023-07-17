@@ -30,7 +30,7 @@ build() {
   cmake -DobsIncludePath=/usr/include/obs -DCMAKE_INSTALL_PREFIX:PATH="${pkgdir}"/usr .. > /dev/null && cmake --build . -j"$(nproc)" > /dev/null
 }
 
-install() {
+package() {
   cd build || exit
   sudo cmake --install . > /dev/null
   sudo install -Dm644 "../LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"

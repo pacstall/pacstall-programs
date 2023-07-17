@@ -9,7 +9,7 @@ maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 hash="d819065a45d29d53646490fbd8ca45dbcaa3d544bdbc6da4494377460ddf6b79"
 url="https://download-cdn.jetbrains.com/toolbox/${pkgname}-${version}.tar.gz"
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mv "./${pkgname}" "${pkgdir}/usr/bin"
 }

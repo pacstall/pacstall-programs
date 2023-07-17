@@ -19,6 +19,6 @@ build() {
   ninja -C builddir
 }
 
-install() {
+package() {
   sudo DESTDIR="${pkgdir}" ninja -C builddir install -j"$(nproc)"
 }

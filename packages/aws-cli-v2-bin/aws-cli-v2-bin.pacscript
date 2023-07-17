@@ -10,7 +10,7 @@ repology=("project: awscli")
 arch=('amd64')
 hash="f2dc1c44b98cb835d7f5200e9b4edb3cd959a8c22249c616d010d698d2706a8b"
 
-install() {
+package() {
   sudo ./install --install-dir "${pkgdir}/usr/local/aws-cli" --bin-dir "/usr/local/bin"
 
   # bash autocompletion

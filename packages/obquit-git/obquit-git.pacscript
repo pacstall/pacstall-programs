@@ -10,7 +10,7 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+package() {
   # Install obquit
   sudo python3 setup.py install --root="${pkgdir}"
 }

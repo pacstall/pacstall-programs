@@ -6,7 +6,7 @@ url="https://github.com/pipeseroni/${pkgname}/archive/v${version}.tar.gz"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="532976dd8dc2d98330c45a8bcb6d7dc19e0b0e30bba8872dcce352361655a426"
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 

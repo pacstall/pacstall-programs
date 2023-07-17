@@ -10,6 +10,6 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
 }

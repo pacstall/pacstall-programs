@@ -10,7 +10,7 @@ description="Platform independent remote access to personal computers and other 
 hash="96a7ded2144ecdaff381c34e49eee3275caaaac00847e91abf5e7783706c989c"
 arch=('amd64')
 
-install() {
+package() {
   # Binary
   sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
   # Polkit

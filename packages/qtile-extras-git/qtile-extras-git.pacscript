@@ -10,6 +10,6 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+package() {
   sudo python3 setup.py install --root="${pkgdir}"
 }

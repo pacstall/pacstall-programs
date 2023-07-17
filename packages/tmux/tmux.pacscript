@@ -19,7 +19,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
   sudo install -Dm755 example_tmux.conf "${pkgdir}/usr/share/tmux/example_tmux.conf"
   sudo install -Dm0644 COPYING "${pkgdir}/usr/share/licenses/tmux/LICENSE"

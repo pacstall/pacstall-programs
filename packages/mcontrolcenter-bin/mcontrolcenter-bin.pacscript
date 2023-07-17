@@ -8,7 +8,7 @@ description="MControlCenter is a Free and Open Source GNU/Linux application that
 hash="4c7afafd113c83c3e21520aa17b99d50b521e67ac3c1a0cbd9e3f703db601731"
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
 
-install() {
+package() {
   cd app || return 1
   sudo install -Dm755 "${gives}" "${pkgdir}/usr/bin/${gives}"
   sudo install -Dm644 "${gives}.desktop" "${pkgdir}/usr/share/applications/${gives}.desktop"

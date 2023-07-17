@@ -10,7 +10,7 @@ arch=('amd64')
 repology=("project: sidequest")
 __icon_url="https://sidequestvr.com/assets/images/score-logo.png"
 
-install() {
+package() {
   cd ..
   # Make dirs and assign permissions
   sudo mkdir -p "${pkgdir}/opt/sidequest"

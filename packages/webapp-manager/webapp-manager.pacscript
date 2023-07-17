@@ -22,7 +22,7 @@ build() {
   make all -s
 }
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}"
   sudo cp -r usr etc "${pkgdir}"
 }

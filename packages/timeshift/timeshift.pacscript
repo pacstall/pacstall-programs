@@ -15,6 +15,6 @@ build() {
   make -j"$(nproc)" all
 }
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
 }

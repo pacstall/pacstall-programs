@@ -20,7 +20,7 @@ build() {
   cd ..
 }
 
-install() {
+package() {
   cd build || return 1
   sudo make install DESTDIR="${pkgdir}"
   sudo rm -rf "${pkgdir}/usr/include"

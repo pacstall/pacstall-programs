@@ -15,7 +15,7 @@ prepare() {
   unzip ./* -d .
 }
 
-install() {
+package() {
   sudo install -d "${pkgdir}"/usr/share/fonts/TTF
   sudo install -Dm644 "${SRCDIR}"/*.ttf "${pkgdir}"/usr/share/fonts/TTF
   sudo install -Dm644 "${SRCDIR}"/OFL.txt "${pkgdir}"/usr/share/licenses/"${pkgname}"/LICENSE

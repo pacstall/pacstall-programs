@@ -15,7 +15,7 @@ prepare() {
   sudo mkdir -p "${pkgdir}/usr/share/icons/"
 }
 
-install() {
+package() {
   sudo install -Dm755 discord-canary.desktop "${pkgdir}/usr/share/applications/discord-canary.desktop"
   sudo install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord-canary.png"
   sudo cp -R ./* "${pkgdir}/usr/share/${name}/"

@@ -8,7 +8,7 @@ optdepends=("wine: 32-bit windows emulator"
 maintainer="echometerain <echometer@disroot.org>"
 repology=("project: yabridge")
 
-install() {
+package() {
   sudo install -dm755 "${pkgdir}/usr/bin"
   sudo install yabridgectl "${pkgdir}/usr/bin"
   sudo install yabridge-host{,-32}.exe{,.so} "${pkgdir}/usr/bin"

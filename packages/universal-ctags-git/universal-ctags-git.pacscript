@@ -24,7 +24,7 @@ build() {
 
 }
 
-install() {
+package() {
   sudo make install
 }
 

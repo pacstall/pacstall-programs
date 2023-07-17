@@ -20,7 +20,7 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+package() {
   sudo install -Dm755 steamtinkerlaunch -t "${pkgdir}/usr/bin"
   sudo install -d "${pkgdir}/usr/share/steamtinkerlaunch"
   sudo cp -r collections eval guicfgs lang misc "${pkgdir}/usr/share/steamtinkerlaunch"

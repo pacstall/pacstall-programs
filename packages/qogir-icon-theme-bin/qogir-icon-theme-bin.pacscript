@@ -15,7 +15,7 @@ url="https://github.com/vinceliuice/Qogir-icon-theme/archive/${version}.tar.gz"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="7747f8a139e01a075a94b832d95a53a98b98784b06e866dd8259bb0a38404480"
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "COPYING" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 

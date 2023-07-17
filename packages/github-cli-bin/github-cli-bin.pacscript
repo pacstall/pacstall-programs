@@ -10,7 +10,7 @@ description="GitHub's official command line tool - Binary version"
 hash="eec349e43803759d3d7a138d214ae983a3bebebd8e6dd0ec0ff1eea7bdd823e7"
 arch=('amd64')
 
-install() {
+package() {
   # Binary
   sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mv "./bin/gh" "${pkgdir}/usr/bin"

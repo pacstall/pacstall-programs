@@ -16,7 +16,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
   cd "${pkgdir}"
   sudo mv usr/local/etc .

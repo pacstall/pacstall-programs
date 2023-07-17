@@ -21,7 +21,7 @@ build() {
   sudo mkdir -p "${pkgdir}/usr"
 }
 
-install() {
+package() {
   sudo chmod +x "../usr/local/bin/${gives}"
   sudo cp -rf ../usr/* "${pkgdir}/usr"
 }

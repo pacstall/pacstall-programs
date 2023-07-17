@@ -9,7 +9,7 @@ breaks=("${pkgname}-bin")
 repology=("project: wezterm")
 maintainer="smokeythemonkey <smokeythemonkey@posteo.net>"
 
-install() {
+package() {
   # Install AppImage
   sudo install -Dm755 "WezTerm-${version}-Ubuntu20.04.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 

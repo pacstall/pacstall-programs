@@ -73,7 +73,7 @@ build() {
   cd ..
 }
 
-install() {
+package() {
   cd "wine32-build"
   sudo mkdir -p "${pkgdir}/usr/lib32/wine"
   sudo make prefix="${pkgdir}/usr" \

@@ -24,7 +24,7 @@ build() {
   make -j"${nproc}"
 }
 
-install() {
+package() {
   # Install LibreSSL
   sudo make install DESTDIR="${pkgdir}"
 }

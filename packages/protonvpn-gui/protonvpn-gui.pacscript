@@ -20,6 +20,6 @@ build() {
   python3 setup.py build
 }
 
-install() {
+package() {
   sudo python3 setup.py install --root="${pkgdir}" --optimize=1
 }
