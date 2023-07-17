@@ -6,7 +6,7 @@ description="Graillon is a Vocal Live Changer that brings a world of possibiliti
 hash="1a94c86c2d0da8a2830a6aa838e7d1f26454149a1a83592d500739bc5198659e"
 maintainer="echometerain <echometer@disroot.org>"
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/lib/lv2"
   sudo mv "./Linux/Linux-64b-LV2-FREE" "${pkgdir}/usr/lib/lv2/Auburn Sounds ${_name} 2.lv2"
   sudo mkdir -p "${pkgdir}/usr/lib/vst"

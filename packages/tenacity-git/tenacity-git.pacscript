@@ -40,7 +40,7 @@ build() {
   sudo make -j"$(nproc)"
 }
 
-install() {
+package() {
   cd build || exit
   sudo make install DESTDIR="${pkgdir}"
 }

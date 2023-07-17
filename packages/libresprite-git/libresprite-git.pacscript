@@ -41,7 +41,7 @@ build() {
   cd ..
 }
 
-install() {
+package() {
   cd build
   sudo DESTDIR="${pkgdir}" ninja install
   # shellcheck disable=SC2103

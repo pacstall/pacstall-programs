@@ -38,7 +38,7 @@ build() {
   fi
 }
 
-install() {
+package() {
   sudo install -dm755 "${pkgdir}/usr/share/themes"
   # HACK: Disabling SC2086 check, as this is the desired behavior
   # shellcheck disable=SC2086

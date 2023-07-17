@@ -16,7 +16,7 @@ build() {
   cmake --build . --config Release -j"$(nproc)"
 }
 
-install() {
+package() {
   cd build/
   sudo make install DESTDIR="${pkgdir}"
 

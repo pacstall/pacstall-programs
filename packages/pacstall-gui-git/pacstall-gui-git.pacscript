@@ -15,7 +15,7 @@ prepare() {
   sudo mkdir -p "${pkgdir}/usr/bin" "${pkgdir}/usr/lib/pacstall-gui" "${pkgdir}/usr/share/applications"
 }
 
-install() {
+package() {
   sudo install -Dm755 pacstall-gui "${pkgdir}/usr/bin/pacstall-gui"
   sudo mv -f ./settings.sh "${pkgdir}/usr/lib/pacstall-gui"
   sudo install -Dm755 LICENSE "${pkgdir}/usr/share/licenses/pacstall-gui/LICENSE"

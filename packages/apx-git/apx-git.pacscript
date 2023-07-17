@@ -20,7 +20,7 @@ build() {
   go build
 }
 
-install() {
+package() {
   sudo install -Dm755 "apx" "${pkgdir}/usr/bin/apx"
   sudo install -Dm644 "config/config.json" -t "${pkgdir}/etc/apx/"
   sudo install -Dm644 "man/apx.1" -t "${pkgdir}/usr/share/man/man1"

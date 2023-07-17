@@ -9,6 +9,6 @@ breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git" "${pkgna
 gives="${pkgname}"
 repology=("project: ${pkgname}")
 
-install() {
+package() {
   sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"
 }

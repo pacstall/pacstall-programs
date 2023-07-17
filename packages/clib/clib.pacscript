@@ -13,7 +13,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}" PREFIX="${pkgdir}/usr/local/"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
 }

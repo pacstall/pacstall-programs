@@ -17,7 +17,7 @@ prepare() {
   sudo mkdir -p "${pkgdir}/usr/share/pixmaps/"
 }
 
-install() {
+package() {
   # install files
   sudo cp -R ./* "${pkgdir}/usr/share/${pkgname}/"
 

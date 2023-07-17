@@ -12,6 +12,6 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   sudo make install PREFIX="${pkgdir}/usr"
 }

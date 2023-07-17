@@ -7,7 +7,7 @@ hash="b816c930b2ec0ce3905a7e9fbc067be648141b55a22c63214c5343512c7c7eb8"
 maintainer="echometerain <echometer@disroot.org>"
 repology=("project: smartgit")
 
-install() {
+package() {
   sudo install -Dm755 "./licenses"/* -t "${pkgdir}/usr/share/licenses/${name}"
   sudo install -Dm755 "./license.html" -t "${pkgdir}/usr/share/licenses/${name}"
   sudo mkdir -p "${pkgdir}/opt"

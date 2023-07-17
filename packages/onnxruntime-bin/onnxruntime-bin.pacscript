@@ -7,7 +7,7 @@ description="Cross-platform inference and training machine-learning accelerator"
 hash="5492f9065f87538a286fb04c8542e9ff7950abb2ea6f8c24993a940006787d87"
 maintainer="Zahrun <Zahrun@github.com>"
 
-install() {
+package() {
   sudo install -Dm755 "lib/lib${pkgname}.so.${version}" -t "${pkgdir}/usr/local/lib"
   sudo install -Dm644 include/* -t "${pkgdir}/usr/local/include"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"

@@ -19,7 +19,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   #These are basically install instructions from https://github.com/Audio4Linux/Viper4Linux
   sudo cp libgstviperfx.so "${pkgdir}/usr/lib/x86_64-linux-gnu/gstreamer-1.0/"
 

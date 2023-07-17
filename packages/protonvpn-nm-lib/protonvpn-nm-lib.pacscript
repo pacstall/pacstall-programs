@@ -9,6 +9,6 @@ build_depends=("python3-setuptools" "python3-xdg" "python3-xdg" "python3-distro"
 description="The ProtonVPN NM (NetworkManager) Library is intended for every ProtonVPN service user"
 hash="c8193defd5722a460b4628c54fbc55556caa525e70476a7e15fccf06f155cd97"
 
-install() {
+package() {
   sudo python3 setup.py install --root="${pkgdir}" --optimize=1
 }

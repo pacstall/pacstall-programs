@@ -12,7 +12,7 @@ build() {
   cargo build -j"$(nproc)" --release --locked
 }
 
-install() {
+package() {
   sudo install -Dm755 target/release/alacritty -t "${pkgdir}/usr/bin"
 
   sudo install -Dm644 extra/logo/alacritty-term.svg "${pkgdir}/usr/share/icons/hicolor/scalable/apps/Alacritty.svg"

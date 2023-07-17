@@ -11,7 +11,7 @@ maintainer="Zahrun <Zahrun@github.com>"
 replace=("onnxruntime")
 breaks=("onnxruntime-bin" "onnxruntime-1-7-0-bin")
 
-install() {
+package() {
   sudo install -Dm755 "lib/lib${_pkgname}.so.${version}" -t "${pkgdir}/usr/local/lib"
   sudo install -Dm755 "lib/lib${_pkgname}_"* -t "${pkgdir}/usr/local/lib"
   sudo install -Dm644 include/* -t "${pkgdir}/usr/local/include"

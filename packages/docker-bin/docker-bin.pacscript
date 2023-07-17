@@ -21,6 +21,6 @@ build() {
   sudo mkdir -p "${pkgdir}/usr/bin"
 }
 
-install() {
+package() {
   sudo cp -r "../${gives}"/* -t "${pkgdir}/usr/bin"
 }

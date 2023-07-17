@@ -15,7 +15,7 @@ build() {
   ninja
 }
 
-install() {
+package() {
   cd build
   sudo DESTDIR="${pkgdir}" ninja install
 }

@@ -13,7 +13,7 @@ prepare() {
   wget -q https://launcher.mojang.com/download/minecraft-launcher.svg
 }
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/symbolic/apps"
   sudo mkdir -p "${pkgdir}/usr/share/applications"

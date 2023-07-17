@@ -18,7 +18,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   sudo make install
 
   sudo install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/bash/task.sh" "${pkgdir}/usr/share/bash-completion/completions/task"

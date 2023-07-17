@@ -11,7 +11,7 @@ build() {
   RUSTONIG_SYSTEM_LIBONIG=1 cargo build -j"$(nproc)" --release --locked
 }
 
-install() {
+package() {
   sudo install -Dm755 target/release/bat -t "${pkgdir}/usr/bin"
 
   sudo install -Dm644 "$(find target -name bat.bash -print -quit)" "${pkgdir}/usr/share/bash-completion/completions/bat"

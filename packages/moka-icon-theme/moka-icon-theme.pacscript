@@ -10,6 +10,6 @@ build() {
   meson "build" --prefix="${pkgdir}/usr"
 }
 
-install() {
+package() {
   sudo ninja -C "build" install > /dev/null
 }

@@ -8,6 +8,6 @@ arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
 depends=("libspa-0.2-bluetooth")
 
-install() {
+package() {
   sudo install -Dm644 libspa-codec-bluez5-aac.so -t "${pkgdir}/usr/lib/x86_64-linux-gnu/spa-0.2/bluez5/"
 }

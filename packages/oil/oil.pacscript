@@ -30,7 +30,7 @@ build() {
   make -j"$(nproc)" "${MAKEFLAGS[@]}"
 }
 
-install() {
+package() {
   sudo DESTDIR="${pkgdir}" ./install
 }
 # vim:set ft=sh ts=2 sw=2 et:

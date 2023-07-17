@@ -10,6 +10,6 @@ breaks=("${name}" "${name}-git")
 depends=("gtk-update-icon-cache")
 build_depends=("make")
 
-install() {
+package() {
   sudo make DESTDIR="${pkgdir}" install
 }

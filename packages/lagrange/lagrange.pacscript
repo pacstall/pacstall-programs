@@ -14,7 +14,7 @@ build() {
   cmake . -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="${pkgdir}/usr" -DENABLE_123=ON
 }
 
-install() {
+package() {
   sudo cmake --build . --target install -- -j "$(nproc)"
 }
 

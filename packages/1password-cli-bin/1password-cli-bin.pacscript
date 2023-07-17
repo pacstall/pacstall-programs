@@ -8,6 +8,6 @@ description="1Password CLI"
 hash="2baf610b476727f24c62cc843419f55b157e1a05521a698c1c8b4ed676a766aa"
 arch=('amd64')
 
-install() {
+package() {
   sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
 }

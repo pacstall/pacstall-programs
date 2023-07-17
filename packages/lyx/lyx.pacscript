@@ -17,7 +17,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
   # install appdata
   sudo install -Dm644 ./lib/appdata.xml "${pkgdir}/usr/share/metainfo/lyx.appdata.xml"

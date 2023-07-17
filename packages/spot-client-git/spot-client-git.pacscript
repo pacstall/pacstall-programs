@@ -17,6 +17,6 @@ build() {
   sudo meson target -Doffline=false --prefix="${pkgdir}/usr"
 }
 
-install() {
+package() {
   sudo DESTDIR="${pkgdir}" ninja install -C target
 }

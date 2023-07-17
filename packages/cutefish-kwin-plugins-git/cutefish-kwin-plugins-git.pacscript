@@ -22,7 +22,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   cd build
   sudo make install DESTDIR="${pkgdir}"
 }

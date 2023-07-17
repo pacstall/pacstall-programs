@@ -10,6 +10,6 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+package() {
   sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"
 }

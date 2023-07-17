@@ -17,7 +17,7 @@ version="$(pkgver)"
 
 ## installation steps
 #this just copies the files over and makes the file executable
-install() {
+package() {
   sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
   sudo install -Dm755 "pacget" "${pkgdir}/usr/bin/pacget"
 }

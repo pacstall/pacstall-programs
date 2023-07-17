@@ -20,7 +20,7 @@ build() {
   meson build --prefix="/usr" --buildtype=release
 }
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "LICENSE" doc/* -t "${pkgdir}/usr/share/licenses/${pkgname}"
 

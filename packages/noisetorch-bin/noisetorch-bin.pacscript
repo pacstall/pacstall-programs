@@ -10,7 +10,7 @@ gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
 depends=("policykit-1")
 
-install() {
+package() {
   # Extract tgz
   tar zxf NoiseTorch_x64_v"${version}".tgz
 

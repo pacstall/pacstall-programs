@@ -16,7 +16,7 @@ build() {
   sudo meson setup build
 }
 
-install() {
+package() {
   sudo DESTDIR="${pkgdir}" ninja -C build install
   sudo chmod +x "${pkgdir}/usr/local/bin/rhinosystem"
 }

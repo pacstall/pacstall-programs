@@ -21,6 +21,6 @@ build() {
   cmake --build build
 }
 
-install() {
+package() {
   sudo DESTDIR="${pkgdir}" cmake --install build
 }

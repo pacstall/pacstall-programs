@@ -18,7 +18,7 @@ pkgver() {
 }
 version="$(pkgver)"
 
-install() {
+package() {
   sudo install -dm 755 "${pkgdir}/opt/reshade/shaders"
   sudo install -Dm 644 Shaders/*.* "${pkgdir}/opt/reshade/shaders/"
   sudo install -dm 755 "${pkgdir}/opt/reshade/textures"

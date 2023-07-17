@@ -307,7 +307,7 @@ build() {
 
 }
 
-install() {
+package() {
   sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install
 
   # Install optional documentation formats

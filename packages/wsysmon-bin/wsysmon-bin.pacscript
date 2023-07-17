@@ -9,7 +9,7 @@ hash="ef57a20064c7d97c437cbce19e20f78638430e08bc7c9933cc876e83114fce58"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-git")
 repology=("project: ${pkgname}")
 
-install() {
+package() {
   # Install appimage
   sudo install -Dm755 "WSysMon" "${pkgdir}/usr/bin/${pkgname}"
 

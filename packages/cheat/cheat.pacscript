@@ -11,7 +11,7 @@ homepage="https://github.com/cheat/cheat"
 description="Create and view interactive cheatsheets on the command-line"
 maintainer="Arrowsome <ramtintoosi@gmail.com>"
 
-install() {
+package() {
   gzip -d cheat-linux-amd64.gz
   sudo install -Dm755 cheat-linux-amd64 "${pkgdir}/usr/bin/${name}"
 }

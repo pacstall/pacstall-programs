@@ -9,7 +9,7 @@ gives="postman"
 breaks=("postman" "postman-deb" "postman-app")
 depends=("libxss1" "libnss3" "libgtk-3-0")
 
-install() {
+package() {
   # Get desktop file and install it
   wget -q "https://aur.archlinux.org/cgit/aur.git/plain/postman.desktop?h=postman-bin" -O postman.desktop
   sudo install -Dm644 postman.desktop -t "${pkgdir}/usr/share/applications"

@@ -6,7 +6,7 @@ description="Panagement is the spatialization laboratory that has found its way 
 hash="d8544b8941fcc9049b6743c99799b380bd636c6f49b10ed08204719de866f1a1"
 maintainer="echometerain <echometer@disroot.org>"
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/lib/lv2"
   sudo mv "./Linux/Linux-64b-LV2-FREE" "${pkgdir}/usr/lib/lv2/Auburn Sounds ${_name} 2.lv2"
   sudo mkdir -p "${pkgdir}/usr/lib/vst"

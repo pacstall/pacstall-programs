@@ -6,7 +6,7 @@ description="Easily print BTRFS subvolume/snapshot disk usage"
 depends=("btrfs-progs")
 repology=("project: ${gives}")
 
-install() {
+package() {
   sudo install -vDm755 -t "${pkgdir}/usr/bin" "btrfs-du"
 }
 

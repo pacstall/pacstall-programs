@@ -25,7 +25,7 @@ optdepends=('imagemagick: view images inside of the neomutt TUI'
   # No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
   'cron: set up automatic mail syncing')
 
-install() {
+package() {
   sudo make DESTDIR="${pkgdir}" install
   sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${name}"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"

@@ -17,7 +17,7 @@ prepare() {
   fi
 }
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/share/licenses/pycharm"
   sudo mkdir -p "${pkgdir}/usr/share/pycharm"
   sudo mkdir -p "${pkgdir}/usr/share/pixmaps"

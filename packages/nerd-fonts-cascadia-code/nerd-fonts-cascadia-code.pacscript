@@ -11,7 +11,7 @@ hash="e68cf12cc3c14a18b9ddce0e77f66a78e3ebec4a5224423674fdd9303c5c9272"
 license="OFL-1.1"
 maintainer="heyzsh <haidarzsh@gmail.com>"
 
-install() {
+package() {
   sudo install -d "${pkgdir}"/usr/share/fonts/OTF
   sudo install -Dm644 "${SRCDIR}/"*.otf "${pkgdir}"/usr/share/fonts/OTF
   sudo install -Dm644 "${SRCDIR}"/LICENSE "${pkgdir}"/usr/share/licenses/"${pkgname}"/LICENSE

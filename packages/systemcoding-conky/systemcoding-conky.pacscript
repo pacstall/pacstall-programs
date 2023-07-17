@@ -9,6 +9,6 @@ description="System Coding's Version Of Conky"
 hash="345774e7af5ce7783a1168746243e252922cac7fe0e0b8039c272792492a365c"
 breaks=("conky")
 
-install() {
+package() {
   sudo install -D conky/.conkyrc -t "${pkgdir}"
 }

@@ -6,7 +6,7 @@ description="ONNX Runtime is a cross-platform inference and training machine-lea
 hash="0345f45f222208344406d79a6db3280ed2ccc884dc1e064ce6e6951ed4c70606"
 maintainer="Zahrun <Zahrun@github.com>"
 
-install() {
+package() {
   sudo install -Dm755 "lib/lib${pkgname}.so.${version}" -t "${pkgdir}/usr/local/lib"
   sudo install -Dm644 include/* -t "${pkgdir}/usr/local/include"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"

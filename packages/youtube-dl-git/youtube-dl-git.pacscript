@@ -16,6 +16,6 @@ prepare() {
   git checkout "tags/${version}" -b "${version}"
 }
 
-install() {
+package() {
   sudo make install PREFIX="${pkgdir}/usr" PYTHON="/usr/bin/env python3"
 }

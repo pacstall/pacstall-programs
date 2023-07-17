@@ -14,7 +14,7 @@ hash="7162bde45dffcd1c8ab767cdfee37f75f0cd9d2897809aba9a51a3b43dd6ed56"
 repology=("project: tutanota" "repo: homebrew_casks")
 
 __created_desktop_file="yes"
-install() {
+package() {
   # Install AppImage
   sudo install -Dm755 "tutanota-desktop-linux.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 

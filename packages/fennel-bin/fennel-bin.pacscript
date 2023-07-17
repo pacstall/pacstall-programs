@@ -16,7 +16,7 @@ hash="aed1fe810b5420d7c2b3f76dbd18357d4218b2a7d3345dc2835336f052276c8a"
 arch=('amd64')
 repology=("project: fennel")
 
-install() {
+package() {
   # Install binary
   sudo install -Dm755 "fennel-${version}-x86_64" "${pkgdir}/usr/bin/${pkgname}"
 

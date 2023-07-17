@@ -17,7 +17,7 @@ hash="6c773ca064d314b4ea5d39d6fb0f73d6a3b74b9daa79ffae33c5b5df05bcf00a"
 arch=('amd64')
 repology=("project: ${pkgname}")
 
-install() {
+package() {
   sudo make DESTDIR="${pkgdir}" install
 }
 # vim:set ft=sh ts=2 sw=2 et:

@@ -25,7 +25,7 @@ description="A modern linker"
 breaks=("${name}-git" "${name}")
 repology=("project: mold")
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/"
   sudo mv ./* "${pkgdir}/usr/"
 }

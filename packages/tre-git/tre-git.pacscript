@@ -15,6 +15,6 @@ build() {
   cargo build -j"$(nproc)" --release --locked
 }
 
-install() {
+package() {
   sudo install -Dm755 target/release/tre -t "${pkgdir}/usr/bin"
 }

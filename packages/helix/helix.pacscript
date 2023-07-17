@@ -11,7 +11,7 @@ build() {
   cargo build -j"$(nproc)" --release --locked
 }
 
-install() {
+package() {
   sudo install -Dm755 target/release/hx -t "${pkgdir}/usr/lib/${name}"
 
   printf '#!/bin/sh\nHELIX_RUNTIME=/usr/lib/helix/runtime exec /usr/lib/helix/hx "$@"\n' > hx

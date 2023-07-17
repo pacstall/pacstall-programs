@@ -16,7 +16,7 @@ __goroot_pkgdir="${pkgdir}/usr/local/${name}"
 __goroot="/usr/local/${name}"
 __shell_rcs=("${homedir}/.bashrc" "${homedir}/.zshrc" "${homedir}/.profile")
 
-install() {
+package() {
   # Install binary
   sudo install -Dm755 "bin/go" "${pkgdir}/usr/bin/go"
   sudo install -Dm755 "bin/gofmt" "${pkgdir}/usr/bin/gofmt"

@@ -24,7 +24,7 @@ build() {
   make -j"$(nproc)" DESTDIR="${pkgdir}"
 }
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 

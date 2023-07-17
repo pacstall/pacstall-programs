@@ -16,7 +16,7 @@ hash="563de47d843810de501e3e6bfcb4571a4ff957eab811c2af87be23d1c599ae47"
 arch=('amd64')
 repology=("project: hyperfine")
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 

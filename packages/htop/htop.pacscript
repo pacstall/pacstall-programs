@@ -15,7 +15,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
   sudo install -Dm755 htop.desktop -t "${pkgdir}/usr/share/applications"
 }

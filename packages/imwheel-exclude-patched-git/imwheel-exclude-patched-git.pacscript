@@ -16,7 +16,7 @@ build() {
   make
 }
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
   cd "${pkgdir}/usr/local/"
   sudo mkdir -p share

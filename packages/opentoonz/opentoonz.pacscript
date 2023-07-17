@@ -35,7 +35,7 @@ build() {
 
 }
 
-install() {
+package() {
 
   cd "toonz/build" || return
   sudo mkdir -p "${pkgdir}/usr/share/pixmaps/"

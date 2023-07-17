@@ -9,7 +9,7 @@ hash="aa92f1386a6147d887bed6fc01965a32272dfe0f302e42fb0e1af89addcb65d9"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-bin" "${pkgname}-git")
 repology=("project: ${pkgname}")
 
-install() {
+package() {
   # Install appimage
   sudo install -Dm755 "Upscayl-${version}-linux.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 

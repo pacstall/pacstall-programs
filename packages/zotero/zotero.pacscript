@@ -13,7 +13,7 @@ prepare() {
     -e "s/^Icon=.*/Icon=zotero/" zotero.desktop
 }
 
-install() {
+package() {
   sudo install -D zotero.desktop -t "${pkgdir}/usr/share/applications"
   installdir="${pkgdir}/opt/zotero"
   sudo mkdir -p "${installdir}"

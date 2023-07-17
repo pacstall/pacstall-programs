@@ -19,7 +19,7 @@ build() {
   make -j"$(nproc)"
 }
 
-install() {
+package() {
   # Install i3blocks
   sudo make install DESTDIR="${pkgdir}"
 }

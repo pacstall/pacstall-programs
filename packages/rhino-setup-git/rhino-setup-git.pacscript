@@ -16,6 +16,6 @@ build() {
   sudo meson build
 }
 
-install() {
+package() {
   sudo DESTDIR="${pkgdir}" ninja -C build install
 }

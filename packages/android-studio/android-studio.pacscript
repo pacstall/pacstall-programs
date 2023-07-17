@@ -9,7 +9,7 @@ description="Android Studio is the official integrated development environment (
 hash="348146735cf8503117a0bbf8f4b77a0b716d4ee5baa0f8401d955bfc63d9541d"
 maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
 
-install() {
+package() {
   # Moving all android studio files to /opt
   sudo install -d "${pkgdir}/opt/${name}"
   sudo cp -a bin lib jbr plugins license LICENSE.txt build.txt product-info.json "${pkgdir}/opt/${name}"

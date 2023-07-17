@@ -21,7 +21,7 @@ build() {
   sudo rm -f xfce4/desktop/icons.screen.latest.rc
 }
 
-install() {
+package() {
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install

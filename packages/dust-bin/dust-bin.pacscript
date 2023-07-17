@@ -17,7 +17,7 @@ hash="06e9bcac22ba29e74395dde046cfd5b260cf6fabab48e1ed3dfc017b4e8bada7"
 arch=('amd64')
 repology=("project: du-dust")
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 

@@ -18,7 +18,7 @@ arch=('amd64')
 hash="90f3e6f093a9b69dc05d7e61a3f7d246b31be3bc8987dfe2f67f941fd8b7282d"
 repology=("project: nushell")
 
-install() {
+package() {
   # binaries
   find ./ \
     -maxdepth 1 \
