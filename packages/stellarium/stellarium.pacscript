@@ -9,7 +9,7 @@ hash="3aee154d0de3ed484e3e6fee027cf73e6dd0a677b3ea1af348b225ac02339008"
 build() {
   mkdir -p build/unix
   cd build/unix
-  cmake -DCMAKE_INSTALL_PREFIX="/" ../..
+  cmake -DCMAKE_INSTALL_PREFIX="/opt/stellarium" ../..
   make -j"${NCPU}"
 }
 
