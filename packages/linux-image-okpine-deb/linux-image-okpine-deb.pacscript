@@ -1,9 +1,10 @@
 name="linux-image-okpine-deb"
-version="6.5.0-rc1"
+version="6.5.0-rc2"
 gives="linux-image-${version}"
 url="https://github.com/oklopfer/debs/raw/master/kernel/${version}/${gives}-okpine_${version}-1_arm64.deb"
-hash="76b619ea938966c5f0a98de0d0410eb0db3fc235905cacd498b8ad6bc50cd19f"
+hash="f079d8ffdfbdbb4cd7f1a15d0f1db947eb93ec8087454e0405d1d06f52d74552"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-description="Linux kernel image files built for PinePhone + PinePhone Pro"
+description="Linux kernel image files built for Pine64 devices"
 arch=('arm64')
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline")
+pacdeps=("linux-headers-okpine-deb")
