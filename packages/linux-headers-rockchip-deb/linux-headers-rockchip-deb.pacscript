@@ -9,5 +9,5 @@ description="Linux kernel header files built for PineTab2 (Mobian kernel)"
 arch=('arm64')
 
 preinst() {
-    fancy_message warn "This package is deprecated, please switch to ${BBlue}linux-headers-okpine-deb${NC}"
+  fancy_message warn "This package is deprecated, please switch to ${BBlue}linux-headers-okpine-deb${NC}"
 }
