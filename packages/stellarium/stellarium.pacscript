@@ -14,5 +14,6 @@ build() {
 }
 
 package() {
+  cd build/unix
   sudo make install -j"${NCPU}" DESTDIR="${pkgdir}"
 }
