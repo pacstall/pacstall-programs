@@ -1,8 +1,8 @@
 name="blender-bin"
 gives="blender"
-version="3.6.0"
+version="3.6.1"
 url="https://mirrors.ocf.berkeley.edu/blender/release/Blender${version%.*}/blender-${version}-linux-x64.tar.xz"
-hash="5b7f73e73370996bedebc15f955c9b1cc415a7da0381e8f48f711ec2dfb1cd7f"
+hash="465e1ddeb60a9a7ac5712c9bcbfe8f23a5878484e65b3d9c28795f7a70113e31"
 homepage='https://www.blender.org/'
 arch=("amd64")
 description="A fully integrated 3D graphics creation suite"
