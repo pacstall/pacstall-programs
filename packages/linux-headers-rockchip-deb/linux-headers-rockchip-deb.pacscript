@@ -11,3 +11,4 @@ arch=('arm64')
 preinst() {
     fancy_message warn "This package is deprecated, please switch to ${BBlue}linux-headers-okpine-deb${NC}"
 }
+"$(preinst)"
