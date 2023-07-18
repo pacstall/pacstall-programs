@@ -12,4 +12,3 @@ pacdeps=("linux-headers-rockchip-deb")
 preinst() {
     fancy_message warn "This package is deprecated, please switch to ${BBlue}linux-image-okpine-deb${NC}"
 }
-"$(preinst)"
