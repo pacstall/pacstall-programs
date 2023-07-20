@@ -9,7 +9,7 @@ breaks=("${name}-git" "${name}-bin" "${name}")
 description="A youtube-dl fork with additional features and fixes"
 hash="dcb9dd73745b647756d3b23b705514affe456253e482f0f0a1b5be84e9e29208"
 release="$(lsb_release -cs)"
-modern=("devel" "sid" "lunar" "bookworm" "mantic")
+modern=("devel" "sid" "testing" "unstable" "lunar" "bookworm" "mantic")
 
 # shellcheck disable=SC2076
 if [[ " ${modern[*]} " =~ " ${release} " ]]; then
