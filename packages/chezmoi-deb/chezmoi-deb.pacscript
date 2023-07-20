@@ -9,10 +9,10 @@
 # shellcheck disable=2034
 name="chezmoi-deb"
 gives="chezmoi"
-version="2.34.2"
+version="2.35.2"
 url="https://github.com/twpayne/${gives}/releases/download/v${version}/${gives}_${version}_linux_amd64.deb"
 description="Manage your dotfiles across multiple diverse machines, securely"
-hash="81467cb32dd0d14d854194dcc88de65ece472c923de007d9d6bc3a11e1c584c8"
+hash="7dd720f87f8121b31c1c4ec6fd793d0343162662d1dcab32a8b311bd59be2b14"
 arch=('amd64')
 maintainer="wizard-28 <wiz28@pm.me>"
 repology=("project: chezmoi")
