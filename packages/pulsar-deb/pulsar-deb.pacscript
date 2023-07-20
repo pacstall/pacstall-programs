@@ -1,8 +1,8 @@
 name="pulsar-deb"
 gives="pulsar"
-version="1.106.0"
+version="1.107.1"
 url="https://github.com/pulsar-edit/pulsar/releases/download/v${version}/Linux.pulsar_${version}_amd64.deb"
-hash="8bc4b51cf4322e346d059cade1ea36dcfc6ccb93d5a2d3162f93e31e0c6095ce"
+hash="e61ed1f3cef77c92856efec0f04bcab7b9a6c27ac3c9912ff97770b07552c78b"
 description="A Community-led Hyper-Hackable Text Editor"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
