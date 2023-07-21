@@ -1,6 +1,6 @@
 name="aws-cli-v2-bin"
 pkgname="aws-cli-v2"
-version="2.12.6"
+version="2.13.2"
 url="https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${version}.zip"
 description="Universal Command Line Interface for Amazon Web Services v2"
 depends=("groff" "less")
@@ -8,7 +8,7 @@ build_depends=("unzip")
 replace=("awscli")
 repology=("project: awscli")
 arch=('amd64')
-hash="f2dc1c44b98cb835d7f5200e9b4edb3cd959a8c22249c616d010d698d2706a8b"
+hash="31641cc6effe4d9cb1832d612c17a595e06e7d5d0ec46e16e0fb78281fe0b90a"
 
 package() {
   sudo ./install --install-dir "${pkgdir}/usr/local/aws-cli" --bin-dir "/usr/local/bin"
