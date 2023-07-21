@@ -1,19 +1,19 @@
 name="docker-bin"
 gives="docker"
-replace=("${gives}" "containerd.io")
+replace=("${gives}-desktop" "${gives}-ce" "${gives}-ce-cli" "containerd.io")
 repology=("project: ${gives}")
-version="24.0.1"
+version="24.0.4"
 depends=("procps" "git" "iptables")
 description="Docker Engine Static Binaries"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 
 if [[ ${CARCH} == arm64 ]]; then
   url="https://download.docker.com/linux/static/stable/aarch64/${gives}-${version}.tgz"
-  hash="7856c7ab0bc5f324391a2922781bbda503bcfbdea1d71eb2b8d871ffc7f8b468"
+  hash="193a8e1f051adce6a30a4c8486ce9b39929b9633a0da8c96444c9239859f4354"
   arch=('arm64')
 else
   url="https://download.docker.com/linux/static/stable/x86_64/${gives}-${version}.tgz"
-  hash="298da71767e61b5b9bd40dda26e926d439106eab92df2cf66df6265d4046e3cf"
+  hash="0ab79ae5f19e2ef5bdc3c3009c8b770dea6189e0f1e0ef4935d78fd30519b11d"
   arch=('amd64')
 fi
 
