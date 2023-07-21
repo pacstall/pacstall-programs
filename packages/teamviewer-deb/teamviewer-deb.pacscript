@@ -1,7 +1,7 @@
 name="teamviewer-deb"
 pkgname="teamviewer"
 gives="teamviewer"
-version="15.43.6"
+version="15.43.9"
 repology=("project: teamviewer")
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
@@ -9,6 +9,6 @@ depends=("libqt5x11extras5" "libqt5quickcontrols2-5" "libqt5webengine5" "libqt5s
 url="https://download.teamviewer.com/download/linux/teamviewer_amd64.deb"
 description="Application for remote desktop sharing and online meetings"
 license="custom"
-hash="ccfefcacbdebffb33af9c64db9786ebeaddbde1b90a26cb6c1638c77054d449c"
+hash="fdcfc962bb498c9dc6931d6ebd7a6d74156506e7b4dc5a2ee54da5313c9be9fd"
 arch=('amd64')
 maintainer="heyzsh <haidarzsh@gmail.com>"
