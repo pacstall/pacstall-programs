@@ -8,12 +8,12 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="clipboard-bin"
 pkgname="clipboard"
-version="0.8.0"
+version="0.8.1"
 description="Cut, copy, and paste anything in your terminal"
 url="https://github.com/Slackadays/Clipboard/releases/download/${version}/${pkgname}-linux-amd64.zip"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="d81f0b6d698332041ebeb388fd9ca49a839aad7102f0ac68365098aee78b57cc"
+hash="cece02fc5ced7cdbc95bf6966e4cb3ffb8b243fe27231c9f9dfdcd94b08818c0"
 arch=('amd64')
 repology=("project: clipboard")
 
