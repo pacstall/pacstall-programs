@@ -3,7 +3,7 @@ gives="codium"
 breaks=("${gives}")
 version="1.80.1.23194"
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="50ee64897ee3cd3f87619f618a9711329286ae3be551e45455ea21a1773ef1c3"
+  hash="a73d7bf180b2f7cb8a77bb4b932ae8f05a00305828438149c20e3f404c0c0b97"
   arch=('arm64')
 else
   hash="d4a2e58db323de5c30b4144e65ca8492d4053aed8345263fc4e4603dbe188445"
