@@ -1,6 +1,6 @@
 name="telegram-bin"
 gives="telegram"
-version="4.8.4"
+version="4.8.7"
 homepage="https://telegram.org/"
 description="Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed"
 url="https://updates.tdesktop.com/tlinux/tsetup.${version}.tar.xz"
