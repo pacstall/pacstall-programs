@@ -193,8 +193,6 @@ librewolf-app
 librewolf-deb
 libspa-codec-bluez5-aac-bin
 libssl1.1-deb
-libwlroots-dev-deb
-libwlroots11-deb
 libxapp1-deb
 lightpad-git
 linked-deb
@@ -442,7 +440,6 @@ wsysmon-bin
 xapps-common-deb
 xfce4-deb
 xfce4-settings-pine-git
-xfwm4-wayland-git
 xmind-vana-deb
 yabridge
 yad
