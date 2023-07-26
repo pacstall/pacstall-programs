@@ -1,11 +1,12 @@
 name="epson-printer-utility-deb"
 gives="epson-printer-utility"
-version="1.1.1"
-url="https://download3.ebz.epson.net/dsc/f/03/00/13/07/74/f70da64c23f7901ec278896fbbe6fce911011521/${gives}_${version}-1lsb3.2_amd64.deb"
+version="1.1.2"
+# find the correct url at http://support.epson.net/linux/Printer/LSB_distribution_pages/en/utility.php
+url="https://download3.ebz.epson.net/dsc/f/03/00/14/68/92/d73ac45cccd3c5c349dbe365b5e99ae3112cbe49/${gives}_${version}-1_amd64.deb"
 depends=("lsb" "libqtgui4")
 ppa=("gezakovacs/ppa")
 description="This is a Printer Utility program for Epson Printer Driver. Using this software, you can check ink levels, view error and other status... on EPSON Printers."
-hash="417b637173c0b866a94eb5d9785aecbcd10fc99fd1d7149eb49f02f450e6b61f"
+hash="c34c08476ab185f8fd339e9681a3697cdb3c2e85d454be2aaed11e40b09aedff"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
 repology=("project: ${gives}")
