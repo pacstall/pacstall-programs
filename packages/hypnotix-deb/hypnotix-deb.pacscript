@@ -9,8 +9,8 @@ case "${codename}" in
     ;;
   *) ;;
 esac
-version="3.4"
-hash="144b297472a81009b50737942c77ca1db0bc21a94ce2261d7b700e9059e66afa"
+version="3.5"
+hash="26f5d5fb37efb4170176e3512de3235957d3ac32f9e8e3cabc940c6aa94d234b"
 url="https://github.com/Zahrun/hypnotix/releases/download/${version}/hypnotix_${version}_all.deb"
 description="An IPTV streaming application with support for live TV, movies and series"
 maintainer="Zahrun <Zahrun@github.com>"
