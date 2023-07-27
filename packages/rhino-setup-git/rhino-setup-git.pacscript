@@ -19,3 +19,18 @@ build() {
 package() {
   sudo DESTDIR="${pkgdir}" ninja -C build install
 }
+
+postinst() {
+  if ! [[ -d "${homedir}/.config/autostart" ]]; then
+    mkdir -p "${homedir}/.config/autostart"
+  fi
+  if ! [[ -f "${homedir}/.config/autostart/rhino-setup.desktop" ]]; then
+    sudo ln -sf "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${homedir}/.config/autostart/rhino-setup.desktop"
+  fi
+}
+
+removescript() {
+  if [[ -f "${homedir}/.config/autostart/rhino-setup.desktop" ]]; then
+    sudo rm -f "${homedir}/.config/autostart/rhino-setup.desktop"
+  fi
+}

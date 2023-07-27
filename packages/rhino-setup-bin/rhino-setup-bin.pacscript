@@ -25,3 +25,18 @@ package() {
   sudo chmod +x "../usr/local/bin/${gives}"
   sudo cp -rf ../usr/* "${pkgdir}/usr"
 }
+
+postinst() {
+  if ! [[ -d "${homedir}/.config/autostart" ]]; then
+    mkdir -p "${homedir}/.config/autostart"
+  fi
+  if ! [[ -f "${homedir}/.config/autostart/rhino-setup.desktop" ]]; then
+    sudo ln -sf "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${homedir}/.config/autostart/rhino-setup.desktop"
+  fi
+}
+
+removescript() {
+  if [[ -f "${homedir}/.config/autostart/rhino-setup.desktop" ]]; then
+    sudo rm -f "${homedir}/.config/autostart/rhino-setup.desktop"
+  fi
+}
