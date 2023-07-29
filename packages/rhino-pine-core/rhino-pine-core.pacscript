@@ -1,7 +1,7 @@
 name="rhino-pine-core"
 url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
 pacdeps=("xfce4-settings-pine-git" "unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "u-boot-mobian-deb" "mobile-usb-networking-deb")
-depends=("eg25-manager" "modemmanager" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "purple-mm-sms")
+depends=("eg25-manager" "modemmanager" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "purple-mm-sms" "ofono" "ofono-scripts")
 description="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-server-core")
