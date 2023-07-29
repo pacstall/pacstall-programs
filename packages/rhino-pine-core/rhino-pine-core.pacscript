@@ -8,7 +8,7 @@ description="Transitional package to provide all core Rhino Linux Mobile softwar
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-server-core")
 production="2023.1-beta7"
-version="${production}-1"
+version="${production}-2"
 style="(mobile)"
 branch="devel"
 postinst() {
