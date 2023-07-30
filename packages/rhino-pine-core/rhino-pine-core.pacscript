@@ -25,6 +25,6 @@ BUG_REPORT_URL=\"https://github.com/rhino-linux\"
 PRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"
 UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
   if [[ -f /usr/lib/systemd/system/modem-start.service ]]; then
-    sudo systemctl enable modem-start.service --now
+    sudo systemctl enable modem-start.service
   fi
 }
