@@ -13,9 +13,10 @@ version="$(pkgver)"
 incompatible=("debian:*")
 
 prepare() {
-  git remote add upstream "${url}"
-  git fetch upstream
-  git checkout upstream/mobile
+  sudo git remote add upstream "${url}"
+  sudo git fetch upstream
+  sudo git checkout upstream/mobile
+  git config --global --add safe.directory '$(pwd)'
 }
 
 build() {
