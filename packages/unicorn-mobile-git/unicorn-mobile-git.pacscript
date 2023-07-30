@@ -1,16 +1,22 @@
 name="unicorn-mobile-git"
-url="https://github.com/oklopfer/unicorn.git"
+url="https://github.com/rhino-linux/unicorn.git"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11" "hardinfo")
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-mobile"
-replace=("rhino-xfce4-mobile-config-git" "rhino-linux-xfce4-config-git" "unicorn-desktop" "unicorn-desktop-git")
+replace=("unicorn-desktop" "unicorn-desktop-git")
 description="Unicorn Desktop Mobile variant by the Rhino Linux Team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
+  git ls-remote "${url}" mobile | cut -f1 | cut -c1-8
 }
 version="$(pkgver)"
 incompatible=("debian:*")
+
+prepare() {
+  git remote add upstream "${url}"
+  git fetch upstream
+  git checkout upstream/mobile
+}
 
 build() {
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds"

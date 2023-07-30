@@ -332,7 +332,6 @@ reshade-shaders-git
 rhino-core
 rhino-kvantum-theme-git
 rhino-lightdm-theme-git
-rhino-linux-xfce4-config-git
 rhino-neofetch-git
 rhino-pine-core
 rhino-pkg-git
@@ -341,7 +340,6 @@ rhino-server-core
 rhino-setup-bin
 rhino-setup-git
 rhino-system-git
-rhino-xfce4-mobile-config-git
 rstudio-deb
 rust-motd-deb
 schildichat-deb
