@@ -1,7 +1,7 @@
 name="unicorn-mobile-git"
 url="https://github.com/rhino-linux/unicorn.git"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11" "hardinfo")
-pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "xfce4-settings-pine-git")
+pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-mobile"
 replace=("unicorn-desktop" "unicorn-desktop-git")
 description="Unicorn Desktop Mobile variant by the Rhino Linux Team"
