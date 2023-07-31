@@ -1,0 +1,9 @@
+name="docker-desktop-deb"
+gives="docker-desktop"
+repology=("project: docker-desktop")
+version="4.21.1"
+url="https://desktop.docker.com/linux/main/amd64/${gives}-${version}-amd64.deb"
+description="GUI Docker Daemon"
+hash="d22a3b0d961cf56c0c2c0cc4e3fa8b8b3b98ec9f1c72c54841bc61d90a014770"
+arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"
