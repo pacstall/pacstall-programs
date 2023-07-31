@@ -23,6 +23,6 @@ package() {
   cd build_x86_64 || exit
   sudo cmake --install . > /dev/null
   sudo mkdir -p "${pkgdir}"/usr/lib/x86_64-linux-gnu
-  sudo mv "${pkgdir}"/usr/lib/* "${pkgdir}"/usr/lib/x86_64-linux-gnu/
+  sudo mv "${pkgdir}"/usr/lib/obs-plugins "${pkgdir}"/usr/lib/x86_64-linux-gnu/
   sudo install -Dm644 "../LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
 }
