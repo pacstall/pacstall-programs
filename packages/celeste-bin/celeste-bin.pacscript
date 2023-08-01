@@ -3,16 +3,16 @@ depends=("libgtk-3-0" "libayatana-appindicator3-1" "libadwaita-1-0" "rclone")
 gives="celeste"
 description="GUI cloud file synchronization client"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-version="0.5.3-rhino1"
+version="0.5.4-rhino1"
 replace=("${gives}" "${gives}-git")
 
 if [[ ${CARCH} == arm64 ]]; then
   url="https://github.com/rhino-linux/${gives}/releases/download/v${version}/${gives}_v${version}_${CARCH}.zip"
-  hash="132cc11dd043cf5d30b9dde021868a7969f0860cbd7eca2dc37caf1587e910ed"
+  hash="8b8f29804a1744fde930153c1880e364704a9d978dffaee565a5f4cdf441eda0"
   arch=('arm64')
 else
   url="https://github.com/rhino-linux/${gives}/releases/download/v${version}/${gives}_v${version}_${CARCH}.zip"
-  hash="5cb47ee446004ecd07178a18a4e68ef4eef86665f171856ad125fe9364be73cd"
+  hash="5a11d81f4120de81ca484e6983d917aac99ae490a6a81a4d1fd4f8e88526e45c"
   arch=('amd64')
 fi
 
