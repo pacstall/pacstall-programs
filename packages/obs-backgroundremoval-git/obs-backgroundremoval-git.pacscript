@@ -18,7 +18,7 @@ incompatible=('ubuntu:jammy' 'ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'deb
 build() {
   mkdir build_x86_64 && cd build_x86_64 || return 1
   cmake --preset linux-x86_64 -DCMAKE_INSTALL_PREFIX:PATH="${pkgdir}"/usr .. > /dev/null
-  cmake --build . -j"$(nproc)" > /dev/null
+  cmake --build . -j"${NCPU}" > /dev/null
 }
 
 package() {
