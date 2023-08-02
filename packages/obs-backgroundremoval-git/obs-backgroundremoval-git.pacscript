@@ -1,8 +1,8 @@
 name="obs-backgroundremoval-git"
 pkgname="obs-backgroundremoval"
 url="https://github.com/royshil/obs-backgroundremoval.git"
-build_depends=("libobs-dev" "libsimde-dev" "ninja-build")
-pacdeps=("onnxruntime-gpu-bin" "cmake-deb")
+build_depends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libsimde-dev" "ninja-build")
+pacdeps=("cmake-deb")
 breaks=("${pkgname}")
 replace=("${pkgname}")
 gives=("${pkgname}")
@@ -16,18 +16,15 @@ version="$(pkgver)"
 incompatible=('ubuntu:jammy' 'ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'debian:bullseye')
 
 build() {
-  mkdir build && cd build || exit
-  cmake -DUSE_SYSTEM_ONNXRUNTIME=ON -DCMAKE_INSTALL_PREFIX:PATH="${pkgdir}"/usr .. > /dev/null && cmake --build . -j"$(nproc)" > /dev/null
+  mkdir build_x86_64 && cd build_x86_64 || return 1
+  cmake --preset linux-x86_64 -DCMAKE_INSTALL_PREFIX:PATH="${pkgdir}"/usr .. > /dev/null
+  cmake --build . -j"${NCPU}" > /dev/null
 }
 
 package() {
-  cd build || exit
+  cd build_x86_64 || return 1
   sudo cmake --install . > /dev/null
-  sudo mkdir -p "${pkgdir}"/usr/lib/x86_64-linux-gnu/obs-plugins/
-  sudo mkdir -p "${pkgdir}"/usr/share/obs/
-  sudo mv "${pkgdir}"/usr/obs-plugins/64bit/* "${pkgdir}"/usr/lib/x86_64-linux-gnu/obs-plugins/
-  sudo rm -r "${pkgdir}"/usr/obs-plugins
-  sudo mv "${pkgdir}"/usr/data/* "${pkgdir}"/usr/share/obs/
-  sudo rm "${pkgdir}"/usr/data -r
-  sudo install -Dm644 "../LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
+  sudo mkdir -p "${pkgdir}"/usr/lib/x86_64-linux-gnu/
+  sudo mv "${pkgdir}"/usr/lib/obs-plugins "${pkgdir}"/usr/lib/x86_64-linux-gnu/
+  sudo install -Dm644 "../LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
