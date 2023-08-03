@@ -16,7 +16,7 @@ prepare() {
   sudo git remote add upstream "${url}"
   sudo git fetch upstream
   sudo git checkout upstream/mobile
-  git config --global --add safe.directory "$(pwd)"
+  git config --global --add safe.directory "${PWD}"
 }
 
 build() {
