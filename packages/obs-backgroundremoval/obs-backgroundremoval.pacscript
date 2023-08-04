@@ -20,7 +20,7 @@ build() {
 }
 
 package() {
-  cd build_x86_64 || exit
+  cd build_x86_64 || return 1
   sudo cmake --install . > /dev/null
   sudo mkdir -p "${pkgdir}"/usr/lib/x86_64-linux-gnu
   sudo mv "${pkgdir}"/usr/lib/obs-plugins "${pkgdir}"/usr/lib/x86_64-linux-gnu/
