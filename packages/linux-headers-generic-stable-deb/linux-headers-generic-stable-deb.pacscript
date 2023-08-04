@@ -1,12 +1,12 @@
 name="linux-headers-generic-stable-deb"
-gives="linux-headers-6.4.6-060406-generic"
-version="6.4.6"
-buildver="6.4.6-060406.202307241739"
+gives="linux-headers-6.4.8-060408-generic"
+version="6.4.8"
+buildver="6.4.8-060408.202308041557"
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="66bdff83865dc959cff612b94a1d90ca29d5232771b243677035509fac7dfbc9"
+  hash="adf85a97c411dbce2ef0de41ac84d71fade52711639ae5860134681a23f47e56"
   arch=('arm64')
 else
-  hash="52ee6ee1c121b8823a5f5256e04eeb600258e93d732b888fb4da84ff0a7ff2a6"
+  hash="52468bf57caf0304076f5485b1e229baa52c8ac311a9ae79a25890ae8933b172"
   arch=('amd64')
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
