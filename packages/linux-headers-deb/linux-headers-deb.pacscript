@@ -1,10 +1,10 @@
 name="linux-headers-deb"
-gives="linux-headers-6.5.0-060500rc2"
-version="6.5-rc2"
-buildver="6.5.0-060500rc2.202307162330"
+gives="linux-headers-6.5.0-060500rc4"
+version="6.5-rc4"
+buildver="6.5.0-060500rc4.202308041735"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_all.deb"
 description="Ubuntu Linux mainline kernel (Headers)"
-hash="279ddb0646764323142c9ab19178d02a90491eb1dc1cecf8cf50304410c18f85"
+hash="f9baa76a28992fa4dad268be587bdfa661974af37ba1812684b8fa057cb77baf"
 arch=('any')
 maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")
