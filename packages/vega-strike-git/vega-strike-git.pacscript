@@ -1,6 +1,6 @@
 name="vega-strike-git"
 url="https://github.com/vegastrike/Assets-Production.git"
-build_depends=("make")
+makedepends=("make")
 description="Space Flight Simulator and trading game"
 pacdeps="vega-strike-engine-git"
 maintainer="echometerain <echometer@disroot.org>"

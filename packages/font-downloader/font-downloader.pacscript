@@ -1,7 +1,7 @@
 name="font-downloader"
 gives="font-downloader"
 version="10.0.0"
-build_depends=("meson" "libhandy-1-dev" "gettext")
+makedepends=("meson" "libhandy-1-dev" "gettext")
 # HACK: https://github.com/pacstall/pacstall/issues/727
 depends=("python3-gi" "libhandy-1-dev")
 url="https://github.com/GustavoPeredo/Font-Downloader/archive/refs/tags/v${version}.zip"

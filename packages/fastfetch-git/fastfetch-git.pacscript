@@ -10,7 +10,7 @@ name="fastfetch-git"
 pkgname="fastfetch"
 description="Like neofetch, but much faster because written in c"
 url="https://github.com/LinusDierheimer/fastfetch.git"
-build_depends=("cmake" "libpci-dev" "libvulkan-dev" "libx11-dev" "libxrandr-dev" "libwayland-client0" "libwayland-dev" "libgio-cil" "libglib2.0-dev" "libdconf-dev" "libxfconf-0-dev")
+makedepends=("cmake" "libpci-dev" "libvulkan-dev" "libx11-dev" "libxrandr-dev" "libwayland-client0" "libwayland-dev" "libgio-cil" "libglib2.0-dev" "libdconf-dev" "libxfconf-0-dev")
 optdepends=("libpci-dev: GPU output"
   "libvulkan-dev: GPU fallback"
   "libx11-dev: Resolution output"

@@ -1,7 +1,7 @@
 name="i3lock-color"
 version="2.13.c.4"
 url="https://github.com/Raymo111/i3lock-color/archive/refs/tags/${version}.tar.gz"
-build_depends=("autoconf" "gcc" "make" "libfontconfig1-dev" "libx11-xcb-dev" "libxcb-xkb-dev" "libxcb-xinerama0-dev" "libxcb-randr0-dev" "libxcb-image0-dev" "libxcb-util-dev" "libxcb-xtest0-dev" "libxkbcommon-dev")
+makedepends=("autoconf" "gcc" "make" "libfontconfig1-dev" "libx11-xcb-dev" "libxcb-xkb-dev" "libxcb-xinerama0-dev" "libxcb-randr0-dev" "libxcb-image0-dev" "libxcb-util-dev" "libxcb-xtest0-dev" "libxkbcommon-dev")
 depends=("libxcb-composite0-dev" "libpam0g-dev" "libev-dev" "libcairo2-dev" "libxkbcommon-x11-dev" "libjpeg-dev" "libxcb-xrm-dev" "pkg-config")
 gives="i3lock"
 breaks=("i3lock")

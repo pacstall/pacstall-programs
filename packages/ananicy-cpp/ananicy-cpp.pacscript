@@ -4,7 +4,7 @@ url="https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v${version}/ananicy-cp
 hash="49f59e8fa842c7603be344b7317eace773c3e416d881dae4ad7779b39b03fc4a"
 description="Rewrite of Ananicy in C++"
 repology=("project: ananicy-cpp")
-build_depends=("cmake" "g++" "libsystemd-dev" "ninja-build")
+makedepends=("cmake" "g++" "libsystemd-dev" "ninja-build")
 
 build() {
   cmake -S . -Bbuild \

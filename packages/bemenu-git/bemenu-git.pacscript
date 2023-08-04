@@ -10,7 +10,7 @@ name="bemenu-git"
 pkgname="bemenu"
 description="Dynamic menu library and client program inspired by dmenu (git release)"
 url="https://github.com/Cloudef/bemenu.git"
-build_depends=("scdoc" "wayland-protocols" "libcairo-dev" "libpango1.0-dev" "libxkbcommon-dev" "libwayland-dev" "libxinerama-dev" "libncurses5-dev")
+makedepends=("scdoc" "wayland-protocols" "libcairo-dev" "libpango1.0-dev" "libxkbcommon-dev" "libwayland-dev" "libxinerama-dev" "libncurses5-dev")
 breaks="${pkgname}-bin ${pkgname}"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8

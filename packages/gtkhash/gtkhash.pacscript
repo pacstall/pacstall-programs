@@ -1,7 +1,7 @@
 name="gtkhash"
 version="1.4"
 url="https://github.com/tristanheaven/${name}/releases/download/v${version}/${name}-${version}.tar.xz"
-build_depends=("autoconf" "automake" "libtool" "intltool" "wget")
+makedepends=("autoconf" "automake" "libtool" "intltool" "wget")
 depends=("libgtk-3-dev" "libglib2.0-dev" "libgcrypt-dev" "nettle-dev" "libb2-dev" "openssl" "libmbedtls-dev")
 replace=("${name}")
 description="gtkhash is a desktop utility for computing message digests or checksums."

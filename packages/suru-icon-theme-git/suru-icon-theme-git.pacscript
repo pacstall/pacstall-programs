@@ -3,7 +3,7 @@ gives="suru-icon-theme"
 version="0.1"
 maintainer="aranym <aranym1@pm.me>"
 url="https://github.com/snwh/${name}.git"
-build_depends=("meson" "ninja-build")
+makedepends=("meson" "ninja-build")
 description="Revitalization of the Suru icon set designed for Ubuntu Touch"
 
 build() {

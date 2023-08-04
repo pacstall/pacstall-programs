@@ -1,7 +1,7 @@
 name="bat"
 version="0.23.0"
 url="https://github.com/sharkdp/bat/archive/refs/tags/v${version}.tar.gz"
-build_depends="cargo libonig-dev pkg-config"
+makedepends="cargo libonig-dev pkg-config"
 depends=("libonig5")
 replace=("bat")
 description="A cat(1) clone with wings"

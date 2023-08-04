@@ -1,7 +1,7 @@
 name="sed"
 version="4.8"
 url="https://ftp.gnu.org/gnu/sed/sed-${version}.tar.xz"
-build_depends=("autoconf" "automake")
+makedepends=("autoconf" "automake")
 depends=("libselinux1" "libc6" "libacl1")
 replace=("sed")
 description="sed (stream editor) is a non-interactive command-line text editor."

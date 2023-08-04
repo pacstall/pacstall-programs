@@ -1,7 +1,7 @@
 name="tre-git"
 pkgname="tre"
 gives="tre"
-build_depends=("cargo" "rustc")
+makedepends=("cargo" "rustc")
 description="Tree command, improved"
 url="https://github.com/dduan/tre.git"
 maintainer="Diego Magdaleno <diegomagdaleno@pm.me>"

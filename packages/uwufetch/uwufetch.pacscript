@@ -10,7 +10,7 @@ name="uwufetch"
 version="1.7"
 url="https://github.com/TheDarkBug/${name}/archive/refs/tags/${version}.zip"
 description="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
-build_depends=("gcc")
+makedepends=("gcc")
 optdepends=("viu: image preview"
   "lshw: hardware info")
 breaks=("${name}-git" "${name}-bin")

@@ -8,7 +8,7 @@ maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${name}"
 breaks=("${name}" "${name}-git")
 depends=("gtk-update-icon-cache")
-build_depends=("make")
+makedepends=("make")
 
 package() {
   sudo make DESTDIR="${pkgdir}" install

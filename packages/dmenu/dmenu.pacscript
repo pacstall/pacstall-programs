@@ -1,7 +1,7 @@
 name="dmenu"
 version="5.2"
 url="https://dl.suckless.org/tools/${name}-${version}.tar.gz"
-build_depends=("libxinerama-dev" "libxft-dev")
+makedepends=("libxinerama-dev" "libxft-dev")
 breaks=("${name}" "${name}_run" "${name}_path")
 repology=("project: ${name}")
 description="A generic menu for X"

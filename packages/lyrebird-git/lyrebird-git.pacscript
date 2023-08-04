@@ -4,7 +4,7 @@ description="Simple and powerful voice changer for Linux, written in GTK 3"
 url="https://github.com/lyrebird-voice-changer/lyrebird.git"
 maintainer="D-Brox <BroxZuka@protonmail.com>"
 depends=("python3" "libgtk-3-dev" "python3-gi" "python3-gi-cairo" "gir1.2-gtk-3.0" "sox" "libsox-fmt-pulse" "pulseaudio")
-build_depends=("python3-pip")
+makedepends=("python3-pip")
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }

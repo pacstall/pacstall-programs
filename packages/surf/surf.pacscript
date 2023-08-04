@@ -1,7 +1,7 @@
 name="surf"
 version="2.1"
 url="https://dl.suckless.org/${name}/${name}-${version}.tar.gz"
-build_depends=("make")
+makedepends=("make")
 depends=("libc6" "libgcr-3-dev" "libglib2.0-dev" "libgtk-3-dev" "libwebkit2gtk-4.0-dev" "libx11-6")
 breaks=("${name}-git")
 replace=("${name}")

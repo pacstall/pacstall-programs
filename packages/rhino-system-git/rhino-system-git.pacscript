@@ -1,6 +1,6 @@
 name="rhino-system-git"
 url="https://github.com/rhino-linux/rhino-system.git"
-build_depends=("python3-gi" "gir1.2-adw-1" "gir1.2-gtk-4.0" "gir1.2-vte-3.91" "libadwaita-1-0" "libvte-2.91-gtk4-0" "gettext" "desktop-file-utils" "libglib2.0-dev" "cmake" "meson" "ninja-build")
+makedepends=("python3-gi" "gir1.2-adw-1" "gir1.2-gtk-4.0" "gir1.2-vte-3.91" "libadwaita-1-0" "libvte-2.91-gtk4-0" "gettext" "desktop-file-utils" "libglib2.0-dev" "cmake" "meson" "ninja-build")
 depends=("python3-gi" "gir1.2-adw-1" "gir1.2-gtk-4.0" "gir1.2-vte-3.91" "libadwaita-1-0" "libvte-2.91-gtk4-0" "gettext" "desktop-file-utils" "libglib2.0-dev" "mesa-utils")
 pacdeps=("rhino-pkg-git")
 gives="rhino-system"

@@ -8,7 +8,7 @@ description="A simple launcher to play ATS and ETS2 with Multiplayer through Tru
 url="https://github.com/truckersmp-cli/truckersmp-cli/archive/refs/tags/${version}.tar.gz"
 hash="3f5e0289d06d5bdc39f86879283c7184adaa60eb06a3b4e481095da816121c16"
 maintainer="badlydrawnface <bdface@proton.me>"
-build_depends=("python3-setuptools" "gcc-mingw-w64" "libsdl2-dev")
+makedepends=("python3-setuptools" "gcc-mingw-w64" "libsdl2-dev")
 depends=("python3" "libsdl2-2.0-0")
 optdepends=(
   "python3-vdf: automatic steam account detection"

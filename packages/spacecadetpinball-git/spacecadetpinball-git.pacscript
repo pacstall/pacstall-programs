@@ -11,7 +11,7 @@ pkgname="spacecadetpinball"
 description='Reverse engineered port of "3D Pinball for Windows – Space Cadet" to Linux'
 url="https://github.com/k4zmu2a/${pkgname}.git"
 depends=("timidity" "freepats" "libsdl2-2.0-0" "libsdl2-mixer-2.0-0")
-build_depends=("libsdl2-dev" "libsdl2-mixer-dev" "unrar" "cmake")
+makedepends=("libsdl2-dev" "libsdl2-mixer-dev" "unrar" "cmake")
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-app" "${pkgname}-deb")
 
 pkgver() {

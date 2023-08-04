@@ -1,7 +1,7 @@
 name="obs-backgroundremoval-git"
 pkgname="obs-backgroundremoval"
 url="https://github.com/royshil/obs-backgroundremoval.git"
-build_depends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libsimde-dev" "ninja-build")
+makedepends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libsimde-dev" "ninja-build")
 pacdeps=("cmake-deb")
 breaks=("${pkgname}")
 replace=("${pkgname}")

@@ -2,7 +2,7 @@ name="lyx"
 version="2.3.7-1"
 description="An advanced WYSIWYM document processor & LaTeX front-end"
 depends=("libqt5svg5-dev" "texlive-base" "python3" "imagemagick" "libhunspell-dev" "file" "hicolor-icon-theme" "desktop-file-utils")
-build_depends=("bc" "libx11-dev" "qtbase5-dev" "libenchant-2-dev" "libqt5svg5-dev" "pkg-config")
+makedepends=("bc" "libx11-dev" "qtbase5-dev" "libenchant-2-dev" "libqt5svg5-dev" "pkg-config")
 optdepends=("rcs: built-in version control system"
   "texlive-latex-base: float wrap support")
 url="https://ftp.lip6.fr/pub/lyx/stable/2.3.x/lyx-${version}.tar.gz"

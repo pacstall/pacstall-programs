@@ -1,7 +1,7 @@
 name="yad"
 version="13.0"
 url="https://github.com/v1cont/${name}/releases/download/v${version}/${name}-${version}.tar.xz"
-build_depends=("autotools-dev" "intltool" "libgtk-3-dev" "automake")
+makedepends=("autotools-dev" "intltool" "libgtk-3-dev" "automake")
 depends=("libc6" "libcairo2" "libgdk-pixbuf2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0")
 breaks="${name} ${name}-bin ${name}-app ${name}-git ${name}-deb"
 gives="yad"

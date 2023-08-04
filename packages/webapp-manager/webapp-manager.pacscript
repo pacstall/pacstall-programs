@@ -1,6 +1,6 @@
 name="webapp-manager"
 version="1.3.2"
-build_depends=("gettext")
+makedepends=("gettext")
 depends=("gir1.2-xapp-1.0" "python3" "python3-bs4" "python3-configobj" "python3-gi" "python3-setproctitle" "python3-tldextract" "xapps-common" "python3-pil" "libglib2.0-bin")
 description="Run websites as if they were apps"
 repology=("project: webapp-manager")

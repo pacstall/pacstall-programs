@@ -1,7 +1,7 @@
 name="kvantum"
 version="1.0.7"
 url="https://github.com/tsujan/Kvantum/releases/download/V${version}/Kvantum-${version}.tar.xz"
-build_depends=("g++" "cmake" "libx11-dev" "qtbase5-dev" "libqt5svg5-dev" "libqt5x11extras5-dev" "libkf5windowsystem-dev" "libxext-dev")
+makedepends=("g++" "cmake" "libx11-dev" "qtbase5-dev" "libqt5svg5-dev" "libqt5x11extras5-dev" "libkf5windowsystem-dev" "libxext-dev")
 breaks=("qt5-style-kvantum")
 description="SVG-based theme engine for Qt"
 incompatible=('debian:bullseye')

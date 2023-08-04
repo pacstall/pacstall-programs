@@ -1,7 +1,7 @@
 name="surf-distrotube-git"
 pkgname="surf"
 url="https://gitlab.com/dwt1/surf-distrotube.git"
-build_depends=("make")
+makedepends=("make")
 depends=("libc6" "libgcr-3-dev" "libglib2.0-dev" "libgtk-3-dev" "libwebkit2gtk-4.0-dev" "libx11-6")
 pacdeps=("dmenu")
 gives="${pkgname}"
