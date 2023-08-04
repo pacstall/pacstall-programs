@@ -22,6 +22,6 @@ package() {
   sudo mv usr/local/etc .
 }
 
-postinst() {
+post_install() {
   sudo systemctl daemon-reload && sudo systemctl enable touchegg --now
 }

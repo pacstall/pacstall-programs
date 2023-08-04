@@ -75,7 +75,7 @@ END
   sudo install -Dm644 "${pkgname}.desktop" -t "${pkgdir}/usr/share/applications"
 }
 
-removescript() {
+post_remove() {
   sudo rm -rf "/usr/share/licenses/${pkgname}"
 }
 

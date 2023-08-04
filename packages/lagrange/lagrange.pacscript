@@ -18,12 +18,12 @@ package() {
   sudo cmake --build . --target install -- -j "$(nproc)"
 }
 
-postinst() {
+post_install() {
   sudo glib-compile-schemas /usr/share/glib-2.0/schemas
   sudo update-desktop-database -q /usr/share/applications
   sudo gtk-update-icon-cache -qtf /usr/share/icons/hicolor
 }
 
-removescript() {
+post_remove() {
   sudo update-desktop-database -q /usr/share/applications
 }

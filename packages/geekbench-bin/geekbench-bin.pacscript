@@ -13,10 +13,10 @@ package() {
   sudo mkdir -p "${pkgdir}/usr/bin"
 }
 
-postinst() {
+post_install() {
   sudo ln -s "/opt/${gives}/${gives}5" "/usr/bin/${gives}5"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/${gives}5"
 }

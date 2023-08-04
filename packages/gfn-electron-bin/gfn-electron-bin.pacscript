@@ -25,10 +25,10 @@ package() {
   sudo chmod +x "${pkgdir}/opt/${pkgname}/geforcenow-electron"
 }
 
-postinst() {
+post_install() {
   sudo ln -s -r "/opt/${pkgname}/geforcenow-electron" "/usr/bin/geforcenow"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/geforcenow"
 }

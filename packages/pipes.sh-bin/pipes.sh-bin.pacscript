@@ -17,7 +17,7 @@ package() {
   sudo make DESTDIR="${pkgdir}" PREFIX=/usr install
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"

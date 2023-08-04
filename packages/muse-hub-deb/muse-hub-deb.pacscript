@@ -10,7 +10,7 @@ maintainer="Rémy Huet <remy.huet@hds.utc.fr>"
 hash="0896fd96d72cb18102c2436794caffadd67382d5377b84468a514601847cc3e9"
 provides=('muse-hub' 'muse-hub-service')
 
-removescript() {
+post_remove() {
   # This is the default place where muse-hub stores dowloaded sounds
   sudo rm -rf /srv/muse-hub
 }

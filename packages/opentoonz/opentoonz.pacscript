@@ -52,7 +52,7 @@ package() {
   sudo chmod +x "/usr/bin/opentoonz"
 }
 
-removescript() {
+post_remove() {
   ask "Do you want to remove your opentoonz config?" N
   if [[ ${answer} -eq 1 ]]; then
     rm -rf "/home/${LOGNAME}/.config/OpenToonz/"

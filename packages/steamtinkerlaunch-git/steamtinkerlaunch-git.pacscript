@@ -29,6 +29,6 @@ package() {
   sudo install -Dm644 "misc/steamtinkerlaunch.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/apps"
 }
 
-postinst() {
+post_install() {
   steamtinkerlaunch yad "/usr/local/bin/yad"
 }

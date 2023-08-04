@@ -18,7 +18,7 @@ package() {
   sudo install -Dm644 "${gives}.helper.service" "${pkgdir}/usr/share/dbus-1/system-services/${gives}.helper.service"
 }
 
-postinst() {
+post_install() {
   if ask "Do you want this program to start at startup?" Y; then
     sudo -u "${PACSTALL_USER}" mkdir -p "${homedir}/.config/autostart"
     sudo -u "${PACSTALL_USER}" cp /usr/share/applications/mcontrolcenter.desktop "${homedir}/.config/autostart/mcontrolcenter.desktop"
@@ -28,7 +28,7 @@ postinst() {
   fi
 }
 
-removescript() {
+post_remove() {
   if [[ -f "${homedir}/.config/autostart/mcontrolcenter.desktop" ]]; then
     rm -f "${homedir}/.config/autostart/mcontrolcenter.desktop"
     fancy_message info "Config file for auto-start is removed"

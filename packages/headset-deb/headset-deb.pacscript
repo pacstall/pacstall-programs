@@ -7,6 +7,6 @@ arch=('amd64')
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 repology=("project: headset")
 
-postinst() {
+post_install() {
   sudo rm -f /etc/apt/sources.list.d/headset.list
 }

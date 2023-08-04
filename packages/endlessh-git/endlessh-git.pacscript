@@ -30,7 +30,7 @@ package() {
   sudo install -Dm644 sample-config "${pkgdir}/etc/endlessh/config"
 }
 
-removescript() {
+post_remove() {
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"
 }

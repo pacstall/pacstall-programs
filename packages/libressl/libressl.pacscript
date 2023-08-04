@@ -29,7 +29,7 @@ package() {
   sudo make install DESTDIR="${pkgdir}"
 }
 
-postinst() {
+post_install() {
   # Configure LibreSSL linker run-time bindings
   sudo ldconfig
 }

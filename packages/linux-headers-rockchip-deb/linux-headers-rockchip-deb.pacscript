@@ -8,6 +8,6 @@ maintainer="Oren Klopfer <oren@taumoda.com>"
 description="Linux kernel header files built for PineTab2 (Mobian kernel)"
 arch=('arm64')
 
-preinst() {
+pre_install() {
   fancy_message warn "This package is deprecated, please switch to ${BBlue}linux-headers-okpine-deb${NC}"
 }

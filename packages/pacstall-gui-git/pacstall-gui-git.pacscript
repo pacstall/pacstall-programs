@@ -22,7 +22,7 @@ package() {
   sudo mv -f ./pacstall-gui.desktop "${pkgdir}/usr/share/applications"
 }
 
-postinst() {
+post_install() {
   sudo chmod -R a+w "${pkgdir}/usr/lib/pacstall-gui"
   sudo update-desktop-database -q
 }

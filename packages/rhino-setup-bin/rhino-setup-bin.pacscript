@@ -26,7 +26,7 @@ package() {
   sudo cp -rf ../usr/* "${pkgdir}/usr"
 }
 
-postinst() {
+post_install() {
   if ! [[ -d "${homedir}/.config/autostart" ]]; then
     mkdir -p "${homedir}/.config/autostart"
   fi
@@ -35,7 +35,7 @@ postinst() {
   fi
 }
 
-removescript() {
+post_remove() {
   if [[ -f "${homedir}/.config/autostart/rhino-setup.desktop" ]]; then
     sudo rm -f "${homedir}/.config/autostart/rhino-setup.desktop"
   fi

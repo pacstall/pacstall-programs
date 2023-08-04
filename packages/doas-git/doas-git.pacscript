@@ -56,12 +56,12 @@ package() {
   sudo install -Dm644 "doas.conf" "${pkgdir}/etc/doas.conf"
 }
 
-postinst() {
+post_install() {
   fancy_message info "Edit the configuration in /etc/doas.conf"
   fancy_message info "by adding your username or other values"
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"

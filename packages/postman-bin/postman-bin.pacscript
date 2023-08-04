@@ -22,12 +22,12 @@ package() {
   sudo chmod +x "${pkgdir}/opt/postman/postman"
 }
 
-postinst() {
+post_install() {
   sudo ln -s -r "/opt/postman/resources/app/assets/icon.png" "/usr/share/icons/hicolor/128x128/apps/postman.png"
   sudo ln -s -r "/opt/postman/Postman" "/usr/bin/postman"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/share/icons/hicolor/128x128/apps/postman.png"
   sudo rm -f "/usr/bin/postman"
 }

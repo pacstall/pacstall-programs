@@ -27,6 +27,6 @@ package() {
   sudo cp -r usr etc "${pkgdir}"
 }
 
-postinst() {
+post_install() {
   sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 }

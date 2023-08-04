@@ -9,6 +9,6 @@ description="Linux kernel image files built for PineTab2 (Mobian kernel)"
 arch=('arm64')
 pacdeps=("linux-headers-rockchip-deb")
 
-preinst() {
+pre_install() {
   fancy_message warn "This package is deprecated, please switch to ${BBlue}linux-image-okpine-deb${NC}"
 }

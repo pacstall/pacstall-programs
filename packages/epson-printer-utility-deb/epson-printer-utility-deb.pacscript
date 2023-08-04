@@ -12,7 +12,7 @@ maintainer="Zahrun <Zahrun@github.com>"
 repology=("project: ${gives}")
 incompatible=("ubuntu:lunar" "ubuntu:mantic" "debian:*")
 
-postinst() {
+post_install() {
   # install .desktop file
   wget -q https://gist.github.com/Zahrun/0759d7356d7b55985292b65642e976f6/raw/c9ef796e550812456dc2990879118ad1a481d792/epson-printer-utility.desktop
   sudo install -Dm644 "${gives}.desktop" "/usr/share/applications/"
@@ -31,7 +31,7 @@ postinst() {
   sudo apt install -y libqtgui4
 }
 
-removescript() {
+post_remove() {
   sudo rm "/usr/share/applications/${gives}.desktop"
   sudo systemctl disable ecbd.service
   sudo systemctl stop ecbd.service

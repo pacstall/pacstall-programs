@@ -29,7 +29,7 @@ package() {
   sudo install -Dm644 "${pkgname}.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
 }
 
-removescript() {
+post_remove() {
   # Delete .librewolf
   if ask "Do you want to delete ~/.librewolf/ files?" Y; then
     rm -rf ~/.librewolf/

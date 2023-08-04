@@ -36,7 +36,7 @@ package() {
   sudo gzip --best "${pkgdir}/usr/share/man/man1/${pkgname}.1"
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"

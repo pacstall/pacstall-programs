@@ -13,6 +13,6 @@ package() {
   sudo install -Dm755 "waf" "${pkgdir}/usr/bin/waf"
 }
 
-postinst() {
+post_install() {
   sudo waf 2> "/dev/null"
 }

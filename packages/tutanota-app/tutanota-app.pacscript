@@ -38,7 +38,7 @@ package() {
   fi
 }
 
-postinst() {
+post_install() {
   # Return early if nothing else to do
   if [[ ${__created_desktop_file} == "yes" ]]; then
     return 0
@@ -52,7 +52,7 @@ postinst() {
   fi
 }
 
-removescript() {
+post_remove() {
   if ask "Do you want to delete desktop and config files?" Y; then
     rm -rf ~/.config/tutanota-desktop/
     rm -rf ~/.local/share/applications/tutanota*

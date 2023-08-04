@@ -26,10 +26,10 @@ package() {
   sudo chmod +x "${pkgdir}/opt/${pkgname}/tidal-hifi"
 }
 
-postinst() {
+post_install() {
   sudo ln -s -r "/opt/${pkgname}/tidal-hifi" "/usr/bin/tidal-hifi"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/tidal-hifi"
 }

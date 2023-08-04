@@ -37,7 +37,7 @@ package() {
   sudo make install DESTDIR="${pkgdir}"
 }
 
-postinst() {
+post_install() {
   sudo "/usr/bin/glib-compile-schemas" "/usr/local/share/glib-2.0/schemas"
   gtk-update-icon-cache
 }

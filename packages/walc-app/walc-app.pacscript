@@ -19,7 +19,7 @@ package() {
   sudo install -Dm755 "${pkgname}.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 }
 
-removescript() {
+post_remove() {
   # Remove .desktop file
   sudo rm -f "${homedir}/.local/share/applications/WALC.desktop"
 

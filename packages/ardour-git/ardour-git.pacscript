@@ -55,7 +55,7 @@ package() {
   sudo install -vDm 644 "./build/gtk2_ardour/ardour.xml" -t "/usr/share/mime/packages/"
 }
 
-postinst() {
+post_install() {
   # Icons
   for size in 16 22 32 48; do
     sudo install -vdm 755 "/usr/share/icons/hicolor/${size}x${size}/mimetypes"
@@ -68,7 +68,7 @@ postinst() {
   done
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/ardour7-copy-mixer"
   sudo rm -f "/usr/bin/ardour7-export"
   sudo rm -f "/usr/bin/ardour7-fix_bbtppq"

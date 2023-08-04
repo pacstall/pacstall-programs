@@ -23,10 +23,10 @@ Terminal=false
 X-AppImage-Version=${version}" | sudo tee "${pkgdir}/usr/share/applications/net.davidotek.pupgui2.desktop" > /dev/null
 }
 
-postinst() {
+post_install() {
   sudo ln -s "/usr/bin/${pkgname}" "/usr/bin/protonup-qt"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/protonup-qt"
 }

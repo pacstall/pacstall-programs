@@ -11,7 +11,7 @@ production="2023.1-beta7"
 version="${production}-2"
 style="(mobile)"
 branch="devel"
-postinst() {
+post_install() {
   echo "PRETTY_NAME=\"Rhino Linux ${production} ${style}\"
 NAME=\"Rhino Linux\"
 VERSION_ID=\"${production}\"

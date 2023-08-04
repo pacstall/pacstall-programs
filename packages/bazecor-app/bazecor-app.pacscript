@@ -26,7 +26,7 @@ Categories=Utility;" | sudo tee "${pkgdir}/usr/share/applications/bazecor.deskto
   sudo install -Dm755 "Bazecor-${version}-x64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 }
 
-postinst() {
+post_install() {
   # Run `lsusb` to get the IDs for the currently attached Dygma keyboard.
   idstring="$(lsusb | grep Dygma | grep -o 'ID.*:[[:alnum:]]*' | sed 's/ID //')"
 
@@ -45,6 +45,6 @@ postinst() {
   sudo udevadm control --reload-rules
 }
 
-removescript() {
+post_remove() {
   sudo rm -f /etc/udev/rules.d/50-dygma.rules
 }

@@ -22,7 +22,7 @@ package() {
   sudo install -Dm644 "${pkgname}.desktop" "${pkgdir}/usr/share/applications/org.wezfurlong.wezterm.desktop"
 }
 
-removescript() {
+post_remove() {
   # Delete wezterm config
   if ask "Do you want to delete ~/.wezterm/ files?" N; then
     rm -rf ~/.config/.wezterm/

@@ -40,7 +40,7 @@ package() {
   sudo make install DESTDIR="${pkgdir}"
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${name}"
   sudo rm -rf "/usr/share/doc/${name}"

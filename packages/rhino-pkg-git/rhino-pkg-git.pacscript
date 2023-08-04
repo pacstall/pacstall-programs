@@ -14,10 +14,10 @@ package() {
   sudo DESTDIR="${pkgdir}" make install
 }
 
-postinst() {
+post_install() {
   sudo ln -sf "/usr/bin/rhino-pkg" "/usr/bin/rpk"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/rpk"
 }

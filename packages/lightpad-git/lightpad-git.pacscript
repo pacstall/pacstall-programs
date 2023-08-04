@@ -18,10 +18,10 @@ package() {
   sudo DESTDIR="${pkgdir}" ninja -C build install
 }
 
-postinst() {
+post_install() {
   sudo ln -sf "/usr/local/bin/com.github.libredeb.lightpad" "/usr/bin/lightpad"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/lightpad"
 }

@@ -13,11 +13,11 @@ package() {
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
 }
 
-postinst() {
+post_install() {
   sudo rm -f "/usr/local/lib/lib${pkgname}.so"
   sudo ln -sf "/usr/local/lib/lib${pkgname}.so.${version}" "/usr/local/lib/lib${pkgname}.so"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/local/lib/lib${pkgname}.so"
 }

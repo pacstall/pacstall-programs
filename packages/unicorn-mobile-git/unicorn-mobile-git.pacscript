@@ -66,7 +66,7 @@ package() {
   sudo cp -r Dot-Transparent "${pkgdir}/usr/share/icons"
 }
 
-postinst() {
+post_install() {
   if ! [[ -d "${homedir}/.config" ]]; then
     mkdir -p "${homedir}/.config"
   fi

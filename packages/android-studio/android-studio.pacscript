@@ -24,7 +24,7 @@ package() {
   sudo chmod -R ugo+rX "${pkgdir}/opt"
 }
 
-postinst() {
+post_install() {
   sudo ln -sf "/opt/${name}/bin/studio.sh" "/usr/bin/${name}"
 
   sudo update-desktop-database -q
@@ -32,7 +32,7 @@ postinst() {
   fancy_message info "Finished installation. Please start Android Studio to configure it!"
 }
 
-removescript() {
+post_remove() {
   sudo update-desktop-database -q
   sudo rm -f "/usr/bin/${name}"
 }

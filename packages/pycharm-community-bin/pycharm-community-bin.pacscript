@@ -27,10 +27,10 @@ package() {
   sudo install -Dm 644 pycharm.desktop -t "${pkgdir}"/usr/share/applications/
 }
 
-postinst() {
+post_install() {
   sudo ln -sf "/usr/share/pycharm/bin/pycharm.sh" "/usr/bin/pycharm"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f /usr/bin/pycharm
 }

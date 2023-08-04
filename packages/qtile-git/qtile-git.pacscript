@@ -20,6 +20,6 @@ package() {
   sudo cp ./resources/qtile.desktop "${pkgdir}"/usr/share/xsessions/qtile.desktop
 }
 
-removescript() {
+post_remove() {
   sudo pip3 uninstall dbus-next setuptools-scm setuptools
 }

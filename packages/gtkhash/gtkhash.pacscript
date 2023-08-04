@@ -18,7 +18,7 @@ package() {
   sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${name}"
 }
 
-removescript() {
+post_remove() {
   sudo rm -rf "/usr/share/licenses/${name}"
   sudo rm -rf "/usr/share/doc/${name}"
 }

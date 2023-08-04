@@ -39,7 +39,7 @@ __set_goroot() {
   echo "export GOROOT=\"${__goroot}\"" | tee -a "$1" > /dev/null
 }
 
-postinst() {
+post_install() {
   for shell_rc in "${__shell_rcs[@]}"; do
     if [[ -f ${shell_rc} ]]; then
       if __goroot_is_set "${shell_rc}"; then
@@ -56,7 +56,7 @@ postinst() {
   echo -e "\tksh: \t. ~/.profile"
 }
 
-removescript() {
+post_remove() {
   for shell_rc in "${__shell_rcs[@]}"; do
     if [[ -f ${shell_rc} ]]; then
       if __goroot_is_set "${shell_rc}"; then

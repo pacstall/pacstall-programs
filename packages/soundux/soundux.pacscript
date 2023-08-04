@@ -26,7 +26,7 @@ package() {
   sudo install -Dm 644 -t "${pkgdir}/usr/share/licenses/${name}" "../LICENSE"
 }
 
-removescript() {
+post_remove() {
   sudo rm -rf "/usr/share/doc/${name}"
   sudo rm -rf "/usr/share/licenses/${name}"
 }

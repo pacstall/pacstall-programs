@@ -28,12 +28,12 @@ package() {
   sudo make install
 }
 
-postinst() {
+post_install() {
   sudo update-alternatives \
     --install /usr/bin/ctags ctags /usr/bin/ctags-universal 30 \
     --slave /usr/share/man/man1/ctags.1 ctags.1.gz /usr/share/man/man1/ctags-universal.1
 }
 
-removescript() {
+post_remove() {
   sudo update-alternatives --remove ctags /usr/bin/ctags-universal
 }

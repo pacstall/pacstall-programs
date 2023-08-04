@@ -28,7 +28,7 @@ package() {
   sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"

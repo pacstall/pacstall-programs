@@ -32,7 +32,7 @@ package() {
   sudo install -Dm644 "../LICENSE" "${pkgdir}/usr/share/licenses/task/LICENSE"
 }
 
-removescript() {
+post_remove() {
   sudo rm -rf "/usr/share/bash-completion/completions/task"
   sudo rm -rf "/usr/share/fish/vendor_completions.d/task.fish"
 

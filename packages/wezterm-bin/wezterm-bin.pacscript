@@ -27,12 +27,12 @@ package() {
   sudo install -Dm755 "${SRCDIR}/wezterm/etc/profile.d/wezterm.sh" "${pkgdir}/etc/profile.d/wezterm.sh"
 }
 
-postinst() {
+post_install() {
   # Run wezterm.sh script to hook up shell integration
   sudo "/etc/profile.d/wezterm.sh"
 }
 
-removescript() {
+post_remove() {
   # Remove additional files
   sudo rm -f "/usr/share/bash-completions/wezterm"
   sudo rm -f "/usr/share/icons/hicolor/128x128/apps/org.wezfurlong.wezterm.png"

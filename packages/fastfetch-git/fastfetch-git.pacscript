@@ -56,7 +56,7 @@ package() {
   sudo cp -r presets/* "${pkgdir}/usr/share/${pkgname}/presets"
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"

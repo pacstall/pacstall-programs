@@ -35,7 +35,7 @@ X-AppImage-Version=2.4.2' | sudo tee "${pkgdir}/usr/share/applications/an-anime-
 
 }
 
-removescript() {
+post_remove() {
   if ask "Do you want to delete all launcher files(~/.local/share/anime-game-launcher)? This includes configs and the game" Y; then
     rm -rf ~/.local/share/anime-game-launcher
   fi

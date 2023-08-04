@@ -23,10 +23,10 @@ package() {
   sudo chmod 755 "${pkgdir}/opt/${name}/bin/smartgit.sh"
 }
 
-postinst() {
+post_install() {
   sudo ln -s "/opt/${name}/bin/smartgit.sh" "/usr/bin/smartgit"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/smartgit"
 }

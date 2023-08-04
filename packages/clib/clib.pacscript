@@ -18,7 +18,7 @@ package() {
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
 }
 
-removescript() {
+post_remove() {
   sudo rm -rf "/usr/share/licenses/${name}"
 }
 # vim:set ft=sh ts=2 sw=2 et:
