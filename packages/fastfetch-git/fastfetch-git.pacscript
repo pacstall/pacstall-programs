@@ -8,8 +8,9 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fastfetch-git"
 pkgname="fastfetch"
-description="Like neofetch, but much faster because written in c"
+pkgdesc="Like neofetch, but much faster because written in c"
 url="https://github.com/LinusDierheimer/fastfetch.git"
+pkgver="1.12.2"
 makedepends=("cmake" "libpci-dev" "libvulkan-dev" "libx11-dev" "libxrandr-dev" "libwayland-client0" "libwayland-dev" "libgio-cil" "libglib2.0-dev" "libdconf-dev" "libxfconf-0-dev")
 optdepends=("libpci-dev: GPU output"
   "libvulkan-dev: GPU fallback"
@@ -22,11 +23,9 @@ optdepends=("libpci-dev: GPU output"
   # "libsqlite3-dev: RPM package count"
 )
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
-
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" dev | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 build() {
   # Build fastfetch

@@ -1,10 +1,10 @@
 name="vscode-insiders-deb"
 arch=("amd64" "arm64" "armhf")
 gives="code-insiders"
-version="1.81-insiders"
-pkgversion="1.81.0"
+pkgver="1.81-insiders"
+pkgpkgver="1.81.0"
 homepage="https://code.visualstudio.com/"
-description="lightweight but powerful source code editor"
+pkgdesc="lightweight but powerful source code editor"
 project=("project: vscode-insiders")
 maintainer="Diegiwg <diegiwg@gmail.com>"
 

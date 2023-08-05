@@ -4,11 +4,11 @@ pacdeps=("unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-gi
 if [[ -f /usr/lib/systemd/system/modem-start.service ]]; then
   depends=("eg25-manager" "modemmanager" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "purple-mm-sms" "ofono" "ofono-scripts")
 fi
-description="Transitional package to provide all core Rhino Linux Mobile software"
+pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-server-core")
 production="2023.1-beta7"
-version="${production}-2"
+pkgver="${production}-2"
 style="(mobile)"
 branch="devel"
 post_install() {

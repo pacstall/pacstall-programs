@@ -1,19 +1,18 @@
 name="youtube-dl-git"
 pkgname="youtube-dl"
 url="https://github.com/ytdl-org/youtube-dl.git"
-description="Command-line program to download videos from YouTube.com and other video sites"
+pkgver="2021.12.17"
+pkgdesc="Command-line program to download videos from YouTube.com and other video sites"
 makedepends=("make" "pandoc" "python3")
 depends=("python3")
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
 pkgver() {
-  # find latest tag name
-  git ls-remote --sort='version:refname' --tags "${url}" | grep -v '\^{}$' | tail --line=1 | cut --delimiter='/' --fields=3
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 prepare() {
   git fetch --all --tags --prune
-  git checkout "tags/${version}" -b "${version}"
+  git checkout "tags/${pkgver}" -b "${pkgver}"
 }
 
 package() {

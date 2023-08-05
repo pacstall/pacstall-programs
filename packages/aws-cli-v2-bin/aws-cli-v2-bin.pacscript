@@ -1,8 +1,8 @@
 name="aws-cli-v2-bin"
 pkgname="aws-cli-v2"
-version="2.13.2"
-url="https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${version}.zip"
-description="Universal Command Line Interface for Amazon Web Services v2"
+pkgver="2.13.2"
+url="https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${pkgver}.zip"
+pkgdesc="Universal Command Line Interface for Amazon Web Services v2"
 depends=("groff" "less")
 makedepends=("unzip")
 replace=("awscli")

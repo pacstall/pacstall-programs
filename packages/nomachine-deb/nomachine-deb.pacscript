@@ -1,11 +1,11 @@
 name="nomachine-deb"
 gives="nomachine"
 repology=("project: ${gives}")
-version="8.4.2_1"
+pkgver="8.4.2_1"
 breaks=("${gives}-bin" "${gives}-app" "${gives}-git")
 replace=("${gives}")
 hash="0934b3cf8468d3748a84a084b5eebd4c06974499e29a1f512ae61488357962fa"
-url="https://download.nomachine.com/download/8.4/Linux/${gives}_${version}_${CARCH}.deb"
-description="Remote desktop software designed for anyone who wants to access a single or multiple computers."
+url="https://download.nomachine.com/download/8.4/Linux/${gives}_${pkgver}_${CARCH}.deb"
+pkgdesc="Remote desktop software designed for anyone who wants to access a single or multiple computers."
 arch=('amd64')
 maintainer="Cameron Computer <cameron.computer@pm.me>"

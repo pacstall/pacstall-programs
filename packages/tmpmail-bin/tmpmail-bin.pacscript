@@ -8,9 +8,9 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="tmpmail-bin"
 pkgname="tmpmail"
-version="1.2.3"
-description="A temporary email right from your terminal written in POSIX sh"
-url="https://github.com/sdushantha/tmpmail/archive/refs/tags/v${version}.tar.gz"
+pkgver="1.2.3"
+pkgdesc="A temporary email right from your terminal written in POSIX sh"
+url="https://github.com/sdushantha/tmpmail/archive/refs/tags/v${pkgver}.tar.gz"
 depends=("w3m" "curl" "jq")
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")

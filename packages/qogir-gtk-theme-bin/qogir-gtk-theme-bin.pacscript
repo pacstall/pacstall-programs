@@ -8,9 +8,9 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="qogir-gtk-theme-bin"
 pkgname="qogir-gtk-theme"
-version="2023-02-27"
-description="Qogir is a flat Design theme for GTK"
-url="https://github.com/vinceliuice/Qogir-theme/archive/${version}.tar.gz"
+pkgver="2023-02-27"
+pkgdesc="Qogir is a flat Design theme for GTK"
+url="https://github.com/vinceliuice/Qogir-theme/archive/${pkgver}.tar.gz"
 depends=("gtk2-engines-murrine" "gtk2-engines-pixbuf")
 makedepends=("libsass1")
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")

@@ -1,8 +1,8 @@
 name="obsidian-deb"
 gives="obsidian"
-version="1.3.5"
-url="https://github.com/obsidianmd/obsidian-releases/releases/download/v${version}/obsidian_${version}_amd64.deb"
-description="Powerful and extensible knowledge base editor that uses markdown"
+pkgver="1.3.5"
+url="https://github.com/obsidianmd/obsidian-releases/releases/download/v${pkgver}/obsidian_${pkgver}_amd64.deb"
+pkgdesc="Powerful and extensible knowledge base editor that uses markdown"
 hash="7c668295015aa743ce350de233569fa0e6e807e1e736193be9192dbec16919a2"
 maintainer="Hepno <me@hepno.dev>"
 arch=("amd64")

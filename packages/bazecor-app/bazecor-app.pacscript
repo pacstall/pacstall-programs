@@ -1,9 +1,9 @@
 name="bazecor-app"
 pkgname="bazecor"
-version="1.3.1"
+pkgver="1.3.1"
 gives="bazecor"
-description="Bazecor is the graphical configurator for the Dygma Raise"
-url="https://github.com/Dygmalab/Bazecor/releases/download/bazecor-${version}/Bazecor-${version}-x64.AppImage"
+pkgdesc="Bazecor is the graphical configurator for the Dygma Raise"
+url="https://github.com/Dygmalab/Bazecor/releases/download/bazecor-${pkgver}/Bazecor-${pkgver}-x64.AppImage"
 depends=("usbutils" "udev")
 hash="bbb668f707f5e81aa6521b9fccf3df145d6112df85aa1f04f01b94e9b45c3f1e"
 breaks=("bazecor" "bazecor-bin" "bazecor-deb" "bazecor-git")
@@ -20,10 +20,10 @@ Terminal=false
 Type=Application
 Icon=bazecor
 StartupWMClass=Bazecor
-X-AppImage-Version=${version}
+X-AppImage-Version=${pkgver}
 Categories=Utility;" | sudo tee "${pkgdir}/usr/share/applications/bazecor.desktop" > /dev/null
   sudo wget -q https://raw.githubusercontent.com/Elsie19/images/master/bazecor.png -O "${pkgdir}/usr/share/icons/hicolor/256x256/apps/bazecor.png"
-  sudo install -Dm755 "Bazecor-${version}-x64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "Bazecor-${pkgver}-x64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 }
 
 post_install() {

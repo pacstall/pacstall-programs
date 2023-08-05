@@ -2,9 +2,9 @@ maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 
 name="go-bin"
 pkgname="go"
-version="1.20.6"
-description="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
-url="https://go.dev/dl/go${version}.linux-amd64.tar.gz"
+pkgver="1.20.6"
+pkgdesc="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+url="https://go.dev/dl/go${pkgver}.linux-amd64.tar.gz"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-app" "${pkgname}-deb" "golang" "golang-git" "golang-deb" "golang-bin" "golang-app" "golang-go")
 gives="golang-go"
 replace=("golang-go")

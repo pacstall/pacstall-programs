@@ -3,12 +3,12 @@
 maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 
 name="mutt-wizard"
-version="3.3.1"
-url="https://github.com/lukesmithxyz/${name}/archive/v${version}.tar.gz"
+pkgver="3.3.1"
+url="https://github.com/lukesmithxyz/${name}/archive/v${pkgver}.tar.gz"
 repology=("project: mutt-wizard")
 depends=("neomutt" "isync" "msmtp" "notmuch" "pass" "curl")
 breaks=("mutt-wizard" "mutt-wizard-git")
-description="Simple interface to auto-configure neomutt and isync with safe passwords"
+pkgdesc="Simple interface to auto-configure neomutt and isync with safe passwords"
 hash="4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53"
 
 # Some optional dependencies don't currently have an ubuntu package as far as I know,

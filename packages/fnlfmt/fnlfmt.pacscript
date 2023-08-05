@@ -12,9 +12,9 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fnlfmt"
-version="0.3.0"
-description="A more intuitive version of du in rust"
-url="https://git.sr.ht/~technomancy/fnlfmt/archive/${version}.tar.gz"
+pkgver="0.3.0"
+pkgdesc="A more intuitive version of du in rust"
+url="https://git.sr.ht/~technomancy/fnlfmt/archive/${pkgver}.tar.gz"
 gives="${pkgname}"
 breaks=("${pkgname}-bin" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 depends=("lua5.3")

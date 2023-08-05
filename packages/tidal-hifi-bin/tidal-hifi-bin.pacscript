@@ -1,9 +1,9 @@
 name="tidal-hifi-bin"
 pkgname="tidal-hifi"
-version="5.3.0"
-description="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
+pkgver="5.3.0"
+pkgdesc="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
 repology=("project: tidal-hifi" "visiblename: tidal-hifi-bin")
-url="https://github.com/Mastermindzh/tidal-hifi/releases/download/${version}/tidal-hifi-${version}.tar.gz"
+url="https://github.com/Mastermindzh/tidal-hifi/releases/download/${pkgver}/tidal-hifi-${pkgver}.tar.gz"
 hash="5d04c081e2c011b07598fe11c75a3de71e28d1cc6b5aec8511a08ba91bc46f23"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
@@ -22,7 +22,7 @@ package() {
   # Install the rest of the app
   sudo install -d "${pkgdir}/opt/${pkgname}/" "${pkgdir}/usr/bin"
 
-  sudo cp -r "${SRCDIR}/tidal-hifi-${version}/"* "${pkgdir}/opt/${pkgname}/"
+  sudo cp -r "${SRCDIR}/tidal-hifi-${pkgver}/"* "${pkgdir}/opt/${pkgname}/"
   sudo chmod +x "${pkgdir}/opt/${pkgname}/tidal-hifi"
 }
 

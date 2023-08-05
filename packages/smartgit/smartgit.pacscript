@@ -1,8 +1,8 @@
 name="smartgit"
-version="22.1.7"
+pkgver="22.1.7"
 url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-${version//./_}.tar.gz"
 depends=("git" "libgtk-3-0" "libcurl4")
-description="Graphical Git client with support for GitHub, Bitbucket and GitLab"
+pkgdesc="Graphical Git client with support for GitHub, Bitbucket and GitLab"
 hash="138cd50d6afd604de39ed907a20d3e63ac551c9cf643c0262d60f1b84abeec81"
 maintainer="echometerain <echometer@disroot.org>"
 repology=("project: smartgit")

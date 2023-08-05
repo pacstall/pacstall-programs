@@ -1,10 +1,10 @@
 name="libxapp1-deb"
 gives="libxapp1"
-version="2.6.1"
+pkgver="2.6.1"
 repology=("project: xapps")
 pacdeps=("xapps-common-deb")
-url="http://packages.linuxmint.com/pool/backport/x/xapp/libxapp1_${version}+victoria_amd64.deb"
+url="http://packages.linuxmint.com/pool/backport/x/xapp/libxapp1_${pkgver}+victoria_amd64.deb"
 hash="17d1a1ee0b56a2c1a6e6a01cf727bf3dfa620c7a1e6f42d79672e8c790583fc8"
 arch=('amd64')
-description="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
+pkgdesc="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
 maintainer="Zahrun <Zahrun@github.com>"

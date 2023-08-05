@@ -1,13 +1,13 @@
 name="nodejs-lts-deb"
 pkgname="nodejs"
-_major_version="18"
-version="18.15.0"
+_major_pkgver="18"
+pkgver="18.15.0"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
 replace=("${pkgname}" "node")
 gives="${pkgname}"
-description="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine"
+pkgdesc="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine"
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 hash="c253e9021faf026115d45ae8ea56f5c587483baebeab1394578c3cd1d44d9c64"
 arch=('amd64')
-url="https://deb.nodesource.com/node_${_major_version}.x/pool/main/n/nodejs/nodejs_${version}-deb-1nodesource1_amd64.deb"
+url="https://deb.nodesource.com/node_${_major_version}.x/pool/main/n/nodejs/nodejs_${pkgver}-deb-1nodesource1_amd64.deb"
 repology=("project: nodejs" "repo: centos_stream_9")

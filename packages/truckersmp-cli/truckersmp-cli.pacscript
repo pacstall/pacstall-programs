@@ -1,11 +1,11 @@
 name="truckersmp-cli"
 pkgname="truckersmp-cli"
-version=0.10.1
+pkgver=0.10.1
 repology=("project: truckersmp-cli")
 breaks=("${pkgname}-git")
 gives="truckersmp-cli"
-description="A simple launcher to play ATS and ETS2 with Multiplayer through TruckersMP."
-url="https://github.com/truckersmp-cli/truckersmp-cli/archive/refs/tags/${version}.tar.gz"
+pkgdesc="A simple launcher to play ATS and ETS2 with Multiplayer through TruckersMP."
+url="https://github.com/truckersmp-cli/truckersmp-cli/archive/refs/tags/${pkgver}.tar.gz"
 hash="3f5e0289d06d5bdc39f86879283c7184adaa60eb06a3b4e481095da816121c16"
 maintainer="badlydrawnface <bdface@proton.me>"
 makedepends=("python3-setuptools" "gcc-mingw-w64" "libsdl2-dev")

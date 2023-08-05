@@ -1,9 +1,9 @@
 name="linux-headers-stable-deb"
 gives="linux-headers-6.4.8-060408"
-version="6.4.8"
+pkgver="6.4.8"
 buildver="6.4.8-060408.202308041557"
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_all.deb"
-description="Ubuntu Linux stable kernel (Headers)"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb"
+pkgdesc="Ubuntu Linux stable kernel (Headers)"
 hash="d7c55ad0a7a137b9d8088278a345ff8bd872903bd87e7bcb0308ac8e3389a6c2"
 arch=('any')
 maintainer="Oren Klopfer <oren@taumoda.com>"

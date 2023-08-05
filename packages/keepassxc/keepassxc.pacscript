@@ -1,8 +1,8 @@
 name="keepassxc"
-version="2.7.5"
-description="Cross-platform community-driven port of Keepass password manager"
+pkgver="2.7.5"
+pkgdesc="Cross-platform community-driven port of Keepass password manager"
 repology=("project: keepassxc")
-url="https://github.com/keepassxreboot/keepassxc/releases/download/${version}/keepassxc-${version}-src.tar.xz"
+url="https://github.com/keepassxreboot/keepassxc/releases/download/${pkgver}/keepassxc-${pkgver}-src.tar.xz"
 hash="ede24800901816c49569aa4f8bc7180a40cb8b554617fa2a2a2653caac13000c"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="org.freedesktop.secrets"

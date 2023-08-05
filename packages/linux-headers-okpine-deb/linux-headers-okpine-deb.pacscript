@@ -1,9 +1,9 @@
 name="linux-headers-okpine-deb"
-version="6.5.0-rc4"
-gives="linux-headers-${version}-okpine"
-url="https://github.com/oklopfer/debs/raw/master/kernel/${version}/${gives}_${version}-1_arm64.deb"
+pkgver="6.5.0-rc4"
+gives="linux-headers-${pkgver}-okpine"
+url="https://github.com/oklopfer/debs/raw/master/kernel/${pkgver}/${gives}_${pkgver}-1_arm64.deb"
 hash="c2e18f84000cce30495d8bf6b34b9636d3e530842757521dbf4ab7a143371685"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-description="Linux kernel header files built for Pine64 devices"
+pkgdesc="Linux kernel header files built for Pine64 devices"
 arch=('arm64')
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")

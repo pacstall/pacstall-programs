@@ -1,14 +1,14 @@
 name="rhino-pkg-git"
 url="https://github.com/rhino-linux/rhino-pkg.git"
+pkgver="0.0.1"
 gives="rhino-pkg"
 makedepends=("make" "gettext")
 depends=("gettext")
-description="Rhino-pkg wrapper script"
+pkgdesc="Rhino-pkg wrapper script"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 package() {
   sudo DESTDIR="${pkgdir}" make install
