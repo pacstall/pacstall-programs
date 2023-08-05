@@ -1,11 +1,14 @@
 name="fm6000-git"
-version="5.0"
+pkgver="0.0.1"
 url="https://github.com/anhsirk0/fetch-master-6000.git"
 depends=("perl")
 breaks=("fm6000")
 gives="fm6000"
-description="A simple fetch tool written in Perl"
+pkgdesc="A simple fetch tool written in Perl"
 hash="d0127441a11db8d640a28753a8494a5155514e161415ca7b2c5ab3b33024517f"
+pkgver() {
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+}
 
 build() {
   chmod +x fm6000.pl

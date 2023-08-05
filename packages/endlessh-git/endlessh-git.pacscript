@@ -3,12 +3,12 @@ pkgname="endlessh"
 gives="endlessh"
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-bin")
 url="https://github.com/skeeto/endlessh.git"
-description="SSH tarpit that very slowly sends an endless, random SSH banner"
+pkgver="1.1"
+pkgdesc="SSH tarpit that very slowly sends an endless, random SSH banner"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 prepare() {
   # Download sample config
@@ -30,7 +30,7 @@ package() {
   sudo install -Dm644 sample-config "${pkgdir}/etc/endlessh/config"
 }
 
-removescript() {
+post_remove() {
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"
 }

@@ -1,14 +1,14 @@
 name="lyrebird-git"
 gives="lyrebird"
-description="Simple and powerful voice changer for Linux, written in GTK 3"
+pkgdesc="Simple and powerful voice changer for Linux, written in GTK 3"
 url="https://github.com/lyrebird-voice-changer/lyrebird.git"
+pkgver="1.1.0"
 maintainer="D-Brox <BroxZuka@protonmail.com>"
 depends=("python3" "libgtk-3-dev" "python3-gi" "python3-gi-cairo" "gir1.2-gtk-3.0" "sox" "libsox-fmt-pulse" "pulseaudio")
-build_depends=("python3-pip")
+makedepends=("python3-pip")
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 package() {
   sudo INSTALL_PREFIX="${pkgdir}/usr/local" ./install.sh

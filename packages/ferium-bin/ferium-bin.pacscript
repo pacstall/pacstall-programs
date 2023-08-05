@@ -3,10 +3,10 @@ pkgname="ferium"
 breaks=("${pkgname}")
 replace=("${pkgname}-git")
 repology=("project: ${pkgname}")
-version="4.4.0"
-url="https://github.com/gorilla-devs/${pkgname}/releases/download/v${version}/${pkgname}-linux-nogui.zip"
+pkgver="4.4.0"
+url="https://github.com/gorilla-devs/${pkgname}/releases/download/v${pkgver}/${pkgname}-linux-nogui.zip"
 hash="e1d7e89c529581e793c887abfeddd89e68024c777f336e41f6623777cff6f05c"
-description="Fast and multi-source CLI program for managing Minecraft mods"
+pkgdesc="Fast and multi-source CLI program for managing Minecraft mods"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 
 package() {

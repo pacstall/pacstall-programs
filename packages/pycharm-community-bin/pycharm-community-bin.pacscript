@@ -1,10 +1,10 @@
 name="pycharm-community-bin"
-version="2023.1.4"
+pkgver="2023.1.4"
 pkgname="pycharm-community"
 gives="pycharm-community"
 maintainer="ObsidianPresidium <emil@aarestrup.nu>"
-description="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
-url="https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz"
+pkgdesc="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
+url="https://download.jetbrains.com/python/pycharm-community-${pkgver}.tar.gz"
 hash="4def30bc442113605b907586ee087bc72e75fc63d826b9a9e16cd97dbb467309"
 desktop_file_sum="0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04"
 repology=("project: pycharm")
@@ -27,10 +27,10 @@ package() {
   sudo install -Dm 644 pycharm.desktop -t "${pkgdir}"/usr/share/applications/
 }
 
-postinst() {
+post_install() {
   sudo ln -sf "/usr/share/pycharm/bin/pycharm.sh" "/usr/bin/pycharm"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f /usr/bin/pycharm
 }

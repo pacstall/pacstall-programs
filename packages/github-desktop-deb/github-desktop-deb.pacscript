@@ -1,10 +1,10 @@
 name="github-desktop-deb"
 pkgname="github-desktop"
 gives="github-desktop"
-version="3.2.5"
-url="https://github.com/shiftkey/desktop/releases/download/release-${version}-linux1/GitHubDesktop-linux-${version}-linux1.deb"
+pkgver="3.2.5"
+url="https://github.com/shiftkey/desktop/releases/download/release-${pkgver}-linux1/GitHubDesktop-linux-${pkgver}-linux1.deb"
 homepage='https://desktop.github.com/'
 repology=("project: github-desktop" "visiblename: github-desktop" "repo: aur")
-description="GitHub Desktop is an open source Electron-based GitHub app written in TypeScript and uses React."
+pkgdesc="GitHub Desktop is an open source Electron-based GitHub app written in TypeScript and uses React."
 hash="a7eaabf7f68441c7e4280ac2de84f22228c791a3732ee9b7c577929cd7b181b5"
 maintainer="Elsie19 <hwengerstickel@pm.me>"

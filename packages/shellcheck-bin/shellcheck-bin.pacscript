@@ -1,9 +1,9 @@
 name="shellcheck-bin"
-version="0.9.0"
+pkgver="0.9.0"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-description="Gives warnings and suggestions for bash/sh shell scripts"
+pkgdesc="Gives warnings and suggestions for bash/sh shell scripts"
 hash="700324c6dd0ebea0117591c6cc9d7350d9c7c5c287acbad7630fa17b1d4d9e2f"
-url="https://github.com/koalaman/shellcheck/releases/download/v${version}/shellcheck-v${version}.linux.x86_64.tar.xz"
+url="https://github.com/koalaman/shellcheck/releases/download/v${pkgver}/shellcheck-v${pkgver}.linux.x86_64.tar.xz"
 homepage='https://www.shellcheck.net/'
 arch=('amd64')
 maintainer="Elsie19 <hwengerstickel@pm.me>"

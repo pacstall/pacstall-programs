@@ -1,10 +1,10 @@
 name="mcontrolcenter-bin"
 gives="mcontrolcenter"
-version="0.4.0"
+pkgver="0.4.0"
 depends=("libqt5widgets5")
-url="https://github.com/dmitry-s93/MControlCenter/releases/download/${version}/MControlCenter-${version}-bin.tar.gz"
+url="https://github.com/dmitry-s93/MControlCenter/releases/download/${pkgver}/MControlCenter-${pkgver}-bin.tar.gz"
 repology=("project: mcontrolcenter")
-description="MControlCenter is a Free and Open Source GNU/Linux application that allows you to change the settings of MSI laptops."
+pkgdesc="MControlCenter is a Free and Open Source GNU/Linux application that allows you to change the settings of MSI laptops."
 hash="4c7afafd113c83c3e21520aa17b99d50b521e67ac3c1a0cbd9e3f703db601731"
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
 
@@ -18,7 +18,7 @@ package() {
   sudo install -Dm644 "${gives}.helper.service" "${pkgdir}/usr/share/dbus-1/system-services/${gives}.helper.service"
 }
 
-postinst() {
+post_install() {
   if ask "Do you want this program to start at startup?" Y; then
     sudo -u "${PACSTALL_USER}" mkdir -p "${homedir}/.config/autostart"
     sudo -u "${PACSTALL_USER}" cp /usr/share/applications/mcontrolcenter.desktop "${homedir}/.config/autostart/mcontrolcenter.desktop"
@@ -28,7 +28,7 @@ postinst() {
   fi
 }
 
-removescript() {
+post_remove() {
   if [[ -f "${homedir}/.config/autostart/mcontrolcenter.desktop" ]]; then
     rm -f "${homedir}/.config/autostart/mcontrolcenter.desktop"
     fancy_message info "Config file for auto-start is removed"

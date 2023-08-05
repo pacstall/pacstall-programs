@@ -1,10 +1,10 @@
 name="discord"
-version="0.0.28"
+pkgver="0.0.28"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
-url="https://dl.discordapp.net/apps/linux/${version}/${name}-${version}.tar.gz"
+url="https://dl.discordapp.net/apps/linux/${pkgver}/${name}-${pkgver}.tar.gz"
 homepage='https://discord.com/'
 depends=("libc6" "libasound2" "libatomic1" "libgconf-2-4" "libnotify4" "libnspr4" "libnss3" "libstdc++6" "libxss1" "libxtst6" "libayatana-appindicator3-1" "libc++1")
-description="Chat for Communities and Friends"
+pkgdesc="Chat for Communities and Friends"
 hash="270c55566fd02012e857243615ffcc5f4e9436067e740b03f7ad06b0283533e5"
 arch=('amd64')
 repology=("project: ${name}")

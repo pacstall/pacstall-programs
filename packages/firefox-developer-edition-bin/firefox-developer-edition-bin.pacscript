@@ -1,9 +1,9 @@
 name="firefox-developer-edition-bin"
 maintainer="Paul Cosma (saenai255) <paul.cosma97@gmail.com>"
 pkgname="firefox-developer-edition"
-version="116.0b7"
-description="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
-url="https://download-installer.cdn.mozilla.net/pub/devedition/releases/${version}/linux-x86_64/en-US/firefox-${version}.tar.bz2"
+pkgver="116.0b7"
+pkgdesc="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
+url="https://download-installer.cdn.mozilla.net/pub/devedition/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.bz2"
 homepage='https://www.mozilla.org/en-US/firefox/developer/'
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="97123ea2ae4e7cfb064fca62504995f5cc6528ef78c551d803e196c3e0b2c6e3"

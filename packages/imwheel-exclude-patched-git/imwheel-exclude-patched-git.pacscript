@@ -1,12 +1,12 @@
 name="imwheel-exclude-patched-git"
 url="https://github.com/ajh3/imwheel-exclude-patched.git"
-build_depends=("libx11-dev" "libxtst-dev" "libxmu-dev")
+pkgver="0.0.1"
+makedepends=("libx11-dev" "libxtst-dev" "libxmu-dev")
 breaks=("imwheel")
-description="This project is a fork of imwheel's final official release containing only one change — a patch that repairs imwheel's broken @Exclude command"
+pkgdesc="This project is a fork of imwheel's final official release containing only one change — a patch that repairs imwheel's broken @Exclude command"
 pkgver() {
   git ls-remote "${url}" refs/heads/master | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 prepare() {
   ./configure --disable-gpm-doc

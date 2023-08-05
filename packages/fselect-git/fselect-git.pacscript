@@ -1,18 +1,17 @@
 name="fselect-git"
-pkgname="fselect"
 gives="fselect"
-build_depends=("cargo" "rustc")
-description="Find files with SQL-like queries"
+makedepends=("cargo" "rustc")
+pkgdesc="Find files with SQL-like queries"
 url="https://github.com/jhspetersson/fselect.git"
+pkgver="0.8.4"
 maintainer="Diego Magdaleno <diegomagdaleno@pm.me>"
 incompatible=("debian:bullseye")
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 build() {
-  cargo build -j"$(nproc)" --release --locked
+  cargo build -j"${NCPU}" --release --locked
 }
 
 package() {

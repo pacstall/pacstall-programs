@@ -1,11 +1,11 @@
 name="amfora-bin"
 pkgname="amfora"
-version="1.9.2"
+pkgver="1.9.2"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-description="Amfora aims to be the best looking Gemini client with the most features"
+pkgdesc="Amfora aims to be the best looking Gemini client with the most features"
 hash="a468f97f0e3fa1d69868980fd0e5893388ccd9c849874d26e4d0b426fd6bff3e"
-url="https://github.com/makeworld-the-better-one/amfora/releases/download/v${version}/amfora_${version}_linux_64-bit"
+url="https://github.com/makeworld-the-better-one/amfora/releases/download/v${pkgver}/amfora_${pkgver}_linux_64-bit"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 repology=("project: ${pkgname}")
 
@@ -25,5 +25,5 @@ prepare() {
 package() {
   sudo install -Dm644 amfora.png "${pkgdir}/usr/share/pixmaps/amfora.png"
   sudo install -Dm644 amfora.desktop "${pkgdir}/usr/share/applications/amfora.desktop"
-  sudo install -Dm755 "amfora_${version}_linux_64-bit" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "amfora_${pkgver}_linux_64-bit" "${pkgdir}/usr/bin/${pkgname}"
 }

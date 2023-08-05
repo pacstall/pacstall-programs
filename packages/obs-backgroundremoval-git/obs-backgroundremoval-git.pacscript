@@ -1,18 +1,18 @@
 name="obs-backgroundremoval-git"
 pkgname="obs-backgroundremoval"
 url="https://github.com/royshil/obs-backgroundremoval.git"
-build_depends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libsimde-dev" "ninja-build")
+pkgver="1.1.3"
+makedepends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libsimde-dev" "ninja-build")
 pacdeps=("cmake-deb")
 breaks=("${pkgname}")
 replace=("${pkgname}")
 gives=("${pkgname}")
 arch=('amd64')
-description="OBS plugin to replace the background in portrait images and video"
+pkgdesc="OBS plugin to replace the background in portrait images and video"
 maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {
   git ls-remote "${url}" refs/heads/main | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 incompatible=('ubuntu:jammy' 'ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'debian:bullseye')
 
 build() {

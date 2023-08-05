@@ -7,9 +7,9 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="oil"
-version="0.16.0"
-description="A bash-compatible UNIX shell written in Python"
-url="https://www.oilshell.org/download/oil-${version}.tar.xz"
+pkgver="0.16.0"
+pkgdesc="A bash-compatible UNIX shell written in Python"
+url="https://www.oilshell.org/download/oil-${pkgver}.tar.xz"
 gives="oil"
 breaks=("${name}-bin" "${name}-git" "${name}-deb" "${name}-app")
 hash="7111c8a8571d1a6d1d620131bc67f377dd8fe6224edbeff249e1d5d68f1dd566"
@@ -27,7 +27,7 @@ build() {
 
   # We want this to expand
   # shellcheck disable=SC2248
-  make -j"$(nproc)" "${MAKEFLAGS[@]}"
+  make -j"${NCPU}" "${MAKEFLAGS[@]}"
 }
 
 package() {

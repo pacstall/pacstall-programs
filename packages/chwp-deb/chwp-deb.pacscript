@@ -1,11 +1,11 @@
 name="chwp-deb"
-version="1.204.0"
+pkgver="1.204.0"
 gives="chwp"
 breaks=("${gives}")
 replace=("${gives}")
 repology=("project: ${gives}")
-url="https://github.com/RouHim/chwp/releases/download/v${version}/chwp-x86-64.deb"
-description="Changes the wallpaper from the command line"
+url="https://github.com/RouHim/chwp/releases/download/v${pkgver}/chwp-x86-64.deb"
+pkgdesc="Changes the wallpaper from the command line"
 maintainer="Rouven Himmelstein <rouven@himmelstein.info>"
 hash="18b91bdd5dd33e1d789229ad121755cbabe8fdf02751de27bc4df78193abd391"
 arch=('amd64')

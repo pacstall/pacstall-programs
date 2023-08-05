@@ -1,10 +1,10 @@
 name="aws-cli-v2-bin"
 pkgname="aws-cli-v2"
-version="2.13.2"
-url="https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${version}.zip"
-description="Universal Command Line Interface for Amazon Web Services v2"
+pkgver="2.13.2"
+url="https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${pkgver}.zip"
+pkgdesc="Universal Command Line Interface for Amazon Web Services v2"
 depends=("groff" "less")
-build_depends=("unzip")
+makedepends=("unzip")
 replace=("awscli")
 repology=("project: awscli")
 arch=('amd64')
@@ -19,7 +19,7 @@ package() {
   sudo install -Dm644 aws-cli_bash_completion "${pkgdir}/etc/bash_completion.d/${pkgname}"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f /usr/local/bin/aws
   sudo rm -f /usr/local/bin/aws_completer
   sudo rm -rf /usr/local/aws-cli/

@@ -1,10 +1,10 @@
 name="micro"
 pkgname="micro"
-version="2.0.11"
-description="A modern and intuitive terminal-based text editor"
+pkgver="2.0.11"
+pkgdesc="A modern and intuitive terminal-based text editor"
 maintainer="edward-riley <edward@edwardriley.co.uk>"
-url="https://github.com/zyedidia/micro/releases/download/v${version}/micro-${version}-linux64.tar.gz"
-build_depends=("build-essential")
+url="https://github.com/zyedidia/micro/releases/download/v${pkgver}/micro-${pkgver}-linux64.tar.gz"
+makedepends=("build-essential")
 gives="micro"
 breaks="micro"
 hash="7d820c9247f7348196fef9cf151982433e5d787adc34d81ae26d8d5979b930fe"

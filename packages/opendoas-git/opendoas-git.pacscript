@@ -8,20 +8,19 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="opendoas-git"
 pkgname="opendoas"
-description="A portable fork of the OpenBSD doas command"
+pkgdesc="A portable fork of the OpenBSD doas command"
 url="https://github.com/Duncaen/OpenDoas.git"
-build_depends=("bison" "libpam0g-dev")
+pkgver="6.8.2"
+makedepends=("bison" "libpam0g-dev")
 breaks=("${pkgname}" "${pkgname}-bin")
-
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 build() {
   ./configure --prefix=/usr --with-timestamp
   # Build rquired files
-  make -j"$(nproc)" DESTDIR="${pkgdir}"
+  make -j"${NCPU}" DESTDIR="${pkgdir}"
 }
 
 package() {
@@ -39,7 +38,7 @@ package() {
   echo "permit persist ${LOGNAME} as root" | sudo tee "${pkgdir}/etc/doas.conf" > /dev/null
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"

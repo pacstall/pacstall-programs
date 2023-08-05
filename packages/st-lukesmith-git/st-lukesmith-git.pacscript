@@ -1,14 +1,13 @@
 name="st-lukesmith-git"
-pkgname="st"
-url="https://github.com/LukeSmithxyz/st.git"
-license="MIT"
-build_depends=("make" "libharfbuzz-bin" "libxft-dev" "libpango1.0-dev")
-depends=("fontconfig")
 gives="st"
+url="https://github.com/LukeSmithxyz/st.git"
+pkgver="0.0.1"
+license="MIT"
+makedepends=("make" "libharfbuzz-bin" "libxft-dev" "libpango1.0-dev")
+depends=("fontconfig")
 pkgver() {
-  git ls-remote https://github.com/LukeSmithxyz/st.git master | cut -f1 | cut -c1-8
+  git ls-remote ${url} master | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 package() {
   sudo make install DESTDIR="${pkgdir}"

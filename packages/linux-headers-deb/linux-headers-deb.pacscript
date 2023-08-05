@@ -1,9 +1,9 @@
 name="linux-headers-deb"
 gives="linux-headers-6.5.0-060500rc4"
-version="6.5-rc4"
+pkgver="6.5-rc4"
 buildver="6.5.0-060500rc4.202308041735"
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/amd64/${gives}_${buildver}_all.deb"
-description="Ubuntu Linux mainline kernel (Headers)"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb"
+pkgdesc="Ubuntu Linux mainline kernel (Headers)"
 hash="f9baa76a28992fa4dad268be587bdfa661974af37ba1812684b8fa057cb77baf"
 arch=('any')
 maintainer="Oren Klopfer <oren@taumoda.com>"

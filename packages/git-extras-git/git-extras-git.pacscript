@@ -3,15 +3,14 @@ pkgname="git-extras"
 breaks=("${pkgname}-bin")
 replace=("${pkgname}")
 gives="${pkgname}"
-description="GIT utilities -- repo summary, repl, changelog population, author commit percentages and more"
+pkgdesc="GIT utilities -- repo summary, repl, changelog population, author commit percentages and more"
 url="https://github.com/tj/git-extras.git"
+pkgver="7.0.0"
 depends=("git" "bsdmainutils")
 maintainer="Elsie19 <hwengerstickel@pm.me>"
-
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 package() {
   sudo make DESTDIR="${pkgdir}" PREFIX=/usr SYSCONFDIR=/etc install

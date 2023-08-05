@@ -1,9 +1,9 @@
 name="grive2"
 pkgname="grive2"
-description="Google Drive client with support for new Drive REST API and partial sync"
-version="0.5.1"
-url="https://github.com/vitalif/grive2/archive/v${version}.tar.gz"
-build_depends=("cmake" "libgcrypt20-dev" "libyajl-dev" "libboost-all-dev" "libcurl4-openssl-dev" "libexpat1-dev" "libcppunit-dev" "binutils-dev" "debhelper" "zlib1g-dev" "dpkg-dev" "pkg-config")
+pkgdesc="Google Drive client with support for new Drive REST API and partial sync"
+pkgver="0.5.1"
+url="https://github.com/vitalif/grive2/archive/v${pkgver}.tar.gz"
+makedepends=("cmake" "libgcrypt20-dev" "libyajl-dev" "libboost-all-dev" "libcurl4-openssl-dev" "libexpat1-dev" "libcppunit-dev" "binutils-dev" "debhelper" "zlib1g-dev" "dpkg-dev" "pkg-config")
 depends=("libgcrypt20" "libyajl2" "libboost-all-dev" "libcurl4" "libexpat1")
 replace=("grive")
 hash="9940bcd3e5a3ffd32b91477fba8ba1ca3e0a3a72e5ffa9c6d524db87951fdbbb"
@@ -18,7 +18,7 @@ build() {
   mkdir build
   cd build
   cmake ..
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {
