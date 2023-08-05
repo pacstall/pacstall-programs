@@ -1,6 +1,6 @@
 name="nodejs-lts-deb"
 pkgname="nodejs"
-_major_pkgver="18"
+_major_version="18"
 pkgver="18.15.0"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
 replace=("${pkgname}" "node")

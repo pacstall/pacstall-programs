@@ -1,6 +1,6 @@
 name="nowpm"
 pkgver="1.0"
-url="https://github.com/jnats/nowpm/archive/refs/tags/v1.0.zip"
+url="https://github.com/jnats/nowpm/archive/refs/tags/v${pkgver}.zip"
 pkgdesc="the no-bullshit wpm utility"
 depends=("wdiff")
 breaks=("foo")
