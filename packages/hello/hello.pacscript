@@ -12,7 +12,7 @@ maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 build() {
   ./configure
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

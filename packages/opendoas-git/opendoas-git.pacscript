@@ -20,7 +20,7 @@ pkgver() {
 build() {
   ./configure --prefix=/usr --with-timestamp
   # Build rquired files
-  make -j"$(nproc)" DESTDIR="${pkgdir}"
+  make -j"${NCPU}" DESTDIR="${pkgdir}"
 }
 
 package() {

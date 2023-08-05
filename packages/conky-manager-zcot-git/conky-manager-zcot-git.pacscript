@@ -9,7 +9,7 @@ depends=("conky" "rsync")
 pkgdesc="Simple tool for managing Conky configs"
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

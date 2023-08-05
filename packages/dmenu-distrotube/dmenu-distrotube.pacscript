@@ -9,7 +9,7 @@ pkgdesc="Distrotube's dmenu build"
 breaks=("dmenu" "dmenu_run" "dmenu_path")
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

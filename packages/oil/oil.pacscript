@@ -27,7 +27,7 @@ build() {
 
   # We want this to expand
   # shellcheck disable=SC2248
-  make -j"$(nproc)" "${MAKEFLAGS[@]}"
+  make -j"${NCPU}" "${MAKEFLAGS[@]}"
 }
 
 package() {

@@ -37,7 +37,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr
 
-  make -j"$(nproc)" -C "build"
+  make -j"${NCPU}" -C "build"
 }
 
 package() {

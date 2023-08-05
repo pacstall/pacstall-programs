@@ -10,7 +10,7 @@ hash="0ad8262d13ef138a12452e67e081e3eb31a264e2040cfce09417e8f7eed4e1f5"
 repology=("project: ${name}")
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

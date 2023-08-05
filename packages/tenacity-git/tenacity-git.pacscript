@@ -35,7 +35,7 @@ build() {
   cmake -G "Unix Makefiles" \
     -DCMAKE_BUILD_TYPE=Release \
     -DFFMPEG=ON ..
-  sudo make -j"$(nproc)"
+  sudo make -j"${NCPU}"
 }
 
 package() {

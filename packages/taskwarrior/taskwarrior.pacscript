@@ -15,7 +15,7 @@ build() {
   mkdir build
   cd build || exit
   cmake "../" -DCMAKE_INSTALL_PREFIX="${pkgdir}/usr"
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

@@ -15,7 +15,7 @@ build() {
 }
 
 package() {
-  sudo cmake --build . --target install -- -j "$(nproc)"
+  sudo cmake --build . --target install -- -j "${NCPU}"
 }
 
 post_install() {

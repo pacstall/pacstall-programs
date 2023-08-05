@@ -19,7 +19,7 @@ pkgver() {
 
 build() {
   # Build nessesary files
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

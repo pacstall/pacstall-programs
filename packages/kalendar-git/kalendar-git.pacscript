@@ -16,7 +16,7 @@ pkgver() {
 build() {
   mkdir build && cd build || exit
   cmake .. -DCMAKE_INSTALL_PREFIX="${pkgdir}/usr" -GNinja
-  ninja -j"$(nproc)"
+  ninja -j"${NCPU}"
 }
 
 package() {

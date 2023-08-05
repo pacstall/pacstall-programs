@@ -9,7 +9,7 @@ hash="20b57dbb8f6c6d7323f573c111a11640603a422c5f9da7b302a4981e4adc37c4"
 
 build() {
   ./configure --enable-mbedtls --enable-nettle
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

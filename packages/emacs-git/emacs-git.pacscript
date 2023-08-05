@@ -200,7 +200,7 @@ fi
 prepare() {
   [[ -x configure ]] || (./autogen.sh git && ./autogen.sh autoconf)
   if [[ ${CHECK} == "YES" ]]; then
-    make -j"$(nproc)" check
+    make -j"${NCPU}" check
   fi
 }
 
@@ -289,9 +289,9 @@ build() {
   # are reusing your src directory!
 
   if [[ ${JIT} == "YES" ]] && [[ ${AOT} == "YES" ]]; then
-    make -j"$(nproc)" NATIVE_FULL_AOT=1
+    make -j"${NCPU}" NATIVE_FULL_AOT=1
   else
-    make -j"$(nproc)"
+    make -j"${NCPU}"
   fi
 
   # You may need to run this if "loaddefs.el" files become corrupt.
@@ -301,20 +301,20 @@ build() {
 
   # Optional documentation formats.
   if [[ ${DOCS_HTML} == "YES" ]]; then
-    make -j"$(nproc)" html
+    make -j"${NCPU}" html
   fi
   if [[ ${DOCS_PDF} == "YES" ]]; then
-    make -j"$(nproc)" pdf
+    make -j"${NCPU}" pdf
   fi
 
 }
 
 package() {
-  sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install
+  sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install
 
   # Install optional documentation formats
-  if [[ ${DOCS_HTML} == "YES" ]]; then sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install-html; fi
-  if [[ ${DOCS_PDF} == "YES" ]]; then sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install-pdf; fi
+  if [[ ${DOCS_HTML} == "YES" ]]; then sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install-html; fi
+  if [[ ${DOCS_PDF} == "YES" ]]; then sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install-pdf; fi
 
   # fix user/root permissions on usr/local/share files
   find "${pkgdir}/usr/share/emacs/" -print0 | sudo xargs -0 chown root:root

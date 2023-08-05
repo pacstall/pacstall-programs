@@ -17,7 +17,7 @@ prepare() {
 
 build() {
   cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr ..
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

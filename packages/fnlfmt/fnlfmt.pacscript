@@ -23,7 +23,7 @@ hash="8baa2f5ed98f449139f6bd8b4859575c4cfeacc60c0a8884ecaa27bc94e69156"
 repology=("project: fnlfmt")
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

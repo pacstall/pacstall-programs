@@ -9,7 +9,7 @@ incompatible=('debian:bullseye')
 hash="285b44d2d2e83118ab7fe61d575811bb85d5e21147808171bd0e583e9e794748"
 
 build() {
-  cargo build -j"$(nproc)" --release --locked
+  cargo build -j"${NCPU}" --release --locked
 }
 
 package() {

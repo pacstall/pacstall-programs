@@ -16,7 +16,7 @@ build() {
   else
     ./configure
   fi
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

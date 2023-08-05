@@ -15,7 +15,7 @@ prepare() {
 }
 
 build() {
-  ninja -C builddir -j"$(nproc)"
+  ninja -C builddir -j"${NCPU}"
 }
 
 package() {

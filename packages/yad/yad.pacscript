@@ -30,7 +30,7 @@ prepare() {
 
 build() {
   ./configure "${FLAGS}"
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

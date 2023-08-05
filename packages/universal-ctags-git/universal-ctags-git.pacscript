@@ -17,7 +17,7 @@ prepare() {
 
 build() {
   ./configure --prefix="${pkgdir}/usr" --program-transform-name='s/ctags/ctags-universal/'
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 
 }
 

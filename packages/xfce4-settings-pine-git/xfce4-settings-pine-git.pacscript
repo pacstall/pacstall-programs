@@ -15,7 +15,7 @@ prepare() {
 }
 
 build() {
-  sudo make -j"$(nproc)"
+  sudo make -j"${NCPU}"
 }
 
 package() {

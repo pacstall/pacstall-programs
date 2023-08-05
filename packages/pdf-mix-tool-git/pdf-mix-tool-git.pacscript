@@ -19,7 +19,7 @@ prepare() {
 build() {
   cd build || return 1
   cmake .. -DCMAKE_INSTALL_PREFIX="/usr" -DCMAKE_BUILD_TYPE=Release
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

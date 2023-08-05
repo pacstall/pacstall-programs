@@ -20,5 +20,5 @@ build() {
 }
 
 package() {
-  sudo DESTDIR="${pkgdir}" ninja -C builddir install -j"$(nproc)"
+  sudo DESTDIR="${pkgdir}" ninja -C builddir install -j"${NCPU}"
 }

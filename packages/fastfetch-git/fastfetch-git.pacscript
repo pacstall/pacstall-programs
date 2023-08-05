@@ -33,7 +33,7 @@ build() {
   (
     cd build/ || return 2
     cmake ..
-    cmake --build . --target fastfetch --target flashfetch -j "$(nproc)"
+    cmake --build . --target fastfetch --target flashfetch -j "${NCPU}"
   )
 }
 

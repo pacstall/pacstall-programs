@@ -16,7 +16,7 @@ build() {
   cd build || return 1
   cmake "../engine"
   cmake --build "./build" -DCMAKE_BUILD_TYPE=Release
-  make -j"$(nproc)"
+  make -j"${NCPU}"
   cd ..
 }
 

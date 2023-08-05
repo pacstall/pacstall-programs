@@ -11,7 +11,7 @@ maintainer="Harshwardhan Mehrotra <harshwardhanmehrotra@gmail.com>"
 build() {
   sed -i '47d' Makefile
   sed -i '48d' Makefile
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

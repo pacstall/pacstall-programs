@@ -38,7 +38,7 @@ prepare() {
 }
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {
@@ -46,7 +46,7 @@ package() {
   sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 
   # Install doas
-  sudo make -j"$(nproc)" PREFIX="/usr" DESTDIR="${pkgdir}" MANDIR="${pkgdir}/usr/share/man" install
+  sudo make -j"${NCPU}" PREFIX="/usr" DESTDIR="${pkgdir}" MANDIR="${pkgdir}/usr/share/man" install
 
   # Install PAM configuration file
   sudo install -Dm644 "doas-pam" "${pkgdir}/etc/pam.d/doas"

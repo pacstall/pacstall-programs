@@ -12,7 +12,7 @@ pkgdesc="Timeshift is a system restore utility which takes snapshots of the syst
 
 build() {
   sed -i -e 's/--Xcc="-O3" //g' src/makefile
-  make -j"$(nproc)" all
+  make -j"${NCPU}" all
 }
 
 package() {

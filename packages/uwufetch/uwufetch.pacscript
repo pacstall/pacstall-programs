@@ -25,8 +25,8 @@ prepare() {
 
 build() {
   # Build required files
-  make -j"$(nproc)" build DESTDIR="${pkgdir}"
-  make -j"$(nproc)" man DESTDIR="${pkgdir}"
+  make -j"${NCPU}" build DESTDIR="${pkgdir}"
+  make -j"${NCPU}" man DESTDIR="${pkgdir}"
 }
 
 package() {

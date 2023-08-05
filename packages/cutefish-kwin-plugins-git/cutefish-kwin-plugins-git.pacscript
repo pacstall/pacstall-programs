@@ -17,7 +17,7 @@ prepare() {
 build() {
   cd build
   cmake ..
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

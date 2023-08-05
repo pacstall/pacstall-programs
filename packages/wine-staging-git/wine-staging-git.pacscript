@@ -58,7 +58,7 @@ build() {
     --with-x \
     --with-gstreamer \
     --enable-win64
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 
   cd "../wine32-build"
   ../configure \
@@ -67,7 +67,7 @@ build() {
     --with-x \
     --with-gstreamer \
     --with-wine64="../wine64-build"
-  make -j"$(nproc)"
+  make -j"${NCPU}"
   # shellcheck disable=SC2103
   cd ..
 }

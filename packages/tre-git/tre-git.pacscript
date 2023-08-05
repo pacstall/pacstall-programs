@@ -12,7 +12,7 @@ pkgver() {
 }
 
 build() {
-  cargo build -j"$(nproc)" --release --locked
+  cargo build -j"${NCPU}" --release --locked
 }
 
 package() {

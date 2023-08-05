@@ -13,7 +13,7 @@ build() {
   mkdir -p build
   cd build || exit 1
   cmake ..
-  cmake --build . --config Release -j"$(nproc)"
+  cmake --build . --config Release -j"${NCPU}"
 }
 
 package() {

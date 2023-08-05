@@ -11,7 +11,7 @@ hash="2079172cce034556f110048e26083ce9bea751f3154b0ad2809751815b11ea9d"
 
 build() {
   ./configure --enable-lzma --enable-zstd
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

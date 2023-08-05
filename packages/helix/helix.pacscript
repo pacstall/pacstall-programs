@@ -8,7 +8,7 @@ maintainer="Marcin Puc <tranzystorek.io@protonmail.com>"
 hash="c1ca69facde99d708175c686ce5bf3585e119e372c83e1c3dc1d562c7a8e3d87"
 
 build() {
-  cargo build -j"$(nproc)" --release --locked
+  cargo build -j"${NCPU}" --release --locked
 }
 
 package() {

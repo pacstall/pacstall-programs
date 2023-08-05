@@ -26,7 +26,7 @@ pkgver() {
 
 build() {
   # Build rquired files
-  make -j"$(nproc)" DESTDIR="${pkgdir}"
+  make -j"${NCPU}" DESTDIR="${pkgdir}"
 }
 
 package() {

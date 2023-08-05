@@ -15,8 +15,8 @@ prepare() {
 
 build() {
   cd gst-plugin-viperfx
-  cmake -j"$(nproc)" .
-  make -j"$(nproc)"
+  cmake -j"${NCPU}" .
+  make -j"${NCPU}"
 }
 
 package() {

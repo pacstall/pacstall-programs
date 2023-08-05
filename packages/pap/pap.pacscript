@@ -9,7 +9,7 @@ incompatible=('debian:bullseye')
 repology=("project: ${name}")
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

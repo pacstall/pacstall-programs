@@ -9,7 +9,7 @@ hash="f79b0cfea71b37a8eeec8490db6c5f7ae7719c35587f21edb0617f370eeff633"
 
 build() {
   ./configure
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

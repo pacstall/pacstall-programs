@@ -8,7 +8,7 @@ pkgdesc="A cat(1) clone with wings"
 hash="30b6256bea0143caebd08256e0a605280afbbc5eef7ce692f84621eb232a9b31"
 
 build() {
-  RUSTONIG_SYSTEM_LIBONIG=1 cargo build -j"$(nproc)" --release --locked
+  RUSTONIG_SYSTEM_LIBONIG=1 cargo build -j"${NCPU}" --release --locked
 }
 
 package() {

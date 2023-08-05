@@ -11,7 +11,7 @@ pkgver() {
 
 build() {
   cmake "./CMakeLists.txt"
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

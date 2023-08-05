@@ -10,7 +10,7 @@ hash="a45172198873fb34c64150262be4515a7be268a5c00566c79f03a8ea2dd7900e"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
 package() {

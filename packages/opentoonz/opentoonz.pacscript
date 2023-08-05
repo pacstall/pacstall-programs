@@ -25,12 +25,12 @@ build() {
 
   cd "thirdparty/tiff-4.0.3" || return
   ./configure --with-pic --disable-jbig
-  make -j"$(nproc)"
+  make -j"${NCPU}"
   cd "../../" || return
 
   cd "toonz/build" || return
   cmake "../sources"
-  make -j"$(nproc)"
+  make -j"${NCPU}"
   cd "../../" || return
 
 }
