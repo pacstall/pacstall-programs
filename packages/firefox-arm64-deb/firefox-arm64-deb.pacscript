@@ -1,7 +1,7 @@
 name="firefox-arm64-deb"
 gives="firefox"
 pkgver="116.0.1+build1"
-ubpkgver="23.10"
+ubversion="23.10"
 arch=("arm64")
 repology=("project: ${gives}")
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye" "debian:sid")
