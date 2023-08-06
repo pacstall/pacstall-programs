@@ -11,11 +11,11 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="pacup-bin"
 pkgname="pacup"
 gives="pacup"
-pkgver="2.0.0"
+pkgver="2.1.0"
 pkgdesc="Help maintainers update pacscripts"
 url="https://github.com/pacstall/pacup/releases/download/${pkgver}/pacup"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="12414c914ef7021f804be8786d316542202f2680f69190a2a0b98f82bf5e9804"
+hash="dddf7a6ceb6d9b652c85c04bf3b8b10d0b1a8fb881505f82efc1b0b21e2a26d1"
 
 package() {
   sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"
