@@ -35,6 +35,7 @@ build() {
   sudo mkdir -p "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
   sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/scalable/places"
+  sudo mkdir -p "${pkgdir}/usr/share/themes"
 }
 
 package() {
@@ -59,6 +60,7 @@ package() {
   sudo cp icons/* "${pkgdir}/usr/share/icons"
   sudo cp applications/* "${pkgdir}/usr/share/applications"
   sudo cp lightpad/* "${pkgdir}/etc/skel/.lightpad"
+  sudo cp -r unicorn-dashboard "${pkgdir}/usr/share/themes"
   sudo install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
