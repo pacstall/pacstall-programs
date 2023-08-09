@@ -1,12 +1,12 @@
 name="linux-modules-stable-deb"
-gives="linux-modules-6.4.8-060408-generic"
-pkgver="6.4.8"
-buildver="6.4.8-060408.202308041557"
+gives="linux-modules-6.4.9-060409-generic"
+pkgver="6.4.9"
+buildver="6.4.9-060409.202308081548"
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="3f9b1ac2aac2646018f358c7c061d161d801b4cf19372e8f7056bc33e3cd9ff7"
+  hash="3c89e379b919611563d362762fa3ab36dfa9d10eb565c62508f144380adca487"
   arch=('arm64')
 else
-  hash="a4f6e9aaed29393f7f8c64326433cc8d2bd88c9293f41568b6df1360e62992dc"
+  hash="cbbdd8b1768e9d9446581ac07f365b118a88104ad9bd8b66648b66fb67f3d961"
   arch=('amd64')
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
