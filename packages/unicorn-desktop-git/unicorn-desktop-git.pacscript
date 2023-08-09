@@ -36,6 +36,7 @@ package() {
   for i in xfce4 plank autostart ulauncher; do
     sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
+  sudo install -Dm644 ".bashrc" -t "${pkgdir}/etc/skel"
   sudo install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
   sudo install -Dm755 "unicorn-session" -t "${pkgdir}/usr/bin"
   sudo install -Dm755 ".xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
