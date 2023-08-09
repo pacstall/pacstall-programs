@@ -1,5 +1,6 @@
 name="slack-deb"
 gives="slack-desktop"
+pkgname="slack-desktop"
 pkgver="4.33.73"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
 replace=("${pkgname}")
