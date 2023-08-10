@@ -69,11 +69,11 @@ post_install() {
   fi
   cp /etc/skel/.lightpad/* "${homedir}/.lightpad"
   papirus-folders -C violet --theme Papirus-Dark
-  if ! grep -Eq 'PS1=.* # Do not remove' /etc/skel/.bashrc; then
+  if ! grep -Eq 'PS1=.* # Rhino' /etc/skel/.bashrc; then
     cat <<"EOF" | tee -a /etc/skel/.bashrc > /dev/null
 # comment to remove the `git status` checking '*' and '+' text in the prompt
 export GIT_PS1_SHOWDIRTYSTATE=1
-PS1='$(__git_ps1 "(%s) ")\[\e[1m\][\[\e[38;5;82m\]\w\[\e[39m\]] \[\e[38;5;219m\]\u\[\e[38;5;231m\]@\[\e[38;5;199m\]\h \[\e[38;5;255m\]\$ \[\e[0m\]' # Do not remove
+PS1='$(__git_ps1 "(%s) ")\[\e[1m\][\[\e[38;5;82m\]\w\[\e[39m\]] \[\e[38;5;219m\]\u\[\e[38;5;231m\]@\[\e[38;5;199m\]\h \[\e[38;5;255m\]\$ \[\e[0m\]' # Rhino
 EOF
   fi
 }
