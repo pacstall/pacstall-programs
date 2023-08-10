@@ -1,0 +1,7 @@
+name="fake-ubuntu-advantage-tools-deb"
+gives="fake-ubuntu-advantage-tools"
+version="0.1"
+url="https://github.com/Elsie19/fake-ubuntu-advantage-tools/raw/master/fake-ubuntu-advantage-tools.deb"
+description="Ban ubuntu-advantage-tools while satisfying ubuntu-minimal dependency"
+hash="62a6722ad5b5f66345a7e91ab8636a2321f42fbaa7b512515e5d59b4ad28aedb"
+maintainer="Elsie19 <hwengerstickel@pm.me>"
