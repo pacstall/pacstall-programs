@@ -1,5 +1,5 @@
 name="nano"
-major_pkgver="7"
+major_version="7"
 pkgver="7.2"
 license="GPL3"
 url="https://nano-editor.org/dist/v${major_version}/${name}-${pkgver}.tar.xz"

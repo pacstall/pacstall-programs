@@ -1,7 +1,7 @@
 name="goverlay"
 gives="goverlay"
 pkgver="0.9.1"
-url="https://github.com/benjamimgois/goverlay/releases/download/${pkgver}/goverlay_${version//./_}.tar.xz"
+url="https://github.com/benjamimgois/goverlay/releases/download/${pkgver}/goverlay_${pkgver//./_}.tar.xz"
 hash="6885e8052d747fd19649c2b5b8273ea879b9046fa21cfa81f8570faaeae00bab"
 depends=("mangohud" "libqt5pas-dev")
 pkgdesc="Graphical UI to help manage Linux overlays"
