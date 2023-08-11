@@ -1,7 +1,7 @@
 name="blender-bin"
 gives="blender"
 pkgver="3.6.1"
-url="https://mirrors.ocf.berkeley.edu/blender/release/Blender${version%.*}/blender-${pkgver}-linux-x64.tar.xz"
+url="https://mirrors.ocf.berkeley.edu/blender/release/Blender${pkgver%.*}/blender-${pkgver}-linux-x64.tar.xz"
 hash="465e1ddeb60a9a7ac5712c9bcbfe8f23a5878484e65b3d9c28795f7a70113e31"
 homepage='https://www.blender.org/'
 arch=("amd64")
