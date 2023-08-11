@@ -49,6 +49,7 @@ package() {
   sudo install -Dm755 "unicorn-session" -t "${pkgdir}/usr/bin"
   sudo install -Dm755 ".xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo install -Dm755 "xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
+  sudo install -Dm755 ".bashrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo cp -r failsafe/xfce4/* "${pkgdir}/etc/xdg/xdg-unicorn/xfce4"
   sudo install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
   sudo install -Dm644 "60-unicorn.conf" -t "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
