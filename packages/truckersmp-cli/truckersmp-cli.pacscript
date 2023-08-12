@@ -12,7 +12,6 @@ makedepends=("python3-setuptools" "gcc-mingw-w64" "libsdl2-dev")
 depends=("python3" "libsdl2-2.0-0")
 optdepends=(
   "python3-vdf: automatic steam account detection"
-  "python3-setuptools: get version information"
   "steam: possibility to use proton"
   "wine: possibility to use wine"
 )
