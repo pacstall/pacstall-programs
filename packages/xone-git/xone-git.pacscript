@@ -8,6 +8,7 @@ url="https://github.com/medusalix/xone.git"
 arch=('amd64')
 makedepends=('cabextract')
 depends=('dkms' 'linux-headers-generic')
+optdepends=("linux-headers-$(uname -r): Linux kernel headers for the currently installed version")
 maintainer="FelisDiligens <47528453+FelisDiligens@users.noreply.github.com>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
