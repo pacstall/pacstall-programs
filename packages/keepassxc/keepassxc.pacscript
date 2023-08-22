@@ -1,9 +1,9 @@
 name="keepassxc"
-pkgver="2.7.5"
+pkgver="2.7.6"
 pkgdesc="Cross-platform community-driven port of Keepass password manager"
 repology=("project: keepassxc")
 url="https://github.com/keepassxreboot/keepassxc/releases/download/${pkgver}/keepassxc-${pkgver}-src.tar.xz"
-hash="ede24800901816c49569aa4f8bc7180a40cb8b554617fa2a2a2653caac13000c"
+hash="a58074509fa8e90f152c6247f73e75e126303081f55eedb4ea0cbb6fa980d670"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="org.freedesktop.secrets"
 breaks=("${name}" "${name}-bin" "${name}-git" "${name}-deb")
@@ -20,7 +20,7 @@ build() {
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DWITH_XC_ALL=ON \
     -DWITH_XC_UPDATECHECK=OFF
-  cmake --build build
+  cmake --build build --parallel ${NCPU}
 }
 
 package() {
