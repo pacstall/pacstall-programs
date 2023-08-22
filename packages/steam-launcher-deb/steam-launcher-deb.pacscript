@@ -1,8 +1,8 @@
 name="steam-launcher-deb"
 gives="steam-launcher"
-pkgver="1.0.0.74"
+pkgver="1.0.0.78"
 breaks=("steam-deb")
 url="https://repo.steampowered.com/steam/archive/stable/${gives}_${pkgver}_all.deb"
 pkgdesc="Steam launcher"
-hash="317fb8048ba649fb00a1e33581e72fbade5c1eff83adaf8e4472481dbddffae1"
+hash="456c200c00f7cae57db06d2067fbdb1fa3727eb6744371827913c4cf82d507a0"
 maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
