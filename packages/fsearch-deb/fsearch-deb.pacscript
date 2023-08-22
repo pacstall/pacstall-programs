@@ -14,9 +14,9 @@ case "${codename}" in
     hash="2f8b3b9a0153499b161866df64e081777f9085c789911817178986d96c220fcb"
     ;;
   jammy)
-    url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_Unstable/amd64/fsearch_${pkgver}-1+3.15_amd64.deb"
+    url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_12/amd64/fsearch_${pkgver}-1+3.1_amd64.deb"
+    hash="2f8b3b9a0153499b161866df64e081777f9085c789911817178986d96c220fcb"
     pacdeps=("libicu-deb")
-    hash="40d5453743c8bca6e15a80b6d4d035594d6629048c98b07c1d30d61a182eebd8"
     ;;
   *)
     url="https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_Unstable/amd64/fsearch_${pkgver}-1+3.15_amd64.deb"
