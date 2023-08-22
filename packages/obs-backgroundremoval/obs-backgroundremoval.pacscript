@@ -1,6 +1,6 @@
 name="obs-backgroundremoval"
 repology=("project: obs-backgroundremoval")
-pkgver="1.1.2"
+pkgver="1.1.3"
 url="https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/${pkgver}.tar.gz"
 makedepends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libsimde-dev" "ninja-build")
 pacdeps=("cmake-deb")
@@ -8,14 +8,14 @@ breaks=("${name}-git")
 replace=("${name}")
 arch=('amd64')
 pkgdesc="OBS plugin to replace the background in portrait images and video"
-hash="1080909535d6e5d46af5e8e8b56c4b369ef5a101edf93ee74d06f957e96bc7cf"
+hash="a3bcca2ad66f86d4d0b793895f517b1b5ffc7046655ca17baf3859d7a79fc75c"
 maintainer="Zahrun <Zahrun@github.com>"
 
-incompatible=('ubuntu:jammy' 'ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'debian:bullseye')
+incompatible=('*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
 
 build() {
   mkdir build_x86_64 && cd build_x86_64 || return 1
-  cmake --preset linux-x86_64 -DUSE_SYSTEM_CURL=ON -DCMAKE_INSTALL_PREFIX:PATH="${pkgdir}"/usr .. > /dev/null
+  cmake --preset linux-x86_64 -DCMAKE_INSTALL_PREFIX:PATH="${pkgdir}"/usr .. > /dev/null
   cmake --build . -j"${NCPU}" > /dev/null
 }
 
