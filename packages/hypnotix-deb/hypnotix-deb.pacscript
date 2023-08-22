@@ -4,13 +4,13 @@ repology=("project: ${gives}")
 codename="$(lsb_release -cs)"
 pacdeps=("gir1.2-xapp-1.0-deb")
 case "${codename}" in
-  bullseye | bookworm)
+  bullseye | bookworm | trixie)
     pacdeps=("gir1.2-xapp-1.0-deb" "python3-imdbpy-deb")
     ;;
   *) ;;
 esac
-pkgver="3.5"
-hash="26f5d5fb37efb4170176e3512de3235957d3ac32f9e8e3cabc940c6aa94d234b"
-url="https://github.com/Zahrun/hypnotix/releases/download/${pkgver}/hypnotix_${pkgver}_all.deb"
+pkgver="3.6"
+hash="22173ffdced6a22f3b048a66ce3bfdaec1b67de948c2fab3d74bcbce46361f3a"
+url="http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_${pkgver}_all.deb"
 pkgdesc="An IPTV streaming application with support for live TV, movies and series"
 maintainer="Zahrun <Zahrun@github.com>"
