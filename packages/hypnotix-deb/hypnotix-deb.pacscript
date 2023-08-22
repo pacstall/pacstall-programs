@@ -4,7 +4,7 @@ repology=("project: ${gives}")
 codename="$(lsb_release -cs)"
 pacdeps=("gir1.2-xapp-1.0-deb")
 case "${codename}" in
-  bullseye | bookworm)
+  bullseye | bookworm | trixie)
     pacdeps=("gir1.2-xapp-1.0-deb" "python3-imdbpy-deb")
     ;;
   *) ;;
