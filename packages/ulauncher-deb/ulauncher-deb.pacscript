@@ -1,10 +1,10 @@
 name="ulauncher-deb"
 gives="ulauncher"
-pkgver="5.15.2"
+pkgver="5.15.3"
 arch=("any")
 repology=("project: ${gives}")
 depends=("python3-pyinotify" "gir1.2-keybinder-3.0" "gir1.2-webkit2-4.0" "gir1.2-notify-0.7" "python3-levenshtein" "python3-websocket" "python3-xdg" "wmctrl")
 url="https://github.com/Ulauncher/Ulauncher/releases/download/${pkgver}/${gives}_${pkgver}_all.deb"
 pkgdesc="Application launcher for Linux"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-hash="41f00a95cd4490a3294a38677ee9eabc0162294e61a21a4d790a46a7a3309633"
+hash="dc75876ffa1d9a4ee3976e750797c785a3a8d2e40fc4c14114eaa6fca9b41f73"

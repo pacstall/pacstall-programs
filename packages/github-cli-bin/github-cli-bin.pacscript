@@ -4,10 +4,10 @@ gives="gh"
 breaks=("${gives}-git" "${gives}-deb")
 replace=("${gives}")
 repology=("project: ${pkgname}")
-pkgver="2.32.0"
+pkgver="2.33.0"
 url="https://github.com/cli/cli/releases/download/v${pkgver}/${gives}_${pkgver}_linux_amd64.tar.gz"
 pkgdesc="GitHub's official command line tool - Binary version"
-hash="2e306f118a46764bc1763bacc52e7b18eeca5aa6fd59d2b5fd260f0ef3cd87ae"
+hash="c46d0adae4dbd0589a62b6a1d822b84ca5184ee78d246d21d5c082ab9f38a04e"
 arch=('amd64')
 
 package() {
