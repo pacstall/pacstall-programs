@@ -5,6 +5,7 @@ gives="rhino-neofetch"
 provides=('neofetch')
 replace=("neofetch")
 breaks=("neofetch")
+mask=("neofetch")
 pkgdesc="neofetch branded for Rhino Linux"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgver() {
