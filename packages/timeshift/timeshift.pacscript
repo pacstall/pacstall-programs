@@ -11,7 +11,6 @@ replace=("timeshift-btrfs")
 pkgdesc="Timeshift is a system restore utility which takes snapshots of the system at regular intervals. These snapshots can be restored at a later date to undo system changes. Creates incremental snapshots using rsync or BTRFS snapshots using BTRFS tools."
 
 build() {
-  sed -i -e 's/--Xcc="-O3" //g' src/makefile
   make -j"${NCPU}" all
 }
 
