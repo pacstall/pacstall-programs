@@ -8,11 +8,11 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fennel-bin"
 pkgname="fennel"
-pkgver="1.3.0"
+pkgver="1.3.1"
 pkgdesc="A Lua Lisp language"
 url="https://fennel-lang.org/downloads/fennel-${pkgver}-x86_64"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="aed1fe810b5420d7c2b3f76dbd18357d4218b2a7d3345dc2835336f052276c8a"
+hash="85b71175739dfd5e8893726d7244b0f0b58fd21eaec009e39eea44ad7169f060"
 arch=('amd64')
 repology=("project: fennel")
 
