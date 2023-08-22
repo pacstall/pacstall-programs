@@ -12,11 +12,18 @@ name="nushell-bin"
 pkgname="nushell"
 pkgver="0.83.1"
 pkgdesc="A new type of shell"
-url="https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-x86_64-unknown-linux-gnu.tar.gz"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-arch=('amd64')
-hash="56604841e522bf969429a5d1e68d4763c38d89eeda4d0e3ee715a75a5a31ca78"
 repology=("project: nushell")
+if [[ ${CARCH} == "arm64" ]]; then
+  hash="510754cfa66371699971bc3ddfd89eb473026f6c2241b914f5dc05f29de7426c"
+  arch=('arm64')
+  gnuarch="aarch64"
+else
+  hash="56604841e522bf969429a5d1e68d4763c38d89eeda4d0e3ee715a75a5a31ca78"
+  arch=('amd64')
+  gnuarch="x86_64"
+fi
+url="https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-${gnuarch}-unknown-linux-gnu.tar.gz"
 
 package() {
   # binaries
