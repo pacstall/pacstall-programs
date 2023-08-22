@@ -1,7 +1,7 @@
 name="f1multiviewer-deb"
 gives="multiviewer-for-f1"
 repology=("project: f1multiviewer")
-pkgver="1.24.0"
+pkgver="1.25.0"
 buildver="116221064"
 maintainer="DismissedGuy <me@mikealmel.ooo>"
 homepage="https://multiviewer.app/"
