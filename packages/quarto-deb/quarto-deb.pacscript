@@ -1,8 +1,8 @@
 name="quarto-deb"
 gives="quarto"
-pkgver="1.3.433"
+pkgver="1.3.450"
 url="https://github.com/quarto-dev/quarto-cli/releases/download/v${pkgver}/quarto-${pkgver}-linux-amd64.deb"
 pkgdesc="Academic, scientific, and technical publishing system built on Pandoc"
-hash="23e3390bca24bc90a6840d79df7d67cb55f58675b0cd0c585e8badbeaf7c1ce5"
+hash="667ea45f963949f8c13b75c63dd30734b7f5f0ec49fd5991c5824a753066fcdd"
 arch=('amd64')
 repology=("project: quarto")
