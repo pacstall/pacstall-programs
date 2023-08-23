@@ -4,13 +4,13 @@ gives="rhino-setup"
 pkgdesc="Rhino Linux Setup Prompt"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 incompatible=("debian:*")
-pkgver="2023.1"
+pkgver="2023.2"
 replace=("${gives}" "${gives}-git")
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == arm64 ]]; then
-  hash="b0f78e12d0ab74173936cf826d85e4fe66110a79ec6bd702fba27ca8bf9d6ae6"
+  hash="65e6d7c18736d8ab496c0fce9f724730491652f4ecda3d7936747fa35837d9d3"
 else
-  hash="10f3dc3311b9f71f56616cee8c85e8df6c7ba1eee6a4dc1ba2afb73fad27fe29"
+  hash="2f55d363fd470b8b24e2a6f9edbb088b2675a956c05788815815ca198f76d7ab"
 fi
 url="https://github.com/rhino-linux/${gives}/releases/download/v${pkgver}/${gives}_v${pkgver}_${CARCH}.zip"
 
