@@ -7,15 +7,15 @@ fi
 pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-server-core")
-production="2023.1"
-pkgver="${production}-0"
+pkgver="2023.2~RC"
+pkgrel="0"
 style="(mobile)"
 branch="devel"
 post_install() {
-  echo "PRETTY_NAME=\"Rhino Linux ${production} ${style}\"
+  echo "PRETTY_NAME=\"Rhino Linux ${pkgver} ${style}\"
 NAME=\"Rhino Linux\"
-VERSION_ID=\"${production}\"
-VERSION=\"${production} ${style}\"
+VERSION_ID=\"${pkgver}\"
+VERSION=\"${pkgver} ${style}\"
 VERSION_CODENAME=\"${branch}\"
 ID=ubuntu
 ID_LIKE=debian
@@ -27,4 +27,5 @@ UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
   if [[ -f /usr/lib/systemd/system/modem-start.service ]]; then
     sudo systemctl enable modem-start.service
   fi
+  neofetch # indicate update success
 }

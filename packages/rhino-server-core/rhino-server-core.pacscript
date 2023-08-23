@@ -4,15 +4,15 @@ pacdeps=("rhino-pkg-git" "rhino-neofetch-git")
 pkgdesc="Transitional package to provide minimal core Rhino Linux software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-pine-core")
-production="2023.1"
-pkgver="${production}-0"
+pkgver="2023.2~RC"
+pkgrel="0"
 style="(server)"
 branch="devel"
 post_install() {
-  echo "PRETTY_NAME=\"Rhino Linux ${production} ${style}\"
+  echo "PRETTY_NAME=\"Rhino Linux ${pkgver} ${style}\"
 NAME=\"Rhino Linux\"
-VERSION_ID=\"${production}\"
-VERSION=\"${production} ${style}\"
+VERSION_ID=\"${pkgver}\"
+VERSION=\"${pkgver} ${style}\"
 VERSION_CODENAME=\"${branch}\"
 ID=ubuntu
 ID_LIKE=debian
@@ -21,4 +21,5 @@ SUPPORT_URL=\"https://github.com/rhino-linux\"
 BUG_REPORT_URL=\"https://github.com/rhino-linux\"
 PRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"
 UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
+  neofetch # indicate update success
 }
