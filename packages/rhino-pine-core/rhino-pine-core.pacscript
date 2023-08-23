@@ -27,5 +27,4 @@ UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
   if [[ -f /usr/lib/systemd/system/modem-start.service ]]; then
     sudo systemctl enable modem-start.service
   fi
-  neofetch # indicate update success
 }
