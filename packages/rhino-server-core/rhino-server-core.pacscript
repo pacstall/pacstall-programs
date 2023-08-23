@@ -5,7 +5,7 @@ pkgdesc="Transitional package to provide minimal core Rhino Linux software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-pine-core")
 pkgver="2023.2~RC"
-pkgrel="0"
+pkgrel="1"
 style="(server)"
 branch="devel"
 post_install() {
