@@ -1,13 +1,12 @@
 name="android-studio"
-repology=("project: ${name}")
-replace=("${name}")
-breaks=("${name}-beta" "${name}-canary")
-pkgver="2023.1.1.10"
+repology=("project: ${name}" "repo: aur")
+replace=("${name}" "${name}-beta" "${name}-canary")
+pkgver="2022.3.1.19"
 url="https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${name}-${pkgver}-linux.tar.gz"
 depends=("libc6-i386" "lib32ncurses6" "lib32stdc++6" "lib32z1" "libbz2-1.0:i386")
 pkgdesc="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
-hash="348146735cf8503117a0bbf8f4b77a0b716d4ee5baa0f8401d955bfc63d9541d"
-maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
+hash="250625dcab183e0c68ebf12ef8a522af7369527d76f1efc704f93c05b02ffa9e"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
   # Moving all android studio files to /opt
