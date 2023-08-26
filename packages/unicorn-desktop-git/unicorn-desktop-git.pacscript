@@ -1,7 +1,7 @@
 name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
 pkgver="0.0.1"
-pkgrel="4"
+pkgrel="1"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-power-manager" "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "firmware-sof-signed" "dbus-x11" "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev")
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-desktop"
@@ -47,7 +47,7 @@ package() {
   sudo install -Dm644 "60-unicorn.conf" -t "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   sudo cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
-  sudo cp docks.ini "${pkgdir}/usr/share/plank/"
+  sudo cp docks.ini "${pkgdir}/etc/skel/.config"
   sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
   sudo cp icons/* "${pkgdir}/usr/share/icons"
   sudo cp applications/* "${pkgdir}/usr/share/applications"
@@ -70,6 +70,9 @@ post_install() {
     mkdir -p "${homedir}/.lightpad"
   fi
   cp /etc/skel/.lightpad/* "${homedir}/.lightpad"
+  if ! [[ -f "${homedir}/.config/docks.ini" ]]; then
+    cp -r "/etc/skel/.config/docks.ini" "${homedir}/.config/docks.ini"
+  fi
   sudo cp "/etc/xdg/xdg-unicorn/.bashrc" "/etc/skel/.bashrc"
   papirus-folders -C violet --theme Papirus-Dark
 }
