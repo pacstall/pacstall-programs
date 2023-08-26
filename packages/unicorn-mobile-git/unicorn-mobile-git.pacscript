@@ -1,7 +1,7 @@
 name="unicorn-mobile-git"
 url="https://github.com/rhino-linux/unicorn.git"
 pkgver="0.0.1"
-pkgrel="4"
+pkgrel="1"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11" "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev")
 pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-mobile"
@@ -56,7 +56,7 @@ package() {
   sudo install -Dm644 "60-unicorn.conf" -t "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   sudo cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
-  sudo cp docks.ini "${pkgdir}/usr/share/plank/"
+  sudo cp docks.ini "${pkgdir}/etc/skel/.config"
   sudo cp onboard.ini "${pkgdir}/usr/share/onboard"
   sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
   sudo cp icons/* "${pkgdir}/usr/share/icons"
@@ -82,6 +82,9 @@ post_install() {
     mkdir -p "${homedir}/.lightpad"
   fi
   cp /etc/skel/.lightpad/* "${homedir}/.lightpad"
+  if ! [[ -f "${homedir}/.config/docks.ini" ]]; then
+    cp -r "/etc/skel/.config/docks.ini" "${homedir}/.config/docks.ini"
+  fi
   sudo cp "/etc/xdg/xdg-unicorn/.bashrc" "/etc/skel/.bashrc"
   papirus-folders -C violet --theme Papirus-Dark
   if ! [[ -d "${homedir}/.local/share" ]]; then
