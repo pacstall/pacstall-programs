@@ -1,15 +1,16 @@
 name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
-depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-power-manager" "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "firmware-sof-signed" "dbus-x11" "hardinfo")
+pkgver="0.0.1"
+pkgrel="1"
+depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-power-manager" "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "firmware-sof-signed" "dbus-x11" "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev")
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-desktop"
-replace=("rhino-xfce4-mobile-config-git" "rhino-linux-xfce4-config-git" "unicorn-mobile" "unicorn-mobile-git")
-description="Unicorn Desktop by the Rhino Linux Team"
+replace=("unicorn-mobile" "unicorn-mobile-git")
+pkgdesc="Unicorn Desktop by the Rhino Linux Team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 incompatible=("debian:*")
 
 build() {
@@ -26,9 +27,10 @@ build() {
   sudo mkdir -p "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
   sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/scalable/places"
+  sudo mkdir -p "${pkgdir}/usr/share/themes"
 }
 
-install() {
+package() {
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
@@ -39,22 +41,24 @@ install() {
   sudo install -Dm755 "unicorn-session" -t "${pkgdir}/usr/bin"
   sudo install -Dm755 ".xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo install -Dm755 "xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
+  sudo install -Dm755 ".bashrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
   sudo cp -r failsafe/xfce4/* "${pkgdir}/etc/xdg/xdg-unicorn/xfce4"
   sudo install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
   sudo install -Dm644 "60-unicorn.conf" -t "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
   sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   sudo cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
-  sudo cp docks.ini "${pkgdir}/usr/share/plank/"
+  sudo cp docks.ini "${pkgdir}/etc/skel/.config"
   sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
   sudo cp icons/* "${pkgdir}/usr/share/icons"
   sudo cp applications/* "${pkgdir}/usr/share/applications"
   sudo cp lightpad/* "${pkgdir}/etc/skel/.lightpad"
+  sudo cp -r unicorn-dashboard "${pkgdir}/usr/share/themes"
   sudo install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
 }
 
-postinst() {
+post_install() {
   if ! [[ -d "${homedir}/.config" ]]; then
     mkdir -p "${homedir}/.config"
   fi
@@ -66,5 +70,9 @@ postinst() {
     mkdir -p "${homedir}/.lightpad"
   fi
   cp /etc/skel/.lightpad/* "${homedir}/.lightpad"
+  if ! [[ -f "${homedir}/.config/docks.ini" ]]; then
+    cp -r "/etc/skel/.config/docks.ini" "${homedir}/.config/docks.ini"
+  fi
+  sudo cp "/etc/xdg/xdg-unicorn/.bashrc" "/etc/skel/.bashrc"
   papirus-folders -C violet --theme Papirus-Dark
 }

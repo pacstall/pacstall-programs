@@ -8,18 +8,18 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="walc-app"
 pkgname="walc"
-version="0.2.1"
-description="An unofficial WhatsApp Desktop client for linux systems."
-url="https://github.com/cstayyab/WALC/releases/download/v${version}/${pkgname}.AppImage"
+pkgver="0.2.1"
+pkgdesc="An unofficial WhatsApp Desktop client for linux systems."
+url="https://github.com/cstayyab/WALC/releases/download/v${pkgver}/${pkgname}.AppImage"
 hash="6c1e5c004e9c4bc5a8cf15837ce0e6c884fb3ace6397aa6aa95a6738c1960560"
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-git" "${pkgname}-deb")
 
-install() {
+package() {
   # Install binary
   sudo install -Dm755 "${pkgname}.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 }
 
-removescript() {
+post_remove() {
   # Remove .desktop file
   sudo rm -f "${homedir}/.local/share/applications/WALC.desktop"
 

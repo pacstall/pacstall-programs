@@ -1,15 +1,14 @@
 name="linux-headers-generic-stable-deb"
-gives="linux-headers-6.4.0-060400-generic"
-version="6.4"
-buildver="6.4.0-060400.202306271339"
+gives="linux-headers-6.4.10-060410-generic"
+pkgver="6.4.10"
+buildver="6.4.10-060410.202308111154"
+arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="902549d797b8049aa54d83c864be65de1f70934df032fe8c62629af4d33881e0"
-  arch=('arm64')
+  hash="ff408bfbdc8e58514081e0457d97182f6c4ba646727bbf9f01882316860795f0"
 else
-  hash="a8e0c1ae8776fccd010a817b319a5922332a0f29dcd50303826cddf9a6e4a061"
-  arch=('amd64')
+  hash="3c3a322f77e17adf143d6840cd33870ef4469960db936fa13322a6f790c1e727"
 fi
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
-description="Ubuntu Linux stable kernel (Generic headers)"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
+pkgdesc="Ubuntu Linux stable kernel (Generic headers)"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: linux" "repo: distrowatch")

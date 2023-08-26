@@ -1,13 +1,13 @@
 name="firefox-bin"
 gives="firefox"
-version="115.0"
+pkgver="116.0.3"
 repology=("project: ${gives}")
-url="https://download-installer.cdn.mozilla.net/pub/firefox/releases/${version}/linux-x86_64/en-US/firefox-${version}.tar.bz2"
+url="https://download-installer.cdn.mozilla.net/pub/firefox/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.bz2"
 homepage='https://www.mozilla.org/en-US/firefox'
-description="Free and open-source web browser developed by the Mozilla Foundation"
+pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 arch=('amd64')
-hash="18c4c5aa3ad3e3773ab00576e317af17e831e8197b7297890bb5d7a3176fc396"
+hash="c13396944d1155a6884de09ff1d382c814658c69dcf23a98035d58bd77cc7c62"
 
 package() {
   cd ..
@@ -33,11 +33,11 @@ Exec=/lib/firefox/firefox --private-window %u
 Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
 }
 
-postinst() {
+post_install() {
   sudo ln -sf "/lib/firefox/firefox" "/usr/bin/firefox"
   sudo ln -sf "/lib/firefox/firefox-bin" "/usr/bin/firefox-bin"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/firefox" "/usr/bin/firefox-bin"
 }

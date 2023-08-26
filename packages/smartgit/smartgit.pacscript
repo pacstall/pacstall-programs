@@ -1,13 +1,13 @@
 name="smartgit"
-version="22.1.6"
-url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-${version//./_}.tar.gz"
+pkgver="22.1.7"
+url="https://www.syntevo.com/downloads/smartgit/smartgit-linux-${pkgver//./_}.tar.gz"
 depends=("git" "libgtk-3-0" "libcurl4")
-description="Graphical Git client with support for GitHub, Bitbucket and GitLab"
-hash="b816c930b2ec0ce3905a7e9fbc067be648141b55a22c63214c5343512c7c7eb8"
+pkgdesc="Graphical Git client with support for GitHub, Bitbucket and GitLab"
+hash="138cd50d6afd604de39ed907a20d3e63ac551c9cf643c0262d60f1b84abeec81"
 maintainer="echometerain <echometer@disroot.org>"
 repology=("project: smartgit")
 
-install() {
+package() {
   sudo install -Dm755 "./licenses"/* -t "${pkgdir}/usr/share/licenses/${name}"
   sudo install -Dm755 "./license.html" -t "${pkgdir}/usr/share/licenses/${name}"
   sudo mkdir -p "${pkgdir}/opt"
@@ -23,10 +23,10 @@ install() {
   sudo chmod 755 "${pkgdir}/opt/${name}/bin/smartgit.sh"
 }
 
-postinst() {
+post_install() {
   sudo ln -s "/opt/${name}/bin/smartgit.sh" "/usr/bin/smartgit"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/smartgit"
 }

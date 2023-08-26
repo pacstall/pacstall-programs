@@ -2,19 +2,19 @@ maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 
 pkgname="tutanota"
 name="${pkgname}-app"
-version="3.114.1"
-description="Tutanota is the world's most secure email service, easy to use and private by design."
+pkgver="3.116.8"
+pkgdesc="Tutanota is the world's most secure email service, easy to use and private by design."
 url="https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage"
 __icon_url="https://icons-for-free.com/download-icon-super+tiny+icons+tutanota-1324450784669328293_256.png"
 __icon_hash="e76f83c33cab7c3b1e7d4c827927e0c883bc7f41cb2e2f3ce7d493cd96970d76"
 breaks=("${pkgname}-deb" "${pkgname}-bin" "${pkgname}-git" "${pkgname}")
 gives="${pkgname}"
 replace=("${pkgname}")
-hash="7162bde45dffcd1c8ab767cdfee37f75f0cd9d2897809aba9a51a3b43dd6ed56"
+hash="2a18aa0f34460f800100d929bdc848e3cd6b03eb3e1c042bec7e3acfbd6b660e"
 repology=("project: tutanota" "repo: homebrew_casks")
 
 __created_desktop_file="yes"
-install() {
+package() {
   # Install AppImage
   sudo install -Dm755 "tutanota-desktop-linux.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 
@@ -38,7 +38,7 @@ install() {
   fi
 }
 
-postinst() {
+post_install() {
   # Return early if nothing else to do
   if [[ ${__created_desktop_file} == "yes" ]]; then
     return 0
@@ -52,7 +52,7 @@ postinst() {
   fi
 }
 
-removescript() {
+post_remove() {
   if ask "Do you want to delete desktop and config files?" Y; then
     rm -rf ~/.config/tutanota-desktop/
     rm -rf ~/.local/share/applications/tutanota*

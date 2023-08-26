@@ -7,10 +7,10 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="uwufetch"
-version="1.7"
-url="https://github.com/TheDarkBug/${name}/archive/refs/tags/${version}.zip"
-description="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
-build_depends=("gcc")
+pkgver="1.7"
+url="https://github.com/TheDarkBug/${name}/archive/refs/tags/${pkgver}.zip"
+pkgdesc="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
+makedepends=("gcc")
 optdepends=("viu: image preview"
   "lshw: hardware info")
 breaks=("${name}-git" "${name}-bin")
@@ -25,11 +25,11 @@ prepare() {
 
 build() {
   # Build required files
-  make -j"$(nproc)" build DESTDIR="${pkgdir}"
-  make -j"$(nproc)" man DESTDIR="${pkgdir}"
+  make -j"${NCPU}" build DESTDIR="${pkgdir}"
+  make -j"${NCPU}" man DESTDIR="${pkgdir}"
 }
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}"
 
@@ -40,7 +40,7 @@ install() {
   sudo make install DESTDIR="${pkgdir}"
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${name}"
   sudo rm -rf "/usr/share/doc/${name}"

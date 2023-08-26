@@ -1,23 +1,22 @@
 name="grub-customizer-git"
 pkgname="grub-customizer"
 url="https://git.launchpad.net/${pkgname}"
-build_depends=("cmake" "g++" "libgtkmm-3.0-dev" "gettext" "libssl-dev" "libarchive-dev" "hwinfo")
+pkgver="5.0.6"
+makedepends=("cmake" "g++" "libgtkmm-3.0-dev" "gettext" "libssl-dev" "libarchive-dev" "hwinfo")
 breaks=("${pkgname}-deb")
-description="Grub Customizer is a graphical interface to configure the GRUB2/BURG settings and menuentries"
+pkgdesc="Grub Customizer is a graphical interface to configure the GRUB2/BURG settings and menuentries"
 maintainer="ObsidianPresidium <emil@aarestrup.nu>"
 gives="${pkgname}"
-
 pkgver() {
   git ls-remote "${url}" refs/heads/master | cut -f1 | cut -c1-8
 }
-version="${pkgver}"
 
 build() {
   cmake .
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
-install() {
+package() {
   sudo install -Dm755 "./grub-customizer" "${pkgdir}/usr/bin/grub-customizer"
   sudo install -Dm755 "./misc/grub-customizer.desktop" "${pkgdir}/usr/share/applications/grub-customizer.desktop"
   sudo install -Dm644 "./misc/manpage.gz" "${pkgdir}/usr/share/man/man1/grub-customizer.1.gz"

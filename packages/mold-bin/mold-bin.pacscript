@@ -8,24 +8,24 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="mold-bin"
 gives="mold"
-version="1.11.0"
+pkgver="2.1.0"
 arch=("amd64" "arm64")
 case "${CARCH}" in
   amd64)
-    url="https://github.com/rui314/mold/releases/download/v${version}/mold-${version}-x86_64-linux.tar.gz"
-    hash="bf788940db4a9ac19e7745c821bf6ee18ff4d75441a803d84f86c9f3b0aa2a5e"
+    url="https://github.com/rui314/mold/releases/download/v${pkgver}/mold-${pkgver}-x86_64-linux.tar.gz"
+    hash="67a479bf2eddf10dd223e488ceedddca49174f629f7a4bbaeaab80c5b5702021"
     ;;
   arm64)
-    url="https://github.com/rui314/mold/releases/download/v${version}/mold-${version}-aarch64-linux.tar.gz"
-    hash="4d7f0cc976ed1dfde1ceeaadd16829427a477eba1b49ff82dd490395f32eb78c"
+    url="https://github.com/rui314/mold/releases/download/v${pkgver}/mold-${pkgver}-aarch64-linux.tar.gz"
+    hash="3f7d3f7eede50687399b567e5bddfaadd902ea8599185dd159882b3d25184e21"
     ;;
   *) return 1 ;;
 esac
-description="A modern linker"
-breaks=("${name}-git" "${name}")
+pkgdesc="A modern linker"
+breaks=("${gives}-git" "${name}")
 repology=("project: mold")
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/"
   sudo mv ./* "${pkgdir}/usr/"
 }

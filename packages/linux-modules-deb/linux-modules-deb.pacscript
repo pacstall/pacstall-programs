@@ -1,14 +1,13 @@
 name="linux-modules-deb"
-gives="linux-modules-6.4.0-060400-generic"
-version="6.4"
-buildver="6.4.0-060400.202306271339"
+gives="linux-modules-6.5.0-060500rc7-generic"
+pkgver="6.5-rc7"
+buildver="6.5.0-060500rc7.202308201631"
+arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="1c7a605265f6970ef2e75c4b7d3f93b6d504c4964be4a3f526b2b39a3c2a7ac2"
-  arch=('arm64')
+  hash="6ca5de9646642220909cd396955aacca3e29349b48d831e157d02abe09b39a94"
 else
-  hash="afb4e0f983125d0d7d0c57debd78ae462921e59da1034fc53e7905b6348c7dd7"
-  arch=('amd64')
+  hash="d03efbb6b1c4831c05ea10dbc1e32c09f0c75d718c42c802925184bbf397cdc5"
 fi
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
-description="Ubuntu Linux mainline kernel (Linux Modules)"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
+pkgdesc="Ubuntu Linux mainline kernel (Linux Modules)"
 maintainer="Oren Klopfer <oren@taumoda.com>"

@@ -1,36 +1,12 @@
 name="yt-dlp"
 repology=("project: ${name}")
-version="2023.06.22"
-url="https://github.com/${name}/${name}/archive/refs/tags/${version}.tar.gz"
-build_depends=("make" "pandoc" "zip" "python3-pytest" "python3-setuptools" "python3-pip")
-optdepends=("mpv: For downloading rstp streams")
-depends=("python3" "ffmpeg" "python3-mutagen" "python3-websockets" "python3-secretstorage" "python3-brotli" "python3-certifi" "python3-xattr" "atomicparsley" "rtmpdump")
+pkgver="2023.07.06"
+url="https://github.com/yt-dlp/yt-dlp/releases/download/${pkgver}/yt-dlp"
+depends=("python3" "ffmpeg")
 breaks=("${name}-git" "${name}-bin" "${name}")
-description="A youtube-dl fork with additional features and fixes"
-hash="6eba89cbcac49b2dab21bbd9ad272c88fb1e97503c839b6fe72e99c02539940e"
-release="$(lsb_release -cs)"
-modern=("devel" "sid" "lunar" "bookworm" "mantic")
+pkgdesc="A youtube-dl fork with additional features and fixes"
+hash="cedf44a9cf3c241520a692c1006d276e6f434d4d945727c47cb1a70d32953f4a"
 
-# shellcheck disable=SC2076
-if [[ " ${modern[*]} " =~ " ${release} " ]]; then
-  pyhack=("--break-system-packages")
-else
-  pyhack=()
-fi
-
-prepare() {
-  sudo pip3 install --upgrade pycryptodomex "${pyhack[@]}"
-}
-
-build() {
-  make -j"$(nproc)" pypi-files
-  python3 setup.py build
-}
-
-install() {
-  sudo python3 setup.py install --root="${pkgdir}" --optimize=1
-}
-
-removescript() {
-  yes | sudo pip3 uninstall pycryptodomex "${pyhack[@]}"
+package() {
+  sudo install -Dm755 "yt-dlp" -t "${pkgdir}/usr/bin"
 }

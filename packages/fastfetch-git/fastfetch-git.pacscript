@@ -8,9 +8,10 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fastfetch-git"
 pkgname="fastfetch"
-description="Like neofetch, but much faster because written in c"
+pkgdesc="Like neofetch, but much faster because written in c"
 url="https://github.com/LinusDierheimer/fastfetch.git"
-build_depends=("cmake" "libpci-dev" "libvulkan-dev" "libx11-dev" "libxrandr-dev" "libwayland-client0" "libwayland-dev" "libgio-cil" "libglib2.0-dev" "libdconf-dev" "libxfconf-0-dev")
+pkgver="1.12.2"
+makedepends=("cmake" "libpci-dev" "libvulkan-dev" "libx11-dev" "libxrandr-dev" "libwayland-client0" "libwayland-dev" "libgio-cil" "libglib2.0-dev" "libdconf-dev" "libxfconf-0-dev")
 optdepends=("libpci-dev: GPU output"
   "libvulkan-dev: GPU fallback"
   "libx11-dev: Resolution output"
@@ -22,11 +23,9 @@ optdepends=("libpci-dev: GPU output"
   # "libsqlite3-dev: RPM package count"
 )
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
-
 pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" dev | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 build() {
   # Build fastfetch
@@ -34,11 +33,11 @@ build() {
   (
     cd build/ || return 2
     cmake ..
-    cmake --build . --target fastfetch --target flashfetch -j "$(nproc)"
+    cmake --build . --target fastfetch --target flashfetch -j "${NCPU}"
   )
 }
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 
@@ -56,7 +55,7 @@ install() {
   sudo cp -r presets/* "${pkgdir}/usr/share/${pkgname}/presets"
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"

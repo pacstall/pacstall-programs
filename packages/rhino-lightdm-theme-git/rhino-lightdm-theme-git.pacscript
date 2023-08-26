@@ -1,12 +1,12 @@
 name="rhino-lightdm-theme-git"
 gives="rhino-lightdm-theme"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
-description="Rhino Linux Lightdm theme"
+pkgdesc="Rhino Linux Lightdm theme"
 url="https://github.com/rhino-linux/lightdm.git"
+pkgver="0.0.1"
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 package() {
   sudo install -Dm644 rhino-blur.png -t "${pkgdir}/usr/share/pixmaps/"

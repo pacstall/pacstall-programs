@@ -1,9 +1,9 @@
 name="anydesk-deb"
 gives="anydesk"
 repology=("project: ${gives}")
-version="6.2.1"
-url="http://deb.anydesk.com/pool/main/a/${gives}/${gives}_${version}_amd64.deb"
+pkgver="6.3.0"
+url="http://deb.anydesk.com/pool/main/a/${gives}/${gives}_${pkgver}_amd64.deb"
 breaks=("${gives}-bin")
-description="AnyDesk provides platform independent remote access to personal computers and other devices running the host application"
-hash="0428029fa9f7fb23c593fad76cfbf94c18f1c84af7aebd69720962dd5c8b77b7"
+pkgdesc="AnyDesk provides platform independent remote access to personal computers and other devices running the host application"
+hash="30f6e44cea28428d1cb645055fae72cf166f63318e0c94f2c12d18a3614ce30c"
 arch=('amd64')

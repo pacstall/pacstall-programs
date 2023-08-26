@@ -1,10 +1,10 @@
 name="an-anime-game-launcher-bin"
 pkgname="an-anime-game-launcher"
-version="3.7.4"
-description="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
+pkgver="3.9.0"
+pkgdesc="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
-url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${version}/anime-game-launcher"
-hash="2eb66fe7c6ea68cbea766ad5d9350e3cd60ef9c0bf495f250b842ea2e646fb74"
+url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${pkgver}/anime-game-launcher"
+hash="990beb36e3b9afa42a14cc9026c2cc2c6ca8c1c788c60fbbfad2ff1c8635248e"
 depends=("xdelta3" "git")
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 gives="${pkgname}"
@@ -35,7 +35,7 @@ X-AppImage-Version=2.4.2' | sudo tee "${pkgdir}/usr/share/applications/an-anime-
 
 }
 
-removescript() {
+post_remove() {
   if ask "Do you want to delete all launcher files(~/.local/share/anime-game-launcher)? This includes configs and the game" Y; then
     rm -rf ~/.local/share/anime-game-launcher
   fi

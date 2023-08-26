@@ -1,11 +1,11 @@
 name="bazecor-app"
 pkgname="bazecor"
-version="1.3.0"
+pkgver="1.3.2"
 gives="bazecor"
-description="Bazecor is the graphical configurator for the Dygma Raise"
-url="https://github.com/Dygmalab/Bazecor/releases/download/bazecor-${version}/Bazecor-${version}-x64.AppImage"
+pkgdesc="Bazecor is the graphical configurator for the Dygma Raise"
+url="https://github.com/Dygmalab/Bazecor/releases/download/bazecor-${pkgver}/Bazecor-${pkgver}-x64.AppImage"
 depends=("usbutils" "udev")
-hash="1356030c0f9f4838beee3fb34efe224c8c489b37fab4c8f08c4fa225a7189bae"
+hash="69f6a5523dc4a875fa72d0998301917f892abfd01e552f8f01a040e222bd8ca9"
 breaks=("bazecor" "bazecor-bin" "bazecor-deb" "bazecor-git")
 arch=('amd64')
 maintainer="Elsie19 <hwengerstickel@pm.me>"
@@ -20,13 +20,13 @@ Terminal=false
 Type=Application
 Icon=bazecor
 StartupWMClass=Bazecor
-X-AppImage-Version=${version}
+X-AppImage-Version=${pkgver}
 Categories=Utility;" | sudo tee "${pkgdir}/usr/share/applications/bazecor.desktop" > /dev/null
   sudo wget -q https://raw.githubusercontent.com/Elsie19/images/master/bazecor.png -O "${pkgdir}/usr/share/icons/hicolor/256x256/apps/bazecor.png"
-  sudo install -Dm755 "Bazecor-${version}-x64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "Bazecor-${pkgver}-x64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 }
 
-postinst() {
+post_install() {
   # Run `lsusb` to get the IDs for the currently attached Dygma keyboard.
   idstring="$(lsusb | grep Dygma | grep -o 'ID.*:[[:alnum:]]*' | sed 's/ID //')"
 
@@ -45,6 +45,6 @@ postinst() {
   sudo udevadm control --reload-rules
 }
 
-removescript() {
+post_remove() {
   sudo rm -f /etc/udev/rules.d/50-dygma.rules
 }

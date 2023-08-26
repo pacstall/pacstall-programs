@@ -1,16 +1,15 @@
 name="cutefish-statusbar-git"
 gives="cutefish-statusbar"
-version="0.3-1"
+pkgver="0.3-1"
 url="https://github.com/cutefishos/statusbar.git"
+pkgver="0.7"
 license="GPL-3.0"
-build_depends=("extra-cmake-modules" "ninja-build" "qttools5-dev-tools" "qtbase5-dev" "qtdeclarative5-dev" "qtquickcontrols2-5-dev" "qttools5-dev")
+makedepends=("extra-cmake-modules" "ninja-build" "qttools5-dev-tools" "qtbase5-dev" "qtdeclarative5-dev" "qtquickcontrols2-5-dev" "qttools5-dev")
 depends=("fishui" "libcutefish" "libdbusmenu-qt5-dev" "libqt5svg5-dev")
-description="Top status bar of CutefishOS"
-
+pkgdesc="Top status bar of CutefishOS"
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 prepare() {
   mkdir build
@@ -19,9 +18,9 @@ prepare() {
 
 build() {
   cmake ..
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
 }

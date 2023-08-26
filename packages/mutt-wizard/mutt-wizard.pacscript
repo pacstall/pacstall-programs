@@ -3,12 +3,12 @@
 maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
 
 name="mutt-wizard"
-version="3.3.1"
-url="https://github.com/lukesmithxyz/${name}/archive/v${version}.tar.gz"
+pkgver="3.3.1"
+url="https://github.com/lukesmithxyz/${name}/archive/v${pkgver}.tar.gz"
 repology=("project: mutt-wizard")
 depends=("neomutt" "isync" "msmtp" "notmuch" "pass" "curl")
 breaks=("mutt-wizard" "mutt-wizard-git")
-description="Simple interface to auto-configure neomutt and isync with safe passwords"
+pkgdesc="Simple interface to auto-configure neomutt and isync with safe passwords"
 hash="4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53"
 
 # Some optional dependencies don't currently have an ubuntu package as far as I know,
@@ -25,13 +25,13 @@ optdepends=('imagemagick: view images inside of the neomutt TUI'
   # No Pkg    'pam-gnupg: automatically unlock gpg keys at session login'
   'cron: set up automatic mail syncing')
 
-install() {
+package() {
   sudo make DESTDIR="${pkgdir}" install
   sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${name}"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
 }
 
-removescript() {
+post_remove() {
   sudo rm -rf "/usr/share/licenses/${name}"
   sudo rm -rf "/usr/share/doc/${name}"
 }

@@ -1,17 +1,17 @@
 name="upscayl-app"
 pkgname="upscayl"
 gives="upscayl"
-version="2.5.5"
-description="Free and Open Source AI Image Upscaler for Linux, MacOS and Windows"
+pkgver="2.5.5"
+pkgdesc="Free and Open Source AI Image Upscaler for Linux, MacOS and Windows"
 maintainer="0x262D <pacstall@copypaste.anonaddy.me>"
-url="https://github.com/TGS963/${gives}/releases/download/v${version}/Upscayl-${version}-linux.AppImage"
+url="https://github.com/TGS963/${gives}/releases/download/v${pkgver}/Upscayl-${pkgver}-linux.AppImage"
 hash="aa92f1386a6147d887bed6fc01965a32272dfe0f302e42fb0e1af89addcb65d9"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-bin" "${pkgname}-git")
 repology=("project: ${pkgname}")
 
-install() {
+package() {
   # Install appimage
-  sudo install -Dm755 "Upscayl-${version}-linux.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "Upscayl-${pkgver}-linux.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 
   # Download icon
   wget -O "${pkgname}.png" -q "https://raw.githubusercontent.com/TGS963/${gives}/main/main/build/icon.png"

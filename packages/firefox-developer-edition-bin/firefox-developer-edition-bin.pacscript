@@ -1,17 +1,17 @@
 name="firefox-developer-edition-bin"
 maintainer="Paul Cosma (saenai255) <paul.cosma97@gmail.com>"
 pkgname="firefox-developer-edition"
-version="115.0b9"
-description="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
-url="https://download-installer.cdn.mozilla.net/pub/devedition/releases/${version}/linux-x86_64/en-US/firefox-${version}.tar.bz2"
+pkgver="117.0b9"
+pkgdesc="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
+url="https://download-installer.cdn.mozilla.net/pub/devedition/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.bz2"
 homepage='https://www.mozilla.org/en-US/firefox/developer/'
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="bd4d35be16a99e1d27e3a7798c833d33d68eab75c05f0254ec9b578dab46ee2a"
+hash="d0ba03601f16c6349f991354f69988e20fc0b0036d642b317d3a7902b3315903"
 arch=('amd64')
 repology=("project: firefox" "visiblename: firefox-developer-edition")
 __icon_url="https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
 
-install() {
+package() {
   cd ..
   # Make dirs and assign permissions
   sudo mkdir -p "${pkgdir}/opt/firefox-developer-edition"

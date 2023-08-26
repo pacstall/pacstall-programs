@@ -1,18 +1,18 @@
 name="rhino-server-core"
 url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
 pacdeps=("rhino-pkg-git" "rhino-neofetch-git")
-description="Transitional package to provide minimal core Rhino Linux software"
+pkgdesc="Transitional package to provide minimal core Rhino Linux software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-pine-core")
-production="2023.1-beta6"
-version="${production}-0"
+pkgver="2023.2~RC"
+pkgrel="1"
 style="(server)"
 branch="devel"
-postinst() {
-  echo "PRETTY_NAME=\"Rhino Linux ${production} ${style}\"
+post_install() {
+  echo "PRETTY_NAME=\"Rhino Linux ${pkgver} ${style}\"
 NAME=\"Rhino Linux\"
-VERSION_ID=\"${production}\"
-VERSION=\"${production} ${style}\"
+VERSION_ID=\"${pkgver}\"
+VERSION=\"${pkgver} ${style}\"
 VERSION_CODENAME=\"${branch}\"
 ID=ubuntu
 ID_LIKE=debian

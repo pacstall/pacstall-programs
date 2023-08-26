@@ -1,10 +1,10 @@
 name="zoom-deb"
 gives="zoom"
-version="5.15.2.4260"
+pkgver="5.15.7.6521"
 replace=("${gives}")
-url="https://zoom.us/client/${version}/zoom_amd64.deb"
+url="https://zoom.us/client/${pkgver}/zoom_amd64.deb"
 repology=("project: zoom-videoconference")
-description="Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution."
-hash="7cdceef67a26ff0ce2d0d78c932ef756aca070916d1345c70186630a2155c9f4"
+pkgdesc="Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution."
+hash="b9c7347a241d474822e7021e2c01a066b37f30301e1642901f3dc5430f947c96"
 arch=('amd64')
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"

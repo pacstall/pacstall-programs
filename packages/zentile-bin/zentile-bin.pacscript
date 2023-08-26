@@ -8,15 +8,15 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="zentile-bin"
 pkgname="zentile"
-version="0.1.1"
-description="Automatic Tiling for EWMH Complaint Window Managers."
-url="https://github.com/blrsn/zentile/releases/download/v${version}/${pkgname}_linux_amd64"
+pkgver="0.1.1"
+pkgdesc="Automatic Tiling for EWMH Complaint Window Managers."
+url="https://github.com/blrsn/zentile/releases/download/v${pkgver}/${pkgname}_linux_amd64"
 gives="zentile"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="3448835def513588bde74ecd98ed1b5e03c4269f32c90e31846e608b3eabcc33"
 arch=('amd64')
 
-install() {
+package() {
   # Install binary
   sudo install -Dm755 "${pkgname}_linux_amd64" "${pkgdir}/usr/bin/${pkgname}"
 }

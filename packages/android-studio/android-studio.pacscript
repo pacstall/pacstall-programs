@@ -1,15 +1,14 @@
 name="android-studio"
-repology=("project: ${name}")
-replace=("${name}")
-breaks=("${name}-beta" "${name}-canary")
-version="2023.1.1.7"
-url="https://dl.google.com/dl/android/studio/ide-zips/${version}/${name}-${version}-linux.tar.gz"
-depends=("libc6:i386" "libncurses5:i386" "libstdc++6:i386" "lib32z1" "libbz2-1.0:i386")
-description="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
-hash="691b15afc72c22fd8edf02bfe2726c67a3ec7ce77418ea864393ddebac9b3100"
-maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
+repology=("project: ${name}" "repo: aur")
+replace=("${name}" "${name}-beta" "${name}-canary")
+pkgver="2022.3.1.19"
+url="https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${name}-${pkgver}-linux.tar.gz"
+depends=("libc6-i386" "lib32ncurses6" "lib32stdc++6" "lib32z1" "libbz2-1.0:i386")
+pkgdesc="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
+hash="250625dcab183e0c68ebf12ef8a522af7369527d76f1efc704f93c05b02ffa9e"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 
-install() {
+package() {
   # Moving all android studio files to /opt
   sudo install -d "${pkgdir}/opt/${name}"
   sudo cp -a bin lib jbr plugins license LICENSE.txt build.txt product-info.json "${pkgdir}/opt/${name}"
@@ -24,7 +23,7 @@ install() {
   sudo chmod -R ugo+rX "${pkgdir}/opt"
 }
 
-postinst() {
+post_install() {
   sudo ln -sf "/opt/${name}/bin/studio.sh" "/usr/bin/${name}"
 
   sudo update-desktop-database -q
@@ -32,7 +31,7 @@ postinst() {
   fancy_message info "Finished installation. Please start Android Studio to configure it!"
 }
 
-removescript() {
+post_remove() {
   sudo update-desktop-database -q
   sudo rm -f "/usr/bin/${name}"
 }

@@ -1,9 +1,9 @@
 name="vivaldi-deb"
-version="6.1.3035.111"
+pkgver="6.1.3035.302"
 repology=("project: vivaldi")
-url="https://downloads.vivaldi.com/stable/vivaldi-stable_${version}-1_amd64.deb"
-description="An advanced browser made with the power user in mind"
+url="https://downloads.vivaldi.com/stable/vivaldi-stable_${pkgver}-1_amd64.deb"
+pkgdesc="An advanced browser made with the power user in mind"
 gives="vivaldi-stable"
-hash="6def9d281c5f0cb8adaacb60de665bc0be1b628e037bbac85a9f3e93df7e6b6a"
+hash="34f9a26ad9462bef06247c035f2399f89d4f48dece8fcb0029f9baaf5bac2351"
 arch=('amd64')
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"

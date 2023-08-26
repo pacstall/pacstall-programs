@@ -10,15 +10,21 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="nushell-bin"
 pkgname="nushell"
-version="0.82.0"
-description="A new type of shell"
-url="https://github.com/nushell/nushell/releases/download/${version}/nu-${version}-x86_64-unknown-linux-gnu.tar.gz"
+pkgver="0.84.0"
+pkgdesc="A new type of shell"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-arch=('amd64')
-hash="90f3e6f093a9b69dc05d7e61a3f7d246b31be3bc8987dfe2f67f941fd8b7282d"
 repology=("project: nushell")
+arch=('arm64' 'amd64')
+if [[ ${CARCH} == "arm64" ]]; then
+  hash="47c7af24ba2f27ffec5b4c5d70832789f6a5474e0f3e7753c5f801e21761d446"
+  gnuarch="aarch64"
+else
+  hash="4225292afa446f8f9141dd53ac2a6e94f2de0a143f84c0542b0b627322bab624"
+  gnuarch="x86_64"
+fi
+url="https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-${gnuarch}-unknown-linux-gnu.tar.gz"
 
-install() {
+package() {
   # binaries
   find ./ \
     -maxdepth 1 \

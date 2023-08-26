@@ -4,13 +4,13 @@ gives="gh"
 breaks=("${gives}-git" "${gives}-deb")
 replace=("${gives}")
 repology=("project: ${pkgname}")
-version="2.31.0"
-url="https://github.com/cli/cli/releases/download/v${version}/${gives}_${version}_linux_amd64.tar.gz"
-description="GitHub's official command line tool - Binary version"
-hash="eec349e43803759d3d7a138d214ae983a3bebebd8e6dd0ec0ff1eea7bdd823e7"
+pkgver="2.33.0"
+url="https://github.com/cli/cli/releases/download/v${pkgver}/${gives}_${pkgver}_linux_amd64.tar.gz"
+pkgdesc="GitHub's official command line tool - Binary version"
+hash="c46d0adae4dbd0589a62b6a1d822b84ca5184ee78d246d21d5c082ab9f38a04e"
 arch=('amd64')
 
-install() {
+package() {
   # Binary
   sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mv "./bin/gh" "${pkgdir}/usr/bin"

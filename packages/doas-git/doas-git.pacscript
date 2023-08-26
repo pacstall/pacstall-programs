@@ -8,17 +8,16 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="doas-git"
 pkgname="doas"
-description="A port of OpenBSD's doas(1), an alternative to sudo(1)"
+pkgdesc="A port of OpenBSD's doas(1), an alternative to sudo(1)"
 url="https://github.com/slicer69/doas.git"
+pkgver="6.3p9"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
-build_depends=("make" "bison" "flex" "libpam0g-dev")
+makedepends=("make" "bison" "flex" "libpam0g-dev")
 hash="b66e7a55fc1b7fd1f6443861f65bde87a4794c4721dee5e11dc0294f27116efc"
-
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 prepare() {
   ## Download PAM configuration file
@@ -39,15 +38,15 @@ prepare() {
 }
 
 build() {
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 
   # Install doas
-  sudo make -j"$(nproc)" PREFIX="/usr" DESTDIR="${pkgdir}" MANDIR="${pkgdir}/usr/share/man" install
+  sudo make -j"${NCPU}" PREFIX="/usr" DESTDIR="${pkgdir}" MANDIR="${pkgdir}/usr/share/man" install
 
   # Install PAM configuration file
   sudo install -Dm644 "doas-pam" "${pkgdir}/etc/pam.d/doas"
@@ -56,12 +55,12 @@ install() {
   sudo install -Dm644 "doas.conf" "${pkgdir}/etc/doas.conf"
 }
 
-postinst() {
+post_install() {
   fancy_message info "Edit the configuration in /etc/doas.conf"
   fancy_message info "by adding your username or other values"
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"

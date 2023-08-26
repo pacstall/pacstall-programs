@@ -8,15 +8,15 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="hyperfine-bin"
 pkgname="hyperfine"
-version="1.17.0"
-description="A command-line benchmarking tool"
-url="https://github.com/sharkdp/${pkgname}/releases/download/v${version}/${pkgname}-v${version}-x86_64-unknown-linux-musl.tar.gz"
+pkgver="1.17.0"
+pkgdesc="A command-line benchmarking tool"
+url="https://github.com/sharkdp/${pkgname}/releases/download/v${pkgver}/${pkgname}-v${pkgver}-x86_64-unknown-linux-musl.tar.gz"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 hash="563de47d843810de501e3e6bfcb4571a4ff957eab811c2af87be23d1c599ae47"
 arch=('amd64')
 repology=("project: hyperfine")
 
-install() {
+package() {
   # Install license
   sudo install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 
@@ -36,7 +36,7 @@ install() {
   sudo gzip --best "${pkgdir}/usr/share/man/man1/${pkgname}.1"
 }
 
-removescript() {
+post_remove() {
   # Remove empty directories
   sudo rm -rf "/usr/share/licenses/${pkgname}"
   sudo rm -rf "/usr/share/doc/${pkgname}"

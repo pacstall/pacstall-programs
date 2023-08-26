@@ -1,16 +1,16 @@
 name="tidal-hifi-bin"
 pkgname="tidal-hifi"
-version="5.3.0"
-description="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
+pkgver="5.6.0"
+pkgdesc="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
 repology=("project: tidal-hifi" "visiblename: tidal-hifi-bin")
-url="https://github.com/Mastermindzh/tidal-hifi/releases/download/${version}/tidal-hifi-${version}.tar.gz"
-hash="5d04c081e2c011b07598fe11c75a3de71e28d1cc6b5aec8511a08ba91bc46f23"
+url="https://github.com/Mastermindzh/tidal-hifi/releases/download/${pkgver}/tidal-hifi-${pkgver}.tar.gz"
+hash="63f76fa7765a090b20eb10efb0c0888fe0897a05a03808ac93cb6c336de86fc7"
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
 depends=("libxss1" "libnss3" "libgtk-3-0")
 
-install() {
+package() {
   # Get icon from github and install it
   wget -q "https://github.com/Mastermindzh/tidal-hifi/raw/master/build/icon.png"
   sudo install -Dm644 icon.png "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
@@ -22,14 +22,14 @@ install() {
   # Install the rest of the app
   sudo install -d "${pkgdir}/opt/${pkgname}/" "${pkgdir}/usr/bin"
 
-  sudo cp -r "${SRCDIR}/tidal-hifi-${version}/"* "${pkgdir}/opt/${pkgname}/"
+  sudo cp -r "${SRCDIR}/tidal-hifi-${pkgver}/"* "${pkgdir}/opt/${pkgname}/"
   sudo chmod +x "${pkgdir}/opt/${pkgname}/tidal-hifi"
 }
 
-postinst() {
+post_install() {
   sudo ln -s -r "/opt/${pkgname}/tidal-hifi" "/usr/bin/tidal-hifi"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/tidal-hifi"
 }

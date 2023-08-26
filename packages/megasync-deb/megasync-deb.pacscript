@@ -1,7 +1,7 @@
 name="megasync-deb"
 gives="megasync"
 repology=("project: megasync")
-version="4.9.5"
+pkgver="4.9.5"
 build_version="1.1"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
@@ -32,7 +32,7 @@ case "${DISTRO#*:}" in
   *) ;;
 esac
 
-url="https://mega.nz/linux/repo/${distro_base}_${distro_release}/amd64/megasync_${version}-${build_version}_amd64.deb"
+url="https://mega.nz/linux/repo/${distro_base}_${distro_release}/amd64/megasync_${pkgver}-${build_version}_amd64.deb"
 homepage="https://mega.nz"
-description="Easy automated syncing between your computers and your MEGA cloud drive"
+pkgdesc="Easy automated syncing between your computers and your MEGA cloud drive"
 maintainer="Arrowsome <ramtintoosi@gmail.com>"

@@ -1,14 +1,13 @@
 name="linux-modules-stable-deb"
-gives="linux-modules-6.4.0-060400-generic"
-version="6.4"
-buildver="6.4.0-060400.202306271339"
+gives="linux-modules-6.4.10-060410-generic"
+pkgver="6.4.10"
+buildver="6.4.10-060410.202308111154"
+arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="1c7a605265f6970ef2e75c4b7d3f93b6d504c4964be4a3f526b2b39a3c2a7ac2"
-  arch=('arm64')
+  hash="7353c6f083f23390d50193a465da04e97437d87e590069ae42b8ddb918db3cea"
 else
-  hash="afb4e0f983125d0d7d0c57debd78ae462921e59da1034fc53e7905b6348c7dd7"
-  arch=('amd64')
+  hash="33cf7dc0b61b5e880ae43e5d3e22369b0d21a3ab5b20044927efb3e06bfb35be"
 fi
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${version}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
-description="Ubuntu Linux stable kernel (Linux Modules)"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
+pkgdesc="Ubuntu Linux stable kernel (Linux Modules)"
 maintainer="Oren Klopfer <oren@taumoda.com>"

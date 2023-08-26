@@ -1,18 +1,21 @@
 name="rhino-pine-core"
 url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
-pacdeps=("xfce4-settings-pine-git" "unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "u-boot-mobian-deb" "mobile-usb-networking-deb")
-description="Transitional package to provide all core Rhino Linux Mobile software"
+pacdeps=("unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "u-boot-mobian-deb" "mobile-usb-networking-deb")
+if [[ -f /usr/bin/enable-modem ]]; then
+  depends=("eg25-manager" "modemmanager" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "purple-mm-sms" "ofono" "ofono-scripts")
+fi
+pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-server-core")
-production="2023.1-beta6"
-version="${production}-0"
+pkgver="2023.2~RC"
+pkgrel="1"
 style="(mobile)"
 branch="devel"
-postinst() {
-  echo "PRETTY_NAME=\"Rhino Linux ${production} ${style}\"
+post_install() {
+  echo "PRETTY_NAME=\"Rhino Linux ${pkgver} ${style}\"
 NAME=\"Rhino Linux\"
-VERSION_ID=\"${production}\"
-VERSION=\"${production} ${style}\"
+VERSION_ID=\"${pkgver}\"
+VERSION=\"${pkgver} ${style}\"
 VERSION_CODENAME=\"${branch}\"
 ID=ubuntu
 ID_LIKE=debian

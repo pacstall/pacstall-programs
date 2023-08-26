@@ -1,9 +1,9 @@
 name="balena-etcher-deb"
 gives="balena-etcher"
 repology=("project: balena-etcher")
-version="1.18.8"
-url="https://github.com/balena-io/etcher/releases/download/v${version}/balena-etcher_${version}_amd64.deb"
-description="Flash OS images to SD cards & USB drives, safely and easily"
-hash="de4a2666b90d3de6b3203cb0a583845f2b4b45dc856e1426e986b30754b0d5e4"
+pkgver="1.18.12"
+url="https://github.com/balena-io/etcher/releases/download/v${pkgver}/balena-etcher_${pkgver}_amd64.deb"
+pkgdesc="Flash OS images to SD cards & USB drives, safely and easily"
+hash="51cb35f3bc53a5b449ecfdf684297c7073f13b71c2b38e199de01ab34e371579"
 arch=('amd64')
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"

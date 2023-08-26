@@ -1,15 +1,15 @@
 name="protonup-qt-app"
 pkgname="net.davidotek.pupgui2"
-version="2.8.1"
+pkgver="2.8.2"
 gives="protonup-qt"
-description="Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris"
-url="https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v${version}/ProtonUp-Qt-${version}-x86_64.AppImage"
-hash="3faea5044cde979f82cb11eac50286f9d3c6152ff2f9d35f10d3d8c1a42684b8"
+pkgdesc="Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris"
+url="https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v${pkgver}/ProtonUp-Qt-${pkgver}-x86_64.AppImage"
+hash="cbb3e861b641c24a21a9511bfef184d01f134c2b4c9dc648a33001b34289a4bd"
 arch=('amd64')
 maintainer="DavidoTek <54072917+DavidoTek@users.noreply.github.com>"
 
-install() {
-  sudo install -Dm755 "ProtonUp-Qt-${version}-x86_64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+package() {
+  sudo install -Dm755 "ProtonUp-Qt-${pkgver}-x86_64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
   wget -q https://raw.githubusercontent.com/DavidoTek/ProtonUp-Qt/main/share/icons/hicolor/256x256/apps/net.davidotek.pupgui2.png
   sudo install -Dm644 "net.davidotek.pupgui2.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/${pkgname}.png"
   sudo mkdir -p "${pkgdir}/usr/share/applications"
@@ -20,13 +20,13 @@ Exec=${pkgname}
 Type=Application
 Categories=Game;Utility;
 Terminal=false
-X-AppImage-Version=${version}" | sudo tee "${pkgdir}/usr/share/applications/net.davidotek.pupgui2.desktop" > /dev/null
+X-AppImage-Version=${pkgver}" | sudo tee "${pkgdir}/usr/share/applications/net.davidotek.pupgui2.desktop" > /dev/null
 }
 
-postinst() {
+post_install() {
   sudo ln -s "/usr/bin/${pkgname}" "/usr/bin/protonup-qt"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f "/usr/bin/protonup-qt"
 }

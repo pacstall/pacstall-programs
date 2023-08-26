@@ -1,15 +1,15 @@
 name="wezterm-bin"
 pkgname="wezterm"
 gives="wezterm"
-version="20230408-112425-69ae8472"
-description="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
-url="https://github.com/wez/wezterm/releases/download/${version}/wezterm-${version}.Ubuntu22.04.tar.xz"
-hash="a1a0737438a4af9882139da0d78ffc0d390132db5a37b703aec8ef2b5c252370"
+pkgver="20230712-072601-f4abf8fd"
+pkgdesc="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
+url="https://github.com/wez/wezterm/releases/download/${pkgver}/wezterm-${pkgver}.Ubuntu22.04.tar.xz"
+hash="3b03b75a26a30f2de28180d66c5556e5878f6f3320d79d12fb78ea486400b6c3"
 breaks=("${pkgname}-app")
 repology=("project: wezterm")
 maintainer="smokeythemonkey <smokeythemonkey@posteo.net>"
 
-install() {
+package() {
   # Install Binaries
   sudo install -Dm755 "${SRCDIR}/wezterm/usr/bin/wezterm" -t "${pkgdir}/usr/bin/"
   sudo install -Dm755 "${SRCDIR}/wezterm/usr/bin/open-wezterm-here" "${pkgdir}/usr/bin/"
@@ -27,12 +27,12 @@ install() {
   sudo install -Dm755 "${SRCDIR}/wezterm/etc/profile.d/wezterm.sh" "${pkgdir}/etc/profile.d/wezterm.sh"
 }
 
-postinst() {
+post_install() {
   # Run wezterm.sh script to hook up shell integration
   sudo "/etc/profile.d/wezterm.sh"
 }
 
-removescript() {
+post_remove() {
   # Remove additional files
   sudo rm -f "/usr/share/bash-completions/wezterm"
   sudo rm -f "/usr/share/icons/hicolor/128x128/apps/org.wezfurlong.wezterm.png"

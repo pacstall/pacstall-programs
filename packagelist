@@ -5,6 +5,7 @@ amfora-bin
 an-anime-game-launcher-bin
 ananicy-cpp
 android-studio
+android-studio-canary
 ani-cli-bin
 anydesk-bin
 anydesk-deb
@@ -26,6 +27,7 @@ bemenu-git
 bitwarden-cli-bin
 bitwarden-deb
 bitwig-studio-3-deb
+bitwig-studio-4-deb
 bitwig-studio-deb
 blender-bin
 bluegriffon-deb
@@ -38,6 +40,7 @@ btop-bin
 btrfs-du-bin
 cantata
 caprine-deb
+celeste-bin
 cheat
 chezmoi-deb
 chwp-deb
@@ -70,7 +73,7 @@ discord-deb
 discord-ptb-deb
 distrobox
 dmenu
-dmenu-distrotube
+dmenu-distrotube-git
 doas-git
 docker-bin
 dotdrop
@@ -94,6 +97,7 @@ exa-git
 exploitdb-git
 expressvpn-deb
 f1multiviewer-deb
+fake-ubuntu-advantage-tools-deb
 fast
 fastfetch-git
 fblog-deb
@@ -116,6 +120,7 @@ fsearch-deb
 fsearch-git
 fselect-git
 geekbench-bin
+genymotion-bin
 gfn-electron-bin
 gir1.2-xapp-1.0-deb
 git
@@ -191,8 +196,6 @@ librewolf-app
 librewolf-deb
 libspa-codec-bluez5-aac-bin
 libssl1.1-deb
-libwlroots-dev-deb
-libwlroots11-deb
 libxapp1-deb
 lightpad-git
 linked-deb
@@ -227,10 +230,11 @@ micro
 microsoft-edge-beta-deb
 microsoft-edge-dev-deb
 microsoft-edge-stable-deb
-microsoft-prod-repo
+microsoft-prod-repo-deb
 minecraft-launcher
 minecraft-launcher-deb
 minecraft-pi-reborn-app
+mint-themes
 mobile-usb-networking-deb
 moka-icon-theme
 mold-bin
@@ -330,7 +334,6 @@ reshade-shaders-git
 rhino-core
 rhino-kvantum-theme-git
 rhino-lightdm-theme-git
-rhino-linux-xfce4-config-git
 rhino-neofetch-git
 rhino-pine-core
 rhino-pkg-git
@@ -339,7 +342,6 @@ rhino-server-core
 rhino-setup-bin
 rhino-setup-git
 rhino-system-git
-rhino-xfce4-mobile-config-git
 rstudio-deb
 rust-motd-deb
 schildichat-deb
@@ -439,7 +441,6 @@ wsysmon-bin
 xapps-common-deb
 xfce4-deb
 xfce4-settings-pine-git
-xfwm4-wayland-git
 xmind-vana-deb
 yabridge
 yad

@@ -1,15 +1,13 @@
 name="cutefish-icons-git"
 gives="cutefish-icons"
-version="0.3-1"
+pkgver="0.8"
 url="https://github.com/cutefishos/icons.git"
 license="GPL-3.0"
-build_depends=("extra-cmake-modules" "ninja-build")
-description="System default icon theme of CutefishOS."
-
+makedepends=("extra-cmake-modules" "ninja-build")
+pkgdesc="System default icon theme of CutefishOS."
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 prepare() {
   mkdir build
@@ -18,9 +16,9 @@ prepare() {
 build() {
   cd build
   cmake ..
-  make -j"$(nproc)"
+  make -j"${NCPU}"
 }
 
-install() {
+package() {
   sudo make install DESTDIR="${pkgdir}"
 }

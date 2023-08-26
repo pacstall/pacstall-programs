@@ -73,18 +73,18 @@ NOGZ="YES"        # Don't compress .el files.
 
 name="emacs-git"
 pkgname="emacs"
-description="An extensible, customizable, free/libre text editor — and more."
-build_depends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
+pkgdesc="An extensible, customizable, free/libre text editor — and more."
+makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
 depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 gives="${name}"
 breaks=("${name}" "${name}-nox")
 replace=("${name}" "${name}-nox")
 url="https://github.com/emacs-mirror/emacs.git"
+pkgver="29.1"
 pkgver() {
     git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
-version="$(pkgver)"
 
 #################################################################################
 # Weird dependency shenanigans
@@ -125,7 +125,7 @@ if [[ ${CLANG} == "YES" ]]; then
   export AS="/usr/bin/llvm-as"
   export CCFLAGS+=" -fuse-ld=lld"
   export CXXFLAGS+=" -fuse-ld=lld"
-  build_depends+=("clang" "lld" "llvm")
+  makedepends+=("clang" "lld" "llvm")
 fi
 if [[ ${LTO} == "YES" ]]; then
   if [[ ${CLANG} != "YES" ]]; then
@@ -149,13 +149,13 @@ if [[ ${CLI} == "YES" ]]; then
   depends=("${depends_nox[@]}")
 elif [[ ${NOTKIT} == "YES" ]]; then
   depends+=("dbus" "hicolor-icon-theme" "libxinerama1" "libxrandr2" "liblcms2-2" "librsvg2-2" "libxfixes3" "libxi6" "libsm6" "libxcb-util1" "libxcb1")
-  build_depends+=("x11proto-dev")
+  makedepends+=("x11proto-dev")
 elif [[ ${LUCID} == "YES" ]]; then
   depends+=("dbus" "hicolor-icon-theme" "libxinerama1" "libxfixes3" "liblcms2-2" "librsvg2-2" "xaw3dg" "libxrandr2" "libxi6" "libsm6" "libxcb-util1" "libxcb1")
-  build_depends+=("x11proto-dev")
+  makedepends+=("x11proto-dev")
 elif [[ ${GTK3} == "YES" ]]; then
   depends+=("${libgtk_dev}" "libsm6" "libxcb-util1" "libxcb1")
-  build_depends+=("x11proto-dev" "libxi-dev")
+  makedepends+=("x11proto-dev" "libxi-dev")
 fi
 
 if [[ ${CLI} != "YES" ]]; then
@@ -194,13 +194,13 @@ if [[ ${GPM} == "YES" ]]; then
 fi
 
 if [[ ${DOCS_PDF} == "YES" && ! -d "/usr/local/texlive" ]]; then
-  build_depends+=("texlive-base")
+  makedepends+=("texlive-base")
 fi
 
 prepare() {
   [[ -x configure ]] || (./autogen.sh git && ./autogen.sh autoconf)
   if [[ ${CHECK} == "YES" ]]; then
-    make -j"$(nproc)" check
+    make -j"${NCPU}" check
   fi
 }
 
@@ -289,9 +289,9 @@ build() {
   # are reusing your src directory!
 
   if [[ ${JIT} == "YES" ]] && [[ ${AOT} == "YES" ]]; then
-    make -j"$(nproc)" NATIVE_FULL_AOT=1
+    make -j"${NCPU}" NATIVE_FULL_AOT=1
   else
-    make -j"$(nproc)"
+    make -j"${NCPU}"
   fi
 
   # You may need to run this if "loaddefs.el" files become corrupt.
@@ -301,20 +301,20 @@ build() {
 
   # Optional documentation formats.
   if [[ ${DOCS_HTML} == "YES" ]]; then
-    make -j"$(nproc)" html
+    make -j"${NCPU}" html
   fi
   if [[ ${DOCS_PDF} == "YES" ]]; then
-    make -j"$(nproc)" pdf
+    make -j"${NCPU}" pdf
   fi
 
 }
 
-install() {
-  sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install
+package() {
+  sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install
 
   # Install optional documentation formats
-  if [[ ${DOCS_HTML} == "YES" ]]; then sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install-html; fi
-  if [[ ${DOCS_PDF} == "YES" ]]; then sudo make -j"$(nproc)" DESTDIR="${pkgdir}" install-pdf; fi
+  if [[ ${DOCS_HTML} == "YES" ]]; then sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install-html; fi
+  if [[ ${DOCS_PDF} == "YES" ]]; then sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install-pdf; fi
 
   # fix user/root permissions on usr/local/share files
   find "${pkgdir}/usr/share/emacs/" -print0 | sudo xargs -0 chown root:root

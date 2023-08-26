@@ -1,15 +1,15 @@
 name="starship-bin"
 pkgname="starship"
-version="1.15.0"
+pkgver="1.16.0"
 gives="${pkgname}"
-url="https://github.com/starship/starship/releases/download/v${version}/starship-x86_64-unknown-linux-gnu.tar.gz"
-description="The minimal, blazing-fast, and infinitely customizable prompt for any shell"
-hash="d7269514fa450678790f37d41c691e4a80492b127b861e30e252a6646040b615"
+url="https://github.com/starship/starship/releases/download/v${pkgver}/starship-x86_64-unknown-linux-gnu.tar.gz"
+pkgdesc="The minimal, blazing-fast, and infinitely customizable prompt for any shell"
+hash="bb797f4af36138581cb43d36f432d54312360da21dff4c38545675c7873758ae"
 arch=('amd64')
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
 repology=("project: ${pkgname}")
 maintainer="charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>"
 
-install() {
+package() {
   sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"
 }

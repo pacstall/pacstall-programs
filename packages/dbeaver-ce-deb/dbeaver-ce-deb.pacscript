@@ -1,9 +1,9 @@
 name="dbeaver-ce-deb"
-version="23.1.1"
+pkgver="23.1.5"
 gives="dbeaver-ce"
-url="https://github.com/dbeaver/dbeaver/releases/download/${version}/dbeaver-ce_${version}_amd64.deb"
-description="Free universal database tool and SQL client"
-hash="483ed4b6a577c89fe4c79b9e0c5fdc46e75b03d55f6117d8b99c41f25445bbaf"
+url="https://github.com/dbeaver/dbeaver/releases/download/${pkgver}/dbeaver-ce_${pkgver}_amd64.deb"
+pkgdesc="Free universal database tool and SQL client"
+hash="e5db740f3c4d52de832c5bee7381f1a7e3cf53c66ea87d9c5800a29eb03a52bb"
 arch=('amd64')
 repology=("project: dbeaver")
 maintainer="KwonNam Son <kwon37xi@gmail.com>"

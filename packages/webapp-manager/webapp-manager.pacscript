@@ -1,12 +1,12 @@
 name="webapp-manager"
-version="1.3.2"
-build_depends=("gettext")
+pkgver="1.3.2"
+makedepends=("gettext")
 depends=("gir1.2-xapp-1.0" "python3" "python3-bs4" "python3-configobj" "python3-gi" "python3-setproctitle" "python3-tldextract" "xapps-common" "python3-pil" "libglib2.0-bin")
-description="Run websites as if they were apps"
+pkgdesc="Run websites as if they were apps"
 repology=("project: webapp-manager")
 hash="42fff2dd90ebb24669cc4ca4dec36e05c46ac8c112d2b3fd05b1f8babdf05b8d"
 incompatible=("*:jammy" "*:bullseye")
-url="https://github.com/linuxmint/webapp-manager/archive/refs/tags/${version}.tar.gz"
+url="https://github.com/linuxmint/webapp-manager/archive/refs/tags/${pkgver}.tar.gz"
 maintainer="Zahrun <Zahrun@github.com>"
 
 prepare() {
@@ -22,11 +22,11 @@ build() {
   make all -s
 }
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}"
   sudo cp -r usr etc "${pkgdir}"
 }
 
-postinst() {
+post_install() {
   sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 }

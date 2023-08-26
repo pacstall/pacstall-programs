@@ -2,13 +2,13 @@ maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 
 name="go-bin"
 pkgname="go"
-version="1.20.5"
-description="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
-url="https://go.dev/dl/go${version}.linux-amd64.tar.gz"
+pkgver="1.21.0"
+pkgdesc="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+url="https://go.dev/dl/go${pkgver}.linux-amd64.tar.gz"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-app" "${pkgname}-deb" "golang" "golang-git" "golang-deb" "golang-bin" "golang-app" "golang-go")
 gives="golang-go"
 replace=("golang-go")
-hash="d7ec48cde0d3d2be2c69203bc3e0a44de8660b9c09a6e85c4732a3f7dc442612"
+hash="d0398903a16ba2232b389fb31032ddf57cac34efda306a0eebac34f0965a0742"
 arch=('amd64')
 repology=("project: go")
 
@@ -16,7 +16,7 @@ __goroot_pkgdir="${pkgdir}/usr/local/${name}"
 __goroot="/usr/local/${name}"
 __shell_rcs=("${homedir}/.bashrc" "${homedir}/.zshrc" "${homedir}/.profile")
 
-install() {
+package() {
   # Install binary
   sudo install -Dm755 "bin/go" "${pkgdir}/usr/bin/go"
   sudo install -Dm755 "bin/gofmt" "${pkgdir}/usr/bin/gofmt"
@@ -39,7 +39,7 @@ __set_goroot() {
   echo "export GOROOT=\"${__goroot}\"" | tee -a "$1" > /dev/null
 }
 
-postinst() {
+post_install() {
   for shell_rc in "${__shell_rcs[@]}"; do
     if [[ -f ${shell_rc} ]]; then
       if __goroot_is_set "${shell_rc}"; then
@@ -56,7 +56,7 @@ postinst() {
   echo -e "\tksh: \t. ~/.profile"
 }
 
-removescript() {
+post_remove() {
   for shell_rc in "${__shell_rcs[@]}"; do
     if [[ -f ${shell_rc} ]]; then
       if __goroot_is_set "${shell_rc}"; then

@@ -1,11 +1,11 @@
 name="pycharm-community-bin"
-version="2023.1.3"
+pkgver="2023.2"
 pkgname="pycharm-community"
 gives="pycharm-community"
 maintainer="ObsidianPresidium <emil@aarestrup.nu>"
-description="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
-url="https://download.jetbrains.com/python/pycharm-community-${version}.tar.gz"
-hash="40682c61bf21c66dd861ee47f12b6895a36d99b9ce676b13cb5dc7e5b4bd3f46"
+pkgdesc="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
+url="https://download.jetbrains.com/python/pycharm-community-${pkgver}.tar.gz"
+hash="64472ee39d244fbc2cc8aeade204d02a767c7ce66b2edaa26a8499eeef44f3d7"
 desktop_file_sum="0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04"
 repology=("project: pycharm")
 
@@ -17,7 +17,7 @@ prepare() {
   fi
 }
 
-install() {
+package() {
   sudo mkdir -p "${pkgdir}/usr/share/licenses/pycharm"
   sudo mkdir -p "${pkgdir}/usr/share/pycharm"
   sudo mkdir -p "${pkgdir}/usr/share/pixmaps"
@@ -27,10 +27,10 @@ install() {
   sudo install -Dm 644 pycharm.desktop -t "${pkgdir}"/usr/share/applications/
 }
 
-postinst() {
+post_install() {
   sudo ln -sf "/usr/share/pycharm/bin/pycharm.sh" "/usr/bin/pycharm"
 }
 
-removescript() {
+post_remove() {
   sudo rm -f /usr/bin/pycharm
 }
