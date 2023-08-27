@@ -1,7 +1,7 @@
 name="unicorn-mobile-git"
 url="https://github.com/rhino-linux/unicorn.git"
 pkgver="0.0.1"
-pkgrel="1"
+pkgrel="2"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11" "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev")
 pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-mobile"
@@ -85,6 +85,7 @@ post_install() {
   if ! [[ -f "${homedir}/.config/docks.ini" ]]; then
     cp -r "/etc/skel/.config/docks.ini" "${homedir}/.config/docks.ini"
   fi
+  sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/docks.ini"
   sudo cp "/etc/xdg/xdg-unicorn/.bashrc" "/etc/skel/.bashrc"
   papirus-folders -C violet --theme Papirus-Dark
   if ! [[ -d "${homedir}/.local/share" ]]; then
