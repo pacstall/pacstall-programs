@@ -4,7 +4,7 @@ replace=("${gives}")
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom"
 breaks=("${pkgname}-app" "${pkgname}-bin" "${pkgname}-git")
 repology=("project: librewolf")
-maintainer="Lanius <laniusone@pm.me>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 incompatible=('debian:bullseye')
 case "${CARCH}" in
   amd64)

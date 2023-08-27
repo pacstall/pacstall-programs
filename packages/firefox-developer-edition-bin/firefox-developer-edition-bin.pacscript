@@ -1,5 +1,5 @@
 name="firefox-developer-edition-bin"
-maintainer="Paul Cosma (saenai255) <paul.cosma97@gmail.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgname="firefox-developer-edition"
 pkgver="117.0b9"
 pkgdesc="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."

@@ -9,6 +9,7 @@ replace=("awscli")
 repology=("project: awscli")
 arch=('amd64')
 hash="8e2146b409a3c840524cca52f221437d1c31d90242dbd772ed835d6b870952ac"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
   sudo ./install --install-dir "${pkgdir}/usr/local/aws-cli" --bin-dir "/usr/local/bin"

@@ -5,4 +5,5 @@ breaks=("steam-deb")
 url="https://repo.steampowered.com/steam/archive/stable/${gives}_${pkgver}_all.deb"
 pkgdesc="Steam launcher"
 hash="456c200c00f7cae57db06d2067fbdb1fa3727eb6744371827913c4cf82d507a0"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"

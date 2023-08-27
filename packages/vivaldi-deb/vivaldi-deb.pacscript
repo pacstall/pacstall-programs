@@ -6,4 +6,4 @@ pkgdesc="An advanced browser made with the power user in mind"
 gives="vivaldi-stable"
 hash="34f9a26ad9462bef06247c035f2399f89d4f48dece8fcb0029f9baaf5bac2351"
 arch=('amd64')
-maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"

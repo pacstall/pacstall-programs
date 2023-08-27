@@ -9,4 +9,4 @@ homepage='https://element.io/'
 pkgdesc="Element is a feature-packed Matrix client"
 hash="9f8a915f9993d5f3da0973082f32caee903a25b86cf6d738e06e613129dc53a4"
 arch=('amd64')
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Oren Klopfer <oren@taumoda.com>"

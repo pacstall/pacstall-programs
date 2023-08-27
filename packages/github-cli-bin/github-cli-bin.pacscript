@@ -9,6 +9,7 @@ url="https://github.com/cli/cli/releases/download/v${pkgver}/${gives}_${pkgver}_
 pkgdesc="GitHub's official command line tool - Binary version"
 hash="c46d0adae4dbd0589a62b6a1d822b84ca5184ee78d246d21d5c082ab9f38a04e"
 arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
   # Binary

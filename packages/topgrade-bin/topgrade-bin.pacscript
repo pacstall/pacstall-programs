@@ -8,7 +8,7 @@ breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git" "${pkgna
 gives="${pkgname}"
 repology=("project: ${pkgname}")
 arch=('amd64')
-maintainer="charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
   sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"

@@ -6,6 +6,7 @@ depends=("python3" "ffmpeg")
 breaks=("${name}-git" "${name}-bin" "${name}")
 pkgdesc="A youtube-dl fork with additional features and fixes"
 hash="cedf44a9cf3c241520a692c1006d276e6f434d4d945727c47cb1a70d32953f4a"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
   sudo install -Dm755 "yt-dlp" -t "${pkgdir}/usr/bin"

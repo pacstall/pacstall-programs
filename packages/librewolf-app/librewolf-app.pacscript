@@ -1,11 +1,4 @@
-#  __      __________   ______
-# /  \    /  \_____  \ /  __  \
-# \   \/\/   //  ____/ >      <
-#  \        //       \/   --   \
-#   \__/\  / \_______ \______  /
-#        \/          \/      \/
-maintainer="wizard-28 <wiz28@pm.me>"
-
+maintainer="Oren Klopfer <oren@taumoda.com>"
 name="librewolf-app"
 pkgname="librewolf"
 pkgver="115.0.2-2"

@@ -9,4 +9,4 @@ url="http://repository.spotify.com/pool/non-free/s/${gives}/${gives}_${pkgver}_a
 pkgdesc="Spotify streaming music client"
 hash="fcbae7530d09e729b3bbb762a3127ad2cb841646615839125b58d811bcf4c928"
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+maintainer="Oren Klopfer <oren@taumoda.com>"

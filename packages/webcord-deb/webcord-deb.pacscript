@@ -7,4 +7,4 @@ repology=("project: webcord")
 pkgdesc="A Discord and Fosscord client implemented directly without Discord API."
 hash="fab71abf6dc222f4010623b7b7a8f343f603db4e08adc7dff0567ec24079ff1c"
 arch=('amd64')
-maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
+maintainer="Oren Klopfer <oren@taumoda.com>"

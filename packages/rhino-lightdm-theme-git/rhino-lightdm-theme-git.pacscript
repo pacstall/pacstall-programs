@@ -1,6 +1,6 @@
 name="rhino-lightdm-theme-git"
 gives="rhino-lightdm-theme"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgdesc="Rhino Linux Lightdm theme"
 url="https://github.com/rhino-linux/lightdm.git"
 pkgver="0.0.1"

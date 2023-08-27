@@ -8,3 +8,4 @@ url="https://repo.ivpn.net/stable/pool/${gives}_${pkgver}_amd64.deb"
 pkgdesc="Official IVPN Desktop app - UI Package"
 hash="61cd6c628e7af5d3b11160392939015750b274f395d9c5b9168e897d89581428"
 arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"
