@@ -1,6 +1,6 @@
 name="linux-headers-stable-deb"
 gives="linux-headers-6.5.0-060500"
-pkgver="6.5.0"
+pkgver="6.5"
 buildver="6.5.0-060500.202308271831"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb"
 pkgdesc="Ubuntu Linux stable kernel (Headers)"

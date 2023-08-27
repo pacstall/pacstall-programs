@@ -1,6 +1,6 @@
 name="linux-image-unsigned-stable-deb"
 gives="linux-image-unsigned-6.5.0-060500-generic"
-pkgver="6.5.0"
+pkgver="6.5"
 buildver="6.5.0-060500.202308271831"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
