@@ -9,15 +9,15 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="neovide-bin"
-pkgname="neovide"
-pkgver="0.10.4"
+gives="neovide"
+pkgver="0.11.1"
 pkgdesc="No nonsense neovim client in Rust"
-url="https://github.com/neovide/neovide/releases/download/${pkgver}/neovide.tar.gz"
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="ea7e27af14245813b9412c4b0d3a18ab278eacaf07ea93fa2cbb9bea7ce3cd0e"
+url="https://github.com/neovide/neovide/releases/download/${pkgver}/neovide-linux-x86_64.tar.gz"
+breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
+hash="d79373654c89f3cf5b8eaedd65ee443513521c69816cc6c41289a874fe817a07"
 repology=("project: neovide")
 
 package() {
-  sudo install -vDm755 "${pkgname}" -t "${pkgdir}/usr/bin"
+  sudo install -vDm755 "${gives}" -t "${pkgdir}/usr/bin"
 }
 # vim:set ft=sh ts=2 sw=2 et:
