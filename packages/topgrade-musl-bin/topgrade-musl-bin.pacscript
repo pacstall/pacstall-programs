@@ -8,6 +8,7 @@ arch=('amd64')
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git" "${pkgname}-bin")
 gives="${pkgname}"
 repology=("project: ${pkgname}")
+maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
   sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"

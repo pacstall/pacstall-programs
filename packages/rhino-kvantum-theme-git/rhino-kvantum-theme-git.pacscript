@@ -1,7 +1,7 @@
 name="rhino-kvantum-theme-git"
 gives="rhino-kvantum-theme"
 depends=("qt5-style-kvantum")
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgdesc="Rhino Linux Kvantum theme"
 url="https://github.com/rhino-linux/KvRhino.git"
 pkgver="0.0.1"

@@ -12,3 +12,4 @@ if [[ ${CARCH} == arm64 ]]; then
 url="https://github.com/cli/cli/releases/download/v${pkgver}/${gives}_${pkgver}_linux_${CARCH}.deb"
 pkgdesc="GitHub's official command line tool"
 repology=("project: github-cli")
+maintainer="Oren Klopfer <oren@taumoda.com>"

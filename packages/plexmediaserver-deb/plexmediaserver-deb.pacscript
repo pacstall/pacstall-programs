@@ -16,3 +16,4 @@ case "${CARCH}" in
     ;;
   *) return 1 ;;
 esac
+maintainer="Oren Klopfer <oren@taumoda.com>"

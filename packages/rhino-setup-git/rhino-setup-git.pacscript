@@ -6,7 +6,7 @@ depends=("libgtk-4-dev" "libadwaita-1-dev" "gettext" "desktop-file-utils")
 gives="rhino-setup"
 replaces="${gives}-bin"
 pkgdesc="Rhino Linux Setup Prompt"
-maintainer="Sourajyoti Basak <wiz28@protonmail.com>, Oren Klopfer <oren@taumoda.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 incompatible=("debian:*")
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8

@@ -7,3 +7,4 @@ url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${pkgv
 pkgdesc="The web browser built by Google - Beta channel"
 hash="afaf55d7c00b7a4a8228df27d5cd44a54f41db14df03a931cf6872686f4eb69e"
 arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"

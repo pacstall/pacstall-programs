@@ -8,3 +8,4 @@ url="https://updates.torguard.biz/Software/Linux/${gives}-v${pkgver}-amd64.deb"
 pkgdesc="TorGuard VPN Software"
 hash="1e49c8f13fa5191740769a05f3258dd66bd9fc378e407adb589426bcd1b8d9e5"
 arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"

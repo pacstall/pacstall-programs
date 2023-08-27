@@ -7,4 +7,4 @@ url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${pkgv
 pkgdesc="The popular and trusted web browser by Google"
 hash="b429124b27f9b5ff3a63229823af0d4200020698eb58b75027897ba5b5e327eb"
 arch=('amd64')
-maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"

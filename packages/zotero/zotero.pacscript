@@ -5,7 +5,7 @@ url="https://download.zotero.org/client/release/${pkgver}/Zotero-${pkgver}_linux
 pkgdesc="Your personal research assistant"
 hash="06daf3bfdb6b5058c2ad0f8e11cecc50eceaef1dd75bb8ed81424c8ad98f2b40"
 arch=('amd64')
-maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 
 prepare() {
   # Modify desktop file to point to install location

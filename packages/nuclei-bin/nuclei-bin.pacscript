@@ -1,4 +1,4 @@
-maintainer="0x262D <pacstall@copypaste.anonaddy.me>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 name="nuclei-bin"
 pkgname="nuclei"
 gives="nuclei"

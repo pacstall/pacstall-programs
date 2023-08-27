@@ -6,4 +6,4 @@ url="https://downloads.zohocdn.com/notebooklinux-desktop/Notebook-${pkgver}.deb"
 repology=("project: zoho-notebook")
 pkgdesc="The most beautiful note-taking app across devices"
 hash="f1d5ce56d1c0324194b9e8ca4487bcc0f90a0fb600627e2343421b406b904abd"
-maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
+maintainer="Oren Klopfer <oren@taumoda.com>"

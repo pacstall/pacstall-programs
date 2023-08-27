@@ -7,3 +7,4 @@ url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${p
 pkgdesc="The web browser from Microsoft - Beta"
 hash="1eabc22abed5556c9d70998e699c04f621a1c5c9c67d9c65065c1238802e0d87"
 arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"

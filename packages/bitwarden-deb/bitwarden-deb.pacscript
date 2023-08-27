@@ -7,5 +7,5 @@ url="https://github.com/${gives}/clients/releases/download/desktop-v${pkgver}/Bi
 pkgdesc="Open Source Password Manager"
 hash="6632feb32ca7391e080e052e3da32e234046eca42aca4959bef619f54a7214e6"
 arch=('amd64')
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: bitwarden")

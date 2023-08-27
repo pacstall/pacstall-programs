@@ -8,3 +8,4 @@ url="https://github.com/GitCredentialManager/git-credential-manager/releases/dow
 pkgdesc="Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services"
 hash="e9c509afd3f9bd486c277ed2d63783f1b46ddb5aa1f3cf0cb02f06e76166ac8c"
 arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"

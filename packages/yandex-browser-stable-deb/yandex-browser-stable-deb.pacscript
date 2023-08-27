@@ -7,3 +7,4 @@ url="http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${gives}/${gives}_${pk
 pkgdesc="The web browser from Yandex"
 hash="810c4014cc94001fbe12200155b5e0f9dd58f58e15f83078333116a2910c1718"
 arch=('amd64')
+maintainer="Oren Klopfer <oren@taumoda.com>"

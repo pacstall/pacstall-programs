@@ -7,4 +7,4 @@ repology=("project: zoom-videoconference")
 pkgdesc="Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution."
 hash="b9c7347a241d474822e7021e2c01a066b37f30301e1642901f3dc5430f947c96"
 arch=('amd64')
-maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
+maintainer="Oren Klopfer <oren@taumoda.com>"
