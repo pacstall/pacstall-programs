@@ -10,9 +10,9 @@ pkgver() {
 }
 
 build() {
-  sudo meson setup build
+  sudo meson setup builddir
 }
 
 package() {
-  sudo ninja -C build install DESTDIR="${pkgdir}"
+  sudo  DESTDIR="${pkgdir}" ninja -C builddir install
 }
