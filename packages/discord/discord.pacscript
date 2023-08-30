@@ -1,5 +1,5 @@
 name="discord"
-pkgver="0.0.28"
+pkgver="0.0.29"
 maintainer="Elsie19 <hwengerstickel@pm.me>"
 url="https://dl.discordapp.net/apps/linux/${pkgver}/${name}-${pkgver}.tar.gz"
 homepage='https://discord.com/'
