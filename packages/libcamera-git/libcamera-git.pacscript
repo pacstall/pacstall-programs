@@ -10,9 +10,10 @@ pkgver() {
 }
 
 build() {
-  sudo meson setup builddir
+  sudo meson setup build
+  sudo ninja -C build -j"${NCPU}"
 }
 
 package() {
-  sudo  DESTDIR="${pkgdir}" ninja -C builddir install
+  sudo DESTDIR="${pkgdir}" ninja -C build install
 }
