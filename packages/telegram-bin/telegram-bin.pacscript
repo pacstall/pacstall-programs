@@ -1,10 +1,10 @@
 name="telegram-bin"
 gives="telegram"
-pkgver="4.9.2"
+pkgver="4.9.4"
 homepage="https://telegram.org/"
 pkgdesc="Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed"
 url="https://updates.tdesktop.com/tlinux/tsetup.${pkgver}.tar.xz"
-hash="add75e937a50d2fe1ee2002ff44d68b54228b30cd833f1ff9c20de93c7e4634f"
+hash="0969c422bc09b4139db672146a36d5a5ab212f3b53cf02c8e9c0f0387a28d97e"
 repology=("project: telegram-desktop")
 maintainer="Diegiwg <diegiwg@gmail.com>"
 
