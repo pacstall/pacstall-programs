@@ -6,3 +6,4 @@ hash="d9c97eac0a3573a98db98a7e56e043968da8ad7908c31f6b16daa19febd28e9b"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgdesc="Special built meson for compiling on focal"
 arch=('any')
+incompatible=("ubuntu:20.10" "ubuntu:21.*" "ubuntu:22.*" "ubuntu:23.*" "debian:*")
