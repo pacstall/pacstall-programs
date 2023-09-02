@@ -9,7 +9,7 @@ homepage='https://neovim.io/'
 hash="262892176e21da0902c4f0b1e027d54d21b4bcae6b0397afccd8a81b476c3055"
 pkgdesc="Vim fork maintained by the community"
 repology=("project: neovim")
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 
 package() {
   sudo chmod +x nvim.appimage

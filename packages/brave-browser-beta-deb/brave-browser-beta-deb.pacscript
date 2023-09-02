@@ -8,4 +8,4 @@ pkgdesc="Testing version of world's most unique, privacy friendly web browser"
 hash="fc401ae62eddca4de5406fcec5b5eb811da530eb7dc672d5f2ec5d06612b15d5"
 pacdeps=("brave-keyring-deb")
 repology=("project: brave" "visiblename: brave-beta-bin")
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"

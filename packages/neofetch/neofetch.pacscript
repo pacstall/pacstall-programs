@@ -9,7 +9,7 @@ optdepends=("w3m-img: image preview"
   "libcaca-dev: image preview")
 pkgdesc="Command-line system information tool"
 hash="e610da6561f17c8161337d0c4115da310be576e8699fa2add64e14eeb3f3dcf1"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 
 package() {
   sudo make install DESTDIR="${pkgdir}"

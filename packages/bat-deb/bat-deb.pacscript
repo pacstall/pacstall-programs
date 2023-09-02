@@ -5,7 +5,7 @@ pkgver="0.23.0"
 url="https://github.com/sharkdp/${gives}/releases/download/v${pkgver}/bat_${pkgver}_amd64.deb"
 pkgdesc="A cat(1) clone with wings"
 hash="f1e545343a75e7959428546a2aeccc0fe23ff39f2a6432c0f58d03e2786207e4"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 arch=('amd64')
 repology=("project: bat-cat")
 

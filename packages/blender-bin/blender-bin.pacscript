@@ -6,7 +6,7 @@ hash="4c034e7045fbca9853574f1e9afa7fbca192754df4ecd8260dfeb30c66913033"
 homepage='https://www.blender.org/'
 arch=("amd64")
 pkgdesc="A fully integrated 3D graphics creation suite"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 repology=("project: blender")
 
 package() {

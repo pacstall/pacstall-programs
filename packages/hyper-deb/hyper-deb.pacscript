@@ -5,5 +5,5 @@ url="https://github.com/vercel/hyper/releases/download/v${pkgver}/hyper_${pkgver
 hash="8c4cd9e8c58568d5c14bc080cdf9ffb9f30fa5672e6bd1e1045cdeb563251f56"
 arch=('amd64')
 pkgdesc="HTML/JS/CSS Terminal"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 repology=("project: hyper-terminal")

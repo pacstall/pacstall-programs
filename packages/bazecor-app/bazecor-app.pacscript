@@ -8,7 +8,7 @@ depends=("usbutils" "udev")
 hash="69f6a5523dc4a875fa72d0998301917f892abfd01e552f8f01a040e222bd8ca9"
 breaks=("bazecor" "bazecor-bin" "bazecor-deb" "bazecor-git")
 arch=('amd64')
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 repology=("project: bazecor")
 
 package() {

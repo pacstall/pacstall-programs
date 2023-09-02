@@ -10,4 +10,4 @@ pkgdesc="The Brave browser is a fast, private and secure web browser for PC, Mac
 hash="947176c81f9a52abd65312e5224f3e5f515deb1c08c217262fe4cc8abb5140ba"
 arch=('amd64')
 repology=("project: brave" "visiblename: brave-nightly")
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"

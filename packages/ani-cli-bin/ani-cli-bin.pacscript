@@ -6,7 +6,7 @@ url="https://github.com/pystardust/ani-cli/releases/download/v${pkgver}/ani-cli"
 depends=("grep" "sed" "wget" "mpv" "aria2" "ffmpeg" "fzf")
 hash="681a600c6d7133f83c493ab3ded0ec2dff2b04371c371613d1dd498380a247c9"
 pkgdesc="A cli tool to browse and play anime"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 
 prepare() {
   chmod +x ani-cli

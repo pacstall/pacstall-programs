@@ -5,7 +5,7 @@ breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-bin")
 url="https://github.com/skeeto/endlessh.git"
 pkgver="1.1"
 pkgdesc="SSH tarpit that very slowly sends an endless, random SSH banner"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }

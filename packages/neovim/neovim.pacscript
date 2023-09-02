@@ -6,7 +6,7 @@ makedepends=("gettext" "libtool" "libtool-bin" "autoconf" "automake" "cmake" "g+
 replace=("neovim" "nvim" "neovim-runtime")
 pkgdesc="Neovim is a vim fork maintained by the community"
 hash="8db17c2a1f4776dcda00e59489ea0d98ba82f7d1a8ea03281d640e58d8a3a00e"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 repology=("project: ${name}")
 
 build() {
