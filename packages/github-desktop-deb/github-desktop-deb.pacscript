@@ -7,4 +7,4 @@ homepage='https://desktop.github.com/'
 repology=("project: github-desktop" "visiblename: github-desktop" "repo: aur")
 pkgdesc="GitHub Desktop is an open source Electron-based GitHub app written in TypeScript and uses React."
 hash="a7eaabf7f68441c7e4280ac2de84f22228c791a3732ee9b7c577929cd7b181b5"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"

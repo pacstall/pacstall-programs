@@ -9,4 +9,4 @@ hash="bf24b39cb0a312aa25dc53991ef0e963d2d8d541b61313aefec86ef2cb8aba83"
 arch=('amd64')
 pacdeps=("brave-keyring-deb")
 repology=("project: brave")
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"

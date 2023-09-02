@@ -4,7 +4,7 @@ pkgver="0.1.1"
 breaks=("dino" "dino-app" "dino-bin" "dino-deb")
 gives="dino"
 pkgdesc="An extensible database system written in Bash"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }

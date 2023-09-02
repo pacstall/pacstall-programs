@@ -5,7 +5,7 @@ makedepends=("autoconf" "make")
 depends=("libncurses5-dev" "libncursesw5-dev")
 pkgdesc="Terminal based The Matrix like implementation"
 hash="e46c739bfe79e570db2461f89ac66ea79a8fab8efb8423ab53f143e93c2553bc"
-maintainer="Elsie19 <hwengerstickel@pm.me>"
+maintainer="Elsie19 <elsie19@pm.me>"
 
 build() {
   ./configure
