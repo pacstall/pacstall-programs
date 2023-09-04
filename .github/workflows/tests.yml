@@ -40,7 +40,7 @@ jobs:
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
       - id: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - id: files
         uses: masesgroup/retrieve-changed-files@v2
       - name: Check for Pacscript changes
@@ -134,7 +134,7 @@ jobs:
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
       - id: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - id: files
         uses: masesgroup/retrieve-changed-files@v2
       - name: Check for Pacscript changes
