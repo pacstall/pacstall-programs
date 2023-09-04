@@ -8,6 +8,7 @@ hash="9caaf41608a565a82f1057391d3ac7a4a1e276d9df6fc56367b202ffb8484b48"
 maintainer="Herisson <spaceguybox@outlook.com>"
 gives="${name}"
 breaks=("${name}" "${name}-git")
+depends=("gtk-update-icon-cache")
 build() {
   sudo mkdir -p "${pkgdir}/usr/share/${name}"
 }
