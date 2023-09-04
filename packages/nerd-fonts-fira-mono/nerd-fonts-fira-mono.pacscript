@@ -11,6 +11,5 @@ maintainer="Herisson <spaceguybox@outlook.com>"
 
 package() {
   sudo install -d "${pkgdir}"/usr/share/fonts/TTF
-  sudo rm "${SRCDIR:?}/"*"Windows Compatible.ttf"
   sudo install -Dm644 "${SRCDIR}/"*.ttf "${pkgdir}"/usr/share/fonts/TTF
 }
