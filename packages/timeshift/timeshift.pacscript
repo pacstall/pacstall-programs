@@ -1,19 +1,20 @@
 name="timeshift"
 repology=("project: timeshift")
-pkgver="22.11.2"
+pkgver="23.07.1"
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 url="https://github.com/linuxmint/timeshift/archive/refs/tags/${pkgver}.zip"
-hash="7a8b8a328272cbfd9b33364d578cdf10fb1b7c2b9a73f97fcde0d903fef2d42e"
-makedepends=("debhelper" "autotools-dev" "gzip" "valac" "libgtk-3-dev" "libgee-0.8-dev" "libjson-glib-dev" "libvte-2.91-dev")
+hash="7b468430198c4e8c5c502258f1f67d15f0e68c3f58189d6e80b661cbdaf740f2"
+makedepends=("debhelper" "autotools-dev" "gzip" "valac" "libgtk-3-dev" "libgee-0.8-dev" "libjson-glib-dev" "libvte-2.91-dev" "libxapp-dev")
 depends=("rsync" "btrfs-progs")
 breaks=("${name}-git" "${name}-deb" "${name}-bin" "${name}-app")
 replace=("timeshift-btrfs")
-pkgdesc="Timeshift is a system restore utility which takes snapshots of the system at regular intervals. These snapshots can be restored at a later date to undo system changes. Creates incremental snapshots using rsync or BTRFS snapshots using BTRFS tools."
+pkgdesc="System restore utility that takes snapshots at regular intervals using rsync or BTRFS."
 
 build() {
-  make -j"${NCPU}" all
+  sudo meson setup build
+  sudo ninja -C build -j"${NCPU}"
 }
 
 package() {
-  sudo make install DESTDIR="${pkgdir}"
+  sudo DESTDIR="${pkgdir}" ninja -C build install
 }
