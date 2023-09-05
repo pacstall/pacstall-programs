@@ -15,6 +15,6 @@ build() {
 }
 
 package() {
-sudo  cp -r "${name}"/* "${pkgdir}/usr/share/themes/${name}/"
-sudo  cp -r "${name}-dark"/* ${pkgdir}/usr/share/themes/${name}-dark/"
+  sudo  cp -r ${name}/* "${pkgdir}/usr/share/themes/${name}/"
+  sudo  cp -r ${name}-dark/* ${pkgdir}/usr/share/themes/${name}-dark/"
 }
