@@ -8,13 +8,13 @@ hash="882f15821cba7d446af38dad904073704656b73171102f684433af9467cd1f46"
 maintainer="Herisson <spaceguybox@outlook.com>"
 gives="${name}"
 breaks=("${name}" "${name}-git")
+
 build() {
-  sudo mkdir -p "${pkgdir}/usr/share/${name}"
   sudo mkdir -p "${pkgdir}/usr/share/themes/${name}"
   sudo mkdir -p "${pkgdir}/usr/share/themes/${name}-dark"
 }
 
 package() {
-sudo  cp adw-gtk3/* ${pkgdir}/usr/share/themes/adw-gtk3/ -r
-sudo  cp adw-gtk3-dark/* ${pkgdir}/usr/share/themes/adw-gtk3-dark/ -r
+sudo  cp -r "${name}"/* "${pkgdir}/usr/share/themes/${name}/"
+sudo  cp -r "${name}-dark"/* ${pkgdir}/usr/share/themes/${name}-dark/"
 }
