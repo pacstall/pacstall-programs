@@ -15,6 +15,6 @@ build() {
 }
 
 package() {
-  sudo  cp -r adw-gtk3/* "${pkgdir}/usr/share/themes/adw-gtk3/"
-  sudo  cp -r adw-gtk3-dark/* ${pkgdir}/usr/share/themes/adw-gtk3-dark/"
+  sudo cp -r "${name}"/* "${pkgdir}/usr/share/themes/${name}/"
+  sudo cp -r "${name}"-dark/* "${pkgdir}/usr/share/themes/${name}-dark/"
 }
