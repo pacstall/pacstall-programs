@@ -12,6 +12,6 @@ maintainer="Herisson <spaceguybox@outlook.com>"
 repology=("project: owofetch")
 
 package() {
-cargo build --release
+  cargo build -j"${NCPU}" --release --locked
   sudo install -Dm755 ./target/release/owofetch "${pkgdir}/usr/bin/${pkgname}"
 }
