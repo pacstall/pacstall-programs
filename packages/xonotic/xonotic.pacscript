@@ -14,9 +14,8 @@ package() {
   sudo install -Dm755 "xonotic-linux64-sdl" "${pkgdir}/usr/bin/${pkgname}-sdl"
   sudo install -Dm755 "xonotic-linux64-glx" "${pkgdir}/usr/bin/${pkgname}-glx"
   sudo mkdir -p "${pkgdir}/usr/share/applications/"
-  sudo mkdir -p "${homedir}/.xonotic"
-  sudo mkdir -p "${pkgdir}/.xonotic"
-  cp ./.* ${pkgdir}/.xonotic/
+  sudo mkdir -p "${pkgdir}/usr/share/xonotic"
+  cp ./.* ${pkgdir}/usr/share/xonotic
         echo "[Desktop Entry]
 Type=Application
 Version=0.8.6
@@ -25,7 +24,7 @@ Comment=Multiplayer, deathmatch oriented first person shooter
 Comment[de]=Deathmatch- und Mehrspieler-orientierter Ego-Shooter
 Comment[fr]=Jeu de tir à la première personne multijoueur
 Icon=xonotic
-Exec=xonotic-sdl -basedir ${pkgdir}/.xonotic
+Exec=xonotic-sdl -basedir ${pkgdir}/usr/share/xonotic
 Terminal=false
 PrefersNonDefaultGPU=true
 StartupNotify=false
