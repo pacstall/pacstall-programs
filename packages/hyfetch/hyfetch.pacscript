@@ -14,5 +14,5 @@ hash="5850e5b363b2268ce270b8dd3b33ed00e3d00948c40cebcf8ab6c7cfdfcc41ec"
 maintainer="Herisson <spaceguybox@outlook.com>"
 
 package() {
-  sudo ./setup.py install
+  sudo ./setup.py install --prefix ${pkgdir}
 }
