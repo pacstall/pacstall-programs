@@ -17,7 +17,7 @@ package() {
   sudo mkdir -p "${homedir}/.xonotic"
   sudo mkdir -p "${pkgdir}/.xonotic"
   cp /.* ${pkgdir}/.xonotic/
-        echo '[Desktop Entry]
+        echo "[Desktop Entry]
 Type=Application
 Version=0.8.6
 Name=Xonotic
