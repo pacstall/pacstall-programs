@@ -11,9 +11,12 @@ maintainer="Herisson <spaceguybox@outlook.com>"
 repology=("project: xonotic")
 
 package() {
-  sudo install -Dm755 "xonotic-linux64-sdl" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "xonotic-linux64-sdl" "${pkgdir}/usr/bin/${pkgname}-sdl"
   sudo install -Dm755 "xonotic-linux64-glx" "${pkgdir}/usr/bin/${pkgname}-glx"
   sudo mkdir -p "${pkgdir}/usr/share/applications/"
+  sudo mkdir -p "~/.xonotic"
+  cp ./* -r ~/.xonotic/
   sudo cp ./misc/logos/xonotic.desktop ${pkgdir}/usr/share/applications/
   sudo cp ./misc/logos/xonotic-glx.desktop ${pkgdir}/usr/share/applications/
 }
+
