@@ -4,6 +4,6 @@ breaks=("tabby" "tabby-app")
 pkgver="1.0.197"
 pkgdesc="A terminal for the modern age"
 hash="aa1cc7936d80d8eb1bc0a50f55abb5120d1172877ffbe7bb2548d30f4c799fe5"
-maintainer="AloneER0 <aloneer0@outlook.com>"
+maintainer="Herisson <spaceguybox@outlook.com>"
 url="https://github.com/Eugeny/tabby/releases/download/v${pkgver}/tabby-${pkgver}-linux-x64.deb"
 repology=("project: ${gives}")
