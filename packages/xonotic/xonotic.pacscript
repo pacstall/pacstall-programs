@@ -31,4 +31,3 @@ PrefersNonDefaultGPU=true
 StartupNotify=false
 Categories=Game;ActionGame;' | sudo tee "${pkgdir}/usr/share/applications/xonotic.desktop" > /dev/null
 }
-
