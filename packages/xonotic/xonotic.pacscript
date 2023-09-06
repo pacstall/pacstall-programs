@@ -29,5 +29,5 @@ Exec=xonotic-sdl -basedir ${pkgdir}/.xonotic
 Terminal=false
 PrefersNonDefaultGPU=true
 StartupNotify=false
-Categories=Game;ActionGame;' | sudo tee "${pkgdir}/usr/share/applications/xonotic.desktop" > /dev/null
+Categories=Game;ActionGame;" | sudo tee "${pkgdir}/usr/share/applications/xonotic.desktop" > /dev/null
 }
