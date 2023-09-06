@@ -19,4 +19,3 @@ package() {
   sudo cp ./misc/logos/xonotic.desktop ${pkgdir}/usr/share/applications/
   sudo cp ./misc/logos/xonotic-glx.desktop ${pkgdir}/usr/share/applications/
 }
-
