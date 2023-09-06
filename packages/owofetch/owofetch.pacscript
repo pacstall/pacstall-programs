@@ -13,5 +13,5 @@ repology=("project: owofetch")
 
 package() {
 cargo build --release
-  sudo install -Dm755 ./target/release/owofetch ${pkgdir}/usr/bin/${pkgname}
+  sudo install -Dm755 ./target/release/owofetch "${pkgdir}/usr/bin/${pkgname}"
 }
