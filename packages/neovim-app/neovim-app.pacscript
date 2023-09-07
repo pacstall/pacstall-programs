@@ -1,12 +1,12 @@
 name="neovim-app"
 gives="neovim"
 replace=("nvim" "neovim-runtime" "neovim-deb")
-pkgver="0.9.1"
+pkgver="0.9.2"
 makedepends=("libfuse2")
 depends=("libfuse2")
 url="https://github.com/neovim/neovim/releases/download/v${pkgver}/nvim.appimage"
 homepage='https://neovim.io/'
-hash="262892176e21da0902c4f0b1e027d54d21b4bcae6b0397afccd8a81b476c3055"
+hash="61950131e18157ab9c7f14131a3dda0aa81f8e4fb47994bf6d8b418d9be6e3c0"
 pkgdesc="Vim fork maintained by the community"
 repology=("project: neovim")
 maintainer="Elsie19 <elsie19@pm.me>"
