@@ -16,7 +16,7 @@ package() {
   sudo mkdir -p "${pkgdir}/usr/share/applications/"
   sudo mkdir -p "${pkgdir}/usr/share/xonotic"
   sudo mkdir -p "${homedir}/.xonotic"
-  sudo cp ./* "${pkgdir}/usr/share/xonotic/" -r
+  sudo cp ./* "${homedir}/.xonotic/" -r
         echo "[Desktop Entry]
 Type=Application
 Version=0.8.6
@@ -25,7 +25,7 @@ Comment=Multiplayer, deathmatch oriented first person shooter
 Comment[de]=Deathmatch- und Mehrspieler-orientierter Ego-Shooter
 Comment[fr]=Jeu de tir à la première personne multijoueur
 Icon=xonotic
-Exec=xonotic-sdl -basedir /usr/share/xonotic/
+Exec=xonotic-sdl
 Terminal=false
 PrefersNonDefaultGPU=true
 StartupNotify=false
