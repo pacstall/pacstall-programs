@@ -15,8 +15,7 @@ package() {
   sudo install -Dm755 "xonotic-linux64-glx" "${pkgdir}/usr/bin/${pkgname}-glx"
   sudo mkdir -p "${pkgdir}/usr/share/applications/"
   sudo mkdir -p "${pkgdir}/usr/share/xonotic"
-  sudo mkdir -p "${homedir}/.xonotic"
-  sudo cp ./* "${homedir}/.xonotic/" -r
+  sudo cp -r ./* "${pkgdir}/usr/share/xonotic"
         echo "[Desktop Entry]
 Type=Application
 Version=0.8.6
