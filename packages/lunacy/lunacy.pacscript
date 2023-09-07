@@ -1,0 +1,7 @@
+name="lunacy-deb"
+gives="lunacy"
+pkgver="1.0"
+url="https://lcdn.icons8.com/setup/Lunacy.deb"
+pkgdesc=" Lunacy works fast and smoothly even on potato computers."
+hash="3f7aadd4d4c80f793b1573dec422e53ed953e3e386116f0ae143ab94ee6370d8"
+maintainer="Herisson <spaceguybox@outlook.com>"
