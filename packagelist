@@ -291,6 +291,7 @@ opera-beta-deb
 opera-deb
 opera-developer-deb
 os-installer-git
+owofetch
 pacget-git
 paconvert-git
 pacstall-gui-git
@@ -447,6 +448,7 @@ xapps-common-deb
 xfce4-deb
 xfce4-settings-pine-git
 xmind-vana-deb
+xonotic
 yabridge
 yad
 yafetch-git
