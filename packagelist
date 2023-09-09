@@ -3,8 +3,8 @@ adapta-gtk-theme-git
 adw-gtk3
 alacritty
 amfora-bin
-an-anime-game-launcher-bin
 ananicy-cpp
+an-anime-game-launcher-bin
 android-studio
 android-studio-canary
 ani-cli-bin
@@ -97,6 +97,7 @@ epson-printer-utility-deb
 exa-git
 exploitdb-git
 expressvpn-deb
+eza-git
 f1multiviewer-deb
 fake-ubuntu-advantage-tools-deb
 fast
@@ -125,10 +126,10 @@ genymotion-bin
 gfn-electron-bin
 gir1.2-xapp-1.0-deb
 git
+gitblade-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
-gitblade-deb
 gitfiend-deb
 github-cli-bin
 github-cli-deb
@@ -275,8 +276,8 @@ obs-backgroundremoval
 obs-backgroundremoval-0-4-0
 obs-backgroundremoval-deb
 obs-backgroundremoval-git
-obs-ndi-deb
 obsidian-deb
+obs-ndi-deb
 oil
 onefetch-bin
 onlyoffice-desktopeditors-deb
@@ -317,8 +318,8 @@ popsicle
 postman-bin
 powertop-git
 prismlauncher-git
-proton-python-client
 protonmail-bridge-deb
+proton-python-client
 protonup-qt-app
 protonvpn-cli
 protonvpn-gui
@@ -350,8 +351,8 @@ rstudio-deb
 rust-motd-deb
 schildichat-deb
 sed
-shell-color-scripts
 shellcheck-bin
+shell-color-scripts
 shellharden
 shfmt-bin
 sidequest-bin
@@ -366,13 +367,13 @@ soundux
 spacecadetpinball-git
 spot-client-git
 spotify-client-deb
-st-distrotube-git
-st-lukesmith-git
 starship-bin
+st-distrotube-git
 steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
+st-lukesmith-git
 sublime-merge-deb
 sublime-text-deb
 surf
@@ -402,8 +403,8 @@ torbrowser-launcher-git
 torguard-deb
 touchegg-deb
 touchegg-git
-tre-git
 treefetch-bin
+tre-git
 truckersmp-cli
 ttf-fira-sans
 tuner
