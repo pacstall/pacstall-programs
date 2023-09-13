@@ -206,10 +206,8 @@ linux-headers-deb
 linux-headers-generic-deb
 linux-headers-generic-stable-deb
 linux-headers-okpine-deb
-linux-headers-rockchip-deb
 linux-headers-stable-deb
 linux-image-okpine-deb
-linux-image-rockchip-deb
 linux-image-unsigned-deb
 linux-image-unsigned-stable-deb
 linux-kernel

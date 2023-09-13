@@ -1,9 +1,9 @@
 name="linux-libc-dev-okpine-deb"
 gives="linux-libc-dev"
 replace=("${gives}")
-pkgver="6.5.0"
+pkgver="6.6.0-rc1"
 url="https://github.com/oklopfer/debs/raw/master/kernel/${pkgver}/${gives}_${pkgver}-1_arm64.deb"
-hash="6ef7125732d9db4c6ee8ab1cf8036f53ce2fe15176763159fd0bd68bb9124200"
+hash="bfaa932a290dc2567c647041ed1befba65ec1367ad95b97918421ea79de4c890"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgdesc="Linux kernel libc-dev files built for Pine64 devices"
 arch=('arm64')
