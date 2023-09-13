@@ -1,6 +1,6 @@
 name="rhino-pine-core"
 url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
-pacdeps=("unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "u-boot-mobian-deb" "mobile-usb-networking-deb")
+pacdeps=("unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "u-boot-mobian-deb" "mobile-usb-networking-deb" "timeshift")
 if [[ -f /usr/bin/enable-modem ]]; then
   depends=("eg25-manager" "modemmanager" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "purple-mm-sms" "ofono" "ofono-scripts")
 fi
@@ -8,7 +8,7 @@ pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-server-core")
 pkgver="2023.2"
-pkgrel="1"
+pkgrel="2"
 style="(mobile)"
 branch="devel"
 post_install() {
