@@ -7,7 +7,7 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-t
 "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev" \
 "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "gnome-keyring" "bluez-firmware" \
 "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics" "ukui-touchpadserver" \
-"pulseaudio-module-bluetooth")
+"pulseaudio-module-bluetooth" "bluetooth")
 pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-mobile"
 replace=("unicorn-desktop" "unicorn-desktop-git")
