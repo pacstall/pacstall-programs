@@ -1,6 +1,7 @@
 name="timeshift"
 repology=("project: timeshift")
 pkgver="23.07.1"
+pkgrel="2"
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 url="https://github.com/linuxmint/timeshift/archive/refs/tags/${pkgver}.zip"
 hash="7b468430198c4e8c5c502258f1f67d15f0e68c3f58189d6e80b661cbdaf740f2"
@@ -17,4 +18,9 @@ build() {
 
 package() {
   sudo DESTDIR="${pkgdir}" ninja -C build install
+}
+
+# FIX: workaround broken pkexec usage from upstream
+post_install() {
+  sudo sed -i 's/pkexec \${app/pkexec env DISPLAY=\$DISPLAY XAUTHORITY=\$XAUTHORITY \${app/g' /usr/local/bin/timeshift-launcher
 }
