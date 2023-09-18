@@ -1,7 +1,7 @@
 name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
 pkgver="0.0.1"
-pkgrel="10"
+pkgrel="11"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck" \
 "vala-panel-appmenu" "appmenu-gtk2-module" "appmenu-gtk3-module" "xfce4-power-manager" \
 "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol" \
@@ -83,4 +83,8 @@ post_install() {
   sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/docks.ini"
   sudo cp "/etc/xdg/xdg-unicorn/.bashrc" "/etc/skel/.bashrc"
   papirus-folders -C violet --theme Papirus-Dark
+  if ! [[ -f /etc/NetworkManager/conf.d/10-globally-managed-devices.conf ]]; then
+    echo "[keyfile]" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
+    echo "unmanaged-devices=none" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
+  fi
 }
