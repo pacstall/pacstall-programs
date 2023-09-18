@@ -1,11 +1,11 @@
 name="pycharm-community-bin"
-pkgver="2023.2"
+pkgver="2023.2.1"
 pkgname="pycharm-community"
 gives="pycharm-community"
 maintainer="ObsidianPresidium <emil@aarestrup.nu>"
 pkgdesc="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 url="https://download.jetbrains.com/python/pycharm-community-${pkgver}.tar.gz"
-hash="64472ee39d244fbc2cc8aeade204d02a767c7ce66b2edaa26a8499eeef44f3d7"
+hash="5956c6cb5a5bad1d9749e487b3bb69fcbf0170f52324e4ff009283b723838778"
 desktop_file_sum="0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04"
 repology=("project: pycharm")
 
