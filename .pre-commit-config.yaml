@@ -1,5 +1,5 @@
 ci:
-  skip: [shellcheck, shfmt]
+  skip: [shfmt]
 
 exclude: '^.*\.(patch)$'
 
