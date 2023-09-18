@@ -8,6 +8,8 @@ hash="a1f7e951a8c5a43da70a56de5199fb807e44e3156973721d7d3a14974fbc225c"
 __icon_url="https://github.com/AppImage/appimage.github.io/blob/master/database/Krita/icons/scalable/krita.svgz"
 repology=("project: krita")
 arch=("amd64")
+maintainer="harrietobrien <harrietobrien@protonmail.com>"
+
 package() {
   sudo chmod +x "${gives}-${pkgver}-x86_64.appimage"
   sudo install -Dm755 "${gives}-${pkgver}-x86_64.appimage" "${pkgdir}/usr/bin/${gives}"
@@ -20,4 +22,3 @@ package() {
     Type=Application
     Exec=/usr/bin/krita" | sudo tee "${pkgdir}/usr/share/applications/krita.desktop" > /dev/null
 }
-maintainer="harrietobrien <harrietobrien@protonmail.com>"
