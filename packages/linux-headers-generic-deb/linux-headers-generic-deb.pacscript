@@ -1,12 +1,12 @@
 name="linux-headers-generic-deb"
-gives="linux-headers-6.5.0-060500-generic"
-pkgver="6.5"
-buildver="6.5.0-060500.202308271831"
+gives="linux-headers-6.6.0-060600rc2-generic"
+pkgver="6.6-rc2"
+buildver="6.6.0-060600rc2.202309171834"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="1997b4f8c51d4d09e1d15d1dc8626eb5d25ed5c5b8df017c85a9e3f3a9dd6976"
+  hash="30cc3ab6b582eedd0059a0e2808a6a6341a952f8796764b6da5dcede0988536b"
 else
-  hash="8892ba0c12ce4b7f8db43fc7cfd9b6df1090407e3d9de56e7b661cd1aa080d77"
+  hash="25865529eb6eba60ec6ac82d95a163e508f015a451baa48da4e2ef297e8b320b"
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
 pkgdesc="Ubuntu Linux mainline kernel (Generic headers)"
