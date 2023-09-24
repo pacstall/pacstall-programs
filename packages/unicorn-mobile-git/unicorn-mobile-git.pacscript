@@ -1,11 +1,11 @@
 name="unicorn-mobile-git"
 url="https://github.com/rhino-linux/unicorn.git"
 pkgver="0.0.1"
-pkgrel="9"
+pkgrel="10"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
   "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11"
   "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev"
-  "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "gnome-keyring" "bluez-firmware"
+  "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "bluez-firmware"
   "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics" "ukui-touchpadserver"
   "pulseaudio-module-bluetooth" "bluetooth")
 pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb")
