@@ -8,16 +8,16 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="mold-bin"
 gives="mold"
-pkgver="2.1.0"
+pkgver="2.2.0"
 arch=("amd64" "arm64")
 case "${CARCH}" in
   amd64)
     url="https://github.com/rui314/mold/releases/download/v${pkgver}/mold-${pkgver}-x86_64-linux.tar.gz"
-    hash="67a479bf2eddf10dd223e488ceedddca49174f629f7a4bbaeaab80c5b5702021"
+    hash="d66e0230c562c2ba0e0b789cc5034e0fa2369cc843d0154920de4269cd94afeb"
     ;;
   arm64)
     url="https://github.com/rui314/mold/releases/download/v${pkgver}/mold-${pkgver}-aarch64-linux.tar.gz"
-    hash="3f7d3f7eede50687399b567e5bddfaadd902ea8599185dd159882b3d25184e21"
+    hash="9bd7afe247c3a25d6523c7791023ac60dfa72d00866b08d17e7138dd14cdf77c"
     ;;
   *) return 1 ;;
 esac

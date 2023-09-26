@@ -1,15 +1,15 @@
 name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
 pkgver="0.0.1"
-pkgrel="11"
+pkgrel="13"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
   "vala-panel-appmenu" "appmenu-gtk2-module" "appmenu-gtk3-module" "xfce4-power-manager"
   "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol"
   "plank" "dconf-cli" "yaru-theme-icon" "yaru-theme-gtk" "papirus-icon-theme" "firmware-sof-signed"
   "dbus-x11" "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa"
   "xserver-xorg-video-fbdev" "light-locker" "light-locker-settings" "tumbler" "tumbler-plugins-extra"
-  "ffmpegthumbnailer" "gnome-keyring" "bluez-firmware" "xserver-xorg-input-multitouch"
-  "xserver-xorg-input-synaptics" "ukui-touchpadserver" "pulseaudio-module-bluetooth" "bluetooth")
+  "ffmpegthumbnailer" "bluez-firmware" "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics"
+  "ukui-touchpadserver" "pulseaudio-module-bluetooth" "bluetooth")
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb")
 gives="unicorn-desktop"
 replace=("unicorn-mobile" "unicorn-mobile-git")
@@ -35,6 +35,7 @@ build() {
   sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/scalable/places"
   sudo mkdir -p "${pkgdir}/usr/share/themes"
+  sudo mkdir -p "${pkgdir}/etc/X11/xorg.conf.d"
 }
 
 package() {
@@ -60,6 +61,7 @@ package() {
   sudo cp applications/* "${pkgdir}/usr/share/applications"
   sudo cp lightpad/* "${pkgdir}/etc/skel/.lightpad"
   sudo cp -r unicorn-dashboard "${pkgdir}/usr/share/themes"
+  sudo install -Dm644 "50-synaptics.conf" -t "${pkgdir}/etc/X11/xorg.conf.d"
   sudo install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
   sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
