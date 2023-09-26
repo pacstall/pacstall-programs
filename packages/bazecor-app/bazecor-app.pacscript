@@ -38,11 +38,11 @@ post_install() {
   line="SUBSYSTEMS==\"usb\", ATTRS{idVendor}==\"${YYYY}\", ATTRS{idProduct}==\"${XXXX}\", GROUP=\"users\", MODE=\"0666\""
 
   # Generate the rule file.
-  sudo mkdir -p /etc/udev/rules.d/
+  mkdir -p /etc/udev/rules.d/
   echo "${line}" | sudo tee /etc/udev/rules.d/50-dygma.rules > /dev/null
 
   # Reload the `udev` rules.
-  sudo udevadm control --reload-rules
+  udevadm control --reload-rules || :
 }
 
 post_remove() {
