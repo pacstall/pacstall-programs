@@ -5,7 +5,6 @@ maintainer="lfromanini <lfromanini@yahoo.com>"
 repology=("project: ${gives}")
 arch=("amd64" "arm64")
 pkgver="3.30.1"
-
 case "${CARCH}" in
   amd64)
     url="https://github.com/go-task/task/releases/download/v${pkgver}/task_linux_amd64.deb"
