@@ -7,7 +7,7 @@ fi
 pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-core" "rhino-server-core")
-pkgver="2023.3~RC"
+pkgver="2023.3"
 pkgrel="1"
 style="(mobile)"
 branch="devel"
