@@ -1,12 +1,12 @@
 name="alacritty"
-pkgver="0.12.2"
+pkgver="0.12.3"
 repology=("project: alacritty")
 url="https://github.com/alacritty/alacritty/archive/refs/tags/v${pkgver}.tar.gz"
 makedepends=("cargo" "cmake" "pkg-config" "libfreetype6-dev" "libfontconfig1-dev" "libxcb-xfixes0-dev" "python3" "gzip")
 pkgdesc="A fast, cross-platform, OpenGL terminal emulator"
 maintainer="Warofzen <warofzen1@protonmail.com>"
 incompatible=('debian:bullseye')
-hash="285b44d2d2e83118ab7fe61d575811bb85d5e21147808171bd0e583e9e794748"
+hash="7825639d971e561b2ea3cc41e30b57cde8e185a400fee001843bb634df6b28ab"
 
 build() {
   cargo build -j"${NCPU}" --release --locked
