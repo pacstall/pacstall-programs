@@ -1,11 +1,11 @@
 name="rhino-core"
 url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
-pacdeps=("unicorn-desktop-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "timeshift")
+pacdeps=("unicorn-desktop-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git")
 pkgdesc="Transitional package to provide all core Rhino Linux software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 replace=("rhino-pine-core" "rhino-server-core")
 pkgver="2023.3"
-pkgrel="1"
+pkgrel="2"
 style="(mainline)"
 branch="devel"
 post_install() {
