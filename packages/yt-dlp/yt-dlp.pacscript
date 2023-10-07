@@ -1,11 +1,11 @@
 name="yt-dlp"
 repology=("project: ${name}")
-pkgver="2023.07.06"
+pkgver="2023.10.07"
 url="https://github.com/yt-dlp/yt-dlp/releases/download/${pkgver}/yt-dlp"
 depends=("python3" "ffmpeg")
 breaks=("${name}-git" "${name}-bin" "${name}")
 pkgdesc="A youtube-dl fork with additional features and fixes"
-hash="cedf44a9cf3c241520a692c1006d276e6f434d4d945727c47cb1a70d32953f4a"
+hash="47743cde1f66f16f8ef8440b78171877122b1277f906dbebfb7d49fb4c64ab0b"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
