@@ -14,5 +14,5 @@ if [[ ${CARCH} != "amd64" ]]; then
 else
   pkgver="118.0.1-1"
   url="https://deb.librewolf.net/pool/jammy/${gives}-${pkgver}.en-US.ubuntu22.x86_64.deb"
-  hash="c66df74a6f466821ecbf5402d18d4537d513a4bcc25b25d99301dca6e07ad85e"
+  hash="8d2eb43e34c7e6ad2a61c7262ec4520267fdc5ef630884b20461b3a6084c0c31"
 fi
