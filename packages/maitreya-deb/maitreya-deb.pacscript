@@ -9,4 +9,4 @@ pkgdesc="Maitreya is a free software for western and Vedic astrology (Jyotish)"
 hash="b503e65f512f8f593801786a94b30e79d78c28fe431e5102722eae5b3a5a6bc9"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
-incompatible=('*:lunar' '*:matic' '*:bookworm' '*:trixie')
+incompatible=('*:lunar' '*:mantic' '*:bookworm' '*:trixie' '*:sid')
