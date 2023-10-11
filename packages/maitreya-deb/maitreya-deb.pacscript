@@ -1,5 +1,5 @@
 name="maitreya-deb"
-gives="maitreya"
+gives="maitreya8"
 repology=("project: maitreya")
 pkgver="8.1"
 url="https://github.com/martin-pe/maitreya8/releases/download/${pkgver}/maitreya8_${pkgver}_amd64.deb"
