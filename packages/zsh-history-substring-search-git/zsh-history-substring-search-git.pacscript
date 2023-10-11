@@ -6,7 +6,7 @@ depends=("zsh")
 breaks=("${pkgname}")
 replace=("${pkgname}")
 gives=("${pkgname}")
-arch=('amd64')
+arch=('any')
 pkgdesc="ZSH port of Fish history search (up arrow)"
 maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {
