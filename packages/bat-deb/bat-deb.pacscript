@@ -1,10 +1,10 @@
 name="bat-deb"
 gives="bat"
 replace=("${gives}")
-pkgver="0.23.0"
+pkgver="0.24.0"
 url="https://github.com/sharkdp/${gives}/releases/download/v${pkgver}/bat_${pkgver}_amd64.deb"
 pkgdesc="A cat(1) clone with wings"
-hash="f1e545343a75e7959428546a2aeccc0fe23ff39f2a6432c0f58d03e2786207e4"
+hash="fa9353fa0c6e1e67b87757c4bd6bf515f85d3fc16d41b12cc26f7a673892ad01"
 maintainer="Elsie19 <elsie19@pm.me>"
 arch=('amd64')
 repology=("project: bat-cat")
