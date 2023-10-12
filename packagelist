@@ -347,6 +347,7 @@ rhino-server-core
 rhino-setup-bin
 rhino-setup-git
 rhino-system-git
+rhino-ubxi-core
 rstudio-deb
 rust-motd-deb
 schildichat-deb
