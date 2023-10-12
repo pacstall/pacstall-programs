@@ -1,13 +1,13 @@
-name="rhino-core"
+name="rhino-ubxi-core"
 url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
-pacdeps=("unicorn-desktop-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git")
-pkgdesc="Transitional package to provide all core Rhino Linux software"
+pacdeps=("rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git")
+pkgdesc="Transitional package to provide all core Rhino Linux software, without a desktop environment"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 compatible=("ubuntu:devel")
-replace=("rhino-pine-core" "rhino-server-core" "rhino-ubxi-core")
+replace=("rhino-core" "rhino-pine-core" "rhino-server-core")
 pkgver="2023.3"
-pkgrel="4"
-style="(mainline)"
+pkgrel="1"
+style="(ubxi)"
 branch="devel"
 post_install() {
   echo "PRETTY_NAME=\"Rhino Linux ${pkgver} ${style}\"
