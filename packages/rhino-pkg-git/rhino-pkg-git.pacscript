@@ -1,6 +1,6 @@
 name="rhino-pkg-git"
 url="https://github.com/rhino-linux/rhino-pkg.git"
-pkgver="0.1.1"
+pkgver="0.1.2"
 gives="rhino-pkg"
 makedepends=("make" "gettext")
 depends=("gettext")
