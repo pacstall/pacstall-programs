@@ -1,4 +1,4 @@
-name="rhino-core"
+name="rhino-ubxi-core"
 url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
 pacdeps=("rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git")
 pkgdesc="Transitional package to provide all core Rhino Linux software, without a desktop environment"
