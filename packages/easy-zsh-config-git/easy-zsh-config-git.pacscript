@@ -1,6 +1,6 @@
 name="easy-zsh-config-git"
 pkgname="easy-zsh-config"
-url="https://github.com/wszqkzqk/${pkgname}.git"
+url="https://github.com/wszqkzqk/easy-zsh-config.git"
 pkgver="0.6.2"
 pacdeps=("oh-my-posh-git" "zsh-history-substring-search-git")
 depends=("zsh" "zsh-syntax-highlighting" "zsh-autosuggestions")
@@ -19,9 +19,7 @@ prepare() {
 }
 
 package() {
-  sudo install -Dm644 zshrc "${pkgdir}/etc/skel/.zshrc"
-  sudo install -Dm644 zshrc "${pkgdir}/etc/zsh/zshrc"
-  sudo install -Dm640 zshrc "${pkgdir}/root/.zshrc"
+  sudo install -Dm644 zshrc "${pkgdir}/etc/zsh/zshrc-easy-zsh-config"
   sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${name}/"
   sudo install -Dm644 easy-zsh-config "${pkgdir}/usr/share/zsh/easy-zsh-config"
 }
