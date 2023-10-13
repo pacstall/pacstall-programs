@@ -7,7 +7,6 @@ pacdeps=("nerd-fonts-hack")
 breaks=("${pkgname}")
 replace=("${pkgname}")
 gives=("${pkgname}")
-arch=('amd64')
 pkgdesc="A prompt theme engine for any shell"
 maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {
