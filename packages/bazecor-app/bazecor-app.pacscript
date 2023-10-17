@@ -1,11 +1,11 @@
 name="bazecor-app"
 pkgname="bazecor"
-pkgver="1.3.4"
+pkgver="1.3.5"
 gives="bazecor"
 pkgdesc="Bazecor is the graphical configurator for the Dygma Raise"
 url="https://github.com/Dygmalab/Bazecor/releases/download/v${pkgver}/Bazecor-${pkgver}-x64.AppImage"
 depends=("usbutils" "udev")
-hash="7dbb8c9c3e57f76d6fb327f207392ffa8cddd3e6a13d30e20fc2f9b366685523"
+hash="ada7b8b3cfa5a000e53c366ae6bb4b785bb10ca3749c5079b979281a85ca79ef"
 breaks=("bazecor" "bazecor-bin" "bazecor-deb" "bazecor-git")
 arch=('amd64')
 maintainer="Elsie19 <elsie19@pm.me>"
