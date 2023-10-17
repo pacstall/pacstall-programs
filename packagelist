@@ -298,6 +298,7 @@ owofetch
 pacget-git
 paconvert-git
 pacstall-gui-git
+pacstall-qa-git
 pacup-bin
 panagement
 pap
