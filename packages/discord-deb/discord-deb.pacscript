@@ -1,9 +1,9 @@
 name="discord-deb"
 gives="discord"
 breaks=("${gives}" "${gives}-app" "${gives}-debian-patched-deb")
-pkgver="0.0.30"
+pkgver="0.0.32"
 pkgdesc="Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities"
-hash="4a59823227cd75c559fad039e662d905626ca6ad2959d60778670a089ff1ec60"
+hash="7d63e00f4bdcd3f739850713e554460cf9d162f96e3588a921105efcde2bef54"
 maintainer="ObsidianPresidium <emil@aarestrup.nu>"
 arch=('amd64')
 url="https://dl.discordapp.net/apps/linux/${pkgver}/discord-${pkgver}.deb"
