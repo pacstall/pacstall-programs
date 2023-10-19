@@ -1,12 +1,12 @@
 name="genymotion-bin"
 gives="genymotion"
 repology=("project: genymotion")
-pkgver="3.5.0"
+pkgver="3.5.1"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
 arch=("amd64")
 depends=("xdg-utils")
-hash="ad9c937559f49a734bac63de85a87adbf02f4e0529344b739fe0e2d4edc6dd28"
+hash="060a76201f1a7f9155d96db61a5024cf26cb07fe546272520bad3b3991de8e3a"
 url="https://dl.genymotion.com/releases/genymotion-${pkgver}/genymotion-${pkgver}-linux_x64.bin"
 homepage="https://genymotion.com"
 pkgdesc="Android virtual devices"
