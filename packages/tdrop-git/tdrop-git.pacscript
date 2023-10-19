@@ -10,6 +10,8 @@ makedepends=("cmake")
 depends=("xdotool", "bash", "gawk", "procps-ng")
 
 package() {
-  sudo make install
+  sudo install -Dm755 "tdrop" "/usr/local/bin/tdrop"
+  sudo install -Dm644 "tdrop.1" "/usr/local/share/man/man1/tdrop.1"
+  sudo install -Dm644 "LICENSE" "/usr/local/share/licenses/tdrop/LICENSE"
 }
 # vim:set ft=sh ts=2 sw=2 et:
