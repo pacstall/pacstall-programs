@@ -1,5 +1,5 @@
 name="deadbeef-deb"
-gives="deadbeef"
+gives="deadbeef-static"
 repology=("project: deadbeef")
 pkgver="1.9.5"
 build_version="1"
