@@ -22,9 +22,6 @@ package() {
 }
 
 post_install() {
-  mkdir -p "$homedir/.config/pacstall-gui"
-  mv -f ./settings.sh "$homedir/.config/pacstall-gui"
-  chmod -R a+w "$homedir/.config/pacstall-gui"
   sudo update-desktop-database -q
   sudo gtk-update-icon-cache
 }
