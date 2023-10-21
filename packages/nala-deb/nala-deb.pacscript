@@ -1,5 +1,5 @@
 name="nala-deb"
-pkgver="0.13.0"
+pkgver="0.14.0"
 pkgname="nala"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
@@ -16,6 +16,6 @@ if [[ " ${nala_next[*]} " =~ " ${release} " ]]; then
   arch=('amd64')
 else
   url="https://deb.volian.org/volian/pool/main/n/nala/nala_${pkgver}_all.deb"
-  hash="a76a22910b9c67c857fcd9344f4e5d00bcb21321bfb0ecc50ea759a794e35d07"
+  hash="c209eaa9e3d9ccfbcbda3fe8cda786124f5c1abbf4864f7591fd418da4c0e909"
   arch=('any')
 fi

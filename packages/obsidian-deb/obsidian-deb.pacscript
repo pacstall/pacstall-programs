@@ -1,9 +1,9 @@
 name="obsidian-deb"
 gives="obsidian"
-pkgver="1.3.7"
+pkgver="1.4.16"
 url="https://github.com/obsidianmd/obsidian-releases/releases/download/v${pkgver}/obsidian_${pkgver}_amd64.deb"
 pkgdesc="Powerful and extensible knowledge base editor that uses markdown"
-hash="c4795b39933dc4cc1a35a33841f91488fc767f5712731c95f3bbd36e12751894"
+hash="7af0647fdc5a0a70840c9b71742c573e39990dde9e1dcd73479c4ca4aa38d74d"
 maintainer="Hepno <me@hepno.dev>"
 arch=("amd64")
 repology=("project: obsidian")

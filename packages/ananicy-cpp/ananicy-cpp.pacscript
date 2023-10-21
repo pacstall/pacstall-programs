@@ -13,10 +13,10 @@ build() {
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DENABLE_SYSTEMD=ON \
     -DVERSION=${pkgver}
-    cmake --build build --target ananicy-cpp --parallel "${NCPU}"
+  cmake --build build --target ananicy-cpp --parallel "${NCPU}"
 }
 
 package() {
-    sudo DESTDIR="${pkgdir}" cmake --install build --component Runtime
-    sudo install -m755 -d "${pkgdir}/etc/ananicy.d"
+  sudo DESTDIR="${pkgdir}" cmake --install build --component Runtime
+  sudo install -m755 -d "${pkgdir}/etc/ananicy.d"
 }

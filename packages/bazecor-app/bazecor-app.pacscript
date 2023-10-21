@@ -1,11 +1,11 @@
 name="bazecor-app"
 pkgname="bazecor"
-pkgver="1.3.2"
+pkgver="1.3.5"
 gives="bazecor"
 pkgdesc="Bazecor is the graphical configurator for the Dygma Raise"
-url="https://github.com/Dygmalab/Bazecor/releases/download/bazecor-${pkgver}/Bazecor-${pkgver}-x64.AppImage"
+url="https://github.com/Dygmalab/Bazecor/releases/download/v${pkgver}/Bazecor-${pkgver}-x64.AppImage"
 depends=("usbutils" "udev")
-hash="69f6a5523dc4a875fa72d0998301917f892abfd01e552f8f01a040e222bd8ca9"
+hash="ada7b8b3cfa5a000e53c366ae6bb4b785bb10ca3749c5079b979281a85ca79ef"
 breaks=("bazecor" "bazecor-bin" "bazecor-deb" "bazecor-git")
 arch=('amd64')
 maintainer="Elsie19 <elsie19@pm.me>"
@@ -38,11 +38,11 @@ post_install() {
   line="SUBSYSTEMS==\"usb\", ATTRS{idVendor}==\"${YYYY}\", ATTRS{idProduct}==\"${XXXX}\", GROUP=\"users\", MODE=\"0666\""
 
   # Generate the rule file.
-  sudo mkdir -p /etc/udev/rules.d/
+  mkdir -p /etc/udev/rules.d/
   echo "${line}" | sudo tee /etc/udev/rules.d/50-dygma.rules > /dev/null
 
   # Reload the `udev` rules.
-  sudo udevadm control --reload-rules
+  udevadm control --reload-rules || :
 }
 
 post_remove() {

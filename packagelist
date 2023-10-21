@@ -66,6 +66,7 @@ cutefish-settings-git
 cutefish-statusbar-git
 cutefish-wallpapers-git
 dbeaver-ce-deb
+deadbeef-deb
 deskcut-deb
 dino-git
 discord
@@ -83,6 +84,7 @@ dropbox-deb
 duf-deb
 dunst
 dust-bin
+easy-zsh-config-git
 eddie-ui-deb
 electronmail-deb
 electrum-git
@@ -139,6 +141,7 @@ glow-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
 go-bin
+go-task-deb
 gomuks-deb
 google-chrome-beta-deb
 google-chrome-deb
@@ -181,6 +184,7 @@ keybase-deb
 kirc
 komorebi-fork-deb
 koodo-reader-deb
+krita-app
 kvantum
 kxstudio-repos-deb
 lagrange
@@ -276,6 +280,7 @@ obs-backgroundremoval-deb
 obs-backgroundremoval-git
 obs-ndi-deb
 obsidian-deb
+oh-my-posh-git
 oil
 onefetch-bin
 onlyoffice-desktopeditors-deb
@@ -294,6 +299,7 @@ owofetch
 pacget-git
 paconvert-git
 pacstall-gui-git
+pacstall-qa-git
 pacup-bin
 panagement
 pap
@@ -345,6 +351,7 @@ rhino-server-core
 rhino-setup-bin
 rhino-setup-git
 rhino-system-git
+rhino-ubxi-core
 rstudio-deb
 rust-motd-deb
 schildichat-deb
@@ -463,3 +470,4 @@ zoho-notebook-deb
 zoom-deb
 zotero
 zoxide-deb
+zsh-history-substring-search-git

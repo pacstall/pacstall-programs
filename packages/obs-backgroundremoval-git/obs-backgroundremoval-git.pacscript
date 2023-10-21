@@ -2,7 +2,7 @@ name="obs-backgroundremoval-git"
 pkgname="obs-backgroundremoval"
 url="https://github.com/royshil/obs-backgroundremoval.git"
 pkgver="1.1.3"
-makedepends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libsimde-dev" "ninja-build")
+makedepends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libgl1-mesa-dev" "ninja-build")
 pacdeps=("cmake-deb")
 breaks=("${pkgname}")
 replace=("${pkgname}")
@@ -13,18 +13,14 @@ maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {
   git ls-remote "${url}" refs/heads/main | cut -f1 | cut -c1-8
 }
-incompatible=('ubuntu:jammy' 'ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'debian:bullseye')
+incompatible=('ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'debian:bullseye')
 
 build() {
-  mkdir build_x86_64 && cd build_x86_64 || return 1
-  cmake --preset linux-x86_64 -DCMAKE_INSTALL_PREFIX:PATH="${pkgdir}"/usr .. > /dev/null
-  cmake --build . -j"${NCPU}" > /dev/null
+  cmake --preset linux-x86_64 -DCMAKE_INSTALL_PREFIX=/usr
+  cmake --build build_x86_64 --parallel
 }
 
 package() {
-  cd build_x86_64 || return 1
-  sudo cmake --install . > /dev/null
-  sudo mkdir -p "${pkgdir}"/usr/lib/x86_64-linux-gnu/
-  sudo mv "${pkgdir}"/usr/lib/obs-plugins "${pkgdir}"/usr/lib/x86_64-linux-gnu/
-  sudo install -Dm644 "../LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  sudo cmake --install build_x86_64 --prefix "${pkgdir}"/usr
+  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
 }
