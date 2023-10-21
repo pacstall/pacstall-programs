@@ -12,18 +12,18 @@ pkgver() {
 }
 
 prepare() {
-  sudo mkdir -p "${pkgdir}/usr/bin" "${pkgdir}$homedir/.config/pacstall-gui" "${pkgdir}/usr/share/applications"
+  sudo mkdir -p "${pkgdir}/usr/bin" "$homedir/.config/pacstall-gui" "${pkgdir}/usr/share/applications"
 }
 
 package() {
   sudo install -Dm755 pacstall-gui "${pkgdir}/usr/bin/pacstall-gui"
-  sudo mv -f ./settings.sh "${pkgdir}$homedir/.config/pacstall-gui"
+  sudo mv -f ./settings.sh "$homedir/.config/pacstall-gui"
   sudo install -Dm755 LICENSE "${pkgdir}/usr/share/licenses/pacstall-gui/LICENSE"
   sudo mv -f ./pacstall-gui.desktop "${pkgdir}/usr/share/applications"
 }
 
 post_install() {
-  sudo chmod -R a+w "${pkgdir}$homedir/.config/pacstall-gui"
+  sudo chmod -R a+w "$homedir/.config/pacstall-gui"
   sudo update-desktop-database -q
   sudo gtk-update-icon-cache
 }
