@@ -14,4 +14,5 @@ package() {
   sudo install -Dm644 "tdrop.1" "/usr/local/share/man/man1/tdrop.1"
   sudo install -Dm644 "LICENSE" "/usr/local/share/licenses/tdrop/LICENSE"
 }
+
 # vim:set ft=sh ts=2 sw=2 et:
