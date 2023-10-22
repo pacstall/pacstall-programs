@@ -1,13 +1,12 @@
-maintainer="Thomas Crha <thomas@9bitbyte.com>"
-
 name="tdrop-git"
 gives="tdrop"
 url="https://github.com/noctuid/tdrop.git"
 pkgver="0.5.0"
 homepage='https://github.com/noctuid/tdrop'
 pkgdesc="A Glorified WM-Independent Dropdown Creator"
+maintainer="Thomas Crha <thomas@9bitbyte.com>"
 makedepends=("cmake")
-depends=("xdotool" "bash" "gawk" "procps")
+depends=("xdotool" "gawk" "procps")
 
 package() {
   sudo install -Dm755 "tdrop" "/usr/local/bin/tdrop"
