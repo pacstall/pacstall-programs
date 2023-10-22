@@ -7,7 +7,7 @@ pkgver="0.5.0"
 homepage='https://github.com/noctuid/tdrop'
 pkgdesc="A Glorified WM-Independent Dropdown Creator"
 makedepends=("cmake")
-depends=("xdotool" "bash" "gawk" "procps-ng")
+depends=("xdotool" "bash" "gawk" "procps")
 
 package() {
   sudo install -Dm755 "tdrop" "/usr/local/bin/tdrop"
