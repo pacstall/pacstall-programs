@@ -1,0 +1,12 @@
+name="xdm-deb"
+pkgver="8.0.29"
+pkgrel="1"
+pkgname="Xtreme-Download-Manager"
+gives="xdman"
+replace="xdman"
+homepage="https://xtremedownloadmanager.com"
+arch=('amd64')
+url="https://github.com/subhra74/xdm/releases/download/8.0.29/xdman_gtk_8.0.29_amd64.deb"
+pkgdesc="Xtreme Download Manager (XDM) is a powerful tool to increase download speeds up to 500%, save videos from popular video streaming websites, resume broken/dead downloads, schedule and convert downloads.
+XDM seamlessly integrates with Google Chrome, Mozilla Firefox Quantum, Opera, Vivaldi and other Chroumium and Firefox based browsers, to take over downloads and saving streaming videos from web. XDM has a built in video converter which lets you convert your downloaded videos to different formats so that you can watch them on your mobile or TV (100+ devices are supported)"
+maintainer="Subhra Das Gupta <https://github.com/subhra74>"
