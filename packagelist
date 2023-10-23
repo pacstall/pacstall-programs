@@ -450,6 +450,7 @@ windscribe-beta-gui-deb
 wine-staging-git
 wsysmon-bin
 xapps-common-deb
+xdm-deb
 xfce4-deb
 xfce4-settings-pine-git
 xmind-vana-deb
@@ -471,4 +472,3 @@ zoom-deb
 zotero
 zoxide-deb
 zsh-history-substring-search-git
-xdm-deb
