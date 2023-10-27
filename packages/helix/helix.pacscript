@@ -1,11 +1,11 @@
 name="helix"
-pkgver="23.05"
+pkgver="23.10"
 repology=("project: helix")
 url="https://github.com/helix-editor/helix/releases/download/${pkgver}/helix-${pkgver}-source.tar.xz"
 makedepends=("cargo")
 pkgdesc="A post-modern modal text editor"
 maintainer="Marcin Puc <tranzystorek.io@protonmail.com>"
-hash="c1ca69facde99d708175c686ce5bf3585e119e372c83e1c3dc1d562c7a8e3d87"
+hash="4e7bcac200b1a15bc9f196bdfd161e4e448dc670359349ae14c18ccc512153e8"
 
 build() {
   cargo build -j"${NCPU}" --release --locked
