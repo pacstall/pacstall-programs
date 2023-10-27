@@ -1,9 +1,9 @@
 name="ferdium-deb"
 gives="ferdium"
 repology=("project: ferdium")
-pkgver="6.5.2"
+pkgver="6.6.0"
 url="https://github.com/ferdium/ferdium-app/releases/download/v${pkgver}/Ferdium-linux-${pkgver}-amd64.deb"
 pkgdesc="Ferdium is a desktop app that helps you organize how you use your favourite apps by combining them into one application"
-hash="3260d4e879ffb3822e4d804b61bcf9a24cc76f1f9d3cea0a0ed31794b9998d0c"
+hash="642c80cfe5d5a76349554b8c5b2bf9b9b8cc6a8601b233c0c9eff5bceda3bffc"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
