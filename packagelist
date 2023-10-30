@@ -46,6 +46,7 @@ cheat
 chezmoi-deb
 chwp-deb
 cider-deb
+circle-flags-svg-deb
 clib
 clipboard-bin
 cmake-data-deb
@@ -189,6 +190,7 @@ kvantum
 kxstudio-repos-deb
 lagrange
 latte-dock-git
+lazygit
 lbry-deb
 lemonbar-xft-git
 lens
@@ -352,6 +354,7 @@ rhino-setup-bin
 rhino-setup-git
 rhino-system-git
 rhino-ubxi-core
+rpcs3-app
 rstudio-deb
 rust-motd-deb
 schildichat-deb
@@ -388,6 +391,7 @@ suru-icon-theme-git
 systemcoding-conky
 tabby-deb
 taskwarrior
+tdrop-git
 teams-for-linux-deb
 teamviewer-deb
 tela-circle-icon-theme
@@ -436,7 +440,6 @@ waf
 walc-app
 warp
 warpinator-deb
-wazzapp-deb
 webapp-manager
 webapp-manager-deb
 webcord-deb
