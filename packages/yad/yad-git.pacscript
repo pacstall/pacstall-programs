@@ -1,4 +1,4 @@
-name="yad"
+name="yad-git"
 pkgver="13.0"
 url="https://github.com/v1cont/${name}/releases/download/v${pkgver}/${name}-${pkgver}.tar.xz"
 makedepends=("autotools-dev" "intltool" "libgtk-3-dev" "automake")
