@@ -1,9 +1,10 @@
 name="yad-git"
+prettyname="yad"
 pkgver="13.0"
-url="https://github.com/v1cont/${name}/releases/download/v${pkgver}/${name}-${pkgver}.tar.xz"
+url="https://github.com/v1cont/${prettyname}/releases/download/v${pkgver}/${prettyname}-${pkgver}.tar.xz"
 makedepends=("autotools-dev" "intltool" "libgtk-3-dev" "automake")
 depends=("libc6" "libcairo2" "libgdk-pixbuf2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0")
-breaks="${name} ${name}-bin ${name}-app ${name}-git ${name}-deb"
+breaks="${prettyname} ${prettyname}-bin ${prettyname}-app ${prettyname}-git ${prettyname}-deb"
 gives="yad"
 pkgdesc="Yet Another Dialog"
 hash="194198c4a58e20ceffd9a3206633c3726d962d7d4219edb77aeb748897403e34"
