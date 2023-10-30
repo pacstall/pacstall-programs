@@ -3,10 +3,10 @@ url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
 pacdeps=("rhino-pkg-git" "rhino-neofetch-git")
 pkgdesc="Transitional package to provide minimal core Rhino Linux software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-compatible=("ubuntu:devel" "ubuntu:mantic" "ubuntu:noble")
+compatible=("ubuntu:devel" "ubuntu:noble")
 replace=("rhino-core" "rhino-pine-core" "rhino-ubxi-core")
 pkgver="2023.3"
-pkgrel="7"
+pkgrel="8"
 style="(server)"
 branch="devel"
 post_install() {
