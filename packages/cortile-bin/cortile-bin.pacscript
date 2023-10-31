@@ -13,6 +13,5 @@ fi
 url="https://github.com/leukipp/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_linux_${CARCH}.tar.gz"
 
 package() {
-  sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo cp cortile "${pkgdir}/usr/bin"
+  sudo install -Dm755 "cortile" -t "${pkgdir}/usr/bin"
 }
