@@ -42,7 +42,7 @@ jobs:
       - id: checkout
         uses: actions/checkout@v4
       - id: files
-        uses: masesgroup/retrieve-changed-files@v2
+        uses: masesgroup/retrieve-changed-files@v3
       - name: Check for Pacscript changes
         run: |
           touch .no-pacscript-changes
@@ -136,7 +136,7 @@ jobs:
       - id: checkout
         uses: actions/checkout@v4
       - id: files
-        uses: masesgroup/retrieve-changed-files@v2
+        uses: masesgroup/retrieve-changed-files@v3
       - name: Check for Pacscript changes
         run: |
           touch .no-pacscript-changes
