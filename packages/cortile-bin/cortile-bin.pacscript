@@ -1,7 +1,6 @@
 name="cortile-bin"
-depends=("golang")
 gives="cortile"
-pkgdesc="Linux auto tiling manager with hot corner support."
+pkgdesc="Linux auto tiling manager with hot corner support"
 maintainer="AJStrong <ajstrong.dev@gmail.com>"
 pkgver="2.2.2"
 replace=("${gives}" "${gives}-git")
