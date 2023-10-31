@@ -1,5 +1,4 @@
 name="pacstall-gui-git"
-#pacdeps=("yad")
 depends=("yad" "sed" "adwaita-icon-theme" "policykit-1" "desktop-file-utils")
 url="https://github.com/cat-master21/pacstall-gui.git"
 pkgver="0.0.1"
