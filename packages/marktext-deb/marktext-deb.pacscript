@@ -1,6 +1,6 @@
 name="marktext-deb"
 gives="marktext"
-pkgdesc="A simple and elegant open-source markdown editor that focused on speed and usability."
+pkgdesc="A simple and elegant open-source markdown editor that focused on speed and usability"
 replace="${gives}"
 repology=("project: arduino")
 arch=("amd64")
