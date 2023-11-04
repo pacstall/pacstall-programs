@@ -9,7 +9,7 @@ maintainer="Oren Klopfer <oren@taumoda.com>"
 compatible=("ubuntu:devel" "ubuntu:noble")
 replace=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 pkgver="2023.3"
-pkgrel="8"
+pkgrel="9"
 style="(mobile)"
 branch="devel"
 post_install() {
@@ -25,4 +25,11 @@ SUPPORT_URL=\"https://github.com/rhino-linux\"
 BUG_REPORT_URL=\"https://github.com/rhino-linux\"
 PRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"
 UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
+  export HERE="$(pwd)"
+  cd /usr/share/pixmaps
+  for i in ubuntu-logo-text.png ubuntu-logo-text-dark.png; do
+    sudo rm "${i}"
+    sudo wget -q https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png -O "${i}"
+  done
+  cd "${HERE}"
 }
