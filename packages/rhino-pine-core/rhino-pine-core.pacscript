@@ -29,7 +29,7 @@ UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
   cd /usr/share/pixmaps
   for i in ubuntu-logo-text.png ubuntu-logo-text-dark.png; do
     sudo rm "${i}"
-    sudo wget https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png -O "${i}"
+    sudo wget -q https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png -O "${i}"
   done
   cd "${HERE}"
 }
