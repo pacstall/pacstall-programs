@@ -8,3 +8,4 @@ pkgdesc="VirtualBox is a general-purpose full virtualizer for x86 hardware, targ
 hash="a07cad23d3a85cb4ba024497a0e7c6593751230772fccb8540e4d943c4f23097"
 arch=('amd64')
 maintainer="Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>"
+incompatible=('debian:testing')
