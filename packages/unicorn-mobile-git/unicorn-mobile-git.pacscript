@@ -1,14 +1,14 @@
 name="unicorn-mobile-git"
 url="https://github.com/rhino-linux/unicorn.git"
 pkgver="0.0.1"
-pkgrel="10"
+pkgrel="1"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
   "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11"
   "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev"
   "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "bluez-firmware"
   "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics" "ukui-touchpadserver"
   "pulseaudio-module-bluetooth" "bluetooth")
-pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb")
+pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-mobile"
 replace=("unicorn-desktop" "unicorn-desktop-git")
 pkgdesc="Unicorn Desktop Mobile variant by the Rhino Linux Team"
@@ -49,7 +49,7 @@ package() {
   # Install doc
   sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
   # Install
-  for i in xfce4 plank autostart ulauncher; do
+  for i in xfce4 plank autostart cortile ulauncher; do
     sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
   sudo install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
@@ -81,7 +81,7 @@ post_install() {
   if ! [[ -d "${homedir}/.config" ]]; then
     mkdir -p "${homedir}/.config"
   fi
-  for i in plank autostart ulauncher; do
+  for i in plank autostart cortile ulauncher; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
