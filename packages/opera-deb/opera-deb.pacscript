@@ -2,10 +2,10 @@ maintainer="Oren Klopfer <oren@taumoda.com>"
 name="opera-deb"
 gives="opera-stable"
 replace=("${gives}")
-pkgver="103.0.4928.26"
+pkgver="104.0.4944.36"
 url="https://deb.opera.com/opera/pool/non-free/o/opera-stable/${gives}_${pkgver}_amd64.deb"
 pkgdesc="Multi-platform web browser developed by its namesake company Opera"
-hash="f10b03f011894f739ff1a6dd834e152839f69f8eb7483e5c95c252a9b6421556"
+hash="80bc1d8a9ff0c9e483135f4d6b25a8d073849b972b95dfdc56a6ade840ba92f7"
 arch=('amd64')
 repology=("project: opera")
 
