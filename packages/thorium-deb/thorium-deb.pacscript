@@ -1,13 +1,13 @@
 name="thorium-deb"
 gives="thorium-browser"
-pkgver="115.0.5790.172"
+pkgver="117.0.5938.157"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
   url="https://github.com/Alex313031/Thorium-Raspi/releases/download/${pkgver}/${gives}_${pkgver}_${CARCH}.deb"
-  hash="ef5d78990afd676aa1a5c090493f3155db10c45b6978691bc0c326256b9b03e4"
+  hash="526c851d042702e5648ae959d60f7956c68473481bc5e507cdb1db7f0e9dac14"
 else
   url="https://github.com/Alex313031/thorium/releases/download/M${pkgver}/${gives}_${pkgver}_${CARCH}.deb"
-  hash="10fe1bd39e52a95fe1d155d89a1c0a19519ecc57f4ac8162b6d47ba271103450"
+  hash="9ae34160febcdf63e63f47adf4449a46977f048c18666c1d90786c30d04b404e"
 fi
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgdesc="Chromium fork for linux with extra patches"
