@@ -8,5 +8,3 @@ arch=('amd64')
 url="https://lcdn.icons8.com/setup/Lunacy_${pkgver}.deb"
 homepage='https://icons8.com/lunacy/'
 repology=("project: ${gives}")
-ubuntu@ThinkPad-X280:~/Development/pacstall-programs/packages/luna
-cy-deb$
