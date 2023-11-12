@@ -52,5 +52,7 @@ WantedBy=multi-user.target" | sudo tee "${pkgdir}/lib/systemd/system/docker.serv
 }
 
 post_install() {
-  sudo systemctl enable docker.service --now
+  if [[ -f /bin/systemctl ]]; then
+    sudo systemctl enable docker.service --now
+  fi
 }
