@@ -49,6 +49,18 @@ OOMScoreAdjust=-500
 
 [Install]
 WantedBy=multi-user.target" | sudo tee "${pkgdir}/lib/systemd/system/docker.service" > /dev/null
+
+  echo "[Unit]
+Description=Docker Socket for the API
+
+[Socket]
+ListenStream=/run/docker.sock
+SocketMode=0660
+SocketUser=root
+SocketGroup=docker
+
+[Install]
+WantedBy=sockets.target" | sudo tee "${pkgdir}/lib/systemd/system/docker.socket" > /dev/null
 }
 
 post_install() {
