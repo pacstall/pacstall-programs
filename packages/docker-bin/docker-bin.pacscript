@@ -33,7 +33,7 @@ Requires=docker.socket
 [Service]
 Type=notify
 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-ExecReload=/bin/kill -s HUP $MAINPID
+ExecReload=/bin/kill -s HUP \$MAINPID
 TimeoutStartSec=0
 RestartSec=2
 Restart=always
