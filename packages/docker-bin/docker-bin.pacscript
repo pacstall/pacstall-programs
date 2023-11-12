@@ -105,7 +105,7 @@ WantedBy=multi-user.target" | sudo tee "${pkgdir}/lib/systemd/system/containerd.
 }
 
 post_install() {
-  if [[ -z $(cat /etc/group | grep docker) ]]; then
+  if [[ -z $(grep docker /etc/group) ]]; then
     sudo groupadd docker
   fi
   if [[ -f /bin/systemctl ]]; then
