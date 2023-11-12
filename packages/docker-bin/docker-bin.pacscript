@@ -68,6 +68,14 @@ post_install() {
     sudo groupadd docker
   fi
   if [[ -f /bin/systemctl ]]; then
-    sudo systemctl enable docker.socket docker.service --now
+    sudo systemctl enable docker.socket docker.service
+    sudo systemctl start docker.socket docker.service
+  fi
+}
+
+post_remove() {
+  if [[ -f /bin/systemctl ]]; then
+    sudo systemctl disable docker.socket docker.service
+    sudo systemctl stop docker.socket docker.service
   fi
 }
