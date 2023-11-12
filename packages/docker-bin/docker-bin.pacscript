@@ -64,7 +64,10 @@ WantedBy=sockets.target" | sudo tee "${pkgdir}/lib/systemd/system/docker.socket"
 }
 
 post_install() {
+  if [[ -z $(cat /etc/group | grep docker) ]]; then
+    sudo groupadd docker
+  fi
   if [[ -f /bin/systemctl ]]; then
-    sudo systemctl enable docker.service --now
+    sudo systemctl enable docker.socket docker.service --now
   fi
 }
