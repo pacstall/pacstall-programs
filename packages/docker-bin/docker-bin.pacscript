@@ -115,6 +115,8 @@ post_install() {
 
 post_remove() {
   if [[ -f /bin/systemctl ]]; then
-    sudo systemctl disable containerd.service docker.socket docker.service --now
+    for i in multi-user.target.wants/containerd.service multi-user.target.wants/docker.service sockets.target.wants/docker.socket; do
+      sudo rm /etc/systemd/system/${i} && echo "Removed /etc/systemd/system/${i}."
+    done
   fi
 }
