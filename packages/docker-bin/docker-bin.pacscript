@@ -50,3 +50,7 @@ OOMScoreAdjust=-500
 [Install]
 WantedBy=multi-user.target" | sudo tee "${pkgdir}/lib/systemd/system/docker.service" > /dev/null
 }
+
+post_install() {
+  sudo systemctl enable docker.service --now
+}
