@@ -1,9 +1,9 @@
 name="zotero"
 repology=("project: zotero")
-pkgver="6.0.27"
+pkgver="6.0.30"
 url="https://download.zotero.org/client/release/${pkgver}/Zotero-${pkgver}_linux-x86_64.tar.bz2"
 pkgdesc="Your personal research assistant"
-hash="fa708f2d5541904bb48362b1b7f5d802deac631626d399cf7263cd4b639e8d1b"
+hash="e17419d71c3d42d9374b31ccb04524f87b8862d1c300e320a70cdb01de504295"
 arch=('amd64')
 maintainer="Oren Klopfer <oren@taumoda.com>"
 
