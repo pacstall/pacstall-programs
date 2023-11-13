@@ -1,10 +1,10 @@
 name="papirus-folders"
-pkgver="1.12.1"
+pkgver="1.13.1"
 pkgdesc="Papirus folder theme"
 repology=("project: papirus-folders")
 depends=("papirus-icon-theme")
 url="https://github.com/PapirusDevelopmentTeam/${name}/archive/refs/tags/v${pkgver}.tar.gz"
-hash="e0079af92ffc1b16eebd0f182d740e85aa2e34450cf0f191c229a568fcc5bee0"
+hash="df38d1a86d4aaad575d1f93f1fc541d538409d985fa418d5eac46a77c18cb028"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
