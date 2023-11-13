@@ -12,7 +12,7 @@ if [[ ${CARCH} != "amd64" ]]; then
   url="https://deb.librewolf.net/pool/jammy/${gives}_${pkgver}_all.deb"
   hash="c66df74a6f466821ecbf5402d18d4537d513a4bcc25b25d99301dca6e07ad85e"
 else
-  pkgver="118.0.1-1"
+  pkgver="119.0.1-1"
   url="https://deb.librewolf.net/pool/jammy/${gives}-${pkgver}.en-US.ubuntu22.x86_64.deb"
-  hash="8d2eb43e34c7e6ad2a61c7262ec4520267fdc5ef630884b20461b3a6084c0c31"
+  hash="63a7f4a516b5ab367ea11dd444a44f3515849f99793a1f061d6cd0d1ad59509a"
 fi

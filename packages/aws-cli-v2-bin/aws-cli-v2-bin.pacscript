@@ -1,6 +1,6 @@
 name="aws-cli-v2-bin"
 pkgname="aws-cli-v2"
-pkgver="2.13.25"
+pkgver="2.13.34"
 url="https://awscli.amazonaws.com/awscli-exe-linux-x86_64-${pkgver}.zip"
 pkgdesc="Universal Command Line Interface for Amazon Web Services v2"
 depends=("groff" "less")
@@ -8,7 +8,7 @@ makedepends=("unzip")
 replace=("awscli")
 repology=("project: awscli")
 arch=('amd64')
-hash="b73bc4821fc674120ccf299848fc586e12297456273c509c66f3b168a28338f8"
+hash="8b4e19b97f977acbace45a128f0488c8d40007696e551f178ec86208315699bb"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
