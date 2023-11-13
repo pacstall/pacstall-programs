@@ -3,7 +3,7 @@ gives="docker"
 replace=("${gives}-desktop" "${gives}-ce" "${gives}-ce-cli" "containerd.io")
 repology=("project: ${gives}")
 pkgver="24.0.7"
-depends=("procps" "git" "iptables")
+depends=("procps" "git" "iptables" "fuse-overlayfs")
 pkgdesc="Docker Engine Static Binaries"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 arch=('arm64' 'amd64')
@@ -23,7 +23,7 @@ build() {
 
 package() {
   sudo cp -r "../${gives}"/* -t "${pkgdir}/usr/bin"
-  echo "[Unit]
+  echo '[Unit]
 Description=Docker Application Container Engine
 Documentation=https://docs.docker.com
 After=network-online.target docker.socket firewalld.service containerd.service time-set.target
@@ -33,7 +33,7 @@ Requires=docker.socket
 [Service]
 Type=notify
 ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-ExecReload=/bin/kill -s HUP \$MAINPID
+ExecReload=/bin/kill -s HUP $MAINPID
 TimeoutStartSec=0
 RestartSec=2
 Restart=always
@@ -48,9 +48,9 @@ KillMode=process
 OOMScoreAdjust=-500
 
 [Install]
-WantedBy=multi-user.target" | sudo tee "${pkgdir}/lib/systemd/system/docker.service" > /dev/null
+WantedBy=multi-user.target' | sudo tee "${pkgdir}/lib/systemd/system/docker.service" > /dev/null
 
-  echo "[Unit]
+  echo '[Unit]
 Description=Docker Socket for the API
 
 [Socket]
@@ -60,9 +60,9 @@ SocketUser=root
 SocketGroup=docker
 
 [Install]
-WantedBy=sockets.target" | sudo tee "${pkgdir}/lib/systemd/system/docker.socket" > /dev/null
+WantedBy=sockets.target' | sudo tee "${pkgdir}/lib/systemd/system/docker.socket" > /dev/null
 
-  echo "# Copyright The containerd Authors.
+  echo '# Copyright The containerd Authors.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -101,7 +101,7 @@ TasksMax=infinity
 OOMScoreAdjust=-999
 
 [Install]
-WantedBy=multi-user.target" | sudo tee "${pkgdir}/lib/systemd/system/containerd.service" > /dev/null
+WantedBy=multi-user.target' | sudo tee "${pkgdir}/lib/systemd/system/containerd.service" > /dev/null
 }
 
 post_install() {
