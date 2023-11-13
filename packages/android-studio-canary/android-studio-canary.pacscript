@@ -2,11 +2,11 @@ name="android-studio-canary"
 gives="android-studio"
 repology=("project: ${gives}")
 replace=("${gives}-beta" "${gives}" "${name}")
-pkgver="2023.1.1.10"
+pkgver="2023.1.1.22"
 url="https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${gives}-${pkgver}-linux.tar.gz"
 depends=("libc6-i386" "lib32ncurses6" "lib32stdc++6" "lib32z1" "libbz2-1.0:i386")
 pkgdesc="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
-hash="348146735cf8503117a0bbf8f4b77a0b716d4ee5baa0f8401d955bfc63d9541d"
+hash="d486e51f26291753266125ef7fd1e03b45ecb1596b2ec455ebc190f58fdb040d"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
