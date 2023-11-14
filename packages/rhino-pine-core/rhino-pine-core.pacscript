@@ -2,14 +2,14 @@ name="rhino-pine-core"
 url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
 pacdeps=("unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "u-boot-mobian-deb" "mobile-usb-networking-deb" "pacstall-qa-git")
 if [[ -f /usr/bin/enable-modem ]]; then
-  depends=("eg25-manager" "modemmanager" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "purple-mm-sms" "ofono" "ofono-scripts")
+  depends=("eg25-manager" "modemmanager" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "purple-mm-sms" "ofono" "ofono-scripts" "gpsd")
 fi
 pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 compatible=("ubuntu:devel" "ubuntu:noble")
 replace=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 pkgver="2023.3"
-pkgrel="10"
+pkgrel="11"
 style="(mobile)"
 branch="devel"
 post_install() {
@@ -31,4 +31,11 @@ UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
     sudo wget -q https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png -O "${i}"
   done
   cd -
+  if [[ -f /usr/bin/enable-modem ]]; then
+    echo 'START_DAEMON="true"
+USBAUTO="true"
+DEVICES="/dev/EG25.NMEA"
+GPSD_OPTIONS="-D3"' | sudo tee /etc/default/gpsd
+    sudo systemctl enable gpsd
+  fi
 }
