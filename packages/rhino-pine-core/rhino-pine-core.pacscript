@@ -36,5 +36,6 @@ UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
 USBAUTO="true"
 DEVICES="/dev/EG25.NMEA"
 GPSD_OPTIONS="-D3"' | sudo tee /etc/default/gpsd
+    sudo systemctl enable gpsd
   fi
 }
