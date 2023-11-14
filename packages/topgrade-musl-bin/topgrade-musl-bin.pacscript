@@ -1,9 +1,9 @@
 name="topgrade-musl-bin"
 pkgname="topgrade"
-pkgver="12.0.2"
+pkgver="13.0.0"
 url="https://github.com/topgrade-rs/topgrade/releases/download/v${pkgver}/topgrade-v${pkgver}-x86_64-unknown-linux-musl.tar.gz"
 pkgdesc="Upgrades everything on your system"
-hash="111b64dfd97fb77ace2d067a0a83ea5ebbdf0cf8c92681fa8bffcdc1e53c78cb"
+hash="333d29341ebad8737ab3b4eff99a8f1d8035307615d974a45bead8fd31bbf67b"
 arch=('amd64')
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git" "${pkgname}-bin")
 gives="${pkgname}"

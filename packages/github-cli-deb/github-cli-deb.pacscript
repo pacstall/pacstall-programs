@@ -2,12 +2,12 @@ name="github-cli-deb"
 gives="gh"
 breaks=("${gives}-bin" "${gives}-git")
 replace=("${gives}")
-pkgver="2.36.0"
+pkgver="2.38.0"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == arm64 ]]; then
-  hash="06f3943f9a48ab344ca92dfa0c9c190ce95dd4076dd3cfaa718d99bf71ae49c0"
+  hash="a031d91d41253f1148aae8ad593ad826bf8c5d3c48ac306d13aec25edbba1f8a"
 else
-  hash="a6f20316b627ab924447a6c7069edf64e33be20cccdb9b56b1952c7eb47eec2b"
+  hash="99893130047428ff94ac37434f3d3e76bfa3c10786ce9ec4ae91c4b38c406a61"
 fi
 url="https://github.com/cli/cli/releases/download/v${pkgver}/${gives}_${pkgver}_linux_${CARCH}.deb"
 pkgdesc="GitHub's official command line tool"

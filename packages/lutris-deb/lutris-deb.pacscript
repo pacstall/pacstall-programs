@@ -1,9 +1,9 @@
 name="lutris-deb"
-pkgver="0.5.13"
+pkgver="0.5.14"
 gives="lutris"
 repology=("project: lutris")
 url="https://github.com/lutris/lutris/releases/download/v${pkgver}/lutris_${pkgver}_all.deb"
 depends=("python3-gi-cairo")
 pkgdesc="open source gaming platform"
-hash="03b30cf80f048b5a71c80b63ba2b7145676cca4ed39a0d0f90b90bed865b3236"
+hash="a44006236b06f79918183c4d589a0f0afef5857f9e9f220d192d29b79b7021b6"
 maintainer="Oren Klopfer <oren@taumoda.com>"
