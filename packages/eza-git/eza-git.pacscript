@@ -1,7 +1,7 @@
 name="eza-git"
 gives="eza"
 url="https://github.com/eza-community/eza.git"
-pkgver="0.15.3"
+pkgver="0.16.0"
 homepage='https://the.exa.website/'
 makedepends=("cargo" "libgit2-dev" "cmake" "rustc" "pandoc")
 pkgdesc="A modern, maintained replacement for ls"
