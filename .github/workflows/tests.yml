@@ -1,6 +1,8 @@
 name: tests
 on:
-  pull_request: {}
+  pull_request:
+    paths:
+    - 'packages/*/*.pacscript'
   workflow_dispatch:
     inputs:
       debug_enabled:
@@ -45,7 +47,6 @@ jobs:
           done
       - name: Install System Utilities
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
           sed -i 's/deb http/deb [arch=amd64\,i386] http/g' /etc/apt/sources.list
@@ -55,14 +56,12 @@ jobs:
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           chown -R $USER /tmp
           chmod -R 777 /tmp
       - name: Installing Pacstall
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           chmod +x ./pacstall-install.sh
@@ -75,7 +74,6 @@ jobs:
           SUDO_USER: dio
       - name: Installing Packages
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
@@ -96,7 +94,6 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
       - name: Uninstalling Packages
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
@@ -142,7 +139,6 @@ jobs:
           done
       - name: Install System Utilities
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
           apt-get update
@@ -150,14 +146,12 @@ jobs:
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           chown -R $USER /tmp
           chmod -R 777 /tmp
       - name: Installing Pacstall
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           chmod +x ./pacstall-install.sh
@@ -170,7 +164,6 @@ jobs:
           SUDO_USER: dio
       - name: Installing Packages
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
@@ -191,7 +184,6 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
       - name: Uninstalling Packages
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
