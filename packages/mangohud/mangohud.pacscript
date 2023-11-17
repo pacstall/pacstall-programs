@@ -10,9 +10,9 @@ incompatible=('debian:bullseye')
 maintainer="Elsie19 <elsie19@pm.me>"
 
 build() {
-  sudo meson build --prefix="${pkgdir}/usr"
+  sudo meson build --prefix="/usr"
 }
 
 package() {
-  sudo ninja -j"${NCPU}" -C build install
+  sudo DESTDIR="${pkgdir}" ninja -j"${NCPU}" -C build install
 }

@@ -10,12 +10,12 @@ labels:
 
 # type 2: repo-action labels
 - label: "Package Add"
-  title: "^add:.*"
+  title: '^add\:.*'
 - label: "remove package"
-  title: "^rm:.*"
+  title: '^rm\:.*'
 - label: "chore"
-  title: "^chore:.*"
-- label: "CI"
-  title: "^ci:.*"
-- label: "feature"
-  title: "^feat:.*"
+  title: '^chore\:.*'
+- label: 'CI'
+  title: '^ci\:.*'
+- label: 'feature'
+  title: '^feat\:.*'
