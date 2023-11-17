@@ -34,7 +34,6 @@ jobs:
         uses: actions/checkout@v4
       - id: paths
         uses: dorny/paths-filter@v2
-        # id: filter
         with:
           filters: |
             pacscripts:
@@ -61,6 +60,7 @@ jobs:
           apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
+        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
@@ -137,7 +137,6 @@ jobs:
         uses: actions/checkout@v4
       - id: paths
         uses: dorny/paths-filter@v2
-        # id: filter
         with:
           filters: |
             pacscripts:
@@ -162,6 +161,7 @@ jobs:
           apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
+        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
