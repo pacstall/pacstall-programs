@@ -45,6 +45,7 @@ jobs:
           done
       - name: Install System Utilities
         run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
           sed -i 's/deb http/deb [arch=amd64\,i386] http/g' /etc/apt/sources.list
@@ -54,6 +55,7 @@ jobs:
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
         run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           chown -R $USER /tmp
@@ -141,6 +143,7 @@ jobs:
           done
       - name: Install System Utilities
         run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
           apt-get update
@@ -148,6 +151,7 @@ jobs:
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
         run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           chown -R $USER /tmp
