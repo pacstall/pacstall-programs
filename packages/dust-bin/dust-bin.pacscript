@@ -6,7 +6,7 @@
 #        \/          \/      \/
 maintainer="wizard-28 <wiz28@pm.me>"
 
-name="dust-bin"
+ame="dust-bin"
 pkgname="dust"
 pkgver="0.8.6"
 pkgdesc="A more intuitive version of du in rust"
