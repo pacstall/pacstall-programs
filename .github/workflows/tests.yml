@@ -1,8 +1,6 @@
 name: tests
 on:
-  pull_request:
-    paths:
-    - 'packages/*/*.pacscript'
+  pull_request: {}
   workflow_dispatch:
     inputs:
       debug_enabled:
@@ -34,6 +32,13 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
       - id: checkout
         uses: actions/checkout@v4
+      - id: paths
+        uses: dorny/paths-filter@v2
+        # id: filter
+        with:
+          filters: |
+            pacscripts:
+              - 'packages/*/*.pacscript'
       - id: files
         uses: masesgroup/retrieve-changed-files@v3
       - name: Check for Pacscript changes
@@ -46,6 +51,7 @@ jobs:
             fi
           done
       - name: Install System Utilities
+        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
@@ -61,6 +67,7 @@ jobs:
           chown -R $USER /tmp
           chmod -R 777 /tmp
       - name: Installing Pacstall
+        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           export SUDO_USER=$USER
           curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
@@ -73,6 +80,7 @@ jobs:
         env:
           SUDO_USER: dio
       - name: Installing Packages
+        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
@@ -93,6 +101,7 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
       - name: Uninstalling Packages
+        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
@@ -126,6 +135,13 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
       - id: checkout
         uses: actions/checkout@v4
+      - id: paths
+        uses: dorny/paths-filter@v2
+        # id: filter
+        with:
+          filters: |
+            pacscripts:
+              - 'packages/*/*.pacscript'
       - id: files
         uses: masesgroup/retrieve-changed-files@v3
       - name: Check for Pacscript changes
@@ -138,6 +154,7 @@ jobs:
             fi
           done
       - name: Install System Utilities
+        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
@@ -151,6 +168,7 @@ jobs:
           chown -R $USER /tmp
           chmod -R 777 /tmp
       - name: Installing Pacstall
+        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           export SUDO_USER=$USER
           curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
@@ -163,6 +181,7 @@ jobs:
         env:
           SUDO_USER: dio
       - name: Installing Packages
+        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
@@ -183,6 +202,7 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
       - name: Uninstalling Packages
+        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
