@@ -27,15 +27,6 @@ jobs:
         LOGNAME: dio
         DEBIAN_FRONTEND: noninteractive
     steps:
-      - name: Install System Utilities
-        run: |
-          dpkg --add-architecture i386
-          dpkg --add-architecture arm64
-          sed -i 's/deb http/deb [arch=amd64\,i386] http/g' /etc/apt/sources.list
-          sed -e 's/amd64\,i386/arm64/g' -e 's/archive\.ubuntu/ports\.ubuntu/g' -e 's/security\.ubuntu/ports\.ubuntu/g' -e 's/\.com\/ubuntu/\.com\/ubuntu-ports/g' /etc/apt/sources.list | tee /etc/apt/sources.list.d/arm64.list
-          apt-get update
-          apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
-          ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
@@ -52,6 +43,15 @@ jobs:
               break
             fi
           done
+      - name: Install System Utilities
+        run: |
+          dpkg --add-architecture i386
+          dpkg --add-architecture arm64
+          sed -i 's/deb http/deb [arch=amd64\,i386] http/g' /etc/apt/sources.list
+          sed -e 's/amd64\,i386/arm64/g' -e 's/archive\.ubuntu/ports\.ubuntu/g' -e 's/security\.ubuntu/ports\.ubuntu/g' -e 's/\.com\/ubuntu/\.com\/ubuntu-ports/g' /etc/apt/sources.list | tee /etc/apt/sources.list.d/arm64.list
+          apt-get update
+          apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
+          ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
         run: |
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
@@ -123,13 +123,6 @@ jobs:
         LOGNAME: dio
         DEBIAN_FRONTEND: noninteractive
     steps:
-      - name: Install System Utilities
-        run: |
-          dpkg --add-architecture i386
-          dpkg --add-architecture arm64
-          apt-get update
-          apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
-          ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
@@ -146,6 +139,13 @@ jobs:
               break
             fi
           done
+      - name: Install System Utilities
+        run: |
+          dpkg --add-architecture i386
+          dpkg --add-architecture arm64
+          apt-get update
+          apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
+          ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
         run: |
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
