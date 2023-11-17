@@ -10,15 +10,15 @@ maintainer="Vigress <vig@disroot.org>"
 case "${CARCH}" in
   amd64)
     url="https://github.com/ThePBone/GalaxyBudsClient/releases/download/${pkgver}/GalaxyBudsClient_Linux_64bit_Portable.bin"
-    hash="8e07ebbcf4cd4e2700e319ed146de8a7e4cd5b28ffdc24a3d4340c294f0a6274"
+    hash="d1d859ade65e87bcb4acae6e97661cbb1941d2630093ca9e6ee92f1ec2b13fa7"
     ;;
   arm64)
     url="https://github.com/ThePBone/GalaxyBudsClient/releases/download/${pkgver}/GalaxyBudsClient_Linux_arm64_Portable.bin"
-    hash="846d222c288c0b88daedd4a1a585d9b10cea95be88ea4ea62627e2d895a5c6bf"
+    hash="9476e7f93f6b60c1922e4a5fa51bc867326ddd5f9d43792d3aea07d65174506a"
     ;;
   armhf)
     url="https://github.com/ThePBone/GalaxyBudsClient/releases/download/${pkgver}/GalaxyBudsClient_Linux_arm_Portable.bin"
-    hash="09cb2bde9390ef614a569da9eff49ac7a724af780cdcdaac4807a4239ba8ca98"
+    hash="49c836631b9408cc737f9de91c41c48f73d0703655adeba9cbecda4387f0bfef"
     ;;
   *) return 1 ;;
 esac
