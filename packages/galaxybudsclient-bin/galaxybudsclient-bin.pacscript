@@ -6,7 +6,7 @@ repology=("project: galaxybudsclient")
 homepage="https://github.com/ThePBone/GalaxyBudsClient"
 arch=("amd64" "arm64" "armhf")
 depends=("bluetooth")
-maintainer="Vigress <vig@disroot.org>"
+maintainer="vigress8 <vig@disroot.org>"
 
 case "${CARCH}" in
   amd64)
