@@ -69,7 +69,6 @@ jobs:
       - name: Installing Pacstall
         if: steps.paths.outputs.pacscripts == 'true'
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           chmod +x ./pacstall-install.sh
@@ -83,7 +82,6 @@ jobs:
       - name: Installing Packages
         if: steps.paths.outputs.pacscripts == 'true'
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
@@ -104,7 +102,6 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
       - name: Uninstalling Packages
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
@@ -172,7 +169,6 @@ jobs:
       - name: Installing Pacstall
         if: steps.paths.outputs.pacscripts == 'true'
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           chmod +x ./pacstall-install.sh
@@ -186,7 +182,6 @@ jobs:
       - name: Installing Packages
         if: steps.paths.outputs.pacscripts == 'true'
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
@@ -208,7 +203,6 @@ jobs:
       - name: Uninstalling Packages
         if: steps.paths.outputs.pacscripts == 'true'
         run: |
-          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
