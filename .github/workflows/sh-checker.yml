@@ -14,4 +14,4 @@ jobs:
           SHFMT_OPTS: -s -i 2 -bn -ci -sr -s
         with:
           sh_checker_comment: true
-          sh_checker_exclude: "packages/emacs/ packages/emacs-git/"
+          sh_checker_exclude: "packages/emacs/emacs.pacscript packages/emacs-git/emacs-git.pacscript"
