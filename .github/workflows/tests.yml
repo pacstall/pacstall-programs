@@ -32,12 +32,6 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
       - id: checkout
         uses: actions/checkout@v4
-      - id: paths
-        uses: dorny/paths-filter@v2
-        with:
-          filters: |
-            pacscripts:
-              - 'packages/*/*.pacscript'
       - id: files
         uses: masesgroup/retrieve-changed-files@v3
       - name: Check for Pacscript changes
@@ -50,7 +44,6 @@ jobs:
             fi
           done
       - name: Install System Utilities
-        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
@@ -60,15 +53,14 @@ jobs:
           apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
-        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           chown -R $USER /tmp
           chmod -R 777 /tmp
       - name: Installing Pacstall
-        if: steps.filter.outputs.pacscripts == 'true'
         run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           chmod +x ./pacstall-install.sh
@@ -80,9 +72,10 @@ jobs:
         env:
           SUDO_USER: dio
       - name: Installing Packages
-        if: steps.filter.outputs.pacscripts == 'true'
         run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
+          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
@@ -101,8 +94,8 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
       - name: Uninstalling Packages
-        if: steps.filter.outputs.pacscripts == 'true'
         run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
@@ -135,12 +128,6 @@ jobs:
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
       - id: checkout
         uses: actions/checkout@v4
-      - id: paths
-        uses: dorny/paths-filter@v2
-        with:
-          filters: |
-            pacscripts:
-              - 'packages/*/*.pacscript'
       - id: files
         uses: masesgroup/retrieve-changed-files@v3
       - name: Check for Pacscript changes
@@ -153,7 +140,6 @@ jobs:
             fi
           done
       - name: Install System Utilities
-        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
@@ -161,17 +147,15 @@ jobs:
           apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
-        if: steps.filter.outputs.pacscripts == 'true'
         run: |
           useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
           sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
           chown -R $USER /tmp
           chmod -R 777 /tmp
       - name: Installing Pacstall
-        if: steps.filter.outputs.pacscripts == 'true'
         run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
-          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
           chmod +x ./pacstall-install.sh
           echo N\n | sudo -E ./pacstall-install.sh
           rm ./pacstall-install.sh
@@ -181,8 +165,8 @@ jobs:
         env:
           SUDO_USER: dio
       - name: Installing Packages
-        if: steps.filter.outputs.pacscripts == 'true'
         run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
@@ -202,8 +186,8 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
       - name: Uninstalling Packages
-        if: steps.filter.outputs.pacscripts == 'true'
         run: |
+          [[ -f .no-pacscript-changes ]] && exit ||:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
