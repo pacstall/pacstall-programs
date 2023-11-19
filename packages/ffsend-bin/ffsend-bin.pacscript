@@ -1,7 +1,7 @@
 name="ffsend-bin"
 gives="ffsend"
 pkgver="0.2.76"
-pkgdesc="Easily and securely share files from the command line. A Send client."
+pkgdesc="Easily and securely share files from the command line"
 repology=("project: ffsend")
 license=("GPL3")
 arch=("amd64")
