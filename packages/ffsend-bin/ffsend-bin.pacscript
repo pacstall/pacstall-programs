@@ -11,6 +11,7 @@ optdepends=("xclip: clipboard support"
   "bash-completion: support auto-completion for bash")
 maintainer="vigress8 <vig@disroot.org>"
 url="https://github.com/timvisee/${gives}/releases/download/v${pkgver}/${gives}-v${pkgver}-linux-x64-static"
+hash="ee3292c87a2d77bbe92f101a2d7b2723de811279ceac5d8257f7e95ddc982579"
 
 package() {
   sudo install -Dm755 "${gives}-v${pkgver}-linux-x64-static" "${pkgdir}/usr/bin/${gives}"
