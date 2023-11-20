@@ -10,16 +10,16 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="nushell-bin"
 pkgname="nushell"
-pkgver="0.86.0"
+pkgver="0.87.1"
 pkgdesc="A new type of shell"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 repology=("project: nushell")
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="24d43d007b7471a98389010e2717173d699c0fa84dce444986d10cc3e839eccc"
+  hash="f66f43e3c21ab9a66f9a46edae30e6537dc38d30c215a0535c9ac50905e55e46"
   gnuarch="aarch64"
 else
-  hash="5666b4017bcb08f4ed42411a5cbad937f63a92c1eab3077bb20458b1cfe5e54c"
+  hash="7bcffb7a9066ef7c99e299dc3c1b87d471deea91e652edad129e27f742eef72d"
   gnuarch="x86_64"
 fi
 url="https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-${gnuarch}-unknown-linux-gnu.tar.gz"
