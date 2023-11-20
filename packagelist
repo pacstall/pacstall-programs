@@ -112,6 +112,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+ffsend-bin
 firefox-arm64-deb
 firefox-bin
 firefox-developer-edition-bin
@@ -169,6 +170,7 @@ httptoolkit-deb
 hyper-deb
 hyperfine-bin
 hypnotix-deb
+hyprland
 i3blocks-git
 i3lock-color
 ibhagwan-picom-git
