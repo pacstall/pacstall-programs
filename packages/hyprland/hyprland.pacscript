@@ -7,7 +7,7 @@ makedepends=('meson' 'ninja-build' 'cmake-extras' 'cmake' 'gettext' 'gettext-bas
 pkgdesc="Dynamic tiling Wayland compositor based on wlroots"
 hash="285e8ebbd003978a2124e984db7677d044c21ca3cb72948eb71742cd8396df35"
 maintainer="Elsie19 <elsie19@pm.me>"
-compatible=('ubuntu:devel' 'debian:sid' 'ubuntu:mantic' 'ubuntu:noble' 'debian:bookworm')
+compatible=('ubuntu:devel' 'debian:sid' 'ubuntu:mantic' 'ubuntu:noble')
 
 build() {
   make all -j"${NCPU}" PREFIX="${pkgdir}/usr"
