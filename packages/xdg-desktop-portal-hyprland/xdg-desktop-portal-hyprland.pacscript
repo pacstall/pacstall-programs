@@ -1,7 +1,7 @@
 name="xdg-desktop-portal-hyprland"
 repology=("project: ${name}")
 pkgver="1.2.5"
-pkgrel=1
+pkgrel="1"
 url="https://github.com/hyprwm/${name}/archive/v${pkgver}/v${pkgver}.tar.gz"
 protocols_url="https://github.com/hyprwm/hyprland-protocols.git"
 hash="c8ba3d173a580d8b4ec9a5ee15e7780d266e536a78a12aa28d8234e0854ae86d"
@@ -26,7 +26,7 @@ default=hyprland;gtk' | tee hyprland-portals.conf > /dev/null
     git clone --quiet --depth=1 --jobs=10 "${protocols_url}" && cd ..
     meson setup build
     ninja -C build
-    make -C hyprland-share-picker all
+    make -j"${NCPU}" -C hyprland-share-picker all
 }
 
 package() {
