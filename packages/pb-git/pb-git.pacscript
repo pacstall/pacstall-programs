@@ -1,5 +1,5 @@
 name="pb-git"
-pkgver="0.0.1"
+pkgver="2022.11.03"
 pkgdesc="0x0 pastebin utility"
 maintainer="vigress8 <vig@disroot.org>"
 url="https://git.envs.net/envs/pb.git"
