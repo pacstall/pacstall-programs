@@ -37,8 +37,8 @@ package() {
   sudo install -Dm0644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}/"
   protocols_dir="${pkgdir}/usr/local/share/hyprland-protocols"
   if ! [[ -d ${protocols_dir} ]]; then
-    sudo mkdir -p ${protocols_dir}
-    sudo cp -r subprojects/hyprland-protocols/protocols ${protocols_dir}
+    sudo mkdir -p "${protocols_dir}"
+    sudo cp -r subprojects/hyprland-protocols/protocols "${protocols_dir}"
     sudo mkdir -p "${pkgdir}/usr/local/share/pkgconfig"
     echo "prefix=/usr/local
 datarootdir=\${prefix}/share
