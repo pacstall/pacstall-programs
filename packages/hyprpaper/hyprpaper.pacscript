@@ -17,4 +17,3 @@ build() {
 package() {
   sudo install -Dm755 ./build/${name} -t "${pkgdir}/usr/bin"
 }
-
