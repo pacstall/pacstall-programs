@@ -47,5 +47,5 @@ pkgdatadir=\${pc_sysrootdir}\${datarootdir}/hyprland-protocols
 Name: Hyprland Protocols
 Description: Hyprland protocol files
 Version: ${protocols_ver}" | sudo tee "${pkgdir}/usr/local/share/pkgconfig/hyprland-protocols.pc" > /dev/null
-  fi 
+  fi
 }
