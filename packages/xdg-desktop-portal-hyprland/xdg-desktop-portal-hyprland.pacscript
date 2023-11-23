@@ -33,7 +33,6 @@ default=hyprland;gtk' | tee hyprland-portals.conf > /dev/null
 package() {
   sudo DESTDIR="${pkgdir}" ninja -C build install
   sudo install -Dm0755 hyprland-share-picker/build/hyprland-share-picker -t "${pkgdir}/usr/bin/"
-  sudo install -Dm0644 "hyprland-portals.conf" -t "${pkgdir}/usr/share/xdg-desktop-portal/"
   sudo install -Dm0644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}/"
   protocols_dir="${pkgdir}/usr/local/share/hyprland-protocols"
   if ! [[ -d ${protocols_dir} ]]; then
