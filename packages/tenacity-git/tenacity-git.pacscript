@@ -25,8 +25,16 @@ pkgver() {
 }
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "debian:stretch" "debian:buster" "debian:bullseye")
 
+modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble")
+# shellcheck disable=SC2076
+if [[ " ${modern[*]} " =~ " ${codename} " ]]; then
+  pyhack=("--break-system-packages")
+else
+  pyhack=()
+fi
+
 prepare() {
-  sudo pip3 install conan
+  sudo pip3 install conan "${pyhack[@]}"
 }
 
 build() {
