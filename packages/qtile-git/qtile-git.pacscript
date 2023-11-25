@@ -11,7 +11,7 @@ pkgver() {
 }
 
 release="$(lsb_release -cs)"
-modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble")
+modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
 # shellcheck disable=SC2076
 if [[ " ${modern[*]} " =~ " ${release} " ]]; then
   pyhack=("--break-system-packages")

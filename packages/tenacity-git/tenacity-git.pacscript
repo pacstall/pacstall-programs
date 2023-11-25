@@ -25,7 +25,7 @@ pkgver() {
 }
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "debian:stretch" "debian:buster" "debian:bullseye")
 
-modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble")
+modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
 # shellcheck disable=SC2076
 if [[ " ${modern[*]} " =~ " ${codename} " ]]; then
   pyhack=("--break-system-packages")
