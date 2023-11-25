@@ -22,8 +22,8 @@ fi
 build() {
   pip3 install build --user "${pyhack[@]}"
   python3 -m build
-  sudo mv dist/*.whl .  
-} 
+  sudo mv dist/*.whl .
+}
 
 package() {
   sudo pip3 install qtile_extras*.whl "${pyhack[@]}"
@@ -31,5 +31,5 @@ package() {
 
 
 post_remove() {
-  sudo pip3 uninstall "${gives}" "${pyhack[@]}"         
+  sudo pip3 uninstall "${gives}" "${pyhack[@]}"
 }
