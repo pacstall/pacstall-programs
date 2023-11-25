@@ -31,5 +31,5 @@ package() {
 
 
 post_remove() {
-  sudo pip3 uninstall "${gives}" "${pyhack[@]}"
+  sudo pip3 uninstall "${gives}" "${pyhack[@]}" -y
 }
