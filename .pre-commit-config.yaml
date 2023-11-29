@@ -20,7 +20,7 @@ repos:
     hooks:
       - id: shellcheck
         types: []
-        args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034", "-e", "SC2154", "-e", "SC2312", "-e", "SC2164"]
+        args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034", "-e", "SC2154", "-e", "SC2312", "-e", "SC2164", "-e", "SC2143", "-e", "SC2103"]
         files: '^.*\.(pacscript|sh)$'
   - repo: https://github.com/maxwinterstein/shfmt-py
     rev: v3.4.3.1

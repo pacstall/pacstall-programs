@@ -6,7 +6,7 @@ license="MIT"
 makedepends=("make" "libharfbuzz-bin" "libxft-dev" "libpango1.0-dev")
 depends=("fontconfig")
 pkgver() {
-  git ls-remote ${url} master | cut -f1 | cut -c1-8
+  git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 
 package() {
