@@ -37,7 +37,7 @@ post_install() {
 
 post_remove() {
   for i in "${homedir}" "/etc/skel"; do
-    if [[ -f "${i}/.config/autostart/rhino-setup.desktop" ]]; then
+    if [[ "${i}/.config/autostart/rhino-setup.desktop" ]]; then
       sudo rm -f "${i}/.config/autostart/rhino-setup.desktop"
     fi
   done
