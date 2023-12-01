@@ -13,8 +13,17 @@ pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
 
+release="$(lsb_release -cs)"
+modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
+# shellcheck disable=SC2076
+if [[ " ${modern[*]} " =~ " ${release} " ]]; then
+  pyhack=("--break-system-packages")
+else
+  pyhack=()
+fi
+
 prepare() {
-  sudo pip3 install distro
+  sudo pip3 install distro "${pyhack[@]}"
 }
 
 build() {
