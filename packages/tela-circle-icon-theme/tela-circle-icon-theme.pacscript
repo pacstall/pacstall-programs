@@ -22,5 +22,5 @@ package() {
 }
 
 post_install() {
-  ./usr/share/${name}/install.sh -c -a
+  ./usr/share/"${name}"/install.sh -c -a
 }

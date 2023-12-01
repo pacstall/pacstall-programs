@@ -4,15 +4,15 @@ pkgdesc="A task runner / simpler Make alternative written in Go"
 maintainer="lfromanini <lfromanini@yahoo.com>"
 repology=("project: ${gives}")
 arch=("amd64" "arm64")
-pkgver="3.31.0"
+pkgver="3.32.0"
 case "${CARCH}" in
   amd64)
     url="https://github.com/go-task/task/releases/download/v${pkgver}/task_linux_amd64.deb"
-    hash="4f229adc9d62f72bf8c6bfea262aba960964aa46377f335863fb151956124fdb"
+    hash="fc8fb301a0409a9d017f7c006f1a3a76db73d6852059160182f4887e304c18d9"
     ;;
   arm64)
     url="https://github.com/go-task/task/releases/download/v${pkgver}/task_linux_arm64.deb"
-    hash="52d5234f2e89d7db8cb89794a6d2bcb01ac66a970880ed154064564eeb128f23"
+    hash="bc4302c808ab49a4551f8fc998f1d28b81af0a538ea7793469177f06cb455c8e"
     ;;
   *) return 1 ;;
 esac

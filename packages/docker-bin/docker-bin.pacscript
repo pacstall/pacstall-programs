@@ -23,6 +23,7 @@ build() {
 
 package() {
   sudo cp -r "../${gives}"/* -t "${pkgdir}/usr/bin"
+  # shellcheck disable=SC2016
   echo '[Unit]
 Description=Docker Application Container Engine
 Documentation=https://docs.docker.com
@@ -116,7 +117,7 @@ post_install() {
 post_remove() {
   if [[ -f /bin/systemctl ]]; then
     for i in multi-user.target.wants/containerd.service multi-user.target.wants/docker.service sockets.target.wants/docker.socket; do
-      sudo rm /etc/systemd/system/${i} && echo "Removed /etc/systemd/system/${i}."
+      sudo rm /etc/systemd/system/"${i}" && echo "Removed /etc/systemd/system/${i}."
     done
   fi
 }

@@ -1,12 +1,12 @@
 name="firefox-arm64-deb"
 gives="firefox"
-pkgver="119.0.1+build1"
-ubversion="23.10"
+pkgver="120.0+build2"
+ubversion="24.04"
 arch=("arm64")
 repology=("project: ${gives}")
-incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye" "debian:sid")
+compatible=("ubuntu:noble" "ubuntu:devel")
 url="https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/${gives}/${gives}_${pkgver}-0ubuntu0.${ubversion}.1~mt1_arm64.deb"
 homepage='https://www.mozilla.org/en-US/firefox'
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-hash="41e8dab2949efc869a532050a42b9f21072fb903787423d4bcbcb6f09b0311de"
+hash="ca5e23a7e7349ad41554aa49b9ea03aced030fa2e503ef279f283f8b8896109b"

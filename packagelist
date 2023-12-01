@@ -172,7 +172,8 @@ hyper-deb
 hyperfine-bin
 hypnotix-deb
 hyprland
-hyprpaper-bin
+hyprpaper
+hyprpicker
 i3blocks-git
 i3lock-color
 ibhagwan-picom-git
@@ -317,6 +318,7 @@ paper-icon-theme
 papirus-folders
 papirus-icon-theme
 parsec-deb
+pb-git
 pdf-mix-tool-git
 pdfmm-git
 pfetch-bin
@@ -462,6 +464,7 @@ windscribe-beta-gui-deb
 wine-staging-git
 wsysmon-bin
 xapps-common-deb
+xdg-desktop-portal-hyprland
 xfce4-deb
 xfce4-settings-pine-git
 xmind-vana-deb
