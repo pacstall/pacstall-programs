@@ -1,9 +1,9 @@
 name="papirus-icon-theme"
-pkgver="20230104"
+pkgver="20231201"
 pkgdesc="Papirus icon theme"
 repology=("project: papirus-icon-theme" "repo: aur")
 url="https://github.com/PapirusDevelopmentTeam/${name}/archive/${pkgver}/${name}-${pkgver}.tar.gz"
-hash="a3e91076f41bd01c754237c9f8339d1c02e286c00998f86be471ffc280542d28"
+hash="9dde683d6444ed2d3b3dacf8579b04d527ce278cef575d606f690c7b31c7aebd"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 gives="${name}"
 breaks=("${name}" "${name}-git")
