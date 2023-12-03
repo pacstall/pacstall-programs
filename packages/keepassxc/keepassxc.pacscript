@@ -20,7 +20,7 @@ build() {
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DWITH_XC_ALL=ON \
     -DWITH_XC_UPDATECHECK=OFF
-  cmake --build build --parallel ${NCPU}
+  cmake --build build --parallel "${NCPU}"
 }
 
 package() {
