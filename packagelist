@@ -368,6 +368,7 @@ rpcs3-app
 rstudio-deb
 rust-motd-deb
 schildichat-deb
+scrcpy
 sed
 shell-color-scripts
 shellcheck-bin
