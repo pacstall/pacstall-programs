@@ -8,4 +8,3 @@ pkgdesc="Connect, collaborate, and get more done together with Zoom’s reliable
 hash="b520bcdb64cabf098f4312ca2599688731792152257d0297b570a1b17933fdf1"
 arch=("amd64")
 maintainer="Oren Klopfer <oren@taumoda.com>"
-incompatible=("*:devel" "*:rolling" "debian:testing" "debian:unstable")
