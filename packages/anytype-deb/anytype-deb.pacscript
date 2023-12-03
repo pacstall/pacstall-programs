@@ -18,5 +18,5 @@ post_install() {
 }
 
 post_remove() {
-    sudo dpkg-divert --remove --no-rename "/usr/share/icons/hicolor/512x512/apps/anytype.png" 
+    sudo dpkg-divert --remove --no-rename "/usr/share/icons/hicolor/512x512/apps/anytype.png"
 }
