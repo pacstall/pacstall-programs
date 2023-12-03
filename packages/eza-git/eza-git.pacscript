@@ -1,12 +1,12 @@
 name="eza-git"
 gives="eza"
 url="https://github.com/eza-community/eza.git"
-pkgver="0.16.0"
+pkgver="0.16.1"
 homepage='https://the.exa.website/'
 makedepends=("cargo" "libgit2-dev" "cmake" "rustc" "pandoc")
 pkgdesc="A modern, maintained replacement for ls"
 maintainer="Elsie19 <elsie19@pm.me>"
-incompatible=('debian:*')
+incompatible=('debian:bookworm')
 pkgver() {
   git ls-remote "${url}" main | cut -f1 | cut -c1-8
 }
