@@ -1,12 +1,12 @@
 name="linux-modules-stable-deb"
-gives="linux-modules-6.6.0-060600-generic"
-pkgver="6.6"
-buildver="6.6.0-060600.202311151808"
+gives="linux-modules-6.6.4-060604-generic"
+pkgver="6.6.4"
+buildver="6.6.4-060604.202312030734"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="b683d282cafad3cf87c2f9d5295638c177009f8a9cae4fb9387e095b44be0012"
+  hash="a187fc1cdc36c26fd85f9e540a92d38987650f37676e5a1589b0a9a54a7c9cab"
 else
-  hash="c8569e890db4d7d0eb7e76dd333dca3ed81636f6e814a28941734faaf722b543"
+  hash="0d79ea381ba7e01a42479bee237facad6fc6297f9ab7397517cb0860a5fa7ec6"
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
 pkgdesc="Ubuntu Linux stable kernel (Linux Modules)"
