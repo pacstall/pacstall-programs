@@ -1,10 +1,10 @@
 name="linux-headers-deb"
-gives="linux-headers-6.7.0-060700rc2"
-pkgver="6.7-rc2"
-buildver="6.7.0-060700rc2.202311192332"
+gives="linux-headers-6.7.0-060700rc4"
+pkgver="6.7-rc4"
+buildver="6.7.0-060700rc4.202312031033"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb"
 pkgdesc="Ubuntu Linux mainline kernel (Headers)"
-hash="c86d599dbc17f40adcc9ced9ba707be4079b1e1f8b053281ec460778371c8259"
+hash="1a6147c6c81887a50fe2614c5453e09cb16c026e76f609a595b1525049e1106e"
 arch=('any')
 maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")

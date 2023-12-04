@@ -1,5 +1,5 @@
 name="linux-kernel"
-pkgver="6.7-rc2"
+pkgver="6.7-rc4"
 url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
 pacdeps=("linux-headers-deb" "linux-headers-generic-deb" "linux-modules-deb" "linux-image-unsigned-deb")
 pkgdesc="Provides the latest Linux kernel via the Ubuntu mainline repositories"
