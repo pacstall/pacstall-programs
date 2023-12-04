@@ -1,7 +1,6 @@
 name="nerd-fonts-hack"
-pkgname="nerd-fonts-hack"
-breaks=("${pkgname}")
-gives="${pkgname}"
+gives="nerd-fonts-hack"
+breaks=("${gives}")
 #repology=("project: fonts:nerd-fonts")
 pkgver="2.2.2"
 pkgrel="2"

@@ -1,5 +1,5 @@
 name="qtile-git"
-pkgname="qtile"
+gives="qtile"
 url="https://github.com/qtile/qtile.git"
 pkgver="0.22.1"
 license="MIT"

@@ -7,7 +7,7 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fastfetch-git"
-pkgname="fastfetch"
+gives="fastfetch"
 pkgdesc="Like neofetch, but much faster because written in c"
 url="https://github.com/LinusDierheimer/fastfetch.git"
 pkgver="2.2.3"
@@ -25,7 +25,7 @@ optdepends=("libpci-dev: GPU output"
   "libddcutil3: Used for brightness detection for external displays"
   "libdbus-1-3: Used for bluetooth, Player & Media detection"
 )
-breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
+breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app")
 pkgver() {
   git ls-remote "${url}" dev | cut -f1 | cut -c1-8
 }
@@ -42,27 +42,27 @@ build() {
 
 package() {
   # Install license
-  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  sudo install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${gives}"
 
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"
 
   # Install fastfetch and flashfetch binary
   sudo install -Dm755 "build/fastfetch" "build/flashfetch" -t "${pkgdir}/usr/bin"
 
   # Install bash completions
-  sudo install -Dm644 "completions/bash" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
+  sudo install -Dm644 "completions/bash" "${pkgdir}/usr/share/bash-completion/completions/${gives}"
 
   # Install presets
-  sudo mkdir -p "${pkgdir}/usr/share/${pkgname}/presets"
-  sudo cp -r presets/* "${pkgdir}/usr/share/${pkgname}/presets"
+  sudo mkdir -p "${pkgdir}/usr/share/${gives}/presets"
+  sudo cp -r presets/* "${pkgdir}/usr/share/${gives}/presets"
 }
 
 post_remove() {
   # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-  sudo rm -rf "/usr/share/doc/${pkgname}"
-  sudo rm -rf "/usr/share/${pkgname}"
+  sudo rm -rf "/usr/share/licenses/${gives}"
+  sudo rm -rf "/usr/share/doc/${gives}"
+  sudo rm -rf "/usr/share/${gives}"
 
   # Remove left over directories
   if ask "Do you want to remove the configuration files?" Y; then

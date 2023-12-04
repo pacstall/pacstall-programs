@@ -1,5 +1,4 @@
 name="polybar"
-pkgname="polybar"
 pkgver="3.6.3"
 url="https://github.com/polybar/polybar/releases/download/${pkgver}/polybar-${pkgver}.tar.gz"
 makedepends=("cmake" "cmake-data" "pkg-config" "python3-sphinx" "python3-packaging" "libcairo2-dev" "libxcb1-dev" "libuv1-dev" "libxcb-util0-dev" "libxcb-randr0-dev" "libxcb-composite0-dev" "python3-xcbgen" "xcb-proto" "libxcb-image0-dev" "libxcb-ewmh-dev" "libxcb-icccm4-dev")

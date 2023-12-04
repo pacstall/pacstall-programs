@@ -1,10 +1,9 @@
 name="nodejs-lts-deb"
-pkgname="nodejs"
+gives="nodejs"
 _major_version="18"
 pkgver="18.15.0"
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
-replace=("${pkgname}" "node")
-gives="${pkgname}"
+breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
+replace=("${gives}" "node")
 pkgdesc="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine"
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 hash="c253e9021faf026115d45ae8ea56f5c587483baebeab1394578c3cd1d44d9c64"

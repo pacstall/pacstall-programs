@@ -1,5 +1,5 @@
 name="ibhagwan-picom-git"
-pkgname="ibhagwan-picom"
+gives="ibhagwan-picom"
 url="https://github.com/ibhagwan/picom.git"
 pkgver="7.5"
 license="MIT,MPL-2.0"

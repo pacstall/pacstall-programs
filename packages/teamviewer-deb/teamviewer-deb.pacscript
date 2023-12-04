@@ -1,5 +1,4 @@
 name="teamviewer-deb"
-pkgname="teamviewer"
 gives="teamviewer"
 pkgver="15.47.3"
 repology=("project: teamviewer")

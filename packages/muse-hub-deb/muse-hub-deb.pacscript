@@ -1,5 +1,5 @@
 name="muse-hub-deb"
-pkgname="muse-hub"
+gives="muse-hub"
 repology=("project: muse-hub")
 pkgver="1.0.1.451"
 url="https://pub-c7a32e5b5d834ec9aeef400105452a42.r2.dev/Muse_Hub.deb"

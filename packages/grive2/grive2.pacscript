@@ -1,5 +1,5 @@
 name="grive2"
-pkgname="grive2"
+gives="grive2"
 pkgdesc="Google Drive client with support for new Drive REST API and partial sync"
 pkgver="0.5.1"
 url="https://github.com/vitalif/grive2/archive/v${pkgver}.tar.gz"

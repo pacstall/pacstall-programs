@@ -1,14 +1,13 @@
 name="minecraft-pi-reborn-app"
-pkgname="minecraft-pi-reborn"
+gives="minecraft-pi-reborn"
 pkgver="2.4.8"
-gives="${pkgname}"
-breaks=("${pkgname}-git" "${pkgname}-deb" "${pkgname}-bin" "minecraft-pi-reborn-client")
+breaks=("${gives}-git" "${gives}-deb" "${gives}-bin" "${gives}-client")
 pkgdesc="Minecraft Pi edition reborn with new features and for x86 pc."
 hash="06f2e8b240f211940961144cd2b6461827cfb11b2b517828385527516f69d8fc"
 arch=('amd64')
 url="https://jenkins.thebrokenrail.com/job/minecraft-pi-reborn/job/master/258/artifact/out/minecraft-pi-reborn-client-${pkgver}-amd64.AppImage"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
-repology=("project: ${pkgname}")
+repology=("project: ${gives}")
 
 prepare() {
   sudo mkdir -p "${pkgdir}/usr/bin" "${pkgdir}/usr/share/metainfo" "${pkgdir}/usr/share/applications" "${pkgdir}/usr/share/icons/hicolor/256x256/apps"

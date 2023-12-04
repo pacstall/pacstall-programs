@@ -1,8 +1,7 @@
 name="signal-desktop-beta-deb"
-pkgname="signal-desktop-beta"
-repology=("project: signal-desktop" "visiblename: ${pkgname}-bin")
-gives="${pkgname}"
-breaks=("${pkgname}-app")
+gives="signal-desktop-beta"
+repology=("project: signal-desktop" "visiblename: ${gives}-bin")
+breaks=("${gives}-app")
 pkgver="6.15.0-beta.1"
 url="https://updates.signal.org/desktop/apt/pool/main/s/${gives}/${gives}_${pkgver}_amd64.deb"
 pkgdesc="Signal Private Messenger for Linux (Beta)"

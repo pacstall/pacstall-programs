@@ -1,5 +1,4 @@
 name="tre-git"
-pkgname="tre"
 gives="tre"
 makedepends=("cargo" "rustc")
 pkgdesc="Tree command, improved"

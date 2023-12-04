@@ -1,13 +1,12 @@
 name="gfn-electron-bin"
-pkgname="geforcenow-electron"
+gives="geforcenow-electron"
 pkgver="1.13.0"
 pkgdesc="Linux desktop client for GeForce NOW, using Electron"
 repology=("project: geforcenow-electron")
 url="https://github.com/hmlendea/gfn-electron/releases/download/v${pkgver}/geforcenow-electron_${pkgver}_linux.zip"
 hash="cc0190621b8966c84b838be0518e264081757a90ad55a77a1289f8af8cf10088"
 maintainer="Marie Piontek <marie@kaifa.ch>"
-gives="${pkgname}"
-breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
+breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 depends=("libva2" "libva-glx2" "libva-drm2" "libva-wayland2" "libva-x11-2")
 
 package() {
@@ -16,17 +15,17 @@ package() {
   sudo install -Dm644 icon.png "${pkgdir}/usr/share/pixmaps/nvidia.png"
 
   # Install desktop file
-  sudo install -Dm644 "${SRCDIR}/com.github.hmlendea.${pkgname}.desktop" -t "${pkgdir}/usr/share/applications"
+  sudo install -Dm644 "${SRCDIR}/com.github.hmlendea.${gives}.desktop" -t "${pkgdir}/usr/share/applications"
 
   # Install the rest of the app
-  sudo install -d "${pkgdir}/opt/${pkgname}/" "${pkgdir}/usr/bin"
+  sudo install -d "${pkgdir}/opt/${gives}/" "${pkgdir}/usr/bin"
 
-  sudo cp -r "${SRCDIR}"/* "${pkgdir}"/opt/"${pkgname}"/
-  sudo chmod +x "${pkgdir}/opt/${pkgname}/geforcenow-electron"
+  sudo cp -r "${SRCDIR}"/* "${pkgdir}"/opt/"${gives}"/
+  sudo chmod +x "${pkgdir}/opt/${gives}/geforcenow-electron"
 }
 
 post_install() {
-  sudo ln -s -r "/opt/${pkgname}/geforcenow-electron" "/usr/bin/geforcenow"
+  sudo ln -s -r "/opt/${gives}/geforcenow-electron" "/usr/bin/geforcenow"
 }
 
 post_remove() {
