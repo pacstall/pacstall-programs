@@ -1,5 +1,5 @@
 name="minecraft-launcher"
-pkgname="minecraft-launcher"
+gives="minecraft-launcher"
 pkgver="1121"
 maintainer="aranym <aranym1@pm.me>"
 url="https://launcher.mojang.com/download/linux/x86_64/minecraft-launcher_1121.tar.gz"

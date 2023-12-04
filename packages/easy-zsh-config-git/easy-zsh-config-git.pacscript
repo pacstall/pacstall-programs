@@ -1,12 +1,11 @@
 name="easy-zsh-config-git"
-pkgname="easy-zsh-config"
+gives="easy-zsh-config"
 url="https://github.com/wszqkzqk/easy-zsh-config.git"
 pkgver="0.6.2"
 pacdeps=("oh-my-posh-git" "zsh-history-substring-search-git")
 depends=("zsh" "zsh-syntax-highlighting" "zsh-autosuggestions")
-breaks=("${pkgname}")
-replace=("${pkgname}")
-gives=("${pkgname}")
+breaks=("${gives}")
+replace=("${gives}")
 pkgdesc="A simple but fast and out of the box configuration of zsh powered by oh-my-posh and zsh plugins"
 maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {

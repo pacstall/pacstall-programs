@@ -7,12 +7,11 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="doas-git"
-pkgname="doas"
+gives="doas"
 pkgdesc="A port of OpenBSD's doas(1), an alternative to sudo(1)"
 url="https://github.com/slicer69/doas.git"
 pkgver="6.3p9"
-gives="${pkgname}"
-breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
+breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app")
 makedepends=("make" "bison" "flex" "libpam0g-dev")
 hash="b66e7a55fc1b7fd1f6443861f65bde87a4794c4721dee5e11dc0294f27116efc"
 pkgver() {
@@ -43,7 +42,7 @@ build() {
 
 package() {
   # Install license
-  sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+  sudo install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${gives}/LICENSE"
 
   # Install doas
   sudo make -j"${NCPU}" PREFIX="/usr" DESTDIR="${pkgdir}" MANDIR="${pkgdir}/usr/share/man" install
@@ -62,7 +61,7 @@ post_install() {
 
 post_remove() {
   # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-  sudo rm -rf "/usr/share/doc/${pkgname}"
+  sudo rm -rf "/usr/share/licenses/${gives}"
+  sudo rm -rf "/usr/share/doc/${gives}"
 }
 # vim:set ft=sh ts=2 sw=2 et:

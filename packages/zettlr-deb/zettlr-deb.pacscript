@@ -1,5 +1,4 @@
 name="zettlr-deb"
-pkgname="zettlr"
 gives="zettlr"
 pkgver="3.0.2"
 pkgdesc="Markdown editor for the 21st century"

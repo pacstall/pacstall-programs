@@ -1,10 +1,10 @@
 name="apx-git"
-pkgname="apx"
+gives="apx"
 url="https://github.com/Vanilla-OS/apx.git"
 pkgver="2.0.0"
 makedepends=("golang-go")
 pacdeps=("distrobox")
-breaks=("${pkgname}")
+breaks=("${gives}")
 pkgdesc="Package manager meant to be simple to use, but also powerful with support to installing packages from multiple sources without altering the root filesystem"
 maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {

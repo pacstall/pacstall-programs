@@ -7,13 +7,13 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="qogir-gtk-theme-bin"
-pkgname="qogir-gtk-theme"
+gives="qogir-gtk-theme"
 pkgver="2023-02-27"
 pkgdesc="Qogir is a flat Design theme for GTK"
 url="https://github.com/vinceliuice/Qogir-theme/archive/${pkgver}.tar.gz"
 depends=("gtk2-engines-murrine" "gtk2-engines-pixbuf")
 makedepends=("libsass1")
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
+breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 hash="211d2d7e027fe595e7512ca346b63a9314ee59e3ddee875bc1c06aeef9e5b9bb"
 repology=("project: qogir-theme" "repo: nix_unstable")
 

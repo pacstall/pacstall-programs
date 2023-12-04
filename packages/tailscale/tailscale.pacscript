@@ -32,5 +32,5 @@ package() {
   sudo install -Dm755 tailscale tailscaled -t "${pkgdir}/usr/bin"
   sudo install -Dm644 cmd/tailscaled/tailscaled.defaults "${pkgdir}/etc/default/tailscaled"
   sudo install -Dm644 cmd/tailscaled/tailscaled.service -t "${pkgdir}/usr/lib/systemd/system"
-  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
 }

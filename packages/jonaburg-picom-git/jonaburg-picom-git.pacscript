@@ -1,5 +1,5 @@
 name="jonaburg-picom-git"
-pkgname="jonaburg-picom"
+gives="jonaburg-picom"
 url="https://github.com/jonaburg/picom.git"
 pkgver="8"
 license="MIT,MPL-2.0"

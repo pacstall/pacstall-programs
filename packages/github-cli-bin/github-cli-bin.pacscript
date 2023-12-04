@@ -1,9 +1,8 @@
 name="github-cli-bin"
-pkgname="github-cli"
 gives="gh"
 breaks=("${gives}-git" "${gives}-deb")
 replace=("${gives}")
-repology=("project: ${pkgname}")
+repology=("project: github-cli")
 pkgver="2.38.0"
 url="https://github.com/cli/cli/releases/download/v${pkgver}/${gives}_${pkgver}_linux_amd64.tar.gz"
 pkgdesc="GitHub's official command line tool - Binary version"

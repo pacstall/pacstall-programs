@@ -1,11 +1,9 @@
 name="zsh-history-substring-search-git"
-pkgname="zsh-history-substring-search"
+gives="zsh-history-substring-search"
 url="https://github.com/zsh-users/zsh-history-substring-search.git"
 pkgver="1.1.0"
 depends=("zsh")
-breaks=("${pkgname}")
-replace=("${pkgname}")
-gives=("${pkgname}")
+replace=("${gives}")
 pkgdesc="ZSH port of Fish history search (up arrow)"
 maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {

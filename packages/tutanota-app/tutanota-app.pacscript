@@ -1,27 +1,26 @@
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
 
-pkgname="tutanota"
-name="${pkgname}-app"
+name="tutanota-app"
+gives="tutanota"
 pkgver="3.116.8"
 pkgdesc="Tutanota is the world's most secure email service, easy to use and private by design."
 url="https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage"
 __icon_url="https://icons-for-free.com/download-icon-super+tiny+icons+tutanota-1324450784669328293_256.png"
 __icon_hash="e76f83c33cab7c3b1e7d4c827927e0c883bc7f41cb2e2f3ce7d493cd96970d76"
-breaks=("${pkgname}-deb" "${pkgname}-bin" "${pkgname}-git" "${pkgname}")
-gives="${pkgname}"
-replace=("${pkgname}")
+breaks=("${gives}-deb" "${gives}-bin" "${gives}-git" "${gives}")
+replace=("${gives}")
 hash="2a18aa0f34460f800100d929bdc848e3cd6b03eb3e1c042bec7e3acfbd6b660e"
 repology=("project: tutanota" "repo: homebrew_casks")
 
 __created_desktop_file="yes"
 package() {
   # Install AppImage
-  sudo install -Dm755 "tutanota-desktop-linux.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "tutanota-desktop-linux.AppImage" "${pkgdir}/usr/bin/${gives}"
 
   if ask "\nTutanota creates its own desktop file during the first launch.\nDo you want to create a desktop file anyway?" N; then
     # Download icon
-    wget -O "${pkgname}.png" -q "${__icon_url}" "${pkgname}.png"
-    actual_icon_hash="$(sha256sum "${pkgname}.png" | grep -o "[a-z0-9]*" | head -1)"
+    wget -O "${gives}.png" -q "${__icon_url}" "${gives}.png"
+    actual_icon_hash="$(sha256sum "${gives}.png" | grep -o "[a-z0-9]*" | head -1)"
 
     # Check hash
     if [[ ${__icon_hash} != "${actual_icon_hash}" ]]; then
@@ -30,9 +29,9 @@ package() {
     fi
 
     # Install .desktop file
-    sudo install -Dm644 "${pkgname}.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
-    wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
-    sudo install -Dm644 "${pkgname}.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
+    sudo install -Dm644 "${gives}.png" "${pkgdir}/usr/share/pixmaps/${gives}.png"
+    wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${gives}.desktop"
+    sudo install -Dm644 "${gives}.desktop" "${pkgdir}/usr/share/applications/${gives}.desktop"
   else
     __created_desktop_file="no"
   fi

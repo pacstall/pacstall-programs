@@ -1,5 +1,4 @@
 name="tixati-deb"
-pkgname="tixati"
 gives="tixati"
 pkgver="3.19"
 repology=("project: tixati")

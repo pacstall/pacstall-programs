@@ -1,5 +1,4 @@
 name="endlessh-git"
-pkgname="endlessh"
 gives="endlessh"
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-bin")
 url="https://github.com/skeeto/endlessh.git"
@@ -25,13 +24,13 @@ build() {
 
 package() {
   sudo make install DESTDIR="${pkgdir}"
-  sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${pkgname}"
-  sudo install -Dm644 UNLICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${gives}"
+  sudo install -Dm644 UNLICENSE -t "${pkgdir}/usr/share/licenses/${gives}"
   sudo install -Dm644 sample-config "${pkgdir}/etc/endlessh/config"
 }
 
 post_remove() {
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-  sudo rm -rf "/usr/share/doc/${pkgname}"
+  sudo rm -rf "/usr/share/licenses/${gives}"
+  sudo rm -rf "/usr/share/doc/${gives}"
 }
 # vim:set ft=sh ts=2 sw=2 et:

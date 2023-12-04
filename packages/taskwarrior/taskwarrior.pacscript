@@ -1,5 +1,4 @@
 name="taskwarrior"
-pkgname="taskwarrior"
 repology=("project: taskwarrior")
 pkgver="2.6.2"
 url="https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v${pkgver}/task-${pkgver}.tar.gz"

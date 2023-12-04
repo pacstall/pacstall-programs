@@ -1,5 +1,5 @@
 name="htop"
-pkgname="htop"
+gives="htop"
 pkgver="3.2.2"
 url="https://github.com/htop-dev/htop/archive/refs/tags/${pkgver}.tar.gz"
 makedepends=("dh-autoreconf" "libncurses5-dev" "libncursesw5-dev")

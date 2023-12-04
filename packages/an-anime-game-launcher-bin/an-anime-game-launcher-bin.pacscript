@@ -1,5 +1,5 @@
 name="an-anime-game-launcher-bin"
-pkgname="an-anime-game-launcher"
+gives="an-anime-game-launcher"
 pkgver="3.9.0"
 pkgdesc="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
@@ -7,9 +7,8 @@ url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/$
 hash="990beb36e3b9afa42a14cc9026c2cc2c6ca8c1c788c60fbbfad2ff1c8635248e"
 depends=("xdelta3" "git")
 maintainer="Elsie19 <elsie19@pm.me>"
-gives="${pkgname}"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
-breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
+breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 
 optdepends=(
   "mangohud: FPS Hud/GUI"
@@ -20,7 +19,7 @@ optdepends=(
 
 package() {
   sudo chmod +x "anime-game-launcher"
-  sudo install -Dm755 "anime-game-launcher" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "anime-game-launcher" "${pkgdir}/usr/bin/${gives}"
   sudo mkdir -p "${pkgdir}/usr/share/applications"
   echo '[Desktop Entry]
 Name=An Anime Game Launcher

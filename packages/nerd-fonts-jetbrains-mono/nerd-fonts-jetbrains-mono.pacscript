@@ -1,7 +1,6 @@
 name="nerd-fonts-jetbrains-mono"
-pkgname="nerd-fonts-jetbrains-mono"
-breaks=("${pkgname}")
-gives="${pkgname}"
+gives="nerd-fonts-jetbrains-mono"
+breaks=("${gives}")
 #repology=("project: fonts:nerd-fonts")
 pkgver="2.2.2"
 url="https://github.com/ryanoasis/nerd-fonts/releases/download/v${pkgver}/JetBrainsMono.zip"
