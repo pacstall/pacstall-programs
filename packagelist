@@ -203,6 +203,7 @@ lens
 lf-bin
 libcamera-git
 libcutefish-git
+libdrm
 libicu-deb
 libndi4-deb
 libresprite-git
