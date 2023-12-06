@@ -11,10 +11,10 @@ repology=("project: ${gives}")
 
 # This post_install() function to repair icon not appear issue nowadays
 post_install() {
-    sudo cp /usr/share/icons/hicolor/0x0/apps/anytype.png /usr/share/icons/hicolor/512x512/apps
+  sudo cp /usr/share/icons/hicolor/0x0/apps/anytype.png /usr/share/icons/hicolor/512x512/apps
 }
 
 # This post_remove() function to reverse post_install() function
 post_remove() {
-    sudo rm -rf /usr/share/icons/hicolor/512x512/apps/anytype.png
+  sudo rm -rf /usr/share/icons/hicolor/512x512/apps/anytype.png
 }
