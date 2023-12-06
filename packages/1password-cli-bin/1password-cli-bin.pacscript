@@ -1,7 +1,6 @@
 name="1password-cli-bin"
-pkgname="1password-cli"
 gives="op"
-repology=("project: ${pkgname}")
+repology=("project: 1password-cli")
 pkgver="2.22.0"
 url="https://cache.agilebits.com/dist/1P/op2/pkg/v${pkgver}/${gives}_linux_amd64_v${pkgver}.zip"
 pkgdesc="1Password CLI"

@@ -1,5 +1,5 @@
 name="libssl1.1-deb"
-pkgname="libssl1.1"
+gives="libssl1.1"
 pkgdesc="Old version of libssl (for legacy dependencies)"
 maintainer="Rémy Huet <remy.huet@hds.utc.fr>"
 repology=("project: libssl1.1")

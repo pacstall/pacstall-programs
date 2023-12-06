@@ -1,5 +1,5 @@
 name="universal-ctags-git"
-pkgname="universal-ctags"
+gives="universal-ctags"
 url="https://github.com/universal-ctags/ctags.git"
 pkgver="6.0.0"
 pkgdesc="Universal Ctags (abbreviated as u-ctags) is a maintained implementation of ctags. ctags generates an index (or tag) file of language objects found in source files for programming languages. This index makes it easy for text editors and other tools to locate the indexed items."

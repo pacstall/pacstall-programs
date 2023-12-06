@@ -1,5 +1,4 @@
 name="github-desktop-deb"
-pkgname="github-desktop"
 gives="github-desktop"
 pkgver="3.2.5"
 url="https://github.com/shiftkey/desktop/releases/download/release-${pkgver}-linux1/GitHubDesktop-linux-${pkgver}-linux1.deb"

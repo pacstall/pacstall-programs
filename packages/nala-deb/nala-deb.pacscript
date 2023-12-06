@@ -1,8 +1,7 @@
 name="nala-deb"
 pkgver="0.14.0"
-pkgname="nala"
-gives="${pkgname}"
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
+gives="nala"
+breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
 pkgdesc="Commandline frontend for the apt package manager"
 maintainer="Blake Lee <blake@volian.org>"
 

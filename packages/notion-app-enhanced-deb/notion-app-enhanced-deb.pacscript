@@ -1,11 +1,10 @@
 name="notion-app-enhanced-deb"
-pkgname="notion-app-enhanced"
-repology=("project: ${pkgname}")
+gives="notion-app-enhanced"
+repology=("project: ${gives}")
 pkgver="2.0.18-1"
-url="https://github.com/notion-enhancer/notion-repackaged/releases/download/v${pkgver}/${pkgname}_${pkgver}_amd64.deb"
-breaks=("${pkgname}-app" "notion-app-deb" "notion-app-app")
-replace=("${pkgname}")
-gives="${pkgname}"
+url="https://github.com/notion-enhancer/notion-repackaged/releases/download/v${pkgver}/${gives}_${pkgver}_amd64.deb"
+breaks=("${gives}-app" "notion-app-deb" "notion-app-app")
+replace=("${gives}")
 pkgdesc="The all-in-one workspace for your notes and tasks, but enhanced"
 hash="b4c2b63eff8c93201ce6ddfef9b0cbd53a3fb7cec9fcd01e3a877d4a9c943bfc"
 arch=('amd64')

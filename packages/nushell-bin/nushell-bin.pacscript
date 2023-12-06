@@ -9,10 +9,10 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="nushell-bin"
-pkgname="nushell"
+gives="nushell"
 pkgver="0.87.1"
 pkgdesc="A new type of shell"
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
+breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 repology=("project: nushell")
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
@@ -34,9 +34,9 @@ package() {
     -exec sudo install -vDm755 -t "${pkgdir}/usr/bin" "{}" +
 
   # documentation
-  sudo install -vDm644 -t "${pkgdir}/usr/share/doc/${pkgname}" README.txt
+  sudo install -vDm644 -t "${pkgdir}/usr/share/doc/${gives}" README.txt
 
   # license
-  sudo install -vDm644 -t "${pkgdir}/usr/share/licenses/${pkgname}" LICENSE
+  sudo install -vDm644 -t "${pkgdir}/usr/share/licenses/${gives}" LICENSE
 }
 # vim:set ft=sh ts=2 sw=2 et:

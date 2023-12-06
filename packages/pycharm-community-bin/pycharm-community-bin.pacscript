@@ -1,6 +1,5 @@
 name="pycharm-community-bin"
 pkgver="2023.2.5"
-pkgname="pycharm-community"
 gives="pycharm-community"
 maintainer="ObsidianPresidium <emil@aarestrup.nu>"
 pkgdesc="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."

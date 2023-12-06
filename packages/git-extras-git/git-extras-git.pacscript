@@ -1,8 +1,7 @@
 name="git-extras-git"
-pkgname="git-extras"
-breaks=("${pkgname}-bin")
-replace=("${pkgname}")
-gives="${pkgname}"
+gives="git-extras"
+breaks=("${gives}-bin")
+replace=("${gives}")
 pkgdesc="GIT utilities -- repo summary, repl, changelog population, author commit percentages and more"
 url="https://github.com/tj/git-extras.git"
 pkgver="7.0.0"

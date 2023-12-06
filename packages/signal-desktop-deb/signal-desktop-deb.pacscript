@@ -1,8 +1,7 @@
 name="signal-desktop-deb"
-pkgname="signal-desktop"
-gives="${pkgname}"
-breaks=("${pkgname}-app")
-repology=("project: ${pkgname}" "repo: arch")
+gives="signal-desktop"
+breaks=("${gives}-app")
+repology=("project: ${gives}" "repo: arch")
 pkgver="6.35.0"
 url="https://updates.signal.org/desktop/apt/pool/s/signal-desktop/signal-desktop_${pkgver}_amd64.deb"
 pkgdesc="Signal Private Messenger for Linux"

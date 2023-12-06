@@ -1,5 +1,5 @@
 name="youtube-dl-git"
-pkgname="youtube-dl"
+gives="youtube-dl"
 url="https://github.com/ytdl-org/youtube-dl.git"
 pkgver="2021.12.17"
 pkgdesc="Command-line program to download videos from YouTube.com and other video sites"

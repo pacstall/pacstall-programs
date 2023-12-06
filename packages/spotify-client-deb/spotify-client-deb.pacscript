@@ -1,9 +1,8 @@
 name="spotify-client-deb"
 gives="spotify-client"
-pkgname="spotify-client"
 repology=("project: spotify")
-breaks=("${pkgname}-git" "${pkgname}-app" "${pkgname}-bin" "spotify")
-replace=("${pkgname}")
+breaks=("${gives}-git" "${gives}-app" "${gives}-bin" "spotify")
+replace=("${gives}")
 pkgver="1.2.22.982.g794acc0a"
 url="http://repository.spotify.com/pool/non-free/s/${gives}/${gives}_${pkgver}_amd64.deb"
 pkgdesc="Spotify streaming music client"

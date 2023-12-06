@@ -1,7 +1,5 @@
 name="xonotic"
-pkgname="xonotic"
 pkgver="0.8.6"
-gives="xonotic"
 pkgdesc="The Free and Fast Arena Shooter"
 homepage='https://xonotic.org/'
 url="https://dl.unvanquished.net/share/xonotic/release/xonotic-${pkgver}.zip"
@@ -12,8 +10,8 @@ maintainer="Herisson <spaceguybox@outlook.com>"
 repology=("project: xonotic")
 
 package() {
-  sudo install -Dm755 "xonotic-linux64-sdl" "${pkgdir}/usr/bin/${pkgname}-sdl"
-  sudo install -Dm755 "xonotic-linux64-glx" "${pkgdir}/usr/bin/${pkgname}-glx"
+  sudo install -Dm755 "xonotic-linux64-sdl" "${pkgdir}/usr/bin/${name}-sdl"
+  sudo install -Dm755 "xonotic-linux64-glx" "${pkgdir}/usr/bin/${name}-glx"
   sudo mkdir -p "${pkgdir}/usr/share/applications/"
   sudo mkdir -p "${pkgdir}/usr/share/xonotic"
   sudo cp -r ./* "${pkgdir}/usr/share/xonotic"

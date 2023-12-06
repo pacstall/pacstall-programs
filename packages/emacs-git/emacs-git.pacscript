@@ -72,12 +72,11 @@ NOGZ="YES"        # Don't compress .el files.
 #################################################################################
 
 name="emacs-git"
-pkgname="emacs"
+gives="emacs"
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
 makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
 depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
-gives="${name}"
 breaks=("${name}" "${name}-nox")
 replace=("${name}" "${name}-nox")
 url="https://github.com/emacs-mirror/emacs.git"

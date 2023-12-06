@@ -1,8 +1,7 @@
 name="nerd-fonts-cascadia-code"
-pkgname="nerd-fonts-cascadia-code"
+gives="nerd-fonts-cascadia-code"
 pkgver="3.0.2"
-gives="${pkgname}"
-breaks=("${pkgname}")
+breaks=("${gives}")
 repology=("project: fonts:nerd-fonts")
 replace=("${gives}")
 url="https://github.com/ryanoasis/nerd-fonts/releases/download/v${pkgver}/CascadiaCode.zip"
@@ -14,7 +13,7 @@ maintainer="heyzsh <haidarzsh@gmail.com>"
 package() {
   sudo install -d "${pkgdir}"/usr/share/fonts/OTF
   sudo install -Dm644 "${SRCDIR}/"*.otf "${pkgdir}"/usr/share/fonts/OTF
-  sudo install -Dm644 "${SRCDIR}"/LICENSE "${pkgdir}"/usr/share/licenses/"${pkgname}"/LICENSE
+  sudo install -Dm644 "${SRCDIR}"/LICENSE "${pkgdir}"/usr/share/licenses/"${gives}"/LICENSE
   ## Won't be necessary and might change in the future ##
-  # sudo install -Dm644 "${SRCDIR}"/readme.md "${pkgdir}"/usr/share/doc/"${pkgname}"/readme.md
+  # sudo install -Dm644 "${SRCDIR}"/readme.md "${pkgdir}"/usr/share/doc/"${gives}"/readme.md
 }

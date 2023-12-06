@@ -7,38 +7,38 @@
 maintainer="wizard-28 <wiz28@pm.me>"
 
 name="hyperfine-bin"
-pkgname="hyperfine"
+gives="hyperfine"
 pkgver="1.17.0"
 pkgdesc="A command-line benchmarking tool"
-url="https://github.com/sharkdp/${pkgname}/releases/download/v${pkgver}/${pkgname}-v${pkgver}-x86_64-unknown-linux-musl.tar.gz"
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
+url="https://github.com/sharkdp/${gives}/releases/download/v${pkgver}/${gives}-v${pkgver}-x86_64-unknown-linux-musl.tar.gz"
+breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 hash="563de47d843810de501e3e6bfcb4571a4ff957eab811c2af87be23d1c599ae47"
 arch=('amd64')
 repology=("project: hyperfine")
 
 package() {
   # Install license
-  sudo install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  sudo install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${gives}"
 
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"
 
   # Install binary
-  sudo install -Dm755 "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "${gives}" "${pkgdir}/usr/bin/${gives}"
 
   # Install completions
-  sudo install -Dm644 "autocomplete/${pkgname}.bash" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
-  sudo install -Dm644 "autocomplete/${pkgname}.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/${pkgname}.fish"
-  sudo install -Dm644 "autocomplete/_${pkgname}" "${pkgdir}/usr/share/zsh/site-functions/_${pkgname}"
+  sudo install -Dm644 "autocomplete/${gives}.bash" "${pkgdir}/usr/share/bash-completion/completions/${gives}"
+  sudo install -Dm644 "autocomplete/${gives}.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/${gives}.fish"
+  sudo install -Dm644 "autocomplete/_${gives}" "${pkgdir}/usr/share/zsh/site-functions/_${gives}"
 
   # Install man page
-  sudo install -Dm644 "${pkgname}.1" "${pkgdir}/usr/share/man/man1/${pkgname}.1"
-  sudo gzip --best "${pkgdir}/usr/share/man/man1/${pkgname}.1"
+  sudo install -Dm644 "${gives}.1" "${pkgdir}/usr/share/man/man1/${gives}.1"
+  sudo gzip --best "${pkgdir}/usr/share/man/man1/${gives}.1"
 }
 
 post_remove() {
   # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-  sudo rm -rf "/usr/share/doc/${pkgname}"
+  sudo rm -rf "/usr/share/licenses/${gives}"
+  sudo rm -rf "/usr/share/doc/${gives}"
 }
 # vim:set ft=sh ts=2 sw=2 et:
