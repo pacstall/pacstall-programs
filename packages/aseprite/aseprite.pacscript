@@ -52,8 +52,7 @@ build() {
     -DSKIA_LIBRARY_DIR=../skia/out/Release-x64 \
     -DSKIA_LIBRARY=../skia/out/Release-x64/libskia.a \
     -G Ninja \
-    -Wno-dev \
-    ..
+    -Wno-dev
   cmake --build build -j"${NCPU}"
 }
 
