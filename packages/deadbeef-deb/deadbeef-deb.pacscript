@@ -1,13 +1,13 @@
 name="deadbeef-deb"
 gives="deadbeef-static"
 repology=("project: deadbeef")
-pkgver="1.9.5"
+pkgver="1.9.6"
 build_version="1"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
 arch=("amd64")
-hash="bc74ea9c8fa99f98d10c6af051f972e8192ac31c0243a5c3e6c295c1002f4d30"
-url="https://deac-riga.dl.sourceforge.net/project/deadbeef/travis/linux/${pkgver}/deadbeef-static_${pkgver}-${build_version}_amd64.deb"
+hash="c0e95beedb2dc3ee6de604048593b2b12a4ea001ad3185c41947b4f7d854ecf6"
+url="https://cfhcable.dl.sourceforge.net/project/deadbeef/travis/linux/${pkgver}/deadbeef-static_${pkgver}-${build_version}_amd64.deb"
 homepage="https://deadbeef.sourceforge.io"
 pkgdesc="A modular cross-platform audio player"
 maintainer="Arrowsome <ramtintoosi@gmail.com>"
