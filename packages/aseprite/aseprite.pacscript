@@ -7,7 +7,7 @@ pkgver="1.3.2"
 pkgdesc="Animated sprite editor & pixel art tool"
 repology=("project: ${name}")
 homepage="https://www.aseprite.org/"
-makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "ninja-build" "xorg-dev")
+makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "libxi-dev" "ninja-build" "xorg-dev")
 depends=("hicolor-icon-theme")
 arch=("amd64")
 maintainer="vigress8 <vig@disroot.org>"
@@ -48,9 +48,9 @@ build() {
     -DENABLE_UPDATER=OFF \
     -DLAF_BACKEND=skia \
     -DLAF_WITH_{EXAMPLES,TESTS}=OFF \
-    -DSKIA_DIR=../skia \
-    -DSKIA_LIBRARY_DIR=../skia/out/Release-x64 \
-    -DSKIA_LIBRARY=../skia/out/Release-x64/libskia.a \
+    -DSKIA_DIR=skia \
+    -DSKIA_LIBRARY_DIR=skia/out/Release-x64 \
+    -DSKIA_LIBRARY=skia/out/Release-x64/libskia.a \
     -G Ninja \
     -Wno-dev
   cmake --build build -j"${NCPU}"
