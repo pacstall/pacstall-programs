@@ -23,5 +23,9 @@ package() {
 }
 
 post_install() {
+  if ! [[ -d "${homedir}/.config/nushell" ]]; then
+    mkdir -p "${homedir}/.config/nushell"
+    sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/nushell"
+  fi
   nu -c "register /usr/local/bin/nu_plugin_${gives}"
 }
