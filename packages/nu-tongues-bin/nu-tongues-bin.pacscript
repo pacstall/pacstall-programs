@@ -23,5 +23,5 @@ package() {
 }
 
 post_install() {
-  nu -c "register ${pkgdir}/usr/local/bin/nu_plugin_${gives}"
+  nu -c "register /usr/local/bin/nu_plugin_${gives}"
 }
