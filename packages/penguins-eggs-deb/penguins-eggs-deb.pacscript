@@ -5,7 +5,6 @@ pkgver="9.6.21"
 homepage="https://penguins-eggs.net/"
 pkgdesc="On the road of Remastersys, Refracta, Systemback and father Knoppix!"
 maintainer="Anifyuli <anifyuliansyah@gmail.com>"
-
 case "${CARCH}" in
   amd64)
     url="https://sourceforge.net/projects/penguins-eggs/files/DEBS/eggs_${pkgver}_amd64.deb"
