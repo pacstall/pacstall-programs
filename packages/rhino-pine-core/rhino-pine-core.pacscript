@@ -31,7 +31,7 @@ UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
     sudo rm "${i}"
     sudo wget -q https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png -O "${i}"
   done
-  cd -
+  cd - > /dev/null
   if [[ -f /usr/bin/enable-modem ]]; then
     echo 'START_DAEMON="true"
 USBAUTO="true"
