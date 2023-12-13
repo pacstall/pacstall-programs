@@ -13,7 +13,7 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="fnlfmt"
 pkgver="0.3.0"
-pkgdesc="A more intuitive version of du in rust"
+pkgdesc="A formatter for fennel source code"
 url="https://git.sr.ht/~technomancy/fnlfmt/archive/${pkgver}.tar.gz"
 gives="${pkgname}"
 breaks=("${pkgname}-bin" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")

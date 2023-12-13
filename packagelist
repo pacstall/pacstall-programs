@@ -10,6 +10,7 @@ android-studio-canary
 ani-cli-bin
 anydesk-bin
 anydesk-deb
+anytype-deb
 aomp-deb
 appimagelauncher-deb
 apx-git
@@ -17,6 +18,7 @@ ardour-git
 arduino-cli-bin
 arduino-ide-bin
 armcord-deb
+aseprite
 awesome-git
 aws-cli-v2-bin
 balena-etcher-deb
@@ -185,6 +187,7 @@ ivpn-deb
 ivpn-ui-deb
 jetbrains-toolbox-bin
 jonaburg-picom-git
+kakoune
 kalendar-git
 keepassxc
 keybase-deb
@@ -203,6 +206,7 @@ lens
 lf-bin
 libcamera-git
 libcutefish-git
+libdrm
 libicu-deb
 libndi4-deb
 libresprite-git
@@ -280,6 +284,7 @@ notion-app-deb
 notion-app-enhanced-deb
 notion-git
 nowpm
+nu-tongues-bin
 nuclear-deb
 nuclei-bin
 nushell-bin
@@ -367,6 +372,7 @@ rpcs3-app
 rstudio-deb
 rust-motd-deb
 schildichat-deb
+scrcpy
 sed
 shell-color-scripts
 shellcheck-bin

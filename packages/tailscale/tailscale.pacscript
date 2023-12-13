@@ -1,4 +1,5 @@
 name="tailscale"
+
 pkgver="1.56.0"
 url="https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz"
 homepage="https://tailscale.com"
@@ -9,7 +10,9 @@ maintainer="Nathan <ndowens@artixlinux.org>"
 arch=('amd64')
 repology=("project: ${name}")
 incompatible=('ubuntu:jammy' 'debian:bookworm')
+
 hash="0ae6a4405fb950083d5cec6798ac65cd1dbb06a8aa4135d418278260dc3aa6d0"
+
 
 prepare() {
   go mod vendor
