@@ -1,5 +1,5 @@
 name="tailscale"
-pkgver="1.54.0"
+pkgver="1.56.0"
 url="https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz"
 homepage="https://tailscale.com"
 depends=('iptables')
@@ -9,7 +9,7 @@ maintainer="Nathan <ndowens@artixlinux.org>"
 arch=('amd64')
 repology=("project: ${name}")
 incompatible=('ubuntu:jammy' 'debian:bookworm')
-hash="c895a0f489706535ed400b0599d7d932d9eebc5f1bad2c236408a1e4b86620e7"
+hash="0ae6a4405fb950083d5cec6798ac65cd1dbb06a8aa4135d418278260dc3aa6d0"
 
 prepare() {
   go mod vendor
