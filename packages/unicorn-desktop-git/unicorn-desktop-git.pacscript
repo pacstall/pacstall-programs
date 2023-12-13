@@ -13,6 +13,7 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "val
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-desktop"
 replace=("unicorn-mobile" "unicorn-mobile-git")
+priority="required"
 pkgdesc="Unicorn Desktop by the Rhino Linux Team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgver() {

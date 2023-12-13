@@ -5,6 +5,7 @@ pkgdesc="Transitional package to provide all core Rhino Linux software, without 
 maintainer="Oren Klopfer <oren@taumoda.com>"
 compatible=("ubuntu:devel" "ubuntu:noble")
 replace=("rhino-core" "rhino-pine-core" "rhino-server-core")
+priority="essential"
 pkgver="2023.4~RC"
 pkgrel="1"
 style="(ubxi)"

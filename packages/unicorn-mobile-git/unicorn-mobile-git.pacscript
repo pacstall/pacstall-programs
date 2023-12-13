@@ -11,6 +11,7 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-t
 pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-mobile"
 replace=("unicorn-desktop" "unicorn-desktop-git")
+priority="required"
 pkgdesc="Unicorn Desktop Mobile variant by the Rhino Linux Team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgver() {
