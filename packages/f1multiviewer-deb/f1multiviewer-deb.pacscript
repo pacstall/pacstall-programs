@@ -1,11 +1,11 @@
 name="f1multiviewer-deb"
 gives="multiviewer-for-f1"
 repology=("project: f1multiviewer")
-pkgver="1.28.3"
-buildver="133943726"
+pkgver="1.29.0"
+buildver="137424055"
 maintainer="DismissedGuy <me@mikealmel.ooo>"
 homepage="https://multiviewer.app/"
 url="https://releases.multiviewer.app/download/${buildver}/multiviewer-for-f1_${pkgver}_amd64.deb"
 pkgdesc="Unofficial desktop client for F1 TV"
-hash="c4ce47caf519b916a5e17dd250c98bc90a552f77c9d5b7ac82fac0546a3bf511"
+hash="84aca436bda7792954af7f32b743c82af78160318622c181e8ae949603e7868e"
 arch=('amd64')
