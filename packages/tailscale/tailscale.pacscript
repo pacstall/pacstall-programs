@@ -1,5 +1,4 @@
 name="tailscale"
-
 pkgver="1.56.0"
 url="https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz"
 homepage="https://tailscale.com"
