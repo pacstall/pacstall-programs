@@ -1,7 +1,7 @@
 name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="3"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
   "vala-panel-appmenu" "appmenu-gtk2-module" "appmenu-gtk3-module" "xfce4-power-manager"
   "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol"
@@ -13,6 +13,7 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "val
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-desktop"
 replace=("unicorn-mobile" "unicorn-mobile-git")
+priority="required"
 pkgdesc="Unicorn Desktop by the Rhino Linux Team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgver() {
