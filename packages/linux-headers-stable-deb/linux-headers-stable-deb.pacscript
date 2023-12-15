@@ -1,10 +1,10 @@
 name="linux-headers-stable-deb"
-gives="linux-headers-6.6.6-060606"
-pkgver="6.6.6"
-buildver="6.6.6-060606.202312111032"
+gives="linux-headers-6.6.7-060607"
+pkgver="6.6.7"
+buildver="6.6.7-060607.202312131837"
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb"
 pkgdesc="Ubuntu Linux stable kernel (Headers)"
-hash="99770258e663f6a5df35fc8a048aef4da287b5899641381b92f776f9288bbcf3"
+hash="ee9e617dfc1f6812aac9cc23f170e2516c25048d15377d198ba6ae70e836f343"
 arch=('any')
 maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: linux" "repo: distrowatch")
