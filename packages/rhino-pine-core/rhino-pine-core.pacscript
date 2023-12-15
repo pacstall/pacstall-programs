@@ -9,8 +9,8 @@ pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 compatible=("ubuntu:devel" "ubuntu:noble")
 replace=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
-pkgver="2023.3"
-pkgrel="12"
+pkgver="2023.4~RC"
+pkgrel="1"
 style="(mobile)"
 branch="devel"
 post_install() {
@@ -31,7 +31,7 @@ UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
     sudo rm "${i}"
     sudo wget -q https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png -O "${i}"
   done
-  cd -
+  cd - > /dev/null
   if [[ -f /usr/bin/enable-modem ]]; then
     echo 'START_DAEMON="true"
 USBAUTO="true"
