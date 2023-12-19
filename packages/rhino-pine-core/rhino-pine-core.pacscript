@@ -10,8 +10,8 @@ maintainer="Oren Klopfer <oren@taumoda.com>"
 compatible=("ubuntu:devel" "ubuntu:noble")
 replace=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
-pkgver="2023.4~RC"
-pkgrel="2"
+pkgver="2023.4"
+pkgrel="1"
 style="(mobile)"
 branch="devel"
 post_install() {
