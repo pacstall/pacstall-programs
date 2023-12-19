@@ -9,6 +9,7 @@ url="${homepage}/releases/download/v${pkgver}/${_name}_${pkgver}.jar"
 hash="3f7460b5ba20cf84ea034e9f2c49def9b07cf59680a3b36492875d851f9e0241"
 maintainer="vigress8 <vig@disroot.org>"
 repology=("project: ${gives}")
+incompatible=("debian:buster" "debian:bullseye" "debian:bookworm" "debian:trixie")
 
 package() {
   sudo install -Dm644 "${_name}_${pkgver}.jar" "${pkgdir}/usr/share/java/${gives}/${gives}.jar"
@@ -34,6 +35,6 @@ END
   sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
   sudo install -Dm644 "${gives}.desktop" -t "${pkgdir}/usr/share/applications"
 
-  wget -qO "${gives}.png" "https://raw.githubusercontent.com/tonikelope/${name}/v${pkgver}/src/main/resources/images/pica_roja_big.png"
+  wget -qO "${gives}.png" "https://raw.githubusercontent.com/tonikelope/${gives}/v${pkgver}/src/main/resources/images/pica_roja_big.png"
   sudo install -Dm644 "${gives}.png" -t "${pkgdir}/usr/share/pixmaps"
 }
