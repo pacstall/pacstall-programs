@@ -1,16 +1,13 @@
 name="nerd-fonts-jetbrains-mono"
-pkgname="nerd-fonts-jetbrains-mono"
-breaks=("${pkgname}")
-gives="${pkgname}"
-#repology=("project: fonts:nerd-fonts")
-pkgver="2.2.2"
-url="https://github.com/ryanoasis/nerd-fonts/releases/download/v${pkgver}/JetBrainsMono.zip"
-pkgdesc="Patched font JetBrains Mono fron nerd-fonts library"
-hash="8b9b6c58081d179ecd50839a6b211dbd24b61e66d87715860129b6138982ee7b"
+replace=("${name}")
+repology=("project: fonts:nerd-fonts")
+pkgver="3.1.1"
+url="https://github.com/ryanoasis/nerd-fonts/releases/download/v${pkgver}/JetBrainsMono.tar.xz"
+pkgdesc="Patched font JetBrains Mono from Nerd Fonts library"
+hash="92225abcacf2fe500c59c5f16962528909a0c5caec8e2aa14a6546ff268a1db9"
 maintainer="Damian Bednarczyk <dbednar230@gmail.com>"
 
 package() {
-  sudo install -d "${pkgdir}"/usr/share/fonts/TTF
-  sudo rm "${SRCDIR:?}/"*"Windows Compatible.ttf"
-  sudo install -Dm644 "${SRCDIR}/"*.ttf "${pkgdir}"/usr/share/fonts/TTF
+  sudo install -Dm644 ./*.ttf -t "${pkgdir}/usr/share/fonts/TTF"
+  sudo install -Dm644 "OFL.txt" -t "${pkgdir}/usr/share/licenses/${name}"
 }
