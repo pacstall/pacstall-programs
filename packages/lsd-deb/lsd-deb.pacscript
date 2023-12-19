@@ -5,6 +5,7 @@ pkgver="1.0.0"
 pkgdesc="The next gen ls command"
 arch=("amd64" "arm64" "i386")
 url="https://github.com/${gives}-rs/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_${CARCH}.deb"
+maintainer="KwonNam Son <kwon37xi@gmail.com>"
 case "${CARCH}" in
   amd64)
     hash="488b098e9cc4bb193c10d3a9abe8b06282099ee73a3e9f7f1febd19a9d9b89f0"
