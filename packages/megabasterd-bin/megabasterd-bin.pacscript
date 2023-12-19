@@ -4,12 +4,11 @@ _name="MegaBasterd"
 pkgver="8.21"
 pkgdesc="Yet another unofficial (and ugly) cross-platform MEGA downloader/uploader/streaming suite"
 homepage="https://github.com/tonikelope/${gives}"
-depends=("java-runtime")
+depends=("java11-runtime")
 url="${homepage}/releases/download/v${pkgver}/${_name}_${pkgver}.jar"
 hash="3f7460b5ba20cf84ea034e9f2c49def9b07cf59680a3b36492875d851f9e0241"
 maintainer="vigress8 <vig@disroot.org>"
 repology=("project: ${gives}")
-incompatible=("debian:buster" "debian:bullseye" "debian:bookworm" "debian:trixie")
 
 package() {
   sudo install -Dm644 "${_name}_${pkgver}.jar" "${pkgdir}/usr/share/java/${gives}/${gives}.jar"
