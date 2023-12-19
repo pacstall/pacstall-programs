@@ -35,8 +35,11 @@ package() {
 
 post_remove() {
   # Delete .librewolf
-  if ask "Do you want to delete ~/.librewolf/ files?" Y; then
-    rm -rf ~/.librewolf/
-  fi
+  read -rn1 -p "Do you want to delete ~/.librewolf/ files? (y/N) " reply
+  case "${reply}" in
+    Y | y)
+      rm -rf ~/.librewolf/ ;;
+    *) ;;
+  esac
 }
 # vim:set ft=sh ts=2 sw=2 et:
