@@ -1,5 +1,6 @@
 name="lsd-deb"
 gives="lsd"
+repology=("project: ${gives}")
 pkgver="1.0.0"
 pkgdesc="The next gen ls command"
 arch=("amd64" "arm64" "i386")
@@ -17,5 +18,3 @@ case "${CARCH}" in
     ;;
   *) return 1 ;;
 esac
-
-maintainer="KwonNam Son <kwon37xi@gmail.com>"
