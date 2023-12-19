@@ -2,6 +2,7 @@ name="quintom-cursor-theme-git"
 gives="quintom-cursor-theme"
 url="https://gitlab.com/Burning_Cube/quintom-cursor-theme.git"
 pkgver="0.0.1"
+pkgrel="2"
 pkgdesc="A cursor theme designed to look decent"
 maintainer="Elsie19 <elsie19@pm.me>"
 pkgver() {
