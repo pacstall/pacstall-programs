@@ -13,7 +13,7 @@ case "${CARCH}" in
     hash="4a0e6931823869b401a7ef3dae26e3c027aaee3c42bd62129ee2c6a93489412d"
     ;;
   i386)
-    url=$(sed -r 's|i386|i686|g' <<< "${url}")
+    url="${url/i386/i686}"
     hash="3a9d7193f90cce0884edb6f1c2230ec5cf942fd122e75691fc32cf3e8f728dcb"
     ;;
   *) return 1 ;;
