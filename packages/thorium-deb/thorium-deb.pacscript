@@ -3,7 +3,7 @@ gives="thorium-browser"
 pkgver="117.0.5938.157"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  url="https://github.com/Alex313031/Thorium-Raspi/releases/download/${pkgver}/${gives}_${pkgver}_${CARCH}.deb"
+  url="https://github.com/Alex313031/Thorium-Raspi/releases/download/M${pkgver}/${gives}_${pkgver}_${CARCH}.deb"
   hash="526c851d042702e5648ae959d60f7956c68473481bc5e507cdb1db7f0e9dac14"
 else
   url="https://github.com/Alex313031/thorium/releases/download/M${pkgver}/${gives}_${pkgver}_${CARCH}.deb"

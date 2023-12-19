@@ -12,7 +12,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DENABLE_SYSTEMD=ON \
-    -DVERSION=${pkgver}
+    -DVERSION="${pkgver}"
   cmake --build build --target ananicy-cpp --parallel "${NCPU}"
 }
 

@@ -5,6 +5,7 @@ pkgdesc="Rhino Linux Setup Prompt"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 incompatible=("debian:*")
 pkgver="2023.3"
+pkgrel="2"
 replace=("${gives}" "${gives}-git")
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == arm64 ]]; then
@@ -24,16 +25,20 @@ package() {
 }
 
 post_install() {
-  if ! [[ -d "${homedir}/.config/autostart" ]]; then
-    mkdir -p "${homedir}/.config/autostart"
-  fi
-  if ! [[ -f "${homedir}/.config/autostart/rhino-setup.desktop" ]]; then
-    sudo ln -sf "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${homedir}/.config/autostart/rhino-setup.desktop"
-  fi
+  for i in "${homedir}" "/etc/skel"; do
+    if ! [[ -d "${i}/.config/autostart" ]]; then
+      mkdir -p "${i}/.config/autostart"
+    fi
+    if ! [[ -f "${i}/.config/autostart/rhino-setup.desktop" ]]; then
+      sudo ln -sf "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${i}/.config/autostart/rhino-setup.desktop"
+    fi
+  done
 }
 
 post_remove() {
-  if [[ -f "${homedir}/.config/autostart/rhino-setup.desktop" ]]; then
-    sudo rm -f "${homedir}/.config/autostart/rhino-setup.desktop"
-  fi
+  for i in "${homedir}" "/etc/skel"; do
+    if [[ -L "${i}/.config/autostart/rhino-setup.desktop" ]]; then
+      sudo rm -f "${i}/.config/autostart/rhino-setup.desktop"
+    fi
+  done
 }

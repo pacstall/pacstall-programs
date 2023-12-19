@@ -14,6 +14,9 @@ case "${codename}" in
   lunar)
     depends+=("libavcodec59" "libavformat59" "libavutil57" "libflac++10" "libflac8" "libportsmf0v5" "libwxbase3.2-0" "libwxgtk3.2-0")
     ;;
+  *)
+    depends+=("libavcodec60" "libavformat60" "libavutil58" "libflac++10" "libflac12" "libportsmf0v5" "libwxbase3.2-1" "libwxgtk3.2-1")
+    ;;
 esac
 replace=("audacity")
 pkgdesc="FLOSS Audacity Fork. No telemetry, crash reports and other shenanigans like that!"

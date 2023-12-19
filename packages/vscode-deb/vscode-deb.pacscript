@@ -1,7 +1,7 @@
 name="vscode-deb"
 arch=("amd64" "arm64" "armhf")
 gives="code"
-pkgver="1.80.1"
+pkgver="1.85.0"
 homepage="https://code.visualstudio.com/"
 pkgdesc="lightweight but powerful source code editor"
 project=("project: vscode")
@@ -9,16 +9,16 @@ maintainer="Diegiwg <diegiwg@gmail.com>"
 
 case "${CARCH}" in
   amd64)
-    url="https://packages.microsoft.com/repos/code/pool/main/c/code/code_${pkgver}-1689183569_amd64.deb"
-    hash="fb1e8368f82a342c2c64806ef94eab380c2ee0ddfc6d27f37f56eb828f92dde5"
+    url="https://packages.microsoft.com/repos/code/pool/main/c/code/code_${pkgver}-1701902998_amd64.deb"
+    hash="915b82483992df127d3c03835cbec37cc88724508d2e2a1fd93ec034e77ec26e"
     ;;
   arm64)
-    url="https://packages.microsoft.com/repos/code/pool/main/c/code/code_${pkgver}-1689182504_arm64.deb"
-    hash="47b931d79a77584ba2530e6998f888f3f6c26802f35acf9c351064250167033d"
+    url="https://packages.microsoft.com/repos/code/pool/main/c/code/code_${pkgver}-1701895805_arm64.deb"
+    hash="a052f4febb6067a477977c9702a230fe21e6db62f670be3440312840c3a7a40e"
     ;;
   armhf)
-    url="https://packages.microsoft.com/repos/code/pool/main/c/code/code_${pkgver}-1689182523_armhf.deb"
-    hash="422503f3756ec4c713496b6e62a1fe9ec20909990719768b5e7d9046a50c04ad"
+    url="https://packages.microsoft.com/repos/code/pool/main/c/code/code_${pkgver}-1701886704_armhf.deb"
+    hash="4e87b5d3ab155fdb1826f21a058c2a5f20b392f6d0c90a8576dc92a3fdabea1b"
     ;;
   *) return 1 ;;
 esac

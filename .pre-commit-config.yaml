@@ -1,5 +1,5 @@
 ci:
-  skip: [shellcheck, shfmt]
+  skip: []
 
 exclude: '^.*\.(patch)$'
 
@@ -15,13 +15,16 @@ repos:
         files: packagelist
       - id: mixed-line-ending
         args: ["--fix=lf"]
-  - repo: https://github.com/jumanjihouse/pre-commit-hooks
-    rev: 3.0.0
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.9.0.6
     hooks:
       - id: shellcheck
         types: []
-        args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034", "-e", "SC2154", "-e", "SC2312", "-e", "SC2164"]
+        args: ["-o", "all", "-e", "2148", "-e", "SC2033", "-e", "SC2032", "-e", "SC2034", "-e", "SC2154", "-e", "SC2312", "-e", "SC2164", "-e", "SC2143", "-e", "SC2103"]
         files: '^.*\.(pacscript|sh)$'
+  - repo: https://github.com/maxwinterstein/shfmt-py
+    rev: v3.7.0.1
+    hooks:
       - id: shfmt
         args: ["-i", "2", "-bn", "-ci", "-sr", "-s"]
         types: []
