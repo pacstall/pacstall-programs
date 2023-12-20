@@ -34,7 +34,7 @@ post_remove() {
   read -rn1 -p "Do you want to delete ~/.librewolf/ files? (y/N) " reply
   case "${reply}" in
     Y | y)
-      rm -rf ~/.librewolf/ ;;
+      rm -rf "${homedir}/.librewolf" ;;
     *) ;;
   esac
 }
