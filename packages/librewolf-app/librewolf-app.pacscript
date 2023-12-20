@@ -21,21 +21,23 @@ package() {
   sudo install -Dm755 "LibreWolf.${gnuarch}.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 
   # Download icon
-  wget -q https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
+  wget -q "https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png"
   sudo install -Dm644 "icon.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
 
   # Install .desktop file
   wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
-  sudo install -Dm644 "${pkgname}.desktop" -t "${pkgdir}/usr/share/applications/"
+  sudo install -Dm644 "${pkgname}.desktop" -t "${pkgdir}/usr/share/applications"
 }
 
-post_remove() {
-  # Delete .librewolf
-  read -rn1 -p "Do you want to delete ~/.librewolf/ files? (y/N) " reply
-  case "${reply}" in
-    Y | y)
-      rm -rf "${homedir}/.librewolf" ;;
-    *) ;;
-  esac
-}
+## FIXME this is currently broken:
+## https://github.com/pacstall/pacstall-programs/pull/5058#issuecomment-1862879983
+# post_remove() {
+#   Delete .librewolf
+#  read -rn1 -p "Do you want to delete ~/.librewolf/ files? (y/N) " reply
+#  case "${reply}" in
+#    Y | y)
+#      rm -rf "${homedir}/.librewolf" ;;
+#    *) ;;
+#  esac
+# }
 # vim:set ft=sh ts=2 sw=2 et:
