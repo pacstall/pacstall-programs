@@ -17,7 +17,7 @@ repology=("project: librewolf")
 
 package() {
   # Install appimage
-  sudo install -Dm755 "LibreWolf.x86_64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "LibreWolf.${gnuarch}.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 
   # Download icon
   wget -q https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
