@@ -4,17 +4,13 @@ pkgname="librewolf"
 pkgver="120.0.1-1"
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom."
 arch=("amd64" "arm64")
-case "${CARCH}" in
-  amd64)
+if [[ ${CARCH} == "amd64" ]]; then
     gnuarch="x86_64"
     hash="21e73e405835bd6cfdaecc9930423f68e544eccb52deb7c992e90f5085ca487e"
-    ;;
-  arm64)
+else
     gnuarch="aarch64"
     hash="af10277447c2c469d3b6c6a4ea99460de90346edfd8515066a317a954659e0f4"
-    ;;
-  *) return 1 ;;
-esac
+fi
 
 url="https://gitlab.com/api/v4/projects/24386000/packages/generic/${pkgname}/${pkgver}/LibreWolf.${gnuarch}.AppImage"
 breaks=("${pkgname}-deb" "${pkgname}-bin" "${pkgname}-git")
