@@ -18,12 +18,13 @@ if [[ ${CARCH} == "arm64" && ! -f "${METADIR}/${name}-override" ]]; then
   fancy_message warn "Floorp is not running properly on ${BBlue}arm64${NC}. It should only be installed for development."
   if ask "[${BYellow}*${NC}] ${BOLD}WARNING${NC}: Cancel installation?" Y; then
     exit
-  else
-    sudo touch "${METADIR}/${name}-override"
   fi
 fi
 
 package() {
+  if [[ ${CARCH} == "arm64" ]]; then
+    sudo touch "${pkgdir}/${METADIR}/${name}-override"
+  fi
   cd ..
   sudo mkdir -p "${pkgdir}/usr/lib/floorp"
   sudo cp -r floorp/* "${pkgdir}/usr/lib/floorp"
@@ -63,7 +64,4 @@ post_install() {
 
 post_remove() {
   sudo rm -f "/usr/bin/floorp" "/usr/bin/floorp-bin"
-  if [[ -f "${METADIR}/${name}-override" ]]; then
-    sudo rm -f "${METADIR}/${name}-override"
-  fi
 }
