@@ -14,7 +14,6 @@ homepage='https://floorp.app/'
 pkgdesc="Firefox-based Browser build for keeping the Open, Private and Sustainable Web alive"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 arch=('amd64' 'arm64')
-
 if [[ ${CARCH} == "arm64" ]]; then
   fancy_message warn "Floorp is not running properly on ${BBlue}arm64${NC}. It should only be installed for development."
   if ask "[${BYellow}*${NC}] ${BOLD}WARNING${NC}: Cancel installation?" Y; then
