@@ -14,8 +14,10 @@ homepage='https://floorp.app/'
 pkgdesc="Firefox-based Browser build for keeping the Open, Private and Sustainable Web alive"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 arch=('amd64' 'arm64')
-if [[ ${CARCH} == "arm64" && ! -f "${METADIR}/${name}-override" ]]; then
+if [[ ${CARCH} == "arm64" ]]; then
   fancy_message warn "Floorp is not running properly on ${BBlue}arm64${NC}. It should only be installed for development."
+fi
+if [[ ! -f "${METADIR}/${name}-override" ]]; then
   if ask "[${BYellow}*${NC}] ${BOLD}WARNING${NC}: Cancel installation?" Y; then
     exit
   fi
@@ -23,6 +25,7 @@ fi
 
 package() {
   if [[ ${CARCH} == "arm64" ]]; then
+    sudo mkdir -p "${pkgdir}/${METADIR}"
     sudo touch "${pkgdir}/${METADIR}/${name}-override"
   fi
   cd ..
