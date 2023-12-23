@@ -11,7 +11,7 @@ pkgdesc="OBS plugin to replace the background in portrait images and video"
 hash="c84a6f2cb40fe2df0e8f7745ad41b1dbbf21aea3a3b61de20e2d79b9fc412421"
 maintainer="Zahrun <Zahrun@github.com>"
 
-incompatible=('*:focal' '*:bionic' '*:buster' '*:bullseye')
+incompatible=('*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
 
 build() {
   cmake --preset linux-x86_64 -DCMAKE_INSTALL_PREFIX=/usr
