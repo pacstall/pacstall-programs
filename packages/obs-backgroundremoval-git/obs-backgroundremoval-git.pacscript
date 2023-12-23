@@ -1,7 +1,7 @@
 name="obs-backgroundremoval-git"
 pkgname="obs-backgroundremoval"
 url="https://github.com/royshil/obs-backgroundremoval.git"
-pkgver="1.1.3"
+pkgver="1.1.8"
 makedepends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libgl1-mesa-dev" "ninja-build")
 pacdeps=("cmake-deb")
 breaks=("${pkgname}")
@@ -13,7 +13,7 @@ maintainer="Zahrun <Zahrun@github.com>"
 pkgver() {
   git ls-remote "${url}" refs/heads/main | cut -f1 | cut -c1-8
 }
-incompatible=('ubuntu:focal' 'ubuntu:bionic' 'debian:buster' 'debian:bullseye')
+incompatible=('*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
 
 build() {
   cmake --preset linux-x86_64 -DCMAKE_INSTALL_PREFIX=/usr
