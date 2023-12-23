@@ -1,0 +1,10 @@
+name="raspi-config-deb"
+gives="raspi-config"
+replace=("${gives}")
+pkgver="20231216"
+url="https://archive.raspberrypi.org/debian/pool/main/r/${gives}/${gives}_${pkgver}_all.deb"
+pkgdesc="Various graphics-related config services for Raspberry Pi"
+hash="8e328e0886b58023b03b8cf799a77180650c318df075605684103735c90a747f"
+maintainer="Oren Klopfer <oren@taumoda.com>"
+arch=("any")
+repology=("project: ${gives}")
