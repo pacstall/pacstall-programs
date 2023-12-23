@@ -1,6 +1,6 @@
 name="gldriver-test-deb"
 gives="gldriver-test"
-replace=("${gives}")
+pacdeps=("raspi-config-deb")
 pkgver="0.15"
 url="https://archive.raspberrypi.org/debian/pool/main/g/${gives}/${gives}_${pkgver}_all.deb"
 pkgdesc="Various graphics-related config services for Raspberry Pi"
