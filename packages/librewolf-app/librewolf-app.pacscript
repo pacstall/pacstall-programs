@@ -20,7 +20,7 @@ package() {
   sudo install -Dm755 "LibreWolf.${gnuarch}.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 
   # Download icon
-  wget -q https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
+  wget -q "https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png"
   sudo install -Dm644 "icon.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
 
   # Install .desktop file
