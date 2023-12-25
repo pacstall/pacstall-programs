@@ -1,7 +1,7 @@
 name="cachyos-ananicy-rules-git"
 pkgver="20231011"
 pkgdesc="ananicy-cpp rules for CachyOS"
-depends=('ananicy-cpp')
+pacdeps=('ananicy-cpp')
 homepage="https://github.com/CachyOS/ananicy-rules"
 url="${homepage}.git"
 maintainer="vigress8 <vig@disroot.org>"
