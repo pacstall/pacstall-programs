@@ -32,5 +32,5 @@ url="https://mirror.cachyos.org/repo/${gnuarch}${microarch}/cachyos${microarch/#
 
 package() {
   rm ./.*
-  sudo cp -r --preserve=mode,links * "${pkgdir}"
+  sudo cp -r --preserve=mode,links ./* "${pkgdir}"
 }
