@@ -12,5 +12,6 @@ pkgver() {
 
 package() {
   rm README.md LICENSE
+  sudo mkdir -p "${pkgdir}/etc/ananicy.d"
   sudo cp -r --preserve=mode ./* "${pkgdir}/etc/ananicy.d"
 }
