@@ -1,5 +1,6 @@
 name="github-desktop-deb"
 pkgname="github-desktop"
+gives="github-desktop"
 pkgver="3.3.6"
 arch=("amd64" "arm64" "armhf")
 url="https://github.com/shiftkey/desktop/releases/download/release-${pkgver}-linux3/GitHubDesktop-linux-${CARCH}-${pkgver}-linux3.deb"
