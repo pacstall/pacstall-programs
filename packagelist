@@ -41,6 +41,7 @@ brave-browser-nightly-deb
 brave-keyring-deb
 btop-bin
 btrfs-du-bin
+cachyos-ananicy-rules-git
 cantata
 caprine-deb
 celeste-bin
@@ -354,6 +355,7 @@ qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-extras-git
 qtile-git
+qtscrcpy-bin
 quarto-deb
 quintom-cursor-theme-git
 raspi-config-deb
