@@ -34,7 +34,6 @@ post_remove() {
     if ask "Do you want to delete ~/.librewolf/ files?" Y; then
       rm -rf "${homedir}/.librewolf"
     fi
-  else :
   fi
 }
 # vim:set ft=sh ts=2 sw=2 et:
