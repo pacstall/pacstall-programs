@@ -1,4 +1,5 @@
 name="cachyos-ananicy-rules-git"
+gives="cachyos-ananicy-rules"
 pkgver="20231011"
 pkgdesc="ananicy-cpp rules for CachyOS"
 pacdeps=('ananicy-cpp')
