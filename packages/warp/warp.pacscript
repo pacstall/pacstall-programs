@@ -1,12 +1,12 @@
 name="warp"
 gives="warp"
-pkgver="0.6.1"
+pkgver="0.6.2"
 pkgdesc="Fast and secure file transfer"
 repology=("project: warp-share-files")
 makedepends=("meson" "ninja-build" "libgtk-4-dev" "libadwaita-1-dev" "libappstream-glib-dev" "gir1.2-appstreamglib-1.0" "libappstream-glib8" "libadwaita-1-0" "gettext" "desktop-file-utils" "rustc" "cargo" "itstool" "cmake")
 depends=("libgtk-4-dev" "gir1.2-appstreamglib-1.0" "libappstream-glib8" "libadwaita-1-0" "gettext" "desktop-file-utils" "rustc" "cargo")
 url="https://gitlab.gnome.org/World/${name}/-/archive/v${pkgver}/${name}-v${pkgver}.tar.gz"
-hash="94fc9bb37d7ac034633ec83039a48b29b50df310c4711b6dba95d51a07b3d5c8"
+hash="b3df2017e19c7bf1477b5bd07d857d0d8fe5375ab293d932a8a4e30aba91496a"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 incompatible=("ubuntu:20.04" "ubuntu:20.10" "ubuntu:21.04" "ubuntu:21.10" "ubuntu:22.04" "debian:*")
 
