@@ -5,7 +5,7 @@ gives="${pkgname}"
 pkgver="31"
 breaks=("${pkgname}-git")
 replace=("${pkgname}")
-pkgdesc="A terminal file manager inspred by ranger written in Go"
+pkgdesc="Terminal file manager written in Go"
 arch=('amd64' 'i386' 'arm64' 'armhf' 'mips' 'mips64el' 'ppc64' 'ppc64el' 's390x')
 maintainer="Romario <romariorobby@yahoo.com>"
 
