@@ -27,8 +27,7 @@ case "${CARCH}" in
     ;;
 esac
 
-declare -A hashlist
-hashlist+=(
+declare -A hashlist=(
   [amd64]="db529fbc0c9ba66d426d7acde95a3520ff67c02162b115415ec2c288b2867f02"
   [386]="9561652ace9d9a493ff53e1ec94339a3e1eb15bc7fb386dfd9ce33735ce638b8"
   [arm64]="d2108d911031764e8eda2174d4ac79d7d50423ed2cab866c2743a15e4e9a4109"
