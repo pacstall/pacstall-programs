@@ -12,5 +12,5 @@ pkgver() {
 
 package() {
   rm README.md LICENSE
-  sudo install -Dm644 ./* -t "${pkgdir}/etc/ananicy.d"
+  sudo cp -r --preserve=mode ./* "${pkgdir}/etc/ananicy.d"
 }
