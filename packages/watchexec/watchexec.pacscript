@@ -1,6 +1,5 @@
 name="watchexec"
-pkgdesc="Executes commands in response to file modifications"
-maintainer="Andrew Barchuk <andrew@raindev.io>"
+repology=("project: watchexec")
 pkgver="1.24.2"
 arch=('amd64' 'arm64')
 if [[ ${CARCH} == amd64 ]]; then
@@ -11,6 +10,9 @@ else
     arch_prefix="aarch64"
 fi
 url="https://github.com/watchexec/watchexec/releases/download/v${pkgver}/watchexec-${pkgver}-${arch_prefix}-unknown-linux-gnu.tar.xz"
+pkgdesc="Executes commands in response to file modifications"
+homepage="https://watchexec.github.io/"
+maintainer="Andrew Barchuk <andrew@raindev.io>"
 
 package() {
   sudo install -Dm755 "./watchexec" -t "${pkgdir}/usr/bin"
