@@ -1,4 +1,4 @@
-name="exercism-cli"
+name="exercism-cli-bin"
 repology=("project: exercism-cli")
 pkgver="3.2.0"
 arch=('amd64' 'arm64')
@@ -10,7 +10,7 @@ else
     arch_suffix="arm64"
 fi
 url="https://github.com/exercism/cli/releases/download/v${pkgver}/exercism-${pkgver}-linux-${arch_suffix}.tar.gz"
-pkgdesc=" A Go based command line tool for exercism.org"
+pkgdesc="Go based command line tool for exercism.org"
 homepage='https://exercism.org'
 maintainer="Andrew Barchuk <andrew@raindev.io>"
 
