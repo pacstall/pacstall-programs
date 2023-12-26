@@ -16,7 +16,7 @@ case "${CARCH}" in
     url="${url/sdk/sdkarm}"
     hash="0fb97dda8ab02ec655f8d98b4006ba8b784c6ff7cf16374788b90d9be4c65040"
     ;;
-  *) return 1 ;;
+  *) ;;
 esac
 
 declare -A \
@@ -42,8 +42,9 @@ package() {
   rm ./*.zip
   sudo install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${gives}"
   rm LICENSE.txt
-  sudo mkdir -p "${pkgdir}/usr/share/doc" "${pkgdir}/opt/${gives}"
+  sudo mkdir -p "${pkgdir}/usr/share/doc/${gives}" "${pkgdir}/opt/${gives}"
   sudo mv doc/* "${pkgdir}/usr/share/doc/${gives}"
+  rmdir doc
   sudo cp -r --preserve=mode ./* "${pkgdir}/opt/${gives}"
   sudo install -Dm644 launcher/game/images/logo.png "${pkgdir}/usr/share/pixmaps/${gives}.png"
   sudo install -Dm644 launcher/game/images/logo32.png "${pkgdir}/usr/share/icons/hicolor/32x32/apps/${gives}.png"
