@@ -20,12 +20,12 @@ case "${CARCH}" in
 esac
 
 declare -A \
-sums=(
-  ["${gives}-${pkgver}-rapt.zip"]="de1580e6fa78e2c1ed9646346eb3b10db5519735025915366bfa5cb57ecca0e1"
-  ["${gives}-${pkgver}-renios.zip"]="27988dc672b2753683f64211dfe39cf87f90aed64948cd9ce2d9be7756fe01cc"
-  ["${gives}-${pkgver}-steam.zip"]="d7470f561fcdc277087a0d86b01d6f73caced8a8d302e66dc494060f536d145c"
-  ["${gives}-${pkgver}-web.zip"]="351e7a9680f3b972f6bff67bd5952558091d80ffd05fbca295ff90aa25a4f144"
-)
+  sums=(
+    ["${gives}-${pkgver}-rapt.zip"]="de1580e6fa78e2c1ed9646346eb3b10db5519735025915366bfa5cb57ecca0e1"
+    ["${gives}-${pkgver}-renios.zip"]="27988dc672b2753683f64211dfe39cf87f90aed64948cd9ce2d9be7756fe01cc"
+    ["${gives}-${pkgver}-steam.zip"]="d7470f561fcdc277087a0d86b01d6f73caced8a8d302e66dc494060f536d145c"
+    ["${gives}-${pkgver}-web.zip"]="351e7a9680f3b972f6bff67bd5952558091d80ffd05fbca295ff90aa25a4f144"
+  )
 
 prepare() {
   for filename in "${!sums[@]}"; do
@@ -34,21 +34,20 @@ prepare() {
       fancy_message error "Integrity check for ${filename} failed"
       return 1
     }
-    unzip -qq "${filename}"
   done
 }
 
 package() {
+  unzip -qq ./*.zip
   rm ./*.zip
-  sudo install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${gives}"
-  rm LICENSE.txt
-  sudo mkdir -p "${pkgdir}/usr/share/doc/${gives}" "${pkgdir}/opt/${gives}"
-  sudo mv doc/* "${pkgdir}/usr/share/doc/${gives}"
-  rmdir doc
-  sudo cp -r --preserve=mode ./* "${pkgdir}/opt/${gives}"
-  sudo install -Dm644 launcher/game/images/logo.png "${pkgdir}/usr/share/pixmaps/${gives}.png"
-  sudo install -Dm644 launcher/game/images/logo32.png "${pkgdir}/usr/share/icons/hicolor/32x32/apps/${gives}.png"
-  cat <<- END > "${gives}.desktop"
+  sudo install -Dm644 "LICENSE.txt" -t "${pkgdir}/usr/share/licenses/${gives}"
+  rm -rf "LICENSE.txt" "renpy.app" "lib/"{py3-{mac-universal,windows-x86_64},python3.9}
+  sudo install -Dm644 "launcher/game/images/logo.png" "${pkgdir}/usr/share/pixmaps/${gives}.png"
+  sudo install -Dm644 "launcher/game/images/logo32.png" "${pkgdir}/usr/share/icons/hicolor/32x32/apps/${gives}.png"
+  sudo mkdir -p "${pkgdir}/opt/${gives}"
+  sudo mv ./* "${pkgdir}/opt/${gives}"
+
+  sudo install -Dm644 /dev/stdin -t "${pkgdir}/opt/applications/${gives}.desktop" <<- END
   [Desktop Entry]
   Type=Application
   Name=Ren'Py
@@ -59,13 +58,17 @@ package() {
   Terminal=false
   Categories=Development;Game;
 END
-  sudo install -Dm644 "${gives}.desktop" -t "${pkgdir}/usr/share/applications"
+
+  sudo chgrp -R games "${pkgdir}/opt/${gives}/"{the_question,tutorial}
+  sudo chmod g+w "${pkgdir}/opt/${gives}/"{the_question,tutorial}
 }
 
 post_install() {
+  sudo ln -sf "/opt/${gives}/doc" "/usr/share/doc/${gives}"
   sudo ln -sf "/opt/${gives}/${gives}.sh" "/usr/bin/${gives}"
 }
 
 post_remove() {
+  sudo rm -f "/usr/share/doc/${gives}"
   sudo rm -f "/usr/bin/${gives}"
 }
