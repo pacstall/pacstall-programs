@@ -30,7 +30,7 @@ sums=(
 prepare() {
   for filename in "${!sums[@]}"; do
     curl -sO "${homepage}/dl/${pkgver}/${filename}"
-    sha256sum -c <<< "${sums[${filename}]} ${filename}" || {
+    sha256sum -c <<< "${sums[${filename}]} ${filename}" > /dev/null || {
       fancy_message error "Integrity check for ${filename} failed"
       return 1
     }
@@ -42,7 +42,7 @@ package() {
   rm ./*.zip
   sudo install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${gives}"
   rm LICENSE.txt
-  mkdir -p "${pkgdir}/usr/share/doc" "${pkgdir}/opt/${gives}"
+  sudo mkdir -p "${pkgdir}/usr/share/doc" "${pkgdir}/opt/${gives}"
   sudo mv doc/* "${pkgdir}/usr/share/doc/${gives}"
   sudo cp -r --preserve=mode ./* "${pkgdir}/opt/${gives}"
   sudo install -Dm644 launcher/game/images/logo.png "${pkgdir}/usr/share/pixmaps/${gives}.png"
