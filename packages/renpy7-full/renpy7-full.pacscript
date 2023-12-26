@@ -1,3 +1,5 @@
+maintainer="vigress8 <vig@disroot.org>"
+
 name="renpy7-full"
 gives="renpy"
 replace="${gives}"
@@ -47,7 +49,7 @@ package() {
   sudo mkdir -p "${pkgdir}/opt/${gives}"
   sudo mv ./* "${pkgdir}/opt/${gives}"
 
-  sudo install -Dm644 /dev/stdin -t "${pkgdir}/opt/applications/${gives}.desktop" <<- END
+  sudo install -Dm644 /dev/stdin "${pkgdir}/opt/applications/${gives}.desktop" <<- END
   [Desktop Entry]
   Type=Application
   Name=Ren'Py
