@@ -41,7 +41,7 @@ prepare() {
 
 package() {
   unzip -qq ./"*.zip"
-  rm ./"*.zip"
+  rm ./*.zip
   sudo install -Dm644 "LICENSE.txt" -t "${pkgdir}/usr/share/licenses/${gives}"
   rm -rf "LICENSE.txt" "renpy.app" "lib/"{py3-{mac-universal,windows-x86_64},python3.9}
   sudo install -Dm644 "launcher/game/images/logo.png" "${pkgdir}/usr/share/pixmaps/${gives}.png"
