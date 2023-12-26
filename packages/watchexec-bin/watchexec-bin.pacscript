@@ -1,4 +1,4 @@
-name="watchexec"
+name="watchexec-bin"
 repology=("project: watchexec")
 pkgver="1.24.2"
 arch=('amd64' 'arm64')
@@ -17,7 +17,7 @@ maintainer="Andrew Barchuk <andrew@raindev.io>"
 package() {
   sudo install -Dm755 "./watchexec" -t "${pkgdir}/usr/bin"
   sudo install -Dm644 "./watchexec.1" -t "${pkgdir}/usr/share/man/man1"
-  sudo install -Dm644 "./completions/bash" "${pkgdir}/usr/share/bash-completion/completions/${name}"
+  sudo install -Dm644 "./completions/bash" "${pkgdir}/usr/share/bash-completion/completions/watchexec"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
