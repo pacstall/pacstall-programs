@@ -30,7 +30,7 @@ sums=(
 prepare() {
   for filename in "${!sums[@]}"; do
     curl -sO "${homepage}/dl/${pkgver}/${filename}"
-    sha256sum -c "${sums[${filename}]}" || {
+    sha256sum -c <<< "${sums[${filename}]}" || {
       fancy_message error "Integrity check for ${filename} failed"
       return 1
     }
