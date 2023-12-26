@@ -63,7 +63,7 @@ END
 }
 
 post_install() {
-  sudo ln -sf "/usr/bin/${gives}" "/opt/${gives}/${gives}.sh"
+  sudo ln -sf "/opt/${gives}/${gives}.sh" "/usr/bin/${gives}"
 }
 
 post_remove() {
