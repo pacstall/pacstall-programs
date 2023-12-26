@@ -18,7 +18,7 @@ case "${CARCH}" in
     url="${url/sdk/sdkarm}"
     hash="6a01c152786723f9788eaed9caeb20181ef7ae2ea77b9f3c6ad98a3508410d12"
     ;;
-  *) return 1 ;;
+  *) ;;
 esac
 
 declare -A \
