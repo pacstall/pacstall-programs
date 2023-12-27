@@ -8,11 +8,11 @@ maintainer="vigress8 <vig@disroot.org>"
 arch=("amd64")
 gnuarch="x86_64"
 case $(
-  /lib64/ld-linux-x86-64.so.2 --help |
-  grep 'x86-64.*supported' |
-  head -1 |
-  awk '{print $1}'
-  ) in
+  /lib64/ld-linux-x86-64.so.2 --help \
+    | grep 'x86-64.*supported' \
+    | head -1 \
+    | awk '{print $1}'
+) in
   "x86-64_v4")
     microarch="v4"
     hash="681e45f95d7539d5d174763fed98fd00a00d0f3639cb2e6a2eb543cc41108019"
