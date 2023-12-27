@@ -5,7 +5,7 @@ url="https://github.com/alacritty/alacritty/archive/refs/tags/v${pkgver}.tar.gz"
 makedepends=("cargo" "cmake" "pkg-config" "libfreetype6-dev" "libfontconfig1-dev" "libxcb-xfixes0-dev" "python3" "gzip" "scdoc")
 pkgdesc="A fast, cross-platform, OpenGL terminal emulator"
 maintainer="Warofzen <warofzen1@protonmail.com>"
-incompatible=('debian:bullseye')
+incompatible=('debian:bullseye' 'debian:bookworm')
 hash="1c1cebf20e10bb26dc8bc735bb2d02eb88df89180d6c59f5d946a0a1d3d585b2"
 
 build() {
