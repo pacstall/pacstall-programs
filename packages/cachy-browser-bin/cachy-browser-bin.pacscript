@@ -7,7 +7,6 @@ pkgdesc="Community-maintained fork of Firefox, focused on privacy, security and 
 maintainer="vigress8 <vig@disroot.org>"
 arch=("amd64")
 gnuarch="x86_64"
-
 case $(
   /lib64/ld-linux-x86-64.so.2 --help |
   grep 'x86-64.*supported' |
