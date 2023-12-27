@@ -1,5 +1,3 @@
-maintainer="vigress8 <vig@disroot.org>"
-
 name="renpy7-full"
 gives="renpy"
 replace="${gives}"
@@ -9,6 +7,7 @@ pkgdesc="A visual novel engine (version 7)"
 pkgver="7.6.3"
 arch=("amd64" "arm64")
 homepage="https://www.renpy.org"
+maintainer="vigress8 <vig@disroot.org>"
 url="${homepage}/dl/${pkgver}/${gives}-${pkgver}-sdk.tar.bz2"
 case "${CARCH}" in
   amd64)
