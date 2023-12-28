@@ -1,3 +1,4 @@
+PACSTALL_DOWNLOADER=curl
 _pkgname=lunarclient
 name="${_pkgname}-app"
 repology=("project: lunar-client")
@@ -23,14 +24,17 @@ _desktophash='74c099d70a70ae356547d75c49de409b2dbb8da221cfc9b9da4e4d86ca1f7870'
 prepare() {
   # Be extra careful!
   wget -O "${_pkgname}.png" -q "${_iconurl}"
-  wget -O "${_pkgname}.desktop" -q "${_desktop}"
+  wget -O "${_pkgname}.desktop" -q "${_desktopurl}"
 
-  if [[ "$(sha256sum "${_pkgname}.png" | grep -o "[a-z0-9]*" | head -n1)" != "${_iconhash}" ]]; then
+  _downloaded_icon_hash="$(sha256sum "${_pkgname}.png" | cut -d " " -f 1)"
+  _downloaded_desktop_hash="$(sha256sum "${_pkgname}.desktop" | cut -d " " -f 1)"
+
+  if [[ "${_downloaded_icon_hash}" != "${_iconhash}" ]]; then
     fancy_message error "Hashes do not match for icon. Aborting..."
     return 1
   fi
 
-  if [[ "$(sha256sum "${_pkgname}.desktop" | grep -o "[a-z0-9]*" | head -n1)" != "${_desktophash}" ]]; then
+  if [[ "${_downloaded_desktop_hash}" != "${_desktophash}" ]]; then
     fancy_message error "Hashes do not match for desktop file. Aborting..."
     return 1
   fi
@@ -48,7 +52,7 @@ package() {
 
   # Desktop file
   sudo install -Dm644 \
-    "squashfs-root/launcher.desktop" \
+    "${_pkgname}.desktop" \
     "${pkgdir}/usr/share/applications/${_pkgname}.desktop"
 
   # Icon image
