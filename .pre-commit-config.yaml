@@ -34,8 +34,8 @@ repos:
         files: '^.*\.(pacscript|sh)$'
   - repo: local
     hooks:
-      - id: check-packagelist
-        name: verify packagelist file is up to date
+      - id: update-packagelist
+        name: update packagelist file
         language: script
-        entry: .check-packagelist.sh
+        entry: .update-packagelist.sh
 # vim:set ft=yaml ts=2 sw=2 et:
