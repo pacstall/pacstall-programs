@@ -4,7 +4,7 @@ pkgver="0.0.1"
 pkgdesc="ananicy-cpp rules for CachyOS"
 pacdeps=('ananicy-cpp')
 homepage="https://github.com/CachyOS/ananicy-rules"
-url="${homepage}.git"
+url="https://github.com/CachyOS/ananicy-rules.git"
 maintainer="vigress8 <vig@disroot.org>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
