@@ -8,7 +8,7 @@ pkgver="7.6.3"
 arch=("amd64" "arm64")
 homepage="https://www.renpy.org"
 maintainer="vigress8 <vig@disroot.org>"
-url="${homepage}/dl/${pkgver}/${gives}-${pkgver}-sdk.tar.bz2"
+url="https://www.renpy.org/dl/${pkgver}/${gives}-${pkgver}-sdk.tar.bz2"
 case "${CARCH}" in
   amd64)
     hash="556ea40922e304460d50bd3eb335ab9ddce988390dbbf9f7aa77dde4ae959be1"
@@ -30,7 +30,7 @@ sums=(
 
 prepare() {
   for filename in "${!sums[@]}"; do
-    curl -sO "${homepage}/dl/${pkgver}/${filename}"
+    curl -sO "https://www.renpy.org/dl/${pkgver}/${filename}"
     sha256sum -c <<< "${sums[${filename}]} ${filename}" > /dev/null || {
       fancy_message error "Integrity check for ${filename} failed"
       return 1
