@@ -29,6 +29,6 @@ case $(
 esac
 
 package() {
-  rm ./.*
+  rm .{BUILD,PKG}INFO .INSTALL .MTREE
   sudo cp -r --preserve=mode,links ./* "${pkgdir}"
 }
