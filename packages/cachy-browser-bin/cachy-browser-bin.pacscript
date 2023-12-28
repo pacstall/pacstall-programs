@@ -14,20 +14,19 @@ case $(
     | awk '{print $1}'
 ) in
   "x86-64_v4")
-    microarch="v4"
+    url="https://mirror.cachyos.org/repo/x86_64_v4/cachyos-v4/${gives}-${pkgver}-x86_64_v4.pkg.tar.zst"
     hash="681e45f95d7539d5d174763fed98fd00a00d0f3639cb2e6a2eb543cc41108019"
     ;;
   "x86-64_v3")
-    microarch="v3"
+    url="https://mirror.cachyos.org/repo/x86_64_v3/cachyos-v3/${gives}-${pkgver}-x86_64_v3.pkg.tar.zst"
     hash="c8fc910c201b7260c1bba02729cf886d005fca1b7a7ea78949d9ea4b65277ba8"
     ;;
   *)
     pkgver="120.0.1-3"
+    url="https://mirror.cachyos.org/repo/x86_64/cachyos/${gives}-${pkgver}-x86_64.pkg.tar.zst"
     hash="6cb1dcb6f7962cd302af61dcee3c52c33d81417b20d72bbe31b30b4d217d1946"
     ;;
 esac
-
-url="https://mirror.cachyos.org/repo/${gnuarch}${microarch}/cachyos${microarch/#/-}/${gives}-${pkgver}-${gnuarch}${microarch/#/_}.pkg.tar.zst"
 
 package() {
   rm ./.*
