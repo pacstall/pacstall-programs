@@ -41,6 +41,8 @@ brave-browser-nightly-deb
 brave-keyring-deb
 btop-bin
 btrfs-du-bin
+cachy-browser-bin
+cachyos-ananicy-rules-git
 cantata
 caprine-deb
 celeste-bin
@@ -90,6 +92,7 @@ dunst
 dust-bin
 easy-zsh-config-git
 eddie-ui-deb
+electerm-deb
 electronmail-deb
 electrum-git
 element-desktop-deb
@@ -361,6 +364,8 @@ quintom-cursor-theme-git
 raspi-config-deb
 realvnc-vnc-viewer-deb
 renegate
+renpy-full
+renpy7-full
 reshade-shaders-git
 rhino-core
 rhino-kvantum-theme-git
