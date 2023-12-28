@@ -1,3 +1,5 @@
+# For filenames not being screwed up, will be fixed with pacstall/#1023
+PACSTALL_DOWNLOADER=curl
 _pkgname=lunarclient
 name="${_pkgname}-app"
 repology=("project: lunar-client")
@@ -9,9 +11,6 @@ makedepends=("libfuse2")
 replace=("lunarclient" "lunar-client")
 breaks=("lunarclient-deb" "lunarclient-bin")
 maintainer="Mythbusters123 <atr10605@icloud.com>"
-#_appimage="Lunar%20Client-${pkgver}.AppImage"
-#url="https://launcherupdates.lunarclientcdn.com/${_appimage}"
-# TEMPORARY ONLY UNTIL DOWNLOADING IS FIXED
 _appimage="LunarClient-${pkgver}.AppImage"
 url="https://cdn.themyth.dev/${_appimage}"
 hash='f04f1364aa02f89c667f54e206326cc1f9bca8242ad2600a5cfbf748d91498b5'
