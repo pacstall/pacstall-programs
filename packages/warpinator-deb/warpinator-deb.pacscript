@@ -1,10 +1,10 @@
 name="warpinator-deb"
-repology=("project: warpinator" "repo: linux_mint_21_1")
 gives="warpinator"
-depends=("gir1.2-glib-2.0" "gir1.2-gtk-3.0" "gir1.2-xapp-1.0" "gir1.2-nm-1.0" "python3" "python3-gi" "python3-setproctitle" "python3-xapp" "python3-zeroconf" "python3-grpcio" "python3-cryptography" "python3-nacl")
 pkgdesc="A tool to share files across the LAN"
-maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
 pkgver="1.6.4+victoria"
-hash="80079695805ade880fc3779f1a40c3729b1642d459204993aa1c5babe246118d"
 url="http://packages.linuxmint.com/pool/backport/w/warpinator/warpinator_${pkgver}_all.deb"
+hash="80079695805ade880fc3779f1a40c3729b1642d459204993aa1c5babe246118d"
+depends=("gir1.2-glib-2.0" "gir1.2-gtk-3.0" "gir1.2-xapp-1.0" "gir1.2-nm-1.0" "python3" "python3-gi" "python3-setproctitle" "python3-xapp" "python3-zeroconf" "python3-grpcio" "python3-cryptography" "python3-nacl")
 compatible=("*:jammy")
+repology=("project: warpinator" "repo: linux_mint_21_1")
+maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
