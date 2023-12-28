@@ -36,6 +36,6 @@ repos:
     hooks:
       - id: update-packagelist
         name: update packagelist file
-        language: script
-        entry: .update-packagelist.sh
+        language: system
+        entry: bash -c 'LC_COLLATE=C ls -1 packages/ > packagelist'
 # vim:set ft=yaml ts=2 sw=2 et:
