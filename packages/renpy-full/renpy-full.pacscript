@@ -6,7 +6,7 @@ repology=("project: ${gives}")
 pkgdesc="A visual novel engine"
 pkgver="8.1.3"
 arch=("amd64" "arm64")
-homepage="https://www.renpy.org"
+homepage='https://www.renpy.org'
 maintainer="vigress8 <vig@disroot.org>"
 url="${homepage}/dl/${pkgver}/${gives}-${pkgver}-sdk.tar.bz2"
 case "${CARCH}" in
