@@ -25,12 +25,12 @@ prepare() {
   wget -O "${_pkgname}.png" -q "${_iconurl}"
   wget -O "${_pkgname}.desktop" -q "${_desktop}"
 
-  if [[ "$(sha256sum "${_pkgname}.png" | grep -o "[a-z0-9]*" | head -n1)" != "${_iconhash}" ]]; then
+  if [[ "$(sha256sum "${_pkgname}.png" | cut -d' ' -f 1)" != "${_iconhash}" ]]; then
     fancy_message error "Hashes do not match for icon. Aborting..."
     return 1
   fi
 
-  if [[ "$(sha256sum "${_pkgname}.desktop" | grep -o "[a-z0-9]*" | head -n1)" != "${_desktophash}" ]]; then
+  if [[ "$(sha256sum "${_pkgname}.desktop" | cut -d' ' -f 1)" != "${_desktophash}" ]]; then
     fancy_message error "Hashes do not match for desktop file. Aborting..."
     return 1
   fi
