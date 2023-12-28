@@ -11,8 +11,6 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
-      - id: file-contents-sorter
-        files: packagelist
       - id: mixed-line-ending
         args: ["--fix=lf"]
   - repo: https://github.com/shellcheck-py/shellcheck-py
@@ -34,4 +32,10 @@ repos:
             packages/emacs-git/emacs-git.pacscript|
           )$
         files: '^.*\.(pacscript|sh)$'
+  - repo: local
+    hooks:
+      - id: check-packagelist
+        name: verify packagelist file is up to date
+        language: script
+        entry: .check-packagelist.sh
 # vim:set ft=yaml ts=2 sw=2 et:
