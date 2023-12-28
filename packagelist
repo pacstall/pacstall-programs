@@ -42,6 +42,7 @@ brave-keyring-deb
 btop-bin
 btrfs-du-bin
 cachy-browser-bin
+cachyos-ananicy-rules-git
 cantata
 caprine-deb
 celeste-bin
@@ -361,6 +362,8 @@ quintom-cursor-theme-git
 raspi-config-deb
 realvnc-vnc-viewer-deb
 renegate
+renpy-full
+renpy7-full
 reshade-shaders-git
 rhino-core
 rhino-kvantum-theme-git
@@ -479,6 +482,7 @@ wsysmon-bin
 xapps-common-deb
 xdg-desktop-portal-hyprland
 xfce4-deb
+xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
 xmind-vana-deb
 xonotic
