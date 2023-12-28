@@ -20,8 +20,7 @@ case "${CARCH}" in
   *) ;;
 esac
 
-declare -A \
-sums=(
+declare -A sums=(
   ["${gives}-${pkgver}-rapt.zip"]="8cf4b38551a35d2a5af6ba94d021a50b15f375aab86668f9e642f21452e8381e"
   ["${gives}-${pkgver}-renios.zip"]="79d682be6db93f2a64edebbe1fb8805c7eadc5112e562e639974ce1a09a1e74a"
   ["${gives}-${pkgver}-steam.zip"]="9fe01b9c0bbf011a7261b4f212438a555e231f549ec54833dcbdc597fbf91664"
