@@ -1,10 +1,11 @@
 name="emacs"
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
-replace="${name}-nox"
-breaks=("${name}-git" "${name}-pgtk" "${name}-snapshot-deb")
 pkgver="29.1"
 url="https://mirrors.ocf.berkeley.edu/gnu/emacs/emacs-${pkgver}.tar.xz"
 hash="d2f881a5cc231e2f5a03e86f4584b0438f83edd7598a09d24a21bd8d003e2e01"
+replace="${name}-nox"
+breaks=("${name}-git" "${name}-pgtk" "${name}-snapshot-deb")
+incompatible=("*:jammy")
 maintainer="wizard-28 <wiz28@pm.me>"
 repology=("project: emacs")
 makedepends=(
