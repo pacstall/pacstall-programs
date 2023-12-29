@@ -26,7 +26,6 @@ makedepends=(
  	"libharfbuzz-dev"
   "libice-dev"
   "libjansson-dev"
- 	"libjpeg62-turbo-dev"
   "liblcms2-dev"
   "libm17n-dev"
  	"libncurses-dev"
@@ -43,8 +42,21 @@ makedepends=(
   "libxfixes-dev"
  	"libxml2-dev"
   "libxpm-dev"
+  "texinfo"
   "zlib1g-dev"
 )
+
+if apt-cache search libjpeg62 | grep -q "libjpeg62-turbo-dev"; then
+  makedepends+=("libjpeg62-turbo-dev")
+else
+  makedepends+=("libjpeg62-dev")
+fi
+
+if apt-cache search libgccjit | grep -q "libgccjit-13-dev"; then
+  makedepends+=("libgccjit-13-dev")
+else
+  makedepends+=("libgccjit-12-dev")
+fi
 
 prepare() {
   local _conf=(
