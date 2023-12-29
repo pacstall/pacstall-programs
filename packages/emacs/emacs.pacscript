@@ -48,7 +48,7 @@ makedepends=(
 if apt-cache search libjpeg62 | grep -q "libjpeg62-turbo-dev"; then
   makedepends+=("libjpeg62-turbo-dev")
 else
-  makedepends+=("libjpeg62-dev")
+  makedepends+=("libjpeg-turbo8-dev")
 fi
 
 if apt-cache search libgccjit | grep -q "libgccjit-13-dev"; then
