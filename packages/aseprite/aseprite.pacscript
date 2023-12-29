@@ -27,7 +27,7 @@ prepare() {
   unzip -qq "Skia-Linux-Release-x64-libc++.zip" -d skia
 
   # Apply patch from AUR
-  patch -stp1 <PACSTALL_patchesdir/"desktop.patch?h=aseprite"
+  patch -stp1 <PACSTALL_patchesdir/desktop.patch
 }
 
 build() {
