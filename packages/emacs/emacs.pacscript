@@ -15,7 +15,6 @@ makedepends=(
   "libdbus-1-dev"
   "libfontconfig-dev"
   "libfreetype-dev"
-  "libgccjit-13-dev"
   "libgdk-pixbuf-2.0-dev"
   "libgif-dev"
   "libglib2.0-dev"
