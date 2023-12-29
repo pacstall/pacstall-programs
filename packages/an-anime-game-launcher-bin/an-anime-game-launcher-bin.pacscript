@@ -1,11 +1,11 @@
 name="an-anime-game-launcher-bin"
 pkgname="an-anime-game-launcher"
-pkgver="3.9.0"
+pkgver="3.9.3"
 pkgdesc="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
 url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${pkgver}/anime-game-launcher"
-hash="990beb36e3b9afa42a14cc9026c2cc2c6ca8c1c788c60fbbfad2ff1c8635248e"
-depends=("xdelta3" "git")
+hash="256fc4982e66ebf175d2c5b48ebe7688d4a7e4a9634e491fff6abc202af16d2e"
+depends=("xdelta3")
 maintainer="Elsie19 <elsie19@pm.me>"
 gives="${pkgname}"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
@@ -19,7 +19,6 @@ optdepends=(
 )
 
 package() {
-  sudo chmod +x "anime-game-launcher"
   sudo install -Dm755 "anime-game-launcher" "${pkgdir}/usr/bin/${pkgname}"
   sudo mkdir -p "${pkgdir}/usr/share/applications"
   echo '[Desktop Entry]
@@ -37,6 +36,6 @@ X-AppImage-Version=2.4.2' | sudo tee "${pkgdir}/usr/share/applications/an-anime-
 
 post_remove() {
   if ask "Do you want to delete all launcher files(~/.local/share/anime-game-launcher)? This includes configs and the game" Y; then
-    rm -rf ~/.local/share/anime-game-launcher
+    rm -rf "${homedir}/.local/share/anime-game-launcher"
   fi
 }
