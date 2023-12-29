@@ -42,7 +42,7 @@ makedepends=(
  	"libwebp-dev"
   "libxfixes-dev"
  	"libxml2-dev"
-  "libxpm4"
+  "libxpm-dev"
   "zlib1g-dev"
 )
 
