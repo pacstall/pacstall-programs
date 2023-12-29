@@ -1,4 +1,3 @@
-# For filenames not being screwed up, will be fixed with pacstall/#1023
 PACSTALL_DOWNLOADER=curl
 _pkgname=lunarclient
 name="${_pkgname}-app"
@@ -11,6 +10,9 @@ makedepends=("libfuse2")
 replace=("lunarclient" "lunar-client")
 breaks=("lunarclient-deb" "lunarclient-bin")
 maintainer="Mythbusters123 <atr10605@icloud.com>"
+#_appimage="Lunar%20Client-${pkgver}.AppImage"
+#url="https://launcherupdates.lunarclientcdn.com/${_appimage}"
+# TEMPORARY ONLY UNTIL DOWNLOADING IS FIXED
 _appimage="LunarClient-${pkgver}.AppImage"
 url="https://cdn.themyth.dev/${_appimage}"
 hash='f04f1364aa02f89c667f54e206326cc1f9bca8242ad2600a5cfbf748d91498b5'
@@ -22,14 +24,17 @@ _desktophash='74c099d70a70ae356547d75c49de409b2dbb8da221cfc9b9da4e4d86ca1f7870'
 prepare() {
   # Be extra careful!
   wget -O "${_pkgname}.png" -q "${_iconurl}"
-  wget -O "${_pkgname}.desktop" -q "${_desktop}"
+  wget -O "${_pkgname}.desktop" -q "${_desktopurl}"
 
-  if [[ "$(sha256sum "${_pkgname}.png" | cut -d' ' -f 1)" != "${_iconhash}" ]]; then
+  _downloaded_icon_hash="$(sha256sum "${_pkgname}.png" | cut -d " " -f 1)"
+  _downloaded_desktop_hash="$(sha256sum "${_pkgname}.desktop" | cut -d " " -f 1)"
+
+  if [[ "${_downloaded_icon_hash}" != "${_iconhash}" ]]; then
     fancy_message error "Hashes do not match for icon. Aborting..."
     return 1
   fi
 
-  if [[ "$(sha256sum "${_pkgname}.desktop" | cut -d' ' -f 1)" != "${_desktophash}" ]]; then
+  if [[ "${_downloaded_desktop_hash}" != "${_desktophash}" ]]; then
     fancy_message error "Hashes do not match for desktop file. Aborting..."
     return 1
   fi
@@ -47,7 +52,7 @@ package() {
 
   # Desktop file
   sudo install -Dm644 \
-    "squashfs-root/launcher.desktop" \
+    "${_pkgname}.desktop" \
     "${pkgdir}/usr/share/applications/${_pkgname}.desktop"
 
   # Icon image
