@@ -3,7 +3,7 @@ gives="plexmediaserver"
 repology=("project: ${gives}")
 pkgver="1.32.0.6918-6f393eda1"
 replace=("${gives}")
-url="https://downloads.plex.tv/plex-media-server-new/${pkgver}/debian/${gives}_${pkgver}_amd64.deb"
+url="https://downloads.plex.tv/plex-media-server-new/${pkgver}/debian/${gives}_${pkgver}_${CARCH}.deb"
 pkgdesc="Plex organizes all of your personal media so you can easily access and enjoy it"
 case "${CARCH}" in
   amd64)
