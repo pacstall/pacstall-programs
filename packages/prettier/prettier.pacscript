@@ -4,7 +4,7 @@ pkgdesc="An opinionated code formatter"
 homepage="https://prettier.io"
 depends=("nodejs")
 url="https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz"
-hash="9f0e0d855654470f15dc68a78ebe6861e921eb326c0522ffec54d06e71009274"
+hash="fb6213d29bcc213b8a996c612be41d5891f18545edb73589ea6d6fce2055d4b6"
 maintainer="vigress8 <vig@disroot.org>"
 
 package() {
