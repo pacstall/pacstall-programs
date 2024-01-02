@@ -2,7 +2,7 @@ PACSTALL_DOWNLOADER=curl
 _pkgname=lunarclient
 name="${_pkgname}-app"
 repology=("project: lunar-client")
-pkgver="3.1.3"
+pkgver="3.2.0"
 arch=("amd64")
 pkgdesc="PvP modpack for all modern versions of Minecraft"
 homepage='https://lunarclient.com'
@@ -12,11 +12,11 @@ breaks=("lunarclient-deb" "lunarclient-bin")
 maintainer="Mythbusters123 <atr10605@icloud.com>"
 _appimage="Lunar%20Client-${pkgver}.AppImage"
 url="https://launcherupdates.lunarclientcdn.com/${_appimage}"
-hash='f04f1364aa02f89c667f54e206326cc1f9bca8242ad2600a5cfbf748d91498b5'
+hash='63d4a371543eeed997eaf29d62e0f826d4c324d98c2a5884379625e35fd6263b'
 _iconurl="https://raw.githubusercontent.com/Mythbusters123/lunarclient-app/main/${_pkgname}.png"
 _iconhash='28d489d41431bdaa784342a227abdfbbb525bbe831f98d34747ec557b6e02f05'
 _desktopurl="https://raw.githubusercontent.com/Mythbusters123/lunarclient-app/main/${_pkgname}.desktop"
-_desktophash='74c099d70a70ae356547d75c49de409b2dbb8da221cfc9b9da4e4d86ca1f7870'
+_desktophash='419c6bcea780a9cc735fec2ea956f67978bb8d82e321e074c36754f61baa36b8'
 
 prepare() {
   # Be extra careful!
@@ -48,7 +48,7 @@ package() {
     "${pkgdir}/usr/bin/${_pkgname}"
 
   # Desktop file
-  sudo install -Dm644 \
+  sudo install -Dm655 \
     "${_pkgname}.desktop" \
     "${pkgdir}/usr/share/applications/${_pkgname}.desktop"
 
