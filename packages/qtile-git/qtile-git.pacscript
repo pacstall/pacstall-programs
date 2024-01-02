@@ -40,14 +40,14 @@ optdepends=(
 )
 
 package() {
-  # Symlinking will not work correctly in this phase, but pipx needs a symlink destination, so we'll give it a stub directory.
+  # Symlinking will not work correctly in this phase, but pipx needs a symlink destination,
+  # so we give it a throwaway directory.
   local PIPX_VARS=(
     "PIPX_HOME=${pkgdir}/opt"
     "PIPX_BIN_DIR=${PWD}/tmp"
     "PIPX_MAN_DIR=${PWD}/tmp"
   )
   sudo "${PIPX_VARS[@]}" pipx install --force --python python3.11 --system-site-packages ".[all]"
-  rm -rf tmp
   sudo install -Dm644 libqtile/resources/default_config.py -t "${pkgdir}/usr/share/doc/${gives}"
   sudo install -Dm644 "resources/${gives}.desktop" -t "${pkgdir}/usr/share/xsessions"
   sudo install -Dm644 "resources/${gives}-wayland.desktop" -t "${pkgdir}/usr/share/wayland-sessions"
