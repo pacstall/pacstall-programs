@@ -43,11 +43,11 @@ package() {
     "PIPX_MAN_DIR=${PWD}/tmp"
   )
   local PIPX_FLAGS=(
-    "--force"
-    "--preinstall xcffib"
     "--python python3.11"
+    "--preinstall xcffib"
     "--quiet"
     "--system-site-packages"
+    "--force"
   )
   sudo "${PIPX_VARS[@]}" pipx install "${PIPX_FLAGS[@]}" ./"${gives}[all]"
   rm -rf tmp
@@ -58,11 +58,11 @@ package() {
 }
 
 post_install() {
-  # sudo ln -sf "/opt/venvs/${gives}/bin/${gives}" "/usr/bin/${gives}"
+  sudo ln -sf "/opt/venvs/${gives}/bin/${gives}" "/usr/bin/${gives}"
   fancy_message info "To copy the default config into your home directory, run:"
   fancy_message info "cp /usr/share/doc/${gives}/default_config.py ~/.config/${gives}/config.py"
 }
 
-# post_remove() {
-#   sudo rm -f "/usr/bin/${gives}"
-# }
+post_remove() {
+  sudo rm -f "/usr/bin/${gives}"
+}
