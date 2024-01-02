@@ -23,7 +23,7 @@ depends=(
 makedepends=(
   "pkg-config"
   "libpulse-dev"
-  "python3-pipx"
+  "pipx"
 )
 optdepends=(
   "alsa-utils: for volume widget"
