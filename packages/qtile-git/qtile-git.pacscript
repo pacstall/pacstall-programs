@@ -45,7 +45,7 @@ package() {
     "PIPX_BIN_DIR=${PWD}/tmp"
     "PIPX_MAN_DIR=${PWD}/tmp"
   )
-  sudo "${PIPX_VARS[@]}" pipx install --force --python python3.11 --system-site-packages ".[all]"
+  sudo "${PIPX_VARS[@]}" pipx install --force --python /usr/bin/python3.11 --system-site-packages ".[all]"
   rm -rf tmp
   sudo install -Dm644 libqtile/resources/default_config.py -t "${pkgdir}/usr/share/doc/${gives}"
   sudo install -Dm644 "resources/${gives}.desktop" -t "${pkgdir}/usr/share/xsessions"
