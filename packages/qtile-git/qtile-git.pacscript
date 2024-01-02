@@ -37,19 +37,19 @@ optdepends=(
 
 package() {
   # Symlinking will not work correctly in this phase, but pipx needs a symlink destination, so we'll give it a stub directory.
-  local PIPX_VARS=" \
-    PIPX_HOME="${pkgdir}/opt" \
-    PIPX_BIN_DIR="${PWD}/tmp" \
-    PIPX_MAN_DIR="${PWD}/tmp" \
-  "
-  local PIPX_FLAGS=" \
-    --force \
-    --preinstall xcffib \
-    --python python3.11 \
-    --quiet \
-    --system-site-packages \
-  "
-  sudo "${PIPX_VARS}" pipx install "${PIPX_FLAGS}" ./"${gives}[all]"
+  local PIPX_VARS=(
+    "PIPX_HOME=${pkgdir}/opt"
+    "PIPX_BIN_DIR=${PWD}/tmp"
+    "PIPX_MAN_DIR=${PWD}/tmp"
+  )
+  local PIPX_FLAGS=(
+    "--force"
+    "--preinstall xcffib"
+    "--python python3.11"
+    "--quiet"
+    "--system-site-packages"
+  )
+  sudo "${PIPX_VARS[@]}" pipx install "${PIPX_FLAGS[@]}" ./"${gives}[all]"
   rm -rf tmp
   sudo install -Dm644 libqtile/resources/default_config.py -t "${pkgdir}/usr/share/doc/${gives}"
   sudo install -Dm644 "resources/${gives}.desktop" -t "${pkgdir}/usr/share/xsessions"
@@ -58,11 +58,11 @@ package() {
 }
 
 post_install() {
-  sudo ln -sf "/usr/bin/${gives}" "/opt/venvs/${gives}/bin/${gives}"
+  # sudo ln -sf "/opt/venvs/${gives}/bin/${gives}" "/usr/bin/${gives}"
   fancy_message info "To copy the default config into your home directory, run:"
   fancy_message info "cp /usr/share/doc/${gives}/default_config.py ~/.config/${gives}/config.py"
 }
 
-post_remove() {
-  sudo rm -f "/usr/bin/${gives}"
-}
+# post_remove() {
+#   sudo rm -f "/usr/bin/${gives}"
+# }
