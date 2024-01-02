@@ -1,33 +1,68 @@
 name="qtile-git"
-pkgname="qtile"
-url="https://github.com/qtile/qtile.git"
-pkgver="0.22.1"
-license="MIT"
-depends=("python3-cffi" "xserver-xorg" "python3-xcffib" "python3-cairocffi" "libpangocairo-1.0-0" "python3-pip" "python3-dbus" "libpulse-dev" "pavucontrol" "python3-testresources")
+gives="qtile"
+pkgver="0.23.0"
 pkgdesc="A full-featured, hackable tiling window manager written and configured in Python"
+breaks=("${gives}")
+url="https://github.com/qtile/qtile.git"
 maintainer="Ruturajn <nanotiruturaj@gmail.com>"
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
-
-release="$(lsb_release -cs)"
-modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
-# shellcheck disable=SC2076
-if [[ " ${modern[*]} " =~ " ${release} " ]]; then
-  pyhack=("--break-system-packages")
-else
-  pyhack=()
-fi
+depends=(
+  "libinput10"
+  "libnotify4"
+  "libpango-1.0-0"
+  "libpangocairo-1.0-0"
+  "libpulse0"
+  "libwayland-client0"
+  "libwayland-cursor0"
+  "libwayland-server0"
+  "python3.11"
+  "xserver-xorg"
+)
+makedepends=(
+  "pkg-config"
+  "libpulse-dev"
+  "python3-pipx"
+)
+optdepends=(
+  "alsa-utils: for volume widget"
+  "cmus: for cmus widget"
+  "jupyter-console: for interaction with qtile via Jupyter"
+  "khal: for khal_calendar widget"
+  "lm-sensors: for sensors widget"
+  "moc: for moc widget"
+  "xorg-xwayland: for XWayland support"
+)
 
 package() {
-  sudo pip3 install --upgrade --no-cache --force-reinstall cairocffi cffi xcffib "${pyhack[@]}"
-  sudo pip3 install dbus-next setuptools-scm setuptools "${pyhack[@]}"
-  sudo mkdir -p "${pkgdir}"/usr/share/xsessions
-  sudo chown root:root ./
-  sudo python3 setup.py install --root="${pkgdir}"
-  sudo cp ./resources/qtile.desktop "${pkgdir}"/usr/share/xsessions/qtile.desktop
+  # Symlinking will not work correctly in this phase, but pipx needs a symlink destination, so we'll give it a stub directory.
+  local PIPX_VARS=" \
+    PIPX_HOME="${pkgdir}/opt" \
+    PIPX_BIN_DIR="${PWD}/tmp" \
+    PIPX_MAN_DIR="${PWD}/tmp" \
+  "
+  local PIPX_FLAGS=" \
+    --force \
+    --preinstall xcffib \
+    --python python3.11 \
+    --quiet \
+    --system-site-packages \
+  "
+  sudo "${PIPX_VARS}" pipx install "${PIPX_FLAGS}" ./"${gives}[all]"
+  rm -rf tmp
+  sudo install -Dm644 libqtile/resources/default_config.py -t "${pkgdir}/usr/share/doc/${gives}"
+  sudo install -Dm644 "resources/${gives}.desktop" -t "${pkgdir}/usr/share/xsessions"
+  sudo install -Dm644 "resources/${gives}-wayland.desktop" -t "${pkgdir}/usr/share/wayland-sessions"
+  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${gives}"
+}
+
+post_install() {
+  sudo ln -sf "/usr/bin/${gives}" "/opt/venvs/${gives}/bin/${gives}"
+  fancy_message info "To copy the default config into your home directory, run:"
+  fancy_message info "cp /usr/share/doc/${gives}/default_config.py ~/.config/${gives}/config.py"
 }
 
 post_remove() {
-  sudo pip3 uninstall dbus-next setuptools-scm setuptools "${pyhack[@]}"
+  sudo rm -f "/usr/bin/${gives}"
 }
