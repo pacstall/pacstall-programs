@@ -5,6 +5,7 @@ homepage='https://prettier.io'
 depends=("nodejs")
 url="https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz"
 hash="fb6213d29bcc213b8a996c612be41d5891f18545edb73589ea6d6fce2055d4b6"
+repology=("project: ${name}")
 maintainer="vigress8 <vig@disroot.org>"
 
 package() {
