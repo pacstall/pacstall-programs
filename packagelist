@@ -477,6 +477,7 @@ webtorrent-desktop-deb
 weechat-git
 wezterm-app
 wezterm-bin
+wgcf
 whatsie
 whatsie-git
 windscribe-beta-gui-deb
@@ -507,4 +508,3 @@ zoom-deb
 zotero
 zoxide-deb
 zsh-history-substring-search-git
-wgcf
