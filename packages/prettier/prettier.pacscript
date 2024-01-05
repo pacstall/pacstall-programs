@@ -9,16 +9,16 @@ repology=("project: ${name}")
 maintainer="vigress8 <vig@disroot.org>"
 
 package() {
-    local mod_dir="usr/lib/node_modules/${name}"
-    sudo install -d "${pkgdir}/"{usr/bin,usr/share/licenses/"${name}","${mod_dir}"}
-    sudo cp -ar ./* "${pkgdir}/${mod_dir}"
+  local mod_dir="usr/lib/node_modules/${name}"
+  sudo install -d "${pkgdir}/"{usr/bin,usr/share/licenses/"${name}","${mod_dir}"}
+  sudo cp -ar ./* "${pkgdir}/${mod_dir}"
 }
 
 post_install() {
-    sudo ln -sf "/${mod_dir}/bin/${name}.cjs" "/usr/bin/${name}"
-    sudo ln -sf "/${mod_dir}/LICENSE" "/usr/share/licenses/${name}/LICENSE"
+  sudo ln -sf "/${mod_dir}/bin/${name}.cjs" "/usr/bin/${name}"
+  sudo ln -sf "/${mod_dir}/LICENSE" "/usr/share/licenses/${name}/LICENSE"
 }
 
 post_remove() {
-    sudo rm -rf "/usr/"{bin,share/licenses}"/${name}"
+  sudo rm -rf "/usr/"{bin,share/licenses}"/${name}"
 }
