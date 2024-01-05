@@ -9,14 +9,9 @@ pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
 depends=(
-  "libinput10"
   "libnotify4"
-  "libpango-1.0-0"
   "libpangocairo-1.0-0"
   "libpulse0"
-  "libwayland-client0"
-  "libwayland-cursor0"
-  "libwayland-server0"
   "python3.11"
   "xserver-xorg"
 )
@@ -25,9 +20,8 @@ makedepends=(
   "libiw-dev"
   "libpulse-dev"
   "libpython3.11-dev"
-  "libxkbcommon-dev"
   "pipx"
-  "python3.11"
+  "python3.11-minimal"
 )
 optdepends=(
   "alsa-utils: for volume widget"
@@ -36,8 +30,14 @@ optdepends=(
   "khal: for khal_calendar widget"
   "lm-sensors: for sensors widget"
   "moc: for moc widget"
-  "xorg-xwayland: for XWayland support"
 )
+
+# Install Wayland backend if wlroots 0.16 is available
+apt-cache show libwlroots-dev | grep -q 'Version: 0.16' && {
+  depends+=("libwlroots11")
+  makedepends+=("libwlroots-dev")
+  optdepends+=("xwayland: for XWayland support")
+}
 
 package() {
   # Symlinking will not work correctly in this phase, but pipx needs a symlink destination,
