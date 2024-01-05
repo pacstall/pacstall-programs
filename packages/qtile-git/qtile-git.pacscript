@@ -49,6 +49,8 @@ package() {
   )
   sudo "${PIPX_VARS[@]}" pipx install --force --python python3.11 --system-site-packages ".[all]"
   sudo install -Dm644 libqtile/resources/default_config.py -t "${pkgdir}/usr/share/doc/${gives}"
+  # Fix paths
+  find . -type f -exec sed -i "s;${pkgdir};;g" {} \;
   sudo install -Dm644 "resources/${gives}.desktop" -t "${pkgdir}/usr/share/xsessions"
   sudo install -Dm644 "resources/${gives}-wayland.desktop" -t "${pkgdir}/usr/share/wayland-sessions"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${gives}"
