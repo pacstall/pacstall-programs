@@ -34,7 +34,6 @@ optdepends=(
 
 # Install Wayland backend if wlroots 0.16 is available
 apt-cache show libwlroots-dev | grep -q 'Version: 0.16' && {
-  WLBACKEND=1
   depends+=("libwlroots11")
   makedepends+=("libwlroots-dev")
   optdepends+=("xwayland: for XWayland support")
@@ -48,12 +47,10 @@ package() {
     "PIPX_BIN_DIR=${PWD}/tmp"
     "PIPX_MAN_DIR=${PWD}/tmp"
   )
-  local PIPX_OPTS="widgets"
-  [[ ${WLBACKEND} == 1 ]] && PIPX_OPTS+=",wayland"
-  sudo "${PIPX_VARS[@]}" pipx install --force --python python3.11 --system-site-packages ".[${PIPX_OPTS}]" || return 1
+  sudo "${PIPX_VARS[@]}" pipx install --force --python python3.11 --system-site-packages ".[all]" || return 1
   sudo install -Dm644 libqtile/resources/default_config.py -t "${pkgdir}/usr/share/doc/${gives}"
   # Fix paths
-  find . -type f -exec sed -i "s;${pkgdir};;g" {} \;
+  find . -type f -exec sudo sed -i "s;${pkgdir};;g" {} \; || return 1
   sudo install -Dm644 "resources/${gives}.desktop" -t "${pkgdir}/usr/share/xsessions"
   sudo install -Dm644 "resources/${gives}-wayland.desktop" -t "${pkgdir}/usr/share/wayland-sessions"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${gives}"
