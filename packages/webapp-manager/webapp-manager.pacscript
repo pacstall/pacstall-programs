@@ -17,7 +17,7 @@ prepare() {
   # Fix desktop file
   mv usr/share/applications/kde4/webapp-manager.desktop usr/share/applications/webapp-manager-kde.desktop
   # Fix version
-  sed -i s/__DEB_VERSION__/"${pkgver}"/g usr/lib/webapp-manager/webapp-manager.py
+  sed -i "s/__DEB_VERSION__/${pkgver}/g" usr/lib/webapp-manager/webapp-manager.py
 }
 
 build() {
