@@ -7,8 +7,5 @@ pkgdesc="Cross-platform, unofficial CLI for Cloudflare Warp"
 maintainer="Wildy Sheverando <hai@wildyrando.com>"
 
 package() {
-  sudo mv wgcf_"${pkgver}"_linux_amd64 wgcf
-  sudo chmod +x wgcf
-  sudo mkdir -p "${pkgdir}/wgcf/usr/bin"
-  sudo mv wgcf "${pkgdir}/wgcf/usr/bin/"
+  install -Dm755 "wgcf_${pkgver}_linux_amd64" "${pkgdir}/usr/bin/wgcf"
 }
