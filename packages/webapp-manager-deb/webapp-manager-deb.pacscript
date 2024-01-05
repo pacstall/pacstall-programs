@@ -1,8 +1,8 @@
 name="webapp-manager-deb"
 gives="webapp-manager"
 repology=("project: webapp-manager")
-pkgver="1.3.2"
+pkgver="1.3.4"
 url="http://packages.linuxmint.com/pool/main/w/webapp-manager/webapp-manager_${pkgver}_all.deb"
 pkgdesc="Run websites as if they were apps."
-hash="ee3c13beb00e1ee5793bfc02e050ce3256d186bec7c5a608b23f2bd078205753"
+hash="4a2d60bb94ae106e6d8084b1de5a73b86fa02a1a404f8e35088951a23ed36008"
 maintainer="cat-master21 <96554164+cat-master21@users.noreply.github.com>"
