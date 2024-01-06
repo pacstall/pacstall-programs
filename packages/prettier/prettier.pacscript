@@ -7,11 +7,12 @@ url="https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz"
 hash="fb6213d29bcc213b8a996c612be41d5891f18545edb73589ea6d6fce2055d4b6"
 repology=("project: ${name}")
 maintainer="vigress8 <vig@disroot.org>"
+mod_dir="usr/lib/node_modules/${name}"
 
 package() {
-  local mod_dir="usr/lib/node_modules/${name}"
   sudo install -d "${pkgdir}/"{usr/bin,usr/share/licenses/"${name}","${mod_dir}"}
   sudo cp -ar ./* "${pkgdir}/${mod_dir}"
+  sudo chmod 755 "${pkgdir}/${mod_dir}/bin/${name}.cjs"
 }
 
 post_install() {
