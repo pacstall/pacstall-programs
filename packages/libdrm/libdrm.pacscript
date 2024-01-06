@@ -5,6 +5,7 @@ homepage="https://dri.freedesktop.org/"
 arch=("amd64" "arm64")
 depends=("libpciaccess0" "libc6")
 makedepends=("python3-docutils" "meson" "ninja-build" "libcairo2-dev" "libpciaccess-dev" "libc6-dev")
+provides=("${name}" "${name}-dev")
 replace=("${name}-dev")
 url="https://dri.freedesktop.org/${name}/${name}-${pkgver}.tar.xz"
 hash="0a49f12f09b5b6e68eaaaff3f02ca7cff9aa926939b212d343161d3e8ac56291"
