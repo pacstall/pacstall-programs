@@ -6,5 +6,5 @@ replace=("${gives}")
 pkgver="2023.6"
 url="https://github.com/mullvad/mullvadvpn-app/releases/download/${pkgver}/MullvadVPN-${pkgver}_amd64.deb"
 pkgdesc="The Mullvad VPN client app for desktop"
-hash="ecda227eb5f5ff7a542474d82bed9d568b3fa05b0a898c328421a2d3b4ac1213"
+hash="22113ddcd5d7f22c25beca3e7a2f706d5c8924bb648eb65ff2a078dc066b7bee"
 arch=('amd64')
