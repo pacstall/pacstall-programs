@@ -11,4 +11,3 @@ pkgver() {
 package() {
   sudo install firmware -t "${pkgdir}/usr/lib/firmware"
 }
-
