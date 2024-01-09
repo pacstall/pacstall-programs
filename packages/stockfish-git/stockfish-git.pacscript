@@ -18,5 +18,5 @@ build(){
 
 package() {
   cd src
-  sudo make install BINDIR="${pkgdir}"
+  sudo make install BINDIR="${pkgdir}/usr/local/bin"
 }
