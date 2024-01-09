@@ -9,5 +9,6 @@ pkgver() {
 }
 
 package() {
-  sudo install firmware -t "${pkgdir}/usr/lib/firmware"
+  sudo mkdir -p "${pkgdir}/usr/lib/firmware"
+  sudo cp -r firmware/bes2600 "${pkgdir}/usr/lib/firmware"
 }
