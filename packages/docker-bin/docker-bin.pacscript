@@ -123,7 +123,4 @@ post_remove() {
       sudo rm /etc/systemd/system/"${i}" && echo "Removed /etc/systemd/system/${i}."
     done
   fi
-  if [[ -n $(grep docker /etc/group) ]]; then
-    sudo groupdel docker
-  fi
 }
