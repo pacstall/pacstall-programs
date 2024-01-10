@@ -109,6 +109,9 @@ post_install() {
   if [[ -z $(grep docker /etc/group) ]]; then
     sudo groupadd docker
   fi
+  if [[ -z $(grep docker /etc/group | grep "${PACSTALL_USER}") ]]; then
+    sudo usermod -aG docker "${PACSTALL_USER}"
+  fi
   if [[ -f /bin/systemctl ]]; then
     sudo systemctl enable containerd.service docker.socket docker.service --now
   fi
@@ -119,5 +122,11 @@ post_remove() {
     for i in multi-user.target.wants/containerd.service multi-user.target.wants/docker.service sockets.target.wants/docker.socket; do
       sudo rm /etc/systemd/system/"${i}" && echo "Removed /etc/systemd/system/${i}."
     done
+  fi
+  if [[ -n $(grep docker /etc/group | grep "${PACSTALL_USER}") ]]; then
+    sudo gpasswd -d "${PACSTALL_USER}" docker
+  fi
+  if [[ -z $(grep docker /etc/group) ]]; then
+    sudo groupdel docker
   fi
 }
