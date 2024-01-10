@@ -123,8 +123,8 @@ post_remove() {
       sudo rm /etc/systemd/system/"${i}" && echo "Removed /etc/systemd/system/${i}."
     done
   fi
-  if [[ -n $(grep docker /etc/group | grep "${PACSTALL_USER}") ]]; then
-    sudo gpasswd -d "${PACSTALL_USER}" docker
+  if [[ -n $(grep docker /etc/group | grep "${USER}") ]]; then
+    sudo gpasswd -d "${USER}" docker
   fi
   if [[ -z $(grep docker /etc/group) ]]; then
     sudo groupdel docker
