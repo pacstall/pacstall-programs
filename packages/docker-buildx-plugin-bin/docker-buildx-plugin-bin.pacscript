@@ -16,6 +16,6 @@ fi
 
 package() {
   sudo mkdir -p "${pkgdir}/usr/libexec/docker/cli-plugins"
-  sudo chmod a+x buildx-v${pkgver}.linux-${CARCH}
-  sudo mv ./buildx-v${pkgver}.linux-${CARCH} "${pkgdir}/usr/libexec/docker/cli-plugins/docker-buildx"
+  sudo chmod a+x ./"buildx-v${pkgver}.linux-${CARCH}"
+  sudo mv ./"buildx-v${pkgver}.linux-${CARCH}" "${pkgdir}/usr/libexec/docker/cli-plugins/docker-buildx"
 }
