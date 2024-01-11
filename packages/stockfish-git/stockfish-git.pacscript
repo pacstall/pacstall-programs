@@ -4,7 +4,7 @@ homepage='https://stockfishchess.org/'
 url="https://github.com/official-stockfish/Stockfish.git"
 maintainer="pythoncrazy <encryptprogramming@gmail.com>"
 pkgver="0.0.1"
-gives="${pkgname}"
+gives="stockfish"
 breaks=("${pkgname}")
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
