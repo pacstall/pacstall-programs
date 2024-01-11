@@ -7,7 +7,7 @@ compatible=("ubuntu:devel" "ubuntu:noble")
 replace=("rhino-core" "rhino-pine-core" "rhino-ubxi-core")
 priority="essential"
 pkgver="2023.4"
-pkgrel="2"
+pkgrel="3"
 style="(server)"
 branch="devel"
 post_install() {
