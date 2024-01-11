@@ -1,5 +1,4 @@
 name="stockfish-git"
-pkgname="stockfish-git"
 pkgdesc="The Stockfish chess engine, built from the git repository"
 homepage='https://stockfishchess.org/'
 url="https://github.com/official-stockfish/Stockfish.git"
