@@ -1,6 +1,6 @@
 name="stockfish-git"
 gives="stockfish"
-pkgdesc="The Stockfish chess engine, built from the git repository"
+pkgdesc="The Stockfish chess engine"
 homepage='https://stockfishchess.org/'
 url="https://github.com/official-stockfish/Stockfish.git"
 maintainer="pythoncrazy <encryptprogramming@gmail.com>"
