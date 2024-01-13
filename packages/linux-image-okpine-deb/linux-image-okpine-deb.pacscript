@@ -8,7 +8,7 @@ pkgdesc="Linux kernel image files built for Pine64 devices"
 arch=('arm64')
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline")
 pacdeps=("linux-headers-okpine-deb")
-if [[ -d "/lib/firmware/bes2600" ]]; then
+if [[ -f "/boot/u-boot-rockchip.bin" ]]; then
   pacdeps+=("bes2600-firmware-git")
 fi
 depends=("busybox-initramfs" "initramfs-tools" "initramfs-tools-bin" "initramfs-tools-core" "klibc-utils" "libklibc")
