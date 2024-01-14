@@ -1,12 +1,12 @@
 name="element-desktop-deb"
 gives="element-desktop"
-pkgver="1.11.45"
+pkgver="1.11.52"
 replace=("${gives}")
 repology=("project: ${gives}")
 breaks=("${gives}-git" "${gives}-bin" "${gives}-app")
 url="https://packages.element.io/debian/pool/main/e/${gives}/${gives}_${pkgver}_amd64.deb"
 homepage='https://element.io/'
 pkgdesc="Element is a feature-packed Matrix client"
-hash="0ede6bfa6a08cfd3bfd3fc2a373d14f01a767eca3cb8dfd03d99e819bfc426e8"
+hash="e5b0be72e28fa6cebb608104b166f60ce62091e6e26ea5ee5850ac7f9dd4f0bf"
 arch=('amd64')
 maintainer="Oren Klopfer <oren@taumoda.com>"

@@ -1,10 +1,10 @@
 name="sublime-text-deb"
 gives="sublime-text"
 replace=("${gives}")
-pkgver="4155"
+pkgver="4169"
 url="https://download.sublimetext.com/${gives}_build-${pkgver}_amd64.deb"
 pkgdesc="Sublime text light text editor for programmers"
-hash="065faff0dcd2ef17194ada06908492029cc81cced7b8f0b845abbf43ec23316b"
+hash="e1bac169546317f246cc58adbdd20264c78486f12112b3c9ee303aa863c38f7f"
 arch=('amd64')
 maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: ${gives}")

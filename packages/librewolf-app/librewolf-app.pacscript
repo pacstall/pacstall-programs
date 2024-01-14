@@ -20,7 +20,7 @@ package() {
   sudo install -Dm755 "LibreWolf.${gnuarch}.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 
   # Download icon
-  wget -q https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
+  wget -q "https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png"
   sudo install -Dm644 "icon.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
 
   # Install .desktop file
@@ -29,9 +29,11 @@ package() {
 }
 
 post_remove() {
-  # Delete .librewolf
-  if ask "Do you want to delete ~/.librewolf/ files?" Y; then
-    rm -rf ~/.librewolf/
+  # Delete ~/.librewolf if it exists
+  if [[ -d "${homedir}/.librewolf" ]]; then
+    if ask "Do you want to delete ~/.librewolf/ files?" Y; then
+      rm -rf "${homedir}/.librewolf"
+    fi
   fi
 }
 # vim:set ft=sh ts=2 sw=2 et:

@@ -109,6 +109,9 @@ post_install() {
   if [[ -z $(grep docker /etc/group) ]]; then
     sudo groupadd docker
   fi
+  if [[ -z $(grep docker /etc/group | grep "${PACSTALL_USER}") ]]; then
+    sudo usermod -aG docker "${PACSTALL_USER}"
+  fi
   if [[ -f /bin/systemctl ]]; then
     sudo systemctl enable containerd.service docker.socket docker.service --now
   fi

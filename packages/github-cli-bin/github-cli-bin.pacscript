@@ -4,10 +4,10 @@ gives="gh"
 breaks=("${gives}-git" "${gives}-deb")
 replace=("${gives}")
 repology=("project: ${pkgname}")
-pkgver="2.38.0"
+pkgver="2.40.1"
 url="https://github.com/cli/cli/releases/download/v${pkgver}/${gives}_${pkgver}_linux_amd64.tar.gz"
 pkgdesc="GitHub's official command line tool - Binary version"
-hash="c56b80a03c3b4216cd1ab63f6c7bfa4c356c67bce265fc067953bec10cdf0f97"
+hash="7f34ee83a7dd17addd1d029bc66ec06d91773a93172e3e1e30e0ec3a9f923fe2"
 arch=('amd64')
 maintainer="Oren Klopfer <oren@taumoda.com>"
 

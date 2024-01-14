@@ -27,6 +27,7 @@ bat-deb
 batsignal
 bazecor-app
 bemenu-git
+bes2600-firmware-git
 bitwarden-cli-bin
 bitwarden-deb
 bitwig-studio-3-deb
@@ -41,6 +42,8 @@ brave-browser-nightly-deb
 brave-keyring-deb
 btop-bin
 btrfs-du-bin
+cachy-browser-bin
+cachyos-ananicy-rules-git
 cantata
 caprine-deb
 celeste-bin
@@ -82,6 +85,7 @@ dmenu
 dmenu-distrotube-git
 doas-git
 docker-bin
+docker-buildx-plugin-bin
 dotdrop
 drawio-desktop-deb
 dropbox-deb
@@ -90,6 +94,7 @@ dunst
 dust-bin
 easy-zsh-config-git
 eddie-ui-deb
+electerm-deb
 electronmail-deb
 electrum-git
 element-desktop-deb
@@ -101,6 +106,7 @@ enpass-deb
 epson-inkjet-printer-stylus-nx110-series-deb
 epson-printer-utility-deb
 exa-git
+exercism-cli-bin
 exploitdb-git
 expressvpn-deb
 eza-git
@@ -217,6 +223,7 @@ librewolf-app
 librewolf-deb
 libspa-codec-bluez5-aac-bin
 libssl1.1-deb
+libtomlplusplus-header
 libxapp1-deb
 lightpad-git
 linked-deb
@@ -237,6 +244,7 @@ linux-wifi-hotspot-deb
 lrz-syncshare-deb
 lsd-deb
 lunacy-deb
+lunarclient-app
 lutris-deb
 lyrebird-git
 lyx
@@ -340,6 +348,7 @@ popcorn-time-deb
 popsicle
 postman-bin
 powertop-git
+prettier
 prismlauncher-git
 proton-python-client
 protonmail-bridge-deb
@@ -359,8 +368,11 @@ quintom-cursor-theme-git
 raspi-config-deb
 realvnc-vnc-viewer-deb
 renegate
+renpy-full
+renpy7-full
 reshade-shaders-git
 rhino-core
+rhino-docker-builder-git
 rhino-kvantum-theme-git
 rhino-lightdm-theme-git
 rhino-neofetch-git
@@ -401,6 +413,7 @@ steam-deb
 steam-launcher-deb
 steamtinkerlaunch-git
 stellarium
+stockfish-git
 sublime-merge-deb
 sublime-text-deb
 surf
@@ -461,6 +474,7 @@ waf
 walc-app
 warp
 warpinator-deb
+watchexec-bin
 webapp-manager
 webapp-manager-deb
 webcord-deb
@@ -468,6 +482,7 @@ webtorrent-desktop-deb
 weechat-git
 wezterm-app
 wezterm-bin
+wgcf-bin
 whatsie
 whatsie-git
 windscribe-beta-gui-deb
@@ -476,6 +491,7 @@ wsysmon-bin
 xapps-common-deb
 xdg-desktop-portal-hyprland
 xfce4-deb
+xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
 xmind-vana-deb
 xonotic
@@ -483,6 +499,7 @@ yabridge
 yad
 yafetch-git
 yandex-browser-beta-deb
+yandex-browser-corporate-deb
 yandex-browser-stable-deb
 yandex-disk-deb
 youtube-dl-git
@@ -491,6 +508,7 @@ yt-dlp
 zap
 zentile-bin
 zettlr-deb
+zig-bin
 zoho-notebook-deb
 zoom-deb
 zotero
