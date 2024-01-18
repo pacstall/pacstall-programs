@@ -28,9 +28,9 @@ depends=(
   "libxcb1"
 )
 optdepends=(
-  "dbus:         for controlling picom via D-Bus"
-  "python3:      for running picom-convgen.py"
-  "x11-utils:    for picom-trans"
+  "dbus: for controlling picom via D-Bus"
+  "python3: for running picom-convgen.py"
+  "x11-utils: for picom-trans"
 )
 url="https://github.com/yshui/picom/archive/refs/tags/v${pkgver}.tar.gz"
 hash="6d83723fb31332eeedfed5bac05ee5cc23fefb1f0804029e5f3ad3982c12641f"
