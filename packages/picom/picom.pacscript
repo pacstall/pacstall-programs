@@ -1,5 +1,5 @@
 name="picom"
-homepage="https://github.com/yshui/picom"
+homepage='https://github.com/yshui/picom'
 pkgver="11-rc1"
 pkgdesc="A lightweight compositor for X11"
 repology=("project: ${name}")
