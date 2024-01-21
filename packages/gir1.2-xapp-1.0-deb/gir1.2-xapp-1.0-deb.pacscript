@@ -1,10 +1,10 @@
 name="gir1.2-xapp-1.0-deb"
 gives="gir1.2-xapp-1.0"
-pkgver="2.6.1"
+pkgver="2.8.2"
 repology=("project: xapps")
 pacdeps=("libxapp1-deb")
-url="http://packages.linuxmint.com/pool/backport/x/xapp/gir1.2-xapp-1.0_${pkgver}+victoria_amd64.deb"
-hash="8ea4b418570ccd14cb81e80524a81e867b41f2b9ebc4b71cd643580280f190af"
+url="http://packages.linuxmint.com/pool/backport/x/xapp/gir1.2-xapp-1.0_${pkgver}+virginia_amd64.deb"
+hash="634a2773352f796729d4128e211b20eb41526ae57bb999660fc25c895e26e7b6"
 arch=('amd64')
 pkgdesc="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
 maintainer="Zahrun <Zahrun@github.com>"
