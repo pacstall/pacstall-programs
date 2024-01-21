@@ -9,8 +9,8 @@ case "${codename}" in
     ;;
   *) ;;
 esac
-pkgver="3.7"
-hash="dde1d87e5f343c2b6ddedaa998c38242980cc406f4e0f54600433da4fc7d7ced"
+pkgver="4.3"
+hash="129f9fd5032252cebbd81a6ea8da4f61dc6bd4d9072dede430bfca8e67451361"
 url="http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_${pkgver}_all.deb"
 pkgdesc="An IPTV streaming application with support for live TV, movies and series"
 maintainer="Zahrun <Zahrun@github.com>"
