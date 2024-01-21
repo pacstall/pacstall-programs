@@ -1,8 +1,8 @@
 name="xapps-common-deb"
 gives="xapps-common"
-pkgver="2.6.1"
+pkgver="2.8.2"
 repology=("project: xapps")
-url="http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_${pkgver}+victoria_all.deb"
-hash="621390e1628c38f3af7a7a2f4ac391073afb400bfa3565b0a61f73b6e50d7076"
+url="http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_${pkgver}+virginia_all.deb"
+hash="5423e5bf2309a687e651f9f0c90e8f107e58c6512614787147e19e7e96474f1a"
 pkgdesc="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
 maintainer="Zahrun <Zahrun@github.com>"
