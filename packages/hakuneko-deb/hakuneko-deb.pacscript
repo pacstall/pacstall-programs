@@ -2,7 +2,7 @@ name="hakuneko-deb"
 gives="hakuneko-desktop"
 pkgver="8.3.4"
 nightly="20200705.1"
-arch=("amd64" "arm64" "armhf" "armv7l" "i386")
+arch=("amd64" "arm64" "armhf" "i386")
 homepage="https://github.com/manga-download/hakuneko"
 pkgdesc="HakuNeko is a cross-platform downloader for manga and anime from various websites"
 maintainer="Diegiwg <diegiwg@gmail.com>"
@@ -19,10 +19,6 @@ case "${CARCH}" in
   armhf)
     url="https://github.com/manga-download/hakuneko/releases/download/nightly-${nightly}/hakuneko-desktop_${pkgver}_linux_${CARCH}.deb"
     hash="4dabbfa9d775da72499f594bfdda86adc62a5caaa579c73b9d4ccf5d778c903d"
-    ;;
-  armv7l)
-    url="https://github.com/manga-download/hakuneko/releases/download/nightly-${nightly}/hakuneko-desktop_${pkgver}_linux_${CARCH}.deb"
-    hash="b263aaf4b7bb7309b0dfca6fe0fe8f39ecce303927a52aad097c96aef57fc973"
     ;;
   i386)
     url="https://github.com/manga-download/hakuneko/releases/download/nightly-${nightly}/hakuneko-desktop_${pkgver}_linux_${CARCH}.deb"
