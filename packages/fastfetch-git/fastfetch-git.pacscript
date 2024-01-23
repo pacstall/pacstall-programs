@@ -23,6 +23,7 @@ optdepends=("libvulkan1: Vulkan module and GPU fallback"
   "libpulse0: Used for Sound device detection"
   "libddcutil3: Used for brightness detection for external displays"
   "libdbus-1-3: Used for bluetooth, Player & Media detection"
+  "kitty: Terminal emulator GPU accelerated and display images"
 )
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
 pkgver() {
