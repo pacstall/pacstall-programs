@@ -1,8 +1,8 @@
 name="linux-image-okpine-deb"
-pkgver="6.7.0"
+pkgver="6.7.1"
 gives="linux-image-${pkgver}-okpine"
 url="https://github.com/oklopfer/debs/raw/master/kernel/${pkgver}/${gives}_${pkgver}-1_arm64.deb"
-hash="b51f573bbe20668872d13471f5cb9fec04d3276324a7028cea43ee5061e01a7d"
+hash="e5c423411f654e3017a2704ce1564d6b299317161584852f02d0ee01850b4407"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgdesc="Linux kernel image files built for Pine64 devices"
 arch=('arm64')
