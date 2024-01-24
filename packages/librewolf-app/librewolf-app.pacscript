@@ -1,15 +1,15 @@
 maintainer="Oren Klopfer <oren@taumoda.com>"
 name="librewolf-app"
 pkgname="librewolf"
-pkgver="120.0.1-1"
+pkgver="121.0-1"
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom."
 arch=('amd64' 'arm64')
 if [[ ${CARCH} == "arm64" ]]; then
   gnuarch="aarch64"
-  hash="af10277447c2c469d3b6c6a4ea99460de90346edfd8515066a317a954659e0f4"
+  hash="b0a6c690bd7a2f5f5d364c82115ee945445822c97adb5d258038769f8054a5c6"
 else
   gnuarch="x86_64"
-  hash="21e73e405835bd6cfdaecc9930423f68e544eccb52deb7c992e90f5085ca487e"
+  hash="63178bcc1feacc94f657ea86cf86aac8d8e272e7646ddef189eede99236fd81e"
 fi
 url="https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/${pkgver}/LibreWolf.${gnuarch}.AppImage"
 breaks=("${pkgname}-deb" "${pkgname}-bin" "${pkgname}-git")
