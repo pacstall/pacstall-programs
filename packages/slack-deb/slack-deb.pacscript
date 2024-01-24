@@ -1,12 +1,12 @@
 name="slack-deb"
 gives="slack-desktop"
 pkgname="slack-desktop"
-pkgver="4.33.90"
+pkgver="4.36.138"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
 replace=("${pkgname}")
 pkgdesc="Slack is a new way to communicate with your team. It's faster, better organized, and more secure than email."
 maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
-hash="54a73d1f85d65c900b2973e7d737a00149d3dad37d9960f9dadff097a2e854dc"
+hash="4f5b1eb378d5a58a364f9dc70df5c0ccd9be0cedbab42df7193ddfbb1d2a021a"
 arch=('amd64')
 url="https://downloads.slack-edge.com/releases/linux/${pkgver}/prod/x64/slack-desktop-${pkgver}-amd64.deb"
 repology=("project: slack")
