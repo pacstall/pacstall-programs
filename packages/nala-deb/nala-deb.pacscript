@@ -1,21 +1,10 @@
 name="nala-deb"
-pkgver="0.14.0"
+pkgver="0.15.0"
 pkgname="nala"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
 pkgdesc="Commandline frontend for the apt package manager"
 maintainer="Blake Lee <blake@volian.org>"
-
-release="$(lsb_release -cs)"
-nala_next=('bullseye' 'focal' 'impish')
-
-# shellcheck disable=SC2076
-if [[ " ${nala_next[*]} " =~ " ${release} " ]]; then
-  url="https://deb.volian.org/volian/pool/main/n/nala-legacy/nala-legacy_0.11.0_amd64.deb"
-  hash="61958e4677bcc38fabcfe0d740e2e6817046b5509be99648c337aa2c73fed21b"
-  arch=('amd64')
-else
-  url="https://deb.volian.org/volian/pool/main/n/nala/nala_${pkgver}_all.deb"
-  hash="c209eaa9e3d9ccfbcbda3fe8cda786124f5c1abbf4864f7591fd418da4c0e909"
-  arch=('any')
-fi
+url="https://deb.volian.org/volian/pool/main/n/nala/nala_${pkgver}_all.deb"
+hash="f337b85c54a72e6ed7a3395dbaee10117b161f09e277306908360b6f783051ae"
+arch=('any')
