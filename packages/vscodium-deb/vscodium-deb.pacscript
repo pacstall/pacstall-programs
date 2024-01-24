@@ -1,12 +1,12 @@
 name="vscodium-deb"
 gives="codium"
 breaks=("${gives}")
-pkgver="1.85.1.23348"
+pkgver="1.85.2.24019"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="2dc9e8f85c60e07c72f7663f896b6c68517599e869fd96e99b9f5d85ef13b2ad"
+  hash="860ce849c3c99828e5675a7e0e679a47eaa349e0b5bb7122fe4769104d5f78e7"
 else
-  hash="28cdc4df80f8cfdb69532cae8b1b19515ce24290217c1fa97b1946ccf3e1f25a"
+  hash="608192d9abab899d3ed787590f86da7dc18151d1618a3455ff25e580503d58cb"
 fi
 url="https://github.com/VSCodium/vscodium/releases/download/${pkgver}/${gives}_${pkgver}_${CARCH}.deb"
 repology=("project: vscodium")
