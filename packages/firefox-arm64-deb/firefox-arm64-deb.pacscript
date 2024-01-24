@@ -4,7 +4,6 @@ pkgver="122.0+build2"
 ubversion="22.04"
 arch=("arm64")
 repology=("project: ${gives}")
-compatible=("ubuntu:noble" "ubuntu:devel")
 url="https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/${gives}/${gives}_${pkgver}-0ubuntu0.${ubversion}.1~mt1_arm64.deb"
 homepage='https://www.mozilla.org/en-US/firefox'
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
