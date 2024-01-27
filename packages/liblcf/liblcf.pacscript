@@ -22,7 +22,7 @@ build() {
   ./configure --prefix=/usr \
     --enable-shared --disable-static \
     --disable-update-mimedb
-  make
+  make -j"${NCPU}"
 }
 
 package() {
