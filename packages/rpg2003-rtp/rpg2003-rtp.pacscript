@@ -3,7 +3,7 @@ pkgver="2003"
 pkgdesc="RPG Maker 2003 Run Time Package"
 homepage="https://www.rpgmakerweb.com/run-time-package"
 makedepends=('unar')
-url="https://dl.komodo.jp/rpgmakerweb/run-time-packages/rpg2003_rtp_installer.zip"
+url="http://dl.komodo.jp/rpgmakerweb/run-time-packages/rpg2003_rtp_installer.zip"
 hash='ddd519b50a22a2a95beeb831d29f7d7d92ae6263f953491163b446b808b66863'
 
 prepare() {
