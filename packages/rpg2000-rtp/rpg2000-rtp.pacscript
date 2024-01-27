@@ -11,6 +11,6 @@ prepare() {
 }
 
 package() {
-  mkdir -p "${pkgdir}/usr/share/rtp"
-  cp -rf rpg2000_rtp_installer/. "${pkgdir}/usr/share/rtp/2000"
+  sudo mkdir -p "${pkgdir}/usr/share/rtp"
+  sudo cp -rf rpg2000_rtp_installer/. "${pkgdir}/usr/share/rtp/2000"
 }
