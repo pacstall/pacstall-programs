@@ -12,5 +12,5 @@ prepare() {
 
 package() {
   sudo mkdir -p "${pkgdir}/usr/share/rtp"
-  sudo cp -rf rpg2003_rtp_installer/. "${pkgdir}/usr/share/rtp/2003"
+  sudo cp -r rpg2003_rtp_installer/. "${pkgdir}/usr/share/rtp/2003"
 }
