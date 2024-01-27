@@ -216,6 +216,7 @@ libcamera-git
 libcutefish-git
 libdrm
 libicu-deb
+liblcf
 libndi4-deb
 libresprite-git
 libressl
