@@ -5,6 +5,7 @@ homepage="https://www.rpgmakerweb.com/run-time-package"
 makedepends=('unar')
 url="http://dl.komodo.jp/rpgmakerweb/run-time-packages/rpg2003_rtp_installer.zip"
 hash='ddd519b50a22a2a95beeb831d29f7d7d92ae6263f953491163b446b808b66863'
+maintainer="vigress8 <vig@disroot.org>"
 
 prepare() {
   unar -q rpg2003_rtp_installer.exe
