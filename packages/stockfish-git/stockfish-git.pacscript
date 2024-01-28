@@ -12,10 +12,12 @@ pkgver() {
 
 build(){
   cd src
-  make -j"${NCPU}" build
+  make -j"${NCPU}" profile-build
+  
 }
 
 package() {
   cd src
+  make strip
   sudo make install BINDIR="${pkgdir}/usr/local/bin"
 }
