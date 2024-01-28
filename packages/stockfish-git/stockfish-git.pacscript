@@ -13,7 +13,7 @@ pkgver() {
 build(){
   cd src
   make -j"${NCPU}" profile-build
-  
+
 }
 
 package() {
