@@ -12,11 +12,14 @@ repology=("project: ${gives}")
 arch=('amd64')
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pre_install() {
-debian_version="$(cat /etc/os-release | grep VERSION_CODENAME | cut -d '=' -f 2)"
+debian_version="$(grep VERSION_CODENAME < /etc/os-release | cut -d '=' -f 2)"
 
-case $debian_version in
+case ${debian_version} in
 sid|unstable|testing|stable|trixie|bookworm)
 sudo add-apt-repository non-free -y
+;;
+*)
+echo "Using Ubuntu"
 ;;
 esac
 
