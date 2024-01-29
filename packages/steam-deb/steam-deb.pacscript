@@ -11,7 +11,7 @@ hash="e177e195b6ccdb9ddd57151e6689c1f0e73b900197bd586cdb6d7187a9efd762"
 repology=("project: ${gives}")
 arch=('amd64')
 maintainer="Oren Klopfer <oren@taumoda.com>"
-pre_install() {
+prepare() {
 debian_version="$(grep VERSION_CODENAME < /etc/os-release | cut -d '=' -f 2)"
 
 case ${debian_version} in
