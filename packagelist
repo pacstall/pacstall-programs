@@ -341,6 +341,7 @@ pgmigrate
 picom
 pipes.sh-bin
 pipewire
+pipewire-bundle
 planner-git
 plexmediaserver-deb
 polybar
