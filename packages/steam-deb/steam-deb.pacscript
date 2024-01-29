@@ -15,7 +15,7 @@ pre_install() {
 debian_version="$(cat /etc/os-release | grep VERSION_CODENAME | cut -d '=' -f 2)"
 
 case $debian_version in
-sid|unstable|testing|stable|Trixie|bookworm)
+sid|unstable|testing|stable|trixie|bookworm)
 sudo add-apt-repository non-free -y
 ;;
 esac
