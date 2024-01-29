@@ -11,6 +11,6 @@ repology=("project: ${gives}")
 arch=('amd64')
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pre_install() {
-  sudo dpkg --add-architecture i386
-  sudo apt-get update
+  dpkg --add-architecture i386
+  apt-get update
 }
