@@ -7,3 +7,8 @@ depends=("python3-gi-cairo")
 pkgdesc="open source gaming platform"
 hash="75267ff9ab1e21b5ca8ca428247791460b6957c7d758a2803fe9c56681390415"
 maintainer="Oren Klopfer <oren@taumoda.com>"
+
+pre_install() {
+  sudo dpkg --add-architecture i386
+  sudo apt-get update
+}
