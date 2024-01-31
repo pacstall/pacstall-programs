@@ -1,8 +1,8 @@
 name="oh-my-posh-git"
 pkgname="oh-my-posh"
 url="https://github.com/JanDeDobbeleer/oh-my-posh.git"
-pkgver="18.11.0"
-makedepends=("golang-go")
+pkgver="19.8.2"
+makedepends=("golang-1.21-go")
 pacdeps=("nerd-fonts-hack")
 breaks=("${pkgname}")
 replace=("${pkgname}")
@@ -15,7 +15,7 @@ pkgver() {
 
 build() {
   cd src || exit 1
-  go build -o "${pkgname}"
+  /usr/lib/go-1.21/bin/go build -o "${pkgname}"
 }
 
 package() {
