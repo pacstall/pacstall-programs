@@ -9,6 +9,8 @@ replace=("${pkgname}")
 gives=("${pkgname}")
 pkgdesc="A prompt theme engine for any shell"
 maintainer="Zahrun <Zahrun@github.com>"
+incompatible=('*:bookworm')
+
 pkgver() {
   git ls-remote "${url}" refs/heads/main | cut -f1 | cut -c1-8
 }
