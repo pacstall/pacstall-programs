@@ -1,4 +1,4 @@
-name="renpy-full"
+name="renpy7-full"
 gives="renpy"
 pkgdesc="A visual novel engine"
 pkgver="7.7.0"
