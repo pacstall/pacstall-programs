@@ -9,7 +9,7 @@ depends=(
 )
 repology=("project: ${gives}")
 pkgdesc="A visual novel engine"
-pkgver="8.2.0"
+pkgver="7.7.0"
 arch=("amd64" "arm64")
 homepage='https://www.renpy.org'
 maintainer="vigress8 <vig@disroot.org>"
