@@ -17,12 +17,12 @@ fname="sh.fhs.KatawaShoujoReEngineered"
 frepo="https://github.com/flathub/${fname}/raw/master"
 
 prepare() {
-  curl -o "${gives}.desktop"     -L "${frepo}/${fname}.desktop"
-  curl -o "${gives}.appdata.xml" -L "${frepo}/${fname}.appdata.xml"
-  curl -o "${gives}.svg"         -L "${frepo}/${gives^^}_Logo.svg"
+  curl -o "${gives}.desktop"     -Ls "${frepo}/${fname}.desktop"
+  curl -o "${gives}.appdata.xml" -Ls "${frepo}/${fname}.appdata.xml"
+  curl -o "${gives}.svg"         -Ls "${frepo}/${gives^^}_Logo.svg"
   cat > "${gives}" <<- END
   #!/bin/sh
-  renpy /usr/share/${gives} "$@"
+  renpy /usr/share/${gives} "\$@"
 END
 
   sed "s|Icon=${fname}|Icon=${gives}|g" \
