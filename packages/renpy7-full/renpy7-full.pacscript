@@ -1,11 +1,17 @@
-name="renpy7-full"
+name="renpy-full"
 gives="renpy"
-replace="${gives}"
+pkgdesc="A visual novel engine"
+pkgver="7.7.0"
+timestamp="24012702"
+homepage='https://www.renpy.org'
+arch=("amd64" "arm64")
+replace=("${gives}")
 breaks=("${gives}7" "${gives}-full" "${gives}-nightly")
 depends=(
   'ffmpeg' 'libfreetype6' 'libfribidi0'
-  'libsdl2-gfx-1.0-0' 'python3-ecdsa'
-  'python3-future' 'python3-pygame-sdl2'
+  'libglvnd0' 'libglx0' 'libsdl2-gfx-1.0-0'
+  'libx11-6' 'libxau6' 'libxcb1'
+  'libxdmcp6'
 )
 repology=("project: ${gives}")
 pkgdesc="A visual novel engine"
@@ -13,7 +19,7 @@ pkgver="7.7.0"
 arch=("amd64" "arm64")
 homepage='https://www.renpy.org'
 maintainer="vigress8 <vig@disroot.org>"
-url="https://www.renpy.org/dl/${pkgver}/${gives}-${pkgver}-sdk.tar.bz2"
+url="https://github.com/renpy/renpy/releases/download/${pkgver}.${timestamp}/${gives}-${pkgver}-sdk.tar.bz2"
 case "${CARCH}" in
   amd64)
     hash="02cfcc1423ff29465932900f5423d9e0a951ad45b508911a666bb45f0fbe34cf"
@@ -24,7 +30,8 @@ case "${CARCH}" in
     ;;
   *) ;;
 esac
-
+maintainer="vigress8 <vig@disroot.org>"
+repology=("project: ${gives}")
 declare -A sums=(
     ["${gives}-${pkgver}-rapt.zip"]="a55c1894cac754b4660f75e5540350f2033530a035eba0294b8a6d256a29559d"
     ["${gives}-${pkgver}-renios.zip"]="2d8bf51b49206a2ded6103e4f525397c9a387d3c0a8cba02bb59e46716ce1319"
@@ -34,23 +41,25 @@ declare -A sums=(
 
 prepare() {
   for filename in "${!sums[@]}"; do
-    curl -LO "https://www.renpy.org/dl/${pkgver}/${filename}"
+    curl -LO \
+    "https://github.com/renpy/renpy/releases/download/${pkgver}.${timestamp}/${filename}"
     sha256sum -c <<< "${sums[${filename}]} ${filename}" > /dev/null || {
       fancy_message error "Integrity check for ${filename} failed"
       return 1
     }
   done
+
+  unzip -q ./"*.zip"
+  rm ./*.zip
 }
 
 package() {
-  unzip -q ./"*.zip"
-  rm ./*.zip
+  sudo install -d "${pkgdir}/"{opt,usr/share/doc}"/${gives}"
   sudo install -Dm644 LICENSE.txt -t "${pkgdir}/usr/share/licenses/${gives}"
   sudo install -Dm644 launcher/game/images/logo.png "${pkgdir}/usr/share/pixmaps/${gives}.png"
   sudo install -Dm644 launcher/game/images/logo32.png "${pkgdir}/usr/share/icons/hicolor/32x32/apps/${gives}.png"
-  sudo install -Dm644 doc/* -t "${pkgdir}/usr/share/doc/${gives}"
-  rm -rf doc LICENSE.txt "${gives}.app" lib/{py3-{mac-universal,windows-x86_64},python3.9}
-  sudo mkdir -p "${pkgdir}/opt/${gives}"
+  sudo cp -r doc "${pkgdir}/usr/share/doc/${gives}"
+  rm -rf doc LICENSE.txt
   sudo mv ./* "${pkgdir}/opt/${gives}"
 
   sudo install -Dm644 /dev/stdin "${pkgdir}/usr/share/applications/${gives}.desktop" <<- END
@@ -65,8 +74,7 @@ package() {
   Categories=Development;Game;
 END
 
-  sudo chgrp -R games "${pkgdir}/opt/${gives}/"{the_question,tutorial}
-  sudo chmod g+w "${pkgdir}/opt/${gives}/"{the_question,tutorial}
+  sudo chmod -R +w "${pkgdir}/opt/${gives}/"{the_question,tutorial}
 }
 
 post_install() {
