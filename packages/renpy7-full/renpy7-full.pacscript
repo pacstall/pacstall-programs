@@ -32,23 +32,35 @@ case "${CARCH}" in
 esac
 maintainer="vigress8 <vig@disroot.org>"
 repology=("project: ${gives}")
-declare -A sums=(
-    ["${gives}-${pkgver}-rapt.zip"]="a55c1894cac754b4660f75e5540350f2033530a035eba0294b8a6d256a29559d"
-    ["${gives}-${pkgver}-renios.zip"]="2d8bf51b49206a2ded6103e4f525397c9a387d3c0a8cba02bb59e46716ce1319"
-    ["${gives}-${pkgver}-steam.zip"]="22de7021ce5cdde7f88790bb95cccdf0fc4b516bacfc55da5e526aae820a6f09"
-    ["${gives}-${pkgver}-web.zip"]="7e8dc3c2ec15ffbd60db29dcc99100fadbe706a41eb1b9e037b02fa63a87bf13"
-  )
+source=(
+  "${gives}-${pkgver}-rapt.zip"
+  "${gives}-${pkgver}-renios.zip"
+  "${gives}-${pkgver}-steam.zip"
+  "${gives}-${pkgver}-web.zip"
+)
+hashes=(
+ "a55c1894cac754b4660f75e5540350f2033530a035eba0294b8a6d256a29559d"
+ "2d8bf51b49206a2ded6103e4f525397c9a387d3c0a8cba02bb59e46716ce1319"
+ "22de7021ce5cdde7f88790bb95cccdf0fc4b516bacfc55da5e526aae820a6f09"
+ "7e8dc3c2ec15ffbd60db29dcc99100fadbe706a41eb1b9e037b02fa63a87bf13"
+)
 
 prepare() {
-  for filename in "${!sums[@]}"; do
-    curl -LO \
-    "https://github.com/renpy/renpy/releases/download/${pkgver}.${timestamp}/${filename}"
-    sha256sum -c <<< "${sums[${filename}]} ${filename}" > /dev/null || {
-      fancy_message error "Integrity check for ${filename} failed"
+  local i file _hash
+  for i in "${!source[@]}"; do
+    file="${source[${i}]}" _hash="${hashes[${i}]}"
+    fancy_message sub "Downloading ${file}"
+    curl -sLO \
+    "https://github.com/renpy/renpy/releases/download/${pkgver}.${timestamp}/${file}"
+    fancy_message sub "Verifying ${file}"
+    sha256sum -c <<< "${_hash} ${file}" > /dev/null || {
+      fancy_message error "Integrity check for ${file} failed"
       return 1
     }
   done
+  unset i file _hash
 
+  fancy_message info "Unpacking archives"
   unzip -q ./"*.zip"
   rm ./*.zip
 }
