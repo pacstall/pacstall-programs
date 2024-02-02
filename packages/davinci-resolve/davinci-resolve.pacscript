@@ -14,15 +14,15 @@ download_id="f38fc270c4c040bea4782182d0fbb367"
 siteurl="https://www.blackmagicdesign.com/api/register/us/download/${download_id}"
 useragent="User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36"
 _reqjson="{ \
-    \"firstname\": \"Pacstall\", \
-    \"lastname\": \"Alpaca\", \
-    \"email\": \"someone@pacstall.dev\", \
+    \"firstname\": \"Arch\", \
+    \"lastname\": \"Linux\", \
+    \"email\": \"someone@archlinux.org\", \
     \"phone\": \"202-555-0194\", \
     \"country\": \"us\", \
     \"street\": \"Bowery 146\", \
-    \"state\": \"Unova\", \
-    \"city\": \"Nimbasa\", \
-    \"product\": \"${_product}\" \
+    \"state\": \"New York\", \
+    \"city\": \"AUR\", \
+    \"product\": \"$_product\" \
 }"
 _reqjson="$(printf '%s' "${_reqjson}" | sed 's/[[:space:]]\+/ /g')"
 
@@ -55,11 +55,15 @@ custom_download() {
 }
 
 prepare() {
-  curl -sO "${mrd_url}"; tar xf ./*.tar.gz
+  curl -sO "${mrd_url}"
+  tar xf ./*.tar.gz
   fancy_message info "Downloading DaVinci Resolve"
   custom_download
+  fancy_message info "Verifying DaVinci Resolve"
+sha256sum -c <<< "${resolve_hash} ${name}.zip"
   fancy_message info "Unpacking DaVinci Resolve"
-  unzip -q ./*.zip; rm ./*.zip
+  unzip -q "${name}.zip"
+  rm "${name}.zip"
 }
 
 build() {
@@ -68,7 +72,7 @@ build() {
 }
 
 package() {
-  sudo dpkg -i ./*.deb
+  sudo dpkg -i "${name}.deb"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
