@@ -57,10 +57,13 @@ custom_download() {
 prepare() {
   curl -sO "${mrd_url}"
   tar xf ./*.tar.gz
+  mv ./makeresolvedeb_*.sh makeresolvedeb
+  chmod +x makeresolvedeb
+
   fancy_message info "Downloading DaVinci Resolve"
   custom_download
   fancy_message info "Verifying DaVinci Resolve"
-sha256sum -c <<< "${resolve_hash} ${name}.zip"
+  sha256sum -c <<< "${resolve_hash} ${name}.zip"
   fancy_message info "Unpacking DaVinci Resolve"
   unzip -q "${name}.zip"
   rm "${name}.zip"
