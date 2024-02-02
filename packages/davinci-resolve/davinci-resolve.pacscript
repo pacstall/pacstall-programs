@@ -13,7 +13,7 @@ product="DaVinci Resolve"
 download_id="f38fc270c4c040bea4782182d0fbb367"
 siteurl="https://www.blackmagicdesign.com/api/register/us/download/${download_id}"
 useragent="User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36"
-_reqjson="{ \
+reqjson="{ \
     \"firstname\": \"Arch\", \
     \"lastname\": \"Linux\", \
     \"email\": \"someone@archlinux.org\", \
@@ -22,9 +22,9 @@ _reqjson="{ \
     \"street\": \"Bowery 146\", \
     \"state\": \"New York\", \
     \"city\": \"AUR\", \
-    \"product\": \"$_product\" \
+    \"product\": \"${product}\" \
 }"
-_reqjson="$(printf '%s' "${_reqjson}" | sed 's/[[:space:]]\+/ /g')"
+reqjson="$(printf '%s' "${reqjson}" | sed 's/[[:space:]]\+/ /g')"
 
 resolve_url="$(curl -s \
   -H 'Host: www.blackmagicdesign.com' \
