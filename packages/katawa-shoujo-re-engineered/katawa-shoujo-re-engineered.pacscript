@@ -36,13 +36,14 @@ build() {
 }
 
 package() {
+  sudo install -d "${pkgdir}/usr/share"
   sudo cp -r game "${pkgdir}/usr/share/${gives}"
 
   sudo install -Dm755 "${gives}"             -t "${pkgdir}/usr/bin"
   sudo install -Dm644 "${gives}.desktop"     -t "${pkgdir}/usr/share/applications"
   sudo install -Dm644 "${gives}.appdata.xml" -t "${pkgdir}/usr/share/appdata"
   sudo install -Dm644 "${gives}.svg"         -t "${pkgdir}/usr/share/icons/hicolor/scalable/apps"
-  sudo install -Dm644 game/LICENSE           -t "${pkgdir}/usr/share/licenses/${gives}"
+  sudo install -Dm644 LICENSE                -t "${pkgdir}/usr/share/licenses/${gives}"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
