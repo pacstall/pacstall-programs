@@ -2,12 +2,12 @@ name="bitwarden-cli-bin"
 pkgname="bitwarden-cli"
 gives="bw"
 repology=("project: ${pkgname}")
-pkgver="2023.7.0"
+pkgver="2024.1.0"
 url="https://github.com/bitwarden/clients/releases/download/cli-v${pkgver}/${gives}-linux-${pkgver}.zip"
 breaks=("${pkgname}-git")
 replace=("${pkgname}")
 pkgdesc="Bitwarden's command-line interface - Binary"
-hash="15bd4f7cc8e0b6a3d29a319bcad30d011e590698e5e0dc1e54e7950619b98024"
+hash="05c906bf3709151ffcd063624047c327086f80f6b0256ded6a8bcaea044fdb02"
 maintainer="Elsie19 <elsie19@pm.me>"
 
 package() {
