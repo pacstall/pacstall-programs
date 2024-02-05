@@ -33,7 +33,7 @@ jobs:
       - id: checkout
         uses: actions/checkout@v4
       - id: paths
-        uses: dorny/paths-filter@v2
+        uses: dorny/paths-filter@v3
         with:
           filters: |
             pacscripts:
@@ -136,7 +136,7 @@ jobs:
       - id: checkout
         uses: actions/checkout@v4
       - id: paths
-        uses: dorny/paths-filter@v2
+        uses: dorny/paths-filter@v3
         with:
           filters: |
             pacscripts:
