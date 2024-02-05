@@ -1,18 +1,18 @@
 name="ticktick-deb"
 gives="ticktick"
 repology=("project: ticktick" "repo: aur")
-pkgver="2.0.0"
+pkgver="2.0.10"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
 case "${CARCH}" in
   amd64)
     url="https://ticktick-download-linux.s3.amazonaws.com/download/linux/linux_deb_x64/ticktick-${pkgver}-amd64.deb"
-    hash="2ce96561db5ef98fa96e35c8db3390af0a6d994a380a4e8ec98a045fab2e634f"
+    hash="c22827ed4d69e075fafd1c27326da255235a611867f086ba4107795fa9b70741"
     arch=("amd64")
     ;;
   arm64)
     url="https://ticktick-download-linux.s3.amazonaws.com/download/linux/linux_deb_x64/ticktick-${pkgver}-arm64.deb"
-    hash="a01587c471dfc06d88e5192eafa8584ea826a1b833ad91d65d1d7028ee2c5d65"
+    hash="8e5c2ff5c9f223d5803b153a38ab34dbf326c6c4f107549df64fceb24f3a0521"
     arch=("arm64")
     ;;
   *)
