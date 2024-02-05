@@ -27,12 +27,12 @@ case "${DISTRO#*:}" in
   bookworm)
     distro_base="Debian"
     distro_release="12"
-    hash="03a9fe62162e69df95c4a4394319110964de2cf019db3349b3666a1ea9d492f2"
+    hash="a72c97126443e62c90514f0724cdebeb3e4707a5f6812c909c2f3538905095f7"
     ;;
   bullseye)
     distro_base="Debian"
     distro_release="11"
-    hash="03a9fe62162e69df95c4a4394319110964de2cf019db3349b3666a1ea9d492f2"
+    hash="ae9b59d0d11e2ed0db9dee7e364ffb77fbcd3f03b2fc86fbf3db1e18c448b2a3"
     ;;
   *) ;;
 esac
