@@ -4,7 +4,7 @@ pkgver="1.4.2"
 pkgdesc="A modern version of the classic bishoujo-style visual novel"
 repology=("project: ${name}")
 homepage='https://www.fhs.sh/projects'
-pacdeps=("renpy-full")
+depends=("renpy")
 optdepends=(
   "espeak-ng: speech synthesizer for accessibility"
   "mbrola:    speech synthesizer for accessibility"
