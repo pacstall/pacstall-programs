@@ -8,10 +8,11 @@ arch=("amd64" "arm64")
 replace=("${gives}")
 breaks=("${gives}7" "${gives}7-full" "${gives}-nightly")
 depends=(
-  'ffmpeg' 'libfreetype6' 'libfribidi0'
-  'libglvnd0' 'libglx0' 'libsdl2-gfx-1.0-0'
-  'libx11-6' 'libxau6' 'libxcb1'
-  'libxdmcp6'
+  'libfreetype6' 'libfribidi0'
+  'libglvnd0' 'libglx0' 'libpng16-16'
+  'libsdl2-gfx-1.0-0' 'libswresample4'
+  'libswscale7' 'libx11-6' 'libxau6'
+  'libxcb1' 'libxdmcp6' 'zlib1g'
 )
 url="https://github.com/renpy/renpy/releases/download/${pkgver}.${timestamp}/${gives}-${pkgver}-sdk.tar.bz2"
 case "${CARCH}" in
