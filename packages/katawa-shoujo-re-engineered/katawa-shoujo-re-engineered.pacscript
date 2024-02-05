@@ -5,6 +5,7 @@ pkgdesc="A modern version of the classic bishoujo-style visual novel"
 repology=("project: ${name}")
 homepage='https://www.fhs.sh/projects'
 depends=("renpy")
+makedepends=("renpy")
 optdepends=(
   "espeak-ng: speech synthesizer for accessibility"
   "mbrola:    speech synthesizer for accessibility"
