@@ -20,4 +20,3 @@ package() {
   # Install binary
   sudo install -Dm755 "${pkgname}_linux_amd64" "${pkgdir}/usr/bin/${pkgname}"
 }
-# vim:set ft=sh ts=2 sw=2 et:

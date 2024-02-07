@@ -23,5 +23,3 @@ post_install() {
 post_remove() {
   sudo rm -rf "/usr/"{bin,share/licenses}"/${name}"
 }
-
-# vim:set ft=sh ts=2 sw=2 :et

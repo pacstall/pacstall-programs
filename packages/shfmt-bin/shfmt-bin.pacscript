@@ -20,4 +20,3 @@ repology=("project: ${pkgname}")
 package() {
   sudo install -Dm755 "shfmt_v${pkgver}_linux_amd64" "${pkgdir}/usr/bin/${pkgname}"
 }
-# vim:set ft=sh ts=2 sw=2 et:

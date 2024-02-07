@@ -29,5 +29,3 @@ build() {
 package() {
   sudo install -D "${name}" "${pkgdir}/usr/bin/${name}"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

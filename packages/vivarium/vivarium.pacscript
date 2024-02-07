@@ -14,4 +14,3 @@ build() {
 package() {
   sudo DESTDIR="${pkgdir}" ninja -C build install
 }
-# vim:set ft=sh ts=2 sw=2 et:

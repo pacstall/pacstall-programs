@@ -21,5 +21,3 @@ package() {
   sudo install -d "${pkgdir}/usr/share/doc/zig"
   sudo cp -r ./doc/* "${pkgdir}/usr/share/doc/zig"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

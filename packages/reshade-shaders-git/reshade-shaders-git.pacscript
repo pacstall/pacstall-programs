@@ -23,5 +23,3 @@ package() {
   sudo install -dm 755 "${pkgdir}/opt/reshade/textures"
   sudo install -Dm 644 Textures/*.* "${pkgdir}/opt/reshade/textures/"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

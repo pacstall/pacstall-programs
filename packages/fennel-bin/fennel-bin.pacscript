@@ -21,4 +21,3 @@ package() {
   sudo install -Dm755 "fennel-${pkgver}-x86_64" "${pkgdir}/usr/bin/${pkgname}"
 
 }
-# vim:set ft=sh ts=2 sw=2 et:

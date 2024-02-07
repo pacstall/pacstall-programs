@@ -43,5 +43,3 @@ package() {
 
   sudo install -Dm 755 "bin/cb" "${pkgdir}/usr/bin/cb"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

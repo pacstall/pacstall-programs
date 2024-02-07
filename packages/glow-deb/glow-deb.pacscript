@@ -16,4 +16,3 @@ case "${CARCH}" in
 esac
 pkgdesc="Render markdown on the CLI, with pizzazz!"
 repology=("project: glow")
-# vim:set ft=sh ts=2 sw=2 et:

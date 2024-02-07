@@ -11,4 +11,3 @@ maintainer="angelofallars <ba.fallaria@gmail.com>"
 package() {
   sudo install -D "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
 }
-# vim:set ft=sh ts=2 sw=2 et:

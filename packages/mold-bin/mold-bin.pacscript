@@ -29,4 +29,3 @@ package() {
   sudo mkdir -p "${pkgdir}/usr/"
   sudo mv ./* "${pkgdir}/usr/"
 }
-# vim:set ft=sh ts=2 sw=2 et:

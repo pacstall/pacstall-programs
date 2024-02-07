@@ -20,4 +20,3 @@ repology=("project: ${pkgname}")
 package() {
   sudo make DESTDIR="${pkgdir}" install
 }
-# vim:set ft=sh ts=2 sw=2 et:

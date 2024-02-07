@@ -18,4 +18,3 @@ build() {
 package() {
   sudo make install DESTDIR="${pkgdir}"
 }
-# vim:set ft=sh ts=2 sw=2 et:

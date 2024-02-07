@@ -22,4 +22,3 @@ package() {
 post_remove() {
   sudo rm -rf "/usr/share/licenses/${pkgname}"
 }
-# vim:set ft=sh ts=4 sw=4 noet:

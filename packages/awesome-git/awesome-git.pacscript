@@ -44,4 +44,3 @@ post_remove() {
   # Remove desktop file
   sudo rm -f /usr/share/xsessions/"${pkgname}".desktop
 }
-# vim:set ft=sh ts=2 sw=2 et:

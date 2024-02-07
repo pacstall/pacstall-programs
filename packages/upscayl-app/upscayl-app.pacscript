@@ -21,4 +21,3 @@ package() {
   wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
   sudo install -Dm644 "${pkgname}.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
 }
-# vim:set ft=sh ts=2 sw=2 et:

@@ -17,5 +17,3 @@ maintainer="Andrew Barchuk <andrew@raindev.io>"
 package() {
   sudo install -Dm755 "./exercism" -t "${pkgdir}/usr/bin"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

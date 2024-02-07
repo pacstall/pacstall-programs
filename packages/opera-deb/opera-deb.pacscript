@@ -8,5 +8,3 @@ pkgdesc="Multi-platform web browser developed by its namesake company Opera"
 hash="2539ca8caf9c70c01e7ff559b83a564be1450eaea5a257a7d2995c91c3c0fbdc"
 arch=('amd64')
 repology=("project: opera")
-
-# vim:set ft=sh ts=2 sw=2 et:

@@ -39,4 +39,3 @@ package() {
   # license
   sudo install -vDm644 -t "${pkgdir}/usr/share/licenses/${pkgname}" LICENSE
 }
-# vim:set ft=sh ts=2 sw=2 et:

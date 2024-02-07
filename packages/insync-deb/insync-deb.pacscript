@@ -10,4 +10,3 @@ url="https://cdn.insynchq.com/builds/linux/insync_${pkgver}-${codename}_amd64.de
 gives="insync"
 replace=("insync")
 pkgdesc="Manage your Google Drive, OneDrive, and Dropbox files straight from your Desktop"
-# vim:set ft=sh ts=2 sw=2 et:

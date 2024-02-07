@@ -11,4 +11,3 @@ hash="470a2998e2f8e545aa3975043983794dcd1a1f07464899b156c9cb32b2dfe2b2"
 package() {
   sudo install -Dm755 "rpcs3-v${pkgver}-${pkgsha:0:8}_linux64.AppImage" "${pkgdir}/usr/bin/rpcs3"
 }
-# vim:set ft=sh ts=2 sw=2 et:

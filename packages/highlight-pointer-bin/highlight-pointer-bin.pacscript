@@ -13,4 +13,3 @@ package() {
   # Install bin
   sudo install -Dm755 "highlight-pointer" "${pkgdir}/usr/bin/${pkgname}"
 }
-# vim:set ft=sh ts=2 sw=2 et:

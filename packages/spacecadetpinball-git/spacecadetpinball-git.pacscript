@@ -77,5 +77,3 @@ END
 post_remove() {
   sudo rm -rf "/usr/share/licenses/${pkgname}"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

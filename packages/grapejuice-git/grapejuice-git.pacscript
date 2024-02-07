@@ -17,5 +17,3 @@ package() {
   sudo mkdir -p "${pkgdir}"
   sudo tar -xf ./*.tar.gz -C "${pkgdir}"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

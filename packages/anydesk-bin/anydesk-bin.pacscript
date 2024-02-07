@@ -28,5 +28,3 @@ package() {
   sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/"
   sudo mv "./icons/hicolor/"* "${pkgdir}/usr/share/icons/hicolor/"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

@@ -9,5 +9,3 @@ repology=("project: ${gives}")
 package() {
   sudo install -vDm755 -t "${pkgdir}/usr/bin" "btrfs-du"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

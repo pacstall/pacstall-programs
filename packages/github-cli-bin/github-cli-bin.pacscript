@@ -19,5 +19,3 @@ package() {
   sudo mkdir -p "${pkgdir}/usr/share/man/man1"
   sudo mv "./share/man/man1" "${pkgdir}/usr/share/man"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

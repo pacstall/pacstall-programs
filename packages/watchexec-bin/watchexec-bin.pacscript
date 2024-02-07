@@ -19,5 +19,3 @@ package() {
   sudo install -Dm644 "./watchexec.1" -t "${pkgdir}/usr/share/man/man1"
   sudo install -Dm644 "./completions/bash" "${pkgdir}/usr/share/bash-completion/completions/watchexec"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

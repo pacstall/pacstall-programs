@@ -8,4 +8,3 @@ hash="e1bac169546317f246cc58adbdd20264c78486f12112b3c9ee303aa863c38f7f"
 arch=('amd64')
 maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: ${gives}")
-# vim:set ft=sh ts=2 sw=2 et:

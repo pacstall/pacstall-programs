@@ -8,5 +8,3 @@ hash="fa9353fa0c6e1e67b87757c4bd6bf515f85d3fc16d41b12cc26f7a673892ad01"
 maintainer="Elsie19 <elsie19@pm.me>"
 arch=('amd64')
 repology=("project: bat-cat")
-
-# vim:set ft=sh ts=2 sw=2 et:

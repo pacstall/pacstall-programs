@@ -44,4 +44,3 @@ package() {
   # shellcheck disable=SC2086
   sudo ./install.sh ${_INSTALL_OPTS} --dest "${pkgdir}/usr/share/themes"
 }
-# vim:set ft=sh ts=2 sw=2 et:

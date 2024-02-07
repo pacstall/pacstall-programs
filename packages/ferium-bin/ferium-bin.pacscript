@@ -16,5 +16,3 @@ package() {
   "${pkgdir}/usr/bin/${pkgname}" complete fish | sudo install -Dm644 /dev/stdin "${pkgdir}/usr/share/fish/vendor_completions.d/ferium.fish"
   "${pkgdir}/usr/bin/${pkgname}" complete zsh | sudo install -Dm644 /dev/stdin "${pkgdir}/usr/share/zsh/site-functions/_ferium"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

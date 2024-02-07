@@ -27,4 +27,3 @@ package() {
   wget -q -O "${pkgname}.fish" "https://raw.githubusercontent.com/epi052/${pkgname}/${pkgver}/shell_completions/${pkgname}.fish"
   sudo install -Dm644 "./feroxbuster.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/feroxbuster.fish"
 }
-# vim:set ft=sh ts=2 sw=2 et:

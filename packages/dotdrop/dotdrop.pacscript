@@ -13,5 +13,3 @@ package() {
   sudo install -Dm644 completion/_dotdrop-completion.zsh "${pkgdir}/usr/share/zsh/site-functions/_${name}"
   sudo install -Dm644 completion/dotdrop.fish "${pkgdir}/usr/share/fish/completions/${name}.fish"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

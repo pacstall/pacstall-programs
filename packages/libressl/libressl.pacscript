@@ -33,4 +33,3 @@ post_install() {
   # Configure LibreSSL linker run-time bindings
   sudo ldconfig
 }
-# vim:set ft=sh ts=2 sw=2 et:

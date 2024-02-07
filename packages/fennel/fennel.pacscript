@@ -19,4 +19,3 @@ package() {
   # Install binary
   sudo install -Dm755 "fennel-${pkgver}" "${pkgdir}/usr/bin/${name}"
 }
-# vim:set ft=sh ts=2 sw=2 et:

@@ -15,5 +15,3 @@ pkgdesc="Beautiful, useful, configurable MOTD generation with zero runtime depen
 hash="e2abcb97de92bee14cdc85e8dec46af17c15fdb03cc3a4b3d6094b1c2a079670"
 arch=('amd64')
 repology=("project: rust:motd")
-
-# vim:set ft=sh ts=2 sw=2 et:

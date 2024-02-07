@@ -20,4 +20,3 @@ repology=("project: neovide")
 package() {
   sudo install -vDm755 "${gives}" -t "${pkgdir}/usr/bin"
 }
-# vim:set ft=sh ts=2 sw=2 et:
