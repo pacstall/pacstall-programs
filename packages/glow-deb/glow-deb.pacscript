@@ -2,7 +2,7 @@ name="glow-deb"
 gives="glow"
 replace=("${gives}")
 pkgver="1.5.1"
-arch=("amd64" "arch64")
+arch=("amd64" "arm64")
 case "${CARCH}" in
   amd64)
     url="https://github.com/charmbracelet/glow/releases/download/v${pkgver}/glow_${pkgver}_amd64.deb"
