@@ -1,12 +1,12 @@
 name="arduino-ide-bin"
 pkgname="arduino-ide"
-pkgver="2.2.1"
+pkgver="2.3.0"
 repology=("project: arduino")
 maintainer="DismissedGuy <me@mikealmel.ooo>"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
 url="https://downloads.arduino.cc/${pkgname}/${pkgname}_${pkgver}_Linux_64bit.zip"
 pkgdesc="An open-source IDE that makes it easy to write code and upload it to Arduino boards"
-hash="97cae4f65aa717c45e868c0314068d9130bda3a94a76f4db0dc5bcbe71385481"
+hash="fcb3184ca5204a2eb2c03e93cad4d3a97fd8751b377c9724ed90b21a2ffed490"
 
 prepare() {
   # potential leftover symlink from v1
