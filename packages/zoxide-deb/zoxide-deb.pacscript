@@ -2,18 +2,17 @@ name="zoxide-deb"
 gives="zoxide"
 pkgdesc="A smarter cd command. Supports all major shells."
 maintainer="lfromanini <lfromanini@yahoo.com>"
-repology=("project: ${gives}")
+repology=("project: zoxide")
 arch=("amd64" "arm64")
-pkgver="0.9.2"
+pkgver="0.9.3"
+url="https://github.com/ajeetdsouza/zoxide/releases/download/v${pkgver}/zoxide_${pkgver}-1_${CARCH}.deb"
 
 case "${CARCH}" in
   amd64)
-    url="https://github.com/ajeetdsouza/zoxide/releases/download/v${pkgver}/zoxide_${pkgver}_amd64.deb"
-    hash="a50c0073270aa3118c8505e1e6c4deec385cef61a25d1916d7c2ad7ba9df8839"
+    hash="3c4a2b249338cd5d5e1b932f86293a8326fcd72752bf2ede76c4b513a3601c5e"
     ;;
   arm64)
-    url="https://github.com/ajeetdsouza/zoxide/releases/download/v${pkgver}/zoxide_${pkgver}_arm64.deb"
-    hash="3b763f2b341fc9eacf68564fc47b9c866988f3d850d3fa9e12eb026cbbc219cf"
+    hash="bddf6acca08d20b4abc8eeaf2cd0598cc86e1f3fa5084867a2e37b208cc698c6"
     ;;
   *) return 1 ;;
 esac
