@@ -1,5 +1,4 @@
 name="git-butler-deb"
-name="git-butler-deb"
 # there is no repology property, since the package is not even in repology (with the exception of an AUR package, with a name that doesnt match the official deb file
 arch=('amd64')
 pkgver="0.10.6-619"
