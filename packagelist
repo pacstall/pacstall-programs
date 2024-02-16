@@ -140,6 +140,7 @@ genymotion-bin
 gfn-electron-bin
 gir1.2-xapp-1.0-deb
 git
+git-butler-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
@@ -339,7 +340,6 @@ pgmigrate
 picom
 pipes.sh-bin
 pipewire
-pipewire-bundle
 planner-git
 plexmediaserver-deb
 polybar
