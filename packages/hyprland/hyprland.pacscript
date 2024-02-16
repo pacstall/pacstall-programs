@@ -7,7 +7,7 @@ makedepends=('meson' 'ninja-build' 'cmake-extras' 'cmake' 'gettext' 'gettext-bas
 pacdeps=('xdg-desktop-portal-hyprland')
 case "${DISTRO}" in
   ubuntu:noble | ubuntu:devel) pacdeps+=('libtomlplusplus-header') makedepends+=('vulkan-utility-libraries-dev') ;;
-  debian:sid) ;;
+  debian:sid) makedepends+=('vulkan-validationlayers-dev') ;;
   *) pacdeps+=('libtomlplusplus-header') makedepends+=('vulkan-validationlayers-dev') ;;
 esac
 optdepends=("kitty: default config terminal")

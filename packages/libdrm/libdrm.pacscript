@@ -1,5 +1,6 @@
 name="libdrm"
 pkgver="2.4.120"
+pkgrel="2"
 pkgdesc="Userspace interface to kernel DRM services"
 homepage="https://dri.freedesktop.org/"
 arch=("amd64" "arm64")
