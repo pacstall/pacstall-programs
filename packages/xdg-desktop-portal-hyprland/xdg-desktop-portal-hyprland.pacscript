@@ -12,7 +12,11 @@ pkgdesc="xdg-desktop-portal backend for hyprland"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 arch=("amd64" "arm64")
 depends=("pipewire" "xdg-desktop-portal" "grim" "slurp")
-makedepends=("cmake" "pkg-config" "meson" "ninja-build" "scdoc" "wayland-utils" "wayland-protocols" "libgbm-dev" "libinih-dev" "uuid-dev" "qt6-base-dev" "qt6-wayland-dev" "libpipewire-0.3-dev" "libsdbus-c++-dev" "libsdbus-c++-bin" "libdrm-dev")
+makedepends=("cmake" "pkg-config" "meson" "ninja-build" "scdoc" "wayland-utils" "wayland-protocols" "libgbm-dev" "libinih-dev" "uuid-dev" "qt6-base-dev" "qt6-wayland-dev" "libpipewire-0.3-dev" "libsdbus-c++-dev" "libsdbus-c++-bin")
+case "${DISTRO}" in
+  ubuntu:mantic) pacdeps+=('libdrm') ;;
+  *) makedepends+=('libdrm-dev') ;;
+esac
 
 prepare() {
   sudo mkdir -p "${pkgdir}/usr/share/xdg-desktop-portal/"
