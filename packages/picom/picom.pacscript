@@ -7,7 +7,7 @@ replace=("${name}")
 breaks=("compton" "${name}-git" "ibhagwan-${name}-git" "jonaburg-${name}-git")
 makedepends=(
   "libconfig-dev" "libdbus-1-dev" "libegl-dev"
-  "libev-dev" "libgl-dev" "libpcre2-dev"
+  "libepoxy-dev" "libev-dev" "libgl-dev" "libpcre2-dev"
   "libpixman-1-dev" "libx11-xcb-dev" "libxcb1-dev"
   "libxcb-composite0-dev" "libxcb-damage0-dev"
   "libxcb-dpms0-dev" "libxcb-glx0-dev"
@@ -18,8 +18,8 @@ makedepends=(
   "libxext-dev" "meson" "ninja-build" "uthash-dev"
 )
 depends=(
-  "libconfig9" "libdbus-1-3" "libegl1" "libev4"
-  "libgl1" "libpcre2-8-0" "libpixman-1-0"
+  "libconfig9" "libdbus-1-3" "libegl1" "libepoxy0"
+  "libev4" "libgl1" "libpcre2-8-0" "libpixman-1-0"
   "libx11-6" "libx11-xcb1" "libxcb-composite0"
   "libxcb-damage0" "libxcb-glx0" "libxcb-image0"
   "libxcb-present0" "libxcb-randr0"
