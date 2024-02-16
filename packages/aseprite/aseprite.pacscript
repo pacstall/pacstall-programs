@@ -3,7 +3,7 @@
 # Credit to the listed maintainers & contributors
 
 name="aseprite"
-pkgver="1.3.2"
+pkgver="1.3.3"
 pkgdesc="Animated sprite editor & pixel art tool"
 repology=("project: ${name}")
 homepage="https://www.aseprite.org/"
@@ -12,11 +12,10 @@ depends=("hicolor-icon-theme")
 arch=("amd64")
 maintainer="vigress8 <vig@disroot.org>"
 url="https://github.com/${name}/${name}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
-hash="0246b18ff77d4c4e813c7f40207bfbd1387813b82d57900cde869dab370a26cc"
+hash="0057a1488165b9ef8afe6a0bc45154e8ca31e42ed35754444a71a0e366405849"
 skiaver="m102-861e4743af"
 skiaurl="https://github.com/${name}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
 skiahash="66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
-patch=("https://aur.archlinux.org/cgit/aur.git/plain/desktop.patch?h=aseprite")
 
 prepare() {
   wget -q "${skiaurl}"
@@ -25,9 +24,6 @@ prepare() {
     return 1;
   fi
   unzip -qq "Skia-Linux-Release-x64-libc++.zip" -d skia
-
-  # Apply patch from AUR
-  patch -stp1 <PACSTALL_patchesdir/"desktop.patch?h=aseprite"
 }
 
 build() {
