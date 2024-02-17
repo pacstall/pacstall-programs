@@ -3,7 +3,7 @@
 # Credit to the listed maintainers & contributors
 
 name="aseprite"
-pkgver="1.3.3"
+pkgver="1.3.4"
 pkgdesc="Animated sprite editor & pixel art tool"
 repology=("project: ${name}")
 homepage="https://www.aseprite.org/"
@@ -12,7 +12,7 @@ depends=("hicolor-icon-theme")
 arch=("amd64")
 maintainer="vigress8 <vig@disroot.org>"
 url="https://github.com/${name}/${name}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
-hash="0057a1488165b9ef8afe6a0bc45154e8ca31e42ed35754444a71a0e366405849"
+hash="93e87272cc5159ff695650d05d3c52a37074a97a630769910a84b71e914456a2"
 skiaver="m102-861e4743af"
 skiaurl="https://github.com/${name}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
 skiahash="66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
