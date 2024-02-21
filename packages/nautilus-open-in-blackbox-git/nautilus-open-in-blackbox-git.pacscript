@@ -12,8 +12,8 @@ pkgver() {
   git ls-remote "${url}" main | head -n1 | cut -f1 | cut -c1-8
 }
 package() {
-  cd "$name-$pkgver"
-  sudo install -Dm644 -t "$pkgdir/usr/share/nautilus-python/extensions" nautilus-open-in-blackbox.py
+  cd "${name}-${pkgver}"
+  sudo install -Dm644 -t "${pkgdir}/usr/share/nautilus-python/extensions" nautilus-open-in-blackbox.py
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
