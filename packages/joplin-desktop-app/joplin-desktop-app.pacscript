@@ -12,7 +12,7 @@ makedepends=("libfuse2")
 depends=("libfuse2")
 
 package() {
-  sudo install -Dm755 "Joplin-${pkgver}.AppImage" "${pkgdir}/usr/bin/Joplin.AppImage"
+  sudo install -Dm755 "Joplin-${pkgver}.AppImage" "${pkgdir}/usr/bin/${gives}"
   wget -q -O "joplin-desktop.png" "https://joplinapp.org/images/Icon512.png"
   sudo install -Dm644 "joplin-desktop.png" "${pkgdir}/usr/share/pixmaps/joplin-desktop.png"
   sudo mkdir -p "${pkgdir}/usr/share/applications/"
