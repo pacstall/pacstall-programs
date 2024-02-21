@@ -20,7 +20,7 @@ package() {
     Encoding=UTF-8
     Name=Joplin
     Comment=Joplin for Desktop
-    Exec=Joplin.AppImage %u
+    Exec=joplin-desktop %u
     Icon=joplin-desktop
     StartupWMClass=Joplin
     Type=Application
