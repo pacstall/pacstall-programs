@@ -1,15 +1,15 @@
 name="joplin-desktop-app"
 gives="joplin-desktop"
-homepage='https://joplinapp.org/'
-pkgdesc="Joplin - the secure note taking and to-do app with synchronisation capabilities for Windows, macOS, Linux, Android and iOS"
-maintainer="lfromanini <lfromanini@yahoo.com>"
-repology=("project: joplin-desktop")
-arch=("amd64")
 pkgver="2.13.15"
-url="https://github.com/laurent22/joplin/releases/download/v${pkgver}/Joplin-${pkgver}.AppImage"
-hash="e6d2ce3400a165a889aaf2bf960d4d1931f72d80657b32009ad42f9e0d2734d7"
 makedepends=("libfuse2")
 depends=("libfuse2")
+homepage='https://joplinapp.org/'
+pkgdesc="Joplin - the secure note taking and to-do app with synchronisation capabilities for Windows, macOS, Linux, Android and iOS"
+url="https://github.com/laurent22/joplin/releases/download/v${pkgver}/Joplin-${pkgver}.AppImage"
+hash="e6d2ce3400a165a889aaf2bf960d4d1931f72d80657b32009ad42f9e0d2734d7"
+repology=("project: joplin-desktop")
+arch=("amd64")
+maintainer="lfromanini <lfromanini@yahoo.com>"
 
 package() {
   sudo install -Dm755 "Joplin-${pkgver}.AppImage" "${pkgdir}/usr/bin/${gives}"
