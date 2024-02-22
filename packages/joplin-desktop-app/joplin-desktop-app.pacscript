@@ -1,7 +1,7 @@
 name="joplin-desktop-app"
 gives="joplin-desktop"
 homepage='https://joplinapp.org/'
-pkgdesc="Joplin - the secure note taking and to-do app with synchronisation capabilities for Windows, macOS, Linux, Android and iOS."
+pkgdesc="Joplin - the secure note taking and to-do app with synchronisation capabilities for Windows, macOS, Linux, Android and iOS"
 maintainer="lfromanini <lfromanini@yahoo.com>"
 repology=("project: joplin-desktop")
 arch=("amd64")
