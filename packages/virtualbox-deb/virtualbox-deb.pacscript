@@ -8,6 +8,6 @@ pkgdesc="VirtualBox is a general-purpose full virtualizer for x86 hardware, targ
 hash="43aa0932f73433e7a6b450a82708d275ee5f2c98375cfa708a46ecf75b3d4edc"
 arch=('amd64')
 maintainer="Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>"
-incompatible=('debian:*')
+incompatible=("debian:*" "ubuntu:mantic" "ubuntu:noble" "ubuntu:devel")
 
 #latest_version="$(curl -sL https://download.virtualbox.org/virtualbox/LATEST-STABLE.TXT)"
