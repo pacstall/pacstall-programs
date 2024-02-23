@@ -7,7 +7,7 @@ url="${homepage}/archive/refs/tags/v${pkgver}.tar.gz"
 
 makedepends=("gcc" "g++" "gcc-multilib" "g++-multilib" "meson" "ninja-build" "python3-pip" "python3-setuptools" "python3-wheel" "python3-mako" "pkg-config" "mesa-common-dev" "libx11-dev" "libxnvctrl-dev" "libdbus-1-dev" "glslang-tools")
 pkgdesc="A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more"
-hash="cfcc907c91b51f1fef4ec3f1cd52e2ff1b5caf207cdcff71869b94cefe39d208"
+hash="40a4954f1f239ae7d2cec0fab3c7e965b30ded5e9729278f3cc0854676b954e5"
 incompatible=('debian:bullseye')
 maintainer="Elsie19 <elsie19@pm.me>"
 
