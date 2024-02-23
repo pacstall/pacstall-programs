@@ -1,6 +1,6 @@
 name="firefox-arm64-deb"
 gives="firefox"
-pkgver="122.0+build2"
+pkgver="123.0+build3"
 ubversion="22.04"
 arch=("arm64")
 repology=("project: ${gives}")
@@ -8,4 +8,4 @@ url="https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/${gives
 homepage='https://www.mozilla.org/en-US/firefox'
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-hash="55a1e926d10fd3937b4a43f1f447bef406f0db971e502d093b6699118645e7b2"
+hash="684cffdcac7ee5b9bc7cb4e252454649d5e13ce3492f7b5fbce2a79269e47375"
