@@ -29,3 +29,7 @@ package() {
     X-GNOME-SingleWindow=true
     X-SingleMainWindow=true" | sudo tee "${pkgdir}/usr/share/applications/joplin-desktop.desktop" > /dev/null
 }
+
+post_remove() {
+  sudo rm -f "${pkgdir}/usr/bin/${gives}"
+}
