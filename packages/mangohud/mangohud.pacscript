@@ -3,7 +3,7 @@ repology=("project: mangohud")
 pkgver="0.7.1"
 
 homepage='https://github.com/flightlessmango/MangoHud'
-url="${homepage}/archive/refs/tags/v${pkgver}.tar.gz"
+url="https://github.com/flightlessmango/MangoHud/archive/refs/tags/v${pkgver}.tar.gz"
 
 makedepends=("gcc" "g++" "gcc-multilib" "g++-multilib" "meson" "ninja-build" "python3-pip" "python3-setuptools" "python3-wheel" "python3-mako" "pkg-config" "mesa-common-dev" "libx11-dev" "libxnvctrl-dev" "libdbus-1-dev" "glslang-tools")
 pkgdesc="A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more"
