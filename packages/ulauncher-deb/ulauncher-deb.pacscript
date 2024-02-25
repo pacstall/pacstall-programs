@@ -1,9 +1,14 @@
 name="ulauncher-deb"
 gives="ulauncher"
 pkgver="5.15.6"
+pkgrel="2"
 arch=("any")
 repology=("project: ${gives}")
-depends=("python3-pyinotify" "gir1.2-keybinder-3.0" "gir1.2-webkit2-4.0" "gir1.2-notify-0.7" "python3-levenshtein" "python3-websocket" "python3-xdg" "wmctrl")
+depends=("python3-pyinotify" "gir1.2-keybinder-3.0" "gir1.2-webkit2-4.0" "gir1.2-notify-0.7" "python3-websocket" "python3-xdg" "wmctrl")
+case ${DISTRO} in
+	"ubuntu:devel" | "ubuntu:noble") pacdeps+=("python3-levenshtein-deb") ;;
+	*) depends+=("python3-levenshtein") ;;
+esac
 url="https://github.com/Ulauncher/Ulauncher/releases/download/${pkgver}/${gives}_${pkgver}_all.deb"
 pkgdesc="Application launcher for Linux"
 maintainer="Oren Klopfer <oren@taumoda.com>"
