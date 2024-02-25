@@ -1,10 +1,10 @@
 name="wezterm-bin"
 pkgname="wezterm"
 gives="wezterm"
-pkgver="20230712-072601-f4abf8fd"
+pkgver="20240203-110809-5046fc22"
 pkgdesc="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
 url="https://github.com/wez/wezterm/releases/download/${pkgver}/wezterm-${pkgver}.Ubuntu22.04.tar.xz"
-hash="3b03b75a26a30f2de28180d66c5556e5878f6f3320d79d12fb78ea486400b6c3"
+hash="142cb46de648200b852cc4b1d932e6b8f2a9d3c55f6dc5af44b6d4eeb9385f5c"
 breaks=("${pkgname}-app")
 repology=("project: wezterm")
 maintainer="smokeythemonkey <smokeythemonkey@posteo.net>"
