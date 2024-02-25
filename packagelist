@@ -360,6 +360,7 @@ protonvpn-nm-lib
 pulsar-deb
 pycharm-community-bin
 python3-imdbpy-deb
+python3-levenshtein-deb
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-extras-git
