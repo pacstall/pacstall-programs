@@ -1,13 +1,13 @@
 name="floorp-bin"
 gives="floorp"
-pkgver="11.7.1"
+pkgver="11.8.2"
 repology=("project: ${gives}")
 if [[ ${CARCH} == "arm64" ]]; then
   gnuarch="aarch"
-  hash="1b094fbb84fcf5214ec7da98364ccd6b88e5fbbe8f6b067cee7cad945a796f11"
+  hash="77e4b0fbe2b02ec562df2a3da7f80142d26d0b9a09c0a1c98fa8d6b1aaad3d3b"
 else
   gnuarch="x86_"
-  hash="af943e71ed5d5d43e58ea34a8e23e8fc543f8013b834bf961fb3852b3632143e"
+  hash="408653fa59cbfcc0e11c4efcb57ea74084b87b618b0e1fa65562afd11b869042"
 fi
 url="https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-${gnuarch}64.tar.bz2"
 homepage='https://floorp.app/'

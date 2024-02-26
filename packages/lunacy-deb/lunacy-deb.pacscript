@@ -1,8 +1,8 @@
 name="lunacy-deb"
 gives="lunacy"
-pkgver="9.3.3"
+pkgver="9.4.0"
 pkgdesc="Free design software that keeps your flow with AI tools and built-in graphics"
-hash="6e821b240fd4ba20376e65db657ae8dc886315487a258b0e129aeade7ebaf319"
+hash="39c11b5e35d51e7d336be651cae5d686a48129516487811eca2aa53ad59ffb3d"
 maintainer="Anifyuli <anifyuliansyah@gmail.com>"
 arch=('amd64')
 url="https://lcdn.icons8.com/setup/Lunacy_${pkgver}.deb"

@@ -1,10 +1,10 @@
 name="an-anime-game-launcher-bin"
 pkgname="an-anime-game-launcher"
-pkgver="3.9.3"
+pkgver="3.9.4"
 pkgdesc="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
 url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${pkgver}/anime-game-launcher"
-hash="256fc4982e66ebf175d2c5b48ebe7688d4a7e4a9634e491fff6abc202af16d2e"
+hash="91a1920aadee2016f9e3695b16132090eaae6c72bce4e0f6b242ea368dc01534"
 depends=("xdelta3")
 maintainer="Elsie19 <elsie19@pm.me>"
 gives="${pkgname}"

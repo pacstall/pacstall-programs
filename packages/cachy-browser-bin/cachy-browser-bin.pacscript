@@ -1,6 +1,6 @@
 name="cachy-browser-bin"
 gives="cachy-browser"
-pkgver="121.0.1-1"
+pkgver="122.0-2"
 repology=("project: ${gives}")
 homepage='https://github.com/CachyOS/CachyOS-Browser-Settings'
 pkgdesc="Community-maintained fork of Firefox, focused on privacy, security and freedom"
@@ -14,15 +14,15 @@ case $(
 ) in
   "x86-64_v4")
     url="https://mirror.cachyos.org/repo/x86_64_v4/cachyos-v4/${gives}-${pkgver}-x86_64_v4.pkg.tar.zst"
-    hash="288f31900c8933922073c063f0c71995f668f0498365d02a4c232221d5f0ae2f"
+    hash="cbb922564695ae0d707d62bd7b95f7ae17e19404d3cbb71636210627004aebc8"
     ;;
   "x86-64_v3")
     url="https://mirror.cachyos.org/repo/x86_64_v3/cachyos-v3/${gives}-${pkgver}-x86_64_v3.pkg.tar.zst"
-    hash="576279ee63bc7fadc95b8b3e8a1bf3cac9aaff0e8dcf4d7cfbf2c11781d1399e"
+    hash="ef4802c010e6b7fd9bc5430f4bebb99bbc59f4bbc39ab891b8a75e192bc49436"
     ;;
   *)
     url="https://mirror.cachyos.org/repo/x86_64/cachyos/${gives}-${pkgver}-x86_64.pkg.tar.zst"
-    hash="b58216b879a2583673e0c7f77d7646606760177ad4f87ef0f7ea6849d001935f"
+    hash="b2cbca172ee0f2033c4dd88bf789178bdb77bec689bd0eafffab639b76624c17"
     ;;
 esac
 

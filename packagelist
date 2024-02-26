@@ -11,7 +11,6 @@ ani-cli-bin
 anydesk-bin
 anydesk-deb
 anytype-deb
-aomp-deb
 appimagelauncher-deb
 apx-git
 ardour-git
@@ -141,6 +140,7 @@ genymotion-bin
 gfn-electron-bin
 gir1.2-xapp-1.0-deb
 git
+git-butler-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
@@ -185,7 +185,6 @@ hyprpaper
 hyprpicker
 i3blocks-git
 i3lock-color
-ibhagwan-picom-git
 imwheel-exclude-patched-git
 insomnia-deb
 insync-deb
@@ -194,7 +193,7 @@ internxt-deb
 ivpn-deb
 ivpn-ui-deb
 jetbrains-toolbox-bin
-jonaburg-picom-git
+joplin-desktop-app
 kakoune
 kalendar-git
 keepassxc
@@ -216,6 +215,7 @@ libcamera-git
 libcutefish-git
 libdrm
 libicu-deb
+liblcf
 libndi4-deb
 libresprite-git
 libressl
@@ -360,6 +360,7 @@ protonvpn-nm-lib
 pulsar-deb
 pycharm-community-bin
 python3-imdbpy-deb
+python3-levenshtein-deb
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qtile-extras-git
@@ -431,6 +432,7 @@ teamviewer-deb
 tela-circle-icon-theme
 telegram-bin
 tenacity-git
+texstudio-app
 thorium-deb
 thrive-deb
 ticktick-deb

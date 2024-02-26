@@ -1,7 +1,7 @@
 name="docker-buildx-plugin-bin"
 gives="docker-buildx-plugin"
 replace=("${gives}")
-pkgver="0.12.0"
+pkgver="0.12.1"
 pkgdesc="Docker Buildx cli plugin"
 homepage='https://github.com/docker/buildx'
 url="https://github.com/docker/buildx/releases/download/v${pkgver}/buildx-v${pkgver}.linux-${CARCH}"
@@ -9,9 +9,9 @@ arch=('amd64' 'arm64')
 repology=("project: docker-buildx")
 maintainer="Oren Klopfer <oren@taumoda.com>"
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="781caebb36551b035cb9dcfaf91088543d09c73c4a2549341e6417d86b8bbb50"
+  hash="fb72d627f2ee080bba70375c367f4292867821e29ca9a8cf485622f6ede8f436"
 else
-  hash="7c393b92c148a0ce26c76a2abc99960be1d1097f0471978d41dc51d0c1a4471e"
+  hash="716321df8ca9c82ffe96f37e9f4aa1199d4969795836dbd57ef72d12e3ac5085"
 fi
 
 package() {
