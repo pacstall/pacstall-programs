@@ -8,7 +8,7 @@ case ${DISTRO} in
 	"ubuntu:devel" | "ubuntu:noble") ;;
 	*) depends+=("python3-levenshtein") ;;
 esac
-url="https://github.com/Ulauncher/Ulauncher/releases/download/v${pkgver/\~/-}/${gives}_${pkgver/\~/-}_all.deb"
+url="https://github.com/Ulauncher/Ulauncher/releases/download/v${pkgver/\~/-}/${gives}_${pkgver/\~/.}_all.deb"
 pkgdesc="Application launcher for Linux"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 hash="ebf4b01bbde932685d569b756d8d3a5ab709be2a70c27f26a989ae0ba3c2c1a9"
