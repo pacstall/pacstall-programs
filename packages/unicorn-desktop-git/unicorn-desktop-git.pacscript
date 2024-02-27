@@ -1,7 +1,7 @@
 name="unicorn-desktop-git"
 url="https://github.com/rhino-linux/unicorn.git"
 pkgver="0.0.1"
-pkgrel="3"
+pkgrel="4"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
   "vala-panel-appmenu" "appmenu-gtk2-module" "appmenu-gtk3-module" "xfce4-power-manager"
   "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol"
@@ -90,4 +90,6 @@ post_install() {
     echo "[keyfile]" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
     echo "unmanaged-devices=none" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
   fi
+  xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>s' 2&>1 /dev/null || xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>s' -s 'gapplication launch io.ulauncher.Ulauncher'
+  systemctl --user enable ulauncher
 }
