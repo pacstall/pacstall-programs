@@ -11,7 +11,7 @@ pkgver() {
 
 prepare() {
 ## Provide dependencies changed from VERSION_CODENAME
-source /etc/os-release 
+source /etc/os-release
 case $VERSION_CODENAME in
 jammy)
 sudo apt install -y libqt6core5compat6-dev
