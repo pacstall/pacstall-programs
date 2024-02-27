@@ -104,8 +104,8 @@ post_install() {
     echo "[keyfile]" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
     echo "unmanaged-devices=none" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
   fi
-  DISPLAY=:0 XAUTHORITY=/home/rhino-live/.Xauthority DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus \
+  bash -c "DISPLAY=:0 XAUTHORITY=/home/rhino-live/.Xauthority DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$(id -u)/bus \
   xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>s' 2&>1 /dev/null \
-  || xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>s' -s 'gapplication launch io.ulauncher.Ulauncher'
+  || xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>s' -s 'gapplication launch io.ulauncher.Ulauncher'"
   systemctl --user enable ulauncher
 }
