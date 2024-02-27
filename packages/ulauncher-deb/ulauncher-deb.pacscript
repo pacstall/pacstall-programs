@@ -3,7 +3,7 @@ gives="ulauncher"
 pkgver="6.0.0~beta5"
 arch=("any")
 repology=("project: ${gives}")
-depends=("python3-pyinotify" "gir1.2-keybinder-3.0" "gir1.2-webkit2-4.0" "gir1.2-notify-0.7" "python3-websocket" "python3-xdg" "wmctrl")
+depends=("python3-all" "python-gi-dev" "gobject-introspection" "gir1.2-glib-2.0" "gir1.2-gtk-3.0" "gir1.2-webkit2-4.0" "gir1.2-gtklayershell-0.1" "gir1.2-wnck-3.0" "gir1.2-xapp-1.0" "xapps-common")
 case ${DISTRO} in
 	"ubuntu:devel" | "ubuntu:noble") ;;
 	*) depends+=("python3-levenshtein") ;;
