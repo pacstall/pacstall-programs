@@ -90,9 +90,5 @@ post_install() {
     echo "[keyfile]" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
     echo "unmanaged-devices=none" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
   fi
-  if [[ -n ${DISPLAY} && -n ${DBUS_SESSION_BUS_ADDRESS} && -n ${XAUTHORITY} ]]; then
-    xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>s' 2&>1 /dev/null \
-    || xfconf-query -c xfce4-keyboard-shortcuts -n -t 'string' -p '/commands/custom/<Super>s' -s 'gapplication launch io.ulauncher.Ulauncher'
-  fi
   systemctl --user enable ulauncher
 }
