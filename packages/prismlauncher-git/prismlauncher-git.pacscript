@@ -10,15 +10,11 @@ pkgver() {
 }
 
 prepare() {
-## Provide dependencies changed from VERSION_CODENAME
-source /etc/os-release
-case $VERSION_CODENAME in
-jammy)
-sudo apt install -y libqt6core5compat6-dev
-;;
-*)
-sudo apt install -y qt6-5compat-dev
-;;
+case "${DISTRO}" in
+  *:jammy) makedepends+=("libqt6core5compat6-dev")
+  ;;
+  *) makedepends+=("qt6-5compat-dev")
+  ;;
 esac
 
   git submodule update --init --recursive
