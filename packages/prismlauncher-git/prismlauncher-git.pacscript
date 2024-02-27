@@ -11,9 +11,11 @@ pkgver() {
 
 prepare() {
 case "${DISTRO}" in
-  *:jammy) makedepends+=("libqt6core5compat6-dev")
+  *:jammy)
+  makedepends+=("libqt6core5compat6-dev")
   ;;
-  *) makedepends+=("qt6-5compat-dev")
+  *)
+  makedepends+=("qt6-5compat-dev")
   ;;
 esac
 
