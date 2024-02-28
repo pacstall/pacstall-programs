@@ -1,8 +1,8 @@
 name="linux-headers-deb"
 gives="linux-headers-6.8.0-060800rc6"
-pkgver="6.8-rc6"
+pkgver="6.8~rc6"
 buildver="6.8.0-060800rc6.202402251933"
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb"
+url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/amd64/${gives}_${buildver}_all.deb"
 pkgdesc="Ubuntu Linux mainline kernel (Headers)"
 hash="5b08327e43f517a91300866d53f666d6fd012ac9e41e2851c0cca33c6bf45caa"
 arch=('any')
