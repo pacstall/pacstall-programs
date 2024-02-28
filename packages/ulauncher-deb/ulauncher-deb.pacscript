@@ -1,15 +1,14 @@
 name="ulauncher-deb"
 gives="ulauncher"
-pkgver="5.15.6"
-pkgrel="2"
+pkgver="6.0.0~beta5"
 arch=("any")
 repology=("project: ${gives}")
-depends=("python3-pyinotify" "gir1.2-keybinder-3.0" "gir1.2-webkit2-4.0" "gir1.2-notify-0.7" "python3-websocket" "python3-xdg" "wmctrl")
+depends=("python3-all" "python-gi-dev" "gobject-introspection" "gir1.2-glib-2.0" "gir1.2-gtk-3.0" "gir1.2-webkit2-4.0" "gir1.2-gtklayershell-0.1" "gir1.2-wnck-3.0" "gir1.2-xapp-1.0" "xapps-common")
 case ${DISTRO} in
-	"ubuntu:devel" | "ubuntu:noble") pacdeps+=("python3-levenshtein-deb") ;;
+	"ubuntu:devel" | "ubuntu:noble") ;;
 	*) depends+=("python3-levenshtein") ;;
 esac
-url="https://github.com/Ulauncher/Ulauncher/releases/download/${pkgver}/${gives}_${pkgver}_all.deb"
+url="https://github.com/Ulauncher/Ulauncher/releases/download/v${pkgver/\~/-}/${gives}_${pkgver/\~/.}_all.deb"
 pkgdesc="Application launcher for Linux"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-hash="51e9f3010dbd4344c84e106a12ac8a5231b4724714708aeef52f57cf1522fc5b"
+hash="bf10b2a00392d137b47e392c748caeed4aa70c5aed4c3e82e0c812f2f30b0a3e"
