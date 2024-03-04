@@ -18,10 +18,6 @@ pkgver() {
   git ls-remote "${url}" develop | cut -f1 | cut -c1-8
 }
 
-prepare() {
-  git submodule update --init --recursive
-}
-
 build() {
   cmake -S . -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=Release \
