@@ -1,7 +1,7 @@
 name="rstudio-deb"
 gives="rstudio"
 repology=("project: ${gives}")
-pkgver="2023.12.0.369"
+pkgver="2023.12.1.402"
 ver="${pkgver:0:9}-${pkgver:10}"
 url="https://download1.rstudio.org/electron/jammy/amd64/rstudio-${ver}-amd64.deb"
 pkgdesc="RStudio is an integrated development environment (IDE) for R"
