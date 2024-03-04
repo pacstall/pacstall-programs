@@ -1,10 +1,10 @@
 name="onlyoffice-desktopeditors-deb"
 gives="onlyoffice-desktopeditors"
-pkgver="7.5.0"
+pkgver="8.0.1"
 replace=("${gives}")
 url="https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${pkgver}/onlyoffice-desktopeditors_amd64.deb"
 pkgdesc="Free office suite that combines text, spreadsheet and presentation"
 repology=("project: onlyoffice-desktopeditors")
-hash="5023bf6f82d04970cefe1791e1b49f31d2da1124957dd539eca9b7485b1852a6"
+hash="5978cf746c3074ed77becc95613ba82e031e76c0034bc68ebd92fe73071c0564"
 arch=('amd64')
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
