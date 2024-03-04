@@ -9,4 +9,3 @@ gives="pomatez"
 replace=("pomatez")
 pkgdesc="Stay Focused. Take a Break."
 hash="ae0572ff1816463dcca1d7e2a0bde7ba3b06eebfde5e374b9b2eb34ca4d37ae7"
-maintainer=""
