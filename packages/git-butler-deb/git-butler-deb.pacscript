@@ -10,5 +10,5 @@ breaks=("git-butler-git" "git-butler-bin")
 replace=("git-butler")
 pkgdesc="Git Branching, Refined
 A Git client for simultaneous branches on top of your existing workflow."
-hash="205d62966cf4c36975be0540e4cfbeb1c0badb6c921e4dcefbb065bd50e8f6cf"
+hash="fb1e068b6b6fa8f191d5c48d2662c8b24b8c9f990a1b85d928721da2a48e5cfd"
 maintainer="Nezred <jmnezred@pm.me>"
