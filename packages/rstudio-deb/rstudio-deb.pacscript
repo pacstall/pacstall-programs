@@ -5,6 +5,6 @@ pkgver="2023.12.1.402"
 ver="${pkgver:0:9}-${pkgver:10}"
 url="https://download1.rstudio.org/electron/jammy/amd64/rstudio-${ver}-amd64.deb"
 pkgdesc="RStudio is an integrated development environment (IDE) for R"
-hash="c92c7fa05631c87594e620d95334e7f15b089225fcdbe953e6f0733406790381"
+hash="75542cc24c59404f8d62815bc0e31b43032b5032e651fa9f618dbcdca8aa7cac"
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
