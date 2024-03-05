@@ -4,10 +4,10 @@ pkgver="11.10.5"
 repology=("project: ${gives}")
 if [[ ${CARCH} == "arm64" ]]; then
   gnuarch="aarch"
-  hash="77e4b0fbe2b02ec562df2a3da7f80142d26d0b9a09c0a1c98fa8d6b1aaad3d3b"
+  hash="695dc6185df33b5ee22b802f3ba1d0043c1ebe366cce2a897431dcd8e77fa922"
 else
   gnuarch="x86_"
-hash="64d264d503a669188e2b38db07490a8a7d82a114c0f18c6b18d4253e6e8af710"
+  hash="64d264d503a669188e2b38db07490a8a7d82a114c0f18c6b18d4253e6e8af710"
 fi
 url="https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-${gnuarch}64.tar.bz2"
 homepage='https://floorp.app/'
