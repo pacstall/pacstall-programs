@@ -1,9 +1,9 @@
 name="onnxruntime-1-7-0-bin"
 pkgname="onnxruntime"
 pkgver="1.7.0"
-url="https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-${pkgver}.tgz"
+source=("https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-${pkgver}.tgz")
 pkgdesc="ONNX Runtime is a cross-platform inference and training machine-learning accelerator."
-hash="0345f45f222208344406d79a6db3280ed2ccc884dc1e064ce6e6951ed4c70606"
+hash=("0345f45f222208344406d79a6db3280ed2ccc884dc1e064ce6e6951ed4c70606")
 maintainer="Zahrun <Zahrun@github.com>"
 
 package() {

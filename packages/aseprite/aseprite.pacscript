@@ -11,19 +11,19 @@ makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "
 depends=("hicolor-icon-theme")
 arch=("amd64")
 maintainer="vigress8 <vig@disroot.org>"
-url="https://github.com/${name}/${name}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
-hash="6acf1b7f5019733cd8a54d8e0504e78b2f74cdb2073f82230e543cfd990f6984"
 skiaver="m102-861e4743af"
-skiaurl="https://github.com/${name}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
-skiahash="66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
+source=(
+  "https://github.com/${name}/${name}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
+  "skia.zip::https://github.com/${name}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
+)
+hash=(
+  "6acf1b7f5019733cd8a54d8e0504e78b2f74cdb2073f82230e543cfd990f6984"
+  "66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
+)
+noextract=("skia.zip")
 
 prepare() {
-  wget -q "${skiaurl}"
-  if [[ $(sha256sum "Skia-Linux-Release-x64-libc++.zip" | cut -d' ' -f1) != "${skiahash}" ]]; then
-    fancy_message error "Could not verify integrity of Skia-Linux-Release-x64-libc++.zip"
-    return 1;
-  fi
-  unzip -qq "Skia-Linux-Release-x64-libc++.zip" -d skia
+  unzip -qq "skia.zip" -d skia
 }
 
 build() {
@@ -67,7 +67,7 @@ package() {
   sudo install -m644 "data/fonts/LICENSE.txt" "${pkgdir}/usr/share/licenses/${name}/font.txt"
 }
 
-pre_install() {
+post_install() {
   fancy_message warn "Aseprite is non-free software. Distributing the binary files produced by this script is forbidden. For more information, read Aseprite's EULA:
   https://github.com/${name}/${name}/blob/main/EULA.txt"
 }

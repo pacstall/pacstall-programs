@@ -2,12 +2,9 @@ name="gnome-shell-extension-installer-git"
 gives="gnome-shell-extension-installer"
 pkgver="1.7"
 pkgdesc="A bash script to install and search extensions from extensions.gnome.org"
-url="https://github.com/brunelli/gnome-shell-extension-installer.git"
+source=("https://github.com/brunelli/gnome-shell-extension-installer.git")
 maintainer="D-Brox <BroxZuka@protonmail.com>"
 depends=("curl" "perl" "dbus")
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
 
 package() {
   sudo install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"

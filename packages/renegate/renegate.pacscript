@@ -1,9 +1,9 @@
 name="renegate"
 _name="Renegate"
 pkgver="1.2"
-url="https://www.auburnsounds.com/downloads/${_name}-FREE-${pkgver}.zip"
+source=("https://www.auburnsounds.com/downloads/${_name}-FREE-${pkgver}.zip")
 pkgdesc="Renegate is simply just a full-band Gate plug-in. It has an always smooth, natural sound, and is quick to operate."
-hash="d7119fddfa44751a5c346e345de7c494a0ea11fcbae2aba65f1b66a8f414ecef"
+hash=("d7119fddfa44751a5c346e345de7c494a0ea11fcbae2aba65f1b66a8f414ecef")
 maintainer="echometerain <echometer@disroot.org>"
 
 package() {

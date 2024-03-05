@@ -9,33 +9,20 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="doas-git"
 pkgname="doas"
 pkgdesc="A port of OpenBSD's doas(1), an alternative to sudo(1)"
-url="https://github.com/slicer69/doas.git"
+source=(
+  "https://github.com/slicer69/doas.git"
+  "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/doas-git/doas-pam"
+  "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/doas-git/doas.conf"
+)
 pkgver="6.3p9"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
 makedepends=("make" "bison" "flex" "libpam0g-dev")
-hash="b66e7a55fc1b7fd1f6443861f65bde87a4794c4721dee5e11dc0294f27116efc"
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
-
-prepare() {
-  ## Download PAM configuration file
-  sudo wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/doas-git/doas-pam"
-  # Check checksum
-  if [[ $(sha512sum "doas-pam" | cut -d" " -f 1) != "87fb25e2f2727b9c1231ce1c14a65dcccc3abc81131c24ec4732b35796695305caabf0b57a74197152814c06747ace70628cb0fb8bd9e53072ca5361e90c74b9" ]]; then
-    fancy_message error "Downloading PAM configuration file failed. Checksum mismatch"
-    return 1
-  fi
-
-  ## Download doas configuration file
-  sudo wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/doas-git/doas.conf"
-  # Check checksum
-  if [[ $(sha512sum "doas.conf" | cut -d" " -f 1) != "f7baffce92cd0ab44a83fc2e236068668f47c8ef78398f354af8ae982b820fe2549320cb9996a14fd698df20f257c2daf69a8f6072b515611ea75afdff4d5f96" ]]; then
-    fancy_message error "Downloading Doas configuration file failed. Checksum mismatch"
-    return 1
-  fi
-}
+hash=(
+  "SKIP"
+  "b064704fb3448c3511904c3963b0e167ecf6274aea48afb9c42d452447dfd042"
+  "1f28802fad6ae0eaa5b94bb8d945ada923631ddfb7ae63e934962dbe41774976"
+)
 
 build() {
   make -j"${NCPU}"

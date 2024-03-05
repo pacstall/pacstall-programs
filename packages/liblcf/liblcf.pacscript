@@ -13,8 +13,8 @@ case "${DISTRO}" in
   *:jammy)    depends+=('libicu70') ;;
   *)          depends+=('libicu72') ;;
 esac
-url="https://easyrpg.org/downloads/player/${pkgver}/${name}-${pkgver}.tar.xz"
-hash='6b0d8c7fefe3d66865336406f69ddf03fe59e52b5601687265a4d1e47a25c386'
+source=("https://easyrpg.org/downloads/player/${pkgver}/${name}-${pkgver}.tar.xz")
+hash=('6b0d8c7fefe3d66865336406f69ddf03fe59e52b5601687265a4d1e47a25c386')
 maintainer="vigress8 <vig@disroot.org>"
 repology=("project: ${name}")
 

@@ -8,10 +8,10 @@ maintainer="wizard-28 <wiz28@pm.me>"
 
 name="libressl"
 pkgver="3.7.3"
-url="https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-${pkgver}.tar.gz"
+source=("https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-${pkgver}.tar.gz")
 pkgdesc="LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014, with goals of modernizing the codebase, improving security, and applying best practice development processes."
 breaks=("${name}-git" "${name}-bin")
-hash="7948c856a90c825bd7268b6f85674a8dcd254bae42e221781b24e3f8dc335db3"
+hash=("7948c856a90c825bd7268b6f85674a8dcd254bae42e221781b24e3f8dc335db3")
 repology=("project: libressl")
 
 prepare() {

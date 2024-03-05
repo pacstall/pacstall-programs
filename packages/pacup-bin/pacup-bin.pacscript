@@ -13,9 +13,9 @@ pkgname="pacup"
 gives="pacup"
 pkgver="2.1.1"
 pkgdesc="Help maintainers update pacscripts"
-url="https://github.com/pacstall/pacup/releases/download/${pkgver}/pacup"
+source=("https://github.com/pacstall/pacup/releases/download/${pkgver}/pacup")
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="ccb753ef785b0ad38a3b090c7fdaba023f4f31634a93ce8158d1d12fa5457f36"
+hash=("ccb753ef785b0ad38a3b090c7fdaba023f4f31634a93ce8158d1d12fa5457f36")
 
 package() {
   sudo install -Dm755 "${pkgname}" -t "${pkgdir}/usr/bin"

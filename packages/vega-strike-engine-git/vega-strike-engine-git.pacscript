@@ -1,5 +1,5 @@
 name="vega-strike-engine-git"
-url="https://github.com/vegastrike/Vega-Strike-Engine-Source.git"
+source=("https://github.com/vegastrike/Vega-Strike-Engine-Source.git")
 pkgver="0.8.0"
 makedepends=("git" "cmake" "build-essential" "automake" "autoconf" "libpng16-16" "libpng-dev" "libpng-tools" "libjpeg-turbo8-dev" "libexpat1-dev" "libgtk-3-dev" "libopenal-dev" "libogg-dev" "libvorbis-dev" "libgl1-mesa-dev" "libsdl1.2-dev" "libpostproc-dev" "freeglut3-dev" "libboost-python-dev" "libboost-log-dev" "libboost-regex-dev")
 depends=("libopengl0" "libopenal1")
@@ -7,9 +7,6 @@ breaks=("vega-strike")
 gives="vega-strike"
 pkgdesc="Vega Strike engine"
 maintainer="echometerain <echometer@disroot.org>"
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
 
 build() {
   mkdir build

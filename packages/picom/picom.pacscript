@@ -3,7 +3,7 @@ homepage='https://github.com/yshui/picom'
 pkgver="11.2"
 pkgdesc="A lightweight compositor for X11"
 repology=("project: ${name}")
-replace=("${name}")
+replaces=("${name}")
 breaks=("compton" "${name}-git" "ibhagwan-${name}-git" "jonaburg-${name}-git")
 makedepends=(
   "libconfig-dev" "libdbus-1-dev" "libegl-dev"
@@ -32,8 +32,8 @@ optdepends=(
   "python3: for running picom-convgen.py"
   "x11-utils: for picom-trans"
 )
-url="https://github.com/yshui/picom/archive/refs/tags/v${pkgver}.tar.gz"
-hash="1c1063936faf09ed9bba726e7737a562564b7a5f8cdef79d48fcdaf3669a4df4"
+source=("https://github.com/yshui/picom/archive/refs/tags/v${pkgver}.tar.gz")
+hash=("1c1063936faf09ed9bba726e7737a562564b7a5f8cdef79d48fcdaf3669a4df4")
 maintainer="vigress8 <vig@disroot.org>"
 
 prepare() {

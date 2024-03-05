@@ -1,5 +1,5 @@
 name="rhino-setup-git"
-url="https://github.com/rhino-linux/rhino-setup.git"
+source=("https://github.com/rhino-linux/rhino-setup.git")
 pkgver="2023.3"
 pkgrel="2"
 makedepends=("libgtk-4-dev" "libadwaita-1-dev" "gettext" "desktop-file-utils" "rustc" "cargo" "meson" "ninja-build")
@@ -9,9 +9,6 @@ replaces="${gives}-bin"
 pkgdesc="Rhino Linux Setup Prompt"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 incompatible=("debian:*")
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
 
 build() {
   sudo meson build

@@ -3,8 +3,14 @@ pkgname="an-anime-game-launcher"
 pkgver="3.9.4"
 pkgdesc="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
-url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${pkgver}/anime-game-launcher"
-hash="91a1920aadee2016f9e3695b16132090eaae6c72bce4e0f6b242ea368dc01534"
+source=(
+  "https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${pkgver}/anime-game-launcher"
+  "https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png"
+)
+hash=(
+  "91a1920aadee2016f9e3695b16132090eaae6c72bce4e0f6b242ea368dc01534"
+  "SKIP"
+)
 depends=("xdelta3")
 maintainer="Elsie19 <elsie19@pm.me>"
 gives="${pkgname}"
@@ -29,7 +35,6 @@ Type=Application
 Categories=Game;
 Terminal=false
 X-AppImage-Version=2.4.2' | sudo tee "${pkgdir}/usr/share/applications/an-anime-game-launcher.desktop" > /dev/null
-  wget -q https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
   sudo install -Dm644 "icon.png" "${pkgdir}/usr/share/icons/hicolor/64x64/apps/an-anime-game-launcher.png"
 
 }

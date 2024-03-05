@@ -9,11 +9,11 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="shfmt-bin"
 pkgname="shfmt"
 pkgver="3.7.0"
-url="https://github.com/mvdan/sh/releases/download/v${pkgver}/shfmt_v${pkgver}_linux_amd64"
+source=("https://github.com/mvdan/sh/releases/download/v${pkgver}/shfmt_v${pkgver}_linux_amd64")
 pkgdesc="Format shell programs"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
-hash="0264c424278b18e22453fe523ec01a19805ce3b8ebf18eaf3aadc1edc23f42e3"
+hash=("0264c424278b18e22453fe523ec01a19805ce3b8ebf18eaf3aadc1edc23f42e3")
 arch=('amd64')
 repology=("project: ${pkgname}")
 

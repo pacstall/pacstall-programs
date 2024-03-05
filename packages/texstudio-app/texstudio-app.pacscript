@@ -4,10 +4,10 @@ pkgver="4.7.2"
 pkgdesc="A fully featured LaTeX editor"
 homepage='https://www.texstudio.org'
 arch=('amd64')
-replace=("${gives}")
-url="https://github.com/texstudio-org/texstudio/releases/download/${pkgver}/${gives}-${pkgver}-x86_64.AppImage"
+replaces=("${gives}")
+source=("https://github.com/texstudio-org/texstudio/releases/download/${pkgver}/${gives}-${pkgver}-x86_64.AppImage")
 appimage="${gives}-${pkgver}-x86_64.AppImage"
-hash="443f450cfcc0435623de9d4947026f3cfec9230ed1dc693021a2ae5ef9550136"
+hash=("443f450cfcc0435623de9d4947026f3cfec9230ed1dc693021a2ae5ef9550136")
 repology=("project: ${gives}")
 maintainer="vigress8 <vig@disroot.org>"
 

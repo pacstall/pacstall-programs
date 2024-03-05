@@ -4,11 +4,11 @@ pkgname="onnxruntime-gpu"
 _pkgname="onnxruntime"
 repology=("project: onnxruntime")
 pkgver="1.16.3"
-url="https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-gpu-${pkgver}.tgz"
+source=("https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-gpu-${pkgver}.tgz")
 pkgdesc="Cross-platform inference and training machine-learning accelerator with gpu support"
-hash="bbdc33367c056029b3ac0c042cbca2236b8f59a3a53b4daf23432ef1d8bf52de"
+hash=("bbdc33367c056029b3ac0c042cbca2236b8f59a3a53b4daf23432ef1d8bf52de")
 maintainer="Zahrun <Zahrun@github.com>"
-replace=("onnxruntime")
+replaces=("onnxruntime")
 breaks=("onnxruntime-bin" "onnxruntime-1-7-0-bin")
 
 package() {

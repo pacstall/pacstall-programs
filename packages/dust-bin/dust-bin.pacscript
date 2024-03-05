@@ -10,10 +10,10 @@ name="dust-bin"
 pkgname="dust"
 pkgver="0.8.6"
 pkgdesc="A more intuitive version of du in rust"
-url="https://github.com/bootandy/dust/releases/download/v${pkgver}/dust-v${pkgver}-x86_64-unknown-linux-musl.tar.gz"
+source=("https://github.com/bootandy/dust/releases/download/v${pkgver}/dust-v${pkgver}-x86_64-unknown-linux-musl.tar.gz")
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="06e9bcac22ba29e74395dde046cfd5b260cf6fabab48e1ed3dfc017b4e8bada7"
+hash=("06e9bcac22ba29e74395dde046cfd5b260cf6fabab48e1ed3dfc017b4e8bada7")
 arch=('amd64')
 repology=("project: du-dust")
 

@@ -1,11 +1,11 @@
 name="bat"
 pkgver="0.24.0"
-url="https://github.com/sharkdp/bat/archive/refs/tags/v${pkgver}.tar.gz"
+source=("https://github.com/sharkdp/bat/archive/refs/tags/v${pkgver}.tar.gz")
 makedepends="cargo libonig-dev pkg-config"
 depends=("libonig5")
-replace=("bat")
+replaces=("bat")
 pkgdesc="A cat(1) clone with wings"
-hash="907554a9eff239f256ee8fe05a922aad84febe4fe10a499def72a4557e9eedfb"
+hash=("907554a9eff239f256ee8fe05a922aad84febe4fe10a499def72a4557e9eedfb")
 
 build() {
   RUSTONIG_SYSTEM_LIBONIG=1 cargo build -j"${NCPU}" --release --locked

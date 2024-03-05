@@ -2,12 +2,12 @@ name="shellharden"
 pkgname="shellharden"
 pkgver="4.3.0"
 repology=("project: ${pkgname}")
-url="https://github.com/anordal/shellharden/archive/refs/tags/v${pkgver}.zip"
+source=("https://github.com/anordal/shellharden/archive/refs/tags/v${pkgver}.zip")
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 gives="${pkgname}"
 makedepends=("rustc" "cargo")
 pkgdesc="A syntax highlighter and a tool to semi-automate the rewriting of scripts to ShellCheck conformance"
-hash="d6679f7a2a3e96da923b2f04339a966202a24172f1bbc58e56e7982eca2a76dc"
+hash=("d6679f7a2a3e96da923b2f04339a966202a24172f1bbc58e56e7982eca2a76dc")
 incompatible=('debian:bullseye')
 maintainer="Elsie19 <elsie19@pm.me>"
 

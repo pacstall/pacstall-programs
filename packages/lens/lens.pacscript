@@ -1,9 +1,9 @@
 name="lens"
 _name="Lens"
 pkgver="1.0.2"
-url="https://www.auburnsounds.com/downloads/${_name}-FREE-${pkgver}.zip"
+source=("https://www.auburnsounds.com/downloads/${_name}-FREE-${pkgver}.zip")
 pkgdesc="LENS is a spectral dynamics processor with unbelievable punch and clarity."
-hash="bd7c1b6ba8f7ad8ac2ee674f881e06f9650cf863ad7ee79d22e30b4d853dad19"
+hash=("bd7c1b6ba8f7ad8ac2ee674f881e06f9650cf863ad7ee79d22e30b4d853dad19")
 maintainer="echometerain <echometer@disroot.org>"
 
 package() {

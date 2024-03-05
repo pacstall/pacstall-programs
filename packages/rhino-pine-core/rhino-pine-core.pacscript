@@ -1,5 +1,8 @@
 name="rhino-pine-core"
-url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
+source=(
+  "https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
+  "https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png"
+)
 pacdeps=("unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "u-boot-mobian-deb" "mobile-usb-networking-deb" "pacstall-qa-git")
 depends=("initramfs-tools" "printer-driver-all-enforce")
 if [[ -f /usr/bin/enable-modem ]]; then
@@ -8,7 +11,7 @@ fi
 pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 compatible=("ubuntu:devel" "ubuntu:noble")
-replace=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
+replaces=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 pkgver="2023.4"
 pkgrel="6"
@@ -27,12 +30,11 @@ SUPPORT_URL=\"https://github.com/rhino-linux\"
 BUG_REPORT_URL=\"https://github.com/rhino-linux\"
 PRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"
 UBUNTU_CODENAME=\"${branch}\"" | sudo tee /usr/lib/os-release > /dev/null
-  cd /usr/share/pixmaps
-  for i in ubuntu-logo-text.png ubuntu-logo-text-dark.png; do
+  for i in /usr/share/pixmaps/ubuntu-logo-text{,-dark}.png; do
     sudo rm "${i}"
-    sudo wget -q https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png -O "${i}"
+    sudo install -Dm644 rhino-text.png "${i}"
   done
-  cd - > /dev/null
+
   if [[ -f /usr/bin/enable-modem ]]; then
     echo 'START_DAEMON="true"
 USBAUTO="true"

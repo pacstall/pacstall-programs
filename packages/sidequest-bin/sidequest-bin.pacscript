@@ -3,12 +3,14 @@ pkgname="sidequest"
 gives="sidequest"
 pkgdesc="Place to get more apps for your Oculus Quest by sideloading"
 pkgver="0.10.36"
-url="https://github.com/SideQuestVR/SideQuest/releases/download/v${pkgver}/SideQuest-${pkgver}.tar.xz"
+source=(
+  "https://github.com/SideQuestVR/SideQuest/releases/download/v${pkgver}/SideQuest-${pkgver}.tar.xz"
+  "${pkgname}.png::https://sidequestvr.com/assets/images/score-logo.png"
+)
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="8228904ed14a4a67038c18be349056b7e7ad713537536473a00a0744ed061fd1"
+hash=("8228904ed14a4a67038c18be349056b7e7ad713537536473a00a0744ed061fd1" "SKIP")
 arch=('amd64')
 repology=("project: sidequest")
-__icon_url="https://sidequestvr.com/assets/images/score-logo.png"
 
 package() {
   cd ..
@@ -16,7 +18,6 @@ package() {
   sudo mkdir -p "${pkgdir}/opt/sidequest"
   sudo cp -r "SideQuest-${pkgver}"/* "${pkgdir}/opt/sidequest"
   # Install the icon for the desktop file
-  wget -q -O "${pkgname}.png" "${__icon_url}"
   sudo install -Dm644 "${pkgname}.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
 
   # Install the desktop file

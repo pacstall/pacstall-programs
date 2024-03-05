@@ -1,7 +1,7 @@
 name="libcamera-git"
 gives="libcamera"
 pkgver="0.1.0"
-url="https://git.libcamera.org/libcamera/libcamera.git"
+source=("https://git.libcamera.org/libcamera/libcamera.git")
 if [[ "$(lsb_release -cs)" == "focal" ]]; then
   pacdeps=("meson-focal-deb")
 else
@@ -13,9 +13,6 @@ if [[ -n ${MESON} ]]; then
 fi
 maintainer="Oren Klopfer <oren@taumoda.com>"
 pkgdesc="Open source camera stack and framework"
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
 
 build() {
   sudo meson setup build

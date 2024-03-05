@@ -1,13 +1,13 @@
 name="obs-backgroundremoval"
 repology=("project: obs-backgroundremoval")
 pkgver="1.1.10"
-url="https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/${pkgver}.tar.gz"
+source=("https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libgl1-mesa-dev" "ninja-build" "cmake")
 breaks=("${name}-git")
-replace=("${name}")
+replaces=("${name}")
 arch=('amd64')
 pkgdesc="OBS plugin to replace the background in portrait images and video"
-hash="7372ba4d996322bee82de1a934ff83c085a4532ab64537959145be3535f45da3"
+hash=("7372ba4d996322bee82de1a934ff83c085a4532ab64537959145be3535f45da3")
 maintainer="Zahrun <Zahrun@github.com>"
 
 incompatible=('*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')

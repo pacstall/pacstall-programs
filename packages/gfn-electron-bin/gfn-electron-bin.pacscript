@@ -3,8 +3,11 @@ pkgname="geforcenow-electron"
 pkgver="2.0.1"
 pkgdesc="Linux desktop client for GeForce NOW, using Electron"
 repology=("project: geforcenow-electron")
-url="https://github.com/hmlendea/gfn-electron/releases/download/v${pkgver}/geforcenow-electron_${pkgver}_linux.zip"
-hash="43ce97be4029df53b5f8e7d3a8d93c2a6857a69aaf4213be4f4a6dfd0432d75e"
+source=(
+  "https://github.com/hmlendea/gfn-electron/releases/download/v${pkgver}/geforcenow-electron_${pkgver}_linux.zip"
+  "https://raw.githubusercontent.com/hmlendea/geforcenow-electron/master/icon.png"
+)
+hash=("43ce97be4029df53b5f8e7d3a8d93c2a6857a69aaf4213be4f4a6dfd0432d75e" "SKIP")
 maintainer="Marie Piontek <marie@kaifa.ch>"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
@@ -12,7 +15,6 @@ depends=("libatk-bridge2.0-0" "libatspi2.0-0" "libgtk-3-0" "libnspr4" "libnss3" 
 
 package() {
   # Get icon from github and install it
-  wget -q "https://raw.githubusercontent.com/hmlendea/geforcenow-electron/master/icon.png"
   sudo install -Dm644 icon.png "${pkgdir}/usr/share/pixmaps/nvidia.png"
 
   # Install desktop file

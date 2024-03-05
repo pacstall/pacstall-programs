@@ -1,15 +1,12 @@
 name="bpytop-git"
 pkgname="bpytop"
-url="https://github.com/aristocratos/${pkgname}.git"
+source=("https://github.com/aristocratos/${pkgname}.git")
 pkgver="1.0.68"
 makedepends=("make" "python3" "python3-pip" "python3-distutils")
 depends=("python3" "python3-pip" "python3-distutils")
 pkgdesc="Linux/OSX/FreeBSD resource monitor."
 release="$(lsb_release -cs)"
 modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
 
 # shellcheck disable=SC2076
 if [[ " ${modern[*]} " =~ " ${release} " ]]; then

@@ -1,12 +1,19 @@
 name="arduino-ide-bin"
 pkgname="arduino-ide"
-pkgver="2.3.0"
+pkgver="2.3.2"
 repology=("project: arduino")
 maintainer="DismissedGuy <me@mikealmel.ooo>"
 breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
-url="https://downloads.arduino.cc/${pkgname}/${pkgname}_${pkgver}_Linux_64bit.zip"
+source=(
+  "https://downloads.arduino.cc/${pkgname}/${pkgname}_${pkgver}_Linux_64bit.zip"
+  "https://www.arduino.cc/wiki/370832ed4114dd35d498f2f449b4781e/arduino.svg"
+  "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
+)
 pkgdesc="An open-source IDE that makes it easy to write code and upload it to Arduino boards"
-hash="fcb3184ca5204a2eb2c03e93cad4d3a97fd8751b377c9724ed90b21a2ffed490"
+hash=(
+  "1a23b911043a247116ace846f03a0265c719dcd49cf9a8af09334db4d3916e88"
+  "SKIP" "SKIP"
+)
 
 prepare() {
   # potential leftover symlink from v1
@@ -22,9 +29,7 @@ package() {
   sudo cp -R ./* "${pkgdir}/usr/share/${pkgname}/"
 
   # fetch .desktop file + icon
-  wget -q "https://www.arduino.cc/wiki/370832ed4114dd35d498f2f449b4781e/arduino.svg"
   sudo install -Dm644 "arduino.svg" "${pkgdir}/usr/share/pixmaps/arduino-ide-v2.svg"
-  wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
   sudo install -Dm644 "arduino-ide.desktop" "${pkgdir}/usr/share/applications/"
 }
 

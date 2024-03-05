@@ -14,12 +14,12 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="fnlfmt"
 pkgver="0.3.0"
 pkgdesc="A formatter for fennel source code"
-url="https://git.sr.ht/~technomancy/fnlfmt/archive/${pkgver}.tar.gz"
+source=("https://git.sr.ht/~technomancy/fnlfmt/archive/${pkgver}.tar.gz")
 gives="${pkgname}"
 breaks=("${pkgname}-bin" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 depends=("lua5.3")
 makedepends=("lua5.3")
-hash="8baa2f5ed98f449139f6bd8b4859575c4cfeacc60c0a8884ecaa27bc94e69156"
+hash=("8baa2f5ed98f449139f6bd8b4859575c4cfeacc60c0a8884ecaa27bc94e69156")
 repology=("project: fnlfmt")
 
 build() {

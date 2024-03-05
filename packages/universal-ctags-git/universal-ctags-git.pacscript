@@ -1,13 +1,10 @@
 name="universal-ctags-git"
 pkgname="universal-ctags"
-url="https://github.com/universal-ctags/ctags.git"
+source=("https://github.com/universal-ctags/ctags.git")
 pkgver="6.0.0"
 pkgdesc="Universal Ctags (abbreviated as u-ctags) is a maintained implementation of ctags. ctags generates an index (or tag) file of language objects found in source files for programming languages. This index makes it easy for text editors and other tools to locate the indexed items."
 makedepends=("gcc" "make" "pkg-config" "autoconf" "automake" "python3-docutils" "libseccomp-dev" "libjansson-dev" "libyaml-dev" "libxml2-dev")
 maintainer="KwonNam Son <kwon37xi@gmail.com>"
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
 
 prepare() {
   git fetch --all --tags --prune

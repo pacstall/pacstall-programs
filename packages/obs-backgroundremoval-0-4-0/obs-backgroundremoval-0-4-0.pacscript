@@ -1,6 +1,6 @@
 name="obs-backgroundremoval-0-4-0"
 pkgver="0.4.0"
-url="https://codeload.github.com/royshil/obs-backgroundremoval/tar.gz/refs/tags/v${pkgver}"
+source=("https://codeload.github.com/royshil/obs-backgroundremoval/tar.gz/refs/tags/v${pkgver}")
 makedepends=("libobs-dev" "libopencv-dev" "cmake")
 # install required dependency for codename > focal
 codename="$(lsb_release -cs)"
@@ -13,7 +13,7 @@ esac
 pacdeps=("onnxruntime-1-7-0-bin")
 breaks="${name}-git"
 pkgdesc="OBS plugin to replace the background in portrait images and video"
-hash="e88bbc902154b5efd46d8fc1dee52fcf079c8ff2ae6593d9f716017fdd1ef601"
+hash=("e88bbc902154b5efd46d8fc1dee52fcf079c8ff2ae6593d9f716017fdd1ef601")
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
 

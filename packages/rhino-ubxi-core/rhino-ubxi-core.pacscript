@@ -1,11 +1,11 @@
 name="rhino-ubxi-core"
-url="https://github.com/oklopfer/debs/raw/master/empty.tar.xz"
+source=("https://github.com/oklopfer/debs/raw/master/empty.tar.xz")
 pacdeps=("rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "pacstall-qa-git")
 depends=("printer-driver-all-enforce")
 pkgdesc="Transitional package to provide all core Rhino Linux software, without a desktop environment"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 compatible=("ubuntu:devel" "ubuntu:noble")
-replace=("rhino-core" "rhino-pine-core" "rhino-server-core")
+replaces=("rhino-core" "rhino-pine-core" "rhino-server-core")
 priority="essential"
 pkgver="2023.4"
 pkgrel="6"

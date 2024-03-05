@@ -1,11 +1,17 @@
 name="android-studio"
 repology=("project: ${name}" "repo: aur")
-replace=("${name}" "${name}-beta" "${name}-canary")
+replaces=("${name}" "${name}-beta" "${name}-canary")
 pkgver="2023.1.1.28"
-url="https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${name}-${pkgver}-linux.tar.gz"
+source=(
+  "https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${name}-${pkgver}-linux.tar.gz"
+  "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${name}.desktop"
+)
 depends=("libc6-i386" "lib32ncurses6" "lib32stdc++6" "lib32z1" "libbz2-1.0:i386")
 pkgdesc="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
-hash="139d0dbb4909353b68fbf55c09b6d31a34512044a9d4f02ce0f1a9accca128f9"
+hash=(
+  "139d0dbb4909353b68fbf55c09b6d31a34512044a9d4f02ce0f1a9accca128f9"
+  "SKIP"
+)
 maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
@@ -16,8 +22,7 @@ package() {
   # Creating a launcher in $PATH
   sudo install -d "${pkgdir}/usr/bin"
 
-  sudo install -d "${pkgdir}/usr/share/applications"
-  sudo wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${name}.desktop" -O "${pkgdir}//usr/share/applications/${name}.desktop"
+  sudo install -Dm644 "${name}.desktop" -t "${pkgdir}/usr/share/applications"
 
   sudo install -Dm644 bin/studio.png "${pkgdir}/usr/share/pixmaps/${name}.png"
   sudo chmod -R ugo+rX "${pkgdir}/opt"

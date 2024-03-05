@@ -1,5 +1,5 @@
 name="unicorn-desktop-git"
-url="https://github.com/rhino-linux/unicorn.git"
+source=("https://github.com/rhino-linux/unicorn.git")
 pkgver="0.0.1"
 pkgrel="2"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
@@ -12,13 +12,10 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "val
   "ukui-touchpadserver" "pipewire-audio" "bluetooth")
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-desktop"
-replace=("unicorn-mobile" "unicorn-mobile-git")
+replaces=("unicorn-mobile" "unicorn-mobile-git")
 priority="required"
 pkgdesc="Unicorn Desktop by the Rhino Linux Team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
-}
 incompatible=("debian:*")
 
 build() {

@@ -1,20 +1,16 @@
 name="docker-bin"
 gives="docker"
-replace=("${gives}-desktop" "${gives}-ce" "${gives}-ce-cli" "containerd.io")
+replaces=("${gives}-desktop" "${gives}-ce" "${gives}-ce-cli" "containerd.io")
 repology=("project: ${gives}")
 pkgver="24.0.7"
 depends=("procps" "git" "iptables" "fuse-overlayfs")
 pkgdesc="Docker Engine Static Binaries"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 arch=('arm64' 'amd64')
-if [[ ${CARCH} == arm64 ]]; then
-  gnuarch="aarch64"
-  hash="fe6cf4b509307665af542a89454c2ecfbbd62670fc5a5d17bac7150a6f6a6776"
-else
-  gnuarch="x86_64"
-  hash="984d59a77fa6acab97ea725a966facd33725e0e09c2fee975397fe1c6379bd3d"
-fi
-url="https://download.docker.com/linux/static/stable/${gnuarch}/${gives}-${pkgver}.tgz"
+source_amd64=("https://download.docker.com/linux/static/stable/x86_64/${gives}-${pkgver}.tgz")
+source_arm64=("https://download.docker.com/linux/static/stable/aarch64/${gives}-${pkgver}.tgz")
+hash_amd64=("984d59a77fa6acab97ea725a966facd33725e0e09c2fee975397fe1c6379bd3d")
+hash_arm64=("fe6cf4b509307665af542a89454c2ecfbbd62670fc5a5d17bac7150a6f6a6776")
 
 build() {
   sudo mkdir -p "${pkgdir}/usr/bin"

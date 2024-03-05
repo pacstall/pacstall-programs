@@ -7,35 +7,20 @@ arch=("amd64")
 pkgdesc="PvP modpack for all modern versions of Minecraft"
 homepage='https://lunarclient.com'
 makedepends=("libfuse2")
-replace=("lunarclient" "lunar-client")
+replaces=("lunarclient" "lunar-client")
 breaks=("lunarclient-deb" "lunarclient-bin")
 maintainer="Mythbusters123 <atr10605@icloud.com>"
 _appimage="Lunar%20Client-${pkgver}.AppImage"
-url="https://launcherupdates.lunarclientcdn.com/${_appimage}"
-hash='4074b895f9dba07d5ebdcf556489b62498c88731728ab555cf4ad5345d15bf12'
-_iconurl="https://raw.githubusercontent.com/Mythbusters123/lunarclient-app/main/${_pkgname}.png"
-_iconhash='28d489d41431bdaa784342a227abdfbbb525bbe831f98d34747ec557b6e02f05'
-_desktopurl="https://raw.githubusercontent.com/Mythbusters123/lunarclient-app/main/${_pkgname}.desktop"
-_desktophash='419c6bcea780a9cc735fec2ea956f67978bb8d82e321e074c36754f61baa36b8'
-
-prepare() {
-  # Be extra careful!
-  wget -O "${_pkgname}.png" -q "${_iconurl}"
-  wget -O "${_pkgname}.desktop" -q "${_desktopurl}"
-
-  _downloaded_icon_hash="$(sha256sum "${_pkgname}.png" | cut -d " " -f 1)"
-  _downloaded_desktop_hash="$(sha256sum "${_pkgname}.desktop" | cut -d " " -f 1)"
-
-  if [[ "${_downloaded_icon_hash}" != "${_iconhash}" ]]; then
-    fancy_message error "Hashes do not match for icon. Aborting..."
-    return 1
-  fi
-
-  if [[ "${_downloaded_desktop_hash}" != "${_desktophash}" ]]; then
-    fancy_message error "Hashes do not match for desktop file. Aborting..."
-    return 1
-  fi
-}
+source=(
+  "https://launcherupdates.lunarclientcdn.com/${_appimage}"
+  "https://raw.githubusercontent.com/Mythbusters123/lunarclient-app/main/${_pkgname}.png"
+  "https://raw.githubusercontent.com/Mythbusters123/lunarclient-app/main/${_pkgname}.desktop"
+)
+hash=(
+  '4074b895f9dba07d5ebdcf556489b62498c88731728ab555cf4ad5345d15bf12'
+  '28d489d41431bdaa784342a227abdfbbb525bbe831f98d34747ec557b6e02f05'
+  '419c6bcea780a9cc735fec2ea956f67978bb8d82e321e074c36754f61baa36b8'
+)
 
 build() {
   sed -i "s/REPLACE_VERSION/${pkgver}/" "${_pkgname}.desktop"

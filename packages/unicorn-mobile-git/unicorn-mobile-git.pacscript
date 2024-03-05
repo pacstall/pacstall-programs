@@ -1,5 +1,5 @@
 name="unicorn-mobile-git"
-url="https://github.com/rhino-linux/unicorn.git"
+source=("https://github.com/rhino-linux/unicorn.git")
 pkgver="0.0.1"
 pkgrel="2"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
@@ -10,13 +10,10 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-t
   "pipewire-audio" "bluetooth")
 pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-mobile"
-replace=("unicorn-desktop" "unicorn-desktop-git")
+replaces=("unicorn-desktop" "unicorn-desktop-git")
 priority="required"
 pkgdesc="Unicorn Desktop Mobile variant by the Rhino Linux Team"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-pkgver() {
-  git ls-remote "${url}" mobile | cut -f1 | cut -c1-8
-}
 incompatible=("debian:*")
 
 prepare() {

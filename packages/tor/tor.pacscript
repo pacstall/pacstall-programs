@@ -1,13 +1,13 @@
 name="tor"
 repology=("project: ${name}")
-replace=("${name}")
+replaces=("${name}")
 breaks=("${name}-git")
 pkgver="0.4.7.13"
-url="https://dist.torproject.org/${name}-${pkgver}.tar.gz"
+source=("https://dist.torproject.org/${name}-${pkgver}.tar.gz")
 makedepends=("make" "autoconf" "libevent-dev" "libnss3-dev" "libzstd-dev" "liblzma-dev" "openssl" "libssl-dev" "ca-certificates" "libseccomp-dev" "zlib1g-dev")
 depends=("openssl")
 pkgdesc="Tor protects your privacy on the internet by hiding the connection between your Internet address and the services you use"
-hash="2079172cce034556f110048e26083ce9bea751f3154b0ad2809751815b11ea9d"
+hash=("2079172cce034556f110048e26083ce9bea751f3154b0ad2809751815b11ea9d")
 
 build() {
   ./configure --enable-lzma --enable-zstd

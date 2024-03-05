@@ -1,9 +1,9 @@
 name="steamtinkerlaunch-git"
-url="https://github.com/frostworx/steamtinkerlaunch.git"
+source=("https://github.com/frostworx/steamtinkerlaunch.git")
 pkgver="12.12"
 depends=("gawk" "xdotool" "wget" "vim" "xdotool" "x11-utils")
 breaks=("steamtinkerlaunch" "${name}-git" "${name}-deb" "${name}-app" "${name}-deb" "${name}-bin")
-replace=("steamtinkerlaunch")
+replaces=("steamtinkerlaunch")
 gives="steamtinkerlaunch"
 pkgdesc="Linux wrapper tool for use with the Steam client for custom launch options and 3rd party programs."
 optdepends=("strace: system call tracer"
@@ -16,9 +16,6 @@ optdepends=("strace: system call tracer"
   "gameconqueror: memory editing for cheating")
 maintainer="echometerain <echometer@disroot.org>"
 pacdeps=("yad")
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
 
 package() {
   sudo install -Dm755 steamtinkerlaunch -t "${pkgdir}/usr/bin"

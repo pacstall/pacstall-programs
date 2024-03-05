@@ -1,11 +1,11 @@
 name="batsignal"
 repology=("project: ${name}")
 pkgver="1.6.4"
-url="https://github.com/electrickite/batsignal/archive/refs/tags/${pkgver}.tar.gz"
+source=("https://github.com/electrickite/batsignal/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("pkg-config" "libnotify4" "libnotify-dev")
 breaks=("${name}" "${name}-git")
 pkgdesc="A lightweight battery monitor daemon"
-hash="58439dac2b678ab798831fe861c06d2d5c128c4bb4bae1476a62ba1771da3983"
+hash=("58439dac2b678ab798831fe861c06d2d5c128c4bb4bae1476a62ba1771da3983")
 maintainer="Harshwardhan Mehrotra <harshwardhanmehrotra@gmail.com>"
 
 build() {

@@ -3,14 +3,11 @@
 name="pacget-git"
 pkgname="pacget"
 maintainer="Erik Lundstedt <erik@lundstedt.it>"
-url="https://gitlab.com/Erik.Lundstedt/pacget.git"
+source=("https://gitlab.com/Erik.Lundstedt/pacget.git")
 pkgver="0.0.1"
 license="Don't Be a Jerk"
 depends=("fzf" "curl" "bash")
 pkgdesc="A fully foss, lightweight fuzzysearching TUI frontend for pacstall using fzf"
-pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
-}
 
 ## installation steps
 #this just copies the files over and makes the file executable

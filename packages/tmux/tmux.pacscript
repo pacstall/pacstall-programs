@@ -1,11 +1,11 @@
 name="tmux"
 pkgver="3.3"
-url="https://github.com/tmux/tmux/releases/download/${pkgver}/tmux-${pkgver}.tar.gz"
+source=("https://github.com/tmux/tmux/releases/download/${pkgver}/tmux-${pkgver}.tar.gz")
 makedepends=("gcc" "make" "pkg-config" "bison" "libncurses-dev" "libevent-dev")
 breaks=("${name}-git" "${name}-bin" "${name}-deb" "${name}-app")
-replace=("tmux")
+replaces=("tmux")
 pkgdesc="A terminal multiplexer"
-hash="b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc"
+hash=("b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc")
 optdepends=("libutempter-dev: Record user sessions to utmp and wtmp files")
 maintainer="Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>"
 

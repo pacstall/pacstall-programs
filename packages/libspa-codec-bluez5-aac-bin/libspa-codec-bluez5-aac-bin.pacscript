@@ -1,9 +1,9 @@
 name="libspa-codec-bluez5-aac-bin"
 gives="libspa-codec-bluez5-aac"
 pkgver="0.3.65-4~glasgall1"
-url="https://github.com/Zahrun/libspa-0.2-bluetooth/raw/main/libspa-codec-bluez5-aac_${pkgver}_amd64.tar.xz"
+source=("https://github.com/Zahrun/libspa-0.2-bluetooth/raw/main/libspa-codec-bluez5-aac_${pkgver}_amd64.tar.xz")
 pkgdesc="Adds AAC bluetooth codec to pipewire"
-hash="9a235d1b5d8bb52302f9c8159da828ca7c8de15614233967d484d92cba4e56c2"
+hash=("9a235d1b5d8bb52302f9c8159da828ca7c8de15614233967d484d92cba4e56c2")
 arch=('amd64')
 maintainer="Zahrun <Zahrun@github.com>"
 depends=("libspa-0.2-bluetooth")

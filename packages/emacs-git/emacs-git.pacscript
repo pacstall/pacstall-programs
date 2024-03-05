@@ -79,12 +79,9 @@ depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 gives="${name}"
 breaks=("${name}" "${name}-nox")
-replace=("${name}" "${name}-nox")
-url="https://github.com/emacs-mirror/emacs.git"
+replaces=("${name}" "${name}-nox")
+source=("https://github.com/emacs-mirror/emacs.git")
 pkgver="29.1"
-pkgver() {
-    git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
 
 #################################################################################
 # Weird dependency shenanigans

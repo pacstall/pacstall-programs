@@ -1,8 +1,8 @@
 name="whatsie"
 gives="whatsie"
 pkgver="4.14.1"
-url="https://github.com/keshavbhatt/whatsie/archive/refs/tags/v${pkgver}.tar.gz"
-hash="369acebb948375713f4e97a5e0304dbda407b432b42fe8ad0b6aa9b602744311"
+source=("https://github.com/keshavbhatt/whatsie/archive/refs/tags/v${pkgver}.tar.gz")
+hash=("369acebb948375713f4e97a5e0304dbda407b432b42fe8ad0b6aa9b602744311")
 homepage="https://github.com/keshavbhatt/whatsie"
 pkgdesc="Feature rich WhatsApp Client for Desktop Linux"
 maintainer="Diegiwg <diegiwg@gmail.com>"

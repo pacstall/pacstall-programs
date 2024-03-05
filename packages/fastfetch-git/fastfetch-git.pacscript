@@ -9,7 +9,7 @@ maintainer="wizard-28 <wiz28@pm.me>"
 name="fastfetch-git"
 pkgname="fastfetch"
 pkgdesc="Like neofetch, but much faster because written in c"
-url="https://github.com/LinusDierheimer/fastfetch.git"
+source=("https://github.com/LinusDierheimer/fastfetch.git")
 pkgver="2.6.3"
 makedepends=("cmake" "libpci-dev" "libvulkan-dev" "libwayland-dev" "libxrandr-dev" "libxcb-randr0-dev" "libdconf-dev" "libmagick++-dev" "libmagickcore-dev" "libdbus-1-dev" "libpci-dev" "libxfconf-0-dev" "libegl-dev" "libglx-dev" "libosmesa6-dev" "ocl-icd-opencl-dev" "libnm-dev" "libpulse-dev" "libddcutil-dev" "directx-headers-dev")
 optdepends=("libvulkan1: Vulkan module and GPU fallback"
@@ -26,9 +26,6 @@ optdepends=("libvulkan1: Vulkan module and GPU fallback"
   "kitty: Terminal emulator GPU accelerated and display images"
 )
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
-pkgver() {
-  git ls-remote "${url}" dev | cut -f1 | cut -c1-8
-}
 
 build() {
   # Build fastfetch

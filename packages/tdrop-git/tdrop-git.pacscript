@@ -1,6 +1,6 @@
 name="tdrop-git"
 gives="tdrop"
-url="https://github.com/noctuid/tdrop.git"
+source=("https://github.com/noctuid/tdrop.git")
 pkgver="1.5.0"
 homepage="https://github.com/noctuid/tdrop"
 pkgdesc="A Glorified WM-Independent Dropdown Creator"

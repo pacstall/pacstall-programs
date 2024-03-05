@@ -1,6 +1,6 @@
 name="tailscale"
 pkgver="1.58.2"
-url="https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz"
+source=("https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz")
 homepage="https://tailscale.com"
 depends=('iptables')
 makedepends=('golang-go' 'git')
@@ -9,7 +9,7 @@ maintainer="Nathan <ndowens@artixlinux.org>"
 arch=('amd64')
 repology=("project: ${name}")
 incompatible=('ubuntu:jammy' 'debian:bookworm')
-hash="452f355408e4e2179872387a863387e06346fc8a6f9887821f9b8a072c6a5b0a"
+hash=("452f355408e4e2179872387a863387e06346fc8a6f9887821f9b8a072c6a5b0a")
 
 prepare() {
   go mod vendor

@@ -15,14 +15,10 @@ pkgdesc="A new type of shell"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 repology=("project: nushell")
 arch=('arm64' 'amd64')
-if [[ ${CARCH} == "arm64" ]]; then
-  hash="236c14f850051974f9ee803a17b41250f9af02666b46d1ae56848797b1218bd1"
-  gnuarch="aarch64"
-else
-  hash="3e9c9a238dce63010b2115b870db8ef40bf9e67fadb5e7e820eb576d41c85815"
-  gnuarch="x86_64"
-fi
-url="https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-${gnuarch}-unknown-linux-gnu.tar.gz"
+source_amd64=("https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-x86_64-unknown-linux-gnu.tar.gz")
+source_arm64=("https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-aarch64-unknown-linux-gnu.tar.gz")
+hash_amd64=("3e9c9a238dce63010b2115b870db8ef40bf9e67fadb5e7e820eb576d41c85815")
+hash_arm64=("236c14f850051974f9ee803a17b41250f9af02666b46d1ae56848797b1218bd1")
 
 package() {
   # binaries

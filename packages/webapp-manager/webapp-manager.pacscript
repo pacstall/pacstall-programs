@@ -4,9 +4,9 @@ makedepends=("gettext")
 depends=("gir1.2-xapp-1.0" "python3" "python3-bs4" "python3-configobj" "python3-gi" "python3-setproctitle" "python3-tldextract" "xapps-common" "python3-pil" "libglib2.0-bin")
 pkgdesc="Run websites as if they were apps"
 repology=("project: webapp-manager")
-hash="818ec1186e028d538b0e7a9237b9fc8c68e804356d322a0a7ba5451c909fcbad"
+hash=("818ec1186e028d538b0e7a9237b9fc8c68e804356d322a0a7ba5451c909fcbad")
 incompatible=("*:jammy" "*:bullseye")
-url="https://github.com/linuxmint/webapp-manager/archive/refs/tags/${pkgver}.tar.gz"
+source=("https://github.com/linuxmint/webapp-manager/archive/refs/tags/${pkgver}.tar.gz")
 maintainer="Zahrun <Zahrun@github.com>"
 
 prepare() {

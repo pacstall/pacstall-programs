@@ -1,8 +1,8 @@
 name="yabridge"
 pkgver="5.0.5"
-url="https://github.com/robbert-vdh/yabridge/releases/download/${pkgver}/yabridge-${pkgver}.tar.gz"
+source=("https://github.com/robbert-vdh/yabridge/releases/download/${pkgver}/yabridge-${pkgver}.tar.gz")
 pkgdesc="A modern and transparent way to use Windows VST2 and VST3 plugins on Linux."
-hash="3ddc6e0989dad93e0275a83362fcfc0cb26b6dbfb8be7fc689410c02eb36455f"
+hash=("3ddc6e0989dad93e0275a83362fcfc0cb26b6dbfb8be7fc689410c02eb36455f")
 optdepends=("wine: 32-bit windows emulator"
   "wine64: 64-bit windows emulator")
 maintainer="echometerain <echometer@disroot.org>"

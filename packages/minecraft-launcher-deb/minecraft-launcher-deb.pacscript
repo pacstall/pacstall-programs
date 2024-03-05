@@ -4,6 +4,6 @@ repology=("project: ${pkgname}")
 pkgver="1121"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
 gives="${pkgname}"
-url="https://launcher.mojang.com/download/Minecraft.deb"
+source=("https://launcher.mojang.com/download/Minecraft.deb")
 pkgdesc="Official Minecraft Launcher"
 maintainer="The Blob SCP <81673375+theblobscp@users.noreply.github.com>"

@@ -4,13 +4,19 @@ pkgname="tutanota"
 name="${pkgname}-app"
 pkgver="218.240227.0"
 pkgdesc="Tutanota is the world's most secure email service, easy to use and private by design."
-url="https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage"
-__icon_url="https://icons-for-free.com/download-icon-super+tiny+icons+tutanota-1324450784669328293_256.png"
-__icon_hash="e76f83c33cab7c3b1e7d4c827927e0c883bc7f41cb2e2f3ce7d493cd96970d76"
+source=(
+  "https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage"
+  "${pkgname}.png::https://icons-for-free.com/download-icon-super+tiny+icons+tutanota-1324450784669328293_256.png"
+  "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
+)
+hash=(
+  "2acd38e99da3c9c39beb7ab7835ea726b1e9687d05247f9cf9919395d7c79652"
+  "e76f83c33cab7c3b1e7d4c827927e0c883bc7f41cb2e2f3ce7d493cd96970d76"
+  "SKIP"
+)
 breaks=("${pkgname}-deb" "${pkgname}-bin" "${pkgname}-git" "${pkgname}")
 gives="${pkgname}"
-replace=("${pkgname}")
-hash="2acd38e99da3c9c39beb7ab7835ea726b1e9687d05247f9cf9919395d7c79652"
+replaces=("${pkgname}")
 repology=("project: tutanota" "repo: homebrew_casks")
 
 __created_desktop_file="yes"
@@ -19,19 +25,8 @@ package() {
   sudo install -Dm755 "tutanota-desktop-linux.AppImage" "${pkgdir}/usr/bin/${pkgname}"
 
   if ask "\nTutanota creates its own desktop file during the first launch.\nDo you want to create a desktop file anyway?" N; then
-    # Download icon
-    wget -O "${pkgname}.png" -q "${__icon_url}" "${pkgname}.png"
-    actual_icon_hash="$(sha256sum "${pkgname}.png" | grep -o "[a-z0-9]*" | head -1)"
-
-    # Check hash
-    if [[ ${__icon_hash} != "${actual_icon_hash}" ]]; then
-      echo "Error! Tutanota icon hash mismatch"
-      return 1
-    fi
-
     # Install .desktop file
     sudo install -Dm644 "${pkgname}.png" "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
-    wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
     sudo install -Dm644 "${pkgname}.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
   else
     __created_desktop_file="no"

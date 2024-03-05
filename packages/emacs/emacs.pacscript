@@ -73,15 +73,15 @@ NOGZ="YES"        # Don't compress .el files.
 
 name="emacs"
 pkgver="28.2"
-url="http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz"
+source=("http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
 makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
 depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 gives="${name}"
 breaks=("${name}-git" "${name}-nox")
-replace=("${name}-git" "${name}-nox")
-hash="ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488"
+replaces=("${name}-git" "${name}-nox")
+hash=("ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488")
 repology=("project: emacs")
 
 #################################################################################

@@ -10,12 +10,9 @@ optdepends=("xjadeo: video monitoring"
   "linuxaudio-new-session-manager: for session management")
 provides="ladspa-host lv2-host vst-host vst3-host ardour ardour-data"
 breaks="ardour"
-url="https://github.com/Ardour/ardour.git"
+source=("https://github.com/Ardour/ardour.git")
 pkgver="7.5"
 # patch="https://github.com/archlinux/svntogit-community/blob/packages/ardour/trunk/ardour-6.2-vendor_qm-dsp.patch"
-pkgver() {
-  git ls-remote "${url}" master | head -n1 | cut -f1 | cut -c1-8
-}
 
 prepare() {
   # Patch uses vendored version of qm-dsp because qm-dsp >= 1.8.0 is not compatible

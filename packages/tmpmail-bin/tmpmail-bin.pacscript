@@ -10,11 +10,11 @@ name="tmpmail-bin"
 pkgname="tmpmail"
 pkgver="1.2.3"
 pkgdesc="A temporary email right from your terminal written in POSIX sh"
-url="https://github.com/sdushantha/tmpmail/archive/refs/tags/v${pkgver}.tar.gz"
+source=("https://github.com/sdushantha/tmpmail/archive/refs/tags/v${pkgver}.tar.gz")
 depends=("w3m" "curl" "jq")
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="8d12f5474b89ee585413ec32cc9991a971a00e8bb63ac8e5a2e736f734f37cfb"
+hash=("8d12f5474b89ee585413ec32cc9991a971a00e8bb63ac8e5a2e736f734f37cfb")
 repology=("project: ${pkgname}")
 
 package() {
