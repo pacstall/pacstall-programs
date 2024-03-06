@@ -17,7 +17,7 @@ case "${DISTRO#*:}" in
   jammy)
     distro_base="xUbuntu"
     distro_release="22.04"
-    hash="adae37285c485788ed777ac32947d9b1b8fc2fb736b92e94b924b55fa5f5bc73"
+    hash="19dee960ed97de31e75a909f5dcaaed6bf1f6a58be16c3cc54335b92dd807c18"
     ;;
   bookworm)
     distro_base="Debian"
