@@ -29,7 +29,7 @@ case "${DISTRO#*:}" in
     distro_release="11"
     hash="adae37285c485788ed777ac32947d9b1b8fc2fb736b92e94b924b55fa5f5bc73"
     ;;
-  *);;
+  *) ;;
 esac
 
 url="https://mega.nz/linux/repo/${distro_base}_${distro_release}/amd64/megasync_${pkgver}-${build_version}_amd64.deb"
