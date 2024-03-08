@@ -13,7 +13,7 @@ build() {
   cmake -B build \
     -D CMAKE_INSTALL_PREFIX=/usr \
     -D CMAKE_BUILD_TYPE=Release
-  cmake --build build
+  cmake --build build -j"${NCPU}"
 }
 
 package() {
