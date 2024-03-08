@@ -20,3 +20,12 @@ package() {
   sudo install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord-canary.png"
   sudo cp -R ./* "${pkgdir}/usr/share/${name}/"
 }
+
+post_install() {
+  if ! [[ -f "${homedir}/.config/discordcanary/settings.json" ]]; then
+    mkdir -p "${homedir}/.config/discordcanary/"
+    echo '{
+    "SKIP_HOST_UPDATE": true
+}' > "${homedir}/.config/discordcanary/settings.json"
+  fi
+}
