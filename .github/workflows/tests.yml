@@ -54,9 +54,33 @@ jobs:
         run: |
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
-          sed -i 's/deb http/deb [arch=amd64\,i386] http/g' /etc/apt/sources.list
-          sed -e 's/amd64\,i386/arm64/g' -e 's/archive\.ubuntu/ports\.ubuntu/g' -e 's/security\.ubuntu/ports\.ubuntu/g' -e 's/\.com\/ubuntu/\.com\/ubuntu-ports/g' /etc/apt/sources.list | tee /etc/apt/sources.list.d/arm64.list
-          apt-get update
+          source /etc/os-release && echo "Types: deb
+          URIs: http://ports.ubuntu.com/ubuntu-ports/
+          Suites: ${VERSION_CODENAME} ${VERSION_CODENAME}-updates ${VERSION_CODENAME}-backports
+          Components: main universe restricted multiverse
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          Architectures-Remove: amd64 i386
+
+          Types: deb
+          URIs: http://ports.ubuntu.com/ubuntu-ports/
+          Suites: ${VERSION_CODENAME}-security
+          Components: main universe restricted multiverse
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          Architectures-Remove: amd64 i386
+
+          Types: deb
+          URIs: http://archive.ubuntu.com/ubuntu/
+          Suites: ${VERSION_CODENAME} ${VERSION_CODENAME}-updates ${VERSION_CODENAME}-backports
+          Components: main universe restricted multiverse
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          Architectures-Remove: arm64
+
+          Types: deb
+          URIs: http://security.ubuntu.com/ubuntu/
+          Suites: ${VERSION_CODENAME}-security
+          Components: main universe restricted multiverse
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          Architectures-Remove: arm64" | tee /etc/apt/sources.list.d/ubuntu.sources && rm -f /etc/apt/sources.list && apt-get update
           apt-get install apt-utils curl bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
       - name: Setup Test User
