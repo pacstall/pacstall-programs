@@ -1,8 +1,8 @@
 name="megasync-deb"
 gives="megasync"
 repology=("project: megasync")
-pkgver="4.11.0"
-build_version="3.1"
+pkgver="4.12.2"
+build_version="2.1"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
 incompatible=("debian:sid" "*:buster" "*:stretch" "*:jessie" "debian:testing" "*:bionic" "*:focal" "*:kinetic")
@@ -12,27 +12,22 @@ case "${DISTRO#*:}" in
   mantic)
     distro_base="xUbuntu"
     distro_release="23.10"
-    hash="375385a178bf86039c406d9f691aee187c47308e4bab11d0ea135c97c919f900"
-    ;;
-  lunar)
-    distro_base="xUbuntu"
-    distro_release="23.04"
-    hash="d461cb63bb7ef78884eb562857bf6723939d72042894c27222479e76f4d658ea"
+    hash="badbddc147ec4c8e8c372fbd6e2c67dd3306c9d3a9b3348b75d705338ae8c8e0"
     ;;
   jammy)
     distro_base="xUbuntu"
     distro_release="22.04"
-    hash="03a9fe62162e69df95c4a4394319110964de2cf019db3349b3666a1ea9d492f2"
+    hash="19dee960ed97de31e75a909f5dcaaed6bf1f6a58be16c3cc54335b92dd807c18"
     ;;
   bookworm)
     distro_base="Debian"
     distro_release="12"
-    hash="a72c97126443e62c90514f0724cdebeb3e4707a5f6812c909c2f3538905095f7"
+    hash="f33f5909196b8063e03de02040c97da981e035011dcd7d2d909f14d16c83daa9"
     ;;
   bullseye)
     distro_base="Debian"
     distro_release="11"
-    hash="ae9b59d0d11e2ed0db9dee7e364ffb77fbcd3f03b2fc86fbf3db1e18c448b2a3"
+    hash="adae37285c485788ed777ac32947d9b1b8fc2fb736b92e94b924b55fa5f5bc73"
     ;;
   *) ;;
 esac

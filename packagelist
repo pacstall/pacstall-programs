@@ -86,6 +86,7 @@ dmenu-distrotube-git
 doas-git
 docker-bin
 docker-buildx-plugin-bin
+docker-compose-plugin-bin
 dotdrop
 drawio-desktop-deb
 dropbox-deb
@@ -182,6 +183,7 @@ hyper-deb
 hyperfine-bin
 hypnotix-deb
 hyprland
+hyprlang
 hyprpaper
 hyprpicker
 i3blocks-git
