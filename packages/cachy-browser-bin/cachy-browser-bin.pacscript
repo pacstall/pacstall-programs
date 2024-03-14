@@ -1,32 +1,26 @@
 name="cachy-browser-bin"
 gives="cachy-browser"
-pkgver="122.0-2"
+pkgver="123.0.1"
 repology=("project: ${gives}")
 homepage='https://github.com/CachyOS/CachyOS-Browser-Settings'
 pkgdesc="Community-maintained fork of Firefox, focused on privacy, security and freedom"
 maintainer="vigress8 <vig@disroot.org>"
 arch=("amd64")
+
+url="https://mirror.cachyos.org/repo/x86_64/cachyos/${gives}-${pkgver}-1-x86_64.pkg.tar.zst"
+hash="946d37e51f8755c8c7d6da474e92283cddac12af819bc9dc7782a60ffa900b5b"
 case $(
-  /lib64/ld-linux-x86-64.so.2 --help \
-    | grep 'x86-64.*supported' \
-    | head -1 \
-    | awk '{print $1}'
+  /usr/lib/ld-linux-x86-64.so.2 --help |
+    awk '/x86-64.*supported/ {print $1; exit}'
 ) in
-  "x86-64_v4")
-    url="https://mirror.cachyos.org/repo/x86_64_v4/cachyos-v4/${gives}-${pkgver}-x86_64_v4.pkg.tar.zst"
-    hash="cbb922564695ae0d707d62bd7b95f7ae17e19404d3cbb71636210627004aebc8"
+  x86-64-v[34])
+    url="https://mirror.cachyos.org/repo/x86_64_v3/cachyos-v3/${gives}-${pkgver}-1-x86_64_v3.pkg.tar.zst"
+    hash="f9b3ddca36a7d5e1eacb48cb2b0f7f542f1bd7f773b62b9cfd6316db43ea58ad"
     ;;
-  "x86-64_v3")
-    url="https://mirror.cachyos.org/repo/x86_64_v3/cachyos-v3/${gives}-${pkgver}-x86_64_v3.pkg.tar.zst"
-    hash="ef4802c010e6b7fd9bc5430f4bebb99bbc59f4bbc39ab891b8a75e192bc49436"
-    ;;
-  *)
-    url="https://mirror.cachyos.org/repo/x86_64/cachyos/${gives}-${pkgver}-x86_64.pkg.tar.zst"
-    hash="b2cbca172ee0f2033c4dd88bf789178bdb77bec689bd0eafffab639b76624c17"
-    ;;
+  *) ;;
 esac
 
 package() {
-  rm ./.{{BUILD,PKG}INFO,INSTALL,MTREE}
+  rm .BUILDINFO .INSTALL .MTREE .PKGINFO
   sudo cp -r --preserve=mode,links ./* "${pkgdir}"
 }
