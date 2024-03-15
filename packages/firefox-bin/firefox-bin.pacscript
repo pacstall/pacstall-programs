@@ -1,6 +1,6 @@
 name="firefox-bin"
 gives="firefox"
-pkgver="123.0"
+pkgver="123.0.1"
 repology=("project: ${gives}")
 url="https://download-installer.cdn.mozilla.net/pub/firefox/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.bz2"
 homepage='https://www.mozilla.org/en-US/firefox'
