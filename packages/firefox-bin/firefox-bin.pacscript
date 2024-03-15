@@ -7,7 +7,7 @@ homepage='https://www.mozilla.org/en-US/firefox'
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 arch=('amd64')
-hash="99f86e24eacbaa429e5438bfc0b21e411ff1f8be95fda9800cbfb9c4ed0dc095"
+hash="3b8534ecd870f25434fc7ac8b7a26470492484f24fefe3be8eed0b41db52fe43"
 
 package() {
   cd ..
