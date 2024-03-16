@@ -1,5 +1,5 @@
 name="ugee-tablet-driver-deb"
-gives="ugee-tablet-driver"
+gives="ugeetablet"
 repology=("project: ${gives}")
 pkgver="4.1.3"
 url="https://ugeecom-download.oss-us-west-1.aliyuncs.com/file/2023/10/ugeeTablet${pkgver}-231017.deb"
