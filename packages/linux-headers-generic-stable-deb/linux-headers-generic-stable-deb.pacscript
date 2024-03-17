@@ -1,14 +1,15 @@
 name="linux-headers-generic-stable-deb"
-gives="linux-headers-6.8.0-060800-generic"
-pkgver="6.8"
-buildver="6.8.0-060800.202403131158"
+gives="linux-headers-6.8.1-060801-generic"
+pkgver="6.8.1"
+buildver="6.8.1-060801.202403151937"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="f810e63d590e69f05fe76404fef349de30783b064b35955cef1bc683cd9a98bf"
+  hash="e71637fba22200e2e48815d3fd22505557e6bc59ca9c92309e842f795db7f9b6"
 else
-  hash="9fcf923491bbe863810ee117ff3dc0ed7f75d36b61b88c3c14a2363f571b6780"
+  hash="1aaac0aa45d7c04c8ab34465bdab49bc48d95a8a0ab6b73a5b8254528980c03f"
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
 pkgdesc="Ubuntu Linux stable kernel (Generic headers)"
+pacdeps=("linux-headers-stable-deb")
 maintainer="Oren Klopfer <oren@taumoda.com>"
 repology=("project: linux" "repo: distrowatch")
