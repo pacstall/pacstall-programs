@@ -9,13 +9,10 @@ pkgdesc="Chat for Communities and Friends - Unstable"
 arch=('amd64')
 hash="1a63e7735dcb041b0c81389490eb2d2f5bb4976f4d1945100502939577095ac1"
 
-prepare() {
-  sudo mkdir -p "${pkgdir}/usr/share/${name}/"
-  sudo mkdir -p "${pkgdir}/usr/share/applications/"
-  sudo mkdir -p "${pkgdir}/usr/share/icons/"
-}
-
 package() {
+  sudo install -dm644 "${pkgdir}/usr/bin"
+  sudo install -dm644 "${pkgdir}/usr/share/${name}"
+  sudo ln -s "/usr/share/${name}/DiscordCanary" "${pkgdir}/usr/bin/${name}"
   sudo install -Dm755 discord-canary.desktop "${pkgdir}/usr/share/applications/discord-canary.desktop"
   sudo install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord-canary.png"
   sudo cp -R ./* "${pkgdir}/usr/share/${name}/"
