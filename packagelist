@@ -100,6 +100,7 @@ electrum-git
 element-desktop-deb
 emacs
 emacs-git
+emacs-snapshot-deb
 emby-server-deb
 endlessh-git
 enpass-deb
@@ -157,6 +158,7 @@ gnome-shell-extension-installer-git
 gnome-tweaks
 go-bin
 go-task-deb
+goldberg-emulator-git
 gomuks-deb
 google-chrome-beta-deb
 google-chrome-deb
