@@ -1,12 +1,12 @@
 name="joplin-desktop-app"
 gives="joplin-desktop"
-pkgver="2.14.17"
+pkgver="2.14.20"
 makedepends=("libfuse2")
 depends=("libfuse2")
 homepage='https://joplinapp.org/'
 pkgdesc="Joplin - the secure note taking and to-do app with synchronisation capabilities for Windows, macOS, Linux, Android and iOS"
 url="https://github.com/laurent22/joplin/releases/download/v${pkgver}/Joplin-${pkgver}.AppImage"
-hash="bb8c04721ca58eeae6c1566c4679940484d9511e92c43c7219ccd98d736c2648"
+hash="2d53781c72d0a94f3f4739c5ca1b00202af9d1850a9632283bdba5b16f688620"
 repology=("project: joplin-desktop")
 arch=("amd64")
 maintainer="lfromanini <lfromanini@yahoo.com>"
