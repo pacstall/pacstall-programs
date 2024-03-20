@@ -31,6 +31,8 @@ Actions=Private;
 [Desktop Action Private]
 Exec=/lib/firefox/firefox --private-window %u
 Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
+  sudo mkdir -p "${pkgdir}/usr/bin"
   sudo ln -sf "/lib/firefox/firefox-bin" "${pkgdir}/usr/bin/firefox-bin"
+  sudo mkdir -p "${pkgdir}/usr/bin"
   sudo ln -sf "/lib/firefox/firefox" "${pkgdir}/usr/bin/firefox"
 }

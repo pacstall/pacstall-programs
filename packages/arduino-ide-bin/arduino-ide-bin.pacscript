@@ -26,6 +26,7 @@ package() {
   sudo install -Dm644 "arduino.svg" "${pkgdir}/usr/share/pixmaps/arduino-ide-v2.svg"
   wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
   sudo install -Dm644 "arduino-ide.desktop" "${pkgdir}/usr/share/applications/"
+  sudo mkdir -p "${pkgdir}/usr/local/bin"
   sudo ln -sf "/usr/share/${pkgname}/arduino-ide" "${pkgdir}/usr/local/bin/arduino-ide"
 }
 

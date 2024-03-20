@@ -11,5 +11,6 @@ package() {
   sudo install -Dm755 "${gives}_x86_64" -t "${pkgdir}/opt/${gives}"
   sudo install -Dm644 "${gives}.plar" -t "${pkgdir}/opt/${gives}/"
   sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo mkdir -p "${pkgdir}/usr/bin"
   sudo ln -s "/opt/${gives}/${gives}5" "${pkgdir}/usr/bin/${gives}5"
 }

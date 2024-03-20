@@ -21,5 +21,6 @@ package() {
   done
 
   sudo chmod 755 "${pkgdir}/opt/${name}/bin/smartgit.sh"
+  sudo mkdir -p "${pkgdir}/usr/bin"
   sudo ln -s "/opt/${name}/bin/smartgit.sh" "${pkgdir}/usr/bin/smartgit"
 }

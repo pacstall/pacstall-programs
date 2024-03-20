@@ -11,5 +11,6 @@ pkgver() {
 package() {
   sudo mkdir -p "${pkgdir}/usr/local/bin"
   sudo install -Dm0755 ./"${gives}" "${pkgdir}/usr/local/bin"
+  sudo mkdir -p "${pkgdir}/usr/local/bin"
   sudo ln -sf "/usr/local/bin/${gives}" "${pkgdir}/usr/local/bin/rdb"
 }

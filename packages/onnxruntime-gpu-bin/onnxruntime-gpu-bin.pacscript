@@ -16,6 +16,7 @@ package() {
   sudo install -Dm755 "lib/lib${_pkgname}_"* -t "${pkgdir}/usr/local/lib"
   sudo install -Dm644 include/* -t "${pkgdir}/usr/local/include"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
+  sudo mkdir -p "${pkgdir}/usr/local/lib"
   sudo ln -sf "/usr/local/lib/lib${_pkgname}.so.${pkgver}" "${pkgdir}/usr/local/lib/lib${_pkgname}.so"
 }
 
