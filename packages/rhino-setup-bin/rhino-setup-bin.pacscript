@@ -17,28 +17,24 @@ url="https://github.com/rhino-linux/${gives}/releases/download/v${pkgver}/${give
 
 build() {
   sudo mkdir -p "${pkgdir}/usr"
+  sudo mkdir -p "${pkgdir}/etc/skel/.config/autostart"
 }
 
 package() {
   sudo chmod +x "../usr/local/bin/${gives}"
   sudo cp -rf ../usr/* "${pkgdir}/usr"
+  sudo ln -sf  "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${pkgdir}/etc/skel/.config/autostart/rhino-setup.desktop"
 }
 
 post_install() {
-  for i in "${homedir}" "/etc/skel"; do
-    if ! [[ -d "${i}/.config/autostart" ]]; then
-      mkdir -p "${i}/.config/autostart"
-    fi
-    if ! [[ -f "${i}/.config/autostart/rhino-setup.desktop" ]]; then
-      sudo ln -sf "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${i}/.config/autostart/rhino-setup.desktop"
-    fi
-  done
+  mkdir -p "${homedir}/.config/autostart"
+  if ! [[ -f "${homedir}/.config/autostart/rhino-setup.desktop" ]]; then
+    sudo ln -sf "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${homedir}/.config/autostart/rhino-setup.desktop"
+  fi
 }
 
 post_remove() {
-  for i in "${homedir}" "/etc/skel"; do
-    if [[ -L "${i}/.config/autostart/rhino-setup.desktop" ]]; then
-      sudo rm -f "${i}/.config/autostart/rhino-setup.desktop"
-    fi
-  done
+  if [[ -L "${homedir}/.config/autostart/rhino-setup.desktop" ]]; then
+    sudo rm -f "${homedir}/.config/autostart/rhino-setup.desktop"
+  fi
 }

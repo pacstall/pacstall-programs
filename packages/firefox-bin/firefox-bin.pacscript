@@ -31,13 +31,6 @@ Actions=Private;
 [Desktop Action Private]
 Exec=/lib/firefox/firefox --private-window %u
 Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
-}
-
-post_install() {
-  sudo ln -sf "/lib/firefox/firefox" "/usr/bin/firefox"
-  sudo ln -sf "/lib/firefox/firefox-bin" "/usr/bin/firefox-bin"
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/firefox" "/usr/bin/firefox-bin"
+  sudo ln -sf "/lib/firefox/firefox-bin" "${pkgdir}/usr/bin/firefox-bin"
+  sudo ln -sf "/lib/firefox/firefox" "${pkgdir}/usr/bin/firefox"
 }

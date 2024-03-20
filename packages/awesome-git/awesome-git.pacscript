@@ -32,16 +32,12 @@ build() {
 package() {
   # Install awesome
   sudo make install DESTDIR="${pkgdir}"
+  sudo ln -sf /usr/local/share/xsessions/"${pkgname}".desktop "${pkgdir}/usr/share/xsessions/${pkgname}.desktop"
 }
 
 post_install() {
   # Install to correct location .desktop file
   sudo mkdir -p /usr/share/xsessions/
-  sudo ln -sf /usr/local/share/xsessions/"${pkgname}".desktop /usr/share/xsessions/"${pkgname}".desktop
 }
 
-post_remove() {
-  # Remove desktop file
-  sudo rm -f /usr/share/xsessions/"${pkgname}".desktop
-}
 # vim:set ft=sh ts=2 sw=2 et:

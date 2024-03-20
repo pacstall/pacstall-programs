@@ -24,12 +24,5 @@ package() {
 
   sudo cp -r "${SRCDIR}/tidal-hifi-${pkgver}/"* "${pkgdir}/opt/${pkgname}/"
   sudo chmod +x "${pkgdir}/opt/${pkgname}/tidal-hifi"
-}
-
-post_install() {
-  sudo ln -s -r "/opt/${pkgname}/tidal-hifi" "/usr/bin/tidal-hifi"
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/tidal-hifi"
+  sudo ln -s -r "/opt/${pkgname}/tidal-hifi" "${pkgdir}/usr/bin/tidal-hifi"
 }

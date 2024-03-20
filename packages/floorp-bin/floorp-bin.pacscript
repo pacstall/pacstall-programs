@@ -58,13 +58,6 @@ Exec=/usr/lib/floorp/floorp --class="floorp" --private-window
 [Desktop Action profile-manager-window]
 Name=Open the Profile Manager
 Exec=/usr/lib/floorp/floorp --class="floorp" --ProfileManager' | sudo tee "${pkgdir}/usr/share/applications/floorp.desktop" > /dev/null
-}
-
-post_install() {
-  sudo ln -sf "/lib/floorp/floorp" "/usr/bin/floorp"
-  sudo ln -sf "/lib/floorp/floorp-bin" "/usr/bin/floorp-bin"
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/floorp" "/usr/bin/floorp-bin"
+  sudo ln -sf "/lib/floorp/floorp-bin" "${pkgdir}/usr/bin/floorp-bin"
+  sudo ln -sf "/lib/floorp/floorp" "${pkgdir}/usr/bin/floorp"
 }

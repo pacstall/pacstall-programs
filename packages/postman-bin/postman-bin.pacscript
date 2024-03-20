@@ -20,14 +20,6 @@ package() {
 
   sudo cp -r "${SRCDIR}/Postman/app/"* "${pkgdir}/opt/postman/"
   sudo chmod +x "${pkgdir}/opt/postman/postman"
-}
-
-post_install() {
-  sudo ln -s -r "/opt/postman/resources/app/assets/icon.png" "/usr/share/icons/hicolor/128x128/apps/postman.png"
-  sudo ln -s -r "/opt/postman/Postman" "/usr/bin/postman"
-}
-
-post_remove() {
-  sudo rm -f "/usr/share/icons/hicolor/128x128/apps/postman.png"
-  sudo rm -f "/usr/bin/postman"
+  sudo ln -s -r "/opt/postman/Postman" "${pkgdir}/usr/bin/postman"
+  sudo ln -s -r "/opt/postman/resources/app/assets/icon.png" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/postman.png"
 }

@@ -21,12 +21,5 @@ package() {
   done
 
   sudo chmod 755 "${pkgdir}/opt/${name}/bin/smartgit.sh"
-}
-
-post_install() {
-  sudo ln -s "/opt/${name}/bin/smartgit.sh" "/usr/bin/smartgit"
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/smartgit"
+  sudo ln -s "/opt/${name}/bin/smartgit.sh" "${pkgdir}/usr/bin/smartgit"
 }

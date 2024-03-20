@@ -26,16 +26,12 @@ package() {
   sudo install -Dm644 "arduino.svg" "${pkgdir}/usr/share/pixmaps/arduino-ide-v2.svg"
   wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
   sudo install -Dm644 "arduino-ide.desktop" "${pkgdir}/usr/share/applications/"
+  sudo ln -sf "/usr/share/${pkgname}/arduino-ide" "${pkgdir}/usr/local/bin/arduino-ide"
 }
 
 post_install() {
   # link main executable so it is in PATH
-  sudo ln -sf "/usr/share/${pkgname}/arduino-ide" "/usr/local/bin/arduino-ide"
 
   fancy_message info "Please run the following command to authorize access to the Arduino's serial interface: \"sudo usermod -aG uucp,dialout \${USER:-\$(whoami)}\". You might have to log out and in again for the changes to take effect."
 }
 
-post_remove() {
-  # remove linked executable
-  sudo rm -f "/usr/local/bin/arduino-ide"
-}

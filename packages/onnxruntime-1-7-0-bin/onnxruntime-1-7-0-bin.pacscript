@@ -10,13 +10,10 @@ package() {
   sudo install -Dm755 "lib/lib${pkgname}.so.${pkgver}" -t "${pkgdir}/usr/local/lib"
   sudo install -Dm644 include/* -t "${pkgdir}/usr/local/include"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
+  sudo ln -sf "/usr/local/lib/lib${pkgname}.so.${pkgver}" "${pkgdir}/usr/local/lib/lib${pkgname}.so"
 }
 
 post_install() {
   sudo rm -f "/usr/local/lib/lib${pkgname}.so" 2> /dev/null
-  sudo ln -sf "/usr/local/lib/lib${pkgname}.so.${pkgver}" "/usr/local/lib/lib${pkgname}.so"
 }
 
-post_remove() {
-  sudo rm -f "/usr/local/lib/lib${pkgname}.so"
-}
