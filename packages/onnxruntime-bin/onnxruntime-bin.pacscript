@@ -18,4 +18,3 @@ package() {
 post_install() {
   sudo rm -f "/usr/local/lib/lib${pkgname}.so"
 }
-

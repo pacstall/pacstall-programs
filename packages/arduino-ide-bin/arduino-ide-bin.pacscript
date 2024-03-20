@@ -35,4 +35,3 @@ post_install() {
 
   fancy_message info "Please run the following command to authorize access to the Arduino's serial interface: \"sudo usermod -aG uucp,dialout \${USER:-\$(whoami)}\". You might have to log out and in again for the changes to take effect."
 }
-

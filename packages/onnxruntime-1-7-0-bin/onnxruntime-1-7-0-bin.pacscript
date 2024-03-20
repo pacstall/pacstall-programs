@@ -17,4 +17,3 @@ package() {
 post_install() {
   sudo rm -f "/usr/local/lib/lib${pkgname}.so" 2> /dev/null
 }
-
