@@ -19,7 +19,3 @@ package() {
   sudo mkdir -p "${pkgdir}/usr/local/lib"
   sudo ln -sf "/usr/local/lib/lib${_pkgname}.so.${pkgver}" "${pkgdir}/usr/local/lib/lib${_pkgname}.so"
 }
-
-post_install() {
-  sudo rm -f "/usr/local/lib/lib${_pkgname}.so"
-}
