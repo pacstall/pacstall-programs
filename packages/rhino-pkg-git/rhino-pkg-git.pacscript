@@ -12,12 +12,6 @@ pkgver() {
 
 package() {
   sudo DESTDIR="${pkgdir}" make install
-}
-
-post_install() {
-  sudo ln -sf "/usr/bin/rhino-pkg" "/usr/bin/rpk"
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/rpk"
+  sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo ln -s "/usr/bin/rhino-pkg" "${pkgdir}/usr/bin/rpk"
 }

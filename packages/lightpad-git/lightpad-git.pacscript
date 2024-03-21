@@ -16,12 +16,6 @@ prepare() {
 
 package() {
   sudo DESTDIR="${pkgdir}" ninja -C build install
-}
-
-post_install() {
-  sudo ln -sf "/usr/local/bin/com.github.libredeb.lightpad" "/usr/bin/lightpad"
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/lightpad"
+  sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo ln -s "/usr/local/bin/com.github.libredeb.lightpad" "${pkgdir}/usr/bin/lightpad"
 }

@@ -22,10 +22,11 @@ package() {
 
   sudo install -Dm644 bin/studio.png "${pkgdir}/usr/share/pixmaps/${gives}.png"
   sudo chmod -R ugo+rX "${pkgdir}/opt"
+  sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo ln -s "/opt/${gives}/bin/studio.sh" "${pkgdir}/usr/bin/${gives}"
 }
 
 post_install() {
-  sudo ln -sf "/opt/${gives}/bin/studio.sh" "/usr/bin/${gives}"
 
   sudo update-desktop-database -q
   # Finished installation
@@ -34,5 +35,4 @@ post_install() {
 
 post_remove() {
   sudo update-desktop-database -q
-  sudo rm -f "/usr/bin/${gives}"
 }

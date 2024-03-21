@@ -20,6 +20,7 @@ optdepends=("rlwrap: readline support for awesome-client"
   "awesome-extra: additional modules for awesome"
   "awesome-doc: documentation for awesome")
 breaks=("${pkgname}" "${pkgname}-bin")
+replace=("${pkgname}" "${pkgname}-bin")
 pkgver() {
   git ls-remote "${url}" master | cut -f1 | cut -c1-8
 }
@@ -32,16 +33,8 @@ build() {
 package() {
   # Install awesome
   sudo make install DESTDIR="${pkgdir}"
+  sudo mkdir -p "${pkgdir}/usr/share/xsessions"
+  sudo ln -s /usr/local/share/xsessions/"${pkgname}".desktop "${pkgdir}/usr/share/xsessions/${pkgname}.desktop"
 }
 
-post_install() {
-  # Install to correct location .desktop file
-  sudo mkdir -p /usr/share/xsessions/
-  sudo ln -sf /usr/local/share/xsessions/"${pkgname}".desktop /usr/share/xsessions/"${pkgname}".desktop
-}
-
-post_remove() {
-  # Remove desktop file
-  sudo rm -f /usr/share/xsessions/"${pkgname}".desktop
-}
 # vim:set ft=sh ts=2 sw=2 et:
