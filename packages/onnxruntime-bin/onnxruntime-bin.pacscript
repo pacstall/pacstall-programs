@@ -1,6 +1,7 @@
 name="onnxruntime-bin"
 pkgname="onnxruntime"
 repology=("project: onnxruntime")
+replace=("${pkgname}" "${pkgname}-bin" "${pkgname}-1-7-0-bin" "${pkgname}-gpu" "${pkgname}-gpu-bin")
 pkgver="1.16.3"
 url="https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-${pkgver}.tgz"
 pkgdesc="Cross-platform inference and training machine-learning accelerator"

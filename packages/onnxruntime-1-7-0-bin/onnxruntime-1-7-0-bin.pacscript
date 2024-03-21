@@ -1,6 +1,7 @@
 name="onnxruntime-1-7-0-bin"
 pkgname="onnxruntime"
 pkgver="1.7.0"
+replace=("${pkgname}" "${pkgname}-bin" "${pkgname}-gpu" "${pkgname}-gpu-bin")
 url="https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-${pkgver}.tgz"
 pkgdesc="ONNX Runtime is a cross-platform inference and training machine-learning accelerator."
 hash="0345f45f222208344406d79a6db3280ed2ccc884dc1e064ce6e6951ed4c70606"
