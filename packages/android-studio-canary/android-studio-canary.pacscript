@@ -23,7 +23,7 @@ package() {
   sudo install -Dm644 bin/studio.png "${pkgdir}/usr/share/pixmaps/${gives}.png"
   sudo chmod -R ugo+rX "${pkgdir}/opt"
   sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo ln -sf "/opt/${gives}/bin/studio.sh" "${pkgdir}/usr/bin/${gives}"
+  sudo ln -s "/opt/${gives}/bin/studio.sh" "${pkgdir}/usr/bin/${gives}"
 }
 
 post_install() {

@@ -26,5 +26,5 @@ package() {
   sudo cp -dr "${pkgdir}/usr/share/pycharm/bin/pycharm.png" "${pkgdir}/usr/share/pixmaps/"
   sudo install -Dm 644 pycharm.desktop -t "${pkgdir}"/usr/share/applications/
   sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo ln -sf "/usr/share/pycharm/bin/pycharm.sh" "${pkgdir}/usr/bin/pycharm"
+  sudo ln -s "/usr/share/pycharm/bin/pycharm.sh" "${pkgdir}/usr/bin/pycharm"
 }

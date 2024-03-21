@@ -21,7 +21,7 @@ package() {
   sudo cp -r "${SRCDIR}/Postman/app/"* "${pkgdir}/opt/postman/"
   sudo chmod +x "${pkgdir}/opt/postman/postman"
   sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo ln -s -r "/opt/postman/Postman" "${pkgdir}/usr/bin/postman"
+  sudo ln -s "/opt/postman/Postman" "${pkgdir}/usr/bin/postman"
   sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/128x128/apps"
-  sudo ln -s -r "/opt/postman/resources/app/assets/icon.png" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/postman.png"
+  sudo ln -s "/opt/postman/resources/app/assets/icon.png" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/postman.png"
 }

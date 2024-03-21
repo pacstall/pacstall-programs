@@ -23,7 +23,7 @@ build() {
 package() {
   sudo chmod +x "../usr/local/bin/${gives}"
   sudo cp -rf ../usr/* "${pkgdir}/usr"
-  sudo ln -sf  "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${pkgdir}/etc/skel/.config/autostart/rhino-setup.desktop"
+  sudo ln -s "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${pkgdir}/etc/skel/.config/autostart/rhino-setup.desktop"
 }
 
 post_install() {
