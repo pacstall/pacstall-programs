@@ -21,12 +21,6 @@ Type=Application
 Categories=Game;Utility;
 Terminal=false
 X-AppImage-Version=${pkgver}" | sudo tee "${pkgdir}/usr/share/applications/net.davidotek.pupgui2.desktop" > /dev/null
-}
-
-post_install() {
-  sudo ln -s "/usr/bin/${pkgname}" "/usr/bin/protonup-qt"
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/protonup-qt"
+  sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo ln -s "/usr/bin/${pkgname}" "${pkgdir}/usr/bin/protonup-qt"
 }

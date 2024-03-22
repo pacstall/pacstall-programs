@@ -1,11 +1,11 @@
 name="android-studio"
 repology=("project: ${name}" "repo: aur")
 replace=("${name}" "${name}-beta" "${name}-canary")
-pkgver="2023.1.1.28"
+pkgver="2023.2.1.23"
 url="https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${name}-${pkgver}-linux.tar.gz"
 depends=("libc6-i386" "lib32ncurses6" "lib32stdc++6" "lib32z1" "libbz2-1.0:i386")
 pkgdesc="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
-hash="139d0dbb4909353b68fbf55c09b6d31a34512044a9d4f02ce0f1a9accca128f9"
+hash="1b668f80ca811cdc350deb6568143da37fd57d7e90121f5542a319e52fd5a073"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 
 package() {
@@ -21,10 +21,11 @@ package() {
 
   sudo install -Dm644 bin/studio.png "${pkgdir}/usr/share/pixmaps/${name}.png"
   sudo chmod -R ugo+rX "${pkgdir}/opt"
+  sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo ln -s "/opt/${name}/bin/studio.sh" "${pkgdir}/usr/bin/${name}"
 }
 
 post_install() {
-  sudo ln -sf "/opt/${name}/bin/studio.sh" "/usr/bin/${name}"
 
   sudo update-desktop-database -q
   # Finished installation
@@ -33,5 +34,4 @@ post_install() {
 
 post_remove() {
   sudo update-desktop-database -q
-  sudo rm -f "/usr/bin/${name}"
 }

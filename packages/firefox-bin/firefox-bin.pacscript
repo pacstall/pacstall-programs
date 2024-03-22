@@ -1,13 +1,13 @@
 name="firefox-bin"
 gives="firefox"
-pkgver="123.0"
+pkgver="123.0.1"
 repology=("project: ${gives}")
 url="https://download-installer.cdn.mozilla.net/pub/firefox/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.bz2"
 homepage='https://www.mozilla.org/en-US/firefox'
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Oren Klopfer <oren@taumoda.com>"
 arch=('amd64')
-hash="99f86e24eacbaa429e5438bfc0b21e411ff1f8be95fda9800cbfb9c4ed0dc095"
+hash="3b8534ecd870f25434fc7ac8b7a26470492484f24fefe3be8eed0b41db52fe43"
 
 package() {
   cd ..
@@ -31,13 +31,7 @@ Actions=Private;
 [Desktop Action Private]
 Exec=/lib/firefox/firefox --private-window %u
 Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
-}
-
-post_install() {
-  sudo ln -sf "/lib/firefox/firefox" "/usr/bin/firefox"
-  sudo ln -sf "/lib/firefox/firefox-bin" "/usr/bin/firefox-bin"
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/firefox" "/usr/bin/firefox-bin"
+  sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo ln -s "/lib/firefox/firefox-bin" "${pkgdir}/usr/bin/firefox-bin"
+  sudo ln -s "/lib/firefox/firefox" "${pkgdir}/usr/bin/firefox"
 }

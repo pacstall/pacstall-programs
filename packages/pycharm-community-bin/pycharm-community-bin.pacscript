@@ -25,12 +25,6 @@ package() {
   sudo cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/pycharm/"
   sudo cp -dr "${pkgdir}/usr/share/pycharm/bin/pycharm.png" "${pkgdir}/usr/share/pixmaps/"
   sudo install -Dm 644 pycharm.desktop -t "${pkgdir}"/usr/share/applications/
-}
-
-post_install() {
-  sudo ln -sf "/usr/share/pycharm/bin/pycharm.sh" "/usr/bin/pycharm"
-}
-
-post_remove() {
-  sudo rm -f /usr/bin/pycharm
+  sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo ln -s "/usr/share/pycharm/bin/pycharm.sh" "${pkgdir}/usr/bin/pycharm"
 }

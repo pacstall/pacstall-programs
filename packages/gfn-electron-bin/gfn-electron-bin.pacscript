@@ -23,12 +23,6 @@ package() {
 
   sudo cp -r "${SRCDIR}"/* "${pkgdir}"/opt/"${pkgname}"/
   sudo chmod +x "${pkgdir}/opt/${pkgname}/geforcenow-electron"
-}
-
-post_install() {
-  sudo ln -s -r "/opt/${pkgname}/geforcenow-electron" "/usr/bin/geforcenow"
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/geforcenow"
+  sudo mkdir -p "${pkgdir}/usr/bin"
+  sudo ln -s "/opt/${pkgname}/geforcenow-electron" "${pkgdir}/usr/bin/geforcenow"
 }
