@@ -4,6 +4,6 @@ repology=("project: ${gives}")
 replace=("${gives}")
 pkgver="14.1.0"
 url="https://github.com/BurntSushi/ripgrep/releases/download/${pkgver}/ripgrep_${pkgver}-1_amd64.deb"
-pkgdesc="A search tool that combines the usability of ag with the raw speed of grep."
+pkgdesc="A search tool that combines the usability of ag with the raw speed of grep"
 hash="78953d5a1c97cb363de0098ff73a7ef33fcae014abd4d62f0da490fe3f58ee94"
 arch=('amd64')
