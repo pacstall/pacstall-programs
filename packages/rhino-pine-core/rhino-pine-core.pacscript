@@ -22,7 +22,7 @@ pre_install() {
 }
 
 package() {
-  sudo mkdir -p "${pkgdir}/usr/lib/os-release"
+  sudo mkdir -p "${pkgdir}/usr/lib"
   sudo mkdir -p "${pkgdir}/usr/share/pixmaps"
   for i in ubuntu-logo-text.png ubuntu-logo-text-dark.png; do
     sudo cp rhino-text.png "${pkgdir}/usr/share/pixmaps/${i}"
