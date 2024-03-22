@@ -16,9 +16,9 @@ style="(mobile)"
 branch="devel"
 
 pre_install() {
-  sudo dpkg-divert --package "${name}" --divert /usr/lib/ubuntu-release --no-rename /usr/lib/os-release --quiet
-  sudo dpkg-divert --package "${name}" --divert /usr/share/pixmaps/ubuntu-logo-text-overwritten.png --no-rename /usr/share/pixmaps/ubuntu-logo-text.png --quiet
-  sudo dpkg-divert --package "${name}" --divert /usr/share/pixmaps/ubuntu-logo-text-dark-overwritten.png --no-rename /usr/share/pixmaps/ubuntu-logo-text-dark.png --quiet
+  sudo dpkg-divert --quiet --package "${name}" --divert /usr/lib/ubuntu-release --no-rename /usr/lib/os-release
+  sudo dpkg-divert --quiet --package "${name}" --divert /usr/share/pixmaps/ubuntu-logo-text-overwritten.png --no-rename /usr/share/pixmaps/ubuntu-logo-text.png
+  sudo dpkg-divert --quiet --package "${name}" --divert /usr/share/pixmaps/ubuntu-logo-text-dark-overwritten.png --no-rename /usr/share/pixmaps/ubuntu-logo-text-dark.png
 }
 
 package() {
@@ -52,7 +52,7 @@ GPSD_OPTIONS="-D3"' | sudo tee /etc/default/gpsd
 }
 
 post_remove() {
-  sudo dpkg-divert --package "${name}" --remove --rename /usr/lib/os-release --quiet
-  sudo dpkg-divert --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text.png --quiet
-  sudo dpkg-divert --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text-dark.png --quiet
+  sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/lib/os-release
+  sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text.png
+  sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text-dark.png
 }
