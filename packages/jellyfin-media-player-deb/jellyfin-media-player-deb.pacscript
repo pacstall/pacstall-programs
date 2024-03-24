@@ -30,7 +30,7 @@ case "${codename}" in
 *)
 	#Use Bullseye
 	url="https://github.com/jellyfin/jellyfin-media-player/releases/download/v${pkgver}/${gives}_${pkgver}-1_${arch}-bullseye.deb"
-	hash="2eb9856dc6c7a62c5c635391dee8e5fb35bce06d5c6c132241523e4f04ad2416"
+	hash="5cac8cdf9271abb14b3fab637d0ef5bc31415198d009417cfaf087cb4218a3cd"
 	;;
 esac
 maintainer="Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>"
