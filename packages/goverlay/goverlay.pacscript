@@ -1,26 +1,34 @@
+# Maintainer: Robin Candau <antiz@archlinux.org>
+# Contributor: HurricanePootis <hurricanepootis@protonmail.com>
 name="goverlay"
 gives="goverlay"
-pkgver="1.0"
-url="https://github.com/benjamimgois/goverlay/releases/download/${pkgver}/goverlay_${pkgver//.*}.tar.xz"
-hash="47754023d12b9eb730c83fe9aeec7b8523d1dbaa9860c90928ddaa904b89aa1f"
+pkgver="1.1.1"
+url="https://github.com/benjamimgois/goverlay/archive/refs/tags/${pkgver}.tar.gz"
+hash="06dcad9ab7db990f2df04be01d549953e274907d7f691fe1bc4bbe712329936c"
 depends=("mangohud" "libqt5pas-dev")
 pkgdesc="Graphical UI to help manage Linux overlays"
-maintainer="Elsie19 <elsie19@pm.me>"
+maintainer="Xdavius <xdavius@github.com>"
 repology=("project: goverlay")
+pkgname=goverlay
+pkgver=1.1.1
+pkgrel=1
+pkgdesc="A GUI to help manage Vulkan/OpenGL overlays"
+arch="amd64"
+homepage="https://github.com/benjamimgois/goverlay"
+license=('GPL-3.0-or-later')
+depends=('qt6pas' 'mangohud')
+makedepends=('git' 'lazarus-ide' 'libglu1-mesa-dev' 'qt6-base-dev')
+pacdeps=('qt6pas')
+checkdepends=('appstream' 'desktop-file-utils')
+
+build() {
+	make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/lib/lazarus/default
+}
+
+check() {
+	make tests
+}
 
 package() {
-  sudo mkdir -p "${pkgdir}/usr/bin/" "${pkgdir}/opt/goverlay/" "${pkgdir}/usr/share/applications/" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/"
-  echo -e "#!/bin/sh\nQT_QPA_PLATFORM=xcb mangohud --dlsym /opt/goverlay/goverlay" | sudo tee "${pkgdir}/usr/bin/goverlay" > /dev/null
-  sudo chmod +x "${pkgdir}/usr/bin/goverlay"
-  sudo install -Dm755 goverlay "${pkgdir}/opt/goverlay/goverlay"
-  echo '[Desktop Entry]
-Name=GOverlay
-Comment=Graphical UI to help manage Vulkan / OpenGL overlays
-Exec=goverlay
-Icon=goverlay
-Terminal=false
-Type=Application
-Categories=Game;
-Keywords=MangoHud;vkBasalt;ReplaySorcery;msi;afterburner;' | sudo tee "${pkgdir}/usr/share/applications/goverlay.desktop" > /dev/null
-  sudo wget -q https://raw.githubusercontent.com/benjamimgois/goverlay/master/data/icons/128x128/goverlay.png -P "${pkgdir}/usr/share/icons/hicolor/128x128/apps/"
+	sudo make prefix=/usr libexecdir=/lib DESTDIR="${pkgdir}" install
 }
