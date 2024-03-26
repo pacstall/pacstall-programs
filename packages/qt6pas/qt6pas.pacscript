@@ -17,12 +17,12 @@ url="https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_${_laza
 hash="053ebb9d703162617a6c5bbd26e78aacb45e439d9a9964aa3197eaada2aa8c2e"
 
 build() {
-    cd "${srcdir}"/lcl/interfaces/qt6/cbindings
-    qmake6
-    make -j"${NCPU}"
+  cd "${srcdir}"/lcl/interfaces/qt6/cbindings
+  qmake6
+  make -j"${NCPU}"
 }
 
 package() {
-    cd "${srcdir}"/lcl/interfaces/qt6/cbindings
-    sudo make INSTALL_ROOT="${pkgdir}" install
+  cd "${srcdir}"/lcl/interfaces/qt6/cbindings
+  sudo make INSTALL_ROOT="${pkgdir}" install
 }
