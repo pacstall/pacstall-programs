@@ -14,8 +14,8 @@ else
 	hash="cfc98c4a09f6740ef47a3dbc8f2e71a66a8aab2eae3fb1b901c2db5dcce5f060"
 fi
 repology=("project: intellij-idea-community")
-
 desktop_file_sum="20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293"
+
 prepare() {
 	wget -qO "intellij-idea-community.desktop" "https://raw.githubusercontent.com/Rockstar9604/pacstall-programs/master/packages/${name}/intellij-idea-community.desktop"
 	if [[ "$(sha256sum intellij-idea-community.desktop | cut -d' ' -f 1)" != "${desktop_file_sum}" ]]; then
