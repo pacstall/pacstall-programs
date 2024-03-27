@@ -6,7 +6,6 @@ breaks=("${name}-bin" "${name}" "${name}-app")
 pkgdesc="Jellyfin desktop client using jellyfin-web with embedded MPV player"
 codename="${DISTRO#*:}"
 url="https://github.com/jellyfin/jellyfin-media-player/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64-${codename}.deb"
-echo "Installing for ${codename}"
 case "${codename}" in
 "bookworm")
   hash="2eb9856dc6c7a62c5c635391dee8e5fb35bce06d5c6c132241523e4f04ad2416"
