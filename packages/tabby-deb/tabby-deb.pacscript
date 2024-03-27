@@ -7,3 +7,4 @@ hash="3d34e42f7fa661beca33c7c3526802b80176954f3c7d83acb465a9fcee5665ab"
 maintainer="Herisson <spaceguybox@outlook.com>"
 url="https://github.com/Eugeny/tabby/releases/download/v${pkgver}/tabby-${pkgver}-linux-x64.deb"
 repology=("project: ${gives}")
+incompatible=('debian:trixie' 'debian:sid' '*:mantic' '*:23.10' '*:23.04')
