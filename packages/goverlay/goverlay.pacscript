@@ -12,9 +12,9 @@ hash="06dcad9ab7db990f2df04be01d549953e274907d7f691fe1bc4bbe712329936c"
 repology=("project: goverlay")
 
 build() {
-	make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/lib/lazarus/default
+  make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/lib/lazarus/default
 }
 
 package() {
-	sudo make prefix=/usr libexecdir=/lib DESTDIR="${pkgdir}" install
+  sudo make prefix=/usr libexecdir=/lib DESTDIR="${pkgdir}" install
 }
