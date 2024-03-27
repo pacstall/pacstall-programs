@@ -1,9 +1,9 @@
 name="tabby-deb"
 gives="tabby-terminal"
 breaks=("tabby" "tabby-app")
-pkgver="1.0.197"
+pkgver="1.0.207"
 pkgdesc="A terminal for the modern age"
-hash="aa1cc7936d80d8eb1bc0a50f55abb5120d1172877ffbe7bb2548d30f4c799fe5"
+hash="3d34e42f7fa661beca33c7c3526802b80176954f3c7d83acb465a9fcee5665ab"
 maintainer="Herisson <spaceguybox@outlook.com>"
 url="https://github.com/Eugeny/tabby/releases/download/v${pkgver}/tabby-${pkgver}-linux-x64.deb"
 repology=("project: ${gives}")
