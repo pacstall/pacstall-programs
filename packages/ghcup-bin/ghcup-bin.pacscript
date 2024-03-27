@@ -38,7 +38,9 @@ package() {
 }
 
 _install_completion() {
-  sudo install -Dm644 <("${pkgdir}/usr/bin/ghcup" "--$1-completion-script" /usr/bin/ghcup) "${pkgdir}/usr/share/$2"
+  local shell="$1" location="$2"
+  "${pkgdir}/usr/bin/ghcup" "--${shell}-completion-script" /usr/bin/ghcup > "${shell}-temp"
+  sudo install -Dm644 "${shell}-temp" "${pkgdir}/usr/share/${location}"
 }
 
 post_install() {
