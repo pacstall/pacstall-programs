@@ -6,7 +6,7 @@ hash="47754023d12b9eb730c83fe9aeec7b8523d1dbaa9860c90928ddaa904b89aa1f"
 depends=("mangohud" "libqt5pas-dev")
 replace=("goverlay")
 pkgdesc="Graphical UI to help manage Linux overlays"
-maintainer="Elsie19 <elsie19@pm.me>"
+maintainer="xdavius <xdavius@github.com>"
 repology=("project: goverlay")
 
 package() {
