@@ -2,7 +2,6 @@ maintainer="Xdavius <xdavius@github.com>"
 name="goverlay"
 gives="goverlay"
 pkgver="1.1.1"
-pkgname="goverlay"
 pkgdesc="A GUI to help manage Vulkan/OpenGL overlays"
 arch=("amd64")
 depends=('libqt6pas6' 'mangohud')
