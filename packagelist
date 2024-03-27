@@ -388,6 +388,7 @@ rhino-setup-bin
 rhino-setup-git
 rhino-system-git
 rhino-ubxi-core
+rio-x11-deb
 rpcs3-app
 rstudio-deb
 rust-motd-deb
