@@ -1,0 +1,36 @@
+name: Convert Pacscripts to 5.0.0
+
+on:
+   workflow_dispatch:
+   push:
+     branches:
+       - master
+
+permissions:
+  contents: write
+
+jobs:
+  convert-pacscripts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4.1.1
+
+      - name: Fetch Upstream
+        run: |
+          git remote add upstream https://github.com/pacstall/pacstall-programs
+          git fetch upstream
+          git checkout upstream/master
+
+      - name: Convert
+        run: |
+          bash -c "$(curl -fsSL https://raw.githubusercontent.com/oklopfer/debs/master/misc/pac5-conv.sh)" \
+          && echo "Success!"
+
+      - name: Commit and Push
+        run: |
+          git add packages/*/*.pacscript
+          git config --local user.name "${{ github.actor }}"
+          git config --local user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+          git commit -m "refactor(*)!: convert pacscripts to \`5.0.0\` format"
+          git push origin HEAD:refs/heads/5.0.0-master --force
