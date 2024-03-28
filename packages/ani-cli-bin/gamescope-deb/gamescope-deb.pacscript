@@ -1,0 +1,10 @@
+name="gamescope-deb"
+gives="gamescope"
+breaks=("gamescope" "gamescope-git")
+pkgver="3.12.5-2"
+pkgdesc="SteamOS session compositing window manager"
+hash="5ead3860e57e07d8d895b27488ce26ba9be576ec5320bb6f49997f137f302a59"
+maintainer="Herisson <spaceguybox@outlook.com>"
+#url="https://github.com/Eugeny/tabby/releases/download/v${pkgver}/tabby--linux-x64.deb"
+url="https://github.com/akdor1154/gamescope-pkg/releases/download/v${pkgver}/gamescope_${pkgver}_amd64.deb"
+repology=("project: ${gives}")
