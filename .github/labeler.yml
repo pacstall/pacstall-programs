@@ -5,6 +5,8 @@ labels:
   title: '^upd\(.*'
 - label: "Update Pacscript"
   title: '^fix\(.*'
+- label: "refactor"
+  title: '^refactor\(.*'
 - label: "bug"
   title: '^bug\(.*'
 
@@ -16,6 +18,6 @@ labels:
 - label: "chore"
   title: '^chore\:.*'
 - label: 'CI'
-  title: '^ci\:.*'
+  title: '^ci\(.*'
 - label: 'feature'
   title: '^feat\:.*'
