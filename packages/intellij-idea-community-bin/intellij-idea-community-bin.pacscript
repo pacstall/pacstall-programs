@@ -7,12 +7,13 @@ maintainer="Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>"
 pkgdesc="IntelliJ IDEA is an IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages"
 arch=('amd64' 'arm64')
 if [[ ${CARCH} == amd64 ]]; then
-  url="https://download-cdn.jetbrains.com/idea/ideaIC-${pkgver}.tar.gz"
+  archext="${pkgver}"
   hash="5e376677d4b9810f4171700ce9d9d3ece58f245ce8d9f2011b05966df5dd7ddd"
 else
-  url="https://download-cdn.jetbrains.com/idea/ideaIC-${pkgver}-aarch64.tar.gz"
+  archext="${pkgver}-aarch64"
   hash="cfc98c4a09f6740ef47a3dbc8f2e71a66a8aab2eae3fb1b901c2db5dcce5f060"
 fi
+url="https://download-cdn.jetbrains.com/idea/ideaIC-${archext}.tar.gz"
 repology=("project: intellij-idea-community")
 desktop_file_sum="20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293"
 
