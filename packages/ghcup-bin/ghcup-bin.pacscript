@@ -8,27 +8,26 @@ breaks=("${gives}-git")
 maintainer="vigress8 <vig@disroot.org>"
 repology=("project: ${gives}")
 
+_baseurl="https://downloads.haskell.org/~${gives}/${pkgver}"
 case "${CARCH}" in
   amd64)
-    gnuarch="x86_64"
+    url="${_baseurl}/x86_64-linux-${gives}-${pkgver}"
     hash='bf213f4dfd2271b46ca52e2f14e96850ce32e9115e5acc90f1dc5a4e815e32af'
     ;;
   arm64)
-    gnuarch="aarch64"
+    url="${_baseurl}/aarch64-linux-${gives}-${pkgver}"
     hash='3eda556959462579b73558616646c9fc01a583acc7a4611bb21a32706deae142'
     ;;
   armhf)
-    gnuarch="armv7"
+    url="${_baseurl}/armv7-linux-${gives}-${pkgver}"
     hash='7c66253e52c5fb627a4d4b203a69e69f4d7732348ad6a830a41d7e2d79a61c5d'
     ;;
   i386)
-    gnuarch="i386"
+    url="${_baseurl}/i386-linux-${gives}-${pkgver}"
     hash='1fd4fa989653a127d33f90cb4cc11fd024ea4085e795c0b0f6ed97afc5e8b634'
     ;;
   *) ;;
 esac
-
-url="https://downloads.haskell.org/~ghcup/${pkgver}/${gnuarch}-linux-ghcup-${pkgver}"
 
 package() {
   sudo install -Dm755 "${gnuarch}-linux-ghcup-${pkgver}" "${pkgdir}/usr/bin/ghcup"
