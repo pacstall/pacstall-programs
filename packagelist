@@ -232,8 +232,8 @@ libtomlplusplus-header
 libxapp1-deb
 lightpad-git
 linked-deb
-linux-headers-deb
 linux-headers-cachyos-deb
+linux-headers-deb
 linux-headers-generic-deb
 linux-headers-generic-stable-deb
 linux-headers-okpine-deb
