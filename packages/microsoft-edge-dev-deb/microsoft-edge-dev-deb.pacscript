@@ -1,10 +1,10 @@
-name="microsoft-edge-dev-deb"
+pkgname="microsoft-edge-dev-deb"
 gives="microsoft-edge-dev"
-replace=("${gives}")
+replaces=("${gives}")
 repology=("project: ${gives}")
 pkgver="118.0.2060.1"
-url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${pkgver}-1_amd64.deb"
+source=("https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${pkgver}-1_amd64.deb")
 pkgdesc="The web browser from Microsoft - Developer channel"
-hash="38a8c29942cf8d8ba8ba6a80aa2bf2085cc7491d483aeb442164ea5ed0e03213"
+sha256sums=("38a8c29942cf8d8ba8ba6a80aa2bf2085cc7491d483aeb442164ea5ed0e03213")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

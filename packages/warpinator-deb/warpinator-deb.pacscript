@@ -1,10 +1,10 @@
-name="warpinator-deb"
+pkgname="warpinator-deb"
 gives="warpinator"
 pkgdesc="A tool to share files across the LAN"
 pkgver="1.8.3+virginia"
-url="http://packages.linuxmint.com/pool/backport/w/warpinator/warpinator_${pkgver}_amd64.deb"
-hash="fdcae13e004e1474711aa2f567e76d372f0634264d69732e775aba338b3d825e"
+source=("http://packages.linuxmint.com/pool/backport/w/warpinator/warpinator_${pkgver}_amd64.deb")
+sha256sums=("fdcae13e004e1474711aa2f567e76d372f0634264d69732e775aba338b3d825e")
 depends=("gir1.2-glib-2.0" "gir1.2-gtk-3.0" "gir1.2-xapp-1.0" "gir1.2-nm-1.0" "python3" "python3-gi" "python3-setproctitle" "python3-xapp" "python3-zeroconf" "python3-grpcio" "python3-cryptography" "python3-nacl")
 compatible=("*:jammy")
 repology=("project: warpinator" "repo: linux_mint_21_1")
-maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
+maintainer=("Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>")

@@ -1,10 +1,10 @@
-name="onlyoffice-desktopeditors-deb"
+pkgname="onlyoffice-desktopeditors-deb"
 gives="onlyoffice-desktopeditors"
 pkgver="8.0.1"
-replace=("${gives}")
-url="https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${pkgver}/onlyoffice-desktopeditors_amd64.deb"
+replaces=("${gives}")
+source=("https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${pkgver}/onlyoffice-desktopeditors_amd64.deb")
 pkgdesc="Free office suite that combines text, spreadsheet and presentation"
 repology=("project: onlyoffice-desktopeditors")
-hash="5978cf746c3074ed77becc95613ba82e031e76c0034bc68ebd92fe73071c0564"
+sha256sums=("5978cf746c3074ed77becc95613ba82e031e76c0034bc68ebd92fe73071c0564")
 arch=('amd64')
-maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
+maintainer=("সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>")

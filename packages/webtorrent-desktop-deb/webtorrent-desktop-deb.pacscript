@@ -1,10 +1,10 @@
-name="webtorrent-desktop-deb"
+pkgname="webtorrent-desktop-deb"
 gives="webtorrent-desktop"
 pkgver="0.24.0"
-replace=("${gives}")
-url="https://github.com/webtorrent/webtorrent-desktop/releases/download/v${pkgver}/webtorrent-desktop_${pkgver}_amd64.deb"
+replaces=("${gives}")
+source=("https://github.com/webtorrent/webtorrent-desktop/releases/download/v${pkgver}/webtorrent-desktop_${pkgver}_amd64.deb")
 repology=("project: webtorrent-desktop")
 pkgdesc="The streaming torrent app."
-hash="2110c6e81f2ebeae74e8194ec49e80f8357573c57222d2d472623355fb1307b0"
+sha256sums=("2110c6e81f2ebeae74e8194ec49e80f8357573c57222d2d472623355fb1307b0")
 arch=('amd64')
-maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
+maintainer=("সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>")

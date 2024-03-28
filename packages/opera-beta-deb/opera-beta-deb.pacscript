@@ -1,9 +1,9 @@
-name="opera-beta-deb"
+pkgname="opera-beta-deb"
 gives="opera-beta"
 # repology=("project: ${gives}")
 pkgver="107.0.5045.4"
-url="https://deb.opera.com/opera/pool/non-free/o/opera-beta/${gives}_${pkgver}_amd64.deb"
+source=("https://deb.opera.com/opera/pool/non-free/o/opera-beta/${gives}_${pkgver}_amd64.deb")
 pkgdesc="Opera is a fast, secure, and user-friendly web browser - Beta"
-hash="ad4a113c3b011cb6ffe015a65f36864e11b78d50bbe0dc2836ba291ac76bff18"
+sha256sums=("ad4a113c3b011cb6ffe015a65f36864e11b78d50bbe0dc2836ba291ac76bff18")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

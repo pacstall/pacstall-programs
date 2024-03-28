@@ -1,4 +1,4 @@
-name="ulauncher-deb"
+pkgname="ulauncher-deb"
 gives="ulauncher"
 pkgver="6.0.0~beta5"
 arch=("any")
@@ -8,7 +8,7 @@ case ${DISTRO} in
 	"ubuntu:devel" | "ubuntu:noble") ;;
 	*) depends+=("python3-levenshtein") ;;
 esac
-url="https://github.com/Ulauncher/Ulauncher/releases/download/v${pkgver/\~/-}/${gives}_${pkgver/\~/.}_all.deb"
+source=("https://github.com/Ulauncher/Ulauncher/releases/download/v${pkgver/\~/-}/${gives}_${pkgver/\~/.}_all.deb")
 pkgdesc="Application launcher for Linux"
-maintainer="Oren Klopfer <oren@taumoda.com>"
-hash="bf10b2a00392d137b47e392c748caeed4aa70c5aed4c3e82e0c812f2f30b0a3e"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums=("bf10b2a00392d137b47e392c748caeed4aa70c5aed4c3e82e0c812f2f30b0a3e")

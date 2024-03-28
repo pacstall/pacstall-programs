@@ -1,5 +1,5 @@
-name="unicorn-mobile-git"
-url="https://github.com/rhino-linux/unicorn.git"
+pkgname="unicorn-mobile-git"
+source=("https://github.com/rhino-linux/unicorn.git")
 pkgver="0.0.1"
 pkgrel="2"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
@@ -10,23 +10,22 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-t
   "pipewire-audio" "bluetooth")
 pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-mobile"
-replace=("unicorn-desktop" "unicorn-desktop-git")
+replaces=("unicorn-desktop" "unicorn-desktop-git")
 priority="required"
 pkgdesc="Unicorn Desktop Mobile variant by the Rhino Linux Team"
-maintainer="Oren Klopfer <oren@taumoda.com>"
-pkgver() {
-  git ls-remote "${url}" mobile | cut -f1 | cut -c1-8
-}
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("debian:*")
 
 prepare() {
-  sudo git remote add upstream "${url}"
+  cd "${_archive}"
+  sudo git remote add upstream "${source[0]}"
   sudo git fetch upstream
   sudo git checkout upstream/mobile
   git config --global --add safe.directory "${PWD}"
 }
 
 build() {
+  cd "${_archive}"
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
   sudo mkdir -p "${pkgdir}/usr/share/doc"
   sudo mkdir -p "${pkgdir}/etc/skel/.config"
@@ -47,8 +46,9 @@ build() {
 }
 
 package() {
+  cd "${_archive}"
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
   # Install
   for i in xfce4 plank autostart cortile ulauncher; do
     sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"

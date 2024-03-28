@@ -1,18 +1,19 @@
-name="libdrm"
+pkgname="libdrm"
 pkgver="2.4.120"
 pkgrel="2"
 pkgdesc="Userspace interface to kernel DRM services"
-homepage="https://dri.freedesktop.org/"
+url="https://dri.freedesktop.org/"
 arch=("amd64" "arm64")
 depends=("libpciaccess0" "libc6")
 makedepends=("python3-docutils" "meson" "ninja-build" "libcairo2-dev" "libpciaccess-dev" "libc6-dev")
-provides=("${name}" "${name}-dev")
-replace=("${name}-dev")
-url="https://dri.freedesktop.org/${name}/${name}-${pkgver}.tar.xz"
-hash="3bf55363f76c7250946441ab51d3a6cc0ae518055c0ff017324ab76cdefb327a"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+provides=("${pkgname}" "${pkgname}-dev")
+replaces=("${pkgname}-dev")
+source=("https://dri.freedesktop.org/${pkgname}/${pkgname}-${pkgver}.tar.xz")
+sha256sums=("3bf55363f76c7250946441ab51d3a6cc0ae518055c0ff017324ab76cdefb327a")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
+  cd "${_archive}"
   meson setup build \
     -D udev=true \
     -D etnaviv=disabled \
@@ -24,5 +25,6 @@ build() {
 }
 
 package() {
+  cd "${_archive}"
   sudo meson install -C build --destdir "${pkgdir}"
 }

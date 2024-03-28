@@ -1,9 +1,9 @@
-name="linux-wifi-hotspot-deb"
+pkgname="linux-wifi-hotspot-deb"
 gives="linux-wifi-hotspot"
 repology=("project: linux-wifi-hotspot")
 pkgver="4.7.1"
-url="https://github.com/lakinduakash/linux-wifi-hotspot/releases/download/v${pkgver}/linux-wifi-hotspot_${pkgver}_amd64.deb"
+source=("https://github.com/lakinduakash/linux-wifi-hotspot/releases/download/v${pkgver}/linux-wifi-hotspot_${pkgver}_amd64.deb")
 pkgdesc="Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface. It is also able to create a hotspot using the same wifi card which is connected to an AP already ( Similar to Windows 10)."
-hash="eeae00cbe0bacd122a30f02291caffd7e75f2d23dbd25dab276c048c7797299b"
+sha256sums=("eeae00cbe0bacd122a30f02291caffd7e75f2d23dbd25dab276c048c7797299b")
 arch=('amd64')
-maintainer="Zahrun <Zahrun@github.com>"
+maintainer=("Zahrun <Zahrun@github.com>")

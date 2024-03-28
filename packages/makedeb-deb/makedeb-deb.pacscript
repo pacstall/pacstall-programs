@@ -1,9 +1,9 @@
-name="makedeb-deb"
+pkgname="makedeb-deb"
 gives="makedeb"
 breaks=("${gives}" "${gives}-git")
 pkgver="16.0.0"
 repology=("project: ${gives}")
-url="https://proget.makedeb.org/debian-feeds/makedeb/main/makedeb/all/makedeb_all_${pkgver}-stable.deb"
+source=("https://proget.makedeb.org/debian-feeds/makedeb/main/makedeb/all/makedeb_all_${pkgver}-stable.deb")
 pkgdesc="A tool which takes PKGBUILD files and creates Debian packages installable with DPKG/APT"
-hash="48b8de3c66da9be1ad1d283002c948dd25cb9e45d5d6725af0db38bbd823d7bd"
-maintainer="Elsie19 <elsie19@pm.me>"
+sha256sums=("48b8de3c66da9be1ad1d283002c948dd25cb9e45d5d6725af0db38bbd823d7bd")
+maintainer=("Elsie19 <elsie19@pm.me>")

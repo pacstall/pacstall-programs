@@ -1,9 +1,9 @@
-name="zoho-notebook-deb"
+pkgname="zoho-notebook-deb"
 gives="notebook"
 pkgver="2.2.3"
-replace=("notebook")
-url="https://downloads.zohocdn.com/notebooklinux-desktop/Notebook-${pkgver}.deb"
+replaces=("notebook")
+source=("https://downloads.zohocdn.com/notebooklinux-desktop/Notebook-${pkgver}.deb")
 repology=("project: zoho-notebook")
 pkgdesc="The most beautiful note-taking app across devices"
-hash="c9f4faf14c722fd549cd1be7ebd0424728af7ad2ceda246faadd76d2b83abaa1"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+sha256sums=("c9f4faf14c722fd549cd1be7ebd0424728af7ad2ceda246faadd76d2b83abaa1")
+maintainer=("Oren Klopfer <oren@taumoda.com>")

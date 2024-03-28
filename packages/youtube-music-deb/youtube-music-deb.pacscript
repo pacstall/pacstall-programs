@@ -1,9 +1,9 @@
-name="youtube-music-deb"
+pkgname="youtube-music-deb"
 gives="youtube-music"
 repology=("project: ${gives}")
 pkgver="3.3.5"
-url="https://github.com/th-ch/youtube-music/releases/download/v${pkgver}/youtube-music_${pkgver}_amd64.deb"
+source=("https://github.com/th-ch/youtube-music/releases/download/v${pkgver}/youtube-music_${pkgver}_amd64.deb")
 pkgdesc="YouTube Music Desktop App bundled with custom plugins (and built-in ad blocker / downloader)"
-hash="c130121bc907b47ffe5275e28e1d6bef45c786ac7f054c6863f9dd6f7364566a"
+sha256sums=("c130121bc907b47ffe5275e28e1d6bef45c786ac7f054c6863f9dd6f7364566a")
 arch=('amd64')
-maintainer="Zahrun <Zahrun@github.com>"
+maintainer=("Zahrun <Zahrun@github.com>")

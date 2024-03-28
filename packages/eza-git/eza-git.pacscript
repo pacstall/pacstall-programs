@@ -1,21 +1,20 @@
-name="eza-git"
+pkgname="eza-git"
 gives="eza"
-url="https://github.com/eza-community/eza.git"
+source=("https://github.com/eza-community/eza.git")
 pkgver="0.18.9"
 homepage='https://the.exa.website/'
 makedepends=("cargo" "libgit2-dev" "cmake" "rustc" "pandoc")
 pkgdesc="A modern, maintained replacement for ls"
-maintainer="Elsie19 <elsie19@pm.me>"
+maintainer=("Elsie19 <elsie19@pm.me>")
 incompatible=('debian:bookworm')
-pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
-}
 
 prepare() {
+  cd "${_archive}"
   mkdir -p target/man1 target/man5
 }
 
 build() {
+  cd "${_archive}"
   cargo build -j"${NCPU}" --release --locked
   pandoc --standalone -f markdown -t man "man/eza.1.md" > target/man1/eza.1
   pandoc --standalone -f markdown -t man "man/eza_colors.5.md" > target/man5/eza_colors.5
@@ -23,6 +22,7 @@ build() {
 }
 
 package() {
+  cd "${_archive}"
   # Install package
   sudo install -Dm755 target/release/eza -t "${pkgdir}/usr/bin"
   # Install completions

@@ -1,9 +1,9 @@
-name="internxt-deb"
+pkgname="internxt-deb"
 gives="internxt-drive"
 pkgver="1.9.9"
 repology=("project: ${gives}")
-url="https://github.com/internxt/drive-desktop/releases/download/v${pkgver}/internxt-drive_${pkgver}_amd64.deb"
+source=("https://github.com/internxt/drive-desktop/releases/download/v${pkgver}/internxt-drive_${pkgver}_amd64.deb")
 pkgdesc="The safest cloud storage for all your files, photos, and more"
-hash="85c8ef9515d2264b62e4bd45a9ed9271221a1dc37760c4038d45582a9079352a"
+sha256sums=("85c8ef9515d2264b62e4bd45a9ed9271221a1dc37760c4038d45582a9079352a")
 arch=('amd64')
-maintainer="Elsie19 <elsie19@pm.me>"
+maintainer=("Elsie19 <elsie19@pm.me>")

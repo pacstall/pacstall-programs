@@ -4,20 +4,17 @@
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
 #        \/          \/      \/
-maintainer="wizard-28 <wiz28@pm.me>"
+maintainer=("wizard-28 <wiz28@pm.me>")
 
-name="reshade-shaders-git"
 pkgname="reshade-shaders-git"
+gives="reshade-shaders-git"
 pkgdesc="A collection of post-processing shaders written in the ReShade FX shader language, to be used by vkBasalt"
-url="https://github.com/crosire/reshade-shaders.git"
+source=("https://github.com/crosire/reshade-shaders.git")
 pkgver="0.0.1"
-gives="${pkgname}"
-breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
-pkgver() {
-  git ls-remote "${url}" slim | cut -f1 | cut -c1-8
-}
+breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app")
 
 package() {
+  cd "${_archive}"
   sudo install -dm 755 "${pkgdir}/opt/reshade/shaders"
   sudo install -Dm 644 Shaders/*.* "${pkgdir}/opt/reshade/shaders/"
   sudo install -dm 755 "${pkgdir}/opt/reshade/textures"

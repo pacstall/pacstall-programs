@@ -1,14 +1,15 @@
-name="goverlay"
+pkgname="goverlay"
 gives="goverlay"
 pkgver="1.0"
-url="https://github.com/benjamimgois/goverlay/releases/download/${pkgver}/goverlay_${pkgver//.*}.tar.xz"
-hash="47754023d12b9eb730c83fe9aeec7b8523d1dbaa9860c90928ddaa904b89aa1f"
+source=("https://github.com/benjamimgois/goverlay/releases/download/${pkgver}/goverlay_${pkgver//.*}.tar.xz")
+sha256sums=("47754023d12b9eb730c83fe9aeec7b8523d1dbaa9860c90928ddaa904b89aa1f")
 depends=("mangohud" "libqt5pas-dev")
 pkgdesc="Graphical UI to help manage Linux overlays"
-maintainer="Elsie19 <elsie19@pm.me>"
+maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: goverlay")
 
 package() {
+  cd "${_archive}"
   sudo mkdir -p "${pkgdir}/usr/bin/" "${pkgdir}/opt/goverlay/" "${pkgdir}/usr/share/applications/" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/"
   echo -e "#!/bin/sh\nQT_QPA_PLATFORM=xcb mangohud --dlsym /opt/goverlay/goverlay" | sudo tee "${pkgdir}/usr/bin/goverlay" > /dev/null
   sudo chmod +x "${pkgdir}/usr/bin/goverlay"

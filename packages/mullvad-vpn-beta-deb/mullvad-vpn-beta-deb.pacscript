@@ -1,9 +1,9 @@
-name="mullvad-vpn-beta-deb"
+pkgname="mullvad-vpn-beta-deb"
 gives="mullvad-vpn"
 repology=("project: ${gives}")
 breaks=("${gives}-deb")
 pkgver="2023.4"
-url="https://github.com/mullvad/mullvadvpn-app/releases/download/${pkgver}/MullvadVPN-${pkgver}_amd64.deb"
+source=("https://github.com/mullvad/mullvadvpn-app/releases/download/${pkgver}/MullvadVPN-${pkgver}_amd64.deb")
 pkgdesc="The Mullvad VPN client app for desktop - Beta channel"
-hash="ecda227eb5f5ff7a542474d82bed9d568b3fa05b0a898c328421a2d3b4ac1213"
+sha256sums=("ecda227eb5f5ff7a542474d82bed9d568b3fa05b0a898c328421a2d3b4ac1213")
 arch=('amd64')

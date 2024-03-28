@@ -1,9 +1,9 @@
-name="appimagelauncher-deb"
+pkgname="appimagelauncher-deb"
 gives="appimagelauncher"
 pkgver="2.2.0"
-url="https://github.com/TheAssassin/AppImageLauncher/releases/download/v${pkgver}/${gives}_${pkgver}-travis995.0f91801.bionic_amd64.deb"
+source=("https://github.com/TheAssassin/AppImageLauncher/releases/download/v${pkgver}/${gives}_${pkgver}-travis995.0f91801.bionic_amd64.deb")
 pkgdesc="Helper application for Linux distributions serving as a kind of entry point for running and integrating AppImages."
-hash="f4b9db56a6ba7dd091074b14157612986a9f6a0cb3fcd230abfc8f4555c70a7f"
+sha256sums=("f4b9db56a6ba7dd091074b14157612986a9f6a0cb3fcd230abfc8f4555c70a7f")
 arch=('amd64')
 repology=("project: ${gives}")
-maintainer="Zahrun <Zahrun@github.com>"
+maintainer=("Zahrun <Zahrun@github.com>")

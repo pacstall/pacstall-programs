@@ -1,18 +1,20 @@
-name="alacritty"
+pkgname="alacritty"
 pkgver="0.13.2"
 repology=("project: alacritty")
-url="https://github.com/alacritty/alacritty/archive/refs/tags/v${pkgver}.tar.gz"
+source=("https://github.com/alacritty/alacritty/archive/refs/tags/v${pkgver}.tar.gz")
 makedepends=("cargo" "cmake" "pkg-config" "libfreetype6-dev" "libfontconfig1-dev" "libxcb-xfixes0-dev" "python3" "gzip" "scdoc")
 pkgdesc="A fast, cross-platform, OpenGL terminal emulator"
-maintainer="Warofzen <warofzen1@protonmail.com>"
+maintainer=("Warofzen <warofzen1@protonmail.com>")
 incompatible=('debian:bullseye' 'debian:bookworm')
-hash="e9a54aabc92bbdc25ab1659c2e5a1e9b76f27d101342c8219cc98a730fd46d90"
+sha256sums=("e9a54aabc92bbdc25ab1659c2e5a1e9b76f27d101342c8219cc98a730fd46d90")
 
 build() {
+  cd "${_archive}"
   cargo build -j"${NCPU}" --release --locked
 }
 
 package() {
+  cd "${_archive}"
   sudo install -Dm755 target/release/alacritty -t "${pkgdir}/usr/bin"
 
   sudo install -Dm644 extra/logo/alacritty-term.svg "${pkgdir}/usr/share/icons/hicolor/scalable/apps/Alacritty.svg"

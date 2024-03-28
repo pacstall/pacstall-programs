@@ -1,5 +1,5 @@
-name="unicorn-desktop-git"
-url="https://github.com/rhino-linux/unicorn.git"
+pkgname="unicorn-desktop-git"
+source=("https://github.com/rhino-linux/unicorn.git")
 pkgver="0.0.1"
 pkgrel="2"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
@@ -12,16 +12,14 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "val
   "ukui-touchpadserver" "pipewire-audio" "bluetooth")
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-desktop"
-replace=("unicorn-mobile" "unicorn-mobile-git")
+replaces=("unicorn-mobile" "unicorn-mobile-git")
 priority="required"
 pkgdesc="Unicorn Desktop by the Rhino Linux Team"
-maintainer="Oren Klopfer <oren@taumoda.com>"
-pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
-}
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("debian:*")
 
 build() {
+  cd "${_archive}"
   sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
   sudo mkdir -p "${pkgdir}/usr/share/doc"
   sudo mkdir -p "${pkgdir}/etc/skel/.config"
@@ -40,8 +38,9 @@ build() {
 }
 
 package() {
+  cd "${_archive}"
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
   # Install
   for i in xfce4 plank autostart cortile ulauncher; do
     sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"

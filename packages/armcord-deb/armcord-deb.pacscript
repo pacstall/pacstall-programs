@@ -1,14 +1,11 @@
-name="armcord-deb"
+pkgname="armcord-deb"
 gives="armcord"
 depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libsecret-1-0")
 repology=("project: ${gives}")
 pkgver="3.2.6"
 arch=('arm64' 'amd64')
-if [[ ${CARCH} == "arm64" ]]; then
-  hash="fee936b25a4d175b124d6eb3df5f5883dcb1fece397c93ef250269635d542d5c"
-else
-  hash="f40731a82c612c08d87256b0ea5ae2d3a4743e04107911d36cb24b11d8430965"
-fi
-url="https://github.com/ArmCord/ArmCord/releases/download/v${pkgver}/ArmCord_${pkgver}_${CARCH}.deb"
+sha256sums_arm64=("fee936b25a4d175b124d6eb3df5f5883dcb1fece397c93ef250269635d542d5c")
+sha256sums_amd64=("f40731a82c612c08d87256b0ea5ae2d3a4743e04107911d36cb24b11d8430965")
+source=("https://github.com/ArmCord/ArmCord/releases/download/v${pkgver}/ArmCord_${pkgver}_${CARCH}.deb")
 pkgdesc="Custom client designed to enhance your Discord experience while keeping everything lightweight"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

@@ -1,9 +1,9 @@
-name="hyper-deb"
+pkgname="hyper-deb"
 gives="hyper"
 pkgver="3.4.1"
-url="https://github.com/vercel/hyper/releases/download/v${pkgver}/hyper_${pkgver}_amd64.deb"
-hash="8c4cd9e8c58568d5c14bc080cdf9ffb9f30fa5672e6bd1e1045cdeb563251f56"
+source=("https://github.com/vercel/hyper/releases/download/v${pkgver}/hyper_${pkgver}_amd64.deb")
+sha256sums=("8c4cd9e8c58568d5c14bc080cdf9ffb9f30fa5672e6bd1e1045cdeb563251f56")
 arch=('amd64')
 pkgdesc="HTML/JS/CSS Terminal"
-maintainer="Elsie19 <elsie19@pm.me>"
+maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: hyper-terminal")

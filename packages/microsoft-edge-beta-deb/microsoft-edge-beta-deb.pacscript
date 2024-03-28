@@ -1,10 +1,10 @@
-name="microsoft-edge-beta-deb"
+pkgname="microsoft-edge-beta-deb"
 gives="microsoft-edge-beta"
-replace=("${gives}")
+replaces=("${gives}")
 repology=("project: ${gives}")
 pkgver="117.0.2045.12"
-url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${pkgver}-1_amd64.deb"
+source=("https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${pkgver}-1_amd64.deb")
 pkgdesc="The web browser from Microsoft - Beta"
-hash="ec64370003efdcd3cd7d5abf3a69a7d513968eca785f1be670c06af8046ba607"
+sha256sums=("ec64370003efdcd3cd7d5abf3a69a7d513968eca785f1be670c06af8046ba607")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

@@ -1,10 +1,10 @@
-name="google-chrome-deb"
+pkgname="google-chrome-deb"
 gives="google-chrome-stable"
 repology=("project: google-chrome" "repo: aur")
-replace=("${gives}")
+replaces=("${gives}")
 pkgver="120.0.6099.199"
-url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${pkgver}-1_amd64.deb"
+source=("https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${pkgver}-1_amd64.deb")
 pkgdesc="The popular and trusted web browser by Google"
-hash="e0158b9f4fa060d586e03b2895b63a5a54ef5d697bb59219ae7a9796b1941a34"
+sha256sums=("e0158b9f4fa060d586e03b2895b63a5a54ef5d697bb59219ae7a9796b1941a34")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

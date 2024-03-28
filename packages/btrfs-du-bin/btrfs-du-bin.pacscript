@@ -1,12 +1,13 @@
-name="btrfs-du-bin"
+pkgname="btrfs-du-bin"
 gives="btrfs-du"
 pkgver="0.0.7"
-url="https://github.com/nachoparker/btrfs-du/archive/refs/tags/v${pkgver}.tar.gz"
+source=("https://github.com/nachoparker/btrfs-du/archive/refs/tags/v${pkgver}.tar.gz")
 pkgdesc="Easily print BTRFS subvolume/snapshot disk usage"
 depends=("btrfs-progs")
 repology=("project: ${gives}")
 
 package() {
+  cd "${_archive}"
   sudo install -vDm755 -t "${pkgdir}/usr/bin" "btrfs-du"
 }
 

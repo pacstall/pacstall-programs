@@ -1,15 +1,20 @@
-name="an-anime-game-launcher-bin"
-pkgname="an-anime-game-launcher"
+pkgname="an-anime-game-launcher-bin"
+gives="an-anime-game-launcher"
 pkgver="3.9.5"
 pkgdesc="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
-url="https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${pkgver}/anime-game-launcher"
-hash="b6a036ec76d4fc2573263fad61ff3ed1e937fa8bdf3e0cddfd79a8cd65e9bb55"
+source=(
+  "https://github.com/an-anime-team/an-anime-game-launcher/releases/download/${pkgver}/anime-game-launcher"
+  "icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png"
+)
+sha256sums=(
+  "b6a036ec76d4fc2573263fad61ff3ed1e937fa8bdf3e0cddfd79a8cd65e9bb55"
+  "SKIP"
+)
 depends=("xdelta3")
-maintainer="Elsie19 <elsie19@pm.me>"
-gives="${pkgname}"
+maintainer=("Elsie19 <elsie19@pm.me>")
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
-breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
+breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 
 optdepends=(
   "mangohud: FPS Hud/GUI"
@@ -19,7 +24,8 @@ optdepends=(
 )
 
 package() {
-  sudo install -Dm755 "anime-game-launcher" "${pkgdir}/usr/bin/${pkgname}"
+  cd "${_archive}"
+  sudo install -Dm755 "anime-game-launcher" "${pkgdir}/usr/bin/${gives}"
   sudo mkdir -p "${pkgdir}/usr/share/applications"
   echo '[Desktop Entry]
 Name=An Anime Game Launcher
@@ -29,8 +35,7 @@ Type=Application
 Categories=Game;
 Terminal=false
 X-AppImage-Version=2.4.2' | sudo tee "${pkgdir}/usr/share/applications/an-anime-game-launcher.desktop" > /dev/null
-  wget -q https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-  sudo install -Dm644 "icon.png" "${pkgdir}/usr/share/icons/hicolor/64x64/apps/an-anime-game-launcher.png"
+  sudo install -Dm644 "${srcdir}/icon.png" "${pkgdir}/usr/share/icons/hicolor/64x64/apps/an-anime-game-launcher.png"
 
 }
 

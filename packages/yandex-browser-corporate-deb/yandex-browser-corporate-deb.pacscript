@@ -1,9 +1,9 @@
-name="yandex-browser-corporate-deb"
+pkgname="yandex-browser-corporate-deb"
 gives="yandex-browser-corporate"
 repology=("project: ${gives}")
 pkgver="23.11.1.785-1"
-url="http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${gives}/${gives}_${pkgver}_amd64.deb"
+source=("http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${gives}/${gives}_${pkgver}_amd64.deb")
 pkgdesc="The web browser from Yandex - Corporate"
-hash="f59d1b8ad97f582644c9fdf6fd95e01209320abbca3de2b44b1cc55476438700"
+sha256sums=("f59d1b8ad97f582644c9fdf6fd95e01209320abbca3de2b44b1cc55476438700")
 arch=('amd64')
-maintainer="Wildy Sheverando <hai@wildyrando.com>"
+maintainer=("Wildy Sheverando <hai@wildyrando.com>")

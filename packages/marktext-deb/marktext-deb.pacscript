@@ -1,10 +1,10 @@
-name="marktext-deb"
+pkgname="marktext-deb"
 gives="marktext"
 pkgdesc="A simple and elegant open-source markdown editor that focused on speed and usability"
-replace=("${gives}")
+replaces=("${gives}")
 repology=("project: marktext")
 arch=("amd64")
 pkgver="0.17.1"
-maintainer="Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>"
-url="https://github.com/marktext/marktext/releases/download/v${pkgver}/marktext-amd64.deb"
-hash="927fa87c11e6763171bd68dbf60f235bfea62989e799620dd392d19077574fd2"
+maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>")
+source=("https://github.com/marktext/marktext/releases/download/v${pkgver}/marktext-amd64.deb")
+sha256sums=("927fa87c11e6763171bd68dbf60f235bfea62989e799620dd392d19077574fd2")

@@ -1,9 +1,9 @@
-name="vyprvpn-deb"
+pkgname="vyprvpn-deb"
 gives="vyprvpn"
 repology=("project: ${gives}")
 pkgver="1.8"
-url="https://support.vyprvpn.com/hc/article_attachments/360054448971/${gives}-linux-cli-${pkgver}.amd64.deb"
-replace=("${gives}")
+source=("https://support.vyprvpn.com/hc/article_attachments/360054448971/${gives}-linux-cli-${pkgver}.amd64.deb")
+replaces=("${gives}")
 pkgdesc="VyprVPN's CLI tool"
-hash="c2c67794b6f4bcdf5f2e3d1e8eeab6a2bff9f452ccc70032b9a408c9f98d5511"
+sha256sums=("c2c67794b6f4bcdf5f2e3d1e8eeab6a2bff9f452ccc70032b9a408c9f98d5511")
 arch=('amd64')

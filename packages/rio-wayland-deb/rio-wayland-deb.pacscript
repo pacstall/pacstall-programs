@@ -1,9 +1,9 @@
-name="rio-wayland-deb"
+pkgname="rio-wayland-deb"
 gives="rio"
 breaks=("rio-x11-deb" "rio-git")
 pkgver="0.0.36"
 pkgdesc="A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers"
-hash="754ec290a8ec3a3ec130ab4aa5b1ad9d2173620e0d7a228694a91154af9c8c2b"
-maintainer="Herisson <spaceguybox@outlook.com>"
-url="https://github.com/raphamorim/rio/releases/download/v${pkgver}/rio_${pkgver}-1_amd64_wayland.deb"
+sha256sums=("754ec290a8ec3a3ec130ab4aa5b1ad9d2173620e0d7a228694a91154af9c8c2b")
+maintainer=("Herisson <spaceguybox@outlook.com>")
+source=("https://github.com/raphamorim/rio/releases/download/v${pkgver}/rio_${pkgver}-1_amd64_wayland.deb")
 repology=("project: ${gives}")

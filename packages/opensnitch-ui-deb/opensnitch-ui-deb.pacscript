@@ -1,9 +1,9 @@
-name="opensnitch-ui-deb"
+pkgname="opensnitch-ui-deb"
 pkgver="1.6.3"
-url="https://github.com/evilsocket/opensnitch/releases/download/v${pkgver}/python3-opensnitch-ui_${pkgver}-1_all.deb"
+source=("https://github.com/evilsocket/opensnitch/releases/download/v${pkgver}/python3-opensnitch-ui_${pkgver}-1_all.deb")
 depends=("qt-material")
 gives="python3-opensnitch-ui"
 pkgdesc="OpenSnitch is a GNU/Linux port of the Little Snitch application firewall"
-hash="529f31d24bc162fc19930e6be0ddba16f4731dfc00d6ebab3612d22790dd8b84"
-maintainer="echometerain <echometer@disroot.org>"
+sha256sums=("529f31d24bc162fc19930e6be0ddba16f4731dfc00d6ebab3612d22790dd8b84")
+maintainer=("echometerain <echometer@disroot.org>")
 repology=("project: opensnitch-ui" "repo: nix_unstable")

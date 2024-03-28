@@ -1,4 +1,4 @@
-name="ffsend-bin"
+pkgname="ffsend-bin"
 gives="ffsend"
 pkgver="0.2.76"
 pkgdesc="Easily and securely share files from the command line"
@@ -9,11 +9,12 @@ breaks=("${gives}")
 depends=("ca-certificates")
 optdepends=("xclip: clipboard support"
   "bash-completion: support auto-completion for bash")
-maintainer="vigress8 <vig@disroot.org>"
-url="https://github.com/timvisee/${gives}/releases/download/v${pkgver}/${gives}-v${pkgver}-linux-x64-static"
-hash="ee3292c87a2d77bbe92f101a2d7b2723de811279ceac5d8257f7e95ddc982579"
+maintainer=("vigress8 <vig@disroot.org>")
+source=("https://github.com/timvisee/${gives}/releases/download/v${pkgver}/${gives}-v${pkgver}-linux-x64-static")
+sha256sums=("ee3292c87a2d77bbe92f101a2d7b2723de811279ceac5d8257f7e95ddc982579")
 
 package() {
+  cd "${_archive}"
   sudo install -Dm755 "${gives}-v${pkgver}-linux-x64-static" "${pkgdir}/usr/bin/${gives}"
 
   # Shell completions and LICENSE file

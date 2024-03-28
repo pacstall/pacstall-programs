@@ -1,9 +1,9 @@
-name="yandex-disk-deb"
+pkgname="yandex-disk-deb"
 gives="yandex-disk"
-replace=("${gives}")
+replaces=("${gives}")
 repology=("project: ${gives}")
 pkgver="0.1.6.1080"
-url="https://repo.yandex.ru/${gives}/deb/pool/main/y/${gives}/${gives}_${pkgver}_amd64.deb"
+source=("https://repo.yandex.ru/${gives}/deb/pool/main/y/${gives}/${gives}_${pkgver}_amd64.deb")
 pkgdesc="Cloud service that lets users store files on 'cloud' servers and share them with others online"
-hash="47ba503b4dfccecc824386d67d686abe4b5356b8b546e48fce8811b5fa88a718"
+sha256sums=("47ba503b4dfccecc824386d67d686abe4b5356b8b546e48fce8811b5fa88a718")
 arch=('amd64')

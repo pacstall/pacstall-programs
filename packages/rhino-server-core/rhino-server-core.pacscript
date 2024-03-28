@@ -1,10 +1,10 @@
-name="rhino-server-core"
-url="https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png"
+pkgname="rhino-server-core"
+source=("https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png")
 pacdeps=("rhino-pkg-git" "rhino-neofetch-git" "pacstall-qa-git")
 pkgdesc="Transitional package to provide minimal core Rhino Linux software"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 compatible=("ubuntu:devel" "ubuntu:noble")
-replace=("rhino-core" "rhino-pine-core" "rhino-ubxi-core")
+replaces=("rhino-core" "rhino-pine-core" "rhino-ubxi-core")
 priority="essential"
 pkgver="2023.4"
 pkgrel="4"
@@ -12,12 +12,13 @@ style="(server)"
 branch="devel"
 
 pre_install() {
-  sudo dpkg-divert --quiet --package "${name}" --divert /usr/lib/ubuntu-release --no-rename /usr/lib/os-release
-  sudo dpkg-divert --quiet --package "${name}" --divert /usr/share/pixmaps/ubuntu-logo-text-overwritten.png --no-rename /usr/share/pixmaps/ubuntu-logo-text.png
-  sudo dpkg-divert --quiet --package "${name}" --divert /usr/share/pixmaps/ubuntu-logo-text-dark-overwritten.png --no-rename /usr/share/pixmaps/ubuntu-logo-text-dark.png
+  sudo dpkg-divert --quiet --package "${pkgname}" --divert /usr/lib/ubuntu-release --no-rename /usr/lib/os-release
+  sudo dpkg-divert --quiet --package "${pkgname}" --divert /usr/share/pixmaps/ubuntu-logo-text-overwritten.png --no-rename /usr/share/pixmaps/ubuntu-logo-text.png
+  sudo dpkg-divert --quiet --package "${pkgname}" --divert /usr/share/pixmaps/ubuntu-logo-text-dark-overwritten.png --no-rename /usr/share/pixmaps/ubuntu-logo-text-dark.png
 }
 
 package() {
+  cd "${_archive}"
   sudo mkdir -p "${pkgdir}/usr/lib"
   sudo mkdir -p "${pkgdir}/usr/share/pixmaps"
   for i in ubuntu-logo-text.png ubuntu-logo-text-dark.png; do
@@ -38,7 +39,7 @@ UBUNTU_CODENAME=\"${branch}\"" | sudo tee "${pkgdir}/usr/lib/os-release" > /dev/
 }
 
 post_remove() {
-  sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/lib/os-release
-  sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text.png
-  sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text-dark.png
+  sudo dpkg-divert --quiet --package "${pkgname}" --remove --rename /usr/lib/os-release
+  sudo dpkg-divert --quiet --package "${pkgname}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text.png
+  sudo dpkg-divert --quiet --package "${pkgname}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text-dark.png
 }

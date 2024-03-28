@@ -1,9 +1,9 @@
-name="schildichat-deb"
+pkgname="schildichat-deb"
 gives="schildichat-desktop"
 pkgver="1.11.30-sc.2"
 arch=("amd64")
-url="https://github.com/SchildiChat/schildichat-desktop/releases/download/v${pkgver}/schildichat-desktop_${pkgver}_amd64.deb"
-hash="ad9bb5cee3c68d9c4d1bf102a50ddaa3dfd2e1005ff1e009e78c82edececc4bc"
-homepage="https://github.com/SchildiChat/schildichat-desktop/"
+source=("https://github.com/SchildiChat/schildichat-desktop/releases/download/v${pkgver}/schildichat-desktop_${pkgver}_amd64.deb")
+sha256sums=("ad9bb5cee3c68d9c4d1bf102a50ddaa3dfd2e1005ff1e009e78c82edececc4bc")
+url="https://github.com/SchildiChat/schildichat-desktop/"
 pkgdesc="Matrix client, as Element Web-Desktop fork"
-maintainer="Diegiwg <diegiwg@gmail.com>"
+maintainer=("Diegiwg <diegiwg@gmail.com>")

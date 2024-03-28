@@ -1,10 +1,10 @@
-name="bluegriffon-deb"
+pkgname="bluegriffon-deb"
 gives="bluegriffon"
 breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
 pkgver="3.1"
 pkgdesc="The next-gen Web and EPUB Editor based on the rendering engine of Firefox"
-hash="83eb53ec8bf9416e52b525508c03440ea0427a3eac409034a72732a7e22994e6"
+sha256sums=("83eb53ec8bf9416e52b525508c03440ea0427a3eac409034a72732a7e22994e6")
 arch=('amd64')
-maintainer="Obsidian <emil@aarestrup.nu>"
-url="http://bluegriffon.org/freshmeat/${pkgver}/bluegriffon-${pkgver}.Ubuntu18.04-x86_64.deb"
+maintainer=("Obsidian <emil@aarestrup.nu>")
+source=("http://bluegriffon.org/freshmeat/${pkgver}/bluegriffon-${pkgver}.Ubuntu18.04-x86_64.deb")
 repology=("project: bluegriffon")

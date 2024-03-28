@@ -1,15 +1,13 @@
-name="nautilus-open-in-blackbox-git"
+pkgname="nautilus-open-in-blackbox-git"
 gives="nautilus-open-in-blackbox"
 pkgver="0.1.1"
-url="https://github.com/ppvan/nautilus-open-in-blackbox.git"
+source=("https://github.com/ppvan/nautilus-open-in-blackbox.git")
 pkgdesc="Open current directory in BlackBox from Nautilus context menu"
-maintainer="Anifyuli <anifyuliansyah@gmail.com>"
+maintainer=("Anifyuli <anifyuliansyah@gmail.com>")
 depends=("python3-nautilus")
-pkgver() {
-  git ls-remote "${url}" main | head -n1 | cut -f1 | cut -c1-8
-}
 
 package() {
+  cd "${_archive}"
   sudo install -Dm644 -t "${pkgdir}/usr/share/nautilus-python/extensions" nautilus-open-in-blackbox.py
 }
 

@@ -1,15 +1,13 @@
-name="bes2600-firmware-git"
+pkgname="bes2600-firmware-git"
 gives="bes2600-firmware"
 pkgver="0.0.1"
 pkgrel="2"
 pkgdesc="firmware files for BES2600 WLAN/BT combo chip and PineTab2 systemd files for controlling"
-url="https://gitlab.com/pine64-org/bes2600-firmware.git"
-maintainer="Oren Klopfer <oren@taumoda.com>"
-pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
-}
+source=("https://gitlab.com/pine64-org/bes2600-firmware.git")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
+  cd "${_archive}"
   sudo mkdir -p "${pkgdir}/usr/bin"
   sudo mkdir -p "${pkgdir}/usr/lib/systemd/system"
 
@@ -49,6 +47,7 @@ ExecStart=bash -c 'if ! [[ -f /etc/modules-load.d/bes2600.conf ]]; then echo bes
 }
 
 package() {
+  cd "${_archive}"
   sudo mkdir -p "${pkgdir}/usr/lib/firmware"
   sudo cp -r firmware/bes2600 "${pkgdir}/usr/lib/firmware"
 }

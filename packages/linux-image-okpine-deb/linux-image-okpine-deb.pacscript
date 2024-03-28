@@ -1,9 +1,9 @@
-name="linux-image-okpine-deb"
+pkgname="linux-image-okpine-deb"
 pkgver="6.7.1"
 gives="linux-image-${pkgver}-okpine"
-url="https://github.com/oklopfer/debs/raw/master/kernel/${pkgver}/${gives}_${pkgver}-1_arm64.deb"
-hash="e5c423411f654e3017a2704ce1564d6b299317161584852f02d0ee01850b4407"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+source=("https://github.com/oklopfer/debs/raw/master/kernel/${pkgver}/${gives}_${pkgver}-1_arm64.deb")
+sha256sums=("e5c423411f654e3017a2704ce1564d6b299317161584852f02d0ee01850b4407")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Linux kernel image files built for Pine64 devices"
 arch=('arm64')
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline")
