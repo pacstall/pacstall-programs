@@ -1,0 +1,10 @@
+name="emacs-snapshot-common-deb"
+gives="${name%-deb}"
+pkgver='20240318+emacs-29.1.90-170420-g1a8b34a503e-1'
+pkgdesc="Unofficial snapshot package of GNU Emacs, built weekly from the latest commit (architecture-independent files)"
+homepage='https://emacs.secretsauce.net'
+maintainer="vigress8 <vig@disroot.org>"
+repology=("project: emacs")
+pacdeps=("emacs-snapshot-el-deb")
+url="https://emacs.secretsauce.net/pool/main/e/emacs-snapshot/${gives}_${pkgver}_all.deb"
+hash='380b6c81c342c7d736db1a7f9089515283b13645c4b8f7646e37cf9f6d508c6b'
