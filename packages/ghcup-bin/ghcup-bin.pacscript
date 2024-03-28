@@ -17,7 +17,7 @@ case "${CARCH}" in
     gnuarch="aarch64"
     hash='3eda556959462579b73558616646c9fc01a583acc7a4611bb21a32706deae142'
     ;;
-  arm)
+  armhf)
     gnuarch="armv7"
     hash='7c66253e52c5fb627a4d4b203a69e69f4d7732348ad6a830a41d7e2d79a61c5d'
     ;;
@@ -38,9 +38,9 @@ package() {
 }
 
 _install_completion() {
-  local shell="$1" location="$2"
+  local shell="$1" dest="$2"
   "${pkgdir}/usr/bin/ghcup" "--${shell}-completion-script" /usr/bin/ghcup > "${shell}-temp"
-  sudo install -Dm644 "${shell}-temp" "${pkgdir}/usr/share/${location}"
+  sudo install -Dm644 "${shell}-temp" "${pkgdir}/usr/share/${dest}"
 }
 
 post_install() {
