@@ -1,5 +1,5 @@
 name="linux-headers-cachyos-deb"
-gives="linux-headers-cachyos-6.8.2"
+gives="custom-kernel-headers-6.8.2"
 pkgver="6.8.2"
 buildver="6.8.2"
 arch=('amd64')
