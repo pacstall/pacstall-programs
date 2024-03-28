@@ -1,5 +1,5 @@
 name="linux-image-cachyos-deb"
-gives="linux-image-cachyos-6.8.2"
+gives="custom-kernel-6.8.2"
 pkgver="6.8.2"
 buildver="6.8.2"
 arch=('amd64')
