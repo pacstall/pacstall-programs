@@ -1,0 +1,11 @@
+name="linux-image-cachyos-deb"
+gives="linux-image-cachyos-6.8.2"
+pkgver="6.8.2"
+buildver="6.8.2"
+arch=('amd64')
+url="https://github.com/spaceguybob/linux-cachyos-pkg/releases/download/${pkgver}-1/custom-kernel-${pkgver}-${pkgver}-1.deb"
+hash="91d70d7751b66eeb052e49023f0c2d921bc887b895356b1f3ad033f14430c168"
+pkgdesc="Cachy Kernel by CachyOS with other patches and improvements kernel and modules"
+pacdeps=("linux-headers-cachyos-deb")
+maintainer="Herisson <spaceguybox@outlook.com>"
+repology=("project: linux" "repo: aur" "srcname: linux-cachyos" "binname: linux-cachyos")
