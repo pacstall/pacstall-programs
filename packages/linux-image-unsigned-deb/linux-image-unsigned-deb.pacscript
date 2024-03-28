@@ -1,12 +1,12 @@
 name="linux-image-unsigned-deb"
-gives="linux-image-unsigned-6.8.0-060800-generic"
-pkgver="6.8"
-buildver="6.8.0-060800.202403131158"
+gives="linux-image-unsigned-6.9.0-060900rc1-generic"
+pkgver="6.9~rc1"
+buildver="6.9.0-060900rc1.202403242136"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="a46103f8a26d2298fdb650dcffea9ff031af89cf4caab6fd12ac5890c794eb42"
+  hash="9d78882ed826d1566eb8f5c5ba5de7be010aab654b1174ca15a9c7677b6b3cda"
 else
-  hash="da5112cb717a4be69a0d903996addc0ad2ffdae7672d835e617624bc5def53c2"
+  hash="91d70d7751b66eeb052e49023f0c2d921bc887b895356b1f3ad033f14430c168"
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
 pkgdesc="Ubuntu Linux mainline kernel (Unsigned image)"

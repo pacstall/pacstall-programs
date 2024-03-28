@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Icon=idea
+Name=IntelliJ Idea Community Edition
+Exec=idea
+Path=/usr/share/intellij-idea-community/bin
+Terminal=false
+Hidden=false
+Categories=IDE;Development

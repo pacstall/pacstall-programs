@@ -163,6 +163,7 @@ google-chrome-deb
 google-chrome-unstable-deb
 google-earth-pro-stable-deb
 goverlay
+goverlay-bin
 graillon
 grapejuice-git
 grive2
@@ -191,9 +192,11 @@ imwheel-exclude-patched-git
 insomnia-deb
 insync-deb
 intel-undervolt
+intellij-idea-community-bin
 internxt-deb
 ivpn-deb
 ivpn-ui-deb
+jellyfin-media-player-deb
 jetbrains-toolbox-bin
 joplin-desktop-app
 kakoune
@@ -367,6 +370,7 @@ python3-imdbpy-deb
 python3-levenshtein-deb
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
+qt6pas
 qtile-extras-git
 qtile-git
 quarto-deb
@@ -388,6 +392,8 @@ rhino-setup-bin
 rhino-setup-git
 rhino-system-git
 rhino-ubxi-core
+rio-wayland-deb
+rio-x11-deb
 rpcs3-app
 rstudio-deb
 rust-motd-deb
