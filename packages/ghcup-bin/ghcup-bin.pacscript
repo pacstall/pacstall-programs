@@ -30,7 +30,7 @@ case "${CARCH}" in
 esac
 
 package() {
-  sudo install -Dm755 "${gnuarch}-linux-ghcup-${pkgver}" "${pkgdir}/usr/bin/ghcup"
+  sudo install -Dm755 "${url/${_baseurl}\//}" "${pkgdir}/usr/bin/ghcup"
   _install_completion bash bash-completion/completions/ghcup
   _install_completion zsh zsh/site-functions/_ghcup
   _install_completion fish fish/vendor_completions.d/ghcup.fish
