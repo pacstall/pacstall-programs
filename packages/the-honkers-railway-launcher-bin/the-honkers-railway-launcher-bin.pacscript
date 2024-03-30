@@ -1,5 +1,5 @@
 name="the-honkers-railway-launcher-bin"
-pkgname="the-honkers-railway-launcher"
+gives="the-honkers-railway-launcher"
 pkgver="1.5.4"
 pkgdesc="The Honkers Railway launcher for Linux with automatic patching and telemetry disabling "
 repology=("project: the-honkers-railway-launcher")
