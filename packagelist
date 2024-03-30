@@ -220,6 +220,7 @@ lf-bin
 libcamera-git
 libcutefish-git
 libdrm
+libfdk-aac1-deb
 libicu-deb
 liblcf
 libndi4-deb
