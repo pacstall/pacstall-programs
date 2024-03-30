@@ -1,7 +1,7 @@
 name="the-honkers-railway-launcher-bin"
 gives="the-honkers-railway-launcher"
 pkgver="1.5.4"
-pkgdesc="The Honkers Railway launcher for Linux with automatic patching and telemetry disabling "
+pkgdesc="The Honkers Railway launcher for Linux with automatic patching and telemetry disabling"
 repology=("project: the-honkers-railway-launcher")
 url="https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/${pkgver}/honkers-railway-launcher"
 hash="c7ce99c94a629089caa1a7d22ac68dbddfb7a7e81c1e9f447b1b800f7ecf84ee"
