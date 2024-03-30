@@ -16,7 +16,7 @@ optdepends=(
 )
 
 package() {
-  sudo install -Dm755 "honkers-railway-launcher" "${pkgdir}/usr/bin/${pkgname}"
+  sudo install -Dm755 "honkers-railway-launcher" "${pkgdir}/usr/bin/${gives}"
   sudo mkdir -p "${pkgdir}/usr/share/applications"
   echo '[Desktop Entry]
 Name=The Honkers Railway Launcher
