@@ -9,7 +9,7 @@ depends=("xdelta3")
 maintainer="vbrabandt2005 <https://github.com/vbrabandt2005>"
 gives="${pkgname}"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
-breaks=("${pkgname}" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-git")
+breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 
 optdepends=(
   "mangohud: FPS Hud/GUI"
