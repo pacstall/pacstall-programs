@@ -1,13 +1,13 @@
 name="libssl1.1-deb"
-pkgname="libssl1.1"
-pkgdesc="Old version of libssl (for legacy dependencies)"
-maintainer="Rémy Huet <remy.huet@hds.utc.fr>"
-repology=("project: libssl1.1")
+gives="libssl1.1"
+breaks=("${gives}-bin" "${gives}")
+repology=("project: ${gives}")
+replace=("${gives}")
 pkgver="1.1.1"
+arch=('amd64')
+pkgdesc="Libssl1.1 is a library that provides cryptographic functions for the OpenSSL software suite"
 url="http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/${gives}_${pkgver}-1ubuntu2.1~18.04.23_amd64.deb"
 hash="986727f5a99088bef98971edfcd9567f5693b5e941aa241894fce1020c7015a0"
-arch=('amd64')
-depends=("debconf" "libc6")
-replace=("libssl1.1")
-gives="libssl1.1"
-incompatible=('ubuntu:focal' 'debian:stretch' 'debian:buster' 'debian:bullseye')
+maintainer="Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>"
+
+# vim:set ft=sh ts=2 sw=2 et:
