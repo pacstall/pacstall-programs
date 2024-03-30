@@ -7,7 +7,6 @@ url="https://github.com/an-anime-team/the-honkers-railway-launcher/releases/down
 hash="c7ce99c94a629089caa1a7d22ac68dbddfb7a7e81c1e9f447b1b800f7ecf84ee"
 depends=("xdelta3")
 maintainer="vbrabandt2005 <https://github.com/vbrabandt2005>"
-gives="${pkgname}"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 
