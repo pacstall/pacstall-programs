@@ -139,6 +139,7 @@ galaxybudsclient-bin
 geekbench-bin
 genymotion-bin
 gfn-electron-bin
+ghcup-bin
 gir1.2-xapp-1.0-deb
 git
 git-butler-deb
@@ -211,6 +212,7 @@ kvantum
 kxstudio-repos-deb
 lagrange
 latte-dock-git
+lazarus-deb
 lazygit
 lbry-deb
 lemonbar-xft-git
@@ -219,6 +221,7 @@ lf-bin
 libcamera-git
 libcutefish-git
 libdrm
+libfdk-aac1-deb
 libicu-deb
 liblcf
 libndi4-deb
