@@ -131,6 +131,8 @@ fnlfmt
 foliate-deb
 font-downloader
 forticlient-deb
+fpc-laz-deb
+fpc-src-deb
 freetube-deb
 fsearch-deb
 fsearch-git
@@ -212,6 +214,7 @@ kvantum
 kxstudio-repos-deb
 lagrange
 latte-dock-git
+lazarus-deb
 lazygit
 lbry-deb
 lemonbar-xft-git
@@ -220,6 +223,7 @@ lf-bin
 libcamera-git
 libcutefish-git
 libdrm
+libfdk-aac1-deb
 libicu-deb
 liblcf
 libndi4-deb
@@ -443,6 +447,7 @@ tela-circle-icon-theme
 telegram-bin
 tenacity-git
 texstudio-app
+the-honkers-railway-launcher-bin
 thorium-deb
 thrive-deb
 ticktick-deb
