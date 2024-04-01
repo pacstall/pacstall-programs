@@ -1,6 +1,6 @@
-name="lazarus-deb"
+name="lazarus-project-deb"
 pkgver="3.2"
-gives="lazarus"
+gives="lazarus-project"
 breaks=("lazarus-ide-qt6")
 pacdep=("fpc-laz-deb" "fpc-src-deb")
 repology=("project: lazarus")
