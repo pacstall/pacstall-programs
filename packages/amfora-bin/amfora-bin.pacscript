@@ -1,10 +1,10 @@
 name="amfora-bin"
 pkgname="amfora"
-pkgver="1.9.2"
+pkgver="1.10.0"
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 pkgdesc="Amfora aims to be the best looking Gemini client with the most features"
-hash="a468f97f0e3fa1d69868980fd0e5893388ccd9c849874d26e4d0b426fd6bff3e"
+hash="b2e9e50954345b38c4481e200944950675d30cdd4e1d7eef50d5b3a528cc1a0a"
 url="https://github.com/makeworld-the-better-one/amfora/releases/download/v${pkgver}/amfora_${pkgver}_linux_64-bit"
 maintainer="Elsie19 <elsie19@pm.me>"
 repology=("project: ${pkgname}")
