@@ -1,7 +1,7 @@
 name="megasync-deb"
 gives="megasync"
 repology=("project: megasync")
-pkgver="4.12.2"
+pkgver="5.2.0"
 build_version="2.1"
 replace=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
@@ -12,22 +12,22 @@ case "${DISTRO#*:}" in
   mantic)
     distro_base="xUbuntu"
     distro_release="23.10"
-    hash="badbddc147ec4c8e8c372fbd6e2c67dd3306c9d3a9b3348b75d705338ae8c8e0"
+    hash="bbd393d4da780f7bad760b5f439a257ca2aa8f7b9d478cc62e28f55366f95460"
     ;;
   jammy)
     distro_base="xUbuntu"
     distro_release="22.04"
-    hash="19dee960ed97de31e75a909f5dcaaed6bf1f6a58be16c3cc54335b92dd807c18"
+    hash="104e912eb813dd47ffb8ad3ae2b76760ebbe09492162184d14308e9cc80119f9"
     ;;
   bookworm)
     distro_base="Debian"
     distro_release="12"
-    hash="f33f5909196b8063e03de02040c97da981e035011dcd7d2d909f14d16c83daa9"
+    hash="194be72c321812d663e9c8296096965b8e7f5f802bbfe410b09b68fa65c8090d"
     ;;
   bullseye)
     distro_base="Debian"
     distro_release="11"
-    hash="adae37285c485788ed777ac32947d9b1b8fc2fb736b92e94b924b55fa5f5bc73"
+    hash="0b414c6013c77596683ce5209bd0010bddba4a8bc089b509b77291faa0c040e8"
     ;;
   *) ;;
 esac
