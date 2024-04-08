@@ -20,6 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ${{ matrix.OS }}
+      options: --privileged
       env:
         TERM: xterm
         shell: bash
@@ -147,6 +148,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ${{ matrix.OS }}
+      options: --privileged
       env:
         TERM: xterm
         shell: bash
