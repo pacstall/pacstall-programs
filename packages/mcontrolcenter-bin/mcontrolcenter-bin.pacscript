@@ -1,11 +1,11 @@
 name="mcontrolcenter-bin"
 gives="mcontrolcenter"
-pkgver="0.4.0"
+pkgver="0.4.1"
 depends=("libqt5widgets5")
 url="https://github.com/dmitry-s93/MControlCenter/releases/download/${pkgver}/MControlCenter-${pkgver}-bin.tar.gz"
 repology=("project: mcontrolcenter")
 pkgdesc="MControlCenter is a Free and Open Source GNU/Linux application that allows you to change the settings of MSI laptops."
-hash="4c7afafd113c83c3e21520aa17b99d50b521e67ac3c1a0cbd9e3f703db601731"
+hash="81196a66e19ba0ac01536187bee5795a836ee1b37dda8027ca0ddbf9da5cf0dc"
 maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
 
 package() {
