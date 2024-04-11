@@ -1,7 +1,7 @@
 pkgname="firefox-developer-edition-bin"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 gives="firefox-developer-edition"
-pkgver="122.0b9"
+pkgver="125.0b9"
 pkgdesc="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
 source=(
   "https://download-installer.cdn.mozilla.net/pub/devedition/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.bz2"
@@ -11,12 +11,12 @@ source=(
 homepage='https://www.mozilla.org/en-US/firefox/developer/'
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 sha256sums=(
-  "8a18a6604183940a67403b21a2e071a510714b502468bdc04624d929655bee5a"
+  "044ecea7ba76658458a4993bdde9f3ee11f728ee80f30814549a0650479918d5"
   "SKIP"
   "SKIP"
 )
 arch=('amd64')
-repology=("project: firefox" "visiblename: firefox-developer-edition")
+repology=("project: firefox" "visiblename: firefox-developer-edition" "status: devel")
 
 package() {
   cd "${srcdir}"
