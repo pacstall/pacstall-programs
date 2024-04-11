@@ -5,7 +5,7 @@ repology=("project: ${gives}")
 pkgver="7.4.1"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  url="https://github.com/cyanfish/${gives}/releases/download/v${pkgver}/${gives}-${pkgver}-linux-amd64.deb"
+  url="https://github.com/cyanfish/${gives}/releases/download/v${pkgver}/${gives}-${pkgver}-linux-arm64.deb"
   hash="b8e7952f99c739ab4078a87fdc797bac773754f4828938a0f1b55b51dd7bc367"
 else
   url="https://github.com/cyanfish/${gives}/releases/download/v${pkgver}/${gives}-${pkgver}-linux-x64.deb"
