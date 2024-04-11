@@ -340,6 +340,7 @@ paconvert-git
 pacstall-gui-git
 pacstall-qa-git
 pacup-bin
+pacup.pl-git
 panagement
 pap
 paper-icon-theme
