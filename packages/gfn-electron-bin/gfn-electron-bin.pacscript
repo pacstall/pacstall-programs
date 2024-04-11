@@ -24,5 +24,5 @@ package() {
   sudo cp -r "${SRCDIR}"/* "${pkgdir}"/opt/"${pkgname}"/
   sudo chmod +x "${pkgdir}/opt/${pkgname}/geforcenow-electron"
   sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo ln -s "/opt/${pkgname}/geforcenow-electron" "${pkgdir}/usr/bin/geforcenow"
+  sudo ln -sf "/opt/${pkgname}/geforcenow-electron" "${pkgdir}/usr/bin/geforcenow"
 }

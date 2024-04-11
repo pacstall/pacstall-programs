@@ -14,7 +14,7 @@ package() {
   sudo cp -a ./* "${pkgdir}/${mod_dir}"
   sudo chmod 755 "${pkgdir}/${mod_dir}/bin/${name}.cjs"
   sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
-  sudo ln -s "/${mod_dir}/bin/${name}.cjs" "${pkgdir}/usr/bin/${name}"
+  sudo ln -sf "/${mod_dir}/bin/${name}.cjs" "${pkgdir}/usr/bin/${name}"
 }
 
 # vim:set ft=sh ts=2 sw=2 :et

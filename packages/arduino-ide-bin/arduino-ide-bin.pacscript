@@ -27,7 +27,7 @@ package() {
   wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
   sudo install -Dm644 "${pkgname}.desktop" "${pkgdir}/usr/share/applications/"
   sudo mkdir -p "${pkgdir}/usr/local/bin"
-  sudo ln -s "/usr/share/${pkgname}/arduino-ide" "${pkgdir}/usr/local/bin/arduino-ide"
+  sudo ln -sf "/usr/share/${pkgname}/arduino-ide" "${pkgdir}/usr/local/bin/arduino-ide"
 }
 
 post_install() {

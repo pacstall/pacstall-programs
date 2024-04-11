@@ -20,7 +20,7 @@ build() {
 
 package() {
   sudo DESTDIR="${pkgdir}" ninja -C build install
-  sudo ln -s "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${pkgdir}/etc/skel/.config/autostart/rhino-setup.desktop"
+  sudo ln -sf "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${pkgdir}/etc/skel/.config/autostart/rhino-setup.desktop"
 }
 
 post_install() {
