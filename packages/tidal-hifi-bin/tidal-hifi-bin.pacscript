@@ -25,5 +25,5 @@ package() {
   sudo cp -r "${SRCDIR}/tidal-hifi-${pkgver}/"* "${pkgdir}/opt/${pkgname}/"
   sudo chmod +x "${pkgdir}/opt/${pkgname}/tidal-hifi"
   sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo ln -s "/opt/${pkgname}/tidal-hifi" "${pkgdir}/usr/bin/tidal-hifi"
+  sudo ln -sf "/opt/${pkgname}/tidal-hifi" "${pkgdir}/usr/bin/tidal-hifi"
 }

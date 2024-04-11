@@ -34,7 +34,7 @@ package() {
   sudo cp -dr "${pkgdir}/usr/share/intellij-idea-community/bin/idea.png" "${pkgdir}/usr/share/pixmaps/"
   sudo install -Dm 644 intellij-idea-community.desktop -t "${pkgdir}"/usr/share/applications/
   sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo ln -s "/usr/share/intellij-idea-community/bin/idea.sh" "${pkgdir}/usr/bin/idea"
+  sudo ln -sf "/usr/share/intellij-idea-community/bin/idea.sh" "${pkgdir}/usr/bin/idea"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
