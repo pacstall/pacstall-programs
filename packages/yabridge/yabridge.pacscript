@@ -1,18 +1,19 @@
-name="yabridge"
+pkgname="yabridge"
 pkgver="5.0.5"
-url="https://github.com/robbert-vdh/yabridge/releases/download/${pkgver}/yabridge-${pkgver}.tar.gz"
+source=("https://github.com/robbert-vdh/yabridge/releases/download/${pkgver}/yabridge-${pkgver}.tar.gz")
 pkgdesc="A modern and transparent way to use Windows VST2 and VST3 plugins on Linux."
-hash="3ddc6e0989dad93e0275a83362fcfc0cb26b6dbfb8be7fc689410c02eb36455f"
+sha256sums=("3ddc6e0989dad93e0275a83362fcfc0cb26b6dbfb8be7fc689410c02eb36455f")
 optdepends=("wine: 32-bit windows emulator"
   "wine64: 64-bit windows emulator")
-maintainer="echometerain <echometer@disroot.org>"
+maintainer=("echometerain <echometer@disroot.org>")
 repology=("project: yabridge")
 
 package() {
-  sudo install -dm755 "${pkgdir}/usr/bin"
-  sudo install yabridgectl "${pkgdir}/usr/bin"
-  sudo install yabridge-host{,-32}.exe{,.so} "${pkgdir}/usr/bin"
+  cd "${_archive}"
+  install -dm755 "${pkgdir}/usr/bin"
+  install yabridgectl "${pkgdir}/usr/bin"
+  install yabridge-host{,-32}.exe{,.so} "${pkgdir}/usr/bin"
 
-  sudo install -dm755 "${pkgdir}/usr/lib"
-  sudo install libyabridge{,-chainloader}-{vst2,vst3,clap}.so "${pkgdir}/usr/lib"
+  install -dm755 "${pkgdir}/usr/lib"
+  install libyabridge{,-chainloader}-{vst2,vst3,clap}.so "${pkgdir}/usr/lib"
 }

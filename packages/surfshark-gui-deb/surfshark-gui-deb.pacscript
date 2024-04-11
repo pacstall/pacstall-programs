@@ -1,9 +1,9 @@
-name="surfshark-gui-deb"
+pkgname="surfshark-gui-deb"
 gives="surfshark"
 repology=("project: surfshark-gui")
 pkgver="1.3.0-1616"
-url="https://ocean.surfshark.com/debian/pool/main/s/${gives}/${gives}_${pkgver}_amd64.deb"
+source=("https://ocean.surfshark.com/debian/pool/main/s/${gives}/${gives}_${pkgver}_amd64.deb")
 pkgdesc="SurfShark VPN Client"
-hash="a3ae250cc857ee3e7462452bd60b2bc453bad5df18fef3b2ce0fa4ff7ebb925d"
+sha256sums=("a3ae250cc857ee3e7462452bd60b2bc453bad5df18fef3b2ce0fa4ff7ebb925d")
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+maintainer=("WRM-42 <y8bsbahy@anonaddy.me>")

@@ -1,15 +1,16 @@
-name="hyprlang"
+pkgname="hyprlang"
 pkgver="0.5.0"
 pkgdesc="implementation library for the hypr config language"
 arch=("amd64" "arm64")
-homepage="https://github.com/hyprwm/${name}"
+url="https://github.com/hyprwm/${pkgname}"
 depends=("build-essential")
 makedepends=("cmake")
-url="${homepage}/archive/v${pkgver}/${name}-${pkgver}.tar.gz"
-hash="c59e705f2c2ff9ea4e2b183fdf0bc20a62b7162604a657d6352716a1fd5061b2"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+source=("${homepage}/archive/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
+sha256sums=("c59e705f2c2ff9ea4e2b183fdf0bc20a62b7162604a657d6352716a1fd5061b2")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
+  cd "${_archive}"
   cmake -B build \
     -D CMAKE_INSTALL_PREFIX=/usr \
     -D CMAKE_BUILD_TYPE=Release
@@ -17,6 +18,7 @@ build() {
 }
 
 package() {
-  sudo DESTDIR="${pkgdir}" cmake --install build
-  sudo install -Dm0644 -t "${pkgdir}/usr/share/licenses/${name}" LICENSE
+  cd "${_archive}"
+  DESTDIR="${pkgdir}" cmake --install build
+  install -Dm0644 -t "${pkgdir}/usr/share/licenses/${pkgname}" LICENSE
 }

@@ -1,21 +1,20 @@
-name="slop-git"
-pkgname="slop"
+pkgname="slop-git"
+gives="slop"
 pkgdesc="Queries for a selection from the user and prints the region to stdout"
-url="https://github.com/naelstrof/slop.git"
+source=("https://github.com/naelstrof/slop.git")
 pkgver="7.6"
 makedepends=("cmake" "libglm-dev" "libxrender-dev" "libxfixes-dev" "libxcomposite-dev" "libxrandr-dev")
 depends=("libglew-dev" "libxext-dev")
-breaks=("${pkgname}-bin" "${pkgname}")
-maintainer="Elsie19 <elsie19@pm.me>"
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
+breaks=("${gives}-bin" "${gives}")
+maintainer=("Elsie19 <elsie19@pm.me>")
 
 build() {
+  cd "${_archive}"
   cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" ./
   make -j"${NCPU}"
 }
 
 package() {
-  sudo make install DESTDIR="${pkgdir}"
+  cd "${_archive}"
+  make install DESTDIR="${pkgdir}"
 }

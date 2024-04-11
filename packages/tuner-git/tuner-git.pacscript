@@ -1,25 +1,25 @@
-name="tuner-git"
+pkgname="tuner-git"
 license="GPL-3.0"
-url="https://codeberg.org/tuner/tuner.git"
+source=("https://codeberg.org/tuner/tuner.git")
 pkgver="1.5.1"
 makedepends=("meson" "valac" "libgtk-3-dev" "libgranite-dev" "libsoup2.4-dev" "libgstreamer1.0-dev" "libgstreamer-plugins-bad1.0-dev" "libjson-glib-dev" "libgee-0.8-dev" "libgeocode-glib-dev" "libgeoclue-2-dev" "libgeocode-glib-dev")
 depends=("desktop-file-utils")
-replace=("tuner")
+replaces=("tuner")
 pkgdesc="Tuner Radio Player - development version"
-pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
-}
 
 prepare() {
+  cd "${_archive}"
   meson builddir --prefix=/usr
 }
 
 build() {
+  cd "${_archive}"
   ninja -C builddir -j"${NCPU}"
 }
 
 package() {
-  sudo DESTDIR="${pkgdir}" ninja -C builddir install
+  cd "${_archive}"
+  DESTDIR="${pkgdir}" ninja -C builddir install
 }
 
 post_install() {

@@ -1,13 +1,14 @@
-name="proton-python-client"
-breaks="${name}-git ${name}-bin"
-replace=("${name}")
-repology=("project: ${name}")
+pkgname="proton-python-client"
+breaks="${pkgname}-git ${pkgname}-bin"
+replaces=("${pkgname}")
+repology=("project: ${pkgname}")
 pkgver="0.7.1"
-url="https://github.com/ProtonMail/${name}/archive/refs/tags/${pkgver}.tar.gz"
+source=("https://github.com/ProtonMail/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("python3-requests" "python3-setuptools" "python3-bcrypt" "python3-gnupg" "python3-openssl")
 pkgdesc="Python Proton client module"
-hash="88d2546a922d9053988b5e1863bf6cf965e97b4c643cd879f16bb3f0b5f02b5e"
+sha256sums=("88d2546a922d9053988b5e1863bf6cf965e97b4c643cd879f16bb3f0b5f02b5e")
 
 package() {
-  sudo python3 setup.py install --root="${pkgdir}" --optimize=1
+  cd "${_archive}"
+  python3 setup.py install --root="${pkgdir}" --optimize=1
 }

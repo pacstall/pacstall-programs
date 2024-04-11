@@ -1,10 +1,10 @@
-name="picom"
+pkgname="picom"
 homepage='https://github.com/yshui/picom'
 pkgver="11.2"
 pkgdesc="A lightweight compositor for X11"
-repology=("project: ${name}")
-replace=("${name}")
-breaks=("compton" "${name}-git" "ibhagwan-${name}-git" "jonaburg-${name}-git")
+repology=("project: ${pkgname}")
+replaces=("${pkgname}")
+breaks=("compton" "${pkgname}-git" "ibhagwan-${pkgname}-git" "jonaburg-${pkgname}-git")
 makedepends=(
   "libconfig-dev" "libdbus-1-dev" "libegl-dev"
   "libepoxy-dev" "libev-dev" "libgl-dev" "libpcre2-dev"
@@ -32,18 +32,21 @@ optdepends=(
   "python3: for running picom-convgen.py"
   "x11-utils: for picom-trans"
 )
-url="https://github.com/yshui/picom/archive/refs/tags/v${pkgver}.tar.gz"
-hash="1c1063936faf09ed9bba726e7737a562564b7a5f8cdef79d48fcdaf3669a4df4"
-maintainer="vigress8 <vig@disroot.org>"
+source=("https://github.com/yshui/picom/archive/refs/tags/v${pkgver}.tar.gz")
+sha256sums=("1c1063936faf09ed9bba726e7737a562564b7a5f8cdef79d48fcdaf3669a4df4")
+maintainer=("vigress8 <vig@disroot.org>")
 
 prepare() {
+  cd "${_archive}"
   meson setup -Dprefix="${pkgdir}/usr" --buildtype=release . build
 }
 
 build() {
+  cd "${_archive}"
   ninja -C build
 }
 
 package() {
-  sudo ninja -C build install
+  cd "${_archive}"
+  ninja -C build install
 }
