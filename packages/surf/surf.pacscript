@@ -1,25 +1,27 @@
-name="surf"
+pkgname="surf"
 pkgver="2.1"
-url="https://dl.suckless.org/${name}/${name}-${pkgver}.tar.gz"
+source=("https://dl.suckless.org/${pkgname}/${pkgname}-${pkgver}.tar.gz")
 makedepends=("make")
 depends=("libc6" "libgcr-3-dev" "libglib2.0-dev" "libgtk-3-dev" "libwebkit2gtk-4.0-dev" "libx11-6")
-breaks=("${name}-git")
-replace=("${name}")
+breaks=("${pkgname}-git")
+replaces=("${pkgname}")
 pkgdesc="surf is a simple web browser based on WebKit2/GTK+."
-hash="72e582920ba25a646203e93c2d2331d87f03037a28894d6c7e99af00ee043257"
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+sha256sums=("72e582920ba25a646203e93c2d2331d87f03037a28894d6c7e99af00ee043257")
+maintainer=("WRM-42 <y8bsbahy@anonaddy.me>")
 
 build() {
+  cd "${_archive}"
   make -j"${NCPU}"
 }
 
 package() {
-  sudo make install DESTDIR="${pkgdir}"
-  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
-  sudo install -Dm644 README -t "${pkgdir}/usr/share/doc/${name}"
+  cd "${_archive}"
+  make install DESTDIR="${pkgdir}"
+  install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -Dm644 README -t "${pkgdir}/usr/share/doc/${pkgname}"
 }
 
 post_remove() {
-  sudo rm -rf "/usr/share/licenses/${name}"
-  sudo rm -rf "/usr/share/doc/${name}"
+  sudo rm -rf "/usr/share/licenses/${pkgname}"
+  sudo rm -rf "/usr/share/doc/${pkgname}"
 }

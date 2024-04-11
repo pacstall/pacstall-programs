@@ -1,11 +1,11 @@
-name="gomuks-deb"
+pkgname="gomuks-deb"
 gives="gomuks"
 repology=("project: ${gives}")
 breaks=("${gives}-git" "${gives}-bin" "${gives}-app")
-replace=("${gives}")
+replaces=("${gives}")
 pkgver="0.3.0"
-url="https://github.com/tulir/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64.deb"
+source=("https://github.com/tulir/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64.deb")
 pkgdesc="A terminal based Matrix client written in Go"
-hash="c02fa1446744efc4b57ad4c4bad640e7c0f969ff78a3e594be92f30cfd115a66"
+sha256sums=("c02fa1446744efc4b57ad4c4bad640e7c0f969ff78a3e594be92f30cfd115a66")
 arch=('amd64')
-maintainer="WRM-42 <y8bsbahy@anonaddy.me>"
+maintainer=("WRM-42 <y8bsbahy@anonaddy.me>")

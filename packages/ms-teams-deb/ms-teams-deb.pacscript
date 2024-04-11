@@ -1,9 +1,9 @@
-name="ms-teams-deb"
+pkgname="ms-teams-deb"
 gives="teams"
 repology=("project: teams")
 pkgver="1.5.00.23861"
-url="https://packages.microsoft.com/repos/ms-teams/pool/main/t/${gives}/${gives}_${pkgver}_amd64.deb"
+source=("https://packages.microsoft.com/repos/ms-teams/pool/main/t/${gives}/${gives}_${pkgver}_amd64.deb")
 pkgdesc="Microsoft Teams for Linux is your chat-centered workspace in Office 365"
-hash="87462709e257fff9784de809559b5abd5dc7af18d8505d856b92a66989995bc1"
+sha256sums=("87462709e257fff9784de809559b5abd5dc7af18d8505d856b92a66989995bc1")
 arch=('amd64')
-maintainer="Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>"
+maintainer=("Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>")

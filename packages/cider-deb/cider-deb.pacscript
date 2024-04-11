@@ -1,9 +1,9 @@
-name="cider-deb"
+pkgname="cider-deb"
 gives="cider"
 pkgver="1.6.1"
-url="https://github.com/ciderapp/Cider/releases/download/v${pkgver}/cider_${pkgver}_amd64.deb"
+source=("https://github.com/ciderapp/Cider/releases/download/v${pkgver}/cider_${pkgver}_amd64.deb")
 homepage='https://cider.sh/'
 pkgdesc="A new look into listening and enjoying music in style and performance"
-hash="9bcf27d7ae9d3dc6e5f56f7024997a506410f4a5a2d442005bde2b396f136b12"
-maintainer="ajstrongdev <ajstrong.dev@gmail.com>"
+sha256sums=("9bcf27d7ae9d3dc6e5f56f7024997a506410f4a5a2d442005bde2b396f136b12")
+maintainer=("ajstrongdev <ajstrong.dev@gmail.com>")
 arch=('amd64')

@@ -1,10 +1,10 @@
-name="zoom-deb"
+pkgname="zoom-deb"
 gives="zoom"
 pkgver="5.17.11.3835"
-replace=("${gives}")
-url="https://zoom.us/client/${pkgver}/zoom_amd64.deb"
+replaces=("${gives}")
+source=("https://zoom.us/client/${pkgver}/zoom_amd64.deb")
 repology=("project: zoom-videoconference")
 pkgdesc="Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution."
-hash="07fb07eff0c026be7fc52b9f43d7c603f50e668ff5325ddd8830c30af6e19918"
+sha256sums=("07fb07eff0c026be7fc52b9f43d7c603f50e668ff5325ddd8830c30af6e19918")
 arch=("amd64")
-maintainer="vigress8 <vig@disroot.org>"
+maintainer=("vigress8 <vig@disroot.org>")

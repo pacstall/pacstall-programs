@@ -1,6 +1,6 @@
-name="neofetch"
+pkgname="neofetch"
 pkgver="7.1.0"
-url="https://github.com/dylanaraps/neofetch/archive/${pkgver}.zip"
+source=("https://github.com/dylanaraps/neofetch/archive/${pkgver}.zip")
 optdepends=("w3m-img: image preview"
   "libsixel-dev: image preview"
   "catimg: image preview"
@@ -8,9 +8,10 @@ optdepends=("w3m-img: image preview"
   "caca-utils: image preview"
   "libcaca-dev: image preview")
 pkgdesc="Command-line system information tool"
-hash="e610da6561f17c8161337d0c4115da310be576e8699fa2add64e14eeb3f3dcf1"
-maintainer="Elsie19 <elsie19@pm.me>"
+sha256sums=("e610da6561f17c8161337d0c4115da310be576e8699fa2add64e14eeb3f3dcf1")
+maintainer=("Elsie19 <elsie19@pm.me>")
 
 package() {
-  sudo make install DESTDIR="${pkgdir}"
+  cd "${_archive}"
+  make install DESTDIR="${pkgdir}"
 }

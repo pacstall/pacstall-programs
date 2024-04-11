@@ -1,11 +1,11 @@
-name="duf-deb"
+pkgname="duf-deb"
 gives="duf"
 breaks=("${gives}-bin" "${gives}-git")
 repology=("project: ${gives}")
-replace=("${gives}")
+replaces=("${gives}")
 pkgver="0.8.1"
-url="https://github.com/muesli/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_linux_amd64.deb"
+source=("https://github.com/muesli/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_linux_amd64.deb")
 pkgdesc="Disk Usage/Free Utility - a better 'df' alternative"
-hash="746983b4065e80b14f2e5af70c58e2283bb8b3a128cb076954d7329d476d5fad"
+sha256sums=("746983b4065e80b14f2e5af70c58e2283bb8b3a128cb076954d7329d476d5fad")
 arch=('amd64')
-maintainer="KwonNam Son <kwon37xi@gmail.com>"
+maintainer=("KwonNam Son <kwon37xi@gmail.com>")

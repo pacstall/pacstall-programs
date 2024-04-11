@@ -1,9 +1,9 @@
-name="xmind-vana-deb"
+pkgname="xmind-vana-deb"
 gives="xmind-vana"
 pkgver="23.05.1745"
-url="https://dl3.xmind.net/Xmind-for-Linux-amd64bit-${pkgver}.deb"
+source=("https://dl3.xmind.net/Xmind-for-Linux-amd64bit-${pkgver}.deb")
 homepage='https://xmind.app/'
 pkgdesc="Mind mapping and brainstorming app"
-hash="0a260a95d35b1a3f35a58f20931185a73c95f7e6b821b5645af573a3084530a1"
+sha256sums=("0a260a95d35b1a3f35a58f20931185a73c95f7e6b821b5645af573a3084530a1")
 repology=("project: xmind")
 arch=("amd64")

@@ -1,8 +1,8 @@
-name="xfce4-deb"
+pkgname="xfce4-deb"
 gives="xfce4"
 pkgver="4.18"
-url="http://ftp.de.debian.org/debian/pool/main/x/${gives}/${gives}_${pkgver}_all.deb"
+source=("http://ftp.de.debian.org/debian/pool/main/x/${gives}/${gives}_${pkgver}_all.deb")
 pkgdesc="XFCE4 Desktop"
-hash="f8635ff525c6d87290fb1a794f67928c198e63f7d900f95c66c0c565697624ff"
-maintainer="http.llamaz <http.llamaz@llamawebdesign.co.uk>"
+sha256sums=("f8635ff525c6d87290fb1a794f67928c198e63f7d900f95c66c0c565697624ff")
+maintainer=("http.llamaz <http.llamaz@llamawebdesign.co.uk>")
 repology=("project: xfce4-meta")

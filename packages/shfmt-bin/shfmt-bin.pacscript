@@ -4,20 +4,20 @@
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
 #        \/          \/      \/
-maintainer="wizard-28 <wiz28@pm.me>"
+maintainer=("wizard-28 <wiz28@pm.me>")
 
-name="shfmt-bin"
-pkgname="shfmt"
+pkgname="shfmt-bin"
+gives="shfmt"
 pkgver="3.7.0"
-url="https://github.com/mvdan/sh/releases/download/v${pkgver}/shfmt_v${pkgver}_linux_amd64"
+source=("https://github.com/mvdan/sh/releases/download/v${pkgver}/shfmt_v${pkgver}_linux_amd64")
 pkgdesc="Format shell programs"
-gives="${pkgname}"
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
-hash="0264c424278b18e22453fe523ec01a19805ce3b8ebf18eaf3aadc1edc23f42e3"
+breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-deb" "${gives}-app")
+sha256sums=("0264c424278b18e22453fe523ec01a19805ce3b8ebf18eaf3aadc1edc23f42e3")
 arch=('amd64')
-repology=("project: ${pkgname}")
+repology=("project: ${gives}")
 
 package() {
-  sudo install -Dm755 "shfmt_v${pkgver}_linux_amd64" "${pkgdir}/usr/bin/${pkgname}"
+  cd "${_archive}"
+  install -Dm755 "shfmt_v${pkgver}_linux_amd64" "${pkgdir}/usr/bin/${gives}"
 }
 # vim:set ft=sh ts=2 sw=2 et:

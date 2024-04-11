@@ -1,5 +1,5 @@
-name="unicorn-mobile-git"
-url="https://github.com/rhino-linux/unicorn.git"
+pkgname="unicorn-mobile-git"
+source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 pkgver="0.0.1"
 pkgrel="2"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
@@ -10,72 +10,64 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-t
   "pipewire-audio" "bluetooth")
 pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-mobile"
-replace=("unicorn-desktop" "unicorn-desktop-git")
+replaces=("unicorn-desktop" "unicorn-desktop-git")
 priority="required"
 pkgdesc="Unicorn Desktop Mobile variant by the Rhino Linux Team"
-maintainer="Oren Klopfer <oren@taumoda.com>"
-pkgver() {
-  git ls-remote "${url}" mobile | cut -f1 | cut -c1-8
-}
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("debian:*")
 
-prepare() {
-  sudo git remote add upstream "${url}"
-  sudo git fetch upstream
-  sudo git checkout upstream/mobile
-  git config --global --add safe.directory "${PWD}"
-}
-
 build() {
-  sudo mkdir -p "${pkgdir}/usr/share/backgrounds"
-  sudo mkdir -p "${pkgdir}/usr/share/doc"
-  sudo mkdir -p "${pkgdir}/etc/skel/.config"
-  sudo mkdir -p "${pkgdir}/usr/share/icons"
-  sudo mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
-  sudo mkdir -p "${pkgdir}/usr/share/applications"
-  sudo mkdir -p "${pkgdir}/usr/share/plank/themes"
-  sudo mkdir -p "${pkgdir}/usr/share/onboard"
-  sudo mkdir -p "${pkgdir}/etc/skel/.lightpad"
-  sudo mkdir -p "${pkgdir}/etc/skel/.local/share"
-  sudo mkdir -p "${pkgdir}/etc/xdg/xdg-unicorn/xfce4"
-  sudo mkdir -p "${pkgdir}/usr/share/xsessions"
-  sudo mkdir -p "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
-  sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/scalable/places"
-  sudo mkdir -p "${pkgdir}/usr/share/themes"
-  sudo mkdir -p "${pkgdir}/etc/X11/xorg.conf.d"
+  cd "${_archive}"
+  mkdir -p "${pkgdir}/usr/share/backgrounds"
+  mkdir -p "${pkgdir}/usr/share/doc"
+  mkdir -p "${pkgdir}/etc/skel/.config"
+  mkdir -p "${pkgdir}/usr/share/icons"
+  mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
+  mkdir -p "${pkgdir}/usr/share/applications"
+  mkdir -p "${pkgdir}/usr/share/plank/themes"
+  mkdir -p "${pkgdir}/usr/share/onboard"
+  mkdir -p "${pkgdir}/etc/skel/.lightpad"
+  mkdir -p "${pkgdir}/etc/skel/.local/share"
+  mkdir -p "${pkgdir}/etc/xdg/xdg-unicorn/xfce4"
+  mkdir -p "${pkgdir}/usr/share/xsessions"
+  mkdir -p "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
+  mkdir -p "${pkgdir}/usr/bin"
+  mkdir -p "${pkgdir}/usr/share/icons/hicolor/scalable/places"
+  mkdir -p "${pkgdir}/usr/share/themes"
+  mkdir -p "${pkgdir}/etc/X11/xorg.conf.d"
 }
 
 package() {
+  cd "${_archive}"
   # Install doc
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+  install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
   # Install
   for i in xfce4 plank autostart cortile ulauncher; do
-    sudo cp -r "${i}" "${pkgdir}/etc/skel/.config"
+    cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
-  sudo install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
-  sudo install -Dm755 "unicorn-session" -t "${pkgdir}/usr/bin"
-  sudo install -Dm755 ".xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
-  sudo install -Dm755 "xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
-  sudo install -Dm755 ".bashrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
-  sudo cp -r failsafe/xfce4/* "${pkgdir}/etc/xdg/xdg-unicorn/xfce4"
-  sudo install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
-  sudo install -Dm644 "60-unicorn.conf" -t "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
-  sudo cp -r rhino "${pkgdir}/usr/share/backgrounds/"
-  sudo cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
-  sudo cp docks.ini "${pkgdir}/etc/skel/.config"
-  sudo cp onboard.ini "${pkgdir}/usr/share/onboard"
-  sudo cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
-  sudo cp icons/* "${pkgdir}/usr/share/icons"
-  sudo cp applications/* "${pkgdir}/usr/share/applications"
-  sudo cp lightpad/* "${pkgdir}/etc/skel/.lightpad"
-  sudo cp -r unicorn-dashboard "${pkgdir}/usr/share/themes"
-  sudo install -Dm644 "50-synaptics.conf" -t "${pkgdir}/etc/X11/xorg.conf.d"
-  sudo install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
-  sudo install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
-  sudo install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
-  sudo cp -r onboard "${pkgdir}/etc/skel/.local/share"
-  sudo cp -r Dot-Transparent "${pkgdir}/usr/share/icons"
+  install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
+  install -Dm755 "unicorn-session" -t "${pkgdir}/usr/bin"
+  install -Dm755 ".xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
+  install -Dm755 "xinitrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
+  install -Dm755 ".bashrc" -t "${pkgdir}/etc/xdg/xdg-unicorn"
+  cp -r failsafe/xfce4/* "${pkgdir}/etc/xdg/xdg-unicorn/xfce4"
+  install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
+  install -Dm644 "60-unicorn.conf" -t "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
+  cp -r rhino "${pkgdir}/usr/share/backgrounds/"
+  cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
+  cp docks.ini "${pkgdir}/etc/skel/.config"
+  cp onboard.ini "${pkgdir}/usr/share/onboard"
+  cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
+  cp icons/* "${pkgdir}/usr/share/icons"
+  cp applications/* "${pkgdir}/usr/share/applications"
+  cp lightpad/* "${pkgdir}/etc/skel/.lightpad"
+  cp -r unicorn-dashboard "${pkgdir}/usr/share/themes"
+  install -Dm644 "50-synaptics.conf" -t "${pkgdir}/etc/X11/xorg.conf.d"
+  install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
+  install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
+  install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
+  cp -r onboard "${pkgdir}/etc/skel/.local/share"
+  cp -r Dot-Transparent "${pkgdir}/usr/share/icons"
 }
 
 post_install() {

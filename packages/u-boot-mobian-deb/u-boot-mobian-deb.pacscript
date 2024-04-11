@@ -1,9 +1,9 @@
-name="u-boot-mobian-deb"
+pkgname="u-boot-mobian-deb"
 gives="u-boot-menu"
-replace=("${gives}")
+replaces=("${gives}")
 pkgver="4.2.2mobian1"
-url="https://repo.mobian-project.org/pool/main/u/${gives}/${gives}_${pkgver}_all.deb"
+source=("https://repo.mobian-project.org/pool/main/u/${gives}/${gives}_${pkgver}_all.deb")
 pkgdesc="Deb packaging for u-boot-menu with Mobian patches"
-hash="6fffdf8359c0514e0f841cdf27726e05f582884b55e436235defc2c02d759f31"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+sha256sums=("6fffdf8359c0514e0f841cdf27726e05f582884b55e436235defc2c02d759f31")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: u-boot-menu")

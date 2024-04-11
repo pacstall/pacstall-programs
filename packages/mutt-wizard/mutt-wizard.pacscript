@@ -1,15 +1,15 @@
 # Based on https://aur.archlinux.org/packages/mutt-wizard/
 
-maintainer="JonBoyleCoding <programmerfalcon@gmail.com>"
+maintainer=("JonBoyleCoding <programmerfalcon@gmail.com>")
 
-name="mutt-wizard"
+pkgname="mutt-wizard"
 pkgver="3.3.1"
-url="https://github.com/lukesmithxyz/${name}/archive/v${pkgver}.tar.gz"
+source=("https://github.com/lukesmithxyz/${pkgname}/archive/v${pkgver}.tar.gz")
 repology=("project: mutt-wizard")
 depends=("neomutt" "isync" "msmtp" "notmuch" "pass" "curl")
 breaks=("mutt-wizard" "mutt-wizard-git")
 pkgdesc="Simple interface to auto-configure neomutt and isync with safe passwords"
-hash="4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53"
+sha256sums=("4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53")
 
 # Some optional dependencies don't currently have an ubuntu package as far as I know,
 # they have been marked with "No Pkg" in the optdepends.
@@ -26,12 +26,13 @@ optdepends=('imagemagick: view images inside of the neomutt TUI'
   'cron: set up automatic mail syncing')
 
 package() {
-  sudo make DESTDIR="${pkgdir}" install
-  sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${name}"
-  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
+  cd "${_archive}"
+  make DESTDIR="${pkgdir}" install
+  install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${pkgname}"
+  install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
 
 post_remove() {
-  sudo rm -rf "/usr/share/licenses/${name}"
-  sudo rm -rf "/usr/share/doc/${name}"
+  sudo rm -rf "/usr/share/licenses/${pkgname}"
+  sudo rm -rf "/usr/share/doc/${pkgname}"
 }

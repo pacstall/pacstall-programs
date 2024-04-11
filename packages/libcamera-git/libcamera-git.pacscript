@@ -1,7 +1,7 @@
-name="libcamera-git"
+pkgname="libcamera-git"
 gives="libcamera"
 pkgver="0.1.0"
-url="https://git.libcamera.org/libcamera/libcamera.git"
+source=("https://git.libcamera.org/libcamera/libcamera.git")
 if [[ "$(lsb_release -cs)" == "focal" ]]; then
   pacdeps=("meson-focal-deb")
 else
@@ -11,17 +11,16 @@ makedepends=("build-essential" "ninja-build" "pkg-config" "libyaml-dev" "python3
 if [[ -n ${MESON} ]]; then
   makedepends+=("${MESON}")
 fi
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Open source camera stack and framework"
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
 
 build() {
-  sudo meson setup build
-  sudo ninja -C build -j"${NCPU}"
+  cd "${_archive}"
+  meson setup build
+  ninja -C build -j"${NCPU}"
 }
 
 package() {
-  sudo DESTDIR="${pkgdir}" ninja -C build install
+  cd "${_archive}"
+  DESTDIR="${pkgdir}" ninja -C build install
 }
