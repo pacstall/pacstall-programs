@@ -5,5 +5,5 @@ repology=("project: lutris")
 url="https://github.com/lutris/lutris/releases/download/v${pkgver}/lutris_${pkgver}_all.deb"
 depends=("python3-gi-cairo")
 pkgdesc="open source gaming platform"
-hash="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+hash="70055d0d9db4613dbfef09e9acc43dbd73abb07fe843461faa4c0256b8779ab0"
 maintainer="Oren Klopfer <oren@taumoda.com>"
