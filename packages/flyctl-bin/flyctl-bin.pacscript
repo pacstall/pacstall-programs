@@ -11,7 +11,7 @@ else
 fi
 url="https://github.com/superfly/flyctl/releases/download/v${pkgver}/flyctl_${pkgver}_Linux_${arch_suffix}.tar.gz"
 pkgdesc="Command line tool for fly.io services"
-homepage="https://fly.io/"
+homepage='https://fly.io'
 maintainer="Andrew Barchuk <andrew@raindev.io>"
 
 package() {
