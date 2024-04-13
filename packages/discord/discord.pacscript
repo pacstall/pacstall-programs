@@ -12,7 +12,7 @@ repology=("project: ${name}")
 package() {
   sudo install -dm644 "${pkgdir}/usr/bin"
   sudo install -dm644 "${pkgdir}/usr/share/discord"
-  sudo ln -s /usr/share/discord/Discord "${pkgdir}/usr/bin/discord"
+  sudo ln -sf /usr/share/discord/Discord "${pkgdir}/usr/bin/discord"
   sudo install -Dm755 discord.desktop "${pkgdir}/usr/share/applications/discord.desktop"
   sudo install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord.png"
   sudo cp -R ./* "${pkgdir}/usr/share/discord/"

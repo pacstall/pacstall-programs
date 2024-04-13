@@ -22,5 +22,5 @@ Categories=Game;Utility;
 Terminal=false
 X-AppImage-Version=${pkgver}" | sudo tee "${pkgdir}/usr/share/applications/net.davidotek.pupgui2.desktop" > /dev/null
   sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo ln -s "/usr/bin/${pkgname}" "${pkgdir}/usr/bin/protonup-qt"
+  sudo ln -sf "/usr/bin/${pkgname}" "${pkgdir}/usr/bin/protonup-qt"
 }
