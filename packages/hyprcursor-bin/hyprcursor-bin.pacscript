@@ -1,7 +1,7 @@
 name="hyprcursor-bin"
 pkgver="0.1.7"
 pkgdesc="The hyprland cursor format, library and utilities"
-arch=("amd64" "arm64")
+arch=("amd64")
 homepage='https://github.com/hyprwm/hyprcursor'
 url="https://github.com/hyprwm/hyprcursor/releases/download/v${pkgver}/v${pkgver}.tar.gz"
 hash="b86ab68bb2260a8a09bd595ba38f0a077a08ad8a3f70c2549a59d355be6df196"
