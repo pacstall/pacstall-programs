@@ -1,4 +1,5 @@
-name="libxcb-errors"
+name="xcb-util-errors"
+gives="lib${name}"
 pkgver="1.0.1"
 pkgdesc="XCB errors library"
 homepage='https://cgit.freedesktop.org/xcb/util-errors/'
@@ -14,5 +15,5 @@ build() {
 
 package() {
   sudo DESTDIR="${pkgdir}" make install
-  sudo install -Dm644 COPYING -t "${pkgdir}/usr/share/licenses/${name}/"
+  sudo install -Dm644 COPYING -t "${pkgdir}/usr/share/licenses/${gives}/"
 }
