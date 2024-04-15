@@ -512,6 +512,7 @@ windscribe-beta-gui-deb
 wine-staging-git
 wsysmon-bin
 xapps-common-deb
+xcb-util-errors
 xdg-desktop-portal-hyprland
 xfce4-deb
 xfce4-hotcorner-plugin-git
