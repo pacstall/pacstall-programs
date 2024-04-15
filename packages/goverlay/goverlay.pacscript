@@ -7,7 +7,7 @@ pkgdesc="A GUI to help manage Vulkan/OpenGL overlays"
 arch=("amd64")
 makedepends=('git' 'libglu1-mesa-dev' 'qt6-base-dev')
 case "${DISTRO}" in
-debian:testing|debian:sid)
+debian:testing | debian:sid)
   pacdeps=('qt6pas' 'mangohud')
   makedepends+=("lazarus" "fpc" "fpc-source")
   ;;
@@ -21,7 +21,7 @@ repology=("project: goverlay")
 
 build() {
   case "${DISTRO}" in
-  debian:testing|debian:sid)
+  debian:testing | debian:sid)
     make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/lib/lazarus/default
     ;;
   *)
