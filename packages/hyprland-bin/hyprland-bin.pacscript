@@ -9,6 +9,7 @@ compatible=("ubuntu:mantic" "ubuntu:noble" "ubuntu:devel" "debian:bookworm" "deb
 pkgdesc="A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
 url="https://github.com/hyprwm/Hyprland/releases/download/v${pkgver}/v${pkgver}.tar.gz"
 hash="1c7bd3eeb6f795d4c95b936397489ca55f7ec6951d7efdea069bd71540007f58"
+maintainer="Elsie19 <elsie19@pm.me>"
 repology=("project: hyprland")
 
 package() {
