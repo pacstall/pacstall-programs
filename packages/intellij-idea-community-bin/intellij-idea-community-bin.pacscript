@@ -1,5 +1,5 @@
 name="intellij-idea-community-bin"
-pkgver="2023.3.6"
+pkgver="2024.1"
 pkgname="intellij-idea-community"
 gives="intellij-idea-community"
 repology=("project: intellij-idea-community")
@@ -8,10 +8,10 @@ pkgdesc="IntelliJ IDEA is an IDE for developing computer software written in Jav
 arch=('amd64' 'arm64')
 if [[ ${CARCH} == amd64 ]]; then
   archext="${pkgver}"
-  hash="5e376677d4b9810f4171700ce9d9d3ece58f245ce8d9f2011b05966df5dd7ddd"
+  hash="01d1b224c5e88592f954b17796a76fa8391cdcafef27264e703c7ffe47bb4065"
 else
   archext="${pkgver}-aarch64"
-  hash="cfc98c4a09f6740ef47a3dbc8f2e71a66a8aab2eae3fb1b901c2db5dcce5f060"
+  hash="a13e7a53b5c8a512fbcb72957f24e5515618a5533f17d72914da5445b736dac1"
 fi
 url="https://download-cdn.jetbrains.com/idea/ideaIC-${archext}.tar.gz"
 repology=("project: intellij-idea-community")
@@ -34,7 +34,7 @@ package() {
   sudo cp -dr "${pkgdir}/usr/share/intellij-idea-community/bin/idea.png" "${pkgdir}/usr/share/pixmaps/"
   sudo install -Dm 644 intellij-idea-community.desktop -t "${pkgdir}"/usr/share/applications/
   sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo ln -s "/usr/share/intellij-idea-community/bin/idea.sh" "${pkgdir}/usr/bin/idea"
+  sudo ln -sf "/usr/share/intellij-idea-community/bin/idea.sh" "${pkgdir}/usr/bin/idea"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
