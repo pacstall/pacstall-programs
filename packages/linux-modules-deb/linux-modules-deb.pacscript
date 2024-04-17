@@ -1,12 +1,12 @@
 name="linux-modules-deb"
-gives="linux-modules-6.9.0-060900rc3-generic"
-pkgver="6.9~rc3"
-buildver="6.9.0-060900rc3.202404072033"
+gives="linux-modules-6.9.0-060900rc4-generic"
+pkgver="6.9~rc4"
+buildver="6.9.0-060900rc4.202404142134"
 arch=('arm64' 'amd64')
 if [[ ${CARCH} == "arm64" ]]; then
-  hash="d5a6f77bc519367916a30358d627d9013986c8d30f7cd7af53b1cd874bd44805"
+  hash="4da313beb4bc236b182b1d305622e969c101e30ea0faf0212e4d86fd4bf82d3a"
 else
-  hash="d11c78acdf545735343bc9d2c5afab01461358c82f70747e3fdd31bb4b9c5f40"
+  hash="c0f89d99138151e709d3bc249fd0a004d9087efa69ce933094aaf64bf4769aa1"
 fi
 url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
 pkgdesc="Ubuntu Linux mainline kernel (Linux Modules)"
