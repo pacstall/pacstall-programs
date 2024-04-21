@@ -8,7 +8,7 @@ compatible=("ubuntu:devel" "ubuntu:noble")
 replace=("rhino-core" "rhino-pine-core" "rhino-server-core")
 priority="essential"
 pkgver="2023.4"
-pkgrel="8"
+pkgrel="9"
 style="(ubxi)"
 branch="devel"
 
@@ -36,4 +36,12 @@ SUPPORT_URL=\"https://github.com/rhino-linux\"
 BUG_REPORT_URL=\"https://github.com/rhino-linux\"
 PRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"
 UBUNTU_CODENAME=\"${branch}\"" | sudo tee "${pkgdir}/usr/lib/os-release" > /dev/null
+}
+
+post_remove() {
+  if ! [[ -d "${STOWDIR}/${name}" ]]; then
+    sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/lib/os-release
+    sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text.png
+    sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text-dark.png
+  fi
 }

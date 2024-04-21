@@ -11,7 +11,7 @@ compatible=("ubuntu:devel" "ubuntu:noble")
 replace=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 pkgver="2023.4"
-pkgrel="8"
+pkgrel="9"
 style="(mobile)"
 branch="devel"
 
@@ -48,5 +48,13 @@ USBAUTO="true"
 DEVICES="/dev/EG25.NMEA"
 GPSD_OPTIONS="-D3"' | sudo tee /etc/default/gpsd
     sudo systemctl enable gpsd
+  fi
+}
+
+post_remove() {
+  if ! [[ -d "${STOWDIR}/${name}" ]]; then
+    sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/lib/os-release
+    sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text.png
+    sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text-dark.png
   fi
 }
