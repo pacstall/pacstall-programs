@@ -39,7 +39,9 @@ UBUNTU_CODENAME=\"${branch}\"" | sudo tee "${pkgdir}/usr/lib/os-release" > /dev/
 }
 
 post_remove() {
-  sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/lib/os-release
-  sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text.png
-  sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text-dark.png
+  if ! [[ -d "${STOWDIR}/${name}" ]]; then
+    sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/lib/os-release
+    sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text.png
+    sudo dpkg-divert --quiet --package "${name}" --remove --rename /usr/share/pixmaps/ubuntu-logo-text-dark.png
+  fi
 }
