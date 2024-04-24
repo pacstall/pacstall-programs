@@ -8,4 +8,4 @@ url="https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/${gives
 homepage='https://www.mozilla.org/en-US/firefox'
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer="Oren Klopfer <oren@taumoda.com>"
-hash="b6105f49cebf356dd1b30dbc7ba3bb399d87705807883279c4d851738b59795a"
+hash="8e7847a1fa525ee5e6b0cc54929608c2d6a9dbe451e02176cffd3cc678fcd9d7"
