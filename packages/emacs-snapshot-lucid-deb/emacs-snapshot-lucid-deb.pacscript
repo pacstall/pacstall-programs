@@ -1,0 +1,11 @@
+name="emacs-snapshot-lucid-deb"
+gives="${name%-deb}"
+pkgver='20240412+emacs-29.1.90-170750-g4ff852a5582-1'
+pkgdesc="Unofficial snapshot package of GNU Emacs, built weekly from the latest commit (with Lucid GUI support)"
+homepage='https://emacs.secretsauce.net'
+arch=('amd64')
+maintainer="vigress8 <vig@disroot.org>"
+repology=("project: emacs")
+pacdeps=("emacs-snapshot-bin-common-deb")
+url="https://emacs.secretsauce.net/pool/main/e/emacs-snapshot/${gives}_${pkgver}_${CARCH}.deb"
+hash='88b9ab308d82bfab378ab1ee72909a3ee5c3e574c9b8a378937fd16e130b4d9c'
