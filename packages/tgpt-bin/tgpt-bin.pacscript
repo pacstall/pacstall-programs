@@ -2,7 +2,7 @@ name="tgpt-bin"
 gives="tgpt"
 pkgver="2.7.3"
 pkgdesc="AI chatbots in terminal without needing API keys"
-arch=("amd64" "arm64" "i386")
+arch=("amd64" "arm64" "armhf" "i386")
 homepage='https://github.com/aandrew-me/tgpt'
 url="https://github.com/aandrew-me/tgpt/releases/download/v${pkgver}/${gives}-linux-${CARCH/armhf/arm}"
 case "${CARCH}" in
