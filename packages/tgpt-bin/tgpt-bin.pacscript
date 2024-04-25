@@ -4,7 +4,7 @@ pkgver="2.7.3"
 pkgdesc="AI chatbots in terminal without needing API keys"
 arch=("amd64" "arm64" "i386")
 homepage='https://github.com/aandrew-me/tgpt'
-url="https://github.com/aandrew-me/tgpt/releases/download/v${pkgver}/${gives}-linux-${CARCH}"
+url="https://github.com/aandrew-me/tgpt/releases/download/v${pkgver}/${gives}-linux-${CARCH/armhf/arm}"
 case "${CARCH}" in
   amd64)
     hash="2d23406201b42c01ff1d7a9add89089cff40535adf0d585002fafcd39c34389a"
@@ -13,7 +13,6 @@ case "${CARCH}" in
     hash="d7d5db3cc9238c25df8d2af48ff791dbc5714b0141192a6366267b7fd9a3f55d"
     ;;
   armhf)
-    url="${url/armhf/arm}"
     hash="6d6bc35482c2f487986c1840fd8d64011e7b43a4f432b6a5c6747758b29fdac9"
     ;;
   i386)
