@@ -175,6 +175,7 @@ grive2-git
 grub-customizer-git
 gtkhash
 hakuneko-deb
+hamclock
 harmonoid-deb
 headset-deb
 helix
@@ -317,7 +318,6 @@ nuclei-bin
 nushell-bin
 obquit-git
 obs-backgroundremoval
-obs-backgroundremoval-0-4-0
 obs-backgroundremoval-deb
 obs-backgroundremoval-git
 obs-ndi-deb
@@ -326,7 +326,6 @@ oh-my-posh-git
 oil
 onefetch-bin
 onlyoffice-desktopeditors-deb
-onnxruntime-1-7-0-bin
 onnxruntime-bin
 onnxruntime-gpu-bin
 opendoas-git
@@ -441,6 +440,7 @@ surf
 surf-distrotube-git
 surfshark-gui-deb
 suru-icon-theme-git
+suyu-app
 systemcoding-conky
 tabby-deb
 tailscale
@@ -452,6 +452,7 @@ tela-circle-icon-theme
 telegram-bin
 tenacity-git
 texstudio-app
+tgpt-bin
 the-honkers-railway-launcher-bin
 thorium-deb
 thrive-deb
