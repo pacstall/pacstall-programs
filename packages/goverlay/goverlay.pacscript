@@ -33,5 +33,5 @@ build() {
 package() {
   sudo make prefix=/usr libexecdir=/lib DESTDIR="${pkgdir}" install
   # Fix Issue to change Depends with usage of pacdeps
-  sudo sed -i "/^Depends:*/c\Depends: mangohud, libqt6pas6" "${pkgdir}"/DEBIAN/control
+  sudo sed -i "/^Depends:*/c\Depends: mangohud, libqt6pas-dev" "${pkgdir}"/DEBIAN/control
 }
