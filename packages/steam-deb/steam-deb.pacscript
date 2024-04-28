@@ -5,7 +5,6 @@ breaks=("${gives}-bin" "${gives}-app")
 replace=("${gives}")
 url="https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb"
 pkgdesc="Steam is a video game digital distribution service by Valve"
-hash="fb2d2a4803d91ff8663ebc52007b49af992baa80b3468290ced45a86b3b8f8cc"
 repology=("project: ${gives}")
 arch=('amd64')
 maintainer="Oren Klopfer <oren@taumoda.com>"
