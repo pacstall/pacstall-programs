@@ -1,5 +1,5 @@
 name="steam-deb"
-gives="steam"
+gives="steam-launcher"
 pkgver="1.0.0.79"
 breaks=("${gives}-bin" "${gives}-app")
 replace=("${gives}")
