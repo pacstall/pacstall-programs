@@ -1,18 +1,24 @@
-name="bazecor-app"
-pkgname="bazecor"
-pkgver="1.3.11"
+pkgname="bazecor-app"
 gives="bazecor"
+pkgver="1.3.11"
 pkgdesc="Bazecor is the graphical configurator for the Dygma Raise"
-url="https://github.com/Dygmalab/Bazecor/releases/download/v${pkgver}/Bazecor-${pkgver}-x64.AppImage"
+source=(
+  "https://github.com/Dygmalab/Bazecor/releases/download/v${pkgver}/Bazecor-${pkgver}-x64.AppImage"
+  "https://raw.githubusercontent.com/Elsie19/images/master/bazecor.png"
+)
 depends=("usbutils" "udev")
-hash="88cbab4031740813272678e612034829877c0b9078160b8c8b826a6b7747af7a"
+sha256sums=(
+  "88cbab4031740813272678e612034829877c0b9078160b8c8b826a6b7747af7a"
+  "SKIP"
+)
 breaks=("bazecor" "bazecor-bin" "bazecor-deb" "bazecor-git")
 arch=('amd64')
-maintainer="Elsie19 <elsie19@pm.me>"
+maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: bazecor")
 
 package() {
-  sudo mkdir -p "${pkgdir}/usr/share/icons/hicolor/256x256/apps/" "${pkgdir}/usr/share/applications/"
+  cd "${_archive}"
+  mkdir -p "${pkgdir}/usr/share/icons/hicolor/256x256/apps/" "${pkgdir}/usr/share/applications/"
   echo "[Desktop Entry]
 Name=Bazecor
 Exec=bazecor %U
@@ -21,9 +27,9 @@ Type=Application
 Icon=bazecor
 StartupWMClass=Bazecor
 X-AppImage-Version=${pkgver}
-Categories=Utility;" | sudo tee "${pkgdir}/usr/share/applications/bazecor.desktop" > /dev/null
-  sudo wget -q https://raw.githubusercontent.com/Elsie19/images/master/bazecor.png -O "${pkgdir}/usr/share/icons/hicolor/256x256/apps/bazecor.png"
-  sudo install -Dm755 "Bazecor-${pkgver}-x64.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+Categories=Utility;" | tee "${pkgdir}/usr/share/applications/bazecor.desktop" > /dev/null
+  install -Dm644 "${srcdir}/bazecor.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/bazecor.png"
+  install -Dm755 "Bazecor-${pkgver}-x64.AppImage" "${pkgdir}/usr/bin/${gives}"
 }
 
 post_install() {

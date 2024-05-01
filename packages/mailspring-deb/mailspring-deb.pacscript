@@ -1,10 +1,10 @@
-name="mailspring-deb"
+pkgname="mailspring-deb"
 gives="mailspring"
 pkgver="1.13.3"
-replace=("${gives}")
-url="https://github.com/Foundry376/Mailspring/releases/download/${pkgver}/mailspring-${pkgver}-amd64.deb"
+replaces=("${gives}")
+source=("https://github.com/Foundry376/Mailspring/releases/download/${pkgver}/mailspring-${pkgver}-amd64.deb")
 pkgdesc="Mailspring is a new version of Nylas Mail maintained by one of the original authors. It's faster, leaner, and shipping today!"
-hash="d85e64f3345123ac75110d24f30bc8ab54372e7ae7d913a9fccabe1fb56ace57"
+sha256sums=("d85e64f3345123ac75110d24f30bc8ab54372e7ae7d913a9fccabe1fb56ace57")
 arch=('amd64')
 repology=("project: mailspring")
-maintainer="Lanius <laniusone@pm.me>"
+maintainer=("Lanius <laniusone@pm.me>")

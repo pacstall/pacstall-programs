@@ -1,9 +1,9 @@
-name="yandex-browser-beta-deb"
+pkgname="yandex-browser-beta-deb"
 gives="yandex-browser-beta"
 repology=("project: ${gives}")
 pkgver="23.11.1.675-1"
-url="http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${gives}/${gives}_${pkgver}_amd64.deb"
+source=("http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${gives}/${gives}_${pkgver}_amd64.deb")
 pkgdesc="The web browser from Yandex - Beta"
-hash="5823de6408f3bc2dfa4d05d11236eaa0f8d0312588baaca8e824f1c0d83a2c30"
+sha256sums=("5823de6408f3bc2dfa4d05d11236eaa0f8d0312588baaca8e824f1c0d83a2c30")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

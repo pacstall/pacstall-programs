@@ -1,10 +1,10 @@
-name="ivpn-deb"
+pkgname="ivpn-deb"
 gives="ivpn"
 breaks=("${gives}-git")
 repology=("project: ${gives}")
 pkgver="3.13.4"
-url="https://repo.ivpn.net/stable/pool/${gives}_${pkgver}_amd64.deb"
+source=("https://repo.ivpn.net/stable/pool/${gives}_${pkgver}_amd64.deb")
 pkgdesc="Official IVPN Desktop app - Base Package"
-hash="10d8bf35ffedbdac2943fb7a3ab608eb8ae069dcc344e9b6b97b96a662372c35"
+sha256sums=("10d8bf35ffedbdac2943fb7a3ab608eb8ae069dcc344e9b6b97b96a662372c35")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

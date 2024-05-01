@@ -7,7 +7,7 @@
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
 #        \/          \/      \/
-maintainer="wizard-28 <wiz28@pm.me>"
+maintainer=("wizard-28 <wiz28@pm.me>")
 
 ### This pacscript is made with (ported to pacstall) the help of https://aur.archlinux.org/cgit/aur.git/commit/?h=emacs-git&id=b9eb3b405717f8df37b38217dbb7d361b8ffca08
 ###################################################################################
@@ -71,17 +71,17 @@ DOCS_PDF=         # Generate and install pdf documentation.
 NOGZ="YES"        # Don't compress .el files.
 #################################################################################
 
-name="emacs"
+pkgname="emacs"
 pkgver="28.2"
-url="http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz"
+source=("http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
 makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
 depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
-gives="${name}"
-breaks=("${name}-git" "${name}-nox")
-replace=("${name}-git" "${name}-nox")
-hash="ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488"
+gives="${pkgname}"
+breaks=("${pkgname}-git" "${pkgname}-nox")
+replaces=("${pkgname}-git" "${pkgname}-nox")
+sha256sums=("ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488")
 repology=("project: emacs")
 
 #################################################################################
@@ -196,6 +196,7 @@ if [[ ${DOCS_PDF} == "YES" && ! -d "/usr/local/texlive" ]]; then
 fi
 
 prepare() {
+  cd "${_archive}"
   [[ -x configure ]] || (./autogen.sh git && ./autogen.sh autoconf)
   if [[ ${CHECK} == "YES" ]]; then
     make -j"${NCPU}" check
@@ -203,6 +204,7 @@ prepare() {
 }
 
 build() {
+  cd "${_archive}"
   local _conf=(
     --prefix=/usr
     --sysconfdir=/etc
@@ -295,7 +297,7 @@ build() {
   # You may need to run this if "loaddefs.el" files become corrupt.
   #cd "/usr/pacstall/src/emacs-git/lisp"
   #make autoloads
-  #cd ../
+  #cd "${srcdir}"/
 
   # Optional documentation formats.
   if [[ ${DOCS_HTML} == "YES" ]]; then
@@ -308,19 +310,20 @@ build() {
 }
 
 package() {
-  sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install
+  cd "${_archive}"
+  make -j"${NCPU}" DESTDIR="${pkgdir}" install
 
   # Install optional documentation formats
-  if [[ ${DOCS_HTML} == "YES" ]]; then sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install-html; fi
-  if [[ ${DOCS_PDF} == "YES" ]]; then sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install-pdf; fi
+  if [[ ${DOCS_HTML} == "YES" ]]; then make -j"${NCPU}" DESTDIR="${pkgdir}" install-html; fi
+  if [[ ${DOCS_PDF} == "YES" ]]; then make -j"${NCPU}" DESTDIR="${pkgdir}" install-pdf; fi
 
   # fix user/root permissions on usr/local/share files
-  find "${pkgdir}/usr/share/emacs/" -print0 | sudo xargs -0 chown root:root
+  find "${pkgdir}/usr/share/emacs/" -print0 | xargs -0 chown root:root
 
   # fix permssions on /var/games
-  sudo mkdir -p "${pkgdir}/var/games/emacs"
-  sudo chmod 775 "${pkgdir}/var/games"
-  sudo chmod 775 "${pkgdir}/var/games/emacs"
-  sudo chown -R root:games "${pkgdir}/var/games"
+  mkdir -p "${pkgdir}/var/games/emacs"
+  chmod 775 "${pkgdir}/var/games"
+  chmod 775 "${pkgdir}/var/games/emacs"
+  chown -R root:games "${pkgdir}/var/games"
 }
 # vim:set ft=sh ts=2 sw=2 et:

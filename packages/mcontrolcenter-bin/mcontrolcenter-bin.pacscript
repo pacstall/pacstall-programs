@@ -1,21 +1,22 @@
-name="mcontrolcenter-bin"
+pkgname="mcontrolcenter-bin"
 gives="mcontrolcenter"
 pkgver="0.4.1"
 depends=("libqt5widgets5")
-url="https://github.com/dmitry-s93/MControlCenter/releases/download/${pkgver}/MControlCenter-${pkgver}-bin.tar.gz"
+source=("https://github.com/dmitry-s93/MControlCenter/releases/download/${pkgver}/MControlCenter-${pkgver}-bin.tar.gz")
 repology=("project: mcontrolcenter")
 pkgdesc="MControlCenter is a Free and Open Source GNU/Linux application that allows you to change the settings of MSI laptops."
-hash="81196a66e19ba0ac01536187bee5795a836ee1b37dda8027ca0ddbf9da5cf0dc"
-maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
+sha256sums=("81196a66e19ba0ac01536187bee5795a836ee1b37dda8027ca0ddbf9da5cf0dc")
+maintainer=("সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>")
 
 package() {
+  cd "${_archive}"
   cd app || return 1
-  sudo install -Dm755 "${gives}" "${pkgdir}/usr/bin/${gives}"
-  sudo install -Dm644 "${gives}.desktop" "${pkgdir}/usr/share/applications/${gives}.desktop"
-  sudo install -Dm644 "${gives}.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/${gives}.svg"
-  sudo install -Dm755 "${gives}-helper" "${pkgdir}/usr/libexec/${gives}-helper"
-  sudo install -Dm644 "${gives}-helper.conf" "${pkgdir}/usr/share/dbus-1/system.d/${gives}-helper.conf"
-  sudo install -Dm644 "${gives}.helper.service" "${pkgdir}/usr/share/dbus-1/system-services/${gives}.helper.service"
+  install -Dm755 "${gives}" "${pkgdir}/usr/bin/${gives}"
+  install -Dm644 "${gives}.desktop" "${pkgdir}/usr/share/applications/${gives}.desktop"
+  install -Dm644 "${gives}.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/${gives}.svg"
+  install -Dm755 "${gives}-helper" "${pkgdir}/usr/libexec/${gives}-helper"
+  install -Dm644 "${gives}-helper.conf" "${pkgdir}/usr/share/dbus-1/system.d/${gives}-helper.conf"
+  install -Dm644 "${gives}.helper.service" "${pkgdir}/usr/share/dbus-1/system-services/${gives}.helper.service"
 }
 
 post_install() {

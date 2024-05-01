@@ -1,9 +1,9 @@
-name="touchegg-deb"
+pkgname="touchegg-deb"
 repology=("project: touchegg")
 gives="touchegg"
 pkgver="2.0.17"
-url="https://github.com/JoseExposito/${gives}/releases/download/${pkgver}/${gives}_${pkgver}_amd64.deb"
+source=("https://github.com/JoseExposito/${gives}/releases/download/${pkgver}/${gives}_${pkgver}_amd64.deb")
 pkgdesc="Touchégg is an app that runs in the background and transform the gestures you make on your touchpad or touchscreen into visible actions in your desktop."
-hash="ef1873155eafefedbbc9a6911ff34c57511c49b43cbb37f5c6f8b795a04a0ecc"
+sha256sums=("ef1873155eafefedbbc9a6911ff34c57511c49b43cbb37f5c6f8b795a04a0ecc")
 arch=('amd64')
-maintainer="Zahrun <Zahrun@github.com>"
+maintainer=("Zahrun <Zahrun@github.com>")

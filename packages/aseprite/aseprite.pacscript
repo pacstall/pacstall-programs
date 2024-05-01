@@ -2,31 +2,33 @@
 # https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=aseprite
 # Credit to the listed maintainers & contributors
 
-name="aseprite"
+pkgname="aseprite"
 pkgver="1.3.6"
 pkgdesc="Animated sprite editor & pixel art tool"
-repology=("project: ${name}")
-homepage="https://www.aseprite.org/"
+repology=("project: ${pkgname}")
+url="https://www.aseprite.org/"
 makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "libxi-dev" "ninja-build" "xorg-dev")
 depends=("hicolor-icon-theme")
 arch=("amd64")
-maintainer="vigress8 <vig@disroot.org>"
-url="https://github.com/${name}/${name}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
-hash="5e974aa2786297981cd5ebe81f040a49b722bddfe33d70def207ad06cb0d34fc"
+maintainer=("vigress8 <vig@disroot.org>")
 skiaver="m102-861e4743af"
-skiaurl="https://github.com/${name}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
-skiahash="66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
+source=(
+  "https://github.com/${pkgname}/${pkgname}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
+  "https://github.com/${pkgname}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
+)
+sha256sums=(
+  "5e974aa2786297981cd5ebe81f040a49b722bddfe33d70def207ad06cb0d34fc"
+  "66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
+)
+noextract=("Skia-Linux-Release-x64-libc++.zip")
 
 prepare() {
-  wget -q "${skiaurl}"
-  if [[ $(sha256sum "Skia-Linux-Release-x64-libc++.zip" | cut -d' ' -f1) != "${skiahash}" ]]; then
-    fancy_message error "Could not verify integrity of Skia-Linux-Release-x64-libc++.zip"
-    return 1;
-  fi
-  unzip -qq "Skia-Linux-Release-x64-libc++.zip" -d skia
+  cd "${_archive}"
+  unzip -qq "${srcdir}/Skia-Linux-Release-x64-libc++.zip" -d skia
 }
 
 build() {
+  cd "${_archive}"
   export CC=clang
   export CXX=clang++
   export AR=ar
@@ -53,21 +55,22 @@ build() {
 }
 
 package() {
-  sudo cmake --install build --prefix="${pkgdir}/usr" --strip
+  cd "${_archive}"
+  cmake --install build --prefix="${pkgdir}/usr" --strip
   # Install the icons in the correct directory (which is not the default)
   local _size
   for _size in 16 32 48 64 128 256; do
-    sudo install -Dm644 "${pkgdir}/usr/share/${name}/data/icons/ase${_size}.png" \
+    install -Dm644 "${pkgdir}/usr/share/${pkgname}/data/icons/ase${_size}.png" \
     -t "${pkgdir}/usr/share/icons/hicolor/${_size}x${_size}/apps"
   done
   # Delete the icons to avoid copying them in two places (they aren't used by Aseprite itself)
-  sudo rm -rf "${pkgdir}/usr/share/${name}/data/icons"
+  rm -rf "${pkgdir}/usr/share/${pkgname}/data/icons"
   # Install the licenses
-  sudo install -Dm644 {EULA.txt,docs/LICENSES.md} -t "${pkgdir}/usr/share/licenses/${name}"
-  sudo install -m644 "data/fonts/LICENSE.txt" "${pkgdir}/usr/share/licenses/${name}/font.txt"
+  install -Dm644 {EULA.txt,docs/LICENSES.md} -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -m644 "data/fonts/LICENSE.txt" "${pkgdir}/usr/share/licenses/${pkgname}/font.txt"
 }
 
 pre_install() {
   fancy_message warn "Aseprite is non-free software. Distributing the binary files produced by this script is forbidden. For more information, read Aseprite's EULA:
-  https://github.com/${name}/${name}/blob/main/EULA.txt"
+  https://github.com/${pkgname}/${pkgname}/blob/main/EULA.txt"
 }

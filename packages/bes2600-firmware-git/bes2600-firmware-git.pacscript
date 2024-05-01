@@ -1,25 +1,23 @@
-name="bes2600-firmware-git"
+pkgname="bes2600-firmware-git"
 gives="bes2600-firmware"
 pkgver="0.0.1"
 pkgrel="2"
 pkgdesc="firmware files for BES2600 WLAN/BT combo chip and PineTab2 systemd files for controlling"
-url="https://gitlab.com/pine64-org/bes2600-firmware.git"
-maintainer="Oren Klopfer <oren@taumoda.com>"
-pkgver() {
-  git ls-remote "${url}" main | cut -f1 | cut -c1-8
-}
+source=("https://gitlab.com/pine64-org/bes2600-firmware.git")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
-  sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo mkdir -p "${pkgdir}/usr/lib/systemd/system"
+  cd "${_archive}"
+  mkdir -p "${pkgdir}/usr/bin"
+  mkdir -p "${pkgdir}/usr/lib/systemd/system"
 
   echo '#!/bin/sh
 echo ifname:bt cmd:BT_ON > /dev/bes2600
 rfkill unblock bluetooth
 hciattach -s 1500000 /dev/ttyS1 any 1500000 flow nosleep
-hciconfig hci0 up' | sudo tee "${pkgdir}/usr/bin/pt2-bt.sh" > /dev/null
+hciconfig hci0 up' | tee "${pkgdir}/usr/bin/pt2-bt.sh" > /dev/null
 
-  sudo chmod +x "${pkgdir}/usr/bin/pt2-bt.sh"
+  chmod +x "${pkgdir}/usr/bin/pt2-bt.sh"
 
   echo "[Unit]
 Description=Turn on PineTab2 bluetooth
@@ -31,26 +29,27 @@ ExecStart=bash -c 'if [[ -f /etc/modules-load.d/bes2600.conf ]]; then /usr/bin/p
 Restart=on-failure
 
 [Install]
-WantedBy=multi-user.target" | sudo tee "${pkgdir}/usr/lib/systemd/system/pinetab2-bluetooth.service" > /dev/null
+WantedBy=multi-user.target" | tee "${pkgdir}/usr/lib/systemd/system/pinetab2-bluetooth.service" > /dev/null
 
   echo "[Unit]
 Description=Disable PineTab2 experimental WiFi modules
 
 [Service]
 Type=oneshot
-ExecStart=bash -c 'if [[ -f /etc/modules-load.d/bes2600.conf ]]; then rm /etc/modules-load.d/bes2600.conf; fi'" | sudo tee "${pkgdir}/usr/lib/systemd/system/pinetab2-wifi-disable.service" > /dev/null
+ExecStart=bash -c 'if [[ -f /etc/modules-load.d/bes2600.conf ]]; then rm /etc/modules-load.d/bes2600.conf; fi'" | tee "${pkgdir}/usr/lib/systemd/system/pinetab2-wifi-disable.service" > /dev/null
 
   echo "[Unit]
 Description=Enable PineTab2 experimental WiFi modules
 
 [Service]
 Type=oneshot
-ExecStart=bash -c 'if ! [[ -f /etc/modules-load.d/bes2600.conf ]]; then echo bes2600 >> /etc/modules-load.d/bes2600.conf; fi'" | sudo tee "${pkgdir}/usr/lib/systemd/system/pinetab2-wifi-enable.service" > /dev/null
+ExecStart=bash -c 'if ! [[ -f /etc/modules-load.d/bes2600.conf ]]; then echo bes2600 >> /etc/modules-load.d/bes2600.conf; fi'" | tee "${pkgdir}/usr/lib/systemd/system/pinetab2-wifi-enable.service" > /dev/null
 }
 
 package() {
-  sudo mkdir -p "${pkgdir}/usr/lib/firmware"
-  sudo cp -r firmware/bes2600 "${pkgdir}/usr/lib/firmware"
+  cd "${_archive}"
+  mkdir -p "${pkgdir}/usr/lib/firmware"
+  cp -r firmware/bes2600 "${pkgdir}/usr/lib/firmware"
 }
 
 post_install() {

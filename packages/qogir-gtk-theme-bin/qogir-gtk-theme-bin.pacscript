@@ -4,17 +4,17 @@
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
 #        \/          \/      \/
-maintainer="wizard-28 <wiz28@pm.me>"
+maintainer=("wizard-28 <wiz28@pm.me>")
 
-name="qogir-gtk-theme-bin"
-pkgname="qogir-gtk-theme"
+pkgname="qogir-gtk-theme-bin"
+gives="qogir-gtk-theme"
 pkgver="2023-02-27"
 pkgdesc="Qogir is a flat Design theme for GTK"
-url="https://github.com/vinceliuice/Qogir-theme/archive/${pkgver}.tar.gz"
+source=("https://github.com/vinceliuice/Qogir-theme/archive/${pkgver}.tar.gz")
 depends=("gtk2-engines-murrine" "gtk2-engines-pixbuf")
 makedepends=("libsass1")
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
-hash="211d2d7e027fe595e7512ca346b63a9314ee59e3ddee875bc1c06aeef9e5b9bb"
+breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
+sha256sums=("211d2d7e027fe595e7512ca346b63a9314ee59e3ddee875bc1c06aeef9e5b9bb")
 repology=("project: qogir-theme" "repo: nix_unstable")
 
 # To specify flags for theme installation you have two options
@@ -25,6 +25,7 @@ repology=("project: qogir-theme" "repo: nix_unstable")
 _INSTALL_OPTS=
 
 build() {
+  cd "${_archive}"
   # Parse install flags from /etc/qogir-gtk-theme/options.txt, if it exists and _INSTALL_OPTS has not been set
   if [[ -f "/etc/qogir-gtk-theme/options.txt" && -z ${_INSTALL_OPTS} ]]; then
     _INSTALL_OPTS="$(/usr/bin/grep --extended-regexp --max-count=1 --line-regexp --invert-match '^\s*$|#.+' /etc/qogir-gtk-theme/options.txt 2> /dev/null)"
@@ -39,9 +40,10 @@ build() {
 }
 
 package() {
-  sudo install -dm755 "${pkgdir}/usr/share/themes"
+  cd "${_archive}"
+  install -dm755 "${pkgdir}/usr/share/themes"
   # HACK: Disabling SC2086 check, as this is the desired behavior
   # shellcheck disable=SC2086
-  sudo ./install.sh ${_INSTALL_OPTS} --dest "${pkgdir}/usr/share/themes"
+  ./install.sh ${_INSTALL_OPTS} --dest "${pkgdir}/usr/share/themes"
 }
 # vim:set ft=sh ts=2 sw=2 et:

@@ -1,16 +1,18 @@
-name="dmenu"
+pkgname="dmenu"
 pkgver="5.2"
-url="https://dl.suckless.org/tools/${name}-${pkgver}.tar.gz"
+source=("https://dl.suckless.org/tools/${pkgname}-${pkgver}.tar.gz")
 makedepends=("libxinerama-dev" "libxft-dev")
-breaks=("${name}" "${name}_run" "${name}_path")
-repology=("project: ${name}")
+breaks=("${pkgname}" "${pkgname}_run" "${pkgname}_path")
+repology=("project: ${pkgname}")
 pkgdesc="A generic menu for X"
-hash="d4d4ca77b59140f272272db537e05bb91a5914f56802652dc57e61a773d43792"
+sha256sums=("d4d4ca77b59140f272272db537e05bb91a5914f56802652dc57e61a773d43792")
 
 build() {
+  cd "${_archive}"
   make -j"${NCPU}"
 }
 
 package() {
-  sudo make install DESTDIR="${pkgdir}"
+  cd "${_archive}"
+  make install DESTDIR="${pkgdir}"
 }
