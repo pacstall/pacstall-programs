@@ -3,11 +3,11 @@ source=("https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text
 pacdeps=("rhino-pkg-git" "rhino-neofetch-git" "pacstall-qa-git")
 pkgdesc="Transitional package to provide minimal core Rhino Linux software"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-compatible=("ubuntu:devel" "ubuntu:noble")
+compatible=("ubuntu:devel" "ubuntu:oracular")
 replaces=("rhino-core" "rhino-pine-core" "rhino-ubxi-core")
 priority="essential"
 pkgver="2023.4"
-pkgrel="6"
+pkgrel="7"
 style="(server)"
 branch="devel"
 
