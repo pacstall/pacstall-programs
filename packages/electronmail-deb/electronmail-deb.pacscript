@@ -1,10 +1,10 @@
-name="electronmail-deb"
+pkgname="electronmail-deb"
 gives="electron-mail"
-replace=("${gives}")
+replaces=("${gives}")
 breaks=("${gives}-app")
 repology=("project: electronmail")
 pkgver="5.1.8"
-url="https://github.com/vladimiry/ElectronMail/releases/download/v${pkgver}/${gives}-${pkgver}-linux-amd64.deb"
+source=("https://github.com/vladimiry/ElectronMail/releases/download/v${pkgver}/${gives}-${pkgver}-linux-amd64.deb")
 pkgdesc="Unofficial ProtonMail Desktop App"
-hash="36d3a99e390fc3e33a275f27ca93e50f1027e04a56bd0d5192f66c80b312075a"
+sha256sums=("36d3a99e390fc3e33a275f27ca93e50f1027e04a56bd0d5192f66c80b312075a")
 arch=('amd64')

@@ -1,29 +1,29 @@
-maintainer="Paul Cosma (saenai) <paul.cosma97@gmail.com>"
+maintainer=("Paul Cosma (saenai) <paul.cosma97@gmail.com>")
 
-name="go-bin"
-pkgname="go"
+pkgname="go-bin"
+gives="go"
 pkgver="1.21.6"
 pkgdesc="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
-url="https://go.dev/dl/go${pkgver}.linux-amd64.tar.gz"
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-app" "${pkgname}-deb" "golang" "golang-git" "golang-deb" "golang-bin" "golang-app" "golang-go")
-gives="golang-go"
-replace=("golang-go")
-hash="3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4"
+source=("https://go.dev/dl/go${pkgver}.linux-amd64.tar.gz")
+breaks=("${gives}" "${gives}-git" "${gives}-app" "${gives}-deb" "golang" "golang-git" "golang-deb" "golang-bin" "golang-app" "golang-go")
+replaces=("golang-go")
+sha256sums=("3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4")
 arch=('amd64')
 repology=("project: go")
 
-__goroot_pkgdir="${pkgdir}/usr/local/${name}"
-__goroot="/usr/local/${name}"
+__goroot_pkgdir="${pkgdir}/usr/local/${pkgname}"
+__goroot="/usr/local/${pkgname}"
 __shell_rcs=("${homedir}/.bashrc" "${homedir}/.zshrc" "${homedir}/.profile")
 
 package() {
+  cd "${_archive}"
   # Install binary
-  sudo install -Dm755 "bin/go" "${pkgdir}/usr/bin/go"
-  sudo install -Dm755 "bin/gofmt" "${pkgdir}/usr/bin/gofmt"
+  install -Dm755 "bin/go" "${pkgdir}/usr/bin/go"
+  install -Dm755 "bin/gofmt" "${pkgdir}/usr/bin/gofmt"
 
-  sudo mkdir -p "${__goroot_pkgdir}"
-  sudo cp -r "." "${__goroot_pkgdir}"
-  sudo chmod -R 755 "${__goroot_pkgdir}"
+  mkdir -p "${__goroot_pkgdir}"
+  cp -r "." "${__goroot_pkgdir}"
+  chmod -R 755 "${__goroot_pkgdir}"
 }
 
 __goroot_is_set() {

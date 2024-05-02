@@ -1,17 +1,18 @@
-name="shellcheck-bin"
+pkgname="shellcheck-bin"
 gives="shellcheck"
 pkgver="0.9.0"
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 pkgdesc="Gives warnings and suggestions for bash/sh shell scripts"
-hash="700324c6dd0ebea0117591c6cc9d7350d9c7c5c287acbad7630fa17b1d4d9e2f"
-url="https://github.com/koalaman/shellcheck/releases/download/v${pkgver}/shellcheck-v${pkgver}.linux.x86_64.tar.xz"
+sha256sums=("700324c6dd0ebea0117591c6cc9d7350d9c7c5c287acbad7630fa17b1d4d9e2f")
+source=("https://github.com/koalaman/shellcheck/releases/download/v${pkgver}/shellcheck-v${pkgver}.linux.x86_64.tar.xz")
 homepage='https://www.shellcheck.net/'
 arch=('amd64')
-maintainer="Elsie19 <elsie19@pm.me>"
+maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: shellcheck")
 
 package() {
-  sudo install -Dm644 shellcheck "${pkgdir}/usr/bin/shellcheck"
-  sudo install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${gives}/LICENSE"
-  sudo chmod +x "${pkgdir}/usr/bin/shellcheck"
+  cd "${_archive}"
+  install -Dm644 shellcheck "${pkgdir}/usr/bin/shellcheck"
+  install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${gives}/LICENSE"
+  chmod +x "${pkgdir}/usr/bin/shellcheck"
 }

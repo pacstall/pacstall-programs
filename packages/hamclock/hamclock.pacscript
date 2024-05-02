@@ -1,16 +1,17 @@
-name="hamclock"
+pkgname="hamclock"
 pkgver="3.10"
-url="https://github.com/kj7rrv/hamclock/archive/refs/tags/v${pkgver}.tar.gz"
+source=("https://github.com/kj7rrv/hamclock/archive/refs/tags/v${pkgver}.tar.gz")
 homepage='https://clearskyinstitute.com/ham/HamClock'
 makedepends=("gcc" "make" "pkg-config" "libxau6" "libx11-6" "libx11-dev" "libxcb1")
 breaks=("hamclock-big" "hamclock-bigger" "hamclock-huge")
-replace=("hamclock")
+replaces=("hamclock")
 pkgdesc="Clock and world map with extra features for amateur radio (800x480 version)"
-hash="49ee666ac5c2fd9c647119bf36a5d627f7fc8b1db22b0ad7140e9e60a30554c5"
-maintainer="Roy Williams <fang64@gmail.com>"
-repology=("project: ${name}")
+sha256sums=("49ee666ac5c2fd9c647119bf36a5d627f7fc8b1db22b0ad7140e9e60a30554c5")
+maintainer=("Roy Williams <fang64@gmail.com>")
+repology=("project: ${pkgname}")
 
 prepare() {
+  cd "${_archive}"
   cd "ESPHamClock"
   # Add -PAC to version for PACSTALL
   sed -i 's/"/-PAC"/g' version.h
@@ -22,21 +23,23 @@ prepare() {
 }
 
 build() {
+  cd "${_archive}"
   cd "ESPHamClock"
   make -j"${NCPU}" hamclock-800x480
 }
 
 package() {
+  cd "${_archive}"
   cd "ESPHamClock"
-  sudo mkdir -p "${pkgdir}/usr/bin" "${pkgdir}/usr/share/applications" "${pkgdir}/usr/share/icons" "${pkgdir}/usr/share/licenses/${pkgname}/"
-  sudo cp hamclock-800x480 "${pkgdir}/usr/bin/hamclock"
-  sudo cp hamclock.png "${pkgdir}/usr/share/icons"
-  sudo cp LICENSE "${pkgdir}/usr/share/licenses/${pkgname}"
+  mkdir -p "${pkgdir}/usr/bin" "${pkgdir}/usr/share/applications" "${pkgdir}/usr/share/icons" "${pkgdir}/usr/share/licenses/${gives}/"
+  cp hamclock-800x480 "${pkgdir}/usr/bin/hamclock"
+  cp hamclock.png "${pkgdir}/usr/share/icons"
+  cp LICENSE "${pkgdir}/usr/share/licenses/${gives}"
   echo '[Desktop Entry]
 Name=HamClock
 Exec=hamclock
 Icon=/usr/share/icons/hamclock.png
 Terminal=false
 Type=Application
-Categories=HamRadio' | sudo tee "${pkgdir}/usr/share/applications/hamclock.desktop" > /dev/null
+Categories=HamRadio' | tee "${pkgdir}/usr/share/applications/hamclock.desktop" > /dev/null
 }

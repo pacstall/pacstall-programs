@@ -1,24 +1,26 @@
-name="gtkhash"
+pkgname="gtkhash"
 pkgver="1.4"
-url="https://github.com/tristanheaven/${name}/releases/download/v${pkgver}/${name}-${pkgver}.tar.xz"
+source=("https://github.com/tristanheaven/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz")
 makedepends=("autoconf" "automake" "libtool" "intltool" "wget")
 depends=("libgtk-3-dev" "libglib2.0-dev" "libgcrypt-dev" "nettle-dev" "libb2-dev" "openssl" "libmbedtls-dev")
-replace=("${name}")
+replaces=("${pkgname}")
 pkgdesc="gtkhash is a desktop utility for computing message digests or checksums."
-hash="20b57dbb8f6c6d7323f573c111a11640603a422c5f9da7b302a4981e4adc37c4"
+sha256sums=("20b57dbb8f6c6d7323f573c111a11640603a422c5f9da7b302a4981e4adc37c4")
 
 build() {
+  cd "${_archive}"
   ./configure --enable-mbedtls --enable-nettle
   make -j"${NCPU}"
 }
 
 package() {
-  sudo make install DESTDIR="${pkgdir}"
-  sudo install -Dm644 COPYING -t "${pkgdir}/usr/share/licenses/${name}"
-  sudo install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${name}"
+  cd "${_archive}"
+  make install DESTDIR="${pkgdir}"
+  install -Dm644 COPYING -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${pkgname}"
 }
 
 post_remove() {
-  sudo rm -rf "/usr/share/licenses/${name}"
-  sudo rm -rf "/usr/share/doc/${name}"
+  sudo rm -rf "/usr/share/licenses/${pkgname}"
+  sudo rm -rf "/usr/share/doc/${pkgname}"
 }

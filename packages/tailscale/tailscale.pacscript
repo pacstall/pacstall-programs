@@ -1,22 +1,24 @@
-name="tailscale"
+pkgname="tailscale"
 pkgver="1.58.2"
-url="https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz"
-homepage="https://tailscale.com"
+source=("https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz")
+url="https://tailscale.com"
 depends=('iptables')
 makedepends=('golang-go' 'git')
 pkgdesc="Private WireGuard networks made easy"
-maintainer="Nathan <ndowens@artixlinux.org>"
+maintainer=("Nathan <ndowens@artixlinux.org>")
 arch=('amd64')
-repology=("project: ${name}")
+repology=("project: ${pkgname}")
 incompatible=('ubuntu:jammy' 'debian:bookworm')
-hash="452f355408e4e2179872387a863387e06346fc8a6f9887821f9b8a072c6a5b0a"
+sha256sums=("452f355408e4e2179872387a863387e06346fc8a6f9887821f9b8a072c6a5b0a")
 
 prepare() {
+  cd "${_archive}"
   go mod vendor
   sed -i 's,/usr/sbin,/usr/bin/,g' cmd/tailscaled/tailscaled.service
 }
 
 build() {
+  cd "${_archive}"
   export GO111MODULE=on
   export GOFLAGS="-buildmode=pie -mod=readonly -modcacherw"
   _GO_LDFLAGS="-compressdwarf=false \
@@ -29,8 +31,9 @@ build() {
 }
 
 package() {
-  sudo install -Dm755 tailscale tailscaled -t "${pkgdir}/usr/bin"
-  sudo install -Dm644 cmd/tailscaled/tailscaled.defaults "${pkgdir}/etc/default/tailscaled"
-  sudo install -Dm644 cmd/tailscaled/tailscaled.service -t "${pkgdir}/usr/lib/systemd/system"
-  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  cd "${_archive}"
+  install -Dm755 tailscale tailscaled -t "${pkgdir}/usr/bin"
+  install -Dm644 cmd/tailscaled/tailscaled.defaults "${pkgdir}/etc/default/tailscaled"
+  install -Dm644 cmd/tailscaled/tailscaled.service -t "${pkgdir}/usr/lib/systemd/system"
+  install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${gives}"
 }

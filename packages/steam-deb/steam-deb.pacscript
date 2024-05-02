@@ -1,10 +1,10 @@
-name="steam-deb"
+pkgname="steam-deb"
 gives="steam-launcher"
 pkgver="1.0.0.79"
 breaks=("${gives}-bin" "${gives}-app")
-replace=("${gives}")
-url="https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb"
+replaces=("${gives}")
+source=("https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb")
 pkgdesc="Steam is a video game digital distribution service by Valve"
 repology=("project: ${gives}")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
