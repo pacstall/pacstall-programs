@@ -13,8 +13,13 @@ source_amd64=("https://github.com/docker/compose/releases/download/v${pkgver}/do
 source_arm64=("https://github.com/docker/compose/releases/download/v${pkgver}/docker-compose-linux-aarch64")
 
 package() {
+  if [[ ${CARCH} == amd64 ]]; then
+    gnuarch="x86_64"
+  else
+    gnuarch="aarch64"
+  fi
   cd "${_archive}"
   mkdir -p "${pkgdir}/usr/libexec/docker/cli-plugins"
-  chmod a+x ./docker-compose-linux-*
-  mv ./docker-compose-linux-* "${pkgdir}/usr/libexec/docker/cli-plugins/docker-compose"
+  chmod a+x ./"docker-compose-linux-${gnuarch}"
+  mv ./"docker-compose-linux-${gnuarch}" "${pkgdir}/usr/libexec/docker/cli-plugins/docker-compose"
 }

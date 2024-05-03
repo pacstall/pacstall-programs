@@ -14,19 +14,29 @@ sha256sums_arm64=(
   "SKIP"
   "SKIP"
 )
-source=(
+source_amd64=(
+  "https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/${pkgver}/LibreWolf.x86_64.AppImage"
   "icon.png::https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png"
   "${gives}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${gives}.desktop"
 )
-source_amd64=("https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/${pkgver}/LibreWolf.x86_64.AppImage")
-source_arm64=("https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/${pkgver}/LibreWolf.aarch64.AppImage")
+source_arm64=(
+  "https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/${pkgver}/LibreWolf.aarch64.AppImage"
+  "icon.png::https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png"
+  "${gives}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${gives}.desktop"
+)
 breaks=("${gives}-deb" "${gives}-bin" "${gives}-git")
 repology=("project: librewolf")
 
 package() {
+  if [[ ${CARCH} == amd64 ]]; then
+    gnuarch="x86_64"
+  else
+    gnuarch="aarch64"
+  fi
+
   cd "${_archive}"
   # Install appimage
-  install -Dm755 LibreWolf.*.AppImage "${pkgdir}/usr/bin/${gives}"
+  install -Dm755 "LibreWolf.${gnuarch}.AppImage" "${pkgdir}/usr/bin/${gives}"
 
   # Download icon
   install -Dm644 "${srcdir}/icon.png" "${pkgdir}/usr/share/pixmaps/${gives}.png"
@@ -43,4 +53,5 @@ post_remove() {
     fi
   fi
 }
+
 # vim:set ft=sh ts=2 sw=2 et:
