@@ -5,6 +5,7 @@ pkgdesc="Emulator for Steam online features"
 makedepends=('automake' 'autotools-dev' 'build-essential' 'g++-multilib' 'gcc-multilib' 'git' 'libprotobuf-dev' 'libtool' 'protobuf-compiler')
 arch=('amd64')
 url='https://gitlab.com/Mr_Goldberg/goldberg_emulator'
+incompatible=('*:bookworm')
 source=(
   "${gives}::https://gitlab.com/Mr_Goldberg/goldberg_emulator.git"
   "https://github.com/protocolbuffers/protobuf.git#branch=21.x"
