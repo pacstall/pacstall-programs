@@ -48,9 +48,4 @@ post_install() {
   fancy_message info "by adding your username or other values"
 }
 
-post_remove() {
-  # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${gives}"
-  sudo rm -rf "/usr/share/doc/${gives}"
-}
 # vim:set ft=sh ts=2 sw=2 et:

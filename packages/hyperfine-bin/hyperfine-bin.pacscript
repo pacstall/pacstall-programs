@@ -37,9 +37,4 @@ package() {
   gzip --best "${pkgdir}/usr/share/man/man1/${gives}.1"
 }
 
-post_remove() {
-  # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${gives}"
-  sudo rm -rf "/usr/share/doc/${gives}"
-}
 # vim:set ft=sh ts=2 sw=2 et:

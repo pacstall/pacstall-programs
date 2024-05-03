@@ -9,16 +9,12 @@ repology=("project: docker-compose")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 sha256sums_amd64=("19c9deb6f4d3915f5c93441b8d2da751a09af82df62d55eab097c2cbfebd519f")
 sha256sums_arm64=("86fa6982c55e1bb741ac71ebbbb78c715224eeb46a820364ec6075cf87047d53")
-if [[ ${CARCH} == amd64 ]]; then
-  gnuarch="x86_64"
-else
-  gnuarch="aarch64"
-fi
-source=("https://github.com/docker/compose/releases/download/v${pkgver}/docker-compose-linux-${gnuarch}")
+source_amd64=("https://github.com/docker/compose/releases/download/v${pkgver}/docker-compose-linux-x86_64")
+source_arm64=("https://github.com/docker/compose/releases/download/v${pkgver}/docker-compose-linux-aarch64")
 
 package() {
   cd "${_archive}"
   mkdir -p "${pkgdir}/usr/libexec/docker/cli-plugins"
-  chmod a+x ./"docker-compose-linux-${gnuarch}"
-  mv ./"docker-compose-linux-${gnuarch}" "${pkgdir}/usr/libexec/docker/cli-plugins/docker-compose"
+  chmod a+x ./docker-compose-linux-*
+  mv ./docker-compose-linux-* "${pkgdir}/usr/libexec/docker/cli-plugins/docker-compose"
 }

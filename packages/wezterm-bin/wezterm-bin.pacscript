@@ -33,14 +33,6 @@ post_install() {
 }
 
 post_remove() {
-  # Remove additional files
-  sudo rm -f "/usr/share/bash-completions/wezterm"
-  sudo rm -f "/usr/share/icons/hicolor/128x128/apps/org.wezfurlong.wezterm.png"
-  sudo rm -f "/usr/share/metainfo/org.wezfurlong.wezterm.appdata.xml"
-  sudo rm -f "/usr/share/nautilus-python/extensions/wezterm-nautilus.py"
-  sudo rm -rf "/usr/share/wezterm/"
-  sudo rm -f "/usr/share/zsh/functions/Completion/Unix/_wezterm"
-
   # Delete wezterm config
   if ask "Do you want to delete wezterm config files?" N; then
     rm -rf "${homedir}/.config/.wezterm/"

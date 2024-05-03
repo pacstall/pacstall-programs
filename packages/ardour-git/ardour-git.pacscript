@@ -49,37 +49,21 @@ package() {
   wait
 
   # man pages
-  install -vDm 644 "./ardour.1" -t "/usr/share/man/man1/"
+  install -vDm 644 "./ardour.1" -t "${pkgdir}/usr/share/man/man1/"
 
   # File types
-  install -vDm 644 "./build/gtk2_ardour/ardour.xml" -t "/usr/share/mime/packages/"
-}
+  install -vDm 644 "./build/gtk2_ardour/ardour.xml" -t "${pkgdir}/usr/share/mime/packages/"
 
-post_install() {
   # Icons
   for size in 16 22 32 48; do
-    sudo install -vdm 755 "/usr/share/icons/hicolor/${size}x${size}/mimetypes"
-    sudo install -vDm 644 "/usr/share/ardour7/icons/application-x-ardour_${size}px.png" "/usr/share/icons/hicolor/${size}x${size}/mimetypes/application-x-ardour.png"
+    install -vdm 755 "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/mimetypes"
+    install -vDm 644 "${pkgdir}/usr/share/ardour7/icons/application-x-ardour_${size}px.png" \
+      "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/mimetypes/application-x-ardour.png"
   done
 
   for size in 16 22 32 48 256 512; do
-    sudo install -vdm 755 "/usr/share/icons/hicolor/${size}x${size}/apps"
-    sudo install -vDm 644 "/usr/share/ardour7/resources/Ardour-icon_${size}px.png" "/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
-  done
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/ardour7-copy-mixer"
-  sudo rm -f "/usr/bin/ardour7-export"
-  sudo rm -f "/usr/bin/ardour7-fix_bbtppq"
-  sudo rm -f "/usr/bin/ardour7-new_empty_session"
-  sudo rm -f "/usr/bin/ardour7-copy-new_session"
-  sudo rm -f "/usr/share/applications/ardour7.desktop"
-  sudo rm -f "/usr/share/mime/packages/ardour.xml"
-  for size in 16 22 32 48; do
-    sudo rm -f "/usr/share/icons/hicolor/${size}x${size}/mimetypes/application-x-ardour.png"
-  done
-  for size in 16 22 32 48 256 512; do
-    sudo rm -f "/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
+    install -vdm 755 "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps"
+    install -vDm 644 "${pkgdir}/usr/share/ardour7/resources/Ardour-icon_${size}px.png" \
+      "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps/ardour.png"
   done
 }

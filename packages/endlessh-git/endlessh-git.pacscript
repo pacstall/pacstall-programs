@@ -26,8 +26,4 @@ package() {
   install -Dm644 "${srcdir}"/sample-config "${pkgdir}/etc/endlessh/config"
 }
 
-post_remove() {
-  sudo rm -rf "/usr/share/licenses/${gives}"
-  sudo rm -rf "/usr/share/doc/${gives}"
-}
 # vim:set ft=sh ts=2 sw=2 et:

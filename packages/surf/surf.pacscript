@@ -20,8 +20,3 @@ package() {
   install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
   install -Dm644 README -t "${pkgdir}/usr/share/doc/${pkgname}"
 }
-
-post_remove() {
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-  sudo rm -rf "/usr/share/doc/${pkgname}"
-}

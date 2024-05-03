@@ -69,8 +69,4 @@ END
   install -Dm644 "${srcdir}/${gives}.desktop" -t "${pkgdir}/usr/share/applications"
 }
 
-post_remove() {
-  sudo rm -rf "/usr/share/licenses/${gives}"
-}
-
 # vim:set ft=sh ts=2 sw=2 et:

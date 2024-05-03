@@ -58,11 +58,6 @@ package() {
 }
 
 post_remove() {
-  # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${gives}"
-  sudo rm -rf "/usr/share/doc/${gives}"
-  sudo rm -rf "/usr/share/${gives}"
-
   # Remove left over directories
   if ask "Do you want to remove the configuration files?" Y; then
     rm -rf "${homedir}/.config/fastfetch"
