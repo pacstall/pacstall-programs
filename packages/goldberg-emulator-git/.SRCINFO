@@ -1,0 +1,21 @@
+pkgname = goldberg-emulator-git
+gives = goldberg-emulator
+pkgver = 0.2.5
+pkgdesc = Emulator for Steam online features
+url = https://gitlab.com/Mr_Goldberg/goldberg_emulator
+arch = amd64
+source = goldberg-emulator::https://gitlab.com/Mr_Goldberg/goldberg_emulator.git
+source = https://github.com/protocolbuffers/protobuf.git#branch=21.x
+source = fix_build.patch::https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/merge_requests/42.patch
+makedepends = automake
+makedepends = autotools-dev
+makedepends = build-essential
+makedepends = g++-multilib
+makedepends = gcc-multilib
+makedepends = git
+makedepends = libprotobuf-dev
+makedepends = libtool
+makedepends = protobuf-compiler
+sha256sums = SKIP
+sha256sums = SKIP
+sha256sums = 2fa79bb1526b2903c4b95f4e534c9627367d9a9acba35d22c190f0a04c35f381
