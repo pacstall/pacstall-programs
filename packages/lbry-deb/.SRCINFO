@@ -1,0 +1,10 @@
+pkgname = lbry-deb
+gives = lbry
+pkgver = 0.53.4
+pkgdesc = A browser and wallet for LBRY, the decentralized, user-controlled content marketplace.
+source = https://github.com/lbryio/lbry-desktop/releases/download/v0.53.4/LBRY_0.53.4.deb
+breaks = lbry
+breaks = lbry-bin
+breaks = lbry-git
+breaks = lbry-app
+sha256sums = 31ca3c2909b74f84cbf4ee9918cf437965063a3bc017bd1eed49c8bba928b4ff

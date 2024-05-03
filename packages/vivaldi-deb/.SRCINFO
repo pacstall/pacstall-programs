@@ -1,0 +1,7 @@
+pkgname = vivaldi-deb
+gives = vivaldi-stable
+pkgver = 6.5.3206.57
+pkgdesc = An advanced browser made with the power user in mind
+arch = amd64
+source = https://downloads.vivaldi.com/stable/vivaldi-stable_6.5.3206.57-1_amd64.deb
+sha256sums = c428f5fa3d880fdedfb768b6dc87e2d0a5e1d6e18d271234f68dbc96c400aa96

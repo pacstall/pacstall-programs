@@ -1,0 +1,11 @@
+pkgname = pdfmm-git
+gives = pdfmm
+pkgver = 0.0.1
+pkgdesc = pdfmm (for 'pdf minus minus', or 'pdf--') is a graphical assistant to reduce the size of PDF files.
+source = https://github.com/jpfleury/pdfmm.git
+depends = bash
+depends = sed
+depends = zenity
+depends = ghostscript
+breaks = pdfmm
+sha256sums = 3a1d5046490cbeb1f3a3eae34d66ea0e714a19a01f15dc43cb1d31fbb58d7a51

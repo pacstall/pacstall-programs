@@ -1,0 +1,10 @@
+pkgname = btop-bin
+gives = btop
+pkgver = 1.2.13
+pkgdesc = A monitor of system resourecs, bpytop ported to C++
+arch = amd64
+source = https://github.com/aristocratos/btop/releases/download/v1.2.13/btop-x86_64-linux-musl.tbz
+breaks = btop
+breaks = btop-git
+breaks = btop-deb
+sha256sums = 6c773ca064d314b4ea5d39d6fb0f73d6a3b74b9daa79ffae33c5b5df05bcf00a

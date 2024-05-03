@@ -1,0 +1,7 @@
+pkgname = cmake-data-deb
+gives = cmake-data
+pkgver = 3.25.1
+pkgdesc = CMake data files (modules, templates and documentation)
+arch = amd64
+source = http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake-data_3.25.1-1ubuntu1_all.deb
+sha256sums = 8633c1235e841faa70eb1c58f451338a73048dbddb4d97c482cca92dde61c567

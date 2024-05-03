@@ -1,0 +1,7 @@
+pkgname = opera-developer-deb
+gives = opera-developer
+pkgver = 108.0.5054.0
+pkgdesc = Opera is a fast, secure, and user-friendly web browser - Developer
+arch = amd64
+source = https://get.geo.opera.com/pub/opera-developer/108.0.5054.0/linux/opera-developer_108.0.5054.0_amd64.deb
+sha256sums = 4c6267cd8b41562a57be3f7e50c1d9c2461a3b391ae0f2e68168a911e814fedf

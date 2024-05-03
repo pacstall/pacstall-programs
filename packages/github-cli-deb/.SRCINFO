@@ -1,0 +1,13 @@
+pkgname = github-cli-deb
+gives = gh
+pkgver = 2.42.1
+pkgdesc = GitHub's official command line tool
+arch = arm64
+arch = amd64
+source_arm64 = https://github.com/cli/cli/releases/download/v2.42.1/gh_2.42.1_linux_arm64.deb
+source_amd64 = https://github.com/cli/cli/releases/download/v2.42.1/gh_2.42.1_linux_amd64.deb
+breaks = gh-bin
+breaks = gh-git
+replaces = gh
+sha256sums_amd64 = 2b053228c8fd7902054cddd44015a77446c014652d5257a2150c694843c7fa36
+sha256sums_arm64 = 6eb3eac5eeb4467d74d917bea96a50a40cc6c3ac70b853f537c9843c3a551623

@@ -1,0 +1,9 @@
+pkgname = onnxruntime-gpu-bin
+gives = onnxruntime-gpu
+pkgver = 1.17.1
+pkgdesc = Cross-platform inference and training machine-learning accelerator with gpu support
+source = https://github.com/microsoft/onnxruntime/releases/download/v1.17.1/onnxruntime-linux-x64-gpu-1.17.1.tgz
+replaces = onnxruntime-gpu-1-7-0-bin
+replaces = onnxruntime-gpu
+replaces = onnxruntime-gpu-bin
+sha256sums = 613c53745ea4960ed368f6b3ab673558bb8561c84a8fa781b4ea7fb4a4340be4

@@ -1,0 +1,9 @@
+pkgname = minecraft-launcher-deb
+gives = minecraft-launcher
+pkgver = 1121
+pkgdesc = Official Minecraft Launcher
+source = https://launcher.mojang.com/download/Minecraft.deb
+breaks = minecraft-launcher
+breaks = minecraft-launcher-git
+breaks = minecraft-launcher-bin
+breaks = minecraft-launcher-app

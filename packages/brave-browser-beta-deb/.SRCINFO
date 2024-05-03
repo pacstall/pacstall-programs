@@ -1,0 +1,10 @@
+pkgname = brave-browser-beta-deb
+gives = brave-browser-beta
+pkgver = 1.66.76
+pkgdesc = Testing version of world's most unique, privacy friendly web browser
+source = https://github.com/brave/brave-browser/releases/download/v1.66.76/brave-browser-beta_1.66.76_amd64.deb
+pacdeps = brave-keyring-deb
+breaks = brave-browser-beta-bin
+breaks = brave-browser-beta-git
+breaks = brave-browser-beta-app
+sha256sums = 2bf129e099a1d044ca9494b2dddda789d343479821a71d78e66855394d226223

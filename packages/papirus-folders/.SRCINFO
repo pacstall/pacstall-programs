@@ -1,0 +1,6 @@
+pkgname = papirus-folders
+pkgver = 1.13.1
+pkgdesc = Papirus folder theme
+source = https://github.com/PapirusDevelopmentTeam/papirus-folders/archive/refs/tags/v1.13.1.tar.gz
+depends = papirus-icon-theme
+sha256sums = df38d1a86d4aaad575d1f93f1fc541d538409d985fa418d5eac46a77c18cb028

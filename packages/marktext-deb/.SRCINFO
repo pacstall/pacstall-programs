@@ -1,0 +1,8 @@
+pkgname = marktext-deb
+gives = marktext
+pkgver = 0.17.1
+pkgdesc = A simple and elegant open-source markdown editor that focused on speed and usability
+arch = amd64
+source = https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-amd64.deb
+replaces = marktext
+sha256sums = 927fa87c11e6763171bd68dbf60f235bfea62989e799620dd392d19077574fd2

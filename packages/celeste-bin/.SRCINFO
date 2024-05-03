@@ -1,0 +1,16 @@
+pkgname = celeste-bin
+gives = celeste
+pkgver = 0.8.0
+pkgdesc = GUI cloud file synchronization client
+arch = arm64
+arch = amd64
+source_arm64 = https://github.com/rhino-linux/celeste/releases/download/v0.8.0/celeste_v0.8.0_arm64.zip
+source_amd64 = https://github.com/rhino-linux/celeste/releases/download/v0.8.0/celeste_v0.8.0_amd64.zip
+depends = libgtk-3-0
+depends = libayatana-appindicator3-1
+depends = libadwaita-1-0
+depends = rclone
+replaces = celeste
+replaces = celeste-git
+sha256sums_amd64 = c844eff69ae5c5c8908b17a87f36ded77b1807976411efbab4f8401385c17a31
+sha256sums_arm64 = f8a1d65fe5f21e5dfa90ad6450f8124bf631e5d78f3b409b4e6d99ed007ebba4

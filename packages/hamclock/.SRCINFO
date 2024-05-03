@@ -1,0 +1,16 @@
+pkgname = hamclock
+pkgver = 3.10
+pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
+source = https://github.com/kj7rrv/hamclock/archive/refs/tags/v3.10.tar.gz
+makedepends = gcc
+makedepends = make
+makedepends = pkg-config
+makedepends = libxau6
+makedepends = libx11-6
+makedepends = libx11-dev
+makedepends = libxcb1
+breaks = hamclock-big
+breaks = hamclock-bigger
+breaks = hamclock-huge
+replaces = hamclock
+sha256sums = 49ee666ac5c2fd9c647119bf36a5d627f7fc8b1db22b0ad7140e9e60a30554c5

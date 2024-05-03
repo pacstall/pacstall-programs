@@ -1,0 +1,8 @@
+pkgname = google-chrome-beta-deb
+gives = google-chrome-beta
+pkgver = 121.0.6167.85
+pkgdesc = The web browser built by Google - Beta channel
+arch = amd64
+source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-beta/google-chrome-beta_121.0.6167.85-1_amd64.deb
+replaces = google-chrome-beta
+sha256sums = ee3d598e20a6bcfa511db82cf8ad388e17b244440d3361e3201383aeef4ead0e

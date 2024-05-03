@@ -1,0 +1,10 @@
+pkgname = emby-server-deb
+gives = emby-server
+pkgver = 4.7.13.0
+pkgdesc = Emby brings together your personal videos, music, photos, and live television
+arch = amd64
+source = https://github.com/MediaBrowser/Emby.Releases/releases/download/4.7.13.0/emby-server-deb_4.7.13.0_amd64.deb
+breaks = emby-server
+breaks = emby-server-bin
+breaks = emby-server-git
+sha256sums = de95964faa185782f3dc6df5f8894f02dab631fbd9aec283fb72829617b13cea

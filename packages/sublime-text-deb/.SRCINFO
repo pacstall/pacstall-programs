@@ -1,0 +1,8 @@
+pkgname = sublime-text-deb
+gives = sublime-text
+pkgver = 4169
+pkgdesc = Sublime text light text editor for programmers
+arch = amd64
+source = https://download.sublimetext.com/sublime-text_build-4169_amd64.deb
+replaces = sublime-text
+sha256sums = e1bac169546317f246cc58adbdd20264c78486f12112b3c9ee303aa863c38f7f

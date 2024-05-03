@@ -1,0 +1,10 @@
+pkgname = tdrop-git
+gives = tdrop
+pkgver = 1.5.0
+pkgdesc = A Glorified WM-Independent Dropdown Creator
+url = https://github.com/noctuid/tdrop
+source = https://github.com/noctuid/tdrop.git
+depends = xdotool
+depends = bash
+depends = gawk
+depends = procps

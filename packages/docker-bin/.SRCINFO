@@ -1,0 +1,17 @@
+pkgname = docker-bin
+gives = docker
+pkgver = 24.0.7
+pkgdesc = Docker Engine Static Binaries
+arch = arm64
+arch = amd64
+source = https://download.docker.com/linux/static/stable/x86_64/docker-24.0.7.tgz
+depends = procps
+depends = git
+depends = iptables
+depends = fuse-overlayfs
+replaces = docker-desktop
+replaces = docker-ce
+replaces = docker-ce-cli
+replaces = containerd.io
+sha256sums_amd64 = 984d59a77fa6acab97ea725a966facd33725e0e09c2fee975397fe1c6379bd3d
+sha256sums_arm64 = fe6cf4b509307665af542a89454c2ecfbbd62670fc5a5d17bac7150a6f6a6776

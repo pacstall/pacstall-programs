@@ -1,0 +1,7 @@
+pkgname = chezmoi-deb
+gives = chezmoi
+pkgver = 2.47.2
+pkgdesc = Manage your dotfiles across multiple diverse machines, securely
+arch = amd64
+source = https://github.com/twpayne/chezmoi/releases/download/v2.47.2/chezmoi_2.47.2_linux_amd64.deb
+sha256sums = 49a19268d29610bec619b29922468704fe4e81c0a1624d311dd84da8196cc542

@@ -1,0 +1,8 @@
+pkgname = google-chrome-deb
+gives = google-chrome-stable
+pkgver = 120.0.6099.199
+pkgdesc = The popular and trusted web browser by Google
+arch = amd64
+source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_120.0.6099.199-1_amd64.deb
+replaces = google-chrome-stable
+sha256sums = e0158b9f4fa060d586e03b2895b63a5a54ef5d697bb59219ae7a9796b1941a34

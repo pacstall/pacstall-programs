@@ -1,0 +1,13 @@
+pkgname = nodejs-lts-deb
+gives = nodejs
+pkgver = 18.15.0
+pkgdesc = Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine
+arch = amd64
+source = https://deb.nodesource.com/node_18.x/pool/main/n/nodejs/nodejs_18.15.0-deb-1nodesource1_amd64.deb
+breaks = nodejs
+breaks = nodejs-git
+breaks = nodejs-bin
+breaks = nodejs-app
+replaces = nodejs
+replaces = node
+sha256sums = c253e9021faf026115d45ae8ea56f5c587483baebeab1394578c3cd1d44d9c64

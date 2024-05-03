@@ -1,0 +1,10 @@
+pkgname = github-cli-bin
+gives = github-cli
+pkgver = 2.42.1
+pkgdesc = GitHub's official command line tool - Binary version
+arch = amd64
+source = https://github.com/cli/cli/releases/download/v2.42.1/github-cli_2.42.1_linux_amd64.tar.gz
+breaks = github-cli-git
+breaks = github-cli-deb
+replaces = github-cli
+sha256sums = c82c865545549131f284bf4df73c03c63971a87286fce5ab5d11c9dc0cee2cbb

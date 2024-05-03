@@ -1,0 +1,8 @@
+pkgname = sublime-merge-deb
+gives = sublime-merge
+pkgver = 2092
+pkgdesc = Sublime text like Git GUI Client
+arch = amd64
+source = https://download.sublimetext.com/sublime-merge_build-2092_amd64.deb
+replaces = sublime-merge
+sha256sums = 8711a06674c011a6793f6f0f7c8f9fe2062f75227cb926e1c9c9ae6de3ca8d5e

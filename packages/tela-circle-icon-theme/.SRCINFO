@@ -1,0 +1,10 @@
+pkgname = tela-circle-icon-theme
+gives = tela-circle-icon-theme
+pkgver = 2023-06-25
+pkgdesc = A flat, colorful icon theme
+arch = any
+source = https://github.com/vinceliuice/Tela-circle-icon-theme/archive/refs/tags/2023-06-25.zip
+depends = gtk-update-icon-cache
+breaks = tela-circle-icon-theme
+breaks = tela-circle-icon-theme-git
+sha256sums = 9caaf41608a565a82f1057391d3ac7a4a1e276d9df6fc56367b202ffb8484b48
