@@ -8,12 +8,6 @@ if [[ ${CARCH} == amd64 ]]; then
   gnuarch="x86_"
 else
   gnuarch="aarch"
-  fancy_message warn "Floorp is not running properly on ${BBlue}arm64${NC}. It should only be installed for development."
-  if [[ ! -f "${METADIR}/${pkgname}-override" && ${PWD} == "/tmp/pacstall" ]]; then
-    if ask "[${BYellow}*${NC}] ${BOLD}WARNING${NC}: Cancel installation?" Y; then
-      exit
-    fi
-  fi
 fi
 source=("https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-${gnuarch}64.tar.bz2")
 homepage='https://floorp.app/'
@@ -24,6 +18,12 @@ arch=('amd64' 'arm64')
 package() {
   cd "${_archive}"
   if [[ ${CARCH} == "arm64" ]]; then
+    fancy_message warn "Floorp is not running properly on ${BBlue}arm64${NC}. It should only be installed for development."
+    if [[ ! -f "${METADIR}/${pkgname}-override" ]]; then
+      if ask "[${BYellow}*${NC}] ${BOLD}WARNING${NC}: Cancel installation?" Y; then
+        exit
+      fi
+    fi
     mkdir -p "${pkgdir}/${METADIR}"
     touch "${pkgdir}/${METADIR}/${pkgname}-override"
   fi
