@@ -20,8 +20,6 @@ prepare() {
   # will be applied when ubuntu starts supporting qm-dsp 1.8.0
   # unsetting gtk2 rc (FS#54389)
   sed -e '8iexport GTK2_RC_FILES=/dev/null' -i "gtk2_ardour/ardour.sh.in"
-
-  git fetch --unshallow && git pull
 }
 
 build() {
