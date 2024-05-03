@@ -7,16 +7,12 @@ depends=("python3-cffi" "xserver-xorg" "python3-xcffib" "python3-cairocffi" "lib
 pkgdesc="A full-featured, hackable tiling window manager written and configured in Python"
 maintainer=("Ruturajn <nanotiruturaj@gmail.com>")
 
-modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
-# shellcheck disable=SC2076
-if [[ " ${modern[*]} " =~ " ${DISTRO#*:} " ]]; then
-  pyhack=("--break-system-packages")
-else
-  pyhack=()
-fi
-
 package() {
   cd "${_archive}"
+  modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
+  for mod in "${modern[@]}"; do
+    [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")
+  done
   pip3 install --upgrade --no-cache --force-reinstall cairocffi cffi xcffib "${pyhack[@]}"
   pip3 install dbus-next setuptools-scm setuptools "${pyhack[@]}"
   mkdir -p "${pkgdir}"/usr/share/xsessions

@@ -7,16 +7,12 @@ pacdeps=("qtile-git")
 maintainer=("Ruturajn <nanotiruturaj@gmail.com>")
 makedepends=("python3-venv" "python3-pip")
 
-modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
-# shellcheck disable=SC2076
-if [[ " ${modern[*]} " =~ " ${DISTRO#*:} " ]]; then
-  pyhack=("--break-system-packages")
-else
-  pyhack=()
-fi
-
 build() {
   cd "${_archive}"
+  modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
+  for mod in "${modern[@]}"; do
+    [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")
+  done
   pip3 install build --user "${pyhack[@]}"
   python3 -m build
   mv dist/*.whl .
