@@ -13,13 +13,12 @@ sha256sums_arm64=(
   "a13e7a53b5c8a512fbcb72957f24e5515618a5533f17d72914da5445b736dac1"
   "20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293"
 )
-if [[ ${CARCH} == amd64 ]]; then
-  archext="${pkgver}"
-else
-  archext="${pkgver}-aarch64"
-fi
-source=(
-  "https://download-cdn.jetbrains.com/idea/ideaIC-${archext}.tar.gz"
+source_amd64=(
+  "https://download-cdn.jetbrains.com/idea/ideaIC-${pkgver}.tar.gz"
+  "intellij-idea-community.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/intellij-idea-community.desktop"
+)
+source_arm64=(
+  "https://download-cdn.jetbrains.com/idea/ideaIC-${pkgver}-aarch64.tar.gz"
   "intellij-idea-community.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/intellij-idea-community.desktop"
 )
 repology=("project: intellij-idea-community")
