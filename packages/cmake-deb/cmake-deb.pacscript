@@ -3,8 +3,7 @@ gives="cmake"
 pkgver="3.25.1"
 pkgdesc="CMake data files (modules, templates and documentation)"
 pacdeps=("cmake-data-deb")
-codename="$(lsb_release -cs)"
-case "${codename}" in
+case "${DISTRO#*:}" in
   "bullseye")
     source=("http://ftp.debian.org/debian/pool/main/c/cmake/cmake_${pkgver}-1~bpo11+1_amd64.deb")
     sha256sums=("5561f20944ef4d9d3ea496bc92dff5b1d5adea3cfee1fa302a7298bedeb03f9e")

@@ -2,8 +2,7 @@ pkgname="fsearch-deb"
 gives="fsearch"
 repology=("project: fsearch")
 pkgver="0.2.3"
-codename="$(lsb_release -cs)"
-case "${codename}" in
+case "${DISTRO#*:}" in
   bullseye)
     source=("https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_11/amd64/fsearch_${pkgver}-1+3.1_amd64.deb")
     sha256sums=("1ecaacb7e1f2b3eab3c15c7307bab0cbea9c0a8aa32ffc195e0d354a86d3a0f6")

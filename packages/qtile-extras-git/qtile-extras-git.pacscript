@@ -6,18 +6,14 @@ pkgdesc="A list of mods developed by elParaguayo for Qtile"
 pacdeps=("qtile-git")
 maintainer=("Ruturajn <nanotiruturaj@gmail.com>")
 makedepends=("python3-venv" "python3-pip")
-
-release="$(lsb_release -cs)"
-modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
-# shellcheck disable=SC2076
-if [[ " ${modern[*]} " =~ " ${release} " ]]; then
-  pyhack=("--break-system-packages")
-else
-  pyhack=()
-fi
+external_connection="true"
 
 build() {
   cd "${_archive}"
+  modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
+  for mod in "${modern[@]}"; do
+    [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")
+  done
   pip3 install build --user "${pyhack[@]}"
   python3 -m build
   mv dist/*.whl .

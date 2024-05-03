@@ -2,7 +2,7 @@ pkgname="libcamera-git"
 gives="libcamera"
 pkgver="0.1.0"
 source=("https://git.libcamera.org/libcamera/libcamera.git")
-if [[ "$(lsb_release -cs)" == "focal" ]]; then
+if [[ "${DISTRO#*:}" == "focal" ]]; then
   pacdeps=("meson-focal-deb")
 else
   MESON="meson"
