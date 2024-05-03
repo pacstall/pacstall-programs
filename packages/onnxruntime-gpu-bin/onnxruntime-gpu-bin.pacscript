@@ -6,7 +6,7 @@ source=("https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/o
 pkgdesc="Cross-platform inference and training machine-learning accelerator with gpu support"
 sha256sums=("613c53745ea4960ed368f6b3ab673558bb8561c84a8fa781b4ea7fb4a4340be4")
 maintainer=("Zahrun <Zahrun@github.com>")
-replaces=("${_gives}" "${_gives}-bin" "${_gives}-1-7-0-bin" "${gives}" "${gives}-bin")
+replaces=("${gives}-1-7-0-bin" "${gives}" "${gives}-bin")
 
 package() {
   cd "${_archive}"
