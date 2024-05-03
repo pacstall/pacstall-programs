@@ -6,6 +6,7 @@ pkgdesc="A list of mods developed by elParaguayo for Qtile"
 pacdeps=("qtile-git")
 maintainer=("Ruturajn <nanotiruturaj@gmail.com>")
 makedepends=("python3-venv" "python3-pip")
+external_connection="true"
 
 build() {
   cd "${_archive}"

@@ -9,6 +9,7 @@ depends=("gettext" "python3-pip" "dh-python" "python3-all" "python3-pyqt5" "pyth
 pkgdesc="Securely and easily download, verify, install, and launch Tor Browser in Linux"
 optdepends=("apparmor: support for apparmor profiles")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
+external_connection="true"
 
 prepare() {
   cd "${_archive}"

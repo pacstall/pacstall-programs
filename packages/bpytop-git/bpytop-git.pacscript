@@ -5,6 +5,7 @@ pkgver="1.0.68"
 makedepends=("make" "python3" "python3-pip" "python3-distutils")
 depends=("python3" "python3-pip" "python3-distutils")
 pkgdesc="Linux/OSX/FreeBSD resource monitor."
+external_connection="true"
 
 prepare() {
   cd "${_archive}"

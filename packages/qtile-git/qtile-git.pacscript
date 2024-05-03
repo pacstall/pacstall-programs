@@ -6,6 +6,7 @@ license="MIT"
 depends=("python3-cffi" "xserver-xorg" "python3-xcffib" "python3-cairocffi" "libpangocairo-1.0-0" "python3-pip" "python3-dbus" "libpulse-dev" "pavucontrol" "python3-testresources")
 pkgdesc="A full-featured, hackable tiling window manager written and configured in Python"
 maintainer=("Ruturajn <nanotiruturaj@gmail.com>")
+external_connection="true"
 
 package() {
   cd "${_archive}"
