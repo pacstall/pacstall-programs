@@ -3,7 +3,6 @@ gives="fsearch"
 repology=("project: fsearch")
 pkgver="0.2.3"
 codename="$(lsb_release -cs)"
-echo "Installing for ${codename}"
 case "${codename}" in
   bullseye)
     source=("https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_11/amd64/fsearch_${pkgver}-1+3.1_amd64.deb")
