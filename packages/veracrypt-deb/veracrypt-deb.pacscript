@@ -3,6 +3,7 @@ repology=("project: veracrypt")
 gives="veracrypt"
 breaks=("${gives}" "${gives}-console" "${gives}-git")
 pkgver="1.26.7"
+# shellcheck disable=SC2153
 case "${DISTRO#*:}" in
   "jammy")
     distro="Ubuntu-22.04"
