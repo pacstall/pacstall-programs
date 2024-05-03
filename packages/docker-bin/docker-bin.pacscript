@@ -9,12 +9,8 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('arm64' 'amd64')
 sha256sums_arm64=("fe6cf4b509307665af542a89454c2ecfbbd62670fc5a5d17bac7150a6f6a6776")
 sha256sums_amd64=("984d59a77fa6acab97ea725a966facd33725e0e09c2fee975397fe1c6379bd3d")
-if [[ ${CARCH} == arm64 ]]; then
-  gnuarch="aarch64"
-else
-  gnuarch="x86_64"
-fi
-source=("https://download.docker.com/linux/static/stable/${gnuarch}/${gives}-${pkgver}.tgz")
+source_amd64=("https://download.docker.com/linux/static/stable/x86_64/${gives}-${pkgver}.tgz")
+source_arm64=("https://download.docker.com/linux/static/stable/aarch64/${gives}-${pkgver}.tgz")
 
 build() {
   cd "${_archive}"

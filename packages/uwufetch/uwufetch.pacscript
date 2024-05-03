@@ -43,9 +43,4 @@ package() {
   make install DESTDIR="${pkgdir}"
 }
 
-post_remove() {
-  # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-  sudo rm -rf "/usr/share/doc/${pkgname}"
-}
 # vim:set ft=sh ts=2 sw=2 et:

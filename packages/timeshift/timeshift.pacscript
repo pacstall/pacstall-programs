@@ -20,9 +20,8 @@ build() {
 package() {
   cd "${_archive}"
   DESTDIR="${pkgdir}" ninja -C build install
-}
-
-# FIX: workaround broken pkexec usage from upstream
-post_install() {
-  sudo sed -i 's/pkexec \${app/pkexec env DISPLAY=\$DISPLAY XAUTHORITY=\$XAUTHORITY \${app/g' /usr/local/bin/timeshift-launcher
+  # FIX: workaround broken pkexec usage from upstream
+  #
+  # shellcheck disable=2016
+  sed -i 's/pkexec \${app/pkexec env DISPLAY=\$DISPLAY XAUTHORITY=\$XAUTHORITY \${app/g' "${pkgdir}/usr/local/bin/timeshift-launcher"
 }

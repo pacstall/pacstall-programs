@@ -4,7 +4,6 @@ source=("https://www.syntevo.com/downloads/smartgit/smartgit-linux-${pkgver//./_
 depends=("git" "libgtk-3-0" "libcurl4")
 pkgdesc="Graphical Git client with support for GitHub, Bitbucket and GitLab"
 # the source for this pacscript uses dynamic hashing, so we have to ignore it
-# hash="138cd50d6afd604de39ed907a20d3e63ac551c9cf643c0262d60f1b84abeec81"
 maintainer=("echometerain <echometer@disroot.org>")
 repology=("project: smartgit")
 

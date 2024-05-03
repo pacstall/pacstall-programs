@@ -45,7 +45,3 @@ Terminal=false
 Categories=Development;
 END
 }
-
-post_remove() {
-  sudo rm -rf "/opt/${gives}"
-}

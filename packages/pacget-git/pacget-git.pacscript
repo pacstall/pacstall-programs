@@ -17,7 +17,4 @@ package() {
   install -Dm755 "pacget" "${pkgdir}/usr/bin/pacget"
 }
 
-post_remove() {
-  sudo rm -rf "/usr/share/licenses/${gives}"
-}
 # vim:set ft=sh ts=4 sw=4 noet:

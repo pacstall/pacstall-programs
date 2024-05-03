@@ -31,9 +31,4 @@ package() {
   install -Dm755 "tmpmail" -t "${pkgdir}/usr/bin"
 }
 
-post_remove() {
-  # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${gives}"
-  sudo rm -rf "/usr/share/doc/${gives}"
-}
 # vim:set ft=sh ts=2 sw=2 et:

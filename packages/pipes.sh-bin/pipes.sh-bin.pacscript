@@ -18,9 +18,4 @@ package() {
   make DESTDIR="${pkgdir}" PREFIX=/usr install
 }
 
-post_remove() {
-  # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${gives}"
-  sudo rm -rf "/usr/share/doc/${gives}"
-}
 # vim:set ft=sh ts=2 sw=2 et:

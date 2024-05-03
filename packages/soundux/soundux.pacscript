@@ -27,8 +27,3 @@ package() {
   # install license
   install -Dm 644 -t "${pkgdir}/usr/share/licenses/${pkgname}" "../LICENSE"
 }
-
-post_remove() {
-  sudo rm -rf "/usr/share/doc/${pkgname}"
-  sudo rm -rf "/usr/share/licenses/${pkgname}"
-}

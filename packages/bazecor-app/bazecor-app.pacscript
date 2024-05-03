@@ -30,9 +30,7 @@ X-AppImage-Version=${pkgver}
 Categories=Utility;" | tee "${pkgdir}/usr/share/applications/bazecor.desktop" > /dev/null
   install -Dm644 "${srcdir}/bazecor.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/bazecor.png"
   install -Dm755 "Bazecor-${pkgver}-x64.AppImage" "${pkgdir}/usr/bin/${gives}"
-}
 
-post_install() {
   # Run `lsusb` to get the IDs for the currently attached Dygma keyboard.
   idstring="$(lsusb | grep Dygma | grep -o 'ID.*:[[:alnum:]]*' | sed 's/ID //')"
 
@@ -44,13 +42,11 @@ post_install() {
   line="SUBSYSTEMS==\"usb\", ATTRS{idVendor}==\"${YYYY}\", ATTRS{idProduct}==\"${XXXX}\", GROUP=\"users\", MODE=\"0666\""
 
   # Generate the rule file.
-  mkdir -p /etc/udev/rules.d/
-  echo "${line}" | sudo tee /etc/udev/rules.d/50-dygma.rules > /dev/null
-
-  # Reload the `udev` rules.
-  udevadm control --reload-rules || :
+  mkdir -p "${pkgdir}/etc/udev/rules.d/"
+  echo "${line}" | tee "${pkgdir}/etc/udev/rules.d/50-dygma.rules" > /dev/null
 }
 
-post_remove() {
-  sudo rm -f /etc/udev/rules.d/50-dygma.rules
+post_install() {
+  # Reload the `udev` rules.
+  udevadm control --reload-rules || :
 }

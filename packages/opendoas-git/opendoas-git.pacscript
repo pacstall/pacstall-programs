@@ -37,10 +37,4 @@ package() {
   echo "permit persist ${LOGNAME} as root" | tee "${pkgdir}/etc/doas.conf" > /dev/null
 }
 
-post_remove() {
-  # Remove empty directories
-  sudo rm -rf "/usr/share/licenses/${gives}"
-  sudo rm -rf "/usr/share/doc/${gives}"
-}
-
 # vim:set ft=sh ts=2 sw=2 et:

@@ -17,12 +17,8 @@ repology=("project: nushell")
 arch=('arm64' 'amd64')
 sha256sums_arm64=("1585e9fe41189b49f479f39f871e6457aedc8732775a2db21ea13c7b6e580181")
 sha256sums_amd64=("f6e726ebbb570cec27ad2e1f2d4bd7c78faf338920c7136566d70607aa50a167")
-if [[ ${CARCH} == arm64 ]]; then
-  gnuarch="aarch64"
-else
-  gnuarch="x86_64"
-fi
-source=("https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-${gnuarch}-unknown-linux-gnu.tar.gz")
+source_amd64=("https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-x86_64-unknown-linux-gnu.tar.gz")
+source_arm64=("https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-aarch64-unknown-linux-gnu.tar.gz")
 
 package() {
   cd "${_archive}"

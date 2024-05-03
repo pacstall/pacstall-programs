@@ -4,12 +4,8 @@ pkgver="0.2.31"
 arch=("amd64" "arm64")
 sha256sums_amd64=("2af82bd13c9fed05fd11682ddc646c436353c87519d91482350d7a0edbb59841")
 sha256sums_arm64=("b7d5b38c6e6e0d6907520db81caf66cefd086a34d959b9d1fcf7427510f63c60")
-if [[ ${CARCH} == amd64 ]]; then
-    arch_suffix="x86_64"
-else
-    arch_suffix="arm64"
-fi
-source=("https://github.com/superfly/flyctl/releases/download/v${pkgver}/flyctl_${pkgver}_Linux_${arch_suffix}.tar.gz")
+source_amd64=("https://github.com/superfly/flyctl/releases/download/v${pkgver}/flyctl_${pkgver}_Linux_x86_64.tar.gz")
+source_arm64=("https://github.com/superfly/flyctl/releases/download/v${pkgver}/flyctl_${pkgver}_Linux_arm64.tar.gz")
 pkgdesc="Command line tool for fly.io services"
 homepage='https://fly.io'
 maintainer=("Andrew Barchuk <andrew@raindev.io>")
