@@ -41,7 +41,6 @@ repos:
       - id: update-srcinfo
         name: update .SRCINFO data
         language: system
-        exclude: '^.*\.(SRCINFO)$'
         entry: |
               bash -c 'function srcinfo() {
                   local CARCH='CARCH_REPLACE' DISTRO='ubuntu:jammy' src sum vars a_sum var ar car aars bar ars rar \
