@@ -1,0 +1,11 @@
+pkgname = eza-git
+gives = eza
+pkgver = 0.18.9
+pkgdesc = A modern, maintained replacement for ls
+source = https://github.com/eza-community/eza.git
+makedepends = cargo
+makedepends = libgit2-dev
+makedepends = cmake
+makedepends = rustc
+makedepends = pandoc
+incompatible = debian:bookworm

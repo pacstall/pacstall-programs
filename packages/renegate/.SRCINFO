@@ -1,0 +1,5 @@
+pkgname = renegate
+pkgver = 1.2
+pkgdesc = Renegate is simply just a full-band Gate plug-in. It has an always smooth, natural sound, and is quick to operate.
+source = https://www.auburnsounds.com/downloads/Renegate-FREE-1.2.zip
+sha256sums = d7119fddfa44751a5c346e345de7c494a0ea11fcbae2aba65f1b66a8f414ecef

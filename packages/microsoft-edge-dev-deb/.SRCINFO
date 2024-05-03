@@ -1,0 +1,8 @@
+pkgname = microsoft-edge-dev-deb
+gives = microsoft-edge-dev
+pkgver = 118.0.2060.1
+pkgdesc = The web browser from Microsoft - Developer channel
+arch = amd64
+source = https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_118.0.2060.1-1_amd64.deb
+replaces = microsoft-edge-dev
+sha256sums = 38a8c29942cf8d8ba8ba6a80aa2bf2085cc7491d483aeb442164ea5ed0e03213

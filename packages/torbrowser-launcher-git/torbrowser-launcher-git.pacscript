@@ -9,18 +9,14 @@ depends=("gettext" "python3-pip" "dh-python" "python3-all" "python3-pyqt5" "pyth
 pkgdesc="Securely and easily download, verify, install, and launch Tor Browser in Linux"
 optdepends=("apparmor: support for apparmor profiles")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-
-release="$(lsb_release -cs)"
-modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
-# shellcheck disable=SC2076
-if [[ " ${modern[*]} " =~ " ${release} " ]]; then
-  pyhack=("--break-system-packages")
-else
-  pyhack=()
-fi
+external_connection="true"
 
 prepare() {
   cd "${_archive}"
+  modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
+  for mod in "${modern[@]}"; do
+    [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")
+  done
   pip3 install distro "${pyhack[@]}"
 }
 

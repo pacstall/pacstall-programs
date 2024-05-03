@@ -1,0 +1,10 @@
+pkgname = pipes.sh-bin
+gives = pipes.sh
+pkgver = 1.3.0
+pkgdesc = Animated pipes terminal screensaver
+source = https://github.com/pipeseroni/pipes.sh/archive/v1.3.0.tar.gz
+breaks = pipes.sh
+breaks = pipes.sh-git
+breaks = pipes.sh-deb
+breaks = pipes.sh-app
+sha256sums = 532976dd8dc2d98330c45a8bcb6d7dc19e0b0e30bba8872dcce352361655a426

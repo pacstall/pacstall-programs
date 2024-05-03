@@ -1,0 +1,7 @@
+pkgname = gitblade-deb
+gives = gitblade
+pkgver = 1.0.6
+pkgdesc = Simple and elegant Git GUI client.
+arch = amd64
+source = https://gitblade.com/ppa/gitblade_1.0.6_amd64.deb
+sha256sums = 06099839154579c28dd1a28dd631d23eff9b6a3a59c3d9b14ff04878956b4e2c

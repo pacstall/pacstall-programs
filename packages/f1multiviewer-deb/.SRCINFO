@@ -1,0 +1,8 @@
+pkgname = f1multiviewer-deb
+gives = multiviewer-for-f1
+pkgver = 1.29.0
+pkgdesc = Unofficial desktop client for F1 TV
+url = https://multiviewer.app/
+arch = amd64
+source = https://releases.multiviewer.app/download/137424055/multiviewer-for-f1_1.29.0_amd64.deb
+sha256sums = 84aca436bda7792954af7f32b743c82af78160318622c181e8ae949603e7868e

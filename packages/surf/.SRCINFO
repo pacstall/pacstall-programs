@@ -1,0 +1,14 @@
+pkgname = surf
+pkgver = 2.1
+pkgdesc = surf is a simple web browser based on WebKit2/GTK+.
+source = https://dl.suckless.org/surf/surf-2.1.tar.gz
+depends = libc6
+depends = libgcr-3-dev
+depends = libglib2.0-dev
+depends = libgtk-3-dev
+depends = libwebkit2gtk-4.0-dev
+depends = libx11-6
+makedepends = make
+breaks = surf-git
+replaces = surf
+sha256sums = 72e582920ba25a646203e93c2d2331d87f03037a28894d6c7e99af00ee043257

@@ -1,0 +1,8 @@
+pkgname = foliate-deb
+gives = foliate
+pkgver = 3.0.1
+pkgdesc = A simple and modern GTK e-book reader
+url = https://johnfactotum.github.io/foliate/
+source = https://github.com/johnfactotum/foliate/releases/download/3.0.1/foliate_3.0.1_all.deb
+replaces = foliate
+sha256sums = 933bb5235586cb59a2aa7d5df056cae2b504c5e928621ed6d6e084870279c195

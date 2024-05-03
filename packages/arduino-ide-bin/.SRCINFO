@@ -1,0 +1,14 @@
+pkgname = arduino-ide-bin
+gives = arduino-ide
+pkgver = 2.3.2
+pkgdesc = An open-source IDE that makes it easy to write code and upload it to Arduino boards
+source = https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.2_Linux_64bit.zip
+source = arduino.svg::https://www.arduino.cc/wiki/370832ed4114dd35d498f2f449b4781e/arduino.svg
+source = arduino-ide.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/arduino-ide-bin/arduino-ide.desktop
+breaks = arduino-ide
+breaks = arduino-ide-deb
+breaks = arduino-ide-app
+breaks = arduino-ide-git
+sha256sums = 1a23b911043a247116ace846f03a0265c719dcd49cf9a8af09334db4d3916e88
+sha256sums = SKIP
+sha256sums = SKIP

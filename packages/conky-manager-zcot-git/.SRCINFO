@@ -1,0 +1,14 @@
+pkgname = conky-manager-zcot-git
+pkgver = 2.7
+pkgdesc = Simple tool for managing Conky configs
+source = https://github.com/zcot/conky-manager2.git
+depends = conky
+depends = rsync
+makedepends = valac
+makedepends = libgee-0.8-dev
+makedepends = libgtk-3-dev
+makedepends = libjson-glib-dev
+makedepends = gettext
+makedepends = libgettextpo-dev
+makedepends = p7zip-full
+makedepends = imagemagick

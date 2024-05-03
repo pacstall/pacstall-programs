@@ -1,0 +1,8 @@
+pkgname = linked-deb
+gives = linked
+pkgver = 1.5.2
+pkgdesc = linked - daily journaling without distraction
+arch = amd64
+source = https://github.com/lostdesign/linked/releases/download/v1.5.2/linked_1.5.2_amd64.deb
+replaces = linked
+sha256sums = 238010ac4ddc537417f4ec1f55f33323de12f4ad74f451a9c31650c0b2e4ae84

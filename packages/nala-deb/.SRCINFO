@@ -1,0 +1,11 @@
+pkgname = nala-deb
+gives = nala
+pkgver = 0.15.1
+pkgdesc = Commandline frontend for the apt package manager
+arch = any
+source = https://deb.volian.org/volian/pool/main/n/nala/nala_0.15.1_all.deb
+breaks = nala
+breaks = nala-git
+breaks = nala-bin
+breaks = nala-app
+sha256sums = 39cfaa52418978aaf8e069528b3c0bd3cb80b1324f9ac2374365e1f645ed18f1

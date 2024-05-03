@@ -1,0 +1,12 @@
+pkgname = spotify-client-deb
+gives = spotify-client
+pkgver = 1.2.31.1205.g4d59ad7c
+pkgdesc = Spotify streaming music client
+arch = amd64
+source = http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.2.31.1205.g4d59ad7c_amd64.deb
+breaks = spotify-client-git
+breaks = spotify-client-app
+breaks = spotify-client-bin
+breaks = spotify
+replaces = spotify-client
+sha256sums = 71b724bd9ec37ccc37b340606bc37f46d47320b5fa429a4c9dce5bd24e07adb8

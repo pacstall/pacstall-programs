@@ -1,0 +1,6 @@
+pkgname = bitwig-studio-deb
+gives = bitwig-studio
+pkgver = 5.1.8
+pkgdesc = Digital audio workstation for music production, remixing and live performance
+source = https://downloads.bitwig.com/stable/5.1.8/bitwig-studio-5.1.8.deb
+sha256sums = 2b134b69efee4d82f59bf5feffbc2bee184a7f0df536907d330f51cdfad3baeb

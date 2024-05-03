@@ -1,0 +1,5 @@
+pkgname = lens
+pkgver = 1.0.2
+pkgdesc = LENS is a spectral dynamics processor with unbelievable punch and clarity.
+source = https://www.auburnsounds.com/downloads/Lens-FREE-1.0.2.zip
+sha256sums = bd7c1b6ba8f7ad8ac2ee674f881e06f9650cf863ad7ee79d22e30b4d853dad19

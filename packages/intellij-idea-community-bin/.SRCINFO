@@ -1,0 +1,12 @@
+pkgname = intellij-idea-community-bin
+gives = intellij-idea-community
+pkgver = 2024.1
+pkgdesc = IntelliJ IDEA is an IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages
+arch = amd64
+arch = arm64
+source = https://download-cdn.jetbrains.com/idea/ideaIC-2024.1-aarch64.tar.gz
+source = intellij-idea-community.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/intellij-idea-community-bin/intellij-idea-community.desktop
+sha256sums_amd64 = 01d1b224c5e88592f954b17796a76fa8391cdcafef27264e703c7ffe47bb4065
+sha256sums_amd64 = 20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293
+sha256sums_arm64 = a13e7a53b5c8a512fbcb72957f24e5515618a5533f17d72914da5445b736dac1
+sha256sums_arm64 = 20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293

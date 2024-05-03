@@ -1,0 +1,12 @@
+pkgname = shfmt-bin
+gives = shfmt
+pkgver = 3.7.0
+pkgdesc = Format shell programs
+arch = amd64
+source = https://github.com/mvdan/sh/releases/download/v3.7.0/shfmt_v3.7.0_linux_amd64
+breaks = shfmt
+breaks = shfmt-git
+breaks = shfmt-bin
+breaks = shfmt-deb
+breaks = shfmt-app
+sha256sums = 0264c424278b18e22453fe523ec01a19805ce3b8ebf18eaf3aadc1edc23f42e3

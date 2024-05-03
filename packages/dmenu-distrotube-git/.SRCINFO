@@ -1,0 +1,11 @@
+pkgname = dmenu-distrotube-git
+gives = dmenu
+pkgver = 1.4
+pkgdesc = Distrotube's dmenu build
+source = https://gitlab.com/dwt1/dmenu-distrotube.git
+depends = fontconfig
+makedepends = libxinerama-dev
+makedepends = libxft-dev
+breaks = dmenu
+breaks = dmenu_run
+breaks = dmenu_path

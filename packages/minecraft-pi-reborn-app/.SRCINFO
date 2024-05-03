@@ -1,0 +1,17 @@
+pkgname = minecraft-pi-reborn-app
+gives = minecraft-pi-reborn
+pkgver = 2.5.3
+pkgdesc = Minecraft Pi edition reborn with new features and for x86 pc.
+arch = amd64
+source = https://gitea.thebrokenrail.com/minecraft-pi-reborn/minecraft-pi-reborn/releases/download/2.5.3/minecraft-pi-reborn-client-2.5.3-amd64.AppImage
+source = https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/minecraft-pi-reborn-app/com.thebrokenrail.MCPIRebornClient.desktop
+source = https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/minecraft-pi-reborn-app/com.thebrokenrail.MCPIRebornClient.appdata.xml
+source = https://gitea.thebrokenrail.com/minecraft-pi-reborn/minecraft-pi-reborn/raw/tag/2.5.3/images/icon.png
+breaks = minecraft-pi-reborn-git
+breaks = minecraft-pi-reborn-deb
+breaks = minecraft-pi-reborn-bin
+breaks = minecraft-pi-reborn-client
+sha256sums = f00e77a85fbab907af274416fb1c4b78216c1c49a992eeeb54378269a5171156
+sha256sums = SKIP
+sha256sums = SKIP
+sha256sums = SKIP

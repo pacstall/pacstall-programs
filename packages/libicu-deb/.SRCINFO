@@ -1,0 +1,7 @@
+pkgname = libicu-deb
+gives = libicu72
+pkgver = 72.1
+pkgdesc = International Components for Unicode
+arch = amd64
+source = http://archive.ubuntu.com/ubuntu/pool/main/i/icu/libicu72_72.1-3ubuntu2_amd64.deb
+sha256sums = ab965e1ac9665ea93978edf271183bb3332d9ae7db194d148f9b50665c10fa2c

@@ -1,0 +1,11 @@
+pkgname = onnxruntime-bin
+gives = onnxruntime
+pkgver = 1.17.1
+pkgdesc = Cross-platform inference and training machine-learning accelerator
+source = https://github.com/microsoft/onnxruntime/releases/download/v1.17.1/onnxruntime-linux-x64-1.17.1.tgz
+replaces = onnxruntime
+replaces = onnxruntime-bin
+replaces = onnxruntime-1-7-0-bin
+replaces = onnxruntime-gpu
+replaces = onnxruntime-gpu-bin
+sha256sums = 89b153af88746665909c758a06797175ae366280cbf25502c41eb5955f9a555e

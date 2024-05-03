@@ -1,0 +1,11 @@
+pkgname = vscodium-deb
+gives = codium
+pkgver = 1.88.0.24096
+pkgdesc = Binary releases of VS Code without MS branding/telemetry/licensing
+arch = arm64
+arch = amd64
+source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.88.0.24096/codium_1.88.0.24096_arm64.deb
+source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.88.0.24096/codium_1.88.0.24096_amd64.deb
+breaks = codium
+sha256sums_amd64 = 8748954e044e070c42daa6651d60512b37f21fb7e7e8fcc8aa6546edbfd50659
+sha256sums_arm64 = 533972436f87cbb3d85b174657db8a753e2f14fa3830f8933a7dd46b02f92298

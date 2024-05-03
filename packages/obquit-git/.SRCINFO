@@ -1,0 +1,10 @@
+pkgname = obquit-git
+gives = obquit
+pkgver = 0.0.1
+pkgdesc = Utility script for logging out of a session, inspired by Oblogout
+source = https://github.com/dglava/obquit.git
+depends = python3-distutils
+depends = python3-cairo
+depends = python-gi-dev
+breaks = obquit
+breaks = obquit-bin

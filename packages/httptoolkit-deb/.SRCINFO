@@ -1,0 +1,10 @@
+pkgname = httptoolkit-deb
+gives = httptoolkit
+pkgver = 1.5.1
+pkgdesc = HTTP(S) debugging, development & testing tool.
+source = https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.5.1/HttpToolkit-1.5.1.deb
+breaks = httptoolkit
+breaks = httptoolkit-git
+breaks = httptoolkit-bin
+breaks = httptoolkit-app
+sha256sums = 6033a43dcd67b3bc12a7b77b3d15fe05696cd9d7cce67271e0103eb93b2bc1e1
