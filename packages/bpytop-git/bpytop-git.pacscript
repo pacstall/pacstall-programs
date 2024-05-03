@@ -5,11 +5,10 @@ pkgver="1.0.68"
 makedepends=("make" "python3" "python3-pip" "python3-distutils")
 depends=("python3" "python3-pip" "python3-distutils")
 pkgdesc="Linux/OSX/FreeBSD resource monitor."
-release="$(lsb_release -cs)"
 modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
 
 # shellcheck disable=SC2076
-if [[ " ${modern[*]} " =~ " ${release} " ]]; then
+if [[ " ${modern[*]} " =~ " ${DISTRO#*:} " ]]; then
   pyhack=("--break-system-packages")
 else
   pyhack=()

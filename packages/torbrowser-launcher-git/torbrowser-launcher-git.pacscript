@@ -10,10 +10,9 @@ pkgdesc="Securely and easily download, verify, install, and launch Tor Browser i
 optdepends=("apparmor: support for apparmor profiles")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
-release="$(lsb_release -cs)"
 modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
 # shellcheck disable=SC2076
-if [[ " ${modern[*]} " =~ " ${release} " ]]; then
+if [[ " ${modern[*]} " =~ " ${DISTRO#*:} " ]]; then
   pyhack=("--break-system-packages")
 else
   pyhack=()

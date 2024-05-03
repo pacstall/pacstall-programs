@@ -7,10 +7,9 @@ depends=("python3-cffi" "xserver-xorg" "python3-xcffib" "python3-cairocffi" "lib
 pkgdesc="A full-featured, hackable tiling window manager written and configured in Python"
 maintainer=("Ruturajn <nanotiruturaj@gmail.com>")
 
-release="$(lsb_release -cs)"
 modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
 # shellcheck disable=SC2076
-if [[ " ${modern[*]} " =~ " ${release} " ]]; then
+if [[ " ${modern[*]} " =~ " ${DISTRO#*:} " ]]; then
   pyhack=("--break-system-packages")
 else
   pyhack=()

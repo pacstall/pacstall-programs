@@ -7,10 +7,9 @@ pacdeps=("qtile-git")
 maintainer=("Ruturajn <nanotiruturaj@gmail.com>")
 makedepends=("python3-venv" "python3-pip")
 
-release="$(lsb_release -cs)"
 modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
 # shellcheck disable=SC2076
-if [[ " ${modern[*]} " =~ " ${release} " ]]; then
+if [[ " ${modern[*]} " =~ " ${DISTRO#*:} " ]]; then
   pyhack=("--break-system-packages")
 else
   pyhack=()
