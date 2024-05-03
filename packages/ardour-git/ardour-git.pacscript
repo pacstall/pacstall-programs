@@ -8,7 +8,7 @@ makedepends=("python3" "python-is-python3" "libgio2.0-cil-dev" "python3" "libqm-
 optdepends=("xjadeo: video monitoring"
   "harvid: video timeline"
   "linuxaudio-new-session-manager: for session management")
-provides="ladspa-host lv2-host vst-host vst3-host ardour ardour-data"
+provides=("ladspa-host" "lv2-host" "vst-host" "vst3-host" "ardour" "ardour-data")
 breaks="ardour"
 source=("https://github.com/Ardour/ardour.git")
 pkgver="7.5"
