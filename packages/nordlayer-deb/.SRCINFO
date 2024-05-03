@@ -1,0 +1,8 @@
+pkgname = nordlayer-deb
+gives = nordlayer
+pkgver = 2.6.0
+pkgdesc = NordLayer's CLI Tool
+arch = amd64
+source = https://downloads.nordlayer.com/linux/latest/debian/pool/main/nordlayer_2.6.0_amd64.deb
+replaces = nordvpnteams
+sha256sums = 650f813e14b451df5595ae410bd1e726682e1f8ffd1141596071c47589c96b32

@@ -1,0 +1,8 @@
+pkgname = bat-deb
+gives = bat
+pkgver = 0.24.0
+pkgdesc = A cat(1) clone with wings
+arch = amd64
+source = https://github.com/sharkdp/bat/releases/download/v0.24.0/bat_0.24.0_amd64.deb
+replaces = bat
+sha256sums = fa9353fa0c6e1e67b87757c4bd6bf515f85d3fc16d41b12cc26f7a673892ad01

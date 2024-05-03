@@ -1,0 +1,11 @@
+pkgname = neofetch
+pkgver = 7.1.0
+pkgdesc = Command-line system information tool
+source = https://github.com/dylanaraps/neofetch/archive/7.1.0.zip
+optdepends = w3m-img: image preview
+optdepends = libsixel-dev: image preview
+optdepends = catimg: image preview
+optdepends = jp2a: image preview
+optdepends = caca-utils: image preview
+optdepends = libcaca-dev: image preview
+sha256sums = e610da6561f17c8161337d0c4115da310be576e8699fa2add64e14eeb3f3dcf1

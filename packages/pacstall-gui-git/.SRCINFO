@@ -1,0 +1,13 @@
+pkgname = pacstall-gui-git
+gives = pacstall-gui
+pkgver = 0.0.1
+pkgdesc = A gui for Pacstall written in bash.
+source = https://github.com/cat-master21/pacstall-gui.git
+depends = yad
+depends = sed
+depends = adwaita-icon-theme
+depends = policykit-1
+depends = desktop-file-utils
+breaks = pacstall-gui
+breaks = pacstall-gui-bin
+breaks = pacstall-gui-deb

@@ -1,0 +1,8 @@
+pkgname = xonotic
+gives = xonotic
+pkgver = 0.8.6
+pkgdesc = The Free and Fast Arena Shooter
+arch = amd64
+source = https://dl.unvanquished.net/share/xonotic/release/xonotic-0.8.6.zip
+breaks = xonotic-git
+sha256sums = 50850f8d800e7499722f6ea61e478e96464a375494b5a24da93aa0598cbe964d

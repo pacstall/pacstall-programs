@@ -1,0 +1,9 @@
+pkgname = ivpn-ui-deb
+gives = ivpn-ui
+pkgver = 3.13.4
+pkgdesc = Official IVPN Desktop app - UI Package
+arch = amd64
+source = https://repo.ivpn.net/stable/pool/ivpn-ui_3.13.4_amd64.deb
+pacdeps = ivpn-deb
+breaks = ivpn-ui-git
+sha256sums = 79c272ba4c73bb4e86b0ec5995d303c30086494af62fcfd86c929d055f2202b1

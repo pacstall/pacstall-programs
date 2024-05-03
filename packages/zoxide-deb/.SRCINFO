@@ -1,0 +1,10 @@
+pkgname = zoxide-deb
+gives = zoxide
+pkgver = 0.9.4
+pkgdesc = A smarter cd command. Supports all major shells.
+arch = amd64
+arch = arm64
+source_amd64 = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.4/zoxide_0.9.4-1_amd64.deb
+source_arm64 = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.4/zoxide_0.9.4-1_arm64.deb
+sha256sums_amd64 = 81b7a762bcb8f789dfde4cac78ac34a406c6f79763f3669efbd60f65d013b2e1
+sha256sums_arm64 = 575f520691dfd9acc1b280b0ca47f44f49bd004763b61abfb3da36f211d88215

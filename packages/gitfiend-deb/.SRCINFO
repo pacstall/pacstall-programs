@@ -1,0 +1,9 @@
+pkgname = gitfiend-deb
+gives = gitfiend
+pkgver = 0.42.1
+pkgdesc = A Git client designed for humans
+arch = amd64
+source = https://gitfiend.com/resources/GitFiend_0.42.1_amd64.deb
+breaks = gitfiend-app
+replaces = gitfiend
+sha256sums = 6d93f6ebc5c7764c423e66af215c12ffcdc84d1aebf61b106605c0d7fb4f611c

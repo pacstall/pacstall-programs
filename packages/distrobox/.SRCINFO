@@ -1,0 +1,12 @@
+pkgname = distrobox
+gives = distrobox
+pkgver = 1.7.1
+pkgdesc = Use any linux distribution inside your terminal
+source = https://github.com/89luca89/distrobox/archive/refs/tags/1.7.1.tar.gz
+optdepends = docker: enable docker usage
+optdepends = podman: enable podman usage
+breaks = distrobox
+breaks = distrobox-deb
+breaks = distrobox-app
+breaks = distrobox-git
+sha256sums = a39ce0b579e8e7c7599b5effaf53462814d443ce5d30131e19db2f8b830f242f

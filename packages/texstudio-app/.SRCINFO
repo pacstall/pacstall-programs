@@ -1,0 +1,8 @@
+pkgname = texstudio-app
+gives = texstudio
+pkgver = 4.7.2
+pkgdesc = A fully featured LaTeX editor
+arch = amd64
+source = https://github.com/texstudio-org/texstudio/releases/download/4.7.2/texstudio-4.7.2-x86_64.AppImage
+replaces = texstudio
+sha256sums = 443f450cfcc0435623de9d4947026f3cfec9230ed1dc693021a2ae5ef9550136

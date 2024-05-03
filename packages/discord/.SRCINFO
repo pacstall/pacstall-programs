@@ -1,0 +1,17 @@
+pkgname = discord
+pkgver = 0.0.49
+pkgdesc = Chat for Communities and Friends
+arch = amd64
+source = https://dl.discordapp.net/apps/linux/0.0.49/discord-0.0.49.tar.gz
+depends = libc6
+depends = libasound2
+depends = libatomic1
+depends = libnotify4
+depends = libnspr4
+depends = libnss3
+depends = libstdc++6
+depends = libxss1
+depends = libxtst6
+depends = libayatana-appindicator3-1
+depends = libc++1
+sha256sums = ad54980244d94e5bab9db51e60914282c3dcb02aa32756c99de4108b2866bf04

@@ -1,0 +1,9 @@
+pkgname = rhino-neofetch-git
+gives = rhino-neofetch
+pkgver = 0.0.1
+pkgdesc = neofetch branded for Rhino Linux
+source = https://github.com/rhino-linux/neofetch.git
+breaks = neofetch
+replaces = neofetch
+provides = neofetch
+mask = neofetch

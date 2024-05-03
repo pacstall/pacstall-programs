@@ -1,0 +1,13 @@
+pkgname = librewolf-deb
+gives = librewolf
+pkgver = 107.0.1-2
+pkgdesc = A fork of Firefox, focused on privacy, security and freedom
+arch = amd64
+arch = any
+source = https://deb.librewolf.net/pool/jammy/librewolf_107.0.1-2_all.deb
+breaks = librewolf-app
+breaks = librewolf-bin
+breaks = librewolf-git
+replaces = librewolf
+incompatible = debian:bullseye
+sha256sums = c66df74a6f466821ecbf5402d18d4537d513a4bcc25b25d99301dca6e07ad85e

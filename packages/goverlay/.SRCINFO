@@ -1,0 +1,10 @@
+pkgname = goverlay
+gives = goverlay
+pkgver = 1.0
+pkgdesc = Graphical UI to help manage Linux overlays
+source = https://github.com/benjamimgois/goverlay/releases/download/1.0/goverlay_1.tar.xz
+source = https://raw.githubusercontent.com/benjamimgois/goverlay/master/data/icons/128x128/goverlay.png
+depends = mangohud
+depends = libqt5pas-dev
+sha256sums = 47754023d12b9eb730c83fe9aeec7b8523d1dbaa9860c90928ddaa904b89aa1f
+sha256sums = SKIP

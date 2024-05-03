@@ -1,0 +1,10 @@
+pkgname = uwufetch
+pkgver = 1.7
+pkgdesc = A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace.
+source = https://github.com/TheDarkBug/uwufetch/archive/refs/tags/1.7.zip
+makedepends = gcc
+optdepends = viu: image preview
+optdepends = lshw: hardware info
+breaks = uwufetch-git
+breaks = uwufetch-bin
+sha256sums = 1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab

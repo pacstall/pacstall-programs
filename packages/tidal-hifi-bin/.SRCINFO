@@ -1,0 +1,17 @@
+pkgname = tidal-hifi-bin
+gives = tidal-hifi
+pkgver = 5.8.0
+pkgdesc = The web version of listen.tidal.com running in electron with hifi support thanks to widevine
+source = https://github.com/Mastermindzh/tidal-hifi/releases/download/5.8.0/tidal-hifi-5.8.0.tar.gz
+source = icon.png::https://github.com/Mastermindzh/tidal-hifi/raw/master/build/icon.png
+source = tidal-hifi.desktop::https://aur.archlinux.org/cgit/aur.git/plain/tidal-hifi.desktop?h=tidal-hifi-bin
+depends = libxss1
+depends = libnss3
+depends = libgtk-3-0
+breaks = tidal-hifi
+breaks = tidal-hifi-deb
+breaks = tidal-hifi-app
+breaks = tidal-hifi-git
+sha256sums = 598da80fc2cfe4065f0ba07fbb08ecab44e8dde76ba8d88d2a491cc6f3780ce9
+sha256sums = SKIP
+sha256sums = SKIP

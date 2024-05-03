@@ -1,0 +1,11 @@
+pkgname = aws-cli-v2-bin
+gives = aws-cli-v2
+pkgver = 2.15.13
+pkgdesc = Universal Command Line Interface for Amazon Web Services v2
+arch = amd64
+source = https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.15.13.zip
+depends = groff
+depends = less
+makedepends = unzip
+replaces = awscli
+sha256sums = f02d22d9dd8b7c84c4158df7013133087a64d48f0e776d6ba2be0eaa00c03fb6

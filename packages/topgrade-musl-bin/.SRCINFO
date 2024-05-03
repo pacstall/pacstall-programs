@@ -1,0 +1,12 @@
+pkgname = topgrade-musl-bin
+gives = topgrade
+pkgver = 14.0.0
+pkgdesc = Upgrades everything on your system
+arch = amd64
+source = https://github.com/topgrade-rs/topgrade/releases/download/v14.0.0/topgrade-v14.0.0-x86_64-unknown-linux-musl.tar.gz
+breaks = topgrade
+breaks = topgrade-deb
+breaks = topgrade-app
+breaks = topgrade-git
+breaks = topgrade-bin
+sha256sums = f9fc5378ef86dc40efbd0e40a7b62b8e1470ce4f00c0ea101f512520d3bfe797

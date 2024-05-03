@@ -1,0 +1,15 @@
+pkgname = adapta-gtk-theme-git
+gives = adapta-gtk-theme
+pkgver = 3.95.0.11
+pkgdesc = An adaptive Gtk+ theme based on Material Design Guidelines (Legacy)
+source = https://github.com/adapta-project/adapta-gtk-theme.git
+makedepends = parallel
+makedepends = autoconf
+makedepends = automake
+makedepends = inkscape
+makedepends = libgdk-pixbuf2.0-dev
+makedepends = libglib2.0-dev
+makedepends = libxml2-utils
+makedepends = pkg-config
+makedepends = sassc
+breaks = adapta

@@ -1,0 +1,8 @@
+pkgname = gldriver-test-deb
+gives = gldriver-test
+pkgver = 0.15
+pkgdesc = Various graphics-related config services for Raspberry Pi
+arch = any
+source = https://archive.raspberrypi.org/debian/pool/main/g/gldriver-test/gldriver-test_0.15_all.deb
+pacdeps = raspi-config-deb
+sha256sums = b0e0ea2e8ebde87f481639dfa016df6ea4335d97710cd10c8b14ab5a379aaa93

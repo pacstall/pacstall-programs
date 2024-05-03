@@ -1,0 +1,10 @@
+pkgname = hello
+pkgver = 2.12.1
+pkgdesc = GNU implementation of the classic program that prints 'Hello, world!' when you run it
+source = https://ftp.gnu.org/gnu/hello/hello-2.12.1.tar.gz
+depends = libc6
+makedepends = build-essential
+breaks = hello-git
+breaks = hello-traditional
+replaces = hello
+sha256sums = 8d99142afd92576f30b0cd7cb42a8dc6809998bc5d607d88761f512e26c7db20
