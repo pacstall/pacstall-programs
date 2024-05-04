@@ -2,6 +2,7 @@ pkgname = cortile-bin
 gives = cortile
 pkgver = 2.4.0
 pkgdesc = Linux auto tiling manager with hot corner support
+url = https://github.com/leukipp/cortile
 arch = arm64
 arch = amd64
 source_arm64 = https://github.com/leukipp/cortile/releases/download/v2.4.0/cortile_2.4.0_linux_arm64.tar.gz

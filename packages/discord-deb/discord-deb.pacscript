@@ -7,5 +7,5 @@ sha256sums=("5f301979bd3f2755946ebeb8d8ae82a14ad8c887d943ef71288c7b715345a428")
 maintainer=("ObsidianPresidium <emil@aarestrup.nu>")
 arch=('amd64')
 source=("https://dl.discordapp.net/apps/linux/${pkgver}/discord-${pkgver}.deb")
-homepage='https://discord.com/'
+url='https://discord.com/'
 repology=("project: ${gives}")

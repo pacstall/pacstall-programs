@@ -2,6 +2,7 @@ pkgname = github-desktop-deb
 gives = github-desktop
 pkgver = 3.3.10
 pkgdesc = Fork of GitHub Desktop to support various Linux distributions
+url = https://desktop.github.com
 arch = amd64
 arch = arm64
 arch = armhf
