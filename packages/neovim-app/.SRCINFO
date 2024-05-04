@@ -8,4 +8,6 @@ makedepends = libfuse2
 replaces = nvim
 replaces = neovim-runtime
 replaces = neovim-deb
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: neovim
 sha256sums = 0c82e5702af7a11fbb916a11b4a82e98928abf8266c74b2030ea740340437bf9

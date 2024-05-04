@@ -7,3 +7,4 @@ depends = git
 depends = bsdmainutils
 breaks = git-extras-bin
 replaces = git-extras
+maintainer = Elsie19 <elsie19@pm.me>

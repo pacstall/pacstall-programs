@@ -7,3 +7,4 @@ breaks = neofetch
 replaces = neofetch
 provides = neofetch
 mask = neofetch
+maintainer = Oren Klopfer <oren@taumoda.com>

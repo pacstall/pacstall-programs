@@ -16,5 +16,7 @@ makedepends = libxi-dev
 makedepends = ninja-build
 makedepends = xorg-dev
 noextract = Skia-Linux-Release-x64-libc++.zip
+maintainer = vigress8 <vig@disroot.org>
+repology = project: aseprite
 sha256sums = 5e974aa2786297981cd5ebe81f040a49b722bddfe33d70def207ad06cb0d34fc
 sha256sums = 66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea

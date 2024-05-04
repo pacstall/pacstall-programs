@@ -16,3 +16,4 @@ replaces = rhino-pine-core
 replaces = rhino-server-core
 compatible = ubuntu:devel
 compatible = ubuntu:oracular
+maintainer = Oren Klopfer <oren@taumoda.com>

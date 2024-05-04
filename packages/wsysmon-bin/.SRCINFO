@@ -7,5 +7,7 @@ source = wsysmon.desktop::https://raw.githubusercontent.com/pacstall/pacstall-pr
 breaks = wsysmon
 breaks = wsysmon-deb
 breaks = wsysmon-git
+maintainer = 0x262D <pacstall@copypaste.anonaddy.me>
+repology = project: wsysmon
 sha256sums = ef57a20064c7d97c437cbce19e20f78638430e08bc7c9933cc876e83114fce58
 sha256sums = SKIP

@@ -39,4 +39,6 @@ breaks = emacs-git
 breaks = emacs-nox
 replaces = emacs-git
 replaces = emacs-nox
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: emacs
 sha256sums = ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488

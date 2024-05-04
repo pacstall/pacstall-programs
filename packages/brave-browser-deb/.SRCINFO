@@ -8,4 +8,6 @@ pacdeps = brave-keyring-deb
 breaks = brave-browser-bin
 breaks = brave-browser-git
 breaks = brave-browser-app
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: brave
 sha256sums = f6d4a83a7f5719b5ff6fc9fdbc3f479a98b6ea3ce65152689a80857522686a85

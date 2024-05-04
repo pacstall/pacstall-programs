@@ -6,4 +6,6 @@ arch = amd64
 source = https://updates.torguard.biz/Software/Linux/torguard-v4.8.28-amd64.deb
 breaks = torguard-bin
 replaces = torguard
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: torguard
 sha256sums = ff96268f459aefddc09e809efed6f5e0cb3e45bb79d4e35a88224f35adcc2e39

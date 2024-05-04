@@ -15,4 +15,6 @@ depends = xcb-util-keysyms
 depends = xcb-util-renderutil
 optdepends = libxdg-basedir: Open links in the default browser.
 optdepends = libqtxdg: Open links in the default browser (Qt implementation)
+maintainer = smokeythemonkey <smokeythemonkey@posteo.net>
+repology = project: enpass
 sha256sums = fe405f7119d45822164da3ad009b99c5cd516685198c1d335b7803d84e5ba2ca

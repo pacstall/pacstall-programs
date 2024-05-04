@@ -118,3 +118,4 @@ provides = vst-host
 provides = vst3-host
 provides = ardour
 provides = ardour-data
+maintainer = echometerain <echometer@disroot.org>

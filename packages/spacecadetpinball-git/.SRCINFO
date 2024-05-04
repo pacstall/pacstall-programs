@@ -18,6 +18,7 @@ breaks = spacecadetpinball-bin
 breaks = spacecadetpinball-app
 breaks = spacecadetpinball-deb
 noextract = Space_Cadet.rar
+maintainer = wizard-28 <wiz28@pm.me>
 sha256sums = SKIP
 sha256sums = 3cc5dfd914c2ac41b03f006c7ccbb59d6f9e4c32ecfd1906e718c8e47f130f4a
 sha256sums = 6edc9d9e73f430b025d0efe09ecd9027d38f7c2e3562de470a8057939fb1889f

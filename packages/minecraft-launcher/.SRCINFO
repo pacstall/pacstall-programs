@@ -51,6 +51,7 @@ depends = xdg-utils
 depends = wget
 depends = libcurl4
 depends = libuuid1
+maintainer = aranym <aranym1@pm.me>
 sha256sums = b08cb0cb52425afbafdd52a6b2c7d0d94ce0a2d9285f72f47ec2fcdc31e7e0cf
 sha256sums = SKIP
 sha256sums = SKIP

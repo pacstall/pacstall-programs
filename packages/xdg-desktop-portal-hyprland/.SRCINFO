@@ -30,5 +30,7 @@ compatible = ubuntu:devel
 compatible = debian:sid
 compatible = ubuntu:mantic
 compatible = ubuntu:noble
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: xdg-desktop-portal-hyprland
 sha256sums = c8ba3d173a580d8b4ec9a5ee15e7780d266e536a78a12aa28d8234e0854ae86d
 sha256sums = SKIP

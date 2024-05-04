@@ -4,3 +4,4 @@ pkgver = 0.0.1
 pkgdesc = ananicy-cpp rules for CachyOS
 source = https://github.com/CachyOS/ananicy-rules.git
 pacdeps = ananicy-cpp
+maintainer = vigress8 <vig@disroot.org>

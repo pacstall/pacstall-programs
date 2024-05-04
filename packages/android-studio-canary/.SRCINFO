@@ -12,5 +12,7 @@ depends = libbz2-1.0:i386
 replaces = android-studio-beta
 replaces = android-studio
 replaces = android-studio-canary
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: android-studio
 sha256sums = 139d0dbb4909353b68fbf55c09b6d31a34512044a9d4f02ce0f1a9accca128f9
 sha256sums = SKIP

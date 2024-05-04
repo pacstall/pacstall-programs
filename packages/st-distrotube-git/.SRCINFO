@@ -9,3 +9,4 @@ makedepends = libharfbuzz-bin
 makedepends = libxft-dev
 makedepends = libpango1.0-dev
 breaks = st
+maintainer = edward-riley <edward@edwardriley.co.uk>

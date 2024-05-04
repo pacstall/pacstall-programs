@@ -18,4 +18,6 @@ makedepends = libqt5svg5-dev
 makedepends = pkg-config
 optdepends = rcs: built-in version control system
 optdepends = texlive-latex-base: float wrap support
+maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>
+repology = project: lyx
 sha256sums = 910bb48d9b19c0cfeb6ec845eb318515f33a63ea7892a99b2e7b67c6b518bacd

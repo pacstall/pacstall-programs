@@ -24,4 +24,5 @@ breaks = gnome-tweaks
 breaks = gnome-tweaks-bin
 breaks = gnome-tweaks-git
 license = GPL-3.0
+repology = project: gnome-tweaks
 sha256sums = 59d9597840335b0d71afd287bec09260e172ff89e14d6d12c3416f23557974ee

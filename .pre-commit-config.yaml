@@ -41,58 +41,6 @@ repos:
       - id: update-srcinfo
         name: update .SRCINFO data
         language: system
-        entry: |
-              bash -c 'function srcinfo() {
-                  local CARCH='CARCH_REPLACE' DISTRO='ubuntu:jammy' src sum vars a_sum var ar car aars bar ars rar \
-                      known_hashsums_src=("b2" "sha512" "sha384" "sha256" "sha224" "sha1" "md5") \
-                      known_archs_src=("amd64" "arm64" "armel" "armhf" "i386" "mips64el" "ppc64el" "riscv64" "s390x") \
-                      allvars=("pkgname" "gives" "pkgver" "pkgrel" "epoch" "pkgdesc" "url" "priority") \
-                      allars=("arch" "source" "depends" "makedepends" "checkdepends" "optdepends" "pacdeps" "conflicts" "breaks" \
-                      "replaces" "provides" "incompatible" "compatible" "backup" "mask" "noextract" "nosubmodules" "license")
-                  source "${1}"
-                  for src in "${known_archs_src[@]}"; do
-                      for vars in {source,depends,makedepends,optdepends,pacdeps,checkdepends,provides,conflicts,breaks,replaces}; do
-                          allars+=("${vars}_${src}")
-                      done
-                      allvars+=("gives_${src}")
-                  done
-                  for sum in "${known_hashsums_src[@]}"; do
-                      allars+=("${sum}sums")
-                      for a_sum in "${known_archs_src[@]}"; do
-                          allars+=("${sum}sums_${a_sum}")
-                      done
-                  done
-                  for var in "${allvars[@]}"; do
-                      declare -n "rar=${var}"
-                      if [[ -n ${rar} ]]; then
-                          rar="${rar//+([[:space:]])/ }"
-                          rar="${rar#[[:space:]]}"
-                          rar="${rar%[[:space:]]}"
-                          echo "${var} = ${rar}"
-                      fi
-                  done
-                  for ar in "${allars[@]}"; do
-                      declare -n "bar=${ar}"
-                      if [[ -n ${bar[@]} ]]; then
-                          for ars in "${bar[@]}"; do
-                              ars="${ars//+([[:space:]])/ }"
-                              ars="${ars#[[:space:]]}"
-                              ars="${ars%[[:space:]]}"
-                              if [[ ${ars} =~ CARCH_REPLACE ]]; then
-                                  for aars in ${arch[@]}; do
-                                      echo "${ar}_${aars} = ${ars}" | sed -e "s/CARCH_REPLACE/${aars}/g"
-                                  done
-                              else
-                                  echo "${ar} = ${ars}"
-                              fi
-                          done
-                      fi
-                  done
-                  unset "${allars[@]}" "${allvars[@]}"
-              }
-              mapfile -t packagelist < packagelist
-              for package in "${packagelist[@]}"; do
-                  srcinfo packages/${package}/${package}.pacscript | tee packages/${package}/.SRCINFO > /dev/null
-              done'
+        entry: ./srcinfo.sh write_all
 
 # vim:set ft=yaml ts=2 sw=2 et:

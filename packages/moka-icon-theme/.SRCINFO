@@ -4,4 +4,5 @@ pkgdesc = Moka is a stylized FreeDesktop icon set, created with simplicity in mi
 source = https://codeload.github.com/snwh/moka-icon-theme/tar.gz/refs/tags/v5.4.0
 makedepends = meson
 makedepends = ninja-build
+maintainer = aranym <aranym1@pm.me>
 sha256sums = b32e82aea4358e087620e852aa20042e791aa957a93de568da1d2223a46c7cd9

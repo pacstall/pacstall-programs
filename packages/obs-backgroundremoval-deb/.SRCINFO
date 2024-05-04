@@ -7,4 +7,6 @@ source = https://github.com/royshil/obs-backgroundremoval/releases/download/1.1.
 breaks = obs-backgroundremoval
 breaks = obs-backgroundremoval-git
 incompatible = debian:bullseye
+maintainer = Zahrun <Zahrun@github.com>
+repology = project: obs-backgroundremoval
 sha256sums = f7fc1ff2beb93a9049187b0bfb32faf2126af0aad167f7e8d0d3c724189ff190

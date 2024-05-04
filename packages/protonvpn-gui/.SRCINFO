@@ -13,4 +13,6 @@ pacdeps = protonvpn-cli
 pacdeps = proton-python-client
 breaks = protonvpn-gui-git
 replaces = protonvpn-gui
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: protonvpn-gui
 sha256sums = 708dd5aa04a12963361a7a13188c65938b94adc268608e341faa2985312e7f94

@@ -150,6 +150,7 @@ replaces = wine32:i386
 replaces = libwine
 replaces = libwine:i386
 replaces = wine-staging-i386:i386
+maintainer = echometerain <echometer@disroot.org>
 sha256sums = SKIP
 sha256sums = SKIP
 sha256sums = SKIP

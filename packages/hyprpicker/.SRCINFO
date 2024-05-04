@@ -18,4 +18,6 @@ compatible = ubuntu:devel
 compatible = debian:sid
 compatible = ubuntu:mantic
 compatible = ubuntu:noble
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: hyprpicker
 sha256sums = fa1b0c29682f5ede5a03d754770d152f38d869bc1faa300564680cef2de0758a

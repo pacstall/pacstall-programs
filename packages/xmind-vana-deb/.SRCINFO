@@ -4,4 +4,5 @@ pkgver = 23.05.1745
 pkgdesc = Mind mapping and brainstorming app
 arch = amd64
 source = https://dl3.xmind.net/Xmind-for-Linux-amd64bit-23.05.1745.deb
+repology = project: xmind
 sha256sums = 0a260a95d35b1a3f35a58f20931185a73c95f7e6b821b5645af573a3084530a1

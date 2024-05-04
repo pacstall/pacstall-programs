@@ -7,4 +7,6 @@ source = https://launchpad.net/veracrypt/trunk/1.26.7/+download/veracrypt-1.26.7
 breaks = veracrypt
 breaks = veracrypt-console
 breaks = veracrypt-git
+maintainer = Zahrun <Zahrun@github.com>
+repology = project: veracrypt
 sha256sums = f0dca101cf5b5eccfadaad3f53aea037fd5a01cd9afeb7248ddcca28b821a0ef

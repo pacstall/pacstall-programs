@@ -10,3 +10,4 @@ pacdeps = oh-my-posh-git
 pacdeps = zsh-history-substring-search-git
 breaks = easy-zsh-config
 replaces = easy-zsh-config
+maintainer = Zahrun <Zahrun@github.com>

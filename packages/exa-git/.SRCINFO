@@ -7,3 +7,4 @@ makedepends = cargo
 makedepends = libgit2-dev
 makedepends = cmake
 makedepends = rustc
+maintainer = Elsie19 <elsie19@pm.me>

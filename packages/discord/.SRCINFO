@@ -14,4 +14,6 @@ depends = libxss1
 depends = libxtst6
 depends = libayatana-appindicator3-1
 depends = libc++1
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: discord
 sha256sums = ad54980244d94e5bab9db51e60914282c3dcb02aa32756c99de4108b2866bf04

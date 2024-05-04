@@ -21,4 +21,5 @@ makedepends = zlib1g-dev
 makedepends = dpkg-dev
 makedepends = pkg-config
 replaces = grive
+maintainer = KwonNam Son <kwon37xi@gmail.com>
 sha256sums = 9940bcd3e5a3ffd32b91477fba8ba1ca3e0a3a72e5ffa9c6d524db87951fdbbb

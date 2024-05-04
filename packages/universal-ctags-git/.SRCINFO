@@ -13,3 +13,4 @@ makedepends = libseccomp-dev
 makedepends = libjansson-dev
 makedepends = libyaml-dev
 makedepends = libxml2-dev
+maintainer = KwonNam Son <kwon37xi@gmail.com>

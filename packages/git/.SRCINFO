@@ -18,4 +18,6 @@ makedepends = zlib1g-dev
 makedepends = zlib1g
 breaks = git-git
 replaces = git
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: git
 sha256sums = ed238f5c72a014f238cc49fe7df4c6883732a3881111b381c105e2c5be77302f

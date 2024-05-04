@@ -9,4 +9,6 @@ breaks = shfmt-git
 breaks = shfmt-bin
 breaks = shfmt-deb
 breaks = shfmt-app
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: shfmt
 sha256sums = 0264c424278b18e22453fe523ec01a19805ce3b8ebf18eaf3aadc1edc23f42e3

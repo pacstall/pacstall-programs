@@ -18,3 +18,4 @@ makedepends = autoconf-archive
 makedepends = pkg-config
 breaks = powertop
 replaces = powertop
+maintainer = Elsie19 <elsie19@pm.me>

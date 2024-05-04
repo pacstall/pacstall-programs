@@ -4,4 +4,5 @@ pkgver = 0.0.29-15709
 pkgdesc = PS3 emulator/debugger
 url = https://rpcs3.net
 source = https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-3c93509471f5f2f9d473a4c11682ef83366349d2/rpcs3-v0.0.29-15709-3c935094_linux64.AppImage
+maintainer = Thomas Crha <thomas@9bitbyte.com>
 sha256sums = 470a2998e2f8e545aa3975043983794dcd1a1f07464899b156c9cb32b2dfe2b2

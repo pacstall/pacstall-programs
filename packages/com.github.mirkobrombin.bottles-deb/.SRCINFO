@@ -7,4 +7,5 @@ breaks = com.github.mirkobrombin.bottles-v1
 breaks = com.github.mirkobrombin.bottles-git
 breaks = com.github.mirkobrombin.bottles-bin
 breaks = com.github.mirkobrombin.bottles-app
+maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>
 sha256sums = bec7780c547fd7806f10c9c96f1c8f510958303554dab387e22a71eb677db321

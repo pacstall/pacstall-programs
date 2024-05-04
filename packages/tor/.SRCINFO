@@ -16,4 +16,5 @@ makedepends = libseccomp-dev
 makedepends = zlib1g-dev
 breaks = tor-git
 replaces = tor
+repology = project: tor
 sha256sums = 2079172cce034556f110048e26083ce9bea751f3154b0ad2809751815b11ea9d

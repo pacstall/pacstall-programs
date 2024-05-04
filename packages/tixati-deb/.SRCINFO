@@ -9,4 +9,6 @@ breaks = tixati-bin
 breaks = tixati-git
 breaks = tixati-app
 replaces = tixati
+maintainer = heyzsh <haidarzsh@gmail.com>
+repology = project: tixati
 sha256sums = 68dd8a2db7400cb85e53d0ffac2a74ab66cbb4a8d56b2a509eb043f84b883cc9

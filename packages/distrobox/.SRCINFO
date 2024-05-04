@@ -9,4 +9,6 @@ breaks = distrobox
 breaks = distrobox-deb
 breaks = distrobox-app
 breaks = distrobox-git
+maintainer = Marie Piontek <marie@kaifa.ch>
+repology = project: distrobox
 sha256sums = a39ce0b579e8e7c7599b5effaf53462814d443ce5d30131e19db2f8b830f242f

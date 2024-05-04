@@ -18,3 +18,4 @@ makedepends = meson
 makedepends = ninja-build
 replaces = rhino-setup-bin
 incompatible = debian:*
+maintainer = Oren Klopfer <oren@taumoda.com>

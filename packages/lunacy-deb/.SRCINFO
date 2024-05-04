@@ -4,4 +4,6 @@ pkgver = 9.5.0
 pkgdesc = Free design software that keeps your flow with AI tools and built-in graphics
 arch = amd64
 source = https://lcdn.icons8.com/setup/Lunacy_9.5.0.deb
+maintainer = Anifyuli <anifyuliansyah@gmail.com>
+repology = project: lunacy
 sha256sums = 746db12e8a91409b1a47bbf4d22378e863f88c1f1656bc5aca7d824902c25254

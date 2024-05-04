@@ -17,3 +17,5 @@ depends = tor
 makedepends = build-essential
 optdepends = apparmor: support for apparmor profiles
 breaks = torbrowser-launcher
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: torbrowser-launcher

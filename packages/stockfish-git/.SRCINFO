@@ -4,3 +4,4 @@ pkgver = 0.0.1
 pkgdesc = The Stockfish chess engine
 source = https://github.com/official-stockfish/Stockfish.git
 breaks = stockfish-git
+maintainer = pythoncrazy <encryptprogramming@gmail.com>

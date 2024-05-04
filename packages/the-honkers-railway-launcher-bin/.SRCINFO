@@ -18,5 +18,7 @@ incompatible = ubuntu:kinetic
 incompatible = debian:stretch
 incompatible = debian:buster
 incompatible = debian:bullseye
+maintainer = vbrabandt2005 <https://github.com/vbrabandt2005>
+repology = project: the-honkers-railway-launcher
 sha256sums = c7ce99c94a629089caa1a7d22ac68dbddfb7a7e81c1e9f447b1b800f7ecf84ee
 sha256sums = SKIP
