@@ -12,4 +12,6 @@ optdepends = python3-vdf: automatic steam account detection
 optdepends = steam: possibility to use proton
 optdepends = wine: possibility to use wine
 breaks = truckersmp-cli-git
+maintainer = badlydrawnface <bdface@proton.me>
+repology = project: truckersmp-cli
 sha256sums = 3f5e0289d06d5bdc39f86879283c7184adaa60eb06a3b4e481095da816121c16

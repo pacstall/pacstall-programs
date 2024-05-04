@@ -8,4 +8,6 @@ breaks = shellcheck
 breaks = shellcheck-git
 breaks = shellcheck-deb
 breaks = shellcheck-app
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: shellcheck
 sha256sums = 700324c6dd0ebea0117591c6cc9d7350d9c7c5c287acbad7630fa17b1d4d9e2f

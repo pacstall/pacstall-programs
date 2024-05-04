@@ -91,3 +91,4 @@ incompatible = ubuntu:kinetic
 incompatible = debian:stretch
 incompatible = debian:buster
 incompatible = debian:bullseye
+maintainer = Zahrun <Zahrun@github.com>

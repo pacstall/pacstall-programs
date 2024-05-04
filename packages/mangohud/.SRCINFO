@@ -19,4 +19,6 @@ makedepends = libxnvctrl-dev
 makedepends = libdbus-1-dev
 makedepends = glslang-tools
 incompatible = debian:bullseye
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: mangohud
 sha256sums = 40a4954f1f239ae7d2cec0fab3c7e965b30ded5e9729278f3cc0854676b954e5

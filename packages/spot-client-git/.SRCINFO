@@ -29,3 +29,5 @@ incompatible = debian:stretch
 incompatible = debian:buster
 incompatible = debian:bullseye
 incompatible = debian:sid
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: spot-client

@@ -5,4 +5,6 @@ source = https://github.com/mcpcpc/kirc/archive/refs/tags/0.3.2.tar.gz
 makedepends = automake
 breaks = kirc-git
 replaces = kirc
+maintainer = WRM-42 <y8bsbahy@anonaddy.me>
+repology = project: kirc
 sha256sums = a45172198873fb34c64150262be4515a7be268a5c00566c79f03a8ea2dd7900e

@@ -11,4 +11,5 @@ makedepends = autogen
 makedepends = pkg-config
 makedepends = libxcb1-dev
 makedepends = python3
+maintainer = Elsie19 <elsie19@pm.me>
 sha256sums = 5628c87b984259ad927bacd8a42958319c36bdf4b065887803c9d820fb80f357

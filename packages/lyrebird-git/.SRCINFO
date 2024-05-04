@@ -12,3 +12,4 @@ depends = sox
 depends = libsox-fmt-pulse
 depends = pulseaudio
 makedepends = python3-pip
+maintainer = D-Brox <BroxZuka@protonmail.com>

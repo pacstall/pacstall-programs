@@ -8,7 +8,7 @@ archs="amd64 arm64 armel armhf i386 mips64el ppc64el riscv64 s390x"
 sums="b2 sha512 sha384 sha256 sha224 sha1 md5"
 _distros="{${distros// /,}}" _vars="{${vars// /,}}" _archs="{${archs// /,}}" _sums="{${sums// /,}}"
 allvars=(pkgname gives pkgver pkgrel epoch pkgdesc url priority)
-allars=(arch source depends makedepends checkdepends optdepends pacdeps conflicts breaks replaces provides incompatible compatible backup mask noextract nosubmodules license)
+allars=(arch source depends makedepends checkdepends optdepends pacdeps conflicts breaks replaces provides incompatible compatible backup mask noextract nosubmodules license maintainer repology)
 eval "allars+=(${_vars}_${_distros} ${_vars}_${_archs} ${_vars}_${_distros}_${_archs} gives_${_distros} gives_${_archs} gives_${_distros}_${_archs} ${_sums}sums ${_sums}sums_${_distros} ${_sums}sums_${_archs} ${_sums}sums_${_distros}_${_archs})"
 
 function srcinfo() {

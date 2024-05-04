@@ -8,4 +8,5 @@ depends = curl
 depends = grep
 depends = jq
 depends = wget
+maintainer = srevinsaju <hello@srev.in>
 sha256sums = 4972edd5da1be5c5dd2fa14619c7068b09fd9dc31c1feea50ed564cdb14df6bc

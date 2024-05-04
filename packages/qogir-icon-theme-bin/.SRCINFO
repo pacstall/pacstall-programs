@@ -8,4 +8,5 @@ breaks = qogir-icon-theme
 breaks = qogir-icon-theme-git
 breaks = qogir-icon-theme-deb
 breaks = qogir-icon-theme-app
+maintainer = wizard-28 <wiz28@pm.me>
 sha256sums = 7747f8a139e01a075a94b832d95a53a98b98784b06e866dd8259bb0a38404480

@@ -8,4 +8,6 @@ breaks = fennel
 breaks = fennel-git
 breaks = fennel-deb
 breaks = fennel-app
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: fennel
 sha256sums = 85b71175739dfd5e8893726d7244b0f0b58fd21eaec009e39eea44ad7169f060

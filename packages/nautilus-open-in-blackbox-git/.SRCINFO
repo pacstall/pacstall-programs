@@ -4,3 +4,4 @@ pkgver = 0.1.1
 pkgdesc = Open current directory in BlackBox from Nautilus context menu
 source = https://github.com/ppvan/nautilus-open-in-blackbox.git
 depends = python3-nautilus
+maintainer = Anifyuli <anifyuliansyah@gmail.com>

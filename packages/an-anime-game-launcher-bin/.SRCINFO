@@ -19,5 +19,7 @@ incompatible = ubuntu:kinetic
 incompatible = debian:stretch
 incompatible = debian:buster
 incompatible = debian:bullseye
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: an-anime-game-launcher
 sha256sums = b6a036ec76d4fc2573263fad61ff3ed1e937fa8bdf3e0cddfd79a8cd65e9bb55
 sha256sums = SKIP

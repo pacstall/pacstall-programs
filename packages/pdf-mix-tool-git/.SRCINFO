@@ -17,3 +17,4 @@ breaks = pdf-mix-tool
 breaks = pdf-mix-tool-bin
 breaks = pdf-mix-tool-app
 breaks = pdf-mix-tool-deb
+maintainer = echometerain <echometer@disroot.org>

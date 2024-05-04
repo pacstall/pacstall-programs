@@ -105,3 +105,4 @@ breaks = awesome
 breaks = awesome-bin
 replaces = awesome
 replaces = awesome-bin
+maintainer = wizard-28 <wiz28@pm.me>

@@ -13,3 +13,4 @@ makedepends = libxinerama-dev
 makedepends = libncurses5-dev
 breaks = bemenu-bin
 breaks = bemenu
+maintainer = wizard-28 <wiz28@pm.me>

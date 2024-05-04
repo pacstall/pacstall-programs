@@ -5,6 +5,7 @@ pkgdesc = Render markdown on the CLI, with pizzazz!
 arch = amd64
 arch = arm64
 replaces = glow
+repology = project: glow
 source_amd64 = https://github.com/charmbracelet/glow/releases/download/v1.5.1/glow_1.5.1_amd64.deb
 source_arm64 = https://github.com/charmbracelet/glow/releases/download/v1.5.1/glow_1.5.1_arm64.deb
 sha256sums_amd64 = 99e904f9a599f8a007817d49814b2440ff4d95bb5fb9b26763cfc5bf58c579e2

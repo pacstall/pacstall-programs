@@ -7,4 +7,5 @@ breaks = treefetch
 breaks = treefetch-git
 breaks = treefetch-deb
 breaks = treefetch-app
+maintainer = angelofallars <ba.fallaria@gmail.com>
 sha256sums = 1a835bafa75ecd2f18a53c3e0d73cf742a579106af03c4c459e5f8c873ee5187

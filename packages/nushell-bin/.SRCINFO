@@ -8,5 +8,7 @@ breaks = nushell
 breaks = nushell-git
 breaks = nushell-deb
 breaks = nushell-app
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: nushell
 sha256sums_amd64 = f6e726ebbb570cec27ad2e1f2d4bd7c78faf338920c7136566d70607aa50a167
 sha256sums_arm64 = 1585e9fe41189b49f479f39f871e6457aedc8732775a2db21ea13c7b6e580181

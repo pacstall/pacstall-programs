@@ -7,3 +7,5 @@ breaks = minecraft-launcher
 breaks = minecraft-launcher-git
 breaks = minecraft-launcher-bin
 breaks = minecraft-launcher-app
+maintainer = The Blob SCP <81673375+theblobscp@users.noreply.github.com>
+repology = project: minecraft-launcher

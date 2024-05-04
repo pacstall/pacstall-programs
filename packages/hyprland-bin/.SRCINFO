@@ -34,4 +34,6 @@ compatible = *:devel
 compatible = debian:bookworm
 compatible = debian:trixie
 compatible = debian:sid
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: hyprland
 sha256sums = 1c7bd3eeb6f795d4c95b936397489ca55f7ec6951d7efdea069bd71540007f58

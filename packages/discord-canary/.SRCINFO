@@ -19,4 +19,6 @@ depends = libcups2
 depends = libdrm2
 depends = libgtk-3-0
 depends = libgbm1
+maintainer = DismissedGuy <me@mikealmel.ooo>
+repology = project: discord-canary
 sha256sums = a8c7b282cdc463913e252db466299c0bc5fd185493bf6c5cf270cf4a1eddc75a

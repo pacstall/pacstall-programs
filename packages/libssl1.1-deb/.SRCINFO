@@ -7,4 +7,6 @@ source = http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1-1u
 breaks = libssl1.1-bin
 breaks = libssl1.1
 replaces = libssl1.1
+maintainer = Rémy Huet <remy.huet@hds.utc.fr>
+repology = project: libssl1.1
 sha256sums = 986727f5a99088bef98971edfcd9567f5693b5e941aa241894fce1020c7015a0

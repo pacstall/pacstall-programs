@@ -4,4 +4,6 @@ pkgver = 2023.12.1.402
 pkgdesc = RStudio is an integrated development environment (IDE) for R
 arch = amd64
 source = https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.1-402-amd64.deb
+maintainer = Zahrun <Zahrun@github.com>
+repology = project: rstudio
 sha256sums = 75542cc24c59404f8d62815bc0e31b43032b5032e651fa9f618dbcdca8aa7cac

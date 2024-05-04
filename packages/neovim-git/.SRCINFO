@@ -16,3 +16,4 @@ breaks = neovim-bin
 breaks = neovim
 breaks = neovim-app
 breaks = neovim-deb
+maintainer = Elsie19 <elsie19@pm.me>

@@ -17,4 +17,5 @@ makedepends = libc6-dev
 replaces = libdrm-dev
 provides = libdrm
 provides = libdrm-dev
+maintainer = Oren Klopfer <oren@taumoda.com>
 sha256sums = 3bf55363f76c7250946441ab51d3a6cc0ae518055c0ff017324ab76cdefb327a

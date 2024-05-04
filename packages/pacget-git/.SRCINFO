@@ -7,3 +7,4 @@ depends = fzf
 depends = curl
 depends = bash
 license = Don't Be a Jerk
+maintainer = Erik Lundstedt <erik@lundstedt.it>

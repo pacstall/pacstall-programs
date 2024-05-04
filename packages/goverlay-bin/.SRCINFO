@@ -7,5 +7,7 @@ source = https://raw.githubusercontent.com/benjamimgois/goverlay/master/data/ico
 depends = mangohud
 depends = libqt5pas-dev
 replaces = goverlay
+maintainer = xdavius <xdavius@github.com>
+repology = project: goverlay
 sha256sums = 47754023d12b9eb730c83fe9aeec7b8523d1dbaa9860c90928ddaa904b89aa1f
 sha256sums = SKIP

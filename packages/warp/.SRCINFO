@@ -31,4 +31,6 @@ incompatible = ubuntu:21.04
 incompatible = ubuntu:21.10
 incompatible = ubuntu:22.04
 incompatible = debian:*
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: warp-share-files
 sha256sums = b3df2017e19c7bf1477b5bd07d857d0d8fe5375ab293d932a8a4e30aba91496a

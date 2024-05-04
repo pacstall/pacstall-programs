@@ -38,4 +38,5 @@ makedepends = qt6-base-dev
 makedepends = libqt6webenginecore6-bin
 makedepends = libqt6webengine6-data
 makedepends = qml6-module-qtcharts
+maintainer = Elsie19 <elsie19@pm.me>
 sha256sums = 3aee154d0de3ed484e3e6fee027cf73e6dd0a677b3ea1af348b225ac02339008

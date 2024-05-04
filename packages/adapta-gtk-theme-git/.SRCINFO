@@ -13,3 +13,4 @@ makedepends = libxml2-utils
 makedepends = pkg-config
 makedepends = sassc
 breaks = adapta
+maintainer = Elsie19 <elsie19@pm.me>

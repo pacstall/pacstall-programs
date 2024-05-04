@@ -9,3 +9,4 @@ makedepends = cmake
 makedepends = rustc
 makedepends = pandoc
 incompatible = debian:bookworm
+maintainer = Elsie19 <elsie19@pm.me>

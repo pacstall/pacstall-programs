@@ -4,3 +4,4 @@ pkgver = 0.0.1
 pkgrel = 2
 pkgdesc = A cursor theme designed to look decent
 source = https://gitlab.com/Burning_Cube/quintom-cursor-theme.git
+maintainer = Elsie19 <elsie19@pm.me>

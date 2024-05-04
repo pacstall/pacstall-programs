@@ -16,3 +16,4 @@ makedepends = intltool
 makedepends = libxfce4ui-2-dev
 makedepends = libxfce4panel-2.0-dev
 incompatible = ubuntu:jammy
+maintainer = Oren Klopfer <oren@taumoda.com>

@@ -13,4 +13,6 @@ breaks = taskwarrior-deb
 breaks = taskwarrior-bin
 breaks = taskwarrior-git
 replaces = taskwarrior
+maintainer = JonBoyleCoding <programmerfalcon@gmail.com>
+repology = project: taskwarrior
 sha256sums = b1d3a7f000cd0fd60640670064e0e001613c9e1cb2242b9b3a9066c78862cfec

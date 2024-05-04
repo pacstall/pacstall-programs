@@ -8,4 +8,5 @@ breaks = jetbrains-toolbox-git
 breaks = jetbrains-toolbox-deb
 breaks = jetbrains-toolbox-app
 replaces = jetbrains-toolbox
+maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
 sha256sums = d819065a45d29d53646490fbd8ca45dbcaa3d544bdbc6da4494377460ddf6b79

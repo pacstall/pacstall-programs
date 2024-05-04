@@ -8,4 +8,6 @@ breaks = teams-for-linux
 breaks = teams-for-linux-git
 breaks = teams-for-linux-bin
 breaks = teams-for-linux-app
+maintainer = matusaurio <matusaurio@github.com>
+repology = project: teams-for-linux
 sha256sums = b222638dca7282a91ac6f8257e34bb7a3d74f7c4d1564ef3a04fa63dd91162e7

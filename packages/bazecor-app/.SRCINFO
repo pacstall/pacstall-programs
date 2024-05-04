@@ -11,5 +11,7 @@ breaks = bazecor
 breaks = bazecor-bin
 breaks = bazecor-deb
 breaks = bazecor-git
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: bazecor
 sha256sums = 88cbab4031740813272678e612034829877c0b9078160b8c8b826a6b7747af7a
 sha256sums = SKIP

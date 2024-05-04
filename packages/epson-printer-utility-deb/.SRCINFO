@@ -10,5 +10,7 @@ depends = libqtgui4
 incompatible = ubuntu:lunar
 incompatible = ubuntu:mantic
 incompatible = debian:*
+maintainer = Zahrun <Zahrun@github.com>
+repology = project: epson-printer-utility
 sha256sums = c34c08476ab185f8fd339e9681a3697cdb3c2e85d454be2aaed11e40b09aedff
 sha256sums = SKIP

@@ -13,5 +13,7 @@ replaces = docker-desktop
 replaces = docker-ce
 replaces = docker-ce-cli
 replaces = containerd.io
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: docker
 sha256sums_amd64 = 984d59a77fa6acab97ea725a966facd33725e0e09c2fee975397fe1c6379bd3d
 sha256sums_arm64 = fe6cf4b509307665af542a89454c2ecfbbd62670fc5a5d17bac7150a6f6a6776
