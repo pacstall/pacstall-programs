@@ -74,7 +74,7 @@ write_all() {
   local packagelist
   mapfile -t packagelist < packagelist
   export -f srcinfo
-  printf "%s\n" "${packagelist[@]}" | xargs -I {} -P "$(nproc)" bash -c 'srcinfo "packages/{}/{}.pacscript" "${parsed_distros[@]}" | tee "packages/{}/.SRCINFO" > /dev/null'
+  printf "%s\n" "${packagelist[@]}" | xargs -I {} -P "$(nproc)" bash -c 'IFS=" " read -r -a parsed_distros <<< "$parsed_distros_str"; srcinfo "packages/{}/{}.pacscript" "${parsed_distros[@]}" | tee "packages/{}/.SRCINFO" > /dev/null'
 }
 
 fetch_distros() {
@@ -86,6 +86,7 @@ fetch_distros() {
       }
       END {print "devel"}
   ')
+  export parsed_distros_str="${parsed_distros[*]}"
 }
 
 (($# <= 0)) && echo "You failed to specify a pacscript." && exit 1
@@ -96,6 +97,6 @@ case ${1} in
   *.pacscript) srcinfo "${1}" "${parsed_distros[@]}" ;;
   *) echo "Please specify a pacscript or use write_all." && exit 1 ;;
 esac
-unset parsed_distros
+unset parsed_distros parsed_distros_str
 
 # vim:set ft=sh ts=2 sw=4 noet:
