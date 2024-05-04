@@ -2,6 +2,7 @@ pkgname = element-desktop-deb
 gives = element-desktop
 pkgver = 1.11.55
 pkgdesc = Element is a feature-packed Matrix client
+url = https://element.io/
 arch = amd64
 source = https://packages.element.io/debian/pool/main/e/element-desktop/element-desktop_1.11.55_amd64.deb
 breaks = element-desktop-git

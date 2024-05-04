@@ -1,6 +1,7 @@
 pkgname = picom
 pkgver = 11.2
 pkgdesc = A lightweight compositor for X11
+url = https://github.com/yshui/picom
 source = https://github.com/yshui/picom/archive/refs/tags/v11.2.tar.gz
 depends = libconfig9
 depends = libdbus-1-3

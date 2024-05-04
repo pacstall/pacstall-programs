@@ -2,6 +2,7 @@ pkgname = xmind-vana-deb
 gives = xmind-vana
 pkgver = 23.05.1745
 pkgdesc = Mind mapping and brainstorming app
+url = https://xmind.app/
 arch = amd64
 source = https://dl3.xmind.net/Xmind-for-Linux-amd64bit-23.05.1745.deb
 repology = project: xmind

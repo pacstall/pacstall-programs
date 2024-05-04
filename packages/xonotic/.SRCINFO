@@ -2,6 +2,7 @@ pkgname = xonotic
 gives = xonotic
 pkgver = 0.8.6
 pkgdesc = The Free and Fast Arena Shooter
+url = https://xonotic.org/
 arch = amd64
 source = https://dl.unvanquished.net/share/xonotic/release/xonotic-0.8.6.zip
 breaks = xonotic-git

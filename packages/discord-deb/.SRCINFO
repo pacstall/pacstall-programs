@@ -2,6 +2,7 @@ pkgname = discord-deb
 gives = discord
 pkgver = 0.0.52
 pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
+url = https://discord.com/
 arch = amd64
 source = https://dl.discordapp.net/apps/linux/0.0.52/discord-0.0.52.deb
 breaks = discord

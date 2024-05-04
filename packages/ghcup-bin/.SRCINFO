@@ -2,6 +2,7 @@ pkgname = ghcup-bin
 gives = ghcup
 pkgver = 0.1.22.0
 pkgdesc = Installer for Haskell, a general-purpose programming language
+url = https://www.haskell.org/ghcup/
 arch = amd64
 arch = arm64
 arch = arm

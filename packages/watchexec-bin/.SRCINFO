@@ -1,6 +1,7 @@
 pkgname = watchexec-bin
 pkgver = 1.25.1
 pkgdesc = Executes commands in response to file modifications
+url = https://watchexec.github.io/
 arch = amd64
 arch = arm64
 maintainer = Andrew Barchuk <andrew@raindev.io>

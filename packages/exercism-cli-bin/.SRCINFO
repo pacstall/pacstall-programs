@@ -1,6 +1,7 @@
 pkgname = exercism-cli-bin
 pkgver = 3.2.0
 pkgdesc = Go based command line tool for exercism.org
+url = https://exercism.org
 arch = amd64
 arch = arm64
 maintainer = Andrew Barchuk <andrew@raindev.io>

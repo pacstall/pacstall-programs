@@ -2,6 +2,7 @@ pkgname = joplin-desktop-app
 gives = joplin-desktop
 pkgver = 2.14.20
 pkgdesc = Joplin - the secure note taking and to-do app with synchronisation capabilities for Windows, macOS, Linux, Android and iOS
+url = https://joplinapp.org/
 arch = amd64
 source = https://github.com/laurent22/joplin/releases/download/v2.14.20/Joplin-2.14.20.AppImage
 source = joplin-desktop.png::https://joplinapp.org/images/Icon512.png

@@ -5,6 +5,7 @@ pkgdesc = Operating environment for the new internet.
 Anytype is a next generation software that breaks
 down barriers between applications, gives back privacy
 and data ownership to users.
+url = https://anytype.io/
 arch = amd64
 source = https://github.com/anyproto/anytype-ts/releases/download/v0.37.3/anytype_0.37.3_amd64.deb
 maintainer = Anifyuli <anifyuliansyah@gmail.com>

@@ -1,6 +1,7 @@
 pkgname = hyprpicker
 pkgver = 0.2.0
 pkgdesc = wlroots-compatible Wayland color picker
+url = https://hyprland.org/
 arch = amd64
 arch = arm64
 source = https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.2.0.tar.gz

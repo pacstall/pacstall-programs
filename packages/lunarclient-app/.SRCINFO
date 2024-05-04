@@ -1,6 +1,7 @@
 pkgname = lunarclient-app
 pkgver = 3.2.4
 pkgdesc = PvP modpack for all modern versions of Minecraft
+url = https://lunarclient.com
 arch = amd64
 source = https://launcherupdates.lunarclientcdn.com/Lunar%20Client-3.2.4.AppImage
 source = https://raw.githubusercontent.com/Mythbusters123/lunarclient-app/main/lunarclient.png

@@ -1,6 +1,7 @@
 pkgname = hyprcursor-bin
 pkgver = 0.1.7
 pkgdesc = The hyprland cursor format, library and utilities
+url = https://github.com/hyprwm/hyprcursor
 arch = amd64
 source = https://github.com/hyprwm/hyprcursor/releases/download/v0.1.7/v0.1.7.tar.gz
 maintainer = Elsie19 <elsie19@pm.me>

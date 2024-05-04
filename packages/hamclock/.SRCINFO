@@ -1,6 +1,7 @@
 pkgname = hamclock
 pkgver = 3.10
 pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
+url = https://clearskyinstitute.com/ham/HamClock
 source = https://github.com/kj7rrv/hamclock/archive/refs/tags/v3.10.tar.gz
 makedepends = gcc
 makedepends = make

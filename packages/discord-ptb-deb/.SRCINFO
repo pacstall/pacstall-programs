@@ -2,6 +2,7 @@ pkgname = discord-ptb-deb
 gives = discord-ptb
 pkgver = 0.0.54
 pkgdesc = Chat for Communities and Friends - Public Test Build
+url = https://discord.com/
 arch = amd64
 source = https://dl-ptb.discordapp.net/apps/linux/0.0.54/discord-ptb-0.0.54.deb
 repology = project: discord-ptb

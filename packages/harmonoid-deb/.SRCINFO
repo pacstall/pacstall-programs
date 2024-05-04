@@ -2,6 +2,7 @@ pkgname = harmonoid-deb
 gives = harmonoid
 pkgver = 0.3.8
 pkgdesc = Plays & manages your music library. Looks beautiful & juicy. Playlists, visuals, synced lyrics, pitch shift, volume boost & more
+url = https://harmonoid.com/
 arch = amd64
 source = https://github.com/alexmercerind2/harmonoid-releases/releases/download/v0.3.8/harmonoid-linux-x86_64.deb
 maintainer = Elsie19 <elsie19@pm.me>

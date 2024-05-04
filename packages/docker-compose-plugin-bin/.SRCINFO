@@ -2,6 +2,7 @@ pkgname = docker-compose-plugin-bin
 gives = docker-compose-plugin
 pkgver = 2.24.7
 pkgdesc = Docker Compose cli plugin
+url = https://github.com/docker/compose
 arch = amd64
 arch = arm64
 replaces = docker-compose-plugin

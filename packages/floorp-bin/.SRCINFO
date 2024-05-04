@@ -2,6 +2,7 @@ pkgname = floorp-bin
 gives = floorp
 pkgver = 11.10.5
 pkgdesc = Firefox-based Browser build for keeping the Open, Private and Sustainable Web alive
+url = https://floorp.app/
 arch = amd64
 arch = arm64
 maintainer = Oren Klopfer <oren@taumoda.com>

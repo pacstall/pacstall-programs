@@ -2,6 +2,7 @@ pkgname = xcb-util-errors
 gives = libxcb-util-errors
 pkgver = 1.0.1
 pkgdesc = XCB errors library
+url = https://cgit.freedesktop.org/xcb/util-errors/
 source = https://xorg.freedesktop.org/archive/individual/lib/xcb-util-errors-1.0.1.tar.xz
 makedepends = libtool
 makedepends = xcb-proto

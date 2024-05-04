@@ -1,6 +1,7 @@
 pkgname = zig-bin
 pkgver = 0.11.0
 pkgdesc = General-purpose programming language and toolchain for maintaining robust, optimal and reusable software
+url = https://ziglang.org/
 arch = amd64
 arch = arm64
 maintainer = Andrew Barchuk <andrew@raindev.io>

@@ -2,6 +2,7 @@ pkgname = blender-bin
 gives = blender
 pkgver = 4.0.2
 pkgdesc = A fully integrated 3D graphics creation suite
+url = https://www.blender.org/
 arch = amd64
 source = https://mirrors.ocf.berkeley.edu/blender/release/Blender4.0/blender-4.0.2-linux-x64.tar.xz
 maintainer = Elsie19 <elsie19@pm.me>

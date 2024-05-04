@@ -6,5 +6,5 @@ sha256sums=("746db12e8a91409b1a47bbf4d22378e863f88c1f1656bc5aca7d824902c25254")
 maintainer=("Anifyuli <anifyuliansyah@gmail.com>")
 arch=('amd64')
 source=("https://lcdn.icons8.com/setup/Lunacy_${pkgver}.deb")
-homepage='https://icons8.com/lunacy/'
+url='https://icons8.com/lunacy/'
 repology=("project: ${gives}")

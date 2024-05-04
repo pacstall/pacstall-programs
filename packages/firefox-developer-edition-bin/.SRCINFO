@@ -2,6 +2,7 @@ pkgname = firefox-developer-edition-bin
 gives = firefox-developer-edition
 pkgver = 125.0b9
 pkgdesc = The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector.
+url = https://www.mozilla.org/en-US/firefox/developer/
 arch = amd64
 source = https://download-installer.cdn.mozilla.net/pub/devedition/releases/125.0b9/linux-x86_64/en-US/firefox-125.0b9.tar.bz2
 source = firefox-developer-edition.desktop

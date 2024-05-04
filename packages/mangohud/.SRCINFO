@@ -1,6 +1,7 @@
 pkgname = mangohud
 pkgver = 0.7.1
 pkgdesc = A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more
+url = https://github.com/flightlessmango/MangoHud
 source = https://github.com/flightlessmango/MangoHud/archive/refs/tags/v0.7.1.tar.gz
 makedepends = gcc
 makedepends = g++

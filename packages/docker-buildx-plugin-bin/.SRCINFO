@@ -2,6 +2,7 @@ pkgname = docker-buildx-plugin-bin
 gives = docker-buildx-plugin
 pkgver = 0.12.1
 pkgdesc = Docker Buildx cli plugin
+url = https://github.com/docker/buildx
 arch = amd64
 arch = arm64
 source_amd64 = https://github.com/docker/buildx/releases/download/v0.12.1/buildx-v0.12.1.linux-amd64

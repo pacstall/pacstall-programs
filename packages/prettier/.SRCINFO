@@ -1,6 +1,7 @@
 pkgname = prettier
 pkgver = 3.2.5
 pkgdesc = An opinionated code formatter
+url = https://prettier.io
 source = https://registry.npmjs.org/prettier/-/prettier-3.2.5.tgz
 depends = nodejs
 maintainer = vigress8 <vig@disroot.org>

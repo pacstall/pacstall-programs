@@ -1,6 +1,7 @@
 pkgname = flyctl-bin
 pkgver = 0.2.31
 pkgdesc = Command line tool for fly.io services
+url = https://fly.io
 arch = amd64
 arch = arm64
 maintainer = Andrew Barchuk <andrew@raindev.io>

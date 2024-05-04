@@ -1,6 +1,7 @@
 pkgname = discord-canary
 pkgver = 0.0.327
 pkgdesc = Chat for Communities and Friends - Unstable
+url = https://discord.com/
 arch = amd64
 source = https://dl-canary.discordapp.net/apps/linux/0.0.327/discord-canary-0.0.327.tar.gz
 depends = libc6
