@@ -36,7 +36,8 @@ function gen.srcinfo() {
         ars="${ars%[[:space:]]}"
         if [[ ${ars} =~ CARCH_REPLACE ]]; then
           for aars in "${arch[@]}"; do
-            echo "${ar}_${aars} = ${ars}" | sed -e "s/CARCH_REPLACE/${aars}/g"
+            : "${ar}_${aars} = ${ars}"
+            echo "${_//CARCH_REPLACE/${aars}}"
           done
         else
           echo "${ar} = ${ars}"
