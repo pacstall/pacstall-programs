@@ -74,8 +74,7 @@ write_all() {
   local packagelist
   mapfile -t packagelist < packagelist
   export -f srcinfo
-  printf "%s\n" "${packagelist[@]}" | xargs -I {} -P $(nproc) bash -c 'srcinfo "packages/{}/{}.pacscript" "${parsed_distros[@]}" | tee "packages/{}/.SRCINFO" > /dev/null'
-  unset parsed_distros
+  printf "%s\n" "${packagelist[@]}" | xargs -I {} -P "$(nproc)" bash -c 'srcinfo "packages/{}/{}.pacscript" "${parsed_distros[@]}" | tee "packages/{}/.SRCINFO" > /dev/null'
 }
 
 fetch_distros() {
@@ -95,7 +94,7 @@ fetch_distros
 case ${1} in
   "write_all") write_all ;;
   *.pacscript) srcinfo "${1}" "${parsed_distros[@]}" ;;
-  *) echo "please specify a pacscript or use write_all" && exit 1 ;;
+  *) echo "Please specify a pacscript or use write_all." && exit 1 ;;
 esac
 unset parsed_distros
 
