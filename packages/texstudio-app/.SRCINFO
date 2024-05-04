@@ -2,6 +2,7 @@ pkgname = texstudio-app
 gives = texstudio
 pkgver = 4.7.2
 pkgdesc = A fully featured LaTeX editor
+url = https://www.texstudio.org
 arch = amd64
 source = https://github.com/texstudio-org/texstudio/releases/download/4.7.2/texstudio-4.7.2-x86_64.AppImage
 replaces = texstudio

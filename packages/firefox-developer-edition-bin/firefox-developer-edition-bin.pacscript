@@ -8,7 +8,7 @@ source=(
   "${gives}.desktop"
   "${gives}.png::https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
 )
-homepage='https://www.mozilla.org/en-US/firefox/developer/'
+url='https://www.mozilla.org/en-US/firefox/developer/'
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 sha256sums=(
   "044ecea7ba76658458a4993bdde9f3ee11f728ee80f30814549a0650479918d5"

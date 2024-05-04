@@ -2,6 +2,7 @@ pkgname = neovim-app
 gives = neovim
 pkgver = 0.9.5
 pkgdesc = Vim fork maintained by the community
+url = https://neovim.io/
 source = https://github.com/neovim/neovim/releases/download/v0.9.5/nvim.appimage
 depends = libfuse2
 makedepends = libfuse2
