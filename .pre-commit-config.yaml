@@ -41,7 +41,7 @@ repos:
       - id: update-srcinfo
         name: update .SRCINFO data
         language: system
-        entry: ./srcinfo.sh
+        entry: ./scripts/srcinfo.sh
         files: '^.*\.pacscript$'
 
 # vim:set ft=yaml ts=2 sw=2 et:
