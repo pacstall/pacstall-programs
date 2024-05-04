@@ -74,6 +74,7 @@ write_all() {
   local packagelist
   mapfile -t packagelist < packagelist
   export -f srcinfo
+  # shellcheck disable=SC2016
   printf "%s\n" "${packagelist[@]}" | xargs -I {} -P "$(nproc)" bash -c 'IFS=" " read -r -a parsed_distros <<< "$parsed_distros_str"; srcinfo "packages/{}/{}.pacscript" "${parsed_distros[@]}" | tee "packages/{}/.SRCINFO" > /dev/null'
 }
 
