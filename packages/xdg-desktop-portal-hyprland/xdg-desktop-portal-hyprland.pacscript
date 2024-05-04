@@ -12,7 +12,7 @@ sha256sums=(
   "SKIP"
 )
 compatible=('ubuntu:devel' 'debian:sid' 'ubuntu:mantic' 'ubuntu:noble')
-homepage='https://hyprland.org/'
+url='https://hyprland.org/'
 pkgdesc="xdg-desktop-portal backend for hyprland"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=("amd64" "arm64")

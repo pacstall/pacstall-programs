@@ -1,6 +1,7 @@
 pkgname = flyctl-bin
 pkgver = 0.2.31
 pkgdesc = Command line tool for fly.io services
+url = https://fly.io
 arch = amd64
 arch = arm64
 source_amd64 = https://github.com/superfly/flyctl/releases/download/v0.2.31/flyctl_0.2.31_Linux_x86_64.tar.gz

@@ -2,6 +2,7 @@ pkgname = cider-deb
 gives = cider
 pkgver = 1.6.1
 pkgdesc = A new look into listening and enjoying music in style and performance
+url = https://cider.sh/
 arch = amd64
 source = https://github.com/ciderapp/Cider/releases/download/v1.6.1/cider_1.6.1_amd64.deb
 sha256sums = 9bcf27d7ae9d3dc6e5f56f7024997a506410f4a5a2d442005bde2b396f136b12

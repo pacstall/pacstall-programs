@@ -1,7 +1,7 @@
 pkgname="neovim"
 pkgver="0.9.5"
 source=("https://github.com/neovim/neovim/archive/refs/tags/v${pkgver}.tar.gz")
-homepage='https://neovim.io/'
+url='https://neovim.io/'
 makedepends=("gettext" "libtool" "libtool-bin" "autoconf" "automake" "cmake" "g++" "pkg-config")
 replaces=("neovim" "nvim" "neovim-runtime")
 pkgdesc="Neovim is a vim fork maintained by the community"

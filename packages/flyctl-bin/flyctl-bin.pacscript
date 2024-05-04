@@ -7,7 +7,7 @@ sha256sums_arm64=("b7d5b38c6e6e0d6907520db81caf66cefd086a34d959b9d1fcf7427510f63
 source_amd64=("https://github.com/superfly/flyctl/releases/download/v${pkgver}/flyctl_${pkgver}_Linux_x86_64.tar.gz")
 source_arm64=("https://github.com/superfly/flyctl/releases/download/v${pkgver}/flyctl_${pkgver}_Linux_arm64.tar.gz")
 pkgdesc="Command line tool for fly.io services"
-homepage='https://fly.io'
+url='https://fly.io'
 maintainer=("Andrew Barchuk <andrew@raindev.io>")
 
 package() {

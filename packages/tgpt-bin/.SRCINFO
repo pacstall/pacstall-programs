@@ -2,6 +2,7 @@ pkgname = tgpt-bin
 gives = tgpt
 pkgver = 2.7.3
 pkgdesc = AI chatbots in terminal without needing API keys
+url = https://github.com/aandrew-me/tgpt
 arch = amd64
 arch = arm64
 arch = armhf

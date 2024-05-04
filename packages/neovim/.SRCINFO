@@ -1,6 +1,7 @@
 pkgname = neovim
 pkgver = 0.9.5
 pkgdesc = Neovim is a vim fork maintained by the community
+url = https://neovim.io/
 source = https://github.com/neovim/neovim/archive/refs/tags/v0.9.5.tar.gz
 makedepends = gettext
 makedepends = libtool

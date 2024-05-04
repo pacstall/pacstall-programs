@@ -1,6 +1,7 @@
 pkgname = hyprpaper
 pkgver = 0.4.0
 pkgdesc = Wayland wallpaper utility with IPC controls
+url = https://hyprland.org/
 arch = amd64
 arch = arm64
 source = https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.4.0.tar.gz
