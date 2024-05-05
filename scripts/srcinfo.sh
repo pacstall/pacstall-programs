@@ -22,7 +22,7 @@
 # along with Pacstall. If not, see <https://www.gnu.org/licenses/>.
 
 function vars.srcinfo() {
-  local var ar aars bar ars rar _distros _vars _archs _sums distros \
+  local _distros _vars _archs _sums distros \
     vars="source depends makedepends optdepends pacdeps checkdepends provides conflicts breaks replaces" \
     archs="amd64 arm64 armel armhf i386 mips64el ppc64el riscv64 s390x" \
     sums="b2 sha512 sha384 sha256 sha224 sha1 md5"
@@ -40,7 +40,7 @@ function vars.srcinfo() {
 }
 
 function gen.srcinfo() {
-  local CARCH='CARCH_REPLACE' DISTRO='ubuntu:jammy'
+  local CARCH='CARCH_REPLACE' DISTRO='ubuntu:jammy' var ar aars bar ars rar
   # shellcheck disable=SC1090
   source "${1}"
   for var in "${allvars[@]}"; do
@@ -60,6 +60,7 @@ function gen.srcinfo() {
         ars="${ars#[[:space:]]}"
         ars="${ars%[[:space:]]}"
         if [[ ${ars} =~ CARCH_REPLACE ]]; then
+          [[ -z ${arch[*]} ]] && arch=('amd64')
           for aars in "${arch[@]}"; do
             : "${ar}_${aars} = ${ars}"
             echo "${_//CARCH_REPLACE/${aars}}"
