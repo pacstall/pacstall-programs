@@ -6,9 +6,9 @@ depends=(
   'libfile-chdir-perl'
   'libipc-system-simple-perl'
   'libjson-perl'
-  'libwww-perl'
   'liblist-moreutils-perl'
   'libterm-progressbar-perl'
+  'libwww-perl'
 )
 replaces=(
   "${pkgname}"
@@ -17,7 +17,8 @@ replaces=(
   "${pkgname}-bin"
   "${pkgname}-git"
 )
-source=("https://github.com/pacstall/${pkgname}/archive/refs/tags/${pkgver}.zip")
+source=("https://github.com/pacstall/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('452b744b7c1181363d459d1419197e3cf87eb4c670b257d45067dacb129cc9a0')
 maintainer=(
   'vigress8 <vig@disroot.org>'
   'Oren Klopfer <oren@taumoda.com>'
