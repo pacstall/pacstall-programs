@@ -1,7 +1,7 @@
 pkgname="stockfish-git"
 gives="stockfish"
 pkgdesc="The Stockfish chess engine"
-homepage='https://stockfishchess.org/'
+url='https://stockfishchess.org/'
 source=("https://github.com/official-stockfish/Stockfish.git")
 maintainer=("pythoncrazy <encryptprogramming@gmail.com>")
 pkgver="0.0.1"

@@ -6,5 +6,7 @@ source = https://github.com/mymonero/mymonero-app-js/releases/download/v1.3.3/My
 source = MyMonero.png::https://github.com/mymonero/mymonero-app-js/raw/master/build/icon.png
 depends = libfuse2
 makedepends = libfuse2
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: mymonero
 sha256sums = fd53a237be201dc6e10cc0a9136fb02be1522622b0de67798c34623ca2ecddef
 sha256sums = SKIP

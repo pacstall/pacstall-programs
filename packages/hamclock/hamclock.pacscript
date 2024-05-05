@@ -1,7 +1,7 @@
 pkgname="hamclock"
 pkgver="3.10"
 source=("https://github.com/kj7rrv/hamclock/archive/refs/tags/v${pkgver}.tar.gz")
-homepage='https://clearskyinstitute.com/ham/HamClock'
+url='https://clearskyinstitute.com/ham/HamClock'
 makedepends=("gcc" "make" "pkg-config" "libxau6" "libx11-6" "libx11-dev" "libxcb1")
 breaks=("hamclock-big" "hamclock-bigger" "hamclock-huge")
 replaces=("hamclock")

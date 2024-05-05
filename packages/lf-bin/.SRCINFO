@@ -22,3 +22,5 @@ source_ppc64el = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-p
 source_s390x = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-s390x.tar.gz
 breaks = lf-git
 replaces = lf
+maintainer = Romario <romariorobby@yahoo.com>
+repology = project: lf

@@ -7,4 +7,6 @@ arch = arm64
 arch = i386
 source = https://github.com/mawww/kakoune/archive/refs/tags/v2023.08.05.tar.gz
 replaces = kakoune
+maintainer = vigress8 <vig@disroot.org>
+repology = project: kakoune
 sha256sums = 1ad7bfe9e1d861115cd418cb500990ea5fa63726e998df13702e5caa8fc84356

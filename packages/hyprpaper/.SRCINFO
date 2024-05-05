@@ -1,6 +1,7 @@
 pkgname = hyprpaper
 pkgver = 0.4.0
 pkgdesc = Wayland wallpaper utility with IPC controls
+url = https://hyprland.org/
 arch = amd64
 arch = arm64
 source = https://github.com/hyprwm/hyprpaper/archive/refs/tags/v0.4.0.tar.gz
@@ -18,4 +19,6 @@ compatible = ubuntu:devel
 compatible = debian:sid
 compatible = ubuntu:mantic
 compatible = ubuntu:noble
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: hyprpaper
 sha256sums = cabd8181aa64dead3a0ed6e801e391c54b07f3400eecb9dcf2a01ac5d1cf47d3

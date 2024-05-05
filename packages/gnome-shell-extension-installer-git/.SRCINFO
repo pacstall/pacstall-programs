@@ -6,3 +6,4 @@ source = https://github.com/brunelli/gnome-shell-extension-installer.git
 depends = curl
 depends = perl
 depends = dbus
+maintainer = D-Brox <BroxZuka@protonmail.com>

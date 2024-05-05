@@ -25,3 +25,4 @@ breaks = steamtinkerlaunch-git-app
 breaks = steamtinkerlaunch-git-deb
 breaks = steamtinkerlaunch-git-bin
 replaces = steamtinkerlaunch
+maintainer = echometerain <echometer@disroot.org>

@@ -5,4 +5,7 @@ pkgdesc = Signal Private Messenger for Linux
 arch = amd64
 source = https://updates.signal.org/desktop/apt/pool/s/signal-desktop/signal-desktop_6.44.1_amd64.deb
 breaks = signal-desktop-app
+maintainer = Jon Banafato <pacstall@jonafato.com>
+repology = project: signal-desktop
+repology = repo: arch
 sha256sums = 4f73003779f66f202e2a96aa92d39a64463fdad3c527279b46a7375801a2a580

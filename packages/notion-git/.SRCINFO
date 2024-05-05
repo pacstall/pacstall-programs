@@ -14,3 +14,4 @@ depends = libxinerama-dev
 depends = libxrandr-dev
 depends = libxft-dev
 breaks = notion
+maintainer = edward-riley <edward@edwardriley.co.uk>

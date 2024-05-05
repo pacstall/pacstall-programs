@@ -5,4 +5,6 @@ pkgdesc = A beautiful and customizable wallpaper manager for Linux
 arch = amd64
 source = https://github.com/Komorebi-Fork/komorebi/releases/download/v2.2.1/komorebi_2.2.1-1_amd64.deb
 replaces = komorebi
+maintainer = 0x262D <pacstall@copypaste.anonaddy.me>
+repology = project: komorebi-fork
 sha256sums = 86ef373fb2fb645cdf72af192916dbe278d886283e1ee534843b6d259f3c08ab

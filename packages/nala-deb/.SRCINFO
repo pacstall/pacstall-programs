@@ -8,4 +8,5 @@ breaks = nala
 breaks = nala-git
 breaks = nala-bin
 breaks = nala-app
+maintainer = Blake Lee <blake@volian.org>
 sha256sums = 39cfaa52418978aaf8e069528b3c0bd3cb80b1324f9ac2374365e1f645ed18f1

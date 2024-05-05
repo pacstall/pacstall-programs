@@ -5,4 +5,6 @@ pkgdesc = AnyDesk provides platform independent remote access to personal comput
 arch = amd64
 source = http://deb.anydesk.com/pool/main/a/anydesk/anydesk_6.3.0_amd64.deb
 breaks = anydesk-bin
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: anydesk
 sha256sums = 30f6e44cea28428d1cb645055fae72cf166f63318e0c94f2c12d18a3614ce30c

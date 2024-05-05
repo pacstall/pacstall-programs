@@ -8,3 +8,4 @@ makedepends = libexo-2-dev
 makedepends = libgarcon-1-dev
 makedepends = libxfce4ui-2-dev
 replaces = xfce4-settings
+maintainer = Oren Klopfer <oren@taumoda.com>

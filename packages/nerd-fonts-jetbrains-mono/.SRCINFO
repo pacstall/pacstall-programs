@@ -3,4 +3,6 @@ pkgver = 3.1.1
 pkgdesc = Patched font JetBrains Mono from Nerd Fonts library
 source = https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.tar.xz
 replaces = nerd-fonts-jetbrains-mono
+maintainer = Damian Bednarczyk <dbednar230@gmail.com>
+repology = project: fonts:nerd-fonts
 sha256sums = 92225abcacf2fe500c59c5f16962528909a0c5caec8e2aa14a6546ff268a1db9

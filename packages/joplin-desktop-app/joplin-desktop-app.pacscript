@@ -3,7 +3,7 @@ gives="joplin-desktop"
 pkgver="2.14.20"
 makedepends=("libfuse2")
 depends=("libfuse2")
-homepage='https://joplinapp.org/'
+url='https://joplinapp.org/'
 pkgdesc="Joplin - the secure note taking and to-do app with synchronisation capabilities for Windows, macOS, Linux, Android and iOS"
 source=(
   "https://github.com/laurent22/joplin/releases/download/v${pkgver}/Joplin-${pkgver}.AppImage"

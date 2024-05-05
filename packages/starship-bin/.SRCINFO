@@ -8,4 +8,6 @@ breaks = starship
 breaks = starship-deb
 breaks = starship-app
 breaks = starship-git
+maintainer = charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>
+repology = project: starship
 sha256sums = bb797f4af36138581cb43d36f432d54312360da21dff4c38545675c7873758ae

@@ -8,3 +8,4 @@ depends = python3-cairo
 depends = python-gi-dev
 breaks = obquit
 breaks = obquit-bin
+maintainer = Lanius <laniusone@pm.me>

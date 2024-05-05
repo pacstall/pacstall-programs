@@ -18,5 +18,7 @@ breaks = geforcenow-electron
 breaks = geforcenow-electron-deb
 breaks = geforcenow-electron-app
 breaks = geforcenow-electron-git
+maintainer = Marie Piontek <marie@kaifa.ch>
+repology = project: geforcenow-electron
 sha256sums = 43ce97be4029df53b5f8e7d3a8d93c2a6857a69aaf4213be4f4a6dfd0432d75e
 sha256sums = SKIP

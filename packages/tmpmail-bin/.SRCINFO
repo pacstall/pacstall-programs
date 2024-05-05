@@ -10,4 +10,6 @@ breaks = tmpmail
 breaks = tmpmail-git
 breaks = tmpmail-deb
 breaks = tmpmail-app
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: tmpmail
 sha256sums = 8d12f5474b89ee585413ec32cc9991a971a00e8bb63ac8e5a2e736f734f37cfb

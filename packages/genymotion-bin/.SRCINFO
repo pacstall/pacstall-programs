@@ -11,4 +11,6 @@ breaks = genymotion-git
 breaks = genymotion-app
 breaks = genymotion-deb
 replaces = genymotion
+maintainer = Arrowsome <ramtintoosi@gmail.com>
+repology = project: genymotion
 sha256sums = 092d40f6e76de3b6e1827609aaa9021b7cf85da3d51e6cf8d7b553b18d9c70e0

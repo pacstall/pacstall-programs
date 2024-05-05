@@ -4,4 +4,6 @@ pkgver = 4.2.2mobian1
 pkgdesc = Deb packaging for u-boot-menu with Mobian patches
 source = https://repo.mobian-project.org/pool/main/u/u-boot-menu/u-boot-menu_4.2.2mobian1_all.deb
 replaces = u-boot-menu
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: u-boot-menu
 sha256sums = 6fffdf8359c0514e0f841cdf27726e05f582884b55e436235defc2c02d759f31

@@ -36,3 +36,4 @@ makedepends = python3
 makedepends = python3-wheel
 makedepends = python3-setuptools
 makedepends = gnome-menus
+maintainer = Oren Klopfer <oren@taumoda.com>

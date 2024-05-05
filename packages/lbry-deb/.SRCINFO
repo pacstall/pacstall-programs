@@ -7,4 +7,5 @@ breaks = lbry
 breaks = lbry-bin
 breaks = lbry-git
 breaks = lbry-app
+maintainer = Madiator2011 <admin@madiator.com>
 sha256sums = 31ca3c2909b74f84cbf4ee9918cf437965063a3bc017bd1eed49c8bba928b4ff

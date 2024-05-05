@@ -7,4 +7,5 @@ source = https://github.com/mullvad/mullvadvpn-app/releases/download/2024.2/Mull
 breaks = mullvad-vpn-beta-deb
 breaks = mullvad-vpn-git
 replaces = mullvad-vpn
+repology = project: mullvad-vpn
 sha256sums = c8e4b5574538816310d777a214ab01e0c9fba31411e6d42b3564fd2cec4357f3

@@ -10,4 +10,7 @@ breaks = qogir-gtk-theme
 breaks = qogir-gtk-theme-git
 breaks = qogir-gtk-theme-deb
 breaks = qogir-gtk-theme-app
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: qogir-theme
+repology = repo: nix_unstable
 sha256sums = 211d2d7e027fe595e7512ca346b63a9314ee59e3ddee875bc1c06aeef9e5b9bb

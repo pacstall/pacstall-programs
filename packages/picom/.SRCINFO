@@ -1,6 +1,7 @@
 pkgname = picom
 pkgver = 11.2
 pkgdesc = A lightweight compositor for X11
+url = https://github.com/yshui/picom
 source = https://github.com/yshui/picom/archive/refs/tags/v11.2.tar.gz
 depends = libconfig9
 depends = libdbus-1-3
@@ -58,4 +59,6 @@ breaks = picom-git
 breaks = ibhagwan-picom-git
 breaks = jonaburg-picom-git
 replaces = picom
+maintainer = vigress8 <vig@disroot.org>
+repology = project: picom
 sha256sums = 1c1063936faf09ed9bba726e7737a562564b7a5f8cdef79d48fcdaf3669a4df4

@@ -19,4 +19,6 @@ incompatible = debian:testing
 incompatible = *:bionic
 incompatible = *:focal
 incompatible = *:kinetic
+maintainer = Arrowsome <ramtintoosi@gmail.com>
+repology = project: megasync
 sha256sums = 5b8ce6c03a0a933832451eab2425519e7fa8480f58b5a0c6d9457476ec0e9aa1

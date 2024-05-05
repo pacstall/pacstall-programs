@@ -1,6 +1,7 @@
 pkgname = pipewire
 pkgver = 0.3.65
 pkgdesc = Server and user space API to deal with multimedia pipelines
+url = https://pipewire.org/
 source = https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.65/pipewire-0.3.65.zip
 makedepends = meson
 makedepends = libdbus-1-dev
@@ -25,4 +26,5 @@ makedepends = pkg-config
 makedepends = python3-docutils
 makedepends = python3-pip
 incompatible = debian:stable
+maintainer = Elsie19 <elsie19@pm.me>
 sha256sums = f5fbe0028b56a9e9cc6c9fbb4e3e73d108bb818895f6fed3cd62d1a1b6fc4c30

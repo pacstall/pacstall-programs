@@ -6,3 +6,4 @@ source = https://github.com/rhino-linux/rhino-pkg.git
 depends = gettext
 makedepends = make
 makedepends = gettext
+maintainer = Oren Klopfer <oren@taumoda.com>

@@ -19,4 +19,6 @@ depends = libqt5svg5-dev
 depends = libebur128-1
 depends = libmusicbrainz5cc2v5
 depends = libqt5multimedia5
+maintainer = ty1118 <tylerbj16@gmail.com>
+repology = project: cantata
 sha256sums = eb7e00ab3f567afaa02ea2c86e2fe811a475afab93182b95922c6eb126821724

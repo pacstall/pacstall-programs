@@ -18,4 +18,6 @@ optdepends = abook: contact store and tab completion
 optdepends = cron: set up automatic mail syncing
 breaks = mutt-wizard
 breaks = mutt-wizard-git
+maintainer = JonBoyleCoding <programmerfalcon@gmail.com>
+repology = project: mutt-wizard
 sha256sums = 4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53
