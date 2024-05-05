@@ -5,6 +5,7 @@ makedepends="cargo libonig-dev pkg-config"
 depends=("libonig5")
 replaces=("bat")
 pkgdesc="A cat(1) clone with wings"
+external_connection=true
 sha256sums=("907554a9eff239f256ee8fe05a922aad84febe4fe10a499def72a4557e9eedfb")
 
 build() {
