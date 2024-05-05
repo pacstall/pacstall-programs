@@ -1,5 +1,4 @@
 name="figma-linux-deb"
-pkgname="figma-linux"
 gives="figma-linux"
 arch=('amd64')
 pkgver="0.11.3"
