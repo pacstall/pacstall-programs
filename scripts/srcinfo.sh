@@ -23,6 +23,11 @@
 
 shopt -s extglob
 
+function die() {
+  printf >&2 'ERROR: %s\n' "$@"
+  exit 1
+}
+
 function vars.srcinfo() {
   local _distros _vars _archs _sums distros \
     vars="source depends makedepends optdepends pacdeps checkdepends provides conflicts breaks replaces" \
@@ -38,7 +43,6 @@ function vars.srcinfo() {
   _vars="{${vars// /,}}" _archs="{${archs// /,}}" _sums="{${sums// /,}}"
   eval "allars+=(${_vars}_${_archs} ${_sums}sums ${_sums}sums_${_archs})"
   eval "allvars+=(gives_${_archs})"
-  export allars allvars
 }
 
 function gen.srcinfo() {
@@ -76,13 +80,13 @@ function gen.srcinfo() {
   unset "${allars[@]}" "${allvars[@]}"
 }
 
-(($# <= 0)) && echo "You failed to specify a pacscript." && exit 1
+(($# <= 0)) && die "You failed to specify a pacscript"
 
 vars.srcinfo
 for i in "${@}"; do
+  [[ -f ${i} && -w ${i} ]] || die "Not a file: ${i}"
   gen.srcinfo "${i}" > "${i%/*.pacscript}"/.SRCINFO &
 done
 wait
-unset allars allvars
 
 # vim:set ft=sh ts=2 sw=4 noet:
