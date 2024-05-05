@@ -5,6 +5,7 @@ pkgdesc="Tree command, improved"
 source=("https://github.com/dduan/tre.git")
 pkgver="0.4.0"
 maintainer=("Diego Magdaleno <diegomagdaleno@pm.me>")
+external_connection=true
 incompatible=("debian:bullseye")
 
 build() {

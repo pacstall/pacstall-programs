@@ -5,6 +5,7 @@ pkgver="0.18.9"
 url='https://the.exa.website/'
 makedepends=("cargo" "libgit2-dev" "cmake" "rustc" "pandoc")
 pkgdesc="A modern, maintained replacement for ls"
+external_connection=true
 maintainer=("Elsie19 <elsie19@pm.me>")
 incompatible=('debian:bookworm')
 

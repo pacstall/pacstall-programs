@@ -4,6 +4,7 @@ repology=("project: helix")
 source=("https://github.com/helix-editor/helix/releases/download/${pkgver}/helix-${pkgver}-source.tar.xz")
 makedepends=("cargo")
 pkgdesc="A post-modern modal text editor"
+external_connection=true
 sha256sums=("c59a5988f066c2ab90132e03a0e6b35b3dd89f48d3d78bf0ec81bd7d88c7677e")
 
 build() {

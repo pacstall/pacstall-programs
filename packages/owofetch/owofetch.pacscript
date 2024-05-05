@@ -8,6 +8,7 @@ breaks=("owofetch-git")
 arch=('any')
 makedepends=("cargo")
 maintainer=("Herisson <spaceguybox@outlook.com>")
+external_connection=true
 repology=("project: owofetch")
 
 package() {

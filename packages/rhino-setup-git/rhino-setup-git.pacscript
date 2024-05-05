@@ -8,6 +8,7 @@ gives="rhino-setup"
 replaces="${gives}-bin"
 pkgdesc="Rhino Linux Setup Prompt"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
+external_connection=true
 incompatible=("debian:*")
 
 build() {

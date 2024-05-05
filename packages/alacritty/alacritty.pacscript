@@ -6,6 +6,7 @@ makedepends=("cargo" "cmake" "pkg-config" "libfreetype6-dev" "libfontconfig1-dev
 pkgdesc="A fast, cross-platform, OpenGL terminal emulator"
 maintainer=("Warofzen <warofzen1@protonmail.com>")
 incompatible=('debian:bullseye' 'debian:bookworm')
+external_connection=true
 sha256sums=("e9a54aabc92bbdc25ab1659c2e5a1e9b76f27d101342c8219cc98a730fd46d90")
 
 build() {
