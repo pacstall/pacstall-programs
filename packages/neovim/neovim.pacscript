@@ -7,6 +7,7 @@ replaces=("neovim" "nvim" "neovim-runtime")
 pkgdesc="Neovim is a vim fork maintained by the community"
 sha256sums=("fe74369fc30a32ec7a086b1013acd0eacd674e7570eb1acc520a66180c9e9719")
 maintainer=("Elsie19 <elsie19@pm.me>")
+external_connection=true
 repology=("project: ${pkgname}")
 
 build() {

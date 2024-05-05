@@ -6,6 +6,7 @@ url='https://neovim.io/'
 pkgdesc="Vim fork maintained by the community"
 maintainer=("Elsie19 <elsie19@pm.me>")
 makedepends=("ninja-build" "gettext" "libtool-bin" "autoconf" "automake" "cmake" "g++" "pkg-config" "unzip")
+external_connection=true
 breaks=("neovim-bin" "neovim" "neovim-app" "neovim-deb")
 
 build() {
