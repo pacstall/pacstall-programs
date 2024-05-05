@@ -20,3 +20,4 @@ replaces = rhino-server-core
 replaces = rhino-ubxi-core
 compatible = ubuntu:devel
 compatible = ubuntu:oracular
+maintainer = Oren Klopfer <oren@taumoda.com>

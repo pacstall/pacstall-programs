@@ -4,4 +4,7 @@ pkgver = 122.0.6253.3
 pkgdesc = The web browser built by Google - Developer/Unstable channel
 arch = amd64
 source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_122.0.6253.3-1_amd64.deb
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: google-chrome
+repology = visiblename: google-chrome-dev
 sha256sums = 3fa6086320a475e7815bafd4088e4173a15a2526f26770d4b77763d89e9b2054

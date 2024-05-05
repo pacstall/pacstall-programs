@@ -11,3 +11,4 @@ depends = desktop-file-utils
 breaks = pacstall-gui
 breaks = pacstall-gui-bin
 breaks = pacstall-gui-deb
+maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>

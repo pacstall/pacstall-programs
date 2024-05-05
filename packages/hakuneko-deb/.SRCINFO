@@ -7,6 +7,7 @@ arch = amd64
 arch = arm64
 arch = armhf
 arch = i386
+maintainer = Diegiwg <diegiwg@gmail.com>
 source_amd64_amd64 = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_amd64.deb
 source_amd64_arm64 = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_arm64.deb
 source_amd64_armhf = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_armhf.deb

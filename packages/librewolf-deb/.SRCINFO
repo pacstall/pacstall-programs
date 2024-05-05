@@ -9,4 +9,6 @@ breaks = librewolf-bin
 breaks = librewolf-git
 replaces = librewolf
 incompatible = debian:bullseye
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: librewolf
 sha256sums = 1b7105ba3b8ad8e084e02eb7bbe46377c178ef49543b4fad0d48f31c2df80ec6

@@ -35,3 +35,4 @@ makedepends = liblttng-ust-dev
 makedepends = python3-jinja2
 makedepends = lttng-tools
 makedepends = meson
+maintainer = Oren Klopfer <oren@taumoda.com>

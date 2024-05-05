@@ -7,4 +7,6 @@ source = https://github.com/cli/cli/releases/download/v2.42.1/github-cli_2.42.1_
 breaks = github-cli-git
 breaks = github-cli-deb
 replaces = github-cli
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: github-cli
 sha256sums = c82c865545549131f284bf4df73c03c63971a87286fce5ab5d11c9dc0cee2cbb

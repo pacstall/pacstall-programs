@@ -5,4 +5,7 @@ pkgdesc = Signal Private Messenger for Linux (Beta)
 arch = amd64
 source = https://updates.signal.org/desktop/apt/pool/main/s/signal-desktop-beta/signal-desktop-beta_6.15.0-beta.1_amd64.deb
 breaks = signal-desktop-beta-app
+maintainer = Jon Banafato <pacstall@jonafato.com>
+repology = project: signal-desktop
+repology = visiblename: signal-desktop-beta-bin
 sha256sums = 69e246c01a00b3a883a558c1ce572ceeaf49be7fe1dca2dc095de6d728cc4cd4

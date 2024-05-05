@@ -9,5 +9,6 @@ breaks = sidequest
 breaks = sidequest-git
 breaks = sidequest-deb
 breaks = sidequest-app
+repology = project: sidequest
 sha256sums = 8228904ed14a4a67038c18be349056b7e7ad713537536473a00a0744ed061fd1
 sha256sums = SKIP

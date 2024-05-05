@@ -63,4 +63,6 @@ compatible = ubuntu:devel
 compatible = debian:sid
 compatible = ubuntu:mantic
 compatible = ubuntu:noble
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: hyprland
 sha256sums = de53d764606131c8aacc209f8a3ad6e619fdcddd16a7cdf4d8ca343816bb8c1b

@@ -26,4 +26,5 @@ makedepends = pkg-config
 makedepends = python3-docutils
 makedepends = python3-pip
 incompatible = debian:stable
+maintainer = Elsie19 <elsie19@pm.me>
 sha256sums = f5fbe0028b56a9e9cc6c9fbb4e3e73d108bb818895f6fed3cd62d1a1b6fc4c30

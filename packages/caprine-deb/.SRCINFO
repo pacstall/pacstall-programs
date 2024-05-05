@@ -4,4 +4,6 @@ pkgver = 2.58.0
 pkgdesc = Elegant Facebook Messenger desktop app
 arch = amd64
 source = https://github.com/sindresorhus/caprine/releases/download/v2.58.0/caprine_2.58.0_amd64.deb
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: caprine
 sha256sums = f8f9e5a1cf532b9a51188ec7300dcbcb379b6bcb652e305c86618fc028f37671

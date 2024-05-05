@@ -13,5 +13,6 @@ depends = libadwaita-1-0
 replaces = rhino-setup
 replaces = rhino-setup-git
 incompatible = debian:*
+maintainer = Oren Klopfer <oren@taumoda.com>
 sha256sums_amd64 = ebc2bb8598f0eaa319b814f0fe41de994b018e11a8e1445201ca091f3cb69163
 sha256sums_arm64 = b8e72f47cae41c70322cfc97f9e72096e848f51a786e2b032154a121c9e42a3d

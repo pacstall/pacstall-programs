@@ -7,3 +7,4 @@ makedepends = bison
 makedepends = libpam0g-dev
 breaks = opendoas
 breaks = opendoas-bin
+maintainer = wizard-28 <wiz28@pm.me>

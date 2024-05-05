@@ -27,3 +27,4 @@ makedepends = libboost-python-dev
 makedepends = libboost-log-dev
 makedepends = libboost-regex-dev
 breaks = vega-strike
+maintainer = echometerain <echometer@disroot.org>

@@ -5,4 +5,6 @@ pkgdesc = Streaming music player that finds free music for you
 source = https://github.com/nukeop/nuclear/releases/download/e8fcb6/nuclear-e8fcb6.deb
 breaks = nuclear
 breaks = nuclear-app
+maintainer = AloneER0 <aloneer0@outlook.com>
+repology = project: nuclear
 sha256sums = 10b3d9fafbe07ad9feb89747c6cf06e3b2288f021d197f2880042434774e8008

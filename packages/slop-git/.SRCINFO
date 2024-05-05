@@ -13,3 +13,4 @@ makedepends = libxcomposite-dev
 makedepends = libxrandr-dev
 breaks = slop-bin
 breaks = slop
+maintainer = Elsie19 <elsie19@pm.me>

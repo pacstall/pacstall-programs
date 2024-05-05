@@ -22,4 +22,6 @@ breaks = timeshift-deb
 breaks = timeshift-bin
 breaks = timeshift-app
 replaces = timeshift-btrfs
+maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
+repology = project: timeshift
 sha256sums = 7b468430198c4e8c5c502258f1f67d15f0e68c3f58189d6e80b661cbdaf740f2

@@ -5,4 +5,6 @@ pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 url = https://www.mozilla.org/en-US/firefox
 arch = amd64
 source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/125.0.3/linux-x86_64/en-US/firefox-125.0.3.tar.bz2
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: firefox
 sha256sums = 2fb91b8dd196a8ee47238d82d6b7afef3dd1bb3212b29122ab1c3897052d8a49

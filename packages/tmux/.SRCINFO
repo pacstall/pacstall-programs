@@ -14,4 +14,5 @@ breaks = tmux-bin
 breaks = tmux-deb
 breaks = tmux-app
 replaces = tmux
+maintainer = Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>
 sha256sums = b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc

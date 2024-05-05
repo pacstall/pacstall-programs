@@ -5,3 +5,5 @@ source = https://www.syntevo.com/downloads/smartgit/smartgit-linux-22_1_7.tar.gz
 depends = git
 depends = libgtk-3-0
 depends = libcurl4
+maintainer = echometerain <echometer@disroot.org>
+repology = project: smartgit

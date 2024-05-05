@@ -13,4 +13,6 @@ makedepends = pkg-config
 makedepends = libexpat1-dev
 makedepends = libicu-dev
 provides = lcf2xml
+maintainer = vigress8 <vig@disroot.org>
+repology = project: liblcf
 sha256sums = 6b0d8c7fefe3d66865336406f69ddf03fe59e52b5601687265a4d1e47a25c386

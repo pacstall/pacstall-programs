@@ -7,4 +7,6 @@ source = https://github.com/MediaBrowser/Emby.Releases/releases/download/4.7.13.
 breaks = emby-server
 breaks = emby-server-bin
 breaks = emby-server-git
+maintainer = Warofzen <warofzen1@protonmail.com>
+repology = project: emby
 sha256sums = de95964faa185782f3dc6df5f8894f02dab631fbd9aec283fb72829617b13cea

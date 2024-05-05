@@ -39,3 +39,4 @@ breaks = fastfetch
 breaks = fastfetch-bin
 breaks = fastfetch-deb
 breaks = fastfetch-app
+maintainer = wizard-28 <wiz28@pm.me>

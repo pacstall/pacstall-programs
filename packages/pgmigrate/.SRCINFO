@@ -9,4 +9,6 @@ depends = python3-psycopg2
 makedepends = python3-setuptools
 breaks = pgmigrate-git
 replaces = pgmigrate
+maintainer = WRM-42 <y8bsbahy@anonaddy.me>
+repology = project: pgmigrate
 sha256sums = ba39ee6198b1132a5306c3cce79d16644c507d7be999fbcc9c039cd3307693f6

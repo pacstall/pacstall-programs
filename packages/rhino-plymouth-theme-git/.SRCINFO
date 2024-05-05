@@ -3,3 +3,4 @@ gives = rhino-plymouth-theme
 pkgver = 0.0.1
 pkgdesc = Rhino Linux Plymouth theme
 source = https://github.com/rhino-linux/plymouth.git
+maintainer = Oren Klopfer <oren@taumoda.com>

@@ -7,3 +7,4 @@ makedepends = golang-go
 pacdeps = distrobox
 breaks = apx
 incompatible = debian:bullseye
+maintainer = Zahrun <Zahrun@github.com>

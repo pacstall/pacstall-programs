@@ -22,4 +22,5 @@ depends = libxdamage1
 depends = libgtkglext1
 breaks = anydesk-deb
 replaces = anydesk
+repology = project: anydesk
 sha256sums = b1e3337d35ce19af93963829988b2014e8acfbbf6bd1b5adfb8bc7dcd6fee452

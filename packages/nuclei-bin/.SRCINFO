@@ -7,4 +7,6 @@ source = https://github.com/projectdiscovery/nuclei/releases/download/v3.1.7/nuc
 breaks = nuclei
 breaks = nuclei-deb
 breaks = nuclei-git
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: nuclei
 sha256sums = 898399d8d8dfc0aee2cb7d4955912ad0c428dcfa72b4c29fe4fd93adc84df3cc

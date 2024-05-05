@@ -5,3 +5,4 @@ pkgdesc = ananicy-cpp rules for CachyOS
 url = https://github.com/CachyOS/ananicy-rules
 source = https://github.com/CachyOS/ananicy-rules.git
 pacdeps = ananicy-cpp
+maintainer = vigress8 <vig@disroot.org>

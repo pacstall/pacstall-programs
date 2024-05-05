@@ -14,4 +14,6 @@ breaks = hamclock-big
 breaks = hamclock-bigger
 breaks = hamclock-huge
 replaces = hamclock
+maintainer = Roy Williams <fang64@gmail.com>
+repology = project: hamclock
 sha256sums = 49ee666ac5c2fd9c647119bf36a5d627f7fc8b1db22b0ad7140e9e60a30554c5

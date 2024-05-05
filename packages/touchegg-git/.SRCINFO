@@ -22,3 +22,4 @@ breaks = touchegg
 breaks = touchegg-bin
 breaks = touchegg-deb
 breaks = touchegg-app
+maintainer = Zahrun <Zahrun@github.com>
