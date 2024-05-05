@@ -8,12 +8,12 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="mold-bin"
 gives="mold"
-pkgver="2.30.0"
+pkgver="2.31.0"
 arch=("amd64" "arm64")
 source_amd64=("https://github.com/rui314/mold/releases/download/v${pkgver}/mold-${pkgver}-x86_64-linux.tar.gz")
-sha256sums_amd64=("977e6a123f9c7a45c73f84cd47fc7d4113fb39471d0de7a751ee39350888ac93")
+sha256sums_amd64=("f0b28cc2aa39be1384e4d82693ba3e65150865514939e333b7252d50d0f4a46a")
 source_arm64=("https://github.com/rui314/mold/releases/download/v${pkgver}/mold-${pkgver}-aarch64-linux.tar.gz")
-sha256sums_arm64=("258aaf2b7808ea22fca625480efdf7a13830e9ee311716db0ba9c62af1770c07")
+sha256sums_arm64=("6be38a1041d493a27b72eda569448d463fc91d26e8832ea474d60d8508336183")
 
 pkgdesc="A modern linker"
 breaks=("${gives}-git" "${pkgname}")
