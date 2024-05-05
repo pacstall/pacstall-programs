@@ -12,7 +12,7 @@ function vars.srcinfo() {
   # _distros="{${distros// /,}}" _vars="{${vars// /,}}" _archs="{${archs// /,}}" _sums="{${sums// /,}}"
   # eval "allars+=(${_vars}_${_distros} ${_vars}_${_archs} ${_vars}_${_distros}_${_archs} ${_sums}sums ${_sums}sums_${_distros} ${_sums}sums_${_archs} ${_sums}sums_${_distros}_${_archs})"
   # eval "allvars+=(gives_${_distros} gives_${_archs} gives_${_distros}_${_archs})"
-  _vars="{${vars// /,}}" _archs="{${archs// /,}}" _sums="{${sums// /,}}" 
+  _vars="{${vars// /,}}" _archs="{${archs// /,}}" _sums="{${sums// /,}}"
   eval "allars+=(${_vars}_${_archs} ${_sums}sums ${_sums}sums_${_archs})"
   eval "allvars+=(gives_${_archs})"
   export allars allvars
