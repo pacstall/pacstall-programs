@@ -1,8 +1,7 @@
 pkgname = git-butler-deb
 gives = git-butler
 pkgver = 0.10.22-703
-pkgdesc = Git Branching, Refined
-A Git client for simultaneous branches on top of your existing workflow.
+pkgdesc = Git Branching, Refined A Git client for simultaneous branches on top of your existing workflow.
 url = https://gitbutler.com/
 arch = amd64
 source = https://releases.gitbutler.com/releases/release/0.10.22-703/linux/x86_64/git-butler_0.10.22_amd64.deb
