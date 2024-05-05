@@ -31,4 +31,5 @@ makedepends = libxkbcommon-x11-dev
 makedepends = libjpeg-dev
 breaks = i3lock
 replaces = i3lock
+maintainer = Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>
 sha256sums = 46f15cbbf339873266e014f70b5e1ec02177f0295302b615a7bd85bef40d8ad2

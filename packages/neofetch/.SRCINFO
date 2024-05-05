@@ -8,4 +8,5 @@ optdepends = catimg: image preview
 optdepends = jp2a: image preview
 optdepends = caca-utils: image preview
 optdepends = libcaca-dev: image preview
+maintainer = Elsie19 <elsie19@pm.me>
 sha256sums = e610da6561f17c8161337d0c4115da310be576e8699fa2add64e14eeb3f3dcf1

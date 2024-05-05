@@ -13,4 +13,6 @@ incompatible = *:mantic
 incompatible = *:bookworm
 incompatible = *:trixie
 incompatible = *:sid
+maintainer = Zahrun <Zahrun@github.com>
+repology = project: maitreya
 sha256sums = b503e65f512f8f593801786a94b30e79d78c28fe431e5102722eae5b3a5a6bc9

@@ -7,3 +7,4 @@ breaks = yafetch-deb
 breaks = yafetch-bin
 breaks = yafetch-app
 breaks = yafetch-git
+maintainer = Elsie19 <elsie19@pm.me>

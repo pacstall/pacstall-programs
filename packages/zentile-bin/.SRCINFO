@@ -8,4 +8,5 @@ breaks = zentile
 breaks = zentile-git
 breaks = zentile-deb
 breaks = zentile-app
+maintainer = wizard-28 <wiz28@pm.me>
 sha256sums = 3448835def513588bde74ecd98ed1b5e03c4269f32c90e31846e608b3eabcc33

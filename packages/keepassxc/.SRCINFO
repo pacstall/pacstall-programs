@@ -45,4 +45,6 @@ breaks = keepassxc
 breaks = keepassxc-bin
 breaks = keepassxc-git
 breaks = keepassxc-deb
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: keepassxc
 sha256sums = a58074509fa8e90f152c6247f73e75e126303081f55eedb4ea0cbb6fa980d670

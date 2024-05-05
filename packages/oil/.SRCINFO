@@ -7,4 +7,6 @@ breaks = oil-bin
 breaks = oil-git
 breaks = oil-deb
 breaks = oil-app
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: oil-shell
 sha256sums = 42b85f52bbba4a3bb8e16f23fc394c4302bcfd9638f067f01c37d23f2ee449a0

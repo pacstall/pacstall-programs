@@ -27,3 +27,4 @@ breaks = libresprite-bin
 breaks = libresprite-app
 breaks = libresprite-deb
 breaks = libresprite
+maintainer = echometerain <echometer@disroot.org>

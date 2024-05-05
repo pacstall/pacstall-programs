@@ -25,3 +25,4 @@ optdepends = gnome-control-center: Default wifi CMD if not set
 breaks = os-installer-bin
 breaks = os-installer
 breaks = os-installer-commit
+maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>

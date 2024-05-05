@@ -9,4 +9,6 @@ makedepends = libxss1
 makedepends = libxss-dev
 makedepends = libgtk-3-dev
 makedepends = libnotify-dev
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: dunst
 sha256sums = fa6ce45c0af4bae188b0d679a5ba92f8f9b7e4301bb1bb476e82df26bce9e71a

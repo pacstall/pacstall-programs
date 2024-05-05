@@ -8,4 +8,6 @@ breaks = hyperfine
 breaks = hyperfine-git
 breaks = hyperfine-deb
 breaks = hyperfine-app
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: hyperfine
 sha256sums = 563de47d843810de501e3e6bfcb4571a4ff957eab811c2af87be23d1c599ae47

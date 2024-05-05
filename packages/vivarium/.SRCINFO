@@ -7,4 +7,5 @@ makedepends = libwlroots-dev
 makedepends = xcb
 makedepends = libseat-dev
 makedepends = libxcb-res0-dev
+maintainer = Elsie19 <elsie19@pm.me>
 sha256sums = abb7272f53d1769de3726c6961df40627c98b8884eb32388e29b8812c60aacec

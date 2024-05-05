@@ -8,4 +8,6 @@ source = https://dl.discordapp.net/apps/linux/0.0.52/discord-0.0.52.deb
 breaks = discord
 breaks = discord-app
 breaks = discord-debian-patched-deb
+maintainer = ObsidianPresidium <emil@aarestrup.nu>
+repology = project: discord
 sha256sums = 5f301979bd3f2755946ebeb8d8ae82a14ad8c887d943ef71288c7b715345a428

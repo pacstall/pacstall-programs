@@ -7,4 +7,6 @@ source = https://github.com/aristocratos/btop/releases/download/v1.2.13/btop-x86
 breaks = btop
 breaks = btop-git
 breaks = btop-deb
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: btop
 sha256sums = 6c773ca064d314b4ea5d39d6fb0f73d6a3b74b9daa79ffae33c5b5df05bcf00a

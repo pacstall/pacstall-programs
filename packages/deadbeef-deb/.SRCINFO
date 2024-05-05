@@ -11,4 +11,6 @@ breaks = deadbeef-static-git
 breaks = deadbeef-static-app
 breaks = deadbeef-static-deb
 replaces = deadbeef-static
+maintainer = Arrowsome <ramtintoosi@gmail.com>
+repology = project: deadbeef
 sha256sums = c0e95beedb2dc3ee6de604048593b2b12a4ea001ad3185c41947b4f7d854ecf6

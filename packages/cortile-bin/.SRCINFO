@@ -9,5 +9,7 @@ source_arm64 = https://github.com/leukipp/cortile/releases/download/v2.4.0/corti
 source_amd64 = https://github.com/leukipp/cortile/releases/download/v2.4.0/cortile_2.4.0_linux_amd64.tar.gz
 replaces = cortile
 replaces = cortile-git
+maintainer = AJStrong <ajstrong.dev@gmail.com>
+repology = project: cortile
 sha256sums_amd64 = 1a9c87737e6d212a15921ac5e10f21b64c7aa2051dbadc976f3c817674418537
 sha256sums_arm64 = 65396926a995c970d07dd71536f04d24b7eea12b53f892508c11848726bd8d22

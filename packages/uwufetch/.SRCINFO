@@ -7,4 +7,5 @@ optdepends = viu: image preview
 optdepends = lshw: hardware info
 breaks = uwufetch-git
 breaks = uwufetch-bin
+maintainer = wizard-28 <wiz28@pm.me>
 sha256sums = 1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab

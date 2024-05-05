@@ -10,4 +10,7 @@ breaks = brave-browser-nightly-bin
 breaks = brave-browser-nightly-app
 breaks = brave-browser-nightly-git
 replaces = brave-browser-nightly
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: brave
+repology = visiblename: brave-nightly-bin
 sha256sums = c8a69ca048b47aacaab743a9e2231a3e71e818df0dab2293a2294398212389b4

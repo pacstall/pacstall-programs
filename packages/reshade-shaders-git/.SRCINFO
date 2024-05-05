@@ -7,3 +7,4 @@ breaks = reshade-shaders-git
 breaks = reshade-shaders-git-bin
 breaks = reshade-shaders-git-deb
 breaks = reshade-shaders-git-app
+maintainer = wizard-28 <wiz28@pm.me>

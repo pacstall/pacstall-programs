@@ -12,4 +12,6 @@ replaces = stremio
 incompatible = ubuntu:noble
 incompatible = ubuntu:mantic
 incompatible = debian:*
+maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
+repology = project: stremio
 sha256sums = 1028f1a38a70fc66bfcda1c8a9e1674231e17ac81774fc48859ed8f53c7a6039

@@ -22,4 +22,6 @@ breaks = yad-bin
 breaks = yad-app
 breaks = yad-git
 breaks = yad-deb
+maintainer = echometerain <echometer@disroot.org>
+repology = project: yad
 sha256sums = 194198c4a58e20ceffd9a3206633c3726d962d7d4219edb77aeb748897403e34

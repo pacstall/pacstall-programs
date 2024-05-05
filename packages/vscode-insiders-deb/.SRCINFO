@@ -6,6 +6,7 @@ url = https://code.visualstudio.com/
 arch = amd64
 arch = arm64
 arch = armhf
+maintainer = Diegiwg <diegiwg@gmail.com>
 source_amd64 = https://packages.microsoft.com/repos/code/pool/main/c/code-insiders/code-insiders_1.81.0-1689659743_amd64.deb
 source_arm64 = https://packages.microsoft.com/repos/code/pool/main/c/code-insiders/code-insiders_1.81.0-1689659758_arm64.deb
 source_armhf = https://packages.microsoft.com/repos/code/pool/main/c/code-insiders/code-insiders_1.81.0-1689659148_armhf.deb

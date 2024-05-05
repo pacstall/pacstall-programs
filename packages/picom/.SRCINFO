@@ -59,4 +59,6 @@ breaks = picom-git
 breaks = ibhagwan-picom-git
 breaks = jonaburg-picom-git
 replaces = picom
+maintainer = vigress8 <vig@disroot.org>
+repology = project: picom
 sha256sums = 1c1063936faf09ed9bba726e7737a562564b7a5f8cdef79d48fcdaf3669a4df4

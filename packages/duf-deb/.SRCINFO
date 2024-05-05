@@ -7,4 +7,6 @@ source = https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_
 breaks = duf-bin
 breaks = duf-git
 replaces = duf
+maintainer = KwonNam Son <kwon37xi@gmail.com>
+repology = project: duf
 sha256sums = 746983b4065e80b14f2e5af70c58e2283bb8b3a128cb076954d7329d476d5fad

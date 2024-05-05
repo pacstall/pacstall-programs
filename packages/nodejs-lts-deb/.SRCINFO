@@ -10,4 +10,7 @@ breaks = nodejs-bin
 breaks = nodejs-app
 replaces = nodejs
 replaces = node
+maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
+repology = project: nodejs
+repology = repo: centos_stream_9
 sha256sums = c253e9021faf026115d45ae8ea56f5c587483baebeab1394578c3cd1d44d9c64

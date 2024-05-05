@@ -25,3 +25,4 @@ breaks = grive2-bin
 breaks = grive2-deb
 breaks = grive2-app
 replaces = grive
+maintainer = KwonNam Son <kwon37xi@gmail.com>

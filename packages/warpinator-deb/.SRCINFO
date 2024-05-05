@@ -16,4 +16,7 @@ depends = python3-grpcio
 depends = python3-cryptography
 depends = python3-nacl
 compatible = *:jammy
+maintainer = Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>
+repology = project: warpinator
+repology = repo: linux_mint_21_1
 sha256sums = fdcae13e004e1474711aa2f567e76d372f0634264d69732e775aba338b3d825e

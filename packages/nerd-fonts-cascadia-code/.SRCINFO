@@ -3,4 +3,6 @@ pkgver = 3.1.1
 pkgdesc = Patched font Cascadia Code from Nerd Fonts library
 source = https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/CascadiaCode.tar.xz
 replaces = nerd-fonts-cascadia-code
+maintainer = heyzsh <haidarzsh@gmail.com>
+repology = project: fonts:nerd-fonts
 sha256sums = 6f5f72a9df47c4d96cc427c89a12c0c538b5873aa46c9e2d3df3306b7429bef4

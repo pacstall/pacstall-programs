@@ -13,3 +13,4 @@ makedepends = qtlocation5-dev
 makedepends = libqt5webchannel5-dev
 makedepends = qtwebengine5-dev
 makedepends = qtwebengine5-dev-tools
+maintainer = Diegiwg <diegiwg@gmail.com>

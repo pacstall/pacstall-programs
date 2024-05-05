@@ -34,3 +34,4 @@ makedepends = libedataserver1.2-dev
 makedepends = libpeas-dev
 makedepends = libical-dev
 makedepends = libhandy-1-dev
+maintainer = echometer <guacamolek@yandex.com>

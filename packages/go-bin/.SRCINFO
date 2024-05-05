@@ -15,4 +15,6 @@ breaks = golang-bin
 breaks = golang-app
 breaks = golang-go
 replaces = golang-go
+maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
+repology = project: go
 sha256sums = 3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4

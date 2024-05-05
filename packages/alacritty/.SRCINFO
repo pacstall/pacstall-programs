@@ -13,4 +13,6 @@ makedepends = gzip
 makedepends = scdoc
 incompatible = debian:bullseye
 incompatible = debian:bookworm
+maintainer = Warofzen <warofzen1@protonmail.com>
+repology = project: alacritty
 sha256sums = e9a54aabc92bbdc25ab1659c2e5a1e9b76f27d101342c8219cc98a730fd46d90

@@ -6,3 +6,4 @@ source = https://github.com/elParaguayo/qtile-extras.git
 makedepends = python3-venv
 makedepends = python3-pip
 pacdeps = qtile-git
+maintainer = Ruturajn <nanotiruturaj@gmail.com>

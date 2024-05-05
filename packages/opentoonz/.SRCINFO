@@ -47,4 +47,6 @@ breaks = opentoonz-deb
 breaks = opentoonz-app
 breaks = opentoonz-deb
 breaks = opentoonz-bin
+maintainer = echometerain <echometer@disroot.org>
+repology = project: opentoonz
 sha256sums = d0daf60d06510efe15d0db3f9eed0162499ed58061504dca27892c2b9ea5f22d
