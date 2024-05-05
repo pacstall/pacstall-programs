@@ -9,4 +9,6 @@ depends = python3-jinja2
 depends = python3-ruamel.yaml
 depends = python3-magic
 depends = diffutils
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: dotdrop
 sha256sums = b69deab3cf22b0cde5faacf5d90292abcade142da0b00513dc774dfc2e8f6203

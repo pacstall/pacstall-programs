@@ -15,3 +15,5 @@ replaces = pacup.pl
 replaces = pacup.py
 replaces = pacup-bin
 replaces = pacup-git
+maintainer = vigress8 <vig@disroot.org>
+maintainer = Oren Klopfer <oren@taumoda.com>

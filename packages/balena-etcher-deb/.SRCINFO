@@ -4,4 +4,6 @@ pkgver = 1.18.12
 pkgdesc = Flash OS images to SD cards & USB drives, safely and easily
 arch = amd64
 source = https://github.com/balena-io/etcher/releases/download/v1.18.12/balena-etcher_1.18.12_amd64.deb
+maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>
+repology = project: balena-etcher
 sha256sums = 51cb35f3bc53a5b449ecfdf684297c7073f13b71c2b38e199de01ab34e371579

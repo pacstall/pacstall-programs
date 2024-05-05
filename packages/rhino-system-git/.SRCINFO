@@ -32,3 +32,4 @@ incompatible = ubuntu:21.04
 incompatible = ubuntu:21.10
 incompatible = ubuntu:22.04
 incompatible = debian:*
+maintainer = Oren Klopfer <oren@taumoda.com>

@@ -48,3 +48,4 @@ pacdeps = cortile-bin
 replaces = unicorn-mobile
 replaces = unicorn-mobile-git
 incompatible = debian:*
+maintainer = Oren Klopfer <oren@taumoda.com>

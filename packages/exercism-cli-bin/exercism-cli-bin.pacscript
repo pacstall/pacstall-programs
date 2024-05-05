@@ -7,7 +7,7 @@ sha256sums_arm64=("57f9620e5346bf045ca72b581cb106f9dc56841ac1ff0a3070188c49d5d0b
 source_amd64=("https://github.com/exercism/cli/releases/download/v${pkgver}/exercism-${pkgver}-linux-x86_64.tar.gz")
 source_arm64=("https://github.com/exercism/cli/releases/download/v${pkgver}/exercism-${pkgver}-linux-arm64.tar.gz")
 pkgdesc="Go based command line tool for exercism.org"
-homepage='https://exercism.org'
+url='https://exercism.org'
 maintainer=("Andrew Barchuk <andrew@raindev.io>")
 
 package() {

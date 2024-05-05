@@ -9,4 +9,5 @@ breaks = google-earth-pro-stable-git
 breaks = google-earth-pro-stable-bin
 breaks = google-earth-pro-stable-app
 breaks = google-earth-pro-stable-deb
+repology = project: google-earth-pro
 sha256sums = 88e8b1a8e09f08c8daac8e21d803d19203a725e1ff8437a65dc8fba753a12c3e

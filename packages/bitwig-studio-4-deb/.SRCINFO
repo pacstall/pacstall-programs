@@ -3,4 +3,5 @@ gives = bitwig-studio
 pkgver = 4.4.10
 pkgdesc = Digital audio workstation for music production, remixing and live performance
 source = https://downloads.bitwig.com/stable/4.4.10/bitwig-studio-4.4.10.deb
+maintainer = Zahrun <Zahrun@github.com>
 sha256sums = 82d4359a15e4d00a8689d664e530b3491e7ca43d4926810b3019842edab26f85

@@ -7,4 +7,6 @@ makedepends = build-essential
 breaks = hello-git
 breaks = hello-traditional
 replaces = hello
+maintainer = WRM-42 <y8bsbahy@anonaddy.me>
+repology = project: hello
 sha256sums = 8d99142afd92576f30b0cd7cb42a8dc6809998bc5d607d88761f512e26c7db20

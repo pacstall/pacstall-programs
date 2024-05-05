@@ -8,5 +8,6 @@ breaks = endlessh
 breaks = endlessh-deb
 breaks = endlessh-app
 breaks = endlessh-bin
+maintainer = Elsie19 <elsie19@pm.me>
 sha256sums = SKIP
 sha256sums = f92a2341103a7c6243d7cbc32a3400e0f01ecd5fae12a0731029f6c50ba9f451

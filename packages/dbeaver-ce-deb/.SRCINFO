@@ -4,4 +4,6 @@ pkgver = 24.0.0
 pkgdesc = Free universal database tool and SQL client
 arch = amd64
 source = https://github.com/dbeaver/dbeaver/releases/download/24.0.0/dbeaver-ce_24.0.0_amd64.deb
+maintainer = KwonNam Son <kwon37xi@gmail.com>
+repology = project: dbeaver
 sha256sums = f491bc7fffd7c9882ccfc2021e965d97956088083b79f35dd57d195d2fdfb76a

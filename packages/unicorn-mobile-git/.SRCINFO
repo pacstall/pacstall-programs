@@ -40,3 +40,4 @@ pacdeps = cortile-bin
 replaces = unicorn-desktop
 replaces = unicorn-desktop-git
 incompatible = debian:*
+maintainer = Oren Klopfer <oren@taumoda.com>

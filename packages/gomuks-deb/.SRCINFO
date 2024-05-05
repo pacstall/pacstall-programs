@@ -8,4 +8,6 @@ breaks = gomuks-git
 breaks = gomuks-bin
 breaks = gomuks-app
 replaces = gomuks
+maintainer = WRM-42 <y8bsbahy@anonaddy.me>
+repology = project: gomuks
 sha256sums = c02fa1446744efc4b57ad4c4bad640e7c0f969ff78a3e594be92f30cfd115a66

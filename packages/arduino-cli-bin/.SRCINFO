@@ -7,4 +7,6 @@ breaks = arduino-cli
 breaks = arduino-cli-deb
 breaks = arduino-cli-app
 breaks = arduino-cli-git
+maintainer = DismissedGuy <me@mikealmel.ooo>
+repology = project: arduino-cli
 sha256sums = acf3a3e03f0478a1cade44d23d4bc2f979c9b61b64e13bc66e26220b7b9fbd23

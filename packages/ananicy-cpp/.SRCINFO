@@ -6,4 +6,5 @@ makedepends = cmake
 makedepends = g++
 makedepends = libsystemd-dev
 makedepends = ninja-build
+repology = project: ananicy-cpp
 sha256sums = 49f59e8fa842c7603be344b7317eace773c3e416d881dae4ad7779b39b03fc4a

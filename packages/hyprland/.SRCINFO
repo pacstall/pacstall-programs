@@ -1,6 +1,7 @@
 pkgname = hyprland
 pkgver = 0.35.0
 pkgdesc = Dynamic tiling Wayland compositor based on wlroots
+url = https://hyprland.org/
 source = https://github.com/hyprwm/Hyprland/releases/download/v0.35.0/source-v0.35.0.tar.gz
 makedepends = meson
 makedepends = ninja-build
@@ -62,4 +63,6 @@ compatible = ubuntu:devel
 compatible = debian:sid
 compatible = ubuntu:mantic
 compatible = ubuntu:noble
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: hyprland
 sha256sums = de53d764606131c8aacc209f8a3ad6e619fdcddd16a7cdf4d8ca343816bb8c1b

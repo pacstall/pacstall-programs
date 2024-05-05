@@ -9,4 +9,6 @@ breaks = spotify-client-app
 breaks = spotify-client-bin
 breaks = spotify
 replaces = spotify-client
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: spotify
 sha256sums = 71b724bd9ec37ccc37b340606bc37f46d47320b5fa429a4c9dce5bd24e07adb8

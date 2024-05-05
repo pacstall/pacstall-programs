@@ -20,3 +20,4 @@ breaks = grapejuice
 breaks = grapejuice-bin
 breaks = grapejuice-app
 breaks = grapejuice-deb
+maintainer = Elsie19 <elsie19@pm.me>

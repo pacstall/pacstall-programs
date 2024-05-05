@@ -6,4 +6,6 @@ arch = amd64
 source = https://github.com/ProtonMail/proton-bridge/releases/download/v3.9.1/protonmail-bridge_3.9.1-1_amd64.deb
 breaks = protonmail-bridge
 breaks = protonmail-bridge-git
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: protonmail-bridge
 sha256sums = b6506a4d3c2adae72bb35e550cd2605eda3448dd156479891c4546a63632e1c0

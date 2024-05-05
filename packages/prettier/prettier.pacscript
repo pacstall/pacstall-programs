@@ -1,7 +1,7 @@
 pkgname="prettier"
 pkgver="3.2.5"
 pkgdesc="An opinionated code formatter"
-homepage='https://prettier.io'
+url='https://prettier.io'
 depends=("nodejs")
 source=("https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz")
 sha256sums=("a9d68ae56e5b0fea5c9d8e68b67104dae8445db21e1d24fb3522f3f4c0fb271d")

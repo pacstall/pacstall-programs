@@ -5,4 +5,6 @@ pkgdesc = An easy-to-use linux app that lets you create Desktop Shortcuts hassle
 arch = amd64
 source = https://github.com/NayamAmarshe/DeskCut/releases/download/stable-1.5.0/deskcut_1.5.0_amd64.deb
 replaces = deskcut
+maintainer = 0x262D <pacstall@copypaste.anonaddy.me>
+repology = project: deskcut
 sha256sums = 0f32b3937fdac157c02630b582b278a1899ed4cbd605132441324ea582caf320

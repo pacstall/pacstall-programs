@@ -7,3 +7,4 @@ depends = python3
 makedepends = make
 makedepends = pandoc
 makedepends = python3
+maintainer = KwonNam Son <kwon37xi@gmail.com>

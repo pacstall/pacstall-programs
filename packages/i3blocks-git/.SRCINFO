@@ -8,3 +8,4 @@ makedepends = gcc
 makedepends = make
 makedepends = pkgconf
 breaks = i3blocks
+maintainer = Lanius <laniusone@pm.me>

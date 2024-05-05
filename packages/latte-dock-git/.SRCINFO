@@ -41,3 +41,4 @@ makedepends = plasma-workspace-dev
 breaks = latte-dock
 breaks = latte-dock-bin
 incompatible = debian:bullseye
+maintainer = wizard-28 <wiz28@pm.me>

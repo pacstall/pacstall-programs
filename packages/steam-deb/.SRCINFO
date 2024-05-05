@@ -7,3 +7,5 @@ source = https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb
 breaks = steam-launcher-bin
 breaks = steam-launcher-app
 replaces = steam-launcher
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: steam-launcher

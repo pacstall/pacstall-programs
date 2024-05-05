@@ -8,4 +8,6 @@ breaks = notion-app-app
 breaks = notion-app-enhanced-deb
 breaks = notion-app-enhanced-app
 replaces = notion-app
+maintainer = IOplus <issa20omais@outlook.com>
+repology = project: notion-app
 sha256sums = 7246fb0485cc6ecd5f5381d0568b29d77afff3628ee42a486f39d5af8728ff4e

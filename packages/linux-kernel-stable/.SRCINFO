@@ -6,3 +6,6 @@ pacdeps = linux-headers-stable-deb
 pacdeps = linux-headers-generic-stable-deb
 pacdeps = linux-modules-stable-deb
 pacdeps = linux-image-unsigned-stable-deb
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: linux
+repology = repo: distrowatch

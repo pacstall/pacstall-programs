@@ -7,4 +7,7 @@ depends = gtk-update-icon-cache
 makedepends = make
 breaks = papirus-icon-theme
 breaks = papirus-icon-theme-git
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: papirus-icon-theme
+repology = repo: aur
 sha256sums = 9dde683d6444ed2d3b3dacf8579b04d527ce278cef575d606f690c7b31c7aebd

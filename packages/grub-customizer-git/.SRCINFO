@@ -11,3 +11,4 @@ makedepends = libssl-dev
 makedepends = libarchive-dev
 makedepends = hwinfo
 breaks = grub-customizer-deb
+maintainer = ObsidianPresidium <emil@aarestrup.nu>

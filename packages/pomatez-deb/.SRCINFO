@@ -15,4 +15,5 @@ depends = libuuid1
 depends = libappindicator3-1
 depends = libsecret-1-0
 replaces = pomatez
+repology = project: pomatez
 sha256sums = ae0572ff1816463dcca1d7e2a0bde7ba3b06eebfde5e374b9b2eb34ca4d37ae7

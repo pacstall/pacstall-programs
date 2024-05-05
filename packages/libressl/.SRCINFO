@@ -4,4 +4,6 @@ pkgdesc = LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2
 source = https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.7.3.tar.gz
 breaks = libressl-git
 breaks = libressl-bin
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: libressl
 sha256sums = 7948c856a90c825bd7268b6f85674a8dcd254bae42e221781b24e3f8dc335db3

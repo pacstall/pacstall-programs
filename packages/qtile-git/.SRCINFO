@@ -14,3 +14,4 @@ depends = libpulse-dev
 depends = pavucontrol
 depends = python3-testresources
 license = MIT
+maintainer = Ruturajn <nanotiruturaj@gmail.com>

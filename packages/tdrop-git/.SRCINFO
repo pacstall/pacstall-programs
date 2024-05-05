@@ -8,3 +8,4 @@ depends = xdotool
 depends = bash
 depends = gawk
 depends = procps
+maintainer = Thomas Crha <thomas@9bitbyte.com>

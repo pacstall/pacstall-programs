@@ -10,4 +10,6 @@ depends = python3-xlib
 depends = gir1.2-xapp-1.0
 depends = xapps-common
 depends = python3-levenshtein
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: ulauncher
 sha256sums = 647cab272b85b0e54f16cafbb326c5c184867f659723c6ea4d3c62820765534d

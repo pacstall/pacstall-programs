@@ -4,4 +4,6 @@ pkgver = 3.46.0.7-1
 pkgdesc = ExpressVPN's CLI tool
 arch = amd64
 source = https://www.expressvpn.works/clients/linux/expressvpn_3.46.0.7-1_amd64.deb
+repology = project: expressvpn
+repology = repo: aur
 sha256sums = bf4aebd6cdf68e3efd03c2067c9812189565cfbad29d9627e1e6a53a9a9e7b4c

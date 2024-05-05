@@ -7,7 +7,7 @@ sha256sums_arm64=("956eb095d8ba44ac6ebd27f7c9956e47d92937c103bf754745d0a39cdaa5d
 source_amd64=("https://ziglang.org/download/${pkgver}/zig-linux-x86_64-${pkgver}.tar.xz")
 source_arm64=("https://ziglang.org/download/${pkgver}/zig-linux-aarch64-${pkgver}.tar.xz")
 pkgdesc="General-purpose programming language and toolchain for maintaining robust, optimal and reusable software"
-homepage='https://ziglang.org/'
+url='https://ziglang.org/'
 maintainer=("Andrew Barchuk <andrew@raindev.io>")
 
 package() {

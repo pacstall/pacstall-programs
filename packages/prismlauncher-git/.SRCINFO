@@ -17,3 +17,4 @@ makedepends = openjdk-17-jdk
 makedepends = libgl1-mesa-dev
 makedepends = scdoc
 makedepends = libqt6core5compat6-dev
+maintainer = Oren Klopfer <oren@taumoda.com>

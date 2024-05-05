@@ -9,4 +9,6 @@ incompatible = debian:*
 incompatible = ubuntu:mantic
 incompatible = ubuntu:noble
 incompatible = ubuntu:devel
+maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
+repology = project: virtualbox
 sha256sums = 43aa0932f73433e7a6b450a82708d275ee5f2c98375cfa708a46ecf75b3d4edc
