@@ -21,6 +21,8 @@
 # You should have received a copy of the GNU General Public License
 # along with Pacstall. If not, see <https://www.gnu.org/licenses/>.
 
+shopt -s extglob
+
 function vars.srcinfo() {
   local _distros _vars _archs _sums distros \
     vars="source depends makedepends optdepends pacdeps checkdepends provides conflicts breaks replaces" \
