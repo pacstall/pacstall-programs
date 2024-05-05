@@ -16,4 +16,4 @@ replaces = pacup-bin
 replaces = pacup-git
 maintainer = vigress8 <vig@disroot.org>
 maintainer = Oren Klopfer <oren@taumoda.com>
-sha256sums = d960828cb8ccfc491a5b2627d020384861ee6d60c22314bed6cfe018d4c7c125
+sha256sums = 8b20ccad59e5eb35a3e5f597a6a7c66f1e3639e5a85bc5246f97d4777777a4b3

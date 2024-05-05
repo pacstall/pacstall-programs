@@ -18,7 +18,7 @@ replaces=(
   "${pkgname}-git"
 )
 source=("https://github.com/pacstall/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('d960828cb8ccfc491a5b2627d020384861ee6d60c22314bed6cfe018d4c7c125')
+sha256sums=('8b20ccad59e5eb35a3e5f597a6a7c66f1e3639e5a85bc5246f97d4777777a4b3')
 maintainer=(
   'vigress8 <vig@disroot.org>'
   'Oren Klopfer <oren@taumoda.com>'
@@ -31,5 +31,7 @@ build() {
 }
 
 package() {
-  make -C "${pkgname}-${pkgver}" install DESTDIR="${pkgdir}"
+  cd "${pkgname}-${pkgver}"
+  make install DESTDIR="${pkgdir}"
+  install -Dm755 scripts/srcinfo.sh "${pkgdir}/usr/bin"
 }
