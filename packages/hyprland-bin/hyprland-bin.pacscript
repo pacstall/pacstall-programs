@@ -1,14 +1,14 @@
 pkgname="hyprland-bin"
-pkgver="0.39.1"
+pkgver="0.40.0"
 gives="hyprland"
 arch=("amd64")
 replaces=("hyprland")
 depends=("libegl1" "libxcb-util1" "libxcb-render0" "libxcb-image0" "libxcb-icccm4" "libxcb-composite0" "libxcb-res0" "libxcb-ewmh2" "libwayland-cursor0" "libdisplay-info1" "libxkbcommon0" "libglib2.0-0" "libharfbuzz0b" "libpangocairo-1.0-0" "libinput10" "libseat-dev" "libliftoff0" "libopengl0" "libglx0" "libgles2")
-pacdeps=("hyprlang" "hyprcursor-bin" "xcb-util-errors")
+pacdeps=("hyprlang" "hyprcursor-bin" "xcb-util-errors" "hyprwayland-scanner")
 compatible=("*:mantic" "*:noble" "*:devel" "debian:bookworm" "debian:trixie" "debian:sid")
 pkgdesc="A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
 source=("https://github.com/hyprwm/Hyprland/releases/download/v${pkgver}/v${pkgver}.tar.gz")
-sha256sums=("1c7bd3eeb6f795d4c95b936397489ca55f7ec6951d7efdea069bd71540007f58")
+sha256sums=("746ac771c7675163b40b5fb989e0a8aabd8d1a18a63aaf228d2bd0af2e0ff3d1")
 maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: hyprland")
 
