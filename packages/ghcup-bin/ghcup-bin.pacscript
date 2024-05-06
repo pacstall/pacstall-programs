@@ -3,6 +3,7 @@ gives="ghcup"
 pkgver="0.1.22.0"
 pkgdesc="Installer for Haskell, a general-purpose programming language"
 arch=('amd64' 'arm64' 'arm' 'i386')
+depends=('libgmp10' 'libtinfo6' 'zlib1g')
 url='https://www.haskell.org/ghcup/'
 breaks=("${gives}-git")
 maintainer=("vigress8 <vig@disroot.org>")
@@ -21,7 +22,7 @@ sha256sums_i386=("1fd4fa989653a127d33f90cb4cc11fd024ea4085e795c0b0f6ed97afc5e8b6
 
 package() {
   cd "${_archive}"
-  install -Dm755 "${source[0]/${_baseurl}\//}" "${pkgdir}/usr/bin/ghcup"
+  install -Dm755 ./*-linux-"${gives}-${pkgver}" "${pkgdir}/usr/bin/ghcup"
   _install_completion bash bash-completion/completions/ghcup
   _install_completion zsh zsh/site-functions/_ghcup
   _install_completion fish fish/vendor_completions.d/ghcup.fish
@@ -30,7 +31,7 @@ package() {
 _install_completion() {
   local shell="$1" dest="$2"
   "${pkgdir}/usr/bin/ghcup" "--${shell}-completion-script" /usr/bin/ghcup > "${shell}-temp"
-  sudo install -Dm644 "${shell}-temp" "${pkgdir}/usr/share/${dest}"
+  install -Dm644 "${shell}-temp" "${pkgdir}/usr/share/${dest}"
 }
 
 post_install() {
