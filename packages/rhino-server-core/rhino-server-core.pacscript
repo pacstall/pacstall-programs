@@ -1,13 +1,13 @@
 pkgname="rhino-server-core"
 source=("https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png")
-pacdeps=("rhino-pkg-git" "rhino-neofetch-git" "pacstall-qa-git")
+pacdeps=("rhino-pkg-git" "rhino-neofetch-git")
 pkgdesc="Transitional package to provide minimal core Rhino Linux software"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 compatible=("ubuntu:devel" "ubuntu:oracular")
 replaces=("rhino-core" "rhino-pine-core" "rhino-ubxi-core")
 priority="essential"
 pkgver="2023.4"
-pkgrel="7"
+pkgrel="8"
 style="(server)"
 branch="devel"
 
