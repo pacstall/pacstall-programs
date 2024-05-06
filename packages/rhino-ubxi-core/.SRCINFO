@@ -1,6 +1,6 @@
 pkgname = rhino-ubxi-core
 pkgver = 2023.4
-pkgrel = 10
+pkgrel = 11
 pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 priority = essential
 source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
@@ -10,7 +10,6 @@ pacdeps = rhino-plymouth-theme-git
 pacdeps = rhino-pkg-git
 pacdeps = rhino-neofetch-git
 pacdeps = rhino-system-git
-pacdeps = pacstall-qa-git
 replaces = rhino-core
 replaces = rhino-pine-core
 replaces = rhino-server-core

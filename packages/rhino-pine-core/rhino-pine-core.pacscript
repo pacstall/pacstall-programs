@@ -1,6 +1,6 @@
 pkgname="rhino-pine-core"
 source=("https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png")
-pacdeps=("unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "u-boot-mobian-deb" "mobile-usb-networking-deb" "pacstall-qa-git")
+pacdeps=("unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "u-boot-mobian-deb" "mobile-usb-networking-deb")
 depends=("initramfs-tools" "printer-driver-all-enforce")
 if [[ -f /usr/bin/enable-modem ]]; then
   depends+=("eg25-manager" "modemmanager" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "purple-mm-sms" "ofono" "ofono-scripts" "gpsd")
@@ -11,7 +11,7 @@ compatible=("ubuntu:devel" "ubuntu:oracular")
 replaces=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 pkgver="2023.4"
-pkgrel="10"
+pkgrel="11"
 style="(mobile)"
 branch="devel"
 
