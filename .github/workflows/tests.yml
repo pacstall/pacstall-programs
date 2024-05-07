@@ -110,16 +110,14 @@ jobs:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
+          PRNUM="$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')"
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
-              package_name="${pacscript_file/.pacscript/ }"
-              package_dir=`dirname "${changed_file}"`
-              echo "Running pacstall -I for ${package_name}..."
-              echo "pacstall -I ${package_name}"
-              pushd ${package_dir}
-              pacstall --disable-prompts -I ${pacscript_file} || exit 1
-              popd
+              package_name="${pacscript_file/.pacscript/}"
+              echo "Running pacstall -Qa for ${package_name}..."
+              echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
+              { echo N | pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}; } || exit 1
             fi
           done
         shell: sudo -E -u dio bash {0}
@@ -131,7 +129,22 @@ jobs:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
-          for changed_file in $(pacstall -L); do
+          export METADIR=/var/lib/pacstall/metadata
+          function array.contains() {
+              local check
+              local -n arra="${1:?No array passed to array.contains}"
+              local input="${2:?No input given to array.contains}"
+              for check in "${arra[@]}"; do
+                  if [[ ${check} == "${input}" ]]; then
+                      return 0
+                  fi
+              done
+              return 1
+          }
+          source /usr/share/pacstall/scripts/dep-tree.sh
+          mapfile -t list < <(pacstall -L)
+          dep_tree.loop_traits order "${list[@]}"
+          for changed_file in "${order[@]}"; do
               echo "Running pacstall -R for ${changed_file}..."
               pacstall --disable-prompts -R ${changed_file} || exit 1
           done
@@ -212,16 +225,14 @@ jobs:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
+          PRNUM="$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')"
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
-              package_name="${pacscript_file/.pacscript/ }"
-              package_dir=`dirname "${changed_file}"`
-              echo "Running pacstall -I for ${package_name}..."
-              echo "pacstall -Il ${package_name}"
-              pushd ${package_dir}
-              pacstall --disable-prompts -I ${pacscript_file} || exit 1
-              popd
+              package_name="${pacscript_file/.pacscript/}"
+              echo "Running pacstall -Qa for ${package_name}..."
+              echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
+              { echo N | pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}; } || exit 1
             fi
           done
         shell: sudo -E -u dio bash {0}
@@ -233,7 +244,22 @@ jobs:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
-          for changed_file in $(pacstall -L); do
+          export METADIR=/var/lib/pacstall/metadata
+          function array.contains() {
+              local check
+              local -n arra="${1:?No array passed to array.contains}"
+              local input="${2:?No input given to array.contains}"
+              for check in "${arra[@]}"; do
+                  if [[ ${check} == "${input}" ]]; then
+                      return 0
+                  fi
+              done
+              return 1
+          }
+          source /usr/share/pacstall/scripts/dep-tree.sh
+          mapfile -t list < <(pacstall -L)
+          dep_tree.loop_traits order "${list[@]}"
+          for changed_file in "${order[@]}"; do
               echo "Running pacstall -R for ${changed_file}..."
               pacstall --disable-prompts -R ${changed_file} || exit 1
           done
