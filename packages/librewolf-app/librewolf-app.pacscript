@@ -1,16 +1,16 @@
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgname="librewolf-app"
 gives="librewolf"
-pkgver="121.0-1"
+pkgver="125.0.3-1"
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom."
 arch=('amd64' 'arm64')
 sha256sums_amd64=(
-  "63178bcc1feacc94f657ea86cf86aac8d8e272e7646ddef189eede99236fd81e"
+  "103bf16bdbea3bdb9910febc1635fc3ec715a16f49607908c08660fab30c6915"
   "SKIP"
   "SKIP"
 )
 sha256sums_arm64=(
-  "b0a6c690bd7a2f5f5d364c82115ee945445822c97adb5d258038769f8054a5c6"
+  "c1a067e09e2f9d98f9d7f6f435a8767b06ed405c7c46b26b1b59eb2aa961c55b"
   "SKIP"
   "SKIP"
 )
