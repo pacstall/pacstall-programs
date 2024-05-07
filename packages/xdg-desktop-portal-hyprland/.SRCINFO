@@ -28,6 +28,7 @@ makedepends = libsdbus-c++-bin
 makedepends = libdrm-dev
 optdepends = grim: required for the screenshot portal to function
 optdepends = slurp: support for interactive mode for the screenshot portal
+pacdeps = hyprlang
 provides = xdg-desktop-portal-impl
 compatible = ubuntu:devel
 compatible = debian:sid
