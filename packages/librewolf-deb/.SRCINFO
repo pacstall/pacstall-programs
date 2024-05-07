@@ -1,9 +1,9 @@
 pkgname = librewolf-deb
 gives = librewolf
-pkgver = 121.0-1
+pkgver = 125.0.3-1
 pkgdesc = A fork of Firefox, focused on privacy, security and freedom
 arch = amd64
-source = https://deb.librewolf.net/pool/jammy/librewolf-121.0-1.en-US.ubuntu22.x86_64.deb
+source = https://deb.librewolf.net/pool/jammy/librewolf-125.0.3-1.en-US.ubuntu22.x86_64.deb
 breaks = librewolf-app
 breaks = librewolf-bin
 breaks = librewolf-git
@@ -11,4 +11,4 @@ replaces = librewolf
 incompatible = debian:bullseye
 maintainer = Oren Klopfer <oren@taumoda.com>
 repology = project: librewolf
-sha256sums = 1b7105ba3b8ad8e084e02eb7bbe46377c178ef49543b4fad0d48f31c2df80ec6
+sha256sums = 9841643f5760a2c53b3101d7cb8fc2677a29805e72d37783a182f2545ac0ee24
