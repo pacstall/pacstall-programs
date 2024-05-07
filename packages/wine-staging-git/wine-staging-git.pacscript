@@ -53,7 +53,7 @@ prepare() {
 }
 
 build() {
-  export CFLAGS="$CFLAGS -ffat-lto-objects"
+  export CFLAGS="${CFLAGS} -ffat-lto-objects"
   export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/i386-linux-gnu/pkgconfig:/usr/lib32/pkgconfig"
   cd "${_archive}"
   ls -l
