@@ -1,10 +1,10 @@
 pkgname = sublime-merge-deb
 gives = sublime-merge
-pkgver = 2092
+pkgver = 2096
 pkgdesc = Sublime text like Git GUI Client
 arch = amd64
-source = https://download.sublimetext.com/sublime-merge_build-2092_amd64.deb
+source = https://download.sublimetext.com/sublime-merge_build-2096_amd64.deb
 replaces = sublime-merge
 maintainer = Oren Klopfer <oren@taumoda.com>
 repology = project: sublime-merge
-sha256sums = 8711a06674c011a6793f6f0f7c8f9fe2062f75227cb926e1c9c9ae6de3ca8d5e
+sha256sums = 81459fa0779b431c1fa50fd983343cbbfa28cc0791ec384ba952035818ba4d1a
