@@ -1,5 +1,5 @@
 pkgname = linux-kernel
-pkgver = 6.9~rc6
+pkgver = 6.9~rc7
 pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
 pacdeps = linux-headers-deb
