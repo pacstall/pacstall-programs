@@ -1,10 +1,10 @@
 pkgname="vscodium-deb"
 gives="codium"
 breaks=("${gives}")
-pkgver="1.88.0.24096"
+pkgver="1.89.0.24127"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("533972436f87cbb3d85b174657db8a753e2f14fa3830f8933a7dd46b02f92298")
-sha256sums_amd64=("8748954e044e070c42daa6651d60512b37f21fb7e7e8fcc8aa6546edbfd50659")
+sha256sums_arm64=("fe2a720d305fc8e2c07552bc8079c81e8cbb99d2ab6ef9aa15998c75e45b5270")
+sha256sums_amd64=("5747f4fa9fc1c4f016c82ba147c267eb3b10d40748fdddd438b0e098c8bfa310")
 source=("https://github.com/VSCodium/vscodium/releases/download/${pkgver}/${gives}_${pkgver}_${CARCH}.deb")
 repology=("project: vscodium")
 maintainer=("Oren Klopfer <oren@taumoda.com>")

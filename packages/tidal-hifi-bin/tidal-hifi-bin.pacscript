@@ -1,6 +1,6 @@
 pkgname="tidal-hifi-bin"
 gives="tidal-hifi"
-pkgver="5.8.0"
+pkgver="5.11.0"
 pkgdesc="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
 repology=("project: tidal-hifi" "visiblename: tidal-hifi-bin")
 source=(
@@ -9,7 +9,7 @@ source=(
   "tidal-hifi.desktop::https://aur.archlinux.org/cgit/aur.git/plain/tidal-hifi.desktop?h=tidal-hifi-bin"
 )
 sha256sums=(
-  "598da80fc2cfe4065f0ba07fbb08ecab44e8dde76ba8d88d2a491cc6f3780ce9"
+  "a33706b05cbd897c8aa61ac9e3d876f318ca472326c6d739c589ab6fdb4ee892"
   "SKIP"
   "SKIP"
 )
