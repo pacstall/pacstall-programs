@@ -74,7 +74,6 @@ build() {
     --with-gstreamer \
     --with-wine64="../wine64-build"
   make -j"${NCPU}"
-  # shellcheck disable=SC2103
 }
 
 package() {
