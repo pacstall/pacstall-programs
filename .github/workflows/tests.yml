@@ -110,14 +110,19 @@ jobs:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
+          export METADIR=/var/lib/pacstall/metadata
           PRNUM="$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')"
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
               package_name="${pacscript_file/.pacscript/}"
-              echo "Running pacstall -Qa for ${package_name}..."
-              echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
-              { echo N | pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}; } || exit 1
+              if [[ -f "${METADIR}/${package_name}" ]]; then
+                echo "Package ${package_name} has already been installed."
+              else
+                echo "Running pacstall -Qa for ${package_name}..."
+                echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
+                { echo N | pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}; } || exit 1
+              fi
             fi
           done
         shell: sudo -E -u dio bash {0}
@@ -225,14 +230,19 @@ jobs:
           export SUDO_USER=$USER
           export DEBIAN_FRONTEND=noninteractive
           export GITHUB_ACTIONS=true
+          export METADIR=/var/lib/pacstall/metadata
           PRNUM="$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')"
           for changed_file in ${{ steps.files.outputs.added_modified }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
               package_name="${pacscript_file/.pacscript/}"
-              echo "Running pacstall -Qa for ${package_name}..."
-              echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
-              { echo N | pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}; } || exit 1
+              if [[ -f "${METADIR}/${package_name}" ]]; then
+                echo "Package ${package_name} has already been installed."
+              else
+                echo "Running pacstall -Qa for ${package_name}..."
+                echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
+                { echo N | pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}; } || exit 1
+              fi
             fi
           done
         shell: sudo -E -u dio bash {0}
