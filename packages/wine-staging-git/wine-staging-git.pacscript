@@ -52,7 +52,7 @@ pkgver() {
 }
 
 prepare() {
-  cd "$srcdir"/wine
+  cd "${srcdir}"/wine
   rm -rf build-{32,64}
   mkdir -p wine64-build
   mkdir -p wine32-build
@@ -67,7 +67,7 @@ prepare() {
   git -C wine config --local advice.detachedHead false
   git -C wine checkout "$(wine-staging/staging/patchinstall.py --upstream-commit)"
 
-  cd "$srcdir"
+  cd "${srcdir}"
 
   # apply all wine-staging patches
   printf '%s\n' '  -> Applying wine-staging patches...'
@@ -78,7 +78,7 @@ prepare() {
 build() {
   export CFLAGS="${CFLAGS} -ffat-lto-objects"
   export PKG_CONFIG_PATH="/usr/lib/x86_64-linux-gnu/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig:/usr/lib/i386-linux-gnu/pkgconfig:/usr/lib32/pkgconfig"
-  cd "$srcdir"/wine
+  cd "${srcdir}"/wine
   ls -l
   cd "wine64-build"
   ../configure \
@@ -100,7 +100,7 @@ build() {
 }
 
 package() {
-  cd "$srcdir"/wine
+  cd "${srcdir}"/wine
   cd "wine32-build"
   mkdir -p "${pkgdir}/usr/lib32/wine"
   make prefix="${pkgdir}/usr" \
