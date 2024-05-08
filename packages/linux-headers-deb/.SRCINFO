@@ -1,12 +1,12 @@
 pkgname = linux-headers-deb
-gives = linux-headers-6.9.0-060900rc6
-pkgver = 6.9~rc6
+gives = linux-headers-6.9.0-060900rc7
+pkgver = 6.9~rc7
 pkgdesc = Ubuntu Linux mainline kernel (Headers)
 arch = any
-source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9-rc6/amd64/linux-headers-6.9.0-060900rc6_6.9.0-060900rc6.202404282134_all.deb
+source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9-rc7/amd64/linux-headers-6.9.0-060900rc7_6.9.0-060900rc7.202405052133_all.deb
 maintainer = Oren Klopfer <oren@taumoda.com>
 repology = project: linux
 repology = repo: aur
 repology = srcname: linux-mainline
 repology = binname: linux-mainline-headers
-sha256sums = 2d36527971d06c28c4237546eaa87cef6ff47dc390ff1fec3888ecf88cde076e
+sha256sums = e893d4c6bb21c1334725c28cbbf01ed4a3b1d49812043481a186fa5181dc029c
