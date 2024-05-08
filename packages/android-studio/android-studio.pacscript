@@ -1,7 +1,7 @@
 pkgname="android-studio"
 repology=("project: ${pkgname}" "repo: aur")
 replaces=("${pkgname}" "${pkgname}-beta" "${pkgname}-canary")
-pkgver="2023.2.1.25"
+pkgver="2024.1.1.6"
 source=(
   "https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${pkgname}-${pkgver}-linux.tar.gz"
   "${pkgname}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${pkgname}.desktop"
@@ -9,7 +9,7 @@ source=(
 depends=("libc6-i386" "lib32ncurses6" "lib32stdc++6" "lib32z1" "libbz2-1.0:i386")
 pkgdesc="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
 sha256sums=(
-  "cd63ead467dc92a08ff6b3695c01d57e802976fc64acddcd31cd6a2427ffa1bc"
+  "1b201956450187bb4cea6e21ce95189de8a368548dc1d4b2fe0dcfedf696f6fb"
   "SKIP"
 )
 maintainer=("Oren Klopfer <oren@taumoda.com>")

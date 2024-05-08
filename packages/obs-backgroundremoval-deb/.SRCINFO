@@ -1,12 +1,12 @@
 pkgname = obs-backgroundremoval-deb
 gives = obs-backgroundremoval
-pkgver = 1.1.12
+pkgver = 1.1.13
 pkgdesc = OBS plugin to replace the background in portrait images and video
 arch = amd64
-source = https://github.com/royshil/obs-backgroundremoval/releases/download/1.1.12/obs-backgroundremoval-1.1.12-x86_64-linux-gnu.deb
+source = https://github.com/royshil/obs-backgroundremoval/releases/download/1.1.13/obs-backgroundremoval-1.1.13-x86_64-linux-gnu.deb
 breaks = obs-backgroundremoval
 breaks = obs-backgroundremoval-git
 incompatible = debian:bullseye
 maintainer = Zahrun <Zahrun@github.com>
 repology = project: obs-backgroundremoval
-sha256sums = f7fc1ff2beb93a9049187b0bfb32faf2126af0aad167f7e8d0d3c724189ff190
+sha256sums = 3db40f02f278dd567b553bc451d2e4127024c0de8fca4423cbb892e9b329f551
