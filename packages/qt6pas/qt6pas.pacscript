@@ -8,7 +8,7 @@ source=("https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_${_
 arch=("amd64")
 makedepends=('qt6-base-dev' 'qmake6' 'libgl-dev')
 provides=('libqt6pas1')
-sha256sums="053ebb9d703162617a6c5bbd26e78aacb45e439d9a9964aa3197eaada2aa8c2e"
+sha256sums=("053ebb9d703162617a6c5bbd26e78aacb45e439d9a9964aa3197eaada2aa8c2e")
 pkgdesc="Free Pascal Qt6 binding library updated by lazarus IDE"
 maintainer="Xdavius <xdavius@github.com>"
 
