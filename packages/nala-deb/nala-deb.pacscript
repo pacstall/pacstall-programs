@@ -1,9 +1,9 @@
 pkgname="nala-deb"
-pkgver="0.15.1"
+pkgver="0.15.2"
 gives="nala"
 breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
 pkgdesc="Commandline frontend for the apt package manager"
 maintainer=("Blake Lee <blake@volian.org>")
 source=("https://deb.volian.org/volian/pool/main/n/nala/nala_${pkgver}_all.deb")
-sha256sums=("39cfaa52418978aaf8e069528b3c0bd3cb80b1324f9ac2374365e1f645ed18f1")
+sha256sums=("edbcbcd49bc161143d458835272d1130748287a411bc416d3d0b132ee5e84e4b")
 arch=('any')
