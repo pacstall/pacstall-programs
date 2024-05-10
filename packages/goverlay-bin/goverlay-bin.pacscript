@@ -18,6 +18,7 @@ repology=("project: goverlay")
 package() {
   cd "${_archive}"
   mkdir -p "${pkgdir}/usr/bin/" "${pkgdir}/opt/goverlay/" "${pkgdir}/usr/share/applications/" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/"
+  # shellcheck disable=SC2145
   echo -e "#!/bin/sh\nQT_QPA_PLATEFORMTHEME=qt6ct QT_STYLE_OVERRIDE=Adwaita-Dark mangohud /opt/goverlay/goverlay $@" | tee "${pkgdir}/usr/bin/goverlay" >/dev/null
   chmod +x "${pkgdir}/usr/bin/goverlay"
   install -Dm755 goverlay "${pkgdir}/opt/goverlay/goverlay"
