@@ -40,5 +40,5 @@ package() {
   sed -i "/^#export*/c\export QT_QPA_PLATEFORMTHEME="qt6ct" QT_STYLE_OVERRIDE="Adwaita-Dark"" "${pkgdir}"/usr/bin/goverlay
 
   # Fix Issue to change Depends with usage of pacdeps
-  sed -i "/^Depends:*/c\Depends: mangohud, libqt6pas-dev, qt6ct, adwaita-qt6" "${pkgdir}"/DEBIAN/control
+  #sed -i "/^Depends:*/c\Depends: mangohud, libqt6pas-dev, qt6ct, adwaita-qt6" "${pkgdir}"/DEBIAN/control
 }
