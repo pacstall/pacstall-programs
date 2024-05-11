@@ -7,7 +7,7 @@ replace=("goverlay-bin")
 arch=("amd64")
 makedepends=('git' 'libglu1-mesa-dev' 'qt6-base-dev')
 case "${DISTRO}" in
-debian:testing | debian:sid)
+debian:testing | debian:sid | ubuntu:noble | ubuntu:devel | ubuntu:rolling)
   pacdeps=('qt6pas' 'mangohud')
   makedepends+=("lazarus" "fpc" "fpc-source")
   ;;
