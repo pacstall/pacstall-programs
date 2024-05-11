@@ -38,7 +38,7 @@ prepare() {
   # Decompress tools
   pushd tool/"${CARCH}" || exit
   for file in *.xz; do
-    xzcat "{$file}" >"${file%.xz}"
+    xzcat "${file}" >"${file%.xz}"
     chmod +x "${file%.xz}"
   done
 
@@ -58,7 +58,7 @@ prepare() {
   # Clean up unused binaries
   # Preserving mkexfatfs and mount.exfat-fuse because exfatprogs is incompatible
   for binary in xzcat hexdump; do
-    rm -fv tool/"${CARCH}"/${binary}
+    rm -fv tool/"${CARCH}"/"${binary}"
   done
 }
 
@@ -81,7 +81,7 @@ package() {
     ln -svf /usr/bin/"${binary}" "${pkgdir}/opt/${pkgname%-bin}/tool/${CARCH}/"
   done
 
-  install -Dm755 "$srcdir/${pkgname%-bin}"{,gui,web,plugson,-{,extend-}persistent} -vt "${pkgdir}"/usr/bin/
+  install -Dm755 "${srcdir}/${pkgname%-bin}"{,gui,web,plugson,-{,extend-}persistent} -vt "${pkgdir}"/usr/bin/
 
   # Remove Gtk 2 files
   if [[ "${CARCH}" == "x86_64" ]]; then
