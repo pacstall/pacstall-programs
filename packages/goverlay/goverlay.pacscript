@@ -23,6 +23,7 @@ esac
 
 
 build() {
+  export external_connection=true
   cd "${_archive}"
   case "${DISTRO}" in
   debian:testing | debian:sid)
