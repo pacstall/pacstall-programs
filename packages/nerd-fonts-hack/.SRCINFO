@@ -1,0 +1,8 @@
+pkgname = nerd-fonts-hack
+pkgver = 3.1.1
+pkgdesc = Patched font Hack from Nerd Fonts library
+source = https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.tar.xz
+replaces = nerd-fonts-hack
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: fonts:nerd-fonts
+sha256sums = 0d820cb2fedb86a15ca1354e03f26443face8b6aa190610263fad1125a409a16

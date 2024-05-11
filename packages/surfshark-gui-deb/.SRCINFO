@@ -1,0 +1,9 @@
+pkgname = surfshark-gui-deb
+gives = surfshark
+pkgver = 1.3.0-1616
+pkgdesc = SurfShark VPN Client
+arch = amd64
+source = https://ocean.surfshark.com/debian/pool/main/s/surfshark/surfshark_1.3.0-1616_amd64.deb
+maintainer = WRM-42 <y8bsbahy@anonaddy.me>
+repology = project: surfshark-gui
+sha256sums = a3ae250cc857ee3e7462452bd60b2bc453bad5df18fef3b2ce0fa4ff7ebb925d

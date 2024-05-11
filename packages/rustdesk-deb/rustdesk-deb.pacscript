@@ -1,10 +1,10 @@
-name="rustdesk-deb"
+pkgname="rustdesk-deb"
 gives="rustdesk"
 repology=("project: ${gives}")
 pkgver="1.2.3"
-url="https://github.com/rustdesk/rustdesk/releases/download/${pkgver}-1/rustdesk-${pkgver}-x86_64.deb"
+source=("https://github.com/rustdesk/rustdesk/releases/download/${pkgver}-1/rustdesk-${pkgver}-x86_64.deb")
 breaks=("${gives}-bin")
 pkgdesc="Yet another remote desktop software, written in Rust"
-hash="bfa6ba63b2745ace87b2cdd4900de59dca339272a8fdf60a80f1702036b71178"
+sha256sums=("bfa6ba63b2745ace87b2cdd4900de59dca339272a8fdf60a80f1702036b71178")
 arch=('amd64')
-maintainer="xdavius <xdavius@github.com>"
+maintainer=("xdavius <xdavius@github.com>")

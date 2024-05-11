@@ -1,20 +1,19 @@
-name="onnxruntime-gpu-bin"
+pkgname="onnxruntime-gpu-bin"
 gives="onnxruntime-gpu"
-pkgname="onnxruntime-gpu"
-_pkgname="onnxruntime"
 repology=("project: onnxruntime")
 pkgver="1.17.1"
-url="https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-gpu-${pkgver}.tgz"
+source=("https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-gpu-${pkgver}.tgz")
 pkgdesc="Cross-platform inference and training machine-learning accelerator with gpu support"
-hash="613c53745ea4960ed368f6b3ab673558bb8561c84a8fa781b4ea7fb4a4340be4"
-maintainer="Zahrun <Zahrun@github.com>"
-replace=("${_pkgname}" "${_pkgname}-bin" "${_pkgname}-1-7-0-bin" "${gives}" "${gives}-bin")
+sha256sums=("613c53745ea4960ed368f6b3ab673558bb8561c84a8fa781b4ea7fb4a4340be4")
+maintainer=("Zahrun <Zahrun@github.com>")
+replaces=("${gives}-1-7-0-bin" "${gives}" "${gives}-bin")
 
 package() {
-  sudo install -Dm755 "lib/lib${_pkgname}.so.${pkgver}" -t "${pkgdir}/usr/local/lib"
-  sudo install -Dm755 "lib/lib${_pkgname}_"* -t "${pkgdir}/usr/local/lib"
-  sudo install -Dm644 include/* -t "${pkgdir}/usr/local/include"
-  sudo install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${name}"
-  sudo mkdir -p "${pkgdir}/usr/local/lib"
-  sudo ln -sf "/usr/local/lib/lib${_pkgname}.so.${pkgver}" "${pkgdir}/usr/local/lib/lib${_pkgname}.so"
+  cd "${_archive}"
+  install -Dm755 "lib/lib${_gives}.so.${pkgver}" -t "${pkgdir}/usr/local/lib"
+  install -Dm755 "lib/lib${_gives}_"* -t "${pkgdir}/usr/local/lib"
+  install -Dm644 include/* -t "${pkgdir}/usr/local/include"
+  install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  mkdir -p "${pkgdir}/usr/local/lib"
+  ln -sf "/usr/local/lib/lib${_gives}.so.${pkgver}" "${pkgdir}/usr/local/lib/lib${_gives}.so"
 }

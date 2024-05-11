@@ -1,0 +1,9 @@
+pkgname = ferdium-deb
+gives = ferdium
+pkgver = 6.7.2
+pkgdesc = Ferdium is a desktop app that helps you organize how you use your favourite apps by combining them into one application
+arch = amd64
+source = https://github.com/ferdium/ferdium-app/releases/download/v6.7.2/Ferdium-linux-6.7.2-amd64.deb
+maintainer = Zahrun <Zahrun@github.com>
+repology = project: ferdium
+sha256sums = 447f221ea27435ddf09179affd9197e49796b71c89b552d56f4b73ead9e48ebc

@@ -1,19 +1,21 @@
-name="tdrop-git"
+pkgname="tdrop-git"
 gives="tdrop"
-url="https://github.com/noctuid/tdrop.git"
+source=("https://github.com/noctuid/tdrop.git")
 pkgver="1.5.0"
-homepage="https://github.com/noctuid/tdrop"
+url="https://github.com/noctuid/tdrop"
 pkgdesc="A Glorified WM-Independent Dropdown Creator"
-maintainer="Thomas Crha <thomas@9bitbyte.com>"
+maintainer=("Thomas Crha <thomas@9bitbyte.com>")
 depends=("xdotool" "bash" "gawk" "procps")
 
 prepare() {
+  cd "${_archive}"
   gzip -9n "tdrop.1"
 }
 
 package() {
-  sudo install -Dm755 "tdrop" "/usr/local/bin/tdrop"
-  sudo install -Dm644 "tdrop.1.gz" "/usr/local/share/man/man1/tdrop.1.gz"
-  sudo install -Dm644 "LICENSE" "/usr/local/share/licenses/tdrop/LICENSE"
+  cd "${_archive}"
+  install -Dm755 "tdrop" "/usr/local/bin/tdrop"
+  install -Dm644 "tdrop.1.gz" "/usr/local/share/man/man1/tdrop.1.gz"
+  install -Dm644 "LICENSE" "/usr/local/share/licenses/tdrop/LICENSE"
 }
 # vim:set ft=sh ts=2 sw=2 et:

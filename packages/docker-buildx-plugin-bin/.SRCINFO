@@ -1,0 +1,14 @@
+pkgname = docker-buildx-plugin-bin
+gives = docker-buildx-plugin
+pkgver = 0.14.0
+pkgdesc = Docker Buildx cli plugin
+url = https://github.com/docker/buildx
+arch = amd64
+arch = arm64
+source_amd64 = https://github.com/docker/buildx/releases/download/v0.14.0/buildx-v0.14.0.linux-amd64
+source_arm64 = https://github.com/docker/buildx/releases/download/v0.14.0/buildx-v0.14.0.linux-arm64
+replaces = docker-buildx-plugin
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: docker-buildx
+sha256sums_amd64 = 32f8f17eca35bf2efe6c0e47f40e4692a876f34531b421efc984799a5b41226e
+sha256sums_arm64 = 38bf0ea9c48743edb8243f14272be65a2bad7092228068337aea584309ea664c

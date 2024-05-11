@@ -1,0 +1,9 @@
+pkgname = vyprvpn-deb
+gives = vyprvpn
+pkgver = 1.8
+pkgdesc = VyprVPN's CLI tool
+arch = amd64
+source = https://support.vyprvpn.com/hc/article_attachments/360054448971/vyprvpn-linux-cli-1.8.amd64.deb
+replaces = vyprvpn
+repology = project: vyprvpn
+sha256sums = c2c67794b6f4bcdf5f2e3d1e8eeab6a2bff9f452ccc70032b9a408c9f98d5511

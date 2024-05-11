@@ -1,0 +1,13 @@
+pkgname = wsysmon-bin
+gives = wsysmon
+pkgver = 0.1.0
+pkgdesc = A windows task manager clone for Linux
+source = https://github.com/SlyFabi/WSysMon/releases/download/0.1.0/WSysMon
+source = wsysmon.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/wsysmon-bin/wsysmon.desktop
+breaks = wsysmon
+breaks = wsysmon-deb
+breaks = wsysmon-git
+maintainer = 0x262D <pacstall@copypaste.anonaddy.me>
+repology = project: wsysmon
+sha256sums = ef57a20064c7d97c437cbce19e20f78638430e08bc7c9933cc876e83114fce58
+sha256sums = SKIP

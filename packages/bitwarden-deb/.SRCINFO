@@ -1,0 +1,12 @@
+pkgname = bitwarden-deb
+gives = bitwarden
+pkgver = 2024.4.3
+pkgdesc = Open Source Password Manager
+arch = amd64
+source = https://github.com/bitwarden/clients/releases/download/desktop-v2024.4.3/Bitwarden-2024.4.3-amd64.deb
+breaks = bitwarden-app
+breaks = bitwarden-git
+replaces = bitwarden
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: bitwarden
+sha256sums = ad1988b4d52a1e5677b4d14b8c93564d5493088e1d07e5d75a71ca6b7e4e131f

@@ -1,0 +1,14 @@
+pkgname = distrobox
+gives = distrobox
+pkgver = 1.7.2.1
+pkgdesc = Use any linux distribution inside your terminal
+source = https://github.com/89luca89/distrobox/archive/refs/tags/1.7.2.1.tar.gz
+optdepends = docker.io: enable docker usage
+optdepends = podman: enable podman usage
+breaks = distrobox
+breaks = distrobox-deb
+breaks = distrobox-app
+breaks = distrobox-git
+maintainer = Marie Piontek <marie@kaifa.ch>
+repology = project: distrobox
+sha256sums = ff2cca0c6334fff6ed577d23f68a6746ad4009f42d8a45eef5ca3850c895a4bb

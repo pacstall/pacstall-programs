@@ -1,0 +1,8 @@
+pkgname = xfce4-deb
+gives = xfce4
+pkgver = 4.18
+pkgdesc = XFCE4 Desktop
+source = http://ftp.de.debian.org/debian/pool/main/x/xfce4/xfce4_4.18_all.deb
+maintainer = http.llamaz <http.llamaz@llamawebdesign.co.uk>
+repology = project: xfce4-meta
+sha256sums = f8635ff525c6d87290fb1a794f67928c198e63f7d900f95c66c0c565697624ff

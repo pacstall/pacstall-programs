@@ -1,0 +1,9 @@
+pkgname = lazygit
+gives = lazygit
+pkgver = 0.40.2
+pkgdesc = simple terminal UI for git commands
+url = https://github.com/jesseduffield/lazygit
+source = https://github.com/jesseduffield/lazygit/releases/download/v0.40.2/lazygit_0.40.2_Linux_x86_64.tar.gz
+depends = git
+maintainer = Thomas Crha <thomas@9bitbyte.com>
+sha256sums = ff05cb8ebd0785ce220975e5cd394bc200424d9a58727fa81e0bbb3828db7ff1

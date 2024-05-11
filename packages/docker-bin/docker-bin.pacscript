@@ -1,28 +1,26 @@
-name="docker-bin"
+pkgname="docker-bin"
 gives="docker"
-replace=("${gives}-desktop" "${gives}-ce" "${gives}-ce-cli" "containerd.io")
+replaces=("${gives}-desktop" "${gives}-ce" "${gives}-ce-cli" "containerd.io")
 repology=("project: ${gives}")
-pkgver="24.0.7"
+pkgver="26.1.1"
 depends=("procps" "git" "iptables" "fuse-overlayfs")
 pkgdesc="Docker Engine Static Binaries"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('arm64' 'amd64')
-if [[ ${CARCH} == arm64 ]]; then
-  gnuarch="aarch64"
-  hash="fe6cf4b509307665af542a89454c2ecfbbd62670fc5a5d17bac7150a6f6a6776"
-else
-  gnuarch="x86_64"
-  hash="984d59a77fa6acab97ea725a966facd33725e0e09c2fee975397fe1c6379bd3d"
-fi
-url="https://download.docker.com/linux/static/stable/${gnuarch}/${gives}-${pkgver}.tgz"
+sha256sums_arm64=("8363596e5095c29c2d09f688e9f5ca326eb547fa7f7a32fd21ff7432ac196ae3")
+sha256sums_amd64=("c0ef0ee7d00deb803a6f5fa78d83ec8cbe1848eaaea9fb7071364d526624278f")
+source_amd64=("https://download.docker.com/linux/static/stable/x86_64/${gives}-${pkgver}.tgz")
+source_arm64=("https://download.docker.com/linux/static/stable/aarch64/${gives}-${pkgver}.tgz")
 
 build() {
-  sudo mkdir -p "${pkgdir}/usr/bin"
-  sudo mkdir -p "${pkgdir}/lib/systemd/system"
+  cd "${_archive}"
+  mkdir -p "${pkgdir}/usr/bin"
+  mkdir -p "${pkgdir}/lib/systemd/system"
 }
 
 package() {
-  sudo cp -r "../${gives}"/* -t "${pkgdir}/usr/bin"
+  cd "${_archive}"
+  cp -r "../${gives}"/* -t "${pkgdir}/usr/bin"
   # shellcheck disable=SC2016
   echo '[Unit]
 Description=Docker Application Container Engine
@@ -49,7 +47,7 @@ KillMode=process
 OOMScoreAdjust=-500
 
 [Install]
-WantedBy=multi-user.target' | sudo tee "${pkgdir}/lib/systemd/system/docker.service" > /dev/null
+WantedBy=multi-user.target' | tee "${pkgdir}/lib/systemd/system/docker.service" > /dev/null
 
   echo '[Unit]
 Description=Docker Socket for the API
@@ -61,7 +59,7 @@ SocketUser=root
 SocketGroup=docker
 
 [Install]
-WantedBy=sockets.target' | sudo tee "${pkgdir}/lib/systemd/system/docker.socket" > /dev/null
+WantedBy=sockets.target' | tee "${pkgdir}/lib/systemd/system/docker.socket" > /dev/null
 
   echo '# Copyright The containerd Authors.
 #
@@ -102,7 +100,7 @@ TasksMax=infinity
 OOMScoreAdjust=-999
 
 [Install]
-WantedBy=multi-user.target' | sudo tee "${pkgdir}/lib/systemd/system/containerd.service" > /dev/null
+WantedBy=multi-user.target' | tee "${pkgdir}/lib/systemd/system/containerd.service" > /dev/null
 }
 
 post_install() {

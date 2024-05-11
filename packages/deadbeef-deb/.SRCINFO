@@ -1,0 +1,16 @@
+pkgname = deadbeef-deb
+gives = deadbeef-static
+pkgver = 1.9.6
+pkgdesc = A modular cross-platform audio player
+url = https://deadbeef.sourceforge.io
+arch = amd64
+source = https://cfhcable.dl.sourceforge.net/project/deadbeef/travis/linux/1.9.6/deadbeef-static_1.9.6-1_amd64.deb
+breaks = deadbeef-static
+breaks = deadbeef-static-bin
+breaks = deadbeef-static-git
+breaks = deadbeef-static-app
+breaks = deadbeef-static-deb
+replaces = deadbeef-static
+maintainer = Arrowsome <ramtintoosi@gmail.com>
+repology = project: deadbeef
+sha256sums = c0e95beedb2dc3ee6de604048593b2b12a4ea001ad3185c41947b4f7d854ecf6

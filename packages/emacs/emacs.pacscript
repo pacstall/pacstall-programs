@@ -7,7 +7,7 @@
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
 #        \/          \/      \/
-maintainer="wizard-28 <wiz28@pm.me>"
+maintainer=("wizard-28 <wiz28@pm.me>")
 
 ### This pacscript is made with (ported to pacstall) the help of https://aur.archlinux.org/cgit/aur.git/commit/?h=emacs-git&id=b9eb3b405717f8df37b38217dbb7d361b8ffca08
 ###################################################################################
@@ -71,40 +71,18 @@ DOCS_PDF=         # Generate and install pdf documentation.
 NOGZ="YES"        # Don't compress .el files.
 #################################################################################
 
-name="emacs"
+pkgname="emacs"
 pkgver="28.2"
-url="http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz"
+source=("http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
 makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
 depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
-gives="${name}"
-breaks=("${name}-git" "${name}-nox")
-replace=("${name}-git" "${name}-nox")
-hash="ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488"
+gives="${pkgname}"
+breaks=("${pkgname}-git" "${pkgname}-nox")
+replaces=("${pkgname}-git" "${pkgname}-nox")
+sha256sums=("ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488")
 repology=("project: emacs")
-
-#################################################################################
-# Weird dependency shenanigans
-#################################################################################
-if apt-cache search libwebp7 | grep -q "libwebp7"; then
-  libwebp="libwebp7"
-else
-  libwebp="libwebp6"
-fi
-
-if apt-cache search libgtk-4-dev | grep -q "libgtk-4-dev"; then
-  libgtk_dev="libgtk-4-dev"
-else
-  libgtk_dev="libgtk-3-dev"
-fi
-
-if apt-cache search libjpeg-turbo8 | grep -q "libjpeg-turbo8"; then
-  libjpeg_turbo="libjpeg-turbo8"
-else
-  libjpeg_turbo="libjpeg62-turbo"
-fi
-#################################################################################
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then
   export LD=/usr/bin/ld.gold
@@ -152,12 +130,12 @@ elif [[ ${LUCID} == "YES" ]]; then
   depends+=("dbus" "hicolor-icon-theme" "libxinerama1" "libxfixes3" "liblcms2-2" "librsvg2-2" "xaw3dg" "libxrandr2" "libxi6" "libsm6" "libxcb-util1" "libxcb1")
   makedepends+=("x11proto-dev")
 elif [[ ${GTK3} == "YES" ]]; then
-  depends+=("${libgtk_dev}" "libsm6" "libxcb-util1" "libxcb1")
+  depends+=("libgtk-4-dev | libgtk-3-dev" "libsm6" "libxcb-util1" "libxcb1")
   makedepends+=("x11proto-dev" "libxi-dev")
 fi
 
 if [[ ${CLI} != "YES" ]]; then
-  depends+=("${libjpeg_turbo}" "libpng16-16" "libgif-dev" "${libwebp}" "libtiff5")
+  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff5")
 elif [[ ${CLI} == "YES" ]]; then
   depends+=("")
 fi
@@ -196,6 +174,7 @@ if [[ ${DOCS_PDF} == "YES" && ! -d "/usr/local/texlive" ]]; then
 fi
 
 prepare() {
+  cd "${_archive}"
   [[ -x configure ]] || (./autogen.sh git && ./autogen.sh autoconf)
   if [[ ${CHECK} == "YES" ]]; then
     make -j"${NCPU}" check
@@ -203,6 +182,7 @@ prepare() {
 }
 
 build() {
+  cd "${_archive}"
   local _conf=(
     --prefix=/usr
     --sysconfdir=/etc
@@ -295,7 +275,7 @@ build() {
   # You may need to run this if "loaddefs.el" files become corrupt.
   #cd "/usr/pacstall/src/emacs-git/lisp"
   #make autoloads
-  #cd ../
+  #cd "${srcdir}"/
 
   # Optional documentation formats.
   if [[ ${DOCS_HTML} == "YES" ]]; then
@@ -308,19 +288,20 @@ build() {
 }
 
 package() {
-  sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install
+  cd "${_archive}"
+  make -j"${NCPU}" DESTDIR="${pkgdir}" install
 
   # Install optional documentation formats
-  if [[ ${DOCS_HTML} == "YES" ]]; then sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install-html; fi
-  if [[ ${DOCS_PDF} == "YES" ]]; then sudo make -j"${NCPU}" DESTDIR="${pkgdir}" install-pdf; fi
+  if [[ ${DOCS_HTML} == "YES" ]]; then make -j"${NCPU}" DESTDIR="${pkgdir}" install-html; fi
+  if [[ ${DOCS_PDF} == "YES" ]]; then make -j"${NCPU}" DESTDIR="${pkgdir}" install-pdf; fi
 
   # fix user/root permissions on usr/local/share files
-  find "${pkgdir}/usr/share/emacs/" -print0 | sudo xargs -0 chown root:root
+  find "${pkgdir}/usr/share/emacs/" -print0 | xargs -0 chown root:root
 
   # fix permssions on /var/games
-  sudo mkdir -p "${pkgdir}/var/games/emacs"
-  sudo chmod 775 "${pkgdir}/var/games"
-  sudo chmod 775 "${pkgdir}/var/games/emacs"
-  sudo chown -R root:games "${pkgdir}/var/games"
+  mkdir -p "${pkgdir}/var/games/emacs"
+  chmod 775 "${pkgdir}/var/games"
+  chmod 775 "${pkgdir}/var/games/emacs"
+  chown -R root:games "${pkgdir}/var/games"
 }
 # vim:set ft=sh ts=2 sw=2 et:

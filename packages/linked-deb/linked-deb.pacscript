@@ -1,10 +1,10 @@
-name="linked-deb"
+pkgname="linked-deb"
 gives="linked"
 pkgver="1.5.2"
-replace=("${gives}")
-url="https://github.com/lostdesign/linked/releases/download/v${pkgver}/linked_${pkgver}_amd64.deb"
+replaces=("${gives}")
+source=("https://github.com/lostdesign/linked/releases/download/v${pkgver}/linked_${pkgver}_amd64.deb")
 pkgdesc="linked - daily journaling without distraction"
 repology=("project: linked")
-hash="238010ac4ddc537417f4ec1f55f33323de12f4ad74f451a9c31650c0b2e4ae84"
+sha256sums=("238010ac4ddc537417f4ec1f55f33323de12f4ad74f451a9c31650c0b2e4ae84")
 arch=('amd64')
-maintainer="সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>"
+maintainer=("সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>")

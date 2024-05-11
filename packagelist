@@ -41,7 +41,6 @@ brave-browser-nightly-deb
 brave-keyring-deb
 btop-bin
 btrfs-du-bin
-cachy-browser-bin
 cachyos-ananicy-rules-git
 cantata
 caprine-deb
@@ -161,6 +160,7 @@ gnome-shell-extension-installer-git
 gnome-tweaks
 go-bin
 go-task-deb
+goldberg-emulator-git
 gomuks-deb
 google-chrome-beta-deb
 google-chrome-deb
@@ -193,6 +193,7 @@ hyprland-bin
 hyprlang
 hyprpaper
 hyprpicker
+hyprwayland-scanner
 i3blocks-git
 i3lock-color
 imwheel-exclude-patched-git
@@ -341,7 +342,8 @@ pacget-git
 paconvert-git
 pacstall-gui-git
 pacstall-qa-git
-pacup-bin
+pacup
+pacup-git
 panagement
 pap
 paper-icon-theme

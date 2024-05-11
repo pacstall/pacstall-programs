@@ -1,24 +1,24 @@
-name="i3blocks-git"
-pkgname="i3blocks"
+pkgname="i3blocks-git"
+gives="i3blocks"
 pkgdesc="A feed generator for text based status bars"
-url="https://github.com/vivien/${pkgname}.git"
+source=("https://github.com/vivien/${gives}.git")
 pkgver="1.5"
 makedepends=("autoconf" "gcc" "make" "pkgconf")
-breaks=("${pkgname}")
-maintainer="Lanius <laniusone@pm.me>"
-pkgver() {
-  git ls-remote "${url}" master | cut -f1 | cut -c1-8
-}
+breaks=("${gives}")
+maintainer=("Lanius <laniusone@pm.me>")
 
 prepare() {
+  cd "${_archive}"
   ./autogen.sh && ./configure
 }
 
 build() {
+  cd "${_archive}"
   make -j"${NCPU}"
 }
 
 package() {
+  cd "${_archive}"
   # Install i3blocks
-  sudo make install DESTDIR="${pkgdir}"
+  make install DESTDIR="${pkgdir}"
 }

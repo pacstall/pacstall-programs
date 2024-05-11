@@ -1,0 +1,16 @@
+pkgname = slop-git
+gives = slop
+pkgver = 7.6
+pkgdesc = Queries for a selection from the user and prints the region to stdout
+source = https://github.com/naelstrof/slop.git
+depends = libglew-dev
+depends = libxext-dev
+makedepends = cmake
+makedepends = libglm-dev
+makedepends = libxrender-dev
+makedepends = libxfixes-dev
+makedepends = libxcomposite-dev
+makedepends = libxrandr-dev
+breaks = slop-bin
+breaks = slop
+maintainer = Elsie19 <elsie19@pm.me>

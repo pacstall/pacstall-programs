@@ -1,0 +1,10 @@
+pkgname = linux-headers-stable-deb
+gives = linux-headers-6.8.8-060808
+pkgver = 6.8.8
+pkgdesc = Ubuntu Linux stable kernel (Headers)
+arch = any
+source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.8.8/amd64/linux-headers-6.8.8-060808_6.8.8-060808.202404271536_all.deb
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: linux
+repology = repo: distrowatch
+sha256sums = 65292a2fea30698fef967eb655adb7db2dd9e9b08f0396309b10dc31c21b135d

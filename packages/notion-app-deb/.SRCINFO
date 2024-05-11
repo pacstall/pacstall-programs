@@ -1,0 +1,13 @@
+pkgname = notion-app-deb
+gives = notion-app
+pkgver = 2.0.18-1
+pkgdesc = The all-in-one workspace for your notes and tasks
+arch = amd64
+source = https://github.com/notion-enhancer/notion-repackaged/releases/download/v2.0.18-1/notion-app_2.0.18-1_amd64.deb
+breaks = notion-app-app
+breaks = notion-app-enhanced-deb
+breaks = notion-app-enhanced-app
+replaces = notion-app
+maintainer = IOplus <issa20omais@outlook.com>
+repology = project: notion-app
+sha256sums = 7246fb0485cc6ecd5f5381d0568b29d77afff3628ee42a486f39d5af8728ff4e

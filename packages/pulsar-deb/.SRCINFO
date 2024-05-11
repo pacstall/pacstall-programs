@@ -1,0 +1,9 @@
+pkgname = pulsar-deb
+gives = pulsar
+pkgver = 1.116.0
+pkgdesc = A Community-led Hyper-Hackable Text Editor
+arch = amd64
+source = https://github.com/pulsar-edit/pulsar/releases/download/v1.116.0/Linux.pulsar_1.116.0_amd64.deb
+maintainer = Zahrun <Zahrun@github.com>
+repology = project: pulsar-edit
+sha256sums = 9d18055931d8a819f1c68ad1c687b11741ef2c29768cc749006ed1ff9f597761

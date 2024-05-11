@@ -1,0 +1,10 @@
+pkgname = electronmail-deb
+gives = electron-mail
+pkgver = 5.1.8
+pkgdesc = Unofficial ProtonMail Desktop App
+arch = amd64
+source = https://github.com/vladimiry/ElectronMail/releases/download/v5.1.8/electron-mail-5.1.8-linux-amd64.deb
+breaks = electron-mail-app
+replaces = electron-mail
+repology = project: electronmail
+sha256sums = 36d3a99e390fc3e33a275f27ca93e50f1027e04a56bd0d5192f66c80b312075a

@@ -1,10 +1,10 @@
-name="gitfiend-deb"
+pkgname="gitfiend-deb"
 gives="gitfiend"
 breaks=("${gives}-app")
-replace=("${gives}")
+replaces=("${gives}")
 repology=("project: ${gives}")
 pkgver="0.42.1"
-url="https://${gives}.com/resources/GitFiend_${pkgver}_amd64.deb"
+source=("https://${gives}.com/resources/GitFiend_${pkgver}_amd64.deb")
 pkgdesc="A Git client designed for humans"
-hash="6d93f6ebc5c7764c423e66af215c12ffcdc84d1aebf61b106605c0d7fb4f611c"
+sha256sums=("6d93f6ebc5c7764c423e66af215c12ffcdc84d1aebf61b106605c0d7fb4f611c")
 arch=('amd64')

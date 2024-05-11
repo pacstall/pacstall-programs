@@ -1,0 +1,11 @@
+pkgname = hyprlang
+pkgver = 0.5.0
+pkgdesc = implementation library for the hypr config language
+url = https://github.com/hyprwm/hyprlang
+arch = amd64
+arch = arm64
+source = https://github.com/hyprwm/hyprlang/archive/v0.5.0/hyprlang-0.5.0.tar.gz
+depends = build-essential
+makedepends = cmake
+maintainer = Oren Klopfer <oren@taumoda.com>
+sha256sums = c59e705f2c2ff9ea4e2b183fdf0bc20a62b7162604a657d6352716a1fd5061b2

@@ -1,0 +1,6 @@
+pkgname = graillon
+pkgver = 2.6
+pkgdesc = Graillon is a Vocal Live Changer that brings a world of possibilities right into your DAW
+source = https://www.auburnsounds.com/downloads/Graillon-FREE-2.6.zip
+maintainer = echometerain <echometer@disroot.org>
+sha256sums = 1a94c86c2d0da8a2830a6aa838e7d1f26454149a1a83592d500739bc5198659e

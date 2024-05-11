@@ -1,0 +1,7 @@
+pkgname = kxstudio-repos-deb
+gives = kxstudio-repos
+pkgver = 10.0.3
+pkgdesc = Enables the KXStudio repositories.
+source = https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_10.0.3_all.deb
+maintainer = echometerain <echometer@disroot.org>
+sha256sums = a73597e4575a065acdaa2c0217b167818447e1ca509bc1ad080042c8c47060b1

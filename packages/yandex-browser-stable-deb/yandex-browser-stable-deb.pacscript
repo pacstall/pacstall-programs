@@ -1,10 +1,10 @@
-name="yandex-browser-stable-deb"
+pkgname="yandex-browser-stable-deb"
 gives="yandex-browser-stable"
-replace=("${gives}")
+replaces=("${gives}")
 repology=("project: yandex-browser")
 pkgver="23.11.1.714-1"
-url="http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${gives}/${gives}_${pkgver}_amd64.deb"
+source=("http://repo.yandex.ru/yandex-browser/deb/pool/main/y/${gives}/${gives}_${pkgver}_amd64.deb")
 pkgdesc="The web browser from Yandex"
-hash="1e692b2d6eeff1885b9cc25232345827ff6e489d4db191732e0c0c319c08aee5"
+sha256sums=("1e692b2d6eeff1885b9cc25232345827ff6e489d4db191732e0c0c319c08aee5")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

@@ -1,0 +1,12 @@
+pkgname = exercism-cli-bin
+pkgver = 3.2.0
+pkgdesc = Go based command line tool for exercism.org
+url = https://exercism.org
+arch = amd64
+arch = arm64
+maintainer = Andrew Barchuk <andrew@raindev.io>
+repology = project: exercism-cli
+source_amd64 = https://github.com/exercism/cli/releases/download/v3.2.0/exercism-3.2.0-linux-x86_64.tar.gz
+source_arm64 = https://github.com/exercism/cli/releases/download/v3.2.0/exercism-3.2.0-linux-arm64.tar.gz
+sha256sums_amd64 = 4ea3e1ea8916a8003da95dbd6eef7a3a29802e637ed6a0f2aaaa2f1c98754915
+sha256sums_arm64 = 57f9620e5346bf045ca72b581cb106f9dc56841ac1ff0a3070188c49d5d0b573

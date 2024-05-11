@@ -1,0 +1,8 @@
+pkgname = suru-icon-theme-git
+gives = suru-icon-theme
+pkgver = 0.0.1
+pkgdesc = Revitalization of the Suru icon set designed for Ubuntu Touch
+source = https://github.com/snwh/suru-icon-theme.git
+makedepends = meson
+makedepends = ninja-build
+maintainer = aranym <aranym1@pm.me>

@@ -1,0 +1,10 @@
+pkgname = raspi-config-deb
+gives = raspi-config
+pkgver = 20231216
+pkgdesc = Raspberry Pi configuration tool
+arch = any
+source = https://archive.raspberrypi.org/debian/pool/main/r/raspi-config/raspi-config_20231216_all.deb
+replaces = raspi-config
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: raspi-config
+sha256sums = 8e328e0886b58023b03b8cf799a77180650c318df075605684103735c90a747f

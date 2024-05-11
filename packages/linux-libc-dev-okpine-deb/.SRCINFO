@@ -1,0 +1,9 @@
+pkgname = linux-libc-dev-okpine-deb
+gives = linux-libc-dev
+pkgver = 6.7.1
+pkgdesc = Linux kernel libc-dev files built for Pine64 devices
+arch = arm64
+source = https://github.com/oklopfer/debs/raw/master/kernel/6.7.1/linux-libc-dev_6.7.1-1_arm64.deb
+replaces = linux-libc-dev
+maintainer = Oren Klopfer <oren@taumoda.com>
+sha256sums = b706c83613edb2fe71e8c932579be2fb71801c887bcbcc1686798606dcb12cdd

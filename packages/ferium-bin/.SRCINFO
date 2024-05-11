@@ -1,0 +1,10 @@
+pkgname = ferium-bin
+gives = ferium
+pkgver = 4.4.1
+pkgdesc = Fast and multi-source CLI program for managing Minecraft mods
+source = https://github.com/gorilla-devs/ferium/releases/download/v4.4.1/ferium-linux-nogui.zip
+breaks = ferium
+replaces = ferium-git
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: ferium
+sha256sums = efb1a82381a429e4240f2872ac6b4394389b1a75f407f7e0659ab5d3f7d7319c

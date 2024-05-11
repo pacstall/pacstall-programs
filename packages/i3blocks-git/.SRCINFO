@@ -1,0 +1,11 @@
+pkgname = i3blocks-git
+gives = i3blocks
+pkgver = 1.5
+pkgdesc = A feed generator for text based status bars
+source = https://github.com/vivien/i3blocks.git
+makedepends = autoconf
+makedepends = gcc
+makedepends = make
+makedepends = pkgconf
+breaks = i3blocks
+maintainer = Lanius <laniusone@pm.me>

@@ -1,10 +1,10 @@
-name="microsoft-edge-stable-deb"
+pkgname="microsoft-edge-stable-deb"
 gives="microsoft-edge-stable"
-replace=("${gives}")
+replaces=("${gives}")
 repology=("project: microsoft-edge")
 pkgver="120.0.2210.144"
-url="https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${pkgver}-1_amd64.deb"
+source=("https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${pkgver}-1_amd64.deb")
 pkgdesc="The web browser from Microsoft"
-hash="3bfecb768a5c31f498c7c720f4134353a2b16cf7e717dad85c3ed0ea3ba004b5"
+sha256sums=("3bfecb768a5c31f498c7c720f4134353a2b16cf7e717dad85c3ed0ea3ba004b5")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

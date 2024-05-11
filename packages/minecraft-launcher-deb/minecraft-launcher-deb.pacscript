@@ -1,9 +1,8 @@
-name="minecraft-launcher-deb"
-pkgname="minecraft-launcher"
-repology=("project: ${pkgname}")
+pkgname="minecraft-launcher-deb"
+gives="minecraft-launcher"
+repology=("project: ${gives}")
 pkgver="1121"
-breaks=("${pkgname}" "${pkgname}-git" "${pkgname}-bin" "${pkgname}-app")
-gives="${pkgname}"
-url="https://launcher.mojang.com/download/Minecraft.deb"
+breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
+source=("https://launcher.mojang.com/download/Minecraft.deb")
 pkgdesc="Official Minecraft Launcher"
-maintainer="The Blob SCP <81673375+theblobscp@users.noreply.github.com>"
+maintainer=("The Blob SCP <81673375+theblobscp@users.noreply.github.com>")

@@ -1,0 +1,10 @@
+pkgname = bitwarden-cli-bin
+gives = bitwarden-cli
+pkgver = 2024.1.0
+pkgdesc = Bitwarden's command-line interface - Binary
+source = https://github.com/bitwarden/clients/releases/download/cli-v2024.1.0/bitwarden-cli-linux-2024.1.0.zip
+breaks = bitwarden-cli-git
+replaces = bitwarden-cli
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: bitwarden-cli
+sha256sums = 05c906bf3709151ffcd063624047c327086f80f6b0256ded6a8bcaea044fdb02

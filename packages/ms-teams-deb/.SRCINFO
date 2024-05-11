@@ -1,0 +1,9 @@
+pkgname = ms-teams-deb
+gives = teams
+pkgver = 1.5.00.23861
+pkgdesc = Microsoft Teams for Linux is your chat-centered workspace in Office 365
+arch = amd64
+source = https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.5.00.23861_amd64.deb
+maintainer = Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>
+repology = project: teams
+sha256sums = 87462709e257fff9784de809559b5abd5dc7af18d8505d856b92a66989995bc1

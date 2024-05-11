@@ -38,4 +38,10 @@ repos:
         name: update packagelist file
         language: system
         entry: bash -c 'LC_COLLATE=C ls -1 packages/ > packagelist'
+      - id: update-srcinfo
+        name: update .SRCINFO data
+        language: system
+        entry: ./scripts/srcinfo.sh
+        files: '^.*\.pacscript$'
+
 # vim:set ft=yaml ts=2 sw=2 et:

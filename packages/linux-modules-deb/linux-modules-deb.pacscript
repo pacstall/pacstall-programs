@@ -1,13 +1,10 @@
-name="linux-modules-deb"
-gives="linux-modules-6.9.0-060900rc6-generic"
-pkgver="6.9~rc6"
-buildver="6.9.0-060900rc6.202404282134"
+pkgname="linux-modules-deb"
+gives="linux-modules-6.9.0-060900rc7-generic"
+pkgver="6.9~rc7"
+buildver="6.9.0-060900rc7.202405052133"
 arch=('arm64' 'amd64')
-if [[ ${CARCH} == "arm64" ]]; then
-  hash="e3e46b66a8e98aad256aca6a16fd683a7da095c7f2250b22fab4a76fdbde4d42"
-else
-  hash="860c7927164043ad4602503657fcb606e48c1c238fa0428b8f55d8f903fe7346"
-fi
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
+sha256sums_arm64=("c4bf7b89429361e240587e24407dc680f872a0dd47fe7d5d31f5cd50c9e17169")
+sha256sums_amd64=("f8ab187fa4f0a25ca9f8eebb2e5c174a31bae1cbf46330fc26f5f67d72a5afdb")
+source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Ubuntu Linux mainline kernel (Linux Modules)"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

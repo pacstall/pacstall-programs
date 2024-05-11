@@ -1,0 +1,10 @@
+pkgname = yandex-browser-stable-deb
+gives = yandex-browser-stable
+pkgver = 23.11.1.714-1
+pkgdesc = The web browser from Yandex
+arch = amd64
+source = http://repo.yandex.ru/yandex-browser/deb/pool/main/y/yandex-browser-stable/yandex-browser-stable_23.11.1.714-1_amd64.deb
+replaces = yandex-browser-stable
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: yandex-browser
+sha256sums = 1e692b2d6eeff1885b9cc25232345827ff6e489d4db191732e0c0c319c08aee5

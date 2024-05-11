@@ -1,0 +1,12 @@
+pkgname = zentile-bin
+gives = zentile
+pkgver = 0.1.1
+pkgdesc = Automatic Tiling for EWMH Complaint Window Managers.
+arch = amd64
+source = https://github.com/blrsn/zentile/releases/download/v0.1.1/zentile_linux_amd64
+breaks = zentile
+breaks = zentile-git
+breaks = zentile-deb
+breaks = zentile-app
+maintainer = wizard-28 <wiz28@pm.me>
+sha256sums = 3448835def513588bde74ecd98ed1b5e03c4269f32c90e31846e608b3eabcc33

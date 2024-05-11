@@ -1,0 +1,17 @@
+pkgname = ani-cli-bin
+gives = ani-cli
+pkgver = 4.8
+pkgdesc = A cli tool to browse and play anime
+source = https://github.com/pystardust/ani-cli/releases/download/v4.8/ani-cli
+source = ani-cli.1::https://github.com/pystardust/ani-cli/releases/download/v4.8/ani-cli.1
+depends = grep
+depends = sed
+depends = wget
+depends = mpv
+depends = aria2
+depends = ffmpeg
+depends = fzf
+maintainer = Elsie19 <elsie19@pm.me>
+repology = project: ani-cli
+sha256sums = 4a21690493b4aee4165f1881b19d9d696c9f56c5687940e587c542c6caa7c6fe
+sha256sums = SKIP

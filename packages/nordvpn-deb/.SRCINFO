@@ -1,0 +1,10 @@
+pkgname = nordvpn-deb
+gives = nordvpn
+pkgver = 3.17.4
+pkgdesc = NordVPN's CLI tool
+arch = amd64
+source = https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn_3.17.4_amd64.deb
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: nordvpn
+repology = visiblename: nordvpn-bin
+sha256sums = 079b3643c72aa52ee521dd16b2828f496c33c07ecc5252dc6499ba19dd312835

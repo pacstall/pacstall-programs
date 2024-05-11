@@ -1,0 +1,11 @@
+pkgname = linux-modules-deb
+gives = linux-modules-6.9.0-060900rc7-generic
+pkgver = 6.9~rc7
+pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
+arch = arm64
+arch = amd64
+source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9-rc7/arm64/linux-modules-6.9.0-060900rc7-generic_6.9.0-060900rc7.202405052133_arm64.deb
+source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9-rc7/amd64/linux-modules-6.9.0-060900rc7-generic_6.9.0-060900rc7.202405052133_amd64.deb
+maintainer = Oren Klopfer <oren@taumoda.com>
+sha256sums_amd64 = f8ab187fa4f0a25ca9f8eebb2e5c174a31bae1cbf46330fc26f5f67d72a5afdb
+sha256sums_arm64 = c4bf7b89429361e240587e24407dc680f872a0dd47fe7d5d31f5cd50c9e17169

@@ -1,0 +1,8 @@
+pkgname = bat
+pkgver = 0.24.0
+pkgdesc = A cat(1) clone with wings
+source = https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
+depends = libonig5
+makedepends = cargo libonig-dev pkg-config
+replaces = bat
+sha256sums = 907554a9eff239f256ee8fe05a922aad84febe4fe10a499def72a4557e9eedfb

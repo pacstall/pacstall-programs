@@ -1,0 +1,10 @@
+pkgname = rust-motd-deb
+gives = rust-motd
+pkgver = 1.0.1
+pkgdesc = Beautiful, useful, configurable MOTD generation with zero runtime dependencies
+arch = amd64
+source = https://github.com/rust-motd/rust-motd/releases/download/v1.0.1/rust-motd_1.0.1_amd64.deb
+replaces = rust-motd
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: rust:motd
+sha256sums = e2abcb97de92bee14cdc85e8dec46af17c15fdb03cc3a4b3d6094b1c2a079670
