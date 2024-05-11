@@ -9,7 +9,8 @@ sha256sums=(
   "33dc0c6d8276308fd91102d622f44146237e800838cb500ec5dd222b10c83519"
   "SKIP"
 )
-depends=("mangohud" "libqt5pas-dev" "qt6ct" "adwaita-qt6")
+depends=("mangohud" "qt6ct" "adwaita-qt6")
+pacdeps=("qt6pas")
 replaces=("goverlay")
 pkgdesc="Graphical UI to help manage Linux overlays"
 maintainer=("xdavius <xdavius@github.com>")
