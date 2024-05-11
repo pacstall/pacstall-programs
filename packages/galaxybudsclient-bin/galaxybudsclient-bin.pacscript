@@ -11,7 +11,7 @@ maintainer=("vigress8 <vig@disroot.org>")
 source=(
   "https://github.com/ThePBone/GalaxyBudsClient/releases/download/${pkgver}/GalaxyBudsClient_Linux-${CARCH/armhf/arm}_portable.zip"
   "${gives}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${gives}.desktop"
-  "${gives}.png::https://raw.githubusercontent.com/ThePBone/GalaxyBudsClient/master/GalaxyBudsClient/Resources/icon_white.png"
+  "${gives}.png::https://raw.githubusercontent.com/ThePBone/GalaxyBudsClient/${pkgver}/GalaxyBudsClient/Resources/icon_white.png"
 )
 sha256sums_amd64=(
   "b3c4af4c56b2a023e289a1eb379e939c8cb786376adf971ac011a3060ff7f8db"
