@@ -38,7 +38,7 @@ prepare() {
   # Decompress tools
   pushd tool/"${CARCH}" || exit
   for file in *.xz; do
-    xzcat "$file" >"${file%.xz}"
+    xzcat "{$file}" >"${file%.xz}"
     chmod +x "${file%.xz}"
   done
 
@@ -47,7 +47,7 @@ prepare() {
   popd || exit
 
   # Apply sanitize patch
-  patch --verbose -p0 <"$srcdir/sanitize.patch"
+  patch --verbose -p0 <"${srcdir}/sanitize.patch"
 
   # Log location
   sed -i 's|log\.txt|/var/log/ventoy.log|g' WebUI/static/js/languages.js tool/languages.json
@@ -58,7 +58,7 @@ prepare() {
   # Clean up unused binaries
   # Preserving mkexfatfs and mount.exfat-fuse because exfatprogs is incompatible
   for binary in xzcat hexdump; do
-    rm -fv tool/"${CARCH}"/$binary
+    rm -fv tool/"${CARCH}"/${binary}
   done
 }
 
@@ -68,23 +68,23 @@ package() {
   install -Dm644 -vt "${pkgdir}/opt/${pkgname%-bin}/boot/" boot/*
   install -Dm644 -vt "${pkgdir}/opt/${pkgname%-bin}/${pkgname%-bin}/" "${pkgname%-bin}"/*
   install -Dm755 -vt "${pkgdir}/opt/${pkgname%-bin}/tool/" tool/*.{cer,glade,json,sh,xz}
-  install -Dm755 -vt "${pkgdir}/opt/${pkgname%-bin}/tool/${CARCH}/" tool/${CARCH}/*
+  install -Dm755 -vt "${pkgdir}/opt/${pkgname%-bin}/tool/${CARCH}/" tool/"${CARCH}"/*
   install -Dm755 -vt "${pkgdir}/opt/${pkgname%-bin}/" ./*.sh
   cp --no-preserve=o -avt "${pkgdir}/opt/${pkgname%-bin}/" plugin WebUI
 
   install -Dm755 "VentoyGUI.${CARCH}" -vt "${pkgdir}/opt/${pkgname%-bin}"
   install -Dm644 WebUI/static/img/VentoyLogo.png -v "${pkgdir}/usr/share/pixmaps/${pkgname%-bin}.png"
-  install -Dm644 "$srcdir/${pkgname%-bin}.desktop" -vt "${pkgdir}/usr/share/applications"
+  install -Dm644 "${srcdir}/${pkgname%-bin}.desktop" -vt "${pkgdir}/usr/share/applications"
 
   # Link system binaries
   for binary in xzcat hexdump; do
-    ln -svf /usr/bin/$binary "${pkgdir}/opt/${pkgname%-bin}/tool/${CARCH}/"
+    ln -svf /usr/bin/"${binary}" "${pkgdir}/opt/${pkgname%-bin}/tool/${CARCH}/"
   done
 
   install -Dm755 "$srcdir/${pkgname%-bin}"{,gui,web,plugson,-{,extend-}persistent} -vt "${pkgdir}"/usr/bin/
 
   # Remove Gtk 2 files
-  if [ "${CARCH}" == "x86_64" ]; then
+  if [[ "${CARCH}" == "x86_64" ]]; then
     rm "${pkgdir}/opt/${pkgname%-bin}/tool/${CARCH}/Ventoy2Disk.gtk2"
   fi
 }
