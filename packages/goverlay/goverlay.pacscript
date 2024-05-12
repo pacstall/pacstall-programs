@@ -20,10 +20,9 @@ debian:testing | debian:sid | ubuntu:noble | ubuntu:devel | ubuntu:rolling)
   pacdeps=('mangohud' 'fpc-laz-deb' 'fpc-src-deb' 'lazarus-project-deb' 'qt6pas')
   ;;
 esac
-
+external_connection=true
 
 build() {
-  export external_connection=true
   cd "${_archive}"
   case "${DISTRO}" in
   debian:testing | debian:sid)
