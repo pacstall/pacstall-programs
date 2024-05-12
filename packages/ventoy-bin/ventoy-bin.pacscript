@@ -36,7 +36,7 @@ prepare() {
   cd "${_archive}"
   export CARCH="x86_64"
   # Decompress tools
-  pushd tool/"${CARCH}" || exit
+  pushd tool/"x86_64"
   for file in ./*.xz; do
     xzcat "${file}" >"${file%.xz}"
     chmod +x "${file%.xz}"
@@ -44,7 +44,7 @@ prepare() {
 
   # Cleanup .xz crap
   rm -fv ./*.xz
-  popd || exit
+  popd
 
   # Apply sanitize patch
   patch --verbose -p0 <"${srcdir}/sanitize.patch"
@@ -58,7 +58,7 @@ prepare() {
   # Clean up unused binaries
   # Preserving mkexfatfs and mount.exfat-fuse because exfatprogs is incompatible
   for binary in xzcat hexdump; do
-    rm -fv tool/"${CARCH}"/"${binary}"
+    rm -fv tool/"x86_64"/"${binary}"
   done
 }
 
@@ -67,23 +67,21 @@ package() {
   install -Dm644 -vt "${pkgdir}/opt/${pkgname%-bin}/boot/" boot/*
   install -Dm644 -vt "${pkgdir}/opt/${pkgname%-bin}/${pkgname%-bin}/" "${pkgname%-bin}"/*
   install -Dm755 -vt "${pkgdir}/opt/${pkgname%-bin}/tool/" tool/*.{cer,glade,json,sh,xz}
-  install -Dm755 -vt "${pkgdir}/opt/${pkgname%-bin}/tool/${CARCH}/" tool/"${CARCH}"/*
+  install -Dm755 -vt "${pkgdir}/opt/${pkgname%-bin}/tool/x86_64/" tool/"x86_64"/*
   install -Dm755 -vt "${pkgdir}/opt/${pkgname%-bin}/" ./*.sh
   cp --no-preserve=o -avt "${pkgdir}/opt/${pkgname%-bin}/" plugin WebUI
 
-  install -Dm755 "VentoyGUI.${CARCH}" -vt "${pkgdir}/opt/${pkgname%-bin}"
+  install -Dm755 "VentoyGUI.x86_64" -vt "${pkgdir}/opt/${pkgname%-bin}"
   install -Dm644 WebUI/static/img/VentoyLogo.png -v "${pkgdir}/usr/share/pixmaps/${pkgname%-bin}.png"
   install -Dm644 "${srcdir}/${pkgname%-bin}.desktop" -vt "${pkgdir}/usr/share/applications"
 
   # Link system binaries
   for binary in xzcat hexdump; do
-    ln -svf /usr/bin/"${binary}" "${pkgdir}/opt/${pkgname%-bin}/tool/${CARCH}/"
+    ln -svf /usr/bin/"${binary}" "${pkgdir}/opt/${pkgname%-bin}/tool/x86_64/"
   done
 
   install -Dm755 "${srcdir}/${pkgname%-bin}"{,gui,web,plugson,-{,extend-}persistent} -vt "${pkgdir}"/usr/bin/
 
   # Remove Gtk 2 files
-  if [[ "${CARCH}" == "x86_64" ]]; then
-    rm "${pkgdir}/opt/${pkgname%-bin}/tool/${CARCH}/Ventoy2Disk.gtk2"
-  fi
+  rm "${pkgdir}/opt/${pkgname%-bin}/tool/x86_64/Ventoy2Disk.gtk2"
 }
