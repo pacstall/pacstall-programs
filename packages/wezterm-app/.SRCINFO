@@ -1,13 +1,9 @@
 pkgname = wezterm-app
 gives = wezterm
-pkgver = 20230712-072601-f4abf8fd
+pkgver = 20240203-110809-5046fc22
 pkgdesc = A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
-source = https://github.com/wez/wezterm/releases/download/20230712-072601-f4abf8fd/WezTerm-20230712-072601-f4abf8fd-Ubuntu20.04.AppImage
-source = wezterm-icon.svg::https://raw.githubusercontent.com/wez/wezterm/main/assets/icon/wezterm-icon.svg
-source = wezterm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/wezterm-app/wezterm.desktop
+source = wezterm::https://github.com/wez/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-20240203-110809-5046fc22-Ubuntu20.04.AppImage
 breaks = wezterm-bin
 maintainer = smokeythemonkey <smokeythemonkey@posteo.net>
 repology = project: wezterm
-sha256sums = 68656714c332161c47862f74902d676088ba45ca3980d6d2cbc2c3d9dd4a9c72
-sha256sums = SKIP
-sha256sums = SKIP
+sha256sums = 34010a07076d2272c4d4f94b5e0dae608a679599e8d729446323f88f956c60f0
