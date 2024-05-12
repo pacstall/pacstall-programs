@@ -1,4 +1,5 @@
 pkgname=ventoy-bin
+gives=ventoy
 pkgver=1.0.97
 pkgrel=1
 pkgdesc="A new bootable USB solution"
@@ -12,7 +13,6 @@ optdepends=('libgtk-3-dev: GTK3 GUI'
   'polkit: run GUI from application menu')
 provides=("${pkgname%-bin}")
 conflicts=("${pkgname%-bin}")
-install="${pkgname%-bin}.install"
 source=("https://github.com/ventoy/Ventoy/releases/download/v${pkgver}/${pkgname%-bin}-${pkgver}-linux.tar.gz"
   "https://aur.archlinux.org/cgit/aur.git/plain/sanitize.patch?h=ventoy-bin"
   "https://aur.archlinux.org/cgit/aur.git/plain/ventoy?h=ventoy-bin"
@@ -37,7 +37,7 @@ prepare() {
   export CARCH="x86_64"
   # Decompress tools
   pushd tool/"${CARCH}" || exit
-  for file in *.xz; do
+  for file in ./*.xz; do
     xzcat "${file}" >"${file%.xz}"
     chmod +x "${file%.xz}"
   done
@@ -64,7 +64,6 @@ prepare() {
 
 package() {
   cd "${_archive}"
-  export CARCH="x86_64"
   install -Dm644 -vt "${pkgdir}/opt/${pkgname%-bin}/boot/" boot/*
   install -Dm644 -vt "${pkgdir}/opt/${pkgname%-bin}/${pkgname%-bin}/" "${pkgname%-bin}"/*
   install -Dm755 -vt "${pkgdir}/opt/${pkgname%-bin}/tool/" tool/*.{cer,glade,json,sh,xz}
