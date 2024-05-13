@@ -1,7 +1,6 @@
-pkgname=ventoy-bin
-gives=ventoy
-pkgver=1.0.97
-pkgrel=1
+pkgname="ventoy-bin"
+gives="ventoy"
+pkgver="1.0.97"
 pkgdesc="A new bootable USB solution"
 maintainer="xdavius <xdavius@github.com>"
 arch=('amd64')
@@ -34,7 +33,6 @@ sha256sums=('1368a9082c9db25958e5407ef4984322d90d3bb00905337d4bd41678e06c1150'
 
 prepare() {
   cd "${_archive}"
-  export CARCH="x86_64"
   # Decompress tools
   pushd tool/"x86_64"
   for file in ./*.xz; do
