@@ -8,6 +8,7 @@ pkgdesc="A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU l
 sha256sums=("40a4954f1f239ae7d2cec0fab3c7e965b30ded5e9729278f3cc0854676b954e5")
 incompatible=('debian:bullseye')
 maintainer=("Elsie19 <elsie19@pm.me>")
+external_connection=true
 
 build() {
   cd "${_archive}"
