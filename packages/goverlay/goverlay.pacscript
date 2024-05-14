@@ -22,7 +22,6 @@ debian:testing | debian:sid | ubuntu:noble | ubuntu:devel | ubuntu:rolling)
   ;;
 esac
 
-
 build() {
   cd "${_archive}"
   case "${DISTRO}" in
