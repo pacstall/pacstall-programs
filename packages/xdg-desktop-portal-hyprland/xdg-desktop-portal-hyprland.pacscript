@@ -1,61 +1,44 @@
 pkgname="xdg-desktop-portal-hyprland"
-repology=("project: ${pkgname}")
-pkgver="1.2.5"
-pkgrel="1"
-protocols_ver="0.2"
-source=(
-  "https://github.com/hyprwm/${pkgname}/archive/v${pkgver}/v${pkgver}.tar.gz"
-  "https://github.com/hyprwm/hyprland-protocols.git#branch=v${protocols_ver}"
-)
-sha256sums=(
-  "c8ba3d173a580d8b4ec9a5ee15e7780d266e536a78a12aa28d8234e0854ae86d"
-  "SKIP"
-)
-compatible=('ubuntu:devel' 'debian:sid' 'ubuntu:mantic' 'ubuntu:noble')
-url='https://hyprland.org/'
-pkgdesc="xdg-desktop-portal backend for hyprland"
+pkgver="1.3.1"
+_protocolver="4d29e48433270a2af06b8bc711ca1fe5109746cd"
+pkgdesc='xdg-desktop-portal backend for hyprland'
+url="https://github.com/hyprwm/${pkgname}"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=("amd64" "arm64")
+compatible=('ubuntu:devel' 'debian:sid' 'ubuntu:oracular' 'ubuntu:noble')
+license=('MIT')
+provides=("xdg-desktop-portal-impl")
+pacdeps=("hyprlang")
 depends=("pipewire" "xdg-desktop-portal" "grim" "slurp")
-makedepends=("cmake" "pkg-config" "meson" "ninja-build" "scdoc" "wayland-utils" "wayland-protocols" "libgbm-dev" "libinih-dev" "uuid-dev" "qt6-base-dev" "qt6-wayland-dev" "libpipewire-0.3-dev" "libsdbus-c++-dev" "libsdbus-c++-bin")
-case "${DISTRO}" in
-  ubuntu:noble | ubuntu:devel | debian:sid) makedepends+=("libdrm-dev") ;;
-  *) pacdeps+=('libdrm') ;;
-esac
+makedepends=("cmake" "pkg-config" "meson" "ninja-build" "scdoc" "wayland-utils" "wayland-protocols" "libgbm-dev" "libinih-dev" "uuid-dev" "qt6-base-dev" "qt6-wayland-dev" "libpipewire-0.3-dev" "libsdbus-c++-dev" "libsdbus-c++-bin" "libdrm-dev")
+optdepends=('grim: required for the screenshot portal to function'
+            'slurp: support for interactive mode for the screenshot portal')
+_archive="${pkgname}-${pkgver}"
+source=("${url}/archive/v${pkgver}/${_archive}.tar.gz"
+        "https://github.com/hyprwm/hyprland-protocols/archive/${_protocolver}.tar.gz")
+sha256sums=('60b390f326b84cc52657b735e3d7ba8f03aa3363672100dba47580984491611f'
+            '5f6be4d870e94314f05ec7ff9c9c1f028748230ff80a7f89aeaf66c08e5c70e0')
 
 prepare() {
-  cd "${_archive}"
-  mkdir -p "${pkgdir}/usr/share/xdg-desktop-portal/"
-  mkdir -p "${pkgdir}/usr/bin/"
-  mkdir -p "${pkgdir}/usr/share/licenses/${pkgname}/"
+  cd "${_archive}/subprojects"
+  rm -rf hyprland-protocols sdbus-cpp
+  ln -sfT "${srcdir}/hyprland-protocols-${_protocolver}" hyprland-protocols
 }
 
 build() {
-  cd "${_archive}"
   echo '[preferred]
 default=hyprland;gtk' | tee hyprland-portals.conf > /dev/null
-  mkdir -p subprojects && cp -r "${srcdir}/hyprland-protocols" subprojects
-  meson setup build
-  ninja -C build
-  make -j"${NCPU}" -C hyprland-share-picker all
+  cd "${_archive}"
+  cmake -B build \
+    -D CMAKE_INSTALL_PREFIX=/usr \
+    -D CMAKE_INSTALL_LIBEXECDIR=/usr/lib \
+    -D CMAKE_BUILD_TYPE=Release
+  cmake --build build
 }
 
 package() {
   cd "${_archive}"
-  DESTDIR="${pkgdir}" ninja -C build install
-  install -Dm0755 hyprland-share-picker/build/hyprland-share-picker -t "${pkgdir}/usr/bin/"
-  install -Dm0644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}/"
-  protocols_dir="${pkgdir}/usr/local/share/hyprland-protocols"
-  if ! [[ -d ${protocols_dir} ]]; then
-    mkdir -p "${protocols_dir}"
-    cp -r subprojects/hyprland-protocols/protocols "${protocols_dir}"
-    mkdir -p "${pkgdir}/usr/local/share/pkgconfig"
-    echo "prefix=/usr/local
-datarootdir=\${prefix}/share
-pkgdatadir=\${pc_sysrootdir}\${datarootdir}/hyprland-protocols
-
-Name: Hyprland Protocols
-Description: Hyprland protocol files
-Version: ${protocols_ver}" | tee "${pkgdir}/usr/local/share/pkgconfig/hyprland-protocols.pc" > /dev/null
-  fi
+  DESTDIR="${pkgdir}" cmake --install build
+  install -Dm0644 -t "${pkgdir}/usr/share/xdg-desktop-portal/" "${srcdir}/hyprland-portals.conf"
+  install -Dm0644 -t "${pkgdir}/usr/share/licenses/${pkgname}/" LICENSE
 }

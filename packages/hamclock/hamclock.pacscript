@@ -1,12 +1,12 @@
 pkgname="hamclock"
-pkgver="3.10"
+pkgver="4.00"
 source=("https://github.com/kj7rrv/hamclock/archive/refs/tags/v${pkgver}.tar.gz")
 url='https://clearskyinstitute.com/ham/HamClock'
 makedepends=("gcc" "make" "pkg-config" "libxau6" "libx11-6" "libx11-dev" "libxcb1")
 breaks=("hamclock-big" "hamclock-bigger" "hamclock-huge")
 replaces=("hamclock")
 pkgdesc="Clock and world map with extra features for amateur radio (800x480 version)"
-sha256sums=("49ee666ac5c2fd9c647119bf36a5d627f7fc8b1db22b0ad7140e9e60a30554c5")
+sha256sums=("1def12cf34d3486edb1c4fb0ec7f1a27cc1bda01ca811b6c0fefc68c4c98ab20")
 maintainer=("Roy Williams <fang64@gmail.com>")
 repology=("project: ${pkgname}")
 

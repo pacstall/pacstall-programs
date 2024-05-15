@@ -1,15 +1,16 @@
 pkgname="goverlay-bin"
 gives="goverlay"
-pkgver="1.0"
+pkgver="1.1.1"
 source=(
-  "https://github.com/benjamimgois/goverlay/releases/download/${pkgver}/goverlay_${pkgver//.*/}.tar.xz"
+  "https://github.com/benjamimgois/goverlay/releases/download/${pkgver}/goverlay_${pkgver//./_}.tar.xz"
   "https://raw.githubusercontent.com/benjamimgois/goverlay/master/data/icons/128x128/goverlay.png"
 )
 sha256sums=(
-  "47754023d12b9eb730c83fe9aeec7b8523d1dbaa9860c90928ddaa904b89aa1f"
+  "33dc0c6d8276308fd91102d622f44146237e800838cb500ec5dd222b10c83519"
   "SKIP"
 )
-depends=("mangohud" "libqt5pas-dev")
+depends=("mangohud" "qt6ct" "adwaita-qt6")
+pacdeps=("qt6pas")
 replaces=("goverlay")
 pkgdesc="Graphical UI to help manage Linux overlays"
 maintainer=("xdavius <xdavius@github.com>")
@@ -18,7 +19,7 @@ repology=("project: goverlay")
 package() {
   cd "${_archive}"
   mkdir -p "${pkgdir}/usr/bin/" "${pkgdir}/opt/goverlay/" "${pkgdir}/usr/share/applications/" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/"
-  echo -e "#!/bin/sh\nQT_QPA_PLATFORM=xcb mangohud --dlsym /opt/goverlay/goverlay" | tee "${pkgdir}/usr/bin/goverlay" >/dev/null
+  echo -e "#!/bin/sh\nQT_QPA_PLATEFORMTHEME=qt6ct QT_STYLE_OVERRIDE=Adwaita-Dark mangohud /opt/goverlay/goverlay \$@" | tee "${pkgdir}/usr/bin/goverlay" >/dev/null
   chmod +x "${pkgdir}/usr/bin/goverlay"
   install -Dm755 goverlay "${pkgdir}/opt/goverlay/goverlay"
   echo '[Desktop Entry]

@@ -1,7 +1,7 @@
 pkgname="eza-git"
 gives="eza"
 source=("https://github.com/eza-community/eza.git")
-pkgver="0.18.9"
+pkgver="0.18.15"
 url='https://the.exa.website/'
 makedepends=("cargo" "libgit2-dev" "cmake" "rustc" "pandoc")
 pkgdesc="A modern, maintained replacement for ls"
