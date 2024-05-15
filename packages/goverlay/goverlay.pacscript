@@ -25,7 +25,7 @@ esac
 build() {
   cd "${_archive}"
   case "${DISTRO}" in
-  debian:testing | debian:sid)
+  debian:testing | debian:sid | ubuntu:noble | ubuntu:devel | ubuntu:rolling)
     make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/lib/lazarus/default
     ;;
   *)
