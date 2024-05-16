@@ -1,33 +1,42 @@
+maintainer="Xdavius <xdavius@github.com>"
 pkgname="goverlay"
+pkgver="1.1.1"
+pkgdesc="A GUI to help manage Vulkan/OpenGL overlays"
 gives="goverlay"
-pkgver="1.0"
-source=(
-  "https://github.com/benjamimgois/goverlay/releases/download/${pkgver}/goverlay_${pkgver//.*}.tar.xz"
-  "https://raw.githubusercontent.com/benjamimgois/goverlay/master/data/icons/128x128/goverlay.png"
-)
-sha256sums=(
-  "47754023d12b9eb730c83fe9aeec7b8523d1dbaa9860c90928ddaa904b89aa1f"
-  "SKIP"
-)
-depends=("mangohud" "libqt5pas-dev")
-pkgdesc="Graphical UI to help manage Linux overlays"
-maintainer=("Elsie19 <elsie19@pm.me>")
+replace=("goverlay-bin")
+arch=("amd64")
+url="https://github.com/benjamimgois/goverlay/"
+source=("https://github.com/benjamimgois/goverlay/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums="06dcad9ab7db990f2df04be01d549953e274907d7f691fe1bc4bbe712329936c"
 repology=("project: goverlay")
+makedepends=('git' 'libglu1-mesa-dev' 'qt6-base-dev')
+depends=("mangohud" "libqt6pas-dev" "qt6ct" "adwaita-qt6")
+external_connection=true
+case "${DISTRO}" in
+debian:testing | debian:sid | ubuntu:noble | ubuntu:devel | ubuntu:rolling)
+  pacdeps=('qt6pas' 'mangohud')
+  makedepends+=("lazarus" "fpc" "fpc-source")
+  ;;
+*)
+  pacdeps=('mangohud' 'fpc-laz-deb' 'fpc-src-deb' 'lazarus-project-deb' 'qt6pas')
+  ;;
+esac
+
+build() {
+  cd "${_archive}"
+  case "${DISTRO}" in
+  debian:testing | debian:sid | ubuntu:noble | ubuntu:devel | ubuntu:rolling)
+    make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/lib/lazarus/default
+    ;;
+  *)
+    make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/share/lazarus/3.2.0/
+    ;;
+  esac
+}
 
 package() {
   cd "${_archive}"
-  mkdir -p "${pkgdir}/usr/bin/" "${pkgdir}/opt/goverlay/" "${pkgdir}/usr/share/applications/" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/"
-  echo -e "#!/bin/sh\nQT_QPA_PLATFORM=xcb mangohud --dlsym /opt/goverlay/goverlay" | tee "${pkgdir}/usr/bin/goverlay" > /dev/null
-  chmod +x "${pkgdir}/usr/bin/goverlay"
-  install -Dm755 goverlay "${pkgdir}/opt/goverlay/goverlay"
-  echo '[Desktop Entry]
-Name=GOverlay
-Comment=Graphical UI to help manage Vulkan / OpenGL overlays
-Exec=goverlay
-Icon=goverlay
-Terminal=false
-Type=Application
-Categories=Game;
-Keywords=MangoHud;vkBasalt;ReplaySorcery;msi;afterburner;' | tee "${pkgdir}/usr/share/applications/goverlay.desktop" > /dev/null
-  install -Dm644 "${srcdir}/goverlay.png" -t "${pkgdir}/usr/share/icons/hicolor/128x128/apps/"
+  make prefix=/usr libexecdir=/lib DESTDIR="${pkgdir}" install
+  # shellcheck disable=SC2140
+  sed -i "/^#export*/c\export QT_QPA_PLATEFORMTHEME="qt6ct" QT_STYLE_OVERRIDE="Adwaita-Dark"" "${pkgdir}"/usr/bin/goverlay
 }
