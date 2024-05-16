@@ -12,7 +12,7 @@ repology=("project: ${pkgname}")
 
 build() {
   cd "${_archive}"
-  mold -run make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"${NCPU}"
+  make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"${NCPU}"
 }
 
 package() {
