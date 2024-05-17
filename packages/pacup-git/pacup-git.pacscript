@@ -1,6 +1,6 @@
 pkgname="pacup-git"
 gives="pacup"
-pkgver="3.0.0"
+pkgver="3.1.3"
 pkgdesc="Help maintainers update pacscripts (next-gen Perl rewrite)"
 depends=(
   'libdata-compare-perl'
