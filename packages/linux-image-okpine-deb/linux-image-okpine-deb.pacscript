@@ -11,4 +11,4 @@ pacdeps=("linux-headers-okpine-deb")
 if [[ -f "/boot/u-boot-rockchip.bin" ]]; then
   pacdeps+=("bes2600-firmware-git")
 fi
-depends=("busybox-initramfs" "initramfs-tools" "initramfs-tools-bin" "initramfs-tools-core" "klibc-utils" "libklibc")
+depends=("initramfs-tools")
