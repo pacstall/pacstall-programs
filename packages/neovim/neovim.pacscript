@@ -1,11 +1,11 @@
 pkgname="neovim"
-pkgver="0.9.5"
+pkgver="0.10.0"
 source=("https://github.com/neovim/neovim/archive/refs/tags/v${pkgver}.tar.gz")
 url='https://neovim.io/'
 makedepends=("gettext" "libtool" "libtool-bin" "autoconf" "automake" "cmake" "g++" "pkg-config")
 replaces=("neovim" "nvim" "neovim-runtime")
 pkgdesc="Neovim is a vim fork maintained by the community"
-sha256sums=("fe74369fc30a32ec7a086b1013acd0eacd674e7570eb1acc520a66180c9e9719")
+sha256sums=("372ea2584b0ea2a5a765844d95206bda9e4a57eaa1a2412a9a0726bab750f828")
 maintainer=("Elsie19 <elsie19@pm.me>")
 external_connection=true
 repology=("project: ${pkgname}")
