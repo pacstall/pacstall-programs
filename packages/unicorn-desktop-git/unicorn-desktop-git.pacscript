@@ -9,7 +9,7 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "val
   "dbus-x11" "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa"
   "xserver-xorg-video-fbdev" "light-locker" "light-locker-settings" "tumbler" "tumbler-plugins-extra"
   "ffmpegthumbnailer" "bluez-firmware" "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics"
-  "ukui-touchpadserver" "pipewire-audio" "bluetooth")
+  "ukui-touchpadserver" "pipewire-audio" "bluetooth" "libxfce4ui-utils" "at-spi2-core")
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-desktop"
 replaces=("unicorn-mobile" "unicorn-mobile-git")
