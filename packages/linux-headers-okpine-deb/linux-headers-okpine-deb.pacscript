@@ -1,8 +1,8 @@
 pkgname="linux-headers-okpine-deb"
-pkgver="6.7.1"
+pkgver="6.9.0"
 gives="linux-headers-${pkgver}-okpine"
 source=("https://github.com/oklopfer/debs/raw/master/kernel/${pkgver}/${gives}_${pkgver}-1_arm64.deb")
-sha256sums=("f6280f3d8fef00bcb511112c2a32970c3972ebdb3306aebd868b2ad9ea6b495e")
+sha256sums=("1dae9d8d9df74ccfbd5c81e8b395b61e88a2c40e3be8628df5442e9a65dd3d98")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Linux kernel header files built for Pine64 devices"
 arch=('arm64')
