@@ -1,5 +1,6 @@
 pkgname="hamclock"
 pkgver="4.00"
+pkgrel="2"
 source=("https://github.com/kj7rrv/hamclock/archive/refs/tags/v${pkgver}.tar.gz")
 url='https://clearskyinstitute.com/ham/HamClock'
 makedepends=("gcc" "make" "pkg-config" "libxau6" "libx11-6" "libx11-dev" "libxcb1")
@@ -11,8 +12,7 @@ maintainer=("Roy Williams <fang64@gmail.com>")
 repology=("project: ${pkgname}")
 
 prepare() {
-  cd "${_archive}"
-  cd "ESPHamClock"
+  cd "hamclock-${pkgver}/ESPHamClock"
   # Add -PAC to version for PACSTALL
   sed -i 's/"/-PAC"/g' version.h
   sed -i 's/\t-PAC"/\t"/g' version.h
@@ -23,14 +23,12 @@ prepare() {
 }
 
 build() {
-  cd "${_archive}"
-  cd "ESPHamClock"
+  cd "hamclock-${pkgver}/ESPHamClock"
   make -j"${NCPU}" hamclock-800x480
 }
 
 package() {
-  cd "${_archive}"
-  cd "ESPHamClock"
+  cd "hamclock-${pkgver}/ESPHamClock"
   mkdir -p "${pkgdir}/usr/bin" "${pkgdir}/usr/share/applications" "${pkgdir}/usr/share/icons" "${pkgdir}/usr/share/licenses/${gives}/"
   cp hamclock-800x480 "${pkgdir}/usr/bin/hamclock"
   cp hamclock.png "${pkgdir}/usr/share/icons"
