@@ -1,5 +1,6 @@
 pkgname="hamclock-big"
 pkgver="4.00"
+pkgrel="2"
 source=("https://github.com/kj7rrv/hamclock/archive/refs/tags/v${pkgver}.tar.gz")
 url='https://clearskyinstitute.com/ham/HamClock'
 makedepends=("gcc" "make" "pkg-config" "libxau6" "libx11-6" "libx11-dev" "libxcb1")
