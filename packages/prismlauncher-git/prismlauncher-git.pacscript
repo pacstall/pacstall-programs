@@ -1,19 +1,22 @@
-name="prismlauncher-git"
+pkgname="prismlauncher-git"
 gives="prismlauncher"
-url="https://github.com/PrismLauncher/PrismLauncher.git"
-pkgver="7.2"
-makedepends=("qtbase5-dev" "qtchooser" "qt5-qmake" "qtbase5-dev-tools" "libqt5core5a" "libqt5network5" "libqt5gui5" "cmake" "ninja-build" "extra-cmake-modules" "zlib1g-dev" "openjdk-17-jdk" "libgl1-mesa-dev" "scdoc")
+source=("https://github.com/PrismLauncher/PrismLauncher.git")
+pkgver="8.2"
+makedepends=("qt6-base-dev" "qtbase5-dev" "qtchooser" "qt5-qmake" "qmake6" "qtbase5-dev-tools" "cmake" "ninja-build" "extra-cmake-modules" "zlib1g-dev" "openjdk-17-jdk" "libgl1-mesa-dev" "scdoc")
+case "${DISTRO}" in
+  *:jammy)
+    makedepends+=("libqt6core5compat6-dev")
+    ;;
+  *)
+    makedepends+=("qt6-5compat-dev")
+    ;;
+esac
 pkgdesc="Custom launcher for Minecraft"
-maintainer="Oren Klopfer <oren@taumoda.com>"
-pkgver() {
-  git ls-remote "${url}" develop | cut -f1 | cut -c1-8
-}
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 
-prepare() {
-  git submodule update --init --recursive
-}
 
 build() {
+  cd "${_archive}"
   cmake -S . -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX="/usr" \
@@ -23,5 +26,6 @@ build() {
 }
 
 package() {
-  sudo DESTDIR="${pkgdir}" cmake --install build
+  cd "${_archive}"
+  DESTDIR="${pkgdir}" cmake --install build
 }

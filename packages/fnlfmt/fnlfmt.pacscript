@@ -9,25 +9,26 @@
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
 #        \/          \/      \/
-maintainer="wizard-28 <wiz28@pm.me>"
+maintainer=("wizard-28 <wiz28@pm.me>")
 
-name="fnlfmt"
+pkgname="fnlfmt"
 pkgver="0.3.0"
 pkgdesc="A formatter for fennel source code"
-url="https://git.sr.ht/~technomancy/fnlfmt/archive/${pkgver}.tar.gz"
-gives="${pkgname}"
-breaks=("${pkgname}-bin" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
+source=("https://git.sr.ht/~technomancy/fnlfmt/archive/${pkgver}.tar.gz")
+breaks=("${gives}-bin" "${gives}-git" "${gives}-deb" "${gives}-app")
 depends=("lua5.3")
 makedepends=("lua5.3")
-hash="8baa2f5ed98f449139f6bd8b4859575c4cfeacc60c0a8884ecaa27bc94e69156"
+sha256sums=("8baa2f5ed98f449139f6bd8b4859575c4cfeacc60c0a8884ecaa27bc94e69156")
 repology=("project: fnlfmt")
 
 build() {
+  cd "${_archive}"
   make -j"${NCPU}"
 }
 
 package() {
-  sudo install -D "${name}" "${pkgdir}/usr/bin/${name}"
+  cd "${_archive}"
+  install -D "${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:

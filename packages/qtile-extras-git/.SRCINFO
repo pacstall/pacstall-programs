@@ -1,0 +1,9 @@
+pkgname = qtile-extras-git
+gives = qtile-extras
+pkgver = 0.23.1
+pkgdesc = A list of mods developed by elParaguayo for Qtile
+source = https://github.com/elParaguayo/qtile-extras.git
+makedepends = python3-venv
+makedepends = python3-pip
+pacdeps = qtile-git
+maintainer = Ruturajn <nanotiruturaj@gmail.com>

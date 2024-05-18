@@ -1,0 +1,10 @@
+pkgname = ivpn-deb
+gives = ivpn
+pkgver = 3.13.4
+pkgdesc = Official IVPN Desktop app - Base Package
+arch = amd64
+source = https://repo.ivpn.net/stable/pool/ivpn_3.13.4_amd64.deb
+breaks = ivpn-git
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: ivpn
+sha256sums = 10d8bf35ffedbdac2943fb7a3ab608eb8ae069dcc344e9b6b97b96a662372c35

@@ -1,10 +1,10 @@
-name="google-chrome-beta-deb"
+pkgname="google-chrome-beta-deb"
 gives="google-chrome-beta"
 repology=("project: google-chrome" "visiblename: ${gives}")
-replace=("${gives}")
-pkgver="121.0.6167.85"
-url="https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${pkgver}-1_amd64.deb"
+replaces=("${gives}")
+pkgver="125.0.6422.26"
+source=("https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${pkgver}-1_amd64.deb")
 pkgdesc="The web browser built by Google - Beta channel"
-hash="ee3d598e20a6bcfa511db82cf8ad388e17b244440d3361e3201383aeef4ead0e"
+sha256sums=("9db9c6e1cd37e977c814a206312def125592ce9ac548ef7f8e1fda1e57c33ddf")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

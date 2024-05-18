@@ -1,10 +1,10 @@
-name="linux-headers-deb"
-gives="linux-headers-6.8.0-060800rc6"
-pkgver="6.8~rc6"
-buildver="6.8.0-060800rc6.202402251933"
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/amd64/${gives}_${buildver}_all.deb"
+pkgname="linux-headers-deb"
+gives="linux-headers-6.9.0-060900"
+pkgver="6.9"
+buildver="6.9.0-060900.202405122134"
+source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/amd64/${gives}_${buildver}_all.deb")
 pkgdesc="Ubuntu Linux mainline kernel (Headers)"
-hash="5b08327e43f517a91300866d53f666d6fd012ac9e41e2851c0cca33c6bf45caa"
+sha256sums=("788fcde7a4d666c3c0b4019235bfdac3e10c4721bc319582f6d5015780a9687f")
 arch=('any')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")

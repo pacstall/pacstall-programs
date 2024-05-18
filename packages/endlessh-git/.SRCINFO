@@ -1,0 +1,13 @@
+pkgname = endlessh-git
+gives = endlessh
+pkgver = 1.1
+pkgdesc = SSH tarpit that very slowly sends an endless, random SSH banner
+source = https://github.com/skeeto/endlessh.git
+source = sample-config::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/endlessh-git/sample-config
+breaks = endlessh
+breaks = endlessh-deb
+breaks = endlessh-app
+breaks = endlessh-bin
+maintainer = Elsie19 <elsie19@pm.me>
+sha256sums = SKIP
+sha256sums = f92a2341103a7c6243d7cbc32a3400e0f01ecd5fae12a0731029f6c50ba9f451

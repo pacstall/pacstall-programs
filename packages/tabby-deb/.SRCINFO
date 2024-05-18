@@ -1,0 +1,10 @@
+pkgname = tabby-deb
+gives = tabby-terminal
+pkgver = 1.0.197
+pkgdesc = A terminal for the modern age
+source = https://github.com/Eugeny/tabby/releases/download/v1.0.197/tabby-1.0.197-linux-x64.deb
+breaks = tabby
+breaks = tabby-app
+maintainer = Herisson <spaceguybox@outlook.com>
+repology = project: tabby-terminal
+sha256sums = aa1cc7936d80d8eb1bc0a50f55abb5120d1172877ffbe7bb2548d30f4c799fe5

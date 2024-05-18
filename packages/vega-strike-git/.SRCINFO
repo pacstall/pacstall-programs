@@ -1,0 +1,7 @@
+pkgname = vega-strike-git
+pkgver = 0.8.0
+pkgdesc = Space Flight Simulator and trading game
+source = https://github.com/vegastrike/Assets-Production.git
+makedepends = make
+pacdeps = vega-strike-engine-git
+maintainer = echometerain <echometer@disroot.org>

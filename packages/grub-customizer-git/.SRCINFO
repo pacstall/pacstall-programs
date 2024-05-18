@@ -1,0 +1,14 @@
+pkgname = grub-customizer-git
+gives = grub-customizer
+pkgver = 5.0.6
+pkgdesc = Grub Customizer is a graphical interface to configure the GRUB2/BURG settings and menuentries
+source = git+https://git.launchpad.net/grub-customizer
+makedepends = cmake
+makedepends = g++
+makedepends = libgtkmm-3.0-dev
+makedepends = gettext
+makedepends = libssl-dev
+makedepends = libarchive-dev
+makedepends = hwinfo
+breaks = grub-customizer-deb
+maintainer = ObsidianPresidium <emil@aarestrup.nu>

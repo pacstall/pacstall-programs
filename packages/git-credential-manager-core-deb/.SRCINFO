@@ -1,0 +1,10 @@
+pkgname = git-credential-manager-core-deb
+gives = git-credential-manager-core
+pkgver = 2.4.1
+pkgdesc = Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services
+arch = amd64
+source = https://github.com/GitCredentialManager/git-credential-manager/releases/download/v2.4.1/git-credential-manager-core-linux_amd64.2.4.1.deb
+depends = git
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: git-credential-manager-core
+sha256sums = d65a166f6fc3d6638b356b84b4e1274a95352455f448b06a34926bf6568cd995

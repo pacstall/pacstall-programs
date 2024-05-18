@@ -1,0 +1,14 @@
+pkgname = rhino-server-core
+pkgver = 2023.4
+pkgrel = 8
+pkgdesc = Transitional package to provide minimal core Rhino Linux software
+priority = essential
+source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
+pacdeps = rhino-pkg-git
+pacdeps = rhino-neofetch-git
+replaces = rhino-core
+replaces = rhino-pine-core
+replaces = rhino-ubxi-core
+compatible = ubuntu:devel
+compatible = ubuntu:oracular
+maintainer = Oren Klopfer <oren@taumoda.com>

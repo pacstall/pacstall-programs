@@ -1,0 +1,9 @@
+pkgname = tre-git
+gives = tre
+pkgver = 0.4.0
+pkgdesc = Tree command, improved
+source = https://github.com/dduan/tre.git
+makedepends = cargo
+makedepends = rustc
+incompatible = debian:bullseye
+maintainer = Diego Magdaleno <diegomagdaleno@pm.me>

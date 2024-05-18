@@ -1,0 +1,10 @@
+pkgname = google-chrome-unstable-deb
+gives = google-chrome-unstable
+pkgver = 126.0.6452.3
+pkgdesc = The web browser built by Google - Developer/Unstable channel
+arch = amd64
+source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_126.0.6452.3-1_amd64.deb
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: google-chrome
+repology = visiblename: google-chrome-dev
+sha256sums = 6a54932c941c3b6086aeef4cbf9f77aa05ddd4630142c79d1e3308aaab7fbf07

@@ -1,30 +1,23 @@
-name="wezterm-app"
-pkgname="wezterm"
+pkgname="wezterm-app"
 gives="wezterm"
-pkgver="20230712-072601-f4abf8fd"
+pkgver="20240203-110809-5046fc22"
 pkgdesc="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
-url="https://github.com/wez/wezterm/releases/download/${pkgver}/WezTerm-${pkgver}-Ubuntu20.04.AppImage"
-hash="68656714c332161c47862f74902d676088ba45ca3980d6d2cbc2c3d9dd4a9c72"
-breaks=("${pkgname}-bin")
+source=("${gives}::https://github.com/wez/wezterm/releases/download/${pkgver}/WezTerm-${pkgver}-Ubuntu20.04.AppImage")
+sha256sums=('34010a07076d2272c4d4f94b5e0dae608a679599e8d729446323f88f956c60f0')
+breaks=("${gives}-bin")
 repology=("project: wezterm")
-maintainer="smokeythemonkey <smokeythemonkey@posteo.net>"
+maintainer=("smokeythemonkey <smokeythemonkey@posteo.net>")
 
 package() {
-  # Install AppImage
-  sudo install -Dm755 "WezTerm-${pkgver}-Ubuntu20.04.AppImage" "${pkgdir}/usr/bin/${pkgname}"
+  chmod +x "${gives}"
+  ./"${gives}" --appimage-extract usr/share >/dev/null
+  mkdir -p "${pkgdir}"/usr/{bin,share}
 
-  # Download icon
-  wget -q https://raw.githubusercontent.com/wez/wezterm/main/assets/icon/wezterm-icon.svg
-  sudo install -Dm644 "wezterm-icon.svg" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/org.wezfurlong.wezterm.svg"
-
-  # Install .desktop file
-  wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${pkgname}.desktop"
-  sudo install -Dm644 "${pkgname}.desktop" "${pkgdir}/usr/share/applications/org.wezfurlong.wezterm.desktop"
-}
-
-post_remove() {
-  # Delete wezterm config
-  if ask "Do you want to delete ~/.config/wezterm/ files?" N; then
-    rm -rf ~/.config/wezterm/
-  fi
+  # Duplicate .desktop file
+  rm squashfs-root/usr/share/applications/wezterm.desktop
+  for d in usr/share/{applications,icons,metainfo,nautilus-python}; do
+    cp -a "squashfs-root/${d}" "${pkgdir}/${d}"
+  done
+  install -Dm755 "${gives}" -t "${pkgdir}/usr/share"
+  ln -s "/usr/share/${gives}" "${pkgdir}/usr/bin/${gives}"
 }

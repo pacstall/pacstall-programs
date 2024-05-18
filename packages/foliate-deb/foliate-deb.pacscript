@@ -1,9 +1,9 @@
-name="foliate-deb"
-gives="com.github.johnfactotum.foliate"
-pkgver="2.6.4"
-arch=("any")
-url="https://github.com/johnfactotum/foliate/releases/download/${pkgver}/com.github.johnfactotum.foliate_${pkgver}_all.deb"
-hash="fdc7d45a0b357c4a58aa08ddadf581dd21f3761bc6c74a80e39174ce77b75d66"
-homepage="https://johnfactotum.github.io/foliate/"
+pkgname="foliate-deb"
+gives="foliate"
+replaces=("${gives}")
+pkgver="3.0.1"
+source=("https://github.com/johnfactotum/${gives}/releases/download/${pkgver}/${gives}_${pkgver}_all.deb")
+sha256sums=("933bb5235586cb59a2aa7d5df056cae2b504c5e928621ed6d6e084870279c195")
+url="https://johnfactotum.github.io/foliate/"
 pkgdesc="A simple and modern GTK e-book reader"
-maintainer="Diegiwg <diegiwg@gmail.com>"
+maintainer=("Diegiwg <diegiwg@gmail.com>")

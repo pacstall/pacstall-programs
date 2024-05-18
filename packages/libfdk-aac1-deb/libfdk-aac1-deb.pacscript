@@ -1,0 +1,13 @@
+pkgname="libfdk-aac1-deb"
+gives="libfdk-aac1"
+breaks=("${gives}-bin" "${gives}")
+repology=("project: ${gives}")
+replaces=("${gives}")
+pkgver="0.1.6"
+arch=('amd64')
+pkgdesc="Libfdk-aac1 is an open-source library for encoding and decoding AAC (Advanced Audio Coding) audio files"
+source=("http://archive.ubuntu.com/ubuntu/pool/multiverse/f/fdk-aac/${gives}_${pkgver}-1_amd64.deb")
+sha256sums=("4b824bbc6fdd47c5a01b9a61b8b1dbb318242d9f2af1c7ad2bd5d7e9fd4d3600")
+maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>")
+
+# vim:set ft=sh ts=2 sw=2 et:

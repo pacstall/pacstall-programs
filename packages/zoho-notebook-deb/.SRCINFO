@@ -1,0 +1,9 @@
+pkgname = zoho-notebook-deb
+gives = notebook
+pkgver = 2.2.3
+pkgdesc = The most beautiful note-taking app across devices
+source = https://downloads.zohocdn.com/notebooklinux-desktop/Notebook-2.2.3.deb
+replaces = notebook
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: zoho-notebook
+sha256sums = c9f4faf14c722fd549cd1be7ebd0424728af7ad2ceda246faadd76d2b83abaa1

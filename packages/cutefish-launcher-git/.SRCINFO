@@ -1,0 +1,16 @@
+pkgname = cutefish-launcher-git
+gives = cutefish-launcher
+pkgver = 0.8
+pkgdesc = CutefishOS's full-screen application launcher
+source = https://github.com/cutefishos/launcher.git
+depends = fishui
+depends = libcutefish
+depends = libkf5windowsystem-dev
+makedepends = extra-cmake-modules
+makedepends = ninja-build
+makedepends = qttools5-dev-tools
+makedepends = qtbase5-dev
+makedepends = qtdeclarative5-dev
+makedepends = qtquickcontrols2-5-dev
+makedepends = qttools5-dev
+license = GPL-3.0

@@ -1,0 +1,16 @@
+pkgname = genymotion-bin
+gives = genymotion
+pkgver = 3.6.0
+pkgdesc = Android virtual devices
+url = https://genymotion.com
+arch = amd64
+source = https://dl.genymotion.com/releases/genymotion-3.6.0/genymotion-3.6.0-linux_x64.bin
+breaks = genymotion
+breaks = genymotion-bin
+breaks = genymotion-git
+breaks = genymotion-app
+breaks = genymotion-deb
+replaces = genymotion
+maintainer = Arrowsome <ramtintoosi@gmail.com>
+repology = project: genymotion
+sha256sums = 092d40f6e76de3b6e1827609aaa9021b7cf85da3d51e6cf8d7b553b18d9c70e0

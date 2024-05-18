@@ -1,9 +1,9 @@
-name="gldriver-test-deb"
+pkgname="gldriver-test-deb"
 gives="gldriver-test"
 pacdeps=("raspi-config-deb")
 pkgver="0.15"
-url="https://archive.raspberrypi.org/debian/pool/main/g/${gives}/${gives}_${pkgver}_all.deb"
+source=("https://archive.raspberrypi.org/debian/pool/main/g/${gives}/${gives}_${pkgver}_all.deb")
 pkgdesc="Various graphics-related config services for Raspberry Pi"
-hash="b0e0ea2e8ebde87f481639dfa016df6ea4335d97710cd10c8b14ab5a379aaa93"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+sha256sums=("b0e0ea2e8ebde87f481639dfa016df6ea4335d97710cd10c8b14ab5a379aaa93")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=("any")

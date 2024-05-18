@@ -1,0 +1,9 @@
+pkgname = telegram-bin
+gives = telegram
+pkgver = 4.14.9
+pkgdesc = Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed
+url = https://telegram.org/
+source = https://updates.tdesktop.com/tlinux/tsetup.4.14.9.tar.xz
+maintainer = Diegiwg <diegiwg@gmail.com>
+repology = project: telegram-desktop
+sha256sums = f75239beeab815c9b1dada08e0ff84885fc85bc4919178545fffe7018ddffcc2

@@ -1,14 +1,12 @@
-name="linux-headers-generic-stable-deb"
-gives="linux-headers-6.7.6-060706-generic"
-pkgver="6.7.6"
-buildver="6.7.6-060706.202402230933"
+pkgname="linux-headers-generic-stable-deb"
+gives="linux-headers-6.9.1-060901-generic"
+pkgver="6.9.1"
+buildver="6.9.1-060901.202405171038"
 arch=('arm64' 'amd64')
-if [[ ${CARCH} == "arm64" ]]; then
-  hash="19ada4ec3832a53c57e27983c2dd12f05e998cc8954ad063f4a478d6c25c7175"
-else
-  hash="3a92dad5748d53dab8b00f02254a4f19faad59917c49d46d8c77536b214bc468"
-fi
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
+sha256sums_arm64=("8fe818f1697a17276922ec0d72c247501c00382132380f29b42d814b9a76f3be")
+sha256sums_amd64=("0ba0600e87a18221356d547873fb08b4cd8013a2b90cf1436b7d4ad372160e0a")
+source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Ubuntu Linux stable kernel (Generic headers)"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+pacdeps=("linux-headers-stable-deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: distrowatch")

@@ -1,0 +1,9 @@
+pkgname = rhino-pkg-git
+gives = rhino-pkg
+pkgver = 0.1.2
+pkgdesc = Rhino-pkg wrapper script
+source = https://github.com/rhino-linux/rhino-pkg.git
+depends = gettext
+makedepends = make
+makedepends = gettext
+maintainer = Oren Klopfer <oren@taumoda.com>

@@ -1,0 +1,6 @@
+pkgname = couture
+pkgver = 1.6
+pkgdesc = Couture gives you exquisite control over your dynamics, and particularly attacks.
+source = https://www.auburnsounds.com/downloads/Couture-FREE-1.6.zip
+maintainer = echometerain <echometer@disroot.org>
+sha256sums = 5cebcd1358f450a0b7c7003444c3febbc8764be8d401ead2a3e07cab232aa14e

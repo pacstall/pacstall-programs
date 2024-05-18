@@ -1,0 +1,10 @@
+pkgname = hypnotix-deb
+gives = hypnotix
+pkgver = 4.3
+pkgdesc = An IPTV streaming application with support for live TV, movies and series
+source = http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_4.3_all.deb
+pacdeps = gir1.2-xapp-1.0-deb
+pacdeps = circle-flags-svg-deb
+maintainer = Zahrun <Zahrun@github.com>
+repology = project: hypnotix
+sha256sums = 129f9fd5032252cebbd81a6ea8da4f61dc6bd4d9072dede430bfca8e67451361

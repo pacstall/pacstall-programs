@@ -1,0 +1,13 @@
+pkgname = fennel-bin
+gives = fennel
+pkgver = 1.3.1
+pkgdesc = A Lua Lisp language
+arch = amd64
+source = https://fennel-lang.org/downloads/fennel-1.3.1-x86_64
+breaks = fennel
+breaks = fennel-git
+breaks = fennel-deb
+breaks = fennel-app
+maintainer = wizard-28 <wiz28@pm.me>
+repology = project: fennel
+sha256sums = 85b71175739dfd5e8893726d7244b0f0b58fd21eaec009e39eea44ad7169f060

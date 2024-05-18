@@ -1,0 +1,12 @@
+pkgname = veracrypt-deb
+gives = veracrypt
+pkgver = 1.26.7
+pkgdesc = VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux
+arch = amd64
+source = https://launchpad.net/veracrypt/trunk/1.26.7/+download/veracrypt-1.26.7-Ubuntu-22.04-amd64.deb
+breaks = veracrypt
+breaks = veracrypt-console
+breaks = veracrypt-git
+maintainer = Zahrun <Zahrun@github.com>
+repology = project: veracrypt
+sha256sums = f0dca101cf5b5eccfadaad3f53aea037fd5a01cd9afeb7248ddcca28b821a0ef

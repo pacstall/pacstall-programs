@@ -1,0 +1,12 @@
+pkgname = megabasterd-bin
+gives = megabasterd
+pkgver = 8.21
+pkgdesc = Yet another unofficial (and ugly) cross-platform MEGA downloader/uploader/streaming suite
+url = https://github.com/tonikelope/megabasterd
+source = https://github.com/tonikelope/megabasterd/releases/download/v8.21/MegaBasterd_8.21.jar
+source = megabasterd.png::https://raw.githubusercontent.com/tonikelope/megabasterd/v8.21/src/main/resources/images/pica_roja_big.png
+depends = java11-runtime
+maintainer = vigress8 <vig@disroot.org>
+repology = project: megabasterd
+sha256sums = 3f7460b5ba20cf84ea034e9f2c49def9b07cf59680a3b36492875d851f9e0241
+sha256sums = SKIP

@@ -1,0 +1,7 @@
+pkgname = wgcf-bin
+pkgver = 2.2.20
+pkgdesc = Cross-platform, unofficial CLI for Cloudflare Warp
+arch = amd64
+source = https://github.com/ViRb3/wgcf/releases/download/v2.2.20/wgcf_2.2.20_linux_amd64
+maintainer = Wildy Sheverando <hai@wildyrando.com>
+sha256sums = 2a3ab38ace4d2284a3c810a28afcc0c5280d915372214246fe7da7245e06b0fa

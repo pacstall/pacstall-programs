@@ -1,0 +1,13 @@
+pkgname = floorp-bin
+gives = floorp
+pkgver = 11.12.2
+pkgdesc = Firefox-based Browser build for keeping the Open, Private and Sustainable Web alive
+url = https://floorp.app/
+arch = amd64
+arch = arm64
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: floorp
+source_amd64 = https://github.com/Floorp-Projects/Floorp/releases/download/v11.12.2/floorp-11.12.2.linux-x86_64.tar.bz2
+source_arm64 = https://github.com/Floorp-Projects/Floorp/releases/download/v11.12.2/floorp-11.12.2.linux-aarch64.tar.bz2
+sha256sums_amd64 = 26f91d3bee476e1b42b812580fe0f45d8478081c0a76fad3e038eb8f4f22bd41
+sha256sums_arm64 = 8b849ab4873d7c3676c980a46944963200b4690287d3689452e6ac5e35f31e25

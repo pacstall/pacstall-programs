@@ -1,0 +1,13 @@
+pkgname = virtualbox-deb
+gives = virtualbox-7.0
+pkgver = 7.0.18
+pkgdesc = VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use
+arch = amd64
+breaks = virtualbox-7.0-bin
+incompatible = debian:testing
+incompatible = debian:sid
+incompatible = ubuntu:mantic
+incompatible = ubuntu:noble
+incompatible = ubuntu:devel
+maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
+repology = project: virtualbox-7.0

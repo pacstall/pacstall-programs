@@ -1,0 +1,9 @@
+pkgname = pap
+pkgver = 0.15.0
+pkgdesc = Swiss army knife for minecraft servers
+source = https://github.com/talwat/pap/archive/v0.15.0.tar.gz
+makedepends = golang-go
+incompatible = debian:bullseye
+maintainer = Talwat <talwat321@gmail.com>
+repology = project: pap
+sha256sums = 743fd7d6d8f6e5fcd198ee75fcc54fd77ce272c77009cfa2c28c0eb6aec5121c

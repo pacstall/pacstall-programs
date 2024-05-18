@@ -1,24 +1,29 @@
-name="krita-app"
+pkgname="krita-app"
 gives="krita"
 pkgver="5.1.5"
-homepage="https://krita.org/"
+url="https://krita.org/"
 pkgdesc="Edit and paint images"
-url="https://download.kde.org/stable/${gives}/${pkgver}/${gives}-${pkgver}-x86_64.appimage"
-hash="a1f7e951a8c5a43da70a56de5199fb807e44e3156973721d7d3a14974fbc225c"
-__icon_url="https://github.com/AppImage/appimage.github.io/blob/master/database/Krita/icons/scalable/krita.svgz"
+source=(
+  "https://download.kde.org/stable/${gives}/${pkgver}/${gives}-${pkgver}-x86_64.appimage"
+  "https://github.com/AppImage/appimage.github.io/blob/master/database/Krita/icons/scalable/krita.svgz"
+)
+sha256sums=(
+  "a1f7e951a8c5a43da70a56de5199fb807e44e3156973721d7d3a14974fbc225c"
+  "SKIP"
+)
 repology=("project: krita")
 arch=("amd64")
-maintainer="harrietobrien <harrietobrien@protonmail.com>"
+maintainer=("harrietobrien <harrietobrien@protonmail.com>")
 
 package() {
-  sudo chmod +x "${gives}-${pkgver}-x86_64.appimage"
-  sudo install -Dm755 "${gives}-${pkgver}-x86_64.appimage" "${pkgdir}/usr/bin/${gives}"
-  wget -q -O "krita.svgz" "${__icon_url}"
-  sudo install -Dm644 "krita.svgz" "${pkgdir}/usr/share/pixmaps/krita.svgz"
-  sudo mkdir -p "${pkgdir}/usr/share/applications/"
+  cd "${_archive}"
+  chmod +x "${gives}-${pkgver}-x86_64.appimage"
+  install -Dm755 "${gives}-${pkgver}-x86_64.appimage" "${pkgdir}/usr/bin/${gives}"
+  install -Dm644 "${srcdir}/krita.svgz" "${pkgdir}/usr/share/pixmaps/krita.svgz"
+  mkdir -p "${pkgdir}/usr/share/applications/"
   echo "[Desktop Entry]
     Name=Krita
     Icon=krita
     Type=Application
-    Exec=/usr/bin/krita" | sudo tee "${pkgdir}/usr/share/applications/krita.desktop" > /dev/null
+    Exec=/usr/bin/krita" | tee "${pkgdir}/usr/share/applications/krita.desktop" > /dev/null
 }

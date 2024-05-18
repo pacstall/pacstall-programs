@@ -1,0 +1,7 @@
+pkgname = btrfs-du-bin
+gives = btrfs-du
+pkgver = 0.0.7
+pkgdesc = Easily print BTRFS subvolume/snapshot disk usage
+source = https://github.com/nachoparker/btrfs-du/archive/refs/tags/v0.0.7.tar.gz
+depends = btrfs-progs
+repology = project: btrfs-du

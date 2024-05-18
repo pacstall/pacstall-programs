@@ -1,11 +1,11 @@
-name="torguard-deb"
+pkgname="torguard-deb"
 gives="torguard"
 repology=("project: ${gives}")
-replace=("${gives}")
+replaces=("${gives}")
 breaks="${gives}-bin"
-pkgver="4.8.28"
-url="https://updates.torguard.biz/Software/Linux/${gives}-v${pkgver}-amd64.deb"
+pkgver="4.8.29"
+source=("https://updates.torguard.biz/Software/Linux/${gives}-v${pkgver}-amd64.deb")
 pkgdesc="TorGuard VPN Software"
-hash="ff96268f459aefddc09e809efed6f5e0cb3e45bb79d4e35a88224f35adcc2e39"
+sha256sums=("0ab7ec3917ed4ec5a23746612efddc7fd17cf15ae010723212ecba3c5521050e")
 arch=('amd64')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

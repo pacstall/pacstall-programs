@@ -1,27 +1,21 @@
-name="prettier"
-pkgver="3.2.4"
+pkgname="prettier"
+pkgver="3.2.5"
 pkgdesc="An opinionated code formatter"
-homepage='https://prettier.io'
+url='https://prettier.io'
 depends=("nodejs")
-url="https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz"
-hash="753dffcd98f5b1e384bde219f710edb554e43d05ccfb8fe14ed3938d99adac4b"
-repology=("project: ${name}")
-maintainer="vigress8 <vig@disroot.org>"
-mod_dir="usr/lib/node_modules/${name}"
+source=("https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz")
+sha256sums=("a9d68ae56e5b0fea5c9d8e68b67104dae8445db21e1d24fb3522f3f4c0fb271d")
+repology=("project: ${pkgname}")
+maintainer=("vigress8 <vig@disroot.org>")
 
 package() {
-  sudo install -d "${pkgdir}/"{usr/bin,usr/share/licenses/"${name}","${mod_dir}"}
-  sudo cp -ar ./* "${pkgdir}/${mod_dir}"
-  sudo chmod 755 "${pkgdir}/${mod_dir}/bin/${name}.cjs"
-}
-
-post_install() {
-  sudo ln -sf "/${mod_dir}/bin/${name}.cjs" "/usr/bin/${name}"
-  sudo ln -sf "/${mod_dir}/LICENSE" "/usr/share/licenses/${name}/LICENSE"
-}
-
-post_remove() {
-  sudo rm -rf "/usr/"{bin,share/licenses}"/${name}"
+  cd "${_archive}"
+  local mod_dir="usr/lib/node_modules/${pkgname}"
+  install -d "${pkgdir}/"{usr/bin,"${mod_dir}"}
+  cp -a ./* "${pkgdir}/${mod_dir}"
+  chmod 755 "${pkgdir}/${mod_dir}/bin/${pkgname}.cjs"
+  install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  ln -sf "/${mod_dir}/bin/${pkgname}.cjs" "${pkgdir}/usr/bin/${pkgname}"
 }
 
 # vim:set ft=sh ts=2 sw=2 :et

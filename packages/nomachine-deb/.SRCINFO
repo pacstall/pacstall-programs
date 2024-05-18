@@ -1,0 +1,13 @@
+pkgname = nomachine-deb
+gives = nomachine
+pkgver = 8.4.2_1
+pkgdesc = Remote desktop software designed for anyone who wants to access a single or multiple computers.
+arch = amd64
+source_amd64 = https://download.nomachine.com/download/8.4/Linux/nomachine_8.4.2_1_amd64.deb
+breaks = nomachine-bin
+breaks = nomachine-app
+breaks = nomachine-git
+replaces = nomachine
+maintainer = Cameron Computer <cameron.computer@pm.me>
+repology = project: nomachine
+sha256sums = 0934b3cf8468d3748a84a084b5eebd4c06974499e29a1f512ae61488357962fa

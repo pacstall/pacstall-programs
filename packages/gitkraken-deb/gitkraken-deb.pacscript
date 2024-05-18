@@ -1,10 +1,10 @@
-name="gitkraken-deb"
+pkgname="gitkraken-deb"
 gives="gitkraken"
 repology=("project: ${gives}")
-replace=("${gives}")
+replaces=("${gives}")
 breaks=("${gives}-bin")
-pkgver="9.12.0"
-url="https://release.axocdn.com/linux/GitKraken-v${pkgver}.deb"
+pkgver="10.0.0"
+source=("https://release.axocdn.com/linux/GitKraken-v${pkgver}.deb")
 pkgdesc="Legendary Git GUI client for Windows, Mac & Linux"
-hash="197aaad390b297142cdb572a748d3612706e1ba23f0c358f03cc99326b6ab0f4"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+sha256sums=("886ebe6884e5196b705f1b1469f3c735c88799458a80cc233d4602edb25207a8")
+maintainer=("Oren Klopfer <oren@taumoda.com>")

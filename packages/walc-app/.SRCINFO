@@ -1,0 +1,11 @@
+pkgname = walc-app
+gives = walc
+pkgver = 0.2.1
+pkgdesc = An unofficial WhatsApp Desktop client for linux systems.
+source = https://github.com/cstayyab/WALC/releases/download/v0.2.1/walc.AppImage
+breaks = walc
+breaks = walc-bin
+breaks = walc-git
+breaks = walc-deb
+maintainer = wizard-28 <wiz28@pm.me>
+sha256sums = 6c1e5c004e9c4bc5a8cf15837ce0e6c884fb3ace6397aa6aa95a6738c1960560

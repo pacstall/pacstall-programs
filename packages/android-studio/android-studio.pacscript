@@ -1,30 +1,38 @@
-name="android-studio"
-repology=("project: ${name}" "repo: aur")
-replace=("${name}" "${name}-beta" "${name}-canary")
-pkgver="2023.1.1.28"
-url="https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${name}-${pkgver}-linux.tar.gz"
+pkgname="android-studio"
+repology=("project: ${pkgname}" "repo: aur")
+replaces=("${pkgname}" "${pkgname}-beta" "${pkgname}-canary")
+pkgver="2024.1.1.6"
+source=(
+  "https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${pkgname}-${pkgver}-linux.tar.gz"
+  "${pkgname}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${pkgname}.desktop"
+)
 depends=("libc6-i386" "lib32ncurses6" "lib32stdc++6" "lib32z1" "libbz2-1.0:i386")
 pkgdesc="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
-hash="139d0dbb4909353b68fbf55c09b6d31a34512044a9d4f02ce0f1a9accca128f9"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+sha256sums=(
+  "1b201956450187bb4cea6e21ce95189de8a368548dc1d4b2fe0dcfedf696f6fb"
+  "SKIP"
+)
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 package() {
+  cd "${_archive}"
   # Moving all android studio files to /opt
-  sudo install -d "${pkgdir}/opt/${name}"
-  sudo cp -a bin lib jbr plugins license LICENSE.txt build.txt product-info.json "${pkgdir}/opt/${name}"
+  install -d "${pkgdir}/opt/${pkgname}"
+  cp -a bin lib jbr plugins license LICENSE.txt build.txt product-info.json "${pkgdir}/opt/${pkgname}"
 
   # Creating a launcher in $PATH
-  sudo install -d "${pkgdir}/usr/bin"
+  install -d "${pkgdir}/usr/bin"
 
-  sudo install -d "${pkgdir}/usr/share/applications"
-  sudo wget -q "https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${name}/${name}.desktop" -O "${pkgdir}//usr/share/applications/${name}.desktop"
+  install -d "${pkgdir}/usr/share/applications"
+  install -Dm644 "${srcdir}/${pkgname}.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
 
-  sudo install -Dm644 bin/studio.png "${pkgdir}/usr/share/pixmaps/${name}.png"
-  sudo chmod -R ugo+rX "${pkgdir}/opt"
+  install -Dm644 bin/studio.png "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
+  chmod -R ugo+rX "${pkgdir}/opt"
+  mkdir -p "${pkgdir}/usr/bin"
+  ln -sf "/opt/${pkgname}/bin/studio.sh" "${pkgdir}/usr/bin/${pkgname}"
 }
 
 post_install() {
-  sudo ln -sf "/opt/${name}/bin/studio.sh" "/usr/bin/${name}"
 
   sudo update-desktop-database -q
   # Finished installation
@@ -33,5 +41,4 @@ post_install() {
 
 post_remove() {
   sudo update-desktop-database -q
-  sudo rm -f "/usr/bin/${name}"
 }

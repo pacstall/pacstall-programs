@@ -1,0 +1,6 @@
+pkgname = rhino-lightdm-theme-git
+gives = rhino-lightdm-theme
+pkgver = 0.0.1
+pkgdesc = Rhino Linux Lightdm theme
+source = https://github.com/rhino-linux/lightdm.git
+maintainer = Oren Klopfer <oren@taumoda.com>

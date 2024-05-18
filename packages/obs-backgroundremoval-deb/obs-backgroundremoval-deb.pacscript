@@ -1,11 +1,11 @@
-name="obs-backgroundremoval-deb"
+pkgname="obs-backgroundremoval-deb"
 gives="obs-backgroundremoval"
 repology=("project: ${gives}")
 breaks=("${gives}" "${gives}-git")
-pkgver="1.1.10"
-url="https://github.com/royshil/obs-backgroundremoval/releases/download/${pkgver}/obs-backgroundremoval-${pkgver}-x86_64-linux-gnu.deb"
+pkgver="1.1.13"
+source=("https://github.com/royshil/obs-backgroundremoval/releases/download/${pkgver}/obs-backgroundremoval-${pkgver}-x86_64-linux-gnu.deb")
 pkgdesc="OBS plugin to replace the background in portrait images and video"
-hash="402d2498d4de913642dd62bd22801d1854a3c66bf0ffdc075073ba8d093a1f3f"
+sha256sums=("3db40f02f278dd567b553bc451d2e4127024c0de8fca4423cbb892e9b329f551")
 arch=('amd64')
-maintainer="Zahrun <Zahrun@github.com>"
+maintainer=("Zahrun <Zahrun@github.com>")
 incompatible=("debian:bullseye")

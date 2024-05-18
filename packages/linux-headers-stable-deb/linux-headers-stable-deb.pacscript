@@ -1,10 +1,10 @@
-name="linux-headers-stable-deb"
-gives="linux-headers-6.7.6-060706"
-pkgver="6.7.6"
-buildver="6.7.6-060706.202402230933"
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb"
+pkgname="linux-headers-stable-deb"
+gives="linux-headers-6.9.1-060901"
+pkgver="6.9.1"
+buildver="6.9.1-060901.202405171038"
+source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb")
 pkgdesc="Ubuntu Linux stable kernel (Headers)"
-hash="9e1cd43f0de5ec5eaf056c79090dbe2677a6efc62737a80fceb9974de332b59c"
+sha256sums=("1ab5c81663452008b3196e5636bbbda75016eea9545033007953c8a0cf9a36ca")
 arch=('any')
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: distrowatch")

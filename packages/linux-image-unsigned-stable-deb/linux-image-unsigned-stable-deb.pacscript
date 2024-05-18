@@ -1,14 +1,12 @@
-name="linux-image-unsigned-stable-deb"
-gives="linux-image-unsigned-6.7.6-060706-generic"
-pkgver="6.7.6"
-buildver="6.7.6-060706.202402230933"
+pkgname="linux-image-unsigned-stable-deb"
+gives="linux-image-unsigned-6.9.1-060901-generic"
+pkgver="6.9.1"
+buildver="6.9.1-060901.202405171038"
 arch=('arm64' 'amd64')
-if [[ ${CARCH} == "arm64" ]]; then
-  hash="e32134c55d3a45e901cb3a0fc0d48af1c4c75200ad60e023ac7fef53a05b8f37"
-else
-  hash="6f126bd72024437e3928d94b1c1f7a75914749eb0d985301f41771317351052e"
-fi
-url="https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb"
+sha256sums_arm64=("27017710b35f2a419cc17599160befedb0c258f21b4d24ede70d8d872a81f4ac")
+sha256sums_amd64=("d966470910a7d8c5355bbc50bc254ff5c408d926bef07b2ff640828cd329abfa")
+source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Ubuntu Linux stable kernel (Unsigned image)"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+pacdeps=("linux-headers-generic-stable-deb" "linux-modules-stable-deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: distrowatch")

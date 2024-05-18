@@ -1,0 +1,10 @@
+pkgname = paconvert-git
+gives = paconvert
+pkgver = 0.0.1
+pkgdesc = Paconvert makes converting PKGBUILDS into pacscripts easier.
+source = https://github.com/pacstall/paconvert.git
+breaks = paconvert-deb
+breaks = paconvert-bin
+breaks = paconvert-app
+breaks = paconvert-git
+maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>

@@ -1,22 +1,20 @@
-name="discord"
-pkgver="0.0.42"
-maintainer="Elsie19 <elsie19@pm.me>"
-url="https://dl.discordapp.net/apps/linux/${pkgver}/${name}-${pkgver}.tar.gz"
-homepage='https://discord.com/'
+pkgname="discord"
+pkgver="0.0.49"
+maintainer=("Elsie19 <elsie19@pm.me>")
+source=("https://dl.discordapp.net/apps/linux/${pkgver}/${pkgname}-${pkgver}.tar.gz")
+url='https://discord.com/'
 depends=("libc6" "libasound2" "libatomic1" "libnotify4" "libnspr4" "libnss3" "libstdc++6" "libxss1" "libxtst6" "libayatana-appindicator3-1" "libc++1")
 pkgdesc="Chat for Communities and Friends"
-hash="edc6a7d7926105ce8e240599324f2e11db7f0f5a2b08a1b530dd5605d4d9ac8d"
+sha256sums=("ad54980244d94e5bab9db51e60914282c3dcb02aa32756c99de4108b2866bf04")
 arch=('amd64')
-repology=("project: ${name}")
-
-prepare() {
-  sudo mkdir -p "${pkgdir}/usr/share/discord/"
-  sudo mkdir -p "${pkgdir}/usr/share/applications/"
-  sudo mkdir -p "${pkgdir}/usr/share/icons/"
-}
+repology=("project: ${pkgname}")
 
 package() {
-  sudo install -Dm755 discord.desktop "${pkgdir}/usr/share/applications/discord.desktop"
-  sudo install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord.png"
-  sudo cp -R ./* "${pkgdir}/usr/share/discord/"
+  cd "${_archive}"
+  install -dm644 "${pkgdir}/usr/bin"
+  install -dm644 "${pkgdir}/usr/share/discord"
+  ln -sf /usr/share/discord/Discord "${pkgdir}/usr/bin/discord"
+  install -Dm755 discord.desktop "${pkgdir}/usr/share/applications/discord.desktop"
+  install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord.png"
+  cp -R ./* "${pkgdir}/usr/share/discord/"
 }

@@ -1,0 +1,15 @@
+pkgname = linux-image-unsigned-stable-deb
+gives = linux-image-unsigned-6.9.1-060901-generic
+pkgver = 6.9.1
+pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
+arch = arm64
+arch = amd64
+source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9.1/arm64/linux-image-unsigned-6.9.1-060901-generic_6.9.1-060901.202405171038_arm64.deb
+source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9.1/amd64/linux-image-unsigned-6.9.1-060901-generic_6.9.1-060901.202405171038_amd64.deb
+pacdeps = linux-headers-generic-stable-deb
+pacdeps = linux-modules-stable-deb
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: linux
+repology = repo: distrowatch
+sha256sums_amd64 = d966470910a7d8c5355bbc50bc254ff5c408d926bef07b2ff640828cd329abfa
+sha256sums_arm64 = 27017710b35f2a419cc17599160befedb0c258f21b4d24ede70d8d872a81f4ac

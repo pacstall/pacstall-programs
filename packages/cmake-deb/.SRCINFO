@@ -1,0 +1,11 @@
+pkgname = cmake-deb
+gives = cmake
+pkgver = 3.25.1
+pkgdesc = CMake data files (modules, templates and documentation)
+arch = amd64
+source = http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.25.1-1ubuntu1_amd64.deb
+pacdeps = cmake-data-deb
+maintainer = Zahrun <Zahrun@github.com>
+repology = project: cmake
+repology = repo: debian_unstable
+sha256sums = a8c139c0cf500e47a521930f9e0cf5a814fbed60145a29bb37e7f7ae03a27ca4

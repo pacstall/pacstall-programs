@@ -1,0 +1,10 @@
+pkgname = linux-headers-stable-deb
+gives = linux-headers-6.9.1-060901
+pkgver = 6.9.1
+pkgdesc = Ubuntu Linux stable kernel (Headers)
+arch = any
+source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9.1/amd64/linux-headers-6.9.1-060901_6.9.1-060901.202405171038_all.deb
+maintainer = Oren Klopfer <oren@taumoda.com>
+repology = project: linux
+repology = repo: distrowatch
+sha256sums = 1ab5c81663452008b3196e5636bbbda75016eea9545033007953c8a0cf9a36ca

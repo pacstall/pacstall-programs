@@ -1,21 +1,21 @@
-name="firefox-bin"
+pkgname="firefox-bin"
 gives="firefox"
-pkgver="123.0"
+pkgver="125.0.3"
 repology=("project: ${gives}")
-url="https://download-installer.cdn.mozilla.net/pub/firefox/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.bz2"
-homepage='https://www.mozilla.org/en-US/firefox'
+source=("https://download-installer.cdn.mozilla.net/pub/firefox/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.bz2")
+url='https://www.mozilla.org/en-US/firefox'
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
-maintainer="Oren Klopfer <oren@taumoda.com>"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('amd64')
-hash="99f86e24eacbaa429e5438bfc0b21e411ff1f8be95fda9800cbfb9c4ed0dc095"
+sha256sums=("2fb91b8dd196a8ee47238d82d6b7afef3dd1bb3212b29122ab1c3897052d8a49")
 
 package() {
-  cd ..
-  sudo mkdir -p "${pkgdir}/lib/firefox"
-  sudo cp -r firefox/* "${pkgdir}/lib/firefox"
-  sudo chmod +x "${pkgdir}/lib/firefox/firefox"
-  sudo chmod +x "${pkgdir}/lib/firefox/firefox-bin"
-  sudo mkdir -p "${pkgdir}/usr/share/applications/"
+  cd "${srcdir}"
+  mkdir -p "${pkgdir}/lib/firefox"
+  cp -r firefox/* "${pkgdir}/lib/firefox"
+  chmod +x "${pkgdir}/lib/firefox/firefox"
+  chmod +x "${pkgdir}/lib/firefox/firefox-bin"
+  mkdir -p "${pkgdir}/usr/share/applications/"
   echo '[Desktop Entry]
 Name=Firefox Stable
 Comment=Web Browser
@@ -30,14 +30,8 @@ Actions=Private;
 
 [Desktop Action Private]
 Exec=/lib/firefox/firefox --private-window %u
-Name=Open in private mode' | sudo tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
-}
-
-post_install() {
-  sudo ln -sf "/lib/firefox/firefox" "/usr/bin/firefox"
-  sudo ln -sf "/lib/firefox/firefox-bin" "/usr/bin/firefox-bin"
-}
-
-post_remove() {
-  sudo rm -f "/usr/bin/firefox" "/usr/bin/firefox-bin"
+Name=Open in private mode' | tee "${pkgdir}/usr/share/applications/firefox.desktop" > /dev/null
+  mkdir -p "${pkgdir}/usr/bin"
+  ln -sf "/lib/firefox/firefox-bin" "${pkgdir}/usr/bin/firefox-bin"
+  ln -sf "/lib/firefox/firefox" "${pkgdir}/usr/bin/firefox"
 }

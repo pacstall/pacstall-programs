@@ -1,0 +1,10 @@
+pkgname = insync-deb
+gives = insync
+pkgver = 3.8.6.50504
+pkgdesc = Manage your Google Drive, OneDrive, and Dropbox files straight from your Desktop
+arch = amd64
+source = https://cdn.insynchq.com/builds/linux/insync_3.8.6.50504-bullseye_amd64.deb
+depends = procps
+replaces = insync
+repology = project: insync
+sha256sums = d74f1a4d2a09f5c8abf5e81717b73cde36ecf6a9a05394845cd8d603e0576e76

@@ -1,0 +1,11 @@
+pkgname = dmenu
+pkgver = 5.2
+pkgdesc = A generic menu for X
+source = https://dl.suckless.org/tools/dmenu-5.2.tar.gz
+makedepends = libxinerama-dev
+makedepends = libxft-dev
+breaks = dmenu
+breaks = dmenu_run
+breaks = dmenu_path
+repology = project: dmenu
+sha256sums = d4d4ca77b59140f272272db537e05bb91a5914f56802652dc57e61a773d43792

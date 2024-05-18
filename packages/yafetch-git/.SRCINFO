@@ -1,0 +1,10 @@
+pkgname = yafetch-git
+gives = yafetch
+pkgver = 0.1.0
+pkgdesc = Yet another fetch tool
+source = https://github.com/Elsie19/yafetch.git
+breaks = yafetch-deb
+breaks = yafetch-bin
+breaks = yafetch-app
+breaks = yafetch-git
+maintainer = Elsie19 <elsie19@pm.me>

@@ -1,0 +1,12 @@
+pkgname = adw-gtk3
+gives = adw-gtk3
+pkgver = 5.3
+pkgdesc = An unofficial GTK3 port of libadwaita.
+arch = any
+source = https://github.com/lassekongo83/adw-gtk3/releases/download/v5.3/adw-gtk3v5.3.tar.xz
+breaks = adw-gtk3
+breaks = adw-gtk3-git
+maintainer = Herisson <spaceguybox@outlook.com>
+repology = project: adw-gtk3
+repology = repo: aur
+sha256sums = 2e6e87935bef30936e40d07c7af4fd20754e77917be224f61c4346867196bef0

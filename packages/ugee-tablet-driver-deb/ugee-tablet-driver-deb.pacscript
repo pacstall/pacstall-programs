@@ -1,0 +1,10 @@
+pkgname="ugee-tablet-driver-deb"
+gives="ugeetablet"
+repology=("project: ${gives}")
+pkgver="4.1.3"
+source=("https://ugeecom-download.oss-us-west-1.aliyuncs.com/file/2023/10/ugeeTablet${pkgver}-231017.deb")
+breaks=("${gives}-bin")
+pkgdesc="Drivers for all Ugee graphics tablet. Supports only wired and dongle connections, not Bluetooth connections"
+sha256sums=("a29df8cbe4cf9e5078f9694ccad8086fa504f2809accf8bffaeea9233bb0b893")
+arch=('amd64')
+maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>")

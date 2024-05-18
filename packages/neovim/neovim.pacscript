@@ -1,20 +1,23 @@
-name="neovim"
-pkgver="0.9.5"
-url="https://github.com/neovim/neovim/archive/refs/tags/v${pkgver}.tar.gz"
-homepage='https://neovim.io/'
+pkgname="neovim"
+pkgver="0.10.0"
+source=("https://github.com/neovim/neovim/archive/refs/tags/v${pkgver}.tar.gz")
+url='https://neovim.io/'
 makedepends=("gettext" "libtool" "libtool-bin" "autoconf" "automake" "cmake" "g++" "pkg-config")
-replace=("neovim" "nvim" "neovim-runtime")
+replaces=("neovim" "nvim" "neovim-runtime")
 pkgdesc="Neovim is a vim fork maintained by the community"
-hash="fe74369fc30a32ec7a086b1013acd0eacd674e7570eb1acc520a66180c9e9719"
-maintainer="Elsie19 <elsie19@pm.me>"
-repology=("project: ${name}")
+sha256sums=("372ea2584b0ea2a5a765844d95206bda9e4a57eaa1a2412a9a0726bab750f828")
+maintainer=("Elsie19 <elsie19@pm.me>")
+external_connection=true
+repology=("project: ${pkgname}")
 
 build() {
+  cd "${_archive}"
   make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"${NCPU}"
 }
 
 package() {
-  sudo make install DESTDIR="${pkgdir}"
-  sudo install -Dm644 "LICENSE.txt" -t "${pkgdir}/usr/share/licenses/${name}"
-  sudo install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${name}"
+  cd "${_archive}"
+  make install DESTDIR="${pkgdir}"
+  install -Dm644 "LICENSE.txt" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 }

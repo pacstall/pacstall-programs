@@ -1,0 +1,9 @@
+pkgname = yandex-disk-deb
+gives = yandex-disk
+pkgver = 0.1.6.1080
+pkgdesc = Cloud service that lets users store files on 'cloud' servers and share them with others online
+arch = amd64
+source = https://repo.yandex.ru/yandex-disk/deb/pool/main/y/yandex-disk/yandex-disk_0.1.6.1080_amd64.deb
+replaces = yandex-disk
+repology = project: yandex-disk
+sha256sums = 47ba503b4dfccecc824386d67d686abe4b5356b8b546e48fce8811b5fa88a718
