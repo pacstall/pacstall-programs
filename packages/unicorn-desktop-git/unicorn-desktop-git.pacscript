@@ -94,4 +94,5 @@ post_install() {
   if [[ ! -f "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" ]] || ! grep -q 'vala-panel-appmenu-core' "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css"; then
     printf ".-vala-panel-appmenu-core > * {\n    min-width: 1500px;\n}\n" | tee -a "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" > /dev/null
   fi
+  sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/gtk-3.0"
 }
