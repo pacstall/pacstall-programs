@@ -1,0 +1,22 @@
+enable=all
+shell=bash
+
+# foo appears unused. Verify it or export it.
+# https://www.shellcheck.net/wiki/SC2034
+disable=SC2034
+
+# Use a ( subshell ) to avoid having to cd back.
+# https://www.shellcheck.net/wiki/SC2103
+disable=SC2103
+
+# var is referenced but not assigned.
+# https://www.shellcheck.net/wiki/SC2154
+disable=SC2154
+
+# Use cd ... || exit in case cd fails.
+# https://www.shellcheck.net/wiki/SC2164
+disable=SC2164
+
+# Consider invoking this command separately to avoid masking its return value (or use '|| true' to ignore).
+# https://www.shellcheck.net/wiki/SC2312
+disable=SC2312

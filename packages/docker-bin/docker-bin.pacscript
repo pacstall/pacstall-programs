@@ -104,10 +104,10 @@ WantedBy=multi-user.target' | tee "${pkgdir}/lib/systemd/system/containerd.servi
 }
 
 post_install() {
-  if [[ -z $(grep docker /etc/group) ]]; then
+  if ! grep -q docker /etc/group; then
     sudo groupadd docker
   fi
-  if [[ -z $(grep docker /etc/group | grep "${PACSTALL_USER}") ]]; then
+  if ! grep docker /etc/group | grep -q "${PACSTALL_USER}"; then
     sudo usermod -aG docker "${PACSTALL_USER}"
   fi
   if [[ -f /bin/systemctl ]]; then
