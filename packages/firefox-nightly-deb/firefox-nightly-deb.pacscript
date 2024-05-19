@@ -1,0 +1,13 @@
+pkgname="firefox-nightly-deb"
+gives="firefox-nightly"
+pkgver="128.0a1"
+arch=('amd64' 'arm64')
+repology=("project: ${gives}")
+replaces=("${gives}" "${gives}-bin")
+source_amd64=("https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-${pkgver}.en-US.linux-x86_64.deb")
+source_arm64=("https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-${pkgver}.en-US.linux-aarch64.deb")
+url='https://www.mozilla.org/en-US/firefox'
+pkgdesc="Free and open-source web browser developed by the Mozilla Foundation (Nightly)"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=("03b7074e998482baec259126a29c17ebabbba51cb13c3e31c25acf3d07789795")
+sha256sums_arm64=("3ac4b58bb74ffe3e4da5783187b8bc1fcc218dccc3656efe0e2660833e41a1b8")
