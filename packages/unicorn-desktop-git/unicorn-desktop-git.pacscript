@@ -1,7 +1,7 @@
 pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="3"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
   "vala-panel-appmenu" "appmenu-gtk2-module" "appmenu-gtk3-module" "xfce4-power-manager"
   "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol"
@@ -9,7 +9,7 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "val
   "dbus-x11" "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa"
   "xserver-xorg-video-fbdev" "light-locker" "light-locker-settings" "tumbler" "tumbler-plugins-extra"
   "ffmpegthumbnailer" "bluez-firmware" "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics"
-  "ukui-touchpadserver" "pipewire-audio" "bluetooth")
+  "ukui-touchpadserver" "pipewire-audio" "bluetooth" "libxfce4ui-utils" "at-spi2-core")
 pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
 gives="unicorn-desktop"
 replaces=("unicorn-mobile" "unicorn-mobile-git")
@@ -23,6 +23,7 @@ build() {
   mkdir -p "${pkgdir}/usr/share/backgrounds"
   mkdir -p "${pkgdir}/usr/share/doc"
   mkdir -p "${pkgdir}/etc/skel/.config"
+  mkdir -p "${pkgdir}/etc/skel/.config/gtk-3.0"
   mkdir -p "${pkgdir}/usr/share/icons"
   mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
   mkdir -p "${pkgdir}/usr/share/applications"
@@ -65,6 +66,7 @@ package() {
   install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
   install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
+  printf ".-vala-panel-appmenu-core > * {\n    min-width: 1440px;\n}\n" | tee "${pkgdir}/etc/skel/.config/gtk-3.0/gtk.css" > /dev/null
 }
 
 post_install() {
@@ -89,4 +91,11 @@ post_install() {
     echo "[keyfile]" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
     echo "unmanaged-devices=none" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
   fi
+  if [[ ! -d "/home/${PACSTALL_USER}/.config/gtk-3.0" ]]; then
+    mkdir -p "/home/${PACSTALL_USER}/.config/gtk-3.0"
+  fi
+  if [[ ! -f "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" ]] || ! grep -q 'vala-panel-appmenu-core' "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css"; then
+    printf ".-vala-panel-appmenu-core > * {\n    min-width: 1440px;\n}\n" | tee -a "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" > /dev/null
+  fi
+  sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/gtk-3.0"
 }
