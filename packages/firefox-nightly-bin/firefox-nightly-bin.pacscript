@@ -32,7 +32,7 @@ StartupNotify=true
 Actions=Private;
 
 [Desktop Action Private]
-Exec=/lib/firefox/firefox --private-window %u
+Exec=/lib/firefox-nightly/firefox --private-window %u
 Name=Open in private mode' | tee "${pkgdir}/usr/share/applications/firefox-nightly.desktop" > /dev/null
   mkdir -p "${pkgdir}/usr/bin"
   ln -sf "/lib/firefox-nightly/firefox-bin" "${pkgdir}/usr/bin/firefox-nightly-bin"
