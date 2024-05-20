@@ -1,7 +1,7 @@
 pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
 pkgver="0.0.1"
-pkgrel="3"
+pkgrel="4"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
   "vala-panel-appmenu" "appmenu-gtk2-module" "appmenu-gtk3-module" "xfce4-power-manager"
   "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol"
@@ -66,7 +66,7 @@ package() {
   install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
   install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
-  printf ".-vala-panel-appmenu-core > * {\n    min-width: 1440px;\n}\n" | tee "${pkgdir}/etc/skel/.config/gtk-3.0/gtk.css" > /dev/null
+  printf ".-vala-panel-appmenu-core > * {\n    min-width: 1430px;\n}\n" | tee "${pkgdir}/etc/skel/.config/gtk-3.0/gtk.css" > /dev/null
 }
 
 post_install() {
@@ -95,7 +95,7 @@ post_install() {
     mkdir -p "/home/${PACSTALL_USER}/.config/gtk-3.0"
   fi
   if [[ ! -f "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" ]] || ! grep -q 'vala-panel-appmenu-core' "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css"; then
-    printf ".-vala-panel-appmenu-core > * {\n    min-width: 1440px;\n}\n" | tee -a "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" > /dev/null
+    printf ".-vala-panel-appmenu-core > * {\n    min-width: 1430px;\n}\n" | tee -a "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" > /dev/null
   fi
   sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/gtk-3.0"
 }
