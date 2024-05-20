@@ -1,13 +1,19 @@
 pkgname="hamclock-big"
 pkgver="4.00"
-pkgrel="2"
-source=("https://github.com/kj7rrv/hamclock/archive/refs/tags/v${pkgver}.tar.gz")
+pkgrel="3"
+source=(
+  "https://github.com/kj7rrv/hamclock/archive/refs/tags/v${pkgver}.tar.gz"
+  "hamclock.desktop"
+)
 url='https://clearskyinstitute.com/ham/HamClock'
 makedepends=("gcc" "make" "pkg-config" "libxau6" "libx11-6" "libx11-dev" "libxcb1")
 breaks=("hamclock" "hamclock-bigger" "hamclock-huge")
 replaces=("hamclock-big")
 pkgdesc="Clock and world map with extra features for amateur radio (1600x960 version)"
-sha256sums=("1def12cf34d3486edb1c4fb0ec7f1a27cc1bda01ca811b6c0fefc68c4c98ab20")
+sha256sums=(
+  "1def12cf34d3486edb1c4fb0ec7f1a27cc1bda01ca811b6c0fefc68c4c98ab20"
+  "df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d"
+)
 maintainer=("Roy Williams <fang64@gmail.com>")
 repology=("project: ${pkgname}")
 
@@ -33,11 +39,6 @@ package() {
   cp hamclock-1600x960 "${pkgdir}/usr/bin/hamclock"
   cp hamclock.png "${pkgdir}/usr/share/icons"
   cp LICENSE "${pkgdir}/usr/share/licenses/${gives}"
-  echo '[Desktop Entry]
-Name=HamClock
-Exec=hamclock
-Icon=/usr/share/icons/hamclock.png
-Terminal=false
-Type=Application
-Categories=HamRadio' | tee "${pkgdir}/usr/share/applications/hamclock.desktop" > /dev/null
+  cp hamclock.desktop "${pkgdir}/usr/share/applications/hamclock.desktop"
+  chmod -x "${pkgdir}/usr/share/applications/hamclock.desktop"
 }
