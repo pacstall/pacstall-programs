@@ -9,8 +9,7 @@ url='https://www.mozilla.org/en-US/firefox'
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation (Nightly)"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('amd64' 'arm64')
-sha256sums_amd64=("b3970b3c6985dbbf0fd98e3576bd31911df42b92943aa4240b422f483f5b0e3e")
-sha256sums_arm64=("313ae984412dc2d6d6977e94209fb3efac75cde120738f8def01f88428b35aa3")
+# builds update daily, so no sha256sums are provided
 
 package() {
   cd "${srcdir}"

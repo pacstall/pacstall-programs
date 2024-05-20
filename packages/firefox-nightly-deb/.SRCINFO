@@ -11,5 +11,3 @@ maintainer = Oren Klopfer <oren@taumoda.com>
 repology = project: firefox-nightly
 source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-128.0a1.en-US.linux-x86_64.deb
 source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-128.0a1.en-US.linux-aarch64.deb
-sha256sums_amd64 = 03b7074e998482baec259126a29c17ebabbba51cb13c3e31c25acf3d07789795
-sha256sums_arm64 = 3ac4b58bb74ffe3e4da5783187b8bc1fcc218dccc3656efe0e2660833e41a1b8
