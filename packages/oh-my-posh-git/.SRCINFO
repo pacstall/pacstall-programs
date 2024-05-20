@@ -7,4 +7,5 @@ makedepends = golang-1.22-go
 pacdeps = nerd-fonts-hack
 breaks = oh-my-posh
 replaces = oh-my-posh
+incompatible = *:bookworm
 maintainer = Zahrun <Zahrun@github.com>

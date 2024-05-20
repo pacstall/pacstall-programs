@@ -8,6 +8,7 @@ breaks=("${gives}")
 replaces=("${gives}")
 pkgdesc="A prompt theme engine for any shell"
 maintainer=("Zahrun <Zahrun@github.com>")
+incompatible=('*:bookworm')
 external_connection=true
 
 
