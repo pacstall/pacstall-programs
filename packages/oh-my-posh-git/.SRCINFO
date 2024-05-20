@@ -1,9 +1,9 @@
 pkgname = oh-my-posh-git
 gives = oh-my-posh
-pkgver = 19.8.2
+pkgver = 20.0.0
 pkgdesc = A prompt theme engine for any shell
 source = https://github.com/JanDeDobbeleer/oh-my-posh.git
-makedepends = golang-1.21-go
+makedepends = golang-1.22-go
 pacdeps = nerd-fonts-hack
 breaks = oh-my-posh
 replaces = oh-my-posh
