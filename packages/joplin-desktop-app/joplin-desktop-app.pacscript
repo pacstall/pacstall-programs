@@ -1,6 +1,6 @@
 pkgname="joplin-desktop-app"
 gives="joplin-desktop"
-pkgver="2.14.20"
+pkgver="2.14.21"
 makedepends=("libfuse2")
 depends=("libfuse2")
 url='https://joplinapp.org/'
@@ -10,7 +10,7 @@ source=(
   "joplin-desktop.png::https://joplinapp.org/images/Icon512.png"
 )
 sha256sums=(
-  "2d53781c72d0a94f3f4739c5ca1b00202af9d1850a9632283bdba5b16f688620"
+  "bcc77e4153abdc8d54f629549e3d5ac7b590dbf7bd60480d560ba7d35dcaab95"
   "SKIP"
 )
 repology=("project: joplin-desktop")
