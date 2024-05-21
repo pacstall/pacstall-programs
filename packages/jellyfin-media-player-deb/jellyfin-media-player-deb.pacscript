@@ -22,7 +22,7 @@ case "${codename}" in
 *)
   #Use Bookworm
   source=("https://github.com/jellyfin/jellyfin-media-player/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64-bookworm.deb")
-  sha256sums=("5cac8cdf9271abb14b3fab637d0ef5bc31415198d009417cfaf087cb4218a3cd")
+  sha256sums=("eb3cb89140cf1ddf8f54c5457fe052d6875b8ec63cbaa6a8f48d4997cfe583f7")
   ;;
 esac
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>")
