@@ -1,5 +1,6 @@
 pkgname = hamclock
 pkgver = 4.00
+pkgrel = 2
 pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
 url = https://clearskyinstitute.com/ham/HamClock
 source = https://github.com/kj7rrv/hamclock/archive/refs/tags/v4.00.tar.gz
