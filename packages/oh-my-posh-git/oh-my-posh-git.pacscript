@@ -1,20 +1,21 @@
 pkgname="oh-my-posh-git"
 gives="oh-my-posh"
 source=("https://github.com/JanDeDobbeleer/oh-my-posh.git")
-pkgver="19.8.2"
-makedepends=("golang-1.21-go")
+pkgver="20.0.0"
+makedepends=("golang-1.22-go")
 pacdeps=("nerd-fonts-hack")
 breaks=("${gives}")
 replaces=("${gives}")
 pkgdesc="A prompt theme engine for any shell"
 maintainer=("Zahrun <Zahrun@github.com>")
 incompatible=('*:bookworm')
+external_connection=true
 
 
 build() {
   cd "${_archive}"
   cd src || exit 1
-  /usr/lib/go-1.21/bin/go build -o "${gives}"
+  /usr/lib/go-1.22/bin/go build -o "${gives}"
 }
 
 package() {
