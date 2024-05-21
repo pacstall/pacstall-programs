@@ -1,11 +1,11 @@
 pkgname = armcord-deb
 gives = armcord
-pkgver = 3.2.6
+pkgver = 3.2.7
 pkgdesc = Custom client designed to enhance your Discord experience while keeping everything lightweight
 arch = arm64
 arch = amd64
-source_arm64 = https://github.com/ArmCord/ArmCord/releases/download/v3.2.6/ArmCord_3.2.6_arm64.deb
-source_amd64 = https://github.com/ArmCord/ArmCord/releases/download/v3.2.6/ArmCord_3.2.6_amd64.deb
+source_arm64 = https://github.com/ArmCord/ArmCord/releases/download/v3.2.7/ArmCord_3.2.7_arm64.deb
+source_amd64 = https://github.com/ArmCord/ArmCord/releases/download/v3.2.7/ArmCord_3.2.7_amd64.deb
 depends = libgtk-3-0
 depends = libnotify4
 depends = libnss3
