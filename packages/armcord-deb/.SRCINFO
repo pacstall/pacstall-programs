@@ -18,4 +18,4 @@ depends = libsecret-1-0
 maintainer = Oren Klopfer <oren@taumoda.com>
 repology = project: armcord
 sha256sums_amd64 = 4c580ef5d773fd2be2e107ee8234d37a3a55fe6fb1735e78f1ca24ce1560c24c
-sha256sums_arm64 = fee936b25a4d175b124d6eb3df5f5883dcb1fece397c93ef250269635d542d5c
+sha256sums_arm64 = 009e13486debcb63f8d2fccad5fb1a5a043f3b4cfdaf7cfcfb4bb14a675d64aa
