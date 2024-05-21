@@ -7,6 +7,7 @@ source = https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.
 breaks = jellyfin-media-player-deb-bin
 breaks = jellyfin-media-player-deb
 breaks = jellyfin-media-player-deb-app
+incompatible = debian:sid
 maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 repology = project: jellyfin-media-player
 sha256sums = 7d8cfb451895c8128729f1a00b28236d4d90e78796bf110384320882ace7c41a
