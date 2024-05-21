@@ -1,10 +1,10 @@
 pkgname = ventoy-bin
 gives = ventoy
-pkgver = 1.0.97
+pkgver = 1.0.98
 pkgdesc = A new bootable USB solution
 url = http://www.ventoy.net
 arch = amd64
-source = https://github.com/ventoy/Ventoy/releases/download/v1.0.97/ventoy-1.0.97-linux.tar.gz
+source = https://github.com/ventoy/Ventoy/releases/download/v1.0.98/ventoy-1.0.98-linux.tar.gz
 source = https://aur.archlinux.org/cgit/aur.git/plain/sanitize.patch?h=ventoy-bin
 source = https://aur.archlinux.org/cgit/aur.git/plain/ventoy?h=ventoy-bin
 source = https://aur.archlinux.org/cgit/aur.git/plain/ventoy-extend-persistent?h=ventoy-bin
@@ -24,7 +24,7 @@ conflicts = ventoy
 provides = ventoy
 license = GPL-3.0-or-later
 maintainer = xdavius <xdavius@github.com>
-sha256sums = 1368a9082c9db25958e5407ef4984322d90d3bb00905337d4bd41678e06c1150
+sha256sums = 263041f6f1bb08db3815ba7a208064229660ee5f60d1ee7cb638739dceceb0bc
 sha256sums = SKIP
 sha256sums = SKIP
 sha256sums = SKIP
