@@ -1,12 +1,12 @@
 pkgname = jellyfin-media-player-deb
 gives = jellyfin-media-player
-pkgver = 1.9.1
+pkgver = 1.10.1
 pkgdesc = Jellyfin desktop client using jellyfin-web with embedded MPV player
 arch = amd64
-source = https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.9.1/jellyfin-media-player_1.9.1-1_amd64-jammy.deb
+source = https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.10.1/jellyfin-media-player_1.10.1-1_amd64-jammy.deb
 breaks = jellyfin-media-player-deb-bin
 breaks = jellyfin-media-player-deb
 breaks = jellyfin-media-player-deb-app
 maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 repology = project: jellyfin-media-player
-sha256sums = 1fcc64c2d24cf9d9f3c9b29416cbdb921c77bf4497d0be9be92af8b372b96c1b
+sha256sums = 7d8cfb451895c8128729f1a00b28236d4d90e78796bf110384320882ace7c41a
