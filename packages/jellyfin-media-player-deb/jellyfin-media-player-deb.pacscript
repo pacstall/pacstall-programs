@@ -3,6 +3,7 @@ gives="jellyfin-media-player"
 pkgver="1.10.1"
 arch=('amd64')
 breaks=("${pkgname}-bin" "${pkgname}" "${pkgname}-app")
+incompatible=("debian:sid")
 pkgdesc="Jellyfin desktop client using jellyfin-web with embedded MPV player"
 codename="${DISTRO#*:}"
 source=("https://github.com/jellyfin/jellyfin-media-player/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64-${codename}.deb")
