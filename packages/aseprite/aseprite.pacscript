@@ -3,70 +3,98 @@
 # Credit to the listed maintainers & contributors
 
 pkgname="aseprite"
-pkgver="1.3.6"
+pkgver="1.3.7"
 pkgdesc="Animated sprite editor & pixel art tool"
+license=("custom:EULA")
 repology=("project: ${pkgname}")
 url="https://www.aseprite.org/"
-makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "libxi-dev" "ninja-build" "xorg-dev")
-depends=("hicolor-icon-theme")
+makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "libx11-dev" "libxcursor-dev" "libxi-dev" "ninja-build")
 arch=("amd64")
 maintainer=("vigress8 <vig@disroot.org>")
 skiaver="m102-861e4743af"
 source=(
-  "https://github.com/${pkgname}/${pkgname}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
-  "https://github.com/${pkgname}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
+  "${pkgname}-${pkgver}.zip::https://github.com/${pkgname}/${pkgname}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
+  "skia-${skiaver}.zip::https://github.com/${pkgname}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
+  "https://github.com/${pkgname}/strings.git"
+  "dont-clone-strings.patch"
+  "fix-build-with-updater-off.patch::https://github.com/aseprite/aseprite/commit/8fce589.patch"
 )
 sha256sums=(
-  "5e974aa2786297981cd5ebe81f040a49b722bddfe33d70def207ad06cb0d34fc"
+  "6524b4dd38adac22f954122846ccca7377983cee2e0f17c1482294cf09cbdcfc"
   "66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
+  "SKIP"
+  "2c260a50aaa194f3d76d287ba8c2229c265c12e64319d15cce8a3db760104345"
+  "31369a5063d5f7839699fea00235b70057b0f2619592ba1db5af6d12c4f1171c"
 )
-noextract=("Skia-Linux-Release-x64-libc++.zip")
+noextract=(
+  "${pkgname}-${pkgver}.zip"
+  "skia-${skiaver}.zip"
+)
 
 prepare() {
-  cd "${_archive}"
-  unzip -qq "${srcdir}/Skia-Linux-Release-x64-libc++.zip" -d skia
+  unzip -qq "${pkgname}-${pkgver}.zip" -d aseprite
+  unzip -qq "skia-${skiaver}.zip" -d skia
+
+  cd aseprite
+  # Avoid connecting to internet to fetch translations
+  patch -sp1 < ../dont-clone-strings.patch
+  rm -rf data/strings
+  mv ../strings data
+
+  # https://github.com/aseprite/aseprite/issues/4486
+  patch -sp1 < ../fix-build-with-updater-off.patch
 }
 
 build() {
-  cd "${_archive}"
-  export CC=clang
-  export CXX=clang++
-  export AR=ar
-  export NM=nm
+  local cmake_flags=(
+    -S aseprite
+    -B build
+    -D CMAKE_BUILD_TYPE=Release
+    -D CMAKE_C_COMPILER=clang
+    -D CMAKE_CXX_COMPILER=clang++
+    -D CMAKE_CXX_FLAGS=-stdlib=libc++
+    -D CMAKE_EXE_LINKER_FLAGS=-stdlib=libc++
+    -D CMAKE_INSTALL_MESSAGE=NEVER
+    # Known to install bogus files which conflict with many packages,
+    # so contain them in a separate place.
+    -D CMAKE_INSTALL_PREFIX=/opt/aseprite
+    -D ENABLE_DESKTOP_INTEGRATION=ON
+    -D ENABLE_PSD=ON
+    -D ENABLE_UPDATER=OFF
+    -D LAF_BACKEND=skia
+    -D LAF_WITH_EXAMPLES=OFF
+    -D LAF_WITH_TESTS=OFF
+    -D SKIA_DIR=skia
+    -D SKIA_LIBRARY_DIR=skia/out/Release-x64
+    -D SKIA_LIBRARY=skia/out/Release-x64/libskia.a
+    -G Ninja
+    -W no-dev
+  )
 
-  # Note: -DUSE_SHARED_* is not used since shared libraries cause headaches. If you wish to use them, copy the line below, choose the libraries you want shared and paste into the option list.
-  # -DUSE_SHARED_{CMARK,CURL,FMT,FREETYPE,GIFLIB,HARFBUZZ,JPEGLIB,LIBARCHIVE,LIBPNG,PIXMAN,TINYXML,WEBP,ZLIB}=YES
-  cmake \
-    -B build \
-    -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-    -DCMAKE_CXX_FLAGS:STRING=-stdlib=libc++ \
-    -DCMAKE_EXE_LINKER_FLAGS:STRING=-stdlib=libc++ \
-    -DCMAKE_INSTALL_MESSAGE=NEVER \
-    -DENABLE_{DESKTOP_INTEGRATION,PSD,SCRIPTING,WEBSOCKET}=ON \
-    -DENABLE_UPDATER=OFF \
-    -DLAF_BACKEND=skia \
-    -DLAF_WITH_{EXAMPLES,TESTS}=OFF \
-    -DSKIA_DIR=skia \
-    -DSKIA_LIBRARY_DIR=skia/out/Release-x64 \
-    -DSKIA_LIBRARY=skia/out/Release-x64/libskia.a \
-    -G Ninja \
-    -Wno-dev
+  cmake "${cmake_flags[@]}"
   cmake --build build -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
-  cmake --install build --prefix="${pkgdir}/usr" --strip
+  DESTDIR="${pkgdir}" cmake --install build --strip
+
+  install -dm644 "${pkgdir}/usr/bin"
+  ln -s "/opt/${pkgname}/bin/${pkgname}" "${pkgdir}/usr/bin"
+
   # Install the icons in the correct directory (which is not the default)
-  local _size
-  for _size in 16 32 48 64 128 256; do
-    install -Dm644 "${pkgdir}/usr/share/${pkgname}/data/icons/ase${_size}.png" \
-    -t "${pkgdir}/usr/share/icons/hicolor/${_size}x${_size}/apps"
+  local dst size src="${pkgdir}/opt/${pkgname}/share/${pkgname}/data/icons"
+  for size in 16 32 48 64 128 256; do
+    dst="${pkgdir}/usr/share/icons/hicolor/${_size}x${_size}"
+    install -Dm644 "${src}/ase${size}.png" "${dst}/apps/${pkgname}.png"
+    install -Dm644 "${src}/doc${size}.png" "${dst}/mimetypes/image-x-${pkgname}.png"
   done
+
   # Delete the icons to avoid copying them in two places (they aren't used by Aseprite itself)
-  rm -rf "${pkgdir}/usr/share/${pkgname}/data/icons"
+  rm -rf "${src}"
+
+  cd aseprite
   # Install the licenses
-  install -Dm644 {EULA.txt,docs/LICENSES.md} -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -Dm644 EULA.txt docs/LICENSES.md -t "${pkgdir}/usr/share/licenses/${pkgname}"
   install -m644 "data/fonts/LICENSE.txt" "${pkgdir}/usr/share/licenses/${pkgname}/font.txt"
 }
 
