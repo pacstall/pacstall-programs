@@ -1,31 +1,29 @@
 pkgname="jellyfin-media-player-deb"
 gives="jellyfin-media-player"
-pkgver="1.9.1"
+pkgver="1.10.1"
 arch=('amd64')
 breaks=("${pkgname}-bin" "${pkgname}" "${pkgname}-app")
+incompatible=("debian:sid")
 pkgdesc="Jellyfin desktop client using jellyfin-web with embedded MPV player"
 codename="${DISTRO#*:}"
 source=("https://github.com/jellyfin/jellyfin-media-player/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64-${codename}.deb")
 case "${codename}" in
-"bookworm")
-  sha256sums=("2eb9856dc6c7a62c5c635391dee8e5fb35bce06d5c6c132241523e4f04ad2416")
+"trixie")
+  sha256sums=("6e0a75bab90d77e6eb18caba074d2057696e1307d33343ae8ef3370f34f0c271")
   ;;
-"bullseye")
-  sha256sums=("5cac8cdf9271abb14b3fab637d0ef5bc31415198d009417cfaf087cb4218a3cd")
-  ;;
-"focal")
-  sha256sums=("208ead4276fca396d15af7e87df31621cad09fea0a58c3fb33d096febf111a28")
+"noble")
+  sha256sums=("84c4c778efa82fba76487848286883c469b18bba6d24a51c6be6c82532676b3f")
   ;;
 "jammy")
-  sha256sums=("1fcc64c2d24cf9d9f3c9b29416cbdb921c77bf4497d0be9be92af8b372b96c1b")
+  sha256sums=("7d8cfb451895c8128729f1a00b28236d4d90e78796bf110384320882ace7c41a")
   ;;
-"kinetic")
-  sha256sums=("ebe627b4db2559f01c7c99f599fc0c5e59097b7ab5e9c168295f513d940a9267")
+"mantic")
+  sha256sums=("cb065679575bc1e43e3e66a623baf33bde9a825ff097832b3b148b381d694827")
   ;;
 *)
-  #Use Bullseye
-  source=("https://github.com/jellyfin/jellyfin-media-player/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64-bullseye.deb")
-  sha256sums=("5cac8cdf9271abb14b3fab637d0ef5bc31415198d009417cfaf087cb4218a3cd")
+  #Use Bookworm
+  source=("https://github.com/jellyfin/jellyfin-media-player/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64-bookworm.deb")
+  sha256sums=("eb3cb89140cf1ddf8f54c5457fe052d6875b8ec63cbaa6a8f48d4997cfe583f7")
   ;;
 esac
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>")
