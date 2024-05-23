@@ -4,10 +4,8 @@ pkgver="3.25.1"
 pkgdesc="CMake data files (modules, templates and documentation)"
 source_bullseye=("http://ftp.debian.org/debian/pool/main/c/cmake/cmake-data_${pkgver}-1~bpo11+1_all.deb")
 sha256sums_bullseye=("6c7c8d91c045ccf44c9cc7dc1f05d8431707df4651bf18b4a3ee34847bc205f3")
-if [[ ${DISTRO#*:} != "bullseye" ]]; then
-  source=("http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake-data_${pkgver}-1ubuntu1_all.deb")
-  sha256sums=("8633c1235e841faa70eb1c58f451338a73048dbddb4d97c482cca92dde61c567")
-fi
-arch=('amd64')
+source_jammy=("http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake-data_${pkgver}-1ubuntu1_all.deb")
+sha256sums_jammy=("8633c1235e841faa70eb1c58f451338a73048dbddb4d97c482cca92dde61c567")
+compatible=("debian:bullseye" "ubuntu:jammy")
 maintainer=("Zahrun <Zahrun@github.com>")
 repology=("project: cmake" "repo: debian_unstable")

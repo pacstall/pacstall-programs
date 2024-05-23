@@ -9,11 +9,16 @@ sha256sums_bookworm=("2f8b3b9a0153499b161866df64e081777f9085c789911817178986d96c
 source_jammy=("https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_12/amd64/fsearch_${pkgver}-1+3.1_amd64.deb")
 sha256sums_jammy=("2f8b3b9a0153499b161866df64e081777f9085c789911817178986d96c220fcb")
 pacdeps_jammy=("libicu-deb")
-if [[ ! "bullseye bookworm jammy" =~ ${DISTRO#*:} ]]; then
-  source=("https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_Unstable/amd64/fsearch_${pkgver}-1+3.15_amd64.deb")
-  sha256sums=("40d5453743c8bca6e15a80b6d4d035594d6629048c98b07c1d30d61a182eebd8")
-fi
-
+source_sid=("https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_Unstable/amd64/fsearch_${pkgver}-1+3.15_amd64.deb")
+sha256sums_sid=("40d5453743c8bca6e15a80b6d4d035594d6629048c98b07c1d30d61a182eebd8")
+source_trixie=("${source_sid[@]}")
+sha256sums_trixie=("${sha256sums_sid[@]}")
+source_mantic=("${source_sid[@]}")
+sha256sums_mantic=("${sha256sums_sid[@]}")
+source_oracular=("${source_sid[@]}")
+sha256sums_oracular=("${sha256sums_sid[@]}")
+source_devel=("${source_sid[@]}")
+sha256sums_devel=("${sha256sums_sid[@]}")
 pkgdesc="FSearch is a fast file search utility, inspired by Everything Search Engine"
 maintainer=("Zahrun <Zahrun@github.com>")
 arch=('amd64')
