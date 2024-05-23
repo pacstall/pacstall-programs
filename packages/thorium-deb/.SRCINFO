@@ -1,12 +1,12 @@
 pkgname = thorium-deb
 gives = thorium-browser
-pkgver = 123.0.6312.133
+pkgver = 124.0.6367.218
 pkgdesc = Chromium fork for linux with extra patches
 arch = arm64
 arch = amd64
 maintainer = Oren Klopfer <oren@taumoda.com>
 repology = project: thorium-browser
-source_amd64 = https://github.com/Alex313031/thorium/releases/download/M123.0.6312.133/thorium-browser_123.0.6312.133_SSE3.deb
-source_arm64 = https://github.com/Alex313031/Thorium-Raspi/releases/download/M123.0.6312.133/thorium-browser_123.0.6312.133_arm64.deb
-sha256sums_amd64 = cbb2d6a1b6a70130242c6a5856c5e07e68a8c4f10e86fb24bf10c82b4dd4a262
-sha256sums_arm64 = f204ee72c949d98e19c71114ea7bf4a0dc19e351bc168050154e26444372c868
+source_amd64 = https://github.com/Alex313031/thorium/releases/download/M124.0.6367.218/thorium-browser_124.0.6367.218_SSE3.deb
+source_arm64 = https://github.com/Alex313031/Thorium-Raspi/releases/download/M124.0.6367.218/thorium-browser_124.0.6367.218_arm64.deb
+sha256sums_amd64 = 5917f059c3329b430fbefdd34ec66054b4181a745d8350e4cfe66edc3f7b1e30
+sha256sums_arm64 = a9eb0bd82f72df902d9085a28b59838d46eda3735e0b5d597faed24fd139a30a

@@ -1,10 +1,10 @@
 pkgname="thorium-deb"
 gives="thorium-browser"
-pkgver="123.0.6312.133"
+pkgver="124.0.6367.218"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("f204ee72c949d98e19c71114ea7bf4a0dc19e351bc168050154e26444372c868")
+sha256sums_arm64=("a9eb0bd82f72df902d9085a28b59838d46eda3735e0b5d597faed24fd139a30a")
 source_arm64=("https://github.com/Alex313031/Thorium-Raspi/releases/download/M${pkgver}/${gives}_${pkgver}_arm64.deb")
-sha256sums_amd64=("cbb2d6a1b6a70130242c6a5856c5e07e68a8c4f10e86fb24bf10c82b4dd4a262")
+sha256sums_amd64=("5917f059c3329b430fbefdd34ec66054b4181a745d8350e4cfe66edc3f7b1e30")
 source_amd64=("https://github.com/Alex313031/thorium/releases/download/M${pkgver}/${gives}_${pkgver}_SSE3.deb")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Chromium fork for linux with extra patches"
