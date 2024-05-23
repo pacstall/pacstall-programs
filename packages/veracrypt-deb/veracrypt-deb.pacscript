@@ -3,18 +3,26 @@ repology=("project: veracrypt")
 gives="veracrypt"
 breaks=("${gives}" "${gives}-console" "${gives}-git")
 pkgver="1.26.7"
-# shellcheck disable=SC2153
-case "${DISTRO#*:}" in
-  "jammy")
-    distro="Ubuntu-22.04"
-    sha256sums=("f0dca101cf5b5eccfadaad3f53aea037fd5a01cd9afeb7248ddcca28b821a0ef")
-    ;;
-  *)
-    distro="Ubuntu-23.04"
-    sha256sums=("fadb9116aba042d8d8b087c280e5b02798ac3d2f400d1d94bd791587245329d2")
-    ;;
-esac
-source=("https://launchpad.net/veracrypt/trunk/${pkgver}/+download/veracrypt-${pkgver}-${distro}-amd64.deb")
+source_jammy=("https://launchpad.net/veracrypt/trunk/${pkgver}/+download/veracrypt-${pkgver}-Ubuntu-22.04-amd64.deb")
+sha256sums_jammy=("f0dca101cf5b5eccfadaad3f53aea037fd5a01cd9afeb7248ddcca28b821a0ef")
+source_lunar=("https://launchpad.net/veracrypt/trunk/${pkgver}/+download/veracrypt-${pkgver}-Ubuntu-23.04-amd64.deb")
+sha256sums_lunar=("fadb9116aba042d8d8b087c280e5b02798ac3d2f400d1d94bd791587245329d2")
+source_mantic=("${source_lunar[@]}")
+sha256sums_mantic=("${sha256sums_lunar[@]}")
+source_noble=("${source_lunar[@]}")
+sha256sums_noble=("${sha256sums_lunar[@]}")
+source_oracular=("${source_lunar[@]}")
+sha256sums_oracular=("${sha256sums_lunar[@]}")
+source_bullseye=("${source_lunar[@]}")
+sha256sums_bullseye=("${sha256sums_lunar[@]}")
+source_bookworm=("${source_lunar[@]}")
+sha256sums_bookworm=("${sha256sums_lunar[@]}")
+source_trixie=("${source_lunar[@]}")
+sha256sums_trixe=("${sha256sums_lunar[@]}")
+source_sid=("${source_lunar[@]}")
+sha256sums_sid=("${sha256sums_lunar[@]}")
+source_devel=("${source_lunar[@]}")
+sha256sums_devel=("${sha256sums_lunar[@]}")
 pkgdesc="VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux"
 arch=('amd64')
 maintainer=("Zahrun <Zahrun@github.com>")

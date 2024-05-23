@@ -11,3 +11,7 @@ incompatible = ubuntu:noble
 incompatible = ubuntu:devel
 maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 repology = project: virtualbox-7.0
+source_ubuntu = https://download.virtualbox.org/virtualbox/7.0.18/virtualbox-7.0_7.0.18-162988~Ubuntu~jammy_amd64.deb
+source_bookworm = https://download.virtualbox.org/virtualbox/7.0.18/virtualbox-7.0_7.0.18-162988~Debian~bookworm_amd64.deb
+sha256sums_ubuntu = 9676421d588478d389d87dbc29bc0a259163c061ae9bd763e43ff807650bf9b6
+sha256sums_bookworm = a8a65f3b77ace18abf48440859ba0fcfe33cba02d745ab7f12eb19fc18338298
