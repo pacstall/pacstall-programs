@@ -1,15 +1,14 @@
-pkgname="hamclock"
+pkgname="hamclock-bigger"
 pkgver="4.00"
-pkgrel="2"
 source=(
   "https://github.com/kj7rrv/hamclock/archive/refs/tags/v${pkgver}.tar.gz"
   "hamclock.desktop"
 )
 url='https://clearskyinstitute.com/ham/HamClock'
 makedepends=("gcc" "make" "pkg-config" "libxau6" "libx11-6" "libx11-dev" "libxcb1")
-breaks=("hamclock-big" "hamclock-bigger" "hamclock-huge")
-replaces=("hamclock")
-pkgdesc="Clock and world map with extra features for amateur radio (800x480 version)"
+breaks=("hamclock" "hamclock-big" "hamclock-huge")
+replaces=("hamclock-bigger")
+pkgdesc="Clock and world map with extra features for amateur radio (2400x1440 version)"
 sha256sums=(
   "1def12cf34d3486edb1c4fb0ec7f1a27cc1bda01ca811b6c0fefc68c4c98ab20"
   "df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d"
@@ -30,13 +29,13 @@ prepare() {
 
 build() {
   cd "hamclock-${pkgver}/ESPHamClock"
-  make -j"${NCPU}" hamclock-800x480
+  make -j"${NCPU}" hamclock-2400x1440
 }
 
 package() {
   cd "hamclock-${pkgver}/ESPHamClock"
   mkdir -p "${pkgdir}/usr/bin" "${pkgdir}/usr/share/applications" "${pkgdir}/usr/share/icons" "${pkgdir}/usr/share/licenses/${gives}/"
-  cp hamclock-800x480 "${pkgdir}/usr/bin/hamclock"
+  cp hamclock-2400x1440 "${pkgdir}/usr/bin/hamclock"
   cp hamclock.png "${pkgdir}/usr/share/icons"
   cp LICENSE "${pkgdir}/usr/share/licenses/${gives}"
   cp hamclock.desktop "${pkgdir}/usr/share/applications/hamclock.desktop"
