@@ -42,7 +42,7 @@ function vars.srcinfo() {
 }
 
 function gen.srcinfo() {
-  local CARCH='CARCH_REPLACE' DISTRO='ubuntu:jammy' var ar aars bar ars rar
+  local CARCH='CARCH_REPLACE' DISTRO='DISTROBASE:DISTROVER' var ar aars bar ars rar
   # shellcheck disable=SC1090
   source "${1}"
   for var in "${allvars[@]}"; do

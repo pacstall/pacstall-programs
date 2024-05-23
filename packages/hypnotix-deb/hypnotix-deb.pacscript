@@ -2,12 +2,7 @@ pkgname="hypnotix-deb"
 gives="hypnotix"
 repology=("project: ${gives}")
 pacdeps=("gir1.2-xapp-1.0-deb" "circle-flags-svg-deb")
-case "${DISTRO#*:}" in
-  bullseye | bookworm | trixie)
-    pacdeps=("gir1.2-xapp-1.0-deb" "circle-flags-svg-deb" "python3-imdbpy-deb")
-    ;;
-  *) ;;
-esac
+pacdeps_debian=("python3-imdbpy-deb")
 pkgver="4.3"
 sha256sums=("129f9fd5032252cebbd81a6ea8da4f61dc6bd4d9072dede430bfca8e67451361")
 source=("http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_${pkgver}_all.deb")
