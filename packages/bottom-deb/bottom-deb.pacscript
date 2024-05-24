@@ -1,0 +1,14 @@
+pkgname="bottom-deb"
+gives="bottom"
+arch=('amd64' 'arm64' 'armhf')
+repology=("project: ${gives}")
+pkgver="0.9.6"
+url='https://clementtsang.github.io/bottom'
+source=("https://github.com/ClementTsang/${gives}/releases/download/${pkgver}/${gives}_${pkgver}_${CARCH}.deb")
+breaks=("${gives}-git" "${gives}-bin")
+replaces=("${gives}")
+pkgdesc="A customizable cross-platform graphical process/system monitor for the terminal"
+sha256sums_amd64=("34a095029d5c74ee577e2ceb01044a5361c8622f89cdcd24784d2fdfeeb92a53")
+sha256sums_armhf=("f5a621b23392ba41f89376ee75aa7e2e5ed83069ea19b2ab25209ef5a28c1ccc")
+sha256sums_arm64=("e7f86573271cb0b17579827de0093d91b9805fa2e3a137b23767059e1c0d9c75")
+maintainer="Nezred <jmnezred@pm.me>"
