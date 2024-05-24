@@ -3,6 +3,7 @@ _gives=lunarclient
 pkgname="${_gives}-app"
 repology=("project: lunar-client")
 pkgver="3.2.4"
+pkgrel="2"
 arch=("amd64")
 pkgdesc="PvP modpack for all modern versions of Minecraft"
 url='https://lunarclient.com'
@@ -19,7 +20,7 @@ source=(
 sha256sums=(
   'aae0a052ce84c2f88d7ffaa36af3d794502202b79095353fd5f2de548a639a01'
   '28d489d41431bdaa784342a227abdfbbb525bbe831f98d34747ec557b6e02f05'
-  '419c6bcea780a9cc735fec2ea956f67978bb8d82e321e074c36754f61baa36b8'
+  'SKIP'
 )
 
 build() {

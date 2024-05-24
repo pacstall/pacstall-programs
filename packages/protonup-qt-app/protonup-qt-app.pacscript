@@ -21,7 +21,7 @@ package() {
   echo "[Desktop Entry]
 Name=ProtonUp-Qt
 Icon=${gives}
-Exec=${gives}
+Exec=env APPIMAGELAUNCHER_DISABLE=1 ${gives}
 Type=Application
 Categories=Game;Utility;
 Terminal=false

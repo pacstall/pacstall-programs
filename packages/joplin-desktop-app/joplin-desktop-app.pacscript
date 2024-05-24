@@ -1,6 +1,7 @@
 pkgname="joplin-desktop-app"
 gives="joplin-desktop"
 pkgver="2.14.22"
+pkgrel="2"
 makedepends=("libfuse2")
 depends=("libfuse2")
 url='https://joplinapp.org/'
@@ -26,7 +27,7 @@ package() {
     Encoding=UTF-8
     Name=Joplin
     Comment=Joplin for Desktop
-    Exec=joplin-desktop %u
+    Exec=env APPIMAGELAUNCHER_DISABLE=1 joplin-desktop %u
     Icon=joplin-desktop
     StartupWMClass=Joplin
     Type=Application
