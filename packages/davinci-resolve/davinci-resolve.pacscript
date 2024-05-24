@@ -233,7 +233,7 @@ get_resolveurl() {
 	{
 	  "firstname": "Pacstall",
 	  "lastname": "Linux",
-	  "email": "someone@pacstall.dev",
+	  "email": "pacstall@pm.me",
 	  "phone": "202-555-0194",
 	  "country": "us",
 	  "street": "Bowery 146",
