@@ -8,5 +8,5 @@ maintainer=("Wildy Sheverando <wildy@wildyverando.com>")
 
 package() {
   cd "${_archive}"
-  install -Dm755 "wgcf_${pkgver}_linux_amd64" "/usr/bin/wgcf"
+  install -Dm755 "wgcf_${pkgver}_linux_amd64" "${pkgdir}/usr/bin/wgcf"
 }
