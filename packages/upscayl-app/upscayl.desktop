@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Upscayl
-Exec=upscayl
+Exec=env APPIMAGELAUNCHER_DISABLE=1 upscayl
 Terminal=false
 Type=Application
 Icon=upscayl

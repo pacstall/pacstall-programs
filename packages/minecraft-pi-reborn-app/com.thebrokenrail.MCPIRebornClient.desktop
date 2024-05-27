@@ -4,7 +4,7 @@ Comment=Fun with Blocks
 Icon=com.thebrokenrail.MCPIRebornClient
 StartupNotify=false
 StartupWMClass=Minecraft: Pi Edition: Reborn
-Exec=minecraft-pi-reborn-client
+Exec=env APPIMAGELAUNCHER_DISABLE=1 minecraft-pi-reborn-client
 Terminal=false
 Type=Application
 Categories=Game;

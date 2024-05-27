@@ -1,6 +1,7 @@
 pkgname = bazecor-app
 gives = bazecor
 pkgver = 1.3.11
+pkgrel = 2
 pkgdesc = Bazecor is the graphical configurator for the Dygma Raise
 arch = amd64
 source = https://github.com/Dygmalab/Bazecor/releases/download/v1.3.11/Bazecor-1.3.11-x64.AppImage

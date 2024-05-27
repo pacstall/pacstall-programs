@@ -2,7 +2,7 @@
 Version=1.0
 Name=Tutanota
 GenericName=Email Client
-Exec=/usr/bin/tutanota
+Exec=env APPIMAGELAUNCHER_DISABLE=1 /usr/bin/tutanota
 Icon=tutanota
 Terminal=false
 X-MultipleArgs=false

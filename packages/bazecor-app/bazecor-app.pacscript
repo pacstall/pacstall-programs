@@ -1,6 +1,7 @@
 pkgname="bazecor-app"
 gives="bazecor"
 pkgver="1.3.11"
+pkgrel="2"
 pkgdesc="Bazecor is the graphical configurator for the Dygma Raise"
 source=(
   "https://github.com/Dygmalab/Bazecor/releases/download/v${pkgver}/Bazecor-${pkgver}-x64.AppImage"
@@ -21,7 +22,7 @@ package() {
   mkdir -p "${pkgdir}/usr/share/icons/hicolor/256x256/apps/" "${pkgdir}/usr/share/applications/"
   echo "[Desktop Entry]
 Name=Bazecor
-Exec=bazecor %U
+Exec=env APPIMAGELAUNCHER_DISABLE=1 bazecor --no-sandbox %U
 Terminal=false
 Type=Application
 Icon=bazecor

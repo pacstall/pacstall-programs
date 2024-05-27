@@ -1,6 +1,7 @@
 pkgname = joplin-desktop-app
 gives = joplin-desktop
 pkgver = 2.14.22
+pkgrel = 2
 pkgdesc = Joplin - the secure note taking and to-do app with synchronisation capabilities for Windows, macOS, Linux, Android and iOS
 url = https://joplinapp.org/
 arch = amd64

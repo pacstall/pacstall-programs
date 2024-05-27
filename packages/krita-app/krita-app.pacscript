@@ -25,5 +25,5 @@ package() {
     Name=Krita
     Icon=krita
     Type=Application
-    Exec=/usr/bin/krita" | tee "${pkgdir}/usr/share/applications/krita.desktop" > /dev/null
+    Exec=env APPIMAGELAUNCHER_DISABLE=1 /usr/bin/krita %U" | tee "${pkgdir}/usr/share/applications/krita.desktop" > /dev/null
 }
