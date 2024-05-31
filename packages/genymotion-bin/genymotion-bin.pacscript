@@ -1,35 +1,32 @@
 pkgname="genymotion-bin"
 gives="genymotion"
-repology=("project: genymotion")
+repology=("project: ${gives}")
 pkgver="3.6.0"
 replaces=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
 arch=("amd64")
 sha256sums=("092d40f6e76de3b6e1827609aaa9021b7cf85da3d51e6cf8d7b553b18d9c70e0")
-source=("https://dl.genymotion.com/releases/genymotion-${pkgver}/genymotion-${pkgver}-linux_x64.bin")
-url="https://genymotion.com"
+source=("https://dl.${gives}.com/releases/${gives}-${pkgver}/${gives}-${pkgver}-linux_x64.bin")
+url="https://${gives}.com"
 pkgdesc="Android virtual devices"
 maintainer=("Arrowsome <ramtintoosi@gmail.com>")
-
-_GENYMOTION_FILE="./genymotion-${pkgver}-linux_x64.bin"
-_GENYMOTION_INSTALLDIR="${pkgdir}/opt/genymotion"
 
 prepare() {
   cd "${_archive}"
   rm -rf "/opt/${gives}"
-  mkdir -p "${_GENYMOTION_INSTALLDIR}"
+  mkdir -p "${pkgdir}/opt/${gives}"
 
-  chmod +x "${_GENYMOTION_FILE}"
+  chmod +x "./${gives}-${pkgver}-linux_x64.bin"
 }
 
 package() {
   cd "${_archive}"
   # Retrieve line number where tar.bzip2 binary begins
   local skip
-  skip=$(awk "/^__TARFILE_FOLLOWS__/ { print NR + 1; exit 0; }" "${_GENYMOTION_FILE}")
+  skip=$(awk "/^__TARFILE_FOLLOWS__/ { print NR + 1; exit 0; }" "./${gives}-${pkgver}-linux_x64.bin")
 
   # Untar following archive
-  if ! tail -n +"${skip}" "${_GENYMOTION_FILE}" | tar -xj --no-same-owner -C "${_GENYMOTION_INSTALLDIR}"; then
+  if ! tail -n +"${skip}" "./${gives}-${pkgver}-linux_x64.bin" | tar -xj --no-same-owner -C "${pkgdir}/opt/${gives}"; then
     return 1
   fi
 
@@ -39,8 +36,8 @@ Type=Application
 Version=1.0
 Name=Genymotion
 Comment=Virtual environment for Android.
-Exec=/opt/genymotion/genymotion
-Icon=/opt/genymotion/icons/genymotion-logo.png
+Exec=/opt/${gives}/${gives}
+Icon=/opt/${gives}/icons/${gives}-logo.png
 Terminal=false
 Categories=Development;
 END
