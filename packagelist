@@ -87,6 +87,7 @@ doas-git
 docker-bin
 docker-buildx-plugin-bin
 docker-compose-plugin-bin
+dolphin-emu-git
 dotdrop
 drawio-desktop-deb
 dropbox-deb
