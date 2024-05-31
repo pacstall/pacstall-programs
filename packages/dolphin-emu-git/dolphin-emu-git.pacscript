@@ -13,7 +13,7 @@ build() {
   cmake -S dolphin-emu -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=None \
     -DCMAKE_INSTALL_PREFIX=/usr \
-    -DDISTRIBUTOR=archlinux.org \
+    -DDISTRIBUTOR=Pacstall \
     -DENABLE_ANALYTICS=OFF \
     -DENABLE_AUTOUPDATE=OFF \
     -DENABLE_LTO=ON \
