@@ -14,8 +14,8 @@ repology=("project: hyprland")
 
 package() {
   cd "${_archive}"
-    install -Dm755 ./Hyprland ./hyprctl ./hyprpm -t "${pkgdir}/usr/bin/"
-    install -Dm644 ./assets/*.png ./example/hyprland.conf -t "${pkgdir}/usr/share/hyprland/"
-    install -Dm644 ./example/hyprland.desktop "${pkgdir}/usr/share/wayland-sessions/hyprland.desktop"
-    install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/hyprland/"
+  install -Dm755 ./Hyprland ./hyprctl ./hyprpm -t "${pkgdir}/usr/bin/"
+  install -Dm644 ./assets/*.png ./example/hyprland.conf -t "${pkgdir}/usr/share/hyprland/"
+  install -Dm644 ./example/hyprland.desktop "${pkgdir}/usr/share/wayland-sessions/hyprland.desktop"
+  install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/hyprland/"
 }

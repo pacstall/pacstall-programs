@@ -36,7 +36,7 @@ prepare() {
   # Decompress tools
   pushd tool/"x86_64"
   for file in ./*.xz; do
-    xzcat "${file}" >"${file%.xz}"
+    xzcat "${file}" > "${file%.xz}"
     chmod +x "${file%.xz}"
   done
 
@@ -45,7 +45,7 @@ prepare() {
   popd
 
   # Apply sanitize patch
-  patch --verbose -p0 <"${srcdir}/sanitize.patch"
+  patch --verbose -p0 < "${srcdir}/sanitize.patch"
 
   # Log location
   sed -i 's|log\.txt|/var/log/ventoy.log|g' WebUI/static/js/languages.js tool/languages.json

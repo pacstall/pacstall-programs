@@ -10,7 +10,7 @@ maintainer=("smokeythemonkey <smokeythemonkey@posteo.net>")
 
 package() {
   chmod +x "${gives}"
-  ./"${gives}" --appimage-extract usr/share >/dev/null
+  ./"${gives}" --appimage-extract usr/share > /dev/null
   mkdir -p "${pkgdir}"/usr/{bin,share}
 
   # Duplicate .desktop file

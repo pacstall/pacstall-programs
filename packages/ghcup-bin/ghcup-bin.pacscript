@@ -35,7 +35,7 @@ _install_completion() {
 
 post_install() {
   fancy_message info
-  cat <<'EOM'
+  cat << 'EOM'
 ghcup requires $GHCUP_INSTALL_BASE_PREFIX/.ghcup/bin to be in your PATH.
 By default, $GHCUP_INSTALL_BASE_PREFIX == $HOME.
 Alternatively, when GHCUP_USE_XDG_DIRS is set, ghcup uses XDG-style directories.

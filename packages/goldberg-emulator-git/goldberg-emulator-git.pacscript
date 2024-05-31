@@ -36,17 +36,17 @@ prepare() {
 build() {
   export PS4='+ '
   # Build 32-bit protobuf, since the deb conflicts with the 64-bit one.
-  >/dev/null pushd "${srcdir}/protobuf"
-    ./autogen.sh
-    ./configure \
-      CC="gcc -m32" \
-      CXX="g++ -m32"  \
-      {CPPFLAGS,CXXFLAGS}="-fPIC -Ofast" \
-      --prefix="${PWD}/prefix_x86/" \
-      --disable-shared \
-      --enable-static
-    make -j"${NCPU}" install clean
-  >/dev/null popd
+  pushd > /dev/null "${srcdir}/protobuf"
+  ./autogen.sh
+  ./configure \
+    CC="gcc -m32" \
+    CXX="g++ -m32" \
+    {CPPFLAGS,CXXFLAGS}="-fPIC -Ofast" \
+    --prefix="${PWD}/prefix_x86/" \
+    --disable-shared \
+    --enable-static
+  make -j"${NCPU}" install clean
+  popd > /dev/null
 
   cd "${srcdir}/${gives}"
   sh -x build_steamos.sh
@@ -67,7 +67,7 @@ package() {
   cp -r README.md files_example \
     "${pkgdir}/usr/share/doc/${gives}/"
   cp sdk_includes/*.h \
-		"${pkgdir}/usr/include/${gives}/steam/"
+    "${pkgdir}/usr/include/${gives}/steam/"
 
   install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${gives}"
 

@@ -10,7 +10,6 @@ fi
 pkgdesc="Custom launcher for Minecraft"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
-
 build() {
   cd "${_archive}"
   cmake -S . -B build -G Ninja \

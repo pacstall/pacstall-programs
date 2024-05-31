@@ -1,7 +1,7 @@
 pkgname='xdg-ninja-git'
 gives='xdg-ninja'
 pkgver='0.2.0.2'
-pkgdesc="A shell script which checks your \$HOME for unwanted files and directories."
+pkgdesc='A shell script which checks your $HOME for unwanted files and directories.'
 url="https://github.com/b3nj5m1n/${gives}"
 license=('MIT')
 depends=('jq')

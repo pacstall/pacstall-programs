@@ -11,7 +11,6 @@ maintainer=("Zahrun <Zahrun@github.com>")
 incompatible=('*:bookworm')
 external_connection=true
 
-
 build() {
   cd "${_archive}"
   cd src || exit 1

@@ -15,7 +15,7 @@ package() {
   cd "${_archive}"
   chmod +x "${appimage}"
   ./"${appimage}" --appimage-extract "${gives}.desktop" &> /dev/null
-  ./"${appimage}" --appimage-extract "${gives}.svg"     &> /dev/null
+  ./"${appimage}" --appimage-extract "${gives}.svg" &> /dev/null
 
   install -Dm755 "${appimage}" "${pkgdir}/usr/bin/${gives}"
   install -Dm644 "squashfs-root/${gives}.desktop" -t "${pkgdir}/usr/share/applications"

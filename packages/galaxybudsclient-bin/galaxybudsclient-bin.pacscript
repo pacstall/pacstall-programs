@@ -29,7 +29,6 @@ sha256sums_armhf=(
   "SKIP"
 )
 
-
 package() {
   cd "${_archive}"
   # Install icon

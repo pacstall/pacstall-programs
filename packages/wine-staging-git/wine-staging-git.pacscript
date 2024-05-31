@@ -59,8 +59,8 @@ prepare() {
 
   # restore the wine tree to its git origin state, without wine-staging patches
   printf '%s\n' '  -> Cleaning wine source code tree...'
-  git -C wine reset --hard HEAD  # restore tracked files
-  git -C wine clean -xdf         # delete untracked files
+  git -C wine reset --hard HEAD # restore tracked files
+  git -C wine clean -xdf        # delete untracked files
 
   # change back to the wine upstream commit that this version of wine-staging is based in
   printf '%s\n' '  -> Changing wine HEAD to the wine-staging base commit...'

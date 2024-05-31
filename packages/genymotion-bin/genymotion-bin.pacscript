@@ -33,7 +33,7 @@ package() {
     return 1
   fi
 
-    install -Dm644 "/dev/stdin" "${pkgdir}/usr/share/applications/${gives}.desktop" <<- END
+  install -Dm644 "/dev/stdin" "${pkgdir}/usr/share/applications/${gives}.desktop" <<- END
 [Desktop Entry]
 Type=Application
 Version=1.0

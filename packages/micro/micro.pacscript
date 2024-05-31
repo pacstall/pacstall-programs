@@ -6,7 +6,7 @@ source=("https://github.com/zyedidia/micro/releases/download/v${pkgver}/micro-${
 replaces=("micro")
 sha256sums=("a50e405d3d09d58f6b2c182429c18537a05f317dc0c3c9cb834b3271362e4781")
 optdepends=("xclip: system clipboard support (X11)"
-            "wl-clipboard: system clipboard support (Wayland)")
+  "wl-clipboard: system clipboard support (Wayland)")
 repology=("project: ${pkgname}")
 
 package() {

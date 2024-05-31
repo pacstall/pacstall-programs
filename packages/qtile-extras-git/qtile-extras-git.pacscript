@@ -24,7 +24,6 @@ package() {
   pip3 install qtile_extras*.whl "${pyhack[@]}"
 }
 
-
 post_remove() {
   sudo pip3 uninstall "${gives}" "${pyhack[@]}" -y
 }
