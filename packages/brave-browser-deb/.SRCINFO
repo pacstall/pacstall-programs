@@ -1,14 +1,14 @@
 pkgname = brave-browser-deb
 gives = brave-browser
-pkgver = 1.64.122
+pkgver = 1.66.118
 pkgdesc = Release version of world's most unique, privacy friendly web browser
 url = https://brave.com/
 arch = amd64
-source = https://github.com/brave/brave-browser/releases/download/v1.64.122/brave-browser_1.64.122_amd64.deb
+source = https://github.com/brave/brave-browser/releases/download/v1.66.118/brave-browser_1.66.118_amd64.deb
 pacdeps = brave-keyring-deb
 breaks = brave-browser-bin
 breaks = brave-browser-git
 breaks = brave-browser-app
 maintainer = Elsie19 <elsie19@pm.me>
 repology = project: brave
-sha256sums = f6d4a83a7f5719b5ff6fc9fdbc3f479a98b6ea3ce65152689a80857522686a85
+sha256sums = afb96910ec4408ea89db75f14c7a92cba2a1c8d3d1c0e92e26f9d952eb813789
