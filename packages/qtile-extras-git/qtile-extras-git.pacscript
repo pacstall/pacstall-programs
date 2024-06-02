@@ -10,7 +10,7 @@ external_connection="true"
 
 build() {
   cd "${_archive}"
-  modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
+  modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "oracular" "trixie" "testing" "unstable")
   for mod in "${modern[@]}"; do
     [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")
   done
@@ -21,9 +21,17 @@ build() {
 
 package() {
   cd "${_archive}"
+  modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "oracular" "trixie" "testing" "unstable")
+  for mod in "${modern[@]}"; do
+    [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")
+  done
   pip3 install qtile_extras*.whl "${pyhack[@]}"
 }
 
 post_remove() {
+  modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "oracular" "trixie" "testing" "unstable")
+  for mod in "${modern[@]}"; do
+    [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")
+  done
   sudo pip3 uninstall "${gives}" "${pyhack[@]}" -y
 }
