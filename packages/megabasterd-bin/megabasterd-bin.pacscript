@@ -19,12 +19,12 @@ package() {
   cd "${_archive}"
   install -Dm644 "MegaBasterd_${pkgver}.jar" "${pkgdir}/usr/share/java/${gives}/${gives}.jar"
 
-  cat <<-END > "${gives}"
+  cat <<- END > "${gives}"
   #!/usr/bin/env bash
   java -jar /usr/share/java/${gives}/${gives}.jar "$@"
 END
 
-  cat <<-END > "${gives}.desktop"
+  cat <<- END > "${gives}.desktop"
   [Desktop Entry]
   Type=Application
   Name=MegaBasterd

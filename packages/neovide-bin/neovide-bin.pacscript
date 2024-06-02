@@ -17,10 +17,10 @@ source=(
   "https://github.com/neovide/neovide/releases/download/${pkgver}/neovide-linux-x86_64.tar.gz"
   "${gives}.desktop::https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}.desktop"
   "LICENSE::https://raw.githubusercontent.com/neovide/neovide/${pkgver}/LICENSE"
-"https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}-16x16.png"
-"https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}-32x32.png"
-"https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}-48x48.png"
-"https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}-256x256.png"
+  "https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}-16x16.png"
+  "https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}-32x32.png"
+  "https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}-48x48.png"
+  "https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}-256x256.png"
 )
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 sha256sums=(

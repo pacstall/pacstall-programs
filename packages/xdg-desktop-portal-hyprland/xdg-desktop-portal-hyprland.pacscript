@@ -12,12 +12,12 @@ pacdeps=("hyprlang")
 depends=("pipewire" "xdg-desktop-portal" "grim" "slurp")
 makedepends=("cmake" "pkg-config" "meson" "ninja-build" "scdoc" "wayland-utils" "wayland-protocols" "libgbm-dev" "libinih-dev" "uuid-dev" "qt6-base-dev" "qt6-wayland-dev" "libpipewire-0.3-dev" "libsdbus-c++-dev" "libsdbus-c++-bin" "libdrm-dev")
 optdepends=('grim: required for the screenshot portal to function'
-            'slurp: support for interactive mode for the screenshot portal')
+  'slurp: support for interactive mode for the screenshot portal')
 _archive="${pkgname}-${pkgver}"
 source=("${url}/archive/v${pkgver}/${_archive}.tar.gz"
-        "https://github.com/hyprwm/hyprland-protocols/archive/${_protocolver}.tar.gz")
+  "https://github.com/hyprwm/hyprland-protocols/archive/${_protocolver}.tar.gz")
 sha256sums=('60b390f326b84cc52657b735e3d7ba8f03aa3363672100dba47580984491611f'
-            '5f6be4d870e94314f05ec7ff9c9c1f028748230ff80a7f89aeaf66c08e5c70e0')
+  '5f6be4d870e94314f05ec7ff9c9c1f028748230ff80a7f89aeaf66c08e5c70e0')
 
 prepare() {
   cd "${_archive}/subprojects"

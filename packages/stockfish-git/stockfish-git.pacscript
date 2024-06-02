@@ -7,7 +7,7 @@ maintainer=("pythoncrazy <encryptprogramming@gmail.com>")
 pkgver="0.0.1"
 breaks=("stockfish-git")
 
-build(){
+build() {
   cd src
   make -j"${NCPU}" profile-build
 }

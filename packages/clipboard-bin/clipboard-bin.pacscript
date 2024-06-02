@@ -20,7 +20,6 @@ sha256sums_armhf=("7654d6f5176e554ed86d84f16924b2ec3d7a7e0000f24a43ee6772397b986
 sha256sums_ppc64el=("a7c2c689a777d57fe6638a469c408753d1b4d5d61c8fecd141a4781f54a24e7a")
 sha256sums_riscv64=("e92f2c4eeeefd093d25f91f186c1c3ac572ea254369fe7028928246d431407c8")
 
-
 package() {
   cd "${_archive}"
   if [[ ${CARCH} == "amd64" ]]; then

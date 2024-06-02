@@ -23,7 +23,7 @@ repos:
     rev: v3.7.0.1
     hooks:
       - id: shfmt
-        args: ["-i", "2", "-bn", "-ci", "-sr", "-s"]
+        args: ["-i", "2", "-bn", "-ci", "-sr", "-s", "-w"]
         types: []
         exclude: |
           (?x)^(
