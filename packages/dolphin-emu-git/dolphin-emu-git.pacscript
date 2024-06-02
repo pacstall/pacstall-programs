@@ -6,7 +6,7 @@ makedepends=("build-essential" "ninja-build" "cmake" "ffmpeg" "libavcodec-dev" "
 depends=("${makedepends[@]}")
 pkgver="5.0"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-pkgdesc='Dolphin is an emulator for running GameCube and Wii games'
+pkgdesc='An emulator for running GameCube and Wii games'
 license=('GPL-2.0-or-later')
 
 build() {
