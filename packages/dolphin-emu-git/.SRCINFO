@@ -1,7 +1,7 @@
 pkgname = dolphin-emu-git
 gives = dolphin-emu
 pkgver = 5.0
-pkgdesc = Dolphin is an emulator for running GameCube and Wii games
+pkgdesc = An emulator for running GameCube and Wii games
 url = https://dolphin-emu.org
 source = dolphin-emu::https://github.com/dolphin-emu/dolphin.git
 depends = build-essential
