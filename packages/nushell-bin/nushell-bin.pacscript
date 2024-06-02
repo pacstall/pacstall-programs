@@ -10,13 +10,13 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="nushell-bin"
 fake_gives="nushell"
-pkgver="0.94.0"
+pkgver="0.94.1"
 pkgdesc="A new type of shell"
 breaks=("${fake_gives}" "${fake_gives}-git" "${fake_gives}-deb" "${fake_gives}-app")
 repology=("project: nushell")
 arch=('arm64' 'amd64')
-sha256sums_arm64=("82e6de033dac0718623f609f973b034af880b9261f2a4fed72b553492109f135")
-sha256sums_amd64=("9e3da6a4164c5d15f3b8a7bf58d60f02eb9a9e896afcbdbc0b24c1dd620893cd")
+sha256sums_arm64=("4f9eb7e3c234f9479aef2da42aca13d000e6543dde91240901e024eb4227bb79")
+sha256sums_amd64=("a586c97afa163750e3f08a95e7b0f43b559de9a36bebb175ab2b010ec2b0a4e2")
 source_amd64=("https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-x86_64-unknown-linux-gnu.tar.gz")
 source_arm64=("https://github.com/nushell/nushell/releases/download/${pkgver}/nu-${pkgver}-aarch64-unknown-linux-gnu.tar.gz")
 
