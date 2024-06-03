@@ -36,4 +36,3 @@ makedepends = python3-jinja2
 makedepends = lttng-tools
 makedepends = meson
 maintainer = Oren Klopfer <oren@taumoda.com>
-pacdeps_focal = meson-focal-deb

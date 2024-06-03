@@ -3,6 +3,7 @@ pkgver = 2024.1
 pkgrel = 1
 pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 priority = essential
+gives_{} = essential
 source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 depends = initramfs-tools
 depends = printer-driver-all-enforce

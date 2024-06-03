@@ -3,6 +3,7 @@ pkgver = 2024.1
 pkgrel = 1
 pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 priority = essential
+gives_{} = essential
 source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 depends = printer-driver-all-enforce
 pacdeps = rhino-kvantum-theme-git

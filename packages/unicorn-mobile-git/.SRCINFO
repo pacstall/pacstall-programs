@@ -4,6 +4,7 @@ pkgver = 0.0.1
 pkgrel = 2
 pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 priority = required
+gives_{} = required
 source = https://github.com/rhino-linux/unicorn.git#branch=mobile
 depends = xfwm4
 depends = xfdashboard
