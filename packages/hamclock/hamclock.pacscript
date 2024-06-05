@@ -1,8 +1,8 @@
 pkgname="hamclock"
-pkgver="4.00"
+pkgver="4.01"
 pkgrel="2"
 source=(
-  "https://github.com/kj7rrv/hamclock/archive/refs/tags/v${pkgver}.tar.gz"
+  "https://github.com/fang64/hamclock/archive/refs/tags/v${pkgver}.tar.gz"
   "hamclock.desktop"
 )
 url='https://clearskyinstitute.com/ham/HamClock'
@@ -11,7 +11,7 @@ breaks=("hamclock-big" "hamclock-bigger" "hamclock-huge")
 replaces=("hamclock")
 pkgdesc="Clock and world map with extra features for amateur radio (800x480 version)"
 sha256sums=(
-  "1def12cf34d3486edb1c4fb0ec7f1a27cc1bda01ca811b6c0fefc68c4c98ab20"
+  "8d0526a187ea27c768d3ff086b33855040c2db328df70569b6d2034904ceb8f5"
   "df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d"
 )
 maintainer=("Roy Williams <fang64@gmail.com>")
