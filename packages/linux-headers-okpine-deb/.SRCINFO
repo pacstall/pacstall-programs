@@ -1,6 +1,7 @@
 pkgname = linux-headers-okpine-deb
 gives = linux-headers-6.9.0-okpine
 pkgver = 6.9.0
+pkgrel = 2
 pkgdesc = Linux kernel header files built for Pine64 devices
 arch = arm64
 source = https://github.com/oklopfer/debs/raw/master/kernel/6.9.0/linux-headers-6.9.0-okpine_6.9.0-1_arm64.deb
@@ -9,4 +10,4 @@ repology = project: linux
 repology = repo: aur
 repology = srcname: linux-mainline
 repology = binname: linux-mainline-headers
-sha256sums = 1dae9d8d9df74ccfbd5c81e8b395b61e88a2c40e3be8628df5442e9a65dd3d98
+sha256sums = 60204c25f4e5788f48410812f8df327dcf87fffbda0af380df9647562f8255eb
