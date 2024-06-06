@@ -1,6 +1,7 @@
 pkgname = linux-image-okpine-deb
 gives = linux-image-6.9.0-okpine
 pkgver = 6.9.0
+pkgrel = 2
 pkgdesc = Linux kernel image files built for Pine64 devices
 arch = arm64
 source = https://github.com/oklopfer/debs/raw/master/kernel/6.9.0/linux-image-6.9.0-okpine_6.9.0-1_arm64.deb
@@ -11,4 +12,4 @@ repology = project: linux
 repology = repo: aur
 repology = srcname: linux-mainline
 repology = binname: linux-mainline
-sha256sums = 095588349ea52dbdf942751ddf618ded9219e89b1172d0481add8060e3f32828
+sha256sums = 60cf364f4977bd1cfb94d64cc62368940ec61e08743af3a75f58e2e4f0e3ce16
