@@ -88,20 +88,20 @@ function gen.srcinfo() {
           for aars in "${arch[@]}"; do
             if [[ ${ars} =~ AARCH_REPLACE ]]; then
               seek="AARCH_REPLACE"
-              if [[ " ${AARCHS_MAP[@]} " =~ ${aars} ]]; then
+              if [[ " ${AARCHS_MAP[*]} " =~ ${aars} ]]; then
                 rep="${aars}"
               else
                 rep="${AARCHS_MAP[${aars}]}"
               fi
             else
               seek="CARCH_REPLACE"
-              if [[ " ${AARCHS_MAP[@]} " =~ ${aars} ]]; then
+              if [[ " ${AARCHS_MAP[*]} " =~ ${aars} ]]; then
                 rep="${CARCHS_MAP[${aars}]}"
               else
                 rep="${aars}"
               fi
             fi
-            if [[ " ${AARCHS_MAP[@]} " =~ " ${ar##*_} " || " ${!AARCHS_MAP[@]} " =~ " ${ar##*_} " || ${ar} == *"x86_64" ]]; then
+            if [[ " ${AARCHS_MAP[*]} " =~ " ${ar##*_} " || " ${!AARCHS_MAP[*]} " =~ " ${ar##*_} " || ${ar} == *"x86_64" ]]; then
               : "${ar} = ${ars}"
               [[ ${ar} != *"${aars}" ]] && continue
             else
