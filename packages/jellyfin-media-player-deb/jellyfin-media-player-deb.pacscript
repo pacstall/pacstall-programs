@@ -13,15 +13,8 @@ source_jammy=("https://github.com/jellyfin/jellyfin-media-player/releases/downlo
 sha256sums_jammy=("7d8cfb451895c8128729f1a00b28236d4d90e78796bf110384320882ace7c41a")
 source_mantic=("https://github.com/jellyfin/jellyfin-media-player/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64-mantic.deb")
 sha256sums_mantic=("cb065679575bc1e43e3e66a623baf33bde9a825ff097832b3b148b381d694827")
-source_bookworm=("https://github.com/jellyfin/jellyfin-media-player/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64-bookworm.deb")
-sha256sums_bookworm=("eb3cb89140cf1ddf8f54c5457fe052d6875b8ec63cbaa6a8f48d4997cfe583f7")
-source_oracular=("${source_bookworm[@]}")
-sha256sums_oracular=("${sha256sums_bookworm[@]}")
-source_devel=("${source_bookworm[@]}")
-sha256sums_devel=("${sha256sums_bookworm[@]}")
-source_bullseye=("${source_bookworm[@]}")
-sha256sums_bullseye=("${sha256sums_bookworm[@]}")
-
+source=("https://github.com/jellyfin/jellyfin-media-player/releases/download/v${pkgver}/${gives}_${pkgver}-1_amd64-bookworm.deb")
+sha256sums=("eb3cb89140cf1ddf8f54c5457fe052d6875b8ec63cbaa6a8f48d4997cfe583f7")
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>")
 repology=("project: ${gives}")
 
