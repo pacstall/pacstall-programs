@@ -24,7 +24,9 @@ jobs:
 
       - name: Generate distrolist
         run: |
-          mapfile -t parsed_distros < <(curl -fsSL https://salsa.debian.org/debian/distro-info-data/-/raw/main/{ubuntu.csv,debian.csv} \
+          function get_distrolist() {
+            local target="${1}" location="${2}"
+            mapfile -t "${target}" < <(curl -fsSL "${location}"/{ubuntu.csv,debian.csv} \
             | awk -F ',' -v current_date="$(date +'%Y-%m-%d')" '
               BEGIN {
                 is_first = 1
@@ -46,7 +48,15 @@ jobs:
                 } else {
                   print "  " $3
                 }
-              }')
+              }'
+            )
+          }
+          get_distrolist parsed_distros "https://salsa.debian.org/debian/distro-info-data/-/raw/main"
+          if [[ -z "${parsed_distros[*]}" ]]; then
+            [[ $(dpkg-query -W --showformat='${db:Status-Status}' "distro-info-data" 2> /dev/null) != "installed" ]] \
+              && { apt-get update && apt-get install distro-info-data; }
+            get_distrolist parsed_distros "file:///usr/share/distro-info"
+          fi
           printf "%s\n" "${parsed_distros[@]}" > distrolist
 
       - name: Calculate diff + PR title
