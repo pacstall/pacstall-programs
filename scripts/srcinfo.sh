@@ -101,6 +101,7 @@ function gen.srcinfo() {
                 rep="${aars}"
               fi
             fi
+            # shellcheck disable=SC2076
             if [[ " ${AARCHS_MAP[*]} " =~ " ${ar##*_} " || " ${!AARCHS_MAP[*]} " =~ " ${ar##*_} " || ${ar} == *"x86_64" ]]; then
               : "${ar} = ${ars}"
               [[ ${ar} != *"${aars}" ]] && continue
