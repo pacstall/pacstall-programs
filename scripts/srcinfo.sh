@@ -30,11 +30,11 @@ function die() {
 
 function vars.srcinfo() {
   local _distros _vars _archs _sums distros \
-    vars="source depends makedepends optdepends pacdeps checkdepends provides conflicts breaks replaces" \
-    archs="amd64 arm64 armel armhf i386 mips64el ppc64el riscv64 s390x" \
+    vars="source depends makedepends optdepends pacdeps checkdepends provides conflicts breaks replaces enhances recommends makeconflicts checkconflicts" \
+    archs="amd64 x86_64 arm64 aarch64 armel arm armhf armv7h i386 i686 mips64el ppc64el riscv64 s390x" \
     sums="b2 sha512 sha384 sha256 sha224 sha1 md5"
   allvars=(pkgname gives pkgver pkgrel epoch pkgdesc url priority)
-  allars=(arch source depends makedepends checkdepends optdepends pacdeps conflicts breaks replaces provides incompatible compatible backup mask noextract nosubmodules license maintainer repology)
+  allars=(arch source depends makedepends checkdepends optdepends pacdeps conflicts makeconflicts checkconflicts breaks replaces provides enhances recommends incompatible compatible backup mask noextract nosubmodules license maintainer repology custom_fields)
   distros=$(awk '{sub(/\/.*/, "", $1); gsub(/:$/, "", $1); distros=distros $1 " "} END {sub(/ $/, "", distros); print distros}' distrolist)
   _distros="{${distros// /,}}" _vars="{${vars// /,}}" _archs="{${archs// /,}}" _sums="{${sums// /,}}"
   eval "allars+=(${_vars}_${_distros} ${_vars}_${_archs} ${_vars}_${_distros}_${_archs} ${_sums}sums ${_sums}sums_${_distros} ${_sums}sums_${_archs} ${_sums}sums_${_distros}_${_archs})"
@@ -42,7 +42,29 @@ function vars.srcinfo() {
 }
 
 function gen.srcinfo() {
-  local CARCH='CARCH_REPLACE' DISTRO='DISTROBASE:DISTROVER' var ar aars bar ars rar
+  local CARCH='CARCH_REPLACE' DISTRO='DISTROBASE:DISTROVER' AARCH='AARCH_REPLACE' var ar aars bar ars rar rep seek
+  local -A AARCHS_MAP=(
+    ["amd64"]="x86_64"
+    ["arm64"]="aarch64"
+    ["armel"]="arm"
+    ["armhf"]="armv7h"
+    ["i386"]="i686"
+    ["mips64el"]="mips64el"
+    ["ppc64el"]="ppc64el"
+    ["riscv64"]="riscv64"
+    ["s390x"]="s390x"
+  )
+  local -A CARCHS_MAP=(
+    ["x86_64"]="amd64"
+    ["aarch64"]="arm64"
+    ["arm"]="armel"
+    ["armv7h"]="armhf"
+    ["i686"]="i386"
+    ["mips64el"]="mips64el"
+    ["ppc64el"]="ppc64el"
+    ["riscv64"]="riscv64"
+    ["s390x"]="s390x"
+  )
   # shellcheck disable=SC1090
   source "${1}"
   for var in "${allvars[@]}"; do
@@ -61,11 +83,32 @@ function gen.srcinfo() {
         ars="${ars//+([[:space:]])/ }"
         ars="${ars#[[:space:]]}"
         ars="${ars%[[:space:]]}"
-        if [[ ${ars} =~ CARCH_REPLACE ]]; then
+        if [[ ${ars} =~ CARCH_REPLACE || ${ars} =~ AARCH_REPLACE ]]; then
           [[ -z ${arch[*]} ]] && arch=('amd64')
           for aars in "${arch[@]}"; do
-            : "${ar}_${aars} = ${ars}"
-            echo "${_//CARCH_REPLACE/${aars}}"
+            if [[ ${ars} =~ AARCH_REPLACE ]]; then
+              seek="AARCH_REPLACE"
+              if [[ " ${AARCHS_MAP[*]} " =~ ${aars} ]]; then
+                rep="${aars}"
+              else
+                rep="${AARCHS_MAP[${aars}]}"
+              fi
+            else
+              seek="CARCH_REPLACE"
+              if [[ " ${AARCHS_MAP[*]} " =~ ${aars} ]]; then
+                rep="${CARCHS_MAP[${aars}]}"
+              else
+                rep="${aars}"
+              fi
+            fi
+            # shellcheck disable=SC2076
+            if [[ " ${AARCHS_MAP[*]} " =~ " ${ar##*_} " || " ${!AARCHS_MAP[*]} " =~ " ${ar##*_} " || ${ar} == *"x86_64" ]]; then
+              : "${ar} = ${ars}"
+              [[ ${ar} != *"${aars}" ]] && continue
+            else
+              : "${ar}_${aars} = ${ars}"
+            fi
+            echo "${_//${seek}/${rep}}"
           done
         else
           echo "${ar} = ${ars}"
