@@ -1,7 +1,7 @@
 pkgname = pacup
-pkgver = 3.1.3
+pkgver = 3.2.0
 pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
-source = https://github.com/pacstall/pacup/archive/refs/tags/3.1.3.tar.gz
+source = https://github.com/pacstall/pacup/archive/refs/tags/3.2.0.tar.gz
 depends = libdata-compare-perl
 depends = libfile-chdir-perl
 depends = libipc-system-simple-perl
@@ -16,4 +16,4 @@ replaces = pacup-bin
 replaces = pacup-git
 maintainer = vigress8 <vig@disroot.org>
 maintainer = Oren Klopfer <oren@taumoda.com>
-sha256sums = 1f1ffdd9452efbc16aa1209a8d4c1ff6bf50b50d0ae94e60ee8974881a3d7c07
+sha256sums = 5d2df9598a93094d68bcffbf0f2adf5811b191e4042e173052bb16d3a5ad2a7e
