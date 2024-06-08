@@ -16,14 +16,12 @@ source=(
   "${pkgname}-${pkgver}.zip::https://github.com/${pkgname}/${pkgname}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
   "skia-${skiaver}.zip::https://github.com/${pkgname}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
   "https://github.com/${pkgname}/strings.git"
-  "dont-clone-strings.patch"
   "fix-build-with-updater-off.patch::https://github.com/aseprite/aseprite/commit/8fce589.patch"
 )
 sha256sums=(
   "6524b4dd38adac22f954122846ccca7377983cee2e0f17c1482294cf09cbdcfc"
   "66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
   "SKIP"
-  "2c260a50aaa194f3d76d287ba8c2229c265c12e64319d15cce8a3db760104345"
   "31369a5063d5f7839699fea00235b70057b0f2619592ba1db5af6d12c4f1171c"
 )
 noextract=(
@@ -36,8 +34,6 @@ prepare() {
   unzip -qq "skia-${skiaver}.zip" -d skia
 
   cd aseprite
-  # Avoid connecting to internet to fetch translations
-  patch -sp1 < ../dont-clone-strings.patch
   rm -rf data/strings
   mv ../strings data
 
@@ -61,12 +57,12 @@ build() {
     -D ENABLE_DESKTOP_INTEGRATION=ON
     -D ENABLE_PSD=ON
     -D ENABLE_UPDATER=OFF
+    -D FETCHCONTENT_FULLY_DISCONNECTED=ON
     -D LAF_BACKEND=skia
     -D LAF_WITH_EXAMPLES=OFF
     -D LAF_WITH_TESTS=OFF
     -D SKIA_DIR=skia
     -D SKIA_LIBRARY_DIR=skia/out/Release-x64
-    -D SKIA_LIBRARY=skia/out/Release-x64/libskia.a
     -G Ninja
     -W no-dev
   )
@@ -84,13 +80,16 @@ package() {
   # Install the icons in the correct directory (which is not the default)
   local dst size src="${pkgdir}/opt/${pkgname}/share/${pkgname}/data/icons"
   for size in 16 32 48 64 128 256; do
-    dst="${pkgdir}/usr/share/icons/hicolor/${_size}x${_size}"
+    dst="${pkgdir}/usr/share/icons/hicolor/${size}x${size}"
     install -Dm644 "${src}/ase${size}.png" "${dst}/apps/${pkgname}.png"
     install -Dm644 "${src}/doc${size}.png" "${dst}/mimetypes/image-x-${pkgname}.png"
   done
 
   # Delete the icons to avoid copying them in two places (they aren't used by Aseprite itself)
   rm -rf "${src}"
+
+  find "${pkgdir}/opt/${pkgname}" -name '*.desktop' \
+    -exec install -Dm644 -t "${pkgdir}/usr/share/applications" '{}' +
 
   cd aseprite
   # Install the licenses
