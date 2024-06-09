@@ -11,6 +11,7 @@ pacdeps=('blueprint-compiler' 'adw-gtk-theme' 'python3-anyascii' 'python3-materi
 source=("${url}/archive/refs/tags/${pkgver}.tar.gz")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 b2sums=('ca16dacd9c5c4af901a5e289d11aafa0a581f43477ea473d06e92a17582b6e397de60ab2e52036602e4028b0fde688a5511c6b7ba0577c08c03a6ed50e04383d')
+external_connection=true
 
 build() {
   meson "Gradience-${pkgver}" build --buildtype=release
