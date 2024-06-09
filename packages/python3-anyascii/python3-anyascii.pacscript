@@ -13,18 +13,18 @@ b2sums=('9b9440d26872404487ff791dda5e7695f5f8504743d750c89b80d2a77595decfb2f1389
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
-  cd "${_name}"/impl/python
-  python -m build --wheel --skip-dependency-check --no-isolation
+  cd "${_name}-${pkgver}"/impl/python
+  python3 -m build --wheel --skip-dependency-check --no-isolation
 }
 
 check() {
-  cd "${_name}"/impl/python
-  python -m pytest
+  cd "${_name}-${pkgver}"/impl/python
+  python3 -m pytest
 }
 
 package() {
-  cd "${_name}"/impl/python
-  python -m installer --destdir="${pkgdir}" dist/*.whl
+  cd "${_name}-${pkgver}"/impl/python
+  python3 -m installer --destdir="${pkgdir}" dist/*.whl
 
   # Symlink license file
   site_packages=$(python3 -c "import site; print(site.getsitepackages()[0])")
