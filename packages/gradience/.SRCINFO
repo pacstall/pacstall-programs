@@ -37,6 +37,7 @@ makedepends = libportal-gtk4-1
 makedepends = python3-cssutils
 makedepends = python3-jinja2
 checkdepends = appstream
+checkdepends = appstream-util
 pacdeps = blueprint-compiler
 pacdeps = adw-gtk-theme
 pacdeps = python3-anyascii
