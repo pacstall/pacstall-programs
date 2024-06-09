@@ -4,7 +4,7 @@ pkgdesc="Change the look of Adwaita, with ease"
 arch=('amd64' 'arm64')
 url="https://github.com/GradienceTeam/Gradience"
 license=('GPL-3.0-or-later')
-depends=('libadwaita-1-0' 'libsoup-3.0-0' 'gettext' 'python3-gi' 'python3-lxml' 'python3-pil' 'python3-pluggy' 'python3-svglib' 'python3-yapsy' 'python3-regex' 'libportal-gtk4-1' 'python3-cssutils' 'python3-jinja2')
+depends=('libadwaita-1-0' 'libsoup-3.0-0' 'gettext' 'python3-gi' 'python3-lxml' 'python3-pil' 'python3-pluggy' 'python3-svglib' 'python3-yapsy' 'python3-regex' 'libportal-gtk4-1' 'python3-cssutils' 'python3-jinja2' 'python3-libsass')
 makedepends=('meson' 'gobject-introspection' 'sassc' 'python-gi-dev' 'libsoup-3.0-dev' 'libadwaita-1-dev' 'libportal-gtk4-dev' "${depends[@]}")
 checkdepends=('appstream' 'appstream-util')
 pacdeps=('blueprint-compiler' 'adw-gtk-theme' 'python3-anyascii' 'python3-material-color-utilities')
@@ -19,7 +19,7 @@ b2sums=('ca16dacd9c5c4af901a5e289d11aafa0a581f43477ea473d06e92a17582b6e397de60ab
 external_connection=true
 
 build() {
-  meson "Gradience-${pkgver}" build --buildtype=release
+  meson "Gradience-${pkgver}" build --prefix=/usr --buildtype=release
   meson compile -C build
 }
 
