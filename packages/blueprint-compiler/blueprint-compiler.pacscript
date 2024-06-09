@@ -7,6 +7,7 @@ depends=("python3-gi")
 makedepends=("meson")
 source=("https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v${pkgver}/blueprint-compiler-v${pkgver}.tar.gz")
 sha256sums=('6dbb4ea851cec164030abded5949ea77ff92032e23527e1c0597d7efe0c36a81')
+maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
   meson "${pkgname}-v${pkgver}" build
