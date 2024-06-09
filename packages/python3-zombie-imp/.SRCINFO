@@ -14,4 +14,5 @@ compatible = *:trixie
 compatible = *:sid
 compatible = *:devel
 license = GPL-3.0-or-later
+maintainer = Oren Klopfer <oren@taumoda.com>
 sha512sums = 25fcb8633dab3f5b8546ec0bfaf82e0c6a17373ec4c5d87219d1e93aeaac8deeae2b68c827edbd2b2aecb8a900a516d0819493c241e64a2217b8626a8a0155af
