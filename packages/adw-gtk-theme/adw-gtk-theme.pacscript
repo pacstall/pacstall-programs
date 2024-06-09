@@ -8,11 +8,11 @@ source=(
   'extract-libadwaita-theme.'{hook,sh}
   'index.theme.'{light,dark}
 )
-md5sums=(
-  '328eb9f69bf98566a5c4d55e0fdff3c3'
-  'c65c89f2a735b088ed599853f53074bd'
-  '16ace27d8e4e79f3d1ba92c1a2c071ad'
-  '895d966bc68af8df0b9c0c85d8b29335'
+sha256sums=(
+  '477d83d73a19edee113a1161887f338ab1ea8496fbeaf653e8b47038ce6fa506'
+  '130d4ba56c99793851b36826a6fd3359fef49ffff61dd41cf3d01ce4a5ee94ca'
+  '4ef59f634c0d696a82851f89ef92798dfe554eedb2a514de469eb789016aed5a'
+  '66e436ab0968d8c126fa7f274baa40cad2c36792fae3689e75c36231b0138063'
 )
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
