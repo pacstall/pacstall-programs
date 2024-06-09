@@ -386,6 +386,8 @@ protonvpn-gui
 protonvpn-nm-lib
 pulsar-deb
 pycharm-community-bin
+python3-anyascii
+python3-flit-core
 python3-imdbpy-deb
 python3-levenshtein-deb
 python3-material-color-utilities
