@@ -30,7 +30,7 @@ check() {
 }
 
 package() {
-  site_packages=$(python -c "import site; print(site.getsitepackages()[0])")
+  site_packages=$(python3 -c "import site; print(site.getsitepackages()[0])")
 
   cd "${_parent_name}-${pkgver}/${_name}"
   python3 -m installer --destdir="${pkgdir}" dist/*.whl
