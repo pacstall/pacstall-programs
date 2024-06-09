@@ -18,8 +18,8 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 package() {
   libalpmdir="${pkgdir}"/usr/share/libalpm
-  install -Dm644 {"${srcdir}","$libalpmdir/hooks"}/extract-libadwaita-theme.hook
-  install -Dm755 {"${srcdir}","$libalpmdir/scripts"}/extract-libadwaita-theme.sh
+  install -Dm644 {"${srcdir}","${libalpmdir}/hooks"}/extract-libadwaita-theme.hook
+  install -Dm755 {"${srcdir}","${libalpmdir}/scripts"}/extract-libadwaita-theme.sh
   install -Dm644 "${srcdir}"/index.theme.light "${pkgdir}"/usr/share/themes/Adw/index.theme
   install -Dm644 "${srcdir}"/index.theme.dark "${pkgdir}"/usr/share/themes/Adw-dark/index.theme
 }
