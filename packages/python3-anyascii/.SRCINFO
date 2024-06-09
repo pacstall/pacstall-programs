@@ -1,0 +1,14 @@
+pkgname = python3-anyascii
+pkgver = 0.3.2
+pkgdesc = Unicode to ASCII transliteration
+url = https://anyascii.com/
+source = https://github.com/anyascii/anyascii/archive/refs/tags/0.3.2.tar.gz
+depends = python3
+makedepends = git
+makedepends = python3-build
+makedepends = python3-installer
+checkdepends = python3-pytest
+pacdeps = python3-flit-core
+license = ISC
+maintainer = Oren Klopfer <oren@taumoda.com>
+b2sums = 9b9440d26872404487ff791dda5e7695f5f8504743d750c89b80d2a77595decfb2f1389b6636af8723a358b0e56988f074acb403d7860539c522cfa4b5b3f06a
