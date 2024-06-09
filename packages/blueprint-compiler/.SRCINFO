@@ -6,4 +6,5 @@ source = https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v0.12.0/
 depends = python3-gi
 makedepends = meson
 license = LGPL-3.0-or-later
+maintainer = Oren Klopfer <oren@taumoda.com>
 sha256sums = 6dbb4ea851cec164030abded5949ea77ff92032e23527e1c0597d7efe0c36a81
