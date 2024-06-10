@@ -1,0 +1,11 @@
+pkgname = rsbbi-git
+gives = rsbbi
+pkgver = 0.0.1
+pkgdesc = A Rust-Based Rabbi, using Sefaria's API
+source = https://github.com/Elsie19/rsbbi.git
+makedepends = cargo
+makedepends = rustc
+makedepends = pkg-config
+makedepends = librust-openssl-dev
+maintainer = Elsie19 <elsie19@pm.me>
+maintainer = Oren Klopfer <oren@taumoda.com>
