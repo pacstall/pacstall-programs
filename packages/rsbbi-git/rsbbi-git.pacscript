@@ -9,6 +9,7 @@ maintainer=(
   "Oren Klopfer <oren@taumoda.com>"
 )
 external_connection=true
+incompatible=("debian:bookworm")
 
 build() {
   cd "${gives}"

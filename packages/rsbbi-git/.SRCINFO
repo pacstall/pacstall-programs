@@ -7,5 +7,6 @@ makedepends = cargo
 makedepends = rustc
 makedepends = pkg-config
 makedepends = librust-openssl-dev
+incompatible = debian:bookworm
 maintainer = Elsie19 <elsie19@pm.me>
 maintainer = Oren Klopfer <oren@taumoda.com>
