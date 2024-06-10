@@ -13,9 +13,9 @@ incompatible=("debian:bookworm")
 
 build() {
   cd "${gives}"
-  cargo build -j"${NCPU}" --locked
+  cargo build -j"${NCPU}" --locked --release
 }
 
 package() {
-  install -Dm755 "${gives}/target/debug/${gives}" -t "${pkgdir}/usr/bin"
+  install -Dm755 "${gives}/target/release/${gives}" -t "${pkgdir}/usr/bin"
 }
