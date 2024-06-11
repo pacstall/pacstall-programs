@@ -1,6 +1,7 @@
 pkgname = rsbbi-git
 gives = rsbbi
 pkgver = 0.0.1
+pkgrel = 2
 pkgdesc = A Rust-Based Rabbi, using Sefaria's API
 source = https://github.com/Elsie19/rsbbi.git
 makedepends = cargo
