@@ -1,4 +1,5 @@
 pkgname="rsbbi-git"
+pkgrel="2"
 gives="rsbbi"
 makedepends=("cargo" "rustc" "pkg-config" "librust-openssl-dev")
 pkgdesc="A Rust-Based Rabbi, using Sefaria's API"
@@ -13,9 +14,9 @@ incompatible=("debian:bookworm")
 
 build() {
   cd "${gives}"
-  cargo build -j"${NCPU}" --locked
+  cargo build -j"${NCPU}" --locked --release
 }
 
 package() {
-  install -Dm755 "${gives}/target/debug/${gives}" -t "${pkgdir}/usr/bin"
+  install -Dm755 "${gives}/target/release/${gives}" -t "${pkgdir}/usr/bin"
 }
