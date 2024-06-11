@@ -1,4 +1,5 @@
 pkgname="rsbbi-git"
+pkgrel="2"
 gives="rsbbi"
 makedepends=("cargo" "rustc" "pkg-config" "librust-openssl-dev")
 pkgdesc="A Rust-Based Rabbi, using Sefaria's API"
