@@ -3,11 +3,13 @@ gives="stockfish"
 pkgdesc="The Stockfish chess engine"
 url='https://stockfishchess.org/'
 source=("https://github.com/official-stockfish/Stockfish.git")
-maintainer=("pythoncrazy <encryptprogramming@gmail.com>")
+maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
 pkgver="0.0.1"
 breaks=("stockfish-git")
+external_connection="true"
 
 build() {
+  cd "${_archive}"
   cd src
   make -j"${NCPU}" profile-build
 }
