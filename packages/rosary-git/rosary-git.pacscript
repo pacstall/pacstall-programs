@@ -5,7 +5,6 @@ pkgrel=1
 pkgdesc="A Bible App developed with tauri"
 arch=('any')
 url="https://github.com/RoseBlume/Rosary"
-license=('mit')
 depends=('cairo' 'desktop-file-utils' 'gdk-pixbuf2' 'glib2' 'gtk3' 'hicolor-icon-theme' 'libsoup' 'pango' 'webkit2gtk')
 makedepends=('git' 'file' 'openssl' 'appmenu-gtk-module' 'libappindicator-gtk3' 'librsvg' 'base-devel' 'curl' 'wget' 'rustup' 'npm' 'nodejs' 'dpkg')
 provides=('rosary')
