@@ -101,4 +101,10 @@ post_install() {
     printf ".-vala-panel-appmenu-core > * {\n    min-width: 1430px;\n}\n" | tee -a "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" > /dev/null
   fi
   sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/gtk-3.0"
+  echo "============================================================================="
+  echo "Unicorn Desktop Post-Install Information"
+  echo ""
+  echo "If your GTK3 theme is still Yaru-purple-dark, please run the following to switch to our new theme:"
+  echo "gsettings set org.gnome.desktop.interface gtk-theme Adw-dark"
+  echo "============================================================================="
 }

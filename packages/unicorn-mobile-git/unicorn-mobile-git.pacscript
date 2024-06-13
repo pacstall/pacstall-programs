@@ -101,4 +101,10 @@ post_install() {
     echo "[keyfile]" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
     echo "unmanaged-devices=none" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
   fi
+  echo "============================================================================="
+  echo "Unicorn Mobile Post-Install Information"
+  echo ""
+  echo "If your GTK3 theme is still Yaru-purple-dark, please run the following to switch to our new theme:"
+  echo "gsettings set org.gnome.desktop.interface gtk-theme Adw-dark"
+  echo "============================================================================="
 }
