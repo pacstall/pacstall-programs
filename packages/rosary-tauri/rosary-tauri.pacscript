@@ -14,6 +14,6 @@ source_aarch64=("https://github.com/RoseBlume/Rosary/releases/download/v$pkgver/
 sha256sums_aarch64=('bad20bfad1c337db35ee3f95d59ad5e70c4947b64aa6118de0953ddfec4c1538')
 source_armhf=("https://github.com/RoseBlume/Rosary/releases/download/v$pkgver/rosary_"$pkgver"_amd64.deb")
 sha256sums_armhf=('8a8140bf7dcea4852a265b55bca332bb904d249627521b1bd1a985b383fd8307')
-package(){
-	tar -xz -f data.tar.gz -C "${pkgdir}"
+package() {
+  tar -xz -f data.tar.gz -C "${pkgdir}"
 }
