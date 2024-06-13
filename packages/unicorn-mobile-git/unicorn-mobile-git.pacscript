@@ -75,11 +75,13 @@ post_install() {
     mkdir -p "${homedir}/.config"
   fi
   for i in gtk-3.0 gtk-4.0; do
-    if [[ -f "/home/${PACSTALL_USER}/.config/${i}/gtk.css" && ! -f "/home/${PACSTALL_USER}/.config/${i}/gtk.css.bak" ]]; then
-      mv "/home/${PACSTALL_USER}/.config/${i}/gtk.css" "/home/${PACSTALL_USER}/.config/${i}/gtk.css.bak"
+    if [[ -f "${homedir}/.config/${i}/gtk.css" && ! -f "${homedir}/.config/${i}/gtk.css-unicorn.bak" ]]; then
+      mv "${homedir}/.config/${i}/gtk.css" "${homedir}/.config/${i}/gtk.css-unicorn.bak"
+      cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
+      sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
     fi
   done
-  for i in plank autostart cortile ulauncher gtk-3.0 gtk-4.0; do
+  for i in plank autostart cortile ulauncher; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
