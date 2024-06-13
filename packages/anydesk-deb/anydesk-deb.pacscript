@@ -7,5 +7,5 @@ breaks=("${gives}-bin")
 pkgdesc="AnyDesk provides platform independent remote access to personal computers and other devices running the host application"
 sha256sums=("2bc739676672b531e91d50f302c6ea8ad6b1612dc499d1d2f83b21a4c852658d")
 arch=('amd64')
-incompatible=("debian:testing")
+incompatible=("debian:trixie")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
