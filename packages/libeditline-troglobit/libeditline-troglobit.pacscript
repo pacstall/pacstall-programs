@@ -1,6 +1,3 @@
-# Maintainer: George Rawlinson <george@rawlinson.net.nz>
-# Contributor: Immae <ismael.bouya@normalesup.org>
-
 pkgname='libeditline-troglobit'
 _pkgname='editline'
 pkgver='1.17.1'
