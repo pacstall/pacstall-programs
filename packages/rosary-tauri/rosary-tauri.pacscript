@@ -7,11 +7,11 @@ url="https://github.com/RoseBlume/Rosary"
 depends=('cairo' 'desktop-file-utils' 'gdk-pixbuf2' 'glib2' 'gtk3' 'hicolor-icon-theme' 'libsoup' 'pango' 'webkit2gtk')
 options=('!strip' '!emptydirs')
 install=${pkgname}.install
-source_amd64=("https://github.com/RoseBlume/Rosary/releases/download/v$pkgver/rosary_"$pkgver"_amd64.deb")
+source_amd64=("https://github.com/RoseBlume/Rosary/releases/download/v${pkgver}/rosary_${pkgver}_amd64.deb")
 sha256sums_amd64=('81c917fdce366aa6d417fdae65306c5f4860fb9dc26c8ffa9a9b62c0d206c54a')
-source_arm64=("https://github.com/RoseBlume/Rosary/releases/download/v$pkgver/rosary_"$pkgver"_amd64.deb")
+source_arm64=("https://github.com/RoseBlume/Rosary/releases/download/v$pkgver/rosary_${pkgver}_arm64.deb")
 sha256sums_arm64=('bad20bfad1c337db35ee3f95d59ad5e70c4947b64aa6118de0953ddfec4c1538')
-source_armhf=("https://github.com/RoseBlume/Rosary/releases/download/v$pkgver/rosary_"$pkgver"_amd64.deb")
+source_armhf=("https://github.com/RoseBlume/Rosary/releases/download/v${pkgver}/rosary_${pkgver}_armhf.deb")
 sha256sums_armhf=('8a8140bf7dcea4852a265b55bca332bb904d249627521b1bd1a985b383fd8307')
 package() {
   tar -xz -f data.tar.gz -C "${pkgdir}"
