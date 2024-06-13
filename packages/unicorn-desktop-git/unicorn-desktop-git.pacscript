@@ -1,7 +1,7 @@
 pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
 pkgver="0.0.1"
-pkgrel="4"
+pkgrel="1"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
   "vala-panel-appmenu" "appmenu-gtk2-module" "appmenu-gtk3-module" "xfce4-power-manager"
   "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol"
@@ -10,7 +10,7 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "val
   "xserver-xorg-video-fbdev" "light-locker" "light-locker-settings" "tumbler" "tumbler-plugins-extra"
   "ffmpegthumbnailer" "bluez-firmware" "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics"
   "ukui-touchpadserver" "pipewire-audio" "bluetooth" "libxfce4ui-utils" "at-spi2-core")
-pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
+pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin" "adw-gtk-theme")
 gives="unicorn-desktop"
 replaces=("unicorn-mobile" "unicorn-mobile-git")
 priority="required"
@@ -23,7 +23,6 @@ build() {
   mkdir -p "${pkgdir}/usr/share/backgrounds"
   mkdir -p "${pkgdir}/usr/share/doc"
   mkdir -p "${pkgdir}/etc/skel/.config"
-  mkdir -p "${pkgdir}/etc/skel/.config/gtk-3.0"
   mkdir -p "${pkgdir}/usr/share/icons"
   mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
   mkdir -p "${pkgdir}/usr/share/applications"
@@ -43,7 +42,7 @@ package() {
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
   # Install
-  for i in xfce4 plank autostart cortile ulauncher; do
+  for i in xfce4 plank autostart cortile ulauncher gtk-3.0 gtk-4.0; do
     cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
   install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
@@ -66,14 +65,18 @@ package() {
   install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
   install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
   install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
-  printf ".-vala-panel-appmenu-core > * {\n    min-width: 1430px;\n}\n" | tee "${pkgdir}/etc/skel/.config/gtk-3.0/gtk.css" > /dev/null
 }
 
 post_install() {
   if ! [[ -d "${homedir}/.config" ]]; then
     mkdir -p "${homedir}/.config"
   fi
-  for i in plank autostart cortile ulauncher; do
+  for i in gtk-3.0 gtk-4.0; do
+    if [[ -f "/home/${PACSTALL_USER}/.config/${i}/gtk.css" && ! -f "/home/${PACSTALL_USER}/.config/${i}/gtk.css.bak" ]]; then
+      mv "/home/${PACSTALL_USER}/.config/${i}/gtk.css" "/home/${PACSTALL_USER}/.config/${i}/gtk.css.bak"
+    fi
+  done
+  for i in plank autostart cortile ulauncher gtk-3.0 gtk-4.0; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done

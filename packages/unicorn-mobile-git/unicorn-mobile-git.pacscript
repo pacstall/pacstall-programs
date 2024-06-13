@@ -1,14 +1,14 @@
 pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="1"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
   "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11"
   "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev"
   "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "bluez-firmware"
   "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics" "ukui-touchpadserver"
   "pipewire-audio" "bluetooth")
-pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin")
+pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin" "adw-gtk-theme")
 gives="unicorn-mobile"
 replaces=("unicorn-desktop" "unicorn-desktop-git")
 priority="required"
@@ -42,7 +42,7 @@ package() {
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
   # Install
-  for i in xfce4 plank autostart cortile ulauncher; do
+  for i in xfce4 plank autostart cortile ulauncher gtk-3.0 gtk-4.0; do
     cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
   install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
@@ -74,7 +74,12 @@ post_install() {
   if ! [[ -d "${homedir}/.config" ]]; then
     mkdir -p "${homedir}/.config"
   fi
-  for i in plank autostart cortile ulauncher; do
+  for i in gtk-3.0 gtk-4.0; do
+    if [[ -f "/home/${PACSTALL_USER}/.config/${i}/gtk.css" && ! -f "/home/${PACSTALL_USER}/.config/${i}/gtk.css.bak" ]]; then
+      mv "/home/${PACSTALL_USER}/.config/${i}/gtk.css" "/home/${PACSTALL_USER}/.config/${i}/gtk.css.bak"
+    fi
+  done
+  for i in plank autostart cortile ulauncher gtk-3.0 gtk-4.0; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
