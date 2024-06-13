@@ -5,18 +5,17 @@ url='https://stockfishchess.org/'
 source=("https://github.com/official-stockfish/Stockfish.git")
 maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
 pkgver="0.0.1"
+pkgrel="2"
 breaks=("stockfish-git")
 external_connection="true"
 
 build() {
-  cd "${_archive}"
-  cd src
+  cd Stockfish/src
   make -j"${NCPU}" profile-build
 }
 
 package() {
-  cd "${_archive}"
-  cd src
+  cd Stockfish/src
   make strip
   make install BINDIR="${pkgdir}/usr/local/bin"
 }
