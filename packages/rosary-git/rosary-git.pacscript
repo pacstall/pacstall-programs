@@ -14,23 +14,23 @@ options=('!strip' '!emptydirs')
 source=('git+https://github.com/RoseBlume/Rosary')
 sha256sums=('SKIP')
 prepare() {
-	cd Rosary
-	npm install
-	npm run tauri build
+  cd Rosary
+  npm install
+  npm run tauri build
 }
-package(){
-	cd ${srcdir}/Rosary/src-tauri/target/release/bundle/deb
-	dpkg-deb -x *.deb here
-	cd here
+package() {
+  cd ${srcdir}/Rosary/src-tauri/target/release/bundle/deb
+  dpkg-deb -x *.deb here
+  cd here
 
-	install -Dm755 usr/bin/rosary ${pkgdir}/usr/bin/rosary
+  install -Dm755 usr/bin/rosary ${pkgdir}/usr/bin/rosary
 
-    # Install desktop file
-    install -Dm644 usr/share/applications/rosary.desktop ${pkgdir}/usr/share/applications/rosary.desktop
+  # Install desktop file
+  install -Dm644 usr/share/applications/rosary.desktop ${pkgdir}/usr/share/applications/rosary.desktop
 
-    # Install icons
-    install -Dm644 usr/share/icons/hicolor/128x128/apps/rosary.png ${pkgdir}/usr/share/icons/hicolor/128x128/apps/rosary.png
-    install -Dm644 usr/share/icons/hicolor/256x256@2/apps/rosary.png ${pkgdir}/usr/share/icons/hicolor/256x256@2/apps/rosary.png
-    install -Dm644 usr/share/icons/hicolor/32x32/apps/rosary.png ${pkgdir}/usr/share/icons/hicolor/32x32/apps/rosary.png
-	# Extract package data
+  # Install icons
+  install -Dm644 usr/share/icons/hicolor/128x128/apps/rosary.png ${pkgdir}/usr/share/icons/hicolor/128x128/apps/rosary.png
+  install -Dm644 usr/share/icons/hicolor/256x256@2/apps/rosary.png ${pkgdir}/usr/share/icons/hicolor/256x256@2/apps/rosary.png
+  install -Dm644 usr/share/icons/hicolor/32x32/apps/rosary.png ${pkgdir}/usr/share/icons/hicolor/32x32/apps/rosary.png
+  # Extract package data
 }
