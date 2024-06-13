@@ -106,5 +106,7 @@ post_install() {
   echo ""
   echo "If your GTK3 theme is still Yaru-purple-dark, please run the following to switch to our new theme:"
   echo "gsettings set org.gnome.desktop.interface gtk-theme Adw-dark"
+  echo ""
+  echo "NOTE: You may need to run this after logging out and back in again."  
   echo "============================================================================="
 }
