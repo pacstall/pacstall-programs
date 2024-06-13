@@ -1,6 +1,7 @@
-pkgname=rosary-tauri
+pkgname=rosary-deb
 pkgver=2.0.3
 pkgrel=1
+gives="${pkgname/-deb/}"
 pkgdesc="A Bible App developed with tauri"
 arch=('amd64' 'arm64' 'armhf')
 url="https://github.com/RoseBlume/Rosary"
@@ -13,7 +14,3 @@ source_arm64=("https://github.com/RoseBlume/Rosary/releases/download/v${pkgver}/
 sha256sums_arm64=('bad20bfad1c337db35ee3f95d59ad5e70c4947b64aa6118de0953ddfec4c1538')
 source_armhf=("https://github.com/RoseBlume/Rosary/releases/download/v${pkgver}/rosary_${pkgver}_armhf.deb")
 sha256sums_armhf=('8a8140bf7dcea4852a265b55bca332bb904d249627521b1bd1a985b383fd8307')
-package() {
-  dpkg -x *.deb here
-  cp -r here/* ${pkgdir}
-}
