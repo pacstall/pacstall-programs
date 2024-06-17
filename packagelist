@@ -60,6 +60,7 @@ cmake-deb
 cmatrix
 com.github.mirkobrombin.bottles-deb
 conky-manager-zcot-git
+coreutils-single
 cortile-bin
 couture
 cutefish-calculator-git
@@ -240,7 +241,9 @@ lf-bin
 libcamera-git
 libcutefish-git
 libdrm
+libeditline-troglobit
 libfdk-aac1-deb
+libgc-nix
 libicu-deb
 liblcf
 libndi4-deb
@@ -268,6 +271,7 @@ linux-libc-dev-okpine-deb
 linux-modules-deb
 linux-modules-stable-deb
 linux-wifi-hotspot-deb
+lix-git
 lrz-syncshare-deb
 lsd-deb
 lunacy-deb
@@ -281,6 +285,8 @@ makedeb-deb
 mangohud
 marktext-deb
 mcontrolcenter-bin
+mdbook
+mdbook-linkcheck
 megabasterd-bin
 megasync-deb
 meson-focal-deb
@@ -420,6 +426,7 @@ rhino-system-git
 rhino-ubxi-core
 rio-wayland-deb
 rio-x11-deb
+rosary-deb
 rpcs3-app
 rsbbi-git
 rstudio-deb

@@ -1,7 +1,7 @@
 pkgname = unicorn-mobile-git
 gives = unicorn-mobile
 pkgver = 0.0.1
-pkgrel = 2
+pkgrel = 1
 pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 priority = required
 source = https://github.com/rhino-linux/unicorn.git#branch=mobile
@@ -37,6 +37,7 @@ pacdeps = lightpad-git
 pacdeps = papirus-folders
 pacdeps = ulauncher-deb
 pacdeps = cortile-bin
+pacdeps = adw-gtk-theme
 replaces = unicorn-desktop
 replaces = unicorn-desktop-git
 incompatible = debian:*
