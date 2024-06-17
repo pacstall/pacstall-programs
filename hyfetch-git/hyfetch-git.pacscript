@@ -18,5 +18,5 @@ package() {
   cd "${_archive}"
   chmod +x neofetch
   chmod +x hyfetch/scripts/neowofetch
-   /usr/bin/python3 setup.py install --root="${pkgdir}" --optimize=1
+  /usr/bin/python3 setup.py install --root="${pkgdir}" --optimize=1
 }
