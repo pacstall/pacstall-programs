@@ -1,0 +1,22 @@
+pkgname="freshfetch-git"
+gives="freshfetch"
+pkgdesc="A fresh take on Neofetch"
+arch=('amd64')
+url="https://github.com/K4rakara/freshfetch"
+source=("https://github.com/K4rakara/freshfetch.git")
+maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
+pkgver="0.2.0"
+depends=()
+makedepends=('cargo') # xcb crate needs python
+external_connection="true"
+
+build() {
+  cd "${_archive}"
+  cargo build --release -vv
+}
+
+package() {
+  cd "${_archive}"
+  ls -R
+  install -Dm0755 -t "${pkgdir}/usr/bin" "target/release/freshfetch"
+}
