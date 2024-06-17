@@ -7,7 +7,7 @@ makedepends=("gcc" "g++" "gcc-multilib" "g++-multilib" "meson" "ninja-build" "py
 pkgdesc="A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more"
 sha256sums=("67d2425c0cc634574d8bd8a924e0e1a2e909b47ed9b8c02029b5baffe46657fc")
 incompatible=('debian:bullseye')
-maintainer=("Elsie19 <elsie19@pm.me>")
+maintainer=("xdavius <xdavius@github.com>")
 external_connection=true
 
 build() {
