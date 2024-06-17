@@ -20,6 +20,7 @@ makedepends = libxnvctrl-dev
 makedepends = libdbus-1-dev
 makedepends = glslang-tools
 makedepends = libwayland-dev
+makedepends = libxkbcommon-dev
 incompatible = debian:bullseye
 maintainer = xdavius <xdavius@github.com>
 repology = project: mangohud
