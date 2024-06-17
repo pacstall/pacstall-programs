@@ -16,6 +16,5 @@ build() {
 
 package() {
   cd "${_archive}"
-  ls -R
   install -Dm0755 -t "${pkgdir}/usr/bin" "target/release/freshfetch"
 }
