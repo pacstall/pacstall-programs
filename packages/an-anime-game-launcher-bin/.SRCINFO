@@ -1,8 +1,8 @@
 pkgname = an-anime-game-launcher-bin
 gives = an-anime-game-launcher
-pkgver = 3.9.6
+pkgver = 3.10.0
 pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
-source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.9.6/anime-game-launcher
+source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.10.0/anime-game-launcher
 source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
 depends = xdelta3
 optdepends = mangohud: FPS Hud/GUI
