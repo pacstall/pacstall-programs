@@ -1,7 +1,7 @@
 pkgname="nodejs-lts-deb"
 gives="nodejs"
-_major_version="18"
-pkgver="18.15.0"
+_major_version="20"
+pkgver="20.14.0"
 breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
 replaces=("${gives}" "node")
 pkgdesc="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine"
