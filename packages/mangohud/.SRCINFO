@@ -19,6 +19,7 @@ makedepends = libx11-dev
 makedepends = libxnvctrl-dev
 makedepends = libdbus-1-dev
 makedepends = glslang-tools
+makedepends = libwayland-dev
 incompatible = debian:bullseye
 maintainer = xdavius <xdavius@github.com>
 repology = project: mangohud
