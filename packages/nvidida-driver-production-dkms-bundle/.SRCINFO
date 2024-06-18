@@ -1,7 +1,6 @@
 pkgname = nvidia-driver-production-dkms-bundle
 gives = nvidia-driver
 pkgver = 550.90.07
-pkgrel = 1
 pkgdesc = Nvidia Production Drivers + lib32
 arch = amd64
 source = https://us.download.nvidia.com/XFree86/Linux-x86_64/550.90.07/NVIDIA-Linux-x86_64-550.90.07.run
