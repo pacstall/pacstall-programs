@@ -1,7 +1,6 @@
 pkgname="nvidia-driver-production-dkms-bundle"
 gives="nvidia-driver"
 pkgver="550.90.07"
-pkgrel="1"
 pkgdesc="Nvidia Production Drivers + lib32"
 arch=('amd64')
 options=('!strip')
