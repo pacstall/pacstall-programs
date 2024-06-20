@@ -1,7 +1,7 @@
 pkgname = yt-dlp
-pkgver = 2024.04.09
+pkgver = 2024.05.27
 pkgdesc = A youtube-dl fork with additional features and fixes
-source = https://github.com/yt-dlp/yt-dlp/releases/download/2024.04.09/yt-dlp
+source = https://github.com/yt-dlp/yt-dlp/releases/download/2024.05.27/yt-dlp
 depends = python3
 depends = ffmpeg
 breaks = yt-dlp-git
@@ -9,4 +9,4 @@ breaks = yt-dlp-bin
 breaks = yt-dlp
 maintainer = Oren Klopfer <oren@taumoda.com>
 repology = project: yt-dlp
-sha256sums = 7f12092fb95ffa2c8947c855298c94c612c9c0e969e132d7eca5502981955c99
+sha256sums = b67769b0d68dbdc59a6d217713a37443b5a12c1d377c27c9946da8a537b995bb
