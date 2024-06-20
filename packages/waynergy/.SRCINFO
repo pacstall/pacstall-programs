@@ -1,6 +1,5 @@
 pkgname = waynergy
 pkgver = 0.0.17
-pkgrel = 3
 pkgdesc = Synergy client for wayland compositors
 url = https://github.com/r-c-f/waynergy
 arch = amd64
