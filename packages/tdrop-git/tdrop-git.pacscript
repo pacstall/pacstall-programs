@@ -7,8 +7,8 @@ pkgdesc="A Glorified WM-Independent Dropdown Creator"
 maintainer=("Thomas Crha <thomas@9bitbyte.com>")
 depends=("xdotool" "bash" "gawk" "procps" "x11-utils")
 optdepends=("x11-xserver-utils: multiple monitor resizing support (for -m)"
-            "tmux: session starting support (for -s)"
-            "tmuxinator: additional session support for tmux (for -s)")
+  "tmux: session starting support (for -s)"
+  "tmuxinator: additional session support for tmux (for -s)")
 prepare() {
   cd "${_archive}"
   gzip -9n "tdrop.1"
