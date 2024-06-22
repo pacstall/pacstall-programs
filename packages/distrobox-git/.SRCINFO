@@ -1,7 +1,7 @@
 pkgname = distrobox-git
-gives = distrobox-git
+gives = distrobox
 pkgver = 1.7.2.1
-pkgdesc = Use any linux distribution inside your terminal.
+pkgdesc = Use any linux distribution inside your terminal
 url = https://github.com/89luca89/distrobox
 arch = any
 source = distrobox::git+https://github.com/89luca89/distrobox
