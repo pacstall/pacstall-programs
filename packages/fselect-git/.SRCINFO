@@ -1,9 +1,11 @@
+pkgbase = fselect-git
+	gives = fselect
+	pkgver = 0.8.4
+	pkgdesc = Find files with SQL-like queries
+	makedepends = cargo
+	makedepends = rustc
+	incompatible = debian:bullseye
+	maintainer = Diego Magdaleno <diegomagdaleno@pm.me>
+	source = https://github.com/jhspetersson/fselect.git
+
 pkgname = fselect-git
-gives = fselect
-pkgver = 0.8.4
-pkgdesc = Find files with SQL-like queries
-source = https://github.com/jhspetersson/fselect.git
-makedepends = cargo
-makedepends = rustc
-incompatible = debian:bullseye
-maintainer = Diego Magdaleno <diegomagdaleno@pm.me>

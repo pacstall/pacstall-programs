@@ -1,9 +1,11 @@
+pkgbase = mullvad-vpn-beta-deb
+	gives = mullvad-vpn
+	pkgver = 2023.4
+	pkgdesc = The Mullvad VPN client app for desktop - Beta channel
+	arch = amd64
+	breaks = mullvad-vpn-deb
+	repology = project: mullvad-vpn
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2023.4/MullvadVPN-2023.4_amd64.deb
+	sha256sums = ecda227eb5f5ff7a542474d82bed9d568b3fa05b0a898c328421a2d3b4ac1213
+
 pkgname = mullvad-vpn-beta-deb
-gives = mullvad-vpn
-pkgver = 2023.4
-pkgdesc = The Mullvad VPN client app for desktop - Beta channel
-arch = amd64
-source = https://github.com/mullvad/mullvadvpn-app/releases/download/2023.4/MullvadVPN-2023.4_amd64.deb
-breaks = mullvad-vpn-deb
-repology = project: mullvad-vpn
-sha256sums = ecda227eb5f5ff7a542474d82bed9d568b3fa05b0a898c328421a2d3b4ac1213

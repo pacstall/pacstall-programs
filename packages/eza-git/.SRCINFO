@@ -1,13 +1,15 @@
+pkgbase = eza-git
+	gives = eza
+	pkgver = 0.18.15
+	pkgdesc = A modern, maintained replacement for ls
+	url = https://the.exa.website/
+	makedepends = cargo
+	makedepends = libgit2-dev
+	makedepends = cmake
+	makedepends = rustc
+	makedepends = pandoc
+	incompatible = debian:bookworm
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://github.com/eza-community/eza.git
+
 pkgname = eza-git
-gives = eza
-pkgver = 0.18.15
-pkgdesc = A modern, maintained replacement for ls
-url = https://the.exa.website/
-source = https://github.com/eza-community/eza.git
-makedepends = cargo
-makedepends = libgit2-dev
-makedepends = cmake
-makedepends = rustc
-makedepends = pandoc
-incompatible = debian:bookworm
-maintainer = Elsie19 <elsie19@pm.me>

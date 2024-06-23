@@ -1,7 +1,9 @@
+pkgbase = quintom-cursor-theme-git
+	gives = quintom-cursor-theme
+	pkgver = 0.0.1
+	pkgrel = 2
+	pkgdesc = A cursor theme designed to look decent
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://gitlab.com/Burning_Cube/quintom-cursor-theme.git
+
 pkgname = quintom-cursor-theme-git
-gives = quintom-cursor-theme
-pkgver = 0.0.1
-pkgrel = 2
-pkgdesc = A cursor theme designed to look decent
-source = https://gitlab.com/Burning_Cube/quintom-cursor-theme.git
-maintainer = Elsie19 <elsie19@pm.me>

@@ -1,12 +1,14 @@
+pkgbase = duf-deb
+	gives = duf
+	pkgver = 0.8.1
+	pkgdesc = Disk Usage/Free Utility - a better 'df' alternative
+	arch = amd64
+	breaks = duf-bin
+	breaks = duf-git
+	replaces = duf
+	maintainer = KwonNam Son <kwon37xi@gmail.com>
+	repology = project: duf
+	source = https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_amd64.deb
+	sha256sums = 746983b4065e80b14f2e5af70c58e2283bb8b3a128cb076954d7329d476d5fad
+
 pkgname = duf-deb
-gives = duf
-pkgver = 0.8.1
-pkgdesc = Disk Usage/Free Utility - a better 'df' alternative
-arch = amd64
-source = https://github.com/muesli/duf/releases/download/v0.8.1/duf_0.8.1_linux_amd64.deb
-breaks = duf-bin
-breaks = duf-git
-replaces = duf
-maintainer = KwonNam Son <kwon37xi@gmail.com>
-repology = project: duf
-sha256sums = 746983b4065e80b14f2e5af70c58e2283bb8b3a128cb076954d7329d476d5fad

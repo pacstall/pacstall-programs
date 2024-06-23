@@ -1,10 +1,12 @@
+pkgbase = pycharm-community-bin
+	gives = pycharm-community
+	pkgver = 2023.2.5
+	pkgdesc = Python IDE for professional developers aimed at productivity with a keyboard-centric focus.
+	maintainer = ObsidianPresidium <emil@aarestrup.nu>
+	repology = project: pycharm
+	source = https://download.jetbrains.com/python/pycharm-community-2023.2.5.tar.gz
+	source = pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/pycharm-community-bin/pycharm.desktop
+	sha256sums = 3a35e0b2245e6ecad5dc05b0fc81cf36cb4f5fe0bc987c8559e04c808de9d072
+	sha256sums = 0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04
+
 pkgname = pycharm-community-bin
-gives = pycharm-community
-pkgver = 2023.2.5
-pkgdesc = Python IDE for professional developers aimed at productivity with a keyboard-centric focus.
-source = https://download.jetbrains.com/python/pycharm-community-2023.2.5.tar.gz
-source = pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/pycharm-community-bin/pycharm.desktop
-maintainer = ObsidianPresidium <emil@aarestrup.nu>
-repology = project: pycharm
-sha256sums = 3a35e0b2245e6ecad5dc05b0fc81cf36cb4f5fe0bc987c8559e04c808de9d072
-sha256sums = 0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04

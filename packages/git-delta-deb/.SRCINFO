@@ -1,9 +1,11 @@
+pkgbase = git-delta-deb
+	gives = git-delta
+	pkgver = 0.17.0
+	pkgdesc = A viewer for git and diff output
+	arch = amd64
+	incompatible = debian:bullseye
+	repology = project: git-delta
+	source = https://github.com/dandavison/delta/releases/download/0.17.0/git-delta_0.17.0_amd64.deb
+	sha256sums = e11c201107edc86212a8bfdf5ca51a7b5bd497008f1f57c4319a2746991ff7db
+
 pkgname = git-delta-deb
-gives = git-delta
-pkgver = 0.17.0
-pkgdesc = A viewer for git and diff output
-arch = amd64
-source = https://github.com/dandavison/delta/releases/download/0.17.0/git-delta_0.17.0_amd64.deb
-incompatible = debian:bullseye
-repology = project: git-delta
-sha256sums = e11c201107edc86212a8bfdf5ca51a7b5bd497008f1f57c4319a2746991ff7db

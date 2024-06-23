@@ -1,10 +1,12 @@
+pkgbase = meson-focal-deb
+	gives = meson
+	pkgver = 0.61.2
+	pkgrel = 2
+	pkgdesc = Special built meson for compiling on focal
+	arch = any
+	compatible = ubuntu:focal
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/oklopfer/debs/raw/master/meson-focal/meson_0.61.2-1_all.deb
+	sha256sums = d9c97eac0a3573a98db98a7e56e043968da8ad7908c31f6b16daa19febd28e9b
+
 pkgname = meson-focal-deb
-gives = meson
-pkgver = 0.61.2
-pkgrel = 2
-pkgdesc = Special built meson for compiling on focal
-arch = any
-source = https://github.com/oklopfer/debs/raw/master/meson-focal/meson_0.61.2-1_all.deb
-compatible = ubuntu:focal
-maintainer = Oren Klopfer <oren@taumoda.com>
-sha256sums = d9c97eac0a3573a98db98a7e56e043968da8ad7908c31f6b16daa19febd28e9b

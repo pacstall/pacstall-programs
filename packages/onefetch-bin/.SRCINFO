@@ -1,6 +1,8 @@
+pkgbase = onefetch-bin
+	gives = onefetch
+	pkgver = 2.18.0
+	pkgdesc = Git repository summary on your terminal
+	source = https://github.com/o2sh/onefetch/releases/download/2.18.0/onefetch-linux.tar.gz
+	sha256sums = 414d166e55e045a18d3a908cbe719cca08dabe5bfde45fa8aefce71099305a16
+
 pkgname = onefetch-bin
-gives = onefetch
-pkgver = 2.18.0
-pkgdesc = Git repository summary on your terminal
-source = https://github.com/o2sh/onefetch/releases/download/2.18.0/onefetch-linux.tar.gz
-sha256sums = 414d166e55e045a18d3a908cbe719cca08dabe5bfde45fa8aefce71099305a16

@@ -1,11 +1,13 @@
+pkgbase = steam-deb
+	gives = steam-launcher
+	pkgver = 1.0.0.79
+	pkgdesc = Steam is a video game digital distribution service by Valve
+	arch = amd64
+	breaks = steam-launcher-bin
+	breaks = steam-launcher-app
+	replaces = steam-launcher
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: steam-launcher
+	source = https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb
+
 pkgname = steam-deb
-gives = steam-launcher
-pkgver = 1.0.0.79
-pkgdesc = Steam is a video game digital distribution service by Valve
-arch = amd64
-source = https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb
-breaks = steam-launcher-bin
-breaks = steam-launcher-app
-replaces = steam-launcher
-maintainer = Oren Klopfer <oren@taumoda.com>
-repology = project: steam-launcher

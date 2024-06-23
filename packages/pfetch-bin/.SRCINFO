@@ -1,13 +1,15 @@
+pkgbase = pfetch-bin
+	gives = pfetch
+	pkgver = 0.6.0
+	pkgdesc = A lightweight and simple fetch tool
+	breaks = pfetch
+	breaks = pfetch-bin
+	breaks = pfetch-deb
+	breaks = pfetch-app
+	breaks = pfetch-git
+	maintainer = Zahrun <Zahrun@github.com>
+	repology = project: pfetch
+	source = https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.zip
+	sha256sums = ec85100a912c0bdd06a82a9647d19a5c6d1d51c3a262d60b9ac8f17570fbfb39
+
 pkgname = pfetch-bin
-gives = pfetch
-pkgver = 0.6.0
-pkgdesc = A lightweight and simple fetch tool
-source = https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.zip
-breaks = pfetch
-breaks = pfetch-bin
-breaks = pfetch-deb
-breaks = pfetch-app
-breaks = pfetch-git
-maintainer = Zahrun <Zahrun@github.com>
-repology = project: pfetch
-sha256sums = ec85100a912c0bdd06a82a9647d19a5c6d1d51c3a262d60b9ac8f17570fbfb39

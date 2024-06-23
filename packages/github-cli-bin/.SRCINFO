@@ -1,12 +1,14 @@
+pkgbase = github-cli-bin
+	gives = gh
+	pkgver = 2.49.0
+	pkgdesc = GitHub's official command line tool - Binary version
+	arch = amd64
+	breaks = gh-git
+	breaks = gh-deb
+	replaces = gh
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: gh
+	source = https://github.com/cli/cli/releases/download/v2.49.0/gh_2.49.0_linux_amd64.tar.gz
+	sha256sums = 3f7ef10a8ae6164220db20cf6d4fb96528c61d614f0803ccf39b1cabb6ae7263
+
 pkgname = github-cli-bin
-gives = gh
-pkgver = 2.49.0
-pkgdesc = GitHub's official command line tool - Binary version
-arch = amd64
-source = https://github.com/cli/cli/releases/download/v2.49.0/gh_2.49.0_linux_amd64.tar.gz
-breaks = gh-git
-breaks = gh-deb
-replaces = gh
-maintainer = Oren Klopfer <oren@taumoda.com>
-repology = project: gh
-sha256sums = 3f7ef10a8ae6164220db20cf6d4fb96528c61d614f0803ccf39b1cabb6ae7263
