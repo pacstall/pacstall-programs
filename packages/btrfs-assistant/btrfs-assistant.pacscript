@@ -12,13 +12,13 @@ optdepends=(
 makedepends=('git' 'cmake' 'g++' 'fonts-noto' 'qt6-tools-dev' 'qt6-svg-dev' 'libbtrfs-dev' 'libbtrfsutil-dev' 'pkexec')
 incompatible=('debian:buster' 'debian:bullseye' 'ubuntu:bionic' 'ubuntu:focal')
 backup=(etc/btrfs-assistant.conf)
-source=("$pkgname-$pkgver.tar.gz::$url/-/archive/$pkgver/$pkgname-$pkgver.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz::$url/-/archive/$pkgver/${pkgname}-${pkgver}.tar.gz")
 sha256sums=('cabc3824651606bd37db1809d7d2eeeaa724180d138613bff3490362751b9594')
 maintainer=("Eric Renfro <psi-jack@linux-help.org")
 
 build() {
   cd "$srcdir"
-  cmake -B build -S "$pkgname-$pkgver" -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE='Release'
+  cmake -B build -S "${pkgname}-${pkgver}" -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE='Release'
   make -C build
 }
 
