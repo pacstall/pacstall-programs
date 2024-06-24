@@ -16,7 +16,7 @@ maintainer=("Eric Renfro <psi-jack@linux-help.org")
 
 package() {
     cd "${pkgname}-${pkgver}"
-    make DESTDIR="${pkgdir}" install
+    make DESTDIR="${pkgdir}" GRUB_UPDATE_EXCLUDE=true install
 }
 
 # vim:set ts=2 sw=2 et:
