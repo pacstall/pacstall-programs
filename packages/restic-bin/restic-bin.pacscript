@@ -1,7 +1,7 @@
 pkgname="restic-bin"
 gives="restic"
 pkgver="0.16.4"
-arch=('amd64' 'arm64' 'arm' 'i386' 'mips64el' 'ppc64el' 'riscv64' 's390x')
+arch=('amd64' 'arm64' 'armhf' 'i386' 'mips64el' 'ppc64el' 'riscv64' 's390x')
 sha256sums_amd64=("3d4d43c169a9e28ea76303b1e8b810f0dcede7478555fdaa8959971ad499e324")
 sha256sums_arm64=("9d2f44538ea0c6309426cb290d3a6b8b0b85de5de7f1496ff40c843b36bf8a8d")
 sha256sums_arm=("c4677e4eaf38ceda97841c8cae883883e026751970b41bb1a3f5e0610e07a5b1")
