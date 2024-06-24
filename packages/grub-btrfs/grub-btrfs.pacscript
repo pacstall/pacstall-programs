@@ -6,8 +6,8 @@ url="https://github.com/Antynea/${pkgname}"
 license=('GPL-3.0-only')
 depends=('btrfs-progs' 'grub2-common')
 optdepends=(
-    'snapper: For snapper support'
-    'inotify-tools: For grub-btrfsd daemon'
+  'snapper: For snapper support'
+  'inotify-tools: For grub-btrfsd daemon'
 )
 backup=('etc/default/grub-btrfs/config')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/${pkgver}.tar.gz")
@@ -15,8 +15,8 @@ b2sums=('e2f11a0a8282e3ec8ff8223e3bad70b5d5c5e81b4d740a1bf3554db412dbe48a8a0f216
 maintainer=("Eric Renfro <psi-jack@linux-help.org")
 
 package() {
-    cd "${pkgname}-${pkgver}"
-    make DESTDIR="${pkgdir}" GRUB_UPDATE_EXCLUDE=true install
+  cd "${pkgname}-${pkgver}"
+  make DESTDIR="${pkgdir}" GRUB_UPDATE_EXCLUDE=true install
 }
 
 # vim:set ts=2 sw=2 et:
