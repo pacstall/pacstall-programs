@@ -27,7 +27,7 @@ maintainer=("Eric Renfro <psi-jack@linux-help.org>")
 package() {
   cd "${_archive}"
   # Install binary
-  install -Dm755 "${gives}_linux_${CARCH}" "${pkgdir}/usr/bin/${gives}"
+  install -Dm755 "${gives}_${pkgver}_linux_${CARCH}" "${pkgdir}/usr/bin/${gives}"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
