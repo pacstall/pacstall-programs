@@ -18,6 +18,7 @@ source_mips64el=("https://github.com/restic/restic/releases/download/v${pkgver}/
 source_ppc64el=("https://github.com/restic/restic/releases/download/v${pkgver}/restic_${pkgver}_linux_ppc64le.bz2")
 source_riscv64=("https://github.com/restic/restic/releases/download/v${pkgver}/restic_${pkgver}_linux_riscv64.bz2")
 source_s390x=("https://github.com/restic/restic/releases/download/v${pkgver}/restic_${pkgver}_linux_s390x.bz2")
+optdepends=('fuse: mount archive support')
 conflicts=('restic')
 replaces=('restic')
 pkgdesc="Fast, secure, efficient backup program"
