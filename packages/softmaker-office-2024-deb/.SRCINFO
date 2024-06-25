@@ -9,7 +9,7 @@ source = https://www.softmaker.net/down/softmaker-office-2024_1214-01_amd64.deb
 depends = libcurl4 | libcurl3>=7.16.2
 depends = libc6
 depends = libgl1-mesa-glx | libgl1
-depends = libglib2.0
+depends = libglib2.0 | libglib2.0-0t64
 depends = libgstreamer-plugins-base1.0-0
 depends = libgstreamer1.0-0
 depends = libstdc++6
