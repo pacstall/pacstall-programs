@@ -1,10 +1,12 @@
+pkgbase = st-lukesmith-git
+	gives = st
+	pkgver = 0.0.1
+	depends = fontconfig
+	makedepends = make
+	makedepends = libharfbuzz-bin
+	makedepends = libxft-dev
+	makedepends = libpango1.0-dev
+	license = MIT
+	source = https://github.com/LukeSmithxyz/st.git
+
 pkgname = st-lukesmith-git
-gives = st
-pkgver = 0.0.1
-source = https://github.com/LukeSmithxyz/st.git
-depends = fontconfig
-makedepends = make
-makedepends = libharfbuzz-bin
-makedepends = libxft-dev
-makedepends = libpango1.0-dev
-license = MIT

@@ -1,18 +1,20 @@
+pkgbase = noisetorch-bin
+	gives = noisetorch
+	pkgver = 0.12.2
+	pkgdesc = Easy to use noise suppression for PulseAudio
+	depends = policykit-1
+	breaks = noisetorch
+	breaks = noisetorch-deb
+	breaks = noisetorch-app
+	breaks = noisetorch-git
+	maintainer = Marie Piontek <marie@kaifa.ch>
+	repology = project: noisetorch
+	repology = visiblename: noisetorch-bin
+	source = https://github.com/noisetorch/NoiseTorch/releases/download/v0.12.2/NoiseTorch_x64_v0.12.2.tgz
+	source = noisetorch-pipewire.service::https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pipewire.service?h=noisetorch-bin
+	source = noisetorch-pulse.service::https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pulse.service?h=noisetorch-bin
+	sha256sums = aaa29e76736dc3432197e665f3c868496b5aca52183b67e5a0a1b8fa7913fe60
+	sha256sums = SKIP
+	sha256sums = SKIP
+
 pkgname = noisetorch-bin
-gives = noisetorch
-pkgver = 0.12.2
-pkgdesc = Easy to use noise suppression for PulseAudio
-source = https://github.com/noisetorch/NoiseTorch/releases/download/v0.12.2/NoiseTorch_x64_v0.12.2.tgz
-source = noisetorch-pipewire.service::https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pipewire.service?h=noisetorch-bin
-source = noisetorch-pulse.service::https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pulse.service?h=noisetorch-bin
-depends = policykit-1
-breaks = noisetorch
-breaks = noisetorch-deb
-breaks = noisetorch-app
-breaks = noisetorch-git
-maintainer = Marie Piontek <marie@kaifa.ch>
-repology = project: noisetorch
-repology = visiblename: noisetorch-bin
-sha256sums = aaa29e76736dc3432197e665f3c868496b5aca52183b67e5a0a1b8fa7913fe60
-sha256sums = SKIP
-sha256sums = SKIP

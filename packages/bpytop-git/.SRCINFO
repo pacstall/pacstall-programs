@@ -1,12 +1,14 @@
+pkgbase = bpytop-git
+	gives = bpytop
+	pkgver = 1.0.68
+	pkgdesc = Linux/OSX/FreeBSD resource monitor.
+	depends = python3
+	depends = python3-pip
+	depends = python3-distutils
+	makedepends = make
+	makedepends = python3
+	makedepends = python3-pip
+	makedepends = python3-distutils
+	source = https://github.com/aristocratos/bpytop.git
+
 pkgname = bpytop-git
-gives = bpytop
-pkgver = 1.0.68
-pkgdesc = Linux/OSX/FreeBSD resource monitor.
-source = https://github.com/aristocratos/bpytop.git
-depends = python3
-depends = python3-pip
-depends = python3-distutils
-makedepends = make
-makedepends = python3
-makedepends = python3-pip
-makedepends = python3-distutils

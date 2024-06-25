@@ -1,7 +1,9 @@
+pkgbase = wgcf-bin
+	pkgver = 2.2.22
+	pkgdesc = Cross-platform, unofficial CLI for Cloudflare Warp
+	arch = amd64
+	maintainer = Wildy Sheverando <wildy@wildyverando.com>
+	source = https://github.com/ViRb3/wgcf/releases/download/v2.2.22/wgcf_2.2.22_linux_amd64
+	sha256sums = 268d187e649870b603ad2e5c1b74a696251f6c2f6f075c726a174a0039b0b1e2
+
 pkgname = wgcf-bin
-pkgver = 2.2.22
-pkgdesc = Cross-platform, unofficial CLI for Cloudflare Warp
-arch = amd64
-source = https://github.com/ViRb3/wgcf/releases/download/v2.2.22/wgcf_2.2.22_linux_amd64
-maintainer = Wildy Sheverando <wildy@wildyverando.com>
-sha256sums = 268d187e649870b603ad2e5c1b74a696251f6c2f6f075c726a174a0039b0b1e2

@@ -1,8 +1,10 @@
+pkgbase = fm6000-git
+	gives = fm6000
+	pkgver = 0.0.1
+	pkgdesc = A simple fetch tool written in Perl
+	depends = perl
+	breaks = fm6000
+	source = https://github.com/anhsirk0/fetch-master-6000.git
+	sha256sums = d0127441a11db8d640a28753a8494a5155514e161415ca7b2c5ab3b33024517f
+
 pkgname = fm6000-git
-gives = fm6000
-pkgver = 0.0.1
-pkgdesc = A simple fetch tool written in Perl
-source = https://github.com/anhsirk0/fetch-master-6000.git
-depends = perl
-breaks = fm6000
-sha256sums = d0127441a11db8d640a28753a8494a5155514e161415ca7b2c5ab3b33024517f

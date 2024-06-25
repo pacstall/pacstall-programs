@@ -1,8 +1,10 @@
+pkgbase = cutefish-icons-git
+	gives = cutefish-icons
+	pkgver = 0.8
+	pkgdesc = System default icon theme of CutefishOS.
+	makedepends = extra-cmake-modules
+	makedepends = ninja-build
+	license = GPL-3.0
+	source = https://github.com/cutefishos/icons.git
+
 pkgname = cutefish-icons-git
-gives = cutefish-icons
-pkgver = 0.8
-pkgdesc = System default icon theme of CutefishOS.
-source = https://github.com/cutefishos/icons.git
-makedepends = extra-cmake-modules
-makedepends = ninja-build
-license = GPL-3.0

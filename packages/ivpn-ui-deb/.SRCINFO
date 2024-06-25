@@ -1,11 +1,13 @@
+pkgbase = ivpn-ui-deb
+	gives = ivpn-ui
+	pkgver = 3.14.2
+	pkgdesc = Official IVPN Desktop app - UI Package
+	arch = amd64
+	pacdeps = ivpn-deb
+	breaks = ivpn-ui-git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: ivpn-ui
+	source = https://repo.ivpn.net/stable/pool/ivpn-ui_3.14.2_amd64.deb
+	sha256sums = f64cd84b4e0ce252f0c066977d180b953c55f2b485cf7a5437b1e4c7af1959f7
+
 pkgname = ivpn-ui-deb
-gives = ivpn-ui
-pkgver = 3.14.2
-pkgdesc = Official IVPN Desktop app - UI Package
-arch = amd64
-source = https://repo.ivpn.net/stable/pool/ivpn-ui_3.14.2_amd64.deb
-pacdeps = ivpn-deb
-breaks = ivpn-ui-git
-maintainer = Oren Klopfer <oren@taumoda.com>
-repology = project: ivpn-ui
-sha256sums = f64cd84b4e0ce252f0c066977d180b953c55f2b485cf7a5437b1e4c7af1959f7

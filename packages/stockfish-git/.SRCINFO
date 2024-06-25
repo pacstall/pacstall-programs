@@ -1,9 +1,11 @@
+pkgbase = stockfish-git
+	gives = stockfish
+	pkgver = 0.0.1
+	pkgrel = 2
+	pkgdesc = The Stockfish chess engine
+	url = https://stockfishchess.org/
+	breaks = stockfish-git
+	maintainer = pythoncrazy <pinakpaliwal07@gmail.com>
+	source = https://github.com/official-stockfish/Stockfish.git
+
 pkgname = stockfish-git
-gives = stockfish
-pkgver = 0.0.1
-pkgrel = 2
-pkgdesc = The Stockfish chess engine
-url = https://stockfishchess.org/
-source = https://github.com/official-stockfish/Stockfish.git
-breaks = stockfish-git
-maintainer = pythoncrazy <pinakpaliwal07@gmail.com>

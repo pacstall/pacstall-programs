@@ -1,13 +1,15 @@
+pkgbase = vscodium-deb
+	gives = codium
+	pkgver = 1.89.1.24130
+	pkgdesc = Binary releases of VS Code without MS branding/telemetry/licensing
+	arch = arm64
+	arch = amd64
+	breaks = codium
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: vscodium
+	source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.89.1.24130/codium_1.89.1.24130_arm64.deb
+	sha256sums_arm64 = f94cd2f8b70589b86b982420410f1d4b61b8b734ca10b635915f3f62cd87f159
+	source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.89.1.24130/codium_1.89.1.24130_amd64.deb
+	sha256sums_amd64 = 8e4fdac78ce89cfce0f30bd9b2ed597867396673bad22b5f9f852bb1cbdd0a05
+
 pkgname = vscodium-deb
-gives = codium
-pkgver = 1.89.1.24130
-pkgdesc = Binary releases of VS Code without MS branding/telemetry/licensing
-arch = arm64
-arch = amd64
-source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.89.1.24130/codium_1.89.1.24130_arm64.deb
-source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.89.1.24130/codium_1.89.1.24130_amd64.deb
-breaks = codium
-maintainer = Oren Klopfer <oren@taumoda.com>
-repology = project: vscodium
-sha256sums_amd64 = 8e4fdac78ce89cfce0f30bd9b2ed597867396673bad22b5f9f852bb1cbdd0a05
-sha256sums_arm64 = f94cd2f8b70589b86b982420410f1d4b61b8b734ca10b635915f3f62cd87f159

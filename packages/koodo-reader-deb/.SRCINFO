@@ -1,13 +1,15 @@
+pkgbase = koodo-reader-deb
+	gives = koodo-reader
+	pkgver = 1.5.3
+	pkgdesc = A cross-platform ebook reader
+	arch = amd64
+	arch = arm64
+	replaces = koodo-reader
+	maintainer = সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>
+	repology = project: koodo-reader
+	source_amd64 = https://github.com/troyeguo/koodo-reader/releases/download/v1.5.3/Koodo.Reader-1.5.3-amd64.deb
+	sha256sums_amd64 = 443991e8250c3c19efad826d8aeb37cfe3183ed8fbd49239cc799c40e5990b42
+	source_arm64 = https://github.com/troyeguo/koodo-reader/releases/download/v1.5.3/Koodo.Reader-1.5.3-arm64.deb
+	sha256sums_arm64 = 789f997458408ceb2089db84929805f0fd75b0a2a58d34867fc68b62ec36cc4f
+
 pkgname = koodo-reader-deb
-gives = koodo-reader
-pkgver = 1.5.3
-pkgdesc = A cross-platform ebook reader
-arch = amd64
-arch = arm64
-replaces = koodo-reader
-maintainer = সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>
-repology = project: koodo-reader
-source_amd64 = https://github.com/troyeguo/koodo-reader/releases/download/v1.5.3/Koodo.Reader-1.5.3-amd64.deb
-source_arm64 = https://github.com/troyeguo/koodo-reader/releases/download/v1.5.3/Koodo.Reader-1.5.3-arm64.deb
-sha256sums_amd64 = 443991e8250c3c19efad826d8aeb37cfe3183ed8fbd49239cc799c40e5990b42
-sha256sums_arm64 = 789f997458408ceb2089db84929805f0fd75b0a2a58d34867fc68b62ec36cc4f

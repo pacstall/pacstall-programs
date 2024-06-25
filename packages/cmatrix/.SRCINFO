@@ -1,10 +1,12 @@
+pkgbase = cmatrix
+	pkgver = 2.0
+	pkgdesc = Terminal based The Matrix like implementation
+	depends = libncurses5-dev
+	depends = libncursesw5-dev
+	makedepends = autoconf
+	makedepends = make
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://github.com/abishekvashok/cmatrix/releases/download/v2.0/cmatrix-v2.0-Butterscotch.tar
+	sha256sums = e46c739bfe79e570db2461f89ac66ea79a8fab8efb8423ab53f143e93c2553bc
+
 pkgname = cmatrix
-pkgver = 2.0
-pkgdesc = Terminal based The Matrix like implementation
-source = https://github.com/abishekvashok/cmatrix/releases/download/v2.0/cmatrix-v2.0-Butterscotch.tar
-depends = libncurses5-dev
-depends = libncursesw5-dev
-makedepends = autoconf
-makedepends = make
-maintainer = Elsie19 <elsie19@pm.me>
-sha256sums = e46c739bfe79e570db2461f89ac66ea79a8fab8efb8423ab53f143e93c2553bc

@@ -1,8 +1,10 @@
+pkgbase = cutefish-wallpapers-git
+	gives = cutefish-wallpapers
+	pkgver = 1.0
+	pkgdesc = CutefishOS's system wallpaper.
+	makedepends = cmake
+	makedepends = ninja-build
+	license = GPL-3.0
+	source = https://github.com/cutefishos/wallpapers.git
+
 pkgname = cutefish-wallpapers-git
-gives = cutefish-wallpapers
-pkgver = 1.0
-pkgdesc = CutefishOS's system wallpaper.
-source = https://github.com/cutefishos/wallpapers.git
-makedepends = cmake
-makedepends = ninja-build
-license = GPL-3.0

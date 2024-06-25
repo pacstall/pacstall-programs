@@ -1,9 +1,11 @@
+pkgbase = lazarus-project-deb
+	gives = lazarus-project
+	pkgver = 3.2
+	pkgdesc = Delphi-like IDE for FreePascal gtk2 version
+	breaks = lazarus-ide-qt6
+	maintainer = xdavius <xdavius@github.com>
+	repology = project: lazarus
+	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.2/lazarus-project_3.2.0-0_amd64.deb
+	sha256sums = 82bce48deca77432a1e95b300a358f8de9650179eeb9c5700bc85684e1839f4b
+
 pkgname = lazarus-project-deb
-gives = lazarus-project
-pkgver = 3.2
-pkgdesc = Delphi-like IDE for FreePascal gtk2 version
-source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.2/lazarus-project_3.2.0-0_amd64.deb
-breaks = lazarus-ide-qt6
-maintainer = xdavius <xdavius@github.com>
-repology = project: lazarus
-sha256sums = 82bce48deca77432a1e95b300a358f8de9650179eeb9c5700bc85684e1839f4b
