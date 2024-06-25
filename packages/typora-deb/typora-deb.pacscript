@@ -13,6 +13,6 @@ optdepends=(
 )
 replaces=("typora")
 pkgdesc="A minimal markdown editor and reader."
-maintainer = Eric Renfro <psi-jack@linux-help.org>
+maintainer=("Eric Renfro <psi-jack@linux-help.org>")
 
 # vim:set ft=sh ts=2 sw=2 et:
