@@ -7,16 +7,16 @@ url = https://www.softmaker.com
 arch = amd64
 source = https://www.softmaker.net/down/softmaker-office-2024_1214-01_amd64.deb
 depends = libcurl4 | libcurl3>=7.16.2
-depends = libc6>=2.17
+depends = libc6
 depends = libgl1-mesa-glx | libgl1
-depends = libglib2.0-0>=2.12.0
-depends = libgstreamer-plugins-base1.0-0>=1.0.0
-depends = libgstreamer1.0-0>=1.0.0
-depends = libstdc++6>=5.2
+depends = libglib2.0
+depends = libgstreamer-plugins-base1.0-0
+depends = libgstreamer1.0-0
+depends = libstdc++6
 depends = libx11-6
 depends = libxext6
 depends = libxmu6
-depends = libxrandr2>=2:1.2.99.3
+depends = libxrandr2
 depends = libxrender1
 replaces = softmaker-office-2024
 license = custom:"Copyright (c) 2024 SoftMaker GmbH All Rights Reserved."
