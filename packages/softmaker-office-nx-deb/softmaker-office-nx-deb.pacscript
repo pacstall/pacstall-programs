@@ -1,18 +1,19 @@
 pkgname="softmaker-office-nx-deb"
 gives="softmaker-office-nx"
-pkgver="1214"
-pkgrel="01"
+pkgver="3643"
+buildver="1214-01"
 url="https://www.softmaker.com"
 repology=("project: softmaker-office-nx")
 arch=('amd64')
 license=('custom:"Copyright (c) 2024 SoftMaker GmbH All Rights Reserved."')
 sha256sums=("c397a47c60fc34fb17f1fda6da00c3143c99c0e38d6b38421a051b26536e9b0f")
-source=("https://www.softmaker.net/down/${gives}_${pkgver}-${pkgrel}_amd64.deb")
+source=("https://www.softmaker.net/down/${gives}_${buildver}_amd64.deb")
 depends=(
   'libcurl4 | libcurl3>=7.16.2' 'libc6' 'libgl1-mesa-glx | libgl1'
   'libglib2.0-0' 'libgstreamer-plugins-base1.0-0' 'libgstreamer1.0-0'
   'libstdc++6' 'libx11-6' 'libxext6' 'libxmu6' 'libxrandr2' 'libxrender1'
 )
+replaces=("softmaker-office-2024" "softmaker-freeoffice-2024")
 conflicts=("softmaker-office-2024" "softmaker-freeoffice-2024")
 pkgdesc="Proprietary office suite; word processing, spreadsheets, presentations; subscription edition"
 maintainer=("Eric Renfro <psi-jack@linux-help.org>")
