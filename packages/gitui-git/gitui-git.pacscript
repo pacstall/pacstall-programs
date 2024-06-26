@@ -1,7 +1,7 @@
 pkgname="gitui-git"
 gives="gitui"
 pkgdesc="Blazing fast terminal-ui for git written in Rust"
-url="https://github.com/extrawurst/gitui"
+url='https://github.com/extrawurst/gitui'
 source=("https://github.com/extrawurst/gitui.git")
 maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
 pkgver="0.26.3"
