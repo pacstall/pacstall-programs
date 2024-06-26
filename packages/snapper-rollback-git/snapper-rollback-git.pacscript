@@ -15,7 +15,7 @@ sha256sums=('SKIP')
 maintainer=("Eric Renfro <psi-jack@linux-help.org>")
 
 package() {
-    cd "${_archive}"
-    install -Dm644  "snapper-rollback.conf" -t "$pkgdir/etc/"
-    install -Dm755  "snapper-rollback.py" "$pkgdir/usr/sbin/snapper-rollback"
+  cd "${_archive}"
+  install -Dm644 "snapper-rollback.conf" -t "$pkgdir/etc/"
+  install -Dm755 "snapper-rollback.py" "$pkgdir/usr/sbin/snapper-rollback"
 }
