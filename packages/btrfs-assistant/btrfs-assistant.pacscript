@@ -1,8 +1,8 @@
 pkgname="btrfs-assistant"
 pkgver="2.1.1"
-pkgdesc="An application for managing BTRFS subvolumes and Snapper snapshots"
+pkgdesc="Manage BTRFS subvolumes and snapper snapshots"
 arch=('amd64' 'arm64')
-url="https://gitlab.com/${pkgname}/${pkgname}"
+url='https://gitlab.com/btrfs-assistant/btrfs-assistant'
 license=('GPL-3.0-only')
 depends=('libqt6svg6' 'fonts-noto' 'pkexec' 'util-linux' 'btrfs-progs' 'diffutils')
 optdepends=(

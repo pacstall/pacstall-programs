@@ -1,6 +1,6 @@
 pkgname = btrfs-assistant
 pkgver = 2.1.1
-pkgdesc = An application for managing BTRFS subvolumes and Snapper snapshots
+pkgdesc = Manage BTRFS subvolumes and snapper snapshots
 url = https://gitlab.com/btrfs-assistant/btrfs-assistant
 arch = amd64
 arch = arm64
