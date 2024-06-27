@@ -13,8 +13,8 @@ depends=(
   'libglib2.0-0' 'libgstreamer-plugins-base1.0-0' 'libgstreamer1.0-0'
   'libstdc++6' 'libx11-6' 'libxext6' 'libxmu6' 'libxrandr2' 'libxrender1'
 )
-replaces=("softmaker-office-2024" "softmaker-office-nx")
-conflicts=("softmaker-office-2024" "softmaker-office-nx")
+conflicts=("softmaker-office-2024-deb" "softmaker-office-2024" "softmaker-freeoffice-2024")
+replaces=("${conflicts[@]}")
 pkgdesc="Proprietary office suite; word processing, spreadsheets, presentations; limited feature free edition"
 maintainer=("Eric Renfro <psi-jack@linux-help.org>")
 
