@@ -1,12 +1,13 @@
 pkgname = typora-deb
 gives = typora
-pkgver = 1.9.3
-pkgdesc = A minimal markdown editor and reader.
+pkgver = 1.9.3-1
+pkgdesc = A minimal markdown editor and reader
+url = https://typora.io
 arch = amd64
 source = https://download.typora.io/linux/typora_1.9.3_amd64.deb
 depends = libgtk-3-0
 depends = libnss3
-optdepends = noto-fonts-enoji: Or some other emoji fonts to see/use emojis
+optdepends = noto-fonts-emoji: Or some other emoji fonts to see/use emojis
 optdepends = pandoc: Import/export for extra file formats
 replaces = typora
 license = custom:"Copyright (c) 2015 Abner Lee All Rights Reserved."
