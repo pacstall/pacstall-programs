@@ -20,12 +20,11 @@ source_riscv64=("https://github.com/restic/restic/releases/download/v${pkgver}/r
 source_s390x=("https://github.com/restic/restic/releases/download/v${pkgver}/restic_${pkgver}_linux_s390x.bz2")
 optdepends=('fuse: mount archive support')
 pkgdesc="Fast, secure, efficient backup program"
-url="https://github.com/restic/restic"
+url='https://github.com/restic/restic'
 maintainer=("Eric Renfro <psi-jack@linux-help.org>")
 
 package() {
-  cd "${_archive}"
-  # Install binary
+  cd "${gives}"
   install -Dm755 "${gives}_${pkgver}_linux_${CARCH}" "${pkgdir}/usr/bin/${gives}"
 }
 
