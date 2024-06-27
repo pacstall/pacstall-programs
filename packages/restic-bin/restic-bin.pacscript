@@ -24,7 +24,6 @@ url='https://github.com/restic/restic'
 maintainer=("Eric Renfro <psi-jack@linux-help.org>")
 
 package() {
-  cd "${gives}"
   install -Dm755 "${gives}_${pkgver}_linux_${CARCH}" "${pkgdir}/usr/bin/${gives}"
 }
 
