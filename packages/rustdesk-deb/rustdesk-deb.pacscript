@@ -18,3 +18,5 @@ conflicts=("${pkgname}" "${gives}")
 replaces=("${conflicts[@]}")
 pkgdesc="Yet another remote desktop software, written in Rust"
 maintainer=("xdavius <xdavius@github.com>")
+
+# vim:set ft=sh ts=2 sw=2 et:
