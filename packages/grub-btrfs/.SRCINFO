@@ -2,7 +2,6 @@ pkgname = grub-btrfs
 pkgver = 4.13
 pkgdesc = Include btrfs snapshots in GRUB boot options
 url = https://github.com/Antynea/grub-btrfs
-arch = any
 source = grub-btrfs-4.13.tar.gz::https://github.com/Antynea/grub-btrfs/archive/4.13.tar.gz
 depends = btrfs-progs
 depends = grub2-common
