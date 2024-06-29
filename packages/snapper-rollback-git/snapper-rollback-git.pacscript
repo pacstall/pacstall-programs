@@ -8,7 +8,6 @@ url='https://github.com/jrabinow/snapper-rollback'
 depends=('coreutils' 'python3' 'btrfs-progs' 'python3-btrfsutil')
 makedepends=('git')
 provides=('snapper-rollback')
-backup=('etc/snapper-rollback.conf')
 install=snapper-rollback.install
 source=("https://github.com/jrabinow/snapper-rollback.git")
 sha256sums=('SKIP')

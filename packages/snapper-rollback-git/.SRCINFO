@@ -10,7 +10,6 @@ depends = btrfs-progs
 depends = python3-btrfsutil
 makedepends = git
 provides = snapper-rollback
-backup = etc/snapper-rollback.conf
 license = GPL-3.0-only
 maintainer = Eric Renfro <psi-jack@linux-help.org>
 sha256sums = SKIP
