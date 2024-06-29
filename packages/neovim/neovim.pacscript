@@ -5,7 +5,6 @@ source=(
   "https://github.com/neovim/neovim/archive/refs/tags/v${pkgver}.tar.gz"
   "nview"
   "nvimdiff"
-
 )
 url='https://neovim.io/'
 makedepends=("gettext" "libtool" "libtool-bin" "autoconf" "automake" "cmake" "g++" "pkg-config")
