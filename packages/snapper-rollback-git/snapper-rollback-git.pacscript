@@ -1,6 +1,6 @@
-pkgname=snapper-rollback-git
-gives=snapper-rollback
-pkgver=1.0
+pkgname="snapper-rollback-git"
+gives="snapper-rollback"
+pkgver="1.0"
 pkgdesc='Rollback snapper snapshots
 https://wiki.archlinux.org/index.php/Snapper#Suggested_filesystem_layout'
 license=('GPL-3.0-only')
