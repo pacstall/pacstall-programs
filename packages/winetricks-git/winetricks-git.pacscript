@@ -11,5 +11,5 @@ maintainer=("Xdavius <xdavius@github.com>")
 
 package() {
   cd "${_archive}"
-  make install DESTDIR=${pkgdir}
+  make install DESTDIR="${pkgdir}"
 }
