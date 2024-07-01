@@ -10,12 +10,12 @@ makedepends=('python3-pip')
 external_connection="true"
 
 build() {
-  cd "${_archive}"
+  cd "${gives}"
   pip install .
 }
 
 package() {
-  cd "${_archive}"
+  cd "${gives}"
   chmod +x neofetch
   chmod +x hyfetch/scripts/neowofetch
   /usr/bin/python3 setup.py install --root="${pkgdir}" --optimize=1
