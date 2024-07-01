@@ -10,11 +10,11 @@ makedepends=('cargo')
 external_connection="true"
 
 build() {
-  cd "${_archive}"
+  cd "${gives}"
   cargo build --release -vv
 }
 
 package() {
-  cd "${_archive}"
+  cd "${gives}"
   install -Dm0755 -t "${pkgdir}/usr/bin" "target/release/freshfetch"
 }
