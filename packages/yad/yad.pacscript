@@ -1,20 +1,23 @@
 pkgname="yad"
-pkgver="13.0"
-source=("https://github.com/v1cont/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz")
+pkgver="14.0"
+source=("https://github.com/v1cont/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz"
+  "debian12.patch")
 makedepends=("autotools-dev" "intltool" "libgtk-3-dev" "automake")
 depends=("libc6" "libcairo2" "libgdk-pixbuf2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0")
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-app" "${pkgname}-git" "${pkgname}-deb")
 gives="yad"
 pkgdesc="Yet Another Dialog"
-sha256sums=("194198c4a58e20ceffd9a3206633c3726d962d7d4219edb77aeb748897403e34")
+sha256sums=("2829681f0a9ebd07b7f651c6266d5bf6199235ef027c4936a76988e0471f8e1d")
 optdepends=("libwebkit2gtk-4.0-dev: for supporting HTML dialog"
   "libgtksourceview-3.0-dev: for enabling syntax highlighting in text-info dialog"
   "libgspell-1-dev: for support spell checking in text fields")
-maintainer=("echometerain <echometer@disroot.org>")
+maintainer=("echometerain <echometer@disroot.org>"
+  "xdavius <xdavius@github.com>")
 repology=("project: yad")
 
 prepare() {
   cd "${_archive}"
+  patch -p1 < ../debian12.patch
   autoreconf -ivf && intltoolize
 
   FLAGS=" --enable-icon-browser"

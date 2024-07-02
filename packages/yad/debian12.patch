@@ -1,0 +1,25 @@
+From 1153a3e6105a21597454e3835cfb96ea59b330f5 Mon Sep 17 00:00:00 2001
+From: Victor Ananjevsky <victor@sanana.kiev.ua>
+Date: Sat, 22 Jun 2024 10:50:24 +0300
+Subject: [PATCH] fix build with old versions of glib
+
+---
+ src/list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/src/list.c b/src/list.c
+index 4c618e4..7163daf 100644
+--- a/src/list.c
++++ b/src/list.c
+@@ -756,7 +756,11 @@ get_data_as_string (GtkTreeIter *iter)
+     }
+
+   str->str[str->len-1] = '\0';
++#if GLIB_CHECK_VERSION(2,76,0)
+   res = g_string_free_and_steal (str);
++#else
++  res = g_string_free (str, FALSE);
++#endif
+
+   return res;
+ }
