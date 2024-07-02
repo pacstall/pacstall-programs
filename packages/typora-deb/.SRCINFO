@@ -10,7 +10,6 @@ depends = libnss3
 optdepends = noto-fonts-emoji: Or some other emoji fonts to see/use emojis
 optdepends = pandoc: Import/export for extra file formats
 replaces = typora
-license = custom:"Copyright (c) 2015 Abner Lee All Rights Reserved."
 maintainer = Eric Renfro <psi-jack@linux-help.org>
 repology = project: typora
 sha256sums = deb47f0af1458d13e4cf6ee69b55ade61c204549cb2fb9692c5280da6a082f1f
