@@ -11,7 +11,6 @@ depends=(
 optdepends=(
   "libappindicator3-1: AppIndicator/SysTray Support"
 )
-license=('custom:"Copyright (c) 2024 Rambox LLC. All Rights Reserved. https://rambox.app/eula/"')
 sha256sums=("2fc00888e9dcc6baed57032b2d14d0e9fbff67dd3cd47162106e95e6b8d4fd7d")
 source=("https://github.com/ramboxapp/download/releases/download/v${pkgver}/Rambox-${pkgver}-linux-x64.deb")
 replaces=("${pkgname}" "${gives}")
