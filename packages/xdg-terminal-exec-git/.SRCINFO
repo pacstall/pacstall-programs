@@ -2,7 +2,7 @@ pkgname = xdg-terminal-exec-git
 gives = xdg-terminal-exec
 pkgver = 0.10.0
 pkgdesc = Proposed standard to launching desktop apps with Terminal=true
-url = https://github.com/Vladimir-csp
+url = https://github.com/Vladimir-csp/xdg-terminal-exec
 arch = amd64
 source = git+https://github.com/Vladimir-csp/xdg-terminal-exec
 makedepends = git
