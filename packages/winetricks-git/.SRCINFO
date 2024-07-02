@@ -1,0 +1,12 @@
+pkgname = winetricks-git
+gives = winetricks
+pkgver = 20240105
+pkgdesc = Winetricks is an easy way to work around problems in Wine
+url = https://github.com/Winetricks/winetricks
+source = https://github.com/Winetricks/winetricks.git
+breaks = winetricks-deb
+breaks = winetricks-bin
+breaks = winetricks-app
+breaks = winetricks
+maintainer = Xdavius <xdavius@github.com>
+sha512sums = SKIP
