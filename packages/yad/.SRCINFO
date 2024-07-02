@@ -3,6 +3,7 @@ gives = yad
 pkgver = 14.0
 pkgdesc = Yet Another Dialog
 source = https://github.com/v1cont/yad/releases/download/v14.0/yad-14.0.tar.xz
+source = debian12.patch
 depends = libc6
 depends = libcairo2
 depends = libgdk-pixbuf2.0-0
