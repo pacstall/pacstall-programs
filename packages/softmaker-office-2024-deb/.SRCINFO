@@ -23,7 +23,6 @@ conflicts = softmaker-office-2024
 replaces = softmaker-freeoffice-2024-deb
 replaces = softmaker-freeoffice-2024
 replaces = softmaker-office-2024
-license = custom:"Copyright (c) 2024 SoftMaker GmbH All Rights Reserved."
 maintainer = Eric Renfro <psi-jack@linux-help.org>
 repology = project: softmaker-office-2024
 sha256sums = 5c8d36bd11cd2b50f79bd436bfac63206918fc4f5cdb310a37d323bb98310204
