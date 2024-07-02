@@ -11,7 +11,8 @@ sha256sums=("2829681f0a9ebd07b7f651c6266d5bf6199235ef027c4936a76988e0471f8e1d")
 optdepends=("libwebkit2gtk-4.0-dev: for supporting HTML dialog"
   "libgtksourceview-3.0-dev: for enabling syntax highlighting in text-info dialog"
   "libgspell-1-dev: for support spell checking in text fields")
-maintainer=("echometerain <echometer@disroot.org>")
+maintainer=("echometerain <echometer@disroot.org>"
+  "xdavius <xdavius@github.com>")
 repology=("project: yad")
 
 prepare() {
