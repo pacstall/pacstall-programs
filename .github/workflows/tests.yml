@@ -146,6 +146,10 @@ jobs:
               done
               return 1
           }
+          function stacktrace() {
+            catch=$?
+            return "${catch}"
+          }
           source /usr/share/pacstall/scripts/dep-tree.sh
           mapfile -t list < <(pacstall -L)
           dep_tree.loop_traits order "${list[@]}"
@@ -265,6 +269,10 @@ jobs:
                   fi
               done
               return 1
+          }
+          function stacktrace() {
+            catch=$?
+            return "${catch}"
           }
           source /usr/share/pacstall/scripts/dep-tree.sh
           mapfile -t list < <(pacstall -L)
