@@ -1,6 +1,7 @@
 pkgname="yad"
 pkgver="14.0"
-source=("https://github.com/v1cont/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz")
+source=("https://github.com/v1cont/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz"
+        "debian12.patch")
 makedepends=("autotools-dev" "intltool" "libgtk-3-dev" "automake")
 depends=("libc6" "libcairo2" "libgdk-pixbuf2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0")
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-app" "${pkgname}-git" "${pkgname}-deb")
@@ -15,6 +16,7 @@ repology=("project: yad")
 
 prepare() {
   cd "${_archive}"
+  patch -p1 < ../debian12.patch
   autoreconf -ivf && intltoolize
 
   FLAGS=" --enable-icon-browser"
