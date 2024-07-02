@@ -10,7 +10,7 @@ sha256sums=('SKIP')
 maintainer=("xdavius <xdavius@github.com>")
 
 package() {
-  cd "${_archive}"
+  cd "${gives}"
   install -Dm 755 -t "${pkgdir}"/usr/bin "${gives}"
   install -Dm 644 -t "${pkgdir}"/usr/share/doc/"${gives}"/ README.md
 }
