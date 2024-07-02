@@ -19,7 +19,6 @@ depends = libxrandr2
 depends = libxrender1
 conflicts = softmaker-office-nx
 replaces = softmaker-office-nx
-license = custom:"Copyright (c) 2024 SoftMaker GmbH All Rights Reserved."
 maintainer = Eric Renfro <psi-jack@linux-help.org>
 repology = project: softmaker-office-nx
 sha256sums = c397a47c60fc34fb17f1fda6da00c3143c99c0e38d6b38421a051b26536e9b0f
