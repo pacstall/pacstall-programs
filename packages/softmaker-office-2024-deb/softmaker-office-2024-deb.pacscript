@@ -5,7 +5,6 @@ buildver="1214-01"
 url="https://www.softmaker.com"
 repology=("project: softmaker-office-2024")
 arch=('amd64')
-license=('custom:"Copyright (c) 2024 SoftMaker GmbH All Rights Reserved."')
 sha256sums=("5c8d36bd11cd2b50f79bd436bfac63206918fc4f5cdb310a37d323bb98310204")
 source=("https://www.softmaker.net/down/${gives}_${buildver}_amd64.deb")
 depends=(
