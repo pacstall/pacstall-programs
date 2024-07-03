@@ -11,7 +11,7 @@ external_connection="true"
 
 build() {
   cd "${gives}"
-  cargo build --release -vv
+  cargo build --locked --release -vv
 }
 
 package() {
