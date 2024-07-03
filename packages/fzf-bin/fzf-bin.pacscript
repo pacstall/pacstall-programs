@@ -1,6 +1,7 @@
 pkgname="fzf-bin"
 gives="fzf"
 pkgver="0.53.0"
+pkgrel="2"
 repology=("project: ${gives}")
 arch=('amd64' 'arm64' 'armhf' 'ppc64el' 's390x')
 license=('MIT')
@@ -18,6 +19,7 @@ source_ppc64el=("https://github.com/junegunn/fzf/releases/download/${pkgver}/fzf
 source_s390x=("https://github.com/junegunn/fzf/releases/download/${pkgver}/fzf-${pkgver}-linux_s390x.tar.gz")
 conflict=("fzf-bin" "fzf")
 replaces=("${conflicts[@]}")
+provides=("fzf")
 pkgdesc="general-purpose command-line fuzzy finder
  It's an interactive Unix filter for command-line that can be used with
  any list; files, command history, processes, hostnames, bookmarks, git

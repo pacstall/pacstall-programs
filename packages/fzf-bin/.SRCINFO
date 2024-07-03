@@ -1,6 +1,7 @@
 pkgname = fzf-bin
 gives = fzf
 pkgver = 0.53.0
+pkgrel = 2
 pkgdesc = general-purpose command-line fuzzy finder It's an interactive Unix filter for command-line that can be used with any list; files, command history, processes, hostnames, bookmarks, git commits, etc.
 url = https://github.com/junegunn/fzf
 arch = amd64
@@ -9,6 +10,7 @@ arch = armhf
 arch = ppc64el
 arch = s390x
 source = fzf-0.53.0.tar.gz::https://github.com/junegunn/fzf/archive/refs/tags/0.53.0.tar.gz
+provides = fzf
 license = MIT
 maintainer = Eric Renfro <psi-jack@linux-help.org>
 repology = project: fzf
