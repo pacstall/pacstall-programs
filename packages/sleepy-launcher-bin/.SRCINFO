@@ -21,6 +21,6 @@ incompatible = debian:stretch
 incompatible = debian:buster
 incompatible = debian:bullseye
 maintainer = vbrabandt2005 <vbrabandt@proton.me>
-repology = project: the-honkers-railway-launcher
+repology = project: sleepy-launcher
 sha256sums = ebb736f2a324ff9ef657248eadc0f329efb850dc72be4cb6664d86b139916983
 sha256sums = SKIP
