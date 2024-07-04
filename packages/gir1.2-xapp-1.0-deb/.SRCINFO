@@ -1,10 +1,10 @@
 pkgname = gir1.2-xapp-1.0-deb
 gives = gir1.2-xapp-1.0
-pkgver = 2.8.3
+pkgver = 2.8.4
 pkgdesc = Components which are common to multiple desktop environments and required to implement cross-DE solutions
 arch = amd64
-source = http://packages.linuxmint.com/pool/backport/x/xapp/gir1.2-xapp-1.0_2.8.3+wilma_amd64.deb
+source = http://packages.linuxmint.com/pool/backport/x/xapp/gir1.2-xapp-1.0_2.8.4+wilma_amd64.deb
 pacdeps = libxapp1-deb
 maintainer = Zahrun <Zahrun@github.com>
 repology = project: xapps
-sha256sums = e2f449be5901f73916a5f6c49687e2bc43d898bf0e837bd13b7bb0dd6632898c
+sha256sums = 6dd783232c3d897b3f01aede5bfaef94aebb952e0d82349696217fc0536febbd
