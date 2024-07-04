@@ -10,6 +10,6 @@ makedepends=("make")
 maintainer=("Xdavius <xdavius@github.com>")
 
 package() {
-  cd "${_archive}"
+  cd "${gives}"
   make install DESTDIR="${pkgdir}"
 }
