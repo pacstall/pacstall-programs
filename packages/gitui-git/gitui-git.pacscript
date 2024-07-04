@@ -7,6 +7,7 @@ maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
 pkgver="0.26.3"
 depends=('gcc' 'libgit2-dev' 'libxcb1' 'zlib1g-dev')
 makedepends=('git' 'cargo' 'python3') # xcb crate needs python
+incompatible=('debian:stable')
 external_connection="true"
 
 prepare() {
