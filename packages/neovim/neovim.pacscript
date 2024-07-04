@@ -26,12 +26,12 @@ external_connection=true
 repology=("project: ${pkgname}")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}"
   make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}"
   make install DESTDIR="${pkgdir}"
   install -Dm644 "LICENSE.txt" -t "${pkgdir}/usr/share/licenses/${pkgname}"
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
