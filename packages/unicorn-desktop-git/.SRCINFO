@@ -1,7 +1,7 @@
 pkgname = unicorn-desktop-git
 gives = unicorn-desktop
 pkgver = 0.0.1
-pkgrel = 1
+pkgrel = 2
 pkgdesc = Unicorn Desktop by the Rhino Linux Team
 priority = required
 source = https://github.com/rhino-linux/unicorn.git
@@ -43,6 +43,7 @@ depends = pipewire-audio
 depends = bluetooth
 depends = libxfce4ui-utils
 depends = at-spi2-core
+depends = alsa-ucm-conf
 pacdeps = lightpad-git
 pacdeps = papirus-folders
 pacdeps = ulauncher-deb
