@@ -2,7 +2,7 @@ pkgname="sleepy-launcher-bin"
 gives="sleepy-launcher"
 pkgver="1.0.0"
 pkgdesc="Sleepy game launcher for Linux with telemetry disabling"
-repology=("project: the-honkers-railway-launcher")
+repology=("project: sleepy-launcher")
 source=(
   "https://github.com/an-anime-team/sleepy-launcher/releases/download/${pkgver}/sleepy-launcher"
   "icon.png::https://raw.githubusercontent.com/an-anime-team/sleepy-launcher/main/assets/images/icon.png"
