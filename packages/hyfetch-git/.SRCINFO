@@ -1,9 +1,11 @@
+pkgbase = hyfetch-git
+	gives = hyfetch
+	pkgver = 1.4.11
+	pkgdesc = Neofetch with LGBTQ pride flags
+	url = https://github.com/hykilpikonna/hyfetch
+	depends = python3
+	makedepends = python3-pip
+	maintainer = pythoncrazy <pinakpaliwal07@gmail.com>
+	source = https://github.com/hykilpikonna/hyfetch.git
+
 pkgname = hyfetch-git
-gives = hyfetch
-pkgver = 1.4.11
-pkgdesc = Neofetch with LGBTQ pride flags
-url = https://github.com/hykilpikonna/hyfetch
-source = https://github.com/hykilpikonna/hyfetch.git
-depends = python3
-makedepends = python3-pip
-maintainer = pythoncrazy <pinakpaliwal07@gmail.com>

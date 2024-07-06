@@ -1,13 +1,15 @@
+pkgbase = keybase-deb
+	gives = keybase
+	pkgver = 6.0.2-20220610191041.a459abf326
+	pkgdesc = The Keybase Go client, filesystem, and GUI
+	arch = amd64
+	breaks = keybase-git
+	breaks = keybase-app
+	breaks = keybase
+	replaces = keybase
+	maintainer = Marie Piontek <marie@kaifa.ch>
+	repology = project: keybase
+	source = https://prerelease.keybase.io/linux_binaries/deb/keybase_6.0.2-20220610191041.a459abf326_amd64.deb
+	sha256sums = 14c85b312b891eae5de44d1d4d5024d36cbce545e686d299624e2a71b9e14712
+
 pkgname = keybase-deb
-gives = keybase
-pkgver = 6.0.2-20220610191041.a459abf326
-pkgdesc = The Keybase Go client, filesystem, and GUI
-arch = amd64
-source = https://prerelease.keybase.io/linux_binaries/deb/keybase_6.0.2-20220610191041.a459abf326_amd64.deb
-breaks = keybase-git
-breaks = keybase-app
-breaks = keybase
-replaces = keybase
-maintainer = Marie Piontek <marie@kaifa.ch>
-repology = project: keybase
-sha256sums = 14c85b312b891eae5de44d1d4d5024d36cbce545e686d299624e2a71b9e14712

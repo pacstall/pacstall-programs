@@ -6,7 +6,7 @@ maintainer=("0x262D <pacstall@copypaste.anonaddy.me>")
 source=(
   "https://github.com/TGS963/${gives}/releases/download/v${pkgver}/Upscayl-${pkgver}-linux.AppImage"
   "${gives}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${gives}.desktop"
-  "${gives}.png::https://raw.githubusercontent.com/TGS963/${gives}/main/main/build/icon.png"
+  "${gives}.svg::https://raw.githubusercontent.com/upscayl/upscayl/main/docs/logo/logo.svg"
 )
 sha256sums=(
   "aa92f1386a6147d887bed6fc01965a32272dfe0f302e42fb0e1af89addcb65d9"
@@ -22,7 +22,7 @@ package() {
   install -Dm755 "Upscayl-${pkgver}-linux.AppImage" "${pkgdir}/usr/bin/${gives}"
 
   # Download icon
-  install -Dm644 "${srcdir}/${gives}.png" "${pkgdir}/usr/share/pixmaps/${gives}.png"
+  install -Dm644 "${srcdir}/${gives}.svg" "${pkgdir}/usr/share/icons/hicolor/scalable/apps/${gives}.svg"
 
   # Install .desktop file
   install -Dm644 "${srcdir}/${gives}.desktop" "${pkgdir}/usr/share/applications/${gives}.desktop"

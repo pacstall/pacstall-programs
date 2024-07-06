@@ -1,7 +1,9 @@
+pkgbase = rhino-kvantum-theme-git
+	gives = rhino-kvantum-theme
+	pkgver = 0.0.1
+	pkgdesc = Rhino Linux Kvantum theme
+	depends = qt5-style-kvantum
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/rhino-linux/KvRhino.git
+
 pkgname = rhino-kvantum-theme-git
-gives = rhino-kvantum-theme
-pkgver = 0.0.1
-pkgdesc = Rhino Linux Kvantum theme
-source = https://github.com/rhino-linux/KvRhino.git
-depends = qt5-style-kvantum
-maintainer = Oren Klopfer <oren@taumoda.com>

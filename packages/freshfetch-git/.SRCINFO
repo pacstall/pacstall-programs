@@ -1,0 +1,11 @@
+pkgbase = freshfetch-git
+	gives = freshfetch
+	pkgver = 0.2.0
+	pkgdesc = A fresh take on Neofetch
+	url = https://github.com/K4rakara/freshfetch
+	arch = amd64
+	makedepends = cargo
+	maintainer = pythoncrazy <pinakpaliwal07@gmail.com>
+	source = https://github.com/K4rakara/freshfetch.git
+
+pkgname = freshfetch-git
