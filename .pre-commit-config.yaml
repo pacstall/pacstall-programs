@@ -38,8 +38,8 @@ repos:
         language: system
         entry: ./scripts/srcinfo.sh write
         files: '^.*\.pacscript$'
-      - id: update-packagelist
-        name: update packagelist file
+      - id: check-srcinfo
+        name: check for .SRCINFO
         language: system
         entry: ./scripts/srcinfo.sh check
         files: '^.*\.pacscript$'
