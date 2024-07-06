@@ -21,23 +21,23 @@ package() {
   make install DESTDIR="${pkgdir}"
   install -Dm644 "LICENSE.txt" -t "${pkgdir}/usr/share/licenses/${gives}"
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"
-  install -Dm755 /dev/stdin -t "${pkgdir}/usr/libexec/${gives}/ex" << 'EOF'
+  install -Dm755 /dev/stdin "${pkgdir}/usr/libexec/${gives}/ex" << 'EOF'
 #!/bin/sh
 exec /usr/bin/nvim -e "$@"
 EOF
-  install -Dm755 /dev/stdin -t "${pkgdir}/usr/libexec/${gives}/rview" << 'EOF'
+  install -Dm755 /dev/stdin "${pkgdir}/usr/libexec/${gives}/rview" << 'EOF'
 #!/bin/sh
 exec /usr/bin/nvim -RZ "$@"
 EOF
-  install -Dm755 /dev/stdin -t "${pkgdir}/usr/libexec/${gives}/rvim" << 'EOF'
+  install -Dm755 /dev/stdin "${pkgdir}/usr/libexec/${gives}/rvim" << 'EOF'
 #!/bin/sh
 exec /usr/bin/nvim -Z "$@"
 EOF
-  install -Dm755 /dev/stdin -t "${pkgdir}/usr/libexec/${gives}/view" << 'EOF'
+  install -Dm755 /dev/stdin "${pkgdir}/usr/libexec/${gives}/view" << 'EOF'
 #!/bin/sh
 exec /usr/bin/nvim -R "$@"
 EOF
-  install -Dm755 /dev/stdin -t "${pkgdir}/usr/libexec/${gives}/vimdiff" << 'EOF'
+  install -Dm755 /dev/stdin "${pkgdir}/usr/libexec/${gives}/vimdiff" << 'EOF'
 #!/bin/sh
 exec /usr/bin/nvim -d "$@"
 EOF
