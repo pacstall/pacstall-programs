@@ -17,8 +17,7 @@ arch=('amd64')
 repology=("project: ${gives}")
 
 package() {
-  tar xf btop-x86_64-linux-musl.tbz
-  cd ${gives}
+  cd "${gives}"
   make DESTDIR="${pkgdir}" install
 }
 # vim:set ft=sh ts=2 sw=2 et:
