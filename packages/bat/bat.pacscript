@@ -1,7 +1,7 @@
 pkgname="bat"
 pkgver="0.24.0"
 source=("https://github.com/sharkdp/bat/archive/refs/tags/v${pkgver}.tar.gz")
-makedepends="cargo libonig-dev pkg-config"
+makedepends=("cargo" "libonig-dev" "pkg-config")
 depends=("libonig5")
 replaces=("bat")
 pkgdesc="A cat(1) clone with wings"

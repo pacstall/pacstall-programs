@@ -144,6 +144,7 @@ forticlient-deb
 fpc-laz-deb
 fpc-src-deb
 freetube-deb
+freshfetch-git
 fsearch-deb
 fsearch-git
 fselect-git
@@ -412,6 +413,7 @@ qtile-extras-git
 qtile-git
 quarto-deb
 quintom-cursor-theme-git
+rambox-deb
 raspi-config-deb
 realvnc-vnc-viewer-deb
 renegate
@@ -455,7 +457,9 @@ slop-git
 smartgit
 smplayer-deb
 snapper-rollback-git
+softmaker-freeoffice-2024-deb
 softmaker-office-nx-deb
+softmaker-office-2024-deb
 songrec-deb
 soundux
 spacecadetpinball-git
@@ -511,6 +515,7 @@ ttf-fira-sans
 tuner
 tuner-git
 tutanota-app
+typora-deb
 u-boot-mobian-deb
 ugee-tablet-driver-deb
 ulauncher-deb
@@ -550,11 +555,13 @@ whatsie
 whatsie-git
 windscribe-beta-gui-deb
 wine-staging-git
+winetricks-git
 wsysmon-bin
 xapps-common-deb
 xcb-util-errors
 xdg-desktop-portal-hyprland
 xdg-ninja-git
+xdg-terminal-exec-git
 xfce4-deb
 xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
