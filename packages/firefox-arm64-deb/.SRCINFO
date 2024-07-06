@@ -1,11 +1,13 @@
+pkgbase = firefox-arm64-deb
+	gives = firefox
+	pkgver = 125.0.3+build1
+	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
+	url = https://www.mozilla.org/en-US/firefox
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: firefox
+	repology = repo: ubuntu_20_04
+	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_125.0.3+build1-0ubuntu0.22.04.1~mt1_arm64.deb
+	sha256sums = 516443a423eca8f572fbbe3fb8c87a20e556b2eeb9c8e640c1720f26e1c050c2
+
 pkgname = firefox-arm64-deb
-gives = firefox
-pkgver = 125.0.3+build1
-pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
-url = https://www.mozilla.org/en-US/firefox
-arch = arm64
-source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_125.0.3+build1-0ubuntu0.22.04.1~mt1_arm64.deb
-maintainer = Oren Klopfer <oren@taumoda.com>
-repology = project: firefox
-repology = repo: ubuntu_20_04
-sha256sums = 516443a423eca8f572fbbe3fb8c87a20e556b2eeb9c8e640c1720f26e1c050c2

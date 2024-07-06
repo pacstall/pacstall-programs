@@ -1,11 +1,13 @@
+pkgbase = protonmail-bridge-deb
+	gives = protonmail-bridge
+	pkgver = 3.10.0
+	pkgdesc = ProtonMail Bridge is an application available to all paid users that enables the integration of your ProtonMail account with popular email clients, such as Microsoft Outlook, Mozilla Thunderbird, or Apple Mail. Bridge runs in the background by seamlessly encrypting and decrypting messages as they enter and leave your computer. The app is compatible with most email clients supporting IMAP and SMTP protocols
+	arch = amd64
+	breaks = protonmail-bridge
+	breaks = protonmail-bridge-git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: protonmail-bridge
+	source = https://github.com/ProtonMail/proton-bridge/releases/download/v3.10.0/protonmail-bridge_3.10.0-1_amd64.deb
+	sha256sums = 947da267d8aea2bbe007ae4a02f6edb431c41c16c44b0898146b4d990fca443c
+
 pkgname = protonmail-bridge-deb
-gives = protonmail-bridge
-pkgver = 3.10.0
-pkgdesc = ProtonMail Bridge is an application available to all paid users that enables the integration of your ProtonMail account with popular email clients, such as Microsoft Outlook, Mozilla Thunderbird, or Apple Mail. Bridge runs in the background by seamlessly encrypting and decrypting messages as they enter and leave your computer. The app is compatible with most email clients supporting IMAP and SMTP protocols
-arch = amd64
-source = https://github.com/ProtonMail/proton-bridge/releases/download/v3.10.0/protonmail-bridge_3.10.0-1_amd64.deb
-breaks = protonmail-bridge
-breaks = protonmail-bridge-git
-maintainer = Oren Klopfer <oren@taumoda.com>
-repology = project: protonmail-bridge
-sha256sums = 947da267d8aea2bbe007ae4a02f6edb431c41c16c44b0898146b4d990fca443c

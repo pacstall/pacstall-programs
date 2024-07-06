@@ -1,13 +1,15 @@
+pkgbase = google-earth-pro-stable-deb
+	gives = google-earth-pro-stable
+	pkgver = 7.3.6.9345
+	pkgdesc = Renders a 3D representation of Earth based primarily on satellite imagery
+	arch = amd64
+	breaks = google-earth-pro-stable
+	breaks = google-earth-pro-stable-git
+	breaks = google-earth-pro-stable-bin
+	breaks = google-earth-pro-stable-app
+	breaks = google-earth-pro-stable-deb
+	repology = project: google-earth-pro
+	source = https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb
+	sha256sums = 88e8b1a8e09f08c8daac8e21d803d19203a725e1ff8437a65dc8fba753a12c3e
+
 pkgname = google-earth-pro-stable-deb
-gives = google-earth-pro-stable
-pkgver = 7.3.6.9345
-pkgdesc = Renders a 3D representation of Earth based primarily on satellite imagery
-arch = amd64
-source = https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb
-breaks = google-earth-pro-stable
-breaks = google-earth-pro-stable-git
-breaks = google-earth-pro-stable-bin
-breaks = google-earth-pro-stable-app
-breaks = google-earth-pro-stable-deb
-repology = project: google-earth-pro
-sha256sums = 88e8b1a8e09f08c8daac8e21d803d19203a725e1ff8437a65dc8fba753a12c3e

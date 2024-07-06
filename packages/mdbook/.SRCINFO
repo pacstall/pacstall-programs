@@ -1,9 +1,11 @@
+pkgbase = mdbook
+	pkgver = 0.4.40
+	pkgdesc = Utility to create modern online books from Markdown files
+	url = https://rust-lang.github.io/mdBook/
+	makedepends = cargo
+	maintainer = vigress8 <vig@disroot.org>
+	repology = project: mdbook
+	source = https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.40.tar.gz
+	sha256sums = 550da7ff02ef62c60db6e813b6dbae65b9ed3d491186ea74929536feaceea94b
+
 pkgname = mdbook
-pkgver = 0.4.40
-pkgdesc = Utility to create modern online books from Markdown files
-url = https://rust-lang.github.io/mdBook/
-source = https://github.com/rust-lang/mdBook/archive/refs/tags/v0.4.40.tar.gz
-makedepends = cargo
-maintainer = vigress8 <vig@disroot.org>
-repology = project: mdbook
-sha256sums = 550da7ff02ef62c60db6e813b6dbae65b9ed3d491186ea74929536feaceea94b

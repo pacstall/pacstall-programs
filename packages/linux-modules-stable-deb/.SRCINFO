@@ -1,11 +1,13 @@
+pkgbase = linux-modules-stable-deb
+	gives = linux-modules-6.9.3-060903-generic
+	pkgver = 6.9.3
+	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
+	arch = arm64
+	arch = amd64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9.3/arm64/linux-modules-6.9.3-060903-generic_6.9.3-060903.202405300957_arm64.deb
+	sha256sums_arm64 = 8ab029a39bb7982ac055069eecfa1d4b5c98b960e25b46d833ccb25d893e2ae8
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9.3/amd64/linux-modules-6.9.3-060903-generic_6.9.3-060903.202405300957_amd64.deb
+	sha256sums_amd64 = 10d7577b57c576dca882ab4d9015a022307a2e2592b8f4566f78edddc1c17800
+
 pkgname = linux-modules-stable-deb
-gives = linux-modules-6.9.3-060903-generic
-pkgver = 6.9.3
-pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
-arch = arm64
-arch = amd64
-source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9.3/arm64/linux-modules-6.9.3-060903-generic_6.9.3-060903.202405300957_arm64.deb
-source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.9.3/amd64/linux-modules-6.9.3-060903-generic_6.9.3-060903.202405300957_amd64.deb
-maintainer = Oren Klopfer <oren@taumoda.com>
-sha256sums_amd64 = 10d7577b57c576dca882ab4d9015a022307a2e2592b8f4566f78edddc1c17800
-sha256sums_arm64 = 8ab029a39bb7982ac055069eecfa1d4b5c98b960e25b46d833ccb25d893e2ae8

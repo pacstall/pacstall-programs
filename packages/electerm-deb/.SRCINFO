@@ -1,10 +1,12 @@
+pkgbase = electerm-deb
+	gives = electerm
+	pkgver = 1.38.30
+	pkgdesc = Open-sourced terminal/ssh/telnet/serialport/sftp client
+	arch = amd64
+	breaks = electerm-bin
+	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
+	repology = project: electerm
+	source = https://github.com/electerm/electerm/releases/download/v1.38.30/electerm-1.38.30-linux-amd64.deb
+	sha256sums = 21ce0fda5f2db860ca6832ffcf3ef38383a4f4a3fd7d4c54610bd2cf60577319
+
 pkgname = electerm-deb
-gives = electerm
-pkgver = 1.38.30
-pkgdesc = Open-sourced terminal/ssh/telnet/serialport/sftp client
-arch = amd64
-source = https://github.com/electerm/electerm/releases/download/v1.38.30/electerm-1.38.30-linux-amd64.deb
-breaks = electerm-bin
-maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
-repology = project: electerm
-sha256sums = 21ce0fda5f2db860ca6832ffcf3ef38383a4f4a3fd7d4c54610bd2cf60577319
