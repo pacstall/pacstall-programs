@@ -1,10 +1,12 @@
+pkgbase = pacget-git
+	gives = pacget
+	pkgver = 0.0.1
+	pkgdesc = A fully foss, lightweight fuzzysearching TUI frontend for pacstall using fzf
+	depends = fzf
+	depends = curl
+	depends = bash
+	license = Don't Be a Jerk
+	maintainer = Erik Lundstedt <erik@lundstedt.it>
+	source = https://gitlab.com/Erik.Lundstedt/pacget.git
+
 pkgname = pacget-git
-gives = pacget
-pkgver = 0.0.1
-pkgdesc = A fully foss, lightweight fuzzysearching TUI frontend for pacstall using fzf
-source = https://gitlab.com/Erik.Lundstedt/pacget.git
-depends = fzf
-depends = curl
-depends = bash
-license = Don't Be a Jerk
-maintainer = Erik Lundstedt <erik@lundstedt.it>

@@ -1,7 +1,9 @@
+pkgbase = helix
+	pkgver = 24.03
+	pkgdesc = A post-modern modal text editor
+	makedepends = cargo
+	repology = project: helix
+	source = https://github.com/helix-editor/helix/releases/download/24.03/helix-24.03-source.tar.xz
+	sha256sums = c59a5988f066c2ab90132e03a0e6b35b3dd89f48d3d78bf0ec81bd7d88c7677e
+
 pkgname = helix
-pkgver = 24.03
-pkgdesc = A post-modern modal text editor
-source = https://github.com/helix-editor/helix/releases/download/24.03/helix-24.03-source.tar.xz
-makedepends = cargo
-repology = project: helix
-sha256sums = c59a5988f066c2ab90132e03a0e6b35b3dd89f48d3d78bf0ec81bd7d88c7677e
