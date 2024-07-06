@@ -1,9 +1,9 @@
 pkgname = dbeaver-ce-deb
 gives = dbeaver-ce
-pkgver = 24.0.0
+pkgver = 24.1.1
 pkgdesc = Free universal database tool and SQL client
 arch = amd64
-source = https://github.com/dbeaver/dbeaver/releases/download/24.0.0/dbeaver-ce_24.0.0_amd64.deb
+source = https://github.com/dbeaver/dbeaver/releases/download/24.1.1/dbeaver-ce_24.1.1_amd64.deb
 maintainer = KwonNam Son <kwon37xi@gmail.com>
 repology = project: dbeaver
-sha256sums = f491bc7fffd7c9882ccfc2021e965d97956088083b79f35dd57d195d2fdfb76a
+sha256sums = 62734a90114f6bc40b97d6118493f99d52fd03b3f9a2e5d644e0d28090d6595e
