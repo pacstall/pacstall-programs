@@ -1,9 +1,11 @@
+pkgbase = youtube-music-deb
+	gives = youtube-music
+	pkgver = 3.3.6
+	pkgdesc = YouTube Music Desktop App bundled with custom plugins (and built-in ad blocker / downloader)
+	arch = amd64
+	maintainer = Zahrun <Zahrun@github.com>
+	repology = project: youtube-music
+	source = https://github.com/th-ch/youtube-music/releases/download/v3.3.6/youtube-music_3.3.6_amd64.deb
+	sha256sums = b875bfc24657f1a09bd81508fe3c5c421972b2e66744c1583b6bca7cdec1a87a
+
 pkgname = youtube-music-deb
-gives = youtube-music
-pkgver = 3.3.6
-pkgdesc = YouTube Music Desktop App bundled with custom plugins (and built-in ad blocker / downloader)
-arch = amd64
-source = https://github.com/th-ch/youtube-music/releases/download/v3.3.6/youtube-music_3.3.6_amd64.deb
-maintainer = Zahrun <Zahrun@github.com>
-repology = project: youtube-music
-sha256sums = b875bfc24657f1a09bd81508fe3c5c421972b2e66744c1583b6bca7cdec1a87a

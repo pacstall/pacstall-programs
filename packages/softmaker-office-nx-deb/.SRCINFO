@@ -1,0 +1,26 @@
+pkgbase = softmaker-office-nx-deb
+	gives = softmaker-office-nx
+	pkgver = 3643
+	pkgdesc = Proprietary office suite; word processing, spreadsheets, presentations; subscription edition
+	url = https://www.softmaker.com
+	arch = amd64
+	depends = libcurl4 | libcurl3>=7.16.2
+	depends = libc6
+	depends = libgl1-mesa-glx | libgl1
+	depends = libglib2.0-0
+	depends = libgstreamer-plugins-base1.0-0
+	depends = libgstreamer1.0-0
+	depends = libstdc++6
+	depends = libx11-6
+	depends = libxext6
+	depends = libxmu6
+	depends = libxrandr2
+	depends = libxrender1
+	conflicts = softmaker-office-nx
+	replaces = softmaker-office-nx
+	maintainer = Eric Renfro <psi-jack@linux-help.org>
+	repology = project: softmaker-office-nx
+	source = https://www.softmaker.net/down/softmaker-office-nx_1214-01_amd64.deb
+	sha256sums = c397a47c60fc34fb17f1fda6da00c3143c99c0e38d6b38421a051b26536e9b0f
+
+pkgname = softmaker-office-nx-deb

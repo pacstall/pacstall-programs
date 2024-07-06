@@ -1,11 +1,13 @@
+pkgbase = minecraft-launcher-deb
+	gives = minecraft-launcher
+	pkgver = 1121
+	pkgdesc = Official Minecraft Launcher
+	breaks = minecraft-launcher
+	breaks = minecraft-launcher-git
+	breaks = minecraft-launcher-bin
+	breaks = minecraft-launcher-app
+	maintainer = The Blob SCP <81673375+theblobscp@users.noreply.github.com>
+	repology = project: minecraft-launcher
+	source = https://launcher.mojang.com/download/Minecraft.deb
+
 pkgname = minecraft-launcher-deb
-gives = minecraft-launcher
-pkgver = 1121
-pkgdesc = Official Minecraft Launcher
-source = https://launcher.mojang.com/download/Minecraft.deb
-breaks = minecraft-launcher
-breaks = minecraft-launcher-git
-breaks = minecraft-launcher-bin
-breaks = minecraft-launcher-app
-maintainer = The Blob SCP <81673375+theblobscp@users.noreply.github.com>
-repology = project: minecraft-launcher

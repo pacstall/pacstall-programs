@@ -1,20 +1,22 @@
+pkgbase = tidal-hifi-bin
+	gives = tidal-hifi
+	pkgver = 5.11.0
+	pkgdesc = The web version of listen.tidal.com running in electron with hifi support thanks to widevine
+	depends = libxss1
+	depends = libnss3
+	depends = libgtk-3-0
+	breaks = tidal-hifi
+	breaks = tidal-hifi-deb
+	breaks = tidal-hifi-app
+	breaks = tidal-hifi-git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: tidal-hifi
+	repology = visiblename: tidal-hifi-bin
+	source = https://github.com/Mastermindzh/tidal-hifi/releases/download/5.11.0/tidal-hifi-5.11.0.tar.gz
+	source = icon.png::https://github.com/Mastermindzh/tidal-hifi/raw/master/build/icon.png
+	source = tidal-hifi.desktop::https://aur.archlinux.org/cgit/aur.git/plain/tidal-hifi.desktop?h=tidal-hifi-bin
+	sha256sums = a33706b05cbd897c8aa61ac9e3d876f318ca472326c6d739c589ab6fdb4ee892
+	sha256sums = SKIP
+	sha256sums = SKIP
+
 pkgname = tidal-hifi-bin
-gives = tidal-hifi
-pkgver = 5.11.0
-pkgdesc = The web version of listen.tidal.com running in electron with hifi support thanks to widevine
-source = https://github.com/Mastermindzh/tidal-hifi/releases/download/5.11.0/tidal-hifi-5.11.0.tar.gz
-source = icon.png::https://github.com/Mastermindzh/tidal-hifi/raw/master/build/icon.png
-source = tidal-hifi.desktop::https://aur.archlinux.org/cgit/aur.git/plain/tidal-hifi.desktop?h=tidal-hifi-bin
-depends = libxss1
-depends = libnss3
-depends = libgtk-3-0
-breaks = tidal-hifi
-breaks = tidal-hifi-deb
-breaks = tidal-hifi-app
-breaks = tidal-hifi-git
-maintainer = Oren Klopfer <oren@taumoda.com>
-repology = project: tidal-hifi
-repology = visiblename: tidal-hifi-bin
-sha256sums = a33706b05cbd897c8aa61ac9e3d876f318ca472326c6d739c589ab6fdb4ee892
-sha256sums = SKIP
-sha256sums = SKIP

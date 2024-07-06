@@ -1,13 +1,15 @@
+pkgbase = discord-deb
+	gives = discord
+	pkgver = 0.0.58
+	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
+	url = https://discord.com/
+	arch = amd64
+	breaks = discord
+	breaks = discord-app
+	breaks = discord-debian-patched-deb
+	maintainer = ObsidianPresidium <emil@aarestrup.nu>
+	repology = project: discord
+	source = https://dl.discordapp.net/apps/linux/0.0.58/discord-0.0.58.deb
+	sha256sums = 3a2f1fe6b9d69cd8141f42a204ad3dff483a4301fbe755711b545b908d61b8af
+
 pkgname = discord-deb
-gives = discord
-pkgver = 0.0.54
-pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
-url = https://discord.com/
-arch = amd64
-source = https://dl.discordapp.net/apps/linux/0.0.54/discord-0.0.54.deb
-breaks = discord
-breaks = discord-app
-breaks = discord-debian-patched-deb
-maintainer = ObsidianPresidium <emil@aarestrup.nu>
-repology = project: discord
-sha256sums = 6d7f68bca6e619657f240de0edd63e229b3fb34c781ff5cd85ec4c0f29da0acc

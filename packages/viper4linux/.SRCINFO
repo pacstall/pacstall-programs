@@ -1,11 +1,13 @@
+pkgbase = viper4linux
+	pkgver = 2.0
+	pkgdesc = A Port of Viper4Android to Linux, or in the words of noahbliss: Making Loonix sound good
+	arch = amd64
+	depends = build-essential
+	depends = cmake
+	depends = libgstreamer-plugins-base1.0-dev
+	depends = libgstreamer1.0-dev
+	depends = gstreamer1.0-tools
+	source = https://github.com/SamarthH/Viper4LinuxForPacstall/releases/download/v1.0/Viper4LinuxForPacstall.zip
+	sha256sums = fe85277ca63f8a99beb2c347b6d9a268eb783c601c8fcbb7d0366d4797ff9900
+
 pkgname = viper4linux
-pkgver = 2.0
-pkgdesc = A Port of Viper4Android to Linux, or in the words of noahbliss: Making Loonix sound good
-arch = amd64
-source = https://github.com/SamarthH/Viper4LinuxForPacstall/releases/download/v1.0/Viper4LinuxForPacstall.zip
-depends = build-essential
-depends = cmake
-depends = libgstreamer-plugins-base1.0-dev
-depends = libgstreamer1.0-dev
-depends = gstreamer1.0-tools
-sha256sums = fe85277ca63f8a99beb2c347b6d9a268eb783c601c8fcbb7d0366d4797ff9900

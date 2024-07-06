@@ -1,13 +1,15 @@
+pkgbase = dust-bin
+	gives = dust
+	pkgver = 0.8.6
+	pkgdesc = A more intuitive version of du in rust
+	arch = amd64
+	breaks = dust
+	breaks = dust-git
+	breaks = dust-deb
+	breaks = dust-app
+	maintainer = wizard-28 <wiz28@pm.me>
+	repology = project: du-dust
+	source = https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-x86_64-unknown-linux-musl.tar.gz
+	sha256sums = 06e9bcac22ba29e74395dde046cfd5b260cf6fabab48e1ed3dfc017b4e8bada7
+
 pkgname = dust-bin
-gives = dust
-pkgver = 0.8.6
-pkgdesc = A more intuitive version of du in rust
-arch = amd64
-source = https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-x86_64-unknown-linux-musl.tar.gz
-breaks = dust
-breaks = dust-git
-breaks = dust-deb
-breaks = dust-app
-maintainer = wizard-28 <wiz28@pm.me>
-repology = project: du-dust
-sha256sums = 06e9bcac22ba29e74395dde046cfd5b260cf6fabab48e1ed3dfc017b4e8bada7
