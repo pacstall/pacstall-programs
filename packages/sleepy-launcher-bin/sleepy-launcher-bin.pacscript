@@ -1,6 +1,6 @@
 pkgname="sleepy-launcher-bin"
 gives="sleepy-launcher"
-pkgver="1.0.0"
+pkgver="1.0.1"
 pkgdesc="Sleepy game launcher for Linux with telemetry disabling"
 repology=("project: sleepy-launcher")
 source=(
@@ -8,7 +8,7 @@ source=(
   "icon.png::https://raw.githubusercontent.com/an-anime-team/sleepy-launcher/main/assets/images/icon.png"
 )
 sha256sums=(
-  "ebb736f2a324ff9ef657248eadc0f329efb850dc72be4cb6664d86b139916983"
+  "ab00733635c7534e2a51068e65185f00c0f59c0d4e57ef9da08a55630586447d"
   "SKIP"
 )
 depends=("xdelta3" "p7zip-full" "webp")
@@ -22,7 +22,6 @@ optdepends=(
 )
 
 package() {
-  cd "${_archive}"
   install -Dm755 "sleepy-launcher" "${pkgdir}/usr/bin/${gives}"
   mkdir -p "${pkgdir}/usr/share/applications"
   echo '[Desktop Entry]
