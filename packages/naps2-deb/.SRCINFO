@@ -7,9 +7,9 @@ pkgbase = naps2-deb
 	depends = libsane1
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: naps2
-	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v7.4.2/naps2-7.4.2-linux-arm64.deb
+	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v7.4.3/naps2-7.4.3-linux-arm64.deb
 	sha256sums_arm64 = 948e0d195f29b5424ffbbf155284f6b00270aaaa6e371d9b8d45b60e10bc43cd
-	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v7.4.2/naps2-7.4.2-linux-x64.deb
+	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v7.4.3/naps2-7.4.3-linux-x64.deb
 	sha256sums_amd64 = d27342288cc78ddea3542a98f32e4987636e5529684e90202ca5150ca27872da
 
 pkgname = naps2-deb
