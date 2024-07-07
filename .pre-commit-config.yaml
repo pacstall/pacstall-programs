@@ -33,14 +33,19 @@ repos:
         files: '^.*\.(pacscript|sh)$'
   - repo: local
     hooks:
-      - id: update-packagelist
-        name: update packagelist file
-        language: system
-        entry: bash -c 'LC_COLLATE=C ls -1 packages/ > packagelist'
       - id: update-srcinfo
         name: update .SRCINFO data
         language: system
-        entry: ./scripts/srcinfo.sh
+        entry: ./scripts/srcinfo.sh write
         files: '^.*\.pacscript$'
+      - id: check-srcinfo
+        name: check for .SRCINFO
+        language: system
+        entry: ./scripts/srcinfo.sh check
+        files: '^.*\.pacscript$'
+      - id: update-packagelist
+        name: update packagelist file
+        language: system
+        entry: ./scripts/srcinfo.sh packagelist
 
 # vim:set ft=yaml ts=2 sw=2 et:

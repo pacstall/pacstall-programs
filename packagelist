@@ -413,6 +413,7 @@ qtile-extras-git
 qtile-git
 quarto-deb
 quintom-cursor-theme-git
+rambox-deb
 raspi-config-deb
 realvnc-vnc-viewer-deb
 renegate
@@ -452,10 +453,14 @@ signal-desktop-beta-deb
 signal-desktop-deb
 simplex-desktop-app
 slack-deb
+sleepy-launcher-bin
 slop-git
 smartgit
 smplayer-deb
 snapper-rollback-git
+softmaker-freeoffice-2024-deb
+softmaker-office-2024-deb
+softmaker-office-nx-deb
 songrec-deb
 soundux
 spacecadetpinball-git

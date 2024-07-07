@@ -1,13 +1,15 @@
+pkgbase = bluegriffon-deb
+	gives = bluegriffon
+	pkgver = 3.1
+	pkgdesc = The next-gen Web and EPUB Editor based on the rendering engine of Firefox
+	arch = amd64
+	breaks = bluegriffon
+	breaks = bluegriffon-git
+	breaks = bluegriffon-bin
+	breaks = bluegriffon-app
+	maintainer = Obsidian <emil@aarestrup.nu>
+	repology = project: bluegriffon
+	source = http://bluegriffon.org/freshmeat/3.1/bluegriffon-3.1.Ubuntu18.04-x86_64.deb
+	sha256sums = 83eb53ec8bf9416e52b525508c03440ea0427a3eac409034a72732a7e22994e6
+
 pkgname = bluegriffon-deb
-gives = bluegriffon
-pkgver = 3.1
-pkgdesc = The next-gen Web and EPUB Editor based on the rendering engine of Firefox
-arch = amd64
-source = http://bluegriffon.org/freshmeat/3.1/bluegriffon-3.1.Ubuntu18.04-x86_64.deb
-breaks = bluegriffon
-breaks = bluegriffon-git
-breaks = bluegriffon-bin
-breaks = bluegriffon-app
-maintainer = Obsidian <emil@aarestrup.nu>
-repology = project: bluegriffon
-sha256sums = 83eb53ec8bf9416e52b525508c03440ea0427a3eac409034a72732a7e22994e6

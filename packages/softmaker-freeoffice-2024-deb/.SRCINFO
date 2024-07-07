@@ -1,0 +1,30 @@
+pkgbase = softmaker-freeoffice-2024-deb
+	gives = softmaker-freeoffice-2024
+	pkgver = 3645
+	pkgdesc = Proprietary office suite; word processing, spreadsheets, presentations; limited feature free edition
+	url = https://www.softmaker.com
+	arch = amd64
+	depends = libcurl4 | libcurl3>=7.16.2
+	depends = libc6
+	depends = libgl1-mesa-glx | libgl1
+	depends = libglib2.0-0
+	depends = libgstreamer-plugins-base1.0-0
+	depends = libgstreamer1.0-0
+	depends = libstdc++6
+	depends = libx11-6
+	depends = libxext6
+	depends = libxmu6
+	depends = libxrandr2
+	depends = libxrender1
+	conflicts = softmaker-office-2024-deb
+	conflicts = softmaker-office-2024
+	conflicts = softmaker-freeoffice-2024
+	replaces = softmaker-office-2024-deb
+	replaces = softmaker-office-2024
+	replaces = softmaker-freeoffice-2024
+	maintainer = Eric Renfro <psi-jack@linux-help.org>
+	repology = project: softmaker-freeoffice-2024
+	source = https://www.softmaker.net/down/softmaker-freeoffice-2024_1215-01_amd64.deb
+	sha256sums = 62364de3f86054031851131b85f99e20ce47fc8eafe5043cd77f6ab1ac8b978e
+
+pkgname = softmaker-freeoffice-2024-deb

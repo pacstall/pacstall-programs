@@ -1,13 +1,15 @@
+pkgbase = epson-inkjet-printer-stylus-nx110-series-deb
+	gives = epson-inkjet-printer-stylus-nx110-series
+	pkgver = 1.0.0
+	pkgdesc = Driver for Epson Stylus NX110, Epson Stylus SX110, Epson Stylus TX110, Epson Stylus TX111, Epson Stylus TX112 , Epson Stylus TX115, Epson Stylus TX117
+	arch = amd64
+	depends = lsb
+	incompatible = ubuntu:lunar
+	incompatible = ubuntu:mantic
+	incompatible = debian:*
+	maintainer = Zahrun <Zahrun@github.com>
+	repology = project: epson-inkjet-printer-stylus-nx110-series
+	source = http://download.ebz.epson.net/dsc/f/01/00/01/68/42/287f0fb8185a2fd39b6ce51df9e7c05bac9b616a/epson-inkjet-printer-stylus-nx110-series_1.0.0-1lsb3.2_amd64.deb
+	sha256sums = 4bc20572b7f4bf9d4a8fa344e0bc161f38fa2caf7d636973e68945e433e24afb
+
 pkgname = epson-inkjet-printer-stylus-nx110-series-deb
-gives = epson-inkjet-printer-stylus-nx110-series
-pkgver = 1.0.0
-pkgdesc = Driver for Epson Stylus NX110, Epson Stylus SX110, Epson Stylus TX110, Epson Stylus TX111, Epson Stylus TX112 , Epson Stylus TX115, Epson Stylus TX117
-arch = amd64
-source = http://download.ebz.epson.net/dsc/f/01/00/01/68/42/287f0fb8185a2fd39b6ce51df9e7c05bac9b616a/epson-inkjet-printer-stylus-nx110-series_1.0.0-1lsb3.2_amd64.deb
-depends = lsb
-incompatible = ubuntu:lunar
-incompatible = ubuntu:mantic
-incompatible = debian:*
-maintainer = Zahrun <Zahrun@github.com>
-repology = project: epson-inkjet-printer-stylus-nx110-series
-sha256sums = 4bc20572b7f4bf9d4a8fa344e0bc161f38fa2caf7d636973e68945e433e24afb

@@ -1,11 +1,13 @@
+pkgbase = xdg-ninja-git
+	gives = xdg-ninja
+	pkgver = 0.2.0.2
+	pkgdesc = A shell script which checks your $HOME for unwanted files and directories.
+	url = https://github.com/b3nj5m1n/xdg-ninja
+	depends = jq
+	pacdeps = glow-deb
+	license = MIT
+	maintainer = vigress8 <vig@disroot.org>
+	repology = project: xdg-ninja
+	source = xdg-ninja::https://github.com/b3nj5m1n/xdg-ninja.git
+
 pkgname = xdg-ninja-git
-gives = xdg-ninja
-pkgver = 0.2.0.2
-pkgdesc = A shell script which checks your $HOME for unwanted files and directories.
-url = https://github.com/b3nj5m1n/xdg-ninja
-source = xdg-ninja::https://github.com/b3nj5m1n/xdg-ninja.git
-depends = jq
-pacdeps = glow-deb
-license = MIT
-maintainer = vigress8 <vig@disroot.org>
-repology = project: xdg-ninja

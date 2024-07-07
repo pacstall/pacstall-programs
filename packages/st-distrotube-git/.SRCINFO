@@ -1,12 +1,14 @@
+pkgbase = st-distrotube-git
+	gives = st
+	pkgver = 0.0.1
+	pkgdesc = Distrotube's st build
+	depends = fontconfig
+	makedepends = make
+	makedepends = libharfbuzz-bin
+	makedepends = libxft-dev
+	makedepends = libpango1.0-dev
+	breaks = st
+	maintainer = edward-riley <edward@edwardriley.co.uk>
+	source = https://gitlab.com/dwt1/st-distrotube.git
+
 pkgname = st-distrotube-git
-gives = st
-pkgver = 0.0.1
-pkgdesc = Distrotube's st build
-source = https://gitlab.com/dwt1/st-distrotube.git
-depends = fontconfig
-makedepends = make
-makedepends = libharfbuzz-bin
-makedepends = libxft-dev
-makedepends = libpango1.0-dev
-breaks = st
-maintainer = edward-riley <edward@edwardriley.co.uk>

@@ -1,10 +1,12 @@
+pkgbase = fpc-laz-deb
+	gives = fpc-laz
+	pkgver = 3.2
+	pkgdesc = Delphi-like IDE for FreePascal gtk2 version
+	replaces = fpc
+	provides = fpc
+	maintainer = xdavius <xdavius@github.com>
+	repology = project: lazarus
+	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.2/fpc-laz_3.2.2-210709_amd64.deb
+	sha256sums = 92000f2b831184e153aab0c910f8ae9240450e5c6d76dc189cf53116ee501d83
+
 pkgname = fpc-laz-deb
-gives = fpc-laz
-pkgver = 3.2
-pkgdesc = Delphi-like IDE for FreePascal gtk2 version
-source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.2/fpc-laz_3.2.2-210709_amd64.deb
-replaces = fpc
-provides = fpc
-maintainer = xdavius <xdavius@github.com>
-repology = project: lazarus
-sha256sums = 92000f2b831184e153aab0c910f8ae9240450e5c6d76dc189cf53116ee501d83
