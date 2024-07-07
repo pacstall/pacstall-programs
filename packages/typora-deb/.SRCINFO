@@ -1,0 +1,17 @@
+pkgbase = typora-deb
+	gives = typora
+	pkgver = 1.9.3-1
+	pkgdesc = A minimal markdown editor and reader
+	url = https://typora.io
+	arch = amd64
+	depends = libgtk-3-0
+	depends = libnss3
+	optdepends = noto-fonts-emoji: Or some other emoji fonts to see/use emojis
+	optdepends = pandoc: Import/export for extra file formats
+	replaces = typora
+	maintainer = Eric Renfro <psi-jack@linux-help.org>
+	repology = project: typora
+	source = https://download.typora.io/linux/typora_1.9.3_amd64.deb
+	sha256sums = deb47f0af1458d13e4cf6ee69b55ade61c204549cb2fb9692c5280da6a082f1f
+
+pkgname = typora-deb

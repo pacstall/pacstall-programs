@@ -1,12 +1,14 @@
+pkgbase = batsignal
+	pkgver = 1.6.4
+	pkgdesc = A lightweight battery monitor daemon
+	makedepends = pkg-config
+	makedepends = libnotify4
+	makedepends = libnotify-dev
+	breaks = batsignal
+	breaks = batsignal-git
+	maintainer = Harshwardhan Mehrotra <harshwardhanmehrotra@gmail.com>
+	repology = project: batsignal
+	source = https://github.com/electrickite/batsignal/archive/refs/tags/1.6.4.tar.gz
+	sha256sums = 58439dac2b678ab798831fe861c06d2d5c128c4bb4bae1476a62ba1771da3983
+
 pkgname = batsignal
-pkgver = 1.6.4
-pkgdesc = A lightweight battery monitor daemon
-source = https://github.com/electrickite/batsignal/archive/refs/tags/1.6.4.tar.gz
-makedepends = pkg-config
-makedepends = libnotify4
-makedepends = libnotify-dev
-breaks = batsignal
-breaks = batsignal-git
-maintainer = Harshwardhan Mehrotra <harshwardhanmehrotra@gmail.com>
-repology = project: batsignal
-sha256sums = 58439dac2b678ab798831fe861c06d2d5c128c4bb4bae1476a62ba1771da3983

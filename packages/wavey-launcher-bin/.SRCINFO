@@ -1,0 +1,26 @@
+pkgbase = wavey-launcher-bin
+	gives = wavey-launcher
+	pkgver = 1.0.1
+	pkgdesc = Wavey Launcher for Linux with automatic patching and telemetry disabling
+	depends = xdelta3
+	optdepends = mangohud: FPS Hud/GUI
+	optdepends = gamemode: Game Optimizations
+	breaks = wavey-launcher
+	breaks = wavey-launcher-deb
+	breaks = wavey-launcher-app
+	breaks = wavey-launcher-git
+	incompatible = ubuntu:bionic
+	incompatible = ubuntu:focal
+	incompatible = ubuntu:jammy
+	incompatible = ubuntu:kinetic
+	incompatible = debian:stretch
+	incompatible = debian:buster
+	incompatible = debian:bullseye
+	maintainer = vbrabandt2005 <vbrabandt@proton.me>
+	repology = project: wavey-launcher
+	source = https://github.com/an-anime-team/wavey-launcher/releases/download/1.0.1/wavey-launcher
+	source = icon.png::https://raw.githubusercontent.com/an-anime-team/wavey-launcher/main/assets/images/icon.png
+	sha256sums = ee91f347d7de593250a86b1de1aa8ed918026e1fec05655d9c44eff36fb8b439
+	sha256sums = SKIP
+
+pkgname = wavey-launcher-bin

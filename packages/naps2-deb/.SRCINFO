@@ -1,13 +1,15 @@
+pkgbase = naps2-deb
+	gives = naps2
+	pkgver = 7.4.2
+	pkgdesc = NAPS2 is a document scanning application with a focus on simplicity and ease of use
+	arch = arm64
+	arch = amd64
+	depends = libsane2
+	maintainer = vbrabandt2005 <vbrabandt@proton.me>
+	repology = project: naps2
+	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v7.4.2/naps2-7.4.2-linux-arm64.deb
+	sha256sums_arm64 = b81bedd28f2f1774fc0fb7c9e5b60ace295b148214239bbfca46df6c198b305d
+	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v7.4.2/naps2-7.4.2-linux-x64.deb
+	sha256sums_amd64 = 8ed4d4cf00b8270f841510b2cb848ddfa7627fcd60b8f29adb30878b5b56d48a
+
 pkgname = naps2-deb
-gives = naps2
-pkgver = 7.4.2
-pkgdesc = NAPS2 is a document scanning application with a focus on simplicity and ease of use
-arch = arm64
-arch = amd64
-depends = libsane2
-maintainer = vbrabandt2005 <vbrabandt@proton.me>
-repology = project: naps2
-source_amd64 = https://github.com/cyanfish/naps2/releases/download/v7.4.2/naps2-7.4.2-linux-x64.deb
-source_arm64 = https://github.com/cyanfish/naps2/releases/download/v7.4.2/naps2-7.4.2-linux-arm64.deb
-sha256sums_amd64 = 8ed4d4cf00b8270f841510b2cb848ddfa7627fcd60b8f29adb30878b5b56d48a
-sha256sums_arm64 = b81bedd28f2f1774fc0fb7c9e5b60ace295b148214239bbfca46df6c198b305d

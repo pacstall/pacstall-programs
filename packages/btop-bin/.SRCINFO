@@ -1,12 +1,14 @@
+pkgbase = btop-bin
+	gives = btop
+	pkgver = 1.3.2
+	pkgdesc = A monitor of system resourecs, bpytop ported to C++
+	arch = amd64
+	breaks = btop
+	breaks = btop-git
+	breaks = btop-deb
+	maintainer = wizard-28 <wiz28@pm.me>
+	repology = project: btop
+	source = https://github.com/aristocratos/btop/releases/download/v1.3.2/btop-x86_64-linux-musl.tbz
+	sha256sums = 9f4dce57d550d0ebec415b46c1949152989ba66dd4be5950741b74e12b231ede
+
 pkgname = btop-bin
-gives = btop
-pkgver = 1.2.13
-pkgdesc = A monitor of system resourecs, bpytop ported to C++
-arch = amd64
-source = https://github.com/aristocratos/btop/releases/download/v1.2.13/btop-x86_64-linux-musl.tbz
-breaks = btop
-breaks = btop-git
-breaks = btop-deb
-maintainer = wizard-28 <wiz28@pm.me>
-repology = project: btop
-sha256sums = 6c773ca064d314b4ea5d39d6fb0f73d6a3b74b9daa79ffae33c5b5df05bcf00a

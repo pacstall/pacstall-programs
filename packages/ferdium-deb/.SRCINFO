@@ -1,9 +1,11 @@
+pkgbase = ferdium-deb
+	gives = ferdium
+	pkgver = 6.7.5
+	pkgdesc = Ferdium is a desktop app that helps you organize how you use your favourite apps by combining them into one application
+	arch = amd64
+	maintainer = Zahrun <Zahrun@github.com>
+	repology = project: ferdium
+	source = https://github.com/ferdium/ferdium-app/releases/download/v6.7.5/Ferdium-linux-6.7.5-amd64.deb
+	sha256sums = 3e15981c64525fdc293c095f03f50dda79abfbe2166de78469d814e960176934
+
 pkgname = ferdium-deb
-gives = ferdium
-pkgver = 6.7.4
-pkgdesc = Ferdium is a desktop app that helps you organize how you use your favourite apps by combining them into one application
-arch = amd64
-source = https://github.com/ferdium/ferdium-app/releases/download/v6.7.4/Ferdium-linux-6.7.4-amd64.deb
-maintainer = Zahrun <Zahrun@github.com>
-repology = project: ferdium
-sha256sums = e3231a5b50721106901dd9fdf531a951ecf68d58b901de0e0e9ba0cd6ea44e6f

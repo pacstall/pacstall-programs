@@ -1,12 +1,14 @@
+pkgbase = nala-deb
+	gives = nala
+	pkgver = 0.15.3
+	pkgdesc = Commandline frontend for the apt package manager
+	arch = any
+	breaks = nala
+	breaks = nala-git
+	breaks = nala-bin
+	breaks = nala-app
+	maintainer = Blake Lee <blake@volian.org>
+	source = https://deb.volian.org/volian/pool/main/n/nala/nala_0.15.3_all.deb
+	sha256sums = dd418082b8da0771633f960fc513bb5bf5b7d1a8242e48446e9fb3ea9564c608
+
 pkgname = nala-deb
-gives = nala
-pkgver = 0.15.3
-pkgdesc = Commandline frontend for the apt package manager
-arch = any
-source = https://deb.volian.org/volian/pool/main/n/nala/nala_0.15.3_all.deb
-breaks = nala
-breaks = nala-git
-breaks = nala-bin
-breaks = nala-app
-maintainer = Blake Lee <blake@volian.org>
-sha256sums = dd418082b8da0771633f960fc513bb5bf5b7d1a8242e48446e9fb3ea9564c608

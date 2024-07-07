@@ -1,11 +1,13 @@
+pkgbase = linux-kernel-stable
+	pkgver = 6.9.3
+	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
+	pacdeps = linux-headers-stable-deb
+	pacdeps = linux-headers-generic-stable-deb
+	pacdeps = linux-modules-stable-deb
+	pacdeps = linux-image-unsigned-stable-deb
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: linux
+	repology = repo: distrowatch
+	source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
+
 pkgname = linux-kernel-stable
-pkgver = 6.9.1
-pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
-source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
-pacdeps = linux-headers-stable-deb
-pacdeps = linux-headers-generic-stable-deb
-pacdeps = linux-modules-stable-deb
-pacdeps = linux-image-unsigned-stable-deb
-maintainer = Oren Klopfer <oren@taumoda.com>
-repology = project: linux
-repology = repo: distrowatch
