@@ -1,6 +1,6 @@
 pkgname="naps2-deb"
 gives="naps2"
-depends=("libsane2")
+depends=("libsane1")
 repology=("project: ${gives}")
 pkgver="7.4.3"
 arch=('arm64' 'amd64')
