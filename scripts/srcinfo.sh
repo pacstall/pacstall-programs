@@ -226,8 +226,8 @@ function srcinfo.write_global() {
 
 function srcinfo.write_package() {
   local singlevalued=(gives pkgdesc url priority)
-  local multivalued=(arch license checkdepends optdepends pacdeps
-    provides conflicts breaks replaces enhances recommends backup repology)
+  local multivalued=(arch license depends checkdepends optdepends pacdeps
+    provides checkconflicts conflicts breaks replaces enhances recommends backup repology)
   printf '%s = %s\n' 'pkgname' "$1"
   srcinfo.write_details "$1"
 }
