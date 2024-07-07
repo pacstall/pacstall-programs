@@ -1,6 +1,6 @@
 pkgbase = naps2-deb
 	gives = naps2
-	pkgver = 7.4.2
+	pkgver = 7.4.3
 	pkgdesc = NAPS2 is a document scanning application with a focus on simplicity and ease of use
 	arch = arm64
 	arch = amd64
@@ -8,8 +8,8 @@ pkgbase = naps2-deb
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: naps2
 	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v7.4.2/naps2-7.4.2-linux-arm64.deb
-	sha256sums_arm64 = b81bedd28f2f1774fc0fb7c9e5b60ace295b148214239bbfca46df6c198b305d
+	sha256sums_arm64 = 948e0d195f29b5424ffbbf155284f6b00270aaaa6e371d9b8d45b60e10bc43cd
 	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v7.4.2/naps2-7.4.2-linux-x64.deb
-	sha256sums_amd64 = 8ed4d4cf00b8270f841510b2cb848ddfa7627fcd60b8f29adb30878b5b56d48a
+	sha256sums_amd64 = d27342288cc78ddea3542a98f32e4987636e5529684e90202ca5150ca27872da
 
 pkgname = naps2-deb
