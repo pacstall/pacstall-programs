@@ -5,10 +5,11 @@ pkgdesc="hwinfo/libhd are used to probe for the hardware present in the system (
 arch=('amd64')
 url='https://github.com/openSUSE/hwinfo'
 provides=("libhd")
-depends=("libxml-parser-perl" "libxml-writer-perl" "libx86emu3")
-makedepends=("flex" "sysfsutils" "libx86emu-dev" "uuid-dev")
+depends=("libxml-parser-perl" "libxml-writer-perl")
+makedepends=("flex" "sysfsutils" "uuid-dev")
 if [[ ${DISTRO#*:} != "trixie" ]]; then
   makedepends+=("libx86emu-dev")
+  depends+=("libx86emu3")
 else
   pacdeps=("libx86emu")
 fi
