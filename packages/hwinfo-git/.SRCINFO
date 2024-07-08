@@ -9,7 +9,6 @@ pkgbase = hwinfo-git
 	depends = libx86emu3
 	makedepends = flex
 	makedepends = sysfsutils
-	makedepends = libx86emu-dev
 	makedepends = uuid-dev
 	makedepends = libx86emu-dev
 	provides = libhd
