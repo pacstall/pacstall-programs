@@ -10,7 +10,6 @@ pkgbase = hwinfo-git
 	makedepends = flex
 	makedepends = uuid-dev
 	makedepends = libsysfs-dev
-	makedepends = libx86emu-dev
 	provides = libhd
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://github.com/openSUSE/hwinfo.git
