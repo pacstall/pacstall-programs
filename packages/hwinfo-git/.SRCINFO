@@ -10,6 +10,7 @@ pkgbase = hwinfo-git
 	makedepends = flex
 	makedepends = sysfsutils
 	makedepends = libx86emu-dev
+	makedepends = uuid-dev
 	makedepends = libx86emu-dev
 	provides = libhd
 	maintainer = xdavius <xdavius@github.com>
