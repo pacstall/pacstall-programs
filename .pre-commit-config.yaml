@@ -46,6 +46,6 @@ repos:
       - id: update-packagelist
         name: update packagelist file
         language: system
-        entry: ./scripts/srcinfo.sh packagelist
+        entry: env LC_ALL=C ./scripts/srcinfo.sh packagelist
 
 # vim:set ft=yaml ts=2 sw=2 et:
