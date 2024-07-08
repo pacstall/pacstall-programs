@@ -10,12 +10,10 @@ pkgbase = hwinfo-git
 	makedepends = flex
 	makedepends = sysfsutils
 	makedepends = libx86emu-dev
+	makedepends = libx86emu-dev
 	provides = libhd
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://github.com/openSUSE/hwinfo.git
 	sha256sums = SKIP
-	makedepends_trixie = flex
-	makedepends_trixie = sysfsutils
-	pacdeps_trixie = libx86emu
 
 pkgname = hwinfo-git
