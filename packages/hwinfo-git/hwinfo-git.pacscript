@@ -7,8 +7,11 @@ url='https://github.com/openSUSE/hwinfo'
 provides=("libhd")
 depends=("libxml-parser-perl" "libxml-writer-perl" "libx86emu3")
 makedepends=("flex" "sysfsutils" "libx86emu-dev")
-pacdeps_trixie=("libx86emu")
-makedepends_trixie=("flex" "sysfsutils")
+if [[ ${DISTRO#*:} != "trixie" ]]; then
+  makedepends+=("libx86emu-dev")
+else
+  pacdeps=("libx86emu")
+fi
 source=("git+https://github.com/openSUSE/hwinfo.git")
 sha256sums=('SKIP')
 maintainer=("xdavius <xdavius@github.com>")
