@@ -5,7 +5,7 @@ pkgver="3.5"
 pkgdesc='x86 emulation library'
 arch=("amd64")
 url='https://github.com/wfeldt/libx86emu'
-pacdeps=("setconf | setconf-git")
+pacdeps=("setconf")
 source=("git+https://github.com/wfeldt/libx86emu#commit=41aaa2f246d362f6d7dea262052a43141743ead2") # tag: 3.5
 sha256sums=('SKIP')
 maintainer=("xdavius <xdavius@github.com>")
