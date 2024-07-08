@@ -7,7 +7,7 @@ url='https://github.com/openSUSE/hwinfo'
 provides=("libhd")
 depends=("libxml-parser-perl" "libxml-writer-perl")
 makedepends=("flex" "uuid-dev" "libsysfs-dev")
-if [[ ${DISTRO#*:} != "debian:testing" ]]; then
+if [[ ${CDISTRO#*:} != "debian:testing" ]]; then
   makedepends+=("libx86emu-dev")
   depends+=("libx86emu3")
 else
