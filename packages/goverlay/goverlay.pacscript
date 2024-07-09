@@ -24,7 +24,7 @@ maintainer="xdavius <xdavius@github.com>"
 
 build() {
   cd "${_archive}"
-  if [[ ${DISTRO#*:} == "sid trixie noble oracular devel" ]]; then
+  if [[ ${DISTRO#*:} =~ "sid trixie noble oracular devel" ]]; then
     make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/lib/lazarus/default
   else
     make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/share/lazarus/3.2.0/
