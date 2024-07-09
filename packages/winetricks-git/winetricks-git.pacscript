@@ -7,7 +7,8 @@ url='https://github.com/Winetricks/winetricks'
 source=("https://github.com/Winetricks/winetricks.git")
 sha512sums=('SKIP')
 makedepends=("make")
-maintainer=("Xdavius <xdavius@github.com>")
+maintainer="xdavius <xdavius@github.com>"
+repology=("project: winetricks")
 
 package() {
   cd "${gives}"

@@ -1,4 +1,3 @@
-maintainer="Xdavius <xdavius@github.com>"
 pkgname="goverlay"
 pkgver="1.1.1"
 pkgdesc="A GUI to help manage Vulkan/OpenGL overlays"
@@ -21,6 +20,7 @@ makedepends_devel=("${makedepends_sid[@]}")
 if [[ ! "sid trixie noble oracular devel" =~ ${DISTRO#*:} ]]; then
   pacdeps+=('fpc-laz-deb' 'fpc-src-deb' 'lazarus-project-deb')
 fi
+maintainer="xdavius <xdavius@github.com>"
 
 build() {
   cd "${_archive}"
