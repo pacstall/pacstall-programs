@@ -595,6 +595,7 @@ function srcinfo.pkg_list() {
 }
 
 function srcinfo.repo_check() {
+  local tracked repolist ret
   mapfile -t tracked < <(git ls-files)
   if ((${#@} < 1)); then
     mapfile -t repolist < <(ls packages/*/*.pacscript)
@@ -617,6 +618,127 @@ function srcinfo.repo_check() {
   exit "${ret}"
 }
 
+function srcinfo.list_build() {
+  local FILE="${1}" filelist tmploc
+  tmploc="$(mktemp)"
+  printf "### Auto-generated for pacstall-programs\n" > "${tmploc}"
+  mapfile -t filelist < <(ls packages/*/.SRCINFO)
+  for i in "${filelist[@]}"; do
+    printf "\n---\n" >> "${tmploc}"
+    while IFS= read -r line; do
+      echo "${line}" >> "${tmploc}"
+    done < "${i}"
+  done
+  mv "${tmploc}" "${FILE}"
+}
+
+function srcinfo.list_search() {
+  local FILE="${1}"
+  awk -v kw="${2}" '
+  BEGIN {
+    IGNORECASE = 1
+    FS = "[[:space:]]*=[[:space:]]*"
+    OFS = " - "
+    found = 0
+  }
+  function print_pkgbase_and_pkgname() {
+    if (pkgbase != "") {
+      print pkgbase, pkgbase_desc
+      if (pkgname != "") {
+        desc = (pkgname_desc != "" ? pkgname_desc : pkgbase_desc)
+        print pkgbase ":" pkgname, desc
+      }
+    }
+  }
+  /^---$/ {
+    if (pkgbase != "" && (pkgbase ~ kw || pkgbase_desc ~ kw)) {
+      print_pkgbase_and_pkgname()
+      found = 1
+    } else if (pkgname != "" && (pkgname ~ kw || pkgname_desc ~ kw)) {
+      print_pkgbase_and_pkgname()
+      found = 1
+    }
+    pkgname = ""; pkgbase = ""; pkgbase_desc = ""; pkgname_desc = ""; next
+  }
+  /^[[:space:]]*pkgbase[[:space:]]*=/ {
+    pkgbase = $2
+    pkgbase_desc = ""
+  }
+  /^[[:space:]]*pkgname[[:space:]]*=/ {
+    if (pkgname != "") {
+      desc = (pkgname_desc != "" ? pkgname_desc : pkgbase_desc)
+      if (pkgname ~ kw || desc ~ kw) {
+        print pkgbase ":" pkgname, desc
+        found = 1
+      }
+    }
+    pkgname = $2
+    pkgname_desc = ""
+  }
+  /^[[:space:]]*pkgdesc[[:space:]]*=/ {
+    if (pkgname == "") {
+      pkgbase_desc = $2
+    } else {
+      pkgname_desc = $2
+    }
+  }
+  END {
+    if (!found) {
+      print "No matching packages found"
+    }
+  }
+  ' "${FILE}"
+}
+
+function srcinfo.list_parse() {
+  local SRCFILE="${1}" PKGFILE="${2}" KWD="${3}" searchlist pkglist
+  mapfile -t searchlist < <(srcinfo.list_search "${1}" "${KWD}")
+  mapfile -t pkglist < "${2}"
+  for i in "${searchlist[@]}"; do
+    if srcinfo._contains pkglist "${i%% -*}"; then
+      printf '\033[0;35m%s\033[0m - %s\n' "${i%% -*}" "${i#* - }"
+    elif srcinfo._contains pkglist "${i%% -*}:pkgbase"; then
+      printf '\033[0;35m%s:pkgbase\033[0m - %s\n' "${i%% -*}" "${i#* - }"
+    fi
+  done
+}
+
+function srcinfo.list_info() {
+  local FILE="${1}" SEARCH="${2}" NAME FIELD
+  NAME="${SEARCH#*:}" PARENT="${SEARCH%:*}"
+  if [[ ${SEARCH} != *':'* || ${NAME} == "pkgbase" ]]; then
+    FIELD="pkgbase"
+  else
+    FIELD="pkgname"
+  fi
+  [[ ${NAME} == "pkgbase" ]] && NAME="${PARENT}"
+  awk -v pkg="${NAME}" -v field="${FIELD}" '
+  BEGIN { print_pkg = 0 }
+  /^---$/ {
+    if (print_pkg && field == "pkgname") {
+      print ""; exit
+    }
+    print_pkg = 0
+  }
+  /^[[:space:]]*$/ {
+    if (print_pkg && field == "pkgname") {
+      print ""; exit
+    }
+  }
+  {
+    if ($1 == "pkgbase" && $3 != pkg && field == "pkgname") {
+      print_pkg = 0
+    }
+    if ($1 == field && $3 == pkg) {
+      print_pkg = 1
+    }
+    if (print_pkg) {
+      print
+    }
+  }
+  ' "${FILE}"
+}
+
 function srcinfo.cmd() {
   if [[ ${1} == "write" ]]; then
     shift 1
@@ -628,13 +750,24 @@ function srcinfo.cmd() {
     srcinfo.repo_check "${@}"
   elif [[ ${1} == "packagelist" ]]; then
     # no args
-    srcinfo.pkg_list > packagelist
+    srcinfo.pkg_list > "packagelist"
   elif [[ ${1} == "read" ]]; then
     # see srcinfo.match_pkg for description
     # shellcheck disable=SC2086
     srcinfo.match_pkg "${2:?No SRCINFO file provided}" "${3:?No variable provided}" ${4}
+  elif [[ ${1} == "srclist" ]]; then
+    shift 1
+    if [[ $1 == "build" ]]; then
+      srcinfo.list_build "srclist"
+    elif [[ $1 == "search" ]]; then
+      srcinfo.list_parse "srclist" "packagelist" "${2:?missing KEYWORD}"
+    elif [[ $1 == "info" ]]; then
+      srcinfo.list_info "srclist" "${2:?missing PACKAGE}"
+    else
+      srcinfo.die "Usage: $0 srclist {build|search <keyword>|info <package_name>}"
+    fi
   else
-    srcinfo.die "options: read | write | packagelist | check"
+    srcinfo.die "Usage: $0 {read | write | check | packagelist | srclist}"
   fi
 }
 
