@@ -1,7 +1,6 @@
 pkgname="setconf"
 pkgver="0.7.7"
 pkgdesc='Utility for easily changing settings in configuration files'
-arch=("any")
 url='https://setconf.roboticoverlords.org/'
 depends=("python3" "python-is-python3")
 source=("https://setconf.roboticoverlords.org/${pkgname}-${pkgver}.tar.xz"{,.asc})
