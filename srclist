@@ -3301,7 +3301,7 @@ pkgname = github-cli-deb
 ---
 pkgbase = github-desktop-deb
 	gives = github-desktop
-	pkgver = 3.3.10
+	pkgver = 3.4.2
 	pkgdesc = Fork of GitHub Desktop to support various Linux distributions
 	url = https://desktop.github.com
 	arch = amd64
@@ -3311,12 +3311,12 @@ pkgbase = github-desktop-deb
 	repology = project: github-desktop
 	repology = visiblename: github-desktop
 	repology = repo: aur
-	source_amd64 = https://github.com/shiftkey/desktop/releases/download/release-3.3.10-linux1/GitHubDesktop-linux-amd64-3.3.10-linux1.deb
-	sha256sums_amd64 = cf3abaa7f0c0426812c38280518aadad02a420f92c2f39144231b3c0edba5a04
-	source_arm64 = https://github.com/shiftkey/desktop/releases/download/release-3.3.10-linux1/GitHubDesktop-linux-arm64-3.3.10-linux1.deb
-	sha256sums_arm64 = aec957d95ec694113a650395a7e71f37d469192c3364358fe5b9b6fe44ed853a
-	source_armhf = https://github.com/shiftkey/desktop/releases/download/release-3.3.10-linux1/GitHubDesktop-linux-armhf-3.3.10-linux1.deb
-	sha256sums_armhf = fd1340f570d06cdb6ef7652a49fc475ced8bbe2511af7f97359c2a7ebba2491f
+	source_amd64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-amd64-3.4.2-linux1.deb
+	sha256sums_amd64 = a98e6b0af3a07f5fd9d345d9eb2027eb329d519fba9783c2b613d4e385cb2a17
+	source_arm64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-arm64-3.4.2-linux1.deb
+	sha256sums_arm64 = 55b3e34f3e316066953b7b8e1ba950350ad5126c77f87ffecbcfabd0ee796948
+	source_armhf = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-armhf-3.4.2-linux1.deb
+	sha256sums_armhf = a7a4bdddbcb6686b7e1ff943c3c7ba92debfe60ef216e84ffacbc2e37e0cd654
 
 pkgname = github-desktop-deb
 
@@ -3592,7 +3592,7 @@ pkgbase = goverlay
 	pacdeps = fpc-laz-deb
 	pacdeps = fpc-src-deb
 	pacdeps = lazarus-project-deb
-	maintainer = Xdavius <xdavius@github.com>
+	maintainer = xdavius <xdavius@github.com>
 	repology = project: goverlay
 	source = https://github.com/benjamimgois/goverlay/archive/refs/tags/1.1.1.tar.gz
 	sha256sums = 06dcad9ab7db990f2df04be01d549953e274907d7f691fe1bc4bbe712329936c
@@ -5691,13 +5691,13 @@ pkgname = linux-modules-stable-deb
 ---
 pkgbase = linux-wifi-hotspot-deb
 	gives = linux-wifi-hotspot
-	pkgver = 4.7.1
+	pkgver = 4.7.2
 	pkgdesc = Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface. It is also able to create a hotspot using the same wifi card which is connected to an AP already ( Similar to Windows 10).
 	arch = amd64
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: linux-wifi-hotspot
-	source = https://github.com/lakinduakash/linux-wifi-hotspot/releases/download/v4.7.1/linux-wifi-hotspot_4.7.1_amd64.deb
-	sha256sums = eeae00cbe0bacd122a30f02291caffd7e75f2d23dbd25dab276c048c7797299b
+	source = https://github.com/lakinduakash/linux-wifi-hotspot/releases/download/v4.7.2/linux-wifi-hotspot_4.7.2_amd64.deb
+	sha256sums = 3231badec87e3183f61fea43dd6a71a9be881d301e4e65a620855ea3d6f21ad4
 
 pkgname = linux-wifi-hotspot-deb
 
@@ -6548,7 +6548,7 @@ pkgname = neovim-app
 ---
 pkgbase = neovim-git
 	gives = neovim
-	pkgver = 0.9.1
+	pkgver = 0.10.1
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	makedepends = ninja-build
@@ -6560,11 +6560,22 @@ pkgbase = neovim-git
 	makedepends = g++
 	makedepends = pkg-config
 	makedepends = unzip
-	breaks = neovim-bin
-	breaks = neovim
-	breaks = neovim-app
-	breaks = neovim-deb
+	conflicts = neovim
+	conflicts = nvim
+	conflicts = neovim-runtime
+	conflicts = neovim-git
+	conflicts = neovim-app
+	conflicts = neovim-deb
+	conflicts = neovim-bin
+	replaces = neovim
+	replaces = nvim
+	replaces = neovim-runtime
+	replaces = neovim-git
+	replaces = neovim-app
+	replaces = neovim-deb
+	replaces = neovim-bin
 	maintainer = Elsie19 <elsie19@pm.me>
+	repology = project: neovim
 	source = https://github.com/neovim/neovim.git
 
 pkgname = neovim-git
@@ -6572,6 +6583,7 @@ pkgname = neovim-git
 ---
 pkgbase = neovim
 	pkgver = 0.10.0
+	pkgrel = 2
 	pkgdesc = Neovim is a vim fork maintained by the community
 	url = https://neovim.io/
 	makedepends = gettext
@@ -6582,7 +6594,12 @@ pkgbase = neovim
 	makedepends = cmake
 	makedepends = g++
 	makedepends = pkg-config
+	conflicts = neovim
+	conflicts = neovim-git
+	conflicts = nvim
+	conflicts = neovim-runtime
 	replaces = neovim
+	replaces = neovim-git
 	replaces = nvim
 	replaces = neovim-runtime
 	maintainer = Elsie19 <elsie19@pm.me>
@@ -8146,7 +8163,8 @@ pkgbase = qt6pas
 	makedepends = qmake6
 	makedepends = libgl-dev
 	provides = libqt6pas1
-	maintainer = Xdavius <xdavius@github.com>
+	maintainer = xdavius <xdavius@github.com>
+	repology = project: qt6pas
 	source = https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_3_0/lazarus-lazarus_3_0.tar.bz2
 	sha256sums = 053ebb9d703162617a6c5bbd26e78aacb45e439d9a9964aa3197eaada2aa8c2e
 
@@ -10595,6 +10613,7 @@ pkgbase = ventoy-bin
 	provides = ventoy
 	license = GPL-3.0-or-later
 	maintainer = xdavius <xdavius@github.com>
+	repology = project: ventoy
 	source = https://github.com/ventoy/Ventoy/releases/download/v1.0.99/ventoy-1.0.99-linux.tar.gz
 	source = https://aur.archlinux.org/cgit/aur.git/plain/sanitize.patch?h=ventoy-bin
 	source = https://aur.archlinux.org/cgit/aur.git/plain/ventoy?h=ventoy-bin
@@ -10643,6 +10662,31 @@ pkgbase = veracrypt-deb
 	sha256sums_jammy = f0dca101cf5b5eccfadaad3f53aea037fd5a01cd9afeb7248ddcca28b821a0ef
 
 pkgname = veracrypt-deb
+
+---
+pkgbase = vesktop-deb
+	gives = vesktop
+	pkgver = 1.5.3
+	pkgdesc = A custom Discord client that aims to provide better customizability, performance, and improved Linux support
+	arch = arm64
+	arch = amd64
+	depends = libgtk-3-0
+	depends = libnotify4
+	depends = libnss3
+	depends = libxss1
+	depends = libxtst6
+	depends = xdg-utils
+	depends = libatspi2.0-0
+	depends = libuuid1
+	depends = libsecret-1-0
+	maintainer = vbrabandt2005 <vbrabandt@proton.me>
+	repology = project: vesktop
+	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.3/vesktop_1.5.3_arm64.deb
+	sha256sums_arm64 = 5d30d57539ff75a2d1a449e2b0b95e6fa969e87e1cd82db2314b11acbf661bd9
+	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.3/vesktop_1.5.3_amd64.deb
+	sha256sums_amd64 = cc7109e74a328e43f922f623aa82eafd8322967bc3fb14e467181cd12ae44b7e
+
+pkgname = vesktop-deb
 
 ---
 pkgbase = viper4linux
@@ -11317,7 +11361,8 @@ pkgbase = winetricks-git
 	breaks = winetricks-bin
 	breaks = winetricks-app
 	breaks = winetricks
-	maintainer = Xdavius <xdavius@github.com>
+	maintainer = xdavius <xdavius@github.com>
+	repology = project: winetricks
 	source = https://github.com/Winetricks/winetricks.git
 	sha512sums = SKIP
 
