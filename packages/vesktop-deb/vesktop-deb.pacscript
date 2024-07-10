@@ -1,0 +1,12 @@
+pkgname="vesktop-deb"
+gives="vesktop"
+depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libsecret-1-0")
+repology=("project: ${gives}")
+pkgver="1.5.3"
+arch=('arm64' 'amd64')
+sha256sums_arm64=("5d30d57539ff75a2d1a449e2b0b95e6fa969e87e1cd82db2314b11acbf661bd9")
+source_arm64=("https://github.com/Vencord/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_arm64.deb")
+sha256sums_amd64=("cc7109e74a328e43f922f623aa82eafd8322967bc3fb14e467181cd12ae44b7e")
+source_amd64=("https://github.com/Vencord/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_amd64.deb")
+pkgdesc="A custom Discord client that aims to provide better customizability, performance, and improved Linux support"
+maintainer=("vbrabandt2005 <vbrabandt@proton.me>")

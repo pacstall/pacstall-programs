@@ -15,6 +15,7 @@ pkgbase = ventoy-bin
 	provides = ventoy
 	license = GPL-3.0-or-later
 	maintainer = xdavius <xdavius@github.com>
+	repology = project: ventoy
 	source = https://github.com/ventoy/Ventoy/releases/download/v1.0.99/ventoy-1.0.99-linux.tar.gz
 	source = https://aur.archlinux.org/cgit/aur.git/plain/sanitize.patch?h=ventoy-bin
 	source = https://aur.archlinux.org/cgit/aur.git/plain/ventoy?h=ventoy-bin
