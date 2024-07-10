@@ -2,7 +2,6 @@ pkgbase = setconf
 	pkgver = 0.7.7
 	pkgdesc = Utility for easily changing settings in configuration files
 	url = https://setconf.roboticoverlords.org/
-	arch = any
 	depends = python3
 	depends = python-is-python3
 	maintainer = xdavius <xdavius@github.com>
