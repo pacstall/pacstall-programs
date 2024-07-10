@@ -1,7 +1,7 @@
 pkgbase = vesktop-deb
 	gives = vesktop
 	pkgver = 1.5.3
-	pkgdesc = Vesktop is a custom Discord App aiming to give you better performance and improve linux support
+  pkgdesc = A custom Discord client that aims to provide better customizability, performance, and improved Linux support
 	arch = arm64
 	arch = amd64
 	depends = libgtk-3-0
