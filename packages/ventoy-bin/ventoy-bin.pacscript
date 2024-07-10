@@ -2,7 +2,6 @@ pkgname="ventoy-bin"
 gives="ventoy"
 pkgver="1.0.99"
 pkgdesc="A new bootable USB solution"
-maintainer="xdavius <xdavius@github.com>"
 arch=('amd64')
 url="http://www.ventoy.net"
 license=('GPL-3.0-or-later')
@@ -30,6 +29,8 @@ sha256sums=('467cdd188a7f739bc706adbc1d695f61ffdefc95916adb015947d80829f00a3d'
   'SKIP'
   'SKIP'
   'SKIP')
+maintainer=("xdavius <xdavius@github.com>")
+repology=("project: ${gives}")
 
 prepare() {
   cd "${_archive}"

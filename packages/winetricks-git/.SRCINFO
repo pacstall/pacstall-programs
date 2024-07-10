@@ -8,7 +8,8 @@ pkgbase = winetricks-git
 	breaks = winetricks-bin
 	breaks = winetricks-app
 	breaks = winetricks
-	maintainer = Xdavius <xdavius@github.com>
+	maintainer = xdavius <xdavius@github.com>
+	repology = project: winetricks
 	source = https://github.com/Winetricks/winetricks.git
 	sha512sums = SKIP
 
