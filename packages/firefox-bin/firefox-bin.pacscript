@@ -7,7 +7,7 @@ url='https://www.mozilla.org/en-US/firefox'
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('amd64')
-sha256sums=("b86001baff83e05c8254faaf677a3a9e3c2f75d91b93460c0d486dc5c3873d25")
+sha256sums=("dce89cff7286c1bd4dd906fb9123e6136f1a1ecb7a6d674c53566c319cc85c4d")
 
 package() {
   cd "${srcdir}"
