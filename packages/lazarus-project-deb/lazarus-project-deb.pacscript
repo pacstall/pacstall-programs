@@ -6,5 +6,5 @@ pacdep=("fpc-laz-deb" "fpc-src-deb")
 repology=("project: lazarus")
 source=("https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.4/lazarus-project_3.4.0-0_amd64.deb")
 pkgdesc='Delphi-like IDE for FreePascal gtk2 version'
-sha256sums=("5b1e40827507b2194fd058f9a6a867368d1fcc74a6e06750ac9a00b305c023e2")
+sha256sums=("99707b14fe2fe60054815cb5075f3bb723c0a743f5de8af0b4e436cc276f3a4f")
 maintainer=("xdavius <xdavius@github.com>")
