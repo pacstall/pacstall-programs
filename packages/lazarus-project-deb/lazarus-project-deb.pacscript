@@ -1,10 +1,10 @@
 pkgname="lazarus-project-deb"
-pkgver="3.2"
+pkgver="3.4"
 gives="lazarus-project"
 breaks=("lazarus-ide-qt6")
 pacdep=("fpc-laz-deb" "fpc-src-deb")
 repology=("project: lazarus")
-source=("https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.2/lazarus-project_3.2.0-0_amd64.deb")
+source=("https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.4/lazarus-project_3.4.0-0_amd64.deb")
 pkgdesc='Delphi-like IDE for FreePascal gtk2 version'
-sha256sums=("82bce48deca77432a1e95b300a358f8de9650179eeb9c5700bc85684e1839f4b")
+sha256sums=("5b1e40827507b2194fd058f9a6a867368d1fcc74a6e06750ac9a00b305c023e2")
 maintainer=("xdavius <xdavius@github.com>")
