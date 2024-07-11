@@ -6,7 +6,6 @@ pkgbase = setconf
 	depends = python-is-python3
 	maintainer = xdavius <xdavius@github.com>
 	source = https://setconf.roboticoverlords.org/setconf-0.7.7.tar.xz
-	source = https://setconf.roboticoverlords.org/setconf-0.7.7.tar.xz.asc
 	sha256sums = 19315574540b3181fec31a4059b9e058381e0192317f153d181e7e7e2aa84d86
 
 pkgname = setconf
