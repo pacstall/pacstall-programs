@@ -1,5 +1,6 @@
 pkgname="goverlay"
 pkgver="1.1.1"
+pkgrel="2"
 pkgdesc="A GUI to help manage Vulkan/OpenGL overlays"
 gives="goverlay"
 replace=("goverlay-bin")
@@ -27,7 +28,7 @@ build() {
   if [[ "sid trixie noble oracular devel" =~ ${DISTRO#*:} ]]; then
     make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/lib/lazarus/default
   else
-    make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/share/lazarus/3.2.0/
+    make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/share/lazarus/3.4.0/
   fi
 }
 
