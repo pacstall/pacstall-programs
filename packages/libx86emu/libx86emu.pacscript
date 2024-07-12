@@ -12,19 +12,16 @@ maintainer=("xdavius <xdavius@github.com>")
 external_connection=true
 
 prepare() {
-  cd "${srcdir}"
-  #sed -i 's/-shared -Wl/-shared '"$LDFLAGS"'/g' ${pkgname}/Makefile
+  sed -i 's/-shared -Wl/-shared '"$LDFLAGS"'/g' ${pkgname}/Makefile
   setconf "${pkgname}"/Makefile \
     CFLAGS="${CFLAGS}0 -shared -fPIC -fvisibility=hidden -fomit-frame-pointer -w"
 }
 
 build() {
-  cd "${srcdir}"
   make -C "${pkgname}" LIBDIR=/usr/lib
 }
 
 package() {
-  cd "${srcdir}"
   make -C "${pkgname}" LIBDIR=/usr/lib DESTDIR="${pkgdir}" install
   install -Dm644 "${pkgname}"/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
