@@ -2694,14 +2694,14 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 127.0.2
+	pkgver = 128.0
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/127.0.2/linux-x86_64/en-US/firefox-127.0.2.tar.bz2
-	sha256sums = 9e200146236e2403d4be088b49a6c8de3294ff1aa000ebf385d42c593207954b
+	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.0/linux-x86_64/en-US/firefox-128.0.tar.bz2
+	sha256sums = dce89cff7286c1bd4dd906fb9123e6136f1a1ecb7a6d674c53566c319cc85c4d
 
 pkgname = firefox-bin
 
@@ -2897,13 +2897,13 @@ pkgname = forticlient-deb
 ---
 pkgbase = fpc-laz-deb
 	gives = fpc-laz
-	pkgver = 3.2
+	pkgver = 3.2.2
 	pkgdesc = Delphi-like IDE for FreePascal gtk2 version
 	replaces = fpc
 	provides = fpc
 	maintainer = xdavius <xdavius@github.com>
-	repology = project: lazarus
-	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.2/fpc-laz_3.2.2-210709_amd64.deb
+	repology = project: fpc
+	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.4/fpc-laz_3.2.2-210709_amd64.deb
 	sha256sums = 92000f2b831184e153aab0c910f8ae9240450e5c6d76dc189cf53116ee501d83
 
 pkgname = fpc-laz-deb
@@ -2911,11 +2911,11 @@ pkgname = fpc-laz-deb
 ---
 pkgbase = fpc-src-deb
 	gives = fpc-src
-	pkgver = 3.2
+	pkgver = 3.2.2
 	pkgdesc = Delphi-like IDE for FreePascal gtk2 version
 	maintainer = xdavius <xdavius@github.com>
-	repology = project: lazarus
-	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.2/fpc-src_3.2.2-210709_amd64.deb
+	repology = project: fpc
+	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.4/fpc-src_3.2.2-210709_amd64.deb
 	sha256sums = 8c9e145d8056754a9ca39ce3e52e982b8e4816124984c5f542f2a874e721ad53
 
 pkgname = fpc-src-deb
@@ -2923,12 +2923,12 @@ pkgname = fpc-src-deb
 ---
 pkgbase = freetube-deb
 	gives = freetube
-	pkgver = 0.21.0
+	pkgver = 0.21.1
 	pkgdesc = An Open Source YouTube app for privacy.
 	arch = amd64
 	repology = project: freetube
-	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.0-beta/freetube_0.21.0_amd64.deb
-	sha256sums = c010e55a608bcee817f969a02ab3d9cf4368696f4a2b954c6adebc4e0b70868a
+	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.1-beta/freetube_0.21.1_amd64.deb
+	sha256sums = ea2264b9458f9911e3a5000038a09a808b8e872e5df19a36201e319cf3ca3b53
 
 pkgname = freetube-deb
 
@@ -3323,14 +3323,14 @@ pkgname = github-desktop-deb
 ---
 pkgbase = gitkraken-deb
 	gives = gitkraken
-	pkgver = 10.0.2
+	pkgver = 10.1.0
 	pkgdesc = Legendary Git GUI client for Windows, Mac & Linux
 	breaks = gitkraken-bin
 	replaces = gitkraken
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: gitkraken
-	source = https://release.axocdn.com/linux/GitKraken-v10.0.2.deb
-	sha256sums = 692940d919d153a625a9181a86451e440b439fa4b33fb68740f5cae98b7fbe8b
+	source = https://release.axocdn.com/linux/GitKraken-v10.1.0.deb
+	sha256sums = c94fb01b50d12cf7c195e800450166b1d3a514f5205248e057c9ce674d63e21d
 
 pkgname = gitkraken-deb
 
@@ -3577,6 +3577,7 @@ pkgname = goverlay-bin
 pkgbase = goverlay
 	gives = goverlay
 	pkgver = 1.1.1
+	pkgrel = 2
 	pkgdesc = A GUI to help manage Vulkan/OpenGL overlays
 	url = https://github.com/benjamimgois/goverlay/
 	arch = amd64
@@ -4978,13 +4979,13 @@ pkgname = latte-dock-git
 ---
 pkgbase = lazarus-project-deb
 	gives = lazarus-project
-	pkgver = 3.2
+	pkgver = 3.4
 	pkgdesc = Delphi-like IDE for FreePascal gtk2 version
 	breaks = lazarus-ide-qt6
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: lazarus
-	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.2/lazarus-project_3.2.0-0_amd64.deb
-	sha256sums = 82bce48deca77432a1e95b300a358f8de9650179eeb9c5700bc85684e1839f4b
+	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.4/lazarus-project_3.4.0-0_amd64.deb
+	sha256sums = 99707b14fe2fe60054815cb5075f3bb723c0a743f5de8af0b4e436cc276f3a4f
 
 pkgname = lazarus-project-deb
 
@@ -8823,6 +8824,19 @@ pkgbase = sed
 	sha256sums = f79b0cfea71b37a8eeec8490db6c5f7ae7719c35587f21edb0617f370eeff633
 
 pkgname = sed
+
+---
+pkgbase = setconf
+	pkgver = 0.7.7
+	pkgdesc = Utility for easily changing settings in configuration files
+	url = https://setconf.roboticoverlords.org/
+	depends = python3
+	depends = python-is-python3
+	maintainer = xdavius <xdavius@github.com>
+	source = https://setconf.roboticoverlords.org/setconf-0.7.7.tar.xz
+	sha256sums = 19315574540b3181fec31a4059b9e058381e0192317f153d181e7e7e2aa84d86
+
+pkgname = setconf
 
 ---
 pkgbase = shell-color-scripts
