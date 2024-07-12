@@ -9,6 +9,7 @@ pacdeps=("setconf")
 source=("git+https://github.com/wfeldt/libx86emu#commit=41aaa2f246d362f6d7dea262052a43141743ead2") # tag: 3.5
 sha256sums=('SKIP')
 maintainer=("xdavius <xdavius@github.com>")
+external_connection=true
 
 prepare() {
   cd "${srcdir}"
