@@ -1,6 +1,6 @@
 pkgname="modprobed-db"
 gives="modprobed-db"
-pkgver="2.46"
+pkgver="2.47"
 pkgdesc="Keeps track of EVERY kernel module ever used - useful for make localmodconfig"
 license=("MIT")
 depends=("kmod")
