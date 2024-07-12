@@ -12,6 +12,7 @@ maintainer=("xdavius <xdavius@github.com>")
 external_connection=true
 
 prepare() {
+# shellcheck disable=all
   sed -i 's/-shared -Wl/-shared '"$LDFLAGS"'/g' ${pkgname}/Makefile
   setconf "${pkgname}"/Makefile \
     CFLAGS="${CFLAGS}0 -shared -fPIC -fvisibility=hidden -fomit-frame-pointer -w"
