@@ -52,7 +52,9 @@ post_install() {
   ecrire_en_orange '
 	- Add all this module in one command :
 	'
-  printf "echo -e \"ext4\nfat\nvfat\nloop\nisofs\ncifs\nefivarfs\nusb_storage\nusbhid\" >> /home/\${LOGNAME}/.config/modprobed.db\n"
+  cat << 'EOF'
+  echo -e "ext4\nfat\nvfat\nloop\nisofs\ncifs\nefivarfs\nusb_storage\nusbhid" >> /home/${LOGNAME}/.config/modprobed.db
+EOF
   ecrire_en_orange '
 -----------------------------------------------------------------------------------------------------------------------------'
 }
