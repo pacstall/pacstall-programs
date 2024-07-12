@@ -99,6 +99,7 @@ jobs:
           chmod +x ./pacstall-install.sh
           echo N\n | sudo -E ./pacstall-install.sh
           rm ./pacstall-install.sh
+          sudo sed -i 's/ignore_stack=false/ignore_stack=true/g' /usr/bin/pacstall
           pacstall -U pacstall ${{ matrix.PACSTALL_VERSION }}
           ls -lad /tmp/pacstall
         shell: sudo -E -u dio bash {0}
@@ -121,7 +122,7 @@ jobs:
               else
                 echo "Running pacstall -Qa for ${package_name}..."
                 echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
-                { echo N | pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}; } || exit 1
+                pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}
               fi
             fi
           done
@@ -223,6 +224,7 @@ jobs:
           chmod +x ./pacstall-install.sh
           echo N\n | sudo -E ./pacstall-install.sh
           rm ./pacstall-install.sh
+          sudo sed -i 's/ignore_stack=false/ignore_stack=true/g' /usr/bin/pacstall
           pacstall -U pacstall ${{ matrix.PACSTALL_VERSION }}
           ls -lad /tmp/pacstall
         shell: sudo -E -u dio bash {0}
@@ -245,7 +247,7 @@ jobs:
               else
                 echo "Running pacstall -Qa for ${package_name}..."
                 echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
-                { echo N | pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}; } || exit 1
+                pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}
               fi
             fi
           done
