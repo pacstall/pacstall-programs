@@ -10,6 +10,7 @@ breaks=("modprobed_db")
 url='https://wiki.archlinux.org/index.php/Modprobed-db'
 source=("https://github.com/graysky2/${gives}/archive/v${pkgver}.tar.gz")
 sha256sums=('34a0cd3fa67efea8a2ba657d90ce2f5e3ef480babb7f3bcae6c13bac1eb4eeab')
+maintainer=("xdavius <xdavius@github.com>")
 
 build() {
   cd "${_archive}"
