@@ -1,6 +1,6 @@
 pkgbase = gitkraken-deb
 	gives = gitkraken
-	pkgver = 10.0.2
+	pkgver = 10.1.0
 	pkgdesc = Legendary Git GUI client for Windows, Mac & Linux
 	breaks = gitkraken-bin
 	replaces = gitkraken
