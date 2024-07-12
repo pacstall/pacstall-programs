@@ -15,7 +15,8 @@ prepare() {
   # shellcheck disable=all
   sed -i 's/-shared -Wl/-shared '"$LDFLAGS"'/g' ${pkgname}/Makefile
   setconf "${pkgname}"/Makefile \
-    CFLAGS="${CFLAGS}0 -shared -fPIC -fvisibility=hidden -fomit-frame-pointer -w"
+    CFLAGS="${CFLAGS}0 -shared -fPIC -fvisibility=hidden -fomit-frame-pointer -w" \
+    LDFLAGS="-Wl,-O1"
 }
 
 build() {
