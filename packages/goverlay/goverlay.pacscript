@@ -1,5 +1,6 @@
 pkgname="goverlay"
 pkgver="1.1.1"
+pkgrel="2"
 pkgdesc="A GUI to help manage Vulkan/OpenGL overlays"
 gives="goverlay"
 replace=("goverlay-bin")
