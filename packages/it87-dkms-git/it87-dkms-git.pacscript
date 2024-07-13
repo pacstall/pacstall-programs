@@ -4,7 +4,7 @@ pkgver=152
 pkgdesc="Linux Driver for ITE LPC chips"
 arch=('x86_64' 'i686')
 url='https://github.com/frankcrawford/it87'
-depends=('dkms' 'linux-headers-amd64')
+depends=('dkms')
 makedepends=('git')
 provides=('it87')
 
