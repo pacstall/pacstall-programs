@@ -9,7 +9,7 @@ replaces=("modprobed_db" "${pkgname}-git")
 breaks=("modprobed_db")
 url='https://wiki.archlinux.org/index.php/Modprobed-db'
 source=("https://github.com/graysky2/${gives}/archive/v${pkgver}.tar.gz")
-sha256sums=('34a0cd3fa67efea8a2ba657d90ce2f5e3ef480babb7f3bcae6c13bac1eb4eeab')
+sha256sums=('fef19759fda476134bec718d997bcb2a0c43d0a19b72f8f9e38bba22c746531d')
 maintainer=("xdavius <xdavius@github.com>")
 
 build() {
