@@ -445,6 +445,7 @@ rustdesk-deb
 schildichat-deb
 scrcpy
 sed
+setconf
 shell-color-scripts
 shellcheck-bin
 shellharden
