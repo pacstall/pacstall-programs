@@ -1,6 +1,7 @@
 pkgbase = rhino-pkg-git
 	gives = rhino-pkg
 	pkgver = 0.1.2
+	pkgrel = 2
 	pkgdesc = Rhino-pkg wrapper script
 	depends = gettext
 	makedepends = make
