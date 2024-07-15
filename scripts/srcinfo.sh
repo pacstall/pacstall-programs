@@ -715,7 +715,7 @@ function srcinfo.list_parse() {
       continue
     elif [[ ${CHILD} == "pkgbase" && ${foundname} =~ ':' && ${foundname} != *":${CHILD}" ]]; then
       continue
-    elif [[ -n ${KWD}  && ! ${i} =~ "${KWD}" ]]; then
+    elif [[ -n ${KWD} && ! ${i} =~ ${KWD} ]]; then
       continue
     fi
     if srcinfo._contains pkglist "${foundname}"; then
