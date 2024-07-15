@@ -26,5 +26,3 @@ package() {
   install -Dm755 scripts/*.sh -t "${pkgdir}/opt/GLFfetch/scripts"
   chmod 747 ${pkgdir}/opt/GLFfetch
 }
-
-
