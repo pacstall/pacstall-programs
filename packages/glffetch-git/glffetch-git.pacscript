@@ -24,5 +24,5 @@ package() {
   install -Dm655 "GLF.png" "${pkgdir}/opt/GLFfetch/GLF.png"
   install -Dm655 "challenge.jsonc" "${pkgdir}/opt/GLFfetch/challenge.jsonc"
   install -Dm755 scripts/*.sh -t "${pkgdir}/opt/GLFfetch/scripts"
-  chmod 747 ${pkgdir}/opt/GLFfetch
+  chmod 747 "${pkgdir}"/opt/GLFfetch
 }
