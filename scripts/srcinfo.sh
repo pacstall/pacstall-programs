@@ -702,14 +702,26 @@ function srcinfo.list_search() {
 }
 
 function srcinfo.list_parse() {
-  local SRCFILE="${1}" PKGFILE="${2}" KWD="${3}" searchlist pkglist
+  local SRCFILE="${1}" PKGFILE="${2}" KWD="${3}" SEARCH CHILD searchlist pkglist foundname
+  SEARCH="${KWD%% *}"
+  if [[ ${SEARCH} == *':'* && ${SEARCH} == "${KWD##* }" ]]; then
+    CHILD="${SEARCH#*:}" KWD="${SEARCH%:*}"
+  fi
   mapfile -t searchlist < <(srcinfo.list_search "${1}" "${KWD}")
   mapfile -t pkglist < "${2}"
   for i in "${searchlist[@]}"; do
-    if srcinfo._contains pkglist "${i%% -*}"; then
-      printf '\033[0;35m%s\033[0m - %s\n' "${i%% -*}" "${i#* - }"
-    elif srcinfo._contains pkglist "${i%% -*}:pkgbase"; then
-      printf '\033[0;35m%s:pkgbase\033[0m - %s\n' "${i%% -*}" "${i#* - }"
+    foundname="${i%% -*}"
+    if [[ -n ${CHILD} && ${CHILD} != "pkgbase" && ${foundname} != "${KWD}:${CHILD}" ]]; then
+      continue
+    elif [[ ${CHILD} == "pkgbase" && ${foundname} =~ ':' && ${foundname} != *":${CHILD}" ]]; then
+      continue
+    elif [[ -n ${KWD}  && ! ${i} =~ "${KWD}" ]]; then
+      continue
+    fi
+    if srcinfo._contains pkglist "${foundname}"; then
+      printf '\033[0;35m%s\033[0m - %s\n' "${foundname}" "${i#* - }"
+    elif srcinfo._contains pkglist "${foundname}:pkgbase"; then
+      printf '\033[0;35m%s:pkgbase\033[0m - %s\n' "${foundname}" "${i#* - }"
     fi
   done
 }
