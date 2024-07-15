@@ -3899,13 +3899,13 @@ pkgbase = hakuneko-deb
 	arch = armhf
 	arch = i386
 	maintainer = Diegiwg <diegiwg@gmail.com>
-	source_amd64 = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_CARCH_REPLACE.deb
+	source_amd64 = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_amd64.deb
 	sha256sums_amd64 = 48e9a77015695fe69390ac99b54184cf793f31c3452d174fcf41052ccb2ae211
-	source_arm64 = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_CARCH_REPLACE.deb
+	source_arm64 = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_arm64.deb
 	sha256sums_arm64 = 5e4b992b58a67ddac96410975e10577befe67479c1c2b3d12b2bcbaf6f6c003a
-	source_armhf = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_CARCH_REPLACE.deb
+	source_armhf = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_armhf.deb
 	sha256sums_armhf = 4dabbfa9d775da72499f594bfdda86adc62a5caaa579c73b9d4ccf5d778c903d
-	source_i386 = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_CARCH_REPLACE.deb
+	source_i386 = https://github.com/manga-download/hakuneko/releases/download/nightly-20200705.1/hakuneko-desktop_8.3.4_linux_i386.deb
 	sha256sums_i386 = 3608ff4e8a3257fffedfa2dcea6501cb6d0d203235a2e4c6e6bbf01b93dce240
 
 pkgname = hakuneko-deb
@@ -5790,7 +5790,7 @@ pkgbase = lsd-deb
 	sha256sums_amd64 = 488b098e9cc4bb193c10d3a9abe8b06282099ee73a3e9f7f1febd19a9d9b89f0
 	source_arm64 = https://github.com/lsd-rs/lsd/releases/download/v1.0.0/lsd_1.0.0_arm64.deb
 	sha256sums_arm64 = 4a0e6931823869b401a7ef3dae26e3c027aaee3c42bd62129ee2c6a93489412d
-	source_i386 = https://github.com/lsd-rs/lsd/releases/download/v1.0.0/lsd_1.0.0_i386.deb
+	source_i386 = https://github.com/lsd-rs/lsd/releases/download/v1.0.0/lsd_1.0.0_i686.deb
 	sha256sums_i386 = 3a9d7193f90cce0884edb6f1c2230ec5cf942fd122e75691fc32cf3e8f728dcb
 
 pkgname = lsd-deb
