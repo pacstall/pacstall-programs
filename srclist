@@ -1,5 +1,4 @@
 ### Auto-generated for pacstall-programs
-
 ---
 pkgbase = 1password-cli-bin
 	gives = 1password-cli
@@ -12,7 +11,6 @@ pkgbase = 1password-cli-bin
 	sha256sums = a0732965d86c4429b508d1f00531359936a50d62f78b01fc2df964d9f5f47982
 
 pkgname = 1password-cli-bin
-
 ---
 pkgbase = adapta-gtk-theme-git
 	gives = adapta-gtk-theme
@@ -32,7 +30,6 @@ pkgbase = adapta-gtk-theme-git
 	source = https://github.com/adapta-project/adapta-gtk-theme.git
 
 pkgname = adapta-gtk-theme-git
-
 ---
 pkgbase = adw-gtk-theme
 	pkgver = 1.1
@@ -50,7 +47,6 @@ pkgbase = adw-gtk-theme
 	sha256sums = 66e436ab0968d8c126fa7f274baa40cad2c36792fae3689e75c36231b0138063
 
 pkgname = adw-gtk-theme
-
 ---
 pkgbase = adw-gtk3
 	gives = adw-gtk3
@@ -66,7 +62,6 @@ pkgbase = adw-gtk3
 	sha256sums = 2e6e87935bef30936e40d07c7af4fd20754e77917be224f61c4346867196bef0
 
 pkgname = adw-gtk3
-
 ---
 pkgbase = alacritty
 	pkgver = 0.13.2
@@ -88,7 +83,6 @@ pkgbase = alacritty
 	sha256sums = e9a54aabc92bbdc25ab1659c2e5a1e9b76f27d101342c8219cc98a730fd46d90
 
 pkgname = alacritty
-
 ---
 pkgbase = amfora-bin
 	gives = amfora
@@ -108,7 +102,6 @@ pkgbase = amfora-bin
 	sha256sums = 812e1faad6f6d4817eac60d36813472afebe2980cd2e661151a3d98669274207
 
 pkgname = amfora-bin
-
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
@@ -137,7 +130,6 @@ pkgbase = an-anime-game-launcher-bin
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
-
 ---
 pkgbase = ananicy-cpp
 	pkgver = 1.1.0
@@ -151,7 +143,6 @@ pkgbase = ananicy-cpp
 	sha256sums = 49f59e8fa842c7603be344b7317eace773c3e416d881dae4ad7779b39b03fc4a
 
 pkgname = ananicy-cpp
-
 ---
 pkgbase = android-studio-canary
 	gives = android-studio
@@ -173,7 +164,6 @@ pkgbase = android-studio-canary
 	sha256sums = SKIP
 
 pkgname = android-studio-canary
-
 ---
 pkgbase = android-studio
 	pkgver = 2024.1.1.6
@@ -195,7 +185,6 @@ pkgbase = android-studio
 	sha256sums = SKIP
 
 pkgname = android-studio
-
 ---
 pkgbase = ani-cli-bin
 	gives = ani-cli
@@ -216,7 +205,6 @@ pkgbase = ani-cli-bin
 	sha256sums = SKIP
 
 pkgname = ani-cli-bin
-
 ---
 pkgbase = anydesk-bin
 	gives = anydesk
@@ -246,7 +234,6 @@ pkgbase = anydesk-bin
 	sha256sums = b1e3337d35ce19af93963829988b2014e8acfbbf6bd1b5adfb8bc7dcd6fee452
 
 pkgname = anydesk-bin
-
 ---
 pkgbase = anydesk-deb
 	gives = anydesk
@@ -261,7 +248,6 @@ pkgbase = anydesk-deb
 	sha256sums = 2bc739676672b531e91d50f302c6ea8ad6b1612dc499d1d2f83b21a4c852658d
 
 pkgname = anydesk-deb
-
 ---
 pkgbase = anytype-deb
 	gives = anytype
@@ -275,7 +261,6 @@ pkgbase = anytype-deb
 	sha256sums = a0360c31b5b0edde9dfb04c9602da8a66eea43d1afc4f508314cc65d65c712a2
 
 pkgname = anytype-deb
-
 ---
 pkgbase = appimagelauncher-deb
 	gives = appimagelauncher
@@ -288,7 +273,6 @@ pkgbase = appimagelauncher-deb
 	sha256sums = f4b9db56a6ba7dd091074b14157612986a9f6a0cb3fcd230abfc8f4555c70a7f
 
 pkgname = appimagelauncher-deb
-
 ---
 pkgbase = apx-git
 	gives = apx
@@ -302,7 +286,6 @@ pkgbase = apx-git
 	source = https://github.com/Vanilla-OS/apx.git
 
 pkgname = apx-git
-
 ---
 pkgbase = ardour-git
 	pkgver = 7.5
@@ -427,7 +410,6 @@ pkgbase = ardour-git
 	source = https://github.com/Ardour/ardour.git
 
 pkgname = ardour-git
-
 ---
 pkgbase = arduino-cli-bin
 	gives = arduino-cli
@@ -443,7 +425,6 @@ pkgbase = arduino-cli-bin
 	sha256sums = acf3a3e03f0478a1cade44d23d4bc2f979c9b61b64e13bc66e26220b7b9fbd23
 
 pkgname = arduino-cli-bin
-
 ---
 pkgbase = arduino-ide-bin
 	gives = arduino-ide
@@ -463,7 +444,6 @@ pkgbase = arduino-ide-bin
 	sha256sums = SKIP
 
 pkgname = arduino-ide-bin
-
 ---
 pkgbase = armcord-deb
 	gives = armcord
@@ -488,7 +468,6 @@ pkgbase = armcord-deb
 	sha256sums_amd64 = 4c580ef5d773fd2be2e107ee8234d37a3a55fe6fb1735e78f1ca24ce1560c24c
 
 pkgname = armcord-deb
-
 ---
 pkgbase = aseprite
 	pkgver = 1.3.7
@@ -520,7 +499,6 @@ pkgbase = aseprite
 	sha256sums = 31369a5063d5f7839699fea00235b70057b0f2619592ba1db5af6d12c4f1171c
 
 pkgname = aseprite
-
 ---
 pkgbase = awesome-git
 	gives = awesome
@@ -632,7 +610,6 @@ pkgbase = awesome-git
 	source = https://github.com/awesomeWM/awesome.git
 
 pkgname = awesome-git
-
 ---
 pkgbase = aws-cli-v2-bin
 	gives = aws-cli-v2
@@ -649,7 +626,6 @@ pkgbase = aws-cli-v2-bin
 	sha256sums = a825bec454b46cb1203a98092a95504c94872973e132a1c22befd8c0b11c859f
 
 pkgname = aws-cli-v2-bin
-
 ---
 pkgbase = balena-etcher-deb
 	gives = balena-etcher
@@ -662,7 +638,6 @@ pkgbase = balena-etcher-deb
 	sha256sums = 51cb35f3bc53a5b449ecfdf684297c7073f13b71c2b38e199de01ab34e371579
 
 pkgname = balena-etcher-deb
-
 ---
 pkgbase = bat-deb
 	gives = bat
@@ -676,7 +651,6 @@ pkgbase = bat-deb
 	sha256sums = fa9353fa0c6e1e67b87757c4bd6bf515f85d3fc16d41b12cc26f7a673892ad01
 
 pkgname = bat-deb
-
 ---
 pkgbase = bat
 	pkgver = 0.24.0
@@ -690,7 +664,6 @@ pkgbase = bat
 	sha256sums = 907554a9eff239f256ee8fe05a922aad84febe4fe10a499def72a4557e9eedfb
 
 pkgname = bat
-
 ---
 pkgbase = batsignal
 	pkgver = 1.6.4
@@ -706,7 +679,6 @@ pkgbase = batsignal
 	sha256sums = 58439dac2b678ab798831fe861c06d2d5c128c4bb4bae1476a62ba1771da3983
 
 pkgname = batsignal
-
 ---
 pkgbase = bazecor-app
 	gives = bazecor
@@ -728,7 +700,6 @@ pkgbase = bazecor-app
 	sha256sums = SKIP
 
 pkgname = bazecor-app
-
 ---
 pkgbase = bemenu-git
 	gives = bemenu
@@ -748,7 +719,6 @@ pkgbase = bemenu-git
 	source = https://github.com/Cloudef/bemenu.git
 
 pkgname = bemenu-git
-
 ---
 pkgbase = bes2600-firmware-git
 	gives = bes2600-firmware
@@ -759,7 +729,6 @@ pkgbase = bes2600-firmware-git
 	source = https://gitlab.com/pine64-org/bes2600-firmware.git
 
 pkgname = bes2600-firmware-git
-
 ---
 pkgbase = bitwarden-cli-bin
 	gives = bitwarden-cli
@@ -773,7 +742,6 @@ pkgbase = bitwarden-cli-bin
 	sha256sums = 05c906bf3709151ffcd063624047c327086f80f6b0256ded6a8bcaea044fdb02
 
 pkgname = bitwarden-cli-bin
-
 ---
 pkgbase = bitwarden-deb
 	gives = bitwarden
@@ -789,7 +757,6 @@ pkgbase = bitwarden-deb
 	sha256sums = 765115154cf12f1248437217b404745dfac37be04191bf8f98225dcdd53294fe
 
 pkgname = bitwarden-deb
-
 ---
 pkgbase = bitwig-studio-3-deb
 	gives = bitwig-studio
@@ -800,7 +767,6 @@ pkgbase = bitwig-studio-3-deb
 	sha256sums = 705f2054f8ccd0a51c28e5b4f6e15c729e3f9736d49997019153b0aff03ff18c
 
 pkgname = bitwig-studio-3-deb
-
 ---
 pkgbase = bitwig-studio-4-deb
 	gives = bitwig-studio
@@ -811,7 +777,6 @@ pkgbase = bitwig-studio-4-deb
 	sha256sums = 82d4359a15e4d00a8689d664e530b3491e7ca43d4926810b3019842edab26f85
 
 pkgname = bitwig-studio-4-deb
-
 ---
 pkgbase = bitwig-studio-deb
 	gives = bitwig-studio
@@ -823,7 +788,6 @@ pkgbase = bitwig-studio-deb
 	sha256sums = 2b134b69efee4d82f59bf5feffbc2bee184a7f0df536907d330f51cdfad3baeb
 
 pkgname = bitwig-studio-deb
-
 ---
 pkgbase = blender-bin
 	gives = blender
@@ -837,7 +801,6 @@ pkgbase = blender-bin
 	sha256sums = 5583a5588736da8858c522ef17fff5d73be59c47a6fe91ad29c6f3263e22086a
 
 pkgname = blender-bin
-
 ---
 pkgbase = bluegriffon-deb
 	gives = bluegriffon
@@ -854,7 +817,6 @@ pkgbase = bluegriffon-deb
 	sha256sums = 83eb53ec8bf9416e52b525508c03440ea0427a3eac409034a72732a7e22994e6
 
 pkgname = bluegriffon-deb
-
 ---
 pkgbase = blueprint-compiler
 	pkgver = 0.12.0
@@ -868,7 +830,6 @@ pkgbase = blueprint-compiler
 	sha256sums = 6dbb4ea851cec164030abded5949ea77ff92032e23527e1c0597d7efe0c36a81
 
 pkgname = blueprint-compiler
-
 ---
 pkgbase = bottom-deb
 	gives = bottom
@@ -891,7 +852,6 @@ pkgbase = bottom-deb
 	sha256sums_armhf = f5a621b23392ba41f89376ee75aa7e2e5ed83069ea19b2ab25209ef5a28c1ccc
 
 pkgname = bottom-deb
-
 ---
 pkgbase = bpytop-git
 	gives = bpytop
@@ -907,7 +867,6 @@ pkgbase = bpytop-git
 	source = https://github.com/aristocratos/bpytop.git
 
 pkgname = bpytop-git
-
 ---
 pkgbase = brave-browser-beta-deb
 	gives = brave-browser-beta
@@ -925,7 +884,6 @@ pkgbase = brave-browser-beta-deb
 	sha256sums = 42c50beec9311de1c82df3a7e0010dc4ceda68b0453014878b616b5a07d9b4c0
 
 pkgname = brave-browser-beta-deb
-
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
@@ -943,7 +901,6 @@ pkgbase = brave-browser-deb
 	sha256sums = afb96910ec4408ea89db75f14c7a92cba2a1c8d3d1c0e92e26f9d952eb813789
 
 pkgname = brave-browser-deb
-
 ---
 pkgbase = brave-browser-nightly-deb
 	gives = brave-browser-nightly
@@ -963,7 +920,6 @@ pkgbase = brave-browser-nightly-deb
 	sha256sums = aee2df28fb2ffce652165c977f59a9a995df8dbb0cace58d32521b632a05b80d
 
 pkgname = brave-browser-nightly-deb
-
 ---
 pkgbase = brave-keyring-deb
 	gives = brave-keyring
@@ -974,7 +930,6 @@ pkgbase = brave-keyring-deb
 	sha256sums = 0e5c33f32d908a6846b890c5d225f1a0cdebe96fea02879b776fa02877714dd2
 
 pkgname = brave-keyring-deb
-
 ---
 pkgbase = btop-bin
 	gives = btop
@@ -990,7 +945,6 @@ pkgbase = btop-bin
 	sha256sums = 9f4dce57d550d0ebec415b46c1949152989ba66dd4be5950741b74e12b231ede
 
 pkgname = btop-bin
-
 ---
 pkgbase = btrfs-assistant
 	pkgver = 2.1.1
@@ -1026,7 +980,6 @@ pkgbase = btrfs-assistant
 	sha256sums = cabc3824651606bd37db1809d7d2eeeaa724180d138613bff3490362751b9594
 
 pkgname = btrfs-assistant
-
 ---
 pkgbase = btrfs-du-bin
 	gives = btrfs-du
@@ -1037,7 +990,6 @@ pkgbase = btrfs-du-bin
 	source = https://github.com/nachoparker/btrfs-du/archive/refs/tags/v0.0.7.tar.gz
 
 pkgname = btrfs-du-bin
-
 ---
 pkgbase = cachyos-ananicy-rules-git
 	gives = cachyos-ananicy-rules
@@ -1049,7 +1001,6 @@ pkgbase = cachyos-ananicy-rules-git
 	source = https://github.com/CachyOS/ananicy-rules.git
 
 pkgname = cachyos-ananicy-rules-git
-
 ---
 pkgbase = cantata
 	gives = cantata
@@ -1077,7 +1028,6 @@ pkgbase = cantata
 	sha256sums = eb7e00ab3f567afaa02ea2c86e2fe811a475afab93182b95922c6eb126821724
 
 pkgname = cantata
-
 ---
 pkgbase = caprine-deb
 	gives = caprine
@@ -1090,7 +1040,6 @@ pkgbase = caprine-deb
 	sha256sums = f8f9e5a1cf532b9a51188ec7300dcbcb379b6bcb652e305c86618fc028f37671
 
 pkgname = caprine-deb
-
 ---
 pkgbase = celeste-bin
 	gives = celeste
@@ -1111,7 +1060,6 @@ pkgbase = celeste-bin
 	sha256sums_amd64 = c844eff69ae5c5c8908b17a87f36ded77b1807976411efbab4f8401385c17a31
 
 pkgname = celeste-bin
-
 ---
 pkgbase = cheat
 	gives = cheat
@@ -1131,7 +1079,6 @@ pkgbase = cheat
 	sha256sums = b81f5ba21f134087c0294d809f89e5442d641d7be297bb128807cbce00849e9b
 
 pkgname = cheat
-
 ---
 pkgbase = chezmoi-deb
 	gives = chezmoi
@@ -1144,7 +1091,6 @@ pkgbase = chezmoi-deb
 	sha256sums = fc124746821efaa44109c2e6e1eaaa6fa4cb8f0209659fb384d58eee2a693d1b
 
 pkgname = chezmoi-deb
-
 ---
 pkgbase = chwp-deb
 	gives = chwp
@@ -1159,7 +1105,6 @@ pkgbase = chwp-deb
 	sha256sums = 6d6fb53b2f51145eb06a9ed9f4358d98397ed555f2db8a7b559bc5b2bd1bc401
 
 pkgname = chwp-deb
-
 ---
 pkgbase = cider-deb
 	gives = cider
@@ -1172,7 +1117,6 @@ pkgbase = cider-deb
 	sha256sums = 9bcf27d7ae9d3dc6e5f56f7024997a506410f4a5a2d442005bde2b396f136b12
 
 pkgname = cider-deb
-
 ---
 pkgbase = circle-flags-svg-deb
 	gives = circle-flags-svg
@@ -1185,7 +1129,6 @@ pkgbase = circle-flags-svg-deb
 	sha256sums = eceb87d03a8c9fdc3c8b2aba0e8b287fc90d55232429a0ece872f33790d395b4
 
 pkgname = circle-flags-svg-deb
-
 ---
 pkgbase = clib
 	pkgver = 2.8.3
@@ -1197,7 +1140,6 @@ pkgbase = clib
 	sha256sums = 0ad8262d13ef138a12452e67e081e3eb31a264e2040cfce09417e8f7eed4e1f5
 
 pkgname = clib
-
 ---
 pkgbase = clipboard-bin
 	gives = clipboard
@@ -1226,7 +1168,6 @@ pkgbase = clipboard-bin
 	sha256sums_riscv64 = e92f2c4eeeefd093d25f91f186c1c3ac572ea254369fe7028928246d431407c8
 
 pkgname = clipboard-bin
-
 ---
 pkgbase = cmake-data-deb
 	gives = cmake-data
@@ -1243,7 +1184,6 @@ pkgbase = cmake-data-deb
 	sha256sums_bullseye = 6c7c8d91c045ccf44c9cc7dc1f05d8431707df4651bf18b4a3ee34847bc205f3
 
 pkgname = cmake-data-deb
-
 ---
 pkgbase = cmake-deb
 	gives = cmake
@@ -1261,7 +1201,6 @@ pkgbase = cmake-deb
 	sha256sums_bullseye = 5561f20944ef4d9d3ea496bc92dff5b1d5adea3cfee1fa302a7298bedeb03f9e
 
 pkgname = cmake-deb
-
 ---
 pkgbase = cmatrix
 	pkgver = 2.0
@@ -1275,7 +1214,6 @@ pkgbase = cmatrix
 	sha256sums = e46c739bfe79e570db2461f89ac66ea79a8fab8efb8423ab53f143e93c2553bc
 
 pkgname = cmatrix
-
 ---
 pkgbase = com.github.mirkobrombin.bottles-deb
 	gives = com.github.mirkobrombin.bottles
@@ -1290,7 +1228,6 @@ pkgbase = com.github.mirkobrombin.bottles-deb
 	sha256sums = bec7780c547fd7806f10c9c96f1c8f510958303554dab387e22a71eb677db321
 
 pkgname = com.github.mirkobrombin.bottles-deb
-
 ---
 pkgbase = conky-manager-zcot-git
 	pkgver = 2.7
@@ -1308,7 +1245,6 @@ pkgbase = conky-manager-zcot-git
 	source = https://github.com/zcot/conky-manager2.git
 
 pkgname = conky-manager-zcot-git
-
 ---
 pkgbase = coreutils-single
 	pkgver = 9.4
@@ -1329,7 +1265,6 @@ pkgbase = coreutils-single
 	sha256sums = ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52
 
 pkgname = coreutils-single
-
 ---
 pkgbase = cortile-bin
 	gives = cortile
@@ -1348,7 +1283,6 @@ pkgbase = cortile-bin
 	sha256sums_amd64 = 1a9c87737e6d212a15921ac5e10f21b64c7aa2051dbadc976f3c817674418537
 
 pkgname = cortile-bin
-
 ---
 pkgbase = couture
 	pkgver = 1.6
@@ -1358,7 +1292,6 @@ pkgbase = couture
 	sha256sums = 5cebcd1358f450a0b7c7003444c3febbc8764be8d401ead2a3e07cab232aa14e
 
 pkgname = couture
-
 ---
 pkgbase = cutefish-calculator-git
 	gives = cutefish-calculator
@@ -1377,7 +1310,6 @@ pkgbase = cutefish-calculator-git
 	source = https://github.com/cutefishos/calculator.git
 
 pkgname = cutefish-calculator-git
-
 ---
 pkgbase = cutefish-core-git
 	gives = cutefish-core
@@ -1419,7 +1351,6 @@ pkgbase = cutefish-core-git
 	source = https://github.com/cutefishos/core.git
 
 pkgname = cutefish-core-git
-
 ---
 pkgbase = cutefish-dock-git
 	gives = cutefish-dock
@@ -1441,7 +1372,6 @@ pkgbase = cutefish-dock-git
 	source = https://github.com/cutefishos/dock.git
 
 pkgname = cutefish-dock-git
-
 ---
 pkgbase = cutefish-filemanager-git
 	gives = cutefish-filemanager
@@ -1462,7 +1392,6 @@ pkgbase = cutefish-filemanager-git
 	source = https://github.com/cutefishos/filemanager.git
 
 pkgname = cutefish-filemanager-git
-
 ---
 pkgbase = cutefish-icons-git
 	gives = cutefish-icons
@@ -1474,7 +1403,6 @@ pkgbase = cutefish-icons-git
 	source = https://github.com/cutefishos/icons.git
 
 pkgname = cutefish-icons-git
-
 ---
 pkgbase = cutefish-kwin-plugins-git
 	gives = cutefish-kwin-plugins
@@ -1499,7 +1427,6 @@ pkgbase = cutefish-kwin-plugins-git
 	source = https://github.com/cutefishos/kwin-plugins.git
 
 pkgname = cutefish-kwin-plugins-git
-
 ---
 pkgbase = cutefish-launcher-git
 	gives = cutefish-launcher
@@ -1519,7 +1446,6 @@ pkgbase = cutefish-launcher-git
 	source = https://github.com/cutefishos/launcher.git
 
 pkgname = cutefish-launcher-git
-
 ---
 pkgbase = cutefish-qt-plugins-git
 	gives = cutefish-qt-plugins
@@ -1541,7 +1467,6 @@ pkgbase = cutefish-qt-plugins-git
 	source = https://github.com/cutefishos/qt-plugins.git
 
 pkgname = cutefish-qt-plugins-git
-
 ---
 pkgbase = cutefish-settings-git
 	gives = cutefish-settings
@@ -1566,7 +1491,6 @@ pkgbase = cutefish-settings-git
 	source = https://github.com/cutefishos/settings.git
 
 pkgname = cutefish-settings-git
-
 ---
 pkgbase = cutefish-statusbar-git
 	gives = cutefish-statusbar
@@ -1587,7 +1511,6 @@ pkgbase = cutefish-statusbar-git
 	source = https://github.com/cutefishos/statusbar.git
 
 pkgname = cutefish-statusbar-git
-
 ---
 pkgbase = cutefish-wallpapers-git
 	gives = cutefish-wallpapers
@@ -1599,7 +1522,6 @@ pkgbase = cutefish-wallpapers-git
 	source = https://github.com/cutefishos/wallpapers.git
 
 pkgname = cutefish-wallpapers-git
-
 ---
 pkgbase = davinci-resolve
 	pkgver = 18.6.6
@@ -1669,7 +1591,6 @@ pkgbase = davinci-resolve
 	source = davinci-resolve-18.6.6.zip::https://github.com/oklopfer/debs/raw/master/empty
 
 pkgname = davinci-resolve
-
 ---
 pkgbase = dbeaver-ce-deb
 	gives = dbeaver-ce
@@ -1682,7 +1603,6 @@ pkgbase = dbeaver-ce-deb
 	sha256sums = 62734a90114f6bc40b97d6118493f99d52fd03b3f9a2e5d644e0d28090d6595e
 
 pkgname = dbeaver-ce-deb
-
 ---
 pkgbase = deadbeef-deb
 	gives = deadbeef-static
@@ -1702,7 +1622,6 @@ pkgbase = deadbeef-deb
 	sha256sums = c0e95beedb2dc3ee6de604048593b2b12a4ea001ad3185c41947b4f7d854ecf6
 
 pkgname = deadbeef-deb
-
 ---
 pkgbase = deskcut-deb
 	gives = deskcut
@@ -1716,7 +1635,6 @@ pkgbase = deskcut-deb
 	sha256sums = 0f32b3937fdac157c02630b582b278a1899ed4cbd605132441324ea582caf320
 
 pkgname = deskcut-deb
-
 ---
 pkgbase = dino-git
 	gives = dino
@@ -1730,7 +1648,6 @@ pkgbase = dino-git
 	source = https://github.com/Elsie19/Dino.git
 
 pkgname = dino-git
-
 ---
 pkgbase = discord-canary
 	pkgver = 0.0.327
@@ -1759,7 +1676,6 @@ pkgbase = discord-canary
 	sha256sums = a8c7b282cdc463913e252db466299c0bc5fd185493bf6c5cf270cf4a1eddc75a
 
 pkgname = discord-canary
-
 ---
 pkgbase = discord-deb
 	gives = discord
@@ -1776,7 +1692,6 @@ pkgbase = discord-deb
 	sha256sums = 3a2f1fe6b9d69cd8141f42a204ad3dff483a4301fbe755711b545b908d61b8af
 
 pkgname = discord-deb
-
 ---
 pkgbase = discord-ptb-deb
 	gives = discord-ptb
@@ -1789,7 +1704,6 @@ pkgbase = discord-ptb-deb
 	sha256sums = 3cbd0582493ff34780776511e3a1e5b9bde9a018d6e130d75895bbfc33af7afb
 
 pkgname = discord-ptb-deb
-
 ---
 pkgbase = discord
 	pkgver = 0.0.49
@@ -1813,7 +1727,6 @@ pkgbase = discord
 	sha256sums = ad54980244d94e5bab9db51e60914282c3dcb02aa32756c99de4108b2866bf04
 
 pkgname = discord
-
 ---
 pkgbase = distrobox-git
 	gives = distrobox
@@ -1832,7 +1745,6 @@ pkgbase = distrobox-git
 	sha256sums = SKIP
 
 pkgname = distrobox-git
-
 ---
 pkgbase = distrobox
 	gives = distrobox
@@ -1850,7 +1762,6 @@ pkgbase = distrobox
 	sha256sums = ff2cca0c6334fff6ed577d23f68a6746ad4009f42d8a45eef5ca3850c895a4bb
 
 pkgname = distrobox
-
 ---
 pkgbase = dmenu-distrotube-git
 	gives = dmenu
@@ -1865,7 +1776,6 @@ pkgbase = dmenu-distrotube-git
 	source = https://gitlab.com/dwt1/dmenu-distrotube.git
 
 pkgname = dmenu-distrotube-git
-
 ---
 pkgbase = dmenu
 	pkgver = 5.2
@@ -1880,7 +1790,6 @@ pkgbase = dmenu
 	sha256sums = d4d4ca77b59140f272272db537e05bb91a5914f56802652dc57e61a773d43792
 
 pkgname = dmenu
-
 ---
 pkgbase = doas-git
 	gives = doas
@@ -1903,7 +1812,6 @@ pkgbase = doas-git
 	sha512sums = f7baffce92cd0ab44a83fc2e236068668f47c8ef78398f354af8ae982b820fe2549320cb9996a14fd698df20f257c2daf69a8f6072b515611ea75afdff4d5f96
 
 pkgname = doas-git
-
 ---
 pkgbase = docker-bin
 	gives = docker
@@ -1927,7 +1835,6 @@ pkgbase = docker-bin
 	sha256sums_amd64 = c0ef0ee7d00deb803a6f5fa78d83ec8cbe1848eaaea9fb7071364d526624278f
 
 pkgname = docker-bin
-
 ---
 pkgbase = docker-buildx-plugin-bin
 	gives = docker-buildx-plugin
@@ -1945,7 +1852,6 @@ pkgbase = docker-buildx-plugin-bin
 	sha256sums_arm64 = 38bf0ea9c48743edb8243f14272be65a2bad7092228068337aea584309ea664c
 
 pkgname = docker-buildx-plugin-bin
-
 ---
 pkgbase = docker-compose-plugin-bin
 	gives = docker-compose-plugin
@@ -1963,7 +1869,6 @@ pkgbase = docker-compose-plugin-bin
 	sha256sums_arm64 = 37a1c197fef5fda2a3df2d5ae0d7762ad2a00e30946ad06d4ad9fa8cef16d9e7
 
 pkgname = docker-compose-plugin-bin
-
 ---
 pkgbase = dolphin-emu-git
 	gives = dolphin-emu
@@ -2019,7 +1924,6 @@ pkgbase = dolphin-emu-git
 	source = dolphin-emu::https://github.com/dolphin-emu/dolphin.git
 
 pkgname = dolphin-emu-git
-
 ---
 pkgbase = dotdrop
 	pkgver = 1.13.2
@@ -2037,7 +1941,6 @@ pkgbase = dotdrop
 	sha256sums = b69deab3cf22b0cde5faacf5d90292abcade142da0b00513dc774dfc2e8f6203
 
 pkgname = dotdrop
-
 ---
 pkgbase = drawio-desktop-deb
 	gives = draw.io
@@ -2051,7 +1954,6 @@ pkgbase = drawio-desktop-deb
 	sha256sums = 8ad85c5aacb2ad627efa67f5b13810a421da08b0450d9518e274088e3815005d
 
 pkgname = drawio-desktop-deb
-
 ---
 pkgbase = dropbox-deb
 	gives = dropbox
@@ -2063,7 +1965,6 @@ pkgbase = dropbox-deb
 	sha256sums = e2ea3317e8e0e6dc9e1846f55f0bdfa74c178a0c729e7b1ac57b30bb12233c1b
 
 pkgname = dropbox-deb
-
 ---
 pkgbase = duf-deb
 	gives = duf
@@ -2079,7 +1980,6 @@ pkgbase = duf-deb
 	sha256sums = 746983b4065e80b14f2e5af70c58e2283bb8b3a128cb076954d7329d476d5fad
 
 pkgname = duf-deb
-
 ---
 pkgbase = dunst
 	pkgver = 1.9.2
@@ -2097,7 +1997,6 @@ pkgbase = dunst
 	sha256sums = fa6ce45c0af4bae188b0d679a5ba92f8f9b7e4301bb1bb476e82df26bce9e71a
 
 pkgname = dunst
-
 ---
 pkgbase = dust-bin
 	gives = dust
@@ -2114,7 +2013,6 @@ pkgbase = dust-bin
 	sha256sums = 06e9bcac22ba29e74395dde046cfd5b260cf6fabab48e1ed3dfc017b4e8bada7
 
 pkgname = dust-bin
-
 ---
 pkgbase = easy-zsh-config-git
 	gives = easy-zsh-config
@@ -2131,7 +2029,6 @@ pkgbase = easy-zsh-config-git
 	source = https://github.com/wszqkzqk/easy-zsh-config.git
 
 pkgname = easy-zsh-config-git
-
 ---
 pkgbase = eddie-ui-deb
 	gives = eddie-ui
@@ -2146,7 +2043,6 @@ pkgbase = eddie-ui-deb
 	sha256sums = f9e4ece5d96ff8653578cdd037339f429ec874e461f8f1de63b970ad184aad34
 
 pkgname = eddie-ui-deb
-
 ---
 pkgbase = electerm-deb
 	gives = electerm
@@ -2160,7 +2056,6 @@ pkgbase = electerm-deb
 	sha256sums = 21ce0fda5f2db860ca6832ffcf3ef38383a4f4a3fd7d4c54610bd2cf60577319
 
 pkgname = electerm-deb
-
 ---
 pkgbase = electronmail-deb
 	gives = electron-mail
@@ -2174,7 +2069,6 @@ pkgbase = electronmail-deb
 	sha256sums = 36d3a99e390fc3e33a275f27ca93e50f1027e04a56bd0d5192f66c80b312075a
 
 pkgname = electronmail-deb
-
 ---
 pkgbase = electrum-git
 	gives = electrum
@@ -2191,7 +2085,6 @@ pkgbase = electrum-git
 	source = https://github.com/spesmilo/electrum.git
 
 pkgname = electrum-git
-
 ---
 pkgbase = element-desktop-deb
 	gives = element-desktop
@@ -2209,7 +2102,6 @@ pkgbase = element-desktop-deb
 	sha256sums = 1f70c00b7177c78bace7c7987da58a4bc3bb99209bcff0303bf0461ab3655299
 
 pkgname = element-desktop-deb
-
 ---
 pkgbase = emacs-git
 	gives = emacs
@@ -2255,7 +2147,6 @@ pkgbase = emacs-git
 	source = https://github.com/emacs-mirror/emacs.git
 
 pkgname = emacs-git
-
 ---
 pkgbase = emacs
 	gives = emacs
@@ -2303,7 +2194,6 @@ pkgbase = emacs
 	sha256sums = ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488
 
 pkgname = emacs
-
 ---
 pkgbase = emby-server-deb
 	gives = emby-server
@@ -2319,7 +2209,6 @@ pkgbase = emby-server-deb
 	sha256sums = de95964faa185782f3dc6df5f8894f02dab631fbd9aec283fb72829617b13cea
 
 pkgname = emby-server-deb
-
 ---
 pkgbase = endlessh-git
 	gives = endlessh
@@ -2336,7 +2225,6 @@ pkgbase = endlessh-git
 	sha256sums = f92a2341103a7c6243d7cbc32a3400e0f01ecd5fae12a0731029f6c50ba9f451
 
 pkgname = endlessh-git
-
 ---
 pkgbase = enpass-deb
 	gives = enpass
@@ -2360,7 +2248,6 @@ pkgbase = enpass-deb
 	sha256sums = fe405f7119d45822164da3ad009b99c5cd516685198c1d335b7803d84e5ba2ca
 
 pkgname = enpass-deb
-
 ---
 pkgbase = epson-inkjet-printer-stylus-nx110-series-deb
 	gives = epson-inkjet-printer-stylus-nx110-series
@@ -2377,7 +2264,6 @@ pkgbase = epson-inkjet-printer-stylus-nx110-series-deb
 	sha256sums = 4bc20572b7f4bf9d4a8fa344e0bc161f38fa2caf7d636973e68945e433e24afb
 
 pkgname = epson-inkjet-printer-stylus-nx110-series-deb
-
 ---
 pkgbase = epson-printer-utility-deb
 	gives = epson-printer-utility
@@ -2397,7 +2283,6 @@ pkgbase = epson-printer-utility-deb
 	sha256sums = SKIP
 
 pkgname = epson-printer-utility-deb
-
 ---
 pkgbase = exa-git
 	gives = exa
@@ -2412,7 +2297,6 @@ pkgbase = exa-git
 	source = https://github.com/ogham/exa.git
 
 pkgname = exa-git
-
 ---
 pkgbase = exercism-cli-bin
 	pkgver = 3.4.0
@@ -2428,7 +2312,6 @@ pkgbase = exercism-cli-bin
 	sha256sums_arm64 = 648c9e87dae3168e633cd57091c559620951ac7ee9decd250b701839d62237b7
 
 pkgname = exercism-cli-bin
-
 ---
 pkgbase = exploitdb-git
 	gives = exploitdb
@@ -2443,7 +2326,6 @@ pkgbase = exploitdb-git
 	source = git+https://gitlab.com/exploit-database/exploitdb
 
 pkgname = exploitdb-git
-
 ---
 pkgbase = expressvpn-deb
 	gives = expressvpn
@@ -2456,7 +2338,6 @@ pkgbase = expressvpn-deb
 	sha256sums = bf4aebd6cdf68e3efd03c2067c9812189565cfbad29d9627e1e6a53a9a9e7b4c
 
 pkgname = expressvpn-deb
-
 ---
 pkgbase = eza-git
 	gives = eza
@@ -2473,7 +2354,6 @@ pkgbase = eza-git
 	source = https://github.com/eza-community/eza.git
 
 pkgname = eza-git
-
 ---
 pkgbase = f1multiviewer-deb
 	gives = multiviewer-for-f1
@@ -2487,7 +2367,6 @@ pkgbase = f1multiviewer-deb
 	sha256sums = 84aca436bda7792954af7f32b743c82af78160318622c181e8ae949603e7868e
 
 pkgname = f1multiviewer-deb
-
 ---
 pkgbase = fake-ubuntu-advantage-tools-deb
 	gives = fake-ubuntu-advantage-tools
@@ -2498,7 +2377,6 @@ pkgbase = fake-ubuntu-advantage-tools-deb
 	sha256sums = 78a153d33409abfd8a487bfcba335f184b9d52d88d6820f5deaa2f9027043d37
 
 pkgname = fake-ubuntu-advantage-tools-deb
-
 ---
 pkgbase = fast
 	pkgver = 0.0.4
@@ -2509,7 +2387,6 @@ pkgbase = fast
 	sha256sums = 2775964dc15c0d677eefa4a391559689ebd4c8c8169d3b6c717c15f804f89bf6
 
 pkgname = fast
-
 ---
 pkgbase = fastfetch-git
 	gives = fastfetch
@@ -2555,7 +2432,6 @@ pkgbase = fastfetch-git
 	source = https://github.com/LinusDierheimer/fastfetch.git
 
 pkgname = fastfetch-git
-
 ---
 pkgbase = fblog-deb
 	gives = fblog
@@ -2566,7 +2442,6 @@ pkgbase = fblog-deb
 	sha256sums = 53ce3853a6ca267f6be7aac92509fdd4f875022ec4f48c3904ebf1fcb63afdfb
 
 pkgname = fblog-deb
-
 ---
 pkgbase = fennel-bin
 	gives = fennel
@@ -2583,7 +2458,6 @@ pkgbase = fennel-bin
 	sha256sums = 85b71175739dfd5e8893726d7244b0f0b58fd21eaec009e39eea44ad7169f060
 
 pkgname = fennel-bin
-
 ---
 pkgbase = fennel
 	pkgver = 1.3.1
@@ -2599,7 +2473,6 @@ pkgbase = fennel
 	sha256sums = 40a64d31a69803213d0e56f839814d5a13ae6fc40cc435b0c3be294e2ccda1ca
 
 pkgname = fennel
-
 ---
 pkgbase = ferdium-deb
 	gives = ferdium
@@ -2612,7 +2485,6 @@ pkgbase = ferdium-deb
 	sha256sums = 3e15981c64525fdc293c095f03f50dda79abfbe2166de78469d814e960176934
 
 pkgname = ferdium-deb
-
 ---
 pkgbase = ferium-bin
 	gives = ferium
@@ -2626,7 +2498,6 @@ pkgbase = ferium-bin
 	sha256sums = d38db96b4352493d1b2c58413cea3765a654177e79856c7f086dc60d21e97ac6
 
 pkgname = ferium-bin
-
 ---
 pkgbase = feroxbuster-bin
 	gives = feroxbuster
@@ -2649,7 +2520,6 @@ pkgbase = feroxbuster-bin
 	sha256sums = SKIP
 
 pkgname = feroxbuster-bin
-
 ---
 pkgbase = ffsend-bin
 	gives = ffsend
@@ -2675,7 +2545,6 @@ pkgbase = ffsend-bin
 	sha256sums = SKIP
 
 pkgname = ffsend-bin
-
 ---
 pkgbase = firefox-arm64-deb
 	gives = firefox
@@ -2690,7 +2559,6 @@ pkgbase = firefox-arm64-deb
 	sha256sums = 5fcf1e2350335b183577762cff5e0e8cc23081798824c88108592bf30c4fada8
 
 pkgname = firefox-arm64-deb
-
 ---
 pkgbase = firefox-bin
 	gives = firefox
@@ -2704,7 +2572,6 @@ pkgbase = firefox-bin
 	sha256sums = dce89cff7286c1bd4dd906fb9123e6136f1a1ecb7a6d674c53566c319cc85c4d
 
 pkgname = firefox-bin
-
 ---
 pkgbase = firefox-developer-edition-bin
 	gives = firefox-developer-edition
@@ -2728,7 +2595,6 @@ pkgbase = firefox-developer-edition-bin
 	sha256sums = SKIP
 
 pkgname = firefox-developer-edition-bin
-
 ---
 pkgbase = firefox-nightly-bin
 	gives = firefox-nightly
@@ -2745,7 +2611,6 @@ pkgbase = firefox-nightly-bin
 	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-128.0a1.en-US.linux-aarch64.tar.bz2
 
 pkgname = firefox-nightly-bin
-
 ---
 pkgbase = firefox-nightly-deb
 	gives = firefox-nightly
@@ -2762,7 +2627,6 @@ pkgbase = firefox-nightly-deb
 	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-128.0a1.en-US.linux-aarch64.deb
 
 pkgname = firefox-nightly-deb
-
 ---
 pkgbase = fishui-git
 	gives = fishui
@@ -2785,7 +2649,6 @@ pkgbase = fishui-git
 	source = https://github.com/cutefishos/fishui.git
 
 pkgname = fishui-git
-
 ---
 pkgbase = floorp-bin
 	gives = floorp
@@ -2802,7 +2665,6 @@ pkgbase = floorp-bin
 	sha256sums_arm64 = 8b849ab4873d7c3676c980a46944963200b4690287d3689452e6ac5e35f31e25
 
 pkgname = floorp-bin
-
 ---
 pkgbase = flyctl-bin
 	pkgver = 0.2.31
@@ -2818,7 +2680,6 @@ pkgbase = flyctl-bin
 	sha256sums_arm64 = b7d5b38c6e6e0d6907520db81caf66cefd086a34d959b9d1fcf7427510f63c60
 
 pkgname = flyctl-bin
-
 ---
 pkgbase = fm6000-git
 	gives = fm6000
@@ -2830,7 +2691,6 @@ pkgbase = fm6000-git
 	sha256sums = d0127441a11db8d640a28753a8494a5155514e161415ca7b2c5ab3b33024517f
 
 pkgname = fm6000-git
-
 ---
 pkgbase = fnlfmt
 	pkgver = 0.3.0
@@ -2847,7 +2707,6 @@ pkgbase = fnlfmt
 	sha256sums = 8baa2f5ed98f449139f6bd8b4859575c4cfeacc60c0a8884ecaa27bc94e69156
 
 pkgname = fnlfmt
-
 ---
 pkgbase = foliate-deb
 	gives = foliate
@@ -2860,7 +2719,6 @@ pkgbase = foliate-deb
 	sha256sums = 933bb5235586cb59a2aa7d5df056cae2b504c5e928621ed6d6e084870279c195
 
 pkgname = foliate-deb
-
 ---
 pkgbase = font-downloader
 	gives = font-downloader
@@ -2877,7 +2735,6 @@ pkgbase = font-downloader
 	sha256sums = eeafd4ac9cb0d47fd0c1512e07805d0f7a639cdbbc688647249eaee8d1753e23
 
 pkgname = font-downloader
-
 ---
 pkgbase = forticlient-deb
 	gives = forticlient
@@ -2893,7 +2750,6 @@ pkgbase = forticlient-deb
 	sha256sums = 82e5817048a60ff95d2e88b4a95512f9f0035fa37240ce57580c203b5a8a79c9
 
 pkgname = forticlient-deb
-
 ---
 pkgbase = fpc-laz-deb
 	gives = fpc-laz
@@ -2907,7 +2763,6 @@ pkgbase = fpc-laz-deb
 	sha256sums = 92000f2b831184e153aab0c910f8ae9240450e5c6d76dc189cf53116ee501d83
 
 pkgname = fpc-laz-deb
-
 ---
 pkgbase = fpc-src-deb
 	gives = fpc-src
@@ -2919,7 +2774,6 @@ pkgbase = fpc-src-deb
 	sha256sums = 8c9e145d8056754a9ca39ce3e52e982b8e4816124984c5f542f2a874e721ad53
 
 pkgname = fpc-src-deb
-
 ---
 pkgbase = freetube-deb
 	gives = freetube
@@ -2931,7 +2785,6 @@ pkgbase = freetube-deb
 	sha256sums = ea2264b9458f9911e3a5000038a09a808b8e872e5df19a36201e319cf3ca3b53
 
 pkgname = freetube-deb
-
 ---
 pkgbase = freshfetch-git
 	gives = freshfetch
@@ -2944,7 +2797,6 @@ pkgbase = freshfetch-git
 	source = https://github.com/K4rakara/freshfetch.git
 
 pkgname = freshfetch-git
-
 ---
 pkgbase = fsearch-deb
 	gives = fsearch
@@ -2964,7 +2816,6 @@ pkgbase = fsearch-deb
 	sha256sums_bookworm = 2f8b3b9a0153499b161866df64e081777f9085c789911817178986d96c220fcb
 
 pkgname = fsearch-deb
-
 ---
 pkgbase = fsearch-git
 	gives = fsearch
@@ -2987,7 +2838,6 @@ pkgbase = fsearch-git
 	source = https://github.com/cboxdoerfer/fsearch.git
 
 pkgname = fsearch-git
-
 ---
 pkgbase = fselect-git
 	gives = fselect
@@ -3000,7 +2850,6 @@ pkgbase = fselect-git
 	source = https://github.com/jhspetersson/fselect.git
 
 pkgname = fselect-git
-
 ---
 pkgbase = fzf-bin
 	gives = fzf
@@ -3027,7 +2876,6 @@ pkgbase = fzf-bin
 	sha256sums_s390x = 87c9de52a4528e80c99fc120bed028ea48c9d2a1f10fc0f526e9328ad17aa5d1
 
 pkgname = fzf-bin
-
 ---
 pkgbase = galaxybudsclient-bin
 	gives = galaxybudsclient
@@ -3050,7 +2898,6 @@ pkgbase = galaxybudsclient-bin
 	sha256sums_armhf = 8ef02d29c182679b10d619b39573df10f1b8506fb9e398d7d91a13bc210ddea9
 
 pkgname = galaxybudsclient-bin
-
 ---
 pkgbase = geekbench-bin
 	gives = geekbench
@@ -3061,7 +2908,6 @@ pkgbase = geekbench-bin
 	sha256sums = 240f5bbd16fcbb4a86e99b1047da89df2695f678bf324756a3dc51b663e9f762
 
 pkgname = geekbench-bin
-
 ---
 pkgbase = genymotion-bin
 	gives = genymotion
@@ -3081,7 +2927,6 @@ pkgbase = genymotion-bin
 	sha256sums = 092d40f6e76de3b6e1827609aaa9021b7cf85da3d51e6cf8d7b553b18d9c70e0
 
 pkgname = genymotion-bin
-
 ---
 pkgbase = gfn-electron-bin
 	gives = geforcenow-electron
@@ -3109,7 +2954,6 @@ pkgbase = gfn-electron-bin
 	sha256sums = SKIP
 
 pkgname = gfn-electron-bin
-
 ---
 pkgbase = ghcup-bin
 	gives = ghcup
@@ -3136,7 +2980,6 @@ pkgbase = ghcup-bin
 	sha256sums_i386 = 1fd4fa989653a127d33f90cb4cc11fd024ea4085e795c0b0f6ed97afc5e8b634
 
 pkgname = ghcup-bin
-
 ---
 pkgbase = gir1.2-xapp-1.0-deb
 	gives = gir1.2-xapp-1.0
@@ -3150,7 +2993,6 @@ pkgbase = gir1.2-xapp-1.0-deb
 	sha256sums = 6dd783232c3d897b3f01aede5bfaef94aebb952e0d82349696217fc0536febbd
 
 pkgname = gir1.2-xapp-1.0-deb
-
 ---
 pkgbase = git-butler-deb
 	gives = git-butler
@@ -3169,7 +3011,6 @@ pkgbase = git-butler-deb
 	sha256sums = fb1e068b6b6fa8f191d5c48d2662c8b24b8c9f990a1b85d928721da2a48e5cfd
 
 pkgname = git-butler-deb
-
 ---
 pkgbase = git-credential-manager-core-deb
 	gives = git-credential-manager-core
@@ -3183,7 +3024,6 @@ pkgbase = git-credential-manager-core-deb
 	sha256sums = d65a166f6fc3d6638b356b84b4e1274a95352455f448b06a34926bf6568cd995
 
 pkgname = git-credential-manager-core-deb
-
 ---
 pkgbase = git-delta-deb
 	gives = git-delta
@@ -3196,7 +3036,6 @@ pkgbase = git-delta-deb
 	sha256sums = e11c201107edc86212a8bfdf5ca51a7b5bd497008f1f57c4319a2746991ff7db
 
 pkgname = git-delta-deb
-
 ---
 pkgbase = git-extras-git
 	gives = git-extras
@@ -3210,7 +3049,6 @@ pkgbase = git-extras-git
 	source = https://github.com/tj/git-extras.git
 
 pkgname = git-extras-git
-
 ---
 pkgbase = git
 	pkgver = 2.45.0
@@ -3237,7 +3075,6 @@ pkgbase = git
 	sha256sums = a0fc1410878716add0a3c0cf3d35728f3a7c960f751c657656cca0212bf89e65
 
 pkgname = git
-
 ---
 pkgbase = gitblade-deb
 	gives = gitblade
@@ -3248,7 +3085,6 @@ pkgbase = gitblade-deb
 	sha256sums = 06099839154579c28dd1a28dd631d23eff9b6a3a59c3d9b14ff04878956b4e2c
 
 pkgname = gitblade-deb
-
 ---
 pkgbase = gitfiend-deb
 	gives = gitfiend
@@ -3262,7 +3098,6 @@ pkgbase = gitfiend-deb
 	sha256sums = 6d93f6ebc5c7764c423e66af215c12ffcdc84d1aebf61b106605c0d7fb4f611c
 
 pkgname = gitfiend-deb
-
 ---
 pkgbase = github-cli-bin
 	gives = gh
@@ -3278,7 +3113,6 @@ pkgbase = github-cli-bin
 	sha256sums = 3f7ef10a8ae6164220db20cf6d4fb96528c61d614f0803ccf39b1cabb6ae7263
 
 pkgname = github-cli-bin
-
 ---
 pkgbase = github-cli-deb
 	gives = gh
@@ -3297,7 +3131,6 @@ pkgbase = github-cli-deb
 	sha256sums_amd64 = f29848d15081ebddefe83d83731c17df86d05d948d82f9717bb3da57d18f8ab2
 
 pkgname = github-cli-deb
-
 ---
 pkgbase = github-desktop-deb
 	gives = github-desktop
@@ -3319,7 +3152,6 @@ pkgbase = github-desktop-deb
 	sha256sums_armhf = a7a4bdddbcb6686b7e1ff943c3c7ba92debfe60ef216e84ffacbc2e37e0cd654
 
 pkgname = github-desktop-deb
-
 ---
 pkgbase = gitkraken-deb
 	gives = gitkraken
@@ -3333,7 +3165,6 @@ pkgbase = gitkraken-deb
 	sha256sums = c94fb01b50d12cf7c195e800450166b1d3a514f5205248e057c9ce674d63e21d
 
 pkgname = gitkraken-deb
-
 ---
 pkgbase = gldriver-test-deb
 	gives = gldriver-test
@@ -3346,7 +3177,6 @@ pkgbase = gldriver-test-deb
 	sha256sums = b0e0ea2e8ebde87f481639dfa016df6ea4335d97710cd10c8b14ab5a379aaa93
 
 pkgname = gldriver-test-deb
-
 ---
 pkgbase = glow-deb
 	gives = glow
@@ -3362,7 +3192,6 @@ pkgbase = glow-deb
 	sha256sums_arm64 = edb4cb7b4f9a531e85be0060109ca7c053d0d02761cc145482f72604f874fed9
 
 pkgname = glow-deb
-
 ---
 pkgbase = gnome-shell-extension-installer-git
 	gives = gnome-shell-extension-installer
@@ -3375,7 +3204,6 @@ pkgbase = gnome-shell-extension-installer-git
 	source = https://github.com/brunelli/gnome-shell-extension-installer.git
 
 pkgname = gnome-shell-extension-installer-git
-
 ---
 pkgbase = gnome-tweaks
 	gives = gnome-tweaks
@@ -3407,7 +3235,6 @@ pkgbase = gnome-tweaks
 	sha256sums = 59d9597840335b0d71afd287bec09260e172ff89e14d6d12c3416f23557974ee
 
 pkgname = gnome-tweaks
-
 ---
 pkgbase = go-bin
 	gives = go
@@ -3431,7 +3258,6 @@ pkgbase = go-bin
 	sha256sums = 3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4
 
 pkgname = go-bin
-
 ---
 pkgbase = go-task-deb
 	gives = task
@@ -3447,7 +3273,6 @@ pkgbase = go-task-deb
 	sha256sums_arm64 = 4db8c450e1a6c529e1ba470d708ae5bc4dccf0c83b8e0665ee1f970c05e993d1
 
 pkgname = go-task-deb
-
 ---
 pkgbase = goldberg-emulator-git
 	gives = goldberg-emulator
@@ -3475,7 +3300,6 @@ pkgbase = goldberg-emulator-git
 	sha256sums = 2fa79bb1526b2903c4b95f4e534c9627367d9a9acba35d22c190f0a04c35f381
 
 pkgname = goldberg-emulator-git
-
 ---
 pkgbase = gomuks-deb
 	gives = gomuks
@@ -3492,7 +3316,6 @@ pkgbase = gomuks-deb
 	sha256sums = c02fa1446744efc4b57ad4c4bad640e7c0f969ff78a3e594be92f30cfd115a66
 
 pkgname = gomuks-deb
-
 ---
 pkgbase = google-chrome-beta-deb
 	gives = google-chrome-beta
@@ -3507,7 +3330,6 @@ pkgbase = google-chrome-beta-deb
 	sha256sums = 9db9c6e1cd37e977c814a206312def125592ce9ac548ef7f8e1fda1e57c33ddf
 
 pkgname = google-chrome-beta-deb
-
 ---
 pkgbase = google-chrome-deb
 	gives = google-chrome-stable
@@ -3522,7 +3344,6 @@ pkgbase = google-chrome-deb
 	sha256sums = e0158b9f4fa060d586e03b2895b63a5a54ef5d697bb59219ae7a9796b1941a34
 
 pkgname = google-chrome-deb
-
 ---
 pkgbase = google-chrome-unstable-deb
 	gives = google-chrome-unstable
@@ -3536,7 +3357,6 @@ pkgbase = google-chrome-unstable-deb
 	sha256sums = 6a54932c941c3b6086aeef4cbf9f77aa05ddd4630142c79d1e3308aaab7fbf07
 
 pkgname = google-chrome-unstable-deb
-
 ---
 pkgbase = google-earth-pro-stable-deb
 	gives = google-earth-pro-stable
@@ -3553,7 +3373,6 @@ pkgbase = google-earth-pro-stable-deb
 	sha256sums = 88e8b1a8e09f08c8daac8e21d803d19203a725e1ff8437a65dc8fba753a12c3e
 
 pkgname = google-earth-pro-stable-deb
-
 ---
 pkgbase = goverlay-bin
 	gives = goverlay
@@ -3572,7 +3391,6 @@ pkgbase = goverlay-bin
 	sha256sums = SKIP
 
 pkgname = goverlay-bin
-
 ---
 pkgbase = goverlay
 	gives = goverlay
@@ -3614,7 +3432,6 @@ pkgbase = goverlay
 	makedepends_sid = fpc-source
 
 pkgname = goverlay
-
 ---
 pkgbase = gradience-git
 	pkgver = 0.8.0-beta2
@@ -3673,7 +3490,6 @@ pkgbase = gradience-git
 	pacdeps_sid = python3-zombie-imp
 
 pkgname = gradience-git
-
 ---
 pkgbase = gradience
 	pkgver = 0.4.1-patch1
@@ -3733,7 +3549,6 @@ pkgbase = gradience
 	pacdeps_sid = python3-zombie-imp
 
 pkgname = gradience
-
 ---
 pkgbase = graillon
 	pkgver = 2.6
@@ -3743,7 +3558,6 @@ pkgbase = graillon
 	sha256sums = 1a94c86c2d0da8a2830a6aa838e7d1f26454149a1a83592d500739bc5198659e
 
 pkgname = graillon
-
 ---
 pkgbase = grapejuice-git
 	gives = grapejuice
@@ -3770,7 +3584,6 @@ pkgbase = grapejuice-git
 	source = https://gitlab.com/brinkervii/grapejuice.git
 
 pkgname = grapejuice-git
-
 ---
 pkgbase = grive2-git
 	gives = grive2
@@ -3802,7 +3615,6 @@ pkgbase = grive2-git
 	source = https://github.com/vitalif/grive2.git
 
 pkgname = grive2-git
-
 ---
 pkgbase = grive2
 	gives = grive2
@@ -3831,7 +3643,6 @@ pkgbase = grive2
 	sha256sums = 9940bcd3e5a3ffd32b91477fba8ba1ca3e0a3a72e5ffa9c6d524db87951fdbbb
 
 pkgname = grive2
-
 ---
 pkgbase = grub-btrfs
 	pkgver = 4.13
@@ -3847,7 +3658,6 @@ pkgbase = grub-btrfs
 	b2sums = e2f11a0a8282e3ec8ff8223e3bad70b5d5c5e81b4d740a1bf3554db412dbe48a8a0f216f4e6c65ae1d11c01a27b8b92bae9b470c60d2389505ce089511536e1a
 
 pkgname = grub-btrfs
-
 ---
 pkgbase = grub-customizer-git
 	gives = grub-customizer
@@ -3865,7 +3675,6 @@ pkgbase = grub-customizer-git
 	source = git+https://git.launchpad.net/grub-customizer
 
 pkgname = grub-customizer-git
-
 ---
 pkgbase = gtkhash
 	pkgver = 1.4
@@ -3887,7 +3696,6 @@ pkgbase = gtkhash
 	sha256sums = 20b57dbb8f6c6d7323f573c111a11640603a422c5f9da7b302a4981e4adc37c4
 
 pkgname = gtkhash
-
 ---
 pkgbase = hakuneko-deb
 	gives = hakuneko-desktop
@@ -3909,7 +3717,6 @@ pkgbase = hakuneko-deb
 	sha256sums_i386 = 3608ff4e8a3257fffedfa2dcea6501cb6d0d203235a2e4c6e6bbf01b93dce240
 
 pkgname = hakuneko-deb
-
 ---
 pkgbase = hamclock-big
 	pkgver = 4.03
@@ -3935,7 +3742,6 @@ pkgbase = hamclock-big
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-big
-
 ---
 pkgbase = hamclock-bigger
 	pkgver = 4.03
@@ -3960,7 +3766,6 @@ pkgbase = hamclock-bigger
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-bigger
-
 ---
 pkgbase = hamclock-huge
 	pkgver = 4.03
@@ -3985,7 +3790,6 @@ pkgbase = hamclock-huge
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-huge
-
 ---
 pkgbase = hamclock
 	pkgver = 4.03
@@ -4011,7 +3815,6 @@ pkgbase = hamclock
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock
-
 ---
 pkgbase = harmonoid-deb
 	gives = harmonoid
@@ -4025,7 +3828,6 @@ pkgbase = harmonoid-deb
 	sha256sums = e0078741f2df5a7146027c88c61547e7c920a0a43bfc21518e1d77f5dd7ec927
 
 pkgname = harmonoid-deb
-
 ---
 pkgbase = headset-deb
 	pkgver = 4.2.1
@@ -4037,7 +3839,6 @@ pkgbase = headset-deb
 	sha256sums = f3582c22aef8b2081ab84ea0f2933acf4e4a4e6b1b7b8f4265af5a450103c0ca
 
 pkgname = headset-deb
-
 ---
 pkgbase = helix
 	pkgver = 24.03
@@ -4048,7 +3849,6 @@ pkgbase = helix
 	sha256sums = c59a5988f066c2ab90132e03a0e6b35b3dd89f48d3d78bf0ec81bd7d88c7677e
 
 pkgname = helix
-
 ---
 pkgbase = hello
 	pkgver = 2.12.1
@@ -4064,7 +3864,6 @@ pkgbase = hello
 	sha256sums = 8d99142afd92576f30b0cd7cb42a8dc6809998bc5d607d88761f512e26c7db20
 
 pkgname = hello
-
 ---
 pkgbase = heroic-games-launcher-deb
 	gives = heroic
@@ -4077,7 +3876,6 @@ pkgbase = heroic-games-launcher-deb
 	sha256sums = dc9e846e0fa31e9f584aec6d9c162598a07bb7035d1a9b65c5885c0fa967089f
 
 pkgname = heroic-games-launcher-deb
-
 ---
 pkgbase = highlight-pointer-bin
 	gives = highlight-pointer
@@ -4092,7 +3890,6 @@ pkgbase = highlight-pointer-bin
 	sha256sums = 82ad3845ef9ec3626ab1c0fad67614d5c61b26a2bf4e96b669e2a78e0395cb62
 
 pkgname = highlight-pointer-bin
-
 ---
 pkgbase = htop
 	gives = htop
@@ -4106,7 +3903,6 @@ pkgbase = htop
 	sha256sums = 3829c742a835a0426db41bb039d1b976420c21ec65e93b35cd9bfd2d57f44ac8
 
 pkgname = htop
-
 ---
 pkgbase = httptoolkit-deb
 	gives = httptoolkit
@@ -4121,7 +3917,6 @@ pkgbase = httptoolkit-deb
 	sha256sums = 6033a43dcd67b3bc12a7b77b3d15fe05696cd9d7cce67271e0103eb93b2bc1e1
 
 pkgname = httptoolkit-deb
-
 ---
 pkgbase = hyfetch-git
 	gives = hyfetch
@@ -4134,7 +3929,6 @@ pkgbase = hyfetch-git
 	source = https://github.com/hykilpikonna/hyfetch.git
 
 pkgname = hyfetch-git
-
 ---
 pkgbase = hyper-deb
 	gives = hyper
@@ -4147,7 +3941,6 @@ pkgbase = hyper-deb
 	sha256sums = 8c4cd9e8c58568d5c14bc080cdf9ffb9f30fa5672e6bd1e1045cdeb563251f56
 
 pkgname = hyper-deb
-
 ---
 pkgbase = hyperfine-bin
 	gives = hyperfine
@@ -4164,7 +3957,6 @@ pkgbase = hyperfine-bin
 	sha256sums = 563de47d843810de501e3e6bfcb4571a4ff957eab811c2af87be23d1c599ae47
 
 pkgname = hyperfine-bin
-
 ---
 pkgbase = hypnotix-deb
 	gives = hypnotix
@@ -4179,7 +3971,6 @@ pkgbase = hypnotix-deb
 	pacdeps_debian = python3-imdbpy-deb
 
 pkgname = hypnotix-deb
-
 ---
 pkgbase = hyprcursor-bin
 	pkgver = 0.1.7
@@ -4191,7 +3982,6 @@ pkgbase = hyprcursor-bin
 	sha256sums = b86ab68bb2260a8a09bd595ba38f0a077a08ad8a3f70c2549a59d355be6df196
 
 pkgname = hyprcursor-bin
-
 ---
 pkgbase = hyprland-bin
 	gives = hyprland
@@ -4232,7 +4022,6 @@ pkgbase = hyprland-bin
 	sha256sums = 746ac771c7675163b40b5fb989e0a8aabd8d1a18a63aaf228d2bd0af2e0ff3d1
 
 pkgname = hyprland-bin
-
 ---
 pkgbase = hyprland
 	pkgver = 0.35.0
@@ -4324,7 +4113,6 @@ pkgbase = hyprland
 	pacdeps_sid = xdg-desktop-portal-hyprland
 
 pkgname = hyprland
-
 ---
 pkgbase = hyprlang
 	pkgver = 0.5.0
@@ -4339,7 +4127,6 @@ pkgbase = hyprlang
 	sha256sums = c59e705f2c2ff9ea4e2b183fdf0bc20a62b7162604a657d6352716a1fd5061b2
 
 pkgname = hyprlang
-
 ---
 pkgbase = hyprpaper
 	pkgver = 0.4.0
@@ -4367,7 +4154,6 @@ pkgbase = hyprpaper
 	sha256sums = cabd8181aa64dead3a0ed6e801e391c54b07f3400eecb9dcf2a01ac5d1cf47d3
 
 pkgname = hyprpaper
-
 ---
 pkgbase = hyprpicker
 	pkgver = 0.2.0
@@ -4395,7 +4181,6 @@ pkgbase = hyprpicker
 	sha256sums = fa1b0c29682f5ede5a03d754770d152f38d869bc1faa300564680cef2de0758a
 
 pkgname = hyprpicker
-
 ---
 pkgbase = hyprwayland-scanner
 	pkgver = 0.3.4
@@ -4407,7 +4192,6 @@ pkgbase = hyprwayland-scanner
 	sha256sums = ded145e7aa6aed19db53d31ac49a14a91f2b41f5475240c03afc4e20ed5851c1
 
 pkgname = hyprwayland-scanner
-
 ---
 pkgbase = i3blocks-git
 	gives = i3blocks
@@ -4422,7 +4206,6 @@ pkgbase = i3blocks-git
 	source = https://github.com/vivien/i3blocks.git
 
 pkgname = i3blocks-git
-
 ---
 pkgbase = i3lock-color
 	gives = i3lock
@@ -4461,7 +4244,6 @@ pkgbase = i3lock-color
 	sha256sums = 46f15cbbf339873266e014f70b5e1ec02177f0295302b615a7bd85bef40d8ad2
 
 pkgname = i3lock-color
-
 ---
 pkgbase = imwheel-exclude-patched-git
 	pkgver = 0.0.1
@@ -4473,7 +4255,6 @@ pkgbase = imwheel-exclude-patched-git
 	source = https://github.com/ajh3/imwheel-exclude-patched.git
 
 pkgname = imwheel-exclude-patched-git
-
 ---
 pkgbase = insomnia-deb
 	gives = insomnia
@@ -4486,7 +4267,6 @@ pkgbase = insomnia-deb
 	sha256sums = eed91dd07689783742bd7d6dd57087aeb436df116b70cb32d67849244a7a9259
 
 pkgname = insomnia-deb
-
 ---
 pkgbase = insync-deb
 	gives = insync
@@ -4500,7 +4280,6 @@ pkgbase = insync-deb
 	sha256sums = d74f1a4d2a09f5c8abf5e81717b73cde36ecf6a9a05394845cd8d603e0576e76
 
 pkgname = insync-deb
-
 ---
 pkgbase = intel-undervolt
 	pkgver = 1.7
@@ -4511,7 +4290,6 @@ pkgbase = intel-undervolt
 	sha256sums = 29a7ebaee4830d65d0b5cefa6d497887d4f23f34659876dfe944f3a020cf33ff
 
 pkgname = intel-undervolt
-
 ---
 pkgbase = intellij-idea-community-bin
 	gives = intellij-idea-community
@@ -4531,7 +4309,6 @@ pkgbase = intellij-idea-community-bin
 	sha256sums_arm64 = 20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293
 
 pkgname = intellij-idea-community-bin
-
 ---
 pkgbase = internxt-deb
 	gives = internxt-drive
@@ -4544,7 +4321,6 @@ pkgbase = internxt-deb
 	sha256sums = 85c8ef9515d2264b62e4bd45a9ed9271221a1dc37760c4038d45582a9079352a
 
 pkgname = internxt-deb
-
 ---
 pkgbase = ivpn-deb
 	gives = ivpn
@@ -4558,7 +4334,6 @@ pkgbase = ivpn-deb
 	sha256sums = 10d8bf35ffedbdac2943fb7a3ab608eb8ae069dcc344e9b6b97b96a662372c35
 
 pkgname = ivpn-deb
-
 ---
 pkgbase = ivpn-ui-deb
 	gives = ivpn-ui
@@ -4573,7 +4348,6 @@ pkgbase = ivpn-ui-deb
 	sha256sums = f64cd84b4e0ce252f0c066977d180b953c55f2b485cf7a5437b1e4c7af1959f7
 
 pkgname = ivpn-ui-deb
-
 ---
 pkgbase = jellyfin-media-player-deb
 	gives = jellyfin-media-player
@@ -4596,7 +4370,6 @@ pkgbase = jellyfin-media-player-deb
 	sha256sums_trixie = fb246b38aeea7e6ba999ac7018fd12e6f37859ffb577b45ead414fad28655123
 
 pkgname = jellyfin-media-player-deb
-
 ---
 pkgbase = jetbrains-toolbox-bin
 	gives = jetbrains-toolbox
@@ -4612,7 +4385,6 @@ pkgbase = jetbrains-toolbox-bin
 	sha256sums = d819065a45d29d53646490fbd8ca45dbcaa3d544bdbc6da4494377460ddf6b79
 
 pkgname = jetbrains-toolbox-bin
-
 ---
 pkgbase = joplin-desktop-app
 	gives = joplin-desktop
@@ -4631,7 +4403,6 @@ pkgbase = joplin-desktop-app
 	sha256sums = SKIP
 
 pkgname = joplin-desktop-app
-
 ---
 pkgbase = kakoune
 	pkgver = 2024.05.18
@@ -4649,7 +4420,6 @@ pkgbase = kakoune
 	sha256sums = 50f2920db8ab8f71556b73dfd6d53fb924f67d1c60b9882050cfecfaa3aed31f
 
 pkgname = kakoune
-
 ---
 pkgbase = kalendar-git
 	gives = kalendar
@@ -4747,7 +4517,6 @@ pkgbase = kalendar-git
 	source = https://invent.kde.org/pim/kalendar.git
 
 pkgname = kalendar-git
-
 ---
 pkgbase = keepassxc
 	gives = org.freedesktop.secrets
@@ -4801,7 +4570,6 @@ pkgbase = keepassxc
 	sha256sums = a58074509fa8e90f152c6247f73e75e126303081f55eedb4ea0cbb6fa980d670
 
 pkgname = keepassxc
-
 ---
 pkgbase = keybase-deb
 	gives = keybase
@@ -4818,7 +4586,6 @@ pkgbase = keybase-deb
 	sha256sums = 14c85b312b891eae5de44d1d4d5024d36cbce545e686d299624e2a71b9e14712
 
 pkgname = keybase-deb
-
 ---
 pkgbase = kirc
 	pkgver = 0.3.2
@@ -4832,7 +4599,6 @@ pkgbase = kirc
 	sha256sums = a45172198873fb34c64150262be4515a7be268a5c00566c79f03a8ea2dd7900e
 
 pkgname = kirc
-
 ---
 pkgbase = komorebi-fork-deb
 	gives = komorebi
@@ -4846,7 +4612,6 @@ pkgbase = komorebi-fork-deb
 	sha256sums = 86ef373fb2fb645cdf72af192916dbe278d886283e1ee534843b6d259f3c08ab
 
 pkgname = komorebi-fork-deb
-
 ---
 pkgbase = koodo-reader-deb
 	gives = koodo-reader
@@ -4863,7 +4628,6 @@ pkgbase = koodo-reader-deb
 	sha256sums_arm64 = 789f997458408ceb2089db84929805f0fd75b0a2a58d34867fc68b62ec36cc4f
 
 pkgname = koodo-reader-deb
-
 ---
 pkgbase = krita-app
 	gives = krita
@@ -4879,7 +4643,6 @@ pkgbase = krita-app
 	sha256sums = SKIP
 
 pkgname = krita-app
-
 ---
 pkgbase = kvantum
 	pkgver = 1.0.10
@@ -4898,7 +4661,6 @@ pkgbase = kvantum
 	sha256sums = 4a070a1a6fac3d1861010aa44d34e665e4697bc64c4c5015a6448203c31f1f1f
 
 pkgname = kvantum
-
 ---
 pkgbase = kxstudio-repos-deb
 	gives = kxstudio-repos
@@ -4909,7 +4671,6 @@ pkgbase = kxstudio-repos-deb
 	sha256sums = a73597e4575a065acdaa2c0217b167818447e1ca509bc1ad080042c8c47060b1
 
 pkgname = kxstudio-repos-deb
-
 ---
 pkgbase = lagrange
 	pkgver = 1.3.4
@@ -4927,7 +4688,6 @@ pkgbase = lagrange
 	sha256sums = 0602bf65d79a1495818ab64717951d1c99057ed20e8c7bb621c8d5b693420b81
 
 pkgname = lagrange
-
 ---
 pkgbase = latte-dock-git
 	gives = latte-dock
@@ -4975,7 +4735,6 @@ pkgbase = latte-dock-git
 	source = https://invent.kde.org/plasma/latte-dock.git
 
 pkgname = latte-dock-git
-
 ---
 pkgbase = lazarus-project-deb
 	gives = lazarus-project
@@ -4988,7 +4747,6 @@ pkgbase = lazarus-project-deb
 	sha256sums = 99707b14fe2fe60054815cb5075f3bb723c0a743f5de8af0b4e436cc276f3a4f
 
 pkgname = lazarus-project-deb
-
 ---
 pkgbase = lazygit
 	gives = lazygit
@@ -5001,7 +4759,6 @@ pkgbase = lazygit
 	sha256sums = c3f8f1630fa9a0a00b68425c95879e059a42158425fd720b0b303e101d347d57
 
 pkgname = lazygit
-
 ---
 pkgbase = lbry-deb
 	gives = lbry
@@ -5016,7 +4773,6 @@ pkgbase = lbry-deb
 	sha256sums = 31ca3c2909b74f84cbf4ee9918cf437965063a3bc017bd1eed49c8bba928b4ff
 
 pkgname = lbry-deb
-
 ---
 pkgbase = lemonbar-xft-git
 	pkgver = 0.0.1
@@ -5033,7 +4789,6 @@ pkgbase = lemonbar-xft-git
 	sha256sums = c2ca60846e0cade326969dd3f1f10e723f1a94d90d0335132b844932e41effff
 
 pkgname = lemonbar-xft-git
-
 ---
 pkgbase = lens
 	pkgver = 1.0.2
@@ -5043,7 +4798,6 @@ pkgbase = lens
 	sha256sums = bd7c1b6ba8f7ad8ac2ee674f881e06f9650cf863ad7ee79d22e30b4d853dad19
 
 pkgname = lens
-
 ---
 pkgbase = lf-bin
 	gives = lf
@@ -5069,7 +4823,6 @@ pkgbase = lf-bin
 	source_s390x = https://github.com/gokcehan/lf/releases/download/r31/lf-linux-s390x.tar.gz
 
 pkgname = lf-bin
-
 ---
 pkgbase = libcamera-git
 	gives = libcamera
@@ -5112,7 +4865,6 @@ pkgbase = libcamera-git
 	pacdeps_focal = meson-focal-deb
 
 pkgname = libcamera-git
-
 ---
 pkgbase = libcutefish-git
 	gives = libcutefish
@@ -5138,7 +4890,6 @@ pkgbase = libcutefish-git
 	source = https://github.com/cutefishos/libcutefish.git
 
 pkgname = libcutefish-git
-
 ---
 pkgbase = libdrm
 	pkgver = 2.4.120
@@ -5163,7 +4914,6 @@ pkgbase = libdrm
 	sha256sums = 3bf55363f76c7250946441ab51d3a6cc0ae518055c0ff017324ab76cdefb327a
 
 pkgname = libdrm
-
 ---
 pkgbase = libeditline-troglobit
 	pkgver = 1.17.1
@@ -5177,7 +4927,6 @@ pkgbase = libeditline-troglobit
 	source = libeditline-troglobit::https://github.com/troglobit/editline.git#tag=1.17.1
 
 pkgname = libeditline-troglobit
-
 ---
 pkgbase = libfdk-aac1-deb
 	gives = libfdk-aac1
@@ -5193,7 +4942,6 @@ pkgbase = libfdk-aac1-deb
 	sha256sums = 4b824bbc6fdd47c5a01b9a61b8b1dbb318242d9f2af1c7ad2bd5d7e9fd4d3600
 
 pkgname = libfdk-aac1-deb
-
 ---
 pkgbase = libgc-nix
 	pkgver = 8.2.6
@@ -5212,7 +4960,6 @@ pkgbase = libgc-nix
 	sha256sums = ddf3d3948262ae023e30491f6db437506e421633739a0e81da7f68f0a454fb13
 
 pkgname = libgc-nix
-
 ---
 pkgbase = libicu-deb
 	gives = libicu72
@@ -5226,7 +4973,6 @@ pkgbase = libicu-deb
 	sha256sums = ab965e1ac9665ea93978edf271183bb3332d9ae7db194d148f9b50665c10fa2c
 
 pkgname = libicu-deb
-
 ---
 pkgbase = liblcf
 	pkgver = 0.8
@@ -5251,7 +4997,6 @@ pkgbase = liblcf
 	depends_bullseye = libicu67
 
 pkgname = liblcf
-
 ---
 pkgbase = libndi4-deb
 	gives = libndi4
@@ -5262,7 +5007,6 @@ pkgbase = libndi4-deb
 	sha256sums = d82e4231c6543ee978c85d114edd8f038c902b9be858aa6c5e847af39031f30b
 
 pkgname = libndi4-deb
-
 ---
 pkgbase = libresprite-git
 	gives = libresprite
@@ -5296,7 +5040,6 @@ pkgbase = libresprite-git
 	source = https://github.com/LibreSprite/LibreSprite.git
 
 pkgname = libresprite-git
-
 ---
 pkgbase = libressl
 	pkgver = 3.7.3
@@ -5309,7 +5052,6 @@ pkgbase = libressl
 	sha256sums = 7948c856a90c825bd7268b6f85674a8dcd254bae42e221781b24e3f8dc335db3
 
 pkgname = libressl
-
 ---
 pkgbase = librewolf-app
 	gives = librewolf
@@ -5336,7 +5078,6 @@ pkgbase = librewolf-app
 	sha256sums_arm64 = SKIP
 
 pkgname = librewolf-app
-
 ---
 pkgbase = librewolf-deb
 	gives = librewolf
@@ -5354,7 +5095,6 @@ pkgbase = librewolf-deb
 	sha256sums = 9841643f5760a2c53b3101d7cb8fc2677a29805e72d37783a182f2545ac0ee24
 
 pkgname = librewolf-deb
-
 ---
 pkgbase = libspa-codec-bluez5-aac-bin
 	gives = libspa-codec-bluez5-aac
@@ -5367,7 +5107,6 @@ pkgbase = libspa-codec-bluez5-aac-bin
 	sha256sums = 9a235d1b5d8bb52302f9c8159da828ca7c8de15614233967d484d92cba4e56c2
 
 pkgname = libspa-codec-bluez5-aac-bin
-
 ---
 pkgbase = libssl1.1-deb
 	gives = libssl1.1
@@ -5383,7 +5122,6 @@ pkgbase = libssl1.1-deb
 	sha256sums = 986727f5a99088bef98971edfcd9567f5693b5e941aa241894fce1020c7015a0
 
 pkgname = libssl1.1-deb
-
 ---
 pkgbase = libtomlplusplus-header
 	pkgver = 3.4.0
@@ -5395,7 +5133,6 @@ pkgbase = libtomlplusplus-header
 	sha256sums = 6b5172ad4dd6519aec67b919181fa7a38a2234131e5b2afa232dfe444819783e
 
 pkgname = libtomlplusplus-header
-
 ---
 pkgbase = libxapp1-deb
 	gives = libxapp1
@@ -5409,7 +5146,6 @@ pkgbase = libxapp1-deb
 	sha256sums = 7a329280e1c551e1edda99ee1a90db372a550a61f66b4853b3503b0dba2ef1fc
 
 pkgname = libxapp1-deb
-
 ---
 pkgbase = lightpad-git
 	gives = com.github.libredeb.lightpad
@@ -5452,7 +5188,6 @@ pkgbase = lightpad-git
 	source = https://github.com/libredeb/lightpad.git
 
 pkgname = lightpad-git
-
 ---
 pkgbase = linked-deb
 	gives = linked
@@ -5466,7 +5201,6 @@ pkgbase = linked-deb
 	sha256sums = 238010ac4ddc537417f4ec1f55f33323de12f4ad74f451a9c31650c0b2e4ae84
 
 pkgname = linked-deb
-
 ---
 pkgbase = linux-headers-deb
 	gives = linux-headers-6.10.0-061000rc2
@@ -5482,7 +5216,6 @@ pkgbase = linux-headers-deb
 	sha256sums = a4e922f40fdec8d34c9147fa3321c6a51af9a3d02c892555ccd960789cb45845
 
 pkgname = linux-headers-deb
-
 ---
 pkgbase = linux-headers-generic-deb
 	gives = linux-headers-6.10.0-061000rc2-generic
@@ -5502,7 +5235,6 @@ pkgbase = linux-headers-generic-deb
 	sha256sums_amd64 = 488792295d82d95d269a432a85a97838efed32b7fd5d50b8d1deb6cb49415089
 
 pkgname = linux-headers-generic-deb
-
 ---
 pkgbase = linux-headers-generic-stable-deb
 	gives = linux-headers-6.9.3-060903-generic
@@ -5520,7 +5252,6 @@ pkgbase = linux-headers-generic-stable-deb
 	sha256sums_amd64 = 6587d94a66d6d6eafaf9a1d08e75c49c179eeede8fcc9bb8e48ee2721a8a49c8
 
 pkgname = linux-headers-generic-stable-deb
-
 ---
 pkgbase = linux-headers-okpine-deb
 	gives = linux-headers-6.9.0-okpine
@@ -5537,7 +5268,6 @@ pkgbase = linux-headers-okpine-deb
 	sha256sums = 60204c25f4e5788f48410812f8df327dcf87fffbda0af380df9647562f8255eb
 
 pkgname = linux-headers-okpine-deb
-
 ---
 pkgbase = linux-headers-stable-deb
 	gives = linux-headers-6.9.3-060903
@@ -5551,7 +5281,6 @@ pkgbase = linux-headers-stable-deb
 	sha256sums = 9cb61687793d9145194c658ca50d0a15c193f4a5f059e239697cb69e15f88a21
 
 pkgname = linux-headers-stable-deb
-
 ---
 pkgbase = linux-image-okpine-deb
 	gives = linux-image-6.9.0-okpine
@@ -5570,7 +5299,6 @@ pkgbase = linux-image-okpine-deb
 	sha256sums = 60cf364f4977bd1cfb94d64cc62368940ec61e08743af3a75f58e2e4f0e3ce16
 
 pkgname = linux-image-okpine-deb
-
 ---
 pkgbase = linux-image-unsigned-deb
 	gives = linux-image-unsigned-6.10.0-061000rc2-generic
@@ -5591,7 +5319,6 @@ pkgbase = linux-image-unsigned-deb
 	sha256sums_amd64 = d93ccd2dcf234b336ba7553de59986dce524b5e126040042e083732acca9d720
 
 pkgname = linux-image-unsigned-deb
-
 ---
 pkgbase = linux-image-unsigned-stable-deb
 	gives = linux-image-unsigned-6.9.3-060903-generic
@@ -5610,7 +5337,6 @@ pkgbase = linux-image-unsigned-stable-deb
 	sha256sums_amd64 = c0b02225b21981737586d9a1b8135912ffd9466fceffcd86d346d80059028110
 
 pkgname = linux-image-unsigned-stable-deb
-
 ---
 pkgbase = linux-kernel-stable
 	pkgver = 6.9.3
@@ -5625,7 +5351,6 @@ pkgbase = linux-kernel-stable
 	source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
 
 pkgname = linux-kernel-stable
-
 ---
 pkgbase = linux-kernel
 	pkgver = 6.10~rc2
@@ -5642,7 +5367,6 @@ pkgbase = linux-kernel
 	source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
 
 pkgname = linux-kernel
-
 ---
 pkgbase = linux-libc-dev-okpine-deb
 	gives = linux-libc-dev
@@ -5656,7 +5380,6 @@ pkgbase = linux-libc-dev-okpine-deb
 	sha256sums = e84bb4a5a7e8e2c72555d0460dd67e2abb1b31a8806379321ca926fb95d88bb0
 
 pkgname = linux-libc-dev-okpine-deb
-
 ---
 pkgbase = linux-modules-deb
 	gives = linux-modules-6.10.0-061000rc2-generic
@@ -5671,7 +5394,6 @@ pkgbase = linux-modules-deb
 	sha256sums_amd64 = 523d86913c7dd75b5acd954aa0fddf65050842839ad277c5ee0774f8daec990f
 
 pkgname = linux-modules-deb
-
 ---
 pkgbase = linux-modules-stable-deb
 	gives = linux-modules-6.9.3-060903-generic
@@ -5686,7 +5408,6 @@ pkgbase = linux-modules-stable-deb
 	sha256sums_amd64 = 10d7577b57c576dca882ab4d9015a022307a2e2592b8f4566f78edddc1c17800
 
 pkgname = linux-modules-stable-deb
-
 ---
 pkgbase = linux-wifi-hotspot-deb
 	gives = linux-wifi-hotspot
@@ -5699,7 +5420,6 @@ pkgbase = linux-wifi-hotspot-deb
 	sha256sums = 3231badec87e3183f61fea43dd6a71a9be881d301e4e65a620855ea3d6f21ad4
 
 pkgname = linux-wifi-hotspot-deb
-
 ---
 pkgbase = lix-git
 	gives = lix
@@ -5763,7 +5483,6 @@ pkgbase = lix-git
 	source = lix::https://github.com/lix-project/lix.git
 
 pkgname = lix-git
-
 ---
 pkgbase = lrz-syncshare-deb
 	gives = lrz-sync-share
@@ -5775,7 +5494,6 @@ pkgbase = lrz-syncshare-deb
 	sha256sums = 77202b710ca47293d7a9f1876a181d23f53554003af0c402ca775fbc2c502618
 
 pkgname = lrz-syncshare-deb
-
 ---
 pkgbase = lsd-deb
 	gives = lsd
@@ -5794,7 +5512,6 @@ pkgbase = lsd-deb
 	sha256sums_i386 = 3a9d7193f90cce0884edb6f1c2230ec5cf942fd122e75691fc32cf3e8f728dcb
 
 pkgname = lsd-deb
-
 ---
 pkgbase = lunacy-deb
 	gives = lunacy
@@ -5808,7 +5525,6 @@ pkgbase = lunacy-deb
 	sha256sums = 746db12e8a91409b1a47bbf4d22378e863f88c1f1656bc5aca7d824902c25254
 
 pkgname = lunacy-deb
-
 ---
 pkgbase = lunarclient-app
 	pkgver = 3.2.4
@@ -5831,7 +5547,6 @@ pkgbase = lunarclient-app
 	sha256sums = SKIP
 
 pkgname = lunarclient-app
-
 ---
 pkgbase = lutris-deb
 	gives = lutris
@@ -5844,7 +5559,6 @@ pkgbase = lutris-deb
 	sha256sums = 70055d0d9db4613dbfef09e9acc43dbd73abb07fe843461faa4c0256b8779ab0
 
 pkgname = lutris-deb
-
 ---
 pkgbase = lyrebird-git
 	gives = lyrebird
@@ -5863,7 +5577,6 @@ pkgbase = lyrebird-git
 	source = https://github.com/lyrebird-voice-changer/lyrebird.git
 
 pkgname = lyrebird-git
-
 ---
 pkgbase = lyx
 	pkgver = 2.3.7-1
@@ -5890,7 +5603,6 @@ pkgbase = lyx
 	sha256sums = 910bb48d9b19c0cfeb6ec845eb318515f33a63ea7892a99b2e7b67c6b518bacd
 
 pkgname = lyx
-
 ---
 pkgbase = mailspring-deb
 	gives = mailspring
@@ -5904,7 +5616,6 @@ pkgbase = mailspring-deb
 	sha256sums = d85e64f3345123ac75110d24f30bc8ab54372e7ae7d913a9fccabe1fb56ace57
 
 pkgname = mailspring-deb
-
 ---
 pkgbase = maitreya-deb
 	gives = maitreya8
@@ -5926,7 +5637,6 @@ pkgbase = maitreya-deb
 	sha256sums = b503e65f512f8f593801786a94b30e79d78c28fe431e5102722eae5b3a5a6bc9
 
 pkgname = maitreya-deb
-
 ---
 pkgbase = makedeb-deb
 	gives = makedeb
@@ -5940,7 +5650,6 @@ pkgbase = makedeb-deb
 	sha256sums = 48b8de3c66da9be1ad1d283002c948dd25cb9e45d5d6725af0db38bbd823d7bd
 
 pkgname = makedeb-deb
-
 ---
 pkgbase = mangohud
 	pkgver = 0.7.2
@@ -5971,7 +5680,6 @@ pkgbase = mangohud
 	sha256sums = 67d2425c0cc634574d8bd8a924e0e1a2e909b47ed9b8c02029b5baffe46657fc
 
 pkgname = mangohud
-
 ---
 pkgbase = marktext-deb
 	gives = marktext
@@ -5985,7 +5693,6 @@ pkgbase = marktext-deb
 	sha256sums = 927fa87c11e6763171bd68dbf60f235bfea62989e799620dd392d19077574fd2
 
 pkgname = marktext-deb
-
 ---
 pkgbase = mcontrolcenter-bin
 	gives = mcontrolcenter
@@ -5998,7 +5705,6 @@ pkgbase = mcontrolcenter-bin
 	sha256sums = 81196a66e19ba0ac01536187bee5795a836ee1b37dda8027ca0ddbf9da5cf0dc
 
 pkgname = mcontrolcenter-bin
-
 ---
 pkgbase = mdbook-linkcheck
 	pkgver = 0.7.7
@@ -6012,7 +5718,6 @@ pkgbase = mdbook-linkcheck
 	sha256sums = 3194243acf12383bd328a9440ab1ae304e9ba244d3bd7f85f1c23b0745c4847a
 
 pkgname = mdbook-linkcheck
-
 ---
 pkgbase = mdbook
 	pkgver = 0.4.40
@@ -6025,7 +5730,6 @@ pkgbase = mdbook
 	sha256sums = 550da7ff02ef62c60db6e813b6dbae65b9ed3d491186ea74929536feaceea94b
 
 pkgname = mdbook
-
 ---
 pkgbase = megabasterd-bin
 	gives = megabasterd
@@ -6041,7 +5745,6 @@ pkgbase = megabasterd-bin
 	sha256sums = SKIP
 
 pkgname = megabasterd-bin
-
 ---
 pkgbase = megasync-deb
 	gives = megasync
@@ -6075,7 +5778,6 @@ pkgbase = megasync-deb
 	sha256sums_bookworm = 5a63deac549fd09daeca479fd0bbbf0cb329dc9bef1245a334a1a75535548635
 
 pkgname = megasync-deb
-
 ---
 pkgbase = meson-focal-deb
 	gives = meson
@@ -6089,7 +5791,6 @@ pkgbase = meson-focal-deb
 	sha256sums = d9c97eac0a3573a98db98a7e56e043968da8ad7908c31f6b16daa19febd28e9b
 
 pkgname = meson-focal-deb
-
 ---
 pkgbase = micro
 	pkgver = 2.0.13
@@ -6103,7 +5804,6 @@ pkgbase = micro
 	sha256sums = a50e405d3d09d58f6b2c182429c18537a05f317dc0c3c9cb834b3271362e4781
 
 pkgname = micro
-
 ---
 pkgbase = microsoft-edge-beta-deb
 	gives = microsoft-edge-beta
@@ -6117,7 +5817,6 @@ pkgbase = microsoft-edge-beta-deb
 	sha256sums = ec64370003efdcd3cd7d5abf3a69a7d513968eca785f1be670c06af8046ba607
 
 pkgname = microsoft-edge-beta-deb
-
 ---
 pkgbase = microsoft-edge-dev-deb
 	gives = microsoft-edge-dev
@@ -6131,7 +5830,6 @@ pkgbase = microsoft-edge-dev-deb
 	sha256sums = 38a8c29942cf8d8ba8ba6a80aa2bf2085cc7491d483aeb442164ea5ed0e03213
 
 pkgname = microsoft-edge-dev-deb
-
 ---
 pkgbase = microsoft-edge-stable-deb
 	gives = microsoft-edge-stable
@@ -6145,7 +5843,6 @@ pkgbase = microsoft-edge-stable-deb
 	sha256sums = 3bfecb768a5c31f498c7c720f4134353a2b16cf7e717dad85c3ed0ea3ba004b5
 
 pkgname = microsoft-edge-stable-deb
-
 ---
 pkgbase = microsoft-prod-repo-deb
 	gives = packages-microsoft-prod
@@ -6157,7 +5854,6 @@ pkgbase = microsoft-prod-repo-deb
 	sha256sums = b8713c36d3e6f6b2520830180cf6b5779e48410ad5d5e1b192635b0c7359fcc6
 
 pkgname = microsoft-prod-repo-deb
-
 ---
 pkgbase = minecraft-launcher-deb
 	gives = minecraft-launcher
@@ -6172,7 +5868,6 @@ pkgbase = minecraft-launcher-deb
 	source = https://launcher.mojang.com/download/Minecraft.deb
 
 pkgname = minecraft-launcher-deb
-
 ---
 pkgbase = minecraft-launcher
 	gives = minecraft-launcher
@@ -6233,7 +5928,6 @@ pkgbase = minecraft-launcher
 	sha256sums = SKIP
 
 pkgname = minecraft-launcher
-
 ---
 pkgbase = minecraft-pi-reborn-app
 	gives = minecraft-pi-reborn
@@ -6256,7 +5950,6 @@ pkgbase = minecraft-pi-reborn-app
 	sha256sums = SKIP
 
 pkgname = minecraft-pi-reborn-app
-
 ---
 pkgbase = mint-themes
 	pkgver = 2.1.5
@@ -6271,7 +5964,6 @@ pkgbase = mint-themes
 	sha256sums = 685cff6598bdaf4b6813be3080368845f019e09e974e7f589b5f99acb3da2396
 
 pkgname = mint-themes
-
 ---
 pkgbase = mobile-usb-networking-deb
 	gives = mobile-usb-networking
@@ -6283,7 +5975,6 @@ pkgbase = mobile-usb-networking-deb
 	sha256sums = 3cfb704db5a6e7ebef88c5cbf8808b42f714afd1ec40c7f18eae72bbb96c3e63
 
 pkgname = mobile-usb-networking-deb
-
 ---
 pkgbase = moka-icon-theme
 	pkgver = 5.4.0
@@ -6295,7 +5986,6 @@ pkgbase = moka-icon-theme
 	sha256sums = b32e82aea4358e087620e852aa20042e791aa957a93de568da1d2223a46c7cd9
 
 pkgname = moka-icon-theme
-
 ---
 pkgbase = mold-bin
 	gives = mold
@@ -6313,7 +6003,6 @@ pkgbase = mold-bin
 	sha256sums_arm64 = c75d17c1c530dee4b9ca811aaacca782a9fe8538ae8c68ce619f198a58e2b0e7
 
 pkgname = mold-bin
-
 ---
 pkgbase = ms-teams-deb
 	gives = teams
@@ -6326,7 +6015,6 @@ pkgbase = ms-teams-deb
 	sha256sums = 87462709e257fff9784de809559b5abd5dc7af18d8505d856b92a66989995bc1
 
 pkgname = ms-teams-deb
-
 ---
 pkgbase = mullvad-vpn-beta-deb
 	gives = mullvad-vpn
@@ -6339,7 +6027,6 @@ pkgbase = mullvad-vpn-beta-deb
 	sha256sums = ecda227eb5f5ff7a542474d82bed9d568b3fa05b0a898c328421a2d3b4ac1213
 
 pkgname = mullvad-vpn-beta-deb
-
 ---
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
@@ -6354,7 +6041,6 @@ pkgbase = mullvad-vpn-deb
 	sha256sums = 2dfb8b05818795511c5691d275148011ff43ed00a145dfdf871f04a020596d27
 
 pkgname = mullvad-vpn-deb
-
 ---
 pkgbase = muse-hub-deb
 	gives = muse-hub
@@ -6369,7 +6055,6 @@ pkgbase = muse-hub-deb
 	sha256sums = 0896fd96d72cb18102c2436794caffadd67382d5377b84468a514601847cc3e9
 
 pkgname = muse-hub-deb
-
 ---
 pkgbase = mutt-wizard
 	pkgver = 3.3.1
@@ -6396,7 +6081,6 @@ pkgbase = mutt-wizard
 	sha256sums = 4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53
 
 pkgname = mutt-wizard
-
 ---
 pkgbase = mymonero-app
 	gives = mymonero
@@ -6412,7 +6096,6 @@ pkgbase = mymonero-app
 	sha256sums = SKIP
 
 pkgname = mymonero-app
-
 ---
 pkgbase = nala-deb
 	gives = nala
@@ -6428,7 +6111,6 @@ pkgbase = nala-deb
 	sha256sums = dd418082b8da0771633f960fc513bb5bf5b7d1a8242e48446e9fb3ea9564c608
 
 pkgname = nala-deb
-
 ---
 pkgbase = nano
 	pkgver = 7.2
@@ -6450,7 +6132,6 @@ pkgbase = nano
 	sha256sums = 86f3442768bd2873cec693f83cdf80b4b444ad3cc14760b74361474fc87a4526
 
 pkgname = nano
-
 ---
 pkgbase = naps2-deb
 	gives = naps2
@@ -6467,7 +6148,6 @@ pkgbase = naps2-deb
 	sha256sums_amd64 = d27342288cc78ddea3542a98f32e4987636e5529684e90202ca5150ca27872da
 
 pkgname = naps2-deb
-
 ---
 pkgbase = nautilus-open-in-blackbox-git
 	gives = nautilus-open-in-blackbox
@@ -6478,7 +6158,6 @@ pkgbase = nautilus-open-in-blackbox-git
 	source = https://github.com/ppvan/nautilus-open-in-blackbox.git
 
 pkgname = nautilus-open-in-blackbox-git
-
 ---
 pkgbase = neofetch
 	pkgver = 7.1.0
@@ -6494,7 +6173,6 @@ pkgbase = neofetch
 	sha256sums = e610da6561f17c8161337d0c4115da310be576e8699fa2add64e14eeb3f3dcf1
 
 pkgname = neofetch
-
 ---
 pkgbase = neovide-bin
 	gives = neovide
@@ -6523,7 +6201,6 @@ pkgbase = neovide-bin
 	sha256sums = SKIP
 
 pkgname = neovide-bin
-
 ---
 pkgbase = neovim-app
 	gives = neovim
@@ -6541,7 +6218,6 @@ pkgbase = neovim-app
 	sha256sums = 6a021e9465fe3d3375e28c3e94c1c2c4f7d1a5a67e4a78cf52d18d77b1471390
 
 pkgname = neovim-app
-
 ---
 pkgbase = neovim-git
 	gives = neovim
@@ -6576,7 +6252,6 @@ pkgbase = neovim-git
 	source = https://github.com/neovim/neovim.git
 
 pkgname = neovim-git
-
 ---
 pkgbase = neovim
 	pkgver = 0.10.0
@@ -6605,7 +6280,6 @@ pkgbase = neovim
 	sha256sums = 372ea2584b0ea2a5a765844d95206bda9e4a57eaa1a2412a9a0726bab750f828
 
 pkgname = neovim
-
 ---
 pkgbase = nerd-fonts-cascadia-code
 	pkgver = 3.1.1
@@ -6617,7 +6291,6 @@ pkgbase = nerd-fonts-cascadia-code
 	sha256sums = 6f5f72a9df47c4d96cc427c89a12c0c538b5873aa46c9e2d3df3306b7429bef4
 
 pkgname = nerd-fonts-cascadia-code
-
 ---
 pkgbase = nerd-fonts-fira-code
 	pkgver = 3.1.1
@@ -6629,7 +6302,6 @@ pkgbase = nerd-fonts-fira-code
 	sha256sums = 1ad776cc5c186ff7ba1e2a05eea6701dfa57f7a1763e1db3422979301fb86209
 
 pkgname = nerd-fonts-fira-code
-
 ---
 pkgbase = nerd-fonts-hack
 	pkgver = 3.1.1
@@ -6641,7 +6313,6 @@ pkgbase = nerd-fonts-hack
 	sha256sums = 0d820cb2fedb86a15ca1354e03f26443face8b6aa190610263fad1125a409a16
 
 pkgname = nerd-fonts-hack
-
 ---
 pkgbase = nerd-fonts-jetbrains-mono
 	pkgver = 3.1.1
@@ -6653,7 +6324,6 @@ pkgbase = nerd-fonts-jetbrains-mono
 	sha256sums = 92225abcacf2fe500c59c5f16962528909a0c5caec8e2aa14a6546ff268a1db9
 
 pkgname = nerd-fonts-jetbrains-mono
-
 ---
 pkgbase = nodejs-lts-deb
 	gives = nodejs
@@ -6673,7 +6343,6 @@ pkgbase = nodejs-lts-deb
 	sha256sums = c253e9021faf026115d45ae8ea56f5c587483baebeab1394578c3cd1d44d9c64
 
 pkgname = nodejs-lts-deb
-
 ---
 pkgbase = nofetch
 	pkgver = 1.0
@@ -6683,7 +6352,6 @@ pkgbase = nofetch
 	sha256sums = 92e1d4b047b2f5c5ba99d2afa922a65004321cd7930027183ee8c57d393cbb78
 
 pkgname = nofetch
-
 ---
 pkgbase = noisetorch-bin
 	gives = noisetorch
@@ -6705,7 +6373,6 @@ pkgbase = noisetorch-bin
 	sha256sums = SKIP
 
 pkgname = noisetorch-bin
-
 ---
 pkgbase = nomachine-deb
 	gives = nomachine
@@ -6722,7 +6389,6 @@ pkgbase = nomachine-deb
 	source_amd64 = https://download.nomachine.com/download/8.4/Linux/nomachine_8.4.2_1_amd64.deb
 
 pkgname = nomachine-deb
-
 ---
 pkgbase = nordlayer-deb
 	gives = nordlayer
@@ -6735,7 +6401,6 @@ pkgbase = nordlayer-deb
 	sha256sums = 650f813e14b451df5595ae410bd1e726682e1f8ffd1141596071c47589c96b32
 
 pkgname = nordlayer-deb
-
 ---
 pkgbase = nordvpn-deb
 	gives = nordvpn
@@ -6749,7 +6414,6 @@ pkgbase = nordvpn-deb
 	sha256sums = 079b3643c72aa52ee521dd16b2828f496c33c07ecc5252dc6499ba19dd312835
 
 pkgname = nordvpn-deb
-
 ---
 pkgbase = notion-app-deb
 	gives = notion-app
@@ -6766,7 +6430,6 @@ pkgbase = notion-app-deb
 	sha256sums = 7246fb0485cc6ecd5f5381d0568b29d77afff3628ee42a486f39d5af8728ff4e
 
 pkgname = notion-app-deb
-
 ---
 pkgbase = notion-app-enhanced-deb
 	gives = notion-app-enhanced
@@ -6783,7 +6446,6 @@ pkgbase = notion-app-enhanced-deb
 	sha256sums = b4c2b63eff8c93201ce6ddfef9b0cbd53a3fb7cec9fcd01e3a877d4a9c943bfc
 
 pkgname = notion-app-enhanced-deb
-
 ---
 pkgbase = notion-git
 	gives = notion-git
@@ -6804,7 +6466,6 @@ pkgbase = notion-git
 	source = https://github.com/raboof/notion.git
 
 pkgname = notion-git
-
 ---
 pkgbase = nowpm
 	pkgver = 1.0
@@ -6815,7 +6476,6 @@ pkgbase = nowpm
 	sha256sums = 293e22e3ccdffd3e5db70ff025f66369d6550a1ea7fc18af538bc8d83f91b790
 
 pkgname = nowpm
-
 ---
 pkgbase = nu-tongues-bin
 	gives = nu-tongues
@@ -6833,7 +6493,6 @@ pkgbase = nu-tongues-bin
 	sha256sums_arm64 = 29d3a06c6188b66738dcbecc9efaf2ce0708e17243e298adcd5710aac2a356e8
 
 pkgname = nu-tongues-bin
-
 ---
 pkgbase = nuclear-deb
 	gives = nuclear
@@ -6847,7 +6506,6 @@ pkgbase = nuclear-deb
 	sha256sums = 10b3d9fafbe07ad9feb89747c6cf06e3b2288f021d197f2880042434774e8008
 
 pkgname = nuclear-deb
-
 ---
 pkgbase = nuclei-bin
 	gives = nuclei
@@ -6863,7 +6521,6 @@ pkgbase = nuclei-bin
 	sha256sums = 898399d8d8dfc0aee2cb7d4955912ad0c428dcfa72b4c29fe4fd93adc84df3cc
 
 pkgname = nuclei-bin
-
 ---
 pkgbase = nushell-bin
 	pkgver = 0.94.2
@@ -6882,7 +6539,6 @@ pkgbase = nushell-bin
 	sha256sums_amd64 = afe8f0e304a3e1299823b84a4ac5796f0e40dc8face9e0f583bdc2ed3180df80
 
 pkgname = nushell-bin
-
 ---
 pkgbase = obquit-git
 	gives = obquit
@@ -6897,7 +6553,6 @@ pkgbase = obquit-git
 	source = https://github.com/dglava/obquit.git
 
 pkgname = obquit-git
-
 ---
 pkgbase = obs-backgroundremoval-deb
 	gives = obs-backgroundremoval
@@ -6913,7 +6568,6 @@ pkgbase = obs-backgroundremoval-deb
 	sha256sums = 3db40f02f278dd567b553bc451d2e4127024c0de8fca4423cbb892e9b329f551
 
 pkgname = obs-backgroundremoval-deb
-
 ---
 pkgbase = obs-backgroundremoval-git
 	gives = obs-backgroundremoval
@@ -6938,7 +6592,6 @@ pkgbase = obs-backgroundremoval-git
 	source = https://github.com/royshil/obs-backgroundremoval.git
 
 pkgname = obs-backgroundremoval-git
-
 ---
 pkgbase = obs-backgroundremoval
 	pkgver = 1.1.12
@@ -6964,7 +6617,6 @@ pkgbase = obs-backgroundremoval
 	sha256sums = 50687434e49c005a881977ea46877c00da974a10810db2ee23b0b3fbeed7d6aa
 
 pkgname = obs-backgroundremoval
-
 ---
 pkgbase = obs-ndi-deb
 	gives = obs-ndi
@@ -6975,7 +6627,6 @@ pkgbase = obs-ndi-deb
 	sha256sums = e91a27370dcbee0879fb27ffec8dba149825f47909a92e31a001e87e64e7329b
 
 pkgname = obs-ndi-deb
-
 ---
 pkgbase = obsidian-deb
 	gives = obsidian
@@ -6988,7 +6639,6 @@ pkgbase = obsidian-deb
 	sha256sums = 15053618d0a4c3230dcd73cf798fe4a52f670b1b2f740b5e799de2e03c777cb2
 
 pkgname = obsidian-deb
-
 ---
 pkgbase = oh-my-posh-git
 	gives = oh-my-posh
@@ -7003,7 +6653,6 @@ pkgbase = oh-my-posh-git
 	source = https://github.com/JanDeDobbeleer/oh-my-posh.git
 
 pkgname = oh-my-posh-git
-
 ---
 pkgbase = oil
 	gives = oil
@@ -7019,7 +6668,6 @@ pkgbase = oil
 	sha256sums = 42b85f52bbba4a3bb8e16f23fc394c4302bcfd9638f067f01c37d23f2ee449a0
 
 pkgname = oil
-
 ---
 pkgbase = onefetch-bin
 	gives = onefetch
@@ -7029,7 +6677,6 @@ pkgbase = onefetch-bin
 	sha256sums = 414d166e55e045a18d3a908cbe719cca08dabe5bfde45fa8aefce71099305a16
 
 pkgname = onefetch-bin
-
 ---
 pkgbase = onlyoffice-desktopeditors-deb
 	gives = onlyoffice-desktopeditors
@@ -7043,7 +6690,6 @@ pkgbase = onlyoffice-desktopeditors-deb
 	sha256sums = 5978cf746c3074ed77becc95613ba82e031e76c0034bc68ebd92fe73071c0564
 
 pkgname = onlyoffice-desktopeditors-deb
-
 ---
 pkgbase = onnxruntime-bin
 	gives = onnxruntime
@@ -7060,7 +6706,6 @@ pkgbase = onnxruntime-bin
 	sha256sums = 89b153af88746665909c758a06797175ae366280cbf25502c41eb5955f9a555e
 
 pkgname = onnxruntime-bin
-
 ---
 pkgbase = onnxruntime-gpu-bin
 	gives = onnxruntime-gpu
@@ -7075,7 +6720,6 @@ pkgbase = onnxruntime-gpu-bin
 	sha256sums = 613c53745ea4960ed368f6b3ab673558bb8561c84a8fa781b4ea7fb4a4340be4
 
 pkgname = onnxruntime-gpu-bin
-
 ---
 pkgbase = opendoas-git
 	gives = opendoas
@@ -7089,7 +6733,6 @@ pkgbase = opendoas-git
 	source = https://github.com/Duncaen/OpenDoas.git
 
 pkgname = opendoas-git
-
 ---
 pkgbase = opensnitch-deb
 	gives = opensnitch
@@ -7102,7 +6745,6 @@ pkgbase = opensnitch-deb
 	sha256sums = edc9dad5f2e5fbb83c0cdc4a672d74ef3ab8cbfcc30ff1f9e26294cbc9ee0e04
 
 pkgname = opensnitch-deb
-
 ---
 pkgbase = opensnitch-ui-deb
 	gives = python3-opensnitch-ui
@@ -7116,7 +6758,6 @@ pkgbase = opensnitch-ui-deb
 	sha256sums = 529f31d24bc162fc19930e6be0ddba16f4731dfc00d6ebab3612d22790dd8b84
 
 pkgname = opensnitch-ui-deb
-
 ---
 pkgbase = opentoonz
 	gives = opentoonz
@@ -7172,7 +6813,6 @@ pkgbase = opentoonz
 	sha256sums = d0daf60d06510efe15d0db3f9eed0162499ed58061504dca27892c2b9ea5f22d
 
 pkgname = opentoonz
-
 ---
 pkgbase = opera-beta-deb
 	gives = opera-beta
@@ -7184,7 +6824,6 @@ pkgbase = opera-beta-deb
 	sha256sums = ad4a113c3b011cb6ffe015a65f36864e11b78d50bbe0dc2836ba291ac76bff18
 
 pkgname = opera-beta-deb
-
 ---
 pkgbase = opera-deb
 	gives = opera-stable
@@ -7198,7 +6837,6 @@ pkgbase = opera-deb
 	sha256sums = 2539ca8caf9c70c01e7ff559b83a564be1450eaea5a257a7d2995c91c3c0fbdc
 
 pkgname = opera-deb
-
 ---
 pkgbase = opera-developer-deb
 	gives = opera-developer
@@ -7212,7 +6850,6 @@ pkgbase = opera-developer-deb
 	sha256sums = 06d658eb9ba9a28c34f329942257a4a5da0d19df2002e587889ae0f4542548b7
 
 pkgname = opera-developer-deb
-
 ---
 pkgbase = os-installer-git
 	gives = os-installer
@@ -7244,7 +6881,6 @@ pkgbase = os-installer-git
 	source = https://gitlab.gnome.org/p3732/os-installer.git
 
 pkgname = os-installer-git
-
 ---
 pkgbase = owofetch
 	gives = owofetch
@@ -7259,7 +6895,6 @@ pkgbase = owofetch
 	sha256sums = c4f8cd96751ceb932d75b98ad38c19ce5b3aad0aa274aeb5eb11e0aa89a6bd13
 
 pkgname = owofetch
-
 ---
 pkgbase = pacget-git
 	gives = pacget
@@ -7273,7 +6908,6 @@ pkgbase = pacget-git
 	source = https://gitlab.com/Erik.Lundstedt/pacget.git
 
 pkgname = pacget-git
-
 ---
 pkgbase = paconvert-git
 	gives = paconvert
@@ -7287,7 +6921,6 @@ pkgbase = paconvert-git
 	source = https://github.com/pacstall/paconvert.git
 
 pkgname = paconvert-git
-
 ---
 pkgbase = pacstall-gui-git
 	gives = pacstall-gui
@@ -7305,7 +6938,6 @@ pkgbase = pacstall-gui-git
 	source = https://github.com/cat-master21/pacstall-gui.git
 
 pkgname = pacstall-gui-git
-
 ---
 pkgbase = pacstall-qa-git
 	gives = pacstall-qa
@@ -7317,7 +6949,6 @@ pkgbase = pacstall-qa-git
 	source = git+https://github.com/pacstall/pacstall-qa
 
 pkgname = pacstall-qa-git
-
 ---
 pkgbase = pacup-git
 	gives = pacup
@@ -7340,7 +6971,6 @@ pkgbase = pacup-git
 	source = https://github.com/pacstall/pacup.git
 
 pkgname = pacup-git
-
 ---
 pkgbase = pacup
 	pkgver = 3.3.2
@@ -7363,7 +6993,6 @@ pkgbase = pacup
 	sha256sums = 1cc57e8e3af68b59c95a7e69182a03389fa9954a73409660c0d52afc1f954abc
 
 pkgname = pacup
-
 ---
 pkgbase = panagement
 	pkgver = 2.4
@@ -7373,7 +7002,6 @@ pkgbase = panagement
 	sha256sums = d8544b8941fcc9049b6743c99799b380bd636c6f49b10ed08204719de866f1a1
 
 pkgname = panagement
-
 ---
 pkgbase = pap
 	pkgver = 0.15.0
@@ -7386,7 +7014,6 @@ pkgbase = pap
 	sha256sums = 743fd7d6d8f6e5fcd198ee75fcc54fd77ce272c77009cfa2c28c0eb6aec5121c
 
 pkgname = pap
-
 ---
 pkgbase = paper-icon-theme
 	pkgver = 1.5.0
@@ -7398,7 +7025,6 @@ pkgbase = paper-icon-theme
 	sha256sums = 62f21dfe95ece481e5c635480f32347f1ad27ea66b2ef0526fe799090b298ece
 
 pkgname = paper-icon-theme
-
 ---
 pkgbase = papirus-folders
 	pkgver = 1.13.1
@@ -7410,7 +7036,6 @@ pkgbase = papirus-folders
 	sha256sums = df38d1a86d4aaad575d1f93f1fc541d538409d985fa418d5eac46a77c18cb028
 
 pkgname = papirus-folders
-
 ---
 pkgbase = papirus-icon-theme
 	gives = papirus-icon-theme
@@ -7427,7 +7052,6 @@ pkgbase = papirus-icon-theme
 	sha256sums = 9dde683d6444ed2d3b3dacf8579b04d527ce278cef575d606f690c7b31c7aebd
 
 pkgname = papirus-icon-theme
-
 ---
 pkgbase = parsec-deb
 	gives = parsec
@@ -7437,7 +7061,6 @@ pkgbase = parsec-deb
 	source = https://builds.parsec.app/package/parsec-linux.deb
 
 pkgname = parsec-deb
-
 ---
 pkgbase = pb-git
 	pkgver = 2022.11.03
@@ -7446,7 +7069,6 @@ pkgbase = pb-git
 	source = https://git.envs.net/envs/pb.git
 
 pkgname = pb-git
-
 ---
 pkgbase = pdf-mix-tool-git
 	gives = pdf-mix-tool
@@ -7470,7 +7092,6 @@ pkgbase = pdf-mix-tool-git
 	source = https://gitlab.com/scarpetta/pdfmixtool.git
 
 pkgname = pdf-mix-tool-git
-
 ---
 pkgbase = pdfmm-git
 	gives = pdfmm
@@ -7485,7 +7106,6 @@ pkgbase = pdfmm-git
 	sha256sums = 3a1d5046490cbeb1f3a3eae34d66ea0e714a19a01f15dc43cb1d31fbb58d7a51
 
 pkgname = pdfmm-git
-
 ---
 pkgbase = pfetch-bin
 	gives = pfetch
@@ -7502,7 +7122,6 @@ pkgbase = pfetch-bin
 	sha256sums = ec85100a912c0bdd06a82a9647d19a5c6d1d51c3a262d60b9ac8f17570fbfb39
 
 pkgname = pfetch-bin
-
 ---
 pkgbase = pgmigrate
 	pkgver = 1.0.7
@@ -7520,7 +7139,6 @@ pkgbase = pgmigrate
 	sha256sums = ba39ee6198b1132a5306c3cce79d16644c507d7be999fbcc9c039cd3307693f6
 
 pkgname = pgmigrate
-
 ---
 pkgbase = picom
 	pkgver = 11.2
@@ -7588,7 +7206,6 @@ pkgbase = picom
 	sha256sums = 1c1063936faf09ed9bba726e7737a562564b7a5f8cdef79d48fcdaf3669a4df4
 
 pkgname = picom
-
 ---
 pkgbase = pipes.sh-bin
 	gives = pipes.sh
@@ -7602,7 +7219,6 @@ pkgbase = pipes.sh-bin
 	sha256sums = 532976dd8dc2d98330c45a8bcb6d7dc19e0b0e30bba8872dcce352361655a426
 
 pkgname = pipes.sh-bin
-
 ---
 pkgbase = pipewire
 	pkgver = 0.3.65
@@ -7636,7 +7252,6 @@ pkgbase = pipewire
 	sha256sums = f5fbe0028b56a9e9cc6c9fbb4e3e73d108bb818895f6fed3cd62d1a1b6fc4c30
 
 pkgname = pipewire
-
 ---
 pkgbase = planner-git
 	pkgver = 4.1
@@ -7677,7 +7292,6 @@ pkgbase = planner-git
 	source = https://github.com/alainm23/planner.git
 
 pkgname = planner-git
-
 ---
 pkgbase = plexmediaserver-deb
 	gives = plexmediaserver
@@ -7694,7 +7308,6 @@ pkgbase = plexmediaserver-deb
 	sha256sums_arm64 = abc3d990f19216711a7ae7562c506aded2fe74c7ba6bc616f92c8cf89c0da600
 
 pkgname = plexmediaserver-deb
-
 ---
 pkgbase = polybar
 	gives = polybar
@@ -7731,7 +7344,6 @@ pkgbase = polybar
 	sha256sums = 5de6ad385ba09dc453a4e5ec7054749a4882b5b21a62c17ae40bf7c90613ff0f
 
 pkgname = polybar
-
 ---
 pkgbase = pomatez-deb
 	gives = pomatez
@@ -7754,7 +7366,6 @@ pkgbase = pomatez-deb
 	sha256sums = ae0572ff1816463dcca1d7e2a0bde7ba3b06eebfde5e374b9b2eb34ca4d37ae7
 
 pkgname = pomatez-deb
-
 ---
 pkgbase = popcorn-time-deb
 	gives = popcorn-time
@@ -7767,7 +7378,6 @@ pkgbase = popcorn-time-deb
 	sha256sums = 3167d0649255108e6a0ece401c4398bb0bf890860a25f54be46da6f3490bcd95
 
 pkgname = popcorn-time-deb
-
 ---
 pkgbase = popsicle
 	gives = popsicle
@@ -7781,7 +7391,6 @@ pkgbase = popsicle
 	sha256sums = 4dd0f92f46d0befabd56c0cea50829b4db6d2ae8a8673e3d31c7e4228b02248b
 
 pkgname = popsicle
-
 ---
 pkgbase = postman-bin
 	gives = postman
@@ -7802,7 +7411,6 @@ pkgbase = postman-bin
 	sha256sums = SKIP
 
 pkgname = postman-bin
-
 ---
 pkgbase = powertop-git
 	gives = powertop
@@ -7827,7 +7435,6 @@ pkgbase = powertop-git
 	source = https://github.com/fenrus75/powertop.git
 
 pkgname = powertop-git
-
 ---
 pkgbase = prettier
 	pkgver = 3.2.5
@@ -7840,7 +7447,6 @@ pkgbase = prettier
 	sha256sums = a9d68ae56e5b0fea5c9d8e68b67104dae8445db21e1d24fb3522f3f4c0fb271d
 
 pkgname = prettier
-
 ---
 pkgbase = prismlauncher-git
 	gives = prismlauncher
@@ -7869,7 +7475,6 @@ pkgbase = prismlauncher-git
 	makedepends_jammy = libqt6networkauth6-dev
 
 pkgname = prismlauncher-git
-
 ---
 pkgbase = proton-python-client
 	pkgver = 0.7.1
@@ -7886,7 +7491,6 @@ pkgbase = proton-python-client
 	sha256sums = 88d2546a922d9053988b5e1863bf6cf965e97b4c643cd879f16bb3f0b5f02b5e
 
 pkgname = proton-python-client
-
 ---
 pkgbase = protonmail-bridge-deb
 	gives = protonmail-bridge
@@ -7901,7 +7505,6 @@ pkgbase = protonmail-bridge-deb
 	sha256sums = 947da267d8aea2bbe007ae4a02f6edb431c41c16c44b0898146b4d990fca443c
 
 pkgname = protonmail-bridge-deb
-
 ---
 pkgbase = protonup-qt-app
 	gives = net.davidotek.pupgui2
@@ -7915,7 +7518,6 @@ pkgbase = protonup-qt-app
 	sha256sums = SKIP
 
 pkgname = protonup-qt-app
-
 ---
 pkgbase = protonvpn-cli
 	pkgver = 3.13.0
@@ -7932,7 +7534,6 @@ pkgbase = protonvpn-cli
 	sha256sums = d295d6c899638a88d615e2cacb078ecf2aee8c771ebb087c9edb43aea25aacd9
 
 pkgname = protonvpn-cli
-
 ---
 pkgbase = protonvpn-gui
 	gives = protonvpn
@@ -7954,7 +7555,6 @@ pkgbase = protonvpn-gui
 	sha256sums = 708dd5aa04a12963361a7a13188c65938b94adc268608e341faa2985312e7f94
 
 pkgname = protonvpn-gui
-
 ---
 pkgbase = protonvpn-nm-lib
 	pkgver = 3.8.0
@@ -7980,7 +7580,6 @@ pkgbase = protonvpn-nm-lib
 	sha256sums = c8193defd5722a460b4628c54fbc55556caa525e70476a7e15fccf06f155cd97
 
 pkgname = protonvpn-nm-lib
-
 ---
 pkgbase = pulsar-deb
 	gives = pulsar
@@ -7993,7 +7592,6 @@ pkgbase = pulsar-deb
 	sha256sums = b245796f9e873667fdd15f202db9156deb56867745d88e096a1995aa7f60d9d1
 
 pkgname = pulsar-deb
-
 ---
 pkgbase = pycharm-community-bin
 	gives = pycharm-community
@@ -8007,7 +7605,6 @@ pkgbase = pycharm-community-bin
 	sha256sums = 0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04
 
 pkgname = pycharm-community-bin
-
 ---
 pkgbase = python3-anyascii
 	pkgver = 0.3.2
@@ -8025,7 +7622,6 @@ pkgbase = python3-anyascii
 	b2sums = 9b9440d26872404487ff791dda5e7695f5f8504743d750c89b80d2a77595decfb2f1389b6636af8723a358b0e56988f074acb403d7860539c522cfa4b5b3f06a
 
 pkgname = python3-anyascii
-
 ---
 pkgbase = python3-flit-core
 	pkgver = 3.9.0
@@ -8042,7 +7638,6 @@ pkgbase = python3-flit-core
 	b2sums = bae3baf324016e25f8422a79c60b91c3a6f3422ca57b20c3585444c912dfaca23b73e147912d503b9b78f69bbb7db861ab926b29ff081c5c75ada155e914c4a3
 
 pkgname = python3-flit-core
-
 ---
 pkgbase = python3-imdbpy-deb
 	gives = python3-imdbpy
@@ -8055,7 +7650,6 @@ pkgbase = python3-imdbpy-deb
 	sha256sums = b093fa1a632d596c4dfcc48a2b6a5149753348b3ca028cd8c0f4c2e1e5ffe80e
 
 pkgname = python3-imdbpy-deb
-
 ---
 pkgbase = python3-levenshtein-deb
 	gives = python3-levenshtein
@@ -8072,7 +7666,6 @@ pkgbase = python3-levenshtein-deb
 	sha256sums_arm64 = 2ec9244df249c70f844823bcd24548c9a4f4897f74198dd90118a0f33055638d
 
 pkgname = python3-levenshtein-deb
-
 ---
 pkgbase = python3-material-color-utilities
 	pkgver = 0.1.5
@@ -8090,7 +7683,6 @@ pkgbase = python3-material-color-utilities
 	b2sums = cf444831fec962caae3a1871b8331dcdd055f186754631185140842e49e1dc5526c5aedc021d28cd5e192e6f593774abce34e4a2853049e9ded2cf3ca9b79e3f
 
 pkgname = python3-material-color-utilities
-
 ---
 pkgbase = python3-zombie-imp
 	pkgver = 0.0.2
@@ -8112,7 +7704,6 @@ pkgbase = python3-zombie-imp
 	sha512sums = 25fcb8633dab3f5b8546ec0bfaf82e0c6a17373ec4c5d87219d1e93aeaac8deeae2b68c827edbd2b2aecb8a900a516d0819493c241e64a2217b8626a8a0155af
 
 pkgname = python3-zombie-imp
-
 ---
 pkgbase = qogir-gtk-theme-bin
 	gives = qogir-gtk-theme
@@ -8132,7 +7723,6 @@ pkgbase = qogir-gtk-theme-bin
 	sha256sums = 211d2d7e027fe595e7512ca346b63a9314ee59e3ddee875bc1c06aeef9e5b9bb
 
 pkgname = qogir-gtk-theme-bin
-
 ---
 pkgbase = qogir-icon-theme-bin
 	gives = qogir-icon-theme
@@ -8148,7 +7738,6 @@ pkgbase = qogir-icon-theme-bin
 	sha256sums = 7747f8a139e01a075a94b832d95a53a98b98784b06e866dd8259bb0a38404480
 
 pkgname = qogir-icon-theme-bin
-
 ---
 pkgbase = qt6pas
 	gives = libqt6pas-dev
@@ -8166,7 +7755,6 @@ pkgbase = qt6pas
 	sha256sums = 053ebb9d703162617a6c5bbd26e78aacb45e439d9a9964aa3197eaada2aa8c2e
 
 pkgname = qt6pas
-
 ---
 pkgbase = qtile-extras-git
 	gives = qtile-extras
@@ -8179,7 +7767,6 @@ pkgbase = qtile-extras-git
 	source = https://github.com/elParaguayo/qtile-extras.git
 
 pkgname = qtile-extras-git
-
 ---
 pkgbase = qtile-git
 	gives = qtile
@@ -8200,7 +7787,6 @@ pkgbase = qtile-git
 	source = https://github.com/qtile/qtile.git
 
 pkgname = qtile-git
-
 ---
 pkgbase = quarto-deb
 	gives = quarto
@@ -8212,7 +7798,6 @@ pkgbase = quarto-deb
 	sha256sums = 667ea45f963949f8c13b75c63dd30734b7f5f0ec49fd5991c5824a753066fcdd
 
 pkgname = quarto-deb
-
 ---
 pkgbase = quintom-cursor-theme-git
 	gives = quintom-cursor-theme
@@ -8223,7 +7808,6 @@ pkgbase = quintom-cursor-theme-git
 	source = https://gitlab.com/Burning_Cube/quintom-cursor-theme.git
 
 pkgname = quintom-cursor-theme-git
-
 ---
 pkgbase = rambox-deb
 	gives = rambox
@@ -8251,7 +7835,6 @@ pkgbase = rambox-deb
 	sha256sums = 2fc00888e9dcc6baed57032b2d14d0e9fbff67dd3cd47162106e95e6b8d4fd7d
 
 pkgname = rambox-deb
-
 ---
 pkgbase = raspi-config-deb
 	gives = raspi-config
@@ -8265,7 +7848,6 @@ pkgbase = raspi-config-deb
 	sha256sums = 8e328e0886b58023b03b8cf799a77180650c318df075605684103735c90a747f
 
 pkgname = raspi-config-deb
-
 ---
 pkgbase = realvnc-vnc-viewer-deb
 	gives = realvnc-vnc-viewer
@@ -8280,7 +7862,6 @@ pkgbase = realvnc-vnc-viewer-deb
 	sha256sums = 394ad2c5a87f7dd7a492938b64403ff2efc94a446d505ca506dca04fdb572f17
 
 pkgname = realvnc-vnc-viewer-deb
-
 ---
 pkgbase = renegate
 	pkgver = 1.2
@@ -8290,7 +7871,6 @@ pkgbase = renegate
 	sha256sums = d7119fddfa44751a5c346e345de7c494a0ea11fcbae2aba65f1b66a8f414ecef
 
 pkgname = renegate
-
 ---
 pkgbase = reshade-shaders-git
 	gives = reshade-shaders-git
@@ -8304,7 +7884,6 @@ pkgbase = reshade-shaders-git
 	source = https://github.com/crosire/reshade-shaders.git
 
 pkgname = reshade-shaders-git
-
 ---
 pkgbase = restic-bin
 	gives = restic
@@ -8337,7 +7916,6 @@ pkgbase = restic-bin
 	sha256sums_s390x = b168ad78533011155648042d2900398596b0b128d12aeab2314424eb8be06794
 
 pkgname = restic-bin
-
 ---
 pkgbase = resticprofile-bin
 	gives = resticprofile
@@ -8372,7 +7950,6 @@ pkgbase = resticprofile-bin
 	sha256sums_s390x = 54aea4a1294c7554078282824ebfe8a602852a19fa9445d510e90d1e1a233612
 
 pkgname = resticprofile-bin
-
 ---
 pkgbase = rhino-core
 	pkgver = 2024.1
@@ -8395,7 +7972,6 @@ pkgbase = rhino-core
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
 pkgname = rhino-core
-
 ---
 pkgbase = rhino-docker-builder-git
 	gives = rhino-docker-builder
@@ -8405,7 +7981,6 @@ pkgbase = rhino-docker-builder-git
 	source = https://github.com/rhino-linux/docker.git
 
 pkgname = rhino-docker-builder-git
-
 ---
 pkgbase = rhino-kvantum-theme-git
 	gives = rhino-kvantum-theme
@@ -8416,7 +7991,6 @@ pkgbase = rhino-kvantum-theme-git
 	source = https://github.com/rhino-linux/KvRhino.git
 
 pkgname = rhino-kvantum-theme-git
-
 ---
 pkgbase = rhino-lightdm-theme-git
 	gives = rhino-lightdm-theme
@@ -8426,7 +8000,6 @@ pkgbase = rhino-lightdm-theme-git
 	source = https://github.com/rhino-linux/lightdm.git
 
 pkgname = rhino-lightdm-theme-git
-
 ---
 pkgbase = rhino-neofetch-git
 	gives = rhino-neofetch
@@ -8440,7 +8013,6 @@ pkgbase = rhino-neofetch-git
 	source = https://github.com/rhino-linux/neofetch.git
 
 pkgname = rhino-neofetch-git
-
 ---
 pkgbase = rhino-pine-core
 	pkgver = 2024.1
@@ -8466,7 +8038,6 @@ pkgbase = rhino-pine-core
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
 pkgname = rhino-pine-core
-
 ---
 pkgbase = rhino-pkg-git
 	gives = rhino-pkg
@@ -8480,7 +8051,6 @@ pkgbase = rhino-pkg-git
 	source = https://github.com/rhino-linux/rhino-pkg.git
 
 pkgname = rhino-pkg-git
-
 ---
 pkgbase = rhino-plymouth-theme-git
 	gives = rhino-plymouth-theme
@@ -8490,7 +8060,6 @@ pkgbase = rhino-plymouth-theme-git
 	source = https://github.com/rhino-linux/plymouth.git
 
 pkgname = rhino-plymouth-theme-git
-
 ---
 pkgbase = rhino-server-core
 	pkgver = 2024.1
@@ -8508,7 +8077,6 @@ pkgbase = rhino-server-core
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
 pkgname = rhino-server-core
-
 ---
 pkgbase = rhino-setup-bin
 	gives = rhino-setup
@@ -8530,7 +8098,6 @@ pkgbase = rhino-setup-bin
 	sha256sums_amd64 = ebc2bb8598f0eaa319b814f0fe41de994b018e11a8e1445201ca091f3cb69163
 
 pkgname = rhino-setup-bin
-
 ---
 pkgbase = rhino-setup-git
 	gives = rhino-setup
@@ -8555,7 +8122,6 @@ pkgbase = rhino-setup-git
 	source = https://github.com/rhino-linux/rhino-setup.git
 
 pkgname = rhino-setup-git
-
 ---
 pkgbase = rhino-system-git
 	gives = rhino-system
@@ -8594,7 +8160,6 @@ pkgbase = rhino-system-git
 	source = https://github.com/rhino-linux/rhino-system.git
 
 pkgname = rhino-system-git
-
 ---
 pkgbase = rhino-ubxi-core
 	pkgver = 2024.1
@@ -8616,7 +8181,6 @@ pkgbase = rhino-ubxi-core
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
 pkgname = rhino-ubxi-core
-
 ---
 pkgbase = rio-wayland-deb
 	gives = rio
@@ -8630,7 +8194,6 @@ pkgbase = rio-wayland-deb
 	sha256sums = 754ec290a8ec3a3ec130ab4aa5b1ad9d2173620e0d7a228694a91154af9c8c2b
 
 pkgname = rio-wayland-deb
-
 ---
 pkgbase = rio-x11-deb
 	gives = rio
@@ -8644,7 +8207,6 @@ pkgbase = rio-x11-deb
 	sha256sums = 754ec290a8ec3a3ec130ab4aa5b1ad9d2173620e0d7a228694a91154af9c8c2b
 
 pkgname = rio-x11-deb
-
 ---
 pkgbase = rosary-deb
 	gives = rosary
@@ -8672,7 +8234,6 @@ pkgbase = rosary-deb
 	sha256sums_armhf = 8a8140bf7dcea4852a265b55bca332bb904d249627521b1bd1a985b383fd8307
 
 pkgname = rosary-deb
-
 ---
 pkgbase = rpcs3-app
 	gives = rpcs3
@@ -8684,7 +8245,6 @@ pkgbase = rpcs3-app
 	sha256sums = 470a2998e2f8e545aa3975043983794dcd1a1f07464899b156c9cb32b2dfe2b2
 
 pkgname = rpcs3-app
-
 ---
 pkgbase = rsbbi-git
 	gives = rsbbi
@@ -8701,7 +8261,6 @@ pkgbase = rsbbi-git
 	source = https://github.com/Elsie19/rsbbi.git
 
 pkgname = rsbbi-git
-
 ---
 pkgbase = rstudio-deb
 	gives = rstudio
@@ -8714,7 +8273,6 @@ pkgbase = rstudio-deb
 	sha256sums = 75542cc24c59404f8d62815bc0e31b43032b5032e651fa9f618dbcdca8aa7cac
 
 pkgname = rstudio-deb
-
 ---
 pkgbase = rust-motd-deb
 	gives = rust-motd
@@ -8728,7 +8286,6 @@ pkgbase = rust-motd-deb
 	sha256sums = e2abcb97de92bee14cdc85e8dec46af17c15fdb03cc3a4b3d6094b1c2a079670
 
 pkgname = rust-motd-deb
-
 ---
 pkgbase = rustdesk-deb
 	gives = rustdesk
@@ -8767,7 +8324,6 @@ pkgbase = rustdesk-deb
 	sha256sums_armhf = c29c9a9b1b037b61d46168500c333bf9cb2c15be501aefbde5bffd7d8a9d99e3
 
 pkgname = rustdesk-deb
-
 ---
 pkgbase = schildichat-deb
 	gives = schildichat-desktop
@@ -8780,7 +8336,6 @@ pkgbase = schildichat-deb
 	sha256sums = ad9bb5cee3c68d9c4d1bf102a50ddaa3dfd2e1005ff1e009e78c82edececc4bc
 
 pkgname = schildichat-deb
-
 ---
 pkgbase = scrcpy
 	pkgver = 2.4
@@ -8810,7 +8365,6 @@ pkgbase = scrcpy
 	sha256sums = 93c272b7438605c055e127f7444064ed78fa9ca49f81156777fd201e79ce7ba3
 
 pkgname = scrcpy
-
 ---
 pkgbase = sed
 	pkgver = 4.8
@@ -8825,7 +8379,6 @@ pkgbase = sed
 	sha256sums = f79b0cfea71b37a8eeec8490db6c5f7ae7719c35587f21edb0617f370eeff633
 
 pkgname = sed
-
 ---
 pkgbase = setconf
 	pkgver = 0.7.7
@@ -8838,7 +8391,6 @@ pkgbase = setconf
 	sha256sums = 19315574540b3181fec31a4059b9e058381e0192317f153d181e7e7e2aa84d86
 
 pkgname = setconf
-
 ---
 pkgbase = shell-color-scripts
 	pkgver = 3.0
@@ -8848,7 +8400,6 @@ pkgbase = shell-color-scripts
 	sha256sums = 31d94efd426d3d62459e2056cb4ea5ba051f77f46557a3cc0ad7b2ffdd48bf84
 
 pkgname = shell-color-scripts
-
 ---
 pkgbase = shellcheck-bin
 	gives = shellcheck
@@ -8866,7 +8417,6 @@ pkgbase = shellcheck-bin
 	sha256sums = 700324c6dd0ebea0117591c6cc9d7350d9c7c5c287acbad7630fa17b1d4d9e2f
 
 pkgname = shellcheck-bin
-
 ---
 pkgbase = shellharden
 	gives = shellharden
@@ -8885,7 +8435,6 @@ pkgbase = shellharden
 	sha256sums = d6679f7a2a3e96da923b2f04339a966202a24172f1bbc58e56e7982eca2a76dc
 
 pkgname = shellharden
-
 ---
 pkgbase = shfmt-bin
 	gives = shfmt
@@ -8903,7 +8452,6 @@ pkgbase = shfmt-bin
 	sha256sums = 0264c424278b18e22453fe523ec01a19805ce3b8ebf18eaf3aadc1edc23f42e3
 
 pkgname = shfmt-bin
-
 ---
 pkgbase = sidequest-bin
 	gives = sidequest
@@ -8921,7 +8469,6 @@ pkgbase = sidequest-bin
 	sha256sums = SKIP
 
 pkgname = sidequest-bin
-
 ---
 pkgbase = signal-desktop-beta-deb
 	gives = signal-desktop-beta
@@ -8936,7 +8483,6 @@ pkgbase = signal-desktop-beta-deb
 	sha256sums = 69e246c01a00b3a883a558c1ce572ceeaf49be7fe1dca2dc095de6d728cc4cd4
 
 pkgname = signal-desktop-beta-deb
-
 ---
 pkgbase = signal-desktop-deb
 	gives = signal-desktop
@@ -8951,7 +8497,6 @@ pkgbase = signal-desktop-deb
 	sha256sums = 44e27669063434f643d86723750d4ec5b797282fbad27efdd4dc6cf770b227f6
 
 pkgname = signal-desktop-deb
-
 ---
 pkgbase = simplex-desktop-app
 	gives = simplex-desktop
@@ -8966,7 +8511,6 @@ pkgbase = simplex-desktop-app
 	sha512sums = 4183f6018dc2f08f82f3dd9ac6d6834cce13919c201d38ba792074b965de9c5b5071cdee37fb560cdd3479d26d0859a08a96ad61d358a6d0b0d2a4148b4355bc
 
 pkgname = simplex-desktop-app
-
 ---
 pkgbase = slack-deb
 	gives = slack-desktop
@@ -8984,7 +8528,6 @@ pkgbase = slack-deb
 	sha256sums = 4f5b1eb378d5a58a364f9dc70df5c0ccd9be0cedbab42df7193ddfbb1d2a021a
 
 pkgname = slack-deb
-
 ---
 pkgbase = sleepy-launcher-bin
 	gives = sleepy-launcher
@@ -9014,7 +8557,6 @@ pkgbase = sleepy-launcher-bin
 	sha256sums = SKIP
 
 pkgname = sleepy-launcher-bin
-
 ---
 pkgbase = slop-git
 	gives = slop
@@ -9034,7 +8576,6 @@ pkgbase = slop-git
 	source = https://github.com/naelstrof/slop.git
 
 pkgname = slop-git
-
 ---
 pkgbase = smartgit
 	pkgver = 22.1.7
@@ -9047,7 +8588,6 @@ pkgbase = smartgit
 	source = https://www.syntevo.com/downloads/smartgit/smartgit-linux-22_1_7.tar.gz
 
 pkgname = smartgit
-
 ---
 pkgbase = smplayer-deb
 	gives = smplayer
@@ -9059,7 +8599,6 @@ pkgbase = smplayer-deb
 	sha256sums = 685030e2e3ee9ad5d95dc266b90c402506b9fe5b193ff05411955ed1db8bedbb
 
 pkgname = smplayer-deb
-
 ---
 pkgbase = snapper-rollback-git
 	gives = snapper-rollback
@@ -9078,7 +8617,6 @@ pkgbase = snapper-rollback-git
 	sha256sums = SKIP
 
 pkgname = snapper-rollback-git
-
 ---
 pkgbase = softmaker-freeoffice-2024-deb
 	gives = softmaker-freeoffice-2024
@@ -9110,7 +8648,6 @@ pkgbase = softmaker-freeoffice-2024-deb
 	sha256sums = 62364de3f86054031851131b85f99e20ce47fc8eafe5043cd77f6ab1ac8b978e
 
 pkgname = softmaker-freeoffice-2024-deb
-
 ---
 pkgbase = softmaker-office-2024-deb
 	gives = softmaker-office-2024
@@ -9142,7 +8679,6 @@ pkgbase = softmaker-office-2024-deb
 	sha256sums = 5c8d36bd11cd2b50f79bd436bfac63206918fc4f5cdb310a37d323bb98310204
 
 pkgname = softmaker-office-2024-deb
-
 ---
 pkgbase = softmaker-office-nx-deb
 	gives = softmaker-office-nx
@@ -9170,7 +8706,6 @@ pkgbase = softmaker-office-nx-deb
 	sha256sums = c397a47c60fc34fb17f1fda6da00c3143c99c0e38d6b38421a051b26536e9b0f
 
 pkgname = softmaker-office-nx-deb
-
 ---
 pkgbase = songrec-deb
 	gives = songrec
@@ -9184,7 +8719,6 @@ pkgbase = songrec-deb
 	sha256sums = f40d075f08aef14183b320240316ceb7f7c9ede2e2326d96199d59d906dc2951
 
 pkgname = songrec-deb
-
 ---
 pkgbase = soundux
 	pkgver = 0.2.7
@@ -9205,7 +8739,6 @@ pkgbase = soundux
 	sha256sums = 017003fc96f49df30575975f3904c0d8a500e325a9d2bca8c3dc69fed0cab0a7
 
 pkgname = soundux
-
 ---
 pkgbase = spacecadetpinball-git
 	gives = spacecadetpinball
@@ -9233,7 +8766,6 @@ pkgbase = spacecadetpinball-git
 	sha256sums = 6edc9d9e73f430b025d0efe09ecd9027d38f7c2e3562de470a8057939fb1889f
 
 pkgname = spacecadetpinball-git
-
 ---
 pkgbase = spot-client-git
 	gives = spot-client
@@ -9270,7 +8802,6 @@ pkgbase = spot-client-git
 	source = https://github.com/xou816/spot.git
 
 pkgname = spot-client-git
-
 ---
 pkgbase = spotify-client-deb
 	gives = spotify-client
@@ -9288,7 +8819,6 @@ pkgbase = spotify-client-deb
 	sha256sums = 71b724bd9ec37ccc37b340606bc37f46d47320b5fa429a4c9dce5bd24e07adb8
 
 pkgname = spotify-client-deb
-
 ---
 pkgbase = st-distrotube-git
 	gives = st
@@ -9304,7 +8834,6 @@ pkgbase = st-distrotube-git
 	source = https://gitlab.com/dwt1/st-distrotube.git
 
 pkgname = st-distrotube-git
-
 ---
 pkgbase = st-lukesmith-git
 	gives = st
@@ -9318,7 +8847,6 @@ pkgbase = st-lukesmith-git
 	source = https://github.com/LukeSmithxyz/st.git
 
 pkgname = st-lukesmith-git
-
 ---
 pkgbase = starship-bin
 	gives = starship
@@ -9335,7 +8863,6 @@ pkgbase = starship-bin
 	sha256sums = 04710e277f7802ddf41400b650233a8954892bb9326768d82fff7d360ff37c58
 
 pkgname = starship-bin
-
 ---
 pkgbase = steam-deb
 	gives = steam-launcher
@@ -9350,7 +8877,6 @@ pkgbase = steam-deb
 	source = https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb
 
 pkgname = steam-deb
-
 ---
 pkgbase = steamtinkerlaunch-git
 	gives = steamtinkerlaunch
@@ -9382,7 +8908,6 @@ pkgbase = steamtinkerlaunch-git
 	source = https://github.com/frostworx/steamtinkerlaunch.git
 
 pkgname = steamtinkerlaunch-git
-
 ---
 pkgbase = stellarium
 	pkgver = 23.2
@@ -9428,7 +8953,6 @@ pkgbase = stellarium
 	sha256sums = 3aee154d0de3ed484e3e6fee027cf73e6dd0a677b3ea1af348b225ac02339008
 
 pkgname = stellarium
-
 ---
 pkgbase = stockfish-git
 	gives = stockfish
@@ -9441,7 +8965,6 @@ pkgbase = stockfish-git
 	source = https://github.com/official-stockfish/Stockfish.git
 
 pkgname = stockfish-git
-
 ---
 pkgbase = stremio-deb
 	gives = stremio
@@ -9462,7 +8985,6 @@ pkgbase = stremio-deb
 	sha256sums = 1028f1a38a70fc66bfcda1c8a9e1674231e17ac81774fc48859ed8f53c7a6039
 
 pkgname = stremio-deb
-
 ---
 pkgbase = sublime-merge-deb
 	gives = sublime-merge
@@ -9476,7 +8998,6 @@ pkgbase = sublime-merge-deb
 	sha256sums = 81459fa0779b431c1fa50fd983343cbbfa28cc0791ec384ba952035818ba4d1a
 
 pkgname = sublime-merge-deb
-
 ---
 pkgbase = sublime-text-deb
 	gives = sublime-text
@@ -9490,7 +9011,6 @@ pkgbase = sublime-text-deb
 	sha256sums = e1bac169546317f246cc58adbdd20264c78486f12112b3c9ee303aa863c38f7f
 
 pkgname = sublime-text-deb
-
 ---
 pkgbase = surf-distrotube-git
 	gives = surf
@@ -9509,7 +9029,6 @@ pkgbase = surf-distrotube-git
 	sha256sums = 88a73c57558d0d30752184f517d0b6930133ab506383efd394b60d9a04e6513f
 
 pkgname = surf-distrotube-git
-
 ---
 pkgbase = surf
 	pkgver = 2.1
@@ -9528,7 +9047,6 @@ pkgbase = surf
 	sha256sums = 72e582920ba25a646203e93c2d2331d87f03037a28894d6c7e99af00ee043257
 
 pkgname = surf
-
 ---
 pkgbase = surfshark-gui-deb
 	gives = surfshark
@@ -9541,7 +9059,6 @@ pkgbase = surfshark-gui-deb
 	sha256sums = a3ae250cc857ee3e7462452bd60b2bc453bad5df18fef3b2ce0fa4ff7ebb925d
 
 pkgname = surfshark-gui-deb
-
 ---
 pkgbase = suru-icon-theme-git
 	gives = suru-icon-theme
@@ -9553,7 +9070,6 @@ pkgbase = suru-icon-theme-git
 	source = https://github.com/snwh/suru-icon-theme.git
 
 pkgname = suru-icon-theme-git
-
 ---
 pkgbase = suyu-app
 	gives = suyu
@@ -9567,7 +9083,6 @@ pkgbase = suyu-app
 	sha256sums = dbab16853bc1e8ad62fcaddf9b0620e690c8522fbbc6cdddcfcc958f9abb1f47
 
 pkgname = suyu-app
-
 ---
 pkgbase = systemcoding-conky
 	gives = conky
@@ -9581,7 +9096,6 @@ pkgbase = systemcoding-conky
 	sha256sums = 345774e7af5ce7783a1168746243e252922cac7fe0e0b8039c272792492a365c
 
 pkgname = systemcoding-conky
-
 ---
 pkgbase = tabby-deb
 	gives = tabby-terminal
@@ -9595,7 +9109,6 @@ pkgbase = tabby-deb
 	sha256sums = aa1cc7936d80d8eb1bc0a50f55abb5120d1172877ffbe7bb2548d30f4c799fe5
 
 pkgname = tabby-deb
-
 ---
 pkgbase = tailscale
 	pkgver = 1.58.2
@@ -9613,7 +9126,6 @@ pkgbase = tailscale
 	sha256sums = 452f355408e4e2179872387a863387e06346fc8a6f9887821f9b8a072c6a5b0a
 
 pkgname = tailscale
-
 ---
 pkgbase = taskwarrior
 	gives = taskwarrior
@@ -9635,7 +9147,6 @@ pkgbase = taskwarrior
 	sha256sums = b1d3a7f000cd0fd60640670064e0e001613c9e1cb2242b9b3a9066c78862cfec
 
 pkgname = taskwarrior
-
 ---
 pkgbase = tdrop-git
 	gives = tdrop
@@ -9654,7 +9165,6 @@ pkgbase = tdrop-git
 	source = https://github.com/noctuid/tdrop.git
 
 pkgname = tdrop-git
-
 ---
 pkgbase = teams-for-linux-deb
 	gives = teams-for-linux
@@ -9671,7 +9181,6 @@ pkgbase = teams-for-linux-deb
 	sha256sums = 4efb94be4f70b8771474607e1d6b6a93eb666a2cbc2e7cad57ea876732687815
 
 pkgname = teams-for-linux-deb
-
 ---
 pkgbase = teamviewer-deb
 	gives = teamviewer
@@ -9699,7 +9208,6 @@ pkgbase = teamviewer-deb
 	sha256sums_arm64 = dd429662e8c72590d819fe73a27bcb99fc98348d8db38d20c595b26648430efd
 
 pkgname = teamviewer-deb
-
 ---
 pkgbase = tela-circle-icon-theme
 	gives = tela-circle-icon-theme
@@ -9716,7 +9224,6 @@ pkgbase = tela-circle-icon-theme
 	sha256sums = 9caaf41608a565a82f1057391d3ac7a4a1e276d9df6fc56367b202ffb8484b48
 
 pkgname = tela-circle-icon-theme
-
 ---
 pkgbase = telegram-bin
 	gives = telegram
@@ -9729,7 +9236,6 @@ pkgbase = telegram-bin
 	sha256sums = f75239beeab815c9b1dada08e0ff84885fc85bc4919178545fffe7018ddffcc2
 
 pkgname = telegram-bin
-
 ---
 pkgbase = tenacity-git
 	pkgver = 1.3.1
@@ -9830,7 +9336,6 @@ pkgbase = tenacity-git
 	depends_bookworm = libwxgtk3.2-1
 
 pkgname = tenacity-git
-
 ---
 pkgbase = texstudio-app
 	gives = texstudio
@@ -9845,7 +9350,6 @@ pkgbase = texstudio-app
 	sha256sums = 443f450cfcc0435623de9d4947026f3cfec9230ed1dc693021a2ae5ef9550136
 
 pkgname = texstudio-app
-
 ---
 pkgbase = tgpt-bin
 	gives = tgpt
@@ -9866,7 +9370,6 @@ pkgbase = tgpt-bin
 	sha256sums_i386 = 3b8fc616680330f4c34f2a787d7187ccbfee606f06616d8d54ff055115216815
 
 pkgname = tgpt-bin
-
 ---
 pkgbase = the-honkers-railway-launcher-bin
 	gives = the-honkers-railway-launcher
@@ -9894,7 +9397,6 @@ pkgbase = the-honkers-railway-launcher-bin
 	sha256sums = SKIP
 
 pkgname = the-honkers-railway-launcher-bin
-
 ---
 pkgbase = thorium-deb
 	gives = thorium-browser
@@ -9910,7 +9412,6 @@ pkgbase = thorium-deb
 	sha256sums_amd64 = 5917f059c3329b430fbefdd34ec66054b4181a745d8350e4cfe66edc3f7b1e30
 
 pkgname = thorium-deb
-
 ---
 pkgbase = thrive-deb
 	gives = thrive-launcher
@@ -9922,7 +9423,6 @@ pkgbase = thrive-deb
 	sha256sums = 36a648f9e23049a8e83db6ef52eefb06d32117e75bb4d0033994b454e944ebfd
 
 pkgname = thrive-deb
-
 ---
 pkgbase = ticktick-deb
 	gives = ticktick
@@ -9940,7 +9440,6 @@ pkgbase = ticktick-deb
 	repology = repo: aur
 
 pkgname = ticktick-deb
-
 ---
 pkgbase = tidal-hifi-bin
 	gives = tidal-hifi
@@ -9964,7 +9463,6 @@ pkgbase = tidal-hifi-bin
 	sha256sums = SKIP
 
 pkgname = tidal-hifi-bin
-
 ---
 pkgbase = timeshift
 	pkgver = 23.07.1
@@ -9995,7 +9493,6 @@ pkgbase = timeshift
 	sha256sums = 7b468430198c4e8c5c502258f1f67d15f0e68c3f58189d6e80b661cbdaf740f2
 
 pkgname = timeshift
-
 ---
 pkgbase = tixati-deb
 	gives = tixati
@@ -10013,7 +9510,6 @@ pkgbase = tixati-deb
 	sha256sums = 68dd8a2db7400cb85e53d0ffac2a74ab66cbb4a8d56b2a509eb043f84b883cc9
 
 pkgname = tixati-deb
-
 ---
 pkgbase = tmpmail-bin
 	gives = tmpmail
@@ -10032,7 +9528,6 @@ pkgbase = tmpmail-bin
 	sha256sums = 8d12f5474b89ee585413ec32cc9991a971a00e8bb63ac8e5a2e736f734f37cfb
 
 pkgname = tmpmail-bin
-
 ---
 pkgbase = tmux
 	pkgver = 3.3
@@ -10054,7 +9549,6 @@ pkgbase = tmux
 	sha256sums = b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc
 
 pkgname = tmux
-
 ---
 pkgbase = topgrade-bin
 	gives = topgrade
@@ -10075,7 +9569,6 @@ pkgbase = topgrade-bin
 	sha256sums_arm64 = 5079a1f50f2fd2d7954639f5eb14db38094f78493e2292a945f9f5ac60bfff5d
 
 pkgname = topgrade-bin
-
 ---
 pkgbase = topgrade-musl-bin
 	gives = topgrade
@@ -10093,7 +9586,6 @@ pkgbase = topgrade-musl-bin
 	sha256sums = bb656d9a04bddd0e2e8bca73529d6b2c7872a0b5f92bfdfb5ed27f91cc3a29cb
 
 pkgname = topgrade-musl-bin
-
 ---
 pkgbase = tor
 	pkgver = 0.4.7.13
@@ -10117,7 +9609,6 @@ pkgbase = tor
 	sha256sums = 2079172cce034556f110048e26083ce9bea751f3154b0ad2809751815b11ea9d
 
 pkgname = tor
-
 ---
 pkgbase = torbrowser-launcher-git
 	gives = torbrowser-launcher
@@ -10142,7 +9633,6 @@ pkgbase = torbrowser-launcher-git
 	source = https://github.com/micahflee/torbrowser-launcher.git
 
 pkgname = torbrowser-launcher-git
-
 ---
 pkgbase = torguard-deb
 	gives = torguard
@@ -10157,7 +9647,6 @@ pkgbase = torguard-deb
 	sha256sums = 0ab7ec3917ed4ec5a23746612efddc7fd17cf15ae010723212ecba3c5521050e
 
 pkgname = torguard-deb
-
 ---
 pkgbase = touchegg-deb
 	gives = touchegg
@@ -10170,7 +9659,6 @@ pkgbase = touchegg-deb
 	sha256sums = ef1873155eafefedbbc9a6911ff34c57511c49b43cbb37f5c6f8b795a04a0ecc
 
 pkgname = touchegg-deb
-
 ---
 pkgbase = touchegg-git
 	gives = touchegg
@@ -10199,7 +9687,6 @@ pkgbase = touchegg-git
 	source = https://github.com/JoseExposito/touchegg.git
 
 pkgname = touchegg-git
-
 ---
 pkgbase = tre-git
 	gives = tre
@@ -10212,7 +9699,6 @@ pkgbase = tre-git
 	source = https://github.com/dduan/tre.git
 
 pkgname = tre-git
-
 ---
 pkgbase = treefetch-bin
 	gives = treefetch
@@ -10227,7 +9713,6 @@ pkgbase = treefetch-bin
 	sha256sums = 1a835bafa75ecd2f18a53c3e0d73cf742a579106af03c4c459e5f8c873ee5187
 
 pkgname = treefetch-bin
-
 ---
 pkgbase = truckersmp-cli
 	gives = truckersmp-cli
@@ -10248,7 +9733,6 @@ pkgbase = truckersmp-cli
 	sha256sums = 3f5e0289d06d5bdc39f86879283c7184adaa60eb06a3b4e481095da816121c16
 
 pkgname = truckersmp-cli
-
 ---
 pkgbase = ttf-fira-sans
 	gives = ttf-fira-sans
@@ -10263,7 +9747,6 @@ pkgbase = ttf-fira-sans
 	sha256sums = 5a3059fbde784f57a58ffb55e15660ae6022c724ecbc468f58c0aaa2311c05f9
 
 pkgname = ttf-fira-sans
-
 ---
 pkgbase = tuner-git
 	pkgver = 1.5.1
@@ -10286,7 +9769,6 @@ pkgbase = tuner-git
 	source = https://codeberg.org/tuner/tuner.git
 
 pkgname = tuner-git
-
 ---
 pkgbase = tuner
 	pkgver = 1.3.1
@@ -10310,7 +9792,6 @@ pkgbase = tuner
 	sha256sums = 4b8cc5941652ebb872793bbc0f3d56e1c5d4423e6cf8d16aaeea25999075c1aa
 
 pkgname = tuner
-
 ---
 pkgbase = tutanota-app
 	gives = tutanota
@@ -10332,7 +9813,6 @@ pkgbase = tutanota-app
 	sha256sums = e76f83c33cab7c3b1e7d4c827927e0c883bc7f41cb2e2f3ce7d493cd96970d76
 
 pkgname = tutanota-app
-
 ---
 pkgbase = typora-deb
 	gives = typora
@@ -10351,7 +9831,6 @@ pkgbase = typora-deb
 	sha256sums = deb47f0af1458d13e4cf6ee69b55ade61c204549cb2fb9692c5280da6a082f1f
 
 pkgname = typora-deb
-
 ---
 pkgbase = u-boot-mobian-deb
 	gives = u-boot-menu
@@ -10364,7 +9843,6 @@ pkgbase = u-boot-mobian-deb
 	sha256sums = 6fffdf8359c0514e0f841cdf27726e05f582884b55e436235defc2c02d759f31
 
 pkgname = u-boot-mobian-deb
-
 ---
 pkgbase = ugee-tablet-driver-deb
 	gives = ugeetablet
@@ -10378,7 +9856,6 @@ pkgbase = ugee-tablet-driver-deb
 	sha256sums = a29df8cbe4cf9e5078f9694ccad8086fa504f2809accf8bffaeea9233bb0b893
 
 pkgname = ugee-tablet-driver-deb
-
 ---
 pkgbase = ulauncher-deb
 	gives = ulauncher
@@ -10397,7 +9874,6 @@ pkgbase = ulauncher-deb
 	sha256sums = 2ff44b464318128b291cab4dad2bd8e107ada392169bcfe0bf5753b387ffe485
 
 pkgname = ulauncher-deb
-
 ---
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
@@ -10456,7 +9932,6 @@ pkgbase = unicorn-desktop-git
 	source = https://github.com/rhino-linux/unicorn.git
 
 pkgname = unicorn-desktop-git
-
 ---
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
@@ -10505,7 +9980,6 @@ pkgbase = unicorn-mobile-git
 	source = https://github.com/rhino-linux/unicorn.git#branch=mobile
 
 pkgname = unicorn-mobile-git
-
 ---
 pkgbase = universal-ctags-git
 	gives = universal-ctags
@@ -10525,7 +9999,6 @@ pkgbase = universal-ctags-git
 	source = https://github.com/universal-ctags/ctags.git
 
 pkgname = universal-ctags-git
-
 ---
 pkgbase = upscayl-app
 	gives = upscayl
@@ -10545,7 +10018,6 @@ pkgbase = upscayl-app
 	sha256sums = SKIP
 
 pkgname = upscayl-app
-
 ---
 pkgbase = uwufetch
 	pkgver = 1.7
@@ -10560,7 +10032,6 @@ pkgbase = uwufetch
 	sha256sums = 1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab
 
 pkgname = uwufetch
-
 ---
 pkgbase = vega-strike-engine-git
 	gives = vega-strike
@@ -10594,7 +10065,6 @@ pkgbase = vega-strike-engine-git
 	source = https://github.com/vegastrike/Vega-Strike-Engine-Source.git
 
 pkgname = vega-strike-engine-git
-
 ---
 pkgbase = vega-strike-git
 	pkgver = 0.8.0
@@ -10605,7 +10075,6 @@ pkgbase = vega-strike-git
 	source = https://github.com/vegastrike/Assets-Production.git
 
 pkgname = vega-strike-git
-
 ---
 pkgbase = ventoy-bin
 	gives = ventoy
@@ -10645,7 +10114,6 @@ pkgbase = ventoy-bin
 	sha256sums = SKIP
 
 pkgname = ventoy-bin
-
 ---
 pkgbase = veracrypt-deb
 	gives = veracrypt
@@ -10673,7 +10141,6 @@ pkgbase = veracrypt-deb
 	sha256sums_jammy = f0dca101cf5b5eccfadaad3f53aea037fd5a01cd9afeb7248ddcca28b821a0ef
 
 pkgname = veracrypt-deb
-
 ---
 pkgbase = vesktop-deb
 	gives = vesktop
@@ -10698,7 +10165,6 @@ pkgbase = vesktop-deb
 	sha256sums_amd64 = cc7109e74a328e43f922f623aa82eafd8322967bc3fb14e467181cd12ae44b7e
 
 pkgname = vesktop-deb
-
 ---
 pkgbase = viper4linux
 	pkgver = 2.0
@@ -10713,7 +10179,6 @@ pkgbase = viper4linux
 	sha256sums = fe85277ca63f8a99beb2c347b6d9a268eb783c601c8fcbb7d0366d4797ff9900
 
 pkgname = viper4linux
-
 ---
 pkgbase = virtualbox-deb
 	gives = virtualbox-7.0
@@ -10734,7 +10199,6 @@ pkgbase = virtualbox-deb
 	sha256sums_bookworm = a8a65f3b77ace18abf48440859ba0fcfe33cba02d745ab7f12eb19fc18338298
 
 pkgname = virtualbox-deb
-
 ---
 pkgbase = vivaldi-deb
 	gives = vivaldi-stable
@@ -10747,7 +10211,6 @@ pkgbase = vivaldi-deb
 	sha256sums = c428f5fa3d880fdedfb768b6dc87e2d0a5e1d6e18d271234f68dbc96c400aa96
 
 pkgname = vivaldi-deb
-
 ---
 pkgbase = vivarium
 	pkgver = 0.0.4
@@ -10762,7 +10225,6 @@ pkgbase = vivarium
 	sha256sums = abb7272f53d1769de3726c6961df40627c98b8884eb32388e29b8812c60aacec
 
 pkgname = vivarium
-
 ---
 pkgbase = vscode-deb
 	gives = code
@@ -10781,7 +10243,6 @@ pkgbase = vscode-deb
 	sha256sums_armhf = 57d999241bedb65e99be2865b9283cce658308ae9bfc80039fc67c548fd99673
 
 pkgname = vscode-deb
-
 ---
 pkgbase = vscode-insiders-deb
 	gives = code-insiders
@@ -10800,7 +10261,6 @@ pkgbase = vscode-insiders-deb
 	sha256sums_armhf = dc8558b31b521886cc779f9fd2c7cf5d292efe8b9f20cca3a77b8ea05d55970e
 
 pkgname = vscode-insiders-deb
-
 ---
 pkgbase = vscodium-deb
 	gives = codium
@@ -10817,7 +10277,6 @@ pkgbase = vscodium-deb
 	sha256sums_amd64 = 8e4fdac78ce89cfce0f30bd9b2ed597867396673bad22b5f9f852bb1cbdd0a05
 
 pkgname = vscodium-deb
-
 ---
 pkgbase = vyprvpn-deb
 	gives = vyprvpn
@@ -10830,7 +10289,6 @@ pkgbase = vyprvpn-deb
 	sha256sums = c2c67794b6f4bcdf5f2e3d1e8eeab6a2bff9f452ccc70032b9a408c9f98d5511
 
 pkgname = vyprvpn-deb
-
 ---
 pkgbase = waf
 	pkgver = 2.0.24
@@ -10840,7 +10298,6 @@ pkgbase = waf
 	sha256sums = 87a468f9bf1d8a55151dda6290e230bcdad199df70217a223eb96ac79b94f121
 
 pkgname = waf
-
 ---
 pkgbase = walc-app
 	gives = walc
@@ -10855,7 +10312,6 @@ pkgbase = walc-app
 	sha256sums = 6c1e5c004e9c4bc5a8cf15837ce0e6c884fb3ace6397aa6aa95a6738c1960560
 
 pkgname = walc-app
-
 ---
 pkgbase = warp
 	gives = warp
@@ -10895,7 +10351,6 @@ pkgbase = warp
 	sha256sums = b3df2017e19c7bf1477b5bd07d857d0d8fe5375ab293d932a8a4e30aba91496a
 
 pkgname = warp
-
 ---
 pkgbase = warpinator-deb
 	gives = warpinator
@@ -10921,7 +10376,6 @@ pkgbase = warpinator-deb
 	sha256sums = fdcae13e004e1474711aa2f567e76d372f0634264d69732e775aba338b3d825e
 
 pkgname = warpinator-deb
-
 ---
 pkgbase = watchexec-bin
 	pkgver = 1.25.1
@@ -10937,7 +10391,6 @@ pkgbase = watchexec-bin
 	sha256sums_arm64 = a8ccd6770d0c0cceace33e5c668f236aaa5292bf77711a6afaefceb0bf8b87c7
 
 pkgname = watchexec-bin
-
 ---
 pkgbase = wavey-launcher-bin
 	gives = wavey-launcher
@@ -10965,7 +10418,6 @@ pkgbase = wavey-launcher-bin
 	sha256sums = SKIP
 
 pkgname = wavey-launcher-bin
-
 ---
 pkgbase = waynergy
 	pkgver = 0.0.17
@@ -10997,7 +10449,6 @@ pkgbase = waynergy
 	sha256sums = b8b2d12588cabfe161ce21a5cd898f06bdfd55c0106ecd4a26c8628aafeff990
 
 pkgname = waynergy
-
 ---
 pkgbase = webapp-manager-deb
 	gives = webapp-manager
@@ -11009,7 +10460,6 @@ pkgbase = webapp-manager-deb
 	sha256sums = 4a2d60bb94ae106e6d8084b1de5a73b86fa02a1a404f8e35088951a23ed36008
 
 pkgname = webapp-manager-deb
-
 ---
 pkgbase = webapp-manager
 	pkgver = 1.3.4
@@ -11033,7 +10483,6 @@ pkgbase = webapp-manager
 	sha256sums = 818ec1186e028d538b0e7a9237b9fc8c68e804356d322a0a7ba5451c909fcbad
 
 pkgname = webapp-manager
-
 ---
 pkgbase = webcord-deb
 	gives = webcord
@@ -11047,7 +10496,6 @@ pkgbase = webcord-deb
 	sha256sums = e4a6edaac9443af0bb99fd1d91af4be90b7ff92ad9ce214b51cdf217d3d85385
 
 pkgname = webcord-deb
-
 ---
 pkgbase = webtorrent-desktop-deb
 	gives = webtorrent-desktop
@@ -11061,7 +10509,6 @@ pkgbase = webtorrent-desktop-deb
 	sha256sums = 2110c6e81f2ebeae74e8194ec49e80f8357573c57222d2d472623355fb1307b0
 
 pkgname = webtorrent-desktop-deb
-
 ---
 pkgbase = weechat-git
 	gives = weechat
@@ -11106,7 +10553,6 @@ pkgbase = weechat-git
 	source = https://github.com/weechat/weechat.git
 
 pkgname = weechat-git
-
 ---
 pkgbase = wezterm-app
 	gives = wezterm
@@ -11119,7 +10565,6 @@ pkgbase = wezterm-app
 	sha256sums = 34010a07076d2272c4d4f94b5e0dae608a679599e8d729446323f88f956c60f0
 
 pkgname = wezterm-app
-
 ---
 pkgbase = wezterm-bin
 	gives = wezterm
@@ -11132,7 +10577,6 @@ pkgbase = wezterm-bin
 	sha256sums = 3b03b75a26a30f2de28180d66c5556e5878f6f3320d79d12fb78ea486400b6c3
 
 pkgname = wezterm-bin
-
 ---
 pkgbase = wgcf-bin
 	pkgver = 2.2.22
@@ -11143,7 +10587,6 @@ pkgbase = wgcf-bin
 	sha256sums = 268d187e649870b603ad2e5c1b74a696251f6c2f6f075c726a174a0039b0b1e2
 
 pkgname = wgcf-bin
-
 ---
 pkgbase = whatsie-git
 	gives = whatsie
@@ -11163,7 +10606,6 @@ pkgbase = whatsie-git
 	source = https://github.com/keshavbhatt/whatsie.git
 
 pkgname = whatsie-git
-
 ---
 pkgbase = whatsie
 	gives = whatsie
@@ -11184,7 +10626,6 @@ pkgbase = whatsie
 	sha256sums = 369acebb948375713f4e97a5e0304dbda407b432b42fe8ad0b6aa9b602744311
 
 pkgname = whatsie
-
 ---
 pkgbase = windscribe-beta-gui-deb
 	gives = windscribe
@@ -11197,7 +10638,6 @@ pkgbase = windscribe-beta-gui-deb
 	sha256sums = 43e45f3f2c98002c276623831a05b3250f93a480327f423c8fb06b8b9c4087cf
 
 pkgname = windscribe-beta-gui-deb
-
 ---
 pkgbase = wine-staging-git
 	pkgver = 9.8
@@ -11360,7 +10800,6 @@ pkgbase = wine-staging-git
 	sha256sums = SKIP
 
 pkgname = wine-staging-git
-
 ---
 pkgbase = winetricks-git
 	gives = winetricks
@@ -11378,7 +10817,6 @@ pkgbase = winetricks-git
 	sha512sums = SKIP
 
 pkgname = winetricks-git
-
 ---
 pkgbase = wsysmon-bin
 	gives = wsysmon
@@ -11395,7 +10833,6 @@ pkgbase = wsysmon-bin
 	sha256sums = SKIP
 
 pkgname = wsysmon-bin
-
 ---
 pkgbase = xapps-common-deb
 	gives = xapps-common
@@ -11407,7 +10844,6 @@ pkgbase = xapps-common-deb
 	sha256sums = 5423e5bf2309a687e651f9f0c90e8f107e58c6512614787147e19e7e96474f1a
 
 pkgname = xapps-common-deb
-
 ---
 pkgbase = xcb-util-errors
 	gives = libxcb-util-errors
@@ -11427,7 +10863,6 @@ pkgbase = xcb-util-errors
 	sha256sums = 5628c87b984259ad927bacd8a42958319c36bdf4b065887803c9d820fb80f357
 
 pkgname = xcb-util-errors
-
 ---
 pkgbase = xdg-desktop-portal-hyprland
 	pkgver = 1.3.1
@@ -11471,7 +10906,6 @@ pkgbase = xdg-desktop-portal-hyprland
 	sha256sums = 5f6be4d870e94314f05ec7ff9c9c1f028748230ff80a7f89aeaf66c08e5c70e0
 
 pkgname = xdg-desktop-portal-hyprland
-
 ---
 pkgbase = xdg-ninja-git
 	gives = xdg-ninja
@@ -11486,7 +10920,6 @@ pkgbase = xdg-ninja-git
 	source = xdg-ninja::https://github.com/b3nj5m1n/xdg-ninja.git
 
 pkgname = xdg-ninja-git
-
 ---
 pkgbase = xdg-terminal-exec-git
 	gives = xdg-terminal-exec
@@ -11500,7 +10933,6 @@ pkgbase = xdg-terminal-exec-git
 	sha256sums = SKIP
 
 pkgname = xdg-terminal-exec-git
-
 ---
 pkgbase = xfce4-deb
 	gives = xfce4
@@ -11512,7 +10944,6 @@ pkgbase = xfce4-deb
 	sha256sums = f8635ff525c6d87290fb1a794f67928c198e63f7d900f95c66c0c565697624ff
 
 pkgname = xfce4-deb
-
 ---
 pkgbase = xfce4-hotcorner-plugin-git
 	gives = xfce4-hotcorner-plugin
@@ -11535,7 +10966,6 @@ pkgbase = xfce4-hotcorner-plugin-git
 	source = https://github.com/christopherkobayashi/xfce4-hotcorner-plugin.git
 
 pkgname = xfce4-hotcorner-plugin-git
-
 ---
 pkgbase = xfce4-settings-pine-git
 	gives = xfce4-settings
@@ -11550,7 +10980,6 @@ pkgbase = xfce4-settings-pine-git
 	source = https://github.com/oklopfer/xfce4-settings.git
 
 pkgname = xfce4-settings-pine-git
-
 ---
 pkgbase = xmind-vana-deb
 	gives = xmind-vana
@@ -11563,7 +10992,6 @@ pkgbase = xmind-vana-deb
 	sha256sums = 0a260a95d35b1a3f35a58f20931185a73c95f7e6b821b5645af573a3084530a1
 
 pkgname = xmind-vana-deb
-
 ---
 pkgbase = xonotic
 	gives = xonotic
@@ -11578,7 +11006,6 @@ pkgbase = xonotic
 	sha256sums = 50850f8d800e7499722f6ea61e478e96464a375494b5a24da93aa0598cbe964d
 
 pkgname = xonotic
-
 ---
 pkgbase = yabridge
 	pkgver = 5.0.5
@@ -11591,7 +11018,6 @@ pkgbase = yabridge
 	sha256sums = 3ddc6e0989dad93e0275a83362fcfc0cb26b6dbfb8be7fc689410c02eb36455f
 
 pkgname = yabridge
-
 ---
 pkgbase = yad
 	gives = yad
@@ -11624,7 +11050,6 @@ pkgbase = yad
 	sha256sums = 2829681f0a9ebd07b7f651c6266d5bf6199235ef027c4936a76988e0471f8e1d
 
 pkgname = yad
-
 ---
 pkgbase = yafetch-git
 	gives = yafetch
@@ -11638,7 +11063,6 @@ pkgbase = yafetch-git
 	source = https://github.com/Elsie19/yafetch.git
 
 pkgname = yafetch-git
-
 ---
 pkgbase = yandex-browser-beta-deb
 	gives = yandex-browser-beta
@@ -11651,7 +11075,6 @@ pkgbase = yandex-browser-beta-deb
 	sha256sums = 5823de6408f3bc2dfa4d05d11236eaa0f8d0312588baaca8e824f1c0d83a2c30
 
 pkgname = yandex-browser-beta-deb
-
 ---
 pkgbase = yandex-browser-corporate-deb
 	gives = yandex-browser-corporate
@@ -11664,7 +11087,6 @@ pkgbase = yandex-browser-corporate-deb
 	sha256sums = f59d1b8ad97f582644c9fdf6fd95e01209320abbca3de2b44b1cc55476438700
 
 pkgname = yandex-browser-corporate-deb
-
 ---
 pkgbase = yandex-browser-stable-deb
 	gives = yandex-browser-stable
@@ -11678,7 +11100,6 @@ pkgbase = yandex-browser-stable-deb
 	sha256sums = 1e692b2d6eeff1885b9cc25232345827ff6e489d4db191732e0c0c319c08aee5
 
 pkgname = yandex-browser-stable-deb
-
 ---
 pkgbase = yandex-disk-deb
 	gives = yandex-disk
@@ -11691,7 +11112,6 @@ pkgbase = yandex-disk-deb
 	sha256sums = 47ba503b4dfccecc824386d67d686abe4b5356b8b546e48fce8811b5fa88a718
 
 pkgname = yandex-disk-deb
-
 ---
 pkgbase = youtube-dl-git
 	gives = youtube-dl
@@ -11705,7 +11125,6 @@ pkgbase = youtube-dl-git
 	source = https://github.com/ytdl-org/youtube-dl.git
 
 pkgname = youtube-dl-git
-
 ---
 pkgbase = youtube-music-deb
 	gives = youtube-music
@@ -11718,7 +11137,6 @@ pkgbase = youtube-music-deb
 	sha256sums = b875bfc24657f1a09bd81508fe3c5c421972b2e66744c1583b6bca7cdec1a87a
 
 pkgname = youtube-music-deb
-
 ---
 pkgbase = yt-dlp
 	pkgver = 2024.07.01
@@ -11734,7 +11152,6 @@ pkgbase = yt-dlp
 	sha256sums = 2d026b34f1aa2333a309b503c61de3719ed2f5683a52924d65c4ad25d7a8edcc
 
 pkgname = yt-dlp
-
 ---
 pkgbase = zap
 	gives = zap
@@ -11750,7 +11167,6 @@ pkgbase = zap
 	sha256sums = 4972edd5da1be5c5dd2fa14619c7068b09fd9dc31c1feea50ed564cdb14df6bc
 
 pkgname = zap
-
 ---
 pkgbase = zentile-bin
 	gives = zentile
@@ -11766,7 +11182,6 @@ pkgbase = zentile-bin
 	sha256sums = 3448835def513588bde74ecd98ed1b5e03c4269f32c90e31846e608b3eabcc33
 
 pkgname = zentile-bin
-
 ---
 pkgbase = zettlr-deb
 	gives = zettlr
@@ -11779,7 +11194,6 @@ pkgbase = zettlr-deb
 	sha256sums = 5ed31951ac48e665c16de25afb85af0a2c3a099f5649bc6b64929a7bf5bcb672
 
 pkgname = zettlr-deb
-
 ---
 pkgbase = zig-bin
 	pkgver = 0.12.0
@@ -11795,7 +11209,6 @@ pkgbase = zig-bin
 	sha256sums_arm64 = 754f1029484079b7e0ca3b913a0a2f2a6afd5a28990cb224fe8845e72f09de63
 
 pkgname = zig-bin
-
 ---
 pkgbase = zoho-notebook-deb
 	gives = notebook
@@ -11808,7 +11221,6 @@ pkgbase = zoho-notebook-deb
 	sha256sums = c9f4faf14c722fd549cd1be7ebd0424728af7ad2ceda246faadd76d2b83abaa1
 
 pkgname = zoho-notebook-deb
-
 ---
 pkgbase = zoom-deb
 	gives = zoom
@@ -11822,7 +11234,6 @@ pkgbase = zoom-deb
 	sha256sums = fbd16cbe8d401cc0b5b5924469bfea80196f0ec5df9cdc392d03279b56a5e871
 
 pkgname = zoom-deb
-
 ---
 pkgbase = zotero
 	pkgver = 6.0.30
@@ -11834,7 +11245,6 @@ pkgbase = zotero
 	sha256sums = e17419d71c3d42d9374b31ccb04524f87b8862d1c300e320a70cdb01de504295
 
 pkgname = zotero
-
 ---
 pkgbase = zoxide-deb
 	gives = zoxide
@@ -11850,7 +11260,6 @@ pkgbase = zoxide-deb
 	sha256sums_arm64 = 575f520691dfd9acc1b280b0ca47f44f49bd004763b61abfb3da36f211d88215
 
 pkgname = zoxide-deb
-
 ---
 pkgbase = zsh-history-substring-search-git
 	gives = zsh-history-substring-search

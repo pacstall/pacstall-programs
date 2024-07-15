@@ -635,7 +635,7 @@ function srcinfo.list_build() {
   printf "### Auto-generated for pacstall-programs\n" > "${tmploc}"
   mapfile -t filelist < <(ls packages/*/.SRCINFO)
   for i in "${filelist[@]}"; do
-    printf "\n---\n" >> "${tmploc}"
+    echo "---" >> "${tmploc}"
     while IFS= read -r line; do
       echo "${line}" >> "${tmploc}"
     done < "${i}"
@@ -725,16 +725,13 @@ function srcinfo.list_info() {
   [[ ${NAME} == "pkgbase" ]] && NAME="${PARENT}"
   awk -v pkg="${NAME}" -v field="${FIELD}" '
   BEGIN { print_pkg = 0 }
-  /^---$/ {
+  /^[[:space:]]*$/ || /^---$/ {
     if (print_pkg && field == "pkgname") {
-      print ""; exit
+      exit
     }
-    print_pkg = 0
   }
-  /^[[:space:]]*$/ {
-    if (print_pkg && field == "pkgname") {
-      print ""; exit
-    }
+  /^---$/ {
+    print_pkg = 0
   }
   {
     if ($1 == "pkgbase" && $3 != pkg && field == "pkgname") {
