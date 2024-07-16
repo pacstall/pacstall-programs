@@ -52,8 +52,6 @@ post_install() {
 }
 
 pre_remove() {
-  set -e
-
   DKMS_NAME="${gives}"
   DKMS_VERSION="${pkgver}"
 
