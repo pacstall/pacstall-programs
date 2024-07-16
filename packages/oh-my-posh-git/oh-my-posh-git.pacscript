@@ -14,6 +14,7 @@ external_connection=true
 build() {
   cd "${_archive}"
   cd src || exit 1
+  sed -i "s/go 1.22.3/go 1.22.2/g" go.mod
   /usr/lib/go-1.22/bin/go build -o "${gives}"
 }
 
