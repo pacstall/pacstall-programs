@@ -704,7 +704,7 @@ function srcinfo.list_search() {
 function srcinfo.list_parse() {
   local SRCFILE="${1}" PKGFILE="${2}" KWD="${3}" SEARCH CHILD searchlist pkglist foundname exact=false
   SEARCH="${KWD%% *}"
-  if [[ "${KWD}" == \'*\' ]]; then
+  if [[ ${KWD} == \'*\' ]]; then
     exact=true
     KWD="${KWD%*\'}"
     KWD="${KWD#\'*}"
