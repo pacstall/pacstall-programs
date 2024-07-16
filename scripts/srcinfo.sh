@@ -632,7 +632,7 @@ function srcinfo.repo_check() {
 function srcinfo.list_build() {
   local FILE="${1}" filelist tmploc
   tmploc="$(mktemp)"
-  printf "### Auto-generated for pacstall-programs\n### DO NOT EDIT. Use scripts/scrinfo.sh to build.\n" > "${tmploc}"
+  printf "### Auto-generated for pacstall-programs\n### DO NOT EDIT. Use scripts/srcinfo.sh to build.\n" > "${tmploc}"
   mapfile -t filelist < <(ls packages/*/.SRCINFO)
   for i in "${filelist[@]}"; do
     echo "---" >> "${tmploc}"
