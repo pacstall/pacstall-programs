@@ -1,4 +1,5 @@
 ### Auto-generated for pacstall-programs
+### DO NOT EDIT. Use scripts/scrinfo.sh to build.
 ---
 pkgbase = 1password-cli-bin
 	gives = 1password-cli

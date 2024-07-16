@@ -43,13 +43,13 @@ repos:
         language: system
         entry: ./scripts/srcinfo.sh check
         files: '^.*\.pacscript$'
-      - id: update-packagelist
-        name: update packagelist file
+      - id: update-pkglist
+        name: update packagelist
         language: system
-        entry: env LC_ALL=C ./scripts/srcinfo.sh packagelist
+        entry: env LC_ALL=C ./scripts/srcinfo.sh build packagelist
       - id: update-srclist
-        name: update srclist file
+        name: update srclist
         language: system
-        entry: env LC_ALL=C ./scripts/srcinfo.sh srclist build
+        entry: env LC_ALL=C ./scripts/srcinfo.sh build srclist
 
 # vim:set ft=yaml ts=2 sw=2 et:

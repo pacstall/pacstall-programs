@@ -42,7 +42,7 @@ function srcinfo.is_array() {
 }
 
 function srcinfo.die() {
-  printf >&2 'ERROR: %s\n' "$@"
+  printf >&2 '[\033[1;31mERROR\033[0m]: %s\n' "$@"
   exit 1
 }
 
@@ -592,7 +592,7 @@ function srcinfo.pkg_list() {
   local origname outlist inlist pkgnames
   mapfile -t inlist < <(ls -1 packages)
   for i in "${inlist[@]}"; do
-    if [[ -n $(awk '/^pkgbase=/' "packages/${i}/${i}.pacscript") ]]; then
+    if awk 'BEGIN { found = 0 } /^pkgbase=/ { found = 1; exit } END { exit !found }' "packages/${i}/${i}.pacscript"; then
       mapfile -t pkgnames < <(srcinfo.match_pkg packages/"${i}"/.SRCINFO pkgname)
       outlist+=("${i}:pkgbase")
       for j in "${pkgnames[@]}"; do
@@ -632,7 +632,7 @@ function srcinfo.repo_check() {
 function srcinfo.list_build() {
   local FILE="${1}" filelist tmploc
   tmploc="$(mktemp)"
-  printf "### Auto-generated for pacstall-programs\n" > "${tmploc}"
+  printf "### Auto-generated for pacstall-programs\n### DO NOT EDIT. Use scripts/scrinfo.sh to build.\n" > "${tmploc}"
   mapfile -t filelist < <(ls packages/*/.SRCINFO)
   for i in "${filelist[@]}"; do
     echo "---" >> "${tmploc}"
@@ -708,14 +708,12 @@ function srcinfo.list_parse() {
     CHILD="${SEARCH#*:}" KWD="${SEARCH%:*}"
   fi
   mapfile -t searchlist < <(srcinfo.list_search "${1}" "${KWD}")
-  mapfile -t pkglist < "${2}"
+  mapfile -t pkglist < "${PKGFILE}"
   for i in "${searchlist[@]}"; do
     foundname="${i%% -*}"
-    if [[ -n ${CHILD} && ${CHILD} != "pkgbase" && ${foundname} != "${KWD}:${CHILD}" ]]; then
-      continue
-    elif [[ ${CHILD} == "pkgbase" && ${foundname} =~ ':' && ${foundname} != *":${CHILD}" ]]; then
-      continue
-    elif [[ -n ${KWD} && ! ${i} =~ ${KWD} ]]; then
+    if [[ -n ${CHILD} && ${CHILD} != "pkgbase" && ${foundname} != "${KWD}:${CHILD}" ]] || \
+      [[ ${CHILD} == "pkgbase" && ${foundname} =~ ':' && ${foundname} != *":${CHILD}" ]] || \
+      [[ -n ${KWD} && ${i} != *"${KWD}"* ]]; then
       continue
     fi
     if srcinfo._contains pkglist "${foundname}"; then
@@ -760,36 +758,93 @@ function srcinfo.list_info() {
 }
 
 function srcinfo.cmd() {
-  if [[ ${1} == "write" ]]; then
-    shift 1
-    # list of packages to write to
-    srcinfo.write_out "${@}"
-  elif [[ ${1} == "check" ]]; then
-    shift 1
-    # check if .SRCINFOs exist
-    srcinfo.repo_check "${@}"
-  elif [[ ${1} == "packagelist" ]]; then
-    # no args
-    srcinfo.pkg_list > "packagelist"
-  elif [[ ${1} == "read" ]]; then
-    # see srcinfo.match_pkg for description
-    # shellcheck disable=SC2086
-    srcinfo.match_pkg "${2:?No SRCINFO file provided}" "${3:?No variable provided}" ${4}
-  elif [[ ${1} == "srclist" ]]; then
-    shift 1
-    if [[ $1 == "build" ]]; then
-      srcinfo.list_build "srclist"
-    elif [[ $1 == "search" ]]; then
-      srcinfo.list_parse "srclist" "packagelist" "${2:?missing KEYWORD}"
-    elif [[ $1 == "info" ]]; then
-      srcinfo.list_info "srclist" "${2:?missing PACKAGE}"
-    else
-      srcinfo.die "Usage: $0 srclist {build|search <keyword>|info <package_name>}"
-    fi
-  else
-    srcinfo.die "Usage: $0 {read | write | check | packagelist | srclist}"
-  fi
+  export GREEN=$'\033[0;32m' NC=$'\033[0m'
+  case "${1}" in
+    write)
+      shift 1
+      # list of packages to write to
+      ((${#@} < 1)) && srcinfo.die "Usage: ${GREEN}write${NC} {<path/to/1.pacscript> <path/to/2.pacscript>...}"
+      srcinfo.write_out "${@}"
+      ;;
+    check)
+      shift 1
+      # check if .SRCINFOs exist
+      ((${#@} < 1)) && srcinfo.die "Usage: ${GREEN}check${NC} {<path/to/1.pacscript> <path/to/2.pacscript>...}"
+      srcinfo.repo_check "${@}"
+      ;;
+    build)
+      case "${2}" in
+        packagelist)
+          srcinfo.pkg_list > "packagelist"
+          ;;
+        srclist)
+          srcinfo.list_build "srclist"
+          ;;
+        all)
+          srcinfo.pkg_list > "packagelist"
+          srcinfo.list_build "srclist"
+          ;;
+        *)
+          srcinfo.die "Usage: ${GREEN}build${NC} {packagelist | srclist | all}"
+          ;;
+      esac
+      ;;
+    read)
+      [[ -z ${3} ]] && srcinfo.die "Usage: ${GREEN}read${NC} <path/to/.SRCINFO> {pkgbase | pkgname | <variable> [<package> | pkgbase:<package>]}"
+      # shellcheck disable=SC2086
+      srcinfo.match_pkg "${2}" "${3}" ${4}
+      ;;
+    search)
+      [[ -z ${2} ]] && srcinfo.die "Usage: ${GREEN}search${NC} {<package> | <pkgbase>:<pkgname> | <keyword> | <'keyword string'>}"
+      [[ ! -f "packagelist" ]] && srcinfo.pkg_list > "packagelist"
+      [[ ! -f "srclist" ]] && srcinfo.list_build "srclist"
+      srcinfo.list_parse "srclist" "packagelist" "${2}"
+      ;;
+    info)
+      [[ -z ${2} ]] && srcinfo.die "Usage: ${GREEN}info${NC} {<package> | <pkgbase>:<pkgname>}"
+      [[ ! -f "srclist" ]] && srcinfo.list_build "srclist"
+      srcinfo.list_info "srclist" "${2}"
+      ;;
+    help)
+      local all_cmds=("read" "write" "check" "build" "search" "info")
+      case "${2}" in
+        read)
+          usage="<path/to/.SRCINFO> {pkgbase | pkgname | <variable> [<package> | pkgbase:<package>]}"
+          ;;
+        write)
+          usage="{<path/to/1.pacscript> <path/to/2.pacscript>...}"
+          ;;
+        check)
+          usage="{<path/to/1.pacscript> <path/to/2.pacscript>...}"
+          ;;
+        build)
+          usage="{packagelist | srclist | all}"
+          ;;
+        search)
+          usage="{<package> | <pkgbase>:<pkgname> | <keyword> | <'keyword string'>}"
+          ;;
+        info)
+          usage="{<package> | <pkgbase>:<pkgname>}"
+          ;;
+        *)
+          usage="{read | write | check | build | search | info | help <cmd>}"
+          ;;
+      esac
+      if srcinfo._contains all_cmds "${2}"; then
+        option="${2}"
+      else
+        option="${0}"
+      fi
+      printf '[\033[0;33mHELP\033[0m] Usage: \033[0;32m%s\033[0m %s\n' "${option}" "${usage}"
+      ;;
+    *)
+      srcinfo.die "Usage: ${GREEN}${0}${NC} {read | write | check | build | search | info | help}"
+      ;;
+  esac
 }
 
+if ! [[ -d "packages" && -d "scripts" && -f "distrolist" ]]; then
+  srcinfo.die "This script can only be run from the head of a repository"
+fi
 srcinfo.cmd "${@}"
 # vim:set ft=sh ts=2 sw=4 noet:
