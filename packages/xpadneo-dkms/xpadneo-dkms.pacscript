@@ -23,7 +23,7 @@ prepare() {
 
   # Set the current version in DKMS config file.
   patch -p1 -i "${srcdir}/rename-marker.patch"
-  sed "s/@DO_NOT_CHANGE@/${_pkgver}/" dkms.conf.in > dkms.conf
+  sed "s/@PACKAGE_VERSION@/${_pkgver}/" dkms.conf.in > dkms.conf
 }
 
 check() {
@@ -54,6 +54,10 @@ package() {
 
 }
 
+post_upgrade() {
+  update-initramfs -u -k all
+}
+
 post_install() {
 
   DKMS_NAME="${_dkmsname}"
@@ -63,6 +67,7 @@ post_install() {
   dkms build -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
   dkms install -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --force || true
 
+  update-initramfs -u -k all
 }
 
 pre_remove() {
@@ -71,4 +76,6 @@ pre_remove() {
   DKMS_VERSION="${_pkgver}"
 
   dkms remove -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --all || true
+
+  update-initramfs -u -k all
 }
