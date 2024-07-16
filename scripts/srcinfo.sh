@@ -647,10 +647,10 @@ function srcinfo.list_search() {
   local FILE="${1}"
   awk -v kw="${2}" '
   BEGIN {
-    IGNORECASE = 1
     FS = "[[:space:]]*=[[:space:]]*"
     OFS = " - "
     found = 0
+    kw = tolower(kw)
   }
   function print_pkgbase_and_pkgname() {
     if (pkgbase != "") {
@@ -662,10 +662,10 @@ function srcinfo.list_search() {
     }
   }
   /^---$/ {
-    if (pkgbase != "" && (pkgbase ~ kw || pkgbase_desc ~ kw)) {
+    if (pkgbase != "" && (pkgbase ~ kw || tolower(pkgbase_desc) ~ kw)) {
       print_pkgbase_and_pkgname()
       found = 1
-    } else if (pkgname != "" && (pkgname ~ kw || pkgname_desc ~ kw)) {
+    } else if (pkgname != "" && (pkgname ~ kw || tolower(pkgname_desc) ~ kw)) {
       print_pkgbase_and_pkgname()
       found = 1
     }
@@ -678,7 +678,7 @@ function srcinfo.list_search() {
   /^[[:space:]]*pkgname[[:space:]]*=/ {
     if (pkgname != "") {
       desc = (pkgname_desc != "" ? pkgname_desc : pkgbase_desc)
-      if (pkgname ~ kw || desc ~ kw) {
+      if (pkgname ~ kw || tolower(desc) ~ kw) {
         print pkgbase ":" pkgname, desc
         found = 1
       }
@@ -702,8 +702,15 @@ function srcinfo.list_search() {
 }
 
 function srcinfo.list_parse() {
-  local SRCFILE="${1}" PKGFILE="${2}" KWD="${3}" SEARCH CHILD searchlist pkglist foundname
+  local SRCFILE="${1}" PKGFILE="${2}" KWD="${3}" SEARCH CHILD searchlist pkglist foundname exact=false
   SEARCH="${KWD%% *}"
+  if [[ "${KWD}" == \'*\' ]]; then
+    exact=true
+    KWD="${KWD%*\'}"
+    KWD="${KWD#\'*}"
+  else
+    KWD="${KWD,,}"
+  fi
   if [[ ${SEARCH} == *':'* && ${SEARCH} == "${KWD##* }" ]]; then
     CHILD="${SEARCH#*:}" KWD="${SEARCH%:*}"
   fi
@@ -713,7 +720,8 @@ function srcinfo.list_parse() {
     foundname="${i%% -*}"
     if [[ -n ${CHILD} && ${CHILD} != "pkgbase" && ${foundname} != "${KWD}:${CHILD}" ]] \
       || [[ ${CHILD} == "pkgbase" && ${foundname} =~ ':' && ${foundname} != *":${CHILD}" ]] \
-      || [[ -n ${KWD} && ${i} != *"${KWD}"* ]]; then
+      || [[ ${exact} == true && ${i} != *"${KWD}"* ]] \
+      || [[ ${exact} == false && -n ${KWD} && ${i,,} != *"${KWD}"* ]]; then
       continue
     fi
     if srcinfo._contains pkglist "${foundname}"; then
