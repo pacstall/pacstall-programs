@@ -15,10 +15,6 @@ sha256sums=('SKIP'
   'acdc488d1505e891ed6259b29428d4b27d26d18e3ea170f017b930390d6420e7')
 maintainer=("xdavius <xdavius@github.com>")
 
-prepare() {
-  cd "${srcdir}/${gives}"
-}
-
 package() {
   cd "${srcdir}/${gives}"
 
