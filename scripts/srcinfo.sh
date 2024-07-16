@@ -711,9 +711,9 @@ function srcinfo.list_parse() {
   mapfile -t pkglist < "${PKGFILE}"
   for i in "${searchlist[@]}"; do
     foundname="${i%% -*}"
-    if [[ -n ${CHILD} && ${CHILD} != "pkgbase" && ${foundname} != "${KWD}:${CHILD}" ]] || \
-      [[ ${CHILD} == "pkgbase" && ${foundname} =~ ':' && ${foundname} != *":${CHILD}" ]] || \
-      [[ -n ${KWD} && ${i} != *"${KWD}"* ]]; then
+    if [[ -n ${CHILD} && ${CHILD} != "pkgbase" && ${foundname} != "${KWD}:${CHILD}" ]] \
+      || [[ ${CHILD} == "pkgbase" && ${foundname} =~ ':' && ${foundname} != *":${CHILD}" ]] \
+      || [[ -n ${KWD} && ${i} != *"${KWD}"* ]]; then
       continue
     fi
     if srcinfo._contains pkglist "${foundname}"; then
