@@ -708,7 +708,7 @@ function srcinfo.list_parse() {
     exact=true
     KWD="${KWD%*\'}"
     KWD="${KWD#\'*}"
-  elif [[ "${KWD}" == \"*\" ]]; then
+  elif [[ ${KWD} == \"*\" ]]; then
     exact=true
     KWD="${KWD%*\"}"
     KWD="${KWD#\"*}"
