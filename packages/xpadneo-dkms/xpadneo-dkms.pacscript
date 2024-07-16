@@ -10,7 +10,7 @@ source=("https://github.com/atar-axis/xpadneo/archive/v${pkgver}.tar.gz"
 maintainer=("xdavius <xdavius@github.com>")
 
 _gives="xpadneo"
-_dkmsname="hid-${gives}"
+_dkmsname="hid-${_gives}"
 _pkgver="v${pkgver}"
 
 prepare() {
