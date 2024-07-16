@@ -784,6 +784,19 @@ function srcinfo.cmd() {
       ((${#@} < 1)) && srcinfo.die "Usage: ${GREEN}check${NC} {<path/to/1.pacscript> <path/to/2.pacscript>...}"
       srcinfo.repo_check "${@}"
       ;;
+    add)
+      shift 1
+      # check if .SRCINFOs exist
+      ((${#@} < 1)) && srcinfo.die "Usage: ${GREEN}add${NC} {<package1> <package2>...}"
+      local allin
+      for i in "${@}"; do
+        allin+=("packages/${i}/${i}.pacscript")
+      done
+      srcinfo.write_out "${allin[@]}"
+      srcinfo.repo_check "${allin[@]}"
+      srcinfo.pkg_list > "packagelist"
+      srcinfo.list_build "srclist"
+      ;;
     build)
       case "${2}" in
         packagelist)
@@ -823,11 +836,11 @@ function srcinfo.cmd() {
         read)
           usage="<path/to/.SRCINFO> {pkgbase | pkgname | <variable> [<package> | pkgbase:<package>]}"
           ;;
-        write)
+        write | check)
           usage="{<path/to/1.pacscript> <path/to/2.pacscript>...}"
           ;;
-        check)
-          usage="{<path/to/1.pacscript> <path/to/2.pacscript>...}"
+        add)
+          usage="{<package1> <package2>...}"
           ;;
         build)
           usage="{packagelist | srclist | all}"
@@ -839,7 +852,7 @@ function srcinfo.cmd() {
           usage="{<package> | <pkgbase>:<pkgname>}"
           ;;
         *)
-          usage="{read | write | check | build | search | info | help <cmd>}"
+          usage="{read | write | check | add | build | search | info | help <cmd>}"
           ;;
       esac
       if srcinfo._contains all_cmds "${2}"; then
@@ -850,7 +863,7 @@ function srcinfo.cmd() {
       printf '[\033[0;33mHELP\033[0m] Usage: \033[0;32m%s\033[0m %s\n' "${option}" "${usage}"
       ;;
     *)
-      srcinfo.die "Usage: ${GREEN}${0}${NC} {read | write | check | build | search | info | help}"
+      srcinfo.die "Usage: ${GREEN}${0}${NC} {read | write | check | add | build | search | info | help}"
       ;;
   esac
 }
