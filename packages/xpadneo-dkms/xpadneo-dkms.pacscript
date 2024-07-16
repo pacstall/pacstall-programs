@@ -1,5 +1,5 @@
 pkgname="xpadneo-dkms"
-gives="xpadneo"
+gives="xpadneo-dkms"
 pkgver="0.9.6"
 pkgdesc="Advanced Linux Driver for Xbox One S/X Wireless Gamepad"
 url='https://github.com/atar-axis/xpadneo'
@@ -7,13 +7,14 @@ depends=('dkms' 'bluetooth')
 source=("https://github.com/atar-axis/xpadneo/archive/v${pkgver}.tar.gz"
   "drop-etc-files.patch::https://aur.archlinux.org/cgit/aur.git/plain/drop-etc-files.patch?h=xpadneo-dkms"
   "rename-marker.patch::https://aur.archlinux.org/cgit/aur.git/plain/rename-marker.patch?h=xpadneo-dkms")
-
-_dkmsname="hid-${gives}"
-_pkgver="v${pkgver}"
 maintainer=("xdavius <xdavius@github.com>")
 
+_gives="xpadneo"
+_dkmsname="hid-${gives}"
+_pkgver="v${pkgver}"
+
 prepare() {
-  cd "${gives}-${pkgver}/${_dkmsname}"
+  cd "${_gives}-${pkgver}/${_dkmsname}"
 
   # Upstream uses dkms.post_install to create modprobe and udev files in
   # /etc. In Arch, it makes more sense to create these files in /usr/lib
@@ -37,7 +38,7 @@ check() {
 }
 
 package() {
-  cd "${gives}-${pkgver}/${_dkmsname}"
+  cd "${_gives}-${pkgver}/${_dkmsname}"
   # Module source
   install -Dm0644 -t "${pkgdir}/usr/src/${_dkmsname}-${_pkgver}/src" src/*
 
@@ -56,7 +57,7 @@ package() {
 post_install() {
 
   DKMS_NAME="${_dkmsname}"
-  DKMS_VERSION="v${pkgver}"
+  DKMS_VERSION="${_pkgver}"
 
   dkms add -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
   dkms build -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
@@ -67,7 +68,7 @@ post_install() {
 pre_remove() {
 
   DKMS_NAME="${_dkmsname}"
-  DKMS_VERSION="v${pkgver}"
+  DKMS_VERSION="${_pkgver}"
 
   dkms remove -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --all || true
 }
