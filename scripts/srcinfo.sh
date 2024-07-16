@@ -806,7 +806,7 @@ function srcinfo.cmd() {
       srcinfo.list_info "srclist" "${2}"
       ;;
     help)
-      local all_cmds=("read" "write" "check" "build" "search" "info")
+      local all_cmds=("read" "write" "check" "build" "search" "info") option usage
       case "${2}" in
         read)
           usage="<path/to/.SRCINFO> {pkgbase | pkgname | <variable> [<package> | pkgbase:<package>]}"
