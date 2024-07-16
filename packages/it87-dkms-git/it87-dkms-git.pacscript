@@ -35,8 +35,6 @@ post_upgrade() {
 }
 
 post_install() {
-  set -e
-
   DKMS_NAME="${gives}"
   DKMS_VERSION="${pkgver}"
 
