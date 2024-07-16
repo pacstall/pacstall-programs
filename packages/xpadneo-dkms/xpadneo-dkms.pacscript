@@ -5,23 +5,24 @@ pkgdesc="Advanced Linux Driver for Xbox One S/X Wireless Gamepad"
 url='https://github.com/atar-axis/xpadneo'
 depends=('dkms' 'bluetooth')
 source=("https://github.com/atar-axis/xpadneo/archive/v${pkgver}.tar.gz"
-  "drop-etc-files.patch"
-  "rename-marker.patch")
+  "drop-etc-files.patch::https://aur.archlinux.org/cgit/aur.git/plain/drop-etc-files.patch?h=xpadneo-dkms"
+  "rename-marker.patch::https://aur.archlinux.org/cgit/aur.git/plain/rename-marker.patch?h=xpadneo-dkms")
 
 _dkmsname="hid-${gives}"
+_pkgver="v${pkgver}"
 maintainer=("xdavius <xdavius@github.com>")
 
 prepare() {
-  cd "${srcdir}/${_dkmsname}"
+  cd "${gives}-${pkgver}/${_dkmsname}"
 
   # Upstream uses dkms.post_install to create modprobe and udev files in
   # /etc. In Arch, it makes more sense to create these files in /usr/lib
   # and let pacman take care of them.
-  patch -p1 -i "../drop-etc-files.patch"
+  patch -p1 -i "${srcdir}/drop-etc-files.patch"
 
   # Set the current version in DKMS config file.
-  patch -p1 -i "../rename-marker.patch"
-  sed "s/@PACKAGE_VERSION@/v${pkgver}/" dkms.conf.in > dkms.conf
+  patch -p1 -i "${srcdir}/rename-marker.patch"
+  sed "s/@DO_NOT_CHANGE@/${_pkgver}/" dkms.conf.in > dkms.conf
 }
 
 check() {
@@ -31,18 +32,18 @@ check() {
     _RED='\033[0;31m'
     _RESET='\033[0m'
     echo -e "${_BOLDRED}WARNING:${_RED} You may be missing headers for your current kernel, DKMS packages requires them."
-    echo -e "Please refer to https://wiki.archlinux.org/title/Dynamic_Kernel_Module_Support for details.${_RESET}"
+    echo -e "Please refer to Ubuntu/Debian Manual for details.${_RESET}"
   fi
 }
 
 package() {
-  cd "${srcdir}/${_dkmsname}"
+  cd "${gives}-${pkgver}/${_dkmsname}"
   # Module source
-  install -Dm0644 -t "${pkgdir}/usr/src/${_dkmsname}-v${pkgver}/src" src/*
+  install -Dm0644 -t "${pkgdir}/usr/src/${_dkmsname}-${_pkgver}/src" src/*
 
   # DKMS files
-  install -Dm0644 -t "${pkgdir}/usr/src/${_dkmsname}-v${pkgver}" Makefile dkms.conf dkms.post_install dkms.post_remove
-  install -Dm0755 -t "${pkgdir}/usr/src/${_dkmsname}-v${pkgver}" dkms.post_install dkms.post_remove
+  install -Dm0644 -t "${pkgdir}/usr/src/${_dkmsname}-${_pkgver}" Makefile dkms.conf dkms.post_install dkms.post_remove
+  install -Dm0755 -t "${pkgdir}/usr/src/${_dkmsname}-${_pkgver}" dkms.post_install dkms.post_remove
 
   # modprobe aliases
   install -Dm0644 -t "${pkgdir}/usr/lib/modprobe.d" etc-modprobe.d/*

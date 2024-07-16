@@ -7,7 +7,7 @@ pkgbase = xpadneo-dkms
 	depends = bluetooth
 	maintainer = xdavius <xdavius@github.com>
 	source = https://github.com/atar-axis/xpadneo/archive/v0.9.6.tar.gz
-	source = drop-etc-files.patch
-	source = rename-marker.patch
+	source = drop-etc-files.patch::https://aur.archlinux.org/cgit/aur.git/plain/drop-etc-files.patch?h=xpadneo-dkms
+	source = rename-marker.patch::https://aur.archlinux.org/cgit/aur.git/plain/rename-marker.patch?h=xpadneo-dkms
 
 pkgname = xpadneo-dkms
