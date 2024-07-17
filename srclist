@@ -6953,7 +6953,7 @@ pkgname = pacstall-qa-git
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.3
+	pkgver = 3.3.4
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	depends = libdata-compare-perl
 	depends = libfile-chdir-perl
