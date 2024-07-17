@@ -584,7 +584,9 @@ function srcinfo.match_pkg() {
         continue
       fi
     fi
-    [[ ${b} == "${match}" ]] && printf '%s\n' "${!guy}"
+    if [[ ${b} == "${match}" ]]; then
+      printf '%s\n' "${!guy}"
+    fi
   done
 }
 
