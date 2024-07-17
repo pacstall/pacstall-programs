@@ -6,11 +6,12 @@ arch=('amd64')
 url='https://github.com/openSUSE/hwinfo'
 provides=("libhd")
 depends=("libxml-parser-perl" "libxml-writer-perl")
-pacdeps_trixie=("libx86emu")
 makedepends=("flex" "uuid-dev" "libsysfs-dev")
-if [[ ${CDISTRO#*:} != "debian:trixie" ]]; then
+if [[ ${CDISTRO#*:} != "trixie" ]]; then
   makedepends+=("libx86emu-dev")
   depends+=("libx86emu3")
+else
+  pacdeps=("libx86emu")
 fi
 source=("git+https://github.com/openSUSE/hwinfo.git")
 sha256sums=('SKIP')
