@@ -5135,6 +5135,20 @@ pkgbase = libtomlplusplus-header
 
 pkgname = libtomlplusplus-header
 ---
+pkgbase = libx86emu
+	gives = libx86emu3
+	pkgver = 3.5
+	pkgdesc = x86 emulation library
+	url = https://github.com/wfeldt/libx86emu
+	arch = amd64
+	pacdeps = setconf
+	provides = libx86emu-dev
+	maintainer = xdavius <xdavius@github.com>
+	source = git+https://github.com/wfeldt/libx86emu#tag=3.5
+	sha256sums = SKIP
+
+pkgname = libx86emu
+---
 pkgbase = libxapp1-deb
 	gives = libxapp1
 	pkgver = 2.8.2
