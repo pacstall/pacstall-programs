@@ -626,7 +626,7 @@ function srcinfo.repo_check() {
       ret=1
     fi
   done
-  exit "${ret}"
+  return "${ret}"
 }
 
 function srcinfo.list_build() {
