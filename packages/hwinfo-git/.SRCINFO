@@ -1,0 +1,19 @@
+pkgbase = hwinfo-git
+	gives = hwinfo
+	pkgver = 21.82
+	pkgdesc = hwinfo/libhd are used to probe for the hardware present in the system (git version)
+	url = https://github.com/openSUSE/hwinfo
+	arch = amd64
+	depends = libxml-parser-perl
+	depends = libxml-writer-perl
+	depends = libx86emu3
+	makedepends = flex
+	makedepends = uuid-dev
+	makedepends = libsysfs-dev
+	makedepends = libx86emu-dev
+	provides = libhd
+	maintainer = xdavius <xdavius@github.com>
+	source = git+https://github.com/openSUSE/hwinfo.git
+	sha256sums = SKIP
+
+pkgname = hwinfo-git
