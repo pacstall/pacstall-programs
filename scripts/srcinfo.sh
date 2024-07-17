@@ -792,10 +792,10 @@ function srcinfo.cmd() {
       for i in "${@}"; do
         allin+=("packages/${i}/${i}.pacscript")
       done
-      srcinfo.write_out "${allin[@]}"
-      srcinfo.repo_check "${allin[@]}"
-      srcinfo.pkg_list > "packagelist"
-      srcinfo.list_build "srclist"
+      srcinfo.write_out "${allin[@]}" \
+        && srcinfo.repo_check "${allin[@]}" \
+        && srcinfo.pkg_list > "packagelist" \
+        && srcinfo.list_build "srclist"
       ;;
     build)
       case "${2}" in
@@ -831,28 +831,45 @@ function srcinfo.cmd() {
       srcinfo.list_info "srclist" "${2}"
       ;;
     help)
-      local all_cmds=("read" "write" "check" "build" "search" "info") option usage
+      local all_cmds=("add" "search" "info" "build" "read" "write" "check") option usage
       case "${2}" in
-        read)
-          usage="<path/to/.SRCINFO> {pkgbase | pkgname | <variable> [<package> | pkgbase:<package>]}"
-          ;;
-        write | check)
-          usage="{<path/to/1.pacscript> <path/to/2.pacscript>...}"
-          ;;
         add)
           usage="{<package1> <package2>...}"
-          ;;
-        build)
-          usage="{packagelist | srclist | all}"
+          purpose="Generate .SRCINFOs, check their statuses, and update the packagelist + srclist"
           ;;
         search)
           usage="{<package> | <pkgbase>:<pkgname> | <keyword> | <'keyword string'>}"
+          purpose="Search for matching packages and descriptions from the srclist file"
           ;;
         info)
           usage="{<package> | <pkgbase>:<pkgname>}"
+          purpose="Parse a package or child .SRCINFO from the srclist file"
+          ;;
+        build)
+          usage="{packagelist | srclist | all}"
+          purpose="Update the packagelist and/or srclist"
+          ;;
+        read)
+          usage="<path/to/.SRCINFO> {pkgbase | pkgname | <variable> [<package> | pkgbase:<package>]}"
+          purpose="Parse variables and arrays from a .SRCINFO file"
+          ;;
+        write)
+          usage="{<path/to/1.pacscript> <path/to/2.pacscript>...}"
+          purpose="Generate .SRCINFOs for pacscripts"
+          ;;
+        check)
+          usage="{<path/to/1.pacscript> <path/to/2.pacscript>...}"
+          purpose="Check the git status of .SRCINFOs for pacscripts"
+          ;;
+        all)
+          for i in "${all_cmds[@]}"; do
+            ${0} help "${i}"
+          done
+          exit 0
           ;;
         *)
-          usage="{read | write | check | add | build | search | info | help <cmd>}"
+          usage="{add | search | info | build | read | write | check | help [all | <cmd>]}"
+          purpose="Help maintainers and repo owners easily manage package data generation"
           ;;
       esac
       if srcinfo._contains all_cmds "${2}"; then
@@ -860,10 +877,12 @@ function srcinfo.cmd() {
       else
         option="${0}"
       fi
-      printf '[\033[0;33mHELP\033[0m] Usage: \033[0;32m%s\033[0m %s\n' "${option}" "${usage}"
+      printf '[\033[0;33mHELP\033[0m] Command: \033[0;32m%s\033[0m\n' "${option}"
+      printf '   [\033[1;33m?\033[0m] \033[0;32mUsage\033[0m: %s %s\n' "${option}" "${usage}"
+      printf '   [\033[1;33m?\033[0m] \033[0;32mPurpose\033[0m: %s\n' "${purpose}"
       ;;
     *)
-      srcinfo.die "Usage: ${GREEN}${0}${NC} {read | write | check | add | build | search | info | help}"
+      srcinfo.die "Usage: ${GREEN}${0}${NC} {add | search | info | build | read | write | check | help}"
       ;;
   esac
 }
