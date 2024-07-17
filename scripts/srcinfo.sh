@@ -648,6 +648,7 @@ function srcinfo.list_build() {
       echo "${line}" >> "${tmploc}"
     done < "${i}"
   done
+  rm -f "${FILE}"
   mv "${tmploc}" "${FILE}"
 }
 
