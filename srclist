@@ -10268,21 +10268,24 @@ pkgname = viper4linux
 ---
 pkgbase = virtualbox-deb
 	gives = virtualbox-7.0
-	pkgver = 7.0.18
+	pkgver = 7.0.20
 	pkgdesc = VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use
 	arch = amd64
 	breaks = virtualbox-7.0-bin
-	incompatible = debian:testing
+	incompatible = debian:trixie
 	incompatible = debian:sid
 	incompatible = ubuntu:mantic
-	incompatible = ubuntu:noble
+	incompatible = ubuntu:oracular
 	incompatible = ubuntu:devel
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
+	maintainer = xdavius <xdavius@github.com>
 	repology = project: virtualbox-7.0
-	source_ubuntu = https://download.virtualbox.org/virtualbox/7.0.18/virtualbox-7.0_7.0.18-162988~Ubuntu~jammy_amd64.deb
-	source_bookworm = https://download.virtualbox.org/virtualbox/7.0.18/virtualbox-7.0_7.0.18-162988~Debian~bookworm_amd64.deb
-	sha256sums_ubuntu = 9676421d588478d389d87dbc29bc0a259163c061ae9bd763e43ff807650bf9b6
-	sha256sums_bookworm = a8a65f3b77ace18abf48440859ba0fcfe33cba02d745ab7f12eb19fc18338298
+	source_jammy = https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~jammy_amd64.deb
+	source_noble = https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
+	source_bookworm = https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Debian~bookworm_amd64.deb
+	sha256sums_jammy = fbc338b127a13bc49a0d14145faf98324cce245e8e0c18e1b1f642bd0d54f622
+	sha256sums_noble = f0aadadad827e02d73721e2d746a236bfa343598f0ae9b612a24960fe8b8d6ca
+	sha256sums_bookworm = c017d5f7b043b1b12bface26b497129ac2e35e11adf0fba88b076bc8024fdcde
 
 pkgname = virtualbox-deb
 ---
