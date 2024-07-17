@@ -15,6 +15,5 @@ pkgbase = hwinfo-git
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://github.com/openSUSE/hwinfo.git
 	sha256sums = SKIP
-	pacdeps_trixie = libx86emu
 
 pkgname = hwinfo-git
