@@ -11008,6 +11008,20 @@ pkgbase = xonotic
 
 pkgname = xonotic
 ---
+pkgbase = xpadneo-dkms
+	gives = xpadneo-dkms
+	pkgver = 0.9.6
+	pkgdesc = Advanced Linux Driver for Xbox One S/X Wireless Gamepad
+	url = https://github.com/atar-axis/xpadneo
+	depends = dkms
+	depends = bluetooth
+	maintainer = xdavius <xdavius@github.com>
+	source = https://github.com/atar-axis/xpadneo/archive/v0.9.6.tar.gz
+	source = drop-etc-files.patch::https://aur.archlinux.org/cgit/aur.git/plain/drop-etc-files.patch?h=xpadneo-dkms
+	source = rename-marker.patch::https://aur.archlinux.org/cgit/aur.git/plain/rename-marker.patch?h=xpadneo-dkms
+
+pkgname = xpadneo-dkms
+---
 pkgbase = yabridge
 	pkgver = 5.0.5
 	pkgdesc = A modern and transparent way to use Windows VST2 and VST3 plugins on Linux.
