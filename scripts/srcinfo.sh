@@ -769,10 +769,17 @@ function srcinfo.list_info() {
   ' "${FILE}"
 }
 
+function srcinfo.head_only() {
+  if ! [[ -d "packages" && -d "scripts" && -f "distrolist" ]]; then
+    srcinfo.die "This command can only be run from the head of a repository"
+  fi
+}
+
 function srcinfo.cmd() {
   export GREEN=$'\033[0;32m' NC=$'\033[0m'
   case "${1}" in
     write)
+      [[ ! -f "distrolist" ]] && srcinfo.die "distrolist file required to generate .SRCINFO"
       shift 1
       # list of packages to write to
       ((${#@} < 1)) && srcinfo.die "Usage: ${GREEN}write${NC} {<path/to/1.pacscript> <path/to/2.pacscript>...}"
@@ -784,7 +791,13 @@ function srcinfo.cmd() {
       ((${#@} < 1)) && srcinfo.die "Usage: ${GREEN}check${NC} {<path/to/1.pacscript> <path/to/2.pacscript>...}"
       srcinfo.repo_check "${@}"
       ;;
+    read)
+      [[ -z ${3} || ${2} == *".pacscript" ]] && srcinfo.die "Usage: ${GREEN}read${NC} <path/to/.SRCINFO> {pkgbase | pkgname | <variable> [<package> | pkgbase:<package>]}"
+      # shellcheck disable=SC2086
+      srcinfo.match_pkg "${2}" "${3}" ${4}
+      ;;
     add)
+      srcinfo.head_only
       shift 1
       # check if .SRCINFOs exist
       ((${#@} < 1)) && srcinfo.die "Usage: ${GREEN}add${NC} {<package1> <package2>...}"
@@ -798,6 +811,7 @@ function srcinfo.cmd() {
         && srcinfo.list_build "srclist"
       ;;
     build)
+      srcinfo.head_only
       case "${2}" in
         packagelist)
           srcinfo.pkg_list > "packagelist"
@@ -814,18 +828,15 @@ function srcinfo.cmd() {
           ;;
       esac
       ;;
-    read)
-      [[ -z ${3} ]] && srcinfo.die "Usage: ${GREEN}read${NC} <path/to/.SRCINFO> {pkgbase | pkgname | <variable> [<package> | pkgbase:<package>]}"
-      # shellcheck disable=SC2086
-      srcinfo.match_pkg "${2}" "${3}" ${4}
-      ;;
     search)
+      srcinfo.head_only
       [[ -z ${2} ]] && srcinfo.die "Usage: ${GREEN}search${NC} {<package> | <pkgbase>:<pkgname> | <keyword> | <'keyword string'>}"
       [[ ! -f "packagelist" ]] && srcinfo.pkg_list > "packagelist"
       [[ ! -f "srclist" ]] && srcinfo.list_build "srclist"
       srcinfo.list_parse "srclist" "packagelist" "${2}"
       ;;
     info)
+      srcinfo.head_only
       [[ -z ${2} ]] && srcinfo.die "Usage: ${GREEN}info${NC} {<package> | <pkgbase>:<pkgname>}"
       [[ ! -f "srclist" ]] && srcinfo.list_build "srclist"
       srcinfo.list_info "srclist" "${2}"
@@ -887,8 +898,5 @@ function srcinfo.cmd() {
   esac
 }
 
-if ! [[ -d "packages" && -d "scripts" && -f "distrolist" ]]; then
-  srcinfo.die "This script can only be run from the head of a repository"
-fi
 srcinfo.cmd "${@}"
 # vim:set ft=sh ts=2 sw=4 noet:
