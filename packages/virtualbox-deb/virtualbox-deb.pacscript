@@ -14,7 +14,7 @@ sha256sums_bookworm="c017d5f7b043b1b12bface26b497129ac2e35e11adf0fba88b076bc8024
 source_jammy=("https://download.virtualbox.org/virtualbox/${pkgver}/virtualbox-7.0_${pkgver}-${release}~Ubuntu~jammy_amd64.deb")
 sha256sums_jammy="fbc338b127a13bc49a0d14145faf98324cce245e8e0c18e1b1f642bd0d54f622"
 
-source_noble=("https://download.virtualbox.org/virtualbox/${pkgver}/virtualbox-7.0_${pkgver}-${release}~Ubuntu~jammy_amd64.deb")
+source_noble=("https://download.virtualbox.org/virtualbox/${pkgver}/virtualbox-7.0_${pkgver}-${release}~Ubuntu~noble_amd64.deb")
 sha256sums_noble="f0aadadad827e02d73721e2d746a236bfa343598f0ae9b612a24960fe8b8d6ca"
 
 incompatible=("debian:testing" "debian:sid" "ubuntu:mantic" "ubuntu:devel")
