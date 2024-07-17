@@ -1,12 +1,12 @@
 pkgname="naps2-deb"
 gives="naps2"
-depends=("libsane2")
+depends=("libsane1")
 repology=("project: ${gives}")
-pkgver="7.4.2"
+pkgver="7.4.3"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("b81bedd28f2f1774fc0fb7c9e5b60ace295b148214239bbfca46df6c198b305d")
+sha256sums_arm64=("948e0d195f29b5424ffbbf155284f6b00270aaaa6e371d9b8d45b60e10bc43cd")
 source_arm64=("https://github.com/cyanfish/${gives}/releases/download/v${pkgver}/${gives}-${pkgver}-linux-arm64.deb")
-sha256sums_amd64=("8ed4d4cf00b8270f841510b2cb848ddfa7627fcd60b8f29adb30878b5b56d48a")
+sha256sums_amd64=("d27342288cc78ddea3542a98f32e4987636e5529684e90202ca5150ca27872da")
 source_amd64=("https://github.com/cyanfish/${gives}/releases/download/v${pkgver}/${gives}-${pkgver}-linux-x64.deb")
 pkgdesc="NAPS2 is a document scanning application with a focus on simplicity and ease of use"
 maintainer=("vbrabandt2005 <vbrabandt@proton.me>")
