@@ -11290,14 +11290,14 @@ pkgname = zoho-notebook-deb
 ---
 pkgbase = zoom-deb
 	gives = zoom
-	pkgver = 6.1.0.198
+	pkgver = 6.1.1.443
 	pkgdesc = Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution.
 	arch = amd64
 	replaces = zoom
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: zoom-videoconference
-	source = https://zoom.us/client/6.1.0.198/zoom_amd64.deb
-	sha256sums = fbd16cbe8d401cc0b5b5924469bfea80196f0ec5df9cdc392d03279b56a5e871
+	source = https://zoom.us/client/6.1.1.443/zoom_amd64.deb
+	sha256sums = 7469580465c356d59ce20bb0a7a93778ab035731c0f3f3ba332cf9ee856e2b7f
 
 pkgname = zoom-deb
 ---
