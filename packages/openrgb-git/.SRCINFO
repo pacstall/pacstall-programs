@@ -14,6 +14,7 @@ pkgbase = openrgb-git
 	makedepends = libusb-1.0-0-dev
 	makedepends = libhidapi-dev
 	makedepends = libmbedtls-dev
+	makedepends = pkgconf
 	optdepends = i2c-tools: Motherboard & RAM access
 	conflicts = openrgb
 	provides = openrgb
