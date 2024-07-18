@@ -4,12 +4,19 @@ This is the default repository of pacscripts which [pacstall](https://github.com
 
 ```monospace
 package-repository/
+├── distrolist
 ├── packagelist
+├── srclist
+├── scripts/
+│   ├── repo-script1.sh
+│   └── repo-script2.sh
 └── packages/
-    └── example-package1/
-    |   └── example-package1.pacscript
+    ├── example-package1/
+    │   ├── example-package1.pacscript
+    │   └── .SRCINFO
     └── example-package2/
-        └── example-package2.pacscript
+        ├── example-package2.pacscript
+        └── .SRCINFO
 ```
 
 You can then use `pacstall -A` command to add your repository to your `repolist`. Consult the wiki for more info.
@@ -28,6 +35,14 @@ Here are the development dependencies that you need to install as a developer:
 | [shellcheck](https://www.shellcheck.net/)           | `pacstall -PI shellcheck-bin`       |
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3)          | `pacstall -PI shfmt-bin`            |
 | [editor-config](https://editorconfig.org/#download) | Install the plugin for your editor  |
+
+Additionally, we have created the following tools to improve package maintainence:
+
+| Maintainence Tool                                                                                               | How to install                                           |
+:----------------------------------------------------------------------------------------------------------------:|----------------------------------------------------------|
+| [pacup](https://github.com/pacstall/pacup) - keep packages up to date                                           | `pacstall -PI pacup` (stable) or `pacup-git` (develop)   |
+| [--quality-assurance](https://github.com/pacstall/pacstall) - test PRs before being merged                      | `pacstall -Qa` (built-in, `pacstall`)                    |
+| [srcinfo.sh](https://github.com/pacstall/pacstall-programs/blob/master/scripts/srcinfo.sh) - generate repo data | `./scripts/srcinfo.sh` (built-in, `pacstall-programs`)   |
 
 After the dependencies are installed simply clone this repository, and use `pre-commit install` to install the pre-configured hooks to your cloned repository.
 
