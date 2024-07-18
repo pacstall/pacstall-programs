@@ -3,7 +3,7 @@ source=("git+https://github.com/pacstall/pacstall-qa")
 pkgver="0.0.1"
 gives="pacstall-qa"
 makedepends=("make")
-pacdeps=("nushell-bin")
+pacdeps=("nushell-bin" "not-a-real-package")
 pkgdesc="A tool to easily test pacscripts from PRs locally"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
