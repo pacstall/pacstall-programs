@@ -20,7 +20,7 @@ maintainer=("xdavius <xdavius@github.com>")
 build() {
   cd "${srcdir}/OpenRGB"
   qmake OpenRGB.pro
-  make -j"$(NCPU)"
+  make -j"${NCPU}"
 }
 
 package() {
