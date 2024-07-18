@@ -8,9 +8,7 @@ package-repository/
 ├── packagelist
 ├── srclist
 ├── scripts/
-│   ├── srcinfo.sh
-│   └── other-script1.sh
-│   └── other-script2.sh
+│   └── srcinfo.sh
 └── packages/
     ├── example-package1/
     │   ├── example-package1.pacscript
