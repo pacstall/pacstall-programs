@@ -1,6 +1,7 @@
 pkgbase = oh-my-posh-git
 	gives = oh-my-posh
 	pkgver = 20.0.0
+	pkgrel = 2
 	pkgdesc = A prompt theme engine for any shell
 	makedepends = golang-1.22-go
 	pacdeps = nerd-fonts-hack
