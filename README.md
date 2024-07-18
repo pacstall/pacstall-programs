@@ -8,8 +8,9 @@ package-repository/
 ├── packagelist
 ├── srclist
 ├── scripts/
-│   ├── repo-script1.sh
-│   └── repo-script2.sh
+│   ├── srcinfo.sh
+│   └── other-script1.sh
+│   └── other-script2.sh
 └── packages/
     ├── example-package1/
     │   ├── example-package1.pacscript
@@ -38,11 +39,11 @@ Here are the development dependencies that you need to install as a developer:
 
 Additionally, we have created the following tools to improve package maintainence:
 
-| Maintainence Tool                                                                                               | How to install                                           |
-:----------------------------------------------------------------------------------------------------------------:|----------------------------------------------------------|
-| [pacup](https://github.com/pacstall/pacup) - keep packages up to date                                           | `pacstall -PI pacup` (stable) or `pacup-git` (develop)   |
-| [--quality-assurance](https://github.com/pacstall/pacstall) - test PRs before being merged                      | `pacstall -Qa` (built-in, `pacstall`)                    |
-| [srcinfo.sh](https://github.com/pacstall/pacstall-programs/blob/master/scripts/srcinfo.sh) - generate repo data | `./scripts/srcinfo.sh` (built-in, `pacstall-programs`)   |
+| Maintainence Tool | Purpose | How to install |
+:------------------:|--------:|----------------|
+| [pacup](https://github.com/pacstall/pacup) | keep packages up to date | `pacstall -PI pacup` (stable) or `pacup-git` (develop) |
+| [quality-assurance.sh](https://github.com/pacstall/pacstall/blob/master/scripts/quality-assurance.sh) | test PRs before being merged | `pacstall -Qa` (built-in, pacstall) |
+| [srcinfo.sh](https://github.com/pacstall/pacstall-programs/blob/master/scripts/srcinfo.sh) | generate repo data | `./scripts/srcinfo.sh` (built-in, pacstall-programs) |
 
 After the dependencies are installed simply clone this repository, and use `pre-commit install` to install the pre-configured hooks to your cloned repository.
 
