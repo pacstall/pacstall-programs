@@ -1,6 +1,6 @@
 pkgbase = rstudio-deb
 	gives = rstudio
-	pkgver = 2024.04.2-764
+	pkgver = 2024.04.2.764
 	pkgdesc = RStudio is an integrated development environment (IDE) for R
 	arch = amd64
 	maintainer = Zahrun <Zahrun@github.com>
