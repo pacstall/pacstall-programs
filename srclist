@@ -7032,7 +7032,6 @@ pkgbase = pacstall-qa-git
 	pkgdesc = A tool to easily test pacscripts from PRs locally
 	makedepends = make
 	pacdeps = nushell-bin
-	pacdeps = not-a-real-package
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = git+https://github.com/pacstall/pacstall-qa
 
