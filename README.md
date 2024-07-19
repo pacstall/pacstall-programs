@@ -20,7 +20,8 @@ package-repository/
 └── srclist
 ```
 
-You can then use `pacstall -A` command to add your repository to your `pacstallrepo` list. Consult the wiki for more info.
+You can then use `pacstall -A` command to add a repository to your `pacstallrepo` list.
+Consult the manpage (run `man pacstall 8`) for more info.
 
 ## How to setup the environment for pacscript development
 
@@ -30,8 +31,8 @@ This repository maintains a certain standard of commits. To ensure that your com
 
 Here are the development dependencies that you need to install as a developer:
 
-| Dependency | Purpose                                | How to install                      |
-|:-----------|:--------------------------------------:|-------------------------------------|
+| Dependency | Purpose | How to install |
+|:-----------|:-------:|----------------|
 | [pre-commit](https://pre-commit.com/) | runs a series of formatting checks on git commits | `sudo pip install pre-commit` |
 | [shellcheck](https://www.shellcheck.net/) | checks for formatting and scripting issues | `pacstall -I shellcheck-bin` |
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | attempts to correct certain formatting issues | `pacstall -I shfmt-bin` |
