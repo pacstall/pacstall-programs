@@ -8,7 +8,9 @@ package-repository/
 ├── packagelist
 ├── srclist
 ├── scripts/
-│   └── srcinfo.sh
+│   ├── srcinfo.sh
+│   ├── custom-script1.sh
+│   └── custom-script2.sh
 └── packages/
     ├── example-package1/
     │   ├── example-package1.pacscript
@@ -18,7 +20,7 @@ package-repository/
         └── .SRCINFO
 ```
 
-You can then use `pacstall -A` command to add your repository to your `repolist`. Consult the wiki for more info.
+You can then use `pacstall -A` command to add your repository to your `pacstallrepo` list. Consult the wiki for more info.
 
 ## How to setup the environment for pacscript development
 
