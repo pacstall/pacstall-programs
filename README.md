@@ -4,15 +4,24 @@ This is the default repository of pacscripts which [pacstall](https://github.com
 
 ```monospace
 package-repository/
+├── packages/
+│   ├── example-package1/
+│   │   ├── example-package1.pacscript
+│   │   └── .SRCINFO
+│   └── example-package2/
+│       ├── example-package2.pacscript
+│       └── .SRCINFO
+├── scripts/
+│   ├── srcinfo.sh
+│   ├── custom-script1.sh
+│   └── custom-script2.sh
+├── distrolist
 ├── packagelist
-└── packages/
-    └── example-package1/
-    |   └── example-package1.pacscript
-    └── example-package2/
-        └── example-package2.pacscript
+└── srclist
 ```
 
-You can then use `pacstall -A` command to add your repository to your `repolist`. Consult the wiki for more info.
+You can then use `pacstall -A` command to add a repository to your `pacstallrepo` list.
+Consult the manpage (run `man pacstall 8`) for more info.
 
 ## How to setup the environment for pacscript development
 
@@ -22,18 +31,26 @@ This repository maintains a certain standard of commits. To ensure that your com
 
 Here are the development dependencies that you need to install as a developer:
 
-| Dependency                                          | How to install                      |
-:----------------------------------------------------:|-------------------------------------|
-| [pre-commit](https://pre-commit.com/)               | `sudo pip install pre-commit`       |
-| [shellcheck](https://www.shellcheck.net/)           | `pacstall -PI shellcheck-bin`       |
-| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3)          | `pacstall -PI shfmt-bin`            |
-| [editor-config](https://editorconfig.org/#download) | Install the plugin for your editor  |
+| Dependency | Purpose | How to install |
+|:-----------|:-------:|----------------|
+| [pre-commit](https://pre-commit.com/) | runs a series of formatting checks on git commits | `sudo pip install pre-commit` |
+| [shellcheck](https://www.shellcheck.net/) | checks for formatting and scripting issues | `pacstall -I shellcheck-bin` |
+| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | attempts to correct certain formatting issues | `pacstall -I shfmt-bin` |
+| [editor-config](https://editorconfig.org/#download) | ensures proper tabs when using a file editor | Install the plugin for your preferred editor |
 
 After the dependencies are installed simply clone this repository, and use `pre-commit install` to install the pre-configured hooks to your cloned repository.
 
 Now, whenever you try to commit a patch all the configured hooks will run and block/fix your code so that it adheres to or standards.
 
 In case for some reason (false positives etc), you want to skip the hooks commit using `git commit --no-verify`
+
+Additionally, we have created the following tools to improve package maintainence:
+
+| Maintainence Tool | Purpose | How to install |
+|:-----------------|:-------:|----------------|
+| [pacup](https://github.com/pacstall/pacup) | keep packages up to date | `pacstall -I pacup` (stable) or `pacstall -I pacup-git` (develop) |
+| [quality-assurance.sh](https://github.com/pacstall/pacstall/blob/master/scripts/quality-assurance.sh) | test PRs before being merged | `pacstall -Qa` (built-in, pacstall) |
+| [srcinfo.sh](https://github.com/pacstall/pacstall-programs/blob/master/scripts/srcinfo.sh) | generate and read repo data | `./scripts/srcinfo.sh` (built-in, pacstall-programs) |
 
 ## License
 
