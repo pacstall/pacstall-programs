@@ -32,21 +32,6 @@ pkgbase = adapta-gtk-theme-git
 
 pkgname = adapta-gtk-theme-git
 ---
-pkgbase = adw-gtk3
-	gives = adw-gtk3
-	pkgver = 5.3
-	pkgdesc = An unofficial GTK3 port of libadwaita.
-	arch = any
-	breaks = adw-gtk3
-	breaks = adw-gtk3-git
-	maintainer = Herisson <spaceguybox@outlook.com>
-	repology = project: adw-gtk3
-	repology = repo: aur
-	source = https://github.com/lassekongo83/adw-gtk3/releases/download/v5.3/adw-gtk3v5.3.tar.xz
-	sha256sums = 2e6e87935bef30936e40d07c7af4fd20754e77917be224f61c4346867196bef0
-
-pkgname = adw-gtk3
----
 pkgbase = adw-gtk-theme
 	pkgver = 1.1
 	pkgdesc = LibAdwaita Theme for all GTK3 and GTK4 Apps NOTE: This is a meta package which uses adw-gtk3 for GTK3 and official LibAdwaita theme for GTK4
@@ -63,6 +48,21 @@ pkgbase = adw-gtk-theme
 	sha256sums = 66e436ab0968d8c126fa7f274baa40cad2c36792fae3689e75c36231b0138063
 
 pkgname = adw-gtk-theme
+---
+pkgbase = adw-gtk3
+	gives = adw-gtk3
+	pkgver = 5.3
+	pkgdesc = An unofficial GTK3 port of libadwaita.
+	arch = any
+	breaks = adw-gtk3
+	breaks = adw-gtk3-git
+	maintainer = Herisson <spaceguybox@outlook.com>
+	repology = project: adw-gtk3
+	repology = repo: aur
+	source = https://github.com/lassekongo83/adw-gtk3/releases/download/v5.3/adw-gtk3v5.3.tar.xz
+	sha256sums = 2e6e87935bef30936e40d07c7af4fd20754e77917be224f61c4346867196bef0
+
+pkgname = adw-gtk3
 ---
 pkgbase = alacritty
 	pkgver = 0.13.2
@@ -104,19 +104,6 @@ pkgbase = amfora-bin
 
 pkgname = amfora-bin
 ---
-pkgbase = ananicy-cpp
-	pkgver = 1.1.0
-	pkgdesc = Rewrite of Ananicy in C++
-	makedepends = cmake
-	makedepends = g++
-	makedepends = libsystemd-dev
-	makedepends = ninja-build
-	repology = project: ananicy-cpp
-	source = https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v1.1.0/ananicy-cpp-v1.1.0.tar.gz
-	sha256sums = 49f59e8fa842c7603be344b7317eace773c3e416d881dae4ad7779b39b03fc4a
-
-pkgname = ananicy-cpp
----
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
 	pkgver = 3.10.1
@@ -144,6 +131,19 @@ pkgbase = an-anime-game-launcher-bin
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
+---
+pkgbase = ananicy-cpp
+	pkgver = 1.1.0
+	pkgdesc = Rewrite of Ananicy in C++
+	makedepends = cmake
+	makedepends = g++
+	makedepends = libsystemd-dev
+	makedepends = ninja-build
+	repology = project: ananicy-cpp
+	source = https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v1.1.0/ananicy-cpp-v1.1.0.tar.gz
+	sha256sums = 49f59e8fa842c7603be344b7317eace773c3e416d881dae4ad7779b39b03fc4a
+
+pkgname = ananicy-cpp
 ---
 pkgbase = android-studio-canary
 	gives = android-studio
@@ -653,6 +653,19 @@ pkgbase = bat-deb
 
 pkgname = bat-deb
 ---
+pkgbase = bat
+	pkgver = 0.24.0
+	pkgdesc = A cat(1) clone with wings
+	depends = libonig5
+	makedepends = cargo
+	makedepends = libonig-dev
+	makedepends = pkg-config
+	replaces = bat
+	source = https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
+	sha256sums = 907554a9eff239f256ee8fe05a922aad84febe4fe10a499def72a4557e9eedfb
+
+pkgname = bat
+---
 pkgbase = batsignal
 	pkgver = 1.6.4
 	pkgdesc = A lightweight battery monitor daemon
@@ -667,19 +680,6 @@ pkgbase = batsignal
 	sha256sums = 58439dac2b678ab798831fe861c06d2d5c128c4bb4bae1476a62ba1771da3983
 
 pkgname = batsignal
----
-pkgbase = bat
-	pkgver = 0.24.0
-	pkgdesc = A cat(1) clone with wings
-	depends = libonig5
-	makedepends = cargo
-	makedepends = libonig-dev
-	makedepends = pkg-config
-	replaces = bat
-	source = https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
-	sha256sums = 907554a9eff239f256ee8fe05a922aad84febe4fe10a499def72a4557e9eedfb
-
-pkgname = bat
 ---
 pkgbase = bazecor-app
 	gives = bazecor
@@ -2379,6 +2379,16 @@ pkgbase = fake-ubuntu-advantage-tools-deb
 
 pkgname = fake-ubuntu-advantage-tools-deb
 ---
+pkgbase = fast
+	pkgver = 0.0.4
+	pkgdesc = Minimal zero-dependency utility for testing your internet download speed from terminal
+	arch = amd64
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64
+	sha256sums = 2775964dc15c0d677eefa4a391559689ebd4c8c8169d3b6c717c15f804f89bf6
+
+pkgname = fast
+---
 pkgbase = fastfetch-git
 	gives = fastfetch
 	pkgver = 2.9.1
@@ -2423,16 +2433,6 @@ pkgbase = fastfetch-git
 	source = https://github.com/LinusDierheimer/fastfetch.git
 
 pkgname = fastfetch-git
----
-pkgbase = fast
-	pkgver = 0.0.4
-	pkgdesc = Minimal zero-dependency utility for testing your internet download speed from terminal
-	arch = amd64
-	maintainer = Elsie19 <elsie19@pm.me>
-	source = https://github.com/ddo/fast/releases/download/v0.0.4/fast_linux_amd64
-	sha256sums = 2775964dc15c0d677eefa4a391559689ebd4c8c8169d3b6c717c15f804f89bf6
-
-pkgname = fast
 ---
 pkgbase = fblog-deb
 	gives = fblog
@@ -2995,16 +2995,6 @@ pkgbase = gir1.2-xapp-1.0-deb
 
 pkgname = gir1.2-xapp-1.0-deb
 ---
-pkgbase = gitblade-deb
-	gives = gitblade
-	pkgver = 1.0.6
-	pkgdesc = Simple and elegant Git GUI client.
-	arch = amd64
-	source = https://gitblade.com/ppa/gitblade_1.0.6_amd64.deb
-	sha256sums = 06099839154579c28dd1a28dd631d23eff9b6a3a59c3d9b14ff04878956b4e2c
-
-pkgname = gitblade-deb
----
 pkgbase = git-butler-deb
 	gives = git-butler
 	pkgver = 0.10.22-703
@@ -3060,6 +3050,42 @@ pkgbase = git-extras-git
 	source = https://github.com/tj/git-extras.git
 
 pkgname = git-extras-git
+---
+pkgbase = git
+	pkgver = 2.45.0
+	pkgdesc = git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals
+	makedepends = dh-autoreconf
+	makedepends = cmake
+	makedepends = gcc
+	makedepends = libcurl4-gnutls-dev
+	makedepends = libexpat1-dev
+	makedepends = gettext
+	makedepends = libz-dev
+	makedepends = libssl-dev
+	makedepends = asciidoc
+	makedepends = xmlto
+	makedepends = docbook2x
+	makedepends = install-info
+	makedepends = zlib1g-dev
+	makedepends = zlib1g
+	breaks = git-git
+	replaces = git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: git
+	source = https://www.kernel.org/pub/software/scm/git/git-2.45.0.tar.gz
+	sha256sums = a0fc1410878716add0a3c0cf3d35728f3a7c960f751c657656cca0212bf89e65
+
+pkgname = git
+---
+pkgbase = gitblade-deb
+	gives = gitblade
+	pkgver = 1.0.6
+	pkgdesc = Simple and elegant Git GUI client.
+	arch = amd64
+	source = https://gitblade.com/ppa/gitblade_1.0.6_amd64.deb
+	sha256sums = 06099839154579c28dd1a28dd631d23eff9b6a3a59c3d9b14ff04878956b4e2c
+
+pkgname = gitblade-deb
 ---
 pkgbase = gitfiend-deb
 	gives = gitfiend
@@ -3141,32 +3167,6 @@ pkgbase = gitkraken-deb
 
 pkgname = gitkraken-deb
 ---
-pkgbase = git
-	pkgver = 2.45.0
-	pkgdesc = git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals
-	makedepends = dh-autoreconf
-	makedepends = cmake
-	makedepends = gcc
-	makedepends = libcurl4-gnutls-dev
-	makedepends = libexpat1-dev
-	makedepends = gettext
-	makedepends = libz-dev
-	makedepends = libssl-dev
-	makedepends = asciidoc
-	makedepends = xmlto
-	makedepends = docbook2x
-	makedepends = install-info
-	makedepends = zlib1g-dev
-	makedepends = zlib1g
-	breaks = git-git
-	replaces = git
-	maintainer = Oren Klopfer <oren@taumoda.com>
-	repology = project: git
-	source = https://www.kernel.org/pub/software/scm/git/git-2.45.0.tar.gz
-	sha256sums = a0fc1410878716add0a3c0cf3d35728f3a7c960f751c657656cca0212bf89e65
-
-pkgname = git
----
 pkgbase = gitui-git
 	gives = gitui
 	pkgver = 0.26.3
@@ -3179,6 +3179,7 @@ pkgbase = gitui-git
 	makedepends = git
 	makedepends = cargo
 	makedepends = python3
+	makedepends = cmake
 	incompatible = debian:bookworm
 	maintainer = pythoncrazy <pinakpaliwal07@gmail.com>
 	source = https://github.com/extrawurst/gitui.git
@@ -3277,6 +3278,21 @@ pkgbase = go-bin
 	sha256sums = 3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4
 
 pkgname = go-bin
+---
+pkgbase = go-task-deb
+	gives = task
+	pkgver = 3.38.0
+	pkgdesc = A task runner / simpler Make alternative written in Go
+	arch = amd64
+	arch = arm64
+	maintainer = lfromanini <lfromanini@yahoo.com>
+	repology = project: task
+	source_amd64 = https://github.com/go-task/task/releases/download/v3.38.0/task_linux_amd64.deb
+	sha256sums_amd64 = 5668c3840456ecfb32b6af9ed139145b60444e8fa43890a65dc1af8f95a940a4
+	source_arm64 = https://github.com/go-task/task/releases/download/v3.38.0/task_linux_arm64.deb
+	sha256sums_arm64 = 4db8c450e1a6c529e1ba470d708ae5bc4dccf0c83b8e0665ee1f970c05e993d1
+
+pkgname = go-task-deb
 ---
 pkgbase = goldberg-emulator-git
 	gives = goldberg-emulator
@@ -3377,21 +3393,6 @@ pkgbase = google-earth-pro-stable-deb
 	sha256sums = 88e8b1a8e09f08c8daac8e21d803d19203a725e1ff8437a65dc8fba753a12c3e
 
 pkgname = google-earth-pro-stable-deb
----
-pkgbase = go-task-deb
-	gives = task
-	pkgver = 3.38.0
-	pkgdesc = A task runner / simpler Make alternative written in Go
-	arch = amd64
-	arch = arm64
-	maintainer = lfromanini <lfromanini@yahoo.com>
-	repology = project: task
-	source_amd64 = https://github.com/go-task/task/releases/download/v3.38.0/task_linux_amd64.deb
-	sha256sums_amd64 = 5668c3840456ecfb32b6af9ed139145b60444e8fa43890a65dc1af8f95a940a4
-	source_arm64 = https://github.com/go-task/task/releases/download/v3.38.0/task_linux_arm64.deb
-	sha256sums_arm64 = 4db8c450e1a6c529e1ba470d708ae5bc4dccf0c83b8e0665ee1f970c05e993d1
-
-pkgname = go-task-deb
 ---
 pkgbase = goverlay-bin
 	gives = goverlay
@@ -3737,30 +3738,6 @@ pkgbase = hakuneko-deb
 
 pkgname = hakuneko-deb
 ---
-pkgbase = hamclock-bigger
-	pkgver = 4.03
-	pkgdesc = Clock and world map with extra features for amateur radio (2400x1440 version)
-	url = https://clearskyinstitute.com/ham/HamClock
-	makedepends = gcc
-	makedepends = make
-	makedepends = pkg-config
-	makedepends = libxau6
-	makedepends = libx11-6
-	makedepends = libx11-dev
-	makedepends = libxcb1
-	breaks = hamclock
-	breaks = hamclock-big
-	breaks = hamclock-huge
-	replaces = hamclock-bigger
-	maintainer = Roy Williams <fang64@gmail.com>
-	repology = project: hamclock-bigger
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.03.tar.gz
-	source = hamclock.desktop
-	sha256sums = 801f00b8574a7cd491cf7257f100ae64bc67f9741428ee8c0dc52aed0227346a
-	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
-
-pkgname = hamclock-bigger
----
 pkgbase = hamclock-big
 	pkgver = 4.03
 	pkgrel = 3
@@ -3785,6 +3762,30 @@ pkgbase = hamclock-big
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-big
+---
+pkgbase = hamclock-bigger
+	pkgver = 4.03
+	pkgdesc = Clock and world map with extra features for amateur radio (2400x1440 version)
+	url = https://clearskyinstitute.com/ham/HamClock
+	makedepends = gcc
+	makedepends = make
+	makedepends = pkg-config
+	makedepends = libxau6
+	makedepends = libx11-6
+	makedepends = libx11-dev
+	makedepends = libxcb1
+	breaks = hamclock
+	breaks = hamclock-big
+	breaks = hamclock-huge
+	replaces = hamclock-bigger
+	maintainer = Roy Williams <fang64@gmail.com>
+	repology = project: hamclock-bigger
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.03.tar.gz
+	source = hamclock.desktop
+	sha256sums = 801f00b8574a7cd491cf7257f100ae64bc67f9741428ee8c0dc52aed0227346a
+	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
+
+pkgname = hamclock-bigger
 ---
 pkgbase = hamclock-huge
 	pkgver = 4.03
@@ -4300,6 +4301,16 @@ pkgbase = insync-deb
 
 pkgname = insync-deb
 ---
+pkgbase = intel-undervolt
+	pkgver = 1.7
+	pkgdesc = Tool for undervolting and throttling limits alteration for Intel CPUs
+	makedepends = pkg-config
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://github.com/kitsunyan/intel-undervolt/archive/refs/tags/1.7.tar.gz
+	sha256sums = 29a7ebaee4830d65d0b5cefa6d497887d4f23f34659876dfe944f3a020cf33ff
+
+pkgname = intel-undervolt
+---
 pkgbase = intellij-idea-community-bin
 	gives = intellij-idea-community
 	pkgver = 2024.1
@@ -4318,16 +4329,6 @@ pkgbase = intellij-idea-community-bin
 	sha256sums_arm64 = 20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293
 
 pkgname = intellij-idea-community-bin
----
-pkgbase = intel-undervolt
-	pkgver = 1.7
-	pkgdesc = Tool for undervolting and throttling limits alteration for Intel CPUs
-	makedepends = pkg-config
-	maintainer = Elsie19 <elsie19@pm.me>
-	source = https://github.com/kitsunyan/intel-undervolt/archive/refs/tags/1.7.tar.gz
-	sha256sums = 29a7ebaee4830d65d0b5cefa6d497887d4f23f34659876dfe944f3a020cf33ff
-
-pkgname = intel-undervolt
 ---
 pkgbase = internxt-deb
 	gives = internxt-drive
@@ -5357,6 +5358,20 @@ pkgbase = linux-image-unsigned-stable-deb
 
 pkgname = linux-image-unsigned-stable-deb
 ---
+pkgbase = linux-kernel-stable
+	pkgver = 6.9.3
+	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
+	pacdeps = linux-headers-stable-deb
+	pacdeps = linux-headers-generic-stable-deb
+	pacdeps = linux-modules-stable-deb
+	pacdeps = linux-image-unsigned-stable-deb
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: linux
+	repology = repo: distrowatch
+	source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
+
+pkgname = linux-kernel-stable
+---
 pkgbase = linux-kernel
 	pkgver = 6.10~rc2
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
@@ -5372,20 +5387,6 @@ pkgbase = linux-kernel
 	source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
 
 pkgname = linux-kernel
----
-pkgbase = linux-kernel-stable
-	pkgver = 6.9.3
-	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
-	pacdeps = linux-headers-stable-deb
-	pacdeps = linux-headers-generic-stable-deb
-	pacdeps = linux-modules-stable-deb
-	pacdeps = linux-image-unsigned-stable-deb
-	maintainer = Oren Klopfer <oren@taumoda.com>
-	repology = project: linux
-	repology = repo: distrowatch
-	source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
-
-pkgname = linux-kernel-stable
 ---
 pkgbase = linux-libc-dev-okpine-deb
 	gives = linux-libc-dev
@@ -5811,6 +5812,19 @@ pkgbase = meson-focal-deb
 
 pkgname = meson-focal-deb
 ---
+pkgbase = micro
+	pkgver = 2.0.13
+	pkgdesc = A modern and intuitive terminal-based text editor
+	optdepends = xclip: system clipboard support (X11)
+	optdepends = wl-clipboard: system clipboard support (Wayland)
+	replaces = micro
+	maintainer = edward-riley <edward@edwardriley.co.uk>
+	repology = project: micro
+	source = https://github.com/zyedidia/micro/releases/download/v2.0.13/micro-2.0.13-linux64.tar.gz
+	sha256sums = a50e405d3d09d58f6b2c182429c18537a05f317dc0c3c9cb834b3271362e4781
+
+pkgname = micro
+---
 pkgbase = microsoft-edge-beta-deb
 	gives = microsoft-edge-beta
 	pkgver = 117.0.2045.12
@@ -5860,19 +5874,6 @@ pkgbase = microsoft-prod-repo-deb
 	sha256sums = b8713c36d3e6f6b2520830180cf6b5779e48410ad5d5e1b192635b0c7359fcc6
 
 pkgname = microsoft-prod-repo-deb
----
-pkgbase = micro
-	pkgver = 2.0.13
-	pkgdesc = A modern and intuitive terminal-based text editor
-	optdepends = xclip: system clipboard support (X11)
-	optdepends = wl-clipboard: system clipboard support (Wayland)
-	replaces = micro
-	maintainer = edward-riley <edward@edwardriley.co.uk>
-	repology = project: micro
-	source = https://github.com/zyedidia/micro/releases/download/v2.0.13/micro-2.0.13-linux64.tar.gz
-	sha256sums = a50e405d3d09d58f6b2c182429c18537a05f317dc0c3c9cb834b3271362e4781
-
-pkgname = micro
 ---
 pkgbase = minecraft-launcher-deb
 	gives = minecraft-launcher
@@ -6496,6 +6497,23 @@ pkgbase = nowpm
 
 pkgname = nowpm
 ---
+pkgbase = nu-tongues-bin
+	gives = nu-tongues
+	pkgver = 0.1.0
+	pkgdesc = A translaton plugin for nushell. Allows nushell scripts to set up commands to get translated strings.
+	url = https://github.com/rhino-linux/nu-tongues
+	arch = amd64
+	arch = arm64
+	pacdeps = nushell-bin
+	maintainer = wren54 <osmium.otter@gmail.com>
+	repology = project: nu-tongues
+	source_amd64 = https://github.com/rhino-linux/nu-tongues/releases/download/v0.1.0/nu-tongues_v0.1.0_amd64.zip
+	sha256sums_amd64 = 8fa03893368db208cf6fe1e65264e4d4374f5bb6b4b09b4dde5df31a85eaf34f
+	source_arm64 = https://github.com/rhino-linux/nu-tongues/releases/download/v0.1.0/nu-tongues_v0.1.0_arm64.zip
+	sha256sums_arm64 = 29d3a06c6188b66738dcbecc9efaf2ce0708e17243e298adcd5710aac2a356e8
+
+pkgname = nu-tongues-bin
+---
 pkgbase = nuclear-deb
 	gives = nuclear
 	pkgver = 0.6.17
@@ -6541,23 +6559,6 @@ pkgbase = nushell-bin
 	sha256sums_amd64 = afe8f0e304a3e1299823b84a4ac5796f0e40dc8face9e0f583bdc2ed3180df80
 
 pkgname = nushell-bin
----
-pkgbase = nu-tongues-bin
-	gives = nu-tongues
-	pkgver = 0.1.0
-	pkgdesc = A translaton plugin for nushell. Allows nushell scripts to set up commands to get translated strings.
-	url = https://github.com/rhino-linux/nu-tongues
-	arch = amd64
-	arch = arm64
-	pacdeps = nushell-bin
-	maintainer = wren54 <osmium.otter@gmail.com>
-	repology = project: nu-tongues
-	source_amd64 = https://github.com/rhino-linux/nu-tongues/releases/download/v0.1.0/nu-tongues_v0.1.0_amd64.zip
-	sha256sums_amd64 = 8fa03893368db208cf6fe1e65264e4d4374f5bb6b4b09b4dde5df31a85eaf34f
-	source_arm64 = https://github.com/rhino-linux/nu-tongues/releases/download/v0.1.0/nu-tongues_v0.1.0_arm64.zip
-	sha256sums_arm64 = 29d3a06c6188b66738dcbecc9efaf2ce0708e17243e298adcd5710aac2a356e8
-
-pkgname = nu-tongues-bin
 ---
 pkgbase = obquit-git
 	gives = obquit
@@ -6637,6 +6638,16 @@ pkgbase = obs-backgroundremoval
 
 pkgname = obs-backgroundremoval
 ---
+pkgbase = obs-ndi-deb
+	gives = obs-ndi
+	pkgver = 4.9.1
+	pkgdesc = Network A/V in OBS Studio with NewTek's NDI technology
+	arch = amd64
+	source = https://github.com/Palakis/obs-ndi/releases/download/4.9.1/obs-ndi_4.9.1-1_amd64.deb
+	sha256sums = e91a27370dcbee0879fb27ffec8dba149825f47909a92e31a001e87e64e7329b
+
+pkgname = obs-ndi-deb
+---
 pkgbase = obsidian-deb
 	gives = obsidian
 	pkgver = 1.5.3
@@ -6648,16 +6659,6 @@ pkgbase = obsidian-deb
 	sha256sums = 15053618d0a4c3230dcd73cf798fe4a52f670b1b2f740b5e799de2e03c777cb2
 
 pkgname = obsidian-deb
----
-pkgbase = obs-ndi-deb
-	gives = obs-ndi
-	pkgver = 4.9.1
-	pkgdesc = Network A/V in OBS Studio with NewTek's NDI technology
-	arch = amd64
-	source = https://github.com/Palakis/obs-ndi/releases/download/4.9.1/obs-ndi_4.9.1-1_amd64.deb
-	sha256sums = e91a27370dcbee0879fb27ffec8dba149825f47909a92e31a001e87e64e7329b
-
-pkgname = obs-ndi-deb
 ---
 pkgbase = oh-my-posh-git
 	gives = oh-my-posh
@@ -7022,6 +7023,18 @@ pkgbase = panagement
 
 pkgname = panagement
 ---
+pkgbase = pap
+	pkgver = 0.15.0
+	pkgdesc = Swiss army knife for minecraft servers
+	makedepends = golang-go
+	incompatible = debian:bullseye
+	maintainer = Talwat <talwat321@gmail.com>
+	repology = project: pap
+	source = https://github.com/talwat/pap/archive/v0.15.0.tar.gz
+	sha256sums = 743fd7d6d8f6e5fcd198ee75fcc54fd77ce272c77009cfa2c28c0eb6aec5121c
+
+pkgname = pap
+---
 pkgbase = paper-icon-theme
 	pkgver = 1.5.0
 	pkgdesc = Paper is an open source desktop theme and icon project by Sam Hewitt
@@ -7059,18 +7072,6 @@ pkgbase = papirus-icon-theme
 	sha256sums = 9dde683d6444ed2d3b3dacf8579b04d527ce278cef575d606f690c7b31c7aebd
 
 pkgname = papirus-icon-theme
----
-pkgbase = pap
-	pkgver = 0.15.0
-	pkgdesc = Swiss army knife for minecraft servers
-	makedepends = golang-go
-	incompatible = debian:bullseye
-	maintainer = Talwat <talwat321@gmail.com>
-	repology = project: pap
-	source = https://github.com/talwat/pap/archive/v0.15.0.tar.gz
-	sha256sums = 743fd7d6d8f6e5fcd198ee75fcc54fd77ce272c77009cfa2c28c0eb6aec5121c
-
-pkgname = pap
 ---
 pkgbase = parsec-deb
 	gives = parsec
@@ -7495,20 +7496,6 @@ pkgbase = prismlauncher-git
 
 pkgname = prismlauncher-git
 ---
-pkgbase = protonmail-bridge-deb
-	gives = protonmail-bridge
-	pkgver = 3.10.0
-	pkgdesc = ProtonMail Bridge is an application available to all paid users that enables the integration of your ProtonMail account with popular email clients, such as Microsoft Outlook, Mozilla Thunderbird, or Apple Mail. Bridge runs in the background by seamlessly encrypting and decrypting messages as they enter and leave your computer. The app is compatible with most email clients supporting IMAP and SMTP protocols
-	arch = amd64
-	breaks = protonmail-bridge
-	breaks = protonmail-bridge-git
-	maintainer = Oren Klopfer <oren@taumoda.com>
-	repology = project: protonmail-bridge
-	source = https://github.com/ProtonMail/proton-bridge/releases/download/v3.10.0/protonmail-bridge_3.10.0-1_amd64.deb
-	sha256sums = 947da267d8aea2bbe007ae4a02f6edb431c41c16c44b0898146b4d990fca443c
-
-pkgname = protonmail-bridge-deb
----
 pkgbase = proton-python-client
 	pkgver = 0.7.1
 	pkgdesc = Python Proton client module
@@ -7524,6 +7511,20 @@ pkgbase = proton-python-client
 	sha256sums = 88d2546a922d9053988b5e1863bf6cf965e97b4c643cd879f16bb3f0b5f02b5e
 
 pkgname = proton-python-client
+---
+pkgbase = protonmail-bridge-deb
+	gives = protonmail-bridge
+	pkgver = 3.10.0
+	pkgdesc = ProtonMail Bridge is an application available to all paid users that enables the integration of your ProtonMail account with popular email clients, such as Microsoft Outlook, Mozilla Thunderbird, or Apple Mail. Bridge runs in the background by seamlessly encrypting and decrypting messages as they enter and leave your computer. The app is compatible with most email clients supporting IMAP and SMTP protocols
+	arch = amd64
+	breaks = protonmail-bridge
+	breaks = protonmail-bridge-git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: protonmail-bridge
+	source = https://github.com/ProtonMail/proton-bridge/releases/download/v3.10.0/protonmail-bridge_3.10.0-1_amd64.deb
+	sha256sums = 947da267d8aea2bbe007ae4a02f6edb431c41c16c44b0898146b4d990fca443c
+
+pkgname = protonmail-bridge-deb
 ---
 pkgbase = protonup-qt-app
 	gives = net.davidotek.pupgui2
@@ -8293,6 +8294,19 @@ pkgbase = rstudio-deb
 
 pkgname = rstudio-deb
 ---
+pkgbase = rust-motd-deb
+	gives = rust-motd
+	pkgver = 1.0.1
+	pkgdesc = Beautiful, useful, configurable MOTD generation with zero runtime dependencies
+	arch = amd64
+	replaces = rust-motd
+	maintainer = wizard-28 <wiz28@pm.me>
+	repology = project: rust:motd
+	source = https://github.com/rust-motd/rust-motd/releases/download/v1.0.1/rust-motd_1.0.1_amd64.deb
+	sha256sums = e2abcb97de92bee14cdc85e8dec46af17c15fdb03cc3a4b3d6094b1c2a079670
+
+pkgname = rust-motd-deb
+---
 pkgbase = rustdesk-deb
 	gives = rustdesk
 	pkgver = 1.2.6
@@ -8330,19 +8344,6 @@ pkgbase = rustdesk-deb
 	sha256sums_armhf = c29c9a9b1b037b61d46168500c333bf9cb2c15be501aefbde5bffd7d8a9d99e3
 
 pkgname = rustdesk-deb
----
-pkgbase = rust-motd-deb
-	gives = rust-motd
-	pkgver = 1.0.1
-	pkgdesc = Beautiful, useful, configurable MOTD generation with zero runtime dependencies
-	arch = amd64
-	replaces = rust-motd
-	maintainer = wizard-28 <wiz28@pm.me>
-	repology = project: rust:motd
-	source = https://github.com/rust-motd/rust-motd/releases/download/v1.0.1/rust-motd_1.0.1_amd64.deb
-	sha256sums = e2abcb97de92bee14cdc85e8dec46af17c15fdb03cc3a4b3d6094b1c2a079670
-
-pkgname = rust-motd-deb
 ---
 pkgbase = schildichat-deb
 	gives = schildichat-desktop
@@ -8411,6 +8412,15 @@ pkgbase = setconf
 
 pkgname = setconf
 ---
+pkgbase = shell-color-scripts
+	pkgver = 3.0
+	pkgdesc = A collection of terminal color scripts.
+	maintainer = Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>
+	source = https://gitlab.com/dwt1/shell-color-scripts/-/archive/master/shell-color-scripts-master.tar.gz
+	sha256sums = 31d94efd426d3d62459e2056cb4ea5ba051f77f46557a3cc0ad7b2ffdd48bf84
+
+pkgname = shell-color-scripts
+---
 pkgbase = shellcheck-bin
 	gives = shellcheck
 	pkgver = 0.9.0
@@ -8427,15 +8437,6 @@ pkgbase = shellcheck-bin
 	sha256sums = 700324c6dd0ebea0117591c6cc9d7350d9c7c5c287acbad7630fa17b1d4d9e2f
 
 pkgname = shellcheck-bin
----
-pkgbase = shell-color-scripts
-	pkgver = 3.0
-	pkgdesc = A collection of terminal color scripts.
-	maintainer = Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>
-	source = https://gitlab.com/dwt1/shell-color-scripts/-/archive/master/shell-color-scripts-master.tar.gz
-	sha256sums = 31d94efd426d3d62459e2056cb4ea5ba051f77f46557a3cc0ad7b2ffdd48bf84
-
-pkgname = shell-color-scripts
 ---
 pkgbase = shellharden
 	gives = shellharden
@@ -8839,6 +8840,34 @@ pkgbase = spotify-client-deb
 
 pkgname = spotify-client-deb
 ---
+pkgbase = st-distrotube-git
+	gives = st
+	pkgver = 0.0.1
+	pkgdesc = Distrotube's st build
+	depends = fontconfig
+	makedepends = make
+	makedepends = libharfbuzz-bin
+	makedepends = libxft-dev
+	makedepends = libpango1.0-dev
+	breaks = st
+	maintainer = edward-riley <edward@edwardriley.co.uk>
+	source = https://gitlab.com/dwt1/st-distrotube.git
+
+pkgname = st-distrotube-git
+---
+pkgbase = st-lukesmith-git
+	gives = st
+	pkgver = 0.0.1
+	depends = fontconfig
+	makedepends = make
+	makedepends = libharfbuzz-bin
+	makedepends = libxft-dev
+	makedepends = libpango1.0-dev
+	license = MIT
+	source = https://github.com/LukeSmithxyz/st.git
+
+pkgname = st-lukesmith-git
+---
 pkgbase = starship-bin
 	gives = starship
 	pkgver = 1.19.0
@@ -8854,21 +8883,6 @@ pkgbase = starship-bin
 	sha256sums = 04710e277f7802ddf41400b650233a8954892bb9326768d82fff7d360ff37c58
 
 pkgname = starship-bin
----
-pkgbase = st-distrotube-git
-	gives = st
-	pkgver = 0.0.1
-	pkgdesc = Distrotube's st build
-	depends = fontconfig
-	makedepends = make
-	makedepends = libharfbuzz-bin
-	makedepends = libxft-dev
-	makedepends = libpango1.0-dev
-	breaks = st
-	maintainer = edward-riley <edward@edwardriley.co.uk>
-	source = https://gitlab.com/dwt1/st-distrotube.git
-
-pkgname = st-distrotube-git
 ---
 pkgbase = steam-deb
 	gives = steam-launcher
@@ -8960,19 +8974,6 @@ pkgbase = stellarium
 
 pkgname = stellarium
 ---
-pkgbase = st-lukesmith-git
-	gives = st
-	pkgver = 0.0.1
-	depends = fontconfig
-	makedepends = make
-	makedepends = libharfbuzz-bin
-	makedepends = libxft-dev
-	makedepends = libpango1.0-dev
-	license = MIT
-	source = https://github.com/LukeSmithxyz/st.git
-
-pkgname = st-lukesmith-git
----
 pkgbase = stockfish-git
 	gives = stockfish
 	pkgver = 0.0.1
@@ -9049,18 +9050,6 @@ pkgbase = surf-distrotube-git
 
 pkgname = surf-distrotube-git
 ---
-pkgbase = surfshark-gui-deb
-	gives = surfshark
-	pkgver = 1.3.0-1616
-	pkgdesc = SurfShark VPN Client
-	arch = amd64
-	maintainer = WRM-42 <y8bsbahy@anonaddy.me>
-	repology = project: surfshark-gui
-	source = https://ocean.surfshark.com/debian/pool/main/s/surfshark/surfshark_1.3.0-1616_amd64.deb
-	sha256sums = a3ae250cc857ee3e7462452bd60b2bc453bad5df18fef3b2ce0fa4ff7ebb925d
-
-pkgname = surfshark-gui-deb
----
 pkgbase = surf
 	pkgver = 2.1
 	pkgdesc = surf is a simple web browser based on WebKit2/GTK+.
@@ -9078,6 +9067,18 @@ pkgbase = surf
 	sha256sums = 72e582920ba25a646203e93c2d2331d87f03037a28894d6c7e99af00ee043257
 
 pkgname = surf
+---
+pkgbase = surfshark-gui-deb
+	gives = surfshark
+	pkgver = 1.3.0-1616
+	pkgdesc = SurfShark VPN Client
+	arch = amd64
+	maintainer = WRM-42 <y8bsbahy@anonaddy.me>
+	repology = project: surfshark-gui
+	source = https://ocean.surfshark.com/debian/pool/main/s/surfshark/surfshark_1.3.0-1616_amd64.deb
+	sha256sums = a3ae250cc857ee3e7462452bd60b2bc453bad5df18fef3b2ce0fa4ff7ebb925d
+
+pkgname = surfshark-gui-deb
 ---
 pkgbase = suru-icon-theme-git
 	gives = suru-icon-theme
@@ -9606,6 +9607,29 @@ pkgbase = topgrade-musl-bin
 
 pkgname = topgrade-musl-bin
 ---
+pkgbase = tor
+	pkgver = 0.4.7.13
+	pkgdesc = Tor protects your privacy on the internet by hiding the connection between your Internet address and the services you use
+	depends = openssl
+	makedepends = make
+	makedepends = autoconf
+	makedepends = libevent-dev
+	makedepends = libnss3-dev
+	makedepends = libzstd-dev
+	makedepends = liblzma-dev
+	makedepends = openssl
+	makedepends = libssl-dev
+	makedepends = ca-certificates
+	makedepends = libseccomp-dev
+	makedepends = zlib1g-dev
+	breaks = tor-git
+	replaces = tor
+	repology = project: tor
+	source = https://dist.torproject.org/tor-0.4.7.13.tar.gz
+	sha256sums = 2079172cce034556f110048e26083ce9bea751f3154b0ad2809751815b11ea9d
+
+pkgname = tor
+---
 pkgbase = torbrowser-launcher-git
 	gives = torbrowser-launcher
 	pkgver = 0.3.6
@@ -9643,29 +9667,6 @@ pkgbase = torguard-deb
 	sha256sums = 0ab7ec3917ed4ec5a23746612efddc7fd17cf15ae010723212ecba3c5521050e
 
 pkgname = torguard-deb
----
-pkgbase = tor
-	pkgver = 0.4.7.13
-	pkgdesc = Tor protects your privacy on the internet by hiding the connection between your Internet address and the services you use
-	depends = openssl
-	makedepends = make
-	makedepends = autoconf
-	makedepends = libevent-dev
-	makedepends = libnss3-dev
-	makedepends = libzstd-dev
-	makedepends = liblzma-dev
-	makedepends = openssl
-	makedepends = libssl-dev
-	makedepends = ca-certificates
-	makedepends = libseccomp-dev
-	makedepends = zlib1g-dev
-	breaks = tor-git
-	replaces = tor
-	repology = project: tor
-	source = https://dist.torproject.org/tor-0.4.7.13.tar.gz
-	sha256sums = 2079172cce034556f110048e26083ce9bea751f3154b0ad2809751815b11ea9d
-
-pkgname = tor
 ---
 pkgbase = touchegg-deb
 	gives = touchegg
@@ -9707,6 +9708,18 @@ pkgbase = touchegg-git
 
 pkgname = touchegg-git
 ---
+pkgbase = tre-git
+	gives = tre
+	pkgver = 0.4.0
+	pkgdesc = Tree command, improved
+	makedepends = cargo
+	makedepends = rustc
+	incompatible = debian:bullseye
+	maintainer = Diego Magdaleno <diegomagdaleno@pm.me>
+	source = https://github.com/dduan/tre.git
+
+pkgname = tre-git
+---
 pkgbase = treefetch-bin
 	gives = treefetch
 	pkgver = 2.0.0
@@ -9720,18 +9733,6 @@ pkgbase = treefetch-bin
 	sha256sums = 1a835bafa75ecd2f18a53c3e0d73cf742a579106af03c4c459e5f8c873ee5187
 
 pkgname = treefetch-bin
----
-pkgbase = tre-git
-	gives = tre
-	pkgver = 0.4.0
-	pkgdesc = Tree command, improved
-	makedepends = cargo
-	makedepends = rustc
-	incompatible = debian:bullseye
-	maintainer = Diego Magdaleno <diegomagdaleno@pm.me>
-	source = https://github.com/dduan/tre.git
-
-pkgname = tre-git
 ---
 pkgbase = truckersmp-cli
 	gives = truckersmp-cli
@@ -10332,31 +10333,6 @@ pkgbase = walc-app
 
 pkgname = walc-app
 ---
-pkgbase = warpinator-deb
-	gives = warpinator
-	pkgver = 1.8.3+virginia
-	pkgdesc = A tool to share files across the LAN
-	depends = gir1.2-glib-2.0
-	depends = gir1.2-gtk-3.0
-	depends = gir1.2-xapp-1.0
-	depends = gir1.2-nm-1.0
-	depends = python3
-	depends = python3-gi
-	depends = python3-setproctitle
-	depends = python3-xapp
-	depends = python3-zeroconf
-	depends = python3-grpcio
-	depends = python3-cryptography
-	depends = python3-nacl
-	compatible = *:jammy
-	maintainer = Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>
-	repology = project: warpinator
-	repology = repo: linux_mint_21_1
-	source = http://packages.linuxmint.com/pool/backport/w/warpinator/warpinator_1.8.3+virginia_amd64.deb
-	sha256sums = fdcae13e004e1474711aa2f567e76d372f0634264d69732e775aba338b3d825e
-
-pkgname = warpinator-deb
----
 pkgbase = warp
 	gives = warp
 	pkgver = 0.6.2
@@ -10395,6 +10371,31 @@ pkgbase = warp
 	sha256sums = b3df2017e19c7bf1477b5bd07d857d0d8fe5375ab293d932a8a4e30aba91496a
 
 pkgname = warp
+---
+pkgbase = warpinator-deb
+	gives = warpinator
+	pkgver = 1.8.3+virginia
+	pkgdesc = A tool to share files across the LAN
+	depends = gir1.2-glib-2.0
+	depends = gir1.2-gtk-3.0
+	depends = gir1.2-xapp-1.0
+	depends = gir1.2-nm-1.0
+	depends = python3
+	depends = python3-gi
+	depends = python3-setproctitle
+	depends = python3-xapp
+	depends = python3-zeroconf
+	depends = python3-grpcio
+	depends = python3-cryptography
+	depends = python3-nacl
+	compatible = *:jammy
+	maintainer = Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>
+	repology = project: warpinator
+	repology = repo: linux_mint_21_1
+	source = http://packages.linuxmint.com/pool/backport/w/warpinator/warpinator_1.8.3+virginia_amd64.deb
+	sha256sums = fdcae13e004e1474711aa2f567e76d372f0634264d69732e775aba338b3d825e
+
+pkgname = warpinator-deb
 ---
 pkgbase = watchexec-bin
 	pkgver = 1.25.1

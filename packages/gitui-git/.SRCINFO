@@ -10,6 +10,7 @@ pkgbase = gitui-git
 	makedepends = git
 	makedepends = cargo
 	makedepends = python3
+	makedepends = cmake
 	incompatible = debian:bookworm
 	maintainer = pythoncrazy <pinakpaliwal07@gmail.com>
 	source = https://github.com/extrawurst/gitui.git
