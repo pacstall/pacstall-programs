@@ -4,20 +4,20 @@ This is the default repository of pacscripts which [pacstall](https://github.com
 
 ```monospace
 package-repository/
-├── distrolist
-├── packagelist
-├── srclist
+├── packages/
+│   ├── example-package1/
+│   │   ├── example-package1.pacscript
+│   │   └── .SRCINFO
+│   └── example-package2/
+│       ├── example-package2.pacscript
+│       └── .SRCINFO
 ├── scripts/
 │   ├── srcinfo.sh
 │   ├── custom-script1.sh
 │   └── custom-script2.sh
-└── packages/
-    ├── example-package1/
-    │   ├── example-package1.pacscript
-    │   └── .SRCINFO
-    └── example-package2/
-        ├── example-package2.pacscript
-        └── .SRCINFO
+├── distrolist
+├── packagelist
+└── srclist
 ```
 
 You can then use `pacstall -A` command to add your repository to your `pacstallrepo` list. Consult the wiki for more info.
