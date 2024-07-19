@@ -37,6 +37,12 @@ Here are the development dependencies that you need to install as a developer:
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | attempts to correct certain formatting issues | `pacstall -I shfmt-bin` |
 | [editor-config](https://editorconfig.org/#download) | ensures proper tabs when using a file editor | Install the plugin for your preferred editor |
 
+After the dependencies are installed simply clone this repository, and use `pre-commit install` to install the pre-configured hooks to your cloned repository.
+
+Now, whenever you try to commit a patch all the configured hooks will run and block/fix your code so that it adheres to or standards.
+
+In case for some reason (false positives etc), you want to skip the hooks commit using `git commit --no-verify`
+
 Additionally, we have created the following tools to improve package maintainence:
 
 | Maintainence Tool | Purpose | How to install |
@@ -44,12 +50,6 @@ Additionally, we have created the following tools to improve package maintainenc
 | [pacup](https://github.com/pacstall/pacup) | keep packages up to date | `pacstall -I pacup` (stable) or `pacstall -I pacup-git` (develop) |
 | [quality-assurance.sh](https://github.com/pacstall/pacstall/blob/master/scripts/quality-assurance.sh) | test PRs before being merged | `pacstall -Qa` (built-in, pacstall) |
 | [srcinfo.sh](https://github.com/pacstall/pacstall-programs/blob/master/scripts/srcinfo.sh) | generate and read repo data | `./scripts/srcinfo.sh` (built-in, pacstall-programs) |
-
-After the dependencies are installed simply clone this repository, and use `pre-commit install` to install the pre-configured hooks to your cloned repository.
-
-Now, whenever you try to commit a patch all the configured hooks will run and block/fix your code so that it adheres to or standards.
-
-In case for some reason (false positives etc), you want to skip the hooks commit using `git commit --no-verify`
 
 ## License
 
