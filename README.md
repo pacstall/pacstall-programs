@@ -33,17 +33,17 @@ Here are the development dependencies that you need to install as a developer:
 | Dependency                                          | How to install                      |
 :----------------------------------------------------:|-------------------------------------|
 | [pre-commit](https://pre-commit.com/)               | `sudo pip install pre-commit`       |
-| [shellcheck](https://www.shellcheck.net/)           | `pacstall -PI shellcheck-bin`       |
-| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3)          | `pacstall -PI shfmt-bin`            |
+| [shellcheck](https://www.shellcheck.net/)           | `pacstall -I shellcheck-bin`        |
+| [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3)          | `pacstall -I shfmt-bin`             |
 | [editor-config](https://editorconfig.org/#download) | Install the plugin for your editor  |
 
 Additionally, we have created the following tools to improve package maintainence:
 
 | Maintainence Tool | Purpose | How to install |
 |:-----------------:|:-------:|----------------|
-| [pacup](https://github.com/pacstall/pacup) | keep packages up to date | `pacstall -PI pacup` (stable) or `pacstall -PI pacup-git` (develop) |
+| [pacup](https://github.com/pacstall/pacup) | keep packages up to date | `pacstall -PI pacup` (stable) or `pacstall -I pacup-git` (develop) |
 | [quality-assurance.sh](https://github.com/pacstall/pacstall/blob/master/scripts/quality-assurance.sh) | test PRs before being merged | `pacstall -Qa` (built-in, pacstall) |
-| [srcinfo.sh](https://github.com/pacstall/pacstall-programs/blob/master/scripts/srcinfo.sh) | generate repo data | `./scripts/srcinfo.sh` (built-in, pacstall-programs) |
+| [srcinfo.sh](https://github.com/pacstall/pacstall-programs/blob/master/scripts/srcinfo.sh) | generate and read repo data | `./scripts/srcinfo.sh` (built-in, pacstall-programs) |
 
 After the dependencies are installed simply clone this repository, and use `pre-commit install` to install the pre-configured hooks to your cloned repository.
 
