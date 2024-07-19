@@ -1680,7 +1680,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.58
+	pkgver = 0.0.60
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1689,8 +1689,8 @@ pkgbase = discord-deb
 	breaks = discord-debian-patched-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.58/discord-0.0.58.deb
-	sha256sums = 3a2f1fe6b9d69cd8141f42a204ad3dff483a4301fbe755711b545b908d61b8af
+	source = https://dl.discordapp.net/apps/linux/0.0.60/discord-0.0.60.deb
+	sha256sums = dc8264ad01aeb2f7316e38dc72aa5714e4b3af8e317da31db1777a993656cb0c
 
 pkgname = discord-deb
 ---
@@ -7069,7 +7069,7 @@ pkgname = pacstall-qa-git
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.4
+	pkgver = 3.3.5
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	depends = libdata-compare-perl
 	depends = libfile-chdir-perl
@@ -7090,7 +7090,7 @@ pkgbase = pacup-git
 pkgname = pacup-git
 ---
 pkgbase = pacup
-	pkgver = 3.3.4
+	pkgver = 3.3.5
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	depends = libdata-compare-perl
 	depends = libfile-chdir-perl
@@ -7106,8 +7106,8 @@ pkgbase = pacup
 	replaces = pacup-git
 	maintainer = vigress8 <vig@disroot.org>
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.4.tar.gz
-	sha256sums = b9657bb05f0d4ac7e2e2425b0cdc2a3dd8da55f1c3a10b551b4a888c75e24087
+	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.5.tar.gz
+	sha256sums = c90f8accba90af87ac7b7ca58923066b34bf0305049d14302704c280c3d739da
 
 pkgname = pacup
 ---
@@ -8381,13 +8381,13 @@ pkgname = rsbbi-git
 ---
 pkgbase = rstudio-deb
 	gives = rstudio
-	pkgver = 2023.12.1.402
+	pkgver = 2024.04.2.764
 	pkgdesc = RStudio is an integrated development environment (IDE) for R
 	arch = amd64
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: rstudio
-	source = https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.12.1-402-amd64.deb
-	sha256sums = 75542cc24c59404f8d62815bc0e31b43032b5032e651fa9f618dbcdca8aa7cac
+	source = https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.04.2-764-amd64.deb
+	sha256sums = 1d0bd2f54215f514a8a78a4d035c7804218bb8fafa417aa5083d341e174e6452
 
 pkgname = rstudio-deb
 ---

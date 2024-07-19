@@ -638,18 +638,17 @@ function srcinfo.repo_check() {
 }
 
 function srcinfo.list_build() {
-  local FILE="${1}" filelist tmploc
-  tmploc="$(mktemp)"
-  printf "### Auto-generated for pacstall-programs\n### DO NOT EDIT. Use scripts/srcinfo.sh to build.\n" > "${tmploc}"
+  local FILE="${1}" filelist
   mapfile -t filelist < <(ls packages/*/.SRCINFO)
-  for i in "${filelist[@]}"; do
-    echo "---" >> "${tmploc}"
-    while IFS= read -r line; do
-      echo "${line}" >> "${tmploc}"
-    done < "${i}"
-  done
-  rm -f "${FILE}"
-  mv "${tmploc}" "${FILE}"
+  {
+    printf "### Auto-generated for pacstall-programs\n### DO NOT EDIT. Use scripts/srcinfo.sh to build.\n"
+    for i in "${filelist[@]}"; do
+      echo "---"
+      while IFS= read -r line; do
+        echo "${line}"
+      done < "${i}"
+    done
+  } > "${FILE}"
 }
 
 function srcinfo.list_search() {
