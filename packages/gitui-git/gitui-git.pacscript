@@ -6,7 +6,7 @@ source=("https://github.com/extrawurst/gitui.git")
 maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
 pkgver="0.26.3"
 depends=('gcc' 'libgit2-dev' 'libxcb1' 'zlib1g-dev')
-makedepends=('git' 'cargo' 'python3')
+makedepends=('git' 'cargo' 'python3' 'cmake')
 incompatible=('debian:bookworm')
 external_connection="true"
 
