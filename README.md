@@ -32,7 +32,7 @@ Here are the development dependencies that you need to install as a developer:
 
 | Dependency | Purpose                                | How to install                      |
 |:-----------|:--------------------------------------:|-------------------------------------|
-| [pre-commit](https://pre-commit.com/) | ensures proper formatting and keeps repo data up-to-date on git commits | `sudo pip install pre-commit` |
+| [pre-commit](https://pre-commit.com/) | runs a series of formatting checks on git commits | `sudo pip install pre-commit` |
 | [shellcheck](https://www.shellcheck.net/) | checks for formatting and scripting issues | `pacstall -I shellcheck-bin` |
 | [shfmt](https://pkg.go.dev/mvdan.cc/sh/v3) | attempts to correct certain formatting issues | `pacstall -I shfmt-bin` |
 | [editor-config](https://editorconfig.org/#download) | ensures proper tabs when using a file editor | Install the plugin for your preferred editor |
