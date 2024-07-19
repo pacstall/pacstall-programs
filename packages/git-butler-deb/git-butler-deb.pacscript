@@ -5,10 +5,9 @@ arch=('amd64')
 pkgver="0.12.12-1093"
 url='https://gitbutler.com/'
 source=("https://releases.gitbutler.com/releases/release/${pkgver}/linux/x86_64/git-butler_${pkgver%-*}_amd64.deb")
-depends=("libayatana-appindicator3-1" "libwebkit2gtk-4.0-37" "libgtk-3-0")
 breaks=("git-butler-git" "git-butler-bin")
 replaces=("git-butler")
 pkgdesc="Git Branching, Refined
-A Git client for simultaneous branches on top of your existing workflow."
+A Git client for simultaneous branches on top of your existing workflow"
 sha256sums=("02a14a23167cad64cc595c12cf05d5659550f6fa754f8c082a3d9f485fbdd14a")
 maintainer=("Nezred <jmnezred@pm.me>")
