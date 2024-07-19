@@ -3167,6 +3167,25 @@ pkgbase = gitkraken-deb
 
 pkgname = gitkraken-deb
 ---
+pkgbase = gitui-git
+	gives = gitui
+	pkgver = 0.26.3
+	pkgdesc = Blazing fast terminal-ui for git written in Rust
+	url = https://github.com/extrawurst/gitui
+	depends = gcc
+	depends = libgit2-dev
+	depends = libxcb1
+	depends = zlib1g-dev
+	makedepends = git
+	makedepends = cargo
+	makedepends = python3
+	makedepends = cmake
+	incompatible = debian:bookworm
+	maintainer = pythoncrazy <pinakpaliwal07@gmail.com>
+	source = https://github.com/extrawurst/gitui.git
+
+pkgname = gitui-git
+---
 pkgbase = gldriver-test-deb
 	gives = gldriver-test
 	pkgver = 0.15
