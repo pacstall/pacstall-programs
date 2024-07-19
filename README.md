@@ -41,7 +41,7 @@ Additionally, we have created the following tools to improve package maintainenc
 
 | Maintainence Tool | Purpose | How to install |
 |:-----------------:|:-------:|----------------|
-| [pacup](https://github.com/pacstall/pacup) | keep packages up to date | `pacstall -PI pacup` (stable) or `pacup-git` (develop) |
+| [pacup](https://github.com/pacstall/pacup) | keep packages up to date | `pacstall -PI pacup` (stable) or `pacstall -PI pacup-git` (develop) |
 | [quality-assurance.sh](https://github.com/pacstall/pacstall/blob/master/scripts/quality-assurance.sh) | test PRs before being merged | `pacstall -Qa` (built-in, pacstall) |
 | [srcinfo.sh](https://github.com/pacstall/pacstall-programs/blob/master/scripts/srcinfo.sh) | generate repo data | `./scripts/srcinfo.sh` (built-in, pacstall-programs) |
 
