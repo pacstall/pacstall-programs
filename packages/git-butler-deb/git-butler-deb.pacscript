@@ -11,4 +11,4 @@ pkgdesc="Git Branching, Refined
 A Git client for simultaneous branches on top of your existing workflow"
 sha256sums=("02a14a23167cad64cc595c12cf05d5659550f6fa754f8c082a3d9f485fbdd14a")
 maintainer=("Nezred <jmnezred@pm.me>")
-compatible=("*:bookworm" "*:jammy")
+incompatible=("*:noble" "*:oracular" "*:trixie")
