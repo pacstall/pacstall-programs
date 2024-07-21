@@ -7820,6 +7820,23 @@ pkgbase = python3-material-color-utilities
 
 pkgname = python3-material-color-utilities
 ---
+pkgbase = python3-moddb
+	gives = python3-moddb
+	pkgver = 0.11.0
+	pkgdesc = A Python scraper to access ModDB mods, games and more as objects
+	url = https://github.com/ClementJ18/moddb
+	depends = python3-bs4
+	depends = python3-requests
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	license = MIT
+	source = https://github.com/ClementJ18/moddb/archive/refs/tags/v0.11.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = python3-moddb
+---
 pkgbase = python3-zombie-imp
 	pkgver = 0.0.2
 	pkgdesc = A copy of the imp module that was removed in Python 3.12
