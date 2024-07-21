@@ -5,7 +5,6 @@ pkgbase = python3-moddb
 	url = https://github.com/ClementJ18/moddb
 	depends = python3-bs4
 	depends = python3-requests
-	makedepends = git
 	makedepends = python3-build
 	makedepends = python3-installer
 	makedepends = python3-setuptools
