@@ -166,7 +166,9 @@ github-cli-bin
 github-cli-deb
 github-desktop-deb
 gitkraken-deb
+gitui-git
 gldriver-test-deb
+glffetch-git
 glow-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
@@ -202,6 +204,7 @@ heroic-games-launcher-deb
 highlight-pointer-bin
 htop
 httptoolkit-deb
+hwinfo-git
 hyfetch-git
 hyper-deb
 hyperfine-bin
@@ -221,6 +224,7 @@ insync-deb
 intel-undervolt
 intellij-idea-community-bin
 internxt-deb
+it87-dkms-git
 ivpn-deb
 ivpn-ui-deb
 jellyfin-media-player-deb
@@ -260,6 +264,7 @@ librewolf-deb
 libspa-codec-bluez5-aac-bin
 libssl1.1-deb
 libtomlplusplus-header
+libx86emu
 libxapp1-deb
 lightpad-git
 linked-deb
@@ -307,6 +312,7 @@ minecraft-launcher-deb
 minecraft-pi-reborn-app
 mint-themes
 mobile-usb-networking-deb
+modprobed-db
 moka-icon-theme
 mold-bin
 ms-teams-deb
@@ -355,6 +361,7 @@ onlyoffice-desktopeditors-deb
 onnxruntime-bin
 onnxruntime-gpu-bin
 opendoas-git
+openrgb-git
 opensnitch-deb
 opensnitch-ui-deb
 opentoonz
@@ -571,6 +578,7 @@ xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
 xmind-vana-deb
 xonotic
+xpadneo-dkms
 yabridge
 yad
 yafetch-git
