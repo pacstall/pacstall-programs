@@ -9,7 +9,6 @@ depends=(
   python3-requests
 )
 makedepends=(
-  git
   python3-build
   python3-installer
   python3-setuptools
