@@ -20,7 +20,7 @@ package-repository/
 └── srclist
 ```
 
-You can then use `pacstall -A` command to add a repository to your `pacstallrepo` list.
+You can then use the `pacstall -A` command to add a repository to your `pacstallrepo` list.
 Consult the manpage (run `man pacstall 8`) for more info.
 
 ## How to setup the environment for pacscript development
@@ -49,7 +49,7 @@ Additionally, we have created the following tools to improve package maintainenc
 | Maintainence Tool | Purpose | How to install |
 |:-----------------|:-------:|----------------|
 | [pacup](https://github.com/pacstall/pacup) | keep packages up to date | `pacstall -I pacup` (stable) or `pacstall -I pacup-git` (develop) |
-| [quality-assurance.sh](https://github.com/pacstall/pacstall/blob/master/scripts/quality-assurance.sh) | test PRs before being merged | `pacstall -Qa` (built-in, pacstall) |
+| [quality-assurance.sh](https://github.com/pacstall/pacstall/blob/master/misc/scripts/quality-assurance.sh) | test PRs before being merged | `pacstall -Qa` (built-in, pacstall) |
 | [srcinfo.sh](https://github.com/pacstall/pacstall-programs/blob/master/scripts/srcinfo.sh) | generate and read repo data | `./scripts/srcinfo.sh` (built-in, pacstall-programs) |
 
 ## License
