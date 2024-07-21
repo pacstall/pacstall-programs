@@ -106,7 +106,7 @@ pkgname = amfora-bin
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.10.2
+	pkgver = 3.10.3
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	optdepends = mangohud: FPS Hud/GUI
 	optdepends = gamemode: Game Optimizations
@@ -124,9 +124,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.10.2/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.10.3/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = b1f7d349110679e37da37673f1943fd1391fce0439bbf0d3142a45544a1f027c
+	sha256sums = cb2159374f2ba68ed2ee2fc38e946bf82261c32247021ab1be049614eb3ff2f0
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
@@ -166,7 +166,7 @@ pkgbase = android-studio-canary
 pkgname = android-studio-canary
 ---
 pkgbase = android-studio
-	pkgver = 2024.1.1.6
+	pkgver = 2024.1.1.12
 	pkgdesc = Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development
 	depends = libc6-i386
 	depends = lib32ncurses6
@@ -179,9 +179,10 @@ pkgbase = android-studio
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: android-studio
 	repology = repo: aur
-	source = https://dl.google.com/dl/android/studio/ide-zips/2024.1.1.6/android-studio-2024.1.1.6-linux.tar.gz
+	repology = visiblename: android-studio
+	source = https://dl.google.com/dl/android/studio/ide-zips/2024.1.1.12/android-studio-2024.1.1.12-linux.tar.gz
 	source = android-studio.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/android-studio/android-studio.desktop
-	sha256sums = 1b201956450187bb4cea6e21ce95189de8a368548dc1d4b2fe0dcfedf696f6fb
+	sha256sums = 42f8bf31ce0d124ddd11195f662a30064d8f9aab206e5e66839e876a6bc6eda2
 	sha256sums = SKIP
 
 pkgname = android-studio
@@ -7884,6 +7885,23 @@ pkgbase = python3-material-color-utilities
 	b2sums = cf444831fec962caae3a1871b8331dcdd055f186754631185140842e49e1dc5526c5aedc021d28cd5e192e6f593774abce34e4a2853049e9ded2cf3ca9b79e3f
 
 pkgname = python3-material-color-utilities
+---
+pkgbase = python3-moddb
+	gives = python3-moddb
+	pkgver = 0.11.0
+	pkgdesc = A Python scraper to access ModDB mods, games and more as objects
+	url = https://github.com/ClementJ18/moddb
+	depends = python3-bs4
+	depends = python3-requests
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	license = MIT
+	source = https://github.com/ClementJ18/moddb/archive/refs/tags/v0.11.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = python3-moddb
 ---
 pkgbase = python3-zombie-imp
 	pkgver = 0.0.2
