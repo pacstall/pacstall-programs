@@ -1,6 +1,7 @@
 pkgname="jsoncpp"
 gives="jsoncpp"
 provides=("libjsoncpp25" "libjsoncpp-dev" "libjsoncpp.so")
+conflicts=("libjsoncpp25" "libjsoncpp-dev")
 pkgver=1.9.5
 pkgrel=3
 pkgdesc='C++ library for interacting with JSON'
