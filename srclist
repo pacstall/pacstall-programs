@@ -4478,6 +4478,27 @@ pkgbase = joplin-desktop-app
 
 pkgname = joplin-desktop-app
 ---
+pkgbase = jsoncpp
+	gives = jsoncpp
+	pkgver = 1.9.5
+	pkgrel = 3
+	pkgdesc = C++ library for interacting with JSON
+	url = https://github.com/open-source-parsers/jsoncpp
+	arch = x86_64
+	makedepends = doxygen
+	makedepends = graphviz
+	makedepends = python3
+	makedepends = meson
+	makedepends = ninja-build
+	provides = libjsoncpp25
+	provides = libjsoncpp-dev
+	provides = libjsoncpp.so
+	license = MIT
+	source = https://github.com/open-source-parsers/jsoncpp/archive/1.9.5/jsoncpp-1.9.5.tar.gz
+	sha512sums = 1d06e044759b1e1a4cc4960189dd7e001a0a4389d7239a6d59295af995a553518e4e0337b4b4b817e70da5d9731a4c98655af90791b6287870b5ff8d73ad8873
+
+pkgname = jsoncpp
+---
 pkgbase = kakoune
 	pkgver = 2024.05.18
 	pkgdesc = mawww's experiment for a better code editor
