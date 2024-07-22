@@ -230,8 +230,7 @@ ivpn-ui-deb
 jellyfin-media-player-deb
 jetbrains-toolbox-bin
 joplin-desktop-app
-jsoncpp:pkgbase
-jsoncpp:jsoncpp
+jsoncpp
 kakoune
 kalendar-git
 keepassxc
