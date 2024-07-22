@@ -5,7 +5,7 @@ pkgdesc="Open Gaming Platform"
 url='https://lutris.net'
 license=("GPL-3.0-or-later")
 provides=("${gives}-git")
-conflicts=("${gives}-deb" "${gives}")
+replace=("${gives}-deb" "${gives}")
 source=("git+https://github.com/lutris/lutris.git")
 sha256sums=("SKIP")
 depends=("cabextract"
@@ -30,7 +30,10 @@ depends=("cabextract"
   "libwebkit2gtk-4.1-0"
   "xdg-desktop-portal"
   "xdg-utils"
-  "libxrandr2")
+  "libxrandr2"
+  "libgtk-3-dev"
+  "libmagick++-dev"
+  "libwebkit2gtk-4.1-dev")
 pacdeps=("python3-moddb")
 makedepends=("git" "meson" "gettext" "desktop-file-utils" "appstream-util")
 checkdepends=("libappstream-glib-dev")
@@ -51,18 +54,13 @@ optdepends=('fluidsynth: For games that have MIDI music'
   'vulkan-tools: Vulkan support'
   'wine: easiest way to get all the libraries missing from the Lutris runtime'
   'winetricks: use system winetricks'
-  'libc6:i386: for 32bit games support'
   'mangohud:i386: Display the games FPS + other information'
   'libvkd3d1:i386: DirectX 12 support'
   'mesa-vulkan-drivers:i386: lib32 Vulkan support')
 maintainer=("xdavius <xdavius@github.com>")
 
-prepare() {
-  cd "${gives}"
-}
-
 build() {
-  meson "${gives}" build
+  meson --prefix=/usr "${gives}" build
   meson compile -C build
 }
 
@@ -71,5 +69,5 @@ check() {
 }
 
 package() {
-  meson install -C build --destdir "${pkgdir}"
+  DESTDIR="${pkgdir}" meson install -C build
 }
