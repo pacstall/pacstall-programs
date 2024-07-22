@@ -6,6 +6,7 @@ pkgver="3.14.22"
 pkgdesc='SteamOS session compositing window manager'
 arch=("amd64")
 url='https://github.com/ValveSoftware/gamescope'
+pacdeps=("openvr")
 depends=(hwdata
   seatd
   mesa-vulkan-drivers
@@ -59,13 +60,13 @@ makedepends=("meson"
   "glslang-tools"
   "hwdata"
   "vkroots-headers"
-  "libopenvr-dev"
   "libglm-dev"
   "libxmu-dev"
   "libdisplay-info-dev"
   "libbenchmark-dev"
   "libwayland-dev"
   "xwayland")
+# "libopenvr-dev"
 source=('git+https://github.com/ValveSoftware/gamescope.git'
   'git+https://github.com/Joshua-Ashton/wlroots.git'
   'git+https://gitlab.freedesktop.org/emersion/libliftoff.git'
