@@ -1,7 +1,6 @@
 pkgbase = jsoncpp
-	gives = jsoncpp
+	gives = libjsoncpp25
 	pkgver = 1.9.5
-	pkgrel = 3
 	pkgdesc = C++ library for interacting with JSON
 	url = https://github.com/open-source-parsers/jsoncpp
 	arch = x86_64
@@ -12,7 +11,7 @@ pkgbase = jsoncpp
 	makedepends = ninja-build
 	conflicts = libjsoncpp25
 	conflicts = libjsoncpp-dev
-	provides = libjsoncpp25
+	conflicts = libjsoncpp.so
 	provides = libjsoncpp-dev
 	provides = libjsoncpp.so
 	license = MIT
