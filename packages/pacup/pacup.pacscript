@@ -1,5 +1,5 @@
 pkgname="pacup"
-pkgver="3.3.2"
+pkgver="3.3.5"
 pkgdesc="Help maintainers update pacscripts (next-gen Perl rewrite)"
 depends=(
   'libdata-compare-perl'
@@ -18,7 +18,7 @@ replaces=(
   "${pkgname}-git"
 )
 source=("https://github.com/pacstall/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('1cc57e8e3af68b59c95a7e69182a03389fa9954a73409660c0d52afc1f954abc')
+sha256sums=('c90f8accba90af87ac7b7ca58923066b34bf0305049d14302704c280c3d739da')
 maintainer=(
   'vigress8 <vig@disroot.org>'
   'Oren Klopfer <oren@taumoda.com>'

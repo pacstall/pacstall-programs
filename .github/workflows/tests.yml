@@ -122,7 +122,7 @@ jobs:
               else
                 echo "Running pacstall -Qa for ${package_name}..."
                 echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
-                pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}
+                pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY} || exit 1
               fi
             fi
           done
@@ -247,7 +247,7 @@ jobs:
               else
                 echo "Running pacstall -Qa for ${package_name}..."
                 echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
-                pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}
+                pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY} || exit 1
               fi
             fi
           done

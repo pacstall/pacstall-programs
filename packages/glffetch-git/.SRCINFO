@@ -1,0 +1,13 @@
+pkgbase = glffetch-git
+	gives = glffetch-git
+	pkgver = 1.0
+	pkgdesc = Configuration for Fastfetch for the GLF Team Challenges
+	url = https://github.com/Xdavius/GLFfetch
+	arch = any
+	makedepends = git
+	pacdeps = fastfetch-git
+	pacdeps = nerd-fonts-hack
+	maintainer = xdavius <xdavius@github.com>
+	source = https://github.com/Xdavius/GLFfetch.git
+
+pkgname = glffetch-git

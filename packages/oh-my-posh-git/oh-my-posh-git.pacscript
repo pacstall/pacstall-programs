@@ -2,6 +2,7 @@ pkgname="oh-my-posh-git"
 gives="oh-my-posh"
 source=("https://github.com/JanDeDobbeleer/oh-my-posh.git")
 pkgver="20.0.0"
+pkgrel="2"
 makedepends=("golang-1.22-go")
 pacdeps=("nerd-fonts-hack")
 breaks=("${gives}")
@@ -14,6 +15,7 @@ external_connection=true
 build() {
   cd "${_archive}"
   cd src || exit 1
+  sed -i "s/go 1.22.3/go 1.22.2/g" go.mod
   /usr/lib/go-1.22/bin/go build -o "${gives}"
 }
 

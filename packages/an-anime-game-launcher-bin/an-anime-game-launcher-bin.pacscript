@@ -1,6 +1,6 @@
 pkgname="an-anime-game-launcher-bin"
 gives="an-anime-game-launcher"
-pkgver="3.10.1"
+pkgver="3.10.3"
 pkgdesc="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
 source=(
@@ -8,10 +8,9 @@ source=(
   "icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png"
 )
 sha256sums=(
-  "4965949c459885cb3be5bf3bd5cd0994364030c15ecfd950996afd1686269b23"
+  "cb2159374f2ba68ed2ee2fc38e946bf82261c32247021ab1be049614eb3ff2f0"
   "SKIP"
 )
-depends=("xdelta3")
 maintainer=("Elsie19 <elsie19@pm.me>")
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
@@ -24,7 +23,6 @@ optdepends=(
 )
 
 package() {
-  cd "${_archive}"
   install -Dm755 "anime-game-launcher" "${pkgdir}/usr/bin/${gives}"
   mkdir -p "${pkgdir}/usr/share/applications"
   echo '[Desktop Entry]
