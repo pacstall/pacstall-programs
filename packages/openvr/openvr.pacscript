@@ -6,9 +6,10 @@ pkgver="2.5.1"
 pkgdesc="API and runtime that allows access to VR hardware from multiple vendors"
 arch=("amd64")
 url='https://github.com/ValveSoftware/openvr'
-license=(BSD-3-Clause)
-depends=("libjsoncpp25" "libjson-c5" "libgl1")
-makedepends=("cmake" "libjsoncpp-dev" "libjson-c-dev" "libgl-dev")
+license=("BSD-3-Clause")
+pacdeps=("jsoncpp")
+depends=("libjsoncpp25" "libgl1")
+makedepends=("cmake" "libjsoncpp-dev" "libgl-dev")
 source=("${url}/archive/v${pkgver}/${pkgname}-${pkgver}.tar.gz"
   "openvr-fix-vsprintf_s.patch::${url}/pull/594.patch"
   "openvr-use-system-jsoncpp-1.23.7.patch::${url}/pull/1716.patch")
