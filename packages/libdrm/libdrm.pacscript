@@ -1,30 +1,30 @@
 pkgname="libdrm"
-pkgver="2.4.120"
-pkgrel="2"
+gives="${pkgname}-dev"
+pkgver="2.4.122"
+pkgrel="1"
 pkgdesc="Userspace interface to kernel DRM services"
 url="https://dri.freedesktop.org/"
 arch=("amd64" "arm64")
-depends=("libpciaccess0" "libc6")
+depends=("libpciaccess0")
 makedepends=("python3-docutils" "meson" "ninja-build" "libcairo2-dev" "libpciaccess-dev" "libc6-dev")
-provides=("${pkgname}" "${pkgname}-dev")
 replaces=("${pkgname}-dev")
-source=("https://dri.freedesktop.org/${pkgname}/${pkgname}-${pkgver}.tar.xz")
-sha256sums=("3bf55363f76c7250946441ab51d3a6cc0ae518055c0ff017324ab76cdefb327a")
-maintainer=("Oren Klopfer <oren@taumoda.com>")
+source=("https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-${pkgver}/drm-libdrm-${pkgver}.tar.gz")
+sha256sums=("7babfa22795dda27f32ed78b89bf93bfd341043e254bd42734cb569b602481d3")
+maintainer=("Oren Klopfer <oren@taumoda.com>" "xdavius <xdavius@github.com>")
 
 build() {
-  cd "${_archive}"
+  cd "drm-libdrm-${pkgver}"
   meson setup build \
-    -D udev=true \
-    -D etnaviv=disabled \
-    -D freedreno=disabled \
-    -D vc4=disabled \
-    -D valgrind=disabled \
-    -D install-test-programs=true
-  meson compile -C build
+    --prefix /usr/local \
+    --buildtype plain \
+    --wrap-mode nofallback \
+    -D udev=false \
+    -D valgrind=disabled
+  meson configure --no-pager build
+  ninja -C build
 }
 
 package() {
-  cd "${_archive}"
-  meson install -C build --destdir "${pkgdir}"
+  cd "drm-libdrm-${pkgver}"
+  DESTDIR="${pkgdir}" ninja -C build install
 }
