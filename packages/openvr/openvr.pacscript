@@ -7,7 +7,6 @@ pkgdesc="API and runtime that allows access to VR hardware from multiple vendors
 arch=("amd64")
 url='https://github.com/ValveSoftware/openvr'
 license=("BSD-3-Clause")
-pacdeps=("jsoncpp")
 depends=("libjsoncpp25" "libgl1")
 makedepends=("cmake" "libjsoncpp-dev" "libgl-dev")
 source=("${url}/archive/v${pkgver}/${pkgname}-${pkgver}.tar.gz"
@@ -29,7 +28,8 @@ build() {
   cmake -B build -S "${pkgname}-${pkgver}" \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DBUILD_SHARED=1 \
-    -DUSE_SYSTEM_JSONCPP=True
+    -DUSE_SYSTEM_JSONCPP=True \
+    -DCMAKE_CXX_FLAGS=-I/usr/include/jsoncpp
   make -C build
 }
 
