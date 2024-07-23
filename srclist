@@ -6961,7 +6961,6 @@ pkgbase = openvr
 	makedepends = cmake
 	makedepends = libjsoncpp-dev
 	makedepends = libgl-dev
-	pacdeps = jsoncpp
 	provides = libopenvr-api1
 	provides = libopenvr-apt1t64
 	license = BSD-3-Clause
