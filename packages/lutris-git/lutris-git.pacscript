@@ -55,11 +55,11 @@ optdepends=('fluidsynth: For games that have MIDI music'
   'mangohud:i386: Display the games FPS + other information'
   'libvkd3d1:i386: DirectX 12 support'
   'mesa-vulkan-drivers:i386: lib32 Vulkan support')
-optdepends_debian=('gamescope: Draw the game window isolated from your desktop')
 
 # Packages listed here are optdepends not provided in APT repositories. Install manually with pacstall if needed/exists :
 # 'python3-pypresence: Discord Rich Presence integration'
 # 'linux-steam-integration: start Steam with LSI'
+# 'gamescope: Draw the game window isolated from your desktop'
 
 maintainer=("xdavius <xdavius@github.com>")
 

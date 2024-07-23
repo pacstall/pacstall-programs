@@ -5711,7 +5711,6 @@ pkgbase = lutris-git
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://github.com/lutris/lutris.git
 	sha256sums = SKIP
-	optdepends_debian = gamescope: Draw the game window isolated from your desktop
 
 pkgname = lutris-git
 ---
