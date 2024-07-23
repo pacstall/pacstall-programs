@@ -6965,6 +6965,7 @@ pkgbase = openvr
 	provides = libopenvr-api1
 	provides = libopenvr-apt1t64
 	license = BSD-3-Clause
+	maintainer = xdavius <xdavius@github.com>
 	source = https://github.com/ValveSoftware/openvr/archive/v2.5.1/openvr-2.5.1.tar.gz
 	source = openvr-fix-vsprintf_s.patch::https://github.com/ValveSoftware/openvr/pull/594.patch
 	source = openvr-use-system-jsoncpp-1.23.7.patch::https://github.com/ValveSoftware/openvr/pull/1716.patch
