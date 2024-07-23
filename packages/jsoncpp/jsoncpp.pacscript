@@ -20,7 +20,7 @@ prepare() {
 build() {
   cd "${pkgname}-${pkgver}"
   echo "Building shared library..."
-  meson --prefix=/usr --default-library shared build
+  meson --prefix=/usr/local --default-library shared build
   ninja -C build
 
   echo "Building static library..."
