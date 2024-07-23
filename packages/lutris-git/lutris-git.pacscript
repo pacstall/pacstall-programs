@@ -16,6 +16,10 @@ depends=("cabextract"
   "mesa-utils"
   "p7zip"
   "psmisc"
+  "qdbus-qt5"
+  "unzip"
+  "xdg-desktop-portal"
+  "xdg-utils"
   "python3-cairo"
   "python3-certifi"
   "python3-dbus"
@@ -26,29 +30,23 @@ depends=("cabextract"
   "python3-pillow"
   "python3-requests"
   "python3-yaml"
-  "unzip"
-  "libwebkit2gtk-4.1-0"
-  "xdg-desktop-portal"
-  "xdg-utils"
   "libxrandr2"
   "libgtk-3-dev"
   "libmagick++-dev"
+  "libwebkit2gtk-4.1-0"
   "libwebkit2gtk-4.1-dev")
 pacdeps=("python3-moddb")
 makedepends=("git" "meson" "gettext" "desktop-file-utils" "appstream-util")
 checkdepends=("libappstream-glib-dev")
 optdepends=('fluidsynth: For games that have MIDI music'
   'gamemode: Allows games to request a temporary set of optimisations'
-  'gamescope: Draw the game window isolated from your desktop'
   'gvfs: GVFS backend'
   'innoextract: Extract Inno Setup installers'
   'mesa-vulkan-drivers: Vulkan support'
-  'linux-steam-integration: start Steam with LSI'
   'mangohud: Display the games FPS + other information'
   'python3-evdev: Controller support'
   'python3-pefile: Extract icons from Windows executables'
   'python3-protobuf: BattleNet integration'
-  'python3-pypresence: Discord Rich Presence integration'
   'libvkd3d1: DirectX 12 support'
   'vulkan-icd: Vulkan support'
   'vulkan-tools: Vulkan support'
@@ -57,6 +55,12 @@ optdepends=('fluidsynth: For games that have MIDI music'
   'mangohud:i386: Display the games FPS + other information'
   'libvkd3d1:i386: DirectX 12 support'
   'mesa-vulkan-drivers:i386: lib32 Vulkan support')
+optdepends_debian=('gamescope: Draw the game window isolated from your desktop')
+
+# Packages listed here are optdepends not provided in APT repositories. Install manually with pacstall if needed/exists :
+# 'python3-pypresence: Discord Rich Presence integration'
+# 'linux-steam-integration: start Steam with LSI'
+
 maintainer=("xdavius <xdavius@github.com>")
 
 build() {
