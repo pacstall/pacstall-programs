@@ -10,6 +10,7 @@ license=('MIT')
 makedepends=('doxygen' 'graphviz' 'python3' 'meson' 'ninja-build')
 source=("https://github.com/open-source-parsers/${pkgname}/archive/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 sha512sums=('1d06e044759b1e1a4cc4960189dd7e001a0a4389d7239a6d59295af995a553518e4e0337b4b4b817e70da5d9731a4c98655af90791b6287870b5ff8d73ad8873')
+maintainer=("xdavius <xdavius@github.com>")
 
 prepare() {
   cd "${pkgname}-${pkgver}"
