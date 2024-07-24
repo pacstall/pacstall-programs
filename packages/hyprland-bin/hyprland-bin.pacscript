@@ -23,12 +23,10 @@ depends=("libegl1"
   "libopengl0"
   "libglx0"
   "libgles2")
-
-if [[ ${DISTRO} == *bookworm* ]]; then
-  pacdeps=("libdisplay-info-git")
-else
+if [[ ${DISTRO#*:} != "bookworm" ]]; then
   depends+=("libdisplay-info1")
 fi
+pacdeps_bookworm=("libdisplay-info-git")
 
 compatible=("*:mantic" "*:noble" "*:devel" "debian:bookworm" "debian:trixie" "debian:sid")
 pkgdesc="A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
