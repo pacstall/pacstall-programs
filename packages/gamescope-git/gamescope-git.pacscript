@@ -66,7 +66,7 @@ makedepends=("meson"
 pacdeps=("openvr")
 
 if [[ ${DISTRO} == *"debian:bookworm"* ]]; then
-  pacdeps+=("vkroots-headers" "libdisplay-info-dev")
+  pacdeps+=("vkroots-git" "libdisplay-info-git")
 else
   makedepends+=("vkroots-headers" "libdisplay-info-dev")
 fi
