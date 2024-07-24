@@ -1,7 +1,8 @@
 pkgname="jsoncpp"
-gives="libjsoncpp25"
-provides=('libjsoncpp-dev' 'libjsoncpp.so')
-conflicts=('libjsoncpp25' 'libjsoncpp-dev' 'libjsoncpp.so')
+gives="libjsoncpp-dev"
+provides=("libjsoncpp25")
+replaces=("libjsoncpp25" "libjsoncpp-dev")
+breaks="${replaces[*]}"
 pkgver="1.9.5"
 pkgdesc='C++ library for interacting with JSON'
 url='https://github.com/open-source-parsers/jsoncpp'
@@ -25,7 +26,7 @@ build() {
 
   echo "Building static library..."
   CXXFLAGS="${CXXFLAGS} -ffat-lto-objects" \
-    meson --prefix=/usr --default-library static build-static
+    meson --prefix=/usr/local --default-library static build-static
   ninja -C build-static
 
   echo "Building docs..."
