@@ -12,7 +12,7 @@ sha512sums=('SKIP')
 maintainer=("xdavius <xdavius@gmail.com>")
 
 build() {
-  meson --prefix:/usr/local "${srcdir}/vkroots" build
+  meson --prefix=/usr/local "${srcdir}/vkroots" build
   meson compile -C build
 }
 
