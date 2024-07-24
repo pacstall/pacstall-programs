@@ -65,13 +65,13 @@ makedepends=("meson"
 
 pacdeps=("openvr")
 
-if [[ ${DISTRO#*:} =~ "debian:bookworm" ]]; then
+if [[ ${DISTRO} == *"debian:bookworm"* ]]; then
   pacdeps+=("vkroots-headers" "libdisplay-info-dev")
 else
   makedepends+=("vkroots-headers" "libdisplay-info-dev")
 fi
 
-if [[ ${DISTRO#*:} =~ "ubuntu" ]]; then
+if [[ ${DISTRO} == *"ubuntu"* ]]; then
   pacdeps+=("xcb-util-errors")
 else
   depends+=("libxcb-errors-dev")
