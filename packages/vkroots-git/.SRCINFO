@@ -10,6 +10,7 @@ pkgbase = vkroots-git
 	breaks = vkroots-headers
 	replaces = vkroots-headers
 	license = LGPL-2.1-or-later
+	maintainer = xdavius <xdavius@gmail.com>
 	source = git+https://github.com/Joshua-Ashton/vkroots.git
 	sha512sums = SKIP
 

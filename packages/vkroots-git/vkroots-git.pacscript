@@ -9,9 +9,10 @@ replaces=("${gives}")
 breaks=("${gives}")
 source=("git+https://github.com/Joshua-Ashton/vkroots.git")
 sha512sums=('SKIP')
+maintainer=("xdavius <xdavius@gmail.com>")
 
 build() {
-  meson --prefix:/usr "${srcdir}/vkroots" build
+  meson --prefix:/usr/local "${srcdir}/vkroots" build
   meson compile -C build
 }
 
