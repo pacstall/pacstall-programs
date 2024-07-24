@@ -6,34 +6,32 @@ pkgver="3.14.22"
 pkgdesc='SteamOS session compositing window manager'
 arch=("amd64")
 url='https://github.com/ValveSoftware/gamescope'
-pacdeps=("openvr")
-depends=(hwdata
-  seatd
-  mesa-vulkan-drivers
-  xwayland
-  libglm-dev
-  libavif-dev
-  libcap-dev
-  libdecor-0-dev
-  libdrm-dev
-  libinput-dev
-  libpipewire-0.3-dev
-  libx11-dev
-  libxcb1-dev
-  libxcomposite-dev
-  libxdamage-dev
-  libxext-dev
-  libxfixes-dev
-  libxkbcommon-dev
-  libxmu-dev
-  libxrender-dev
-  libxres-dev
-  libxtst-dev
-  libxxf86vm-dev
-  libsdl2-dev
-  libwayland-dev
-  libxcb-ewmh-dev
-  libxcb-errors-dev)
+depends=("hwdata"
+  "seatd"
+  "mesa-vulkan-drivers"
+  "xwayland"
+  "libglm-dev"
+  "libavif-dev"
+  "libcap-dev"
+  "libdecor-0-dev"
+  "libdrm-dev"
+  "libinput-dev"
+  "libpipewire-0.3-dev"
+  "libx11-dev"
+  "libxcb1-dev"
+  "libxcomposite-dev"
+  "libxdamage-dev"
+  "libxext-dev"
+  "libxfixes-dev"
+  "libxkbcommon-dev"
+  "libxmu-dev"
+  "libxrender-dev"
+  "libxres-dev"
+  "libxtst-dev"
+  "libxxf86vm-dev"
+  "libsdl2-dev"
+  "libwayland-dev"
+  "libxcb-ewmh-dev")
 makedepends=("meson"
   "pkg-config"
   "libx11-dev"
@@ -59,14 +57,27 @@ makedepends=("meson"
   "libliftoff-dev"
   "glslang-tools"
   "hwdata"
-  "vkroots-headers"
   "libglm-dev"
   "libxmu-dev"
-  "libdisplay-info-dev"
   "libbenchmark-dev"
   "libwayland-dev"
   "xwayland")
-# "libopenvr-dev"
+
+pacdeps=("openvr")
+
+if [[ ${CDISTRO#*:} != "bookworm" ]]; then
+  pacdeps+=("vkroots-headers" "libdisplay-info-dev")
+else
+  makedepends+=("vkroots-headers" "libdisplay-info-dev")
+fi
+
+if [[ ${DISTRO#*:} != "ubuntu" ]]; then
+  pacdeps+=("xcb-util-errors")
+else
+  depends+=("libxcb-errors-dev")
+  makedepends+=("libxcb-errors-dev")
+fi
+
 source=('git+https://github.com/ValveSoftware/gamescope.git'
   'git+https://github.com/Joshua-Ashton/wlroots.git'
   'git+https://gitlab.freedesktop.org/emersion/libliftoff.git'
