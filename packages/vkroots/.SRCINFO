@@ -1,0 +1,16 @@
+pkgbase = vkroots-git
+	gives = vkroots-headers
+	pkgver = 0.1
+	pkgdesc = A stupid simple method of making Vulkan layers, at home!
+	url = https://github.com/Joshua-Ashton/vkroots
+	makedepends = git
+	makedepends = meson
+	makedepends = ninja-build
+	makedepends = vulkan-headers
+	breaks = vkroots-headers
+	replaces = vkroots-headers
+	license = LGPL-2.1-or-later
+	source = git+https://github.com/Joshua-Ashton/vkroots.git
+	sha512sums = SKIP
+
+pkgname = vkroots-git

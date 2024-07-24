@@ -230,6 +230,7 @@ ivpn-ui-deb
 jellyfin-media-player-deb
 jetbrains-toolbox-bin
 joplin-desktop-app
+jsoncpp
 kakoune
 kalendar-git
 keepassxc
@@ -545,6 +546,7 @@ viper4linux
 virtualbox-deb
 vivaldi-deb
 vivarium
+vkroots
 vscode-deb
 vscode-insiders-deb
 vscodium-deb
