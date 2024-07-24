@@ -35,5 +35,6 @@ pkgbase = hyprland-bin
 	repology = project: hyprland
 	source = https://github.com/hyprwm/Hyprland/releases/download/v0.40.0/v0.40.0.tar.gz
 	sha256sums = 746ac771c7675163b40b5fb989e0a8aabd8d1a18a63aaf228d2bd0af2e0ff3d1
+	pacdeps_bookworm = libdisplay-info-git
 
 pkgname = hyprland-bin
