@@ -4,7 +4,32 @@ pkgrel="2"
 gives="hyprland"
 arch=("amd64")
 conflicts=("hyprland")
-depends=("libegl1" "libxcb-util1" "libxcb-render0" "libxcb-image0" "libxcb-icccm4" "libxcb-composite0" "libxcb-res0" "libxcb-ewmh2" "libwayland-cursor0" "libdisplay-info1" "libxkbcommon0" "libglib2.0-0" "libharfbuzz0b" "libpangocairo-1.0-0" "libinput10" "libseat-dev" "libliftoff0" "libopengl0" "libglx0" "libgles2")
+depends=("libegl1"
+  "libxcb-util1"
+  "libxcb-render0"
+  "libxcb-image0"
+  "libxcb-icccm4"
+  "libxcb-composite0"
+  "libxcb-res0"
+  "libxcb-ewmh2"
+  "libwayland-cursor0"
+  "libxkbcommon0"
+  "libglib2.0-0"
+  "libharfbuzz0b"
+  "libpangocairo-1.0-0"
+  "libinput10"
+  "libseat-dev"
+  "libliftoff0"
+  "libopengl0"
+  "libglx0"
+  "libgles2")
+
+if [[ ${DISTRO} == *bookworm* ]]; then
+  pacdeps=("libdisplay-info-git")
+else
+  depends+=("libdisplay-info1")
+fi
+
 compatible=("*:mantic" "*:noble" "*:devel" "debian:bookworm" "debian:trixie" "debian:sid")
 pkgdesc="A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
 source=("https://github.com/hyprwm/Hyprland/releases/download/v${pkgver}/v${pkgver}.tar.gz")
