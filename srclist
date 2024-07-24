@@ -11002,7 +11002,7 @@ pkgbase = xapps-common-deb
 pkgname = xapps-common-deb
 ---
 pkgbase = xcb-util-errors
-	gives = libxcb-util-errors
+	gives = libxcb-errors-dev
 	pkgver = 1.0.1
 	pkgdesc = XCB errors library
 	url = https://cgit.freedesktop.org/xcb/util-errors/
@@ -11014,6 +11014,7 @@ pkgbase = xcb-util-errors
 	makedepends = pkg-config
 	makedepends = libxcb1-dev
 	makedepends = python3
+	provides = libxcb-errors0
 	maintainer = Elsie19 <elsie19@pm.me>
 	source = https://xorg.freedesktop.org/archive/individual/lib/xcb-util-errors-1.0.1.tar.xz
 	sha256sums = 5628c87b984259ad927bacd8a42958319c36bdf4b065887803c9d820fb80f357
