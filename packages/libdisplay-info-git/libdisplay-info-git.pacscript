@@ -1,7 +1,7 @@
 pkgname="libdisplay-info-git"
 gives="libdisplay-info-dev"
-provides=("libdisplay-info1" "libdisplay-info1")
-replaces=("libdisplay-info1" "libdisplay-info1" "libdisplay-info-dev")
+provides=("libdisplay-info1")
+replaces=("libdisplay-info1" "libdisplay-info-dev")
 breaks="${replaces}"
 pkgver="0.1.1"
 pkgdesc='EDID and DisplayID library'
@@ -11,8 +11,6 @@ license=('MIT')
 source=("git+https://gitlab.freedesktop.org/emersion/libdisplay-info")
 sha256sums=('SKIP')
 makedepends=("git" "hwdata" "meson" "ninja-build" "python3")
-conflicts=(libdisplay-info)
-provides=(libdisplay-info libdisplay-info.so)
 maintainer=("xdavius <xdavius@gmail.com>")
 
 build() {
