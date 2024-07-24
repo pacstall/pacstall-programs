@@ -1,0 +1,17 @@
+pkgbase = python3-pypresence
+	gives = python3-pypresence
+	pkgver = 4.3.0
+	pkgdesc = Discord RPC and Rich Presence wrapper library
+	url = https://github.com/qwertyquerty/pypresence
+	depends = python3
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-sphinx
+	makedepends = python3-wheel
+	license = MIT
+	maintainer = xdavius <xdavius@github.com>
+	source = python3-pypresence-4.3.0.tar.gz::https://github.com/qwertyquerty/pypresence/archive/refs/tags/v4.3.0.tar.gz
+	sha256sums = 958a5bb2f28c3120c89c68cc242abd8e72e2dac9aaf9be36b7c7a6217dcf4669
+
+pkgname = python3-pypresence

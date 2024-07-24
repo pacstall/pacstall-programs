@@ -2880,7 +2880,7 @@ pkgname = fzf-bin
 ---
 pkgbase = galaxybudsclient-bin
 	gives = galaxybudsclient
-	pkgver = 5.0.1
+	pkgver = 5.1.0
 	pkgdesc = Unofficial Galaxy Buds Manager for Windows and Linux
 	url = https://github.com/timschneeb/GalaxyBudsClient
 	arch = amd64
@@ -2889,14 +2889,14 @@ pkgbase = galaxybudsclient-bin
 	depends = bluetooth
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: galaxybudsclient
-	source = https://github.com/timschneeb/GalaxyBudsClient/blob/5.0.1/GalaxyBudsClient/Resources/icon.png?raw=true
+	source = https://github.com/timschneeb/GalaxyBudsClient/blob/5.1.0/GalaxyBudsClient/Resources/icon.png?raw=true
 	sha256sums = 15783ad016b4fc50395456da8bd4838441582f5394a0731c0038fdc692289d51
-	source_amd64 = https://github.com/timschneeb/GalaxyBudsClient/releases/download/5.0.1/GalaxyBudsClient_Linux_64bit_Portable.bin
-	sha256sums_amd64 = e488526d9d062655db12748bdef8bed8f4e5b443bcdf76e534a8c83dab99ce25
-	source_arm64 = https://github.com/timschneeb/GalaxyBudsClient/releases/download/5.0.1/GalaxyBudsClient_Linux_arm64_Portable.bin
-	sha256sums_arm64 = 18c5f81974556da3b0c6855f59b836fdcaa09cbd0b052f6b33b9913a3853ce0a
-	source_armhf = https://github.com/timschneeb/GalaxyBudsClient/releases/download/5.0.1/GalaxyBudsClient_Linux_arm_Portable.bin
-	sha256sums_armhf = 862e8cfb3096cb1ae0af53633a9ae2e6b0a07474a796c576d39880eadc1a52a8
+	source_amd64 = https://github.com/timschneeb/GalaxyBudsClient/releases/download/5.1.0/GalaxyBudsClient_Linux_64bit_Portable.bin
+	sha256sums_amd64 = 09dfdb8f6a5f7ffc38a5fda9ca99311acf3ac56454d00b3105b59282a841857e
+	source_arm64 = https://github.com/timschneeb/GalaxyBudsClient/releases/download/5.1.0/GalaxyBudsClient_Linux_arm64_Portable.bin
+	sha256sums_arm64 = e7d0ef2b8b8ac496e7d7f257e655ceefe083dfdd65b3c45cc5578572479bc892
+	source_armhf = https://github.com/timschneeb/GalaxyBudsClient/releases/download/5.1.0/GalaxyBudsClient_Linux_arm_Portable.bin
+	sha256sums_armhf = e15a9eb81ccb7c0ea38694bd26121484b4f9ab2219b5f97d895f10bad5921d3b
 
 pkgname = galaxybudsclient-bin
 ---
@@ -6950,6 +6950,30 @@ pkgbase = opentoonz
 
 pkgname = opentoonz
 ---
+pkgbase = openvr
+	gives = libopenvr-dev
+	pkgver = 2.5.1
+	pkgdesc = API and runtime that allows access to VR hardware from multiple vendors
+	url = https://github.com/ValveSoftware/openvr
+	arch = amd64
+	depends = libjsoncpp25
+	depends = libgl1
+	makedepends = cmake
+	makedepends = libjsoncpp-dev
+	makedepends = libgl-dev
+	provides = libopenvr-api1
+	provides = libopenvr-apt1t64
+	license = BSD-3-Clause
+	maintainer = xdavius <xdavius@github.com>
+	source = https://github.com/ValveSoftware/openvr/archive/v2.5.1/openvr-2.5.1.tar.gz
+	source = openvr-fix-vsprintf_s.patch::https://github.com/ValveSoftware/openvr/pull/594.patch
+	source = openvr-use-system-jsoncpp-1.23.7.patch::https://github.com/ValveSoftware/openvr/pull/1716.patch
+	sha256sums = 54f654fce001682d8ac608f544a6c41e03a672b005c1deca3579fa36480a537c
+	sha256sums = 1d954060f27b16485e398654d6730105abc251d372da03fbba38496db17885ae
+	sha256sums = f79c6edf25efa1aac42b60db48d72f4e3c771039c9cd0fc0870fd51f17712229
+
+pkgname = openvr
+---
 pkgbase = opera-beta-deb
 	gives = opera-beta
 	pkgver = 107.0.5045.4
@@ -7836,6 +7860,24 @@ pkgbase = python3-moddb
 	sha256sums = SKIP
 
 pkgname = python3-moddb
+---
+pkgbase = python3-pypresence
+	gives = python3-pypresence
+	pkgver = 4.3.0
+	pkgdesc = Discord RPC and Rich Presence wrapper library
+	url = https://github.com/qwertyquerty/pypresence
+	depends = python3
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-sphinx
+	makedepends = python3-wheel
+	license = MIT
+	maintainer = xdavius <xdavius@github.com>
+	source = python3-pypresence-4.3.0.tar.gz::https://github.com/qwertyquerty/pypresence/archive/refs/tags/v4.3.0.tar.gz
+	sha256sums = 958a5bb2f28c3120c89c68cc242abd8e72e2dac9aaf9be36b7c7a6217dcf4669
+
+pkgname = python3-pypresence
 ---
 pkgbase = python3-zombie-imp
 	pkgver = 0.0.2
