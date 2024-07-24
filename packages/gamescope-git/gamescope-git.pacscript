@@ -71,7 +71,7 @@ else
   makedepends+=("vkroots-headers" "libdisplay-info-dev")
 fi
 
-if [[ ${DISTRO#*:} == "ubuntu:*" ]]; then
+if [[ ${DISTRO#*:} == "ubuntu" ]]; then
   pacdeps+=("xcb-util-errors")
 else
   depends+=("libxcb-errors-dev")
