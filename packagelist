@@ -250,7 +250,15 @@ lens
 lf-bin
 libcamera-git
 libcutefish-git
-libdrm
+libdrm:pkgbase
+libdrm:libdrm-dev
+libdrm:libdrm2
+libdrm:libdrm-radeon1
+libdrm:libdrm-meta
+libdrm:libdrm-nouveau2
+libdrm:libdrm-intel1
+libdrm:libdrm-amdgpu1
+libdrm:libdrm-common
 libeditline-troglobit
 libfdk-aac1-deb
 libgc-nix
