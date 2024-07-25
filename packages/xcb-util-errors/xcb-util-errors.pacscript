@@ -1,8 +1,8 @@
 pkgname="xcb-util-errors"
 gives="${pkgname}"
 provides=("libxcb-errors0" "libxcb-errors-dev")
-replaces=("${provides[*]}")
-conflicts=("${provides[*]}")
+replaces=("libxcb-errors0" "libxcb-errors-dev")
+conflicts=("libxcb-errors0" "libxcb-errors-dev")
 pkgver="1.0.1"
 pkgdesc="XCB errors library"
 url='https://cgit.freedesktop.org/xcb/util-errors/'
