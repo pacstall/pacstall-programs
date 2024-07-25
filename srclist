@@ -5006,7 +5006,6 @@ pkgname = libdrm
 	depends = libdrm-radeon1
 	depends = libdrm-amdgpu1
 	depends = libdrm-dev
-	depends = libdrm
 	depends = libpciaccess0
 	depends = libpciaccess-dev
 ---

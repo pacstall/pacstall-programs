@@ -61,7 +61,6 @@ package_libdrm() {
     "libdrm-radeon1"
     "libdrm-amdgpu1"
     "libdrm-dev"
-    "libdrm"
     "libpciaccess0"
     "libpciaccess-dev"
   )
