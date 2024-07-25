@@ -6,7 +6,7 @@ pkgname=("libdrm2"
   "libdrm-radeon1"
   "libdrm-amdgpu1"
   "libdrm-dev"
-  "libdrm-meta")
+  "libdrm")
 pkgver="2.4.122"
 pkgrel="1"
 pkgdesc="Userspace interface to kernel DRM services"
@@ -51,10 +51,17 @@ package_libdrm-dev() {
   depends="${pkgbase}"
 }
 
-package_libdrm-meta() {
-  gives="libdrm-meta"
+package_libdrm() {
+  gives="libdrm"
   depends=(
-    "${pkgname[*]}"
+    "libdrm2"
+    "libdrm-common"
+    "libdrm-intel1"
+    "libdrm-nouveau2"
+    "libdrm-radeon1"
+    "libdrm-amdgpu1"
+    "libdrm-dev"
+    "libdrm"
     "libpciaccess0"
     "libpciaccess-dev"
   )

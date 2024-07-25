@@ -251,10 +251,10 @@ lf-bin
 libcamera-git
 libcutefish-git
 libdrm:pkgbase
+libdrm:libdrm
 libdrm:libdrm-dev
 libdrm:libdrm2
 libdrm:libdrm-radeon1
-libdrm:libdrm-meta
 libdrm:libdrm-nouveau2
 libdrm:libdrm-intel1
 libdrm:libdrm-amdgpu1
