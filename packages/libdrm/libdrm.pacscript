@@ -7,6 +7,14 @@ pkgname=("libdrm2"
   "libdrm-amdgpu1"
   "libdrm-dev"
   "libdrm")
+makedepends=(
+  "python3-docutils"
+  "meson"
+  "ninja-build"
+  "libcairo2-dev"
+  "libpciaccess-dev"
+  "libc6-dev"
+)
 pkgver="2.4.122"
 pkgrel="1"
 pkgdesc="Userspace interface to kernel DRM services"
@@ -63,14 +71,6 @@ package_libdrm() {
     "libdrm-dev"
     "libpciaccess0"
     "libpciaccess-dev"
-  )
-  makedepends=(
-    "python3-docutils"
-    "meson"
-    "ninja-build"
-    "libcairo2-dev"
-    "libpciaccess-dev"
-    "libc6-dev"
   )
 
   #build so avoid build for each packages
