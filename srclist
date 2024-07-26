@@ -11044,7 +11044,7 @@ pkgbase = xapps-common-deb
 pkgname = xapps-common-deb
 ---
 pkgbase = xcb-util-errors
-	gives = xcb-util-errors
+	gives = libxcb-util-errors
 	pkgver = 1.0.1
 	pkgdesc = XCB errors library
 	url = https://cgit.freedesktop.org/xcb/util-errors/
