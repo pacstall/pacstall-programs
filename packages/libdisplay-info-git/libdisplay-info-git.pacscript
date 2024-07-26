@@ -14,7 +14,7 @@ makedepends=("git" "hwdata" "meson" "ninja-build" "python3")
 maintainer=("xdavius <xdavius@gmail.com>")
 
 build() {
-  meson --prefix=/usr/local libdisplay-info build
+  meson --prefix=/usr libdisplay-info build
   ninja -C build
 }
 
