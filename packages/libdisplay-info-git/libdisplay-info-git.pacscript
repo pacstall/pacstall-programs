@@ -1,8 +1,8 @@
 pkgname="libdisplay-info-git"
 gives="libdisplay-info"
 provides=("libdisplay-info1" "libdisplay-info-dev")
-replaces=("libdisplay-info1" "libdisplay-info-dev")
-conflicts=("${replaces[*]}")
+replaces=("${provides[@]}")
+conflicts=("${provides[@]}")
 pkgver="0.1.1"
 pkgdesc='EDID and DisplayID library'
 url='https://gitlab.freedesktop.org/emersion/libdisplay-info'
