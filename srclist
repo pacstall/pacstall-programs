@@ -278,6 +278,7 @@ pkgname = appimagelauncher-deb
 pkgbase = apptainer-deb
 	gives = apptainer
 	pkgver = 1.3.3
+	pkgdesc = container platform focused on supporting "Mobility of Compute" formerly known as Singularity
 	arch = amd64
 	repology = project: apptainer
 	source = https://github.com/apptainer/apptainer/releases/download/v1.3.3/apptainer_1.3.3_amd64.deb
