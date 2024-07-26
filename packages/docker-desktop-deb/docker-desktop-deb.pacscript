@@ -1,0 +1,10 @@
+pkgname="docker-desktop-deb"
+gives="docker-desktop"
+pkgver="4.33.0-160616"
+arch=("amd64")
+source=("https://desktop.docker.com/linux/main/amd64/${pkgver#*-}/${gives}-amd64.deb")
+url="https://www.docker.com/products/${gives}"
+repology=("project: ${gives}")
+pkgdesc="Easy-to-install application that enables you to locally build and share containerized applications and microservices"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums=("087301fb44e421c1113389994ab5b4e50d25c9b3a0413460fa8abe1527a253fa")

@@ -1871,6 +1871,19 @@ pkgbase = docker-compose-plugin-bin
 
 pkgname = docker-compose-plugin-bin
 ---
+pkgbase = docker-desktop-deb
+	gives = docker-desktop
+	pkgver = 4.33.0-160616
+	pkgdesc = Easy-to-install application that enables you to locally build and share containerized applications and microservices
+	url = https://www.docker.com/products/docker-desktop
+	arch = amd64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: docker-desktop
+	source = https://desktop.docker.com/linux/main/amd64/160616/docker-desktop-amd64.deb
+	sha256sums = 087301fb44e421c1113389994ab5b4e50d25c9b3a0413460fa8abe1527a253fa
+
+pkgname = docker-desktop-deb
+---
 pkgbase = dolphin-emu-git
 	gives = dolphin-emu
 	pkgver = 5.0
