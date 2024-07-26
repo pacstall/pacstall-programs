@@ -1,8 +1,8 @@
 pkgname="jsoncpp"
 gives="libjsoncpp-dev"
 provides=("libjsoncpp25")
-replaces=("libjsoncpp25" "libjsoncpp-dev")
-breaks="${replaces[*]}"
+replaces=("${provides[@]}")
+conflicts=("${provides[@]}")
 pkgver="1.9.5"
 pkgdesc='C++ library for interacting with JSON'
 url='https://github.com/open-source-parsers/jsoncpp'
