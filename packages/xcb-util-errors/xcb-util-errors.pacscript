@@ -1,5 +1,5 @@
 pkgname="xcb-util-errors"
-gives="${pkgname}"
+gives="lib${pkgname}"
 provides=("libxcb-errors0" "libxcb-errors-dev")
 replaces=("${provides[@]}")
 conflicts=("${provides[@]}")
