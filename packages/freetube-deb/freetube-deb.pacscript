@@ -6,3 +6,4 @@ pkgdesc="An Open Source YouTube app for privacy."
 repology=("project: freetube")
 sha256sums=("9bee4f73cebbd5c095ae9099981c1cab39378df7f2c471d6f5dc02f106b8ab91")
 arch=('amd64')
+maintainer=("Zahrun <Zahrun@github.com>")
