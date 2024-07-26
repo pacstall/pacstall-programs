@@ -8,7 +8,6 @@ makedepends=("meson" "ninja-build" "libvulkan-dev")
 replaces=("${gives}")
 breaks=("${gives}")
 source=("git+https://github.com/Joshua-Ashton/vkroots.git")
-sha512sums=('SKIP')
 maintainer=("xdavius <xdavius@gmail.com>")
 
 build() {
