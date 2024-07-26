@@ -10437,7 +10437,6 @@ pkgbase = vkroots-git
 	license = LGPL-2.1-or-later
 	maintainer = xdavius <xdavius@gmail.com>
 	source = git+https://github.com/Joshua-Ashton/vkroots.git
-	sha512sums = SKIP
 
 pkgname = vkroots-git
 ---
