@@ -4,6 +4,7 @@ provides=("libxcb-errors0" "libxcb-errors-dev")
 replaces=("${provides[@]}")
 conflicts=("${provides[@]}")
 pkgver="1.0.1"
+pkgrel="2"
 pkgdesc="XCB errors library"
 url='https://cgit.freedesktop.org/xcb/util-errors/'
 makedepends=("libtool" "xcb-proto" "xutils-dev" "autoconf" "autogen" "pkg-config" "libxcb1-dev" "python3")
