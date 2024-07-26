@@ -1,6 +1,6 @@
 pkgname="neovim"
 pkgver="0.10.1"
-pkgrel="2"
+pkgrel="1"
 source=("https://github.com/neovim/neovim/archive/refs/tags/v${pkgver}.tar.gz")
 url='https://neovim.io/'
 makedepends=("gettext" "libtool" "libtool-bin" "autoconf" "automake" "cmake" "g++" "pkg-config")
