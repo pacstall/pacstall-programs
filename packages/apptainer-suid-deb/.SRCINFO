@@ -1,0 +1,11 @@
+pkgbase = apptainer-suid-deb
+	gives = apptainer-suid
+	pkgver = 1.3.3
+	pkgdesc = setuid-root portion of apptainer
+	arch = amd64
+	pacdeps = apptainer
+	repology = project: apptainer
+	source = https://github.com/apptainer/apptainer/releases/download/v1.3.3/apptainer-suid_1.3.3_amd64.deb
+	sha256sums = 4a1ca609ffd0fbc532ec3af7427eca054a47e14a82e004c918e16e063cd35239
+
+pkgname = apptainer-suid-deb
