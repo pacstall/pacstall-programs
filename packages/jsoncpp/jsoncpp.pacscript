@@ -26,7 +26,7 @@ build() {
 
   echo "Building static library..."
   CXXFLAGS="${CXXFLAGS} -ffat-lto-objects" \
-    meson --prefix=/usr/local --default-library static build-static
+    meson --prefix=/usr --default-library static build-static
   ninja -C build-static
 
   echo "Building docs..."
