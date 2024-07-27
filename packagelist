@@ -13,6 +13,8 @@ anydesk-bin
 anydesk-deb
 anytype-deb
 appimagelauncher-deb
+apptainer-deb
+apptainer-suid-deb
 apx-git
 ardour-git
 arduino-cli-bin

@@ -275,6 +275,29 @@ pkgbase = appimagelauncher-deb
 
 pkgname = appimagelauncher-deb
 ---
+pkgbase = apptainer-deb
+	gives = apptainer
+	pkgver = 1.3.3
+	pkgdesc = container platform focused on supporting "Mobility of Compute" formerly known as Singularity
+	arch = amd64
+	repology = project: apptainer
+	source = https://github.com/apptainer/apptainer/releases/download/v1.3.3/apptainer_1.3.3_amd64.deb
+	sha256sums = 1a2e96cae9eaf54b069bd0107da590e60452e6d58430376c91058ad751497b59
+
+pkgname = apptainer-deb
+---
+pkgbase = apptainer-suid-deb
+	gives = apptainer-suid
+	pkgver = 1.3.3
+	pkgdesc = setuid-root portion of apptainer
+	arch = amd64
+	pacdeps = apptainer-deb
+	repology = project: apptainer
+	source = https://github.com/apptainer/apptainer/releases/download/v1.3.3/apptainer-suid_1.3.3_amd64.deb
+	sha256sums = 4a1ca609ffd0fbc532ec3af7427eca054a47e14a82e004c918e16e063cd35239
+
+pkgname = apptainer-suid-deb
+---
 pkgbase = apx-git
 	gives = apx
 	pkgver = 2.4.0
@@ -1680,7 +1703,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.60
+	pkgver = 0.0.61
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1689,8 +1712,8 @@ pkgbase = discord-deb
 	breaks = discord-debian-patched-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.60/discord-0.0.60.deb
-	sha256sums = dc8264ad01aeb2f7316e38dc72aa5714e4b3af8e317da31db1777a993656cb0c
+	source = https://dl.discordapp.net/apps/linux/0.0.61/discord-0.0.61.deb
+	sha256sums = 818c998f5a91caec55dc3076788f73e07f4a91f8c96233e9f8f2cdd60cfca4b6
 
 pkgname = discord-deb
 ---
@@ -2563,14 +2586,14 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 128.0
+	pkgver = 128.0.2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.0/linux-x86_64/en-US/firefox-128.0.tar.bz2
-	sha256sums = dce89cff7286c1bd4dd906fb9123e6136f1a1ecb7a6d674c53566c319cc85c4d
+	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.0.2/linux-x86_64/en-US/firefox-128.0.2.tar.bz2
+	sha256sums = e9347f23378469bcb3c3cd9a46c85c1324d1536b3ffdaa6c2730ea07908a6c46
 
 pkgname = firefox-bin
 ---
@@ -2778,12 +2801,13 @@ pkgname = fpc-src-deb
 ---
 pkgbase = freetube-deb
 	gives = freetube
-	pkgver = 0.21.1
+	pkgver = 0.21.2
 	pkgdesc = An Open Source YouTube app for privacy.
 	arch = amd64
+	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: freetube
-	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.1-beta/freetube_0.21.1_amd64.deb
-	sha256sums = ea2264b9458f9911e3a5000038a09a808b8e872e5df19a36201e319cf3ca3b53
+	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.2-beta/freetube_0.21.2_amd64.deb
+	sha256sums = 9bee4f73cebbd5c095ae9099981c1cab39378df7f2c471d6f5dc02f106b8ab91
 
 pkgname = freetube-deb
 ---
@@ -6161,15 +6185,15 @@ pkgname = mullvad-vpn-beta-deb
 ---
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
-	pkgver = 2024.3
+	pkgver = 2024.4
 	pkgdesc = The Mullvad VPN client app for desktop
 	arch = amd64
 	breaks = mullvad-vpn-beta-deb
 	breaks = mullvad-vpn-git
 	replaces = mullvad-vpn
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2024.3/MullvadVPN-2024.3_amd64.deb
-	sha256sums = 2dfb8b05818795511c5691d275148011ff43ed00a145dfdf871f04a020596d27
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2024.4/MullvadVPN-2024.4_amd64.deb
+	sha256sums = 6ec5e53b3a86af7ec06611228faf05cb6ff72e4e7427b0378c7574adee54ea3d
 
 pkgname = mullvad-vpn-deb
 ---
@@ -6335,7 +6359,7 @@ pkgname = neovide-bin
 ---
 pkgbase = neovim-app
 	gives = neovim
-	pkgver = 0.10.0
+	pkgver = 0.10.1
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	depends = libfuse2
@@ -6345,8 +6369,8 @@ pkgbase = neovim-app
 	replaces = neovim-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source = https://github.com/neovim/neovim/releases/download/v0.10.0/nvim.appimage
-	sha256sums = 6a021e9465fe3d3375e28c3e94c1c2c4f7d1a5a67e4a78cf52d18d77b1471390
+	source = https://github.com/neovim/neovim/releases/download/v0.10.1/nvim.appimage
+	sha256sums = c4762d54cadfd9fa4497c7969197802c9cf9e0d926c39e561f0bd170e36c8aa0
 
 pkgname = neovim-app
 ---
@@ -6385,8 +6409,8 @@ pkgbase = neovim-git
 pkgname = neovim-git
 ---
 pkgbase = neovim
-	pkgver = 0.10.0
-	pkgrel = 2
+	pkgver = 0.10.1
+	pkgrel = 1
 	pkgdesc = Neovim is a vim fork maintained by the community
 	url = https://neovim.io/
 	makedepends = gettext
@@ -6407,8 +6431,8 @@ pkgbase = neovim
 	replaces = neovim-runtime
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source = https://github.com/neovim/neovim/archive/refs/tags/v0.10.0.tar.gz
-	sha256sums = 372ea2584b0ea2a5a765844d95206bda9e4a57eaa1a2412a9a0726bab750f828
+	source = https://github.com/neovim/neovim/archive/refs/tags/v0.10.1.tar.gz
+	sha256sums = edce96e79903adfcb3c41e9a8238511946325ea9568fde177a70a614501af689
 
 pkgname = neovim
 ---
@@ -11072,6 +11096,7 @@ pkgname = xapps-common-deb
 pkgbase = xcb-util-errors
 	gives = libxcb-util-errors
 	pkgver = 1.0.1
+	pkgrel = 2
 	pkgdesc = XCB errors library
 	url = https://cgit.freedesktop.org/xcb/util-errors/
 	makedepends = libtool
@@ -11082,6 +11107,12 @@ pkgbase = xcb-util-errors
 	makedepends = pkg-config
 	makedepends = libxcb1-dev
 	makedepends = python3
+	conflicts = libxcb-errors0
+	conflicts = libxcb-errors-dev
+	replaces = libxcb-errors0
+	replaces = libxcb-errors-dev
+	provides = libxcb-errors0
+	provides = libxcb-errors-dev
 	maintainer = Elsie19 <elsie19@pm.me>
 	source = https://xorg.freedesktop.org/archive/individual/lib/xcb-util-errors-1.0.1.tar.xz
 	sha256sums = 5628c87b984259ad927bacd8a42958319c36bdf4b065887803c9d820fb80f357
