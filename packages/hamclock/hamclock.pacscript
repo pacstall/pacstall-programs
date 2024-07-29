@@ -8,7 +8,7 @@ source=(
 url='https://clearskyinstitute.com/ham/HamClock'
 makedepends=("gcc" "make" "pkg-config" "libxau6" "libx11-6" "libx11-dev" "libxcb1")
 breaks=("hamclock-big" "hamclock-bigger" "hamclock-huge")
-replaces=("hamclock")
+replaces=("hamclock" "${breaks[@]}")
 pkgdesc="Clock and world map with extra features for amateur radio (800x480 version)"
 sha256sums=(
   "fdc1a9b724d2189624f9213ac887e31ab2d089a8982e1a1198bec98202617c64"
