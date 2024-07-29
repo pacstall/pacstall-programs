@@ -10498,17 +10498,17 @@ pkgname = vscode-insiders-deb
 ---
 pkgbase = vscodium-deb
 	gives = codium
-	pkgver = 1.89.1.24130
+	pkgver = 1.91.1.24193
 	pkgdesc = Binary releases of VS Code without MS branding/telemetry/licensing
 	arch = arm64
 	arch = amd64
 	breaks = codium
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: vscodium
-	source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.89.1.24130/codium_1.89.1.24130_arm64.deb
-	sha256sums_arm64 = f94cd2f8b70589b86b982420410f1d4b61b8b734ca10b635915f3f62cd87f159
-	source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.89.1.24130/codium_1.89.1.24130_amd64.deb
-	sha256sums_amd64 = 8e4fdac78ce89cfce0f30bd9b2ed597867396673bad22b5f9f852bb1cbdd0a05
+	source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.91.1.24193/codium_1.91.1.24193_arm64.deb
+	sha256sums_arm64 = ddc34f1418db4b0ea3dc469dc4796ea0df2c011e6994ba3179e6e3ca425dd79f
+	source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.91.1.24193/codium_1.91.1.24193_amd64.deb
+	sha256sums_amd64 = 5d06e2bf47c9224686dba33bed9079de69a6f383694097eb413d55aaf5d6df05
 
 pkgname = vscodium-deb
 ---
