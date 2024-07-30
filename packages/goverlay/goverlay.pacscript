@@ -1,13 +1,14 @@
 pkgname="goverlay"
-pkgver="1.1.1"
-pkgrel="2"
+pkgver="1.2.0"
+_pkgver="1.2"
+pkgrel="1"
 pkgdesc="A GUI to help manage Vulkan/OpenGL overlays"
 gives="goverlay"
 replace=("goverlay-bin")
 arch=("amd64")
 url="https://github.com/benjamimgois/goverlay/"
-source=("https://github.com/benjamimgois/goverlay/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums="06dcad9ab7db990f2df04be01d549953e274907d7f691fe1bc4bbe712329936c"
+source=("goverlay-${pkgver}::https://github.com/benjamimgois/goverlay/archive/refs/tags/${_pkgver}.tar.gz")
+sha256sums="ce18c2a0810f6dc5f4e27f35d5f8d8353ef3bc78e36de57eaeb50a0821691c24"
 makedepends=('git' 'libglu1-mesa-dev' 'qt6-base-dev')
 depends=("mangohud" "libqt6pas-dev" "qt6ct" "adwaita-qt6")
 pacdeps=('qt6pas' 'mangohud')
@@ -24,7 +25,7 @@ maintainer=("xdavius <xdavius@github.com>")
 repology=("project: goverlay")
 
 build() {
-  cd "${_archive}"
+  cd "goverlay-${_pkgver}"
   if [[ "sid trixie noble oracular devel" =~ ${DISTRO#*:} ]]; then
     make -j "${NCPU}" LAZBUILDOPTS=--lazarusdir=/usr/lib/lazarus/default
   else
@@ -33,7 +34,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "goverlay-${_pkgver}"
   make prefix=/usr libexecdir=/lib DESTDIR="${pkgdir}" install
   # shellcheck disable=SC2140
   sed -i "/^#export*/c\export QT_QPA_PLATEFORMTHEME="qt6ct" QT_STYLE_OVERRIDE="Adwaita-Dark"" "${pkgdir}"/usr/bin/goverlay
