@@ -7704,13 +7704,15 @@ pkgname = protonmail-bridge-deb
 ---
 pkgbase = protonup-qt-app
 	gives = net.davidotek.pupgui2
-	pkgver = 2.9.2
+	pkgver = 2.10.2
 	pkgdesc = Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris
 	arch = amd64
+	depends = libxcb-cursor0
 	maintainer = DavidoTek <54072917+DavidoTek@users.noreply.github.com>
-	source = https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v2.9.2/ProtonUp-Qt-2.9.2-x86_64.AppImage
+	maintainer = xdavius <xdavius@github.com>
+	source = https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v2.10.2/ProtonUp-Qt-2.10.2-x86_64.AppImage
 	source = net.davidotek.pupgui2.png::https://raw.githubusercontent.com/DavidoTek/ProtonUp-Qt/main/share/icons/hicolor/256x256/apps/net.davidotek.pupgui2.png
-	sha256sums = 775523ca153b05eccea106419e6ae4f7a803d0c6d8493d1747e3d65589af1854
+	sha256sums = 5962c003916bcafab0804432b27135c3693d5aae32ef2349e03ae88e0d522988
 	sha256sums = SKIP
 
 pkgname = protonup-qt-app
