@@ -7,8 +7,9 @@ pkgbase = webcord-deb
 	replaces = webcord
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: webcord
-	source_amd64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.10.0/webcord_4.10.0_arm64.deb
+	source_amd64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.10.0/webcord_4.10.0_amd64.deb
 	sha256sums_amd64 = 338800dcff586244b9848180e338a65bf47b1f14bd39c0cab8cb7c54412c227e
+	source_arm64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.10.0/webcord_4.10.0_arm64.deb
 	sha256sums_arm64 = 0b9ee4cf252e925902d5d89b8abfd7257d89be23cf2e8f975b07c3c94b8b181f
 
 pkgname = webcord-deb
