@@ -3946,6 +3946,32 @@ pkgbase = highlight-pointer-bin
 
 pkgname = highlight-pointer-bin
 ---
+pkgbase = honkers-launcher-bin
+	gives = honkers-launcher
+	pkgver = 1.7.0
+	pkgdesc = Launcher for a honkers game with auto-patching, discord rpc and time tracking
+	optdepends = mangohud: FPS Hud/GUI
+	optdepends = gamemode: Game Optimizations
+	breaks = honkers-launcher
+	breaks = honkers-launcher-deb
+	breaks = honkers-launcher-app
+	breaks = honkers-launcher-git
+	incompatible = ubuntu:bionic
+	incompatible = ubuntu:focal
+	incompatible = ubuntu:jammy
+	incompatible = ubuntu:kinetic
+	incompatible = debian:stretch
+	incompatible = debian:buster
+	incompatible = debian:bullseye
+	maintainer = vbrabandt2005 <vbrabandt@proton.me>
+	repology = project: honkers-launcher
+	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.7.0/honkers-launcher
+	source = icon.png::https://raw.githubusercontent.com/an-anime-team/honkers-launcher/main/assets/images/icon.png
+	sha256sums = ad20062a34335edb1fc4732262b0890c10f81e256846c0fb2d875508a44b98f1
+	sha256sums = SKIP
+
+pkgname = honkers-launcher-bin
+---
 pkgbase = htop
 	gives = htop
 	pkgver = 3.2.2
