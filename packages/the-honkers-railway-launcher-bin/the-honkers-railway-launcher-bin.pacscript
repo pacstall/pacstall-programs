@@ -1,6 +1,6 @@
 pkgname="the-honkers-railway-launcher-bin"
 gives="the-honkers-railway-launcher"
-pkgver="1.6.1"
+pkgver="1.7.1"
 pkgdesc="The Honkers Railway launcher for Linux with automatic patching and telemetry disabling"
 repology=("project: the-honkers-railway-launcher")
 source=(
@@ -8,10 +8,9 @@ source=(
   "icon.png::https://raw.githubusercontent.com/an-anime-team/the-honkers-railway-launcher/main/assets/images/icon.png"
 )
 sha256sums=(
-  "b1fecc6643014cdd352a8130ac702ecf56f3b6b1a9188040ac3ac02f2cc01f56"
+  "6ecd7c0b61d86eac7d18ef01274a8acb66ca4680a04c1fef991c734494771552"
   "SKIP"
 )
-depends=("xdelta3")
 maintainer=("vbrabandt2005 <vbrabandt@proton.me>")
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
@@ -22,7 +21,6 @@ optdepends=(
 )
 
 package() {
-  cd "${_archive}"
   install -Dm755 "honkers-railway-launcher" "${pkgdir}/usr/bin/${gives}"
   mkdir -p "${pkgdir}/usr/share/applications"
   echo '[Desktop Entry]
