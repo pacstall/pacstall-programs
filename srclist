@@ -106,7 +106,7 @@ pkgname = amfora-bin
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.10.3
+	pkgver = 3.11.0
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	optdepends = mangohud: FPS Hud/GUI
 	optdepends = gamemode: Game Optimizations
@@ -124,9 +124,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.10.3/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.11.0/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = cb2159374f2ba68ed2ee2fc38e946bf82261c32247021ab1be049614eb3ff2f0
+	sha256sums = 454169e304393080d68cef6051975fe3535e767b622dab4f167502c14d12576f
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
@@ -2801,13 +2801,13 @@ pkgname = fpc-src-deb
 ---
 pkgbase = freetube-deb
 	gives = freetube
-	pkgver = 0.21.2
+	pkgver = 0.21.3
 	pkgdesc = An Open Source YouTube app for privacy.
 	arch = amd64
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: freetube
-	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.2-beta/freetube_0.21.2_amd64.deb
-	sha256sums = 9bee4f73cebbd5c095ae9099981c1cab39378df7f2c471d6f5dc02f106b8ab91
+	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.3-beta/freetube_0.21.3_amd64.deb
+	sha256sums = bf8649c7b384cd50178d6c887371472916bfdacb9971e939c35ddbe4ab3adc08
 
 pkgname = freetube-deb
 ---
@@ -3762,7 +3762,7 @@ pkgbase = hakuneko-deb
 pkgname = hakuneko-deb
 ---
 pkgbase = hamclock-big
-	pkgver = 4.04
+	pkgver = 4.05
 	pkgrel = 3
 	pkgdesc = Clock and world map with extra features for amateur radio (1600x960 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -3782,15 +3782,15 @@ pkgbase = hamclock-big
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-big
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.04.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
 	source = hamclock.desktop
-	sha256sums = fdc1a9b724d2189624f9213ac887e31ab2d089a8982e1a1198bec98202617c64
+	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-big
 ---
 pkgbase = hamclock-bigger
-	pkgver = 4.04
+	pkgver = 4.05
 	pkgdesc = Clock and world map with extra features for amateur radio (2400x1440 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	makedepends = gcc
@@ -3809,15 +3809,15 @@ pkgbase = hamclock-bigger
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-bigger
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.04.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
 	source = hamclock.desktop
-	sha256sums = fdc1a9b724d2189624f9213ac887e31ab2d089a8982e1a1198bec98202617c64
+	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-bigger
 ---
 pkgbase = hamclock-huge
-	pkgver = 4.04
+	pkgver = 4.05
 	pkgdesc = Clock and world map with extra features for amateur radio (3200x1920 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	makedepends = gcc
@@ -3836,15 +3836,15 @@ pkgbase = hamclock-huge
 	replaces = hamclock-bigger
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-huge
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.04.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
 	source = hamclock.desktop
-	sha256sums = fdc1a9b724d2189624f9213ac887e31ab2d089a8982e1a1198bec98202617c64
+	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-huge
 ---
 pkgbase = hamclock
-	pkgver = 4.04
+	pkgver = 4.05
 	pkgrel = 2
 	pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -3864,9 +3864,9 @@ pkgbase = hamclock
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.04.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
 	source = hamclock.desktop
-	sha256sums = fdc1a9b724d2189624f9213ac887e31ab2d089a8982e1a1198bec98202617c64
+	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock
@@ -8582,7 +8582,7 @@ pkgbase = schildichat-deb
 pkgname = schildichat-deb
 ---
 pkgbase = scrcpy
-	pkgver = 2.4
+	pkgver = 2.6.1
 	pkgdesc = Display and control your Android device
 	url = https://github.com/Genymobile/scrcpy
 	arch = amd64
@@ -8603,10 +8603,10 @@ pkgbase = scrcpy
 	replaces = scrcpy
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: scrcpy
-	source = https://github.com/Genymobile/scrcpy/archive/refs/tags/v2.4.tar.gz
-	source = scrcpy-server::https://github.com/Genymobile/scrcpy/releases/download/v2.4/scrcpy-server-v2.4
-	sha256sums = 60596f6d4c11163083da3e6805666326873ed57f7defd8a20256b928a1d3503b
-	sha256sums = 93c272b7438605c055e127f7444064ed78fa9ca49f81156777fd201e79ce7ba3
+	source = https://github.com/Genymobile/scrcpy/archive/refs/tags/v2.6.1.tar.gz
+	source = scrcpy-server::https://github.com/Genymobile/scrcpy/releases/download/v2.6.1/scrcpy-server-v2.6.1
+	sha256sums = 4948474f1494fdff852a0a7fa823a0b3c25d3ea0384acdaf46c322e34b13e449
+	sha256sums = ca7ab50b2e25a0e5af7599c30383e365983fa5b808e65ce2e1c1bba5bfe8dc3b
 
 pkgname = scrcpy
 ---
@@ -9617,9 +9617,8 @@ pkgname = tgpt-bin
 ---
 pkgbase = the-honkers-railway-launcher-bin
 	gives = the-honkers-railway-launcher
-	pkgver = 1.6.1
+	pkgver = 1.7.1
 	pkgdesc = The Honkers Railway launcher for Linux with automatic patching and telemetry disabling
-	depends = xdelta3
 	optdepends = mangohud: FPS Hud/GUI
 	optdepends = gamemode: Game Optimizations
 	breaks = the-honkers-railway-launcher
@@ -9635,9 +9634,9 @@ pkgbase = the-honkers-railway-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: the-honkers-railway-launcher
-	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.6.1/honkers-railway-launcher
+	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.7.1/honkers-railway-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/the-honkers-railway-launcher/main/assets/images/icon.png
-	sha256sums = b1fecc6643014cdd352a8130ac702ecf56f3b6b1a9188040ac3ac02f2cc01f56
+	sha256sums = 6ecd7c0b61d86eac7d18ef01274a8acb66ca4680a04c1fef991c734494771552
 	sha256sums = SKIP
 
 pkgname = the-honkers-railway-launcher-bin
@@ -10733,14 +10732,17 @@ pkgname = webapp-manager
 ---
 pkgbase = webcord-deb
 	gives = webcord
-	pkgver = 4.9.1
+	pkgver = 4.10.0
 	pkgdesc = A Discord and Fosscord client implemented directly without Discord API.
 	arch = amd64
+	arch = arm64
 	replaces = webcord
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: webcord
-	source = https://github.com/SpacingBat3/WebCord/releases/download/v4.9.1/webcord_4.9.1_amd64.deb
-	sha256sums = e4a6edaac9443af0bb99fd1d91af4be90b7ff92ad9ce214b51cdf217d3d85385
+	source_amd64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.10.0/webcord_4.10.0_amd64.deb
+	sha256sums_amd64 = 338800dcff586244b9848180e338a65bf47b1f14bd39c0cab8cb7c54412c227e
+	source_arm64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.10.0/webcord_4.10.0_arm64.deb
+	sha256sums_arm64 = 0b9ee4cf252e925902d5d89b8abfd7257d89be23cf2e8f975b07c3c94b8b181f
 
 pkgname = webcord-deb
 ---
