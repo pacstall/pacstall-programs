@@ -1,6 +1,6 @@
 pkgname="honkers-launcher-bin"
 gives="honkers-launcher"
-pkgver="1.7.0"
+pkgver="1.7.1"
 pkgdesc="Launcher for a honkers game with auto-patching, discord rpc and time tracking"
 repology=("project: honkers-launcher")
 source=(
@@ -8,7 +8,7 @@ source=(
   "icon.png::https://raw.githubusercontent.com/an-anime-team/honkers-launcher/main/assets/images/icon.png"
 )
 sha256sums=(
-  "ad20062a34335edb1fc4732262b0890c10f81e256846c0fb2d875508a44b98f1"
+  "51c34b6b57bbe777e380536be12926126c67dd31a0063ca81bd1d2bf453ee016"
   "SKIP"
 )
 maintainer=("vbrabandt2005 <vbrabandt@proton.me>")
@@ -24,7 +24,7 @@ package() {
   install -Dm755 "honkers-launcher" "${pkgdir}/usr/bin/${gives}"
   mkdir -p "${pkgdir}/usr/share/applications"
   echo '[Desktop Entry]
-Name=An Honkers Launcher
+Name=Honkers Launcher
 Icon=honkers-launcher
 Exec=honkers-launcher
 Type=Application
