@@ -21,7 +21,7 @@ package-repository/
 ```
 
 You can then use the `pacstall -A` command to add a repository to your `pacstallrepo` list.
-Consult the manpage (run `man pacstall 8`) for more info.
+Consult the manpage (run `man 8 pacstall` and `man 5 pacstall`) for more info.
 
 ## How to setup the environment for pacscript development
 
