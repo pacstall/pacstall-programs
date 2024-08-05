@@ -21,6 +21,7 @@ checkdepends=('appstream-util')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=('223c8da373a265de28591ba9269440c5cf79fa4f9168c00b99503a65982d4df1')
 maintainer=("xdavius <xdavus@github.com>")
+external_connection=true
 
 incompatible=("debian:bookworm" "ubuntu:jammy")
 
@@ -36,7 +37,7 @@ build() {
 
 check() {
   cd "ProtonPlus-${pkgver}"
-  meson test -C build --print-errorlogs || :
+  meson test -C build --print-errorlogs
 }
 
 package() {
