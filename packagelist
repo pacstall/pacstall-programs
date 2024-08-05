@@ -252,6 +252,7 @@ lens
 lf-bin
 libcamera-git
 libcutefish-git
+libdisplay-info-git
 libdrm
 libeditline-troglobit
 libfdk-aac1-deb
