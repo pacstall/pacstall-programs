@@ -7154,7 +7154,7 @@ pkgbase = pacup-git
 pkgname = pacup-git
 ---
 pkgbase = pacup
-	pkgver = 3.3.5
+	pkgver = 3.3.6
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	depends = libdata-compare-perl
 	depends = libfile-chdir-perl
@@ -7170,8 +7170,8 @@ pkgbase = pacup
 	replaces = pacup-git
 	maintainer = vigress8 <vig@disroot.org>
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.5.tar.gz
-	sha256sums = c90f8accba90af87ac7b7ca58923066b34bf0305049d14302704c280c3d739da
+	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.6.tar.gz
+	sha256sums = c1999c93cae7bfc0ef9b8f2e8bbb41a34a0a418652108d15f9924cebc7f00d5e
 
 pkgname = pacup
 ---
