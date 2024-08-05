@@ -7159,7 +7159,7 @@ pkgname = pacstall-qa-git
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.5
+	pkgver = 3.3.6
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	depends = libdata-compare-perl
 	depends = libfile-chdir-perl
@@ -7180,7 +7180,7 @@ pkgbase = pacup-git
 pkgname = pacup-git
 ---
 pkgbase = pacup
-	pkgver = 3.3.5
+	pkgver = 3.3.6
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	depends = libdata-compare-perl
 	depends = libfile-chdir-perl
@@ -7196,8 +7196,8 @@ pkgbase = pacup
 	replaces = pacup-git
 	maintainer = vigress8 <vig@disroot.org>
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.5.tar.gz
-	sha256sums = c90f8accba90af87ac7b7ca58923066b34bf0305049d14302704c280c3d739da
+	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.6.tar.gz
+	sha256sums = c1999c93cae7bfc0ef9b8f2e8bbb41a34a0a418652108d15f9924cebc7f00d5e
 
 pkgname = pacup
 ---
@@ -10471,6 +10471,22 @@ pkgbase = vivarium
 	sha256sums = abb7272f53d1769de3726c6961df40627c98b8884eb32388e29b8812c60aacec
 
 pkgname = vivarium
+---
+pkgbase = vkroots-git
+	gives = vkroots-headers
+	pkgver = 0.1
+	pkgdesc = A stupid simple method of making Vulkan layers, at home!
+	url = https://github.com/Joshua-Ashton/vkroots
+	makedepends = meson
+	makedepends = ninja-build
+	makedepends = libvulkan-dev
+	breaks = vkroots-headers
+	replaces = vkroots-headers
+	license = LGPL-2.1-or-later
+	maintainer = xdavius <xdavius@gmail.com>
+	source = git+https://github.com/Joshua-Ashton/vkroots.git
+
+pkgname = vkroots-git
 ---
 pkgbase = vscode-deb
 	gives = code

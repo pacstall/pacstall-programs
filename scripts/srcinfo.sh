@@ -140,10 +140,10 @@ function srcinfo.write_details() {
 
 function srcinfo.vars() {
   local _distros _vars _archs _sums distros \
-    vars="depends makedepends optdepends pacdeps checkdepends provides conflicts breaks replaces enhances recommends makeconflicts checkconflicts source" \
+    vars="depends makedepends optdepends pacdeps checkdepends provides conflicts breaks replaces enhances recommends suggests makeconflicts checkconflicts source" \
     sums="b2 sha512 sha384 sha256 sha224 sha1 md5"
   allvars=(pkgname gives pkgver pkgrel epoch pkgdesc url priority)
-  allars=(arch depends makedepends checkdepends optdepends pacdeps conflicts makeconflicts checkconflicts breaks replaces provides enhances recommends incompatible compatible backup mask noextract nosubmodules license maintainer repology custom_fields source)
+  allars=(arch depends makedepends checkdepends optdepends pacdeps conflicts makeconflicts checkconflicts breaks replaces provides enhances recommends suggests incompatible compatible backup mask noextract nosubmodules license maintainer repology custom_fields source)
   distros=$(awk '{sub(/\/.*/, "", $1); gsub(/:$/, "", $1); distros=distros $1 " "} END {sub(/ $/, "", distros); print distros}' distrolist)
   _distros="{${distros// /,}}" _vars="{${vars// /,}}" _sums="{${sums// /,}}"
   eval "allars+=(${_sums}sums ${_vars}_${_distros} ${_sums}sums_${_distros})"
@@ -238,7 +238,7 @@ function srcinfo.write_global() {
 function srcinfo.write_package() {
   local singlevalued=(gives pkgdesc url priority)
   local multivalued=(arch license depends checkdepends optdepends pacdeps
-    provides checkconflicts conflicts breaks replaces enhances recommends backup repology)
+    provides checkconflicts conflicts breaks replaces enhances recommends suggests backup repology)
   printf '%s = %s\n' 'pkgname' "$1"
   srcinfo.write_details "$1"
 }
