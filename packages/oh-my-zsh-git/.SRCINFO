@@ -1,6 +1,7 @@
 pkgbase = oh-my-zsh-git
 	gives = oh-my-zsh
 	pkgver = 0.0.1
+	pkgrel = 2
 	pkgdesc = A community-driven framework for managing your zsh configuration
 	url = https://github.com/ohmyzsh/ohmyzsh
 	depends = zsh
@@ -9,5 +10,8 @@ pkgbase = oh-my-zsh-git
 	license = MIT
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = oh-my-zsh::https://github.com/ohmyzsh/ohmyzsh.git
+	source = 0001-zshrc.patch
+	sha256sums = SKIP
+	sha256sums = 0d57bd1fb0e0e8448e68d537a237102efef4d94d9d73993c7de6cefae61cdb87
 
 pkgname = oh-my-zsh-git
