@@ -6,7 +6,7 @@ url='https://github.com/ohmyzsh/ohmyzsh'
 license=('MIT')
 depends=('zsh')
 optdepends=('ruby: for some plugin functionality'
-            'python3: for some plugin functionality')
+  'python3: for some plugin functionality')
 source=("${gives}::https://github.com/${gives//-/}/${gives//-/}.git")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
@@ -22,11 +22,11 @@ package() {
   cp -r * "${pkgdir}/usr/share/${gives}/"
 }
 
-post_install () {
+post_install() {
   fancy_message warn "You must run the following command to use oh-my-zsh:"
   fancy_message sub "cp /usr/share/oh-my-zsh/zshrc ~/.zshrc"
 }
 
-post_remove () {
+post_remove() {
   fancy_message warn "Please remove ~/.zshrc to avoid errors."
 }
