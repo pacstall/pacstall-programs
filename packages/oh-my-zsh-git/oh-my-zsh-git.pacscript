@@ -19,7 +19,7 @@ package() {
   cd "${gives}"
   mkdir -p "${pkgdir}/usr/share/${gives}"
   install -D -m644 "LICENSE.txt" "${pkgdir}/usr/share/licenses/${gives}/LICENSE"
-  cp -r * "${pkgdir}/usr/share/${gives}/"
+  cp -r ./* "${pkgdir}/usr/share/${gives}/"
 }
 
 post_install() {
