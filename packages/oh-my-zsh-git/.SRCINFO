@@ -1,0 +1,13 @@
+pkgbase = oh-my-zsh-git
+	gives = oh-my-zsh
+	pkgver = 0.0.1
+	pkgdesc = A community-driven framework for managing your zsh configuration
+	url = https://github.com/ohmyzsh/ohmyzsh
+	depends = zsh
+	optdepends = ruby: for some plugin functionality
+	optdepends = python3: for some plugin functionality
+	license = MIT
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = oh-my-zsh::https://github.com/ohmyzsh/ohmyzsh.git
+
+pkgname = oh-my-zsh-git
