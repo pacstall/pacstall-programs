@@ -204,6 +204,7 @@ helix
 hello
 heroic-games-launcher-deb
 highlight-pointer-bin
+honkers-launcher-bin
 htop
 httptoolkit-deb
 hwinfo-git
@@ -356,6 +357,7 @@ obs-backgroundremoval-git
 obs-ndi-deb
 obsidian-deb
 oh-my-posh-git
+oh-my-zsh-git
 oil
 onefetch-bin
 onlyoffice-desktopeditors-deb
@@ -547,6 +549,7 @@ viper4linux
 virtualbox-deb
 vivaldi-deb
 vivarium
+vkroots-git
 vscode-deb
 vscode-insiders-deb
 vscodium-deb

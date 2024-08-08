@@ -106,7 +106,7 @@ pkgname = amfora-bin
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.10.3
+	pkgver = 3.11.0
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	optdepends = mangohud: FPS Hud/GUI
 	optdepends = gamemode: Game Optimizations
@@ -124,9 +124,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.10.3/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.11.0/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = cb2159374f2ba68ed2ee2fc38e946bf82261c32247021ab1be049614eb3ff2f0
+	sha256sums = 454169e304393080d68cef6051975fe3535e767b622dab4f167502c14d12576f
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
@@ -1703,7 +1703,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.61
+	pkgver = 0.0.62
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1712,8 +1712,8 @@ pkgbase = discord-deb
 	breaks = discord-debian-patched-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.61/discord-0.0.61.deb
-	sha256sums = 818c998f5a91caec55dc3076788f73e07f4a91f8c96233e9f8f2cdd60cfca4b6
+	source = https://dl.discordapp.net/apps/linux/0.0.62/discord-0.0.62.deb
+	sha256sums = 6f9773a9101e5ebf6dfd3c44692426f8c4263dad8594e2e9a415f212f2a40298
 
 pkgname = discord-deb
 ---
@@ -1839,7 +1839,7 @@ pkgname = doas-git
 ---
 pkgbase = docker-bin
 	gives = docker
-	pkgver = 26.1.1
+	pkgver = 27.1.1
 	pkgdesc = Docker Engine Static Binaries
 	arch = arm64
 	arch = amd64
@@ -1847,22 +1847,38 @@ pkgbase = docker-bin
 	depends = git
 	depends = iptables
 	depends = fuse-overlayfs
+	conflicts = docker-desktop
+	conflicts = docker-ce
+	conflicts = docker-ce-cli
+	conflicts = docker.io
+	conflicts = containerd.io
+	conflicts = containerd
+	conflicts = runc
 	replaces = docker-desktop
 	replaces = docker-ce
 	replaces = docker-ce-cli
+	replaces = docker.io
 	replaces = containerd.io
+	replaces = containerd
+	replaces = runc
+	provides = docker-ce
+	provides = docker-ce-cli
+	provides = docker.io
+	provides = containerd.io
+	provides = containerd
+	provides = runc
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: docker
-	source_arm64 = https://download.docker.com/linux/static/stable/aarch64/docker-26.1.1.tgz
-	sha256sums_arm64 = 8363596e5095c29c2d09f688e9f5ca326eb547fa7f7a32fd21ff7432ac196ae3
-	source_amd64 = https://download.docker.com/linux/static/stable/x86_64/docker-26.1.1.tgz
-	sha256sums_amd64 = c0ef0ee7d00deb803a6f5fa78d83ec8cbe1848eaaea9fb7071364d526624278f
+	source_arm64 = https://download.docker.com/linux/static/stable/aarch64/docker-27.1.1.tgz
+	sha256sums_arm64 = 86a395f67a5a23d8eb207ab5a9ab32a51f7fccd8b18dae40887e738db95c6bc4
+	source_amd64 = https://download.docker.com/linux/static/stable/x86_64/docker-27.1.1.tgz
+	sha256sums_amd64 = 118da6b8fc8e8b6c086ab0dd5e64ee549376c3a3f963723bbc9a46db475bf21f
 
 pkgname = docker-bin
 ---
 pkgbase = docker-buildx-plugin-bin
 	gives = docker-buildx-plugin
-	pkgver = 0.14.0
+	pkgver = 0.16.2
 	pkgdesc = Docker Buildx cli plugin
 	url = https://github.com/docker/buildx
 	arch = amd64
@@ -1870,16 +1886,16 @@ pkgbase = docker-buildx-plugin-bin
 	replaces = docker-buildx-plugin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: docker-buildx
-	source_amd64 = https://github.com/docker/buildx/releases/download/v0.14.0/buildx-v0.14.0.linux-amd64
-	sha256sums_amd64 = 32f8f17eca35bf2efe6c0e47f40e4692a876f34531b421efc984799a5b41226e
-	source_arm64 = https://github.com/docker/buildx/releases/download/v0.14.0/buildx-v0.14.0.linux-arm64
-	sha256sums_arm64 = 38bf0ea9c48743edb8243f14272be65a2bad7092228068337aea584309ea664c
+	source_amd64 = https://github.com/docker/buildx/releases/download/v0.16.2/buildx-v0.16.2.linux-amd64
+	sha256sums_amd64 = 43e4c928a0be38ab34e206c82957edfdd54f3e7124f1dadd7779591c3acf77ea
+	source_arm64 = https://github.com/docker/buildx/releases/download/v0.16.2/buildx-v0.16.2.linux-arm64
+	sha256sums_arm64 = 775f1ab64aa0e5d901dcc6ecf6843ec3261f27476873760711aa362b403f61f3
 
 pkgname = docker-buildx-plugin-bin
 ---
 pkgbase = docker-compose-plugin-bin
 	gives = docker-compose-plugin
-	pkgver = 2.27.0
+	pkgver = 2.29.1
 	pkgdesc = Docker Compose cli plugin
 	url = https://github.com/docker/compose
 	arch = amd64
@@ -1887,10 +1903,10 @@ pkgbase = docker-compose-plugin-bin
 	replaces = docker-compose-plugin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: docker-compose
-	source_amd64 = https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-linux-x86_64
-	sha256sums_amd64 = f3ba3bf1e4ab18e96c2d36526a075a02a78fb5f8e80d3e3ca9c5bf256d81d0a0
-	source_arm64 = https://github.com/docker/compose/releases/download/v2.27.0/docker-compose-linux-aarch64
-	sha256sums_arm64 = 37a1c197fef5fda2a3df2d5ae0d7762ad2a00e30946ad06d4ad9fa8cef16d9e7
+	source_amd64 = https://github.com/docker/compose/releases/download/v2.29.1/docker-compose-linux-x86_64
+	sha256sums_amd64 = 5ea89dd65d33912a83737d8a4bf070d5de534a32b8493a21fbefc924484786a9
+	source_arm64 = https://github.com/docker/compose/releases/download/v2.29.1/docker-compose-linux-aarch64
+	sha256sums_arm64 = 7f0023ba726b90347e4ebc1d94ec5970390b8bddb86402c0429f163dca70d745
 
 pkgname = docker-compose-plugin-bin
 ---
@@ -2586,14 +2602,14 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 128.0.2
+	pkgver = 128.0.3
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.0.2/linux-x86_64/en-US/firefox-128.0.2.tar.bz2
-	sha256sums = e9347f23378469bcb3c3cd9a46c85c1324d1536b3ffdaa6c2730ea07908a6c46
+	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.0.3/linux-x86_64/en-US/firefox-128.0.3.tar.bz2
+	sha256sums = b40db1ecf6536a3d08b9fac38b19023b5094baa11de5dd01bdeaf1d87b666d09
 
 pkgname = firefox-bin
 ---
@@ -2801,13 +2817,13 @@ pkgname = fpc-src-deb
 ---
 pkgbase = freetube-deb
 	gives = freetube
-	pkgver = 0.21.2
+	pkgver = 0.21.3
 	pkgdesc = An Open Source YouTube app for privacy.
 	arch = amd64
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: freetube
-	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.2-beta/freetube_0.21.2_amd64.deb
-	sha256sums = 9bee4f73cebbd5c095ae9099981c1cab39378df7f2c471d6f5dc02f106b8ab91
+	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.3-beta/freetube_0.21.3_amd64.deb
+	sha256sums = bf8649c7b384cd50178d6c887371472916bfdacb9971e939c35ddbe4ab3adc08
 
 pkgname = freetube-deb
 ---
@@ -3434,7 +3450,7 @@ pkgname = google-earth-pro-stable-deb
 ---
 pkgbase = goverlay-bin
 	gives = goverlay
-	pkgver = 1.1.1
+	pkgver = 1.2.0
 	pkgdesc = Graphical UI to help manage Linux overlays
 	depends = mangohud
 	depends = qt6ct
@@ -3443,17 +3459,17 @@ pkgbase = goverlay-bin
 	replaces = goverlay
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: goverlay
-	source = https://github.com/benjamimgois/goverlay/releases/download/1.1.1/goverlay_1_1_1.tar.xz
+	source = https://github.com/benjamimgois/goverlay/releases/download/1.2/goverlay.tar.xz
 	source = https://raw.githubusercontent.com/benjamimgois/goverlay/master/data/icons/128x128/goverlay.png
-	sha256sums = 33dc0c6d8276308fd91102d622f44146237e800838cb500ec5dd222b10c83519
+	sha256sums = 6b2f33564ec14b70c4dc6905084d8d3657013e8050e27345e1aad7b485fb97b0
 	sha256sums = SKIP
 
 pkgname = goverlay-bin
 ---
 pkgbase = goverlay
 	gives = goverlay
-	pkgver = 1.1.1
-	pkgrel = 2
+	pkgver = 1.2.0
+	pkgrel = 1
 	pkgdesc = A GUI to help manage Vulkan/OpenGL overlays
 	url = https://github.com/benjamimgois/goverlay/
 	arch = amd64
@@ -3471,23 +3487,8 @@ pkgbase = goverlay
 	pacdeps = lazarus-project-deb
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: goverlay
-	source = https://github.com/benjamimgois/goverlay/archive/refs/tags/1.1.1.tar.gz
-	sha256sums = 06dcad9ab7db990f2df04be01d549953e274907d7f691fe1bc4bbe712329936c
-	makedepends_noble = lazarus
-	makedepends_noble = fpc
-	makedepends_noble = fpc-source
-	makedepends_oracular = lazarus
-	makedepends_oracular = fpc
-	makedepends_oracular = fpc-source
-	makedepends_devel = lazarus
-	makedepends_devel = fpc
-	makedepends_devel = fpc-source
-	makedepends_trixie = lazarus
-	makedepends_trixie = fpc
-	makedepends_trixie = fpc-source
-	makedepends_sid = lazarus
-	makedepends_sid = fpc
-	makedepends_sid = fpc-source
+	source = goverlay-1.2.0::https://github.com/benjamimgois/goverlay/archive/refs/tags/1.2.tar.gz
+	sha256sums = ce18c2a0810f6dc5f4e27f35d5f8d8353ef3bc78e36de57eaeb50a0821691c24
 
 pkgname = goverlay
 ---
@@ -3777,7 +3778,7 @@ pkgbase = hakuneko-deb
 pkgname = hakuneko-deb
 ---
 pkgbase = hamclock-big
-	pkgver = 4.03
+	pkgver = 4.05
 	pkgrel = 3
 	pkgdesc = Clock and world map with extra features for amateur radio (1600x960 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -3792,17 +3793,20 @@ pkgbase = hamclock-big
 	breaks = hamclock-bigger
 	breaks = hamclock-huge
 	replaces = hamclock-big
+	replaces = hamclock
+	replaces = hamclock-bigger
+	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-big
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.03.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
 	source = hamclock.desktop
-	sha256sums = 801f00b8574a7cd491cf7257f100ae64bc67f9741428ee8c0dc52aed0227346a
+	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-big
 ---
 pkgbase = hamclock-bigger
-	pkgver = 4.03
+	pkgver = 4.05
 	pkgdesc = Clock and world map with extra features for amateur radio (2400x1440 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	makedepends = gcc
@@ -3816,17 +3820,20 @@ pkgbase = hamclock-bigger
 	breaks = hamclock-big
 	breaks = hamclock-huge
 	replaces = hamclock-bigger
+	replaces = hamclock
+	replaces = hamclock-big
+	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-bigger
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.03.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
 	source = hamclock.desktop
-	sha256sums = 801f00b8574a7cd491cf7257f100ae64bc67f9741428ee8c0dc52aed0227346a
+	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-bigger
 ---
 pkgbase = hamclock-huge
-	pkgver = 4.03
+	pkgver = 4.05
 	pkgdesc = Clock and world map with extra features for amateur radio (3200x1920 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	makedepends = gcc
@@ -3840,17 +3847,20 @@ pkgbase = hamclock-huge
 	breaks = hamclock-big
 	breaks = hamclock-bigger
 	replaces = hamclock-huge
+	replaces = hamclock
+	replaces = hamclock-big
+	replaces = hamclock-bigger
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-huge
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.03.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
 	source = hamclock.desktop
-	sha256sums = 801f00b8574a7cd491cf7257f100ae64bc67f9741428ee8c0dc52aed0227346a
+	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-huge
 ---
 pkgbase = hamclock
-	pkgver = 4.03
+	pkgver = 4.05
 	pkgrel = 2
 	pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -3865,11 +3875,14 @@ pkgbase = hamclock
 	breaks = hamclock-bigger
 	breaks = hamclock-huge
 	replaces = hamclock
+	replaces = hamclock-big
+	replaces = hamclock-bigger
+	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.03.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
 	source = hamclock.desktop
-	sha256sums = 801f00b8574a7cd491cf7257f100ae64bc67f9741428ee8c0dc52aed0227346a
+	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock
@@ -3899,12 +3912,12 @@ pkgbase = headset-deb
 pkgname = headset-deb
 ---
 pkgbase = helix
-	pkgver = 24.03
+	pkgver = 24.07
 	pkgdesc = A post-modern modal text editor
 	makedepends = cargo
 	repology = project: helix
-	source = https://github.com/helix-editor/helix/releases/download/24.03/helix-24.03-source.tar.xz
-	sha256sums = c59a5988f066c2ab90132e03a0e6b35b3dd89f48d3d78bf0ec81bd7d88c7677e
+	source = https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-source.tar.xz
+	sha256sums = 44d9eb113a54a80a2891ac6374c74bcd2bce63d317f1e1c69c286a6fc919922c
 
 pkgname = helix
 ---
@@ -3948,6 +3961,32 @@ pkgbase = highlight-pointer-bin
 	sha256sums = 82ad3845ef9ec3626ab1c0fad67614d5c61b26a2bf4e96b669e2a78e0395cb62
 
 pkgname = highlight-pointer-bin
+---
+pkgbase = honkers-launcher-bin
+	gives = honkers-launcher
+	pkgver = 1.7.1
+	pkgdesc = Launcher for a honkers game with auto-patching, discord rpc and time tracking
+	optdepends = mangohud: FPS Hud/GUI
+	optdepends = gamemode: Game Optimizations
+	breaks = honkers-launcher
+	breaks = honkers-launcher-deb
+	breaks = honkers-launcher-app
+	breaks = honkers-launcher-git
+	incompatible = ubuntu:bionic
+	incompatible = ubuntu:focal
+	incompatible = ubuntu:jammy
+	incompatible = ubuntu:kinetic
+	incompatible = debian:stretch
+	incompatible = debian:buster
+	incompatible = debian:bullseye
+	maintainer = vbrabandt2005 <vbrabandt@proton.me>
+	repology = project: honkers-launcher
+	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.7.1/honkers-launcher
+	source = icon.png::https://raw.githubusercontent.com/an-anime-team/honkers-launcher/main/assets/images/icon.png
+	sha256sums = 51c34b6b57bbe777e380536be12926126c67dd31a0063ca81bd1d2bf453ee016
+	sha256sums = SKIP
+
+pkgname = honkers-launcher-bin
 ---
 pkgbase = htop
 	gives = htop
@@ -4486,7 +4525,7 @@ pkgname = jetbrains-toolbox-bin
 ---
 pkgbase = joplin-desktop-app
 	gives = joplin-desktop
-	pkgver = 3.0.13
+	pkgver = 3.0.14
 	pkgrel = 2
 	pkgdesc = Joplin - the secure note taking and to-do app with synchronisation capabilities for Windows, macOS, Linux, Android and iOS
 	url = https://joplinapp.org/
@@ -4495,9 +4534,9 @@ pkgbase = joplin-desktop-app
 	makedepends = libfuse2
 	maintainer = lfromanini <lfromanini@yahoo.com>
 	repology = project: joplin-desktop
-	source = https://github.com/laurent22/joplin/releases/download/v3.0.13/Joplin-3.0.13.AppImage
+	source = https://github.com/laurent22/joplin/releases/download/v3.0.14/Joplin-3.0.14.AppImage
 	source = joplin-desktop.png::https://joplinapp.org/images/Icon512.png
-	sha256sums = fc1eee76d9113fcace6335eea564841a0d05ac9a1127ade5e2e2ed4167b6099f
+	sha256sums = f7f3dfa6e5006c550853dff7c8c415e236443e6fde43751c370c04ff0bdf9683
 	sha256sums = SKIP
 
 pkgname = joplin-desktop-app
@@ -6803,6 +6842,24 @@ pkgbase = oh-my-posh-git
 
 pkgname = oh-my-posh-git
 ---
+pkgbase = oh-my-zsh-git
+	gives = oh-my-zsh
+	pkgver = 0.0.1
+	pkgrel = 2
+	pkgdesc = A community-driven framework for managing your zsh configuration
+	url = https://github.com/ohmyzsh/ohmyzsh
+	depends = zsh
+	optdepends = ruby: for some plugin functionality
+	optdepends = python3: for some plugin functionality
+	license = MIT
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = oh-my-zsh::https://github.com/ohmyzsh/ohmyzsh.git
+	source = 0001-zshrc.patch
+	sha256sums = SKIP
+	sha256sums = 0d57bd1fb0e0e8448e68d537a237102efef4d94d9d73993c7de6cefae61cdb87
+
+pkgname = oh-my-zsh-git
+---
 pkgbase = oil
 	gives = oil
 	pkgver = 0.20.0
@@ -7155,7 +7212,7 @@ pkgname = pacstall-qa-git
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.5
+	pkgver = 3.3.6
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	depends = libdata-compare-perl
 	depends = libfile-chdir-perl
@@ -7176,7 +7233,7 @@ pkgbase = pacup-git
 pkgname = pacup-git
 ---
 pkgbase = pacup
-	pkgver = 3.3.5
+	pkgver = 3.3.6
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	depends = libdata-compare-perl
 	depends = libfile-chdir-perl
@@ -7192,8 +7249,8 @@ pkgbase = pacup
 	replaces = pacup-git
 	maintainer = vigress8 <vig@disroot.org>
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.5.tar.gz
-	sha256sums = c90f8accba90af87ac7b7ca58923066b34bf0305049d14302704c280c3d739da
+	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.6.tar.gz
+	sha256sums = c1999c93cae7bfc0ef9b8f2e8bbb41a34a0a418652108d15f9924cebc7f00d5e
 
 pkgname = pacup
 ---
@@ -7711,13 +7768,15 @@ pkgname = protonmail-bridge-deb
 ---
 pkgbase = protonup-qt-app
 	gives = net.davidotek.pupgui2
-	pkgver = 2.9.2
+	pkgver = 2.10.2
 	pkgdesc = Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris
 	arch = amd64
+	depends = libxcb-cursor0
 	maintainer = DavidoTek <54072917+DavidoTek@users.noreply.github.com>
-	source = https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v2.9.2/ProtonUp-Qt-2.9.2-x86_64.AppImage
+	maintainer = xdavius <xdavius@github.com>
+	source = https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v2.10.2/ProtonUp-Qt-2.10.2-x86_64.AppImage
 	source = net.davidotek.pupgui2.png::https://raw.githubusercontent.com/DavidoTek/ProtonUp-Qt/main/share/icons/hicolor/256x256/apps/net.davidotek.pupgui2.png
-	sha256sums = 775523ca153b05eccea106419e6ae4f7a803d0c6d8493d1747e3d65589af1854
+	sha256sums = 5962c003916bcafab0804432b27135c3693d5aae32ef2349e03ae88e0d522988
 	sha256sums = SKIP
 
 pkgname = protonup-qt-app
@@ -8576,7 +8635,7 @@ pkgbase = schildichat-deb
 pkgname = schildichat-deb
 ---
 pkgbase = scrcpy
-	pkgver = 2.4
+	pkgver = 2.6.1
 	pkgdesc = Display and control your Android device
 	url = https://github.com/Genymobile/scrcpy
 	arch = amd64
@@ -8597,10 +8656,10 @@ pkgbase = scrcpy
 	replaces = scrcpy
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: scrcpy
-	source = https://github.com/Genymobile/scrcpy/archive/refs/tags/v2.4.tar.gz
-	source = scrcpy-server::https://github.com/Genymobile/scrcpy/releases/download/v2.4/scrcpy-server-v2.4
-	sha256sums = 60596f6d4c11163083da3e6805666326873ed57f7defd8a20256b928a1d3503b
-	sha256sums = 93c272b7438605c055e127f7444064ed78fa9ca49f81156777fd201e79ce7ba3
+	source = https://github.com/Genymobile/scrcpy/archive/refs/tags/v2.6.1.tar.gz
+	source = scrcpy-server::https://github.com/Genymobile/scrcpy/releases/download/v2.6.1/scrcpy-server-v2.6.1
+	sha256sums = 4948474f1494fdff852a0a7fa823a0b3c25d3ea0384acdaf46c322e34b13e449
+	sha256sums = ca7ab50b2e25a0e5af7599c30383e365983fa5b808e65ce2e1c1bba5bfe8dc3b
 
 pkgname = scrcpy
 ---
@@ -9611,9 +9670,8 @@ pkgname = tgpt-bin
 ---
 pkgbase = the-honkers-railway-launcher-bin
 	gives = the-honkers-railway-launcher
-	pkgver = 1.6.1
+	pkgver = 1.7.1
 	pkgdesc = The Honkers Railway launcher for Linux with automatic patching and telemetry disabling
-	depends = xdelta3
 	optdepends = mangohud: FPS Hud/GUI
 	optdepends = gamemode: Game Optimizations
 	breaks = the-honkers-railway-launcher
@@ -9629,9 +9687,9 @@ pkgbase = the-honkers-railway-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: the-honkers-railway-launcher
-	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.6.1/honkers-railway-launcher
+	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.7.1/honkers-railway-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/the-honkers-railway-launcher/main/assets/images/icon.png
-	sha256sums = b1fecc6643014cdd352a8130ac702ecf56f3b6b1a9188040ac3ac02f2cc01f56
+	sha256sums = 6ecd7c0b61d86eac7d18ef01274a8acb66ca4680a04c1fef991c734494771552
 	sha256sums = SKIP
 
 pkgname = the-honkers-railway-launcher-bin
@@ -10467,6 +10525,22 @@ pkgbase = vivarium
 
 pkgname = vivarium
 ---
+pkgbase = vkroots-git
+	gives = vkroots-headers
+	pkgver = 0.1
+	pkgdesc = A stupid simple method of making Vulkan layers, at home!
+	url = https://github.com/Joshua-Ashton/vkroots
+	makedepends = meson
+	makedepends = ninja-build
+	makedepends = libvulkan-dev
+	breaks = vkroots-headers
+	replaces = vkroots-headers
+	license = LGPL-2.1-or-later
+	maintainer = xdavius <xdavius@gmail.com>
+	source = git+https://github.com/Joshua-Ashton/vkroots.git
+
+pkgname = vkroots-git
+---
 pkgbase = vscode-deb
 	gives = code
 	pkgver = 1.90.0
@@ -10505,17 +10579,17 @@ pkgname = vscode-insiders-deb
 ---
 pkgbase = vscodium-deb
 	gives = codium
-	pkgver = 1.89.1.24130
+	pkgver = 1.91.1.24193
 	pkgdesc = Binary releases of VS Code without MS branding/telemetry/licensing
 	arch = arm64
 	arch = amd64
 	breaks = codium
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: vscodium
-	source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.89.1.24130/codium_1.89.1.24130_arm64.deb
-	sha256sums_arm64 = f94cd2f8b70589b86b982420410f1d4b61b8b734ca10b635915f3f62cd87f159
-	source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.89.1.24130/codium_1.89.1.24130_amd64.deb
-	sha256sums_amd64 = 8e4fdac78ce89cfce0f30bd9b2ed597867396673bad22b5f9f852bb1cbdd0a05
+	source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.91.1.24193/codium_1.91.1.24193_arm64.deb
+	sha256sums_arm64 = ddc34f1418db4b0ea3dc469dc4796ea0df2c011e6994ba3179e6e3ca425dd79f
+	source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.91.1.24193/codium_1.91.1.24193_amd64.deb
+	sha256sums_amd64 = 5d06e2bf47c9224686dba33bed9079de69a6f383694097eb413d55aaf5d6df05
 
 pkgname = vscodium-deb
 ---
@@ -10727,14 +10801,17 @@ pkgname = webapp-manager
 ---
 pkgbase = webcord-deb
 	gives = webcord
-	pkgver = 4.9.1
+	pkgver = 4.10.0
 	pkgdesc = A Discord and Fosscord client implemented directly without Discord API.
 	arch = amd64
+	arch = arm64
 	replaces = webcord
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: webcord
-	source = https://github.com/SpacingBat3/WebCord/releases/download/v4.9.1/webcord_4.9.1_amd64.deb
-	sha256sums = e4a6edaac9443af0bb99fd1d91af4be90b7ff92ad9ce214b51cdf217d3d85385
+	source_amd64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.10.0/webcord_4.10.0_amd64.deb
+	sha256sums_amd64 = 338800dcff586244b9848180e338a65bf47b1f14bd39c0cab8cb7c54412c227e
+	source_arm64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.10.0/webcord_4.10.0_arm64.deb
+	sha256sums_arm64 = 0b9ee4cf252e925902d5d89b8abfd7257d89be23cf2e8f975b07c3c94b8b181f
 
 pkgname = webcord-deb
 ---

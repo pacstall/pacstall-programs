@@ -1,12 +1,12 @@
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 128.0.2
+	pkgver = 128.0.3
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.0.2/linux-x86_64/en-US/firefox-128.0.2.tar.bz2
-	sha256sums = e9347f23378469bcb3c3cd9a46c85c1324d1536b3ffdaa6c2730ea07908a6c46
+	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.0.3/linux-x86_64/en-US/firefox-128.0.3.tar.bz2
+	sha256sums = b40db1ecf6536a3d08b9fac38b19023b5094baa11de5dd01bdeaf1d87b666d09
 
 pkgname = firefox-bin
