@@ -2,13 +2,13 @@ pkgname="docker-bin"
 gives="docker"
 replaces=("${gives}-desktop" "${gives}-ce" "${gives}-ce-cli" "containerd.io")
 repology=("project: ${gives}")
-pkgver="26.1.1"
+pkgver="27.1.1"
 depends=("procps" "git" "iptables" "fuse-overlayfs")
 pkgdesc="Docker Engine Static Binaries"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('arm64' 'amd64')
-sha256sums_arm64=("8363596e5095c29c2d09f688e9f5ca326eb547fa7f7a32fd21ff7432ac196ae3")
-sha256sums_amd64=("c0ef0ee7d00deb803a6f5fa78d83ec8cbe1848eaaea9fb7071364d526624278f")
+sha256sums_arm64=("86a395f67a5a23d8eb207ab5a9ab32a51f7fccd8b18dae40887e738db95c6bc4")
+sha256sums_amd64=("118da6b8fc8e8b6c086ab0dd5e64ee549376c3a3f963723bbc9a46db475bf21f")
 source_amd64=("https://download.docker.com/linux/static/stable/x86_64/${gives}-${pkgver}.tgz")
 source_arm64=("https://download.docker.com/linux/static/stable/aarch64/${gives}-${pkgver}.tgz")
 
