@@ -1,6 +1,8 @@
 pkgname="docker-bin"
 gives="docker"
-replaces=("${gives}-desktop" "${gives}-ce" "${gives}-ce-cli" "containerd.io")
+provides=("${gives}-ce" "${gives}-ce-cli" "${gives}.io" "containerd.io" "containerd" "runc")
+replaces=("${gives}-desktop" "${provides[@]}")
+conflicts=("${replaces[@]}")
 repology=("project: ${gives}")
 pkgver="27.1.1"
 depends=("procps" "git" "iptables" "fuse-overlayfs")
