@@ -34,7 +34,7 @@ maintainer=("Oren Klopfer <oren@taumoda.com>" "xdavius <xdavius@github.com>")
 build() {
   cd "drm-libdrm-${pkgver}"
   meson setup build \
-    --prefix /usr/local \
+    --prefix /usr \
     --buildtype plain \
     --wrap-mode nofallback \
     -D udev=false \
