@@ -14,5 +14,6 @@ prepare() {
 
 package() {
   cd "${gives}"
+  # shellcheck disable=SC2069
   DESTDIR="${pkgdir}" ninja -C build install 2>&1 >> /dev/null
 }
