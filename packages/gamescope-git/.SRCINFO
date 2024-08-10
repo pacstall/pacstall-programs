@@ -83,5 +83,8 @@ pkgbase = gamescope-git
 	sha256sums = SKIP
 	sha256sums = SKIP
 	sha256sums = SKIP
+	pacdeps_ubuntu = xcb-util-errors
+	pacdeps_bookworm = vkroots-git
+	pacdeps_bookworm = libdisplay-info-git
 
 pkgname = gamescope-git
