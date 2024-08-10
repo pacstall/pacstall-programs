@@ -64,16 +64,14 @@ makedepends=("meson"
   "xwayland")
 
 pacdeps=("openvr")
+pacdeps_bookworm=("vkroots-git" "libdisplay-info-git")
+pacdeps_ubuntu=("xcb-util-errors")
 
-if [[ ${DISTRO} == *"debian:bookworm"* ]]; then
-  pacdeps+=("vkroots-git" "libdisplay-info-git")
-else
+if [[ ${DISTRO#*:} != "bookworm" ]]; then
   makedepends+=("vkroots-headers" "libdisplay-info-dev")
 fi
 
-if [[ ${DISTRO} == *"ubuntu"* ]]; then
-  pacdeps+=("xcb-util-errors")
-else
+if [[ ${DISTRO%:*} != "ubuntu" ]]; then
   depends+=("libxcb-errors-dev")
   makedepends+=("libxcb-errors-dev")
 fi
