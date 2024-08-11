@@ -1,0 +1,25 @@
+pkgbase = honkers-launcher-bin
+	gives = honkers-launcher
+	pkgver = 1.7.1
+	pkgdesc = Launcher for a honkers game with auto-patching, discord rpc and time tracking
+	optdepends = mangohud: FPS Hud/GUI
+	optdepends = gamemode: Game Optimizations
+	breaks = honkers-launcher
+	breaks = honkers-launcher-deb
+	breaks = honkers-launcher-app
+	breaks = honkers-launcher-git
+	incompatible = ubuntu:bionic
+	incompatible = ubuntu:focal
+	incompatible = ubuntu:jammy
+	incompatible = ubuntu:kinetic
+	incompatible = debian:stretch
+	incompatible = debian:buster
+	incompatible = debian:bullseye
+	maintainer = vbrabandt2005 <vbrabandt@proton.me>
+	repology = project: honkers-launcher
+	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.7.1/honkers-launcher
+	source = icon.png::https://raw.githubusercontent.com/an-anime-team/honkers-launcher/main/assets/images/icon.png
+	sha256sums = 51c34b6b57bbe777e380536be12926126c67dd31a0063ca81bd1d2bf453ee016
+	sha256sums = SKIP
+
+pkgname = honkers-launcher-bin

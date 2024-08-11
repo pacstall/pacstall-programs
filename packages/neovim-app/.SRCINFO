@@ -1,6 +1,6 @@
 pkgbase = neovim-app
 	gives = neovim
-	pkgver = 0.10.0
+	pkgver = 0.10.1
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	depends = libfuse2
@@ -10,7 +10,7 @@ pkgbase = neovim-app
 	replaces = neovim-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source = https://github.com/neovim/neovim/releases/download/v0.10.0/nvim.appimage
-	sha256sums = 6a021e9465fe3d3375e28c3e94c1c2c4f7d1a5a67e4a78cf52d18d77b1471390
+	source = https://github.com/neovim/neovim/releases/download/v0.10.1/nvim.appimage
+	sha256sums = c4762d54cadfd9fa4497c7969197802c9cf9e0d926c39e561f0bd170e36c8aa0
 
 pkgname = neovim-app

@@ -13,6 +13,8 @@ anydesk-bin
 anydesk-deb
 anytype-deb
 appimagelauncher-deb
+apptainer-deb
+apptainer-suid-deb
 apx-git
 ardour-git
 arduino-cli-bin
@@ -203,6 +205,7 @@ helix
 hello
 heroic-games-launcher-deb
 highlight-pointer-bin
+honkers-launcher-bin
 htop
 httptoolkit-deb
 hwinfo-git
@@ -251,6 +254,7 @@ lens
 lf-bin
 libcamera-git
 libcutefish-git
+libdisplay-info-git
 libdrm
 libeditline-troglobit
 libfdk-aac1-deb
@@ -355,6 +359,7 @@ obs-backgroundremoval-git
 obs-ndi-deb
 obsidian-deb
 oh-my-posh-git
+oh-my-zsh-git
 oil
 onefetch-bin
 onlyoffice-desktopeditors-deb
@@ -444,6 +449,7 @@ rhino-setup-bin
 rhino-setup-git
 rhino-system-git
 rhino-ubxi-core
+rhino-xfwm4-theme-git
 rio-wayland-deb
 rio-x11-deb
 rosary-deb
@@ -546,6 +552,7 @@ viper4linux
 virtualbox-deb
 vivaldi-deb
 vivarium
+vkroots-git
 vscode-deb
 vscode-insiders-deb
 vscodium-deb

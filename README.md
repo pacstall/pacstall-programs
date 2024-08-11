@@ -21,7 +21,7 @@ package-repository/
 ```
 
 You can then use the `pacstall -A` command to add a repository to your `pacstallrepo` list.
-Consult the manpage (run `man pacstall 8`) for more info.
+Consult the manpage (run `man 8 pacstall` and `man 5 pacstall`) for more info.
 
 ## How to setup the environment for pacscript development
 
@@ -44,7 +44,7 @@ Now, whenever you try to commit a patch all the configured hooks will run and bl
 
 In case for some reason (false positives etc), you want to skip the hooks commit using `git commit --no-verify`
 
-Additionally, we have created the following tools to improve package maintainence:
+Additionally, we have created the following tools to improve package maintenance:
 
 | Maintainence Tool | Purpose | How to install |
 |:-----------------|:-------:|----------------|

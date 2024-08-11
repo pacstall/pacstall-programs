@@ -1,5 +1,5 @@
 pkgname="scrcpy"
-pkgver="2.4"
+pkgver="2.6.1"
 pkgdesc="Display and control your Android device"
 repology=("project: ${pkgname}")
 url="https://github.com/Genymobile/scrcpy"
@@ -13,8 +13,8 @@ source=(
   "${pkgname}-server::https://github.com/Genymobile/${pkgname}/releases/download/v${pkgver}/${pkgname}-server-v${pkgver}"
 )
 sha256sums=(
-  "60596f6d4c11163083da3e6805666326873ed57f7defd8a20256b928a1d3503b"
-  "93c272b7438605c055e127f7444064ed78fa9ca49f81156777fd201e79ce7ba3"
+  "4948474f1494fdff852a0a7fa823a0b3c25d3ea0384acdaf46c322e34b13e449"
+  "ca7ab50b2e25a0e5af7599c30383e365983fa5b808e65ce2e1c1bba5bfe8dc3b"
 )
 
 prepare() {

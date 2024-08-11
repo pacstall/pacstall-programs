@@ -1,0 +1,11 @@
+pkgbase = rhino-xfwm4-theme-git
+	gives = rhino-xfwm4-theme
+	pkgver = 0.0.1
+	pkgdesc = Rhino Linux XFWM4 theme
+	makedepends = sassc
+	makedepends = ninja-build
+	makedepends = meson
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/rhino-linux/rhino-xfwm4-theme.git
+
+pkgname = rhino-xfwm4-theme-git

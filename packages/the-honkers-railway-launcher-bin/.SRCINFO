@@ -1,8 +1,7 @@
 pkgbase = the-honkers-railway-launcher-bin
 	gives = the-honkers-railway-launcher
-	pkgver = 1.6.1
+	pkgver = 1.7.1
 	pkgdesc = The Honkers Railway launcher for Linux with automatic patching and telemetry disabling
-	depends = xdelta3
 	optdepends = mangohud: FPS Hud/GUI
 	optdepends = gamemode: Game Optimizations
 	breaks = the-honkers-railway-launcher
@@ -18,9 +17,9 @@ pkgbase = the-honkers-railway-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: the-honkers-railway-launcher
-	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.6.1/honkers-railway-launcher
+	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.7.1/honkers-railway-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/the-honkers-railway-launcher/main/assets/images/icon.png
-	sha256sums = b1fecc6643014cdd352a8130ac702ecf56f3b6b1a9188040ac3ac02f2cc01f56
+	sha256sums = 6ecd7c0b61d86eac7d18ef01274a8acb66ca4680a04c1fef991c734494771552
 	sha256sums = SKIP
 
 pkgname = the-honkers-railway-launcher-bin

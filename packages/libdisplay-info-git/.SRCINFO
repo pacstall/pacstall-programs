@@ -1,0 +1,23 @@
+pkgbase = libdisplay-info-git
+	gives = libdisplay-info
+	pkgver = 0.1.1
+	pkgdesc = EDID and DisplayID library
+	url = https://gitlab.freedesktop.org/emersion/libdisplay-info
+	arch = amd64
+	makedepends = git
+	makedepends = hwdata
+	makedepends = meson
+	makedepends = ninja-build
+	makedepends = python3
+	breaks = libdisplay-info1
+	breaks = libdisplay-info-dev
+	replaces = libdisplay-info1
+	replaces = libdisplay-info-dev
+	provides = libdisplay-info1
+	provides = libdisplay-info-dev
+	license = MIT
+	maintainer = xdavius <xdavius@gmail.com>
+	source = git+https://gitlab.freedesktop.org/emersion/libdisplay-info
+	sha256sums = SKIP
+
+pkgname = libdisplay-info-git
