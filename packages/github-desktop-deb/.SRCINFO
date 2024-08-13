@@ -10,11 +10,11 @@ pkgbase = github-desktop-deb
 	repology = project: github-desktop
 	repology = visiblename: github-desktop
 	repology = repo: aur
-	source_amd64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-amd64-3.4.3-linux1.deb
+	source_amd64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.3-linux1/GitHubDesktop-linux-amd64-3.4.3-linux1.deb
 	sha256sums_amd64 = e2c8aa0ee4f67b1d12e96080fef4dd342b0fd7aa619ead158f1e48cd5123c238
-	source_arm64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-arm64-3.4.3-linux1.deb
+	source_arm64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.3-linux1/GitHubDesktop-linux-arm64-3.4.3-linux1.deb
 	sha256sums_arm64 = da070a8379dda95cceb6c2a331fde7d33d56feee31de647e334435d34c6cfb22
-	source_armhf = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-armhf-3.4.3-linux1.deb
+	source_armhf = https://github.com/shiftkey/desktop/releases/download/release-3.4.3-linux1/GitHubDesktop-linux-armhf-3.4.3-linux1.deb
 	sha256sums_armhf = 44b85e5a3fdb1c575b6ee6101f45c97680554f143add2dec330104575e10468b
 
 pkgname = github-desktop-deb
