@@ -1,6 +1,6 @@
 pkgbase = github-desktop-deb
 	gives = github-desktop
-	pkgver = 3.4.2
+	pkgver = 3.4.3
 	pkgdesc = Fork of GitHub Desktop to support various Linux distributions
 	url = https://desktop.github.com
 	arch = amd64
@@ -10,11 +10,11 @@ pkgbase = github-desktop-deb
 	repology = project: github-desktop
 	repology = visiblename: github-desktop
 	repology = repo: aur
-	source_amd64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-amd64-3.4.2-linux1.deb
-	sha256sums_amd64 = a98e6b0af3a07f5fd9d345d9eb2027eb329d519fba9783c2b613d4e385cb2a17
-	source_arm64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-arm64-3.4.2-linux1.deb
-	sha256sums_arm64 = 55b3e34f3e316066953b7b8e1ba950350ad5126c77f87ffecbcfabd0ee796948
-	source_armhf = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-armhf-3.4.2-linux1.deb
-	sha256sums_armhf = a7a4bdddbcb6686b7e1ff943c3c7ba92debfe60ef216e84ffacbc2e37e0cd654
+	source_amd64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-amd64-3.4.3-linux1.deb
+	sha256sums_amd64 = e2c8aa0ee4f67b1d12e96080fef4dd342b0fd7aa619ead158f1e48cd5123c238
+	source_arm64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-arm64-3.4.3-linux1.deb
+	sha256sums_arm64 = da070a8379dda95cceb6c2a331fde7d33d56feee31de647e334435d34c6cfb22
+	source_armhf = https://github.com/shiftkey/desktop/releases/download/release-3.4.2-linux1/GitHubDesktop-linux-armhf-3.4.3-linux1.deb
+	sha256sums_armhf = 44b85e5a3fdb1c575b6ee6101f45c97680554f143add2dec330104575e10468b
 
 pkgname = github-desktop-deb
