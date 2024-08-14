@@ -471,7 +471,7 @@ pkgname = arduino-ide-bin
 ---
 pkgbase = armcord-deb
 	gives = armcord
-	pkgver = 3.2.7
+	pkgver = 3.2.8
 	pkgdesc = Custom client designed to enhance your Discord experience while keeping everything lightweight
 	arch = arm64
 	arch = amd64
@@ -486,10 +486,10 @@ pkgbase = armcord-deb
 	depends = libsecret-1-0
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: armcord
-	source_arm64 = https://github.com/ArmCord/ArmCord/releases/download/v3.2.7/ArmCord_3.2.7_arm64.deb
-	sha256sums_arm64 = 009e13486debcb63f8d2fccad5fb1a5a043f3b4cfdaf7cfcfb4bb14a675d64aa
-	source_amd64 = https://github.com/ArmCord/ArmCord/releases/download/v3.2.7/ArmCord_3.2.7_amd64.deb
-	sha256sums_amd64 = 4c580ef5d773fd2be2e107ee8234d37a3a55fe6fb1735e78f1ca24ce1560c24c
+	source_arm64 = https://github.com/ArmCord/ArmCord/releases/download/v3.2.8/ArmCord_3.2.8_arm64.deb
+	sha256sums_arm64 = 8bfb87c0a1e7b96964f6fed00717afb8b97b6e2b10affb49c2fb485fc98eaf8b
+	source_amd64 = https://github.com/ArmCord/ArmCord/releases/download/v3.2.8/ArmCord_3.2.8_amd64.deb
+	sha256sums_amd64 = b4a0f0def8127e162d52023a7c0ee6b81e125844b008c154863c81690da55399
 
 pkgname = armcord-deb
 ---
