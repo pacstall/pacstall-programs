@@ -1,6 +1,6 @@
 pkgbase = cortile-bin
 	gives = cortile
-	pkgver = 2.4.0
+	pkgver = 2.5.0
 	pkgdesc = Linux auto tiling manager with hot corner support
 	url = https://github.com/leukipp/cortile
 	arch = arm64
@@ -9,9 +9,9 @@ pkgbase = cortile-bin
 	replaces = cortile-git
 	maintainer = AJStrong <ajstrong.dev@gmail.com>
 	repology = project: cortile
-	source_arm64 = https://github.com/leukipp/cortile/releases/download/v2.4.0/cortile_2.4.0_linux_arm64.tar.gz
-	sha256sums_arm64 = 65396926a995c970d07dd71536f04d24b7eea12b53f892508c11848726bd8d22
-	source_amd64 = https://github.com/leukipp/cortile/releases/download/v2.4.0/cortile_2.4.0_linux_amd64.tar.gz
-	sha256sums_amd64 = 1a9c87737e6d212a15921ac5e10f21b64c7aa2051dbadc976f3c817674418537
+	source_arm64 = https://github.com/leukipp/cortile/releases/download/v2.5.0/cortile_2.5.0_linux_arm64.tar.gz
+	sha256sums_arm64 = 22be6b2129765cb727d536818f19d6a3d2c9936315bab79e970106528bafcc95
+	source_amd64 = https://github.com/leukipp/cortile/releases/download/v2.5.0/cortile_2.5.0_linux_amd64.tar.gz
+	sha256sums_amd64 = f78bf9fc794d8a0068b77641c38c167fff6d338c2a6b987b88e62816d1390580
 
 pkgname = cortile-bin
