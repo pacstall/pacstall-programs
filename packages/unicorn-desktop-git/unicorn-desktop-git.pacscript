@@ -103,19 +103,19 @@ post_install() {
     printf ".-vala-panel-appmenu-core > * {\n    min-width: 1430px;\n}\n" | tee -a "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" > /dev/null
   fi
   sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/gtk-3.0"
-  echo "============================================================================="
-  echo "Unicorn Desktop Post-Install Information"
-  echo ""
-  echo "If your GTK3 theme is still Yaru-purple, please run the following to switch to our new theme:"
-  echo ""
-  echo "\`\`\`"
-  echo "for i in 'gtk-3.0' 'gtk-4.0' 'Kvantum'; do"
-  echo "  cp -r /etc/skel/.config/\"\${i}\" ~/.config"
-  echo "done"
-  echo "xfconf-query -c xsettings -p /Net/ThemeName -s Adw-dark"
-  echo "xfconf-query -c xfwm4 -p /general/theme -s Adw-dark"
-  echo "gsettings set org.gnome.desktop.interface gtk-theme Adw-dark"
-  echo "\`\`\`"
-  echo ""
-  echo "============================================================================="
+  echo '============================================================================='
+  echo 'Unicorn Desktop Post-Install Information'
+  echo ''
+  echo 'If your GTK3 theme is still Yaru-purple, please run the following to switch to our new theme:'
+  echo ''
+  echo '```'
+  echo 'for i in "gtk-3.0" "gtk-4.0" "Kvantum"; do'
+  echo '  cp -r /etc/skel/.config/"${i}" ~/.config'
+  echo 'done'
+  echo 'xfconf-query -c xsettings -p /Net/ThemeName -s Adw-dark'
+  echo 'xfconf-query -c xfwm4 -p /general/theme -s Adw-dark'
+  echo 'gsettings set org.gnome.desktop.interface gtk-theme Adw-dark'
+  echo '```'
+  echo ''
+  echo '============================================================================='
 }
