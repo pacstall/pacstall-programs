@@ -110,6 +110,7 @@ post_install() {
   echo ''
   echo '```'
   echo 'for i in "gtk-3.0" "gtk-4.0" "Kvantum"; do'
+  # shellcheck disable=SC2016
   echo '  cp -r /etc/skel/.config/"${i}" ~/.config'
   echo 'done'
   echo 'xfconf-query -c xsettings -p /Net/ThemeName -s Adw-dark'
