@@ -275,6 +275,27 @@ pkgbase = appimagelauncher-deb
 
 pkgname = appimagelauncher-deb
 ---
+pkgbase = appmenu-registrar-backport
+	gives = appmenu-registrar
+	pkgver = 24.02
+	pkgdesc = Small utility to hold DBusMenu menus
+	url = https://gitlab.com/vala-panel-project/vala-panel-appmenu
+	arch = amd64
+	arch = arm64
+	depends = libglib2.0-0
+	makedepends = meson
+	makedepends = libglib2.0-0
+	makedepends = libglib2.0-dev
+	compatible = debian:trixie
+	compatible = debian:sid
+	compatible = ubuntu:oracular
+	compatible = ubuntu:devel
+	license = LGPL-3.0-or-later
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://gitlab.com/vala-panel-project/vala-panel-appmenu/-/archive/24.02/vala-panel-appmenu-24.02.tar.gz
+
+pkgname = appmenu-registrar-backport
+---
 pkgbase = apptainer-deb
 	gives = apptainer
 	pkgver = 1.3.3
