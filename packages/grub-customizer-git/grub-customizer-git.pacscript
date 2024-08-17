@@ -5,8 +5,18 @@ pkgdesc="A graphical grub2 settings manager (git version)"
 arch=('amd64')
 url='https://git.launchpad.net/grub-customizer'
 depends=("libgtkmm-3.0-dev" "libssl-dev")
-makedepends=("libgtkmm-3.0-dev" "libssl-dev" "libcairomm-1.0-dev" "cmake" "libglib2.0-dev" "libglibmm-2.4-dev" "libgtk-3-dev" "libarchive-dev" "libsigc++-3.0-dev"
-  "libpangomm-1.4-dev")
+makedepends=("libgtkmm-3.0-dev"
+  "libssl-dev"
+  "libcairomm-1.0-dev"
+  "cmake"
+  "libglib2.0-dev"
+  "libglibmm-2.4-dev"
+  "libgtk-3-dev"
+  "libarchive-dev"
+  "libsigc++-3.0-dev"
+  "libpangomm-1.4-dev"
+  "gettext")
+pacdeps=("hwinfo-git")
 replaces=("${gives}")
 source=("git+https://git.launchpad.net/grub-customizer")
 sha256sums=('SKIP')
