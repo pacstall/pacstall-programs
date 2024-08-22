@@ -8,7 +8,7 @@ pkgdesc="Library provided by Harvard University for learning the basic C languag
 
 build() {
   cd "${_archive}"
-  make
+  make -j"${NCPU}"
 }
 
 package() {
