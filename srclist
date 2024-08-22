@@ -1638,13 +1638,13 @@ pkgname = davinci-resolve
 ---
 pkgbase = dbeaver-ce-deb
 	gives = dbeaver-ce
-	pkgver = 24.1.3
+	pkgver = 24.1.5
 	pkgdesc = Free universal database tool and SQL client
 	arch = amd64
 	maintainer = KwonNam Son <kwon37xi@gmail.com>
 	repology = project: dbeaver
-	source = https://github.com/dbeaver/dbeaver/releases/download/24.1.3/dbeaver-ce_24.1.3_amd64.deb
-	sha256sums = 08e9866d01a3d56f2d23d727c8711230a32bf5228ec781a3d5ea2f9d0c1cb83b
+	source = https://github.com/dbeaver/dbeaver/releases/download/24.1.5/dbeaver-ce_24.1.5_amd64.deb
+	sha256sums = de78e67779235ea6bac7fc18c35ad5487562edab169371baa7bf2003b69e2271
 
 pkgname = dbeaver-ce-deb
 ---
@@ -1723,7 +1723,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.62
+	pkgver = 0.0.64
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1731,9 +1731,10 @@ pkgbase = discord-deb
 	breaks = discord-app
 	breaks = discord-debian-patched-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
+	maintainer = Medaey <medaey@github.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.62/discord-0.0.62.deb
-	sha256sums = 6f9773a9101e5ebf6dfd3c44692426f8c4263dad8594e2e9a415f212f2a40298
+	source = https://dl.discordapp.net/apps/linux/0.0.64/discord-0.0.64.deb
+	sha256sums = c8581119a3d459f44ce755e130acc0f4d62ff27ad82334a935e915b21382fc44
 
 pkgname = discord-deb
 ---
@@ -2622,14 +2623,14 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 129.0
+	pkgver = 129.0.1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/129.0/linux-x86_64/en-US/firefox-129.0.tar.bz2
-	sha256sums = 878a042f49ee34314bde9ca70a0f93c0941c247c72f17b87d904024bef2b27ad
+	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/129.0.1/linux-x86_64/en-US/firefox-129.0.1.tar.bz2
+	sha256sums = fa1a0409640a2e6fe2adcddbed5caa412e6dc9f38ca788eb78800f9e309f5b29
 
 pkgname = firefox-bin
 ---
@@ -3738,23 +3739,6 @@ pkgbase = grub-btrfs
 
 pkgname = grub-btrfs
 ---
-pkgbase = grub-customizer-git
-	gives = grub-customizer
-	pkgver = 5.0.6
-	pkgdesc = Grub Customizer is a graphical interface to configure the GRUB2/BURG settings and menuentries
-	makedepends = cmake
-	makedepends = g++
-	makedepends = libgtkmm-3.0-dev
-	makedepends = gettext
-	makedepends = libssl-dev
-	makedepends = libarchive-dev
-	makedepends = hwinfo
-	breaks = grub-customizer-deb
-	maintainer = ObsidianPresidium <emil@aarestrup.nu>
-	source = git+https://git.launchpad.net/grub-customizer
-
-pkgname = grub-customizer-git
----
 pkgbase = gtkhash
 	pkgver = 1.4
 	pkgdesc = gtkhash is a desktop utility for computing message digests or checksums.
@@ -4545,7 +4529,7 @@ pkgname = jetbrains-toolbox-bin
 ---
 pkgbase = joplin-desktop-app
 	gives = joplin-desktop
-	pkgver = 3.0.14
+	pkgver = 3.0.15
 	pkgrel = 2
 	pkgdesc = Joplin - the secure note taking and to-do app with synchronisation capabilities for Windows, macOS, Linux, Android and iOS
 	url = https://joplinapp.org/
@@ -4554,9 +4538,9 @@ pkgbase = joplin-desktop-app
 	makedepends = libfuse2
 	maintainer = lfromanini <lfromanini@yahoo.com>
 	repology = project: joplin-desktop
-	source = https://github.com/laurent22/joplin/releases/download/v3.0.14/Joplin-3.0.14.AppImage
+	source = https://github.com/laurent22/joplin/releases/download/v3.0.15/Joplin-3.0.15.AppImage
 	source = joplin-desktop.png::https://joplinapp.org/images/Icon512.png
-	sha256sums = f7f3dfa6e5006c550853dff7c8c415e236443e6fde43751c370c04ff0bdf9683
+	sha256sums = acd2988a121b75f199108194472b72fa14bcd9fb47b2a575623a8cf15601e915
 	sha256sums = SKIP
 
 pkgname = joplin-desktop-app
@@ -4677,7 +4661,7 @@ pkgname = kalendar-git
 ---
 pkgbase = keepassxc
 	gives = org.freedesktop.secrets
-	pkgver = 2.7.6
+	pkgver = 2.7.9
 	pkgdesc = Cross-platform community-driven port of Keepass password manager
 	depends = argon2
 	depends = botan
@@ -4722,9 +4706,10 @@ pkgbase = keepassxc
 	breaks = keepassxc-git
 	breaks = keepassxc-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
+	maintainer = Medaey <medaey@github.com>
 	repology = project: keepassxc
-	source = https://github.com/keepassxreboot/keepassxc/releases/download/2.7.6/keepassxc-2.7.6-src.tar.xz
-	sha256sums = a58074509fa8e90f152c6247f73e75e126303081f55eedb4ea0cbb6fa980d670
+	source = https://github.com/keepassxreboot/keepassxc/releases/download/2.7.9/keepassxc-2.7.9-src.tar.xz
+	sha256sums = 3c44e45f22c00ddac63d8bc11054b4b0ada0222ffac08d3ed70f196cb9ed46fd
 
 pkgname = keepassxc
 ---
@@ -8934,7 +8919,7 @@ pkgname = sleek-deb
 ---
 pkgbase = sleepy-launcher-bin
 	gives = sleepy-launcher
-	pkgver = 1.0.1
+	pkgver = 1.1.0
 	pkgdesc = Sleepy game launcher for Linux with telemetry disabling
 	depends = xdelta3
 	depends = p7zip-full
@@ -8954,9 +8939,9 @@ pkgbase = sleepy-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: sleepy-launcher
-	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.0.1/sleepy-launcher
+	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.1.0/sleepy-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/sleepy-launcher/main/assets/images/icon.png
-	sha256sums = ab00733635c7534e2a51068e65185f00c0f59c0d4e57ef9da08a55630586447d
+	sha256sums = d546af15170c13d206d25b338f7463943a9bd68c5afd31aa5522b1f3e0198d30
 	sha256sums = SKIP
 
 pkgname = sleepy-launcher-bin
@@ -9404,14 +9389,14 @@ pkgname = sublime-merge-deb
 ---
 pkgbase = sublime-text-deb
 	gives = sublime-text
-	pkgver = 4169
+	pkgver = 4180
 	pkgdesc = Sublime text light text editor for programmers
 	arch = amd64
 	replaces = sublime-text
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: sublime-text
-	source = https://download.sublimetext.com/sublime-text_build-4169_amd64.deb
-	sha256sums = e1bac169546317f246cc58adbdd20264c78486f12112b3c9ee303aa863c38f7f
+	source = https://download.sublimetext.com/sublime-text_build-4180_amd64.deb
+	sha256sums = a5460f6f9bd82ab5962a1efd6213eef3ca0ac7705d103c2f3d2eb74671f035d4
 
 pkgname = sublime-text-deb
 ---
