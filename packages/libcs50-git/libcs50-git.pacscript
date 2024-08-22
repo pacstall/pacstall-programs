@@ -14,10 +14,6 @@ build() {
 package() {
   cd "${_archive}"
   make DESTDIR="${pkgdir}/usr/local" install || true
-
-  # Manually skip or suppress the ldconfig error
-  # Skipping ldconfig to avoid read-only filesystem issues
-  echo "skipping the ldconfig because it gives error doing this after the install"
 }
 
 post_install() {
