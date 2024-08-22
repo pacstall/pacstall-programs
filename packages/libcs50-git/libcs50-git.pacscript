@@ -7,12 +7,12 @@ maintainer=("Vaibhav Sharma <vvaibhavv3434@gmail.com>")
 pkgdesc="Library provided by Harvard University for learning the basic C language"
 
 build() {
-  cd "${_archive}"
+  cd "${gives}"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${gives}"
   make DESTDIR="${pkgdir}/usr/local" install || true
 }
 
