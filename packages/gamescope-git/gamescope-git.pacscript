@@ -71,7 +71,7 @@ if [[ ${DISTRO#*:} != "bookworm" ]]; then
   makedepends+=("vkroots-headers" "libdisplay-info-dev")
 fi
 
-if [[ ${DISTRO%:*} != "ubuntu" ]]; then
+if [[ ${DISTRO%:*} != "ubuntu" && ${DISTRO#*:} != "bookworm" ]]; then
   depends+=("libxcb-errors-dev")
   makedepends+=("libxcb-errors-dev")
 fi
