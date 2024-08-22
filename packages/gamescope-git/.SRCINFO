@@ -86,5 +86,6 @@ pkgbase = gamescope-git
 	pacdeps_ubuntu = xcb-util-errors
 	pacdeps_bookworm = vkroots-git
 	pacdeps_bookworm = libdisplay-info-git
+	pacdeps_bookworm = xcb-util-errors
 
 pkgname = gamescope-git
