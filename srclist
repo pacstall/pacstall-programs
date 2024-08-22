@@ -5007,6 +5007,16 @@ pkgbase = libcamera-git
 
 pkgname = libcamera-git
 ---
+pkgbase = libcs50-git
+	gives = libcs50
+	pkgver = 11.0.3
+	pkgdesc = Library provided by Harvard University for learning the basic C language
+	makedepends = make
+	maintainer = Vaibhav Sharma <vvaibhavv3434@gmail.com>
+	source = https://github.com/cs50/libcs50.git
+
+pkgname = libcs50-git
+---
 pkgbase = libcutefish-git
 	gives = libcutefish
 	pkgver = 0.7
