@@ -27,7 +27,7 @@ build() {
 
   # Build 64-bit version
   meson build64 --prefix="/usr"
-  ninja -C build64
+  ninja -j"${NCPU}" build64
 
   # Set the necessary environment variables for 32-bit build
   export CC="gcc -m32"
@@ -37,15 +37,15 @@ build() {
 
   # Build 32-bit version
   meson build32 --libdir="lib/i386-linux-gnu" --prefix="/usr"
-  ninja -C build32
+  ninja -j"${NCPU}" build32
 }
 
 package() {
   cd "${_archive}"
 
   # Install 64-bit version
-  DESTDIR="${pkgdir}" ninja -C build64 install
+  DESTDIR="${pkgdir}" ninja -j"${NCPU}" build64 install
 
   # Install 32-bit version
-  DESTDIR="${pkgdir}" ninja -C build32 install
+  DESTDIR="${pkgdir}" ninja -j"${NCPU}" build32 install
 }
