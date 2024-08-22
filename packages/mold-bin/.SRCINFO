@@ -1,6 +1,6 @@
 pkgbase = mold-bin
 	gives = mold
-	pkgver = 2.32.0
+	pkgver = 2.33.0
 	pkgdesc = A modern linker
 	arch = amd64
 	arch = arm64
@@ -8,9 +8,9 @@ pkgbase = mold-bin
 	breaks = mold-bin
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: mold
-	source_amd64 = https://github.com/rui314/mold/releases/download/v2.32.0/mold-2.32.0-x86_64-linux.tar.gz
-	sha256sums_amd64 = 2e69989cc1c0041ecfcb31fec57b2a5caa7802848d9468ffa5b1b348b26e4982
-	source_arm64 = https://github.com/rui314/mold/releases/download/v2.32.0/mold-2.32.0-aarch64-linux.tar.gz
-	sha256sums_arm64 = c75d17c1c530dee4b9ca811aaacca782a9fe8538ae8c68ce619f198a58e2b0e7
+	source_amd64 = https://github.com/rui314/mold/releases/download/v2.33.0/mold-2.33.0-x86_64-linux.tar.gz
+	sha256sums_amd64 = e169f7aaec6fbbad5e02ce8d705f59ed9372179ea180afb3fc967c3941ab2c16
+	source_arm64 = https://github.com/rui314/mold/releases/download/v2.33.0/mold-2.33.0-aarch64-linux.tar.gz
+	sha256sums_arm64 = 20ba9736a3dc0e0c9d5df177f375ad9c9d2a88864727e80a3e21d71abc7874e4
 
 pkgname = mold-bin

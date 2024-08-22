@@ -13,6 +13,7 @@ anydesk-bin
 anydesk-deb
 anytype-deb
 appimagelauncher-deb
+appmenu-registrar-backport
 apptainer-deb
 apptainer-suid-deb
 apx-git
@@ -192,7 +193,6 @@ grapejuice-git
 grive2
 grive2-git
 grub-btrfs
-grub-customizer-git
 gtkhash
 hakuneko-deb
 hamclock
@@ -408,6 +408,7 @@ prettier
 prismlauncher-git
 proton-python-client
 protonmail-bridge-deb
+protonplus
 protonup-qt-app
 protonvpn-cli
 protonvpn-gui
@@ -471,6 +472,7 @@ signal-desktop-beta-deb
 signal-desktop-deb
 simplex-desktop-app
 slack-deb
+sleek-deb
 sleepy-launcher-bin
 slop-git
 smartgit

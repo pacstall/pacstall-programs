@@ -1,14 +1,14 @@
 pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 pkgver="0.0.1"
-pkgrel="3"
+pkgrel="4"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
   "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11"
   "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev"
   "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "bluez-firmware"
   "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics" "ukui-touchpadserver"
   "pipewire-audio" "bluetooth" "alsa-ucm-conf")
-pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin" "adw-gtk-theme" "rhino-xfwm4-theme-git")
+pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin" "adw-gtk-theme" "rhino-xfwm4-theme-git" "appmenu-registrar-backport")
 gives="unicorn-mobile"
 replaces=("unicorn-desktop" "unicorn-desktop-git")
 priority="required"
@@ -103,12 +103,20 @@ post_install() {
     echo "[keyfile]" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
     echo "unmanaged-devices=none" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
   fi
-  echo "============================================================================="
-  echo "Unicorn Mobile Post-Install Information"
-  echo ""
-  echo "If your GTK3 theme is still Yaru-purple-dark, please run the following to switch to our new theme:"
-  echo "gsettings set org.gnome.desktop.interface gtk-theme Adw-dark"
-  echo ""
-  echo "NOTE: You may need to run this after logging out and back in again."
-  echo "============================================================================="
+  echo '============================================================================='
+  echo 'Unicorn Mobile Post-Install Information'
+  echo ''
+  echo 'If your GTK3 theme is still Yaru-purple, please run the following to switch to our new theme:'
+  echo ''
+  echo '```'
+  echo 'for i in "gtk-3.0" "gtk-4.0" "Kvantum"; do'
+  # shellcheck disable=SC2016
+  echo '  cp -r /etc/skel/.config/"${i}" ~/.config'
+  echo 'done'
+  echo 'xfconf-query -c xsettings -p /Net/ThemeName -s Adw-dark'
+  echo 'xfconf-query -c xfwm4 -p /general/theme -s Adw-dark'
+  echo 'gsettings set org.gnome.desktop.interface gtk-theme Adw-dark'
+  echo '```'
+  echo ''
+  echo '============================================================================='
 }

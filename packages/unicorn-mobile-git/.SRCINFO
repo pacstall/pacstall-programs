@@ -1,7 +1,7 @@
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
 	pkgver = 0.0.1
-	pkgrel = 3
+	pkgrel = 4
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
 	depends = xfwm4
@@ -39,6 +39,7 @@ pkgbase = unicorn-mobile-git
 	pacdeps = cortile-bin
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
+	pacdeps = appmenu-registrar-backport
 	replaces = unicorn-desktop
 	replaces = unicorn-desktop-git
 	incompatible = debian:*

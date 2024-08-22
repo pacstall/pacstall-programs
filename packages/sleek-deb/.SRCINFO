@@ -1,0 +1,11 @@
+pkgbase = sleek-deb
+	gives = sleek
+	pkgver = 2.0.14
+	pkgdesc = todo.txt manager for Linux, Windows and MacOS, free and open-source (FOSS)
+	arch = amd64
+	maintainer = lfromanini <lfromanini@yahoo.com>
+	repology = project: sleek
+	source = https://github.com/ransome1/sleek/releases/download/v2.0.14/sleek_2.0.14_amd64.deb
+	sha256sums = d5c718346435dccdff38ad4f0e99108485fc8a2f6215db618c861264827e5804
+
+pkgname = sleek-deb
