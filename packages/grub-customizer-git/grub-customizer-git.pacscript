@@ -28,7 +28,7 @@ build() {
     -DCMAKE_BUILD_TYPE=None \
     -Wno-dev \
     -B build
-  make VERBOSE=1 -C build
+  make VERBOSE=1 -C build -j"${NCPU}"
 }
 
 package() {
