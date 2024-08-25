@@ -1723,7 +1723,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.64
+	pkgver = 0.0.65
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1733,8 +1733,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@github.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.64/discord-0.0.64.deb
-	sha256sums = c8581119a3d459f44ce755e130acc0f4d62ff27ad82334a935e915b21382fc44
+	source = https://dl.discordapp.net/apps/linux/0.0.65/discord-0.0.65.deb
+	sha256sums = 6ddb70fdca9bd1a4f5741e8d894272223d8751b0b671d283357b2677382ee77b
 
 pkgname = discord-deb
 ---
@@ -2623,14 +2623,14 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 129.0.1
+	pkgver = 129.0.2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/129.0.1/linux-x86_64/en-US/firefox-129.0.1.tar.bz2
-	sha256sums = fa1a0409640a2e6fe2adcddbed5caa412e6dc9f38ca788eb78800f9e309f5b29
+	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/129.0.2/linux-x86_64/en-US/firefox-129.0.2.tar.bz2
+	sha256sums = abc39c9deb686084933371bbe0546001f7bfab46c9d7a0cf4b1a4a025886cd5e
 
 pkgname = firefox-bin
 ---
