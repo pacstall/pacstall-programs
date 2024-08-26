@@ -5932,15 +5932,15 @@ pkgname = mdbook
 ---
 pkgbase = megabasterd-bin
 	gives = megabasterd
-	pkgver = 8.21
+	pkgver = 8.22
 	pkgdesc = Yet another unofficial (and ugly) cross-platform MEGA downloader/uploader/streaming suite
 	url = https://github.com/tonikelope/megabasterd
 	depends = java11-runtime
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: megabasterd
-	source = https://github.com/tonikelope/megabasterd/releases/download/v8.21/MegaBasterd_8.21.jar
-	source = megabasterd.png::https://raw.githubusercontent.com/tonikelope/megabasterd/v8.21/src/main/resources/images/pica_roja_big.png
-	sha256sums = 3f7460b5ba20cf84ea034e9f2c49def9b07cf59680a3b36492875d851f9e0241
+	source = https://github.com/tonikelope/megabasterd/releases/download/v8.22/MegaBasterd_8.22.jar
+	source = megabasterd.png::https://raw.githubusercontent.com/tonikelope/megabasterd/v8.22/src/main/resources/images/pica_roja_big.png
+	sha256sums = 4a31af5c8eeeb2559747b34222dc63f43a0ca8a558bb9bdba256d7954e90d003
 	sha256sums = SKIP
 
 pkgname = megabasterd-bin
