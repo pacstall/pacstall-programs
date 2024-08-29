@@ -1,6 +1,6 @@
 pkgname='lix-git'
 gives='lix'
-pkgver='2.90'
+pkgver='2.92.0'
 pkgdesc='A modern, delicious implementation of the Nix package manager, focused on correctness, usability, and growth'
 url='https://lix.systems'
 source=('lix::https://github.com/lix-project/lix.git')
@@ -10,12 +10,10 @@ conflicts=('lix' 'nix-bin' 'nix-setup-systemd')
 external_connection='true'
 makedepends_amd64=('libcpuid-dev')
 makedepends=(
-  'bison'
   'busybox-static'
   'cargo'
   'cmake'
   'doxygen'
-  'flex'
   'graphviz'
   'libarchive-dev'
   'libboost-container-dev'
@@ -33,11 +31,12 @@ makedepends=(
   'libtoml11-dev'
   'lowdown'
   'lsof'
-  'meson'
+  'meson>=1.4.0'
   'ninja-build'
   'nlohmann-json3-dev'
   'pkg-config'
   'python3'
+  'tao-pegtl-dev'
 )
 depends_amd64=('libcpuid16')
 depends=(
@@ -58,6 +57,9 @@ depends=(
   'perl'
   'xz-utils'
 )
+# FIXME: tests are disabled since librapidcheck-dev is broken.
+# Uncomment once the below PR is merged
+# https://salsa.debian.org/debian/rapidcheck/-/merge_requests/1
 #checkdepends=(
 #  'libgmock-dev'
 #  'libgtest-dev'
@@ -65,7 +67,7 @@ depends=(
 #)
 pacdeps=(
   'coreutils-single'
-  'libeditline-troglobit'
+  'libeditline-troglobit-git'
   'libgc-nix'
   'mdbook'
   'mdbook-linkcheck'
@@ -73,20 +75,11 @@ pacdeps=(
 
 prepare() {
   cd lix
-  sed -i '1c #!/usr/bin/env bash' \
-    doc/manual/process-includes.sh \
-    doc/manual/render-manpage.sh \
-    tests/functional/install-darwin.sh
-  env -C lix-doc CARGO_HOME=crates \
-    cargo fetch --locked
+  cargo fetch --locked
 }
 
 build() {
   cd lix
-  env -C lix-doc CARGO_HOME=crates \
-    cargo build -j"${NCPU}" --release --offline
-  export LIBRARY_PATH=${PWD}/lix-doc/target/release
-
   local mesonflags=(
     -Db_lto=true
     -Denable-docs=true
@@ -97,10 +90,9 @@ build() {
     -Dstate-dir=/nix/var
     -Dstore-dir=/nix/store
     -Dsysconfdir=/etc
-    #-Dtests-brief=true
   )
   meson setup build "${mesonflags[@]}"
-  ninja -j"${NCPU}" -C build
+  meson compile -C build
 }
 
 #check() {
@@ -110,5 +102,5 @@ build() {
 
 package() {
   cd lix
-  DESTDIR="${pkgdir}" ninja install -C build
+  DESTDIR="${pkgdir}" meson install -C build
 }

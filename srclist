@@ -5104,7 +5104,8 @@ pkgbase = libdrm
 
 pkgname = libdrm
 ---
-pkgbase = libeditline-troglobit
+pkgbase = libeditline-troglobit-git
+	gives = libeditline-troglobit
 	pkgver = 1.17.1
 	pkgdesc = A readline() replacement for UNIX without termcap (ncurses)
 	url = https://troglobit.com/projects/editline/
@@ -5113,9 +5114,9 @@ pkgbase = libeditline-troglobit
 	license = custom:permissive
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: editline-troglobit
-	source = libeditline-troglobit::https://github.com/troglobit/editline.git#tag=1.17.1
+	source = libeditline-troglobit::https://github.com/troglobit/editline.git
 
-pkgname = libeditline-troglobit
+pkgname = libeditline-troglobit-git
 ---
 pkgbase = libfdk-aac1-deb
 	gives = libfdk-aac1
@@ -5626,7 +5627,7 @@ pkgname = linux-wifi-hotspot-deb
 ---
 pkgbase = lix-git
 	gives = lix
-	pkgver = 2.90
+	pkgver = 2.92.0
 	pkgdesc = A modern, delicious implementation of the Nix package manager, focused on correctness, usability, and growth
 	url = https://lix.systems
 	depends = busybox-static
@@ -5645,12 +5646,10 @@ pkgbase = lix-git
 	depends = libssl3t64 | libssl3
 	depends = perl
 	depends = xz-utils
-	makedepends = bison
 	makedepends = busybox-static
 	makedepends = cargo
 	makedepends = cmake
 	makedepends = doxygen
-	makedepends = flex
 	makedepends = graphviz
 	makedepends = libarchive-dev
 	makedepends = libboost-container-dev
@@ -5668,13 +5667,14 @@ pkgbase = lix-git
 	makedepends = libtoml11-dev
 	makedepends = lowdown
 	makedepends = lsof
-	makedepends = meson
+	makedepends = meson>=1.4.0
 	makedepends = ninja-build
 	makedepends = nlohmann-json3-dev
 	makedepends = pkg-config
 	makedepends = python3
+	makedepends = tao-pegtl-dev
 	pacdeps = coreutils-single
-	pacdeps = libeditline-troglobit
+	pacdeps = libeditline-troglobit-git
 	pacdeps = libgc-nix
 	pacdeps = mdbook
 	pacdeps = mdbook-linkcheck

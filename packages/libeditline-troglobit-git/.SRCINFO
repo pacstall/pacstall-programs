@@ -1,4 +1,5 @@
-pkgbase = libeditline-troglobit
+pkgbase = libeditline-troglobit-git
+	gives = libeditline-troglobit
 	pkgver = 1.17.1
 	pkgdesc = A readline() replacement for UNIX without termcap (ncurses)
 	url = https://troglobit.com/projects/editline/
@@ -7,6 +8,6 @@ pkgbase = libeditline-troglobit
 	license = custom:permissive
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: editline-troglobit
-	source = libeditline-troglobit::https://github.com/troglobit/editline.git#tag=1.17.1
+	source = libeditline-troglobit::https://github.com/troglobit/editline.git
 
-pkgname = libeditline-troglobit
+pkgname = libeditline-troglobit-git
