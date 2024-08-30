@@ -515,7 +515,7 @@ pkgbase = armcord-deb
 pkgname = armcord-deb
 ---
 pkgbase = aseprite
-	pkgver = 1.3.7
+	pkgver = 1.3.8.1
 	pkgdesc = Animated sprite editor & pixel art tool
 	url = https://www.aseprite.org/
 	arch = amd64
@@ -529,19 +529,17 @@ pkgbase = aseprite
 	makedepends = libxcursor-dev
 	makedepends = libxi-dev
 	makedepends = ninja-build
-	noextract = aseprite-1.3.7.zip
+	noextract = aseprite-1.3.8.1.zip
 	noextract = skia-m102-861e4743af.zip
 	license = custom:EULA
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: aseprite
-	source = aseprite-1.3.7.zip::https://github.com/aseprite/aseprite/releases/download/v1.3.7/Aseprite-v1.3.7-Source.zip
+	source = aseprite-1.3.8.1.zip::https://github.com/aseprite/aseprite/releases/download/v1.3.8.1/Aseprite-v1.3.8.1-Source.zip
 	source = skia-m102-861e4743af.zip::https://github.com/aseprite/skia/releases/download/m102-861e4743af/Skia-Linux-Release-x64-libc++.zip
 	source = https://github.com/aseprite/strings.git
-	source = fix-build-with-updater-off.patch::https://github.com/aseprite/aseprite/commit/8fce589.patch
-	sha256sums = 6524b4dd38adac22f954122846ccca7377983cee2e0f17c1482294cf09cbdcfc
+	sha256sums = fc13536a9e14551245028d578493aa63f9978b943250936735dc62a5abfbee53
 	sha256sums = 66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea
 	sha256sums = SKIP
-	sha256sums = 31369a5063d5f7839699fea00235b70057b0f2619592ba1db5af6d12c4f1171c
 
 pkgname = aseprite
 ---
@@ -1723,7 +1721,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.64
+	pkgver = 0.0.66
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1733,8 +1731,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@github.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.64/discord-0.0.64.deb
-	sha256sums = c8581119a3d459f44ce755e130acc0f4d62ff27ad82334a935e915b21382fc44
+	source = https://dl.discordapp.net/apps/linux/0.0.66/discord-0.0.66.deb
+	sha256sums = ea2df18fc1481b872cced367da84308bc241a6b08f39cfe8b42c2835147aedaf
 
 pkgname = discord-deb
 ---
@@ -2609,28 +2607,28 @@ pkgname = ffsend-bin
 ---
 pkgbase = firefox-arm64-deb
 	gives = firefox
-	pkgver = 129.0+build2
+	pkgver = 129.0.2+build1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
 	repology = repo: ubuntu_20_04
-	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_129.0+build2-0ubuntu0.22.04.1~mt1_arm64.deb
-	sha256sums = fff03a2c0d24ea0b6ca877da2ebfe793dbda06ebbd5c3f9c6910bc044203fced
+	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_129.0.2+build1-0ubuntu0.22.04.1~mt1_arm64.deb
+	sha256sums = ce17b268d4e84a9064bc99c30f610a05694d4c7745914595f9553a2aaeed9fd8
 
 pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 129.0.1
+	pkgver = 129.0.2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/129.0.1/linux-x86_64/en-US/firefox-129.0.1.tar.bz2
-	sha256sums = fa1a0409640a2e6fe2adcddbed5caa412e6dc9f38ca788eb78800f9e309f5b29
+	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/129.0.2/linux-x86_64/en-US/firefox-129.0.2.tar.bz2
+	sha256sums = abc39c9deb686084933371bbe0546001f7bfab46c9d7a0cf4b1a4a025886cd5e
 
 pkgname = firefox-bin
 ---
@@ -2659,7 +2657,7 @@ pkgname = firefox-developer-edition-bin
 ---
 pkgbase = firefox-nightly-bin
 	gives = firefox-nightly
-	pkgver = 128.0a1
+	pkgver = 131.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -2668,14 +2666,14 @@ pkgbase = firefox-nightly-bin
 	replaces = firefox-nightly-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-128.0a1.en-US.linux-x86_64.tar.bz2
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-128.0a1.en-US.linux-aarch64.tar.bz2
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-131.0a1.en-US.linux-x86_64.tar.bz2
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-131.0a1.en-US.linux-aarch64.tar.bz2
 
 pkgname = firefox-nightly-bin
 ---
 pkgbase = firefox-nightly-deb
 	gives = firefox-nightly
-	pkgver = 128.0a1
+	pkgver = 131.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -2684,8 +2682,8 @@ pkgbase = firefox-nightly-deb
 	replaces = firefox-nightly-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-128.0a1.en-US.linux-x86_64.deb
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-128.0a1.en-US.linux-aarch64.deb
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-131.0a1.en-US.linux-x86_64.deb
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-131.0a1.en-US.linux-aarch64.deb
 
 pkgname = firefox-nightly-deb
 ---
@@ -5939,15 +5937,15 @@ pkgname = mdbook
 ---
 pkgbase = megabasterd-bin
 	gives = megabasterd
-	pkgver = 8.21
+	pkgver = 8.22
 	pkgdesc = Yet another unofficial (and ugly) cross-platform MEGA downloader/uploader/streaming suite
 	url = https://github.com/tonikelope/megabasterd
 	depends = java11-runtime
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: megabasterd
-	source = https://github.com/tonikelope/megabasterd/releases/download/v8.21/MegaBasterd_8.21.jar
-	source = megabasterd.png::https://raw.githubusercontent.com/tonikelope/megabasterd/v8.21/src/main/resources/images/pica_roja_big.png
-	sha256sums = 3f7460b5ba20cf84ea034e9f2c49def9b07cf59680a3b36492875d851f9e0241
+	source = https://github.com/tonikelope/megabasterd/releases/download/v8.22/MegaBasterd_8.22.jar
+	source = megabasterd.png::https://raw.githubusercontent.com/tonikelope/megabasterd/v8.22/src/main/resources/images/pica_roja_big.png
+	sha256sums = 4a31af5c8eeeb2559747b34222dc63f43a0ca8a558bb9bdba256d7954e90d003
 	sha256sums = SKIP
 
 pkgname = megabasterd-bin
@@ -7008,26 +7006,25 @@ pkgname = openrgb-git
 ---
 pkgbase = opensnitch-deb
 	gives = opensnitch
-	pkgver = 1.6.2
+	pkgver = 1.6.6
 	pkgdesc = OpenSnitch is a GNU/Linux port of the Little Snitch application firewall
 	arch = amd64
 	maintainer = echometerain <echometer@disroot.org>
 	repology = project: opensnitch
-	source = https://github.com/evilsocket/opensnitch/releases/download/v1.6.2/opensnitch_1.6.2-1_amd64.deb
-	sha256sums = edc9dad5f2e5fbb83c0cdc4a672d74ef3ab8cbfcc30ff1f9e26294cbc9ee0e04
+	source = https://github.com/evilsocket/opensnitch/releases/download/v1.6.6/opensnitch_1.6.6-1_amd64.deb
+	sha256sums = 06d876ecd6a91d3a21203d4643caa78b6091b926c63fca3327ddad0f6e94cdac
 
 pkgname = opensnitch-deb
 ---
 pkgbase = opensnitch-ui-deb
 	gives = python3-opensnitch-ui
-	pkgver = 1.6.3
+	pkgver = 1.6.6
 	pkgdesc = OpenSnitch is a GNU/Linux port of the Little Snitch application firewall
-	depends = qt-material
 	maintainer = echometerain <echometer@disroot.org>
 	repology = project: opensnitch-ui
 	repology = repo: nix_unstable
-	source = https://github.com/evilsocket/opensnitch/releases/download/v1.6.3/python3-opensnitch-ui_1.6.3-1_all.deb
-	sha256sums = 529f31d24bc162fc19930e6be0ddba16f4731dfc00d6ebab3612d22790dd8b84
+	source = https://github.com/evilsocket/opensnitch/releases/download/v1.6.6/python3-opensnitch-ui_1.6.6-1_all.deb
+	sha256sums = 9f37e205b888bedeefa40fca7c31a8c3a680096ccca195cee76eeae7c51d08f5
 
 pkgname = opensnitch-ui-deb
 ---
