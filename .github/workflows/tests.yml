@@ -298,6 +298,8 @@ jobs:
     needs: [test-on-ubuntu, test-on-debian]
     if: ${{ always() }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Update PR Description with CI Status
         run: |
           STATUS_SUMMARY=""
