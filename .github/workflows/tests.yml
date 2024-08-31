@@ -163,7 +163,19 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
       - name: Capture Job Status
         if: ${{ always() }}
-        run: echo "${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}=${{ job.status }}" >> $GITHUB_ENV
+        run: |
+          case ${{ job.status }} in
+              success) stat="✅" ;;
+              failure) stat="❌" ;;
+              cancelled) stat="🚫" ;;
+          esac
+          echo "${{ matrix.OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}.txt
+      - name: Upload Job Status Artifact
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}
+          path: job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}.txt
 
   test-on-debian:
     strategy:
@@ -291,7 +303,19 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
       - name: Capture Job Status
         if: ${{ always() }}
-        run: echo "${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}=${{ job.status }}" >> $GITHUB_ENV
+        run: |
+          case ${{ job.status }} in
+              success) stat="✅" ;;
+              failure) stat="❌" ;;
+              cancelled) stat="🚫" ;;
+          esac
+          echo "${{ matrix.OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}.txt
+      - name: Upload Job Status Artifact
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}
+          path: job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}.txt
 
   update-pr:
     runs-on: ubuntu-latest
@@ -300,12 +324,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Update PR Description with CI Status
+      - name: Download All Job Status Artifacts
+        uses: actions/download-artifact@v4
+      - name: Aggregate and Update PR Description
         run: |
           STATUS_SUMMARY=""
-          while IFS= read -r line; do
-            STATUS_SUMMARY="${STATUS_SUMMARY}\n- ${line}"
-          done < $GITHUB_ENV
+          for FILE in artifacts/*; do
+            STATUS=$(cat $FILE)
+            STATUS_SUMMARY="${STATUS_SUMMARY}\n- ${STATUS}"
+          done
           
           PR_DESCRIPTION=$(gh pr view ${{ github.event.pull_request.number }} --json body -q ".body")
           
