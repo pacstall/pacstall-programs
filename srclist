@@ -5434,8 +5434,8 @@ pkgbase = linux-headers-generic-deb
 pkgname = linux-headers-generic-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.10.4-061004-generic
-	pkgver = 6.10.4
+	gives = linux-headers-6.10.7-061007-generic
+	pkgver = 6.10.7
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -5443,10 +5443,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.4/arm64/linux-headers-6.10.4-061004-generic_6.10.4-061004.202408111201_arm64.deb
-	sha256sums_arm64 = ba051e61108010bf37a55cfbf12668b7f5479c09b43a973225847424d194b012
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.4/amd64/linux-headers-6.10.4-061004-generic_6.10.4-061004.202408111201_amd64.deb
-	sha256sums_amd64 = df92a74cb23c85e423bebb24771732b1a359cbb7f6be8d8a0dec8736ece60878
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.7/arm64/linux-headers-6.10.7-061007-generic_6.10.7-061007.202408291638_arm64.deb
+	sha256sums_arm64 = 01ea7ee3ecd7392fe8ad4ccb5161c498b6b97ac96739504a505f61ccf339cfd7
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.7/amd64/linux-headers-6.10.7-061007-generic_6.10.7-061007.202408291638_amd64.deb
+	sha256sums_amd64 = 49ad670a66c5f4eae3e6260243bfc0f5281d0a6c132257d0201809c216edb5be
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -5467,15 +5467,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.10.4-061004
-	pkgver = 6.10.4
+	gives = linux-headers-6.10.7-061007
+	pkgver = 6.10.7
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = any
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.4/amd64/linux-headers-6.10.4-061004_6.10.4-061004.202408111201_all.deb
-	sha256sums = 6101778bb6f91b7a0e8da72b0b99519ead6d657c697309605040ca4452e097ce
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.7/amd64/linux-headers-6.10.7-061007_6.10.7-061007.202408291638_all.deb
+	sha256sums = 109331777e98bd820569e0218f3e247807b907ae41212508687dea12203e358d
 
 pkgname = linux-headers-stable-deb
 ---
@@ -5518,8 +5518,8 @@ pkgbase = linux-image-unsigned-deb
 pkgname = linux-image-unsigned-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.10.4-061004-generic
-	pkgver = 6.10.4
+	gives = linux-image-unsigned-6.10.7-061007-generic
+	pkgver = 6.10.7
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -5528,15 +5528,15 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.4/arm64/linux-image-unsigned-6.10.4-061004-generic_6.10.4-061004.202408111201_arm64.deb
-	sha256sums_arm64 = 59467bd201d2e57d59a4071acc90012d4d495ce45f5509e8a02169d3cc29d063
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.4/amd64/linux-image-unsigned-6.10.4-061004-generic_6.10.4-061004.202408111201_amd64.deb
-	sha256sums_amd64 = b428eeba2ac44e51417804f7952ce3c9b508afdd2906bdad200189683f8ff23a
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.7/arm64/linux-image-unsigned-6.10.7-061007-generic_6.10.7-061007.202408291638_arm64.deb
+	sha256sums_arm64 = 0e1dc9989db569f7b85f2cf551d22338f75bf517f3dc02bc193739dc49b28525
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.7/amd64/linux-image-unsigned-6.10.7-061007-generic_6.10.7-061007.202408291638_amd64.deb
+	sha256sums_amd64 = 8128495b1ae4dbe76ad73b5b58c3c507eb796252400138c94152058eb9d1616e
 
 pkgname = linux-image-unsigned-stable-deb
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.10.4
+	pkgver = 6.10.7
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	pacdeps = linux-headers-stable-deb
 	pacdeps = linux-headers-generic-stable-deb
@@ -5593,16 +5593,16 @@ pkgbase = linux-modules-deb
 pkgname = linux-modules-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.10.4-061004-generic
-	pkgver = 6.10.4
+	gives = linux-modules-6.10.7-061007-generic
+	pkgver = 6.10.7
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.4/arm64/linux-modules-6.10.4-061004-generic_6.10.4-061004.202408111201_arm64.deb
-	sha256sums_arm64 = e39164a31d6481746084d51f3a490da87301d1303a7338e1af26e9fbb7ca0426
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.4/amd64/linux-modules-6.10.4-061004-generic_6.10.4-061004.202408111201_amd64.deb
-	sha256sums_amd64 = f1c0ed3101946743685c41113cc56988ba75848be2a0bd8f97950f7c05c7e48c
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.7/arm64/linux-modules-6.10.7-061007-generic_6.10.7-061007.202408291638_arm64.deb
+	sha256sums_arm64 = b344c66c096d164401fb53c7d725674af946b0e458e5ca3a1bc524765e5955b1
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.10.7/amd64/linux-modules-6.10.7-061007-generic_6.10.7-061007.202408291638_amd64.deb
+	sha256sums_amd64 = fcad3e000f4161d58f0a49170ab8222416465cebda2390f0fa4004a7e209ef16
 
 pkgname = linux-modules-stable-deb
 ---
@@ -8313,7 +8313,7 @@ pkgbase = resticprofile-bin
 pkgname = resticprofile-bin
 ---
 pkgbase = rhino-core
-	pkgver = 2024.2~RC
+	pkgver = 2024.2
 	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
@@ -8376,7 +8376,7 @@ pkgbase = rhino-neofetch-git
 pkgname = rhino-neofetch-git
 ---
 pkgbase = rhino-pine-core
-	pkgver = 2024.2~RC
+	pkgver = 2024.2
 	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
@@ -8423,7 +8423,7 @@ pkgbase = rhino-plymouth-theme-git
 pkgname = rhino-plymouth-theme-git
 ---
 pkgbase = rhino-server-core
-	pkgver = 2024.2~RC
+	pkgver = 2024.2
 	pkgrel = 1
 	pkgdesc = Transitional package to provide minimal core Rhino Linux software
 	priority = essential
@@ -8523,7 +8523,7 @@ pkgbase = rhino-system-git
 pkgname = rhino-system-git
 ---
 pkgbase = rhino-ubxi-core
-	pkgver = 2024.2~RC
+	pkgver = 2024.2
 	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 	priority = essential
