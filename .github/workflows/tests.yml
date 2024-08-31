@@ -298,10 +298,6 @@ jobs:
     needs: [test-on-ubuntu, test-on-debian]
     if: ${{ always() }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Install GitHub CLI
-        uses: actions/gh-cli@v1
       - name: Update PR Description with CI Status
         run: |
           STATUS_SUMMARY=""
