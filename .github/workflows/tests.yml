@@ -169,13 +169,13 @@ jobs:
               failure) stat="❌" ;;
               cancelled) stat="🚫" ;;
           esac
-          echo "${{ matrix.OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}.txt
+          echo "${{ matrix.OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
       - name: Upload Job Status Artifact
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}
-          path: job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}.txt
+          name: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}
+          path: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
 
   test-on-debian:
     strategy:
@@ -309,13 +309,13 @@ jobs:
               failure) stat="❌" ;;
               cancelled) stat="🚫" ;;
           esac
-          echo "${{ matrix.OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}.txt
+          echo "${{ matrix.OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
       - name: Upload Job Status Artifact
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}
-          path: job-status-${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}.txt
+          name: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}
+          path: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
 
   update-pr:
     runs-on: ubuntu-latest
@@ -329,14 +329,17 @@ jobs:
       - name: Aggregate and Update PR Description
         run: |
           STATUS_SUMMARY=""
-          for FILE in artifacts/*; do
+          for FILE in *.txt; do
             STATUS=$(cat $FILE)
             STATUS_SUMMARY="${STATUS_SUMMARY}\n- ${STATUS}"
           done
           
           PR_DESCRIPTION=$(gh pr view ${{ github.event.pull_request.number }} --json body -q ".body")
+          PR_DESCRIPTION=$(echo "$PR_DESCRIPTION" | sed -e '/### CI Status Summary:/Q')
           
-          UPDATED_DESCRIPTION="${PR_DESCRIPTION}\n\n### CI Status Summary:${STATUS_SUMMARY}"
+          UPDATED_DESCRIPTION="${PR_DESCRIPTION}
+          ### CI Status Summary:
+          ${STATUS_SUMMARY}"
           
           gh pr edit ${{ github.event.pull_request.number }} --body "$UPDATED_DESCRIPTION"
         env:
