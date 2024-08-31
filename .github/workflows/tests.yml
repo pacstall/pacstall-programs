@@ -161,6 +161,9 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
+      - name: Capture Job Status
+        if: ${{ always() }}
+        run: echo "${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}=${{ job.status }}" >> $GITHUB_ENV
 
   test-on-debian:
     strategy:
@@ -286,3 +289,29 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
+      - name: Capture Job Status
+        if: ${{ always() }}
+        run: echo "${{ matrix.OS }}-${{ matrix.PACSTALL_VERSION }}=${{ job.status }}" >> $GITHUB_ENV
+
+  update-pr:
+    runs-on: ubuntu-latest
+    needs: [test-on-ubuntu, test-on-debian]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install GitHub CLI
+        uses: actions/gh-cli@v1
+      - name: Update PR Description with CI Status
+        run: |
+          STATUS_SUMMARY=""
+          while IFS= read -r line; do
+            STATUS_SUMMARY="${STATUS_SUMMARY}\n- ${line}"
+          done < $GITHUB_ENV
+          
+          PR_DESCRIPTION=$(gh pr view ${{ github.event.pull_request.number }} --json body -q ".body")
+          
+          UPDATED_DESCRIPTION="${PR_DESCRIPTION}\n\n### CI Status Summary:${STATUS_SUMMARY}"
+          
+          gh pr edit ${{ github.event.pull_request.number }} --body "$UPDATED_DESCRIPTION"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
