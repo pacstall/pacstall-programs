@@ -41,6 +41,9 @@ jobs:
               - 'packages/*/*.pacscript'
       - id: files
         uses: Ana06/get-changed-files@v2.3.0
+      - name: Sanitize OS Name
+        id: sanitize
+        run: echo "SANITIZED_OS=$(echo ${{ matrix.OS }} | sed 's/:/-/g')" >> $GITHUB_ENV
       - name: Check for Pacscript changes
         run: |
           touch .no-pacscript-changes
@@ -169,13 +172,13 @@ jobs:
               failure) stat="❌" ;;
               cancelled) stat="🚫" ;;
           esac
-          echo "${{ matrix.OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
+          echo "${{ env.SANITIZED_OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}.txt
       - name: Upload Job Status Artifact
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}
-          path: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
+          name: job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}
+          path: job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}.txt
 
   test-on-debian:
     strategy:
@@ -207,6 +210,9 @@ jobs:
               - 'packages/*/*.pacscript'
       - id: files
         uses: Ana06/get-changed-files@v2.3.0
+      - name: Sanitize OS Name
+        id: sanitize
+        run: echo "SANITIZED_OS=$(echo ${{ matrix.OS }} | sed 's/:/-/g')" >> $GITHUB_ENV
       - name: Check for Pacscript changes
         run: |
           touch .no-pacscript-changes
@@ -309,13 +315,13 @@ jobs:
               failure) stat="❌" ;;
               cancelled) stat="🚫" ;;
           esac
-          echo "${{ matrix.OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
+          echo "${{ env.SANITIZED_OS }} (${{ matrix.PACSTALL_VERSION }}): ${stat}" > job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}.txt
       - name: Upload Job Status Artifact
         if: ${{ always() }}
         uses: actions/upload-artifact@v4
         with:
-          name: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}
-          path: job-status-${{ matrix.OS//:/- }}-${{ matrix.PACSTALL_VERSION }}.txt
+          name: job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}
+          path: job-status-${{ env.SANITIZED_OS }}-${{ matrix.PACSTALL_VERSION }}.txt
 
   update-pr:
     runs-on: ubuntu-latest
@@ -328,19 +334,11 @@ jobs:
         uses: actions/download-artifact@v4
       - name: Aggregate and Update PR Description
         run: |
-          STATUS_SUMMARY=""
-          for FILE in *.txt; do
-            STATUS=$(cat $FILE)
-            STATUS_SUMMARY="${STATUS_SUMMARY}\n- ${STATUS}"
-          done
-          
+          STATUS_SUMMARY=$(for FILE in job-status*/*.txt; do cat "$FILE"; done | sed 's/^/- /')
           PR_DESCRIPTION=$(gh pr view ${{ github.event.pull_request.number }} --json body -q ".body")
-          PR_DESCRIPTION=$(echo "$PR_DESCRIPTION" | sed -e '/### CI Status Summary:/Q')
-          
-          UPDATED_DESCRIPTION="${PR_DESCRIPTION}
+          UPDATED_DESCRIPTION="$(echo "$PR_DESCRIPTION" | sed -e '/### CI Status Summary:/Q')
           ### CI Status Summary:
           ${STATUS_SUMMARY}"
-          
           gh pr edit ${{ github.event.pull_request.number }} --body "$UPDATED_DESCRIPTION"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
