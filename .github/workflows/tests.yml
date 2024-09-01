@@ -1,7 +1,5 @@
 name: tests
-permissions:
-  issues: write
-  pull-requests: write
+
 on:
   pull_request: {}
   workflow_dispatch:
@@ -330,6 +328,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: [test-on-ubuntu, test-on-debian]
     if: ${{ always() }}
+    permissions:
+      id-token: write
+      contents: read
+      issues: write
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
