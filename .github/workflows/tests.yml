@@ -1,4 +1,7 @@
 name: tests
+permissions:
+  issues: write
+  pull-requests: write
 on:
   pull_request: {}
   workflow_dispatch:
