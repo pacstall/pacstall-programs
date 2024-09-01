@@ -346,4 +346,4 @@ jobs:
           ${STATUS_SUMMARY}"
           gh pr edit ${{ github.event.pull_request.number }} --body "$UPDATED_DESCRIPTION"
         env:
-          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
