@@ -8,7 +8,7 @@ source=(
   "icon.png::https://raw.githubusercontent.com/an-anime-team/sleepy-launcher/main/assets/images/icon.png"
 )
 sha256sums=(
-  "ab00733635c7534e2a51068e65185f00c0f59c0d4e57ef9da08a55630586447d"
+  "8241e5ccc829b3313023268a8e0c1765dbfb393dcea7bae6d3e723202fc77c38"
   "SKIP"
 )
 depends=("p7zip-full" "webp")
