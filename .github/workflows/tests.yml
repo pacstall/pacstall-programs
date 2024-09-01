@@ -40,7 +40,7 @@ jobs:
             pacscripts:
               - 'packages/*/*.pacscript'
       - id: files
-        uses: masesgroup/retrieve-changed-files@v3
+        uses: Ana06/get-changed-files@v2.3.0
       - name: Check for Pacscript changes
         run: |
           touch .no-pacscript-changes
@@ -191,7 +191,7 @@ jobs:
             pacscripts:
               - 'packages/*/*.pacscript'
       - id: files
-        uses: masesgroup/retrieve-changed-files@v3
+        uses: Ana06/get-changed-files@v2.3.0
       - name: Check for Pacscript changes
         run: |
           touch .no-pacscript-changes
