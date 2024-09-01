@@ -329,7 +329,6 @@ jobs:
     needs: [test-on-ubuntu, test-on-debian]
     if: ${{ always() }}
     permissions:
-      id-token: write
       contents: read
       issues: write
       pull-requests: write
@@ -347,4 +346,4 @@ jobs:
           ${STATUS_SUMMARY}"
           gh pr edit ${{ github.event.pull_request.number }} --body "$UPDATED_DESCRIPTION"
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
