@@ -6313,7 +6313,7 @@ pkgname = mymonero-app
 ---
 pkgbase = nala-deb
 	gives = nala
-	pkgver = 0.15.3
+	pkgver = 0.15.4
 	pkgdesc = Commandline frontend for the apt package manager
 	arch = any
 	breaks = nala
@@ -6321,8 +6321,8 @@ pkgbase = nala-deb
 	breaks = nala-bin
 	breaks = nala-app
 	maintainer = Blake Lee <blake@volian.org>
-	source = https://deb.volian.org/volian/pool/main/n/nala/nala_0.15.3_all.deb
-	sha256sums = dd418082b8da0771633f960fc513bb5bf5b7d1a8242e48446e9fb3ea9564c608
+	source = https://deb.volian.org/volian/pool/main/n/nala/nala_0.15.4_all.deb
+	sha256sums = 1785911d6f6f01eba58c55cb23ab034ed1d7e36a07aab8cf152dfcf84e58617d
 
 pkgname = nala-deb
 ---
