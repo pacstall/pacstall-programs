@@ -1,6 +1,6 @@
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.12.0
+	pkgver = 3.12.1
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	optdepends = mangohud: FPS Hud/GUI
 	optdepends = gamemode: Game Optimizations
@@ -20,7 +20,7 @@ pkgbase = an-anime-game-launcher-bin
 	repology = project: an-anime-game-launcher
 	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.12.0/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = 4b368ac5cc87733dafef64039cf38d00ab9850b78d05ed60d8353f1d135cd51a
+	sha256sums = 270830e6208c9cca58266e83b76393e011d1d5e04049b6b981b154aa32130188
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
