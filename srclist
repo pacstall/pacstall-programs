@@ -6162,6 +6162,38 @@ pkgbase = mint-themes
 
 pkgname = mint-themes
 ---
+pkgbase = mission-center
+	pkgver = 0.5.2
+	pkgdesc = Monitor your CPU, Memory, Disk, Network and GPU usage
+	url = https://gitlab.com/mission-center-devs/mission-center
+	arch = amd64
+	arch = arm64
+	depends = dmidecode
+	depends = libadwaita-1-0
+	makedepends = blueprint-compiler
+	makedepends = cargo
+	makedepends = meson
+	makedepends = gettext
+	makedepends = pkg-config
+	makedepends = python3-pip
+	makedepends = python3-gi
+	makedepends = libdrm-dev
+	makedepends = libudev-dev
+	makedepends = libgbm-dev
+	makedepends = libpango1.0-dev
+	makedepends = libgdk-pixbuf-2.0-dev
+	makedepends = libgtk-4-dev
+	makedepends = libdbus-1-dev
+	makedepends = libadwaita-1-dev
+	checkdepends = appstream-util
+	incompatible = debian:bookworm
+	incompatible = ubuntu:noble
+	license = GPL-3.0-or-later
+	source = https://gitlab.com/mission-center-devs/mission-center/-/archive/v0.5.2/mission-center-v0.5.2.tar.gz
+	sha256sums = 801a1468ee50281ab42a51281e2f80699480f9c0220f976619ae2f7aa21df85a
+
+pkgname = mission-center
+---
 pkgbase = mobile-usb-networking-deb
 	gives = mobile-usb-networking
 	pkgver = 0.0.4
