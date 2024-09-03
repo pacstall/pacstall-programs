@@ -26,7 +26,7 @@ makedepends=(
   "libadwaita-1-dev"
 )
 checkdepends=("appstream-util")
-source=("https://gitlab.com/mission-center-devs/mission-center/-/archive/v${pkgver}/mission-center-v${pkgver}.tar.gz")
+source=("${url}/-/archive/v${pkgver}/mission-center-v${pkgver}.tar.gz")
 sha256sums=("801a1468ee50281ab42a51281e2f80699480f9c0220f976619ae2f7aa21df85a")
 incompatible=(
   "debian:bookworm"
