@@ -30,7 +30,6 @@ depends=("hwdata"
   "libxtst-dev"
   "libxxf86vm-dev"
   "libsdl2-dev"
-  "libwayland-dev"
   "libxcb-ewmh-dev")
 makedepends=("meson"
   "pkg-config"
@@ -46,7 +45,6 @@ makedepends=("meson"
   "libxcb1-dev"
   "libdrm-dev"
   "libvulkan-dev"
-  "libwayland-dev"
   "libpipewire-0.3-dev"
   "wayland-protocols"
   "libxkbcommon-dev"
@@ -60,20 +58,19 @@ makedepends=("meson"
   "libglm-dev"
   "libxmu-dev"
   "libbenchmark-dev"
-  "libwayland-dev"
   "xwayland")
 
 pacdeps=("openvr")
-pacdeps_bookworm=("vkroots-git" "libdisplay-info-git" "xcb-util-errors")
-pacdeps_ubuntu=("xcb-util-errors")
+pacdeps_bookworm=("vkroots-git" "libdisplay-info-git" "xcb-util-errors" "wayland")
+pacdeps_ubuntu=("xcb-util-errors" "wayland")
 
 if [[ ${DISTRO#*:} != "bookworm" ]]; then
   makedepends+=("vkroots-headers" "libdisplay-info-dev")
 fi
 
 if [[ ${DISTRO%:*} != "ubuntu" && ${DISTRO#*:} != "bookworm" ]]; then
-  depends+=("libxcb-errors-dev")
-  makedepends+=("libxcb-errors-dev")
+  depends+=("libxcb-errors-dev" "libwayland-dev")
+  makedepends+=("libxcb-errors-dev" "libwayland-dev")
 fi
 
 source=('git+https://github.com/ValveSoftware/gamescope.git'
