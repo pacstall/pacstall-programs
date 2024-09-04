@@ -3,7 +3,7 @@
 # Credit to the listed maintainers & contributors
 
 pkgname="aseprite"
-pkgver="1.3.7"
+pkgver="1.3.8.1"
 pkgdesc="Animated sprite editor & pixel art tool"
 license=("custom:EULA")
 repology=("project: ${pkgname}")
@@ -16,13 +16,11 @@ source=(
   "${pkgname}-${pkgver}.zip::https://github.com/${pkgname}/${pkgname}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
   "skia-${skiaver}.zip::https://github.com/${pkgname}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
   "https://github.com/${pkgname}/strings.git"
-  "fix-build-with-updater-off.patch::https://github.com/aseprite/aseprite/commit/8fce589.patch"
 )
 sha256sums=(
-  "6524b4dd38adac22f954122846ccca7377983cee2e0f17c1482294cf09cbdcfc"
+  "fc13536a9e14551245028d578493aa63f9978b943250936735dc62a5abfbee53"
   "66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
   "SKIP"
-  "31369a5063d5f7839699fea00235b70057b0f2619592ba1db5af6d12c4f1171c"
 )
 noextract=(
   "${pkgname}-${pkgver}.zip"
@@ -36,9 +34,6 @@ prepare() {
   cd aseprite
   rm -rf data/strings
   mv ../strings data
-
-  # https://github.com/aseprite/aseprite/issues/4486
-  patch -sp1 < ../fix-build-with-updater-off.patch
 }
 
 build() {

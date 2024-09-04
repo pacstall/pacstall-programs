@@ -1,9 +1,9 @@
 pkgname="opensnitch-deb"
-pkgver="1.6.2"
+pkgver="1.6.6"
 source=("https://github.com/evilsocket/opensnitch/releases/download/v${pkgver}/opensnitch_${pkgver}-1_amd64.deb")
 gives="opensnitch"
 pkgdesc="OpenSnitch is a GNU/Linux port of the Little Snitch application firewall"
-sha256sums=("edc9dad5f2e5fbb83c0cdc4a672d74ef3ab8cbfcc30ff1f9e26294cbc9ee0e04")
+sha256sums=("06d876ecd6a91d3a21203d4643caa78b6091b926c63fca3327ddad0f6e94cdac")
 arch=('amd64')
 maintainer=("echometerain <echometer@disroot.org>")
 repology=("project: opensnitch")
