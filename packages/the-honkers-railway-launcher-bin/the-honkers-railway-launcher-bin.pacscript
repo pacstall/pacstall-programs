@@ -11,6 +11,7 @@ sha256sums=(
   "2c807852f87dafe24681d55972db2c3e08e8da65ed29a1b08175ca60ce56909c"
   "SKIP"
 )
+depends=("git""p7zip-full" "webp")
 maintainer=("vbrabandt2005 <vbrabandt@proton.me>")
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
