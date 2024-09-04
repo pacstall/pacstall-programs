@@ -1721,7 +1721,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.66
+	pkgver = 0.0.67
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1731,8 +1731,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@github.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.66/discord-0.0.66.deb
-	sha256sums = ea2df18fc1481b872cced367da84308bc241a6b08f39cfe8b42c2835147aedaf
+	source = https://dl.discordapp.net/apps/linux/0.0.67/discord-0.0.67.deb
+	sha256sums = aa4cc63dbe6a56ed503a1e8d163aba2ff80813c81b728004f3b3a49897d92001
 
 pkgname = discord-deb
 ---
