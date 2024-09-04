@@ -10836,6 +10836,7 @@ pkgbase = wayland
 	makedepends = graphviz
 	makedepends = docbook-xsl
 	makedepends = libffi-dev
+	makedepends = libffi8
 	makedepends = libexpat1-dev
 	makedepends = libxml2-dev
 	makedepends = cmake
