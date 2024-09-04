@@ -10,6 +10,7 @@ depends=('libglib2.0-0' 'libffi8' 'libexpat1' 'libxml2')
 makedepends=('meson' 'libxslt1-dev' 'doxygen' 'xmlto' 'graphviz' 'docbook-xsl' 'libffi-dev' 'libexpat1-dev' 'libxml2-dev' 'cmake' 'pkg-config')
 provides=(libwayland-client0 libwayland-egl1 libwayland-server0 libwayland-cursor0 libwayland-dev libwayland-egl-backend-dev libwayland-doc libwayland-bin)
 replaces=("${depends[@]}")
+breaks=("${depends[@]}")
 
 maintainer=("xdavius <xdavius@github.com>")
 
