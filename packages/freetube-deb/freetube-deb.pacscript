@@ -1,8 +1,9 @@
 pkgname="freetube-deb"
 gives="freetube"
-pkgver="0.21.1"
+pkgver="0.21.3"
 source=("https://github.com/FreeTubeApp/FreeTube/releases/download/v${pkgver}-beta/${gives}_${pkgver}_amd64.deb")
 pkgdesc="An Open Source YouTube app for privacy."
 repology=("project: freetube")
-sha256sums=("ea2264b9458f9911e3a5000038a09a808b8e872e5df19a36201e319cf3ca3b53")
+sha256sums=("bf8649c7b384cd50178d6c887371472916bfdacb9971e939c35ddbe4ab3adc08")
 arch=('amd64')
+maintainer=("Zahrun <Zahrun@github.com>")

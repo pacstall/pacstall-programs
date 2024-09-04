@@ -1,7 +1,7 @@
 pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="4"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
   "vala-panel-appmenu" "appmenu-gtk2-module" "appmenu-gtk3-module" "xfce4-power-manager"
   "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol"
@@ -10,7 +10,7 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "val
   "xserver-xorg-video-fbdev" "light-locker" "light-locker-settings" "tumbler" "tumbler-plugins-extra"
   "ffmpegthumbnailer" "bluez-firmware" "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics"
   "ukui-touchpadserver" "pipewire-audio" "bluetooth" "libxfce4ui-utils" "at-spi2-core" "alsa-ucm-conf")
-pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin" "adw-gtk-theme")
+pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin" "adw-gtk-theme" "rhino-xfwm4-theme-git" "appmenu-registrar-backport")
 gives="unicorn-desktop"
 replaces=("unicorn-mobile" "unicorn-mobile-git")
 priority="required"
@@ -103,12 +103,20 @@ post_install() {
     printf ".-vala-panel-appmenu-core > * {\n    min-width: 1430px;\n}\n" | tee -a "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" > /dev/null
   fi
   sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/gtk-3.0"
-  echo "============================================================================="
-  echo "Unicorn Desktop Post-Install Information"
-  echo ""
-  echo "If your GTK3 theme is still Yaru-purple-dark, please run the following to switch to our new theme:"
-  echo "gsettings set org.gnome.desktop.interface gtk-theme Adw-dark"
-  echo ""
-  echo "NOTE: You may need to run this after logging out and back in again."
-  echo "============================================================================="
+  echo '============================================================================='
+  echo 'Unicorn Desktop Post-Install Information'
+  echo ''
+  echo 'If your GTK3 theme is still Yaru-purple, please run the following to switch to our new theme:'
+  echo ''
+  echo '```'
+  echo 'for i in "gtk-3.0" "gtk-4.0" "Kvantum"; do'
+  # shellcheck disable=SC2016
+  echo '  cp -r /etc/skel/.config/"${i}" ~/.config'
+  echo 'done'
+  echo 'xfconf-query -c xsettings -p /Net/ThemeName -s Adw-dark'
+  echo 'xfconf-query -c xfwm4 -p /general/theme -s Adw-dark'
+  echo 'gsettings set org.gnome.desktop.interface gtk-theme Adw-dark'
+  echo '```'
+  echo ''
+  echo '============================================================================='
 }

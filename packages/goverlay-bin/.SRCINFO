@@ -1,6 +1,6 @@
 pkgbase = goverlay-bin
 	gives = goverlay
-	pkgver = 1.1.1
+	pkgver = 1.2.0
 	pkgdesc = Graphical UI to help manage Linux overlays
 	depends = mangohud
 	depends = qt6ct
@@ -9,9 +9,9 @@ pkgbase = goverlay-bin
 	replaces = goverlay
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: goverlay
-	source = https://github.com/benjamimgois/goverlay/releases/download/1.1.1/goverlay_1_1_1.tar.xz
+	source = https://github.com/benjamimgois/goverlay/releases/download/1.2/goverlay.tar.xz
 	source = https://raw.githubusercontent.com/benjamimgois/goverlay/master/data/icons/128x128/goverlay.png
-	sha256sums = 33dc0c6d8276308fd91102d622f44146237e800838cb500ec5dd222b10c83519
+	sha256sums = 6b2f33564ec14b70c4dc6905084d8d3657013e8050e27345e1aad7b485fb97b0
 	sha256sums = SKIP
 
 pkgname = goverlay-bin

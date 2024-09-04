@@ -1,5 +1,5 @@
 pkgbase = rhino-server-core
-	pkgver = 2024.1
+	pkgver = 2024.2
 	pkgrel = 1
 	pkgdesc = Transitional package to provide minimal core Rhino Linux software
 	priority = essential
