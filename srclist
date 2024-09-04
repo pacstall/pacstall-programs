@@ -8907,33 +8907,6 @@ pkgbase = sleek-deb
 
 pkgname = sleek-deb
 ---
-pkgbase = sleepy-launcher-bin
-	gives = sleepy-launcher
-	pkgver = 1.2.1
-	pkgdesc = Sleepy game launcher for Linux with telemetry disabling
-	depends = p7zip-full
-	depends = webp
-	optdepends = mangohud: FPS Hud/GUI
-	optdepends = gamemode: Game Optimizations
-	breaks = sleepy-launcher
-	breaks = sleepy-launcher-deb
-	breaks = sleepy-launcher-app
-	breaks = sleepy-launcher-git
-	incompatible = ubuntu:bionic
-	incompatible = ubuntu:focal
-	incompatible = ubuntu:jammy
-	incompatible = ubuntu:kinetic
-	incompatible = debian:stretch
-	incompatible = debian:buster
-	incompatible = debian:bullseye
-	maintainer = vbrabandt2005 <vbrabandt@proton.me>
-	repology = project: sleepy-launcher
-	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.2.1/sleepy-launcher
-	source = icon.png::https://raw.githubusercontent.com/an-anime-team/sleepy-launcher/main/assets/images/icon.png
-	sha256sums = dfec8314a9bb56159d28ff20cac21d870d85caf96007cf8941eb421f5669c611
-	sha256sums = SKIP
-
-pkgname = sleepy-launcher-bin
 ---
 pkgbase = slop-git
 	gives = slop
