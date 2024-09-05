@@ -251,6 +251,7 @@ lbry-deb
 lemonbar-xft-git
 lens
 lf-bin
+lib32-rust-bin
 libcamera-git
 libcutefish-git
 libdisplay-info-git

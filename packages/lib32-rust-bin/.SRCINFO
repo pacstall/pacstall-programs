@@ -1,0 +1,15 @@
+pkgbase = lib32-rust-bin
+	gives = lib32-rust
+	pkgver = 1.80.1
+	pkgdesc = Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety
+	url = https://www.rust-lang.org/
+	arch = x86_64
+	arch = aarch64
+	replaces = libstd-rust-dev:i386
+	provides = libstd-rust-dev:i386
+	maintainer = xdavius <xdavius@github.com>
+	repology = project: rust
+	source = https://static.rust-lang.org/dist/rust-1.80.1-i686-unknown-linux-gnu.tar.xz
+	sha256sums = 9af695dd4eacb397c2169abdfae35c6342f210d04632571d5faf924fa2cc6d39
+
+pkgname = lib32-rust-bin
