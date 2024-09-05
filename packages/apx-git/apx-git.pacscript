@@ -1,7 +1,7 @@
 pkgname="apx-git"
 gives="apx"
 source=("https://github.com/Vanilla-OS/apx.git")
-pkgver="2.4.0"
+pkgver="2.4.3"
 makedepends=("golang-go")
 pacdeps=("distrobox")
 breaks=("${gives}")
