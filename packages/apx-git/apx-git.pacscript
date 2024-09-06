@@ -7,6 +7,7 @@ pacdeps=("distrobox")
 breaks=("${gives}")
 pkgdesc="Package manager meant to be simple to use, but also powerful with support to installing packages from multiple sources without altering the root filesystem"
 maintainer=("Zahrun <Zahrun@github.com>")
+external_connection=true
 incompatible=("debian:bullseye")
 
 prepare() {
