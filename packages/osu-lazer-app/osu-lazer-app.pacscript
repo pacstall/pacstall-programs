@@ -1,6 +1,6 @@
 pkgname="osu-lazer-app"
 arch=("amd64")
-pkgver="2024.817.0"
+pkgver="2024.906.1"
 pkgdesc="The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew."
 url="https://osu.ppy.sh"
 license=("MIT" "CC-BY-NC-4.0")
@@ -15,7 +15,7 @@ source=(
   "osu-lazer.desktop::https://aur.archlinux.org/cgit/aur.git/plain/osu-lazer.desktop?h=osu-lazer-bin"
 )
 sha256sums=(
-  "02bb83d17a09266dfe2d0f961f60aa29bfbb4bf5631ba62675686c1f9977fee3"
+  "3a656f53458b2d60bb3942db761d7a8fcc0cbf33538d2c7363ba7da57f43d3a5"
   "30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51"
   "baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957"
   "e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e"
