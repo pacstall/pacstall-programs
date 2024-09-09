@@ -8648,6 +8648,7 @@ pkgbase = rust-bindgen-git
 	arch = i686
 	arch = x86_64
 	depends = clang
+	pacdeps = rust-bin
 	maintainer = davius <xdavius@github.com
 	source = https://github.com/rust-lang-nursery/rust-bindgen.git
 	sha512sums = SKIP
