@@ -22,7 +22,7 @@ source=("git+https://github.com/mesonbuild/meson"
   "native-clang")
 sha256sums=("SKIP"
   "eb944e481d3299bf9c3c79835697215885a32e0fc1f9c86e2b0699cdc4ee849e"
-  "cf9b587396d14374acb0bb7715f2f41243d3a2c7a9ffd3c78c4d009fd13a62ae"
+  "ba2be3874b2a30901741363cbdf412b85da9fd333cadaff19fdd9c6d276ec555"
   "b1c9b9e5d39f540ac1038a83e5716622d8e111b70be400a9a7c9561503ae03ac")
 maintainer=("xdavius <xdavius@github.com>")
 
