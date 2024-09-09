@@ -14,9 +14,11 @@ makedepends=(
   "libx11-dev:i386" "libxnvctrl-dev:i386" "libdbus-1-dev:i386"
   "libwayland-dev:i386" "libxkbcommon-dev:i386" "libc6-dev-i386" "libgcc-12-dev:i386"
 )
+incompatible=('debian:bullseye')
+provides=("mangohud:i386")
+arch=("amd64")
 pkgdesc="A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more"
 sha256sums=("67d2425c0cc634574d8bd8a924e0e1a2e909b47ed9b8c02029b5baffe46657fc")
-incompatible=('debian:bullseye')
 maintainer=("xdavius <xdavius@github.com>")
 external_connection=true
 
