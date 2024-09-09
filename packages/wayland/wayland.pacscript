@@ -8,7 +8,7 @@ url='https://wayland.freedesktop.org/'
 source=("https://gitlab.freedesktop.org/wayland/wayland/-/releases/${pkgver}/downloads/wayland-${pkgver}.tar.xz")
 sha256sums=('05b3e1574d3e67626b5974f862f36b5b427c7ceeb965cb36a4e6c2d342e45ab2')
 depends=('libglib2.0-0' 'libffi8' 'libexpat1' 'libxml2' 'libgnutls30')
-makedepends=('meson' 'libxslt1-dev' 'doxygen' 'xmlto' 'graphviz' 'docbook-xsl')
+makedepends=('meson' 'libxslt1-dev' 'doxygen' 'xmlto' 'graphviz' 'docbook-xsl' 'libffi-dev' 'libexpat-dev' 'libxml2-dev')
 provides=(libwayland-client0="${pkgver}"
   libwayland-egl1="${pkgver}"
   libwayland-server0="${pkgver}"
