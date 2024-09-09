@@ -8640,6 +8640,20 @@ pkgbase = rstudio-deb
 
 pkgname = rstudio-deb
 ---
+pkgbase = rust-bindgen-git
+	gives = bindgen
+	pkgver = 0.70.1
+	pkgdesc = Binding generator for rust language
+	url = https://github.com/rust-lang-nursery/rust-bindgen
+	arch = i686
+	arch = x86_64
+	depends = clang
+	maintainer = davius <xdavius@github.com
+	source = https://github.com/rust-lang-nursery/rust-bindgen.git
+	sha512sums = SKIP
+
+pkgname = rust-bindgen-git
+---
 pkgbase = rust-motd-deb
 	gives = rust-motd
 	pkgver = 1.0.1
