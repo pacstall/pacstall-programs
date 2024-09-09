@@ -21,9 +21,9 @@ source=("git+https://github.com/mesonbuild/meson"
   "cross-lib32"
   "native-clang")
 sha256sums=("SKIP"
-  "068e89ba65b42b852f9760a518c2a5bcda0ff261e5eb3f2b058f721908f10821"
-  "2458de83270d35bc9c5104a622c595030305c9093e74cbd415a91754db2228c9"
-  "a1fa7d0c3113776337a7e875a35d7cf625000d98024ad4537af23f719c50bfa4")
+  "eb944e481d3299bf9c3c79835697215885a32e0fc1f9c86e2b0699cdc4ee849e"
+  "cf9b587396d14374acb0bb7715f2f41243d3a2c7a9ffd3c78c4d009fd13a62ae"
+  "b1c9b9e5d39f540ac1038a83e5716622d8e111b70be400a9a7c9561503ae03ac")
 maintainer=("xdavius <xdavius@github.com>")
 
 package() {

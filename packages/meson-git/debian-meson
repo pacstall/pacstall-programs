@@ -3,11 +3,11 @@
 
 exec meson setup \
   --prefix        /usr \
-  --libexecdir    lib/x86_64-linux-gnu \
-  --sbindir       sbin \
+  --libexecdir    /usr/lib/x86_64-linux-gnu \
+  --sbindir       /usr/sbin \
   --buildtype     plain \
   --auto-features enabled \
-  --wrap-mode     nodownload \
+  --wrap-mode     forcefallback \
   -D              b_pie=true \
   -D              python.bytecompile=1 \
   "$@"
