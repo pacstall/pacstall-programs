@@ -1,7 +1,6 @@
 pkgname=wayland
 gives="wayland"
 pkgver=1.23.0
-pkgrel=1
 pkgdesc='A computer display server protocol'
 arch=('x86_64' 'i686')
 url='https://wayland.freedesktop.org/'
