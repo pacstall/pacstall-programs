@@ -42,7 +42,7 @@ prepare() {
 
 build() {
   cd "${pkgname}-v${pkgver}"
-  CFLAGS+=" -ffat-lto-objects"
+  export CFLAGS="$CFLAGS -ffat-lto-objects"
   export RUSTUP_TOOLCHAIN=stable
 
   meson setup build -Dbuildtype=release
