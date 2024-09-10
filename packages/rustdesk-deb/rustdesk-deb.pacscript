@@ -1,7 +1,7 @@
 pkgname="rustdesk-deb"
 gives="rustdesk"
 repology=("project: ${gives}")
-pkgver="1.2.6"
+pkgver="1.3.0"
 arch=('amd64' 'arm64' 'armhf')
 depends=(
   "libgtk-3-0" "libxcb-randr0" "libxdo3" "libxfixes3" "libxcb-shape0" "libxcb-xfixes0"
@@ -11,12 +11,13 @@ depends=(
 source_amd64=("https://github.com/rustdesk/rustdesk/releases/download/${pkgver}/${gives}-${pkgver}-x86_64.deb")
 source_arm64=("https://github.com/rustdesk/rustdesk/releases/download/${pkgver}/${gives}-${pkgver}-aarch64.deb")
 source_armhf=("https://github.com/rustdesk/rustdesk/releases/download/${pkgver}/${gives}-${pkgver}-armv7-sciter.deb")
-sha256sums_amd64=("9e8d39f26d5689564d1fb0ac65119acf6a9956bee705792663d76f91451387d2")
-sha256sums_arm64=("48080e34cbad332f14d6aee8f36c01d78b99f2ebcc9d74b6f1b99d4c4ef37733")
-sha256sums_armhf=("c29c9a9b1b037b61d46168500c333bf9cb2c15be501aefbde5bffd7d8a9d99e3")
+sha256sums_amd64=("8d77d7c708ba907e099ecffe19dc24ae907e33753e2e7472d45a11b47af9585e")
+sha256sums_arm64=("03050ec5ceef88b4b76c14401167a4b813afdd53119d40eea339c838d3c356e2")
+sha256sums_armhf=("e1f90cbe5536bd9abd92c943f6c6043c0af4aeef5349314b584f14ba841d8109")
 conflicts=("${pkgname}" "${gives}")
 replaces=("${conflicts[@]}")
 pkgdesc="Yet another remote desktop software, written in Rust"
 maintainer=("xdavius <xdavius@github.com>")
+maintainer=("medaey <medaey@github.com>")
 
 # vim:set ft=sh ts=2 sw=2 et:
