@@ -3740,6 +3740,33 @@ pkgbase = grub-btrfs
 
 pkgname = grub-btrfs
 ---
+pkgbase = grub-customizer-git
+	gives = grub-customizer
+	pkgver = 5.25
+	pkgdesc = A graphical grub2 settings manager (git version)
+	url = https://git.launchpad.net/grub-customizer
+	arch = amd64
+	depends = libgtkmm-3.0-dev
+	depends = libssl-dev
+	makedepends = libgtkmm-3.0-dev
+	makedepends = libssl-dev
+	makedepends = libcairomm-1.0-dev
+	makedepends = cmake
+	makedepends = libglib2.0-dev
+	makedepends = libglibmm-2.4-dev
+	makedepends = libgtk-3-dev
+	makedepends = libarchive-dev
+	makedepends = libsigc++-3.0-dev
+	makedepends = libpangomm-1.4-dev
+	makedepends = gettext
+	pacdeps = hwinfo-git
+	replaces = grub-customizer
+	maintainer = xdavius <xdavius@github.com>
+	source = git+https://git.launchpad.net/grub-customizer
+	sha256sums = SKIP
+
+pkgname = grub-customizer-git
+---
 pkgbase = gtkhash
 	pkgver = 1.4
 	pkgdesc = gtkhash is a desktop utility for computing message digests or checksums.
@@ -6319,7 +6346,7 @@ pkgname = mymonero-app
 ---
 pkgbase = nala-deb
 	gives = nala
-	pkgver = 0.15.3
+	pkgver = 0.15.4
 	pkgdesc = Commandline frontend for the apt package manager
 	arch = any
 	breaks = nala
@@ -6327,8 +6354,8 @@ pkgbase = nala-deb
 	breaks = nala-bin
 	breaks = nala-app
 	maintainer = Blake Lee <blake@volian.org>
-	source = https://deb.volian.org/volian/pool/main/n/nala/nala_0.15.3_all.deb
-	sha256sums = dd418082b8da0771633f960fc513bb5bf5b7d1a8242e48446e9fb3ea9564c608
+	source = https://deb.volian.org/volian/pool/main/n/nala/nala_0.15.4_all.deb
+	sha256sums = 1785911d6f6f01eba58c55cb23ab034ed1d7e36a07aab8cf152dfcf84e58617d
 
 pkgname = nala-deb
 ---
@@ -8645,6 +8672,52 @@ pkgbase = rstudio-deb
 	sha256sums = 1d0bd2f54215f514a8a78a4d035c7804218bb8fafa417aa5083d341e174e6452
 
 pkgname = rstudio-deb
+---
+pkgbase = rust-bin
+	gives = rust
+	pkgver = 1.80.1
+	pkgdesc = Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety
+	url = https://www.rust-lang.org/
+	arch = x86_64
+	arch = aarch64
+	replaces = rustc
+	replaces = libstd-rust-1.80
+	replaces = libstd-rust-dev
+	replaces = libstd-rust-dev-windows
+	replaces = libstd-rust-dev-wasm32
+	replaces = rust-gdb
+	replaces = rust-lldb
+	replaces = rust-llvm
+	replaces = rust-doc
+	replaces = rust-src
+	replaces = rust-clippy
+	replaces = rustfmt
+	replaces = rust-all
+	replaces = cargo
+	replaces = cargo-doc
+	provides = rustc
+	provides = libstd-rust-1.80
+	provides = libstd-rust-dev
+	provides = libstd-rust-dev-windows
+	provides = libstd-rust-dev-wasm32
+	provides = rust-gdb
+	provides = rust-lldb
+	provides = rust-llvm
+	provides = rust-doc
+	provides = rust-src
+	provides = rust-clippy
+	provides = rustfmt
+	provides = rust-all
+	provides = cargo
+	provides = cargo-doc
+	maintainer = xdavius <xdavius@github.com>
+	repology = project: rust
+	source_x86_64 = https://static.rust-lang.org/dist/rust-1.80.1-x86_64-unknown-linux-gnu.tar.xz
+	sha256sums_x86_64 = 85e936d5d36970afb80756fa122edcc99bd72a88155f6bdd514f5d27e778e00a
+	source_aarch64 = https://static.rust-lang.org/dist/rust-1.80.1-aarch64-unknown-linux-gnu.tar.xz
+	sha256sums_aarch64 = 2e89bad7857711a1c11d017ea28fbfeec54076317763901194f8f5decbac1850
+
+pkgname = rust-bin
 ---
 pkgbase = rust-motd-deb
 	gives = rust-motd
