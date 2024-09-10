@@ -8647,6 +8647,7 @@ pkgbase = rust-bin
 	url = https://www.rust-lang.org/
 	arch = x86_64
 	arch = aarch64
+	arch = i686
 	replaces = rustc
 	replaces = libstd-rust-1.80
 	replaces = libstd-rust-dev
@@ -8683,6 +8684,8 @@ pkgbase = rust-bin
 	sha256sums_x86_64 = 85e936d5d36970afb80756fa122edcc99bd72a88155f6bdd514f5d27e778e00a
 	source_aarch64 = https://static.rust-lang.org/dist/rust-1.80.1-aarch64-unknown-linux-gnu.tar.xz
 	sha256sums_aarch64 = 2e89bad7857711a1c11d017ea28fbfeec54076317763901194f8f5decbac1850
+	source_i686 = https://static.rust-lang.org/dist/rust-1.80.1-i686-unknown-linux-gnu.tar.xz
+	sha256sums_i686 = 9af695dd4eacb397c2169abdfae35c6342f210d04632571d5faf924fa2cc6d39
 
 pkgname = rust-bin
 ---
