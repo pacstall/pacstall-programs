@@ -1,0 +1,26 @@
+pkgbase = grub-customizer-git
+	gives = grub-customizer
+	pkgver = 5.25
+	pkgdesc = A graphical grub2 settings manager (git version)
+	url = https://git.launchpad.net/grub-customizer
+	arch = amd64
+	depends = libgtkmm-3.0-dev
+	depends = libssl-dev
+	makedepends = libgtkmm-3.0-dev
+	makedepends = libssl-dev
+	makedepends = libcairomm-1.0-dev
+	makedepends = cmake
+	makedepends = libglib2.0-dev
+	makedepends = libglibmm-2.4-dev
+	makedepends = libgtk-3-dev
+	makedepends = libarchive-dev
+	makedepends = libsigc++-3.0-dev
+	makedepends = libpangomm-1.4-dev
+	makedepends = gettext
+	pacdeps = hwinfo-git
+	replaces = grub-customizer
+	maintainer = xdavius <xdavius@github.com>
+	source = git+https://git.launchpad.net/grub-customizer
+	sha256sums = SKIP
+
+pkgname = grub-customizer-git
