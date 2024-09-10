@@ -11,8 +11,8 @@ pkgbase = osu-lazer-app
 	license = CC-BY-NC-4.0
 	source = osu-lazer-app-2024.906.1.AppImage::https://github.com/ppy/osu/releases/download/2024.906.1/osu.AppImage
 	source = icon.png::https://aur.archlinux.org/cgit/aur.git/plain/icon.png?h=osu-lazer-bin
-	source = osu-lazer::https://aur.archlinux.org/cgit/aur.git/plain/osu-lazer?h=osu-lazer-bin
-	source = osu-lazer.desktop::https://aur.archlinux.org/cgit/aur.git/plain/osu-lazer.desktop?h=osu-lazer-bin
+	source = osu-lazer
+	source = osu-lazer.desktop
 	sha256sums = 3a656f53458b2d60bb3942db761d7a8fcc0cbf33538d2c7363ba7da57f43d3a5
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957
