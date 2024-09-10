@@ -1,0 +1,21 @@
+[binaries]
+c = ['gcc', '-m32']
+cpp = ['g++', '-m32']
+rust = ['rustc', '--target', 'i686-unknown-linux-gnu']
+pkgconfig = 'i686-linux-gnu-pkg-config'
+cups-config = 'cups-config'
+cmake = 'cmake'
+strip = 'strip'
+#llvm-config = 'llvm-config-15'
+#clang = 'clang-15'
+
+[built-in options]
+libdir = 'lib/i386-linux-gnu'
+
+[host_machine]
+system = 'linux'
+subsystem = 'linux'
+kernel = 'linux'
+cpu_family = 'x86'
+cpu = 'i686'
+endian = 'little'
