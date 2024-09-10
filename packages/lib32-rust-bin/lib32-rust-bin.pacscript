@@ -20,5 +20,5 @@ package() {
   rm -fr "${pkgdir}"/usr/etc
   rm -fr "${pkgdir}"/usr/libexec
   rm -fr "${pkgdir}"/usr/lib/rustlib/etc
-  rm -f "${pkgdir}"/usr/lib/rustlib/* || true
+  rm -f "${pkgdir}"/usr/lib/rustlib/* 2> /dev/null || true
 }
