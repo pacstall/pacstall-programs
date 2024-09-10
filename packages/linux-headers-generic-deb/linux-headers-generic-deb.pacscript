@@ -1,10 +1,10 @@
 pkgname="linux-headers-generic-deb"
-gives="linux-headers-6.10.0-061000rc2-generic"
-pkgver="6.10~rc2"
-buildver="6.10.0-061000rc2.202406022333"
+gives="linux-headers-6.11.0-061100rc7-generic"
+pkgver="6.11~rc7"
+buildver="6.11.0-061100rc7.202409082235"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("b3a0fad3fdea63bf1ca647cdac0c12704e42777bba02f3ba4f6e8cb9bb7504c0")
-sha256sums_amd64=("488792295d82d95d269a432a85a97838efed32b7fd5d50b8d1deb6cb49415089")
+sha256sums_arm64=("93a6823f34980593c95a4f74bc165d8d7d80f635f5ff78e9d3d51998506010e2")
+sha256sums_amd64=("d8d849939793acc0d19d4be74dfa9d5c6c57791ff61ccad8db5588e8a2fc8274")
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Ubuntu Linux mainline kernel (Generic headers)"
 pacdeps=("linux-headers-deb")

@@ -1,27 +1,39 @@
 pkgname="grub-customizer-git"
 gives="grub-customizer"
-source=("git+https://git.launchpad.net/${gives}")
-pkgver="5.0.6"
-makedepends=("cmake" "g++" "libgtkmm-3.0-dev" "gettext" "libssl-dev" "libarchive-dev" "hwinfo")
-breaks=("${gives}-deb")
-pkgdesc="Grub Customizer is a graphical interface to configure the GRUB2/BURG settings and menuentries"
-maintainer=("ObsidianPresidium <emil@aarestrup.nu>")
+pkgver="5.25"
+pkgdesc="A graphical grub2 settings manager (git version)"
+arch=('amd64')
+url='https://git.launchpad.net/grub-customizer'
+depends=("libgtkmm-3.0-dev" "libssl-dev")
+makedepends=("libgtkmm-3.0-dev"
+  "libssl-dev"
+  "libcairomm-1.0-dev"
+  "cmake"
+  "libglib2.0-dev"
+  "libglibmm-2.4-dev"
+  "libgtk-3-dev"
+  "libarchive-dev"
+  "libsigc++-3.0-dev"
+  "libpangomm-1.4-dev"
+  "gettext")
+pacdeps=("hwinfo-git")
+replaces=("${gives}")
+source=("git+https://git.launchpad.net/grub-customizer")
+sha256sums=('SKIP')
+maintainer=("xdavius <xdavius@github.com>")
 
 build() {
-  cd "${_archive}"
-  cmake .
-  make -j"${NCPU}"
+  cd "${srcdir}/${gives}"
+  cmake -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=None \
+    -Wno-dev \
+    -B build
+  make VERBOSE=1 -C build -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
-  install -Dm755 "./grub-customizer" "${pkgdir}/usr/bin/grub-customizer"
-  install -Dm755 "./misc/grub-customizer.desktop" "${pkgdir}/usr/share/applications/grub-customizer.desktop"
-  install -Dm644 "./misc/manpage.gz" "${pkgdir}/usr/share/man/man1/grub-customizer.1.gz"
-  install -Dm644 "./misc/icons/16x16.svg" "${pkgdir}/usr/share/icons/hicolor/16x16/apps/grub-customizer.svg"
-  install -Dm644 "./misc/icons/24x24.svg" "${pkgdir}/usr/share/icons/hicolor/24x24/apps/grub-customizer.svg"
-  install -Dm644 "./misc/icons/32x32.svg" "${pkgdir}/usr/share/icons/hicolor/32x32/apps/grub-customizer.svg"
-  install -Dm644 "./misc/icons/48x48.svg" "${pkgdir}/usr/share/icons/hicolor/48x48/apps/grub-customizer.svg"
-  install -Dm644 "./misc/icons/64x64.svg" "${pkgdir}/usr/share/icons/hicolor/64x64/apps/grub-customizer.svg"
-  install -Dm644 "./misc/icons/128x128.svg" "${pkgdir}/usr/share/icons/hicolor/128x128/apps/grub-customizer.svg"
+  cd "${srcdir}/${gives}"
+  make install DESTDIR="${pkgdir}" -C "${srcdir}/${gives}/build"
+  # additional documentation
+  install -vDm 644 "${srcdir}/${gives}"/{changelog,README} -t "${pkgdir}/usr/share/doc/${pkgname}/"
 }

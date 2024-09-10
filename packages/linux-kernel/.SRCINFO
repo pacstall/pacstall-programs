@@ -1,5 +1,5 @@
 pkgbase = linux-kernel
-	pkgver = 6.10~rc2
+	pkgver = 6.11~rc7
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	pacdeps = linux-headers-deb
 	pacdeps = linux-headers-generic-deb

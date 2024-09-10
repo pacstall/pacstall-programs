@@ -13,6 +13,7 @@ anydesk-bin
 anydesk-deb
 anytype-deb
 appimagelauncher-deb
+appmenu-registrar-backport
 apptainer-deb
 apptainer-suid-deb
 apx-git
@@ -253,6 +254,7 @@ lens
 lf-bin
 libcamera-git
 libcutefish-git
+libdisplay-info-git
 libdrm
 libeditline-troglobit
 libfdk-aac1-deb
@@ -406,6 +408,7 @@ prettier
 prismlauncher-git
 proton-python-client
 protonmail-bridge-deb
+protonplus
 protonup-qt-app
 protonvpn-cli
 protonvpn-gui
@@ -447,12 +450,14 @@ rhino-setup-bin
 rhino-setup-git
 rhino-system-git
 rhino-ubxi-core
+rhino-xfwm4-theme-git
 rio-wayland-deb
 rio-x11-deb
 rosary-deb
 rpcs3-app
 rsbbi-git
 rstudio-deb
+rust-bin
 rust-motd-deb
 rustdesk-deb
 schildichat-deb
@@ -468,6 +473,7 @@ signal-desktop-beta-deb
 signal-desktop-deb
 simplex-desktop-app
 slack-deb
+sleek-deb
 sleepy-launcher-bin
 slop-git
 smartgit
@@ -560,6 +566,7 @@ warp
 warpinator-deb
 watchexec-bin
 wavey-launcher-bin
+wayland
 waynergy
 webapp-manager
 webapp-manager-deb
