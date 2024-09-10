@@ -192,6 +192,7 @@ grapejuice-git
 grive2
 grive2-git
 grub-btrfs
+grub-customizer-git
 gtkhash
 hakuneko-deb
 hamclock
@@ -456,7 +457,6 @@ rosary-deb
 rpcs3-app
 rsbbi-git
 rstudio-deb
-rust-bindgen-git
 rust-motd-deb
 rustdesk-deb
 schildichat-deb
@@ -565,6 +565,7 @@ warp
 warpinator-deb
 watchexec-bin
 wavey-launcher-bin
+wayland
 waynergy
 webapp-manager
 webapp-manager-deb
