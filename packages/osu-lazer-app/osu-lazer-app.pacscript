@@ -11,8 +11,8 @@ source=(
   "${pkgname}-${pkgver}.AppImage::https://github.com/ppy/osu/releases/download/${pkgver}/osu.AppImage"
   # Gotta use files from AUR until this pacscript pushed
   "icon.png::https://aur.archlinux.org/cgit/aur.git/plain/icon.png?h=osu-lazer-bin"
-  "osu-lazer::https://aur.archlinux.org/cgit/aur.git/plain/osu-lazer?h=osu-lazer-bin"
-  "osu-lazer.desktop::https://aur.archlinux.org/cgit/aur.git/plain/osu-lazer.desktop?h=osu-lazer-bin"
+  "osu-lazer"
+  "osu-lazer.desktop"
 )
 sha256sums=(
   "3a656f53458b2d60bb3942db761d7a8fcc0cbf33538d2c7363ba7da57f43d3a5"
