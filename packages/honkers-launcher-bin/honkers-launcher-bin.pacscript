@@ -1,6 +1,6 @@
 pkgname="honkers-launcher-bin"
 gives="honkers-launcher"
-pkgver="1.7.1"
+pkgver="1.8.1"
 pkgdesc="Launcher for a honkers game with auto-patching, discord rpc and time tracking"
 repology=("project: honkers-launcher")
 source=(
@@ -8,9 +8,10 @@ source=(
   "icon.png::https://raw.githubusercontent.com/an-anime-team/honkers-launcher/main/assets/images/icon.png"
 )
 sha256sums=(
-  "51c34b6b57bbe777e380536be12926126c67dd31a0063ca81bd1d2bf453ee016"
+  "c61265aba17db48d4cee79c0b059a47440c56a3a2604a6cd0d88b86b8d2563b9"
   "SKIP"
 )
+depends=("git" "p7zip-full" "webp")
 maintainer=("vbrabandt2005 <vbrabandt@proton.me>")
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
