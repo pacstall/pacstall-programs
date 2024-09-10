@@ -457,6 +457,8 @@ rosary-deb
 rpcs3-app
 rsbbi-git
 rstudio-deb
+rust-bin
+rust-bindgen-git
 rust-motd-deb
 rustdesk-deb
 schildichat-deb
