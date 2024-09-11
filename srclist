@@ -1739,7 +1739,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.67
+	pkgver = 0.0.68
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1749,8 +1749,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@github.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.67/discord-0.0.67.deb
-	sha256sums = aa4cc63dbe6a56ed503a1e8d163aba2ff80813c81b728004f3b3a49897d92001
+	source = https://dl.discordapp.net/apps/linux/0.0.68/discord-0.0.68.deb
+	sha256sums = 1e9cfe24913b8e8a52cc8bb6d3ef3af5f29d88ceec242ec0c256b1045665dddd
 
 pkgname = discord-deb
 ---
@@ -5106,11 +5106,9 @@ pkgname = libdisplay-info-git
 pkgbase = libdrm
 	gives = libdrm
 	pkgver = 2.4.122
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Userspace interface to kernel DRM services
 	url = https://dri.freedesktop.org/
-	arch = amd64
-	arch = arm64
 	depends = libpciaccess0
 	makedepends = python3-docutils
 	makedepends = meson
@@ -5118,13 +5116,6 @@ pkgbase = libdrm
 	makedepends = libcairo2-dev
 	makedepends = libpciaccess-dev
 	makedepends = libc6-dev
-	breaks = libdrm2
-	breaks = libdrm-common
-	breaks = libdrm-intel1
-	breaks = libdrm-nouveau2
-	breaks = libdrm-radeon1
-	breaks = libdrm-amdgpu1
-	breaks = libdrm-dev
 	replaces = libdrm2
 	replaces = libdrm-common
 	replaces = libdrm-intel1
@@ -6037,6 +6028,34 @@ pkgbase = meson-focal-deb
 
 pkgname = meson-focal-deb
 ---
+pkgbase = meson-git
+	gives = meson
+	pkgver = 1.5
+	pkgdesc = SCons-like build system that use python as a front-end language and Ninja as a building backend with debian-meson forked from arch-meson
+	url = http://mesonbuild.com/
+	arch = any
+	depends = python3
+	depends = ninja-build
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	makedepends = ninja-build
+	makedepends = python3-tqdm
+	makedepends = python3-typing-extensions
+	maintainer = xdavius <xdavius@github.com>
+	source = git+https://github.com/mesonbuild/meson
+	source = debian-meson
+	source = cross-lib32
+	source = native-clang
+	sha256sums = SKIP
+	sha256sums = eb944e481d3299bf9c3c79835697215885a32e0fc1f9c86e2b0699cdc4ee849e
+	sha256sums = ba2be3874b2a30901741363cbdf412b85da9fd333cadaff19fdd9c6d276ec555
+	sha256sums = b1c9b9e5d39f540ac1038a83e5716622d8e111b70be400a9a7c9561503ae03ac
+
+pkgname = meson-git
+---
 pkgbase = micro
 	pkgver = 2.0.13
 	pkgdesc = A modern and intuitive terminal-based text editor
@@ -6209,6 +6228,38 @@ pkgbase = mint-themes
 	sha256sums = 685cff6598bdaf4b6813be3080368845f019e09e974e7f589b5f99acb3da2396
 
 pkgname = mint-themes
+---
+pkgbase = mission-center
+	pkgver = 0.5.2
+	pkgdesc = Monitor your CPU, Memory, Disk, Network and GPU usage
+	url = https://gitlab.com/mission-center-devs/mission-center
+	arch = amd64
+	arch = arm64
+	depends = dmidecode
+	depends = libadwaita-1-0
+	makedepends = blueprint-compiler
+	makedepends = cargo
+	makedepends = meson
+	makedepends = gettext
+	makedepends = pkg-config
+	makedepends = python3-pip
+	makedepends = python3-gi
+	makedepends = libdrm-dev
+	makedepends = libudev-dev
+	makedepends = libgbm-dev
+	makedepends = libpango1.0-dev
+	makedepends = libgdk-pixbuf-2.0-dev
+	makedepends = libgtk-4-dev
+	makedepends = libdbus-1-dev
+	makedepends = libadwaita-1-dev
+	checkdepends = appstream-util
+	incompatible = debian:bookworm
+	incompatible = ubuntu:noble
+	license = GPL-3.0-or-later
+	source = https://gitlab.com/mission-center-devs/mission-center/-/archive/v0.5.2/mission-center-v0.5.2.tar.gz
+	sha256sums = 801a1468ee50281ab42a51281e2f80699480f9c0220f976619ae2f7aa21df85a
+
+pkgname = mission-center
 ---
 pkgbase = mobile-usb-networking-deb
 	gives = mobile-usb-networking
@@ -7215,6 +7266,28 @@ pkgbase = os-installer-git
 	source = https://gitlab.gnome.org/p3732/os-installer.git
 
 pkgname = os-installer-git
+---
+pkgbase = osu-lazer-app
+	pkgver = 2024.906.1
+	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
+	url = https://osu.ppy.sh
+	arch = amd64
+	depends = libfuse2
+	conflicts = osu-lazer
+	conflicts = osu-lazer-git
+	noextract = osu.AppImage
+	license = MIT
+	license = CC-BY-NC-4.0
+	source = osu-lazer-app-2024.906.1.AppImage::https://github.com/ppy/osu/releases/download/2024.906.1/osu.AppImage
+	source = icon.png::https://aur.archlinux.org/cgit/aur.git/plain/icon.png?h=osu-lazer-bin
+	source = osu-lazer
+	source = osu-lazer.desktop
+	sha256sums = 3a656f53458b2d60bb3942db761d7a8fcc0cbf33538d2c7363ba7da57f43d3a5
+	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
+	sha256sums = baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957
+	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
+
+pkgname = osu-lazer-app
 ---
 pkgbase = owofetch
 	gives = owofetch
@@ -8695,6 +8768,7 @@ pkgbase = rust-bin
 	url = https://www.rust-lang.org/
 	arch = x86_64
 	arch = aarch64
+	arch = i686
 	replaces = rustc
 	replaces = libstd-rust-1.80
 	replaces = libstd-rust-dev
@@ -8731,6 +8805,8 @@ pkgbase = rust-bin
 	sha256sums_x86_64 = 85e936d5d36970afb80756fa122edcc99bd72a88155f6bdd514f5d27e778e00a
 	source_aarch64 = https://static.rust-lang.org/dist/rust-1.80.1-aarch64-unknown-linux-gnu.tar.xz
 	sha256sums_aarch64 = 2e89bad7857711a1c11d017ea28fbfeec54076317763901194f8f5decbac1850
+	source_i686 = https://static.rust-lang.org/dist/rust-1.80.1-i686-unknown-linux-gnu.tar.xz
+	sha256sums_i686 = 9af695dd4eacb397c2169abdfae35c6342f210d04632571d5faf924fa2cc6d39
 
 pkgname = rust-bin
 ---
@@ -10939,14 +11015,6 @@ pkgbase = wayland
 	makedepends = libffi-dev
 	makedepends = libexpat1-dev
 	makedepends = libxml2-dev
-	breaks = libwayland-client0
-	breaks = libwayland-egl1
-	breaks = libwayland-server0
-	breaks = libwayland-cursor0
-	breaks = libwayland-dev
-	breaks = libwayland-egl-backend-dev
-	breaks = libwayland-doc
-	breaks = libwayland-bin
 	replaces = libwayland-client0
 	replaces = libwayland-egl1
 	replaces = libwayland-server0
