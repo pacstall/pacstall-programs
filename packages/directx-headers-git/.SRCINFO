@@ -4,6 +4,7 @@ pkgbase = directx-headers-git
 	pkgdesc = DirectX headers for using D3D12
 	url = https://github.com/microsoft/DirectX-Headers
 	arch = x86_64
+	arch = i686
 	makedepends = meson
 	makedepends = git
 	provides = directx-headers-dev
