@@ -15,7 +15,6 @@ prepare() {
   sed -i "s;/usr/share/apx/distrobox/distrobox;/usr/bin/distrobox;" config/apx.json
   sed -i "/distrobox/d" Makefile
   sed -i "s|install: build|install:|" Makefile
-  sed -i 's/sudo //' Makefile
 }
 
 build() {
