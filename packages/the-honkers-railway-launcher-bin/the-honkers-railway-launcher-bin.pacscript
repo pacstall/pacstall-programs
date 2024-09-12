@@ -1,6 +1,6 @@
 pkgname="the-honkers-railway-launcher-bin"
 gives="the-honkers-railway-launcher"
-pkgver="1.8.1"
+pkgver="1.8.2"
 pkgdesc="The Honkers Railway launcher for Linux with automatic patching and telemetry disabling"
 repology=("project: the-honkers-railway-launcher")
 source=(
@@ -8,7 +8,7 @@ source=(
   "icon.png::https://raw.githubusercontent.com/an-anime-team/the-honkers-railway-launcher/main/assets/images/icon.png"
 )
 sha256sums=(
-  "2c807852f87dafe24681d55972db2c3e08e8da65ed29a1b08175ca60ce56909c"
+  "ff7e763ca7d1520fe2ef4806432034a1e57d15a41eafa04d86ba52750b3f7c38"
   "SKIP"
 )
 depends=("git" "p7zip-full" "webp")
