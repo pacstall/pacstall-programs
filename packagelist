@@ -254,6 +254,7 @@ lemonbar-xft-git
 lens
 lf-bin
 libcamera-git
+libcs50-git
 libcutefish-git
 libdisplay-info-git
 libdrm
