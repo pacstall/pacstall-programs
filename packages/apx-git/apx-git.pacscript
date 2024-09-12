@@ -15,10 +15,11 @@ prepare() {
   sed -i "s;/usr/share/apx/distrobox/distrobox;/usr/bin/distrobox;" config/apx.json
   sed -i "/distrobox/d" Makefile
   sed -i "s|install: build|install:|" Makefile
-  export PATH=/usr/lib/go-1.22/bin:${PATH}
+  
 }
 
 build() {
+  export PATH=/usr/lib/go-1.22/bin:${PATH}
   cd "${_archive}"
   make build
 }
