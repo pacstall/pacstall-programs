@@ -19,8 +19,8 @@ prepare() {
 }
 
 build() {
-  export PATH=/usr/lib/go-1.22/bin:${PATH}
   cd "${_archive}"
+  export PATH=/usr/lib/go-1.22/bin:${PATH}
   make build
 }
 
