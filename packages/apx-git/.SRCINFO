@@ -5,7 +5,7 @@ pkgbase = apx-git
 	makedepends = golang-1.22-go
 	pacdeps = distrobox
 	breaks = apx
-	incompatible = debian:bullseye
+	incompatible = debian:bookworm
 	maintainer = Zahrun <Zahrun@github.com>
 	source = https://github.com/Vanilla-OS/apx.git
 
