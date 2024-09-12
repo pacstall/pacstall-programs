@@ -324,9 +324,9 @@ pkgname = apptainer-suid-deb
 ---
 pkgbase = apx-git
 	gives = apx
-	pkgver = 2.4.0
+	pkgver = 2.4.3
 	pkgdesc = Package manager meant to be simple to use, but also powerful with support to installing packages from multiple sources without altering the root filesystem
-	makedepends = golang-go
+	makedepends = golang-1.22-go
 	pacdeps = distrobox
 	breaks = apx
 	incompatible = debian:bullseye
@@ -1694,6 +1694,22 @@ pkgbase = dino-git
 
 pkgname = dino-git
 ---
+pkgbase = directx-headers-git
+	gives = directx-headers-dev
+	pkgver = 1.614.0
+	pkgdesc = DirectX headers for using D3D12
+	url = https://github.com/microsoft/DirectX-Headers
+	arch = x86_64
+	arch = i686
+	makedepends = meson
+	makedepends = git
+	provides = directx-headers-dev
+	maintainer = xdavius <xdavius@github.com>
+	source = DirectX-Headers::git+https://github.com/microsoft/DirectX-Headers.git
+	sha256sums = SKIP
+
+pkgname = directx-headers-git
+---
 pkgbase = discord-canary
 	pkgver = 0.0.327
 	pkgdesc = Chat for Communities and Friends - Unstable
@@ -2477,13 +2493,13 @@ pkgbase = fastfetch-git
 	optdepends = libvulkan1: Vulkan module and GPU fallback
 	optdepends = libegl1: OpenGL module
 	optdepends = libxcb-randr0: Resolution and refresh rate support for X11 sessions
-	optdepends = libwayland-clint0: Resolution and refresh rate support for wayland sessions
+	optdepends = libwayland-client0: Resolution and refresh rate support for wayland sessions
 	optdepends = libglib2.0-0: Output for values that are only stored in GSettings
 	optdepends = libdconf1: Output for values that are only stored in DConf
 	optdepends = libxfconf-0-3: XFWM theme + xfce-terminal font
 	optdepends = libnm0: Used for Wifi detection
 	optdepends = libpulse0: Used for Sound device detection
-	optdepends = libddcutil3: Used for brightness detection for external displays
+	optdepends = libddcutil-dev: Used for brightness detection for external displays
 	optdepends = libdbus-1-3: Used for bluetooth, Player & Media detection
 	optdepends = kitty: Terminal emulator GPU accelerated and display images
 	breaks = fastfetch
@@ -5038,6 +5054,16 @@ pkgbase = libcamera-git
 	pacdeps_focal = meson-focal-deb
 
 pkgname = libcamera-git
+---
+pkgbase = libcs50-git
+	gives = libcs50
+	pkgver = 11.0.3
+	pkgdesc = Library provided by Harvard University for learning the basic C language
+	makedepends = make
+	maintainer = Vaibhav Sharma <vvaibhavv3434@gmail.com>
+	source = https://github.com/cs50/libcs50.git
+
+pkgname = libcs50-git
 ---
 pkgbase = libcutefish-git
 	gives = libcutefish
@@ -9921,7 +9947,7 @@ pkgname = tgpt-bin
 ---
 pkgbase = the-honkers-railway-launcher-bin
 	gives = the-honkers-railway-launcher
-	pkgver = 1.8.1
+	pkgver = 1.8.2
 	pkgdesc = The Honkers Railway launcher for Linux with automatic patching and telemetry disabling
 	depends = git
 	depends = p7zip-full
@@ -9941,9 +9967,9 @@ pkgbase = the-honkers-railway-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: the-honkers-railway-launcher
-	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.8.1/honkers-railway-launcher
+	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.8.2/honkers-railway-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/the-honkers-railway-launcher/main/assets/images/icon.png
-	sha256sums = 2c807852f87dafe24681d55972db2c3e08e8da65ed29a1b08175ca60ce56909c
+	sha256sums = ff7e763ca7d1520fe2ef4806432034a1e57d15a41eafa04d86ba52750b3f7c38
 	sha256sums = SKIP
 
 pkgname = the-honkers-railway-launcher-bin
@@ -10735,11 +10761,11 @@ pkgbase = viper4linux
 pkgname = viper4linux
 ---
 pkgbase = virtualbox-deb
-	gives = virtualbox-7.0
-	pkgver = 7.0.20
+	gives = virtualbox-7.1
+	pkgver = 7.1.0
 	pkgdesc = VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use
 	arch = amd64
-	breaks = virtualbox-7.0-bin
+	breaks = virtualbox-7.1-bin
 	incompatible = debian:trixie
 	incompatible = debian:sid
 	incompatible = ubuntu:mantic
@@ -10747,13 +10773,13 @@ pkgbase = virtualbox-deb
 	incompatible = ubuntu:devel
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 	maintainer = xdavius <xdavius@github.com>
-	repology = project: virtualbox-7.0
-	source_jammy = https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~jammy_amd64.deb
-	source_noble = https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
-	source_bookworm = https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Debian~bookworm_amd64.deb
-	sha256sums_jammy = fbc338b127a13bc49a0d14145faf98324cce245e8e0c18e1b1f642bd0d54f622
-	sha256sums_noble = f0aadadad827e02d73721e2d746a236bfa343598f0ae9b612a24960fe8b8d6ca
-	sha256sums_bookworm = c017d5f7b043b1b12bface26b497129ac2e35e11adf0fba88b076bc8024fdcde
+	repology = project: virtualbox
+	source_jammy = https://download.virtualbox.org/virtualbox/7.1.0/virtualbox-7.1_7.1.0-164728~Ubuntu~jammy_amd64.deb
+	source_noble = https://download.virtualbox.org/virtualbox/7.1.0/virtualbox-7.1_7.1.0-164728~Ubuntu~noble_amd64.deb
+	source_bookworm = https://download.virtualbox.org/virtualbox/7.1.0/virtualbox-7.1_7.1.0-164728~Debian~bookworm_amd64.deb
+	sha256sums_jammy = 6c5c65fab5eed2f18c5689579004140abadd1f8e0b1af751dd58aa7eb3fbec8c
+	sha256sums_noble = 56aefc0c12fd3d9a9efb336c08956e5c1a1c4cedca8f6e25193742d6b5932497
+	sha256sums_bookworm = 5dc2a38fec468b2af74ee20c986edfddcafef7701fd336e6c6d971cb3c621cc0
 
 pkgname = virtualbox-deb
 ---
