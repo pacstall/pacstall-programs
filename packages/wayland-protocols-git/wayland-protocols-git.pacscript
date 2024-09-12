@@ -9,6 +9,7 @@ makedepends=('git' 'ninja-build')
 pacdeps=("wayland" "meson-git")
 source=("git+https://gitlab.freedesktop.org/wayland/wayland-protocols.git")
 sha256sums=('SKIP')
+maintainer="xdavius <xdavius@github.com>"
 
 prepare() {
   mkdir -p "${gives}/build"

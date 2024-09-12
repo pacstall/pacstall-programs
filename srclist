@@ -10988,6 +10988,7 @@ pkgbase = wayland-protocols-git
 	makedepends = ninja-build
 	pacdeps = wayland
 	pacdeps = meson-git
+	maintainer = xdavius <xdavius@github.com>
 	source = git+https://gitlab.freedesktop.org/wayland/wayland-protocols.git
 	sha256sums = SKIP
 
