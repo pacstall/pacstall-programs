@@ -8,7 +8,7 @@ pacdeps=('rust-bin')
 depends=('clang')
 source=("https://github.com/rust-lang-nursery/rust-bindgen.git")
 sha512sums=('SKIP')
-maintainer=("davius <xdavius@github.com")
+maintainer=("davius <xdavius@github.com>")
 external_connection=true
 
 prepare() {
