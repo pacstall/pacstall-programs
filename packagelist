@@ -192,6 +192,7 @@ grapejuice-git
 grive2
 grive2-git
 grub-btrfs
+grub-customizer-git
 gtkhash
 hakuneko-deb
 hamclock
@@ -306,6 +307,7 @@ megabasterd-bin
 megasync-deb
 mesa-kisak-fresh
 meson-focal-deb
+meson-git
 micro
 microsoft-edge-beta-deb
 microsoft-edge-dev-deb
@@ -315,6 +317,7 @@ minecraft-launcher
 minecraft-launcher-deb
 minecraft-pi-reborn-app
 mint-themes
+mission-center
 mobile-usb-networking-deb
 modprobed-db
 moka-icon-theme
@@ -375,6 +378,7 @@ opera-beta-deb
 opera-deb
 opera-developer-deb
 os-installer-git
+osu-lazer-app
 owofetch
 pacget-git
 paconvert-git
@@ -457,6 +461,7 @@ rosary-deb
 rpcs3-app
 rsbbi-git
 rstudio-deb
+rust-bin
 rust-motd-deb
 rustdesk-deb
 schildichat-deb
@@ -565,6 +570,7 @@ warp
 warpinator-deb
 watchexec-bin
 wavey-launcher-bin
+wayland
 waynergy
 webapp-manager
 webapp-manager-deb
