@@ -570,6 +570,7 @@ warpinator-deb
 watchexec-bin
 wavey-launcher-bin
 wayland
+wayland-protocols-git
 waynergy
 webapp-manager
 webapp-manager-deb
