@@ -83,6 +83,7 @@ dbeaver-ce-deb
 deadbeef-deb
 deskcut-deb
 dino-git
+directx-headers-git
 discord
 discord-canary
 discord-deb
@@ -253,6 +254,7 @@ lemonbar-xft-git
 lens
 lf-bin
 libcamera-git
+libcs50-git
 libcutefish-git
 libdisplay-info-git
 libdrm
