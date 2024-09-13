@@ -7,6 +7,6 @@ pkgbase = ffnvcodec-headers
 	license = MIT
 	maintainer = Luis Garcia <pacstall@luigi311.com>
 	source = https://github.com/FFmpeg/nv-codec-headers/releases/download/n12.2.72.0/nv-codec-headers-12.2.72.0.tar.gz
-	sha256sums = SKIP
+	sha256sums = c295a2ba8a06434d4bdc5c2208f8a825285210d71d91d572329b2c51fd0d4d03
 
 pkgname = ffnvcodec-headers

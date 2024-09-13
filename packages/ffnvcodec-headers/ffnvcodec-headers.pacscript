@@ -9,7 +9,9 @@ license=('MIT')
 source=(
   "https://github.com/FFmpeg/nv-codec-headers/releases/download/n${pkgver}/nv-codec-headers-${pkgver}.tar.gz"
 )
-sha256sums=("SKIP")
+sha256sums=(
+  "c295a2ba8a06434d4bdc5c2208f8a825285210d71d91d572329b2c51fd0d4d03"
+)
 
 makedepends=(
   'git'
