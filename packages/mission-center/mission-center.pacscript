@@ -28,9 +28,11 @@ makedepends=(
 checkdepends=("appstream-util")
 source=("${url}/-/archive/v${pkgver}/mission-center-v${pkgver}.tar.gz")
 sha256sums=("801a1468ee50281ab42a51281e2f80699480f9c0220f976619ae2f7aa21df85a")
-incompatible=(
-  "debian:bookworm"
-  "ubuntu:noble"
+compatible=(
+  "debian:trixie"
+  "debian:sid"
+  "ubuntu:oracular"
+  "ubuntu:devel"
 )
 external_connection=true
 
