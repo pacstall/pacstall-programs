@@ -6954,13 +6954,13 @@ pkgname = obs-ndi-deb
 ---
 pkgbase = obsidian-deb
 	gives = obsidian
-	pkgver = 1.5.3
+	pkgver = 1.6.7
 	pkgdesc = Powerful and extensible knowledge base editor that uses markdown
 	arch = amd64
 	maintainer = Hepno <me@hepno.dev>
 	repology = project: obsidian
-	source = https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.3/obsidian_1.5.3_amd64.deb
-	sha256sums = 15053618d0a4c3230dcd73cf798fe4a52f670b1b2f740b5e799de2e03c777cb2
+	source = https://github.com/obsidianmd/obsidian-releases/releases/download/v1.6.7/obsidian_1.6.7_amd64.deb
+	sha256sums = 772da38d23b15f0f5d7cf17024a1948ff2c073b2195954743703178bf1254b36
 
 pkgname = obsidian-deb
 ---
