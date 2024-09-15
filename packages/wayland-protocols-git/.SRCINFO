@@ -1,15 +1,14 @@
 pkgbase = wayland-protocols-git
 	gives = wayland-protocols
-	pkgver = 1.37
+	pkgver = 1.23
 	pkgrel = 1
 	pkgdesc = Wayland protocols that add functionalities not available in the core protocol
 	url = https://wayland.freedesktop.org/
 	arch = any
 	makedepends = git
 	makedepends = ninja-build
-	pacdeps = wayland
+	makedepends = libwayland-dev
 	pacdeps = meson-git
-	maintainer = xdavius <xdavius@github.com>
 	source = git+https://gitlab.freedesktop.org/wayland/wayland-protocols.git
 	sha256sums = SKIP
 

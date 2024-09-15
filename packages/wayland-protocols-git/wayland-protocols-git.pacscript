@@ -1,15 +1,14 @@
 pkgname="wayland-protocols-git"
 gives="wayland-protocols"
-pkgver="1.37"
+pkgver="1.23"
 pkgrel=1
 pkgdesc='Wayland protocols that add functionalities not available in the core protocol'
 arch=('any')
 url='https://wayland.freedesktop.org/'
-makedepends=('git' 'ninja-build')
-pacdeps=("wayland" "meson-git")
+makedepends=('git' 'ninja-build' 'libwayland-dev')
+pacdeps=("meson-git")
 source=("git+https://gitlab.freedesktop.org/wayland/wayland-protocols.git")
 sha256sums=('SKIP')
-maintainer="xdavius <xdavius@github.com>"
 
 prepare() {
   mkdir -p "${gives}/build"
