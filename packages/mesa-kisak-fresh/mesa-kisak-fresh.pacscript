@@ -1,9 +1,8 @@
 pkgname="mesa-kisak-fresh"
 gives="mesa-kisak-fresh"
-pkgver="24.2.1"
+pkgver="24.2.2"
 pkgdesc="Mesa Fresh from Kisak PPA Sources - No opencl"
 arch=('amd64')
-external_connection=true
 url='https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa'
 source=("https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa/+sourcefiles/mesa/${pkgver}~kisak1~j/mesa_${pkgver}~kisak1~j.tar.xz")
 sha256sum=("a84852fa3e791713600d3f6fd0c26e1ab00c9efe75ff880ff616ff5100df8b49")
@@ -71,7 +70,6 @@ provides=(
   "mesa-vulkan-drivers=${pkgver}"
   "mesa-opencl-icd=${pkgver}"
   "mesa-drm-shim=${pkgver}"
-  "wayland-protocols=${pkgver}"
 )
 
 replaces=(
@@ -102,7 +100,6 @@ replaces=(
   "mesa-vulkan-drivers"
   "mesa-opencl-icd"
   "mesa-drm-shim"
-  "wayland-protocols"
 )
 
 makedepends=(
@@ -145,6 +142,7 @@ makedepends=(
   "libudev-dev"
   "libxatracker-dev"
   "libwayland-dev"
+  "libwayland-egl-backend-dev"
   "libclc-15-dev"
   "libclc-15"
   "libclang-15-dev"
@@ -158,19 +156,14 @@ makedepends=(
   "glslang-tools"
 )
 
-# Packages replaced by pacdeps : "rustc" "rustfmt" "bindgen" "directx-headers-dev" "meson" "libwayland-dev" "libwayland-egl-backend-dev"
-# Provided by subprojects : "wayland-protocols"
-
-pacdeps=("libdrm" "meson-git" "directx-headers-git" "rust-bindgen-git" "wayland")
-
+# Packages replaced by pacdeps : "rustc" "rustfmt" "bindgen" "directx-headers-dev" "meson"
+pacdeps=("libdrm" "meson-git" "directx-headers-git" "rust-bindgen-git")
 repology=("project: mesa")
 maintainer=("xdavius <xdavius@github.com>")
-
 compatible=("debian:bookworm" "ubuntu:jammy")
 
 prepare() {
 
-  cp "${srcdir}"/llvm.native "${srcdir}"/mesa-j/llvm.native
   cd "mesa-j"
   cp debian/patches/* ./
   for patch in *.patch; do
