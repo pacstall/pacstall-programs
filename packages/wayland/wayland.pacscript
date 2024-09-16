@@ -17,6 +17,7 @@ provides=(libwayland-client0="${pkgver}"
   libwayland-doc="${pkgver}"
   libwayland-bin="${pkgver}")
 replaces=(libwayland-client0 libwayland-egl1 libwayland-server0 libwayland-cursor0 libwayland-dev libwayland-egl-backend-dev libwayland-doc libwayland-bin)
+conflicts=("sddm" "kde-standard")
 
 maintainer=("xdavius <xdavius@github.com>")
 
