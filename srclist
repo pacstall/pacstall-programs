@@ -324,12 +324,13 @@ pkgname = apptainer-suid-deb
 ---
 pkgbase = apx-git
 	gives = apx
-	pkgver = 2.4.0
+	pkgver = 2.4.3
 	pkgdesc = Package manager meant to be simple to use, but also powerful with support to installing packages from multiple sources without altering the root filesystem
-	makedepends = golang-go
+	makedepends = golang-1.22-go
 	pacdeps = distrobox
 	breaks = apx
-	incompatible = debian:bullseye
+	incompatible = *:bullseye
+	incompatible = *:bookworm
 	maintainer = Zahrun <Zahrun@github.com>
 	source = https://github.com/Vanilla-OS/apx.git
 
@@ -1694,6 +1695,22 @@ pkgbase = dino-git
 
 pkgname = dino-git
 ---
+pkgbase = directx-headers-git
+	gives = directx-headers-dev
+	pkgver = 1.614.0
+	pkgdesc = DirectX headers for using D3D12
+	url = https://github.com/microsoft/DirectX-Headers
+	arch = x86_64
+	arch = i686
+	makedepends = meson
+	makedepends = git
+	provides = directx-headers-dev
+	maintainer = xdavius <xdavius@github.com>
+	source = DirectX-Headers::git+https://github.com/microsoft/DirectX-Headers.git
+	sha256sums = SKIP
+
+pkgname = directx-headers-git
+---
 pkgbase = discord-canary
 	pkgver = 0.0.327
 	pkgdesc = Chat for Communities and Friends - Unstable
@@ -1724,7 +1741,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.67
+	pkgver = 0.0.68
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1734,8 +1751,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@github.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.67/discord-0.0.67.deb
-	sha256sums = aa4cc63dbe6a56ed503a1e8d163aba2ff80813c81b728004f3b3a49897d92001
+	source = https://dl.discordapp.net/apps/linux/0.0.68/discord-0.0.68.deb
+	sha256sums = 1e9cfe24913b8e8a52cc8bb6d3ef3af5f29d88ceec242ec0c256b1045665dddd
 
 pkgname = discord-deb
 ---
@@ -2477,13 +2494,13 @@ pkgbase = fastfetch-git
 	optdepends = libvulkan1: Vulkan module and GPU fallback
 	optdepends = libegl1: OpenGL module
 	optdepends = libxcb-randr0: Resolution and refresh rate support for X11 sessions
-	optdepends = libwayland-clint0: Resolution and refresh rate support for wayland sessions
+	optdepends = libwayland-client0: Resolution and refresh rate support for wayland sessions
 	optdepends = libglib2.0-0: Output for values that are only stored in GSettings
 	optdepends = libdconf1: Output for values that are only stored in DConf
 	optdepends = libxfconf-0-3: XFWM theme + xfce-terminal font
 	optdepends = libnm0: Used for Wifi detection
 	optdepends = libpulse0: Used for Sound device detection
-	optdepends = libddcutil3: Used for brightness detection for external displays
+	optdepends = libddcutil-dev: Used for brightness detection for external displays
 	optdepends = libdbus-1-3: Used for bluetooth, Player & Media detection
 	optdepends = kitty: Terminal emulator GPU accelerated and display images
 	breaks = fastfetch
@@ -2582,6 +2599,19 @@ pkgbase = feroxbuster-bin
 	sha256sums = SKIP
 
 pkgname = feroxbuster-bin
+---
+pkgbase = ffnvcodec-headers
+	gives = ffnvcodec-headers
+	pkgver = 12.2.72.0
+	pkgdesc = FFmpeg version of headers required to interface with Nvidias codec APIs
+	url = https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
+	makedepends = git
+	license = MIT
+	maintainer = Luis Garcia <pacstall@luigi311.com>
+	source = https://github.com/FFmpeg/nv-codec-headers/releases/download/n12.2.72.0/nv-codec-headers-12.2.72.0.tar.gz
+	sha256sums = c295a2ba8a06434d4bdc5c2208f8a825285210d71d91d572329b2c51fd0d4d03
+
+pkgname = ffnvcodec-headers
 ---
 pkgbase = ffsend-bin
 	gives = ffsend
@@ -3810,7 +3840,7 @@ pkgbase = hakuneko-deb
 pkgname = hakuneko-deb
 ---
 pkgbase = hamclock-big
-	pkgver = 4.05
+	pkgver = 4.06
 	pkgrel = 3
 	pkgdesc = Clock and world map with extra features for amateur radio (1600x960 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -3830,15 +3860,15 @@ pkgbase = hamclock-big
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-big
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.06.tar.gz
 	source = hamclock.desktop
-	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
+	sha256sums = ea5a882b5f47e0a5f8da62f97e884856ac000dc009d4acdc2952a0fd8e032a11
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-big
 ---
 pkgbase = hamclock-bigger
-	pkgver = 4.05
+	pkgver = 4.06
 	pkgdesc = Clock and world map with extra features for amateur radio (2400x1440 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	makedepends = gcc
@@ -3857,15 +3887,15 @@ pkgbase = hamclock-bigger
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-bigger
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.06.tar.gz
 	source = hamclock.desktop
-	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
+	sha256sums = ea5a882b5f47e0a5f8da62f97e884856ac000dc009d4acdc2952a0fd8e032a11
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-bigger
 ---
 pkgbase = hamclock-huge
-	pkgver = 4.05
+	pkgver = 4.06
 	pkgdesc = Clock and world map with extra features for amateur radio (3200x1920 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	makedepends = gcc
@@ -3884,15 +3914,15 @@ pkgbase = hamclock-huge
 	replaces = hamclock-bigger
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-huge
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.06.tar.gz
 	source = hamclock.desktop
-	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
+	sha256sums = ea5a882b5f47e0a5f8da62f97e884856ac000dc009d4acdc2952a0fd8e032a11
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-huge
 ---
 pkgbase = hamclock
-	pkgver = 4.05
+	pkgver = 4.06
 	pkgrel = 2
 	pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -3912,9 +3942,9 @@ pkgbase = hamclock
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.05.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.06.tar.gz
 	source = hamclock.desktop
-	sha256sums = eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d
+	sha256sums = ea5a882b5f47e0a5f8da62f97e884856ac000dc009d4acdc2952a0fd8e032a11
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock
@@ -5039,6 +5069,16 @@ pkgbase = libcamera-git
 
 pkgname = libcamera-git
 ---
+pkgbase = libcs50-git
+	gives = libcs50
+	pkgver = 11.0.3
+	pkgdesc = Library provided by Harvard University for learning the basic C language
+	makedepends = make
+	maintainer = Vaibhav Sharma <vvaibhavv3434@gmail.com>
+	source = https://github.com/cs50/libcs50.git
+
+pkgname = libcs50-git
+---
 pkgbase = libcutefish-git
 	gives = libcutefish
 	pkgver = 0.7
@@ -5091,11 +5131,9 @@ pkgname = libdisplay-info-git
 pkgbase = libdrm
 	gives = libdrm
 	pkgver = 2.4.122
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Userspace interface to kernel DRM services
 	url = https://dri.freedesktop.org/
-	arch = amd64
-	arch = arm64
 	depends = libpciaccess0
 	makedepends = python3-docutils
 	makedepends = meson
@@ -5103,13 +5141,6 @@ pkgbase = libdrm
 	makedepends = libcairo2-dev
 	makedepends = libpciaccess-dev
 	makedepends = libc6-dev
-	breaks = libdrm2
-	breaks = libdrm-common
-	breaks = libdrm-intel1
-	breaks = libdrm-nouveau2
-	breaks = libdrm-radeon1
-	breaks = libdrm-amdgpu1
-	breaks = libdrm-dev
 	replaces = libdrm2
 	replaces = libdrm-common
 	replaces = libdrm-intel1
@@ -5885,6 +5916,7 @@ pkgbase = mangohud
 	pkgver = 0.7.2
 	pkgdesc = A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more
 	url = https://github.com/flightlessmango/MangoHud
+	arch = amd64
 	makedepends = gcc
 	makedepends = g++
 	makedepends = gcc-multilib
@@ -5903,6 +5935,14 @@ pkgbase = mangohud
 	makedepends = glslang-tools
 	makedepends = libwayland-dev
 	makedepends = libxkbcommon-dev
+	makedepends = libx11-dev:i386
+	makedepends = libxnvctrl-dev:i386
+	makedepends = libdbus-1-dev:i386
+	makedepends = libwayland-dev:i386
+	makedepends = libxkbcommon-dev:i386
+	makedepends = libc6-dev-i386
+	makedepends = libgcc-12-dev:i386
+	provides = mangohud:i386
 	incompatible = debian:bullseye
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: mangohud
@@ -6021,6 +6061,34 @@ pkgbase = meson-focal-deb
 	sha256sums = d9c97eac0a3573a98db98a7e56e043968da8ad7908c31f6b16daa19febd28e9b
 
 pkgname = meson-focal-deb
+---
+pkgbase = meson-git
+	gives = meson
+	pkgver = 1.5
+	pkgdesc = SCons-like build system that use python as a front-end language and Ninja as a building backend with debian-meson forked from arch-meson
+	url = http://mesonbuild.com/
+	arch = any
+	depends = python3
+	depends = ninja-build
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	makedepends = ninja-build
+	makedepends = python3-tqdm
+	makedepends = python3-typing-extensions
+	maintainer = xdavius <xdavius@github.com>
+	source = git+https://github.com/mesonbuild/meson
+	source = debian-meson
+	source = cross-lib32
+	source = native-clang
+	sha256sums = SKIP
+	sha256sums = eb944e481d3299bf9c3c79835697215885a32e0fc1f9c86e2b0699cdc4ee849e
+	sha256sums = ba2be3874b2a30901741363cbdf412b85da9fd333cadaff19fdd9c6d276ec555
+	sha256sums = b1c9b9e5d39f540ac1038a83e5716622d8e111b70be400a9a7c9561503ae03ac
+
+pkgname = meson-git
 ---
 pkgbase = micro
 	pkgver = 2.0.13
@@ -6194,6 +6262,40 @@ pkgbase = mint-themes
 	sha256sums = 685cff6598bdaf4b6813be3080368845f019e09e974e7f589b5f99acb3da2396
 
 pkgname = mint-themes
+---
+pkgbase = mission-center
+	pkgver = 0.5.2
+	pkgdesc = Monitor your CPU, Memory, Disk, Network and GPU usage
+	url = https://gitlab.com/mission-center-devs/mission-center
+	arch = amd64
+	arch = arm64
+	depends = dmidecode
+	depends = libadwaita-1-0
+	makedepends = blueprint-compiler
+	makedepends = cargo
+	makedepends = meson
+	makedepends = gettext
+	makedepends = pkg-config
+	makedepends = python3-pip
+	makedepends = python3-gi
+	makedepends = libdrm-dev
+	makedepends = libudev-dev
+	makedepends = libgbm-dev
+	makedepends = libpango1.0-dev
+	makedepends = libgdk-pixbuf-2.0-dev
+	makedepends = libgtk-4-dev
+	makedepends = libdbus-1-dev
+	makedepends = libadwaita-1-dev
+	checkdepends = appstream-util
+	compatible = debian:trixie
+	compatible = debian:sid
+	compatible = ubuntu:oracular
+	compatible = ubuntu:devel
+	license = GPL-3.0-or-later
+	source = https://gitlab.com/mission-center-devs/mission-center/-/archive/v0.5.2/mission-center-v0.5.2.tar.gz
+	sha256sums = 801a1468ee50281ab42a51281e2f80699480f9c0220f976619ae2f7aa21df85a
+
+pkgname = mission-center
 ---
 pkgbase = mobile-usb-networking-deb
 	gives = mobile-usb-networking
@@ -6877,13 +6979,13 @@ pkgname = obs-ndi-deb
 ---
 pkgbase = obsidian-deb
 	gives = obsidian
-	pkgver = 1.5.3
+	pkgver = 1.6.7
 	pkgdesc = Powerful and extensible knowledge base editor that uses markdown
 	arch = amd64
 	maintainer = Hepno <me@hepno.dev>
 	repology = project: obsidian
-	source = https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.3/obsidian_1.5.3_amd64.deb
-	sha256sums = 15053618d0a4c3230dcd73cf798fe4a52f670b1b2f740b5e799de2e03c777cb2
+	source = https://github.com/obsidianmd/obsidian-releases/releases/download/v1.6.7/obsidian_1.6.7_amd64.deb
+	sha256sums = 772da38d23b15f0f5d7cf17024a1948ff2c073b2195954743703178bf1254b36
 
 pkgname = obsidian-deb
 ---
@@ -7200,6 +7302,28 @@ pkgbase = os-installer-git
 	source = https://gitlab.gnome.org/p3732/os-installer.git
 
 pkgname = os-installer-git
+---
+pkgbase = osu-lazer-app
+	pkgver = 2024.906.2
+	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
+	url = https://osu.ppy.sh
+	arch = amd64
+	depends = libfuse2
+	conflicts = osu-lazer
+	conflicts = osu-lazer-git
+	noextract = osu.AppImage
+	license = MIT
+	license = CC-BY-NC-4.0
+	source = osu-lazer-app-2024.906.2.AppImage::https://github.com/ppy/osu/releases/download/2024.906.2/osu.AppImage
+	source = icon.png::https://raw.githubusercontent.com/ppy/osu/master/assets/lazer.png
+	source = osu-lazer
+	source = osu-lazer.desktop
+	sha256sums = cd09d1dcac25135813587f1ff860d106c73b5a17e7f57a53d43fcd2e0e53b6b5
+	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
+	sha256sums = baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957
+	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
+
+pkgname = osu-lazer-app
 ---
 pkgbase = owofetch
 	gives = owofetch
@@ -8680,6 +8804,7 @@ pkgbase = rust-bin
 	url = https://www.rust-lang.org/
 	arch = x86_64
 	arch = aarch64
+	arch = i686
 	replaces = rustc
 	replaces = libstd-rust-1.80
 	replaces = libstd-rust-dev
@@ -8716,6 +8841,8 @@ pkgbase = rust-bin
 	sha256sums_x86_64 = 85e936d5d36970afb80756fa122edcc99bd72a88155f6bdd514f5d27e778e00a
 	source_aarch64 = https://static.rust-lang.org/dist/rust-1.80.1-aarch64-unknown-linux-gnu.tar.xz
 	sha256sums_aarch64 = 2e89bad7857711a1c11d017ea28fbfeec54076317763901194f8f5decbac1850
+	source_i686 = https://static.rust-lang.org/dist/rust-1.80.1-i686-unknown-linux-gnu.tar.xz
+	sha256sums_i686 = 9af695dd4eacb397c2169abdfae35c6342f210d04632571d5faf924fa2cc6d39
 
 pkgname = rust-bin
 ---
@@ -9830,7 +9957,7 @@ pkgname = tgpt-bin
 ---
 pkgbase = the-honkers-railway-launcher-bin
 	gives = the-honkers-railway-launcher
-	pkgver = 1.8.1
+	pkgver = 1.8.2
 	pkgdesc = The Honkers Railway launcher for Linux with automatic patching and telemetry disabling
 	depends = git
 	depends = p7zip-full
@@ -9850,9 +9977,9 @@ pkgbase = the-honkers-railway-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: the-honkers-railway-launcher
-	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.8.1/honkers-railway-launcher
+	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.8.2/honkers-railway-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/the-honkers-railway-launcher/main/assets/images/icon.png
-	sha256sums = 2c807852f87dafe24681d55972db2c3e08e8da65ed29a1b08175ca60ce56909c
+	sha256sums = ff7e763ca7d1520fe2ef4806432034a1e57d15a41eafa04d86ba52750b3f7c38
 	sha256sums = SKIP
 
 pkgname = the-honkers-railway-launcher-bin
@@ -10644,11 +10771,11 @@ pkgbase = viper4linux
 pkgname = viper4linux
 ---
 pkgbase = virtualbox-deb
-	gives = virtualbox-7.0
-	pkgver = 7.0.20
+	gives = virtualbox-7.1
+	pkgver = 7.1.0
 	pkgdesc = VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use
 	arch = amd64
-	breaks = virtualbox-7.0-bin
+	breaks = virtualbox-7.1-bin
 	incompatible = debian:trixie
 	incompatible = debian:sid
 	incompatible = ubuntu:mantic
@@ -10656,13 +10783,13 @@ pkgbase = virtualbox-deb
 	incompatible = ubuntu:devel
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 	maintainer = xdavius <xdavius@github.com>
-	repology = project: virtualbox-7.0
-	source_jammy = https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~jammy_amd64.deb
-	source_noble = https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Ubuntu~noble_amd64.deb
-	source_bookworm = https://download.virtualbox.org/virtualbox/7.0.20/virtualbox-7.0_7.0.20-163906~Debian~bookworm_amd64.deb
-	sha256sums_jammy = fbc338b127a13bc49a0d14145faf98324cce245e8e0c18e1b1f642bd0d54f622
-	sha256sums_noble = f0aadadad827e02d73721e2d746a236bfa343598f0ae9b612a24960fe8b8d6ca
-	sha256sums_bookworm = c017d5f7b043b1b12bface26b497129ac2e35e11adf0fba88b076bc8024fdcde
+	repology = project: virtualbox
+	source_jammy = https://download.virtualbox.org/virtualbox/7.1.0/virtualbox-7.1_7.1.0-164728~Ubuntu~jammy_amd64.deb
+	source_noble = https://download.virtualbox.org/virtualbox/7.1.0/virtualbox-7.1_7.1.0-164728~Ubuntu~noble_amd64.deb
+	source_bookworm = https://download.virtualbox.org/virtualbox/7.1.0/virtualbox-7.1_7.1.0-164728~Debian~bookworm_amd64.deb
+	sha256sums_jammy = 6c5c65fab5eed2f18c5689579004140abadd1f8e0b1af751dd58aa7eb3fbec8c
+	sha256sums_noble = 56aefc0c12fd3d9a9efb336c08956e5c1a1c4cedca8f6e25193742d6b5932497
+	sha256sums_bookworm = 5dc2a38fec468b2af74ee20c986edfddcafef7701fd336e6c6d971cb3c621cc0
 
 pkgname = virtualbox-deb
 ---
@@ -11801,16 +11928,16 @@ pkgname = zotero
 ---
 pkgbase = zoxide-deb
 	gives = zoxide
-	pkgver = 0.9.4
+	pkgver = 0.9.5
 	pkgdesc = A smarter cd command. Supports all major shells.
 	arch = amd64
 	arch = arm64
 	maintainer = lfromanini <lfromanini@yahoo.com>
 	repology = project: zoxide
-	source_amd64 = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.4/zoxide_0.9.4-1_amd64.deb
-	sha256sums_amd64 = 81b7a762bcb8f789dfde4cac78ac34a406c6f79763f3669efbd60f65d013b2e1
-	source_arm64 = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.4/zoxide_0.9.4-1_arm64.deb
-	sha256sums_arm64 = 575f520691dfd9acc1b280b0ca47f44f49bd004763b61abfb3da36f211d88215
+	source_amd64 = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.5/zoxide_0.9.5-1_amd64.deb
+	sha256sums_amd64 = 2175b8df1f6e83f74d0eb7812f8697d66dfb6363ae92e6e9a975791a3aad6bc0
+	source_arm64 = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.5/zoxide_0.9.5-1_arm64.deb
+	sha256sums_arm64 = 6ef41e82ba2e7399dc33b67e78065dbde3f2e0544ca56dad743b2e20b69dc833
 
 pkgname = zoxide-deb
 ---
