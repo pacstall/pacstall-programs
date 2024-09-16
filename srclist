@@ -11031,6 +11031,7 @@ pkgname = wavey-launcher-bin
 pkgbase = wayland
 	gives = wayland
 	pkgver = 1.23.0
+	pkgrel = 2
 	pkgdesc = A computer display server protocol
 	url = https://wayland.freedesktop.org/
 	arch = x86_64
