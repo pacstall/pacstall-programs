@@ -11028,6 +11028,23 @@ pkgbase = wavey-launcher-bin
 
 pkgname = wavey-launcher-bin
 ---
+pkgbase = wayland-protocols-git
+	gives = wayland-protocols
+	pkgver = 1.23
+	pkgrel = 1
+	pkgdesc = Wayland protocols that add functionalities not available in the core protocol
+	url = https://wayland.freedesktop.org/
+	arch = any
+	makedepends = cmake
+	makedepends = pkg-config
+	makedepends = ninja-build
+	makedepends = libwayland-dev
+	pacdeps = meson-git
+	source = git+https://gitlab.freedesktop.org/wayland/wayland-protocols.git
+	sha256sums = SKIP
+
+pkgname = wayland-protocols-git
+---
 pkgbase = wayland
 	gives = wayland
 	pkgver = 1.23.0
