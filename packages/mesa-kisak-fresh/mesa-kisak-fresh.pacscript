@@ -164,7 +164,7 @@ compatible=("debian:bookworm" "ubuntu:jammy")
 
 prepare() {
 
-  cd "mesa-j"
+  cd mesa-j
   cp debian/patches/* ./
   for patch in *.patch; do
     patch -p1 < "${patch}"
@@ -176,7 +176,7 @@ prepare() {
 }
 
 build() {
-  cd "mesa-j"
+  cd mesa-j
   # shellcheck disable=SC2054
   local meson_options=(
     -D android-libbacktrace=disabled
@@ -222,7 +222,7 @@ build() {
 }
 
 package() {
-  cd "mesa-j"
+  cd mesa-j
   DESTDIR="${pkgdir}" meson install -C build
   rm -fr "${pkgdir:?}/usr/bin"
 
