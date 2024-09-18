@@ -156,8 +156,7 @@ makedepends=(
   "glslang-tools"
 )
 
-# Packages replaced by pacdeps : "rustc" "rustfmt" "bindgen" "directx-headers-dev" "meson"
-pacdeps=("libdrm" "meson-git" "directx-headers-git" "rust-bindgen-git")
+pacdeps=("libdrm" "meson-git" "directx-headers-git" "rust-bindgen-git" "wayland-protocols-git")
 repology=("project: mesa")
 maintainer=("xdavius <xdavius@github.com>")
 compatible=("debian:bookworm" "ubuntu:jammy")

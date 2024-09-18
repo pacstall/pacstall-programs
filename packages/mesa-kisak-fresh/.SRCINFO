@@ -91,6 +91,7 @@ pkgbase = mesa-kisak-fresh
 	pacdeps = meson-git
 	pacdeps = directx-headers-git
 	pacdeps = rust-bindgen-git
+	pacdeps = wayland-protocols-git
 	replaces = libxatracker2
 	replaces = libxatracker-dev
 	replaces = libd3dadapter9-mesa
