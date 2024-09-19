@@ -4,8 +4,8 @@ pkgdesc="A smarter cd command. Supports all major shells."
 maintainer=("lfromanini <lfromanini@yahoo.com>")
 repology=("project: zoxide")
 arch=("amd64" "arm64")
-pkgver="0.9.5"
+pkgver="0.9.6"
 source=("https://github.com/ajeetdsouza/zoxide/releases/download/v${pkgver}/zoxide_${pkgver}-1_${CARCH}.deb")
 
-sha256sums_amd64=("2175b8df1f6e83f74d0eb7812f8697d66dfb6363ae92e6e9a975791a3aad6bc0")
-sha256sums_arm64=("6ef41e82ba2e7399dc33b67e78065dbde3f2e0544ca56dad743b2e20b69dc833")
+sha256sums_amd64=("e26117e6ef010f010dbe47cef4f5f72faa6a96dfd8cc723ce535d0614c16bb78")
+sha256sums_arm64=("308928793a0b9dff52d98cddd1c96837dd7107dcdaece7641580085774cd1fab")
