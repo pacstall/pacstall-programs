@@ -51,7 +51,7 @@ package() {
 post_remove() {
   # Delete ~/.librewolf if it exists
   if [[ -d "${homedir}/.librewolf" ]]; then
-    if ask "Did you want to delete ~/.librewolf/ files?" Y; then
+    if ask "Do you want to delete ~/.librewolf/ files?" Y; then
       rm -rf "${homedir}/.librewolf"
     fi
   fi
