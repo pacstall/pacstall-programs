@@ -4,8 +4,8 @@ pkgver="130.0-3"
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom."
 arch=('amd64' 'arm64')
 maintainer=(
-"Oren Klopfer <oren@taumoda.com>"
-"James Ed Randson <jimedrand@disroot.org>"
+  "Oren Klopfer <oren@taumoda.com>"
+  "James Ed Randson <jimedrand@disroot.org>"
 )
 sha256sums_amd64=(
   "858f878b08692a545cf828e7fe3e993aa962b58edb512a93346816a1521090ce"
