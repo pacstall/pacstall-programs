@@ -1,16 +1,19 @@
-maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgname="librewolf-app"
 gives="librewolf"
-pkgver="125.0.3-1"
+pkgver="130.0-3"
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom."
 arch=('amd64' 'arm64')
+maintainer=(
+"Oren Klopfer <oren@taumoda.com>"
+"James Ed Randson <jimedrand@disroot.org>"
+)
 sha256sums_amd64=(
-  "103bf16bdbea3bdb9910febc1635fc3ec715a16f49607908c08660fab30c6915"
+  "858f878b08692a545cf828e7fe3e993aa962b58edb512a93346816a1521090ce"
   "SKIP"
   "SKIP"
 )
 sha256sums_arm64=(
-  "c1a067e09e2f9d98f9d7f6f435a8767b06ed405c7c46b26b1b59eb2aa961c55b"
+  "caee1932055ff05d3a1634232f083285a5982b18f670a560ab7865b3082df02f"
   "SKIP"
   "SKIP"
 )
@@ -48,7 +51,7 @@ package() {
 post_remove() {
   # Delete ~/.librewolf if it exists
   if [[ -d "${homedir}/.librewolf" ]]; then
-    if ask "Do you want to delete ~/.librewolf/ files?" Y; then
+    if ask "Did you want to delete ~/.librewolf/ files?" Y; then
       rm -rf "${homedir}/.librewolf"
     fi
   fi
