@@ -4,7 +4,10 @@ replaces=("${gives}")
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom"
 breaks=("${gives}-app" "${gives}-bin" "${gives}-git")
 repology=("project: librewolf")
-maintainer=("Oren Klopfer <oren@taumoda.com> and James Ed Randson <jimedrand@disroot.org>")
+maintainer=(
+  "Oren Klopfer <oren@taumoda.com>"
+  "James Ed Randson <jimedrand@disroot.org>"
+)
 incompatible=('debian:bullseye')
 arch=("amd64")
 pkgver="130.0-3"
