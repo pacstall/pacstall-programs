@@ -1,9 +1,12 @@
-maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgname="librewolf-app"
 gives="librewolf"
-pkgver="125.0.3-1"
+pkgver="130.0-3"
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom."
 arch=('amd64' 'arm64')
+maintainer=(
+  "Oren Klopfer <oren@taumoda.com>"
+  "James Ed Randson <jimedrand@disroot.org>"
+)
 sha256sums_amd64=(
   "103bf16bdbea3bdb9910febc1635fc3ec715a16f49607908c08660fab30c6915"
   "SKIP"
