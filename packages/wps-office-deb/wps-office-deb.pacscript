@@ -1,0 +1,9 @@
+pkgname="wps-office-deb"
+gives="wps-office"
+pkgver="11.1.0.11723.XA"
+source=("https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11723/${gives}_${pkgver}_amd64.deb")
+pkgdesc="One of the Best Office Solutions for Linux"
+repology=("project: wps-office")
+sha256sums=("fe6326210f69d94efdbf2728914d293036be391b93a614f58cd0e1ff1d4923b3")
+arch=('amd64')
+maintainer=("James Ed Randson <jimedrand@disroot.org")
