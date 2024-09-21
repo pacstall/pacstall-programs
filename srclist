@@ -5302,7 +5302,7 @@ pkgname = libressl
 ---
 pkgbase = librewolf-app
 	gives = librewolf
-	pkgver = 125.0.3-1
+	pkgver = 130.0-3
 	pkgdesc = A fork of Firefox, focused on privacy, security and freedom.
 	arch = amd64
 	arch = arm64
@@ -5310,17 +5310,18 @@ pkgbase = librewolf-app
 	breaks = librewolf-bin
 	breaks = librewolf-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: librewolf
-	source_amd64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/125.0.3-1/LibreWolf.x86_64.AppImage
+	source_amd64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/130.0-3/LibreWolf.x86_64.AppImage
 	source_amd64 = icon.png::https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
 	source_amd64 = librewolf.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/librewolf-app/librewolf.desktop
-	sha256sums_amd64 = 103bf16bdbea3bdb9910febc1635fc3ec715a16f49607908c08660fab30c6915
+	sha256sums_amd64 = 858f878b08692a545cf828e7fe3e993aa962b58edb512a93346816a1521090ce
 	sha256sums_amd64 = SKIP
 	sha256sums_amd64 = SKIP
-	source_arm64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/125.0.3-1/LibreWolf.aarch64.AppImage
+	source_arm64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/130.0-3/LibreWolf.aarch64.AppImage
 	source_arm64 = icon.png::https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
 	source_arm64 = librewolf.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/librewolf-app/librewolf.desktop
-	sha256sums_arm64 = c1a067e09e2f9d98f9d7f6f435a8767b06ed405c7c46b26b1b59eb2aa961c55b
+	sha256sums_arm64 = caee1932055ff05d3a1634232f083285a5982b18f670a560ab7865b3082df02f
 	sha256sums_arm64 = SKIP
 	sha256sums_arm64 = SKIP
 
@@ -5777,14 +5778,15 @@ pkgname = lsd-deb
 ---
 pkgbase = lunacy-deb
 	gives = lunacy
-	pkgver = 9.5.0
+	pkgver = 10.1
 	pkgdesc = Free design software that keeps your flow with AI tools and built-in graphics
 	url = https://icons8.com/lunacy/
 	arch = amd64
 	maintainer = Anifyuli <anifyuliansyah@gmail.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: lunacy
-	source = https://lcdn.icons8.com/setup/Lunacy_9.5.0.deb
-	sha256sums = 746db12e8a91409b1a47bbf4d22378e863f88c1f1656bc5aca7d824902c25254
+	source = https://lcdn.icons8.com/setup/Lunacy_10.1.deb
+	sha256sums = 54fc6c89e66d14278d23838774de17ed3d53d7023db26d91a53b1634d85bad94
 
 pkgname = lunacy-deb
 ---
