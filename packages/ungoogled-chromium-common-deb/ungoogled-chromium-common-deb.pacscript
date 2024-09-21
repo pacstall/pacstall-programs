@@ -1,10 +1,9 @@
 pkgname="ungoogled-chromium-common-deb"
-alias="ungoogled-chromium"
 gives="ungoogled-chromium-common"
 pkgver="100.0.4896.127-1"
 breaks=("${gives}-bin" "${gives}-git" "${gives}-app")
 source=("https://github.com/clickot/${alias}-binaries/releases/download/${pkgver}/${gives}_${pkgver}.unportable1_amd64.deb")
-url='https://ungoogled-software.github.io/${alias}-binaries/'
+url='https://ungoogled-software.github.io/ungoogled-chromium-binaries/'
 pkgdesc="Important dependences for Ungoogled Chromium."
 sha256sums=("cfa993af53ef4f37f3b5908e51abe9fbc949acd6d31e18e3f311e275ab8a3af1")
 arch=('amd64')
