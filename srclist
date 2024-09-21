@@ -10464,6 +10464,23 @@ pkgbase = ulauncher-deb
 
 pkgname = ulauncher-deb
 ---
+pkgbase = ungoogled-chromium-deb
+	gives = ungoogled-chromium
+	pkgver = 100.0.4896.127-1
+	pkgdesc = Google Chromium, sans integration with Google. A lightweight approach to removing Google web service dependency.
+	url = https://ungoogled-software.github.io/ungoogled-chromium-binaries/
+	arch = amd64
+	pacdeps = ungoogled-chromium-common-deb
+	breaks = ungoogled-chromium-bin
+	breaks = ungoogled-chromium-git
+	breaks = ungoogled-chromium-app
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: ungoogled-chromium
+	source = https://github.com/clickot/ungoogled-chromium-binaries/releases/download/100.0.4896.127-1/ungoogled-chromium_100.0.4896.127-1.unportable1_amd64.deb
+	sha256sums = 50a496b580443ab6e2ab9438e87f08d3a961b10bf4aac65cc083f3f71814dbe8
+
+pkgname = ungoogled-chromium-deb
+---
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
