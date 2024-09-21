@@ -1,6 +1,6 @@
 pkgbase = wps-office-deb
 	gives = wps-office
-	pkgver = 8.1.1
+	pkgver = 11.1.0.11723.XA
 	pkgdesc = One of the Best Office Solutions for Linux
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
