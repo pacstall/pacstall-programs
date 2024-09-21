@@ -1,0 +1,12 @@
+pkgname="ungoogled-chromium-deb"
+gives="ungoogled-chromium"
+pkgver="100.0.4896.127-1"
+breaks=("${gives}-bin" "${gives}-git" "${gives}-app")
+source=("https://github.com/brave/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_amd64.deb")
+url='https://brave.com/'
+pkgdesc="Release version of world's most unique, privacy friendly web browser"
+sha256sums=("afb96910ec4408ea89db75f14c7a92cba2a1c8d3d1c0e92e26f9d952eb813789")
+arch=('amd64')
+pacdeps=("brave-keyring-deb")
+repology=("project: brave")
+maintainer=("Elsie19 <elsie19@pm.me>")
