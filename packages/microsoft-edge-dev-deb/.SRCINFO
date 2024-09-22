@@ -1,0 +1,13 @@
+pkgbase = microsoft-edge-dev-deb
+	gives = microsoft-edge-dev
+	pkgver = 130.0.2835.2-1
+	pkgdesc = The Chromium-based web browser from Microsoft on Dev channel
+	arch = amd64
+	replaces = microsoft-edge-dev
+	maintainer = Oren Klopfer <oren@taumoda.com>
+  maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: microsoft-edge-dev
+	source = https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_130.0.2835.2-1_amd64.deb
+	sha256sums = b33c4c9eac3bb54bc04acc6c61a72b4374ada1f5091c158722117711f188540b
+
+pkgname = microsoft-edge-dev-deb
