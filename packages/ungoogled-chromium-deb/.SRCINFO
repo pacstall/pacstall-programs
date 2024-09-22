@@ -7,6 +7,7 @@ pkgbase = ungoogled-chromium-deb
 	breaks = ungoogled-chromium-bin
 	breaks = ungoogled-chromium-git
 	breaks = ungoogled-chromium-app
+	incompatible = debian:stable
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: ungoogled-chromium
 	source = https://github.com/berkley4/ungoogled-chromium-debian/releases/download/129.0.6668.58-1/ungoogled-chromium_129.0.6668.58-1_amd64.deb
