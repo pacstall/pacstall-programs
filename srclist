@@ -6134,14 +6134,15 @@ pkgname = microsoft-edge-dev-deb
 ---
 pkgbase = microsoft-edge-stable-deb
 	gives = microsoft-edge-stable
-	pkgver = 120.0.2210.144
-	pkgdesc = The web browser from Microsoft
+	pkgver = 129.0.2792.52-1
+	pkgdesc = The Chromium-based web browser from Microsoft
 	arch = amd64
 	replaces = microsoft-edge-stable
 	maintainer = Oren Klopfer <oren@taumoda.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: microsoft-edge
-	source = https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_120.0.2210.144-1_amd64.deb
-	sha256sums = 3bfecb768a5c31f498c7c720f4134353a2b16cf7e717dad85c3ed0ea3ba004b5
+	source = https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_129.0.2792.52-1_amd64.deb
+	sha256sums = b62aba3f00eb1fc65cb5fc83cdaf56dd63ac8fb340aefe17c8c3c6594edf5bb0
 
 pkgname = microsoft-edge-stable-deb
 ---
