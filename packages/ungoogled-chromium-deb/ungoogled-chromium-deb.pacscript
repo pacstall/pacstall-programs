@@ -1,0 +1,12 @@
+pkgname="ungoogled-chromium-deb"
+gives="ungoogled-chromium"
+pkgver="129.0.6668.58-1"
+breaks=("${gives}-bin" "${gives}-git" "${gives}-app")
+source=("https://github.com/berkley4/${gives}-debian/releases/download/${pkgver}/${gives}_${pkgver}_amd64.deb")
+url='https://github.com/berkley4/${gives}-debian'
+pkgdesc="Google Chromium, sans integration with Google. A lightweight approach to removing Google web service dependency."
+sha256sums=("9e8c04f057b31a993f7450da6a2fda810e8bd5f07ff58b57656a6d590046af4a")
+arch=('amd64')
+repology=("project: ungoogled-chromium")
+incompatible=("debian:stable") #It will removed when Debian Trixie has been released
+maintainer=("James Ed Randson <jimedrand@disroot.org>")
