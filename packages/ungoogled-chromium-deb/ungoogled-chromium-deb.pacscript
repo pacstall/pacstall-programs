@@ -8,4 +8,5 @@ pkgdesc="Google Chromium, sans integration with Google. A lightweight approach t
 sha256sums=("9e8c04f057b31a993f7450da6a2fda810e8bd5f07ff58b57656a6d590046af4a")
 arch=('amd64')
 repology=("project: ungoogled-chromium")
+incompatible=("debian:stable") #It will removed when Debian Trixie has been released
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
