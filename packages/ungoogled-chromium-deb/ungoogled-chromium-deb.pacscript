@@ -1,8 +1,8 @@
 pkgname="ungoogled-chromium-deb"
 gives="ungoogled-chromium"
-pkgver="100.0.4896.127-1"
+pkgver="129.0.6668.58-1"
 breaks=("${gives}-bin" "${gives}-git" "${gives}-app")
-source=("https://github.com/berkley4/${gives}-debian/releases/download/129.0.6668.58-1/${gives}_${pkgver}_amd64.deb")
+source=("https://github.com/berkley4/${gives}-debian/releases/download/${pkgver}/${gives}_${pkgver}_amd64.deb")
 url='https://github.com/berkley4/${gives}-debian'
 pkgdesc="Google Chromium, sans integration with Google. A lightweight approach to removing Google web service dependency."
 sha256sums=("9e8c04f057b31a993f7450da6a2fda810e8bd5f07ff58b57656a6d590046af4a")
