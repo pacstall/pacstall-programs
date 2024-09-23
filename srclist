@@ -5203,6 +5203,30 @@ pkgbase = libfdk-aac1-deb
 
 pkgname = libfdk-aac1-deb
 ---
+pkgbase = libgbinder-deb
+	gives = libgbinder
+	pkgver = 1.1.25
+	pkgdesc = Binder client library
+	arch = amd64
+	arch = arm64
+	depends = libc6
+	depends = libglib2.0-0t64
+	pacdeps = libglibutil-deb
+	replaces = libgbinder
+	incompatible = debian:bookworm
+	incompatible = debian:bullseye
+	incompatible = debian:buster
+	incompatible = ubuntu:jammy
+	incompatible = ubuntu:focal
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: libgbinder
+	sha256sums = 7d2318f807f9cf130184354d8f9a2c6d278ef121483e4a31af8cc5873356b115
+	source_amd64 = https://repo.waydro.id/dists/noble/libgbinder_1.1.25_amd64.deb
+	sha256sums_amd64 = 2e4d0ee2af9f04f2cbbd04c4e7d8cfaba6e0e46a8c50eaedb29aaa70a3d22b38
+	source_arm64 = https://repo.waydro.id/dists/noble/libgbinder_1.1.25_arm64.deb
+
+pkgname = libgbinder-deb
+---
 pkgbase = libgc-nix
 	pkgver = 8.2.6
 	pkgdesc = The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (patched for Nix)
