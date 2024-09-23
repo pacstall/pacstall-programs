@@ -10,6 +10,7 @@ pkgbase = libglibutil-deb
 	maintainer = Slava Monich <slava.monich@jolla.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libglibutil
+	incompatible= debian:stable
 	source_amd64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_amd64.deb
 	sha256sums_amd64 = c3f5928f8395f4d716f1d15867bd30d26211577efa82ff1dfba034d0ad290a0d
 	source_arm64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_arm64.deb
