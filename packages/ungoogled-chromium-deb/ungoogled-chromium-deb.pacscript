@@ -1,4 +1,4 @@
-pkgname="ungoogled-chromium-stable-deb"
+pkgname="ungoogled-chromium-deb"
 gives="ungoogled-chromium"
 replaces=("${gives}")
 repology=("project: ${gives}")
