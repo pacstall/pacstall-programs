@@ -5217,6 +5217,7 @@ pkgbase = libglibutil-deb
 	depends = libc6
 	depends = libglib2.0-0t64
 	replaces = libglibutil
+	incompatible = debian:stable
 	maintainer = Slava Monich <slava.monich@jolla.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libglibutil
