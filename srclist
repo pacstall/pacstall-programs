@@ -5208,6 +5208,29 @@ pkgbase = libgc-nix
 
 pkgname = libgc-nix
 ---
+pkgbase = libglibutil-deb
+	gives = libglibutil
+	pkgver = 1.0.66
+	pkgdesc = Library of glib utilities
+	arch = amd64
+	arch = arm64
+	depends = libc6
+	depends = libglib2.0-0t64
+	replaces = libglibutil
+	incompatible = debian:bookworm
+	incompatible = debian:bullseye
+	incompatible = debian:buster
+	incompatible = ubuntu:jammy
+	incompatible = ubuntu:focal
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: libglibutil
+	source_amd64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_amd64.deb
+	sha256sums_amd64 = c3f5928f8395f4d716f1d15867bd30d26211577efa82ff1dfba034d0ad290a0d
+	source_arm64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_arm64.deb
+	sha256sums_arm64 = a6924cecef94f067f22995040dac5ce51d38b6189890c1d9ad73fed8caf57da6
+
+pkgname = libglibutil-deb
+---
 pkgbase = libicu-deb
 	gives = libicu72
 	pkgver = 72.1
