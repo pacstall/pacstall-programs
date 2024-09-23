@@ -12,7 +12,6 @@ pkgbase = libglibutil-deb
 	incompatible = debian:buster
 	incompatible = ubuntu:jammy
 	incompatible = ubuntu:focal
-	maintainer = Slava Monich <slava.monich@jolla.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libglibutil
 	source_amd64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_amd64.deb
