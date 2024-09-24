@@ -1,5 +1,5 @@
 pkgname="hamclock-big"
-pkgver="4.05"
+pkgver="4.07"
 pkgrel="3"
 source=(
   "https://github.com/fang64/hamclock/archive/refs/tags/v${pkgver}.tar.gz"
@@ -11,7 +11,7 @@ breaks=("hamclock" "hamclock-bigger" "hamclock-huge")
 replaces=("hamclock-big" "${breaks[@]}")
 pkgdesc="Clock and world map with extra features for amateur radio (1600x960 version)"
 sha256sums=(
-  "eb2c82c7c40fbda4b774848c5b90bb225ab3caafcd1b2e71fec41e828375c41d"
+  "e1f110901c674edf1495df5876d7dfe9c8281386f1f3d36a45f43059f445c992"
   "df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d"
 )
 maintainer=("Roy Williams <fang64@gmail.com>")

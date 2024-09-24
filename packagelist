@@ -3,6 +3,7 @@ adapta-gtk-theme-git
 adw-gtk-theme
 adw-gtk3
 alacritty
+amf-headers
 amfora-bin
 an-anime-game-launcher-bin
 ananicy-cpp
@@ -83,6 +84,7 @@ dbeaver-ce-deb
 deadbeef-deb
 deskcut-deb
 dino-git
+directx-headers-git
 discord
 discord-canary
 discord-deb
@@ -130,6 +132,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+ffnvcodec-headers
 ffsend-bin
 firefox-arm64-deb
 firefox-bin
@@ -253,12 +256,15 @@ lemonbar-xft-git
 lens
 lf-bin
 libcamera-git
+libcs50-git
 libcutefish-git
 libdisplay-info-git
 libdrm
 libeditline-troglobit
 libfdk-aac1-deb
+libgbinder-deb
 libgc-nix
+libglibutil-deb
 libicu-deb
 liblcf
 libndi4-deb
@@ -544,6 +550,7 @@ typora-deb
 u-boot-mobian-deb
 ugee-tablet-driver-deb
 ulauncher-deb
+ungoogled-chromium-deb
 unicorn-desktop-git
 unicorn-mobile-git
 universal-ctags-git
@@ -570,6 +577,7 @@ warpinator-deb
 watchexec-bin
 wavey-launcher-bin
 wayland
+wayland-protocols-git
 waynergy
 webapp-manager
 webapp-manager-deb
@@ -607,6 +615,8 @@ youtube-dl-git
 youtube-music-deb
 yt-dlp
 zap
+zen-browser-generic-bin
+zen-browser-specific-bin
 zentile-bin
 zettlr-deb
 zig-bin
