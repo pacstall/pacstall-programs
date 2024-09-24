@@ -3458,29 +3458,31 @@ pkgname = gomuks-deb
 ---
 pkgbase = google-chrome-beta-deb
 	gives = google-chrome-beta
-	pkgver = 125.0.6422.26
+	pkgver = 130.0.6723.6
 	pkgdesc = The web browser built by Google - Beta channel
 	arch = amd64
 	replaces = google-chrome-beta
 	maintainer = Oren Klopfer <oren@taumoda.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: google-chrome
 	repology = visiblename: google-chrome-beta
-	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-beta/google-chrome-beta_125.0.6422.26-1_amd64.deb
-	sha256sums = 9db9c6e1cd37e977c814a206312def125592ce9ac548ef7f8e1fda1e57c33ddf
+	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-beta/google-chrome-beta_130.0.6723.6-1_amd64.deb
+	sha256sums = 02b7a272153ae08afcb16828d6b8bb930f76dfd3e481032572e91b228e0a84da
 
 pkgname = google-chrome-beta-deb
 ---
 pkgbase = google-chrome-deb
 	gives = google-chrome-stable
-	pkgver = 120.0.6099.199
+	pkgver = 129.0.6668.58
 	pkgdesc = The popular and trusted web browser by Google
 	arch = amd64
 	replaces = google-chrome-stable
 	maintainer = Oren Klopfer <oren@taumoda.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: google-chrome
 	repology = repo: aur
-	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_120.0.6099.199-1_amd64.deb
-	sha256sums = e0158b9f4fa060d586e03b2895b63a5a54ef5d697bb59219ae7a9796b1941a34
+	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_129.0.6668.58-1_amd64.deb
+	sha256sums = 945606c2976272fa7e1384beb30e3edee1504b018abe1c857a70593158159cca
 
 pkgname = google-chrome-deb
 ---
@@ -5202,6 +5204,30 @@ pkgbase = libfdk-aac1-deb
 	sha256sums = 4b824bbc6fdd47c5a01b9a61b8b1dbb318242d9f2af1c7ad2bd5d7e9fd4d3600
 
 pkgname = libfdk-aac1-deb
+---
+pkgbase = libgbinder-deb
+	gives = libgbinder
+	pkgver = 1.1.25
+	pkgdesc = Binder client library
+	arch = amd64
+	arch = arm64
+	depends = libc6
+	depends = libglib2.0-0t64
+	pacdeps = libglibutil-deb
+	replaces = libgbinder
+	incompatible = debian:bookworm
+	incompatible = debian:bullseye
+	incompatible = debian:buster
+	incompatible = ubuntu:jammy
+	incompatible = ubuntu:focal
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: libgbinder
+	source_amd64 = https://repo.waydro.id/dists/noble/libgbinder_1.1.25_amd64.deb
+	sha256sums_amd64 = 2e4d0ee2af9f04f2cbbd04c4e7d8cfaba6e0e46a8c50eaedb29aaa70a3d22b38
+	source_arm64 = https://repo.waydro.id/dists/noble/libgbinder_1.1.25_arm64.deb
+	sha256sums_arm64 = 7d2318f807f9cf130184354d8f9a2c6d278ef121483e4a31af8cc5873356b115
+
+pkgname = libgbinder-deb
 ---
 pkgbase = libgc-nix
 	pkgver = 8.2.6
