@@ -1,13 +1,13 @@
 pkgname="zen-browser-specific-bin"
 gives="zen-browser"
-pkgver="1.0.1-a"
+pkgver="1.0.1-a.4"
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
 url="https://github.com/zen-browser/desktop"
 license=("MPL-2.0")
 repology=("project: zen-browser")
 arch=("amd64")
 source=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-specific.tar.bz2")
-sha256sums=('b72f76d671f703f2cb6260800559c34a7645653d5b87c131c56ea9487c7b24b3')
+sha256sums=('fc1e14a8e50fa375507859c4ce84b139d7bb0431771221bd932df6bd565308c1')
 
 package() {
   cd "${srcdir}"
