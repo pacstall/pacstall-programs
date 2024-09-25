@@ -8,7 +8,7 @@ repology=("project: zen-browser")
 arch=("amd64")
 source=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-generic.tar.bz2")
 sha256sums=('8b490ff5b55685abcac698d3267a7cdbb327db125086df13fa9482f0c67ed532')
-depends=("libasound2t64" "libatk1" "libc6" "libcairo" "libcairo2" "libdbus" "libfontconfig1" "libfreetype6" "libgcc" "libgdk" "libglib2" "libgtk" "libpango" "libpangocairo" "libstdc" "libx11" "libx11" "libxcb" "libxcb" "libxcomposite1" "libxcursor1" "libxdamage1" "libxext" "libxfixes" "libxi" "libxrandr2" "libxrender")
+depends=("libasound2t64" "libatk1.0-0t64" "libc6" "libcairo-gobject2" "libcairo2" "libdbus-1-3" "libfontconfig1" "libfreetype6" "libgcc-s1" "libgdk-3-0t64" "libglib2.0-0t64" "libgtk-3-0t64" "libpango-1.0-0" "libpangocairo-1.0-0" "libstdc++6" "libx11-6" "libx11-xcb1" "libxcb-shm0" "libxcb1" "libxcomposite1" "libxcursor1" "libxdamage1" "libxext6" "libxfixes3" "libxi6" "libxrandr2" "libxrender1")
 
 package() {
   cd "${srcdir}"
