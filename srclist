@@ -11133,6 +11133,7 @@ pkgbase = wavey-launcher-bin
 
 pkgname = wavey-launcher-bin
 ---
+---
 pkgbase = wayland-protocols-git
 	gives = wayland-protocols
 	pkgver = 1.23
