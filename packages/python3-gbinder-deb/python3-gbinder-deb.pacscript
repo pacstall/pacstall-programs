@@ -12,4 +12,4 @@ pkgdesc="Cython extension module for C++ gbinder functions"
 source_amd64=("https://repo.waydro.id/dists/noble/${gives}_${pkgver}_amd64.deb")
 sha256sums_amd64=("6b03318a6cbb00ce3709b77dc2bd4afc556963083a40b06314a81c9e1134ae33")
 source_arm64=("https://repo.waydro.id/dists/noble/${gives}_${pkgver}_arm64.deb")
-sha256sums=("761d8a9f64fee0c8e0af759a1d90a56fedadc6ade3baac3c8a9f8c6e86da6149")
+sha256sums_arm64=("761d8a9f64fee0c8e0af759a1d90a56fedadc6ade3baac3c8a9f8c6e86da6149")
