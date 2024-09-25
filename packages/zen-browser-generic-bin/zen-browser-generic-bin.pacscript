@@ -20,31 +20,31 @@ package() {
 
   mkdir -p "${pkgdir}/usr/share/applications/"
   echo '[Desktop Entry]
-  Name=Zen Browser
-  Comment=Experience tranquillity while browsing the web without people tracking you!
-  Exec=/usr/lib/zen-browser/zen-bin %u
-  X-MultipleArgs=false
-  Terminal=false
-  Type=Application
-  Icon=zen-browser
-  Categories=Network;WebBrowser;
-  MimeType=application/json;application/pdf;application/rdf+xml;application/rss+xml;application/x-xpinstall;application/xhtml+xml;application/xml;audio/flac;audio/ogg;audio/webm;image/avif;image/gif;image/jpeg;image/png;image/svg+xml;image/webp;text/html;text/xml;video/ogg;video/webm;x-scheme-handler/chrome;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/mailto;
-  StartupWMClass=zen-alpha
-  StartupNotify=true
-  Keywords=Internet;WWW;Browser;Web;Explorer;
-  Actions=new-window;new-private-window;profilemanager;
+Name=Zen Browser
+Comment=Experience tranquillity while browsing the web without people tracking you!
+Exec=/usr/lib/zen-browser/zen-bin %u
+X-MultipleArgs=false
+Terminal=false
+Type=Application
+Icon=zen-browser
+Categories=Network;WebBrowser;
+MimeType=application/json;application/pdf;application/rdf+xml;application/rss+xml;application/x-xpinstall;application/xhtml+xml;application/xml;audio/flac;audio/ogg;audio/webm;image/avif;image/gif;image/jpeg;image/png;image/svg+xml;image/webp;text/html;text/xml;video/ogg;video/webm;x-scheme-handler/chrome;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/mailto;
+StartupWMClass=zen-alpha
+StartupNotify=true
+Keywords=Internet;WWW;Browser;Web;Explorer;
+Actions=new-window;new-private-window;profilemanager;
 
-  [Desktop Action new-window]
-  Name=Open a New Window
-  Exec=/usr/lib/zen-browser/zen-bin %u
+[Desktop Action new-window]
+Name=Open a New Window
+Exec=/usr/lib/zen-browser/zen-bin %u
 
-  [Desktop Action new-private-window]
-  Name=Open a New Private Window
-  Exec=/usr/lib/zen-browser --private-window %u
+[Desktop Action new-private-window]
+Name=Open a New Private Window
+Exec=/usr/lib/zen-browser --private-window %u
 
-  [Desktop Action profilemanager]
-  Name=Open the Profile Manager
-  Exec=/usr/lib/zen-browser --ProfileManager %u' | tee "${pkgdir}/usr/share/applications/zen-browser.desktop" > /dev/null
+[Desktop Action profilemanager]
+Name=Open the Profile Manager
+Exec=/usr/lib/zen-browser --ProfileManager %u' | tee "${pkgdir}/usr/share/applications/zen-browser.desktop" > /dev/null
 
   mkdir -p "${pkgdir}"/usr/bin
   ln -sf "/usr/lib/zen-browser/zen-bin" "${pkgdir}/usr/bin/zen-bin"
