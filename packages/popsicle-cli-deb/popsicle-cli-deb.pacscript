@@ -9,4 +9,4 @@ sha256sums_amd64=("85b6513cc53d3933cd21cbc9ec677739d6545e4cad9156a1d296831ca09c3
 source_arm64=("https://apt.pop-os.org/release/pool/noble/${gives}/a473f89bdc9436bbb513071248406f22dce02dac/${gives}_${pkgver}_arm64.deb")
 sha256sums_arm64=("a99185a391dd7a9ce7dfd38d2a037669ae919e1e29482d8ee75a21bc901ebff6"
 arch=("amd64" "arm64")
-maintainer=("James Ed Randson <jimedrand@disroot.org>")
+maintainer=("James Ed Randson <jimedrand@disroot.org>" "Runa Inoue Anderson <runachin@disroot.org>)
