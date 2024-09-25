@@ -1,0 +1,13 @@
+pkgname="waydroid-deb"
+gives="waydroid"
+replaces=("${gives}")
+arch=("any")
+repology=("project: ${gives}")
+pkgver="1.4.3"
+maintainer=("James Ed Randson <jimedrand@disroot.org>")
+pacdeps=("python3-gbinder-deb)
+depends=("lxc" "python3" "python3-gi" "gir1.2-gtk-3.0" "dbus" "python3-dbus" "polkitd" "iptables")
+incompatible=("debian:bookworm" "debian:bullseye" "debian:buster" "ubuntu:jammy" "ubuntu:focal")
+pkgdesc="A container-based approach to boot a full Android system on regular GNU/Linux systems running Wayland based desktops"
+source=("https://repo.waydro.id/dists/noble/${gives}_${pkgver}_all.deb")
+sha256sums=("e7e19ca664d496cae15b9e7fcabf43aa667ec77d93a8598f7cf3eea58a739596")
