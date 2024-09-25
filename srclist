@@ -3855,7 +3855,7 @@ pkgbase = hakuneko-deb
 pkgname = hakuneko-deb
 ---
 pkgbase = hamclock-big
-	pkgver = 4.07
+	pkgver = 4.08
 	pkgrel = 3
 	pkgdesc = Clock and world map with extra features for amateur radio (1600x960 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -3875,15 +3875,15 @@ pkgbase = hamclock-big
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-big
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.07.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.08.tar.gz
 	source = hamclock.desktop
-	sha256sums = e1f110901c674edf1495df5876d7dfe9c8281386f1f3d36a45f43059f445c992
+	sha256sums = 9bc33afef8fc15558d3fa3e57e3e4e25e53b77351df61b00fccfc9d69c442e01
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-big
 ---
 pkgbase = hamclock-bigger
-	pkgver = 4.07
+	pkgver = 4.08
 	pkgdesc = Clock and world map with extra features for amateur radio (2400x1440 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	makedepends = gcc
@@ -3902,15 +3902,15 @@ pkgbase = hamclock-bigger
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-bigger
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.07.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.08.tar.gz
 	source = hamclock.desktop
-	sha256sums = e1f110901c674edf1495df5876d7dfe9c8281386f1f3d36a45f43059f445c992
+	sha256sums = 9bc33afef8fc15558d3fa3e57e3e4e25e53b77351df61b00fccfc9d69c442e01
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-bigger
 ---
 pkgbase = hamclock-huge
-	pkgver = 4.07
+	pkgver = 4.08
 	pkgdesc = Clock and world map with extra features for amateur radio (3200x1920 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	makedepends = gcc
@@ -3929,15 +3929,15 @@ pkgbase = hamclock-huge
 	replaces = hamclock-bigger
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-huge
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.07.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.08.tar.gz
 	source = hamclock.desktop
-	sha256sums = e1f110901c674edf1495df5876d7dfe9c8281386f1f3d36a45f43059f445c992
+	sha256sums = 9bc33afef8fc15558d3fa3e57e3e4e25e53b77351df61b00fccfc9d69c442e01
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-huge
 ---
 pkgbase = hamclock
-	pkgver = 4.07
+	pkgver = 4.08
 	pkgrel = 2
 	pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -3957,9 +3957,9 @@ pkgbase = hamclock
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.07.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.08.tar.gz
 	source = hamclock.desktop
-	sha256sums = e1f110901c674edf1495df5876d7dfe9c8281386f1f3d36a45f43059f445c992
+	sha256sums = 9bc33afef8fc15558d3fa3e57e3e4e25e53b77351df61b00fccfc9d69c442e01
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock
