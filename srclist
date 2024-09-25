@@ -8182,6 +8182,30 @@ pkgbase = python3-flit-core
 
 pkgname = python3-flit-core
 ---
+pkgbase = python3-gbinder-deb
+	gives = python3-gbinder
+	pkgver = 1.1.2
+	pkgdesc = Cython extension module for C++ gbinder functions
+	arch = amd64
+	arch = arm64
+	depends = libc6
+	depends = python3
+	pacdeps = libgbinder-deb
+	replaces = python3-gbinder
+	incompatible = debian:bookworm
+	incompatible = debian:bullseye
+	incompatible = debian:buster
+	incompatible = ubuntu:jammy
+	incompatible = ubuntu:focal
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: python3-gbinder
+	source_amd64 = https://repo.waydro.id/dists/noble/python3-gbinder_1.1.2_amd64.deb
+	sha256sums_amd64 = 6b03318a6cbb00ce3709b77dc2bd4afc556963083a40b06314a81c9e1134ae33
+	source_arm64 = https://repo.waydro.id/dists/noble/python3-gbinder_1.1.2_arm64.deb
+	sha256sums_arm64 = 761d8a9f64fee0c8e0af759a1d90a56fedadc6ade3baac3c8a9f8c6e86da6149
+
+pkgname = python3-gbinder-deb
+---
 pkgbase = python3-imdbpy-deb
 	gives = python3-imdbpy
 	pkgver = 2021.04.18
