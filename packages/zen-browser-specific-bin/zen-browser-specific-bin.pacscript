@@ -29,7 +29,7 @@ package() {
   Type=Application
   Icon=zen-browser
   Categories=Network;WebBrowser;
-  MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;
+  MimeType=application/json;application/pdf;application/rdf+xml;application/rss+xml;application/x-xpinstall;application/xhtml+xml;application/xml;audio/flac;audio/ogg;audio/webm;image/avif;image/gif;image/jpeg;image/png;image/svg+xml;image/webp;text/html;text/xml;video/ogg;video/webm;x-scheme-handler/chrome;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/mailto;
   StartupWMClass=zen-alpha
   StartupNotify=true
   Keywords=Internet;WWW;Browser;Web;Explorer;
