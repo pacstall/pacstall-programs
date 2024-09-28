@@ -45,6 +45,7 @@ optdepends=(
 )
 makedepends=(
   "blueprint-compiler"
+  "gettext"
   "desktop-file-utils"
   "appstream-util"
   "meson"
@@ -56,6 +57,13 @@ makedepends=(
   "libgtk-4-dev"
   "libadwaita-1-dev"
   "gir1.2-gtk-4.0"
+)
+# For testing and unstable until someone push python3-orjson
+compatible=(
+  "debian:trixie"
+  "debian:sid"
+  "ubuntu:oracular"
+  "ubuntu:devel"
 )
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=("ba582ef2eaec4f3e533fd92b9b064223373e55b4d942113f071fc90800d49c34")

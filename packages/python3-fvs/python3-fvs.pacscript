@@ -8,6 +8,12 @@ depends=("python3-orjson")
 makedepends=("python3-setuptools")
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=("c57bcda81cd7500bc54b8f93c81405cccbc4c54b794209f8316ae27f43372696")
+compatible=(
+  "debian:trixie"
+  "debian:sid"
+  "ubuntu:oracular"
+  "ubuntu:devel"
+)
 
 build() {
   cd "FVS-${pkgver}"
