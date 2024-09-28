@@ -892,7 +892,7 @@ pkgname = blueprint-compiler
 ---
 pkgbase = bottles
 	pkgver = 51.13
-	pkgdesc = Easily manage wine and proton prefix
+	pkgdesc = Easily manage wine and proton prefixes
 	url = https://github.com/bottlesdevs/Bottles
 	arch = amd64
 	depends = cabextract
