@@ -13,13 +13,13 @@ depends=("libasound2" "libatk1.0-0" "libc6" "libcairo-gobject2" "libcairo2" "lib
 package() {
   cd "${srcdir}"
 
-  # Lib
+  # Zen
   mkdir -p "${pkgdir}/usr/lib/zen-browser"
   cp -r zen/* "${pkgdir}/usr/lib/zen-browser"
   chmod +x "${pkgdir}/usr/lib/zen-browser/zen"
   chmod +x "${pkgdir}/usr/lib/zen-browser/zen-bin"
 
-  # Desktop
+  # Desktop entry
   mkdir -p "${pkgdir}/usr/share/applications/"
   echo '[Desktop Entry]
 Name=Zen Browser
@@ -42,16 +42,19 @@ Exec=/usr/lib/zen-browser/zen-bin %u
 
 [Desktop Action new-private-window]
 Name=Open a New Private Window
-Exec=/usr/lib/zen-browser --private-window %u
+Exec=/usr/lib/zen-browser/zen-bin --private-window %u
 
 [Desktop Action profilemanager]
 Name=Open the Profile Manager
-Exec=/usr/lib/zen-browser --ProfileManager %u' | tee "${pkgdir}/usr/share/applications/zen-browser.desktop" > /dev/null
+Exec=/usr/lib/zen-browser/zen-bin --ProfileManager %u' | tee "${pkgdir}/usr/share/applications/zen-browser.desktop" > /dev/null
 
-  # bin
+  # Executable
   mkdir -p "${pkgdir}"/usr/bin
-  ln -sf "/usr/lib/zen-browser/zen-bin" "${pkgdir}/usr/bin/zen-bin"
-  ln -sf "/usr/lib/zen-browser/zen" "${pkgdir}/usr/bin/zen"
+  # shellcheck disable=SC2016
+  echo '#!/usr/bin/bash
+[[ -z $MOZ_DISABLE_WAYLAND ]] && { [[ $XDG_CURRENT_DESKTOP == "GNOME" ]] && [[ -n $WAYLAND_DISPLAY ]] || [[ $XDG_SESSION_TYPE == "wayland" ]]; } && export MOZ_ENABLE_WAYLAND=1 && export MOZ_DBUS_REMOTE=1
+exec /usr/lib/zen-browser/zen-bin "$@"' | tee "${pkgdir}/usr/bin/zen-browser" > /dev/null
+  chmod +x "${pkgdir}/usr/bin/zen-browser"
 
   # Icons
   for i in 16x16 32x32 48x48 64x64 128x128; do
@@ -59,4 +62,12 @@ Exec=/usr/lib/zen-browser --ProfileManager %u' | tee "${pkgdir}/usr/share/applic
     ln -s "/usr/lib/zen-browser/browser/chrome/icons/default/default${i/x*/}.png" \
       "${pkgdir}/usr/share/icons/hicolor/${i}/apps/zen-browser.png"
   done
+
+  # Policies
+  mkdir -p "${pkgdir}/usr/lib/zen-browser/distribution"
+  echo '{
+    "policies": {
+        "DisableAppUpdate": true
+    }
+}' | tee "${pkgdir}/usr/lib/zen-browser/distribution/policies.json" > /dev/null
 }
