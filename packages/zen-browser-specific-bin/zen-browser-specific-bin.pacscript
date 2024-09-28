@@ -1,11 +1,13 @@
 pkgname="zen-browser-specific-bin"
 gives="zen-browser"
 pkgver="1.0.1-a.5"
+pkgrel=2
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
 url="https://github.com/zen-browser/desktop"
 license=("MPL-2.0")
 repology=("project: zen-browser")
 arch=("amd64")
+maintainer=("D-Brox <davidfbg00@gmail.com>")
 source=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-specific.tar.bz2")
 sha256sums=('f4d5ddef8d9a91565cb95ad66c8df510015bf74696cfbc2d8a257d838d3dd3c8')
 depends=("libasound2" "libatk1.0-0" "libc6" "libcairo-gobject2" "libcairo2" "libdbus-1-3" "libfontconfig1" "libfreetype6" "libgcc-s1" "libgdk-pixbuf-2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0" "libstdc++6" "libx11-6" "libx11-xcb1" "libxcb-shm0" "libxcb1" "libxcomposite1" "libxcursor1" "libxdamage1" "libxext6" "libxfixes3" "libxi6" "libxrandr2" "libxrender1")
