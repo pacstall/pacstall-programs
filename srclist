@@ -1583,7 +1583,7 @@ pkgbase = cutefish-wallpapers-git
 pkgname = cutefish-wallpapers-git
 ---
 pkgbase = davinci-resolve
-	pkgver = 18.6.6
+	pkgver = 19.0.1
 	pkgdesc = Professional A/V post-production software suite from Blackmagic Design
 	url = https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion
 	arch = amd64
@@ -1647,7 +1647,7 @@ pkgbase = davinci-resolve
 	license = custom:commercial
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: davinci-resolve
-	source = davinci-resolve-18.6.6.zip::https://github.com/oklopfer/debs/raw/master/empty
+	source = davinci-resolve-19.0.1.zip::https://github.com/oklopfer/debs/raw/master/empty
 
 pkgname = davinci-resolve
 ---
