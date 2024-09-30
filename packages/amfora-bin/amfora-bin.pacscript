@@ -9,9 +9,9 @@ sha256sums=(
   "812e1faad6f6d4817eac60d36813472afebe2980cd2e661151a3d98669274207"
 )
 source=(
-  "https://github.com/makeworld-the-better-one/amfora/releases/download/v${pkgver}/amfora_${pkgver}_linux_64-bit"
+  "https://github.com/makew0rld/amfora/releases/download/v${pkgver}/amfora_${pkgver}_linux_64-bit"
   "amfora.png::https://roboticoverlords.org/amfora.png"
-  "amfora.desktop::https://raw.githubusercontent.com/makeworld-the-betterne/amfora/master/amfora.desktop"
+  "amfora.desktop::https://raw.githubusercontent.com/makew0rld/amfora/master/amfora.desktop"
 )
 maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: ${gives}")

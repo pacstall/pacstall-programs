@@ -1,6 +1,6 @@
 pkgname="ghcup-bin"
 gives="ghcup"
-pkgver="0.1.22.0"
+pkgver="0.1.30.0"
 pkgdesc="Installer for Haskell, a general-purpose programming language"
 arch=('amd64' 'arm64' 'armhf' 'i386')
 depends=('libgmp-dev')
@@ -12,13 +12,13 @@ repology=("project: ${gives}")
 
 _baseurl="https://downloads.haskell.org/~${gives}/${pkgver}"
 source_amd64=("${gives}::${_baseurl}/x86_64-linux-${gives}-${pkgver}")
-sha256sums_amd64=("bf213f4dfd2271b46ca52e2f14e96850ce32e9115e5acc90f1dc5a4e815e32af")
+sha256sums_amd64=("fea4499d0cbdf71c554bfb7febebb81d1bcd09a4c4cfb7a90905ef9bff4931cb")
 source_arm64=("${gives}::${_baseurl}/aarch64-linux-${gives}-${pkgver}")
-sha256sums_arm64=("3eda556959462579b73558616646c9fc01a583acc7a4611bb21a32706deae142")
+sha256sums_arm64=("20e7d3f4e4dfd3583f3af9f37d61ca19595c4c48bc318dffcf61f425ea1eda03")
 source_armhf=("${gives}::${_baseurl}/armv7-linux-${gives}-${pkgver}")
-sha256sums_armhf=("7c66253e52c5fb627a4d4b203a69e69f4d7732348ad6a830a41d7e2d79a61c5d")
+sha256sums_armhf=("6dfbe24f1a6e0e0a916d0e22739b7f926b1e020731707a1aacb2579bd7ddf77f")
 source_i386=("${gives}::${_baseurl}/i386-linux-${gives}-${pkgver}")
-sha256sums_i386=("1fd4fa989653a127d33f90cb4cc11fd024ea4085e795c0b0f6ed97afc5e8b634")
+sha256sums_i386=("7267e2a77ff57fe71908dffae7970e560caf75536d50211d5c11555b673972f1")
 
 package() {
   install -Dm755 ./"${gives}" -t "${pkgdir}/usr/bin"

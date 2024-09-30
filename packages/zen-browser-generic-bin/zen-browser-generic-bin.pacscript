@@ -1,24 +1,27 @@
 pkgname="zen-browser-generic-bin"
 gives="zen-browser"
-pkgver="1.0.1-a.5"
+pkgver="1.0.1-a.6"
+pkgrel=1
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
-url="https://github.com/zen-browser/desktop"
+url="https://zen-browser.app/"
 license=("MPL-2.0")
 repology=("project: zen-browser")
 arch=("amd64")
+maintainer=("D-Brox <davidfbg00@gmail.com>")
 source=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-generic.tar.bz2")
-sha256sums=('8b490ff5b55685abcac698d3267a7cdbb327db125086df13fa9482f0c67ed532')
+sha256sums=('fa4a624734e2df3a50560d2deb709547f4a1febe84b85b4e1397057d0ee74bf0')
 depends=("libasound2" "libatk1.0-0" "libc6" "libcairo-gobject2" "libcairo2" "libdbus-1-3" "libfontconfig1" "libfreetype6" "libgcc-s1" "libgdk-pixbuf-2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0" "libstdc++6" "libx11-6" "libx11-xcb1" "libxcb-shm0" "libxcb1" "libxcomposite1" "libxcursor1" "libxdamage1" "libxext6" "libxfixes3" "libxi6" "libxrandr2" "libxrender1")
 
 package() {
   cd "${srcdir}"
 
-  # Create directories
+  # Zen
   mkdir -p "${pkgdir}/usr/lib/zen-browser"
   cp -r zen/* "${pkgdir}/usr/lib/zen-browser"
   chmod +x "${pkgdir}/usr/lib/zen-browser/zen"
   chmod +x "${pkgdir}/usr/lib/zen-browser/zen-bin"
 
+  # Desktop entry
   mkdir -p "${pkgdir}/usr/share/applications/"
   echo '[Desktop Entry]
 Name=Zen Browser
@@ -41,15 +44,19 @@ Exec=/usr/lib/zen-browser/zen-bin %u
 
 [Desktop Action new-private-window]
 Name=Open a New Private Window
-Exec=/usr/lib/zen-browser --private-window %u
+Exec=/usr/lib/zen-browser/zen-bin --private-window %u
 
 [Desktop Action profilemanager]
 Name=Open the Profile Manager
-Exec=/usr/lib/zen-browser --ProfileManager %u' | tee "${pkgdir}/usr/share/applications/zen-browser.desktop" > /dev/null
+Exec=/usr/lib/zen-browser/zen-bin --ProfileManager %u' | tee "${pkgdir}/usr/share/applications/zen-browser.desktop" > /dev/null
 
+  # Executable
   mkdir -p "${pkgdir}"/usr/bin
-  ln -sf "/usr/lib/zen-browser/zen-bin" "${pkgdir}/usr/bin/zen-bin"
-  ln -sf "/usr/lib/zen-browser/zen" "${pkgdir}/usr/bin/zen"
+  # shellcheck disable=SC2016
+  echo '#!/usr/bin/bash
+[[ -z $MOZ_DISABLE_WAYLAND ]] && { [[ $XDG_CURRENT_DESKTOP == "GNOME" ]] && [[ -n $WAYLAND_DISPLAY ]] || [[ $XDG_SESSION_TYPE == "wayland" ]]; } && export MOZ_ENABLE_WAYLAND=1 && export MOZ_DBUS_REMOTE=1
+exec /usr/lib/zen-browser/zen-bin "$@"' | tee "${pkgdir}/usr/bin/zen-browser" > /dev/null
+  chmod +x "${pkgdir}/usr/bin/zen-browser"
 
   # Icons
   for i in 16x16 32x32 48x48 64x64 128x128; do
@@ -57,4 +64,12 @@ Exec=/usr/lib/zen-browser --ProfileManager %u' | tee "${pkgdir}/usr/share/applic
     ln -s "/usr/lib/zen-browser/browser/chrome/icons/default/default${i/x*/}.png" \
       "${pkgdir}/usr/share/icons/hicolor/${i}/apps/zen-browser.png"
   done
+
+  # Policies
+  mkdir -p "${pkgdir}/usr/lib/zen-browser/distribution"
+  echo '{
+    "policies": {
+        "DisableAppUpdate": true
+    }
+}' | tee "${pkgdir}/usr/lib/zen-browser/distribution/policies.json" > /dev/null
 }

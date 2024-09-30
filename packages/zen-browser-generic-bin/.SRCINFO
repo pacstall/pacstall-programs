@@ -1,8 +1,9 @@
 pkgbase = zen-browser-generic-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.5
+	pkgver = 1.0.1-a.6
+	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
-	url = https://github.com/zen-browser/desktop
+	url = https://zen-browser.app/
 	arch = amd64
 	depends = libasound2
 	depends = libatk1.0-0
@@ -32,8 +33,9 @@ pkgbase = zen-browser-generic-bin
 	depends = libxrandr2
 	depends = libxrender1
 	license = MPL-2.0
+	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.5.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.5/zen.linux-generic.tar.bz2
-	sha256sums = 8b490ff5b55685abcac698d3267a7cdbb327db125086df13fa9482f0c67ed532
+	source = zen-browser-1.0.1-a.6.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.6/zen.linux-generic.tar.bz2
+	sha256sums = fa4a624734e2df3a50560d2deb709547f4a1febe84b85b4e1397057d0ee74bf0
 
 pkgname = zen-browser-generic-bin
