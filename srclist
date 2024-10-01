@@ -6464,18 +6464,31 @@ pkgname = moka-icon-theme
 ---
 pkgbase = mold-bin
 	gives = mold
-	pkgver = 2.33.0
+	pkgver = 2.34.0
 	pkgdesc = A modern linker
+	url = https://github.com/rui314/mold
 	arch = amd64
 	arch = arm64
+	arch = armhf
+	arch = ppc64el
+	arch = riscv64
+	arch = s390x
 	breaks = mold-git
 	breaks = mold-bin
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: mold
-	source_amd64 = https://github.com/rui314/mold/releases/download/v2.33.0/mold-2.33.0-x86_64-linux.tar.gz
-	sha256sums_amd64 = e169f7aaec6fbbad5e02ce8d705f59ed9372179ea180afb3fc967c3941ab2c16
-	source_arm64 = https://github.com/rui314/mold/releases/download/v2.33.0/mold-2.33.0-aarch64-linux.tar.gz
-	sha256sums_arm64 = 20ba9736a3dc0e0c9d5df177f375ad9c9d2a88864727e80a3e21d71abc7874e4
+	source_amd64 = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-x86_64-linux.tar.gz
+	sha256sums_amd64 = 0405c58d9afb47dad44912faa21a8fc2f8835352434b458c3ae9665e6581d1cb
+	source_arm64 = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-aarch64-linux.tar.gz
+	sha256sums_arm64 = e1f5c611e2450e27ea936fa33824ae860f6cbb5c7db67e73e801cee38725946a
+	source_armhf = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-arm-linux.tar.gz
+	sha256sums_armhf = e1f5c611e2450e27ea936fa33824ae860f6cbb5c7db67e73e801cee38725946a
+	source_ppc64el = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-ppc64le-linux.tar.gz
+	sha256sums_ppc64el = e1f5c611e2450e27ea936fa33824ae860f6cbb5c7db67e73e801cee38725946a
+	source_riscv64 = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-riscv64-linux.tar.gz
+	sha256sums_riscv64 = e1f5c611e2450e27ea936fa33824ae860f6cbb5c7db67e73e801cee38725946a
+	source_s390x = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-s390x-linux.tar.gz
+	sha256sums_s390x = e1f5c611e2450e27ea936fa33824ae860f6cbb5c7db67e73e801cee38725946a
 
 pkgname = mold-bin
 ---
