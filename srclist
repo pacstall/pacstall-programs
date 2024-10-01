@@ -12091,6 +12091,44 @@ pkgbase = zap
 
 pkgname = zap
 ---
+pkgbase = zed-editor-preview-bin
+	gives = zed-editor-preview
+	pkgver = 0.155.1
+	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)
+	url = https://zed.dev
+	arch = x86_64
+	arch = aarch64
+	license = GPL-3.0-or-later
+	license = AGPL-3.0-or-later
+	license = Apache-2.0
+	maintainer = bibelin <balian1belin@yandex.ru>
+	repology = project: zed-editor
+	source_x86_64 = https://zed.dev/api/releases/preview/0.155.1/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = afc3f27925af4c4d029d5bf5e420384fd4301c45aef7030d4ee8c4f4d61bbb6f
+	source_aarch64 = https://zed.dev/api/releases/preview/0.155.1/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 6962817f1b23b85e805e2da687b4fb718fe42a88740c4d834dca4c35e4089fa0
+
+pkgname = zed-editor-preview-bin
+---
+pkgbase = zed-editor-stable-bin
+	gives = zed-editor
+	pkgver = 0.154.3
+	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
+	url = https://zed.dev
+	arch = x86_64
+	arch = aarch64
+	license = GPL-3.0-or-later
+	license = AGPL-3.0-or-later
+	license = Apache-2.0
+	maintainer = bibelin <balian1belin@yandex.ru>
+	repology = project: zed-editor
+	source_x86_64 = https://zed.dev/api/releases/stable/0.154.3/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 79bddf0449a9ca9fbd6943362a726165e30eb15f36b6a4e7d04caa5758015aac
+	source_aarch64 = https://zed.dev/api/releases/stable/0.154.3/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 19995cfdd7fa3337a1c86e10ffed6e268726c2097e24c429e30dd7ff743bc7ef
+
+pkgname = zed-editor-stable-bin
+---
 pkgbase = zen-browser-generic-bin
 	gives = zen-browser
 	pkgver = 1.0.1-a.7
