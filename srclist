@@ -7710,10 +7710,9 @@ pkgbase = pgmigrate
 pkgname = pgmigrate
 ---
 pkgbase = picom
-	pkgver = 11.2
+	pkgver = 12.1
 	pkgdesc = A lightweight compositor for X11
 	url = https://github.com/yshui/picom
-	depends = libconfig9
 	depends = libdbus-1-3
 	depends = libegl1
 	depends = libepoxy0
@@ -7735,7 +7734,7 @@ pkgbase = picom
 	depends = libxcb-sync1
 	depends = libxcb-xfixes0
 	depends = libxcb1
-	makedepends = libconfig-dev
+	makedepends = cmake
 	makedepends = libdbus-1-dev
 	makedepends = libegl-dev
 	makedepends = libepoxy-dev
@@ -7771,8 +7770,8 @@ pkgbase = picom
 	replaces = picom
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: picom
-	source = https://github.com/yshui/picom/archive/refs/tags/v11.2.tar.gz
-	sha256sums = 1c1063936faf09ed9bba726e7737a562564b7a5f8cdef79d48fcdaf3669a4df4
+	source = https://github.com/yshui/picom/archive/refs/tags/v12.1.tar.gz
+	sha256sums = d1aab4277e3a123c41621fa57c1ed66cc4a6553174a69e259d3027cf984c452c
 
 pkgname = picom
 ---
