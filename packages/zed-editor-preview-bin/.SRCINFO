@@ -1,6 +1,7 @@
 pkgbase = zed-editor-preview-bin
 	gives = zed-editor-preview
 	pkgver = 0.155.1
+	pkgrel = 2
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)
 	url = https://zed.dev
 	arch = x86_64

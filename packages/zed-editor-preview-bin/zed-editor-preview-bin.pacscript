@@ -1,6 +1,7 @@
 pkgname="zed-editor-preview-bin"
 pkgdesc="A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)"
 pkgver="0.155.1"
+pkgrel="2"
 repology=("project: zed-editor")
 gives="zed-editor-preview"
 license=("GPL-3.0-or-later" "AGPL-3.0-or-later" "Apache-2.0")
@@ -31,6 +32,8 @@ package() {
   # "zed" command can conflict with /usr/sbin/zed from zfs-zed package
   sed -i "s/Exec=zed/Exec=${gives}/g" "${pkgdir}/usr/share/applications/${_desktop}"
   sed -i "s/Icon=zed/Icon=${gives}/g" "${pkgdir}/usr/share/applications/${_desktop}"
+
+  install -Dm644 "zed-${_channel}.app/licenses.md" -t "${pkgdir}/usr/share/doc/${gives}/"
 
   mkdir -p "${pkgdir}/usr/bin"
   # ZED_UPDATE_EXPLANATION blocks auto-updates and is used to inform the user
