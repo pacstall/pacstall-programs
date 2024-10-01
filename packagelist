@@ -3,6 +3,7 @@ adapta-gtk-theme-git
 adw-gtk-theme
 adw-gtk3
 alacritty
+amf-headers
 amfora-bin
 an-anime-game-launcher-bin
 ananicy-cpp
@@ -39,6 +40,7 @@ bitwig-studio-deb
 blender-bin
 bluegriffon-deb
 blueprint-compiler
+bottles
 bottom-deb
 bpytop-git
 brave-browser-beta-deb
@@ -131,6 +133,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+ffnvcodec-headers
 ffsend-bin
 firefox-arm64-deb
 firefox-bin
@@ -260,7 +263,9 @@ libdisplay-info-git
 libdrm
 libeditline-troglobit
 libfdk-aac1-deb
+libgbinder-deb
 libgc-nix
+libglibutil-deb
 libicu-deb
 liblcf
 libndi4-deb
@@ -422,11 +427,14 @@ pulsar-deb
 pycharm-community-bin
 python3-anyascii
 python3-flit-core
+python3-fvs
+python3-gbinder-deb
 python3-imdbpy-deb
 python3-levenshtein-deb
 python3-material-color-utilities
 python3-moddb
 python3-pypresence
+python3-vkbasalt-cli
 python3-zombie-imp
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
@@ -547,6 +555,7 @@ typora-deb
 u-boot-mobian-deb
 ugee-tablet-driver-deb
 ulauncher-deb
+ungoogled-chromium-deb
 unicorn-desktop-git
 unicorn-mobile-git
 universal-ctags-git
@@ -572,7 +581,9 @@ warp
 warpinator-deb
 watchexec-bin
 wavey-launcher-bin
+waydroid-deb
 wayland
+wayland-protocols-git
 waynergy
 webapp-manager
 webapp-manager-deb
@@ -610,6 +621,10 @@ youtube-dl-git
 youtube-music-deb
 yt-dlp
 zap
+zed-editor-preview-bin
+zed-editor-stable-bin
+zen-browser-generic-bin
+zen-browser-specific-bin
 zentile-bin
 zettlr-deb
 zig-bin
