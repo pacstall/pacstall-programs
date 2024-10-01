@@ -6390,7 +6390,7 @@ pkgbase = mint-themes
 pkgname = mint-themes
 ---
 pkgbase = mission-center
-	pkgver = 0.5.2
+	pkgver = 0.6.0
 	pkgdesc = Monitor your CPU, Memory, Disk, Network and GPU usage
 	url = https://gitlab.com/mission-center-devs/mission-center
 	arch = amd64
@@ -6418,8 +6418,8 @@ pkgbase = mission-center
 	compatible = ubuntu:oracular
 	compatible = ubuntu:devel
 	license = GPL-3.0-or-later
-	source = https://gitlab.com/mission-center-devs/mission-center/-/archive/v0.5.2/mission-center-v0.5.2.tar.gz
-	sha256sums = 801a1468ee50281ab42a51281e2f80699480f9c0220f976619ae2f7aa21df85a
+	source = https://gitlab.com/mission-center-devs/mission-center/-/archive/v0.6.0/mission-center-v0.6.0.tar.gz
+	sha256sums = 62ddce4f5078be8b9fca66923916012fe049799e5c11ef8f40377592be9c2f58
 
 pkgname = mission-center
 ---
@@ -12091,9 +12091,49 @@ pkgbase = zap
 
 pkgname = zap
 ---
+pkgbase = zed-editor-preview-bin
+	gives = zed-editor-preview
+	pkgver = 0.155.1
+	pkgrel = 2
+	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)
+	url = https://zed.dev
+	arch = x86_64
+	arch = aarch64
+	license = GPL-3.0-or-later
+	license = AGPL-3.0-or-later
+	license = Apache-2.0
+	maintainer = bibelin <balian1belin@yandex.ru>
+	repology = project: zed-editor
+	source_x86_64 = https://zed.dev/api/releases/preview/0.155.1/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = afc3f27925af4c4d029d5bf5e420384fd4301c45aef7030d4ee8c4f4d61bbb6f
+	source_aarch64 = https://zed.dev/api/releases/preview/0.155.1/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 6962817f1b23b85e805e2da687b4fb718fe42a88740c4d834dca4c35e4089fa0
+
+pkgname = zed-editor-preview-bin
+---
+pkgbase = zed-editor-stable-bin
+	gives = zed-editor
+	pkgver = 0.154.3
+	pkgrel = 2
+	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
+	url = https://zed.dev
+	arch = x86_64
+	arch = aarch64
+	license = GPL-3.0-or-later
+	license = AGPL-3.0-or-later
+	license = Apache-2.0
+	maintainer = bibelin <balian1belin@yandex.ru>
+	repology = project: zed-editor
+	source_x86_64 = https://zed.dev/api/releases/stable/0.154.3/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 79bddf0449a9ca9fbd6943362a726165e30eb15f36b6a4e7d04caa5758015aac
+	source_aarch64 = https://zed.dev/api/releases/stable/0.154.3/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 19995cfdd7fa3337a1c86e10ffed6e268726c2097e24c429e30dd7ff743bc7ef
+
+pkgname = zed-editor-stable-bin
+---
 pkgbase = zen-browser-generic-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.6
+	pkgver = 1.0.1-a.7
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -12128,14 +12168,14 @@ pkgbase = zen-browser-generic-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.6.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.6/zen.linux-generic.tar.bz2
-	sha256sums = fa4a624734e2df3a50560d2deb709547f4a1febe84b85b4e1397057d0ee74bf0
+	source = zen-browser-1.0.1-a.7.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.7/zen.linux-generic.tar.bz2
+	sha256sums = f0b86668a4715ef93a8c1bcf0831aa0f791221b0f235db071feba413cfce57fb
 
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.6
+	pkgver = 1.0.1-a.7
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -12170,8 +12210,8 @@ pkgbase = zen-browser-specific-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.6.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.6/zen.linux-specific.tar.bz2
-	sha256sums = b4c1f84a05082169cf099d0182860d4f96b9137898f3f92dac896664058134b6
+	source = zen-browser-1.0.1-a.7.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.7/zen.linux-specific.tar.bz2
+	sha256sums = 7333b2fe96599ff2b396698aa3a3117503663c32ee3ba62c25316a9219c487d2
 
 pkgname = zen-browser-specific-bin
 ---
