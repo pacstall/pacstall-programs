@@ -1005,18 +1005,22 @@ pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.66.118
+	pkgver = 1.70.123
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
+	arch = arm64
 	pacdeps = brave-keyring-deb
 	breaks = brave-browser-bin
 	breaks = brave-browser-git
 	breaks = brave-browser-app
 	maintainer = Elsie19 <elsie19@pm.me>
+	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source = https://github.com/brave/brave-browser/releases/download/v1.66.118/brave-browser_1.66.118_amd64.deb
-	sha256sums = afb96910ec4408ea89db75f14c7a92cba2a1c8d3d1c0e92e26f9d952eb813789
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.70.123_amd64.deb
+	sha256sums_amd64 = 1ebeff62bcbb7e14837b5833a59aad8ee203adb07a1ee0b53d27814371e501d1
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.70.123_arm64.deb
+	sha256sums_arm64 = 62a4996108a737241041db39002c8309e640f83e2c071c8cbcc88ebc3e8255e5
 
 pkgname = brave-browser-deb
 ---
@@ -1041,11 +1045,12 @@ pkgname = brave-browser-nightly-deb
 ---
 pkgbase = brave-keyring-deb
 	gives = brave-keyring
-	pkgver = 1.13
+	pkgver = 1.17
 	pkgdesc = Brave Browser keyring and repository files as a necessary dependency for brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-keyring/brave-keyring_1.13-1.deb
-	sha256sums = 0e5c33f32d908a6846b890c5d225f1a0cdebe96fea02879b776fa02877714dd2
+	maintainer = bibelin <balian1belin@yandex.ru>
+	source = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-keyring/brave-keyring_1.17-1.deb
+	sha256sums = d86caf9c97729762ea158396c47a28676260dee9f9473d67a964d5dd4b71946f
 
 pkgname = brave-keyring-deb
 ---
