@@ -1,12 +1,13 @@
 pkgname="popsicle"
 gives="popsicle"
-pkgver="1.3.0"
-source=("https://github.com/pop-os/popsicle/archive/refs/tags/1.3.0.zip")
+pkgver="1.3.3"
+source=("https://github.com/pop-os/popsicle/archive/refs/tags/1.3.3.zip")
 license="MIT"
 makedepends=("cargo" "libgtk-3-dev" "help2man")
 pkgdesc="Multiple USB File Flasher"
 external_connection=true
-sha256sums=("4dd0f92f46d0befabd56c0cea50829b4db6d2ae8a8673e3d31c7e4228b02248b")
+maintainer=("James Ed Randson <jimedrand@disroot.org>")
+sha256sums=("01d67266af21505d44c4f646d06946bfa4d53e60aa7f993f7bccb852ec09451e")
 
 build() {
   cd "${_archive}"
