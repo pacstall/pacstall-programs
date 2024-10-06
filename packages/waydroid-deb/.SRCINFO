@@ -11,6 +11,7 @@ pkgbase = waydroid-deb
 	depends = python3-dbus
 	depends = polkitd
 	depends = iptables
+	depends = python3-pyclipper
 	pacdeps = python3-gbinder-deb
 	replaces = waydroid
 	incompatible = debian:bookworm
