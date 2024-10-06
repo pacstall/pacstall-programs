@@ -1,15 +1,15 @@
 pkgname="zen-browser-generic-bin"
 gives="zen-browser"
-pkgver="1.0.1-a.5"
-pkgrel=2
+pkgver="1.0.1-a.7"
+pkgrel=1
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
-url="https://github.com/zen-browser/desktop"
+url="https://zen-browser.app/"
 license=("MPL-2.0")
 repology=("project: zen-browser")
 arch=("amd64")
 maintainer=("D-Brox <davidfbg00@gmail.com>")
 source=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-generic.tar.bz2")
-sha256sums=('8b490ff5b55685abcac698d3267a7cdbb327db125086df13fa9482f0c67ed532')
+sha256sums=('f0b86668a4715ef93a8c1bcf0831aa0f791221b0f235db071feba413cfce57fb')
 depends=("libasound2" "libatk1.0-0" "libc6" "libcairo-gobject2" "libcairo2" "libdbus-1-3" "libfontconfig1" "libfreetype6" "libgcc-s1" "libgdk-pixbuf-2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0" "libstdc++6" "libx11-6" "libx11-xcb1" "libxcb-shm0" "libxcb1" "libxcomposite1" "libxcursor1" "libxdamage1" "libxext6" "libxfixes3" "libxi6" "libxrandr2" "libxrender1")
 
 package() {

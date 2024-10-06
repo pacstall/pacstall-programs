@@ -532,7 +532,7 @@ pkgbase = armcord-deb
 pkgname = armcord-deb
 ---
 pkgbase = aseprite
-	pkgver = 1.3.8.1
+	pkgver = 1.3.9
 	pkgdesc = Animated sprite editor & pixel art tool
 	url = https://www.aseprite.org/
 	arch = amd64
@@ -546,15 +546,15 @@ pkgbase = aseprite
 	makedepends = libxcursor-dev
 	makedepends = libxi-dev
 	makedepends = ninja-build
-	noextract = aseprite-1.3.8.1.zip
+	noextract = aseprite-1.3.9.zip
 	noextract = skia-m102-861e4743af.zip
 	license = custom:EULA
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: aseprite
-	source = aseprite-1.3.8.1.zip::https://github.com/aseprite/aseprite/releases/download/v1.3.8.1/Aseprite-v1.3.8.1-Source.zip
+	source = aseprite-1.3.9.zip::https://github.com/aseprite/aseprite/releases/download/v1.3.9/Aseprite-v1.3.9-Source.zip
 	source = skia-m102-861e4743af.zip::https://github.com/aseprite/skia/releases/download/m102-861e4743af/Skia-Linux-Release-x64-libc++.zip
 	source = https://github.com/aseprite/strings.git
-	sha256sums = fc13536a9e14551245028d578493aa63f9978b943250936735dc62a5abfbee53
+	sha256sums = 672c8ddb12d4c180f6c27b33ec4b0faefe5df321c7d40c03cb62ad3182e584ff
 	sha256sums = 66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea
 	sha256sums = SKIP
 
@@ -1005,18 +1005,22 @@ pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.66.118
+	pkgver = 1.70.123
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
+	arch = arm64
 	pacdeps = brave-keyring-deb
 	breaks = brave-browser-bin
 	breaks = brave-browser-git
 	breaks = brave-browser-app
 	maintainer = Elsie19 <elsie19@pm.me>
+	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source = https://github.com/brave/brave-browser/releases/download/v1.66.118/brave-browser_1.66.118_amd64.deb
-	sha256sums = afb96910ec4408ea89db75f14c7a92cba2a1c8d3d1c0e92e26f9d952eb813789
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.70.123_amd64.deb
+	sha256sums_amd64 = 1ebeff62bcbb7e14837b5833a59aad8ee203adb07a1ee0b53d27814371e501d1
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.70.123_arm64.deb
+	sha256sums_arm64 = 62a4996108a737241041db39002c8309e640f83e2c071c8cbcc88ebc3e8255e5
 
 pkgname = brave-browser-deb
 ---
@@ -1041,11 +1045,12 @@ pkgname = brave-browser-nightly-deb
 ---
 pkgbase = brave-keyring-deb
 	gives = brave-keyring
-	pkgver = 1.13
+	pkgver = 1.17
 	pkgdesc = Brave Browser keyring and repository files as a necessary dependency for brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-keyring/brave-keyring_1.13-1.deb
-	sha256sums = 0e5c33f32d908a6846b890c5d225f1a0cdebe96fea02879b776fa02877714dd2
+	maintainer = bibelin <balian1belin@yandex.ru>
+	source = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-keyring/brave-keyring_1.17-1.deb
+	sha256sums = d86caf9c97729762ea158396c47a28676260dee9f9473d67a964d5dd4b71946f
 
 pkgname = brave-keyring-deb
 ---
@@ -1813,7 +1818,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.69
+	pkgver = 0.0.70
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1823,8 +1828,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.69/discord-0.0.69.deb
-	sha256sums = 2b3f4010ae5485fedaf22708468bc99b634e640e85176a6bd8b11e4377f7430c
+	source = https://dl.discordapp.net/apps/linux/0.0.70/discord-0.0.70.deb
+	sha256sums = 438d16a1ab7f1d329a36784e48974cb6c9ae8d1d73fe4c421f64c27f11afaee3
 
 pkgname = discord-deb
 ---
@@ -6390,7 +6395,7 @@ pkgbase = mint-themes
 pkgname = mint-themes
 ---
 pkgbase = mission-center
-	pkgver = 0.5.2
+	pkgver = 0.6.0
 	pkgdesc = Monitor your CPU, Memory, Disk, Network and GPU usage
 	url = https://gitlab.com/mission-center-devs/mission-center
 	arch = amd64
@@ -6418,8 +6423,8 @@ pkgbase = mission-center
 	compatible = ubuntu:oracular
 	compatible = ubuntu:devel
 	license = GPL-3.0-or-later
-	source = https://gitlab.com/mission-center-devs/mission-center/-/archive/v0.5.2/mission-center-v0.5.2.tar.gz
-	sha256sums = 801a1468ee50281ab42a51281e2f80699480f9c0220f976619ae2f7aa21df85a
+	source = https://gitlab.com/mission-center-devs/mission-center/-/archive/v0.6.0/mission-center-v0.6.0.tar.gz
+	sha256sums = 62ddce4f5078be8b9fca66923916012fe049799e5c11ef8f40377592be9c2f58
 
 pkgname = mission-center
 ---
@@ -6464,18 +6469,31 @@ pkgname = moka-icon-theme
 ---
 pkgbase = mold-bin
 	gives = mold
-	pkgver = 2.33.0
+	pkgver = 2.34.0
 	pkgdesc = A modern linker
+	url = https://github.com/rui314/mold
 	arch = amd64
 	arch = arm64
+	arch = armhf
+	arch = ppc64el
+	arch = riscv64
+	arch = s390x
 	breaks = mold-git
 	breaks = mold-bin
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: mold
-	source_amd64 = https://github.com/rui314/mold/releases/download/v2.33.0/mold-2.33.0-x86_64-linux.tar.gz
-	sha256sums_amd64 = e169f7aaec6fbbad5e02ce8d705f59ed9372179ea180afb3fc967c3941ab2c16
-	source_arm64 = https://github.com/rui314/mold/releases/download/v2.33.0/mold-2.33.0-aarch64-linux.tar.gz
-	sha256sums_arm64 = 20ba9736a3dc0e0c9d5df177f375ad9c9d2a88864727e80a3e21d71abc7874e4
+	source_amd64 = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-x86_64-linux.tar.gz
+	sha256sums_amd64 = 0405c58d9afb47dad44912faa21a8fc2f8835352434b458c3ae9665e6581d1cb
+	source_arm64 = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-aarch64-linux.tar.gz
+	sha256sums_arm64 = e1f5c611e2450e27ea936fa33824ae860f6cbb5c7db67e73e801cee38725946a
+	source_armhf = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-arm-linux.tar.gz
+	sha256sums_armhf = e1f5c611e2450e27ea936fa33824ae860f6cbb5c7db67e73e801cee38725946a
+	source_ppc64el = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-ppc64le-linux.tar.gz
+	sha256sums_ppc64el = e1f5c611e2450e27ea936fa33824ae860f6cbb5c7db67e73e801cee38725946a
+	source_riscv64 = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-riscv64-linux.tar.gz
+	sha256sums_riscv64 = e1f5c611e2450e27ea936fa33824ae860f6cbb5c7db67e73e801cee38725946a
+	source_s390x = https://github.com/rui314/mold/releases/download/v2.34.0/mold-2.34.0-s390x-linux.tar.gz
+	sha256sums_s390x = e1f5c611e2450e27ea936fa33824ae860f6cbb5c7db67e73e801cee38725946a
 
 pkgname = mold-bin
 ---
@@ -6729,7 +6747,7 @@ pkgbase = neovim-git
 pkgname = neovim-git
 ---
 pkgbase = neovim
-	pkgver = 0.10.1
+	pkgver = 0.10.2
 	pkgrel = 1
 	pkgdesc = Neovim is a vim fork maintained by the community
 	url = https://neovim.io/
@@ -6751,8 +6769,8 @@ pkgbase = neovim
 	replaces = neovim-runtime
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source = https://github.com/neovim/neovim/archive/refs/tags/v0.10.1.tar.gz
-	sha256sums = edce96e79903adfcb3c41e9a8238511946325ea9568fde177a70a614501af689
+	source = https://github.com/neovim/neovim/archive/refs/tags/v0.10.2.tar.gz
+	sha256sums = 546cb2da9fffbb7e913261344bbf4cf1622721f6c5a67aa77609e976e78b8e89
 
 pkgname = neovim
 ---
@@ -7710,10 +7728,9 @@ pkgbase = pgmigrate
 pkgname = pgmigrate
 ---
 pkgbase = picom
-	pkgver = 11.2
+	pkgver = 12.1
 	pkgdesc = A lightweight compositor for X11
 	url = https://github.com/yshui/picom
-	depends = libconfig9
 	depends = libdbus-1-3
 	depends = libegl1
 	depends = libepoxy0
@@ -7735,7 +7752,7 @@ pkgbase = picom
 	depends = libxcb-sync1
 	depends = libxcb-xfixes0
 	depends = libxcb1
-	makedepends = libconfig-dev
+	makedepends = cmake
 	makedepends = libdbus-1-dev
 	makedepends = libegl-dev
 	makedepends = libepoxy-dev
@@ -7771,8 +7788,8 @@ pkgbase = picom
 	replaces = picom
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: picom
-	source = https://github.com/yshui/picom/archive/refs/tags/v11.2.tar.gz
-	sha256sums = 1c1063936faf09ed9bba726e7737a562564b7a5f8cdef79d48fcdaf3669a4df4
+	source = https://github.com/yshui/picom/archive/refs/tags/v12.1.tar.gz
+	sha256sums = d1aab4277e3a123c41621fa57c1ed66cc4a6553174a69e259d3027cf984c452c
 
 pkgname = picom
 ---
@@ -12092,12 +12109,50 @@ pkgbase = zap
 
 pkgname = zap
 ---
+pkgbase = zed-editor-preview-bin
+	gives = zed-editor-preview
+	pkgver = 0.156.0
+	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)
+	url = https://zed.dev
+	arch = x86_64
+	arch = aarch64
+	license = GPL-3.0-or-later
+	license = AGPL-3.0-or-later
+	license = Apache-2.0
+	maintainer = bibelin <balian1belin@yandex.ru>
+	repology = project: zed-editor
+	source_x86_64 = https://zed.dev/api/releases/preview/0.156.0/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = a1db429f5d08ee91fe581abca1da05f16fe69d67ea318e804f7e9fb0f4c2aed3
+	source_aarch64 = https://zed.dev/api/releases/preview/0.156.0/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 7af1978056bbd3766a59ceeeee5fdc3db7a55cbc5a906b528a6baec76de4de31
+
+pkgname = zed-editor-preview-bin
+---
+pkgbase = zed-editor-stable-bin
+	gives = zed-editor
+	pkgver = 0.155.2
+	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
+	url = https://zed.dev
+	arch = x86_64
+	arch = aarch64
+	license = GPL-3.0-or-later
+	license = AGPL-3.0-or-later
+	license = Apache-2.0
+	maintainer = bibelin <balian1belin@yandex.ru>
+	repology = project: zed-editor
+	source_x86_64 = https://zed.dev/api/releases/stable/0.155.2/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = f926c3fa514f00030a54f9bbc2408b45a3ba2cb7c6e341182b21bbb7770690cd
+	source_aarch64 = https://zed.dev/api/releases/stable/0.155.2/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 64ebe2a1e3af33e9e4cc6e6b0946d2a20501925fa939217241a6cb5ae00f41a3
+
+pkgname = zed-editor-stable-bin
+---
 pkgbase = zen-browser-generic-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.5
-	pkgrel = 2
+	pkgver = 1.0.1-a.7
+	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
-	url = https://github.com/zen-browser/desktop
+	url = https://zen-browser.app/
 	arch = amd64
 	depends = libasound2
 	depends = libatk1.0-0
@@ -12129,17 +12184,17 @@ pkgbase = zen-browser-generic-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.5.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.5/zen.linux-generic.tar.bz2
-	sha256sums = 8b490ff5b55685abcac698d3267a7cdbb327db125086df13fa9482f0c67ed532
+	source = zen-browser-1.0.1-a.7.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.7/zen.linux-generic.tar.bz2
+	sha256sums = f0b86668a4715ef93a8c1bcf0831aa0f791221b0f235db071feba413cfce57fb
 
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.5
-	pkgrel = 2
+	pkgver = 1.0.1-a.7
+	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
-	url = https://github.com/zen-browser/desktop
+	url = https://zen-browser.app/
 	arch = amd64
 	depends = libasound2
 	depends = libatk1.0-0
@@ -12171,8 +12226,8 @@ pkgbase = zen-browser-specific-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.5.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.5/zen.linux-specific.tar.bz2
-	sha256sums = f4d5ddef8d9a91565cb95ad66c8df510015bf74696cfbc2d8a257d838d3dd3c8
+	source = zen-browser-1.0.1-a.7.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.7/zen.linux-specific.tar.bz2
+	sha256sums = 7333b2fe96599ff2b396698aa3a3117503663c32ee3ba62c25316a9219c487d2
 
 pkgname = zen-browser-specific-bin
 ---
