@@ -1,0 +1,12 @@
+pkgname="icecat-deb"
+gives="icecat"
+replaces=("${gives}")
+pkgdesc="GNU version of Firefox which uses ESR branch instead main release branch"
+breaks=("${gives}-app" "${gives}-bin" "${gives}-git")
+repology=("project: icecat")
+maintainer=("James Ed Randson <jimedrand@disroot.org>")
+incompatible=('debian:bullseye')
+arch=("amd64")
+pkgver="115.16.0"
+source=("https://icecatbrowser.org/assets/${gives}/${pkgver}/${gives}_115.16esr-1_amd64.deb")
+sha256sums=("6dc7a508e83dc3c122dc8bd836aff1e6f7ee880a58f23f4f3c5c420ae27c918a")
