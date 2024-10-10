@@ -5,6 +5,7 @@ pkgbase = intellij-idea-community-bin
 	arch = amd64
 	arch = arm64
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: intellij-idea-community
 	source_amd64 = https://download-cdn.jetbrains.com/idea/ideaIC-2024.2.3.tar.gz
 	source_amd64 = intellij-idea-community.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/intellij-idea-community-bin/intellij-idea-community.desktop

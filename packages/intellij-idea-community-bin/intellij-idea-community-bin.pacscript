@@ -35,4 +35,3 @@ package() {
   mkdir -p "${pkgdir}/usr/bin"
   ln -sf "/usr/share/intellij-idea-community/bin/idea.sh" "${pkgdir}/usr/bin/idea"
 }
-
