@@ -1,5 +1,5 @@
 pkgname="intellij-idea-community-bin"
-pkgver="2024.1"
+pkgver="2024.2.3"
 gives="intellij-idea-community"
 repology=("project: intellij-idea-community")
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>")
@@ -35,5 +35,3 @@ package() {
   mkdir -p "${pkgdir}/usr/bin"
   ln -sf "/usr/share/intellij-idea-community/bin/idea.sh" "${pkgdir}/usr/bin/idea"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:
