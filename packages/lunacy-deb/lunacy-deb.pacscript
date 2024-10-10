@@ -1,8 +1,8 @@
 pkgname="lunacy-deb"
 gives="lunacy"
-pkgver="10.1"
+pkgver="10.3"
 pkgdesc="Free design software that keeps your flow with AI tools and built-in graphics"
-sha256sums=("54fc6c89e66d14278d23838774de17ed3d53d7023db26d91a53b1634d85bad94")
+sha256sums=("f24c5ada3a5ee785a0cabac633870ce39ddbd56947ae122f66bf9e1fd35f02d8")
 maintainer=(
   "Anifyuli <anifyuliansyah@gmail.com>"
   "James Ed Randson <jimedrand@disroot.org>"

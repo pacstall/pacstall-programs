@@ -1,16 +1,16 @@
 pkgname="intellij-idea-community-bin"
-pkgver="2024.1"
+pkgver="2024.2.3"
 gives="intellij-idea-community"
 repology=("project: intellij-idea-community")
-maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>")
+maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>" "James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="IntelliJ IDEA is an IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages"
 arch=('amd64' 'arm64')
 sha256sums_amd64=(
-  "01d1b224c5e88592f954b17796a76fa8391cdcafef27264e703c7ffe47bb4065"
+  "2698adf2f0c4239f21b997faf9fc85954fd654a58d52ff630613fed70fb9699d"
   "20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293"
 )
 sha256sums_arm64=(
-  "a13e7a53b5c8a512fbcb72957f24e5515618a5533f17d72914da5445b736dac1"
+  "97d5b585b9c7d5465ef7a0e99a41c35c405a7658fe61ece64be84c6ed6e45e4c"
   "20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293"
 )
 source_amd64=(
@@ -35,5 +35,3 @@ package() {
   mkdir -p "${pkgdir}/usr/bin"
   ln -sf "/usr/share/intellij-idea-community/bin/idea.sh" "${pkgdir}/usr/bin/idea"
 }
-
-# vim:set ft=sh ts=2 sw=2 et:

@@ -1818,7 +1818,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.70
+	pkgver = 0.0.71
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1828,8 +1828,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.70/discord-0.0.70.deb
-	sha256sums = 438d16a1ab7f1d329a36784e48974cb6c9ae8d1d73fe4c421f64c27f11afaee3
+	source = https://dl.discordapp.net/apps/linux/0.0.71/discord-0.0.71.deb
+	sha256sums = 90b0292d2b0cd4308f43e873e4dfde99863f87cf4d77e4cdd30b9738ebbcd8eb
 
 pkgname = discord-deb
 ---
@@ -4575,19 +4575,20 @@ pkgname = intel-undervolt
 ---
 pkgbase = intellij-idea-community-bin
 	gives = intellij-idea-community
-	pkgver = 2024.1
+	pkgver = 2024.2.3
 	pkgdesc = IntelliJ IDEA is an IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages
 	arch = amd64
 	arch = arm64
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: intellij-idea-community
-	source_amd64 = https://download-cdn.jetbrains.com/idea/ideaIC-2024.1.tar.gz
+	source_amd64 = https://download-cdn.jetbrains.com/idea/ideaIC-2024.2.3.tar.gz
 	source_amd64 = intellij-idea-community.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/intellij-idea-community-bin/intellij-idea-community.desktop
-	sha256sums_amd64 = 01d1b224c5e88592f954b17796a76fa8391cdcafef27264e703c7ffe47bb4065
+	sha256sums_amd64 = 2698adf2f0c4239f21b997faf9fc85954fd654a58d52ff630613fed70fb9699d
 	sha256sums_amd64 = 20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293
-	source_arm64 = https://download-cdn.jetbrains.com/idea/ideaIC-2024.1-aarch64.tar.gz
+	source_arm64 = https://download-cdn.jetbrains.com/idea/ideaIC-2024.2.3-aarch64.tar.gz
 	source_arm64 = intellij-idea-community.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/intellij-idea-community-bin/intellij-idea-community.desktop
-	sha256sums_arm64 = a13e7a53b5c8a512fbcb72957f24e5515618a5533f17d72914da5445b736dac1
+	sha256sums_arm64 = 97d5b585b9c7d5465ef7a0e99a41c35c405a7658fe61ece64be84c6ed6e45e4c
 	sha256sums_arm64 = 20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293
 
 pkgname = intellij-idea-community-bin
@@ -5950,15 +5951,15 @@ pkgname = lsd-deb
 ---
 pkgbase = lunacy-deb
 	gives = lunacy
-	pkgver = 10.1
+	pkgver = 10.3
 	pkgdesc = Free design software that keeps your flow with AI tools and built-in graphics
 	url = https://icons8.com/lunacy/
 	arch = amd64
 	maintainer = Anifyuli <anifyuliansyah@gmail.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: lunacy
-	source = https://lcdn.icons8.com/setup/Lunacy_10.1.deb
-	sha256sums = 54fc6c89e66d14278d23838774de17ed3d53d7023db26d91a53b1634d85bad94
+	source = https://lcdn.icons8.com/setup/Lunacy_10.3.deb
+	sha256sums = f24c5ada3a5ee785a0cabac633870ce39ddbd56947ae122f66bf9e1fd35f02d8
 
 pkgname = lunacy-deb
 ---
@@ -8260,13 +8261,15 @@ pkgname = pulsar-deb
 ---
 pkgbase = pycharm-community-bin
 	gives = pycharm-community
-	pkgver = 2023.2.5
+	pkgver = 2024.2.3
 	pkgdesc = Python IDE for professional developers aimed at productivity with a keyboard-centric focus.
+	arch = amd64
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: pycharm
-	source = https://download.jetbrains.com/python/pycharm-community-2023.2.5.tar.gz
+	source = https://download.jetbrains.com/python/pycharm-community-2024.2.3.tar.gz
 	source = pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/pycharm-community-bin/pycharm.desktop
-	sha256sums = 3a35e0b2245e6ecad5dc05b0fc81cf36cb4f5fe0bc987c8559e04c808de9d072
+	sha256sums = 448f6c48a51bb419c68c763b0e4eefc0449ad7bbad534de3f93b2f1a40308833
 	sha256sums = 0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04
 
 pkgname = pycharm-community-bin
@@ -11134,17 +11137,18 @@ pkgname = vscode-insiders-deb
 ---
 pkgbase = vscodium-deb
 	gives = codium
-	pkgver = 1.92.1.24225
+	pkgver = 1.94.0.24282
 	pkgdesc = Binary releases of VS Code without MS branding/telemetry/licensing
 	arch = arm64
 	arch = amd64
 	breaks = codium
 	maintainer = Oren Klopfer <oren@taumoda.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: vscodium
-	source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.92.1.24225/codium_1.92.1.24225_arm64.deb
-	sha256sums_arm64 = 8511ca92f060da347594905b257283da057f922fba446f0ae8b5f1e670898e14
-	source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.92.1.24225/codium_1.92.1.24225_amd64.deb
-	sha256sums_amd64 = d42180d61f0dea52f9cf703d7cc9a5e8f11fc7d67572615a0af0217c886cf6c7
+	source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.94.0.24282/codium_1.94.0.24282_arm64.deb
+	sha256sums_arm64 = 682b257c6a70fa29d11359f5e90809c6a9d789257d953594b048232b446138b1
+	source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.94.0.24282/codium_1.94.0.24282_amd64.deb
+	sha256sums_amd64 = d3a70eaaea89a0c7783630051f08b057015696deedea761cc6fc40a502f94c13
 
 pkgname = vscodium-deb
 ---
@@ -12157,7 +12161,7 @@ pkgname = zap
 ---
 pkgbase = zed-editor-preview-bin
 	gives = zed-editor-preview
-	pkgver = 0.156.0
+	pkgver = 0.157.1
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)
 	url = https://zed.dev
 	arch = x86_64
@@ -12167,16 +12171,16 @@ pkgbase = zed-editor-preview-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/preview/0.156.0/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = a1db429f5d08ee91fe581abca1da05f16fe69d67ea318e804f7e9fb0f4c2aed3
-	source_aarch64 = https://zed.dev/api/releases/preview/0.156.0/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 7af1978056bbd3766a59ceeeee5fdc3db7a55cbc5a906b528a6baec76de4de31
+	source_x86_64 = https://zed.dev/api/releases/preview/0.157.1/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 126f699d49f53d461179ad9763cfbb89842c74e2f332b6d4f8aee387ddd35235
+	source_aarch64 = https://zed.dev/api/releases/preview/0.157.1/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 8d3f1d37226085405d6303640d19befca44a92d4d9f2b1489806783ad5f83404
 
 pkgname = zed-editor-preview-bin
 ---
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 0.155.2
+	pkgver = 0.156.0
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -12186,10 +12190,10 @@ pkgbase = zed-editor-stable-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/0.155.2/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = f926c3fa514f00030a54f9bbc2408b45a3ba2cb7c6e341182b21bbb7770690cd
-	source_aarch64 = https://zed.dev/api/releases/stable/0.155.2/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 64ebe2a1e3af33e9e4cc6e6b0946d2a20501925fa939217241a6cb5ae00f41a3
+	source_x86_64 = https://zed.dev/api/releases/stable/0.156.0/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 6146a3c4833650ad03e1c81ed41b0d151c9098c842e04273fd5f239ae47a3f62
+	source_aarch64 = https://zed.dev/api/releases/stable/0.156.0/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = df286346f6b660569cc758672296dd1531d3407443c72f0f22e17e794dd54000
 
 pkgname = zed-editor-stable-bin
 ---
