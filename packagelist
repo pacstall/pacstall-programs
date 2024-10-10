@@ -257,6 +257,7 @@ lbry-deb
 lemonbar-xft-git
 lens
 lf-bin
+libaquamarine-bin
 libcamera-git
 libcs50-git
 libcutefish-git
@@ -267,6 +268,7 @@ libfdk-aac1-deb
 libgbinder-deb
 libgc-nix
 libglibutil-deb
+libhyprutils-bin
 libicu-deb
 liblcf
 libndi4-deb
