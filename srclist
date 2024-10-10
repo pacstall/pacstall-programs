@@ -8234,13 +8234,15 @@ pkgname = pulsar-deb
 ---
 pkgbase = pycharm-community-bin
 	gives = pycharm-community
-	pkgver = 2023.2.5
+	pkgver = 2024.2.3
 	pkgdesc = Python IDE for professional developers aimed at productivity with a keyboard-centric focus.
+	arch = amd64
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: pycharm
-	source = https://download.jetbrains.com/python/pycharm-community-2023.2.5.tar.gz
+	source = https://download.jetbrains.com/python/pycharm-community-2024.2.3.tar.gz
 	source = pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/pycharm-community-bin/pycharm.desktop
-	sha256sums = 3a35e0b2245e6ecad5dc05b0fc81cf36cb4f5fe0bc987c8559e04c808de9d072
+	sha256sums = 448F6C48A51BB419C68C763B0E4EEFC0449AD7BBAD534DE3F93B2F1A40308833
 	sha256sums = 0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04
 
 pkgname = pycharm-community-bin
