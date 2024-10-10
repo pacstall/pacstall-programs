@@ -9,7 +9,7 @@ source=(
   "pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/pycharm.desktop"
 )
 sha256sums=(
-  "448F6C48A51BB419C68C763B0E4EEFC0449AD7BBAD534DE3F93B2F1A40308833"
+  "448f6c48a51bb419c68c763b0e4eefc0449ad7bbad534de3f93b2f1a40308833"
   "0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04"
 )
 repology=("project: pycharm")
