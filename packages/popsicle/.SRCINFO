@@ -1,12 +1,13 @@
 pkgbase = popsicle
 	gives = popsicle
-	pkgver = 1.3.0
+	pkgver = 1.3.3
 	pkgdesc = Multiple USB File Flasher
 	makedepends = cargo
 	makedepends = libgtk-3-dev
 	makedepends = help2man
 	license = MIT
-	source = https://github.com/pop-os/popsicle/archive/refs/tags/1.3.0.zip
-	sha256sums = 4dd0f92f46d0befabd56c0cea50829b4db6d2ae8a8673e3d31c7e4228b02248b
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source = https://github.com/pop-os/popsicle/archive/refs/tags/1.3.3.zip
+	sha256sums = 01d67266af21505d44c4f646d06946bfa4d53e60aa7f993f7bccb852ec09451e
 
 pkgname = popsicle
