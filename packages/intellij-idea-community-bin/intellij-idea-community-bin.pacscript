@@ -6,7 +6,7 @@ maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>")
 pkgdesc="IntelliJ IDEA is an IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages"
 arch=('amd64' 'arm64')
 sha256sums_amd64=(
-  "01d1b224c5e88592f954b17796a76fa8391cdcafef27264e703c7ffe47bb4065"
+  "2698adf2f0c4239f21b997faf9fc85954fd654a58d52ff630613fed70fb9699d"
   "20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293"
 )
 sha256sums_arm64=(
