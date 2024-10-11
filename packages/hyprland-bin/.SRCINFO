@@ -31,7 +31,6 @@ pkgbase = hyprland-bin
 	conflicts = hyprland
 	compatible = *:oracular
 	compatible = *:devel
-	compatible = debian:bookworm
 	compatible = debian:trixie
 	compatible = debian:sid
 	maintainer = Elsie19 <elsie19@pm.me>

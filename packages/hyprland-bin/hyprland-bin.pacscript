@@ -7,7 +7,7 @@ depends=("libegl1" "libxcb-util1" "libxcb-render0" "libxcb-image0" "libxcb-icccm
 # Oracular currently doesn't have a libhyprutils0 that is up to date with the SO file.
 # Same for aquamarine, but they just don't have it upstream.
 pacdeps=("libhyprutils-bin" "libaquamarine-bin")
-compatible=("*:oracular" "*:devel" "debian:bookworm" "debian:trixie" "debian:sid")
+compatible=("*:oracular" "*:devel" "debian:trixie" "debian:sid")
 pkgdesc="A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
 source=("https://github.com/hyprwm/Hyprland/releases/download/v${pkgver}/v${pkgver}.tar.gz")
 sha256sums=("4af254ce83f156df8a23c731f82b8879d015128b2185ae0b6a03c1b4caf49ec5")
