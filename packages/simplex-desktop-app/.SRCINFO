@@ -1,13 +1,13 @@
 pkgbase = simplex-desktop-app
 	gives = simplex-desktop
-	pkgver = 5.8.0
+	pkgver = 6.0.4
 	pkgdesc = The first messaging platform with no user identifiers - 100% private by design (GUI)
 	url = https://simplex.chat
 	arch = amd64
 	license = AGPL-3.0-or-later
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: simplex-desktop
-	source = simplex-desktop::https://github.com/simplex-chat/simplex-chat/releases/download/v5.8.0/simplex-desktop-x86_64.AppImage
-	sha512sums = 4183f6018dc2f08f82f3dd9ac6d6834cce13919c201d38ba792074b965de9c5b5071cdee37fb560cdd3479d26d0859a08a96ad61d358a6d0b0d2a4148b4355bc
+	source = simplex-desktop::https://github.com/simplex-chat/simplex-chat/releases/download/v6.0.4/simplex-desktop-x86_64.AppImage
+	sha512sums = ee7b2e7e63d6df065e6dc792c27634fe3cfa6a8623072fede69048bcfaf3eb4e1cd680a5f1c08c16a7153b5bdfdad0d8824ef5a40bc555402cfcfe1a50a95b3a
 
 pkgname = simplex-desktop-app

@@ -1,11 +1,11 @@
 pkgbase = prettier
-	pkgver = 3.2.5
+	pkgver = 3.3.3
 	pkgdesc = An opinionated code formatter
 	url = https://prettier.io
 	depends = nodejs
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: prettier
-	source = https://registry.npmjs.org/prettier/-/prettier-3.2.5.tgz
-	sha256sums = a9d68ae56e5b0fea5c9d8e68b67104dae8445db21e1d24fb3522f3f4c0fb271d
+	source = https://registry.npmjs.org/prettier/-/prettier-3.3.3.tgz
+	sha256sums = 2f1ecb0ab57a588e0d4d40d3d45239e71ebd8f0190199d0d3f87fe2283639f46
 
 pkgname = prettier
