@@ -1,7 +1,7 @@
 pkgbase = kate5-data-backport-deb
 	gives = kate5-data
 	pkgver = 22.04.3
-	pkgdesc = shared data files for Kate text editor
+	pkgdesc = Shared data files for the Kate text editor
 	arch = amd64
 	compatible = ubuntu:jammy
 	maintainer = Vaibhav Sharma <vvaibhavv3434@gmail.com>
