@@ -4247,8 +4247,7 @@ pkgname = hyprcursor-bin
 ---
 pkgbase = hyprland-bin
 	gives = hyprland
-	pkgver = 0.40.0
-	pkgrel = 2
+	pkgver = 0.44.1
 	pkgdesc = A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks
 	arch = amd64
 	depends = libegl1
@@ -4260,7 +4259,7 @@ pkgbase = hyprland-bin
 	depends = libxcb-res0
 	depends = libxcb-ewmh2
 	depends = libwayland-cursor0
-	depends = libdisplay-info1
+	depends = libdisplay-info2
 	depends = libxkbcommon0
 	depends = libglib2.0-0
 	depends = libharfbuzz0b
@@ -4271,17 +4270,20 @@ pkgbase = hyprland-bin
 	depends = libopengl0
 	depends = libglx0
 	depends = libgles2
+	depends = libxcb-errors0
+	depends = libxcursor1
+	depends = libhyprcursor0
+	pacdeps = libhyprutils-bin
+	pacdeps = libaquamarine-bin
 	conflicts = hyprland
-	compatible = *:mantic
-	compatible = *:noble
+	compatible = *:oracular
 	compatible = *:devel
-	compatible = debian:bookworm
 	compatible = debian:trixie
 	compatible = debian:sid
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: hyprland
-	source = https://github.com/hyprwm/Hyprland/releases/download/v0.40.0/v0.40.0.tar.gz
-	sha256sums = 746ac771c7675163b40b5fb989e0a8aabd8d1a18a63aaf228d2bd0af2e0ff3d1
+	source = https://github.com/hyprwm/Hyprland/releases/download/v0.44.1/v0.44.1.tar.gz
+	sha256sums = 4af254ce83f156df8a23c731f82b8879d015128b2185ae0b6a03c1b4caf49ec5
 
 pkgname = hyprland-bin
 ---
@@ -5138,6 +5140,17 @@ pkgbase = lf-bin
 
 pkgname = lf-bin
 ---
+pkgbase = libaquamarine-bin
+	pkgver = 0.4.2
+	pkgdesc = Very light Linux rendering backend library
+	url = https://github.com/hyprwm/aquamarine
+	arch = amd64
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://github.com/hyprwm/aquamarine/releases/download/v0.4.2/v0.4.2.tar.gz
+	sha256sums = 1860804d49afde8bc04aacf164c4271ee8a51ae2425214bc77b8c71c66429019
+
+pkgname = libaquamarine-bin
+---
 pkgbase = libcamera-git
 	gives = libcamera
 	pkgver = 0.1.0
@@ -5365,6 +5378,17 @@ pkgbase = libglibutil-deb
 	sha256sums_arm64 = a6924cecef94f067f22995040dac5ce51d38b6189890c1d9ad73fed8caf57da6
 
 pkgname = libglibutil-deb
+---
+pkgbase = libhyprutils-bin
+	pkgver = 0.2.3
+	pkgdesc = Utilities library used across the Hyprland ecosystem
+	url = https://github.com/hyprwm/hyprutils
+	arch = amd64
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://github.com/hyprwm/hyprutils/releases/download/v0.2.3/v0.2.3.tar.gz
+	sha256sums = 326acd16f293148fb8bc8647ff350e2858362ecace2b3fae4c55d3416a85122b
+
+pkgname = libhyprutils-bin
 ---
 pkgbase = libicu-deb
 	gives = libicu72
