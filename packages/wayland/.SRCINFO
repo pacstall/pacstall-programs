@@ -1,0 +1,47 @@
+pkgbase = wayland
+	gives = wayland
+	pkgver = 1.23.0
+	pkgrel = 2
+	pkgdesc = A computer display server protocol
+	url = https://wayland.freedesktop.org/
+	arch = x86_64
+	arch = i686
+	depends = libglib2.0-0
+	depends = libffi8
+	depends = libexpat1
+	depends = libxml2
+	makedepends = meson
+	makedepends = pkg-config
+	makedepends = cmake
+	makedepends = libxslt1-dev
+	makedepends = doxygen
+	makedepends = xmlto
+	makedepends = graphviz
+	makedepends = docbook-xsl
+	makedepends = libglib2.0-dev
+	makedepends = libffi-dev
+	makedepends = libexpat1-dev
+	makedepends = libxml2-dev
+	conflicts = sddm
+	conflicts = kde-standard
+	replaces = libwayland-client0
+	replaces = libwayland-egl1
+	replaces = libwayland-server0
+	replaces = libwayland-cursor0
+	replaces = libwayland-dev
+	replaces = libwayland-egl-backend-dev
+	replaces = libwayland-doc
+	replaces = libwayland-bin
+	provides = libwayland-client0=1.23.0
+	provides = libwayland-egl1=1.23.0
+	provides = libwayland-server0=1.23.0
+	provides = libwayland-cursor0=1.23.0
+	provides = libwayland-dev=1.23.0
+	provides = libwayland-egl-backend-dev=1.23.0
+	provides = libwayland-doc=1.23.0
+	provides = libwayland-bin=1.23.0
+	maintainer = xdavius <xdavius@github.com>
+	source = https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.0/downloads/wayland-1.23.0.tar.xz
+	sha256sums = 05b3e1574d3e67626b5974f862f36b5b427c7ceeb965cb36a4e6c2d342e45ab2
+
+pkgname = wayland

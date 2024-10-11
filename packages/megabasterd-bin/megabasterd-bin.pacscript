@@ -1,6 +1,6 @@
 pkgname="megabasterd-bin"
 gives="megabasterd"
-pkgver="8.21"
+pkgver="8.22"
 pkgdesc="Yet another unofficial (and ugly) cross-platform MEGA downloader/uploader/streaming suite"
 url="https://github.com/tonikelope/${gives}"
 depends=("java11-runtime")
@@ -9,7 +9,7 @@ source=(
   "${gives}.png::https://raw.githubusercontent.com/tonikelope/${gives}/v${pkgver}/src/main/resources/images/pica_roja_big.png"
 )
 sha256sums=(
-  "3f7460b5ba20cf84ea034e9f2c49def9b07cf59680a3b36492875d851f9e0241"
+  "4a31af5c8eeeb2559747b34222dc63f43a0ca8a558bb9bdba256d7954e90d003"
   "SKIP"
 )
 maintainer=("vigress8 <vig@disroot.org>")

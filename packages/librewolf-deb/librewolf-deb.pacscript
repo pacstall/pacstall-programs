@@ -4,9 +4,14 @@ replaces=("${gives}")
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom"
 breaks=("${gives}-app" "${gives}-bin" "${gives}-git")
 repology=("project: librewolf")
-maintainer=("Oren Klopfer <oren@taumoda.com>")
+maintainer=(
+  "Oren Klopfer <oren@taumoda.com>"
+  "James Ed Randson <jimedrand@disroot.org>"
+)
 incompatible=('debian:bullseye')
-arch=("amd64")
-pkgver="125.0.3-1"
-source=("https://deb.librewolf.net/pool/jammy/${gives}-${pkgver}.en-US.ubuntu22.x86_64.deb")
-sha256sums=("9841643f5760a2c53b3101d7cb8fc2677a29805e72d37783a182f2545ac0ee24")
+arch=("amd64" "arm64")
+pkgver="130.0.1-1"
+source_amd64=("https://repo.librewolf.net/pool/${gives}-${pkgver}-linux-x86_64-deb.deb")
+sha256sums_amd64=("bfefd455dafea1d8629f668f272bd56bdf285079ff5cad814b25066837d4f8c6")
+source_arm64=("https://repo.librewolf.net/pool/${gives}-${pkgver}-linux-arm64-deb.deb")
+sha256sums_arm64=("7c09cbb32f7a368e9cd3ca7ca8e734a94505f84c2d2e42477eca39998fbcca9f")

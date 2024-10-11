@@ -1,10 +1,10 @@
 pkgname="prettier"
-pkgver="3.2.5"
+pkgver="3.3.3"
 pkgdesc="An opinionated code formatter"
 url='https://prettier.io'
 depends=("nodejs")
 source=("https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz")
-sha256sums=("a9d68ae56e5b0fea5c9d8e68b67104dae8445db21e1d24fb3522f3f4c0fb271d")
+sha256sums=("2f1ecb0ab57a588e0d4d40d3d45239e71ebd8f0190199d0d3f87fe2283639f46")
 repology=("project: ${pkgname}")
 maintainer=("vigress8 <vig@disroot.org>")
 

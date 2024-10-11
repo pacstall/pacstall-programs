@@ -2,7 +2,7 @@ pkgname="libdrm"
 gives="${pkgname}"
 pkgdesc="Userspace interface to kernel DRM services"
 pkgver="2.4.122"
-pkgrel="1"
+pkgrel="2"
 provides=("libdrm2=${pkgver}"
   "libdrm-common=${pkgver}"
   "libdrm-intel1=${pkgver}"
@@ -17,7 +17,6 @@ replaces=("libdrm2"
   "libdrm-radeon1"
   "libdrm-amdgpu1"
   "libdrm-dev")
-breaks=("${replaces[@]}")
 depends=("libpciaccess0")
 makedepends=("python3-docutils"
   "meson"
@@ -25,7 +24,6 @@ makedepends=("python3-docutils"
   "libcairo2-dev"
   "libpciaccess-dev"
   "libc6-dev")
-arch=("amd64" "arm64")
 url="https://dri.freedesktop.org/"
 source=("https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-${pkgver}/drm-libdrm-${pkgver}.tar.gz")
 sha256sums=("7babfa22795dda27f32ed78b89bf93bfd341043e254bd42734cb569b602481d3")
