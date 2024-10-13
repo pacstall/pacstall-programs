@@ -226,6 +226,7 @@ hyprpicker
 hyprwayland-scanner
 i3blocks-git
 i3lock-color
+icecat-deb
 imwheel-exclude-patched-git
 insomnia-deb
 insync-deb
@@ -240,6 +241,8 @@ jetbrains-toolbox-bin
 joplin-desktop-app
 kakoune
 kalendar-git
+kate-backport-deb
+kate5-data-backport-deb
 keepassxc
 keybase-deb
 kirc
@@ -256,6 +259,7 @@ lbry-deb
 lemonbar-xft-git
 lens
 lf-bin
+libaquamarine-bin
 libcamera-git
 libcs50-git
 libcutefish-git
@@ -266,6 +270,7 @@ libfdk-aac1-deb
 libgbinder-deb
 libgc-nix
 libglibutil-deb
+libhyprutils-bin
 libicu-deb
 liblcf
 libndi4-deb

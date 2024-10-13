@@ -1,0 +1,11 @@
+pkgname="kate-backport-deb"
+gives="kate"
+pkgver="22.04.3"
+pkgdesc="powerful text editor by kde"
+pacdeps=("kate5-data-backport-deb")
+source_jammy=("http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu/pool/main/k/kate/kate_${pkgver}-0ubuntu1~ubuntu22.04~ppa1_amd64.deb")
+sha256sums_jammy=("84250ff356fcca967f0aa33734852e439b6e01169b12e48d3b5c26c2ef8d40f9")
+arch=("amd64")
+compatible=("ubuntu:jammy")
+maintainer=("Vaibhav Sharma <vvaibhavv3434@gmail.com>")
+repology=("project: ${gives}")
