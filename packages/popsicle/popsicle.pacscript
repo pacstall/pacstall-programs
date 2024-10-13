@@ -8,6 +8,7 @@ pkgdesc="Multiple USB File Flasher"
 external_connection=true
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 sha256sums=("01d67266af21505d44c4f646d06946bfa4d53e60aa7f993f7bccb852ec09451e")
+compatible=("debian:trixie")
 
 build() {
   cd "${_archive}"
