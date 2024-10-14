@@ -13,7 +13,7 @@ source=(
 )
 sha256sums="f95c4dc529f86b00a15997ec2024a2ca1a139048d2cf816dfd6ade721d5d635e"
 arch=("amd64")
-maintainer="harrietobrien <harrietobrien@protonmail.com>"
+maintainer=("harrietobrien <harrietobrien@protonmail.com>")
 
 package() {
   cd "${srcdir}"
