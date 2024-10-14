@@ -14,8 +14,6 @@ arch=("amd64")
 maintainer=("harrietobrien <harrietobrien@protonmail.com>")
 
 package() {
-  cd "${srcdir}"
-  chmod +x "${_name}-${pkgver}.AppImage"
   install -Dm755 "${_name}-${pkgver}.AppImage" "${pkgdir}/usr/bin/${gives}"
   install -Dm644 "onenote-svg.html" "${pkgdir}/usr/share/pixmaps/onenote.svg"
   mkdir -p "${pkgdir}/usr/share/applications/"
