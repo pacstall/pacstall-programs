@@ -17,7 +17,7 @@ package() {
   [Desktop Entry]
   Type=Application
   Name=Goneovim
-  Comment=goneovim (pronounced like "go-neovim") is a Neovim GUI written in Go.
+  Comment=goneovim is a Neovim GUI written in Go.
   Icon=${gives}
   TryExec=${gives}
   Exec=${gives}
@@ -25,7 +25,6 @@ package() {
   Type=Application
   Keywords=Text;editor;
   Categories=Utility;TextEditor;
-  StartupWMClass=com-tonikelope-${gives}-MainPanel
 END
 
   install -Dm644 "${gives}.desktop" -t "${pkgdir}/usr/share/applications"
