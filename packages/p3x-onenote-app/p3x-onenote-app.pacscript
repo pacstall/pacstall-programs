@@ -7,7 +7,7 @@ pkgdesc="Independent browser window for OneNote online"
 source=(
   "${_name}-${pkgver}.AppImage::https://github.com/patrikx3/onenote/releases/download/v${pkgver}/${_name}-${pkgver}.AppImage"
   "p3x-onenote.desktop"
-  "onenote-svg.html"
+  "onenote.svg"
 )
 sha256sums="f95c4dc529f86b00a15997ec2024a2ca1a139048d2cf816dfd6ade721d5d635e"
 arch=("amd64")

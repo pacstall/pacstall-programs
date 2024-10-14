@@ -7565,7 +7565,7 @@ pkgbase = p3x-onenote-app
 	maintainer = harrietobrien <harrietobrien@protonmail.com>
 	source = P3X-OneNote-2024.10.117.AppImage::https://github.com/patrikx3/onenote/releases/download/v2024.10.117/P3X-OneNote-2024.10.117.AppImage
 	source = p3x-onenote.desktop
-	source = onenote-svg.html
+	source = onenote.svg
 	sha256sums = f95c4dc529f86b00a15997ec2024a2ca1a139048d2cf816dfd6ade721d5d635e
 
 pkgname = p3x-onenote-app
