@@ -1,7 +1,7 @@
 pkgbase = goneovim-bin
 	gives = goneovim
 	pkgver = 0.6.8
-	pkgdesc = goneovim is a Neovim GUI written in Go
+	pkgdesc = Neovim GUI written in Go
 	arch = amd64
 	depends = libxcb-xinerama0
 	maintainer = Vaibhav Sharma <vvaibhavv3434@gmail.com>
