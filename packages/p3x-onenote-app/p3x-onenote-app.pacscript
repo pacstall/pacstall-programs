@@ -4,8 +4,6 @@ gives="p3x-onenote"
 pkgver="2024.10.117"
 url="https://www.corifeus.com/onenote"
 pkgdesc="Independent browser window for OneNote online"
-noextract=("${_name}-${pkgver}.Appimage")
-depends=()
 source=(
   "${_name}-${pkgver}.AppImage::https://github.com/patrikx3/onenote/releases/download/v${pkgver}/${_name}-${pkgver}.AppImage"
   "p3x-onenote.desktop"
