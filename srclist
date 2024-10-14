@@ -7489,6 +7489,19 @@ pkgbase = opera-developer-deb
 
 pkgname = opera-developer-deb
 ---
+pkgbase = orchis-kde
+	pkgver = 2024-10-12
+	pkgdesc = Orchis KDE is a Materia Design theme for KDE Plasma desktop
+	url = https://github.com/vinceliuice/Orchis-kde
+	optdepends = qt5-style-kvantum | qt6-style-kvantum: use Kvantum engine for better look
+	optdepends = orchis-gtk-theme: matching GTK theme
+	license = GPL-3.0-only
+	license = CC-BY-SA-4.0
+	maintainer = bibelin <balian1belin@yandex.ru>
+	source = git+https://github.com/vinceliuice/Orchis-kde#commit=036e831f545de829a7eaa65f0128322663d406e4
+
+pkgname = orchis-kde
+---
 pkgbase = os-installer-git
 	gives = os-installer
 	pkgver = 0.3
@@ -8527,6 +8540,41 @@ pkgbase = qogir-icon-theme-bin
 	sha256sums = 7747f8a139e01a075a94b832d95a53a98b98784b06e866dd8259bb0a38404480
 
 pkgname = qogir-icon-theme-bin
+---
+pkgbase = qt6-style-kvantum
+	pkgver = 1.1.2
+	pkgdesc = Kvantum style engine (binaries, localization and themes)
+	url = https://github.com/tsujan/Kvantum
+	depends = libc6
+	depends = libgcc-s1
+	depends = libkf6windowsystem6
+	depends = libqt6core6t64
+	depends = libqt6gui6
+	depends = libqt6svg6
+	depends = libqt6widgets6
+	depends = libstdc++6
+	depends = libx11-6
+	makedepends = g++
+	makedepends = libx11-dev
+	makedepends = libxext-dev
+	makedepends = qt6-base-dev
+	makedepends = qt6-svg-dev
+	makedepends = libkf6windowsystem-dev
+	makedepends = qt6-base-dev-tools
+	conflicts = qt5-style-kvantum
+	conflicts = qt5-style-kvantum-themes
+	conflicts = qt5-style-kvantum-l10n
+	conflicts = qt6-style-kvantum-themes
+	conflicts = qt6-style-kvantum-l10n
+	compatible = ubuntu:oracular
+	compatible = debian:testing
+	compatible = debian:sid
+	compatible = neon:*
+	license = GPL-3.0-or-later
+	maintainer = bibelin <balian1belin@yandex.ru>
+	source = https://github.com/tsujan/Kvantum/releases/download/V1.1.2/Kvantum-1.1.2.tar.xz
+
+pkgname = qt6-style-kvantum
 ---
 pkgbase = qt6pas
 	gives = libqt6pas-dev
