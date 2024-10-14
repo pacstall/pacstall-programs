@@ -14,17 +14,17 @@ package() {
   install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
 
   cat <<- END > "${gives}.desktop"
-  [Desktop Entry]
-  Type=Application
-  Name=Goneovim
-  Comment=goneovim is a Neovim GUI written in Go.
-  Icon=${gives}
-  TryExec=${gives}
-  Exec=${gives}
-  Terminal=false
-  Type=Application
-  Keywords=Text;editor;
-  Categories=Utility;TextEditor;
+	[Desktop Entry]
+	Type=Application
+	Name=Goneovim
+	Comment=goneovim is a Neovim GUI written in Go.
+	Icon=${gives}
+	TryExec=${gives}
+	Exec=${gives}
+	Terminal=false
+	Type=Application
+	Keywords=Text;editor;
+	Categories=Utility;TextEditor;
 END
 
   install -Dm644 "${gives}.desktop" -t "${pkgdir}/usr/share/applications"
