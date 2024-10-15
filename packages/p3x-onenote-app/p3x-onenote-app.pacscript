@@ -5,7 +5,7 @@ pkgver="2024.10.117"
 url="https://www.corifeus.com/onenote"
 pkgdesc="Independent browser window for OneNote online"
 depends=(
-  "perlapi-5.38.2"
+  "perl-base"
   "liblocale-gettext-perl"
 )
 source=(
