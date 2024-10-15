@@ -4,6 +4,10 @@ gives="p3x-onenote"
 pkgver="2024.10.117"
 url="https://www.corifeus.com/onenote"
 pkgdesc="Independent browser window for OneNote online"
+depends=(
+  "perlapi-5.38.2"
+  "liblocale-gettext-perl"
+)
 source=(
   "${_name}-${pkgver}.AppImage::https://github.com/patrikx3/onenote/releases/download/v${pkgver}/${_name}-${pkgver}.AppImage"
   "p3x-onenote.desktop"
@@ -15,7 +19,7 @@ maintainer=("harrietobrien <harrietobrien@protonmail.com>")
 
 package() {
   install -Dm755 "${_name}-${pkgver}.AppImage" "${pkgdir}/usr/bin/${gives}"
-  install -Dm644 "onenote-svg.html" "${pkgdir}/usr/share/pixmaps/onenote.svg"
+  install -Dm644 "onenote.svg" "${pkgdir}/usr/share/pixmaps/onenote.svg"
   mkdir -p "${pkgdir}/usr/share/applications/"
   install -Dm644 -t "${pkgdir}/usr/share/applications" p3x-onenote.desktop
 }
