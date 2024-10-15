@@ -1,6 +1,6 @@
 pkgbase = zen-browser-specific-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.9
+	pkgver = 1.0.1-a.10
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -35,7 +35,7 @@ pkgbase = zen-browser-specific-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.9.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.9/zen.linux-specific.tar.bz2
-	sha256sums = 0f8f95ecdb4f2cc48ac3703cdd4986bf1c326217a64410d2489e864e676f0562
+	source = zen-browser-1.0.1-a.10.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.10/zen.linux-specific.tar.bz2
+	sha256sums = cb70597f72852ca6141756141a7c1fc1168013405a2783e15c520561767cb117
 
 pkgname = zen-browser-specific-bin
