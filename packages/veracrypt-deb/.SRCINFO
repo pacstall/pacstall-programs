@@ -21,6 +21,7 @@ pkgbase = veracrypt-deb
 	source = https://launchpad.net/veracrypt/trunk/1.26.14/+download/veracrypt-1.26.14-Ubuntu-24.04-amd64.deb
 	sha256sums = 6252213d62386107867f4af398c05b1dc0eeec1c92d00e2410eb94baf0b16056
 	source_jammy = https://launchpad.net/veracrypt/trunk/1.26.14/+download/veracrypt-1.26.14-Ubuntu-22.04-amd64.deb
+	source_bookworm = https://launchpad.net/veracrypt/trunk/1.26.14/+download/veracrypt-1.26.14-Debian-12-amd64.deb
 	sha256sums_jammy = 26d80ce138e3293390ac031d967d56c70ee0318a5876c350721c2c8bb5c7f215
 
 pkgname = veracrypt-deb
