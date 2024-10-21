@@ -1,6 +1,6 @@
 pkgbase = zed-editor-preview-bin
 	gives = zed-editor-preview
-	pkgver = 0.157.1
+	pkgver = 0.158.1
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)
 	url = https://zed.dev
 	arch = x86_64
@@ -10,9 +10,9 @@ pkgbase = zed-editor-preview-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/preview/0.157.1/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 126f699d49f53d461179ad9763cfbb89842c74e2f332b6d4f8aee387ddd35235
-	source_aarch64 = https://zed.dev/api/releases/preview/0.157.1/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 8d3f1d37226085405d6303640d19befca44a92d4d9f2b1489806783ad5f83404
+	source_x86_64 = https://zed.dev/api/releases/preview/0.158.1/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = d10a427146ab8233fb91ad73ec2c519b521c74644243a69c440e0de3fe55c841
+	source_aarch64 = https://zed.dev/api/releases/preview/0.158.1/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = bc13a49fa4fea7f046c1e6c306e9e528f8d2851be93a46ca67bd46ac86c23abc
 
 pkgname = zed-editor-preview-bin
