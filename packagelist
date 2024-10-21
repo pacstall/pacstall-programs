@@ -133,6 +133,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+ffmpeg4.4
 ffnvcodec-headers
 ffsend-bin
 firefox-arm64-deb
@@ -376,6 +377,7 @@ obsidian-deb
 oh-my-posh-git
 oh-my-zsh-git
 oil
+ollama-bin
 onefetch-bin
 onlyoffice-desktopeditors-deb
 onnxruntime-bin

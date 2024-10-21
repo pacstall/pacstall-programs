@@ -839,12 +839,12 @@ pkgname = bitwig-studio-4-deb
 ---
 pkgbase = bitwig-studio-deb
 	gives = bitwig-studio
-	pkgver = 5.1.8
+	pkgver = 5.2.5
 	pkgdesc = Digital audio workstation for music production, remixing and live performance
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: bitwig-studio
-	source = https://downloads.bitwig.com/stable/5.1.8/bitwig-studio-5.1.8.deb
-	sha256sums = 2b134b69efee4d82f59bf5feffbc2bee184a7f0df536907d330f51cdfad3baeb
+	source = https://www.bitwig.com/dl/Bitwig%20Studio/5.2.5/installer_linux/bitwig-studio-5.2.5.deb
+	sha256sums = c7a530ea8f9ade702b326d44bf9cad1ad2c3190debf3bd96aa50b4db6cd3f079
 
 pkgname = bitwig-studio-deb
 ---
@@ -1888,7 +1888,7 @@ pkgname = distrobox-git
 ---
 pkgbase = distrobox
 	gives = distrobox
-	pkgver = 1.7.2.1
+	pkgver = 1.8.0
 	pkgdesc = Use any linux distribution inside your terminal
 	optdepends = docker.io: enable docker usage
 	optdepends = podman: enable podman usage
@@ -1898,8 +1898,8 @@ pkgbase = distrobox
 	breaks = distrobox-git
 	maintainer = Marie Piontek <marie@kaifa.ch>
 	repology = project: distrobox
-	source = https://github.com/89luca89/distrobox/archive/refs/tags/1.7.2.1.tar.gz
-	sha256sums = ff2cca0c6334fff6ed577d23f68a6746ad4009f42d8a45eef5ca3850c895a4bb
+	source = https://github.com/89luca89/distrobox/archive/refs/tags/1.8.0.tar.gz
+	sha256sums = 72d8d825b6aad63e03e0b92376e6ead9c053c1e676acab3c7eaac9be2929d0a2
 
 pkgname = distrobox
 ---
@@ -2100,14 +2100,14 @@ pkgname = dotdrop
 ---
 pkgbase = drawio-desktop-deb
 	gives = draw.io
-	pkgver = 24.4.0
+	pkgver = 24.7.17
 	pkgdesc = Diagram drawing application built on web technology
 	arch = amd64
 	maintainer = JonBoyleCoding <programmerfalcon@gmail.com>
 	repology = project: drawio-desktop
 	repology = visiblename: drawio-desktop
-	source = https://github.com/jgraph/drawio-desktop/releases/download/v24.4.0/drawio-amd64-24.4.0.deb
-	sha256sums = 8ad85c5aacb2ad627efa67f5b13810a421da08b0450d9518e274088e3815005d
+	source = https://github.com/jgraph/drawio-desktop/releases/download/v24.7.17/drawio-amd64-24.7.17.deb
+	sha256sums = 372fd820d93a30068029a5a809bc81080ee7674b41ac81a4cc8311dec3f065fb
 
 pkgname = drawio-desktop-deb
 ---
@@ -2676,6 +2676,22 @@ pkgbase = feroxbuster-bin
 	sha256sums = SKIP
 
 pkgname = feroxbuster-bin
+---
+pkgbase = ffmpeg4.4
+	pkgver = 4.4.4
+	pkgdesc = Complete solution to record, convert and stream audio and video
+	url = https://ffmpeg.org/
+	makedepends = pkg-config
+	makedepends = nasm
+	makedepends = gnutls-dev
+	makedepends = libdrm-dev
+	makedepends = libfontconfig-dev
+	makedepends = libpulse-dev
+	maintainer = Elsie19 <hwengerstickel@pm>
+	source = git+https://git.ffmpeg.org/ffmpeg.git#tag=n4.4.4
+	source = https://gitlab.archlinux.org/archlinux/packaging/packages/ffmpeg4.4/-/raw/main/binutils-2.41.patch
+
+pkgname = ffmpeg4.4
 ---
 pkgbase = ffnvcodec-headers
 	gives = ffnvcodec-headers
@@ -7267,6 +7283,27 @@ pkgbase = oil
 
 pkgname = oil
 ---
+pkgbase = ollama-bin
+	gives = ollama
+	pkgver = 0.3.13
+	pkgdesc = Get up and running with large language models
+	url = https://ollama.com/
+	arch = amd64
+	arch = arm64
+	license = MIT
+	maintainer = bibelin <balian1belin@yandex.ru>
+	repology = project:ollama
+	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550: required to use CUDA on NVIDIA GPU
+	optdepends_debian = libcuda1: required to use CUDA on NVIDIA GPU
+	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.3.13/ollama-linux-amd64.tgz
+	sha256sums_amd64 = 19d8b87864d7d56d3bcf61b98e6a20bd68744037aba7515803f317dfdad62984
+	sha256sums_amd64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
+	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.3.13/ollama-linux-arm64.tgz
+	sha256sums_arm64 = 28cd33e4dd0cdb956272119839a349f7fc45ddd5b97978e2b19fc5804150d721
+	sha256sums_arm64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
+
+pkgname = ollama-bin
+---
 pkgbase = onefetch-bin
 	gives = onefetch
 	pkgver = 2.18.0
@@ -9350,18 +9387,29 @@ pkgname = shellharden
 ---
 pkgbase = shfmt-bin
 	gives = shfmt
-	pkgver = 3.7.0
+	pkgver = 3.10.0
 	pkgdesc = Format shell programs
+	url = https://github.com/mvdan/sh
 	arch = amd64
+	arch = arm64
+	arch = armhf
+	arch = i386
 	breaks = shfmt
 	breaks = shfmt-git
 	breaks = shfmt-bin
 	breaks = shfmt-deb
 	breaks = shfmt-app
 	maintainer = wizard-28 <wiz28@pm.me>
+	maintainer = vigress8 <vig@disroot.org>
 	repology = project: shfmt
-	source = https://github.com/mvdan/sh/releases/download/v3.7.0/shfmt_v3.7.0_linux_amd64
-	sha256sums = 0264c424278b18e22453fe523ec01a19805ce3b8ebf18eaf3aadc1edc23f42e3
+	source_amd64 = https://github.com/mvdan/sh/releases/download/v3.10.0/shfmt_v3.10.0_linux_amd64
+	sha256sums_amd64 = 1f57a384d59542f8fac5f503da1f3ea44242f46dff969569e80b524d64b71dbc
+	source_arm64 = https://github.com/mvdan/sh/releases/download/v3.10.0/shfmt_v3.10.0_linux_arm64
+	sha256sums_arm64 = 9d23013d56640e228732fd2a04a9ede0ab46bc2d764bf22a4a35fb1b14d707a8
+	source_armhf = https://github.com/mvdan/sh/releases/download/v3.10.0/shfmt_v3.10.0_linux_arm
+	sha256sums_armhf = 493c612d8f07ad60b3030bd84d7870cca2dc87e0fb06d2fdd93b2264460668db
+	source_i386 = https://github.com/mvdan/sh/releases/download/v3.10.0/shfmt_v3.10.0_linux_i386
+	sha256sums_i386 = a49ee3616afd262796e6791711ba62759d424cc85808390a5ac516af8001aa72
 
 pkgname = shfmt-bin
 ---
@@ -10092,7 +10140,7 @@ pkgname = tdrop-git
 ---
 pkgbase = teams-for-linux-deb
 	gives = teams-for-linux
-	pkgver = 1.8.0
+	pkgver = 1.11.1
 	pkgdesc = Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
 	arch = amd64
 	breaks = teams-for-linux
@@ -10101,8 +10149,8 @@ pkgbase = teams-for-linux-deb
 	breaks = teams-for-linux-app
 	maintainer = matusaurio <matusaurio@github.com>
 	repology = project: teams-for-linux
-	source = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v1.8.0/teams-for-linux_1.8.0_amd64.deb
-	sha256sums = 51b3a03ebd80ad0c5bb50cd07b5d49e8cc79fc34d9a57a6f3c0f7551d7e336ff
+	source = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v1.11.1/teams-for-linux_1.11.1_amd64.deb
+	sha256sums = d381c92baf6b202b0bdd5e7267596752f0ba2fca8f5139258e7dac9b37a1d569
 
 pkgname = teams-for-linux-deb
 ---
@@ -12253,7 +12301,7 @@ pkgname = zap
 ---
 pkgbase = zed-editor-preview-bin
 	gives = zed-editor-preview
-	pkgver = 0.157.4
+	pkgver = 0.158.1
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)
 	url = https://zed.dev
 	arch = x86_64
@@ -12263,16 +12311,16 @@ pkgbase = zed-editor-preview-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/preview/0.157.4/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 5a30d83d2997ca0494efedadd5a1711194dddf853c3b04a1e3a9fdefc2e8733e
-	source_aarch64 = https://zed.dev/api/releases/preview/0.157.4/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 91e639908924aa71335e5ea484491136f2396ab871cf9cdf7150e179f9ff06d6
+	source_x86_64 = https://zed.dev/api/releases/preview/0.158.1/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = d10a427146ab8233fb91ad73ec2c519b521c74644243a69c440e0de3fe55c841
+	source_aarch64 = https://zed.dev/api/releases/preview/0.158.1/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = bc13a49fa4fea7f046c1e6c306e9e528f8d2851be93a46ca67bd46ac86c23abc
 
 pkgname = zed-editor-preview-bin
 ---
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 0.156.2
+	pkgver = 0.157.5
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -12282,16 +12330,16 @@ pkgbase = zed-editor-stable-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/0.156.2/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 15d3f35c60cdbcf5c5cb6bc1717c7009ee27facb90a1903612d300947dbbfebc
-	source_aarch64 = https://zed.dev/api/releases/stable/0.156.2/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 90c19fb1d7dbe37901572ae1ebb1314a9375dc42f71bf6e2d1745e3c34194535
+	source_x86_64 = https://zed.dev/api/releases/stable/0.157.5/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 3c693cdf3e2c58389381ff3e80b52bcca62a4bb0e9f8ae5e5ba3aaccd5fe6d81
+	source_aarch64 = https://zed.dev/api/releases/stable/0.157.5/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 8ff0ebb0d095bc3d7615525d06d85084eeadc4ee35eab611b3d5155327d91257
 
 pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-generic-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.10
+	pkgver = 1.0.1-a.12
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -12326,14 +12374,14 @@ pkgbase = zen-browser-generic-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.10.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.10/zen.linux-generic.tar.bz2
-	sha256sums = 704bebea56dc88822d051d1da488b9347ebb854abe85bd9fcf04e42930ebafd1
+	source = zen-browser-1.0.1-a.12.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.12/zen.linux-generic.tar.bz2
+	sha256sums = 297a6297d957aa04025bc95d560f4a4a20c23c3d07e0420165ba90b9681ac62a
 
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.10
+	pkgver = 1.0.1-a.12
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -12368,8 +12416,8 @@ pkgbase = zen-browser-specific-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.10.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.10/zen.linux-specific.tar.bz2
-	sha256sums = cb70597f72852ca6141756141a7c1fc1168013405a2783e15c520561767cb117
+	source = zen-browser-1.0.1-a.12.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.12/zen.linux-specific.tar.bz2
+	sha256sums = 2a8db2e675d603779996190e80f9ca10c877223b2f461c775eaba2e75c78d39c
 
 pkgname = zen-browser-specific-bin
 ---

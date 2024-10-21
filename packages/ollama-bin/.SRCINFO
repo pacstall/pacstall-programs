@@ -1,0 +1,20 @@
+pkgbase = ollama-bin
+	gives = ollama
+	pkgver = 0.3.13
+	pkgdesc = Get up and running with large language models
+	url = https://ollama.com/
+	arch = amd64
+	arch = arm64
+	license = MIT
+	maintainer = bibelin <balian1belin@yandex.ru>
+	repology = project:ollama
+	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550: required to use CUDA on NVIDIA GPU
+	optdepends_debian = libcuda1: required to use CUDA on NVIDIA GPU
+	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.3.13/ollama-linux-amd64.tgz
+	sha256sums_amd64 = 19d8b87864d7d56d3bcf61b98e6a20bd68744037aba7515803f317dfdad62984
+	sha256sums_amd64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
+	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.3.13/ollama-linux-arm64.tgz
+	sha256sums_arm64 = 28cd33e4dd0cdb956272119839a349f7fc45ddd5b97978e2b19fc5804150d721
+	sha256sums_arm64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
+
+pkgname = ollama-bin
