@@ -1,14 +1,15 @@
 pkgname="pycharm-community-bin"
-pkgver="2023.2.5"
+pkgver="2024.2.3"
 gives="pycharm-community"
-maintainer=("ObsidianPresidium <emil@aarestrup.nu>")
+arch=("amd64")
+maintainer=("ObsidianPresidium <emil@aarestrup.nu>" "James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 source=(
   "https://download.jetbrains.com/python/pycharm-community-${pkgver}.tar.gz"
   "pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/pycharm.desktop"
 )
 sha256sums=(
-  "3a35e0b2245e6ecad5dc05b0fc81cf36cb4f5fe0bc987c8559e04c808de9d072"
+  "448f6c48a51bb419c68c763b0e4eefc0449ad7bbad534de3f93b2f1a40308833"
   "0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04"
 )
 repology=("project: pycharm")

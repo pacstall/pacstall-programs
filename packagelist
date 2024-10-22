@@ -133,6 +133,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+ffmpeg4.4
 ffnvcodec-headers
 ffsend-bin
 firefox-arm64-deb
@@ -183,6 +184,7 @@ go-bin
 go-task-deb
 goldberg-emulator-git
 gomuks-deb
+goneovim-bin
 google-chrome-beta-deb
 google-chrome-deb
 google-chrome-unstable-deb
@@ -226,6 +228,7 @@ hyprpicker
 hyprwayland-scanner
 i3blocks-git
 i3lock-color
+icecat-deb
 imwheel-exclude-patched-git
 insomnia-deb
 insync-deb
@@ -240,6 +243,8 @@ jetbrains-toolbox-bin
 joplin-desktop-app
 kakoune
 kalendar-git
+kate-backport-deb
+kate5-data-backport-deb
 keepassxc
 keybase-deb
 kirc
@@ -256,6 +261,7 @@ lbry-deb
 lemonbar-xft-git
 lens
 lf-bin
+libaquamarine-bin
 libcamera-git
 libcs50-git
 libcutefish-git
@@ -266,6 +272,7 @@ libfdk-aac1-deb
 libgbinder-deb
 libgc-nix
 libglibutil-deb
+libhyprutils-bin
 libicu-deb
 liblcf
 libndi4-deb
@@ -370,6 +377,7 @@ obsidian-deb
 oh-my-posh-git
 oh-my-zsh-git
 oil
+ollama-bin
 onefetch-bin
 onlyoffice-desktopeditors-deb
 onnxruntime-bin
@@ -383,6 +391,7 @@ openvr
 opera-beta-deb
 opera-deb
 opera-developer-deb
+orchis-kde
 os-installer-git
 osu-lazer-app
 owofetch
@@ -438,6 +447,7 @@ python3-vkbasalt-cli
 python3-zombie-imp
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
+qt6-style-kvantum
 qt6pas
 qtile-extras-git
 qtile-git
