@@ -1,14 +1,14 @@
 pkgbase = zoxide-deb
 	gives = zoxide
-	pkgver = 0.9.5
+	pkgver = 0.9.6
 	pkgdesc = A smarter cd command. Supports all major shells.
 	arch = amd64
 	arch = arm64
 	maintainer = lfromanini <lfromanini@yahoo.com>
 	repology = project: zoxide
-	source_amd64 = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.5/zoxide_0.9.5-1_amd64.deb
-	sha256sums_amd64 = 2175b8df1f6e83f74d0eb7812f8697d66dfb6363ae92e6e9a975791a3aad6bc0
-	source_arm64 = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.5/zoxide_0.9.5-1_arm64.deb
-	sha256sums_arm64 = 6ef41e82ba2e7399dc33b67e78065dbde3f2e0544ca56dad743b2e20b69dc833
+	source_amd64 = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide_0.9.6-1_amd64.deb
+	sha256sums_amd64 = e26117e6ef010f010dbe47cef4f5f72faa6a96dfd8cc723ce535d0614c16bb78
+	source_arm64 = https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.6/zoxide_0.9.6-1_arm64.deb
+	sha256sums_arm64 = 308928793a0b9dff52d98cddd1c96837dd7107dcdaece7641580085774cd1fab
 
 pkgname = zoxide-deb

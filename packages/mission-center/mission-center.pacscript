@@ -1,5 +1,5 @@
 pkgname="mission-center"
-pkgver="0.5.2"
+pkgver="0.6.0"
 pkgdesc="Monitor your CPU, Memory, Disk, Network and GPU usage"
 arch=("amd64" "arm64")
 url="https://gitlab.com/mission-center-devs/mission-center"
@@ -27,7 +27,7 @@ makedepends=(
 )
 checkdepends=("appstream-util")
 source=("${url}/-/archive/v${pkgver}/mission-center-v${pkgver}.tar.gz")
-sha256sums=("801a1468ee50281ab42a51281e2f80699480f9c0220f976619ae2f7aa21df85a")
+sha256sums=("62ddce4f5078be8b9fca66923916012fe049799e5c11ef8f40377592be9c2f58")
 compatible=(
   "debian:trixie"
   "debian:sid"

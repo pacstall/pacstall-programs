@@ -1,10 +1,10 @@
 pkgname="songrec-deb"
 gives="songrec"
-pkgver="0.4.2"
+pkgver="0.4.3"
 replaces=("${gives}")
 source=("https://launchpad.net/~marin-m/+archive/ubuntu/songrec/+files/songrec_${pkgver}jammy_amd64.deb")
 repology=("project: songrec")
 pkgdesc="SongRec is an open-source Shazam client for Linux, written in Rust."
-sha256sums=("f40d075f08aef14183b320240316ceb7f7c9ede2e2326d96199d59d906dc2951")
+sha256sums=("99d45213e2e29296730d142f3ea20c9062be838cfe17fae1caad3952d1fc0862")
 arch=('amd64')
 maintainer=("সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>")

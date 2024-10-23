@@ -1,6 +1,7 @@
 pkgname=wayland
 gives="wayland"
-pkgver=1.23.0
+pkgver="1.23.0"
+pkgrel="2"
 pkgdesc='A computer display server protocol'
 arch=('x86_64' 'i686')
 url='https://wayland.freedesktop.org/'
@@ -17,6 +18,7 @@ provides=(libwayland-client0="${pkgver}"
   libwayland-doc="${pkgver}"
   libwayland-bin="${pkgver}")
 replaces=(libwayland-client0 libwayland-egl1 libwayland-server0 libwayland-cursor0 libwayland-dev libwayland-egl-backend-dev libwayland-doc libwayland-bin)
+conflicts=("sddm" "kde-standard")
 
 maintainer=("xdavius <xdavius@github.com>")
 

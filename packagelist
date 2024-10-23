@@ -3,6 +3,7 @@ adapta-gtk-theme-git
 adw-gtk-theme
 adw-gtk3
 alacritty
+amf-headers
 amfora-bin
 an-anime-game-launcher-bin
 ananicy-cpp
@@ -39,6 +40,7 @@ bitwig-studio-deb
 blender-bin
 bluegriffon-deb
 blueprint-compiler
+bottles
 bottom-deb
 bpytop-git
 brave-browser-beta-deb
@@ -131,6 +133,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+ffmpeg4.4
 ffnvcodec-headers
 ffsend-bin
 firefox-arm64-deb
@@ -181,6 +184,7 @@ go-bin
 go-task-deb
 goldberg-emulator-git
 gomuks-deb
+goneovim-bin
 google-chrome-beta-deb
 google-chrome-deb
 google-chrome-unstable-deb
@@ -224,6 +228,7 @@ hyprpicker
 hyprwayland-scanner
 i3blocks-git
 i3lock-color
+icecat-deb
 imwheel-exclude-patched-git
 insomnia-deb
 insync-deb
@@ -238,6 +243,8 @@ jetbrains-toolbox-bin
 joplin-desktop-app
 kakoune
 kalendar-git
+kate-backport-deb
+kate5-data-backport-deb
 keepassxc
 keybase-deb
 kirc
@@ -254,6 +261,7 @@ lbry-deb
 lemonbar-xft-git
 lens
 lf-bin
+libaquamarine-bin
 libcamera-git
 libcs50-git
 libcutefish-git
@@ -261,7 +269,10 @@ libdisplay-info-git
 libdrm
 libeditline-troglobit
 libfdk-aac1-deb
+libgbinder-deb
 libgc-nix
+libglibutil-deb
+libhyprutils-bin
 libicu-deb
 liblcf
 libndi4-deb
@@ -367,6 +378,7 @@ obsidian-deb
 oh-my-posh-git
 oh-my-zsh-git
 oil
+ollama-bin
 onefetch-bin
 onlyoffice-desktopeditors-deb
 onnxruntime-bin
@@ -380,6 +392,7 @@ openvr
 opera-beta-deb
 opera-deb
 opera-developer-deb
+orchis-kde
 os-installer-git
 osu-lazer-app
 owofetch
@@ -424,14 +437,18 @@ pulsar-deb
 pycharm-community-bin
 python3-anyascii
 python3-flit-core
+python3-fvs
+python3-gbinder-deb
 python3-imdbpy-deb
 python3-levenshtein-deb
 python3-material-color-utilities
 python3-moddb
 python3-pypresence
+python3-vkbasalt-cli
 python3-zombie-imp
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
+qt6-style-kvantum
 qt6pas
 qtile-extras-git
 qtile-git
@@ -465,6 +482,7 @@ rpcs3-app
 rsbbi-git
 rstudio-deb
 rust-bin
+rust-bindgen-git
 rust-motd-deb
 rustdesk-deb
 schildichat-deb
@@ -548,6 +566,7 @@ typora-deb
 u-boot-mobian-deb
 ugee-tablet-driver-deb
 ulauncher-deb
+ungoogled-chromium-deb
 unicorn-desktop-git
 unicorn-mobile-git
 universal-ctags-git
@@ -573,7 +592,9 @@ warp
 warpinator-deb
 watchexec-bin
 wavey-launcher-bin
+waydroid-deb
 wayland
+wayland-protocols-git
 waynergy
 webapp-manager
 webapp-manager-deb
@@ -611,6 +632,10 @@ youtube-dl-git
 youtube-music-deb
 yt-dlp
 zap
+zed-editor-preview-bin
+zed-editor-stable-bin
+zen-browser-generic-bin
+zen-browser-specific-bin
 zentile-bin
 zettlr-deb
 zig-bin
