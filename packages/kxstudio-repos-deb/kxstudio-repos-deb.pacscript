@@ -1,4 +1,5 @@
 pkgname="kxstudio-repos-deb"
+arch=("all")
 pkgver="10.0.3"
 source=("https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_${pkgver}_all.deb")
 gives="kxstudio-repos"

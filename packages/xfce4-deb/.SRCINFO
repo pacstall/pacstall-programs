@@ -2,6 +2,7 @@ pkgbase = xfce4-deb
 	gives = xfce4
 	pkgver = 4.18
 	pkgdesc = XFCE4 Desktop
+	arch = all
 	maintainer = http.llamaz <http.llamaz@llamawebdesign.co.uk>
 	repology = project: xfce4-meta
 	source = http://ftp.de.debian.org/debian/pool/main/x/xfce4/xfce4_4.18_all.deb

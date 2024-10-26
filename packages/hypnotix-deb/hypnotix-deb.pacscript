@@ -3,6 +3,7 @@ gives="hypnotix"
 repology=("project: ${gives}")
 pacdeps=("gir1.2-xapp-1.0-deb" "circle-flags-svg-deb")
 pacdeps_debian=("python3-imdbpy-deb")
+arch=("all")
 pkgver="4.3"
 sha256sums=("129f9fd5032252cebbd81a6ea8da4f61dc6bd4d9072dede430bfca8e67451361")
 source=("http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_${pkgver}_all.deb")

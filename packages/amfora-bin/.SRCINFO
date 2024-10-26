@@ -2,6 +2,7 @@ pkgbase = amfora-bin
 	gives = amfora
 	pkgver = 1.10.0
 	pkgdesc = Amfora aims to be the best looking Gemini client with the most features
+	arch = amd64
 	breaks = amfora
 	breaks = amfora-git
 	breaks = amfora-deb

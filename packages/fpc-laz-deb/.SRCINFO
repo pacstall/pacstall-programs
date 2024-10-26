@@ -2,6 +2,7 @@ pkgbase = fpc-laz-deb
 	gives = fpc-laz
 	pkgver = 3.2.2
 	pkgdesc = Delphi-like IDE for FreePascal gtk2 version
+	arch = amd64
 	replaces = fpc
 	provides = fpc
 	maintainer = xdavius <xdavius@github.com>

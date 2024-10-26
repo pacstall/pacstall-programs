@@ -2,6 +2,7 @@ pkgbase = arduino-cli-bin
 	gives = arduino-cli
 	pkgver = 0.35.3
 	pkgdesc = An all-in-one solution that provides Boards/Library Managers, sketch builder, board detection, uploader, and many other tools needed to use any Arduino compatible board and platform from command line or machine interfaces
+	arch = amd64
 	breaks = arduino-cli
 	breaks = arduino-cli-deb
 	breaks = arduino-cli-app
