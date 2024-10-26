@@ -1,6 +1,7 @@
 pkgname="arduino-cli-bin"
 gives="arduino-cli"
 repology=("project: ${gives}")
+arch=("amd64")
 pkgver="0.35.3"
 maintainer=("DismissedGuy <me@mikealmel.ooo>")
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")

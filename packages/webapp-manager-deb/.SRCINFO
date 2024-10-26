@@ -2,6 +2,7 @@ pkgbase = webapp-manager-deb
 	gives = webapp-manager
 	pkgver = 1.3.4
 	pkgdesc = Run websites as if they were apps.
+	arch = all
 	maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>
 	repology = project: webapp-manager
 	source = http://packages.linuxmint.com/pool/main/w/webapp-manager/webapp-manager_1.3.4_all.deb

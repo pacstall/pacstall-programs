@@ -1,6 +1,7 @@
 pkgname="onnxruntime-gpu-bin"
 gives="onnxruntime-gpu"
 repology=("project: onnxruntime")
+arch=("amd64")
 pkgver="1.17.1"
 source=("https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-gpu-${pkgver}.tgz")
 pkgdesc="Cross-platform inference and training machine-learning accelerator with gpu support"

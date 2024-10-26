@@ -1,6 +1,7 @@
 pkgname="warpinator-deb"
 gives="warpinator"
 pkgdesc="A tool to share files across the LAN"
+arch=("amd64")
 pkgver="1.8.3+virginia"
 source=("http://packages.linuxmint.com/pool/backport/w/warpinator/warpinator_${pkgver}_amd64.deb")
 sha256sums=("fdcae13e004e1474711aa2f567e76d372f0634264d69732e775aba338b3d825e")

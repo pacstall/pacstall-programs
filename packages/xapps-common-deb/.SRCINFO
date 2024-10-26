@@ -2,6 +2,7 @@ pkgbase = xapps-common-deb
 	gives = xapps-common
 	pkgver = 2.8.2
 	pkgdesc = Components which are common to multiple desktop environments and required to implement cross-DE solutions
+	arch = all
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: xapps
 	source = http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_2.8.2+virginia_all.deb
