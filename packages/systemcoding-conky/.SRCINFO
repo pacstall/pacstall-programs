@@ -2,6 +2,7 @@ pkgbase = systemcoding-conky
 	gives = conky
 	pkgver = 1.0
 	pkgdesc = System Coding's Version Of Conky
+	arch = all
 	makedepends = conky
 	makedepends = lm-sensors
 	breaks = conky

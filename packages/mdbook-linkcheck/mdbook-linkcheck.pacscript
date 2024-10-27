@@ -1,4 +1,5 @@
 pkgname='mdbook-linkcheck'
+arch=("any")
 pkgver='0.7.7'
 pkgdesc='A backend for mdbook which will check your links for you'
 url='https://www.michaelfbryan.com/mdbook-linkcheck/mdbook_linkcheck/index.html'

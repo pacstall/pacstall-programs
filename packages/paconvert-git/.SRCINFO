@@ -2,6 +2,7 @@ pkgbase = paconvert-git
 	gives = paconvert
 	pkgver = 0.0.1
 	pkgdesc = Paconvert makes converting PKGBUILDS into pacscripts easier.
+	arch = all
 	breaks = paconvert-deb
 	breaks = paconvert-bin
 	breaks = paconvert-app

@@ -2,6 +2,7 @@ pkgbase = pdfmm-git
 	gives = pdfmm
 	pkgver = 0.0.1
 	pkgdesc = pdfmm (for 'pdf minus minus', or 'pdf--') is a graphical assistant to reduce the size of PDF files.
+	arch = any
 	depends = bash
 	depends = sed
 	depends = zenity

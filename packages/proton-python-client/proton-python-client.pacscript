@@ -2,6 +2,7 @@ pkgname="proton-python-client"
 breaks="${pkgname}-git ${pkgname}-bin"
 replaces=("${pkgname}")
 repology=("project: ${pkgname}")
+arch=("all")
 pkgver="0.7.1"
 source=("https://github.com/ProtonMail/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("python3-requests" "python3-setuptools" "python3-bcrypt" "python3-gnupg" "python3-openssl")

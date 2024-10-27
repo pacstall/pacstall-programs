@@ -1,5 +1,6 @@
 pkgname="nautilus-open-in-blackbox-git"
 gives="nautilus-open-in-blackbox"
+arch=("any")
 pkgver="0.1.1"
 source=("https://github.com/ppvan/nautilus-open-in-blackbox.git")
 pkgdesc="Open current directory in BlackBox from Nautilus context menu"

@@ -1,6 +1,7 @@
 pkgbase = dotdrop
 	pkgver = 1.13.2
 	pkgdesc = Save your dotfiles once, deploy them everywhere
+	arch = all
 	depends = python3
 	depends = python3-docopt
 	depends = python3-setools

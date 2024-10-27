@@ -1,6 +1,7 @@
 pkgbase = mutt-wizard
 	pkgver = 3.3.1
 	pkgdesc = Simple interface to auto-configure neomutt and isync with safe passwords
+	arch = any
 	depends = neomutt
 	depends = isync
 	depends = msmtp

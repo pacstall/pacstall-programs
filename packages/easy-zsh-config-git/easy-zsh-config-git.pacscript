@@ -1,6 +1,7 @@
 pkgname="easy-zsh-config-git"
 gives="easy-zsh-config"
 source=("https://github.com/wszqkzqk/easy-zsh-config.git")
+arch=("all")
 pkgver="0.6.2"
 pacdeps=("oh-my-posh-git" "zsh-history-substring-search-git")
 depends=("zsh" "zsh-syntax-highlighting" "zsh-autosuggestions")
