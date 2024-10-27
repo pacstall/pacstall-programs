@@ -1,4 +1,5 @@
 pkgname="hamclock-bigger"
+arch=("any")
 pkgver="4.08"
 source=(
   "https://github.com/fang64/hamclock/archive/refs/tags/v${pkgver}.tar.gz"

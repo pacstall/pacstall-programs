@@ -3,6 +3,7 @@ pkgbase = neovim
 	pkgrel = 1
 	pkgdesc = Neovim is a vim fork maintained by the community
 	url = https://neovim.io/
+	arch = any
 	makedepends = gettext
 	makedepends = libtool
 	makedepends = libtool-bin

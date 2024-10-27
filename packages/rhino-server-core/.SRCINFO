@@ -3,6 +3,7 @@ pkgbase = rhino-server-core
 	pkgrel = 1
 	pkgdesc = Transitional package to provide minimal core Rhino Linux software
 	priority = essential
+	arch = all
 	pacdeps = rhino-pkg-git
 	pacdeps = rhino-neofetch-git
 	replaces = rhino-core

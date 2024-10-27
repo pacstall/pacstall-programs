@@ -6,6 +6,7 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 compatible=("ubuntu:devel" "ubuntu:oracular")
 replaces=("rhino-core" "rhino-pine-core" "rhino-ubxi-core")
 priority="essential"
+arch=("all")
 pkgver="2024.2"
 pkgrel="1"
 style="(server)"

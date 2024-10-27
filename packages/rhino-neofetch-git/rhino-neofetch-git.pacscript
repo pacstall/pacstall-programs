@@ -1,5 +1,6 @@
 pkgname="rhino-neofetch-git"
 source=("https://github.com/rhino-linux/neofetch.git")
+arch=("all")
 pkgver="0.0.1"
 gives="rhino-neofetch"
 provides=('neofetch')

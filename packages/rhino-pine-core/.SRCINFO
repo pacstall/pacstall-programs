@@ -3,6 +3,7 @@ pkgbase = rhino-pine-core
 	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
+	arch = all
 	depends = initramfs-tools
 	depends = printer-driver-all-enforce
 	pacdeps = unicorn-mobile-git

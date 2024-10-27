@@ -3,6 +3,7 @@ pkgbase = rsbbi-git
 	pkgver = 0.0.1
 	pkgrel = 2
 	pkgdesc = A Rust-Based Rabbi, using Sefaria's API
+	arch = any
 	makedepends = cargo
 	makedepends = rustc
 	makedepends = pkg-config

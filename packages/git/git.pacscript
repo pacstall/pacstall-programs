@@ -2,6 +2,7 @@ pkgname="git"
 replaces=("${pkgname}")
 repology=("project: git")
 breaks=("${pkgname}-${pkgname}")
+arch=("any")
 pkgver="2.45.0"
 source=("https://www.kernel.org/pub/software/scm/${pkgname}/${pkgname}-${pkgver}.tar.gz")
 makedepends=("dh-autoreconf" "cmake" "gcc" "libcurl4-gnutls-dev" "libexpat1-dev" "gettext" "libz-dev" "libssl-dev" "asciidoc" "xmlto" "docbook2x" "install-info" "zlib1g-dev" "zlib1g")

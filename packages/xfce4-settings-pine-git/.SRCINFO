@@ -2,6 +2,7 @@ pkgbase = xfce4-settings-pine-git
 	gives = xfce4-settings
 	pkgver = 4.18.0
 	pkgdesc = XFCE4 patch that allows Pine64 Devices to auto-rotate
+	arch = any
 	makedepends = xfce4-dev-tools
 	makedepends = libexo-2-dev
 	makedepends = libgarcon-1-dev

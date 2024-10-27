@@ -1,5 +1,6 @@
 pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
+arch=("all")
 pkgver="0.0.1"
 pkgrel="4"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"

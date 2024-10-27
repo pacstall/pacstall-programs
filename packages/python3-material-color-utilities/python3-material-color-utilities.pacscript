@@ -1,5 +1,6 @@
 pkgname="python3-material-color-utilities"
 _name="material-color-utilities-python"
+arch=("any")
 pkgver="0.1.5"
 pkgdesc="Python port of material-color-utilities used for Material You colors"
 url="https://github.com/avanishsubbiah/material-color-utilities-python"

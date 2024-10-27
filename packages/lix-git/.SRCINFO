@@ -3,6 +3,7 @@ pkgbase = lix-git
 	pkgver = 2.90
 	pkgdesc = A modern, delicious implementation of the Nix package manager, focused on correctness, usability, and growth
 	url = https://lix.systems
+	arch = any
 	depends = busybox-static
 	depends = curl
 	depends = libarchive13t64 | libarchive13

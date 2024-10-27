@@ -1,5 +1,6 @@
 pkgname="nano"
 major_version="7"
+arch=("any")
 pkgver="7.2"
 license="GPL3"
 source=("https://nano-editor.org/dist/v${major_version}/${pkgname}-${pkgver}.tar.xz")
