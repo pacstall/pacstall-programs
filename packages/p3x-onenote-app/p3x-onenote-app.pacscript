@@ -8,6 +8,7 @@ depends=(
   "perl-base"
   "liblocale-gettext-perl"
 )
+incompatible=('debian:sid')
 source=(
   "${_name}-${pkgver}.AppImage::https://github.com/patrikx3/onenote/releases/download/v${pkgver}/${_name}-${pkgver}.AppImage"
   "p3x-onenote.desktop"
