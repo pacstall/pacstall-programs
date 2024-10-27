@@ -7577,6 +7577,7 @@ pkgbase = p3x-onenote-app
 	arch = amd64
 	depends = perl-base
 	depends = liblocale-gettext-perl
+	incompatible = debian:sid
 	maintainer = harrietobrien <harrietobrien@protonmail.com>
 	source = P3X-OneNote-2024.10.117.AppImage::https://github.com/patrikx3/onenote/releases/download/v2024.10.117/P3X-OneNote-2024.10.117.AppImage
 	source = p3x-onenote.desktop
