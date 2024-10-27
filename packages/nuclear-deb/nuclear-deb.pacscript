@@ -1,6 +1,7 @@
 pkgname="nuclear-deb"
 gives="nuclear"
 breaks=("${gives}" "${gives}-app")
+arch=("amd64")
 pkgver="0.6.17"
 _version="e8fcb6"
 pkgdesc="Streaming music player that finds free music for you"

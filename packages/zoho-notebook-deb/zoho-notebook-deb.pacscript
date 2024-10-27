@@ -1,5 +1,6 @@
 pkgname="zoho-notebook-deb"
 gives="notebook"
+arch=("amd64")
 pkgver="2.2.3"
 replaces=("notebook")
 source=("https://downloads.zohocdn.com/notebooklinux-desktop/Notebook-${pkgver}.deb")

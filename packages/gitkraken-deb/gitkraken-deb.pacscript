@@ -3,6 +3,7 @@ gives="gitkraken"
 repology=("project: ${gives}")
 replaces=("${gives}")
 breaks=("${gives}-bin")
+arch=("amd64")
 pkgver="10.1.0"
 source=("https://release.axocdn.com/linux/GitKraken-v${pkgver}.deb")
 pkgdesc="Legendary Git GUI client for Windows, Mac & Linux"

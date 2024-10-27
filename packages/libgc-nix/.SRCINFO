@@ -2,6 +2,7 @@ pkgbase = libgc-nix
 	pkgver = 8.2.6
 	pkgdesc = The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (patched for Nix)
 	url = https://www.hboehm.info/gc/
+	arch = any
 	makedepends = pkg-config
 	replaces = libgc1
 	replaces = libgc-dev

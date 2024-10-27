@@ -2,6 +2,7 @@ pkgbase = bitwig-studio-deb
 	gives = bitwig-studio
 	pkgver = 5.2.5
 	pkgdesc = Digital audio workstation for music production, remixing and live performance
+	arch = amd64
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: bitwig-studio
 	source = https://www.bitwig.com/dl/Bitwig%20Studio/5.2.5/installer_linux/bitwig-studio-5.2.5.deb

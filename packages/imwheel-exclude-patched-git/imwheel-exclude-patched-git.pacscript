@@ -1,5 +1,6 @@
 pkgname="imwheel-exclude-patched-git"
 source=("https://github.com/ajh3/imwheel-exclude-patched.git")
+arch=("any")
 pkgver="0.0.1"
 makedepends=("libx11-dev" "libxtst-dev" "libxmu-dev")
 breaks=("imwheel")

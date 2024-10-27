@@ -1,4 +1,5 @@
 pkgname="lemonbar-xft-git"
+arch=("any")
 pkgver="0.0.1"
 source=("git+https://gitlab.com/protesilaos/lemonbar-xft")
 makedepends=("build-essential" "libx11-dev" "libxft-dev" "libx11-xcb-dev" "libxcb-randr0-dev" "libxcb-xinerama0-dev")

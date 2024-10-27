@@ -4,6 +4,7 @@ pkgbase = libdrm
 	pkgrel = 2
 	pkgdesc = Userspace interface to kernel DRM services
 	url = https://dri.freedesktop.org/
+	arch = any
 	depends = libpciaccess0
 	makedepends = python3-docutils
 	makedepends = meson
