@@ -1,6 +1,7 @@
 pkgname="eza-git"
 gives="eza"
 source=("https://github.com/eza-community/eza.git")
+arch=("any")
 pkgver="0.18.15"
 url='https://the.exa.website/'
 makedepends=("cargo" "libgit2-dev" "cmake" "rustc" "pandoc")

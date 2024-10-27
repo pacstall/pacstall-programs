@@ -1,5 +1,6 @@
 pkgname="pfetch-bin"
 gives="pfetch"
+arch=("amd64")
 pkgver="0.6.0"
 source=("https://github.com/dylanaraps/${gives}/archive/refs/tags/${pkgver}.zip")
 breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app" "${gives}-git")

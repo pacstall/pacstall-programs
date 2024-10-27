@@ -1,7 +1,7 @@
 pkgname="cutefish-statusbar-git"
 gives="cutefish-statusbar"
-pkgver="0.3-1"
 source=("https://github.com/cutefishos/statusbar.git")
+arch=("any")
 pkgver="0.7"
 license="GPL-3.0"
 makedepends=("extra-cmake-modules" "ninja-build" "qttools5-dev-tools" "qtbase5-dev" "qtdeclarative5-dev" "qtquickcontrols2-5-dev" "qttools5-dev")

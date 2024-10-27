@@ -1,5 +1,6 @@
 pkgname="mymonero-app"
 gives="mymonero"
+arch=("amd64")
 pkgver="1.3.3"
 pkgdesc="The simplest way to use the next-generation private digital currency Monero"
 source=(

@@ -1,5 +1,6 @@
 pkgname="pipes.sh-bin"
 gives="pipes.sh"
+arch=("all")
 pkgver="1.3.0"
 pkgdesc="Animated pipes terminal screensaver"
 source=("https://github.com/pipeseroni/${gives}/archive/v${pkgver}.tar.gz")

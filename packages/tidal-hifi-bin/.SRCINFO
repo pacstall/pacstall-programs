@@ -2,6 +2,7 @@ pkgbase = tidal-hifi-bin
 	gives = tidal-hifi
 	pkgver = 5.11.0
 	pkgdesc = The web version of listen.tidal.com running in electron with hifi support thanks to widevine
+	arch = amd64
 	depends = libxss1
 	depends = libnss3
 	depends = libgtk-3-0

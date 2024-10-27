@@ -1,5 +1,6 @@
 pkgname="cutefish-settings-git"
 gives="cutefish-settings"
+arch=("any")
 pkgver="0.8"
 source=("https://github.com/cutefishos/settings.git")
 license="GPL-3.0"

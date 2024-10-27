@@ -1,5 +1,6 @@
 pkgname="cantata"
 gives="cantata"
+arch=("any")
 pkgver="2.5.0"
 source=("https://github.com/CDrummond/cantata/releases/download/v${pkgver}/cantata-${pkgver}.tar.bz2")
 depends=("mpd" "cmake" "media-player-info" "fonts-font-awesome" "libcddb2" "qttools5-dev" "qtbase5-dev" "qtchooser" "qtmultimedia5-dev" "qt5-qmake" "qtbase5-dev-tools" "libqt5svg5" "libqt5svg5-dev" "libebur128-1" "libmusicbrainz5cc2v5" "libqt5multimedia5")

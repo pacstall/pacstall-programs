@@ -2,6 +2,7 @@ maintainer=("Paul Cosma (saenai) <paul.cosma97@gmail.com>")
 
 gives="tutanota"
 pkgname="${gives}-app"
+arch=("amd64")
 pkgver="218.240227.0"
 pkgdesc="Tutanota is the world's most secure email service, easy to use and private by design."
 source=(

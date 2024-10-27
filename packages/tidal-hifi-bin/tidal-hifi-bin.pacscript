@@ -1,5 +1,6 @@
 pkgname="tidal-hifi-bin"
 gives="tidal-hifi"
+arch=("amd64")
 pkgver="5.11.0"
 pkgdesc="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
 repology=("project: tidal-hifi" "visiblename: tidal-hifi-bin")

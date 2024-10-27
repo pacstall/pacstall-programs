@@ -2,6 +2,7 @@ pkgbase = picom
 	pkgver = 12.3
 	pkgdesc = A lightweight compositor for X11
 	url = https://github.com/yshui/picom
+	arch = any
 	depends = libdbus-1-3
 	depends = libegl1
 	depends = libepoxy0

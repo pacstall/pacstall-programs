@@ -1,6 +1,7 @@
 pkgname="neovim-app"
 gives="neovim"
 replaces=("nvim" "neovim-runtime" "neovim-deb")
+arch=("amd64")
 pkgver="0.10.1"
 makedepends=("libfuse2")
 depends=("libfuse2")
