@@ -1,4 +1,5 @@
 pkgname="ananicy-cpp"
+arch=("any")
 pkgver="1.1.0"
 source=("https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v${pkgver}/ananicy-cpp-v${pkgver}.tar.gz")
 sha256sums=("49f59e8fa842c7603be344b7317eace773c3e416d881dae4ad7779b39b03fc4a")

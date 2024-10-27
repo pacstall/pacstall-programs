@@ -1,6 +1,7 @@
 pkgname="quintom-cursor-theme-git"
 gives="quintom-cursor-theme"
 source=("https://gitlab.com/Burning_Cube/quintom-cursor-theme.git")
+arch=("all")
 pkgver="0.0.1"
 pkgrel="2"
 pkgdesc="A cursor theme designed to look decent"

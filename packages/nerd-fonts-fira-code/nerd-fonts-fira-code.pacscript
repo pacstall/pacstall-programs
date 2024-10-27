@@ -1,6 +1,7 @@
 pkgname="nerd-fonts-fira-code"
 replaces=("${pkgname}")
 repology=("project: fonts:nerd-fonts")
+arch=("all")
 pkgver="3.1.1"
 source=("https://github.com/ryanoasis/nerd-fonts/releases/download/v${pkgver}/FiraCode.zip")
 pkgdesc="Patched font Fira Code from Nerd Fonts library"

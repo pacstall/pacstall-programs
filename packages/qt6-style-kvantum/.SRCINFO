@@ -2,6 +2,7 @@ pkgbase = qt6-style-kvantum
 	pkgver = 1.1.2
 	pkgdesc = Kvantum style engine (binaries, localization and themes)
 	url = https://github.com/tsujan/Kvantum
+	arch = any
 	depends = libc6
 	depends = libgcc-s1
 	depends = libkf6windowsystem6

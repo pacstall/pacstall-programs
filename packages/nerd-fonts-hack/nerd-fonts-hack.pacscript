@@ -1,6 +1,7 @@
 pkgname="nerd-fonts-hack"
 replaces=("${pkgname}")
 repology=("project: fonts:nerd-fonts")
+arch=("all")
 pkgver="3.1.1"
 source=("https://github.com/ryanoasis/nerd-fonts/releases/download/v${pkgver}/Hack.tar.xz")
 pkgdesc="Patched font Hack from Nerd Fonts library"

@@ -2,6 +2,7 @@ pkgbase = hamclock-huge
 	pkgver = 4.08
 	pkgdesc = Clock and world map with extra features for amateur radio (3200x1920 version)
 	url = https://clearskyinstitute.com/ham/HamClock
+	arch = any
 	makedepends = gcc
 	makedepends = make
 	makedepends = pkg-config

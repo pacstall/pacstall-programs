@@ -4,6 +4,7 @@ pkgbase = unicorn-mobile-git
 	pkgrel = 4
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
+	arch = all
 	depends = xfwm4
 	depends = xfdashboard
 	depends = xfdashboard-plugins

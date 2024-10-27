@@ -2,6 +2,7 @@ pkgbase = android-studio-canary
 	gives = android-studio
 	pkgver = 2023.1.1.28
 	pkgdesc = Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development
+	arch = amd64
 	depends = libc6-i386
 	depends = lib32ncurses6
 	depends = lib32stdc++6

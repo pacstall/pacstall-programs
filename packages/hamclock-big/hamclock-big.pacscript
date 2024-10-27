@@ -1,4 +1,5 @@
 pkgname="hamclock-big"
+arch=("any")
 pkgver="4.08"
 pkgrel="3"
 source=(
