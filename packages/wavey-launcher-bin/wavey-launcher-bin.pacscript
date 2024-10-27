@@ -1,5 +1,6 @@
 pkgname="wavey-launcher-bin"
 gives="wavey-launcher"
+arch=("amd64")
 pkgver="1.0.1"
 pkgdesc="Wavey Launcher for Linux with automatic patching and telemetry disabling"
 repology=("project: wavey-launcher")

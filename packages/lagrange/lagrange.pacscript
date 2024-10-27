@@ -1,4 +1,5 @@
 pkgname="lagrange"
+arch=("any")
 pkgver="1.3.4"
 license="BSD-2"
 source=("https://git.skyjake.fi/gemini/lagrange/releases/download/v1.3.4/lagrange-1.3.4.tar.gz")

@@ -1,5 +1,6 @@
 pkgname="cutefish-filemanager-git"
 gives="cutefish-filemanager"
+arch=("any")
 pkgver="0.8"
 source=("https://github.com/cutefishos/filemanager.git")
 license="GPL-3.0"

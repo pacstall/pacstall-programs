@@ -1,6 +1,7 @@
 maintainer=("0x262D <pacstall@copypaste.anonaddy.me>")
 pkgname="wsysmon-bin"
 gives="wsysmon"
+arch=("amd64")
 pkgver="0.1.0"
 pkgdesc="A windows task manager clone for Linux"
 source=(

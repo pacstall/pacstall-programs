@@ -2,6 +2,7 @@ pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
 	pkgver = 3.13.0
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
+	arch = amd64
 	depends = git
 	depends = p7zip-full
 	depends = webp

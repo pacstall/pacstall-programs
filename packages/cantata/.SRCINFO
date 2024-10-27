@@ -2,6 +2,7 @@ pkgbase = cantata
 	gives = cantata
 	pkgver = 2.5.0
 	pkgdesc = Cantata is a graphical client for MPD. It is support for Linux, MacOSX, and Windows, Multiple MPD collections and it has a Highly customizable layout.
+	arch = any
 	depends = mpd
 	depends = cmake
 	depends = media-player-info

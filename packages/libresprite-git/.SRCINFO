@@ -2,6 +2,7 @@ pkgbase = libresprite-git
 	gives = libresprite
 	pkgver = 1.0
 	pkgdesc = fork of last GPL version of aseprite
+	arch = any
 	depends = libpixman-1-0 libcurl4 libgif7 zlib1g libpng16-16 libjpeg-turbo8 libwebp6 libxcursor1
 	makedepends = g++
 	makedepends = libx11-dev

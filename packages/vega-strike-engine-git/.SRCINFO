@@ -2,6 +2,7 @@ pkgbase = vega-strike-engine-git
 	gives = vega-strike
 	pkgver = 0.8.0
 	pkgdesc = Vega Strike engine
+	arch = any
 	depends = libopengl0
 	depends = libopenal1
 	makedepends = git

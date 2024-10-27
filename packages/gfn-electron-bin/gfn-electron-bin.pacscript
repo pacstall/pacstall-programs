@@ -1,5 +1,6 @@
 pkgname="gfn-electron-bin"
 gives="geforcenow-electron"
+arch=("amd64")
 pkgver="2.0.1"
 pkgdesc="Linux desktop client for GeForce NOW, using Electron"
 repology=("project: geforcenow-electron")

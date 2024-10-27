@@ -2,6 +2,7 @@ pkgbase = cmake-data-deb
 	gives = cmake-data
 	pkgver = 3.25.1
 	pkgdesc = CMake data files (modules, templates and documentation)
+	arch = all
 	compatible = debian:bullseye
 	compatible = ubuntu:jammy
 	maintainer = Zahrun <Zahrun@github.com>

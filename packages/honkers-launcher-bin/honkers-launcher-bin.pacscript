@@ -1,5 +1,6 @@
 pkgname="honkers-launcher-bin"
 gives="honkers-launcher"
+arch=("amd64")
 pkgver="1.9.0"
 pkgdesc="Launcher for a honkers game with auto-patching, discord rpc and time tracking"
 repology=("project: honkers-launcher")

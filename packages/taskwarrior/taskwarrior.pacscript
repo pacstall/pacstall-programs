@@ -1,6 +1,7 @@
 pkgname="taskwarrior"
 gives="taskwarrior"
 repology=("project: taskwarrior")
+arch=("any")
 pkgver="2.6.2"
 source=("https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v${pkgver}/task-${pkgver}.tar.gz")
 makedepends=("g++" "cmake" "git")

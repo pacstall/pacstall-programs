@@ -2,6 +2,7 @@ pkgbase = grive2-git
 	gives = grive2
 	pkgver = 0.5.3
 	pkgdesc = Google Drive client with support for new Drive REST API and partial sync
+	arch = any
 	depends = libgcrypt20
 	depends = libyajl2
 	depends = libboost-all-dev

@@ -2,6 +2,7 @@ pkgbase = fastfetch-git
 	gives = fastfetch
 	pkgver = 2.9.1
 	pkgdesc = Like neofetch, but much faster because written in c
+	arch = any
 	makedepends = cmake
 	makedepends = libpci-dev
 	makedepends = libvulkan-dev

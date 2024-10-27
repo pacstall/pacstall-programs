@@ -4,6 +4,7 @@ pkgdesc="Blazing fast terminal-ui for git written in Rust"
 url='https://github.com/extrawurst/gitui'
 source=("https://github.com/extrawurst/gitui.git")
 maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
+arch=("any")
 pkgver="0.26.3"
 depends=('gcc' 'libgit2-dev' 'libxcb1' 'zlib1g-dev')
 makedepends=('git' 'cargo' 'python3' 'cmake')
