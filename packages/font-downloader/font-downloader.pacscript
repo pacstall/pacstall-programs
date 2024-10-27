@@ -1,5 +1,6 @@
 pkgname="font-downloader"
 gives="font-downloader"
+arch=("any")
 pkgver="10.0.0"
 makedepends=("meson" "libhandy-1-dev" "gettext")
 # HACK: https://github.com/pacstall/pacstall/issues/727

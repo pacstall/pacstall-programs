@@ -1,6 +1,7 @@
 pkgbase = gtkhash
 	pkgver = 1.4
 	pkgdesc = gtkhash is a desktop utility for computing message digests or checksums.
+	arch = any
 	depends = libgtk-3-dev
 	depends = libglib2.0-dev
 	depends = libgcrypt-dev

@@ -2,6 +2,7 @@ pkgbase = muse-hub-deb
 	gives = muse-hub
 	pkgver = 1.0.1.451
 	pkgdesc = Manage MuseScore Libraries
+	arch = amd64
 	depends = icu-devtools
 	provides = muse-hub
 	provides = muse-hub-service

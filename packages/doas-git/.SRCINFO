@@ -2,6 +2,7 @@ pkgbase = doas-git
 	gives = doas
 	pkgver = 6.3p9
 	pkgdesc = A port of OpenBSD's doas(1), an alternative to sudo(1)
+	arch = any
 	makedepends = make
 	makedepends = bison
 	makedepends = flex

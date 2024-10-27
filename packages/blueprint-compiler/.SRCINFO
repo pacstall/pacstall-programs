@@ -2,6 +2,7 @@ pkgbase = blueprint-compiler
 	pkgver = 0.12.0
 	pkgdesc = A markup language for GTK user interfaces
 	url = https://jwestman.pages.gitlab.gnome.org/blueprint-compiler/
+	arch = any
 	depends = python3-gi
 	makedepends = meson
 	license = LGPL-3.0-or-later

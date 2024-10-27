@@ -2,6 +2,7 @@ pkgbase = opendoas-git
 	gives = opendoas
 	pkgver = 6.8.2
 	pkgdesc = A portable fork of the OpenBSD doas command
+	arch = any
 	makedepends = bison
 	makedepends = libpam0g-dev
 	breaks = opendoas

@@ -1,4 +1,5 @@
 pkgname="lyx"
+arch=("any")
 pkgver="2.3.7-1"
 pkgdesc="An advanced WYSIWYM document processor & LaTeX front-end"
 depends=("libqt5svg5-dev" "texlive-base" "python3" "imagemagick" "libhunspell-dev" "file" "hicolor-icon-theme" "desktop-file-utils")

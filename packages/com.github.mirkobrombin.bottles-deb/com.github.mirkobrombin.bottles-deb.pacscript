@@ -1,6 +1,7 @@
 pkgname="com.github.mirkobrombin.bottles-deb"
 gives="com.github.mirkobrombin.bottles"
 breaks=("${gives}-v1" "${gives}-git" "${gives}-bin" "${gives}-app")
+arch=("amd64")
 pkgver="1" #0458cc87dbd02c7acae52873806b764ea288dfd9 #refresh-for-newer-hash
 source=("https://github.com/bottlesdevs/Bottles/releases/download/continuous-v1/bottles.0458cc87dbd02c7acae52873806b764ea288dfd9.deb")
 pkgdesc="Version 1 of Bottles allowing you to easily install Proton and Wine prefixes."
