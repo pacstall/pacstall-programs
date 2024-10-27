@@ -1,6 +1,7 @@
 pkgbase = yt-dlp
 	pkgver = 2024.08.06
 	pkgdesc = A youtube-dl fork with additional features and fixes
+	arch = all
 	depends = python3
 	depends = ffmpeg
 	breaks = yt-dlp-git

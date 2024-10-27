@@ -7,6 +7,7 @@
 maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="fennel"
+arch=("all")
 pkgver="1.3.1"
 pkgdesc="A Lua Lisp language"
 depends=("lua5.3")

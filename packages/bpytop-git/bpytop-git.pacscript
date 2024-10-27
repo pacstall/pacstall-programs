@@ -1,6 +1,7 @@
 pkgname="bpytop-git"
 gives="bpytop"
 source=("https://github.com/aristocratos/${gives}.git")
+arch=("any")
 pkgver="1.0.68"
 makedepends=("make" "python3" "python3-pip" "python3-distutils")
 depends=("python3" "python3-pip" "python3-distutils")

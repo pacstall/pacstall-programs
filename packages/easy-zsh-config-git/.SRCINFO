@@ -2,6 +2,7 @@ pkgbase = easy-zsh-config-git
 	gives = easy-zsh-config
 	pkgver = 0.6.2
 	pkgdesc = A simple but fast and out of the box configuration of zsh powered by oh-my-posh and zsh plugins
+	arch = all
 	depends = zsh
 	depends = zsh-syntax-highlighting
 	depends = zsh-autosuggestions

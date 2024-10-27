@@ -12,6 +12,7 @@
 maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="fnlfmt"
+arch=("all")
 pkgver="0.3.0"
 pkgdesc="A formatter for fennel source code"
 source=("https://git.sr.ht/~technomancy/fnlfmt/archive/${pkgver}.tar.gz")

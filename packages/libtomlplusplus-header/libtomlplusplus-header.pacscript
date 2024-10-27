@@ -1,4 +1,5 @@
 pkgname="libtomlplusplus-header"
+arch=("all")
 pkgver="3.4.0"
 pkgdesc="Header-only TOML config file parser and serializer for C++17"
 url='https://marzer.github.io/tomlplusplus/'

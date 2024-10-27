@@ -1,6 +1,7 @@
 pkgbase = fnlfmt
 	pkgver = 0.3.0
 	pkgdesc = A formatter for fennel source code
+	arch = all
 	depends = lua5.3
 	makedepends = lua5.3
 	breaks = -bin

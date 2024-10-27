@@ -1,5 +1,6 @@
 pkgname="dino-git"
 source=("https://github.com/Elsie19/Dino.git")
+arch=("any")
 pkgver="0.1.1"
 breaks=("dino" "dino-app" "dino-bin" "dino-deb")
 gives="dino"
