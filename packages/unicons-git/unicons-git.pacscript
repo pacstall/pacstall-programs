@@ -3,7 +3,7 @@ source=("https://github.com/rhino-linux/unicons.git")
 arch=("all")
 pkgver="0.0.1"
 gives="unicons"
-pkgdesc="Unicorn Desktop Icons. By the Rhino Linux Team"
+pkgdesc="Icon pack for Unicorn Desktop by the Rhino Linux Team"
 maintainer=("AJStrong <ajstrongdev@proton.me>")
 makedepends=("gtk-update-icon-cache")
 
