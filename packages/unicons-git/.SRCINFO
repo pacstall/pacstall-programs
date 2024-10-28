@@ -3,7 +3,7 @@ pkgbase = unicons-git
 	pkgver = 0.0.1
 	pkgdesc = Unicorn Desktop Icons. By the Rhino Linux Team
 	arch = all
-	depends = gtk-update-icon-cache
+	makedepends = gtk-update-icon-cache
 	maintainer = AJStrong <ajstrongdev@proton.me>
 	source = https://github.com/rhino-linux/unicons.git
 
