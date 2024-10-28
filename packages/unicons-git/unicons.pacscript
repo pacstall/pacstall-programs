@@ -8,7 +8,6 @@ maintainer=("AJStrong <ajstrongdev@proton.me>")
 depends=("gtk-update-icon-cache")
 
 build() {
-  cd "${gives}"
   mkdir -p "${pkdir}/usr/share/icons"
 }
 
