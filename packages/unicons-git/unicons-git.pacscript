@@ -5,7 +5,7 @@ pkgver="0.0.1"
 gives="unicons"
 pkgdesc="Icon pack for Unicorn Desktop by the Rhino Linux Team"
 maintainer=("AJStrong <ajstrongdev@proton.me>")
-makedepends=("gtk-update-icon-cache")
+depends=("gtk-update-icon-cache")
 
 prepare() {
   mkdir -p "${pkgdir}/usr/share/icons/Unicons/"
@@ -13,5 +13,8 @@ prepare() {
 
 package() {
   cp -r "${gives}"/* "${pkgdir}/usr/share/icons/Unicons"
-  gtk-update-icon-cache "${pkgdir}/usr/share/icons/Unicons"
+}
+
+post_install() {
+  gtk-update-icon-cache "/usr/share/icons/Unicons"
 }
