@@ -5629,7 +5629,8 @@ pkgbase = libdrm
 
 pkgname = libdrm
 ---
-pkgbase = libeditline-troglobit
+pkgbase = libeditline-troglobit-git
+	gives = libeditline-troglobit
 	pkgver = 1.17.1
 	pkgdesc = A readline() replacement for UNIX without termcap (ncurses)
 	url = https://troglobit.com/projects/editline/
@@ -5639,9 +5640,12 @@ pkgbase = libeditline-troglobit
 	license = custom:permissive
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: editline-troglobit
-	source = libeditline-troglobit::https://github.com/troglobit/editline.git#tag=1.17.1
+	source = libeditline-troglobit::https://github.com/troglobit/editline.git
+	source = https://github.com/lix-project/lix/raw/c95b73d8a1cce06f1ec3ee08617e76380d62f4df/nix-support/editline.patch
+	sha256sums = SKIP
+	sha256sums = 7b1cbfa7856e6190df1172031c7d670640bde7e62950342021dbecd69e299b84
 
-pkgname = libeditline-troglobit
+pkgname = libeditline-troglobit-git
 ---
 pkgbase = libfdk-aac1-deb
 	gives = libfdk-aac1
@@ -5683,20 +5687,21 @@ pkgbase = libgbinder-deb
 pkgname = libgbinder-deb
 ---
 pkgbase = libgc-nix
-	pkgver = 8.2.6
+	pkgver = 8.2.8
+	epoch = 1
 	pkgdesc = The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (patched for Nix)
 	url = https://www.hboehm.info/gc/
 	arch = any
 	makedepends = pkg-config
-	replaces = libgc1
-	replaces = libgc-dev
-	provides = libgc1
-	provides = libgc-dev
+	replaces = libgc1=1:8.2.8
+	replaces = libgc-dev=1:8.2.8
+	provides = libgc1=1:8.2.8
+	provides = libgc-dev=1:8.2.8
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: boehm-gc
-	source = https://github.com/ivmai/bdwgc/releases/download/v8.2.6/gc-8.2.6.tar.gz
-	source = https://github.com/lix-project/lix/raw/7dfa2a761ef8856454d8f63eda27edb8984bdc98/boehmgc-coroutine-sp-fallback.diff
-	sha256sums = b9183fe49d4c44c7327992f626f8eaa1d8b14de140f243edb1c9dcff7719a7fc
+	source = https://github.com/ivmai/bdwgc/releases/download/v8.2.8/gc-8.2.8.tar.gz
+	source = https://github.com/NixOS/nixpkgs/raw/cc54a7243aa4b7bf87afc351885e1b9e42b32202/pkgs/tools/package-management/nix/patches/boehmgc-coroutine-sp-fallback.patch
+	sha256sums = 7649020621cb26325e1fb5c8742590d92fb48ce5c259b502faf7d9fb5dabb160
 	sha256sums = ddf3d3948262ae023e30491f6db437506e421633739a0e81da7f68f0a454fb13
 
 pkgname = libgc-nix
@@ -6294,39 +6299,32 @@ pkgname = linux-wifi-hotspot-deb
 ---
 pkgbase = lix-git
 	gives = lix
-	pkgver = 2.90
+	pkgver = 2.92.0
 	pkgdesc = A modern, delicious implementation of the Nix package manager, focused on correctness, usability, and growth
 	url = https://lix.systems
 	arch = any
 	depends = busybox-static
-	depends = curl
 	depends = libarchive13t64 | libarchive13
 	depends = libboost-container1.83.0 | libboost-container1.81.0
-	depends = libboost-context1.83.0 | libboost-context1.81.0
-	depends = libboost-coroutine1.83.0 | libboost-coroutine1.81.0
 	depends = libbrotli1
 	depends = libbsd0
+	depends = libcapnp-1.0.1 | libcapnp-0.9.2 | libcapnp-0.9.1 | libcapnp-0.7.0
 	depends = libcurl4t64 | libcurl4
 	depends = liblowdown1
 	depends = libseccomp2
 	depends = libsodium26 | libsodium23
 	depends = libsqlite3-0
 	depends = libssl3t64 | libssl3
-	depends = perl
-	depends = xz-utils
-	makedepends = bison
 	makedepends = busybox-static
 	makedepends = cargo
+	makedepends = clang
 	makedepends = cmake
-	makedepends = doxygen
-	makedepends = flex
 	makedepends = graphviz
 	makedepends = libarchive-dev
 	makedepends = libboost-container-dev
-	makedepends = libboost-context-dev
-	makedepends = libboost-coroutine-dev
 	makedepends = libbrotli-dev
 	makedepends = libbsd-dev
+	makedepends = libcapnp-dev
 	makedepends = libcurl-dev
 	makedepends = liblowdown-dev
 	makedepends = librapidcheck-dev
@@ -6337,13 +6335,13 @@ pkgbase = lix-git
 	makedepends = libtoml11-dev
 	makedepends = lowdown
 	makedepends = lsof
-	makedepends = meson
+	makedepends = meson>=1.4.0
 	makedepends = ninja-build
 	makedepends = nlohmann-json3-dev
 	makedepends = pkg-config
 	makedepends = python3
-	pacdeps = coreutils-single
-	pacdeps = libeditline-troglobit
+	makedepends = tao-pegtl-dev
+	pacdeps = libeditline-troglobit-git
 	pacdeps = libgc-nix
 	pacdeps = mdbook
 	pacdeps = mdbook-linkcheck
@@ -6352,7 +6350,7 @@ pkgbase = lix-git
 	conflicts = nix-setup-systemd
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: lix-nix
-	source = lix::https://github.com/lix-project/lix.git
+	source = https://github.com/lix-project/lix.git
 
 pkgname = lix-git
 ---
