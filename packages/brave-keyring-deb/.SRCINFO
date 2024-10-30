@@ -2,6 +2,7 @@ pkgbase = brave-keyring-deb
 	gives = brave-keyring
 	pkgver = 1.17
 	pkgdesc = Brave Browser keyring and repository files as a necessary dependency for brave-browser-deb
+	arch = all
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	source = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-keyring/brave-keyring_1.17-1.deb

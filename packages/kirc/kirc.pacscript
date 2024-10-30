@@ -1,5 +1,6 @@
 pkgname="kirc"
 repology=("project: ${pkgname}")
+arch=("any")
 pkgver="0.3.2"
 source=("https://github.com/mcpcpc/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("automake")

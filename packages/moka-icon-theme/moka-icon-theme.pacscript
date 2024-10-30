@@ -1,4 +1,5 @@
 pkgname="moka-icon-theme"
+arch=("any")
 pkgver="5.4.0"
 maintainer=("aranym <aranym1@pm.me>")
 source=("https://codeload.github.com/snwh/moka-icon-theme/tar.gz/refs/tags/v5.4.0")

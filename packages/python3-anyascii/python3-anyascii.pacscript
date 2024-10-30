@@ -1,5 +1,6 @@
 pkgname="python3-anyascii"
 _name="${pkgname#python3-}"
+arch=("any")
 pkgver="0.3.2"
 pkgdesc='Unicode to ASCII transliteration'
 url=https://anyascii.com/

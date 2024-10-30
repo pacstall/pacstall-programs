@@ -1,6 +1,7 @@
 pkgbase = yabridge
 	pkgver = 5.0.5
 	pkgdesc = A modern and transparent way to use Windows VST2 and VST3 plugins on Linux.
+	arch = any
 	optdepends = wine: 32-bit windows emulator
 	optdepends = wine64: 64-bit windows emulator
 	maintainer = echometerain <echometer@disroot.org>

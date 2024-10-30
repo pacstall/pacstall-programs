@@ -3,6 +3,7 @@ pkgbase = rhino-setup-git
 	pkgver = 2024.2
 	pkgrel = 2
 	pkgdesc = Rhino Linux Setup Prompt
+	arch = any
 	depends = libgtk-4-dev
 	depends = libadwaita-1-dev
 	depends = gettext

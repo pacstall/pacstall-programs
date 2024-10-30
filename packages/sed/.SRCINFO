@@ -1,6 +1,7 @@
 pkgbase = sed
 	pkgver = 4.8
 	pkgdesc = sed (stream editor) is a non-interactive command-line text editor.
+	arch = any
 	depends = libselinux1
 	depends = libc6
 	depends = libacl1

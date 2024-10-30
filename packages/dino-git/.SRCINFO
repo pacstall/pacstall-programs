@@ -2,6 +2,7 @@ pkgbase = dino-git
 	gives = dino
 	pkgver = 0.1.1
 	pkgdesc = An extensible database system written in Bash
+	arch = any
 	breaks = dino
 	breaks = dino-app
 	breaks = dino-bin

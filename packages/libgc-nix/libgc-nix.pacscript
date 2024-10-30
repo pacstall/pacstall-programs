@@ -1,4 +1,5 @@
 pkgname='libgc-nix'
+arch=("any")
 pkgver='8.2.6'
 pkgdesc='The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (patched for Nix)'
 url='https://www.hboehm.info/gc/'

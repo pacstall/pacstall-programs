@@ -1,0 +1,16 @@
+pkgbase = ffmpeg4.4
+	pkgver = 4.4.4
+	pkgdesc = Complete solution to record, convert and stream audio and video
+	url = https://ffmpeg.org/
+	arch = any
+	makedepends = pkg-config
+	makedepends = nasm
+	makedepends = gnutls-dev
+	makedepends = libdrm-dev
+	makedepends = libfontconfig-dev
+	makedepends = libpulse-dev
+	maintainer = Elsie19 <hwengerstickel@pm>
+	source = git+https://git.ffmpeg.org/ffmpeg.git#tag=n4.4.4
+	source = https://gitlab.archlinux.org/archlinux/packaging/packages/ffmpeg4.4/-/raw/main/binutils-2.41.patch
+
+pkgname = ffmpeg4.4

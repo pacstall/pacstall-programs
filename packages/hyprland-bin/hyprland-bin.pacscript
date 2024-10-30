@@ -1,14 +1,16 @@
 pkgname="hyprland-bin"
-pkgver="0.40.0"
-pkgrel="2"
+pkgver="0.44.1"
 gives="hyprland"
 arch=("amd64")
 conflicts=("hyprland")
-depends=("libegl1" "libxcb-util1" "libxcb-render0" "libxcb-image0" "libxcb-icccm4" "libxcb-composite0" "libxcb-res0" "libxcb-ewmh2" "libwayland-cursor0" "libdisplay-info1" "libxkbcommon0" "libglib2.0-0" "libharfbuzz0b" "libpangocairo-1.0-0" "libinput10" "libseat-dev" "libliftoff0" "libopengl0" "libglx0" "libgles2")
-compatible=("*:mantic" "*:noble" "*:devel" "debian:bookworm" "debian:trixie" "debian:sid")
+depends=("libegl1" "libxcb-util1" "libxcb-render0" "libxcb-image0" "libxcb-icccm4" "libxcb-composite0" "libxcb-res0" "libxcb-ewmh2" "libwayland-cursor0" "libdisplay-info2" "libxkbcommon0" "libglib2.0-0" "libharfbuzz0b" "libpangocairo-1.0-0" "libinput10" "libseat-dev" "libliftoff0" "libopengl0" "libglx0" "libgles2" "libxcb-errors0" "libxcursor1" "libhyprcursor0")
+# Oracular currently doesn't have a libhyprutils0 that is up to date with the SO file.
+# Same for aquamarine, but they just don't have it upstream.
+pacdeps=("libhyprutils-bin" "libaquamarine-bin")
+compatible=("*:oracular" "*:devel" "debian:trixie" "debian:sid")
 pkgdesc="A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
 source=("https://github.com/hyprwm/Hyprland/releases/download/v${pkgver}/v${pkgver}.tar.gz")
-sha256sums=("746ac771c7675163b40b5fb989e0a8aabd8d1a18a63aaf228d2bd0af2e0ff3d1")
+sha256sums=("4af254ce83f156df8a23c731f82b8879d015128b2185ae0b6a03c1b4caf49ec5")
 maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: hyprland")
 

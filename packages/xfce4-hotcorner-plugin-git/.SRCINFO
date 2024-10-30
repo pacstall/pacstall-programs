@@ -2,6 +2,7 @@ pkgbase = xfce4-hotcorner-plugin-git
 	gives = xfce4-hotcorner-plugin
 	pkgver = 0.0.4
 	pkgdesc = hotcorners, for XFCE
+	arch = any
 	depends = libgtk-3-0
 	depends = libwnck-3-0
 	depends = libnotify4

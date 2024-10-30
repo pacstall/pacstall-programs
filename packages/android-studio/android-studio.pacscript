@@ -1,6 +1,7 @@
 pkgname="android-studio"
 repology=("project: ${pkgname}" "repo: aur" "visiblename: ${pkgname}")
 replaces=("${pkgname}" "${pkgname}-beta" "${pkgname}-canary")
+arch=("amd64")
 pkgver="2024.1.1.12"
 source=(
   "https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${pkgname}-${pkgver}-linux.tar.gz"

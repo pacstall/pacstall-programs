@@ -1,5 +1,6 @@
 pkgname="yt-dlp"
 repology=("project: ${pkgname}")
+arch=("all")
 pkgver="2024.08.06"
 source=("https://github.com/yt-dlp/yt-dlp/releases/download/${pkgver}/yt-dlp")
 depends=("python3" "ffmpeg")

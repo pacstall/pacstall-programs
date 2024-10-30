@@ -7,6 +7,7 @@
 maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="oil"
+arch=("any")
 pkgver="0.20.0"
 pkgdesc="A bash-compatible UNIX shell written in Python"
 source=("https://www.oilshell.org/download/oil-${pkgver}.tar.xz")

@@ -2,6 +2,7 @@ pkgbase = fishui-git
 	gives = fishui
 	pkgver = 0.8
 	pkgdesc = FishUI is a GUI library based on QQC2 (Qt Quick Controls 2), every Cutefish application uses it.
+	arch = any
 	depends = libkf5windowsystem5
 	depends = libxcb-icccm4-dev
 	depends = qtquickcontrols2-5-dev

@@ -1,6 +1,7 @@
 pkgname="qtile-git"
 gives="qtile"
 source=("https://github.com/qtile/qtile.git")
+arch=("any")
 pkgver="0.22.1"
 license="MIT"
 depends=("python3-cffi" "xserver-xorg" "python3-xcffib" "python3-cairocffi" "libpangocairo-1.0-0" "python3-pip" "python3-dbus" "libpulse-dev" "pavucontrol" "python3-testresources")

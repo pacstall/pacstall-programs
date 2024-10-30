@@ -1,4 +1,5 @@
 pkgname="neovim"
+arch=("any")
 pkgver="0.10.2"
 pkgrel="1"
 source=("https://github.com/neovim/neovim/archive/refs/tags/v${pkgver}.tar.gz")

@@ -2,6 +2,7 @@ pkgbase = i3lock-color
 	gives = i3lock
 	pkgver = 2.13.c.5
 	pkgdesc = The world's most popular non-default computer lockscreen.
+	arch = any
 	depends = libxcb-composite0-dev
 	depends = libpam0g-dev
 	depends = libev-dev

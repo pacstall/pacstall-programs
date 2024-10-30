@@ -2,6 +2,7 @@ pkgbase = cutefish-icons-git
 	gives = cutefish-icons
 	pkgver = 0.8
 	pkgdesc = System default icon theme of CutefishOS.
+	arch = any
 	makedepends = extra-cmake-modules
 	makedepends = ninja-build
 	license = GPL-3.0

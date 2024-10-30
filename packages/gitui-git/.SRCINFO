@@ -3,6 +3,7 @@ pkgbase = gitui-git
 	pkgver = 0.26.3
 	pkgdesc = Blazing fast terminal-ui for git written in Rust
 	url = https://github.com/extrawurst/gitui
+	arch = any
 	depends = gcc
 	depends = libgit2-dev
 	depends = libxcb1

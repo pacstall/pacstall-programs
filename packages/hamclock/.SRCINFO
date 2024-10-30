@@ -3,6 +3,7 @@ pkgbase = hamclock
 	pkgrel = 2
 	pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
 	url = https://clearskyinstitute.com/ham/HamClock
+	arch = any
 	makedepends = gcc
 	makedepends = make
 	makedepends = pkg-config

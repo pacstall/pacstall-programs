@@ -2,6 +2,7 @@ pkgbase = htop
 	gives = htop
 	pkgver = 3.2.2
 	pkgdesc = htop is a cross-platform interactive process viewer.
+	arch = any
 	makedepends = dh-autoreconf
 	makedepends = libncurses5-dev
 	makedepends = libncursesw5-dev

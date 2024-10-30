@@ -1,6 +1,7 @@
 pkgbase = uwufetch
 	pkgver = 1.7
 	pkgdesc = A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace.
+	arch = any
 	makedepends = gcc
 	optdepends = viu: image preview
 	optdepends = lshw: hardware info

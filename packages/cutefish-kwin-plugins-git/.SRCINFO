@@ -2,6 +2,7 @@ pkgbase = cutefish-kwin-plugins-git
 	gives = cutefish-kwin-plugins
 	pkgver = 0.8
 	pkgdesc = CutefishOS KWin Plugins.
+	arch = any
 	depends = libkf5config-dev
 	depends = libkdecorations2-dev
 	depends = libkf5guiaddons-dev

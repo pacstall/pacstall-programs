@@ -1,4 +1,5 @@
 pkgname="fpc-laz-deb"
+arch=("amd64")
 pkgver="3.2.2"
 gives="fpc-laz"
 replaces=("fpc")

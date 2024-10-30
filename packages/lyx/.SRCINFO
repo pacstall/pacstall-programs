@@ -1,6 +1,7 @@
 pkgbase = lyx
 	pkgver = 2.3.7-1
 	pkgdesc = An advanced WYSIWYM document processor & LaTeX front-end
+	arch = any
 	depends = libqt5svg5-dev
 	depends = texlive-base
 	depends = python3

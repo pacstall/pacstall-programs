@@ -2,6 +2,7 @@ pkgname="android-studio-canary"
 gives="android-studio"
 repology=("project: ${gives}")
 replaces=("${gives}-beta" "${gives}" "${pkgname}")
+arch=("amd64")
 pkgver="2023.1.1.28"
 source=(
   "https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${gives}-${pkgver}-linux.tar.gz"

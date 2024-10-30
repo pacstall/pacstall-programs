@@ -1,4 +1,5 @@
 pkgname="linux-kernel"
+arch=("amd64" "arm64")
 pkgver="6.11"
 source=("https://github.com/oklopfer/debs/raw/master/empty.tar.xz")
 pacdeps=("linux-headers-deb" "linux-headers-generic-deb" "linux-modules-deb" "linux-image-unsigned-deb")

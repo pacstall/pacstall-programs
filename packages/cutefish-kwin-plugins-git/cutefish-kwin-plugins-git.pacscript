@@ -1,5 +1,6 @@
 pkgname="cutefish-kwin-plugins-git"
 gives="cutefish-kwin-plugins"
+arch=("any")
 pkgver="0.8"
 source=("https://github.com/cutefishos/kwin-plugins.git")
 license="GPL-3.0"

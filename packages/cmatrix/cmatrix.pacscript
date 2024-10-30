@@ -1,4 +1,5 @@
 pkgname="cmatrix"
+arch=("any")
 pkgver="2.0"
 source=("https://github.com/abishekvashok/${pkgname}/releases/download/v${pkgver}/${pkgname}-v${pkgver}-Butterscotch.tar")
 makedepends=("autoconf" "make")

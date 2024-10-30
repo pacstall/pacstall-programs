@@ -3,6 +3,7 @@ pkgbase = rhino-core
 	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
+	arch = all
 	depends = printer-driver-all-enforce
 	pacdeps = unicorn-desktop-git
 	pacdeps = rhino-kvantum-theme-git

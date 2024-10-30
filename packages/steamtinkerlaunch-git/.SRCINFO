@@ -2,6 +2,7 @@ pkgbase = steamtinkerlaunch-git
 	gives = steamtinkerlaunch
 	pkgver = 12.12
 	pkgdesc = Linux wrapper tool for use with the Steam client for custom launch options and 3rd party programs.
+	arch = any
 	depends = gawk
 	depends = xdotool
 	depends = wget

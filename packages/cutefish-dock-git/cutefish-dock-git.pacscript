@@ -1,5 +1,6 @@
 pkgname="cutefish-dock-git"
 gives="cutefish-dock"
+arch=("any")
 pkgver="0.8"
 source=("https://github.com/cutefishos/dock.git")
 license="GPL-3.0"

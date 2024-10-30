@@ -2,6 +2,7 @@ pkgbase = walc-app
 	gives = walc
 	pkgver = 0.2.1
 	pkgdesc = An unofficial WhatsApp Desktop client for linux systems.
+	arch = amd64
 	breaks = walc
 	breaks = walc-bin
 	breaks = walc-git

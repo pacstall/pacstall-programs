@@ -1,5 +1,6 @@
 pkgname="snapper-rollback-git"
 gives="snapper-rollback"
+arch=("any")
 pkgver="1.0"
 pkgdesc='Rollback snapper snapshots
 https://wiki.archlinux.org/index.php/Snapper#Suggested_filesystem_layout'

@@ -1,13 +1,13 @@
 pkgname="brave-browser-deb"
 gives="brave-browser"
-pkgver="1.70.126"
+pkgver="1.71.118"
 breaks=("${gives}-bin" "${gives}-git" "${gives}-app")
 url="https://brave.com/"
 pkgdesc="Release version of world's most unique, privacy friendly web browser"
 arch=("amd64" "arm64")
 source=("https://brave-browser-apt-release.s3.brave.com/pool/main/b/${gives}/${gives}_${pkgver}_${CARCH}.deb")
-sha256sums_amd64=("78d8a76c2c20cc31b0f16c148c3fcb634212b0633af0df10759da60e97167089")
-sha256sums_arm64=("0400d94b996a08726f296693ea9e6f1997d423085c9264a66aef7fd15e3beb75")
+sha256sums_amd64=("4a7a580099aa0517c4090ae53af831c1023593b8f4b5f72d246ed3b7ddda7def")
+sha256sums_arm64=("e844545946f818bfa4b88d23f15237bc4451dc715f6f58182f877e8414dcc39c")
 pacdeps=("brave-keyring-deb")
 repology=("project: brave")
 maintainer=("Elsie19 <elsie19@pm.me>" "bibelin <balian1belin@yandex.ru>")

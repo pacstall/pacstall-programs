@@ -1,6 +1,7 @@
 pkgbase = batsignal
 	pkgver = 1.6.4
 	pkgdesc = A lightweight battery monitor daemon
+	arch = any
 	makedepends = pkg-config
 	makedepends = libnotify4
 	makedepends = libnotify-dev

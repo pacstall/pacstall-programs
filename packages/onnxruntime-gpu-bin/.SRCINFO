@@ -2,6 +2,7 @@ pkgbase = onnxruntime-gpu-bin
 	gives = onnxruntime-gpu
 	pkgver = 1.17.1
 	pkgdesc = Cross-platform inference and training machine-learning accelerator with gpu support
+	arch = amd64
 	replaces = onnxruntime-gpu-1-7-0-bin
 	replaces = onnxruntime-gpu
 	replaces = onnxruntime-gpu-bin

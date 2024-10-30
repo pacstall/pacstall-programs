@@ -1,5 +1,6 @@
 pkgname='libeditline-troglobit'
 _pkgname='editline'
+arch=("any")
 pkgver='1.17.1'
 pkgdesc='A readline() replacement for UNIX without termcap (ncurses)'
 url='https://troglobit.com/projects/editline/'

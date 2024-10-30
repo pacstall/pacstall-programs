@@ -1,4 +1,5 @@
 pkgname="nofetch"
+arch=("all")
 pkgver="1.0"
 source=("https://github.com/jnats/nofetch/archive/refs/tags/v${pkgver}.zip")
 pkgdesc="The simple man's fetch tool"

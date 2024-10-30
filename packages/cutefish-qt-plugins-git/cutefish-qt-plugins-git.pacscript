@@ -1,5 +1,6 @@
 pkgname="cutefish-qt-plugins-git"
 gives="cutefish-qt-plugins"
+arch=("any")
 pkgver="0.5"
 source=("https://github.com/cutefishos/qt-plugins.git")
 license="GPL-3.0"

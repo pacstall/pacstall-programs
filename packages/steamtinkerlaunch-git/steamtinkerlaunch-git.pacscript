@@ -1,5 +1,6 @@
 pkgname="steamtinkerlaunch-git"
 source=("https://github.com/frostworx/steamtinkerlaunch.git")
+arch=("any")
 pkgver="12.12"
 depends=("gawk" "xdotool" "wget" "vim" "xdotool" "x11-utils")
 breaks=("steamtinkerlaunch" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-deb" "${pkgname}-bin")
