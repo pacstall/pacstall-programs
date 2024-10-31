@@ -1,7 +1,7 @@
 pkgname="librewolf-deb"
 gives="librewolf"
 replaces=("${gives}")
-pkgdesc="A fork of Firefox, focused on privacy, security and freedom."
+pkgdesc="A fork of Firefox, focused on privacy, security and freedom"
 breaks=("${gives}-app" "${gives}-bin" "${gives}-git")
 repology=("project: librewolf")
 maintainer=(
