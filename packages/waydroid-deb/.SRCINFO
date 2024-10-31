@@ -1,7 +1,7 @@
 pkgbase = waydroid-deb
 	gives = waydroid
 	pkgver = 1.4.3
-	pkgdesc = Bring Android support on your own Wayland session which runs under LXC container.
+	pkgdesc = Bring Android support on your own Wayland session which runs under LXC container
 	arch = all
 	depends = lxc
 	depends = python3
