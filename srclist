@@ -9197,7 +9197,7 @@ pkgname = resticprofile-bin
 ---
 pkgbase = rhino-core
 	pkgver = 2024.2
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
 	arch = all
@@ -9212,7 +9212,7 @@ pkgbase = rhino-core
 	replaces = rhino-server-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
-	compatible = ubuntu:oracular
+	compatible = ubuntu:plucky
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -9265,7 +9265,7 @@ pkgname = rhino-neofetch-git
 ---
 pkgbase = rhino-pine-core
 	pkgver = 2024.2
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
 	arch = all
@@ -9283,7 +9283,7 @@ pkgbase = rhino-pine-core
 	replaces = rhino-server-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
-	compatible = ubuntu:oracular
+	compatible = ubuntu:plucky
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -9315,7 +9315,7 @@ pkgname = rhino-plymouth-theme-git
 ---
 pkgbase = rhino-server-core
 	pkgver = 2024.2
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide minimal core Rhino Linux software
 	priority = essential
 	arch = all
@@ -9325,7 +9325,7 @@ pkgbase = rhino-server-core
 	replaces = rhino-pine-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
-	compatible = ubuntu:oracular
+	compatible = ubuntu:plucky
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -9418,7 +9418,7 @@ pkgname = rhino-system-git
 ---
 pkgbase = rhino-ubxi-core
 	pkgver = 2024.2
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 	priority = essential
 	arch = all
@@ -9432,7 +9432,7 @@ pkgbase = rhino-ubxi-core
 	replaces = rhino-pine-core
 	replaces = rhino-server-core
 	compatible = ubuntu:devel
-	compatible = ubuntu:oracular
+	compatible = ubuntu:plucky
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
