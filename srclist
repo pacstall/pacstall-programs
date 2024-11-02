@@ -6118,7 +6118,7 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-longterm-6.6-headers-deb
-	gives = linux-modules-6.6.51-060651-generic
+	gives = linux-headers-6.6.51-060651-generic
 	pkgver = 6.6.51
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (headers)
 	arch = arm64
@@ -6128,9 +6128,9 @@ pkgbase = linux-longterm-6.6-headers-deb
 	repology = project: linux
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/mainline/v6.6.51/arm64/linux-modules-6.6.51-060651-generic_6.6.51-060651.202409121031_arm64.deb
+	source_arm64 = https://kernel.ubuntu.com/mainline/v6.6.51/arm64/linux-headers-6.6.51-060651-generic_6.6.51-060651.202409121031_arm64.deb
 	sha256sums_arm64 = 15f2c20cc364c523df0384be20534dc87a52209906d09d4581610f9cb94ccfb0
-	source_amd64 = https://kernel.ubuntu.com/mainline/v6.6.51/amd64/linux-modules-6.6.51-060651-generic_6.6.51-060651.202409121031_amd64.deb
+	source_amd64 = https://kernel.ubuntu.com/mainline/v6.6.51/amd64/linux-headers-6.6.51-060651-generic_6.6.51-060651.202409121031_amd64.deb
 	sha256sums_amd64 = 36752c707885aea2cb05aa7f96a06a1fec4e9ca876596e789a5375c45a72328f
 
 pkgname = linux-longterm-6.6-headers-deb
