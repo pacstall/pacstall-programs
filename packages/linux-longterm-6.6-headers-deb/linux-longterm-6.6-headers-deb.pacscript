@@ -1,5 +1,5 @@
 pkgname="linux-longterm-6.6-headers-deb"
-gives="linux-modules-6.6.51-060651-generic"
+gives="linux-headers-6.6.51-060651-generic"
 pkgver="6.6.51"
 buildver="6.6.51-060651.202409121031"
 arch=("arm64" "amd64")
