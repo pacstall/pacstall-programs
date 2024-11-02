@@ -299,8 +299,6 @@ linux-image-unsigned-stable-deb
 linux-kernel
 linux-kernel-stable
 linux-libc-dev-okpine-deb
-linux-longterm-6.6-deb
-linux-longterm-6.6-headers-deb
 linux-longterm-6.6-modules-deb
 linux-modules-deb
 linux-modules-stable-deb
