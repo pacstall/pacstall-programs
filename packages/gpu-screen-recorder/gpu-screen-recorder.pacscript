@@ -1,12 +1,12 @@
 pkgname="gpu-screen-recorder"
 pkgdesc="A shadowplay-like screen recorder for Linux"
-pkgver="4.2.4"
+pkgver="4.2.6"
 arch=("amd64")
 url='https://git.dec05eba.com/gpu-screen-recorder/about'
 repology=("project: gpu-screen-recorder")
 license=("GPL-3.0-only")
 source=("https://dec05eba.com/snapshot/gpu-screen-recorder.git.${pkgver}.tar.gz")
-sha256sums=("f22d2eb31a84979a94075e9b46b75a8af1ebfab89574cf1cb1b378e7b174f07a")
+sha256sums=("dd0301c7a069d9f6b98677491191d66e41f1ca9e1c10a5b805863393fa8580b9")
 makedepends=(
   "meson"
   "libglvnd-dev"
