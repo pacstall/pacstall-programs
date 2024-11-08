@@ -6117,6 +6117,7 @@ pkgbase = linux-libc-dev-okpine-deb
 
 pkgname = linux-libc-dev-okpine-deb
 ---
+---
 pkgbase = linux-longterm-6.6-modules-deb
 	gives = linux-modules-6.6.51-060651-generic
 	pkgver = 6.6.51
