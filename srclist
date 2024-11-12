@@ -1031,7 +1031,7 @@ pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.71.121
+	pkgver = 1.71.123
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1043,10 +1043,10 @@ pkgbase = brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.71.121_amd64.deb
-	sha256sums_amd64 = b1cd85152b6d9bdfb287c6ad250e8a4b964bf3b3aff6f51725e54a6133cda72d
-	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.71.121_arm64.deb
-	sha256sums_arm64 = f8c0595ed81a1224ea11deb71e93db8b82a31ce1cf45171ff2add00def98b0a9
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.71.123_amd64.deb
+	sha256sums_amd64 = 7c97334c0adafa3f3ebde89ccf8948c8a48d272c492b8abd8296680324309314
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.71.123_arm64.deb
+	sha256sums_arm64 = bb77e67bbef5439174d1f6222decfd9a119047698e45875269b5e8bebd3e3981
 
 pkgname = brave-browser-deb
 ---
@@ -7434,7 +7434,7 @@ pkgbase = nuclei-bin
 pkgname = nuclei-bin
 ---
 pkgbase = nushell-bin
-	pkgver = 0.94.2
+	pkgver = 0.99.1
 	pkgdesc = A new type of shell
 	arch = arm64
 	arch = amd64
@@ -7444,10 +7444,10 @@ pkgbase = nushell-bin
 	breaks = nushell-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: nushell
-	source_arm64 = https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-aarch64-unknown-linux-gnu.tar.gz
-	sha256sums_arm64 = 85de6fe29ba70f162979cd4108c1935042cb833bbb30cdde4b332cd0d5c752cb
-	source_amd64 = https://github.com/nushell/nushell/releases/download/0.94.2/nu-0.94.2-x86_64-unknown-linux-gnu.tar.gz
-	sha256sums_amd64 = afe8f0e304a3e1299823b84a4ac5796f0e40dc8face9e0f583bdc2ed3180df80
+	source_arm64 = https://github.com/nushell/nushell/releases/download/0.99.1/nu-0.99.1-aarch64-unknown-linux-gnu.tar.gz
+	sha256sums_arm64 = 5e4437a05faf127d91760f86b07e895832bd7afef6db90b8c717bcbc9ecb4299
+	source_amd64 = https://github.com/nushell/nushell/releases/download/0.99.1/nu-0.99.1-x86_64-unknown-linux-gnu.tar.gz
+	sha256sums_amd64 = 3aeb6b790414e29296097790074f2e03db29b0aba329306e3ffdbfefa3e2664f
 
 pkgname = nushell-bin
 ---
@@ -9412,6 +9412,20 @@ pkgbase = rhino-setup-git
 	source = https://github.com/rhino-linux/rhino-setup.git
 
 pkgname = rhino-setup-git
+---
+pkgbase = rhino-stampede-dev
+	pkgver = 2024.3
+	pkgdesc = Testing suite for Rhino Linux development
+	arch = all
+	pacdeps = unicons-git
+	pacdeps = xfce4-dynamic-workspaces-plugin-git
+	conflicts = rhino-server-core
+	conflicts = rhino-ubxi-core
+	compatible = ubuntu:devel
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty
+
+pkgname = rhino-stampede-dev
 ---
 pkgbase = rhino-system-git
 	gives = rhino-system
@@ -12585,6 +12599,20 @@ pkgbase = xfce4-deb
 
 pkgname = xfce4-deb
 ---
+pkgbase = xfce4-dynamic-workspaces-plugin-git
+	gives = xfce4-dynamic-workspaces-plugin
+	pkgver = 0.0.1
+	pkgdesc = Dynamic workspaces for XFCE, similar to GNOME
+	arch = all
+	depends = python3-gi
+	depends = libwnck-3-0
+	depends = wmctrl
+	depends = gir1.2-notify-0.7
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/DimseBoms/XFCE-Dynamic-Workspace.git
+
+pkgname = xfce4-dynamic-workspaces-plugin-git
+---
 pkgbase = xfce4-hotcorner-plugin-git
 	gives = xfce4-hotcorner-plugin
 	pkgver = 0.0.4
@@ -12870,7 +12898,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-generic-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.17
+	pkgver = 1.0.1-a.19
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -12905,14 +12933,14 @@ pkgbase = zen-browser-generic-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.17.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.17/zen.linux-generic.tar.bz2
-	sha256sums = 997a5cb48d267f9f6ffb23de87f6ade2aa2d441a914c8ea116192c20c7f2c9fa
+	source = zen-browser-1.0.1-a.19.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.19/zen.linux-generic.tar.bz2
+	sha256sums = 96eff8dd894ad03e7e5e6d25e6dc491bc5dad9f3dde1ec16fbb3a40c6930dfff
 
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.17
+	pkgver = 1.0.1-a.19
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -12947,8 +12975,8 @@ pkgbase = zen-browser-specific-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.17.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.17/zen.linux-specific.tar.bz2
-	sha256sums = eab4a5d1bd46ea1722782e3f9529ff6e4cbef057afc4b669d4d75cb10d53a7b1
+	source = zen-browser-1.0.1-a.19.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.19/zen.linux-specific.tar.bz2
+	sha256sums = b897d9728ac34858d2267d9b13e3f1f60522270feabeb80738a55452c3392306
 
 pkgname = zen-browser-specific-bin
 ---
