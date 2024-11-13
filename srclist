@@ -2702,13 +2702,13 @@ pkgname = fennel
 ---
 pkgbase = ferdium-deb
 	gives = ferdium
-	pkgver = 6.7.7
+	pkgver = 7.0.0
 	pkgdesc = Ferdium is a desktop app that helps you organize how you use your favourite apps by combining them into one application
 	arch = amd64
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: ferdium
-	source = https://github.com/ferdium/ferdium-app/releases/download/v6.7.7/Ferdium-linux-6.7.7-amd64.deb
-	sha256sums = e4e5b5d2c00134d610354828acceb7e23e6888184925bcb5ca61fa51c9a49d18
+	source = https://github.com/ferdium/ferdium-app/releases/download/v7.0.0/Ferdium-linux-7.0.0-amd64.deb
+	sha256sums = 132d8585e910552601d248b85371f2b8ab3f51182d64c0a5e358e43ec64c36b4
 
 pkgname = ferdium-deb
 ---
@@ -9902,15 +9902,15 @@ pkgname = signal-desktop-deb
 ---
 pkgbase = simplex-desktop-app
 	gives = simplex-desktop
-	pkgver = 6.0.4
+	pkgver = 6.1.1
 	pkgdesc = The first messaging platform with no user identifiers - 100% private by design (GUI)
 	url = https://simplex.chat
 	arch = amd64
 	license = AGPL-3.0-or-later
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: simplex-desktop
-	source = simplex-desktop::https://github.com/simplex-chat/simplex-chat/releases/download/v6.0.4/simplex-desktop-x86_64.AppImage
-	sha512sums = ee7b2e7e63d6df065e6dc792c27634fe3cfa6a8623072fede69048bcfaf3eb4e1cd680a5f1c08c16a7153b5bdfdad0d8824ef5a40bc555402cfcfe1a50a95b3a
+	source = simplex-desktop::https://github.com/simplex-chat/simplex-chat/releases/download/v6.1.1/simplex-desktop-x86_64.AppImage
+	sha512sums = 15c894d4b91852405268be381db3d88a9a01745e2a89d3930bbfd019b4ddbfbb88ee0611a7759e4d4ebfaecf7f96547d890fbda826fafd86504c256865ceb70e
 
 pkgname = simplex-desktop-app
 ---
@@ -12860,7 +12860,7 @@ pkgname = zap
 ---
 pkgbase = zed-editor-preview-bin
 	gives = zed-editor-preview
-	pkgver = 0.160.2
+	pkgver = 0.161.1
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)
 	url = https://zed.dev
 	arch = x86_64
@@ -12870,16 +12870,16 @@ pkgbase = zed-editor-preview-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/preview/0.160.2/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 552aab29e6433e0fb176012f939aee8adcddc42b1527a88168325421ea4732fd
-	source_aarch64 = https://zed.dev/api/releases/preview/0.160.2/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = a20230b363973addad96af3bcdc7729fde6558c5cdae2714b68b4825f95e25f3
+	source_x86_64 = https://zed.dev/api/releases/preview/0.161.1/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 57c6da3fa83aaf8b34f0aa668f3e9b25f3f9b172d960d1715b5718ac062939c5
+	source_aarch64 = https://zed.dev/api/releases/preview/0.161.1/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 81c290d6c75490a1aab338a0a35e0f41aa09071c8ba7b2b15c6a60f051b6ddb7
 
 pkgname = zed-editor-preview-bin
 ---
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 0.159.7
+	pkgver = 0.160.7
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -12889,10 +12889,10 @@ pkgbase = zed-editor-stable-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/0.159.7/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = ac7da39fee84e9f8180bc226637609030d4b38b541b9ae6d27cbe6699da4f814
-	source_aarch64 = https://zed.dev/api/releases/stable/0.159.7/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 718a0d981e35587b4da04cff5259a391a074c89b2b44a73ce378ebcb55b0de9d
+	source_x86_64 = https://zed.dev/api/releases/stable/0.160.7/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = e7c526b14690a194060d7806d6d41af9c1f3676c04ea5c6fa52273ee49b7d811
+	source_aarch64 = https://zed.dev/api/releases/stable/0.160.7/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 1211b1f3d6e3d007fdafa50471a751aeaa64ac92c99d1bd2eee826c57500759b
 
 pkgname = zed-editor-stable-bin
 ---
