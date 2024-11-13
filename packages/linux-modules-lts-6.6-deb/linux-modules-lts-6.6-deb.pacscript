@@ -1,4 +1,4 @@
-pkgname="linux-longterm-6.6-modules-deb"
+pkgname="linux-modules-lts-6.6-deb"
 gives="linux-modules-6.6.51-060651-generic"
 pkgver="6.6.51"
 buildver="6.6.51-060651.202409121031"
