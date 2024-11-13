@@ -1,7 +1,7 @@
 pkgbase = linux-longterm-6.6-headers-modular-deb
 	gives = linux-headers-6.6.51-060651
 	pkgver = 6.6.51
-	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (headers modular)
+	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (headers modular for all architecture)
 	arch = all
 	pacdeps = linux-longterm-6.6-modules-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
