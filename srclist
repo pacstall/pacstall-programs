@@ -3617,7 +3617,7 @@ pkgname = goneovim-bin
 ---
 pkgbase = google-chrome-beta-deb
 	gives = google-chrome-beta
-	pkgver = 130.0.6723.6
+	pkgver = 131.0.6778.33
 	pkgdesc = The web browser built by Google - Beta channel
 	arch = amd64
 	replaces = google-chrome-beta
@@ -3625,8 +3625,8 @@ pkgbase = google-chrome-beta-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: google-chrome
 	repology = visiblename: google-chrome-beta
-	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-beta/google-chrome-beta_130.0.6723.6-1_amd64.deb
-	sha256sums = 02b7a272153ae08afcb16828d6b8bb930f76dfd3e481032572e91b228e0a84da
+	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-beta/google-chrome-beta_131.0.6778.33-1_amd64.deb
+	sha256sums = 00b954ca3a51eb6e8173be756afa365bfdb7f8354fdbfa1299fd826db97f9b3f
 
 pkgname = google-chrome-beta-deb
 ---
