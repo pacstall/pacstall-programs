@@ -6,5 +6,5 @@ source=("https://archive.raspberrypi.org/debian/pool/main/r/${gives}/${gives}_${
 pkgdesc="Raspberry Pi configuration tool"
 sha256sums=("8e328e0886b58023b03b8cf799a77180650c318df075605684103735c90a747f")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-arch=("any")
+arch=("all")
 repology=("project: ${gives}")

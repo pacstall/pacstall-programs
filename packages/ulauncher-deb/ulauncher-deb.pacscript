@@ -1,7 +1,7 @@
 pkgname="ulauncher-deb"
 gives="ulauncher"
 pkgver="6.0.0~beta16"
-arch=("any")
+arch=("all")
 repology=("project: ${gives}")
 depends=("gobject-introspection" "gir1.2-gtklayershell-0.1" "python3-xlib" "gir1.2-xapp-1.0" "xapps-common")
 if [[ ! "devel noble oracular" =~ ${DISTRO#*:} ]]; then
