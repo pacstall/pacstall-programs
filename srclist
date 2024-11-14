@@ -2010,7 +2010,7 @@ pkgname = doas-git
 ---
 pkgbase = docker-bin
 	gives = docker
-	pkgver = 27.1.1
+	pkgver = 27.3.1
 	pkgdesc = Docker Engine Static Binaries
 	arch = arm64
 	arch = amd64
@@ -2040,10 +2040,10 @@ pkgbase = docker-bin
 	provides = runc
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: docker
-	source_arm64 = https://download.docker.com/linux/static/stable/aarch64/docker-27.1.1.tgz
-	sha256sums_arm64 = 86a395f67a5a23d8eb207ab5a9ab32a51f7fccd8b18dae40887e738db95c6bc4
-	source_amd64 = https://download.docker.com/linux/static/stable/x86_64/docker-27.1.1.tgz
-	sha256sums_amd64 = 118da6b8fc8e8b6c086ab0dd5e64ee549376c3a3f963723bbc9a46db475bf21f
+	source_arm64 = https://download.docker.com/linux/static/stable/aarch64/docker-27.3.1.tgz
+	sha256sums_arm64 = 4da6a6c7502b7ab561675a5ff5ac192d9b49d76d0b8847cf17ade246122279f4
+	source_amd64 = https://download.docker.com/linux/static/stable/x86_64/docker-27.3.1.tgz
+	sha256sums_amd64 = 9b4f6fe406e50f9085ee474c451e2bb5adb119a03591f467922d3b4e2ddf31d3
 
 pkgname = docker-bin
 ---
