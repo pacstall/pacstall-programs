@@ -11883,7 +11883,7 @@ pkgname = walc-app
 ---
 pkgbase = warp
 	gives = warp
-	pkgver = 0.6.2
+	pkgver = 0.8.0
 	pkgdesc = Fast and secure file transfer
 	arch = any
 	depends = libgtk-4-dev
@@ -11916,8 +11916,8 @@ pkgbase = warp
 	incompatible = debian:*
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: warp-share-files
-	source = https://gitlab.gnome.org/World/warp/-/archive/v0.6.2/warp-v0.6.2.tar.gz
-	sha256sums = b3df2017e19c7bf1477b5bd07d857d0d8fe5375ab293d932a8a4e30aba91496a
+	source = https://gitlab.gnome.org/World/warp/-/archive/v0.8.0/warp-v0.8.0.tar.gz
+	sha256sums = d7785ff813ac6b26acafcc6ee91c6fb83c0a91979eef68eb4e52380a9e0e986a
 
 pkgname = warp
 ---
