@@ -21,7 +21,6 @@ apx-git
 ardour-git
 arduino-cli-bin
 arduino-ide-bin
-armcord-deb
 aseprite
 awesome-git
 aws-cli-v2-bin
@@ -259,6 +258,7 @@ latte-dock-git
 lazarus-project-deb
 lazygit
 lbry-deb
+legcord-deb
 lemonbar-xft-git
 lens
 lf-bin
