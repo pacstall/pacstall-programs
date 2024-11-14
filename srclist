@@ -10447,14 +10447,14 @@ pkgname = stremio-deb
 ---
 pkgbase = sublime-merge-deb
 	gives = sublime-merge
-	pkgver = 2096
+	pkgver = 2102
 	pkgdesc = Sublime text like Git GUI Client
 	arch = amd64
 	replaces = sublime-merge
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: sublime-merge
-	source = https://download.sublimetext.com/sublime-merge_build-2096_amd64.deb
-	sha256sums = 81459fa0779b431c1fa50fd983343cbbfa28cc0791ec384ba952035818ba4d1a
+	source = https://download.sublimetext.com/sublime-merge_build-2102_amd64.deb
+	sha256sums = adbf53c6c95c9f6156463bb03ceeb88e231ce9aa990db01322fc0418ae25e55e
 
 pkgname = sublime-merge-deb
 ---
