@@ -5,6 +5,6 @@ buildver="6.11.0-061100.202409151536"
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb")
 pkgdesc="Ubuntu Linux stable kernel (Headers)"
 sha256sums=("9d296b9e5172cf78bf2fc535c72667c8cb0160a457617b580e79e82897cd0280")
-arch=('any')
+arch=('all')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: distrowatch")
