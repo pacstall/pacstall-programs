@@ -25,15 +25,7 @@ package() {
   local dst="${pkgdir}/opt/${pkgname}"
   mkdir -p "${dst}"
 
-  cp -r bin "${dst}"
-  cp -r lib "${dst}"
-  cp asdf.elv "${dst}"
-  cp asdf.fish "${dst}"
-  cp asdf.nu "${dst}"
-  cp asdf.sh "${dst}"
-  cp defaults "${dst}"
-  cp help.txt "${dst}"
-  cp version.txt "${dst}"
+  cp -r bin lib asdf.elv asdf.fish asdf.nu asdf.sh defaults help.txt version.txt "${dst}"
 
   local usrshare="${pkgdir}/usr/share"
 
