@@ -9,7 +9,7 @@ breaks=("${gives}" "${gives}-bin")
 maintainer=("Lanius <laniusone@pm.me>")
 
 package() {
-  cd "${_archive}"
+  cd "obquit"
   # Install obquit
   python3 setup.py install --root="${pkgdir}"
 }

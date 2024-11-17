@@ -8,14 +8,14 @@ pkgdesc="Task manager with Todoist support designed for GNU/Linux"
 maintainer=("echometer <guacamolek@yandex.com>")
 
 build() {
-  cd "${_archive}"
+  cd "planner"
   meson build --prefix="/usr"
   cd build
   ninja
 }
 
 package() {
-  cd "${_archive}"
+  cd "planner"
   cd build
   DESTDIR="${pkgdir}" ninja install
 }

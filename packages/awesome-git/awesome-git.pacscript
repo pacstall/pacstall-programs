@@ -24,13 +24,13 @@ breaks=("${gives}" "${gives}-bin")
 replaces=("${gives}" "${gives}-bin")
 
 build() {
-  cd "${_archive}"
+  cd "awesome"
   # Build rquired files
   make -j"${NCPU}" DESTDIR="${pkgdir}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "awesome"
   # Install awesome
   make install DESTDIR="${pkgdir}"
   mkdir -p "${pkgdir}/usr/share/xsessions"

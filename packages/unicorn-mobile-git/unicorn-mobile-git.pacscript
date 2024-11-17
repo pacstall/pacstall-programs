@@ -18,7 +18,7 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("debian:*")
 
 build() {
-  cd "${_archive}"
+  cd "unicorn.git#branch=mobile"
   mkdir -p "${pkgdir}/usr/share/backgrounds"
   mkdir -p "${pkgdir}/usr/share/doc"
   mkdir -p "${pkgdir}/etc/skel/.config"
@@ -39,7 +39,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "unicorn.git#branch=mobile"
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
   # Install

@@ -10,7 +10,7 @@ pkgdesc="ZSH port of Fish history search (up arrow)"
 maintainer=("Zahrun <Zahrun@github.com>")
 
 package() {
-  cd "${_archive}"
+  cd "zsh-history-substring-search"
   install -d "${pkgdir}/usr/share/zsh/plugins/zsh-history-substring-search"
   install -m 755 ./*.zsh -t "${pkgdir}/usr/share/zsh/plugins/zsh-history-substring-search"
 }

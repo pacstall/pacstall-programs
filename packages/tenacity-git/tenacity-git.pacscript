@@ -25,12 +25,12 @@ prepare() {
   else
     pyhack=()
   fi
-  cd "${_archive}"
+  cd "tenacity"
   pip3 install conan "${pyhack[@]}"
 }
 
 build() {
-  cd "${_archive}"
+  cd "tenacity"
   cmake -G Ninja -S . -B build \
     -D CMAKE_BUILD_TYPE=Release \
     -D CMAKE_INSTALL_PREFIX="${pkgdir}/usr/local"
@@ -38,6 +38,6 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "tenacity"
   cmake --install build
 }

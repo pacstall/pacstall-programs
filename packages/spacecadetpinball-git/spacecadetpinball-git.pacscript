@@ -27,12 +27,12 @@ makedepends=("libsdl2-dev" "libsdl2-mixer-dev" "unrar" "cmake")
 breaks=("${gives}" "${gives}-bin" "${gives}-app" "${gives}-deb")
 
 prepare() {
-  cd "${_archive}"
+  cd "spacecadetpinball"
   unrar e -y "${srcdir}"/Space_Cadet.rar Space_Cadet/
 }
 
 build() {
-  cd "${_archive}"
+  cd "spacecadetpinball"
   cmake -B "build" \
     -Wno-dev \
     -DCMAKE_BUILD_TYPE=Release \
@@ -42,7 +42,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "spacecadetpinball"
   # Install LICENSE
   install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${gives}"
 
