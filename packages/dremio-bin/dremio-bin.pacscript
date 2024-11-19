@@ -7,11 +7,11 @@ url="https://www.dremio.com/"
 pkgdesc="Dremio: Data Lakehouse Platform Powered by Apache Iceberg"
 maintainer=("Luca Fabbian <luca.fabbian.1999@gmail.com>")
 arch=('amd64')
-sha256sums_amd64=("ccd0ac89c9d3dc13eee8eba0f3f489b3f9efc7a897c1c550d919fcc294c749f9")
-source_amd64=("https://download.dremio.com/community-server/${fullver}/dremio-community-${fullver}.tar.gz")
+sha256sums=("ccd0ac89c9d3dc13eee8eba0f3f489b3f9efc7a897c1c550d919fcc294c749f9")
+source=("https://download.dremio.com/community-server/${fullver}/${gives}-community-${fullver}.tar.gz")
 
 package() {
-  cd "${_archive}"
+  cd "${gives}-community-${fullver}"
 
   mkdir -p "${pkgdir}/opt/${pkgname}"
   mv -- * "${pkgdir}/opt/${pkgname}"
