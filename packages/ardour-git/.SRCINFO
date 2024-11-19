@@ -1,6 +1,7 @@
 pkgbase = ardour-git
 	pkgver = 7.5
 	pkgdesc = Professional-grade digital audio workstation
+	arch = any
 	depends = alsa-utils
 	depends = libqm-dsp0
 	depends = libcairo2

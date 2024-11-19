@@ -1,5 +1,6 @@
 pkgname='coreutils-single'
 _pkgname='coreutils'
+arch=("any")
 pkgver='9.4'
 pkgdesc='GNU Core Utilities (multicall binary)'
 source=("https://ftp.gnu.org/gnu/${_pkgname}/${_pkgname}-${pkgver}.tar.xz")

@@ -1,5 +1,6 @@
 pkgname="wezterm-app"
 gives="wezterm"
+arch=("amd64")
 pkgver="20240203-110809-5046fc22"
 pkgdesc="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
 source=("${gives}::https://github.com/wez/wezterm/releases/download/${pkgver}/WezTerm-${pkgver}-Ubuntu20.04.AppImage")

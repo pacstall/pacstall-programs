@@ -2,6 +2,7 @@ pkgbase = onnxruntime-bin
 	gives = onnxruntime
 	pkgver = 1.17.1
 	pkgdesc = Cross-platform inference and training machine-learning accelerator
+	arch = amd64
 	replaces = onnxruntime
 	replaces = onnxruntime-bin
 	replaces = onnxruntime-1-7-0-bin

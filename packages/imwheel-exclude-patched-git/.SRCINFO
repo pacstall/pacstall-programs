@@ -1,6 +1,7 @@
 pkgbase = imwheel-exclude-patched-git
 	pkgver = 0.0.1
 	pkgdesc = This project is a fork of imwheel's final official release containing only one change — a patch that repairs imwheel's broken @Exclude command
+	arch = any
 	makedepends = libx11-dev
 	makedepends = libxtst-dev
 	makedepends = libxmu-dev

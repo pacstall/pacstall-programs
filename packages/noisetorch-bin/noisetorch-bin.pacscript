@@ -1,5 +1,6 @@
 pkgname="noisetorch-bin"
 gives="noisetorch"
+arch=("amd64")
 pkgver="0.12.2"
 pkgdesc="Easy to use noise suppression for PulseAudio"
 repology=("project: noisetorch" "visiblename: noisetorch-bin")

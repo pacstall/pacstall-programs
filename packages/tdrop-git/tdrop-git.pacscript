@@ -1,6 +1,7 @@
 pkgname="tdrop-git"
 gives="tdrop"
 source=("https://github.com/noctuid/tdrop.git")
+arch=("any")
 pkgver="0.5.0"
 url="https://github.com/noctuid/tdrop"
 pkgdesc="A Glorified WM-Independent Dropdown Creator"

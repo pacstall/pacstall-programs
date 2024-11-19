@@ -2,6 +2,7 @@ pkgbase = pacstall-gui-git
 	gives = pacstall-gui
 	pkgver = 0.0.1
 	pkgdesc = A gui for Pacstall written in bash.
+	arch = any
 	depends = yad
 	depends = sed
 	depends = adwaita-icon-theme

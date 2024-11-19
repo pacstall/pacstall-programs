@@ -1,6 +1,7 @@
 pkgbase = stellarium
 	pkgver = 23.2
 	pkgdesc = Stellarium is a free open source planetarium for your computer. It shows a realistic sky in 3D, just like what you see with the naked eye, binoculars or a telescope.
+	arch = any
 	makedepends = cmake
 	makedepends = zlib1g-dev
 	makedepends = libgl1-mesa-dev

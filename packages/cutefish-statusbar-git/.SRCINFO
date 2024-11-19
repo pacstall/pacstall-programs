@@ -2,6 +2,7 @@ pkgbase = cutefish-statusbar-git
 	gives = cutefish-statusbar
 	pkgver = 0.7
 	pkgdesc = Top status bar of CutefishOS
+	arch = any
 	depends = fishui
 	depends = libcutefish
 	depends = libdbusmenu-qt5-dev

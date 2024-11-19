@@ -2,6 +2,7 @@ pkgbase = opentoonz
 	gives = opentoonz
 	pkgver = 1.7.1
 	pkgdesc = An open-source full-featured 2D animation creation software
+	arch = any
 	depends = qtchooser
 	depends = qt5-qmake
 	depends = qtbase5-dev-tools

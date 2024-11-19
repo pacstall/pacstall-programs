@@ -3,6 +3,7 @@ pkgbase = vkroots-git
 	pkgver = 0.1
 	pkgdesc = A stupid simple method of making Vulkan layers, at home!
 	url = https://github.com/Joshua-Ashton/vkroots
+	arch = any
 	makedepends = meson
 	makedepends = ninja-build
 	makedepends = libvulkan-dev

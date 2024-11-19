@@ -1,4 +1,5 @@
 pkgname="lutris-deb"
+arch=("all")
 pkgver="0.5.17"
 gives="lutris"
 repology=("project: lutris")

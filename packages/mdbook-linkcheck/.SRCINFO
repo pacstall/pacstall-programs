@@ -2,6 +2,7 @@ pkgbase = mdbook-linkcheck
 	pkgver = 0.7.7
 	pkgdesc = A backend for mdbook which will check your links for you
 	url = https://www.michaelfbryan.com/mdbook-linkcheck/mdbook_linkcheck/index.html
+	arch = any
 	makedepends = cargo
 	pacdeps = mdbook
 	maintainer = vigress8 <vig@disroot.org>

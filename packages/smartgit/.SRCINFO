@@ -1,6 +1,7 @@
 pkgbase = smartgit
 	pkgver = 22.1.7
 	pkgdesc = Graphical Git client with support for GitHub, Bitbucket and GitLab
+	arch = any
 	depends = git
 	depends = libgtk-3-0
 	depends = libcurl4

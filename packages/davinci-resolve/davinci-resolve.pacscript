@@ -3,7 +3,7 @@
 # and authors of the AUR and Nixpkgs packages.
 
 pkgname='davinci-resolve'
-pkgver='18.6.6'
+pkgver='19.0.1'
 pkgdesc='Professional A/V post-production software suite from Blackmagic Design'
 url='https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion'
 license=('custom:commercial')
@@ -72,8 +72,8 @@ depends=(
 )
 
 product='DaVinci Resolve'
-download_id='dfd43085ef224766b06b579ce8a6d097'
-resolve_sha256='06ba9d3e2f4e6ca813a394e0fe622992fdb6b29b9cd5f9a351103ad1040b6dac'
+download_id='98a118a7bac24d2b919878bb5d3ae045'
+resolve_sha256='4df35d349db4fdeaacce987c70595e6c43035594274917e6c44b49edfaf0c669'
 siteurl='https://www.blackmagicdesign.com/api/register/us/download'
 zipfile="${pkgname}-${pkgver}.zip"
 source=("${zipfile}::https://github.com/oklopfer/debs/raw/master/empty")

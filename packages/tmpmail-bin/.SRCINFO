@@ -2,6 +2,7 @@ pkgbase = tmpmail-bin
 	gives = tmpmail
 	pkgver = 1.2.3
 	pkgdesc = A temporary email right from your terminal written in POSIX sh
+	arch = amd64
 	depends = w3m
 	depends = curl
 	depends = jq

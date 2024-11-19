@@ -1,5 +1,6 @@
 pkgname="ttf-fira-sans"
 gives="ttf-fira-sans"
+arch=("all")
 pkgver="4.202"
 breaks=("${gives}")
 repology=("project: font-fira")

@@ -1,4 +1,5 @@
 pkgname="dotdrop"
+arch=("all")
 pkgver="1.13.2"
 source=("https://github.com/deadc0de6/dotdrop/archive/refs/tags/v${pkgver}.zip")
 sha256sums=("b69deab3cf22b0cde5faacf5d90292abcade142da0b00513dc774dfc2e8f6203")

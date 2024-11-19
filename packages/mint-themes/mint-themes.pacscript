@@ -1,4 +1,5 @@
 pkgname="mint-themes"
+arch=("all")
 pkgver=2.1.5
 repology=("project: mint-themes")
 source=("http://packages.linuxmint.com/pool/main/m/mint-themes/mint-themes_${pkgver}.tar.xz")

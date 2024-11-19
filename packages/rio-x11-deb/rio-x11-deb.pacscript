@@ -1,6 +1,7 @@
 pkgname="rio-x11-deb"
 gives="rio"
 breaks=("rio-wayland-deb" "rio-git")
+arch=("amd64")
 pkgver="0.0.36"
 pkgdesc="A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers"
 sha256sums=("754ec290a8ec3a3ec130ab4aa5b1ad9d2173620e0d7a228694a91154af9c8c2b")

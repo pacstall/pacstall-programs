@@ -1,5 +1,6 @@
 pkgname="libcutefish-git"
 gives="libcutefish"
+arch=("any")
 pkgver="0.7"
 source=("https://github.com/cutefishos/libcutefish.git")
 license="GPL-3.0"

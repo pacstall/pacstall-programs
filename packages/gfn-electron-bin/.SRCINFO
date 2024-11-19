@@ -2,6 +2,7 @@ pkgbase = gfn-electron-bin
 	gives = geforcenow-electron
 	pkgver = 2.0.1
 	pkgdesc = Linux desktop client for GeForce NOW, using Electron
+	arch = amd64
 	depends = libatk-bridge2.0-0
 	depends = libatspi2.0-0
 	depends = libgtk-3-0

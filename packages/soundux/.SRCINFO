@@ -1,6 +1,7 @@
 pkgbase = soundux
 	pkgver = 0.2.7
 	pkgdesc = A cross-platform soundboard
+	arch = any
 	makedepends = cmake
 	makedepends = libx11-dev
 	makedepends = libxi-dev

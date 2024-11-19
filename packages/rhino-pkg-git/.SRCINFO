@@ -3,6 +3,7 @@ pkgbase = rhino-pkg-git
 	pkgver = 0.1.2
 	pkgrel = 2
 	pkgdesc = Rhino-pkg wrapper script
+	arch = all
 	depends = gettext
 	makedepends = make
 	makedepends = gettext

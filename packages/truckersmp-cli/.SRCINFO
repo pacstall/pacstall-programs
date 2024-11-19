@@ -2,6 +2,7 @@ pkgbase = truckersmp-cli
 	gives = truckersmp-cli
 	pkgver = 0.10.1
 	pkgdesc = A simple launcher to play ATS and ETS2 with Multiplayer through TruckersMP.
+	arch = any
 	depends = python3
 	depends = libsdl2-2.0-0
 	makedepends = python3-setuptools

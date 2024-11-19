@@ -2,6 +2,7 @@ pkgbase = gnome-tweaks
 	gives = gnome-tweaks
 	pkgver = 40.10
 	pkgdesc = Graphical interface for advanced GNOME 3 settings
+	arch = any
 	depends = gettext
 	depends = gsettings-desktop-schemas
 	depends = python3

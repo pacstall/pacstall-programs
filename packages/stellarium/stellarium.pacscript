@@ -1,4 +1,5 @@
 pkgname="stellarium"
+arch=("any")
 pkgver="23.2"
 source=("https://github.com/Stellarium/stellarium/releases/download/v${pkgver}/stellarium-${pkgver}.tar.xz")
 maintainer=("Elsie19 <elsie19@pm.me>")

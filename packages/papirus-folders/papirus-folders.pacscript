@@ -1,4 +1,5 @@
 pkgname="papirus-folders"
+arch=("all")
 pkgver="1.13.1"
 pkgdesc="Papirus folder theme"
 repology=("project: papirus-folders")

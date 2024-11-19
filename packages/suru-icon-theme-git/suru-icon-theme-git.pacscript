@@ -1,5 +1,6 @@
 pkgname="suru-icon-theme-git"
 gives="suru-icon-theme"
+arch=("all")
 pkgver="0.0.1"
 maintainer=("aranym <aranym1@pm.me>")
 source=("https://github.com/snwh/suru-icon-theme.git")

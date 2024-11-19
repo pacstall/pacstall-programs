@@ -3,6 +3,7 @@ pkgbase = dolphin-emu-git
 	pkgver = 5.0
 	pkgdesc = An emulator for running GameCube and Wii games
 	url = https://dolphin-emu.org
+	arch = any
 	depends = build-essential
 	depends = ninja-build
 	depends = cmake

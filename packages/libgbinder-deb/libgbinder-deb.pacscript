@@ -1,0 +1,15 @@
+pkgname="libgbinder-deb"
+gives="libgbinder"
+replaces=("${gives}")
+arch=("amd64" "arm64")
+repology=("project: ${gives}")
+pkgver="1.1.25"
+maintainer=("James Ed Randson <jimedrand@disroot.org>")
+depends=("libc6" "libglib2.0-0t64")
+pacdeps=("libglibutil-deb")
+incompatible=("debian:bookworm" "debian:bullseye" "debian:buster" "ubuntu:jammy" "ubuntu:focal")
+pkgdesc="Binder client library"
+source_amd64=("https://repo.waydro.id/dists/noble/${gives}_${pkgver}_amd64.deb")
+sha256sums_amd64=("2e4d0ee2af9f04f2cbbd04c4e7d8cfaba6e0e46a8c50eaedb29aaa70a3d22b38")
+source_arm64=("https://repo.waydro.id/dists/noble/${gives}_${pkgver}_arm64.deb")
+sha256sums_arm64=("7d2318f807f9cf130184354d8f9a2c6d278ef121483e4a31af8cc5873356b115")

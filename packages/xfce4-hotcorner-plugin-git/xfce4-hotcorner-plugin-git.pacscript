@@ -1,5 +1,6 @@
 pkgname="xfce4-hotcorner-plugin-git"
 source=("https://github.com/christopherkobayashi/xfce4-hotcorner-plugin.git")
+arch=("any")
 pkgver="0.0.4"
 gives="xfce4-hotcorner-plugin"
 makedepends=("make" "libgtk-3-dev" "libwnck-3-dev" "libnotify-dev" "intltool" "libxfce4ui-2-dev" "libxfce4panel-2.0-dev")

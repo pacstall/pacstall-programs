@@ -1,4 +1,6 @@
 pkgname="tmux"
+arch=("any")
+arch=("any")
 pkgver="3.3"
 source=("https://github.com/tmux/tmux/releases/download/${pkgver}/tmux-${pkgver}.tar.gz")
 makedepends=("gcc" "make" "pkg-config" "bison" "libncurses-dev" "libevent-dev")

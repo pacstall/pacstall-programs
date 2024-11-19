@@ -1,5 +1,6 @@
 pkgname="python3-moddb"
 gives="python3-moddb"
+arch=("any")
 pkgver="0.11.0"
 pkgdesc='A Python scraper to access ModDB mods, games and more as objects'
 url='https://github.com/ClementJ18/moddb'

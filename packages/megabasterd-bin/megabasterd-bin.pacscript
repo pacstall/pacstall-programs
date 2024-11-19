@@ -1,5 +1,6 @@
 pkgname="megabasterd-bin"
 gives="megabasterd"
+arch=("amd64")
 pkgver="8.22"
 pkgdesc="Yet another unofficial (and ugly) cross-platform MEGA downloader/uploader/streaming suite"
 url="https://github.com/tonikelope/${gives}"

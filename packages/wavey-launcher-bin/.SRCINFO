@@ -2,6 +2,7 @@ pkgbase = wavey-launcher-bin
 	gives = wavey-launcher
 	pkgver = 1.0.1
 	pkgdesc = Wavey Launcher for Linux with automatic patching and telemetry disabling
+	arch = amd64
 	depends = xdelta3
 	optdepends = mangohud: FPS Hud/GUI
 	optdepends = gamemode: Game Optimizations

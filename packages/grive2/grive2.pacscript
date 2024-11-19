@@ -1,6 +1,7 @@
 pkgname="grive2"
 gives="grive2"
 pkgdesc="Google Drive client with support for new Drive REST API and partial sync"
+arch=("any")
 pkgver="0.5.1"
 source=("https://github.com/vitalif/grive2/archive/v${pkgver}.tar.gz")
 makedepends=("cmake" "libgcrypt20-dev" "libyajl-dev" "libboost-all-dev" "libcurl4-openssl-dev" "libexpat1-dev" "libcppunit-dev" "binutils-dev" "debhelper" "zlib1g-dev" "dpkg-dev" "pkg-config")

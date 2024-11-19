@@ -1,0 +1,11 @@
+pkgname="legcord-deb"
+gives="legcord"
+depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libsecret-1-0")
+repology=("project: ${gives}")
+pkgver="1.0.3"
+arch=('arm64' 'amd64')
+sha256sums_arm64=("4949d38f70b4bef44dbfa242d1476323bce0e6435d0d85db12e37a2d39da0024")
+sha256sums_amd64=("f7d1c8d56cfc38490e0984076370bf2689d85c400a270c12e5ffd4dfae52b685")
+source=("https://github.com/Legcord/Legcord/releases/download/stable/Legcord-${pkgver}-linux-${CARCH}.deb")
+pkgdesc="Custom client designed to enhance your Discord experience while keeping everything lightweight"
+maintainer=("Oren Klopfer <oren@taumoda.com>")

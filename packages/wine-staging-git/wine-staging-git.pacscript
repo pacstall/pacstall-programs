@@ -1,5 +1,6 @@
 pkgname="wine-staging-git"
 pkgdesc="A compatibility layer for running Windows programs - Staging branch"
+arch=("any")
 pkgver="9.8"
 url="https://www.wine-staging.com"
 license=("LGPL-2.1-or-later")

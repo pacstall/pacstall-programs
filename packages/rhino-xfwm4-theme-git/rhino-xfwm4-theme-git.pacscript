@@ -4,6 +4,7 @@ makedepends=("sassc" "ninja-build" "meson")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Rhino Linux XFWM4 theme"
 source=("https://github.com/rhino-linux/${gives}.git")
+arch=("all")
 pkgver="0.0.1"
 
 prepare() {

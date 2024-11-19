@@ -3,6 +3,7 @@ pkgbase = megabasterd-bin
 	pkgver = 8.22
 	pkgdesc = Yet another unofficial (and ugly) cross-platform MEGA downloader/uploader/streaming suite
 	url = https://github.com/tonikelope/megabasterd
+	arch = amd64
 	depends = java11-runtime
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: megabasterd

@@ -1,0 +1,27 @@
+pkgbase = meson-git
+	gives = meson
+	pkgver = 1.5
+	pkgdesc = SCons-like build system that use python as a front-end language and Ninja as a building backend with debian-meson forked from arch-meson
+	url = http://mesonbuild.com/
+	arch = any
+	depends = python3
+	depends = ninja-build
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	makedepends = ninja-build
+	makedepends = python3-tqdm
+	makedepends = python3-typing-extensions
+	maintainer = xdavius <xdavius@github.com>
+	source = git+https://github.com/mesonbuild/meson
+	source = debian-meson
+	source = cross-lib32
+	source = native-clang
+	sha256sums = SKIP
+	sha256sums = eb944e481d3299bf9c3c79835697215885a32e0fc1f9c86e2b0699cdc4ee849e
+	sha256sums = ba2be3874b2a30901741363cbdf412b85da9fd333cadaff19fdd9c6d276ec555
+	sha256sums = b1c9b9e5d39f540ac1038a83e5716622d8e111b70be400a9a7c9561503ae03ac
+
+pkgname = meson-git

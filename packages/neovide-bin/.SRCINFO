@@ -3,6 +3,7 @@ pkgbase = neovide-bin
 	pkgver = 0.12.2
 	pkgrel = 2
 	pkgdesc = No nonsense neovim client in Rust
+	arch = amd64
 	breaks = neovide
 	breaks = neovide-git
 	breaks = neovide-deb

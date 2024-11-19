@@ -1,6 +1,7 @@
 pkgbase = go-bin
 	gives = go
 	pkgver = 1.21.6
+	pkgrel = 2
 	pkgdesc = Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 	arch = amd64
 	breaks = go

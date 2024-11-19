@@ -3,6 +3,7 @@ pkgbase = neovim-app
 	pkgver = 0.10.1
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
+	arch = amd64
 	depends = libfuse2
 	makedepends = libfuse2
 	replaces = nvim

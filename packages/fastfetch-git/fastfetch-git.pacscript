@@ -10,18 +10,19 @@ pkgname="fastfetch-git"
 gives="fastfetch"
 pkgdesc="Like neofetch, but much faster because written in c"
 source=("https://github.com/LinusDierheimer/fastfetch.git")
+arch=("any")
 pkgver="2.9.1"
 makedepends=("cmake" "libpci-dev" "libvulkan-dev" "libwayland-dev" "libxrandr-dev" "libxcb-randr0-dev" "libdconf-dev" "libmagick++-dev" "libmagickcore-dev" "libdbus-1-dev" "libpci-dev" "libxfconf-0-dev" "libegl-dev" "libglx-dev" "libosmesa6-dev" "ocl-icd-opencl-dev" "libnm-dev" "libpulse-dev" "libddcutil-dev" "directx-headers-dev")
 optdepends=("libvulkan1: Vulkan module and GPU fallback"
   "libegl1: OpenGL module"
   "libxcb-randr0: Resolution and refresh rate support for X11 sessions"
-  "libwayland-clint0: Resolution and refresh rate support for wayland sessions"
+  "libwayland-client0: Resolution and refresh rate support for wayland sessions"
   "libglib2.0-0: Output for values that are only stored in GSettings"
   "libdconf1: Output for values that are only stored in DConf"
   "libxfconf-0-3: XFWM theme + xfce-terminal font"
   "libnm0: Used for Wifi detection"
   "libpulse0: Used for Sound device detection"
-  "libddcutil3: Used for brightness detection for external displays"
+  "libddcutil-dev: Used for brightness detection for external displays"
   "libdbus-1-3: Used for bluetooth, Player & Media detection"
   "kitty: Terminal emulator GPU accelerated and display images"
 )

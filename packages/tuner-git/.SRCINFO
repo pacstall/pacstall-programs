@@ -1,6 +1,7 @@
 pkgbase = tuner-git
 	pkgver = 1.5.1
 	pkgdesc = Tuner Radio Player - development version
+	arch = any
 	depends = desktop-file-utils
 	makedepends = meson
 	makedepends = valac

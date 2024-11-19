@@ -2,6 +2,7 @@ pkgbase = touchegg-git
 	gives = touchegg
 	pkgver = 2.0.16
 	pkgdesc = Touchégg is an app that runs in the background and transform the gestures you make on your touchpad or touchscreen into visible actions in your desktop.
+	arch = any
 	makedepends = git
 	makedepends = build-essential
 	makedepends = gdb

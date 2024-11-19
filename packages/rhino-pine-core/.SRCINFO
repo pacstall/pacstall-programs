@@ -1,8 +1,9 @@
 pkgbase = rhino-pine-core
 	pkgver = 2024.2
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
+	arch = all
 	depends = initramfs-tools
 	depends = printer-driver-all-enforce
 	pacdeps = unicorn-mobile-git
@@ -17,7 +18,7 @@ pkgbase = rhino-pine-core
 	replaces = rhino-server-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
-	compatible = ubuntu:oracular
+	compatible = ubuntu:plucky
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 

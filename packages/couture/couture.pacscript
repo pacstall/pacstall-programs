@@ -1,5 +1,6 @@
 pkgname="couture"
 _name="Couture"
+arch=("all")
 pkgver="1.6"
 source=("https://www.auburnsounds.com/downloads/${_name}-FREE-${pkgver}.zip")
 pkgdesc="Couture gives you exquisite control over your dynamics, and particularly attacks."

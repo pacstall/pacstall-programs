@@ -1,4 +1,5 @@
 pkgname="setconf"
+arch=("all")
 pkgver="0.7.7"
 pkgdesc='Utility for easily changing settings in configuration files'
 url='https://setconf.roboticoverlords.org/'

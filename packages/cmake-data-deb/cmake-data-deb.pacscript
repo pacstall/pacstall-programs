@@ -1,5 +1,6 @@
 pkgname="cmake-data-deb"
 gives="cmake-data"
+arch=("all")
 pkgver="3.25.1"
 pkgdesc="CMake data files (modules, templates and documentation)"
 source_bullseye=("http://ftp.debian.org/debian/pool/main/c/cmake/cmake-data_${pkgver}-1~bpo11+1_all.deb")

@@ -1,0 +1,13 @@
+pkgbase = linux-kernel-lts-6.6
+	pkgver = 6.6.51
+	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA
+	arch = amd64
+	arch = arm64
+	pacdeps = linux-headers-lts-6.6-deb
+	pacdeps = linux-headers-generic-lts-6.6-deb
+	pacdeps = linux-modules-lts-6.6-deb
+	pacdeps = linux-image-unsigned-lts-6.6-deb
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
+
+pkgname = linux-kernel-lts-6.6

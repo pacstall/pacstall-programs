@@ -1,4 +1,5 @@
 pkgname="microsoft-prod-repo-deb"
+arch=("amd64")
 pkgver="22.04"
 source=("https://packages.microsoft.com/config/ubuntu/${pkgver}/packages-microsoft-prod.deb")
 pkgdesc="Apt repo configuration for packages.microsoft.com"

@@ -2,6 +2,7 @@ pkgname="protonvpn-cli"
 breaks="${pkgname}-git"
 replaces=("${pkgname}")
 repology=("project: ${pkgname}")
+arch=("any")
 pkgver="3.13.0"
 source=("https://github.com/ProtonVPN/linux-cli/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("python3-setuptools")

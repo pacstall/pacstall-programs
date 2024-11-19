@@ -1,6 +1,7 @@
 pkgbase = pgmigrate
 	pkgver = 1.0.7
 	pkgdesc = Simple tool to evolve PostgreSQL schema easily
+	arch = all
 	depends = python3
 	depends = python3-sqlparse
 	depends = python3-yaml

@@ -1,6 +1,7 @@
 pkgbase = nerd-fonts-hack
 	pkgver = 3.1.1
 	pkgdesc = Patched font Hack from Nerd Fonts library
+	arch = all
 	replaces = nerd-fonts-hack
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: fonts:nerd-fonts

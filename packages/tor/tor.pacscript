@@ -2,6 +2,7 @@ pkgname="tor"
 repology=("project: ${pkgname}")
 replaces=("${pkgname}")
 breaks=("${pkgname}-git")
+arch=("any")
 pkgver="0.4.7.13"
 source=("https://dist.torproject.org/${pkgname}-${pkgver}.tar.gz")
 makedepends=("make" "autoconf" "libevent-dev" "libnss3-dev" "libzstd-dev" "liblzma-dev" "openssl" "libssl-dev" "ca-certificates" "libseccomp-dev" "zlib1g-dev")

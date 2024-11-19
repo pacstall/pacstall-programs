@@ -2,6 +2,7 @@ pkgname="i3blocks-git"
 gives="i3blocks"
 pkgdesc="A feed generator for text based status bars"
 source=("https://github.com/vivien/${gives}.git")
+arch=("any")
 pkgver="1.5"
 makedepends=("autoconf" "gcc" "make" "pkgconf")
 breaks=("${gives}")

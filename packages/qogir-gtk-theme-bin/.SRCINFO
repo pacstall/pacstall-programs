@@ -2,6 +2,7 @@ pkgbase = qogir-gtk-theme-bin
 	gives = qogir-gtk-theme
 	pkgver = 2023-02-27
 	pkgdesc = Qogir is a flat Design theme for GTK
+	arch = amd64
 	depends = gtk2-engines-murrine
 	depends = gtk2-engines-pixbuf
 	makedepends = libsass1

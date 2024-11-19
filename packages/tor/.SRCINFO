@@ -1,6 +1,7 @@
 pkgbase = tor
 	pkgver = 0.4.7.13
 	pkgdesc = Tor protects your privacy on the internet by hiding the connection between your Internet address and the services you use
+	arch = any
 	depends = openssl
 	makedepends = make
 	makedepends = autoconf

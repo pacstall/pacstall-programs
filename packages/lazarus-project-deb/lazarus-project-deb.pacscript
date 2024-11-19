@@ -1,4 +1,5 @@
 pkgname="lazarus-project-deb"
+arch=("amd64")
 pkgver="3.4"
 gives="lazarus-project"
 breaks=("lazarus-ide-qt6")

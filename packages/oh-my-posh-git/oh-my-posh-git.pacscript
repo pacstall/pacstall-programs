@@ -1,6 +1,7 @@
 pkgname="oh-my-posh-git"
 gives="oh-my-posh"
 source=("https://github.com/JanDeDobbeleer/oh-my-posh.git")
+arch=("any")
 pkgver="20.0.0"
 pkgrel="2"
 makedepends=("golang-1.22-go")

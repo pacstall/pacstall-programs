@@ -1,6 +1,7 @@
 pkgname="surf-distrotube-git"
 gives="surf"
 source=("https://gitlab.com/dwt1/surf-distrotube.git")
+arch=("any")
 pkgver="0.0.1"
 makedepends=("libc6" "libgcr-3-dev" "libglib2.0-dev" "libgtk-3-dev" "libwebkit2gtk-4.0-dev" "libx11-6")
 pacdeps=("dmenu")

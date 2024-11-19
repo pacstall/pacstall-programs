@@ -1,5 +1,6 @@
 pkgname="ani-cli-bin"
 gives="ani-cli"
+arch=("amd64")
 pkgver="4.8"
 repology=("project: ${gives}")
 source=(

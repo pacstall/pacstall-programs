@@ -1,5 +1,6 @@
 pkgname="warp"
 gives="warp"
+arch=("any")
 pkgver="0.6.2"
 pkgdesc="Fast and secure file transfer"
 repology=("project: warp-share-files")

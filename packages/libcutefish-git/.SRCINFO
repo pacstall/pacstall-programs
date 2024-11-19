@@ -2,6 +2,7 @@ pkgbase = libcutefish-git
 	gives = libcutefish
 	pkgver = 0.7
 	pkgdesc = Cutefish System Library.
+	arch = any
 	depends = kscreen
 	depends = modemmanager-qt-dev
 	depends = libkf5networkmanagerqt-dev

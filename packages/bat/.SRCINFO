@@ -1,6 +1,7 @@
 pkgbase = bat
 	pkgver = 0.24.0
 	pkgdesc = A cat(1) clone with wings
+	arch = any
 	depends = libonig5
 	makedepends = cargo
 	makedepends = libonig-dev

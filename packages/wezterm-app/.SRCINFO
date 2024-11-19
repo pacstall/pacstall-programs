@@ -2,6 +2,7 @@ pkgbase = wezterm-app
 	gives = wezterm
 	pkgver = 20240203-110809-5046fc22
 	pkgdesc = A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
+	arch = amd64
 	breaks = wezterm-bin
 	maintainer = smokeythemonkey <smokeythemonkey@posteo.net>
 	repology = project: wezterm

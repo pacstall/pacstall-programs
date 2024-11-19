@@ -1,5 +1,6 @@
 pkgname="arduino-ide-bin"
 gives="arduino-ide"
+arch=("amd64")
 pkgver="2.3.2"
 repology=("project: arduino")
 maintainer=("DismissedGuy <me@mikealmel.ooo>")

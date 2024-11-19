@@ -1,5 +1,6 @@
 pkgname="httptoolkit-deb"
 gives="httptoolkit"
+arch=("amd64")
 pkgver="1.5.1"
 breaks=("httptoolkit" "httptoolkit-git" "httptoolkit-bin" "httptoolkit-app")
 source=("https://github.com/${gives}/${gives}-desktop/releases/download/v${pkgver}/HttpToolkit-${pkgver}.deb")

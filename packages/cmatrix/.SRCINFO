@@ -1,6 +1,7 @@
 pkgbase = cmatrix
 	pkgver = 2.0
 	pkgdesc = Terminal based The Matrix like implementation
+	arch = any
 	depends = libncurses5-dev
 	depends = libncursesw5-dev
 	makedepends = autoconf

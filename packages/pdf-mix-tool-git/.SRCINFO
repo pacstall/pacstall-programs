@@ -2,6 +2,7 @@ pkgbase = pdf-mix-tool-git
 	gives = pdf-mix-tool
 	pkgver = 1.1.1
 	pkgdesc = a GUI application to split, merge, rotate and mix PDF files
+	arch = any
 	depends = libqpdf28
 	makedepends = libqpdf-dev
 	makedepends = make

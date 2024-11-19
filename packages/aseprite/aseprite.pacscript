@@ -3,7 +3,7 @@
 # Credit to the listed maintainers & contributors
 
 pkgname="aseprite"
-pkgver="1.3.8.1"
+pkgver="1.3.9"
 pkgdesc="Animated sprite editor & pixel art tool"
 license=("custom:EULA")
 repology=("project: ${pkgname}")
@@ -18,7 +18,7 @@ source=(
   "https://github.com/${pkgname}/strings.git"
 )
 sha256sums=(
-  "fc13536a9e14551245028d578493aa63f9978b943250936735dc62a5abfbee53"
+  "672c8ddb12d4c180f6c27b33ec4b0faefe5df321c7d40c03cb62ad3182e584ff"
   "66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
   "SKIP"
 )

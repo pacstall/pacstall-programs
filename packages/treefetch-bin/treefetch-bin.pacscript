@@ -1,6 +1,7 @@
 # Original Pacscript Creator: wizard-28 <wiz28@pm.me>
 pkgname="treefetch-bin"
 gives="treefetch"
+arch=("amd64")
 pkgver="2.0.0"
 pkgdesc="A lightning-fast system fetch tool made with Rust"
 source=("https://github.com/angelofallars/treefetch/releases/download/v${pkgver}/treefetch")

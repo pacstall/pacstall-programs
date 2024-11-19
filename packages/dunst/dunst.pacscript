@@ -1,4 +1,5 @@
 pkgname="dunst"
+arch=("any")
 pkgver="1.9.2"
 source=("https://github.com/dunst-project/dunst/archive/refs/tags/v${pkgver}.tar.gz")
 makedepends=("libdbus-1-dev" "libxinerama1" "libxrandr2" "libxss1" "libxss-dev" "libgtk-3-dev" "libnotify-dev")

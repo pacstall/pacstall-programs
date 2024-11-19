@@ -2,6 +2,7 @@ pkgbase = weechat-git
 	gives = weechat
 	pkgver = 4.0.2
 	pkgdesc = Free chat client, fast and light, designed for many operating systems
+	arch = any
 	depends = libncursesw5-dev
 	depends = libcurl4-gnutls-dev
 	depends = libgcrypt20-dev

@@ -2,6 +2,7 @@ pkgbase = ttf-fira-sans
 	gives = ttf-fira-sans
 	pkgver = 4.202
 	pkgdesc = Mozilla's typeface used in Firefox OS
+	arch = all
 	breaks = ttf-fira-sans
 	replaces = ttf-fira-sans
 	license = OFL-1.1

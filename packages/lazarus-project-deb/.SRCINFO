@@ -2,6 +2,7 @@ pkgbase = lazarus-project-deb
 	gives = lazarus-project
 	pkgver = 3.4
 	pkgdesc = Delphi-like IDE for FreePascal gtk2 version
+	arch = amd64
 	breaks = lazarus-ide-qt6
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: lazarus

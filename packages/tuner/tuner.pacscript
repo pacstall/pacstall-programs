@@ -1,4 +1,5 @@
 pkgname="tuner"
+arch=("any")
 pkgver="1.3.1"
 license="GPL-3.0"
 source=("https://github.com/louis77/tuner/archive/refs/tags/1.3.1.zip")

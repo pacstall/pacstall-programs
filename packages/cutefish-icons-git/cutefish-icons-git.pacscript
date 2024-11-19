@@ -1,5 +1,6 @@
 pkgname="cutefish-icons-git"
 gives="cutefish-icons"
+arch=("any")
 pkgver="0.8"
 source=("https://github.com/cutefishos/icons.git")
 license="GPL-3.0"

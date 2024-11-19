@@ -2,6 +2,7 @@ pkgbase = cutefish-filemanager-git
 	gives = cutefish-filemanager
 	pkgver = 0.8
 	pkgdesc = Cutefish File Manager, simple to use, beautiful, and retain the classic PC interactive design.
+	arch = any
 	depends = fishui
 	depends = libcutefish
 	depends = kio

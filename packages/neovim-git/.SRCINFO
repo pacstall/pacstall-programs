@@ -3,6 +3,7 @@ pkgbase = neovim-git
 	pkgver = 0.10.1
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
+	arch = any
 	makedepends = ninja-build
 	makedepends = gettext
 	makedepends = libtool-bin

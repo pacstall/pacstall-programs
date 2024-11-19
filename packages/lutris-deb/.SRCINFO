@@ -2,6 +2,7 @@ pkgbase = lutris-deb
 	gives = lutris
 	pkgver = 0.5.17
 	pkgdesc = open source gaming platform
+	arch = all
 	depends = python3-gi-cairo
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: lutris

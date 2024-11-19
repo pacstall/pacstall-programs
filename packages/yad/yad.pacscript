@@ -1,4 +1,5 @@
 pkgname="yad"
+arch=("any")
 pkgver="14.0"
 source=("https://github.com/v1cont/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz"
   "debian12.patch")

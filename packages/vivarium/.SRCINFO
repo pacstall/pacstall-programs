@@ -1,6 +1,7 @@
 pkgbase = vivarium
 	pkgver = 0.0.4
 	pkgdesc = A dynamic tiling Wayland compositor using wlroots, with desktop semantics inspired by xmonad
+	arch = any
 	makedepends = meson
 	makedepends = libwlroots-dev
 	makedepends = xcb

@@ -1,6 +1,7 @@
 pkgbase = conky-manager-zcot-git
 	pkgver = 2.7
 	pkgdesc = Simple tool for managing Conky configs
+	arch = any
 	depends = conky
 	depends = rsync
 	makedepends = valac

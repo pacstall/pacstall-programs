@@ -1,6 +1,7 @@
 pkgname="youtube-dl-git"
 gives="youtube-dl"
 source=("https://github.com/ytdl-org/youtube-dl.git")
+arch=("all")
 pkgver="2021.12.17"
 pkgdesc="Command-line program to download videos from YouTube.com and other video sites"
 makedepends=("make" "pandoc" "python3")

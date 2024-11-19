@@ -1,5 +1,6 @@
 pkgname="hello"
 repology=("project: ${pkgname}")
+arch=("all")
 pkgver="2.12.1"
 source=("https://ftp.gnu.org/gnu/${pkgname}/${pkgname}-${pkgver}.tar.gz")
 makedepends=("build-essential")

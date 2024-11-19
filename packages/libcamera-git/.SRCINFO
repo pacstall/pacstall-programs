@@ -2,6 +2,7 @@ pkgbase = libcamera-git
 	gives = libcamera
 	pkgver = 0.1.0
 	pkgdesc = Open source camera stack and framework
+	arch = any
 	makedepends = build-essential
 	makedepends = ninja-build
 	makedepends = pkg-config

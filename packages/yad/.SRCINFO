@@ -2,6 +2,7 @@ pkgbase = yad
 	gives = yad
 	pkgver = 14.0
 	pkgdesc = Yet Another Dialog
+	arch = any
 	depends = libc6
 	depends = libcairo2
 	depends = libgdk-pixbuf2.0-0

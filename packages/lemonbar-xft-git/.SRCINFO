@@ -1,6 +1,7 @@
 pkgbase = lemonbar-xft-git
 	pkgver = 0.0.1
 	pkgdesc = A lightweight xcb based bar with ported xft support.
+	arch = any
 	makedepends = build-essential
 	makedepends = libx11-dev
 	makedepends = libxft-dev

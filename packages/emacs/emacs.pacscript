@@ -72,6 +72,7 @@ NOGZ="YES"        # Don't compress .el files.
 #################################################################################
 
 pkgname="emacs"
+arch=("any")
 pkgver="28.2"
 source=("http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."

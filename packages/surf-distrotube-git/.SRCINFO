@@ -2,6 +2,7 @@ pkgbase = surf-distrotube-git
 	gives = surf
 	pkgver = 0.0.1
 	pkgdesc = Heavily-patched customized build of the Suckless surf web browser.
+	arch = any
 	makedepends = libc6
 	makedepends = libgcr-3-dev
 	makedepends = libglib2.0-dev

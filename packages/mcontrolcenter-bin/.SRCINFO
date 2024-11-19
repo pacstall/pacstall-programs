@@ -2,6 +2,7 @@ pkgbase = mcontrolcenter-bin
 	gives = mcontrolcenter
 	pkgver = 0.4.1
 	pkgdesc = MControlCenter is a Free and Open Source GNU/Linux application that allows you to change the settings of MSI laptops.
+	arch = amd64
 	depends = libqt5widgets5
 	maintainer = সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>
 	repology = project: mcontrolcenter

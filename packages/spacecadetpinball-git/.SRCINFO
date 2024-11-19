@@ -2,6 +2,7 @@ pkgbase = spacecadetpinball-git
 	gives = spacecadetpinball
 	pkgver = 2.0.1
 	pkgdesc = Reverse engineered port of "3D Pinball for Windows – Space Cadet" to Linux
+	arch = any
 	depends = timidity
 	depends = freepats
 	depends = libsdl2-2.0-0

@@ -2,6 +2,7 @@ pkgbase = parsec-deb
 	gives = parsec
 	pkgver = 150-86e
 	pkgdesc = Simple, low-latency game streaming
+	arch = amd64
 	incompatible = debian:sid
 	source = https://builds.parsec.app/package/parsec-linux.deb
 

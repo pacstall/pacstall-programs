@@ -2,6 +2,7 @@ pkgbase = zoho-notebook-deb
 	gives = notebook
 	pkgver = 2.2.3
 	pkgdesc = The most beautiful note-taking app across devices
+	arch = amd64
 	replaces = notebook
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: zoho-notebook

@@ -2,6 +2,7 @@ pkgbase = keepassxc
 	gives = org.freedesktop.secrets
 	pkgver = 2.7.9
 	pkgdesc = Cross-platform community-driven port of Keepass password manager
+	arch = any
 	depends = argon2
 	depends = botan
 	depends = curl

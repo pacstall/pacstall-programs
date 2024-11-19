@@ -1,0 +1,16 @@
+pkgbase = python3-fvs
+	pkgver = 0.3.4
+	pkgdesc = File Versioning System with hash comparison, deduplication and data storage to create unlinked states that can be deleted
+	url = https://github.com/mirkobrombin/FVS
+	arch = any
+	depends = python3-orjson
+	makedepends = python3-setuptools
+	compatible = debian:trixie
+	compatible = debian:sid
+	compatible = ubuntu:oracular
+	compatible = ubuntu:devel
+	license = MIT
+	source = python3-fvs-0.3.4.tar.gz::https://github.com/mirkobrombin/FVS/archive/refs/tags/0.3.4.tar.gz
+	sha256sums = c57bcda81cd7500bc54b8f93c81405cccbc4c54b794209f8316ae27f43372696
+
+pkgname = python3-fvs

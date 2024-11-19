@@ -2,6 +2,7 @@ pkgbase = wine-staging-git
 	pkgver = 9.8
 	pkgdesc = A compatibility layer for running Windows programs - Staging branch
 	url = https://www.wine-staging.com
+	arch = any
 	depends = libjpeg-turbo8-dev | libjpeg62-turbo-dev
 	depends = libjpeg-turbo8-dev:i386 | libjpeg62-turbo-dev:i386
 	depends = libasound2-dev

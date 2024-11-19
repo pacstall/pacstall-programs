@@ -2,6 +2,7 @@ pkgname="pgmigrate"
 repology=("project: ${pkgname}")
 breaks="${pkgname}-git"
 replaces=("${pkgname}")
+arch=("all")
 pkgver="1.0.7"
 source=("https://github.com/yandex/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
 depends=("python3" "python3-sqlparse" "python3-yaml" "python3-psycopg2")

@@ -1,6 +1,7 @@
 pkgbase = dunst
 	pkgver = 1.9.2
 	pkgdesc = A highly configurable and lightweight notification daemon
+	arch = any
 	makedepends = libdbus-1-dev
 	makedepends = libxinerama1
 	makedepends = libxrandr2

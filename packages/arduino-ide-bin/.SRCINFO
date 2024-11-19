@@ -2,6 +2,7 @@ pkgbase = arduino-ide-bin
 	gives = arduino-ide
 	pkgver = 2.3.2
 	pkgdesc = An open-source IDE that makes it easy to write code and upload it to Arduino boards
+	arch = amd64
 	breaks = arduino-ide
 	breaks = arduino-ide-deb
 	breaks = arduino-ide-app

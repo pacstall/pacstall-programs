@@ -3,6 +3,7 @@
 maintainer=("JonBoyleCoding <programmerfalcon@gmail.com>")
 
 pkgname="mutt-wizard"
+arch=("any")
 pkgver="3.3.1"
 source=("https://github.com/lukesmithxyz/${pkgname}/archive/v${pkgver}.tar.gz")
 repology=("project: mutt-wizard")

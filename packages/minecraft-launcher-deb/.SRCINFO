@@ -2,6 +2,7 @@ pkgbase = minecraft-launcher-deb
 	gives = minecraft-launcher
 	pkgver = 1121
 	pkgdesc = Official Minecraft Launcher
+	arch = amd64
 	breaks = minecraft-launcher
 	breaks = minecraft-launcher-git
 	breaks = minecraft-launcher-bin

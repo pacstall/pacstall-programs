@@ -1,6 +1,7 @@
 pkgbase = nowpm
 	pkgver = 1.0
 	pkgdesc = the no-bullshit wpm utility
+	arch = any
 	depends = wdiff
 	breaks = foo
 	source = https://github.com/jnats/nowpm/archive/refs/tags/v1.0.zip

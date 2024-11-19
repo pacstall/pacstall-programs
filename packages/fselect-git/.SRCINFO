@@ -2,6 +2,7 @@ pkgbase = fselect-git
 	gives = fselect
 	pkgver = 0.8.4
 	pkgdesc = Find files with SQL-like queries
+	arch = any
 	makedepends = cargo
 	makedepends = rustc
 	incompatible = debian:bullseye

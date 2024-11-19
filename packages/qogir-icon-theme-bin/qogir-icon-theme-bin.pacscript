@@ -8,6 +8,7 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="qogir-icon-theme-bin"
 gives="qogir-icon-theme"
+arch=("amd64")
 pkgver="2022-11-05"
 pkgdesc="A colorful design icon theme for linux desktops"
 makedepends=("gtk-update-icon-cache")

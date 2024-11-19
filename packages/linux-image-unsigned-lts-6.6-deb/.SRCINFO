@@ -1,0 +1,15 @@
+pkgbase = linux-image-unsigned-lts-6.6-deb
+	gives = linux-image-unsigned-6.6.51-060651-generic
+	pkgver = 6.6.51
+	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (Unsigned image)
+	arch = arm64
+	arch = amd64
+	pacdeps = linux-headers-generic-lts-6.6-deb
+	pacdeps = linux-modules-lts-6.6-deb
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/arm64/linux-image-unsigned-6.6.51-060651-generic_6.6.51-060651.202409121031_arm64.deb
+	sha256sums_arm64 = 9e811b5522ca3a499742f3ba75e3db4855536ba9dd6620a151df4307feba6195
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-image-unsigned-6.6.51-060651-generic_6.6.51-060651.202409121031_amd64.deb
+	sha256sums_amd64 = e7a84ca24a58dd344e1cc0183cb68d00ef3a2a67c8153f78ef7a7cfdb6286c71
+
+pkgname = linux-image-unsigned-lts-6.6-deb

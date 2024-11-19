@@ -1,5 +1,6 @@
 pkgname="btrfs-du-bin"
 gives="btrfs-du"
+arch=("amd64")
 pkgver="0.0.7"
 source=("https://github.com/nachoparker/btrfs-du/archive/refs/tags/v${pkgver}.tar.gz")
 pkgdesc="Easily print BTRFS subvolume/snapshot disk usage"

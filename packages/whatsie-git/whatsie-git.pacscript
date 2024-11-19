@@ -1,6 +1,7 @@
 pkgname="whatsie-git"
 gives="whatsie"
 source=("https://github.com/keshavbhatt/whatsie.git")
+arch=("any")
 pkgver="4.14.1"
 url="https://github.com/keshavbhatt/whatsie"
 pkgdesc="Feature rich WhatsApp Client for Desktop Linux"

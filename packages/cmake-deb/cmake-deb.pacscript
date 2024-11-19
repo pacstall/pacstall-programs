@@ -1,5 +1,6 @@
 pkgname="cmake-deb"
 gives="cmake"
+arch=("amd64")
 pkgver="3.25.1"
 pkgdesc="CMake data files (modules, templates and documentation)"
 pacdeps=("cmake-data-deb")

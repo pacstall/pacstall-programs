@@ -1,4 +1,5 @@
 pkgname="papirus-icon-theme"
+arch=("all")
 pkgver="20231201"
 pkgdesc="Papirus icon theme"
 repology=("project: papirus-icon-theme" "repo: aur")

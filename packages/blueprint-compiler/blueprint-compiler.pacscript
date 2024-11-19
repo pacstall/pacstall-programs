@@ -1,4 +1,5 @@
 pkgname="blueprint-compiler"
+arch=("any")
 pkgver="0.12.0"
 pkgdesc='A markup language for GTK user interfaces'
 url='https://jwestman.pages.gitlab.gnome.org/blueprint-compiler/'

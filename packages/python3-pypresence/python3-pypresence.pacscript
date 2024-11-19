@@ -1,5 +1,6 @@
 pkgname="python3-pypresence"
 gives="python3-pypresence"
+arch=("any")
 pkgver="4.3.0"
 pkgdesc="Discord RPC and Rich Presence wrapper library"
 url='https://github.com/qwertyquerty/pypresence'

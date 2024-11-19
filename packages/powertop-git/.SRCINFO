@@ -2,6 +2,7 @@ pkgbase = powertop-git
 	gives = powertop
 	pkgver = 2.15
 	pkgdesc = Linux tool used to diagnose issues with power consumption and power management
+	arch = any
 	makedepends = libpci-dev
 	makedepends = libnl-3-dev
 	makedepends = libnl-genl-3-dev

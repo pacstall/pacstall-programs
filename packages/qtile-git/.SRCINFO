@@ -2,6 +2,7 @@ pkgbase = qtile-git
 	gives = qtile
 	pkgver = 0.22.1
 	pkgdesc = A full-featured, hackable tiling window manager written and configured in Python
+	arch = any
 	depends = python3-cffi
 	depends = xserver-xorg
 	depends = python3-xcffib

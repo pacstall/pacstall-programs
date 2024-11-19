@@ -1,5 +1,6 @@
 pkgname="brave-browser-beta-deb"
 gives="brave-browser-beta"
+arch=("amd64")
 pkgver="1.67.101"
 breaks=("${gives}-bin" "${gives}-git" "${gives}-app")
 source=("https://github.com/brave/brave-browser/releases/download/v${pkgver}/${gives}_${pkgver}_amd64.deb")

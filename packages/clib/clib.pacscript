@@ -2,6 +2,7 @@
 # shellcheck disable=2034,2032,2033
 #-*- mode: sh-*-
 pkgname="clib"
+arch=("any")
 pkgver="2.8.3"
 pkgdesc="C package manager-ish"
 source=("https://github.com/clibs/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")

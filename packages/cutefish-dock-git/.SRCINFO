@@ -2,6 +2,7 @@ pkgbase = cutefish-dock-git
 	gives = cutefish-dock
 	pkgver = 0.8
 	pkgdesc = CutefishOS application dock.
+	arch = any
 	depends = fishui
 	depends = libcutefish
 	depends = libqt5svg5-dev

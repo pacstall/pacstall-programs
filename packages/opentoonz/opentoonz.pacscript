@@ -1,4 +1,5 @@
 pkgname="opentoonz"
+arch=("any")
 pkgver="1.7.1"
 source=("https://github.com/opentoonz/opentoonz/archive/refs/tags/v${pkgver}.tar.gz")
 makedepends=("libboost-all-dev" "qtbase5-dev" "libqt5svg5-dev" "qtscript5-dev" "qttools5-dev" "libqt5opengl5-dev" "qtmultimedia5-dev" "libqt5serialport5-dev" "libsuperlu-dev" "liblz4-dev" "libusb-1.0-0-dev" "liblzo2-dev" "libpng-dev" "libjpeg-dev" "libglew-dev" "freeglut3-dev" "libfreetype6-dev" "libjson-c-dev" "qtwayland5" "libmypaint-dev" "libopencv-dev" "libturbojpeg-dev" "libmypaint-dev" "libopenblas-dev" "libegl1-mesa-dev" "libgles2-mesa-dev" "libglib2.0-dev" "liblzma-dev" "cmake" "build-essential" "git")

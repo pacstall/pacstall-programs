@@ -2,6 +2,7 @@ pkgbase = pipewire
 	pkgver = 0.3.65
 	pkgdesc = Server and user space API to deal with multimedia pipelines
 	url = https://pipewire.org/
+	arch = any
 	makedepends = meson
 	makedepends = libdbus-1-dev
 	makedepends = debhelper-compat

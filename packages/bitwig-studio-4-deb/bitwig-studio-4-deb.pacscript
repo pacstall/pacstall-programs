@@ -1,5 +1,6 @@
 pkgname="bitwig-studio-4-deb"
 gives="bitwig-studio"
+arch=("amd64")
 pkgver="4.4.10"
 source=("https://downloads.bitwig.com/stable/${pkgver}/${gives}-${pkgver}.deb")
 pkgdesc="Digital audio workstation for music production, remixing and live performance"

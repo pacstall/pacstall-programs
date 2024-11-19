@@ -1,5 +1,6 @@
 pkgname="lens"
 _name="Lens"
+arch=("all")
 pkgver="1.0.2"
 source=("https://www.auburnsounds.com/downloads/${_name}-FREE-${pkgver}.zip")
 pkgdesc="LENS is a spectral dynamics processor with unbelievable punch and clarity."

@@ -1,5 +1,6 @@
 pkgname="gnome-tweaks"
 gives="gnome-tweaks"
+arch=("any")
 pkgver="40.10"
 license="GPL-3.0"
 source=("https://github.com/GNOME/gnome-tweaks/archive/refs/tags/${pkgver}.zip")

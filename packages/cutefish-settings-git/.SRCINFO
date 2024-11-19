@@ -2,6 +2,7 @@ pkgbase = cutefish-settings-git
 	gives = cutefish-settings
 	pkgver = 0.8
 	pkgdesc = System Settings application for Cutefish Desktop.
+	arch = any
 	depends = fishui
 	depends = libfontconfig1
 	depends = libfreetype-dev

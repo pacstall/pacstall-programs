@@ -1,0 +1,13 @@
+pkgbase = orchis-kde
+	pkgver = 2024-10-12
+	pkgdesc = Orchis KDE is a Materia Design theme for KDE Plasma desktop
+	url = https://github.com/vinceliuice/Orchis-kde
+	arch = any
+	optdepends = qt5-style-kvantum | qt6-style-kvantum: use Kvantum engine for better look
+	optdepends = orchis-gtk-theme: matching GTK theme
+	license = GPL-3.0-only
+	license = CC-BY-SA-4.0
+	maintainer = bibelin <balian1belin@yandex.ru>
+	source = git+https://github.com/vinceliuice/Orchis-kde#commit=036e831f545de829a7eaa65f0128322663d406e4
+
+pkgname = orchis-kde

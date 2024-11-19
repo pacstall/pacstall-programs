@@ -1,5 +1,6 @@
 pkgname="batsignal"
 repology=("project: ${pkgname}")
+arch=("any")
 pkgver="1.6.4"
 source=("https://github.com/electrickite/batsignal/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("pkg-config" "libnotify4" "libnotify-dev")

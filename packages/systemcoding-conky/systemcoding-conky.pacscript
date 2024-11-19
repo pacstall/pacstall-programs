@@ -1,5 +1,6 @@
 pkgname="systemcoding-conky"
 gives="conky"
+arch=("all")
 pkgver="1.0"
 source=("https://github.com/systemcoding/systemcoding-conky/releases/download/release/systemcoding-conky.zip")
 maintainer=("System Coding <revanthnagmunagala@gmail.com>")

@@ -1,4 +1,5 @@
 pkgname="nowpm"
+arch=("any")
 pkgver="1.0"
 source=("https://github.com/jnats/nowpm/archive/refs/tags/v${pkgver}.zip")
 pkgdesc="the no-bullshit wpm utility"

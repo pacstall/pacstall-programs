@@ -1,5 +1,6 @@
 pkgname="graillon"
 _name="Graillon"
+arch=("any")
 pkgver="2.6"
 source=("https://www.auburnsounds.com/downloads/${_name}-FREE-${pkgver}.zip")
 pkgdesc="Graillon is a Vocal Live Changer that brings a world of possibilities right into your DAW"

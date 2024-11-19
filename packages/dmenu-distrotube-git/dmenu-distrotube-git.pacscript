@@ -1,4 +1,5 @@
 pkgname="dmenu-distrotube-git"
+arch=("any")
 pkgver="1.4"
 source=("https://gitlab.com/dwt1/dmenu-distrotube.git")
 makedepends=("libxinerama-dev" "libxft-dev")

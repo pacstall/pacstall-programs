@@ -1,4 +1,5 @@
 pkgname="sed"
+arch=("any")
 pkgver="4.8"
 source=("https://ftp.gnu.org/gnu/sed/sed-${pkgver}.tar.xz")
 makedepends=("autoconf" "automake")

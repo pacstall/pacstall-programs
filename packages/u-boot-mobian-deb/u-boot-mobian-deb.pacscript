@@ -1,6 +1,7 @@
 pkgname="u-boot-mobian-deb"
 gives="u-boot-menu"
 replaces=("${gives}")
+arch=("all")
 pkgver="4.2.2mobian1"
 source=("https://repo.mobian-project.org/pool/main/u/${gives}/${gives}_${pkgver}_all.deb")
 pkgdesc="Deb packaging for u-boot-menu with Mobian patches"

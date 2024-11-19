@@ -2,6 +2,7 @@ pkgbase = rio-x11-deb
 	gives = rio
 	pkgver = 0.0.36
 	pkgdesc = A hardware-accelerated GPU terminal emulator focusing to run in desktops and browsers
+	arch = amd64
 	breaks = rio-wayland-deb
 	breaks = rio-git
 	maintainer = Herisson <spaceguybox@outlook.com>

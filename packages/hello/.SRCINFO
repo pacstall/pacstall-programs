@@ -1,6 +1,7 @@
 pkgbase = hello
 	pkgver = 2.12.1
 	pkgdesc = GNU implementation of the classic program that prints 'Hello, world!' when you run it
+	arch = all
 	depends = libc6
 	makedepends = build-essential
 	breaks = hello-git

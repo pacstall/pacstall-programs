@@ -2,6 +2,7 @@ pkgbase = fsearch-git
 	gives = fsearch
 	pkgver = 0.2.2
 	pkgdesc = FSearch is a fast file search utility, inspired by Everything Search Engine. It's written in C and based on GTK3.
+	arch = any
 	makedepends = git
 	makedepends = build-essential
 	makedepends = automake

@@ -1,6 +1,7 @@
 pkgname="circle-flags-svg-deb"
 gives="circle-flags-svg"
 repology=("project: circle-flags" "repo: linux_mint_21")
+arch=("all")
 pkgver="2.6.2"
 source=("http://packages.linuxmint.com/pool/main/c/circle-flags/circle-flags-svg_${pkgver}_all.deb")
 pkgdesc="Circle flags in SVG format"

@@ -1,4 +1,5 @@
 pkgname="micro"
+arch=("amd64")
 pkgver="2.0.13"
 pkgdesc="A modern and intuitive terminal-based text editor"
 maintainer=("edward-riley <edward@edwardriley.co.uk>")

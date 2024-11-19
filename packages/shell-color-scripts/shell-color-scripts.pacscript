@@ -1,4 +1,5 @@
 pkgname="shell-color-scripts"
+arch=("all")
 pkgver="3.0"
 source=("https://gitlab.com/dwt1/shell-color-scripts/-/archive/master/shell-color-scripts-master.tar.gz")
 pkgdesc="A collection of terminal color scripts."

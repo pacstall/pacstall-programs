@@ -2,6 +2,7 @@ pkgbase = yafetch-git
 	gives = yafetch
 	pkgver = 0.1.0
 	pkgdesc = Yet another fetch tool
+	arch = all
 	breaks = yafetch-deb
 	breaks = yafetch-bin
 	breaks = yafetch-app

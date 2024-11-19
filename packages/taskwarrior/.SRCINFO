@@ -2,6 +2,7 @@ pkgbase = taskwarrior
 	gives = taskwarrior
 	pkgver = 2.6.2
 	pkgdesc = Taskwarrior is a command line task list management utility with a multitude of features, developed as a portable open source project with an active and quite vast ecosystem of tools, hooks and extensions.
+	arch = any
 	depends = uuid-dev
 	depends = gnutls-dev
 	makedepends = g++

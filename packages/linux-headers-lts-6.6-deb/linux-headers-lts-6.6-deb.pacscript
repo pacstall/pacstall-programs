@@ -1,0 +1,9 @@
+pkgname="linux-headers-lts-6.6-deb"
+gives="linux-headers-6.6.51-060651"
+pkgver="6.6.51"
+buildver="6.6.51-060651.202409121031"
+source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/amd64/${gives}_${buildver}_all.deb")
+pkgdesc="Linux kernel LTS from Ubuntu Mainline Kernel PPA (Headers)"
+sha256sums=("e2a5b21d8ab8cc1d8a359cd8809bc0cf16ecf3cd0cb87c29a50d05f85f564510")
+arch=('all')
+maintainer=("James Ed Randson <jimedrand@disroot.org>")

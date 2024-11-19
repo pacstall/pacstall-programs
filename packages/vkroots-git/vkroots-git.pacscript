@@ -1,5 +1,6 @@
 pkgname="vkroots-git"
 gives="vkroots-headers"
+arch=("any")
 pkgver="0.1"
 pkgdesc="A stupid simple method of making Vulkan layers, at home!"
 url='https://github.com/Joshua-Ashton/vkroots'

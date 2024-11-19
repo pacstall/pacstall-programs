@@ -1,4 +1,5 @@
 pkgname="vivarium"
+arch=("any")
 pkgver="0.0.4"
 sha256sums=("abb7272f53d1769de3726c6961df40627c98b8884eb32388e29b8812c60aacec")
 source=("https://github.com/inclement/vivarium/archive/refs/tags/v${pkgver}.zip")

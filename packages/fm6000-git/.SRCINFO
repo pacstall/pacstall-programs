@@ -2,6 +2,7 @@ pkgbase = fm6000-git
 	gives = fm6000
 	pkgver = 0.0.1
 	pkgdesc = A simple fetch tool written in Perl
+	arch = any
 	depends = perl
 	breaks = fm6000
 	source = https://github.com/anhsirk0/fetch-master-6000.git

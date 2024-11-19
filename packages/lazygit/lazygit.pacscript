@@ -1,5 +1,6 @@
 pkgname="lazygit"
 gives="lazygit"
+arch=("amd64")
 pkgver="0.42.0"
 source=("https://github.com/jesseduffield/lazygit/releases/download/v${pkgver}/lazygit_${pkgver}_Linux_x86_64.tar.gz")
 url="https://github.com/jesseduffield/lazygit"

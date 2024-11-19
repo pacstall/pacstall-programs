@@ -7,6 +7,7 @@
 maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="libressl"
+arch=("any")
 pkgver="3.7.3"
 source=("https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-${pkgver}.tar.gz")
 pkgdesc="LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014, with goals of modernizing the codebase, improving security, and applying best practice development processes."

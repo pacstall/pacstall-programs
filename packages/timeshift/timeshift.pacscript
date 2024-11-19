@@ -1,5 +1,6 @@
 pkgname="timeshift"
 repology=("project: timeshift")
+arch=("any")
 pkgver="23.07.1"
 pkgrel="2"
 maintainer=("Paul Cosma (saenai) <paul.cosma97@gmail.com>")

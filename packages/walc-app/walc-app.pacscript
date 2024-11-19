@@ -8,6 +8,7 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="walc-app"
 gives="walc"
+arch=("amd64")
 pkgver="0.2.1"
 pkgdesc="An unofficial WhatsApp Desktop client for linux systems."
 source=("https://github.com/cstayyab/WALC/releases/download/v${pkgver}/${gives}.AppImage")

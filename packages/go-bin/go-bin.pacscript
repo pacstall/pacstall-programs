@@ -3,6 +3,7 @@ maintainer=("Paul Cosma (saenai) <paul.cosma97@gmail.com>")
 pkgname="go-bin"
 gives="go"
 pkgver="1.21.6"
+pkgrel="2"
 pkgdesc="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
 source=("https://go.dev/dl/go${pkgver}.linux-amd64.tar.gz")
 breaks=("${gives}" "${gives}-git" "${gives}-app" "${gives}-deb" "golang" "golang-git" "golang-deb" "golang-bin" "golang-app" "golang-go")
@@ -36,7 +37,7 @@ __clear_goroot() {
 }
 
 __set_goroot() {
-  echo "export GOROOT=\"${__goroot}\"" | tee -a "$1" > /dev/null
+  echo -e "\nexport GOROOT=\"${__goroot}\"" | tee -a "$1" > /dev/null
 }
 
 post_install() {

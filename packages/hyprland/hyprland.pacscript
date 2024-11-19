@@ -1,5 +1,6 @@
 pkgname="hyprland"
 repology=("project: hyprland")
+arch=("any")
 pkgver="0.35.0"
 source=("https://github.com/hyprwm/Hyprland/releases/download/v${pkgver}/source-v${pkgver}.tar.gz")
 url='https://hyprland.org/'

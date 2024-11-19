@@ -1,6 +1,7 @@
 pkgbase = kvantum
 	pkgver = 1.0.10
 	pkgdesc = SVG-based theme engine for Qt
+	arch = any
 	makedepends = g++
 	makedepends = cmake
 	makedepends = libx11-dev

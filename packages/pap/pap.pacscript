@@ -1,4 +1,5 @@
 pkgname="pap"
+arch=("any")
 pkgver="0.15.0"
 source=("https://github.com/talwat/pap/archive/v${pkgver}.tar.gz")
 pkgdesc="Swiss army knife for minecraft servers"

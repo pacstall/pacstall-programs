@@ -1,6 +1,7 @@
 pkgbase = planner-git
 	pkgver = 4.1
 	pkgdesc = Task manager with Todoist support designed for GNU/Linux
+	arch = any
 	depends = libgtk-3-0
 	depends = libgee-0.8-2
 	depends = libjson-glib-1.0-0

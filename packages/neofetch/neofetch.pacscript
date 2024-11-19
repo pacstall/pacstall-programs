@@ -1,4 +1,5 @@
 pkgname="neofetch"
+arch=("all")
 pkgver="7.1.0"
 source=("https://github.com/dylanaraps/neofetch/archive/${pkgver}.zip")
 optdepends=("w3m-img: image preview"

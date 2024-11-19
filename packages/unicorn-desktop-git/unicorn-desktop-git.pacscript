@@ -1,5 +1,6 @@
 pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
+arch=("all")
 pkgver="0.0.1"
 pkgrel="4"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"

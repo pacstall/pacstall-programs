@@ -2,6 +2,7 @@ pkgbase = cutefish-calculator-git
 	gives = cutefish-calculator
 	pkgver = 0.4
 	pkgdesc = CutefishOS Calculator.
+	arch = any
 	depends = fishui
 	depends = libcutefish
 	makedepends = extra-cmake-modules

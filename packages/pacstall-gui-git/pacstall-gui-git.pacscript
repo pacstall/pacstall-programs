@@ -1,6 +1,7 @@
 pkgname="pacstall-gui-git"
 depends=("yad" "sed" "adwaita-icon-theme" "policykit-1" "desktop-file-utils")
 source=("https://github.com/cat-master21/pacstall-gui.git")
+arch=("any")
 pkgver="0.0.1"
 gives="pacstall-gui"
 breaks=("${gives}" "${gives}-bin" "${gives}-deb")

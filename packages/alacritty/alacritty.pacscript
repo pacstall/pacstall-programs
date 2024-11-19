@@ -1,4 +1,5 @@
 pkgname="alacritty"
+arch=("any")
 pkgver="0.13.2"
 repology=("project: alacritty")
 source=("https://github.com/alacritty/alacritty/archive/refs/tags/v${pkgver}.tar.gz")

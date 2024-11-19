@@ -1,6 +1,7 @@
 pkgbase = dmenu
 	pkgver = 5.2
 	pkgdesc = A generic menu for X
+	arch = any
 	makedepends = libxinerama-dev
 	makedepends = libxft-dev
 	breaks = dmenu

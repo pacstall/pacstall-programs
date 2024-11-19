@@ -1,4 +1,5 @@
 pkgname='mdbook'
+arch=("any")
 pkgver='0.4.40'
 pkgdesc='Utility to create modern online books from Markdown files'
 url='https://rust-lang.github.io/mdBook/'

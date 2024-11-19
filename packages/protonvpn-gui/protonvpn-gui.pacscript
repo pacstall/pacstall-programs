@@ -3,6 +3,7 @@ gives="protonvpn"
 breaks=("${pkgname}-git")
 replaces=("${pkgname}")
 repology=("project: ${pkgname}")
+arch=("any")
 pkgver="1.12.0"
 source=("https://github.com/ProtonVPN/linux-app/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("libgtk-3-dev" "gobject-introspection" "python3-psutil" "python3-setuptools")

@@ -4,6 +4,7 @@ pkgbase = xcb-util-errors
 	pkgrel = 2
 	pkgdesc = XCB errors library
 	url = https://cgit.freedesktop.org/xcb/util-errors/
+	arch = any
 	makedepends = libtool
 	makedepends = xcb-proto
 	makedepends = xutils-dev

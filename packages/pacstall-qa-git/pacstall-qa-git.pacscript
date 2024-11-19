@@ -1,5 +1,6 @@
 pkgname="pacstall-qa-git"
 source=("git+https://github.com/pacstall/pacstall-qa")
+arch=("all")
 pkgver="0.0.1"
 gives="pacstall-qa"
 makedepends=("make")

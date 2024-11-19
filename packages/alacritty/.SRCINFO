@@ -1,6 +1,7 @@
 pkgbase = alacritty
 	pkgver = 0.13.2
 	pkgdesc = A fast, cross-platform, OpenGL terminal emulator
+	arch = any
 	makedepends = cargo
 	makedepends = cmake
 	makedepends = pkg-config

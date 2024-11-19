@@ -2,6 +2,7 @@ pkgbase = fpc-src-deb
 	gives = fpc-src
 	pkgver = 3.2.2
 	pkgdesc = Delphi-like IDE for FreePascal gtk2 version
+	arch = amd64
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: fpc
 	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.4/fpc-src_3.2.2-210709_amd64.deb

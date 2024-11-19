@@ -1,6 +1,7 @@
 pkgname="exa-git"
 gives="exa"
 source=("https://github.com/ogham/exa.git")
+arch=("any")
 pkgver="0.10.1"
 url='https://the.exa.website/'
 makedepends=("cargo" "libgit2-dev" "cmake" "rustc")

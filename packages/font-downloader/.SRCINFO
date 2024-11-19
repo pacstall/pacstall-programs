@@ -2,6 +2,7 @@ pkgbase = font-downloader
 	gives = font-downloader
 	pkgver = 10.0.0
 	pkgdesc = Install fonts from online sources
+	arch = any
 	depends = python3-gi
 	depends = libhandy-1-dev
 	makedepends = meson

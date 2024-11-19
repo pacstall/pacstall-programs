@@ -2,6 +2,7 @@ pkgname="pdfmm-git"
 gives="pdfmm"
 pkgdesc="pdfmm (for 'pdf minus minus', or 'pdf--') is a graphical assistant to reduce the size of PDF files."
 source=("https://github.com/jpfleury/${gives}.git")
+arch=("any")
 pkgver="0.0.1"
 depends=("bash" "sed" "zenity" "ghostscript")
 breaks=("${gives}")

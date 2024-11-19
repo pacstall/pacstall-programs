@@ -1,6 +1,7 @@
 pkgbase = neofetch
 	pkgver = 7.1.0
 	pkgdesc = Command-line system information tool
+	arch = all
 	optdepends = w3m-img: image preview
 	optdepends = libsixel-dev: image preview
 	optdepends = catimg: image preview

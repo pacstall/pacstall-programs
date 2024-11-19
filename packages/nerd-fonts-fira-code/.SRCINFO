@@ -1,6 +1,7 @@
 pkgbase = nerd-fonts-fira-code
 	pkgver = 3.1.1
 	pkgdesc = Patched font Fira Code from Nerd Fonts library
+	arch = all
 	replaces = nerd-fonts-fira-code
 	maintainer = Nezred <jmnezred@pm.me>
 	repology = project: fonts:nerd-fonts

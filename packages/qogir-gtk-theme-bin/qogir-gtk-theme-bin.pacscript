@@ -8,6 +8,7 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="qogir-gtk-theme-bin"
 gives="qogir-gtk-theme"
+arch=("amd64")
 pkgver="2023-02-27"
 pkgdesc="Qogir is a flat Design theme for GTK"
 source=("https://github.com/vinceliuice/Qogir-theme/archive/${pkgver}.tar.gz")

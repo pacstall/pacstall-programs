@@ -4,6 +4,7 @@ pkgdesc="The Stockfish chess engine"
 url='https://stockfishchess.org/'
 source=("https://github.com/official-stockfish/Stockfish.git")
 maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
+arch=("any")
 pkgver="0.0.1"
 pkgrel="2"
 breaks=("stockfish-git")

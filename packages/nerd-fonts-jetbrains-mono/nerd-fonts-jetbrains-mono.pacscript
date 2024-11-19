@@ -1,6 +1,7 @@
 pkgname="nerd-fonts-jetbrains-mono"
 replaces=("${pkgname}")
 repology=("project: fonts:nerd-fonts")
+arch=("all")
 pkgver="3.1.1"
 source=("https://github.com/ryanoasis/nerd-fonts/releases/download/v${pkgver}/JetBrainsMono.tar.xz")
 pkgdesc="Patched font JetBrains Mono from Nerd Fonts library"

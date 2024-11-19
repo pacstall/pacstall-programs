@@ -1,0 +1,10 @@
+pkgname="kate5-data-backport-deb"
+gives="kate5-data"
+pkgver="22.04.3"
+pkgdesc="Shared data files for the Kate text editor"
+source_jammy=("http://ppa.launchpad.net/kubuntu-ppa/backports/ubuntu/pool/main/k/kate/kate5-data_${pkgver}-0ubuntu1~ubuntu22.04~ppa1_all.deb")
+sha256sums_jammy=("46264107cf2fc54dd35e48e119acebce8ce48b6c686092490156ebad4b30ef83")
+arch=("amd64")
+compatible=("ubuntu:jammy")
+maintainer=("Vaibhav Sharma <vvaibhavv3434@gmail.com>")
+repology=("project: ${gives}")

@@ -2,6 +2,7 @@ pkgbase = ani-cli-bin
 	gives = ani-cli
 	pkgver = 4.8
 	pkgdesc = A cli tool to browse and play anime
+	arch = amd64
 	depends = grep
 	depends = sed
 	depends = wget

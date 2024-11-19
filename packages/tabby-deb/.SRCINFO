@@ -2,6 +2,7 @@ pkgbase = tabby-deb
 	gives = tabby-terminal
 	pkgver = 1.0.197
 	pkgdesc = A terminal for the modern age
+	arch = amd64
 	breaks = tabby
 	breaks = tabby-app
 	maintainer = Herisson <spaceguybox@outlook.com>

@@ -2,6 +2,7 @@ pkgbase = awesome-git
 	gives = awesome
 	pkgver = 4.3
 	pkgdesc = awesome window manager
+	arch = any
 	depends = libx11-6
 	depends = libxcb-cursor0
 	depends = libxcb-icccm4

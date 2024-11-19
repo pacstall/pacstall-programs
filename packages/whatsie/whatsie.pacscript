@@ -1,5 +1,6 @@
 pkgname="whatsie"
 gives="whatsie"
+arch=("any")
 pkgver="4.14.1"
 source=("https://github.com/keshavbhatt/whatsie/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=("369acebb948375713f4e97a5e0304dbda407b432b42fe8ad0b6aa9b602744311")

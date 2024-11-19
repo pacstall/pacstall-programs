@@ -2,6 +2,7 @@ pkgbase = os-installer-git
 	gives = os-installer
 	pkgver = 0.3
 	pkgdesc = A generic and changable os-installer
+	arch = any
 	depends = libgnome-desktop-4-2
 	depends = libadwaita-1-0
 	depends = libgweather-4-0

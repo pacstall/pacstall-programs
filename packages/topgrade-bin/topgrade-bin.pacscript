@@ -1,9 +1,9 @@
 pkgname="topgrade-bin"
 gives="topgrade"
-pkgver="13.0.0"
+pkgver="16.0.1"
 arch=('amd64' 'arm64')
-sha256sums_amd64=("b9bbab3a2cbea68bd3476ae858a00f74a57e6224a7fbef0ed0de5273ac95affd")
-sha256sums_arm64=("5079a1f50f2fd2d7954639f5eb14db38094f78493e2292a945f9f5ac60bfff5d")
+sha256sums_amd64=("5149ee536b15764bcdecb3fe971d99edfb82096f9f8112be3ff6f4e6acb6557f")
+sha256sums_arm64=("d114d4de129754d8e997d5a5021c42f11a8c5d0545ebd17dd1b55e55c4a2e61f")
 source_amd64=("https://github.com/topgrade-rs/topgrade/releases/download/v${pkgver}/topgrade-v${pkgver}-x86_64-unknown-linux-gnu.tar.gz")
 source_arm64=("https://github.com/topgrade-rs/topgrade/releases/download/v${pkgver}/topgrade-v${pkgver}-aarch64-unknown-linux-gnu.tar.gz")
 pkgdesc="Upgrades everything on your system"

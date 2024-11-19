@@ -1,4 +1,5 @@
 pkgname="dmenu"
+arch=("any")
 pkgver="5.2"
 source=("https://dl.suckless.org/tools/${pkgname}-${pkgver}.tar.gz")
 makedepends=("libxinerama-dev" "libxft-dev")

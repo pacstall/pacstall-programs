@@ -1,5 +1,6 @@
 pkgname='lix-git'
 gives='lix'
+arch=("any")
 pkgver='2.90'
 pkgdesc='A modern, delicious implementation of the Nix package manager, focused on correctness, usability, and growth'
 url='https://lix.systems'

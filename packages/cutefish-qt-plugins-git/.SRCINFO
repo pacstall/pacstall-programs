@@ -2,6 +2,7 @@ pkgbase = cutefish-qt-plugins-git
 	gives = cutefish-qt-plugins
 	pkgver = 0.5
 	pkgdesc = Unify Qt application style of CutefishOS
+	arch = any
 	depends = libkf5windowsystem-dev
 	depends = libdbusmenu-qt5-dev
 	depends = libqt5xdg-dev

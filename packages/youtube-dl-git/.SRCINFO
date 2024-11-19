@@ -2,6 +2,7 @@ pkgbase = youtube-dl-git
 	gives = youtube-dl
 	pkgver = 2021.12.17
 	pkgdesc = Command-line program to download videos from YouTube.com and other video sites
+	arch = all
 	depends = python3
 	makedepends = make
 	makedepends = pandoc

@@ -1,0 +1,13 @@
+pkgname="waydroid-deb"
+gives="waydroid"
+replaces=("${gives}")
+arch=("all")
+repology=("project: ${gives}")
+pkgver="1.4.3"
+maintainer=("James Ed Randson <jimedrand@disroot.org>")
+pacdeps=("python3-gbinder-deb")
+depends=("lxc" "python3" "python3-gi" "gir1.2-gtk-3.0" "dbus" "python3-dbus" "polkitd" "iptables" "python3-pyclipper")
+incompatible=("debian:bookworm" "debian:bullseye" "debian:buster" "ubuntu:jammy" "ubuntu:focal")
+pkgdesc=("Bring Android support on your own Wayland session which runs under LXC container")
+source=("https://repo.waydro.id/dists/noble/${gives}_${pkgver}_all.deb")
+sha256sums=("6ecc62d4be5c1355a672eaa830dc93663484cd1aa9473d73ac11b8ecc9147d6f")

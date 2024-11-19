@@ -1,5 +1,6 @@
 pkgname="goverlay-bin"
 gives="goverlay"
+arch=("amd64")
 pkgver="1.2.0"
 _pkgver="1.2"
 source=(

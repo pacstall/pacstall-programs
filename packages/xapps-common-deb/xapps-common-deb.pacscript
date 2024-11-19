@@ -1,5 +1,6 @@
 pkgname="xapps-common-deb"
 gives="xapps-common"
+arch=("all")
 pkgver="2.8.2"
 repology=("project: xapps")
 source=("http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_${pkgver}+virginia_all.deb")

@@ -2,6 +2,7 @@ pkgbase = realvnc-vnc-viewer-deb
 	gives = realvnc-vnc-viewer
 	pkgver = 7.6.0
 	pkgdesc = VNC Viewer, from RealVNC, is remote access software that enables you to securely connect to and control a remote computer
+	arch = amd64
 	breaks = realvnc-vnc-viewer
 	breaks = realvnc-vnc-viewer-bin
 	breaks = realvnc-vnc-viewer-app

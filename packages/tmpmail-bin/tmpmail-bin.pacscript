@@ -8,6 +8,7 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="tmpmail-bin"
 gives="tmpmail"
+arch=("amd64")
 pkgver="1.2.3"
 pkgdesc="A temporary email right from your terminal written in POSIX sh"
 source=("https://github.com/sdushantha/tmpmail/archive/refs/tags/v${pkgver}.tar.gz")

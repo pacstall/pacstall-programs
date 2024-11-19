@@ -2,6 +2,7 @@ pkgbase = lightpad-git
 	gives = com.github.libredeb.lightpad
 	pkgver = 0.0.8
 	pkgdesc = A lightweight, simple and powerful application launcher
+	arch = any
 	depends = meson
 	depends = ninja-build
 	depends = libgee-0.8-dev

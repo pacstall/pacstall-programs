@@ -1,4 +1,5 @@
 pkgname="fm6000-git"
+arch=("any")
 pkgver="0.0.1"
 source=("https://github.com/anhsirk0/fetch-master-6000.git")
 depends=("perl")

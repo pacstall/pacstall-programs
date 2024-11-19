@@ -1,6 +1,7 @@
 _parent_name="flit"
 _name="${_parent_name}_core"
 pkgname="python3-${_name/_/-}"
+arch=("any")
 pkgver="3.9.0"
 pkgdesc="A PEP 517 build backend for packages using Flit"
 url="https://github.com/pypa/${_parent_name}/tree/main/${_name/-/_}"

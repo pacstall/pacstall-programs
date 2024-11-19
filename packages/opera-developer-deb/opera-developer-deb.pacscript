@@ -1,9 +1,9 @@
 pkgname="opera-developer-deb"
 gives="opera-developer"
-pkgver="111.0.5151.0"
+pkgver="116.0.5341.0"
 repology=("project: opera" "visiblename: ${gives}")
 source=("https://get.geo.opera.com/pub/${gives}/${pkgver}/linux/${gives}_${pkgver}_amd64.deb")
 pkgdesc="Opera is a fast, secure, and user-friendly web browser - Developer"
-sha256sums=("06d658eb9ba9a28c34f329942257a4a5da0d19df2002e587889ae0f4542548b7")
+sha256sums=("17fac31759cc05fb82ce617c7fb2129029ca421a04fa79a3215ad15059fb33be")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")

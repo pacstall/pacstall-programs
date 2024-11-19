@@ -4,6 +4,7 @@ pkgname="pacget-git"
 gives="pacget"
 maintainer=("Erik Lundstedt <erik@lundstedt.it>")
 source=("https://gitlab.com/Erik.Lundstedt/pacget.git")
+arch=("any")
 pkgver="0.0.1"
 license="Don't Be a Jerk"
 depends=("fzf" "curl" "bash")

@@ -1,5 +1,6 @@
 pkgname="renegate"
 _name="Renegate"
+arch=("any")
 pkgver="1.2"
 source=("https://www.auburnsounds.com/downloads/${_name}-FREE-${pkgver}.zip")
 pkgdesc="Renegate is simply just a full-band Gate plug-in. It has an always smooth, natural sound, and is quick to operate."
