@@ -10,13 +10,14 @@ arch=('amd64')
 sha256sums=("ccd0ac89c9d3dc13eee8eba0f3f489b3f9efc7a897c1c550d919fcc294c749f9")
 source=("https://download.dremio.com/community-server/${fullver}/${gives}-community-${fullver}.tar.gz")
 
-package() {
-  cd "${gives}-community-${fullver}"
-
+build() {
   mkdir -p "${pkgdir}/opt/${pkgname}"
-  mv -- * "${pkgdir}/opt/${pkgname}"
-
   mkdir -p "${pkgdir}/usr/bin"
+  mkdir -p "${pkgdir}/lib/systemd/system"
+}
+
+package() {
+  cp -r "${gives}-community-${fullver}"/* "${pkgdir}/opt/${pkgname}"
 
   # shellcheck disable=SC2016
   echo '#!/bin/bash
@@ -27,8 +28,6 @@ export PATH=$JAVA_HOME/bin:$PATH
 # Forward execution to dremio script
 bash "/opt/'"${pkgname}"'/bin/dremio" "$@"' | tee "${pkgdir}/usr/bin/dremio" > /dev/null
   chmod +x "${pkgdir}/usr/bin/dremio"
-
-  mkdir -p "${pkgdir}/lib/systemd/system"
 
   echo '[Unit]
 Description=Dremio Daemon Server
@@ -46,7 +45,6 @@ LimitNOFILE=65536
 
 [Install]
 WantedBy=multi-user.target' | tee "${pkgdir}/lib/systemd/system/dremio.service" > /dev/null
-
 }
 
 post_install() {
