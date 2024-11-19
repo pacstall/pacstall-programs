@@ -1,6 +1,7 @@
 pkgbase = intel-undervolt
 	pkgver = 1.7
 	pkgdesc = Tool for undervolting and throttling limits alteration for Intel CPUs
+	arch = any
 	makedepends = pkg-config
 	maintainer = Elsie19 <elsie19@pm.me>
 	source = https://github.com/kitsunyan/intel-undervolt/archive/refs/tags/1.7.tar.gz

@@ -1,4 +1,5 @@
 pkgname="paper-icon-theme"
+arch=("all")
 pkgver="1.5.0"
 maintainer=("aranym <aranym1@pm.me>")
 source=("https://github.com/snwh/paper-icon-theme/archive/refs/tags/v.1.5.0.tar.gz")

@@ -1,4 +1,5 @@
 pkgname=ffmpeg4.4
+arch=("any")
 pkgver=4.4.4
 pkgdesc='Complete solution to record, convert and stream audio and video'
 url=https://ffmpeg.org/

@@ -1,6 +1,7 @@
 pkgbase = ananicy-cpp
 	pkgver = 1.1.0
 	pkgdesc = Rewrite of Ananicy in C++
+	arch = any
 	makedepends = cmake
 	makedepends = g++
 	makedepends = libsystemd-dev

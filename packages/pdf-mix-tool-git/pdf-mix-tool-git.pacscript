@@ -1,6 +1,7 @@
 pkgname="pdf-mix-tool-git"
 gives="pdf-mix-tool"
 source=("https://gitlab.com/scarpetta/pdfmixtool.git")
+arch=("any")
 pkgver="1.1.1"
 makedepends=("libqpdf-dev" "make" "cmake" "libmagick++-6.q16-dev" "libqt5svg5-dev" "qtbase5-dev" "qtbase5-dev-tools" "qttools5-dev")
 depends=("libqpdf28")

@@ -80,6 +80,7 @@ depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 breaks=("${pkgname}" "${pkgname}-nox")
 replaces=("${pkgname}" "${pkgname}-nox")
 source=("https://github.com/emacs-mirror/emacs.git")
+arch=("any")
 pkgver="29.1"
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then

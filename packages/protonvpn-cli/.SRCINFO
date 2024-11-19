@@ -1,6 +1,7 @@
 pkgbase = protonvpn-cli
 	pkgver = 3.13.0
 	pkgdesc = Official ProtonVPN Linux app (CLI)
+	arch = any
 	depends = python3-dialog
 	makedepends = python3-setuptools
 	pacdeps = protonvpn-nm-lib

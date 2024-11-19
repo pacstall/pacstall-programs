@@ -2,6 +2,7 @@ pkgbase = prismlauncher-git
 	gives = prismlauncher
 	pkgver = 8.2
 	pkgdesc = Custom launcher for Minecraft
+	arch = any
 	makedepends = qt6-base-dev
 	makedepends = qtbase5-dev
 	makedepends = qtchooser

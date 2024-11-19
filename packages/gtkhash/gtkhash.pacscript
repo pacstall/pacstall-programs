@@ -1,4 +1,5 @@
 pkgname="gtkhash"
+arch=("any")
 pkgver="1.4"
 source=("https://github.com/tristanheaven/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz")
 makedepends=("autoconf" "automake" "libtool" "intltool" "wget")

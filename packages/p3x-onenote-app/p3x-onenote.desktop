@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=P3X OneNote
+Icon=/usr/share/pixmaps/onenote.svg
+Exec=/usr/bin/p3x-onenote
+Comment=Linux Electron OneNote
+Terminal=false

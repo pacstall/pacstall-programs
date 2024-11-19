@@ -1,4 +1,5 @@
 pkgname="keepassxc"
+arch=("any")
 pkgver="2.7.9"
 pkgdesc="Cross-platform community-driven port of Keepass password manager"
 repology=("project: keepassxc")

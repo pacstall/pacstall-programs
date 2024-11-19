@@ -3,6 +3,7 @@ gives="torbrowser-launcher"
 breaks=("${gives}")
 repology=("project: ${gives}")
 source=("https://github.com/micahflee/torbrowser-launcher.git")
+arch=("any")
 pkgver="0.3.6"
 makedepends=("build-essential")
 depends=("gettext" "python3-pip" "dh-python" "python3-all" "python3-pyqt5" "python3-gpg" "python3-requests" "python3-socks" "python3-packaging" "gnupg2" "tor")

@@ -3,6 +3,7 @@ gives="fselect"
 makedepends=("cargo" "rustc")
 pkgdesc="Find files with SQL-like queries"
 source=("https://github.com/jhspetersson/fselect.git")
+arch=("any")
 pkgver="0.8.4"
 maintainer=("Diego Magdaleno <diegomagdaleno@pm.me>")
 external_connection=true

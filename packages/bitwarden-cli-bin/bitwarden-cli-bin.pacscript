@@ -1,6 +1,7 @@
 pkgname="bitwarden-cli-bin"
 gives="bitwarden-cli"
 repology=("project: ${gives}")
+arch=("amd64")
 pkgver="2024.1.0"
 source=("https://github.com/bitwarden/clients/releases/download/cli-v${pkgver}/${gives}-linux-${pkgver}.zip")
 breaks=("${gives}-git")

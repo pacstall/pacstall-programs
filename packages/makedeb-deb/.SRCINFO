@@ -2,6 +2,7 @@ pkgbase = makedeb-deb
 	gives = makedeb
 	pkgver = 16.0.0
 	pkgdesc = A tool which takes PKGBUILD files and creates Debian packages installable with DPKG/APT
+	arch = all
 	breaks = makedeb
 	breaks = makedeb-git
 	maintainer = Elsie19 <elsie19@pm.me>

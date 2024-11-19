@@ -1,6 +1,7 @@
 pkgbase = protonvpn-nm-lib
 	pkgver = 3.8.0
 	pkgdesc = The ProtonVPN NM (NetworkManager) Library is intended for every ProtonVPN service user
+	arch = any
 	depends = python3
 	depends = network-manager
 	depends = network-manager-openvpn

@@ -2,6 +2,7 @@ pkgbase = papirus-icon-theme
 	gives = papirus-icon-theme
 	pkgver = 20231201
 	pkgdesc = Papirus icon theme
+	arch = all
 	depends = gtk-update-icon-cache
 	makedepends = make
 	breaks = papirus-icon-theme

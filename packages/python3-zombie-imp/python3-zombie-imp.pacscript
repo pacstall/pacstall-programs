@@ -1,5 +1,6 @@
 _name="zombie-imp"
 pkgname=python3-"${_name}"
+arch=("any")
 pkgver=0.0.2
 pkgdesc='A copy of the imp module that was removed in Python 3.12'
 url="https://github.com/encukou/${_name}"

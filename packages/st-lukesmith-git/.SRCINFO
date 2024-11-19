@@ -1,6 +1,7 @@
 pkgbase = st-lukesmith-git
 	gives = st
 	pkgver = 0.0.1
+	arch = any
 	depends = fontconfig
 	makedepends = make
 	makedepends = libharfbuzz-bin

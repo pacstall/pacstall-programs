@@ -2,6 +2,7 @@ pkgbase = microsoft-prod-repo-deb
 	gives = packages-microsoft-prod
 	pkgver = 22.04
 	pkgdesc = Apt repo configuration for packages.microsoft.com
+	arch = amd64
 	breaks = packages-microsoft-prod
 	maintainer = echometerain <echometer@disroot.org>
 	source = https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb

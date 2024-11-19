@@ -1,4 +1,5 @@
 pkgname="distrobox"
+arch=("amd64")
 pkgver="1.8.0"
 pkgdesc="Use any linux distribution inside your terminal"
 repology=("project: distrobox")

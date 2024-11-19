@@ -2,6 +2,7 @@ pkgbase = treefetch-bin
 	gives = treefetch
 	pkgver = 2.0.0
 	pkgdesc = A lightning-fast system fetch tool made with Rust
+	arch = amd64
 	breaks = treefetch
 	breaks = treefetch-git
 	breaks = treefetch-deb

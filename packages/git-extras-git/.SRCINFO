@@ -2,6 +2,7 @@ pkgbase = git-extras-git
 	gives = git-extras
 	pkgver = 7.0.0
 	pkgdesc = GIT utilities -- repo summary, repl, changelog population, author commit percentages and more
+	arch = all
 	depends = git
 	depends = bsdmainutils
 	breaks = git-extras-bin

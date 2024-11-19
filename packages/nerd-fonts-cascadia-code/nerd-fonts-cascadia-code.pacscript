@@ -1,4 +1,5 @@
 pkgname="nerd-fonts-cascadia-code"
+arch=("all")
 pkgver="3.1.1"
 repology=("project: fonts:nerd-fonts")
 replaces=("${pkgname}")

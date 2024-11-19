@@ -10,8 +10,8 @@ maintainer=(
 )
 incompatible=('debian:bullseye')
 arch=("amd64" "arm64")
-pkgver="130.0.1-1"
+pkgver="132.0.1-1"
 source_amd64=("https://repo.librewolf.net/pool/${gives}-${pkgver}-linux-x86_64-deb.deb")
-sha256sums_amd64=("bfefd455dafea1d8629f668f272bd56bdf285079ff5cad814b25066837d4f8c6")
+sha256sums_amd64=("28c4b3eef308bbf81ed684a501eed275e4ae8f0893f6a2088db6c0ba62a6462b")
 source_arm64=("https://repo.librewolf.net/pool/${gives}-${pkgver}-linux-arm64-deb.deb")
-sha256sums_arm64=("7c09cbb32f7a368e9cd3ca7ca8e734a94505f84c2d2e42477eca39998fbcca9f")
+sha256sums_arm64=("eb782e88236ff7bc739d6dab7c474935a34c3981d2bda27cc351a8c1cf555fc3")

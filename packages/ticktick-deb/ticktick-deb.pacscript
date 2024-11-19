@@ -1,6 +1,7 @@
 pkgname="ticktick-deb"
 gives="ticktick"
 repology=("project: ticktick" "repo: aur")
+arch=("amd64" "arm64")
 pkgver="2.0.20"
 replaces=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")

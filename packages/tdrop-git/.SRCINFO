@@ -3,6 +3,7 @@ pkgbase = tdrop-git
 	pkgver = 0.5.0
 	pkgdesc = A Glorified WM-Independent Dropdown Creator
 	url = https://github.com/noctuid/tdrop
+	arch = any
 	depends = xdotool
 	depends = bash
 	depends = gawk

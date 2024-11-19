@@ -10,6 +10,7 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="neovide-bin"
 gives="neovide"
+arch=("amd64")
 pkgver="0.12.2"
 pkgrel="2"
 pkgdesc="No nonsense neovim client in Rust"

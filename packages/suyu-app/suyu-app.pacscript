@@ -1,5 +1,6 @@
 pkgname="suyu-app"
 gives="suyu"
+arch=("amd64")
 pkgver="0.0.3"
 pkgdesc="Continuation of yuzu, the world's most popular, open-source, Nintendo Switch emulator"
 url='https://suyu.dev'

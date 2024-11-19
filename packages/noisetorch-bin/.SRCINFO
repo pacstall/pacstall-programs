@@ -2,6 +2,7 @@ pkgbase = noisetorch-bin
 	gives = noisetorch
 	pkgver = 0.12.2
 	pkgdesc = Easy to use noise suppression for PulseAudio
+	arch = amd64
 	depends = policykit-1
 	breaks = noisetorch
 	breaks = noisetorch-deb

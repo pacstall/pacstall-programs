@@ -1,6 +1,7 @@
 pkgname="zsh-history-substring-search-git"
 gives="zsh-history-substring-search"
 source=("https://github.com/zsh-users/zsh-history-substring-search.git")
+arch=("all")
 pkgver="1.1.0"
 depends=("zsh")
 breaks=("${gives}")

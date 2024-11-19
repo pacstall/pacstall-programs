@@ -1,5 +1,6 @@
 pkgname="xfce4-deb"
 gives="xfce4"
+arch=("all")
 pkgver="4.18"
 source=("http://ftp.de.debian.org/debian/pool/main/x/${gives}/${gives}_${pkgver}_all.deb")
 pkgdesc="XFCE4 Desktop"

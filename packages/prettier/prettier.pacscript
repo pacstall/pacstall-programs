@@ -1,4 +1,5 @@
 pkgname="prettier"
+arch=("all")
 pkgver="3.3.3"
 pkgdesc="An opinionated code formatter"
 url='https://prettier.io'

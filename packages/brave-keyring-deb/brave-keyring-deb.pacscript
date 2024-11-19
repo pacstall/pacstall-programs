@@ -1,5 +1,6 @@
 pkgname="brave-keyring-deb"
 gives="brave-keyring"
+arch=("all")
 pkgver="1.17"
 source=("https://brave-browser-apt-release.s3.brave.com/pool/main/b/${gives}/${gives}_${pkgver}-1.deb")
 pkgdesc="Brave Browser keyring and repository files as a necessary dependency for brave-browser-deb"

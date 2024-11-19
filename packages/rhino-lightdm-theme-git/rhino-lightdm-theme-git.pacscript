@@ -3,6 +3,7 @@ gives="rhino-lightdm-theme"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Rhino Linux Lightdm theme"
 source=("https://github.com/rhino-linux/lightdm.git")
+arch=("all")
 pkgver="0.0.1"
 
 package() {

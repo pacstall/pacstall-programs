@@ -1,4 +1,5 @@
 pkgname="yabridge"
+arch=("any")
 pkgver="5.0.5"
 source=("https://github.com/robbert-vdh/yabridge/releases/download/${pkgver}/yabridge-${pkgver}.tar.gz")
 pkgdesc="A modern and transparent way to use Windows VST2 and VST3 plugins on Linux."

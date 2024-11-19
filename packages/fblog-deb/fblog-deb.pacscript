@@ -1,5 +1,6 @@
 pkgname="fblog-deb"
 gives="fblog"
+arch=("amd64")
 pkgver="2.3.0"
 source=("https://github.com/brocode/fblog/releases/download/v${pkgver}/fblog.deb")
 pkgdesc="Small command-line JSON Log viewer"

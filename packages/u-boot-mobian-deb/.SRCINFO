@@ -2,6 +2,7 @@ pkgbase = u-boot-mobian-deb
 	gives = u-boot-menu
 	pkgver = 4.2.2mobian1
 	pkgdesc = Deb packaging for u-boot-menu with Mobian patches
+	arch = all
 	replaces = u-boot-menu
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: u-boot-menu

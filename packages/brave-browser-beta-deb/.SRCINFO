@@ -3,6 +3,7 @@ pkgbase = brave-browser-beta-deb
 	pkgver = 1.67.101
 	pkgdesc = Testing version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
+	arch = amd64
 	pacdeps = brave-keyring-deb
 	breaks = brave-browser-beta-bin
 	breaks = brave-browser-beta-git

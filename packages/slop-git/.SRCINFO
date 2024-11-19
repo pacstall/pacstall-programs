@@ -2,6 +2,7 @@ pkgbase = slop-git
 	gives = slop
 	pkgver = 7.6
 	pkgdesc = Queries for a selection from the user and prints the region to stdout
+	arch = any
 	depends = libglew-dev
 	depends = libxext-dev
 	makedepends = cmake

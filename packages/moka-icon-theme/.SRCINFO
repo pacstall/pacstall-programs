@@ -1,6 +1,7 @@
 pkgbase = moka-icon-theme
 	pkgver = 5.4.0
 	pkgdesc = Moka is a stylized FreeDesktop icon set, created with simplicity in mind.
+	arch = any
 	makedepends = meson
 	makedepends = ninja-build
 	maintainer = aranym <aranym1@pm.me>

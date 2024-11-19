@@ -2,6 +2,7 @@ pkgbase = polybar
 	gives = polybar
 	pkgver = 3.7.1
 	pkgdesc = Polybar aims to help users build beautiful and highly customizable status bars for their desktop environment, without the need of having a black belt in shell scripting
+	arch = any
 	makedepends = cmake
 	makedepends = cmake-data
 	makedepends = pkg-config

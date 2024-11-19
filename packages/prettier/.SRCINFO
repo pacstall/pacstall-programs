@@ -2,6 +2,7 @@ pkgbase = prettier
 	pkgver = 3.3.3
 	pkgdesc = An opinionated code formatter
 	url = https://prettier.io
+	arch = all
 	depends = nodejs
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: prettier

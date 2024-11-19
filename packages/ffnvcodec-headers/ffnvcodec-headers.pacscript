@@ -1,5 +1,6 @@
 pkgname="ffnvcodec-headers"
 gives="ffnvcodec-headers"
+arch=("all")
 pkgver="12.2.72.0"
 url='https://git.videolan.org/git/ffmpeg/nv-codec-headers.git'
 pkgdesc="FFmpeg version of headers required to interface with Nvidias codec APIs"

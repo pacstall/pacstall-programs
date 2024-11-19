@@ -1,6 +1,7 @@
 pkgname="minecraft-launcher-deb"
 gives="minecraft-launcher"
 repology=("project: ${gives}")
+arch=("amd64")
 pkgver="1121"
 breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
 source=("https://launcher.mojang.com/download/Minecraft.deb")

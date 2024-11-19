@@ -1,6 +1,7 @@
 pkgname="makedeb-deb"
 gives="makedeb"
 breaks=("${gives}" "${gives}-git")
+arch=("all")
 pkgver="16.0.0"
 repology=("project: ${gives}")
 source=("https://proget.makedeb.org/debian-feeds/makedeb/main/makedeb/all/makedeb_all_${pkgver}-stable.deb")

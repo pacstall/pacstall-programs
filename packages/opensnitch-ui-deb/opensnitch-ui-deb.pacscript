@@ -1,4 +1,5 @@
 pkgname="opensnitch-ui-deb"
+arch=("all")
 pkgver="1.6.6"
 source=("https://github.com/evilsocket/opensnitch/releases/download/v${pkgver}/python3-opensnitch-ui_${pkgver}-1_all.deb")
 gives="python3-opensnitch-ui"

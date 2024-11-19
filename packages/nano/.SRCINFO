@@ -1,6 +1,7 @@
 pkgbase = nano
 	pkgver = 7.2
 	pkgdesc = Free replacement for the Pico text editor
+	arch = any
 	makedepends = libncurses-dev
 	makedepends = groff
 	makedepends = autoconf
