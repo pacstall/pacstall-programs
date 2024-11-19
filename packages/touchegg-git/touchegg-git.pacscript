@@ -9,14 +9,14 @@ pkgdesc="Touchégg is an app that runs in the background and transform the gestu
 maintainer=("Zahrun <Zahrun@github.com>")
 
 build() {
-  cd "${_archive}"
+  cd "touchegg"
   mkdir build && cd build
   cmake -DCMAKE_BUILD_TYPE=Release ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "touchegg"
   make install DESTDIR="${pkgdir}"
   cd "${pkgdir}"
   mv usr/local/etc .
