@@ -1,5 +1,6 @@
 pkgname="rpcs3-app"
 gives="rpcs3"
+arch=("amd64")
 pkgver="0.0.29-15709"
 pkgsha="3c93509471f5f2f9d473a4c11682ef83366349d2"
 source=("https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-${pkgsha}/rpcs3-v${pkgver}-${pkgsha:0:8}_linux64.AppImage")

@@ -1,5 +1,6 @@
 pkgname="jetbrains-toolbox-bin"
 gives="jetbrains-toolbox"
+arch=("amd64")
 pkgver="1.24.12080"
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 replaces=("${gives}")

@@ -1,5 +1,6 @@
 pkgname="popsicle"
 gives="popsicle"
+arch=("any")
 pkgver="1.3.3"
 source=("https://github.com/pop-os/popsicle/archive/refs/tags/1.3.3.zip")
 license="MIT"

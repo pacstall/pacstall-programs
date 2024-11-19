@@ -1,5 +1,6 @@
 pkgname="amfora-bin"
 gives="amfora"
+arch=("amd64")
 pkgver="1.10.0"
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 pkgdesc="Amfora aims to be the best looking Gemini client with the most features"

@@ -2,6 +2,7 @@ pkgbase = qogir-icon-theme-bin
 	gives = qogir-icon-theme
 	pkgver = 2022-11-05
 	pkgdesc = A colorful design icon theme for linux desktops
+	arch = amd64
 	makedepends = gtk-update-icon-cache
 	breaks = qogir-icon-theme
 	breaks = qogir-icon-theme-git

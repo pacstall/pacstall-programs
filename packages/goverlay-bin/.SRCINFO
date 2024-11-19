@@ -2,6 +2,7 @@ pkgbase = goverlay-bin
 	gives = goverlay
 	pkgver = 1.2.0
 	pkgdesc = Graphical UI to help manage Linux overlays
+	arch = amd64
 	depends = mangohud
 	depends = qt6ct
 	depends = adwaita-qt6

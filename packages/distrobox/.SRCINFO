@@ -2,6 +2,7 @@ pkgbase = distrobox
 	gives = distrobox
 	pkgver = 1.8.0
 	pkgdesc = Use any linux distribution inside your terminal
+	arch = amd64
 	optdepends = docker.io: enable docker usage
 	optdepends = podman: enable podman usage
 	breaks = distrobox

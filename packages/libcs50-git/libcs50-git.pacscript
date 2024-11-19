@@ -1,5 +1,6 @@
 pkgname="libcs50-git"
 gives="libcs50"
+arch=("any")
 pkgver="11.0.3"
 source=("https://github.com/cs50/libcs50.git")
 makedepends=("make")

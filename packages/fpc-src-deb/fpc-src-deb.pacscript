@@ -1,4 +1,5 @@
 pkgname="fpc-src-deb"
+arch=("amd64")
 pkgver="3.2.2"
 gives="fpc-src"
 repology=("project: fpc")

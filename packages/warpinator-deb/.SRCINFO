@@ -2,6 +2,7 @@ pkgbase = warpinator-deb
 	gives = warpinator
 	pkgver = 1.8.3+virginia
 	pkgdesc = A tool to share files across the LAN
+	arch = amd64
 	depends = gir1.2-glib-2.0
 	depends = gir1.2-gtk-3.0
 	depends = gir1.2-xapp-1.0

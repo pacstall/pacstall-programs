@@ -1,6 +1,8 @@
 pkgbase = linux-kernel
 	pkgver = 6.11
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
+	arch = amd64
+	arch = arm64
 	pacdeps = linux-headers-deb
 	pacdeps = linux-headers-generic-deb
 	pacdeps = linux-modules-deb

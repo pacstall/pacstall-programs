@@ -2,6 +2,7 @@ pkgbase = ffmpeg4.4
 	pkgver = 4.4.4
 	pkgdesc = Complete solution to record, convert and stream audio and video
 	url = https://ffmpeg.org/
+	arch = any
 	makedepends = pkg-config
 	makedepends = nasm
 	makedepends = gnutls-dev

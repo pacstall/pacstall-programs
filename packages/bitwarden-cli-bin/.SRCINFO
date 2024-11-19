@@ -2,6 +2,7 @@ pkgbase = bitwarden-cli-bin
 	gives = bitwarden-cli
 	pkgver = 2024.1.0
 	pkgdesc = Bitwarden's command-line interface - Binary
+	arch = amd64
 	breaks = bitwarden-cli-git
 	replaces = bitwarden-cli
 	maintainer = Elsie19 <elsie19@pm.me>

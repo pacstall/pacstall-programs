@@ -21,7 +21,6 @@ apx-git
 ardour-git
 arduino-cli-bin
 arduino-ide-bin
-armcord-deb
 aseprite
 awesome-git
 aws-cli-v2-bin
@@ -191,6 +190,7 @@ google-chrome-unstable-deb
 google-earth-pro-stable-deb
 goverlay
 goverlay-bin
+gpu-screen-recorder
 gradience
 gradience-git
 graillon
@@ -258,6 +258,7 @@ latte-dock-git
 lazarus-project-deb
 lazygit
 lbry-deb
+legcord-deb
 lemonbar-xft-git
 lens
 lf-bin
@@ -289,16 +290,21 @@ lightpad-git
 linked-deb
 linux-headers-deb
 linux-headers-generic-deb
+linux-headers-generic-lts-6.6-deb
 linux-headers-generic-stable-deb
+linux-headers-lts-6.6-deb
 linux-headers-okpine-deb
 linux-headers-stable-deb
 linux-image-okpine-deb
 linux-image-unsigned-deb
+linux-image-unsigned-lts-6.6-deb
 linux-image-unsigned-stable-deb
 linux-kernel
+linux-kernel-lts-6.6
 linux-kernel-stable
 linux-libc-dev-okpine-deb
 linux-modules-deb
+linux-modules-lts-6.6-deb
 linux-modules-stable-deb
 linux-wifi-hotspot-deb
 lix-git
@@ -395,6 +401,7 @@ orchis-kde
 os-installer-git
 osu-lazer-app
 owofetch
+p3x-onenote-app
 pacget-git
 paconvert-git
 pacstall-gui-git
@@ -471,6 +478,7 @@ rhino-plymouth-theme-git
 rhino-server-core
 rhino-setup-bin
 rhino-setup-git
+rhino-stampede-dev
 rhino-system-git
 rhino-ubxi-core
 rhino-xfwm4-theme-git
@@ -481,6 +489,7 @@ rpcs3-app
 rsbbi-git
 rstudio-deb
 rust-bin
+rust-bindgen-git
 rust-motd-deb
 rustdesk-deb
 schildichat-deb
@@ -540,6 +549,7 @@ tgpt-bin
 the-honkers-railway-launcher-bin
 thorium-deb
 thrive-deb
+thunderbird-bin
 ticktick-deb
 tidal-hifi-bin
 timeshift
@@ -565,6 +575,7 @@ u-boot-mobian-deb
 ugee-tablet-driver-deb
 ulauncher-deb
 ungoogled-chromium-deb
+unicons-git
 unicorn-desktop-git
 unicorn-mobile-git
 universal-ctags-git
@@ -614,6 +625,7 @@ xdg-desktop-portal-hyprland
 xdg-ninja-git
 xdg-terminal-exec-git
 xfce4-deb
+xfce4-dynamic-workspaces-plugin-git
 xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
 xmind-vana-deb

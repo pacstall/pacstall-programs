@@ -1,4 +1,5 @@
 pkgname="postman-bin"
+arch=("amd64")
 pkgver="10.18.10"
 pkgdesc="Build, test, and document your APIs faster"
 repology=("project: postman" "visiblename: postman-bin")

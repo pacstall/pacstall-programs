@@ -1,6 +1,6 @@
 pkgname="steam-deb"
 gives="steam-launcher"
-pkgver="1.0.0.79"
+pkgver="1.0.0.81"
 breaks=("${gives}-bin" "${gives}-app")
 replaces=("${gives}")
 source=("https://cdn.cloudflare.steamstatic.com/client/installer/steam.deb")

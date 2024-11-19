@@ -1,0 +1,13 @@
+pkgbase = xfce4-dynamic-workspaces-plugin-git
+	gives = xfce4-dynamic-workspaces-plugin
+	pkgver = 0.0.1
+	pkgdesc = Dynamic workspaces for XFCE, similar to GNOME
+	arch = all
+	depends = python3-gi
+	depends = libwnck-3-0
+	depends = wmctrl
+	depends = gir1.2-notify-0.7
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/DimseBoms/XFCE-Dynamic-Workspace.git
+
+pkgname = xfce4-dynamic-workspaces-plugin-git

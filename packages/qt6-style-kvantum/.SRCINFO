@@ -1,7 +1,8 @@
 pkgbase = qt6-style-kvantum
-	pkgver = 1.1.2
+	pkgver = 1.1.3
 	pkgdesc = Kvantum style engine (binaries, localization and themes)
 	url = https://github.com/tsujan/Kvantum
+	arch = any
 	depends = libc6
 	depends = libgcc-s1
 	depends = libkf6windowsystem6
@@ -30,6 +31,6 @@ pkgbase = qt6-style-kvantum
 	compatible = neon:*
 	license = GPL-3.0-or-later
 	maintainer = bibelin <balian1belin@yandex.ru>
-	source = https://github.com/tsujan/Kvantum/releases/download/V1.1.2/Kvantum-1.1.2.tar.xz
+	source = https://github.com/tsujan/Kvantum/releases/download/V1.1.3/Kvantum-1.1.3.tar.xz
 
 pkgname = qt6-style-kvantum

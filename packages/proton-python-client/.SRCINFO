@@ -1,6 +1,7 @@
 pkgbase = proton-python-client
 	pkgver = 0.7.1
 	pkgdesc = Python Proton client module
+	arch = all
 	makedepends = python3-requests
 	makedepends = python3-setuptools
 	makedepends = python3-bcrypt

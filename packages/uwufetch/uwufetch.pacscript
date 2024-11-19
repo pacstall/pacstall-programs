@@ -7,6 +7,7 @@
 maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="uwufetch"
+arch=("any")
 pkgver="1.7"
 source=("https://github.com/TheDarkBug/${pkgname}/archive/refs/tags/${pkgver}.zip")
 pkgdesc="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."

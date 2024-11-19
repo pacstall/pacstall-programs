@@ -1,6 +1,7 @@
 pkgbase = mint-themes
 	pkgver = 2.1.5
 	pkgdesc = GTK 2, 3, and 4 themes from Linux Mint, for use with Cinammon, MATE, and Xfce.
+	arch = all
 	makedepends = python3
 	makedepends = sassc
 	optdepends = mint-y-icons: Complementary icons for Mint-Y themes.

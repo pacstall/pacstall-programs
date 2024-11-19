@@ -2,6 +2,7 @@ pkgbase = pacget-git
 	gives = pacget
 	pkgver = 0.0.1
 	pkgdesc = A fully foss, lightweight fuzzysearching TUI frontend for pacstall using fzf
+	arch = any
 	depends = fzf
 	depends = curl
 	depends = bash

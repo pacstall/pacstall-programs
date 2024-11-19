@@ -4,6 +4,7 @@ pkgbase = stockfish-git
 	pkgrel = 2
 	pkgdesc = The Stockfish chess engine
 	url = https://stockfishchess.org/
+	arch = any
 	breaks = stockfish-git
 	maintainer = pythoncrazy <pinakpaliwal07@gmail.com>
 	source = https://github.com/official-stockfish/Stockfish.git

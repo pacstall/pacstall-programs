@@ -2,6 +2,7 @@ pkgbase = zsh-history-substring-search-git
 	gives = zsh-history-substring-search
 	pkgver = 1.1.0
 	pkgdesc = ZSH port of Fish history search (up arrow)
+	arch = all
 	depends = zsh
 	breaks = zsh-history-substring-search
 	replaces = zsh-history-substring-search

@@ -1,5 +1,6 @@
 pkgname="amf-headers"
 gives="amf-headers"
+arch=("all")
 pkgver="1.4.34"
 url='https://github.com/GPUOpen-LibrariesAndSDKs/AMF/'
 pkgdesc="Header files for AMD Advanced Media Framework"

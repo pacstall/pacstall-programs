@@ -1,0 +1,13 @@
+pkgbase = linux-modules-lts-6.6-deb
+	gives = linux-modules-6.6.51-060651-generic
+	pkgver = 6.6.51
+	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (modules)
+	arch = arm64
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/arm64/linux-modules-6.6.51-060651-generic_6.6.51-060651.202409121031_arm64.deb
+	sha256sums_arm64 = 137fa692ad93cc62203c506e871d9e1f19c8febb709c5972c6240c1bd8ae1810
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-modules-6.6.51-060651-generic_6.6.51-060651.202409121031_amd64.deb
+	sha256sums_amd64 = e76d998a6ef4e40bfe60eb3494589cb4f5c4457092427697bb97d253a304246f
+
+pkgname = linux-modules-lts-6.6-deb

@@ -2,6 +2,7 @@ pkgbase = warp
 	gives = warp
 	pkgver = 0.6.2
 	pkgdesc = Fast and secure file transfer
+	arch = any
 	depends = libgtk-4-dev
 	depends = gir1.2-appstreamglib-1.0
 	depends = libappstream-glib8

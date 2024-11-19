@@ -1,6 +1,7 @@
 pkgbase = clib
 	pkgver = 2.8.3
 	pkgdesc = C package manager-ish
+	arch = any
 	makedepends = gcc
 	makedepends = libcurl4-gnutls-dev
 	repology = project: clib

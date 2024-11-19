@@ -1,4 +1,5 @@
 pkgname="waf"
+arch=("any")
 pkgver="2.0.24"
 source=("https://gitlab.com/ita1024/waf/-/archive/waf-${pkgver}/waf-waf-${pkgver}.zip")
 pkgdesc="Waf is a Python-based framework for configuring, compiling and installing applications."

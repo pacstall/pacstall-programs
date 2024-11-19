@@ -2,6 +2,7 @@ pkgbase = timeshift
 	pkgver = 23.07.1
 	pkgrel = 2
 	pkgdesc = System restore utility that takes snapshots at regular intervals using rsync or BTRFS.
+	arch = any
 	depends = rsync
 	depends = btrfs-progs
 	makedepends = debhelper

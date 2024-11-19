@@ -2,6 +2,7 @@ pkgbase = lbry-deb
 	gives = lbry
 	pkgver = 0.53.4
 	pkgdesc = A browser and wallet for LBRY, the decentralized, user-controlled content marketplace.
+	arch = amd64
 	breaks = lbry
 	breaks = lbry-bin
 	breaks = lbry-git

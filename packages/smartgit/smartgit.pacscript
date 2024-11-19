@@ -1,4 +1,5 @@
 pkgname="smartgit"
+arch=("any")
 pkgver="22.1.7"
 source=("https://www.syntevo.com/downloads/smartgit/smartgit-linux-${pkgver//./_}.tar.gz")
 depends=("git" "libgtk-3-0" "libcurl4")
