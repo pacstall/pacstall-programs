@@ -9,12 +9,12 @@ depends=("python3")
 maintainer=("KwonNam Son <kwon37xi@gmail.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "youtube-dl"
   git fetch --all --tags --prune
   git checkout "tags/${pkgver}" -b "${pkgver}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "youtube-dl"
   make install PREFIX="${pkgdir}/usr" PYTHON="/usr/bin/env python3"
 }

@@ -10,11 +10,11 @@ external_connection=true
 incompatible=("debian:bullseye")
 
 build() {
-  cd "${_archive}"
+  cd "tre"
   cargo build -j"${NCPU}" --release --locked
 }
 
 package() {
-  cd "${_archive}"
+  cd "tre"
   install -Dm755 target/release/tre -t "${pkgdir}/usr/bin"
 }

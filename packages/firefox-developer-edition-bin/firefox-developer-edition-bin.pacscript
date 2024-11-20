@@ -1,7 +1,7 @@
 pkgname="firefox-developer-edition-bin"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 gives="firefox-developer-edition"
-pkgver="125.0b9"
+pkgver="133.0b8"
 pkgdesc="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
 source=(
   "https://download-installer.cdn.mozilla.net/pub/devedition/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.bz2"
@@ -11,7 +11,7 @@ source=(
 url='https://www.mozilla.org/en-US/firefox/developer/'
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 sha256sums=(
-  "044ecea7ba76658458a4993bdde9f3ee11f728ee80f30814549a0650479918d5"
+  "c86d126c7e6ee621706177f1ee5d52afe894570a485d40abf1fc261e640af8dc"
   "SKIP"
   "SKIP"
 )

@@ -11,13 +11,13 @@ maintainer=("Zahrun <Zahrun@github.com>")
 incompatible=('*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
 
 build() {
-  cd "${_archive}"
+  cd "obs-backgroundremoval"
   cmake --preset linux-x86_64 -DCMAKE_INSTALL_PREFIX=/usr
   cmake --build build_x86_64 --parallel
 }
 
 package() {
-  cd "${_archive}"
+  cd "obs-backgroundremoval"
   cmake --install build_x86_64 --prefix "${pkgdir}"/usr
   install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
