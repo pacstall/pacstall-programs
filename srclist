@@ -12907,7 +12907,7 @@ pkgname = zap
 ---
 pkgbase = zed-editor-preview-bin
 	gives = zed-editor-preview
-	pkgver = 0.162.1
+	pkgver = 0.163.2
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)
 	url = https://zed.dev
 	arch = x86_64
@@ -12917,16 +12917,16 @@ pkgbase = zed-editor-preview-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/preview/0.162.1/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 4395fa55007f4e65323b061d24257046ecc1e938c53efd945b47403b96c7c31a
-	source_aarch64 = https://zed.dev/api/releases/preview/0.162.1/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 27b7a6df6f135e9173c7d8a7f561b9d841a222566fd1af30eade143c82d77b0c
+	source_x86_64 = https://zed.dev/api/releases/preview/0.163.2/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 6bc12fc7a9e5a120659c6189434e8f765205831d31a41afd5759341b1853b765
+	source_aarch64 = https://zed.dev/api/releases/preview/0.163.2/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 8dbbb24ee1aef0b0ed97106ce3b7a5086b20860cf06d7777245c4f83aef69933
 
 pkgname = zed-editor-preview-bin
 ---
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 0.161.2
+	pkgver = 0.162.5
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -12936,10 +12936,10 @@ pkgbase = zed-editor-stable-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/0.161.2/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 3e9cfc95bdbe2e70dcc8b1454f5da4b310647d72a064dad0d24deb98caee9bb4
-	source_aarch64 = https://zed.dev/api/releases/stable/0.161.2/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = ab03b8ce35d3ac53de47b81ea073e01ce0cbe82ff02adad6bc7a47eaf280a901
+	source_x86_64 = https://zed.dev/api/releases/stable/0.162.5/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 484131e63c9887dc0756ba8d91890eebaef8efb38d317f35aa28a91d6b7fc1b9
+	source_aarch64 = https://zed.dev/api/releases/stable/0.162.5/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 507eaced7692a5d7d5cbf6e509d9113fbfa73d4a086c001e577ef1d9e115b553
 
 pkgname = zed-editor-stable-bin
 ---
