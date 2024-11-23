@@ -9,6 +9,7 @@ repology=("project: cortile")
 source=("cortile-${pkgver}::https://github.com/leukipp/cortile/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=("6d5ea7c542093c109cbf0b23866aa154f49b7637d2f02d7d0467c38a4f114b01")
 makedepends=("golang")
+external_connection=true
 
 build() {
     cd "cortile-${pkgver}"
