@@ -23,5 +23,5 @@ build() {
 
 package() {
   cd "cortile-${pkgver}"
-  install -Dm755 "build/$pkgname" "${pkgdir}/usr/bin/${pkgname}"
+  install -Dm755 "$pkgname" "${pkgdir}/usr/bin/${pkgname}"
 }
