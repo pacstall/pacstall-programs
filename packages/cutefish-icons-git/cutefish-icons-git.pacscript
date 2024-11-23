@@ -8,18 +8,18 @@ makedepends=("extra-cmake-modules" "ninja-build")
 pkgdesc="System default icon theme of CutefishOS."
 
 prepare() {
-  cd "${_archive}"
+  cd "icons"
   mkdir build
 }
 
 build() {
-  cd "${_archive}"
+  cd "icons"
   cd build
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "icons"
   make install DESTDIR="${pkgdir}"
 }

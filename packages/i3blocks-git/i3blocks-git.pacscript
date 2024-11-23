@@ -9,17 +9,17 @@ breaks=("${gives}")
 maintainer=("Lanius <laniusone@pm.me>")
 
 prepare() {
-  cd "${_archive}"
+  cd "i3blocks"
   ./autogen.sh && ./configure
 }
 
 build() {
-  cd "${_archive}"
+  cd "i3blocks"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "i3blocks"
   # Install i3blocks
   make install DESTDIR="${pkgdir}"
 }

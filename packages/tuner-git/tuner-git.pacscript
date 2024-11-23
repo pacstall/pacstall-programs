@@ -9,17 +9,17 @@ replaces=("tuner")
 pkgdesc="Tuner Radio Player - development version"
 
 prepare() {
-  cd "${_archive}"
+  cd "tuner"
   meson builddir --prefix=/usr
 }
 
 build() {
-  cd "${_archive}"
+  cd "tuner"
   ninja -C builddir -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "tuner"
   DESTDIR="${pkgdir}" ninja -C builddir install
 }
 

@@ -9,7 +9,7 @@ gives="grapejuice"
 breaks=("grapejuice" "grapejuice-bin" "grapejuice-app" "grapejuice-deb")
 
 package() {
-  cd "${_archive}"
+  cd "grapejuice"
   export PYTHONPATH="${PWD}/src"
   python3 -m grapejuice_packaging linux_package || python -m grapejuice_packaging linux_package
   cd dist/linux_package

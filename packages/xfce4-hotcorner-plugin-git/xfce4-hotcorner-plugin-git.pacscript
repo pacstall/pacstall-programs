@@ -10,11 +10,11 @@ pkgdesc="hotcorners, for XFCE"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "xfce4-hotcorner-plugin"
   ./configure --prefix="${pkgdir}/usr"
 }
 
 package() {
-  cd "${_archive}"
+  cd "xfce4-hotcorner-plugin"
   make install
 }

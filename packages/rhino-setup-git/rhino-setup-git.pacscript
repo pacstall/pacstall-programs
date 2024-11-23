@@ -13,13 +13,13 @@ external_connection=true
 incompatible=("debian:*")
 
 build() {
-  cd "${_archive}"
+  cd "rhino-setup"
   meson build
   mkdir -p "${pkgdir}/etc/skel/.config/autostart"
 }
 
 package() {
-  cd "${_archive}"
+  cd "rhino-setup"
   DESTDIR="${pkgdir}" ninja -C build install
   ln -sf "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${pkgdir}/etc/skel/.config/autostart/rhino-setup.desktop"
 }

@@ -8,11 +8,11 @@ pkgdesc="Paconvert makes converting PKGBUILDS into pacscripts easier."
 maintainer=("cat-master21 <96554164+cat-master21@users.noreply.github.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "paconvert"
   mkdir -p "${pkgdir}/usr/bin"
 }
 
 package() {
-  cd "${_archive}"
+  cd "paconvert"
   install -Dm755 ./paconvert "${pkgdir}/usr/bin/paconvert"
 }

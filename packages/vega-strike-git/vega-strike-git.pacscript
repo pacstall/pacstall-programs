@@ -8,12 +8,12 @@ pacdeps="vega-strike-engine-git"
 maintainer=("echometerain <echometer@disroot.org>")
 
 build() {
-  cd "${_archive}"
+  cd "Assets-Production"
   cmake "./CMakeLists.txt"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "Assets-Production"
   make install DESTDIR="${pkgdir}"
 }

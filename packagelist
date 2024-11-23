@@ -21,7 +21,6 @@ apx-git
 ardour-git
 arduino-cli-bin
 arduino-ide-bin
-armcord-deb
 aseprite
 awesome-git
 aws-cli-v2-bin
@@ -102,6 +101,7 @@ docker-compose-plugin-bin
 dolphin-emu-git
 dotdrop
 drawio-desktop-deb
+dremio-bin
 dropbox-deb
 duf-deb
 dunst
@@ -260,6 +260,7 @@ latte-dock-git
 lazarus-project-deb
 lazygit
 lbry-deb
+legcord-deb
 lemonbar-xft-git
 lens
 lf-bin
@@ -291,17 +292,21 @@ lightpad-git
 linked-deb
 linux-headers-deb
 linux-headers-generic-deb
+linux-headers-generic-lts-6.6-deb
 linux-headers-generic-stable-deb
+linux-headers-lts-6.6-deb
 linux-headers-okpine-deb
 linux-headers-stable-deb
 linux-image-okpine-deb
 linux-image-unsigned-deb
+linux-image-unsigned-lts-6.6-deb
 linux-image-unsigned-stable-deb
 linux-kernel
+linux-kernel-lts-6.6
 linux-kernel-stable
 linux-libc-dev-okpine-deb
-linux-longterm-6.6-modules-deb
 linux-modules-deb
+linux-modules-lts-6.6-deb
 linux-modules-stable-deb
 linux-wifi-hotspot-deb
 lix-git
