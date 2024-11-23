@@ -8,7 +8,8 @@ url='https://github.com/leukipp/cortile'
 repology=("project: cortile")
 source=("cortile-${pkgver}::https://github.com/leukipp/cortile/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=("6d5ea7c542093c109cbf0b23866aa154f49b7637d2f02d7d0467c38a4f114b01")
-makedepends=("golang-1.23" "golang-1.23-go" "golang-1.23-doc" "golang-1.23-src")
+makedepends=("golang")
+incompatible=("debian:bookworm")
 external_connection=true
 
 build() {
