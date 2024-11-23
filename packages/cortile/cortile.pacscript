@@ -12,16 +12,16 @@ makedepends=("golang")
 external_connection=true
 
 build() {
-    cd "cortile-${pkgver}"
-    go build \
-        -trimpath \
-        -buildmode=pie \
-        -mod=readonly \
-        -modcacherw \
-        -ldflags="-X 'main.flags=disable-dbus-interface,disable-release-info'"
+  cd "cortile-${pkgver}"
+  go build \
+    -trimpath \
+    -buildmode=pie \
+    -mod=readonly \
+    -modcacherw \
+    -ldflags="-X 'main.flags=disable-dbus-interface,disable-release-info'"
 }
 
 package() {
-    cd "cortile-${pkgver}"
-    install -Dm755 "build/$pkgname" "${pkgdir}/usr/bin/${pkgname}"
+  cd "cortile-${pkgver}"
+  install -Dm755 "build/$pkgname" "${pkgdir}/usr/bin/${pkgname}"
 }
