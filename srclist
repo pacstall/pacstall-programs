@@ -2522,6 +2522,21 @@ pkgbase = exercism-cli-bin
 
 pkgname = exercism-cli-bin
 ---
+pkgbase = exiftool
+	gives = exiftool
+	pkgver = 13.03
+	pkgrel = 1
+	pkgdesc = A platform-independent Perl library for reading and writing EXIF data
+	url = https://exiftool.org
+	arch = any
+	depends = perl
+	license = GPL-2.0-or-later
+	maintainer = Ishaque <muhammadishaque812@gmail.com>
+	source = https://exiftool.org/Image-ExifTool-13.03.tar.gz
+	sha256sums = 0912e1315318889574f355e5832340632c556a14d30711e94d801085ad0a8e4f
+
+pkgname = exiftool
+---
 pkgbase = exploitdb-git
 	gives = exploitdb
 	pkgver = 2023-08-05
