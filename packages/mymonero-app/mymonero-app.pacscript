@@ -17,7 +17,7 @@ maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: mymonero")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm755 "MyMonero-${pkgver}.AppImage" "${pkgdir}/usr/bin/mymonero"
   install -Dm644 "${srcdir}/MyMonero.png" "${pkgdir}/usr/share/pixmaps/MyMonero.png"
   mkdir -p "${pkgdir}/usr/share/applications/"

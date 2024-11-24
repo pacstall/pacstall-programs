@@ -20,12 +20,12 @@ maintainer=("cat-master21 <96554164+cat-master21@users.noreply.github.com>")
 repology=("project: ${gives}")
 
 prepare() {
-  cd "${_archive}"
+  cd "${srcdir}"
   mkdir -p "${pkgdir}/usr/bin" "${pkgdir}/usr/share/metainfo" "${pkgdir}/usr/share/applications" "${pkgdir}/usr/share/icons/hicolor/256x256/apps"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm644 "minecraft-pi-reborn-client-${pkgver}-amd64.AppImage" "${pkgdir}/usr/bin/minecraft-pi-reborn-client"
   chmod +x "${pkgdir}/usr/bin/minecraft-pi-reborn-client"
   install -Dm644 "${srcdir}/com.thebrokenrail.MCPIRebornClient.desktop" "${pkgdir}/usr/share/applications/com.thebrokenrail.MCPIRebornClient.desktop"

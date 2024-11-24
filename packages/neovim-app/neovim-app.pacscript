@@ -13,7 +13,7 @@ repology=("project: neovim")
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   chmod +x nvim.appimage
   install -Dm755 "nvim.appimage" "${pkgdir}/usr/bin/nvim"
 }
