@@ -32,5 +32,8 @@ package() {
   install -Dm644 "${srcdir}/com.thebrokenrail.MCPIRebornClient.desktop" "${pkgdir}/usr/share/applications/com.thebrokenrail.MCPIRebornClient.desktop"
   install -Dm644 "${srcdir}/com.thebrokenrail.MCPIRebornClient.appdata.xml" "${pkgdir}/usr/share/metainfo/com.thebrokenrail.MCPIRebornClient.appdata.xml"
   install -Dm644 "${srcdir}/icon.png" "${pkgdir}/usr/share/icons/hicolor/256x256/apps/com.thebrokenrail.MCPIRebornClient.png"
+}
+
+post_install() {
   update-desktop-database -q
 }
