@@ -6805,6 +6805,7 @@ pkgbase = minecraft-pi-reborn-app
 	pkgver = 2.5.3
 	pkgdesc = Minecraft Pi edition reborn with new features and for x86 pc.
 	arch = amd64
+	makedepends = desktop-file-utils
 	breaks = minecraft-pi-reborn-git
 	breaks = minecraft-pi-reborn-deb
 	breaks = minecraft-pi-reborn-bin

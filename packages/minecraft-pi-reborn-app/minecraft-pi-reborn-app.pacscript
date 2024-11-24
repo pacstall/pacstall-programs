@@ -3,6 +3,7 @@ gives="minecraft-pi-reborn"
 pkgver="2.5.3"
 breaks=("${gives}-git" "${gives}-deb" "${gives}-bin" "minecraft-pi-reborn-client")
 pkgdesc="Minecraft Pi edition reborn with new features and for x86 pc."
+makedepends=('desktop-file-utils')
 sha256sums=(
   "f00e77a85fbab907af274416fb1c4b78216c1c49a992eeeb54378269a5171156"
   "SKIP"
