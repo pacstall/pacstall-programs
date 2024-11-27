@@ -1,6 +1,7 @@
-pkgname="asdf-vm"
-pkgver="0.14.1"
+pkgname=asdf-vm
+pkgver=0.14.1
 pkgdesc='Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more'
+repology=("project: ${pkgname})
 arch=('any')
 url='https://asdf-vm.com'
 license=('MIT')
