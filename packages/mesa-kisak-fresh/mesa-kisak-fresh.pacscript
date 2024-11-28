@@ -1,6 +1,6 @@
 pkgname="mesa-kisak-fresh"
 gives="mesa-kisak-fresh"
-pkgver="24.2.2"
+pkgver="24.3.0"
 pkgdesc="Mesa Fresh from Kisak PPA Sources - No opencl"
 arch=('amd64')
 url='https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa'
