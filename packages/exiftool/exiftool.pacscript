@@ -1,4 +1,3 @@
-name="exiftool"
 pkgname="exiftool"
 pkgver="13.03"
 pkgdesc="Platform-independent Perl library for reading and writing EXIF data"
