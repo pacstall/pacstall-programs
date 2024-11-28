@@ -1,7 +1,7 @@
 name="exiftool"
 pkgname="exiftool"
 pkgver="13.03"
-pkgdesc="A platform-independent Perl library for reading and writing EXIF data"
+pkgdesc="Platform-independent Perl library for reading and writing EXIF data"
 maintainer=("Ishaque <muhammadishaque812@gmail.com>")
 url="https://exiftool.org"
 arch=('any')
