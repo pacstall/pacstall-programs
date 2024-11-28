@@ -4,7 +4,7 @@ pkgbase = nowpm
 	arch = any
 	depends = wdiff
 	breaks = foo
-	source = https://github.com/jnats/nowpm/archive/refs/tags/v1.0.zip
+	source = @nowpm~1.0::https://github.com/jnats/nowpm/archive/refs/tags/v1.0.zip
 	sha256sums = 293e22e3ccdffd3e5db70ff025f66369d6550a1ea7fc18af538bc8d83f91b790
 
 pkgname = nowpm

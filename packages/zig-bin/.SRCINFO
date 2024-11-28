@@ -6,9 +6,9 @@ pkgbase = zig-bin
 	arch = arm64
 	maintainer = Andrew Barchuk <andrew@raindev.io>
 	repology = project: zig
-	source_amd64 = https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz
+	source_amd64 = @zig-bin~0.13.0::https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz
 	sha256sums_amd64 = d45312e61ebcc48032b77bc4cf7fd6915c11fa16e4aad116b66c9468211230ea
-	source_arm64 = https://ziglang.org/download/0.13.0/zig-linux-aarch64-0.13.0.tar.xz
+	source_arm64 = @zig-bin~0.13.0::https://ziglang.org/download/0.13.0/zig-linux-aarch64-0.13.0.tar.xz
 	sha256sums_arm64 = 041ac42323837eb5624068acd8b00cd5777dac4cf91179e8dad7a7e90dd0c556
 
 pkgname = zig-bin

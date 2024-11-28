@@ -12,16 +12,16 @@ optdepends=(
 )
 maintainer=("Eric Renfro <psi-jack@linux-help.org>")
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/r-c-f/waynergy/archive/refs/tags/v${pkgver}.tar.gz")
+source=("${pkgname}-${pkgver}.tar.gz@${pkgname}~${pkgver}::https://github.com/r-c-f/waynergy/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=("b8b2d12588cabfe161ce21a5cd898f06bdfd55c0106ecd4a26c8628aafeff990")
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   meson build --prefix="/usr"
   ninja -C build -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   DESTDIR="${pkgdir}" ninja -C build install
   install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }

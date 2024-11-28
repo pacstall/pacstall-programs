@@ -1,7 +1,7 @@
 pkgname="pap"
 arch=("any")
 pkgver="0.15.0"
-source=("https://github.com/talwat/pap/archive/v${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/talwat/pap/archive/v${pkgver}.tar.gz")
 pkgdesc="Swiss army knife for minecraft servers"
 maintainer=("Talwat <talwat321@gmail.com>")
 makedepends=("golang-go")
@@ -10,11 +10,11 @@ incompatible=('debian:bullseye')
 repology=("project: ${pkgname}")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make install PREFIX="${pkgdir}/usr"
 }

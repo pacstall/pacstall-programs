@@ -14,7 +14,7 @@ pkgbase = truckersmp-cli
 	breaks = truckersmp-cli-git
 	maintainer = badlydrawnface <bdface@proton.me>
 	repology = project: truckersmp-cli
-	source = https://github.com/truckersmp-cli/truckersmp-cli/archive/refs/tags/0.10.1.tar.gz
+	source = @truckersmp-cli~0.10.1::https://github.com/truckersmp-cli/truckersmp-cli/archive/refs/tags/0.10.1.tar.gz
 	sha256sums = 3f5e0289d06d5bdc39f86879283c7184adaa60eb06a3b4e481095da816121c16
 
 pkgname = truckersmp-cli

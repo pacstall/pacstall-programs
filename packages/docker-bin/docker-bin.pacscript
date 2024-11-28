@@ -11,17 +11,17 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('arm64' 'amd64')
 sha256sums_arm64=("4da6a6c7502b7ab561675a5ff5ac192d9b49d76d0b8847cf17ade246122279f4")
 sha256sums_amd64=("9b4f6fe406e50f9085ee474c451e2bb5adb119a03591f467922d3b4e2ddf31d3")
-source_amd64=("https://download.docker.com/linux/static/stable/x86_64/${gives}-${pkgver}.tgz")
-source_arm64=("https://download.docker.com/linux/static/stable/aarch64/${gives}-${pkgver}.tgz")
+source_amd64=("@${pkgname}~${pkgver}::https://download.docker.com/linux/static/stable/x86_64/${gives}-${pkgver}.tgz")
+source_arm64=("@${pkgname}~${pkgver}::https://download.docker.com/linux/static/stable/aarch64/${gives}-${pkgver}.tgz")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   mkdir -p "${pkgdir}/usr/bin"
   mkdir -p "${pkgdir}/lib/systemd/system"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   cp -r "../${gives}"/* -t "${pkgdir}/usr/bin"
   # shellcheck disable=SC2016
   echo '[Unit]

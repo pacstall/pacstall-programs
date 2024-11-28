@@ -27,7 +27,7 @@ pkgbase = pipewire
 	makedepends = python3-pip
 	incompatible = debian:stable
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.65/pipewire-0.3.65.zip
+	source = @pipewire~0.3.65::https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/0.3.65/pipewire-0.3.65.zip
 	sha256sums = f5fbe0028b56a9e9cc6c9fbb4e3e73d108bb818895f6fed3cd62d1a1b6fc4c30
 
 pkgname = pipewire

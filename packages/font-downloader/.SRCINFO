@@ -10,7 +10,7 @@ pkgbase = font-downloader
 	makedepends = gettext
 	maintainer = সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>
 	repology = project: fontdownloader
-	source = https://github.com/GustavoPeredo/Font-Downloader/archive/refs/tags/v10.0.0.zip
+	source = @font-downloader~10.0.0::https://github.com/GustavoPeredo/Font-Downloader/archive/refs/tags/v10.0.0.zip
 	sha256sums = eeafd4ac9cb0d47fd0c1512e07805d0f7a639cdbbc688647249eaee8d1753e23
 
 pkgname = font-downloader

@@ -5,7 +5,7 @@ arch=("amd64")
 maintainer=("ObsidianPresidium <emil@aarestrup.nu>" "James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 source=(
-  "https://download.jetbrains.com/python/pycharm-community-${pkgver}.tar.gz"
+  "@${pkgname}~${pkgver}::https://download.jetbrains.com/python/pycharm-community-${pkgver}.tar.gz"
   "pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/pycharm.desktop"
 )
 sha256sums=(
@@ -15,7 +15,7 @@ sha256sums=(
 repology=("project: pycharm")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   mkdir -p "${pkgdir}/usr/share/licenses/pycharm"
   mkdir -p "${pkgdir}/usr/share/pycharm"
   mkdir -p "${pkgdir}/usr/share/pixmaps"

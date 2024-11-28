@@ -12,7 +12,7 @@ pkgdesc="Android virtual devices"
 maintainer=("Arrowsome <ramtintoosi@gmail.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "${srcdir}"
   rm -rf "/opt/${gives}"
   mkdir -p "${pkgdir}/opt/${gives}"
 
@@ -20,7 +20,7 @@ prepare() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Retrieve line number where tar.bzip2 binary begins
   local skip
   skip=$(awk "/^__TARFILE_FOLLOWS__/ { print NR + 1; exit 0; }" "./${gives}-${pkgver}-linux_x64.bin")
