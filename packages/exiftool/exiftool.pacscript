@@ -23,6 +23,5 @@ package() {
   make DESTDIR="${pkgdir}" install
 
   # Install documentation
-  install -Dm644 README "${pkgdir}/usr/share/doc/${name}/README"
-  install -Dm644 Changes "${pkgdir}/usr/share/doc/${name}/Changes"
+  install -Dm644 README Changes -t "${pkgdir}/usr/share/doc/${pkgname}"
 }
