@@ -5,7 +5,7 @@ pkgdesc="A platform-independent Perl library for reading and writing EXIF data"
 maintainer=("Ishaque <muhammadishaque812@gmail.com>")
 url="https://exiftool.org"
 arch=('any')
-license="GPL-2.0-or-later"
+license=("GPL-2.0-or-later")
 depends=('perl')
 gives="exiftool"
 
