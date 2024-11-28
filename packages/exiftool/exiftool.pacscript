@@ -12,10 +12,6 @@ repology=("project: ${gives}")
 source=("https://exiftool.org/Image-ExifTool-${pkgver}.tar.gz")
 sha256sums=('0912e1315318889574f355e5832340632c556a14d30711e94d801085ad0a8e4f')
 
-prepare() {
-  cd "Image-ExifTool-${pkgver}"
-}
-
 build() {
   cd "Image-ExifTool-${pkgver}"
   perl Makefile.PL
