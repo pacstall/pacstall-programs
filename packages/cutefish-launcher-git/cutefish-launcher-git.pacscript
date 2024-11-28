@@ -9,18 +9,18 @@ depends=("fishui" "libcutefish" "libkf5windowsystem-dev")
 pkgdesc="CutefishOS's full-screen application launcher"
 
 prepare() {
-  cd "${_archive}"
+  cd "launcher"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "launcher"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "launcher"
   make install DESTDIR="${pkgdir}"
 }

@@ -8,21 +8,21 @@ makedepends=("gcc" "make" "pkg-config" "autoconf" "automake" "python3-docutils" 
 maintainer=("KwonNam Son <kwon37xi@gmail.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "ctags"
   git fetch --all --tags --prune
   git checkout "tags/${pkgver}" -b "${pkgver}"
   ./autogen.sh
 }
 
 build() {
-  cd "${_archive}"
+  cd "ctags"
   ./configure --prefix="${pkgdir}/usr" --program-transform-name='s/ctags/ctags-universal/'
   make -j"${NCPU}"
 
 }
 
 package() {
-  cd "${_archive}"
+  cd "ctags"
   make install
 }
 

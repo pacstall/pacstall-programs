@@ -11,13 +11,13 @@ pkgdesc="A simple but fast and out of the box configuration of zsh powered by oh
 maintainer=("Zahrun <Zahrun@github.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "easy-zsh-config"
   sed -i s:/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh:/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh:g easy-zsh-config
   sed -i s:/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh:/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh:g easy-zsh-config
 }
 
 package() {
-  cd "${_archive}"
+  cd "easy-zsh-config"
   install -Dm644 zshrc "${pkgdir}/etc/zsh/zshrc-easy-zsh-config"
   install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}/"
   install -Dm644 easy-zsh-config "${pkgdir}/usr/share/zsh/easy-zsh-config"

@@ -12,7 +12,7 @@ external_connection=true
 incompatible=('*:bullseye' '*:bookworm')
 
 prepare() {
-  cd "${_archive}"
+  cd "apx"
   sed -i "s;/usr/share/apx/distrobox/distrobox;/usr/bin/distrobox;" config/apx.json
   sed -i "/distrobox/d" Makefile
   sed -i "s|install: build|install:|" Makefile
@@ -20,12 +20,12 @@ prepare() {
 }
 
 build() {
-  cd "${_archive}"
+  cd "apx"
   export PATH=/usr/lib/go-1.22/bin:${PATH}
   make build
 }
 
 package() {
-  cd "${_archive}"
+  cd "apx"
   make install{,-manpages} DESTDIR="${pkgdir}"
 }

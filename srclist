@@ -67,7 +67,7 @@ pkgbase = adw-gtk3
 pkgname = adw-gtk3
 ---
 pkgbase = alacritty
-	pkgver = 0.13.2
+	pkgver = 0.14.0
 	pkgdesc = A fast, cross-platform, OpenGL terminal emulator
 	arch = any
 	makedepends = cargo
@@ -83,8 +83,8 @@ pkgbase = alacritty
 	incompatible = debian:bookworm
 	maintainer = Warofzen <warofzen1@protonmail.com>
 	repology = project: alacritty
-	source = https://github.com/alacritty/alacritty/archive/refs/tags/v0.13.2.tar.gz
-	sha256sums = e9a54aabc92bbdc25ab1659c2e5a1e9b76f27d101342c8219cc98a730fd46d90
+	source = https://github.com/alacritty/alacritty/archive/refs/tags/v0.14.0.tar.gz
+	sha256sums = 2919767177c010339502085b4ac5d3f9f15ca27e6befc39aa9d20fefb93ebcdf
 
 pkgname = alacritty
 ---
@@ -989,7 +989,7 @@ pkgname = bpytop-git
 ---
 pkgbase = brave-browser-beta-deb
 	gives = brave-browser-beta
-	pkgver = 1.67.101
+	pkgver = 1.74.14
 	pkgdesc = Testing version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1000,14 +1000,14 @@ pkgbase = brave-browser-beta-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-beta-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.67.101/brave-browser-beta_1.67.101_amd64.deb
-	sha256sums = 42c50beec9311de1c82df3a7e0010dc4ceda68b0453014878b616b5a07d9b4c0
+	source = https://github.com/brave/brave-browser/releases/download/v1.74.14/brave-browser-beta_1.74.14_amd64.deb
+	sha256sums = 596b2d56bf6f49d53f48e0897776c3897189fe59b119a72717e6b0453cf121eb
 
 pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.73.89
+	pkgver = 1.73.91
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1019,16 +1019,16 @@ pkgbase = brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.73.89_amd64.deb
-	sha256sums_amd64 = f5ed33312e6471331dc64befab6e3c9190d0a41cff1dfe0e314759e258260d5f
-	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.73.89_arm64.deb
-	sha256sums_arm64 = aa958abb486616cf0b5e44abadc48ea52f41b2090ed563ce22da4f73f22704b6
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.73.91_amd64.deb
+	sha256sums_amd64 = 434bccf4246e465f46f8bd06fb53d3fc75d7166d2a4fe8fa0ddba88cfc23aad2
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.73.91_arm64.deb
+	sha256sums_arm64 = ab505be38253e89fca5f9cc07e9847e36b38d59c95921525ca999deb81bed5bb
 
 pkgname = brave-browser-deb
 ---
 pkgbase = brave-browser-nightly-deb
 	gives = brave-browser-nightly
-	pkgver = 1.75.32
+	pkgver = 1.75.56
 	pkgdesc = The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel
 	url = https://brave.com/
 	arch = amd64
@@ -1040,8 +1040,8 @@ pkgbase = brave-browser-nightly-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-nightly-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.75.32/brave-browser-nightly_1.75.32_amd64.deb
-	sha256sums = 2ed6e6523054fbcf46c2d04546be401e6413fa5e3e1901ebb8114756af84b3e0
+	source = https://github.com/brave/brave-browser/releases/download/v1.75.56/brave-browser-nightly_1.75.56_amd64.deb
+	sha256sums = 86c5cb0d7f8a7c6644cb7dd15e61f45b05d8f3801001c59753bfc65dd865688e
 
 pkgname = brave-browser-nightly-deb
 ---
@@ -2143,6 +2143,19 @@ pkgbase = drawio-desktop-deb
 	sha256sums = 372fd820d93a30068029a5a809bc81080ee7674b41ac81a4cc8311dec3f065fb
 
 pkgname = drawio-desktop-deb
+---
+pkgbase = dremio-bin
+	gives = dremio
+	pkgver = 4.9.1
+	pkgdesc = Dremio: Data Lakehouse Platform Powered by Apache Iceberg
+	url = https://www.dremio.com/
+	arch = amd64
+	depends = openjdk-8-jdk
+	maintainer = Luca Fabbian <luca.fabbian.1999@gmail.com>
+	source = https://download.dremio.com/community-server/4.9.1-202010230218060541-2e764ed0/dremio-community-4.9.1-202010230218060541-2e764ed0.tar.gz
+	sha256sums = ccd0ac89c9d3dc13eee8eba0f3f489b3f9efc7a897c1c550d919fcc294c749f9
+
+pkgname = dremio-bin
 ---
 pkgbase = dropbox-deb
 	gives = dropbox
@@ -3720,7 +3733,7 @@ pkgbase = goverlay
 pkgname = goverlay
 ---
 pkgbase = gpu-screen-recorder
-	pkgver = 4.3.1
+	pkgver = 4.3.2
 	pkgdesc = A shadowplay-like screen recorder for Linux
 	url = https://git.dec05eba.com/gpu-screen-recorder/about
 	arch = amd64
@@ -3766,8 +3779,8 @@ pkgbase = gpu-screen-recorder
 	license = GPL-3.0-only
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: gpu-screen-recorder
-	source = https://dec05eba.com/snapshot/gpu-screen-recorder.git.4.3.1.tar.gz
-	sha256sums = ea9ebb1c1b4dcee8d9675ed2ce574515997326664db3be66e77f9781e3cccb46
+	source = https://dec05eba.com/snapshot/gpu-screen-recorder.git.4.3.2.tar.gz
+	sha256sums = 3519432beedd220d84c7e249dc9c6e7b7af1c941b912bc5236a19325cac9375f
 	depends_focal = libavcodec58
 	depends_focal = libavutil56
 	depends_focal = libavformat58
@@ -6948,6 +6961,7 @@ pkgbase = minecraft-pi-reborn-app
 	pkgver = 2.5.3
 	pkgdesc = Minecraft Pi edition reborn with new features and for x86 pc.
 	arch = amd64
+	makedepends = desktop-file-utils
 	breaks = minecraft-pi-reborn-git
 	breaks = minecraft-pi-reborn-deb
 	breaks = minecraft-pi-reborn-bin
@@ -7046,12 +7060,13 @@ pkgname = modprobed-db
 ---
 pkgbase = moka-icon-theme
 	pkgver = 5.4.0
+	pkgrel = 2
 	pkgdesc = Moka is a stylized FreeDesktop icon set, created with simplicity in mind.
 	arch = any
 	makedepends = meson
 	makedepends = ninja-build
 	maintainer = aranym <aranym1@pm.me>
-	source = https://codeload.github.com/snwh/moka-icon-theme/tar.gz/refs/tags/v5.4.0
+	source = https://github.com/snwh/moka-icon-theme/archive/refs/tags/v5.4.0.tar.gz
 	sha256sums = b32e82aea4358e087620e852aa20042e791aa957a93de568da1d2223a46c7cd9
 
 pkgname = moka-icon-theme
@@ -8416,7 +8431,7 @@ pkgbase = pgmigrate
 pkgname = pgmigrate
 ---
 pkgbase = picom
-	pkgver = 12.3
+	pkgver = 12.5
 	pkgdesc = A lightweight compositor for X11
 	url = https://github.com/yshui/picom
 	arch = any
@@ -8477,8 +8492,8 @@ pkgbase = picom
 	replaces = picom
 	maintainer = vigress8 <vig@disroot.org>
 	repology = project: picom
-	source = https://github.com/yshui/picom/archive/refs/tags/v12.3.tar.gz
-	sha256sums = 926142c667c9e5b5205a11b2755fb9ca39c3e696365792d705a45d84e34d7a68
+	source = https://github.com/yshui/picom/archive/refs/tags/v12.5.tar.gz
+	sha256sums = 627fa5d7c590df3ba8d2c41eb35d3859f7826bd28fa49e92a0e04fb60ed77904
 
 pkgname = picom
 ---
@@ -13050,7 +13065,7 @@ pkgname = zap
 ---
 pkgbase = zed-editor-preview-bin
 	gives = zed-editor-preview
-	pkgver = 0.162.1
+	pkgver = 0.163.2
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter (Preview release)
 	url = https://zed.dev
 	arch = x86_64
@@ -13060,16 +13075,16 @@ pkgbase = zed-editor-preview-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/preview/0.162.1/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 4395fa55007f4e65323b061d24257046ecc1e938c53efd945b47403b96c7c31a
-	source_aarch64 = https://zed.dev/api/releases/preview/0.162.1/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 27b7a6df6f135e9173c7d8a7f561b9d841a222566fd1af30eade143c82d77b0c
+	source_x86_64 = https://zed.dev/api/releases/preview/0.163.2/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 6bc12fc7a9e5a120659c6189434e8f765205831d31a41afd5759341b1853b765
+	source_aarch64 = https://zed.dev/api/releases/preview/0.163.2/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 8dbbb24ee1aef0b0ed97106ce3b7a5086b20860cf06d7777245c4f83aef69933
 
 pkgname = zed-editor-preview-bin
 ---
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 0.161.2
+	pkgver = 0.162.5
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -13079,10 +13094,10 @@ pkgbase = zed-editor-stable-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/0.161.2/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 3e9cfc95bdbe2e70dcc8b1454f5da4b310647d72a064dad0d24deb98caee9bb4
-	source_aarch64 = https://zed.dev/api/releases/stable/0.161.2/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = ab03b8ce35d3ac53de47b81ea073e01ce0cbe82ff02adad6bc7a47eaf280a901
+	source_x86_64 = https://zed.dev/api/releases/stable/0.162.5/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 484131e63c9887dc0756ba8d91890eebaef8efb38d317f35aa28a91d6b7fc1b9
+	source_aarch64 = https://zed.dev/api/releases/stable/0.162.5/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 507eaced7692a5d7d5cbf6e509d9113fbfa73d4a086c001e577ef1d9e115b553
 
 pkgname = zed-editor-stable-bin
 ---
@@ -13198,17 +13213,17 @@ pkgbase = zettlr-deb
 pkgname = zettlr-deb
 ---
 pkgbase = zig-bin
-	pkgver = 0.12.0
+	pkgver = 0.13.0
 	pkgdesc = General-purpose programming language and toolchain for maintaining robust, optimal and reusable software
 	url = https://ziglang.org/
 	arch = amd64
 	arch = arm64
 	maintainer = Andrew Barchuk <andrew@raindev.io>
 	repology = project: zig
-	source_amd64 = https://ziglang.org/download/0.12.0/zig-linux-x86_64-0.12.0.tar.xz
-	sha256sums_amd64 = c7ae866b8a76a568e2d5cfd31fe89cdb629bdd161fdd5018b29a4a0a17045cad
-	source_arm64 = https://ziglang.org/download/0.12.0/zig-linux-aarch64-0.12.0.tar.xz
-	sha256sums_arm64 = 754f1029484079b7e0ca3b913a0a2f2a6afd5a28990cb224fe8845e72f09de63
+	source_amd64 = https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz
+	sha256sums_amd64 = d45312e61ebcc48032b77bc4cf7fd6915c11fa16e4aad116b66c9468211230ea
+	source_arm64 = https://ziglang.org/download/0.13.0/zig-linux-aarch64-0.13.0.tar.xz
+	sha256sums_arm64 = 041ac42323837eb5624068acd8b00cd5777dac4cf91179e8dad7a7e90dd0c556
 
 pkgname = zig-bin
 ---
