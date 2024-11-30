@@ -1,0 +1,27 @@
+pkgbase = rpi-imager
+	pkgver = 1.9.0
+	pkgrel = 1
+	pkgdesc = Raspberry pi Imaging Utility
+	url = https://github.com/raspberrypi/rpi-imager
+	arch = arm64
+	depends = curl
+	depends = libgcc-s1
+	depends = libc6-dev
+	depends = hicolor-icon-theme
+	depends = libarchive-dev
+	depends = gnutls-dev
+	depends = openssl
+	depends = build-essential
+	makedepends = cmake
+	makedepends = libgnutls28-dev
+	makedepends = qt6-svg-dev
+	makedepends = qt6-base-dev
+	makedepends = qt6-declarative-dev
+	makedepends = qt6-tools-dev
+	license = Apache-2.0
+	maintainer = Sundaram Krishnan <krishnsundaram@gmail.com>
+	repology = project: rpi-imager
+	source = https://github.com/raspberrypi/rpi-imager/archive/v1.9.0.tar.gz
+	b2sums = d4eae0e1f1d99901938d04d1fcd6cb3dac84296172791f215247aa6873284e4b8d6673e0e847ad9dd41167cea87122a154a440a91bf8546a4a1d0442a02cb494
+
+pkgname = rpi-imager
