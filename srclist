@@ -521,6 +521,25 @@ pkgbase = arduino-ide-bin
 
 pkgname = arduino-ide-bin
 ---
+pkgbase = asdf-vm
+	pkgver = 0.14.1
+	pkgdesc = Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more
+	url = https://asdf-vm.com
+	arch = any
+	depends = curl
+	depends = git
+	optdepends = build-essential: Array of tools to build software
+	optdepends = bash-completion: For completions to work in Bash
+	optdepends = libncurses5-dev: Text-based UI library for terminal applications
+	optdepends = libncurses-dev: Text-based UI library for terminal applications
+	optdepends = unzip: Needed by some plugins, like Elixir
+	license = MIT
+	repology = project: asdf-vm
+	source = asdf-vm-0.14.1.tar.gz::https://github.com/asdf-vm/asdf/archive/v0.14.1.tar.gz
+	sha256sums = 308a7f2e1eb551e435458974fbe37dcef1c940e961ad40e47ae78cabc154543e
+
+pkgname = asdf-vm
+---
 pkgbase = aseprite
 	pkgver = 1.3.9
 	pkgdesc = Animated sprite editor & pixel art tool
@@ -3031,13 +3050,13 @@ pkgname = fpc-src-deb
 ---
 pkgbase = freetube-deb
 	gives = freetube
-	pkgver = 0.21.3
+	pkgver = 0.22.0
 	pkgdesc = An Open Source YouTube app for privacy.
 	arch = amd64
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: freetube
-	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.21.3-beta/freetube_0.21.3_amd64.deb
-	sha256sums = bf8649c7b384cd50178d6c887371472916bfdacb9971e939c35ddbe4ab3adc08
+	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.22.0-beta/freetube_0.22.0_amd64.deb
+	sha256sums = 619ea02297e180b5fe9f647ee12f48ab07112bfe539688c58ee2302a2dc48e2e
 
 pkgname = freetube-deb
 ---
@@ -4333,7 +4352,7 @@ pkgname = highlight-pointer-bin
 ---
 pkgbase = honkers-launcher-bin
 	gives = honkers-launcher
-	pkgver = 1.9.0
+	pkgver = 1.10.2
 	pkgdesc = Launcher for a honkers game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -4354,9 +4373,9 @@ pkgbase = honkers-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: honkers-launcher
-	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.9.0/honkers-launcher
+	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.10.2/honkers-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/honkers-launcher/main/assets/images/icon.png
-	sha256sums = aaad4ec59be762ddebc50490e2c9eb88365162e53392c2cc58f3baab647e2795
+	sha256sums = fad29685e319b9411725d5ac55b37420af509ec02924ad52de78f5715af87813
 	sha256sums = SKIP
 
 pkgname = honkers-launcher-bin
@@ -5948,8 +5967,8 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.11.0-061100
-	pkgver = 6.11
+	gives = linux-headers-6.12.0-061200
+	pkgver = 6.12
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -5957,14 +5976,14 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/amd64/linux-headers-6.11.0-061100_6.11.0-061100.202409151536_all.deb
-	sha256sums = 9d296b9e5172cf78bf2fc535c72667c8cb0160a457617b580e79e82897cd0280
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12/amd64/linux-headers-6.12.0-061200_6.12.0-061200.202411220723_all.deb
+	sha256sums = 2a301251c106ccf2830e7aa9fb174edebaacc4a9169d0dabbaddfb1478e47ae5
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-6.11.0-061100-generic
-	pkgver = 6.11
+	gives = linux-headers-6.12.0-061200-generic
+	pkgver = 6.12
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -5974,10 +5993,10 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/arm64/linux-headers-6.11.0-061100-generic_6.11.0-061100.202409151536_arm64.deb
-	sha256sums_arm64 = 33c94f0ee0d0e1937e556eb61da960b1fe016b4beec70810f30abbd842529d4f
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/amd64/linux-headers-6.11.0-061100-generic_6.11.0-061100.202409151536_amd64.deb
-	sha256sums_amd64 = 3d13b2ee8327e73d68220687604382847e43b9dcdf115e37b52bebb68cde4faf
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12/arm64/linux-headers-6.12.0-061200-generic_6.12.0-061200.202411220723_arm64.deb
+	sha256sums_arm64 = d6f12efe9296bbe9e79b97f63d41bd21710c5762b6404073a473cf399131f3d0
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12/amd64/linux-headers-6.12.0-061200-generic_6.12.0-061200.202411220723_amd64.deb
+	sha256sums_amd64 = ce04e6d63ad77d2c78090e3addc1d77225d1f01a7d71106486ce1ab24dd1451d
 
 pkgname = linux-headers-generic-deb
 ---
@@ -5997,8 +6016,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.11.0-061100-generic
-	pkgver = 6.11
+	gives = linux-headers-6.12.1-061201-generic
+	pkgver = 6.12.1
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -6006,10 +6025,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/arm64/linux-headers-6.11.0-061100-generic_6.11.0-061100.202409151536_arm64.deb
-	sha256sums_arm64 = 33c94f0ee0d0e1937e556eb61da960b1fe016b4beec70810f30abbd842529d4f
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/amd64/linux-headers-6.11.0-061100-generic_6.11.0-061100.202409151536_amd64.deb
-	sha256sums_amd64 = 3d13b2ee8327e73d68220687604382847e43b9dcdf115e37b52bebb68cde4faf
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.1/arm64/linux-headers-6.12.1-061201-generic_6.12.1-061201.202411221622_arm64.deb
+	sha256sums_arm64 = 19f584dac7275e20d1f5d9ece979bdf23cd2e69340a96333e4e576fbe9863f5f
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.1/amd64/linux-headers-6.12.1-061201-generic_6.12.1-061201.202411221622_amd64.deb
+	sha256sums_amd64 = 255208893d10b330592f8b6fcaa189100477c49a532ab3586a907fd52292df44
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -6041,15 +6060,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.11.0-061100
-	pkgver = 6.11
+	gives = linux-headers-6.12.1-061201
+	pkgver = 6.12.1
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/amd64/linux-headers-6.11.0-061100_6.11.0-061100.202409151536_all.deb
-	sha256sums = 9d296b9e5172cf78bf2fc535c72667c8cb0160a457617b580e79e82897cd0280
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.1/amd64/linux-headers-6.12.1-061201_6.12.1-061201.202411221622_all.deb
+	sha256sums = 689fdbdb1f34d07b2dbaa08c9471103bf6af2e6a63a2082c3dca6ebac3fac115
 
 pkgname = linux-headers-stable-deb
 ---
@@ -6072,8 +6091,8 @@ pkgbase = linux-image-okpine-deb
 pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.11.0-061100-generic
-	pkgver = 6.11
+	gives = linux-image-unsigned-6.12.0-061200-generic
+	pkgver = 6.12
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6084,10 +6103,10 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/arm64/linux-image-unsigned-6.11.0-061100-generic_6.11.0-061100.202409151536_arm64.deb
-	sha256sums_arm64 = 337a3ea1f14aedb3a0d153d42f56f791e4391864e4ba01951e4750b9eca70a07
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/amd64/linux-image-unsigned-6.11.0-061100-generic_6.11.0-061100.202409151536_amd64.deb
-	sha256sums_amd64 = 8881567927f704a03e80b7d7af2e94e6741af49e4a00c073ef5b3e70da631b89
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12/arm64/linux-image-unsigned-6.12.0-061200-generic_6.12.0-061200.202411220723_arm64.deb
+	sha256sums_arm64 = a57ec147f75009d75c121edcb54e02b4ce897380f1afd36ef55ba8bceb88dada
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12/amd64/linux-image-unsigned-6.12.0-061200-generic_6.12.0-061200.202411220723_amd64.deb
+	sha256sums_amd64 = 3f156eab453866391b1939652829c67f4e4e9a9c18917d76751f41a26da4a330
 
 pkgname = linux-image-unsigned-deb
 ---
@@ -6108,8 +6127,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.11.0-061100-generic
-	pkgver = 6.11
+	gives = linux-image-unsigned-6.12.1-061201-generic
+	pkgver = 6.12.1
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6118,10 +6137,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/arm64/linux-image-unsigned-6.11.0-061100-generic_6.11.0-061100.202409151536_arm64.deb
-	sha256sums_arm64 = 337a3ea1f14aedb3a0d153d42f56f791e4391864e4ba01951e4750b9eca70a07
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/amd64/linux-image-unsigned-6.11.0-061100-generic_6.11.0-061100.202409151536_amd64.deb
-	sha256sums_amd64 = 8881567927f704a03e80b7d7af2e94e6741af49e4a00c073ef5b3e70da631b89
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.1/arm64/linux-image-unsigned-6.12.1-061201-generic_6.12.1-061201.202411221622_arm64.deb
+	sha256sums_arm64 = 4b3f48baa280b8d44c9a0ab9b8499fd5d536b90aeeca16e1063a81e28684d76a
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.1/amd64/linux-image-unsigned-6.12.1-061201-generic_6.12.1-061201.202411221622_amd64.deb
+	sha256sums_amd64 = 2ed6fb3360cf67272215989fe6bdb747528aaa7e488e9a4c9ac6893148ac0bf1
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -6140,7 +6159,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.11
+	pkgver = 6.12.1
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6156,7 +6175,7 @@ pkgbase = linux-kernel-stable
 pkgname = linux-kernel-stable
 ---
 pkgbase = linux-kernel
-	pkgver = 6.11
+	pkgver = 6.12
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6187,16 +6206,16 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.11.0-061100-generic
-	pkgver = 6.11
+	gives = linux-modules-6.12.0-061200-generic
+	pkgver = 6.12
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/arm64/linux-modules-6.11.0-061100-generic_6.11.0-061100.202409151536_arm64.deb
-	sha256sums_arm64 = 7e9d107be8b06e669f1985dd335a08e7f21c5b0fd1a97cb0571033597c20a3dd
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/amd64/linux-modules-6.11.0-061100-generic_6.11.0-061100.202409151536_amd64.deb
-	sha256sums_amd64 = f2ad25b72ad8be3478a7d679e9ad70e4ed4c3d5904fcb75da76acebc82357717
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12/arm64/linux-modules-6.12.0-061200-generic_6.12.0-061200.202411220723_arm64.deb
+	sha256sums_arm64 = 1dfd453bae8a7e8dec96d4bd9733c62ba6d247d89b52936d83a143d8aa37f84b
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12/amd64/linux-modules-6.12.0-061200-generic_6.12.0-061200.202411220723_amd64.deb
+	sha256sums_amd64 = 5c1bb612091143332f4ca1892086e29b676cc27c83f74cd2d48115203a0c72d8
 
 pkgname = linux-modules-deb
 ---
@@ -6215,16 +6234,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.11.0-061100-generic
-	pkgver = 6.11
+	gives = linux-modules-6.12.1-061201-generic
+	pkgver = 6.12.1
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/arm64/linux-modules-6.11.0-061100-generic_6.11.0-061100.202409151536_arm64.deb
-	sha256sums_arm64 = 7e9d107be8b06e669f1985dd335a08e7f21c5b0fd1a97cb0571033597c20a3dd
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/amd64/linux-modules-6.11.0-061100-generic_6.11.0-061100.202409151536_amd64.deb
-	sha256sums_amd64 = f2ad25b72ad8be3478a7d679e9ad70e4ed4c3d5904fcb75da76acebc82357717
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.1/arm64/linux-modules-6.12.1-061201-generic_6.12.1-061201.202411221622_arm64.deb
+	sha256sums_arm64 = 28bd3bec09f0a6695e9199be99740ef68568b7c376de0d1b8ce75fc8accad022
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.1/amd64/linux-modules-6.12.1-061201-generic_6.12.1-061201.202411221622_amd64.deb
+	sha256sums_amd64 = e8297961ff71a26e846085a80b1fd375c12c9edb24fc7e7638545d939e6391cc
 
 pkgname = linux-modules-stable-deb
 ---
@@ -13103,7 +13122,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-generic-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.19
+	pkgver = 1.0.1-a.22
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -13138,14 +13157,14 @@ pkgbase = zen-browser-generic-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.19.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.19/zen.linux-generic.tar.bz2
-	sha256sums = 96eff8dd894ad03e7e5e6d25e6dc491bc5dad9f3dde1ec16fbb3a40c6930dfff
+	source = zen-browser-1.0.1-a.22.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.22/zen.linux-generic.tar.bz2
+	sha256sums = 965959ac5e169ff450554bbcaed9b373e1899584c7cfea4b59f1786d76cae838
 
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.19
+	pkgver = 1.0.1-a.22
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -13180,8 +13199,8 @@ pkgbase = zen-browser-specific-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.19.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.19/zen.linux-specific.tar.bz2
-	sha256sums = b897d9728ac34858d2267d9b13e3f1f60522270feabeb80738a55452c3392306
+	source = zen-browser-1.0.1-a.22.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.22/zen.linux-specific.tar.bz2
+	sha256sums = db8ac90512e52a672bb2826f3690783c0bab74c4113c07be20bc1597c4ea395f
 
 pkgname = zen-browser-specific-bin
 ---
