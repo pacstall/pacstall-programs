@@ -16,15 +16,18 @@ depends=(
   'gnutls-dev'
   'openssl'
   'build-essential'
+  'qt6-base-dev'
+  'qt6-declarative-dev'
 )
 
 makedepends=(
   'cmake'
   'libgnutls28-dev'
-  'qt6-svg-dev'
+  'qtcreator'
   'qt6-base-dev'
-  'qt6-declarative-dev'
   'qt6-tools-dev'
+  'qt6-svg-dev'
+  'qt6-declarative-dev'
 )
 source=("https://github.com/raspberrypi/${pkgname}/archive/v${pkgver}.tar.gz")
 b2sums=('d4eae0e1f1d99901938d04d1fcd6cb3dac84296172791f215247aa6873284e4b8d6673e0e847ad9dd41167cea87122a154a440a91bf8546a4a1d0442a02cb494')
@@ -40,4 +43,5 @@ build() {
 
 package() {
   DESTDIR=${pkgdir} cmake --install build
+  rm -rf "${pkgdir}"/usr/include/zstd_errors.h
 }
