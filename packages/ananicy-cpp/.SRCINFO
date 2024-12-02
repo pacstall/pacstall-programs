@@ -7,7 +7,7 @@ pkgbase = ananicy-cpp
 	makedepends = libsystemd-dev
 	makedepends = ninja-build
 	repology = project: ananicy-cpp
-	source = https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v1.1.0/ananicy-cpp-v1.1.0.tar.gz
+	source = @ananicy-cpp~1.1.0::https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v1.1.0/ananicy-cpp-v1.1.0.tar.gz
 	sha256sums = 49f59e8fa842c7603be344b7317eace773c3e416d881dae4ad7779b39b03fc4a
 
 pkgname = ananicy-cpp

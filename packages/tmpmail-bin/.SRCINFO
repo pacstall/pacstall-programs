@@ -12,7 +12,7 @@ pkgbase = tmpmail-bin
 	breaks = tmpmail-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: tmpmail
-	source = https://github.com/sdushantha/tmpmail/archive/refs/tags/v1.2.3.tar.gz
+	source = @tmpmail-bin~1.2.3::https://github.com/sdushantha/tmpmail/archive/refs/tags/v1.2.3.tar.gz
 	sha256sums = 8d12f5474b89ee585413ec32cc9991a971a00e8bb63ac8e5a2e736f734f37cfb
 
 pkgname = tmpmail-bin

@@ -9,7 +9,7 @@ pkgbase = aws-cli-v2-bin
 	replaces = awscli
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: awscli
-	source = https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.21.0.zip
+	source = @aws-cli-v2-bin~2.21.0::https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.21.0.zip
 	sha256sums = 0bb85fe4db44b35f111aae651e9dfc38f90c1db8cc582544944ad788cf5d1549
 
 pkgname = aws-cli-v2-bin

@@ -8,7 +8,7 @@ pkgbase = uwufetch
 	breaks = uwufetch-git
 	breaks = uwufetch-bin
 	maintainer = wizard-28 <wiz28@pm.me>
-	source = https://github.com/TheDarkBug/uwufetch/archive/refs/tags/1.7.zip
+	source = @uwufetch~1.7::https://github.com/TheDarkBug/uwufetch/archive/refs/tags/1.7.zip
 	sha256sums = 1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab
 
 pkgname = uwufetch

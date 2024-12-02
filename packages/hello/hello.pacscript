@@ -2,7 +2,7 @@ pkgname="hello"
 repology=("project: ${pkgname}")
 arch=("all")
 pkgver="2.12.1"
-source=("https://ftp.gnu.org/gnu/${pkgname}/${pkgname}-${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://ftp.gnu.org/gnu/${pkgname}/${pkgname}-${pkgver}.tar.gz")
 makedepends=("build-essential")
 depends=("libc6")
 breaks=("${pkgname}-git" "${pkgname}-traditional")
@@ -12,12 +12,12 @@ sha256sums=("8d99142afd92576f30b0cd7cb42a8dc6809998bc5d607d88761f512e26c7db20")
 maintainer=("WRM-42 <y8bsbahy@anonaddy.me>")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   ./configure
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make install DESTDIR="${pkgdir}"
 }

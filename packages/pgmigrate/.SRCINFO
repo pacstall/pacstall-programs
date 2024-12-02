@@ -11,7 +11,7 @@ pkgbase = pgmigrate
 	replaces = pgmigrate
 	maintainer = WRM-42 <y8bsbahy@anonaddy.me>
 	repology = project: pgmigrate
-	source = https://github.com/yandex/pgmigrate/archive/refs/tags/1.0.7.tar.gz
+	source = @pgmigrate~1.0.7::https://github.com/yandex/pgmigrate/archive/refs/tags/1.0.7.tar.gz
 	sha256sums = ba39ee6198b1132a5306c3cce79d16644c507d7be999fbcc9c039cd3307693f6
 
 pkgname = pgmigrate

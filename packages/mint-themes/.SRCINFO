@@ -8,7 +8,7 @@ pkgbase = mint-themes
 	optdepends = mint-x-icons: Complementary icons for Mint-X themes.
 	maintainer = badlydrawnface <bdface@proton.me>
 	repology = project:
-	source = http://packages.linuxmint.com/pool/main/m/mint-themes/mint-themes_2.1.5.tar.xz
+	source = @mint-themes~2.1.5::http://packages.linuxmint.com/pool/main/m/mint-themes/mint-themes_2.1.5.tar.xz
 	sha256sums = 685cff6598bdaf4b6813be3080368845f019e09e974e7f589b5f99acb3da2396
 
 pkgname = mint-themes

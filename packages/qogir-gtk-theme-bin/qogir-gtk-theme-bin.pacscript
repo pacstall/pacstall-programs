@@ -11,7 +11,7 @@ gives="qogir-gtk-theme"
 arch=("amd64")
 pkgver="2023-02-27"
 pkgdesc="Qogir is a flat Design theme for GTK"
-source=("https://github.com/vinceliuice/Qogir-theme/archive/${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/vinceliuice/Qogir-theme/archive/${pkgver}.tar.gz")
 depends=("gtk2-engines-murrine" "gtk2-engines-pixbuf")
 makedepends=("libsass1")
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
@@ -26,7 +26,7 @@ repology=("project: qogir-theme" "repo: nix_unstable")
 _INSTALL_OPTS=
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Parse install flags from /etc/qogir-gtk-theme/options.txt, if it exists and _INSTALL_OPTS has not been set
   if [[ -f "/etc/qogir-gtk-theme/options.txt" && -z ${_INSTALL_OPTS} ]]; then
     _INSTALL_OPTS="$(/usr/bin/grep --extended-regexp --max-count=1 --line-regexp --invert-match '^\s*$|#.+' /etc/qogir-gtk-theme/options.txt 2> /dev/null)"
@@ -41,7 +41,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -dm755 "${pkgdir}/usr/share/themes"
   # HACK: Disabling SC2086 check, as this is the desired behavior
   # shellcheck disable=SC2086

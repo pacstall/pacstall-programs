@@ -12,9 +12,9 @@ pkgbase = rhino-setup-bin
 	replaces = rhino-setup-git
 	incompatible = debian:*
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://github.com/rhino-linux/rhino-setup/releases/download/v2024.2/rhino-setup_v2024.2_arm64.zip
+	source_arm64 = @rhino-setup-bin~2024.2::https://github.com/rhino-linux/rhino-setup/releases/download/v2024.2/rhino-setup_v2024.2_arm64.zip
 	sha256sums_arm64 = ad7f35b3ce22bb7fef4b46a866b001eef26cd464258ca36631ff14725898dfb2
-	source_amd64 = https://github.com/rhino-linux/rhino-setup/releases/download/v2024.2/rhino-setup_v2024.2_amd64.zip
+	source_amd64 = @rhino-setup-bin~2024.2::https://github.com/rhino-linux/rhino-setup/releases/download/v2024.2/rhino-setup_v2024.2_amd64.zip
 	sha256sums_amd64 = daf2f0da59da7e7a0ebfd7c5e9572550055a5ecd48f5b9d752a15dd78afe8a3e
 
 pkgname = rhino-setup-bin

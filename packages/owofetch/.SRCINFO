@@ -7,7 +7,7 @@ pkgbase = owofetch
 	breaks = owofetch-git
 	maintainer = Herisson <spaceguybox@outlook.com>
 	repology = project: owofetch
-	source = https://github.com/netthier/owofetch-rs/archive/refs/tags/v0.3.1.zip
+	source = @owofetch~0.3.1::https://github.com/netthier/owofetch-rs/archive/refs/tags/v0.3.1.zip
 	sha256sums = c4f8cd96751ceb932d75b98ad38c19ce5b3aad0aa274aeb5eb11e0aa89a6bd13
 
 pkgname = owofetch

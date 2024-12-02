@@ -49,7 +49,7 @@ pkgbase = opentoonz
 	breaks = opentoonz-bin
 	maintainer = echometerain <echometer@disroot.org>
 	repology = project: opentoonz
-	source = https://github.com/opentoonz/opentoonz/archive/refs/tags/v1.7.1.tar.gz
+	source = @opentoonz~1.7.1::https://github.com/opentoonz/opentoonz/archive/refs/tags/v1.7.1.tar.gz
 	sha256sums = d0daf60d06510efe15d0db3f9eed0162499ed58061504dca27892c2b9ea5f22d
 
 pkgname = opentoonz

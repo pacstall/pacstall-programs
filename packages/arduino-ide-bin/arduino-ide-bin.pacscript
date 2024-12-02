@@ -6,7 +6,7 @@ repology=("project: arduino")
 maintainer=("DismissedGuy <me@mikealmel.ooo>")
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 source=(
-  "https://downloads.arduino.cc/${gives}/${gives}_${pkgver}_Linux_64bit.zip"
+  "@${pkgname}~${pkgver}::https://downloads.arduino.cc/${gives}/${gives}_${pkgver}_Linux_64bit.zip"
   "arduino.svg::https://www.arduino.cc/wiki/370832ed4114dd35d498f2f449b4781e/arduino.svg"
   "${gives}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${gives}.desktop"
 )
@@ -18,7 +18,7 @@ sha256sums=(
 )
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # potential leftover symlink from v1
   rm -f "/usr/local/bin/arduino"
 
@@ -28,7 +28,7 @@ prepare() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # install files
   cp -R ./* "${pkgdir}/usr/share/${gives}/"
 

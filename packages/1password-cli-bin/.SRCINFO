@@ -5,7 +5,7 @@ pkgbase = 1password-cli-bin
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: 1password-cli
-	source = https://cache.agilebits.com/dist/1P/op2/pkg/v2.30.3/op_linux_amd64_v2.30.3.zip
+	source = @1password-cli-bin~2.30.3::https://cache.agilebits.com/dist/1P/op2/pkg/v2.30.3/op_linux_amd64_v2.30.3.zip
 	sha256sums = a16307ebcecb40fd091d7a6ff4f0c380c3c0897c4f4616de2c5d285e57d5ee28
 
 pkgname = 1password-cli-bin
