@@ -1,6 +1,6 @@
 pkgname="rhino-stampede-dev"
 source=("https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty")
-pacdeps=("unicons-git" "xfce4-dynamic-workspaces-plugin-git")
+pacdeps=("unicons-git")
 conflicts=("rhino-server-core" "rhino-ubxi-core")
 pkgdesc="Testing suite for Rhino Linux development"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
