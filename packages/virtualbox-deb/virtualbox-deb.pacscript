@@ -6,8 +6,8 @@ release="165100"
 arch=('amd64')
 breaks=("${gives}-bin")
 pkgdesc="VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use"
-incompatible=("debian:trixie" "debian:sid" "ubuntu:mantic" "ubuntu:oracular" "ubuntu:devel")
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>" "James Ed Randson <jimedrand@disroot.org>" "xdavius <xdavius@github.com>")
+incompatible=("debian:trixie" "debian:sid" "ubuntu:mantic" "ubuntu:oracular" "ubuntu:plucky" "ubuntu:devel")
 
 source_bullseye=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Debian~bullseye_amd64.deb")
 sha256sums_bullseye="c74ac1234299c3a5143c21f41871ab465f30ad907e31ea01e61c8e81feb5a98c"
