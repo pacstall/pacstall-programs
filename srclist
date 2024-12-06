@@ -3413,22 +3413,23 @@ pkgname = github-cli-deb
 ---
 pkgbase = github-desktop-deb
 	gives = github-desktop
-	pkgver = 3.4.3
+	pkgver = 3.4.8
 	pkgdesc = Fork of GitHub Desktop to support various Linux distributions
 	url = https://desktop.github.com
 	arch = amd64
 	arch = arm64
 	arch = armhf
 	maintainer = Elsie19 <elsie19@pm.me>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: github-desktop
 	repology = visiblename: github-desktop
 	repology = repo: aur
-	source_amd64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.3-linux1/GitHubDesktop-linux-amd64-3.4.3-linux1.deb
-	sha256sums_amd64 = e2c8aa0ee4f67b1d12e96080fef4dd342b0fd7aa619ead158f1e48cd5123c238
-	source_arm64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.3-linux1/GitHubDesktop-linux-arm64-3.4.3-linux1.deb
-	sha256sums_arm64 = da070a8379dda95cceb6c2a331fde7d33d56feee31de647e334435d34c6cfb22
-	source_armhf = https://github.com/shiftkey/desktop/releases/download/release-3.4.3-linux1/GitHubDesktop-linux-armhf-3.4.3-linux1.deb
-	sha256sums_armhf = 44b85e5a3fdb1c575b6ee6101f45c97680554f143add2dec330104575e10468b
+	source_amd64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.8-linux1/GitHubDesktop-linux-amd64-3.4.8-linux1.deb
+	sha256sums_amd64 = 20d6813659f3937b3a2e1abb507f0d5c2f051bf99da8c6ab1d42c4af2f3a8495
+	source_arm64 = https://github.com/shiftkey/desktop/releases/download/release-3.4.8-linux1/GitHubDesktop-linux-arm64-3.4.8-linux1.deb
+	sha256sums_arm64 = 52c7cef5bd1c965731f962f0c09bdb71f62bbbf4b25699bb4b15a9db485bb2b2
+	source_armhf = https://github.com/shiftkey/desktop/releases/download/release-3.4.8-linux1/GitHubDesktop-linux-armhf-3.4.8-linux1.deb
+	sha256sums_armhf = 41c6e4d884b7f20669abe9b71ce0a28afc124e27071ab5071dc93e8bfdb41b71
 
 pkgname = github-desktop-deb
 ---
