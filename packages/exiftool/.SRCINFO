@@ -1,5 +1,4 @@
 pkgbase = exiftool
-	gives = exiftool
 	pkgver = 13.03
 	pkgdesc = Platform-independent Perl library for reading and writing EXIF data
 	url = https://exiftool.org
