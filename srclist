@@ -7502,7 +7502,7 @@ pkgbase = nuclei-bin
 pkgname = nuclei-bin
 ---
 pkgbase = nushell-bin
-	pkgver = 0.99.1
+	pkgver = 0.100.0
 	pkgdesc = A new type of shell
 	arch = arm64
 	arch = amd64
@@ -7512,10 +7512,10 @@ pkgbase = nushell-bin
 	breaks = nushell-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: nushell
-	source_arm64 = https://github.com/nushell/nushell/releases/download/0.99.1/nu-0.99.1-aarch64-unknown-linux-gnu.tar.gz
-	sha256sums_arm64 = 5e4437a05faf127d91760f86b07e895832bd7afef6db90b8c717bcbc9ecb4299
-	source_amd64 = https://github.com/nushell/nushell/releases/download/0.99.1/nu-0.99.1-x86_64-unknown-linux-gnu.tar.gz
-	sha256sums_amd64 = 3aeb6b790414e29296097790074f2e03db29b0aba329306e3ffdbfefa3e2664f
+	source_arm64 = https://github.com/nushell/nushell/releases/download/0.100.0/nu-0.100.0-aarch64-unknown-linux-gnu.tar.gz
+	sha256sums_arm64 = 12f9b74c18e8f3d58acdab1e7a1c84c547a60be2e426d075bf7c42296c2ea9e2
+	source_amd64 = https://github.com/nushell/nushell/releases/download/0.100.0/nu-0.100.0-x86_64-unknown-linux-gnu.tar.gz
+	sha256sums_amd64 = 7bcd2c64bc7028f8cdbb25f2f84d61b3c9418ce6c39e13c7f010d412f1e8711e
 
 pkgname = nushell-bin
 ---
@@ -10876,7 +10876,7 @@ pkgname = tgpt-bin
 ---
 pkgbase = the-honkers-railway-launcher-bin
 	gives = the-honkers-railway-launcher
-	pkgver = 1.9.0
+	pkgver = 1.9.1
 	pkgdesc = The Honkers Railway launcher for Linux with automatic patching and telemetry disabling
 	arch = amd64
 	depends = git
@@ -10897,9 +10897,9 @@ pkgbase = the-honkers-railway-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: the-honkers-railway-launcher
-	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.9.0/honkers-railway-launcher
+	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.9.1/honkers-railway-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/the-honkers-railway-launcher/main/assets/images/icon.png
-	sha256sums = c2a13de86812f410731180ea2d1c2b8c9a86161ece2c41fd2d36afab996ef26d
+	sha256sums = 6659558fd6909bc8e2b2cc3fa40796d640f7249ee4022088a44762723c2a4a19
 	sha256sums = SKIP
 
 pkgname = the-honkers-railway-launcher-bin
@@ -11722,7 +11722,7 @@ pkgname = veracrypt-deb
 ---
 pkgbase = vesktop-deb
 	gives = vesktop
-	pkgver = 1.5.3
+	pkgver = 1.5.4
 	pkgdesc = A custom Discord client that aims to provide better customizability, performance, and improved Linux support
 	arch = arm64
 	arch = amd64
@@ -11737,10 +11737,10 @@ pkgbase = vesktop-deb
 	depends = libsecret-1-0
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: vesktop
-	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.3/vesktop_1.5.3_arm64.deb
-	sha256sums_arm64 = 5d30d57539ff75a2d1a449e2b0b95e6fa969e87e1cd82db2314b11acbf661bd9
-	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.3/vesktop_1.5.3_amd64.deb
-	sha256sums_amd64 = cc7109e74a328e43f922f623aa82eafd8322967bc3fb14e467181cd12ae44b7e
+	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.4/vesktop_1.5.4_arm64.deb
+	sha256sums_arm64 = 00c9fb9f27ffa31312c39870521647d94cb8d4bcf5b94e770ead29a2e0549517
+	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.4/vesktop_1.5.4_amd64.deb
+	sha256sums_amd64 = 1de02beefe491e963d476db62f860d6b2503bb1e68571e7f1bad010ce69e7c5f
 
 pkgname = vesktop-deb
 ---
