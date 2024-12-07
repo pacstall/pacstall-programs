@@ -1,7 +1,8 @@
 pkgname="lutris-git"
 gives="lutris"
-pkgver="0.5.17"
+pkgver="0.5.18"
 pkgdesc="Open Gaming Platform"
+arch=('any')
 url='https://lutris.net'
 license=("GPL-3.0-or-later")
 provides=("${gives}-git")

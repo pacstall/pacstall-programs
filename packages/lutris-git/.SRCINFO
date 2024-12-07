@@ -1,8 +1,9 @@
 pkgbase = lutris-git
 	gives = lutris
-	pkgver = 0.5.17
+	pkgver = 0.5.18
 	pkgdesc = Open Gaming Platform
 	url = https://lutris.net
+	arch = any
 	depends = cabextract
 	depends = curl
 	depends = libglib2.0-0
