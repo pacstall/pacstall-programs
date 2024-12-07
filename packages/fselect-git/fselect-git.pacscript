@@ -10,11 +10,11 @@ external_connection=true
 incompatible=("debian:bullseye")
 
 build() {
-  cd "${_archive}"
+  cd "fselect"
   cargo build -j"${NCPU}" --release --locked
 }
 
 package() {
-  cd "${_archive}"
+  cd "fselect"
   install -Dm755 target/release/fselect -t "${pkgdir}/usr/bin"
 }

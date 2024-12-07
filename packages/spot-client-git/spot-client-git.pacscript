@@ -12,11 +12,11 @@ external_connection=true
 arch=('amd64')
 
 build() {
-  cd "${_archive}"
+  cd "spot"
   meson target -Doffline=false --prefix="${pkgdir}/usr"
 }
 
 package() {
-  cd "${_archive}"
+  cd "spot"
   DESTDIR="${pkgdir}" ninja install -C target
 }

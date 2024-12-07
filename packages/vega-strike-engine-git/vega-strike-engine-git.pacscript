@@ -10,7 +10,7 @@ pkgdesc="Vega Strike engine"
 maintainer=("echometerain <echometer@disroot.org>")
 
 build() {
-  cd "${_archive}"
+  cd "Vega-Strike-Engine-Source"
   mkdir build
   cd build || return 1
   cmake "../engine"
@@ -20,7 +20,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "Vega-Strike-Engine-Source"
   cd build || return 1
   make install DESTDIR="${pkgdir}"
   rm -rf "${pkgdir}/usr/include"

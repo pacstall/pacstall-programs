@@ -9,11 +9,11 @@ pkgdesc="Distrotube's dmenu build"
 breaks=("dmenu" "dmenu_run" "dmenu_path")
 
 build() {
-  cd "${_archive}"
+  cd "dmenu-distrotube"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "dmenu-distrotube"
   make install DESTDIR="${pkgdir}"
 }

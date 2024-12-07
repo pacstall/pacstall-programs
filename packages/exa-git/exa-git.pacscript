@@ -10,11 +10,11 @@ external_connection=true
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 build() {
-  cd "${_archive}"
+  cd "exa"
   cargo build -j"${NCPU}" --release
 }
 
 package() {
-  cd "${_archive}"
+  cd "exa"
   install -Dm755 target/release/exa -t "${pkgdir}/usr/bin"
 }

@@ -8,6 +8,6 @@ makedepends=("make" "libharfbuzz-bin" "libxft-dev" "libpango1.0-dev")
 depends=("fontconfig")
 
 package() {
-  cd "${_archive}"
+  cd "st"
   make install DESTDIR="${pkgdir}"
 }

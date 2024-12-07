@@ -6,6 +6,6 @@ maintainer=("vigress8 <vig@disroot.org>")
 source=("https://git.envs.net/envs/pb.git")
 
 package() {
-  cd "${_archive}"
+  cd "pb"
   make install DESTDIR="${pkgdir}"
 }

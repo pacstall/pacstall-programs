@@ -25,12 +25,12 @@ sha512sums=(
 )
 
 build() {
-  cd "${_archive}"
+  cd "doas"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "doas"
   # Install license
   install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${gives}/LICENSE"
 

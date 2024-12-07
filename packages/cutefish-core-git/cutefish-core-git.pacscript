@@ -9,18 +9,18 @@ depends=("fishui" "libpulse-dev" "libxtst6" "libpolkit-agent-1-dev" "libxcb-rand
 pkgdesc="System backend and start session and more."
 
 prepare() {
-  cd "${_archive}"
+  cd "core"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "core"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "core"
   make install DESTDIR="${pkgdir}"
 }

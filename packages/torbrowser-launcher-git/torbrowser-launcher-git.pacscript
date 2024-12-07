@@ -13,7 +13,7 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 external_connection="true"
 
 prepare() {
-  cd "${_archive}"
+  cd "torbrowser-launcher"
   modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
   for mod in "${modern[@]}"; do
     [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")
@@ -22,11 +22,11 @@ prepare() {
 }
 
 build() {
-  cd "${_archive}"
+  cd "torbrowser-launcher"
   python3 setup.py build
 }
 
 package() {
-  cd "${_archive}"
+  cd "torbrowser-launcher"
   python3 setup.py install --root="${pkgdir}" --optimize=1
 }

@@ -10,7 +10,7 @@ source=("https://github.com/Xdavius/GLFfetch.git")
 maintainer=("xdavius <xdavius@github.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "GLFfetch"
   chmod u+x scripts/*.sh
   echo "#!/bin/bash
   source /opt/GLFfetch/scripts/icon.sh
@@ -18,7 +18,7 @@ prepare() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "GLFfetch"
   install -Dm755 "glffetch" "${pkgdir}/usr/bin/glffetch"
   install -d "${pkgdir}/opt/GLFfetch/scripts"
   install -Dm655 "GLF.png" "${pkgdir}/opt/GLFfetch/GLF.png"

@@ -16,14 +16,14 @@ makedepends=("bison" "libpam0g-dev")
 breaks=("${gives}" "${gives}-bin")
 
 build() {
-  cd "${_archive}"
+  cd "OpenDoas"
   ./configure --prefix=/usr --with-timestamp
   # Build rquired files
   make -j"${NCPU}" DESTDIR="${pkgdir}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "OpenDoas"
   # Install license
   install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${gives}"
 

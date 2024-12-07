@@ -11,13 +11,13 @@ breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app")
 maintainer=("KwonNam Son <kwon37xi@gmail.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "grive2"
   mkdir build
   cd build || exit
 }
 
 build() {
-  cd "${_archive}"
+  cd "grive2"
   cmake -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     ..
@@ -25,7 +25,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "grive2"
   make install DESTDIR="${pkgdir}"
 }
 # vim:set ft=sh ts=2 sw=2 et:

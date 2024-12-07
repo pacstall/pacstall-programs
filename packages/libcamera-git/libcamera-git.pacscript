@@ -12,12 +12,12 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Open source camera stack and framework"
 
 build() {
-  cd "${_archive}"
+  cd "libcamera"
   meson setup build
   ninja -C build -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "libcamera"
   DESTDIR="${pkgdir}" ninja -C build install
 }

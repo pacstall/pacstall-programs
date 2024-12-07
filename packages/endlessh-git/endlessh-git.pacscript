@@ -15,12 +15,12 @@ pkgdesc="SSH tarpit that very slowly sends an endless, random SSH banner"
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 build() {
-  cd "${_archive}"
+  cd "endlessh"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "endlessh"
   make install DESTDIR="${pkgdir}"
   install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${gives}"
   install -Dm644 UNLICENSE -t "${pkgdir}/usr/share/licenses/${gives}"

@@ -9,12 +9,12 @@ pkgdesc="A tool to easily test pacscripts from PRs locally"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
-  cd "${_archive}"
+  cd "pacstall-qa"
   mkdir -p "${pkgdir}/usr/bin"
   mkdir -p "${pkgdir}/usr/share/pacstall-qa"
 }
 
 package() {
-  cd "${_archive}"
+  cd "pacstall-qa"
   DESTDIR="${pkgdir}" make install
 }

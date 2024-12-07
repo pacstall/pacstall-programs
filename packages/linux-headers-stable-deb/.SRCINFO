@@ -1,12 +1,12 @@
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.11.0-061100
-	pkgver = 6.11
+	gives = linux-headers-6.12.1-061201
+	pkgver = 6.12.1
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/amd64/linux-headers-6.11.0-061100_6.11.0-061100.202409151536_all.deb
-	sha256sums = 9d296b9e5172cf78bf2fc535c72667c8cb0160a457617b580e79e82897cd0280
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.1/amd64/linux-headers-6.12.1-061201_6.12.1-061201.202411221622_all.deb
+	sha256sums = 689fdbdb1f34d07b2dbaa08c9471103bf6af2e6a63a2082c3dca6ebac3fac115
 
 pkgname = linux-headers-stable-deb

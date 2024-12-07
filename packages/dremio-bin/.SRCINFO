@@ -1,0 +1,12 @@
+pkgbase = dremio-bin
+	gives = dremio
+	pkgver = 4.9.1
+	pkgdesc = Dremio: Data Lakehouse Platform Powered by Apache Iceberg
+	url = https://www.dremio.com/
+	arch = amd64
+	depends = openjdk-8-jdk
+	maintainer = Luca Fabbian <luca.fabbian.1999@gmail.com>
+	source = https://download.dremio.com/community-server/4.9.1-202010230218060541-2e764ed0/dremio-community-4.9.1-202010230218060541-2e764ed0.tar.gz
+	sha256sums = ccd0ac89c9d3dc13eee8eba0f3f489b3f9efc7a897c1c550d919fcc294c749f9
+
+pkgname = dremio-bin

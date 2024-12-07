@@ -12,7 +12,7 @@ pkgdesc="Custom launcher for Minecraft"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
-  cd "${_archive}"
+  cd "PrismLauncher"
   cmake -S . -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX="/usr" \
@@ -22,6 +22,6 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "PrismLauncher"
   DESTDIR="${pkgdir}" cmake --install build
 }

@@ -16,7 +16,7 @@ arch=("amd64")
 maintainer=("harrietobrien <harrietobrien@protonmail.com>")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   chmod +x "${gives}-${pkgver}-x86_64.appimage"
   install -Dm755 "${gives}-${pkgver}-x86_64.appimage" "${pkgdir}/usr/bin/${gives}"
   install -Dm644 "${srcdir}/krita.svgz" "${pkgdir}/usr/share/pixmaps/krita.svgz"

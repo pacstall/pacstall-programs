@@ -15,7 +15,7 @@ pkgver="0.0.1"
 breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app")
 
 package() {
-  cd "${_archive}"
+  cd "reshade-shaders"
   install -dm 755 "${pkgdir}/opt/reshade/shaders"
   install -Dm 644 Shaders/*.* "${pkgdir}/opt/reshade/shaders/"
   install -dm 755 "${pkgdir}/opt/reshade/textures"

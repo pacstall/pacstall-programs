@@ -10,12 +10,12 @@ depends=("libqt5webengine5" "libqt5webenginewidgets5" "libqt5location5")
 makedepends=("qtbase5-dev" "qtdeclarative5-dev" "qtlocation5-dev" "libqt5webchannel5-dev" "qtwebengine5-dev" "qtwebengine5-dev-tools")
 
 build() {
-  cd "${_archive}"
+  cd "whatsie"
   qmake src
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "whatsie"
   make install DESTDIR="${pkgdir}"
 }

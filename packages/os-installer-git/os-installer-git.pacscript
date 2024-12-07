@@ -13,13 +13,13 @@ optdepends=("gnome-disk-utility: Default disk CMD if not set"
   "gnome-control-center: Default wifi CMD if not set")
 
 build() {
-  cd "${_archive}"
+  cd "os-installer"
   # Build nessesary files
   meson build --prefix="/usr" --buildtype=release
 }
 
 package() {
-  cd "${_archive}"
+  cd "os-installer"
   # Install license
   install -Dm644 "LICENSE" doc/* -t "${pkgdir}/usr/share/licenses/${gives}"
 

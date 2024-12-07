@@ -7,11 +7,11 @@ depends=("conky" "rsync")
 pkgdesc="Simple tool for managing Conky configs"
 
 build() {
-  cd "${_archive}"
+  cd "conky-manager2"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "conky-manager2"
   make install DESTDIR="${pkgdir}"
 }

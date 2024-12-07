@@ -18,7 +18,7 @@ breaks=("${gives}" "${gives}-deb" "${gives}-bin" "${gives}-git")
 repology=("project: ${gives}")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install appimage
   install -Dm755 "Upscayl-${pkgver}-linux.AppImage" "${pkgdir}/usr/bin/${gives}"
 

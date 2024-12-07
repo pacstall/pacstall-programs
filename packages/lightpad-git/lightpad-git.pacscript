@@ -9,12 +9,12 @@ pkgdesc="A lightweight, simple and powerful application launcher"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "lightpad"
   meson build
 }
 
 package() {
-  cd "${_archive}"
+  cd "lightpad"
   DESTDIR="${pkgdir}" ninja -C build install
   mkdir -p "${pkgdir}/usr/bin"
   ln -sf "/usr/local/bin/com.github.libredeb.lightpad" "${pkgdir}/usr/bin/lightpad"

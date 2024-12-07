@@ -8,7 +8,7 @@ maintainer=("Anifyuli <anifyuliansyah@gmail.com>")
 depends=("python3-nautilus")
 
 package() {
-  cd "${_archive}"
+  cd "nautilus-open-in-blackbox"
   install -Dm644 -t "${pkgdir}/usr/share/nautilus-python/extensions" nautilus-open-in-blackbox.py
 }
 

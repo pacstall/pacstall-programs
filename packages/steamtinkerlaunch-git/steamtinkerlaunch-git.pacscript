@@ -19,7 +19,7 @@ maintainer=("echometerain <echometer@disroot.org>")
 pacdeps=("yad")
 
 package() {
-  cd "${_archive}"
+  cd "steamtinkerlaunch"
   install -Dm755 steamtinkerlaunch -t "${pkgdir}/usr/bin"
   install -d "${pkgdir}/usr/share/steamtinkerlaunch"
   cp -r collections eval guicfgs lang misc "${pkgdir}/usr/share/steamtinkerlaunch"

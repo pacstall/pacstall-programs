@@ -8,6 +8,6 @@ pkgdesc="Yet another fetch tool"
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 package() {
-  cd "${_archive}"
+  cd "yafetch"
   install -Dm755 yafetch "${pkgdir}/usr/bin/yafetch"
 }

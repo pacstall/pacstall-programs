@@ -10,17 +10,17 @@ breaks="${gives}-devel ${gives}"
 pkgdesc="Free chat client, fast and light, designed for many operating systems"
 
 prepare() {
-  cd "${_archive}"
+  cd "weechat"
   ./autogen.sh
 }
 
 build() {
-  cd "${_archive}"
+  cd "weechat"
   ./configure
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "weechat"
   make install DESTDIR="${pkgdir}"
 }

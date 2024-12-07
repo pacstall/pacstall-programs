@@ -1,6 +1,6 @@
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.11.0-061100
-	pkgver = 6.11
+	gives = linux-headers-6.12.0-061200
+	pkgver = 6.12
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -8,7 +8,7 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.11/amd64/linux-headers-6.11.0-061100_6.11.0-061100.202409151536_all.deb
-	sha256sums = 9d296b9e5172cf78bf2fc535c72667c8cb0160a457617b580e79e82897cd0280
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12/amd64/linux-headers-6.12.0-061200_6.12.0-061200.202411220723_all.deb
+	sha256sums = 2a301251c106ccf2830e7aa9fb174edebaacc4a9169d0dabbaddfb1478e47ae5
 
 pkgname = linux-headers-deb

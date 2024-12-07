@@ -24,12 +24,12 @@ sha256sums=(
 )
 
 build() {
-  cd "${_archive}"
+  cd "${srcdir}"
   sed -i "s/REPLACE_VERSION/${pkgver}/" "${srcdir}/${_gives}.desktop"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # AppImage
   install -Dm755 \
     "${_appimage}" \

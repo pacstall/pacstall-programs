@@ -10,11 +10,11 @@ pkgdesc="Distrotube's st build"
 breaks="st"
 
 build() {
-  cd "${_archive}"
+  cd "st-distrotube"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "st-distrotube"
   make install DESTDIR="${pkgdir}"
 }

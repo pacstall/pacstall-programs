@@ -9,7 +9,7 @@ source=("https://github.com/CachyOS/ananicy-rules.git")
 maintainer=("vigress8 <vig@disroot.org>")
 
 package() {
-  cd "${_archive}"
+  cd "ananicy-rules"
   install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${gives}"
   rm -f README.md LICENSE
   install -d "${pkgdir}/etc/ananicy.d"

@@ -1,0 +1,18 @@
+pkgbase = asdf-vm
+	pkgver = 0.14.1
+	pkgdesc = Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more
+	url = https://asdf-vm.com
+	arch = any
+	depends = curl
+	depends = git
+	optdepends = build-essential: Array of tools to build software
+	optdepends = bash-completion: For completions to work in Bash
+	optdepends = libncurses5-dev: Text-based UI library for terminal applications
+	optdepends = libncurses-dev: Text-based UI library for terminal applications
+	optdepends = unzip: Needed by some plugins, like Elixir
+	license = MIT
+	repology = project: asdf-vm
+	source = asdf-vm-0.14.1.tar.gz::https://github.com/asdf-vm/asdf/archive/v0.14.1.tar.gz
+	sha256sums = 308a7f2e1eb551e435458974fbe37dcef1c940e961ad40e47ae78cabc154543e
+
+pkgname = asdf-vm

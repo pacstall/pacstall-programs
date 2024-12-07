@@ -29,7 +29,7 @@ optdepends=("libvulkan1: Vulkan module and GPU fallback"
 breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app")
 
 build() {
-  cd "${_archive}"
+  cd "fastfetch"
   # Build fastfetch
   mkdir -p build/
   (
@@ -40,7 +40,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "fastfetch"
   # Install license
   install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${gives}"
 

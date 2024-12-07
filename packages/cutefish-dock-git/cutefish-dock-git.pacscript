@@ -9,18 +9,18 @@ depends=("fishui" "libcutefish" "libqt5svg5-dev")
 pkgdesc="CutefishOS application dock."
 
 prepare() {
-  cd "${_archive}"
+  cd "dock"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "dock"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "dock"
   make install DESTDIR="${pkgdir}"
 }

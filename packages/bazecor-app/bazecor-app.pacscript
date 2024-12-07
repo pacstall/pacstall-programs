@@ -17,7 +17,7 @@ maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: bazecor")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   mkdir -p "${pkgdir}/usr/share/icons/hicolor/256x256/apps/" "${pkgdir}/usr/share/applications/"
   echo "[Desktop Entry]
 Name=Bazecor

@@ -9,18 +9,18 @@ depends=("fishui" "libcutefish" "libdbusmenu-qt5-dev" "libqt5svg5-dev")
 pkgdesc="Top status bar of CutefishOS"
 
 prepare() {
-  cd "${_archive}"
+  cd "statusbar"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "statusbar"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "statusbar"
   make install DESTDIR="${pkgdir}"
 }

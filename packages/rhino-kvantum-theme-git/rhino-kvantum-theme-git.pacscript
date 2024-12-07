@@ -8,7 +8,7 @@ arch=("all")
 pkgver="0.0.1"
 
 package() {
-  cd "${_archive}"
+  cd "KvRhino"
   mkdir -p "${pkgdir}/etc/skel/.config/Kvantum"
   mv KvRhino{,Dark} "${pkgdir}/etc/skel/.config/Kvantum"
 }

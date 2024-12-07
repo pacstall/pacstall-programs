@@ -37,7 +37,7 @@ package() {
     gnuarch="aarch64"
   fi
 
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install appimage
   install -Dm755 "LibreWolf.${gnuarch}.AppImage" "${pkgdir}/usr/bin/${gives}"
 

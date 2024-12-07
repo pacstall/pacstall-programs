@@ -10,17 +10,17 @@ maintainer=("Elsie19 <elsie19@pm.me>")
 pkgdesc="Linux tool used to diagnose issues with power consumption and power management"
 
 prepare() {
-  cd "${_archive}"
+  cd "powertop"
   ./autogen.sh
   ./configure
 }
 
 build() {
-  cd "${_archive}"
+  cd "powertop"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "powertop"
   make DESTDIR="${pkgdir}" install
 }

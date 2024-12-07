@@ -12,7 +12,7 @@ repology=("project: ${gives}")
 maintainer=("vigress8 <vig@disroot.org>")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   chmod +x "${appimage}"
   ./"${appimage}" --appimage-extract "${gives}.desktop" &> /dev/null
   ./"${appimage}" --appimage-extract "${gives}.svg" &> /dev/null

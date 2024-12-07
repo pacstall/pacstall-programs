@@ -9,12 +9,12 @@ pkgdesc="A gui for Pacstall written in bash."
 maintainer=("cat-master21 <96554164+cat-master21@users.noreply.github.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "pacstall-gui"
   mkdir -p "${pkgdir}/usr/bin" "${pkgdir}/usr/share/applications"
 }
 
 package() {
-  cd "${_archive}"
+  cd "pacstall-gui"
   install -Dm755 pacstall-gui "${pkgdir}/usr/bin/pacstall-gui"
   install -Dm755 LICENSE "${pkgdir}/usr/share/licenses/pacstall-gui/LICENSE"
   mv -f ./pacstall-gui.desktop "${pkgdir}/usr/share/applications"

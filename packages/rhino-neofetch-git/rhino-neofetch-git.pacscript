@@ -11,6 +11,6 @@ pkgdesc="neofetch branded for Rhino Linux"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 package() {
-  cd "${_archive}"
+  cd "neofetch"
   DESTDIR="${pkgdir}" make install
 }

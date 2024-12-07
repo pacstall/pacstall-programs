@@ -9,16 +9,16 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="XFCE4 patch that allows Pine64 Devices to auto-rotate"
 
 prepare() {
-  cd "${_archive}"
+  cd "xfce4-settings"
   ./autogen.sh
 }
 
 build() {
-  cd "${_archive}"
+  cd "xfce4-settings"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "xfce4-settings"
   make install DESTDIR="${pkgdir}"
 }

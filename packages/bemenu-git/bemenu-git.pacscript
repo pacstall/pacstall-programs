@@ -16,13 +16,13 @@ makedepends=("scdoc" "wayland-protocols" "libcairo-dev" "libpango1.0-dev" "libxk
 breaks=("${gives}-bin" "${gives}")
 
 build() {
-  cd "${_archive}"
+  cd "bemenu"
   # Build nessesary files
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "bemenu"
   # Install license
   install -Dm644 "LICENSE-CLIENT" "LICENSE-LIB" -t "${pkgdir}/usr/share/licenses/${gives}"
 

@@ -21,7 +21,7 @@ repology=("project: tutanota" "repo: homebrew_casks")
 
 __created_desktop_file="yes"
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install AppImage
   install -Dm755 "tutanota-desktop-linux.AppImage" "${pkgdir}/usr/bin/${gives}"
 

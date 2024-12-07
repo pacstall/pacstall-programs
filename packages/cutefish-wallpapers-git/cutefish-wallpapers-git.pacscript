@@ -8,18 +8,18 @@ makedepends=("cmake" "ninja-build")
 pkgdesc="CutefishOS's system wallpaper."
 
 prepare() {
-  cd "${_archive}"
+  cd "wallpapers"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "wallpapers"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "wallpapers"
   make install DESTDIR="${pkgdir}"
 }

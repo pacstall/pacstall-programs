@@ -11,14 +11,14 @@ maintainer=("Zahrun <Zahrun@github.com>")
 arch=('amd64')
 
 build() {
-  cd "${_archive}"
+  cd "kalendar"
   mkdir build && cd build || exit
   cmake .. -DCMAKE_INSTALL_PREFIX="${pkgdir}/usr" -GNinja
   ninja -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "kalendar"
   cd build || exit
   cmake --install .
   install -Dm644 "../LICENSES/"* -t "${pkgdir}/usr/share/licenses/${pkgname}/"

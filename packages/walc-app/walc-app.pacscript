@@ -16,7 +16,7 @@ sha256sums=("6c1e5c004e9c4bc5a8cf15837ce0e6c884fb3ace6397aa6aa95a6738c1960560")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-deb")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install binary
   install -Dm755 "${gives}.AppImage" "${pkgdir}/usr/bin/${gives}"
 }

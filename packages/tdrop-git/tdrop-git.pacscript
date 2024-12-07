@@ -13,12 +13,12 @@ optdepends=(
   "tmuxinator: additional session support for tmux (for -s)"
 )
 prepare() {
-  cd "${_archive}"
+  cd "tdrop"
   gzip -9n "tdrop.1"
 }
 
 package() {
-  cd "${_archive}"
+  cd "tdrop"
   install -Dm755 "tdrop" "${pkgdir}/usr/bin/tdrop"
   install -Dm644 "tdrop.1.gz" "${pkgdir}/usr/man/man1/tdrop.1.gz"
   install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"

@@ -10,6 +10,6 @@ depends=("git" "bsdmainutils")
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 package() {
-  cd "${_archive}"
+  cd "git-extras"
   make DESTDIR="${pkgdir}" PREFIX=/usr SYSCONFDIR=/etc install
 }

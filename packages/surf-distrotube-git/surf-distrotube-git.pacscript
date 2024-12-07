@@ -11,12 +11,12 @@ pkgdesc="Heavily-patched customized build of the Suckless surf web browser."
 sha256sums=("88a73c57558d0d30752184f517d0b6930133ab506383efd394b60d9a04e6513f")
 
 build() {
-  cd "${_archive}"
+  cd "surf-distrotube"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "surf-distrotube"
   make install DESTDIR="${pkgdir}"
   install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${gives}"
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"

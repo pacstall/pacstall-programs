@@ -9,18 +9,18 @@ depends=("fishui" "libcutefish")
 pkgdesc="CutefishOS Calculator."
 
 prepare() {
-  cd "${_archive}"
+  cd "calculator"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "calculator"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "calculator"
   make install DESTDIR="${pkgdir}"
 }

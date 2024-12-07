@@ -10,13 +10,13 @@ breaks=("aseprite" "libresprite-bin" "libresprite-app" "libresprite-deb" "libres
 gives="libresprite"
 
 prepare() {
-  cd "${_archive}"
+  cd "LibreSprite"
   git fetch --all --tags --prune
   git submodule update --init --recursive
   mkdir build
 }
 build() {
-  cd "${_archive}"
+  cd "LibreSprite"
   cd build
   cmake -G Ninja \
     -DWITH_DESKTOP_INTEGRATION=ON \
@@ -41,7 +41,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "LibreSprite"
   cd build
   DESTDIR="${pkgdir}" ninja install
   # shellcheck disable=SC2103

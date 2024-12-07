@@ -8,7 +8,7 @@ maintainer=("D-Brox <BroxZuka@protonmail.com>")
 depends=("curl" "perl" "dbus")
 
 package() {
-  cd "${_archive}"
+  cd "gnome-shell-extension-installer"
   install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
   install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${gives}"
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"
