@@ -1,6 +1,7 @@
 pkgname="eza-git"
 gives="eza"
 source=("https://github.com/eza-community/eza.git")
+arch=("any")
 pkgver="0.18.15"
 url='https://the.exa.website/'
 makedepends=("cargo" "libgit2-dev" "cmake" "rustc" "pandoc")
@@ -10,12 +11,12 @@ maintainer=("Elsie19 <elsie19@pm.me>")
 incompatible=('debian:bookworm')
 
 prepare() {
-  cd "${_archive}"
+  cd "eza"
   mkdir -p target/man1 target/man5
 }
 
 build() {
-  cd "${_archive}"
+  cd "eza"
   cargo build -j"${NCPU}" --release --locked
   pandoc --standalone -f markdown -t man "man/eza.1.md" > target/man1/eza.1
   pandoc --standalone -f markdown -t man "man/eza_colors.5.md" > target/man5/eza_colors.5
@@ -23,7 +24,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "eza"
   # Install package
   install -Dm755 target/release/eza -t "${pkgdir}/usr/bin"
   # Install completions

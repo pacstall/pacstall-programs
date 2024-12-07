@@ -8,6 +8,7 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="walc-app"
 gives="walc"
+arch=("amd64")
 pkgver="0.2.1"
 pkgdesc="An unofficial WhatsApp Desktop client for linux systems."
 source=("https://github.com/cstayyab/WALC/releases/download/v${pkgver}/${gives}.AppImage")
@@ -15,7 +16,7 @@ sha256sums=("6c1e5c004e9c4bc5a8cf15837ce0e6c884fb3ace6397aa6aa95a6738c1960560")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-deb")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install binary
   install -Dm755 "${gives}.AppImage" "${pkgdir}/usr/bin/${gives}"
 }

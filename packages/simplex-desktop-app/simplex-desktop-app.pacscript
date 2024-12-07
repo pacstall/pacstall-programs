@@ -1,6 +1,6 @@
 pkgname='simplex-desktop-app'
 gives='simplex-desktop'
-pkgver='5.8.0'
+pkgver='6.1.1'
 pkgdesc='The first messaging platform with no user identifiers - 100% private by design (GUI)'
 arch=('amd64')
 url='https://simplex.chat'
@@ -8,7 +8,7 @@ license=('AGPL-3.0-or-later')
 source=("${gives}::https://github.com/simplex-chat/simplex-chat/releases/download/v${pkgver}/${gives}-x86_64.AppImage")
 repology=("project: ${gives}")
 maintainer=('vigress8 <vig@disroot.org>')
-sha512sums=('4183f6018dc2f08f82f3dd9ac6d6834cce13919c201d38ba792074b965de9c5b5071cdee37fb560cdd3479d26d0859a08a96ad61d358a6d0b0d2a4148b4355bc')
+sha512sums=('15c894d4b91852405268be381db3d88a9a01745e2a89d3930bbfd019b4ddbfbb88ee0611a7759e4d4ebfaecf7f96547d890fbda826fafd86504c256865ceb70e')
 
 package() {
   chmod +x "${gives}"

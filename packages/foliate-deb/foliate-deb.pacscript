@@ -1,6 +1,7 @@
 pkgname="foliate-deb"
 gives="foliate"
 replaces=("${gives}")
+arch=("all")
 pkgver="3.0.1"
 source=("https://github.com/johnfactotum/${gives}/releases/download/${pkgver}/${gives}_${pkgver}_all.deb")
 sha256sums=("933bb5235586cb59a2aa7d5df056cae2b504c5e928621ed6d6e084870279c195")

@@ -1,5 +1,6 @@
 pkgname="mcontrolcenter-bin"
 gives="mcontrolcenter"
+arch=("amd64")
 pkgver="0.4.1"
 depends=("libqt5widgets5")
 source=("https://github.com/dmitry-s93/MControlCenter/releases/download/${pkgver}/MControlCenter-${pkgver}-bin.tar.gz")

@@ -1,6 +1,7 @@
 pkgbase = papirus-folders
 	pkgver = 1.13.1
 	pkgdesc = Papirus folder theme
+	arch = all
 	depends = papirus-icon-theme
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: papirus-folders

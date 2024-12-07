@@ -1,0 +1,13 @@
+pkgbase = ungoogled-chromium-deb
+	gives = ungoogled-chromium
+	pkgver = 130.0.6723.91-stable1
+	pkgdesc = Google Chromium, sans with Google integration
+	arch = amd64
+	replaces = ungoogled-chromium
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	maintainer = Runa Inoue Anderson <runachin@disroot.org>
+	repology = project: ungoogled-chromium
+	source = https://github.com/berkley4/ungoogled-chromium-debian/releases/download/130.0.6723.91-prestable1/ungoogled-chromium_130.0.6723.91-stable1_amd64.deb
+	sha256sums = 88728b3621c13289ae676a72722ea03391a5a5cd31c347bf9a4be8d02f8a46cc
+
+pkgname = ungoogled-chromium-deb

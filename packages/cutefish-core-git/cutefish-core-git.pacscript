@@ -1,6 +1,7 @@
 pkgname="cutefish-core-git"
 gives="cutefish-core"
 source=("https://github.com/cutefishos/core.git")
+arch=("any")
 pkgver="0.8"
 license="GPL-3.0"
 makedepends=("extra-cmake-modules" "ninja-build" "qttools5-dev-tools" "qtbase5-dev" "qtdeclarative5-dev" "qtquickcontrols2-5-dev" "qttools5-dev")
@@ -8,18 +9,18 @@ depends=("fishui" "libpulse-dev" "libxtst6" "libpolkit-agent-1-dev" "libxcb-rand
 pkgdesc="System backend and start session and more."
 
 prepare() {
-  cd "${_archive}"
+  cd "core"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "core"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "core"
   make install DESTDIR="${pkgdir}"
 }

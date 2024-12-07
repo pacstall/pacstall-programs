@@ -1,6 +1,7 @@
 pkgbase = coreutils-single
 	pkgver = 9.4
 	pkgdesc = GNU Core Utilities (multicall binary)
+	arch = any
 	makedepends = bison
 	makedepends = gettext
 	makedepends = gperf

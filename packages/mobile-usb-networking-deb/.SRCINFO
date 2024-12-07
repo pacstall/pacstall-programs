@@ -2,6 +2,7 @@ pkgbase = mobile-usb-networking-deb
 	gives = mobile-usb-networking
 	pkgver = 0.0.4
 	pkgdesc = USB networking configuration for mobile devices
+	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: mobile-usb-networking
 	source = https://repo.mobian-project.org/pool/main/m/mobile-usb-networking/mobile-usb-networking_0.0.4_all.deb

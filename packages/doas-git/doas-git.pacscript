@@ -14,6 +14,7 @@ source=(
   "doas-pam::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/doas-git/doas-pam"
   "doas.conf::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/doas-git/doas.conf"
 )
+arch=("any")
 pkgver="6.3p9"
 breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app")
 makedepends=("make" "bison" "flex" "libpam0g-dev")
@@ -24,12 +25,12 @@ sha512sums=(
 )
 
 build() {
-  cd "${_archive}"
+  cd "doas"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "doas"
   # Install license
   install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${gives}/LICENSE"
 

@@ -1,5 +1,6 @@
 pkgname="cutefish-settings-git"
 gives="cutefish-settings"
+arch=("any")
 pkgver="0.8"
 source=("https://github.com/cutefishos/settings.git")
 license="GPL-3.0"
@@ -8,18 +9,18 @@ depends=("fishui" "libfontconfig1" "libfreetype-dev" "libicu-dev" "libkf5coreadd
 pkgdesc="System Settings application for Cutefish Desktop."
 
 prepare() {
-  cd "${_archive}"
+  cd "settings"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "settings"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "settings"
   make install DESTDIR="${pkgdir}"
 }

@@ -3,6 +3,7 @@ pkgbase = python3-moddb
 	pkgver = 0.11.0
 	pkgdesc = A Python scraper to access ModDB mods, games and more as objects
 	url = https://github.com/ClementJ18/moddb
+	arch = any
 	depends = python3-bs4
 	depends = python3-requests
 	makedepends = python3-build

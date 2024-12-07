@@ -1,5 +1,6 @@
 pkgname="cutefish-dock-git"
 gives="cutefish-dock"
+arch=("any")
 pkgver="0.8"
 source=("https://github.com/cutefishos/dock.git")
 license="GPL-3.0"
@@ -8,18 +9,18 @@ depends=("fishui" "libcutefish" "libqt5svg5-dev")
 pkgdesc="CutefishOS application dock."
 
 prepare() {
-  cd "${_archive}"
+  cd "dock"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "dock"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "dock"
   make install DESTDIR="${pkgdir}"
 }

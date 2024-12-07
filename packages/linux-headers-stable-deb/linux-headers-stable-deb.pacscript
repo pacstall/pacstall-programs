@@ -1,10 +1,10 @@
 pkgname="linux-headers-stable-deb"
-gives="linux-headers-6.10.9-061009"
-pkgver="6.10.9"
-buildver="6.10.9-061009.202409080636"
+gives="linux-headers-6.12.1-061201"
+pkgver="6.12.1"
+buildver="6.12.1-061201.202411221622"
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb")
 pkgdesc="Ubuntu Linux stable kernel (Headers)"
-sha256sums=("eda2e637b9118de9135764665eae75b4568c02ba62e3e3bfc0350067416a330f")
-arch=('any')
+sha256sums=("689fdbdb1f34d07b2dbaa08c9471103bf6af2e6a63a2082c3dca6ebac3fac115")
+arch=('all')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: distrowatch")

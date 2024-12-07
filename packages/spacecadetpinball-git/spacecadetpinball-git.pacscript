@@ -20,18 +20,19 @@ sha256sums=(
   "3cc5dfd914c2ac41b03f006c7ccbb59d6f9e4c32ecfd1906e718c8e47f130f4a"
   "6edc9d9e73f430b025d0efe09ecd9027d38f7c2e3562de470a8057939fb1889f"
 )
+arch=("any")
 pkgver="2.0.1"
 depends=("timidity" "freepats" "libsdl2-2.0-0" "libsdl2-mixer-2.0-0")
 makedepends=("libsdl2-dev" "libsdl2-mixer-dev" "unrar" "cmake")
 breaks=("${gives}" "${gives}-bin" "${gives}-app" "${gives}-deb")
 
 prepare() {
-  cd "${_archive}"
+  cd "spacecadetpinball"
   unrar e -y "${srcdir}"/Space_Cadet.rar Space_Cadet/
 }
 
 build() {
-  cd "${_archive}"
+  cd "spacecadetpinball"
   cmake -B "build" \
     -Wno-dev \
     -DCMAKE_BUILD_TYPE=Release \
@@ -41,7 +42,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "spacecadetpinball"
   # Install LICENSE
   install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${gives}"
 

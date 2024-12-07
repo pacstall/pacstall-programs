@@ -2,6 +2,7 @@ pkgbase = tre-git
 	gives = tre
 	pkgver = 0.4.0
 	pkgdesc = Tree command, improved
+	arch = all
 	makedepends = cargo
 	makedepends = rustc
 	incompatible = debian:bullseye

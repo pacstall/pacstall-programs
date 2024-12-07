@@ -1,5 +1,6 @@
 pkgname="steamtinkerlaunch-git"
 source=("https://github.com/frostworx/steamtinkerlaunch.git")
+arch=("any")
 pkgver="12.12"
 depends=("gawk" "xdotool" "wget" "vim" "xdotool" "x11-utils")
 breaks=("steamtinkerlaunch" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-deb" "${pkgname}-bin")
@@ -18,7 +19,7 @@ maintainer=("echometerain <echometer@disroot.org>")
 pacdeps=("yad")
 
 package() {
-  cd "${_archive}"
+  cd "steamtinkerlaunch"
   install -Dm755 steamtinkerlaunch -t "${pkgdir}/usr/bin"
   install -d "${pkgdir}/usr/share/steamtinkerlaunch"
   cp -r collections eval guicfgs lang misc "${pkgdir}/usr/share/steamtinkerlaunch"

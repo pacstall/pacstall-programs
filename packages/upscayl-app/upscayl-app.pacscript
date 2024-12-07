@@ -1,5 +1,6 @@
 pkgname="upscayl-app"
 gives="upscayl"
+arch=("amd64")
 pkgver="2.5.5"
 pkgdesc="Free and Open Source AI Image Upscaler for Linux, MacOS and Windows"
 maintainer=("0x262D <pacstall@copypaste.anonaddy.me>")
@@ -17,7 +18,7 @@ breaks=("${gives}" "${gives}-deb" "${gives}-bin" "${gives}-git")
 repology=("project: ${gives}")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install appimage
   install -Dm755 "Upscayl-${pkgver}-linux.AppImage" "${pkgdir}/usr/bin/${gives}"
 

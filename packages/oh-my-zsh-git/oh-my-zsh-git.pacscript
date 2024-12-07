@@ -1,5 +1,6 @@
 pkgname="oh-my-zsh-git"
 gives="${pkgname%-git}"
+arch=("all")
 pkgver="0.0.1"
 pkgrel="2"
 pkgdesc="A community-driven framework for managing your zsh configuration"

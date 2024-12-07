@@ -3,6 +3,7 @@ pkgbase = quintom-cursor-theme-git
 	pkgver = 0.0.1
 	pkgrel = 2
 	pkgdesc = A cursor theme designed to look decent
+	arch = all
 	maintainer = Elsie19 <elsie19@pm.me>
 	source = https://gitlab.com/Burning_Cube/quintom-cursor-theme.git
 

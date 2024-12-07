@@ -1,8 +1,9 @@
 pkgname="bitwig-studio-deb"
 repology=("project: bitwig-studio")
 gives="bitwig-studio"
-pkgver="5.1.8"
-source=("https://downloads.bitwig.com/stable/${pkgver}/${gives}-${pkgver}.deb")
+arch=("amd64")
+pkgver="5.2.5"
+source=("https://www.bitwig.com/dl/Bitwig%20Studio/${pkgver}/installer_linux/${gives}-${pkgver}.deb")
 pkgdesc="Digital audio workstation for music production, remixing and live performance"
-sha256sums=("2b134b69efee4d82f59bf5feffbc2bee184a7f0df536907d330f51cdfad3baeb")
+sha256sums=("c7a530ea8f9ade702b326d44bf9cad1ad2c3190debf3bd96aa50b4db6cd3f079")
 maintainer=("Zahrun <Zahrun@github.com>")

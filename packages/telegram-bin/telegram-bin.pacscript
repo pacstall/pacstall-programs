@@ -1,5 +1,6 @@
 pkgname="telegram-bin"
 gives="telegram"
+arch=("amd64")
 pkgver="4.14.9"
 url="https://telegram.org/"
 pkgdesc="Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed"

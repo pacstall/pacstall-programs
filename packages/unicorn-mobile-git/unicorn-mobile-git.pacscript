@@ -1,5 +1,6 @@
 pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
+arch=("all")
 pkgver="0.0.1"
 pkgrel="4"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
@@ -17,7 +18,7 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("debian:*")
 
 build() {
-  cd "${_archive}"
+  cd "unicorn"
   mkdir -p "${pkgdir}/usr/share/backgrounds"
   mkdir -p "${pkgdir}/usr/share/doc"
   mkdir -p "${pkgdir}/etc/skel/.config"
@@ -38,7 +39,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "unicorn"
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
   # Install

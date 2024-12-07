@@ -1,6 +1,7 @@
 pkgname="tabby-deb"
 gives="tabby-terminal"
 breaks=("tabby" "tabby-app")
+arch=("amd64")
 pkgver="1.0.197"
 pkgdesc="A terminal for the modern age"
 sha256sums=("aa1cc7936d80d8eb1bc0a50f55abb5120d1172877ffbe7bb2548d30f4c799fe5")

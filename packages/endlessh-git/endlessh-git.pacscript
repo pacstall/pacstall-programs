@@ -9,17 +9,18 @@ sha256sums=(
   "SKIP"
   "f92a2341103a7c6243d7cbc32a3400e0f01ecd5fae12a0731029f6c50ba9f451"
 )
+arch=("any")
 pkgver="1.1"
 pkgdesc="SSH tarpit that very slowly sends an endless, random SSH banner"
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 build() {
-  cd "${_archive}"
+  cd "endlessh"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "endlessh"
   make install DESTDIR="${pkgdir}"
   install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${gives}"
   install -Dm644 UNLICENSE -t "${pkgdir}/usr/share/licenses/${gives}"

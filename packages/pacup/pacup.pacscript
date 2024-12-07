@@ -1,4 +1,5 @@
 pkgname="pacup"
+arch=("all")
 pkgver="3.3.6"
 pkgdesc="Help maintainers update pacscripts (next-gen Perl rewrite)"
 depends=(

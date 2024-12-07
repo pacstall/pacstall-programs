@@ -1,12 +1,12 @@
 pkgbase = onlyoffice-desktopeditors-deb
 	gives = onlyoffice-desktopeditors
-	pkgver = 8.1.1
+	pkgver = 8.2.2
 	pkgdesc = Free office suite that combines text, spreadsheet and presentation
 	arch = amd64
 	replaces = onlyoffice-desktopeditors
 	maintainer = সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>
 	repology = project: onlyoffice-desktopeditors
-	source = https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v8.1.1/onlyoffice-desktopeditors_amd64.deb
-	sha256sums = 47058861c6d89630ea59125c5c20ce0e355e627a7dc6b78d18eda5d9aa9627dc
+	source = https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v8.2.2/onlyoffice-desktopeditors_amd64.deb
+	sha256sums = 0f02a93cccac2e18c00626141836ecda31b4960473597f97e21afe2dbda5c6a9
 
 pkgname = onlyoffice-desktopeditors-deb

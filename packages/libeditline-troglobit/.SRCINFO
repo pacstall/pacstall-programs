@@ -2,6 +2,7 @@ pkgbase = libeditline-troglobit
 	pkgver = 1.17.1
 	pkgdesc = A readline() replacement for UNIX without termcap (ncurses)
 	url = https://troglobit.com/projects/editline/
+	arch = any
 	makedepends = automake
 	makedepends = libtool
 	license = custom:permissive

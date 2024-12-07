@@ -4,6 +4,7 @@ pkgbase = unicorn-desktop-git
 	pkgrel = 4
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
+	arch = all
 	depends = xfwm4
 	depends = xfdashboard
 	depends = xfdashboard-plugins

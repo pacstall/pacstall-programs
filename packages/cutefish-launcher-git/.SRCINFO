@@ -2,6 +2,7 @@ pkgbase = cutefish-launcher-git
 	gives = cutefish-launcher
 	pkgver = 0.8
 	pkgdesc = CutefishOS's full-screen application launcher
+	arch = any
 	depends = fishui
 	depends = libcutefish
 	depends = libkf5windowsystem-dev

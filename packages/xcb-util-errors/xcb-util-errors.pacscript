@@ -3,6 +3,7 @@ gives="lib${pkgname}"
 provides=("libxcb-errors0" "libxcb-errors-dev")
 replaces=("${provides[@]}")
 conflicts=("${provides[@]}")
+arch=("any")
 pkgver="1.0.1"
 pkgrel="2"
 pkgdesc="XCB errors library"

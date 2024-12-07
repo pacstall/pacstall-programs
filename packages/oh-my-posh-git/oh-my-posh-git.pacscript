@@ -1,6 +1,7 @@
 pkgname="oh-my-posh-git"
 gives="oh-my-posh"
 source=("https://github.com/JanDeDobbeleer/oh-my-posh.git")
+arch=("any")
 pkgver="20.0.0"
 pkgrel="2"
 makedepends=("golang-1.22-go")
@@ -13,14 +14,14 @@ incompatible=('*:bookworm')
 external_connection=true
 
 build() {
-  cd "${_archive}"
+  cd "oh-my-posh"
   cd src || exit 1
   sed -i "s/go 1.22.3/go 1.22.2/g" go.mod
   /usr/lib/go-1.22/bin/go build -o "${gives}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "oh-my-posh"
   install -Dm644 COPYING -t "${pkgdir}/usr/share/licenses/${pkgname}"
   install -Dm755 "src/${gives}" -t "${pkgdir}/usr/bin/"
   install -d "${pkgdir}/usr/share/oh-my-posh/themes"

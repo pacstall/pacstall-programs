@@ -1,4 +1,5 @@
 pkgname="surf"
+arch=("any")
 pkgver="2.1"
 source=("https://dl.suckless.org/${pkgname}/${pkgname}-${pkgver}.tar.gz")
 makedepends=("make")

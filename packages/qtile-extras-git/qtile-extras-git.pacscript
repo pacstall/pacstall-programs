@@ -1,6 +1,7 @@
 pkgname="qtile-extras-git"
 gives="qtile-extras"
 source=("https://github.com/elParaguayo/${gives}.git")
+arch=("all")
 pkgver="0.23.1"
 pkgdesc="A list of mods developed by elParaguayo for Qtile"
 pacdeps=("qtile-git")
@@ -9,7 +10,7 @@ makedepends=("python3-venv" "python3-pip")
 external_connection="true"
 
 build() {
-  cd "${_archive}"
+  cd "qtile-extras"
   modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "oracular" "trixie" "testing" "unstable")
   for mod in "${modern[@]}"; do
     [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")
@@ -20,7 +21,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "qtile-extras"
   modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "oracular" "trixie" "testing" "unstable")
   for mod in "${modern[@]}"; do
     [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")

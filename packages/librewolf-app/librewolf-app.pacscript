@@ -1,16 +1,19 @@
-maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgname="librewolf-app"
 gives="librewolf"
-pkgver="125.0.3-1"
+pkgver="132.0.1-1"
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom."
 arch=('amd64' 'arm64')
+maintainer=(
+  "Oren Klopfer <oren@taumoda.com>"
+  "James Ed Randson <jimedrand@disroot.org>"
+)
 sha256sums_amd64=(
-  "103bf16bdbea3bdb9910febc1635fc3ec715a16f49607908c08660fab30c6915"
+  "4101b9bd125593794e1fa6e41c169fa2e06793a916a450d2ece9b5c7fbbd1a6f"
   "SKIP"
   "SKIP"
 )
 sha256sums_arm64=(
-  "c1a067e09e2f9d98f9d7f6f435a8767b06ed405c7c46b26b1b59eb2aa961c55b"
+  "30936c14b913dbdda492fe4cd20baba4481587ef8d0051a44714fed13b921dc2"
   "SKIP"
   "SKIP"
 )
@@ -34,7 +37,7 @@ package() {
     gnuarch="aarch64"
   fi
 
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install appimage
   install -Dm755 "LibreWolf.${gnuarch}.AppImage" "${pkgdir}/usr/bin/${gives}"
 

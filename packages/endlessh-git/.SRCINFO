@@ -2,6 +2,7 @@ pkgbase = endlessh-git
 	gives = endlessh
 	pkgver = 1.1
 	pkgdesc = SSH tarpit that very slowly sends an endless, random SSH banner
+	arch = any
 	breaks = endlessh
 	breaks = endlessh-deb
 	breaks = endlessh-app

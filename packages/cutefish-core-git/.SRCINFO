@@ -2,6 +2,7 @@ pkgbase = cutefish-core-git
 	gives = cutefish-core
 	pkgver = 0.8
 	pkgdesc = System backend and start session and more.
+	arch = any
 	depends = fishui
 	depends = libpulse-dev
 	depends = libxtst6

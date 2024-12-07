@@ -1,5 +1,6 @@
 pkgname="libcutefish-git"
 gives="libcutefish"
+arch=("any")
 pkgver="0.7"
 source=("https://github.com/cutefishos/libcutefish.git")
 license="GPL-3.0"
@@ -8,18 +9,18 @@ depends=("kscreen" "modemmanager-qt-dev" "libkf5networkmanagerqt-dev" "libqt5qui
 pkgdesc="Cutefish System Library."
 
 prepare() {
-  cd "${_archive}"
+  cd "libcutefish"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "libcutefish"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "libcutefish"
   make install DESTDIR="${pkgdir}"
 }

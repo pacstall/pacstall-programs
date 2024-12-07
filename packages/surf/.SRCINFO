@@ -1,6 +1,7 @@
 pkgbase = surf
 	pkgver = 2.1
 	pkgdesc = surf is a simple web browser based on WebKit2/GTK+.
+	arch = any
 	depends = libc6
 	depends = libgcr-3-dev
 	depends = libglib2.0-dev

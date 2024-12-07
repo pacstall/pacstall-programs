@@ -1,4 +1,5 @@
 pkgname="helix"
+arch=("any")
 pkgver="24.07"
 repology=("project: helix")
 source=("https://github.com/helix-editor/helix/releases/download/${pkgver}/helix-${pkgver}-source.tar.xz")

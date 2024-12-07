@@ -1,5 +1,6 @@
 pkgname="cutefish-kwin-plugins-git"
 gives="cutefish-kwin-plugins"
+arch=("any")
 pkgver="0.8"
 source=("https://github.com/cutefishos/kwin-plugins.git")
 license="GPL-3.0"
@@ -8,19 +9,19 @@ depends=("libkf5config-dev" "libkdecorations2-dev" "libkf5guiaddons-dev" "libkf5
 pkgdesc="CutefishOS KWin Plugins."
 
 prepare() {
-  cd "${_archive}"
+  cd "kwin-plugins"
   mkdir build
 }
 
 build() {
-  cd "${_archive}"
+  cd "kwin-plugins"
   cd build
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "kwin-plugins"
   cd build
   make install DESTDIR="${pkgdir}"
 }

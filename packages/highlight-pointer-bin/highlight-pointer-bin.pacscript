@@ -1,6 +1,7 @@
 maintainer=("0x262D <pacstall@copypaste.anonaddy.me>")
 pkgname="highlight-pointer-bin"
 gives="highlight-pointer"
+arch=("amd64")
 pkgver="1.1.3"
 pkgdesc="Highlight mouse pointer/cursor using a colored dot"
 source=("https://github.com/swillner/${gives}/releases/download/v${pkgver}/${gives}")

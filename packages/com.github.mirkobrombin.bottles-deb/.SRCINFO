@@ -2,6 +2,7 @@ pkgbase = com.github.mirkobrombin.bottles-deb
 	gives = com.github.mirkobrombin.bottles
 	pkgver = 1
 	pkgdesc = Version 1 of Bottles allowing you to easily install Proton and Wine prefixes.
+	arch = amd64
 	breaks = com.github.mirkobrombin.bottles-v1
 	breaks = com.github.mirkobrombin.bottles-git
 	breaks = com.github.mirkobrombin.bottles-bin

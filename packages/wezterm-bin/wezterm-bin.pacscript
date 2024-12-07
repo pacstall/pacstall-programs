@@ -1,5 +1,6 @@
 pkgname="wezterm-bin"
 gives="wezterm"
+arch=("amd64")
 pkgver="20230712-072601-f4abf8fd"
 pkgdesc="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
 source=("https://github.com/wez/wezterm/releases/download/${pkgver}/wezterm-${pkgver}.Ubuntu22.04.tar.xz")

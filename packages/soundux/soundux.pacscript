@@ -1,4 +1,5 @@
 pkgname="soundux"
+arch=("any")
 pkgver="0.2.7"
 source=("https://github.com/Soundux/Soundux/releases/download/${pkgver}/soundux-${pkgver}.tar.gz")
 makedepends=("cmake" "libx11-dev" "libxi-dev" "libwebkit2gtk-4.0-dev" "libappindicator3-1" "libappindicator3-dev" "libssl-dev" "libpulse-dev" "libpipewire-0.3-dev")

@@ -1,5 +1,6 @@
 pkgname="shellharden"
 gives="shellharden"
+arch=("any")
 pkgver="4.3.0"
 repology=("project: ${gives}")
 source=("https://github.com/anordal/shellharden/archive/refs/tags/v${pkgver}.zip")

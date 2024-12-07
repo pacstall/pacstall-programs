@@ -1,5 +1,6 @@
 pkgname="rhino-pkg-git"
 source=("https://github.com/rhino-linux/rhino-pkg.git")
+arch=("all")
 pkgver="0.1.2"
 pkgrel="2"
 gives="rhino-pkg"

@@ -2,6 +2,7 @@ maintainer=("Paul Cosma (saenai) <paul.cosma97@gmail.com>")
 
 gives="tutanota"
 pkgname="${gives}-app"
+arch=("amd64")
 pkgver="218.240227.0"
 pkgdesc="Tutanota is the world's most secure email service, easy to use and private by design."
 source=(
@@ -20,7 +21,7 @@ repology=("project: tutanota" "repo: homebrew_casks")
 
 __created_desktop_file="yes"
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install AppImage
   install -Dm755 "tutanota-desktop-linux.AppImage" "${pkgdir}/usr/bin/${gives}"
 

@@ -1,5 +1,6 @@
 pkgname="truckersmp-cli"
 gives="truckersmp-cli"
+arch=("any")
 pkgver=0.10.1
 repology=("project: truckersmp-cli")
 breaks=("${gives}-git")

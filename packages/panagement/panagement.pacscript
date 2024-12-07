@@ -1,5 +1,6 @@
 pkgname="panagement"
 _name="Panagement"
+arch=("any")
 pkgver="2.4"
 source=("https://www.auburnsounds.com/downloads/${_name}-FREE-${pkgver}.zip")
 pkgdesc="Panagement is the spatialization laboratory that has found its way to thousands of studios around the world. Panagement gives you raw power over your stereo tracks."

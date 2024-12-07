@@ -2,6 +2,7 @@ pkgbase = httptoolkit-deb
 	gives = httptoolkit
 	pkgver = 1.5.1
 	pkgdesc = HTTP(S) debugging, development & testing tool.
+	arch = amd64
 	breaks = httptoolkit
 	breaks = httptoolkit-git
 	breaks = httptoolkit-bin

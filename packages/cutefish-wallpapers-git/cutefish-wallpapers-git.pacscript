@@ -1,25 +1,25 @@
 pkgname="cutefish-wallpapers-git"
 gives="cutefish-wallpapers"
-pkgver="0.2-1"
 source=("https://github.com/cutefishos/wallpapers.git")
+arch=("any")
 pkgver="1.0"
 license="GPL-3.0"
 makedepends=("cmake" "ninja-build")
 pkgdesc="CutefishOS's system wallpaper."
 
 prepare() {
-  cd "${_archive}"
+  cd "wallpapers"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "wallpapers"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "wallpapers"
   make install DESTDIR="${pkgdir}"
 }

@@ -1,6 +1,7 @@
 pkgbase = tmux
 	pkgver = 3.3
 	pkgdesc = A terminal multiplexer
+	arch = any
 	makedepends = gcc
 	makedepends = make
 	makedepends = pkg-config

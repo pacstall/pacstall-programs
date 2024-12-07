@@ -1,5 +1,6 @@
 pkgname="suyu-app"
 gives="suyu"
+arch=("amd64")
 pkgver="0.0.3"
 pkgdesc="Continuation of yuzu, the world's most popular, open-source, Nintendo Switch emulator"
 url='https://suyu.dev'
@@ -13,7 +14,7 @@ maintainer=("vigress8 <vig@disroot.org>")
 repology=("project: ${gives}")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   chmod +x "${appimage}"
   ./"${appimage}" --appimage-extract usr/share
   cp -a squashfs-root/usr "${pkgdir}"

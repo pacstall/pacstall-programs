@@ -1,6 +1,7 @@
 pkgname="pdf-mix-tool-git"
 gives="pdf-mix-tool"
 source=("https://gitlab.com/scarpetta/pdfmixtool.git")
+arch=("any")
 pkgver="1.1.1"
 makedepends=("libqpdf-dev" "make" "cmake" "libmagick++-6.q16-dev" "libqt5svg5-dev" "qtbase5-dev" "qtbase5-dev-tools" "qttools5-dev")
 depends=("libqpdf28")
@@ -10,18 +11,18 @@ optdepends=("ImageMagick: image manipulation tool")
 maintainer=("echometerain <echometer@disroot.org>")
 
 prepare() {
-  cd "${_archive}"
+  cd "pdfmixtool"
   mkdir build
 }
 
 build() {
-  cd "${_archive}"
+  cd "pdfmixtool"
   cd build || return 1
   cmake .. -DCMAKE_INSTALL_PREFIX="/usr" -DCMAKE_BUILD_TYPE=Release
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "pdfmixtool"
   make install DESTDIR="${pkgdir}"
 }

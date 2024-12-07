@@ -1,6 +1,7 @@
 pkgname="libdrm"
 gives="${pkgname}"
 pkgdesc="Userspace interface to kernel DRM services"
+arch=("any")
 pkgver="2.4.122"
 pkgrel="2"
 provides=("libdrm2=${pkgver}"

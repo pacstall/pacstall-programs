@@ -1,6 +1,7 @@
 pkgbase = nerd-fonts-cascadia-code
 	pkgver = 3.1.1
 	pkgdesc = Patched font Cascadia Code from Nerd Fonts library
+	arch = all
 	replaces = nerd-fonts-cascadia-code
 	maintainer = heyzsh <haidarzsh@gmail.com>
 	repology = project: fonts:nerd-fonts

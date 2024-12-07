@@ -80,6 +80,7 @@ depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 breaks=("${pkgname}" "${pkgname}-nox")
 replaces=("${pkgname}" "${pkgname}-nox")
 source=("https://github.com/emacs-mirror/emacs.git")
+arch=("any")
 pkgver="29.1"
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then
@@ -172,7 +173,7 @@ if [[ ${DOCS_PDF} == "YES" && ! -d "/usr/local/texlive" ]]; then
 fi
 
 prepare() {
-  cd "${_archive}"
+  cd "emacs"
   [[ -x configure ]] || (./autogen.sh git && ./autogen.sh autoconf)
   if [[ ${CHECK} == "YES" ]]; then
     make -j"${NCPU}" check
@@ -180,7 +181,7 @@ prepare() {
 }
 
 build() {
-  cd "${_archive}"
+  cd "emacs"
   local _conf=(
     --prefix=/usr
     --sysconfdir=/etc
@@ -286,7 +287,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "emacs"
   make -j"${NCPU}" DESTDIR="${pkgdir}" install
 
   # Install optional documentation formats

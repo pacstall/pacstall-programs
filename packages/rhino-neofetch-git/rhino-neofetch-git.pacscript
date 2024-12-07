@@ -1,5 +1,6 @@
 pkgname="rhino-neofetch-git"
 source=("https://github.com/rhino-linux/neofetch.git")
+arch=("all")
 pkgver="0.0.1"
 gives="rhino-neofetch"
 provides=('neofetch')
@@ -10,6 +11,6 @@ pkgdesc="neofetch branded for Rhino Linux"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 package() {
-  cd "${_archive}"
+  cd "neofetch"
   DESTDIR="${pkgdir}" make install
 }

@@ -1,5 +1,6 @@
 pkgname="mobile-usb-networking-deb"
 gives="mobile-usb-networking"
+arch=("all")
 pkgver="0.0.4"
 source=("https://repo.mobian-project.org/pool/main/m/${gives}/${gives}_${pkgver}_all.deb")
 pkgdesc="USB networking configuration for mobile devices"

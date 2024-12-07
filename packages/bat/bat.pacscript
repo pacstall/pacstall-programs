@@ -1,4 +1,5 @@
 pkgname="bat"
+arch=("any")
 pkgver="0.24.0"
 source=("https://github.com/sharkdp/bat/archive/refs/tags/v${pkgver}.tar.gz")
 makedepends=("cargo" "libonig-dev" "pkg-config")

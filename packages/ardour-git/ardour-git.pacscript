@@ -11,11 +11,12 @@ optdepends=("xjadeo: video monitoring"
 provides=("ladspa-host" "lv2-host" "vst-host" "vst3-host" "ardour" "ardour-data")
 breaks="ardour"
 source=("https://github.com/Ardour/ardour.git")
+arch=("any")
 pkgver="7.5"
 # patch="https://github.com/archlinux/svntogit-community/blob/packages/ardour/trunk/ardour-6.2-vendor_qm-dsp.patch"
 
 prepare() {
-  cd "${_archive}"
+  cd "ardour"
   # Patch uses vendored version of qm-dsp because qm-dsp >= 1.8.0 is not compatible
   # will be applied when ubuntu starts supporting qm-dsp 1.8.0
   # unsetting gtk2 rc (FS#54389)
@@ -23,7 +24,7 @@ prepare() {
 }
 
 build() {
-  cd "${_archive}"
+  cd "ardour"
   # export LINKFLAGS="$LDFLAGS"
   ./waf configure --prefix=/usr \
     --configdir=/etc \
@@ -40,7 +41,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "ardour"
   ./waf i18n --destdir="${pkgdir}"
   ./waf install --destdir="${pkgdir}"
 
