@@ -19,7 +19,7 @@ arch=("amd64")
 maintainer=("lfromanini <lfromanini@yahoo.com>")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm755 "Joplin-${pkgver}.AppImage" "${pkgdir}/usr/bin/${gives}"
   install -Dm644 "${srcdir}/joplin-desktop.png" "${pkgdir}/usr/share/pixmaps/joplin-desktop.png"
   mkdir -p "${pkgdir}/usr/share/applications/"
