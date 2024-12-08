@@ -162,7 +162,6 @@ maintainer=("xdavius <xdavius@github.com>")
 compatible=("debian:bookworm" "ubuntu:jammy")
 
 prepare() {
-
   cd mesa-j
   cp debian/patches/* ./
   for patch in *.patch; do
