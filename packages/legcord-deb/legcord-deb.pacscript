@@ -6,6 +6,6 @@ pkgver="1.0.5"
 arch=('arm64' 'amd64')
 sha256sums_arm64=("14b2b1a24d778526dbeac86216e341344f91eb2d65cab58d7e66e1f561c6f03e")
 sha256sums_amd64=("7a810965a52c36e828357909a6d864f015e2b719d1c07b13f12d0b8999a44f24")
-source=("https://github.com/Legcord/Legcord/releases/download/Legcord-${pkgver}-linux-${CARCH}.deb")
+source=("https://github.com/Legcord/Legcord/releases/download/${pkgver}/Legcord-${pkgver}-linux-${CARCH}.deb")
 pkgdesc="Custom client designed to enhance your Discord experience while keeping everything lightweight"
 maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")
