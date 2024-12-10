@@ -5,7 +5,7 @@ repology=("project: intellij-idea-community")
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>" "James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="IntelliJ IDEA is an IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages"
 arch=('amd64' 'arm64')
-external_connection=true
+external_connection="true"
 sha256sums_amd64=(
   "b3fbdba793ba9e7800ac1ee4ceedf4726f86d5320c7c0d4e155b5bd10a296777"
   "20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293"
