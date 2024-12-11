@@ -22,7 +22,7 @@ package() {
   mkdir -p "${pkgdir}/usr/bin"
   ln -sf "/usr/share/webstorm/bin/webstorm.sh" "${pkgdir}/usr/bin/webstorm"
   mkdir -p "${pkgdir}/usr/share/applications/"
-  cat <<EOF > "${pkgdir}/usr/share/applications/webstorm.desktop"
+  cat << EOF > "${pkgdir}/usr/share/applications/webstorm.desktop"
 [Desktop Entry]
 Version=1.0
 Type=Application
