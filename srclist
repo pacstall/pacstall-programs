@@ -4516,7 +4516,7 @@ pkgname = hyprcursor-bin
 ---
 pkgbase = hyprland-bin
 	gives = hyprland
-	pkgver = 0.44.1
+	pkgver = 0.45.2
 	pkgdesc = A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks
 	arch = amd64
 	depends = libegl1
@@ -4551,8 +4551,8 @@ pkgbase = hyprland-bin
 	compatible = debian:sid
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: hyprland
-	source = https://github.com/hyprwm/Hyprland/releases/download/v0.44.1/v0.44.1.tar.gz
-	sha256sums = 4af254ce83f156df8a23c731f82b8879d015128b2185ae0b6a03c1b4caf49ec5
+	source = https://github.com/hyprwm/Hyprland/releases/download/v0.45.2/v0.45.2.tar.gz
+	sha256sums = 66d4c1daad1ee0dfa73b184609b1e9167124a6f7ddba00f363c291b831cefc94
 
 pkgname = hyprland-bin
 ---
@@ -5466,13 +5466,13 @@ pkgbase = lf-bin
 pkgname = lf-bin
 ---
 pkgbase = libaquamarine-bin
-	pkgver = 0.4.2
+	pkgver = 0.5.0
 	pkgdesc = Very light Linux rendering backend library
 	url = https://github.com/hyprwm/aquamarine
 	arch = amd64
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = https://github.com/hyprwm/aquamarine/releases/download/v0.4.2/v0.4.2.tar.gz
-	sha256sums = 1860804d49afde8bc04aacf164c4271ee8a51ae2425214bc77b8c71c66429019
+	source = https://github.com/hyprwm/aquamarine/releases/download/v0.5.0/v0.5.0.tar.gz
+	sha256sums = 4e54a7cb6df4c9f1d2f107d53f3d3f72fcb5432e411f009ba2ae84a0343ac627
 
 pkgname = libaquamarine-bin
 ---

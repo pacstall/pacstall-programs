@@ -1,5 +1,5 @@
 pkgname="hyprland-bin"
-pkgver="0.44.1"
+pkgver="0.45.2"
 gives="hyprland"
 arch=("amd64")
 conflicts=("hyprland")
@@ -10,7 +10,7 @@ pacdeps=("libhyprutils-bin" "libaquamarine-bin")
 compatible=("*:oracular" "*:devel" "debian:trixie" "debian:sid")
 pkgdesc="A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
 source=("https://github.com/hyprwm/Hyprland/releases/download/v${pkgver}/v${pkgver}.tar.gz")
-sha256sums=("4af254ce83f156df8a23c731f82b8879d015128b2185ae0b6a03c1b4caf49ec5")
+sha256sums=("66d4c1daad1ee0dfa73b184609b1e9167124a6f7ddba00f363c291b831cefc94")
 maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: hyprland")
 
