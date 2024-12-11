@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Icon=webstorm
-Name=WebStorm
-Exec=webstorm
-Path=/usr/share/webstorm/bin
-Terminal=false
-Hidden=false
-Categories=IDE;Development
