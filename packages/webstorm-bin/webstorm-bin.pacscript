@@ -4,12 +4,12 @@ gives="webstorm"
 arch=("amd64" "arm64")
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="Powerful and versatile IDE for JavaScript, TypeScript, HTML, CSS, React, Angular, Vue, and Node.js development."
-external_connection="true"
 source_amd64=("https://download.jetbrains.com/${gives}/WebStorm-${pkgver}.tar.gz")
 sha256sums_amd64=("f9122a02312bee9d06c77774cad37b32ac0dcbc460af4ac8b8059a1780d16018")
 source_arm64=("https://download.jetbrains.com/${gives}/WebStorm-${pkgver}-aarch64.tar.gz")
 sha256sums_arm64=("e1b34cf2456233f6a7aa079e7c2af23bc88d4b29bbddcf6d7a5b4e0432e38db3")
 repology=("project: webstorm")
+external_connection=true
 
 package() {
   cd "${_archive}"
