@@ -4504,15 +4504,15 @@ pkgname = hyperfine-bin
 ---
 pkgbase = hypnotix-deb
 	gives = hypnotix
-	pkgver = 4.6
+	pkgver = 4.8
 	pkgdesc = An IPTV streaming application with support for live TV, movies and series
 	arch = all
 	pacdeps = gir1.2-xapp-1.0-deb
 	pacdeps = circle-flags-svg-deb
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: hypnotix
-	source = http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_4.6_all.deb
-	sha256sums = 4095a0f845b8ef61b7afa5a84c431c9d248b8ef7a7390271c9155706059220b9
+	source = http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_4.8_all.deb
+	sha256sums = e9091268a888ae338520f318890c6b8512efc5e1c2ec624952a386ef1263d24a
 	pacdeps_debian = python3-imdbpy-deb
 
 pkgname = hypnotix-deb
