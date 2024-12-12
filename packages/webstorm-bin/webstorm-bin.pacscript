@@ -12,7 +12,10 @@ repology=("project: webstorm")
 external_connection=true
 
 package() {
-  cd "${srcdir}/WebStorm-243.22562.112" || { echo "Directory not found"; exit 1; }
+  cd "${srcdir}/WebStorm-243.22562.112" || {
+    echo "Directory not found"
+    exit 1
+  }
 
   mkdir -p "${pkgdir}/usr/share/licenses/webstorm"
   mkdir -p "${pkgdir}/usr/share/webstorm"
