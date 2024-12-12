@@ -12,11 +12,11 @@ repology=("project: webstorm")
 external_connection=true
 
 package() {
-  cd "${srcdir}/${_archive}"
+  cd "${srcdir}/webstorm-${pkgver}"
   mkdir -p "${pkgdir}/usr/share/licenses/webstorm"
   mkdir -p "${pkgdir}/usr/share/webstorm"
   mkdir -p "${pkgdir}/usr/share/pixmaps"
-  cp -dr --no-preserve='ownership' bin jbr lib plugins "${pkgdir}/usr/share/webstorm/"
+  cp -dr --no-preserve='ownership' bin jbr lib plugins product-info.json "${pkgdir}/usr/share/webstorm/"
   cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/webstorm/"
   cp -dr "${pkgdir}/usr/share/webstorm/bin/webstorm.png" "${pkgdir}/usr/share/pixmaps/"
   mkdir -p "${pkgdir}/usr/bin"
