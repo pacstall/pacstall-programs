@@ -1,11 +1,11 @@
 pkgname="rhino-setup-bin"
-depends=("gettext" "desktop-file-utils" "libadwaita-1-0")
+depends=("gettext" "desktop-file-utils" "libadwaita-1-0" "uidmap")
 gives="rhino-setup"
 pkgdesc="Rhino Linux Setup Prompt"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("debian:*")
 pkgver="2024.2"
-pkgrel="2"
+pkgrel="3"
 replaces=("${gives}" "${gives}-git")
 arch=('arm64' 'amd64')
 sha256sums_arm64=("ad7f35b3ce22bb7fef4b46a866b001eef26cd464258ca36631ff14725898dfb2")

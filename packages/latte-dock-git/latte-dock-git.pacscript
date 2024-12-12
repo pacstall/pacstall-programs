@@ -20,7 +20,7 @@ breaks=("${gives}" "${gives}-bin")
 incompatible=("debian:bullseye")
 
 build() {
-  cd "${_archive}"
+  cd "latte-dock"
   # Build rquired files
   mkdir build && cd build
   cmake -DCMAKE_INSTALL_PREFIX=/usr \
@@ -28,7 +28,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "latte-dock"
   # Install awesome
   cd build/
   make install DESTDIR="${pkgdir}"

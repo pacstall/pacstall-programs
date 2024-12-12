@@ -10,12 +10,12 @@ breaks=("${gives}-bin" "${gives}")
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 build() {
-  cd "${_archive}"
+  cd "slop"
   cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="/usr" ./
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "slop"
   make install DESTDIR="${pkgdir}"
 }

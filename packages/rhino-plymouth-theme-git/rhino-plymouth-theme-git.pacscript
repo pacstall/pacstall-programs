@@ -7,6 +7,6 @@ arch=("all")
 pkgver="0.0.1"
 
 package() {
-  cd "${_archive}"
+  cd "plymouth"
   install -Dm644 ./* -t "${pkgdir}/usr/share/plymouth/themes/rhino-spinner/"
 }

@@ -7,17 +7,17 @@ breaks=("imwheel")
 pkgdesc="This project is a fork of imwheel's final official release containing only one change — a patch that repairs imwheel's broken @Exclude command"
 
 prepare() {
-  cd "${_archive}"
+  cd "imwheel-exclude-patched"
   ./configure --disable-gpm-doc
 }
 
 build() {
-  cd "${_archive}"
+  cd "imwheel-exclude-patched"
   make
 }
 
 package() {
-  cd "${_archive}"
+  cd "imwheel-exclude-patched"
   make install DESTDIR="${pkgdir}"
   cd "${pkgdir}/usr/local/"
   mkdir -p share

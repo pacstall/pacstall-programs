@@ -9,11 +9,11 @@ breaks=("${gives}-bin" "${gives}" "${gives}-app")
 pkgdesc="FOSS Bitcoin wallet written in Python - Git version"
 
 build() {
-  cd "${_archive}"
+  cd "electrum"
   python3 setup.py build
 }
 
 package() {
-  cd "${_archive}"
+  cd "electrum"
   python3 setup.py install --root="${pkgdir}" --optimize=1
 }

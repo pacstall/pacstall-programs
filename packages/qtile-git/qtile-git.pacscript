@@ -10,7 +10,7 @@ maintainer=("Ruturajn <nanotiruturaj@gmail.com>")
 external_connection="true"
 
 package() {
-  cd "${_archive}"
+  cd "qtile"
   modern=("devel" "sid" "lunar" "bookworm" "mantic" "noble" "trixie" "testing" "unstable")
   for mod in "${modern[@]}"; do
     [[ ${mod} == "${DISTRO#*:}" ]] && pyhack=("--break-system-packages")

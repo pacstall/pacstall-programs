@@ -8,7 +8,7 @@ source=("https://gitlab.com/pine64-org/bes2600-firmware.git")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
-  cd "${_archive}"
+  cd "bes2600-firmware"
   mkdir -p "${pkgdir}/usr/bin"
   mkdir -p "${pkgdir}/usr/lib/systemd/system"
 
@@ -48,7 +48,7 @@ ExecStart=bash -c 'if ! [[ -f /etc/modules-load.d/bes2600.conf ]]; then echo bes
 }
 
 package() {
-  cd "${_archive}"
+  cd "bes2600-firmware"
   mkdir -p "${pkgdir}/usr/lib/firmware"
   cp -r firmware/bes2600 "${pkgdir}/usr/lib/firmware"
 }

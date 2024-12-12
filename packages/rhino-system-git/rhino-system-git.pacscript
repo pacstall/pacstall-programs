@@ -11,12 +11,12 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("ubuntu:20.04" "ubuntu:20.10" "ubuntu:21.04" "ubuntu:21.10" "ubuntu:22.04" "debian:*")
 
 build() {
-  cd "${_archive}"
+  cd "rhino-system"
   meson setup build
 }
 
 package() {
-  cd "${_archive}"
+  cd "rhino-system"
   DESTDIR="${pkgdir}" ninja -C build install
   chmod +x "${pkgdir}/usr/local/bin/rhinosystem"
 }

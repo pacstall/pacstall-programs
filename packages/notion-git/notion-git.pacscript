@@ -9,11 +9,11 @@ depends=("build-essential" "lua5.1" "liblua5.1-0-dev" "libx11-dev" "libxext-dev"
 breaks=("notion")
 
 build() {
-  cd "${_archive}"
+  cd "notion"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "notion"
   make install DESTDIR="${pkgdir}"
 }

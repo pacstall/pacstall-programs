@@ -9,18 +9,18 @@ depends=("libkf5windowsystem-dev" "libdbusmenu-qt5-dev" "libqt5xdg-dev" "qtquick
 pkgdesc="Unify Qt application style of CutefishOS"
 
 prepare() {
-  cd "${_archive}"
+  cd "qt-plugins"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "qt-plugins"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "qt-plugins"
   make install DESTDIR="${pkgdir}"
 }

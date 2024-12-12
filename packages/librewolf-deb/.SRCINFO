@@ -1,6 +1,6 @@
 pkgbase = librewolf-deb
 	gives = librewolf
-	pkgver = 132.0-1
+	pkgver = 133.0-1
 	pkgdesc = A fork of Firefox, focused on privacy, security and freedom
 	arch = amd64
 	arch = arm64
@@ -12,9 +12,9 @@ pkgbase = librewolf-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: librewolf
-	source_amd64 = https://repo.librewolf.net/pool/librewolf-132.0-1-linux-x86_64-deb.deb
-	sha256sums_amd64 = aa78fa19b98f4aedec7beb32754e332b289a0cb0e2a0db26764f9a3151407350
-	source_arm64 = https://repo.librewolf.net/pool/librewolf-132.0-1-linux-arm64-deb.deb
-	sha256sums_arm64 = 3b12f148440999b486c4d81eec12b5e6afa1757cf6c2bd79981a167456c26543
+	source_amd64 = https://repo.librewolf.net/pool/librewolf-133.0-1-linux-x86_64-deb.deb
+	sha256sums_amd64 = cec1840a81a334f9a0157656b71e4d5f0485fbc511c366c82e83b5c8fc50883e
+	source_arm64 = https://repo.librewolf.net/pool/librewolf-133.0-1-linux-arm64-deb.deb
+	sha256sums_arm64 = 2ea190fdc0f32914f1d32d88d669f0dff40da2652e71ff307cacf0d28c6b305f
 
 pkgname = librewolf-deb
