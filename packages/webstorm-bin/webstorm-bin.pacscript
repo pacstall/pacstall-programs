@@ -12,15 +12,26 @@ repology=("project: webstorm")
 external_connection=true
 
 package() {
-  cd "${srcdir}/webstorm-${pkgver}"
+  cd "${srcdir}/WebStorm-243.22562.112" || { echo "Directory not found"; exit 1; }
+
   mkdir -p "${pkgdir}/usr/share/licenses/webstorm"
   mkdir -p "${pkgdir}/usr/share/webstorm"
   mkdir -p "${pkgdir}/usr/share/pixmaps"
+
+  for item in bin jbr lib plugins product-info.json license; do
+    if [ ! -e "$item" ]; then
+      echo "Error: $item not found"
+      exit 1
+    fi
+  done
+
   cp -dr --no-preserve='ownership' bin jbr lib plugins product-info.json "${pkgdir}/usr/share/webstorm/"
   cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/webstorm/"
   cp -dr "${pkgdir}/usr/share/webstorm/bin/webstorm.png" "${pkgdir}/usr/share/pixmaps/"
+
   mkdir -p "${pkgdir}/usr/bin"
   ln -sf "/usr/share/webstorm/bin/webstorm.sh" "${pkgdir}/usr/bin/webstorm"
+
   mkdir -p "${pkgdir}/usr/share/applications/"
   cat << EOF > "${pkgdir}/usr/share/applications/webstorm.desktop"
 [Desktop Entry]
