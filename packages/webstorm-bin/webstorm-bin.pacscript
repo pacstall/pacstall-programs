@@ -12,7 +12,7 @@ repology=("project: webstorm")
 external_connection=true
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}/${_archive}"
   mkdir -p "${pkgdir}/usr/share/licenses/webstorm"
   mkdir -p "${pkgdir}/usr/share/webstorm"
   mkdir -p "${pkgdir}/usr/share/pixmaps"
