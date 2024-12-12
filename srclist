@@ -4509,11 +4509,11 @@ pkgbase = hypnotix-deb
 	arch = all
 	pacdeps = gir1.2-xapp-1.0-deb
 	pacdeps = circle-flags-svg-deb
+	pacdeps = python3-imdbpy-deb
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: hypnotix
 	source = http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_4.8_all.deb
 	sha256sums = e9091268a888ae338520f318890c6b8512efc5e1c2ec624952a386ef1263d24a
-	pacdeps_debian = python3-imdbpy-deb
 
 pkgname = hypnotix-deb
 ---
