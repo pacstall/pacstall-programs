@@ -13169,9 +13169,55 @@ pkgbase = zed-editor-stable-bin
 
 pkgname = zed-editor-stable-bin
 ---
+pkgbase = zen-browser-bin
+	gives = zen-browser
+	pkgver = 1.0.2-b.1
+	pkgrel = 1
+	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
+	url = https://zen-browser.app/
+	arch = amd64
+	arch = arm64
+	depends = libasound2
+	depends = libatk1.0-0
+	depends = libc6
+	depends = libcairo-gobject2
+	depends = libcairo2
+	depends = libdbus-1-3
+	depends = libfontconfig1
+	depends = libfreetype6
+	depends = libgcc-s1
+	depends = libgdk-pixbuf-2.0-0
+	depends = libglib2.0-0
+	depends = libgtk-3-0
+	depends = libpango-1.0-0
+	depends = libpangocairo-1.0-0
+	depends = libstdc++6
+	depends = libx11-6
+	depends = libx11-xcb1
+	depends = libxcb-shm0
+	depends = libxcb1
+	depends = libxcomposite1
+	depends = libxcursor1
+	depends = libxdamage1
+	depends = libxext6
+	depends = libxfixes3
+	depends = libxi6
+	depends = libxrandr2
+	depends = libxrender1
+	provides = zen-browser-specific
+	license = MPL-2.0
+	maintainer = D-Brox <davidfbg00@gmail.com>
+	repology = project: zen-browser
+	pacdeps_amd64 = zen-browser-specific-bin
+	source_amd64 = https://github.com/zen-browser
+	source_arm64 = zen-browser-1.0.2-b.1.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.1/zen.linux-aarch64.tar.bz2
+	sha256sums_arm64 = 631e09f73339674c5f90fd0589d199788ff81bb2076d31b32323e895c20e896d
+
+pkgname = zen-browser-bin
+---
 pkgbase = zen-browser-generic-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.22
+	pkgver = 1.0.2-b.1
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -13206,14 +13252,14 @@ pkgbase = zen-browser-generic-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.22.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.22/zen.linux-generic.tar.bz2
-	sha256sums = 965959ac5e169ff450554bbcaed9b373e1899584c7cfea4b59f1786d76cae838
+	source = zen-browser-1.0.2-b.1.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.1/zen.linux-generic.tar.bz2
+	sha256sums = b111cd248c94256e68afdd7807100c708917ec0430d01371fc064e665f1497cd
 
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
 	gives = zen-browser
-	pkgver = 1.0.1-a.22
+	pkgver = 1.0.2-b.1
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -13248,8 +13294,8 @@ pkgbase = zen-browser-specific-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.1-a.22.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.1-a.22/zen.linux-specific.tar.bz2
-	sha256sums = db8ac90512e52a672bb2826f3690783c0bab74c4113c07be20bc1597c4ea395f
+	source = zen-browser-1.0.2-b.1.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.1/zen.linux-specific.tar.bz2
+	sha256sums = 9ed4062999b7bc4eba13769b61aae839394516437ca0d72719df4fd029c3c565
 
 pkgname = zen-browser-specific-bin
 ---
