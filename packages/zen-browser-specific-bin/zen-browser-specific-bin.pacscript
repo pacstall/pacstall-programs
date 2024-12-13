@@ -1,5 +1,5 @@
 pkgname="zen-browser-specific-bin"
-gives="zen-browser-specific"
+gives="zen-browser"
 conflicts=("zen-browser-generic")
 pkgver="1.0.2-b.1"
 pkgrel=1
