@@ -11,10 +11,8 @@ maintainer=("D-Brox <davidfbg00@gmail.com>")
 
 # Meta package on amd64, autoselect
 if grep -q avx /proc/cpuinfo; then
-  provides="zen-browser-specific"
   pacdeps_amd64=('zen-browser-specific-bin')
 else
-  provides="zen-browser-generic"
   pacdeps_amd64=('zen-browser-generic-bin')
 fi
 source_amd64=('https://github.com/zen-browser') # Dummy source for meta package
@@ -45,7 +43,7 @@ Type=Application
 Icon=zen-browser
 Categories=Network;WebBrowser;
 MimeType=application/json;application/pdf;application/rdf+xml;application/rss+xml;application/x-xpinstall;application/xhtml+xml;application/xml;audio/flac;audio/ogg;audio/webm;image/avif;image/gif;image/jpeg;image/png;image/svg+xml;image/webp;text/html;text/xml;video/ogg;video/webm;x-scheme-handler/chrome;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/mailto;
-StartupWMClass=zen-alpha
+StartupWMClass=zen-beta
 StartupNotify=true
 Keywords=Internet;WWW;Browser;Web;Explorer;
 Actions=new-window;new-private-window;profilemanager;

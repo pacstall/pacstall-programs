@@ -6,7 +6,6 @@ pkgbase = zen-browser-bin
 	url = https://zen-browser.app/
 	arch = amd64
 	arch = arm64
-	provides = zen-browser-specific
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser

@@ -1,5 +1,6 @@
 pkgname="zen-browser-generic-bin"
 gives="zen-browser-generic"
+conflicts=("zen-browser-specific")
 pkgver="1.0.2-b.1"
 pkgrel=1
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
@@ -33,7 +34,7 @@ Type=Application
 Icon=zen-browser
 Categories=Network;WebBrowser;
 MimeType=application/json;application/pdf;application/rdf+xml;application/rss+xml;application/x-xpinstall;application/xhtml+xml;application/xml;audio/flac;audio/ogg;audio/webm;image/avif;image/gif;image/jpeg;image/png;image/svg+xml;image/webp;text/html;text/xml;video/ogg;video/webm;x-scheme-handler/chrome;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/mailto;
-StartupWMClass=zen-alpha
+StartupWMClass=zen-beta
 StartupNotify=true
 Keywords=Internet;WWW;Browser;Web;Explorer;
 Actions=new-window;new-private-window;profilemanager;
