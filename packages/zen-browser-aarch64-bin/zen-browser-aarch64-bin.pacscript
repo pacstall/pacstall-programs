@@ -1,17 +1,17 @@
-pkgname="zen-browser-generic-bin"
+pkgname="zen-browser-aarch64-bin"
 gives="zen-browser"
-conflicts=("zen-browser-specific")
 pkgver="1.0.2-b.1"
 pkgrel=1
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
 url="https://zen-browser.app/"
 license=("MPL-2.0")
 repology=("project: zen-browser")
-arch=("amd64")
+arch=("arm64")
 maintainer=("D-Brox <davidfbg00@gmail.com>")
-source=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-generic.tar.bz2")
-sha256sums=('b111cd248c94256e68afdd7807100c708917ec0430d01371fc064e665f1497cd')
-depends=("libasound2" "libatk1.0-0" "libc6" "libcairo-gobject2" "libcairo2" "libdbus-1-3" "libfontconfig1" "libfreetype6" "libgcc-s1" "libgdk-pixbuf-2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0" "libstdc++6" "libx11-6" "libx11-xcb1" "libxcb-shm0" "libxcb1" "libxcomposite1" "libxcursor1" "libxdamage1" "libxext6" "libxfixes3" "libxi6" "libxrandr2" "libxrender1")
+
+source=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-aarch64.tar.bz2")
+sha256sums=('631e09f73339674c5f90fd0589d199788ff81bb2076d31b32323e895c20e896d')
+depends=("libasound2" "libatk1.0-0" "libc6" "libcairo-gobject2" "libcairo2" "libdbus-1-3" "libevent-2.1-7" "libffi8" "libfontconfig1" "libfreetype6" "libgcc-s1" "libgdk-pixbuf-2.0-0" "libglib2.0-0" "libgtk-3-0" "libnspr4" "libnss3" "libpango-1.0-0" "libstdc++6" "libvpx9" "libx11-6" "libx11-xcb1" "libxcb-shm0" "libxcb1" "libxcomposite1" "libxdamage1" "libxext6" "libxfixes3" "libxrandr2" "zlib1g" "fontconfig" "procps" "debianutils")
 
 package() {
   cd "${srcdir}"
