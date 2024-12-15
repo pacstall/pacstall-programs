@@ -13171,7 +13171,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-aarch64-bin
 	gives = zen-browser
-	pkgver = 1.0.2-b.1
+	pkgver = 1.0.2-b.2
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -13211,14 +13211,14 @@ pkgbase = zen-browser-aarch64-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.2-b.1.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.1/zen.linux-aarch64.tar.bz2
-	sha256sums = 631e09f73339674c5f90fd0589d199788ff81bb2076d31b32323e895c20e896d
+	source = zen-browser-1.0.2-b.2.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.2/zen.linux-aarch64.tar.bz2
+	sha256sums = c94792fbb2dc03391bbc452c361b834692edd312795dbc85c33cb9f72e6f149e
 
 pkgname = zen-browser-aarch64-bin
 ---
 pkgbase = zen-browser-generic-bin
 	gives = zen-browser
-	pkgver = 1.0.2-b.1
+	pkgver = 1.0.2-b.2
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -13254,14 +13254,14 @@ pkgbase = zen-browser-generic-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.2-b.1.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.1/zen.linux-generic.tar.bz2
-	sha256sums = b111cd248c94256e68afdd7807100c708917ec0430d01371fc064e665f1497cd
+	source = zen-browser-1.0.2-b.2.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.2/zen.linux-generic.tar.bz2
+	sha256sums = 874c06543a720248bae04a43d64c66050bdf24cb3ded84a2b60cc22245d4965f
 
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
 	gives = zen-browser
-	pkgver = 1.0.2-b.1
+	pkgver = 1.0.2-b.2
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -13297,8 +13297,8 @@ pkgbase = zen-browser-specific-bin
 	license = MPL-2.0
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	repology = project: zen-browser
-	source = zen-browser-1.0.2-b.1.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.1/zen.linux-specific.tar.bz2
-	sha256sums = 9ed4062999b7bc4eba13769b61aae839394516437ca0d72719df4fd029c3c565
+	source = zen-browser-1.0.2-b.2.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.2/zen.linux-specific.tar.bz2
+	sha256sums = 8d314f5a3251120065a4c7983be9361b8677c074d29d23e16cf8a679004edeca
 
 pkgname = zen-browser-specific-bin
 ---
