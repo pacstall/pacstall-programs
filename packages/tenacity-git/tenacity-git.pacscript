@@ -32,7 +32,7 @@ prepare() {
   for i in *; do # fix for png icons not following hicolor category folders
     cd "${i}"
     mkdir -p apps
-    test -f tenacity.png && mv tenacity.png apps
+    [[ -f tenacity.png ]] && mv tenacity.png apps
     cd ..
   done
   cd ../..
