@@ -54,7 +54,7 @@ build() {
 package() {
   cd tenacity/build
   make DESTDIR="${pkgdir}" install
-  test -f "${pkgdir}/usr/tenacity" && rm "${pkgdir}/usr/tenacity" # remove unused launch script
+  [[ -f "${pkgdir}/usr/tenacity" ]] && rm "${pkgdir}/usr/tenacity" # remove unused launch script
 
   mv "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-audacity-project.xpm" \
     "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-tenacity-project.xpm"
