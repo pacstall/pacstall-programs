@@ -67,6 +67,7 @@ cmatrix
 com.github.mirkobrombin.bottles-deb
 conky-manager-zcot-git
 coreutils-single
+cortile
 cortile-bin
 couture
 cutefish-calculator-git
@@ -121,6 +122,7 @@ epson-inkjet-printer-stylus-nx110-series-deb
 epson-printer-utility-deb
 exa-git
 exercism-cli-bin
+exiftool
 exploitdb-git
 expressvpn-deb
 eza-git
@@ -327,6 +329,7 @@ mdbook
 mdbook-linkcheck
 megabasterd-bin
 megasync-deb
+mesa-kisak-fresh
 meson-focal-deb
 meson-git
 micro
@@ -646,6 +649,7 @@ yt-dlp
 zap
 zed-editor-preview-bin
 zed-editor-stable-bin
+zen-browser-aarch64-bin
 zen-browser-generic-bin
 zen-browser-specific-bin
 zentile-bin

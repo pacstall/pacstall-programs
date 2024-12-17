@@ -1,0 +1,15 @@
+pkgbase = cortile
+	pkgver = 2.5.2
+	pkgdesc = Linux auto tiling manager with hot corner support
+	url = https://github.com/leukipp/cortile
+	arch = any
+	makedepends = golang
+	replaces = cortile-bin
+	replaces = cortile-git
+	incompatible = debian:bookworm
+	maintainer = AJStrong <ajstrongdev@proton.me>
+	repology = project: cortile
+	source = cortile-2.5.2::https://github.com/leukipp/cortile/archive/refs/tags/v2.5.2.tar.gz
+	sha256sums = 6d5ea7c542093c109cbf0b23866aa154f49b7637d2f02d7d0467c38a4f114b01
+
+pkgname = cortile
