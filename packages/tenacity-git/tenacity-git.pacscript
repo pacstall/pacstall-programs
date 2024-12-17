@@ -19,7 +19,6 @@ fi
 optdepends=("ffmpeg: additional import/export capabilities")
 replaces=("audacity")
 maintainer=("echometerain <echometer@disroot.org>" "xdavius <xdavius@github.com>")
-
 external_connection=true
 
 prepare() {
