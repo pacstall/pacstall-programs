@@ -48,7 +48,7 @@ build() {
     -Wno-dev \
     ..
   cmake --build .
-  make -j"$(NCPU)" .
+  make -j"${NCPU}" .
 }
 
 package() {
