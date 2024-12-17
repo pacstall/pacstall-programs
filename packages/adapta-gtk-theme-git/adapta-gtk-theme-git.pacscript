@@ -9,16 +9,16 @@ pkgdesc="An adaptive Gtk+ theme based on Material Design Guidelines (Legacy)"
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 prepare() {
-  cd "${_archive}"
+  cd "adapta-gtk-theme"
   ./autogen.sh --prefix=/usr --enable-parallel
 }
 
 build() {
-  cd "${_archive}"
+  cd "adapta-gtk-theme"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "adapta-gtk-theme"
   make install DESTDIR="${pkgdir}"
 }

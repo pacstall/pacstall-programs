@@ -9,18 +9,18 @@ depends=("fishui" "libcutefish" "kio" "libkf5solid-dev")
 pkgdesc="Cutefish File Manager, simple to use, beautiful, and retain the classic PC interactive design."
 
 prepare() {
-  cd "${_archive}"
+  cd "filemanager"
   mkdir build
   cd build
 }
 
 build() {
-  cd "${_archive}"
+  cd "filemanager"
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "filemanager"
   make install DESTDIR="${pkgdir}"
 }

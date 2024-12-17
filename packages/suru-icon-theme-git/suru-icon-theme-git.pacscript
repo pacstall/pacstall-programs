@@ -8,11 +8,11 @@ makedepends=("meson" "ninja-build")
 pkgdesc="Revitalization of the Suru icon set designed for Ubuntu Touch"
 
 build() {
-  cd "${_archive}"
+  cd "suru-icon-theme"
   meson "build" --prefix="${pkgdir}/usr"
 }
 
 package() {
-  cd "${_archive}"
+  cd "suru-icon-theme"
   ninja -C "build" install > /dev/null
 }

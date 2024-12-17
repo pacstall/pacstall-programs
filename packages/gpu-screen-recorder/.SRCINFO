@@ -1,5 +1,5 @@
 pkgbase = gpu-screen-recorder
-	pkgver = 4.3.1
+	pkgver = 4.3.5
 	pkgdesc = A shadowplay-like screen recorder for Linux
 	url = https://git.dec05eba.com/gpu-screen-recorder/about
 	arch = amd64
@@ -45,8 +45,8 @@ pkgbase = gpu-screen-recorder
 	license = GPL-3.0-only
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: gpu-screen-recorder
-	source = https://dec05eba.com/snapshot/gpu-screen-recorder.git.4.3.1.tar.gz
-	sha256sums = ea9ebb1c1b4dcee8d9675ed2ce574515997326664db3be66e77f9781e3cccb46
+	source = https://dec05eba.com/snapshot/gpu-screen-recorder.git.4.3.5.tar.gz
+	sha256sums = 043e085ef2b2a39dc14c40653786830217635075dd0fd06ee732b8fca792917c
 	depends_focal = libavcodec58
 	depends_focal = libavutil56
 	depends_focal = libavformat58

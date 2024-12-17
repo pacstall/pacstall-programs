@@ -1,6 +1,7 @@
 pkgname="zen-browser-specific-bin"
 gives="zen-browser"
-pkgver="1.0.1-a.19"
+conflicts=("zen-browser-generic")
+pkgver="1.0.2-b.2"
 pkgrel=1
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
 url="https://zen-browser.app/"
@@ -9,7 +10,7 @@ repology=("project: zen-browser")
 arch=("amd64")
 maintainer=("D-Brox <davidfbg00@gmail.com>")
 source=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-specific.tar.bz2")
-sha256sums=('b897d9728ac34858d2267d9b13e3f1f60522270feabeb80738a55452c3392306')
+sha256sums=('8d314f5a3251120065a4c7983be9361b8677c074d29d23e16cf8a679004edeca')
 depends=("libasound2" "libatk1.0-0" "libc6" "libcairo-gobject2" "libcairo2" "libdbus-1-3" "libfontconfig1" "libfreetype6" "libgcc-s1" "libgdk-pixbuf-2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0" "libstdc++6" "libx11-6" "libx11-xcb1" "libxcb-shm0" "libxcb1" "libxcomposite1" "libxcursor1" "libxdamage1" "libxext6" "libxfixes3" "libxi6" "libxrandr2" "libxrender1")
 
 package() {
@@ -33,7 +34,7 @@ Type=Application
 Icon=zen-browser
 Categories=Network;WebBrowser;
 MimeType=application/json;application/pdf;application/rdf+xml;application/rss+xml;application/x-xpinstall;application/xhtml+xml;application/xml;audio/flac;audio/ogg;audio/webm;image/avif;image/gif;image/jpeg;image/png;image/svg+xml;image/webp;text/html;text/xml;video/ogg;video/webm;x-scheme-handler/chrome;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/mailto;
-StartupWMClass=zen-alpha
+StartupWMClass=zen-beta
 StartupNotify=true
 Keywords=Internet;WWW;Browser;Web;Explorer;
 Actions=new-window;new-private-window;profilemanager;

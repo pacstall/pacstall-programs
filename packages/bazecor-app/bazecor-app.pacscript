@@ -1,6 +1,6 @@
 pkgname="bazecor-app"
 gives="bazecor"
-pkgver="1.5.1"
+pkgver="1.6.1"
 pkgdesc="Bazecor is the graphical configurator for the Dygma Raise"
 source=(
   "https://github.com/Dygmalab/Bazecor/releases/download/v${pkgver}/Bazecor-${pkgver}-x64.AppImage"
@@ -8,7 +8,7 @@ source=(
 )
 depends=("usbutils" "udev")
 sha256sums=(
-  "5676f2aba35527f42d0ea5d3e8863fb23aac5aac6cdf80be89b79b6f1f15a781"
+  "41ff45a878134820f6ad8a7c3c2fe0607ca261c7c54c92661b8a112bf6dc87c6"
   "SKIP"
 )
 breaks=("bazecor" "bazecor-bin" "bazecor-deb" "bazecor-git")
@@ -17,7 +17,7 @@ maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: bazecor")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   mkdir -p "${pkgdir}/usr/share/icons/hicolor/256x256/apps/" "${pkgdir}/usr/share/applications/"
   echo "[Desktop Entry]
 Name=Bazecor
