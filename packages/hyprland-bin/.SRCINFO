@@ -1,6 +1,6 @@
 pkgbase = hyprland-bin
 	gives = hyprland
-	pkgver = 0.44.1
+	pkgver = 0.45.2
 	pkgdesc = A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks
 	arch = amd64
 	depends = libegl1
@@ -35,7 +35,7 @@ pkgbase = hyprland-bin
 	compatible = debian:sid
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: hyprland
-	source = https://github.com/hyprwm/Hyprland/releases/download/v0.44.1/v0.44.1.tar.gz
-	sha256sums = 4af254ce83f156df8a23c731f82b8879d015128b2185ae0b6a03c1b4caf49ec5
+	source = https://github.com/hyprwm/Hyprland/releases/download/v0.45.2/v0.45.2.tar.gz
+	sha256sums = 66d4c1daad1ee0dfa73b184609b1e9167124a6f7ddba00f363c291b831cefc94
 
 pkgname = hyprland-bin

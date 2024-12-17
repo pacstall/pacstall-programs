@@ -1,10 +1,10 @@
 pkgbase = libaquamarine-bin
-	pkgver = 0.4.2
+	pkgver = 0.5.0
 	pkgdesc = Very light Linux rendering backend library
 	url = https://github.com/hyprwm/aquamarine
 	arch = amd64
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = https://github.com/hyprwm/aquamarine/releases/download/v0.4.2/v0.4.2.tar.gz
-	sha256sums = 1860804d49afde8bc04aacf164c4271ee8a51ae2425214bc77b8c71c66429019
+	source = https://github.com/hyprwm/aquamarine/releases/download/v0.5.0/v0.5.0.tar.gz
+	sha256sums = 4e54a7cb6df4c9f1d2f107d53f3d3f72fcb5432e411f009ba2ae84a0343ac627
 
 pkgname = libaquamarine-bin
