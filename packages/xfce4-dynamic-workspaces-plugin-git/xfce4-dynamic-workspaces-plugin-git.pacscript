@@ -28,7 +28,7 @@ Hidden=false" | tee "${pkgdir}/etc/skel/.config/autostart/dynamic_workspaces.des
 post_install() {
   mkdir -p "${homedir}/.config/autostart"
   if ! [[ -f "${homedir}/.config/autostart/dynamic_workspaces.desktop" ]]; then
-    sudo cp -sf "/etc/skel/.config/autostart/dynamic_workspaces.desktop" "${homedir}/.config/autostart/dynamic_workspaces.desktop"
+    sudo cp "/etc/skel/.config/autostart/dynamic_workspaces.desktop" "${homedir}/.config/autostart/dynamic_workspaces.desktop"
   fi
 }
 
