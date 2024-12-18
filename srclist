@@ -9021,6 +9021,25 @@ pkgbase = python3-anyascii
 
 pkgname = python3-anyascii
 ---
+pkgbase = python3-editables
+	gives = python3-editables
+	pkgver = 0.5
+	pkgrel = 5
+	pkgdesc = Python library for creating editable wheels
+	url = https://github.com/pfmoore/editables
+	arch = any
+	depends = python3
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-flit-scm
+	license = MIT
+	maintainer = xdavius <xdavius@github.com>
+	source = python3-editables::git+https://github.com/pfmoore/editables#commit=2331418af764ef203959327354335c431978e70d
+	sha256sums = SKIP
+
+pkgname = python3-editables
+---
 pkgbase = python3-flit-core
 	pkgver = 3.9.0
 	pkgdesc = A PEP 517 build backend for packages using Flit
