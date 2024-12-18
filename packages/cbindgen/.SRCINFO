@@ -1,7 +1,6 @@
 pkgbase = cbindgen
 	gives = cbindgen
 	pkgver = 0.27.0
-	pkgrel = 1
 	pkgdesc = A tool for generating C bindings to Rust code
 	url = https://github.com/mozilla/cbindgen
 	arch = amd64
