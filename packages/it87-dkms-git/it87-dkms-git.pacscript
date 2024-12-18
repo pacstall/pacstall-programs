@@ -1,6 +1,8 @@
 pkgname="it87-dkms-git"
 gives="it87"
 pkgver="152"
+_pkgoldver="152"
+pkgrel="2"
 pkgdesc="Linux Driver for ITE LPC chips"
 arch=('x86_64' 'i686')
 url='https://github.com/frankcrawford/it87'
@@ -31,7 +33,16 @@ package() {
 }
 
 post_upgrade() {
-  update-initramfs -u -k all
+  DKMS_NAME="${gives}"
+  DKMS_VERSION="${pkgver}"
+  DKMS_OLD_VERSION="${_pkgoldver}"
+
+  dkms remove -m "${DKMS_NAME}" -v "${DKMS_OLD_VERSION}" --all || true
+  dkms add -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
+  dkms build -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
+  dkms install -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --force || true
+
+  update-initramfs -u
 }
 
 post_install() {
@@ -42,7 +53,7 @@ post_install() {
   dkms build -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
   dkms install -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --force || true
 
-  update-initramfs -u -k all
+  update-initramfs -u
 }
 
 pre_remove() {
@@ -51,5 +62,5 @@ pre_remove() {
 
   dkms remove -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --all || true
 
-  update-initramfs -u -k all
+  update-initramfs -u
 }
