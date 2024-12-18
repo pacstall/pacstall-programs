@@ -9,7 +9,7 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-t
   "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "bluez-firmware"
   "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics" "ukui-touchpadserver"
   "pipewire-audio" "bluetooth" "alsa-ucm-conf")
-pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin" "adw-gtk-theme" "rhino-xfwm4-theme-git" "appmenu-registrar-backport")
+pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile-bin" "adw-gtk-theme" "rhino-xfwm4-theme-git" "appmenu-registrar-backport" "xfce4-dynamic-workspaces-plugin-git")
 gives="unicorn-mobile"
 replaces=("unicorn-desktop" "unicorn-desktop-git")
 priority="required"
