@@ -52,6 +52,7 @@ pkgbase = unicorn-desktop-git
 	pacdeps = rhino-xfwm4-theme-git
 	pacdeps = appmenu-registrar-backport
 	pacdeps = xfce4-dynamic-workspaces-plugin-git
+	pacdeps = xserver-xorg-video-intel
 	replaces = unicorn-mobile
 	replaces = unicorn-mobile-git
 	incompatible = debian:*
