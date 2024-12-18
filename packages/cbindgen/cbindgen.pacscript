@@ -8,13 +8,8 @@ repology=("project: ${gives}")
 maintainer=("xdavius <xdavius@github.com>")
 arch=("amd64" "arm64")
 license=("MPL-2.0")
-depends=(
-  libglib2.0-dev
-)
-makedepends=(
-  libglib2.0-dev
-  git
-)
+depends=("libglib2.0-dev")
+makedepends=("libglib2.0-dev" "git")
 pacdeps=("rust-bin")
 source=("git+${url}#tag=v${pkgver}")
 b2sums=('76b445f7f9729107a04451433d047f50b5ac52c7dc501685f00d0558dab82e2bc09d23a8b5c33ea231e1a2fae81533ba8e64d21a43d524b6dd0de170114c6ea5')
