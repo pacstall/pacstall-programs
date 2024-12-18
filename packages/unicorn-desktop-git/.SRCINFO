@@ -1,7 +1,7 @@
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
-	pkgrel = 5
+	pkgrel = 6
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
 	arch = all
