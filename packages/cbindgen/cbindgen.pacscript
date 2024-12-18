@@ -23,13 +23,10 @@ prepare() {
 build() {
   cd cbindgen
 
-  # Use debug
-  export CARGO_PROFILE_RELEASE_DEBUG=2
-
-  # Use LTO
-  export CARGO_PROFILE_RELEASE_LTO=true CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1
-
-  cargo build --release
+  CARGO_PROFILE_RELEASE_DEBUG=2 \
+    CARGO_PROFILE_RELEASE_LTO=true \
+    CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1 \
+    cargo build --release
 }
 
 package() {
