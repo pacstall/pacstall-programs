@@ -7,7 +7,7 @@ url='https://github.com/mozilla/cbindgen'
 repology=("project: ${gives}")
 maintainer=("xdavius <xdavius@github.com>")
 arch=("amd64" "arm64")
-license=(MPL-2.0)
+license=("MPL-2.0")
 depends=(
   libglib2.0-dev
 )
