@@ -1189,6 +1189,25 @@ pkgbase = caprine-deb
 
 pkgname = caprine-deb
 ---
+pkgbase = cbindgen
+	gives = cbindgen
+	pkgver = 0.27.0
+	pkgdesc = A tool for generating C bindings to Rust code
+	url = https://github.com/mozilla/cbindgen
+	arch = amd64
+	arch = arm64
+	depends = libglib2.0-dev
+	makedepends = libglib2.0-dev
+	makedepends = git
+	pacdeps = rust-bin
+	license = MPL-2.0
+	maintainer = xdavius <xdavius@github.com>
+	repology = project: cbindgen
+	source = git+https://github.com/mozilla/cbindgen#tag=v0.27.0
+	b2sums = 76b445f7f9729107a04451433d047f50b5ac52c7dc501685f00d0558dab82e2bc09d23a8b5c33ea231e1a2fae81533ba8e64d21a43d524b6dd0de170114c6ea5
+
+pkgname = cbindgen
+---
 pkgbase = celeste-bin
 	gives = celeste
 	pkgver = 0.8.0
@@ -12568,7 +12587,8 @@ pkgbase = windscribe-beta-gui-deb
 pkgname = windscribe-beta-gui-deb
 ---
 pkgbase = wine-staging-git
-	pkgver = 9.8
+	gives = wine-staging-git
+	pkgver = 10.0
 	pkgdesc = A compatibility layer for running Windows programs - Staging branch
 	url = https://www.wine-staging.com
 	arch = any
@@ -12703,20 +12723,7 @@ pkgbase = wine-staging-git
 	optdepends = libpcap-dev:i386: 32-bit packet capture support
 	optdepends = libusb-1.0-0-dev:i386: 32-bit USB support
 	optdepends = libv4l-dev:i386: 32-bit video capture support
-	breaks = wine
-	breaks = wine64
-	breaks = wine32:i386
-	breaks = libwine
-	breaks = libwine:i386
-	breaks = wine-staging-i386:i386
-	breaks = fonts-wine
-	replaces = wine
-	replaces = wine64
-	replaces = wine32:i386
-	replaces = libwine
-	replaces = libwine:i386
-	replaces = wine-staging-i386:i386
-	replaces = fonts-wine
+	conflicts = wine-staging
 	license = LGPL-2.1-or-later
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://gitlab.winehq.org/wine/wine-staging.git
