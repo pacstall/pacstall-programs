@@ -1,7 +1,7 @@
 pkgname="zen-browser-generic-bin"
 gives="zen-browser"
 conflicts=("zen-browser-specific")
-pkgver="1.0.2-b.2"
+pkgver="1.0.2-b.3"
 pkgrel=1
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
 url="https://zen-browser.app/"
@@ -10,7 +10,7 @@ repology=("project: zen-browser")
 arch=("amd64")
 maintainer=("D-Brox <davidfbg00@gmail.com>")
 source=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-generic.tar.bz2")
-sha256sums=('874c06543a720248bae04a43d64c66050bdf24cb3ded84a2b60cc22245d4965f')
+sha256sums=('41176423496e52f92dc5ab9fb98a0e370b1842552d1f83522bfa1bf73a14897f')
 depends=("libasound2" "libatk1.0-0" "libc6" "libcairo-gobject2" "libcairo2" "libdbus-1-3" "libfontconfig1" "libfreetype6" "libgcc-s1" "libgdk-pixbuf-2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0" "libstdc++6" "libx11-6" "libx11-xcb1" "libxcb-shm0" "libxcb1" "libxcomposite1" "libxcursor1" "libxdamage1" "libxext6" "libxfixes3" "libxi6" "libxrandr2" "libxrender1")
 
 package() {
