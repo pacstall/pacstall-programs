@@ -5,14 +5,9 @@ arch=('any')
 url='https://github.com/pfmoore/editables'
 license=('MIT')
 depends=('python3')
-makedepends=(
-  'git'
-  'python3-build'
-  'python3-installer'
-  'python3-flit-scm'
-)
+makedepends=('git' 'python3-build' 'python3-installer' 'python3-flit-scm')
 _commit='2331418af764ef203959327354335c431978e70d'
-source=("${pkgname}::git+${url}#commit=${_commit}")
+source=("${pkgname}::git+https://github.com/pfmoore/editables#commit=${_commit}")
 sha256sums=('SKIP')
 maintainer=("xdavius <xdavius@github.com>")
 
