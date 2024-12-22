@@ -18,11 +18,7 @@ build() {
 
 package() {
   cd "${pkgname}"
-
   python3 -m installer --destdir="${pkgdir}" dist/*.whl
+  install -Dm 665 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.txt"
 
-  # symlink license file
-  # shellcheck disable=SC2155
-  local site_packages="$(python3 -c "import site; print(site.getsitepackages()[0])")"
-  install -d "${pkgdir}/usr/share/licenses/${_pkgname}"
 }
