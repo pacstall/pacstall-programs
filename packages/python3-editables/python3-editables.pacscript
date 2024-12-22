@@ -1,7 +1,5 @@
-pkgname=python3-editables
-gives=python3-editables
-pkgver=0.5
-pkgrel=5
+pkgname="python3-editables"
+pkgver="0.5"
 pkgdesc='Python library for creating editable wheels'
 arch=('any')
 url='https://github.com/pfmoore/editables'
