@@ -33,34 +33,24 @@ package() {
 }
 
 post_upgrade() {
-  DKMS_NAME="${gives}"
-  DKMS_VERSION="${pkgver}"
-  DKMS_OLD_VERSION="${_pkgoldver}"
-
-  dkms remove -m "${DKMS_NAME}" -v "${DKMS_OLD_VERSION}" --all || true
-  dkms add -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
-  dkms build -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
-  dkms install -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --force || true
+  dkms remove -m "${gives}" -v "${_pkgoldver}" --all || true
+  dkms add -m "${gives}" -v "${pkgver}"
+  dkms build -m "${gives}" -v "${pkgver}"
+  dkms install -m "${gives}" -v "${pkgver}" --force || true
 
   update-initramfs -u
 }
 
 post_install() {
-  DKMS_NAME="${gives}"
-  DKMS_VERSION="${pkgver}"
-
-  dkms add -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
-  dkms build -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
-  dkms install -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --force || true
+  dkms add -m "${gives}" -v "${pkgver}"
+  dkms build -m "${gives}" -v "${pkgver}"
+  dkms install -m "${gives}" -v "${pkgver}" --force || true
 
   update-initramfs -u
 }
 
 pre_remove() {
-  DKMS_NAME="${gives}"
-  DKMS_VERSION="${pkgver}"
-
-  dkms remove -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --all || true
+  dkms remove -m "${gives}" -v "${pkgver}" --all || true
 
   update-initramfs -u
 }
