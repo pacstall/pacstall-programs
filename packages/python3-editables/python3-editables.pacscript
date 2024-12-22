@@ -28,6 +28,6 @@ package() {
 
   # symlink license file
   # shellcheck disable=SC2155
-  local site_packages=$(python3 -c "import site; print(site.getsitepackages()[0])")
+  local site_packages="$(python3 -c "import site; print(site.getsitepackages()[0])")"
   install -d "${pkgdir}/usr/share/licenses/${_pkgname}"
 }
