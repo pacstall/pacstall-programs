@@ -89,13 +89,5 @@ pkgbase = tenacity-git
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://codeberg.org/tenacityteam/tenacity.git
 	source = tenacity-libnyquist::git+https://codeberg.org/tenacityteam/libnyquist.git
-	depends_bookworm = libavcodec59
-	depends_bookworm = libavformat59
-	depends_bookworm = libavutil57
-	depends_bookworm = libflac++10
-	depends_bookworm = libflac12
-	depends_bookworm = libportsmf-dev
-	depends_bookworm = libwxbase3.2-1
-	depends_bookworm = libwxgtk3.2-1
 
 pkgname = tenacity-git
