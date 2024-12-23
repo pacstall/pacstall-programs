@@ -111,7 +111,7 @@ post_install() {
     sudo usermod -aG docker "${PACSTALL_USER}"
   fi
   if [[ -f /bin/systemctl ]]; then
-    sudo systemctl enable containerd.service docker.socket docker.service --now
+    sudo systemctl enable containerd.service docker.socket docker.service
   fi
 }
 
