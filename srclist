@@ -12003,6 +12003,34 @@ pkgbase = ulauncher-deb
 
 pkgname = ulauncher-deb
 ---
+pkgbase = umu-launcher-git
+	gives = umu-launcher
+	pkgver = 1.1.4
+	pkgdesc = A tool for launching non-steam games with Proton
+	url = https://github.com/Open-Wine-Components/umu-launcher
+	arch = all
+	depends = python3
+	depends = python3-xlib>=0.33
+	depends = python3-six
+	depends = python3-filelock
+	depends = python3-urllib3>=2.0.0
+	depends = apparmor-profiles
+	makedepends = git
+	makedepends = scdoc
+	makedepends = python3-pip
+	makedepends = python3-build
+	makedepends = python3-hatchling
+	makedepends = python3-installer
+	license = GPL-3.0-only
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: umu-launcher
+	source = https://github.com/Open-Wine-Components/umu-launcher.git
+	source = Makefile.patch
+	sha256sums = SKIP
+	sha256sums = 26fde7fb612543ff26ec1937c2e8281bc0234bc6a11f7aea37b94daba967a472
+
+pkgname = umu-launcher-git
+---
 pkgbase = ungoogled-chromium-bin
 	gives = ungoogled-chromium
 	pkgver = 131.0.6778.139-1
