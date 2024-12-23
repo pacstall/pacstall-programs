@@ -11,7 +11,7 @@ pkgbase = distrobox
 	breaks = distrobox-git
 	maintainer = Marie Piontek <marie@kaifa.ch>
 	repology = project: distrobox
-	source = https://github.com/89luca89/distrobox/archive/refs/tags/1.8.0.tar.gz
+	source = @distrobox~1.8.0::https://github.com/89luca89/distrobox/archive/refs/tags/1.8.0.tar.gz
 	sha256sums = 72d8d825b6aad63e03e0b92376e6ead9c053c1e676acab3c7eaac9be2929d0a2
 
 pkgname = distrobox

@@ -9,13 +9,13 @@ depends=("libegl1" "libxcb-util1" "libxcb-render0" "libxcb-image0" "libxcb-icccm
 pacdeps=("libhyprutils-bin" "libaquamarine-bin")
 compatible=("*:oracular" "*:devel" "debian:trixie" "debian:sid")
 pkgdesc="A highly customizable dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
-source=("https://github.com/hyprwm/Hyprland/releases/download/v${pkgver}/v${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/hyprwm/Hyprland/releases/download/v${pkgver}/v${pkgver}.tar.gz")
 sha256sums=("66d4c1daad1ee0dfa73b184609b1e9167124a6f7ddba00f363c291b831cefc94")
 maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: hyprland")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -Dm755 ./Hyprland ./hyprctl ./hyprpm -t "${pkgdir}/usr/bin/"
   install -Dm644 ./assets/*.png ./example/hyprland.conf -t "${pkgdir}/usr/share/hyprland/"
   install -Dm644 ./example/hyprland.desktop "${pkgdir}/usr/share/wayland-sessions/hyprland.desktop"

@@ -10,7 +10,7 @@ pkgbase = papirus-icon-theme
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: papirus-icon-theme
 	repology = repo: aur
-	source = https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/20231201/papirus-icon-theme-20231201.tar.gz
+	source = @papirus-icon-theme~20231201::https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/20231201/papirus-icon-theme-20231201.tar.gz
 	sha256sums = 9dde683d6444ed2d3b3dacf8579b04d527ce278cef575d606f690c7b31c7aebd
 
 pkgname = papirus-icon-theme

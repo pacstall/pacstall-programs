@@ -5,7 +5,7 @@ pkgver="5.17.0"
 pkgdesc="The web version of listen.tidal.com running in electron with hifi support thanks to widevine"
 repology=("project: tidal-hifi" "visiblename: tidal-hifi-bin")
 source=(
-  "https://github.com/Mastermindzh/tidal-hifi/releases/download/${pkgver}/tidal-hifi-${pkgver}.tar.gz"
+  "@${pkgname}~${pkgver}::https://github.com/Mastermindzh/tidal-hifi/releases/download/${pkgver}/tidal-hifi-${pkgver}.tar.gz"
   "icon.png::https://github.com/Mastermindzh/tidal-hifi/raw/master/build/icon.png"
   "tidal-hifi.desktop::https://aur.archlinux.org/cgit/aur.git/plain/tidal-hifi.desktop?h=tidal-hifi-bin"
 )
@@ -19,7 +19,7 @@ breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 depends=("libxss1" "libnss3" "libgtk-3-0")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Get icon from github and install it
   install -Dm644 "${srcdir}"/icon.png "${pkgdir}/usr/share/pixmaps/${gives}.png"
 

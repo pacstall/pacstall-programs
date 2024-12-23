@@ -22,7 +22,7 @@ pkgbase = anydesk-bin
 	breaks = anydesk-deb
 	replaces = anydesk
 	repology = project: anydesk
-	source = https://download.anydesk.com/linux/anydesk-6.3.0-amd64.tar.gz
+	source = @anydesk-bin~6.3.0::https://download.anydesk.com/linux/anydesk-6.3.0-amd64.tar.gz
 	sha256sums = b1e3337d35ce19af93963829988b2014e8acfbbf6bd1b5adfb8bc7dcd6fee452
 
 pkgname = anydesk-bin

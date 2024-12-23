@@ -1,7 +1,7 @@
 pkgname="obs-backgroundremoval"
 repology=("project: obs-backgroundremoval")
 pkgver="1.1.12"
-source=("https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libgl1-mesa-dev" "ninja-build" "cmake")
 breaks=("${pkgname}-git")
 replaces=("${pkgname}")
@@ -13,13 +13,13 @@ maintainer=("Zahrun <Zahrun@github.com>")
 incompatible=('*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   cmake --preset linux-x86_64 -DCMAKE_INSTALL_PREFIX=/usr
   cmake --build build_x86_64 --parallel
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   cmake --install build_x86_64 --prefix "${pkgdir}"/usr
   install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }

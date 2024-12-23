@@ -15,7 +15,7 @@ pkgbase = tmux
 	breaks = tmux-app
 	replaces = tmux
 	maintainer = Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>
-	source = https://github.com/tmux/tmux/releases/download/3.3/tmux-3.3.tar.gz
+	source = @tmux~3.3::https://github.com/tmux/tmux/releases/download/3.3/tmux-3.3.tar.gz
 	sha256sums = b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc
 
 pkgname = tmux

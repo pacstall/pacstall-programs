@@ -7,7 +7,7 @@ pkgbase = systemcoding-conky
 	makedepends = lm-sensors
 	breaks = conky
 	maintainer = System Coding <revanthnagmunagala@gmail.com>
-	source = https://github.com/systemcoding/systemcoding-conky/releases/download/release/systemcoding-conky.zip
+	source = @systemcoding-conky~1.0::https://github.com/systemcoding/systemcoding-conky/releases/download/release/systemcoding-conky.zip
 	sha256sums = 345774e7af5ce7783a1168746243e252922cac7fe0e0b8039c272792492a365c
 
 pkgname = systemcoding-conky

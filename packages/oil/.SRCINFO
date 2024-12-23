@@ -9,7 +9,7 @@ pkgbase = oil
 	breaks = oil-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: oil-shell
-	source = https://www.oilshell.org/download/oil-0.20.0.tar.xz
+	source = @oil~0.20.0::https://www.oilshell.org/download/oil-0.20.0.tar.xz
 	sha256sums = 42b85f52bbba4a3bb8e16f23fc394c4302bcfd9638f067f01c37d23f2ee449a0
 
 pkgname = oil
