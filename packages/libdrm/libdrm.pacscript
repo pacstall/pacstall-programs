@@ -2,7 +2,6 @@ pkgname="libdrm"
 gives="${pkgname}"
 pkgdesc="Userspace interface to kernel DRM services"
 pkgver="2.4.124"
-pkgrel="1"
 arch=("any")
 depends=("libpciaccess0" "libpciaccess-dev")
 makedepends=("python3-docutils" "meson" "ninja-build" "libcairo2-dev" "libpciaccess-dev" "libc6-dev")
