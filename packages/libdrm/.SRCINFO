@@ -1,7 +1,6 @@
 pkgbase = libdrm
 	gives = libdrm
 	pkgver = 2.4.124
-	pkgrel = 1
 	pkgdesc = Userspace interface to kernel DRM services
 	url = https://dri.freedesktop.org/
 	arch = any
