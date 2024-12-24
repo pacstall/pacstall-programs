@@ -4351,7 +4351,7 @@ pkgbase = hello-rhino-git
 	makedepends = ninja
 	makedepends = gettext
 	maintainer = AJStrong <ajstrongdev@proton.me>
-	source = https://github.com/sundaram123krishnan/hello-rhino.git
+	source = https://github.com/rhinolinux/hello-rhino.git
 
 pkgname = hello-rhino-git
 ---
