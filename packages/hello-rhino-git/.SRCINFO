@@ -1,0 +1,12 @@
+pkgbase = hello-rhino-git
+	gives = hello-rhino
+	pkgver = 2024.3
+	pkgdesc = Greeter application for Rhino Linux
+	arch = any
+	depends = libssl-dev
+	makedepends = rustc
+	makedepends = cargo
+	maintainer = AJStrong <ajstrongdev@proton.me>
+	source = https://github.com/sundaram123krishnan/hello-rhino.git
+
+pkgname = hello-rhino-git
