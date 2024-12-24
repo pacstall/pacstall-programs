@@ -11,17 +11,17 @@ external_connection=true
 
 prepare() {
   cd "${gives}"
-  meson build --buildtype=release --prefix=/usr
+  meson setup build/ --buildtype=release --prefix=/usr
 }
 
 build() {
   cd "${gives}"
-  ninja -C build -j"${NCPU}"
+  ninja -C build/ -j"${NCPU}"
 }
 
 package() {
   cd "${gives}"
-  DESTDIR="${pkgdir}" ninja -C build install
+  DESTDIR="${pkgdir}" ninja -C build/ install
 }
 
 post_install() {
