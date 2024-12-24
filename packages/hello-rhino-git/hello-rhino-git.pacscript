@@ -4,19 +4,24 @@ source=("https://github.com/sundaram123krishnan/hello-rhino.git")
 arch=("any")
 pkgver="2024.3"
 depends=("libssl-dev")
-makedepends=("rustc" "cargo")
+makedepends=("rustc" "cargo" "meson" "ninja" "gettext")
 pkgdesc="Greeter application for Rhino Linux"
 maintainer=("AJStrong <ajstrongdev@proton.me>")
 external_connection=true
 
+prepare() {
+  cd "${gives}"
+  meson build --buildtype=release --prefix=/usr
+}
+
 build() {
   cd "${gives}"
-  cargo build -j"${NCPU}" --locked --release
+  ninja -C build -j"${NCPU}"
 }
 
 package() {
   cd "${gives}"
-  install -Dm755 "target/release/${gives}" -t "${pkgdir}/usr/bin"
+  DESTDIR="${pkgdir}" ninja -C build install
 }
 
 post_install() {

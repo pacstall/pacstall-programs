@@ -4347,6 +4347,9 @@ pkgbase = hello-rhino-git
 	depends = libssl-dev
 	makedepends = rustc
 	makedepends = cargo
+	makedepends = meson
+	makedepends = ninja
+	makedepends = gettext
 	maintainer = AJStrong <ajstrongdev@proton.me>
 	source = https://github.com/sundaram123krishnan/hello-rhino.git
 
