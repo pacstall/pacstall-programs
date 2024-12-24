@@ -4,7 +4,7 @@ source=("https://github.com/rhino-linux/hello-rhino.git")
 arch=("any")
 pkgver="2024.3"
 depends=("libssl-dev")
-makedepends=("rustc" "cargo" "meson" "ninja-build" "gettext")
+makedepends=("rustc>=1.80.0" "cargo>=1.80.0" "meson" "ninja-build" "gettext")
 pkgdesc="Greeter application for Rhino Linux"
 maintainer=("AJStrong <ajstrongdev@proton.me>")
 external_connection=true
