@@ -3,7 +3,7 @@ gives="taskwarrior"
 repology=("project: taskwarrior")
 arch=("any")
 pkgver="2.6.2"
-source=("https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v${pkgver}/task-${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v${pkgver}/task-${pkgver}.tar.gz")
 makedepends=("g++" "cmake" "git")
 depends=("uuid-dev" "gnutls-dev")
 pkgdesc="Taskwarrior is a command line task list management utility with a multitude of features, developed as a portable open source project with an active and quite vast ecosystem of tools, hooks and extensions."
@@ -13,7 +13,7 @@ breaks=("taskwarrior-app" "taskwarrior-deb" "taskwarrior-bin" "taskwarrior-git")
 replaces=("taskwarrior")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   mkdir build
   cd build || exit
   cmake "../" -DCMAKE_INSTALL_PREFIX="${pkgdir}/usr"
@@ -21,7 +21,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make install
 
   install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/bash/task.sh" "${pkgdir}/usr/share/bash-completion/completions/task"

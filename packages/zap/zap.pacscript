@@ -9,7 +9,7 @@ pkgdesc="A delightful AppImage package manager"
 maintainer=("srevinsaju <hello@srev.in>")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   mkdir -p "${pkgdir}/usr/bin"
   cp zap-amd64 "${pkgdir}/usr/bin/zap"
   chmod +x "${pkgdir}/usr/bin/zap"

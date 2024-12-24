@@ -5,6 +5,6 @@ pkgbase = btrfs-du-bin
 	arch = amd64
 	depends = btrfs-progs
 	repology = project: btrfs-du
-	source = https://github.com/nachoparker/btrfs-du/archive/refs/tags/v0.0.7.tar.gz
+	source = @btrfs-du-bin~0.0.7::https://github.com/nachoparker/btrfs-du/archive/refs/tags/v0.0.7.tar.gz
 
 pkgname = btrfs-du-bin

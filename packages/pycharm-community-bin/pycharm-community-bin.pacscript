@@ -6,7 +6,7 @@ maintainer=("ObsidianPresidium <emil@aarestrup.nu>" "James Ed Randson <jimedrand
 pkgdesc="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 external_connection="true"
 source_amd64=(
-  "https://download.jetbrains.com/python/pycharm-community-${pkgver}.tar.gz"
+  "@${pkgname}~${pkgver}::https://download.jetbrains.com/python/pycharm-community-${pkgver}.tar.gz"
   "pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/pycharm.desktop"
 )
 sha256sums_amd64=(
@@ -14,7 +14,7 @@ sha256sums_amd64=(
   "0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04"
 )
 source_arm64=(
-  "https://download.jetbrains.com/python/pycharm-community-${pkgver}-aarch64.tar.gz"
+  "@${pkgname}~${pkgver}::https://download.jetbrains.com/python/pycharm-community-${pkgver}-aarch64.tar.gz"
   "pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/pycharm.desktop"
 )
 sha256sums_arm64=(
@@ -24,7 +24,7 @@ sha256sums_arm64=(
 repology=("project: pycharm")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   mkdir -p "${pkgdir}/usr/share/licenses/pycharm"
   mkdir -p "${pkgdir}/usr/share/pycharm"
   mkdir -p "${pkgdir}/usr/share/pixmaps"

@@ -18,7 +18,7 @@ maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: ${gives}")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm644 "${srcdir}"/amfora.png "${pkgdir}/usr/share/pixmaps/amfora.png"
   install -Dm644 "${srcdir}"/amfora.desktop "${pkgdir}/usr/share/applications/amfora.desktop"
   install -Dm755 "amfora_${pkgver}_linux_64-bit" "${pkgdir}/usr/bin/${gives}"

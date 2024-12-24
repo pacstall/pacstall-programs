@@ -20,7 +20,7 @@ pkgbase = hyprpicker
 	compatible = ubuntu:noble
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: hyprpicker
-	source = https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.2.0.tar.gz
+	source = @hyprpicker~0.2.0::https://github.com/hyprwm/hyprpicker/archive/refs/tags/v0.2.0.tar.gz
 	sha256sums = fa1b0c29682f5ede5a03d754770d152f38d869bc1faa300564680cef2de0758a
 
 pkgname = hyprpicker

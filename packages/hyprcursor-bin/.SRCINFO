@@ -4,7 +4,7 @@ pkgbase = hyprcursor-bin
 	url = https://github.com/hyprwm/hyprcursor
 	arch = amd64
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = https://github.com/hyprwm/hyprcursor/releases/download/v0.1.7/v0.1.7.tar.gz
+	source = @hyprcursor-bin~0.1.7::https://github.com/hyprwm/hyprcursor/releases/download/v0.1.7/v0.1.7.tar.gz
 	sha256sums = b86ab68bb2260a8a09bd595ba38f0a077a08ad8a3f70c2549a59d355be6df196
 
 pkgname = hyprcursor-bin

@@ -16,7 +16,7 @@ breaks=("${gives}" "${gives}-deb" "${gives}-git")
 repology=("project: ${gives}")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install appimage
   install -Dm755 "WSysMon" "${pkgdir}/usr/bin/${gives}"
 

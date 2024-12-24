@@ -2,19 +2,19 @@ pkgname="helix"
 arch=("any")
 pkgver="24.07"
 repology=("project: helix")
-source=("https://github.com/helix-editor/helix/releases/download/${pkgver}/helix-${pkgver}-source.tar.xz")
+source=("@${pkgname}~${pkgver}::https://github.com/helix-editor/helix/releases/download/${pkgver}/helix-${pkgver}-source.tar.xz")
 makedepends=("cargo")
 pkgdesc="A post-modern modal text editor"
 external_connection=true
 sha256sums=("44d9eb113a54a80a2891ac6374c74bcd2bce63d317f1e1c69c286a6fc919922c")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   cargo build -j"${NCPU}" --release --locked
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -Dm755 target/release/hx -t "${pkgdir}/usr/lib/${pkgname}"
 
   printf '#!/bin/sh\nHELIX_RUNTIME=/usr/lib/helix/runtime exec /usr/lib/helix/hx "$@"\n' > hx

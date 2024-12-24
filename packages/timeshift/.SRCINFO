@@ -24,7 +24,7 @@ pkgbase = timeshift
 	replaces = timeshift-btrfs
 	maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
 	repology = project: timeshift
-	source = https://github.com/linuxmint/timeshift/archive/refs/tags/23.07.1.zip
+	source = @timeshift~23.07.1::https://github.com/linuxmint/timeshift/archive/refs/tags/23.07.1.zip
 	sha256sums = 7b468430198c4e8c5c502258f1f67d15f0e68c3f58189d6e80b661cbdaf740f2
 
 pkgname = timeshift

@@ -18,7 +18,7 @@ pkgbase = obs-backgroundremoval
 	incompatible = *:bullseye
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: obs-backgroundremoval
-	source = https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/1.1.12.tar.gz
+	source = @obs-backgroundremoval~1.1.12::https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/1.1.12.tar.gz
 	sha256sums = 50687434e49c005a881977ea46877c00da974a10810db2ee23b0b3fbeed7d6aa
 
 pkgname = obs-backgroundremoval

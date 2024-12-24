@@ -21,7 +21,7 @@ pkgbase = cantata
 	depends = libqt5multimedia5
 	maintainer = ty1118 <tylerbj16@gmail.com>
 	repology = project: cantata
-	source = https://github.com/CDrummond/cantata/releases/download/v2.5.0/cantata-2.5.0.tar.bz2
+	source = @cantata~2.5.0::https://github.com/CDrummond/cantata/releases/download/v2.5.0/cantata-2.5.0.tar.bz2
 	sha256sums = eb7e00ab3f567afaa02ea2c86e2fe811a475afab93182b95922c6eb126821724
 
 pkgname = cantata

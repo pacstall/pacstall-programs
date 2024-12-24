@@ -12,12 +12,12 @@ license="OFL-1.1"
 maintainer=("heyzsh <haidarzsh@gmail.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "${srcdir}"
   unzip ./* -d .
 }
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -d "${pkgdir}"/usr/share/fonts/TTF
   install -Dm644 "${srcdir}"/*.ttf "${pkgdir}"/usr/share/fonts/TTF
   install -Dm644 "${srcdir}"/OFL.txt "${pkgdir}"/usr/share/licenses/"${gives}"/LICENSE

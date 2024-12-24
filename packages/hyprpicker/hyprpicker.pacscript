@@ -1,7 +1,7 @@
 pkgname="hyprpicker"
 repology=("project: ${pkgname}")
 pkgver="0.2.0"
-source=("https://github.com/hyprwm/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/hyprwm/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=("fa1b0c29682f5ede5a03d754770d152f38d869bc1faa300564680cef2de0758a")
 arch=('amd64' 'arm64')
 compatible=('ubuntu:devel' 'debian:sid' 'ubuntu:mantic' 'ubuntu:noble')
@@ -11,11 +11,11 @@ pkgdesc="wlroots-compatible Wayland color picker"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make all -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -Dm755 ./build/"${pkgname}" -t "${pkgdir}/usr/bin"
 }

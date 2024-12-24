@@ -5,7 +5,7 @@ gives="go"
 pkgver="1.21.6"
 pkgrel="2"
 pkgdesc="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
-source=("https://go.dev/dl/go${pkgver}.linux-amd64.tar.gz")
+source=("@${pkgname}~${pkgver}::https://go.dev/dl/go${pkgver}.linux-amd64.tar.gz")
 breaks=("${gives}" "${gives}-git" "${gives}-app" "${gives}-deb" "golang" "golang-git" "golang-deb" "golang-bin" "golang-app" "golang-go")
 replaces=("golang-go")
 sha256sums=("3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4")
@@ -16,7 +16,7 @@ __goroot="/usr/local/${pkgname}"
 __shell_rcs=("${homedir}/.bashrc" "${homedir}/.zshrc" "${homedir}/.profile")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Install binary
   install -Dm755 "bin/go" "${pkgdir}/usr/bin/go"
   install -Dm755 "bin/gofmt" "${pkgdir}/usr/bin/gofmt"
