@@ -1,6 +1,6 @@
 pkgname="hello-rhino-git"
 gives="hello-rhino"
-source=("https://github.com/rhinolinux/hello-rhino.git")
+source=("https://github.com/rhino-linux/hello-rhino.git")
 arch=("any")
 pkgver="2024.3"
 depends=("libssl-dev")
