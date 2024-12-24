@@ -7,7 +7,7 @@ arch=("amd64" "arm64")
 makedepends=("libavcodec-dev" "libavdevice-dev" "libavformat-dev" "libavutil-dev" "libsdl2-dev" "libswresample-dev" "libusb-1.0-0-dev" "meson" "ninja-build")
 depends=("adb" "ffmpeg" "libsdl2-2.0-0" "libusb-1.0-0")
 replaces=("${pkgname}")
-maintainer=("vigress8 <vig@disroot.org>")
+maintainer=()
 source=(
   "https://github.com/Genymobile/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz"
   "${pkgname}-server::https://github.com/Genymobile/${pkgname}/releases/download/v${pkgver}/${pkgname}-server-v${pkgver}"

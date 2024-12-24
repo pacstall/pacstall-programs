@@ -61,7 +61,6 @@ pkgbase = davinci-resolve
 	depends = udev
 	depends = xdg-utils
 	license = custom:commercial
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: davinci-resolve
 	source = davinci-resolve-19.0.1.zip::https://github.com/oklopfer/debs/raw/master/empty
 

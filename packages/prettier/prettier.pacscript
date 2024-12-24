@@ -7,7 +7,7 @@ depends=("nodejs")
 source=("https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz")
 sha256sums=("2f1ecb0ab57a588e0d4d40d3d45239e71ebd8f0190199d0d3f87fe2283639f46")
 repology=("project: ${pkgname}")
-maintainer=("vigress8 <vig@disroot.org>")
+maintainer=()
 
 package() {
   cd "${_archive}"

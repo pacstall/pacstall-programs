@@ -12,7 +12,6 @@ pkgbase = liblcf
 	makedepends = libexpat1-dev
 	makedepends = libicu-dev
 	provides = lcf2xml
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: liblcf
 	source = https://easyrpg.org/downloads/player/0.8/liblcf-0.8.tar.xz
 	sha256sums = 6b0d8c7fefe3d66865336406f69ddf03fe59e52b5601687265a4d1e47a25c386

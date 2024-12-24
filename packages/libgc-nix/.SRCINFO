@@ -8,7 +8,6 @@ pkgbase = libgc-nix
 	replaces = libgc-dev
 	provides = libgc1
 	provides = libgc-dev
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: boehm-gc
 	source = https://github.com/ivmai/bdwgc/releases/download/v8.2.6/gc-8.2.6.tar.gz
 	source = https://github.com/lix-project/lix/raw/7dfa2a761ef8856454d8f63eda27edb8984bdc98/boehmgc-coroutine-sp-fallback.diff
