@@ -11,17 +11,17 @@ sha256sums_arm64=("cbc36953b6943e70468e1908bef9adddc2a9597124e5d794f294095888b09
 repology=("project: pycharm")
 
 package() {
-    cd "${srcdir}/pycharm-community-${pkgver}"
-    install -dm755 "${pkgdir}/usr/share/licenses/pycharm"
-    install -dm755 "${pkgdir}/usr/share/pycharm"
-    install -dm755 "${pkgdir}/usr/share/pixmaps"
-    cp -dr --no-preserve='ownership' bin jbr lib modules plugins product-info.json "${pkgdir}/usr/share/pycharm/"
-    cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/pycharm/"
-    cp -dr "bin/pycharm.png" "${pkgdir}/usr/share/pixmaps/"
-    install -dm755 "${pkgdir}/usr/bin"
-    ln -sf "/usr/share/pycharm/bin/pycharm.sh" "${pkgdir}/usr/bin/pycharm"
-    install -dm755 "${pkgdir}/usr/share/applications/"
-    cat << EOF > "${pkgdir}/usr/share/applications/pycharm.desktop"
+  cd "${srcdir}/pycharm-community-${pkgver}"
+  install -dm755 "${pkgdir}/usr/share/licenses/pycharm"
+  install -dm755 "${pkgdir}/usr/share/pycharm"
+  install -dm755 "${pkgdir}/usr/share/pixmaps"
+  cp -dr --no-preserve='ownership' bin jbr lib modules plugins product-info.json "${pkgdir}/usr/share/pycharm/"
+  cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/pycharm/"
+  cp -dr "bin/pycharm.png" "${pkgdir}/usr/share/pixmaps/"
+  install -dm755 "${pkgdir}/usr/bin"
+  ln -sf "/usr/share/pycharm/bin/pycharm.sh" "${pkgdir}/usr/bin/pycharm"
+  install -dm755 "${pkgdir}/usr/share/applications/"
+  cat << EOF > "${pkgdir}/usr/share/applications/pycharm.desktop"
 [Desktop Entry]
 Version=1.0
 Type=Application
