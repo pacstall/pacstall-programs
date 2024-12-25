@@ -12938,6 +12938,7 @@ pkgname = xfce4-hotcorner-plugin-git
 pkgbase = xfce4-settings-pine-git
 	gives = xfce4-settings
 	pkgver = 4.20.0
+	pkgrel = 2
 	pkgdesc = XFCE4 patch that allows Pine64 Devices to auto-rotate
 	arch = any
 	makedepends = xfce4-dev-tools>=4.19.0
