@@ -25,6 +25,7 @@ pkgbase = rustdesk-deb
 	conflicts = rustdesk
 	replaces = rustdesk-deb
 	replaces = rustdesk
+	maintainer = xdavius <xdavius@github.com>
 	maintainer = medaey <medaey@hotmail.com>
 	repology = project: rustdesk
 	source_amd64 = https://github.com/rustdesk/rustdesk/releases/download/1.3.2/rustdesk-1.3.2-x86_64.deb

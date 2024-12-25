@@ -7,7 +7,7 @@ depends=('libgmp-dev')
 optdepends=('curl: downloader' 'wget: downloader')
 url='https://www.haskell.org/ghcup/'
 breaks=("${gives}-git")
-maintainer=("vigress8 <vig@disroot.org>")
+maintainer=()
 repology=("project: ${gives}")
 
 _baseurl="https://downloads.haskell.org/~${gives}/${pkgver}"

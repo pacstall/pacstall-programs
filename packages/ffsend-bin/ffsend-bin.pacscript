@@ -9,7 +9,7 @@ breaks=("${gives}")
 depends=("ca-certificates")
 optdepends=("xclip: clipboard support"
   "bash-completion: support auto-completion for bash")
-maintainer=("vigress8 <vig@disroot.org>")
+maintainer=()
 source=(
   "https://github.com/timvisee/${gives}/releases/download/v${pkgver}/${gives}-v${pkgver}-linux-x64-static"
   "https://gitlab.com/timvisee/${gives}/raw/v${pkgver}/contrib/completions/${gives}.bash"

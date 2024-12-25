@@ -56,7 +56,6 @@ pkgbase = lix-git
 	conflicts = lix
 	conflicts = nix-bin
 	conflicts = nix-setup-systemd
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: lix-nix
 	source = lix::https://github.com/lix-project/lix.git
 

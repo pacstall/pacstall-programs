@@ -15,7 +15,7 @@ if [[ ! "buster focal bullseye jammy" =~ ${DISTRO#*:} ]]; then
 fi
 source=("https://easyrpg.org/downloads/player/${pkgver}/${pkgname}-${pkgver}.tar.xz")
 sha256sums=('6b0d8c7fefe3d66865336406f69ddf03fe59e52b5601687265a4d1e47a25c386')
-maintainer=("vigress8 <vig@disroot.org>")
+maintainer=()
 repology=("project: ${pkgname}")
 
 build() {
