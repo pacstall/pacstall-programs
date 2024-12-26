@@ -9,7 +9,7 @@ license=('MIT')
 depends=('jq')
 pacdeps=('glow-deb')
 source=("${gives}::${url}.git")
-maintainer=('vigress8 <vig@disroot.org>')
+maintainer=()
 repology=("project: ${gives}")
 
 package() {

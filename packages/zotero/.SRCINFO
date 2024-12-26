@@ -1,10 +1,10 @@
 pkgbase = zotero
-	pkgver = 7.0.9
+	pkgver = 7.0.11
 	pkgdesc = Your personal research assistant
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: zotero
-	source = https://download.zotero.org/client/release/7.0.9/Zotero-7.0.9_linux-x86_64.tar.bz2
-	sha256sums = f6c9ac3ab2248c37d2723cbaacc7f5d5b895d5dad684408f0e6b4b374443f810
+	source = https://download.zotero.org/client/release/7.0.11/Zotero-7.0.11_linux-x86_64.tar.bz2
+	sha256sums = 4a5760e2c47ec06d171f4d2609c9ece5cc9f633360ed140fe2ff7954d33a46ee
 
 pkgname = zotero

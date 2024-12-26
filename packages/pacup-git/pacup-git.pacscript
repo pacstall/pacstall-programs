@@ -20,10 +20,7 @@ replaces=(
   "${gives}-git"
 )
 source=("https://github.com/pacstall/${gives}.git")
-maintainer=(
-  'vigress8 <vig@disroot.org>'
-  'Oren Klopfer <oren@taumoda.com>'
-)
+maintainer=('Oren Klopfer <oren@taumoda.com>')
 
 build() {
   cd "${gives}"

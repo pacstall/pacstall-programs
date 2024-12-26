@@ -18,7 +18,6 @@ pkgbase = scrcpy
 	makedepends = meson
 	makedepends = ninja-build
 	replaces = scrcpy
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: scrcpy
 	source = https://github.com/Genymobile/scrcpy/archive/refs/tags/v2.7.tar.gz
 	source = scrcpy-server::https://github.com/Genymobile/scrcpy/releases/download/v2.7/scrcpy-server-v2.7

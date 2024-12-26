@@ -7,4 +7,4 @@ repology=("project: zoom-videoconference")
 pkgdesc="Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution."
 sha256sums=("744f9587c138518c988a1172aa0907920dc7d8f5ebe4361d75dd1cc188337db8")
 arch=("amd64")
-maintainer=("vigress8 <vig@disroot.org>")
+maintainer=()

@@ -13,15 +13,13 @@ sha256sums_amd64=("daf2f0da59da7e7a0ebfd7c5e9572550055a5ecd48f5b9d752a15dd78afe8
 source=("https://github.com/rhino-linux/${gives}/releases/download/v${pkgver}/${gives}_v${pkgver}_${CARCH}.zip")
 
 build() {
-  cd "${_archive}"
   mkdir -p "${pkgdir}/usr"
   mkdir -p "${pkgdir}/etc/skel/.config/autostart"
 }
 
 package() {
-  cd "${_archive}"
-  chmod +x "../usr/local/bin/${gives}"
-  cp -rf ../usr/* "${pkgdir}/usr"
+  chmod +x "usr/local/bin/${gives}"
+  cp -rf usr/* "${pkgdir}/usr"
   ln -sf "/usr/local/share/applications/org.rhinolinux.RhinoSetup.desktop" "${pkgdir}/etc/skel/.config/autostart/rhino-setup.desktop"
 }
 

@@ -12,7 +12,7 @@ replaces=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
 pkgver="2024.2"
-pkgrel="2"
+pkgrel="3"
 style="(mobile)"
 branch="devel"
 
@@ -48,8 +48,12 @@ post_install() {
     echo 'START_DAEMON="true"
 USBAUTO="true"
 DEVICES="/dev/EG25.NMEA"
-GPSD_OPTIONS="-D3"' | sudo tee /etc/default/gpsd
+GPSD_OPTIONS="-D3"' | sudo tee /etc/default/gpsd > /dev/null
     sudo systemctl enable gpsd
+  else
+    echo 'sensor:modalias:*sc7a20:*
+  ACCEL_MOUNT_MATRIX=1, 0, 0; 0, 0, 1; 0, 1, 0' | sudo tee /etc/udev/hwdb.d/61-sensor-local.hwdb > /dev/null
+    sudo systemd-hwdb update
   fi
 }
 
