@@ -1,5 +1,6 @@
 pkgbase = rhino-stampede-dev
 	pkgver = 2024.3
+	pkgrel = 2
 	pkgdesc = Testing suite for Rhino Linux development
 	arch = all
 	pacdeps = unicons-git
