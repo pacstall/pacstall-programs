@@ -7,3 +7,4 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 compatible=("ubuntu:devel")
 arch=("all")
 pkgver="2024.3"
+pkgrel="2"
