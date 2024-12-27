@@ -1,7 +1,7 @@
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
-	pkgrel = 5
+	pkgrel = 6
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
 	arch = all
@@ -52,6 +52,7 @@ pkgbase = unicorn-desktop-git
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
 	pacdeps = appmenu-registrar-backport
+	pacdeps = xfce4-dynamic-workspaces-plugin-git
 	replaces = unicorn-mobile
 	replaces = unicorn-mobile-git
 	incompatible = debian:*
