@@ -1,7 +1,7 @@
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
-	pkgrel = 6
+	pkgrel = 7
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
 	arch = all
@@ -39,7 +39,7 @@ pkgbase = unicorn-desktop-git
 	depends = xserver-xorg-input-multitouch
 	depends = xserver-xorg-input-synaptics
 	depends = ukui-touchpadserver
-	depends = pipewire-audio
+	depends = pipewire-audio | pulseaudio-module-bluetooth
 	depends = bluetooth
 	depends = libxfce4ui-utils
 	depends = at-spi2-core
