@@ -1,0 +1,17 @@
+pkgbase = python-darkdetect
+pkgdesc = Detect OS Dark Mode from Python
+pkgver = 0.8.0
+pkgrel = 4
+url = https://github.com/albertosottile/darkdetect
+arch = any
+license = BSD-1-Clause
+makedepends = git
+makedepends = python3-build
+makedepends = python3-installer
+makedepends = python3-wheel
+makedepends = python3-setuptools
+depends = python3
+source = https://github.com/albertosottile/darkdetect/archive/refs/tags/v${pkgver}.tar.gz
+sha256sums=('SKIP')
+
+pkgname = python-darkdetect
