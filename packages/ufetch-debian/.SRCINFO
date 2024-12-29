@@ -4,6 +4,6 @@ pkgbase = ufetch-debian
 	arch = amd64
 	license = MIT
 	maintainer = Vladislav Prokopenko <vladislavprokopenko@disroot.org>
-	source = https://gitlab.com/jschx/ufetch/-/raw/main/ufetch-debian
+	source = https://gitlab.com/jschx/ufetch/-/raw/v0.4/ufetch-debian
 
 pkgname = ufetch-debian
