@@ -9,9 +9,9 @@ pkgbase = cortile-bin
 	replaces = cortile-git
 	maintainer = AJStrong <ajstrong.dev@gmail.com>
 	repology = project: cortile
-	source_arm64 = https://github.com/leukipp/cortile/releases/download/v2.5.2/cortile_2.5.2_linux_arm64.tar.gz
+	source_arm64 = @cortile-bin~2.5.2::https://github.com/leukipp/cortile/releases/download/v2.5.2/cortile_2.5.2_linux_arm64.tar.gz
 	sha256sums_arm64 = acebab88ef9e2301a25ce754838b3e8a5f6d800312436e871f2fad73b6f6fc9a
-	source_amd64 = https://github.com/leukipp/cortile/releases/download/v2.5.2/cortile_2.5.2_linux_amd64.tar.gz
+	source_amd64 = @cortile-bin~2.5.2::https://github.com/leukipp/cortile/releases/download/v2.5.2/cortile_2.5.2_linux_amd64.tar.gz
 	sha256sums_amd64 = dcc104bb2dbdf5596b6de5e578b8988347200759ca5c1134f9d0bec3b19ef3dd
 
 pkgname = cortile-bin

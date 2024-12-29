@@ -3,7 +3,7 @@ gives="minecraft-launcher"
 pkgver="1121"
 maintainer=("aranym <aranym1@pm.me>")
 source=(
-  "https://launcher.mojang.com/download/linux/x86_64/minecraft-launcher_1121.tar.gz"
+  "@${pkgname}~${pkgver}::https://launcher.mojang.com/download/linux/x86_64/minecraft-launcher_1121.tar.gz"
   "minecraft-launcher.svg::https://launcher.mojang.com/download/minecraft-launcher.svg"
   "minecraft-launcher.desktop::https://aur.archlinux.org/cgit/aur.git/plain/minecraft-launcher.desktop?h=minecraft-launcher"
 )
@@ -17,11 +17,11 @@ sha256sums=(
 )
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   mkdir -p "${pkgdir}/usr/bin"
   mkdir -p "${pkgdir}/usr/share/icons/hicolor/symbolic/apps"
   mkdir -p "${pkgdir}/usr/share/applications"

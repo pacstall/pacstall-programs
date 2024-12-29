@@ -13,13 +13,13 @@ depends_jammy=('libicu70')
 if [[ ! "buster focal bullseye jammy" =~ ${DISTRO#*:} ]]; then
   depends+=('libicu72')
 fi
-source=("https://easyrpg.org/downloads/player/${pkgver}/${pkgname}-${pkgver}.tar.xz")
+source=("@${pkgname}~${pkgver}::https://easyrpg.org/downloads/player/${pkgver}/${pkgname}-${pkgver}.tar.xz")
 sha256sums=('6b0d8c7fefe3d66865336406f69ddf03fe59e52b5601687265a4d1e47a25c386')
 maintainer=()
 repology=("project: ${pkgname}")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   ./configure --prefix=/usr \
     --enable-shared --disable-static \
     --disable-update-mimedb
@@ -27,7 +27,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make DESTDIR="${pkgdir}" install
   install -Dm644 COPYING -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
