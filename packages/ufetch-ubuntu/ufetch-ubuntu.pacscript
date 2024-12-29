@@ -4,7 +4,6 @@ arch=('amd64')
 pkgver="0.4"
 source=("https://gitlab.com/jschx/ufetch/-/raw/main/ufetch-ubuntu")
 license=('MIT')
-external_connection=true
 pkgdesc="Tiny system info for Unix-like operating systems."
 
 package() {
