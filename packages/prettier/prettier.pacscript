@@ -4,13 +4,13 @@ pkgver="3.3.3"
 pkgdesc="An opinionated code formatter"
 url='https://prettier.io'
 depends=("nodejs")
-source=("https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz")
+source=("@${pkgname}~${pkgver}::https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz")
 sha256sums=("2f1ecb0ab57a588e0d4d40d3d45239e71ebd8f0190199d0d3f87fe2283639f46")
 repology=("project: ${pkgname}")
 maintainer=()
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   local mod_dir="usr/lib/node_modules/${pkgname}"
   install -d "${pkgdir}/"{usr/bin,"${mod_dir}"}
   cp -a ./* "${pkgdir}/${mod_dir}"

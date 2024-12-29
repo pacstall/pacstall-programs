@@ -18,7 +18,7 @@ package() {
   else
     gnuarch="aarch64"
   fi
-  cd "${_archive}"
+  cd "${srcdir}"
   mkdir -p "${pkgdir}/usr/libexec/docker/cli-plugins"
   chmod a+x ./"docker-compose-linux-${gnuarch}"
   mv ./"docker-compose-linux-${gnuarch}" "${pkgdir}/usr/libexec/docker/cli-plugins/docker-compose"

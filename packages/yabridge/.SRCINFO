@@ -6,7 +6,7 @@ pkgbase = yabridge
 	optdepends = wine64: 64-bit windows emulator
 	maintainer = echometerain <echometer@disroot.org>
 	repology = project: yabridge
-	source = https://github.com/robbert-vdh/yabridge/releases/download/5.0.5/yabridge-5.0.5.tar.gz
+	source = @yabridge~5.0.5::https://github.com/robbert-vdh/yabridge/releases/download/5.0.5/yabridge-5.0.5.tar.gz
 	sha256sums = 3ddc6e0989dad93e0275a83362fcfc0cb26b6dbfb8be7fc689410c02eb36455f
 
 pkgname = yabridge

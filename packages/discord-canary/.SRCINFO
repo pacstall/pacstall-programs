@@ -21,7 +21,7 @@ pkgbase = discord-canary
 	depends = libgbm1
 	maintainer = DismissedGuy <me@mikealmel.ooo>
 	repology = project: discord-canary
-	source = https://dl-canary.discordapp.net/apps/linux/0.0.550/discord-canary-0.0.550.tar.gz
+	source = @discord-canary~0.0.550::https://dl-canary.discordapp.net/apps/linux/0.0.550/discord-canary-0.0.550.tar.gz
 	sha256sums = 56478bc20da0307fb5251df982c5868cce6dbc60d27dd0d3276508bb93f862aa
 
 pkgname = discord-canary

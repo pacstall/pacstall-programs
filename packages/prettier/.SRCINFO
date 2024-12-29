@@ -5,7 +5,7 @@ pkgbase = prettier
 	arch = all
 	depends = nodejs
 	repology = project: prettier
-	source = https://registry.npmjs.org/prettier/-/prettier-3.3.3.tgz
+	source = @prettier~3.3.3::https://registry.npmjs.org/prettier/-/prettier-3.3.3.tgz
 	sha256sums = 2f1ecb0ab57a588e0d4d40d3d45239e71ebd8f0190199d0d3f87fe2283639f46
 
 pkgname = prettier
