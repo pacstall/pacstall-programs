@@ -199,6 +199,7 @@ gradience
 gradience-git
 graillon
 grapejuice-git
+greetd-phrog
 grive2
 grive2-git
 grub-btrfs
@@ -411,6 +412,7 @@ owofetch
 p3x-onenote-app
 pacget-git
 paconvert-git
+pacstall
 pacstall-gui-git
 pacstall-qa-git
 pacup
@@ -653,6 +655,7 @@ zap
 zed-editor-preview-bin
 zed-editor-stable-bin
 zen-browser-aarch64-bin
+zen-browser-bin
 zen-browser-generic-bin
 zen-browser-specific-bin
 zentile-bin

@@ -14,7 +14,7 @@ pkgbase = soundux
 	incompatible = debian:*
 	maintainer = D3SOX <d3sox@protonmail.com>
 	repology = project: soundux
-	source = https://github.com/Soundux/Soundux/releases/download/0.2.7/soundux-0.2.7.tar.gz
+	source = @soundux~0.2.7::https://github.com/Soundux/Soundux/releases/download/0.2.7/soundux-0.2.7.tar.gz
 	sha256sums = 017003fc96f49df30575975f3904c0d8a500e325a9d2bca8c3dc69fed0cab0a7
 
 pkgname = soundux

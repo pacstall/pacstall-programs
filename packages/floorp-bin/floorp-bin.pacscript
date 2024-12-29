@@ -4,15 +4,15 @@ pkgver="11.20.0"
 repology=("project: ${gives}")
 sha256sums_amd64=("59e3a67de994bfc8da3038cfb355b249ea67bf13bda8aaff021c459aabffb767")
 sha256sums_arm64=("cd416460b0b5a8b06ee2c4699110197c8180143e76bce4c119719edfc19c0d00")
-source_amd64=("https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-x86_64.tar.bz2")
-source_arm64=("https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-aarch64.tar.bz2")
+source_amd64=("@${pkgname}~${pkgver}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-x86_64.tar.bz2")
+source_arm64=("@${pkgname}~${pkgver}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-aarch64.tar.bz2")
 url='https://floorp.app/'
 pkgdesc="Firefox-based Browser build for keeping the Open, Private and Sustainable Web alive"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('amd64' 'arm64')
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   if [[ ${CARCH} == "arm64" ]]; then
     fancy_message warn "Floorp is not running properly on ${BBlue}arm64${NC}. It should only be installed for development."
     if [[ ! -f "${METADIR}/${pkgname}-override" ]]; then

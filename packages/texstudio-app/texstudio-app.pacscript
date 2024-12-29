@@ -9,7 +9,7 @@ source=("https://github.com/texstudio-org/texstudio/releases/download/${pkgver}/
 appimage="${gives}-${pkgver}-x86_64.AppImage"
 sha256sums=("737c968412cd9bae9e63dc3cd0f2025fa111c4e52c07fc3515d15b569101a6f8")
 repology=("project: ${gives}")
-maintainer=("vigress8 <vig@disroot.org>")
+maintainer=()
 
 package() {
   cd "${srcdir}"

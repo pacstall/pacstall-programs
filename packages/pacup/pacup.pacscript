@@ -20,10 +20,7 @@ replaces=(
 )
 source=("https://github.com/pacstall/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=('21ad7741f99bc468ccc5329df31076fd4150083ec7d05629ded079f7e9f71179')
-maintainer=(
-  'vigress8 <vig@disroot.org>'
-  'Oren Klopfer <oren@taumoda.com>'
-)
+maintainer=('Oren Klopfer <oren@taumoda.com>')
 
 build() {
   cd "${pkgname}-${pkgver}"

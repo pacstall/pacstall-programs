@@ -3,7 +3,7 @@ gives="shellharden"
 arch=("any")
 pkgver="4.3.0"
 repology=("project: ${gives}")
-source=("https://github.com/anordal/shellharden/archive/refs/tags/v${pkgver}.zip")
+source=("@${pkgname}~${pkgver}::https://github.com/anordal/shellharden/archive/refs/tags/v${pkgver}.zip")
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 makedepends=("rustc" "cargo")
 pkgdesc="A syntax highlighter and a tool to semi-automate the rewriting of scripts to ShellCheck conformance"
@@ -13,11 +13,11 @@ external_connection=true
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   cargo build --release
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -Dm755 target/release/shellharden "${pkgdir}"/usr/bin/shellharden
 }

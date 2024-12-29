@@ -5,7 +5,7 @@ maintainer=("JonBoyleCoding <programmerfalcon@gmail.com>")
 pkgname="mutt-wizard"
 arch=("any")
 pkgver="3.3.1"
-source=("https://github.com/lukesmithxyz/${pkgname}/archive/v${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/lukesmithxyz/${pkgname}/archive/v${pkgver}.tar.gz")
 repology=("project: mutt-wizard")
 depends=("neomutt" "isync" "msmtp" "notmuch" "pass" "curl")
 breaks=("mutt-wizard" "mutt-wizard-git")
@@ -27,7 +27,7 @@ optdepends=('imagemagick: view images inside of the neomutt TUI'
   'cron: set up automatic mail syncing')
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make DESTDIR="${pkgdir}" install
   install -Dm644 README.md -t "${pkgdir}/usr/share/doc/${pkgname}"
   install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"

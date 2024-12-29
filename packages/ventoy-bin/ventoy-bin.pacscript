@@ -11,7 +11,7 @@ optdepends=('libgtk-3-dev: GTK3 GUI'
   'polkit: run GUI from application menu')
 provides=("${pkgname%-bin}")
 conflicts=("${pkgname%-bin}")
-source=("https://github.com/ventoy/Ventoy/releases/download/v${pkgver}/${pkgname%-bin}-${pkgver}-linux.tar.gz"
+source=("@${pkgname}~${pkgver}::https://github.com/ventoy/Ventoy/releases/download/v${pkgver}/${pkgname%-bin}-${pkgver}-linux.tar.gz"
   "https://aur.archlinux.org/cgit/aur.git/plain/sanitize.patch?h=ventoy-bin"
   "https://aur.archlinux.org/cgit/aur.git/plain/ventoy?h=ventoy-bin"
   "https://aur.archlinux.org/cgit/aur.git/plain/ventoy-extend-persistent?h=ventoy-bin"
@@ -33,7 +33,7 @@ maintainer=("xdavius <xdavius@github.com>")
 repology=("project: ${gives}")
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Decompress tools
   pushd tool/"x86_64"
   for file in ./*.xz; do
@@ -62,7 +62,7 @@ prepare() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -Dm644 -vt "${pkgdir}/opt/${pkgname%-bin}/boot/" boot/*
   install -Dm644 -vt "${pkgdir}/opt/${pkgname%-bin}/${pkgname%-bin}/" "${pkgname%-bin}"/*
   install -Dm755 -vt "${pkgdir}/opt/${pkgname%-bin}/tool/" tool/*.{cer,glade,json,sh,xz}
