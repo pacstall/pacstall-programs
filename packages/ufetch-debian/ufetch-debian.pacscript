@@ -2,7 +2,7 @@ maintainer=("Vladislav Prokopenko <vladislavprokopenko@disroot.org>")
 pkgname="ufetch-debian"
 arch=('amd64')
 pkgver="0.4"
-source=("https://gitlab.com/jschx/ufetch/-/raw/main/ufetch-debian")
+source=("https://gitlab.com/jschx/ufetch/-/raw/v${pkgver}/ufetch-debian")
 license=('MIT')
 pkgdesc="Tiny system info for Unix-like operating systems."
 
