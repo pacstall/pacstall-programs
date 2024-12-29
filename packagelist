@@ -411,6 +411,7 @@ owofetch
 p3x-onenote-app
 pacget-git
 paconvert-git
+pacstall
 pacstall-gui-git
 pacstall-qa-git
 pacup
