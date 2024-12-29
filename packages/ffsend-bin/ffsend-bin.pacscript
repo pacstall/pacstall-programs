@@ -26,7 +26,7 @@ sha256sums=(
 )
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm755 "${gives}-v${pkgver}-linux-x64-static" "${pkgdir}/usr/bin/${gives}"
   install -Dm644 "${srcdir}/${gives}.bash" "${pkgdir}/usr/share/bash-completion/completions/${gives}"
   install -Dm644 "${srcdir}/_${gives}" "${pkgdir}/usr/share/zsh/site-functions/_${gives}"

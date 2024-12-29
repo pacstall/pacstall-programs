@@ -5,7 +5,7 @@ pkgbase = papirus-folders
 	depends = papirus-icon-theme
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: papirus-folders
-	source = https://github.com/PapirusDevelopmentTeam/papirus-folders/archive/refs/tags/v1.13.1.tar.gz
+	source = @papirus-folders~1.13.1::https://github.com/PapirusDevelopmentTeam/papirus-folders/archive/refs/tags/v1.13.1.tar.gz
 	sha256sums = df38d1a86d4aaad575d1f93f1fc541d538409d985fa418d5eac46a77c18cb028
 
 pkgname = papirus-folders

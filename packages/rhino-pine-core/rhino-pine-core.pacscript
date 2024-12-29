@@ -23,7 +23,7 @@ pre_install() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   mkdir -p "${pkgdir}/usr/lib"
   mkdir -p "${pkgdir}/usr/share/pixmaps"
   for i in ubuntu-logo-text.png ubuntu-logo-text-dark.png; do

@@ -17,7 +17,7 @@ maintainer=()
 repology=("project: ${gives}")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm644 "MegaBasterd_${pkgver}.jar" "${pkgdir}/usr/share/java/${gives}/${gives}.jar"
 
   cat <<- END > "${gives}"

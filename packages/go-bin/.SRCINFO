@@ -17,7 +17,7 @@ pkgbase = go-bin
 	replaces = golang-go
 	maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
 	repology = project: go
-	source = https://go.dev/dl/go1.21.6.linux-amd64.tar.gz
+	source = @go-bin~1.21.6::https://go.dev/dl/go1.21.6.linux-amd64.tar.gz
 	sha256sums = 3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4
 
 pkgname = go-bin

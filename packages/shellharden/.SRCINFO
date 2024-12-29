@@ -12,7 +12,7 @@ pkgbase = shellharden
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: shellharden
-	source = https://github.com/anordal/shellharden/archive/refs/tags/v4.3.0.zip
+	source = @shellharden~4.3.0::https://github.com/anordal/shellharden/archive/refs/tags/v4.3.0.zip
 	sha256sums = d6679f7a2a3e96da923b2f04339a966202a24172f1bbc58e56e7982eca2a76dc
 
 pkgname = shellharden

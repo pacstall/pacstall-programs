@@ -10,7 +10,7 @@ pkgname="oil"
 arch=("any")
 pkgver="0.20.0"
 pkgdesc="A bash-compatible UNIX shell written in Python"
-source=("https://www.oilshell.org/download/oil-${pkgver}.tar.xz")
+source=("@${pkgname}~${pkgver}::https://www.oilshell.org/download/oil-${pkgver}.tar.xz")
 gives="oil"
 breaks=("${pkgname}-bin" "${pkgname}-git" "${pkgname}-deb" "${pkgname}-app")
 sha256sums=("42b85f52bbba4a3bb8e16f23fc394c4302bcfd9638f067f01c37d23f2ee449a0")
@@ -20,12 +20,12 @@ repology=("project: oil-shell")
 MAKEFLAGS=()
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   mkdir -p tmp
 }
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   TMPDIR="./tmp/" ./configure --prefix="/usr"
 
   # We want this to expand
@@ -34,7 +34,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   DESTDIR="${pkgdir}" ./install
 }
 # vim:set ft=sh ts=2 sw=2 et:

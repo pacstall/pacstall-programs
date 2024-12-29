@@ -3,14 +3,14 @@ gives="onnxruntime-gpu"
 repology=("project: onnxruntime")
 arch=("amd64")
 pkgver="1.17.1"
-source=("https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-gpu-${pkgver}.tgz")
+source=("@${pkgname}~${pkgver}::https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-gpu-${pkgver}.tgz")
 pkgdesc="Cross-platform inference and training machine-learning accelerator with gpu support"
 sha256sums=("613c53745ea4960ed368f6b3ab673558bb8561c84a8fa781b4ea7fb4a4340be4")
 maintainer=("Zahrun <Zahrun@github.com>")
 replaces=("${gives}-1-7-0-bin" "${gives}" "${gives}-bin")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -Dm755 "lib/lib${_gives}.so.${pkgver}" -t "${pkgdir}/usr/local/lib"
   install -Dm755 "lib/lib${_gives}_"* -t "${pkgdir}/usr/local/lib"
   install -Dm644 include/* -t "${pkgdir}/usr/local/include"

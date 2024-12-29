@@ -32,7 +32,7 @@ pkgbase = i3lock-color
 	breaks = i3lock
 	replaces = i3lock
 	maintainer = Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>
-	source = https://github.com/Raymo111/i3lock-color/archive/refs/tags/2.13.c.5.tar.gz
+	source = @i3lock-color~2.13.c.5::https://github.com/Raymo111/i3lock-color/archive/refs/tags/2.13.c.5.tar.gz
 	sha256sums = 46f15cbbf339873266e014f70b5e1ec02177f0295302b615a7bd85bef40d8ad2
 
 pkgname = i3lock-color
