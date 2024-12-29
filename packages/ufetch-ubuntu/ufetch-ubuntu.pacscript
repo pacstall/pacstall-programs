@@ -1,5 +1,5 @@
 maintainer=("Vladislav Prokopenko <vladislavprokopenko@disroot.org>")
-pkgname=("ufetch-ubuntu")
+pkgname="ufetch-ubuntu"
 arch=('amd64')
 pkgver="0.4"
 source=("https://gitlab.com/jschx/ufetch/-/raw/main/ufetch-ubuntu?ref_type=heads&inline=false")
