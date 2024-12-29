@@ -11636,7 +11636,7 @@ pkgbase = ufetch-ubuntu
 	arch = amd64
 	license = MIT
 	maintainer = Vladislav Prokopenko <vladislavprokopenko@disroot.org>
-	source = https://gitlab.com/jschx/ufetch/-/raw/main/ufetch-ubuntu?ref_type=heads&inline=false
+	source = https://gitlab.com/jschx/ufetch/-/raw/main/ufetch-ubuntu
 
 pkgname = ufetch-ubuntu
 ---
