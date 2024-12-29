@@ -11630,6 +11630,16 @@ pkgbase = u-boot-mobian-deb
 
 pkgname = u-boot-mobian-deb
 ---
+pkgbase = ufetch-ubuntu
+	pkgver = 0.4
+	pkgdesc = Tiny system info for Unix-like operating systems.
+	arch = amd64
+	license = MIT
+	maintainer = Vladislav Prokopenko <vladislavprokopenko@disroot.org>
+	source = https://gitlab.com/jschx/ufetch/-/raw/main/ufetch-ubuntu?ref_type=heads&inline=false
+
+pkgname = ufetch-ubuntu
+---
 pkgbase = ugee-tablet-driver-deb
 	gives = ugeetablet
 	pkgver = 4.1.3
