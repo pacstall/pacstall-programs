@@ -55,7 +55,7 @@ prepare() {
   mkdir -p "${pkgdir}/var/lib/pacstall/metadata/"
   mkdir -p "${pkgdir}/var/cache/pacstall/"
   mkdir -p "${pkgdir}/usr/src/pacstall/"
-  mapfile -t linguas <"misc/po/LINGUAS"
+  mapfile -t linguas < "misc/po/LINGUAS"
   for lang in "${linguas[@]}"; do
     mkdir -p "${pkgdir}/usr/share/locale/${lang}/LC_MESSAGES/"
   done
@@ -72,7 +72,7 @@ package() {
   install "misc/completion/fish" "${pkgdir}/usr/share/fish/vendor_completions.d/pacstall.fish"
   install "misc/completion/bash" "${pkgdir}/usr/share/bash-completion/completions/pacstall"
   echo "https://raw.githubusercontent.com/pacstall/pacstall-programs/master" | tee "${pkgdir}/usr/share/pacstall/repo/pacstallrepo" > /dev/null
-  mapfile -t linguas <"misc/po/LINGUAS"
+  mapfile -t linguas < "misc/po/LINGUAS"
   for lang in "${linguas[@]}"; do
     msgfmt -o "${pkgdir}/usr/share/locale/${lang}/LC_MESSAGES/pacstall.mo" "misc/po/${lang}.po"
   done
