@@ -12,9 +12,9 @@ package() {
 }
 
 post_install() {
-  echo '====================================================================='
-  echo 'To enable this theme, add the following line to `/etc/default/grub`:'
-  echo 'GRUB_THEME=/usr/share/grub/themes/rhino/theme.txt'
-  echo 'Then, run `sudo update-grub` and reboot.'
-  echo '====================================================================='
+  echo "====================================================================="
+  echo "To enable this theme, add the following line to '/etc/default/grub':"
+  echo "GRUB_THEME=/usr/share/grub/themes/rhino/theme.txt"
+  echo "Then, run 'sudo update-grub' and reboot."
+  echo "====================================================================="
 }
