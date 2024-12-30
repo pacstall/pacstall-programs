@@ -478,6 +478,7 @@ restic-bin
 resticprofile-bin
 rhino-core
 rhino-docker-builder-git
+rhino-grub-theme-git
 rhino-kvantum-theme-git
 rhino-lightdm-theme-git
 rhino-neofetch-git

@@ -9595,6 +9595,16 @@ pkgbase = rhino-docker-builder-git
 
 pkgname = rhino-docker-builder-git
 ---
+pkgbase = rhino-grub-theme-git
+	gives = rhino-grub-theme
+	pkgver = 0.0.1
+	pkgdesc = Custom Grub Loader theme for Rhino Linux
+	arch = all
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = rhino-grub-theme::https://github.com/rhino-linux/grub.git
+
+pkgname = rhino-grub-theme-git
+---
 pkgbase = rhino-kvantum-theme-git
 	gives = rhino-kvantum-theme
 	pkgver = 0.0.1
