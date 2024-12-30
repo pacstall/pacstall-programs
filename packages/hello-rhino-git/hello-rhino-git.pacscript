@@ -27,7 +27,7 @@ package() {
 post_install() {
   mkdir -p "${homedir}/.config/autostart"
   if ! [[ -f "${homedir}/.config/autostart/hello-rhino.desktop" ]]; then
-    sudo ln -sf "/usr/local/share/applications/hello-rhino.desktop" "${homedir}/.config/autostart/hello-rhino.desktop"
+    sudo ln -sf "/usr/share/applications/hello-rhino.desktop" "${homedir}/.config/autostart/hello-rhino.desktop"
   fi
 }
 
