@@ -29,9 +29,9 @@ package() {
 }
 
 post_install() {
-  rmmod legion-laptop.ko #unload old module
-  echo Installation Finished!
-  echo Reboot the system or run modprobe legion-laptop to load the module!
+  RED='\033[0;31m'
+  BOLD=$(tput bold)
+  echo -e "${RED} ${BOLD} If you have a 2022 or 2023 model, please help testing the new features '\e]8;;https://github.com/johnfanv2/LenovoLegionLinux/issues/46\ahere\e]8;;\a'"
 }
 
 post_upgrade() {
@@ -39,9 +39,6 @@ post_upgrade() {
 }
 
 post_remove() {
-  rmmod legion-laptop.ko #unload old module
-  echo Uninstall finished.
-  echo Reboot the system.
   RED='\033[0;31m'
   BOLD=$(tput bold)
   echo -e "${RED} ${BOLD} If you have a 2022 or 2023 model, please help testing the new features '\e]8;;https://github.com/johnfanv2/LenovoLegionLinux/issues/46\ahere\e]8;;\a'"
