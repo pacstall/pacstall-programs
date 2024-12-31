@@ -27,10 +27,12 @@ replaces=("${_pkgname}")
 source=(
   "${_pkgname}::git+https://github.com/johnfanv2/LenovoLegionLinux"
   "https://raw.githubusercontent.com/benhoyt/inih/refs/tags/r58/ini.c"
+  "Makefile-debian"
 )
 sha256sums=(
   'SKIP'
   '217fa78f0380669c91a565f3e414d0a8be0f7a7fdfd1e3839f213e86aa574a95'
+  'e4452e50cabfd488e5b04af627187bae184ce72489a6785591c1b66710af7333'
 )
 
 prepare() {
@@ -45,7 +47,7 @@ build() {
   # Compile legiond daemon
   cd legion_linux/extra/service/legiond
   cp "${srcdir}/ini.c" ./
-  sed -i "s/SOURCE1 = \$(TARGET1).c modules\/\*\.c/SOURCE1 = \$(TARGET1).c ini.c modules\/\*\.c/g" Makefile
+  cp "${srcdir}/Makefile-debian" ./Makefile
   make
 }
 
