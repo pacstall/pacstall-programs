@@ -6,7 +6,6 @@ arch=("amd64")
 url='https://github.com/johnfanv2/LenovoLegionLinux'
 maintainer=("MrDuartePT <gonegrier.duarte@gmail.com>")
 license=('GPL-2.0-only')
-
 depends=(
   python3
   python3-argcomplete
@@ -14,9 +13,7 @@ depends=(
   python3-pyqt6
   polkitd
 )
-
 pacdep=(python3-darkdetect)
-
 makedepends=(
   git
   python3-build
@@ -25,16 +22,16 @@ makedepends=(
   python3-wheel
   libinih-dev
 )
-
-optdepends=("lenovolegionlinux-dkms-git: DKMS module")
-
+#optdepends=("lenovolegionlinux-dkms-git: DKMS module") # needs to be fix
 replaces=("${_pkgname}")
-
 source=(
   "${_pkgname}::git+https://github.com/johnfanv2/LenovoLegionLinux"
-  "https://raw.githubusercontent.com/benhoyt/inih/refs/heads/master/ini.c"
+  "https://raw.githubusercontent.com/benhoyt/inih/refs/tags/r58/ini.c"
 )
-sha256sums=('SKIP')
+sha256sums=(
+  'SKIP'
+  '217fa78f0380669c91a565f3e414d0a8be0f7a7fdfd1e3839f213e86aa574a95'
+)
 
 prepare() {
   cd "${_pkgname}"
