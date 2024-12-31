@@ -265,6 +265,8 @@ lazygit
 lbry-deb
 legcord-deb
 lemonbar-xft-git
+lenovolegionlinux-dkms-git
+lenovolegionlinux-git
 lens
 lf-bin
 libaquamarine-bin
@@ -449,6 +451,7 @@ protonvpn-nm-lib
 pulsar-deb
 pycharm-community-bin
 python3-anyascii
+python3-darkdetect
 python3-flit-core
 python3-fvs
 python3-gbinder-deb
