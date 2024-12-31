@@ -6,20 +6,15 @@ arch=("amd64")
 url='https://github.com/johnfanv2/LenovoLegionLinux'
 maintainer=("MrDuartePT <gonegrier.duarte@gmail.com>")
 license=('GPL-2.0-only')
-
 makedepends=(
   "git"
   "lm-sensors"
   "i2c-tools"
   "dmidecode"
 )
-
 depends=("dkms")
-
 pacdep=("${_pkgname}-git")
-
 replaces=("${_pkgname}-dkms")
-
 source=("${_pkgname}::git+https://github.com/johnfanv2/LenovoLegionLinux")
 sha256sums=('SKIP')
 
