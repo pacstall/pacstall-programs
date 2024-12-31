@@ -14,13 +14,12 @@ pkgbase = lenovolegionlinux-git
 	makedepends = python3-setuptools
 	makedepends = python3-wheel
 	makedepends = libinih-dev
-	optdepends = lenovolegionlinux-dkms-git: DKMS module
 	replaces = lenovolegionlinux
 	license = GPL-2.0-only
 	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
 	source = lenovolegionlinux::git+https://github.com/johnfanv2/LenovoLegionLinux
-    source = https://raw.githubusercontent.com/benhoyt/inih/refs/tags/r58/ini.c
+	source = https://raw.githubusercontent.com/benhoyt/inih/refs/tags/r58/ini.c
 	sha256sums = SKIP
-    sha256sums = 217fa78f0380669c91a565f3e414d0a8be0f7a7fdfd1e3839f213e86aa574a95
+	sha256sums = 217fa78f0380669c91a565f3e414d0a8be0f7a7fdfd1e3839f213e86aa574a95
 
 pkgname = lenovolegionlinux-git

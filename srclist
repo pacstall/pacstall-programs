@@ -5494,13 +5494,13 @@ pkgbase = lenovolegionlinux-git
 	makedepends = python3-setuptools
 	makedepends = python3-wheel
 	makedepends = libinih-dev
-	optdepends = lenovolegionlinux-dkms-git: DKMS module
 	replaces = lenovolegionlinux
 	license = GPL-2.0-only
 	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
 	source = lenovolegionlinux::git+https://github.com/johnfanv2/LenovoLegionLinux
-	source = https://raw.githubusercontent.com/benhoyt/inih/refs/heads/master/ini.c
+	source = https://raw.githubusercontent.com/benhoyt/inih/refs/tags/r58/ini.c
 	sha256sums = SKIP
+	sha256sums = 217fa78f0380669c91a565f3e414d0a8be0f7a7fdfd1e3839f213e86aa574a95
 
 pkgname = lenovolegionlinux-git
 ---
@@ -9097,7 +9097,7 @@ pkgbase = python3-darkdetect
 	license = BSD-1-Clause
 	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
 	source = https://github.com/albertosottile/darkdetect/archive/refs/tags/v0.8.0.tar.gz
-	sha256sums = SKIP
+	sha256sums = 100eea1a610bb19610a68b11ff468c13b1c2863d1254c2d5b37d198a1beb3227
 
 pkgname = python3-darkdetect
 ---
