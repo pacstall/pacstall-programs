@@ -2,6 +2,7 @@ pkgname="xfce4-dynamic-workspaces-plugin-git"
 source=("https://github.com/DimseBoms/XFCE-Dynamic-Workspace.git")
 arch=("all")
 pkgver="0.0.1"
+pkgrel="2"
 gives="xfce4-dynamic-workspaces-plugin"
 depends=("python3-gi" "libwnck-3-0" "wmctrl" "gir1.2-notify-0.7")
 pkgdesc="Dynamic workspaces for XFCE, similar to GNOME"
@@ -27,7 +28,7 @@ Hidden=false" | tee "${pkgdir}/etc/skel/.config/autostart/dynamic_workspaces.des
 post_install() {
   mkdir -p "${homedir}/.config/autostart"
   if ! [[ -f "${homedir}/.config/autostart/dynamic_workspaces.desktop" ]]; then
-    sudo ln -sf "/etc/skel/.config/autostart/dynamic_workspaces.desktop" "${homedir}/.config/autostart/dynamic_workspaces.desktop"
+    sudo cp "/etc/skel/.config/autostart/dynamic_workspaces.desktop" "${homedir}/.config/autostart/dynamic_workspaces.desktop"
   fi
 }
 

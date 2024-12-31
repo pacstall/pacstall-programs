@@ -10,7 +10,7 @@ pkgbase = proton-python-client
 	breaks = proton-python-client-git proton-python-client-bin
 	replaces = proton-python-client
 	repology = project: proton-python-client
-	source = https://github.com/ProtonMail/proton-python-client/archive/refs/tags/0.7.1.tar.gz
+	source = @proton-python-client~0.7.1::https://github.com/ProtonMail/proton-python-client/archive/refs/tags/0.7.1.tar.gz
 	sha256sums = 88d2546a922d9053988b5e1863bf6cf965e97b4c643cd879f16bb3f0b5f02b5e
 
 pkgname = proton-python-client

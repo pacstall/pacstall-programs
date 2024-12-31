@@ -1,6 +1,6 @@
 pkgname="tailscale"
 pkgver="1.58.2"
-source=("https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz")
 url="https://tailscale.com"
 depends=('iptables')
 makedepends=('golang-go' 'git')
@@ -12,13 +12,13 @@ incompatible=('ubuntu:jammy' 'debian:bookworm')
 sha256sums=("452f355408e4e2179872387a863387e06346fc8a6f9887821f9b8a072c6a5b0a")
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   go mod vendor
   sed -i 's,/usr/sbin,/usr/bin/,g' cmd/tailscaled/tailscaled.service
 }
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   export GO111MODULE=on
   export GOFLAGS="-buildmode=pie -mod=readonly -modcacherw"
   _GO_LDFLAGS="-compressdwarf=false \
@@ -31,7 +31,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -Dm755 tailscale tailscaled -t "${pkgdir}/usr/bin"
   install -Dm644 cmd/tailscaled/tailscaled.defaults "${pkgdir}/etc/default/tailscaled"
   install -Dm644 cmd/tailscaled/tailscaled.service -t "${pkgdir}/usr/lib/systemd/system"

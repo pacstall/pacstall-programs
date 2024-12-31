@@ -7,11 +7,11 @@ pkgdesc="Run websites as if they were apps"
 repology=("project: webapp-manager")
 sha256sums=("818ec1186e028d538b0e7a9237b9fc8c68e804356d322a0a7ba5451c909fcbad")
 incompatible=("*:jammy" "*:bullseye")
-source=("https://github.com/linuxmint/webapp-manager/archive/refs/tags/${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/linuxmint/webapp-manager/archive/refs/tags/${pkgver}.tar.gz")
 maintainer=("Zahrun <Zahrun@github.com>")
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Silent build
   sed -i 's/@echo/#/g' Makefile
   # Fix typo
@@ -23,12 +23,12 @@ prepare() {
 }
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make all -s
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   mkdir -p "${pkgdir}"
   cp -r usr etc "${pkgdir}"
 }

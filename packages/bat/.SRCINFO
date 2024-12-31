@@ -7,7 +7,7 @@ pkgbase = bat
 	makedepends = libonig-dev
 	makedepends = pkg-config
 	replaces = bat
-	source = https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
+	source = @bat~0.24.0::https://github.com/sharkdp/bat/archive/refs/tags/v0.24.0.tar.gz
 	sha256sums = 907554a9eff239f256ee8fe05a922aad84febe4fe10a499def72a4557e9eedfb
 
 pkgname = bat

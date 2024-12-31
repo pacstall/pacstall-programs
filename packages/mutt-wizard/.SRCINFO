@@ -20,7 +20,7 @@ pkgbase = mutt-wizard
 	breaks = mutt-wizard-git
 	maintainer = JonBoyleCoding <programmerfalcon@gmail.com>
 	repology = project: mutt-wizard
-	source = https://github.com/lukesmithxyz/mutt-wizard/archive/v3.3.1.tar.gz
+	source = @mutt-wizard~3.3.1::https://github.com/lukesmithxyz/mutt-wizard/archive/v3.3.1.tar.gz
 	sha256sums = 4091fba053786d4143249e61dfddfd679c15f561ec34af17f130a3ca80c39b53
 
 pkgname = mutt-wizard
