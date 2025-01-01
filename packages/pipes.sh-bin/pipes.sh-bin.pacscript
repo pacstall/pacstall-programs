@@ -3,12 +3,12 @@ gives="pipes.sh"
 arch=("all")
 pkgver="1.3.0"
 pkgdesc="Animated pipes terminal screensaver"
-source=("https://github.com/pipeseroni/${gives}/archive/v${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/pipeseroni/${gives}/archive/v${pkgver}.tar.gz")
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 sha256sums=("532976dd8dc2d98330c45a8bcb6d7dc19e0b0e30bba8872dcce352361655a426")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Install license
   install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${gives}"
 

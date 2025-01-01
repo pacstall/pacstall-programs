@@ -10,14 +10,14 @@ pkgname="hyperfine-bin"
 gives="hyperfine"
 pkgver="1.17.0"
 pkgdesc="A command-line benchmarking tool"
-source=("https://github.com/sharkdp/${gives}/releases/download/v${pkgver}/${gives}-v${pkgver}-x86_64-unknown-linux-musl.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/sharkdp/${gives}/releases/download/v${pkgver}/${gives}-v${pkgver}-x86_64-unknown-linux-musl.tar.gz")
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 sha256sums=("563de47d843810de501e3e6bfcb4571a4ff957eab811c2af87be23d1c599ae47")
 arch=('amd64')
 repology=("project: hyperfine")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Install license
   install -Dm644 "LICENSE-APACHE" "LICENSE-MIT" -t "${pkgdir}/usr/share/licenses/${gives}"
 

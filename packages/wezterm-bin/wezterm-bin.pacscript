@@ -3,14 +3,14 @@ gives="wezterm"
 arch=("amd64")
 pkgver="20230712-072601-f4abf8fd"
 pkgdesc="A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust"
-source=("https://github.com/wez/wezterm/releases/download/${pkgver}/wezterm-${pkgver}.Ubuntu22.04.tar.xz")
+source=("@${pkgname}~${pkgver}::https://github.com/wez/wezterm/releases/download/${pkgver}/wezterm-${pkgver}.Ubuntu22.04.tar.xz")
 sha256sums=("3b03b75a26a30f2de28180d66c5556e5878f6f3320d79d12fb78ea486400b6c3")
 breaks=("${gives}-app")
 repology=("project: wezterm")
 maintainer=("smokeythemonkey <smokeythemonkey@posteo.net>")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Install Binaries
   install -Dm755 "${srcdir}/wezterm/usr/bin/wezterm" -t "${pkgdir}/usr/bin/"
   install -Dm755 "${srcdir}/wezterm/usr/bin/open-wezterm-here" "${pkgdir}/usr/bin/"

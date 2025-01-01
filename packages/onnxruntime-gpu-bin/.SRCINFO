@@ -8,7 +8,7 @@ pkgbase = onnxruntime-gpu-bin
 	replaces = onnxruntime-gpu-bin
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: onnxruntime
-	source = https://github.com/microsoft/onnxruntime/releases/download/v1.17.1/onnxruntime-linux-x64-gpu-1.17.1.tgz
+	source = @onnxruntime-gpu-bin~1.17.1::https://github.com/microsoft/onnxruntime/releases/download/v1.17.1/onnxruntime-linux-x64-gpu-1.17.1.tgz
 	sha256sums = 613c53745ea4960ed368f6b3ab673558bb8561c84a8fa781b4ea7fb4a4340be4
 
 pkgname = onnxruntime-gpu-bin

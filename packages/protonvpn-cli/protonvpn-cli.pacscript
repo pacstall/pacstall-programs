@@ -4,7 +4,7 @@ replaces=("${pkgname}")
 repology=("project: ${pkgname}")
 arch=("any")
 pkgver="3.13.0"
-source=("https://github.com/ProtonVPN/linux-cli/archive/refs/tags/${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/ProtonVPN/linux-cli/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("python3-setuptools")
 depends=("python3-dialog")
 pacdeps=("protonvpn-nm-lib" "proton-python-client")
@@ -13,6 +13,6 @@ sha256sums=("d295d6c899638a88d615e2cacb078ecf2aee8c771ebb087c9edb43aea25aacd9")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   python3 setup.py install --root="${pkgdir}" --optimize=1
 }

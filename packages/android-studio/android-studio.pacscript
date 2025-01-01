@@ -4,7 +4,7 @@ replaces=("${pkgname}" "${pkgname}-beta" "${pkgname}-canary")
 arch=("amd64")
 pkgver="2024.2.1.11"
 source=(
-  "https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${pkgname}-${pkgver}-linux.tar.gz"
+  "@${pkgname}~${pkgver}::https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${pkgname}-${pkgver}-linux.tar.gz"
   "${pkgname}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${pkgname}.desktop"
 )
 depends=("libc6-i386" "lib32ncurses6" "lib32stdc++6" "lib32z1" "libbz2-1.0:i386")
@@ -16,7 +16,7 @@ sha256sums=(
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Moving all android studio files to /opt
   install -d "${pkgdir}/opt/${pkgname}"
   cp -a bin lib jbr plugins license LICENSE.txt build.txt product-info.json "${pkgdir}/opt/${pkgname}"
