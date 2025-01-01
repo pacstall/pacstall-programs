@@ -5,7 +5,7 @@ pkgver="0.12.2"
 pkgdesc="Easy to use noise suppression for PulseAudio"
 repology=("project: noisetorch" "visiblename: noisetorch-bin")
 source=(
-  "https://github.com/noisetorch/NoiseTorch/releases/download/v${pkgver}/NoiseTorch_x64_v${pkgver}.tgz"
+  "@${pkgname}~${pkgver}::https://github.com/noisetorch/NoiseTorch/releases/download/v${pkgver}/NoiseTorch_x64_v${pkgver}.tgz"
   "noisetorch-pipewire.service::https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pipewire.service?h=noisetorch-bin"
   "noisetorch-pulse.service::https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pulse.service?h=noisetorch-bin"
 )
@@ -19,7 +19,7 @@ breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 depends=("policykit-1")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Extract tgz
   tar zxf NoiseTorch_x64_v"${pkgver}".tgz
 

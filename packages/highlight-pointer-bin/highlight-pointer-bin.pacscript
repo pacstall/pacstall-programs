@@ -10,7 +10,7 @@ breaks=("${gives}" "${gives}-deb" "${gives}-git")
 repology=("project: ${gives}")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install bin
   install -Dm755 "highlight-pointer" "${pkgdir}/usr/bin/${gives}"
 }

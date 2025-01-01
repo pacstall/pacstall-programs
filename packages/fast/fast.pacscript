@@ -7,7 +7,7 @@ pkgdesc="Minimal zero-dependency utility for testing your internet download spee
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   mv fast_linux_amd64 fast
   chmod +x fast
   mkdir -p "${pkgdir}/fast/usr/bin"

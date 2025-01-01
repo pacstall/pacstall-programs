@@ -5,7 +5,6 @@ pkgbase = megabasterd-bin
 	url = https://github.com/tonikelope/megabasterd
 	arch = amd64
 	depends = java11-runtime
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: megabasterd
 	source = https://github.com/tonikelope/megabasterd/releases/download/v8.22/MegaBasterd_8.22.jar
 	source = megabasterd.png::https://raw.githubusercontent.com/tonikelope/megabasterd/v8.22/src/main/resources/images/pica_roja_big.png

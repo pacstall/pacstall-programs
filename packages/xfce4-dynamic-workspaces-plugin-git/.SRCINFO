@@ -1,6 +1,7 @@
 pkgbase = xfce4-dynamic-workspaces-plugin-git
 	gives = xfce4-dynamic-workspaces-plugin
 	pkgver = 0.0.1
+	pkgrel = 2
 	pkgdesc = Dynamic workspaces for XFCE, similar to GNOME
 	arch = all
 	depends = python3-gi

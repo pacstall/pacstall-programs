@@ -6,7 +6,6 @@ pkgbase = libeditline-troglobit
 	makedepends = automake
 	makedepends = libtool
 	license = custom:permissive
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: editline-troglobit
 	source = libeditline-troglobit::https://github.com/troglobit/editline.git#tag=1.17.1
 

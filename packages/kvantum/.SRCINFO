@@ -12,7 +12,7 @@ pkgbase = kvantum
 	makedepends = libxext-dev
 	breaks = qt5-style-kvantum
 	incompatible = debian:bullseye
-	source = https://github.com/tsujan/Kvantum/releases/download/V1.0.10/Kvantum-1.0.10.tar.xz
+	source = @kvantum~1.0.10::https://github.com/tsujan/Kvantum/releases/download/V1.0.10/Kvantum-1.0.10.tar.xz
 	sha256sums = 4a070a1a6fac3d1861010aa44d34e665e4697bc64c4c5015a6448203c31f1f1f
 
 pkgname = kvantum

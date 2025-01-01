@@ -3,6 +3,10 @@ description: Request a package to be added to Pacstall repository
 title: "PacReq: name_of_the_package"
 labels: ["package request"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        We **will not** accept packages that are up to date in the upstream apt repos and have no reason to be included!
   - type: dropdown
     id: type
     attributes:
@@ -31,4 +35,4 @@ body:
     id: context
     attributes:
       label: Additional context
-      description: Anything else you want to tell us about
+      description: Anything else you want to tell us about?

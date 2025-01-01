@@ -15,7 +15,7 @@ pkgbase = gtkhash
 	makedepends = intltool
 	makedepends = wget
 	replaces = gtkhash
-	source = https://github.com/tristanheaven/gtkhash/releases/download/v1.4/gtkhash-1.4.tar.xz
+	source = @gtkhash~1.4::https://github.com/tristanheaven/gtkhash/releases/download/v1.4/gtkhash-1.4.tar.xz
 	sha256sums = 20b57dbb8f6c6d7323f573c111a11640603a422c5f9da7b302a4981e4adc37c4
 
 pkgname = gtkhash

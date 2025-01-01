@@ -5,7 +5,7 @@ depends=("fonts-noto-color-emoji")
 pkgver="2.10.0"
 pkgdesc="A fast, simple, recursive content discovery tool written in Rust"
 source=(
-  "https://github.com/epi052/${gives}/releases/download/v${pkgver}/x86_64-linux-${gives}.tar.gz"
+  "@${pkgname}~${pkgver}::https://github.com/epi052/${gives}/releases/download/v${pkgver}/x86_64-linux-${gives}.tar.gz"
   "${gives}.bash::https://raw.githubusercontent.com/epi052/${gives}/${pkgver}/shell_completions/${gives}.bash"
   "_${gives}::https://raw.githubusercontent.com/epi052/${gives}/${pkgver}/shell_completions/_${gives}"
   "${gives}.fish::https://raw.githubusercontent.com/epi052/${gives}/${pkgver}/shell_completions/${gives}.fish"
@@ -21,7 +21,7 @@ breaks=("${gives}" "${gives}-deb" "${gives}-git")
 repology=("project: ${gives}")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Install bin
   install -Dm755 "${gives}" "${pkgdir}/usr/bin/${gives}"
 
