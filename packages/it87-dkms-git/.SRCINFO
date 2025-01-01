@@ -6,7 +6,6 @@ pkgbase = it87-dkms-git
 	url = https://github.com/frankcrawford/it87
 	arch = x86_64
 	arch = i686
-	depends = dkms
 	makedepends = git
 	provides = it87
 	maintainer = xdavius <xdavius@github.com>
@@ -16,5 +15,7 @@ pkgbase = it87-dkms-git
 	sha256sums = SKIP
 	sha256sums = f325b751c8a81416a75c2c1e7a7bc9ca46ae0fa3b44d4ccc09593274be1b2dc7
 	sha256sums = acdc488d1505e891ed6259b29428d4b27d26d18e3ea170f017b930390d6420e7
+	depends_x86_64 = linux-headers-amd64-amd64
+	depends_i686 = linux-headers-amd64-i386
 
 pkgname = it87-dkms-git
