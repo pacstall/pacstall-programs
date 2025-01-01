@@ -8,7 +8,6 @@ pkgbase = kakoune
 	arch = i386
 	replaces = kakoune
 	license = Unlicense
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: kakoune
 	source = https://github.com/mawww/kakoune/archive/refs/tags/v2024.05.18.tar.gz
 	sha256sums = 50f2920db8ab8f71556b73dfd6d53fb924f67d1c60b9882050cfecfaa3aed31f

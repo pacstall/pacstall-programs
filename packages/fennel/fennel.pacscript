@@ -17,7 +17,7 @@ sha256sums=("40a64d31a69803213d0e56f839814d5a13ae6fc40cc435b0c3be294e2ccda1ca")
 repology=("project: fennel")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install binary
   install -Dm755 "fennel-${pkgver}" "${pkgdir}/usr/bin/${pkgname}"
 }

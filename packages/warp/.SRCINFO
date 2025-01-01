@@ -33,7 +33,7 @@ pkgbase = warp
 	incompatible = debian:*
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: warp-share-files
-	source = https://gitlab.gnome.org/World/warp/-/archive/v0.6.2/warp-v0.6.2.tar.gz
+	source = @warp~0.6.2::https://gitlab.gnome.org/World/warp/-/archive/v0.6.2/warp-v0.6.2.tar.gz
 	sha256sums = b3df2017e19c7bf1477b5bd07d857d0d8fe5375ab293d932a8a4e30aba91496a
 
 pkgname = warp

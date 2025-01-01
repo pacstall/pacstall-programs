@@ -17,7 +17,7 @@ breaks=("postman" "postman-deb" "postman-app")
 depends=("libxss1" "libnss3" "libgtk-3-0")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Get desktop file and install it
   install -Dm644 "${srcdir}"/postman.desktop -t "${pkgdir}/usr/share/applications"
 
