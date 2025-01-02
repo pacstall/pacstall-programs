@@ -5,7 +5,6 @@ pkgver="0.6.5.0"
 url='https://github.com/OpenTabletDriver/OpenTabletDriver'
 source=("https://github.com/OpenTabletDriver/OpenTabletDriver/releases/download/v${pkgver}/OpenTabletDriver.deb")
 sha256sums=("774c20b3ba2d880ffc90b2e6508b09a4a2ec6801af7b2a7de11334bf49756ec2")
-depends=("kmod")
 gives="opentabletdriver"
 pkgdesc="Open source, cross-platform, user-mode tablet driver"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")

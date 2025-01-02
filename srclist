@@ -8049,7 +8049,6 @@ pkgbase = opentabletdriver-deb
 	pkgdesc = Open source, cross-platform, user-mode tablet driver
 	url = https://github.com/OpenTabletDriver/OpenTabletDriver
 	arch = amd64
-	depends = kmod
 	license = LGPL-3.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: opentabletdriver
