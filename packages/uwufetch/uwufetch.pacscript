@@ -9,7 +9,7 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 pkgname="uwufetch"
 arch=("any")
 pkgver="1.7"
-source=("https://github.com/TheDarkBug/${pkgname}/archive/refs/tags/${pkgver}.zip")
+source=("@${pkgname}~${pkgver}::https://github.com/TheDarkBug/${pkgname}/archive/refs/tags/${pkgver}.zip")
 pkgdesc="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
 makedepends=("gcc")
 optdepends=("viu: image preview"
@@ -18,7 +18,7 @@ breaks=("${pkgname}-git" "${pkgname}-bin")
 sha256sums=("1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab")
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Make nessesary directories
   mkdir -p "${pkgdir}"/usr/bin
   mkdir -p "${pkgdir}"/usr/lib
@@ -26,14 +26,14 @@ prepare() {
 }
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Build required files
   make -j"${NCPU}" build DESTDIR="${pkgdir}"
   make -j"${NCPU}" man DESTDIR="${pkgdir}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Install license
   install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
 

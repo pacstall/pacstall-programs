@@ -10,7 +10,7 @@ pkgbase = pfetch-bin
 	breaks = pfetch-git
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: pfetch
-	source = https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.zip
+	source = @pfetch-bin~0.6.0::https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.zip
 	sha256sums = ec85100a912c0bdd06a82a9647d19a5c6d1d51c3a262d60b9ac8f17570fbfb39
 
 pkgname = pfetch-bin

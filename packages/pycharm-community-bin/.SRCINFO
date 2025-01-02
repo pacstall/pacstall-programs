@@ -1,19 +1,15 @@
 pkgbase = pycharm-community-bin
 	gives = pycharm-community
-	pkgver = 2024.3
+	pkgver = 2024.3.1.1
 	pkgdesc = Python IDE for professional developers aimed at productivity with a keyboard-centric focus.
 	arch = amd64
 	arch = arm64
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: pycharm
-	source_amd64 = https://download.jetbrains.com/python/pycharm-community-2024.3.tar.gz
-	source_amd64 = pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/pycharm-community-bin/pycharm.desktop
-	sha256sums_amd64 = 266975b832a4b2ec6cf23adc2c244650c1fb546f1ffa36dc2405866f1c32cb3e
-	sha256sums_amd64 = 0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04
-	source_arm64 = https://download.jetbrains.com/python/pycharm-community-2024.3-aarch64.tar.gz
-	source_arm64 = pycharm.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/pycharm-community-bin/pycharm.desktop
-	sha256sums_arm64 = 1198417e8fc7a7bc789a78939ebcab238c93121e64f706b3f2e6ab31c69fd633
-	sha256sums_arm64 = 0367fc67c51d5d99fd64a5184b8acb2dbed4a56bb26eecdcf25a2414f2233c04
+	source_amd64 = https://download.jetbrains.com/python/pycharm-community-2024.3.1.1.tar.gz
+	sha256sums_amd64 = 36b9332262815099d0b86d2689fcf91b379730cb838623d82c0845969bb6470f
+	source_arm64 = https://download.jetbrains.com/python/pycharm-community-2024.3.1.1-aarch64.tar.gz
+	sha256sums_arm64 = cbc36953b6943e70468e1908bef9adddc2a9597124e5d794f294095888b0914c
 
 pkgname = pycharm-community-bin

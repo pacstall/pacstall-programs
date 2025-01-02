@@ -8,7 +8,6 @@ pkgbase = ffsend-bin
 	optdepends = bash-completion: support auto-completion for bash
 	breaks = ffsend
 	license = GPL3
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: ffsend
 	source = https://github.com/timvisee/ffsend/releases/download/v0.2.76/ffsend-v0.2.76-linux-x64-static
 	source = https://gitlab.com/timvisee/ffsend/raw/v0.2.76/contrib/completions/ffsend.bash

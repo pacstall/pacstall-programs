@@ -15,17 +15,17 @@ sha256sums_arm64=(
   "20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293"
 )
 source_amd64=(
-  "https://download-cdn.jetbrains.com/idea/ideaIC-${pkgver}.tar.gz"
+  "@${pkgname}~${pkgver}::https://download-cdn.jetbrains.com/idea/ideaIC-${pkgver}.tar.gz"
   "intellij-idea-community.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/intellij-idea-community.desktop"
 )
 source_arm64=(
-  "https://download-cdn.jetbrains.com/idea/ideaIC-${pkgver}-aarch64.tar.gz"
+  "@${pkgname}~${pkgver}::https://download-cdn.jetbrains.com/idea/ideaIC-${pkgver}-aarch64.tar.gz"
   "intellij-idea-community.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/intellij-idea-community.desktop"
 )
 repology=("project: intellij-idea-community")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   mkdir -p "${pkgdir}/usr/share/licenses/intellij-idea-community"
   mkdir -p "${pkgdir}/usr/share/intellij-idea-community"
   mkdir -p "${pkgdir}/usr/share/pixmaps"

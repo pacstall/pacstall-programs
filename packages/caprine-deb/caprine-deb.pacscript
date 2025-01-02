@@ -8,10 +8,10 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="caprine-deb"
 gives="caprine"
-pkgver="2.58.0"
+pkgver="2.60.3"
 source=("https://github.com/sindresorhus/caprine/releases/download/v${pkgver}/caprine_${pkgver}_amd64.deb")
 pkgdesc="Elegant Facebook Messenger desktop app"
-sha256sums=("f8f9e5a1cf532b9a51188ec7300dcbcb379b6bcb652e305c86618fc028f37671")
+sha256sums=("9e307a7aa1667eeca7a8d38b49e34e5b11dfb49b5e60d3adc81472bd176922a3")
 arch=('amd64')
 repology=("project: caprine")
 

@@ -14,7 +14,7 @@ pkgbase = whatsie
 	makedepends = qtwebengine5-dev
 	makedepends = qtwebengine5-dev-tools
 	maintainer = Diegiwg <diegiwg@gmail.com>
-	source = https://github.com/keshavbhatt/whatsie/archive/refs/tags/v4.14.1.tar.gz
+	source = @whatsie~4.14.1::https://github.com/keshavbhatt/whatsie/archive/refs/tags/v4.14.1.tar.gz
 	sha256sums = 369acebb948375713f4e97a5e0304dbda407b432b42fe8ad0b6aa9b602744311
 
 pkgname = whatsie

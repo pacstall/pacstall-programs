@@ -12,12 +12,12 @@ arch=("amd64")
 pkgver="2022-11-05"
 pkgdesc="A colorful design icon theme for linux desktops"
 makedepends=("gtk-update-icon-cache")
-source=("https://github.com/vinceliuice/Qogir-icon-theme/archive/${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/vinceliuice/Qogir-icon-theme/archive/${pkgver}.tar.gz")
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 sha256sums=("7747f8a139e01a075a94b832d95a53a98b98784b06e866dd8259bb0a38404480")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Install license
   install -Dm644 "COPYING" -t "${pkgdir}/usr/share/licenses/${gives}"
 
