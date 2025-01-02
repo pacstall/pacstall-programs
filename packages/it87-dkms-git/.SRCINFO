@@ -6,7 +6,6 @@ pkgbase = it87-dkms-git
 	url = https://github.com/frankcrawford/it87
 	arch = x86_64
 	depends = dkms
-	depends = linux-headers-amd64 | linux-headers-generic-hwe
 	makedepends = git
 	provides = it87
 	maintainer = xdavius <xdavius@github.com>
