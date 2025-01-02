@@ -22,20 +22,12 @@ package() {
   cd "${srcdir}/${_pkgname}/kernel_module/"
   install -Dm644 dkms.conf "${pkgdir}"/usr/src/"${_pkgname}"-1.0.0/dkms.conf
   cp -r {issue-warning.sh,legion-laptop-unused-snippets.c,legion-laptop.c,Makefile} "${pkgdir}"/usr/src/"${_pkgname}"-1.0.0/
-
-  cd "${srcdir}/${_pkgname}/deploy/"
-  install -Dm644 LenovoLegionLinux.hook "${pkgdir}"/etc/pacman.d/hooks/LenovoLegionLinux.hook
-  install -Dm775 LenovoLegionLinux "${pkgdir}"/usr/bin/LenovoLegionLinux
 }
 
 post_install() {
   RED='\033[0;31m'
   BOLD=$(tput bold)
   echo -e "${RED} ${BOLD} If you have a 2022 or 2023 model, please help testing the new features '\e]8;;https://github.com/johnfanv2/LenovoLegionLinux/issues/46\ahere\e]8;;\a'"
-}
-
-post_upgrade() {
-  post_install "$1"
 }
 
 post_remove() {
