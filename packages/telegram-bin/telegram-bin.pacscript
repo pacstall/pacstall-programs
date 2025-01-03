@@ -2,6 +2,7 @@ pkgname="telegram-bin"
 gives="telegram"
 arch=("amd64")
 pkgver="5.9.0"
+pkgrel="2"
 url="https://telegram.org/"
 pkgdesc="Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed"
 source_base_url="https://github.com/telegramdesktop/tdesktop"
@@ -18,7 +19,7 @@ source=(
   "@${pkgname}~${pkgver}::${source_base_url}/releases/download/v${pkgver}/tsetup.${pkgver}.tar.xz"
 )
 sha256sums=(
-  "ad21f9786df83a77e1e08becee539758a1d6e6426b8941fa022de7c8ccf1061b"
+  "f8e35627d29589ea9a1ea8d634855ca153d578503cadb44f0c5d0498c1062135"
   "d4cdad0d091c7e47811d8a26d55bbee492e7845e968c522e86f120815477e9eb"
   "ea1f36152b143cc2664daef5026656d55be2230ed42d43628e17ef7d2fff718c"
   "9e4180c78c895783b4559c5e1a7868a2c9aa30a29969fe5dbe9a4ce4cf5cde6c"
