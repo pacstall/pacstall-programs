@@ -1,16 +1,15 @@
 pkgbase = icecat-deb
 	gives = icecat
-	pkgver = 115.16.0
+	pkgver = 115.18.0
 	pkgdesc = GNU version of Firefox which uses ESR branch instead main release branch
 	arch = amd64
 	breaks = icecat-app
 	breaks = icecat-bin
 	breaks = icecat-git
 	replaces = icecat
-	incompatible = debian:bullseye
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: icecat
-	source = https://icecatbrowser.org/assets/icecat/115.16.0/icecat_115.16esr-1_amd64.deb
-	sha256sums = 6dc7a508e83dc3c122dc8bd836aff1e6f7ee880a58f23f4f3c5c420ae27c918a
+	source = https://icecatbrowser.org/assets/icecat/115.18.0/icecat_115.18.0esr-1_amd64.deb
+	sha256sums = 0b353d841612b2ca6ad354dca8ec1e4a4a6867a6889a71c408e6a7c50c4d01ce
 
 pkgname = icecat-deb
