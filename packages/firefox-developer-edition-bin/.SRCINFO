@@ -1,6 +1,6 @@
 pkgbase = firefox-developer-edition-bin
 	gives = firefox-developer-edition
-	pkgver = 134.0b7
+	pkgver = 134.0b9
 	pkgdesc = The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector.
 	url = https://www.mozilla.org/en-US/firefox/developer/
 	arch = amd64
@@ -13,10 +13,10 @@ pkgbase = firefox-developer-edition-bin
 	repology = project: firefox
 	repology = visiblename: firefox-developer-edition
 	repology = status: devel
-	source = https://download-installer.cdn.mozilla.net/pub/devedition/releases/134.0b7/linux-x86_64/en-US/firefox-134.0b7.tar.bz2
+	source = https://download-installer.cdn.mozilla.net/pub/devedition/releases/134.0b9/linux-x86_64/en-US/firefox-134.0b9.tar.bz2
 	source = firefox-developer-edition.desktop
 	source = firefox-developer-edition.png::https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png
-	sha256sums = dfa42ba6a09deb378741f53f814983bce2e837068c8f63a29f2f74bd47ee934b
+	sha256sums = ec15a5427a9ed63289e54808e56b3ce4283da7a8249db15a4d715aa8c78f6ce7
 	sha256sums = SKIP
 	sha256sums = SKIP
 
