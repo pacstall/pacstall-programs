@@ -19,7 +19,7 @@ package() {
   cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/intellij-idea-community/"
   cp -dr "bin/idea.png" "${pkgdir}/usr/share/pixmaps/"
   install -dm755 "${pkgdir}/usr/bin"
-  ln -sf "/usr/share/intellij-idea-community/bin/idea" "${pkgdir}/usr/bin/idea"
+  ln -sf "/usr/share/intellij-idea-community/bin/idea.sh" "${pkgdir}/usr/bin/idea"
   install -dm755 "${pkgdir}/usr/share/applications/"
   cat << EOF > "${pkgdir}/usr/share/applications/intellij-idea-community.desktop"
 [Desktop Entry]
