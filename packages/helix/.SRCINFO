@@ -1,5 +1,6 @@
 pkgbase = helix
 	pkgver = 24.07
+	pkgrel = 2
 	pkgdesc = A post-modern modal text editor
 	arch = any
 	makedepends = cargo
