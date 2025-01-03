@@ -7,5 +7,5 @@ repology=("project: icecat")
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 arch=("amd64")
 pkgver="115.18.0"
-source=("https://icecatbrowser.org/assets/${gives}/${pkgver}/${gives}_${pkgver}esr-1_${arch}.deb")
+source=("https://icecatbrowser.org/assets/${gives}/${pkgver}/${gives}_${pkgver}esr-1_amd64.deb")
 sha256sums=("0b353d841612b2ca6ad354dca8ec1e4a4a6867a6889a71c408e6a7c50c4d01ce")
