@@ -89,6 +89,7 @@ dino-git
 directx-headers-git
 discord
 discord-canary
+discord-canary-deb
 discord-deb
 discord-ptb-deb
 distrobox
@@ -413,6 +414,7 @@ owofetch
 p3x-onenote-app
 pacget-git
 paconvert-git
+pacstall
 pacstall-gui-git
 pacstall-qa-git
 pacup
@@ -479,6 +481,7 @@ restic-bin
 resticprofile-bin
 rhino-core
 rhino-docker-builder-git
+rhino-grub-theme-git
 rhino-kvantum-theme-git
 rhino-lightdm-theme-git
 rhino-neofetch-git
@@ -582,6 +585,7 @@ tuner-git
 tutanota-app
 typora-deb
 u-boot-mobian-deb
+ufetch-ubuntu
 ugee-tablet-driver-deb
 ulauncher-deb
 ungoogled-chromium-deb

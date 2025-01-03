@@ -11,6 +11,6 @@ sha256sums_armhf=("6d6bc35482c2f487986c1840fd8d64011e7b43a4f432b6a5c6747758b29fd
 sha256sums_i386=("3b8fc616680330f4c34f2a787d7187ccbfee606f06616d8d54ff055115216815")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm755 "${gives}-linux-${CARCH}" "${pkgdir}/usr/bin/${gives}"
 }

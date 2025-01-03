@@ -17,7 +17,7 @@ arch=('amd64')
 repology=("project: fennel")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   # Install binary
   install -Dm755 "fennel-${pkgver}-x86_64" "${pkgdir}/usr/bin/${gives}"
 

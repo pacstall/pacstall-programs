@@ -6,7 +6,7 @@ pkgbase = wezterm-bin
 	breaks = wezterm-app
 	maintainer = smokeythemonkey <smokeythemonkey@posteo.net>
 	repology = project: wezterm
-	source = https://github.com/wez/wezterm/releases/download/20230712-072601-f4abf8fd/wezterm-20230712-072601-f4abf8fd.Ubuntu22.04.tar.xz
+	source = @wezterm-bin~20230712-072601-f4abf8fd::https://github.com/wez/wezterm/releases/download/20230712-072601-f4abf8fd/wezterm-20230712-072601-f4abf8fd.Ubuntu22.04.tar.xz
 	sha256sums = 3b03b75a26a30f2de28180d66c5556e5878f6f3320d79d12fb78ea486400b6c3
 
 pkgname = wezterm-bin

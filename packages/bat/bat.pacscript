@@ -1,7 +1,7 @@
 pkgname="bat"
 arch=("any")
 pkgver="0.24.0"
-source=("https://github.com/sharkdp/bat/archive/refs/tags/v${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/sharkdp/bat/archive/refs/tags/v${pkgver}.tar.gz")
 makedepends=("cargo" "libonig-dev" "pkg-config")
 depends=("libonig5")
 replaces=("bat")
@@ -10,12 +10,12 @@ external_connection=true
 sha256sums=("907554a9eff239f256ee8fe05a922aad84febe4fe10a499def72a4557e9eedfb")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   RUSTONIG_SYSTEM_LIBONIG=1 cargo build -j"${NCPU}" --release --locked
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -Dm755 target/release/bat -t "${pkgdir}/usr/bin"
 
   install -Dm644 "$(find target -name bat.bash -print -quit)" "${pkgdir}/usr/share/bash-completion/completions/bat"

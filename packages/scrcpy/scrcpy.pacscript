@@ -9,7 +9,7 @@ depends=("adb" "ffmpeg" "libsdl2-2.0-0" "libusb-1.0-0")
 replaces=("${pkgname}")
 maintainer=()
 source=(
-  "https://github.com/Genymobile/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz"
+  "@${pkgname}~${pkgver}::https://github.com/Genymobile/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz"
   "${pkgname}-server::https://github.com/Genymobile/${pkgname}/releases/download/v${pkgver}/${pkgname}-server-v${pkgver}"
 )
 sha256sums=(
@@ -18,16 +18,16 @@ sha256sums=(
 )
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   meson setup build --buildtype=release --strip -Db_lto=true -Dprebuilt_server="${srcdir}/${pkgname}-server"
 }
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   ninja -Cbuild -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   DESTDIR="${pkgdir}" ninja -Cbuild install
 }

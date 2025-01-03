@@ -3,14 +3,14 @@ gives="mcontrolcenter"
 arch=("amd64")
 pkgver="0.4.1"
 depends=("libqt5widgets5")
-source=("https://github.com/dmitry-s93/MControlCenter/releases/download/${pkgver}/MControlCenter-${pkgver}-bin.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/dmitry-s93/MControlCenter/releases/download/${pkgver}/MControlCenter-${pkgver}-bin.tar.gz")
 repology=("project: mcontrolcenter")
 pkgdesc="MControlCenter is a Free and Open Source GNU/Linux application that allows you to change the settings of MSI laptops."
 sha256sums=("81196a66e19ba0ac01536187bee5795a836ee1b37dda8027ca0ddbf9da5cf0dc")
 maintainer=("সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   cd app || return 1
   install -Dm755 "${gives}" "${pkgdir}/usr/bin/${gives}"
   install -Dm644 "${gives}.desktop" "${pkgdir}/usr/share/applications/${gives}.desktop"
