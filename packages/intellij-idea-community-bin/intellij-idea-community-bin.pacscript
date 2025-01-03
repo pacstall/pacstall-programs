@@ -11,7 +11,7 @@ sha256sums_arm64=("8e82e9c1ff8bc561df88d9c6ef3b83498aecdac6f980b9df0cb183bc6dca0
 repology=("project: ${gives}")
 
 package() {
-  cd "${srcdir}/idea-IC-${pkgver}"
+  cd "${srcdir}/idea-IC-243.22562.218"
   install -dm755 "${pkgdir}/usr/share/licenses/intellij-idea-community"
   install -dm755 "${pkgdir}/usr/share/intellij-idea-community"
   install -dm755 "${pkgdir}/usr/share/pixmaps"
