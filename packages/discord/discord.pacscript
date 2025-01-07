@@ -1,11 +1,11 @@
 pkgname="discord"
-pkgver="0.0.78"
+pkgver="0.0.79"
 maintainer=("Elsie19 <elsie19@pm.me>")
 source=("@${pkgname}~${pkgver}::https://dl.discordapp.net/apps/linux/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 url='https://discord.com/'
 depends=("libc6" "libasound2" "libatomic1" "libnotify4" "libnspr4" "libnss3" "libstdc++6" "libxss1" "libxtst6" "libayatana-appindicator3-1" "libc++1")
 pkgdesc="Chat for Communities and Friends"
-sha256sums=("d46f4d33467a74dd8bb6e9c792423334d03ec45b25c619c8f0656b8d794d64af")
+sha256sums=("810571f8fb9e183a1f523292bf2a2b0aeef79b236e8dc2b3f60ba030a07d9286")
 arch=('amd64')
 repology=("project: ${pkgname}")
 
