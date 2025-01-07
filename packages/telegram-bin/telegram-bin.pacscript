@@ -2,7 +2,7 @@ pkgname="telegram-bin"
 gives="telegram"
 arch=("amd64")
 pkgver="5.10.0"
-pkgrel="1"
+pkgrel="2"
 url="https://telegram.org/"
 pkgdesc="Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed"
 source_base_url="https://github.com/telegramdesktop/tdesktop"
@@ -52,5 +52,5 @@ package() {
     install -m644 "${srcdir}/icon${icon_size}.png" "${icon_dir}/telegram.png"
   done
   mkdir -p "${pkgdir}/usr/share/TelegramDesktop/externalupdater.d"
-  echo "/usr/bin/telegram-desktop" > "${pkgdir}/usr/share/TelegramDesktop/externalupdater.d/telegram-desktop.conf"
+  echo "/usr/bin/telegram" > "${pkgdir}/usr/share/TelegramDesktop/externalupdater.d/telegram.conf"
 }
