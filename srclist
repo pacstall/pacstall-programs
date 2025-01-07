@@ -5688,6 +5688,7 @@ pkgname = libfdk-aac1-deb
 pkgbase = libgbinder-deb
 	gives = libgbinder
 	pkgver = 1.1.25
+	pkgrel = 2
 	pkgdesc = Binder client library
 	arch = amd64
 	arch = arm64
@@ -5703,9 +5704,9 @@ pkgbase = libgbinder-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libgbinder
 	source_amd64 = https://repo.waydro.id/dists/noble/libgbinder_1.1.25_amd64.deb
-	sha256sums_amd64 = 2e4d0ee2af9f04f2cbbd04c4e7d8cfaba6e0e46a8c50eaedb29aaa70a3d22b38
+	sha256sums_amd64 = f70778a67b23d0564f9b69bb3924830efdce19abdc5370d96177fe8f6c9e9a15
 	source_arm64 = https://repo.waydro.id/dists/noble/libgbinder_1.1.25_arm64.deb
-	sha256sums_arm64 = 7d2318f807f9cf130184354d8f9a2c6d278ef121483e4a31af8cc5873356b115
+	sha256sums_arm64 = 307667d0257daacdbc9bd64d59ae8f74c19636a10e38536f6f9f7cf385d42f92
 
 pkgname = libgbinder-deb
 ---
@@ -5730,6 +5731,7 @@ pkgname = libgc-nix
 pkgbase = libglibutil-deb
 	gives = libglibutil
 	pkgver = 1.0.66
+	pkgrel = 2
 	pkgdesc = Library of glib utilities
 	arch = amd64
 	arch = arm64
@@ -5744,9 +5746,9 @@ pkgbase = libglibutil-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libglibutil
 	source_amd64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_amd64.deb
-	sha256sums_amd64 = c3f5928f8395f4d716f1d15867bd30d26211577efa82ff1dfba034d0ad290a0d
+	sha256sums_amd64 = 5d4fab27f76a5fe5bba6d156359849a6e0bec239315d7b5753b67bc8e8713386
 	source_arm64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_arm64.deb
-	sha256sums_arm64 = a6924cecef94f067f22995040dac5ce51d38b6189890c1d9ad73fed8caf57da6
+	sha256sums_arm64 = 590ebb10c61e89b4b8708d7fe59a99f0cc3eb1dcb67fd2bf65b03598fcd54194
 
 pkgname = libglibutil-deb
 ---
@@ -9124,6 +9126,7 @@ pkgname = python3-fvs
 pkgbase = python3-gbinder-deb
 	gives = python3-gbinder
 	pkgver = 1.1.2
+	pkgrel = 2
 	pkgdesc = Cython extension module for C++ gbinder functions
 	arch = amd64
 	arch = arm64
@@ -9139,9 +9142,9 @@ pkgbase = python3-gbinder-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: python3-gbinder
 	source_amd64 = https://repo.waydro.id/dists/noble/python3-gbinder_1.1.2_amd64.deb
-	sha256sums_amd64 = 6b03318a6cbb00ce3709b77dc2bd4afc556963083a40b06314a81c9e1134ae33
+	sha256sums_amd64 = 57999db9650c22a1dad96e6e1ea3d698a383e2279bdbc581ec13491510373ae3
 	source_arm64 = https://repo.waydro.id/dists/noble/python3-gbinder_1.1.2_arm64.deb
-	sha256sums_arm64 = 761d8a9f64fee0c8e0af759a1d90a56fedadc6ade3baac3c8a9f8c6e86da6149
+	sha256sums_arm64 = 7292f132dc892f2ba447fe39f0b7b461f58f04029343eb0d8b382900b79427a6
 
 pkgname = python3-gbinder-deb
 ---
@@ -12349,6 +12352,7 @@ pkgname = wavey-launcher-bin
 pkgbase = waydroid-deb
 	gives = waydroid
 	pkgver = 1.4.3
+	pkgrel = 2
 	pkgdesc = Bring Android support on your own Wayland session which runs under LXC container
 	arch = all
 	depends = lxc
@@ -12370,7 +12374,7 @@ pkgbase = waydroid-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: waydroid
 	source = https://repo.waydro.id/dists/noble/waydroid_1.4.3_all.deb
-	sha256sums = 6ecc62d4be5c1355a672eaa830dc93663484cd1aa9473d73ac11b8ecc9147d6f
+	sha256sums = acc4832ed37e7a7d95526227b294a3357145e459a13e4754e6e63f9bd0245e70
 
 pkgname = waydroid-deb
 ---
