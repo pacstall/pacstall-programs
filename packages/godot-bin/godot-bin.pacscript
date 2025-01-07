@@ -7,8 +7,8 @@ source=(
   "org.godotengine.Godot.desktop"
   "org.godotengine.Godot.xml"
 )
-source_amd64=("https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v${pkgver}-stable_linux.x86_64.zip")
-source_arm64=("https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v${pkgver}-stable_linux.arm64.zip")
+source_amd64=("https://github.com/godotengine/godot/releases/download/${pkgver}-stable/Godot_v${pkgver}-stable_linux.x86_64.zip")
+source_arm64=("https://github.com/godotengine/godot/releases/download/${pkgver}-stable/Godot_v${pkgver}-stable_linux.arm64.zip")
 sha256sums=(
   "a1d5b9f9c1be18abd41008115b372c49c39d41e99162186bccfefd2d610e5089"
   "16f3c4bbb80ccadde2bf4ab5681b60418aeab91ec98fc156a286af192890d891"
