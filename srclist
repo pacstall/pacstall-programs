@@ -1850,19 +1850,20 @@ pkgname = directx-headers-git
 ---
 pkgbase = discord-canary-deb
 	gives = discord-canary
-	pkgver = 0.0.550
+	pkgver = 0.0.556
 	pkgdesc = Chat for Communities and Friends Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com
 	arch = amd64
 	conflicts = discord-canary
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: discord-canary
-	source = https://canary.dl2.discordapp.net/apps/linux/0.0.550/discord-canary-0.0.550.deb
+	source = https://canary.dl2.discordapp.net/apps/linux/0.0.556/discord-canary-0.0.556.deb
+	sha256sums = 862bbd96d942d7d613738b92ca294687f099adcbf6c889bb249269eb03cbf28a
 
 pkgname = discord-canary-deb
 ---
 pkgbase = discord-canary
-	pkgver = 0.0.550
+	pkgver = 0.0.556
 	pkgdesc = Chat for Communities and Friends - Unstable
 	url = https://discord.com/
 	arch = amd64
@@ -1884,14 +1885,14 @@ pkgbase = discord-canary
 	depends = libgbm1
 	maintainer = DismissedGuy <me@mikealmel.ooo>
 	repology = project: discord-canary
-	source = @discord-canary~0.0.550::https://dl-canary.discordapp.net/apps/linux/0.0.550/discord-canary-0.0.550.tar.gz
-	sha256sums = 56478bc20da0307fb5251df982c5868cce6dbc60d27dd0d3276508bb93f862aa
+	source = @discord-canary~0.0.556::https://dl-canary.discordapp.net/apps/linux/0.0.556/discord-canary-0.0.556.tar.gz
+	sha256sums = e6a9f460bd3ed6e13a92640edc58760c3d2036393a313fb201d22830aed8f13c
 
 pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.78
+	pkgver = 0.0.79
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1901,8 +1902,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.78/discord-0.0.78.deb
-	sha256sums = 1760acd4a5df534f36775d5aeba6083d98001bcfd88d531d434cb7051afa175a
+	source = https://dl.discordapp.net/apps/linux/0.0.79/discord-0.0.79.deb
+	sha256sums = 1f444886dcab633a3370fd991b381ab11f35b55d94fbf1bad518a9a50dca06e1
 
 pkgname = discord-deb
 ---
@@ -1919,7 +1920,7 @@ pkgbase = discord-ptb-deb
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.78
+	pkgver = 0.0.79
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -1936,8 +1937,8 @@ pkgbase = discord
 	depends = libc++1
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.78::https://dl.discordapp.net/apps/linux/0.0.78/discord-0.0.78.tar.gz
-	sha256sums = d46f4d33467a74dd8bb6e9c792423334d03ec45b25c619c8f0656b8d794d64af
+	source = @discord~0.0.79::https://dl.discordapp.net/apps/linux/0.0.79/discord-0.0.79.tar.gz
+	sha256sums = 810571f8fb9e183a1f523292bf2a2b0aeef79b236e8dc2b3f60ba030a07d9286
 
 pkgname = discord
 ---
