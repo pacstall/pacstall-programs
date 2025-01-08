@@ -10,7 +10,7 @@ source=(
 source_amd64=("@godot-mono::https://github.com/godotengine/godot/releases/download/${pkgver}-stable/Godot_v${pkgver}-stable_mono_linux_x86_64.zip")
 source_arm64=("@godot-mono::https://github.com/godotengine/godot/releases/download/${pkgver}-stable/Godot_v${pkgver}-stable_linux.arm64.zip")
 sha256sums=(
-  "32597bca21e7c874669a2e9211d796759b9fa76fc08eb3a18a9a1d5685ab910c"
+  "7c62d3e0b7e500acfd336e2a27253e543ff1c5e109fd103f65314e1511b6a8dc"
   "16f3c4bbb80ccadde2bf4ab5681b60418aeab91ec98fc156a286af192890d891"
   "ecdf3cd5a6004a6568c199581d58ba685a9905926e51677906b76fbdd9cad351"
   "1ae242eb7dc30c281efef3f8a518580c9c997eb494a0b978d9504206a3f890c4"
