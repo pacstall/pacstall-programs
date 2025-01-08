@@ -1,11 +1,12 @@
 pkgbase = libspa-codec-bluez5-aac-bin
 	gives = libspa-codec-bluez5-aac
-	pkgver = 0.3.65-4~glasgall1
+	pkgver = 1.2.4-1ubuntu2~glasgall1
 	pkgdesc = Adds AAC bluetooth codec to pipewire
 	arch = amd64
 	depends = libspa-0.2-bluetooth
+	noextract = archive
 	maintainer = Zahrun <Zahrun@github.com>
-	source = @libspa-codec-bluez5-aac-bin~0.3.65-4~glasgall1::https://github.com/Zahrun/libspa-0.2-bluetooth/raw/main/libspa-codec-bluez5-aac_0.3.65-4~glasgall1_amd64.tar.xz
-	sha256sums = 9a235d1b5d8bb52302f9c8159da828ca7c8de15614233967d484d92cba4e56c2
+	source_amd64 = archive::https://launchpad.net/~aglasgall/+archive/ubuntu/pipewire-extra-bt-codecs/+files/libspa-0.2-bluetooth_1.2.4-1ubuntu2~glasgall1_amd64.deb/
+	sha256sums_amd64 = 9a9b0411790ee991ba1afb7756d579f2005ca94d01cf71393f2f724184119a87
 
 pkgname = libspa-codec-bluez5-aac-bin
