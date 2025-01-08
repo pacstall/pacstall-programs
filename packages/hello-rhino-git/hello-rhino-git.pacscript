@@ -11,7 +11,7 @@ external_connection=true
 
 prepare() {
   cd "${gives}"
-  meson setup build/ --buildtype=release --prefix=/usr
+  meson setup build/ --buildtype=release --prefix=/usr/local
 }
 
 build() {
@@ -27,7 +27,7 @@ package() {
 post_install() {
   mkdir -p "${homedir}/.config/autostart"
   if ! [[ -f "${homedir}/.config/autostart/hello-rhino.desktop" ]]; then
-    sudo cp "/usr/share/applications/hello-rhino.desktop" "${homedir}/.config/autostart/hello-rhino.desktop"
+    sudo cp "/usr/local/share/applications/hello-rhino.desktop" "${homedir}/.config/autostart/hello-rhino.desktop"
     sudo chown "${PACSTALL_USER}" "${homedir}/.config/autostart/hello-rhino.desktop"
   fi
 }
