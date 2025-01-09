@@ -11,7 +11,7 @@ repology=("project: ${gives}")
 package() {
   cd "${srcdir}/${gives}_${pkgver}_linux"
   mkdir -p "${pkgdir}/usr/share/ungoogled-chromium"
-  cp -r * "${pkgdir}/usr/share/ungoogled-chromium"
+  cp -r ./* "${pkgdir}/usr/share/ungoogled-chromium"
   chmod +x "${pkgdir}/usr/share/ungoogled-chromium/chrome"
   mkdir -p "${pkgdir}/usr/share/applications/"
   cat << EOF > "${pkgdir}/usr/share/applications/chromium.desktop"
