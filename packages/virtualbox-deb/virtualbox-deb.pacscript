@@ -1,23 +1,22 @@
 pkgname="virtualbox-deb"
 gives="virtualbox-7.1"
 repology=("project: virtualbox")
-pkgver="7.1.0"
-release="164728"
+pkgver="7.1.4"
+release="165100"
 arch=('amd64')
 breaks=("${gives}-bin")
 pkgdesc="VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use"
-maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>" "xdavius <xdavius@github.com>")
+maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>" "James Ed Randson <jimedrand@disroot.org>" "xdavius <xdavius@github.com>")
+incompatible=("debian:trixie" "debian:sid" "ubuntu:mantic" "ubuntu:oracular" "ubuntu:plucky" "ubuntu:devel")
+
+source_bullseye=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Debian~bullseye_amd64.deb")
+sha256sums_bullseye="c74ac1234299c3a5143c21f41871ab465f30ad907e31ea01e61c8e81feb5a98c"
 
 source_bookworm=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Debian~bookworm_amd64.deb")
-sha256sums_bookworm="5dc2a38fec468b2af74ee20c986edfddcafef7701fd336e6c6d971cb3c621cc0"
+sha256sums_bookworm="a180c568647611eb5c1df1ff37ad1591e7bce020dec4a69b90d6c5d4061c0e76"
 
 source_jammy=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Ubuntu~jammy_amd64.deb")
-sha256sums_jammy="6c5c65fab5eed2f18c5689579004140abadd1f8e0b1af751dd58aa7eb3fbec8c"
+sha256sums_jammy="8e210c6e3e9ca8ff2af78238ab81af3d90b14628ffb2df31a629a38ce9307918"
 
 source_noble=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Ubuntu~noble_amd64.deb")
-sha256sums_noble="56aefc0c12fd3d9a9efb336c08956e5c1a1c4cedca8f6e25193742d6b5932497"
-
-incompatible=("debian:trixie" "debian:sid" "ubuntu:mantic" "ubuntu:oracular" "ubuntu:devel")
-
-# vim:set ft=sh ts=2 sw=2 et:
-#latest_version="$(curl -sL https://download.virtualbox.org/virtualbox/LATEST-STABLE.TXT)"
+sha256sums_noble="54c25c941678198b0baf78f5e4cf468b990fd625ec4e7b231cf1e8a6bace3d1a"

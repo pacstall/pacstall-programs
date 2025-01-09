@@ -1,6 +1,7 @@
 pkgbase = appmenu-registrar-backport
 	gives = appmenu-registrar
 	pkgver = 24.02
+	pkgrel = 2
 	pkgdesc = Small utility to hold DBusMenu menus
 	url = https://gitlab.com/vala-panel-project/vala-panel-appmenu
 	arch = amd64
@@ -13,6 +14,7 @@ pkgbase = appmenu-registrar-backport
 	compatible = debian:sid
 	compatible = ubuntu:oracular
 	compatible = ubuntu:devel
+	compatible = ubuntu:plucky
 	license = LGPL-3.0-or-later
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://gitlab.com/vala-panel-project/vala-panel-appmenu/-/archive/24.02/vala-panel-appmenu-24.02.tar.gz

@@ -12,7 +12,6 @@ pkgbase = coreutils-single
 	makedepends = libselinux1-dev
 	makedepends = libssl-dev
 	makedepends = texinfo
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: coreutils
 	source = https://ftp.gnu.org/gnu/coreutils/coreutils-9.4.tar.xz
 	sha256sums = ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52

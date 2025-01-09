@@ -17,7 +17,9 @@ sha256sums_armhf=("e2131a01fcfd5c6508759adb5811aa33fb4b363e4c390d4610b80ae11d2f7
 conflicts=("${pkgname}" "${gives}")
 replaces=("${conflicts[@]}")
 pkgdesc="Yet another remote desktop software, written in Rust"
-maintainer=("xdavius <xdavius@github.com>")
-maintainer=("medaey <medaey@hotmail.com>")
+maintainer=(
+  "xdavius <xdavius@github.com>"
+  "medaey <medaey@hotmail.com>"
+)
 
 # vim:set ft=sh ts=2 sw=2 et:

@@ -74,7 +74,7 @@ NOGZ="YES"        # Don't compress .el files.
 pkgname="emacs"
 arch=("any")
 pkgver="28.2"
-source=("http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
+source=("@${pkgname}~${pkgver}::http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
 makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
 depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
@@ -175,7 +175,7 @@ if [[ ${DOCS_PDF} == "YES" && ! -d "/usr/local/texlive" ]]; then
 fi
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   [[ -x configure ]] || (./autogen.sh git && ./autogen.sh autoconf)
   if [[ ${CHECK} == "YES" ]]; then
     make -j"${NCPU}" check
@@ -183,7 +183,7 @@ prepare() {
 }
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   local _conf=(
     --prefix=/usr
     --sysconfdir=/etc
@@ -289,7 +289,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make -j"${NCPU}" DESTDIR="${pkgdir}" install
 
   # Install optional documentation formats

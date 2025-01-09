@@ -11,7 +11,6 @@ pkgbase = ghcup-bin
 	optdepends = curl: downloader
 	optdepends = wget: downloader
 	breaks = ghcup-git
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: ghcup
 	source_amd64 = ghcup::https://downloads.haskell.org/~ghcup/0.1.30.0/x86_64-linux-ghcup-0.1.30.0
 	sha256sums_amd64 = fea4499d0cbdf71c554bfb7febebb81d1bcd09a4c4cfb7a90905ef9bff4931cb

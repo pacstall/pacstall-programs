@@ -12,7 +12,7 @@ sha256sums_amd64=("4fe2eb90ac22b27fa03734899fcf814aa1e214a4952b9b30b20d551baf1d9
 sha256sums_arm64=("da9742321bb462547ebde69bf8420ac07b2a2c80fb57260f539bfc9f312becd6")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   mkdir -p "${pkgdir}/usr/libexec/docker/cli-plugins"
   chmod a+x ./"buildx-v${pkgver}.linux-${CARCH}"
   mv ./"buildx-v${pkgver}.linux-${CARCH}" "${pkgdir}/usr/libexec/docker/cli-plugins/docker-buildx"

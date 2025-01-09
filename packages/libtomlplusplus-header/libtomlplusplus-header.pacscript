@@ -9,6 +9,6 @@ repology=("project: tomlplusplus")
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm644 "toml.hpp" -t "${pkgdir}/usr/local/include/toml++/"
 }

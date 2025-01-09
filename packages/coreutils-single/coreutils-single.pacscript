@@ -17,7 +17,7 @@ makedepends=(
   'libssl-dev'
   'texinfo'
 )
-maintainer=('vigress8 <vig@disroot.org>')
+maintainer=()
 repology=("project: ${_pkgname}")
 
 build() {

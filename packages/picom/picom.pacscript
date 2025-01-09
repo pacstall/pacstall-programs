@@ -33,22 +33,22 @@ optdepends=(
   "python3: for running picom-convgen.py"
   "x11-utils: for picom-trans"
 )
-source=("https://github.com/yshui/picom/archive/refs/tags/v${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/yshui/picom/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=("627fa5d7c590df3ba8d2c41eb35d3859f7826bd28fa49e92a0e04fb60ed77904")
-maintainer=("vigress8 <vig@disroot.org>")
+maintainer=()
 external_connection='true'
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   meson setup -Dprefix="${pkgdir}/usr" --buildtype=release . build
 }
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   ninja -C build
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   ninja -C build install
 }

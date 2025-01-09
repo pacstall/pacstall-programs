@@ -49,7 +49,7 @@ pkgbase = minecraft-launcher
 	depends = libcurl4
 	depends = libuuid1
 	maintainer = aranym <aranym1@pm.me>
-	source = https://launcher.mojang.com/download/linux/x86_64/minecraft-launcher_1121.tar.gz
+	source = @minecraft-launcher~1121::https://launcher.mojang.com/download/linux/x86_64/minecraft-launcher_1121.tar.gz
 	source = minecraft-launcher.svg::https://launcher.mojang.com/download/minecraft-launcher.svg
 	source = minecraft-launcher.desktop::https://aur.archlinux.org/cgit/aur.git/plain/minecraft-launcher.desktop?h=minecraft-launcher
 	sha256sums = b08cb0cb52425afbafdd52a6b2c7d0d94ce0a2d9285f72f47ec2fcdc31e7e0cf

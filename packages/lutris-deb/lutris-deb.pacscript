@@ -1,10 +1,10 @@
 pkgname="lutris-deb"
 arch=("all")
-pkgver="0.5.17"
+pkgver="0.5.18"
 gives="lutris"
 repology=("project: lutris")
 source=("https://github.com/lutris/lutris/releases/download/v${pkgver}/lutris_${pkgver}_all.deb")
 depends=("python3-gi-cairo")
 pkgdesc="open source gaming platform"
-sha256sums=("70055d0d9db4613dbfef09e9acc43dbd73abb07fe843461faa4c0256b8779ab0")
+sha256sums=("883e3c2701fb5c86ed2b358ca66a68382060efb5b665711a238a48a1e7b0fa75")
 maintainer=("Oren Klopfer <oren@taumoda.com>")

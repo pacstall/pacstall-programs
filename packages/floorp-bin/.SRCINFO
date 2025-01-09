@@ -7,9 +7,9 @@ pkgbase = floorp-bin
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: floorp
-	source_amd64 = https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-x86_64.tar.bz2
+	source_amd64 = @floorp-bin~11.20.0::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-x86_64.tar.bz2
 	sha256sums_amd64 = 59e3a67de994bfc8da3038cfb355b249ea67bf13bda8aaff021c459aabffb767
-	source_arm64 = https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-aarch64.tar.bz2
+	source_arm64 = @floorp-bin~11.20.0::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-aarch64.tar.bz2
 	sha256sums_arm64 = cd416460b0b5a8b06ee2c4699110197c8180143e76bce4c119719edfc19c0d00
 
 pkgname = floorp-bin

@@ -9,7 +9,7 @@ pkgbase = tela-circle-icon-theme
 	maintainer = Herisson <spaceguybox@outlook.com>
 	repology = project: tela-circle-icon-theme
 	repology = repo: aur
-	source = https://github.com/vinceliuice/Tela-circle-icon-theme/archive/refs/tags/2023-06-25.zip
+	source = @tela-circle-icon-theme~2023-06-25::https://github.com/vinceliuice/Tela-circle-icon-theme/archive/refs/tags/2023-06-25.zip
 	sha256sums = 9caaf41608a565a82f1057391d3ac7a4a1e276d9df6fc56367b202ffb8484b48
 
 pkgname = tela-circle-icon-theme

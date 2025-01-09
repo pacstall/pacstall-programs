@@ -1,0 +1,10 @@
+pkgname="obs-studio-deb"
+gives="obs-studio"
+pkgver="31.0.0"
+source=("https://github.com/obsproject/obs-studio/releases/download/${pkgver}/obs-studio_${pkgver}-0obsproject1.oracular_amd64.deb")
+pkgdesc="Free and open source software for live streaming and screen recording"
+sha256sums=("11b4aca006e899b8795ead9870e850b42d209061a3d0320e526febc175379502")
+maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
+compatible=("ubuntu:oracular" "ubuntu:devel")
+arch=("amd64")
+repology=("project: obs-studio")

@@ -5,7 +5,6 @@ pkgbase = texstudio-app
 	url = https://www.texstudio.org
 	arch = amd64
 	replaces = texstudio
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: texstudio
 	source = https://github.com/texstudio-org/texstudio/releases/download/4.8.3/texstudio-4.8.3-x86_64.AppImage
 	sha256sums = 737c968412cd9bae9e63dc3cd0f2025fa111c4e52c07fc3515d15b569101a6f8

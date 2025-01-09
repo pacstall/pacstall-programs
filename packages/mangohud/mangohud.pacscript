@@ -1,7 +1,7 @@
 pkgname="mangohud"
 repology=("project: mangohud")
 pkgver="0.7.2"
-source=("https://github.com/flightlessmango/MangoHud/archive/refs/tags/v${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/flightlessmango/MangoHud/archive/refs/tags/v${pkgver}.tar.gz")
 url='https://github.com/flightlessmango/MangoHud'
 makedepends=(
   "gcc" "g++"
@@ -23,7 +23,7 @@ maintainer=("xdavius <xdavius@github.com>")
 external_connection=true
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
 
   # 32-bit games require 32-bit mangohud build
 
@@ -43,7 +43,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
 
   # Install 64-bit version
   DESTDIR="${pkgdir}" ninja -j"${NCPU}" -C build64 install

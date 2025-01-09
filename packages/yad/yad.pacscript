@@ -1,7 +1,7 @@
 pkgname="yad"
 arch=("any")
 pkgver="14.0"
-source=("https://github.com/v1cont/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz"
+source=("@${pkgname}~${pkgver}::https://github.com/v1cont/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz"
   "debian12.patch")
 makedepends=("autotools-dev" "intltool" "libgtk-3-dev" "automake")
 depends=("libc6" "libcairo2" "libgdk-pixbuf2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libpangocairo-1.0-0")
@@ -17,7 +17,7 @@ maintainer=("echometerain <echometer@disroot.org>"
 repology=("project: yad")
 
 prepare() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   patch -p1 < ../debian12.patch
   autoreconf -ivf && intltoolize
 
@@ -34,13 +34,13 @@ prepare() {
 }
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   ./configure "${FLAGS}"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make install DESTDIR="${pkgdir}"
 }
 

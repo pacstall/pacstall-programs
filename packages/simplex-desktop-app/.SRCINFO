@@ -5,7 +5,6 @@ pkgbase = simplex-desktop-app
 	url = https://simplex.chat
 	arch = amd64
 	license = AGPL-3.0-or-later
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: simplex-desktop
 	source = simplex-desktop::https://github.com/simplex-chat/simplex-chat/releases/download/v6.1.1/simplex-desktop-x86_64.AppImage
 	sha512sums = 15c894d4b91852405268be381db3d88a9a01745e2a89d3930bbfd019b4ddbfbb88ee0611a7759e4d4ebfaecf7f96547d890fbda826fafd86504c256865ceb70e

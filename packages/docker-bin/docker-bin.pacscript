@@ -15,14 +15,12 @@ source_amd64=("https://download.docker.com/linux/static/stable/x86_64/${gives}-$
 source_arm64=("https://download.docker.com/linux/static/stable/aarch64/${gives}-${pkgver}.tgz")
 
 build() {
-  cd "${_archive}"
   mkdir -p "${pkgdir}/usr/bin"
   mkdir -p "${pkgdir}/lib/systemd/system"
 }
 
 package() {
-  cd "${_archive}"
-  cp -r "../${gives}"/* -t "${pkgdir}/usr/bin"
+  cp -r "${gives}"/* -t "${pkgdir}/usr/bin"
   # shellcheck disable=SC2016
   echo '[Unit]
 Description=Docker Application Container Engine
@@ -113,7 +111,7 @@ post_install() {
     sudo usermod -aG docker "${PACSTALL_USER}"
   fi
   if [[ -f /bin/systemctl ]]; then
-    sudo systemctl enable containerd.service docker.socket docker.service --now
+    sudo systemctl enable containerd.service docker.socket docker.service
   fi
 }
 

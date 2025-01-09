@@ -25,7 +25,7 @@ pkgbase = gnome-tweaks
 	breaks = gnome-tweaks-git
 	license = GPL-3.0
 	repology = project: gnome-tweaks
-	source = https://github.com/GNOME/gnome-tweaks/archive/refs/tags/40.10.zip
+	source = @gnome-tweaks~40.10::https://github.com/GNOME/gnome-tweaks/archive/refs/tags/40.10.zip
 	sha256sums = 59d9597840335b0d71afd287bec09260e172ff89e14d6d12c3416f23557974ee
 
 pkgname = gnome-tweaks

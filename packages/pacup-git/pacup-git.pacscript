@@ -1,7 +1,7 @@
 pkgname="pacup-git"
 gives="pacup"
 arch=("all")
-pkgver="3.3.6"
+pkgver="3.3.7"
 pkgdesc="Help maintainers update pacscripts (next-gen Perl rewrite)"
 depends=(
   'libdata-compare-perl'
@@ -20,10 +20,7 @@ replaces=(
   "${gives}-git"
 )
 source=("https://github.com/pacstall/${gives}.git")
-maintainer=(
-  'vigress8 <vig@disroot.org>'
-  'Oren Klopfer <oren@taumoda.com>'
-)
+maintainer=('Oren Klopfer <oren@taumoda.com>')
 
 build() {
   cd "${gives}"

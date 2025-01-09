@@ -9,17 +9,17 @@ optdepends=('sudo: needed for recall function')
 replaces=("modprobed_db" "${pkgname}-git")
 breaks=("modprobed_db")
 url='https://wiki.archlinux.org/index.php/Modprobed-db'
-source=("https://github.com/graysky2/${gives}/archive/v${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/graysky2/${gives}/archive/v${pkgver}.tar.gz")
 sha256sums=('fef19759fda476134bec718d997bcb2a0c43d0a19b72f8f9e38bba22c746531d')
 maintainer=("xdavius <xdavius@github.com>")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make DESTDIR="${pkgdir}" install
   install -Dm644 MIT "${pkgdir}/usr/share/licenses/${gives}/LICENSE"
 }

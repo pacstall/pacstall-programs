@@ -8,11 +8,11 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="btop-bin"
 gives="btop"
-pkgver="1.3.2"
+pkgver="1.4.0"
 source=("https://github.com/aristocratos/btop/releases/download/v${pkgver}/btop-x86_64-linux-musl.tbz")
 pkgdesc="A monitor of system resourecs, bpytop ported to C++"
 breaks=("${gives}" "${gives}-git" "${gives}-deb")
-sha256sums=("9f4dce57d550d0ebec415b46c1949152989ba66dd4be5950741b74e12b231ede")
+sha256sums=("2e49cde9c0f273e5b1699d2c4f1ce5d1c08cca5fd90e5e0226dbac9fd00c82f3")
 arch=('amd64')
 repology=("project: ${gives}")
 

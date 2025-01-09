@@ -14,7 +14,6 @@ pkgbase = goldberg-emulator-git
 	makedepends = libtool
 	makedepends = protobuf-compiler
 	incompatible = *:bookworm
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: goldberg-emulator
 	source = goldberg-emulator::https://gitlab.com/Mr_Goldberg/goldberg_emulator.git
 	source = https://github.com/protocolbuffers/protobuf.git#branch=21.x

@@ -7,7 +7,6 @@ pkgbase = xdg-ninja-git
 	depends = jq
 	pacdeps = glow-deb
 	license = MIT
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: xdg-ninja
 	source = xdg-ninja::https://github.com/b3nj5m1n/xdg-ninja.git
 

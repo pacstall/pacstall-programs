@@ -3,7 +3,7 @@ gives="xonotic"
 pkgver="0.8.6"
 pkgdesc="The Free and Fast Arena Shooter"
 url='https://xonotic.org/'
-source=("https://dl.unvanquished.net/share/xonotic/release/xonotic-${pkgver}.zip")
+source=("@${pkgname}~${pkgver}::https://dl.unvanquished.net/share/xonotic/release/xonotic-${pkgver}.zip")
 sha256sums=("50850f8d800e7499722f6ea61e478e96464a375494b5a24da93aa0598cbe964d")
 breaks=("xonotic-git")
 arch=('amd64')
@@ -11,7 +11,7 @@ maintainer=("Herisson <spaceguybox@outlook.com>")
 repology=("project: xonotic")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -Dm755 "xonotic-linux64-sdl" "${pkgdir}/usr/bin/${gives}-sdl"
   install -Dm755 "xonotic-linux64-glx" "${pkgdir}/usr/bin/${gives}-glx"
   mkdir -p "${pkgdir}/usr/share/applications/"

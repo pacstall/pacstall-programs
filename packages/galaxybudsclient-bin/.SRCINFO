@@ -7,7 +7,6 @@ pkgbase = galaxybudsclient-bin
 	arch = arm64
 	arch = armhf
 	depends = bluetooth
-	maintainer = vigress8 <vig@disroot.org>
 	repology = project: galaxybudsclient
 	source = https://github.com/timschneeb/GalaxyBudsClient/blob/5.1.0/GalaxyBudsClient/Resources/icon.png?raw=true
 	sha256sums = 15783ad016b4fc50395456da8bd4838441582f5394a0731c0038fdc692289d51

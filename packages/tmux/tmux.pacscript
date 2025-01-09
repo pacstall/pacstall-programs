@@ -2,7 +2,7 @@ pkgname="tmux"
 arch=("any")
 arch=("any")
 pkgver="3.3"
-source=("https://github.com/tmux/tmux/releases/download/${pkgver}/tmux-${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/tmux/tmux/releases/download/${pkgver}/tmux-${pkgver}.tar.gz")
 makedepends=("gcc" "make" "pkg-config" "bison" "libncurses-dev" "libevent-dev")
 breaks=("${pkgname}-git" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
 replaces=("tmux")
@@ -12,7 +12,7 @@ optdepends=("libutempter-dev: Record user sessions to utmp and wtmp files")
 maintainer=("Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>")
 
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   # Check if `libutempter-dev` ( optdepends ) is installed
   if dpkg-query -W libutempter-dev > /dev/null 2>&1; then
     ./configure --enable-utempter
@@ -23,7 +23,7 @@ build() {
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   make install DESTDIR="${pkgdir}"
   install -Dm755 example_tmux.conf "${pkgdir}/usr/share/tmux/example_tmux.conf"
   install -Dm0644 COPYING "${pkgdir}/usr/share/licenses/tmux/LICENSE"

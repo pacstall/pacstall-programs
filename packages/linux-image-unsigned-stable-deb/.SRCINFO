@@ -1,6 +1,6 @@
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.12.1-061201-generic
-	pkgver = 6.12.1
+	gives = linux-image-unsigned-6.12.3-061203-generic
+	pkgver = 6.12.3
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -9,9 +9,9 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.1/arm64/linux-image-unsigned-6.12.1-061201-generic_6.12.1-061201.202411221622_arm64.deb
-	sha256sums_arm64 = 4b3f48baa280b8d44c9a0ab9b8499fd5d536b90aeeca16e1063a81e28684d76a
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.1/amd64/linux-image-unsigned-6.12.1-061201-generic_6.12.1-061201.202411221622_amd64.deb
-	sha256sums_amd64 = 2ed6fb3360cf67272215989fe6bdb747528aaa7e488e9a4c9ac6893148ac0bf1
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-image-unsigned-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
+	sha256sums_arm64 = 2a5abe1ae079b14d1ed6707e22896661dd15a90816e2d71abf9e6c45de097f89
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-image-unsigned-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
+	sha256sums_amd64 = 2f21762e03a8650a035f4a1c1c8af441015ae88bd8422b478bf3c462b74ccd92
 
 pkgname = linux-image-unsigned-stable-deb

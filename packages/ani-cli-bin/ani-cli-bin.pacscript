@@ -16,13 +16,13 @@ pkgdesc="A cli tool to browse and play anime"
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 prepare() {
-  cd "${_archive}"
+  cd "${srcdir}"
   chmod +x ani-cli
   gzip -9n "${srcdir}"/ani-cli.1
 }
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm755 "./ani-cli" "${pkgdir}/usr/bin/ani-cli"
   install -Dm644 "./ani-cli.1.gz" "${pkgdir}/usr/share/man/man1/ani-cli.1.gz"
 }

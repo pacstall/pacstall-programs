@@ -10,7 +10,7 @@ repology=("project: ${pkgname}")
 url="https://www.aseprite.org/"
 makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "libx11-dev" "libxcursor-dev" "libxi-dev" "ninja-build")
 arch=("amd64")
-maintainer=("vigress8 <vig@disroot.org>")
+maintainer=()
 skiaver="m102-861e4743af"
 source=(
   "${pkgname}-${pkgver}.zip::https://github.com/${pkgname}/${pkgname}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
