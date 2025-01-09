@@ -332,6 +332,7 @@ mdbook
 mdbook-linkcheck
 megabasterd-bin
 megasync-deb
+mercury-browser-deb
 mesa-kisak-fresh
 meson-focal-deb
 meson-git
@@ -340,6 +341,7 @@ microsoft-edge-beta-deb
 microsoft-edge-dev-deb
 microsoft-edge-stable-deb
 microsoft-prod-repo-deb
+min-browser-deb
 minecraft-launcher
 minecraft-launcher-deb
 minecraft-pi-reborn-app
@@ -587,6 +589,7 @@ ufetch-debian
 ufetch-ubuntu
 ugee-tablet-driver-deb
 ulauncher-deb
+ungoogled-chromium-bin
 ungoogled-chromium-deb
 unicons-git
 unicorn-desktop-git
