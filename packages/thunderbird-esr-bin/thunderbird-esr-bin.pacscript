@@ -7,7 +7,7 @@ url="https://www.thunderbird.net/en-US/"
 pkgdesc="Thunderbird (ESR builds) is a free email application that's easy to set up and customize and it's loaded with great features!"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 source=("https://archive.mozilla.org/pub/${gives}/releases/${pkgver}/linux-x86_64/en-US/${gives}-${pkgver}.tar.bz2")
-sha256sums=("7c6a35e4ac8c0496c1c80fa2f59ff5195fcecf1cbfe1279fda863be22d7e12ce")
+sha256sums=("f8e7fdd9a29a196be4e3af54760ad6987d40180644bae4afb68bbf63f931f2b8")
 
 package() {
   cd "${srcdir}"
