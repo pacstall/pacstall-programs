@@ -16,9 +16,9 @@ maintainer=("Thomas Crha <thomas@9bitbyte.com>")
 sha256sums=(
   'SKIP'
   'SKIP'
-  "1779a661eaf5100de8e1bf9cff1ed170816e18fcd13f689fc555f8720caea402"
-  "98629f6c6a93878352dcb4fcef5b1a231e7cd3705898bf2bd70698995a81f0ad"
 )
+sha256sums_amd64=("1779a661eaf5100de8e1bf9cff1ed170816e18fcd13f689fc555f8720caea402")
+sha256sums_arm64=("98629f6c6a93878352dcb4fcef5b1a231e7cd3705898bf2bd70698995a81f0ad")
 
 package() {
   if [[ ${CARCH} == "amd64" ]]; then

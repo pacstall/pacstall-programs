@@ -9943,10 +9943,10 @@ pkgbase = rpcs3-app
 	source = rpcs3.desktop
 	sha256sums = SKIP
 	sha256sums = SKIP
-	sha256sums = 1779a661eaf5100de8e1bf9cff1ed170816e18fcd13f689fc555f8720caea402
-	sha256sums = 98629f6c6a93878352dcb4fcef5b1a231e7cd3705898bf2bd70698995a81f0ad
 	source_amd64 = https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-9407974c105037a0617bdefe97b235f6226d8198/rpcs3-v0.0.34-17326-9407974c_linux64.AppImage
+	sha256sums_amd64 = 1779a661eaf5100de8e1bf9cff1ed170816e18fcd13f689fc555f8720caea402
 	source_arm64 = https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-9407974c105037a0617bdefe97b235f6226d8198/rpcs3-v0.0.34-17326-9407974c_linux_aarch64.AppImage
+	sha256sums_arm64 = 98629f6c6a93878352dcb4fcef5b1a231e7cd3705898bf2bd70698995a81f0ad
 
 pkgname = rpcs3-app
 ---
