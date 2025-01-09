@@ -6,7 +6,7 @@ arch=('amd64')
 url="https://www.thunderbird.net/en-US/"
 pkgdesc="Thunderbird (ESR builds) is a free email application that's easy to set up and customize and it's loaded with great features!"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
-source=("https://archive.mozilla.org/pub/${gives}/releases/${pkgver}/linux-x86_64/en-US/${gives}-${pkgver}.tar.bz2")
+source=("https://archive.mozilla.org/pub/thunderbird/releases/${pkgver}/linux-x86_64/en-US/thunderbird-${pkgver}.tar.bz2")
 sha256sums=("f8e7fdd9a29a196be4e3af54760ad6987d40180644bae4afb68bbf63f931f2b8")
 
 package() {
