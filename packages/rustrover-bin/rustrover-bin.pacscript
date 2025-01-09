@@ -15,7 +15,7 @@ package() {
   mkdir -p "${pkgdir}/usr/share/licenses/rustrover/"
   mkdir -p "${pkgdir}/usr/share/rustrover/"
   mkdir -p "${pkgdir}/usr/share/pixmaps"
-  cp -dr --no-preserve='ownership' bin help jbr lib modules plugins product-info.json "${pkgdir}/usr/share/rustrover/"
+  cp -dr --no-preserve='ownership' bin jbr lib modules plugins product-info.json "${pkgdir}/usr/share/rustrover/"
   cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/rustrover/"
   cp -dr "${pkgdir}/usr/share/rustrover/bin/rustrover.png" "${pkgdir}/usr/share/pixmaps/"
   mkdir -p "${pkgdir}/usr/bin"
