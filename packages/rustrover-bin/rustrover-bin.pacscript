@@ -17,16 +17,16 @@ package() {
   mkdir -p "${pkgdir}/usr/share/pixmaps"
   cp -dr --no-preserve='ownership' bin help jbr lib modules plugins product-info.json "${pkgdir}/usr/share/rustrover/"
   cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/rustrover/"
-  cp -dr "${pkgdir}/usr/share/webstorm/bin/rustrover.png" "${pkgdir}/usr/share/pixmaps/"
+  cp -dr "${pkgdir}/usr/share/rustrover/bin/rustrover.png" "${pkgdir}/usr/share/pixmaps/"
   mkdir -p "${pkgdir}/usr/bin"
-  ln -sf "/usr/share/webstorm/bin/rustrover.sh" "${pkgdir}/usr/bin/rustrover"
+  ln -sf "/usr/share/rustrover/bin/rustrover.sh" "${pkgdir}/usr/bin/rustrover"
   mkdir -p "${pkgdir}/usr/share/applications/"
   cat << EOF > "${pkgdir}/usr/share/applications/rustrover.desktop"
 [Desktop Entry]
 Type=Application
 Name=RustRover
 Icon=rustrover
-Exec=/usr/share/webstorm/bin/rustrover
+Exec=/usr/share/rustrover/bin/rustrover
 Comment=A powerhouse IDE for Rust developers
 Categories=Development;IDE;
 Terminal=false
