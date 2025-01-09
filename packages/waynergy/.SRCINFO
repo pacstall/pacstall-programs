@@ -24,7 +24,7 @@ pkgbase = waynergy
 	incompatible = debian:bullseye
 	license = MIT
 	maintainer = Eric Renfro <psi-jack@linux-help.org>
-	source = waynergy-0.0.17.tar.gz::https://github.com/r-c-f/waynergy/archive/refs/tags/v0.0.17.tar.gz
+	source = waynergy-0.0.17.tar.gz@waynergy~0.0.17::https://github.com/r-c-f/waynergy/archive/refs/tags/v0.0.17.tar.gz
 	sha256sums = b8b2d12588cabfe161ce21a5cd898f06bdfd55c0106ecd4a26c8628aafeff990
 
 pkgname = waynergy

@@ -1,0 +1,10 @@
+pkgbase = ufetch-debian
+	pkgver = 0.4
+	pkgdesc = Tiny system info for Unix-like operating systems.
+	arch = amd64
+	license = MIT
+	maintainer = Vladislav Prokopenko <vladislavprokopenko@disroot.org>
+	source = https://gitlab.com/jschx/ufetch/-/raw/v0.4/ufetch-debian
+	sha256sums = 8bddd627952d965f6fc11010dd227c8bc3c7856df672db1e738e7e8f4f2d6a87
+
+pkgname = ufetch-debian

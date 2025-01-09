@@ -3,19 +3,19 @@ arch=('any')
 pkgver="2023-06-25"
 pkgdesc="A flat, colorful icon theme"
 repology=("project: tela-circle-icon-theme" "repo: aur")
-source=("https://github.com/vinceliuice/Tela-circle-icon-theme/archive/refs/tags/${pkgver}.zip")
+source=("@${pkgname}~${pkgver}::https://github.com/vinceliuice/Tela-circle-icon-theme/archive/refs/tags/${pkgver}.zip")
 sha256sums=("9caaf41608a565a82f1057391d3ac7a4a1e276d9df6fc56367b202ffb8484b48")
 maintainer=("Herisson <spaceguybox@outlook.com>")
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git")
 depends=("gtk-update-icon-cache")
 build() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   mkdir -p "${pkgdir}/usr/share/${pkgname}"
 }
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   for i in elementary links src; do
     cp -r "${i}" "${pkgdir}/usr/share/${pkgname}"
   done

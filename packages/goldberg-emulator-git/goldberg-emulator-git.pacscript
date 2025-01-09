@@ -15,7 +15,7 @@ sha256sums=(
   'SKIP' 'SKIP'
   '2fa79bb1526b2903c4b95f4e534c9627367d9a9acba35d22c190f0a04c35f381'
 )
-maintainer=("vigress8 <vig@disroot.org>")
+maintainer=()
 repology=("project: ${gives}")
 
 prepare() {

@@ -1,7 +1,7 @@
 pkgname="neovim-git"
 gives="neovim"
 arch=("any")
-pkgver="0.10.1"
+pkgver="0.10.3"
 repology=("project: ${gives}")
 source=("https://github.com/neovim/neovim.git")
 url='https://neovim.io/'

@@ -1,6 +1,7 @@
 pkgbase = libglibutil-deb
 	gives = libglibutil
 	pkgver = 1.0.66
+	pkgrel = 2
 	pkgdesc = Library of glib utilities
 	arch = amd64
 	arch = arm64
@@ -15,8 +16,8 @@ pkgbase = libglibutil-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libglibutil
 	source_amd64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_amd64.deb
-	sha256sums_amd64 = c3f5928f8395f4d716f1d15867bd30d26211577efa82ff1dfba034d0ad290a0d
+	sha256sums_amd64 = 5d4fab27f76a5fe5bba6d156359849a6e0bec239315d7b5753b67bc8e8713386
 	source_arm64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_arm64.deb
-	sha256sums_arm64 = a6924cecef94f067f22995040dac5ce51d38b6189890c1d9ad73fed8caf57da6
+	sha256sums_arm64 = 590ebb10c61e89b4b8708d7fe59a99f0cc3eb1dcb67fd2bf65b03598fcd54194
 
 pkgname = libglibutil-deb

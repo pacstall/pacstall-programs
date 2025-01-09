@@ -1,0 +1,21 @@
+[Desktop Entry]
+Name=Telegram
+Comment=New era of messaging
+TryExec=/usr/bin/telegram
+Exec=/usr/bin/telegram -- %u
+Icon=telegram
+Terminal=false
+StartupWMClass=TelegramDesktop
+Type=Application
+Categories=Chat;Network;InstantMessaging;Qt;
+MimeType=x-scheme-handler/tg;x-scheme-handler/tonsite;
+Keywords=tg;chat;im;messaging;messenger;sms;tdesktop;
+Actions=quit;
+SingleMainWindow=true
+X-GNOME-UsesNotifications=true
+X-GNOME-SingleWindow=true
+
+[Desktop Action quit]
+Exec=/usr/bin/telegram -quit
+Name=Quit Telegram
+Icon=application-exit
