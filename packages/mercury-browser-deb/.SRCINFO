@@ -1,0 +1,19 @@
+pkgbase = mercury-browser-deb
+	gives = mercury-browser
+	pkgver = 129.0.2
+	pkgdesc = Compiler optimized, private Firefox fork
+	arch = amd64
+	arch = arm64
+	incompatible = debian:10
+	incompatible = debian:11
+	incompatible = debian:12
+	incompatible = debian:13
+	incompatible = debian:sid
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: mercury-browser
+	source_amd64 = https://github.com/Alex313031/Mercury/releases/download/v.129.0.2/mercury-browser_129.0.2_SSE3.deb
+	sha256sums_amd64 = a8cfec3010c825af23bf3c4e247792d47d0c625df7a0d6153e2814021f6659ae
+	source_arm64 = https://github.com/Alex313031/Mercury/releases/download/v.129.0.2/mercury-browser_129.0.2_ARM64.deb
+	sha256sums_arm64 = fa378c04c65540e3c5bd47502139c2404708d76c54c20870b06e8cd2f831c65a
+
+pkgname = mercury-browser-deb
