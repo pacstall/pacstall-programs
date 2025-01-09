@@ -6723,6 +6723,26 @@ pkgbase = megasync-deb
 
 pkgname = megasync-deb
 ---
+pkgbase = mercury-browser-deb
+	gives = mercury-browser
+	pkgver = 129.0.2
+	pkgdesc = Compiler optimized, private Firefox fork
+	arch = amd64
+	arch = arm64
+	incompatible = debian:10
+	incompatible = debian:11
+	incompatible = debian:12
+	incompatible = debian:13
+	incompatible = debian:sid
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: mercury-browser
+	source_amd64 = https://github.com/Alex313031/Mercury/releases/download/v.129.0.2/mercury-browser_129.0.2_SSE3.deb
+	sha256sums_amd64 = a8cfec3010c825af23bf3c4e247792d47d0c625df7a0d6153e2814021f6659ae
+	source_arm64 = https://github.com/Alex313031/Mercury/releases/download/v.129.0.2/mercury-browser_129.0.2_ARM64.deb
+	sha256sums_arm64 = fa378c04c65540e3c5bd47502139c2404708d76c54c20870b06e8cd2f831c65a
+
+pkgname = mercury-browser-deb
+---
 pkgbase = mesa-kisak-fresh
 	gives = mesa-kisak-fresh
 	pkgver = 24.3.0
@@ -6986,6 +7006,21 @@ pkgbase = microsoft-prod-repo-deb
 	sha256sums = b8713c36d3e6f6b2520830180cf6b5779e48410ad5d5e1b192635b0c7359fcc6
 
 pkgname = microsoft-prod-repo-deb
+---
+pkgbase = min-browser-deb
+	gives = min
+	pkgver = 1.33.1
+	pkgdesc = Min is a fast and minimal browser that protects your privacy
+	arch = amd64
+	arch = arm64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: min
+	source_amd64 = https://github.com/minbrowser/min/releases/download/v1.33.1/min-1.33.1-amd64.deb
+	sha256sums_amd64 = be6153fd7429a598d40a8d775fecf84bcac6c1a80b7b11a6437b419aff2408e9
+	source_arm64 = https://github.com/minbrowser/min/releases/download/v1.33.1/min-1.33.1-arm64.deb
+	sha256sums_arm64 = 895a415caef1c0a46662309bd13e05e45260cb53d09745f26df7d37d51efac99
+
+pkgname = min-browser-deb
 ---
 pkgbase = minecraft-launcher-deb
 	gives = minecraft-launcher
@@ -11245,14 +11280,14 @@ pkgname = thrive-deb
 ---
 pkgbase = thunderbird-bin
 	gives = thunderbird
-	pkgver = 131.0.1
+	pkgver = 133.0
 	pkgdesc = Thunderbird is a free email application that's easy to set up and customize and it's loaded with great features!
 	url = https://www.thunderbird.net/en-US/
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: thunderbird
-	source = https://archive.mozilla.org/pub/thunderbird/releases/131.0.1/linux-x86_64/en-US/thunderbird-131.0.1.tar.bz2
-	sha256sums = 7c6a35e4ac8c0496c1c80fa2f59ff5195fcecf1cbfe1279fda863be22d7e12ce
+	source = https://archive.mozilla.org/pub/thunderbird/releases/133.0/linux-x86_64/en-US/thunderbird-133.0.tar.bz2
+	sha256sums = e48c8d10752b228bde7944ae82b91ea282b0fbdadbb1b64eac556ef3aaf9ee49
 
 pkgname = thunderbird-bin
 ---
@@ -11762,6 +11797,18 @@ pkgbase = ulauncher-deb
 	sha256sums = a1ea338d32d0a2fc2ad740c16f7e3a4b220d192f3d8af3b1ba7ff361f0d624a1
 
 pkgname = ulauncher-deb
+---
+pkgbase = ungoogled-chromium-bin
+	gives = ungoogled-chromium
+	pkgver = 131.0.6778.139-1
+	pkgdesc = Google Chromium, sans integration with Google
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: ungoogled-chromium
+	source = https://github.com/ungoogled-software/ungoogled-chromium-portablelinux/releases/download/131.0.6778.139-1/ungoogled-chromium_131.0.6778.139-1_linux.tar.xz
+	sha256sums = 82da8451952cf8734f25e10ac527ab49a8eea339bf6eb6488c8ab032b8b77a14
+
+pkgname = ungoogled-chromium-bin
 ---
 pkgbase = ungoogled-chromium-deb
 	gives = ungoogled-chromium
