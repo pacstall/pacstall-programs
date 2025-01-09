@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=RPCS3
+Comment=RPCS3
+Exec=rpcs3 %f
+Icon=rpcs3
+Terminal=false
+Categories=Application;Game
