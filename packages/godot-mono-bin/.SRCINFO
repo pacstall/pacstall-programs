@@ -21,9 +21,9 @@ pkgbase = godot-mono-bin
 	sha256sums = SKIP
 	sha256sums = SKIP
 	sha256sums = SKIP
-	sha256sums = ecdf3cd5a6004a6568c199581d58ba685a9905926e51677906b76fbdd9cad351
-	sha256sums = 1ae242eb7dc30c281efef3f8a518580c9c997eb494a0b978d9504206a3f890c4
 	source_amd64 = @godot-mono::https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_mono_linux_x86_64.zip
+	sha256sums_amd64 = ecdf3cd5a6004a6568c199581d58ba685a9905926e51677906b76fbdd9cad351
 	source_arm64 = @godot-mono::https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.arm64.zip
+	sha256sums_arm64 = 1ae242eb7dc30c281efef3f8a518580c9c997eb494a0b978d9504206a3f890c4
 
 pkgname = godot-mono-bin
