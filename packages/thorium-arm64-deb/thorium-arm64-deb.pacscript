@@ -1,6 +1,6 @@
 pkgname="thorium-arm64-deb"
 gives="thorium-browser"
-pkgver="128.0.6613.189"
+pkgver="128.0.6613.194"
 arch=("arm64")
 repology=("project: thorium-browser")
 pkgdesc="Chromium fork for linux with extra patches"
