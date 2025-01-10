@@ -1,38 +1,35 @@
 pkgname="intellij-idea-community-bin"
-pkgver="2024.3.1"
+pkgver="2024.3.1.1"
 gives="intellij-idea-community"
-repology=("project: intellij-idea-community")
+arch=("amd64" "arm64")
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>" "James Ed Randson <jimedrand@disroot.org>")
-pkgdesc="IntelliJ IDEA is an IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages"
-arch=('amd64' 'arm64')
-external_connection="true"
-sha256sums_amd64=(
-  "b3fbdba793ba9e7800ac1ee4ceedf4726f86d5320c7c0d4e155b5bd10a296777"
-  "20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293"
-)
-sha256sums_arm64=(
-  "dc3427884cc1b98cd79d152b9d808a72b99f751dc627063148dce862853819d4"
-  "20c489d224f83cf4b29174b8c398e256b1df0e9cb0b920890f39c5796404b293"
-)
-source_amd64=(
-  "@${pkgname}~${pkgver}::https://download-cdn.jetbrains.com/idea/ideaIC-${pkgver}.tar.gz"
-  "intellij-idea-community.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/intellij-idea-community.desktop"
-)
-source_arm64=(
-  "@${pkgname}~${pkgver}::https://download-cdn.jetbrains.com/idea/ideaIC-${pkgver}-aarch64.tar.gz"
-  "intellij-idea-community.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/intellij-idea-community.desktop"
-)
-repology=("project: intellij-idea-community")
+pkgdesc="IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages"
+source_amd64=("https://download.jetbrains.com/idea/ideaIC-${pkgver}.tar.gz")
+sha256sums_amd64=("b183b126de2cd457475eea184874b5da2fa33ba5ae2ff874bdc8c1d534156428")
+source_arm64=("https://download.jetbrains.com/idea/ideaIC-${pkgver}-aarch64.tar.gz")
+sha256sums_arm64=("8e82e9c1ff8bc561df88d9c6ef3b83498aecdac6f980b9df0cb183bc6dca0c90")
+repology=("project: ${gives}")
 
 package() {
-  cd "${pkgname}~${pkgver}"
-  mkdir -p "${pkgdir}/usr/share/licenses/intellij-idea-community"
-  mkdir -p "${pkgdir}/usr/share/intellij-idea-community"
-  mkdir -p "${pkgdir}/usr/share/pixmaps"
-  cp -dr --no-preserve='ownership' bin jbr lib plugins "${pkgdir}/usr/share/intellij-idea-community/"
+  cd "${srcdir}/idea-IC-243.22562.218"
+  install -dm755 "${pkgdir}/usr/share/licenses/intellij-idea-community"
+  install -dm755 "${pkgdir}/usr/share/intellij-idea-community"
+  install -dm755 "${pkgdir}/usr/share/pixmaps"
+  cp -dr --no-preserve='ownership' bin jbr lib modules plugins product-info.json "${pkgdir}/usr/share/intellij-idea-community/"
   cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/intellij-idea-community/"
-  cp -dr "${pkgdir}/usr/share/intellij-idea-community/bin/idea.png" "${pkgdir}/usr/share/pixmaps/"
-  install -Dm 644 "${srcdir}"/intellij-idea-community.desktop -t "${pkgdir}"/usr/share/applications/
-  mkdir -p "${pkgdir}/usr/bin"
+  cp -dr "bin/idea.png" "${pkgdir}/usr/share/pixmaps/"
+  install -dm755 "${pkgdir}/usr/bin"
   ln -sf "/usr/share/intellij-idea-community/bin/idea.sh" "${pkgdir}/usr/bin/idea"
+  install -dm755 "${pkgdir}/usr/share/applications/"
+  cat << EOF > "${pkgdir}/usr/share/applications/intellij-idea-community.desktop"
+[Desktop Entry]
+Type=Application
+Name=IntelliJ IDEA Community Edition
+Icon=idea
+Exec=/usr/share/intellij-idea-community/bin/idea
+Comment=IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages.
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-idea
+EOF
 }
