@@ -1,0 +1,9 @@
+pkgname="thorium-arm64-deb"
+gives="thorium-browser"
+pkgver="128.0.6613.194"
+arch=("arm64")
+repology=("project: thorium-browser")
+pkgdesc="Chromium fork for linux with extra patches"
+maintainer=("James Ed Randson <jimedrand@disroot.org>" "Oren Klopfer <oren@taumoda.com>")
+source=("https://github.com/Alex313031/Thorium-Raspi/releases/download/M${pkgver}/${gives}_${pkgver}_arm64.deb")
+sha256sums=("60880b152802e1ed0460ca2ea129982db4affc78daf033218b3de9c87d56c336")
