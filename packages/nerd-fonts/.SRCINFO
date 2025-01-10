@@ -521,7 +521,7 @@ pkgname = ttf-tinos-nerd
 
 pkgname = ttf-ubuntu-mono-nerd
 	pkgdesc = Patched font Ubuntu Mono from nerd fonts library
-	license = LicenseRef-Ubuntu-Font-License-1.0
+	license = custom:LicenseRef-Ubuntu-Font-License-1.0
 	conflicts = nerd-fonts-ubuntu-mono
 	conflicts = ttf-ubuntumono-nerd
 	replaces = nerd-fonts-ubuntu-mono
@@ -529,7 +529,7 @@ pkgname = ttf-ubuntu-mono-nerd
 
 pkgname = ttf-ubuntu-nerd
 	pkgdesc = Patched font Ubuntu from nerd fonts library
-	license = LicenseRef-Ubuntu-Font-License-1.0
+	license = custom:LicenseRef-Ubuntu-Font-License-1.0
 	conflicts = nerd-fonts-ubuntu
 	replaces = nerd-fonts-ubuntu
 
