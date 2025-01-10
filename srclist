@@ -9933,7 +9933,7 @@ pkgname = rosary-deb
 ---
 pkgbase = rpcs3-app
 	gives = rpcs3
-	pkgver = 0.0.34-17326
+	pkgver = 0.0.34-17335
 	pkgdesc = PS3 emulator/debugger
 	url = https://rpcs3.net
 	arch = amd64
@@ -9941,10 +9941,10 @@ pkgbase = rpcs3-app
 	maintainer = Thomas Crha <thomas@9bitbyte.com>
 	source = https://rpcs3.net/cdn/branding/core-color-png.png
 	sha256sums = SKIP
-	source_amd64 = https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-9407974c105037a0617bdefe97b235f6226d8198/rpcs3-v0.0.34-17326-9407974c_linux64.AppImage
-	sha256sums_amd64 = 1779a661eaf5100de8e1bf9cff1ed170816e18fcd13f689fc555f8720caea402
-	source_arm64 = https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-9407974c105037a0617bdefe97b235f6226d8198/rpcs3-v0.0.34-17326-9407974c_linux_aarch64.AppImage
-	sha256sums_arm64 = 98629f6c6a93878352dcb4fcef5b1a231e7cd3705898bf2bd70698995a81f0ad
+	source_amd64 = https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-27c56cde2241b0056df7433a8fbb040bdb95dc07/rpcs3-v0.0.34-17335-27c56cde_linux64.AppImage
+	sha256sums_amd64 = 1b15144bf845a99e2ad40473df7d3e0b8e5dd2fd60ca79cacfa834450fed2db9
+	source_arm64 = https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-27c56cde2241b0056df7433a8fbb040bdb95dc07/rpcs3-v0.0.34-17335-27c56cde_linux_aarch64.AppImage
+	sha256sums_arm64 = 3228b7229d7cb454f7e7a9a605106a081122650b742b68867ad2a6834f1a811f
 
 pkgname = rpcs3-app
 ---

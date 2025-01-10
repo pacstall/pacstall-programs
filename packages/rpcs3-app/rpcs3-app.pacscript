@@ -1,9 +1,9 @@
 pkgname="rpcs3-app"
 gives="rpcs3"
 arch=("amd64" "arm64")
-pkgver="0.0.34-17326"
-pkgsha_amd64="9407974c105037a0617bdefe97b235f6226d8198"
-pkgsha_arm64="9407974c105037a0617bdefe97b235f6226d8198"
+pkgver="0.0.34-17335"
+pkgsha_amd64="27c56cde2241b0056df7433a8fbb040bdb95dc07"
+pkgsha_arm64="27c56cde2241b0056df7433a8fbb040bdb95dc07"
 source=(
   "https://rpcs3.net/cdn/branding/core-color-png.png"
 )
@@ -13,8 +13,8 @@ url="https://rpcs3.net"
 pkgdesc="PS3 emulator/debugger"
 maintainer=("Thomas Crha <thomas@9bitbyte.com>")
 sha256sums=('SKIP')
-sha256sums_amd64=("1779a661eaf5100de8e1bf9cff1ed170816e18fcd13f689fc555f8720caea402")
-sha256sums_arm64=("98629f6c6a93878352dcb4fcef5b1a231e7cd3705898bf2bd70698995a81f0ad")
+sha256sums_amd64=("1b15144bf845a99e2ad40473df7d3e0b8e5dd2fd60ca79cacfa834450fed2db9")
+sha256sums_arm64=("3228b7229d7cb454f7e7a9a605106a081122650b742b68867ad2a6834f1a811f")
 
 prepare() {
   mkdir -p "${pkgdir}/usr/share/applications"
