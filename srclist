@@ -4465,6 +4465,21 @@ pkgbase = hello-rhino-bin
 
 pkgname = hello-rhino-bin
 ---
+pkgbase = hello-rhino-git
+	gives = hello-rhino
+	pkgver = 2025.1-1
+	pkgdesc = Greeter application for Rhino Linux
+	arch = any
+	depends = libssl-dev
+	makedepends = cargo>=1.80.0
+	makedepends = meson
+	makedepends = ninja-build
+	makedepends = gettext
+	maintainer = AJStrong <ajstrongdev@proton.me>
+	source = https://github.com/rhino-linux/hello-rhino.git
+
+pkgname = hello-rhino-git
+---
 pkgbase = hello
 	pkgver = 2.12.1
 	pkgdesc = GNU implementation of the classic program that prints 'Hello, world!' when you run it
