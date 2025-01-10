@@ -1,0 +1,26 @@
+pkgbase = godot-bin
+	gives = godot
+	pkgver = 4.3
+	pkgdesc = Multi-platform 2D and 3D game engine
+	url = https://godotengine.org/
+	arch = amd64
+	arch = arm64
+	conflicts = godot-mono-bin
+	conflicts = godot-git
+	license = MIT
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: godot
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/org.godotengine.Godot.desktop
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/org.godotengine.Godot.xml
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/icon.svg
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/godot.6
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	source_amd64 = https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
+	sha256sums_amd64 = 7de56444b130b10af84d19c7e0cf63cf9e9937ee4ba94364c3b7dd114253ca21
+	source_arm64 = https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.arm64.zip
+	sha256sums_arm64 = baaf0b753b86ef52e10c11cc7f65c0bc4696ec793ee052ea88360b31ef5462a2
+
+pkgname = godot-bin

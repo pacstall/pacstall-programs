@@ -15,7 +15,7 @@ pkgver="0.12.2"
 pkgrel="2"
 pkgdesc="No nonsense neovim client in Rust"
 source=(
-  "https://github.com/neovide/neovide/releases/download/${pkgver}/neovide-linux-x86_64.tar.gz"
+  "@${pkgname}~${pkgver}::https://github.com/neovide/neovide/releases/download/${pkgver}/neovide-linux-x86_64.tar.gz"
   "${gives}.desktop::https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}.desktop"
   "LICENSE::https://raw.githubusercontent.com/neovide/neovide/${pkgver}/LICENSE"
   "https://raw.githubusercontent.com/neovide/neovide/${pkgver}/assets/${gives}-16x16.png"
@@ -36,7 +36,7 @@ sha256sums=(
 repology=("project: neovide")
 
 package() {
-  cd "${_archive}"
+  cd "${pkgname}~${pkgver}"
   install -vDm755 "${gives}" -t "${pkgdir}/usr/bin"
   for s in 16 32 48 256; do
     install -vDm755 "${srcdir}/${gives}-${s}x${s}.png" -t "${pkgdir}/usr/share/icons/hicolor/${s}x${s}/apps"

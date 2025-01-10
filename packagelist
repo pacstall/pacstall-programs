@@ -53,6 +53,7 @@ btrfs-du-bin
 cachyos-ananicy-rules-git
 cantata
 caprine-deb
+cbindgen
 celeste-bin
 cheat
 chezmoi-deb
@@ -89,6 +90,7 @@ dino-git
 directx-headers-git
 discord
 discord-canary
+discord-canary-deb
 discord-deb
 discord-ptb-deb
 distrobox
@@ -185,6 +187,8 @@ gnome-shell-extension-installer-git
 gnome-tweaks
 go-bin
 go-task-deb
+godot-bin
+godot-mono-bin
 goldberg-emulator-git
 gomuks-deb
 goneovim-bin
@@ -199,6 +203,7 @@ gradience
 gradience-git
 graillon
 grapejuice-git
+greetd-phrog
 grive2
 grive2-git
 grub-btrfs
@@ -213,6 +218,8 @@ harmonoid-deb
 headset-deb
 helix
 hello
+hello-rhino-bin
+hello-rhino-git
 heroic-games-launcher-deb
 highlight-pointer-bin
 honkers-launcher-bin
@@ -317,6 +324,7 @@ lsd-deb
 lunacy-deb
 lunarclient-app
 lutris-deb
+lutris-git
 lyrebird-git
 lyx
 mailspring-deb
@@ -329,6 +337,7 @@ mdbook
 mdbook-linkcheck
 megabasterd-bin
 megasync-deb
+mercury-browser-deb
 mesa-kisak-fresh
 meson-focal-deb
 meson-git
@@ -337,6 +346,7 @@ microsoft-edge-beta-deb
 microsoft-edge-dev-deb
 microsoft-edge-stable-deb
 microsoft-prod-repo-deb
+min-browser-deb
 minecraft-launcher
 minecraft-launcher-deb
 minecraft-pi-reborn-app
@@ -379,11 +389,13 @@ nu-tongues-bin
 nuclear-deb
 nuclei-bin
 nushell-bin
+nutext-git
 obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-deb
 obs-backgroundremoval-git
 obs-ndi-deb
+obs-studio-deb
 obsidian-deb
 oh-my-posh-git
 oh-my-zsh-git
@@ -409,6 +421,7 @@ owofetch
 p3x-onenote-app
 pacget-git
 paconvert-git
+pacstall
 pacstall-gui-git
 pacstall-qa-git
 pacup
@@ -447,6 +460,7 @@ protonvpn-nm-lib
 pulsar-deb
 pycharm-community-bin
 python3-anyascii
+python3-editables
 python3-flit-core
 python3-fvs
 python3-gbinder-deb
@@ -475,6 +489,7 @@ restic-bin
 resticprofile-bin
 rhino-core
 rhino-docker-builder-git
+rhino-grub-theme-git
 rhino-kvantum-theme-git
 rhino-lightdm-theme-git
 rhino-neofetch-git
@@ -498,6 +513,7 @@ rust-bin
 rust-bindgen-git
 rust-motd-deb
 rustdesk-deb
+rustrover-bin
 schildichat-deb
 scrcpy
 sed
@@ -553,9 +569,11 @@ tenacity-git
 texstudio-app
 tgpt-bin
 the-honkers-railway-launcher-bin
+thorium-arm64-deb
 thorium-deb
 thrive-deb
 thunderbird-bin
+thunderbird-esr-bin
 ticktick-deb
 tidal-hifi-bin
 timeshift
@@ -578,8 +596,11 @@ tuner-git
 tutanota-app
 typora-deb
 u-boot-mobian-deb
+ufetch-debian
+ufetch-ubuntu
 ugee-tablet-driver-deb
 ulauncher-deb
+ungoogled-chromium-bin
 ungoogled-chromium-deb
 unicons-git
 unicorn-desktop-git
@@ -652,6 +673,7 @@ zap
 zed-editor-preview-bin
 zed-editor-stable-bin
 zen-browser-aarch64-bin
+zen-browser-bin
 zen-browser-generic-bin
 zen-browser-specific-bin
 zentile-bin

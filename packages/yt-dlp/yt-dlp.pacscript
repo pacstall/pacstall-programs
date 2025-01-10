@@ -10,6 +10,6 @@ sha256sums=("dad4a9ce9db902cf1e69ca71c0ca778917fa5a804a2ab43bac612b0abef76314")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm755 "yt-dlp" -t "${pkgdir}/usr/bin"
 }

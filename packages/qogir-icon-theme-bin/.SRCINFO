@@ -9,7 +9,7 @@ pkgbase = qogir-icon-theme-bin
 	breaks = qogir-icon-theme-deb
 	breaks = qogir-icon-theme-app
 	maintainer = wizard-28 <wiz28@pm.me>
-	source = https://github.com/vinceliuice/Qogir-icon-theme/archive/2022-11-05.tar.gz
+	source = @qogir-icon-theme-bin~2022-11-05::https://github.com/vinceliuice/Qogir-icon-theme/archive/2022-11-05.tar.gz
 	sha256sums = 7747f8a139e01a075a94b832d95a53a98b98784b06e866dd8259bb0a38404480
 
 pkgname = qogir-icon-theme-bin

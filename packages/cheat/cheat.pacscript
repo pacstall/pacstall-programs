@@ -12,7 +12,7 @@ pkgdesc="Create and view interactive cheatsheets on the command-line"
 maintainer=("Arrowsome <ramtintoosi@gmail.com>")
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   gzip -d cheat-linux-amd64.gz
   install -Dm755 cheat-linux-amd64 "${pkgdir}/usr/bin/${pkgname}"
 }

@@ -25,7 +25,7 @@ pkgbase = yad
 	maintainer = echometerain <echometer@disroot.org>
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: yad
-	source = https://github.com/v1cont/yad/releases/download/v14.0/yad-14.0.tar.xz
+	source = @yad~14.0::https://github.com/v1cont/yad/releases/download/v14.0/yad-14.0.tar.xz
 	source = debian12.patch
 	sha256sums = 2829681f0a9ebd07b7f651c6266d5bf6199235ef027c4936a76988e0471f8e1d
 

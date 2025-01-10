@@ -23,7 +23,7 @@ optdepends=(
 )
 
 package() {
-  cd "${_archive}"
+  cd "${srcdir}"
   install -Dm755 "wavey-launcher" "${pkgdir}/usr/bin/${gives}"
   mkdir -p "${pkgdir}/usr/share/applications"
   echo '[Desktop Entry]

@@ -11,12 +11,10 @@ sha256sums_amd64=("c844eff69ae5c5c8908b17a87f36ded77b1807976411efbab4f8401385c17
 source=("https://github.com/rhino-linux/${gives}/releases/download/v${pkgver}/${gives}_v${pkgver}_${CARCH}.zip")
 
 build() {
-  cd "${_archive}"
   mkdir -p "${pkgdir}/usr"
 }
 
 package() {
-  cd "${_archive}"
-  chmod +x "../usr/bin/${gives}"
-  cp -rf ../usr/* "${pkgdir}/usr"
+  chmod +x "usr/bin/${gives}"
+  cp -rf usr/* "${pkgdir}/usr"
 }

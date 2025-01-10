@@ -9,7 +9,7 @@ pkgbase = arduino-cli-bin
 	breaks = arduino-cli-git
 	maintainer = DismissedGuy <me@mikealmel.ooo>
 	repology = project: arduino-cli
-	source = https://github.com/arduino/arduino-cli/releases/download/v0.35.3/arduino-cli_0.35.3_Linux_64bit.tar.gz
+	source = @arduino-cli-bin~0.35.3::https://github.com/arduino/arduino-cli/releases/download/v0.35.3/arduino-cli_0.35.3_Linux_64bit.tar.gz
 	sha256sums = acf3a3e03f0478a1cade44d23d4bc2f979c9b61b64e13bc66e26220b7b9fbd23
 
 pkgname = arduino-cli-bin
