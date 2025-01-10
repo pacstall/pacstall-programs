@@ -1,7 +1,7 @@
 pkgbase = thunderbird-esr-bin
 	gives = thunderbird-esr
 	pkgver = 128.6.0esr
-	pkgdesc = Thunderbird (ESR builds) is a free email application that's easy to set up and customize and it's loaded with great features!
+	pkgdesc = Standalone Mail/News reader - binary version (ESR)
 	url = https://www.thunderbird.net/en-US/
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
