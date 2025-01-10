@@ -1,7 +1,7 @@
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
 	pkgver = 0.0.1
-	pkgrel = 7
+	pkgrel = 8
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
 	arch = all
