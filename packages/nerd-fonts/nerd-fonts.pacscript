@@ -212,19 +212,19 @@ noextract=("${source[@]%%::*}")
 prepare() {
   # archives don't include a font-specific directory, so we have to make them
   for _font in 3270 agave anonymouspro arimo aurulent bigblueterminal \
-               bitstreamveramono cascadiacode codenewroman cousine \
-               daddytimemono dejavu droid fantasque fira firamono go hack \
-               hasklig heavydata hermit iawriter ibmplexmono inconsolata \
-               inconsolatago inconsolatalgc iosevka jetbrainsmono lekton \
-               liberationmono lilex meslo monofur monoid mononoki mplus noto \
-               opendyslexic overpass profont proggyclean robotomono \
-               sharetechmono sourcecodepro spacemono terminus tinos ubuntu \
-               ubuntumono victormono iosevkaterm comicshanns intone 0xproto \
-               cascadiamono commitmono d2coding envycoder geistmono martianmono \
-               monaspace gohu iosevkatermslab recursive zedmono; do
-  rm -rf ${_font}
-  mkdir ${_font}
-  tar -xf ${_font}-${pkgver}.tar.xz -C ${_font}
+    bitstreamveramono cascadiacode codenewroman cousine \
+    daddytimemono dejavu droid fantasque fira firamono go hack \
+    hasklig heavydata hermit iawriter ibmplexmono inconsolata \
+    inconsolatago inconsolatalgc iosevka jetbrainsmono lekton \
+    liberationmono lilex meslo monofur monoid mononoki mplus noto \
+    opendyslexic overpass profont proggyclean robotomono \
+    sharetechmono sourcecodepro spacemono terminus tinos ubuntu \
+    ubuntumono victormono iosevkaterm comicshanns intone 0xproto \
+    cascadiamono commitmono d2coding envycoder geistmono martianmono \
+    monaspace gohu iosevkatermslab recursive zedmono; do
+    rm -rf ${_font}
+    mkdir ${_font}
+    tar -xf ${_font}-${pkgver}.tar.xz -C ${_font}
   done
 }
 
@@ -280,7 +280,7 @@ package_otf-aurulent-nerd() {
 
   install -Dm644 aurulent/*.otf -t "${pkgdir}/usr/share/fonts/OTF"
   install -Dm644 aurulent/"SIL Open Font License.txt" \
-          -t "${pkgdir}/usr/share/licenses/${pacname}/"
+    -t "${pkgdir}/usr/share/licenses/${pacname}/"
 }
 
 package_ttf-bigblueterminal-nerd() {
@@ -289,7 +289,7 @@ package_ttf-bigblueterminal-nerd() {
 
   install -Dm644 bigblueterminal/*.ttf -t "${pkgdir}/usr/share/fonts/TTF"
   install -Dm644 bigblueterminal/LICENSE.TXT \
-          -t "${pkgdir}/usr/share/licenses/${pacname}/"
+    -t "${pkgdir}/usr/share/licenses/${pacname}/"
 }
 
 package_ttf-bitstream-vera-mono-nerd() {
@@ -300,7 +300,7 @@ package_ttf-bitstream-vera-mono-nerd() {
 
   install -Dm644 bitstreamveramono/*.ttf -t "${pkgdir}/usr/share/fonts/TTF"
   install -Dm644 bitstreamveramono/"Bitstream Vera License.txt" \
-          -t "${pkgdir}/usr/share/licenses/${pacname}/"
+    -t "${pkgdir}/usr/share/licenses/${pacname}/"
 }
 
 package_ttf-cascadia-code-nerd() {
@@ -479,7 +479,7 @@ package_ttf-heavydata-nerd() {
 
   install -Dm644 heavydata/*.ttf -t "${pkgdir}/usr/share/fonts/TTF"
   install -Dm644 heavydata/"Vic Fieger License.txt" \
-          -t "${pkgdir}/usr/share/licenses/${pacname}/"
+    -t "${pkgdir}/usr/share/licenses/${pacname}/"
 }
 
 package_otf-hermit-nerd() {
@@ -590,7 +590,7 @@ package_ttf-lekton-nerd() {
 
   install -Dm644 lekton/*.ttf -t "${pkgdir}/usr/share/fonts/TTF"
   install -Dm644 lekton/"SIL Open Font License.txt" \
-          -t "${pkgdir}/usr/share/licenses/${pacname}/"
+    -t "${pkgdir}/usr/share/licenses/${pacname}/"
 }
 
 package_ttf-liberation-mono-nerd() {
@@ -727,7 +727,6 @@ package_ttf-recursive-nerd() {
   pkgdesc="Patched font Recursive Mono (Rec Mono) from nerd fonts library"
   license=('OFL-1.1-no-RFN')
 
-
   install -Dm644 recursive/*.ttf -t "${pkgdir}/usr/share/fonts/TTF"
   install -Dm644 recursive/LICENSE.txt -t "${pkgdir}/usr/share/licenses/${pacname}/"
 }
@@ -819,7 +818,6 @@ package_ttf-victor-mono-nerd() {
   install -Dm644 victormono/*.ttf -t "${pkgdir}/usr/share/fonts/TTF"
   install -Dm644 victormono/LICENSE.txt -t "${pkgdir}/usr/share/licenses/${pacname}/"
 }
-
 
 package_ttf-zed-mono-nerd() {
   pkgdesc="Patched font Zed Mono from nerd fonts library"
