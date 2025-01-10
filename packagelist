@@ -508,6 +508,7 @@ rust-bin
 rust-bindgen-git
 rust-motd-deb
 rustdesk-deb
+rustrover-bin
 schildichat-deb
 scrcpy
 sed
