@@ -476,7 +476,7 @@ package_otf-hasklig-nerd() {
 
 package_ttf-heavydata-nerd() {
   pkgdesc="Patched font Heavy Data from nerd fonts library"
-  license=('LicenseRef-Vic-Fieger-License')
+  license=('custom:LicenseRef-Vic-Fieger-License')
 
   install -Dm644 heavydata/*.ttf -t "${pkgdir}/usr/share/fonts/TTF"
   install -Dm644 heavydata/"Vic Fieger License.txt" \
@@ -640,7 +640,7 @@ package_otf-monaspace-nerd() {
 
 package_ttf-monofur-nerd() {
   pkgdesc="Patched font Monofur from nerd fonts library"
-  license=('LicenseRef-Monofur-Free-License')
+  license=('custom:LicenseRef-Monofur-Free-License')
   conflicts=(nerd-fonts-monofur)
   replaces=(nerd-fonts-monofur)
 

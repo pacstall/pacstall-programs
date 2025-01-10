@@ -7941,7 +7941,7 @@ pkgname = ttf-hack-nerd
 
 pkgname = ttf-heavydata-nerd
 	pkgdesc = Patched font Heavy Data from nerd fonts library
-	license = LicenseRef-Vic-Fieger-License
+	license = custom:LicenseRef-Vic-Fieger-License
 
 pkgname = ttf-iawriter-nerd
 	pkgdesc = Patched font iA Writer (iM Writing) from nerd fonts library
@@ -8021,7 +8021,7 @@ pkgname = ttf-meslo-nerd
 
 pkgname = ttf-monofur-nerd
 	pkgdesc = Patched font Monofur from nerd fonts library
-	license = LicenseRef-Monofur-Free-License
+	license = custom:LicenseRef-Monofur-Free-License
 	conflicts = nerd-fonts-monofur
 	replaces = nerd-fonts-monofur
 
