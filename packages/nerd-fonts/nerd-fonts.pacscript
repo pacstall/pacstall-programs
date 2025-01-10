@@ -223,9 +223,9 @@ prepare() {
     ubuntumono victormono iosevkaterm comicshanns intone 0xproto \
     cascadiamono commitmono d2coding envycoder geistmono martianmono \
     monaspace gohu iosevkatermslab recursive zedmono; do
-    rm -rf ${_font}
-    mkdir ${_font}
-    tar -xf ${_font}-${pkgver}.tar.xz -C ${_font}
+    rm -rf "${_font}"
+    mkdir -p "${_font}"
+    tar -xf "${_font}-${pkgver}.tar.xz" -C "${_font}"
   done
 }
 
@@ -792,7 +792,7 @@ package_ttf-tinos-nerd() {
 
 package_ttf-ubuntu-mono-nerd() {
   pkgdesc="Patched font Ubuntu Mono from nerd fonts library"
-  license=('LicenseRef-Ubuntu-Font-License-1.0')
+  license=('custom:LicenseRef-Ubuntu-Font-License-1.0')
   conflicts=(nerd-fonts-ubuntu-mono ttf-ubuntumono-nerd)
   replaces=(nerd-fonts-ubuntu-mono ttf-ubuntumono-nerd)
 
@@ -802,7 +802,7 @@ package_ttf-ubuntu-mono-nerd() {
 
 package_ttf-ubuntu-nerd() {
   pkgdesc="Patched font Ubuntu from nerd fonts library"
-  license=('LicenseRef-Ubuntu-Font-License-1.0')
+  license=('custom:LicenseRef-Ubuntu-Font-License-1.0')
   conflicts=(nerd-fonts-ubuntu)
   replaces=(nerd-fonts-ubuntu)
 
