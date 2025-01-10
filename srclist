@@ -12021,6 +12021,7 @@ pkgbase = umu-launcher-git
 	makedepends = python3-build
 	makedepends = python3-hatchling
 	makedepends = python3-installer
+	makedepends = cargo
 	license = GPL-3.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: umu-launcher

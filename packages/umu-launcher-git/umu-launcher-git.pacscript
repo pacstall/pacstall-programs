@@ -26,6 +26,7 @@ makedepends=(
   "python3-build"
   "python3-hatchling"
   "python3-installer"
+  "cargo"
 )
 gives="umu-launcher"
 pkgdesc="A tool for launching non-steam games with Proton"
