@@ -67,6 +67,7 @@ pkgname=(
   "ttf-zed-mono-nerd"
 )
 pkgdesc="Iconic font aggregator, collection, and patcher"
+arch=("all")
 pkgver="3.3.0"
 url='https://github.com/ryanoasis/nerd-fonts'
 _urlbase="${url}/releases/download/v${pkgver}"
