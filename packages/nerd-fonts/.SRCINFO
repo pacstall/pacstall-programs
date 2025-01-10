@@ -2,6 +2,7 @@ pkgbase = nerd-fonts
 	pkgver = 3.3.0
 	pkgdesc = Iconic font aggregator, collection, and patcher
 	url = https://github.com/ryanoasis/nerd-fonts
+	arch = all
 	provides = ttf-font-nerd
 	noextract = 0xproto-3.3.0.tar.xz
 	noextract = 3270-3.3.0.tar.xz
