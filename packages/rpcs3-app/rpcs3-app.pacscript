@@ -6,19 +6,19 @@ pkgsha_amd64="9407974c105037a0617bdefe97b235f6226d8198"
 pkgsha_arm64="9407974c105037a0617bdefe97b235f6226d8198"
 source=(
   "https://rpcs3.net/cdn/branding/core-color-png.png"
-  "rpcs3.desktop"
 )
 source_amd64=("https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-${pkgsha_amd64}/rpcs3-v${pkgver}-${pkgsha_amd64:0:8}_linux64.AppImage")
 source_arm64=("https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-${pkgsha_arm64}/rpcs3-v${pkgver}-${pkgsha_arm64:0:8}_linux_aarch64.AppImage")
 url="https://rpcs3.net"
 pkgdesc="PS3 emulator/debugger"
 maintainer=("Thomas Crha <thomas@9bitbyte.com>")
-sha256sums=(
-  'SKIP'
-  'SKIP'
-)
+sha256sums=('SKIP')
 sha256sums_amd64=("1779a661eaf5100de8e1bf9cff1ed170816e18fcd13f689fc555f8720caea402")
 sha256sums_arm64=("98629f6c6a93878352dcb4fcef5b1a231e7cd3705898bf2bd70698995a81f0ad")
+
+prepare() {
+  mkdir -p "${pkgdir}/usr/share/applications"
+}
 
 package() {
   if [[ ${CARCH} == "amd64" ]]; then
@@ -28,6 +28,15 @@ package() {
   fi
 
   install -Dm644 "core-color-png.png" "${pkgdir}/usr/share/pixmaps/${gives}.png"
-  install -Dm644 "rpcs3.desktop" "${pkgdir}/usr/share/applications/${gives}.desktop"
+  echo "[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Name=RPCS3
+Comment=RPCS3
+Exec=rpcs3 %f
+Icon=rpcs3
+Terminal=false
+Categories=Application;Game" | tee "${pkgdir}/usr/share/applications/${gives}.desktop" > /dev/null
 }
 # vim:set ft=sh ts=2 sw=2 et:
