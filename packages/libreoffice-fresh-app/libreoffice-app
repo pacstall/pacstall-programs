@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/opt/libreoffice-fresh-app/libreoffice.AppImage "$@"

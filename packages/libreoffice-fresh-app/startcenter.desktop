@@ -1,0 +1,304 @@
+#
+# This file is part of the LibreOffice project.
+#
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+#
+# This file incorporates work covered by the following license notice:
+#
+#   Licensed to the Apache Software Foundation (ASF) under one or more
+#   contributor license agreements. See the NOTICE file distributed
+#   with this work for additional information regarding copyright
+#   ownership. The ASF licenses this file to you under the Apache
+#   License, Version 2.0 (the "License"); you may not use this file
+#   except in compliance with the License. You may obtain a copy of
+#   the License at http://www.apache.org/licenses/LICENSE-2.0 .
+#
+[Desktop Entry]
+Version=1.0
+Terminal=false
+NoDisplay=false
+Icon=libreoffice-startcenter
+Type=Application
+Categories=Office;X-Red-Hat-Base;X-SuSE-Core-Office;
+Exec=libreoffice-app %U
+MimeType=application/vnd.openofficeorg.extension;x-scheme-handler/vnd.libreoffice.cmis;x-scheme-handler/vnd.sun.star.webdav;x-scheme-handler/vnd.sun.star.webdavs;x-scheme-handler/vnd.libreoffice.command;x-scheme-handler/ms-word;x-scheme-handler/ms-powerpoint;x-scheme-handler/ms-excel;x-scheme-handler/ms-visio;x-scheme-handler/ms-access;
+Name=LibreOffice
+GenericName=Office
+GenericName[af]=Kantoor
+GenericName[am]=ቢሮ
+GenericName[ar]=مكتب
+GenericName[as]=অফিচ
+GenericName[ast]=Oficina
+GenericName[be]=Office
+GenericName[bg]=Офис пакет
+GenericName[bn]=অফিস
+GenericName[bn_IN]=অফিস
+GenericName[bo]=ཕབ་དོར།
+GenericName[br]=Burev
+GenericName[brx]=अफिस
+GenericName[bs]=Office
+GenericName[ca]=Oficina
+GenericName[ca_valencia]=Oficina
+GenericName[ckb]=ئۆفیس
+GenericName[cs]=Kancelář
+GenericName[cy]=Swyddfa
+GenericName[da]=Kontor
+GenericName[de]=Office
+GenericName[dgo]=दफ्तर
+GenericName[dsb]=Office
+GenericName[dz]=ཡིག་ཚང་།
+GenericName[el]=Γραφείο
+GenericName[en]=Office
+GenericName[en_GB]=Office
+GenericName[en_ZA]=Office
+GenericName[eo]=Oficejo
+GenericName[es]=Programas de oficina
+GenericName[et]=Kontoritöö
+GenericName[eu]=Bulegoa
+GenericName[fa]=اداری
+GenericName[fi]=Toimisto
+GenericName[fr]=Bureau
+GenericName[fur]=Office
+GenericName[fy]=Kantoar
+GenericName[ga]=Oifig
+GenericName[gd]=Oifis
+GenericName[gl]=Oficina
+GenericName[gu]=ઓફિસે
+GenericName[gug]=Office
+GenericName[he]=משרד
+GenericName[hi]=ऑफ़िस
+GenericName[hr]=Ured
+GenericName[hsb]=Office
+GenericName[hu]=Iroda
+GenericName[hy]=Գրասենյակ
+GenericName[id]=Perkantoran
+GenericName[is]=Skrifstofuforrit
+GenericName[it]=Ufficio
+GenericName[ja]=Office
+GenericName[ka]=ოფისი
+GenericName[kab]=Office
+GenericName[kk]=Офис
+GenericName[km]=ការិយាល័យ
+GenericName[kmr_Latn]=Nivîsgeh
+GenericName[kn]=ಕಛೇರಿ
+GenericName[ko]=오피스
+GenericName[kok]=\sकार्यालय
+GenericName[ks]=آفس
+GenericName[lb]=Office
+GenericName[lo]=ຫ້ອງການ
+GenericName[lt]=Raštinės programos
+GenericName[lv]=Birojs
+GenericName[mai]=ऑफिस
+GenericName[mk]=Канцеларија
+GenericName[ml]=ഓഫീസ്
+GenericName[mn]=Офис
+GenericName[mni]=ওফিস
+GenericName[mr]=ऑफिस
+GenericName[my]=ရုံး
+GenericName[nb]=Kontor
+GenericName[ne]=कार्यालय
+GenericName[nl]=Kantoor
+GenericName[nn]=Kontor
+GenericName[nr]=i-Ofisi
+GenericName[nso]=Ofisi
+GenericName[oc]=Burotica
+GenericName[om]=Waajjira
+GenericName[or]=କାର୍ଯ୍ୟାଳୟ
+GenericName[pa_IN]=ਆਫਿਸ
+GenericName[pl]=Biuro
+GenericName[pt]=Escritório
+GenericName[pt_BR]=Office
+GenericName[ro]=Birou
+GenericName[ru]=Офис
+GenericName[rw]=Ofise
+GenericName[sa_IN]=ऑफिस
+GenericName[sat]=ओफिसऑफिस
+GenericName[sd]=آفيس
+GenericName[si]=කාර්‍යයාලීය
+GenericName[sid]=Ofiise
+GenericName[sk]=Kancelária
+GenericName[sl]=Pisarniški paket
+GenericName[sq]=Zyrë
+GenericName[sr]=Канцеларија
+GenericName[sr_Latn]=Kancelarija
+GenericName[ss]=Lihhovisi
+GenericName[st]=Ofisi
+GenericName[sv]=Kontor
+GenericName[sw_TZ]=Ofisi
+GenericName[szl]=Biōro
+GenericName[ta]=அலுவலகம்
+GenericName[te]=కార్యాలయం
+GenericName[tg]=Офис
+GenericName[th]=ที่ทำงาน
+GenericName[tl]=Opisina
+GenericName[tn]=Kantoro/Ofisi
+GenericName[tr]=Ofis
+GenericName[ts]=Ofisi
+GenericName[tt]=Офис
+GenericName[ug]=ئىشخانا
+GenericName[uk]=Офіс
+GenericName[uz]=Ofis
+GenericName[ve]=Ofisi
+GenericName[vec]=Ofisio
+GenericName[vi]=Văn phòng
+GenericName[xh]=Iofisi
+GenericName[zh_CN]=办公
+GenericName[zh_TW]=辦公
+GenericName[zu]=Ihhovisi
+Comment=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[af]=Begin toepassings om teksdokumente, spreiblaaie, aanbiedings, sketse, formules en databasisse te skep, of maak onlangs gebruikte dokumente oop.
+Comment[am]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ar]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[as]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ast]=Inicia aplicaciones pa crear documentos de testu, fueyes de cálculu, presentaciones, dibuxos, fórmules y bases de datos, o abre documentos usaos de recién.
+Comment[be]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[bg]=Стартиране на приложения за създаване на текстови документи, електронни таблици, презентации, рисунки, формули и бази от данни или отваряне на скоро използвани документи.
+Comment[bn]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[bn_IN]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[bo]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[br]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[brx]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[bs]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ca]=Inicieu aplicacions per a crear documents de text, fulls de càlcul, presentacions, dibuixos, fórmules i bases de dades, o obriu documents usats recentment.
+Comment[ca_valencia]=Inicieu aplicacions per a crear documents de text, fulls de càlcul, presentacions, dibuixos, fórmules i bases de dades, o obriu documents usats recentment.
+Comment[ckb]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[cs]=Spouští aplikace pro vytváření textových dokumentů, sešitů, prezentací, kreseb, vzorců a databází nebo otevírá naposledy otevřené dokumenty.
+Comment[cy]=Agor rhaglenni er mwyn creu dogfennau testun, taenlenni, cyflwyniadau, lluniadau, fformiwlâu a chronfeydd data neu agor dogfennau a ddefnyddiwyd yn ddiweddar.
+Comment[da]=Start programmer til at oprette tekstdokumenter, regneark, præsentationer, tegninger, formler og databaser, eller åbn nyligt brugte dokumenter.
+Comment[de]=Starten Sie Anwendungen, um Textdokumente, Tabellendokumente, Präsentationen, Zeichnungen, Formeln und Datenbanken zu erstellen, oder öffnen Sie kürzlich verwendete Dokumente.
+Comment[dgo]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[dsb]=Startujśo nałoženja, aby tekstowe dokumenty, tabelowe dokumenty, prezentacije, kreslanki, formule a datowe banki napórał, abo wócyńśo rowno wužyte dokumenty.
+Comment[dz]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[el]=Εκκίνηση εφαρμογών για τη δημιουργία εγγράφων κειμένου, υπολογιστικών φύλλων, παρουσιάσεων, σχεδίων, τύπων και βάσεων δεδομένων ή άνοιγμα εγγράφων που χρησιμοποιήθηκαν πρόσφατα.
+Comment[en]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[en_GB]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulae, and databases, or open recently used documents.
+Comment[en_ZA]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[eo]=Lanĉi aplikaĵojn por krei tekstajn dokumentojn, kalkultabelojn, prezentaĵojn, desegnaĵojn, formulojn, ka datumbazojn, aŭ malfermi lastatempe uzitajn dokumentojn.
+Comment[es]=Inicie aplicaciones para crear documentos de texto, hojas de cálculo, presentaciones, dibujos, fórmulas y bases de datos, o abra documentos usados recientemente.
+Comment[et]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[eu]=Abiarazi testu-dokumentuak, kalkulu-orriak, aurkezpenak, marrazkiak, formulak eta datu-baseak sortzeko aplikazioak, edo ireki azken aldian erabilitako dokumentuak.
+Comment[fa]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[fi]=Käynnistä sovelluksia, joilla luot tekstiasiakirjoja, laskentataulukoita, esityksiä, piirroksia, kaavoja ja tietokantoja tai avaa viimeaikaisia asiakirjoja.
+Comment[fr]=Lancer des applications pour créer des documents texte, des feuilles de calcul, des présentations, des dessins, des formules et des bases de données, ou ouvrir les documents récemment utilisés.
+Comment[fur]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[fy]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ga]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[gd]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[gl]=Inicie aplicacións para crear documentos de texto, follas de cálculo, presentacións, debuxos, fórmulas e bases de datos ou abra documentos recentes.
+Comment[gu]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[gug]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[he]=הפעלת יישומים כדי ליצור מסמכי טקסט, גיליונות נתונים, מצגות, ציורים, נוסחאות ומסדי נתונים או לפתוח את המסמכים האחרונים שהיו בשימוש.
+Comment[hi]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[hr]=Pokrenite aplikacije za stvaranje tekstualnih dokumenata, prezentacija, crteža, formula i baza podataka, ili otvorite nedavno korištene dokumente.
+Comment[hsb]=Startujće nałoženja, zo byšće tekstowe dokumenty, tabelowe dokumenty, prezentacije, rysowanki, formle a datowe banki wutworił, abo wočińće runje wužite dokumenty.
+Comment[hu]=Alkalmazások indítása szöveges dokumentumok, táblázatok, bemutatók, rajzok, képletek és adatbázisok létrehozásához vagy a legutóbbi dokumentumok megnyitása.
+Comment[hy]=Կառավարեք տվյալների բազաները, ստեղծեք հարցումներ և հաշվետվություններ՝ ձեր տեղեկատվությանը հետևելու և կառավարելու համար.
+Comment[id]=Meluncurkan aplikasi untuk membuat dokumen teks, lembar sebar, presentasi, gambar, rumus, dan basis data, atau membuka dokumen yang baru-baru ini dipakai.
+Comment[is]=Keyrðu forrit til að útbúa textaskjöl, töflureikna, kynningar, teikningar, formúlur og gagnagrunna, eða opnaðu nýleg skjöl.
+Comment[it]=Avvia applicazioni per creare documenti di testo, fogli di calcolo, presentazioni, disegni, formule e database, oppure apri i documenti recenti.
+Comment[ja]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ka]=გაუშვით აპლიკაციები ტექსტური დოკუმენტების, ელცხრილების, პრეზენტაციების, ნახაზების, ფორმულების და მონაცემთა ბაზების შესაქმნელად ან ახლახან გამოყენებული დოკუმენტების გასახსნელად.
+Comment[kab]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[kk]=Мәтіндік құжаттар, электрондық кестелер, презентациялар, сызбалар, формулалар және дерекқорларды жасау үшін қолданбаларды жөнелту немесе жуырда пайдаланылған құжаттарды ашу.
+Comment[km]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[kmr_Latn]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[kn]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ko]=애플리케이션을 실행하여 텍스트 문서, 스프레드시트, 프레젠테이션, 드로잉, 수식, 데이터베이스를 만들거나 최근에 사용한 문서를 엽니다.
+Comment[kok]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ks]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[lb]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[lo]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[lt]=Iš pradžios lango galima paleisti programas teksto, skaičiuoklės, grafikos, formulių dokumentams, pateiktims ar duomenų bazėms kurti, arba atverti vėliausiai naudotus dokumentus.
+Comment[lv]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[mai]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[mk]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ml]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[mn]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[mni]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[mr]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[my]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[nb]=Start programmer for å lage tekstdokumenter, regneark, presentasjoner, tegninger, formler og databaser, eller åpne nylig brukte dokumenter.
+Comment[ne]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[nl]=Start applicaties om tekstdocumenten, werkbladen, presentaties, tekeningen, formules en databases te maken of recent gebruikte documenten te openen.
+Comment[nn]=Starta program for å laga tekstdokument, rekneark, presentasjonar, teikningar, formlar og databasar eller opna tidlegare brukte dokument.
+Comment[nr]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[nso]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[oc]=Lançar d’aplicacions per crear de documents tèxte, de fuèlhs de calculs, de presentacions, de dessenhs, de formulas e de basas de donadas, o dobrir los documents recents.
+Comment[om]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[or]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[pa_IN]=ਲਿਖਤ ਦਸਤਾਵੇਜ਼, ਸਪਰੈਡਸ਼ੀਟਾਂ, ਪੇਸ਼ਕਾਰੀਆਂ, ਡਰਾਇੰਗਾਂ, ਫਾਰਮੂਲੇ ਅਤੇ ਡਾਟਾਬੇਸ ਬਣਾਉਣ ਜਾਂ ਸੱਜਰੇ ਵਰਤੇ ਦਸਤਾਵੇਜ਼ ਖੋਲ੍ਹਣ ਲਈ ਐਪਲੀਕੇਸ਼ਨਾਂ ਚਲਾਓ।
+Comment[pl]=Uruchamiaj aplikacje do tworzenia dokumentów tekstowych, arkuszy kalkulacyjnych, prezentacji, rysunków, formuł i baz danych lub otwieraj ostatnio używane dokumenty.
+Comment[pt]=Inicie aplicações para criar documentos de texto, folhas de cálculo, apresentações, desenhos, fórmulas e bases de dados ou abra documentos recentes.
+Comment[pt_BR]=Inicie aplicativos para criar documentos de texto, planilhas, apresentações, desenhos, fórmulas e bancos de dados ou abra documentos recém utilizados.
+Comment[ro]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ru]=Запуск приложений для создания текстовых документов, электронных таблиц, презентаций, рисунков, формул и баз данных или открытия недавно использованных документов.
+Comment[rw]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[sa_IN]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[sat]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[sd]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[si]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[sid]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[sk]=Spúšťa aplikácie na vytváranie textových a tabuľkových dokumentov, prezentácií, kresieb, vzorcov a databáz alebo otvára naposledy otvorené dokumenty.
+Comment[sl]=Zaženite programe, s katerimi lahko ustvarite besedilne dokumente, preglednice, predstavitve, risbe, formule in zbirke podatkov ali pa odprete nedavno uporabljene dokumente.
+Comment[sq]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[sr]=Покрените апликације да направите текстуалне документе, таблице, презентације, цртеже, формуле и базе података или да отворите недавно коришћене документе.
+Comment[sr_Latn]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ss]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[st]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[sv]=Starta program för att skapa textdokument, kalkylblad, presentationer, ritningar, formler och databaser eller öppna nyligen använda dokument.
+Comment[sw_TZ]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[szl]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ta]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[te]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[tg]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[th]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[tl]=Ilunsad ang mga application para gumawa ng mga text na dokumento, spreadsheet, presentasyon, drawing, formula, at database, o magbukas ng mga kamakailang ginamit na dokumento.
+Comment[tn]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[tr]=Metin belgeleri, hesap tabloları, sunumlar, çizimler, formüller ve veritabanları oluşturmak veya son kullanılan belgeleri açmak için uygulamaları başlatın.
+Comment[ts]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[tt]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ug]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[uk]=Запуск програм для створення текстових документів, електронних таблиць, презентацій, малюнків, формул і баз даних або відкриття нещодавно використаних документів.
+Comment[uz]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[ve]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[vec]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[vi]=Khởi chạy các ứng dụng để tạo tài liệu văn bản, bảng tính, bản trình bày, bản vẽ, công thức, và cơ sở dữ liệu, hoặc mở các tài liệu được sử dụng gần đây.
+Comment[xh]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+Comment[zh_CN]=启动应用程序以创建文本文档、电子表格、演示文稿、绘图、公式和数据库，或者打开最近使用过的文档。
+Comment[zh_TW]=啟動應用程式以建立文字文件、試算表、簡報、繪圖、公式與資料庫，或是開啟最近使用的文件。
+Comment[zu]=Launch applications to create text documents, spreadsheets, presentations, drawings, formulas, and databases, or open recently used documents.
+StartupNotify=true
+X-GIO-NoFuse=true
+StartupWMClass=libreoffice-startcenter
+X-KDE-Protocols=file,http,webdav,webdavs
+
+##Define Actions
+Actions=Writer;Calc;Impress;Draw;Base;Math;
+
+[Desktop Action Writer]
+Name=Writer
+Exec=libreoffice-app --writer
+
+[Desktop Action Calc]
+Name=Calc
+Exec=libreoffice-app --calc
+
+[Desktop Action Impress]
+Name=Impress
+Exec=libreoffice-app --impress
+
+[Desktop Action Draw]
+Name=Draw
+Exec=libreoffice-app --draw
+
+[Desktop Action Base]
+Name=Base
+Exec=libreoffice-app --base
+
+[Desktop Action Math]
+Name=Math
+Exec=libreoffice-app --math
+
+##End of actions menu
