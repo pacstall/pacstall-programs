@@ -10,6 +10,7 @@ sha256sums=("188cd6a7db7dab8dd509b744f5f02f7dc5746f9d637303b08063f46a779967ab")
 
 package() {
   install -Dm755 "${gives}-v${pkgver}-linux-appimage-x64-Qt.AppImage" "${pkgdir}/usr/bin/pcsx2"
+  install -d "${pkgdir}/usr/share/applications"
   cat << EOF > "${pkgdir}/usr/share/applications/pcsx2.desktop"
 [Desktop Entry]
 Type=Application
