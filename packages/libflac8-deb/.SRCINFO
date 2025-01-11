@@ -1,0 +1,10 @@
+pkgbase = audiorelay-deb
+	gives = libflac8
+	pkgver = 1.3.3-2ubuntu0.2
+	pkgdesc = Free Lossless Audio Codec - runtime C library
+	arch = amd64
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	source = http://archive.ubuntu.com/ubuntu/pool/main/f/flac/libflac8_1.3.3-2ubuntu0.2_amd64.deb
+	sha256sums = 46ae4ced3fc67e23e173f5b5d8196f8a9235646a337528f135e6a07d3b206b9e
+
+pkgname = audiorelay-deb
