@@ -7,6 +7,7 @@ pkgver="1.0.66"
 pkgrel="2"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="Library of glib utilities"
+compatible=("ubuntu:noble" "ubuntu:devel" "debian:13" "debian:sid")
 source_amd64=("https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/${gives}_${pkgver}_amd64.deb")
 sha256sums_amd64=("e31c4515d5f7cf5336ff08b9b12ef261ac38700a3c06ea08d7296579f381921d")
 source_arm64=("https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/${gives}_${pkgver}_arm64.deb")
