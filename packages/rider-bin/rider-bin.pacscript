@@ -17,7 +17,7 @@ package() {
   mkdir -p "${pkgdir}/usr/share/pixmaps"
   cp -dr --no-preserve='ownership' bin jbr lib modules plugins tools product-info.json "${pkgdir}/usr/share/rider/"
   cp -dr --no-preserve='ownership' license "${pkgdir}/usr/share/licenses/rider/"
-  cp -dr "${pkgdir}/usr/share/webstorm/bin/rider.png" "${pkgdir}/usr/share/pixmaps/"
+  cp -dr "${pkgdir}/usr/share/rider/bin/rider.png" "${pkgdir}/usr/share/pixmaps/"
   mkdir -p "${pkgdir}/usr/bin"
   ln -sf "/usr/share/rider/bin/rider.sh" "${pkgdir}/usr/bin/rider"
   mkdir -p "${pkgdir}/usr/share/applications/"
