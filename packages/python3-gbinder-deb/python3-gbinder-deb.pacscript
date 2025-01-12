@@ -8,6 +8,7 @@ pkgrel="2"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 pacdeps=("libgbinder-deb")
 pkgdesc="Cython extension module for C++ gbinder functions"
+compatible=("ubuntu:noble" "ubuntu:devel" "debian:13" "debian:sid")
 source_amd64=("https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/${gives}_${pkgver}_amd64.deb")
 sha256sums_amd64=("c30aa2565cdc031c3b20a8612ef0ab94e40e2d5b2677de382e48a373b1960f5a")
 source_arm64=("https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/${gives}_${pkgver}_arm64.deb")
