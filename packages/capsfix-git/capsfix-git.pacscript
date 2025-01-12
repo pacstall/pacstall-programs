@@ -11,3 +11,7 @@ package() {
   cd "${gives}"
   install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
 }
+
+post_remove() {
+  sudo rm -f "${homedir}/.config/autostart/capsfix.desktop"
+}
