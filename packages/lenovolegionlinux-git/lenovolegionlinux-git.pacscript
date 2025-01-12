@@ -13,7 +13,7 @@ depends=(
   python3-pyqt6
   polkitd
 )
-pacdep=(python3-darkdetect)
+pacdeps=(python3-darkdetect)
 makedepends=(
   git
   python3-build
@@ -27,17 +27,17 @@ replaces=("${_pkgname}")
 source=(
   "${_pkgname}::git+https://github.com/johnfanv2/LenovoLegionLinux"
   "https://raw.githubusercontent.com/benhoyt/inih/refs/tags/r58/ini.c"
-  "Makefile-debian"
 )
 sha256sums=(
   'SKIP'
   '217fa78f0380669c91a565f3e414d0a8be0f7a7fdfd1e3839f213e86aa574a95'
-  'e4452e50cabfd488e5b04af627187bae184ce72489a6785591c1b66710af7333'
 )
 
 prepare() {
   cd "${_pkgname}"
   sed -i "s/version = _VERSION/version = 1.0.0/g" "${srcdir}/${_pkgname}/python/legion_linux/setup.cfg"
+  sed -i "s/SRC = \$(wildcard modules\/\*.c)/SRC = \$(wildcard ini.c modules\/\*.c)/g" "./extra/service/legiond/Makefile"
+  cp "${srcdir}/ini.c" "${srcdir}/${_pkgname}/extra/service/legiond"
 }
 
 build() {
@@ -46,8 +46,6 @@ build() {
 
   # Compile legiond daemon
   cd legion_linux/extra/service/legiond
-  cp "${srcdir}/ini.c" ./
-  cp "${srcdir}/Makefile-debian" ./Makefile
   make
 }
 
