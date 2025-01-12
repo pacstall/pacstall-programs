@@ -8,6 +8,7 @@ pkgrel="2"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 pacdeps=("python3-gbinder-deb")
 depends=("lxc" "python3" "python3-gi" "gir1.2-gtk-3.0" "dbus" "python3-dbus" "polkitd" "iptables" "python3-pyclipper")
+compatible=("ubuntu:noble" "ubuntu:devel" "debian:13" "debian:sid")
 pkgdesc=("Bring Android support on your own Wayland session which runs under LXC container")
 source=("https://github.com/jimed-rand/${pkgname}-archive/releases/download/${pkgver}/${gives}_${pkgver}_all.deb")
 sha256sums=("19639f5954accc8ee740b530825053b51e4958e37b8b5157925f4ce334004ff5")
