@@ -13,7 +13,7 @@ makedepends=(
   "dmidecode"
 )
 depends=("dkms")
-pacdep=("${_pkgname}-git")
+pacdeps=("${_pkgname}-git")
 replaces=("${_pkgname}-dkms")
 source=("${_pkgname}::git+https://github.com/johnfanv2/LenovoLegionLinux")
 sha256sums=('SKIP')
