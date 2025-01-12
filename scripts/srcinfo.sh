@@ -314,7 +314,7 @@ function srcinfo._create_array() {
   local base="${1}" var_name="${2}"
   base="${base//./_}" var_name="${var_name//./_}"
   if ! [[ -v "srcinfo_${base}_array_${var_name}" ]]; then
-      declare -ag "srcinfo_${base}_array_${var_name}"
+    declare -ag "srcinfo_${base}_array_${var_name}"
   fi
   echo "srcinfo_${base}_array_${var_name}"
 }
