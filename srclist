@@ -576,7 +576,6 @@ pkgbase = audiorelay-deb
 	pkgdesc = Turn your phone into a microphone or speakers for PC
 	url = https://audiorelay.net/
 	arch = amd64
-	pacdeps = libflac8
 	compatible = ubuntu:focal
 	compatible = ubuntu:jammy
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
