@@ -9,3 +9,7 @@ pacdeps=("libflac8")
 gives="audiorelay"
 pkgdesc="Turn your phone into a microphone or speakers for PC"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
+compatible=(
+  "ubuntu:focal"
+  "ubuntu:jammy"
+)
