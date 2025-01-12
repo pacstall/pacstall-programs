@@ -14,4 +14,5 @@ package() {
 
 post_remove() {
   sudo rm -f "${homedir}/.config/autostart/capsfix.desktop"
+  sudo rm -f "${homedir}/.config/xkb_caps_backup"
 }
