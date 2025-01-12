@@ -10090,6 +10090,21 @@ pkgbase = rhino-xfwm4-theme-git
 
 pkgname = rhino-xfwm4-theme-git
 ---
+pkgbase = rider-bin
+	gives = rider
+	pkgver = 2024.3.3
+	pkgdesc = The world's most loved .NET and game dev IDE
+	arch = amd64
+	arch = arm64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: rider
+	source_amd64 = https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.3.3.tar.gz
+	sha256sums_amd64 = -
+	source_arm64 = https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.3.3-aarch64.tar.gz
+	sha256sums_arm64 = -
+
+pkgname = rider-bin
+---
 pkgbase = rio-wayland-deb
 	gives = rio
 	pkgver = 0.0.36
