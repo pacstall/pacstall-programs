@@ -33,24 +33,38 @@ package() {
 }
 
 post_upgrade() {
-  dkms remove -m "${gives}" -v "${_pkgoldver}" --all || true
-  dkms add -m "${gives}" -v "${pkgver}"
-  dkms build -m "${gives}" -v "${pkgver}"
-  dkms install -m "${gives}" -v "${pkgver}" --force || true
+  if dkms status | grep -q "${gives}/${_oldpkgver}"; then
+    dkms remove -m "${gives}" -v "${_pkgoldver}" --all
+    dkms add -m "${gives}" -v "${pkgver}"
+    dkms build -m "${gives}" -v "${pkgver}"
+    dkms install -m "${gives}" -v "${pkgver}" --force
 
-  update-initramfs -u
+    update-initramfs -u
+  fi
 }
 
 post_install() {
-  dkms add -m "${gives}" -v "${pkgver}"
-  dkms build -m "${gives}" -v "${pkgver}"
-  dkms install -m "${gives}" -v "${pkgver}" --force || true
-
-  update-initramfs -u
+  KERNEL_VERSION=$(uname -r)
+  RED='\033[0;31m'
+  NC='\033[0m'
+  if [[ -d "/lib/modules/${KERNEL_VERSION}/build" ]]; then
+    if ! dkms status | grep -q "${gives}/${pkgver}"; then
+      dkms add -m "${gives}" -v "${pkgver}"
+      dkms build -m "${gives}" -v "${pkgver}"
+      dkms install -m "${gives}" -v "${pkgver}" --force
+      if [[ -f /usr/sbin/update-initramfs ]]; then
+        update-initramfs -u
+      fi
+    fi
+  else
+    echo -e "${RED}Error : Linux Headers for ${KERNEL_VERSION} not installed.${NC}"
+    exit 0
+  fi
 }
 
 pre_remove() {
-  dkms remove -m "${gives}" -v "${pkgver}" --all || true
-
-  update-initramfs -u
+  if dkms status | grep -q "${gives}/${pkgver}"; then
+    dkms remove -m "${gives}" -v "${pkgver}" --all
+    update-initramfs -u
+  fi
 }
