@@ -11,7 +11,7 @@ depends=('clang' 'python3' 'python3-docutils' 'python3-sphinx' 'python3-clang')
 makedepends=('git' 'python3-build' 'python3-hatchling' 'python3-installer' 'python3-setuptools' 'python3-wheel')
 pacdeps=("python3-editables")
 source=("${pkgname}::https://github.com/jnikula/hawkmoth/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('baf4d68c834a8cf3651c242b2e9be2b6c0f47f265648380f5eccbec2a7cc8667')
+sha256sums=('998b1d031383b8993b20622f851b88e787a71c0ece41f86d996c1402a3ef42ae')
 
 build() {
   cd "hawkmoth-${pkgver}"
