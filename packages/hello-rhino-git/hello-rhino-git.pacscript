@@ -4,7 +4,7 @@ source=("https://github.com/rhino-linux/hello-rhino.git")
 arch=("any")
 pkgver="2025.1-1"
 pkgrel="2"
-depends=("libssl-dev")
+depends=("libssl-dev" "gettext")
 makedepends=("cargo>=1.80.0" "meson" "ninja-build" "gettext")
 pkgdesc="Greeter application for Rhino Linux"
 maintainer=("AJStrong <ajstrongdev@proton.me>")
@@ -23,6 +23,7 @@ build() {
 package() {
   cd "${gives}"
   DESTDIR="${pkgdir}" ninja -C build/ install
+  mkdir -p "${pkgdir}/etc/skel/.config/autostart"
   ln -sf "/usr/local/share/applications/hello-rhino.desktop" "${pkgdir}/etc/skel/.config/autostart/hello-rhino.desktop"
 }
 

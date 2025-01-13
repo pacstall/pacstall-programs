@@ -5,6 +5,7 @@ pkgbase = hello-rhino-git
 	pkgdesc = Greeter application for Rhino Linux
 	arch = any
 	depends = libssl-dev
+	depends = gettext
 	makedepends = cargo>=1.80.0
 	makedepends = meson
 	makedepends = ninja-build

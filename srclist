@@ -4467,6 +4467,7 @@ pkgbase = hello-rhino-bin
 	pkgdesc = Rhino Linux Welcome Screen
 	arch = arm64
 	arch = amd64
+	depends = libssl-dev
 	depends = gettext
 	replaces = hello-rhino
 	replaces = hello-rhino-git
@@ -4485,6 +4486,7 @@ pkgbase = hello-rhino-git
 	pkgdesc = Greeter application for Rhino Linux
 	arch = any
 	depends = libssl-dev
+	depends = gettext
 	makedepends = cargo>=1.80.0
 	makedepends = meson
 	makedepends = ninja-build
