@@ -1,6 +1,7 @@
 pkgbase = hello-rhino-bin
 	gives = hello-rhino
 	pkgver = 2025.1-1
+	pkgrel = 2
 	pkgdesc = Rhino Linux Welcome Screen
 	arch = arm64
 	arch = amd64
