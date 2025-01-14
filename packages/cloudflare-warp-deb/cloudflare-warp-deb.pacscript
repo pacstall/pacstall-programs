@@ -1,0 +1,15 @@
+pkgname="cloudflare-warp-deb"
+repology=("project: cloudflare-warp")
+arch=('amd64')
+pkgver="2024.12.554.0"
+url=('https://one.one.one.one/')
+source_noble=("https://pkg.cloudflareclient.com/pool/noble/main/c/cloudflare-warp/cloudflare-warp_${pkgver}_amd64.deb")
+source_jammy=("https://pkg.cloudflareclient.com/pool/jammy/main/c/cloudflare-warp/cloudflare-warp_${pkgver}_amd64.deb")
+source_focal=("https://pkg.cloudflareclient.com/pool/focal/main/c/cloudflare-warp/cloudflare-warp_${pkgver}_amd64.deb")
+sha256sums_noble=("f05303554a006089d7549e66c293e953110200df2c69f8877ad334dc62539938")
+sha256sums_jammy=("5263662112f03a71c7b12636a333929dd891077f190d517ffc18c3f470efba02")
+sha256sums_focal=("4d971c43c96a38863df872d9e3252f32cf22156d409e6b795bcc68d81d1d187d")
+gives="cloudflare-warp"
+pkgdesc="Cloudflare Warp Client"
+maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
+compatible=('ubuntu:noble' 'ubuntu:jammy' 'ubuntu:focal')
