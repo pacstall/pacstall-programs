@@ -1,0 +1,18 @@
+pkgbase = hello-rhino-bin
+	gives = hello-rhino
+	pkgver = 2025.1-1
+	pkgrel = 2
+	pkgdesc = Rhino Linux Welcome Screen
+	arch = arm64
+	arch = amd64
+	depends = libssl-dev
+	depends = gettext
+	replaces = hello-rhino
+	replaces = hello-rhino-git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_arm64 = https://github.com/rhino-linux/hello-rhino/releases/download/v2025.1-1/hello-rhino_v2025.1-1_arm64.zip
+	sha256sums_arm64 = b63080659292f31546c36c7aa0517a4c8862684f4737039f8c2cf0b0e8f732e9
+	source_amd64 = https://github.com/rhino-linux/hello-rhino/releases/download/v2025.1-1/hello-rhino_v2025.1-1_amd64.zip
+	sha256sums_amd64 = aa58b85e5f20a54ed2b3946d171f1e07bbb2df486b8cf4d67063809dc7aa4777
+
+pkgname = hello-rhino-bin

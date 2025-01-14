@@ -1,14 +1,14 @@
 pkgbase = webstorm-bin
 	gives = webstorm
-	pkgver = 2024.3.1
+	pkgver = 2024.3.1.1
 	pkgdesc = Powerful and versatile IDE for JavaScript, TypeScript, HTML, CSS, React, Angular, Vue, and Node.js development.
 	arch = amd64
 	arch = arm64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: webstorm
-	source_amd64 = https://download.jetbrains.com/webstorm/WebStorm-2024.3.1.tar.gz
-	sha256sums_amd64 = f9122a02312bee9d06c77774cad37b32ac0dcbc460af4ac8b8059a1780d16018
-	source_arm64 = https://download.jetbrains.com/webstorm/WebStorm-2024.3.1-aarch64.tar.gz
-	sha256sums_arm64 = e1b34cf2456233f6a7aa079e7c2af23bc88d4b29bbddcf6d7a5b4e0432e38db3
+	source_amd64 = https://download.jetbrains.com/webstorm/WebStorm-2024.3.1.1.tar.gz
+	sha256sums_amd64 = 275999ca069658257d6f06875f283abf9c0b102bdf812cf7eefe86a1dda90c1b
+	source_arm64 = https://download.jetbrains.com/webstorm/WebStorm-2024.3.1.1-aarch64.tar.gz
+	sha256sums_arm64 = b136ec6696a47511a7396eb5416ff055964a040d72ed29eb6c362e1b37ce0ab5
 
 pkgname = webstorm-bin

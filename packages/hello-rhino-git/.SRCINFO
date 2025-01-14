@@ -1,0 +1,16 @@
+pkgbase = hello-rhino-git
+	gives = hello-rhino
+	pkgver = 2025.1-1
+	pkgrel = 2
+	pkgdesc = Greeter application for Rhino Linux
+	arch = any
+	depends = libssl-dev
+	depends = gettext
+	makedepends = cargo>=1.80.0
+	makedepends = meson
+	makedepends = ninja-build
+	makedepends = gettext
+	maintainer = AJStrong <ajstrongdev@proton.me>
+	source = https://github.com/rhino-linux/hello-rhino.git
+
+pkgname = hello-rhino-git

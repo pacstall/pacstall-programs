@@ -1,10 +1,12 @@
 pkgname="it87-dkms-git"
 gives="it87"
 pkgver="152"
+_pkgoldver="152"
+pkgrel="2"
 pkgdesc="Linux Driver for ITE LPC chips"
-arch=('x86_64' 'i686')
+arch=('x86_64')
 url='https://github.com/frankcrawford/it87'
-depends=('dkms')
+depends=("dkms")
 makedepends=('git')
 provides=('it87')
 source=("${gives}::git+https://github.com/frankcrawford/it87.git"
@@ -31,25 +33,38 @@ package() {
 }
 
 post_upgrade() {
-  update-initramfs -u -k all
+  if dkms status | grep -q "${gives}/${_oldpkgver}"; then
+    dkms remove -m "${gives}" -v "${_pkgoldver}" --all
+    dkms add -m "${gives}" -v "${pkgver}"
+    dkms build -m "${gives}" -v "${pkgver}"
+    dkms install -m "${gives}" -v "${pkgver}" --force
+
+    update-initramfs -u
+  fi
 }
 
 post_install() {
-  DKMS_NAME="${gives}"
-  DKMS_VERSION="${pkgver}"
-
-  dkms add -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
-  dkms build -m "${DKMS_NAME}" -v "${DKMS_VERSION}"
-  dkms install -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --force || true
-
-  update-initramfs -u -k all
+  KERNEL_VERSION=$(uname -r)
+  RED='\033[0;31m'
+  NC='\033[0m'
+  if [[ -d "/lib/modules/${KERNEL_VERSION}/build" ]]; then
+    if ! dkms status | grep -q "${gives}/${pkgver}"; then
+      dkms add -m "${gives}" -v "${pkgver}"
+      dkms build -m "${gives}" -v "${pkgver}"
+      dkms install -m "${gives}" -v "${pkgver}" --force
+      if [[ -f /usr/sbin/update-initramfs ]]; then
+        update-initramfs -u
+      fi
+    fi
+  else
+    echo -e "${RED}Error : Linux Headers for ${KERNEL_VERSION} not installed.${NC}"
+    exit 0
+  fi
 }
 
 pre_remove() {
-  DKMS_NAME="${gives}"
-  DKMS_VERSION="${pkgver}"
-
-  dkms remove -m "${DKMS_NAME}" -v "${DKMS_VERSION}" --all || true
-
-  update-initramfs -u -k all
+  if dkms status | grep -q "${gives}/${pkgver}"; then
+    dkms remove -m "${gives}" -v "${pkgver}" --all
+    update-initramfs -u
+  fi
 }

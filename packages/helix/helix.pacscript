@@ -1,6 +1,7 @@
 pkgname="helix"
 arch=("any")
 pkgver="24.07"
+pkgrel="2"
 repology=("project: helix")
 source=("@${pkgname}~${pkgver}::https://github.com/helix-editor/helix/releases/download/${pkgver}/helix-${pkgver}-source.tar.xz")
 makedepends=("cargo")
@@ -19,6 +20,7 @@ package() {
 
   printf '#!/bin/sh\nHELIX_RUNTIME=/usr/lib/helix/runtime exec /usr/lib/helix/hx "$@"\n' > hx
   install -Dm755 hx -t "${pkgdir}/usr/bin"
+  ln -sf /usr/bin/hx "${pkgdir}/usr/bin/helix"
 
   rm -f runtime/grammars/.gitkeep
   rm -f runtime/themes/README.md

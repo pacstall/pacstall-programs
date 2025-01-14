@@ -23,6 +23,7 @@ arduino-cli-bin
 arduino-ide-bin
 asdf-vm
 aseprite
+audiorelay-deb
 awesome-git
 aws-cli-v2-bin
 balena-etcher-deb
@@ -53,6 +54,8 @@ btrfs-du-bin
 cachyos-ananicy-rules-git
 cantata
 caprine-deb
+capsfix-git
+cbindgen
 celeste-bin
 cheat
 chezmoi-deb
@@ -61,6 +64,7 @@ cider-deb
 circle-flags-svg-deb
 clib
 clipboard-bin
+cloudflare-warp-deb
 cmake-data-deb
 cmake-deb
 cmatrix
@@ -186,6 +190,8 @@ gnome-shell-extension-installer-git
 gnome-tweaks
 go-bin
 go-task-deb
+godot-bin
+godot-mono-bin
 goldberg-emulator-git
 gomuks-deb
 goneovim-bin
@@ -215,6 +221,8 @@ harmonoid-deb
 headset-deb
 helix
 hello
+hello-rhino-bin
+hello-rhino-git
 heroic-games-launcher-deb
 highlight-pointer-bin
 honkers-launcher-bin
@@ -321,6 +329,7 @@ lsd-deb
 lunacy-deb
 lunarclient-app
 lutris-deb
+lutris-git
 lyrebird-git
 lyx
 mailspring-deb
@@ -333,6 +342,7 @@ mdbook
 mdbook-linkcheck
 megabasterd-bin
 megasync-deb
+mercury-browser-deb
 mesa-kisak-fresh
 meson-focal-deb
 meson-git
@@ -341,6 +351,7 @@ microsoft-edge-beta-deb
 microsoft-edge-dev-deb
 microsoft-edge-stable-deb
 microsoft-prod-repo-deb
+min-browser-deb
 minecraft-launcher
 minecraft-launcher-deb
 minecraft-pi-reborn-app
@@ -383,6 +394,7 @@ nu-tongues-bin
 nuclear-deb
 nuclei-bin
 nushell-bin
+nutext-git
 obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-deb
@@ -426,6 +438,7 @@ papirus-folders
 papirus-icon-theme
 parsec-deb
 pb-git
+pcsx2-app
 pdf-mix-tool-git
 pdfmm-git
 pfetch-bin
@@ -454,6 +467,7 @@ pulsar-deb
 pycharm-community-bin
 python3-anyascii
 python3-darkdetect
+python3-editables
 python3-flit-core
 python3-fvs
 python3-gbinder-deb
@@ -462,6 +476,7 @@ python3-levenshtein-deb
 python3-material-color-utilities
 python3-moddb
 python3-pypresence
+python3-sphinx-hawkmoth
 python3-vkbasalt-cli
 python3-zombie-imp
 qogir-gtk-theme-bin
@@ -495,6 +510,7 @@ rhino-stampede-dev
 rhino-system-git
 rhino-ubxi-core
 rhino-xfwm4-theme-git
+rider-bin
 rio-wayland-deb
 rio-x11-deb
 rosary-deb
@@ -505,6 +521,7 @@ rust-bin
 rust-bindgen-git
 rust-motd-deb
 rustdesk-deb
+rustrover-bin
 schildichat-deb
 scrcpy
 sed
@@ -560,9 +577,11 @@ tenacity-git
 texstudio-app
 tgpt-bin
 the-honkers-railway-launcher-bin
+thorium-arm64-deb
 thorium-deb
 thrive-deb
 thunderbird-bin
+thunderbird-esr-bin
 ticktick-deb
 tidal-hifi-bin
 timeshift
@@ -585,9 +604,11 @@ tuner-git
 tutanota-app
 typora-deb
 u-boot-mobian-deb
+ufetch-debian
 ufetch-ubuntu
 ugee-tablet-driver-deb
 ulauncher-deb
+ungoogled-chromium-bin
 ungoogled-chromium-deb
 unicons-git
 unicorn-desktop-git
