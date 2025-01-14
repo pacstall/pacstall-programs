@@ -16,9 +16,9 @@ sha256sums=(
   'SKIP'
   'SKIP'
   'SKIP'
-  "7de56444b130b10af84d19c7e0cf63cf9e9937ee4ba94364c3b7dd114253ca21"
-  "baaf0b753b86ef52e10c11cc7f65c0bc4696ec793ee052ea88360b31ef5462a2"
 )
+sha256sums_amd64=("7de56444b130b10af84d19c7e0cf63cf9e9937ee4ba94364c3b7dd114253ca21")
+sha256sums_arm64=("baaf0b753b86ef52e10c11cc7f65c0bc4696ec793ee052ea88360b31ef5462a2")
 conflicts=("godot-mono-bin" "godot-git")
 gives="godot"
 pkgdesc="Multi-platform 2D and 3D game engine"

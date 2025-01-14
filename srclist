@@ -67,7 +67,7 @@ pkgbase = adw-gtk3
 pkgname = adw-gtk3
 ---
 pkgbase = alacritty
-	pkgver = 0.14.0
+	pkgver = 0.15.0
 	pkgdesc = A fast, cross-platform, OpenGL terminal emulator
 	arch = any
 	makedepends = cargo
@@ -83,8 +83,8 @@ pkgbase = alacritty
 	incompatible = debian:bookworm
 	maintainer = Warofzen <warofzen1@protonmail.com>
 	repology = project: alacritty
-	source = @alacritty~0.14.0::https://github.com/alacritty/alacritty/archive/refs/tags/v0.14.0.tar.gz
-	sha256sums = 2919767177c010339502085b4ac5d3f9f15ca27e6befc39aa9d20fefb93ebcdf
+	source = @alacritty~0.15.0::https://github.com/alacritty/alacritty/archive/refs/tags/v0.15.0.tar.gz
+	sha256sums = aa4479c99547c0b6860760b5b704865f629ffe1f1ec374153c2cd84e53ce5412
 
 pkgname = alacritty
 ---
@@ -569,6 +569,21 @@ pkgbase = aseprite
 	sha256sums = SKIP
 
 pkgname = aseprite
+---
+pkgbase = audiorelay-deb
+	gives = audiorelay
+	pkgver = 0.27.5
+	pkgdesc = Turn your phone into a microphone or speakers for PC
+	url = https://audiorelay.net/
+	arch = amd64
+	compatible = ubuntu:focal
+	compatible = ubuntu:jammy
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: audiorelay
+	source = https://dl.audiorelay.net/setups/linux/audiorelay-0.27.5.deb
+	sha256sums = b4b00d3ba21718df61021a67cb7b3eaab5dfaaa779bef7e3247054a079cd3dee
+
+pkgname = audiorelay-deb
 ---
 pkgbase = awesome-git
 	gives = awesome
@@ -1189,6 +1204,36 @@ pkgbase = caprine-deb
 
 pkgname = caprine-deb
 ---
+pkgbase = capsfix-git
+	gives = capsfix
+	pkgver = 0.0.1
+	pkgdesc = Fix the nuisance of Caps Lock disable not toggling until key release
+	arch = all
+	depends = perl
+	depends = x11-xkb-utils
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/oklopfer/capsfix.git
+
+pkgname = capsfix-git
+---
+pkgbase = cbindgen
+	pkgver = 0.27.0
+	pkgdesc = A tool for generating C bindings to Rust code
+	url = https://github.com/mozilla/cbindgen
+	arch = amd64
+	arch = arm64
+	depends = libglib2.0-dev
+	makedepends = libglib2.0-dev
+	makedepends = git
+	pacdeps = rust-bin
+	license = MPL-2.0
+	maintainer = xdavius <xdavius@github.com>
+	repology = project: cbindgen
+	source = git+https://github.com/mozilla/cbindgen#tag=v0.27.0
+	b2sums = 76b445f7f9729107a04451433d047f50b5ac52c7dc501685f00d0558dab82e2bc09d23a8b5c33ea231e1a2fae81533ba8e64d21a43d524b6dd0de170114c6ea5
+
+pkgname = cbindgen
+---
 pkgbase = celeste-bin
 	gives = celeste
 	pkgver = 0.8.0
@@ -1318,6 +1363,26 @@ pkgbase = clipboard-bin
 	sha256sums_riscv64 = 5fba87633d04887029cf3b3cb63cc10cc294a7b2de3c169e8dfb82a959f5d7fe
 
 pkgname = clipboard-bin
+---
+pkgbase = cloudflare-warp-deb
+	gives = cloudflare-warp
+	pkgver = 2024.12.554.0
+	pkgdesc = Cloudflare Warp Client
+	url = https://one.one.one.one/
+	arch = amd64
+	compatible = ubuntu:noble
+	compatible = ubuntu:jammy
+	compatible = ubuntu:focal
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: cloudflare-warp
+	source_focal = https://pkg.cloudflareclient.com/pool/focal/main/c/cloudflare-warp/cloudflare-warp_2024.12.554.0_amd64.deb
+	source_jammy = https://pkg.cloudflareclient.com/pool/jammy/main/c/cloudflare-warp/cloudflare-warp_2024.12.554.0_amd64.deb
+	source_noble = https://pkg.cloudflareclient.com/pool/noble/main/c/cloudflare-warp/cloudflare-warp_2024.12.554.0_amd64.deb
+	sha256sums_focal = 4d971c43c96a38863df872d9e3252f32cf22156d409e6b795bcc68d81d1d187d
+	sha256sums_jammy = 5263662112f03a71c7b12636a333929dd891077f190d517ffc18c3f470efba02
+	sha256sums_noble = f05303554a006089d7549e66c293e953110200df2c69f8877ad334dc62539938
+
+pkgname = cloudflare-warp-deb
 ---
 pkgbase = cmake-data-deb
 	gives = cmake-data
@@ -1850,20 +1915,20 @@ pkgname = directx-headers-git
 ---
 pkgbase = discord-canary-deb
 	gives = discord-canary
-	pkgver = 0.0.556
+	pkgver = 0.0.558
 	pkgdesc = Chat for Communities and Friends Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com
 	arch = amd64
 	conflicts = discord-canary
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: discord-canary
-	source = https://canary.dl2.discordapp.net/apps/linux/0.0.556/discord-canary-0.0.556.deb
-	sha256sums = 862bbd96d942d7d613738b92ca294687f099adcbf6c889bb249269eb03cbf28a
+	source = https://canary.dl2.discordapp.net/apps/linux/0.0.558/discord-canary-0.0.558.deb
+	sha256sums = 5b7e514e317be1dba6b9a1278beddbded03a9e7dee73090a35c793a2201f24e3
 
 pkgname = discord-canary-deb
 ---
 pkgbase = discord-canary
-	pkgver = 0.0.556
+	pkgver = 0.0.559
 	pkgdesc = Chat for Communities and Friends - Unstable
 	url = https://discord.com/
 	arch = amd64
@@ -1885,8 +1950,8 @@ pkgbase = discord-canary
 	depends = libgbm1
 	maintainer = DismissedGuy <me@mikealmel.ooo>
 	repology = project: discord-canary
-	source = @discord-canary~0.0.556::https://dl-canary.discordapp.net/apps/linux/0.0.556/discord-canary-0.0.556.tar.gz
-	sha256sums = e6a9f460bd3ed6e13a92640edc58760c3d2036393a313fb201d22830aed8f13c
+	source = @discord-canary~0.0.559::https://dl-canary.discordapp.net/apps/linux/0.0.559/discord-canary-0.0.559.tar.gz
+	sha256sums = bc90f8942b1df7ee03c8a64ceab9caebec983f6fbfae47f743732c98a40934c6
 
 pkgname = discord-canary
 ---
@@ -1909,13 +1974,13 @@ pkgname = discord-deb
 ---
 pkgbase = discord-ptb-deb
 	gives = discord-ptb
-	pkgver = 0.0.124
+	pkgver = 0.0.125
 	pkgdesc = Chat for Communities and Friends - Public Test Build
 	url = https://discord.com/
 	arch = amd64
 	repology = project: discord-ptb
-	source = https://dl-ptb.discordapp.net/apps/linux/0.0.124/discord-ptb-0.0.124.deb
-	sha256sums = 3c2598f93d16faae6f167e05a0983adaa1abd4b2c616bbd4818a22e88960e86e
+	source = https://dl-ptb.discordapp.net/apps/linux/0.0.125/discord-ptb-0.0.125.deb
+	sha256sums = 1e0e8a4cd60b11b67559bd62238264a2faed39f44fe09644b2cda53b01b8e233
 
 pkgname = discord-ptb-deb
 ---
@@ -2857,15 +2922,15 @@ pkgname = ffsend-bin
 ---
 pkgbase = firefox-arm64-deb
 	gives = firefox
-	pkgver = 133.0.3+build1
+	pkgver = 134.0+build1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
 	repology = repo: ubuntu_20_04
-	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_133.0.3+build1-0ubuntu0.22.04.1~mt1_arm64.deb
-	sha256sums = 247ec31c846b09a58bf78a99d61761fe52d4d6fcb5c94b5034ab8068cd0c41cd
+	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_134.0+build1-0ubuntu0.22.04.1~mt1_arm64.deb
+	sha256sums = 300bb6b388f58cca24ba860cbedc2af0c48590436bd0c1fa824573bdc5d04bd1
 
 pkgname = firefox-arm64-deb
 ---
@@ -3477,15 +3542,15 @@ pkgname = github-desktop-deb
 ---
 pkgbase = gitkraken-deb
 	gives = gitkraken
-	pkgver = 10.4.1
+	pkgver = 10.6.0
 	pkgdesc = Legendary Git GUI client for Windows, Mac & Linux
 	arch = amd64
 	breaks = gitkraken-bin
 	replaces = gitkraken
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: gitkraken
-	source = https://release.axocdn.com/linux/GitKraken-v10.4.1.deb
-	sha256sums = 93a6a2685e47115a09830ef458758221ffa91c79cd46324a402fdd337ef5dd20
+	source = https://release.axocdn.com/linux/GitKraken-v10.6.0.deb
+	sha256sums = 862ae07841e9b6d90ff76c561a2aabb89fc02953598b2b1674309476d9a2bee4
 
 pkgname = gitkraken-deb
 ---
@@ -3654,12 +3719,42 @@ pkgbase = godot-bin
 	sha256sums = SKIP
 	sha256sums = SKIP
 	sha256sums = SKIP
-	sha256sums = 7de56444b130b10af84d19c7e0cf63cf9e9937ee4ba94364c3b7dd114253ca21
-	sha256sums = baaf0b753b86ef52e10c11cc7f65c0bc4696ec793ee052ea88360b31ef5462a2
 	source_amd64 = https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
+	sha256sums_amd64 = 7de56444b130b10af84d19c7e0cf63cf9e9937ee4ba94364c3b7dd114253ca21
 	source_arm64 = https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.arm64.zip
+	sha256sums_arm64 = baaf0b753b86ef52e10c11cc7f65c0bc4696ec793ee052ea88360b31ef5462a2
 
 pkgname = godot-bin
+---
+pkgbase = godot-mono-bin
+	gives = godot-mono
+	pkgver = 4.3
+	pkgdesc = Multi-platform 2D and 3D game engine
+	url = https://godotengine.org/
+	arch = amd64
+	arch = arm64
+	conflicts = godot-bin
+	conflicts = godot-git
+	conflicts = godot-mono-git
+	license = MIT
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: godot
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/org.godotengine.Godot.desktop
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/org.godotengine.Godot.xml
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/icon.svg
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/godot.6
+	source = desktop.patch
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	source_amd64 = @godot-mono::https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_mono_linux_x86_64.zip
+	sha256sums_amd64 = ecdf3cd5a6004a6568c199581d58ba685a9905926e51677906b76fbdd9cad351
+	source_arm64 = @godot-mono::https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.arm64.zip
+	sha256sums_arm64 = 1ae242eb7dc30c281efef3f8a518580c9c997eb494a0b978d9504206a3f890c4
+
+pkgname = godot-mono-bin
 ---
 pkgbase = goldberg-emulator-git
 	gives = goldberg-emulator
@@ -4400,6 +4495,42 @@ pkgbase = helix
 
 pkgname = helix
 ---
+pkgbase = hello-rhino-bin
+	gives = hello-rhino
+	pkgver = 2025.1-1
+	pkgrel = 2
+	pkgdesc = Rhino Linux Welcome Screen
+	arch = arm64
+	arch = amd64
+	depends = libssl-dev
+	depends = gettext
+	replaces = hello-rhino
+	replaces = hello-rhino-git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_arm64 = https://github.com/rhino-linux/hello-rhino/releases/download/v2025.1-1/hello-rhino_v2025.1-1_arm64.zip
+	sha256sums_arm64 = b63080659292f31546c36c7aa0517a4c8862684f4737039f8c2cf0b0e8f732e9
+	source_amd64 = https://github.com/rhino-linux/hello-rhino/releases/download/v2025.1-1/hello-rhino_v2025.1-1_amd64.zip
+	sha256sums_amd64 = aa58b85e5f20a54ed2b3946d171f1e07bbb2df486b8cf4d67063809dc7aa4777
+
+pkgname = hello-rhino-bin
+---
+pkgbase = hello-rhino-git
+	gives = hello-rhino
+	pkgver = 2025.1-1
+	pkgrel = 2
+	pkgdesc = Greeter application for Rhino Linux
+	arch = any
+	depends = libssl-dev
+	depends = gettext
+	makedepends = cargo>=1.80.0
+	makedepends = meson
+	makedepends = ninja-build
+	makedepends = gettext
+	maintainer = AJStrong <ajstrongdev@proton.me>
+	source = https://github.com/rhino-linux/hello-rhino.git
+
+pkgname = hello-rhino-git
+---
 pkgbase = hello
 	pkgver = 2.12.1
 	pkgdesc = GNU implementation of the classic program that prints 'Hello, world!' when you run it
@@ -4951,10 +5082,10 @@ pkgname = internxt-deb
 pkgbase = it87-dkms-git
 	gives = it87
 	pkgver = 152
+	pkgrel = 2
 	pkgdesc = Linux Driver for ITE LPC chips
 	url = https://github.com/frankcrawford/it87
 	arch = x86_64
-	arch = i686
 	depends = dkms
 	makedepends = git
 	provides = it87
@@ -5719,21 +5850,18 @@ pkgbase = libgbinder-deb
 	pkgdesc = Binder client library
 	arch = amd64
 	arch = arm64
-	depends = libc6
-	depends = libglib2.0-0t64
 	pacdeps = libglibutil-deb
 	replaces = libgbinder
-	incompatible = debian:bookworm
-	incompatible = debian:bullseye
-	incompatible = debian:buster
-	incompatible = ubuntu:jammy
-	incompatible = ubuntu:focal
+	compatible = ubuntu:noble
+	compatible = ubuntu:devel
+	compatible = debian:13
+	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libgbinder
-	source_amd64 = https://repo.waydro.id/dists/noble/libgbinder_1.1.25_amd64.deb
-	sha256sums_amd64 = f70778a67b23d0564f9b69bb3924830efdce19abdc5370d96177fe8f6c9e9a15
-	source_arm64 = https://repo.waydro.id/dists/noble/libgbinder_1.1.25_arm64.deb
-	sha256sums_arm64 = 307667d0257daacdbc9bd64d59ae8f74c19636a10e38536f6f9f7cf385d42f92
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libgbinder_1.1.25_amd64.deb
+	sha256sums_amd64 = 3d3c4d7075072c7dbe008db47d641b0269a8dea16247f77deb64c4ce2f920978
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libgbinder_1.1.25_arm64.deb
+	sha256sums_arm64 = 82a7313d4e63439a9caf0f3dfbfa1ed8ae75468b4fe23250dbbc2d9559232400
 
 pkgname = libgbinder-deb
 ---
@@ -5762,20 +5890,17 @@ pkgbase = libglibutil-deb
 	pkgdesc = Library of glib utilities
 	arch = amd64
 	arch = arm64
-	depends = libc6
-	depends = libglib2.0-0t64
 	replaces = libglibutil
-	incompatible = debian:bookworm
-	incompatible = debian:bullseye
-	incompatible = debian:buster
-	incompatible = ubuntu:jammy
-	incompatible = ubuntu:focal
+	compatible = ubuntu:noble
+	compatible = ubuntu:devel
+	compatible = debian:13
+	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libglibutil
-	source_amd64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_amd64.deb
-	sha256sums_amd64 = 5d4fab27f76a5fe5bba6d156359849a6e0bec239315d7b5753b67bc8e8713386
-	source_arm64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_arm64.deb
-	sha256sums_arm64 = 590ebb10c61e89b4b8708d7fe59a99f0cc3eb1dcb67fd2bf65b03598fcd54194
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libglibutil_1.0.66_amd64.deb
+	sha256sums_amd64 = e31c4515d5f7cf5336ff08b9b12ef261ac38700a3c06ea08d7296579f381921d
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libglibutil_1.0.66_arm64.deb
+	sha256sums_arm64 = f1cae9ea551e2050fa3a5373ebdb372305b54ae4c519f4a40ee05ac748211f96
 
 pkgname = libglibutil-deb
 ---
@@ -6490,6 +6615,73 @@ pkgbase = lutris-deb
 	sha256sums = 883e3c2701fb5c86ed2b358ca66a68382060efb5b665711a238a48a1e7b0fa75
 
 pkgname = lutris-deb
+---
+pkgbase = lutris-git
+	gives = lutris
+	pkgver = 0.5.18
+	pkgdesc = Open Gaming Platform
+	url = https://lutris.net
+	arch = any
+	depends = cabextract
+	depends = curl
+	depends = libglib2.0-0
+	depends = libgtk-3-0
+	depends = hicolor-icon-theme
+	depends = mesa-utils
+	depends = p7zip
+	depends = psmisc
+	depends = qdbus-qt5
+	depends = unzip
+	depends = xdg-desktop-portal
+	depends = xdg-utils
+	depends = python3-cairo
+	depends = python3-certifi
+	depends = python3-dbus
+	depends = python3-distro
+	depends = python3-gi-cairo
+	depends = python3-gi
+	depends = python3-lxml
+	depends = python3-pillow
+	depends = python3-requests
+	depends = python3-yaml
+	depends = libxrandr2
+	depends = libgtk-3-dev
+	depends = libmagick++-dev
+	depends = libwebkit2gtk-4.1-0
+	depends = libwebkit2gtk-4.1-dev
+	makedepends = git
+	makedepends = meson
+	makedepends = gettext
+	makedepends = desktop-file-utils
+	makedepends = appstream-util
+	checkdepends = libappstream-glib-dev
+	optdepends = fluidsynth: For games that have MIDI music
+	optdepends = gamemode: Allows games to request a temporary set of optimisations
+	optdepends = gvfs: GVFS backend
+	optdepends = innoextract: Extract Inno Setup installers
+	optdepends = mesa-vulkan-drivers: Vulkan support
+	optdepends = mangohud: Display the games FPS + other information
+	optdepends = python3-evdev: Controller support
+	optdepends = python3-pefile: Extract icons from Windows executables
+	optdepends = python3-protobuf: BattleNet integration
+	optdepends = libvkd3d1: DirectX 12 support
+	optdepends = vulkan-icd: Vulkan support
+	optdepends = vulkan-tools: Vulkan support
+	optdepends = wine: easiest way to get all the libraries missing from the Lutris runtime
+	optdepends = winetricks: use system winetricks
+	optdepends = mangohud:i386: Display the games FPS + other information
+	optdepends = libvkd3d1:i386: DirectX 12 support
+	optdepends = mesa-vulkan-drivers:i386: lib32 Vulkan support
+	pacdeps = python3-moddb
+	replaces = lutris-deb
+	replaces = lutris
+	provides = lutris-git
+	license = GPL-3.0-or-later
+	maintainer = xdavius <xdavius@github.com>
+	source = git+https://github.com/lutris/lutris.git
+	sha256sums = SKIP
+
+pkgname = lutris-git
 ---
 pkgbase = lyrebird-git
 	gives = lyrebird
@@ -8342,6 +8534,21 @@ pkgbase = nushell-bin
 
 pkgname = nushell-bin
 ---
+pkgbase = nutext-git
+	gives = nutext
+	pkgver = 0.2.3
+	pkgdesc = Another translaton plugin for nushell.
+	url = https://github.com/Elsie19/nu_plugin_nutext
+	arch = amd64
+	arch = arm64
+	makedepends = cargo>=1.80.0
+	pacdeps = nushell-bin
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: nutext
+	source = nutext::https://github.com/Elsie19/nu_plugin_nutext.git
+
+pkgname = nutext-git
+---
 pkgbase = obquit-git
 	gives = obquit
 	pkgver = 0.0.1
@@ -8928,7 +9135,7 @@ pkgbase = pacstall-qa-git
 pkgname = pacstall-qa-git
 ---
 pkgbase = pacstall
-	pkgver = 6.0.2
+	pkgver = 6.1.0
 	pkgdesc = An AUR-inspired package manager for Ubuntu Pacstall is the AUR Ubuntu wishes it had. It takes the concept of the AUR and puts a spin on it, making it easier to install and update downstream programs, without scouring github repos and the likes.
 	url = https://pacstall.dev
 	arch = all
@@ -8959,13 +9166,13 @@ pkgbase = pacstall
 	backup = usr/share/pacstall/update
 	maintainer = Pacstall Team <pacstall@pm.me>
 	maintainer = Elsie19 <hwengerstickel@pm.me>
-	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.0.2.zip
+	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.1.0.zip
 
 pkgname = pacstall
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.7
+	pkgver = 3.3.8
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -8986,7 +9193,7 @@ pkgbase = pacup-git
 pkgname = pacup-git
 ---
 pkgbase = pacup
-	pkgver = 3.3.7
+	pkgver = 3.3.8
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -9002,8 +9209,8 @@ pkgbase = pacup
 	replaces = pacup-bin
 	replaces = pacup-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.7.tar.gz
-	sha256sums = 21ad7741f99bc468ccc5329df31076fd4150083ec7d05629ded079f7e9f71179
+	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.8.tar.gz
+	sha256sums = 1cec3656b9a3e94f770feef0561ed9b20dfe33f0ec8a449d711a0fc74118173a
 
 pkgname = pacup
 ---
@@ -9088,6 +9295,18 @@ pkgbase = pb-git
 	source = https://git.envs.net/envs/pb.git
 
 pkgname = pb-git
+---
+pkgbase = pcsx2-app
+	gives = pcsx2
+	pkgver = 2.2.0
+	pkgdesc = PCSX2 is an open source PlayStation 2 Emulator
+	url = https://pcsx2.net
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source = https://github.com/PCSX2/pcsx2/releases/download/v2.2.0/pcsx2-v2.2.0-linux-appimage-x64-Qt.AppImage
+	sha256sums = 188cd6a7db7dab8dd509b744f5f02f7dc5746f9d637303b08063f46a779967ab
+
+pkgname = pcsx2-app
 ---
 pkgbase = pdf-mix-tool-git
 	gives = pdf-mix-tool
@@ -9696,6 +9915,23 @@ pkgbase = python3-anyascii
 
 pkgname = python3-anyascii
 ---
+pkgbase = python3-editables
+	pkgver = 0.5
+	pkgdesc = Python library for creating editable wheels
+	url = https://github.com/pfmoore/editables
+	arch = any
+	depends = python3
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-flit-scm
+	license = MIT
+	maintainer = xdavius <xdavius@github.com>
+	source = python3-editables::git+https://github.com/pfmoore/editables#commit=2331418af764ef203959327354335c431978e70d
+	sha256sums = SKIP
+
+pkgname = python3-editables
+---
 pkgbase = python3-flit-core
 	pkgver = 3.9.0
 	pkgdesc = A PEP 517 build backend for packages using Flit
@@ -9737,21 +9973,18 @@ pkgbase = python3-gbinder-deb
 	pkgdesc = Cython extension module for C++ gbinder functions
 	arch = amd64
 	arch = arm64
-	depends = libc6
-	depends = python3
 	pacdeps = libgbinder-deb
 	replaces = python3-gbinder
-	incompatible = debian:bookworm
-	incompatible = debian:bullseye
-	incompatible = debian:buster
-	incompatible = ubuntu:jammy
-	incompatible = ubuntu:focal
+	compatible = ubuntu:noble
+	compatible = ubuntu:devel
+	compatible = debian:13
+	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: python3-gbinder
-	source_amd64 = https://repo.waydro.id/dists/noble/python3-gbinder_1.1.2_amd64.deb
-	sha256sums_amd64 = 57999db9650c22a1dad96e6e1ea3d698a383e2279bdbc581ec13491510373ae3
-	source_arm64 = https://repo.waydro.id/dists/noble/python3-gbinder_1.1.2_arm64.deb
-	sha256sums_arm64 = 7292f132dc892f2ba447fe39f0b7b461f58f04029343eb0d8b382900b79427a6
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/python3-gbinder_1.1.2_amd64.deb
+	sha256sums_amd64 = c30aa2565cdc031c3b20a8612ef0ab94e40e2d5b2677de382e48a373b1960f5a
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/python3-gbinder_1.1.2_arm64.deb
+	sha256sums_arm64 = 8ee6120b5f51f2853207885b4d9542034e9381263c803deaf4cfc6c1b410c8e2
 
 pkgname = python3-gbinder-deb
 ---
@@ -9838,6 +10071,32 @@ pkgbase = python3-pypresence
 	sha256sums = 958a5bb2f28c3120c89c68cc242abd8e72e2dac9aaf9be36b7c7a6217dcf4669
 
 pkgname = python3-pypresence
+---
+pkgbase = python3-sphinx-hawkmoth
+	gives = python3-sphinx-hawkmoth
+	pkgver = 0.19.0
+	pkgrel = 2
+	pkgdesc = Sphinx autodoc C extension
+	url = https://github.com/jnikula/hawkmoth
+	arch = any
+	depends = clang
+	depends = python3
+	depends = python3-docutils
+	depends = python3-sphinx
+	depends = python3-clang
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-hatchling
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	pacdeps = python3-editables
+	license = BSD-2-Clause
+	maintainer = xdavius <xdavius@github.com>
+	source = python3-sphinx-hawkmoth::https://github.com/jnikula/hawkmoth/archive/refs/tags/v0.19.0.tar.gz
+	sha256sums = 998b1d031383b8993b20622f851b88e787a71c0ece41f86d996c1402a3ef42ae
+
+pkgname = python3-sphinx-hawkmoth
 ---
 pkgbase = python3-vkbasalt-cli
 	pkgver = 3.1.1
@@ -10174,8 +10433,8 @@ pkgbase = resticprofile-bin
 pkgname = resticprofile-bin
 ---
 pkgbase = rhino-core
-	pkgver = 2024.2
-	pkgrel = 2
+	pkgver = 2025.1~RC
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
 	arch = all
@@ -10253,8 +10512,8 @@ pkgbase = rhino-neofetch-git
 pkgname = rhino-neofetch-git
 ---
 pkgbase = rhino-pine-core
-	pkgver = 2024.2
-	pkgrel = 3
+	pkgver = 2025.1~RC
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
 	arch = all
@@ -10303,8 +10562,8 @@ pkgbase = rhino-plymouth-theme-git
 pkgname = rhino-plymouth-theme-git
 ---
 pkgbase = rhino-server-core
-	pkgver = 2024.2
-	pkgrel = 2
+	pkgver = 2025.1~RC
+	pkgrel = 1
 	pkgdesc = Transitional package to provide minimal core Rhino Linux software
 	priority = essential
 	arch = all
@@ -10422,8 +10681,8 @@ pkgbase = rhino-system-git
 pkgname = rhino-system-git
 ---
 pkgbase = rhino-ubxi-core
-	pkgver = 2024.2
-	pkgrel = 2
+	pkgver = 2025.1~RC
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 	priority = essential
 	arch = all
@@ -10455,6 +10714,21 @@ pkgbase = rhino-xfwm4-theme-git
 	source = https://github.com/rhino-linux/rhino-xfwm4-theme.git
 
 pkgname = rhino-xfwm4-theme-git
+---
+pkgbase = rider-bin
+	gives = rider
+	pkgver = 2024.3.3
+	pkgdesc = The world's most loved .NET and game dev IDE
+	arch = amd64
+	arch = arm64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: rider
+	source_amd64 = https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.3.3.tar.gz
+	sha256sums_amd64 = 3185826c0d85c06bf18c5ece3f5f9698acef006932b7a92b6cb190fd4d8e2807
+	source_arm64 = https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.3.3-aarch64.tar.gz
+	sha256sums_arm64 = 8ca14eeae6a9164da955f9e292dda788bda53a031c24ef6c2fab505e3e2f175b
+
+pkgname = rider-bin
 ---
 pkgbase = rio-wayland-deb
 	gives = rio
@@ -10513,13 +10787,18 @@ pkgname = rosary-deb
 ---
 pkgbase = rpcs3-app
 	gives = rpcs3
-	pkgver = 0.0.29-15709
+	pkgver = 0.0.34-17339
 	pkgdesc = PS3 emulator/debugger
 	url = https://rpcs3.net
 	arch = amd64
+	arch = arm64
 	maintainer = Thomas Crha <thomas@9bitbyte.com>
-	source = https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-3c93509471f5f2f9d473a4c11682ef83366349d2/rpcs3-v0.0.29-15709-3c935094_linux64.AppImage
-	sha256sums = 470a2998e2f8e545aa3975043983794dcd1a1f07464899b156c9cb32b2dfe2b2
+	source = https://rpcs3.net/cdn/branding/core-color-png.png
+	sha256sums = SKIP
+	source_amd64 = https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-1b87e186c45a21de83e9fdc859af3e0c92ae8509/rpcs3-v0.0.34-17339-1b87e186_linux64.AppImage
+	sha256sums_amd64 = 991a851a84e302a5a898f88a160fcf45e3b49d4dd6c26d2b174ad7ed4b38260a
+	source_arm64 = https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-1b87e186c45a21de83e9fdc859af3e0c92ae8509/rpcs3-v0.0.34-17339-1b87e186_linux_aarch64.AppImage
+	sha256sums_arm64 = b3cb4aa87b0b44cd170410681e7ca987a09c455690efbf39dc4f8e9b35eff3fe
 
 pkgname = rpcs3-app
 ---
@@ -10667,6 +10946,21 @@ pkgbase = rustdesk-deb
 	sha256sums_armhf = e2131a01fcfd5c6508759adb5811aa33fb4b363e4c390d4610b80ae11d2f78f3
 
 pkgname = rustdesk-deb
+---
+pkgbase = rustrover-bin
+	gives = rustrover
+	pkgver = 2024.3.2
+	pkgdesc = A powerhouse IDE for Rust developers
+	arch = amd64
+	arch = arm64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: rustrover
+	source_amd64 = https://download.jetbrains.com/rustrover/RustRover-2024.3.2.tar.gz
+	sha256sums_amd64 = c6549572baa913c9842b0227257f7477531269393d5989622a3d0b802b999bf8
+	source_arm64 = https://download.jetbrains.com/rustrover/RustRover-2024.3.2-aarch64.tar.gz
+	sha256sums_arm64 = d5187d7d449d1b1ec6ff2699c0ccdb3c3280841360d3f43c0318a41b865064c8
+
+pkgname = rustrover-bin
 ---
 pkgbase = schildichat-deb
 	gives = schildichat-desktop
@@ -11797,18 +12091,29 @@ pkgbase = the-honkers-railway-launcher-bin
 
 pkgname = the-honkers-railway-launcher-bin
 ---
-pkgbase = thorium-deb
+pkgbase = thorium-arm64-deb
 	gives = thorium-browser
-	pkgver = 124.0.6367.218
+	pkgver = 128.0.6613.194
 	pkgdesc = Chromium fork for linux with extra patches
 	arch = arm64
-	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: thorium-browser
-	source_arm64 = https://github.com/Alex313031/Thorium-Raspi/releases/download/M124.0.6367.218/thorium-browser_124.0.6367.218_arm64.deb
-	sha256sums_arm64 = a9eb0bd82f72df902d9085a28b59838d46eda3735e0b5d597faed24fd139a30a
-	source_amd64 = https://github.com/Alex313031/thorium/releases/download/M124.0.6367.218/thorium-browser_124.0.6367.218_SSE3.deb
-	sha256sums_amd64 = 5917f059c3329b430fbefdd34ec66054b4181a745d8350e4cfe66edc3f7b1e30
+	source = https://github.com/Alex313031/Thorium-Raspi/releases/download/M128.0.6613.194/thorium-browser_128.0.6613.194_arm64.deb
+	sha256sums = 60880b152802e1ed0460ca2ea129982db4affc78daf033218b3de9c87d56c336
+
+pkgname = thorium-arm64-deb
+---
+pkgbase = thorium-deb
+	gives = thorium-browser
+	pkgver = 128.0.6613.189
+	pkgdesc = Chromium fork for linux with extra patches
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: thorium-browser
+	source = https://github.com/Alex313031/thorium/releases/download/M128.0.6613.189/thorium-browser_128.0.6613.189_SSE3.deb
+	sha256sums = 83ea4d4d5590ef6ca0ba90f0b77053ad5c18d69a0ec8780d27f472ae7478fa07
 
 pkgname = thorium-deb
 ---
@@ -11835,6 +12140,19 @@ pkgbase = thunderbird-bin
 	sha256sums = e48c8d10752b228bde7944ae82b91ea282b0fbdadbb1b64eac556ef3aaf9ee49
 
 pkgname = thunderbird-bin
+---
+pkgbase = thunderbird-esr-bin
+	gives = thunderbird-esr
+	pkgver = 128.6.0esr
+	pkgdesc = Standalone Mail/News reader - binary version (ESR)
+	url = https://www.thunderbird.net/en-US/
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: thunderbird-esr
+	source = https://archive.mozilla.org/pub/thunderbird/releases/128.6.0esr/linux-x86_64/en-US/thunderbird-128.6.0esr.tar.bz2
+	sha256sums = f8e7fdd9a29a196be4e3af54760ad6987d40180644bae4afb68bbf63f931f2b8
+
+pkgname = thunderbird-esr-bin
 ---
 pkgbase = ticktick-deb
 	gives = ticktick
@@ -12370,7 +12688,7 @@ pkgname = unicons-git
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
-	pkgrel = 9
+	pkgrel = 10
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
 	arch = amd64
@@ -12434,7 +12752,7 @@ pkgname = unicorn-desktop-git
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
 	pkgver = 0.0.1
-	pkgrel = 7
+	pkgrel = 8
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
 	arch = all
@@ -12976,15 +13294,14 @@ pkgbase = waydroid-deb
 	depends = python3-pyclipper
 	pacdeps = python3-gbinder-deb
 	replaces = waydroid
-	incompatible = debian:bookworm
-	incompatible = debian:bullseye
-	incompatible = debian:buster
-	incompatible = ubuntu:jammy
-	incompatible = ubuntu:focal
+	compatible = ubuntu:noble
+	compatible = ubuntu:devel
+	compatible = debian:13
+	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: waydroid
-	source = https://repo.waydro.id/dists/noble/waydroid_1.4.3_all.deb
-	sha256sums = acc4832ed37e7a7d95526227b294a3357145e459a13e4754e6e63f9bd0245e70
+	source = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/waydroid_1.4.3_all.deb
+	sha256sums = 19639f5954accc8ee740b530825053b51e4958e37b8b5157925f4ce334004ff5
 
 pkgname = waydroid-deb
 ---
@@ -13912,7 +14229,7 @@ pkgbase = zed-editor-stable-bin
 pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-aarch64-bin
-	pkgver = 1.0.2-b.5
+	pkgver = 1.6b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -13927,7 +14244,7 @@ pkgname = zen-browser-aarch64-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.0.2-b.5
+	pkgver = 1.6b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -13963,8 +14280,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = zen-browser-1.0.2-b.5.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.5/zen.linux-x86_64.tar.bz2
-	sha256sums_amd64 = 2b7cd308b76f83f55840db1f7a8870eb91a193c1408e13a5f215d4e9110ee3fb
+	source_amd64 = zen-browser-1.6b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.6b/zen.linux-x86_64.tar.bz2
+	sha256sums_amd64 = 0afad530028ea1742003ee2e038c88930a241dfe2a04c374b28c8f0ba1ef1b22
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -13974,13 +14291,13 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = zen-browser-1.0.2-b.5.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.0.2-b.5/zen.linux-aarch64.tar.bz2
-	sha256sums_arm64 = 370218ca519a9764285a158ab4c84c90000943a88d1df40e0596b14d782fc409
+	source_arm64 = zen-browser-1.6b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.6b/zen.linux-aarch64.tar.bz2
+	sha256sums_arm64 = 2045cc4d80f0ff4c7996fdacd00d1363d6b6a1ff49e3c080b1dd80fff8138631
 
 pkgname = zen-browser-bin
 ---
 pkgbase = zen-browser-generic-bin
-	pkgver = 1.0.2-b.5
+	pkgver = 1.6b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -13994,7 +14311,7 @@ pkgbase = zen-browser-generic-bin
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
-	pkgver = 1.0.2-b.5
+	pkgver = 1.6b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
