@@ -2,13 +2,12 @@ pkgname="rpcs3-app"
 gives="rpcs3"
 arch=("amd64" "arm64")
 pkgver="0.0.34-17339"
-pkgsha_amd64="1b87e186c45a21de83e9fdc859af3e0c92ae8509"
-pkgsha_arm64="1b87e186c45a21de83e9fdc859af3e0c92ae8509"
+pkgsha="1b87e186c45a21de83e9fdc859af3e0c92ae8509"
 source=(
   "https://rpcs3.net/cdn/branding/core-color-png.png"
 )
-source_amd64=("https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-${pkgsha_amd64}/rpcs3-v${pkgver}-${pkgsha_amd64:0:8}_linux64.AppImage")
-source_arm64=("https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-${pkgsha_arm64}/rpcs3-v${pkgver}-${pkgsha_arm64:0:8}_linux_aarch64.AppImage")
+source_amd64=("https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-${pkgsha}/rpcs3-v${pkgver}-${pkgsha:0:8}_linux64.AppImage")
+source_arm64=("https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-${pkgsha}/rpcs3-v${pkgver}-${pkgsha:0:8}_linux_aarch64.AppImage")
 url="https://rpcs3.net"
 pkgdesc="PS3 emulator/debugger"
 maintainer=("Thomas Crha <thomas@9bitbyte.com>")
@@ -22,9 +21,9 @@ prepare() {
 
 package() {
   if [[ ${CARCH} == "amd64" ]]; then
-    install -Dm755 "rpcs3-v${pkgver}-${pkgsha_amd64:0:8}_linux64.AppImage" "${pkgdir}/usr/bin/rpcs3"
+    install -Dm755 "rpcs3-v${pkgver}-${pkgsha:0:8}_linux64.AppImage" "${pkgdir}/usr/bin/rpcs3"
   else
-    install -Dm755 "rpcs3-v${pkgver}-${pkgsha_arm64:0:8}_linux_aarch64.AppImage" "${pkgdir}/usr/bin/rpcs3"
+    install -Dm755 "rpcs3-v${pkgver}-${pkgsha:0:8}_linux_aarch64.AppImage" "${pkgdir}/usr/bin/rpcs3"
   fi
 
   install -Dm644 "core-color-png.png" "${pkgdir}/usr/share/pixmaps/${gives}.png"
