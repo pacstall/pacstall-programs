@@ -14,6 +14,7 @@ pkgbase = lenovolegionlinux-git
 	makedepends = python3-setuptools
 	makedepends = python3-wheel
 	makedepends = libinih-dev
+	pacdeps = python3-darkdetect
 	replaces = lenovolegionlinux
 	license = GPL-2.0-only
 	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>

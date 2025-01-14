@@ -8,6 +8,7 @@ pkgbase = lenovolegionlinux-dkms-git
 	makedepends = lm-sensors
 	makedepends = i2c-tools
 	makedepends = dmidecode
+	pacdeps = lenovolegionlinux-git
 	replaces = lenovolegionlinux-dkms
 	license = GPL-2.0-only
 	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>

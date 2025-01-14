@@ -5640,6 +5640,7 @@ pkgbase = lenovolegionlinux-dkms-git
 	makedepends = lm-sensors
 	makedepends = i2c-tools
 	makedepends = dmidecode
+	pacdeps = lenovolegionlinux-git
 	replaces = lenovolegionlinux-dkms
 	license = GPL-2.0-only
 	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
@@ -5664,15 +5665,14 @@ pkgbase = lenovolegionlinux-git
 	makedepends = python3-setuptools
 	makedepends = python3-wheel
 	makedepends = libinih-dev
+	pacdeps = python3-darkdetect
 	replaces = lenovolegionlinux
 	license = GPL-2.0-only
 	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
 	source = lenovolegionlinux::git+https://github.com/johnfanv2/LenovoLegionLinux
 	source = https://raw.githubusercontent.com/benhoyt/inih/refs/tags/r58/ini.c
-	source = Makefile-debian
 	sha256sums = SKIP
 	sha256sums = 217fa78f0380669c91a565f3e414d0a8be0f7a7fdfd1e3839f213e86aa574a95
-	sha256sums = e4452e50cabfd488e5b04af627187bae184ce72489a6785591c1b66710af7333
 
 pkgname = lenovolegionlinux-git
 ---
@@ -9415,6 +9415,41 @@ pkgbase = python3-anyascii
 	b2sums = 9b9440d26872404487ff791dda5e7695f5f8504743d750c89b80d2a77595decfb2f1389b6636af8723a358b0e56988f074acb403d7860539c522cfa4b5b3f06a
 
 pkgname = python3-anyascii
+---
+pkgbase = python3-darkdetect
+	pkgver = 0.8.0
+	pkgdesc = Detect OS Dark Mode from Python
+	url = https://github.com/albertosottile/darkdetect
+	arch = any
+	depends = python3
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-wheel
+	makedepends = python3-setuptools
+	license = BSD-1-Clause
+	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
+	source = https://github.com/albertosottile/darkdetect/archive/refs/tags/v0.8.0.tar.gz
+	sha256sums = 100eea1a610bb19610a68b11ff468c13b1c2863d1254c2d5b37d198a1beb3227
+
+pkgname = python3-darkdetect
+---
+pkgbase = python3-editables
+	pkgver = 0.5
+	pkgdesc = Python library for creating editable wheels
+	url = https://github.com/pfmoore/editables
+	arch = any
+	depends = python3
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-flit-scm
+	license = MIT
+	maintainer = xdavius <xdavius@github.com>
+	source = python3-editables::git+https://github.com/pfmoore/editables#commit=2331418af764ef203959327354335c431978e70d
+	sha256sums = SKIP
+
+pkgname = python3-editables
 ---
 pkgbase = python3-flit-core
 	pkgver = 3.9.0
