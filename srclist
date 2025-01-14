@@ -1189,6 +1189,18 @@ pkgbase = caprine-deb
 
 pkgname = caprine-deb
 ---
+pkgbase = capsfix-git
+	gives = capsfix
+	pkgver = 0.0.1
+	pkgdesc = Fix the nuisance of Caps Lock disable not toggling until key release
+	arch = all
+	depends = perl
+	depends = x11-xkb-utils
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/oklopfer/capsfix.git
+
+pkgname = capsfix-git
+---
 pkgbase = cbindgen
 	pkgver = 0.27.0
 	pkgdesc = A tool for generating C bindings to Rust code
@@ -1881,7 +1893,7 @@ pkgbase = discord-canary-deb
 pkgname = discord-canary-deb
 ---
 pkgbase = discord-canary
-	pkgver = 0.0.558
+	pkgver = 0.0.559
 	pkgdesc = Chat for Communities and Friends - Unstable
 	url = https://discord.com/
 	arch = amd64
@@ -1903,8 +1915,8 @@ pkgbase = discord-canary
 	depends = libgbm1
 	maintainer = DismissedGuy <me@mikealmel.ooo>
 	repology = project: discord-canary
-	source = @discord-canary~0.0.558::https://dl-canary.discordapp.net/apps/linux/0.0.558/discord-canary-0.0.558.tar.gz
-	sha256sums = a086a3eb141f573f78b93b32f5762b39465e337decfceab3d205a871c74f9a8c
+	source = @discord-canary~0.0.559::https://dl-canary.discordapp.net/apps/linux/0.0.559/discord-canary-0.0.559.tar.gz
+	sha256sums = bc90f8942b1df7ee03c8a64ceab9caebec983f6fbfae47f743732c98a40934c6
 
 pkgname = discord-canary
 ---
@@ -4451,9 +4463,11 @@ pkgname = helix
 pkgbase = hello-rhino-bin
 	gives = hello-rhino
 	pkgver = 2025.1-1
+	pkgrel = 2
 	pkgdesc = Rhino Linux Welcome Screen
 	arch = arm64
 	arch = amd64
+	depends = libssl-dev
 	depends = gettext
 	replaces = hello-rhino
 	replaces = hello-rhino-git
@@ -4468,9 +4482,11 @@ pkgname = hello-rhino-bin
 pkgbase = hello-rhino-git
 	gives = hello-rhino
 	pkgver = 2025.1-1
+	pkgrel = 2
 	pkgdesc = Greeter application for Rhino Linux
 	arch = any
 	depends = libssl-dev
+	depends = gettext
 	makedepends = cargo>=1.80.0
 	makedepends = meson
 	makedepends = ninja-build
@@ -5799,21 +5815,18 @@ pkgbase = libgbinder-deb
 	pkgdesc = Binder client library
 	arch = amd64
 	arch = arm64
-	depends = libc6
-	depends = libglib2.0-0t64
 	pacdeps = libglibutil-deb
 	replaces = libgbinder
-	incompatible = debian:bookworm
-	incompatible = debian:bullseye
-	incompatible = debian:buster
-	incompatible = ubuntu:jammy
-	incompatible = ubuntu:focal
+	compatible = ubuntu:noble
+	compatible = ubuntu:devel
+	compatible = debian:13
+	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libgbinder
-	source_amd64 = https://repo.waydro.id/dists/noble/libgbinder_1.1.25_amd64.deb
-	sha256sums_amd64 = f70778a67b23d0564f9b69bb3924830efdce19abdc5370d96177fe8f6c9e9a15
-	source_arm64 = https://repo.waydro.id/dists/noble/libgbinder_1.1.25_arm64.deb
-	sha256sums_arm64 = 307667d0257daacdbc9bd64d59ae8f74c19636a10e38536f6f9f7cf385d42f92
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libgbinder_1.1.25_amd64.deb
+	sha256sums_amd64 = 3d3c4d7075072c7dbe008db47d641b0269a8dea16247f77deb64c4ce2f920978
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libgbinder_1.1.25_arm64.deb
+	sha256sums_arm64 = 82a7313d4e63439a9caf0f3dfbfa1ed8ae75468b4fe23250dbbc2d9559232400
 
 pkgname = libgbinder-deb
 ---
@@ -5842,20 +5855,17 @@ pkgbase = libglibutil-deb
 	pkgdesc = Library of glib utilities
 	arch = amd64
 	arch = arm64
-	depends = libc6
-	depends = libglib2.0-0t64
 	replaces = libglibutil
-	incompatible = debian:bookworm
-	incompatible = debian:bullseye
-	incompatible = debian:buster
-	incompatible = ubuntu:jammy
-	incompatible = ubuntu:focal
+	compatible = ubuntu:noble
+	compatible = ubuntu:devel
+	compatible = debian:13
+	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libglibutil
-	source_amd64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_amd64.deb
-	sha256sums_amd64 = 5d4fab27f76a5fe5bba6d156359849a6e0bec239315d7b5753b67bc8e8713386
-	source_arm64 = https://repo.waydro.id/dists/noble/libglibutil_1.0.66_arm64.deb
-	sha256sums_arm64 = 590ebb10c61e89b4b8708d7fe59a99f0cc3eb1dcb67fd2bf65b03598fcd54194
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libglibutil_1.0.66_amd64.deb
+	sha256sums_amd64 = e31c4515d5f7cf5336ff08b9b12ef261ac38700a3c06ea08d7296579f381921d
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libglibutil_1.0.66_arm64.deb
+	sha256sums_arm64 = f1cae9ea551e2050fa3a5373ebdb372305b54ae4c519f4a40ee05ac748211f96
 
 pkgname = libglibutil-deb
 ---
@@ -8582,7 +8592,7 @@ pkgname = pacstall
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.7
+	pkgver = 3.3.8
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -8603,7 +8613,7 @@ pkgbase = pacup-git
 pkgname = pacup-git
 ---
 pkgbase = pacup
-	pkgver = 3.3.7
+	pkgver = 3.3.8
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -8619,8 +8629,8 @@ pkgbase = pacup
 	replaces = pacup-bin
 	replaces = pacup-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.7.tar.gz
-	sha256sums = 21ad7741f99bc468ccc5329df31076fd4150083ec7d05629ded079f7e9f71179
+	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.8.tar.gz
+	sha256sums = 1cec3656b9a3e94f770feef0561ed9b20dfe33f0ec8a449d711a0fc74118173a
 
 pkgname = pacup
 ---
@@ -9383,21 +9393,18 @@ pkgbase = python3-gbinder-deb
 	pkgdesc = Cython extension module for C++ gbinder functions
 	arch = amd64
 	arch = arm64
-	depends = libc6
-	depends = python3
 	pacdeps = libgbinder-deb
 	replaces = python3-gbinder
-	incompatible = debian:bookworm
-	incompatible = debian:bullseye
-	incompatible = debian:buster
-	incompatible = ubuntu:jammy
-	incompatible = ubuntu:focal
+	compatible = ubuntu:noble
+	compatible = ubuntu:devel
+	compatible = debian:13
+	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: python3-gbinder
-	source_amd64 = https://repo.waydro.id/dists/noble/python3-gbinder_1.1.2_amd64.deb
-	sha256sums_amd64 = 57999db9650c22a1dad96e6e1ea3d698a383e2279bdbc581ec13491510373ae3
-	source_arm64 = https://repo.waydro.id/dists/noble/python3-gbinder_1.1.2_arm64.deb
-	sha256sums_arm64 = 7292f132dc892f2ba447fe39f0b7b461f58f04029343eb0d8b382900b79427a6
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/python3-gbinder_1.1.2_amd64.deb
+	sha256sums_amd64 = c30aa2565cdc031c3b20a8612ef0ab94e40e2d5b2677de382e48a373b1960f5a
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/python3-gbinder_1.1.2_arm64.deb
+	sha256sums_arm64 = 8ee6120b5f51f2853207885b4d9542034e9381263c803deaf4cfc6c1b410c8e2
 
 pkgname = python3-gbinder-deb
 ---
@@ -10101,6 +10108,21 @@ pkgbase = rhino-xfwm4-theme-git
 	source = https://github.com/rhino-linux/rhino-xfwm4-theme.git
 
 pkgname = rhino-xfwm4-theme-git
+---
+pkgbase = rider-bin
+	gives = rider
+	pkgver = 2024.3.3
+	pkgdesc = The world's most loved .NET and game dev IDE
+	arch = amd64
+	arch = arm64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: rider
+	source_amd64 = https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.3.3.tar.gz
+	sha256sums_amd64 = 3185826c0d85c06bf18c5ece3f5f9698acef006932b7a92b6cb190fd4d8e2807
+	source_arm64 = https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.3.3-aarch64.tar.gz
+	sha256sums_arm64 = 8ca14eeae6a9164da955f9e292dda788bda53a031c24ef6c2fab505e3e2f175b
+
+pkgname = rider-bin
 ---
 pkgbase = rio-wayland-deb
 	gives = rio
@@ -12661,15 +12683,14 @@ pkgbase = waydroid-deb
 	depends = python3-pyclipper
 	pacdeps = python3-gbinder-deb
 	replaces = waydroid
-	incompatible = debian:bookworm
-	incompatible = debian:bullseye
-	incompatible = debian:buster
-	incompatible = ubuntu:jammy
-	incompatible = ubuntu:focal
+	compatible = ubuntu:noble
+	compatible = ubuntu:devel
+	compatible = debian:13
+	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: waydroid
-	source = https://repo.waydro.id/dists/noble/waydroid_1.4.3_all.deb
-	sha256sums = acc4832ed37e7a7d95526227b294a3357145e459a13e4754e6e63f9bd0245e70
+	source = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/waydroid_1.4.3_all.deb
+	sha256sums = 19639f5954accc8ee740b530825053b51e4958e37b8b5157925f4ce334004ff5
 
 pkgname = waydroid-deb
 ---

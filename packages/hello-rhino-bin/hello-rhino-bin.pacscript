@@ -1,9 +1,10 @@
 pkgname="hello-rhino-bin"
-depends=("gettext")
+depends=("libssl-dev" "gettext")
 gives="hello-rhino"
 pkgdesc="Rhino Linux Welcome Screen"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgver="2025.1-1"
+pkgrel="2"
 replaces=("${gives}" "${gives}-git")
 arch=('arm64' 'amd64')
 sha256sums_arm64=("b63080659292f31546c36c7aa0517a4c8862684f4737039f8c2cf0b0e8f732e9")
@@ -12,8 +13,10 @@ source=("https://github.com/rhino-linux/${gives}/releases/download/v${pkgver}/${
 
 package() {
   mkdir -p "${pkgdir}/usr"
+  mkdir -p "${pkgdir}/etc/skel/.config/autostart"
   chmod +x "usr/local/bin/${gives}"
   cp -rf usr/* "${pkgdir}/usr"
+  ln -sf "/usr/local/share/applications/hello-rhino.desktop" "${pkgdir}/etc/skel/.config/autostart/hello-rhino.desktop"
 }
 
 post_install() {
