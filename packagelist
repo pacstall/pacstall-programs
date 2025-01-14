@@ -470,6 +470,7 @@ python3-levenshtein-deb
 python3-material-color-utilities
 python3-moddb
 python3-pypresence
+python3-sphinx-hawkmoth
 python3-vkbasalt-cli
 python3-zombie-imp
 qogir-gtk-theme-bin
