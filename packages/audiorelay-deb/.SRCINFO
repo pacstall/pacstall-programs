@@ -1,0 +1,14 @@
+pkgbase = audiorelay-deb
+	gives = audiorelay
+	pkgver = 0.27.5
+	pkgdesc = Turn your phone into a microphone or speakers for PC
+	url = https://audiorelay.net/
+	arch = amd64
+	compatible = ubuntu:focal
+	compatible = ubuntu:jammy
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: audiorelay
+	source = https://dl.audiorelay.net/setups/linux/audiorelay-0.27.5.deb
+	sha256sums = b4b00d3ba21718df61021a67cb7b3eaab5dfaaa779bef7e3247054a079cd3dee
+
+pkgname = audiorelay-deb
