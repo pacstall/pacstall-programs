@@ -1,6 +1,6 @@
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.79
+	pkgver = 0.0.80
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -10,7 +10,7 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.79/discord-0.0.79.deb
-	sha256sums = 1f444886dcab633a3370fd991b381ab11f35b55d94fbf1bad518a9a50dca06e1
+	source = https://dl.discordapp.net/apps/linux/0.0.80/discord-0.0.80.deb
+	sha256sums = c3d2e26de2658345988c09a5646831d5b684433966dbfee61c96f48ebb698f94
 
 pkgname = discord-deb
