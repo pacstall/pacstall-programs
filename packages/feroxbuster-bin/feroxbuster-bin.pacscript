@@ -3,12 +3,13 @@ pkgname="feroxbuster-bin"
 gives="feroxbuster"
 depends=("fonts-noto-color-emoji")
 pkgver="2.10.0"
+pkgrel="2"
 pkgdesc="A fast, simple, recursive content discovery tool written in Rust"
 source=(
-  "@${pkgname}~${pkgver}::https://github.com/epi052/${gives}/releases/download/v${pkgver}/x86_64-linux-${gives}.tar.gz"
-  "${gives}.bash::https://raw.githubusercontent.com/epi052/${gives}/${pkgver}/shell_completions/${gives}.bash"
-  "_${gives}::https://raw.githubusercontent.com/epi052/${gives}/${pkgver}/shell_completions/_${gives}"
-  "${gives}.fish::https://raw.githubusercontent.com/epi052/${gives}/${pkgver}/shell_completions/${gives}.fish"
+  "https://github.com/epi052/${gives}/releases/download/v${pkgver}/x86_64-linux-${gives}.tar.gz"
+  "${gives}.bash::https://raw.githubusercontent.com/epi052/${gives}/v${pkgver}/shell_completions/${gives}.bash"
+  "_${gives}::https://raw.githubusercontent.com/epi052/${gives}/v${pkgver}/shell_completions/_${gives}"
+  "${gives}.fish::https://raw.githubusercontent.com/epi052/${gives}/v${pkgver}/shell_completions/${gives}.fish"
 )
 sha256sums=(
   "dc511b6b2da4462cacd8d8985b49620e29f431d97d45efc7d305c436d4603b13"
@@ -21,7 +22,6 @@ breaks=("${gives}" "${gives}-deb" "${gives}-git")
 repology=("project: ${gives}")
 
 package() {
-  cd "${pkgname}~${pkgver}"
   # Install bin
   install -Dm755 "${gives}" "${pkgdir}/usr/bin/${gives}"
 
