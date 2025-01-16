@@ -10760,6 +10760,20 @@ pkgbase = rio-x11-deb
 
 pkgname = rio-x11-deb
 ---
+pkgbase = rojo-bin
+	gives = rojo
+	pkgver = 7.4.4
+	pkgdesc = a tool designed to enable Roblox developers to use professional-grade software engineering tools
+	url = https://rojo.space
+	arch = amd64
+	conflicts = rojo-git
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: rojo
+	source = @::https://github.com/rojo-rbx/rojo/releases/download/v7.4.4/rojo-7.4.4-linux-x86_64.zip
+	sha256sums = 784e2cd42af3d565826c4910df94f45080fc7ed6206eb6808dbc79b516323652
+
+pkgname = rojo-bin
+---
 pkgbase = rosary-deb
 	gives = rosary
 	pkgver = 2.0.3
