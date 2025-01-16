@@ -1,13 +1,13 @@
 pkgbase = discord-canary-deb
 	gives = discord-canary
-	pkgver = 0.0.565
+	pkgver = 0.0.567
 	pkgdesc = Chat for Communities and Friends Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com
 	arch = amd64
 	conflicts = discord-canary
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: discord-canary
-	source = https://canary.dl2.discordapp.net/apps/linux/0.0.565/discord-canary-0.0.565.deb
-	sha256sums = f967f93ea64de43d95091d1de555581fdffd188773099808737a49a37cb2fd60
+	source = https://canary.dl2.discordapp.net/apps/linux/0.0.567/discord-canary-0.0.567.deb
+	sha256sums = 9a333e06564e84898cf64ca8c414921be32b47b5fb033842ced52d69f0e7c431
 
 pkgname = discord-canary-deb
