@@ -1,6 +1,7 @@
 pkgname="distrobox"
-arch=("amd64")
+arch=("any")
 pkgver="1.8.0"
+pkgrel="2"
 pkgdesc="Use any linux distribution inside your terminal"
 repology=("project: distrobox")
 source=("@${pkgname}~${pkgver}::https://github.com/89luca89/distrobox/archive/refs/tags/${pkgver}.tar.gz")
