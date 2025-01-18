@@ -10,7 +10,7 @@ source=(
 )
 sha256sums=(
   "c5b78556cb0674fa7de0e349c13adbc2028e6080fd04d7c3ff1a8ed541421cd1"
-  "56b4790e59b73cee84055135be2bceccc83d51f6db5c1cfd42d510f2a1088691"
+  "9817036bd2f5add672e707da311a301033ad122d6c2c505c776cb48d35b94472"
 )
 repology=("project: ${gives}")
 
