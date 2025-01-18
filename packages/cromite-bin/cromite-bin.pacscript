@@ -6,12 +6,12 @@ arch=("amd64")
 pkgdesc="Cromite is a Chromium fork based on Bromite with built-in support for ad blocking and an eye for privacy"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 source=(
-	"https://github.com/uazo/${gives}/releases/download/v${pkgver}-${pkgsha}/chrome-lin64.tar.gz"
-	"https://www.cromite.org/app_icon.png"
+  "https://github.com/uazo/${gives}/releases/download/v${pkgver}-${pkgsha}/chrome-lin64.tar.gz"
+  "https://www.cromite.org/app_icon.png"
 )
 sha256sums=(
-	"0bff256a9aecabf0d9552a6bbc7e4941b71ccd2e3f4d00a729b247916be039c0"
-	"95ea4e28bc95c30200d832c075a04d79191110573f8bbebf881b81c4cef6c211"
+  "0bff256a9aecabf0d9552a6bbc7e4941b71ccd2e3f4d00a729b247916be039c0"
+  "95ea4e28bc95c30200d832c075a04d79191110573f8bbebf881b81c4cef6c211"
 )
 repology=("project: ${gives}")
 
