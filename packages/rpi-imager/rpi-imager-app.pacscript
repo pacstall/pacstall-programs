@@ -10,12 +10,13 @@ source_arm64=("https://github.com/raspberrypi/${gives}/releases/download/v${pkgv
 sha256sums_arm64=("761053904ee29ad0b91bfe4418424b383d0a47ff4920544d8e81f9d87e8f81e8")
 
 package() {
-  if [ "$CARCH" = "amd64" ]; then
-    install -Dm755 "Raspberry_Pi_Imager-${pkgver}-x86_64.AppImage" "${pkgdir}/usr/bin/rpi-imager"
-  elif [ "$CARCH" = "arm64" ]; then
-    install -Dm755 "Raspberry_Pi_Imager-${pkgver}-aarch64.AppImage" "${pkgdir}/usr/bin/rpi-imager"
+  if [[ ${CARCH} == amd64 ]]; then
+    gnuarch="x86_64"
+  else
+    gnuarch="aarch64"
   fi
 
+  install -Dm755 "Raspberry_Pi_Imager-${pkgver}-${gnuarch}.AppImage" "${pkgdir}/usr/bin/rpi-imager"
   install -d "${pkgdir}/usr/share/applications"
   cat << EOF > "${pkgdir}/usr/share/applications/rpi-imager.desktop"
 [Desktop Entry]
