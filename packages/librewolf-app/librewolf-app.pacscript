@@ -1,19 +1,18 @@
 pkgname="librewolf-app"
 gives="librewolf"
-pkgver="132.0.1-1"
+pkgver="134.0-1"
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom."
 arch=('amd64' 'arm64')
-maintainer=(
-  "Oren Klopfer <oren@taumoda.com>"
-  "James Ed Randson <jimedrand@disroot.org>"
-)
+maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")
+breaks=("${gives}-deb" "${gives}-bin" "${gives}-git")
+repology=("project: librewolf")
 sha256sums_amd64=(
-  "4101b9bd125593794e1fa6e41c169fa2e06793a916a450d2ece9b5c7fbbd1a6f"
+  "5a52346b649be7d3ba406679f6fb1e4de0c8933c89778fd5219fea4c570b5a6d"
   "SKIP"
   "SKIP"
 )
 sha256sums_arm64=(
-  "30936c14b913dbdda492fe4cd20baba4481587ef8d0051a44714fed13b921dc2"
+  "f0370c99a1bd4ee877f0cc0d0e061ca050b0a6388abda9a8a4410b666cb1c596"
   "SKIP"
   "SKIP"
 )
@@ -27,8 +26,6 @@ source_arm64=(
   "icon.png::https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png"
   "${gives}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${gives}.desktop"
 )
-breaks=("${gives}-deb" "${gives}-bin" "${gives}-git")
-repology=("project: librewolf")
 
 package() {
   if [[ ${CARCH} == amd64 ]]; then
@@ -56,5 +53,3 @@ post_remove() {
     fi
   fi
 }
-
-# vim:set ft=sh ts=2 sw=2 et:
