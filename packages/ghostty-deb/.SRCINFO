@@ -1,1 +1,19 @@
+pkgbase = ghostty-deb
+	gives = ghostty
+	pkgver = 1.0.1-0-ppa3
+	pkgdesc = Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration
+	arch = amd64
+	incompatible = debian:10
+	incompatible = debian:11
+	incompatible = debian:12
+	incompatible = debian:13
+	incompatible = ubuntu:focal
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: ghostty
+	source_jammy = https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.0.1-0-ppa3/ghostty_1.0.1-0-ppa3_amd64_22.04.deb
+	source_noble = https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.0.1-0-ppa3/ghostty_1.0.1-0-ppa3_amd64_24.04.deb
+	source_devel = https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.0.1-0-ppa3/ghostty_1.0.1-0-ppa3_amd64_24.10.deb
+	sha256sums_jammy = 7d47602867f8c0a3a383edfb1346dc66d5beaa3f971198df9c46f73e96325dc9
+	sha256sums_noble = fb74360ee65949edc984eb7798486f241d973e01d2a7a0b06e32f890a9a78ee3
 
+pkgname = ghostty-deb
