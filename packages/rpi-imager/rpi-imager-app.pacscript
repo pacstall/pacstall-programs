@@ -15,7 +15,7 @@ package() {
   elif [ "$CARCH" = "arm64" ]; then
     install -Dm755 "Raspberry_Pi_Imager-${pkgver}-aarch64.AppImage" "${pkgdir}/usr/bin/rpi-imager"
   fi
-  
+
   install -d "${pkgdir}/usr/share/applications"
   cat << EOF > "${pkgdir}/usr/share/applications/rpi-imager.desktop"
 [Desktop Entry]
