@@ -5,12 +5,12 @@ arch=("amd64")
 pkgdesc="VSCodium is a community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code."
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 source=(
-	"https://github.com/VSCodium/vscodium/releases/download/${pkgver}/VSCodium-linux-x64-${pkgver}.tar.gz"
-	"https://vscodium.com/img/codium_cnl.svg"
+  "https://github.com/VSCodium/vscodium/releases/download/${pkgver}/VSCodium-linux-x64-${pkgver}.tar.gz"
+  "https://vscodium.com/img/codium_cnl.svg"
 )
 sha256sums=(
-	"c5b78556cb0674fa7de0e349c13adbc2028e6080fd04d7c3ff1a8ed541421cd1"
-	"56b4790e59b73cee84055135be2bceccc83d51f6db5c1cfd42d510f2a1088691"
+  "c5b78556cb0674fa7de0e349c13adbc2028e6080fd04d7c3ff1a8ed541421cd1"
+  "56b4790e59b73cee84055135be2bceccc83d51f6db5c1cfd42d510f2a1088691"
 )
 repology=("project: ${gives}")
 
