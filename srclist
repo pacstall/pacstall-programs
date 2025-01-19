@@ -10436,7 +10436,7 @@ pkgbase = resticprofile-bin
 pkgname = resticprofile-bin
 ---
 pkgbase = rhino-core
-	pkgver = 2025.1~RC
+	pkgver = 2025.1
 	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
@@ -10515,7 +10515,7 @@ pkgbase = rhino-neofetch-git
 pkgname = rhino-neofetch-git
 ---
 pkgbase = rhino-pine-core
-	pkgver = 2025.1~RC
+	pkgver = 2025.1
 	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
@@ -10565,7 +10565,7 @@ pkgbase = rhino-plymouth-theme-git
 pkgname = rhino-plymouth-theme-git
 ---
 pkgbase = rhino-server-core
-	pkgver = 2025.1~RC
+	pkgver = 2025.1
 	pkgrel = 1
 	pkgdesc = Transitional package to provide minimal core Rhino Linux software
 	priority = essential
@@ -10684,7 +10684,7 @@ pkgbase = rhino-system-git
 pkgname = rhino-system-git
 ---
 pkgbase = rhino-ubxi-core
-	pkgver = 2025.1~RC
+	pkgver = 2025.1
 	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 	priority = essential
