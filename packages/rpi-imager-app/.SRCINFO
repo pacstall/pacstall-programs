@@ -1,0 +1,13 @@
+pkgbase = rpi-imager-app
+	gives = rpi-imager
+	pkgver = 1.9.0
+	pkgdesc = The home of Raspberry Pi Imager, a user-friendly tool for creating bootable media for Raspberry Pi devices
+	arch = amd64
+	arch = arm64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source_amd64 = https://github.com/raspberrypi/rpi-imager/releases/download/v1.9.0/Raspberry_Pi_Imager-1.9.0-x86_64.AppImage
+	sha256sums_amd64 = 26e837a758776d8a6cec7b92262d73188bcecee20c48cff066d05adef2dc555f
+	source_arm64 = https://github.com/raspberrypi/rpi-imager/releases/download/v1.9.0/Raspberry_Pi_Imager-1.9.0-aarch64.AppImage
+	sha256sums_arm64 = 761053904ee29ad0b91bfe4418424b383d0a47ff4920544d8e81f9d87e8f81e8
+
+pkgname = rpi-imager-app
