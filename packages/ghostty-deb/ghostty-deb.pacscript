@@ -1,0 +1,9 @@
+pkgname="ghostty-deb"
+gives="ghostty"
+arch=("amd64")
+pkgver="1.0.1-0-ppa3"
+repology=("project: ${gives}")
+maintainer=("James Ed Randson <jimedrand@disroot.org>")
+pkgdesc="Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration"
+source=("https://github.com/mkasberg/${gives}-ubuntu/releases/download/${pkgver}/${gives}_${pkgver}_amd64_24.04.deb")
+sha256sums=("fb74360ee65949edc984eb7798486f241d973e01d2a7a0b06e32f890a9a78ee3")
