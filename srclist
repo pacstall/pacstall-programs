@@ -8644,15 +8644,19 @@ pkgname = obs-ndi-deb
 ---
 pkgbase = obs-studio-deb
 	gives = obs-studio
-	pkgver = 31.0.0
+	pkgver = 31.0.1
 	pkgdesc = Free and open source software for live streaming and screen recording
 	arch = amd64
+	compatible = ubuntu:noble
 	compatible = ubuntu:oracular
 	compatible = ubuntu:devel
+	license = GPL-2.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: obs-studio
-	source = https://github.com/obsproject/obs-studio/releases/download/31.0.0/obs-studio_31.0.0-0obsproject1.oracular_amd64.deb
-	sha256sums = 11b4aca006e899b8795ead9870e850b42d209061a3d0320e526febc175379502
+	source = https://github.com/obsproject/obs-studio/releases/download/31.0.1/obs-studio_31.0.1-0obsproject1.oracular_amd64.deb
+	sha256sums = 5ee9c4e721acedf943a117f0402b0e75ccdd1fde7bc7b555a23d8d4e1cea139f
+	source_noble = https://github.com/obsproject/obs-studio/releases/download/31.0.1/obs-studio_31.0.1-0obsproject1.noble_amd64.deb
+	sha256sums_noble = 6e3f94becc78d3d2b652deebc97cd09d22d47e5758155ea17b2253464b7ba8b7
 
 pkgname = obs-studio-deb
 ---
