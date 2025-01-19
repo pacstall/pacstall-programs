@@ -2925,15 +2925,15 @@ pkgname = ffsend-bin
 ---
 pkgbase = firefox-arm64-deb
 	gives = firefox
-	pkgver = 134.0+build1
+	pkgver = 134.0.1+build1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
 	repology = repo: ubuntu_20_04
-	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_134.0+build1-0ubuntu0.22.04.1~mt1_arm64.deb
-	sha256sums = 300bb6b388f58cca24ba860cbedc2af0c48590436bd0c1fa824573bdc5d04bd1
+	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_134.0.1+build1-0ubuntu0.22.04.1~mt1_arm64.deb
+	sha256sums = 0a825ab9b181ad744ffed117c628543fff8422e4a4139fdc5fc34a451e28b6e5
 
 pkgname = firefox-arm64-deb
 ---
