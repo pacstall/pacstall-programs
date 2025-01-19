@@ -1,7 +1,7 @@
 pkgname="rhino-setup-git"
 source=("https://github.com/rhino-linux/rhino-setup.git")
 arch=("any")
-pkgver="2024.2"
+pkgver="2025.1"
 pkgrel="3"
 makedepends=("libgtk-4-dev" "libadwaita-1-dev" "gettext" "desktop-file-utils" "rustc" "cargo" "meson" "ninja-build")
 depends=("libgtk-4-dev" "libadwaita-1-dev" "gettext" "desktop-file-utils" "uidmap")

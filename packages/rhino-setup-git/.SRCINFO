@@ -1,6 +1,6 @@
 pkgbase = rhino-setup-git
 	gives = rhino-setup
-	pkgver = 2024.2
+	pkgver = 2025.1
 	pkgrel = 3
 	pkgdesc = Rhino Linux Setup Prompt
 	arch = any
