@@ -12521,7 +12521,7 @@ pkgbase = tuner-git
 	makedepends = libgeocode-glib-dev
 	replaces = tuner
 	license = GPL-3.0
-	source = https://codeberg.org/tuner/tuner.git
+	source = https://github.com/louis77/tuner.git
 
 pkgname = tuner-git
 ---
