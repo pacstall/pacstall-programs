@@ -2138,7 +2138,7 @@ pkgname = docker-bin
 ---
 pkgbase = docker-buildx-plugin-bin
 	gives = docker-buildx-plugin
-	pkgver = 0.18.0
+	pkgver = 0.19.3
 	pkgdesc = Docker Buildx cli plugin
 	url = https://github.com/docker/buildx
 	arch = amd64
@@ -2146,10 +2146,10 @@ pkgbase = docker-buildx-plugin-bin
 	replaces = docker-buildx-plugin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: docker-buildx
-	source_amd64 = https://github.com/docker/buildx/releases/download/v0.18.0/buildx-v0.18.0.linux-amd64
-	sha256sums_amd64 = 4fe2eb90ac22b27fa03734899fcf814aa1e214a4952b9b30b20d551baf1d9a5c
-	source_arm64 = https://github.com/docker/buildx/releases/download/v0.18.0/buildx-v0.18.0.linux-arm64
-	sha256sums_arm64 = da9742321bb462547ebde69bf8420ac07b2a2c80fb57260f539bfc9f312becd6
+	source_amd64 = https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64
+	sha256sums_amd64 = 32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2
+	source_arm64 = https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64
+	sha256sums_arm64 = 138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e
 
 pkgname = docker-buildx-plugin-bin
 ---
