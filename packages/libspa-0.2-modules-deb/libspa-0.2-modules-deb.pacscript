@@ -1,0 +1,9 @@
+pkgname="libspa-0.2-modules-deb"
+gives="libspa-0.2-modules"
+pkgdesc="Libraries for the PipeWire multimedia server Simple Plugin API - modules"
+arch=('amd64' 'arm64')
+pkgver="1.2.7-1+b1"
+source=("http://ftp.debian.org/debian/pool/main/p/pipewire/libspa-0.2-modules_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('6dc3e8d0caa55e0506ab1aa5c5ae5e64b8ef84cc3786c658076ff78cf33494c7')
+sha256sums_arm64=('d3f6dcee0e23adad909985ebd6237ea16afcbeba5f125dd1b23b8bc3559fc585')

@@ -1,0 +1,9 @@
+pkgname="libspa-0.2-bluetooth-deb"
+gives="libspa-0.2-bluetooth"
+pkgdesc="Libraries for the PipeWire multimedia server - bluetooth plugins"
+arch=('amd64' 'arm64')
+pkgver="1.2.7-1+b1"
+source=("http://ftp.debian.org/debian/pool/main/p/pipewire/libspa-0.2-bluetooth_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('45e3e763ab9d73e8b4168c6d09c5edb2feb0ea3bc6846c9589c707d1ac74a071')
+sha256sums_arm64=('e34f779297b70486f72f8de52fb16349474b02fc259d582f8c02524a9bae990b')

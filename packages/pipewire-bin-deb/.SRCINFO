@@ -1,0 +1,13 @@
+pkgbase = pipewire-bin-deb
+	gives = pipewire-bin
+	pkgver = 1.2.7-1+b1
+	pkgdesc = PipeWire multimedia server - programs
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-bin_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = ef5f44a47a1cf238842142be8df10ed375e9a26bbdf58457f49accb85448e3dd
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-bin_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = 1ae52b6acb37a2a374ca181e61263c2f40a253fb2574a95f0a4b6ddddc5c4c97
+
+pkgname = pipewire-bin-deb

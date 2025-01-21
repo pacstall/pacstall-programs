@@ -1,0 +1,9 @@
+pkgname="gstreamer1.0-pipewire-deb"
+gives="gstreamer1.0-pipewire"
+pkgdesc="GStreamer 1.0 plugin for the PipeWire multimedia server"
+arch=('amd64' 'arm64')
+pkgver="1.2.7-1+b1"
+source=("http://ftp.debian.org/debian/pool/main/p/pipewire/gstreamer1.0-pipewire_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('e93834ac94a24d748482772d0d7ecc16f3439cac5a6092bf53f658624b271b30')
+sha256sums_arm64=('1a681248a6cc5cd75f9ebd005dd31652d2bdd6ab26191a2a8b0326dc832e8abb')

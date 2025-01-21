@@ -1,0 +1,9 @@
+pkgname="pipewire-alsa-deb"
+gives="pipewire-alsa"
+pkgdesc="PipeWire ALSA plugin, for ALSA applications to output via PipeWire"
+arch=('amd64' 'arm64')
+pkgver="1.2.7-1+b1"
+source=("http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-alsa_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('9bb9854b7e5ad952a06bf729186eb89df4c76d177979fbd699e6154b3a42422c')
+sha256sums_arm64=('69d7784fdbb2482c9fb76925d30e000704c0d396d2e9c53a64c952b52ae377a9')

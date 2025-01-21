@@ -1,0 +1,13 @@
+pkgbase = pipewire-pulse-deb
+	gives = pipewire-pulse
+	pkgver = 1.2.7-1+b1
+	pkgdesc = PipeWire PulseAudio daemon
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-pulse_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = 5a2a6a93655a164e13cdbddc542e7b3880af5e7308a8624e8149a2f5069b0544
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-pulse_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = 6efccdddf4d0bb4bac2391b3026e2225bef0c99118cffbd3ebbd3f0d255da43e
+
+pkgname = pipewire-pulse-deb

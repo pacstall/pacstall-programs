@@ -1,0 +1,9 @@
+pkgname="pipewire-deb"
+gives="pipewire"
+pkgdesc="Audio and video processing engine multimedia server"
+arch=('amd64' 'arm64')
+pkgver="1.2.7-1+b1"
+source=("http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('990a3766b6cd8f19ecffad45964694f6932c5ab4ece9f12056d4a77db6bab34e')
+sha256sums_arm64=('780a31e2591d34b3694f87a61eb15e8e9e5a6a80eb336c74867b36c406e7b352')

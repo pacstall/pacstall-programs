@@ -4305,6 +4305,20 @@ pkgbase = grub-customizer-git
 
 pkgname = grub-customizer-git
 ---
+pkgbase = gstreamer1.0-pipewire-deb
+	gives = gstreamer1.0-pipewire
+	pkgver = 1.2.7-1+b1
+	pkgdesc = GStreamer 1.0 plugin for the PipeWire multimedia server
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/gstreamer1.0-pipewire_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = e93834ac94a24d748482772d0d7ecc16f3439cac5a6092bf53f658624b271b30
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/gstreamer1.0-pipewire_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = 1a681248a6cc5cd75f9ebd005dd31652d2bdd6ab26191a2a8b0326dc832e8abb
+
+pkgname = gstreamer1.0-pipewire-deb
+---
 pkgbase = gtkhash
 	pkgver = 1.4
 	pkgdesc = gtkhash is a desktop utility for computing message digests or checksums.
@@ -5965,6 +5979,59 @@ pkgbase = libndi4-deb
 
 pkgname = libndi4-deb
 ---
+pkgbase = libpipewire-0.3-0t64-deb
+	gives = libpipewire-0.3-0t64
+	pkgver = 1.2.7-1+b1
+	pkgdesc = Libraries for the PipeWire multimedia server
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/libpipewire-0.3-0t64_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = 53c450489c2a369eb84bae74d00b9eb294a06b1e5924c9c332a7e24452f51dd3
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/libpipewire-0.3-0t64_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = c13f2787d6673a76d0f5360ecbc8a61534ea55091487e53c667aeb61cbbcd894
+
+pkgname = libpipewire-0.3-0t64-deb
+---
+pkgbase = libpipewire-0.3-common-deb
+	gives = libpipewire-0.3-common
+	pkgver = 1.2.7-1
+	pkgdesc = Libraries for the PipeWire multimedia server - common files
+	arch = all
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = http://ftp.debian.org/debian/pool/main/p/pipewire/libpipewire-0.3-common_1.2.7-1_all.deb
+	sha256sums = 432d6b6ffc8d0a41682d04968dd20b1f059ba4441e38256fe0121c732d334aa7
+
+pkgname = libpipewire-0.3-common-deb
+---
+pkgbase = libpipewire-0.3-modules-deb
+	gives = libpipewire-0.3-modules
+	pkgver = 1.2.7-1+b1
+	pkgdesc = Libraries for the PipeWire multimedia server - modules
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/libpipewire-0.3-modules_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = 2e29a08668bf3906be151692a48ef911df27c081f87243b5a4f1d328eabd7d4b
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/libpipewire-0.3-modules_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = bb19f8dc83d611f7c7869e6317a773a2e7bd425eda2765c00831450f0f138e42
+
+pkgname = libpipewire-0.3-modules-deb
+---
+pkgbase = libpipewire-0.3-modules-x11-deb
+	gives = libpipewire-0.3-modules-x11
+	pkgver = 1.2.7-1+b1
+	pkgdesc = Libraries for the PipeWire multimedia server - X11 modules
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/libpipewire-0.3-modules-x11_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = 1c4b5b75e6c2f605d8e5b399076a629e553c4943ffceb42fc87838d3bed1b978
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/libpipewire-0.3-modules-x11_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = aa92d536a37c8653d263f160bb6ec50b0bb964530b3687261075696aa65e5d72
+
+pkgname = libpipewire-0.3-modules-x11-deb
+---
 pkgbase = libresprite-git
 	gives = libresprite
 	pkgver = 1.0
@@ -6064,6 +6131,34 @@ pkgbase = librewolf-deb
 
 pkgname = librewolf-deb
 ---
+pkgbase = libspa-0.2-bluetooth-deb
+	gives = libspa-0.2-bluetooth
+	pkgver = 1.2.7-1+b1
+	pkgdesc = Libraries for the PipeWire multimedia server - bluetooth plugins
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/libspa-0.2-bluetooth_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = 45e3e763ab9d73e8b4168c6d09c5edb2feb0ea3bc6846c9589c707d1ac74a071
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/libspa-0.2-bluetooth_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = e34f779297b70486f72f8de52fb16349474b02fc259d582f8c02524a9bae990b
+
+pkgname = libspa-0.2-bluetooth-deb
+---
+pkgbase = libspa-0.2-modules-deb
+	gives = libspa-0.2-modules
+	pkgver = 1.2.7-1+b1
+	pkgdesc = Libraries for the PipeWire multimedia server Simple Plugin API - modules
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/libspa-0.2-modules_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = 6dc3e8d0caa55e0506ab1aa5c5ae5e64b8ef84cc3786c658076ff78cf33494c7
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/libspa-0.2-modules_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = d3f6dcee0e23adad909985ebd6237ea16afcbeba5f125dd1b23b8bc3559fc585
+
+pkgname = libspa-0.2-modules-deb
+---
 pkgbase = libspa-codec-bluez5-aac-bin
 	gives = libspa-codec-bluez5-aac
 	pkgver = 0.3.65-4~glasgall1
@@ -6102,6 +6197,20 @@ pkgbase = libtomlplusplus-header
 	sha256sums = 6b5172ad4dd6519aec67b919181fa7a38a2234131e5b2afa232dfe444819783e
 
 pkgname = libtomlplusplus-header
+---
+pkgbase = libwebrtc-audio-processing1-deb
+	gives = libwebrtc-audio-processing1
+	pkgver = 0.3-1+b2
+	pkgdesc = AudioProcessing module from the WebRTC project
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/f15b5c775c12f483f46fabbcb8ce7a479020035435577f402059a6fd77c986b4l/main/w/webrtc-audio-processing/libwebrtc-audio-processing1_0.3-1+b2_amd64.deb
+	sha256sums_amd64 = f15b5c775c12f483f46fabbcb8ce7a479020035435577f402059a6fd77c986b4
+	source_arm64 = http://ftp.debian.org/debian/f15b5c775c12f483f46fabbcb8ce7a479020035435577f402059a6fd77c986b4l/main/w/webrtc-audio-processing/libwebrtc-audio-processing1_0.3-1+b2_arm64.deb
+	sha256sums_arm64 = 7355923234e2a21d381661efaa09729238b511e85efe358c2b48925367f4b81a
+
+pkgname = libwebrtc-audio-processing1-deb
 ---
 pkgbase = libx86emu
 	gives = libx86emu3
@@ -9469,6 +9578,125 @@ pkgbase = pipes.sh-bin
 	sha256sums = 532976dd8dc2d98330c45a8bcb6d7dc19e0b0e30bba8872dcce352361655a426
 
 pkgname = pipes.sh-bin
+---
+pkgbase = pipewire-alsa-deb
+	gives = pipewire-alsa
+	pkgver = 1.2.7-1+b1
+	pkgdesc = PipeWire ALSA plugin, for ALSA applications to output via PipeWire
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-alsa_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = 9bb9854b7e5ad952a06bf729186eb89df4c76d177979fbd699e6154b3a42422c
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-alsa_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = 69d7784fdbb2482c9fb76925d30e000704c0d396d2e9c53a64c952b52ae377a9
+
+pkgname = pipewire-alsa-deb
+---
+pkgbase = pipewire-audio-deb
+	gives = pipewire-audio
+	pkgver = 1.2.7-1
+	pkgdesc = Recommended set of PipeWire packages for a standard audio desktop use
+	arch = all
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-audio_1.2.7-1_all.deb
+	sha256sums = 138bdee9bb9ce4f8dd1afdf1eabc1c03daa381af641385ba2c882d2143681050
+
+pkgname = pipewire-audio-deb
+---
+pkgbase = pipewire-bin-deb
+	gives = pipewire-bin
+	pkgver = 1.2.7-1+b1
+	pkgdesc = PipeWire multimedia server - programs
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-bin_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = ef5f44a47a1cf238842142be8df10ed375e9a26bbdf58457f49accb85448e3dd
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-bin_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = 1ae52b6acb37a2a374ca181e61263c2f40a253fb2574a95f0a4b6ddddc5c4c97
+
+pkgname = pipewire-bin-deb
+---
+pkgbase = pipewire-deb-bundle
+	pkgver = 1.2.7-1+b1
+	pkgdesc = Audio and video processing engine multimedia server - Transitional meta-package
+	arch = amd64
+	arch = arm64
+	pacdeps = libwebrtc-audio-processing1-deb
+	pacdeps = libspa-0.2-modules-deb
+	pacdeps = libspa-0.2-bluetooth-deb
+	pacdeps = libpipewire-0.3-common-deb
+	pacdeps = libpipewire-0.3-0t64-deb
+	pacdeps = libpipewire-0.3-modules-deb
+	pacdeps = libpipewire-0.3-modules-x11-deb
+	pacdeps = pipewire-bin-deb
+	pacdeps = pipewire-deb
+	pacdeps = pipewire-audio-deb
+	pacdeps = pipewire-alsa-deb
+	pacdeps = pipewire-jack-deb
+	pacdeps = pipewire-pulse-deb
+	pacdeps = pipewire-v4l2-deb
+	pacdeps = gstreamer1.0-pipewire-deb
+	maintainer = Oren Klopfer <oren@taumoda.com>
+
+pkgname = pipewire-deb-bundle
+---
+pkgbase = pipewire-deb
+	gives = pipewire
+	pkgver = 1.2.7-1+b1
+	pkgdesc = Audio and video processing engine multimedia server
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = 990a3766b6cd8f19ecffad45964694f6932c5ab4ece9f12056d4a77db6bab34e
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = 780a31e2591d34b3694f87a61eb15e8e9e5a6a80eb336c74867b36c406e7b352
+
+pkgname = pipewire-deb
+---
+pkgbase = pipewire-jack-deb
+	gives = pipewire-jack
+	pkgver = 1.2.7-1+b1
+	pkgdesc = PipeWire JACK plugin, for JACK applications to output via PipeWire
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-jack_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = cdfc4164c5b08d2a40f8ee42c1aba4ed5464c62ca477d0173b0d01bafccb093d
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-jack_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = 52c635bceb080f6be5a8e1e9b2a735b8484dc4a46c4e1a325de59be42d0e6bbd
+
+pkgname = pipewire-jack-deb
+---
+pkgbase = pipewire-pulse-deb
+	gives = pipewire-pulse
+	pkgver = 1.2.7-1+b1
+	pkgdesc = PipeWire PulseAudio daemon
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-pulse_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = 5a2a6a93655a164e13cdbddc542e7b3880af5e7308a8624e8149a2f5069b0544
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-pulse_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = 6efccdddf4d0bb4bac2391b3026e2225bef0c99118cffbd3ebbd3f0d255da43e
+
+pkgname = pipewire-pulse-deb
+---
+pkgbase = pipewire-v4l2-deb
+	gives = pipewire-v4l2
+	pkgver = 1.2.7-1+b1
+	pkgdesc = PipeWire V4L2 plugin
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-v4l2_1.2.7-1+b1_amd64.deb
+	sha256sums_amd64 = 8f660da6d0489d86c3ee3c335b50e88bbdf947df9fc7df85a2a979ea21fc3619
+	source_arm64 = http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-v4l2_1.2.7-1+b1_arm64.deb
+	sha256sums_arm64 = a92b6f6a7a2aa91887313fd9001bece1fe0fa680d3bf907b6f6581dc47a67d5b
+
+pkgname = pipewire-v4l2-deb
 ---
 pkgbase = pipewire
 	pkgver = 0.3.65

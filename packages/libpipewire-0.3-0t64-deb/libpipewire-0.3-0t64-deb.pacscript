@@ -1,0 +1,9 @@
+pkgname="libpipewire-0.3-0t64-deb"
+gives="libpipewire-0.3-0t64"
+pkgdesc="Libraries for the PipeWire multimedia server"
+arch=('amd64' 'arm64')
+pkgver="1.2.7-1+b1"
+source=("http://ftp.debian.org/debian/pool/main/p/pipewire/libpipewire-0.3-0t64_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('53c450489c2a369eb84bae74d00b9eb294a06b1e5924c9c332a7e24452f51dd3')
+sha256sums_arm64=('c13f2787d6673a76d0f5360ecbc8a61534ea55091487e53c667aeb61cbbcd894')

@@ -1,0 +1,9 @@
+pkgname="pipewire-bin-deb"
+gives="pipewire-bin"
+pkgdesc="PipeWire multimedia server - programs"
+arch=('amd64' 'arm64')
+pkgver="1.2.7-1+b1"
+source=("http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-bin_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('ef5f44a47a1cf238842142be8df10ed375e9a26bbdf58457f49accb85448e3dd')
+sha256sums_arm64=('1ae52b6acb37a2a374ca181e61263c2f40a253fb2574a95f0a4b6ddddc5c4c97')

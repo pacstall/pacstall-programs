@@ -1,0 +1,9 @@
+pkgname="pipewire-v4l2-deb"
+gives="pipewire-v4l2"
+pkgdesc="PipeWire V4L2 plugin"
+arch=('amd64' 'arm64')
+pkgver="1.2.7-1+b1"
+source=("http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-v4l2_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('8f660da6d0489d86c3ee3c335b50e88bbdf947df9fc7df85a2a979ea21fc3619')
+sha256sums_arm64=('a92b6f6a7a2aa91887313fd9001bece1fe0fa680d3bf907b6f6581dc47a67d5b')

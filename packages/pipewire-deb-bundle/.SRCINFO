@@ -1,0 +1,23 @@
+pkgbase = pipewire-deb-bundle
+	pkgver = 1.2.7-1+b1
+	pkgdesc = Audio and video processing engine multimedia server - Transitional meta-package
+	arch = amd64
+	arch = arm64
+	pacdeps = libwebrtc-audio-processing1-deb
+	pacdeps = libspa-0.2-modules-deb
+	pacdeps = libspa-0.2-bluetooth-deb
+	pacdeps = libpipewire-0.3-common-deb
+	pacdeps = libpipewire-0.3-0t64-deb
+	pacdeps = libpipewire-0.3-modules-deb
+	pacdeps = libpipewire-0.3-modules-x11-deb
+	pacdeps = pipewire-bin-deb
+	pacdeps = pipewire-deb
+	pacdeps = pipewire-audio-deb
+	pacdeps = pipewire-alsa-deb
+	pacdeps = pipewire-jack-deb
+	pacdeps = pipewire-pulse-deb
+	pacdeps = pipewire-v4l2-deb
+	pacdeps = gstreamer1.0-pipewire-deb
+	maintainer = Oren Klopfer <oren@taumoda.com>
+
+pkgname = pipewire-deb-bundle

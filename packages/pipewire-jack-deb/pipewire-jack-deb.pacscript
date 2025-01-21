@@ -1,0 +1,9 @@
+pkgname="pipewire-jack-deb"
+gives="pipewire-jack"
+pkgdesc="PipeWire JACK plugin, for JACK applications to output via PipeWire"
+arch=('amd64' 'arm64')
+pkgver="1.2.7-1+b1"
+source=("http://ftp.debian.org/debian/pool/main/p/pipewire/pipewire-jack_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('cdfc4164c5b08d2a40f8ee42c1aba4ed5464c62ca477d0173b0d01bafccb093d')
+sha256sums_arm64=('52c635bceb080f6be5a8e1e9b2a735b8484dc4a46c4e1a325de59be42d0e6bbd')

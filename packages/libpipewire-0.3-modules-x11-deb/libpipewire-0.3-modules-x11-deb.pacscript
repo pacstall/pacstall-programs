@@ -1,0 +1,9 @@
+pkgname="libpipewire-0.3-modules-x11-deb"
+gives="libpipewire-0.3-modules-x11"
+pkgdesc="Libraries for the PipeWire multimedia server - X11 modules"
+arch=('amd64' 'arm64')
+pkgver="1.2.7-1+b1"
+source=("http://ftp.debian.org/debian/pool/main/p/pipewire/libpipewire-0.3-modules-x11_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('1c4b5b75e6c2f605d8e5b399076a629e553c4943ffceb42fc87838d3bed1b978')
+sha256sums_arm64=('aa92d536a37c8653d263f160bb6ec50b0bb964530b3687261075696aa65e5d72')
