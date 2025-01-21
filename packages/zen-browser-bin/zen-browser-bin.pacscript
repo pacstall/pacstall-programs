@@ -1,7 +1,7 @@
 pkgname="zen-browser-bin"
 gives="zen-browser"
 pkgver="1.7.1b"
-pkgrel=2
+pkgrel=1
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
 url="https://zen-browser.app/"
 license=("MPL-2.0")
