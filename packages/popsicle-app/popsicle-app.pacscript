@@ -15,7 +15,7 @@ package() {
 Type=Application
 Name=Popsicle
 Comment=Linux utility for flashing multiple USB devices in parallel
-Exec=/usr/bin/popsicle
+Exec=env APPIMAGELAUNCHER_DISABLE=1 /usr/bin/popsicle
 Icon=popsicle
 Terminal=false
 Categories=Application;Utilities
