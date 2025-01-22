@@ -1,6 +1,7 @@
 pkgname="pipewire-deb-bundle"
 pkgdesc="Audio and video processing engine multimedia server - Transitional meta-package"
 arch=('amd64' 'arm64')
+source=('https://github.com/oklopfer/debs/raw/master/empty.tar.xz')
 pkgver="1.2.7-1+b1"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pacdeps=(

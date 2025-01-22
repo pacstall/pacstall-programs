@@ -9639,6 +9639,7 @@ pkgbase = pipewire-deb-bundle
 	pacdeps = pipewire-v4l2-deb
 	pacdeps = gstreamer1.0-pipewire-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
 
 pkgname = pipewire-deb-bundle
 ---
