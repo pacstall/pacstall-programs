@@ -1,5 +1,5 @@
 pkgname="zen-browser-specific-bin"
-pkgver="1.7.1b"
+pkgver="1.7.2b"
 pkgrel=1
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
 url="https://zen-browser.app/"
