@@ -1,10 +1,12 @@
 pkgname="teams-for-linux-deb"
 repology=("project: teams-for-linux")
 gives="teams-for-linux"
-pkgver="1.12.5"
-source=("https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v${pkgver}/teams-for-linux_${pkgver}_amd64.deb")
+pkgver="1.12.6"
+source_amd64=("https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v${pkgver}/teams-for-linux_${pkgver}_amd64.deb")
+source_arm64=("https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v${pkgver}/teams-for-linux_${pkgver}_arm64.deb")
 breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
 pkgdesc="Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron."
-sha256sums=("2e133ce4554bcbd24c73a2cee4cddb597a32e260d6fd73f391b3f5306be47dc8")
-arch=('amd64')
+sha256sums_amd64=("4b771197daf9674c2d01bb66823e35f8ff7b6905b8c31f49615b6cad9b92394d")
+sha256sums_arm64=("26b5b6d8719782c49e10a28ec513c04f8ed63302128ca36100e148014377fa8f")
+arch=('amd64' 'arm64')
 maintainer=("matusaurio <matusaurio@github.com>")
