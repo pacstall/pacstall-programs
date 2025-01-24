@@ -363,6 +363,21 @@ pkgbase = apx-git
 
 pkgname = apx-git
 ---
+pkgbase = aqua-ide-bin
+	gives = aqua
+	pkgver = 2024.3.1
+	pkgdesc = The IDE for test automation
+	arch = amd64
+	arch = arm64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: aqua
+	source_amd64 = https://download-cdn.jetbrains.com/aqua/aqua-2024.3.1.tar.gz
+	sha256sums_amd64 = e304d8f900881d18865010819dc035d59be00b1364baa2b98ef47d923907ce57
+	source_arm64 = https://download-cdn.jetbrains.com/aqua/aqua-2024.3.1-aarch64.tar.gz
+	sha256sums_arm64 = 4895ad44a456f56121cc4e78be45b6a4ccae8080ab7251cd434304465d01f7c4
+
+pkgname = aqua-ide-bin
+---
 pkgbase = ardour-git
 	pkgver = 7.5
 	pkgdesc = Professional-grade digital audio workstation
@@ -1916,20 +1931,20 @@ pkgname = directx-headers-git
 ---
 pkgbase = discord-canary-deb
 	gives = discord-canary
-	pkgver = 0.0.567
+	pkgver = 0.0.574
 	pkgdesc = Chat for Communities and Friends Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com
 	arch = amd64
 	conflicts = discord-canary
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: discord-canary
-	source = https://canary.dl2.discordapp.net/apps/linux/0.0.567/discord-canary-0.0.567.deb
-	sha256sums = 9a333e06564e84898cf64ca8c414921be32b47b5fb033842ced52d69f0e7c431
+	source = https://canary.dl2.discordapp.net/apps/linux/0.0.574/discord-canary-0.0.574.deb
+	sha256sums = fcf4da629a4bb6d3718c06d8ee0ad695a31ff5d133e818fc01ac9c329a1a031d
 
 pkgname = discord-canary-deb
 ---
 pkgbase = discord-canary
-	pkgver = 0.0.567
+	pkgver = 0.0.574
 	pkgdesc = Chat for Communities and Friends - Unstable
 	url = https://discord.com/
 	arch = amd64
@@ -1951,14 +1966,14 @@ pkgbase = discord-canary
 	depends = libgbm1
 	maintainer = DismissedGuy <me@mikealmel.ooo>
 	repology = project: discord-canary
-	source = @discord-canary~0.0.567::https://dl-canary.discordapp.net/apps/linux/0.0.567/discord-canary-0.0.567.tar.gz
-	sha256sums = ed0665816a82361af960ad8c3202456198e0f13e44900a0fc040fb97acc51c0c
+	source = @discord-canary~0.0.574::https://canary.dl2.discordapp.net/apps/linux/0.0.574/discord-canary-0.0.574.tar.gz
+	sha256sums = a5974797b53768d9b17ba3ed68aec96d0ed77403ed953014b86701445910237b
 
 pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.80
+	pkgver = 0.0.81
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1968,25 +1983,25 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.80/discord-0.0.80.deb
-	sha256sums = c3d2e26de2658345988c09a5646831d5b684433966dbfee61c96f48ebb698f94
+	source = https://dl.discordapp.net/apps/linux/0.0.81/discord-0.0.81.deb
+	sha256sums = 035be1ce63262321512eba4e59a5a9c71995584a1ab6e9dee1bf2523e2e5e700
 
 pkgname = discord-deb
 ---
 pkgbase = discord-ptb-deb
 	gives = discord-ptb
-	pkgver = 0.0.126
+	pkgver = 0.0.127
 	pkgdesc = Chat for Communities and Friends - Public Test Build
 	url = https://discord.com/
 	arch = amd64
 	repology = project: discord-ptb
-	source = https://dl-ptb.discordapp.net/apps/linux/0.0.126/discord-ptb-0.0.126.deb
-	sha256sums = e8a9d3f63e50a2747f32462aefac119095d359d84256020280d7956c20c8f736
+	source = https://dl-ptb.discordapp.net/apps/linux/0.0.127/discord-ptb-0.0.127.deb
+	sha256sums = 1632fd96ebd7821b34b91272109773968f29e2bed9bd23525169b9d429415e27
 
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.80
+	pkgver = 0.0.81
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2003,8 +2018,8 @@ pkgbase = discord
 	depends = libc++1
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.80::https://dl.discordapp.net/apps/linux/0.0.80/discord-0.0.80.tar.gz
-	sha256sums = a1a9ae1762dc7410b61d4cc1d3c953971beb5e313a605057c0b243ae660a4573
+	source = @discord~0.0.81::https://dl.discordapp.net/apps/linux/0.0.81/discord-0.0.81.tar.gz
+	sha256sums = 577c5a05b0995f54d4697c4b6cc3a127c54528c6417c247fc396a3ac0beeda44
 
 pkgname = discord
 ---
@@ -6114,6 +6129,20 @@ pkgbase = libtomlplusplus-header
 
 pkgname = libtomlplusplus-header
 ---
+pkgbase = libwebrtc-audio-processing1-deb
+	gives = libwebrtc-audio-processing1
+	pkgver = 0.3-1+b2
+	pkgdesc = AudioProcessing module from the WebRTC project
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = http://ftp.debian.org/debian/pool/main/w/webrtc-audio-processing/libwebrtc-audio-processing1_0.3-1+b2_amd64.deb
+	sha256sums_amd64 = f15b5c775c12f483f46fabbcb8ce7a479020035435577f402059a6fd77c986b4
+	source_arm64 = http://ftp.debian.org/debian/pool/main/w/webrtc-audio-processing/libwebrtc-audio-processing1_0.3-1+b2_arm64.deb
+	sha256sums_arm64 = 7355923234e2a21d381661efaa09729238b511e85efe358c2b48925367f4b81a
+
+pkgname = libwebrtc-audio-processing1-deb
+---
 pkgbase = libx86emu
 	gives = libx86emu3
 	pkgver = 3.5
@@ -7475,15 +7504,15 @@ pkgname = mullvad-vpn-beta-deb
 ---
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
-	pkgver = 2024.7
+	pkgver = 2025.2
 	pkgdesc = The Mullvad VPN client app for desktop
 	arch = amd64
 	breaks = mullvad-vpn-beta-deb
 	breaks = mullvad-vpn-git
 	replaces = mullvad-vpn
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2024.7/MullvadVPN-2024.7_amd64.deb
-	sha256sums = 97ab96acecccce7f1b179899cdf6bfc5f7cb22f00fb0268bc337113d15b7b74a
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.2/MullvadVPN-2025.2_amd64.deb
+	sha256sums = 8ce13a36c9dad51ea4369ff05da63ad2b366832e32d945621e22be2a9852345a
 
 pkgname = mullvad-vpn-deb
 ---
@@ -9043,7 +9072,7 @@ pkgbase = os-installer-git
 pkgname = os-installer-git
 ---
 pkgbase = osu-lazer-app
-	pkgver = 2025.118.0
+	pkgver = 2025.118.2
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
 	url = https://osu.ppy.sh
 	arch = amd64
@@ -9053,11 +9082,11 @@ pkgbase = osu-lazer-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-app-2025.118.0.AppImage::https://github.com/ppy/osu/releases/download/2025.118.0/osu.AppImage
+	source = osu-lazer-app-2025.118.2.AppImage::https://github.com/ppy/osu/releases/download/2025.118.2/osu.AppImage
 	source = icon.png::https://raw.githubusercontent.com/ppy/osu/master/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = d0e9f4ee932a7d145e9a41b5829e8d28e2fe55df2f6b9ec6bba065e315eb5bd9
+	sha256sums = 1365968cb14402a0ea16ca3c78ef9ca19d9cb90121512d27059638e632271050
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
@@ -10821,6 +10850,20 @@ pkgbase = rpcs3-app
 
 pkgname = rpcs3-app
 ---
+pkgbase = rpi-imager-app
+	gives = rpi-imager
+	pkgver = 1.9.0
+	pkgdesc = The home of Raspberry Pi Imager, a user-friendly tool for creating bootable media for Raspberry Pi devices
+	arch = amd64
+	arch = arm64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source_amd64 = https://github.com/raspberrypi/rpi-imager/releases/download/v1.9.0/Raspberry_Pi_Imager-1.9.0-x86_64.AppImage
+	sha256sums_amd64 = 26e837a758776d8a6cec7b92262d73188bcecee20c48cff066d05adef2dc555f
+	source_arm64 = https://github.com/raspberrypi/rpi-imager/releases/download/v1.9.0/Raspberry_Pi_Imager-1.9.0-aarch64.AppImage
+	sha256sums_arm64 = 761053904ee29ad0b91bfe4418424b383d0a47ff4920544d8e81f9d87e8f81e8
+
+pkgname = rpi-imager-app
+---
 pkgbase = rsbbi-git
 	gives = rsbbi
 	pkgver = 0.0.1
@@ -11867,17 +11910,20 @@ pkgname = tdrop-git
 ---
 pkgbase = teams-for-linux-deb
 	gives = teams-for-linux
-	pkgver = 1.12.5
+	pkgver = 1.12.6
 	pkgdesc = Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
 	arch = amd64
+	arch = arm64
 	breaks = teams-for-linux
 	breaks = teams-for-linux-git
 	breaks = teams-for-linux-bin
 	breaks = teams-for-linux-app
 	maintainer = matusaurio <matusaurio@github.com>
 	repology = project: teams-for-linux
-	source = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v1.12.5/teams-for-linux_1.12.5_amd64.deb
-	sha256sums = 2e133ce4554bcbd24c73a2cee4cddb597a32e260d6fd73f391b3f5306be47dc8
+	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v1.12.6/teams-for-linux_1.12.6_amd64.deb
+	sha256sums_amd64 = 4b771197daf9674c2d01bb66823e35f8ff7b6905b8c31f49615b6cad9b92394d
+	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v1.12.6/teams-for-linux_1.12.6_arm64.deb
+	sha256sums_arm64 = 26b5b6d8719782c49e10a28ec513c04f8ed63302128ca36100e148014377fa8f
 
 pkgname = teams-for-linux-deb
 ---
@@ -13136,6 +13182,20 @@ pkgbase = vscode-insiders-deb
 
 pkgname = vscode-insiders-deb
 ---
+pkgbase = vscodium-bin
+	gives = codium
+	pkgver = 1.96.4.25017
+	pkgdesc = VSCodium is a community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code.
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: codium
+	source = https://github.com/VSCodium/vscodium/releases/download/1.96.4.25017/VSCodium-linux-x64-1.96.4.25017.tar.gz
+	source = https://vscodium.com/img/codium_cnl.svg
+	sha256sums = c5b78556cb0674fa7de0e349c13adbc2028e6080fd04d7c3ff1a8ed541421cd1
+	sha256sums = 9817036bd2f5add672e707da311a301033ad122d6c2c505c776cb48d35b94472
+
+pkgname = vscodium-bin
+---
 pkgbase = vscodium-deb
 	gives = codium
 	pkgver = 1.96.4.25017
@@ -14251,7 +14311,7 @@ pkgbase = zed-editor-stable-bin
 pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-aarch64-bin
-	pkgver = 1.7b
+	pkgver = 1.7.2b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -14266,8 +14326,8 @@ pkgname = zen-browser-aarch64-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.7b
-	pkgrel = 2
+	pkgver = 1.7.2b
+	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -14302,8 +14362,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = zen-browser-1.7b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7b/zen.linux-x86_64.tar.bz2
-	sha256sums_amd64 = b7276efa47358d8eec2e06a6e4adc324f29c1b10e7e80653fd4724e0f7717fef
+	source_amd64 = zen-browser-1.7.2b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.2b/zen.linux-x86_64.tar.bz2
+	sha256sums_amd64 = 3ca175cc989b6c06527decde0d8254ec5caceb2be5fc09975e1461b62d452079
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -14313,13 +14373,13 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = zen-browser-1.7b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7b/zen.linux-aarch64.tar.bz2
-	sha256sums_arm64 = 68893c2bcad5436d48f420b0db310725b30b5b8fd79071ebde03bbc220be41b7
+	source_arm64 = zen-browser-1.7.2b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.2b/zen.linux-aarch64.tar.bz2
+	sha256sums_arm64 = 1b4aa847889abca8ec968d53e0a2346375c28b95eae7013c61f9eed5e1bccde8
 
 pkgname = zen-browser-bin
 ---
 pkgbase = zen-browser-generic-bin
-	pkgver = 1.7b
+	pkgver = 1.7.2b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -14333,7 +14393,7 @@ pkgbase = zen-browser-generic-bin
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
-	pkgver = 1.7b
+	pkgver = 1.7.2b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -14403,13 +14463,13 @@ pkgname = zoho-notebook-deb
 ---
 pkgbase = zoom-deb
 	gives = zoom
-	pkgver = 6.2.5.2440
+	pkgver = 6.3.6.6315
 	pkgdesc = Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution.
 	arch = amd64
 	replaces = zoom
 	repology = project: zoom-videoconference
-	source = https://zoom.us/client/6.2.5.2440/zoom_amd64.deb
-	sha256sums = 744f9587c138518c988a1172aa0907920dc7d8f5ebe4361d75dd1cc188337db8
+	source = https://zoom.us/client/6.3.6.6315/zoom_amd64.deb
+	sha256sums = f80d2ed1464be0fbae059ea2aa8d88ba1ce195018e052fbffdb9d5b0e19aa68e
 
 pkgname = zoom-deb
 ---

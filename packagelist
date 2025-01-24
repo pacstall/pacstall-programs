@@ -18,6 +18,7 @@ appmenu-registrar-backport
 apptainer-deb
 apptainer-suid-deb
 apx-git
+aqua-ide-bin
 ardour-git
 arduino-cli-bin
 arduino-ide-bin
@@ -299,6 +300,7 @@ librewolf-deb
 libspa-codec-bluez5-aac-bin
 libssl1.1-deb
 libtomlplusplus-header
+libwebrtc-audio-processing1-deb
 libx86emu
 libxapp1-deb
 lightpad-git
@@ -579,6 +581,7 @@ rio-wayland-deb
 rio-x11-deb
 rosary-deb
 rpcs3-app
+rpi-imager-app
 rsbbi-git
 rstudio-deb
 rust-bin
@@ -692,6 +695,7 @@ vivarium
 vkroots-git
 vscode-deb
 vscode-insiders-deb
+vscodium-bin
 vscodium-deb
 vyprvpn-deb
 waf
