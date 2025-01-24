@@ -1958,7 +1958,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.80
+	pkgver = 0.0.81
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1968,8 +1968,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.80/discord-0.0.80.deb
-	sha256sums = c3d2e26de2658345988c09a5646831d5b684433966dbfee61c96f48ebb698f94
+	source = https://dl.discordapp.net/apps/linux/0.0.81/discord-0.0.81.deb
+	sha256sums = 035be1ce63262321512eba4e59a5a9c71995584a1ab6e9dee1bf2523e2e5e700
 
 pkgname = discord-deb
 ---
@@ -1986,7 +1986,7 @@ pkgbase = discord-ptb-deb
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.80
+	pkgver = 0.0.81
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2003,8 +2003,8 @@ pkgbase = discord
 	depends = libc++1
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.80::https://dl.discordapp.net/apps/linux/0.0.80/discord-0.0.80.tar.gz
-	sha256sums = a1a9ae1762dc7410b61d4cc1d3c953971beb5e313a605057c0b243ae660a4573
+	source = @discord~0.0.81::https://dl.discordapp.net/apps/linux/0.0.81/discord-0.0.81.tar.gz
+	sha256sums = 577c5a05b0995f54d4697c4b6cc3a127c54528c6417c247fc396a3ac0beeda44
 
 pkgname = discord
 ---
