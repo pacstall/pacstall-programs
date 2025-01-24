@@ -298,6 +298,7 @@ librewolf-deb
 libspa-codec-bluez5-aac-bin
 libssl1.1-deb
 libtomlplusplus-header
+libwebrtc-audio-processing1-deb
 libx86emu
 libxapp1-deb
 lightpad-git
