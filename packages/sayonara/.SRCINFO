@@ -1,6 +1,7 @@
 pkgbase = sayonara
 	gives = sayonara
-	pkgver = 1.10.0-stable1
+	pkgver = 1.10.0
+	pkgrel = 1
 	pkgdesc = Small, clear and fast audio player for Linux written in C++
 	url = https://sayonara-player.com
 	arch = amd64
@@ -25,7 +26,7 @@ pkgbase = sayonara
 	license = GPL-3.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: sayonara
-	source = @sayonara~1.10.0-stable1::https://gitlab.com/luciocarreras/sayonara-player/-/archive/1.10.0-stable1/sayonara-player-1.10.0-stable1.tar.gz
+	source = @sayonara~1.10.0::https://gitlab.com/luciocarreras/sayonara-player/-/archive/1.10.0-stable1/sayonara-player-1.10.0-stable1.tar.gz
 	sha256sums = 7efa5facf7eacaa4ecd3414cdd62ef576804df5ed5516fa7aa4488cb27c2f6ac
 
 pkgname = sayonara

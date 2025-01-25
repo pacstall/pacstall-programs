@@ -2,9 +2,10 @@ pkgname="sayonara"
 gives="sayonara"
 repology=("project: ${gives}")
 arch=('amd64')
-pkgver="1.10.0-stable1"
+pkgver="1.10.0"
+pkgrel="1"
 url='https://sayonara-player.com'
-source=("@${pkgname}~${pkgver}::https://gitlab.com/luciocarreras/sayonara-player/-/archive/${pkgver}/sayonara-player-${pkgver}.tar.gz")
+source=("@${pkgname}~${pkgver}::https://gitlab.com/luciocarreras/sayonara-player/-/archive/${pkgver}-stable${pkgrel}/sayonara-player-${pkgver}-stable${pkgrel}.tar.gz")
 sha256sums=("7efa5facf7eacaa4ecd3414cdd62ef576804df5ed5516fa7aa4488cb27c2f6ac")
 makedepends=("cmake" "gstreamer1.0-plugins-bad" "gstreamer1.0-plugins-ugly" "lame" "libgstreamer1.0-dev"
   "libgstreamer-plugins-bad1.0-dev" "libgstreamer-plugins-base1.0-dev" "libqt5sql5-sqlite" "libqt5svg5-dev" "libmp3lame0"
