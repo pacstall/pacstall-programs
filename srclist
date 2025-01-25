@@ -8389,7 +8389,7 @@ pkgbase = noisetorch-bin
 	maintainer = Marie Piontek <marie@kaifa.ch>
 	repology = project: noisetorch
 	repology = visiblename: noisetorch-bin
-	source = @noisetorch-bin~0.12.2::https://github.com/noisetorch/NoiseTorch/releases/download/v0.12.2/NoiseTorch_x64_v0.12.2.tgz
+	source = noisetorch-bin~0.12.2::https://github.com/noisetorch/NoiseTorch/releases/download/v0.12.2/NoiseTorch_x64_v0.12.2.tgz
 	source = noisetorch-pipewire.service::https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pipewire.service?h=noisetorch-bin
 	source = noisetorch-pulse.service::https://aur.archlinux.org/cgit/aur.git/plain/noisetorch-pulse.service?h=noisetorch-bin
 	sha256sums = aaa29e76736dc3432197e665f3c868496b5aca52183b67e5a0a1b8fa7913fe60
