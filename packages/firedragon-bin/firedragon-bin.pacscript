@@ -10,7 +10,7 @@ sha256sums=("bc5200c9fefd86c8d619cc18e9c54e5a6ba764af13d572d7c3f38e98c59c16e0")
 
 package() {
   cd "${srcdir}"
-  
+
   if [ ! -f "${srcdir}/${gives}-v${pkgver}.linux-x86_64.tar.zst" ]; then
     echo "Error: Tarball not found: ${srcdir}/${gives}-v${pkgver}.linux-x86_64.tar.zst"
     exit 1
@@ -18,7 +18,7 @@ package() {
 
   mkdir -p "${pkgdir}/lib/firedragon"
   tar --strip-components=1 -xvf "${srcdir}/${gives}-v${pkgver}.linux-x86_64.tar.zst" -C "${pkgdir}/lib/firedragon"
-  
+
   if [ -f "${pkgdir}/lib/firedragon/firedragon" ]; then
     chmod +x "${pkgdir}/lib/firedragon/firedragon"
   else
@@ -49,7 +49,7 @@ Actions=Private;
 [Desktop Action Private]
 Exec=/lib/firedragon/firedragon --private-window %u
 Name=Open in private mode' | tee "${pkgdir}/usr/share/applications/firedragon.desktop" > /dev/null
-  
+
   mkdir -p "${pkgdir}/usr/bin"
   ln -sf "/lib/firedragon/firedragon-bin" "${pkgdir}/usr/bin/firedragon-bin"
   ln -sf "/lib/firedragon/firedragon" "${pkgdir}/usr/bin/firedragon"
