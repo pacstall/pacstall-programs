@@ -11,7 +11,7 @@ sha256sums=("bc5200c9fefd86c8d619cc18e9c54e5a6ba764af13d572d7c3f38e98c59c16e0")
 package() {
   cd "${srcdir}"
   mkdir -p "${pkgdir}/lib/firedragon"
-  cp -r firefox/* "${pkgdir}/lib/firedragon"
+  tar --strip-components=1 -xvf "${srcdir}/${gives}-v${pkgver}.linux-x86_64.tar.zst" -C "${pkgdir}/lib/firedragon"
   chmod +x "${pkgdir}/lib/firedragon/firedragon"
   chmod +x "${pkgdir}/lib/firedragon/firedragon-bin"
   mkdir -p "${pkgdir}/usr/share/applications/"
