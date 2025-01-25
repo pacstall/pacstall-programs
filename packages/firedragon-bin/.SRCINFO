@@ -1,1 +1,11 @@
+pkgbase = firedragon-bin
+	gives = firedragon
+	pkgver = 11.22.0-2
+	pkgdesc = FireDragon is a browser based on the excellent Floorp browser
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: firedragon
+	source = https://gitlab.com/garuda-linux/firedragon/builder/-/releases/v11.22.0-2/downloads/firedragon-v11.22.0-2.linux-x86_64.tar.zst
+	sha256sums = bc5200c9fefd86c8d619cc18e9c54e5a6ba764af13d572d7c3f38e98c59c16e0
 
+pkgname = firedragon-bin
