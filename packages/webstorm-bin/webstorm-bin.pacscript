@@ -1,17 +1,17 @@
 pkgname="webstorm-bin"
-pkgver="2024.3.1.1"
+pkgver="2024.3.2"
 gives="webstorm"
 arch=("amd64" "arm64")
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="Powerful and versatile IDE for JavaScript, TypeScript, HTML, CSS, React, Angular, Vue, and Node.js development."
 source_amd64=("https://download.jetbrains.com/${gives}/WebStorm-${pkgver}.tar.gz")
-sha256sums_amd64=("275999ca069658257d6f06875f283abf9c0b102bdf812cf7eefe86a1dda90c1b")
+sha256sums_amd64=("2e9054ae506e578cf89e4cea017d953c416281470a4a5728b157e43ac4888d4e")
 source_arm64=("https://download.jetbrains.com/${gives}/WebStorm-${pkgver}-aarch64.tar.gz")
-sha256sums_arm64=("b136ec6696a47511a7396eb5416ff055964a040d72ed29eb6c362e1b37ce0ab5")
+sha256sums_arm64=("9914fe6e6b5f0a7e87c9628fdf70b5083b68ec14b8873ad6847e4ea8e8c80a96")
 repology=("project: webstorm")
 
 package() {
-  cd "${srcdir}/WebStorm-243.22562.222"
+  cd "${srcdir}/WebStorm-243.23654.120"
   mkdir -p "${pkgdir}/usr/share/licenses/webstorm"
   mkdir -p "${pkgdir}/usr/share/webstorm"
   mkdir -p "${pkgdir}/usr/share/pixmaps"
