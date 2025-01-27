@@ -4,7 +4,7 @@ source=("${gives}::https://github.com/rhino-linux/hotfix.git")
 arch=("all")
 pkgver="0.0.1"
 depends=("jq" "curl")
-compatible=("ubuntu:devel")
+compatible=("ubuntu:devel" "ubuntu:plucky")
 pkgdesc="Fetch and run hotfixes for Rhino Linux"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
