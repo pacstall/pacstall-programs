@@ -9925,7 +9925,7 @@ pkgbase = ptyxis
 	depends = libvte-2.91-gtk4-0
 	makedepends = meson
 	makedepends = cmake
-	makedepends = libglib-2.0-dev>=2.80
+	makedepends = libglib2.0-dev>=2.80
 	makedepends = libjson-glib-dev
 	makedepends = libgtk-4-dev
 	makedepends = libadwaita-1-dev>=1.6
