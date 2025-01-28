@@ -27,7 +27,7 @@ package() {
 Type=Application
 Name=Notesnook
 Icon=notesnook
-Exec=notesnook
+Exec=env APPIMAGELAUNCHER_DISABLE=1 /usr/bin/notesnook
 Comment=An end-to-end encrypted note taking alternative to Evernote
 Categories=Utility;
 Terminal=false
