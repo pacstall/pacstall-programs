@@ -1,14 +1,14 @@
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.13.0-061300rc1
-	pkgver = 6.13~rc1
-	pkgdesc = Ubuntu Linux mainline kernel (Headers)
+	gives = linux-headers-6.13-rc7-common
+	pkgver = 6.13~rc7
+	pkgdesc = Debian Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-headers-6.13.0-061300rc1_6.13.0-061300rc1.202412012327_all.deb
-	sha256sums = eefb234f6f7c434961232db82050496ed38891b7856beacbf6889aa56b6ec6dc
+	source = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.13-rc7-common_6.13~rc7-1~exp1_all.deb
+	sha256sums = 325937baf65993f7b98db7ed8b150cef1667fe2ccc275cd49da2fe4fe7926ab0
 
 pkgname = linux-headers-deb

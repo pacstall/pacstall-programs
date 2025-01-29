@@ -1,11 +1,10 @@
 pkgbase = linux-kernel
-	pkgver = 6.13~rc1
-	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
+	pkgver = 6.13~rc7
+	pkgdesc = Provides the latest Linux kernel via the Debian mainline repositories
 	arch = amd64
 	arch = arm64
 	pacdeps = linux-headers-deb
 	pacdeps = linux-headers-generic-deb
-	pacdeps = linux-modules-deb
 	pacdeps = linux-image-unsigned-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
