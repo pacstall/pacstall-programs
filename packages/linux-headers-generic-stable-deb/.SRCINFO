@@ -8,10 +8,10 @@ pkgbase = linux-headers-generic-stable-deb
 	repology = project: linux
 	repology = repo: distrowatch
 	gives_arm64 = linux-headers-6.12.11-arm64
-	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/_6.12.11-1_arm64.deb
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.12.11-arm64_6.12.11-1_arm64.deb
 	sha256sums_arm64 = 37353b7398d37fdb098658a32dc0b0f9612b6e754e1b477b402102f5f221b02f
 	gives_amd64 = linux-headers-6.12.11-amd64
-	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/_6.12.11-1_amd64.deb
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.12.11-amd64_6.12.11-1_amd64.deb
 	sha256sums_amd64 = 1cc6d32f60e3997a04adfaa2b002fe599757248523baadd4873d7194b411bfc6
 
 pkgname = linux-headers-generic-stable-deb

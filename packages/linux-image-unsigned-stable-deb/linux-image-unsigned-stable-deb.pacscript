@@ -9,6 +9,5 @@ sha256sums_amd64=("88c1d545f40ae292c1ab3ba75fb6d2aee7c55f434578cc8eca1cfacd535e0
 source_arm64=("http://ftp.debian.org/debian/pool/main/l/linux/${gives_arm64}_${buildver}_arm64.deb")
 source_amd64=("http://ftp.debian.org/debian/pool/main/l/linux/${gives_amd64}_${buildver}_amd64.deb")
 pkgdesc="Debian Linux stable kernel (Unsigned image)"
-pacdeps=("linux-headers-generic-stable-deb")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: distrowatch")

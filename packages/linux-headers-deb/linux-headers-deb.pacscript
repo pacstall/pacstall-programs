@@ -5,6 +5,7 @@ gives="linux-headers-${pkgver/\~/-}-common"
 source=("http://ftp.debian.org/debian/pool/main/l/linux/${gives}_${buildver}_all.deb")
 pkgdesc="Debian Linux mainline kernel (Headers)"
 sha256sums=("325937baf65993f7b98db7ed8b150cef1667fe2ccc275cd49da2fe4fe7926ab0")
+pacdeps=("linux-image-unsigned-deb" "linux-modules-deb")
 arch=('all')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")

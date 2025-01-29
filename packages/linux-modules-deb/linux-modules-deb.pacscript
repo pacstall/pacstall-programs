@@ -1,7 +1,7 @@
 pkgname="linux-modules-deb"
-gives="linux-modules-6.13.0-061300rc1-generic"
-pkgver="6.13~rc1"
-buildver="6.13.0-061300rc1.202412012327"
+pkgver="6.13~rc7"
+buildver="${pkgver}-1~exp1"
+gives="linux-kbuild-${pkgver/\~/-}"
 arch=('arm64' 'amd64')
 sha256sums_arm64=("21659a4bf35cd918727693cc54b23b570d4bcbfc42bc2f3b1cd8f533eab6cdd6")
 sha256sums_amd64=("88d3d765c41d860a1137ffe7f908d7d4169cb65a1d679abe665a4d5d1c9e859a")

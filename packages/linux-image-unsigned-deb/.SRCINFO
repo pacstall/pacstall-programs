@@ -3,7 +3,6 @@ pkgbase = linux-image-unsigned-deb
 	pkgdesc = Debian Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
-	pacdeps = linux-headers-generic-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: aur

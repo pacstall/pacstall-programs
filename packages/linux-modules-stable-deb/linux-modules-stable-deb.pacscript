@@ -1,7 +1,7 @@
 pkgname="linux-modules-stable-deb"
-gives="linux-modules-6.12.3-061203-generic"
-pkgver="6.12.3"
-buildver="6.12.3-061203.202412060638"
+pkgver="6.12.11"
+buildver="${pkgver}-1"
+gives="linux-kbuild-${pkgver/\~/-}"
 arch=('arm64' 'amd64')
 sha256sums_arm64=("db5b9efae1a94434dc5c6b663fd97270b7918a2710ef219970203a0674b82654")
 sha256sums_amd64=("2014492c428b39295db2e819d59e2f77f845f38fff72b35f062eda9266db6648")

@@ -5,6 +5,7 @@ gives="linux-headers-${pkgver/\~/-}-common"
 source=("http://ftp.debian.org/debian/pool/main/l/linux/${gives}_${buildver}_all.deb")
 pkgdesc="Debian Linux stable kernel (Headers)"
 sha256sums=("d13d9aa91bf68f708ae1a715f25f301931934585132e53f6ee7e22b57fc2fa9b")
+pacdeps=("linux-image-unsigned-stable-deb" "linux-modules-stable-deb")
 arch=('all')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: distrowatch")

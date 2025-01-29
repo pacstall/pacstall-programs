@@ -9,6 +9,5 @@ sha256sums_amd64=("e890224749eebc8ee7078311c6ad0956b497611e7c3e53e85d6203fb871cf
 source_arm64=("http://ftp.debian.org/debian/pool/main/l/linux/${gives_arm64}_${buildver}_arm64.deb")
 source_amd64=("http://ftp.debian.org/debian/pool/main/l/linux/${gives_amd64}_${buildver}_amd64.deb")
 pkgdesc="Debian Linux mainline kernel (Unsigned image)"
-pacdeps=("linux-headers-generic-deb")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline")
