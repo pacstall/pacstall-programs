@@ -9208,7 +9208,7 @@ pkgname = pacstall
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.8
+	pkgver = 3.3.9
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
