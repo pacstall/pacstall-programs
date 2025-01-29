@@ -6265,19 +6265,20 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.12.3-061203-generic
-	pkgver = 6.12.3
-	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
+	pkgver = 6.12.11
+	pkgdesc = Debian Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
 	pacdeps = linux-headers-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-headers-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = 45cdff50c5e0e1fc9f48cf3e4204ff77f3fddda88c904ca3952709a5a9a2a8a6
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-headers-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 58379b5f91d85634cdc63c575d16057f1ab8eb3378ca8b97218b1df5f68d361b
+	gives_arm64 = linux-headers-6.12.11-arm64
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/_6.12.11-1_arm64.deb
+	sha256sums_arm64 = 37353b7398d37fdb098658a32dc0b0f9612b6e754e1b477b402102f5f221b02f
+	gives_amd64 = linux-headers-6.12.11-amd64
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/_6.12.11-1_amd64.deb
+	sha256sums_amd64 = 1cc6d32f60e3997a04adfaa2b002fe599757248523baadd4873d7194b411bfc6
 
 pkgname = linux-headers-generic-stable-deb
 ---
