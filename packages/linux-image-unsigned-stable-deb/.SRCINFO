@@ -8,10 +8,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	repology = project: linux
 	repology = repo: distrowatch
 	gives_arm64 = linux-image-6.12.11-arm64-unsigned
-	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/_6.12.11-1_arm64.deb
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-image-6.12.11-arm64-unsigned_6.12.11-1_arm64.deb
 	sha256sums_arm64 = f85e8d52618ea17d2d2b73865544aafa7edb0decd446a8eb72507d2cdd64f237
 	gives_amd64 = linux-image-6.12.11-amd64-unsigned
-	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/_6.12.11-1_amd64.deb
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-image-6.12.11-amd64-unsigned_6.12.11-1_amd64.deb
 	sha256sums_amd64 = 88c1d545f40ae292c1ab3ba75fb6d2aee7c55f434578cc8eca1cfacd535e0ac6
 
 pkgname = linux-image-unsigned-stable-deb

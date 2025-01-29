@@ -10,10 +10,10 @@ pkgbase = linux-image-unsigned-deb
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
 	gives_arm64 = linux-image-6.13-rc7-arm64-unsigned
-	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/_6.13~rc7-1~exp1_arm64.deb
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-image-6.13-rc7-arm64-unsigned_6.13~rc7-1~exp1_arm64.deb
 	sha256sums_arm64 = 132dc71e4df5e8f893afdec1f9aaa2d49bd6720dc6f950b1f08b7771026fcf7a
 	gives_amd64 = linux-image-6.13-rc7-amd64-unsigned
-	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/_6.13~rc7-1~exp1_amd64.deb
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-image-6.13-rc7-amd64-unsigned_6.13~rc7-1~exp1_amd64.deb
 	sha256sums_amd64 = e890224749eebc8ee7078311c6ad0956b497611e7c3e53e85d6203fb871cf174
 
 pkgname = linux-image-unsigned-deb

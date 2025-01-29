@@ -10,10 +10,10 @@ pkgbase = linux-headers-generic-deb
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
 	gives_arm64 = linux-headers-6.13-rc7-arm64
-	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/_6.13~rc7-1~exp1_arm64.deb
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.13-rc7-arm64_6.13~rc7-1~exp1_arm64.deb
 	sha256sums_arm64 = 90e01e392a2522641989b7d32c67c3664bd2ed959f449f7b3a54cefacdf7dd39
 	gives_amd64 = linux-headers-6.13-rc7-amd64
-	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/_6.13~rc7-1~exp1_amd64.deb
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.13-rc7-amd64_6.13~rc7-1~exp1_amd64.deb
 	sha256sums_amd64 = c121ca3d8b96b7662bc299fba01bee81ce6e3a295d6694133405be44f6fc16ad
 
 pkgname = linux-headers-generic-deb
