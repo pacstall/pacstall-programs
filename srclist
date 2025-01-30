@@ -14411,7 +14411,7 @@ pkgbase = zed-editor-stable-bin
 pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-aarch64-bin
-	pkgver = 1.7.2b
+	pkgver = 1.7.3b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -14479,7 +14479,7 @@ pkgbase = zen-browser-bin
 pkgname = zen-browser-bin
 ---
 pkgbase = zen-browser-generic-bin
-	pkgver = 1.7.2b
+	pkgver = 1.7.3b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -14493,7 +14493,7 @@ pkgbase = zen-browser-generic-bin
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
-	pkgver = 1.7.2b
+	pkgver = 1.7.3b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
