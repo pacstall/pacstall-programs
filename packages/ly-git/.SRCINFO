@@ -1,0 +1,20 @@
+pkgbase = ly-git
+	gives = ly
+	pkgver = 1.0.2
+	pkgdesc = TUI display manager
+	url = https://github.com/fairyglade/ly
+	priority = required
+	arch = any
+	makedepends = build-essential
+	makedepends = libpam0g-dev
+	makedepends = libxcb-xkb-dev
+	pacdeps = zig-bin
+	conflicts = ly
+	replaces = lightdm
+	replaces = sddm
+	license = WTFPL
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: ly
+	source = https://github.com/fairyglade/ly.git
+
+pkgname = ly-git
