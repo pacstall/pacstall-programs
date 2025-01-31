@@ -44,5 +44,6 @@ package() {
 
 post_install() {
   systemctl enable ly.service
-  systemctl disable getty@tty2.service
+  fancy_message info "Finished installation. Ly is now set as your display manager."
+  fancy_message info "If you need to switch between ttys after Ly's start you also have to disable getty on Ly's tty to prevent 'login' from spawning on top of it by running systemctl disable getty@tty2.service"
 }
