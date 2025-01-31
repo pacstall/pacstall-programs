@@ -4,6 +4,7 @@ arch=('any')
 pkgver="1.0.2"
 url='https://github.com/fairyglade/ly'
 source=("https://github.com/fairyglade/ly.git")
+depends=("systemd")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
 gives="ly"
