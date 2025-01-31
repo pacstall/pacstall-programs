@@ -5,7 +5,7 @@ pkgver="1.0.2"
 url='https://github.com/fairyglade/ly'
 source=(
   "https://github.com/fairyglade/ly.git"
-  "pam_path-fix.patch"
+  "config_dir-fix.patch"
 )
 sha256sums=(
   'SKIP'
@@ -31,15 +31,15 @@ prepare() {
 build() {
   cd "ly"
 
-  # See: https://github.com/fairyglade/ly/pull/725
-  patch build.zig "${srcdir}"/pam_path-fix.patch
+  # Without this patch, the config directory is set as ${pkgdir}/ly-git/etc when it should be /etc/ly-git
+  patch build.zig "${srcdir}"/config_dir-fix.patch
 
   zig build
 }
 
 package() {
   cd "ly"
-  zig build -Ddest_directory="${pkgdir}" installsystemd
+  zig build -Ddest_directory="${pkgdir}" installexe
 }
 
 post_install() {

@@ -6734,7 +6734,7 @@ pkgbase = ly-git
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: ly
 	source = https://github.com/fairyglade/ly.git
-	source = pam_path-fix.patch
+	source = config_dir-fix.patch
 	sha256sums = SKIP
 	sha256sums = SKIP
 
