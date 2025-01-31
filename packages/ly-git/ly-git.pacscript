@@ -39,7 +39,7 @@ build() {
 
 package() {
   cd "ly"
-  zig build -Ddest_directory="${pkgdir}" installexe
+  zig build -Ddest_directory="${pkgdir}" installsystemd
 }
 
 post_install() {
