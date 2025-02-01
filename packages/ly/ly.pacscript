@@ -3,8 +3,9 @@ repology=("project: ly")
 arch=('any')
 pkgver="1.0.2"
 url='https://github.com/fairyglade/ly'
+gives="ly"
 source=(
-  "https://github.com/fairyglade/ly/archive/refs/tags/v${pkgver}.tar.gz"
+  "${gives}::https://github.com/fairyglade/ly/archive/refs/tags/v${pkgver}.tar.gz"
   "config_dir-fix.patch"
 )
 sha256sums=(
@@ -14,7 +15,6 @@ sha256sums=(
 depends=("systemd")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
-gives="ly"
 conflicts=("${gives}-git")
 replaces=("lightdm" "sddm")
 pkgdesc="TUI display manager"
