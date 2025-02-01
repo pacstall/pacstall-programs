@@ -1,0 +1,9 @@
+pkgname="libwebrtc-audio-processing1-deb"
+gives="libwebrtc-audio-processing1"
+pkgdesc="AudioProcessing module from the WebRTC project"
+arch=('amd64' 'arm64')
+pkgver="0.3-1+b2"
+source=("http://ftp.debian.org/debian/pool/main/w/webrtc-audio-processing/${gives}_${pkgver}_${CARCH}.deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=('f15b5c775c12f483f46fabbcb8ce7a479020035435577f402059a6fd77c986b4')
+sha256sums_arm64=('7355923234e2a21d381661efaa09729238b511e85efe358c2b48925367f4b81a')

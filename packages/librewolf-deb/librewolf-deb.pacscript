@@ -1,5 +1,5 @@
 pkgname="librewolf-deb"
-pkgver="133.0.3-1"
+pkgver="134.0-1"
 gives="librewolf"
 arch=("amd64" "arm64")
 replaces=("${gives}")
@@ -8,7 +8,7 @@ breaks=("${gives}-app" "${gives}-bin" "${gives}-git")
 maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")
 incompatible=("debian:buster" "debian:bullseye" "debian:bookworm" "debian:trixie" "debian:sid")
 source_amd64=("https://repo.librewolf.net/pool/${gives}-${pkgver}-linux-x86_64-deb.deb")
-sha256sums_amd64=("f5387a21820622468f5385ec4eb032bab22082b1a7c24cb3347c9d982d773838")
+sha256sums_amd64=("f3390f71c88d8563159a78dc77cbb17578aef55c020ee98acb6a2e5e1711ba08")
 source_arm64=("https://repo.librewolf.net/pool/${gives}-${pkgver}-linux-arm64-deb.deb")
-sha256sums_arm64=("f39a61556e5c040891a52a613826c6d5644d5ff788a6bb6c30cf82bb0e4cd2d7")
+sha256sums_arm64=("a687880c0de03c8d8e1e8d230fd7edf9befca5534a9f555f4b9abdc609a9d21a")
 repology=("project: librewolf")

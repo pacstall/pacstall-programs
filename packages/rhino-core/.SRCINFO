@@ -1,6 +1,6 @@
 pkgbase = rhino-core
-	pkgver = 2025.1~RC
-	pkgrel = 1
+	pkgver = 2025.1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
 	arch = all
@@ -11,6 +11,7 @@ pkgbase = rhino-core
 	pacdeps = rhino-pkg-git
 	pacdeps = rhino-neofetch-git
 	pacdeps = rhino-system-git
+	pacdeps = rhino-hotfix-git
 	replaces = rhino-pine-core
 	replaces = rhino-server-core
 	replaces = rhino-ubxi-core

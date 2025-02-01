@@ -1,0 +1,33 @@
+pkgbase = ptyxis
+	pkgver = 47.7
+	pkgdesc = A terminal for a container-oriented desktop
+	url = https://gitlab.gnome.org/chergert/ptyxis
+	arch = any
+	depends = dconf-gsettings-backend
+	depends = libgcc-s1
+	depends = libglib2.0-0
+	depends = libc6
+	depends = libgtk-4-1
+	depends = hicolor-icon-theme
+	depends = libjson-glib-1.0-0
+	depends = libadwaita-1-0
+	depends = libportal1
+	depends = libportal-gtk4-1
+	depends = libpango-1.0-0
+	depends = libvte-2.91-0
+	depends = libvte-2.91-gtk4-0
+	makedepends = meson
+	makedepends = cmake
+	makedepends = libglib2.0-dev>=2.80
+	makedepends = libjson-glib-dev
+	makedepends = libgtk-4-dev
+	makedepends = libadwaita-1-dev>=1.6
+	makedepends = libvte-2.91-dev
+	makedepends = libvte-2.91-gtk4-dev
+	makedepends = libportal-gtk4-dev
+	makedepends = appstream
+	license = GPL-3.0-or-later
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = ptyxis::git+https://gitlab.gnome.org/chergert/ptyxis#tag=47.7
+
+pkgname = ptyxis

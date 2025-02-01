@@ -1,6 +1,6 @@
 pkgname="zen-browser-bin"
 gives="zen-browser"
-pkgver="1.7b"
+pkgver="1.7.4b"
 pkgrel=1
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
 url="https://zen-browser.app/"
@@ -13,10 +13,10 @@ depends_amd64=("libpangocairo-1.0-0" "libxcursor1" "libxi6" "libxrender1")
 depends_arm64=("libevent-2.1-7" "libffi8" "libnspr4" "libnss3" "libvpx9" "zlib1g" "fontconfig" "procps" "debianutils")
 
 source_amd64=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-x86_64.tar.bz2")
-sha256sums_amd64=('b7276efa47358d8eec2e06a6e4adc324f29c1b10e7e80653fd4724e0f7717fef')
+sha256sums_amd64=('a78510838cd06aa2780ce79dd305c13928341cfcf87f0a9b5d9b4fbb0d3e4b8f')
 
 source_arm64=("zen-browser-${pkgver}.tar.bz2::https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-aarch64.tar.bz2")
-sha256sums_arm64=('68893c2bcad5436d48f420b0db310725b30b5b8fd79071ebde03bbc220be41b7')
+sha256sums_arm64=('2eb8955fb790db1f6dc22d67701da5664528f916800bc4ea4d64e150efb5a290')
 
 package() {
   cd "${srcdir}"
@@ -39,7 +39,7 @@ Type=Application
 Icon=zen-browser
 Categories=Network;WebBrowser;
 MimeType=application/json;application/pdf;application/rdf+xml;application/rss+xml;application/x-xpinstall;application/xhtml+xml;application/xml;audio/flac;audio/ogg;audio/webm;image/avif;image/gif;image/jpeg;image/png;image/svg+xml;image/webp;text/html;text/xml;video/ogg;video/webm;x-scheme-handler/chrome;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/mailto;
-StartupWMClass=zen-beta
+StartupWMClass=zen
 StartupNotify=true
 Keywords=Internet;WWW;Browser;Web;Explorer;
 Actions=new-window;new-private-window;profilemanager;

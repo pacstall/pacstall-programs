@@ -1,0 +1,14 @@
+pkgbase = aqua-ide-bin
+	gives = aqua
+	pkgver = 2024.3.1
+	pkgdesc = The IDE for test automation
+	arch = amd64
+	arch = arm64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: aqua
+	source_amd64 = https://download-cdn.jetbrains.com/aqua/aqua-2024.3.1.tar.gz
+	sha256sums_amd64 = e304d8f900881d18865010819dc035d59be00b1364baa2b98ef47d923907ce57
+	source_arm64 = https://download-cdn.jetbrains.com/aqua/aqua-2024.3.1-aarch64.tar.gz
+	sha256sums_arm64 = 4895ad44a456f56121cc4e78be45b6a4ccae8080ab7251cd434304465d01f7c4
+
+pkgname = aqua-ide-bin
