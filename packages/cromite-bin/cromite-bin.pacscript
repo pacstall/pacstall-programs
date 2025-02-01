@@ -7,10 +7,10 @@ pkgdesc="Cromite is a Chromium fork based on Bromite with built-in support for a
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 source=(
   "https://github.com/uazo/${gives}/releases/download/v${pkgver}-${pkgsha}/chrome-lin64.tar.gz"
+  "https://www.cromite.org/app_icon.png"
 )
 sha256sums=(
   "f85d696e4d400b903f675f86aa379a5e8d00f57fbbf8d8f541cf077f6bc5da2e"
-  "https://www.cromite.org/app_icon.png"
   "95ea4e28bc95c30200d832c075a04d79191110573f8bbebf881b81c4cef6c211"
 )
 repology=("project: ${gives}")
