@@ -6,3 +6,4 @@ pkgdesc="Game launcher with its own embedded BitTorrent client"
 sha256sums=("bd1adf34b8ece2ce3f6b7dcb5e2038bfc90faf2272e4fb4145bfc0cd7dafa9af")
 arch=('amd64')
 repology=("project: ${gives}")
+maintainer=("raik199x <raik199x@mail.ru>")
