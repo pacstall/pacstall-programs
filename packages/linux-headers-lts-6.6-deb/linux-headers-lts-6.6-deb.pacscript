@@ -6,4 +6,5 @@ source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/amd64/${
 pkgdesc="Linux kernel LTS from Ubuntu Mainline Kernel PPA (Headers)"
 sha256sums=("5a846645e87ff4beabc950922216216f4880ac63711fc4d85bfe126e12f5a41a")
 arch=('all')
+incompatible=("debian:10" "debian:11" "debian:12")
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
