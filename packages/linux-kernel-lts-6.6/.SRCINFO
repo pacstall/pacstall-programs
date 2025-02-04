@@ -7,6 +7,9 @@ pkgbase = linux-kernel-lts-6.6
 	pacdeps = linux-headers-generic-lts-6.6-deb
 	pacdeps = linux-modules-lts-6.6-deb
 	pacdeps = linux-image-unsigned-lts-6.6-deb
+	incompatible = debian:10
+	incompatible = debian:11
+	incompatible = debian:12
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
 
