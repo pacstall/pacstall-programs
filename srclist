@@ -2001,7 +2001,7 @@ pkgbase = discord-ptb-deb
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.82
+	pkgver = 0.0.83
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2018,8 +2018,8 @@ pkgbase = discord
 	depends = libc++1
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.82::https://dl.discordapp.net/apps/linux/0.0.82/discord-0.0.82.tar.gz
-	sha256sums = 2fc2f07b951abe66d6d6cde0b122621e36e266736dc84b0427396b374160737c
+	source = @discord~0.0.83::https://dl.discordapp.net/apps/linux/0.0.83/discord-0.0.83.tar.gz
+	sha256sums = b610674988d86b64041f2c48844880ef784cb3f4bc9fcd3ca2af0800ab40ed52
 
 pkgname = discord
 ---
