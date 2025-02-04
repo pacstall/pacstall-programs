@@ -1,9 +1,9 @@
 pkgname="linux-headers-lts-6.6-deb"
-gives="linux-headers-6.6.51-060651"
-pkgver="6.6.51"
-buildver="6.6.51-060651.202409121031"
+gives="linux-headers-6.6.63-060663"
+pkgver="6.6.63"
+buildver="6.6.63-060663.202411221547"
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/amd64/${gives}_${buildver}_all.deb")
 pkgdesc="Linux kernel LTS from Ubuntu Mainline Kernel PPA (Headers)"
-sha256sums=("e2a5b21d8ab8cc1d8a359cd8809bc0cf16ecf3cd0cb87c29a50d05f85f564510")
+sha256sums=("5a846645e87ff4beabc950922216216f4880ac63711fc4d85bfe126e12f5a41a")
 arch=('all')
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
