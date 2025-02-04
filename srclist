@@ -6249,17 +6249,17 @@ pkgbase = linux-headers-generic-deb
 pkgname = linux-headers-generic-deb
 ---
 pkgbase = linux-headers-generic-lts-6.6-deb
-	gives = linux-headers-6.6.51-060651-generic
-	pkgver = 6.6.51
+	gives = linux-headers-6.6.63-060663-generic
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (Generic headers)
 	arch = arm64
 	arch = amd64
 	pacdeps = linux-headers-lts-6.6-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/arm64/linux-headers-6.6.51-060651-generic_6.6.51-060651.202409121031_arm64.deb
-	sha256sums_arm64 = 15f2c20cc364c523df0384be20534dc87a52209906d09d4581610f9cb94ccfb0
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-headers-6.6.51-060651-generic_6.6.51-060651.202409121031_amd64.deb
-	sha256sums_amd64 = 36752c707885aea2cb05aa7f96a06a1fec4e9ca876596e789a5375c45a72328f
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/arm64/linux-headers-6.6.63-060663-generic_6.6.63-060663.202411221547_arm64.deb
+	sha256sums_arm64 = a2d519be6ea7221f416eff230bf2920e203bda9622390f27bda09ae9840c0548
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/amd64/linux-headers-6.6.63-060663-generic_6.6.63-060663.202411221547_amd64.deb
+	sha256sums_amd64 = 5ca5bdb1cc91e90b4b47925b3cdd4d4b91d819c8b5e441cd00497028e7ae1abb
 
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
@@ -6281,13 +6281,13 @@ pkgbase = linux-headers-generic-stable-deb
 pkgname = linux-headers-generic-stable-deb
 ---
 pkgbase = linux-headers-lts-6.6-deb
-	gives = linux-headers-6.6.51-060651
-	pkgver = 6.6.51
+	gives = linux-headers-6.6.63-060663
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (Headers)
 	arch = all
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-headers-6.6.51-060651_6.6.51-060651.202409121031_all.deb
-	sha256sums = e2a5b21d8ab8cc1d8a359cd8809bc0cf16ecf3cd0cb87c29a50d05f85f564510
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/amd64/linux-headers-6.6.63-060663_6.6.63-060663.202411221547_all.deb
+	sha256sums = 5a846645e87ff4beabc950922216216f4880ac63711fc4d85bfe126e12f5a41a
 
 pkgname = linux-headers-lts-6.6-deb
 ---
@@ -6359,18 +6359,18 @@ pkgbase = linux-image-unsigned-deb
 pkgname = linux-image-unsigned-deb
 ---
 pkgbase = linux-image-unsigned-lts-6.6-deb
-	gives = linux-image-unsigned-6.6.51-060651-generic
-	pkgver = 6.6.51
+	gives = linux-image-unsigned-6.6.63-060663-generic
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (Unsigned image)
 	arch = arm64
 	arch = amd64
 	pacdeps = linux-headers-generic-lts-6.6-deb
 	pacdeps = linux-modules-lts-6.6-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/arm64/linux-image-unsigned-6.6.51-060651-generic_6.6.51-060651.202409121031_arm64.deb
-	sha256sums_arm64 = 9e811b5522ca3a499742f3ba75e3db4855536ba9dd6620a151df4307feba6195
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-image-unsigned-6.6.51-060651-generic_6.6.51-060651.202409121031_amd64.deb
-	sha256sums_amd64 = e7a84ca24a58dd344e1cc0183cb68d00ef3a2a67c8153f78ef7a7cfdb6286c71
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/arm64/linux-image-unsigned-6.6.63-060663-generic_6.6.63-060663.202411221547_arm64.deb
+	sha256sums_arm64 = 4422662be87aed8011b5e7a69c58ffc115202eb7610175b14779ada86e161e0e
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/amd64/linux-image-unsigned-6.6.63-060663-generic_6.6.63-060663.202411221547_amd64.deb
+	sha256sums_amd64 = 535fd71c15e7171c3d9f25c19e7e85804de17b3ffbf2e003f430f4a454117587
 
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
@@ -6393,7 +6393,7 @@ pkgbase = linux-image-unsigned-stable-deb
 pkgname = linux-image-unsigned-stable-deb
 ---
 pkgbase = linux-kernel-lts-6.6
-	pkgver = 6.6.51
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA
 	arch = amd64
 	arch = arm64
@@ -6468,16 +6468,16 @@ pkgbase = linux-modules-deb
 pkgname = linux-modules-deb
 ---
 pkgbase = linux-modules-lts-6.6-deb
-	gives = linux-modules-6.6.51-060651-generic
-	pkgver = 6.6.51
+	gives = linux-modules-6.6.63-060663-generic
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (modules)
 	arch = arm64
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/arm64/linux-modules-6.6.51-060651-generic_6.6.51-060651.202409121031_arm64.deb
-	sha256sums_arm64 = 137fa692ad93cc62203c506e871d9e1f19c8febb709c5972c6240c1bd8ae1810
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-modules-6.6.51-060651-generic_6.6.51-060651.202409121031_amd64.deb
-	sha256sums_amd64 = e76d998a6ef4e40bfe60eb3494589cb4f5c4457092427697bb97d253a304246f
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/arm64/linux-modules-6.6.63-060663-generic_6.6.63-060663.202411221547_arm64.deb
+	sha256sums_arm64 = 036bbeb4d82b73343d24c014ce20737853f34fa0ebd99b4960169e38cee4207e
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/amd64/linux-modules-6.6.63-060663-generic_6.6.63-060663.202411221547_amd64.deb
+	sha256sums_amd64 = 0cf51543579d10118423eb50c956b9e1fd73738ca9cd1f478959d35bf1a11b44
 
 pkgname = linux-modules-lts-6.6-deb
 ---
