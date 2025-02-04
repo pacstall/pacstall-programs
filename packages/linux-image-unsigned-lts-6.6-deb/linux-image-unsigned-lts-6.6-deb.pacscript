@@ -8,4 +8,5 @@ sha256sums_amd64=("535fd71c15e7171c3d9f25c19e7e85804de17b3ffbf2e003f430f4a454117
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Linux kernel LTS from Ubuntu Mainline Kernel PPA (Unsigned image)"
 pacdeps=("linux-headers-generic-lts-6.6-deb" "linux-modules-lts-6.6-deb")
+incompatible=("debian:10" "debian:11" "debian:12")
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
