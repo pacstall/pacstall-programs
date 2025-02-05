@@ -16,6 +16,7 @@ pkgbase = vinegar-git
 	makedepends = libffi-dev
 	makedepends = libxcursor-dev
 	makedepends = libvulkan-dev
+	makedepends = libglib2.0-dev-bin
 	optdepends = gamemode: Gamemode integration
 	optdepends = wine: A required dependency (made optional for flexibility)
 	license = GPL-3.0-only

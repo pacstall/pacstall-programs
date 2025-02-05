@@ -19,6 +19,7 @@ makedepends=(
   "libffi-dev"
   "libxcursor-dev"
   "libvulkan-dev"
+  "libglib2.0-dev-bin"
 )
 optdepends=(
   "gamemode: Gamemode integration"
