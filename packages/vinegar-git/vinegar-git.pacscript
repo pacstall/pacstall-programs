@@ -30,14 +30,6 @@ maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-3.0-only')
 external_connection=true
 
-prepare() {
-  cd "${gives}"
-  # https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=vinegar-git#n32
-  # HACK (FIXME): Don't rebuild the icons when installing them
-  # (upstream repo has them anyway and building them causes race conditions)
-  sed -i 's/install-icons: icons/install-icons:/' Makefile
-}
-
 build() {
   cd "${gives}"
   make -j"${NCPU}"
