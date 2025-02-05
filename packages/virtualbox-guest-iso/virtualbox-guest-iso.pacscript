@@ -9,12 +9,8 @@ incompatible=("debian:trixie" "debian:sid" "ubuntu:mantic" "ubuntu:oracular" "ub
 source=("https://download.virtualbox.org/virtualbox/${pkgver}/VBoxGuestAdditions_${pkgver}.iso")
 sha256sums=("dbbda1645bc05c9260adfe9efc4949cb590ec5ec02680aff936375670cffcafc")
 
-build() {
-  cd "${srcdir}"
-  mkdir -p "${srcdir}/lib/virtualbox/additions"
-}
-
 package() {
   cd "${srcdir}"
-  cp -r "${srcdir}/VBoxGuestAdditions_${pkgver}.iso" "${srcdir}/lib/virtualbox/additions/VBoxGuestAdditions_${pkgver}.iso"
+  mkdir -p "${srcdir}/lib/virtualbox/additions"
+  install -Dm644 "${srcdir}/VBoxGuestAdditions_${pkgver}.iso" "${pkgdir}/usr/lib/virtualbox/additions/VBoxGuestAdditions_${pkgver}.iso"
 }
