@@ -16,5 +16,5 @@ build() {
 
 package() {
   cd "${srcdir}"
-  cp -r VBoxGuestAdditions_${pkgver}.iso/* "${srcdir}/lib/virtualbox/additions/VBoxGuestAdditions_${pkgver}.iso"
+  cp -r "${srcdir}/VBoxGuestAdditions_${pkgver}.iso" "${srcdir}/lib/virtualbox/additions/VBoxGuestAdditions_${pkgver}.iso"
 }
