@@ -46,24 +46,13 @@ function srcinfo.die() {
   exit 1
 }
 
-function srcinfo.array_build() {
-  local dest="${1}" src="${2}" i keys values
-  declare -p "$2" &> /dev/null || return 1
-  eval "keys=(\"\${!$2[@]}\")"
-  eval "${dest}=()"
-  for i in "${keys[@]}"; do
-    values+=("printf -v '${dest}[${i}]' %s \"\${${src}[${i}]}\";")
-  done
-  eval "${values[*]}"
-}
-
 function srcinfo.extr_globvar() {
-  local attr="${1}" isarray="${2}" outputvar="${3}" ref
+  local attr="${1}" isarray="${2}" outputvar="${3}"
   if ((isarray)); then
-    srcinfo.array_build ref "${attr}"
-    ((${#ref[@]})) && srcinfo.array_build "${outputvar}" "${attr}"
+    local -n ref="${attr}" out="${outputvar}"
+    [[ -v ref ]] && out=("${ref[@]}")
   else
-    [[ -n ${!attr} ]] && printf -v "${outputvar}" %s "${!attr}"
+    [[ -v ${attr} && -n ${!attr} ]] && printf -v "${outputvar}" %s "${!attr}"
   fi
 }
 
@@ -71,19 +60,19 @@ function srcinfo.extr_fnvar() {
   local funcname="${1}" attr="${2}" isarray="${3}" outputvar="${4}"
   local attr_regex decl r=1
   if ((isarray)); then
-    printf -v attr_regex '^[[:space:]]* %s\+?=\(' "${attr}"
+    printf -v attr_regex '[[:space:]]* %s\+?=\(' "${attr}"
   else
-    printf -v attr_regex '^[[:space:]]* %s\+?=[^(]' "${attr}"
+    printf -v attr_regex '[[:space:]]* %s\+?=[^(]' "${attr}"
   fi
   local func_body
-  func_body=$(declare -f "${funcname}" 2> /dev/null)
-  [[ -z ${func_body} ]] && return 1
-  IFS=$'\n' read -r -d '' -a lines <<< "${func_body}"
-  for line in "${lines[@]}"; do
-    [[ ${line} =~ ${attr_regex} ]] || continue
+  mapfile -t func_body < <(declare -f "${funcname}" 2> /dev/null)
+  [[ -z ${func_body[*]} || ! ${func_body[*]} =~ ${attr_regex} ]] && return 1
+  for line in "${func_body[@]}"; do
+    [[ ${line} =~ ^${attr_regex} ]] || continue
     decl=${line##*([[:space:]])}
     eval "${decl/#${attr}/${outputvar}}"
     r=0
+    break
   done
   return "${r}"
 }
@@ -119,7 +108,7 @@ function srcinfo.extract() {
 }
 
 function srcinfo.write_details() {
-  local attr package_arch a
+  local attr a
   for attr in "${singlevalued[@]}"; do
     srcinfo.extract "$1" "${attr}" 0
   done
@@ -127,9 +116,7 @@ function srcinfo.write_details() {
   for attr in "${multivalued[@]}"; do
     srcinfo.extract "$1" "${attr}" 1
   done
-
-  srcinfo.get_attr '' 'arch' 1 'package_arch' || package_arch=("all")
-  for a in "${package_arch[@]}"; do
+  for a in "${arch[@]}"; do
     [[ ${a} == any || ${a} == all ]] && continue
 
     for attr in "${multivalued_arch_attrs[@]}"; do
@@ -149,11 +136,18 @@ function srcinfo.vars() {
   eval "allars+=(${_sums}sums ${_vars}_${_distros} ${_sums}sums_${_distros})"
   eval "allvars+=(gives_${_distros})"
   eval "multivalued_arch_attrs=(${vars} ${_sums}sums ${_vars}_${_distros} ${_sums}sums_${_distros})"
+  multilist=("${multivalued_arch_attrs[@]}")
+  mapfile -t -O "${#multilist[@]}" multilist < <(
+    for i in {amd64,x86_64,arm64,aarch64,armel,arm,armhf,armv7h,i386,i686,mips64el,ppc64el,riscv64,s390x}; do
+      printf "%s_${i}\n" "${multivalued_arch_attrs[@]}"
+    done
+  )
+  export multilist
 }
 
 function srcinfo.write_global() {
   unset "${allvars[@]}" "${allars[@]}"
-  local CARCH='CARCH_REPLACE' DISTRO='DISTROBASE:DISTROVER' CDISTRO='CDISTROBASE:CDISTROVER' AARCH='AARCH_REPLACE' var ar aars bar ars rar rep seek multilist
+  local CARCH='CARCH_REPLACE' DISTRO='DISTROBASE:DISTROVER' CDISTRO='CDISTROBASE:CDISTROVER' AARCH='AARCH_REPLACE' var ar aars bar ars rar rep seek
   local -A AARCHS_MAP=(
     ["amd64"]="x86_64"
     ["arm64"]="aarch64"
@@ -178,36 +172,22 @@ function srcinfo.write_global() {
   )
   # shellcheck disable=SC1090
   source "${1}"
-  multilist=("${multivalued_arch_attrs[@]}")
-  for i in "${multivalued_arch_attrs[@]}"; do
-    for j in {amd64,x86_64,arm64,aarch64,armel,arm,armhf,armv7h,i386,i686,mips64el,ppc64el,riscv64,s390x}; do
-      multilist+=("${i}_${j}")
-    done
-  done
-  for ar in "${multilist[@]}"; do
-    local -n bar="${ar}"
-    if [[ -n ${bar[*]} ]]; then
+  [[ " ${arch[*]} " != *" all "* && " ${arch[*]} " != *" any "* ]] \
+    && for ar in "${multilist[@]}"; do
+      local -n bar="${ar}"
+      [[ -z ${bar[*]} || ! ${bar[*]} =~ ARCH_REPLACE ]] && continue
       for ars in "${bar[@]}"; do
         ars="${ars//+([[:space:]])/ }"
         ars="${ars#[[:space:]]}"
         ars="${ars%[[:space:]]}"
         if [[ ${ars} =~ CARCH_REPLACE || ${ars} =~ AARCH_REPLACE ]]; then
-          [[ -z ${arch[*]} ]] && arch=('amd64')
           for aars in "${arch[@]}"; do
             if [[ ${ars} =~ AARCH_REPLACE ]]; then
               seek="AARCH_REPLACE"
-              if [[ " ${AARCHS_MAP[*]} " =~ ${aars} ]]; then
-                rep="${aars}"
-              else
-                rep="${AARCHS_MAP[${aars}]}"
-              fi
+              rep="${AARCHS_MAP[${aars}]:-${aars}}"
             else
               seek="CARCH_REPLACE"
-              if [[ " ${AARCHS_MAP[*]} " =~ ${aars} ]]; then
-                rep="${CARCHS_MAP[${aars}]}"
-              else
-                rep="${aars}"
-              fi
+              rep="${CARCHS_MAP[${aars}]:-${aars}}"
             fi
             local -n fin="${ar}_${rep}"
             # shellcheck disable=SC2076
@@ -227,8 +207,7 @@ function srcinfo.write_global() {
           fi
         fi
       done
-    fi
-  done
+    done
   local singlevalued=("${allvars[@]}")
   local multivalued=("${allars[@]}")
   printf '%s = %s\n' 'pkgbase' "${pkgbase:-${pkgname}}"
@@ -239,7 +218,6 @@ function srcinfo.write_package() {
   local singlevalued=(gives pkgdesc url priority)
   local multivalued=(arch license depends checkdepends optdepends pacdeps
     provides checkconflicts conflicts breaks replaces enhances recommends suggests backup repology)
-  printf '%s = %s\n' 'pkgname' "$1"
   srcinfo.write_details "$1"
 }
 
@@ -247,8 +225,8 @@ function srcinfo.gen() {
   local pkg
   srcinfo.write_global "${1}"
   for pkg in "${pkgname[@]}"; do
-    echo
-    srcinfo.write_package "${pkg}"
+    printf '\n%s = %s\n' 'pkgname' "${pkg}"
+    ((${#pkgname[@]} > 1)) && srcinfo.write_package "${pkg}"
   done
 }
 
