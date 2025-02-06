@@ -5,21 +5,17 @@ pkgver="7.1.6"
 release="167084"
 arch=('amd64')
 breaks=("${gives}-bin")
+source_bullseye=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Debian~bullseye_amd64.deb")
+source_bookworm=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Debian~bookworm_amd64.deb")
+source_focal=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Ubuntu~focal_amd64.deb")
+source_jammy=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Ubuntu~jammy_amd64.deb")
+source_noble=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Ubuntu~noble_amd64.deb")
+sha256sums_bullseye="0ea7dc51de62e9ce65862ea72635eeefcdf21016fe54444d3f956f0119ac0ac0"
+sha256sums_bookworm="e87626c95d3162939c397a003f0d2772419cfe138e68ea1074430fbca8c6c13f"
+sha256sums_focal="2d05f51d382cda0162f6ff41a3a0acd64e725c7af547e252a7ce200f8c76ca77"
+sha256sums_jammy="0094042f659eac5f4f82bd2f1afa00ed6f0c5cec3b43a873cc4b61f43e4fb8f0"
+sha256sums_noble="b1e8406c141ff40221cebe5a99224ec74f1960d1491986d3bb1300a99c4790a1"
 pkgdesc="VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use"
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>" "James Ed Randson <jimedrand@disroot.org>" "xdavius <xdavius@github.com>")
 incompatible=("debian:trixie" "debian:sid" "ubuntu:mantic" "ubuntu:oracular" "ubuntu:plucky" "ubuntu:devel")
 
-source_bullseye=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Debian~bullseye_amd64.deb")
-sha256sums_bullseye="0ea7dc51de62e9ce65862ea72635eeefcdf21016fe54444d3f956f0119ac0ac0"
-
-source_bookworm=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Debian~bookworm_amd64.deb")
-sha256sums_bookworm="e87626c95d3162939c397a003f0d2772419cfe138e68ea1074430fbca8c6c13f"
-
-source_focal=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Ubuntu~focal_amd64.deb")
-sha256sums_focal="2d05f51d382cda0162f6ff41a3a0acd64e725c7af547e252a7ce200f8c76ca77"
-
-source_jammy=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Ubuntu~jammy_amd64.deb")
-sha256sums_jammy="0094042f659eac5f4f82bd2f1afa00ed6f0c5cec3b43a873cc4b61f43e4fb8f0"
-
-source_noble=("https://download.virtualbox.org/virtualbox/${pkgver}/${gives}_${pkgver}-${release}~Ubuntu~noble_amd64.deb")
-sha256sums_noble="b1e8406c141ff40221cebe5a99224ec74f1960d1491986d3bb1300a99c4790a1"
