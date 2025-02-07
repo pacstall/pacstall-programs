@@ -19,6 +19,7 @@ sha256sums=("SKIP"
 maintainer=("xdavius <xdavius@github.com>")
 
 # Fix hueplusplus, waiting for upstream fix... thanks to Morg
+
 case "${DISTRO}" in
   ubuntu:devel | debian:testing | debian:sid | debian:trixie)
 
