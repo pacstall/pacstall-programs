@@ -23,7 +23,6 @@ package() {
     mkdir -p "${pkgdir}/${METADIR}"
     touch "${pkgdir}/${METADIR}/${pkgname}-override"
   fi
-  cd "${srcdir}"
   mkdir -p "${pkgdir}/usr/lib/floorp"
   cp -r floorp/* "${pkgdir}/usr/lib/floorp"
   chmod +x "${pkgdir}/usr/lib/floorp/floorp"
