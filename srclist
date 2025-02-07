@@ -6241,24 +6241,25 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.13.0-061300rc1
-	pkgver = 6.13~rc1
-	pkgdesc = Ubuntu Linux mainline kernel (Headers)
+	gives = linux-headers-6.13-rc7-common
+	pkgver = 6.13~rc7
+	pkgdesc = Debian Linux mainline kernel (Headers)
 	arch = all
+	pacdeps = linux-image-unsigned-deb
+	pacdeps = linux-modules-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-headers-6.13.0-061300rc1_6.13.0-061300rc1.202412012327_all.deb
-	sha256sums = eefb234f6f7c434961232db82050496ed38891b7856beacbf6889aa56b6ec6dc
+	source = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.13-rc7-common_6.13~rc7-1~exp1_all.deb
+	sha256sums = 325937baf65993f7b98db7ed8b150cef1667fe2ccc275cd49da2fe4fe7926ab0
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-6.13.0-061300rc1-generic
-	pkgver = 6.13~rc1
-	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
+	pkgver = 6.13~rc7
+	pkgdesc = Debian Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
 	pacdeps = linux-headers-deb
@@ -6267,10 +6268,12 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/arm64/linux-headers-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_arm64.deb
-	sha256sums_arm64 = d7550d7cd3f1d65866f4ad9298f2543c4b44c49120495cb0dd6ae388fecec11d
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-headers-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_amd64.deb
-	sha256sums_amd64 = 7f654ab111334743f5bfc2af24dd65c1c59bb617be2772ef3566b89d7baeeaa3
+	gives_arm64 = linux-headers-6.13-rc7-arm64
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.13-rc7-arm64_6.13~rc7-1~exp1_arm64.deb
+	sha256sums_arm64 = 90e01e392a2522641989b7d32c67c3664bd2ed959f449f7b3a54cefacdf7dd39
+	gives_amd64 = linux-headers-6.13-rc7-amd64
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.13-rc7-amd64_6.13~rc7-1~exp1_amd64.deb
+	sha256sums_amd64 = c121ca3d8b96b7662bc299fba01bee81ce6e3a295d6694133405be44f6fc16ad
 
 pkgname = linux-headers-generic-deb
 ---
@@ -6293,19 +6296,20 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.12.3-061203-generic
-	pkgver = 6.12.3
-	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
+	pkgver = 6.12.11
+	pkgdesc = Debian Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
 	pacdeps = linux-headers-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-headers-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = 45cdff50c5e0e1fc9f48cf3e4204ff77f3fddda88c904ca3952709a5a9a2a8a6
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-headers-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 58379b5f91d85634cdc63c575d16057f1ab8eb3378ca8b97218b1df5f68d361b
+	gives_arm64 = linux-headers-6.12.11-arm64
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.12.11-arm64_6.12.11-1_arm64.deb
+	sha256sums_arm64 = 37353b7398d37fdb098658a32dc0b0f9612b6e754e1b477b402102f5f221b02f
+	gives_amd64 = linux-headers-6.12.11-amd64
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.12.11-amd64_6.12.11-1_amd64.deb
+	sha256sums_amd64 = 1cc6d32f60e3997a04adfaa2b002fe599757248523baadd4873d7194b411bfc6
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -6340,15 +6344,17 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.12.3-061203
-	pkgver = 6.12.3
-	pkgdesc = Ubuntu Linux stable kernel (Headers)
+	gives = linux-headers-6.12.11-common
+	pkgver = 6.12.11
+	pkgdesc = Debian Linux stable kernel (Headers)
 	arch = all
+	pacdeps = linux-image-unsigned-stable-deb
+	pacdeps = linux-modules-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-headers-6.12.3-061203_6.12.3-061203.202412060638_all.deb
-	sha256sums = f9d15413174850dfe6f6653075a678c7a6800c6513697d9d2d111c2677ac1124
+	source = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.12.11-common_6.12.11-1_all.deb
+	sha256sums = d13d9aa91bf68f708ae1a715f25f301931934585132e53f6ee7e22b57fc2fa9b
 
 pkgname = linux-headers-stable-deb
 ---
@@ -6371,22 +6377,21 @@ pkgbase = linux-image-okpine-deb
 pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.13.0-061300rc1-generic
-	pkgver = 6.13~rc1
-	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
+	pkgver = 6.13~rc7
+	pkgdesc = Debian Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
-	pacdeps = linux-headers-generic-deb
-	pacdeps = linux-modules-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/arm64/linux-image-unsigned-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_arm64.deb
-	sha256sums_arm64 = 0abd471b9fea4774772542ea7b9db8f1c39a9732d147313cad968950db96c24e
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-image-unsigned-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_amd64.deb
-	sha256sums_amd64 = 3e85970a00ab6d976434a0b28edbd03a9aa3481b43d060310927c18df9b4b094
+	gives_arm64 = linux-image-6.13-rc7-arm64-unsigned
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-image-6.13-rc7-arm64-unsigned_6.13~rc7-1~exp1_arm64.deb
+	sha256sums_arm64 = 132dc71e4df5e8f893afdec1f9aaa2d49bd6720dc6f950b1f08b7771026fcf7a
+	gives_amd64 = linux-image-6.13-rc7-amd64-unsigned
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-image-6.13-rc7-amd64-unsigned_6.13~rc7-1~exp1_amd64.deb
+	sha256sums_amd64 = e890224749eebc8ee7078311c6ad0956b497611e7c3e53e85d6203fb871cf174
 
 pkgname = linux-image-unsigned-deb
 ---
@@ -6410,20 +6415,19 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.12.3-061203-generic
-	pkgver = 6.12.3
-	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
+	pkgver = 6.12.11
+	pkgdesc = Debian Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
-	pacdeps = linux-headers-generic-stable-deb
-	pacdeps = linux-modules-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-image-unsigned-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = 2a5abe1ae079b14d1ed6707e22896661dd15a90816e2d71abf9e6c45de097f89
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-image-unsigned-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 2f21762e03a8650a035f4a1c1c8af441015ae88bd8422b478bf3c462b74ccd92
+	gives_arm64 = linux-image-6.12.11-arm64-unsigned
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-image-6.12.11-arm64-unsigned_6.12.11-1_arm64.deb
+	sha256sums_arm64 = f85e8d52618ea17d2d2b73865544aafa7edb0decd446a8eb72507d2cdd64f237
+	gives_amd64 = linux-image-6.12.11-amd64-unsigned
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-image-6.12.11-amd64-unsigned_6.12.11-1_amd64.deb
+	sha256sums_amd64 = 88c1d545f40ae292c1ab3ba75fb6d2aee7c55f434578cc8eca1cfacd535e0ac6
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -6445,14 +6449,14 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.12.3
-	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
+	pkgver = 6.12.11
+	pkgdesc = Provides the latest stable Linux kernel via the Debian mainline repositories
 	arch = amd64
 	arch = arm64
+	pacdeps = linux-image-unsigned-stable-deb
+	pacdeps = linux-modules-stable-deb
 	pacdeps = linux-headers-stable-deb
 	pacdeps = linux-headers-generic-stable-deb
-	pacdeps = linux-modules-stable-deb
-	pacdeps = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
@@ -6461,14 +6465,14 @@ pkgbase = linux-kernel-stable
 pkgname = linux-kernel-stable
 ---
 pkgbase = linux-kernel
-	pkgver = 6.13~rc1
-	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
+	pkgver = 6.13~rc7
+	pkgdesc = Provides the latest Linux kernel via the Debian mainline repositories
 	arch = amd64
 	arch = arm64
+	pacdeps = linux-image-unsigned-deb
+	pacdeps = linux-modules-deb
 	pacdeps = linux-headers-deb
 	pacdeps = linux-headers-generic-deb
-	pacdeps = linux-modules-deb
-	pacdeps = linux-image-unsigned-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: aur
@@ -6492,16 +6496,16 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.13.0-061300rc1-generic
-	pkgver = 6.13~rc1
+	gives = linux-kbuild-6.13-rc7
+	pkgver = 6.13~rc7
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/arm64/linux-modules-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_arm64.deb
-	sha256sums_arm64 = 21659a4bf35cd918727693cc54b23b570d4bcbfc42bc2f3b1cd8f533eab6cdd6
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-modules-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_amd64.deb
-	sha256sums_amd64 = 88d3d765c41d860a1137ffe7f908d7d4169cb65a1d679abe665a4d5d1c9e859a
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-kbuild-6.13-rc7_6.13~rc7-1~exp1_arm64.deb
+	sha256sums_arm64 = 0e1cdeb6e4d07607aa102adf849c90524d1190114320ea503b17130655949293
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-kbuild-6.13-rc7_6.13~rc7-1~exp1_amd64.deb
+	sha256sums_amd64 = 9b7844b9ee601518f29152779b97c48838de2da28b46b13ee51532953478169f
 
 pkgname = linux-modules-deb
 ---
@@ -6523,16 +6527,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.12.3-061203-generic
-	pkgver = 6.12.3
+	gives = linux-kbuild-6.12.11
+	pkgver = 6.12.11
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-modules-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = db5b9efae1a94434dc5c6b663fd97270b7918a2710ef219970203a0674b82654
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-modules-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 2014492c428b39295db2e819d59e2f77f845f38fff72b35f062eda9266db6648
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-kbuild-6.12.11_6.12.11-1_arm64.deb
+	sha256sums_arm64 = 3abb4e46f1f53b1b90b90cb0006e833893ed721d878a467ad1192768f92893d0
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-kbuild-6.12.11_6.12.11-1_amd64.deb
+	sha256sums_amd64 = 18803660d4c57fc6cc753d4aa874f785feda639c3e608047330c9abda35792c7
 
 pkgname = linux-modules-stable-deb
 ---

@@ -1,13 +1,13 @@
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.13.0-061300rc1-generic
-	pkgver = 6.13~rc1
+	gives = linux-kbuild-6.13-rc7
+	pkgver = 6.13~rc7
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/arm64/linux-modules-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_arm64.deb
-	sha256sums_arm64 = 21659a4bf35cd918727693cc54b23b570d4bcbfc42bc2f3b1cd8f533eab6cdd6
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-modules-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_amd64.deb
-	sha256sums_amd64 = 88d3d765c41d860a1137ffe7f908d7d4169cb65a1d679abe665a4d5d1c9e859a
+	source_arm64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-kbuild-6.13-rc7_6.13~rc7-1~exp1_arm64.deb
+	sha256sums_arm64 = 0e1cdeb6e4d07607aa102adf849c90524d1190114320ea503b17130655949293
+	source_amd64 = http://ftp.debian.org/debian/pool/main/l/linux/linux-kbuild-6.13-rc7_6.13~rc7-1~exp1_amd64.deb
+	sha256sums_amd64 = 9b7844b9ee601518f29152779b97c48838de2da28b46b13ee51532953478169f
 
 pkgname = linux-modules-deb

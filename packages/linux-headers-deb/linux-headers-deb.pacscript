@@ -1,10 +1,11 @@
 pkgname="linux-headers-deb"
-gives="linux-headers-6.13.0-061300rc1"
-pkgver="6.13~rc1"
-buildver="6.13.0-061300rc1.202412012327"
-source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/amd64/${gives}_${buildver}_all.deb")
-pkgdesc="Ubuntu Linux mainline kernel (Headers)"
-sha256sums=("eefb234f6f7c434961232db82050496ed38891b7856beacbf6889aa56b6ec6dc")
+pkgver="6.13~rc7"
+buildver="${pkgver}-1~exp1"
+gives="linux-headers-${pkgver/\~/-}-common"
+source=("http://ftp.debian.org/debian/pool/main/l/linux/${gives}_${buildver}_all.deb")
+pkgdesc="Debian Linux mainline kernel (Headers)"
+sha256sums=("325937baf65993f7b98db7ed8b150cef1667fe2ccc275cd49da2fe4fe7926ab0")
+pacdeps=("linux-image-unsigned-deb" "linux-modules-deb")
 arch=('all')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")

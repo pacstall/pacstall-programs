@@ -1,12 +1,14 @@
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.12.3-061203
-	pkgver = 6.12.3
-	pkgdesc = Ubuntu Linux stable kernel (Headers)
+	gives = linux-headers-6.12.11-common
+	pkgver = 6.12.11
+	pkgdesc = Debian Linux stable kernel (Headers)
 	arch = all
+	pacdeps = linux-image-unsigned-stable-deb
+	pacdeps = linux-modules-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-headers-6.12.3-061203_6.12.3-061203.202412060638_all.deb
-	sha256sums = f9d15413174850dfe6f6653075a678c7a6800c6513697d9d2d111c2677ac1124
+	source = http://ftp.debian.org/debian/pool/main/l/linux/linux-headers-6.12.11-common_6.12.11-1_all.deb
+	sha256sums = d13d9aa91bf68f708ae1a715f25f301931934585132e53f6ee7e22b57fc2fa9b
 
 pkgname = linux-headers-stable-deb
