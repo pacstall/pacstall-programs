@@ -16,7 +16,7 @@ build() {
 }
 
 package() {
-  cd "${pkgname}~${pkgver}"
+  cd "${pkgname}-${pkgver}"
   cp -r "${pkgname}"/* "${pkgdir}/usr/share/themes/${pkgname}/"
   cp -r "${pkgname}"-dark/* "${pkgdir}/usr/share/themes/${pkgname}-dark/"
 }
