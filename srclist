@@ -2004,13 +2004,13 @@ pkgname = discord-deb
 ---
 pkgbase = discord-ptb-deb
 	gives = discord-ptb
-	pkgver = 0.0.129
+	pkgver = 0.0.130
 	pkgdesc = Chat for Communities and Friends - Public Test Build
 	url = https://discord.com/
 	arch = amd64
 	repology = project: discord-ptb
-	source = https://dl-ptb.discordapp.net/apps/linux/0.0.129/discord-ptb-0.0.129.deb
-	sha256sums = 653fad2170202482b95c94db63feed7697c768942a1e19895e6ac7509e26793d
+	source = https://dl-ptb.discordapp.net/apps/linux/0.0.130/discord-ptb-0.0.130.deb
+	sha256sums = e1a6279083ce2c8e1302a695ed4004c349ba42dbd5eb2e36d25e83049c12b011
 
 pkgname = discord-ptb-deb
 ---
@@ -3067,9 +3067,9 @@ pkgbase = floorp-bin
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: floorp
-	source_amd64 = @floorp-bin~11.20.0::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-x86_64.tar.bz2
+	source_amd64 = floorp::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-x86_64.tar.bz2
 	sha256sums_amd64 = 59e3a67de994bfc8da3038cfb355b249ea67bf13bda8aaff021c459aabffb767
-	source_arm64 = @floorp-bin~11.20.0::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-aarch64.tar.bz2
+	source_arm64 = floorp::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-aarch64.tar.bz2
 	sha256sums_arm64 = cd416460b0b5a8b06ee2c4699110197c8180143e76bce4c119719edfc19c0d00
 
 pkgname = floorp-bin
@@ -4378,7 +4378,7 @@ pkgbase = hakuneko-deb
 pkgname = hakuneko-deb
 ---
 pkgbase = hamclock-big
-	pkgver = 4.11
+	pkgver = 4.13
 	pkgrel = 3
 	pkgdesc = Clock and world map with extra features for amateur radio (1600x960 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -4399,15 +4399,15 @@ pkgbase = hamclock-big
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-big
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.11.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.13.tar.gz
 	source = hamclock.desktop
-	sha256sums = a1f62e092df338ce044173aa62e09a7283687d1cf0173f6bc972af2bcffbff7c
+	sha256sums = d17b34a3b8b1765b84a95e01ab96b0b0e0a4eccc5958e0987e75e919991cc2c7
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-big
 ---
 pkgbase = hamclock-bigger
-	pkgver = 4.11
+	pkgver = 4.13
 	pkgdesc = Clock and world map with extra features for amateur radio (2400x1440 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	arch = any
@@ -4427,15 +4427,15 @@ pkgbase = hamclock-bigger
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-bigger
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.11.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.13.tar.gz
 	source = hamclock.desktop
-	sha256sums = a1f62e092df338ce044173aa62e09a7283687d1cf0173f6bc972af2bcffbff7c
+	sha256sums = d17b34a3b8b1765b84a95e01ab96b0b0e0a4eccc5958e0987e75e919991cc2c7
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-bigger
 ---
 pkgbase = hamclock-huge
-	pkgver = 4.11
+	pkgver = 4.13
 	pkgdesc = Clock and world map with extra features for amateur radio (3200x1920 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	arch = any
@@ -4455,15 +4455,15 @@ pkgbase = hamclock-huge
 	replaces = hamclock-bigger
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-huge
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.11.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.13.tar.gz
 	source = hamclock.desktop
-	sha256sums = a1f62e092df338ce044173aa62e09a7283687d1cf0173f6bc972af2bcffbff7c
+	sha256sums = d17b34a3b8b1765b84a95e01ab96b0b0e0a4eccc5958e0987e75e919991cc2c7
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-huge
 ---
 pkgbase = hamclock
-	pkgver = 4.11
+	pkgver = 4.13
 	pkgrel = 2
 	pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -4484,9 +4484,9 @@ pkgbase = hamclock
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.11.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.13.tar.gz
 	source = hamclock.desktop
-	sha256sums = a1f62e092df338ce044173aa62e09a7283687d1cf0173f6bc972af2bcffbff7c
+	sha256sums = d17b34a3b8b1765b84a95e01ab96b0b0e0a4eccc5958e0987e75e919991cc2c7
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock
@@ -6293,8 +6293,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.12.3-061203-generic
-	pkgver = 6.12.3
+	gives = linux-headers-6.12.12-061212-generic
+	pkgver = 6.12.12
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -6302,10 +6302,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-headers-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = 45cdff50c5e0e1fc9f48cf3e4204ff77f3fddda88c904ca3952709a5a9a2a8a6
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-headers-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 58379b5f91d85634cdc63c575d16057f1ab8eb3378ca8b97218b1df5f68d361b
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/arm64/linux-headers-6.12.12-061212-generic_6.12.12-061212.202502020514_arm64.deb
+	sha256sums_arm64 = e95401b638d2b6732ed5b54e5c4150dd6951ef755977a60bbcbbf284114bc031
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-headers-6.12.12-061212-generic_6.12.12-061212.202502020514_amd64.deb
+	sha256sums_amd64 = 7563818d416271e345270c3d38afadf361712d35b89eb4f200b5ab3ad3a97c4c
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -6340,15 +6340,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.12.3-061203
-	pkgver = 6.12.3
+	gives = linux-headers-6.12.12-061212
+	pkgver = 6.12.12
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-headers-6.12.3-061203_6.12.3-061203.202412060638_all.deb
-	sha256sums = f9d15413174850dfe6f6653075a678c7a6800c6513697d9d2d111c2677ac1124
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-headers-6.12.12-061212_6.12.12-061212.202502020514_all.deb
+	sha256sums = d8576f9717d43bbd544e5adb592910a8738754eb54c8e15bda312fd4fa6ff41f
 
 pkgname = linux-headers-stable-deb
 ---
@@ -6410,8 +6410,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.12.3-061203-generic
-	pkgver = 6.12.3
+	gives = linux-image-unsigned-6.12.12-061212-generic
+	pkgver = 6.12.12
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6420,10 +6420,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-image-unsigned-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = 2a5abe1ae079b14d1ed6707e22896661dd15a90816e2d71abf9e6c45de097f89
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-image-unsigned-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 2f21762e03a8650a035f4a1c1c8af441015ae88bd8422b478bf3c462b74ccd92
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/arm64/linux-image-unsigned-6.12.12-061212-generic_6.12.12-061212.202502020514_arm64.deb
+	sha256sums_arm64 = c552f3d68bc0accff50d236aa709afa13a7f45487bcc2b9180514634fcdb0361
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-image-unsigned-6.12.12-061212-generic_6.12.12-061212.202502020514_amd64.deb
+	sha256sums_amd64 = c28308bcbb7eeb957a4d974eb8803fcdb617634bee8922d3d2696adb4d94156b
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -6445,7 +6445,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.12.3
+	pkgver = 6.12.12
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6523,16 +6523,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.12.3-061203-generic
-	pkgver = 6.12.3
+	gives = linux-modules-6.12.12-061212-generic
+	pkgver = 6.12.12
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-modules-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = db5b9efae1a94434dc5c6b663fd97270b7918a2710ef219970203a0674b82654
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-modules-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 2014492c428b39295db2e819d59e2f77f845f38fff72b35f062eda9266db6648
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/arm64/linux-modules-6.12.12-061212-generic_6.12.12-061212.202502020514_arm64.deb
+	sha256sums_arm64 = 757bf8ba43d7751d42847c7583f08bf22f519265dd6e9f7542519417a13d6f04
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-modules-6.12.12-061212-generic_6.12.12-061212.202502020514_amd64.deb
+	sha256sums_amd64 = 6ea4fe5e928486a6e4fff4ace58878904ee484b38aab01fe19eafd02e55ddc6e
 
 pkgname = linux-modules-stable-deb
 ---
@@ -13230,7 +13230,7 @@ pkgname = veracrypt-deb
 ---
 pkgbase = vesktop-deb
 	gives = vesktop
-	pkgver = 1.5.4
+	pkgver = 1.5.5
 	pkgdesc = A custom Discord client that aims to provide better customizability, performance, and improved Linux support
 	arch = arm64
 	arch = amd64
@@ -13245,10 +13245,10 @@ pkgbase = vesktop-deb
 	depends = libsecret-1-0
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: vesktop
-	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.4/vesktop_1.5.4_arm64.deb
-	sha256sums_arm64 = 00c9fb9f27ffa31312c39870521647d94cb8d4bcf5b94e770ead29a2e0549517
-	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.4/vesktop_1.5.4_amd64.deb
-	sha256sums_amd64 = 1de02beefe491e963d476db62f860d6b2503bb1e68571e7f1bad010ce69e7c5f
+	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.5/vesktop_1.5.5_arm64.deb
+	sha256sums_arm64 = fa23689054be1e6bb77a430a7faaabc48f45486cf0e5c8c0045f4e204e26153a
+	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.5/vesktop_1.5.5_amd64.deb
+	sha256sums_amd64 = 77e22dbba3d305361363be5d6aef53a47fd4ba5f53a4a9aa28e98a2b6e988445
 
 pkgname = vesktop-deb
 ---
@@ -13296,7 +13296,7 @@ pkgname = viper4linux
 ---
 pkgbase = virtualbox-deb
 	gives = virtualbox-7.1
-	pkgver = 7.1.4
+	pkgver = 7.1.6
 	pkgdesc = VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use
 	arch = amd64
 	breaks = virtualbox-7.1-bin
@@ -13310,14 +13310,16 @@ pkgbase = virtualbox-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: virtualbox
-	source_jammy = https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Ubuntu~jammy_amd64.deb
-	source_noble = https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Ubuntu~noble_amd64.deb
-	source_bullseye = https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Debian~bullseye_amd64.deb
-	source_bookworm = https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Debian~bookworm_amd64.deb
-	sha256sums_jammy = 8e210c6e3e9ca8ff2af78238ab81af3d90b14628ffb2df31a629a38ce9307918
-	sha256sums_noble = 54c25c941678198b0baf78f5e4cf468b990fd625ec4e7b231cf1e8a6bace3d1a
-	sha256sums_bullseye = c74ac1234299c3a5143c21f41871ab465f30ad907e31ea01e61c8e81feb5a98c
-	sha256sums_bookworm = a180c568647611eb5c1df1ff37ad1591e7bce020dec4a69b90d6c5d4061c0e76
+	source_focal = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Ubuntu~focal_amd64.deb
+	source_jammy = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Ubuntu~jammy_amd64.deb
+	source_noble = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Ubuntu~noble_amd64.deb
+	source_bullseye = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Debian~bullseye_amd64.deb
+	source_bookworm = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Debian~bookworm_amd64.deb
+	sha256sums_focal = 2d05f51d382cda0162f6ff41a3a0acd64e725c7af547e252a7ce200f8c76ca77
+	sha256sums_jammy = 0094042f659eac5f4f82bd2f1afa00ed6f0c5cec3b43a873cc4b61f43e4fb8f0
+	sha256sums_noble = b1e8406c141ff40221cebe5a99224ec74f1960d1491986d3bb1300a99c4790a1
+	sha256sums_bullseye = 0ea7dc51de62e9ce65862ea72635eeefcdf21016fe54444d3f956f0119ac0ac0
+	sha256sums_bookworm = e87626c95d3162939c397a003f0d2772419cfe138e68ea1074430fbca8c6c13f
 
 pkgname = virtualbox-deb
 ---
@@ -14545,8 +14547,7 @@ pkgname = zen-browser-aarch64-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.7.4b
-	pkgrel = 1
+	pkgver = 1.7.5b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -14581,8 +14582,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = zen-browser-1.7.4b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.4b/zen.linux-x86_64.tar.bz2
-	sha256sums_amd64 = a78510838cd06aa2780ce79dd305c13928341cfcf87f0a9b5d9b4fbb0d3e4b8f
+	source_amd64 = zen-browser-1.7.5b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.5b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 591b50822055412993ac3b3049206fefad7de532bb9f9b573aecff9b8968581e
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -14592,8 +14593,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = zen-browser-1.7.4b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.4b/zen.linux-aarch64.tar.bz2
-	sha256sums_arm64 = 2eb8955fb790db1f6dc22d67701da5664528f916800bc4ea4d64e150efb5a290
+	source_arm64 = zen-browser-1.7.5b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.5b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = bb1b36768211e9aee58b920019ae1e5b8c0634ecaf75d2bdb220110aa75092f7
 
 pkgname = zen-browser-bin
 ---
