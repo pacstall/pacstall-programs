@@ -8905,6 +8905,7 @@ pkgname = opendoas-git
 pkgbase = openrgb-git
 	gives = openrgb
 	pkgver = 0.9
+	pkgrel = 2
 	pkgdesc = Configuration utility for RGB lights supporting motherboards, RAM, & peripherals
 	url = https://gitlab.com/CalcProgrammer1/OpenRGB
 	arch = amd64
