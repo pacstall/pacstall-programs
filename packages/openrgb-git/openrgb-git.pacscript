@@ -21,16 +21,15 @@ maintainer=("xdavius <xdavius@github.com>")
 # Fix hueplusplus, waiting for upstream fix... thanks to Morg
 
 case "${DISTRO}" in
-  ubuntu:devel | debian:testing | debian:sid | debian:trixie)
-
-    prepare() {
-      cd "${srcdir}/OpenRGB"
-      # Fix libmbedtls-dev-3.* issue, fix hueplusplus build error...
-      sed -i -- 's/#include "mbedtls\/certs.h"//g' dependencies/hueplusplus-1.1.0/src/EntertainmentMode.cpp
-    }
-
-    ;;
-  *) ;;
+ubuntu:devel | ubuntu:plucky | debian:testing | debian:sid | debian:trixie )
+  prepare() {
+    cd "${srcdir}/OpenRGB"
+    # Fix libmbedtls-dev-3.* issue, fix hueplusplus build error...
+    sed -i -- 's/#include "mbedtls\/certs.h"//g' dependencies/hueplusplus-1.1.0/src/EntertainmentMode.cpp
+  }
+;;
+*)
+;;
 esac
 
 build() {
