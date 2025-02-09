@@ -1,7 +1,7 @@
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
-	pkgrel = 10
+	pkgrel = 11
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
 	arch = amd64
@@ -36,7 +36,7 @@ pkgbase = unicorn-desktop-git
 	depends = tumbler
 	depends = tumbler-plugins-extra
 	depends = ffmpegthumbnailer
-	depends = bluez-firmware
+	depends = bluez-firmware | linux-firmware-raspi
 	depends = xserver-xorg-input-multitouch
 	depends = xserver-xorg-input-synaptics
 	depends = ukui-touchpadserver
