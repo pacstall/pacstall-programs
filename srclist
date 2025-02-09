@@ -3067,9 +3067,9 @@ pkgbase = floorp-bin
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: floorp
-	source_amd64 = @floorp-bin~11.20.0::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-x86_64.tar.bz2
+	source_amd64 = floorp::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-x86_64.tar.bz2
 	sha256sums_amd64 = 59e3a67de994bfc8da3038cfb355b249ea67bf13bda8aaff021c459aabffb767
-	source_arm64 = @floorp-bin~11.20.0::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-aarch64.tar.bz2
+	source_arm64 = floorp::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-aarch64.tar.bz2
 	sha256sums_arm64 = cd416460b0b5a8b06ee2c4699110197c8180143e76bce4c119719edfc19c0d00
 
 pkgname = floorp-bin
@@ -6293,8 +6293,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.12.3-061203-generic
-	pkgver = 6.12.3
+	gives = linux-headers-6.12.12-061212-generic
+	pkgver = 6.12.12
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -6302,10 +6302,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-headers-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = 45cdff50c5e0e1fc9f48cf3e4204ff77f3fddda88c904ca3952709a5a9a2a8a6
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-headers-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 58379b5f91d85634cdc63c575d16057f1ab8eb3378ca8b97218b1df5f68d361b
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/arm64/linux-headers-6.12.12-061212-generic_6.12.12-061212.202502020514_arm64.deb
+	sha256sums_arm64 = e95401b638d2b6732ed5b54e5c4150dd6951ef755977a60bbcbbf284114bc031
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-headers-6.12.12-061212-generic_6.12.12-061212.202502020514_amd64.deb
+	sha256sums_amd64 = 7563818d416271e345270c3d38afadf361712d35b89eb4f200b5ab3ad3a97c4c
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -6340,15 +6340,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.12.3-061203
-	pkgver = 6.12.3
+	gives = linux-headers-6.12.12-061212
+	pkgver = 6.12.12
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-headers-6.12.3-061203_6.12.3-061203.202412060638_all.deb
-	sha256sums = f9d15413174850dfe6f6653075a678c7a6800c6513697d9d2d111c2677ac1124
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-headers-6.12.12-061212_6.12.12-061212.202502020514_all.deb
+	sha256sums = d8576f9717d43bbd544e5adb592910a8738754eb54c8e15bda312fd4fa6ff41f
 
 pkgname = linux-headers-stable-deb
 ---
@@ -6410,8 +6410,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.12.3-061203-generic
-	pkgver = 6.12.3
+	gives = linux-image-unsigned-6.12.12-061212-generic
+	pkgver = 6.12.12
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6420,10 +6420,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-image-unsigned-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = 2a5abe1ae079b14d1ed6707e22896661dd15a90816e2d71abf9e6c45de097f89
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-image-unsigned-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 2f21762e03a8650a035f4a1c1c8af441015ae88bd8422b478bf3c462b74ccd92
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/arm64/linux-image-unsigned-6.12.12-061212-generic_6.12.12-061212.202502020514_arm64.deb
+	sha256sums_arm64 = c552f3d68bc0accff50d236aa709afa13a7f45487bcc2b9180514634fcdb0361
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-image-unsigned-6.12.12-061212-generic_6.12.12-061212.202502020514_amd64.deb
+	sha256sums_amd64 = c28308bcbb7eeb957a4d974eb8803fcdb617634bee8922d3d2696adb4d94156b
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -6445,7 +6445,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.12.3
+	pkgver = 6.12.12
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6523,16 +6523,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.12.3-061203-generic
-	pkgver = 6.12.3
+	gives = linux-modules-6.12.12-061212-generic
+	pkgver = 6.12.12
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-modules-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = db5b9efae1a94434dc5c6b663fd97270b7918a2710ef219970203a0674b82654
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-modules-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 2014492c428b39295db2e819d59e2f77f845f38fff72b35f062eda9266db6648
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/arm64/linux-modules-6.12.12-061212-generic_6.12.12-061212.202502020514_arm64.deb
+	sha256sums_arm64 = 757bf8ba43d7751d42847c7583f08bf22f519265dd6e9f7542519417a13d6f04
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-modules-6.12.12-061212-generic_6.12.12-061212.202502020514_amd64.deb
+	sha256sums_amd64 = 6ea4fe5e928486a6e4fff4ace58878904ee484b38aab01fe19eafd02e55ddc6e
 
 pkgname = linux-modules-stable-deb
 ---
@@ -6804,14 +6804,14 @@ pkgname = lyx
 ---
 pkgbase = mailspring-deb
 	gives = mailspring
-	pkgver = 1.13.3
+	pkgver = 1.15.1
 	pkgdesc = Mailspring is a new version of Nylas Mail maintained by one of the original authors. It's faster, leaner, and shipping today!
 	arch = amd64
 	replaces = mailspring
 	maintainer = Lanius <laniusone@pm.me>
 	repology = project: mailspring
-	source = https://github.com/Foundry376/Mailspring/releases/download/1.13.3/mailspring-1.13.3-amd64.deb
-	sha256sums = d85e64f3345123ac75110d24f30bc8ab54372e7ae7d913a9fccabe1fb56ace57
+	source = https://github.com/Foundry376/Mailspring/releases/download/1.15.1/mailspring-1.15.1-amd64.deb
+	sha256sums = fa09506b3dfa98a32d9cd7b21c7e1bad99b361ef521c2b5c70ee82209a531f69
 
 pkgname = mailspring-deb
 ---
@@ -9269,7 +9269,7 @@ pkgname = pacstall
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.9
+	pkgver = 3.3.11
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -9290,7 +9290,7 @@ pkgbase = pacup-git
 pkgname = pacup-git
 ---
 pkgbase = pacup
-	pkgver = 3.3.9
+	pkgver = 3.3.11
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -9306,8 +9306,8 @@ pkgbase = pacup
 	replaces = pacup-bin
 	replaces = pacup-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.9.tar.gz
-	sha256sums = 8cff377e7bb94370e26a0818b4c1d96b4bb6e5f06db638146fd7c7d84704f0cc
+	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.11.tar.gz
+	sha256sums = d9f6d5523a0aa584230cdf32675705745651fb2ae8768e8628d48c98dd151469
 
 pkgname = pacup
 ---
@@ -14548,8 +14548,7 @@ pkgname = zen-browser-aarch64-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.7.4b
-	pkgrel = 1
+	pkgver = 1.7.6b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -14584,8 +14583,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = zen-browser-1.7.4b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.4b/zen.linux-x86_64.tar.bz2
-	sha256sums_amd64 = a78510838cd06aa2780ce79dd305c13928341cfcf87f0a9b5d9b4fbb0d3e4b8f
+	source_amd64 = zen-browser-1.7.6b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.6b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 2278658c3a2b0b19970fd3826a0176454354f4babc848873ebf4ea47b4d2646e
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -14595,8 +14594,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = zen-browser-1.7.4b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.4b/zen.linux-aarch64.tar.bz2
-	sha256sums_arm64 = 2eb8955fb790db1f6dc22d67701da5664528f916800bc4ea4d64e150efb5a290
+	source_arm64 = zen-browser-1.7.6b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.6b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 98dfc1f69d776f7052cfbc39fdd5b0ced18761e280fdbbd97b7c7985d1af7dfa
 
 pkgname = zen-browser-bin
 ---
