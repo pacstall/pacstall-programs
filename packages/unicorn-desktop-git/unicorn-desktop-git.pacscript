@@ -102,10 +102,6 @@ post_install() {
     echo "[keyfile]" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
     echo "unmanaged-devices=none" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
   fi
-  if [[ ! -d "/home/${PACSTALL_USER}/.config/gtk-3.0" ]]; then
-    mkdir -p "/home/${PACSTALL_USER}/.config/gtk-3.0"
-  fi
-  sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/gtk-3.0"
   echo '============================================================================='
   echo 'Unicorn Desktop Post-Install Information'
   echo ''
