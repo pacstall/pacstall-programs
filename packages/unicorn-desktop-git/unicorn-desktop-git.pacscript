@@ -2,7 +2,7 @@ pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="11"
+pkgrel="1"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
   "vala-panel-appmenu" "appmenu-gtk2-module" "appmenu-gtk3-module" "xfce4-power-manager"
   "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol"
@@ -12,7 +12,7 @@ depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "val
   "ffmpegthumbnailer" "bluez-firmware | linux-firmware-raspi" "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics"
   "ukui-touchpadserver" "pipewire-audio | pulseaudio-module-bluetooth" "bluetooth" "libxfce4ui-utils" "at-spi2-core" "alsa-ucm-conf")
 depends_amd64=("xserver-xorg-video-intel")
-pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile" "adw-gtk-theme" "rhino-xfwm4-theme-git" "appmenu-registrar-backport" "xfce4-dynamic-workspaces-plugin-git")
+pacdeps=("lightpad-git" "papirus-folders" "ulauncher-deb" "cortile" "adw-gtk-theme" "rhino-xfwm4-theme-git" "vala-panel-appmenu-xfce4-git" "xfce4-dynamic-workspaces-plugin-git")
 gives="unicorn-desktop"
 replaces=("unicorn-mobile" "unicorn-mobile-git")
 priority="required"
@@ -80,6 +80,9 @@ post_install() {
       sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
     fi
   done
+  if [[ -f "${homedir}/.config/gtk-3.0/gtk.css" ]]; then
+    sudo sed -i '/^\.-vala-panel-appmenu-core > \* {/,/^}/d' "${homedir}/.config/gtk-3.0/gtk.css"
+  fi
   for i in plank autostart cortile ulauncher; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
@@ -99,13 +102,6 @@ post_install() {
     echo "[keyfile]" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
     echo "unmanaged-devices=none" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
   fi
-  if [[ ! -d "/home/${PACSTALL_USER}/.config/gtk-3.0" ]]; then
-    mkdir -p "/home/${PACSTALL_USER}/.config/gtk-3.0"
-  fi
-  if [[ ! -f "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" ]] || ! grep -q 'vala-panel-appmenu-core' "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css"; then
-    printf ".-vala-panel-appmenu-core > * {\n    min-width: 1430px;\n}\n" | tee -a "/home/${PACSTALL_USER}/.config/gtk-3.0/gtk.css" > /dev/null
-  fi
-  sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/gtk-3.0"
   echo '============================================================================='
   echo 'Unicorn Desktop Post-Install Information'
   echo ''
