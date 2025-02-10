@@ -7,14 +7,16 @@ makedepends=(
   'cmake'
   'valac'
   'libglib2.0-dev'
+  'libgirepository1.0-dev'
   'libxfce4panel-2.0-dev'
   'libxfce4ui-2-dev'
   'libwnck-3-dev'
   'libxfconf-0-dev'
-  'libxfce4panel-2.0-dev'
+  'libxfce4panel-2.0-dev>=4.20'
 )
 depends=(
   'libglib2.0-0'
+  'libgirepository-1.0-1'
   'libxfce4panel-2.0-4'
   'gir1.2-libxfce4panel-2.0'
   'libxfce4ui-2-0'
@@ -40,7 +42,6 @@ replaces=(
   'appmenu-glib-translator'
 )
 maintainer=('Oren Klopfer <oren@taumoda.com>')
-compatible=('*:trixie' '*:sid' '*:oracular' '*:devel' '*:plucky')
 build() {
   meson build vala-panel-appmenu -Dxfce=enabled --prefix=/usr --libexecdir=lib
   meson compile -C build
