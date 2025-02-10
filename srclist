@@ -13117,6 +13117,40 @@ pkgbase = uwufetch
 
 pkgname = uwufetch
 ---
+pkgbase = vala-panel-appmenu-xfce4-git
+	gives = vala-panel-appmenu-xfce4
+	pkgver = 24.05
+	pkgdesc = Small utility to hold DBusMenu menus (XFCE4 plugin built-in)
+	url = https://gitlab.com/vala-panel-project/vala-panel-appmenu
+	arch = amd64
+	arch = arm64
+	depends = libglib2.0-0
+	depends = libxfce4panel-2.0-4
+	depends = gir1.2-libxfce4panel-2.0
+	depends = libxfce4ui-2-0
+	depends = gir1.2-libxfce4ui-2.0
+	makedepends = meson
+	makedepends = libglib2.0-dev
+	makedepends = cmake
+	makedepends = libxfce4panel-2.0-dev
+	makedepends = libxfce4ui-2-dev
+	replaces = xfce4-appmenu-plugin
+	replaces = appmenu-registrar
+	replaces = appmenu-glib-translator
+	provides = xfce4-appmenu-plugin=24.05
+	provides = appmenu-registrar=24.05
+	provides = appmenu-glib-translator=24.05
+	compatible = *:trixie
+	compatible = *:sid
+	compatible = *:oracular
+	compatible = *:devel
+	compatible = *:plucky
+	license = LGPL-3.0-or-later
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://gitlab.com/vala-panel-project/vala-panel-appmenu.git
+
+pkgname = vala-panel-appmenu-xfce4-git
+---
 pkgbase = vega-strike-engine-git
 	gives = vega-strike
 	pkgver = 0.8.0
