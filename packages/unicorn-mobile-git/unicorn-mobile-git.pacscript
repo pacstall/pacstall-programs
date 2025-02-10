@@ -2,14 +2,14 @@ pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="9"
+pkgrel="1"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
   "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11"
   "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev"
   "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "bluez-firmware | linux-firmware-raspi"
   "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics" "ukui-touchpadserver"
   "pipewire-audio | pulseaudio-module-bluetooth" "bluetooth" "alsa-ucm-conf")
-pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile" "adw-gtk-theme" "rhino-xfwm4-theme-git" "appmenu-registrar-backport" "xfce4-dynamic-workspaces-plugin-git")
+pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile" "adw-gtk-theme" "rhino-xfwm4-theme-git" "vala-panel-appmenu-xfce4-git" "xfce4-dynamic-workspaces-plugin-git")
 gives="unicorn-mobile"
 replaces=("unicorn-desktop" "unicorn-desktop-git")
 priority="required"
@@ -82,6 +82,9 @@ post_install() {
       sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
     fi
   done
+  if [[ -f "${homedir}/.config/gtk-3.0/gtk.css" ]]; then
+    sudo sed -i '/^\.-vala-panel-appmenu-core > \* {/,/^}/d' "${homedir}/.config/gtk-3.0/gtk.css"
+  fi
   for i in plank autostart cortile ulauncher; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
