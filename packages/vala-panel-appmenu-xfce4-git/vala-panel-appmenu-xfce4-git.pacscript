@@ -4,8 +4,9 @@ pkgver='24.05'
 pkgdesc='Small utility to hold DBusMenu menus (XFCE4 plugin built-in)'
 makedepends=(
   'meson'
-  'libglib2.0-dev'
   'cmake'
+  'valac'
+  'libglib2.0-dev'
   'libxfce4panel-2.0-dev'
   'libxfce4ui-2-dev'
 )
