@@ -15,17 +15,21 @@ makedepends=(
   'libxfce4panel-2.0-dev>=4.19.0'
 )
 depends=(
+  'bamfdaemon'
+  'libbamf3-2'
+  'libgtk-3-0'
   'libglib2.0-0'
   'libgirepository-1.0-1'
   'libxfce4panel-2.0-4'
-  'gir1.2-libxfce4panel-2.0'
   'libxfce4ui-2-0'
-  'gir1.2-libxfce4ui-2.0'
   'libwnck-3-0'
+  'gir1.2-libxfce4panel-2.0'
+  'gir1.2-libxfce4ui-2.0'
   'gir1.2-wnck-3.0'
   'gir1.2-libxfce4ui-2.0'
   'xfconf'
   'xfce4-panel>=4.19.0'
+  'vala-panel-appmenu-common'
 )
 arch=('amd64' 'arm64')
 license=('LGPL-3.0-or-later')
