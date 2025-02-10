@@ -15,7 +15,7 @@ pkgbase = vala-panel-appmenu-xfce4-git
 	depends = gir1.2-wnck-3.0
 	depends = gir1.2-libxfce4ui-2.0
 	depends = xfconf
-	depends = xfce4-panel
+	depends = xfce4-panel>=4.19.0
 	makedepends = meson
 	makedepends = cmake
 	makedepends = valac
@@ -25,7 +25,7 @@ pkgbase = vala-panel-appmenu-xfce4-git
 	makedepends = libxfce4ui-2-dev
 	makedepends = libwnck-3-dev
 	makedepends = libxfconf-0-dev
-	makedepends = libxfce4panel-2.0-dev>=4.20
+	makedepends = libxfce4panel-2.0-dev>=4.19.0
 	replaces = xfce4-appmenu-plugin
 	replaces = appmenu-registrar
 	replaces = appmenu-glib-translator
