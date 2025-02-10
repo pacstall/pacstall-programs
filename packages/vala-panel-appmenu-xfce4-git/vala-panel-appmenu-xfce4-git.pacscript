@@ -9,6 +9,9 @@ makedepends=(
   'libglib2.0-dev'
   'libxfce4panel-2.0-dev'
   'libxfce4ui-2-dev'
+  'libwnck-3-dev'
+  'libxfconf-0-dev'
+  'libxfce4panel-2.0-dev'
 )
 depends=(
   'libglib2.0-0'
@@ -16,6 +19,11 @@ depends=(
   'gir1.2-libxfce4panel-2.0'
   'libxfce4ui-2-0'
   'gir1.2-libxfce4ui-2.0'
+  'libwnck-3-0'
+  'gir1.2-wnck-3.0'
+  'gir1.2-libxfce4ui-2.0'
+  'xfconf'
+  'xfce4-panel'
 )
 arch=('amd64' 'arm64')
 license=('LGPL-3.0-or-later')
