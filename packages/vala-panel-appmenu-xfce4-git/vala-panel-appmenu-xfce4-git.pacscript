@@ -5,7 +5,6 @@ pkgrel='2'
 pkgdesc='Small utility to hold DBusMenu menus (XFCE4 plugin built-in)'
 makedepends=(
   'meson'
-  'cmake'
   'valac'
   'libglib2.0-dev'
   'libgirepository1.0-dev'
@@ -16,8 +15,6 @@ makedepends=(
   'libxfce4panel-2.0-dev>=4.19.0'
 )
 depends=(
-  'bamfdaemon'
-  'libbamf3-2'
   'libgtk-3-0'
   'libglib2.0-0'
   'libgirepository-1.0-1'
