@@ -1,7 +1,7 @@
 pkgbase = figma-linux-deb
 	gives = figma-linux
 	pkgver = 0.11.5
-	pkgdesc = an unofficial Electron-based Figma desktop app for Linux
+	pkgdesc = Unofficial Electron-based Figma desktop app for Linux
 	url = https://github.com/Figma-Linux/figma-linux
 	arch = amd64
 	arch = arm64
