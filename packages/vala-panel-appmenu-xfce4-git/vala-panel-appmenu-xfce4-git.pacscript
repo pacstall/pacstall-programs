@@ -1,6 +1,7 @@
 pkgname='vala-panel-appmenu-xfce4-git'
 gives='vala-panel-appmenu-xfce4'
 pkgver='24.05'
+pkgrel='2'
 pkgdesc='Small utility to hold DBusMenu menus (XFCE4 plugin built-in)'
 makedepends=(
   'meson'
@@ -47,7 +48,7 @@ replaces=(
 )
 maintainer=('Oren Klopfer <oren@taumoda.com>')
 build() {
-  meson build vala-panel-appmenu -Dxfce=enabled --prefix=/usr --libexecdir=lib
+  meson build vala-panel-appmenu -Dxfce=enabled --prefix=/usr --libexecdir=lib --force-fallback-for=appmenu-glib-translator
   meson compile -C build
 }
 
