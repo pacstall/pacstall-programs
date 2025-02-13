@@ -1,7 +1,7 @@
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
 	pkgver = 0.0.1
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
 	arch = all
@@ -40,7 +40,6 @@ pkgbase = unicorn-mobile-git
 	pacdeps = cortile
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
-	pacdeps = vala-panel-appmenu-xfce4-git
 	pacdeps = xfce4-dynamic-workspaces-plugin-git
 	replaces = unicorn-desktop
 	replaces = unicorn-desktop-git
