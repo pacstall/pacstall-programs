@@ -2,7 +2,7 @@ pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="3"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
   "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11"
   "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev"
@@ -16,6 +16,7 @@ priority="required"
 pkgdesc="Unicorn Desktop Mobile variant by the Rhino Linux Team"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("debian:*")
+backup=('etc/X11/xorg.conf.d/50-synaptics.conf')
 
 build() {
   cd "unicorn"
@@ -116,5 +117,8 @@ post_upgrade() {
   fi
   if [[ -f "${homedir}/.config/gtk-3.0/gtk.css" ]]; then
     sudo sed -i '/^\.-vala-panel-appmenu-core > \* {/,/^}/d' "${homedir}/.config/gtk-3.0/gtk.css"
+  fi
+  if [[ -f "${homedir}/.config/autostart/plank_theme.desktop" ]]; then
+    sudo mv "${homedir}/.config/autostart/plank_theme.desktop" "${homedir}/.config/autostart/plank_theme.desktop.bak"
   fi
 }
