@@ -11,8 +11,8 @@ compatible=("ubuntu:devel" "ubuntu:plucky")
 replaces=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
-pkgver="2025.1"
-pkgrel="2"
+pkgver="2025.2~RC"
+pkgrel="1"
 style="(mobile)"
 branch="devel"
 

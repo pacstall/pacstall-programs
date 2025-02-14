@@ -1,5 +1,5 @@
 pkgbase = discord
-	pkgver = 0.0.84
+	pkgver = 0.0.85
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -16,7 +16,7 @@ pkgbase = discord
 	depends = libc++1
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.84::https://dl.discordapp.net/apps/linux/0.0.84/discord-0.0.84.tar.gz
-	sha256sums = 19bc5af187a48f1f1adc190f05f50074b5b981d9eadd631cc16debcd58198e88
+	source = @discord~0.0.85::https://dl.discordapp.net/apps/linux/0.0.85/discord-0.0.85.tar.gz
+	sha256sums = 5f1122c1e9115de3bdfac9ef52ecb3f9d6eb3f77325587c8f22fe7feee5213b1
 
 pkgname = discord

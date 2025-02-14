@@ -273,6 +273,7 @@ kxstudio-repos-deb
 lagrange
 latte-dock-git
 lazarus-project-deb
+lazydocker-bin
 lazygit
 lbry-deb
 legcord-deb
@@ -691,6 +692,7 @@ unicorn-mobile-git
 universal-ctags-git
 upscayl-app
 uwufetch
+vala-panel-appmenu-xfce4-git
 vega-strike-engine-git
 vega-strike-git
 ventoy-bin

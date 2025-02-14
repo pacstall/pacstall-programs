@@ -53,16 +53,17 @@ pkgname = adw-gtk-theme
 ---
 pkgbase = adw-gtk3
 	gives = adw-gtk3
-	pkgver = 5.3
+	pkgver = 5.6
 	pkgdesc = An unofficial GTK3 port of libadwaita.
 	arch = any
 	breaks = adw-gtk3
 	breaks = adw-gtk3-git
 	maintainer = Herisson <spaceguybox@outlook.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: adw-gtk3
 	repology = repo: aur
-	source = @adw-gtk3~5.3::https://github.com/lassekongo83/adw-gtk3/releases/download/v5.3/adw-gtk3v5.3.tar.xz
-	sha256sums = 2e6e87935bef30936e40d07c7af4fd20754e77917be224f61c4346867196bef0
+	source = @adw-gtk3-5.6::https://github.com/lassekongo83/adw-gtk3/releases/download/v5.6/adw-gtk3v5.6.tar.xz
+	sha256sums = 4ad286655136384f26bce80360a950473cf62532bc2650e85ce4f27776dbafa4
 
 pkgname = adw-gtk3
 ---
@@ -540,10 +541,12 @@ pkgbase = arduino-ide-bin
 pkgname = arduino-ide-bin
 ---
 pkgbase = asdf-vm
-	pkgver = 0.15.0
+	pkgver = 0.16.0
 	pkgdesc = Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more
 	url = https://asdf-vm.com
-	arch = any
+	arch = i386
+	arch = amd64
+	arch = arm64
 	depends = curl
 	depends = git
 	optdepends = build-essential: Array of tools to build software
@@ -553,8 +556,12 @@ pkgbase = asdf-vm
 	optdepends = unzip: Needed by some plugins, like Elixir
 	license = MIT
 	repology = project: asdf-vm
-	source = asdf-vm-0.15.0.tar.gz::https://github.com/asdf-vm/asdf/archive/v0.15.0.tar.gz
-	sha256sums = d0cafe61d27b5e3fcb53658821bfbf744fd040a8ea28b0e22277e032b8e8f7fe
+	source_i386 = asdf-vm-0.16.0-i386.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.0/asdf-v0.16.0-linux-386.tar.gz
+	sha256sums_i386 = f3ee5eb3089304fe5d3961174b045feaf2bf33afd6b232a10237dd5d607a7e03
+	source_amd64 = asdf-vm-0.16.0-amd64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.0/asdf-v0.16.0-linux-amd64.tar.gz
+	sha256sums_amd64 = 7558f8b916fa461ea04b653fdb62fea01362720349e9ef3aa497bc7ef93d22ac
+	source_arm64 = asdf-vm-0.16.0-arm64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.0/asdf-v0.16.0-linux-arm64.tar.gz
+	sha256sums_arm64 = 5394e85001a36dc792087069303fa66e08d0f67740448fcd68dded974aaadb77
 
 pkgname = asdf-vm
 ---
@@ -1987,7 +1994,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.84
+	pkgver = 0.0.85
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1997,8 +2004,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.84/discord-0.0.84.deb
-	sha256sums = ea4a01a8b2bd3cc4cad305f538c4d6617b219252515e36c9ccb84df493c6f30b
+	source = https://dl.discordapp.net/apps/linux/0.0.85/discord-0.0.85.deb
+	sha256sums = d43bb67859ea25b2d65ba09c4ae48f4874cc3068345b8ca14ba6ba1f02c8fa6d
 
 pkgname = discord-deb
 ---
@@ -2015,7 +2022,7 @@ pkgbase = discord-ptb-deb
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.84
+	pkgver = 0.0.85
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2032,8 +2039,8 @@ pkgbase = discord
 	depends = libc++1
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.84::https://dl.discordapp.net/apps/linux/0.0.84/discord-0.0.84.tar.gz
-	sha256sums = 19bc5af187a48f1f1adc190f05f50074b5b981d9eadd631cc16debcd58198e88
+	source = @discord~0.0.85::https://dl.discordapp.net/apps/linux/0.0.85/discord-0.0.85.tar.gz
+	sha256sums = 5f1122c1e9115de3bdfac9ef52ecb3f9d6eb3f77325587c8f22fe7feee5213b1
 
 pkgname = discord
 ---
@@ -2954,15 +2961,15 @@ pkgname = ffsend-bin
 ---
 pkgbase = firefox-arm64-deb
 	gives = firefox
-	pkgver = 134.0.2+build1
+	pkgver = 135.0+build2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
 	repology = repo: ubuntu_20_04
-	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_134.0.2+build1-0ubuntu0.22.04.1~mt1_arm64.deb
-	sha256sums = 214898f33cd2b29a67b025677f8474e1a9ed86057ca6f3d4f79a54c00308ef8d
+	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_135.0+build2-0ubuntu0.22.04.1~mt2_arm64.deb
+	sha256sums = 23d8234079841003b688df1fe6c55bfb503e0f98421b5a169d068c95233b3db5
 
 pkgname = firefox-arm64-deb
 ---
@@ -3005,7 +3012,7 @@ pkgname = firefox-developer-edition-bin
 ---
 pkgbase = firefox-nightly-bin
 	gives = firefox-nightly
-	pkgver = 135.0a1
+	pkgver = 137.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3014,14 +3021,14 @@ pkgbase = firefox-nightly-bin
 	replaces = firefox-nightly-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-135.0a1.en-US.linux-x86_64.tar.xz
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-135.0a1.en-US.linux-aarch64.tar.xz
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.tar.xz
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-137.0a1.en-US.linux-aarch64.tar.xz
 
 pkgname = firefox-nightly-bin
 ---
 pkgbase = firefox-nightly-deb
 	gives = firefox-nightly
-	pkgver = 135.0a1
+	pkgver = 137.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3030,8 +3037,8 @@ pkgbase = firefox-nightly-deb
 	replaces = firefox-nightly-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-135.0a1.en-US.linux-x86_64.deb
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-135.0a1.en-US.linux-aarch64.deb
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.deb
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-137.0a1.en-US.linux-aarch64.deb
 
 pkgname = firefox-nightly-deb
 ---
@@ -5604,6 +5611,26 @@ pkgbase = lazarus-project-deb
 
 pkgname = lazarus-project-deb
 ---
+pkgbase = lazydocker-bin
+	gives = lazydocker
+	pkgver = 0.24.1
+	pkgdesc = The lazier way to manage everything docker
+	url = https://github.com/jesseduffield/lazydocker
+	arch = amd64
+	arch = arm64
+	pacdeps = docker-bin
+	pacdeps = docker-compose-plugin-bin
+	pacdeps = docker-buildx-plugin-bin
+	license = MIT
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: lazydocker
+	source_amd64 = https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/lazydocker_0.24.1_Linux_x86_64.tar.gz
+	sha256sums_amd64 = 461cacf618e1020dff1d7896248c1c1f2267d5c25fb529755e4b9c43c5d1d4a5
+	source_arm64 = https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/lazydocker_0.24.1_Linux_arm64.tar.gz
+	sha256sums_arm64 = c38e715f2cb56440bec16e3744005522c1d13c47d2e3730572849dc69cefd8ae
+
+pkgname = lazydocker-bin
+---
 pkgbase = lazygit
 	gives = lazygit
 	pkgver = 0.42.0
@@ -6804,14 +6831,14 @@ pkgname = lyx
 ---
 pkgbase = mailspring-deb
 	gives = mailspring
-	pkgver = 1.13.3
+	pkgver = 1.15.1
 	pkgdesc = Mailspring is a new version of Nylas Mail maintained by one of the original authors. It's faster, leaner, and shipping today!
 	arch = amd64
 	replaces = mailspring
 	maintainer = Lanius <laniusone@pm.me>
 	repology = project: mailspring
-	source = https://github.com/Foundry376/Mailspring/releases/download/1.13.3/mailspring-1.13.3-amd64.deb
-	sha256sums = d85e64f3345123ac75110d24f30bc8ab54372e7ae7d913a9fccabe1fb56ace57
+	source = https://github.com/Foundry376/Mailspring/releases/download/1.15.1/mailspring-1.15.1-amd64.deb
+	sha256sums = fa09506b3dfa98a32d9cd7b21c7e1bad99b361ef521c2b5c70ee82209a531f69
 
 pkgname = mailspring-deb
 ---
@@ -7533,15 +7560,15 @@ pkgname = mullvad-vpn-beta-deb
 ---
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
-	pkgver = 2025.2
+	pkgver = 2025.3
 	pkgdesc = The Mullvad VPN client app for desktop
 	arch = amd64
 	breaks = mullvad-vpn-beta-deb
 	breaks = mullvad-vpn-git
 	replaces = mullvad-vpn
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.2/MullvadVPN-2025.2_amd64.deb
-	sha256sums = 8ce13a36c9dad51ea4369ff05da63ad2b366832e32d945621e22be2a9852345a
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.3/MullvadVPN-2025.3_amd64.deb
+	sha256sums = c842c3741a1af3f678b6d13fcd1eb6e3a44194dceae183d6a378dc616b05e8ce
 
 pkgname = mullvad-vpn-deb
 ---
@@ -8904,6 +8931,7 @@ pkgname = opendoas-git
 pkgbase = openrgb-git
 	gives = openrgb
 	pkgver = 0.9
+	pkgrel = 2
 	pkgdesc = Configuration utility for RGB lights supporting motherboards, RAM, & peripherals
 	url = https://gitlab.com/CalcProgrammer1/OpenRGB
 	arch = amd64
@@ -9231,7 +9259,7 @@ pkgbase = pacstall-qa-git
 pkgname = pacstall-qa-git
 ---
 pkgbase = pacstall
-	pkgver = 6.1.0
+	pkgver = 6.1.1
 	pkgdesc = An AUR-inspired package manager for Ubuntu Pacstall is the AUR Ubuntu wishes it had. It takes the concept of the AUR and puts a spin on it, making it easier to install and update downstream programs, without scouring github repos and the likes.
 	url = https://pacstall.dev
 	arch = all
@@ -9262,13 +9290,13 @@ pkgbase = pacstall
 	backup = usr/share/pacstall/update
 	maintainer = Pacstall Team <pacstall@pm.me>
 	maintainer = Elsie19 <hwengerstickel@pm.me>
-	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.1.0.zip
+	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.1.1.zip
 
 pkgname = pacstall
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.9
+	pkgver = 3.3.11
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -9289,7 +9317,7 @@ pkgbase = pacup-git
 pkgname = pacup-git
 ---
 pkgbase = pacup
-	pkgver = 3.3.9
+	pkgver = 3.3.11
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -9305,8 +9333,8 @@ pkgbase = pacup
 	replaces = pacup-bin
 	replaces = pacup-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.9.tar.gz
-	sha256sums = 8cff377e7bb94370e26a0818b4c1d96b4bb6e5f06db638146fd7c7d84704f0cc
+	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.11.tar.gz
+	sha256sums = d9f6d5523a0aa584230cdf32675705745651fb2ae8768e8628d48c98dd151469
 
 pkgname = pacup
 ---
@@ -10574,8 +10602,8 @@ pkgbase = resticprofile-bin
 pkgname = resticprofile-bin
 ---
 pkgbase = rhino-core
-	pkgver = 2025.1
-	pkgrel = 2
+	pkgver = 2025.2~RC
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
 	arch = all
@@ -10668,8 +10696,8 @@ pkgbase = rhino-neofetch-git
 pkgname = rhino-neofetch-git
 ---
 pkgbase = rhino-pine-core
-	pkgver = 2025.1
-	pkgrel = 2
+	pkgver = 2025.2~RC
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
 	arch = all
@@ -10719,8 +10747,8 @@ pkgbase = rhino-plymouth-theme-git
 pkgname = rhino-plymouth-theme-git
 ---
 pkgbase = rhino-server-core
-	pkgver = 2025.1
-	pkgrel = 2
+	pkgver = 2025.2~RC
+	pkgrel = 1
 	pkgdesc = Transitional package to provide minimal core Rhino Linux software
 	priority = essential
 	arch = all
@@ -10841,8 +10869,8 @@ pkgbase = rhino-system-git
 pkgname = rhino-system-git
 ---
 pkgbase = rhino-ubxi-core
-	pkgver = 2025.1
-	pkgrel = 2
+	pkgver = 2025.2~RC
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 	priority = essential
 	arch = all
@@ -11726,7 +11754,7 @@ pkgname = spot-client-git
 ---
 pkgbase = spotify-client-deb
 	gives = spotify-client
-	pkgver = 1.2.31.1205.g4d59ad7c
+	pkgver = 1.2.56.502.ga68d2d4f
 	pkgdesc = Spotify streaming music client
 	arch = amd64
 	breaks = spotify-client-git
@@ -11736,8 +11764,8 @@ pkgbase = spotify-client-deb
 	replaces = spotify-client
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: spotify
-	source = http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.2.31.1205.g4d59ad7c_amd64.deb
-	sha256sums = 71b724bd9ec37ccc37b340606bc37f46d47320b5fa429a4c9dce5bd24e07adb8
+	source = http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.2.56.502.ga68d2d4f_amd64.deb
+	sha256sums = b1088324c2c0e2aa0fdbdef99a565bb2698a6a9bb277218efc9f6ed79840bedc
 
 pkgname = spotify-client-deb
 ---
@@ -12947,7 +12975,7 @@ pkgname = unicons-git
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
-	pkgrel = 10
+	pkgrel = 3
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
 	arch = amd64
@@ -12982,7 +13010,7 @@ pkgbase = unicorn-desktop-git
 	depends = tumbler
 	depends = tumbler-plugins-extra
 	depends = ffmpegthumbnailer
-	depends = bluez-firmware
+	depends = bluez-firmware | linux-firmware-raspi
 	depends = xserver-xorg-input-multitouch
 	depends = xserver-xorg-input-synaptics
 	depends = ukui-touchpadserver
@@ -12997,11 +13025,12 @@ pkgbase = unicorn-desktop-git
 	pacdeps = cortile
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
-	pacdeps = appmenu-registrar-backport
+	pacdeps = vala-panel-appmenu-xfce4-git
 	pacdeps = xfce4-dynamic-workspaces-plugin-git
 	replaces = unicorn-mobile
 	replaces = unicorn-mobile-git
 	incompatible = debian:*
+	backup = etc/X11/xorg.conf.d/50-synaptics.conf
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/unicorn.git
 	depends_amd64 = xserver-xorg-video-intel
@@ -13011,7 +13040,7 @@ pkgname = unicorn-desktop-git
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
 	pkgver = 0.0.1
-	pkgrel = 8
+	pkgrel = 3
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
 	arch = all
@@ -13036,7 +13065,7 @@ pkgbase = unicorn-mobile-git
 	depends = tumbler
 	depends = tumbler-plugins-extra
 	depends = ffmpegthumbnailer
-	depends = bluez-firmware
+	depends = bluez-firmware | linux-firmware-raspi
 	depends = xserver-xorg-input-multitouch
 	depends = xserver-xorg-input-synaptics
 	depends = ukui-touchpadserver
@@ -13050,11 +13079,11 @@ pkgbase = unicorn-mobile-git
 	pacdeps = cortile
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
-	pacdeps = appmenu-registrar-backport
 	pacdeps = xfce4-dynamic-workspaces-plugin-git
 	replaces = unicorn-desktop
 	replaces = unicorn-desktop-git
 	incompatible = debian:*
+	backup = etc/X11/xorg.conf.d/50-synaptics.conf
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/unicorn.git#branch=mobile
 
@@ -13114,6 +13143,48 @@ pkgbase = uwufetch
 	sha256sums = 1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab
 
 pkgname = uwufetch
+---
+pkgbase = vala-panel-appmenu-xfce4-git
+	gives = vala-panel-appmenu-xfce4
+	pkgver = 24.05
+	pkgrel = 2
+	pkgdesc = Small utility to hold DBusMenu menus (XFCE4 plugin built-in)
+	url = https://gitlab.com/vala-panel-project/vala-panel-appmenu
+	arch = amd64
+	arch = arm64
+	depends = libgtk-3-0
+	depends = libglib2.0-0
+	depends = libgirepository-1.0-1
+	depends = libxfce4panel-2.0-4
+	depends = libxfce4ui-2-0
+	depends = libwnck-3-0
+	depends = gir1.2-libxfce4panel-2.0
+	depends = gir1.2-libxfce4ui-2.0
+	depends = gir1.2-wnck-3.0
+	depends = gir1.2-libxfce4ui-2.0
+	depends = xfconf
+	depends = xfce4-panel>=4.19.0
+	depends = vala-panel-appmenu-common
+	makedepends = meson
+	makedepends = valac
+	makedepends = libglib2.0-dev
+	makedepends = libgirepository1.0-dev
+	makedepends = libxfce4panel-2.0-dev
+	makedepends = libxfce4ui-2-dev
+	makedepends = libwnck-3-dev
+	makedepends = libxfconf-0-dev
+	makedepends = libxfce4panel-2.0-dev>=4.19.0
+	replaces = xfce4-appmenu-plugin
+	replaces = appmenu-registrar
+	replaces = appmenu-glib-translator
+	provides = xfce4-appmenu-plugin=24.05
+	provides = appmenu-registrar=24.05
+	provides = appmenu-glib-translator=24.05
+	license = LGPL-3.0-or-later
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://gitlab.com/vala-panel-project/vala-panel-appmenu.git
+
+pkgname = vala-panel-appmenu-xfce4-git
 ---
 pkgbase = vega-strike-engine-git
 	gives = vega-strike
@@ -14559,7 +14630,7 @@ pkgname = zen-browser-aarch64-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.7.5b
+	pkgver = 1.7.6b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -14594,8 +14665,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = zen-browser-1.7.5b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.5b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 591b50822055412993ac3b3049206fefad7de532bb9f9b573aecff9b8968581e
+	source_amd64 = zen-browser-1.7.6b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.6b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 2278658c3a2b0b19970fd3826a0176454354f4babc848873ebf4ea47b4d2646e
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -14605,8 +14676,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = zen-browser-1.7.5b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.5b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = bb1b36768211e9aee58b920019ae1e5b8c0634ecaf75d2bdb220110aa75092f7
+	source_arm64 = zen-browser-1.7.6b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.6b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 98dfc1f69d776f7052cfbc39fdd5b0ced18761e280fdbbd97b7c7985d1af7dfa
 
 pkgname = zen-browser-bin
 ---
