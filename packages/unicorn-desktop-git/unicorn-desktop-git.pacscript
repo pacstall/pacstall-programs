@@ -2,7 +2,7 @@ pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="3"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "xfce4-appmenu-plugin" "vala-panel-plugins-wnck"
   "vala-panel-appmenu" "appmenu-gtk2-module" "appmenu-gtk3-module" "xfce4-power-manager"
   "xfce4-power-manager-plugins" "xfce4-pulseaudio-plugin" "xfce4-helpers" "pavucontrol"
@@ -19,6 +19,7 @@ priority="required"
 pkgdesc="Unicorn Desktop by the Rhino Linux Team"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("debian:*")
+backup=('etc/X11/xorg.conf.d/50-synaptics.conf')
 
 build() {
   cd "unicorn"
@@ -110,5 +111,8 @@ post_upgrade() {
   fi
   if [[ -f "${homedir}/.config/gtk-3.0/gtk.css" ]]; then
     sudo sed -i '/^\.-vala-panel-appmenu-core > \* {/,/^}/d' "${homedir}/.config/gtk-3.0/gtk.css"
+  fi
+  if [[ -f "${homedir}/.config/autostart/plank_theme.desktop" ]]; then
+    sudo mv "${homedir}/.config/autostart/plank_theme.desktop" "${homedir}/.config/autostart/plank_theme.desktop.bak"
   fi
 }
