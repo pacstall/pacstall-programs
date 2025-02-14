@@ -1,5 +1,4 @@
 pkgname="virtualbox-guest-iso"
-gives="${pkgname}"
 arch=('any')
 pkgver="7.1.6"
 pacdeps=("virtualbox-deb")
