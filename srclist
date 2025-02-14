@@ -13395,7 +13395,6 @@ pkgbase = virtualbox-deb
 pkgname = virtualbox-deb
 ---
 pkgbase = virtualbox-guest-iso
-	gives = virtualbox-guest-iso
 	pkgver = 7.1.6
 	pkgdesc = ISO CD image version of the VirtualBox Guest Additions (for installation on the host)
 	arch = any
