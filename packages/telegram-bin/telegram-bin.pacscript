@@ -2,6 +2,7 @@ pkgname="telegram-bin"
 gives="telegram"
 arch=("amd64")
 pkgver="5.11.1"
+pkgrel="2"
 url='https://telegram.org/'
 pkgdesc="Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed"
 source_base_url="https://github.com/telegramdesktop/tdesktop"
@@ -30,7 +31,7 @@ sha256sums=(
   "55a2bce03ba01dd4ab942a48bfe646a3fabc846f95282f764d71cdce01da70ad"
 )
 repology=("project: telegram-desktop")
-maintainer=("Diegiwg <diegiwg@gmail.com>")
+maintainer=("Bahar KURT <kurtbahartr@gmail.com>")
 
 package() {
   install -dm755 "${pkgdir}/usr/bin"
