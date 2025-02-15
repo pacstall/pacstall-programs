@@ -29,6 +29,7 @@ pkgbase = hplip
 	makedepends = libsnmp-dev
 	makedepends = libltdl-dev
 	makedepends = libavahi-core-dev
+	makedepends = libavahi-client-dev
 	optdepends = cups: for printing support
 	optdepends = sane: for scanner support
 	optdepends = python3-pillow: for commandline scanning support

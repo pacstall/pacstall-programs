@@ -34,7 +34,8 @@ makedepends=('python3-pyqt5'
   'python3-setuptools'
   'libsnmp-dev'
   'libltdl-dev'
-  'libavahi-core-dev')
+  'libavahi-core-dev'
+  'libavahi-client-dev')
 optdepends=('cups: for printing support'
   'sane: for scanner support'
   'python3-pillow: for commandline scanning support'
