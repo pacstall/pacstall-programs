@@ -1,1 +1,12 @@
+pkgbase = libreoffice-fresh-app
+	gives = libreoffice
+	pkgver = 25.2
+	pkgdesc = Free and private office suite
+	url = https://www.libreoffice.org/
+	arch = amd64
+	breaks = libreoffice-still-app
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source = https://appimages.libreitalia.org/LibreOffice-25.2.full-x86_64.AppImage
+	sha256sums = 7de237e305bf0e9839a392cd407ef7bd885bf2fe67bc379a2140ecae680715b2
 
+pkgname = libreoffice-fresh-app

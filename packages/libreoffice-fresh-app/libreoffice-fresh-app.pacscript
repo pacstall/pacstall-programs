@@ -10,9 +10,9 @@ source=("https://appimages.libreitalia.org/LibreOffice-${pkgver}.full-x86_64.App
 sha256sums=("7de237e305bf0e9839a392cd407ef7bd885bf2fe67bc379a2140ecae680715b2")
 
 package() {
-    install -Dm755 "LibreOffice-${pkgver}.full-x86_64.AppImage" "${pkgdir}/usr/bin/libreoffice-app"
-    install -d "${pkgdir}/usr/share/applications"
-    cat << EOF > "${pkgdir}/usr/share/applications/base.desktop"
+  install -Dm755 "LibreOffice-${pkgver}.full-x86_64.AppImage" "${pkgdir}/usr/bin/libreoffice-app"
+  install -d "${pkgdir}/usr/share/applications"
+  cat << EOF > "${pkgdir}/usr/share/applications/base.desktop"
 [Desktop Entry]
 Version=1.0
 Terminal=false
@@ -400,7 +400,7 @@ Name[zu]=Idatabheysi Entsha
 Icon=document-new
 Exec=libreoffice-app --base
 EOF
-    cat << EOF > "${pkgdir}/usr/share/applications/calc.desktop"
+  cat << EOF > "${pkgdir}/usr/share/applications/calc.desktop"
 [Desktop Entry]
 Version=1.0
 Terminal=false
@@ -788,7 +788,7 @@ Name[zu]=New Spreadsheet
 Icon=document-new
 Exec=libreoffice-app --calc
 EOF
-    cat << EOF > "${pkgdir}/usr/share/applications/draw.desktop"
+  cat << EOF > "${pkgdir}/usr/share/applications/draw.desktop"
 [Desktop Entry]
 Version=1.0
 Terminal=false
@@ -1176,7 +1176,7 @@ Name[zu]=New Drawing
 Icon=document-new
 Exec=libreoffice-app --draw
 EOF
-    cat << EOF > "${pkgdir}/usr/share/applications/impress.desktop"
+  cat << EOF > "${pkgdir}/usr/share/applications/impress.desktop"
 [Desktop Entry]
 Version=1.0
 Terminal=false
@@ -1564,7 +1564,7 @@ Name[zu]=New Presentation
 Icon=document-new
 Exec=libreoffice-app --impress
 EOF
-    cat << EOF > "${pkgdir}/usr/share/applications/math.desktop"
+  cat << EOF > "${pkgdir}/usr/share/applications/math.desktop"
 [Desktop Entry]
 Version=1.0
 Terminal=false
@@ -1953,7 +1953,7 @@ Name[zu]=New Formula
 Icon=document-new
 Exec=libreoffice-app --math
 EOF
-    cat << EOF > "${pkgdir}/usr/share/applications/libreoffice.desktop"
+  cat << EOF > "${pkgdir}/usr/share/applications/libreoffice.desktop"
 [Desktop Entry]
 Version=1.0
 Terminal=false
@@ -2240,7 +2240,7 @@ Exec=libreoffice-app --base
 Name=Math
 Exec=libreoffice-app --math
 EOF
-    cat << EOF > "${pkgdir}/usr/share/applications/writer.desktop"
+  cat << EOF > "${pkgdir}/usr/share/applications/writer.desktop"
 [Desktop Entry]
 Version=1.0
 Terminal=false
