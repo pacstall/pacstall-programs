@@ -2,8 +2,7 @@ pkgname="hello-rhino-git"
 gives="hello-rhino"
 source=("https://github.com/rhino-linux/hello-rhino.git")
 arch=("any")
-pkgver="2025.1-1"
-pkgrel="2"
+pkgver="2025.2"
 depends=("libssl-dev" "gettext")
 makedepends=("cargo>=1.80.0" "meson" "ninja-build" "gettext")
 pkgdesc="Greeter application for Rhino Linux"
