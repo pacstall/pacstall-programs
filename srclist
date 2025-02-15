@@ -4681,6 +4681,7 @@ pkgbase = hplip
 	depends = libsane1
 	depends = libglib2.0-0 | libglib2.0-0t64
 	makedepends = python3-pyqt5
+	makedepends = python3-dev
 	makedepends = rpcbind
 	makedepends = autoconf
 	makedepends = libusb-1.0-0-dev

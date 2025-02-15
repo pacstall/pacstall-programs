@@ -25,6 +25,7 @@ depends=('python3-dbus'
   'libsane1'
   'libglib2.0-0 | libglib2.0-0t64')
 makedepends=('python3-pyqt5'
+  'python3-dev'
   'rpcbind'
   'autoconf'
   'libusb-1.0-0-dev'
