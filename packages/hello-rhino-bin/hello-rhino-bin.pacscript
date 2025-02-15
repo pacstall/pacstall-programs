@@ -3,12 +3,11 @@ depends=("libssl-dev" "gettext")
 gives="hello-rhino"
 pkgdesc="Rhino Linux Welcome Screen"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-pkgver="2025.1-1"
-pkgrel="2"
+pkgver="2025.2"
 replaces=("${gives}" "${gives}-git")
 arch=('arm64' 'amd64')
-sha256sums_arm64=("b63080659292f31546c36c7aa0517a4c8862684f4737039f8c2cf0b0e8f732e9")
-sha256sums_amd64=("aa58b85e5f20a54ed2b3946d171f1e07bbb2df486b8cf4d67063809dc7aa4777")
+sha256sums_arm64=("02270bf1eb90249b8e8f2158e6741b9c7cb34d17b6f85d32b42900568a6c74f0")
+sha256sums_amd64=("8e444c0fd42ae4235f48ae6a89146700d18085a7a0bedfd88bd9ebb7c8af7aa5")
 source=("https://github.com/rhino-linux/${gives}/releases/download/v${pkgver}/${gives}_v${pkgver}_${CARCH}.zip")
 
 package() {
