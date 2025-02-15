@@ -46,7 +46,7 @@ optdepends=('cups: for printing support'
 backup=('etc/hp/hplip.conf' 'etc/sane.d/dll.d/hpaio')
 
 _patchurl='https://gitlab.archlinux.org/archlinux/packaging/packages/hplip/-/raw/main'
-source=("https://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.gz{,.asc}"
+source=("https://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.gz"
   "${_patchurl}/disable_upgrade.patch"
   "${_patchurl}/0003-models.dat-Re-add-drivers-missing-from-3.19.1.patch"
   "${_patchurl}/0018-Allow-non-JPEG-scanning-on-the-HP-DeskJet-3520-All-i.patch"
@@ -61,7 +61,6 @@ source=("https://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.g
   "${_patchurl}/hplip-hpaio-gcc14.patch"
   "${_patchurl}/hplip-pserror-gcc14.patch")
 sha512sums=('6162ec58289433659ed4c3a254b2a50863c01acb87a8c0e1a1f935fed2b1916c5ae211c2d84130f40963368ff53e0c8da1878a1fce4dd08bd517f65bbcf6a2d2'
-  'SKIP'
   'a12aaeece5285ffb86bdbc24871bf512fbc1f29da44ae51ded314378032662074a42b8aca23bebb378bf78ed15bb7f99da59bfb4cd456f3458e7a5ef42a900f8'
   'f79b3f09d022178099f38b9eae1792396e730eb5352a03d088e6610d92b3895f3f65bb92089ce7f5b21d794f9716ceb176d29ca7283e8a48bb04cf6aba305a2f'
   '93e29a9ef893636b2b84443e75525c4ed42531d6e68a182dfbb725c3919c77b966b5e7d9381a34d3b5853423995a7b15efb69ce3e500ec72b25b65b2ad6bd64c'
@@ -74,7 +73,8 @@ sha512sums=('6162ec58289433659ed4c3a254b2a50863c01acb87a8c0e1a1f935fed2b1916c5ae
   '321f622c070aee8d4a0a4b2ce1ae81f40ca10959f5707f57f9b2bdfdbeba953792b051470ec2477a747074e123935bb96a2d185f935670127e070466de26eb6d'
   '1da56de340104a82747607d33d6aa336fbcca8fa6de25ae244bf52cd64920334bcacf50e3f7b9ddbec1126f322325ce847763b02ff0dae44942fd24478ed466f'
   '63b0ffed2628915f4577932dfdd27a214edfbcf78745eab09cacafe0fa6ed99cdc742a97ac08ce600d202f824a0af790166e25e346f9a51d37c02747e262d742')
-validpgpkeys=('4ABA2F66DBD5A95894910E0673D770CDA59047B9') # HPLIP (HP Linux Imaging and Printing) <hplip@hp.com>
+
+# validpgpkeys=('4ABA2F66DBD5A95894910E0673D770CDA59047B9') # HPLIP (HP Linux Imaging and Printing) <hplip@hp.com>
 
 maintainer=("xdavius <xdavius@github.com>")
 repology=("project: ${pkgname}")
