@@ -1,7 +1,7 @@
 pkgname="clio"
 repology=("project: ${gives}")
 pkgver="1.0"
-pkgdesc="A cool CLI tool that displays facts about Linux, Unix, and computers using bash."
+pkgdesc="CLI tool that displays facts about Linux, Unix, and computers using bash"
 arch=('amd64' 'arm64')
 license=('MIT')
 maintainer=("Alisha <alishyy@proton.me>")
