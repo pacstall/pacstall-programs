@@ -1,5 +1,4 @@
 pkgname="clio"
-gives="clio"
 repology=("project: ${gives}")
 pkgver="1.0"
 pkgdesc="A cool CLI tool that displays facts about Linux, Unix, and computers using bash."
