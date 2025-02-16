@@ -7,7 +7,7 @@ license=('MIT')
 maintainer=("Alisha <alishyy@proton.me>")
 url="https://github.com/alishyyy/clio"
 source=("git+https://github.com/alishyyy/clio.git")
-sha256sums=("SKIP") # Git sources typically use SKIP
+sha256sums=("SKIP")
 
 build() {
   # No build is required as clio is a bash script.
