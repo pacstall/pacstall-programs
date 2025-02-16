@@ -7787,7 +7787,7 @@ pkgname = neovim-app
 ---
 pkgbase = neovim-git
 	gives = neovim
-	pkgver = 0.10.3
+	pkgver = 0.10.4
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	arch = any
