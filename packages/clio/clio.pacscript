@@ -10,5 +10,6 @@ source=("git+https://github.com/alishyyy/clio.git")
 sha256sums=("SKIP")
 
 package() {
-  install -Dm755 clio "$pkgdir/usr/bin/clio"
+  install -Dm755 clio "${pkgdir}/usr/bin/clio"
+  install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
