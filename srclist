@@ -7821,8 +7821,7 @@ pkgbase = neovim-git
 pkgname = neovim-git
 ---
 pkgbase = neovim
-	pkgver = 0.10.3
-	pkgrel = 1
+	pkgver = 0.10.4
 	pkgdesc = Neovim is a vim fork maintained by the community
 	url = https://neovim.io/
 	arch = any
@@ -7844,8 +7843,8 @@ pkgbase = neovim
 	replaces = neovim-runtime
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source = https://github.com/neovim/neovim/archive/refs/tags/v0.10.3.tar.gz
-	sha256sums = 39fab47d241da7b9418823cc563c689d522c1c4b2def04036393834f3f1ca94c
+	source = https://github.com/neovim/neovim/archive/refs/tags/v0.10.4.tar.gz
+	sha256sums = 10413265a915133f8a853dc757571334ada6e4f0aa15f4c4cc8cc48341186ca2
 
 pkgname = neovim
 ---
