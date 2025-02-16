@@ -10,6 +10,7 @@ depends=(
   "python3-six"
   "python3-filelock"
   "python3-urllib3>=2.0.0"
+  "python3-pyzstd"
   "apparmor-profiles"
 )
 makedepends=(
@@ -25,13 +26,12 @@ pacdeps=("rust-bin")
 gives="umu-launcher"
 pkgdesc="A tool for launching non-steam games with Proton"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
-incompatible=('debian:bullseye' 'debian:bookworm')
 license=('GPL-3.0-only')
 external_connection=true
 
 prepare() {
   cd "${gives}"
-  ./configure.sh --prefix=/usr
+  ./configure.sh --prefix=/usr --use-system-pyzstd --use-system-urllib
 }
 
 build() {

@@ -12014,6 +12014,7 @@ pkgbase = umu-launcher-git
 	depends = python3-six
 	depends = python3-filelock
 	depends = python3-urllib3>=2.0.0
+	depends = python3-pyzstd
 	depends = apparmor-profiles
 	makedepends = git
 	makedepends = scdoc
@@ -12023,8 +12024,6 @@ pkgbase = umu-launcher-git
 	makedepends = python3-installer
 	makedepends = cargo
 	pacdeps = rust-bin
-	incompatible = debian:bullseye
-	incompatible = debian:bookworm
 	license = GPL-3.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: umu-launcher
