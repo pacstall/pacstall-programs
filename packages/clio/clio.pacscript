@@ -5,7 +5,7 @@ pkgdesc="CLI tool that displays facts about Linux, Unix, and computers using bas
 arch=('all')
 license=('MIT')
 maintainer=("Alisha <alishyy@proton.me>")
-url="https://github.com/alishyyy/clio"
+url='https://github.com/alishyyy/clio'
 source=("git+https://github.com/alishyyy/clio.git")
 sha256sums=("SKIP")
 
