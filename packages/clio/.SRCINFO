@@ -2,10 +2,13 @@ pkgbase = clio
 	gives = clio
 	pkgver = 1.0
 	pkgdesc = A cool CLI tool that displays facts about Linux, Unix, and computers using bash.
+	url = https://github.com/alishyyy/clio
 	arch = amd64
+	arch = arm64
+	license = MIT
 	maintainer = Alisha <alishyy@proton.me>
 	repology = project: clio
-	source = @clio~1.0::https://github.com/alishyyy/clio.git
+	source = git+https://github.com/alishyyy/clio.git
 	sha256sums = SKIP
 
 pkgname = clio

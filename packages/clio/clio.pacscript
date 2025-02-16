@@ -8,7 +8,7 @@ license=('MIT')
 maintainer=("Alisha <alishyy@proton.me>")
 url="https://github.com/alishyyy/clio"
 source=("git+https://github.com/alishyyy/clio.git")
-sha256sums=("SKIP")  # Git sources typically use SKIP
+sha256sums=("SKIP") # Git sources typically use SKIP
 
 build() {
   # No build is required as clio is a bash script.
@@ -18,7 +18,7 @@ build() {
 package() {
   # Install the main clio script to /usr/bin
   install -Dm755 clio "$pkgdir/usr/bin/clio"
-  
-  # Optionally, install the install.sh script 
+
+  # Optionally, install the install.sh script
   #install -Dm755 install.sh "$pkgdir/usr/bin/clio-install"
 }
