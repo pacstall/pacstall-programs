@@ -9,7 +9,6 @@ url="https://github.com/alishyyy/clio"
 source=("git+https://github.com/alishyyy/clio.git")
 sha256sums=("SKIP")
 
-
 package() {
   # Install the main clio script to /usr/bin
   install -Dm755 clio "$pkgdir/usr/bin/clio"
