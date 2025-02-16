@@ -11,7 +11,4 @@ sha256sums=("SKIP")
 
 package() {
   install -Dm755 clio "$pkgdir/usr/bin/clio"
-
-  # Optionally, install the install.sh script
-  #install -Dm755 install.sh "$pkgdir/usr/bin/clio-install"
 }
