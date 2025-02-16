@@ -1361,10 +1361,9 @@ pkgname = clib
 ---
 pkgbase = clio
 	pkgver = 1.0
-	pkgdesc = A cool CLI tool that displays facts about Linux, Unix, and computers using bash.
+	pkgdesc = CLI tool that displays facts about Linux, Unix, and computers using bash
 	url = https://github.com/alishyyy/clio
-	arch = amd64
-	arch = arm64
+	arch = all
 	license = MIT
 	maintainer = Alisha <alishyy@proton.me>
 	repology = project:
