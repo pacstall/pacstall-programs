@@ -13,5 +13,6 @@ sha256sums=("SKIP")
 package() {
   cd "${gives}"
   install -Dm755 bin/clio "${pkgdir}/usr/bin/clio"
+  install -Dm644 data/facts.txt "${pkgdir}/usr/share/clio/facts.txt"
   install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
