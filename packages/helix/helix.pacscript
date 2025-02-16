@@ -1,13 +1,12 @@
 pkgname="helix"
 arch=("any")
-pkgver="24.07"
-pkgrel="2"
+pkgver="25.01.1"
 repology=("project: helix")
 source=("@${pkgname}~${pkgver}::https://github.com/helix-editor/helix/releases/download/${pkgver}/helix-${pkgver}-source.tar.xz")
-makedepends=("cargo")
+makedepends=("cargo>=1.76.0")
 pkgdesc="A post-modern modal text editor"
 external_connection=true
-sha256sums=("44d9eb113a54a80a2891ac6374c74bcd2bce63d317f1e1c69c286a6fc919922c")
+sha256sums=("12508c4f5b9ae6342299bd40d281cd9582d3b51487bffe798f3889cb8f931609")
 
 build() {
   cd "${pkgname}~${pkgver}"
