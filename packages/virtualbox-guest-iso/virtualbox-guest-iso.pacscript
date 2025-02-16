@@ -8,7 +8,6 @@ source=("https://download.virtualbox.org/virtualbox/${pkgver}/VBoxGuestAdditions
 sha256sums=("dbbda1645bc05c9260adfe9efc4949cb590ec5ec02680aff936375670cffcafc")
 
 package() {
-  cd "${srcdir}"
   mkdir -p "${pkgdir}/lib/virtualbox/additions"
   install -Dm644 "${srcdir}/VBoxGuestAdditions_${pkgver}.iso" "${pkgdir}/usr/lib/virtualbox/additions/VBoxGuestAdditions_${pkgver}.iso"
 }
