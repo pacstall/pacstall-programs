@@ -9,10 +9,6 @@ url="https://github.com/alishyyy/clio"
 source=("git+https://github.com/alishyyy/clio.git")
 sha256sums=("SKIP")
 
-build() {
-  # No build is required as clio is a bash script.
-  :
-}
 
 package() {
   # Install the main clio script to /usr/bin
