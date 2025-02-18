@@ -1,21 +1,15 @@
 pkgname="rambox-deb"
 gives="rambox"
-pkgver="2.3.4"
+pkgver="2.4.1"
 arch=('amd64')
 url='https://rambox.app'
 repology=("project: rambox")
-depends=(
-  "libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils"
-  "libatspi2.0-0" "libuuid1" "libsecret-1-0"
-)
-optdepends=(
-  "libappindicator3-1: AppIndicator/SysTray Support"
-)
-sha256sums=("2fc00888e9dcc6baed57032b2d14d0e9fbff67dd3cd47162106e95e6b8d4fd7d")
+depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libsecret-1-0")
+optdepends=("libappindicator3-1: AppIndicator/SysTray Support")
+sha256sums=("554316ce93c134dc072092d3c76127a89c5e7fa09b3dc7a69d1e4eae24934ad4")
 source=("https://github.com/ramboxapp/download/releases/download/v${pkgver}/Rambox-${pkgver}-linux-x64.deb")
 replaces=("${pkgname}" "${gives}")
 conflicts=("${replaces[@]}")
 pkgdesc="Workspace simplifier"
-maintainer=("Eric Renfro <psi-jack@linux-help.org>")
+maintainer=("Eric Renfro <psi-jack@linux-help.org>" "James Ed Randson <jimedrand@disroot.org>")
 
-# vim:set ft=sh ts=2 sw=2 et:
