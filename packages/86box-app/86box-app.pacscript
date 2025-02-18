@@ -15,10 +15,10 @@ sha256sums=(
 )
 
 package() {
-  install -Dm755 "${gives}-v${pkgver}-linux-appimage-x64-Qt.AppImage" "${pkgdir}/usr/lib/86box/86box"
+  install -Dm755 "86Box-Linux-x86_64-b6130.AppImage" "${pkgdir}/usr/lib/86box/86box"
   install -d "${pkgdir}/usr/share/applications"
   install -d "${pkgdir}/usr/share/86box/roms"
-  tar -xzf "roms-archive.tar.gz" -C "${pkgdir}/usr/lib/86box/roms"
+  tar -xzf "roms-${pkgver}.tar.gz" -C "${pkgdir}/usr/lib/86box/roms"
   cat << EOF > "${pkgdir}/usr/share/applications/86box.desktop"
 [Desktop Entry]
 Type=Application
