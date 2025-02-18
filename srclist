@@ -12914,6 +12914,47 @@ pkgbase = u-boot-mobian-deb
 
 pkgname = u-boot-mobian-deb
 ---
+pkgbase = ubxi-kde-desktop-git
+	gives = ubxi-kde-desktop
+	pkgver = 0.0.1
+	pkgdesc = UBXI KDE Plasma Desktop
+	priority = required
+	arch = amd64
+	arch = arm64
+	depends = plasma-desktop
+	depends = konsole
+	depends = systemsettings
+	depends = plasma-nm
+	depends = plasma-disks
+	depends = plasma-firewall
+	depends = plasma-pa
+	depends = plasma-systemmonitor
+	depends = kinfocenter
+	depends = kmenuedit
+	depends = kscreen
+	depends = dolphin
+	depends = kio-extras
+	depends = kdegraphics-thumbnailers
+	depends = kde-config-gtk-style
+	depends = kde-config-screenlocker
+	depends = breeze-gtk-theme
+	depends = xdg-desktop-portal-gtk
+	depends = xdg-desktop-portal-kde
+	depends = ufw
+	depends = vulkan-tools
+	depends = wayland-utils
+	depends = pulseaudio-utils
+	depends = aha
+	depends = clinfo
+	pacdeps = rhino-ubxi-core
+	replaces = unicorn-desktop
+	incompatible = debian:*
+	license = GPL-3.0-or-later
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	source = https://github.com/villamorrd/ubxi-kde-desktop.git
+
+pkgname = ubxi-kde-desktop-git
+---
 pkgbase = ufetch-debian
 	pkgver = 0.4
 	pkgdesc = Tiny system info for Unix-like operating systems.
