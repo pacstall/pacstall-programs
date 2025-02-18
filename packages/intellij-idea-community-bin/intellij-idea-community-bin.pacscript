@@ -1,5 +1,5 @@
 pkgname="intellij-idea-community-bin"
-pkgver="2024.3.2"
+pkgver="2024.3.3"
 gives="intellij-idea-community"
 arch=("amd64" "arm64")
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>" "James Ed Randson <jimedrand@disroot.org>")
