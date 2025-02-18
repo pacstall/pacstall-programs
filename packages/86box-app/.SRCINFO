@@ -1,1 +1,13 @@
+pkgbase = 86box-app
+	gives = 86box
+	pkgver = 4.2.1
+	pkgdesc = 86Box is an open source x86 emulator
+	url = https://86box.net
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source = https://github.com/86Box/86Box/releases/download/v4.2.1/86Box-Linux-x86_64-b6130.AppImage
+	source = roms-4.2.1.tar.gz::https://github.com/86Box/roms/archive/refs/tags/v4.2.1.tar.gz
+	sha256sums = e049a364bc50307f7db9703960de7b6b1e3d35a7804800e98ce34ff9ba447e53
+	sha256sums = 0811a2970630d0aa67b7a829010685f5d723adb4d94474e9ab38beeb4e07c752
 
+pkgname = 86box-app
