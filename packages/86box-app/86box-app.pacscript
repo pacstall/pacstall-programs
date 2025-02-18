@@ -18,6 +18,7 @@ package() {
   install -Dm755 "86Box-Linux-x86_64-b6130.AppImage" "${pkgdir}/usr/lib/86box/86box"
   install -d "${pkgdir}/usr/share/applications"
   install -d "${pkgdir}/usr/share/86box/roms"
+  curl -L -o "roms-${pkgver}.tar.gz" "https://github.com/86Box/roms/archive/refs/tags/v${pkgver}.tar.gz"
   tar -xzf "roms-${pkgver}.tar.gz" -C "${pkgdir}/usr/lib/86box/roms"
   cat << EOF > "${pkgdir}/usr/share/applications/86box.desktop"
 [Desktop Entry]
