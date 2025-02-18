@@ -5,9 +5,9 @@ arch=("amd64" "arm64")
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>" "James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages"
 source_amd64=("https://download.jetbrains.com/idea/ideaIC-${pkgver}.tar.gz")
-sha256sums_amd64=("ad9d587b704806d9a21dfebe5c51415df94699bba958d7133763cfd56934ced8")
+sha256sums_amd64=("ae3c45fe515fef672f52ce5c4701bc40a5f82cb94f21fed2c6e66c22e3dc91db")
 source_arm64=("https://download.jetbrains.com/idea/ideaIC-${pkgver}-aarch64.tar.gz")
-sha256sums_arm64=("0135027b97fcabd8f9e31d34cd2444323c63c894ef3f8c6eaf734fbecb8694ef")
+sha256sums_arm64=("9ce7e15135e97e92601654f456a6211127c165b35f62784886c4ec3b466af8f9")
 repology=("project: ${gives}")
 
 package() {
