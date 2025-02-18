@@ -5001,6 +5001,21 @@ pkgbase = hyprpicker
 
 pkgname = hyprpicker
 ---
+pkgbase = hyprutils
+	gives = hyprutils
+	pkgver = 0.1.2
+	pkgrel = 1
+	pkgdesc = Hyprland utility tools
+	url = https://github.com/hyprwm/hyprutils
+	arch = amd64
+	arch = arm64
+	makedepends = cmake
+	makedepends = libpixman-1-dev
+	incompatible = debian:*
+	source = https://github.com/hyprwm/hyprutils.git#branch=main
+
+pkgname = hyprutils
+---
 pkgbase = hyprwayland-scanner
 	pkgver = 0.3.4
 	pkgdesc = A Hyprland implementation of wayland-scanner, in and for C++
