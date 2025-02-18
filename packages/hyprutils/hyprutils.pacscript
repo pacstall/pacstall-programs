@@ -8,7 +8,7 @@ gives="hyprutils"
 pkgdesc="Hyprland utility tools"
 makedepends=("cmake" "libpixman-1-dev")
 incompatible=('debian:*')
-maintainers=("Bisher Al Masri <bisherk.almasri@gmail.com>")
+maintainer=("Bisher Al Masri <bisherk.almasri@gmail.com>")
 
 build() {
   cd "hyprutils"

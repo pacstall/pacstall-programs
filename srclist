@@ -5012,6 +5012,7 @@ pkgbase = hyprutils
 	makedepends = cmake
 	makedepends = libpixman-1-dev
 	incompatible = debian:*
+	maintainer = Bisher Al Masri <bisherk.almasri@gmail.com>
 	source = https://github.com/hyprwm/hyprutils.git#branch=main
 
 pkgname = hyprutils
