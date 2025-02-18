@@ -12,4 +12,3 @@ replaces=("${pkgname}" "${gives}")
 conflicts=("${replaces[@]}")
 pkgdesc="Workspace simplifier"
 maintainer=("Eric Renfro <psi-jack@linux-help.org>" "James Ed Randson <jimedrand@disroot.org>")
-
