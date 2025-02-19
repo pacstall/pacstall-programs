@@ -1,11 +1,13 @@
 pkgbase = postman-bin
 	gives = postman
 	pkgver = 10.18.10
+	pkgrel = 2
 	pkgdesc = Build, test, and document your APIs faster
 	arch = amd64
 	depends = libxss1
 	depends = libnss3
 	depends = libgtk-3-0
+	makedepends = tar
 	breaks = postman
 	breaks = postman-deb
 	breaks = postman-app
