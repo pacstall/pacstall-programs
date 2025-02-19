@@ -8,9 +8,9 @@ source=("https://github.com/ramboxapp/download/releases/download/v${pkgver}/Ramb
 sha256sums=("9dd16fe6b3535b2aab1860bcb7524d47e6d00b426c8ade08f69e2783b87f81c5")
 
 package() {
-  install -Dm755 "Rambox-${pkgver}-linux-x64.AppImage" "${pkgdir}/usr/bin/rambox"
-  install -d "${pkgdir}/usr/share/applications"
-  cat << EOF > "${pkgdir}/usr/share/applications/rambox.desktop"
+    install -Dm755 "Rambox-${pkgver}-linux-x64.AppImage" "${pkgdir}/usr/bin/rambox"
+    install -d "${pkgdir}/usr/share/applications"
+    cat << EOF > "${pkgdir}/usr/share/applications/rambox.desktop"
 [Desktop Entry]
 Type=Application
 Name=Rambox
