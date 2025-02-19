@@ -1,6 +1,5 @@
 pkgname="hyprutils"
 pkgver="0.1.2"
-pkgrel="1"
 arch=("amd64" "arm64")
 url="https://github.com/hyprwm/hyprutils"
 source=("https://github.com/hyprwm/hyprutils.git#branch=main")
