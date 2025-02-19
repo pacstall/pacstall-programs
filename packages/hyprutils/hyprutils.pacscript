@@ -5,7 +5,6 @@ url='https://github.com/hyprwm/hyprutils'
 source=("https://github.com/hyprwm/hyprutils.git#branch=main")
 pkgdesc="Hyprland utility tools"
 makedepends=("cmake" "libpixman-1-dev")
-incompatible=('debian:*')
 maintainer=("Bisher Al Masri <bisherk.almasri@gmail.com>")
 
 build() {
