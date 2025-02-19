@@ -10,7 +10,7 @@ maintainer=("Bisher Al Masri <bisherk.almasri@gmail.com>")
 build() {
   cd "hyprutils"
   cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr -S . -B build
-  cmake --build build --config Release --target all -j"$(nproc 2> /dev/null || getconf NPROCESSORS_CONF)" DESTDIR="$(pkgdir)"
+  cmake --build build --config Release --target all -j"${NCPU}" DESTDIR="${pkgdir}"
 }
 
 package() {
