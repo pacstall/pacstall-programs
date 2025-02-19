@@ -1,7 +1,12 @@
 pkgname="postman-bin"
-arch=("amd64")
+gives="postman"
 pkgver="10.18.10"
+pkgrel="2"
 pkgdesc="Build, test, and document your APIs faster"
+arch=("amd64")
+breaks=("postman" "postman-deb" "postman-app")
+depends=("libxss1" "libnss3" "libgtk-3-0")
+makedepends=("tar")
 repology=("project: postman" "visiblename: postman-bin")
 source=(
   "https://dl.pstmn.io/download/version/${pkgver}/linux64"
@@ -12,9 +17,6 @@ sha256sums=(
   "SKIP"
 )
 maintainer=("Marie Piontek <marie@kaifa.ch>")
-gives="postman"
-breaks=("postman" "postman-deb" "postman-app")
-depends=("libxss1" "libnss3" "libgtk-3-0")
 
 package() {
   cd "${srcdir}"
@@ -25,6 +27,7 @@ package() {
   install -d "${pkgdir}/opt/postman/" "${pkgdir}/usr/bin"
   install -d "${pkgdir}/usr/share/icons/hicolor/128x128/apps"
 
+  tar -xzf linux64
   cp -r "${srcdir}/Postman/app/"* "${pkgdir}/opt/postman/"
   chmod +x "${pkgdir}/opt/postman/postman"
   mkdir -p "${pkgdir}/usr/bin"
