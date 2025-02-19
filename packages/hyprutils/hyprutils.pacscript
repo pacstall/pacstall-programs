@@ -4,7 +4,6 @@ pkgrel="1"
 arch=("amd64" "arm64")
 url="https://github.com/hyprwm/hyprutils"
 source=("https://github.com/hyprwm/hyprutils.git#branch=main")
-gives="hyprutils"
 pkgdesc="Hyprland utility tools"
 makedepends=("cmake" "libpixman-1-dev")
 incompatible=('debian:*')
