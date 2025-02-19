@@ -7,14 +7,14 @@ depends=("plasma-desktop" "konsole" "systemsettings" "plasma-nm" "plasma-disks"
   "kscreen" "dolphin" "kio-extras" "kdegraphics-thumbnailers" "kde-config-gtk-style" "kde-config-screenlocker"
   "breeze-gtk-theme" "xdg-desktop-portal-gtk" "xdg-desktop-portal-kde" "ufw" "vulkan-tools"
   "wayland-utils" "pulseaudio-utils" "aha" "clinfo")
-pacdeps=("rhino-ubxi-core")
-optdeps=(
+optdepends=(
   "kde-spectacle: a simple application for capturing desktop screenshots"
   "ark: File archiver by KDE"
   "plasma-vault: Plasma applet and services for creating encrypted vaults"
   "plasma-thunderbolt: Plasma addons for managing Thunderbolt devices"
   "powerdevil: Global power saver settings"
 )
+pacdeps=("rhino-ubxi-core")
 gives="ubxi-kde-desktop"
 replaces=("unicorn-desktop")
 priority='required'
