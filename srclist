@@ -5003,14 +5003,12 @@ pkgname = hyprpicker
 ---
 pkgbase = hyprutils
 	pkgver = 0.1.2
-	pkgrel = 1
 	pkgdesc = Hyprland utility tools
 	url = https://github.com/hyprwm/hyprutils
 	arch = amd64
 	arch = arm64
 	makedepends = cmake
 	makedepends = libpixman-1-dev
-	incompatible = debian:*
 	maintainer = Bisher Al Masri <bisherk.almasri@gmail.com>
 	source = https://github.com/hyprwm/hyprutils.git#branch=main
 
