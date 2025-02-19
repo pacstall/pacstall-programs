@@ -1,0 +1,10 @@
+pkgbase = rambox-app
+	gives = rambox
+	pkgver = 2.4.1
+	pkgdesc = Workspace simplizer
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source = https://github.com/ramboxapp/download/releases/download/v2.4.1/Rambox-2.4.1-linux-x64.AppImage
+	sha256sums = 9dd16fe6b3535b2aab1860bcb7524d47e6d00b426c8ade08f69e2783b87f81c5
+
+pkgname = rambox-app
