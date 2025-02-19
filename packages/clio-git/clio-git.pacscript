@@ -1,8 +1,8 @@
 pkgname="clio-git"
 gives="clio"
 repology=("project: ${gives}")
-pkgver="1.0"
-pkgdesc="CLI tool that displays facts about Linux, Unix, and computers using bash"
+pkgver="1.2.0"
+pkgdesc="A command-line historian that delivers curated facts about Unix and Linux history"
 arch=('all')
 license=('MIT')
 maintainer=("Alisha <alishyy@proton.me>")
