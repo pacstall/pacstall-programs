@@ -9,9 +9,9 @@ source=("https://github.com/86Box/86Box/releases/download/v${pkgver}/86Box-Linux
 sha256sums=("e049a364bc50307f7db9703960de7b6b1e3d35a7804800e98ce34ff9ba447e53")
 
 package() {
-  install -Dm755 "86Box-Linux-x86_64-b6130.AppImage" "${pkgdir}/usr/lib/86box/86box"
-  install -d "${pkgdir}/usr/share/applications"
-  cat << EOF > "${pkgdir}/usr/share/applications/86box.desktop"
+    install -Dm755 "86Box-Linux-x86_64-b6130.AppImage" "${pkgdir}/usr/lib/86box/86box"
+    install -d "${pkgdir}/usr/share/applications"
+    cat << EOF > "${pkgdir}/usr/share/applications/86box.desktop"
 [Desktop Entry]
 Type=Application
 Name=86Box
