@@ -10489,7 +10489,7 @@ pkgname = quintom-cursor-theme-git
 ---
 pkgbase = rambox-deb
 	gives = rambox
-	pkgver = 2.3.4
+	pkgver = 2.4.1
 	pkgdesc = Workspace simplifier
 	url = https://rambox.app
 	arch = amd64
@@ -10508,9 +10508,10 @@ pkgbase = rambox-deb
 	replaces = rambox-deb
 	replaces = rambox
 	maintainer = Eric Renfro <psi-jack@linux-help.org>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: rambox
-	source = https://github.com/ramboxapp/download/releases/download/v2.3.4/Rambox-2.3.4-linux-x64.deb
-	sha256sums = 2fc00888e9dcc6baed57032b2d14d0e9fbff67dd3cd47162106e95e6b8d4fd7d
+	source = https://github.com/ramboxapp/download/releases/download/v2.4.1/Rambox-2.4.1-linux-x64.deb
+	sha256sums = 554316ce93c134dc072092d3c76127a89c5e7fa09b3dc7a69d1e4eae24934ad4
 
 pkgname = rambox-deb
 ---
