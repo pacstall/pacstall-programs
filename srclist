@@ -5002,7 +5002,6 @@ pkgbase = hyprpicker
 pkgname = hyprpicker
 ---
 pkgbase = hyprutils
-	gives = hyprutils
 	pkgver = 0.1.2
 	pkgrel = 1
 	pkgdesc = Hyprland utility tools
