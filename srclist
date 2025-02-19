@@ -1361,8 +1361,8 @@ pkgname = clib
 ---
 pkgbase = clio-git
 	gives = clio
-	pkgver = 1.0
-	pkgdesc = CLI tool that displays facts about Linux, Unix, and computers using bash
+	pkgver = 1.2.0
+	pkgdesc = A command-line historian that delivers curated facts about Unix and Linux history
 	url = https://github.com/alishyyy/clio
 	arch = all
 	license = MIT
@@ -2036,7 +2036,7 @@ pkgbase = discord-ptb-deb
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.85
+	pkgver = 0.0.86
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2053,8 +2053,8 @@ pkgbase = discord
 	depends = libc++1
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.85::https://dl.discordapp.net/apps/linux/0.0.85/discord-0.0.85.tar.gz
-	sha256sums = 5f1122c1e9115de3bdfac9ef52ecb3f9d6eb3f77325587c8f22fe7feee5213b1
+	source = @discord~0.0.86::https://dl.discordapp.net/apps/linux/0.0.86/discord-0.0.86.tar.gz
+	sha256sums = b5fa58bc96e21ff036326d23ab8688b485241b0727ebe4c5c51de33435d6a465
 
 pkgname = discord
 ---
@@ -10489,7 +10489,7 @@ pkgname = quintom-cursor-theme-git
 ---
 pkgbase = rambox-deb
 	gives = rambox
-	pkgver = 2.3.4
+	pkgver = 2.4.1
 	pkgdesc = Workspace simplifier
 	url = https://rambox.app
 	arch = amd64
@@ -10508,9 +10508,10 @@ pkgbase = rambox-deb
 	replaces = rambox-deb
 	replaces = rambox
 	maintainer = Eric Renfro <psi-jack@linux-help.org>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: rambox
-	source = https://github.com/ramboxapp/download/releases/download/v2.3.4/Rambox-2.3.4-linux-x64.deb
-	sha256sums = 2fc00888e9dcc6baed57032b2d14d0e9fbff67dd3cd47162106e95e6b8d4fd7d
+	source = https://github.com/ramboxapp/download/releases/download/v2.4.1/Rambox-2.4.1-linux-x64.deb
+	sha256sums = 554316ce93c134dc072092d3c76127a89c5e7fa09b3dc7a69d1e4eae24934ad4
 
 pkgname = rambox-deb
 ---
