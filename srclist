@@ -6361,8 +6361,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.12.12-061212-generic
-	pkgver = 6.12.12
+	gives = linux-headers-6.13.2-061302-generic
+	pkgver = 6.13.2
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -6370,10 +6370,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/arm64/linux-headers-6.12.12-061212-generic_6.12.12-061212.202502020514_arm64.deb
-	sha256sums_arm64 = e95401b638d2b6732ed5b54e5c4150dd6951ef755977a60bbcbbf284114bc031
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-headers-6.12.12-061212-generic_6.12.12-061212.202502020514_amd64.deb
-	sha256sums_amd64 = 7563818d416271e345270c3d38afadf361712d35b89eb4f200b5ab3ad3a97c4c
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/arm64/linux-headers-6.13.2-061302-generic_6.13.2-061302.202502081010_arm64.deb
+	sha256sums_arm64 = 4ff2a137f8825f494af44af6756e75222467cf73b9ce50530c8edc8c61fab8eb
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-headers-6.13.2-061302-generic_6.13.2-061302.202502081010_amd64.deb
+	sha256sums_amd64 = 68e2201b324980d78c0d3a49537384731bea570b82208bb3c711d41389ba76f7
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -6408,15 +6408,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.12.12-061212
-	pkgver = 6.12.12
+	gives = linux-headers-6.13.2-061302
+	pkgver = 6.13.2
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-headers-6.12.12-061212_6.12.12-061212.202502020514_all.deb
-	sha256sums = d8576f9717d43bbd544e5adb592910a8738754eb54c8e15bda312fd4fa6ff41f
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-headers-6.13.2-061302_6.13.2-061302.202502081010_all.deb
+	sha256sums = a2d144521b7cbdc8b951a44b9ccc58c10430cf2fb01a7ecdd6d9bf3fc12331bf
 
 pkgname = linux-headers-stable-deb
 ---
@@ -6478,8 +6478,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.12.12-061212-generic
-	pkgver = 6.12.12
+	gives = linux-image-unsigned-6.13.2-061302-generic
+	pkgver = 6.13.2
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6488,10 +6488,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/arm64/linux-image-unsigned-6.12.12-061212-generic_6.12.12-061212.202502020514_arm64.deb
-	sha256sums_arm64 = c552f3d68bc0accff50d236aa709afa13a7f45487bcc2b9180514634fcdb0361
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-image-unsigned-6.12.12-061212-generic_6.12.12-061212.202502020514_amd64.deb
-	sha256sums_amd64 = c28308bcbb7eeb957a4d974eb8803fcdb617634bee8922d3d2696adb4d94156b
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/arm64/linux-image-unsigned-6.13.2-061302-generic_6.13.2-061302.202502081010_arm64.deb
+	sha256sums_arm64 = 4ad4c795468fb3b14027271e15b6cc22f22b875f5f228aa8e318a31f26b5106f
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-image-unsigned-6.13.2-061302-generic_6.13.2-061302.202502081010_amd64.deb
+	sha256sums_amd64 = a7999ffdfebcc0d5fc2e8dfbd95fc9111980c2ea74c6c2409704e511fb2c26ad
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -6513,7 +6513,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.12.12
+	pkgver = 6.13.2
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6591,16 +6591,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.12.12-061212-generic
-	pkgver = 6.12.12
+	gives = linux-modules-6.13.2-061302-generic
+	pkgver = 6.13.2
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/arm64/linux-modules-6.12.12-061212-generic_6.12.12-061212.202502020514_arm64.deb
-	sha256sums_arm64 = 757bf8ba43d7751d42847c7583f08bf22f519265dd6e9f7542519417a13d6f04
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.12/amd64/linux-modules-6.12.12-061212-generic_6.12.12-061212.202502020514_amd64.deb
-	sha256sums_amd64 = 6ea4fe5e928486a6e4fff4ace58878904ee484b38aab01fe19eafd02e55ddc6e
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/arm64/linux-modules-6.13.2-061302-generic_6.13.2-061302.202502081010_arm64.deb
+	sha256sums_arm64 = 6180bb7620dd0108505c0712dc13989b3cde854d8f5afadd52e15e9a073e2a1e
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-modules-6.13.2-061302-generic_6.13.2-061302.202502081010_amd64.deb
+	sha256sums_amd64 = fb04c692e7f26a9b5f0de2d43b5e8e69cd938f7c44250acd84391cd47c14b0f8
 
 pkgname = linux-modules-stable-deb
 ---
