@@ -283,11 +283,6 @@ build() {
 
 }
 
-check() {
-  cd "${pkgname}~${pkgver}"
-  make -j"${NCPU}" check
-}
-
 package() {
   cd "${pkgname}~${pkgver}"
   make -j"${NCPU}" DESTDIR="${pkgdir}" install

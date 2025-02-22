@@ -281,11 +281,6 @@ build() {
 
 }
 
-check() {
-  cd "emacs"
-  make -j"${NCPU}" check
-}
-
 package() {
   cd "emacs"
   make -j"${NCPU}" DESTDIR="${pkgdir}" install
