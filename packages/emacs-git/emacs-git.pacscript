@@ -75,7 +75,7 @@ pkgname="emacs-git"
 gives="emacs"
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
 makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
-depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
+depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev" "gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 breaks=("${pkgname}" "${pkgname}-nox")
 replaces=("${pkgname}" "${pkgname}-nox")
@@ -114,9 +114,9 @@ fi
 
 if [[ ${JIT} == "YES" ]]; then
   if [[ ${CLI} == "YES" ]]; then
-    depends_nox+=("libgccjit0" "libgccjit-10-dev")
+    depends_nox+=("libgccjit0" "libgccjit-12-dev | libgccjit-11-dev")
   else
-    depends+=("libgccjit0" "libgccjit-10-dev")
+    depends+=("libgccjit0" "libgccjit-12-dev | libgccjit-11-dev")
   fi
 fi
 
@@ -134,7 +134,7 @@ elif [[ ${GTK3} == "YES" ]]; then
 fi
 
 if [[ ${CLI} != "YES" ]]; then
-  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff5")
+  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff6")
 elif [[ ${CLI} == "YES" ]]; then
   depends+=("")
 fi
@@ -295,12 +295,12 @@ package() {
   if [[ ${DOCS_PDF} == "YES" ]]; then make -j"${NCPU}" DESTDIR="${pkgdir}" install-pdf; fi
 
   # fix user/root permissions on usr/local/share files
+  mkdir -p "${pkgdir}/usr/share/emacs/"
   find "${pkgdir}/usr/share/emacs/" -print0 | xargs -0 chown root:root
 
   # fix permssions on /var/games
   mkdir -p "${pkgdir}/var/games/emacs"
   chmod 775 "${pkgdir}/var/games"
   chmod 775 "${pkgdir}/var/games/emacs"
-  chown -R root:games "${pkgdir}/var/games"
 }
 # vim:set ft=sh ts=2 sw=2 et:
