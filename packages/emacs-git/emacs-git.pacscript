@@ -18,8 +18,6 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 # =================================================
 #
 ################################################################################
-CHECK=            # Run tests. May fail, this is developement after all.
-
 CLANG=            # Use clang.
 
 GOLD=             # Use the gold linker.
@@ -74,14 +72,14 @@ NOGZ="YES"        # Don't compress .el files.
 pkgname="emacs-git"
 gives="emacs"
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
-makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
+makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev" "libtree-sitter-dev")
 depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev" "gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 breaks=("${pkgname}" "${pkgname}-nox")
 replaces=("${pkgname}" "${pkgname}-nox")
 source=("https://github.com/emacs-mirror/emacs.git")
 arch=("any")
-pkgver="29.1"
+pkgver="29.4"
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then
   export LD=/usr/bin/ld.gold
@@ -175,9 +173,6 @@ fi
 prepare() {
   cd "emacs"
   [[ -x configure ]] || (./autogen.sh git && ./autogen.sh autoconf)
-  if [[ ${CHECK} == "YES" ]]; then
-    make -j"${NCPU}" check
-  fi
 }
 
 build() {
@@ -207,7 +202,7 @@ build() {
   fi
 
   if [[ ${JIT} == "YES" ]]; then
-    _conf+=("--with-native-compilation")
+    _conf+=("--with-native-compilation=aot")
   fi
 
   if [[ ${XI2} == "YES" ]]; then
