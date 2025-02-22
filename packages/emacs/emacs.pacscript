@@ -18,8 +18,6 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 # =================================================
 #
 ################################################################################
-CHECK=            # Run tests. May fail, this is developement after all.
-
 CLANG=            # Use clang.
 
 GOLD=             # Use the gold linker.
@@ -177,9 +175,6 @@ fi
 prepare() {
   cd "${pkgname}~${pkgver}"
   [[ -x configure ]] || (./autogen.sh git && ./autogen.sh autoconf)
-  if [[ ${CHECK} == "YES" ]]; then
-    make -j"${NCPU}" check
-  fi
 }
 
 build() {
@@ -286,6 +281,11 @@ build() {
     make -j"${NCPU}" pdf
   fi
 
+}
+
+check() {
+  cd "${pkgname}~${pkgver}"
+  make -j"${NCPU}" check
 }
 
 package() {
