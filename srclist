@@ -2486,7 +2486,7 @@ pkgname = element-desktop-deb
 ---
 pkgbase = emacs-git
 	gives = emacs
-	pkgver = 29.1
+	pkgver = 29.4
 	pkgdesc = An extensible, customizable, free/libre text editor — and more.
 	arch = any
 	depends = libalsaplayer0
@@ -2533,7 +2533,7 @@ pkgname = emacs-git
 ---
 pkgbase = emacs
 	gives = emacs
-	pkgver = 28.2
+	pkgver = 29.4
 	pkgdesc = An extensible, customizable, free/libre text editor — and more.
 	arch = any
 	depends = libalsaplayer0
@@ -2575,8 +2575,8 @@ pkgbase = emacs
 	replaces = emacs-nox
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: emacs
-	source = @emacs~28.2::http://ftpmirror.gnu.org/emacs/emacs-28.2.tar.xz
-	sha256sums = ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488
+	source = @emacs~29.4::http://ftpmirror.gnu.org/emacs/emacs-29.4.tar.xz
+	sha256sums = ba897946f94c36600a7e7bb3501d27aa4112d791bfe1445c61ed28550daca235
 
 pkgname = emacs
 ---

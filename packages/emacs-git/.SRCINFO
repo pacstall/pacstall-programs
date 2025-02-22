@@ -1,6 +1,6 @@
 pkgbase = emacs-git
 	gives = emacs
-	pkgver = 29.1
+	pkgver = 29.4
 	pkgdesc = An extensible, customizable, free/libre text editor — and more.
 	arch = any
 	depends = libalsaplayer0

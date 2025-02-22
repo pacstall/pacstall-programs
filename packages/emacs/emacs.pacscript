@@ -71,7 +71,7 @@ NOGZ="YES"        # Don't compress .el files.
 
 pkgname="emacs"
 arch=("any")
-pkgver="28.2"
+pkgver="29.4"
 source=("@${pkgname}~${pkgver}::http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
 makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
@@ -80,7 +80,7 @@ depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 gives="${pkgname}"
 breaks=("${pkgname}-git" "${pkgname}-nox")
 replaces=("${pkgname}-git" "${pkgname}-nox")
-sha256sums=("ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488")
+sha256sums=("ba897946f94c36600a7e7bb3501d27aa4112d791bfe1445c61ed28550daca235")
 repology=("project: emacs")
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then
