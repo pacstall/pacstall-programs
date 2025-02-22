@@ -295,12 +295,12 @@ package() {
   if [[ ${DOCS_PDF} == "YES" ]]; then make -j"${NCPU}" DESTDIR="${pkgdir}" install-pdf; fi
 
   # fix user/root permissions on usr/local/share files
+  mkdir -p "${pkgdir}/usr/share/emacs/"
   find "${pkgdir}/usr/share/emacs/" -print0 | xargs -0 chown root:root
 
   # fix permssions on /var/games
   mkdir -p "${pkgdir}/var/games/emacs"
   chmod 775 "${pkgdir}/var/games"
   chmod 775 "${pkgdir}/var/games/emacs"
-  chown -R root:games "${pkgdir}/var/games"
 }
 # vim:set ft=sh ts=2 sw=2 et:
