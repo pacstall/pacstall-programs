@@ -74,7 +74,7 @@ arch=("any")
 pkgver="29.4"
 source=("@${pkgname}~${pkgver}::http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
-makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
+makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev" "libtree-sitter-dev")
 depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev" "gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 gives="${pkgname}"
@@ -204,7 +204,7 @@ build() {
   fi
 
   if [[ ${JIT} == "YES" ]]; then
-    _conf+=("--with-native-compilation")
+    _conf+=("--with-native-compilation=aot")
   fi
 
   if [[ ${XI2} == "YES" ]]; then

@@ -34,6 +34,7 @@ pkgbase = emacs-git
 	makedepends = libgif-dev
 	makedepends = libxaw7-dev
 	makedepends = libxpm-dev
+	makedepends = libtree-sitter-dev
 	makedepends = x11proto-dev
 	makedepends = libxi-dev
 	breaks = emacs-git
