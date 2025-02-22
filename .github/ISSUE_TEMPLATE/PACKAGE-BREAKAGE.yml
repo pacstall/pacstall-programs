@@ -30,6 +30,13 @@ body:
       placeholder: 3.11.0
     validations:
       required: true
+  - type: input
+    id: distro
+    attributes:
+      label: Distro and version
+      description: What distribution and version are you using?
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:

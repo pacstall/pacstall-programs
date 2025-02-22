@@ -30,7 +30,7 @@ package() {
   install -Dm644 bin/studio.png "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
   chmod -R ugo+rX "${pkgdir}/opt"
   mkdir -p "${pkgdir}/usr/bin"
-  ln -sf "/opt/${pkgname}/bin/studio.sh" "${pkgdir}/usr/bin/${pkgname}"
+  ln -sf "/opt/${pkgname}/bin/studio" "${pkgdir}/usr/bin/${pkgname}"
 }
 
 post_install() {

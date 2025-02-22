@@ -1,0 +1,10 @@
+pkgbase = virtualbox-guest-iso
+	pkgver = 7.1.6
+	pkgdesc = ISO CD image version of the VirtualBox Guest Additions (for installation on the host)
+	arch = any
+	pacdeps = virtualbox-deb
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source = https://download.virtualbox.org/virtualbox/7.1.6/VBoxGuestAdditions_7.1.6.iso
+	sha256sums = dbbda1645bc05c9260adfe9efc4949cb590ec5ec02680aff936375670cffcafc
+
+pkgname = virtualbox-guest-iso

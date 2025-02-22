@@ -1,6 +1,6 @@
 pkgname="pacup"
 arch=("all")
-pkgver="3.3.8"
+pkgver="3.3.11"
 pkgdesc="Help maintainers update pacscripts (next-gen Perl rewrite)"
 depends=(
   'libdata-compare-perl'
@@ -19,7 +19,7 @@ replaces=(
   "${pkgname}-git"
 )
 source=("https://github.com/pacstall/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('1cec3656b9a3e94f770feef0561ed9b20dfe33f0ec8a449d711a0fc74118173a')
+sha256sums=('d9f6d5523a0aa584230cdf32675705745651fb2ae8768e8628d48c98dd151469')
 maintainer=('Oren Klopfer <oren@taumoda.com>')
 
 build() {

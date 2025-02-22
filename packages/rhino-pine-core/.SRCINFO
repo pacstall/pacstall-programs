@@ -1,5 +1,5 @@
 pkgbase = rhino-pine-core
-	pkgver = 2025.1
+	pkgver = 2025.2
 	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
@@ -12,6 +12,7 @@ pkgbase = rhino-pine-core
 	pacdeps = rhino-pkg-git
 	pacdeps = rhino-neofetch-git
 	pacdeps = rhino-system-git
+	pacdeps = rhino-hotfix-git
 	pacdeps = u-boot-mobian-deb
 	pacdeps = mobile-usb-networking-deb
 	replaces = rhino-core

@@ -1,6 +1,6 @@
 pkgname="vscodium-bin"
 gives="codium"
-pkgver="1.96.4.25017"
+pkgver="1.97.2.25045"
 arch=("amd64")
 pkgdesc="VSCodium is a community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code."
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
@@ -9,8 +9,8 @@ source=(
   "https://vscodium.com/img/codium_cnl.svg"
 )
 sha256sums=(
-  "c5b78556cb0674fa7de0e349c13adbc2028e6080fd04d7c3ff1a8ed541421cd1"
-  "9817036bd2f5add672e707da311a301033ad122d6c2c505c776cb48d35b94472"
+  "aa0248375a070c49cfc9e1c971ff758fb1370177f61ce6570504235e6270a793"
+  "SKIP"
 )
 repology=("project: ${gives}")
 
