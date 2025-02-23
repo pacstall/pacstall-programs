@@ -1,4 +1,5 @@
 1password-cli-bin
+86box-app
 adapta-gtk-theme-git
 adw-gtk-theme
 adw-gtk3
@@ -64,6 +65,7 @@ chwp-deb
 cider-deb
 circle-flags-svg-deb
 clib
+clio-git
 clipboard-bin
 cloudflare-warp-deb
 cmake-data-deb
@@ -75,6 +77,7 @@ coreutils-single
 cortile
 cortile-bin
 couture
+cromite-bin
 cutefish-calculator-git
 cutefish-core-git
 cutefish-dock-git
@@ -145,6 +148,7 @@ feroxbuster-bin
 ffmpeg4.4
 ffnvcodec-headers
 ffsend-bin
+figma-linux-deb
 firefox-arm64-deb
 firefox-bin
 firefox-developer-edition-bin
@@ -230,6 +234,7 @@ honkers-launcher-bin
 htop
 httptoolkit-deb
 hwinfo-git
+hydralauncher-deb
 hyfetch-git
 hyper-deb
 hyperfine-bin
@@ -271,6 +276,7 @@ kxstudio-repos-deb
 lagrange
 latte-dock-git
 lazarus-project-deb
+lazydocker-bin
 lazygit
 lbry-deb
 legcord-deb
@@ -361,7 +367,6 @@ mobile-usb-networking-deb
 modprobed-db
 moka-icon-theme
 mold-bin
-ms-teams-deb
 mullvad-vpn-beta-deb
 mullvad-vpn-deb
 muse-hub-deb
@@ -452,6 +457,7 @@ noisetorch-bin
 nomachine-deb
 nordlayer-deb
 nordvpn-deb
+notesnook-app
 notion-app-deb
 notion-app-enhanced-deb
 notion-git
@@ -554,6 +560,7 @@ qtile-extras-git
 qtile-git
 quarto-deb
 quintom-cursor-theme-git
+rambox-app
 rambox-deb
 raspi-config-deb
 realvnc-vnc-viewer-deb
@@ -593,6 +600,7 @@ rust-motd-deb
 rustdesk-deb
 rustrover-bin
 sayonara
+sayonara-git
 schildichat-deb
 scrcpy
 sed
@@ -687,13 +695,16 @@ unicorn-mobile-git
 universal-ctags-git
 upscayl-app
 uwufetch
+vala-panel-appmenu-xfce4-git
 vega-strike-engine-git
 vega-strike-git
 ventoy-bin
 veracrypt-deb
 vesktop-deb
+vinegar-git
 viper4linux
 virtualbox-deb
+virtualbox-guest-iso
 vivaldi-deb
 vivarium
 vkroots-git
@@ -759,6 +770,7 @@ zen-browser-specific-bin
 zentile-bin
 zettlr-deb
 zig-bin
+zinit
 zoho-notebook-deb
 zoom-deb
 zotero

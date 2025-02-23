@@ -13,6 +13,18 @@ pkgbase = 1password-cli-bin
 
 pkgname = 1password-cli-bin
 ---
+pkgbase = 86box-app
+	gives = 86box
+	pkgver = 4.2.1
+	pkgdesc = Open source x86 emulator
+	url = https://86box.net
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source = https://github.com/86Box/86Box/releases/download/v4.2.1/86Box-Linux-x86_64-b6130.AppImage
+	sha256sums = e049a364bc50307f7db9703960de7b6b1e3d35a7804800e98ce34ff9ba447e53
+
+pkgname = 86box-app
+---
 pkgbase = adapta-gtk-theme-git
 	gives = adapta-gtk-theme
 	pkgver = 3.95.0.11
@@ -53,16 +65,17 @@ pkgname = adw-gtk-theme
 ---
 pkgbase = adw-gtk3
 	gives = adw-gtk3
-	pkgver = 5.3
+	pkgver = 5.6
 	pkgdesc = An unofficial GTK3 port of libadwaita.
 	arch = any
 	breaks = adw-gtk3
 	breaks = adw-gtk3-git
 	maintainer = Herisson <spaceguybox@outlook.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: adw-gtk3
 	repology = repo: aur
-	source = @adw-gtk3~5.3::https://github.com/lassekongo83/adw-gtk3/releases/download/v5.3/adw-gtk3v5.3.tar.xz
-	sha256sums = 2e6e87935bef30936e40d07c7af4fd20754e77917be224f61c4346867196bef0
+	source = @adw-gtk3-5.6::https://github.com/lassekongo83/adw-gtk3/releases/download/v5.6/adw-gtk3v5.6.tar.xz
+	sha256sums = 4ad286655136384f26bce80360a950473cf62532bc2650e85ce4f27776dbafa4
 
 pkgname = adw-gtk3
 ---
@@ -540,10 +553,12 @@ pkgbase = arduino-ide-bin
 pkgname = arduino-ide-bin
 ---
 pkgbase = asdf-vm
-	pkgver = 0.15.0
+	pkgver = 0.16.0
 	pkgdesc = Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more
 	url = https://asdf-vm.com
-	arch = any
+	arch = i386
+	arch = amd64
+	arch = arm64
 	depends = curl
 	depends = git
 	optdepends = build-essential: Array of tools to build software
@@ -553,8 +568,12 @@ pkgbase = asdf-vm
 	optdepends = unzip: Needed by some plugins, like Elixir
 	license = MIT
 	repology = project: asdf-vm
-	source = asdf-vm-0.15.0.tar.gz::https://github.com/asdf-vm/asdf/archive/v0.15.0.tar.gz
-	sha256sums = d0cafe61d27b5e3fcb53658821bfbf744fd040a8ea28b0e22277e032b8e8f7fe
+	source_i386 = asdf-vm-0.16.0-i386.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.0/asdf-v0.16.0-linux-386.tar.gz
+	sha256sums_i386 = f3ee5eb3089304fe5d3961174b045feaf2bf33afd6b232a10237dd5d607a7e03
+	source_amd64 = asdf-vm-0.16.0-amd64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.0/asdf-v0.16.0-linux-amd64.tar.gz
+	sha256sums_amd64 = 7558f8b916fa461ea04b653fdb62fea01362720349e9ef3aa497bc7ef93d22ac
+	source_arm64 = asdf-vm-0.16.0-arm64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.0/asdf-v0.16.0-linux-arm64.tar.gz
+	sha256sums_arm64 = 5394e85001a36dc792087069303fa66e08d0f67740448fcd68dded974aaadb77
 
 pkgname = asdf-vm
 ---
@@ -1058,7 +1077,7 @@ pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.74.50
+	pkgver = 1.74.51
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1070,16 +1089,16 @@ pkgbase = brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.74.50_amd64.deb
-	sha256sums_amd64 = 5e76836896aa8cf3974976928626ba3a8ca7fc37a0534bc2d1779f8c1a17eb31
-	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.74.50_arm64.deb
-	sha256sums_arm64 = be2b79ee264b069d703f848af27aaa6516821e5c7080c468d8c5c756fc3c6a99
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.74.51_amd64.deb
+	sha256sums_amd64 = 665a4a7d3bec24a0e6ce94c29cf06acc20af04a189242bce2a2eb929d1051a52
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.74.51_arm64.deb
+	sha256sums_arm64 = aeca19e4029d606ca0eb3b7a93f1e505f2be14dbd565d2f956334c358aa92a5b
 
 pkgname = brave-browser-deb
 ---
 pkgbase = brave-browser-nightly-deb
 	gives = brave-browser-nightly
-	pkgver = 1.76.30
+	pkgver = 1.77.14
 	pkgdesc = The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel
 	url = https://brave.com/
 	arch = amd64
@@ -1091,8 +1110,8 @@ pkgbase = brave-browser-nightly-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-nightly-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.76.30/brave-browser-nightly_1.76.30_amd64.deb
-	sha256sums = 780cb41ab6b0a7a579e9218eed0f2c6a3c242a17198f836fb13349aa669b1858
+	source = https://github.com/brave/brave-browser/releases/download/v1.77.14/brave-browser-nightly_1.77.14_amd64.deb
+	sha256sums = 2ad280b585d80388739bfab42302e64524d30fb4aefdbb1b752400d83035adf8
 
 pkgname = brave-browser-nightly-deb
 ---
@@ -1352,6 +1371,20 @@ pkgbase = clib
 
 pkgname = clib
 ---
+pkgbase = clio-git
+	gives = clio
+	pkgver = 1.2.0
+	pkgdesc = A command-line historian that delivers curated facts about Unix and Linux history
+	url = https://github.com/alishyyy/clio
+	arch = all
+	license = MIT
+	maintainer = Alisha <alishyy@proton.me>
+	repology = project: clio
+	source = git+https://github.com/alishyyy/clio.git
+	sha256sums = SKIP
+
+pkgname = clio-git
+---
 pkgbase = clipboard-bin
 	gives = clipboard
 	pkgver = 0.9.1
@@ -1545,6 +1578,20 @@ pkgbase = couture
 	sha256sums = 5cebcd1358f450a0b7c7003444c3febbc8764be8d401ead2a3e07cab232aa14e
 
 pkgname = couture
+---
+pkgbase = cromite-bin
+	gives = cromite
+	pkgver = 132.0.6834.163
+	pkgdesc = Cromite is a Chromium fork based on Bromite with built-in support for ad blocking and an eye for privacy
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: cromite
+	source = https://github.com/uazo/cromite/releases/download/v132.0.6834.163-ae296a42b9b1412a54aca8635affabd26ea8ce1e/chrome-lin64.tar.gz
+	source = https://www.cromite.org/app_icon.png
+	sha256sums = f85d696e4d400b903f675f86aa379a5e8d00f57fbbf8d8f541cf077f6bc5da2e
+	sha256sums = 95ea4e28bc95c30200d832c075a04d79191110573f8bbebf881b81c4cef6c211
+
+pkgname = cromite-bin
 ---
 pkgbase = cutefish-calculator-git
 	gives = cutefish-calculator
@@ -1973,7 +2020,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.82
+	pkgver = 0.0.86
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -1983,25 +2030,25 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.82/discord-0.0.82.deb
-	sha256sums = fb14ab261d9727511a45252331775c07627ae31172211f60284ce16700375622
+	source = https://dl.discordapp.net/apps/linux/0.0.86/discord-0.0.86.deb
+	sha256sums = 5367e5fbac2ad2a5a8bb1cb71d57fddfb02d29d370c434dd0062c86d1185fc29
 
 pkgname = discord-deb
 ---
 pkgbase = discord-ptb-deb
 	gives = discord-ptb
-	pkgver = 0.0.127
+	pkgver = 0.0.132
 	pkgdesc = Chat for Communities and Friends - Public Test Build
 	url = https://discord.com/
 	arch = amd64
 	repology = project: discord-ptb
-	source = https://dl-ptb.discordapp.net/apps/linux/0.0.127/discord-ptb-0.0.127.deb
-	sha256sums = 1632fd96ebd7821b34b91272109773968f29e2bed9bd23525169b9d429415e27
+	source = https://dl-ptb.discordapp.net/apps/linux/0.0.132/discord-ptb-0.0.132.deb
+	sha256sums = 6a76835344656b0b5bccde063056a5bab1ca4cb8a79abbfb3770a65877069cd8
 
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.82
+	pkgver = 0.0.86
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2018,8 +2065,8 @@ pkgbase = discord
 	depends = libc++1
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.82::https://dl.discordapp.net/apps/linux/0.0.82/discord-0.0.82.tar.gz
-	sha256sums = 2fc2f07b951abe66d6d6cde0b122621e36e266736dc84b0427396b374160737c
+	source = @discord~0.0.86::https://dl.discordapp.net/apps/linux/0.0.86/discord-0.0.86.tar.gz
+	sha256sums = b5fa58bc96e21ff036326d23ab8688b485241b0727ebe4c5c51de33435d6a465
 
 pkgname = discord
 ---
@@ -2115,7 +2162,7 @@ pkgname = doas-git
 ---
 pkgbase = docker-bin
 	gives = docker
-	pkgver = 27.5.0
+	pkgver = 27.5.1
 	pkgdesc = Docker Engine Static Binaries
 	arch = arm64
 	arch = amd64
@@ -2145,16 +2192,16 @@ pkgbase = docker-bin
 	provides = runc
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: docker
-	source_arm64 = https://download.docker.com/linux/static/stable/aarch64/docker-27.5.0.tgz
-	sha256sums_arm64 = b93df316480e939712c67e2c37a7cc1442bcedbf6ca91a945b11c8afc246ff0f
-	source_amd64 = https://download.docker.com/linux/static/stable/x86_64/docker-27.5.0.tgz
-	sha256sums_amd64 = 4fca6bb9a3f4e13c50dea35aeef57aad735aed8e7eff67ef3741f777ce2c2eb7
+	source_arm64 = https://download.docker.com/linux/static/stable/aarch64/docker-27.5.1.tgz
+	sha256sums_arm64 = e6b53725a73763ab3f988c73f8772eaed429754c1a579db5ff11f21990fd1817
+	source_amd64 = https://download.docker.com/linux/static/stable/x86_64/docker-27.5.1.tgz
+	sha256sums_amd64 = 4f798b3ee1e0140eab5bf30b0edc4e84f4cdb53255a429dc3bbae9524845d640
 
 pkgname = docker-bin
 ---
 pkgbase = docker-buildx-plugin-bin
 	gives = docker-buildx-plugin
-	pkgver = 0.19.3
+	pkgver = 0.20.1
 	pkgdesc = Docker Buildx cli plugin
 	url = https://github.com/docker/buildx
 	arch = amd64
@@ -2162,16 +2209,16 @@ pkgbase = docker-buildx-plugin-bin
 	replaces = docker-buildx-plugin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: docker-buildx
-	source_amd64 = https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64
-	sha256sums_amd64 = 32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2
-	source_arm64 = https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64
-	sha256sums_arm64 = 138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e
+	source_amd64 = https://github.com/docker/buildx/releases/download/v0.20.1/buildx-v0.20.1.linux-amd64
+	sha256sums_amd64 = 8c38f60308a895fa570f1410e453c5de11aafd65a99fa99965d96d24b6225a78
+	source_arm64 = https://github.com/docker/buildx/releases/download/v0.20.1/buildx-v0.20.1.linux-arm64
+	sha256sums_arm64 = f7d867e9f1a3c00b32dd580f56594e229df05e3fb1b083b7099c91c2e7d2ce1e
 
 pkgname = docker-buildx-plugin-bin
 ---
 pkgbase = docker-compose-plugin-bin
 	gives = docker-compose-plugin
-	pkgver = 2.32.4
+	pkgver = 2.33.0
 	pkgdesc = Docker Compose cli plugin
 	url = https://github.com/docker/compose
 	arch = amd64
@@ -2179,10 +2226,10 @@ pkgbase = docker-compose-plugin-bin
 	replaces = docker-compose-plugin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: docker-compose
-	source_amd64 = https://github.com/docker/compose/releases/download/v2.32.4/docker-compose-linux-x86_64
-	sha256sums_amd64 = ed1917fb54db184192ea9d0717bcd59e3662ea79db48bff36d3475516c480a6b
-	source_arm64 = https://github.com/docker/compose/releases/download/v2.32.4/docker-compose-linux-aarch64
-	sha256sums_arm64 = 0c4591cf3b1ed039adcd803dbbeddf757375fc08c11245b0154135f838495a2f
+	source_amd64 = https://github.com/docker/compose/releases/download/v2.33.0/docker-compose-linux-x86_64
+	sha256sums_amd64 = 6395dbb256db6ea28d5c6695bc9bc33866c07ad1c93792f8d85857f1c21c34ee
+	source_arm64 = https://github.com/docker/compose/releases/download/v2.33.0/docker-compose-linux-aarch64
+	sha256sums_arm64 = 03a42a0fc0614ffc3c9ebca521cab75e02c427b68e45e3f6867d9510b9a28818
 
 pkgname = docker-compose-plugin-bin
 ---
@@ -2439,17 +2486,18 @@ pkgname = element-desktop-deb
 ---
 pkgbase = emacs-git
 	gives = emacs
-	pkgver = 29.1
+	pkgver = 29.4
 	pkgdesc = An extensible, customizable, free/libre text editor — and more.
 	arch = any
 	depends = libalsaplayer0
 	depends = libgnutls28-dev
 	depends = libxml2
-	depends = libjansson-dev gpm
+	depends = libjansson-dev
+	depends = gpm
 	depends = m17n-lib-bin
 	depends = libharfbuzz0b
 	depends = libgccjit0
-	depends = libgccjit-10-dev
+	depends = libgccjit-12-dev | libgccjit-11-dev
 	depends = libgtk-4-dev | libgtk-3-dev
 	depends = libsm6
 	depends = libxcb-util1
@@ -2458,7 +2506,7 @@ pkgbase = emacs-git
 	depends = libpng16-16
 	depends = libgif-dev
 	depends = libwebp7 | libweb6
-	depends = libtiff5
+	depends = libtiff6
 	depends = libcairo2
 	makedepends = git
 	makedepends = autoconf
@@ -2472,6 +2520,7 @@ pkgbase = emacs-git
 	makedepends = libgif-dev
 	makedepends = libxaw7-dev
 	makedepends = libxpm-dev
+	makedepends = libtree-sitter-dev
 	makedepends = x11proto-dev
 	makedepends = libxi-dev
 	breaks = emacs-git
@@ -2485,17 +2534,18 @@ pkgname = emacs-git
 ---
 pkgbase = emacs
 	gives = emacs
-	pkgver = 28.2
+	pkgver = 29.4
 	pkgdesc = An extensible, customizable, free/libre text editor — and more.
 	arch = any
 	depends = libalsaplayer0
 	depends = libgnutls28-dev
 	depends = libxml2
-	depends = libjansson-dev gpm
+	depends = libjansson-dev
+	depends = gpm
 	depends = m17n-lib-bin
 	depends = libharfbuzz0b
 	depends = libgccjit0
-	depends = libgccjit-10-dev
+	depends = libgccjit-12-dev | libgccjit-11-dev
 	depends = libgtk-4-dev | libgtk-3-dev
 	depends = libsm6
 	depends = libxcb-util1
@@ -2504,7 +2554,7 @@ pkgbase = emacs
 	depends = libpng16-16
 	depends = libgif-dev
 	depends = libwebp7 | libweb6
-	depends = libtiff5
+	depends = libtiff6
 	depends = libcairo2
 	makedepends = git
 	makedepends = autoconf
@@ -2518,6 +2568,7 @@ pkgbase = emacs
 	makedepends = libgif-dev
 	makedepends = libxaw7-dev
 	makedepends = libxpm-dev
+	makedepends = libtree-sitter-dev
 	makedepends = x11proto-dev
 	makedepends = libxi-dev
 	breaks = emacs-git
@@ -2526,8 +2577,8 @@ pkgbase = emacs
 	replaces = emacs-nox
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: emacs
-	source = @emacs~28.2::http://ftpmirror.gnu.org/emacs/emacs-28.2.tar.xz
-	sha256sums = ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488
+	source = @emacs~29.4::http://ftpmirror.gnu.org/emacs/emacs-29.4.tar.xz
+	sha256sums = ba897946f94c36600a7e7bb3501d27aa4112d791bfe1445c61ed28550daca235
 
 pkgname = emacs
 ---
@@ -2938,30 +2989,49 @@ pkgbase = ffsend-bin
 
 pkgname = ffsend-bin
 ---
+pkgbase = figma-linux-deb
+	gives = figma-linux
+	pkgver = 0.11.5
+	pkgdesc = Unofficial Electron-based Figma desktop app for Linux
+	url = https://github.com/Figma-Linux/figma-linux
+	arch = amd64
+	arch = arm64
+	license = GPL-2.0-only
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: figma-linux
+	source_amd64 = https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.5/figma-linux_0.11.5_linux_amd64.deb
+	sha256sums_amd64 = ea515e89e7258b2b9376750209b2e9a105a2bb993738f1f16fe545d7b1ad111a
+	source_arm64 = https://github.com/Figma-Linux/figma-linux/releases/download/v0.11.5/figma-linux_0.11.5_linux_arm64.deb
+	sha256sums_arm64 = 32475046069b95857d44a07d6ec442beb7765d020ad55a245bd71b7c08a4c8f3
+
+pkgname = figma-linux-deb
+---
 pkgbase = firefox-arm64-deb
 	gives = firefox
-	pkgver = 134.0.2+build1
+	pkgver = 135.0+build2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
 	repology = repo: ubuntu_20_04
-	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_134.0.2+build1-0ubuntu0.22.04.1~mt1_arm64.deb
-	sha256sums = 214898f33cd2b29a67b025677f8474e1a9ed86057ca6f3d4f79a54c00308ef8d
+	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_135.0+build2-0ubuntu0.22.04.1~mt2_arm64.deb
+	sha256sums = 23d8234079841003b688df1fe6c55bfb503e0f98421b5a169d068c95233b3db5
 
 pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 134.0.1
+	pkgver = 135.0
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
+	depends = speech-dispatcher
+	optdepends = speech-dispatcher: Common interface to speech synthesizers
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/134.0.1/linux-x86_64/en-US/firefox-134.0.1.tar.bz2
-	sha256sums = 81951a7cbe64a63455640919aecced8eef9c7af0c3704aa75995981fa9a4ae7c
+	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/135.0/linux-x86_64/en-US/firefox-135.0.tar.xz
+	sha256sums = 6fcc1a2f95a6b232af82b4b7644566638c5df349e3095c65b7c18d1a63412d3d
 
 pkgname = firefox-bin
 ---
@@ -2991,7 +3061,7 @@ pkgname = firefox-developer-edition-bin
 ---
 pkgbase = firefox-nightly-bin
 	gives = firefox-nightly
-	pkgver = 135.0a1
+	pkgver = 137.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3000,14 +3070,14 @@ pkgbase = firefox-nightly-bin
 	replaces = firefox-nightly-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-135.0a1.en-US.linux-x86_64.tar.xz
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-135.0a1.en-US.linux-aarch64.tar.xz
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.tar.xz
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-137.0a1.en-US.linux-aarch64.tar.xz
 
 pkgname = firefox-nightly-bin
 ---
 pkgbase = firefox-nightly-deb
 	gives = firefox-nightly
-	pkgver = 135.0a1
+	pkgver = 137.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3016,8 +3086,8 @@ pkgbase = firefox-nightly-deb
 	replaces = firefox-nightly-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-135.0a1.en-US.linux-x86_64.deb
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-135.0a1.en-US.linux-aarch64.deb
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-137.0a1.en-US.linux-x86_64.deb
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-137.0a1.en-US.linux-aarch64.deb
 
 pkgname = firefox-nightly-deb
 ---
@@ -3053,9 +3123,9 @@ pkgbase = floorp-bin
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: floorp
-	source_amd64 = @floorp-bin~11.20.0::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-x86_64.tar.bz2
+	source_amd64 = floorp::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-x86_64.tar.bz2
 	sha256sums_amd64 = 59e3a67de994bfc8da3038cfb355b249ea67bf13bda8aaff021c459aabffb767
-	source_arm64 = @floorp-bin~11.20.0::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-aarch64.tar.bz2
+	source_arm64 = floorp::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-aarch64.tar.bz2
 	sha256sums_arm64 = cd416460b0b5a8b06ee2c4699110197c8180143e76bce4c119719edfc19c0d00
 
 pkgname = floorp-bin
@@ -4364,7 +4434,7 @@ pkgbase = hakuneko-deb
 pkgname = hakuneko-deb
 ---
 pkgbase = hamclock-big
-	pkgver = 4.11
+	pkgver = 4.13
 	pkgrel = 3
 	pkgdesc = Clock and world map with extra features for amateur radio (1600x960 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -4385,15 +4455,15 @@ pkgbase = hamclock-big
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-big
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.11.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.13.tar.gz
 	source = hamclock.desktop
-	sha256sums = a1f62e092df338ce044173aa62e09a7283687d1cf0173f6bc972af2bcffbff7c
+	sha256sums = d17b34a3b8b1765b84a95e01ab96b0b0e0a4eccc5958e0987e75e919991cc2c7
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-big
 ---
 pkgbase = hamclock-bigger
-	pkgver = 4.11
+	pkgver = 4.13
 	pkgdesc = Clock and world map with extra features for amateur radio (2400x1440 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	arch = any
@@ -4413,15 +4483,15 @@ pkgbase = hamclock-bigger
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-bigger
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.11.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.13.tar.gz
 	source = hamclock.desktop
-	sha256sums = a1f62e092df338ce044173aa62e09a7283687d1cf0173f6bc972af2bcffbff7c
+	sha256sums = d17b34a3b8b1765b84a95e01ab96b0b0e0a4eccc5958e0987e75e919991cc2c7
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-bigger
 ---
 pkgbase = hamclock-huge
-	pkgver = 4.11
+	pkgver = 4.13
 	pkgdesc = Clock and world map with extra features for amateur radio (3200x1920 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	arch = any
@@ -4441,15 +4511,15 @@ pkgbase = hamclock-huge
 	replaces = hamclock-bigger
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-huge
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.11.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.13.tar.gz
 	source = hamclock.desktop
-	sha256sums = a1f62e092df338ce044173aa62e09a7283687d1cf0173f6bc972af2bcffbff7c
+	sha256sums = d17b34a3b8b1765b84a95e01ab96b0b0e0a4eccc5958e0987e75e919991cc2c7
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-huge
 ---
 pkgbase = hamclock
-	pkgver = 4.11
+	pkgver = 4.13
 	pkgrel = 2
 	pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
 	url = https://clearskyinstitute.com/ham/HamClock
@@ -4470,9 +4540,9 @@ pkgbase = hamclock
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.11.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.13.tar.gz
 	source = hamclock.desktop
-	sha256sums = a1f62e092df338ce044173aa62e09a7283687d1cf0173f6bc972af2bcffbff7c
+	sha256sums = d17b34a3b8b1765b84a95e01ab96b0b0e0a4eccc5958e0987e75e919991cc2c7
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock
@@ -4502,21 +4572,19 @@ pkgbase = headset-deb
 pkgname = headset-deb
 ---
 pkgbase = helix
-	pkgver = 24.07
-	pkgrel = 2
+	pkgver = 25.01.1
 	pkgdesc = A post-modern modal text editor
 	arch = any
-	makedepends = cargo
+	makedepends = cargo>=1.76.0
 	repology = project: helix
-	source = @helix~24.07::https://github.com/helix-editor/helix/releases/download/24.07/helix-24.07-source.tar.xz
-	sha256sums = 44d9eb113a54a80a2891ac6374c74bcd2bce63d317f1e1c69c286a6fc919922c
+	source = @helix~25.01.1::https://github.com/helix-editor/helix/releases/download/25.01.1/helix-25.01.1-source.tar.xz
+	sha256sums = 12508c4f5b9ae6342299bd40d281cd9582d3b51487bffe798f3889cb8f931609
 
 pkgname = helix
 ---
 pkgbase = hello-rhino-bin
 	gives = hello-rhino
-	pkgver = 2025.1-1
-	pkgrel = 2
+	pkgver = 2025.2
 	pkgdesc = Rhino Linux Welcome Screen
 	arch = arm64
 	arch = amd64
@@ -4525,17 +4593,16 @@ pkgbase = hello-rhino-bin
 	replaces = hello-rhino
 	replaces = hello-rhino-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://github.com/rhino-linux/hello-rhino/releases/download/v2025.1-1/hello-rhino_v2025.1-1_arm64.zip
-	sha256sums_arm64 = b63080659292f31546c36c7aa0517a4c8862684f4737039f8c2cf0b0e8f732e9
-	source_amd64 = https://github.com/rhino-linux/hello-rhino/releases/download/v2025.1-1/hello-rhino_v2025.1-1_amd64.zip
-	sha256sums_amd64 = aa58b85e5f20a54ed2b3946d171f1e07bbb2df486b8cf4d67063809dc7aa4777
+	source_arm64 = https://github.com/rhino-linux/hello-rhino/releases/download/v2025.2/hello-rhino_v2025.2_arm64.zip
+	sha256sums_arm64 = 02270bf1eb90249b8e8f2158e6741b9c7cb34d17b6f85d32b42900568a6c74f0
+	source_amd64 = https://github.com/rhino-linux/hello-rhino/releases/download/v2025.2/hello-rhino_v2025.2_amd64.zip
+	sha256sums_amd64 = 8e444c0fd42ae4235f48ae6a89146700d18085a7a0bedfd88bd9ebb7c8af7aa5
 
 pkgname = hello-rhino-bin
 ---
 pkgbase = hello-rhino-git
 	gives = hello-rhino
-	pkgver = 2025.1-1
-	pkgrel = 2
+	pkgver = 2025.2
 	pkgdesc = Greeter application for Rhino Linux
 	arch = any
 	depends = libssl-dev
@@ -4670,6 +4737,18 @@ pkgbase = hwinfo-git
 	sha256sums = SKIP
 
 pkgname = hwinfo-git
+---
+pkgbase = hydralauncher-deb
+	gives = hydralauncher
+	pkgver = 3.2.2
+	pkgdesc = Game launcher with its own embedded BitTorrent client
+	arch = amd64
+	maintainer = raik199x <raik199x@mail.ru>
+	repology = project: hydralauncher
+	source = https://github.com/hydralauncher/hydra/releases/download/v3.2.2/hydralauncher_3.2.2_amd64.deb
+	sha256sums = d4f31edf059f3d4ae0474e021c57db4ee031d8ad47d06feb3bb0b90890a38b13
+
+pkgname = hydralauncher-deb
 ---
 pkgbase = hyfetch-git
 	gives = hyfetch
@@ -5071,17 +5150,17 @@ pkgname = intel-undervolt
 ---
 pkgbase = intellij-idea-community-bin
 	gives = intellij-idea-community
-	pkgver = 2024.3.2
+	pkgver = 2024.3.3
 	pkgdesc = IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages
 	arch = amd64
 	arch = arm64
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: intellij-idea-community
-	source_amd64 = https://download.jetbrains.com/idea/ideaIC-2024.3.2.tar.gz
-	sha256sums_amd64 = ad9d587b704806d9a21dfebe5c51415df94699bba958d7133763cfd56934ced8
-	source_arm64 = https://download.jetbrains.com/idea/ideaIC-2024.3.2-aarch64.tar.gz
-	sha256sums_arm64 = 0135027b97fcabd8f9e31d34cd2444323c63c894ef3f8c6eaf734fbecb8694ef
+	source_amd64 = https://download.jetbrains.com/idea/ideaIC-2024.3.3.tar.gz
+	sha256sums_amd64 = ae3c45fe515fef672f52ce5c4701bc40a5f82cb94f21fed2c6e66c22e3dc91db
+	source_arm64 = https://download.jetbrains.com/idea/ideaIC-2024.3.3-aarch64.tar.gz
+	sha256sums_arm64 = 9ce7e15135e97e92601654f456a6211127c165b35f62784886c4ec3b466af8f9
 
 pkgname = intellij-idea-community-bin
 ---
@@ -5578,16 +5657,37 @@ pkgbase = lazarus-project-deb
 
 pkgname = lazarus-project-deb
 ---
+pkgbase = lazydocker-bin
+	gives = lazydocker
+	pkgver = 0.24.1
+	pkgdesc = The lazier way to manage everything docker
+	url = https://github.com/jesseduffield/lazydocker
+	arch = amd64
+	arch = arm64
+	pacdeps = docker-bin
+	pacdeps = docker-compose-plugin-bin
+	pacdeps = docker-buildx-plugin-bin
+	license = MIT
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: lazydocker
+	source_amd64 = https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/lazydocker_0.24.1_Linux_x86_64.tar.gz
+	sha256sums_amd64 = 461cacf618e1020dff1d7896248c1c1f2267d5c25fb529755e4b9c43c5d1d4a5
+	source_arm64 = https://github.com/jesseduffield/lazydocker/releases/download/v0.24.1/lazydocker_0.24.1_Linux_arm64.tar.gz
+	sha256sums_arm64 = c38e715f2cb56440bec16e3744005522c1d13c47d2e3730572849dc69cefd8ae
+
+pkgname = lazydocker-bin
+---
 pkgbase = lazygit
 	gives = lazygit
-	pkgver = 0.42.0
+	pkgver = 0.45.2
 	pkgdesc = simple terminal UI for git commands
 	url = https://github.com/jesseduffield/lazygit
 	arch = amd64
 	depends = git
 	maintainer = Thomas Crha <thomas@9bitbyte.com>
-	source = @lazygit~0.42.0::https://github.com/jesseduffield/lazygit/releases/download/v0.42.0/lazygit_0.42.0_Linux_x86_64.tar.gz
-	sha256sums = c3f8f1630fa9a0a00b68425c95879e059a42158425fd720b0b303e101d347d57
+	maintainer = raik199x <raik199x@mail.ru>
+	source = @lazygit~0.45.2::https://github.com/jesseduffield/lazygit/releases/download/v0.45.2/lazygit_0.45.2_Linux_x86_64.tar.gz
+	sha256sums = ef92a991778545fc3f912213eead3bc42965e039f99b62e069439da08bbdf478
 
 pkgname = lazygit
 ---
@@ -6215,8 +6315,8 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.13.0-061300rc1
-	pkgver = 6.13~rc1
+	gives = linux-headers-6.14.0-061400rc3
+	pkgver = 6.14~rc3
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -6224,14 +6324,14 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-headers-6.13.0-061300rc1_6.13.0-061300rc1.202412012327_all.deb
-	sha256sums = eefb234f6f7c434961232db82050496ed38891b7856beacbf6889aa56b6ec6dc
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/amd64/linux-headers-6.14.0-061400rc3_6.14.0-061400rc3.202502181422_all.deb
+	sha256sums = a4b1b1d9af3a23ca1b35a38abb2c2726a07761188b6d7a8fcebc5340f286b688
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-6.13.0-061300rc1-generic
-	pkgver = 6.13~rc1
+	gives = linux-headers-6.14.0-061400rc3-generic
+	pkgver = 6.14~rc3
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -6241,31 +6341,34 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/arm64/linux-headers-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_arm64.deb
-	sha256sums_arm64 = d7550d7cd3f1d65866f4ad9298f2543c4b44c49120495cb0dd6ae388fecec11d
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-headers-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_amd64.deb
-	sha256sums_amd64 = 7f654ab111334743f5bfc2af24dd65c1c59bb617be2772ef3566b89d7baeeaa3
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/arm64/linux-headers-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_arm64.deb
+	sha256sums_arm64 = f206ee6e15d1353cd09936c92b350838477f609caf87290f7a1a852524448357
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/amd64/linux-headers-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_amd64.deb
+	sha256sums_amd64 = 5dfa595c8a84d76f7fe93d2b2efda5583a499fc6c6b9b87309cb2d4634858943
 
 pkgname = linux-headers-generic-deb
 ---
 pkgbase = linux-headers-generic-lts-6.6-deb
-	gives = linux-headers-6.6.51-060651-generic
-	pkgver = 6.6.51
+	gives = linux-headers-6.6.63-060663-generic
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (Generic headers)
 	arch = arm64
 	arch = amd64
 	pacdeps = linux-headers-lts-6.6-deb
+	incompatible = debian:10
+	incompatible = debian:11
+	incompatible = debian:12
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/arm64/linux-headers-6.6.51-060651-generic_6.6.51-060651.202409121031_arm64.deb
-	sha256sums_arm64 = 15f2c20cc364c523df0384be20534dc87a52209906d09d4581610f9cb94ccfb0
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-headers-6.6.51-060651-generic_6.6.51-060651.202409121031_amd64.deb
-	sha256sums_amd64 = 36752c707885aea2cb05aa7f96a06a1fec4e9ca876596e789a5375c45a72328f
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/arm64/linux-headers-6.6.63-060663-generic_6.6.63-060663.202411221547_arm64.deb
+	sha256sums_arm64 = a2d519be6ea7221f416eff230bf2920e203bda9622390f27bda09ae9840c0548
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/amd64/linux-headers-6.6.63-060663-generic_6.6.63-060663.202411221547_amd64.deb
+	sha256sums_amd64 = 5ca5bdb1cc91e90b4b47925b3cdd4d4b91d819c8b5e441cd00497028e7ae1abb
 
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.12.3-061203-generic
-	pkgver = 6.12.3
+	gives = linux-headers-6.13.2-061302-generic
+	pkgver = 6.13.2
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -6273,21 +6376,24 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-headers-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = 45cdff50c5e0e1fc9f48cf3e4204ff77f3fddda88c904ca3952709a5a9a2a8a6
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-headers-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 58379b5f91d85634cdc63c575d16057f1ab8eb3378ca8b97218b1df5f68d361b
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/arm64/linux-headers-6.13.2-061302-generic_6.13.2-061302.202502081010_arm64.deb
+	sha256sums_arm64 = 4ff2a137f8825f494af44af6756e75222467cf73b9ce50530c8edc8c61fab8eb
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-headers-6.13.2-061302-generic_6.13.2-061302.202502081010_amd64.deb
+	sha256sums_amd64 = 68e2201b324980d78c0d3a49537384731bea570b82208bb3c711d41389ba76f7
 
 pkgname = linux-headers-generic-stable-deb
 ---
 pkgbase = linux-headers-lts-6.6-deb
-	gives = linux-headers-6.6.51-060651
-	pkgver = 6.6.51
+	gives = linux-headers-6.6.63-060663
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (Headers)
 	arch = all
+	incompatible = debian:10
+	incompatible = debian:11
+	incompatible = debian:12
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-headers-6.6.51-060651_6.6.51-060651.202409121031_all.deb
-	sha256sums = e2a5b21d8ab8cc1d8a359cd8809bc0cf16ecf3cd0cb87c29a50d05f85f564510
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/amd64/linux-headers-6.6.63-060663_6.6.63-060663.202411221547_all.deb
+	sha256sums = 5a846645e87ff4beabc950922216216f4880ac63711fc4d85bfe126e12f5a41a
 
 pkgname = linux-headers-lts-6.6-deb
 ---
@@ -6308,15 +6414,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.12.3-061203
-	pkgver = 6.12.3
+	gives = linux-headers-6.13.2-061302
+	pkgver = 6.13.2
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-headers-6.12.3-061203_6.12.3-061203.202412060638_all.deb
-	sha256sums = f9d15413174850dfe6f6653075a678c7a6800c6513697d9d2d111c2677ac1124
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-headers-6.13.2-061302_6.13.2-061302.202502081010_all.deb
+	sha256sums = a2d144521b7cbdc8b951a44b9ccc58c10430cf2fb01a7ecdd6d9bf3fc12331bf
 
 pkgname = linux-headers-stable-deb
 ---
@@ -6339,8 +6445,8 @@ pkgbase = linux-image-okpine-deb
 pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.13.0-061300rc1-generic
-	pkgver = 6.13~rc1
+	gives = linux-image-unsigned-6.14.0-061400rc3-generic
+	pkgver = 6.14~rc3
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6351,32 +6457,35 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/arm64/linux-image-unsigned-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_arm64.deb
-	sha256sums_arm64 = 0abd471b9fea4774772542ea7b9db8f1c39a9732d147313cad968950db96c24e
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-image-unsigned-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_amd64.deb
-	sha256sums_amd64 = 3e85970a00ab6d976434a0b28edbd03a9aa3481b43d060310927c18df9b4b094
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/arm64/linux-image-unsigned-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_arm64.deb
+	sha256sums_arm64 = 99a6c0b8e2fd85d0b7791b99e86e668469ea03cc8cc7e5a8ce73549349510fe9
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/amd64/linux-image-unsigned-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_amd64.deb
+	sha256sums_amd64 = f9dd62900d932586c0243848665af8664475c0b93d0efebea4795ebe47a3a1be
 
 pkgname = linux-image-unsigned-deb
 ---
 pkgbase = linux-image-unsigned-lts-6.6-deb
-	gives = linux-image-unsigned-6.6.51-060651-generic
-	pkgver = 6.6.51
+	gives = linux-image-unsigned-6.6.63-060663-generic
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (Unsigned image)
 	arch = arm64
 	arch = amd64
 	pacdeps = linux-headers-generic-lts-6.6-deb
 	pacdeps = linux-modules-lts-6.6-deb
+	incompatible = debian:10
+	incompatible = debian:11
+	incompatible = debian:12
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/arm64/linux-image-unsigned-6.6.51-060651-generic_6.6.51-060651.202409121031_arm64.deb
-	sha256sums_arm64 = 9e811b5522ca3a499742f3ba75e3db4855536ba9dd6620a151df4307feba6195
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-image-unsigned-6.6.51-060651-generic_6.6.51-060651.202409121031_amd64.deb
-	sha256sums_amd64 = e7a84ca24a58dd344e1cc0183cb68d00ef3a2a67c8153f78ef7a7cfdb6286c71
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/arm64/linux-image-unsigned-6.6.63-060663-generic_6.6.63-060663.202411221547_arm64.deb
+	sha256sums_arm64 = 4422662be87aed8011b5e7a69c58ffc115202eb7610175b14779ada86e161e0e
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/amd64/linux-image-unsigned-6.6.63-060663-generic_6.6.63-060663.202411221547_amd64.deb
+	sha256sums_amd64 = 535fd71c15e7171c3d9f25c19e7e85804de17b3ffbf2e003f430f4a454117587
 
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.12.3-061203-generic
-	pkgver = 6.12.3
+	gives = linux-image-unsigned-6.13.2-061302-generic
+	pkgver = 6.13.2
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6385,15 +6494,15 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-image-unsigned-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = 2a5abe1ae079b14d1ed6707e22896661dd15a90816e2d71abf9e6c45de097f89
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-image-unsigned-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 2f21762e03a8650a035f4a1c1c8af441015ae88bd8422b478bf3c462b74ccd92
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/arm64/linux-image-unsigned-6.13.2-061302-generic_6.13.2-061302.202502081010_arm64.deb
+	sha256sums_arm64 = 4ad4c795468fb3b14027271e15b6cc22f22b875f5f228aa8e318a31f26b5106f
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-image-unsigned-6.13.2-061302-generic_6.13.2-061302.202502081010_amd64.deb
+	sha256sums_amd64 = a7999ffdfebcc0d5fc2e8dfbd95fc9111980c2ea74c6c2409704e511fb2c26ad
 
 pkgname = linux-image-unsigned-stable-deb
 ---
 pkgbase = linux-kernel-lts-6.6
-	pkgver = 6.6.51
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA
 	arch = amd64
 	arch = arm64
@@ -6401,13 +6510,16 @@ pkgbase = linux-kernel-lts-6.6
 	pacdeps = linux-headers-generic-lts-6.6-deb
 	pacdeps = linux-modules-lts-6.6-deb
 	pacdeps = linux-image-unsigned-lts-6.6-deb
+	incompatible = debian:10
+	incompatible = debian:11
+	incompatible = debian:12
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	source = https://github.com/oklopfer/debs/raw/master/empty.tar.xz
 
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.12.3
+	pkgver = 6.13.2
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6423,7 +6535,7 @@ pkgbase = linux-kernel-stable
 pkgname = linux-kernel-stable
 ---
 pkgbase = linux-kernel
-	pkgver = 6.13~rc1
+	pkgver = 6.14~rc3
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6454,44 +6566,47 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.13.0-061300rc1-generic
-	pkgver = 6.13~rc1
+	gives = linux-modules-6.14.0-061400rc3-generic
+	pkgver = 6.14~rc3
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/arm64/linux-modules-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_arm64.deb
-	sha256sums_arm64 = 21659a4bf35cd918727693cc54b23b570d4bcbfc42bc2f3b1cd8f533eab6cdd6
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-modules-6.13.0-061300rc1-generic_6.13.0-061300rc1.202412012327_amd64.deb
-	sha256sums_amd64 = 88d3d765c41d860a1137ffe7f908d7d4169cb65a1d679abe665a4d5d1c9e859a
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/arm64/linux-modules-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_arm64.deb
+	sha256sums_arm64 = f7bb13753895c089d0a1895ba258e3f98e0325c2f153659e20cd6bcde38e3fdd
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/amd64/linux-modules-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_amd64.deb
+	sha256sums_amd64 = f01c13f9e61f5b4abfd0a9cdd8e6106eae935cc306d6009e36533e2da1f7be16
 
 pkgname = linux-modules-deb
 ---
 pkgbase = linux-modules-lts-6.6-deb
-	gives = linux-modules-6.6.51-060651-generic
-	pkgver = 6.6.51
+	gives = linux-modules-6.6.63-060663-generic
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (modules)
 	arch = arm64
 	arch = amd64
+	incompatible = debian:10
+	incompatible = debian:11
+	incompatible = debian:12
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/arm64/linux-modules-6.6.51-060651-generic_6.6.51-060651.202409121031_arm64.deb
-	sha256sums_arm64 = 137fa692ad93cc62203c506e871d9e1f19c8febb709c5972c6240c1bd8ae1810
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-modules-6.6.51-060651-generic_6.6.51-060651.202409121031_amd64.deb
-	sha256sums_amd64 = e76d998a6ef4e40bfe60eb3494589cb4f5c4457092427697bb97d253a304246f
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/arm64/linux-modules-6.6.63-060663-generic_6.6.63-060663.202411221547_arm64.deb
+	sha256sums_arm64 = 036bbeb4d82b73343d24c014ce20737853f34fa0ebd99b4960169e38cee4207e
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/amd64/linux-modules-6.6.63-060663-generic_6.6.63-060663.202411221547_amd64.deb
+	sha256sums_amd64 = 0cf51543579d10118423eb50c956b9e1fd73738ca9cd1f478959d35bf1a11b44
 
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.12.3-061203-generic
-	pkgver = 6.12.3
+	gives = linux-modules-6.13.2-061302-generic
+	pkgver = 6.13.2
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/arm64/linux-modules-6.12.3-061203-generic_6.12.3-061203.202412060638_arm64.deb
-	sha256sums_arm64 = db5b9efae1a94434dc5c6b663fd97270b7918a2710ef219970203a0674b82654
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.12.3/amd64/linux-modules-6.12.3-061203-generic_6.12.3-061203.202412060638_amd64.deb
-	sha256sums_amd64 = 2014492c428b39295db2e819d59e2f77f845f38fff72b35f062eda9266db6648
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/arm64/linux-modules-6.13.2-061302-generic_6.13.2-061302.202502081010_arm64.deb
+	sha256sums_arm64 = 6180bb7620dd0108505c0712dc13989b3cde854d8f5afadd52e15e9a073e2a1e
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-modules-6.13.2-061302-generic_6.13.2-061302.202502081010_amd64.deb
+	sha256sums_amd64 = fb04c692e7f26a9b5f0de2d43b5e8e69cd938f7c44250acd84391cd47c14b0f8
 
 pkgname = linux-modules-stable-deb
 ---
@@ -6763,14 +6878,14 @@ pkgname = lyx
 ---
 pkgbase = mailspring-deb
 	gives = mailspring
-	pkgver = 1.13.3
+	pkgver = 1.15.1
 	pkgdesc = Mailspring is a new version of Nylas Mail maintained by one of the original authors. It's faster, leaner, and shipping today!
 	arch = amd64
 	replaces = mailspring
 	maintainer = Lanius <laniusone@pm.me>
 	repology = project: mailspring
-	source = https://github.com/Foundry376/Mailspring/releases/download/1.13.3/mailspring-1.13.3-amd64.deb
-	sha256sums = d85e64f3345123ac75110d24f30bc8ab54372e7ae7d913a9fccabe1fb56ace57
+	source = https://github.com/Foundry376/Mailspring/releases/download/1.15.1/mailspring-1.15.1-amd64.deb
+	sha256sums = fa09506b3dfa98a32d9cd7b21c7e1bad99b361ef521c2b5c70ee82209a531f69
 
 pkgname = mailspring-deb
 ---
@@ -7466,18 +7581,6 @@ pkgbase = mold-bin
 
 pkgname = mold-bin
 ---
-pkgbase = ms-teams-deb
-	gives = teams
-	pkgver = 1.5.00.23861
-	pkgdesc = Microsoft Teams for Linux is your chat-centered workspace in Office 365
-	arch = amd64
-	maintainer = Korkmatik <9c54efc1-143b-4f5f-9d2f-f6f189583f0f@aleeas.com>
-	repology = project: teams
-	source = https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.5.00.23861_amd64.deb
-	sha256sums = 87462709e257fff9784de809559b5abd5dc7af18d8505d856b92a66989995bc1
-
-pkgname = ms-teams-deb
----
 pkgbase = mullvad-vpn-beta-deb
 	gives = mullvad-vpn
 	pkgver = 2023.4
@@ -7492,15 +7595,15 @@ pkgname = mullvad-vpn-beta-deb
 ---
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
-	pkgver = 2025.2
+	pkgver = 2025.4
 	pkgdesc = The Mullvad VPN client app for desktop
 	arch = amd64
 	breaks = mullvad-vpn-beta-deb
 	breaks = mullvad-vpn-git
 	replaces = mullvad-vpn
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.2/MullvadVPN-2025.2_amd64.deb
-	sha256sums = 8ce13a36c9dad51ea4369ff05da63ad2b366832e32d945621e22be2a9852345a
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.4/MullvadVPN-2025.4_amd64.deb
+	sha256sums = 99c09c2309ad34cba03f018608dcba190436179e63de7f1eb95492e9427e72a9
 
 pkgname = mullvad-vpn-deb
 ---
@@ -7673,10 +7776,11 @@ pkgname = neovide-bin
 ---
 pkgbase = neovim-app
 	gives = neovim
-	pkgver = 0.10.3
+	pkgver = 0.10.4
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	arch = amd64
+	arch = arm64
 	depends = libfuse2
 	makedepends = libfuse2
 	replaces = nvim
@@ -7684,14 +7788,16 @@ pkgbase = neovim-app
 	replaces = neovim-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source = https://github.com/neovim/neovim/releases/download/v0.10.3/nvim.appimage
-	sha256sums = ce5f6462d4fa7150cc90c593955f66f7707ab5edc1d18f87413ea482e096c24e
+	source_amd64 = https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.appimage
+	sha256sums_amd64 = d1b1488ef6a970dc3a2826b788d31d81b2f308ad42ef70ed62d35d0bf6189336
+	source_arm64 = https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-arm64.appimage
+	sha256sums_arm64 = cc02d640809f6cfb27ee5fca78cc612ccda0dc4fbb648430d49de623660d0216
 
 pkgname = neovim-app
 ---
 pkgbase = neovim-git
 	gives = neovim
-	pkgver = 0.10.3
+	pkgver = 0.10.4
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	arch = any
@@ -7725,8 +7831,7 @@ pkgbase = neovim-git
 pkgname = neovim-git
 ---
 pkgbase = neovim
-	pkgver = 0.10.3
-	pkgrel = 1
+	pkgver = 0.10.4
 	pkgdesc = Neovim is a vim fork maintained by the community
 	url = https://neovim.io/
 	arch = any
@@ -7748,8 +7853,8 @@ pkgbase = neovim
 	replaces = neovim-runtime
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source = https://github.com/neovim/neovim/archive/refs/tags/v0.10.3.tar.gz
-	sha256sums = 39fab47d241da7b9418823cc563c689d522c1c4b2def04036393834f3f1ca94c
+	source = https://github.com/neovim/neovim/archive/refs/tags/v0.10.4.tar.gz
+	sha256sums = 10413265a915133f8a853dc757571334ada6e4f0aa15f4c4cc8cc48341186ca2
 
 pkgname = neovim
 ---
@@ -8438,6 +8543,25 @@ pkgbase = nordvpn-deb
 
 pkgname = nordvpn-deb
 ---
+pkgbase = notesnook-app
+	gives = notesnook
+	pkgver = 3.0.24
+	pkgdesc = End-to-end encrypted note taking alternative to Evernote
+	url = https://notesnook.com
+	arch = amd64
+	arch = arm64
+	license = GPL-3.0-only
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: notesnook
+	source = https://raw.githubusercontent.com/streetwriters/notesnook/refs/tags/v3.0.24/resources/icon.png
+	sha256sums = SKIP
+	source_amd64 = notesnook-3.0.24.AppImage::https://github.com/streetwriters/notesnook/releases/download/v3.0.24/notesnook_linux_x86_64.AppImage
+	sha256sums_amd64 = 87c9c5f3adc4b095fbba8881f8c2b11c4340e49264d773905f00054c50003cb4
+	source_arm64 = notesnook-3.0.24.AppImage::https://github.com/streetwriters/notesnook/releases/download/v3.0.24/notesnook_linux_arm64.AppImage
+	sha256sums_arm64 = 23e687dd9c92cd2e6f1a5b1bb2bf42bbf2541019bda58447e95d180fe12271b3
+
+pkgname = notesnook-app
+---
 pkgbase = notion-app-deb
 	gives = notion-app
 	pkgver = 2.0.18-1
@@ -8549,7 +8673,7 @@ pkgbase = nuclei-bin
 pkgname = nuclei-bin
 ---
 pkgbase = nushell-bin
-	pkgver = 0.101.0
+	pkgver = 0.102.0
 	pkgdesc = A new type of shell
 	arch = arm64
 	arch = amd64
@@ -8559,10 +8683,10 @@ pkgbase = nushell-bin
 	breaks = nushell-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: nushell
-	source_arm64 = @nushell-bin~0.101.0::https://github.com/nushell/nushell/releases/download/0.101.0/nu-0.101.0-aarch64-unknown-linux-gnu.tar.gz
-	sha256sums_arm64 = 0b6a5f4c95c11452d8d54b3efdb1b38f7599a40ea09bb5cdd9f0faf98c022a40
-	source_amd64 = @nushell-bin~0.101.0::https://github.com/nushell/nushell/releases/download/0.101.0/nu-0.101.0-x86_64-unknown-linux-gnu.tar.gz
-	sha256sums_amd64 = 7149728c779b5d7e7f86e34f36fd31332f7677df3e9a47b5744a1e1756d3ce76
+	source_arm64 = @nushell-bin~0.102.0::https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-aarch64-unknown-linux-gnu.tar.gz
+	sha256sums_arm64 = 770ae9bf490fc3fd2a2f0eef5c605f41d3930da16aa5f2159fc2b1493739d322
+	source_amd64 = @nushell-bin~0.102.0::https://github.com/nushell/nushell/releases/download/0.102.0/nu-0.102.0-x86_64-unknown-linux-gnu.tar.gz
+	sha256sums_amd64 = 8facc8575dc5cc1406d5f00625faf40556da986f8932e90c8f891241df7275a3
 
 pkgname = nushell-bin
 ---
@@ -8719,7 +8843,7 @@ pkgname = oh-my-posh-git
 pkgbase = oh-my-zsh-git
 	gives = oh-my-zsh
 	pkgver = 0.0.1
-	pkgrel = 2
+	pkgrel = 3
 	pkgdesc = A community-driven framework for managing your zsh configuration
 	url = https://github.com/ohmyzsh/ohmyzsh
 	arch = all
@@ -8731,7 +8855,7 @@ pkgbase = oh-my-zsh-git
 	source = oh-my-zsh::https://github.com/ohmyzsh/ohmyzsh.git
 	source = 0001-zshrc.patch
 	sha256sums = SKIP
-	sha256sums = 0d57bd1fb0e0e8448e68d537a237102efef4d94d9d73993c7de6cefae61cdb87
+	sha256sums = 1f314507bbb5aad57ce997b6243fb4f03b95a63a347c5da068434cff73e973c2
 
 pkgname = oh-my-zsh-git
 ---
@@ -8844,6 +8968,7 @@ pkgname = opendoas-git
 pkgbase = openrgb-git
 	gives = openrgb
 	pkgver = 0.9
+	pkgrel = 2
 	pkgdesc = Configuration utility for RGB lights supporting motherboards, RAM, & peripherals
 	url = https://gitlab.com/CalcProgrammer1/OpenRGB
 	arch = amd64
@@ -9060,7 +9185,7 @@ pkgbase = os-installer-git
 pkgname = os-installer-git
 ---
 pkgbase = osu-lazer-app
-	pkgver = 2025.118.3
+	pkgver = 2025.221.0
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
 	url = https://osu.ppy.sh
 	arch = amd64
@@ -9070,11 +9195,11 @@ pkgbase = osu-lazer-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-app-2025.118.3.AppImage::https://github.com/ppy/osu/releases/download/2025.118.3/osu.AppImage
+	source = osu-lazer-app-2025.221.0.AppImage::https://github.com/ppy/osu/releases/download/2025.221.0/osu.AppImage
 	source = icon.png::https://raw.githubusercontent.com/ppy/osu/master/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = 6e77df52dcece48b162a10067864edf941cc9a54d66db4fbf407387ca8572bdb
+	sha256sums = 57a2494a1546138197188f05bc38725ae1d49e523ea7724b5bf34dfaef958a47
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
@@ -9171,7 +9296,7 @@ pkgbase = pacstall-qa-git
 pkgname = pacstall-qa-git
 ---
 pkgbase = pacstall
-	pkgver = 6.1.0
+	pkgver = 6.1.1
 	pkgdesc = An AUR-inspired package manager for Ubuntu Pacstall is the AUR Ubuntu wishes it had. It takes the concept of the AUR and puts a spin on it, making it easier to install and update downstream programs, without scouring github repos and the likes.
 	url = https://pacstall.dev
 	arch = all
@@ -9202,13 +9327,13 @@ pkgbase = pacstall
 	backup = usr/share/pacstall/update
 	maintainer = Pacstall Team <pacstall@pm.me>
 	maintainer = Elsie19 <hwengerstickel@pm.me>
-	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.1.0.zip
+	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.1.1.zip
 
 pkgname = pacstall
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.9
+	pkgver = 3.3.11
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -9229,7 +9354,7 @@ pkgbase = pacup-git
 pkgname = pacup-git
 ---
 pkgbase = pacup
-	pkgver = 3.3.9
+	pkgver = 3.3.11
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -9245,8 +9370,8 @@ pkgbase = pacup
 	replaces = pacup-bin
 	replaces = pacup-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.9.tar.gz
-	sha256sums = 8cff377e7bb94370e26a0818b4c1d96b4bb6e5f06db638146fd7c7d84704f0cc
+	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.11.tar.gz
+	sha256sums = d9f6d5523a0aa584230cdf32675705745651fb2ae8768e8628d48c98dd151469
 
 pkgname = pacup
 ---
@@ -9690,11 +9815,13 @@ pkgname = popsicle
 pkgbase = postman-bin
 	gives = postman
 	pkgver = 10.18.10
+	pkgrel = 2
 	pkgdesc = Build, test, and document your APIs faster
 	arch = amd64
 	depends = libxss1
 	depends = libnss3
 	depends = libgtk-3-0
+	makedepends = tar
 	breaks = postman
 	breaks = postman-deb
 	breaks = postman-app
@@ -10368,9 +10495,20 @@ pkgbase = quintom-cursor-theme-git
 
 pkgname = quintom-cursor-theme-git
 ---
+pkgbase = rambox-app
+	gives = rambox
+	pkgver = 2.4.1
+	pkgdesc = Workspace simplizer
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source = https://github.com/ramboxapp/download/releases/download/v2.4.1/Rambox-2.4.1-linux-x64.AppImage
+	sha256sums = 9dd16fe6b3535b2aab1860bcb7524d47e6d00b426c8ade08f69e2783b87f81c5
+
+pkgname = rambox-app
+---
 pkgbase = rambox-deb
 	gives = rambox
-	pkgver = 2.3.4
+	pkgver = 2.4.1
 	pkgdesc = Workspace simplifier
 	url = https://rambox.app
 	arch = amd64
@@ -10389,9 +10527,10 @@ pkgbase = rambox-deb
 	replaces = rambox-deb
 	replaces = rambox
 	maintainer = Eric Renfro <psi-jack@linux-help.org>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: rambox
-	source = https://github.com/ramboxapp/download/releases/download/v2.3.4/Rambox-2.3.4-linux-x64.deb
-	sha256sums = 2fc00888e9dcc6baed57032b2d14d0e9fbff67dd3cd47162106e95e6b8d4fd7d
+	source = https://github.com/ramboxapp/download/releases/download/v2.4.1/Rambox-2.4.1-linux-x64.deb
+	sha256sums = 554316ce93c134dc072092d3c76127a89c5e7fa09b3dc7a69d1e4eae24934ad4
 
 pkgname = rambox-deb
 ---
@@ -10514,8 +10653,8 @@ pkgbase = resticprofile-bin
 pkgname = resticprofile-bin
 ---
 pkgbase = rhino-core
-	pkgver = 2025.1
-	pkgrel = 2
+	pkgver = 2025.2
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
 	arch = all
@@ -10608,8 +10747,8 @@ pkgbase = rhino-neofetch-git
 pkgname = rhino-neofetch-git
 ---
 pkgbase = rhino-pine-core
-	pkgver = 2025.1
-	pkgrel = 2
+	pkgver = 2025.2
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
 	arch = all
@@ -10659,8 +10798,8 @@ pkgbase = rhino-plymouth-theme-git
 pkgname = rhino-plymouth-theme-git
 ---
 pkgbase = rhino-server-core
-	pkgver = 2025.1
-	pkgrel = 2
+	pkgver = 2025.2
+	pkgrel = 1
 	pkgdesc = Transitional package to provide minimal core Rhino Linux software
 	priority = essential
 	arch = all
@@ -10781,8 +10920,8 @@ pkgbase = rhino-system-git
 pkgname = rhino-system-git
 ---
 pkgbase = rhino-ubxi-core
-	pkgver = 2025.1
-	pkgrel = 2
+	pkgver = 2025.2
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 	priority = essential
 	arch = all
@@ -11090,6 +11229,38 @@ pkgbase = rustrover-bin
 	sha256sums_arm64 = 7e002489c7167f39744d746127dc7a3f06d5cfbf9d63aa6a2835b0a80a261155
 
 pkgname = rustrover-bin
+---
+pkgbase = sayonara-git
+	gives = sayonara
+	pkgver = 1.10.0
+	pkgdesc = Small, clear and fast audio player for Linux written in C++
+	url = https://sayonara-player.com
+	arch = amd64
+	makedepends = cmake
+	makedepends = gstreamer1.0-plugins-bad
+	makedepends = gstreamer1.0-plugins-ugly
+	makedepends = lame
+	makedepends = libgstreamer1.0-dev
+	makedepends = libgstreamer-plugins-bad1.0-dev
+	makedepends = libgstreamer-plugins-base1.0-dev
+	makedepends = libqt5sql5-sqlite
+	makedepends = libqt5svg5-dev
+	makedepends = libmp3lame0
+	makedepends = libtag1-dev
+	makedepends = pkg-config
+	makedepends = qtbase5-dev
+	makedepends = qttools5-dev
+	makedepends = qttools5-dev-tools
+	makedepends = vorbis-tools
+	makedepends = zlib1g-dev
+	conflicts = sayonara
+	license = GPL-3.0-only
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: sayonara
+	source = sayonara-git~1.10.0::https://gitlab.com/luciocarreras/sayonara-player.git
+	sha256sums = 7efa5facf7eacaa4ecd3414cdd62ef576804df5ed5516fa7aa4488cb27c2f6ac
+
+pkgname = sayonara-git
 ---
 pkgbase = sayonara
 	gives = sayonara
@@ -11634,7 +11805,7 @@ pkgname = spot-client-git
 ---
 pkgbase = spotify-client-deb
 	gives = spotify-client
-	pkgver = 1.2.31.1205.g4d59ad7c
+	pkgver = 1.2.56.502.ga68d2d4f
 	pkgdesc = Spotify streaming music client
 	arch = amd64
 	breaks = spotify-client-git
@@ -11644,8 +11815,8 @@ pkgbase = spotify-client-deb
 	replaces = spotify-client
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: spotify
-	source = http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.2.31.1205.g4d59ad7c_amd64.deb
-	sha256sums = 71b724bd9ec37ccc37b340606bc37f46d47320b5fa429a4c9dce5bd24e07adb8
+	source = http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.2.56.502.ga68d2d4f_amd64.deb
+	sha256sums = b1088324c2c0e2aa0fdbdef99a565bb2698a6a9bb277218efc9f6ed79840bedc
 
 pkgname = spotify-client-deb
 ---
@@ -12072,12 +12243,12 @@ pkgname = tela-circle-icon-theme
 ---
 pkgbase = telegram-bin
 	gives = telegram
-	pkgver = 5.10.0
+	pkgver = 5.11.1
 	pkgrel = 2
 	pkgdesc = Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed
 	url = https://telegram.org/
 	arch = amd64
-	maintainer = Diegiwg <diegiwg@gmail.com>
+	maintainer = Bahar KURT <kurtbahartr@gmail.com>
 	repology = project: telegram-desktop
 	source = org.telegram.desktop.desktop
 	source = tg.protocol
@@ -12088,7 +12259,7 @@ pkgbase = telegram-bin
 	source = https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/art/icon128.png
 	source = https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/art/icon256.png
 	source = https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/art/icon512.png
-	source = @telegram-bin~5.10.0::https://github.com/telegramdesktop/tdesktop/releases/download/v5.10.0/tsetup.5.10.0.tar.xz
+	source = @telegram-bin~5.11.1::https://github.com/telegramdesktop/tdesktop/releases/download/v5.11.1/tsetup.5.11.1.tar.xz
 	sha256sums = f8e35627d29589ea9a1ea8d634855ca153d578503cadb44f0c5d0498c1062135
 	sha256sums = d4cdad0d091c7e47811d8a26d55bbee492e7845e968c522e86f120815477e9eb
 	sha256sums = ea1f36152b143cc2664daef5026656d55be2230ed42d43628e17ef7d2fff718c
@@ -12098,7 +12269,7 @@ pkgbase = telegram-bin
 	sha256sums = 731431e47a5bc91c697d25c3a54fe7ba004752f5b66e0f282c47588ff7a314e6
 	sha256sums = 3fb1400c7dc9bbc3b5cb3ffedcbf4a9b09c53e28b57a7ff33a8a6b9048864090
 	sha256sums = e297771c75bd2f81d637a3234f83568be62092f67d16946be23895fa92fa7119
-	sha256sums = 7add8233cfecbedfbfcbe4deeb274ba1856b6eb5f1f4d950227fd2ea4a69ab33
+	sha256sums = 55a2bce03ba01dd4ab942a48bfe646a3fabc846f95282f764d71cdce01da70ad
 
 pkgname = telegram-bin
 ---
@@ -12856,7 +13027,7 @@ pkgname = unicons-git
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
-	pkgrel = 10
+	pkgrel = 3
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
 	arch = amd64
@@ -12891,7 +13062,7 @@ pkgbase = unicorn-desktop-git
 	depends = tumbler
 	depends = tumbler-plugins-extra
 	depends = ffmpegthumbnailer
-	depends = bluez-firmware
+	depends = bluez-firmware | linux-firmware-raspi
 	depends = xserver-xorg-input-multitouch
 	depends = xserver-xorg-input-synaptics
 	depends = ukui-touchpadserver
@@ -12906,11 +13077,12 @@ pkgbase = unicorn-desktop-git
 	pacdeps = cortile
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
-	pacdeps = appmenu-registrar-backport
+	pacdeps = vala-panel-appmenu-xfce4-git
 	pacdeps = xfce4-dynamic-workspaces-plugin-git
 	replaces = unicorn-mobile
 	replaces = unicorn-mobile-git
 	incompatible = debian:*
+	backup = etc/X11/xorg.conf.d/50-synaptics.conf
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/unicorn.git
 	depends_amd64 = xserver-xorg-video-intel
@@ -12920,7 +13092,7 @@ pkgname = unicorn-desktop-git
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
 	pkgver = 0.0.1
-	pkgrel = 8
+	pkgrel = 3
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
 	arch = all
@@ -12945,7 +13117,7 @@ pkgbase = unicorn-mobile-git
 	depends = tumbler
 	depends = tumbler-plugins-extra
 	depends = ffmpegthumbnailer
-	depends = bluez-firmware
+	depends = bluez-firmware | linux-firmware-raspi
 	depends = xserver-xorg-input-multitouch
 	depends = xserver-xorg-input-synaptics
 	depends = ukui-touchpadserver
@@ -12959,11 +13131,11 @@ pkgbase = unicorn-mobile-git
 	pacdeps = cortile
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
-	pacdeps = appmenu-registrar-backport
 	pacdeps = xfce4-dynamic-workspaces-plugin-git
 	replaces = unicorn-desktop
 	replaces = unicorn-desktop-git
 	incompatible = debian:*
+	backup = etc/X11/xorg.conf.d/50-synaptics.conf
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/unicorn.git#branch=mobile
 
@@ -13023,6 +13195,48 @@ pkgbase = uwufetch
 	sha256sums = 1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab
 
 pkgname = uwufetch
+---
+pkgbase = vala-panel-appmenu-xfce4-git
+	gives = vala-panel-appmenu-xfce4
+	pkgver = 24.05
+	pkgrel = 2
+	pkgdesc = Small utility to hold DBusMenu menus (XFCE4 plugin built-in)
+	url = https://gitlab.com/vala-panel-project/vala-panel-appmenu
+	arch = amd64
+	arch = arm64
+	depends = libgtk-3-0
+	depends = libglib2.0-0
+	depends = libgirepository-1.0-1
+	depends = libxfce4panel-2.0-4
+	depends = libxfce4ui-2-0
+	depends = libwnck-3-0
+	depends = gir1.2-libxfce4panel-2.0
+	depends = gir1.2-libxfce4ui-2.0
+	depends = gir1.2-wnck-3.0
+	depends = gir1.2-libxfce4ui-2.0
+	depends = xfconf
+	depends = xfce4-panel>=4.19.0
+	depends = vala-panel-appmenu-common
+	makedepends = meson
+	makedepends = valac
+	makedepends = libglib2.0-dev
+	makedepends = libgirepository1.0-dev
+	makedepends = libxfce4panel-2.0-dev
+	makedepends = libxfce4ui-2-dev
+	makedepends = libwnck-3-dev
+	makedepends = libxfconf-0-dev
+	makedepends = libxfce4panel-2.0-dev>=4.19.0
+	replaces = xfce4-appmenu-plugin
+	replaces = appmenu-registrar
+	replaces = appmenu-glib-translator
+	provides = xfce4-appmenu-plugin=24.05
+	provides = appmenu-registrar=24.05
+	provides = appmenu-glib-translator=24.05
+	license = LGPL-3.0-or-later
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://gitlab.com/vala-panel-project/vala-panel-appmenu.git
+
+pkgname = vala-panel-appmenu-xfce4-git
 ---
 pkgbase = vega-strike-engine-git
 	gives = vega-strike
@@ -13139,7 +13353,7 @@ pkgname = veracrypt-deb
 ---
 pkgbase = vesktop-deb
 	gives = vesktop
-	pkgver = 1.5.4
+	pkgver = 1.5.5
 	pkgdesc = A custom Discord client that aims to provide better customizability, performance, and improved Linux support
 	arch = arm64
 	arch = amd64
@@ -13154,12 +13368,40 @@ pkgbase = vesktop-deb
 	depends = libsecret-1-0
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: vesktop
-	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.4/vesktop_1.5.4_arm64.deb
-	sha256sums_arm64 = 00c9fb9f27ffa31312c39870521647d94cb8d4bcf5b94e770ead29a2e0549517
-	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.4/vesktop_1.5.4_amd64.deb
-	sha256sums_amd64 = 1de02beefe491e963d476db62f860d6b2503bb1e68571e7f1bad010ce69e7c5f
+	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.5/vesktop_1.5.5_arm64.deb
+	sha256sums_arm64 = fa23689054be1e6bb77a430a7faaabc48f45486cf0e5c8c0045f4e204e26153a
+	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.5/vesktop_1.5.5_amd64.deb
+	sha256sums_amd64 = 77e22dbba3d305361363be5d6aef53a47fd4ba5f53a4a9aa28e98a2b6e988445
 
 pkgname = vesktop-deb
+---
+pkgbase = vinegar-git
+	gives = vinegar
+	pkgver = 1.7.8
+	pkgdesc = An open-source, minimal, configurable, fast bootstrapper for running Roblox on Linux
+	url = https://vinegarhq.org/
+	arch = amd64
+	makedepends = golang>=2:1.22
+	makedepends = imagemagick
+	makedepends = gcc
+	makedepends = libwayland-dev
+	makedepends = libx11-dev
+	makedepends = libx11-xcb-dev
+	makedepends = libxkbcommon-x11-dev
+	makedepends = libgles2-mesa-dev
+	makedepends = libegl1-mesa-dev
+	makedepends = libffi-dev
+	makedepends = libxcursor-dev
+	makedepends = libvulkan-dev
+	makedepends = libglib2.0-dev-bin
+	optdepends = gamemode: Gamemode integration
+	optdepends = wine: A required dependency (made optional for flexibility)
+	license = GPL-3.0-only
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: vinegar
+	source = https://github.com/vinegarhq/vinegar.git
+
+pkgname = vinegar-git
 ---
 pkgbase = viper4linux
 	pkgver = 2.0
@@ -13177,7 +13419,7 @@ pkgname = viper4linux
 ---
 pkgbase = virtualbox-deb
 	gives = virtualbox-7.1
-	pkgver = 7.1.4
+	pkgver = 7.1.6
 	pkgdesc = VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use
 	arch = amd64
 	breaks = virtualbox-7.1-bin
@@ -13191,16 +13433,29 @@ pkgbase = virtualbox-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: virtualbox
-	source_jammy = https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Ubuntu~jammy_amd64.deb
-	source_noble = https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Ubuntu~noble_amd64.deb
-	source_bullseye = https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Debian~bullseye_amd64.deb
-	source_bookworm = https://download.virtualbox.org/virtualbox/7.1.4/virtualbox-7.1_7.1.4-165100~Debian~bookworm_amd64.deb
-	sha256sums_jammy = 8e210c6e3e9ca8ff2af78238ab81af3d90b14628ffb2df31a629a38ce9307918
-	sha256sums_noble = 54c25c941678198b0baf78f5e4cf468b990fd625ec4e7b231cf1e8a6bace3d1a
-	sha256sums_bullseye = c74ac1234299c3a5143c21f41871ab465f30ad907e31ea01e61c8e81feb5a98c
-	sha256sums_bookworm = a180c568647611eb5c1df1ff37ad1591e7bce020dec4a69b90d6c5d4061c0e76
+	source_focal = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Ubuntu~focal_amd64.deb
+	source_jammy = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Ubuntu~jammy_amd64.deb
+	source_noble = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Ubuntu~noble_amd64.deb
+	source_bullseye = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Debian~bullseye_amd64.deb
+	source_bookworm = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Debian~bookworm_amd64.deb
+	sha256sums_focal = 2d05f51d382cda0162f6ff41a3a0acd64e725c7af547e252a7ce200f8c76ca77
+	sha256sums_jammy = 0094042f659eac5f4f82bd2f1afa00ed6f0c5cec3b43a873cc4b61f43e4fb8f0
+	sha256sums_noble = b1e8406c141ff40221cebe5a99224ec74f1960d1491986d3bb1300a99c4790a1
+	sha256sums_bullseye = 0ea7dc51de62e9ce65862ea72635eeefcdf21016fe54444d3f956f0119ac0ac0
+	sha256sums_bookworm = e87626c95d3162939c397a003f0d2772419cfe138e68ea1074430fbca8c6c13f
 
 pkgname = virtualbox-deb
+---
+pkgbase = virtualbox-guest-iso
+	pkgver = 7.1.6
+	pkgdesc = ISO CD image version of the VirtualBox Guest Additions (for installation on the host)
+	arch = any
+	pacdeps = virtualbox-deb
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	source = https://download.virtualbox.org/virtualbox/7.1.6/VBoxGuestAdditions_7.1.6.iso
+	sha256sums = dbbda1645bc05c9260adfe9efc4949cb590ec5ec02680aff936375670cffcafc
+
+pkgname = virtualbox-guest-iso
 ---
 pkgbase = vivaldi-deb
 	gives = vivaldi-stable
@@ -13284,21 +13539,21 @@ pkgname = vscode-insiders-deb
 ---
 pkgbase = vscodium-bin
 	gives = codium
-	pkgver = 1.96.4.25017
+	pkgver = 1.97.2.25045
 	pkgdesc = VSCodium is a community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code.
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: codium
-	source = https://github.com/VSCodium/vscodium/releases/download/1.96.4.25017/VSCodium-linux-x64-1.96.4.25017.tar.gz
+	source = https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/VSCodium-linux-x64-1.97.2.25045.tar.gz
 	source = https://vscodium.com/img/codium_cnl.svg
-	sha256sums = c5b78556cb0674fa7de0e349c13adbc2028e6080fd04d7c3ff1a8ed541421cd1
+	sha256sums = aa0248375a070c49cfc9e1c971ff758fb1370177f61ce6570504235e6270a793
 	sha256sums = SKIP
 
 pkgname = vscodium-bin
 ---
 pkgbase = vscodium-deb
 	gives = codium
-	pkgver = 1.96.4.25017
+	pkgver = 1.97.2.25045
 	pkgdesc = Binary releases of VS Code without MS branding/telemetry/licensing
 	arch = arm64
 	arch = amd64
@@ -13306,10 +13561,10 @@ pkgbase = vscodium-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: vscodium
-	source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.96.4.25017/codium_1.96.4.25017_arm64.deb
-	sha256sums_arm64 = bd1d6fcd4b07ff59419d5355ce5c4a69d8be974972233e5554caca38cf069c28
-	source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.96.4.25017/codium_1.96.4.25017_amd64.deb
-	sha256sums_amd64 = 4aafbca29241c9d251de86cc7f63b56a48d4b417829b6ded68d253388ae6f969
+	source_arm64 = https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium_1.97.2.25045_arm64.deb
+	sha256sums_arm64 = 6bab73828cd733b0104c48ac3b0e0eb51d928d867fc19868d624a8d89b0ed92b
+	source_amd64 = https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/codium_1.97.2.25045_amd64.deb
+	sha256sums_amd64 = 30391f36670191f1753d69984942f16924e93312e08e1e33a1f99f2e14476a19
 
 pkgname = vscodium-deb
 ---
@@ -14411,7 +14666,7 @@ pkgbase = zed-editor-stable-bin
 pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-aarch64-bin
-	pkgver = 1.7.3b
+	pkgver = 1.7.4b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -14426,8 +14681,7 @@ pkgname = zen-browser-aarch64-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.7.3b
-	pkgrel = 1
+	pkgver = 1.7.6b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -14462,8 +14716,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = zen-browser-1.7.3b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.3b/zen.linux-x86_64.tar.bz2
-	sha256sums_amd64 = 2c46e2759dda9741badf854afcb6cbd90f9b3fe6524dd38615bfb21dc25817cc
+	source_amd64 = zen-browser-1.7.6b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.6b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 2278658c3a2b0b19970fd3826a0176454354f4babc848873ebf4ea47b4d2646e
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -14473,13 +14727,13 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = zen-browser-1.7.3b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.3b/zen.linux-aarch64.tar.bz2
-	sha256sums_arm64 = 7e5fceaca7b4e43c9b6eb9411ddec242eab6a54ad8b897e222bba125e2de3374
+	source_arm64 = zen-browser-1.7.6b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.7.6b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 98dfc1f69d776f7052cfbc39fdd5b0ced18761e280fdbbd97b7c7985d1af7dfa
 
 pkgname = zen-browser-bin
 ---
 pkgbase = zen-browser-generic-bin
-	pkgver = 1.7.3b
+	pkgver = 1.7.4b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -14493,7 +14747,7 @@ pkgbase = zen-browser-generic-bin
 pkgname = zen-browser-generic-bin
 ---
 pkgbase = zen-browser-specific-bin
-	pkgver = 1.7.3b
+	pkgver = 1.7.4b
 	pkgrel = 1
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
@@ -14547,6 +14801,24 @@ pkgbase = zig-bin
 	sha256sums_arm64 = 041ac42323837eb5624068acd8b00cd5777dac4cf91179e8dad7a7e90dd0c556
 
 pkgname = zig-bin
+---
+pkgbase = zinit
+	gives = zinit
+	pkgver = 3.13.1
+	pkgdesc = A flexible and fast Zsh plugin manager
+	url = https://github.com/zdharma-continuum/zinit
+	arch = amd64
+	depends = git
+	depends = curl
+	depends = zsh
+	makedepends = make
+	license = MIT
+	maintainer = Bahar KURT <kurtbahartr@gmail.com>
+	repology = project: zinit
+	source = @zinit~3.13.1::https://github.com/zdharma-continuum/zinit/archive/refs/tags/v3.13.1.tar.gz
+	sha256sums = 41359f41815a6461cab50ff5ba0b94dc40adcdb3646c9e71021064146a2a336a
+
+pkgname = zinit
 ---
 pkgbase = zoho-notebook-deb
 	gives = notebook

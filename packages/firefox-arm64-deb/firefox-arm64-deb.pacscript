@@ -1,11 +1,11 @@
 pkgname="firefox-arm64-deb"
 gives="firefox"
-pkgver="134.0.2+build1"
+pkgver="135.0+build2"
 ubversion="22.04"
 arch=("arm64")
 repology=("project: ${gives}" "repo: ubuntu_20_04")
-source=("https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/${gives}/${gives}_${pkgver}-0ubuntu0.${ubversion}.1~mt1_arm64.deb")
+source=("https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/${gives}/${gives}_${pkgver}-0ubuntu0.${ubversion}.1~mt2_arm64.deb")
 url='https://www.mozilla.org/en-US/firefox'
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-sha256sums=("214898f33cd2b29a67b025677f8474e1a9ed86057ca6f3d4f79a54c00308ef8d")
+sha256sums=("23d8234079841003b688df1fe6c55bfb503e0f98421b5a169d068c95233b3db5")
