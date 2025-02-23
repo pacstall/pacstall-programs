@@ -1,0 +1,16 @@
+pkgbase = pgadmin4-server-deb
+	gives = pgadmin4-server
+	pkgver = 9.0
+	pkgdesc = The core server package for pgAdmin
+	arch = amd64
+	compatible = ubuntu:noble
+	compatible = ubuntu:oracular
+	compatible = ubuntu:devel
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: pgadmin4-server
+	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.0_amd64.deb
+	sha256sums = 77d903683c5abd662bbb5cfc59dd21c8a7f7892c068fb1b0bfb6a1a608722a20
+	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.0_amd64.deb
+	sha256sums_noble = 40c18250108c57f6aa73c0498151db8c1ddc05a44244b898bc8cda35c8db1b0f
+
+pkgname = pgadmin4-server-deb
