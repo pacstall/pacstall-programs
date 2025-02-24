@@ -132,7 +132,7 @@ elif [[ ${GTK3} == "YES" ]]; then
 fi
 
 if [[ ${CLI} != "YES" ]]; then
-  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff5 | libtiff6")
+  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff6 | libtiff5")
 elif [[ ${CLI} == "YES" ]]; then
   depends+=("")
 fi
