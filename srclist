@@ -11217,16 +11217,16 @@ pkgname = rustdesk-deb
 ---
 pkgbase = rustrover-bin
 	gives = rustrover
-	pkgver = 2024.3.3
+	pkgver = 2024.3.4
 	pkgdesc = A powerhouse IDE for Rust developers
 	arch = amd64
 	arch = arm64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: rustrover
-	source_amd64 = https://download.jetbrains.com/rustrover/RustRover-2024.3.3.tar.gz
-	sha256sums_amd64 = abb5738327c0530c05be26b65abaead342e6aedb409b481dd537274d3dfd33f0
-	source_arm64 = https://download.jetbrains.com/rustrover/RustRover-2024.3.3-aarch64.tar.gz
-	sha256sums_arm64 = 7e002489c7167f39744d746127dc7a3f06d5cfbf9d63aa6a2835b0a80a261155
+	source_amd64 = https://download.jetbrains.com/rustrover/RustRover-2024.3.4.tar.gz
+	sha256sums_amd64 = 1e7347b37a26715f5afdf101208342e6088d0d8421c9ee1661f48efb38cac8b4
+	source_arm64 = https://download.jetbrains.com/rustrover/RustRover-2024.3.4-aarch64.tar.gz
+	sha256sums_arm64 = a1b3626907930d32f256d14598e1013ce6999fae28a61f71013be2a7e7c52a1d
 
 pkgname = rustrover-bin
 ---
