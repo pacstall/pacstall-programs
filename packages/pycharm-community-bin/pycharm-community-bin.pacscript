@@ -1,13 +1,13 @@
 pkgname="pycharm-community-bin"
-pkgver="2024.3.1.1"
+pkgver="2024.3.3"
 gives="pycharm-community"
 arch=("amd64" "arm64")
-maintainer=("ObsidianPresidium <emil@aarestrup.nu>" "James Ed Randson <jimedrand@disroot.org>")
+maintainer=("James Ed Randson <jimedrand@disroot.org>" "ObsidianPresidium <emil@aarestrup.nu>")
 pkgdesc="Python IDE for professional developers aimed at productivity with a keyboard-centric focus."
 source_amd64=("https://download.jetbrains.com/python/pycharm-community-${pkgver}.tar.gz")
-sha256sums_amd64=("36b9332262815099d0b86d2689fcf91b379730cb838623d82c0845969bb6470f")
+sha256sums_amd64=("fbcbb8c5a23f5eabb1ab4b8e66ffb3b00988eab39df0b547c41ffbb1fc13968e")
 source_arm64=("https://download.jetbrains.com/python/pycharm-community-${pkgver}-aarch64.tar.gz")
-sha256sums_arm64=("cbc36953b6943e70468e1908bef9adddc2a9597124e5d794f294095888b0914c")
+sha256sums_arm64=("8a2c6064ac71769164f896ab4a6a72fffcadd6350875d43dbcf45ff853b6e5ce")
 repology=("project: pycharm")
 
 package() {
