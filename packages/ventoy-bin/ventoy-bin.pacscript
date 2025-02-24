@@ -1,6 +1,6 @@
 pkgname="ventoy-bin"
 gives="ventoy"
-pkgver="1.1.00"
+pkgver="1.1.04"
 pkgdesc="A new bootable USB solution"
 arch=('amd64')
 url="http://www.ventoy.net"
@@ -20,7 +20,7 @@ source=("@${pkgname}~${pkgver}::https://github.com/ventoy/Ventoy/releases/downlo
   "https://aur.archlinux.org/cgit/aur.git/plain/ventoyplugson?h=ventoy-bin"
   "https://aur.archlinux.org/cgit/aur.git/plain/ventoy.desktop?h=ventoy-bin"
   "https://aur.archlinux.org/cgit/aur.git/plain/ventoyweb?h=ventoy-bin")
-sha256sums=('27a2abaffa531c673059190975455db7a61583f221528e06da1ee38d1ea5702f'
+sha256sums=('c77603e8b5cd51d75eb7dd54ea9bd2961c83c7fca8539541b86127f2e790673f'
   'SKIP'
   'SKIP'
   'SKIP'
