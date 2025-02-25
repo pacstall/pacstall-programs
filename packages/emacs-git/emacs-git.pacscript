@@ -79,7 +79,7 @@ breaks=("${pkgname}" "${pkgname}-nox")
 replaces=("${pkgname}" "${pkgname}-nox")
 source=("https://github.com/emacs-mirror/emacs.git")
 arch=("any")
-pkgver="29.4"
+pkgver="30.1"
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then
   export LD=/usr/bin/ld.gold
