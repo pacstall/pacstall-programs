@@ -58,14 +58,4 @@ package() {
   mkdir -p "${pkgdir}/usr/share/${gives}/presets"
   cp -r presets/* "${pkgdir}/usr/share/${gives}/presets"
 }
-
-post_remove() {
-  # Remove left over directories
-  if ask "Do you want to remove the configuration files?" Y; then
-    rm -rf "${homedir}/.config/fastfetch"
-  fi
-  if ask "Do you want to remove the left over cache?" Y; then
-    rm -rf "${homedir}/.cache/fastfetch"
-  fi
-}
 # vim:set ft=sh ts=2 sw=2 et:
