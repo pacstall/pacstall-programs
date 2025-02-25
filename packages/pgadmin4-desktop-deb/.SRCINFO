@@ -1,7 +1,7 @@
 pkgbase = pgadmin4-desktop-deb
 	gives = pgadmin4-desktop
 	pkgver = 9.0
-	pkgdesc = The desktop user interface for pgAdmin
+	pkgdesc = Desktop user interface for pgAdmin
 	arch = amd64
 	makedepends = apparmor-profiles
 	pacdeps = pgadmin4-server-deb

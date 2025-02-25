@@ -1,7 +1,7 @@
 pkgbase = pgadmin4-server-deb
 	gives = pgadmin4-server
 	pkgver = 9.0
-	pkgdesc = The core server package for pgAdmin
+	pkgdesc = Core server package for pgAdmin
 	arch = amd64
 	compatible = ubuntu:noble
 	compatible = ubuntu:oracular
