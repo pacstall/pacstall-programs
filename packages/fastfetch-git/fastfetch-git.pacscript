@@ -14,6 +14,7 @@ arch=("any")
 pkgver="2.33.0"
 repology=("project: ${gives}")
 makedepends=("libvulkan-dev" "libwayland-dev" "libxrandr-dev" "libxcb-randr0-dev" "libdconf-dev" "libdbus-1-dev" "libmagickcore-dev" "libxfconf-0-dev" "libsqlite3-dev" "librpm-dev" "libegl-dev" "libglx-dev" "libosmesa6-dev" "ocl-icd-opencl-dev" "libpulse-dev" "libdrm-dev" "libddcutil-dev" "libchafa-dev" "directx-headers-dev" "pkgconf" "cmake>=3.12")
+checkdepends=("cmake")
 optdepends=("libvulkan1: Vulkan module and GPU fallback"
   "libegl1: OpenGL module"
   "libxcb-randr0: Resolution and refresh rate support for X11 sessions"
@@ -30,14 +31,35 @@ optdepends=("libvulkan1: Vulkan module and GPU fallback"
 breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app")
 
 build() {
-  cd "fastfetch"
-  # Build fastfetch
-  mkdir -p build/
-  (
-    cd build/ || return 2
-    cmake ..
-    cmake --build . --target fastfetch --target flashfetch -j "${NCPU}"
-  )
+	cmake -B build -S "fastfetch" \
+		-DCMAKE_BUILD_TYPE='RelWithDebInfo' \
+		-DCMAKE_INSTALL_PREFIX='/usr' \
+		-DBUILD_FLASHFETCH='OFF' \
+		-DBUILD_TESTS='ON' \
+		-DENABLE_SQLITE3='OFF' \
+		-DENABLE_RPM='OFF' \
+		-DENABLE_IMAGEMAGICK6='OFF' \
+		-DENABLE_SYSTEM_YYJSON='ON' \
+		-DPACKAGES_DISABLE_APK='ON' \
+		-DPACKAGES_DISABLE_EMERGE='ON' \
+		-DPACKAGES_DISABLE_EOPKG='ON' \
+		-DPACKAGES_DISABLE_GUIX='ON' \
+		-DPACKAGES_DISABLE_LINGLONG='ON' \
+		-DPACKAGES_DISABLE_LPKG='ON' \
+		-DPACKAGES_DISABLE_LPKGBUILD='ON' \
+		-DPACKAGES_DISABLE_OPKG='ON' \
+		-DPACKAGES_DISABLE_PALUDIS='ON' \
+		-DPACKAGES_DISABLE_PKG='ON' \
+		-DPACKAGES_DISABLE_PKGTOOL='ON' \
+		-DPACKAGES_DISABLE_RPM='ON' \
+		-DPACKAGES_DISABLE_SORCERY='ON' \
+		-DPACKAGES_DISABLE_XBPS='ON' \
+		-Wno-dev
+	cmake --build build
+}
+
+check() {
+  ctest --test-dir build --output-on-failure
 }
 
 package() {
@@ -48,11 +70,11 @@ package() {
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${gives}"
 
-  # Install fastfetch and flashfetch binary
-  install -Dm755 "build/fastfetch" "build/flashfetch" -t "${pkgdir}/usr/bin"
+  # Install fastfetch binary
+  install -Dm755 "build/fastfetch" -t "${pkgdir}/usr/bin"
 
   # Install bash completions
-  install -Dm644 "completions/bash" "${pkgdir}/usr/share/bash-completion/completions/${gives}"
+  install -Dm644 "completions/fastfetch.bash" "${pkgdir}/usr/share/bash-completion/completions/${gives}"
 
   # Install presets
   mkdir -p "${pkgdir}/usr/share/${gives}/presets"
