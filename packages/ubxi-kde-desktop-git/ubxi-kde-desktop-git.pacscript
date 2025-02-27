@@ -1,7 +1,7 @@
 pkgname="ubxi-kde-desktop-git"
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-source=("https://github.com/villamorrd/ubxi-kde-desktop.git")
+source=("https://github.com/rhino-linux/ubxi-kde-desktop.git")
 depends=("plasma-desktop" "konsole" "systemsettings" "plasma-nm" "plasma-disks"
   "plasma-firewall" "plasma-pa" "plasma-systemmonitor" "kinfocenter" "kmenuedit"
   "kscreen" "dolphin" "kio-extras" "kdegraphics-thumbnailers" "kde-config-gtk-style" "kde-config-screenlocker"

@@ -39,6 +39,6 @@ pkgbase = ubxi-kde-desktop-git
 	incompatible = debian:*
 	license = GPL-3.0-or-later
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
-	source = https://github.com/villamorrd/ubxi-kde-desktop.git
+	source = https://github.com/rhino-linux/ubxi-kde-desktop.git
 
 pkgname = ubxi-kde-desktop-git
