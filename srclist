@@ -2799,7 +2799,6 @@ pkgbase = fastfetch-git
 	pkgver = 2.37.0
 	pkgdesc = Like neofetch, but much faster because written in c
 	arch = any
-	depends = yyjson
 	makedepends = cmake>=3.12
 	makedepends = pkg-config
 	makedepends = python3
@@ -2820,6 +2819,7 @@ pkgbase = fastfetch-git
 	makedepends = libpulse-dev
 	makedepends = libddcutil-dev
 	makedepends = libelf-dev
+	makedepends = libyyjson-dev
 	checkdepends = cmake
 	breaks = fastfetch
 	breaks = fastfetch-bin

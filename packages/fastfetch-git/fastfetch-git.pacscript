@@ -14,9 +14,8 @@ arch=("any")
 license=("MIT")
 pkgver="2.37.0"
 repology=("project: ${gives}")
-depends=("yyjson")
 checkdepends=("cmake")
-makedepends=("cmake>=3.12" "pkg-config" "python3" "libvulkan-dev" "libwayland-dev" "libxcb-randr0-dev" "libxrandr-dev" "libdrm-dev" "libdconf-dev" "zlib1g-dev" "libchafa-dev" "libxfconf-0-dev" "libdbus-1-dev" "libmagickcore-dev" "libegl-dev" "libosmesa6-dev" "ocl-icd-opencl-dev" "libpulse-dev" "libddcutil-dev" "libelf-dev")
+makedepends=("cmake>=3.12" "pkg-config" "python3" "libvulkan-dev" "libwayland-dev" "libxcb-randr0-dev" "libxrandr-dev" "libdrm-dev" "libdconf-dev" "zlib1g-dev" "libchafa-dev" "libxfconf-0-dev" "libdbus-1-dev" "libmagickcore-dev" "libegl-dev" "libosmesa6-dev" "ocl-icd-opencl-dev" "libpulse-dev" "libddcutil-dev" "libelf-dev" "libyyjson-dev")
 breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app")
 
 build() {
