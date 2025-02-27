@@ -58,7 +58,6 @@ build() {
 }
 
 check() {
-  cd "fastfetch"
   ctest --test-dir build --output-on-failure
 }
 
