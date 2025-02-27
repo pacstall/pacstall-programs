@@ -7,7 +7,7 @@ pkgbase = fastfetch-git
 	makedepends = cmake>=3.12
 	makedepends = pkg-config
 	makedepends = python3
-	makedepends = libvulkvan-dev
+	makedepends = libvulkan-dev
 	makedepends = libwayland-dev
 	makedepends = libxcb-randr0-dev
 	makedepends = libxrandr-dev
