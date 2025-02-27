@@ -23,7 +23,6 @@ pkgbase = fastfetch-git
 	makedepends = libpulse-dev
 	makedepends = libddcutil-dev
 	makedepends = libelf-dev
-	makedepends = libyyjson-dev
 	checkdepends = cmake
 	breaks = fastfetch
 	breaks = fastfetch-bin

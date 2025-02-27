@@ -15,7 +15,7 @@ license=("MIT")
 pkgver="2.37.0"
 repology=("project: ${gives}")
 checkdepends=("cmake")
-makedepends=("cmake>=3.12" "pkg-config" "python3" "libvulkan-dev" "libwayland-dev" "libxcb-randr0-dev" "libxrandr-dev" "libdrm-dev" "libdconf-dev" "zlib1g-dev" "libchafa-dev" "libxfconf-0-dev" "libdbus-1-dev" "libmagickcore-dev" "libegl-dev" "libosmesa6-dev" "ocl-icd-opencl-dev" "libpulse-dev" "libddcutil-dev" "libelf-dev" "libyyjson-dev")
+makedepends=("cmake>=3.12" "pkg-config" "python3" "libvulkan-dev" "libwayland-dev" "libxcb-randr0-dev" "libxrandr-dev" "libdrm-dev" "libdconf-dev" "zlib1g-dev" "libchafa-dev" "libxfconf-0-dev" "libdbus-1-dev" "libmagickcore-dev" "libegl-dev" "libosmesa6-dev" "ocl-icd-opencl-dev" "libpulse-dev" "libddcutil-dev" "libelf-dev")
 breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app")
 
 build() {
@@ -28,6 +28,7 @@ build() {
     -DENABLE_RPM='OFF' \
     -DENABLE_IMAGEMAGICK6='ON' \
     -DENABLE_IMAGEMAGICK7='OFF' \
+    -DENABLE_SYSTEM_YYJSON='OFF' \
     -DENABLE_DIRECTX_HEADERS='OFF' \
     -DPACKAGES_DISABLE_APK='ON' \
     -DPACKAGES_DISABLE_EMERGE='ON' \
