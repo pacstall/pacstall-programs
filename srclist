@@ -13780,8 +13780,7 @@ pkgname = waydroid-deb
 ---
 pkgbase = wayland-protocols-git
 	gives = wayland-protocols
-	pkgver = 1.23
-	pkgrel = 1
+	pkgver = 1.41
 	pkgdesc = Wayland protocols that add functionalities not available in the core protocol
 	url = https://wayland.freedesktop.org/
 	arch = any
@@ -13790,6 +13789,7 @@ pkgbase = wayland-protocols-git
 	makedepends = ninja-build
 	makedepends = libwayland-dev
 	pacdeps = meson-git
+	repology = project: wayland-protocols
 	source = git+https://gitlab.freedesktop.org/wayland/wayland-protocols.git
 	sha256sums = SKIP
 

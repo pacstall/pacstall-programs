@@ -1,7 +1,7 @@
 pkgname="wayland-protocols-git"
 gives="wayland-protocols"
-pkgver="1.23"
-pkgrel=1
+repology=("project: ${gives}")
+pkgver="1.41"
 pkgdesc='Wayland protocols that add functionalities not available in the core protocol'
 arch=('any')
 url='https://wayland.freedesktop.org/'
