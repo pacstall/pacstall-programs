@@ -16,7 +16,6 @@ optdepends=(
 )
 pacdeps=("rhino-ubxi-core")
 gives="ubxi-kde-desktop"
-replaces=("unicorn-desktop")
 priority='required'
 pkgdesc="UBXI KDE Plasma Desktop"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
