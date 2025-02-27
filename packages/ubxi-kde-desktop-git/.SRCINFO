@@ -20,6 +20,7 @@ pkgbase = ubxi-kde-desktop-git
 	depends = kio-extras
 	depends = kdegraphics-thumbnailers
 	depends = kde-config-gtk-style
+	depends = kde-config-gtk-style-preview
 	depends = kde-config-screenlocker
 	depends = breeze-gtk-theme
 	depends = xdg-desktop-portal-gtk
