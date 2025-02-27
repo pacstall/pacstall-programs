@@ -12952,7 +12952,6 @@ pkgbase = ubxi-kde-desktop-git
 	optdepends = plasma-thunderbolt: Plasma addons for managing Thunderbolt devices
 	optdepends = powerdevil: Global power saver settings
 	pacdeps = rhino-ubxi-core
-	replaces = unicorn-desktop
 	incompatible = debian:*
 	license = GPL-3.0-or-later
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
