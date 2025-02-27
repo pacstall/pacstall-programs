@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+# https://manpages.ubuntu.com/manpages/bionic/man7/debconf-devel.7.html
+
+get_homedir() {
+  local PACSTALL_USER=$(logname 2>/dev/null||echo "${SUDO_USER:-$USER}")
+  eval echo ~"$PACSTALL_USER"
+}
+
+export homedir="$(get_homedir)"
+
+. /usr/share/debconf/confmodule
+
+db_get fastfetch/remove_configuration
+if [ "$RET" = "true" ]; then
+    rm -rf "${homedir:?}/.config/fastfetch"
+fi
+
+db_get fastfetch/remove_cache
+if [ "$RET" = "true" ]; then
+    rm -rf "${homedir:?}/.cache/fastfetch"
+fi

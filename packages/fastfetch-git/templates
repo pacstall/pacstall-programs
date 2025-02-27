@@ -1,0 +1,11 @@
+Template: fastfetch/remove_configuration
+Type: boolean
+Default: false
+Description: Do you want to remove the configuration files?
+ This will clear '~/.config/fastfetch/'
+
+Template: fastfetch/remove_cache
+Type: boolean
+Default: true
+Description: Do you want to remove the leftover cache?
+ This will clear '~/.cache/fastfetch/'
