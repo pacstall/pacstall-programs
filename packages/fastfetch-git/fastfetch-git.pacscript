@@ -13,7 +13,7 @@ source=("https://github.com/LinusDierheimer/fastfetch.git")
 arch=("any")
 pkgver="2.33.0"
 repology=("project: ${gives}")
-makedepends=("libvulkan-dev" "libwayland-dev" "libxrandr-dev" "libxcb-randr0-dev" "libdconf-dev" "libdbus-1-dev" "libmagickcore-dev" "libxfconf-0-dev" "libsqlite3-dev" "librpm-dev" "libegl-dev" "libglx-dev" "libosmesa6-dev" "ocl-icd-opencl-dev" "libpulse-dev" "libdrm-dev" "libddcutil-dev" "libchafa-dev" "directx-headers-dev" "pkgconf" "cmake>=3.12")
+makedepends=("libvulkan-dev" "libwayland-dev" "libxrandr-dev" "libxcb-randr0-dev" "libdconf-dev" "libdbus-1-dev" "libmagickcore-dev" "libxfconf-0-dev" "libegl-dev" "libglx-dev" "libosmesa6-dev" "ocl-icd-opencl-dev" "libpulse-dev" "libdrm-dev" "libddcutil-dev" "libchafa-dev" "directx-headers-dev" "pkgconf" "cmake>=3.12")
 checkdepends=("cmake")
 optdepends=("libvulkan1: Vulkan module and GPU fallback"
   "libegl1: OpenGL module"
@@ -39,7 +39,6 @@ build() {
     -DENABLE_SQLITE3='OFF' \
     -DENABLE_RPM='OFF' \
     -DENABLE_IMAGEMAGICK6='OFF' \
-    -DENABLE_SYSTEM_YYJSON='ON' \
     -DPACKAGES_DISABLE_APK='ON' \
     -DPACKAGES_DISABLE_EMERGE='ON' \
     -DPACKAGES_DISABLE_EOPKG='ON' \
@@ -59,6 +58,7 @@ build() {
 }
 
 check() {
+  cd "fastfetch"
   ctest --test-dir build --output-on-failure
 }
 
