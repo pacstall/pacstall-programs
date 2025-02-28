@@ -13787,7 +13787,7 @@ pkgbase = wayland-protocols-git
 	makedepends = cmake
 	makedepends = pkg-config
 	makedepends = ninja-build
-	makedepends = libwayland-dev
+	makedepends = libwayland-dev>=1.23.0
 	pacdeps = meson-git
 	repology = project: wayland-protocols
 	source = git+https://gitlab.freedesktop.org/wayland/wayland-protocols.git
