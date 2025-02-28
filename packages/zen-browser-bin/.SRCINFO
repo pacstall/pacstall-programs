@@ -35,7 +35,7 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = zen-browser-1.8.1b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.8.1b/zen.linux-x86_64.tar.xz
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.8.1b/zen.linux-x86_64.tar.xz
 	sha256sums_amd64 = 749e7ae59430f3cb5c8ba0467a9ef5f686faa089402e6502d3170122a8af671c
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
@@ -46,7 +46,7 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = zen-browser-1.8.1b.tar.bz2::https://github.com/zen-browser/desktop/releases/download/1.8.1b/zen.linux-aarch64.tar.xz
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.8.1b/zen.linux-aarch64.tar.xz
 	sha256sums_arm64 = d71210121b0a5a01a6cb2a0eb04bc7747f4f5eb4a4c484758f8f6f3e0e2ebdb7
 
 pkgname = zen-browser-bin
