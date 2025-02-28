@@ -1,6 +1,6 @@
 pkgbase = soar
 	pkgver = 0.5.9
-	pkgdesc = Fast, modern package manager for Static Binaries, Portable Formats (AppImage|AppBundle|FlatImage|Runimage) & More
+	pkgdesc = Fast, modern package manager for Static Binaries and Portable Formats
 	url = https://soar.qaidvoid.dev/
 	arch = any
 	makedepends = cargo>=1.82.0
