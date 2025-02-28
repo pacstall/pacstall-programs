@@ -2,6 +2,7 @@ pkgname="soar"
 arch=("any")
 pkgver="0.5.9"
 license=("MIT")
+repology=("project: soar")
 url='https://soar.qaidvoid.dev/'
 pkgdesc='Fast, modern package manager for Static Binaries and Portable Formats'
 source=("https://github.com/pkgforge/soar/archive/refs/tags/v${pkgver}.tar.gz")
