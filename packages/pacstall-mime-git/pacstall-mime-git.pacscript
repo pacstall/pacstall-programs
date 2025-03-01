@@ -8,12 +8,6 @@ pkgver="0.0.1"
 pkgdesc="Minimal files for pacscript MIME integration on desktop environments"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
-build() {
-  mkdir -p "${pkgdir}/usr/share/applications"
-  mkdir -p "${pkgdir}/usr/share/mime/packages"
-  mkdir -p "${pkgdir}/usr/share/icons/hicolor/scalable/mimetypes"
-}
-
 package() {
   cd "${gives}"
   install -Dm644 "application-x-pacscript.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/mimetypes"
