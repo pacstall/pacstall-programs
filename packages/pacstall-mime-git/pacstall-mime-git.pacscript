@@ -14,7 +14,7 @@ build() {
   mkdir -p "${pkgdir}/usr/share/icons/hicolor/scalable/mimetypes"
 }
 
- package() {
+package() {
   cd "${gives}"
   install -Dm644 "application-x-pacscript.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/mimetypes"
   install -Dm644 "pacscript.xml" -t "${pkgdir}/usr/share/mime/packages"
@@ -22,21 +22,22 @@ build() {
 }
 
 post_install() {
-  sudo update-mime-database "/usr/share/mime" 2>/dev/null
+  sudo update-mime-database "/usr/share/mime" 2> /dev/null
   sudo update-desktop-database "/usr/share/applications"
   if command -v update-icon-caches > /dev/null; then
     sudo update-icon-caches "/usr/share/icons/hicolor"
   fi
-  if ! { [[ -f "/usr/share/applications/mimeapps.list" ]] && \
-    grep -q '^application/x-pacscript=' "/usr/share/applications/mimeapps.list"; }; then
-      { ! [[ -f "/usr/share/applications/mimeapps.list" ]] && echo -e '\n[Default Applications]';
-        echo 'application/x-pacscript=pacscript.desktop';
-      } | sudo tee -a "/usr/share/applications/mimeapps.list" > /dev/null
+  if ! { [[ -f "/usr/share/applications/mimeapps.list" ]] \
+    && grep -q '^application/x-pacscript=' "/usr/share/applications/mimeapps.list"; }; then
+    {
+      ! [[ -f "/usr/share/applications/mimeapps.list" ]] && echo -e '\n[Default Applications]'
+      echo 'application/x-pacscript=pacscript.desktop'
+    } | sudo tee -a "/usr/share/applications/mimeapps.list" > /dev/null
   fi
 }
 
 post_remove() {
-  sudo update-mime-database "/usr/share/mime" 2>/dev/null
+  sudo update-mime-database "/usr/share/mime" 2> /dev/null
   sudo update-desktop-database "/usr/share/applications"
   if command -v update-icon-caches > /dev/null; then
     sudo update-icon-caches "/usr/share/icons/hicolor"
