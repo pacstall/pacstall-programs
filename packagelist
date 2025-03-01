@@ -500,6 +500,7 @@ pacget-git
 paconvert-git
 pacstall
 pacstall-gui-git
+pacstall-mime-git
 pacstall-qa-git
 pacup
 pacup-git
