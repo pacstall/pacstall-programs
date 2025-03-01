@@ -499,6 +499,7 @@ p3x-onenote-app
 pacget-git
 paconvert-git
 pacstall
+pacstall-docker-builder-git
 pacstall-gui-git
 pacstall-mime-git
 pacstall-qa-git

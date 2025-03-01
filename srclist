@@ -9254,6 +9254,16 @@ pkgbase = paconvert-git
 
 pkgname = paconvert-git
 ---
+pkgbase = pacstall-docker-builder-git
+	gives = pacstall-docker-builder
+	pkgver = 0.1.3
+	pkgdesc = A script to easily build, pull, and test Pacstall Docker images
+	arch = all
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/pacstall/docker.git
+
+pkgname = pacstall-docker-builder-git
+---
 pkgbase = pacstall-gui-git
 	gives = pacstall-gui
 	pkgver = 0.0.1
