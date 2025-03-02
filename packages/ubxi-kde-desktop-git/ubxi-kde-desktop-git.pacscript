@@ -15,6 +15,7 @@ optdepends=(
   "powerdevil: Global power saver settings"
 )
 pacdeps=("rhino-ubxi-core")
+replaces=("unicorn-desktop" "unicorn-mobile")
 gives="ubxi-kde-desktop"
 priority='required'
 pkgdesc="UBXI KDE Plasma Desktop"
