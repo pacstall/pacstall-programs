@@ -22,7 +22,7 @@ package() {
 
   cp -R ./* "${pkgdir}/usr/share/discord/"
 
-  ln -sf "${pkgdir}/usr/share/discord/Discord" "${pkgdir}/usr/bin/discord"
+  ln -sf "/usr/share/discord/Discord" "${pkgdir}/usr/bin/discord"
   install -Dm755 discord.desktop "${pkgdir}/usr/share/applications/discord.desktop"
   install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord.png"
 }
