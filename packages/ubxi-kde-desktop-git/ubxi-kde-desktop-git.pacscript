@@ -36,9 +36,6 @@ build() {
 
 package() {
   cd "${gives}"
-  # Icons
-  install -Dm644 "rhino/logos/logo.png" -t "${pkgdir}/usr/share/icons"
-  install -Dm644 "rhino/logos/logo.svg" -t "${pkgdir}/usr/share/icons"
 
   # Wallpapers for Plasma
   cp -r rhino/wallpapers "${pkgdir}/usr/share"
