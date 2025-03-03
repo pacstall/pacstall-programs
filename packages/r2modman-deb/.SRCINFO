@@ -1,7 +1,7 @@
 pkgbase = r2modman-deb
 	gives = r2modman
 	pkgver = 3.1.56
-	pkgdesc = A simple and easy to use mod manager for many games using Thunderstore
+	pkgdesc = Simple and easy to use mod manager for many games using Thunderstore
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: r2modman
