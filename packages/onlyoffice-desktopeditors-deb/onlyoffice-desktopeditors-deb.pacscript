@@ -1,6 +1,6 @@
 pkgname="onlyoffice-desktopeditors-deb"
 gives="onlyoffice-desktopeditors"
-pkgver="8.2.2"
+pkgver="8.3.1"
 replaces=("${gives}")
 source=("https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${pkgver}/onlyoffice-desktopeditors_amd64.deb")
 pkgdesc="Free office suite that combines text, spreadsheet and presentation"
