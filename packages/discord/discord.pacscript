@@ -4,9 +4,9 @@ maintainer=("Elsie19 <elsie19@pm.me>")
 source=("@${pkgname}~${pkgver}::https://dl.discordapp.net/apps/linux/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 url='https://discord.com/'
 depends=("libc6" "libasound2" "libatomic1" "libnotify4" "libnspr4" "libnss3" "libstdc++6" "libxss1" "libxtst6" "libayatana-appindicator3-1" "libc++1")
-optdepends=("
-  fonts-noto-color-emoji: emoji support
-")
+optdepends=(
+  "fonts-noto-color-emoji: emoji support"
+)
 pkgdesc="Chat for Communities and Friends"
 sha256sums=("db63e2e6b2347eeec0fd9a2a92320e0ed12798d42dd291419aca6587440ad004")
 arch=('amd64')
