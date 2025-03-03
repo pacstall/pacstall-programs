@@ -16,7 +16,6 @@ prepare() {
 }
 
 package() {
-  ls
   cp -R ABDownloadManager/* "${pkgdir}/opt/abdownloadmanager"
   install -Dm644 ABDownloadManager/lib/ABDownloadManager.png "${pkgdir}/usr/share/pixmaps/${gives}.png"
   ln -sf "/opt/abdownloadmanager/bin/ABDownloadManager" "${pkgdir}/usr/bin/abdownloadmanager"
