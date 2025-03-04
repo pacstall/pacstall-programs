@@ -4,10 +4,10 @@ arch=('amd64' 'arm64')
 pkgver="4.4"
 url='https://godotengine.org/'
 source=(
-  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/org.godotengine.Godot.desktop"
-  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/org.godotengine.Godot.xml"
-  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/icon.svg"
-  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/godot.6"
+  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/${pkgver}/misc/dist/linux/org.godotengine.Godot.desktop"
+  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/${pkgver}/misc/dist/linux/org.godotengine.Godot.xml"
+  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/${pkgver}/icon.svg"
+  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/${pkgver}/misc/dist/linux/godot.6"
 )
 source_amd64=("https://github.com/godotengine/godot/releases/download/${pkgver}-stable/Godot_v${pkgver}-stable_linux.x86_64.zip")
 source_arm64=("https://github.com/godotengine/godot/releases/download/${pkgver}-stable/Godot_v${pkgver}-stable_linux.arm64.zip")
