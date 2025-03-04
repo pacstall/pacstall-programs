@@ -6,6 +6,5 @@ source=("https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v${pkgve
 pkgdesc="Free office suite that combines text, spreadsheet and presentation"
 repology=("project: onlyoffice-desktopeditors")
 sha256sums=("e9ea172ce2ec847a67dde684c79ee597aea70fe82cd4b654113d024a6e287797")
-incompatible=("debian:unstable")
 arch=('amd64')
 maintainer=("James Ed Randson <jimedrand@disroot.org>" "soumyadeepghosh2004 <soumyadeepghosh2004@zohomail.in>")
