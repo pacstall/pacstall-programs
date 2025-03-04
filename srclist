@@ -8900,7 +8900,6 @@ pkgbase = onlyoffice-desktopeditors-deb
 	pkgdesc = Free office suite that combines text, spreadsheet and presentation
 	arch = amd64
 	replaces = onlyoffice-desktopeditors
-	incompatible = debian:unstable
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	maintainer = soumyadeepghosh2004 <soumyadeepghosh2004@zohomail.in>
 	repology = project: onlyoffice-desktopeditors
