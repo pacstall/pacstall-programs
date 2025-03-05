@@ -49,8 +49,8 @@ package() {
   # Plasma Style
   cp -r plasma/desktoptheme/unicorn "${pkgdir}/usr/share/plasma/desktoptheme"
 
-  # Plasma Layout Template
-  cp -r plasma/layout-templates/org.rhinolinux.desktop.defaultPanel "${pkgdir}/usr/share/plasma/layout-templates"
+  # Plasma Layout Templates
+  cp -r plasma/layout-templates/* "${pkgdir}/usr/share/plasma/layout-templates"
 
   # Unicorn color scheme
   install -Dm644 "plasma/color-schemes/Unicorn.colors" "${pkgdir}/usr/share/color-schemes"
