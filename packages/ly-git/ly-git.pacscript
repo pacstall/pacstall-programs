@@ -2,9 +2,9 @@ pkgname=("ly-git")
 repology=("project: ly")
 arch=('any')
 pkgver="1.0.2"
-url='https://github.com/fairyglade/ly'
+url='https://codeberg.org/AnErrupTion/ly'
 source=(
-  "https://github.com/fairyglade/ly.git"
+  "https://codeberg.org/AnErrupTion/ly.git"
   "config_dir-fix.patch"
 )
 sha256sums=(
