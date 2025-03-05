@@ -1,6 +1,5 @@
 pkgname="abdownloadmanager"
-gives="abdownloadmanager"
-repology=("project: ${gives}")
+repology=("project: ${pkgname}")
 arch=('amd64')
 pkgver="1.5.3"
 source=("https://github.com/amir1376/ab-download-manager/releases/download/v${pkgver}/ABDownloadManager_${pkgver}_linux_x64.tar.gz")
@@ -17,10 +16,10 @@ prepare() {
 
 package() {
   cp -R ABDownloadManager/* "${pkgdir}/opt/abdownloadmanager"
-  install -Dm644 ABDownloadManager/lib/ABDownloadManager.png "${pkgdir}/usr/share/pixmaps/${gives}.png"
+  install -Dm644 ABDownloadManager/lib/ABDownloadManager.png "${pkgdir}/usr/share/pixmaps/${pkgname}.png"
   ln -sf "/opt/abdownloadmanager/bin/ABDownloadManager" "${pkgdir}/usr/bin/abdownloadmanager"
 
-  cat << EOF > "${pkgdir}/usr/share/applications/${gives}.desktop"
+  cat << EOF > "${pkgdir}/usr/share/applications/${pkgname}.desktop"
   [Desktop Entry]
 Name=ABDownloadManager
 Comment=ABDownloadManager

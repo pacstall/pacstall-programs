@@ -1,5 +1,4 @@
 pkgbase = abdownloadmanager
-	gives = abdownloadmanager
 	pkgver = 1.5.3
 	pkgdesc = Desktop app which lets you manage and organize your download files better than before
 	arch = amd64
