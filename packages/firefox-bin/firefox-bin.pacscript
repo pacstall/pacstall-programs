@@ -1,6 +1,6 @@
 pkgname="firefox-bin"
 gives="firefox"
-pkgver="135.0"
+pkgver="136.0"
 repology=("project: ${gives}")
 source=("https://download-installer.cdn.mozilla.net/pub/firefox/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.xz")
 url='https://www.mozilla.org/en-US/firefox'
@@ -9,7 +9,7 @@ optdepends=("speech-dispatcher: Common interface to speech synthesizers")
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('amd64')
-sha256sums=("6fcc1a2f95a6b232af82b4b7644566638c5df349e3095c65b7c18d1a63412d3d")
+sha256sums=("5222f51caacfccaf0f0cf795117f0ad37422fe9d413ef18f2c171e1622b9455a")
 
 package() {
   cd "${srcdir}"

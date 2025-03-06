@@ -1,6 +1,6 @@
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 135.0
+	pkgver = 136.0
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -8,7 +8,7 @@ pkgbase = firefox-bin
 	optdepends = speech-dispatcher: Common interface to speech synthesizers
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/135.0/linux-x86_64/en-US/firefox-135.0.tar.xz
-	sha256sums = 6fcc1a2f95a6b232af82b4b7644566638c5df349e3095c65b7c18d1a63412d3d
+	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/136.0/linux-x86_64/en-US/firefox-136.0.tar.xz
+	sha256sums = 5222f51caacfccaf0f0cf795117f0ad37422fe9d413ef18f2c171e1622b9455a
 
 pkgname = firefox-bin
