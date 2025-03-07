@@ -3009,16 +3009,14 @@ pkgbase = figma-linux-deb
 pkgname = figma-linux-deb
 ---
 pkgbase = firefox-arm64-deb
-	gives = firefox
-	pkgver = 136.0+build3
-	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
+	gives = firefox-arm64-dummy
+	pkgver = 136.0+dummy
+	pkgdesc = Transitional/deprecated package for firefox-deb
 	url = https://www.mozilla.org/en-US/firefox
 	arch = arm64
+	pacdeps = firefox-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	repology = project: firefox
-	repology = repo: ubuntu_20_04
-	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_136.0+build3-0ubuntu0.22.04.1~mt1_arm64.deb
-	sha256sums = f271ad8bc72e85476906e6d53e104dcf269c45e0811318f1d8456fb617371e52
+	source = https://github.com/oklopfer/debs/raw/master/empty
 
 pkgname = firefox-arm64-deb
 ---
@@ -3031,14 +3029,35 @@ pkgbase = firefox-bin
 	arch = amd64
 	arch = arm64
 	optdepends = speech-dispatcher: Common interface to speech synthesizers
+	replaces = firefox
+	replaces = firefox-deb
+	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://download-installer.cdn.mozilla.net/pub/firefox/releases/136.0/linux-x86_64/en-US/firefox-136.0.tar.xz
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/136.0/linux-x86_64/en-US/firefox-136.0.tar.xz
 	sha256sums_amd64 = 5222f51caacfccaf0f0cf795117f0ad37422fe9d413ef18f2c171e1622b9455a
-	source_arm64 = https://download-installer.cdn.mozilla.net/pub/firefox/releases/136.0/linux-aarch64/en-US/firefox-136.0.tar.xz
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/136.0/linux-aarch64/en-US/firefox-136.0.tar.xz
 	sha256sums_arm64 = bef7a1f0c2c6afda65f1c1edbe3e13fdd935c336b162430c7d3513922740800a
 
 pkgname = firefox-bin
+---
+pkgbase = firefox-deb
+	gives = firefox
+	pkgver = 136.0
+	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
+	url = https://www.mozilla.org/en-US/firefox
+	arch = amd64
+	arch = arm64
+	replaces = firefox
+	replaces = firefox-bin
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: firefox
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/136.0/linux-x86_64/en-US/firefox-136.0.deb
+	sha256sums_amd64 = c46473a0f694631e1089bbe717dc2b90b1687169fe5661a65bfe9de0b45a9455
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/136.0/linux-aarch64/en-US/firefox-136.0.deb
+	sha256sums_arm64 = 62d5456877c4391eda0c58ce486ed99a28df692c0022332d65ae9e31444667de
+
+pkgname = firefox-deb
 ---
 pkgbase = firefox-developer-edition-bin
 	gives = firefox-developer-edition
