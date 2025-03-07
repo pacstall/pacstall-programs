@@ -7,7 +7,6 @@ pkgbase = firefox-bin
 	arch = amd64
 	arch = arm64
 	optdepends = speech-dispatcher: Common interface to speech synthesizers
-	replaces = firefox
 	replaces = firefox-deb
 	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>

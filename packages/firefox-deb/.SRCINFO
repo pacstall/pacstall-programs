@@ -5,7 +5,6 @@ pkgbase = firefox-deb
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
 	arch = arm64
-	replaces = firefox
 	replaces = firefox-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
