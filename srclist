@@ -3028,12 +3028,15 @@ pkgbase = firefox-bin
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
+	arch = arm64
 	depends = speech-dispatcher
 	optdepends = speech-dispatcher: Common interface to speech synthesizers
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source = https://download-installer.cdn.mozilla.net/pub/firefox/releases/136.0/linux-x86_64/en-US/firefox-136.0.tar.xz
-	sha256sums = 5222f51caacfccaf0f0cf795117f0ad37422fe9d413ef18f2c171e1622b9455a
+	source_amd64 = https://download-installer.cdn.mozilla.net/pub/firefox/releases/136.0/linux-x86_64/en-US/firefox-136.0.tar.xz
+	sha256sums_amd64 = 5222f51caacfccaf0f0cf795117f0ad37422fe9d413ef18f2c171e1622b9455a
+	source_arm64 = https://download-installer.cdn.mozilla.net/pub/firefox/releases/136.0/linux-aarch64/en-US/firefox-136.0.tar.xz
+	sha256sums_arm64 = bef7a1f0c2c6afda65f1c1edbe3e13fdd935c336b162430c7d3513922740800a
 
 pkgname = firefox-bin
 ---
