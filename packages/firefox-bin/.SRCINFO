@@ -1,11 +1,11 @@
 pkgbase = firefox-bin
 	gives = firefox
 	pkgver = 136.0
+	pkgrel = 2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
 	arch = arm64
-	depends = speech-dispatcher
 	optdepends = speech-dispatcher: Common interface to speech synthesizers
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
