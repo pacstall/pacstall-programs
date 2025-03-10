@@ -31,6 +31,7 @@ build() {
   mkdir -p "${pkgdir}/usr/share/plasma/look-and-feel"
   mkdir -p "${pkgdir}/usr/share/plasma/layout-templates"
   mkdir -p "${pkgdir}/usr/share/color-schemes"
+  mkdir -p "${pkgdir}/usr/share/applications"
   mkdir -p "${pkgdir}/etc/xdg"
 }
 
@@ -58,4 +59,16 @@ package() {
   # Plasma config
   install -Dm644 "plasma/kcm-about-distrorc" -t "${pkgdir}/etc/xdg"
   install -Dm644 "plasma/kdeglobals" -t "${pkgdir}/etc/xdg"
+
+  # KRunner for desktop
+  cat "${pkgdir}/usr/share/applications/krunner.desktop" << EOF
+  [Desktop Entry]
+Version=1.0
+Type=Application
+Name=KRunner
+Comment=
+Exec=krunner %F
+Icon=krunner
+MimeType=
+EOF
 }
