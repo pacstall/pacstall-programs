@@ -4,10 +4,7 @@ arch=('any')
 pkgver="1.0.2"
 url='https://codeberg.org/AnErrupTion/ly'
 source=("https://codeberg.org/AnErrupTion/ly.git")
-sha256sums=(
-  'SKIP'
-  'SKIP'
-)
+sha256sums=('SKIP')
 depends=("systemd")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")

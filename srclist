@@ -6871,7 +6871,6 @@ pkgbase = ly-git
 	repology = project: ly
 	source = https://codeberg.org/AnErrupTion/ly.git
 	sha256sums = SKIP
-	sha256sums = SKIP
 
 pkgname = ly-git
 ---
