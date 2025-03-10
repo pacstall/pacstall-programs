@@ -3,10 +3,7 @@ repology=("project: ly")
 arch=('any')
 pkgver="1.0.2"
 url='https://codeberg.org/AnErrupTion/ly'
-source=(
-  "https://codeberg.org/AnErrupTion/ly.git"
-  "config_dir-fix.patch"
-)
+source=("https://codeberg.org/AnErrupTion/ly.git")
 sha256sums=(
   'SKIP'
   'SKIP'
@@ -30,9 +27,6 @@ prepare() {
 
 build() {
   cd "ly"
-
-  # Without this patch, the config directory is set as ${pkgdir}/ly-git/etc when it should be /etc/ly-git
-  patch build.zig "${srcdir}"/config_dir-fix.patch
 
   zig build
 }
