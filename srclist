@@ -4762,13 +4762,13 @@ pkgname = hwinfo-git
 ---
 pkgbase = hydralauncher-deb
 	gives = hydralauncher
-	pkgver = 3.2.3
+	pkgver = 3.3.0
 	pkgdesc = Game launcher with its own embedded BitTorrent client
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: hydralauncher
-	source = https://github.com/hydralauncher/hydra/releases/download/v3.2.3/hydralauncher_3.2.3_amd64.deb
-	sha256sums = 7ffd1fa0e60ff5064d69dae662d5d96e406cf7957f3339a761dbf8587f6b00e7
+	source = https://github.com/hydralauncher/hydra/releases/download/v3.3.0/hydralauncher_3.3.0_amd64.deb
+	sha256sums = a87a966f5cf5c7dc2663ebc0684bc77a8905c8a45e0e089446d4c86a3355dab8
 
 pkgname = hydralauncher-deb
 ---
@@ -8921,7 +8921,7 @@ pkgname = oil
 ---
 pkgbase = ollama-bin
 	gives = ollama
-	pkgver = 0.5.1
+	pkgver = 0.5.13
 	pkgdesc = Get up and running with large language models
 	url = https://ollama.com/
 	arch = amd64
@@ -8931,11 +8931,11 @@ pkgbase = ollama-bin
 	repology = project:ollama
 	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550: required to use CUDA on NVIDIA GPU
 	optdepends_debian = libcuda1: required to use CUDA on NVIDIA GPU
-	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.5.1/ollama-linux-amd64.tgz
-	sha256sums_amd64 = ca5c806f658f71d9d8b46d51e80678f8d6a1937e1e19db689bde5e8331ead600
+	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.5.13/ollama-linux-amd64.tgz
+	sha256sums_amd64 = 30ec1cf2be608898c3b574c3805da66759406e59ad7db01a26719eaf7365c75a
 	sha256sums_amd64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
-	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.5.1/ollama-linux-arm64.tgz
-	sha256sums_arm64 = 4ffa5a62ea93ad6f19ba9429482e1c7481148123a3c72d248d8e1cc2cb9f656d
+	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.5.13/ollama-linux-arm64.tgz
+	sha256sums_arm64 = 8a4feee77f78e078f132c474694969e240f3d02c6d14f28d744bd59daa95332c
 	sha256sums_arm64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
 
 pkgname = ollama-bin
@@ -14828,17 +14828,17 @@ pkgbase = zettlr-deb
 pkgname = zettlr-deb
 ---
 pkgbase = zig-bin
-	pkgver = 0.13.0
+	pkgver = 0.14.0
 	pkgdesc = General-purpose programming language and toolchain for maintaining robust, optimal and reusable software
 	url = https://ziglang.org/
 	arch = amd64
 	arch = arm64
 	maintainer = Andrew Barchuk <andrew@raindev.io>
 	repology = project: zig
-	source_amd64 = @zig-bin~0.13.0::https://ziglang.org/download/0.13.0/zig-linux-x86_64-0.13.0.tar.xz
-	sha256sums_amd64 = d45312e61ebcc48032b77bc4cf7fd6915c11fa16e4aad116b66c9468211230ea
-	source_arm64 = @zig-bin~0.13.0::https://ziglang.org/download/0.13.0/zig-linux-aarch64-0.13.0.tar.xz
-	sha256sums_arm64 = 041ac42323837eb5624068acd8b00cd5777dac4cf91179e8dad7a7e90dd0c556
+	source_amd64 = @zig-bin~0.14.0::https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz
+	sha256sums_amd64 = 473ec26806133cf4d1918caf1a410f8403a13d979726a9045b421b685031a982
+	source_arm64 = @zig-bin~0.14.0::https://ziglang.org/download/0.14.0/zig-linux-aarch64-0.14.0.tar.xz
+	sha256sums_arm64 = ab64e3ea277f6fc5f3d723dcd95d9ce1ab282c8ed0f431b4de880d30df891e4f
 
 pkgname = zig-bin
 ---
