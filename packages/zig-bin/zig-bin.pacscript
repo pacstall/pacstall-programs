@@ -1,9 +1,9 @@
 pkgname="zig-bin"
 repology=("project: zig")
-pkgver="0.13.0"
+pkgver="0.14.0"
 arch=('amd64' 'arm64')
-sha256sums_amd64=("d45312e61ebcc48032b77bc4cf7fd6915c11fa16e4aad116b66c9468211230ea")
-sha256sums_arm64=("041ac42323837eb5624068acd8b00cd5777dac4cf91179e8dad7a7e90dd0c556")
+sha256sums_amd64=("473ec26806133cf4d1918caf1a410f8403a13d979726a9045b421b685031a982")
+sha256sums_arm64=("ab64e3ea277f6fc5f3d723dcd95d9ce1ab282c8ed0f431b4de880d30df891e4f")
 source_amd64=("@${pkgname}~${pkgver}::https://ziglang.org/download/${pkgver}/zig-linux-x86_64-${pkgver}.tar.xz")
 source_arm64=("@${pkgname}~${pkgver}::https://ziglang.org/download/${pkgver}/zig-linux-aarch64-${pkgver}.tar.xz")
 pkgdesc="General-purpose programming language and toolchain for maintaining robust, optimal and reusable software"
