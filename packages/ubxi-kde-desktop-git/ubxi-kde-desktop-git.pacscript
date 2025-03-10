@@ -61,7 +61,7 @@ package() {
   install -Dm644 "plasma/kdeglobals" -t "${pkgdir}/etc/xdg"
 
   # KRunner for desktop
-  cat "${pkgdir}/usr/share/applications/krunner.desktop" << EOF
+  cat << EOF > "${pkgdir}/usr/share/applications/krunner.desktop"
   [Desktop Entry]
 Version=1.0
 Type=Application
