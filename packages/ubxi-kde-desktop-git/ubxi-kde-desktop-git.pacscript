@@ -71,4 +71,16 @@ Exec=krunner %F
 Icon=krunner
 MimeType=
 EOF
+
+  # KWin Overview for desktop
+  cat << EOF > "${pkgdir}/usr/share/applications/kwin-overview.desktop"
+  [Desktop Entry]
+Version=1.0
+Type=Application
+Name=Overview
+Comment=
+Exec=qdbus6 org.kde.kglobalaccel /component/kwin invokeShortcut Overview
+Icon=preferences-desktop-virtual
+MimeType=
+EOF
 }
