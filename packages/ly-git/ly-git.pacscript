@@ -3,14 +3,8 @@ repology=("project: ly")
 arch=('any')
 pkgver="1.0.2"
 url='https://codeberg.org/AnErrupTion/ly'
-source=(
-  "https://codeberg.org/AnErrupTion/ly.git"
-  "config_dir-fix.patch"
-)
-sha256sums=(
-  'SKIP'
-  'SKIP'
-)
+source=("https://codeberg.org/AnErrupTion/ly.git")
+sha256sums=('SKIP')
 depends=("systemd")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
@@ -31,15 +25,12 @@ prepare() {
 build() {
   cd "ly"
 
-  # Without this patch, the config directory is set as ${pkgdir}/ly-git/etc when it should be /etc/ly-git
-  patch build.zig "${srcdir}"/config_dir-fix.patch
-
   zig build
 }
 
 package() {
   cd "ly"
-  zig build -Ddest_directory="${pkgdir}" installsystemd
+  zig build -Ddest_directory="${pkgdir}" installexe
 }
 
 post_install() {
