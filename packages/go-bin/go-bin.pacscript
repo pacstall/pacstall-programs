@@ -2,13 +2,12 @@ maintainer=("Paul Cosma (saenai) <paul.cosma97@gmail.com>")
 
 pkgname="go-bin"
 gives="go"
-pkgver="1.21.6"
-pkgrel="2"
+pkgver="1.24.1"
 pkgdesc="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
 source=("@${pkgname}~${pkgver}::https://go.dev/dl/go${pkgver}.linux-amd64.tar.gz")
 breaks=("${gives}" "${gives}-git" "${gives}-app" "${gives}-deb" "golang" "golang-git" "golang-deb" "golang-bin" "golang-app" "golang-go")
 replaces=("golang-go")
-sha256sums=("3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4")
+sha256sums=("cb2396bae64183cdccf81a9a6df0aea3bce9511fc21469fb89a0c00470088073")
 arch=('amd64')
 repology=("project: go")
 
