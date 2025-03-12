@@ -5,6 +5,7 @@ pkgver="1.8.1"
 url='https://vinegarhq.org/'
 source=("https://github.com/vinegarhq/vinegar.git")
 makedepends=(
+  "golang>=2:1.22"
   "pkg-config"
   "imagemagick"
 
@@ -26,7 +27,6 @@ optdepends=(
   "gamemode: Gamemode integration"
   "wine: A required dependency (made optional for flexibility)"
 )
-pacdeps=("go-bin")
 gives="vinegar"
 pkgdesc="An open-source, minimal, configurable, fast bootstrapper for running Roblox on Linux"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
