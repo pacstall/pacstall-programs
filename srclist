@@ -13463,6 +13463,7 @@ pkgbase = vinegar-git
 	pkgdesc = An open-source, minimal, configurable, fast bootstrapper for running Roblox on Linux
 	url = https://vinegarhq.org/
 	arch = amd64
+	makedepends = pkg-config
 	makedepends = imagemagick
 	makedepends = gcc
 	makedepends = libwayland-dev

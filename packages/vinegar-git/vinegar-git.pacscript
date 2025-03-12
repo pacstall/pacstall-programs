@@ -5,6 +5,7 @@ pkgver="1.8.1"
 url='https://vinegarhq.org/'
 source=("https://github.com/vinegarhq/vinegar.git")
 makedepends=(
+  "pkg-config"
   "imagemagick"
 
   # Gio
