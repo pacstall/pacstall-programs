@@ -32,6 +32,5 @@ Icon=audiorelay
 Terminal=false
 Type=Application
 Categories=Audio;Utility
-MimeType=
 EOF
 }
