@@ -12,7 +12,7 @@ external_connection=true
 build() {
   cd "${pkgname}-${pkgver}"
 
-  cargo build --release
+  cargo build -j"${NCPU}" --release --locked
 }
 
 package() {
