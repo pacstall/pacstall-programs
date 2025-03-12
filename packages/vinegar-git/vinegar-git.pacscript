@@ -21,6 +21,7 @@ makedepends=(
   "libvulkan-dev"
   "libglib2.0-dev-bin"
 )
+depends=("libgtk-4-1" "libadwaita-1-0")
 optdepends=(
   "gamemode: Gamemode integration"
   "wine: A required dependency (made optional for flexibility)"
