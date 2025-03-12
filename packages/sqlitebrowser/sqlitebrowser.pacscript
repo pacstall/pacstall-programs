@@ -17,6 +17,7 @@ sha256sums=(
   'SKIP'
   'SKIP'
 )
+depends=("libqt5xml5t64" "libqscintilla2-qt5-15")
 makedepends=(
   "build-essential" "cmake" "libqcustomplot-dev" "libqt5scintilla2-dev" "libsqlcipher-dev"
   "libsqlite3-dev" "qt5-qmake" "qtbase5-dev" "qtbase5-dev-tools" "qtchooser" "qttools5-dev"
