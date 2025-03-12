@@ -1,11 +1,10 @@
 pkgname="vinegar-git"
 repology=("project: vinegar")
 arch=('amd64')
-pkgver="1.7.8"
+pkgver="1.8.1"
 url='https://vinegarhq.org/'
 source=("https://github.com/vinegarhq/vinegar.git")
 makedepends=(
-  "golang>=2:1.22"
   "imagemagick"
 
   # Gio
@@ -25,6 +24,7 @@ optdepends=(
   "gamemode: Gamemode integration"
   "wine: A required dependency (made optional for flexibility)"
 )
+pacdeps=("go-bin")
 gives="vinegar"
 pkgdesc="An open-source, minimal, configurable, fast bootstrapper for running Roblox on Linux"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
