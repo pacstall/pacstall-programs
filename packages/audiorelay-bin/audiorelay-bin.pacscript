@@ -5,6 +5,7 @@ arch=('amd64')
 pkgver="0.27.5"
 url='https://audiorelay.net'
 source=("https://dl.audiorelay.net/setups/linux/audiorelay-${pkgver}.tar.gz")
+sha256sums=("c4854139a4bd21e7bf7881a7b6e21ebc4cfe823286783d4fb9ad4bf4edf8e8c7")
 conflicts=("${gives}-deb")
 pkgdesc="Turn your phone into a microphone or speakers for PC"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
