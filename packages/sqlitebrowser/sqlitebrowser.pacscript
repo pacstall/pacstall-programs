@@ -17,19 +17,16 @@ license=('MPL-2.0' 'GPL-3.0+')
 
 prepare() {
   cd "${pkgname}-${pkgver}"
-
   mkdir -p build
 }
 
 build() {
   cd "${pkgname}-${pkgver}/build"
-
   cmake ..
   make -j"${NCPU}"
 }
 
 package() {
   cd "${pkgname}-${pkgver}/build"
-
   make DESTDIR="${pkgdir}" install
 }
