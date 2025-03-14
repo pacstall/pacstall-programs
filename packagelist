@@ -1,5 +1,6 @@
 1password-cli-bin
 86box-app
+abdownloadmanager
 adapta-gtk-theme-git
 adw-gtk-theme
 adw-gtk3
@@ -25,6 +26,7 @@ arduino-cli-bin
 arduino-ide-bin
 asdf-vm
 aseprite
+audiorelay-bin
 audiorelay-deb
 awesome-git
 aws-cli-v2-bin
@@ -151,6 +153,7 @@ ffsend-bin
 figma-linux-deb
 firefox-arm64-deb
 firefox-bin
+firefox-deb
 firefox-developer-edition-bin
 firefox-nightly-bin
 firefox-nightly-deb
@@ -336,6 +339,8 @@ lunacy-deb
 lunarclient-app
 lutris-deb
 lutris-git
+ly-git
+lynxfetch
 lyrebird-git
 lyx
 mailspring-deb
@@ -564,6 +569,7 @@ qtile-extras-git
 qtile-git
 quarto-deb
 quintom-cursor-theme-git
+r2modman-deb
 rambox-app
 rambox-deb
 raspi-config-deb
@@ -683,8 +689,6 @@ tre-git
 treefetch-bin
 truckersmp-cli
 ttf-fira-sans
-tuner
-tuner-git
 tutanota-app
 typora-deb
 u-boot-mobian-deb

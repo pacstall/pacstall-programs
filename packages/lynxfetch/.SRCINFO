@@ -1,0 +1,12 @@
+pkgbase = lynxfetch
+	pkgver = 1.0.6
+	pkgdesc = Super fast, versatile, and customizable command-line fetcher
+	arch = amd64
+	makedepends = libdbus-1-dev
+	makedepends = pkg-config
+	pacdeps = rust-bin
+	maintainer = CELESTIFYX Team <celestifyx@gmail.com>
+	source = https://gitlab.com/lynxfetch/lynxfetch/-/archive/1.0.6/lynxfetch-1.0.6.tar.gz
+	sha512sums = 29ecff0bf5382c5595ae8fee85970ba82d212056151cc304b602a1d4fd726bca4733b2d96dfd36b6d2c61788bf526b6b5b4e4296d28e4791af5cc7153a808629
+
+pkgname = lynxfetch

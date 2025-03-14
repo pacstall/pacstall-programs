@@ -1,13 +1,13 @@
 pkgname="godot-mono-bin"
 repology=("project: godot")
 arch=('amd64' 'arm64')
-pkgver="4.3"
+pkgver="4.4"
 url='https://godotengine.org/'
 source=(
-  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/org.godotengine.Godot.desktop"
-  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/org.godotengine.Godot.xml"
-  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/icon.svg"
-  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/master/misc/dist/linux/godot.6"
+  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/${pkgver}/misc/dist/linux/org.godotengine.Godot.desktop"
+  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/${pkgver}/misc/dist/linux/org.godotengine.Godot.xml"
+  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/${pkgver}/icon.svg"
+  "https://raw.githubusercontent.com/godotengine/godot/refs/heads/${pkgver}/misc/dist/linux/godot.6"
   "desktop.patch"
 )
 source_amd64=("@godot-mono::https://github.com/godotengine/godot/releases/download/${pkgver}-stable/Godot_v${pkgver}-stable_mono_linux_x86_64.zip")
@@ -19,8 +19,8 @@ sha256sums=(
   'SKIP'
   'SKIP'
 )
-sha256sums_amd64=("ecdf3cd5a6004a6568c199581d58ba685a9905926e51677906b76fbdd9cad351")
-sha256sums_arm64=("1ae242eb7dc30c281efef3f8a518580c9c997eb494a0b978d9504206a3f890c4")
+sha256sums_amd64=("c54537ce6107f5996dbd58b38dbff8a8dd44016720ad4e5b58b1e5034ce54393")
+sha256sums_arm64=("f0ffda9dd432b964fb71de5bcc2fe8702bcef647eec3d99e1dad8f3f8bd6ce18")
 conflicts=("godot-bin" "godot-git" "godot-mono-git")
 gives="godot-mono"
 pkgdesc="Multi-platform 2D and 3D game engine"
