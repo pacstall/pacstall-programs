@@ -1,13 +1,13 @@
 pkgbase = ferium-bin
 	gives = ferium
-	pkgver = 4.7.0
+	pkgver = 4.7.1
 	pkgdesc = Fast and multi-source CLI program for managing Minecraft mods
 	arch = amd64
 	breaks = ferium
 	replaces = ferium-git
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: ferium
-	source = @ferium-bin~4.7.0::https://github.com/gorilla-devs/ferium/releases/download/v4.7.0/ferium-linux-nogui.zip
-	sha256sums = d38db96b4352493d1b2c58413cea3765a654177e79856c7f086dc60d21e97ac6
+	source = https://github.com/gorilla-devs/ferium/releases/download/v4.7.1/ferium-linux-nogui.zip
+	sha256sums = 8d4a357c6eaf05bc7804d1916fe597b58f10d57fe16443b9b767776e99049d14
 
 pkgname = ferium-bin
