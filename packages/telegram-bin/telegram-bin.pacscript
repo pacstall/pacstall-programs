@@ -27,7 +27,7 @@ sha256sums=(
   "731431e47a5bc91c697d25c3a54fe7ba004752f5b66e0f282c47588ff7a314e6"
   "3fb1400c7dc9bbc3b5cb3ffedcbf4a9b09c53e28b57a7ff33a8a6b9048864090"
   "e297771c75bd2f81d637a3234f83568be62092f67d16946be23895fa92fa7119"
-  "55a2bce03ba01dd4ab942a48bfe646a3fabc846f95282f764d71cdce01da70ad"
+  "8df3e99429bbd75407cefe6da6fc730ae49e29b4aa93c2fe6b0522918cb02bc8"
 )
 repology=("project: telegram-desktop")
 maintainer=("Bahar KURT <kurtbahartr@gmail.com>")
