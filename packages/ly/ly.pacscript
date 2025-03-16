@@ -1,11 +1,10 @@
-pkgname=("ly")
-repology=("project: ly")
+pkgname="ly"
+repology=("project: ${pkgname}")
 arch=('any')
-pkgver="1.0.2"
-url='https://github.com/fairyglade/ly'
-gives="ly"
+pkgver="1.0.3"
+url='https://codeberg.org/AnErrupTion/ly'
 source=(
-  "${gives}::https://github.com/fairyglade/ly/archive/refs/tags/v${pkgver}.tar.gz"
+  "${pkgname}::https://codeberg.org/AnErrupTion/ly/archive/v${pkgver}.tar.gz"
   "config_dir-fix.patch"
 )
 sha256sums=(
@@ -15,7 +14,7 @@ sha256sums=(
 depends=("systemd")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
-conflicts=("${gives}-git")
+conflicts=("${pkgname}-git")
 replaces=("lightdm" "sddm")
 pkgdesc="TUI display manager"
 priority='required'
