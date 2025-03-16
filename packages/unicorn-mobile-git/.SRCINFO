@@ -1,7 +1,7 @@
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
 	pkgver = 0.0.1
-	pkgrel = 8
+	pkgrel = 3
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
 	arch = all
@@ -26,7 +26,7 @@ pkgbase = unicorn-mobile-git
 	depends = tumbler
 	depends = tumbler-plugins-extra
 	depends = ffmpegthumbnailer
-	depends = bluez-firmware
+	depends = bluez-firmware | linux-firmware-raspi
 	depends = xserver-xorg-input-multitouch
 	depends = xserver-xorg-input-synaptics
 	depends = ukui-touchpadserver
@@ -40,11 +40,11 @@ pkgbase = unicorn-mobile-git
 	pacdeps = cortile
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
-	pacdeps = appmenu-registrar-backport
 	pacdeps = xfce4-dynamic-workspaces-plugin-git
 	replaces = unicorn-desktop
 	replaces = unicorn-desktop-git
 	incompatible = debian:*
+	backup = etc/X11/xorg.conf.d/50-synaptics.conf
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/unicorn.git#branch=mobile
 

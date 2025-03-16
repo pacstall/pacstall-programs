@@ -1,6 +1,6 @@
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.13.0-061300rc1
-	pkgver = 6.13~rc1
+	gives = linux-headers-6.14.0-061400rc3
+	pkgver = 6.14~rc3
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -8,7 +8,7 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13-rc1/amd64/linux-headers-6.13.0-061300rc1_6.13.0-061300rc1.202412012327_all.deb
-	sha256sums = eefb234f6f7c434961232db82050496ed38891b7856beacbf6889aa56b6ec6dc
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/amd64/linux-headers-6.14.0-061400rc3_6.14.0-061400rc3.202502181422_all.deb
+	sha256sums = a4b1b1d9af3a23ca1b35a38abb2c2726a07761188b6d7a8fcebc5340f286b688
 
 pkgname = linux-headers-deb

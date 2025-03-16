@@ -1,0 +1,13 @@
+pkgname="figma-linux-deb"
+gives="figma-linux"
+repology=("project: ${gives}")
+arch=('amd64' 'arm64')
+pkgver="0.11.5"
+url='https://github.com/Figma-Linux/figma-linux'
+source_amd64=("https://github.com/Figma-Linux/figma-linux/releases/download/v${pkgver}/figma-linux_${pkgver}_linux_amd64.deb")
+source_arm64=("https://github.com/Figma-Linux/figma-linux/releases/download/v${pkgver}/figma-linux_${pkgver}_linux_arm64.deb")
+sha256sums_amd64=("ea515e89e7258b2b9376750209b2e9a105a2bb993738f1f16fe545d7b1ad111a")
+sha256sums_arm64=("32475046069b95857d44a07d6ec442beb7765d020ad55a245bd71b7c08a4c8f3")
+pkgdesc="Unofficial Electron-based Figma desktop app for Linux"
+maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
+license=('GPL-2.0-only')

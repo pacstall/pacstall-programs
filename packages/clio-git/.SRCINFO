@@ -1,0 +1,13 @@
+pkgbase = clio-git
+	gives = clio
+	pkgver = 1.2.0
+	pkgdesc = A command-line historian that delivers curated facts about Unix and Linux history
+	url = https://github.com/alishyyy/clio
+	arch = all
+	license = MIT
+	maintainer = Alisha <alishyy@proton.me>
+	repology = project: clio
+	source = git+https://github.com/alishyyy/clio.git
+	sha256sums = SKIP
+
+pkgname = clio-git

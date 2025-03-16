@@ -18,8 +18,6 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 # =================================================
 #
 ################################################################################
-CHECK=            # Run tests. May fail, this is developement after all.
-
 CLANG=            # Use clang.
 
 GOLD=             # Use the gold linker.
@@ -73,16 +71,16 @@ NOGZ="YES"        # Don't compress .el files.
 
 pkgname="emacs"
 arch=("any")
-pkgver="28.2"
+pkgver="30.1"
 source=("@${pkgname}~${pkgver}::http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
-makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev")
-depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev gpm")
+makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev" "libtree-sitter-dev")
+depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev" "gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 gives="${pkgname}"
 breaks=("${pkgname}-git" "${pkgname}-nox")
 replaces=("${pkgname}-git" "${pkgname}-nox")
-sha256sums=("ee21182233ef3232dc97b486af2d86e14042dbb65bbc535df562c3a858232488")
+sha256sums=("6ccac1ae76e6af93c6de1df175e8eb406767c23da3dd2a16aa67e3124a6f138f")
 repology=("project: emacs")
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then
@@ -116,9 +114,9 @@ fi
 
 if [[ ${JIT} == "YES" ]]; then
   if [[ ${CLI} == "YES" ]]; then
-    depends_nox+=("libgccjit0" "libgccjit-10-dev")
+    depends_nox+=("libgccjit0" "libgccjit-12-dev | libgccjit-11-dev")
   else
-    depends+=("libgccjit0" "libgccjit-10-dev")
+    depends+=("libgccjit0" "libgccjit-12-dev | libgccjit-11-dev")
   fi
 fi
 
@@ -136,7 +134,7 @@ elif [[ ${GTK3} == "YES" ]]; then
 fi
 
 if [[ ${CLI} != "YES" ]]; then
-  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff5")
+  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff6 | libtiff5")
 elif [[ ${CLI} == "YES" ]]; then
   depends+=("")
 fi
@@ -177,9 +175,6 @@ fi
 prepare() {
   cd "${pkgname}~${pkgver}"
   [[ -x configure ]] || (./autogen.sh git && ./autogen.sh autoconf)
-  if [[ ${CHECK} == "YES" ]]; then
-    make -j"${NCPU}" check
-  fi
 }
 
 build() {
@@ -209,7 +204,7 @@ build() {
   fi
 
   if [[ ${JIT} == "YES" ]]; then
-    _conf+=("--with-native-compilation")
+    _conf+=("--with-native-compilation=aot")
   fi
 
   if [[ ${XI2} == "YES" ]]; then
@@ -297,12 +292,12 @@ package() {
   if [[ ${DOCS_PDF} == "YES" ]]; then make -j"${NCPU}" DESTDIR="${pkgdir}" install-pdf; fi
 
   # fix user/root permissions on usr/local/share files
+  mkdir -p "${pkgdir}/usr/share/emacs/"
   find "${pkgdir}/usr/share/emacs/" -print0 | xargs -0 chown root:root
 
   # fix permssions on /var/games
   mkdir -p "${pkgdir}/var/games/emacs"
   chmod 775 "${pkgdir}/var/games"
   chmod 775 "${pkgdir}/var/games/emacs"
-  chown -R root:games "${pkgdir}/var/games"
 }
 # vim:set ft=sh ts=2 sw=2 et:

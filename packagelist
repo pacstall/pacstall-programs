@@ -1,4 +1,6 @@
 1password-cli-bin
+86box-app
+abdownloadmanager
 adapta-gtk-theme-git
 adw-gtk-theme
 adw-gtk3
@@ -24,6 +26,7 @@ arduino-cli-bin
 arduino-ide-bin
 asdf-vm
 aseprite
+audiorelay-bin
 audiorelay-deb
 awesome-git
 aws-cli-v2-bin
@@ -64,6 +67,7 @@ chwp-deb
 cider-deb
 circle-flags-svg-deb
 clib
+clio-git
 clipboard-bin
 cloudflare-warp-deb
 cmake-data-deb
@@ -75,6 +79,7 @@ coreutils-single
 cortile
 cortile-bin
 couture
+cromite-bin
 cutefish-calculator-git
 cutefish-core-git
 cutefish-dock-git
@@ -145,8 +150,10 @@ feroxbuster-bin
 ffmpeg4.4
 ffnvcodec-headers
 ffsend-bin
+figma-linux-deb
 firefox-arm64-deb
 firefox-bin
+firefox-deb
 firefox-developer-edition-bin
 firefox-nightly-bin
 firefox-nightly-deb
@@ -230,6 +237,7 @@ honkers-launcher-bin
 htop
 httptoolkit-deb
 hwinfo-git
+hydralauncher-deb
 hyfetch-git
 hyper-deb
 hyperfine-bin
@@ -271,6 +279,7 @@ kxstudio-repos-deb
 lagrange
 latte-dock-git
 lazarus-project-deb
+lazydocker-bin
 lazygit
 lbry-deb
 legcord-deb
@@ -331,6 +340,8 @@ lunarclient-app
 lutris-deb
 lutris-git
 ly
+ly-git
+lynxfetch
 lyrebird-git
 lyx
 mailspring-deb
@@ -362,7 +373,6 @@ mobile-usb-networking-deb
 modprobed-db
 moka-icon-theme
 mold-bin
-ms-teams-deb
 mullvad-vpn-beta-deb
 mullvad-vpn-deb
 muse-hub-deb
@@ -495,7 +505,9 @@ p3x-onenote-app
 pacget-git
 paconvert-git
 pacstall
+pacstall-docker-builder-git
 pacstall-gui-git
+pacstall-mime-git
 pacstall-qa-git
 pacup
 pacup-git
@@ -510,6 +522,8 @@ pcsx2-app
 pdf-mix-tool-git
 pdfmm-git
 pfetch-bin
+pgadmin4-desktop-deb
+pgadmin4-server-deb
 pgmigrate
 picom
 pipes.sh-bin
@@ -556,6 +570,8 @@ qtile-extras-git
 qtile-git
 quarto-deb
 quintom-cursor-theme-git
+r2modman-deb
+rambox-app
 rambox-deb
 raspi-config-deb
 realvnc-vnc-viewer-deb
@@ -615,6 +631,7 @@ slop-git
 smartgit
 smplayer-deb
 snapper-rollback-git
+soar
 softmaker-freeoffice-2024-deb
 softmaker-office-2024-deb
 softmaker-office-nx-deb
@@ -623,6 +640,7 @@ soundux
 spacecadetpinball-git
 spot-client-git
 spotify-client-deb
+sqlitebrowser
 st-distrotube-git
 st-lukesmith-git
 starship-bin
@@ -673,8 +691,6 @@ tre-git
 treefetch-bin
 truckersmp-cli
 ttf-fira-sans
-tuner
-tuner-git
 tutanota-app
 typora-deb
 u-boot-mobian-deb
@@ -690,13 +706,16 @@ unicorn-mobile-git
 universal-ctags-git
 upscayl-app
 uwufetch
+vala-panel-appmenu-xfce4-git
 vega-strike-engine-git
 vega-strike-git
 ventoy-bin
 veracrypt-deb
 vesktop-deb
+vinegar-git
 viper4linux
 virtualbox-deb
+virtualbox-guest-iso
 vivaldi-deb
 vivarium
 vkroots-git
@@ -755,13 +774,11 @@ yt-dlp
 zap
 zed-editor-preview-bin
 zed-editor-stable-bin
-zen-browser-aarch64-bin
 zen-browser-bin
-zen-browser-generic-bin
-zen-browser-specific-bin
 zentile-bin
 zettlr-deb
 zig-bin
+zinit
 zoho-notebook-deb
 zoom-deb
 zotero

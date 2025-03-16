@@ -1,0 +1,14 @@
+pkgname="pgadmin4-desktop-deb"
+repology=("project: pgadmin4-desktop")
+arch=('amd64')
+gives="pgadmin4-desktop"
+pkgver="9.0"
+source=("https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_${pkgver}_amd64.deb")
+source_noble=("https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_${pkgver}_amd64.deb")
+makedepends=("apparmor-profiles")
+pacdeps=("pgadmin4-server-deb")
+pkgdesc="Desktop user interface for pgAdmin"
+sha256sums=("5c8ddca052b583dae9a417f9f36d84136f6cfffc9085542364d2e0f058f7a04c")
+sha256sums_noble=("380392eab554fc7d52928d3849cacd26830b4fecc721a8d47d1704af41f4c41b")
+maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
+compatible=("ubuntu:noble" "ubuntu:oracular" "ubuntu:devel")
