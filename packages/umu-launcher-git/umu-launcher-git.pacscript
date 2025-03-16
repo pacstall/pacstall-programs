@@ -3,7 +3,10 @@ repology=("project: umu-launcher")
 arch=('all')
 pkgver="1.1.4"
 url='https://github.com/Open-Wine-Components/umu-launcher'
-source=("https://github.com/Open-Wine-Components/umu-launcher.git")
+source=(
+  "https://github.com/Open-Wine-Components/umu-launcher.git"
+  "Makefile.patch"
+)
 depends=(
   "python3"
   "python3-xlib>=0.33"
@@ -32,6 +35,8 @@ external_connection=true
 prepare() {
   cd "${gives}"
   ./configure.sh --prefix=/usr --use-system-pyzstd --use-system-urllib
+
+  patch Makefile.in "${srcdir}"/Makefile.patch
 }
 
 build() {

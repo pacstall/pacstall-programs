@@ -12028,6 +12028,7 @@ pkgbase = umu-launcher-git
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: umu-launcher
 	source = https://github.com/Open-Wine-Components/umu-launcher.git
+	source = Makefile.patch
 
 pkgname = umu-launcher-git
 ---
