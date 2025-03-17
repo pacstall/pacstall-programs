@@ -1,10 +1,10 @@
 pkgname="opentabletdriver-deb"
 repology=("project: opentabletdriver")
 arch=('amd64')
-pkgver="0.6.5.0"
+pkgver="0.6.5.1"
 url='https://github.com/OpenTabletDriver/OpenTabletDriver'
 source=("https://github.com/OpenTabletDriver/OpenTabletDriver/releases/download/v${pkgver}/OpenTabletDriver.deb")
-sha256sums=("774c20b3ba2d880ffc90b2e6508b09a4a2ec6801af7b2a7de11334bf49756ec2")
+sha256sums=("3b33d297e8b188cc8c85574826332fdc5769c701ce59017012241f70a882b163")
 gives="opentabletdriver"
 pkgdesc="Open source, cross-platform, user-mode tablet driver"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
