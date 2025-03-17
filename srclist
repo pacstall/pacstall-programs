@@ -6727,9 +6727,7 @@ pkgbase = lm-studio-app
 	replaces = lm-studio
 	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
 	source = https://installers.lmstudio.ai/linux/x64/0.3.13-2/LM-Studio-0.3.13-2-x64.AppImage
-	source = https://lmstudio.ai/_next/static/media/android-chrome-192x192.3a60873f.png
 	sha256sums = 5a05217e4f0588e22e6aa9c4d61d3eacdc4f11023179d17e0f48357ec3294908
-	sha256sums = f0a738b118a2b80fbcbd010968ca86ba81cc175c8654e62994e85d19dd08235e
 
 pkgname = lm-studio-app
 ---
