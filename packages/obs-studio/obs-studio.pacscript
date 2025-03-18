@@ -10,6 +10,26 @@ sha256sums=(
   'SKIP'
   "fab66dfc9cfd2e26fb87798f855aef30c2004edc8e19570d37af555644ae1655"
 )
+depends=(
+  "libasound2t64>= 1.0.17" "libatk-bridge2.0-0t64>=2.5.3" "libatk1.0-0t64>=2.2.0" "libatspi2.0-0t64>=2.9.90" "libavcodec61>=7:7.0"
+  "libavdevice61>=7:7.0" "libavformat61>=7:7.0" "libavutil59>=7:7.0" "libc6>=2.38" "libcups2t64>=1.7.0"
+  "libcurl4t64>=7.16.2" "libdbus-1-3>=1.9.14" "libdrm2>=2.4.75" "libegl1" "libexpat1>=2.1~beta3"
+  "libfdk-aac2>=2.0.1" "libfontconfig1>=2.12.6" "libfreetype6>=2.2.1" "libgbm1>=17.1.0~rc2" "libgcc-s1>=3.3.1"
+  "libglib2.0-0t64>=2.40.0" "libglx0" "libjack-jackd2-0>=1.9.10+20150825 | libjack-0.125" "libjansson4>=2.14" "libluajit-5.1-2>=2.0.4 | libluajit-5.1-2>=2.1.0+openresty"
+  "libmbedcrypto7t64>=2.28.0" "libmbedtls14t64>=2.28.0" "libmbedx509-1t64>=2.28.0" "libnspr4>=2:4.9-2~" "libnss3>=2:3.31"
+  "libopengl0" "libpci3>=1:3.13.0" "libpipewire-0.3-0t64>=0.3.6" "libpulse0>=0.99.1" #"libpython3.12t64>=3.12.1"
+  "libqrcodegencpp1>=1.2.1" "libqt6core6t64>=6.6.0" "libqt6dbus6>=6.3.0" "libqt6gui6>=6.4.0" "libqt6network6>=6.1.2"
+  "libqt6svg6>=6.6.0" "libqt6widgets6>=6.3.0" "libqt6xml6>=6.6.0" "librist4>=0.2.6+dfsg" "libspeexdsp1>=1.2.1"
+  "libsrt1.5-openssl>=1.5.3" "libstdc++6>=14" "libswresample5>=7:7.0" "libswscale8>=7:7.0" "libudev1>=183"
+  "libuuid1>=2.16" "libv4l-0t64>=0.5.0" "libva-drm2>= 1.1.0" "libva2>=2.2.0" "libvpl2>=1:2.13.0"
+  "libwayland-client0>=1.20.0" "libwayland-egl1>=1.15.0" "libx11-6>=2:1.4.99.1" "libx11-xcb1>=2:1.8.7"
+  "libx264-164>=2:0.164.3108+git31e19f9" "libxcb-composite0" "libxcb-randr0>=1.12" "libxcb-shm0" "libxcb-xfixes0"
+  "libxcb-xinerama0" "libxcb1>=1.9.2" "libxcomposite1>=1:0.4.5" "libxdamage1>=1:1.1" "libxext6"
+  "libxfixes3" "libxkbcommon0>=0.5.0" "libxrandr2" "zlib1g>=1:1.1.4" "qt6-wayland" "qt6-qpa-plugins"
+  "libmbedtls21" "libmbedx509-7"
+)
+depends_oracular=("libpython3.12t64>=3.12.1")
+depends_noble=("libpython3.12t64>=3.12.1")
 makedepends=(
   # System dependencies
   "cmake" "ninja-build" "pkg-config" "clang" "clang-format"
