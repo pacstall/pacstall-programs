@@ -1,0 +1,19 @@
+pkgbase = dpp
+	pkgver = 10.1.1
+	pkgrel = 1
+	pkgdesc = Lightweight and Scalable C++ Discord API Bot Library
+	url = https://dpp.dev/
+	arch = amd64
+	arch = arm64
+	arch = i386
+	depends = nlohmann-json3-dev
+	license = Apache-2.0
+	maintainer = japandotorg <japandotorg@pm.me> [https://github.com/japandotorg]
+	source_amd64 = https://github.com/brainboxdotcc/DPP/releases/download/v10.1.1/libdpp-10.1.1-linux-x64.deb
+	sha256sums_amd64 = bc3e6fc2ddd525fc05bf4557f09e0504b776a15acaa89daadb21469b4e8bdaa5
+	source_arm64 = https://github.com/brainboxdotcc/DPP/releases/download/v10.1.1/libdpp-10.1.1-linux-rpi-arm64.deb
+	sha256sums_arm64 = f59a5c229d68d82dd8888c399db71456166947cce2c4261abc7d52e083879827
+	source_i386 = https://github.com/brainboxdotcc/DPP/releases/download/v10.1.1/libdpp-10.1.1-linux-i386.deb
+	sha256sums_i386 = 41748112b7ec4eb8baa1dfb0f93dbcf2b911189da8f43f026da2466210dec0b7
+
+pkgname = dpp
