@@ -42,7 +42,7 @@ post_install() {
     local GREEN="\033[0;32m"
     local EMPTY="\033[0;37m"
 
-    case "$color_name" in
+    case "${color_name}" in
       red)
         echo -e "${RED}${echo_text}${EMPTY}"
         ;;
