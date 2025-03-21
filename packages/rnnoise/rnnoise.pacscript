@@ -16,7 +16,7 @@ prepare() {
 
 build() {
   cd "${pkgname}-${pkgver}"
-  make
+  make -j"${NCPU}"
 }
 
 package() {
