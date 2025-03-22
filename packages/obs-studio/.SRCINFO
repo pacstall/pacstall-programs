@@ -28,8 +28,8 @@ pkgbase = obs-studio
 	depends = libjansson4>=2.14
 	depends = libluajit-5.1-2>=2.0.4 | libluajit-5.1-2>=2.1.0+openresty
 	depends = libmbedcrypto7t64>=2.28.0
-	depends = libmbedtls14t64>=2.28.0
-	depends = libmbedx509-1t64>=2.28.0
+	depends = libmbedtls14t64>=2.28 | libmbedtls21
+	depends = libmbedx509-7 | libmbedx509-1t64>=2.28
 	depends = libnspr4>=2:4.9-2~
 	depends = libnss3>=2:3.31
 	depends = libopengl0
@@ -76,8 +76,6 @@ pkgbase = obs-studio
 	depends = zlib1g>=1:1.1.4
 	depends = qt6-wayland
 	depends = qt6-qpa-plugins
-	depends = libmbedtls21
-	depends = libmbedx509-7
 	makedepends = cmake
 	makedepends = ninja-build
 	makedepends = pkg-config
