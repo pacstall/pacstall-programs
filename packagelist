@@ -112,6 +112,7 @@ docker-buildx-plugin-bin
 docker-compose-plugin-bin
 dolphin-emu-git
 dotdrop
+dpp
 drawio-desktop-deb
 dremio-bin
 dropbox-deb
