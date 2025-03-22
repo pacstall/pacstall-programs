@@ -16,8 +16,8 @@ depends=(
   "libcurl4t64>=7.16.2" "libdbus-1-3>=1.9.14" "libdrm2>=2.4.75" "libegl1" "libexpat1>=2.1~beta3"
   "libfdk-aac2>=2.0.1" "libfontconfig1>=2.12.6" "libfreetype6>=2.2.1" "libgbm1>=17.1.0~rc2" "libgcc-s1>=3.3.1"
   "libglib2.0-0t64>=2.40.0" "libglx0" "libjack-jackd2-0>=1.9.10+20150825 | libjack-0.125" "libjansson4>=2.14" "libluajit-5.1-2>=2.0.4 | libluajit-5.1-2>=2.1.0+openresty"
-  "libmbedcrypto7t64>=2.28" "libmbedtls14t64>=2.28 | libmbedtls21" "libmbedx509-7 | libmbedx509-1t64>=2.28" "libnspr4>=2:4.9-2~" "libnss3>=2:3.31"
-  "libopengl0" "libpci3>=1:3.7.0" "libpipewire-0.3-0t64>=0.3.6" "libpulse0>=0.99.1" #"libpython3.12t64>=3.12.1"
+  "libmbedcrypto16 | libmbedcrypto7t64>=2.28" "libmbedtls14t64>=2.28 | libmbedtls21" "libmbedx509-7 | libmbedx509-1t64>=2.28" "libnspr4>=2:4.9-2~" "libnss3>=2:3.31"
+  "libopengl0" "libpci3>=1:3.7.0" "libpipewire-0.3-0t64>=0.3.6" "libpulse0>=0.99.1" "libpython3.13 | libpython3.12t64>=3.12.1"
   "libqrcodegencpp1>=1.2.1" "libqt6core6t64>=6.4.2" "libqt6dbus6>=6.3.0" "libqt6gui6>=6.4.0" "libqt6network6>=6.1.2"
   "libqt6svg6>=6.2.4" "libqt6widgets6>=6.3.0" "libqt6xml6>=6.2.4" "librist4>=0.2.6+dfsg" "libspeexdsp1>=1.2.1"
   "libsrt1.5-openssl>=1.5.3" "libstdc++6>=14" "libswresample5>=7:7.0 | libswresample4 | libswresample3" "libswscale8>=7:7.0 | libswscale7 | libswscale5" "libudev1>=183"
@@ -27,8 +27,6 @@ depends=(
   "libxcb-xinerama0" "libxcb1>=1.9.2" "libxcomposite1>=1:0.4.5" "libxdamage1>=1:1.1" "libxext6"
   "libxfixes3" "libxkbcommon0>=0.5.0" "libxrandr2" "zlib1g>=1:1.1.4" "qt6-wayland" "qt6-qpa-plugins"
 )
-depends_oracular=("libpython3.12t64>=3.12.1")
-depends_noble=("libpython3.12t64>=3.12.1")
 makedepends=(
   # System dependencies
   "cmake" "ninja-build" "pkg-config" "clang" "clang-format"
