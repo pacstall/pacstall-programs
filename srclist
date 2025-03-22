@@ -933,13 +933,13 @@ pkgname = bitwig-studio-4-deb
 ---
 pkgbase = bitwig-studio-deb
 	gives = bitwig-studio
-	pkgver = 5.2.5
+	pkgver = 5.3.2
 	pkgdesc = Digital audio workstation for music production, remixing and live performance
 	arch = amd64
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: bitwig-studio
-	source = https://www.bitwig.com/dl/Bitwig%20Studio/5.2.5/installer_linux/bitwig-studio-5.2.5.deb
-	sha256sums = c7a530ea8f9ade702b326d44bf9cad1ad2c3190debf3bd96aa50b4db6cd3f079
+	source = https://www.bitwig.com/dl/Bitwig%20Studio/5.3.2/installer_linux/bitwig-studio-5.3.2.deb
+	sha256sums = 40ab7f9b2aa6a1555f7cdc247c6700a249c0899bb70feb3b77694982d5a9be4e
 
 pkgname = bitwig-studio-deb
 ---
@@ -2004,15 +2004,15 @@ pkgname = directx-headers-git
 ---
 pkgbase = discord-canary-deb
 	gives = discord-canary
-	pkgver = 0.0.575
+	pkgver = 0.0.611
 	pkgdesc = Chat for Communities and Friends Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com
 	arch = amd64
 	conflicts = discord-canary
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: discord-canary
-	source = https://canary.dl2.discordapp.net/apps/linux/0.0.575/discord-canary-0.0.575.deb
-	sha256sums = c19203fccd52c88798ae7e0b492ac91846da3447e2bc4ae2596f806836930ba1
+	source = https://canary.dl2.discordapp.net/apps/linux/0.0.611/discord-canary-0.0.611.deb
+	sha256sums = eb9956abe3d2acfad1ca8d5e5bc542ed80b096682c460873a64f03bb11571002
 
 pkgname = discord-canary-deb
 ---
@@ -2063,13 +2063,13 @@ pkgname = discord-deb
 ---
 pkgbase = discord-ptb-deb
 	gives = discord-ptb
-	pkgver = 0.0.133
+	pkgver = 0.0.135
 	pkgdesc = Chat for Communities and Friends - Public Test Build
 	url = https://discord.com/
 	arch = amd64
 	repology = project: discord-ptb
-	source = https://dl-ptb.discordapp.net/apps/linux/0.0.133/discord-ptb-0.0.133.deb
-	sha256sums = 1cbd3cc5520bc6e966865f1fa982808befc7746d1153b01591a34c69295fe390
+	source = https://dl-ptb.discordapp.net/apps/linux/0.0.135/discord-ptb-0.0.135.deb
+	sha256sums = bc69b0be335ddd6b5f1cb587062c910c3766cc7d88f611ddd8dc9b99f3983704
 
 pkgname = discord-ptb-deb
 ---
@@ -2915,15 +2915,15 @@ pkgname = ferdium-deb
 ---
 pkgbase = ferium-bin
 	gives = ferium
-	pkgver = 4.7.0
+	pkgver = 4.7.1
 	pkgdesc = Fast and multi-source CLI program for managing Minecraft mods
 	arch = amd64
 	breaks = ferium
 	replaces = ferium-git
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: ferium
-	source = @ferium-bin~4.7.0::https://github.com/gorilla-devs/ferium/releases/download/v4.7.0/ferium-linux-nogui.zip
-	sha256sums = d38db96b4352493d1b2c58413cea3765a654177e79856c7f086dc60d21e97ac6
+	source = https://github.com/gorilla-devs/ferium/releases/download/v4.7.1/ferium-linux-nogui.zip
+	sha256sums = 8d4a357c6eaf05bc7804d1916fe597b58f10d57fe16443b9b767776e99049d14
 
 pkgname = ferium-bin
 ---
@@ -3036,7 +3036,7 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 136.0.1
+	pkgver = 136.0.2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3046,10 +3046,10 @@ pkgbase = firefox-bin
 	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/136.0.1/linux-x86_64/en-US/firefox-136.0.1.tar.xz
-	sha256sums_amd64 = 326c3dadd05153a6825145c9200f48021e039593cd6d6c434abee326e6096835
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/136.0.1/linux-aarch64/en-US/firefox-136.0.1.tar.xz
-	sha256sums_arm64 = 030a29c8e48b84a9f87fece8ae9f64c0770aa8ce25305d1b056db7b08a59e65b
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/136.0.2/linux-x86_64/en-US/firefox-136.0.2.tar.xz
+	sha256sums_amd64 = 7ea3882e814669784f0960e4d6bb50a0ac88997a1d17fb125d0f411961ad763a
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/136.0.2/linux-aarch64/en-US/firefox-136.0.2.tar.xz
+	sha256sums_arm64 = f5d1fdf3234a44b0ff03e58a845a760d11a54e89c94c285468be4553bce1cd4e
 
 pkgname = firefox-bin
 ---
@@ -3151,17 +3151,17 @@ pkgname = fishui-git
 ---
 pkgbase = floorp-bin
 	gives = floorp
-	pkgver = 11.20.0
+	pkgver = 11.24.0
 	pkgdesc = Firefox-based Browser build for keeping the Open, Private and Sustainable Web alive
 	url = https://floorp.app/
 	arch = amd64
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: floorp
-	source_amd64 = floorp::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-x86_64.tar.bz2
-	sha256sums_amd64 = 59e3a67de994bfc8da3038cfb355b249ea67bf13bda8aaff021c459aabffb767
-	source_arm64 = floorp::https://github.com/Floorp-Projects/Floorp/releases/download/v11.20.0/floorp-11.20.0.linux-aarch64.tar.bz2
-	sha256sums_arm64 = cd416460b0b5a8b06ee2c4699110197c8180143e76bce4c119719edfc19c0d00
+	source_amd64 = floorp::https://github.com/Floorp-Projects/Floorp/releases/download/v11.24.0/floorp-11.24.0.linux-x86_64.tar.bz2
+	sha256sums_amd64 = db3935d36f3e8846094a435aca3176be9170869129f208db60d6801ab75575a9
+	source_arm64 = floorp::https://github.com/Floorp-Projects/Floorp/releases/download/v11.24.0/floorp-11.24.0.linux-aarch64.tar.bz2
+	sha256sums_arm64 = 01fd876adbd5dc54a8e0e1dd712b2ab2d956bcd93c3a7a9455a02ad83c5a66ba
 
 pkgname = floorp-bin
 ---
@@ -7773,17 +7773,17 @@ pkgname = nano
 ---
 pkgbase = naps2-deb
 	gives = naps2
-	pkgver = 7.5.3
+	pkgver = 8.1.0
 	pkgdesc = NAPS2 is a document scanning application with a focus on simplicity and ease of use
 	arch = arm64
 	arch = amd64
 	depends = libsane1
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: naps2
-	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v7.5.3/naps2-7.5.3-linux-arm64.deb
-	sha256sums_arm64 = 31cc15ad4cf66fd1faaa7208bbc387351ff7e16c3df30212380094145799842d
-	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v7.5.3/naps2-7.5.3-linux-x64.deb
-	sha256sums_amd64 = fffdc0b5bc2987f9a042eb3f599e118bac68d54705af3333a6ad0cc9eeaef287
+	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v8.1.0/naps2-8.1.0-linux-arm64.deb
+	sha256sums_arm64 = 31c6516b5d81eb5f8e9388884e562f70edbc37ea32f1190f0f88b1044c238e9f
+	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v8.1.0/naps2-8.1.0-linux-x64.deb
+	sha256sums_amd64 = f6dad0739e84334a3fdfe74b530fa64ab4e32514fc54479be0dcfb9b8e118216
 
 pkgname = naps2-deb
 ---
@@ -8614,7 +8614,7 @@ pkgname = nordvpn-deb
 ---
 pkgbase = notesnook-app
 	gives = notesnook
-	pkgver = 3.0.24
+	pkgver = 3.0.30
 	pkgdesc = End-to-end encrypted note taking alternative to Evernote
 	url = https://notesnook.com
 	arch = amd64
@@ -8622,12 +8622,12 @@ pkgbase = notesnook-app
 	license = GPL-3.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: notesnook
-	source = https://raw.githubusercontent.com/streetwriters/notesnook/refs/tags/v3.0.24/resources/icon.png
+	source = https://raw.githubusercontent.com/streetwriters/notesnook/refs/tags/v3.0.30/resources/icon.png
 	sha256sums = SKIP
-	source_amd64 = notesnook-3.0.24.AppImage::https://github.com/streetwriters/notesnook/releases/download/v3.0.24/notesnook_linux_x86_64.AppImage
-	sha256sums_amd64 = 87c9c5f3adc4b095fbba8881f8c2b11c4340e49264d773905f00054c50003cb4
-	source_arm64 = notesnook-3.0.24.AppImage::https://github.com/streetwriters/notesnook/releases/download/v3.0.24/notesnook_linux_arm64.AppImage
-	sha256sums_arm64 = 23e687dd9c92cd2e6f1a5b1bb2bf42bbf2541019bda58447e95d180fe12271b3
+	source_amd64 = notesnook-3.0.30.AppImage::https://github.com/streetwriters/notesnook/releases/download/v3.0.30/notesnook_linux_x86_64.AppImage
+	sha256sums_amd64 = 0b5cec705beba3d5d16781acaab280f0fa4a6255532559bbff370cd4d46e7526
+	source_arm64 = notesnook-3.0.30.AppImage::https://github.com/streetwriters/notesnook/releases/download/v3.0.30/notesnook_linux_arm64.AppImage
+	sha256sums_arm64 = e47b35dd0423a929bbb4e4b78c37f2d002c0da833305dc585a31e88eac58d35f
 
 pkgname = notesnook-app
 ---
@@ -8865,19 +8865,15 @@ pkgname = obs-ndi-deb
 ---
 pkgbase = obs-studio-deb
 	gives = obs-studio
-	pkgver = 31.0.1
+	pkgver = 31.0.2
 	pkgdesc = Free and open source software for live streaming and screen recording
 	arch = amd64
 	compatible = ubuntu:noble
-	compatible = ubuntu:oracular
-	compatible = ubuntu:devel
 	license = GPL-2.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: obs-studio
-	source = https://github.com/obsproject/obs-studio/releases/download/31.0.1/obs-studio_31.0.1-0obsproject1.oracular_amd64.deb
-	sha256sums = 5ee9c4e721acedf943a117f0402b0e75ccdd1fde7bc7b555a23d8d4e1cea139f
-	source_noble = https://github.com/obsproject/obs-studio/releases/download/31.0.1/obs-studio_31.0.1-0obsproject1.noble_amd64.deb
-	sha256sums_noble = 6e3f94becc78d3d2b652deebc97cd09d22d47e5758155ea17b2253464b7ba8b7
+	source = https://github.com/obsproject/obs-studio/releases/download/31.0.2/OBS-Studio-31.0.2-Ubuntu-24.04-x86_64.deb
+	sha256sums = d8a44e2aa53049a88f7f434b329582b918fd6a2d487ca9a47213be0bfc67191a
 
 pkgname = obs-studio-deb
 ---
@@ -9415,7 +9411,7 @@ pkgbase = os-installer-git
 pkgname = os-installer-git
 ---
 pkgbase = osu-lazer-app
-	pkgver = 2025.221.0
+	pkgver = 2025.321.0
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
 	url = https://osu.ppy.sh
 	arch = amd64
@@ -9425,11 +9421,11 @@ pkgbase = osu-lazer-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-app-2025.221.0.AppImage::https://github.com/ppy/osu/releases/download/2025.221.0/osu.AppImage
+	source = osu-lazer-app-2025.321.0.AppImage::https://github.com/ppy/osu/releases/download/2025.321.0/osu.AppImage
 	source = icon.png::https://raw.githubusercontent.com/ppy/osu/master/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = 57a2494a1546138197188f05bc38725ae1d49e523ea7724b5bf34dfaef958a47
+	sha256sums = 98dc68131ff0809d4e526ef2f492dde6f1d2c1f701e3d42328355059968c0c94
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
@@ -9781,37 +9777,49 @@ pkgname = pfetch-bin
 ---
 pkgbase = pgadmin4-desktop-deb
 	gives = pgadmin4-desktop
-	pkgver = 9.0
+	pkgver = 9.1
 	pkgdesc = Desktop user interface for pgAdmin
 	arch = amd64
 	makedepends = apparmor-profiles
 	pacdeps = pgadmin4-server-deb
+	compatible = debian:bookworm
+	compatible = ubuntu:jammy
 	compatible = ubuntu:noble
 	compatible = ubuntu:oracular
 	compatible = ubuntu:devel
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: pgadmin4-desktop
-	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.0_amd64.deb
-	sha256sums = 5c8ddca052b583dae9a417f9f36d84136f6cfffc9085542364d2e0f058f7a04c
-	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.0_amd64.deb
-	sha256sums_noble = 380392eab554fc7d52928d3849cacd26830b4fecc721a8d47d1704af41f4c41b
+	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.1_amd64.deb
+	sha256sums = 46ee5f20de11a9c5609ce1497a913e3056e94a791b41f4890e11a56343a3d765
+	source_jammy = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.1_amd64.deb
+	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.1_amd64.deb
+	source_bookworm = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/bookworm/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.1_amd64.deb
+	sha256sums_jammy = bef0997cc66df5d0a3b67405036195f9a339bc6e5d80dc3ce08e957b57e60286
+	sha256sums_noble = ef27abbd92f27abc6313a3283d0267e4c4e2e351fa63ce586ba3ec42c970ce05
+	sha256sums_bookworm = 86f677f5404acb2f05c18ccd74f5403c3270d79264807ea12687d8a6c979ffec
 
 pkgname = pgadmin4-desktop-deb
 ---
 pkgbase = pgadmin4-server-deb
 	gives = pgadmin4-server
-	pkgver = 9.0
+	pkgver = 9.1
 	pkgdesc = Core server package for pgAdmin
 	arch = amd64
+	compatible = debian:bookworm
+	compatible = ubuntu:jammy
 	compatible = ubuntu:noble
 	compatible = ubuntu:oracular
 	compatible = ubuntu:devel
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: pgadmin4-server
-	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.0_amd64.deb
-	sha256sums = 77d903683c5abd662bbb5cfc59dd21c8a7f7892c068fb1b0bfb6a1a608722a20
-	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.0_amd64.deb
-	sha256sums_noble = 40c18250108c57f6aa73c0498151db8c1ddc05a44244b898bc8cda35c8db1b0f
+	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.1_amd64.deb
+	sha256sums = 92bb880e09a981f3ecdd18e74b414eb3d4f7f4a3b9fcd63522ad31ffd7baf32b
+	source_jammy = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.1_amd64.deb
+	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.1_amd64.deb
+	source_bookworm = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/bookworm/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.1_amd64.deb
+	sha256sums_jammy = 288b8679173902a9ea3b139a7931b15a39fb13bebb429ac6cab327df1ab4d0a7
+	sha256sums_noble = d71e9f04133f8fe79ee64261c3c5081bbd812ebf45a6322891e5ab17c21e2a03
+	sha256sums_bookworm = bf94a53f5c0e8e78cdf51caa4aa4bb143cab86fb015eed94615abb4b41d123c1
 
 pkgname = pgadmin4-server-deb
 ---
@@ -10725,40 +10733,6 @@ pkgbase = qt6pas
 
 pkgname = qt6pas
 ---
-pkgbase = qtile-extras-git
-	gives = qtile-extras
-	pkgver = 0.23.1
-	pkgdesc = A list of mods developed by elParaguayo for Qtile
-	arch = all
-	makedepends = python3-venv
-	makedepends = python3-pip
-	pacdeps = qtile-git
-	maintainer = Ruturajn <nanotiruturaj@gmail.com>
-	source = https://github.com/elParaguayo/qtile-extras.git
-
-pkgname = qtile-extras-git
----
-pkgbase = qtile-git
-	gives = qtile
-	pkgver = 0.22.1
-	pkgdesc = A full-featured, hackable tiling window manager written and configured in Python
-	arch = any
-	depends = python3-cffi
-	depends = xserver-xorg
-	depends = python3-xcffib
-	depends = python3-cairocffi
-	depends = libpangocairo-1.0-0
-	depends = python3-pip
-	depends = python3-dbus
-	depends = libpulse-dev
-	depends = pavucontrol
-	depends = python3-testresources
-	license = MIT
-	maintainer = Ruturajn <nanotiruturaj@gmail.com>
-	source = https://github.com/qtile/qtile.git
-
-pkgname = qtile-git
----
 pkgbase = quarto-deb
 	gives = quarto
 	pkgver = 1.6.39
@@ -11299,6 +11273,18 @@ pkgbase = rio-x11-deb
 	sha256sums = 754ec290a8ec3a3ec130ab4aa5b1ad9d2173620e0d7a228694a91154af9c8c2b
 
 pkgname = rio-x11-deb
+---
+pkgbase = rnnoise
+	pkgver = 0.2
+	pkgdesc = Noise suppression library based on a recurrent neural network
+	arch = amd64
+	conflicts = rnnoise-git
+	license = BSD-3-Clause
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	source = https://github.com/xiph/rnnoise/releases/download/v0.2/rnnoise-0.2.tar.gz
+	sha256sums = 90fce4b00b9ff24c08dbfe31b82ffd43bae383d85c5535676d28b0a2b11c0d37
+
+pkgname = rnnoise
 ---
 pkgbase = rojo-bin
 	gives = rojo
@@ -12136,6 +12122,34 @@ pkgbase = spotify-client-deb
 
 pkgname = spotify-client-deb
 ---
+pkgbase = sqlitebrowser
+	pkgver = 3.13.1
+	pkgdesc = Database Browser for SQLite
+	url = https://sqlitebrowser.org
+	arch = amd64
+	depends = libqt5xml5t64
+	depends = libqscintilla2-qt5-15
+	makedepends = build-essential
+	makedepends = cmake
+	makedepends = libqcustomplot-dev
+	makedepends = libqt5scintilla2-dev
+	makedepends = libsqlcipher-dev
+	makedepends = libsqlite3-dev
+	makedepends = qt5-qmake
+	makedepends = qtbase5-dev
+	makedepends = qtbase5-dev-tools
+	makedepends = qtchooser
+	makedepends = qttools5-dev
+	makedepends = qttools5-dev-tools
+	license = MPL-2.0
+	license = GPL-3.0+
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: sqlitebrowser
+	source = https://github.com/sqlitebrowser/sqlitebrowser/archive/refs/tags/v3.13.1.tar.gz
+	sha256sums = 1044ba67d649cabc459eb887c016f70d6a404ad651390ab33bf7859dc7f1b67b
+
+pkgname = sqlitebrowser
+---
 pkgbase = st-distrotube-git
 	gives = st
 	pkgver = 0.0.1
@@ -12559,8 +12573,7 @@ pkgname = tela-circle-icon-theme
 ---
 pkgbase = telegram-bin
 	gives = telegram
-	pkgver = 5.11.1
-	pkgrel = 2
+	pkgver = 5.12.3
 	pkgdesc = Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed
 	url = https://telegram.org/
 	arch = amd64
@@ -12575,7 +12588,7 @@ pkgbase = telegram-bin
 	source = https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/art/icon128.png
 	source = https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/art/icon256.png
 	source = https://github.com/telegramdesktop/tdesktop/raw/master/Telegram/Resources/art/icon512.png
-	source = @telegram-bin~5.11.1::https://github.com/telegramdesktop/tdesktop/releases/download/v5.11.1/tsetup.5.11.1.tar.xz
+	source = @telegram-bin~5.12.3::https://github.com/telegramdesktop/tdesktop/releases/download/v5.12.3/tsetup.5.12.3.tar.xz
 	sha256sums = f8e35627d29589ea9a1ea8d634855ca153d578503cadb44f0c5d0498c1062135
 	sha256sums = d4cdad0d091c7e47811d8a26d55bbee492e7845e968c522e86f120815477e9eb
 	sha256sums = ea1f36152b143cc2664daef5026656d55be2230ed42d43628e17ef7d2fff718c
@@ -12585,7 +12598,7 @@ pkgbase = telegram-bin
 	sha256sums = 731431e47a5bc91c697d25c3a54fe7ba004752f5b66e0f282c47588ff7a314e6
 	sha256sums = 3fb1400c7dc9bbc3b5cb3ffedcbf4a9b09c53e28b57a7ff33a8a6b9048864090
 	sha256sums = e297771c75bd2f81d637a3234f83568be62092f67d16946be23895fa92fa7119
-	sha256sums = 55a2bce03ba01dd4ab942a48bfe646a3fabc846f95282f764d71cdce01da70ad
+	sha256sums = 8df3e99429bbd75407cefe6da6fc730ae49e29b4aa93c2fe6b0522918cb02bc8
 
 pkgname = telegram-bin
 ---
@@ -14325,8 +14338,8 @@ pkgname = windscribe-beta-gui-deb
 ---
 pkgbase = wine-staging-git
 	gives = wine-staging-git
-	pkgver = 10.0
-	pkgdesc = A compatibility layer for running Windows programs - Staging branch
+	pkgver = 10.3
+	pkgdesc = Compatibility layer for running Windows programs - Staging branch
 	url = https://www.wine-staging.com
 	arch = any
 	depends = libjpeg-turbo8-dev | libjpeg62-turbo-dev
@@ -14434,6 +14447,9 @@ pkgbase = wine-staging-git
 	makedepends = libvulkan-dev:i386
 	makedepends = libx11-dev:i386
 	makedepends = libwayland-dev
+	makedepends = libwayland-dev:i386
+	makedepends = libxkbregistry-dev
+	makedepends = libxkbregistry-dev:i386
 	optdepends = liblcms2-dev: color management
 	optdepends = libcups2-dev: printing support
 	optdepends = libgphoto2-dev: still image support
@@ -14938,7 +14954,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.9.1b
+	pkgver = 1.10.1b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -14973,8 +14989,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.9.1b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 3423a02ac73ae3fea81186bcc7f3d72ba8a513bb7f0b0a2f9a8b891e2fb03018
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.10.1b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 9c1adb97a531e8963480b381b99d0434d91d7592ce9626e53d1c117e9e7419fa
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -14984,8 +15000,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.9.1b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = 8829bffb67a9d125775c2926eda6148f685188df928482bba4eb5c62138e827d
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.10.1b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 60e44ddc8a425cfffc7cff9ebfc7cadbaf89c27c2d05c5ff5922e495add333aa
 
 pkgname = zen-browser-bin
 ---

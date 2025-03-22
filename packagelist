@@ -566,8 +566,6 @@ qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qt6-style-kvantum
 qt6pas
-qtile-extras-git
-qtile-git
 quarto-deb
 quintom-cursor-theme-git
 r2modman-deb
@@ -599,6 +597,7 @@ rhino-xfwm4-theme-git
 rider-bin
 rio-wayland-deb
 rio-x11-deb
+rnnoise
 rojo-bin
 rosary-deb
 rpcs3-app
@@ -640,6 +639,7 @@ soundux
 spacecadetpinball-git
 spot-client-git
 spotify-client-deb
+sqlitebrowser
 st-distrotube-git
 st-lukesmith-git
 starship-bin
