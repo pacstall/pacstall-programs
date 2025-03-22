@@ -477,6 +477,7 @@ obs-backgroundremoval
 obs-backgroundremoval-deb
 obs-backgroundremoval-git
 obs-ndi-deb
+obs-studio
 obs-studio-deb
 obsidian-deb
 oh-my-posh-git
