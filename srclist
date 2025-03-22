@@ -7773,17 +7773,17 @@ pkgname = nano
 ---
 pkgbase = naps2-deb
 	gives = naps2
-	pkgver = 8.1.0
+	pkgver = 8.1.1
 	pkgdesc = NAPS2 is a document scanning application with a focus on simplicity and ease of use
 	arch = arm64
 	arch = amd64
 	depends = libsane1
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: naps2
-	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v8.1.0/naps2-8.1.0-linux-arm64.deb
-	sha256sums_arm64 = 31c6516b5d81eb5f8e9388884e562f70edbc37ea32f1190f0f88b1044c238e9f
-	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v8.1.0/naps2-8.1.0-linux-x64.deb
-	sha256sums_amd64 = f6dad0739e84334a3fdfe74b530fa64ab4e32514fc54479be0dcfb9b8e118216
+	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v8.1.1/naps2-8.1.1-linux-arm64.deb
+	sha256sums_arm64 = 7a980fe110a02fa2093d526e3b250f9b7d39502dfbcfc34f01d2f5b537067611
+	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v8.1.1/naps2-8.1.1-linux-x64.deb
+	sha256sums_amd64 = 2827c6b644accc6bd2487c96fa924f47ff0688ecdeca037a22fe0fd99778c57f
 
 pkgname = naps2-deb
 ---
