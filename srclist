@@ -8881,7 +8881,7 @@ pkgbase = obs-studio
 	pkgver = 31.0.2
 	pkgdesc = Free and open source software for live streaming and screen recording
 	arch = amd64
-	depends = libasound2t64>= 1.0.17
+	depends = libasound2t64>=1.0.17
 	depends = libatk-bridge2.0-0t64>=2.5.3
 	depends = libatk1.0-0t64>=2.2.0
 	depends = libatspi2.0-0t64>=2.9.90
@@ -9023,6 +9023,7 @@ pkgbase = obs-studio
 	makedepends = libwebsocketpp-dev
 	makedepends = libasio-dev
 	makedepends = libffmpeg-nvenc-dev
+	optdepends = libfdk-aac2t64 | libfdk-aac2>=2.0.1: Standalone library of the Fraunhofer FDK AAC code from Android
 	pacdeps = rnnoise
 	license = GPL-2.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
@@ -9031,8 +9032,6 @@ pkgbase = obs-studio
 	source = https://cdn-fastly.obsproject.com/downloads/cef_binary_6533_linux_x86_64.tar.xz
 	sha256sums = SKIP
 	sha256sums = fab66dfc9cfd2e26fb87798f855aef30c2004edc8e19570d37af555644ae1655
-	optdepends_ubuntu = libfdk-aac2>=2.0.1: Standalone library of the Fraunhofer FDK AAC code from Android
-	optdepends_debian = libfdk-aac2t64 | libfdk-aac2: Standalone library of the Fraunhofer FDK AAC code from Android
 
 pkgname = obs-studio
 ---

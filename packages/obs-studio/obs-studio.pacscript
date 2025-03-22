@@ -11,7 +11,7 @@ sha256sums=(
   "fab66dfc9cfd2e26fb87798f855aef30c2004edc8e19570d37af555644ae1655"
 )
 depends=(
-  "libasound2t64>= 1.0.17" "libatk-bridge2.0-0t64>=2.5.3" "libatk1.0-0t64>=2.2.0" "libatspi2.0-0t64>=2.9.90" "libavcodec61>=7:7.0 | libavcodec60 | libavcodec58"
+  "libasound2t64>=1.0.17" "libatk-bridge2.0-0t64>=2.5.3" "libatk1.0-0t64>=2.2.0" "libatspi2.0-0t64>=2.9.90" "libavcodec61>=7:7.0 | libavcodec60 | libavcodec58"
   "libavdevice61>=7:7.0 | libavdevice60 | libavdevice58" "libavformat61>=7:7.0 | libavformat60 | libavformat58" "libavutil59>=7:7.0 | libavutil58 | libavutil56" "libc6>=2.38" "libcups2t64>=1.7.0"
   "libcurl4t64>=7.16.2" "libdbus-1-3>=1.9.14" "libdrm2>=2.4.75" "libegl1" "libexpat1>=2.1~beta3"
   "libfontconfig1>=2.12.6" "libfreetype6>=2.2.1" "libgbm1>=17.1.0~rc2" "libgcc-s1>=3.3.1"
@@ -51,8 +51,7 @@ makedepends=(
   "libva-dev" "libvlc-dev" "libvpl-dev" "libdrm-dev" "nlohmann-json3-dev"
   "libwebsocketpp-dev" "libasio-dev" "libffmpeg-nvenc-dev"
 )
-optdepends_ubuntu=("libfdk-aac2>=2.0.1: Standalone library of the Fraunhofer FDK AAC code from Android")
-optdepends_debian=("libfdk-aac2t64 | libfdk-aac2: Standalone library of the Fraunhofer FDK AAC code from Android")
+optdepends=("libfdk-aac2t64 | libfdk-aac2>=2.0.1: Standalone library of the Fraunhofer FDK AAC code from Android")
 pacdeps=("rnnoise")
 pkgdesc="Free and open source software for live streaming and screen recording"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
