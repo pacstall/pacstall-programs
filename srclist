@@ -8964,6 +8964,7 @@ pkgbase = obs-studio
 	makedepends = curl
 	makedepends = ccache
 	makedepends = zsh
+	makedepends = libnss3-dev
 	makedepends = libavcodec-dev
 	makedepends = libavdevice-dev
 	makedepends = libavfilter-dev

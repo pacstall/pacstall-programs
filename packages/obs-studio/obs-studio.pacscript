@@ -32,7 +32,7 @@ depends_noble=("libpython3.12t64>=3.12.1")
 makedepends=(
   # System dependencies
   "cmake" "ninja-build" "pkg-config" "clang" "clang-format"
-  "build-essential" "curl" "ccache" "zsh"
+  "build-essential" "curl" "ccache" "zsh" "libnss3-dev"
 
   # OBS core dependencies
   "libavcodec-dev" "libavdevice-dev" "libavfilter-dev" "libavformat-dev" "libavutil-dev"
