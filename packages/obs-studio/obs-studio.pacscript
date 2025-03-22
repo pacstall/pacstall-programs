@@ -14,7 +14,7 @@ depends=(
   "libasound2t64>= 1.0.17" "libatk-bridge2.0-0t64>=2.5.3" "libatk1.0-0t64>=2.2.0" "libatspi2.0-0t64>=2.9.90" "libavcodec61>=7:7.0 | libavcodec60 | libavcodec58"
   "libavdevice61>=7:7.0 | libavdevice60 | libavdevice58" "libavformat61>=7:7.0 | libavformat60 | libavformat58" "libavutil59>=7:7.0 | libavutil58 | libavutil56" "libc6>=2.38" "libcups2t64>=1.7.0"
   "libcurl4t64>=7.16.2" "libdbus-1-3>=1.9.14" "libdrm2>=2.4.75" "libegl1" "libexpat1>=2.1~beta3"
-  "libfdk-aac2>=2.0.1" "libfontconfig1>=2.12.6" "libfreetype6>=2.2.1" "libgbm1>=17.1.0~rc2" "libgcc-s1>=3.3.1"
+  "libfontconfig1>=2.12.6" "libfreetype6>=2.2.1" "libgbm1>=17.1.0~rc2" "libgcc-s1>=3.3.1"
   "libglib2.0-0t64>=2.40.0" "libglx0" "libjack-jackd2-0>=1.9.10+20150825 | libjack-0.125" "libjansson4>=2.14" "libluajit-5.1-2>=2.0.4 | libluajit-5.1-2>=2.1.0+openresty"
   "libmbedcrypto16 | libmbedcrypto7t64>=2.28" "libmbedtls14t64>=2.28 | libmbedtls21" "libmbedx509-7 | libmbedx509-1t64>=2.28" "libnspr4>=2:4.9-2~" "libnss3>=2:3.31"
   "libopengl0" "libpci3>=1:3.7.0" "libpipewire-0.3-0t64>=0.3.6" "libpulse0>=0.99.1" "libpython3.13 | libpython3.12t64>=3.12.1"
@@ -46,11 +46,13 @@ makedepends=(
   "qt6-base-dev" "qt6-base-private-dev" "qt6-svg-dev" "qt6-wayland" "qt6-image-formats-plugins"
 
   # Plugin dependencies
-  "libasound2-dev" "libfdk-aac-dev" "libfontconfig-dev" "libfreetype6-dev" "libjack-jackd2-dev"
+  "libasound2-dev" "libfontconfig-dev" "libfreetype6-dev" "libjack-jackd2-dev"
   "libpulse-dev" "libsndio-dev" "libspeexdsp-dev" "libudev-dev" "libv4l-dev"
   "libva-dev" "libvlc-dev" "libvpl-dev" "libdrm-dev" "nlohmann-json3-dev"
   "libwebsocketpp-dev" "libasio-dev" "libffmpeg-nvenc-dev"
 )
+optdepends_ubuntu=("libfdk-aac2>=2.0.1: Standalone library of the Fraunhofer FDK AAC code from Android")
+optdepends_debian=("libfdk-aac2t64 | libfdk-aac2: Standalone library of the Fraunhofer FDK AAC code from Android")
 pacdeps=("rnnoise")
 pkgdesc="Free and open source software for live streaming and screen recording"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
