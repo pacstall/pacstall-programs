@@ -1,0 +1,13 @@
+diff --git a/Makefile.in b/Makefile.in
+index 4f0fc51..7c4c044 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -124,7 +124,7 @@ clean:
+ 	@rm -rf -v ./$(RELEASEDIR) $(RELEASEDIR).tar.gz
+ 
+ 
+-RELEASEDIR := $(PROJECT)-$(shell git describe --abbrev=0)
++RELEASEDIR := $(PROJECT)-$(shell git describe --abbrev=0 --always)
+ $(RELEASEDIR):
+ 	mkdir -p $(@)
+ 
