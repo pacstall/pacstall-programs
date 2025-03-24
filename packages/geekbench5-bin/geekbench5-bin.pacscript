@@ -5,6 +5,7 @@ source=("@${pkgname}~${pkgver}::https://cdn.geekbench.com/Geekbench-${pkgver}-Li
 pkgdesc="Legacy version. Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button"
 arch=('amd64')
 sha256sums=("32037e55c3dc8f360fe16b7fbb188d31387ea75980e48d8cf028330e3239c404")
+maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
 
 package() {
   cd "${pkgname}~${pkgver}"
