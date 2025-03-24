@@ -4,6 +4,7 @@ pkgver="3.4.4"
 source=("@${pkgname}~${pkgver}::https://cdn.geekbench.com/Geekbench-${pkgver}-Linux.tar.gz")
 pkgdesc="Legacy version. Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button"
 arch=('amd64' 'i386')
+maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
 sha256sums=("5d2bcc51378f5459551461111288861d5c483d14fbe7dfa805d15c3099690e18")
 
 package() {
