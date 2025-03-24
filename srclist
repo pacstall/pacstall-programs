@@ -3416,6 +3416,18 @@ pkgbase = geekbench-bin
 
 pkgname = geekbench-bin
 ---
+pkgbase = geekbench2-bin
+	gives = geekbench2
+	pkgver = 2.4.3
+	pkgdesc = Legacy version. Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button
+	arch = amd64
+	arch = i386
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = @geekbench2-bin~2.4.3::https://cdn.geekbench.com/Geekbench-2.4.3-Linux.tar.gz
+	sha256sums = d9384c4cc74406da598256c7a48506c2f3f44e7b3d54f5d317bc47a7e17807ed
+
+pkgname = geekbench2-bin
+---
 pkgbase = genymotion-bin
 	gives = genymotion
 	pkgver = 3.6.0
