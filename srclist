@@ -2004,15 +2004,15 @@ pkgname = directx-headers-git
 ---
 pkgbase = discord-canary-deb
 	gives = discord-canary
-	pkgver = 0.0.611
+	pkgver = 0.0.619
 	pkgdesc = Chat for Communities and Friends Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com
 	arch = amd64
 	conflicts = discord-canary
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: discord-canary
-	source = https://canary.dl2.discordapp.net/apps/linux/0.0.611/discord-canary-0.0.611.deb
-	sha256sums = eb9956abe3d2acfad1ca8d5e5bc542ed80b096682c460873a64f03bb11571002
+	source = https://canary.dl2.discordapp.net/apps/linux/0.0.619/discord-canary-0.0.619.deb
+	sha256sums = 22448368de50ba21418cd933842e4e730fc808216880225b95b2a7413dfde7b6
 
 pkgname = discord-canary-deb
 ---
@@ -2046,7 +2046,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.88
+	pkgver = 0.0.89
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -2056,8 +2056,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.88/discord-0.0.88.deb
-	sha256sums = 5777c4c873f13e00ebe6a74c57bc3abac394b2b641dd72fee5f98f63ad102ccc
+	source = https://dl.discordapp.net/apps/linux/0.0.89/discord-0.0.89.deb
+	sha256sums = e46dc8f2cd823671cfa0cd9c8de97c54febe6622265ffe823f883febe60a5d6a
 
 pkgname = discord-deb
 ---
@@ -2074,7 +2074,7 @@ pkgbase = discord-ptb-deb
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.87
+	pkgver = 0.0.89
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2092,8 +2092,8 @@ pkgbase = discord
 	optdepends = fonts-noto-color-emoji: emoji support
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.87::https://dl.discordapp.net/apps/linux/0.0.87/discord-0.0.87.tar.gz
-	sha256sums = db63e2e6b2347eeec0fd9a2a92320e0ed12798d42dd291419aca6587440ad004
+	source = @discord~0.0.89::https://dl.discordapp.net/apps/linux/0.0.89/discord-0.0.89.tar.gz
+	sha256sums = ef833648024b4bcbb7ee6d9b128fd86e5abcdb611b59665fa4b7f97a6bd3bac1
 
 pkgname = discord
 ---
@@ -3405,6 +3405,40 @@ pkgbase = galaxybudsclient-bin
 	sha256sums_armhf = e15a9eb81ccb7c0ea38694bd26121484b4f9ab2219b5f97d895f10bad5921d3b
 
 pkgname = galaxybudsclient-bin
+---
+pkgbase = geekbench4-bin
+	gives = geekbench4
+	pkgver = 4.4.4
+	pkgdesc = Legacy version. Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button
+	arch = amd64
+	arch = i386
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = @geekbench4-bin~4.4.4::https://cdn.geekbench.com/Geekbench-4.4.4-Linux.tar.gz
+	sha256sums = 295b01134b9e59ec26a1563fbf3c57dac2a1453ce2b723cd47ec264f06415a22
+
+pkgname = geekbench4-bin
+---
+pkgbase = geekbench5-bin
+	gives = geekbench5
+	pkgver = 5.5.1
+	pkgdesc = Legacy version. Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button
+	arch = amd64
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = @geekbench5-bin~5.5.1::https://cdn.geekbench.com/Geekbench-5.5.1-Linux.tar.gz
+	sha256sums = 32037e55c3dc8f360fe16b7fbb188d31387ea75980e48d8cf028330e3239c404
+
+pkgname = geekbench5-bin
+---
+pkgbase = geekbench6-bin
+	gives = geekbench6
+	pkgver = 6.4.0
+	pkgdesc = Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button
+	arch = amd64
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = @geekbench6-bin~6.4.0::https://cdn.geekbench.com/Geekbench-6.4.0-Linux.tar.gz
+	sha256sums = 43833053774816178a292331cc205923c5e8168ada378d41b9119532125a50ac
+
+pkgname = geekbench6-bin
 ---
 pkgbase = genymotion-bin
 	gives = genymotion
@@ -4764,13 +4798,13 @@ pkgname = hwinfo-git
 ---
 pkgbase = hydralauncher-deb
 	gives = hydralauncher
-	pkgver = 3.3.0
+	pkgver = 3.3.1
 	pkgdesc = Game launcher with its own embedded BitTorrent client
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: hydralauncher
-	source = https://github.com/hydralauncher/hydra/releases/download/v3.3.0/hydralauncher_3.3.0_amd64.deb
-	sha256sums = a87a966f5cf5c7dc2663ebc0684bc77a8905c8a45e0e089446d4c86a3355dab8
+	source = https://github.com/hydralauncher/hydra/releases/download/v3.3.1/hydralauncher_3.3.1_amd64.deb
+	sha256sums = b19adda4a1b2e12b5b85120885f0c68437a76906379491df65a3a754c8648010
 
 pkgname = hydralauncher-deb
 ---
@@ -6338,8 +6372,8 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.14.0-061400rc3
-	pkgver = 6.14~rc3
+	gives = linux-headers-6.14.0-061400
+	pkgver = 6.14
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -6347,14 +6381,14 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/amd64/linux-headers-6.14.0-061400rc3_6.14.0-061400rc3.202502181422_all.deb
-	sha256sums = a4b1b1d9af3a23ca1b35a38abb2c2726a07761188b6d7a8fcebc5340f286b688
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/amd64/linux-headers-6.14.0-061400_6.14.0-061400.202503241442_all.deb
+	sha256sums = f24f9bf215b306923d7839e6d9695206de02f4f46899a4397dc1b86013eacf56
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-6.14.0-061400rc3-generic
-	pkgver = 6.14~rc3
+	gives = linux-headers-6.14.0-061400-generic
+	pkgver = 6.14
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -6364,10 +6398,10 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/arm64/linux-headers-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_arm64.deb
-	sha256sums_arm64 = f206ee6e15d1353cd09936c92b350838477f609caf87290f7a1a852524448357
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/amd64/linux-headers-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_amd64.deb
-	sha256sums_amd64 = 5dfa595c8a84d76f7fe93d2b2efda5583a499fc6c6b9b87309cb2d4634858943
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/arm64/linux-headers-6.14.0-061400-generic_6.14.0-061400.202503241442_arm64.deb
+	sha256sums_arm64 = c1a45f782277890e954057bd7b60233157c70fbcd20278f6adf6df1790c35217
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/amd64/linux-headers-6.14.0-061400-generic_6.14.0-061400.202503241442_amd64.deb
+	sha256sums_amd64 = c8618e6adf7a825634f50096b48330090cc50fb7f81ba5daf3b25c7009b0d8c1
 
 pkgname = linux-headers-generic-deb
 ---
@@ -6390,8 +6424,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.13.2-061302-generic
-	pkgver = 6.13.2
+	gives = linux-headers-6.14.0-061400-generic
+	pkgver = 6.14
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -6399,10 +6433,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/arm64/linux-headers-6.13.2-061302-generic_6.13.2-061302.202502081010_arm64.deb
-	sha256sums_arm64 = 4ff2a137f8825f494af44af6756e75222467cf73b9ce50530c8edc8c61fab8eb
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-headers-6.13.2-061302-generic_6.13.2-061302.202502081010_amd64.deb
-	sha256sums_amd64 = 68e2201b324980d78c0d3a49537384731bea570b82208bb3c711d41389ba76f7
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/arm64/linux-headers-6.14.0-061400-generic_6.14.0-061400.202503241442_arm64.deb
+	sha256sums_arm64 = c1a45f782277890e954057bd7b60233157c70fbcd20278f6adf6df1790c35217
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/amd64/linux-headers-6.14.0-061400-generic_6.14.0-061400.202503241442_amd64.deb
+	sha256sums_amd64 = c8618e6adf7a825634f50096b48330090cc50fb7f81ba5daf3b25c7009b0d8c1
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -6437,15 +6471,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.13.2-061302
-	pkgver = 6.13.2
+	gives = linux-headers-6.14.0-061400
+	pkgver = 6.14
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-headers-6.13.2-061302_6.13.2-061302.202502081010_all.deb
-	sha256sums = a2d144521b7cbdc8b951a44b9ccc58c10430cf2fb01a7ecdd6d9bf3fc12331bf
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/amd64/linux-headers-6.14.0-061400_6.14.0-061400.202503241442_all.deb
+	sha256sums = f24f9bf215b306923d7839e6d9695206de02f4f46899a4397dc1b86013eacf56
 
 pkgname = linux-headers-stable-deb
 ---
@@ -6468,8 +6502,8 @@ pkgbase = linux-image-okpine-deb
 pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.14.0-061400rc3-generic
-	pkgver = 6.14~rc3
+	gives = linux-image-unsigned-6.14.0-061400-generic
+	pkgver = 6.14
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6480,10 +6514,10 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/arm64/linux-image-unsigned-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_arm64.deb
-	sha256sums_arm64 = 99a6c0b8e2fd85d0b7791b99e86e668469ea03cc8cc7e5a8ce73549349510fe9
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/amd64/linux-image-unsigned-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_amd64.deb
-	sha256sums_amd64 = f9dd62900d932586c0243848665af8664475c0b93d0efebea4795ebe47a3a1be
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/arm64/linux-image-unsigned-6.14.0-061400-generic_6.14.0-061400.202503241442_arm64.deb
+	sha256sums_arm64 = fa0e80103439d793da45ece240f3e6b68b93be19728cc31c00099bc559b7c979
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/amd64/linux-image-unsigned-6.14.0-061400-generic_6.14.0-061400.202503241442_amd64.deb
+	sha256sums_amd64 = e69343fd2516dc0a83ae6044b6a672927aa1e0537f21b20d6d8c0bf6dc1d5c94
 
 pkgname = linux-image-unsigned-deb
 ---
@@ -6507,8 +6541,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.13.2-061302-generic
-	pkgver = 6.13.2
+	gives = linux-image-unsigned-6.14.0-061400-generic
+	pkgver = 6.14
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6517,10 +6551,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/arm64/linux-image-unsigned-6.13.2-061302-generic_6.13.2-061302.202502081010_arm64.deb
-	sha256sums_arm64 = 4ad4c795468fb3b14027271e15b6cc22f22b875f5f228aa8e318a31f26b5106f
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-image-unsigned-6.13.2-061302-generic_6.13.2-061302.202502081010_amd64.deb
-	sha256sums_amd64 = a7999ffdfebcc0d5fc2e8dfbd95fc9111980c2ea74c6c2409704e511fb2c26ad
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/arm64/linux-image-unsigned-6.14.0-061400-generic_6.14.0-061400.202503241442_arm64.deb
+	sha256sums_arm64 = fa0e80103439d793da45ece240f3e6b68b93be19728cc31c00099bc559b7c979
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/amd64/linux-image-unsigned-6.14.0-061400-generic_6.14.0-061400.202503241442_amd64.deb
+	sha256sums_amd64 = e69343fd2516dc0a83ae6044b6a672927aa1e0537f21b20d6d8c0bf6dc1d5c94
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -6542,7 +6576,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.13.2
+	pkgver = 6.14
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6558,7 +6592,7 @@ pkgbase = linux-kernel-stable
 pkgname = linux-kernel-stable
 ---
 pkgbase = linux-kernel
-	pkgver = 6.14~rc3
+	pkgver = 6.14
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6589,16 +6623,16 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.14.0-061400rc3-generic
-	pkgver = 6.14~rc3
+	gives = linux-modules-6.14.0-061400-generic
+	pkgver = 6.14
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/arm64/linux-modules-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_arm64.deb
-	sha256sums_arm64 = f7bb13753895c089d0a1895ba258e3f98e0325c2f153659e20cd6bcde38e3fdd
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14-rc3/amd64/linux-modules-6.14.0-061400rc3-generic_6.14.0-061400rc3.202502181422_amd64.deb
-	sha256sums_amd64 = f01c13f9e61f5b4abfd0a9cdd8e6106eae935cc306d6009e36533e2da1f7be16
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/arm64/linux-modules-6.14.0-061400-generic_6.14.0-061400.202503241442_arm64.deb
+	sha256sums_arm64 = b8e1cb098ec2b230800ca0bcf66cd21f0620d83c50289b44504960aff79efb56
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/amd64/linux-modules-6.14.0-061400-generic_6.14.0-061400.202503241442_amd64.deb
+	sha256sums_amd64 = 35602020dce6f8dd854ca86c89b7f43f6c11a89f96f5307149a35565da02d600
 
 pkgname = linux-modules-deb
 ---
@@ -6620,16 +6654,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.13.2-061302-generic
-	pkgver = 6.13.2
+	gives = linux-modules-6.14.0-061400-generic
+	pkgver = 6.14
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/arm64/linux-modules-6.13.2-061302-generic_6.13.2-061302.202502081010_arm64.deb
-	sha256sums_arm64 = 6180bb7620dd0108505c0712dc13989b3cde854d8f5afadd52e15e9a073e2a1e
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.13.2/amd64/linux-modules-6.13.2-061302-generic_6.13.2-061302.202502081010_amd64.deb
-	sha256sums_amd64 = fb04c692e7f26a9b5f0de2d43b5e8e69cd938f7c44250acd84391cd47c14b0f8
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/arm64/linux-modules-6.14.0-061400-generic_6.14.0-061400.202503241442_arm64.deb
+	sha256sums_arm64 = b8e1cb098ec2b230800ca0bcf66cd21f0620d83c50289b44504960aff79efb56
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14/amd64/linux-modules-6.14.0-061400-generic_6.14.0-061400.202503241442_amd64.deb
+	sha256sums_amd64 = 35602020dce6f8dd854ca86c89b7f43f6c11a89f96f5307149a35565da02d600
 
 pkgname = linux-modules-stable-deb
 ---
@@ -6891,15 +6925,15 @@ pkgbase = ly-git
 pkgname = ly-git
 ---
 pkgbase = lynxfetch
-	pkgver = 1.0.6
+	pkgver = 1.0.7
 	pkgdesc = Super fast, versatile, and customizable command-line fetcher
 	arch = amd64
 	makedepends = libdbus-1-dev
 	makedepends = pkg-config
 	pacdeps = rust-bin
 	maintainer = CELESTIFYX Team <celestifyx@gmail.com>
-	source = https://gitlab.com/lynxfetch/lynxfetch/-/archive/1.0.6/lynxfetch-1.0.6.tar.gz
-	sha512sums = 29ecff0bf5382c5595ae8fee85970ba82d212056151cc304b602a1d4fd726bca4733b2d96dfd36b6d2c61788bf526b6b5b4e4296d28e4791af5cc7153a808629
+	source = https://gitlab.com/lynxfetch/lynxfetch/-/archive/1.0.7/lynxfetch-1.0.7.tar.gz
+	sha512sums = 1c35e5d373230941a17dd67193c8a28ce599b51bf07c6bdf0b72db04b916e62fd4af79227b30631606942d008d1d62e9f8bd3bd826c3312b17b350cd52e34f2b
 
 pkgname = lynxfetch
 ---
@@ -7777,17 +7811,17 @@ pkgname = nano
 ---
 pkgbase = naps2-deb
 	gives = naps2
-	pkgver = 8.1.0
+	pkgver = 8.1.1
 	pkgdesc = NAPS2 is a document scanning application with a focus on simplicity and ease of use
 	arch = arm64
 	arch = amd64
 	depends = libsane1
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: naps2
-	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v8.1.0/naps2-8.1.0-linux-arm64.deb
-	sha256sums_arm64 = 31c6516b5d81eb5f8e9388884e562f70edbc37ea32f1190f0f88b1044c238e9f
-	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v8.1.0/naps2-8.1.0-linux-x64.deb
-	sha256sums_amd64 = f6dad0739e84334a3fdfe74b530fa64ab4e32514fc54479be0dcfb9b8e118216
+	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v8.1.1/naps2-8.1.1-linux-arm64.deb
+	sha256sums_arm64 = 7a980fe110a02fa2093d526e3b250f9b7d39502dfbcfc34f01d2f5b537067611
+	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v8.1.1/naps2-8.1.1-linux-x64.deb
+	sha256sums_amd64 = 2827c6b644accc6bd2487c96fa924f47ff0688ecdeca037a22fe0fd99778c57f
 
 pkgname = naps2-deb
 ---

@@ -1,0 +1,10 @@
+pkgbase = geekbench5-bin
+	gives = geekbench5
+	pkgver = 5.5.1
+	pkgdesc = Legacy version. Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button
+	arch = amd64
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = @geekbench5-bin~5.5.1::https://cdn.geekbench.com/Geekbench-5.5.1-Linux.tar.gz
+	sha256sums = 32037e55c3dc8f360fe16b7fbb188d31387ea75980e48d8cf028330e3239c404
+
+pkgname = geekbench5-bin
