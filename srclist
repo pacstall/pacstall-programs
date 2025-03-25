@@ -2004,15 +2004,15 @@ pkgname = directx-headers-git
 ---
 pkgbase = discord-canary-deb
 	gives = discord-canary
-	pkgver = 0.0.611
+	pkgver = 0.0.619
 	pkgdesc = Chat for Communities and Friends Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com
 	arch = amd64
 	conflicts = discord-canary
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: discord-canary
-	source = https://canary.dl2.discordapp.net/apps/linux/0.0.611/discord-canary-0.0.611.deb
-	sha256sums = eb9956abe3d2acfad1ca8d5e5bc542ed80b096682c460873a64f03bb11571002
+	source = https://canary.dl2.discordapp.net/apps/linux/0.0.619/discord-canary-0.0.619.deb
+	sha256sums = 22448368de50ba21418cd933842e4e730fc808216880225b95b2a7413dfde7b6
 
 pkgname = discord-canary-deb
 ---
@@ -2046,7 +2046,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.88
+	pkgver = 0.0.89
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -2056,8 +2056,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.88/discord-0.0.88.deb
-	sha256sums = 5777c4c873f13e00ebe6a74c57bc3abac394b2b641dd72fee5f98f63ad102ccc
+	source = https://dl.discordapp.net/apps/linux/0.0.89/discord-0.0.89.deb
+	sha256sums = e46dc8f2cd823671cfa0cd9c8de97c54febe6622265ffe823f883febe60a5d6a
 
 pkgname = discord-deb
 ---
@@ -2074,7 +2074,7 @@ pkgbase = discord-ptb-deb
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.87
+	pkgver = 0.0.89
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2092,8 +2092,8 @@ pkgbase = discord
 	optdepends = fonts-noto-color-emoji: emoji support
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.87::https://dl.discordapp.net/apps/linux/0.0.87/discord-0.0.87.tar.gz
-	sha256sums = db63e2e6b2347eeec0fd9a2a92320e0ed12798d42dd291419aca6587440ad004
+	source = @discord~0.0.89::https://dl.discordapp.net/apps/linux/0.0.89/discord-0.0.89.tar.gz
+	sha256sums = ef833648024b4bcbb7ee6d9b128fd86e5abcdb611b59665fa4b7f97a6bd3bac1
 
 pkgname = discord
 ---
@@ -3427,6 +3427,28 @@ pkgbase = geekbench4-bin
 	sha256sums = 295b01134b9e59ec26a1563fbf3c57dac2a1453ce2b723cd47ec264f06415a22
 
 pkgname = geekbench4-bin
+---
+pkgbase = geekbench5-bin
+	gives = geekbench5
+	pkgver = 5.5.1
+	pkgdesc = Legacy version. Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button
+	arch = amd64
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = @geekbench5-bin~5.5.1::https://cdn.geekbench.com/Geekbench-5.5.1-Linux.tar.gz
+	sha256sums = 32037e55c3dc8f360fe16b7fbb188d31387ea75980e48d8cf028330e3239c404
+
+pkgname = geekbench5-bin
+---
+pkgbase = geekbench6-bin
+	gives = geekbench6
+	pkgver = 6.4.0
+	pkgdesc = Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button
+	arch = amd64
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = @geekbench6-bin~6.4.0::https://cdn.geekbench.com/Geekbench-6.4.0-Linux.tar.gz
+	sha256sums = 43833053774816178a292331cc205923c5e8168ada378d41b9119532125a50ac
+
+pkgname = geekbench6-bin
 ---
 pkgbase = genymotion-bin
 	gives = genymotion
@@ -4786,13 +4808,13 @@ pkgname = hwinfo-git
 ---
 pkgbase = hydralauncher-deb
 	gives = hydralauncher
-	pkgver = 3.3.0
+	pkgver = 3.3.1
 	pkgdesc = Game launcher with its own embedded BitTorrent client
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: hydralauncher
-	source = https://github.com/hydralauncher/hydra/releases/download/v3.3.0/hydralauncher_3.3.0_amd64.deb
-	sha256sums = a87a966f5cf5c7dc2663ebc0684bc77a8905c8a45e0e089446d4c86a3355dab8
+	source = https://github.com/hydralauncher/hydra/releases/download/v3.3.1/hydralauncher_3.3.1_amd64.deb
+	sha256sums = b19adda4a1b2e12b5b85120885f0c68437a76906379491df65a3a754c8648010
 
 pkgname = hydralauncher-deb
 ---
@@ -6913,15 +6935,15 @@ pkgbase = ly-git
 pkgname = ly-git
 ---
 pkgbase = lynxfetch
-	pkgver = 1.0.6
+	pkgver = 1.0.7
 	pkgdesc = Super fast, versatile, and customizable command-line fetcher
 	arch = amd64
 	makedepends = libdbus-1-dev
 	makedepends = pkg-config
 	pacdeps = rust-bin
 	maintainer = CELESTIFYX Team <celestifyx@gmail.com>
-	source = https://gitlab.com/lynxfetch/lynxfetch/-/archive/1.0.6/lynxfetch-1.0.6.tar.gz
-	sha512sums = 29ecff0bf5382c5595ae8fee85970ba82d212056151cc304b602a1d4fd726bca4733b2d96dfd36b6d2c61788bf526b6b5b4e4296d28e4791af5cc7153a808629
+	source = https://gitlab.com/lynxfetch/lynxfetch/-/archive/1.0.7/lynxfetch-1.0.7.tar.gz
+	sha512sums = 1c35e5d373230941a17dd67193c8a28ce599b51bf07c6bdf0b72db04b916e62fd4af79227b30631606942d008d1d62e9f8bd3bd826c3312b17b350cd52e34f2b
 
 pkgname = lynxfetch
 ---
@@ -7799,17 +7821,17 @@ pkgname = nano
 ---
 pkgbase = naps2-deb
 	gives = naps2
-	pkgver = 8.1.0
+	pkgver = 8.1.1
 	pkgdesc = NAPS2 is a document scanning application with a focus on simplicity and ease of use
 	arch = arm64
 	arch = amd64
 	depends = libsane1
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: naps2
-	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v8.1.0/naps2-8.1.0-linux-arm64.deb
-	sha256sums_arm64 = 31c6516b5d81eb5f8e9388884e562f70edbc37ea32f1190f0f88b1044c238e9f
-	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v8.1.0/naps2-8.1.0-linux-x64.deb
-	sha256sums_amd64 = f6dad0739e84334a3fdfe74b530fa64ab4e32514fc54479be0dcfb9b8e118216
+	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v8.1.1/naps2-8.1.1-linux-arm64.deb
+	sha256sums_arm64 = 7a980fe110a02fa2093d526e3b250f9b7d39502dfbcfc34f01d2f5b537067611
+	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v8.1.1/naps2-8.1.1-linux-x64.deb
+	sha256sums_amd64 = 2827c6b644accc6bd2487c96fa924f47ff0688ecdeca037a22fe0fd99778c57f
 
 pkgname = naps2-deb
 ---
