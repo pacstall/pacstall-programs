@@ -1,0 +1,11 @@
+pkgbase = geekbench4-bin
+	gives = geekbench4
+	pkgver = 4.4.4
+	pkgdesc = Legacy version. Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button
+	arch = amd64
+	arch = i386
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = @geekbench4-bin~4.4.4::https://cdn.geekbench.com/Geekbench-4.4.4-Linux.tar.gz
+	sha256sums = 295b01134b9e59ec26a1563fbf3c57dac2a1453ce2b723cd47ec264f06415a22
+
+pkgname = geekbench4-bin
