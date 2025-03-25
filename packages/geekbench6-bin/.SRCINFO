@@ -1,0 +1,10 @@
+pkgbase = geekbench6-bin
+	gives = geekbench6
+	pkgver = 6.4.0
+	pkgdesc = Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button
+	arch = amd64
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = @geekbench6-bin~6.4.0::https://cdn.geekbench.com/Geekbench-6.4.0-Linux.tar.gz
+	sha256sums = 43833053774816178a292331cc205923c5e8168ada378d41b9119532125a50ac
+
+pkgname = geekbench6-bin
