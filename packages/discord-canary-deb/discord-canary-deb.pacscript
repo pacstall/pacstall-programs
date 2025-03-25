@@ -1,10 +1,10 @@
 pkgname="discord-canary-deb"
 repology=("project: discord-canary")
 arch=('amd64')
-pkgver="0.0.611"
+pkgver="0.0.619"
 url='https://discord.com'
 source=("https://canary.dl2.discordapp.net/apps/linux/${pkgver}/discord-canary-${pkgver}.deb")
-sha256sums=("eb9956abe3d2acfad1ca8d5e5bc542ed80b096682c460873a64f03bb11571002")
+sha256sums=("22448368de50ba21418cd933842e4e730fc808216880225b95b2a7413dfde7b6")
 conflicts=("discord-canary")
 gives="discord-canary"
 pkgdesc="Chat for Communities and Friends
