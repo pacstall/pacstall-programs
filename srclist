@@ -7883,7 +7883,7 @@ pkgname = neovide-bin
 ---
 pkgbase = neovim-app
 	gives = neovim
-	pkgver = 0.10.4
+	pkgver = 0.11.0
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	arch = amd64
@@ -7895,10 +7895,10 @@ pkgbase = neovim-app
 	replaces = neovim-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source_amd64 = https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-x86_64.appimage
-	sha256sums_amd64 = d1b1488ef6a970dc3a2826b788d31d81b2f308ad42ef70ed62d35d0bf6189336
-	source_arm64 = https://github.com/neovim/neovim/releases/download/v0.10.4/nvim-linux-arm64.appimage
-	sha256sums_arm64 = cc02d640809f6cfb27ee5fca78cc612ccda0dc4fbb648430d49de623660d0216
+	source_amd64 = https://github.com/neovim/neovim/releases/download/v0.11.0/nvim-linux-x86_64.appimage
+	sha256sums_amd64 = ca44cd43fe8d55418414496e8ec7bac83f611705ece167f4ccb93cbf46fec6c0
+	source_arm64 = https://github.com/neovim/neovim/releases/download/v0.11.0/nvim-linux-arm64.appimage
+	sha256sums_arm64 = 307972fd1e14f68e3a24c23a48e91387399385a3cf3d80e319542c01efe3bcf2
 
 pkgname = neovim-app
 ---
