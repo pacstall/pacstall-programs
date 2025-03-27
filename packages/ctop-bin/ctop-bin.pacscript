@@ -2,7 +2,7 @@ pkgname="ctop-bin"
 gives="ctop"
 pkgver="0.7.7"
 pkgdesc="Top-like interface for container metrics"
-url="https://github.com/bcicen/ctop"
+url='https://github.com/bcicen/ctop'
 arch=("amd64" "arm64" "armel" "ppc64el")
 
 source_amd64=("https://github.com/bcicen/ctop/releases/download/v${pkgver}/ctop-${pkgver}-linux-amd64")
