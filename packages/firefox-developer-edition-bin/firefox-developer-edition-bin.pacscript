@@ -7,7 +7,7 @@ breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 url="https://www.mozilla.org/en-US/firefox/developer/"
 maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")
 source=(
-  "https://download-installer.cdn.mozilla.net/pub/devedition/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.bz2"
+  "https://download-installer.cdn.mozilla.net/pub/devedition/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.xz"
   "${gives}.desktop"
   "${gives}.png::https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
 )
