@@ -6,6 +6,7 @@ pkgbase = vscode-deb
 	arch = amd64
 	arch = arm64
 	arch = armhf
+	makedepends = gpg
 	maintainer = Diegiwg <diegiwg@gmail.com>
 	source_amd64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.98.2-1741788907_amd64.deb
 	sha256sums_amd64 = 093d18576d1f20a861a3f0f9284d12665f9a29b4a71686c861f9cb5f66471514

@@ -5,6 +5,7 @@ pkgver="1.98.2"
 url="https://code.visualstudio.com/"
 pkgdesc="lightweight but powerful source code editor"
 project=("project: vscode")
+makedepends=("gpg")
 maintainer=("Diegiwg <diegiwg@gmail.com>")
 
 source_amd64=("https://packages.microsoft.com/repos/code/pool/main/c/code/code_${pkgver}-1741788907_amd64.deb")
