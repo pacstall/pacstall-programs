@@ -16,7 +16,7 @@ package() {
 Type=Application
 Name=Kdenlive
 Comment=Free and Open Source Video Editor from KDE
-Exec=/usr/bin/kdenlive %f
+Exec=env APPIMAGELAUNCHER_DISABLE=1 /usr/bin/kdenlive %f
 Icon=kdenlive
 Terminal=false
 Categories=Application;Video;AudioVideo;Editor;
