@@ -1103,7 +1103,7 @@ pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.74.51
+	pkgver = 1.76.82
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1115,10 +1115,10 @@ pkgbase = brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.74.51_amd64.deb
-	sha256sums_amd64 = 665a4a7d3bec24a0e6ce94c29cf06acc20af04a189242bce2a2eb929d1051a52
-	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.74.51_arm64.deb
-	sha256sums_arm64 = aeca19e4029d606ca0eb3b7a93f1e505f2be14dbd565d2f956334c358aa92a5b
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.76.82_amd64.deb
+	sha256sums_amd64 = 6b973cb6a6b2ac228f59a426a034c6c7e287d1211c3bc4df3e5017f36bfd30b6
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.76.82_arm64.deb
+	sha256sums_arm64 = 8c3cd411acb3036bca99e8a4302bc1fd88139d84658a8a1a6678a813d0c997ca
 
 pkgname = brave-browser-deb
 ---
@@ -3072,7 +3072,7 @@ pkgname = firefox-deb
 ---
 pkgbase = firefox-developer-edition-bin
 	gives = firefox-developer-edition
-	pkgver = 134.0b9
+	pkgver = 137.0b10
 	pkgdesc = The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector.
 	url = https://www.mozilla.org/en-US/firefox/developer/
 	arch = amd64
@@ -3085,10 +3085,10 @@ pkgbase = firefox-developer-edition-bin
 	repology = project: firefox
 	repology = visiblename: firefox-developer-edition
 	repology = status: devel
-	source = https://download-installer.cdn.mozilla.net/pub/devedition/releases/134.0b9/linux-x86_64/en-US/firefox-134.0b9.tar.bz2
+	source = https://download-installer.cdn.mozilla.net/pub/devedition/releases/137.0b10/linux-x86_64/en-US/firefox-137.0b10.tar.xz
 	source = firefox-developer-edition.desktop
 	source = firefox-developer-edition.png::https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png
-	sha256sums = ec15a5427a9ed63289e54808e56b3ce4283da7a8249db15a4d715aa8c78f6ce7
+	sha256sums = 8ed06e738c2d2106a030c9ea233d1745d1d1190191d5acabfb619343d6600620
 	sha256sums = SKIP
 	sha256sums = SKIP
 
@@ -6198,7 +6198,7 @@ pkgname = libressl
 ---
 pkgbase = librewolf-app
 	gives = librewolf
-	pkgver = 134.0-1
+	pkgver = 136.0.2-1
 	pkgdesc = A fork of Firefox, focused on privacy, security and freedom.
 	arch = amd64
 	arch = arm64
@@ -6208,16 +6208,16 @@ pkgbase = librewolf-app
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: librewolf
-	source_amd64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/134.0-1/LibreWolf.x86_64.AppImage
+	source_amd64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/136.0.2-1/LibreWolf.x86_64.AppImage
 	source_amd64 = icon.png::https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
 	source_amd64 = librewolf.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/librewolf-app/librewolf.desktop
-	sha256sums_amd64 = 5a52346b649be7d3ba406679f6fb1e4de0c8933c89778fd5219fea4c570b5a6d
+	sha256sums_amd64 = 53d511ce3cc77dbdf212c5faa57a99ae2a4c30327ab0c58d19cd87586918cbe2
 	sha256sums_amd64 = SKIP
 	sha256sums_amd64 = SKIP
-	source_arm64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/134.0-1/LibreWolf.aarch64.AppImage
+	source_arm64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/136.0.2-1/LibreWolf.aarch64.AppImage
 	source_arm64 = icon.png::https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
 	source_arm64 = librewolf.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/librewolf-app/librewolf.desktop
-	sha256sums_arm64 = f0370c99a1bd4ee877f0cc0d0e061ca050b0a6388abda9a8a4410b666cb1c596
+	sha256sums_arm64 = dfaa29ecdd2d8dbf5daee41d46c16dd5373eca072218dabe785ed17ea1b58cc3
 	sha256sums_arm64 = SKIP
 	sha256sums_arm64 = SKIP
 
@@ -7714,15 +7714,15 @@ pkgname = mullvad-vpn-beta-deb
 ---
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
-	pkgver = 2025.4
+	pkgver = 2025.5
 	pkgdesc = The Mullvad VPN client app for desktop
 	arch = amd64
 	breaks = mullvad-vpn-beta-deb
 	breaks = mullvad-vpn-git
 	replaces = mullvad-vpn
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.4/MullvadVPN-2025.4_amd64.deb
-	sha256sums = 99c09c2309ad34cba03f018608dcba190436179e63de7f1eb95492e9427e72a9
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.5/MullvadVPN-2025.5_amd64.deb
+	sha256sums = 9fa08d6e21637aa3a04fbd97d88282382a7186fef27d56f5e5d8fccb5f7f5e5d
 
 pkgname = mullvad-vpn-deb
 ---
@@ -12417,7 +12417,7 @@ pkgname = tdrop-git
 ---
 pkgbase = teams-for-linux-deb
 	gives = teams-for-linux
-	pkgver = 1.12.7
+	pkgver = 1.13.1
 	pkgdesc = Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
 	arch = amd64
 	arch = arm64
@@ -12427,10 +12427,10 @@ pkgbase = teams-for-linux-deb
 	breaks = teams-for-linux-app
 	maintainer = matusaurio <matusaurio@github.com>
 	repology = project: teams-for-linux
-	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v1.12.7/teams-for-linux_1.12.7_amd64.deb
-	sha256sums_amd64 = 0efcd7a90809163a43b0aa1183fe71fe15a71e58694fb92214429a48248bdb77
-	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v1.12.7/teams-for-linux_1.12.7_arm64.deb
-	sha256sums_arm64 = 02422b34d077304b9385a46ab070143ea65912438a5e04f9e11c440062098e0a
+	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v1.13.1/teams-for-linux_1.13.1_amd64.deb
+	sha256sums_amd64 = 0dd58015d1973ca6bc99fe6828b318108d12db76cbe3ad7108ec984446c8483d
+	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v1.13.1/teams-for-linux_1.13.1_arm64.deb
+	sha256sums_arm64 = f7a312247897e6e312a76df7e1ee31dfdd31c5cabd501bbf31844f69aa55bde1
 
 pkgname = teams-for-linux-deb
 ---
@@ -14775,17 +14775,18 @@ pkgname = youtube-dl-git
 ---
 pkgbase = youtube-music-deb
 	gives = youtube-music
-	pkgver = 3.7.5
+	pkgver = 3.8.0
 	pkgdesc = YouTube Music Desktop App bundled with custom plugins (and built-in ad blocker / downloader)
 	arch = amd64
 	arch = arm64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	maintainer = Zahrun <Zahrun@github.com>
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
 	repology = project: youtube-music
-	source_amd64 = https://github.com/th-ch/youtube-music/releases/download/v3.7.5/youtube-music_3.7.5_amd64.deb
-	sha256sums_amd64 = 6b92a3abfb9e1021a7a225f7061d313bec292b63b46b941c78220dae715f1102
-	source_arm64 = https://github.com/th-ch/youtube-music/releases/download/v3.7.5/youtube-music_3.7.5_arm64.deb
-	sha256sums_arm64 = e587c26179b6627f40d9002bae329d627c2521c9a22cb5c1bf68a3ad73817093
+	source_amd64 = https://github.com/th-ch/youtube-music/releases/download/v3.8.0/youtube-music_3.8.0_amd64.deb
+	sha256sums_amd64 = 18e28f839659fd714d63115df77bb9d71cc27f64ab36135a5d44725ea5b9f256
+	source_arm64 = https://github.com/th-ch/youtube-music/releases/download/v3.8.0/youtube-music_3.8.0_arm64.deb
+	sha256sums_arm64 = 13b7cc014278b40d9a5c8fdcd24d880a5abccb2f5579338d425d9c3ac35a0cbb
 
 pkgname = youtube-music-deb
 ---
