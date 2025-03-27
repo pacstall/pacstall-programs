@@ -1,6 +1,7 @@
 pkgname="umu-launcher-git"
-repology=("project: umu-launcher")
-arch=('all')
+gives="umu-launcher"
+repology=("project: ${gives}")
+arch=('amd64')
 pkgver="1.1.4"
 url='https://github.com/Open-Wine-Components/umu-launcher'
 source=(
@@ -26,7 +27,6 @@ makedepends=(
   "cargo"
 )
 pacdeps=("rust-bin")
-gives="umu-launcher"
 pkgdesc="Tool for launching non-steam games with Proton"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-3.0-only')
