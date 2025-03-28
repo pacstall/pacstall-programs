@@ -1,7 +1,7 @@
 pkgname="umu-launcher-git"
 gives="umu-launcher"
 repology=("project: ${gives}")
-arch=('amd64')
+arch=('any')
 pkgver="1.1.4"
 url='https://github.com/Open-Wine-Components/umu-launcher'
 source=(

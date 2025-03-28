@@ -12008,7 +12008,7 @@ pkgbase = umu-launcher-git
 	pkgver = 1.1.4
 	pkgdesc = Tool for launching non-steam games with Proton
 	url = https://github.com/Open-Wine-Components/umu-launcher
-	arch = amd64
+	arch = any
 	depends = python3
 	depends = python3-xlib>=0.33
 	depends = python3-six
