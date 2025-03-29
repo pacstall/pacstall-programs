@@ -19,7 +19,7 @@ maintainer=("xdavius <xdavius@github.com>")
 
 build() {
   cd "${srcdir}"/"${gives}"
-  make
+  make LDFLAGS="-Wl,-rpath,/usr/lib64"
 }
 
 package() {
