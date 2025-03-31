@@ -1,0 +1,11 @@
+pkgname="warp-terminal-deb"
+gives="${pkgname%-deb}"
+arch=('amd64' 'arm64')
+repology=("project: ${gives}")
+url='https://www.warp.dev'
+pkgver="0.2025.03.26.08.10.stable.02"
+source=("https://releases.warp.dev/stable/v${pkgver/stable./stable_}/${gives}_${pkgver}_${CARCH}.deb")
+pkgdesc="Modern, Rust-based terminal with built-in AI coding tools"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums_amd64=("6ef2c297103321f5c92552fa5feb310ec63a8352c28448982bbea5688830ad2e")
+sha256sums_arm64=("e4f50af41b14d58fa340d5b07c0d4516a483916d6fadc58a7e3cc36571abda72")
