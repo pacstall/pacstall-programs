@@ -565,7 +565,7 @@ pkgbase = arduino-ide-bin
 pkgname = arduino-ide-bin
 ---
 pkgbase = asdf-vm
-	pkgver = 0.16.4
+	pkgver = 0.16.7
 	pkgdesc = Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more
 	url = https://asdf-vm.com
 	arch = i386
@@ -580,12 +580,12 @@ pkgbase = asdf-vm
 	optdepends = unzip: Needed by some plugins, like Elixir
 	license = MIT
 	repology = project: asdf-vm
-	source_i386 = asdf-vm-0.16.4-i386.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.4/asdf-v0.16.4-linux-386.tar.gz
-	sha256sums_i386 = 71c6a3147a87145dbda6d07de6ef61c25d6e135ab04b8c1f88efe2185465fff6
-	source_amd64 = asdf-vm-0.16.4-amd64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.4/asdf-v0.16.4-linux-amd64.tar.gz
-	sha256sums_amd64 = 8db60d26924979649070f74b458c9771fe840410612f87cacf2373db50ddc65d
-	source_arm64 = asdf-vm-0.16.4-arm64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.4/asdf-v0.16.4-linux-arm64.tar.gz
-	sha256sums_arm64 = 0bf0507dfb4b27c59d1afa1564238b2083a694ae45070b40ea4a3a80b9f05279
+	source_i386 = asdf-vm-0.16.7-i386.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.7/asdf-v0.16.7-linux-386.tar.gz
+	sha256sums_i386 = 8889bed9d9cdf4e6c4405280ad98ef97256924cacff5c9d17c416ad7d33617a5
+	source_amd64 = asdf-vm-0.16.7-amd64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.7/asdf-v0.16.7-linux-amd64.tar.gz
+	sha256sums_amd64 = 6a5f56833da9e94068f3e70d5ca6ffe0a14a0887e1eac1b9b0c96f67d96242be
+	source_arm64 = asdf-vm-0.16.7-arm64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.7/asdf-v0.16.7-linux-arm64.tar.gz
+	sha256sums_arm64 = a4904347dd1a468b4947fe1e22458742c89da27df589a324172bb8154229dea7
 
 pkgname = asdf-vm
 ---
