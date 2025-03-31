@@ -8856,7 +8856,7 @@ pkgname = nushell-bin
 pkgbase = nutext-bin
 	gives = nutext
 	pkgver = 0.3.2
-	pkgdesc = Another translaton plugin for nushell.
+	pkgdesc = Another translaton plugin for nushell
 	url = https://github.com/rhino-linux/nu_plugin_nutext
 	arch = amd64
 	arch = arm64
@@ -8874,11 +8874,11 @@ pkgname = nutext-bin
 pkgbase = nutext-git
 	gives = nutext
 	pkgver = 0.3.2
-	pkgdesc = Another translaton plugin for nushell.
+	pkgdesc = Another translaton plugin for nushell
 	url = https://github.com/rhino-linux/nu_plugin_nutext
 	arch = amd64
 	arch = arm64
-	makedepends = cargo>=1.80.0
+	makedepends = cargo>=1.82.0
 	pacdeps = nushell-bin
 	replaces = nutext-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
