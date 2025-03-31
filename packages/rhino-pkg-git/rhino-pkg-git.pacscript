@@ -1,13 +1,12 @@
 pkgname="rhino-pkg-git"
-source=("https://github.com/rhino-linux/rhino-pkg.git")
+source=("https://github.com/rhino-linux/rhino-pkg.git#branch=nushell")
 arch=("all")
-pkgver="0.1.2"
-pkgrel="2"
+pkgver="2.0.0"
 gives="rhino-pkg"
-makedepends=("make" "gettext")
-depends=("gettext")
+makedepends=("make")
+pacdeps=("nutext-bin")
 pkgdesc="Rhino-pkg wrapper script"
-maintainer=("Oren Klopfer <oren@taumoda.com>")
+maintainer=("Oren Klopfer <oren@taumoda.com>" "Elsie19 <elsie19@pm.me>")
 
 package() {
   cd "${gives}"

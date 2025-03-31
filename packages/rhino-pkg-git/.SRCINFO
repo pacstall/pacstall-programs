@@ -1,13 +1,12 @@
 pkgbase = rhino-pkg-git
 	gives = rhino-pkg
-	pkgver = 0.1.2
-	pkgrel = 2
+	pkgver = 2.0.0
 	pkgdesc = Rhino-pkg wrapper script
 	arch = all
-	depends = gettext
 	makedepends = make
-	makedepends = gettext
+	pacdeps = nutext-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/rhino-linux/rhino-pkg.git
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://github.com/rhino-linux/rhino-pkg.git#branch=nushell
 
 pkgname = rhino-pkg-git
