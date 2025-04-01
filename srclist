@@ -10993,7 +10993,7 @@ pkgname = rhino-neofetch-git
 ---
 pkgbase = rhino-pine-core
 	pkgver = 2025.2
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
 	arch = all
