@@ -3863,10 +3863,7 @@ pkgbase = gnucash
 	depends = libaqbanking-dev
 	depends = libboost-all-dev
 	depends = guile-3.0
-	depends = libdbi1t64
 	depends = libwebkit2gtk-4.1-0
-	depends = libofx7t64
-	depends = libgwengui-gtk3-79t64
 	depends = libxml2
 	makedepends = git
 	makedepends = libboost-all-dev
@@ -3894,6 +3891,12 @@ pkgbase = gnucash
 	repology = project: gnucash
 	source = https://github.com/Gnucash/gnucash/releases/download/5.10/gnucash-5.10.tar.gz
 	sha256sums = 7370fa0f56b574ff459745b6154ca02076e4f2ef97d2907c8721605225b80524
+	depends_ubuntu = libdbi1t64
+	depends_ubuntu = libofx7t64
+	depends_ubuntu = libgwengui-gtk3-79t64
+	depends_debian = libdbi1
+	depends_debian = libofx7
+	depends_debian = libgwengui-gtk3-79
 
 pkgname = gnucash
 ---

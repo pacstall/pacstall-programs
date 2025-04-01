@@ -16,7 +16,9 @@ sha256sums=(
 maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
 license=("GPL-2.0-or-later")
 # It is highly likely that some of the (make)dependencies are not needed, if anyone wants to check each one, be my guest lol...
-depends=('libaqbanking44' 'libaqbanking-dev' 'libboost-all-dev' 'guile-3.0' 'libdbi1t64' 'libwebkit2gtk-4.1-0' 'libofx7t64' 'libgwengui-gtk3-79t64' 'libxml2')
+depends=('libaqbanking44' 'libaqbanking-dev' 'libboost-all-dev' 'guile-3.0' 'libwebkit2gtk-4.1-0' 'libxml2')
+depends_ubuntu=('libdbi1t64' 'libofx7t64' 'libgwengui-gtk3-79t64')
+depends_debian=('libdbi1' 'libofx7' 'libgwengui-gtk3-79')
 optdepends=('evince: for print preview'
   'libdate-manip-perl: for stock information lookups'
   'libfinance-quote-perl: for stock information lookups')
