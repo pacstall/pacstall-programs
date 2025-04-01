@@ -1,6 +1,6 @@
 pkgname="lm-studio-app"
 gives="lm-studio"
-pkgver="0.3.13-2"
+pkgver="0.3.14-5"
 pkgdesc="Experiment with LLMs on your computer."
 url='https://lmstudio.ai'
 arch=('amd64')
@@ -11,7 +11,7 @@ source=(
 )
 appimage="LM-Studio-${pkgver}-x64.AppImage"
 sha256sums=(
-  "5a05217e4f0588e22e6aa9c4d61d3eacdc4f11023179d17e0f48357ec3294908"
+  "5ab3bde5ecfcd7f0345354edd4e8b63f2529ea7bec9903332b4554547d5361b8"
 )
 maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
 
