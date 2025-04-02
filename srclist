@@ -13290,7 +13290,7 @@ pkgbase = ttf-fira-sans
 pkgname = ttf-fira-sans
 ---
 pkgbase = tuckr-git
-	pkgver = 0.11.1
+	pkgver = 0.11.0
 	pkgrel = 1
 	epoch = 1
 	pkgdesc = A super powered replacement for GNU Stow
@@ -13303,7 +13303,7 @@ pkgbase = tuckr-git
 	license = GPL-3.0
 	maintainer = Bahar KURT <kurtbahartr@gmail.com>
 	repology = project: tuckr
-	source = git+https://github.com/RaphGL/Tuckr#tag=0.11.1
+	source = git+https://github.com/RaphGL/Tuckr#tag=0.11.0
 	sha256sums = SKIP
 
 pkgname = tuckr-git
