@@ -13,13 +13,6 @@ repology=("project: tuckr")
 maintainer=("Bahar KURT <kurtbahartr@gmail.com>")
 external_connection=true
 
-prepare() {
-  cd Tuckr
-  echo 'cargo-features = ["edition2024"]' > Cargo.toml.tmp
-  cat Cargo.toml >> Cargo.toml.tmp
-  mv Cargo.toml.tmp Cargo.toml
-}
-
 build() {
   export RUSTUP_TOOLCHAIN=stable
   export CARGO_TARGET_DIR=target
