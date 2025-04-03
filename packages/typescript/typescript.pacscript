@@ -15,6 +15,7 @@ makedepends=(
 source=("git+https://github.com/microsoft/${_name}.git#tag=v${pkgver}")
 b2sums=('4dca488b389c44058ff7745427817b1f60f41e2fe11363d88f9a14685d3667ea5ee18b7517a2e066c402cc97ff019f422a4176cdbb93600a0f465d9cb874ecbc')
 external_connection=true
+maintainer=("Bahar KURT <kurtbahartr@gmail.com>")
 
 prepare() {
   cd "${_name}"
