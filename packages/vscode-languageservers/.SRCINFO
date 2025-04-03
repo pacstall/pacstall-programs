@@ -1,6 +1,5 @@
 pkgbase = vscode-languageservers
 	pkgver = 1.97.0
-	pkgrel = 1
 	pkgdesc = VS Code language servers
 	url = https://github.com/Microsoft/vscode
 	arch = any
