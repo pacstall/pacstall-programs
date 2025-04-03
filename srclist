@@ -9169,6 +9169,7 @@ pkgbase = oh-my-posh-git
 	pacdeps = nerd-fonts-hack
 	breaks = oh-my-posh
 	replaces = oh-my-posh
+	incompatible = *:bookworm
 	maintainer = Zahrun <Zahrun@github.com>
 	source = https://github.com/JanDeDobbeleer/oh-my-posh.git
 
