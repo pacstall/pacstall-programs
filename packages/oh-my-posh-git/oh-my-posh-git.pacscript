@@ -3,13 +3,12 @@ gives="oh-my-posh"
 source=("https://github.com/JanDeDobbeleer/oh-my-posh.git")
 arch=("any")
 pkgver="25.12.0"
-makedepends=("golang-go")
+makedepends=("golang-go>=1.24")
 pacdeps=("nerd-fonts-hack")
 breaks=("${gives}")
 replaces=("${gives}")
 pkgdesc="A prompt theme engine for any shell"
 maintainer=("Zahrun <Zahrun@github.com>")
-incompatible=('*:bookworm')
 external_connection=true
 
 build() {
