@@ -14779,7 +14779,7 @@ pkgbase = youtube-music-deb
 pkgname = youtube-music-deb
 ---
 pkgbase = yt-dlp
-	pkgver = 2024.11.04
+	pkgver = 2025.03.31
 	pkgdesc = A youtube-dl fork with additional features and fixes
 	arch = all
 	depends = python3
@@ -14789,8 +14789,8 @@ pkgbase = yt-dlp
 	breaks = yt-dlp
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: yt-dlp
-	source = https://github.com/yt-dlp/yt-dlp/releases/download/2024.11.04/yt-dlp
-	sha256sums = dad4a9ce9db902cf1e69ca71c0ca778917fa5a804a2ab43bac612b0abef76314
+	source = https://github.com/yt-dlp/yt-dlp/releases/download/2025.03.31/yt-dlp
+	sha256sums = 0e8bc5558efce5ae2a6397710eed72fd8d434e45904e4fe029dd21c610a95d4d
 
 pkgname = yt-dlp
 ---
