@@ -13313,7 +13313,6 @@ pkgname = tutanota-app
 ---
 pkgbase = typescript
 	pkgver = 5.8.2
-	pkgrel = 1
 	pkgdesc = JavaScript with syntax for types
 	url = http://www.typescriptlang.org
 	arch = any

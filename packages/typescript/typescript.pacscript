@@ -1,16 +1,15 @@
-_name=TypeScript
-pkgname=typescript
-pkgver=5.8.2
-pkgrel=1
+_name="TypeScript"
+pkgname="typescript"
+pkgver="5.8.2"
 pkgdesc='JavaScript with syntax for types'
-arch=(any)
-url=http://www.typescriptlang.org
-license=(Apache-2.0)
-depends=(nodejs)
+arch=("any")
+url="http://www.typescriptlang.org"
+license=("Apache-2.0")
+depends=("nodejs")
 makedepends=(
-  git
-  npm
-  rsync
+  "git"
+  "npm"
+  "rsync"
 )
 source=("git+https://github.com/microsoft/${_name}.git#tag=v${pkgver}")
 b2sums=('4dca488b389c44058ff7745427817b1f60f41e2fe11363d88f9a14685d3667ea5ee18b7517a2e066c402cc97ff019f422a4176cdbb93600a0f465d9cb874ecbc')
