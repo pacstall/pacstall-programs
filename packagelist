@@ -730,6 +730,10 @@ vivarium
 vkroots-git
 vscode-deb
 vscode-insiders-deb
+vscode-languageservers:pkgbase
+vscode-languageservers:vscode-css-languageserver
+vscode-languageservers:vscode-json-languageserver
+vscode-languageservers:vscode-html-languageserver
 vscodium-bin
 vscodium-deb
 vyprvpn-deb
