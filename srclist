@@ -14786,7 +14786,6 @@ pkgbase = yt-dlp
 	depends = ffmpeg
 	breaks = yt-dlp-git
 	breaks = yt-dlp-bin
-	breaks = yt-dlp
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: yt-dlp
 	source = https://github.com/yt-dlp/yt-dlp/releases/download/2025.03.31/yt-dlp
