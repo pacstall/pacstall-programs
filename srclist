@@ -9162,15 +9162,13 @@ pkgname = obsidian-deb
 ---
 pkgbase = oh-my-posh-git
 	gives = oh-my-posh
-	pkgver = 20.0.0
-	pkgrel = 2
+	pkgver = 25.12.0
 	pkgdesc = A prompt theme engine for any shell
 	arch = any
-	makedepends = golang-1.22-go
+	makedepends = golang-go
 	pacdeps = nerd-fonts-hack
 	breaks = oh-my-posh
 	replaces = oh-my-posh
-	incompatible = *:bookworm
 	maintainer = Zahrun <Zahrun@github.com>
 	source = https://github.com/JanDeDobbeleer/oh-my-posh.git
 
