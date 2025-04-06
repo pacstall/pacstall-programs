@@ -3070,7 +3070,7 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 136.0.2
+	pkgver = 137.0
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3080,10 +3080,10 @@ pkgbase = firefox-bin
 	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/136.0.2/linux-x86_64/en-US/firefox-136.0.2.tar.xz
-	sha256sums_amd64 = 7ea3882e814669784f0960e4d6bb50a0ac88997a1d17fb125d0f411961ad763a
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/136.0.2/linux-aarch64/en-US/firefox-136.0.2.tar.xz
-	sha256sums_arm64 = f5d1fdf3234a44b0ff03e58a845a760d11a54e89c94c285468be4553bce1cd4e
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/137.0/linux-x86_64/en-US/firefox-137.0.tar.xz
+	sha256sums_amd64 = 4d2d0a64a11f8aab7a1be583e1e4cddfaf2671967212b369a87489f3c11c3ac9
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/137.0/linux-aarch64/en-US/firefox-137.0.tar.xz
+	sha256sums_arm64 = 132bc5ae758b1220980de9c7bded74bff53dd70e24e8f3085d9b3ff45d25b71a
 
 pkgname = firefox-bin
 ---
@@ -9904,7 +9904,7 @@ pkgname = pfetch-bin
 ---
 pkgbase = pgadmin4-desktop-deb
 	gives = pgadmin4-desktop
-	pkgver = 9.1
+	pkgver = 9.2
 	pkgdesc = Desktop user interface for pgAdmin
 	arch = amd64
 	makedepends = apparmor-profiles
@@ -9916,20 +9916,20 @@ pkgbase = pgadmin4-desktop-deb
 	compatible = ubuntu:devel
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: pgadmin4-desktop
-	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.1_amd64.deb
-	sha256sums = 46ee5f20de11a9c5609ce1497a913e3056e94a791b41f4890e11a56343a3d765
-	source_jammy = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.1_amd64.deb
-	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.1_amd64.deb
-	source_bookworm = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/bookworm/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.1_amd64.deb
-	sha256sums_jammy = bef0997cc66df5d0a3b67405036195f9a339bc6e5d80dc3ce08e957b57e60286
-	sha256sums_noble = ef27abbd92f27abc6313a3283d0267e4c4e2e351fa63ce586ba3ec42c970ce05
-	sha256sums_bookworm = 86f677f5404acb2f05c18ccd74f5403c3270d79264807ea12687d8a6c979ffec
+	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.2_amd64.deb
+	sha256sums = c4b9c989b17ceef4aec2d5b451c56d4d9d4cfbbf97e9f2ffac788e15431b277b
+	source_jammy = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.2_amd64.deb
+	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.2_amd64.deb
+	source_bookworm = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/bookworm/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.2_amd64.deb
+	sha256sums_jammy = dc39470d013e72518b1467ca64c6cd22bc624bbcb3cb89ca07125d9df173f6b0
+	sha256sums_noble = 37932336a9948a56afdd861eab47263364a227dd89f56d15f28fe785673e0b05
+	sha256sums_bookworm = 840539d3fc715b0f3661ece46135a4b35e4792b9d692440ebb47cc60133ec41a
 
 pkgname = pgadmin4-desktop-deb
 ---
 pkgbase = pgadmin4-server-deb
 	gives = pgadmin4-server
-	pkgver = 9.1
+	pkgver = 9.2
 	pkgdesc = Core server package for pgAdmin
 	arch = amd64
 	compatible = debian:bookworm
@@ -9939,14 +9939,14 @@ pkgbase = pgadmin4-server-deb
 	compatible = ubuntu:devel
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: pgadmin4-server
-	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.1_amd64.deb
-	sha256sums = 92bb880e09a981f3ecdd18e74b414eb3d4f7f4a3b9fcd63522ad31ffd7baf32b
-	source_jammy = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.1_amd64.deb
-	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.1_amd64.deb
-	source_bookworm = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/bookworm/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.1_amd64.deb
-	sha256sums_jammy = 288b8679173902a9ea3b139a7931b15a39fb13bebb429ac6cab327df1ab4d0a7
-	sha256sums_noble = d71e9f04133f8fe79ee64261c3c5081bbd812ebf45a6322891e5ab17c21e2a03
-	sha256sums_bookworm = bf94a53f5c0e8e78cdf51caa4aa4bb143cab86fb015eed94615abb4b41d123c1
+	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.2_amd64.deb
+	sha256sums = 7de4c052a839c0c413b9eec8dff745b97aa9a69f8e9f138ad8b5e369c339f7d2
+	source_jammy = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.2_amd64.deb
+	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.2_amd64.deb
+	source_bookworm = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/bookworm/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.2_amd64.deb
+	sha256sums_jammy = 35f8d600e1ae7b319a1c73e975eabc3985b857c8fa5a523a92ac8cc5cf2e3a71
+	sha256sums_noble = 29fcc08eb2c2f52f2c493cd7a102016e9f9dfd2c1ac3e880b282c4db7802861b
+	sha256sums_bookworm = 7339fe8dd1e73d843ae16d7415d7198fb8ffda72e89ad419f1e1df075f41484c
 
 pkgname = pgadmin4-server-deb
 ---
@@ -11911,7 +11911,7 @@ pkgname = simplex-desktop-app
 ---
 pkgbase = slack-deb
 	gives = slack-desktop
-	pkgver = 4.36.138
+	pkgver = 4.41.105
 	pkgdesc = Slack is a new way to communicate with your team. It's faster, better organized, and more secure than email.
 	arch = amd64
 	breaks = slack-desktop
@@ -11921,8 +11921,8 @@ pkgbase = slack-deb
 	replaces = slack-desktop
 	maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
 	repology = project: slack
-	source = https://downloads.slack-edge.com/releases/linux/4.36.138/prod/x64/slack-desktop-4.36.138-amd64.deb
-	sha256sums = 4f5b1eb378d5a58a364f9dc70df5c0ccd9be0cedbab42df7193ddfbb1d2a021a
+	source = https://downloads.slack-edge.com/desktop-releases/linux/x64/4.41.105/slack-desktop-4.41.105-amd64.deb
+	sha256sums = 47696e49067a427e2db9b25157519abe1f61711c61050756d3c6b1232687803d
 
 pkgname = slack-deb
 ---
@@ -13310,6 +13310,22 @@ pkgbase = tutanota-app
 	sha256sums = e76f83c33cab7c3b1e7d4c827927e0c883bc7f41cb2e2f3ce7d493cd96970d76
 
 pkgname = tutanota-app
+---
+pkgbase = typescript
+	pkgver = 5.8.2
+	pkgdesc = JavaScript with syntax for types
+	url = http://www.typescriptlang.org
+	arch = any
+	depends = nodejs
+	makedepends = git
+	makedepends = npm
+	makedepends = rsync
+	license = Apache-2.0
+	maintainer = Bahar KURT <kurtbahartr@gmail.com>
+	source = git+https://github.com/microsoft/TypeScript.git#tag=v5.8.2
+	b2sums = 4dca488b389c44058ff7745427817b1f60f41e2fe11363d88f9a14685d3667ea5ee18b7517a2e066c402cc97ff019f422a4176cdbb93600a0f465d9cb874ecbc
+
+pkgname = typescript
 ---
 pkgbase = typora-deb
 	gives = typora
@@ -15078,18 +15094,17 @@ pkgbase = youtube-music-deb
 pkgname = youtube-music-deb
 ---
 pkgbase = yt-dlp
-	pkgver = 2024.11.04
+	pkgver = 2025.03.31
 	pkgdesc = A youtube-dl fork with additional features and fixes
 	arch = all
 	depends = python3
 	depends = ffmpeg
 	breaks = yt-dlp-git
 	breaks = yt-dlp-bin
-	breaks = yt-dlp
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: yt-dlp
-	source = https://github.com/yt-dlp/yt-dlp/releases/download/2024.11.04/yt-dlp
-	sha256sums = dad4a9ce9db902cf1e69ca71c0ca778917fa5a804a2ab43bac612b0abef76314
+	source = https://github.com/yt-dlp/yt-dlp/releases/download/2025.03.31/yt-dlp
+	sha256sums = 0e8bc5558efce5ae2a6397710eed72fd8d434e45904e4fe029dd21c610a95d4d
 
 pkgname = yt-dlp
 ---
@@ -15148,7 +15163,8 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.10.3b
+	pkgver = 1.11b
+	pkgrel = 2
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -15183,8 +15199,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.10.3b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 122fc0957cfa0698bc233dd8e26396d8fc7839144f8514a7ed176d27a6570102
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.11b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = c408f32bacfa81227488fec4beacc5e7eb04354d68e54776b328af030f22bc3b
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -15194,8 +15210,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.10.3b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = 60344dd9ffb7aade93d0f2d4f09e9a36b69d9bd103d8505e8c96e41e896789e5
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.11b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 998e0329d1ecb7f5b5c84ee757de02fe201a0e8a3afa315f8f7afb433d13f3fb
 
 pkgname = zen-browser-bin
 ---

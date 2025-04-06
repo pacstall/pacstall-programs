@@ -1,6 +1,7 @@
 pkgname="zen-browser-bin"
 gives="zen-browser"
-pkgver="1.10.3b"
+pkgver="1.11b"
+pkgrel=2
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
 url="https://zen-browser.app/"
 license=("MPL-2.0")
@@ -12,10 +13,10 @@ depends_amd64=("libpangocairo-1.0-0" "libxcursor1" "libxi6" "libxrender1")
 depends_arm64=("libevent-2.1-7" "libffi8" "libnspr4" "libnss3" "libvpx9" "zlib1g" "fontconfig" "procps" "debianutils")
 
 source_amd64=("https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-x86_64.tar.xz")
-sha256sums_amd64=('122fc0957cfa0698bc233dd8e26396d8fc7839144f8514a7ed176d27a6570102')
+sha256sums_amd64=('c408f32bacfa81227488fec4beacc5e7eb04354d68e54776b328af030f22bc3b')
 
 source_arm64=("https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-aarch64.tar.xz")
-sha256sums_arm64=('60344dd9ffb7aade93d0f2d4f09e9a36b69d9bd103d8505e8c96e41e896789e5')
+sha256sums_arm64=('998e0329d1ecb7f5b5c84ee757de02fe201a0e8a3afa315f8f7afb433d13f3fb')
 
 package() {
   cd "${srcdir}"
