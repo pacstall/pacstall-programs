@@ -6,7 +6,7 @@ pkgbase = vscode-languageservers
 	depends = nodejs
 	makedepends = git
 	makedepends = npm
-	makedepends = typescript
+	pacdeps = typescript
 	license = MIT
 	maintainer = Bahar KURT <kurtbahartr@gmail.com>
 	source = git+https://github.com/Microsoft/vscode.git#tag=1.97.0

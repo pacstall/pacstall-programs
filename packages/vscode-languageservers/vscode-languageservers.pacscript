@@ -13,8 +13,8 @@ depends=("nodejs")
 makedepends=(
   "git"
   "npm"
-  "typescript"
 )
+pacdeps=("typescript")
 source=("git+${url}.git#tag=${pkgver}")
 b2sums=('b24ba35d9b48dda55304b711d55c465b7f9ae392fbac92f5ed1886c401e9989dabe5acd4b7f055b3e8ab861ef92192d6fba2e59aeffc84394d2f735832087709')
 external_connection=true
