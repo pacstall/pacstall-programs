@@ -36,43 +36,70 @@ build() {
   done
 }
 
-_package() {
-  install -d "${pkgdir}"/usr/{bin,lib/node_modules/"$1"}
-  install -Dm644 -t "${pkgdir}"/usr/share/licenses/"$1" vscode/LICENSE.txt
+package_vscode-css-languageserver() {
+  # ported from original function:
+  # case "$1" in
+  #   vscode-css-languageserver)
+  pkgdesc='CSS/LESS/SCSS language server'
+
+  install -d "${pkgdir}"/usr/{bin,lib/node_modules/vscode-css-languageserver}
+  install -Dm644 -t "${pkgdir}"/usr/share/licenses/vscode-css-languageserver vscode/LICENSE.txt
 
   cd vscode/extensions
 
-  case "$1" in
-    vscode-css-languageserver)
-      pkgdesc='CSS/LESS/SCSS language server'
+  printf '%s\n' '#!/usr/bin/env node' "require('/usr/lib/node_modules/vscode-css-languageserver/out/node/cssServerMain');" > "${pkgdir}"/usr/bin/vscode-css-languageserver
+  ln -s vscode-css-languageserver "${pkgdir}"/usr/bin/vscode-css-language-server
+  cd css-language-features/server
+  #   ;;
+  # esac
 
-      printf '%s\n' '#!/usr/bin/env node' "require('/usr/lib/node_modules/$1/out/node/cssServerMain');" > "${pkgdir}"/usr/bin/"$1"
-      ln -s "$1" "${pkgdir}"/usr/bin/vscode-css-language-server
-      cd css-language-features/server
-      ;;
-    vscode-html-languageserver)
-      pkgdesc='HTML language server'
-      depends+=('typescript')
-
-      printf '%s\n' '#!/usr/bin/env node' "require('/usr/lib/node_modules/$1/out/node/htmlServerMain');" > "${pkgdir}"/usr/bin/"$1"
-      ln -s "$1" "${pkgdir}"/usr/bin/vscode-html-language-server
-      cd html-language-features/server
-      ;;
-    vscode-json-languageserver)
-      pkgdesc='JSON language server'
-
-      printf '%s\n' '#!/usr/bin/env node' "require('/usr/lib/node_modules/$1/out/node/jsonServerMain');" > "${pkgdir}"/usr/bin/"$1"
-      ln -s "$1" "${pkgdir}"/usr/bin/vscode-json-language-server
-      cd json-language-features/server
-      ;;
-    *) ;;
-  esac
-
-  chmod +x "${pkgdir}"/usr/bin/"$1"
+  chmod +x "${pkgdir}"/usr/bin/vscode-css-languageserver
   rm -r node_modules/@types
-  cp -r node_modules out package.json "${pkgdir}"/usr/lib/node_modules/"$1"
+  cp -r node_modules out package.json "${pkgdir}"/usr/lib/node_modules/vscode-css-languageserver
 }
 
-for _pkgname in "${pkgname[@]}"; do
-  eval "package_${_pkgname}() { _package ${_pkgname}; }"
-done
+package_vscode-html-languageserver() {
+  # ported from original function:
+  # case "$1" in
+  #   vscode-html-languageserver)
+  pkgdesc='HTML language server'
+  # pacdeps already logs this as part of the pkgbase
+  #depends+=("typescript")
+
+  install -d "${pkgdir}"/usr/{bin,lib/node_modules/vscode-html-languageserver}
+  install -Dm644 -t "${pkgdir}"/usr/share/licenses/vscode-html-languageserver vscode/LICENSE.txt
+
+  cd vscode/extensions
+
+  printf '%s\n' '#!/usr/bin/env node' "require('/usr/lib/node_modules/vscode-html-languageserver/out/node/htmlServerMain');" > "${pkgdir}"/usr/bin/vscode-html-languageserver
+  ln -s vscode-html-languageserver "${pkgdir}"/usr/bin/vscode-html-language-server
+  cd html-language-features/server
+  #   ;;
+  # esac
+
+  chmod +x "${pkgdir}"/usr/bin/vscode-html-languageserver
+  rm -r node_modules/@types
+  cp -r node_modules out package.json "${pkgdir}"/usr/lib/node_modules/vscode-html-languageserver
+}
+
+package_vscode-json-languageserver() {
+  # ported from original function:
+  # case "$1" in
+  #   vscode-json-languageserver)
+  pkgdesc='JSON language server'
+
+  install -d "${pkgdir}"/usr/{bin,lib/node_modules/vscode-json-languageserver}
+  install -Dm644 -t "${pkgdir}"/usr/share/licenses/vscode-json-languageserver vscode/LICENSE.txt
+
+  cd vscode/extensions
+
+  printf '%s\n' '#!/usr/bin/env node' "require('/usr/lib/node_modules/vscode-json-languageserver/out/node/jsonServerMain');" > "${pkgdir}"/usr/bin/vscode-json-languageserver
+  ln -s vscode-json-languageserver "${pkgdir}"/usr/bin/vscode-json-language-server
+  cd json-language-features/server
+  #   ;;
+  # esac
+
+  chmod +x "${pkgdir}"/usr/bin/vscode-json-languageserver
+  rm -r node_modules/@types
+  cp -r node_modules out package.json "${pkgdir}"/usr/lib/node_modules/vscode-json-languageserver
+}
