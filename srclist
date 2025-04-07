@@ -13297,7 +13297,7 @@ pkgbase = tuckr-git
 	arch = amd64
 	arch = i386
 	arch = arm64
-	makedepends = cargo>=1.84
+	makedepends = cargo>=1.80
 	makedepends = git
 	license = GPL-3.0
 	maintainer = Bahar KURT <kurtbahartr@gmail.com>
