@@ -31,7 +31,7 @@ prepare() {
 build() {
   for i in css html json; do
     pushd vscode/extensions/"${i}-language-features"/server
-    tsc || true
+    tsc
     popd
   done
 }
