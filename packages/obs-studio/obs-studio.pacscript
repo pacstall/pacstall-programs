@@ -51,7 +51,12 @@ makedepends=(
   "libva-dev" "libvlc-dev" "libvpl-dev" "libdrm-dev" "nlohmann-json3-dev"
   "libwebsocketpp-dev" "libasio-dev" "libffmpeg-nvenc-dev"
 )
-optdepends=("libfdk-aac2t64 | libfdk-aac2: Standalone library of the Fraunhofer FDK AAC code from Android")
+optdepends=(
+  "libfdk-aac2t64 | libfdk-aac2: FDK AAC codec support"
+  "sndiod: sndio input client"
+  "v4l2loopback-dkms: Virtual camera support"
+  "vlc: VLC Media Source"
+)
 pacdeps=("rnnoise")
 pkgdesc="Free and open source software for live streaming and screen recording"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
