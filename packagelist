@@ -80,6 +80,7 @@ cortile
 cortile-bin
 couture
 cromite-bin
+ctop-bin
 cutefish-calculator-git
 cutefish-core-git
 cutefish-dock-git
@@ -95,6 +96,7 @@ davinci-resolve
 dbeaver-ce-deb
 deadbeef-deb
 deskcut-deb
+digikam-app
 dino-git
 directx-headers-git
 discord
@@ -174,10 +176,13 @@ fsearch-git
 fselect-git
 fzf-bin
 galaxybudsclient-bin
-geekbench-bin
+geekbench4-bin
+geekbench5-bin
+geekbench6-bin
 genymotion-bin
 gfn-electron-bin
 ghcup-bin
+ghostty-app
 gir1.2-xapp-1.0-deb
 git
 git-butler-deb
@@ -268,6 +273,7 @@ kakoune
 kalendar-git
 kate-backport-deb
 kate5-data-backport-deb
+kdenlive-app
 keepassxc
 keybase-deb
 kirc
@@ -333,6 +339,7 @@ linux-modules-lts-6.6-deb
 linux-modules-stable-deb
 linux-wifi-hotspot-deb
 lix-git
+lm-studio-app
 lrz-syncshare-deb
 lsd-deb
 lunacy-deb
@@ -471,12 +478,14 @@ nu-tongues-bin
 nuclear-deb
 nuclei-bin
 nushell-bin
+nutext-bin
 nutext-git
 obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-deb
 obs-backgroundremoval-git
 obs-ndi-deb
+obs-studio
 obs-studio-deb
 obsidian-deb
 oh-my-posh-git
@@ -491,6 +500,7 @@ opendoas-git
 openrgb-git
 opensnitch-deb
 opensnitch-ui-deb
+opentabletdriver-deb
 opentoonz
 openvr
 opera-beta-deb
@@ -690,12 +700,14 @@ treefetch-bin
 truckersmp-cli
 ttf-fira-sans
 tutanota-app
+typescript
 typora-deb
 u-boot-mobian-deb
 ufetch-debian
 ufetch-ubuntu
 ugee-tablet-driver-deb
 ulauncher-deb
+umu-launcher-git
 ungoogled-chromium-bin
 ungoogled-chromium-deb
 unicons-git
@@ -725,6 +737,7 @@ vyprvpn-deb
 waf
 walc-app
 warp
+warp-terminal-deb
 warpinator-deb
 watchexec-bin
 wavey-launcher-bin
