@@ -12222,6 +12222,7 @@ pkgbase = spot-client-git
 	makedepends = openssl
 	makedepends = libssl-dev
 	makedepends = libgstreamer-plugins-base1.0-dev
+	makedepends = libglib2.0-dev
 	pacdeps = blueprint-compiler
 	incompatible = ubuntu:bionic
 	incompatible = ubuntu:focal
