@@ -12201,7 +12201,7 @@ pkgname = spacecadetpinball-git
 ---
 pkgbase = spot-client-git
 	gives = spot-client
-	pkgver = 0.4.0
+	pkgver = 0.5.0
 	pkgdesc = Gtk/Rust native Spotify (premium only) client
 	arch = amd64
 	depends = libgtk-4-dev
@@ -12221,6 +12221,8 @@ pkgbase = spot-client-git
 	makedepends = cmake
 	makedepends = openssl
 	makedepends = libssl-dev
+	makedepends = libgstreamer-plugins-base1.0-dev
+	pacdeps = blueprint-compiler
 	incompatible = ubuntu:bionic
 	incompatible = ubuntu:focal
 	incompatible = ubuntu:jammy
