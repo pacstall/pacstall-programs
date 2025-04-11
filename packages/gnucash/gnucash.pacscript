@@ -31,7 +31,7 @@ build() {
     -DHAVE_GWEN_GTK3=ON \
     -DCOMPILE_GSCHEMAS=OFF \
     -DCMAKE_BUILD_TYPE=RelWithDebInfo
-  make VERBOSE=0
+  make VERBOSE=0 -j"${NCPU}"
 }
 
 package() {
