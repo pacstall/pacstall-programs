@@ -290,6 +290,8 @@ lazygit
 lbry-deb
 legcord-deb
 lemonbar-xft-git
+lenovolegionlinux-dkms-git
+lenovolegionlinux-git
 lens
 lf-bin
 libaquamarine-bin
@@ -559,6 +561,7 @@ ptyxis
 pulsar-deb
 pycharm-community-bin
 python3-anyascii
+python3-darkdetect
 python3-editables
 python3-flit-core
 python3-fvs
