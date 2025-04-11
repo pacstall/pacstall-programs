@@ -1,0 +1,10 @@
+pkgname="whatdesk-deb"
+gives="whatdesk"
+pkgver="0.3.9"
+pkgdesc="WhatsDesk is a unofficial client of whatsapp. This project is only inserting an instance of Whatsapp Web in an electron app and adds/enables desktop notifications."
+maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
+arch=('amd64')
+source=("https://zerkc.gitlab.io/whatsdesk/whatsdesk_${pkgver}_amd64.deb")
+sha256sums=("4756f5c9f22e889fcec3aa34c587cb10bc6e7ccb476d6481e58267c4f6df181e")
+url='https://gitlab.com/zerkc/whatsdesk'
+repology=("project: ${gives}")
