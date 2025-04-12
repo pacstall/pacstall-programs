@@ -42,5 +42,5 @@ package() {
   # Delete the gnucash-valgrind executable because the source files
   # are not included with the package and the executable is hardlinked
   # to the location that it was built at.
-  rm -f "${pkgdir}"/usr/bin/gnucash-valgrind
+  rm -f "${pkgdir}/usr/bin/gnucash-valgrind"
 }
