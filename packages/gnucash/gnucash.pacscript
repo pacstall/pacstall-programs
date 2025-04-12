@@ -21,7 +21,7 @@ optdepends=('evince: for print preview'
 makedepends=('git' 'cmake' 'swig' 'pkg-config' 'libwebkit2gtk-4.1-dev' 'libxml2-dev' 'libxslt-dev' 'libaqbanking-dev' 'libboost-all-dev' 'guile-3.0-dev' 'libgwengui-gtk3-dev' 'libofx-dev' 'xsltproc' 'libdbi-dev' 'libdbd-mysql' 'libgtest-dev')
 
 build() {
-  cd "${srcdir}"/"${pkgname}-${pkgver}"
+  cd "${srcdir}/${pkgname}-${pkgver}"
 
   mkdir -p build
   cd build
