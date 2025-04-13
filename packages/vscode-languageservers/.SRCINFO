@@ -10,7 +10,6 @@ pkgbase = vscode-languageservers
 	license = MIT
 	maintainer = Bahar KURT <kurtbahartr@gmail.com>
 	source = git+https://github.com/Microsoft/vscode.git#tag=1.97.0
-	b2sums = SKIP
 
 pkgname = vscode-css-languageserver
 	pkgdesc = CSS/LESS/SCSS language server

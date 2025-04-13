@@ -16,8 +16,6 @@ makedepends=(
 )
 pacdeps=("typescript")
 source=("git+${url}.git#tag=${pkgver}")
-# oklopfer: the b2sum isn't needed if its from a git repo
-b2sums=('SKIP')
 external_connection=true
 maintainer=("Bahar KURT <kurtbahartr@gmail.com>")
 
