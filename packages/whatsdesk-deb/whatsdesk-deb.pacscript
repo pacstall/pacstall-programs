@@ -1,7 +1,7 @@
 pkgname="whatsdesk-deb"
 gives="whatsdesk"
 pkgver="0.3.9-76"
-pkgdesc="Unofficial client of Whatsapp."
+pkgdesc="Unofficial client of Whatsapp"
 maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
 arch=('amd64')
 source=("https://zerkc.gitlab.io/whatsdesk/whatsdesk_0.3.9_amd64.deb")
