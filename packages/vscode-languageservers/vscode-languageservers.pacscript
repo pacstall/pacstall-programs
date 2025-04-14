@@ -4,7 +4,7 @@ pkgname=(
   "vscode-json-languageserver"
 )
 pkgbase="vscode-languageservers"
-pkgver="1.97.0"
+pkgver="1.99.2"
 pkgdesc='VS Code language servers'
 arch=("any")
 url='https://github.com/Microsoft/vscode'
