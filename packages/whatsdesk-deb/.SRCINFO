@@ -1,7 +1,7 @@
 pkgbase = whatsdesk-deb
 	gives = whatsdesk
 	pkgver = 0.3.9-76
-	pkgdesc = Unofficial client of Whatsapp.
+	pkgdesc = Unofficial client of Whatsapp
 	url = https://gitlab.com/zerkc/whatsdesk
 	arch = amd64
 	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
