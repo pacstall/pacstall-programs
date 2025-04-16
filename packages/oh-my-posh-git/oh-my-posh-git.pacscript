@@ -3,7 +3,7 @@ gives="oh-my-posh"
 source=("https://github.com/JanDeDobbeleer/oh-my-posh.git")
 arch=("any")
 pkgver="25.12.0"
-makedepends=("golang-go>=1.24")
+makedepends=("golang-1.24-go=1.24.1")
 pacdeps=("nerd-fonts-hack")
 breaks=("${gives}")
 replaces=("${gives}")

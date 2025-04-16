@@ -9165,7 +9165,7 @@ pkgbase = oh-my-posh-git
 	pkgver = 25.12.0
 	pkgdesc = A prompt theme engine for any shell
 	arch = any
-	makedepends = golang-go>=1.24
+	makedepends = golang-1.24-go=1.24.1
 	pacdeps = nerd-fonts-hack
 	breaks = oh-my-posh
 	replaces = oh-my-posh
