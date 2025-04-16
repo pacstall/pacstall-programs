@@ -1,0 +1,21 @@
+pkgbase = vscode-languageservers
+	pkgver = 1.99.2
+	pkgdesc = VS Code language servers
+	url = https://github.com/Microsoft/vscode
+	arch = any
+	depends = nodejs
+	makedepends = git
+	makedepends = npm
+	pacdeps = typescript
+	license = MIT
+	maintainer = Bahar KURT <kurtbahartr@gmail.com>
+	source = git+https://github.com/Microsoft/vscode.git#tag=1.99.2
+
+pkgname = vscode-css-languageserver
+	pkgdesc = CSS/LESS/SCSS language server
+
+pkgname = vscode-html-languageserver
+	pkgdesc = HTML language server
+
+pkgname = vscode-json-languageserver
+	pkgdesc = JSON language server

@@ -1,10 +1,10 @@
 pkgname="linux-headers-deb"
-gives="linux-headers-6.14.0-061400rc3"
-pkgver="6.14~rc3"
-buildver="6.14.0-061400rc3.202502181422"
+gives="linux-headers-6.15.0-061500rc2"
+pkgver="6.15~rc2"
+buildver="6.15.0-061500rc2.202504141349"
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/amd64/${gives}_${buildver}_all.deb")
 pkgdesc="Ubuntu Linux mainline kernel (Headers)"
-sha256sums=("a4b1b1d9af3a23ca1b35a38abb2c2726a07761188b6d7a8fcebc5340f286b688")
+sha256sums=("fb3953e5247e97acaa575970731e270e673cc0148f1884ccfbf91d9563c7b8af")
 arch=('all')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")
