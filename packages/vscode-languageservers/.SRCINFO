@@ -1,5 +1,5 @@
 pkgbase = vscode-languageservers
-	pkgver = 1.99.2
+	pkgver = 1.99.3
 	pkgdesc = VS Code language servers
 	url = https://github.com/Microsoft/vscode
 	arch = any
@@ -9,7 +9,7 @@ pkgbase = vscode-languageservers
 	pacdeps = typescript
 	license = MIT
 	maintainer = Bahar KURT <kurtbahartr@gmail.com>
-	source = git+https://github.com/Microsoft/vscode.git#tag=1.99.2
+	source = git+https://github.com/Microsoft/vscode.git#tag=1.99.3
 
 pkgname = vscode-css-languageserver
 	pkgdesc = CSS/LESS/SCSS language server
