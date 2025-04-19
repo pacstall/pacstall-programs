@@ -1,4 +1,4 @@
-pkgname=tuckr-git
+pkgname=tuckr
 pkgver=0.11.0
 pkgrel=1
 pkgdesc="A super powered replacement for GNU Stow"

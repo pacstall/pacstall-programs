@@ -13289,7 +13289,7 @@ pkgbase = ttf-fira-sans
 
 pkgname = ttf-fira-sans
 ---
-pkgbase = tuckr-git
+pkgbase = tuckr
 	pkgver = 0.11.0
 	pkgrel = 1
 	pkgdesc = A super powered replacement for GNU Stow
@@ -13305,7 +13305,7 @@ pkgbase = tuckr-git
 	source = git+https://github.com/RaphGL/Tuckr#tag=0.11.0
 	sha256sums = SKIP
 
-pkgname = tuckr-git
+pkgname = tuckr
 ---
 pkgbase = tutanota-app
 	gives = tutanota
