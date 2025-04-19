@@ -16,7 +16,7 @@ build() {
   export RUSTUP_TOOLCHAIN=stable
   export CARGO_TARGET_DIR=target
   cd Tuckr
-  cargo build --release
+  cargo build -j"${NCPU}" --release --locked
 }
 
 package() {
