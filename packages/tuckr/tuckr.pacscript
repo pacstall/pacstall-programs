@@ -3,7 +3,7 @@ pkgver=0.11.0
 pkgrel=1
 pkgdesc="Super powered replacement for GNU Stow"
 arch=('amd64' 'i386' 'arm64')
-url="https://github.com/RaphGL/Tuckr"
+url='https://github.com/RaphGL/Tuckr'
 license=('GPL-3.0')
 makedepends=('cargo>=1.80' 'git')
 source=("git+${url}#tag=${pkgver}")
