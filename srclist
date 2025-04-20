@@ -2108,7 +2108,7 @@ pkgbase = discord-ptb-deb
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.90
+	pkgver = 0.0.91
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2126,8 +2126,8 @@ pkgbase = discord
 	optdepends = fonts-noto-color-emoji: emoji support
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.90::https://dl.discordapp.net/apps/linux/0.0.90/discord-0.0.90.tar.gz
-	sha256sums = 99f428ef51b86796700eba16888d96e436f98ac331771e05c376fa5fee27ec58
+	source = @discord~0.0.91::https://dl.discordapp.net/apps/linux/0.0.91/discord-0.0.91.tar.gz
+	sha256sums = bc644ad5826868ce3eb546907787fb2266959d49007631fe456eebf9b38cc7a2
 
 pkgname = discord
 ---
