@@ -2097,13 +2097,13 @@ pkgname = discord-deb
 ---
 pkgbase = discord-ptb-deb
 	gives = discord-ptb
-	pkgver = 0.0.136
+	pkgver = 0.0.137
 	pkgdesc = Chat for Communities and Friends - Public Test Build
 	url = https://discord.com/
 	arch = amd64
 	repology = project: discord-ptb
-	source = https://dl-ptb.discordapp.net/apps/linux/0.0.136/discord-ptb-0.0.136.deb
-	sha256sums = 1f1dc6e077da8466db88d53e84534e260730f1dcf337a2082e11a55da0d8a205
+	source = https://dl-ptb.discordapp.net/apps/linux/0.0.137/discord-ptb-0.0.137.deb
+	sha256sums = 9a31f1c877593dd3698d2f3c3946c29de7c3105c8da1f44440e113315145fc10
 
 pkgname = discord-ptb-deb
 ---
@@ -3073,7 +3073,7 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 137.0
+	pkgver = 137.0.2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3083,10 +3083,10 @@ pkgbase = firefox-bin
 	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/137.0/linux-x86_64/en-US/firefox-137.0.tar.xz
-	sha256sums_amd64 = 4d2d0a64a11f8aab7a1be583e1e4cddfaf2671967212b369a87489f3c11c3ac9
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/137.0/linux-aarch64/en-US/firefox-137.0.tar.xz
-	sha256sums_arm64 = 132bc5ae758b1220980de9c7bded74bff53dd70e24e8f3085d9b3ff45d25b71a
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/137.0.2/linux-x86_64/en-US/firefox-137.0.2.tar.xz
+	sha256sums_amd64 = 3d6f07eddbd98ae96b55cd6ec95fcf18b61a139a0c68739c098954b5015c4b11
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/137.0.2/linux-aarch64/en-US/firefox-137.0.2.tar.xz
+	sha256sums_arm64 = 64550e9c1b93a41f0c407306935a9bae06113b4b68b9714fcc48e26f1e743008
 
 pkgname = firefox-bin
 ---
@@ -4883,13 +4883,13 @@ pkgname = hwinfo-git
 ---
 pkgbase = hydralauncher-deb
 	gives = hydralauncher
-	pkgver = 3.4.0
+	pkgver = 3.4.3
 	pkgdesc = Game launcher with its own embedded BitTorrent client
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: hydralauncher
-	source = https://github.com/hydralauncher/hydra/releases/download/v3.4.0/hydralauncher_3.4.0_amd64.deb
-	sha256sums = 9ec826e09d76485f3e0388d2fb7ab1f2dd566d25344c2f5e43629dadfa0902c4
+	source = https://github.com/hydralauncher/hydra/releases/download/v3.4.3/hydralauncher_3.4.3_amd64.deb
+	sha256sums = 4af40c7bf75be2279f76a7b0296f496209a08911f8f213dc1850246e7d761df9
 
 pkgname = hydralauncher-deb
 ---
@@ -5832,15 +5832,15 @@ pkgname = lazydocker-bin
 ---
 pkgbase = lazygit
 	gives = lazygit
-	pkgver = 0.48.0
+	pkgver = 0.49.0
 	pkgdesc = simple terminal UI for git commands
 	url = https://github.com/jesseduffield/lazygit
 	arch = amd64
 	depends = git
 	maintainer = Thomas Crha <thomas@9bitbyte.com>
 	maintainer = raik199x <raik199x@mail.ru>
-	source = @lazygit~0.48.0::https://github.com/jesseduffield/lazygit/releases/download/v0.48.0/lazygit_0.48.0_Linux_x86_64.tar.gz
-	sha256sums = 291722c643a10805de3bd7b58f51d5275878269aeadb046709708f8683f558d7
+	source = @lazygit~0.49.0::https://github.com/jesseduffield/lazygit/releases/download/v0.49.0/lazygit_0.49.0_Linux_x86_64.tar.gz
+	sha256sums = ae9c9a3fcea9cdaf6511a7ca0040210cc71ab481fc773e53737cbfe92da974ce
 
 pkgname = lazygit
 ---
@@ -7785,13 +7785,13 @@ pkgname = mold-bin
 ---
 pkgbase = mullvad-vpn-beta-deb
 	gives = mullvad-vpn
-	pkgver = 2023.4
+	pkgver = 2025.5
 	pkgdesc = The Mullvad VPN client app for desktop - Beta channel
 	arch = amd64
 	breaks = mullvad-vpn-deb
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2023.4/MullvadVPN-2023.4_amd64.deb
-	sha256sums = ecda227eb5f5ff7a542474d82bed9d568b3fa05b0a898c328421a2d3b4ac1213
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.5/MullvadVPN-2025.5_amd64.deb
+	sha256sums = 9fa08d6e21637aa3a04fbd97d88282382a7186fef27d56f5e5d8fccb5f7f5e5d
 
 pkgname = mullvad-vpn-beta-deb
 ---
@@ -9580,7 +9580,7 @@ pkgbase = os-installer-git
 pkgname = os-installer-git
 ---
 pkgbase = osu-lazer-app
-	pkgver = 2025.321.0
+	pkgver = 2025.418.0
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
 	url = https://osu.ppy.sh
 	arch = amd64
@@ -9590,11 +9590,11 @@ pkgbase = osu-lazer-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-app-2025.321.0.AppImage::https://github.com/ppy/osu/releases/download/2025.321.0/osu.AppImage
+	source = osu-lazer-app-2025.418.0.AppImage::https://github.com/ppy/osu/releases/download/2025.418.0/osu.AppImage
 	source = icon.png::https://raw.githubusercontent.com/ppy/osu/master/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = 98dc68131ff0809d4e526ef2f492dde6f1d2c1f701e3d42328355059968c0c94
+	sha256sums = 06b40162176acdeca8f1f42803c43cba9af379cc573dbae297ed7f96f61061b5
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
@@ -10930,13 +10930,13 @@ pkgname = quintom-cursor-theme-git
 ---
 pkgbase = r2modman-deb
 	gives = r2modman
-	pkgver = 3.1.57
+	pkgver = 3.1.58
 	pkgdesc = Simple and easy to use mod manager for many games using Thunderstore
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: r2modman
-	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.57/r2modman_3.1.57_amd64.deb
-	sha256sums = 8c78bf8987da252dec2d3ac515d715c63511d879a9ac684c0cf941262a52df9e
+	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.58/r2modman_3.1.58_amd64.deb
+	sha256sums = f97ebf293b98193450d57e8ede22560e08314fd457c7dab905fd009ca6f1ef3d
 
 pkgname = r2modman-deb
 ---
@@ -12680,7 +12680,7 @@ pkgname = tdrop-git
 ---
 pkgbase = teams-for-linux-deb
 	gives = teams-for-linux
-	pkgver = 2.0.5
+	pkgver = 2.0.8
 	pkgdesc = Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
 	arch = amd64
 	arch = arm64
@@ -12690,10 +12690,10 @@ pkgbase = teams-for-linux-deb
 	breaks = teams-for-linux-app
 	maintainer = matusaurio <matusaurio@github.com>
 	repology = project: teams-for-linux
-	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.5/teams-for-linux_2.0.5_amd64.deb
-	sha256sums_amd64 = db7a4426ecba4a67a43574253035a8b86b90f200a04f9fb471049c6827d984e5
-	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.5/teams-for-linux_2.0.5_arm64.deb
-	sha256sums_arm64 = 87bff0ddc5b7f124124cf5ca8339766c4d576dfb022de5979d5d07ac250e2b61
+	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.8/teams-for-linux_2.0.8_amd64.deb
+	sha256sums_amd64 = a59ce79a3f3ef48590131e09b82a1dfe37330d908759c6f1d8ee1aa9476e8c42
+	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.8/teams-for-linux_2.0.8_arm64.deb
+	sha256sums_arm64 = 8283a3b40177e796bf81f668ce902503b25a4ad58aa692cea948d95b078fa1d7
 
 pkgname = teams-for-linux-deb
 ---
@@ -15219,7 +15219,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.11.3b
+	pkgver = 1.11.4b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -15254,8 +15254,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.11.3b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 4f3545963c78b8c86f9e7e338748bc213bb6d4d1f193dcacefcef3524c3302c7
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.11.4b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 7e294069e18b1c51f94ac3ad19356dccdcfab34de1757c9a438dae666b2081ce
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -15265,8 +15265,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.11.3b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = d70b0c7a3d8b9a840bb14ae1a61e49ecefc13035af3ced7ec714dc45d9c687d5
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.11.4b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 9df8ff0a73f56a1389c4912dd26cf226ef133ccc7fbcca17cec1152d0313c3ad
 
 pkgname = zen-browser-bin
 ---
