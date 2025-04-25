@@ -1,5 +1,5 @@
-pkgname=tuckr
-pkgver=0.11.0
+pkgname="tuckr"
+pkgver="0.11.0"
 pkgrel=1
 pkgdesc="Super powered replacement for GNU Stow"
 arch=('amd64' 'i386' 'arm64')
