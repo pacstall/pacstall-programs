@@ -12,7 +12,6 @@ provides=("betterbird=${pkgver}")
 source=(
     "https://www.betterbird.eu/downloads/LinuxArchive/${_pkgname}-${pkgver//_/-}-${_build}.en-US.linux-x86_64.tar.bz2"
     "eu.betterbird.Betterbird.desktop"
-    "vendor-prefs.js"
 )
 sha256sums=(
     "7d1b91d6c2bb4c7b7555b47fcf127cde3fa67bfa48848ccf2dd58bc933e6b34d"
@@ -29,11 +28,9 @@ package() {
     # Install main files
     cp -r "${srcdir}/${_pkgname}/" "${pkgdir}/opt/${_pkgname}"
     install -m644 "${srcdir}/eu.${_pkgname}.Betterbird.desktop" "${pkgdir}/usr/share/applications/eu.${_pkgname}.Betterbird.desktop"
-    install -m644 "${srcdir}/vendor-prefs.js" -t "${pkgdir}/opt/${_pkgname}/defaults/pref"
     
     # Create symlinks
     ln -s "/opt/${_pkgname}/betterbird" "${pkgdir}/usr/bin/${_pkgname}"
-    ln -s "/usr/share/hunspell" "${pkgdir}/opt/${_pkgname}/dictionaries"
 
     # Install icons
     for i in 16 22 24 32 48 64 128 256; do
