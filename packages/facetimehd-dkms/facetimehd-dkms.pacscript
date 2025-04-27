@@ -34,4 +34,3 @@ package() {
     install -Dm644 "$FILE" "$pkgdir/usr/src/facetimehd-$pkgver/$FILE"
   done
 }
-

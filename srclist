@@ -2834,6 +2834,53 @@ pkgbase = f1multiviewer-deb
 
 pkgname = f1multiviewer-deb
 ---
+pkgbase = facetimehd-data
+	pkgver = 5.1.5769
+	pkgrel = 2
+	pkgdesc = Sensor calibration data for the FacetimeHD (Broadcom 1570) PCIe webcam
+	url = https://github.com/patjak/facetimehd
+	arch = any
+	makedepends = 7zip
+	source = https://download.info.apple.com/Mac_OS_X/031-30890-20150812-ea191174-4130-11e5-a125-930911ba098f/bootcamp5.1.5769.zip
+	sha256sums = 4ede2c8ef240708c850237a3e5911094ed6adae1734258e4639bc9069a814b1e
+
+pkgname = facetimehd-data
+---
+pkgbase = facetimehd-dkms
+	pkgver = 0.6.13.r0.g4990044
+	pkgrel = 1
+	pkgdesc = Reverse engineered Linux driver for the FacetimeHD (Broadcom 1570) PCIe webcam
+	url = https://github.com/patjak/facetimehd
+	arch = any
+	makedepends = git
+	optdepends = facetimehd-data: Sensor calibration data
+	conflicts = facetimehd-dkms
+	conflicts = bcwc-pcie
+	conflicts = bcwc-pcie-dkms
+	provides = facetimehd-dkms
+	provides = bcwc-pcie
+	provides = bcwc-pcie-dkms
+	license = GPL-2.0-only
+	maintainer = Dheeraj Reddy <dheerajre@proton.me>
+	source = facetimehd-dkms::git+https://github.com/patjak/facetimehd.git
+	sha256sums = SKIP
+
+pkgname = facetimehd-dkms
+---
+pkgbase = facetimehd-firmware
+	pkgver = 1.0.0
+	pkgrel = 1
+	pkgdesc = FacetimeHD firmware download and extraction tool
+	url = https://github.com/patjak/facetimehd-firmware
+	arch = any
+	makedepends = curl
+	makedepends = xz-utils
+	makedepends = cpio
+	maintainer = Dheeraj Reddy <dheerajre@proton.me>
+	source = @facetimehd-firmware~1.0.0::https://github.com/patjak/facetimehd-firmware/archive/refs/tags/v1.0.0.zip
+
+pkgname = facetimehd-firmware
+---
 pkgbase = fake-ubuntu-advantage-tools-deb
 	gives = fake-ubuntu-advantage-tools
 	pkgver = 0.1
