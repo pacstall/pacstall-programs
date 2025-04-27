@@ -1124,7 +1124,7 @@ pkgname = brave-browser-deb
 ---
 pkgbase = brave-browser-nightly-deb
 	gives = brave-browser-nightly
-	pkgver = 1.79.9
+	pkgver = 1.80.3
 	pkgdesc = The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel
 	url = https://brave.com/
 	arch = amd64
@@ -1136,8 +1136,8 @@ pkgbase = brave-browser-nightly-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-nightly-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.79.9/brave-browser-nightly_1.79.9_amd64.deb
-	sha256sums = 6d9d532aa424795938482de210d104f69784f0e970188c41c2bbc13cbf8ea287
+	source = https://github.com/brave/brave-browser/releases/download/v1.80.3/brave-browser-nightly_1.80.3_amd64.deb
+	sha256sums = 2f7bdcbf1f9cc4841acbb8154497f1e996b8ff16d9dc38378347151aea62a564
 
 pkgname = brave-browser-nightly-deb
 ---
@@ -2080,7 +2080,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.90
+	pkgver = 0.0.91
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -2090,8 +2090,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.90/discord-0.0.90.deb
-	sha256sums = a37c284a28b95486385c46580d4f250ebc51280b038808d002a547808ea031f9
+	source = https://dl.discordapp.net/apps/linux/0.0.91/discord-0.0.91.deb
+	sha256sums = 58040a52d19156abfa3ad2927e47850be62ade7c0eb086a2770754b15eeda948
 
 pkgname = discord-deb
 ---
@@ -2108,7 +2108,7 @@ pkgbase = discord-ptb-deb
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.90
+	pkgver = 0.0.91
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2126,8 +2126,8 @@ pkgbase = discord
 	optdepends = fonts-noto-color-emoji: emoji support
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.90::https://dl.discordapp.net/apps/linux/0.0.90/discord-0.0.90.tar.gz
-	sha256sums = 99f428ef51b86796700eba16888d96e436f98ac331771e05c376fa5fee27ec58
+	source = @discord~0.0.91::https://dl.discordapp.net/apps/linux/0.0.91/discord-0.0.91.tar.gz
+	sha256sums = bc644ad5826868ce3eb546907787fb2266959d49007631fe456eebf9b38cc7a2
 
 pkgname = discord
 ---
@@ -3073,7 +3073,7 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 137.0
+	pkgver = 137.0.2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3083,10 +3083,10 @@ pkgbase = firefox-bin
 	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/137.0/linux-x86_64/en-US/firefox-137.0.tar.xz
-	sha256sums_amd64 = 4d2d0a64a11f8aab7a1be583e1e4cddfaf2671967212b369a87489f3c11c3ac9
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/137.0/linux-aarch64/en-US/firefox-137.0.tar.xz
-	sha256sums_arm64 = 132bc5ae758b1220980de9c7bded74bff53dd70e24e8f3085d9b3ff45d25b71a
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/137.0.2/linux-x86_64/en-US/firefox-137.0.2.tar.xz
+	sha256sums_amd64 = 3d6f07eddbd98ae96b55cd6ec95fcf18b61a139a0c68739c098954b5015c4b11
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/137.0.2/linux-aarch64/en-US/firefox-137.0.2.tar.xz
+	sha256sums_arm64 = 64550e9c1b93a41f0c407306935a9bae06113b4b68b9714fcc48e26f1e743008
 
 pkgname = firefox-bin
 ---
@@ -4883,13 +4883,13 @@ pkgname = hwinfo-git
 ---
 pkgbase = hydralauncher-deb
 	gives = hydralauncher
-	pkgver = 3.4.0
+	pkgver = 3.4.3
 	pkgdesc = Game launcher with its own embedded BitTorrent client
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: hydralauncher
-	source = https://github.com/hydralauncher/hydra/releases/download/v3.4.0/hydralauncher_3.4.0_amd64.deb
-	sha256sums = 9ec826e09d76485f3e0388d2fb7ab1f2dd566d25344c2f5e43629dadfa0902c4
+	source = https://github.com/hydralauncher/hydra/releases/download/v3.4.3/hydralauncher_3.4.3_amd64.deb
+	sha256sums = 4af40c7bf75be2279f76a7b0296f496209a08911f8f213dc1850246e7d761df9
 
 pkgname = hydralauncher-deb
 ---
@@ -5832,15 +5832,15 @@ pkgname = lazydocker-bin
 ---
 pkgbase = lazygit
 	gives = lazygit
-	pkgver = 0.48.0
+	pkgver = 0.49.0
 	pkgdesc = simple terminal UI for git commands
 	url = https://github.com/jesseduffield/lazygit
 	arch = amd64
 	depends = git
 	maintainer = Thomas Crha <thomas@9bitbyte.com>
 	maintainer = raik199x <raik199x@mail.ru>
-	source = @lazygit~0.48.0::https://github.com/jesseduffield/lazygit/releases/download/v0.48.0/lazygit_0.48.0_Linux_x86_64.tar.gz
-	sha256sums = 291722c643a10805de3bd7b58f51d5275878269aeadb046709708f8683f558d7
+	source = @lazygit~0.49.0::https://github.com/jesseduffield/lazygit/releases/download/v0.49.0/lazygit_0.49.0_Linux_x86_64.tar.gz
+	sha256sums = ae9c9a3fcea9cdaf6511a7ca0040210cc71ab481fc773e53737cbfe92da974ce
 
 pkgname = lazygit
 ---
@@ -7020,15 +7020,15 @@ pkgbase = ly-git
 pkgname = ly-git
 ---
 pkgbase = lynxfetch
-	pkgver = 1.0.7
+	pkgver = 1.0.9
 	pkgdesc = Super fast, versatile, and customizable command-line fetcher
 	arch = amd64
 	makedepends = libdbus-1-dev
 	makedepends = pkg-config
 	pacdeps = rust-bin
 	maintainer = CELESTIFYX Team <celestifyx@gmail.com>
-	source = https://gitlab.com/lynxfetch/lynxfetch/-/archive/1.0.7/lynxfetch-1.0.7.tar.gz
-	sha512sums = 1c35e5d373230941a17dd67193c8a28ce599b51bf07c6bdf0b72db04b916e62fd4af79227b30631606942d008d1d62e9f8bd3bd826c3312b17b350cd52e34f2b
+	source = https://gitlab.com/lynxfetch/lynxfetch/-/archive/1.0.9/lynxfetch-1.0.9.tar.gz
+	sha512sums = 9550ec80005a9749bda6e272de2c3f76b750811c0a90a125652a4ec998aeab7d925d6a182620a5f24f3d2669a44b38d47179dc6f8208c65cd29f902054b168bc
 
 pkgname = lynxfetch
 ---
@@ -7785,13 +7785,13 @@ pkgname = mold-bin
 ---
 pkgbase = mullvad-vpn-beta-deb
 	gives = mullvad-vpn
-	pkgver = 2023.4
+	pkgver = 2025.5
 	pkgdesc = The Mullvad VPN client app for desktop - Beta channel
 	arch = amd64
 	breaks = mullvad-vpn-deb
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2023.4/MullvadVPN-2023.4_amd64.deb
-	sha256sums = ecda227eb5f5ff7a542474d82bed9d568b3fa05b0a898c328421a2d3b4ac1213
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.5/MullvadVPN-2025.5_amd64.deb
+	sha256sums = 9fa08d6e21637aa3a04fbd97d88282382a7186fef27d56f5e5d8fccb5f7f5e5d
 
 pkgname = mullvad-vpn-beta-deb
 ---
@@ -9580,7 +9580,7 @@ pkgbase = os-installer-git
 pkgname = os-installer-git
 ---
 pkgbase = osu-lazer-app
-	pkgver = 2025.321.0
+	pkgver = 2025.418.0
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
 	url = https://osu.ppy.sh
 	arch = amd64
@@ -9590,11 +9590,11 @@ pkgbase = osu-lazer-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-app-2025.321.0.AppImage::https://github.com/ppy/osu/releases/download/2025.321.0/osu.AppImage
+	source = osu-lazer-app-2025.418.0.AppImage::https://github.com/ppy/osu/releases/download/2025.418.0/osu.AppImage
 	source = icon.png::https://raw.githubusercontent.com/ppy/osu/master/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = 98dc68131ff0809d4e526ef2f492dde6f1d2c1f701e3d42328355059968c0c94
+	sha256sums = 06b40162176acdeca8f1f42803c43cba9af379cc573dbae297ed7f96f61061b5
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
@@ -10930,13 +10930,13 @@ pkgname = quintom-cursor-theme-git
 ---
 pkgbase = r2modman-deb
 	gives = r2modman
-	pkgver = 3.1.57
+	pkgver = 3.1.58
 	pkgdesc = Simple and easy to use mod manager for many games using Thunderstore
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: r2modman
-	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.57/r2modman_3.1.57_amd64.deb
-	sha256sums = 8c78bf8987da252dec2d3ac515d715c63511d879a9ac684c0cf941262a52df9e
+	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.58/r2modman_3.1.58_amd64.deb
+	sha256sums = f97ebf293b98193450d57e8ede22560e08314fd457c7dab905fd009ca6f1ef3d
 
 pkgname = r2modman-deb
 ---
@@ -12680,7 +12680,7 @@ pkgname = tdrop-git
 ---
 pkgbase = teams-for-linux-deb
 	gives = teams-for-linux
-	pkgver = 2.0.5
+	pkgver = 2.0.8
 	pkgdesc = Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
 	arch = amd64
 	arch = arm64
@@ -12690,10 +12690,10 @@ pkgbase = teams-for-linux-deb
 	breaks = teams-for-linux-app
 	maintainer = matusaurio <matusaurio@github.com>
 	repology = project: teams-for-linux
-	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.5/teams-for-linux_2.0.5_amd64.deb
-	sha256sums_amd64 = db7a4426ecba4a67a43574253035a8b86b90f200a04f9fb471049c6827d984e5
-	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.5/teams-for-linux_2.0.5_arm64.deb
-	sha256sums_arm64 = 87bff0ddc5b7f124124cf5ca8339766c4d576dfb022de5979d5d07ac250e2b61
+	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.8/teams-for-linux_2.0.8_amd64.deb
+	sha256sums_amd64 = a59ce79a3f3ef48590131e09b82a1dfe37330d908759c6f1d8ee1aa9476e8c42
+	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.8/teams-for-linux_2.0.8_arm64.deb
+	sha256sums_arm64 = 8283a3b40177e796bf81f668ce902503b25a4ad58aa692cea948d95b078fa1d7
 
 pkgname = teams-for-linux-deb
 ---
@@ -13331,6 +13331,23 @@ pkgbase = ttf-fira-sans
 
 pkgname = ttf-fira-sans
 ---
+pkgbase = tuckr
+	pkgver = 0.11.0
+	pkgdesc = Super powered replacement for GNU Stow
+	url = https://github.com/RaphGL/Tuckr
+	arch = amd64
+	arch = i386
+	arch = arm64
+	makedepends = cargo>=1.80
+	makedepends = git
+	license = GPL-3.0
+	maintainer = Bahar KURT <kurtbahartr@gmail.com>
+	repology = project: tuckr
+	source = git+https://github.com/RaphGL/Tuckr#tag=0.11.0
+	sha256sums = SKIP
+
+pkgname = tuckr
+---
 pkgbase = tutanota-app
 	gives = tutanota
 	pkgver = 218.240227.0
@@ -13354,7 +13371,7 @@ pkgbase = tutanota-app
 pkgname = tutanota-app
 ---
 pkgbase = typescript
-	pkgver = 5.8.2
+	pkgver = 5.8.3
 	pkgdesc = JavaScript with syntax for types
 	url = http://www.typescriptlang.org
 	arch = any
@@ -13364,8 +13381,8 @@ pkgbase = typescript
 	makedepends = rsync
 	license = Apache-2.0
 	maintainer = Bahar KURT <kurtbahartr@gmail.com>
-	source = git+https://github.com/microsoft/TypeScript.git#tag=v5.8.2
-	b2sums = 4dca488b389c44058ff7745427817b1f60f41e2fe11363d88f9a14685d3667ea5ee18b7517a2e066c402cc97ff019f422a4176cdbb93600a0f465d9cb874ecbc
+	source = git+https://github.com/microsoft/TypeScript.git#tag=v5.8.3
+	b2sums = SKIP
 
 pkgname = typescript
 ---
@@ -14037,7 +14054,7 @@ pkgbase = vscode-insiders-deb
 pkgname = vscode-insiders-deb
 ---
 pkgbase = vscode-languageservers
-	pkgver = 1.99.2
+	pkgver = 1.99.3
 	pkgdesc = VS Code language servers
 	url = https://github.com/Microsoft/vscode
 	arch = any
@@ -14047,7 +14064,7 @@ pkgbase = vscode-languageservers
 	pacdeps = typescript
 	license = MIT
 	maintainer = Bahar KURT <kurtbahartr@gmail.com>
-	source = git+https://github.com/Microsoft/vscode.git#tag=1.99.2
+	source = git+https://github.com/Microsoft/vscode.git#tag=1.99.3
 
 pkgname = vscode-css-languageserver
 	pkgdesc = CSS/LESS/SCSS language server
@@ -14603,7 +14620,7 @@ pkgname = windscribe-beta-gui-deb
 ---
 pkgbase = wine-staging-git
 	gives = wine-staging-git
-	pkgver = 10.3
+	pkgver = 10.6
 	pkgdesc = Compatibility layer for running Windows programs - Staging branch
 	url = https://www.wine-staging.com
 	arch = any
@@ -15219,7 +15236,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.11.3b
+	pkgver = 1.11.5b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -15254,8 +15271,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.11.3b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 4f3545963c78b8c86f9e7e338748bc213bb6d4d1f193dcacefcef3524c3302c7
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.11.5b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 9840082fded87c9d47d8e6497ba5665594eb6492a06f7fe45a68c5e591d4e647
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -15265,8 +15282,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.11.3b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = d70b0c7a3d8b9a840bb14ae1a61e49ecefc13035af3ced7ec714dc45d9c687d5
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.11.5b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = b4de00862e34c9e95a742553775f2d3a9b87bf36f97211e09ff3219bf97636de
 
 pkgname = zen-browser-bin
 ---
@@ -15314,8 +15331,8 @@ pkgname = zig-bin
 ---
 pkgbase = zinit
 	gives = zinit
-	pkgver = 3.13.1
-	pkgdesc = A flexible and fast Zsh plugin manager
+	pkgver = 3.14.0
+	pkgdesc = Flexible and fast Zsh plugin manager
 	url = https://github.com/zdharma-continuum/zinit
 	arch = amd64
 	depends = git
@@ -15325,8 +15342,8 @@ pkgbase = zinit
 	license = MIT
 	maintainer = Bahar KURT <kurtbahartr@gmail.com>
 	repology = project: zinit
-	source = @zinit~3.13.1::https://github.com/zdharma-continuum/zinit/archive/refs/tags/v3.13.1.tar.gz
-	sha256sums = 41359f41815a6461cab50ff5ba0b94dc40adcdb3646c9e71021064146a2a336a
+	source = @zinit~3.14.0::https://github.com/zdharma-continuum/zinit/archive/refs/tags/v3.14.0.tar.gz
+	sha256sums = 4707baaad983d2ea911b4c2fddde9e7876593b3dc969a5efd9d387c9e3d03bb3
 
 pkgname = zinit
 ---
