@@ -12,6 +12,7 @@ pkgbase = greetd-phrog
 	makedepends = libphosh-0.43-dev
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	license = GPL-3.0-only
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/samcday/phrog/archive/0.42.1/phrog-0.42.1.tar.gz

@@ -16,6 +16,7 @@ pkgbase = rhino-ubxi-core
 	replaces = rhino-server-core
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
