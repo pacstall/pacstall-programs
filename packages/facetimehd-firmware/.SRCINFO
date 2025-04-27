@@ -1,0 +1,13 @@
+pkgbase = facetimehd-firmware
+	pkgver = 1.0.0
+	pkgrel = 1
+	pkgdesc = FacetimeHD firmware download and extraction tool
+	url = https://github.com/patjak/facetimehd-firmware
+	arch = any
+	makedepends = curl
+	makedepends = xz-utils
+	makedepends = cpio
+	maintainer = Dheeraj Reddy <dheerajre@proton.me>
+	source = @facetimehd-firmware~1.0.0::https://github.com/patjak/facetimehd-firmware/archive/refs/tags/v1.0.0.zip
+
+pkgname = facetimehd-firmware
