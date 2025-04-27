@@ -15,7 +15,7 @@ provides=('facetimehd-dkms' 'bcwc-pcie' 'bcwc-pcie-dkms')
 conflicts=('facetimehd-dkms' 'bcwc-pcie' 'bcwc-pcie-dkms')
 
 _pkgsrc="${_pkgname}"
-source=("${_pkgsrc}"::"git+https://github.com/patjak/facetimehd.git")
+source=("${_pkgsrc}::git+https://github.com/patjak/facetimehd.git")
 sha256sums=('SKIP')
 
 pkgver() {
@@ -29,7 +29,7 @@ package() {
     'dkms'
   )
 
-  cd "$_pkgsrc"
+  cd "${_pkgsrc}"
   for FILE in dkms.conf Makefile *.[ch]; do
     install -Dm644 "${FILE}" "${pkgdir}/usr/src/facetimehd-${pkgver}/${FILE}"
   done

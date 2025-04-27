@@ -31,6 +31,6 @@ package() {
 
   # Install licenses
   for FILE in 'Arabic' 'BrazilianPortuguese' 'Czech' 'Danish' 'Dutch' 'English' 'Finnish' 'French' 'German' 'Hungarian' 'Italian' 'Japanese' 'Korean' 'Norwegian' 'Polish' 'Portuguese' 'Russian' 'SimplifiedChinese' 'Spanish' 'Swedish' 'TraditionalChinese' 'Turkish'; do
-    install -Dm644 "BootCamp/Drivers/Apple/${FILE}License.txt" "$pkgdir/usr/share/licenses/${pkgname}/${FILE}License.txt"
+    install -Dm644 "BootCamp/Drivers/Apple/${FILE}License.txt" "${pkgdir}/usr/share/licenses/${pkgname}/${FILE}License.txt"
   done
 }
