@@ -2834,6 +2834,20 @@ pkgbase = f1multiviewer-deb
 
 pkgname = f1multiviewer-deb
 ---
+pkgbase = facetimehd-firmware
+	pkgver = 1.0.0
+	pkgrel = 1
+	pkgdesc = FacetimeHD firmware download and extraction tool
+	url = https://github.com/patjak/facetimehd-firmware
+	arch = any
+	makedepends = curl
+	makedepends = xz-utils
+	makedepends = cpio
+	maintainer = Dheeraj Reddy <dheerajre@proton.me>
+	source = @facetimehd-firmware~1.0.0::https://github.com/patjak/facetimehd-firmware/archive/refs/tags/v1.0.0.zip
+
+pkgname = facetimehd-firmware
+---
 pkgbase = fake-ubuntu-advantage-tools-deb
 	gives = fake-ubuntu-advantage-tools
 	pkgver = 0.1
@@ -12072,6 +12086,24 @@ pkgbase = snapper-rollback-git
 	sha256sums = SKIP
 
 pkgname = snapper-rollback-git
+---
+pkgbase = snd-hda-macbookpro-dkms
+	pkgver = 0.1
+	pkgrel = 1
+	pkgdesc = Kernel driver for sound on Macs with Cirrus 8409 HDA chips
+	url = https://github.com/davidjo/snd_hda_macbookpro
+	arch = any
+	depends = git
+	depends = gcc
+	depends = wget
+	depends = make
+	depends = patch
+	depends = linux-headers-generic
+	license = GPL-2.0
+	maintainer = Dheeraj Reddy <dheerajre@proton.me>
+	source = git+https://github.com/davidjo/snd_hda_macbookpro.git
+
+pkgname = snd-hda-macbookpro-dkms
 ---
 pkgbase = soar
 	pkgver = 0.5.9

@@ -23,6 +23,6 @@ build() {
 }
 
 package() {
-    cd "${pkgname}~${pkgver}"
-    make DESTDIR="${pkgdir}" install
+  cd "${pkgname}~${pkgver}"
+  make DESTDIR="${pkgdir}" install
 }
