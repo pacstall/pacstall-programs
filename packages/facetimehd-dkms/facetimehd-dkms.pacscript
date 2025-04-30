@@ -10,8 +10,8 @@ maintainer=("Dheeraj Reddy <dheerajre@proton.me>")
 
 makedepends=('git')
 depends=(
-    'facetimehd-firmware'
-    'dkms'
+  'facetimehd-firmware'
+  'dkms'
 )
 optdepends=('facetimehd-data: Sensor calibration data')
 
@@ -24,12 +24,12 @@ sha256sums=('SKIP')
 
 pkgver() {
   cd "${_pkgsrc}"
-    git describe --long --tags | sed 's/-/.r/;s/-/./'
+  git describe --long --tags | sed 's/-/.r/;s/-/./'
 }
 
 package() {
   cd "${_pkgsrc}"
-    for FILE in dkms.conf Makefile *.[ch]; do
-      install -Dm644 "${FILE}" "${pkgdir}/usr/src/facetimehd-${pkgver}/${FILE}"
-        done
+  for FILE in dkms.conf Makefile *.[ch]; do
+    install -Dm644 "${FILE}" "${pkgdir}/usr/src/facetimehd-${pkgver}/${FILE}"
+  done
 }
