@@ -1,6 +1,6 @@
 pkgname="libhyprgraphics-bin"
 pkgver="0.1.1"
-pkgdesc="Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem."
+pkgdesc="Small C++ library with graphics / resource related utilities used across the hypr* ecosystem"
 arch=("amd64")
 url='https://github.com/hyprwm/hyprgraphics'
 source=("https://github.com/hyprwm/hyprgraphics/releases/download/v${pkgver}/v${pkgver}.tar.gz")
