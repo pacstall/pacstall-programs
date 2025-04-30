@@ -1,6 +1,6 @@
 pkgbase = libhyprgraphics-bin
 	pkgver = 0.1.1
-	pkgdesc = Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem.
+	pkgdesc = Small C++ library with graphics / resource related utilities used across the hypr* ecosystem
 	url = https://github.com/hyprwm/hyprgraphics
 	arch = amd64
 	maintainer = Dheeraj Reddy <dheerajre@proton.me>
