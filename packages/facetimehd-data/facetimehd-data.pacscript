@@ -4,7 +4,6 @@ pkgrel="2"
 pkgdesc='Sensor calibration data for the FacetimeHD (Broadcom 1570) PCIe webcam'
 url='https://github.com/patjak/facetimehd'
 arch=('any')
-external_connection=true
 maintainer=("Dheeraj Reddy <dheerajre@proton.me>")
 makedepends=('7zip')
 source=('https://download.info.apple.com/Mac_OS_X/031-30890-20150812-ea191174-4130-11e5-a125-930911ba098f/bootcamp5.1.5769.zip')
