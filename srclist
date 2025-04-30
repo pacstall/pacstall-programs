@@ -344,6 +344,7 @@ pkgbase = appmenu-registrar-backport
 	compatible = ubuntu:oracular
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	license = LGPL-3.0-or-later
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://gitlab.com/vala-panel-project/vala-panel-appmenu/-/archive/24.02/vala-panel-appmenu-24.02.tar.gz
@@ -2097,13 +2098,13 @@ pkgname = discord-deb
 ---
 pkgbase = discord-ptb-deb
 	gives = discord-ptb
-	pkgver = 0.0.137
+	pkgver = 0.0.139
 	pkgdesc = Chat for Communities and Friends - Public Test Build
 	url = https://discord.com/
 	arch = amd64
 	repology = project: discord-ptb
-	source = https://dl-ptb.discordapp.net/apps/linux/0.0.137/discord-ptb-0.0.137.deb
-	sha256sums = 9a31f1c877593dd3698d2f3c3946c29de7c3105c8da1f44440e113315145fc10
+	source = https://dl-ptb.discordapp.net/apps/linux/0.0.139/discord-ptb-0.0.139.deb
+	sha256sums = 7137823af28c3b4246dc5e675143b79d2559e8902e4220d6b42fa7402093ed0a
 
 pkgname = discord-ptb-deb
 ---
@@ -4420,6 +4421,7 @@ pkgbase = greetd-phrog
 	makedepends = libphosh-0.43-dev
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	license = GPL-3.0-only
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/samcday/phrog/archive/0.42.1/phrog-0.42.1.tar.gz
@@ -6174,6 +6176,17 @@ pkgbase = libglibutil-deb
 	sha256sums_arm64 = f1cae9ea551e2050fa3a5373ebdb372305b54ae4c519f4a40ee05ac748211f96
 
 pkgname = libglibutil-deb
+---
+pkgbase = libhyprgraphics-bin
+	pkgver = 0.1.1
+	pkgdesc = Hyprgraphics is a small C++ library with graphics / resource related utilities used across the hypr* ecosystem.
+	url = https://github.com/hyprwm/hyprgraphics
+	arch = amd64
+	maintainer = Dheeraj Reddy <dheerajre@proton.me>
+	source = https://github.com/hyprwm/hyprgraphics/releases/download/v0.1.1/v0.1.1.tar.gz
+	sha256sums = cebbbb1f0afc7cda96e59c7d55c12798c2dff960f5948aa06805ab08f243a6a8
+
+pkgname = libhyprgraphics-bin
 ---
 pkgbase = libhyprutils-bin
 	pkgver = 0.2.3
@@ -11116,6 +11129,7 @@ pkgbase = rhino-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -11150,6 +11164,7 @@ pkgbase = rhino-hotfix-git
 	depends = curl
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = rhino-hotfix::https://github.com/rhino-linux/hotfix.git
 
@@ -11213,6 +11228,7 @@ pkgbase = rhino-pine-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -11256,6 +11272,7 @@ pkgbase = rhino-server-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -11382,6 +11399,7 @@ pkgbase = rhino-ubxi-core
 	replaces = rhino-server-core
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -13943,6 +13961,7 @@ pkgbase = virtualbox-deb
 	incompatible = ubuntu:mantic
 	incompatible = ubuntu:oracular
 	incompatible = ubuntu:plucky
+	incompatible = ubuntu:questing
 	incompatible = ubuntu:devel
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
@@ -14620,7 +14639,7 @@ pkgname = windscribe-beta-gui-deb
 ---
 pkgbase = wine-staging-git
 	gives = wine-staging-git
-	pkgver = 10.3
+	pkgver = 10.6
 	pkgdesc = Compatibility layer for running Windows programs - Staging branch
 	url = https://www.wine-staging.com
 	arch = any
@@ -15151,7 +15170,7 @@ pkgname = youtube-dl-git
 ---
 pkgbase = youtube-music-deb
 	gives = youtube-music
-	pkgver = 3.8.0
+	pkgver = 3.9.0
 	pkgdesc = YouTube Music Desktop App bundled with custom plugins (and built-in ad blocker / downloader)
 	arch = amd64
 	arch = arm64
@@ -15159,10 +15178,10 @@ pkgbase = youtube-music-deb
 	maintainer = Zahrun <Zahrun@github.com>
 	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
 	repology = project: youtube-music
-	source_amd64 = https://github.com/th-ch/youtube-music/releases/download/v3.8.0/youtube-music_3.8.0_amd64.deb
-	sha256sums_amd64 = 18e28f839659fd714d63115df77bb9d71cc27f64ab36135a5d44725ea5b9f256
-	source_arm64 = https://github.com/th-ch/youtube-music/releases/download/v3.8.0/youtube-music_3.8.0_arm64.deb
-	sha256sums_arm64 = 13b7cc014278b40d9a5c8fdcd24d880a5abccb2f5579338d425d9c3ac35a0cbb
+	source_amd64 = https://github.com/th-ch/youtube-music/releases/download/v3.9.0/youtube-music_3.9.0_amd64.deb
+	sha256sums_amd64 = ea324010f288143ff7807ff958135034ae6937bd58bfe9f1a83fe1377cf13be6
+	source_arm64 = https://github.com/th-ch/youtube-music/releases/download/v3.9.0/youtube-music_3.9.0_arm64.deb
+	sha256sums_arm64 = 84a359378489755c76696dc862bdc76e261de491f31e2c29bf2a2b4705cb76f5
 
 pkgname = youtube-music-deb
 ---

@@ -21,7 +21,7 @@ maintainer=("xdavius <xdavius@github.com>")
 # Fix hueplusplus, waiting for upstream fix... thanks to Morg
 
 case "${DISTRO}" in
-  ubuntu:devel | ubuntu:plucky | debian:testing | debian:sid | debian:trixie)
+  ubuntu:devel | ubuntu:plucky | ubuntu:questing | debian:testing | debian:sid | debian:trixie)
     prepare() {
       cd "${srcdir}/OpenRGB"
       # Fix libmbedtls-dev-3.* issue, fix hueplusplus build error...
