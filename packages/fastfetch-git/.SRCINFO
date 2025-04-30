@@ -1,6 +1,7 @@
 pkgbase = fastfetch-git
 	gives = fastfetch
 	pkgver = 2.37.0
+	pkgrel = 2
 	pkgdesc = Like neofetch, but much faster because written in c
 	arch = any
 	makedepends = cmake>=3.12
