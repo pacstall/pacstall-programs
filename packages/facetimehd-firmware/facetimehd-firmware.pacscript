@@ -9,7 +9,7 @@ source=(
 pkgdesc="FacetimeHD firmware download and extraction tool"
 maintainer=("Dheeraj Reddy <dheerajre@proton.me>")
 sha256sum=("6883c3fefb372ccd78598eaca7fae97025ff3e543b096703667b296fbf45d7bd")
-
+external_connection=true
 makedepends=(
   "7zip"
   "curl"
