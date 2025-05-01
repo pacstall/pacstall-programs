@@ -1,6 +1,6 @@
 pkgname="firefox-deb"
 gives="${pkgname%-deb}"
-pkgver="136.0"
+pkgver="138.0"
 arch=('amd64' 'arm64')
 repology=("project: ${gives}")
 replaces=("${gives}-bin")
@@ -8,5 +8,5 @@ source=("https://ftp.mozilla.org/pub/${gives}/releases/${pkgver}/linux-${AARCH}/
 url="https://www.mozilla.org/en-US/${gives}"
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-sha256sums_amd64=("c46473a0f694631e1089bbe717dc2b90b1687169fe5661a65bfe9de0b45a9455")
-sha256sums_arm64=("62d5456877c4391eda0c58ce486ed99a28df692c0022332d65ae9e31444667de")
+sha256sums_amd64=("766cab153637286ed4b0803c2756ad8d3ce4b1409021f891fe28093403682aa2")
+sha256sums_arm64=("5d67f92fa4b6f5e82eb51cf79d3908b5f51da61beb7435f3dd1bf6fd7cd80a3c")
