@@ -1,5 +1,5 @@
 pkgbase = git
-	pkgver = 2.47.0
+	pkgver = 2.49.0
 	pkgdesc = git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals
 	arch = any
 	makedepends = dh-autoreconf
@@ -20,7 +20,7 @@ pkgbase = git
 	replaces = git
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: git
-	source = @git~2.47.0::https://www.kernel.org/pub/software/scm/git/git-2.47.0.tar.gz
-	sha256sums = a84a7917e0ab608312834413f01fc01edc7844f9f9002ba69f3b4f4bcb8d937a
+	source = @git~2.49.0::https://www.kernel.org/pub/software/scm/git/git-2.49.0.tar.gz
+	sha256sums = f8047f572f665bebeb637fd5f14678f31b3ca5d2ff9a18f20bd925bd48f75d3c
 
 pkgname = git
