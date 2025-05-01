@@ -1,12 +1,12 @@
 pkgbase = raspi-config-deb
 	gives = raspi-config
-	pkgver = 20231216
+	pkgver = 20250312
 	pkgdesc = Raspberry Pi configuration tool
 	arch = all
 	replaces = raspi-config
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: raspi-config
-	source = https://archive.raspberrypi.org/debian/pool/main/r/raspi-config/raspi-config_20231216_all.deb
-	sha256sums = 8e328e0886b58023b03b8cf799a77180650c318df075605684103735c90a747f
+	source = https://archive.raspberrypi.org/debian/pool/main/r/raspi-config/raspi-config_20250312_all.deb
+	sha256sums = a28ae6951f1beb818bbd637664b0e579b5e73ca4bece446365869926ccd2e6e8
 
 pkgname = raspi-config-deb
