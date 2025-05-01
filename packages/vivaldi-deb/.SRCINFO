@@ -1,11 +1,11 @@
 pkgbase = vivaldi-deb
 	gives = vivaldi-stable
-	pkgver = 7.0.3495.14
+	pkgver = 7.3.3635.11
 	pkgdesc = An advanced browser made with the power user in mind
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: vivaldi
-	source = https://downloads.vivaldi.com/stable/vivaldi-stable_7.0.3495.14-1_amd64.deb
-	sha256sums = 4f541e7b055b6969063cb9d4987f6b2ce59cb642730a27a412cd3c45ab1cf77e
+	source = https://downloads.vivaldi.com/stable/vivaldi-stable_7.3.3635.11-1_amd64.deb
+	sha256sums = 9093453d78997a48e87c6b4a15b19cf3973cc90ca6867b64081ba1ca5c100691
 
 pkgname = vivaldi-deb
