@@ -7,7 +7,6 @@ arch=("x86_64")
 url="https://www.betterbird.eu/index.html"
 repology=("project: betterbird")
 depends=("libdbus-glib-1-2" "hunspell")
-provides=("betterbird=${pkgver}")
 source=(
     "https://www.betterbird.eu/downloads/LinuxArchive/${gives}-${pkgver//_/-}.en-US.linux-x86_64.tar.bz2"
     "eu.betterbird.Betterbird.desktop"
