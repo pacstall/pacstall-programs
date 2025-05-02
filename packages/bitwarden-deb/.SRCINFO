@@ -1,6 +1,6 @@
 pkgbase = bitwarden-deb
 	gives = bitwarden
-	pkgver = 2024.11.0
+	pkgver = 2025.4.2
 	pkgdesc = Open Source Password Manager
 	arch = amd64
 	breaks = bitwarden-app
@@ -8,7 +8,7 @@ pkgbase = bitwarden-deb
 	replaces = bitwarden
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: bitwarden
-	source = https://github.com/bitwarden/clients/releases/download/desktop-v2024.11.0/Bitwarden-2024.11.0-amd64.deb
-	sha256sums = b84b2359b5988736e747072855520ae8b341810745f16515bf911bfad3e12d11
+	source = https://github.com/bitwarden/clients/releases/download/desktop-v2025.4.2/Bitwarden-2025.4.2-amd64.deb
+	sha256sums = 70157811945ae3847d1a2b9a5f6424897ae22af6b0c91cf86c89a5d3dedd0584
 
 pkgname = bitwarden-deb
