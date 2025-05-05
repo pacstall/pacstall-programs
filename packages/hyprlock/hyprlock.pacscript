@@ -20,12 +20,15 @@ depends=(
   'libcairo2-dev'
   'libdrm-dev'
   'libpam0g-dev'
+<<<<<<< HEAD
 )
 pacdeps=(
   'hyprwayland-scanner'
   'hyprlang'
   'libhyprgraphics-bin'
   'libhyprutils-bin'
+=======
+>>>>>>> a3f6af1723ff6d8c8e357d6847e901f864feb1a2
 )
 
 package() {

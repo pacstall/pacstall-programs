@@ -5110,7 +5110,11 @@ pkgbase = hyprlang
 
 pkgname = hyprlang
 ---
+<<<<<<< HEAD
 pkgbase = hyprlock-bin
+=======
+pkgbase = hyprlock
+>>>>>>> a3f6af1723ff6d8c8e357d6847e901f864feb1a2
 	pkgver = 0.6.0
 	pkgdesc = GPU-accelerated screen locking utility for Hyprland
 	url = https://hyprland.org/
@@ -5133,11 +5137,19 @@ pkgbase = hyprlock-bin
 	pacdeps = libhyprgraphics-bin
 	pacdeps = libhyprutils-bin
 	maintainer = Dheeraj Reddy <dheerajre@proton.me>
+<<<<<<< HEAD
 	repology = project: hyprlock-bin
 	source = @hyprlock-bin-0.6.0::https://github.com/hyprwm/hyprlock/releases/download/v0.6.0/v0.6.0.tar.gz
 	sha256sums = d09946d9132927249eb5381ad4366721c67686ba112a0d0f8948b4c1dc642240
 
 pkgname = hyprlock-bin
+=======
+	repology = project: hyprlock
+	source = @hyprlock-0.6.0::https://github.com/hyprwm/hyprlock/releases/download/v0.6.0/v0.6.0.tar.gz
+	sha256sums = d09946d9132927249eb5381ad4366721c67686ba112a0d0f8948b4c1dc642240
+
+pkgname = hyprlock
+>>>>>>> a3f6af1723ff6d8c8e357d6847e901f864feb1a2
 ---
 pkgbase = hyprpaper
 	pkgver = 0.4.0
