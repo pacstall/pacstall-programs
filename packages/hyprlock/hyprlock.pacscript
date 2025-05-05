@@ -24,6 +24,6 @@ depends=(
 pacdeps=('hyprwayland-scanner' 'hyprlang' 'libhyprgraphics-bin' 'libhyprutils-bin')
 
 package() {
-  cd ${pkgname}-${pkgver}/
-  install -Dm755 ${pkgname} -t "${pkgdir}/usr/bin/"
+  cd $"{pkgname}"-"${pkgver}"/
+  install -Dm755 $"{pkgname}" -t "${pkgdir}/usr/bin/"
 }
