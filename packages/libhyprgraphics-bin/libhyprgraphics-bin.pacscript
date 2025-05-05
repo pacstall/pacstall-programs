@@ -10,7 +10,7 @@ maintainer=("Dheeraj Reddy <dheerajre@proton.me>")
 package() {
   cd "hyprgraphics"
   install -vDm755 "libhyprgraphics.so.${pkgver}" -t "${pkgdir}/usr/lib/x86_64-linux-gnu/"
-  ln -sfv "/usr/lib/x86_64-linux-gnu/libhyprgraphics.so.${pkgver}" "${pkgdir}/usr/lib/x86_64-linux-gnu/libhyprgraphics.so.1"
+  ln -sfv "/usr/lib/x86_64-linux-gnu/libhyprgraphics.so.${pkgver}" "${pkgdir}/usr/lib/x86_64-linux-gnu/libhyprgraphics.so.0"
   ln -sfv "/usr/lib/x86_64-linux-gnu/libhyprgraphics.so.${pkgver}" "${pkgdir}/usr/lib/x86_64-linux-gnu/libhyprgraphics.so"
   install -vDm755 "hyprgraphics.pc" -t "${pkgdir}/usr/lib/pkgconfig/"
 }
