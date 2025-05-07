@@ -7,7 +7,6 @@ source=("@${pkgname}~${pkgver}::https://github.com/patjak/${pkgname}/archive/ref
 sha256sums=("6883c3fefb372ccd78598eaca7fae97025ff3e543b096703667b296fbf45d7bd")
 license=('GPL-2.0-only')
 maintainer=("Dheeraj Reddy <dheerajre@proton.me>")
-depends=("linux-image>=4.4")
 makedepends=(
   "xz-utils"
   "cpio"
