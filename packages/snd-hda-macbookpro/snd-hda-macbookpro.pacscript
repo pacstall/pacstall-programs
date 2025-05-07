@@ -1,9 +1,8 @@
-pkgname=snd-hda-macbookpro
+pkgname="snd-hda-macbookpro"
 pkgver="0.1"
-pkgrel="1"
 pkgdesc="Kernel driver for sound on Macs with Cirrus 8409 HDA chips"
 arch=("any")
-url="https://github.com/davidjo/snd_hda_macbookpro"
+url='https://github.com/davidjo/snd_hda_macbookpro'
 license=("GPL-2.0-only")
 maintainer=("Dheeraj Reddy <dheerajre@proton.me>")
 
@@ -16,23 +15,20 @@ makedepends=(
 )
 
 source=('git+https://github.com/davidjo/snd_hda_macbookpro.git')
-sha256sums=()
+sha256sums=("SKIP")
 
 package() {
   for file in "${srcdir}"/snd_hda_macbookpro/*; do
-    [[ -f ${file} ]] || continue
     install -D -m0644 -t \
       "${pkgdir}"/usr/src/snd-hda-macbookpro-"${pkgver}" \
       "${file}"
   done
   for file in "${srcdir}"/snd_hda_macbookpro/patches/*; do
-    [[ -f ${file} ]] || continue
     install -D -m0644 -t \
       "${pkgdir}"/usr/src/snd-hda-macbookpro-"${pkgver}"/patches \
       "${file}"
   done
   for file in "${srcdir}"/snd_hda_macbookpro/patch_cirrus/*; do
-    [[ -f ${file} ]] || continue
     install -D -m0644 -t \
       "${pkgdir}"/usr/src/snd-hda-macbookpro-"${pkgver}"/patch_cirrus \
       "${file}"

@@ -12075,7 +12075,6 @@ pkgname = snapper-rollback-git
 ---
 pkgbase = snd-hda-macbookpro
 	pkgver = 0.1
-	pkgrel = 1
 	pkgdesc = Kernel driver for sound on Macs with Cirrus 8409 HDA chips
 	url = https://github.com/davidjo/snd_hda_macbookpro
 	arch = any
@@ -12087,6 +12086,7 @@ pkgbase = snd-hda-macbookpro
 	license = GPL-2.0-only
 	maintainer = Dheeraj Reddy <dheerajre@proton.me>
 	source = git+https://github.com/davidjo/snd_hda_macbookpro.git
+	sha256sums = SKIP
 
 pkgname = snd-hda-macbookpro
 ---
