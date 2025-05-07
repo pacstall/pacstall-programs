@@ -2840,7 +2840,7 @@ pkgbase = facetimehd-firmware
 	pkgdesc = FacetimeHD firmware download and extraction tool
 	url = https://github.com/patjak/facetimehd-firmware
 	arch = amd64
-	depends = linux-image-amd64>=4.4
+	depends = linux-image>=4.4
 	makedepends = xz-utils
 	makedepends = cpio
 	makedepends = curl
