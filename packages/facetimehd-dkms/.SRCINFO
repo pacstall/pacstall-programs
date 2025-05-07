@@ -1,0 +1,19 @@
+pkgbase = facetimehd-dkms
+	pkgver = 0.6.13
+	pkgdesc = Reverse engineered Linux driver for the FacetimeHD (Broadcom 1570) PCIe webcam
+	url = https://github.com/patjak/facetimehd
+	arch = amd64
+	depends = linux-image-amd64>=4.4
+	depends = dkms
+	makedepends = linux-headers-generic
+	makedepends = kmod
+	makedepends = libssl-dev
+	makedepends = make
+	pacdeps = facetimehd-firmware
+	pacdeps = facetimehd-data
+	license = GPL-2.0-only
+	maintainer = Dheeraj Reddy <dheerajreddy.proton.me>
+	source = @facetimehd-dkms~0.6.13::https://github.com/patjak/facetimehd/archive/refs/tags/0.6.13.zip
+	sha256sums = 3a90ebb1cfe431ef7cfe33f5b60ccd35acb317b2edd3fb574a8f8d2eed6e772b
+
+pkgname = facetimehd-dkms
