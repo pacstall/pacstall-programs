@@ -8,7 +8,7 @@ license=('GPL-2.0-only')
 source=("@${pkgname}~${pkgver}::https://github.com/patjak/facetimehd/archive/refs/tags/${pkgver}.zip")
 sha256sums=("3a90ebb1cfe431ef7cfe33f5b60ccd35acb317b2edd3fb574a8f8d2eed6e772b")
 
-depends=("linux-image>=4.4" "dkms")
+depends=("dkms")
 makedepends=(
   "linux-headers-generic"
   "kmod"
