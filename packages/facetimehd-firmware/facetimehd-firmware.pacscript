@@ -26,3 +26,7 @@ package() {
   cd "${pkgname}~${pkgver}"/
   make DESTDIR="${pkgdir}" install
 }
+
+post_install() {
+  echo 'Note: a reboot may be required after installing the modules before they will work (seems to be the case on MacBook Pro (13", late 2013).'
+}
