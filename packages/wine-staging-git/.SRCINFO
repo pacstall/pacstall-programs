@@ -1,6 +1,6 @@
 pkgbase = wine-staging-git
 	gives = wine-staging-git
-	pkgver = 10.3
+	pkgver = 10.6
 	pkgdesc = Compatibility layer for running Windows programs - Staging branch
 	url = https://www.wine-staging.com
 	arch = any

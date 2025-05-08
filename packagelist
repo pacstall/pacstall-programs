@@ -201,6 +201,7 @@ glffetch-git
 glow-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
+gnucash
 go-bin
 go-task-deb
 godot-bin
@@ -303,6 +304,7 @@ libfdk-aac1-deb
 libgbinder-deb
 libgc-nix
 libglibutil-deb
+libhyprgraphics-bin
 libhyprutils-bin
 libicu-deb
 liblcf
@@ -699,7 +701,9 @@ tre-git
 treefetch-bin
 truckersmp-cli
 ttf-fira-sans
+tuckr
 tutanota-app
+typescript
 typora-deb
 u-boot-mobian-deb
 ufetch-debian
@@ -730,6 +734,10 @@ vivarium
 vkroots-git
 vscode-deb
 vscode-insiders-deb
+vscode-languageservers:pkgbase
+vscode-languageservers:vscode-css-languageserver
+vscode-languageservers:vscode-json-languageserver
+vscode-languageservers:vscode-html-languageserver
 vscodium-bin
 vscodium-deb
 vyprvpn-deb
@@ -753,6 +761,7 @@ weechat-git
 wezterm-app
 wezterm-bin
 wgcf-bin
+whatsdesk-deb
 whatsie
 whatsie-git
 windscribe-beta-gui-deb
@@ -761,6 +770,7 @@ winetricks-git
 wsysmon-bin
 xapps-common-deb
 xcb-util-errors
+xclicker-deb
 xdg-desktop-portal-hyprland
 xdg-ninja-git
 xdg-terminal-exec-git
