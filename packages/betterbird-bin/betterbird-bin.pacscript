@@ -1,7 +1,7 @@
 pkgname="betterbird-bin"
 gives="betterbird"
 pkgver="128.10.0esr-bb26"
-pkgdesc="EN-US // Betterbird is a fine-tuned version of Mozilla Thunderbird, Thunderbird on steroids, if you will."
+pkgdesc="Fine-tuned version of Mozilla Thunderbird, Thunderbird on steroids, if you will"
 maintainer=("tranquil <tranquiltr0@proton.me>")
 arch=("x86_64")
 url="https://www.betterbird.eu/index.html"
