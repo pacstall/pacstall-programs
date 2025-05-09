@@ -1,6 +1,6 @@
 pkgbase = docker-compose-plugin-bin
 	gives = docker-compose-plugin
-	pkgver = 2.30.3
+	pkgver = 2.35.1
 	pkgdesc = Docker Compose cli plugin
 	url = https://github.com/docker/compose
 	arch = amd64
@@ -8,9 +8,9 @@ pkgbase = docker-compose-plugin-bin
 	replaces = docker-compose-plugin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: docker-compose
-	source_amd64 = https://github.com/docker/compose/releases/download/v2.30.3/docker-compose-linux-x86_64
-	sha256sums_amd64 = fbb4853d3f2148b0f2f0916f8971c9e500784e4e4949324934fc0b7dc2ed5016
-	source_arm64 = https://github.com/docker/compose/releases/download/v2.30.3/docker-compose-linux-aarch64
-	sha256sums_arm64 = 8fed7b79b8bd1cb0624142f7d723c3cc67ba747c77ed69abbdefdc77a6d416d1
+	source_amd64 = https://github.com/docker/compose/releases/download/v2.35.1/docker-compose-linux-x86_64
+	sha256sums_amd64 = 7bdb2ce2916e5dd0354e5d129892bf96fdcdb1a9ab8eed69b9173e131db4c230
+	source_arm64 = https://github.com/docker/compose/releases/download/v2.35.1/docker-compose-linux-aarch64
+	sha256sums_arm64 = a91e930a076b91e6c69f11d1dbe3c06729ae765fb9dbb3f97cb808e784647399
 
 pkgname = docker-compose-plugin-bin

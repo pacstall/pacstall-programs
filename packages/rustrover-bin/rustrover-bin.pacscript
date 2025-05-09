@@ -1,13 +1,13 @@
 pkgname="rustrover-bin"
-pkgver="2024.3.2"
+pkgver="2024.3.4"
 gives="rustrover"
 arch=("amd64" "arm64")
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="A powerhouse IDE for Rust developers"
 source_amd64=("https://download.jetbrains.com/${gives}/RustRover-${pkgver}.tar.gz")
-sha256sums_amd64=("c6549572baa913c9842b0227257f7477531269393d5989622a3d0b802b999bf8")
+sha256sums_amd64=("1e7347b37a26715f5afdf101208342e6088d0d8421c9ee1661f48efb38cac8b4")
 source_arm64=("https://download.jetbrains.com/${gives}/RustRover-${pkgver}-aarch64.tar.gz")
-sha256sums_arm64=("d5187d7d449d1b1ec6ff2699c0ccdb3c3280841360d3f43c0318a41b865064c8")
+sha256sums_arm64=("a1b3626907930d32f256d14598e1013ce6999fae28a61f71013be2a7e7c52a1d")
 repology=("project: rustrover")
 
 package() {
@@ -30,6 +30,6 @@ Exec=/usr/share/rustrover/bin/rustrover
 Comment=A powerhouse IDE for Rust developers
 Categories=Development;IDE;
 Terminal=false
-StartupWMClass=jetbrains-webstorm
+StartupWMClass=jetbrains-rustrover
 EOF
 }

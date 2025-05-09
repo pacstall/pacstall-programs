@@ -1,17 +1,16 @@
 pkgname="topgrade-bin"
 gives="topgrade"
-pkgver="16.0.1"
+pkgver="16.0.3"
 arch=('amd64' 'arm64')
-sha256sums_amd64=("5149ee536b15764bcdecb3fe971d99edfb82096f9f8112be3ff6f4e6acb6557f")
-sha256sums_arm64=("d114d4de129754d8e997d5a5021c42f11a8c5d0545ebd17dd1b55e55c4a2e61f")
-source_amd64=("@${pkgname}~${pkgver}::https://github.com/topgrade-rs/topgrade/releases/download/v${pkgver}/topgrade-v${pkgver}-x86_64-unknown-linux-gnu.tar.gz")
-source_arm64=("@${pkgname}~${pkgver}::https://github.com/topgrade-rs/topgrade/releases/download/v${pkgver}/topgrade-v${pkgver}-aarch64-unknown-linux-gnu.tar.gz")
+sha256sums_amd64=("91ebbeb69a90db9c0f41b67be8730fac93d8c09bbba88ce6da1029943216a737")
+sha256sums_arm64=("02fd832b193f0b765ab4936789b433794d8cd8f3329f9add0ddd477c95f33bb9")
+source_amd64=("https://github.com/topgrade-rs/topgrade/releases/download/v${pkgver}/topgrade-v${pkgver}-x86_64-unknown-linux-gnu.tar.gz")
+source_arm64=("https://github.com/topgrade-rs/topgrade/releases/download/v${pkgver}/topgrade-v${pkgver}-aarch64-unknown-linux-gnu.tar.gz")
 pkgdesc="Upgrades everything on your system"
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git" "${gives}-musl-bin")
 repology=("project: ${gives}")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 package() {
-  cd "${pkgname}~${pkgver}"
   install -Dm755 "${gives}" -t "${pkgdir}/usr/bin"
 }

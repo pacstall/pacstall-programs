@@ -1,0 +1,11 @@
+pkgbase = rnnoise
+	pkgver = 0.2
+	pkgdesc = Noise suppression library based on a recurrent neural network
+	arch = amd64
+	conflicts = rnnoise-git
+	license = BSD-3-Clause
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	source = https://github.com/xiph/rnnoise/releases/download/v0.2/rnnoise-0.2.tar.gz
+	sha256sums = 90fce4b00b9ff24c08dbfe31b82ffd43bae383d85c5535676d28b0a2b11c0d37
+
+pkgname = rnnoise

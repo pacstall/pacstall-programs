@@ -1,13 +1,11 @@
 pkgbase = firefox-arm64-deb
-	gives = firefox
-	pkgver = 134.0+build1
-	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
+	gives = firefox-arm64-dummy
+	pkgver = 136.0+dummy
+	pkgdesc = Transitional/deprecated package for firefox-deb
 	url = https://www.mozilla.org/en-US/firefox
 	arch = arm64
+	pacdeps = firefox-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	repology = project: firefox
-	repology = repo: ubuntu_20_04
-	source = https://ppa.launchpadcontent.net/mozillateam/ppa/ubuntu/pool/main/f/firefox/firefox_134.0+build1-0ubuntu0.22.04.1~mt1_arm64.deb
-	sha256sums = 300bb6b388f58cca24ba860cbedc2af0c48590436bd0c1fa824573bdc5d04bd1
+	source = https://github.com/oklopfer/debs/raw/master/empty
 
 pkgname = firefox-arm64-deb

@@ -1,0 +1,13 @@
+pkgbase = lm-studio-app
+	gives = lm-studio
+	pkgver = 0.3.14-5
+	pkgdesc = Experiment with LLMs on your computer.
+	url = https://lmstudio.ai
+	arch = amd64
+	makedepends = imagemagick
+	replaces = lm-studio
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = https://installers.lmstudio.ai/linux/x64/0.3.14-5/LM-Studio-0.3.14-5-x64.AppImage
+	sha256sums = 5ab3bde5ecfcd7f0345354edd4e8b63f2529ea7bec9903332b4554547d5361b8
+
+pkgname = lm-studio-app

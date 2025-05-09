@@ -1,18 +1,17 @@
 pkgname="floorp-bin"
 gives="floorp"
-pkgver="11.20.0"
+pkgver="11.26.0"
 repology=("project: ${gives}")
-sha256sums_amd64=("59e3a67de994bfc8da3038cfb355b249ea67bf13bda8aaff021c459aabffb767")
-sha256sums_arm64=("cd416460b0b5a8b06ee2c4699110197c8180143e76bce4c119719edfc19c0d00")
-source_amd64=("@${pkgname}~${pkgver}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-x86_64.tar.bz2")
-source_arm64=("@${pkgname}~${pkgver}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-aarch64.tar.bz2")
+sha256sums_amd64=("a5f6ac511a6be1081d906f5a731f658873d17cd3e65b60308e1fe2256ff3eda7")
+sha256sums_arm64=("15788bc89b33cbd61dc9698d2ceb6098797caab321f75746b2a8491661ed849b")
+source_amd64=("${gives}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-x86_64.tar.bz2")
+source_arm64=("${gives}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-aarch64.tar.bz2")
 url='https://floorp.app/'
 pkgdesc="Firefox-based Browser build for keeping the Open, Private and Sustainable Web alive"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('amd64' 'arm64')
 
 package() {
-  cd "${pkgname}~${pkgver}"
   if [[ ${CARCH} == "arm64" ]]; then
     fancy_message warn "Floorp is not running properly on ${BBlue}arm64${NC}. It should only be installed for development."
     if [[ ! -f "${METADIR}/${pkgname}-override" ]]; then
@@ -23,9 +22,8 @@ package() {
     mkdir -p "${pkgdir}/${METADIR}"
     touch "${pkgdir}/${METADIR}/${pkgname}-override"
   fi
-  cd "${srcdir}"
   mkdir -p "${pkgdir}/usr/lib/floorp"
-  cp -r floorp/* "${pkgdir}/usr/lib/floorp"
+  cp -r "${gives}"/* "${pkgdir}/usr/lib/floorp"
   chmod +x "${pkgdir}/usr/lib/floorp/floorp"
   chmod +x "${pkgdir}/usr/lib/floorp/floorp-bin"
   mkdir -p "${pkgdir}/usr/share/applications/"

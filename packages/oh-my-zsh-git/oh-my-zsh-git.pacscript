@@ -2,7 +2,7 @@ pkgname="oh-my-zsh-git"
 gives="${pkgname%-git}"
 arch=("all")
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="3"
 pkgdesc="A community-driven framework for managing your zsh configuration"
 url='https://github.com/ohmyzsh/ohmyzsh'
 license=('MIT')
@@ -11,7 +11,7 @@ optdepends=('ruby: for some plugin functionality'
   'python3: for some plugin functionality')
 source=("${gives}::https://github.com/${gives//-/}/${gives//-/}.git"
   "0001-zshrc.patch")
-sha256sums=('SKIP' '0d57bd1fb0e0e8448e68d537a237102efef4d94d9d73993c7de6cefae61cdb87')
+sha256sums=('SKIP' '1f314507bbb5aad57ce997b6243fb4f03b95a63a347c5da068434cff73e973c2')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 prepare() {

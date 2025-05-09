@@ -35,5 +35,5 @@ package() {
   install -Dm644 target/man1/* -t "${pkgdir}/usr/share/man/man1/"
   install -Dm644 target/man5/* -t "${pkgdir}/usr/share/man/man5/"
   install -Dm644 "README.md" "${pkgdir}/usr/share/doc/${gives}/README.md"
-  install -Dm644 "LICENCE" "${pkgdir}/usr/share/licenses/${gives}/LICENSE-MIT"
+  install -Dm644 "LICENSE.txt" "${pkgdir}/usr/share/licenses/${gives}/LICENSE"
 }

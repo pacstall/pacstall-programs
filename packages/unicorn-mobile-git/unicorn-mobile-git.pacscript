@@ -2,20 +2,21 @@ pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="8"
+pkgrel="3"
 depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
   "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11"
   "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev"
-  "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "bluez-firmware"
+  "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "bluez-firmware | linux-firmware-raspi"
   "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics" "ukui-touchpadserver"
   "pipewire-audio | pulseaudio-module-bluetooth" "bluetooth" "alsa-ucm-conf")
-pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile" "adw-gtk-theme" "rhino-xfwm4-theme-git" "appmenu-registrar-backport" "xfce4-dynamic-workspaces-plugin-git")
+pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile" "adw-gtk-theme" "rhino-xfwm4-theme-git" "xfce4-dynamic-workspaces-plugin-git")
 gives="unicorn-mobile"
 replaces=("unicorn-desktop" "unicorn-desktop-git")
 priority="required"
 pkgdesc="Unicorn Desktop Mobile variant by the Rhino Linux Team"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("debian:*")
+backup=('etc/X11/xorg.conf.d/50-synaptics.conf')
 
 build() {
   cd "unicorn"
@@ -82,6 +83,9 @@ post_install() {
       sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
     fi
   done
+  if [[ -f "${homedir}/.config/gtk-3.0/gtk.css" ]]; then
+    sudo sed -i '/^\.-vala-panel-appmenu-core > \* {/,/^}/d' "${homedir}/.config/gtk-3.0/gtk.css"
+  fi
   for i in plank autostart cortile ulauncher; do
     cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
@@ -105,20 +109,16 @@ post_install() {
     echo "[keyfile]" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
     echo "unmanaged-devices=none" | sudo tee -a /etc/NetworkManager/conf.d/10-globally-managed-devices.conf
   fi
-  echo '============================================================================='
-  echo 'Unicorn Mobile Post-Install Information'
-  echo ''
-  echo 'If your GTK3 theme is still Yaru-purple, please run the following to switch to our new theme:'
-  echo ''
-  echo '```'
-  echo 'for i in "gtk-3.0" "gtk-4.0" "Kvantum"; do'
-  # shellcheck disable=SC2016
-  echo '  cp -r /etc/skel/.config/"${i}" ~/.config'
-  echo 'done'
-  echo 'xfconf-query -c xsettings -p /Net/ThemeName -s Adw-dark'
-  echo 'xfconf-query -c xfwm4 -p /general/theme -s Adw-dark'
-  echo 'gsettings set org.gnome.desktop.interface gtk-theme Adw-dark'
-  echo '```'
-  echo ''
-  echo '============================================================================='
+}
+
+post_upgrade() {
+  if ! [[ -d "${homedir}/.config" ]]; then
+    mkdir -p "${homedir}/.config"
+  fi
+  if [[ -f "${homedir}/.config/gtk-3.0/gtk.css" ]]; then
+    sudo sed -i '/^\.-vala-panel-appmenu-core > \* {/,/^}/d' "${homedir}/.config/gtk-3.0/gtk.css"
+  fi
+  if [[ -f "${homedir}/.config/autostart/plank_theme.desktop" ]]; then
+    sudo mv "${homedir}/.config/autostart/plank_theme.desktop" "${homedir}/.config/autostart/plank_theme.desktop.bak"
+  fi
 }

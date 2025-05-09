@@ -1,6 +1,6 @@
 pkgbase = element-desktop-deb
 	gives = element-desktop
-	pkgver = 1.11.85
+	pkgver = 1.11.99
 	pkgdesc = Element is a feature-packed Matrix client
 	url = https://element.io/
 	arch = amd64
@@ -10,7 +10,7 @@ pkgbase = element-desktop-deb
 	replaces = element-desktop
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: element-desktop
-	source = https://packages.element.io/debian/pool/main/e/element-desktop/element-desktop_1.11.85_amd64.deb
-	sha256sums = a65cde64cb5cc48070212d207081ab11f0a9ab4d3ed5b0f97a15de3e99a194a6
+	source = https://packages.element.io/debian/pool/main/e/element-desktop/element-desktop_1.11.99_amd64.deb
+	sha256sums = 2a7c9d477d8d45d1fca7096d9cfaa9e9c7ea3fa0577be5c247ddb586223b7a80
 
 pkgname = element-desktop-deb

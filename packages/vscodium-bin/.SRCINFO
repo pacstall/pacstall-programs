@@ -1,0 +1,13 @@
+pkgbase = vscodium-bin
+	gives = codium
+	pkgver = 1.97.2.25045
+	pkgdesc = VSCodium is a community-driven, freely-licensed binary distribution of Microsoft’s editor VS Code.
+	arch = amd64
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: codium
+	source = https://github.com/VSCodium/vscodium/releases/download/1.97.2.25045/VSCodium-linux-x64-1.97.2.25045.tar.gz
+	source = https://vscodium.com/img/codium_cnl.svg
+	sha256sums = aa0248375a070c49cfc9e1c971ff758fb1370177f61ce6570504235e6270a793
+	sha256sums = SKIP
+
+pkgname = vscodium-bin

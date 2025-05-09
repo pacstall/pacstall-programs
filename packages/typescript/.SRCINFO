@@ -1,0 +1,15 @@
+pkgbase = typescript
+	pkgver = 5.8.3
+	pkgdesc = JavaScript with syntax for types
+	url = http://www.typescriptlang.org
+	arch = any
+	depends = nodejs
+	makedepends = git
+	makedepends = npm
+	makedepends = rsync
+	license = Apache-2.0
+	maintainer = Bahar KURT <kurtbahartr@gmail.com>
+	source = git+https://github.com/microsoft/TypeScript.git#tag=v5.8.3
+	b2sums = SKIP
+
+pkgname = typescript

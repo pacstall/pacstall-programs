@@ -1,6 +1,6 @@
 pkgbase = vesktop-deb
 	gives = vesktop
-	pkgver = 1.5.4
+	pkgver = 1.5.6
 	pkgdesc = A custom Discord client that aims to provide better customizability, performance, and improved Linux support
 	arch = arm64
 	arch = amd64
@@ -15,9 +15,9 @@ pkgbase = vesktop-deb
 	depends = libsecret-1-0
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: vesktop
-	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.4/vesktop_1.5.4_arm64.deb
-	sha256sums_arm64 = 00c9fb9f27ffa31312c39870521647d94cb8d4bcf5b94e770ead29a2e0549517
-	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.4/vesktop_1.5.4_amd64.deb
-	sha256sums_amd64 = 1de02beefe491e963d476db62f860d6b2503bb1e68571e7f1bad010ce69e7c5f
+	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.6/vesktop_1.5.6_arm64.deb
+	sha256sums_arm64 = feeede9a160a66506a90ac94211de304f663129c735001ca04ec5871d458eac7
+	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.6/vesktop_1.5.6_amd64.deb
+	sha256sums_amd64 = 12ef0a41e0cdf6742d10727a87a380b27ccc2ca0f608372f16c652397a9a9a03
 
 pkgname = vesktop-deb

@@ -1,11 +1,12 @@
 pkgname="linux-headers-generic-lts-6.6-deb"
-gives="linux-headers-6.6.51-060651-generic"
-pkgver="6.6.51"
-buildver="6.6.51-060651.202409121031"
+gives="linux-headers-6.6.63-060663-generic"
+pkgver="6.6.63"
+buildver="6.6.63-060663.202411221547"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("15f2c20cc364c523df0384be20534dc87a52209906d09d4581610f9cb94ccfb0")
-sha256sums_amd64=("36752c707885aea2cb05aa7f96a06a1fec4e9ca876596e789a5375c45a72328f")
+sha256sums_arm64=("a2d519be6ea7221f416eff230bf2920e203bda9622390f27bda09ae9840c0548")
+sha256sums_amd64=("5ca5bdb1cc91e90b4b47925b3cdd4d4b91d819c8b5e441cd00497028e7ae1abb")
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pacdeps=("linux-headers-lts-6.6-deb")
 pkgdesc="Linux kernel LTS from Ubuntu Mainline Kernel PPA (Generic headers)"
+incompatible=("debian:10" "debian:11" "debian:12")
 maintainer=("James Ed Randson <jimedrand@disroot.org>")

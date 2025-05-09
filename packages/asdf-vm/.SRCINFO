@@ -1,8 +1,10 @@
 pkgbase = asdf-vm
-	pkgver = 0.14.1
+	pkgver = 0.16.7
 	pkgdesc = Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more
 	url = https://asdf-vm.com
-	arch = any
+	arch = i386
+	arch = amd64
+	arch = arm64
 	depends = curl
 	depends = git
 	optdepends = build-essential: Array of tools to build software
@@ -12,7 +14,11 @@ pkgbase = asdf-vm
 	optdepends = unzip: Needed by some plugins, like Elixir
 	license = MIT
 	repology = project: asdf-vm
-	source = asdf-vm-0.14.1.tar.gz::https://github.com/asdf-vm/asdf/archive/v0.14.1.tar.gz
-	sha256sums = 308a7f2e1eb551e435458974fbe37dcef1c940e961ad40e47ae78cabc154543e
+	source_i386 = asdf-vm-0.16.7-i386.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.7/asdf-v0.16.7-linux-386.tar.gz
+	sha256sums_i386 = 8889bed9d9cdf4e6c4405280ad98ef97256924cacff5c9d17c416ad7d33617a5
+	source_amd64 = asdf-vm-0.16.7-amd64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.7/asdf-v0.16.7-linux-amd64.tar.gz
+	sha256sums_amd64 = 6a5f56833da9e94068f3e70d5ca6ffe0a14a0887e1eac1b9b0c96f67d96242be
+	source_arm64 = asdf-vm-0.16.7-arm64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v0.16.7/asdf-v0.16.7-linux-arm64.tar.gz
+	sha256sums_arm64 = a4904347dd1a468b4947fe1e22458742c89da27df589a324172bb8154229dea7
 
 pkgname = asdf-vm

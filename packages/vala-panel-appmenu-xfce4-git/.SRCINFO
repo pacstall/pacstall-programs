@@ -1,0 +1,41 @@
+pkgbase = vala-panel-appmenu-xfce4-git
+	gives = vala-panel-appmenu-xfce4
+	pkgver = 24.05
+	pkgrel = 3
+	pkgdesc = Small utility to hold DBusMenu menus (XFCE4 plugin built-in)
+	url = https://gitlab.com/vala-panel-project/vala-panel-appmenu
+	arch = amd64
+	arch = arm64
+	depends = libgtk-3-0
+	depends = libglib2.0-0
+	depends = libgirepository-1.0-1
+	depends = libxfce4panel-2.0-4
+	depends = libxfce4ui-2-0
+	depends = libwnck-3-0
+	depends = gir1.2-libxfce4panel-2.0
+	depends = gir1.2-libxfce4ui-2.0
+	depends = gir1.2-wnck-3.0
+	depends = gir1.2-libxfce4ui-2.0
+	depends = xfconf
+	depends = xfce4-panel>=4.19.0
+	depends = vala-panel-appmenu-common
+	makedepends = meson
+	makedepends = valac
+	makedepends = libglib2.0-dev
+	makedepends = libgirepository1.0-dev
+	makedepends = libxfce4panel-2.0-dev
+	makedepends = libxfce4ui-2-dev
+	makedepends = libwnck-3-dev
+	makedepends = libxfconf-0-dev
+	makedepends = libxfce4panel-2.0-dev>=4.19.0
+	replaces = xfce4-appmenu-plugin
+	replaces = appmenu-registrar
+	replaces = appmenu-glib-translator
+	provides = xfce4-appmenu-plugin=24.05
+	provides = appmenu-registrar=24.05
+	provides = appmenu-glib-translator=24.05
+	license = LGPL-3.0-or-later
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://gitlab.com/vala-panel-project/vala-panel-appmenu.git
+
+pkgname = vala-panel-appmenu-xfce4-git

@@ -1,11 +1,11 @@
 pkgname="ungoogled-chromium-bin"
 gives="ungoogled-chromium"
-pkgver="131.0.6778.139-1"
+pkgver="134.0.6998.35-1"
 arch=("amd64")
 pkgdesc="Google Chromium, sans integration with Google"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 source=("https://github.com/ungoogled-software/${gives}-portablelinux/releases/download/${pkgver}/${gives}_${pkgver}_linux.tar.xz")
-sha256sums=("82da8451952cf8734f25e10ac527ab49a8eea339bf6eb6488c8ab032b8b77a14")
+sha256sums=("f20616cebbaac86ee357a7037da8e0450f0e5100e0ee3f09e53232490ddb722a")
 repology=("project: ${gives}")
 
 package() {

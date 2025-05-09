@@ -1,10 +1,13 @@
 pkgbase = linux-headers-lts-6.6-deb
-	gives = linux-headers-6.6.51-060651
-	pkgver = 6.6.51
+	gives = linux-headers-6.6.63-060663
+	pkgver = 6.6.63
 	pkgdesc = Linux kernel LTS from Ubuntu Mainline Kernel PPA (Headers)
 	arch = all
+	incompatible = debian:10
+	incompatible = debian:11
+	incompatible = debian:12
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.51/amd64/linux-headers-6.6.51-060651_6.6.51-060651.202409121031_all.deb
-	sha256sums = e2a5b21d8ab8cc1d8a359cd8809bc0cf16ecf3cd0cb87c29a50d05f85f564510
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.6.63/amd64/linux-headers-6.6.63-060663_6.6.63-060663.202411221547_all.deb
+	sha256sums = 5a846645e87ff4beabc950922216216f4880ac63711fc4d85bfe126e12f5a41a
 
 pkgname = linux-headers-lts-6.6-deb

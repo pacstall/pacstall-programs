@@ -1,8 +1,8 @@
 pkgname=asdf-vm
-pkgver=0.14.1
+pkgver=0.16.7
 pkgdesc='Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more'
 repology=("project: ${pkgname}")
-arch=('any')
+arch=('i386' 'amd64' 'arm64')
 url='https://asdf-vm.com'
 license=('MIT')
 depends=(
@@ -16,50 +16,30 @@ optdepends=(
   'libncurses-dev: Text-based UI library for terminal applications'
   'unzip: Needed by some plugins, like Elixir'
 )
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/asdf-vm/asdf/archive/v${pkgver}.tar.gz")
-sha256sums=('308a7f2e1eb551e435458974fbe37dcef1c940e961ad40e47ae78cabc154543e')
+source_i386="${pkgname}-${pkgver}-i386.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v${pkgver}/asdf-v${pkgver}-linux-386.tar.gz"
+source_amd64="${pkgname}-${pkgver}-amd64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v${pkgver}/asdf-v${pkgver}-linux-amd64.tar.gz"
+source_arm64="${pkgname}-${pkgver}-arm64.tar.gz::https://github.com/asdf-vm/asdf/releases/download/v${pkgver}/asdf-v${pkgver}-linux-arm64.tar.gz"
+sha256sums_i386=('8889bed9d9cdf4e6c4405280ad98ef97256924cacff5c9d17c416ad7d33617a5')
+sha256sums_amd64=('6a5f56833da9e94068f3e70d5ca6ffe0a14a0887e1eac1b9b0c96f67d96242be')
+sha256sums_arm64=('a4904347dd1a468b4947fe1e22458742c89da27df589a324172bb8154229dea7')
 
 package() {
-  cd "asdf-${pkgver}"
-
-  local dst="${pkgdir}/opt/${pkgname}"
-  mkdir -p "${dst}"
-
-  cp -r bin lib asdf.elv asdf.fish asdf.nu asdf.sh defaults help.txt version.txt "${dst}"
-
-  local usrshare="${pkgdir}/usr/share"
-
-  local docdir="${usrshare}/doc/${pkgname}"
-  mkdir -p "${docdir}"
-  cp help.txt "${docdir}"
-
-  # https://aur.archlinux.org/packages/asdf-vm#comment-886293
-  find . \
-    -path ./.github \
-    -prune \
-    -o \
-    -name '*.md' \
-    -exec cp --parents '{}' "${docdir}" \;
-
-  install -Dm644 -t "${usrshare}/licenses/${pkgname}/" LICENSE
-
-  cd completions
-
-  install -Dm644 asdf.bash "${usrshare}/bash-completion/completions/asdf"
-  install -Dm644 asdf.fish "${usrshare}/fish/vendor_completions.d/asdf.fish"
-  install -Dm644 _asdf "${usrshare}/zsh/site-functions/_asdf"
+  install -Dm755 "asdf" "${pkgdir}/usr/bin/asdf"
 }
 
 post_install() {
   cat << EOF
 
-Add the following line to your .bashrc or .profile:
-. /opt/asdf-vm/asdf.sh
+asdf-vm ${pkgver} installed!
 
-For more information see the official instructions [0].
-Especially the section titled "YOUR_SHELL & Pacman".
+NOTICE!:
+Version 0.16.0 brought breaking changes.
+Please see the official instructions for more information [0].
+Don't forget to run 'asdf reshim' after you're done to adjust your shims to
+the new version.
 
-[0] https://asdf-vm.com/guide/getting-started.html#_3-install-asdf
+
+[0] https://asdf-vm.com/guide/upgrading-to-v0-16.html#breaking-changes
 
 EOF
 }
