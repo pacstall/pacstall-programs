@@ -1,0 +1,10 @@
+pkgname="xclicker-deb"
+gives="xclicker"
+breaks=("xclicker")
+arch=("amd64")
+pkgver="1.5.1"
+pkgdesc="Fast gui autoclicker for x11 linux desktops"
+sha256sums=("37953c21b32bf8558dc043f3217ca8f24747b798fa3ba7c2ddecc9cbe56d826f")
+maintainer=("Alxhr0 <alxhr0@proton.me>")
+source=("https://github.com/robiot/xclicker/releases/download/v${pkgver}/xclicker_${pkgver}_amd64.deb")
+repology=("project: ${gives}")

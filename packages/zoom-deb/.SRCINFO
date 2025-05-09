@@ -1,11 +1,11 @@
 pkgbase = zoom-deb
 	gives = zoom
-	pkgver = 6.3.6.6315
+	pkgver = 6.4.6.1370
 	pkgdesc = Connect, collaborate, and get more done together with Zoom’s reliable video meeting solution.
 	arch = amd64
 	replaces = zoom
 	repology = project: zoom-videoconference
-	source = https://zoom.us/client/6.3.6.6315/zoom_amd64.deb
-	sha256sums = f80d2ed1464be0fbae059ea2aa8d88ba1ce195018e052fbffdb9d5b0e19aa68e
+	source = https://zoom.us/client/6.4.6.1370/zoom_amd64.deb
+	sha256sums = 2c93fae69c127491e1214d293b271bba120cc2c1f62adf50cda3089b0d5eec6b
 
 pkgname = zoom-deb

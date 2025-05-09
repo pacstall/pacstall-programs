@@ -305,6 +305,7 @@ libfdk-aac1-deb
 libgbinder-deb
 libgc-nix
 libglibutil-deb
+libhyprgraphics-bin
 libhyprutils-bin
 libicu-deb
 liblcf
@@ -701,6 +702,7 @@ tre-git
 treefetch-bin
 truckersmp-cli
 ttf-fira-sans
+tuckr
 tutanota-app
 typescript
 typora-deb
@@ -769,6 +771,7 @@ winetricks-git
 wsysmon-bin
 xapps-common-deb
 xcb-util-errors
+xclicker-deb
 xdg-desktop-portal-hyprland
 xdg-ninja-git
 xdg-terminal-exec-git
