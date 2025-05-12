@@ -1,15 +1,15 @@
 pkgbase = warp-terminal-deb
 	gives = warp-terminal
-	pkgver = 0.2025.03.26.08.10.stable.02
+	pkgver = 0.2025.04.23.08.11.stable.01
 	pkgdesc = Modern, Rust-based terminal with built-in AI coding tools
 	url = https://www.warp.dev
 	arch = amd64
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: warp-terminal
-	source_amd64 = https://releases.warp.dev/stable/v0.2025.03.26.08.10.stable_02/warp-terminal_0.2025.03.26.08.10.stable.02_amd64.deb
-	sha256sums_amd64 = 6ef2c297103321f5c92552fa5feb310ec63a8352c28448982bbea5688830ad2e
-	source_arm64 = https://releases.warp.dev/stable/v0.2025.03.26.08.10.stable_02/warp-terminal_0.2025.03.26.08.10.stable.02_arm64.deb
-	sha256sums_arm64 = e4f50af41b14d58fa340d5b07c0d4516a483916d6fadc58a7e3cc36571abda72
+	source_amd64 = https://releases.warp.dev/stable/v0.2025.04.23.08.11.stable_01/warp-terminal_0.2025.04.23.08.11.stable.01_amd64.deb
+	sha256sums_amd64 = 344c72043ec6bb1023dd7f425cb245d55596591c10b86d99a52217d8089785a3
+	source_arm64 = https://releases.warp.dev/stable/v0.2025.04.23.08.11.stable_01/warp-terminal_0.2025.04.23.08.11.stable.01_arm64.deb
+	sha256sums_arm64 = 3231968ffe4ba56c73590a3406503fcee0f9473b406f905040f33842980db69b
 
 pkgname = warp-terminal-deb

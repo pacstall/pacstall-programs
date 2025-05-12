@@ -1,9 +1,9 @@
 pkgname="google-chrome-unstable-deb"
 gives="google-chrome-unstable"
-pkgver="132.0.6821.2"
+pkgver="137.0.7141.3"
 source=("https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${pkgver}-1_amd64.deb")
 pkgdesc="The web browser built by Google - Developer/Unstable channel"
-sha256sums=("52ce29c4529f5f0fe3d3f048b0411c0f01d143554e07fd68533ba599a6c7b252")
+sha256sums=("1d963627d903ca6af507421eaf04c27a2f9fe7e40f012d4f46380d427da09450")
 arch=('amd64')
 repology=("project: google-chrome" "visiblename: google-chrome-dev")
 maintainer=("Oren Klopfer <oren@taumoda.com>")

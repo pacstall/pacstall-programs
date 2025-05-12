@@ -1,9 +1,9 @@
 pkgname="floorp-bin"
 gives="floorp"
-pkgver="11.24.0"
+pkgver="11.26.0"
 repology=("project: ${gives}")
-sha256sums_amd64=("db3935d36f3e8846094a435aca3176be9170869129f208db60d6801ab75575a9")
-sha256sums_arm64=("01fd876adbd5dc54a8e0e1dd712b2ab2d956bcd93c3a7a9455a02ad83c5a66ba")
+sha256sums_amd64=("a5f6ac511a6be1081d906f5a731f658873d17cd3e65b60308e1fe2256ff3eda7")
+sha256sums_arm64=("15788bc89b33cbd61dc9698d2ceb6098797caab321f75746b2a8491661ed849b")
 source_amd64=("${gives}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-x86_64.tar.bz2")
 source_arm64=("${gives}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-aarch64.tar.bz2")
 url='https://floorp.app/'

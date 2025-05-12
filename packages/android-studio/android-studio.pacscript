@@ -1,5 +1,5 @@
 pkgname="android-studio"
-pkgver="2024.2.2.13"
+pkgver="2024.3.1.15"
 arch=("amd64")
 repology=("project: ${pkgname}" "repo: aur" "visiblename: ${pkgname}")
 replaces=("${pkgname}" "${pkgname}-beta" "${pkgname}-canary")
@@ -11,7 +11,7 @@ source=(
   "${pkgname}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${pkgname}.desktop"
 )
 sha256sums=(
-  "b7fe1ed4a7959bdaca7a8fd57461dbbf9a205eb23cc218ed828ed88e8b998cb5"
+  "428e47fdfa89dbc1e280df22412208a9abc35fd86762e2036e925f0a065fc621"
   "SKIP"
 )
 

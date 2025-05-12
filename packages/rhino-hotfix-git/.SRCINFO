@@ -7,6 +7,7 @@ pkgbase = rhino-hotfix-git
 	depends = curl
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = rhino-hotfix::https://github.com/rhino-linux/hotfix.git
 

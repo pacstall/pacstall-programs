@@ -1,10 +1,10 @@
 pkgname="sublime-text-deb"
 gives="sublime-text"
 replaces=("${gives}")
-pkgver="4180"
+pkgver="4192"
 source=("https://download.sublimetext.com/${gives}_build-${pkgver}_amd64.deb")
 pkgdesc="Sublime text light text editor for programmers"
-sha256sums=("a5460f6f9bd82ab5962a1efd6213eef3ca0ac7705d103c2f3d2eb74671f035d4")
+sha256sums=("c13284ffdf52054abad9fa48a35b75ac140f19293275738a1c11a736a1197951")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: ${gives}")
