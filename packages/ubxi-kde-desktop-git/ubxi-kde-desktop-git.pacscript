@@ -88,3 +88,7 @@ Icon=preferences-desktop-virtual
 MimeType=
 EOF
 }
+
+post_install() {
+  cp "/etc/xdg/kglobalshortcutsrc" "${homedir}/.config"
+}
