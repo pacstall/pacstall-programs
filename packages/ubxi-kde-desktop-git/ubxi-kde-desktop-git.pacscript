@@ -90,5 +90,7 @@ EOF
 }
 
 post_install() {
-  cp "/etc/xdg/kglobalshortcutsrc" "${homedir}/.config"
+  if ! [[ -f "${homedir}/.config/kglobalshortcutsrc" ]]; then
+    cp "/etc/xdg/kglobalshortcutsrc" "${homedir}/.config"
+  fi
 }
