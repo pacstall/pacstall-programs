@@ -62,6 +62,7 @@ package() {
   # Plasma config
   install -Dm644 "plasma/kcm-about-distrorc" -t "${pkgdir}/etc/xdg"
   install -Dm644 "plasma/kdeglobals" -t "${pkgdir}/etc/xdg"
+  install -Dm644 "plasma/kglobalshortcutsrc" -t ${pkgdir}/etc/xdg"
 
   # KRunner for desktop
   cat << EOF > "${pkgdir}/usr/share/applications/krunner.desktop"
