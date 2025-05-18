@@ -43,6 +43,7 @@ package() {
   # Icons
   install -Dm644 "rhino/logos/logo.png" -t "${pkgdir}/usr/share/icons"
   install -Dm644 "rhino/logos/logo.svg" -t "${pkgdir}/usr/share/icons"
+cp rhino/icons/{uniApps,uniDesktop,uniSearch}.png "${pkgdir}/usr/share/icons"
 
   # Wallpapers for Plasma
   cp -r rhino/wallpapers "${pkgdir}/usr/share"
@@ -64,29 +65,8 @@ package() {
   install -Dm644 "plasma/kdeglobals" -t "${pkgdir}/etc/xdg"
   install -Dm644 "plasma/kglobalshortcutsrc" -t "${pkgdir}/etc/xdg"
 
-  # KRunner for desktop
-  cat << EOF > "${pkgdir}/usr/share/applications/krunner.desktop"
-  [Desktop Entry]
-Version=1.0
-Type=Application
-Name=KRunner
-Comment=
-Exec=krunner %F
-Icon=krunner
-MimeType=
-EOF
-
-  # KWin Overview for desktop
-  cat << EOF > "${pkgdir}/usr/share/applications/kwin-overview.desktop"
-  [Desktop Entry]
-Version=1.0
-Type=Application
-Name=Overview
-Comment=
-Exec=qdbus6 org.kde.kglobalaccel /component/kwin invokeShortcut Overview
-Icon=preferences-desktop-virtual
-MimeType=
-EOF
+    # KRunner for Search Bar and KWin Overview for Desktop Switcher
+    cp plasma/applications/{krunner,kwin-overview}.desktop "${pkgdir}/usr/share/applications"
 }
 
 post_install() {
