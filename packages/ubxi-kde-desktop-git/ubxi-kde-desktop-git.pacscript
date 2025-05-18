@@ -43,7 +43,7 @@ package() {
   # Icons
   install -Dm644 "rhino/logos/logo.png" -t "${pkgdir}/usr/share/icons"
   install -Dm644 "rhino/logos/logo.svg" -t "${pkgdir}/usr/share/icons"
-cp rhino/icons/{uniApps,uniDesktop,uniSearch}.png "${pkgdir}/usr/share/icons"
+  cp rhino/icons/{uniApps,uniDesktop,uniSearch}.png "${pkgdir}/usr/share/icons"
 
   # Wallpapers for Plasma
   cp -r rhino/wallpapers "${pkgdir}/usr/share"
@@ -65,8 +65,8 @@ cp rhino/icons/{uniApps,uniDesktop,uniSearch}.png "${pkgdir}/usr/share/icons"
   install -Dm644 "plasma/kdeglobals" -t "${pkgdir}/etc/xdg"
   install -Dm644 "plasma/kglobalshortcutsrc" -t "${pkgdir}/etc/xdg"
 
-    # KRunner for Search Bar and KWin Overview for Desktop Switcher
-    cp plasma/applications/{krunner,kwin-overview}.desktop "${pkgdir}/usr/share/applications"
+  # KRunner for Search Bar and KWin Overview for Desktop Switcher
+  cp plasma/applications/{krunner,kwin-overview}.desktop "${pkgdir}/usr/share/applications"
 }
 
 post_install() {
