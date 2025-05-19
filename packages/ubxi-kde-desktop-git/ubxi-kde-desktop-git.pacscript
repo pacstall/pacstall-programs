@@ -43,7 +43,7 @@ package() {
   # Icons
   install -Dm644 "rhino/logos/logo.png" -t "${pkgdir}/usr/share/icons"
   install -Dm644 "rhino/logos/logo.svg" -t "${pkgdir}/usr/share/icons"
-  cp rhino/icons/{uniApps,uniDesktop,uniSearch}.png "${pkgdir}/usr/share/icons"
+  cp rhino/icons/{uniDesktop,uniPlasma,uniSearch}.png "${pkgdir}/usr/share/icons"
 
   # Wallpapers for Plasma
   cp -r rhino/wallpapers "${pkgdir}/usr/share"
