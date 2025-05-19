@@ -35,12 +35,12 @@ package() {
 post_upgrade() {
   if dkms status | grep -q "${gives}/${_oldpkgver}"; then
     dkms remove -m "${gives}" -v "${_pkgoldver}" --all
-    dkms add -m "${gives}" -v "${pkgver}"
-    dkms build -m "${gives}" -v "${pkgver}"
-    dkms install -m "${gives}" -v "${pkgver}" --force
-
-    update-initramfs -u
   fi
+  dkms add -m "${gives}" -v "${pkgver}"
+  dkms build -m "${gives}" -v "${pkgver}"
+  dkms install -m "${gives}" -v "${pkgver}" --force
+
+  update-initramfs -u
 }
 
 post_install() {
