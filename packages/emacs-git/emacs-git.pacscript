@@ -79,7 +79,7 @@ breaks=("${pkgname}" "${pkgname}-nox")
 replaces=("${pkgname}" "${pkgname}-nox")
 source=("https://github.com/emacs-mirror/emacs.git")
 arch=("any")
-pkgver="29.4"
+pkgver="30.1"
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then
   export LD=/usr/bin/ld.gold
@@ -132,7 +132,7 @@ elif [[ ${GTK3} == "YES" ]]; then
 fi
 
 if [[ ${CLI} != "YES" ]]; then
-  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff6")
+  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff6 | libtiff5")
 elif [[ ${CLI} == "YES" ]]; then
   depends+=("")
 fi

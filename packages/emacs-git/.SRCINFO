@@ -1,6 +1,6 @@
 pkgbase = emacs-git
 	gives = emacs
-	pkgver = 29.4
+	pkgver = 30.1
 	pkgdesc = An extensible, customizable, free/libre text editor — and more.
 	arch = any
 	depends = libalsaplayer0
@@ -20,7 +20,7 @@ pkgbase = emacs-git
 	depends = libpng16-16
 	depends = libgif-dev
 	depends = libwebp7 | libweb6
-	depends = libtiff6
+	depends = libtiff6 | libtiff5
 	depends = libcairo2
 	makedepends = git
 	makedepends = autoconf

@@ -1,10 +1,13 @@
 pkgbase = vinegar-git
 	gives = vinegar
-	pkgver = 1.7.8
+	pkgver = 1.8.1
 	pkgdesc = An open-source, minimal, configurable, fast bootstrapper for running Roblox on Linux
 	url = https://vinegarhq.org/
 	arch = amd64
+	depends = libgtk-4-1
+	depends = libadwaita-1-0
 	makedepends = golang>=2:1.22
+	makedepends = pkg-config
 	makedepends = imagemagick
 	makedepends = gcc
 	makedepends = libwayland-dev

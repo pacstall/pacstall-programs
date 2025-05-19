@@ -1,11 +1,12 @@
 pkgname='vala-panel-appmenu-xfce4-git'
 gives='vala-panel-appmenu-xfce4'
-pkgver='24.05'
+pkgver='25.04'
 pkgrel='2'
 pkgdesc='Small utility to hold DBusMenu menus (XFCE4 plugin built-in)'
 makedepends=(
   'meson'
   'valac'
+  'valac-0.56-vapi'
   'libglib2.0-dev'
   'libgirepository1.0-dev'
   'libxfce4panel-2.0-dev'
@@ -45,11 +46,20 @@ replaces=(
 )
 maintainer=('Oren Klopfer <oren@taumoda.com>')
 build() {
-  meson build vala-panel-appmenu -Dxfce=enabled --prefix=/usr --libexecdir=lib --force-fallback-for=appmenu-glib-translator
+  meson build vala-panel-appmenu \
+    -Dxfce=enabled \
+    -Dappmenu-gtk-module=disabled \
+    -Djayatana=disabled \
+    --prefix=/usr \
+    --libexecdir=lib \
+    --force-fallback-for=appmenu-glib-translator
   meson compile -C build
 }
 
 package() {
   DESTDIR="${pkgdir}" meson install -C build --no-rebuild
-  rm -rf "${pkgdir}"/usr/share/locale
+  rm -rf "${pkgdir}/usr/share/locale"
+  rm -rf "${pkgdir}/usr/share/glib-2.0/schemas/org.valapanel.appmenu.gschema.xml"
+  rm -rf "${pkgdir}/usr/share/vala-panel/applets/org.valapanel.appmenu.plugin"
+  rm -rf "${pkgdir}/usr/lib/${AARCH}-linux-gnu/vala-panel/applets/libappmenu.so"
 }

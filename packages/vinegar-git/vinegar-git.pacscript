@@ -1,11 +1,12 @@
 pkgname="vinegar-git"
 repology=("project: vinegar")
 arch=('amd64')
-pkgver="1.7.8"
+pkgver="1.8.1"
 url='https://vinegarhq.org/'
 source=("https://github.com/vinegarhq/vinegar.git")
 makedepends=(
   "golang>=2:1.22"
+  "pkg-config"
   "imagemagick"
 
   # Gio
@@ -21,6 +22,7 @@ makedepends=(
   "libvulkan-dev"
   "libglib2.0-dev-bin"
 )
+depends=("libgtk-4-1" "libadwaita-1-0")
 optdepends=(
   "gamemode: Gamemode integration"
   "wine: A required dependency (made optional for flexibility)"

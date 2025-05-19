@@ -1,6 +1,6 @@
 pkgbase = emacs
 	gives = emacs
-	pkgver = 29.4
+	pkgver = 30.1
 	pkgdesc = An extensible, customizable, free/libre text editor — and more.
 	arch = any
 	depends = libalsaplayer0
@@ -20,7 +20,7 @@ pkgbase = emacs
 	depends = libpng16-16
 	depends = libgif-dev
 	depends = libwebp7 | libweb6
-	depends = libtiff6
+	depends = libtiff6 | libtiff5
 	depends = libcairo2
 	makedepends = git
 	makedepends = autoconf
@@ -43,7 +43,7 @@ pkgbase = emacs
 	replaces = emacs-nox
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: emacs
-	source = @emacs~29.4::http://ftpmirror.gnu.org/emacs/emacs-29.4.tar.xz
-	sha256sums = ba897946f94c36600a7e7bb3501d27aa4112d791bfe1445c61ed28550daca235
+	source = @emacs~30.1::http://ftpmirror.gnu.org/emacs/emacs-30.1.tar.xz
+	sha256sums = 6ccac1ae76e6af93c6de1df175e8eb406767c23da3dd2a16aa67e3124a6f138f
 
 pkgname = emacs

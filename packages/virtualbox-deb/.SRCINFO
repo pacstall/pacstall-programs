@@ -9,6 +9,7 @@ pkgbase = virtualbox-deb
 	incompatible = ubuntu:mantic
 	incompatible = ubuntu:oracular
 	incompatible = ubuntu:plucky
+	incompatible = ubuntu:questing
 	incompatible = ubuntu:devel
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>

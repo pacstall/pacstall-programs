@@ -71,7 +71,7 @@ NOGZ="YES"        # Don't compress .el files.
 
 pkgname="emacs"
 arch=("any")
-pkgver="29.4"
+pkgver="30.1"
 source=("@${pkgname}~${pkgver}::http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
 makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev" "libtree-sitter-dev")
@@ -80,7 +80,7 @@ depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 gives="${pkgname}"
 breaks=("${pkgname}-git" "${pkgname}-nox")
 replaces=("${pkgname}-git" "${pkgname}-nox")
-sha256sums=("ba897946f94c36600a7e7bb3501d27aa4112d791bfe1445c61ed28550daca235")
+sha256sums=("6ccac1ae76e6af93c6de1df175e8eb406767c23da3dd2a16aa67e3124a6f138f")
 repology=("project: emacs")
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then
@@ -134,7 +134,7 @@ elif [[ ${GTK3} == "YES" ]]; then
 fi
 
 if [[ ${CLI} != "YES" ]]; then
-  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff6")
+  depends+=("libjpeg-turbo8 | libjpeg62-turbo" "libpng16-16" "libgif-dev" "libwebp7 | libweb6" "libtiff6 | libtiff5")
 elif [[ ${CLI} == "YES" ]]; then
   depends+=("")
 fi

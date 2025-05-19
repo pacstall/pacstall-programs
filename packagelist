@@ -1,5 +1,6 @@
 1password-cli-bin
 86box-app
+abdownloadmanager
 adapta-gtk-theme-git
 adw-gtk-theme
 adw-gtk3
@@ -25,6 +26,7 @@ arduino-cli-bin
 arduino-ide-bin
 asdf-vm
 aseprite
+audiorelay-bin
 audiorelay-deb
 awesome-git
 aws-cli-v2-bin
@@ -35,6 +37,7 @@ batsignal
 bazecor-app
 bemenu-git
 bes2600-firmware-git
+betterbird-bin
 bitwarden-cli-bin
 bitwarden-deb
 bitwig-studio-3-deb
@@ -78,6 +81,7 @@ cortile
 cortile-bin
 couture
 cromite-bin
+ctop-bin
 cutefish-calculator-git
 cutefish-core-git
 cutefish-dock-git
@@ -93,6 +97,7 @@ davinci-resolve
 dbeaver-ce-deb
 deadbeef-deb
 deskcut-deb
+digikam-app
 dino-git
 directx-headers-git
 discord
@@ -151,6 +156,7 @@ ffsend-bin
 figma-linux-deb
 firefox-arm64-deb
 firefox-bin
+firefox-deb
 firefox-developer-edition-bin
 firefox-nightly-bin
 firefox-nightly-deb
@@ -171,10 +177,13 @@ fsearch-git
 fselect-git
 fzf-bin
 galaxybudsclient-bin
-geekbench-bin
+geekbench4-bin
+geekbench5-bin
+geekbench6-bin
 genymotion-bin
 gfn-electron-bin
 ghcup-bin
+ghostty-app
 gir1.2-xapp-1.0-deb
 git
 git-butler-deb
@@ -193,6 +202,7 @@ glffetch-git
 glow-deb
 gnome-shell-extension-installer-git
 gnome-tweaks
+gnucash
 go-bin
 go-task-deb
 godot-bin
@@ -265,6 +275,7 @@ kakoune
 kalendar-git
 kate-backport-deb
 kate5-data-backport-deb
+kdenlive-app
 keepassxc
 keybase-deb
 kirc
@@ -294,6 +305,7 @@ libfdk-aac1-deb
 libgbinder-deb
 libgc-nix
 libglibutil-deb
+libhyprgraphics-bin
 libhyprutils-bin
 libicu-deb
 liblcf
@@ -330,12 +342,15 @@ linux-modules-lts-6.6-deb
 linux-modules-stable-deb
 linux-wifi-hotspot-deb
 lix-git
+lm-studio-app
 lrz-syncshare-deb
 lsd-deb
 lunacy-deb
 lunarclient-app
 lutris-deb
 lutris-git
+ly-git
+lynxfetch
 lyrebird-git
 lyx
 mailspring-deb
@@ -466,12 +481,14 @@ nu-tongues-bin
 nuclear-deb
 nuclei-bin
 nushell-bin
+nutext-bin
 nutext-git
 obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-deb
 obs-backgroundremoval-git
 obs-ndi-deb
+obs-studio
 obs-studio-deb
 obsidian-deb
 oh-my-posh-git
@@ -486,6 +503,7 @@ opendoas-git
 openrgb-git
 opensnitch-deb
 opensnitch-ui-deb
+opentabletdriver-deb
 opentoonz
 openvr
 opera-beta-deb
@@ -499,7 +517,9 @@ p3x-onenote-app
 pacget-git
 paconvert-git
 pacstall
+pacstall-docker-builder-git
 pacstall-gui-git
+pacstall-mime-git
 pacstall-qa-git
 pacup
 pacup-git
@@ -514,6 +534,8 @@ pcsx2-app
 pdf-mix-tool-git
 pdfmm-git
 pfetch-bin
+pgadmin4-desktop-deb
+pgadmin4-server-deb
 pgmigrate
 picom
 pipes.sh-bin
@@ -556,10 +578,9 @@ qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qt6-style-kvantum
 qt6pas
-qtile-extras-git
-qtile-git
 quarto-deb
 quintom-cursor-theme-git
+r2modman-deb
 rambox-app
 rambox-deb
 raspi-config-deb
@@ -588,6 +609,7 @@ rhino-xfwm4-theme-git
 rider-bin
 rio-wayland-deb
 rio-x11-deb
+rnnoise
 rojo-bin
 rosary-deb
 rpcs3-app
@@ -620,6 +642,8 @@ slop-git
 smartgit
 smplayer-deb
 snapper-rollback-git
+snd-hda-macbookpro
+soar
 softmaker-freeoffice-2024-deb
 softmaker-office-2024-deb
 softmaker-office-nx-deb
@@ -628,6 +652,7 @@ soundux
 spacecadetpinball-git
 spot-client-git
 spotify-client-deb
+sqlitebrowser
 st-distrotube-git
 st-lukesmith-git
 starship-bin
@@ -678,15 +703,16 @@ tre-git
 treefetch-bin
 truckersmp-cli
 ttf-fira-sans
-tuner
-tuner-git
+tuckr
 tutanota-app
+typescript
 typora-deb
 u-boot-mobian-deb
 ufetch-debian
 ufetch-ubuntu
 ugee-tablet-driver-deb
 ulauncher-deb
+umu-launcher-git
 ungoogled-chromium-bin
 ungoogled-chromium-deb
 unicons-git
@@ -710,12 +736,17 @@ vivarium
 vkroots-git
 vscode-deb
 vscode-insiders-deb
+vscode-languageservers:pkgbase
+vscode-languageservers:vscode-css-languageserver
+vscode-languageservers:vscode-json-languageserver
+vscode-languageservers:vscode-html-languageserver
 vscodium-bin
 vscodium-deb
 vyprvpn-deb
 waf
 walc-app
 warp
+warp-terminal-deb
 warpinator-deb
 watchexec-bin
 wavey-launcher-bin
@@ -732,6 +763,7 @@ weechat-git
 wezterm-app
 wezterm-bin
 wgcf-bin
+whatsdesk-deb
 whatsie
 whatsie-git
 windscribe-beta-gui-deb
@@ -740,6 +772,7 @@ winetricks-git
 wsysmon-bin
 xapps-common-deb
 xcb-util-errors
+xclicker-deb
 xdg-desktop-portal-hyprland
 xdg-ninja-git
 xdg-terminal-exec-git
@@ -763,10 +796,7 @@ yt-dlp
 zap
 zed-editor-preview-bin
 zed-editor-stable-bin
-zen-browser-aarch64-bin
 zen-browser-bin
-zen-browser-generic-bin
-zen-browser-specific-bin
 zentile-bin
 zettlr-deb
 zig-bin

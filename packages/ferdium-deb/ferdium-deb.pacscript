@@ -1,9 +1,11 @@
 pkgname="ferdium-deb"
 gives="ferdium"
 repology=("project: ferdium")
-pkgver="7.0.0"
-source=("https://github.com/ferdium/ferdium-app/releases/download/v${pkgver}/Ferdium-linux-${pkgver}-amd64.deb")
+pkgver="7.0.1"
 pkgdesc="Ferdium is a desktop app that helps you organize how you use your favourite apps by combining them into one application"
-sha256sums=("132d8585e910552601d248b85371f2b8ab3f51182d64c0a5e358e43ec64c36b4")
-arch=('amd64')
+arch=("amd64" "arm64")
+source_amd64=("https://github.com/ferdium/ferdium-app/releases/download/v${pkgver}/Ferdium-linux-${pkgver}-amd64.deb")
+sha256sums_amd64=("7b93bc72f42abf2987422bbb918d4084a7e854eb032d82bc8435fe3ca8193c5b")
+source_arm64=("https://github.com/ferdium/ferdium-app/releases/download/v${pkgver}/Ferdium-linux-${pkgver}-arm64.deb")
+sha256sums_arm64=("52c917146c4014eac02bc6c85d11d2c0dd06d656a41b2b911974d861114a1dac")
 maintainer=("Zahrun <Zahrun@github.com>")

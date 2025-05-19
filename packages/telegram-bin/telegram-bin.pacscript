@@ -1,8 +1,7 @@
 pkgname="telegram-bin"
 gives="telegram"
 arch=("amd64")
-pkgver="5.11.1"
-pkgrel="2"
+pkgver="5.13.1"
 url='https://telegram.org/'
 pkgdesc="Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed"
 source_base_url="https://github.com/telegramdesktop/tdesktop"
@@ -28,7 +27,7 @@ sha256sums=(
   "731431e47a5bc91c697d25c3a54fe7ba004752f5b66e0f282c47588ff7a314e6"
   "3fb1400c7dc9bbc3b5cb3ffedcbf4a9b09c53e28b57a7ff33a8a6b9048864090"
   "e297771c75bd2f81d637a3234f83568be62092f67d16946be23895fa92fa7119"
-  "55a2bce03ba01dd4ab942a48bfe646a3fabc846f95282f764d71cdce01da70ad"
+  "d2a9e142795c4d7477cb32167a6f3ad4d4f75ac9569936d0b20fafd988599c90"
 )
 repology=("project: telegram-desktop")
 maintainer=("Bahar KURT <kurtbahartr@gmail.com>")

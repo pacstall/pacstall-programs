@@ -1,12 +1,15 @@
 pkgbase = nordvpn-deb
 	gives = nordvpn
-	pkgver = 3.19.0
+	pkgver = 3.20.2
 	pkgdesc = NordVPN's CLI tool
 	arch = amd64
+	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: nordvpn
 	repology = visiblename: nordvpn-bin
-	source = https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/nordvpn_3.19.0_amd64.deb
-	sha256sums = bec97eba77ae0c4b949a5bd19cc20b53046e46445756d9396bb39c43db586e96
+	source_amd64 = https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/n/nordvpn/nordvpn_3.20.2_amd64.deb
+	sha256sums_amd64 = d9e2d5af4690a4c848302ae4c8845c09a6d7735f7b189677d5597904d0fb0e2f
+	source_arm64 = https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/n/nordvpn/nordvpn_3.20.2_arm64.deb
+	sha256sums_arm64 = 85773be5cf911b778d9a03c2efd61a56ce43c5ea66cc8e3de6fb9466073964f6
 
 pkgname = nordvpn-deb
