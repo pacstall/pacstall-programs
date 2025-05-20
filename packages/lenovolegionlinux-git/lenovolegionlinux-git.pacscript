@@ -46,7 +46,7 @@ build() {
 
   # Compile legiond daemon
   cd legion_linux/extra/service/legiond
-  make
+  make -j"${NCPU}"
 }
 
 package() {
