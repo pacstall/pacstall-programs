@@ -1,9 +1,9 @@
 pkgname="hydralauncher-deb"
 gives="hydralauncher"
-pkgver="3.4.10"
+pkgver="3.5.2"
 source=("https://github.com/hydralauncher/hydra/releases/download/v${pkgver}/hydralauncher_${pkgver}_amd64.deb")
 pkgdesc="Game launcher with its own embedded BitTorrent client"
-sha256sums=("718299da802070ec9bc70b5ea4a790572552d71f00ca1f412540356edc2ed668")
+sha256sums=("caea4211eae0e34822ff77850d378fbfd7a30cca3bf431f1d86f98ca74ddcd75")
 arch=('amd64')
 repology=("project: ${gives}")
 maintainer=("raik199x <raik199x@mail.ru>")
