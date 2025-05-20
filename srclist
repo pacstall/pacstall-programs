@@ -5920,6 +5920,52 @@ pkgbase = lemonbar-xft-git
 
 pkgname = lemonbar-xft-git
 ---
+pkgbase = lenovolegionlinux-dkms-git
+	pkgver = 1.c1e9b55
+	pkgdesc = LenovoLegionLinux (LLL) DKMS module
+	url = https://github.com/johnfanv2/LenovoLegionLinux
+	arch = amd64
+	depends = dkms
+	makedepends = git
+	makedepends = lm-sensors
+	makedepends = i2c-tools
+	makedepends = dmidecode
+	pacdeps = lenovolegionlinux-git
+	replaces = lenovolegionlinux-dkms
+	license = GPL-2.0-only
+	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
+	source = lenovolegionlinux::git+https://github.com/johnfanv2/LenovoLegionLinux
+	sha256sums = SKIP
+
+pkgname = lenovolegionlinux-dkms-git
+---
+pkgbase = lenovolegionlinux-git
+	pkgver = 1.c1e9b55
+	pkgdesc = LenovoLegionLinux (LLL) brings additional drivers and tools for Lenovo Legion series laptops to Linux
+	url = https://github.com/johnfanv2/LenovoLegionLinux
+	arch = amd64
+	depends = python3
+	depends = python3-argcomplete
+	depends = python3-yaml
+	depends = python3-pyqt6
+	depends = polkitd
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	makedepends = libinih-dev
+	pacdeps = python3-darkdetect
+	replaces = lenovolegionlinux
+	license = GPL-2.0-only
+	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
+	source = lenovolegionlinux::git+https://github.com/johnfanv2/LenovoLegionLinux
+	source = https://raw.githubusercontent.com/benhoyt/inih/refs/tags/r58/ini.c
+	sha256sums = SKIP
+	sha256sums = 217fa78f0380669c91a565f3e414d0a8be0f7a7fdfd1e3839f213e86aa574a95
+
+pkgname = lenovolegionlinux-git
+---
 pkgbase = lens
 	pkgver = 1.0.2
 	pkgdesc = LENS is a spectral dynamics processor with unbelievable punch and clarity.
@@ -10619,6 +10665,24 @@ pkgbase = python3-anyascii
 	b2sums = 9b9440d26872404487ff791dda5e7695f5f8504743d750c89b80d2a77595decfb2f1389b6636af8723a358b0e56988f074acb403d7860539c522cfa4b5b3f06a
 
 pkgname = python3-anyascii
+---
+pkgbase = python3-darkdetect
+	pkgver = 0.8.0
+	pkgdesc = Detect OS Dark Mode from Python
+	url = https://github.com/albertosottile/darkdetect
+	arch = any
+	depends = python3
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-wheel
+	makedepends = python3-setuptools
+	license = BSD-1-Clause
+	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
+	source = https://github.com/albertosottile/darkdetect/archive/refs/tags/v0.8.0.tar.gz
+	sha256sums = 100eea1a610bb19610a68b11ff468c13b1c2863d1254c2d5b37d198a1beb3227
+
+pkgname = python3-darkdetect
 ---
 pkgbase = python3-editables
 	pkgver = 0.5
