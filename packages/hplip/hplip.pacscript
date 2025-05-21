@@ -45,7 +45,6 @@ optdepends=('cups: for printing support'
   'python3-pyqt5: for running GUI and hp-toolbox'
   'libusb-1.0-0: for advanced usb support'
   'wget: for network support')
-backup=('etc/hp/hplip.conf' 'etc/sane.d/dll.d/hpaio')
 
 _patchurl='https://gitlab.archlinux.org/archlinux/packaging/packages/hplip/-/raw/main'
 source=("https://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.gz"
