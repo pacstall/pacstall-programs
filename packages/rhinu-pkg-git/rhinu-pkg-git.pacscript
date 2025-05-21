@@ -10,8 +10,9 @@ maintainer=("Oren Klopfer <oren@taumoda.com>" "Elsie19 <elsie19@pm.me>")
 
 package() {
   cd "${gives}"
+  sed -i 's/rhino-pkg/rhinu-pkg/g' {Makefile,rhino-pkg}
+  mv "rhino-pkg" "${gives}"
   DESTDIR="${pkgdir}" make install
   mkdir -p "${pkgdir}/usr/bin"
-  install -Dm755 "rhino-pkg" "${pkgdir}/usr/bin/${gives}"
   ln -sf "/usr/bin/${gives}" "${pkgdir}/usr/bin/rpk2"
 }
