@@ -1,10 +1,10 @@
 pkgname="rhino-stampede-dev"
 source=("https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty")
-pacdeps=("unicons-git")
-conflicts=("rhino-server-core" "rhino-ubxi-core")
+pacdeps=("unicons-git" "rhinu-pkg-git")
+conflicts=("rhino-server-core")
 pkgdesc="Testing suite for Rhino Linux development"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 compatible=("ubuntu:devel")
 arch=("all")
-pkgver="2024.3"
-pkgrel="2"
+pkgver="2025.3"
+pkgrel="1"
