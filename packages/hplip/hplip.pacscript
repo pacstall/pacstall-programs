@@ -2,7 +2,7 @@ pkgname=hplip
 pkgver=3.24.4
 pkgdesc="Drivers for HP DeskJet, OfficeJet, Photosmart, Business Inkjet and some LaserJet"
 arch=('amd64')
-url="https://hplipopensource.com"
+url='https://hplipopensource.com'
 license=('GPL-2.0-or-later'
   'MIT'
   'IJG'
