@@ -1,11 +1,11 @@
 pkgbase = ungoogled-chromium-bin
 	gives = ungoogled-chromium
-	pkgver = 134.0.6998.35-1
+	pkgver = 136.0.7103.113-1
 	pkgdesc = Google Chromium, sans integration with Google
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: ungoogled-chromium
-	source = https://github.com/ungoogled-software/ungoogled-chromium-portablelinux/releases/download/134.0.6998.35-1/ungoogled-chromium_134.0.6998.35-1_linux.tar.xz
-	sha256sums = f20616cebbaac86ee357a7037da8e0450f0e5100e0ee3f09e53232490ddb722a
+	source = https://github.com/ungoogled-software/ungoogled-chromium-portablelinux/releases/download/136.0.7103.113-1/ungoogled-chromium_136.0.7103.113-1_linux.tar.xz
+	sha256sums = d7805c19dfefd89d1e43328419742d04eb633d6eee82e84c5c57be6946e46c5b
 
 pkgname = ungoogled-chromium-bin
