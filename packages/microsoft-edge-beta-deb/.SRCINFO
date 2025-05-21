@@ -1,12 +1,12 @@
 pkgbase = microsoft-edge-beta-deb
 	gives = microsoft-edge-beta
-	pkgver = 117.0.2045.12
+	pkgver = 136.0.3240.45
 	pkgdesc = The web browser from Microsoft - Beta
 	arch = amd64
 	replaces = microsoft-edge-beta
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: microsoft-edge-beta
-	source = https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-beta/microsoft-edge-beta_117.0.2045.12-1_amd64.deb
-	sha256sums = ec64370003efdcd3cd7d5abf3a69a7d513968eca785f1be670c06af8046ba607
+	source = https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-beta/microsoft-edge-beta_136.0.3240.45-1_amd64.deb
+	sha256sums = 2f2dcffbcf3f0c78705c1c19ec5fcd171f65c6051b221b6a9304aa9873579c56
 
 pkgname = microsoft-edge-beta-deb

@@ -20,7 +20,7 @@ repos:
         types: []
         files: '^.*\.(pacscript|sh)$'
   - repo: https://github.com/maxwinterstein/shfmt-py
-    rev: v3.7.0.1
+    rev: v3.11.0.2
     hooks:
       - id: shfmt
         args: ["-i", "2", "-bn", "-ci", "-sr", "-s", "-w"]

@@ -1,0 +1,13 @@
+pkgbase = pacstall-mime-git
+	gives = pacstall-mime
+	pkgver = 0.0.1
+	pkgdesc = Minimal files for pacscript MIME integration on desktop environments
+	arch = all
+	depends = xdg-utils
+	depends = desktop-file-utils
+	depends = shared-mime-info
+	optdepends = gtk-update-icon-cache: GTK-based environments
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = pacstall-mime::https://github.com/pacstall/pacmime.git
+
+pkgname = pacstall-mime-git

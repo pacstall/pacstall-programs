@@ -1,0 +1,24 @@
+pkgbase = pgadmin4-desktop-deb
+	gives = pgadmin4-desktop
+	pkgver = 9.3
+	pkgdesc = Desktop user interface for pgAdmin
+	arch = amd64
+	makedepends = apparmor-profiles
+	pacdeps = pgadmin4-server-deb
+	compatible = debian:bookworm
+	compatible = ubuntu:jammy
+	compatible = ubuntu:noble
+	compatible = ubuntu:oracular
+	compatible = ubuntu:devel
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: pgadmin4-desktop
+	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.3_amd64.deb
+	sha256sums = f27b9f77a26b75c0cb08fc889daa9be0fd0c128102b357f7b27196b0dd7f0f6f
+	source_jammy = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.3_amd64.deb
+	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.3_amd64.deb
+	source_bookworm = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/bookworm/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.3_amd64.deb
+	sha256sums_jammy = 52f39f499ce01cb3aea133b36f8ed0f4e8f05ed7a3544cd11042a8172e25a143
+	sha256sums_noble = 088481bee2350103a96a7d20187e4f1439e82b05e6b05d9a0980f4a41ecc3aae
+	sha256sums_bookworm = b4f5bb19dfc357342c9e1c536e90f55f0a5c77b8cee1aedf2ee20fce714358e8
+
+pkgname = pgadmin4-desktop-deb

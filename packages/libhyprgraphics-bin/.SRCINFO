@@ -1,0 +1,10 @@
+pkgbase = libhyprgraphics-bin
+	pkgver = 0.1.1
+	pkgdesc = Small C++ library with graphics / resource related utilities used across the hypr* ecosystem
+	url = https://github.com/hyprwm/hyprgraphics
+	arch = amd64
+	maintainer = Dheeraj Reddy <dheerajre@proton.me>
+	source = https://github.com/hyprwm/hyprgraphics/releases/download/v0.1.1/v0.1.1.tar.gz
+	sha256sums = cebbbb1f0afc7cda96e59c7d55c12798c2dff960f5948aa06805ab08f243a6a8
+
+pkgname = libhyprgraphics-bin

@@ -1,11 +1,11 @@
 pkgname="youtube-music-deb"
 gives="youtube-music"
-pkgver="3.7.1"
+pkgver="3.9.0"
 pkgdesc="YouTube Music Desktop App bundled with custom plugins (and built-in ad blocker / downloader)"
 arch=("amd64" "arm64")
 source_amd64=("https://github.com/th-ch/youtube-music/releases/download/v${pkgver}/youtube-music_${pkgver}_amd64.deb")
-sha256sums_amd64=("ea7047e5e10b9e881ecc4e6c21fab792c27d668e7f258d75a77536b1cdff628f")
+sha256sums_amd64=("ea324010f288143ff7807ff958135034ae6937bd58bfe9f1a83fe1377cf13be6")
 source_arm64=("https://github.com/th-ch/youtube-music/releases/download/v${pkgver}/youtube-music_${pkgver}_arm64.deb")
-sha256sums_arm64=("474d0ff27bc8d278e1f3f31b4c85a2b8f1167df220f6720244f02fa144842c8a")
-maintainer=("James Ed Randson <jimedrand@disroot.org>" "Zahrun <Zahrun@github.com>")
+sha256sums_arm64=("84a359378489755c76696dc862bdc76e261de491f31e2c29bf2a2b4705cb76f5")
+maintainer=("James Ed Randson <jimedrand@disroot.org>" "Zahrun <Zahrun@github.com>" "chrisb09 <christian.brinkmann09@gmail.com>")
 repology=("project: ${gives}")

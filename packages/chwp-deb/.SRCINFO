@@ -1,13 +1,13 @@
 pkgbase = chwp-deb
 	gives = chwp
-	pkgver = 1.239.26
+	pkgver = 1.239.36
 	pkgdesc = Changes the wallpaper from the command line
 	arch = amd64
 	breaks = chwp
 	replaces = chwp
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: chwp
-	source = https://github.com/RouHim/chwp/releases/download/1.239.26/chwp-x86-64.deb
-	sha256sums = 75d1a8e1eb100814e55d83a95f253d5a5909b6fdbe236b8b84196b56eeaa4046
+	source = https://github.com/RouHim/chwp/releases/download/1.239.36/chwp-x86-64.deb
+	sha256sums = cdd5795788684abc0c177f688b3f96f1f3fbdfda048882656b74d58ab5e43f42
 
 pkgname = chwp-deb

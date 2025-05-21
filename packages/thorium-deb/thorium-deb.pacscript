@@ -1,9 +1,9 @@
 pkgname="thorium-deb"
 gives="thorium-browser"
-pkgver="128.0.6613.189"
+pkgver="130.0.6723.174"
 arch=("amd64")
 repology=("project: thorium-browser")
 pkgdesc="Chromium fork for linux with extra patches"
 maintainer=("James Ed Randson <jimedrand@disroot.org>" "Oren Klopfer <oren@taumoda.com>")
 source=("https://github.com/Alex313031/thorium/releases/download/M${pkgver}/${gives}_${pkgver}_SSE3.deb")
-sha256sums=("83ea4d4d5590ef6ca0ba90f0b77053ad5c18d69a0ec8780d27f472ae7478fa07")
+sha256sums=("b2bf1fe04df6f55ac0d621e317eef60dbe290294edf6e0d3ce87ebdc093ae56a")

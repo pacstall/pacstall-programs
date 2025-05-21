@@ -1,0 +1,27 @@
+pkgbase = sqlitebrowser
+	pkgver = 3.13.1
+	pkgdesc = Database Browser for SQLite
+	url = https://sqlitebrowser.org
+	arch = amd64
+	depends = libqt5xml5t64
+	depends = libqscintilla2-qt5-15
+	makedepends = build-essential
+	makedepends = cmake
+	makedepends = libqcustomplot-dev
+	makedepends = libqt5scintilla2-dev
+	makedepends = libsqlcipher-dev
+	makedepends = libsqlite3-dev
+	makedepends = qt5-qmake
+	makedepends = qtbase5-dev
+	makedepends = qtbase5-dev-tools
+	makedepends = qtchooser
+	makedepends = qttools5-dev
+	makedepends = qttools5-dev-tools
+	license = MPL-2.0
+	license = GPL-3.0+
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: sqlitebrowser
+	source = https://github.com/sqlitebrowser/sqlitebrowser/archive/refs/tags/v3.13.1.tar.gz
+	sha256sums = 1044ba67d649cabc459eb887c016f70d6a404ad651390ab33bf7859dc7f1b67b
+
+pkgname = sqlitebrowser

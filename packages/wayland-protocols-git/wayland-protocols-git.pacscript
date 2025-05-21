@@ -1,11 +1,11 @@
 pkgname="wayland-protocols-git"
 gives="wayland-protocols"
-pkgver="1.23"
-pkgrel=1
+repology=("project: ${gives}")
+pkgver="1.41"
 pkgdesc='Wayland protocols that add functionalities not available in the core protocol'
 arch=('any')
 url='https://wayland.freedesktop.org/'
-makedepends=('cmake' 'pkg-config' 'ninja-build' 'libwayland-dev')
+makedepends=('cmake' 'pkg-config' 'ninja-build' 'libwayland-dev>=1.23.0')
 pacdeps=("meson-git")
 source=("git+https://gitlab.freedesktop.org/wayland/wayland-protocols.git")
 sha256sums=('SKIP')
