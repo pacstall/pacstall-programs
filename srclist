@@ -149,12 +149,13 @@ pkgname = amfora-bin
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.14.0
+	pkgver = 3.14.1
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
 	depends = p7zip-full
 	depends = webp
+	depends = openssl
 	optdepends = mangohud: FPS Hud/GUI
 	optdepends = gamemode: Game Optimizations
 	optdepends = vkbasalt: Required to use custom shaders (install this and reshade-shaders-git)
@@ -171,9 +172,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.14.0/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.14.1/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = 259529b4d44dfa3e502c24d1b31e323c178db13d142edac150a4c709aab0b629
+	sha256sums = 45dee5dffe1765dd0bcf536269b3690d59713e06ed7a62724ef355dab81e9aaf
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
@@ -789,14 +790,14 @@ pkgname = balena-etcher-deb
 ---
 pkgbase = bat-deb
 	gives = bat
-	pkgver = 0.24.0
+	pkgver = 0.25.0
 	pkgdesc = A cat(1) clone with wings
 	arch = amd64
 	replaces = bat
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: bat-cat
-	source = https://github.com/sharkdp/bat/releases/download/v0.24.0/bat_0.24.0_amd64.deb
-	sha256sums = fa9353fa0c6e1e67b87757c4bd6bf515f85d3fc16d41b12cc26f7a673892ad01
+	source = https://github.com/sharkdp/bat/releases/download/v0.25.0/bat_0.25.0_amd64.deb
+	sha256sums = 7e6afdffaea04b394f466f6f719a1e0565572a4b59d6cb9969843355b684e2dc
 
 pkgname = bat-deb
 ---
@@ -3091,7 +3092,7 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 138.0.3
+	pkgver = 138.0.4
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3101,10 +3102,10 @@ pkgbase = firefox-bin
 	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/138.0.3/linux-x86_64/en-US/firefox-138.0.3.tar.xz
-	sha256sums_amd64 = 5f47e123a27ac25096554211c04e53680f988c15a901b4be8e479860d166c6cc
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/138.0.3/linux-aarch64/en-US/firefox-138.0.3.tar.xz
-	sha256sums_arm64 = 406c23942d2b19c13a6e462a0a2b07ba52bbd84fad4be183dc1964db5175215b
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/138.0.4/linux-x86_64/en-US/firefox-138.0.4.tar.xz
+	sha256sums_amd64 = c27d5bf7483eda49aae544d9f8b4f064dbc7341b27d7098378108e52071bf947
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/138.0.4/linux-aarch64/en-US/firefox-138.0.4.tar.xz
+	sha256sums_arm64 = 6e078b2b61965b8b5525ae0da3216f7fc6a0460d4e0870e09addcb5a93a60a90
 
 pkgname = firefox-bin
 ---
@@ -4995,13 +4996,13 @@ pkgname = hwinfo-git
 ---
 pkgbase = hydralauncher-deb
 	gives = hydralauncher
-	pkgver = 3.4.10
+	pkgver = 3.5.2
 	pkgdesc = Game launcher with its own embedded BitTorrent client
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: hydralauncher
-	source = https://github.com/hydralauncher/hydra/releases/download/v3.4.10/hydralauncher_3.4.10_amd64.deb
-	sha256sums = 718299da802070ec9bc70b5ea4a790572552d71f00ca1f412540356edc2ed668
+	source = https://github.com/hydralauncher/hydra/releases/download/v3.5.2/hydralauncher_3.5.2_amd64.deb
+	sha256sums = caea4211eae0e34822ff77850d378fbfd7a30cca3bf431f1d86f98ca74ddcd75
 
 pkgname = hydralauncher-deb
 ---
@@ -5434,7 +5435,7 @@ pkgname = internxt-deb
 pkgbase = it87-dkms-git
 	gives = it87
 	pkgver = 152
-	pkgrel = 2
+	pkgrel = 3
 	pkgdesc = Linux Driver for ITE LPC chips
 	url = https://github.com/frankcrawford/it87
 	arch = x86_64
@@ -6013,6 +6014,52 @@ pkgbase = lemonbar-xft-git
 
 pkgname = lemonbar-xft-git
 ---
+pkgbase = lenovolegionlinux-dkms-git
+	pkgver = 1.c1e9b55
+	pkgdesc = LenovoLegionLinux (LLL) DKMS module
+	url = https://github.com/johnfanv2/LenovoLegionLinux
+	arch = amd64
+	depends = dkms
+	makedepends = git
+	makedepends = lm-sensors
+	makedepends = i2c-tools
+	makedepends = dmidecode
+	pacdeps = lenovolegionlinux-git
+	replaces = lenovolegionlinux-dkms
+	license = GPL-2.0-only
+	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
+	source = lenovolegionlinux::git+https://github.com/johnfanv2/LenovoLegionLinux
+	sha256sums = SKIP
+
+pkgname = lenovolegionlinux-dkms-git
+---
+pkgbase = lenovolegionlinux-git
+	pkgver = 1.c1e9b55
+	pkgdesc = LenovoLegionLinux (LLL) brings additional drivers and tools for Lenovo Legion series laptops to Linux
+	url = https://github.com/johnfanv2/LenovoLegionLinux
+	arch = amd64
+	depends = python3
+	depends = python3-argcomplete
+	depends = python3-yaml
+	depends = python3-pyqt6
+	depends = polkitd
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	makedepends = libinih-dev
+	pacdeps = python3-darkdetect
+	replaces = lenovolegionlinux
+	license = GPL-2.0-only
+	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
+	source = lenovolegionlinux::git+https://github.com/johnfanv2/LenovoLegionLinux
+	source = https://raw.githubusercontent.com/benhoyt/inih/refs/tags/r58/ini.c
+	sha256sums = SKIP
+	sha256sums = 217fa78f0380669c91a565f3e414d0a8be0f7a7fdfd1e3839f213e86aa574a95
+
+pkgname = lenovolegionlinux-git
+---
 pkgbase = lens
 	pkgver = 1.0.2
 	pkgdesc = LENS is a spectral dynamics processor with unbelievable punch and clarity.
@@ -6590,8 +6637,8 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.15.0-061500rc4
-	pkgver = 6.15~rc4
+	gives = linux-headers-6.15.0-061500rc7
+	pkgver = 6.15~rc7
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -6599,14 +6646,14 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc4/amd64/linux-headers-6.15.0-061500rc4_6.15.0-061500rc4.202504272253_all.deb
-	sha256sums = e111bdcfe95a5685c90167fc05d2d398d10c2ba755dfc3a279c9d402667fdf12
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc7/amd64/linux-headers-6.15.0-061500rc7_6.15.0-061500rc7.202505182143_all.deb
+	sha256sums = 9f60b6c68fa76b3fc1828d5022f439a6cce5e710be83155aea8db3930671ea69
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-6.15.0-061500rc4-generic
-	pkgver = 6.15~rc4
+	gives = linux-headers-6.15.0-061500rc7-generic
+	pkgver = 6.15~rc7
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -6616,10 +6663,10 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc4/arm64/linux-headers-6.15.0-061500rc4-generic_6.15.0-061500rc4.202504272253_arm64.deb
-	sha256sums_arm64 = 403a4ec9d4b2fba895c7dfc6fafbcc94f51303414a3560e620a1730137b70f27
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc4/amd64/linux-headers-6.15.0-061500rc4-generic_6.15.0-061500rc4.202504272253_amd64.deb
-	sha256sums_amd64 = f0fb3a927b39541d433fa5ddeecc47a030a7511afeca4476c58a8b1358f24558
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc7/arm64/linux-headers-6.15.0-061500rc7-generic_6.15.0-061500rc7.202505182143_arm64.deb
+	sha256sums_arm64 = dca2cbff5cf87d23220d9e536d9bd75150d388e501d8af62d1e422c5cfdc71e2
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc7/amd64/linux-headers-6.15.0-061500rc7-generic_6.15.0-061500rc7.202505182143_amd64.deb
+	sha256sums_amd64 = 70e1d3bd79ae82170ab854defef903d443767f541494ae4cd7777afd3cf7cdcb
 
 pkgname = linux-headers-generic-deb
 ---
@@ -6642,8 +6689,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.14.4-061404-generic
-	pkgver = 6.14.4
+	gives = linux-headers-6.14.7-061407-generic
+	pkgver = 6.14.7
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -6651,10 +6698,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.4/arm64/linux-headers-6.14.4-061404-generic_6.14.4-061404.202504251003_arm64.deb
-	sha256sums_arm64 = 4d9e15ee54749955738dd4472c15794d5044ed1541aa1657387198a8439d0f24
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.4/amd64/linux-headers-6.14.4-061404-generic_6.14.4-061404.202504251003_amd64.deb
-	sha256sums_amd64 = 3a474e203921372645c349cbaa3f74787bfe01349b858071c3f652f94c571053
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.7/arm64/linux-headers-6.14.7-061407-generic_6.14.7-061407.202505180654_arm64.deb
+	sha256sums_arm64 = 6fdc9de0f2a41a9135c1f4323a7d0414a4f1aa22610a280579a7bfcdce277f87
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.7/amd64/linux-headers-6.14.7-061407-generic_6.14.7-061407.202505180654_amd64.deb
+	sha256sums_amd64 = 93663824ed684ed168556e9da7d8db192fc0e97030ec19263c79b9aac8b82a62
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -6689,15 +6736,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.14.4-061404
-	pkgver = 6.14.4
+	gives = linux-headers-6.14.7-061407
+	pkgver = 6.14.7
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.4/amd64/linux-headers-6.14.4-061404_6.14.4-061404.202504251003_all.deb
-	sha256sums = 736961f926a7244e31d9bfd1c8f721f0f571c3aef516a05eca9842544f8c8adc
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.7/amd64/linux-headers-6.14.7-061407_6.14.7-061407.202505180654_all.deb
+	sha256sums = 5753e6d15333299aa88d872d1bc1ef11eb3fdf24bcae03dbdf2694ca0617e226
 
 pkgname = linux-headers-stable-deb
 ---
@@ -6720,8 +6767,8 @@ pkgbase = linux-image-okpine-deb
 pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.15.0-061500rc4-generic
-	pkgver = 6.15~rc4
+	gives = linux-image-unsigned-6.15.0-061500rc7-generic
+	pkgver = 6.15~rc7
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6732,10 +6779,10 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc4/arm64/linux-image-unsigned-6.15.0-061500rc4-generic_6.15.0-061500rc4.202504272253_arm64.deb
-	sha256sums_arm64 = 7ac51acc286ee780ab93350518e06868cf3c7b1b0612859e40c5c6d0aa5ef0ae
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc4/amd64/linux-image-unsigned-6.15.0-061500rc4-generic_6.15.0-061500rc4.202504272253_amd64.deb
-	sha256sums_amd64 = ac0e91cd6d345e0d52442062131255c310040e9fad300374db42337466aba07f
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc7/arm64/linux-image-unsigned-6.15.0-061500rc7-generic_6.15.0-061500rc7.202505182143_arm64.deb
+	sha256sums_arm64 = ce8baaa8bb2ecdd3edcac1d665b02e3a2d809ceb2ed2c68f0a8d27173928ebdc
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc7/amd64/linux-image-unsigned-6.15.0-061500rc7-generic_6.15.0-061500rc7.202505182143_amd64.deb
+	sha256sums_amd64 = 8a963e4bf7a0ff8117d8d1ccbbd9bf1ee5a083cbe3e1723bd34cf501b855cb7d
 
 pkgname = linux-image-unsigned-deb
 ---
@@ -6759,8 +6806,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.14.4-061404-generic
-	pkgver = 6.14.4
+	gives = linux-image-unsigned-6.14.7-061407-generic
+	pkgver = 6.14.7
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -6769,10 +6816,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.4/arm64/linux-image-unsigned-6.14.4-061404-generic_6.14.4-061404.202504251003_arm64.deb
-	sha256sums_arm64 = 16af8bdf612be97962ae05484552987a334404ec45bbf2863cd2053c18977c40
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.4/amd64/linux-image-unsigned-6.14.4-061404-generic_6.14.4-061404.202504251003_amd64.deb
-	sha256sums_amd64 = 5448b61bdfe5f6ad31d4e0d9c716ec29975842983ddbaf6c9525a2d66361486e
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.7/arm64/linux-image-unsigned-6.14.7-061407-generic_6.14.7-061407.202505180654_arm64.deb
+	sha256sums_arm64 = bc64209a66dc2f823383e6492a8f2861fb15ab2083e6b897562fae5618ec6625
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.7/amd64/linux-image-unsigned-6.14.7-061407-generic_6.14.7-061407.202505180654_amd64.deb
+	sha256sums_amd64 = c0785fccbe64ab5ed242631513d7478c55ca9ee71177e61f6f95db132a40331c
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -6794,7 +6841,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.14.4
+	pkgver = 6.14.7
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6810,7 +6857,7 @@ pkgbase = linux-kernel-stable
 pkgname = linux-kernel-stable
 ---
 pkgbase = linux-kernel
-	pkgver = 6.15~rc4
+	pkgver = 6.15~rc7
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -6841,16 +6888,16 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.15.0-061500rc4-generic
-	pkgver = 6.15~rc4
+	gives = linux-modules-6.15.0-061500rc7-generic
+	pkgver = 6.15~rc7
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc4/arm64/linux-modules-6.15.0-061500rc4-generic_6.15.0-061500rc4.202504272253_arm64.deb
-	sha256sums_arm64 = 4da07008b1dcdce3df601d1acab9f8f06ae3b5091e01615fa6f9321754116755
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc4/amd64/linux-modules-6.15.0-061500rc4-generic_6.15.0-061500rc4.202504272253_amd64.deb
-	sha256sums_amd64 = 7b3e53fa94387723670f309bf102a9a659284b77d7900eee5bd00ee89ad66318
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc7/arm64/linux-modules-6.15.0-061500rc7-generic_6.15.0-061500rc7.202505182143_arm64.deb
+	sha256sums_arm64 = 0b892c5a27edef278a21da16a9cfcd359b4cfd6d519bc95ca1210b2119f96f65
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc7/amd64/linux-modules-6.15.0-061500rc7-generic_6.15.0-061500rc7.202505182143_amd64.deb
+	sha256sums_amd64 = b528b4758b47b20dd35fe98879f8d6e37df0abe0e12cb6569fa77e125ba86ddb
 
 pkgname = linux-modules-deb
 ---
@@ -6872,16 +6919,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.14.4-061404-generic
-	pkgver = 6.14.4
+	gives = linux-modules-6.14.7-061407-generic
+	pkgver = 6.14.7
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.4/arm64/linux-modules-6.14.4-061404-generic_6.14.4-061404.202504251003_arm64.deb
-	sha256sums_arm64 = ac4516ce69387b95ccd0f61216b85b9dd0be5f0cc7c0ded0def7b6583b3adc27
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.4/amd64/linux-modules-6.14.4-061404-generic_6.14.4-061404.202504251003_amd64.deb
-	sha256sums_amd64 = e0a042dd1b6076010d31d00acd6ac8f4d39081137229ac7637d1008698864c9a
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.7/arm64/linux-modules-6.14.7-061407-generic_6.14.7-061407.202505180654_arm64.deb
+	sha256sums_arm64 = 07a95da8b1acf958923239a798323e476f4e08e2bf1a8be780c8ed2e9ef04e5f
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.7/amd64/linux-modules-6.14.7-061407-generic_6.14.7-061407.202505180654_amd64.deb
+	sha256sums_amd64 = 4cbc5290ec795cee5afb7d5a6faa841622549fd58e66e0ebdee3a86709bd041b
 
 pkgname = linux-modules-stable-deb
 ---
@@ -7901,27 +7948,27 @@ pkgname = mold-bin
 ---
 pkgbase = mullvad-vpn-beta-deb
 	gives = mullvad-vpn
-	pkgver = 2025.5
+	pkgver = 2025.6
 	pkgdesc = The Mullvad VPN client app for desktop - Beta channel
 	arch = amd64
 	breaks = mullvad-vpn-deb
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.5/MullvadVPN-2025.5_amd64.deb
-	sha256sums = 9fa08d6e21637aa3a04fbd97d88282382a7186fef27d56f5e5d8fccb5f7f5e5d
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.6/MullvadVPN-2025.6_amd64.deb
+	sha256sums = a632639dbd343c8f496ca82dcf4f1ea80a045f50779e935a6f6fa3f566ba3dea
 
 pkgname = mullvad-vpn-beta-deb
 ---
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
-	pkgver = 2025.5
+	pkgver = 2025.6
 	pkgdesc = The Mullvad VPN client app for desktop
 	arch = amd64
 	breaks = mullvad-vpn-beta-deb
 	breaks = mullvad-vpn-git
 	replaces = mullvad-vpn
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.5/MullvadVPN-2025.5_amd64.deb
-	sha256sums = 9fa08d6e21637aa3a04fbd97d88282382a7186fef27d56f5e5d8fccb5f7f5e5d
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.6/MullvadVPN-2025.6_amd64.deb
+	sha256sums = a632639dbd343c8f496ca82dcf4f1ea80a045f50779e935a6f6fa3f566ba3dea
 
 pkgname = mullvad-vpn-deb
 ---
@@ -10713,6 +10760,24 @@ pkgbase = python3-anyascii
 
 pkgname = python3-anyascii
 ---
+pkgbase = python3-darkdetect
+	pkgver = 0.8.0
+	pkgdesc = Detect OS Dark Mode from Python
+	url = https://github.com/albertosottile/darkdetect
+	arch = any
+	depends = python3
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-wheel
+	makedepends = python3-setuptools
+	license = BSD-1-Clause
+	maintainer = MrDuartePT <gonegrier.duarte@gmail.com>
+	source = https://github.com/albertosottile/darkdetect/archive/refs/tags/v0.8.0.tar.gz
+	sha256sums = 100eea1a610bb19610a68b11ff468c13b1c2863d1254c2d5b37d198a1beb3227
+
+pkgname = python3-darkdetect
+---
 pkgbase = python3-editables
 	pkgver = 0.5
 	pkgdesc = Python library for creating editable wheels
@@ -11053,13 +11118,13 @@ pkgname = quintom-cursor-theme-git
 ---
 pkgbase = r2modman-deb
 	gives = r2modman
-	pkgver = 3.1.58
+	pkgver = 3.2.0
 	pkgdesc = Simple and easy to use mod manager for many games using Thunderstore
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: r2modman
-	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.58/r2modman_3.1.58_amd64.deb
-	sha256sums = f97ebf293b98193450d57e8ede22560e08314fd457c7dab905fd009ca6f1ef3d
+	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.2.0/r2modman_3.2.0_amd64.deb
+	sha256sums = e8957b4d70e067d5e161c8ff53f5178856515ef5fe081d1d05c70819a3769b14
 
 pkgname = r2modman-deb
 ---
@@ -13561,6 +13626,55 @@ pkgbase = u-boot-mobian-deb
 
 pkgname = u-boot-mobian-deb
 ---
+pkgbase = ubxi-kde-desktop-git
+	gives = ubxi-kde-desktop
+	pkgver = 0.0.1
+	pkgdesc = UBXI KDE Plasma Desktop
+	priority = required
+	arch = amd64
+	arch = arm64
+	depends = plasma-desktop
+	depends = konsole
+	depends = systemsettings
+	depends = plasma-nm
+	depends = plasma-disks
+	depends = plasma-firewall
+	depends = plasma-pa
+	depends = plasma-systemmonitor
+	depends = kinfocenter
+	depends = kmenuedit
+	depends = kscreen
+	depends = dolphin
+	depends = kio-extras
+	depends = kdegraphics-thumbnailers
+	depends = kde-config-gtk-style
+	depends = kde-config-gtk-style-preview
+	depends = kde-config-screenlocker
+	depends = breeze-gtk-theme
+	depends = xdg-desktop-portal-gtk
+	depends = xdg-desktop-portal-kde
+	depends = ufw
+	depends = vulkan-tools
+	depends = wayland-utils
+	depends = pulseaudio-utils
+	depends = aha
+	depends = clinfo
+	depends = bluedevil
+	optdepends = kde-spectacle: a simple application for capturing desktop screenshots
+	optdepends = ark: File archiver by KDE
+	optdepends = plasma-vault: Plasma applet and services for creating encrypted vaults
+	optdepends = plasma-thunderbolt: Plasma addons for managing Thunderbolt devices
+	optdepends = powerdevil: Global power saver settings
+	pacdeps = rhino-ubxi-core
+	replaces = unicorn-desktop
+	replaces = unicorn-mobile
+	compatible = ubuntu:*
+	license = GPL-3.0-or-later
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	source = https://github.com/rhino-linux/ubxi-kde-desktop.git
+
+pkgname = ubxi-kde-desktop-git
+---
 pkgbase = ufetch-debian
 	pkgver = 0.4
 	pkgdesc = Tiny system info for Unix-like operating systems.
@@ -15395,7 +15509,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.12.5b
+	pkgver = 1.12.6b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -15430,8 +15544,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.12.5b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = ecc0d4f4966b6ba91fe21dcc673eb004bedc720e1cbe02e6c671fe2e8139a577
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.12.6b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 0bf8d6a6ae95962860508f0c32ec29de0d2d67820ae5f8de4fdd7329eed60698
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -15441,8 +15555,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.12.5b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = d0bc0dd7a2e317fc6a242644ae3142781aff62657bdba7d0d1410f7ce126e183
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.12.6b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 673e20c33f4ae5287a5c5ced839a5a55ea3b387d905565c009cd6b622dc1c15c
 
 pkgname = zen-browser-bin
 ---
