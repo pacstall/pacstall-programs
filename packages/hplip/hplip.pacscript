@@ -1,5 +1,6 @@
 pkgname=hplip
 pkgver=3.24.4
+_archpkgrel=3
 pkgdesc="Drivers for HP DeskJet, OfficeJet, Photosmart, Business Inkjet and some LaserJet"
 arch=('amd64')
 url='https://hplipopensource.com'
@@ -46,7 +47,7 @@ optdepends=('cups: for printing support'
   'libusb-1.0-0: for advanced usb support'
   'wget: for network support')
 
-_patchurl='https://gitlab.archlinux.org/archlinux/packaging/packages/hplip/-/raw/main'
+_patchurl="https://gitlab.archlinux.org/archlinux/packaging/packages/hplip/-/raw/1-${pkgver}-${_archpkgrel}"
 source=("https://downloads.sourceforge.net/${pkgname}/${pkgname}-${pkgver}.tar.gz"
   "${_patchurl}/disable_upgrade.patch"
   "${_patchurl}/0003-models.dat-Re-add-drivers-missing-from-3.19.1.patch"
