@@ -131,7 +131,7 @@ build() {
 
 package() {
   cd "${pkgname}"-"${pkgver}"
-  make -j1 rulesdir=/usr/lib/udev/rules.d DESTDIR="${pkgdir}/" install
+  make -j"${NCPU}" rulesdir=/usr/lib/udev/rules.d DESTDIR="${pkgdir}/" install
 
   # remove config provided by sane and autostart of hp-daemon
   rm -rf "${pkgdir}"/etc/{sane.d,xdg}
