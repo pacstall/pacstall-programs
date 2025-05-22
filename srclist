@@ -3095,18 +3095,6 @@ pkgbase = figma-linux-deb
 
 pkgname = figma-linux-deb
 ---
-pkgbase = firefox-arm64-deb
-	gives = firefox-arm64-dummy
-	pkgver = 136.0+dummy
-	pkgdesc = Transitional/deprecated package for firefox-deb
-	url = https://www.mozilla.org/en-US/firefox
-	arch = arm64
-	pacdeps = firefox-deb
-	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/oklopfer/debs/raw/master/empty
-
-pkgname = firefox-arm64-deb
----
 pkgbase = firefox-bin
 	gives = firefox
 	pkgver = 138.0.4
