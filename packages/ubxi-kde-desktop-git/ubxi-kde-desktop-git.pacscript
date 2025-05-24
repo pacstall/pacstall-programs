@@ -8,7 +8,7 @@ depends=(
   "kscreen" "dolphin" "kio-extras" "kdegraphics-thumbnailers" "kde-config-gtk-style"
   "kde-config-gtk-style-preview" "kde-config-screenlocker" "breeze-gtk-theme" "xdg-desktop-portal-gtk" "xdg-desktop-portal-kde"
   "ufw" "vulkan-tools" "wayland-utils" "pulseaudio-utils" "aha" "clinfo"
-  "bluedevil"
+  "bluedevil" "plasma-widgets-addons"
 )
 optdepends=(
   "kde-spectacle: a simple application for capturing desktop screenshots"
