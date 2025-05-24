@@ -1,7 +1,7 @@
 pkgname="openrgb-git"
 gives="openrgb"
-pkgver="0.9"
-pkgrel="2"
+pkgver="1.0rc1"
+pkgrel="1"
 pkgdesc="Configuration utility for RGB lights supporting motherboards, RAM, & peripherals"
 arch=("amd64" "arm64")
 url='https://gitlab.com/CalcProgrammer1/OpenRGB'
@@ -18,18 +18,18 @@ sha256sums=("SKIP"
   "272dc43a77d0e48d29f32da753c7e05fd635883b173c21047f4eefa8bfc77938")
 maintainer=("xdavius <xdavius@github.com>")
 
+#prepare() {
 # Fix hueplusplus, waiting for upstream fix... thanks to Morg
 
-case "${DISTRO}" in
-  ubuntu:devel | ubuntu:plucky | ubuntu:questing | debian:testing | debian:sid | debian:trixie)
-    prepare() {
-      cd "${srcdir}/OpenRGB"
-      # Fix libmbedtls-dev-3.* issue, fix hueplusplus build error...
-      sed -i -- 's/#include "mbedtls\/certs.h"//g' dependencies/hueplusplus-1.1.0/src/EntertainmentMode.cpp
-    }
-    ;;
-  *) ;;
-esac
+#case "${DISTRO}" in
+#  ubuntu:devel | ubuntu:plucky | ubuntu:questing | debian:testing | debian:sid | debian:trixie)
+#      cd "${srcdir}/OpenRGB"
+#      # Fix libmbedtls-dev-3.* issue, fix hueplusplus build error...
+#      sed -i -- 's/#include "mbedtls\/certs.h"//g' dependencies/hueplusplus-1.1.0/src/EntertainmentMode.cpp
+#    ;;
+#  *) ;;
+#esac
+#}
 
 build() {
   cd "${srcdir}/OpenRGB"
