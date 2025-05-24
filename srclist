@@ -13597,6 +13597,7 @@ pkgbase = ubxi-kde-desktop-git
 	depends = aha
 	depends = clinfo
 	depends = bluedevil
+	depends = plasma-widgets-addons
 	optdepends = kde-spectacle: a simple application for capturing desktop screenshots
 	optdepends = ark: File archiver by KDE
 	optdepends = plasma-vault: Plasma applet and services for creating encrypted vaults
