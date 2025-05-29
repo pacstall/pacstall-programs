@@ -1,6 +1,6 @@
 pkgname="firefox-nightly-deb"
 gives="firefox-nightly"
-pkgver="139.0a1"
+pkgver="140.0a1"
 arch=('amd64' 'arm64')
 repology=("project: ${gives}")
 replaces=("${gives}" "${gives}-bin")
