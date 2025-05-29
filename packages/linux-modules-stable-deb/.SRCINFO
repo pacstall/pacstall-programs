@@ -1,13 +1,13 @@
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.14.7-061407-generic
-	pkgver = 6.14.7
+	gives = linux-modules-6.15.0-061500-generic
+	pkgver = 6.15
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.7/arm64/linux-modules-6.14.7-061407-generic_6.14.7-061407.202505180654_arm64.deb
-	sha256sums_arm64 = 07a95da8b1acf958923239a798323e476f4e08e2bf1a8be780c8ed2e9ef04e5f
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.14.7/amd64/linux-modules-6.14.7-061407-generic_6.14.7-061407.202505180654_amd64.deb
-	sha256sums_amd64 = 4cbc5290ec795cee5afb7d5a6faa841622549fd58e66e0ebdee3a86709bd041b
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15/arm64/linux-modules-6.15.0-061500-generic_6.15.0-061500.202505260036_arm64.deb
+	sha256sums_arm64 = e68f518906ee46f58119f8e94aecc03e1e6931416d52a20c162683d7dc317e62
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15/amd64/linux-modules-6.15.0-061500-generic_6.15.0-061500.202505260036_amd64.deb
+	sha256sums_amd64 = ce29aff45d2a792a05549bcbcf1462017ed5b2e0083b3846cd97da9363adc6f6
 
 pkgname = linux-modules-stable-deb
