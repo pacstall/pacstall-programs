@@ -15,7 +15,6 @@ pkgbase = liblcf
 	repology = project: liblcf
 	source = @liblcf~0.8::https://easyrpg.org/downloads/player/0.8/liblcf-0.8.tar.xz
 	sha256sums = 6b0d8c7fefe3d66865336406f69ddf03fe59e52b5601687265a4d1e47a25c386
-	depends_focal = libicu66
 	depends_jammy = libicu70
 	depends_bullseye = libicu67
 
