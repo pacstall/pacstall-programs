@@ -1,7 +1,7 @@
 pkgbase = protonplus
 	gives = protonplus
-	pkgver = 0.4.11
-	pkgdesc = A simple Wine and Proton-based compatiblity tools manager for GNOME
+	pkgver = 0.4.31
+	pkgdesc = A modern compatibility tools manager for Linux
 	url = https://github.com/Vysp3r/ProtonPlus
 	arch = x86_64
 	depends = libadwaita-1-0
@@ -23,8 +23,8 @@ pkgbase = protonplus
 	incompatible = debian:bookworm
 	incompatible = ubuntu:jammy
 	license = GPL-3.0-or-later
-	maintainer = xdavius <xdavus@github.com>
-	source = protonplus-0.4.11.tar.gz::https://github.com/Vysp3r/ProtonPlus/archive/refs/tags/v0.4.11.tar.gz
-	sha256sums = 223c8da373a265de28591ba9269440c5cf79fa4f9168c00b99503a65982d4df1
+	maintainer = Vysp3r <dev@vysp3r.com>
+	source = protonplus-0.4.31.tar.gz::https://github.com/Vysp3r/ProtonPlus/archive/refs/tags/v0.4.31.tar.gz
+	sha256sums = 1abbf8053f37b2cc765c18cb2d5b355e687d25b32bbb1bd0426749295328b357
 
 pkgname = protonplus
