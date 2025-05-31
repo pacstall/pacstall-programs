@@ -205,6 +205,7 @@ function srcinfo.write_global() {
               eval "${_}"
             fi
           else
+            # shellcheck disable=SC2076
             if [[ " ${AARCHS_MAP[*]} " =~ " ${ar##*_} " || " ${!AARCHS_MAP[*]} " =~ " ${ar##*_} " || ${ar} == *"x86_64" ]]; then
               eval "${ar}+=(${ars})"
             else
