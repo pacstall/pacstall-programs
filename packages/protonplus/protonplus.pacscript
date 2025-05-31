@@ -1,8 +1,8 @@
 pkgname="protonplus"
 gives="protonplus"
 _app_id="com.vysp3r.ProtonPlus"
-pkgver="0.4.11"
-pkgdesc="A simple Wine and Proton-based compatiblity tools manager for GNOME"
+pkgver="0.4.31"
+pkgdesc="A modern compatibility tools manager for Linux"
 arch=('x86_64')
 url='https://github.com/Vysp3r/ProtonPlus'
 license=('GPL-3.0-or-later')
@@ -19,8 +19,8 @@ makedepends=('meson'
   'desktop-file-utils')
 checkdepends=('appstream-util')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('223c8da373a265de28591ba9269440c5cf79fa4f9168c00b99503a65982d4df1')
-maintainer=("xdavius <xdavus@github.com>")
+sha256sums=('1abbf8053f37b2cc765c18cb2d5b355e687d25b32bbb1bd0426749295328b357')
+maintainer=("Vysp3r <dev@vysp3r.com>")
 
 incompatible=("debian:bookworm" "ubuntu:jammy")
 
