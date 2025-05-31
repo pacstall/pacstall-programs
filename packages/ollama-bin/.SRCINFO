@@ -11,9 +11,11 @@ pkgbase = ollama-bin
 	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550: required to use CUDA on NVIDIA GPU
 	optdepends_debian = libcuda1: required to use CUDA on NVIDIA GPU
 	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.5.13/ollama-linux-amd64.tgz
+	source_amd64 = ollama.service
 	sha256sums_amd64 = 30ec1cf2be608898c3b574c3805da66759406e59ad7db01a26719eaf7365c75a
 	sha256sums_amd64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
 	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.5.13/ollama-linux-arm64.tgz
+	source_arm64 = ollama.service
 	sha256sums_arm64 = 8a4feee77f78e078f132c474694969e240f3d02c6d14f28d744bd59daa95332c
 	sha256sums_arm64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
 
