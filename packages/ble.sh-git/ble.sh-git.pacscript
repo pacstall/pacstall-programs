@@ -10,7 +10,7 @@ breaks=("${gives}")
 url='https://github.com/akinomyoga/ble.sh'
 
 _tag="0.4.0-devel3"
-_commit="adf53ed356304a91634e3f690e05c24818f0e042"
+_commit="94109ea71a43bbaf576ac1c6d8d959a6b3f33286"
 pkgver="${_tag}.${_commit:0:9}"
 
 source=("https://github.com/akinomyoga/${gives}.git")
