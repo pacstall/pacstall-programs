@@ -4,6 +4,7 @@ source=("${gives}::https://github.com/rhino-linux/rhino-pkg.git#branch=nushell")
 arch=("all")
 pkgver="2.0.0"
 makedepends=("make")
+depends=("aptitude")
 pacdeps=("nutext-bin")
 pkgdesc="Rhino-pkg wrapper script - Nushell rewrite"
 maintainer=("Oren Klopfer <oren@taumoda.com>" "Elsie19 <elsie19@pm.me>")
