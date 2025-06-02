@@ -11597,6 +11597,7 @@ pkgbase = rhinu-pkg-git
 	pkgver = 2.0.0
 	pkgdesc = Rhino-pkg wrapper script - Nushell rewrite
 	arch = all
+	depends = aptitude
 	makedepends = make
 	pacdeps = nutext-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
