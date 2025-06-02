@@ -6887,7 +6887,7 @@ pkgbase = ly-git
 pkgname = ly-git
 ---
 pkgbase = ly
-	pkgver = 1.0.3
+	pkgver = 1.1.0
 	pkgdesc = TUI display manager
 	url = https://codeberg.org/AnErrupTion/ly
 	priority = required
@@ -6903,9 +6903,7 @@ pkgbase = ly
 	license = WTFPL
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: ly
-	source = ly::https://codeberg.org/AnErrupTion/ly/archive/v1.0.3.tar.gz
-	source = config_dir-fix.patch
-	sha256sums = SKIP
+	source = ly::https://codeberg.org/AnErrupTion/ly/archive/v1.1.0.tar.gz
 	sha256sums = SKIP
 
 pkgname = ly
