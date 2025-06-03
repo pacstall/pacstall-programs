@@ -25,7 +25,7 @@ prepare() {
 build() {
   cd "ly"
 
-  zig build -j"${NCPU}"
+  zig build
 }
 
 package() {
