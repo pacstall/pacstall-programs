@@ -10,8 +10,8 @@ breaks=("${gives}")
 url='https://github.com/akinomyoga/ble.sh'
 
 _tag="0.4.0-devel3"
-_commit="94109ea71a43bbaf576ac1c6d8d959a6b3f33286"
-pkgver="${_tag}.${_commit:0:9}"
+pkgrel="1"
+pkgver="${_tag}"
 
 source=("https://github.com/akinomyoga/${gives}.git")
 
@@ -23,11 +23,6 @@ optdepends=(
 
 license=("BSD-3-Clause")
 maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
-
-prepare() {
-  cd "${gives}"
-  git checkout "${_commit}"
-}
 
 package() {
   TMP=$(mktemp --suffix=".sh")

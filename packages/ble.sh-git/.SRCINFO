@@ -1,6 +1,7 @@
 pkgbase = ble.sh-git
 	gives = ble.sh
-	pkgver = 0.4.0-devel3.94109ea71
+	pkgver = 0.4.0-devel3
+	pkgrel = 1
 	pkgdesc = Bash Line Editor (ble.sh) -- a replacement for Bash's line editor with enhanced features
 	url = https://github.com/akinomyoga/ble.sh
 	arch = all
