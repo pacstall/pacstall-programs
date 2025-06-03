@@ -48,6 +48,6 @@ check() {
 }
 
 post_install() {
-  BLE_SH=$(dpkg-query -L ble.sh | grep -m 1 ble.sh)
+  BLE_SH="$(dpkg-query -L "${gives}" | grep -m 1 ble.sh)"
   fancy_message info "Installation successful! You will have to add 'source ${BLE_SH}' to your .bashrc to activate it."
 }
