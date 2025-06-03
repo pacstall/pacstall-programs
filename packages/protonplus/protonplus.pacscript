@@ -42,6 +42,4 @@ check() {
 package() {
   cd "ProtonPlus-${pkgver}"
   meson install -C build --destdir "${pkgdir}"
-
-  ln -s "/usr/bin/${_app_id}" "${pkgdir}/usr/bin/${pkgname}"
 }
