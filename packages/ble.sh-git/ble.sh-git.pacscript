@@ -8,10 +8,7 @@ repology=("project: blesh")
 arch=("all")
 breaks=("${gives}")
 url='https://github.com/akinomyoga/ble.sh'
-
-_tag="0.4.0-devel3"
-pkgrel="1"
-pkgver="${_tag}"
+pkgver="0.4.0-devel3"
 
 source=("https://github.com/akinomyoga/${gives}.git")
 
