@@ -1,6 +1,6 @@
 pkgbase = betterbird-bin
 	gives = betterbird
-	pkgver = 128.10.0esr-bb26
+	pkgver = 128.11.0esr
 	pkgdesc = Fine-tuned version of Mozilla Thunderbird, Thunderbird on steroids, if you will
 	url = https://www.betterbird.eu/index.html
 	arch = x86_64
@@ -8,9 +8,9 @@ pkgbase = betterbird-bin
 	depends = hunspell
 	maintainer = tranquil <tranquiltr0@proton.me>
 	repology = project: betterbird
-	source = https://www.betterbird.eu/downloads/LinuxArchive/betterbird-128.10.0esr-bb26.en-US.linux-x86_64.tar.bz2
+	source = https://www.betterbird.eu/downloads/LinuxArchive/betterbird-128.11.0esr-bb28.en-US.linux-x86_64.tar.bz2
 	source = eu.betterbird.Betterbird.desktop
-	sha256sums = 10291da93cf848810e68778bec707654945c7d26bbc6d7ae6a8ccc3247ae34bf
+	sha256sums = 46ac8e4577f7f10e7ee8f0377a15eac644ac77b1e77a39cd05cbd2a338de45f1
 	sha256sums = bce809385dc48951ca6309776ed8fe5213ebbce301a790349172a799d8987151
 
 pkgname = betterbird-bin
