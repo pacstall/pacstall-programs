@@ -2,7 +2,7 @@
 # https://aur.archlinux.org/packages/blesh-git
 
 pkgname="ble.sh-git"
-pkgdesc="Bash Line Editor (ble.sh) -- a replacement for Bash's line editor with enhanced features"
+pkgdesc="Replacement for Bash's line editor with enhanced features"
 gives="ble.sh"
 repology=("project: blesh")
 arch=("all")
