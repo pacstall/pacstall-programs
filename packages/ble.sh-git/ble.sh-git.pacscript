@@ -10,7 +10,6 @@ breaks=("${gives}")
 url='https://github.com/akinomyoga/ble.sh'
 pkgver="0.4.0-devel3"
 source=("https://github.com/akinomyoga/${gives}.git")
-
 depends=("bash")
 makedepends=("shfmt" "make" "gawk")
 optdepends=(
