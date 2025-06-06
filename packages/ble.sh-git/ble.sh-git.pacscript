@@ -15,7 +15,6 @@ makedepends=("shfmt" "make" "gawk")
 optdepends=(
   "mawk: for faster processing"
 )
-
 license=("BSD-3-Clause")
 maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
 
