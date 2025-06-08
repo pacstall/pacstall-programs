@@ -1,6 +1,6 @@
 pkgbase = protonplus
 	gives = protonplus
-	pkgver = 0.4.32
+	pkgver = 0.5.1
 	pkgdesc = A modern compatibility tools manager for Linux
 	url = https://github.com/Vysp3r/ProtonPlus
 	arch = x86_64
@@ -24,7 +24,7 @@ pkgbase = protonplus
 	incompatible = ubuntu:jammy
 	license = GPL-3.0-or-later
 	maintainer = Vysp3r <dev@vysp3r.com>
-	source = protonplus-0.4.32.tar.gz::https://github.com/Vysp3r/ProtonPlus/archive/refs/tags/v0.4.32.tar.gz
-	sha256sums = 293e6baa296c36e0442500f9efd573b112fc2403e77e748136a702340d6069a4
+	source = protonplus-0.5.1.tar.gz::https://github.com/Vysp3r/ProtonPlus/archive/refs/tags/v0.5.1.tar.gz
+	sha256sums = 17ab9d592736f889667da4be4e9a82ddc9b301e9c92bc3c4db88f5715313bd52
 
 pkgname = protonplus
