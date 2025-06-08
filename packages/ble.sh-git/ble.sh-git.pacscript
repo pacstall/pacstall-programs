@@ -19,17 +19,14 @@ license=("BSD-3-Clause")
 maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
 
 package() {
-  TMP=$(mktemp --suffix=".sh")
-  echo "
-    _ble_base_package_type=pacstall
+  echo "_ble_base_package_type=pacstall
 
-    function ble/base/package:pacstall/update {
-      pacstall --install ${pkgname}
-    }
-    " | shfmt > "${TMP}"
-  install -Dm644 "${TMP}" "${pkgdir}"/usr/share/blesh/lib/_package.sh
+function ble/base/package:pacstall/update {
+    pacstall --install ${pkgname}
+}
+" > _package.sh
+  install -Dm644 "_package.sh" -t "${pkgdir}/usr/share/blesh/lib"
   make -C "${gives}" -j"${NCPU}" install DESTDIR="${pkgdir}" PREFIX=/usr INSDIR_LICENSE="${pkgdir}/usr/share/licenses/blesh"
-  rm "${TMP}"
 }
 
 check() {
