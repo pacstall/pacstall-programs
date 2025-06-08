@@ -969,7 +969,6 @@ pkgbase = ble.sh-git
 	url = https://github.com/akinomyoga/ble.sh
 	arch = all
 	depends = bash
-	makedepends = shfmt
 	makedepends = make
 	makedepends = gawk
 	optdepends = mawk: for faster processing
