@@ -15,9 +15,9 @@ pkgbase = vesktop-deb
 	depends = libsecret-1-0
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: vesktop
-	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.6/vesktop_1.5.7_arm64.deb
+	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.7/vesktop_1.5.7_arm64.deb
 	sha256sums_arm64 = 03a0393a86229c7fb75b775eec97a5c13160cad3d8ba5e8fe5bb518dd0ddae8e
-	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.6/vesktop_1.5.7_amd64.deb
+	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.7/vesktop_1.5.7_amd64.deb
 	sha256sums_amd64 = 9bf0d9fd85f88c1649bde946114042babc02d465b1e902c2ea2f48ef605f4869
 
 pkgname = vesktop-deb
