@@ -1,6 +1,6 @@
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.15.0-061500-generic
-	pkgver = 6.15
+	gives = linux-headers-6.15.1-061501-generic
+	pkgver = 6.15.1
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -8,9 +8,9 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15/arm64/linux-headers-6.15.0-061500-generic_6.15.0-061500.202505260036_arm64.deb
-	sha256sums_arm64 = 4f414299fffb696964f1a6764829a36d290284b2f1a1459e7ee060f17565a285
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15/amd64/linux-headers-6.15.0-061500-generic_6.15.0-061500.202505260036_amd64.deb
-	sha256sums_amd64 = 001cce6780e49be0716b04fb192fc45cb1cbb1ad6da83e3bfe7be88a3fdf6d87
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15.1/arm64/linux-headers-6.15.1-061501-generic_6.15.1-061501.202506041425_arm64.deb
+	sha256sums_arm64 = 821b57e8bb907b1274dd90fb1c2e67385fec0dacf0c445025000e31f88b35cd3
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15.1/amd64/linux-headers-6.15.1-061501-generic_6.15.1-061501.202506041425_amd64.deb
+	sha256sums_amd64 = 6840e06a4c469f2cae877880c5dbda4836137a16f096454b5e6ce850f0104468
 
 pkgname = linux-headers-generic-stable-deb
