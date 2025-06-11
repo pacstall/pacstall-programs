@@ -489,6 +489,9 @@ nuclei-bin
 nushell-bin
 nutext-bin
 nutext-git
+nvidia-beta-installer
+nvidia-feat-installer
+nvidia-prod-installer
 obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-deb
