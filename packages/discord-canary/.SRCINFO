@@ -1,5 +1,5 @@
 pkgbase = discord-canary
-	pkgver = 0.0.671
+	pkgver = 0.0.695
 	pkgdesc = Chat for Communities and Friends - Unstable
 	url = https://discord.com/
 	arch = amd64
@@ -21,7 +21,7 @@ pkgbase = discord-canary
 	depends = libgbm1
 	maintainer = DismissedGuy <me@mikealmel.ooo>
 	repology = project: discord-canary
-	source = @discord-canary~0.0.671::https://canary.dl2.discordapp.net/apps/linux/0.0.671/discord-canary-0.0.671.tar.gz
-	sha256sums = e3a001165a7487044787567edeed80f573562c54d9d299c57aea36e125b04291
+	source = @discord-canary~0.0.695::https://canary.dl2.discordapp.net/apps/linux/0.0.695/discord-canary-0.0.695.tar.gz
+	sha256sums = 815b16d7f1ec3fce30f144a20bc830ddf1db7197ed81abb5f69ec1371f75ee5a
 
 pkgname = discord-canary
