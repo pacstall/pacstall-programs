@@ -9,14 +9,16 @@ pkgdesc="Chat for Communities and Friends - Unstable"
 arch=('amd64')
 sha256sums=("815b16d7f1ec3fce30f144a20bc830ddf1db7197ed81abb5f69ec1371f75ee5a")
 
+prepare() {
+  mkdir -p "${pkgdir}/usr/bin"
+  mkdir -p "${pkgdir}/usr/share/${pkgname}"
+}
+
 package() {
-  cd "${pkgname}~${pkgver}"
-  install -dm644 "${pkgdir}/usr/bin"
-  install -dm644 "${pkgdir}/usr/share/${pkgname}"
+  cp -r "${pkgname}~${pkgver}" "${pkgdir}/usr/share/${pkgname}"
   ln -sf "/usr/share/${pkgname}/DiscordCanary" "${pkgdir}/usr/bin/${pkgname}"
   install -Dm755 discord-canary.desktop "${pkgdir}/usr/share/applications/discord-canary.desktop"
   install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord-canary.png"
-  cp -R ./* "${pkgdir}/usr/share/${pkgname}/"
 }
 
 post_install() {
