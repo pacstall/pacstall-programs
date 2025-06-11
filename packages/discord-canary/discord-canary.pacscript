@@ -17,8 +17,8 @@ prepare() {
 package() {
   cp -r "${pkgname}~${pkgver}" "${pkgdir}/usr/share/${pkgname}"
   ln -sf "/usr/share/${pkgname}/DiscordCanary" "${pkgdir}/usr/bin/${pkgname}"
-  install -Dm755 discord-canary.desktop "${pkgdir}/usr/share/applications/discord-canary.desktop"
-  install -Dm755 discord.png "${pkgdir}/usr/share/icons/discord-canary.png"
+  install -Dm755 "${pkgname}~${pkgver}/discord-canary.desktop" "${pkgdir}/usr/share/applications/discord-canary.desktop"
+  install -Dm755 "${pkgname}~${pkgver}/discord.png" "${pkgdir}/usr/share/icons/discord-canary.png"
 }
 
 post_install() {
