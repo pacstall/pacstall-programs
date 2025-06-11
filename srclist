@@ -2087,6 +2087,7 @@ pkgname = discord-canary-deb
 ---
 pkgbase = discord-canary
 	pkgver = 0.0.695
+	pkgrel = 2
 	pkgdesc = Chat for Communities and Friends - Unstable
 	url = https://discord.com/
 	arch = amd64
