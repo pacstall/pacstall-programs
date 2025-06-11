@@ -1,6 +1,7 @@
 pkgname="discord-canary"
 repology=("project: discord-canary")
 pkgver="0.0.695"
+pkgrel="2"
 maintainer=("DismissedGuy <me@mikealmel.ooo>")
 source=("@${pkgname}~${pkgver}::https://canary.dl2.discordapp.net/apps/linux/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 url='https://discord.com/'
@@ -15,7 +16,7 @@ prepare() {
 }
 
 package() {
-  cp -r "${pkgname}~${pkgver}" "${pkgdir}/usr/share/${pkgname}"
+  cp -r "${pkgname}~${pkgver}"/* "${pkgdir}/usr/share/${pkgname}"
   ln -sf "/usr/share/${pkgname}/DiscordCanary" "${pkgdir}/usr/bin/${pkgname}"
   install -Dm755 "${pkgname}~${pkgver}/discord-canary.desktop" "${pkgdir}/usr/share/applications/discord-canary.desktop"
   install -Dm755 "${pkgname}~${pkgver}/discord.png" "${pkgdir}/usr/share/icons/discord-canary.png"
