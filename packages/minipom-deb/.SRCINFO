@@ -1,0 +1,17 @@
+pkgbase = minipom-deb
+	gives = minipom
+	pkgver = 0.11.3
+	pkgdesc = Minimalistic and elegant Pomodoro timer desktop application A clean and modern Pomodoro timer built with Tauri and SvelteKit featuring customizable timer settings, built-in sound notifications, and native performance across platforms.
+	url = https://github.com/tfkhdyt/minipom
+	arch = amd64
+	depends = libwebkit2gtk-4.1-0
+	depends = libayatana-appindicator3-1
+	depends = librsvg2-2
+	replaces = minipom
+	license = GPL-3.0-or-later
+	maintainer = Taufik Hidayat <taufik@hidayat.dev>
+	repology = project: minipom
+	source_amd64 = https://github.com/tfkhdyt/minipom/releases/download/v0.11.3/Minipom_0.11.3_amd64.deb
+	sha256sums_amd64 = 5c77d2ce779981699f5651295cfc38c03e633b7b9bc850607f5db1069bcbe2df
+
+pkgname = minipom-deb
