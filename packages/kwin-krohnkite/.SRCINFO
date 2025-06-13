@@ -5,8 +5,9 @@ pkgbase = kwin-krohnkite
 	url = https://github.com/anametologin/krohnkite
 	arch = all
 	depends = kwin-common>=4:6.0.0
-	makedepends = kwin-common>=4:6.0.0
+	makedepends = node-typescript
 	breaks = kwin-krohnkite-git
+	compatible = ubuntu:devel
 	compatible = ubuntu:questing
 	compatible = ubuntu:plucky
 	compatible = ubuntu:oracular
@@ -15,7 +16,7 @@ pkgbase = kwin-krohnkite
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: kwin-scripts-krohnkite
-	source = https://github.com/anametologin/krohnkite/releases/download/0.9.9.1/krohnkite.kwinscript
-	sha256sums = ba07fcd802476554325d0150398fa5c76e94ea074446dd9954729ce074edf361
+	source = https://github.com/anametologin/krohnkite/archive/refs/tags/0.9.9.1.tar.gz
+	sha256sums = 003f91d7a5ad0fdb1587144ab3d0a256c32c902e798ca1ee23d3cfb2123682a0
 
 pkgname = kwin-krohnkite
