@@ -11508,11 +11508,12 @@ pkgbase = rhino-pkg-git
 	pkgver = 2.0.0
 	pkgdesc = Rhino-pkg wrapper script
 	arch = all
+	depends = aptitude
 	makedepends = make
 	pacdeps = nutext-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = https://github.com/rhino-linux/rhino-pkg.git#branch=nushell
+	source = https://github.com/rhino-linux/rhino-pkg.git
 
 pkgname = rhino-pkg-git
 ---
@@ -11689,14 +11690,13 @@ pkgname = rhino-xfwm4-theme-git
 pkgbase = rhinu-pkg-git
 	gives = rhinu-pkg
 	pkgver = 2.0.0
+	pkgrel = 2
 	pkgdesc = Rhino-pkg wrapper script - Nushell rewrite
 	arch = all
-	depends = aptitude
-	makedepends = make
-	pacdeps = nutext-bin
+	pacdeps = rhino-pkg-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = rhinu-pkg::https://github.com/rhino-linux/rhino-pkg.git#branch=nushell
+	source = https://github.com/rhino-linux/rhino-pkg.git
 
 pkgname = rhinu-pkg-git
 ---
