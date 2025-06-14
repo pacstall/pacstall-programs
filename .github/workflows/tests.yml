@@ -129,7 +129,7 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
-      - name: Output Package Tree
+      - name: Output Package Trees
         if: steps.paths.outputs.pacscripts == 'true'
         run: |
           export SUDO_USER=$USER
@@ -269,7 +269,7 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
-      - name: Output Package Tree
+      - name: Output Package Trees
         if: steps.paths.outputs.pacscripts == 'true'
         run: |
           export SUDO_USER=$USER
