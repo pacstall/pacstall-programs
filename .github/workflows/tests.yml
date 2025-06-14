@@ -129,6 +129,22 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
+      - name: Output Package Tree
+        if: steps.paths.outputs.pacscripts == 'true'
+        run: |
+          export SUDO_USER=$USER
+          export DEBIAN_FRONTEND=noninteractive
+          export GITHUB_ACTIONS=true
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} == *".pacscript" ]]; then
+              pacscript_file=`basename "${changed_file}"`
+              package_name="${pacscript_file/.pacscript/}"
+              pacstall -T "${package_name}"
+            fi
+          done
+        shell: sudo -E -u dio bash {0}
+        env:
+          DEBIAN_FRONTEND: noninteractive
       - name: Uninstalling Packages
         if: steps.paths.outputs.pacscripts == 'true'
         run: |
@@ -249,6 +265,22 @@ jobs:
                 echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
                 pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY} || exit 1
               fi
+            fi
+          done
+        shell: sudo -E -u dio bash {0}
+        env:
+          DEBIAN_FRONTEND: noninteractive
+      - name: Output Package Tree
+        if: steps.paths.outputs.pacscripts == 'true'
+        run: |
+          export SUDO_USER=$USER
+          export DEBIAN_FRONTEND=noninteractive
+          export GITHUB_ACTIONS=true
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} == *".pacscript" ]]; then
+              pacscript_file=`basename "${changed_file}"`
+              package_name="${pacscript_file/.pacscript/}"
+              pacstall -T "${package_name}"
             fi
           done
         shell: sudo -E -u dio bash {0}
