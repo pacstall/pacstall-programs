@@ -3,6 +3,7 @@ gives="goverlay"
 arch=("amd64")
 pkgver="1.2.0"
 _pkgver="1.2"
+pkgrel="2"
 source=(
   "https://github.com/benjamimgois/goverlay/releases/download/${_pkgver}/goverlay.tar.xz"
   "https://raw.githubusercontent.com/benjamimgois/goverlay/master/data/icons/128x128/goverlay.png"
@@ -11,7 +12,7 @@ sha256sums=(
   "6b2f33564ec14b70c4dc6905084d8d3657013e8050e27345e1aad7b485fb97b0"
   "SKIP"
 )
-depends=("mangohud" "qt6ct" "adwaita-qt6")
+depends=("mangohud" "qt6ct" "adwaita-qt6" "libqt6printsupport6t64")
 pacdeps=("qt6pas")
 replaces=("goverlay")
 pkgdesc="Graphical UI to help manage Linux overlays"
