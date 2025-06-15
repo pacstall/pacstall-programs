@@ -11,6 +11,5 @@ source_arm64=("https://github.com/unlimitedbacon/stl-thumb/releases/download/v${
 sha256sums_arm64=("b3d6c56a79fbcd963a240f6db07e290841644da269bc88892c5ed349eb3d6b94")
 source_armhf=("https://github.com/unlimitedbacon/stl-thumb/releases/download/v${pkgver}/stl-thumb_${pkgver}_armhf.deb")
 sha256sums_armhf=("2df7d449a5ea1a873ea13a774ff9cf09126dec2604a4430f787cc84d8985acff")
-
 maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
 repology=("project: ${gives}")
