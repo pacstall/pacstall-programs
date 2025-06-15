@@ -129,6 +129,21 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
+      - name: Output Package Trees
+        if: steps.paths.outputs.pacscripts == 'true'
+        run: |
+          export SUDO_USER=$USER
+          export DEBIAN_FRONTEND=noninteractive
+          export GITHUB_ACTIONS=true
+          mapfile -t list < <(pacstall -L)
+          for pkg in "${list[@]}"; do
+            echo "${pkg}:"
+            pacstall -T "${pkg}"
+            echo "---"
+          done
+        shell: sudo -E -u dio bash {0}
+        env:
+          DEBIAN_FRONTEND: noninteractive
       - name: Uninstalling Packages
         if: steps.paths.outputs.pacscripts == 'true'
         run: |
@@ -250,6 +265,21 @@ jobs:
                 pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY} || exit 1
               fi
             fi
+          done
+        shell: sudo -E -u dio bash {0}
+        env:
+          DEBIAN_FRONTEND: noninteractive
+      - name: Output Package Trees
+        if: steps.paths.outputs.pacscripts == 'true'
+        run: |
+          export SUDO_USER=$USER
+          export DEBIAN_FRONTEND=noninteractive
+          export GITHUB_ACTIONS=true
+          mapfile -t list < <(pacstall -L)
+          for pkg in "${list[@]}"; do
+            echo "${pkg}:"
+            pacstall -T "${pkg}"
+            echo "---"
           done
         shell: sudo -E -u dio bash {0}
         env:
