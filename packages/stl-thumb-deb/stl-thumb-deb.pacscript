@@ -5,7 +5,6 @@ license=("MIT")
 pkgdesc="Fast lightweight thumbnail generator for 3D models with file manager integration (GNOME)"
 url='https://github.com/unlimitedbacon/stl-thumb'
 arch=("amd64" "arm64" "armhf")
-
 source_amd64=("https://github.com/unlimitedbacon/stl-thumb/releases/download/v${pkgver}/stl-thumb_${pkgver}_amd64.deb")
 sha256sums_amd64=("1e8398aa5df875ce91494ec525fd4ad973bb27c6d47f696b25b8a202ef91240d")
 source_arm64=("https://github.com/unlimitedbacon/stl-thumb/releases/download/v${pkgver}/stl-thumb_${pkgver}_arm64.deb")
