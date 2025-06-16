@@ -1,0 +1,15 @@
+pkgname="stl-thumb-deb"
+gives="stl-thumb"
+pkgver="0.5.0"
+license=("MIT")
+pkgdesc="Fast lightweight thumbnail generator for 3D models with file manager integration (GNOME)"
+url='https://github.com/unlimitedbacon/stl-thumb'
+arch=("amd64" "arm64" "armhf")
+source_amd64=("https://github.com/unlimitedbacon/stl-thumb/releases/download/v${pkgver}/stl-thumb_${pkgver}_amd64.deb")
+sha256sums_amd64=("1e8398aa5df875ce91494ec525fd4ad973bb27c6d47f696b25b8a202ef91240d")
+source_arm64=("https://github.com/unlimitedbacon/stl-thumb/releases/download/v${pkgver}/stl-thumb_${pkgver}_arm64.deb")
+sha256sums_arm64=("b3d6c56a79fbcd963a240f6db07e290841644da269bc88892c5ed349eb3d6b94")
+source_armhf=("https://github.com/unlimitedbacon/stl-thumb/releases/download/v${pkgver}/stl-thumb_${pkgver}_armhf.deb")
+sha256sums_armhf=("2df7d449a5ea1a873ea13a774ff9cf09126dec2604a4430f787cc84d8985acff")
+maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
+repology=("project: ${gives}")
