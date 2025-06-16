@@ -5851,6 +5851,29 @@ pkgbase = kvantum
 
 pkgname = kvantum
 ---
+pkgbase = kwin-krohnkite
+	gives = kwin-krohnkite
+	pkgver = 0.9.9.1
+	pkgdesc = Dynamic tiling extension for KWin 6 inspired by dwm
+	url = https://github.com/anametologin/krohnkite
+	arch = all
+	depends = kwin-common>=4:6.0.0
+	makedepends = node-typescript
+	breaks = kwin-krohnkite-git
+	compatible = ubuntu:devel
+	compatible = ubuntu:questing
+	compatible = ubuntu:plucky
+	compatible = ubuntu:oracular
+	compatible = debian:trixie
+	compatible = debian:sid
+	license = MIT
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: kwin-scripts-krohnkite
+	source = https://github.com/anametologin/krohnkite/archive/refs/tags/0.9.9.1.tar.gz
+	sha256sums = 003f91d7a5ad0fdb1587144ab3d0a256c32c902e798ca1ee23d3cfb2123682a0
+
+pkgname = kwin-krohnkite
+---
 pkgbase = kxstudio-repos-deb
 	gives = kxstudio-repos
 	pkgver = 10.0.3
