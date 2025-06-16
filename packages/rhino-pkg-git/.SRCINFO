@@ -1,6 +1,6 @@
 pkgbase = rhino-pkg-git
 	gives = rhino-pkg
-	pkgver = 2.0.0
+	pkgver = 2.0.1
 	pkgdesc = Rhino-pkg wrapper script
 	arch = all
 	depends = aptitude
