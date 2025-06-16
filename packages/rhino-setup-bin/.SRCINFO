@@ -1,7 +1,6 @@
 pkgbase = rhino-setup-bin
 	gives = rhino-setup
-	pkgver = 2025.1
-	pkgrel = 4
+	pkgver = 2025.3
 	pkgdesc = Rhino Linux Setup Prompt
 	arch = arm64
 	arch = amd64
@@ -14,9 +13,9 @@ pkgbase = rhino-setup-bin
 	replaces = rhino-setup-git
 	incompatible = debian:*
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://github.com/rhino-linux/rhino-setup/releases/download/v2025.1/rhino-setup_v2025.1_arm64.zip
-	sha256sums_arm64 = 721ac8160bf2df4747f80cb436add5380fd1a9ebefadfb2b321f1970b1129fa3
-	source_amd64 = https://github.com/rhino-linux/rhino-setup/releases/download/v2025.1/rhino-setup_v2025.1_amd64.zip
-	sha256sums_amd64 = 73168e93bfbb18428a1dad4036da95707571780332977b7177902032a39e3a3c
+	source_arm64 = https://github.com/rhino-linux/rhino-setup/releases/download/v2025.3/rhino-setup_v2025.3_arm64.zip
+	sha256sums_arm64 = 26fdc09cc4a31a71f8dcf8fcbd96cacf94f5fd9e61a224b1905f15f73b8c1261
+	source_amd64 = https://github.com/rhino-linux/rhino-setup/releases/download/v2025.3/rhino-setup_v2025.3_amd64.zip
+	sha256sums_amd64 = 9e2708a67b8310342a235be3bf91fd8ee7847f0993edf3681dae3932d939ca54
 
 pkgname = rhino-setup-bin

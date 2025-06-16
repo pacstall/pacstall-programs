@@ -4,12 +4,11 @@ gives="rhino-setup"
 pkgdesc="Rhino Linux Setup Prompt"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 incompatible=("debian:*")
-pkgver="2025.1"
-pkgrel="4"
+pkgver="2025.3"
 replaces=("${gives}" "${gives}-git")
 arch=('arm64' 'amd64')
-sha256sums_arm64=("721ac8160bf2df4747f80cb436add5380fd1a9ebefadfb2b321f1970b1129fa3")
-sha256sums_amd64=("73168e93bfbb18428a1dad4036da95707571780332977b7177902032a39e3a3c")
+sha256sums_arm64=("26fdc09cc4a31a71f8dcf8fcbd96cacf94f5fd9e61a224b1905f15f73b8c1261")
+sha256sums_amd64=("9e2708a67b8310342a235be3bf91fd8ee7847f0993edf3681dae3932d939ca54")
 source=("https://github.com/rhino-linux/${gives}/releases/download/v${pkgver}/${gives}_v${pkgver}_${CARCH}.zip")
 
 build() {
