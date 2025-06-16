@@ -1,7 +1,7 @@
 pkgname="protonplus"
 gives="protonplus"
 _app_id="com.vysp3r.ProtonPlus"
-pkgver="0.5.2"
+pkgver="0.5.4"
 pkgdesc="A modern compatibility tools manager for Linux"
 arch=('x86_64')
 url='https://github.com/Vysp3r/ProtonPlus'
@@ -19,7 +19,7 @@ makedepends=('meson'
   'desktop-file-utils')
 checkdepends=('appstream-util')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('87dc92c01867eedbb58a34a739e4c89bb08faa37108d03d52c7d6241e1593c4a')
+sha256sums=('cf87906c9502cff2534ec4bed34e16bb0ecc7ebe16b90a3d0a048d661ee81615')
 maintainer=("Vysp3r <dev@vysp3r.com>")
 
 incompatible=("debian:bookworm" "ubuntu:jammy")
