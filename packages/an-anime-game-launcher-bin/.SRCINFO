@@ -1,6 +1,6 @@
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.14.1
+	pkgver = 3.14.2
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -23,9 +23,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.14.1/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.14.2/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = 45dee5dffe1765dd0bcf536269b3690d59713e06ed7a62724ef355dab81e9aaf
+	sha256sums = 61955ec23df8104cd59cd7943fe16bf7d402edbe14bf69216fc27cafb7a0be2d
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
