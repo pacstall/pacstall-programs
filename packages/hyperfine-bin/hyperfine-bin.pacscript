@@ -8,11 +8,11 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="hyperfine-bin"
 gives="hyperfine"
-pkgver="1.17.0"
+pkgver="1.19.0"
 pkgdesc="A command-line benchmarking tool"
 source=("@${pkgname}~${pkgver}::https://github.com/sharkdp/${gives}/releases/download/v${pkgver}/${gives}-v${pkgver}-x86_64-unknown-linux-musl.tar.gz")
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
-sha256sums=("563de47d843810de501e3e6bfcb4571a4ff957eab811c2af87be23d1c599ae47")
+sha256sums=("825287143f397774093539ca2458854ab3735c0e8a1aaf075c22edce7d261556")
 arch=('amd64')
 repology=("project: hyperfine")
 
