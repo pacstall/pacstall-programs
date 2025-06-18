@@ -3886,7 +3886,7 @@ pkgname = gnome-shell-extension-installer-git
 ---
 pkgbase = gnome-tweaks
 	gives = gnome-tweaks
-	pkgver = 40.10
+	pkgver = 46.1
 	pkgdesc = Graphical interface for advanced GNOME 3 settings
 	arch = any
 	depends = gettext
@@ -3911,8 +3911,8 @@ pkgbase = gnome-tweaks
 	breaks = gnome-tweaks-git
 	license = GPL-3.0
 	repology = project: gnome-tweaks
-	source = @gnome-tweaks~40.10::https://github.com/GNOME/gnome-tweaks/archive/refs/tags/40.10.zip
-	sha256sums = 59d9597840335b0d71afd287bec09260e172ff89e14d6d12c3416f23557974ee
+	source = @gnome-tweaks~46.1::https://github.com/GNOME/gnome-tweaks/archive/refs/tags/46.1.zip
+	sha256sums = cba645d3e9ca08a0072114ccf0fadddcfac259a637a7a7c5bfad33005592ebc2
 
 pkgname = gnome-tweaks
 ---
