@@ -1,10 +1,10 @@
 pkgname="abdownloadmanager"
 repology=("project: ${pkgname}")
 arch=('amd64')
-pkgver="1.5.3"
+pkgver="1.6.4"
 source=("https://github.com/amir1376/ab-download-manager/releases/download/v${pkgver}/ABDownloadManager_${pkgver}_linux_x64.tar.gz")
 pkgdesc="Desktop app which lets you manage and organize your download files better than before"
-sha256sums=("ab43c3010cd820ad50f7604c89b5dc75ea9e6a9fa6455416514e77403715931f")
+sha256sums=("9f262cef463eba8ae3a662b6d29c48bcc8fd8930c722d6c737617fb4811de28b")
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('Apache-2.0')
 
