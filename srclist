@@ -826,7 +826,7 @@ pkgbase = batsignal
 	breaks = batsignal-git
 	maintainer = Harshwardhan Mehrotra <harshwardhanmehrotra@gmail.com>
 	repology = project: batsignal
-	source = @batsignal~1.8.0::https://github.com/electrickite/batsignal/archive/refs/tags/1.8.0.tar.gz
+	source = https://github.com/electrickite/batsignal/archive/refs/tags/1.8.0.tar.gz
 	sha256sums = c8c2a048f4aa105aae389d9d765b76057d4998dbfc29a7dfeaf66351eaa7cba1
 
 pkgname = batsignal
