@@ -1,9 +1,9 @@
 pkgname="apptainer-suid-deb"
 gives="apptainer-suid"
-pkgver="1.3.6"
+pkgver="1.4.1"
 pacdeps=("apptainer-deb")
 source=("https://github.com/apptainer/apptainer/releases/download/v${pkgver}/apptainer-suid_${pkgver}_amd64.deb")
 pkgdesc="setuid-root portion of apptainer"
-sha256sums=("c850d5f415aed7de26379aec1e8d43b4f46e1ec051240e9b2148bb9e391c9606")
+sha256sums=("0739b1f13948355a4369b5cd46dc2dc78f5d8ae4113b9b9ded1a5f6a4336c38a")
 arch=('amd64')
 repology=("project: apptainer")
