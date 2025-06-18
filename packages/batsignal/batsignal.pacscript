@@ -10,11 +10,11 @@ sha256sums=("c8c2a048f4aa105aae389d9d765b76057d4998dbfc29a7dfeaf66351eaa7cba1")
 maintainer=("Harshwardhan Mehrotra <harshwardhanmehrotra@gmail.com>")
 
 build() {
-  cd "${pkgver}"
+  cd "${pkgname}-${pkgver}"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${pkgver}"
+  cd "${pkgname}-${pkgver}"
   make install DESTDIR="${pkgdir}"
 }
