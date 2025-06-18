@@ -1,11 +1,11 @@
 pkgname="micro"
 arch=("amd64")
-pkgver="2.0.13"
+pkgver="2.0.14"
 pkgdesc="A modern and intuitive terminal-based text editor"
 maintainer=("edward-riley <edward@edwardriley.co.uk>")
 source=("@${pkgname}~${pkgver}::https://github.com/zyedidia/micro/releases/download/v${pkgver}/micro-${pkgver}-linux64.tar.gz")
 replaces=("micro")
-sha256sums=("a50e405d3d09d58f6b2c182429c18537a05f317dc0c3c9cb834b3271362e4781")
+sha256sums=("704e96add9b44e0041179f7934338d330e85230af6869f70b88720830f554786")
 optdepends=("xclip: system clipboard support (X11)"
   "wl-clipboard: system clipboard support (Wayland)")
 repology=("project: ${pkgname}")
