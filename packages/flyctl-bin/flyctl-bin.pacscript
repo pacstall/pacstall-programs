@@ -12,7 +12,7 @@ maintainer=("Andrew Barchuk <andrew@raindev.io>")
 
 package() {
   install -Dm755 "./flyctl" -t "${pkgdir}/usr/bin"
-  ln -s /usr/bin/flyctl "${pkdir}/usr/bin/fly"
+  ln -sf /usr/bin/flyctl "${pkdir}/usr/bin/fly"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
