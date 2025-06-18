@@ -1,11 +1,11 @@
 pkgbase = bitwig-studio-deb
 	gives = bitwig-studio
-	pkgver = 5.3.2
+	pkgver = 5.3.9
 	pkgdesc = Digital audio workstation for music production, remixing and live performance
 	arch = amd64
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: bitwig-studio
-	source = https://www.bitwig.com/dl/Bitwig%20Studio/5.3.2/installer_linux/bitwig-studio-5.3.2.deb
-	sha256sums = 40ab7f9b2aa6a1555f7cdc247c6700a249c0899bb70feb3b77694982d5a9be4e
+	source = https://www.bitwig.com/dl/Bitwig%20Studio/5.3.9/installer_linux/bitwig-studio-5.3.9.deb
+	sha256sums = 14d0090ba3ce509a72758cb860aac8ea94f379db1ad377724f2d8b193c5a11be
 
 pkgname = bitwig-studio-deb
