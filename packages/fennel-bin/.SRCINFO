@@ -1,6 +1,6 @@
 pkgbase = fennel-bin
 	gives = fennel
-	pkgver = 1.3.1
+	pkgver = 1.5.3
 	pkgdesc = A Lua Lisp language
 	arch = amd64
 	breaks = fennel
@@ -9,7 +9,7 @@ pkgbase = fennel-bin
 	breaks = fennel-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: fennel
-	source = https://fennel-lang.org/downloads/fennel-1.3.1-x86_64
-	sha256sums = 85b71175739dfd5e8893726d7244b0f0b58fd21eaec009e39eea44ad7169f060
+	source = https://fennel-lang.org/downloads/fennel-1.5.3-x86_64
+	sha256sums = d9c348de0040f02dce7f0452b8d9bb5e29fb292a8bad883778e43d9b9d4be3bb
 
 pkgname = fennel-bin
