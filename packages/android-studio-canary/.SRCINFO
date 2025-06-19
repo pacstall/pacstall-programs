@@ -1,6 +1,6 @@
 pkgbase = android-studio-canary
 	gives = android-studio
-	pkgver = 2025.1.1.9
+	pkgver = 2025.1.2.4
 	pkgdesc = Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development
 	arch = amd64
 	depends = libc6-i386
@@ -13,9 +13,9 @@ pkgbase = android-studio-canary
 	replaces = android-studio-canary
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: android-studio
-	source = @android-studio-canary~2025.1.1.9::https://dl.google.com/dl/android/studio/ide-zips/2025.1.1.9/android-studio-2025.1.1.9-linux.tar.gz
+	source = @android-studio-canary~2025.1.2.4::https://dl.google.com/dl/android/studio/ide-zips/2025.1.2.4/android-studio-2025.1.2.4-linux.tar.gz
 	source = android-studio.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/android-studio/android-studio.desktop
-	sha256sums = e3181a1aa5402bb2eb93a22579e7a4ba902925954d84d982cd269c1f3af8edff
+	sha256sums = 321a27983ba97171afc16501fa9ffd024ab108ff7e8fc6bb0f56c2b1e12ef066
 	sha256sums = SKIP
 
 pkgname = android-studio-canary
