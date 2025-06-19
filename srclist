@@ -4149,6 +4149,7 @@ pkgbase = google-earth-pro-stable-deb
 	pkgver = 7.3.6.10201
 	pkgdesc = Renders a 3D representation of Earth based primarily on satellite imagery
 	arch = amd64
+	depends = xdg-utils
 	breaks = google-earth-pro-stable
 	breaks = google-earth-pro-stable-git
 	breaks = google-earth-pro-stable-bin
