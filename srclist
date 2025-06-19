@@ -9778,12 +9778,12 @@ pkgname = openvr
 ---
 pkgbase = opera-beta-deb
 	gives = opera-beta
-	pkgver = 107.0.5045.4
+	pkgver = 120.0.5543.12
 	pkgdesc = Opera is a fast, secure, and user-friendly web browser - Beta
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://deb.opera.com/opera/pool/non-free/o/opera-beta/opera-beta_107.0.5045.4_amd64.deb
-	sha256sums = ad4a113c3b011cb6ffe015a65f36864e11b78d50bbe0dc2836ba291ac76bff18
+	source = https://deb.opera.com/opera/pool/non-free/o/opera-beta/opera-beta_120.0.5543.12_amd64.deb
+	sha256sums = 452b083b5b51b8232b3f5991507e0d5d832f91858ac80ea02dc2dbd9a463de20
 
 pkgname = opera-beta-deb
 ---
