@@ -1,8 +1,9 @@
 pkgname="hamclock-huge"
 arch=("any")
-pkgver="4.15"
+pkgver="4.19"
 source=(
   "https://github.com/fang64/hamclock/archive/refs/tags/v${pkgver}.tar.gz"
+  "https://raw.githubusercontent.com/fang64/hamclock/refs/heads/patch/pacstall/no-updates.patch"
   "hamclock.desktop"
 )
 url='https://clearskyinstitute.com/ham/HamClock'
@@ -11,7 +12,8 @@ breaks=("hamclock" "hamclock-big" "hamclock-bigger")
 replaces=("hamclock-huge" "${breaks[@]}")
 pkgdesc="Clock and world map with extra features for amateur radio (3200x1920 version)"
 sha256sums=(
-  "6eb001d9c6b8e97e09f4191b64aa5d9efdeaa5f1844e6d1b4bb48b37d26aba6a"
+  "370d1f020c06028b35fc12a63ac26be2ab75c46b2319593349018beb5e5587df"
+  "03dece6363a7109d3178eec7d88dafe3cea920c471d0076372acefade89294fd"
   "df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d"
 )
 maintainer=("Roy Williams <fang64@gmail.com>")
@@ -23,8 +25,7 @@ prepare() {
   sed -i 's/";/-PAC";/g' version.cpp
 
   # Do not check for/install updates
-  sed -i "s/tft.print (\"You're up to date\!\");"' \+\/\/[a-z ]*/tft.print("Updates disabled for PACSTALL"); tft.setCursor (tft.width()\/8, tft.height()\/3+40); tft.print("If this build is outdated by more than a few days,"); tft.setCursor (tft.width()\/8, tft.height()\/3+80); tft.print("please email fang64@gmail.com."); wdDelay(2000);/g' ESPHamClock.cpp
-  sed -i 's/bool found_newer = false;/return false;bool found_newer;/g' OTAupdate.cpp
+  patch -Np1 -i "${srcdir}/no-updates.patch"
 }
 
 build() {
