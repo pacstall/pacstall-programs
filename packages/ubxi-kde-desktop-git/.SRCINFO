@@ -1,6 +1,7 @@
 pkgbase = ubxi-kde-desktop-git
 	gives = ubxi-kde-desktop
 	pkgver = 0.0.1
+	pkgrel = 2
 	pkgdesc = UBXI KDE Plasma Desktop
 	priority = required
 	arch = amd64
@@ -33,6 +34,8 @@ pkgbase = ubxi-kde-desktop-git
 	depends = clinfo
 	depends = bluedevil
 	depends = plasma-widgets-addons
+	depends = plasma-session-wayland
+	depends = plasma-session-x11
 	optdepends = kde-spectacle: a simple application for capturing desktop screenshots
 	optdepends = ark: File archiver by KDE
 	optdepends = plasma-vault: Plasma applet and services for creating encrypted vaults
