@@ -1,7 +1,8 @@
 pkgname="google-earth-pro-stable-deb"
 gives="google-earth-pro-stable"
-pkgver="7.3.6.10201"
+pkgver="7.3.6.10201-r0"
 repology=("project: google-earth-pro")
+depends=("xdg-utils")
 source=("https://dl.google.com/dl/earth/client/current/google-earth-pro-stable_current_amd64.deb")
 breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app" "${gives}-deb")
 pkgdesc="Renders a 3D representation of Earth based primarily on satellite imagery"
