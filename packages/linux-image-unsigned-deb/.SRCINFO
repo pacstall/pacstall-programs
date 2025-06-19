@@ -1,6 +1,6 @@
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.16.0-061600rc1-generic
-	pkgver = 6.16~rc1
+	gives = linux-image-unsigned-6.16.0-061600rc2-generic
+	pkgver = 6.16~rc2
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -11,9 +11,9 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16-rc1/arm64/linux-image-unsigned-6.16.0-061600rc1-generic_6.16.0-061600rc1.202506082139_arm64.deb
-	sha256sums_arm64 = 8e8f99203c5fdf326c812cd039ba83f9e6ff85f1af4f910b9b227fe6b3bbf4eb
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16-rc1/amd64/linux-image-unsigned-6.16.0-061600rc1-generic_6.16.0-061600rc1.202506082139_amd64.deb
-	sha256sums_amd64 = 8c2d90082df767d7e9dd4bbe6f59b348be06577c7969470e86346ae136efb6be
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16-rc2/arm64/linux-image-unsigned-6.16.0-061600rc2-generic_6.16.0-061600rc2.202506152144_arm64.deb
+	sha256sums_arm64 = b9928303b01995af3533d3a4b05738394e99bcc8e8bd8c94834e16d90756948b
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16-rc2/amd64/linux-image-unsigned-6.16.0-061600rc2-generic_6.16.0-061600rc2.202506152144_amd64.deb
+	sha256sums_amd64 = e815a178f9aef5e6fa3432fff87c81453a75161815a1708cd85c15927156c75c
 
 pkgname = linux-image-unsigned-deb
