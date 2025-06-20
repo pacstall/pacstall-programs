@@ -18,7 +18,7 @@ depends=(
   "xfce4"
   "dbus-x11"
   "hardinfo"
-  "xarchiver" 
+  "xarchiver"
   "xdg-desktop-portal-gtk"
   "xserver-xorg-video-fbdev"
   "tumbler"
