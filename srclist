@@ -6436,16 +6436,6 @@ pkgbase = liblcf
 
 pkgname = liblcf
 ---
-pkgbase = libndi4-deb
-	gives = libndi4
-	pkgver = 4.5.1-1
-	pkgdesc = dependency for obs-ndi
-	arch = amd64
-	source = https://github.com/Palakis/obs-ndi/releases/download/4.9.1/libndi4_4.5.1-1_amd64.deb
-	sha256sums = d82e4231c6543ee978c85d114edd8f038c902b9be858aa6c5e847af39031f30b
-
-pkgname = libndi4-deb
----
 pkgbase = libresprite-git
 	gives = libresprite
 	pkgver = 1.0
@@ -9288,16 +9278,6 @@ pkgbase = obs-backgroundremoval
 	sha256sums = 50687434e49c005a881977ea46877c00da974a10810db2ee23b0b3fbeed7d6aa
 
 pkgname = obs-backgroundremoval
----
-pkgbase = obs-ndi-deb
-	gives = obs-ndi
-	pkgver = 4.9.1
-	pkgdesc = Network A/V in OBS Studio with NewTek's NDI technology
-	arch = amd64
-	source = https://github.com/Palakis/obs-ndi/releases/download/4.9.1/obs-ndi_4.9.1-1_amd64.deb
-	sha256sums = e91a27370dcbee0879fb27ffec8dba149825f47909a92e31a001e87e64e7329b
-
-pkgname = obs-ndi-deb
 ---
 pkgbase = obs-studio-deb
 	gives = obs-studio

@@ -315,7 +315,6 @@ libhyprgraphics-bin
 libhyprutils-bin
 libicu-deb
 liblcf
-libndi4-deb
 libresprite-git
 libressl
 librewolf-app
@@ -498,7 +497,6 @@ obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-deb
 obs-backgroundremoval-git
-obs-ndi-deb
 obs-studio
 obs-studio-deb
 obsidian-deb
