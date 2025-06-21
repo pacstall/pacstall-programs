@@ -4517,7 +4517,7 @@ pkgname = grive2-git
 ---
 pkgbase = grive2
 	gives = grive2
-	pkgver = 0.5.1
+	pkgver = 0.5.3
 	pkgdesc = Google Drive client with support for new Drive REST API and partial sync
 	arch = any
 	depends = libgcrypt20
@@ -4539,8 +4539,8 @@ pkgbase = grive2
 	makedepends = pkg-config
 	replaces = grive
 	maintainer = KwonNam Son <kwon37xi@gmail.com>
-	source = @grive2~0.5.1::https://github.com/vitalif/grive2/archive/v0.5.1.tar.gz
-	sha256sums = 9940bcd3e5a3ffd32b91477fba8ba1ca3e0a3a72e5ffa9c6d524db87951fdbbb
+	source = @grive2~0.5.3::https://github.com/vitalif/grive2/archive/v0.5.3.tar.gz
+	sha256sums = 4cb67c32e94749353e08ce5fefb831fefa3e7b49b863329489a84804df11449d
 
 pkgname = grive2
 ---
