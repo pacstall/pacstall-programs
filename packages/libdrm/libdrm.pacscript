@@ -2,7 +2,7 @@ pkgname="libdrm"
 gives="${pkgname}"
 pkgdesc="Userspace interface to kernel DRM services"
 arch=("any")
-pkgver="2.4.124"
+pkgver="2.4.125"
 provides=("libdrm2=${pkgver}"
   "libdrm-common=${pkgver}"
   "libdrm-intel1=${pkgver}"
@@ -26,7 +26,7 @@ makedepends=("python3-docutils"
   "libc6-dev")
 url="https://dri.freedesktop.org/"
 source=("https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-${pkgver}/drm-libdrm-${pkgver}.tar.gz")
-sha256sums=("49c077f3938147e7c321fe89255eb189c1be68f6ed0aa36e29d38e3db0e84e08")
+sha256sums=("2535a507232e5774d39f64e206f20ef7f07bcc32928cc578124fd9cc3d335535")
 maintainer=("Oren Klopfer <oren@taumoda.com>" "xdavius <xdavius@github.com>")
 
 build() {
