@@ -13,12 +13,12 @@ arch=("amd64")
 skiaver="m124-08a5439a6b"
 source=(
   "${pkgname}-${pkgver}.zip::https://github.com/aseprite/aseprite/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
-  "skia-${skiaver}.zip::https://github.com/aseprite/skia/releases/download/${skiaver}/Skia-Linux-Release-x86.zip"
+  "skia-${skiaver}.zip::https://github.com/aseprite/skia/releases/download/${skiaver}/Skia-Linux-Release-x64.zip"
   "https://github.com/aseprite/strings.git"
 )
 sha256sums=(
   "191ca47bc1b483a529ac9dc4826f53b9363bdd46feaa1f3638acac20096fed40"
-  "826ac1b3d78ae469a6617859ff95a30f92f75036f883946de6ae2e005a0ce3f4"
+  "a327e89b244f24cecaa34eb37544bae00d447b96c583d26ed29d6a3ad2e8a8b8"
   "SKIP"
 )
 noextract=(
@@ -56,8 +56,8 @@ build() {
     -D LAF_WITH_EXAMPLES=OFF
     -D LAF_WITH_TESTS=OFF
     -D SKIA_DIR="${PWD}/skia"
-    -D SKIA_LIBRARY_DIR="${PWD}/skia/out/Release-x86"
-    -D SKIA_LIBRARY="${PWD}/skia/out/Release-x86/libskia.a"
+    -D SKIA_LIBRARY_DIR="${PWD}/skia/out/Release-x64"
+    -D SKIA_LIBRARY="${PWD}/skia/out/Release-x64/libskia.a"
     -G Ninja
     -W no-dev
   )
