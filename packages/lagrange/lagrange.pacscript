@@ -1,7 +1,7 @@
 pkgname="lagrange"
 arch=("any")
 pkgver="1.18.5"
-license="BSD-2"
+license=("BSD-2-Clause")
 source=("@${pkgname}~${pkgver}::https://git.skyjake.fi/gemini/lagrange/releases/download/v1.18.5/lagrange-1.18.5.tar.gz")
 depends=("git" "cmake" "libsdl2-dev" "libssl-dev" "libpcre3-dev" "zlib1g-dev" "libunistring-dev" "libmpg123-dev")
 pkgdesc="A Beautiful Gemini Client"
