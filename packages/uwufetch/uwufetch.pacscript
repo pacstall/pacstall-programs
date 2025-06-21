@@ -8,14 +8,14 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="uwufetch"
 arch=("any")
-pkgver="1.7"
+pkgver="2.1"
 source=("@${pkgname}~${pkgver}::https://github.com/TheDarkBug/${pkgname}/archive/refs/tags/${pkgver}.zip")
 pkgdesc="A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace."
 makedepends=("gcc")
 optdepends=("viu: image preview"
   "lshw: hardware info")
 breaks=("${pkgname}-git" "${pkgname}-bin")
-sha256sums=("1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab")
+sha256sums=("92b1c07529aa91df990acb5a0f5ee4c8275c10d75ba305105b17f3931a5e4a8c")
 
 prepare() {
   cd "${pkgname}~${pkgver}"
