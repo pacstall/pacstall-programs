@@ -21,13 +21,3 @@ package() {
   cd "${pkgname}~${pkgver}"
   cmake --build . --target install -- -j"${NCPU}" DESTDIR="${pkgdir}"
 }
-
-post_install() {
-  glib-compile-schemas /usr/share/glib-2.0/schemas
-  update-desktop-database -q /usr/share/applications
-  gtk-update-icon-cache -qtf /usr/share/icons/hicolor
-}
-
-post_remove() {
-  update-desktop-database -q /usr/share/applications
-}
