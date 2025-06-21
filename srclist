@@ -4540,6 +4540,7 @@ pkgbase = grive2
 	replaces = grive
 	maintainer = KwonNam Son <kwon37xi@gmail.com>
 	source = @grive2~0.5.3::https://github.com/vitalif/grive2/archive/v0.5.3.tar.gz
+	source = https://github.com/vitalif/grive2/commit/b4d6ac055f8f16ac735a70036243bc4ea2334039.patch
 	sha256sums = 4cb67c32e94749353e08ce5fefb831fefa3e7b49b863329489a84804df11449d
 
 pkgname = grive2
