@@ -27,7 +27,7 @@ pkgbase = libdrm
 	provides = libdrm-dev=2.4.125
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = xdavius <xdavius@github.com>
-	source = https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-2.4.125/drm-libdrm-2.4.125.tar.gz
+	source = @drm-libdrm-2.4.125::https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-2.4.125/drm-libdrm-2.4.125.tar.gz
 	sha256sums = dd3e86a9fae99322d6430b28397f8e03ac4fb8deeed9a6e214bd5ced86db68c6
 
 pkgname = libdrm
