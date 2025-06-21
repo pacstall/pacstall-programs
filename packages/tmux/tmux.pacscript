@@ -1,24 +1,19 @@
 pkgname="tmux"
 arch=("any")
 arch=("any")
-pkgver="3.3"
+pkgver="3.5"
 source=("@${pkgname}~${pkgver}::https://github.com/tmux/tmux/releases/download/${pkgver}/tmux-${pkgver}.tar.gz")
-makedepends=("gcc" "make" "pkg-config" "bison" "libncurses-dev" "libevent-dev")
+makedepends=("gcc" "make" "pkg-config" "bison" "libncurses-dev" "libevent-dev" "libutempter-dev")
 breaks=("${pkgname}-git" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
 replaces=("tmux")
 pkgdesc="A terminal multiplexer"
-sha256sums=("b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc")
+sha256sums=("2fe01942e7e7d93f524a22f2c883822c06bc258a4d61dba4b407353d7081950f")
 optdepends=("libutempter-dev: Record user sessions to utmp and wtmp files")
 maintainer=("Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>")
 
 build() {
   cd "${pkgname}~${pkgver}"
-  # Check if `libutempter-dev` ( optdepends ) is installed
-  if dpkg-query -W libutempter-dev > /dev/null 2>&1; then
-    ./configure --enable-utempter
-  else
-    ./configure
-  fi
+  ./configure
   make -j"${NCPU}"
 }
 
