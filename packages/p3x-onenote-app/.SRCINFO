@@ -1,6 +1,6 @@
 pkgbase = p3x-onenote-app
 	gives = p3x-onenote
-	pkgver = 2024.10.117
+	pkgver = 2025.4.124
 	pkgdesc = Independent browser window for OneNote online
 	url = https://www.corifeus.com/onenote
 	arch = amd64
@@ -8,9 +8,9 @@ pkgbase = p3x-onenote-app
 	depends = liblocale-gettext-perl
 	incompatible = debian:sid
 	maintainer = harrietobrien <harrietobrien@protonmail.com>
-	source = P3X-OneNote-2024.10.117.AppImage::https://github.com/patrikx3/onenote/releases/download/v2024.10.117/P3X-OneNote-2024.10.117.AppImage
+	source = P3X-OneNote-2025.4.124.AppImage::https://github.com/patrikx3/onenote/releases/download/v2025.4.124/P3X-OneNote-2025.4.124.AppImage
 	source = p3x-onenote.desktop
 	source = onenote.svg
-	sha256sums = f95c4dc529f86b00a15997ec2024a2ca1a139048d2cf816dfd6ade721d5d635e
+	sha256sums = 0360c6a0c8fc113dad5cdfaeaa3c30330087ed999ea9954f2b1dc21dd725df82
 
 pkgname = p3x-onenote-app
