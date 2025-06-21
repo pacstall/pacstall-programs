@@ -10,7 +10,7 @@ pkgbase = tixati-deb
 	replaces = tixati
 	maintainer = heyzsh <haidarzsh@gmail.com>
 	repology = project: tixati
-	source = https://download2.tixati.com/download/tixati_3.35-1_amd64.deb
-	sha256sums = ddfdad6c851470fcbc69f0fb5484919667752a99b0f06c30059ad0d8e7a59bc5
+	source = https://download.tixati.com/tixati_3.35-1_amd64.deb
+	sha256sums = adea1c8ea43eeeaee845d9caef335fb7b91942c17a0be347007999420c70d1ef
 
 pkgname = tixati-deb
