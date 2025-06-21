@@ -1,12 +1,12 @@
 pkgbase = gitfiend-deb
 	gives = gitfiend
-	pkgver = 0.42.1
+	pkgver = 0.45.3
 	pkgdesc = A Git client designed for humans
 	arch = amd64
 	breaks = gitfiend-app
 	replaces = gitfiend
 	repology = project: gitfiend
-	source = https://gitfiend.com/resources/GitFiend_0.42.1_amd64.deb
-	sha256sums = 6d93f6ebc5c7764c423e66af215c12ffcdc84d1aebf61b106605c0d7fb4f611c
+	source = https://gitfiend.com/resources/GitFiend_0.45.3_amd64.deb
+	sha256sums = ad3d40ba86badb361f64082b0969a58700fc5960b8bd5a60a781d95b6e1e139e
 
 pkgname = gitfiend-deb
