@@ -1,14 +1,14 @@
 pkgbase = watchexec-bin
-	pkgver = 1.25.1
+	pkgver = 2.3.2
 	pkgdesc = Executes commands in response to file modifications
 	url = https://watchexec.github.io/
 	arch = amd64
 	arch = arm64
 	maintainer = Andrew Barchuk <andrew@raindev.io>
 	repology = project: watchexec
-	source_amd64 = @watchexec-bin~1.25.1::https://github.com/watchexec/watchexec/releases/download/v1.25.1/watchexec-1.25.1-x86_64-unknown-linux-gnu.tar.xz
-	sha256sums_amd64 = 16c92ce0b13f4b0082b8a8362ac099fa5ae417780255990302e4865c2a8cd1bc
-	source_arm64 = @watchexec-bin~1.25.1::https://github.com/watchexec/watchexec/releases/download/v1.25.1/watchexec-1.25.1-aarch64-unknown-linux-gnu.tar.xz
-	sha256sums_arm64 = a8ccd6770d0c0cceace33e5c668f236aaa5292bf77711a6afaefceb0bf8b87c7
+	source_amd64 = @watchexec-bin~2.3.2::https://github.com/watchexec/watchexec/releases/download/v2.3.2/watchexec-2.3.2-x86_64-unknown-linux-gnu.tar.xz
+	sha256sums_amd64 = 21ac2d0825225e14f7d7c1de0b33d55f657c4bd64bdab6908d773396283c75ba
+	source_arm64 = @watchexec-bin~2.3.2::https://github.com/watchexec/watchexec/releases/download/v2.3.2/watchexec-2.3.2-aarch64-unknown-linux-gnu.tar.xz
+	sha256sums_arm64 = ee76f5707e6cedf91f5d3d35ce9ff9391b1c1bbbccfa946c57a1a29828276490
 
 pkgname = watchexec-bin
