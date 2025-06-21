@@ -1,6 +1,6 @@
 pkgbase = openvr
 	gives = libopenvr-dev
-	pkgver = 2.5.1
+	pkgver = 2.12.1
 	pkgdesc = API and runtime that allows access to VR hardware from multiple vendors
 	url = https://github.com/ValveSoftware/openvr
 	arch = amd64
@@ -13,10 +13,10 @@ pkgbase = openvr
 	provides = libopenvr-apt1t64
 	license = BSD-3-Clause
 	maintainer = xdavius <xdavius@github.com>
-	source = https://github.com/ValveSoftware/openvr/archive/v2.5.1/openvr-2.5.1.tar.gz
+	source = https://github.com/ValveSoftware/openvr/archive/v2.12.1/openvr-2.12.1.tar.gz
 	source = openvr-fix-vsprintf_s.patch::https://github.com/ValveSoftware/openvr/pull/594.patch
 	source = openvr-use-system-jsoncpp-1.23.7.patch::https://github.com/ValveSoftware/openvr/pull/1716.patch
-	sha256sums = 54f654fce001682d8ac608f544a6c41e03a672b005c1deca3579fa36480a537c
+	sha256sums = 71a97dc98f7512f1d1a19f56058c536910989b4d047eceff57977ad09c52740f
 	sha256sums = 1d954060f27b16485e398654d6730105abc251d372da03fbba38496db17885ae
 	sha256sums = f79c6edf25efa1aac42b60db48d72f4e3c771039c9cd0fc0870fd51f17712229
 
