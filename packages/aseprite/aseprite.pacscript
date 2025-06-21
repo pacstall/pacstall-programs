@@ -3,19 +3,19 @@
 # Credit to the listed maintainers & contributors
 
 pkgname="aseprite"
-pkgver="1.3.9"
+pkgver="1.3.14"
+_pkgrel="2"
 pkgdesc="Animated sprite editor & pixel art tool"
 license=("custom:EULA")
 repology=("project: ${pkgname}")
 url="https://www.aseprite.org/"
 makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "libx11-dev" "libxcursor-dev" "libxi-dev" "ninja-build")
 arch=("amd64")
-maintainer=()
 skiaver="m102-861e4743af"
 source=(
-  "${pkgname}-${pkgver}.zip::https://github.com/${pkgname}/${pkgname}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
-  "skia-${skiaver}.zip::https://github.com/${pkgname}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
-  "https://github.com/${pkgname}/strings.git"
+  "${pkgname}-${pkgver}.zip::https://github.com/aseprite/aseprite/releases/download/v${pkgver}/Aseprite-v${pkgver}.${_pkgrel}-Source.zip"
+  "skia-${skiaver}.zip::https://github.com/aseprite/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
+  "https://github.com/aseprite/strings.git"
 )
 sha256sums=(
   "672c8ddb12d4c180f6c27b33ec4b0faefe5df321c7d40c03cb62ad3182e584ff"
@@ -94,5 +94,5 @@ package() {
 
 pre_install() {
   fancy_message warn "Aseprite is non-free software. Distributing the binary files produced by this script is forbidden. For more information, read Aseprite's EULA:
-  https://github.com/${pkgname}/${pkgname}/blob/main/EULA.txt"
+  https://github.com/aseprite/aseprite/blob/main/EULA.txt"
 }
