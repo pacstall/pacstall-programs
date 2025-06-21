@@ -1385,15 +1385,15 @@ pkgname = chezmoi-deb
 ---
 pkgbase = chwp-deb
 	gives = chwp
-	pkgver = 1.239.36
+	pkgver = 1.239.37
 	pkgdesc = Changes the wallpaper from the command line
 	arch = amd64
 	breaks = chwp
 	replaces = chwp
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: chwp
-	source = https://github.com/RouHim/chwp/releases/download/1.239.36/chwp-x86-64.deb
-	sha256sums = cdd5795788684abc0c177f688b3f96f1f3fbdfda048882656b74d58ab5e43f42
+	source = https://github.com/RouHim/chwp/releases/download/1.239.37/chwp-x86-64.deb
+	sha256sums = ed5d42024d7578f67822caac98f78f9559777f9239fd939435598942efc9b88f
 
 pkgname = chwp-deb
 ---
