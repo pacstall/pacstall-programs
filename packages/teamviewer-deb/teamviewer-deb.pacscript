@@ -8,8 +8,7 @@ depends=("libqt5x11extras5" "libqt5quickcontrols2-5" "libqt5webengine5" "libqt5s
 arch=('amd64' 'arm64')
 sha256sums_amd64=("c900f68851451e547abd7ff9bc4b41aa620eb465dae1e1db13bbfb31d5e005db")
 sha256sums_arm64=("5aa0b8ff97a0ab7a4781be2ff043debc90c33666ac86e42bf95050b852ddafb4")
-
 source=("https://download.teamviewer.com/download/linux/teamviewer_${CARCH}.deb")
 pkgdesc="Application for remote desktop sharing and online meetings"
-license="custom"
+license=("custom:custom")
 maintainer=("heyzsh <haidarzsh@gmail.com>")
