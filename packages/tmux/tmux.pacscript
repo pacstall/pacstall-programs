@@ -3,7 +3,7 @@ arch=("any")
 arch=("any")
 pkgver="3.5"
 source=("@${pkgname}~${pkgver}::https://github.com/tmux/tmux/releases/download/${pkgver}/tmux-${pkgver}.tar.gz")
-makedepends=("gcc" "make" "pkg-config" "bison" "libncurses-dev" "libevent-dev")
+makedepends=("gcc" "make" "pkg-config" "bison" "libncurses-dev" "libevent-dev" "libutempter-dev")
 breaks=("${pkgname}-git" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
 replaces=("tmux")
 pkgdesc="A terminal multiplexer"
@@ -13,12 +13,7 @@ maintainer=("Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>")
 
 build() {
   cd "${pkgname}~${pkgver}"
-  # Check if `libutempter-dev` ( optdepends ) is installed
-  if dpkg-query -W libutempter-dev > /dev/null 2>&1; then
-    ./configure --enable-utempter
-  else
-    ./configure
-  fi
+  ./configure
   make -j"${NCPU}"
 }
 

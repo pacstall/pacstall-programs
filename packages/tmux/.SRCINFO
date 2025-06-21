@@ -8,6 +8,7 @@ pkgbase = tmux
 	makedepends = bison
 	makedepends = libncurses-dev
 	makedepends = libevent-dev
+	makedepends = libutempter-dev
 	optdepends = libutempter-dev: Record user sessions to utmp and wtmp files
 	breaks = tmux-git
 	breaks = tmux-bin
