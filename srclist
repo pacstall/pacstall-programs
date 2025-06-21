@@ -5393,13 +5393,13 @@ pkgname = imwheel-exclude-patched-git
 ---
 pkgbase = insomnia-deb
 	gives = insomnia
-	pkgver = 11.1.0
+	pkgver = 11.2.0
 	pkgdesc = The open-source, cross-platform API client for GraphQL, REST, WebSockets and gRPC
 	url = https://github.com/Kong/insomnia/
 	arch = amd64
 	maintainer = Diegiwg <diegiwg@gmail.com>
-	source = https://github.com/Kong/insomnia/releases/download/core%4011.1.0/Insomnia.Core-11.1.0.deb
-	sha256sums = e0797a3707ca729fd326de6914485b28713ada7430bed76ec2cae421471a7418
+	source = https://github.com/Kong/insomnia/releases/download/core%4011.2.0/Insomnia.Core-11.2.0.deb
+	sha256sums = d5207e794f276894f84ae5f0eba5cbbf77d196df096dce895d5d4d61635a615a
 
 pkgname = insomnia-deb
 ---
