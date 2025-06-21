@@ -2799,7 +2799,7 @@ pkgbase = exercism-cli-bin
 pkgname = exercism-cli-bin
 ---
 pkgbase = exiftool
-	pkgver = 13.03
+	pkgver = 13.31
 	pkgdesc = Platform-independent Perl library for reading and writing EXIF data
 	url = https://exiftool.org
 	arch = any
@@ -2807,8 +2807,8 @@ pkgbase = exiftool
 	license = GPL-2.0-or-later
 	maintainer = Ishaque <muhammadishaque812@gmail.com>
 	repology = project: exiftool
-	source = https://exiftool.org/Image-ExifTool-13.03.tar.gz
-	sha256sums = 0912e1315318889574f355e5832340632c556a14d30711e94d801085ad0a8e4f
+	source = https://exiftool.org/Image-ExifTool-13.31.tar.gz
+	sha256sums = 3894786f28ef6b625646bf26f033938c104216baefdf94d0178f46a16c5ad5c0
 
 pkgname = exiftool
 ---
