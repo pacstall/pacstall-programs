@@ -3,26 +3,20 @@ arch=("any")
 pkgver='0.4.51'
 pkgdesc='Utility to create modern online books from Markdown files'
 url='https://rust-lang.github.io/mdBook/'
-maintainer=()
 repology=("project: ${pkgname}")
 makedepends=('cargo')
 source=("https://github.com/rust-lang/mdBook/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=('de5ee916157784e32451b81de01cc4c669b73e651e2db00c7b1809254dbb6259')
-external_connection='true'
-
-prepare() {
-  cd "mdBook-${pkgver}"
-  CARGO_HOME=crates cargo fetch --locked
-}
+external_connection=true
 
 build() {
   cd "mdBook-${pkgver}"
-  CARGO_HOME=crates cargo build -j"${NCPU}" --release --offline
+  cargo build -j"${NCPU}" --release --locked
 }
 
 check() {
   cd "mdBook-${pkgver}"
-  CARGO_HOME=crates cargo test --offline
+  cargo test --locked
 }
 
 package() {
