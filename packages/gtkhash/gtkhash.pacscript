@@ -19,11 +19,7 @@ makedepends=(build-essential
   libxml2-utils
   at-spi2-core
   xvfb
-  gnome-icon-theme
-  libnautilus-extension-dev
-  libnemo-extension-dev
-  libcaja-extension-dev
-  libthunarx-3-dev)
+  gnome-icon-theme)
 replaces=("${pkgname}")
 pkgdesc="Desktop utility for computing message digests or checksums"
 sha256sums=("7102a192eca3e82ed67a8252a6850440e50c1dbea7c6364bda154ec80f8ff005")
@@ -38,10 +34,6 @@ build() {
     --enable-nettle
     --enable-libcrypto
     --enable-linux-crypto
-    --enable-nautilus
-    --enable-nemo
-    --enable-caja
-    --enable-thunar
     --disable-dependency-tracking
   )
 
