@@ -26,7 +26,7 @@ makedepends=("python3-docutils"
   "libc6-dev")
 url="https://dri.freedesktop.org/"
 source=("https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-${pkgver}/drm-libdrm-${pkgver}.tar.gz")
-sha256sums=("2535a507232e5774d39f64e206f20ef7f07bcc32928cc578124fd9cc3d335535")
+sha256sums=("dd3e86a9fae99322d6430b28397f8e03ac4fb8deeed9a6e214bd5ced86db68c6")
 maintainer=("Oren Klopfer <oren@taumoda.com>" "xdavius <xdavius@github.com>")
 
 build() {
