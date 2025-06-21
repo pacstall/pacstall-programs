@@ -7,7 +7,7 @@ license=("LGPL-3.0-or-later")
 depends=("python3-gi")
 makedepends=("meson")
 source=("https://gitlab.gnome.org/jwestman/blueprint-compiler/-/archive/v${pkgver}/blueprint-compiler-v${pkgver}.tar.gz")
-sha256sums=('a4950c16feab4b70ef852ec24b4645b41e01edfd3265bea56b95e340281bbd18')
+sha256sums=('01feb8263fe7a450b0a9fed0fd54cf88947aaf00f86cc7da345f8b39a0e7bd30')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
