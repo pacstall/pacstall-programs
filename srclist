@@ -12847,14 +12847,14 @@ pkgname = sublime-merge-deb
 ---
 pkgbase = sublime-text-deb
 	gives = sublime-text
-	pkgver = 4192
+	pkgver = 4200
 	pkgdesc = Sublime text light text editor for programmers
 	arch = amd64
 	replaces = sublime-text
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: sublime-text
-	source = https://download.sublimetext.com/sublime-text_build-4192_amd64.deb
-	sha256sums = c13284ffdf52054abad9fa48a35b75ac140f19293275738a1c11a736a1197951
+	source = https://download.sublimetext.com/sublime-text_build-4200_amd64.deb
+	sha256sums = 79a687ffd749004eb4360243dc2133a68bbc8243f890ff3f8f5b00835870c7ea
 
 pkgname = sublime-text-deb
 ---
