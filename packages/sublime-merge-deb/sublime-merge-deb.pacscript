@@ -1,10 +1,10 @@
 pkgname="sublime-merge-deb"
 gives="sublime-merge"
 replaces=("${gives}")
-pkgver="2102"
+pkgver="2108"
 source=("https://download.sublimetext.com/${gives}_build-${pkgver}_amd64.deb")
 pkgdesc="Sublime text like Git GUI Client"
-sha256sums=("adbf53c6c95c9f6156463bb03ceeb88e231ce9aa990db01322fc0418ae25e55e")
+sha256sums=("57e88ecf5eeb7f408d7c312a7f8799d8fe585ea213cad5cc39595687e0ba5caf")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: ${gives}")
