@@ -1,6 +1,5 @@
 pkgbase = ttf-fira-sans
-	gives = ttf-fira-sans
-	pkgver = 4.202
+	pkgver = 4.301
 	pkgdesc = Mozilla's typeface used in Firefox OS
 	arch = all
 	breaks = ttf-fira-sans
@@ -8,7 +7,7 @@ pkgbase = ttf-fira-sans
 	license = OFL-1.1
 	maintainer = heyzsh <haidarzsh@gmail.com>
 	repology = project: font-fira
-	source = https://fonts.google.com/download?family=Fira%20Sans
-	sha256sums = 5a3059fbde784f57a58ffb55e15660ae6022c724ecbc468f58c0aaa2311c05f9
+	source = https://github.com/bBoxType/FiraSans/archive/f54eeb3124c63fe9b5bcd36d09d1cd46788cd15e.tar.gz
+	sha256sums = e8cdc4872b41d10b04b1ba9a3ccd7217e79f3eb33ca80416fc6ca53c47860331
 
 pkgname = ttf-fira-sans
