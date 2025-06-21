@@ -3,8 +3,7 @@
 # Credit to the listed maintainers & contributors
 
 pkgname="aseprite"
-pkgver="1.3.14"
-_pkgrel="2"
+pkgver="1.3.14.2"
 pkgdesc="Animated sprite editor & pixel art tool"
 license=("custom:EULA")
 repology=("project: ${pkgname}")
@@ -13,7 +12,7 @@ makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "
 arch=("amd64")
 skiaver="m102-861e4743af"
 source=(
-  "${pkgname}-${pkgver}.zip::https://github.com/aseprite/aseprite/releases/download/v${pkgver}/Aseprite-v${pkgver}.${_pkgrel}-Source.zip"
+  "${pkgname}-${pkgver}.zip::https://github.com/aseprite/aseprite/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
   "skia-${skiaver}.zip::https://github.com/aseprite/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
   "https://github.com/aseprite/strings.git"
 )
