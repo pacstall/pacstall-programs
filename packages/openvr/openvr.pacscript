@@ -2,7 +2,7 @@ pkgname="openvr"
 gives="libopenvr-dev"
 provides=("libopenvr-api1" "libopenvr-apt1t64")
 replace=("libopenvr-dev" "libopenvr-api1" "libopenvr-apt1t64")
-pkgver="2.5.1"
+pkgver="2.12.1"
 pkgdesc="API and runtime that allows access to VR hardware from multiple vendors"
 arch=("amd64")
 url='https://github.com/ValveSoftware/openvr'
@@ -12,7 +12,7 @@ makedepends=("cmake" "libjsoncpp-dev" "libgl-dev")
 source=("${url}/archive/v${pkgver}/${pkgname}-${pkgver}.tar.gz"
   "openvr-fix-vsprintf_s.patch::${url}/pull/594.patch"
   "openvr-use-system-jsoncpp-1.23.7.patch::${url}/pull/1716.patch")
-sha256sums=('54f654fce001682d8ac608f544a6c41e03a672b005c1deca3579fa36480a537c'
+sha256sums=('71a97dc98f7512f1d1a19f56058c536910989b4d047eceff57977ad09c52740f'
   '1d954060f27b16485e398654d6730105abc251d372da03fbba38496db17885ae'
   'f79c6edf25efa1aac42b60db48d72f4e3c771039c9cd0fc0870fd51f17712229')
 maintainer=("xdavius <xdavius@github.com>")
