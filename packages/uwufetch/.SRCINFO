@@ -1,14 +1,15 @@
 pkgbase = uwufetch
-	pkgver = 1.7
-	pkgdesc = A meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace.
+	pkgver = 2.1
+	pkgdesc = Meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace
 	arch = any
 	makedepends = gcc
 	optdepends = viu: image preview
 	optdepends = lshw: hardware info
 	breaks = uwufetch-git
 	breaks = uwufetch-bin
+	license = GPL-3.0
 	maintainer = wizard-28 <wiz28@pm.me>
-	source = @uwufetch~1.7::https://github.com/TheDarkBug/uwufetch/archive/refs/tags/1.7.zip
-	sha256sums = 1f2f4b17c368e4e097323afc14386b30d6c7b7aa626565ef6902ff6e37b34dab
+	source = @uwufetch~2.1::https://github.com/ad-oliviero/uwufetch/archive/refs/tags/2.1.zip
+	sha256sums = 92b1c07529aa91df990acb5a0f5ee4c8275c10d75ba305105b17f3931a5e4a8c
 
 pkgname = uwufetch
