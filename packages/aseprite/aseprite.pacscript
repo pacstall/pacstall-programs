@@ -18,7 +18,7 @@ source=(
 )
 sha256sums=(
   "191ca47bc1b483a529ac9dc4826f53b9363bdd46feaa1f3638acac20096fed40"
-  "a327e89b244f24cecaa34eb37544bae00d447b96c583d26ed29d6a3ad2e8a8b8"
+  "826ac1b3d78ae469a6617859ff95a30f92f75036f883946de6ae2e005a0ce3f4"
   "SKIP"
 )
 noextract=(
