@@ -3,23 +3,22 @@
 # Credit to the listed maintainers & contributors
 
 pkgname="aseprite"
-pkgver="1.3.9"
+pkgver="1.3.14.2"
 pkgdesc="Animated sprite editor & pixel art tool"
 license=("custom:EULA")
 repology=("project: ${pkgname}")
 url="https://www.aseprite.org/"
-makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "libx11-dev" "libxcursor-dev" "libxi-dev" "ninja-build")
+makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "libx11-dev" "libxcursor-dev" "libxi-dev" "ninja-build" "libicu-dev")
 arch=("amd64")
-maintainer=()
-skiaver="m102-861e4743af"
+skiaver="m124-08a5439a6b"
 source=(
-  "${pkgname}-${pkgver}.zip::https://github.com/${pkgname}/${pkgname}/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
-  "skia-${skiaver}.zip::https://github.com/${pkgname}/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
-  "https://github.com/${pkgname}/strings.git"
+  "${pkgname}-${pkgver}.zip::https://github.com/aseprite/aseprite/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
+  "skia-${skiaver}.zip::https://github.com/aseprite/skia/releases/download/${skiaver}/Skia-Linux-Release-x64.zip"
+  "https://github.com/aseprite/strings.git"
 )
 sha256sums=(
-  "672c8ddb12d4c180f6c27b33ec4b0faefe5df321c7d40c03cb62ad3182e584ff"
-  "66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
+  "191ca47bc1b483a529ac9dc4826f53b9363bdd46feaa1f3638acac20096fed40"
+  "a327e89b244f24cecaa34eb37544bae00d447b96c583d26ed29d6a3ad2e8a8b8"
   "SKIP"
 )
 noextract=(
@@ -56,8 +55,9 @@ build() {
     -D LAF_BACKEND=skia
     -D LAF_WITH_EXAMPLES=OFF
     -D LAF_WITH_TESTS=OFF
-    -D SKIA_DIR=skia
-    -D SKIA_LIBRARY_DIR=skia/out/Release-x64
+    -D SKIA_DIR="${PWD}/skia"
+    -D SKIA_LIBRARY_DIR="${PWD}/skia/out/Release-x64"
+    -D SKIA_LIBRARY="${PWD}/skia/out/Release-x64/libskia.a"
     -G Ninja
     -W no-dev
   )
@@ -94,5 +94,5 @@ package() {
 
 pre_install() {
   fancy_message warn "Aseprite is non-free software. Distributing the binary files produced by this script is forbidden. For more information, read Aseprite's EULA:
-  https://github.com/${pkgname}/${pkgname}/blob/main/EULA.txt"
+  https://github.com/aseprite/aseprite/blob/main/EULA.txt"
 }
