@@ -1,12 +1,12 @@
 pkgname="gtkhash"
 arch=("any")
-pkgver="1.4"
+pkgver="1.5"
 source=("@${pkgname}~${pkgver}::https://github.com/tristanheaven/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz")
 makedepends=("autoconf" "automake" "libtool" "intltool" "wget")
 depends=("libgtk-3-dev" "libglib2.0-dev" "libgcrypt-dev" "nettle-dev" "libb2-dev" "openssl" "libmbedtls-dev")
 replaces=("${pkgname}")
 pkgdesc="gtkhash is a desktop utility for computing message digests or checksums."
-sha256sums=("20b57dbb8f6c6d7323f573c111a11640603a422c5f9da7b302a4981e4adc37c4")
+sha256sums=("7102a192eca3e82ed67a8252a6850440e50c1dbea7c6364bda154ec80f8ff005")
 
 build() {
   cd "${pkgname}~${pkgver}"
