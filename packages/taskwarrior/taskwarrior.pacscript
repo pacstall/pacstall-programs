@@ -15,15 +15,13 @@ external_connection=true
 build() {
   cd "${pkgname}~${pkgver}"
   cargo build -j"${NCPU}" --release --locked
-  mkdir build
-  cd build
-  cmake "../" -DCMAKE_INSTALL_PREFIX="${pkgdir}/usr"
+  cmake -DCMAKE_INSTALL_PREFIX="/usr" .
   make -j"${NCPU}"
 }
 
 package() {
   cd "${pkgname}~${pkgver}"
-  make install
+  make DESTDIR="${pkgdir}" install
 
   install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/bash/task.sh" "${pkgdir}/usr/share/bash-completion/completions/task"
   install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/fish/task.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/task.fish"
@@ -33,5 +31,5 @@ package() {
   install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/vim/syntax/taskedit.vim" "${pkgdir}/usr/share/vim/vimfiles/syntax/taskedit.vim"
   install -Dm644 "${pkgdir}/usr/share/doc/task/scripts/vim/syntax/taskrc.vim" "${pkgdir}/usr/share/vim/vimfiles/syntax/taskrc.vim"
 
-  install -Dm644 "../LICENSE" "${pkgdir}/usr/share/licenses/task/LICENSE"
+  install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/task/LICENSE"
 }
