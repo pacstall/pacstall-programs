@@ -13021,7 +13021,7 @@ pkgname = tdrop-git
 ---
 pkgbase = teams-for-linux-deb
 	gives = teams-for-linux
-	pkgver = 2.0.8
+	pkgver = 2.0.18
 	pkgdesc = Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
 	arch = amd64
 	arch = arm64
@@ -13031,10 +13031,10 @@ pkgbase = teams-for-linux-deb
 	breaks = teams-for-linux-app
 	maintainer = matusaurio <matusaurio@github.com>
 	repology = project: teams-for-linux
-	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.8/teams-for-linux_2.0.8_amd64.deb
-	sha256sums_amd64 = a59ce79a3f3ef48590131e09b82a1dfe37330d908759c6f1d8ee1aa9476e8c42
-	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.8/teams-for-linux_2.0.8_arm64.deb
-	sha256sums_arm64 = 8283a3b40177e796bf81f668ce902503b25a4ad58aa692cea948d95b078fa1d7
+	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.18/teams-for-linux_2.0.18_amd64.deb
+	sha256sums_amd64 = 1d0a9ea1b7d1bdaa0df5b25bfa80f0b318b4fb6f65a7f94c42caaf2e26b922f8
+	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.0.18/teams-for-linux_2.0.18_arm64.deb
+	sha256sums_arm64 = f9556c1369b4c239941a8daf00d5fbdf6a4357988a84991509630d0086633b9a
 
 pkgname = teams-for-linux-deb
 ---
