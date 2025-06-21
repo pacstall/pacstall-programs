@@ -11,6 +11,7 @@ pkgbase = lagrange
 	makedepends = libunistring-dev
 	makedepends = libmpg123-dev
 	makedepends = zip
+	makedepends = libharfbuzz-dev
 	license = BSD-2-Clause
 	source = @lagrange~1.18.5::https://git.skyjake.fi/gemini/lagrange/releases/download/v1.18.5/lagrange-1.18.5.tar.gz
 	sha256sums = 1dded64803eef8ff162e79025fd6db60f4a19bac5f9b804f46d79e07cbda5c65
