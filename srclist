@@ -13485,7 +13485,7 @@ pkgname = topgrade-bin
 ---
 pkgbase = topgrade-musl-bin
 	gives = topgrade
-	pkgver = 16.0.3
+	pkgver = 16.0.4
 	pkgdesc = Upgrades everything on your system
 	arch = amd64
 	breaks = topgrade
@@ -13495,8 +13495,8 @@ pkgbase = topgrade-musl-bin
 	breaks = topgrade-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: topgrade
-	source = https://github.com/topgrade-rs/topgrade/releases/download/v16.0.3/topgrade-v16.0.3-x86_64-unknown-linux-musl.tar.gz
-	sha256sums = 46eb516fe25069c34dbf2301f6c14ff40fd77ce6e23bdd3206e3f43b5e5a28de
+	source = https://github.com/topgrade-rs/topgrade/releases/download/v16.0.4/topgrade-v16.0.4-x86_64-unknown-linux-musl.tar.gz
+	sha256sums = 3fd73ff55571f2a979679cb215c966bceb961a6ae6678f8eb2ac3140dd7d41bd
 
 pkgname = topgrade-musl-bin
 ---
