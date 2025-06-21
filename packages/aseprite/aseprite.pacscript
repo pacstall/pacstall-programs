@@ -17,7 +17,7 @@ source=(
   "https://github.com/aseprite/strings.git"
 )
 sha256sums=(
-  "672c8ddb12d4c180f6c27b33ec4b0faefe5df321c7d40c03cb62ad3182e584ff"
+  "191ca47bc1b483a529ac9dc4826f53b9363bdd46feaa1f3638acac20096fed40"
   "66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
   "SKIP"
 )
