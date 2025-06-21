@@ -10,6 +10,7 @@ arch=('amd64')
 repology=("project: ${pkgname}")
 incompatible=('ubuntu:jammy' 'debian:bookworm')
 sha256sums=("32673e5552e1176f1028a6a90a4c892d2475c92d1e952ca16156dc523d14d914")
+external_connection=true
 
 prepare() {
   cd "${pkgname}~${pkgver}"
