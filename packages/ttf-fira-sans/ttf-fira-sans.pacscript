@@ -1,13 +1,13 @@
 pkgname="ttf-fira-sans"
 gives="ttf-fira-sans"
 arch=("all")
-pkgver="4.202"
+pkgver="4.301"
 breaks=("${gives}")
 repology=("project: font-fira")
 replaces=("${gives}")
 source=("https://fonts.google.com/download?family=Fira%20Sans")
 pkgdesc="Mozilla's typeface used in Firefox OS"
-sha256sums=("5a3059fbde784f57a58ffb55e15660ae6022c724ecbc468f58c0aaa2311c05f9")
+sha256sums=("9ff263238eca158b0d06f2b33028651744bfcbb635bfd27714891361286dc196")
 license="OFL-1.1"
 maintainer=("heyzsh <haidarzsh@gmail.com>")
 

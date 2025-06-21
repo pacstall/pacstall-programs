@@ -13658,7 +13658,7 @@ pkgname = truckersmp-cli
 ---
 pkgbase = ttf-fira-sans
 	gives = ttf-fira-sans
-	pkgver = 4.202
+	pkgver = 4.301
 	pkgdesc = Mozilla's typeface used in Firefox OS
 	arch = all
 	breaks = ttf-fira-sans
@@ -13667,7 +13667,7 @@ pkgbase = ttf-fira-sans
 	maintainer = heyzsh <haidarzsh@gmail.com>
 	repology = project: font-fira
 	source = https://fonts.google.com/download?family=Fira%20Sans
-	sha256sums = 5a3059fbde784f57a58ffb55e15660ae6022c724ecbc468f58c0aaa2311c05f9
+	sha256sums = 9ff263238eca158b0d06f2b33028651744bfcbb635bfd27714891361286dc196
 
 pkgname = ttf-fira-sans
 ---
