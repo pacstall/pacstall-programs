@@ -8,17 +8,17 @@ pkgdesc="Animated sprite editor & pixel art tool"
 license=("custom:EULA")
 repology=("project: ${pkgname}")
 url="https://www.aseprite.org/"
-makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "libx11-dev" "libxcursor-dev" "libxi-dev" "ninja-build")
+makedepends=("clang" "cmake" "libc++-dev" "libc++abi-dev" "libfontconfig1-dev" "libgl1-mesa-dev" "libx11-dev" "libxcursor-dev" "libxi-dev" "ninja-build" "libicu-dev")
 arch=("amd64")
-skiaver="m102-861e4743af"
+skiaver="m124-08a5439a6b"
 source=(
   "${pkgname}-${pkgver}.zip::https://github.com/aseprite/aseprite/releases/download/v${pkgver}/Aseprite-v${pkgver}-Source.zip"
-  "skia-${skiaver}.zip::https://github.com/aseprite/skia/releases/download/${skiaver}/Skia-Linux-Release-x64-libc++.zip"
+  "skia-${skiaver}.zip::https://github.com/aseprite/skia/releases/download/${skiaver}/Skia-Linux-Release-x86.zip"
   "https://github.com/aseprite/strings.git"
 )
 sha256sums=(
   "191ca47bc1b483a529ac9dc4826f53b9363bdd46feaa1f3638acac20096fed40"
-  "66293c15aa773a96121afb01f09109d3e5d455a6fd51944e0bb8bdc0829913ea"
+  "a327e89b244f24cecaa34eb37544bae00d447b96c583d26ed29d6a3ad2e8a8b8"
   "SKIP"
 )
 noextract=(
