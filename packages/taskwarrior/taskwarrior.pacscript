@@ -4,8 +4,7 @@ repology=("project: taskwarrior")
 arch=("any")
 pkgver="3.4.1"
 source=("@${pkgname}~${pkgver}::https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v${pkgver}/task-${pkgver}.tar.gz")
-makedepends=("g++" "cmake" "git")
-depends=("uuid-dev" "gnutls-dev")
+makedepends=("g++" "cmake" "git" "uuid-dev" "gnutls-dev")
 pkgdesc="Taskwarrior is a command line task list management utility with a multitude of features, developed as a portable open source project with an active and quite vast ecosystem of tools, hooks and extensions."
 sha256sums=("23eb60f73e42f16111cc3912b44ee12be6768860a2db2a9c6a47f8ac4786bac3")
 maintainer=("JonBoyleCoding <programmerfalcon@gmail.com>")
@@ -15,7 +14,7 @@ replaces=("taskwarrior")
 build() {
   cd "${pkgname}~${pkgver}"
   mkdir build
-  cd build || exit
+  cd build
   cmake "../" -DCMAKE_INSTALL_PREFIX="${pkgdir}/usr"
   make -j"${NCPU}"
 }
