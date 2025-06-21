@@ -3,7 +3,7 @@ pkgbase = onefetch-bin
 	pkgver = 2.24.0
 	pkgdesc = Git repository summary on your terminal
 	arch = amd64
-	source = @onefetch-bin~2.24.0::https://github.com/o2sh/onefetch/releases/download/2.24.0/onefetch-linux.tar.gz
+	source = https://github.com/o2sh/onefetch/releases/download/2.24.0/onefetch-linux.tar.gz
 	sha256sums = 8459d6c36cc4306dbaa7fc6daee000d8384f384f5b8b79878391a0bdc2e69c76
 
 pkgname = onefetch-bin
