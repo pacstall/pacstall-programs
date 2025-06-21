@@ -1,6 +1,6 @@
 pkgbase = slack-deb
 	gives = slack-desktop
-	pkgver = 4.41.105
+	pkgver = 4.44.65
 	pkgdesc = Slack is a new way to communicate with your team. It's faster, better organized, and more secure than email.
 	arch = amd64
 	breaks = slack-desktop
@@ -10,7 +10,7 @@ pkgbase = slack-deb
 	replaces = slack-desktop
 	maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
 	repology = project: slack
-	source = https://downloads.slack-edge.com/desktop-releases/linux/x64/4.41.105/slack-desktop-4.41.105-amd64.deb
-	sha256sums = 47696e49067a427e2db9b25157519abe1f61711c61050756d3c6b1232687803d
+	source = https://downloads.slack-edge.com/desktop-releases/linux/x64/4.44.65/slack-desktop-4.44.65-amd64.deb
+	sha256sums = ca6ce66685e5897db0b19a79275e9c244693ebaf64a6b2f12a79a2b442d5be47
 
 pkgname = slack-deb
