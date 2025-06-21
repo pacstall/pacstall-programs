@@ -8,7 +8,7 @@ pkgbase = taskwarrior
 	makedepends = git
 	makedepends = uuid-dev
 	makedepends = gnutls-dev
-	makedepends = cargo>=1.64.0
+	makedepends = cargo>=1.81.0
 	breaks = taskwarrior-app
 	breaks = taskwarrior-deb
 	breaks = taskwarrior-bin
