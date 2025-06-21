@@ -1,5 +1,5 @@
 pkgname="btrfs-assistant"
-pkgver="2.1.1"
+pkgver="2.2"
 pkgdesc="Manage BTRFS subvolumes and snapper snapshots"
 arch=('amd64' 'arm64')
 url='https://gitlab.com/btrfs-assistant/btrfs-assistant'
@@ -13,7 +13,7 @@ makedepends=('git' 'cmake' 'g++' 'fonts-noto' 'qt6-tools-dev' 'qt6-svg-dev' 'lib
 incompatible=('debian:buster' 'debian:bullseye' 'ubuntu:bionic' 'ubuntu:focal')
 backup=(etc/btrfs-assistant.conf)
 source=("${pkgname}-${pkgver}.tar.gz::${url}/-/archive/${pkgver}/${pkgname}-${pkgver}.tar.gz")
-sha256sums=('cabc3824651606bd37db1809d7d2eeeaa724180d138613bff3490362751b9594')
+sha256sums=('cf478b7a5673a456b3aa09df2a875aae8a023511a14ef901970666b93c28ebb9')
 maintainer=("Eric Renfro <psi-jack@linux-help.org")
 
 build() {
