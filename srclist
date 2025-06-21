@@ -2475,7 +2475,7 @@ pkgname = dunst
 ---
 pkgbase = dust-bin
 	gives = dust
-	pkgver = 0.8.6
+	pkgver = 1.2.1
 	pkgdesc = A more intuitive version of du in rust
 	arch = amd64
 	breaks = dust
@@ -2484,8 +2484,8 @@ pkgbase = dust-bin
 	breaks = dust-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: du-dust
-	source = @dust-bin~0.8.6::https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-x86_64-unknown-linux-musl.tar.gz
-	sha256sums = 06e9bcac22ba29e74395dde046cfd5b260cf6fabab48e1ed3dfc017b4e8bada7
+	source = @dust-bin~1.2.1::https://github.com/bootandy/dust/releases/download/v1.2.1/dust-v1.2.1-x86_64-unknown-linux-musl.tar.gz
+	sha256sums = 15716b5c0df538f30025d2db7c509fc6d5540f4ecc1eaf555e0c639c67ed7abf
 
 pkgname = dust-bin
 ---
