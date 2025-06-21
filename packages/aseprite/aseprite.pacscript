@@ -55,8 +55,9 @@ build() {
     -D LAF_BACKEND=skia
     -D LAF_WITH_EXAMPLES=OFF
     -D LAF_WITH_TESTS=OFF
-    -D SKIA_DIR=skia
-    -D SKIA_LIBRARY_DIR=skia/out/Release-x64
+    -D SKIA_DIR="${PWD}/skia"
+    -D SKIA_LIBRARY_DIR="${PWD}/skia/out/Release-x86"
+    -D SKIA_LIBRARY="${PWD}/skia/out/Release-x86/libskia.a"
     -G Ninja
     -W no-dev
   )
