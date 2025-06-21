@@ -14586,7 +14586,7 @@ pkgbase = warp
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: warp-share-files
 	source = @warp~0.9.2::https://gitlab.gnome.org/World/warp/-/archive/v0.9.2/warp-v0.9.2.tar.gz
-	sha256sums = 0eb3ff44e0b4dbb7969841e22f9e5b4dd516f284c6f28eaa4d9753dc64b37f22
+	sha256sums = accacbdd3ab504fb0eac0da84292f6dce7282d200d46392d9d86c29da3a2d04d
 
 pkgname = warp
 ---
