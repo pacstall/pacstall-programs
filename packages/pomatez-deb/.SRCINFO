@@ -1,6 +1,6 @@
 pkgbase = pomatez-deb
 	gives = pomatez
-	pkgver = 1.6.4
+	pkgver = 1.8.0
 	pkgdesc = Stay Focused. Take a Break.
 	arch = amd64
 	depends = libgtk-3-0
@@ -15,7 +15,7 @@ pkgbase = pomatez-deb
 	depends = libsecret-1-0
 	replaces = pomatez
 	repology = project: pomatez
-	source = https://github.com/roldanjr/pomatez/releases/download/v1.6.4/Pomatez-v1.6.4-linux-amd64.deb
-	sha256sums = ae0572ff1816463dcca1d7e2a0bde7ba3b06eebfde5e374b9b2eb34ca4d37ae7
+	source = https://github.com/roldanjr/pomatez/releases/download/v1.8.0/Pomatez-v1.8.0-linux-amd64.deb
+	sha256sums = ace30682ce10c2cd200bbecb6c308d72baca6766aa38fc0f99cb3ee8ca170b78
 
 pkgname = pomatez-deb

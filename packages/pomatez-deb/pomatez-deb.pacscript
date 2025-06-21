@@ -1,10 +1,10 @@
 pkgname="pomatez-deb"
 repology=("project: pomatez")
 gives="pomatez"
-pkgver="1.6.4"
+pkgver="1.8.0"
 source=("https://github.com/roldanjr/${gives}/releases/download/v${pkgver}/Pomatez-v${pkgver}-linux-amd64.deb")
 arch=("amd64")
 depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libappindicator3-1" "libsecret-1-0")
 replaces=("pomatez")
 pkgdesc="Stay Focused. Take a Break."
-sha256sums=("ae0572ff1816463dcca1d7e2a0bde7ba3b06eebfde5e374b9b2eb34ca4d37ae7")
+sha256sums=("ace30682ce10c2cd200bbecb6c308d72baca6766aa38fc0f99cb3ee8ca170b78")
