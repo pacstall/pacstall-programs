@@ -1,5 +1,5 @@
 pkgbase = gnucash
-	pkgver = 5.10
+	pkgver = 5.11
 	pkgdesc = Personal and small-business financial-accounting application
 	url = http://www.gnucash.org
 	arch = amd64
@@ -29,7 +29,7 @@ pkgbase = gnucash
 	license = GPL-2.0-or-later
 	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
 	repology = project: gnucash
-	source = https://github.com/Gnucash/gnucash/releases/download/5.10/gnucash-5.10.tar.gz
-	sha256sums = 7370fa0f56b574ff459745b6154ca02076e4f2ef97d2907c8721605225b80524
+	source = https://github.com/Gnucash/gnucash/releases/download/5.11/gnucash-5.11.tar.gz
+	sha256sums = a5d3a12991cff287267f6896d70bd8b3fe7030fb552b1d18067300d0ed7f8a2f
 
 pkgname = gnucash

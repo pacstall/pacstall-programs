@@ -2,10 +2,10 @@ pkgname="onnxruntime-gpu-bin"
 gives="onnxruntime-gpu"
 repology=("project: onnxruntime")
 arch=("amd64")
-pkgver="1.17.1"
+pkgver="1.22.0"
 source=("@${pkgname}~${pkgver}::https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-gpu-${pkgver}.tgz")
 pkgdesc="Cross-platform inference and training machine-learning accelerator with gpu support"
-sha256sums=("613c53745ea4960ed368f6b3ab673558bb8561c84a8fa781b4ea7fb4a4340be4")
+sha256sums=("2a19dbfa403672ec27378c3d40a68f793ac7a6327712cd0e8240a86be2b10c55")
 maintainer=("Zahrun <Zahrun@github.com>")
 replaces=("${gives}-1-7-0-bin" "${gives}" "${gives}-bin")
 

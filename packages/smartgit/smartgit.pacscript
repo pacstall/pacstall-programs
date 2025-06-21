@@ -1,6 +1,6 @@
 pkgname="smartgit"
 arch=("any")
-pkgver="22.1.7"
+pkgver="24.1.3"
 source=("@${pkgname}~${pkgver}::https://www.syntevo.com/downloads/smartgit/smartgit-linux-${pkgver//./_}.tar.gz")
 depends=("git" "libgtk-3-0" "libcurl4")
 pkgdesc="Graphical Git client with support for GitHub, Bitbucket and GitLab"

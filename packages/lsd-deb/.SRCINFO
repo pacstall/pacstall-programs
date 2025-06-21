@@ -1,17 +1,17 @@
 pkgbase = lsd-deb
 	gives = lsd
-	pkgver = 1.0.0
+	pkgver = 1.1.5
 	pkgdesc = The next gen ls command
 	arch = amd64
 	arch = arm64
 	arch = i386
 	maintainer = KwonNam Son <kwon37xi@gmail.com>
 	repology = project: lsd
-	source_amd64 = https://github.com/lsd-rs/lsd/releases/download/v1.0.0/lsd_1.0.0_amd64.deb
-	sha256sums_amd64 = 488b098e9cc4bb193c10d3a9abe8b06282099ee73a3e9f7f1febd19a9d9b89f0
-	source_arm64 = https://github.com/lsd-rs/lsd/releases/download/v1.0.0/lsd_1.0.0_arm64.deb
-	sha256sums_arm64 = 4a0e6931823869b401a7ef3dae26e3c027aaee3c42bd62129ee2c6a93489412d
-	source_i386 = https://github.com/lsd-rs/lsd/releases/download/v1.0.0/lsd_1.0.0_i686.deb
-	sha256sums_i386 = 3a9d7193f90cce0884edb6f1c2230ec5cf942fd122e75691fc32cf3e8f728dcb
+	source_amd64 = https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd_1.1.5_amd64.deb
+	sha256sums_amd64 = a4d003799509a2a1c04c349876b7890e6b48f811e2ecc206d2c400d43c345474
+	source_arm64 = https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd_1.1.5_arm64.deb
+	sha256sums_arm64 = e39a7a0ffc4cc1f857a2f31aeb2fc7c5f6180ac8e37d102f885cbced7afa0f21
+	source_i386 = https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd_1.1.5_i686.deb
+	sha256sums_i386 = 1e8391664250599ca57a84ae1afc257544e562cdcc98d4385d2db575b751c3c6
 
 pkgname = lsd-deb

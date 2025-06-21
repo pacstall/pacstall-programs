@@ -1,6 +1,6 @@
 pkgbase = tela-circle-icon-theme
 	gives = tela-circle-icon-theme
-	pkgver = 2023-06-25
+	pkgver = 2025-02-10
 	pkgdesc = A flat, colorful icon theme
 	arch = any
 	depends = gtk-update-icon-cache
@@ -9,7 +9,7 @@ pkgbase = tela-circle-icon-theme
 	maintainer = Herisson <spaceguybox@outlook.com>
 	repology = project: tela-circle-icon-theme
 	repology = repo: aur
-	source = @tela-circle-icon-theme~2023-06-25::https://github.com/vinceliuice/Tela-circle-icon-theme/archive/refs/tags/2023-06-25.zip
-	sha256sums = 9caaf41608a565a82f1057391d3ac7a4a1e276d9df6fc56367b202ffb8484b48
+	source = @tela-circle-icon-theme~2025-02-10::https://github.com/vinceliuice/Tela-circle-icon-theme/archive/refs/tags/2025-02-10.zip
+	sha256sums = 96728dd1b173e60602d3ffc7679ceffbcde1dbb7503c46b4d09c3ba5e65ee8bc
 
 pkgname = tela-circle-icon-theme

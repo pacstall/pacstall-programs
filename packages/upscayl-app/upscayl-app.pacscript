@@ -1,7 +1,7 @@
 pkgname="upscayl-app"
 gives="upscayl"
 arch=("amd64")
-pkgver="2.5.5"
+pkgver="2.15.0"
 pkgdesc="Free and Open Source AI Image Upscaler for Linux, MacOS and Windows"
 maintainer=("0x262D <pacstall@copypaste.anonaddy.me>")
 source=(
@@ -10,7 +10,7 @@ source=(
   "${gives}.svg::https://raw.githubusercontent.com/upscayl/upscayl/main/docs/logo/logo.svg"
 )
 sha256sums=(
-  "aa92f1386a6147d887bed6fc01965a32272dfe0f302e42fb0e1af89addcb65d9"
+  "6459457e589bcb99e779ea442dce608bacda33916b7019a8862b7c6252aa8229"
   "SKIP"
   "SKIP"
 )

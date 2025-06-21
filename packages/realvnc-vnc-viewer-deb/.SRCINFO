@@ -1,6 +1,6 @@
 pkgbase = realvnc-vnc-viewer-deb
 	gives = realvnc-vnc-viewer
-	pkgver = 7.6.0
+	pkgver = 7.13.1
 	pkgdesc = VNC Viewer, from RealVNC, is remote access software that enables you to securely connect to and control a remote computer
 	arch = amd64
 	breaks = realvnc-vnc-viewer
@@ -8,7 +8,7 @@ pkgbase = realvnc-vnc-viewer-deb
 	breaks = realvnc-vnc-viewer-app
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	repology = project: realvnc-vnc-viewer
-	source = https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-7.6.0-Linux-x64.deb
-	sha256sums = 394ad2c5a87f7dd7a492938b64403ff2efc94a446d505ca506dca04fdb572f17
+	source = https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-7.13.1-Linux-x64.deb
+	sha256sums = e9bc98d197ff5dc5e078a41d6077e6ba07dd4dc3257b0557f46cc17d763e31d0
 
 pkgname = realvnc-vnc-viewer-deb

@@ -3,11 +3,11 @@
 #-*- mode: sh-*-
 pkgname="clib"
 arch=("any")
-pkgver="2.8.3"
+pkgver="2.8.7"
 pkgdesc="C package manager-ish"
 source=("@${pkgname}~${pkgver}::https://github.com/clibs/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("gcc" "libcurl4-gnutls-dev")
-sha256sums=("0ad8262d13ef138a12452e67e081e3eb31a264e2040cfce09417e8f7eed4e1f5")
+sha256sums=("83d5767e363c3ed4b4271000b9ce63b6e11b6c4740df910e0074f844fb34258e")
 repology=("project: ${pkgname}")
 
 build() {
