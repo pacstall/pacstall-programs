@@ -1,11 +1,11 @@
 pkgname="lagrange"
 arch=("any")
-pkgver="1.3.4"
+pkgver="1.18.5"
 license="BSD-2"
-source=("@${pkgname}~${pkgver}::https://git.skyjake.fi/gemini/lagrange/releases/download/v1.3.4/lagrange-1.3.4.tar.gz")
+source=("@${pkgname}~${pkgver}::https://git.skyjake.fi/gemini/lagrange/releases/download/v1.18.5/lagrange-1.18.5.tar.gz")
 depends=("git" "cmake" "libsdl2-dev" "libssl-dev" "libpcre3-dev" "zlib1g-dev" "libunistring-dev" "libmpg123-dev")
 pkgdesc="A Beautiful Gemini Client"
-sha256sums=("0602bf65d79a1495818ab64717951d1c99057ed20e8c7bb621c8d5b693420b81")
+sha256sums=("1dded64803eef8ff162e79025fd6db60f4a19bac5f9b804f46d79e07cbda5c65")
 
 prepare() {
   cd "${pkgname}~${pkgver}"
