@@ -12395,7 +12395,7 @@ pkgbase = snd-hda-macbookpro
 pkgname = snd-hda-macbookpro
 ---
 pkgbase = soar
-	pkgver = 0.5.9
+	pkgver = 0.6.3
 	pkgdesc = Fast, modern package manager for Static Binaries and Portable Formats
 	url = https://soar.qaidvoid.dev/
 	arch = any
@@ -12403,8 +12403,8 @@ pkgbase = soar
 	license = MIT
 	maintainer = Elsie19 <hwengerstickel@pm.me>
 	repology = project: soar
-	source = https://github.com/pkgforge/soar/archive/refs/tags/v0.5.9.tar.gz
-	sha256sums = 70be79806608cfb8482bc9d81e2238117cd31a60734939907031c25f76ed266b
+	source = https://github.com/pkgforge/soar/archive/refs/tags/v0.6.3.tar.gz
+	sha256sums = ccb28356d524daea65ec437d956c74d05b4d0adbc4103edff0f3c68177ea2fa4
 
 pkgname = soar
 ---
