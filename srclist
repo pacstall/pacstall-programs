@@ -4438,6 +4438,25 @@ pkgbase = gradience
 
 pkgname = gradience
 ---
+pkgbase = gradualizer-git
+	gives = gradualizer
+	pkgver = 0.3.0
+	pkgdesc = Gradual type system for Erlang
+	url = https://github.com/josefs/Gradualizer
+	arch = any
+	depends = erlang
+	makedepends = git
+	makedepends = make
+	makedepends = erlang
+	conflicts = gradualizer
+	license = MIT
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: gradualizer
+	source = gradualizer::https://github.com/josefs/Gradualizer.git
+	sha256sums = SKIP
+
+pkgname = gradualizer-git
+---
 pkgbase = graillon
 	pkgver = 2.6
 	pkgdesc = Graillon is a Vocal Live Changer that brings a world of possibilities right into your DAW
