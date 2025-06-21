@@ -1,7 +1,6 @@
 pkgname="postman-bin"
 gives="postman"
-pkgver="10.18.10"
-pkgrel="2"
+pkgver="11.49.4"
 pkgdesc="Build, test, and document your APIs faster"
 arch=("amd64")
 breaks=("postman" "postman-deb" "postman-app")
@@ -13,7 +12,7 @@ source=(
   "postman.desktop::https://aur.archlinux.org/cgit/aur.git/plain/postman.desktop?h=postman-bin"
 )
 sha256sums=(
-  "08063d6f63bed6f44e5047c64517997b1f5287995bdec202e1313154744be95a"
+  "45ea0e5bf12c1794aa571a92a75ae9a1eddf54c36a3047f426bc9dd1359bd8ea"
   "SKIP"
 )
 maintainer=("Marie Piontek <marie@kaifa.ch>")
