@@ -1,10 +1,10 @@
 pkgname="fpc-src-deb"
 arch=("amd64")
-pkgver="3.2.2"
+pkgver="3.2.3"
 gives="fpc-src"
 repology=("project: fpc")
 _lazarusver="3.4"
 source=("https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%20${_lazarusver}/fpc-src_${pkgver}-210709_amd64.deb")
 pkgdesc='Delphi-like IDE for FreePascal gtk2 version'
-sha256sums=("8c9e145d8056754a9ca39ce3e52e982b8e4816124984c5f542f2a874e721ad53")
+sha256sums=("fb9461aed073f4544c24d57ca672d493d7eb266ec9fdaa8becd36cf632d739d0")
 maintainer=("xdavius <xdavius@github.com>")
