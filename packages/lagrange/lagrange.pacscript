@@ -19,7 +19,7 @@ build() {
 
 package() {
   cd "${pkgname}~${pkgver}"
-  cmake --build . --target install --prefix "${pkgdir}" -- -j "${NCPU}"
+  cmake --build . --target install -- -j"${NCPU}" DESTDIR="${pkgdir}"
 }
 
 post_install() {
