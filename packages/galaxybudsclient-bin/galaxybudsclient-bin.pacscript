@@ -6,7 +6,6 @@ repology=("project: galaxybudsclient")
 url="https://github.com/timschneeb/GalaxyBudsClient"
 arch=("amd64" "arm64" "armhf")
 depends=("bluetooth")
-maintainer=()
 
 source_amd64=("${url}/releases/download/${pkgver}/GalaxyBudsClient_Linux_64bit_Portable.bin")
 source_arm64=("${url}/releases/download/${pkgver}/GalaxyBudsClient_Linux_arm64_Portable.bin")

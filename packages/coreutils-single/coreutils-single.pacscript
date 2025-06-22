@@ -17,7 +17,6 @@ makedepends=(
   'libssl-dev'
   'texinfo'
 )
-maintainer=()
 repology=("project: ${_pkgname}")
 
 build() {

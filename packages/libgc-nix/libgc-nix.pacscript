@@ -5,7 +5,6 @@ pkgdesc='The Boehm-Demers-Weiser conservative C/C++ Garbage Collector (patched f
 url='https://www.hboehm.info/gc/'
 provides=('libgc1' 'libgc-dev')
 replaces=("${provides[@]}")
-maintainer=()
 repology=('project: boehm-gc')
 makedepends=('pkg-config')
 patchrev='7dfa2a761ef8856454d8f63eda27edb8984bdc98'
