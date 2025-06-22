@@ -1484,7 +1484,6 @@ pkgbase = cloudflare-warp-deb
 	arch = amd64
 	compatible = ubuntu:noble
 	compatible = ubuntu:jammy
-	compatible = ubuntu:focal
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: cloudflare-warp
 	source_jammy = https://pkg.cloudflareclient.com/pool/jammy/main/c/cloudflare-warp/cloudflare-warp_2025.4.943.0_amd64.deb
