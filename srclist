@@ -5873,7 +5873,7 @@ pkgbase = krita-app
 pkgname = krita-app
 ---
 pkgbase = kvantum
-	pkgver = 1.0.10
+	pkgver = 1.1.5
 	pkgdesc = SVG-based theme engine for Qt
 	arch = any
 	makedepends = g++
@@ -5886,8 +5886,8 @@ pkgbase = kvantum
 	makedepends = libxext-dev
 	breaks = qt5-style-kvantum
 	incompatible = debian:bullseye
-	source = @kvantum~1.0.10::https://github.com/tsujan/Kvantum/releases/download/V1.0.10/Kvantum-1.0.10.tar.xz
-	sha256sums = 4a070a1a6fac3d1861010aa44d34e665e4697bc64c4c5015a6448203c31f1f1f
+	source = @kvantum~1.1.5::https://github.com/tsujan/Kvantum/releases/download/V1.1.5/Kvantum-1.1.5.tar.xz
+	sha256sums = 64af08988e8579ac8078b7db38a4986daa24d490ea6d54d70c08140a7737bc53
 
 pkgname = kvantum
 ---
