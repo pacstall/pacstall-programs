@@ -1,6 +1,6 @@
 pkgname="mangohud"
 repology=("project: mangohud")
-pkgver="0.7.2"
+pkgver="0.8.1"
 source=("@${pkgname}~${pkgver}::https://github.com/flightlessmango/MangoHud/archive/refs/tags/v${pkgver}.tar.gz")
 url='https://github.com/flightlessmango/MangoHud'
 makedepends=(
@@ -18,7 +18,7 @@ incompatible=('debian:bullseye')
 provides=("mangohud:i386")
 arch=("amd64")
 pkgdesc="A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load and more"
-sha256sums=("67d2425c0cc634574d8bd8a924e0e1a2e909b47ed9b8c02029b5baffe46657fc")
+sha256sums=("e07893cbdfa89602d97eaf12709330a93dee0f599f354fb177e810340b078471")
 maintainer=("xdavius <xdavius@github.com>")
 external_connection=true
 
