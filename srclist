@@ -5556,21 +5556,6 @@ pkgbase = joplin-desktop-app
 
 pkgname = joplin-desktop-app
 ---
-pkgbase = kakoune-auto-pairs
-	pkgver = 0.0.1
-	pkgdesc = Auto-pairing of characters for kakoune
-	url = https://github.com/alexherbo2/auto-pairs.kak
-	arch = all
-	depends = kakoune
-	license = Unlicense
-	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
-	source = https://raw.githubusercontent.com/alexherbo2/auto-pairs.kak/e812ee6006b1c3d8c9afa45a0a90d28714636f81/rc/auto-pairs.kak
-	source = https://raw.githubusercontent.com/alexherbo2/auto-pairs.kak/e812ee6006b1c3d8c9afa45a0a90d28714636f81/docs/auto-pairs.asciidoc
-	sha256sums = 3db933ecc594f9124425b1857965b9fbaf9111312ac74fd667764c6a1670d273
-	sha256sums = 87793e91e537b7db215ed0b324e4e61b92e71ccbb8b1be6c62eba6609e4edcae
-
-pkgname = kakoune-auto-pairs
----
 pkgbase = kakoune
 	pkgver = 2025.06.03
 	pkgdesc = mawww's experiment for a better code editor
