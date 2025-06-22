@@ -1,5 +1,5 @@
 pkgbase = davinci-resolve
-	pkgver = 19.0.1
+	pkgver = 20.0
 	pkgdesc = Professional A/V post-production software suite from Blackmagic Design
 	url = https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion
 	arch = amd64
@@ -62,6 +62,6 @@ pkgbase = davinci-resolve
 	depends = xdg-utils
 	license = custom:commercial
 	repology = project: davinci-resolve
-	source = davinci-resolve-19.0.1.zip::https://github.com/oklopfer/debs/raw/master/empty
+	source = davinci-resolve-20.0.zip::https://github.com/oklopfer/debs/raw/master/empty
 
 pkgname = davinci-resolve
