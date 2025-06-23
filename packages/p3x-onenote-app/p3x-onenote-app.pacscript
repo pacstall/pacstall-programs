@@ -2,7 +2,7 @@ pkgname="p3x-onenote-app"
 _name="P3X-OneNote"
 gives="p3x-onenote"
 pkgver="2025.4.124"
-url="https://www.corifeus.com/onenote"
+url='https://www.corifeus.com/onenote'
 pkgdesc="Independent browser window for OneNote online"
 depends=(
   "perl-base"

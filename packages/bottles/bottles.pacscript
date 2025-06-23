@@ -2,7 +2,7 @@ pkgname="bottles"
 pkgver="51.13"
 pkgdesc="Easily manage wine and proton prefixes"
 arch=("amd64")
-url="https://github.com/bottlesdevs/Bottles"
+url='https://github.com/bottlesdevs/Bottles'
 license=("GPL-3.0-only")
 depends=(
   "cabextract"

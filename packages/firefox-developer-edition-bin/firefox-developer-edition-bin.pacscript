@@ -4,7 +4,7 @@ gives="firefox-developer-edition"
 arch=("amd64" "arm64")
 pkgdesc="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
-url="https://www.mozilla.org/en-US/firefox/developer/"
+url='https://www.mozilla.org/en-US/firefox/developer/'
 maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")
 source=(
   "https://download-installer.cdn.mozilla.net/pub/devedition/releases/${pkgver}/linux-${AARCH}/en-US/firefox-${pkgver}.tar.xz"

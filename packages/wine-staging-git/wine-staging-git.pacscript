@@ -3,7 +3,7 @@ gives="wine-staging-git"
 pkgdesc="Compatibility layer for running Windows programs - Staging branch"
 arch=("any")
 pkgver="10.6"
-url="https://www.wine-staging.com"
+url='https://www.wine-staging.com'
 license=("LGPL-2.1-or-later")
 maintainer=("xdavius <xdavius@github.com>")
 

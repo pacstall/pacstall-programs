@@ -3,7 +3,7 @@ gives="galaxybudsclient"
 pkgver="5.1.2"
 pkgdesc="Unofficial Galaxy Buds Manager for Windows and Linux"
 repology=("project: galaxybudsclient")
-url="https://github.com/timschneeb/GalaxyBudsClient"
+url='https://github.com/timschneeb/GalaxyBudsClient'
 arch=("amd64" "arm64" "armhf")
 depends=("bluetooth")
 

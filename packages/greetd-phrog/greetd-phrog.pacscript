@@ -1,7 +1,7 @@
 pkgname="greetd-phrog"
 pkgver="0.42.1"
 pkgdesc="Mobile device greeter"
-url="https://github.com/samcday/phrog"
+url='https://github.com/samcday/phrog'
 arch=('amd64' 'arm64')
 license=('GPL-3.0-only')
 depends=('phosh' 'greetd' 'libphosh-0.43-0' 'libglib2.0-bin')
