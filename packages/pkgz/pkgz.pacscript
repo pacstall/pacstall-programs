@@ -10,11 +10,11 @@ external_connection=true
 
 build() {
   # Check if shards is installed
-  command -v shards >/dev/null 2>&1 || {
+  command -v shards > /dev/null 2>&1 || {
     echo "[ERROR] 'shards' not found. Please install shards before continuing."
     exit 1
   }
-  
+
   cd "${pkgname}~${pkgver}"
   shards install
   shards build --release
