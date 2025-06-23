@@ -2784,21 +2784,6 @@ pkgbase = erlfmt
 
 pkgname = erlfmt
 ---
-pkgbase = exa-git
-	gives = exa
-	pkgver = 0.10.1
-	pkgdesc = exa is an improved file lister with more features and better defaults
-	url = https://the.exa.website/
-	arch = any
-	makedepends = cargo
-	makedepends = libgit2-dev
-	makedepends = cmake
-	makedepends = rustc
-	maintainer = Elsie19 <elsie19@pm.me>
-	source = https://github.com/ogham/exa.git
-
-pkgname = exa-git
----
 pkgbase = exercism-cli-bin
 	pkgver = 3.5.5
 	pkgdesc = Go based command line tool for exercism.org
@@ -2859,7 +2844,7 @@ pkgbase = eza-git
 	gives = eza
 	pkgver = 0.18.15
 	pkgdesc = A modern, maintained replacement for ls
-	url = https://the.exa.website/
+	url = https://eza.rocks
 	arch = any
 	makedepends = cargo
 	makedepends = libgit2-dev
