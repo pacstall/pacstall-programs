@@ -1,6 +1,6 @@
 pkgname="kanata-bin"
 gives="kanata"
-pkgver="1.8.1"
+pkgver="1.9.0"
 pkgdesc="Keyboard remapper, Improve keyboard comfort and usability with advanced customization"
 maintainer=("tranquil <tranquiltr0@proton.me>")
 arch=('x86_64')
@@ -14,7 +14,7 @@ source=(
   "https://github.com/jtroo/kanata/raw/main/LICENSE"
 )
 sha256sums=(
-  '7c123b3897af15e8520e439acde4c9be0c50ccd810a60273d84295750eec4921'
+  '440ce0f754adc32b1e9d0f47c0016c59222eaad7c1b2c86ce19f2559e4d54ffa'
   'a5681bf9b05db14d86776930017c647ad9e6e56ff6bbcfdf21e5848288dfaf1b'
 )
 
