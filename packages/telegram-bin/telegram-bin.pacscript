@@ -4,7 +4,7 @@ arch=("amd64")
 pkgver="5.15.4"
 url='https://telegram.org/'
 pkgdesc="Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed"
-source_base_url="https://github.com/telegramdesktop/tdesktop"
+source_base_url='https://github.com/telegramdesktop/tdesktop'
 source=(
   "org.telegram.desktop.desktop"
   "tg.protocol"

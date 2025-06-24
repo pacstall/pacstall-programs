@@ -8,7 +8,7 @@ source=(
 )
 source_amd64=("https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-${pkgsha}/rpcs3-v${pkgver}-${pkgsha:0:8}_linux64.AppImage")
 source_arm64=("https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-${pkgsha}/rpcs3-v${pkgver}-${pkgsha:0:8}_linux_aarch64.AppImage")
-url="https://rpcs3.net"
+url='https://rpcs3.net'
 pkgdesc="PS3 emulator/debugger"
 maintainer=("Thomas Crha <thomas@9bitbyte.com>")
 sha256sums=('SKIP')

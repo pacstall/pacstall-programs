@@ -24,7 +24,7 @@ makedepends=("python3-docutils"
   "libcairo2-dev"
   "libpciaccess-dev"
   "libc6-dev")
-url="https://dri.freedesktop.org/"
+url='https://dri.freedesktop.org/'
 source=("@drm-libdrm-${pkgver}::https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-${pkgver}/drm-libdrm-${pkgver}.tar.gz")
 sha256sums=("dd3e86a9fae99322d6430b28397f8e03ac4fb8deeed9a6e214bd5ced86db68c6")
 maintainer=("Oren Klopfer <oren@taumoda.com>" "xdavius <xdavius@github.com>")

@@ -16,6 +16,6 @@ source_bookworm="https://mega.nz/linux/repo/Debian_12/amd64/megasync_${pkgver}-4
 sha256sums_bookworm=("5a63deac549fd09daeca479fd0bbbf0cb329dc9bef1245a334a1a75535548635")
 source_bullseye="https://mega.nz/linux/repo/Debian_11/amd64/megasync_${pkgver}-4.1_amd64.deb"
 sha256sums_bullseye=("304ae53fbdbbfa5fd290c97129e93df9ef0ea5610b94a68e8a4e6d8cee8fd1b3")
-url="https://mega.nz"
+url='https://mega.io/syncing'
 pkgdesc="Easy automated syncing between your computers and your MEGA cloud drive"
 maintainer=("Arrowsome <ramtintoosi@gmail.com>")
