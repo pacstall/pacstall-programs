@@ -53,8 +53,10 @@ WantedBy=default.target' | tee "${pkgdir}/etc/systemd/system/kanata.service" > /
 (deflayer base
   @escctrl
 )' | tee "${pkgdir}/etc/kanata/config.kbd" > /dev/null
+}
 
-  echo 'to start run with the default config on startup, run:
+post_install() {
   systemctl daemon-reload
-  systemctl enable kanata.service'
+  systemctl enable kanata.service
+  systemctl start kanata.service
 }
