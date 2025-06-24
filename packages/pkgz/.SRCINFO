@@ -5,7 +5,7 @@ pkgbase = pkgz
 	makedepends = crystal
 	makedepends = gzip
 	makedepends = tar
-	maintainer = Your Name <youremail@example.com>
+	maintainer = RogueHashrate <roguehashrate@gmail.com>
 	source = @pkgz~0.1.2::https://github.com/roguehashrate/pkgz/archive/refs/tags/v0.1.2.tar.gz
 	sha256sums = e1ea57ac0bfa56c67d49d31f79179d5da5a5ed47e5ebcc136a06585ba39277bb
 
