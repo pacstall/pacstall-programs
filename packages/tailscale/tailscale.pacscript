@@ -1,7 +1,7 @@
 pkgname="tailscale"
 pkgver="1.84.2"
 source=("@${pkgname}~${pkgver}::https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz")
-url="https://tailscale.com"
+url='https://tailscale.com'
 depends=('iptables')
 makedepends=('golang-go' 'git')
 pkgdesc="Private WireGuard networks made easy"

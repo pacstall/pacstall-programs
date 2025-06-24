@@ -5,6 +5,6 @@ arch=("all")
 pkgver="3.3.0"
 source=("https://github.com/johnfactotum/${gives}/releases/download/${pkgver}/${gives}_${pkgver}_all.deb")
 sha256sums=("0639d8bf6268d03e3bb0336ec466fbec9b3e7a201a8f144e797f812dee443534")
-url="https://johnfactotum.github.io/foliate/"
+url='https://johnfactotum.github.io/foliate/'
 pkgdesc="A simple and modern GTK e-book reader"
 maintainer=("Diegiwg <diegiwg@gmail.com>")
