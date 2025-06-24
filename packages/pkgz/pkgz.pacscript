@@ -1,5 +1,5 @@
 pkgname="pkgz"
-arch=("all")
+arch = x86_64
 pkgver="0.1.2"
 source=("@${pkgname}~${pkgver}::https://github.com/roguehashrate/pkgz/archive/refs/tags/v${pkgver}.tar.gz")
 pkgdesc="Fast, extensible CLI package manager written in Crystal"
