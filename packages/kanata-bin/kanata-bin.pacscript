@@ -21,4 +21,39 @@ sha256sums=(
 package() {
   install -Dm755 "kanata" "${pkgdir}/usr/bin/kanata"
   install -Dm644 "LICENSE" "${pkgdir}/usr/share/doc/${gives}/copyright"
+  # Create and install systemd service file
+  mkdir -p "${pkgdir}/etc/systemd/system/"
+  # shellcheck disable=SC2016
+  echo '[Unit]
+Description=Kanata keyboard remapper
+Documentation=https://github.com/jtroo/kanata
+
+[Service]
+Environment=PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin
+Environment=DISPLAY=:0
+Type=simple
+ExecStart=/usr/bin/sh -c '\''exec $$(which kanata) --cfg /etc/kanata/config.kbd'\''
+Restart=no
+
+[Install]
+WantedBy=default.target' | tee "${pkgdir}/etc/systemd/system/kanata.service" > /dev/null
+
+  # Create and install default keyboard configuration
+  mkdir -p "${pkgdir}/etc/kanata/"
+  echo ';; Caps to escape/control configuration for Kanata
+
+(defsrc
+  caps
+)
+
+(defalias
+  escctrl (tap-hold 150 150 esc lctl)
+)
+
+(deflayer base
+  @escctrl
+)' | tee "${pkgdir}/etc/kanata/config.kbd" > /dev/null
+
+  systemctl daemon-reload
+  systemctl enable kanata.service
 }
