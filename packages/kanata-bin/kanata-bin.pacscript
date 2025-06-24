@@ -19,5 +19,5 @@ sha256sums=(
 
 package() {
   install -Dm755 "kanata" "${pkgdir}/usr/bin/kanata"
-  install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -Dm644 "LICENSE" "${pkgdir}/usr/share/doc/${gives}/copyright"
 }
