@@ -7,7 +7,7 @@ arch=('x86_64')
 url="https://github.com/jtroo/kanata/"
 license=('LGPL-3.0-only')
 provides=('kanata')
-depends=('gcc-libs' 'glibc')
+depends=('gcc' 'libc-bin')
 source=(
   "https://github.com/jtroo/kanata/releases/download/v${pkgver//_/-}/kanata"
   "https://github.com/jtroo/kanata/raw/main/LICENSE"
