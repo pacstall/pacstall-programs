@@ -10416,7 +10416,6 @@ pkgname = pipewire
 pkgbase = pkgz
 	pkgver = 0.1.2
 	pkgdesc = Fast, extensible CLI package manager written in Crystal
-	arch = all
 	makedepends = crystal
 	makedepends = gzip
 	makedepends = tar
