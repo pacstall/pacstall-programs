@@ -8,7 +8,7 @@ url="https://github.com/jtroo/kanata/"
 repology=("project: ${gives}")
 license=('LGPL-3.0-only')
 provides=('kanata')
-depends=('gcc' 'libc-bin')
+depends=('gcc' 'libc-bin' 'systemd')
 source=(
   "https://github.com/jtroo/kanata/releases/download/v${pkgver//_/-}/kanata"
   "https://github.com/jtroo/kanata/raw/main/LICENSE"
