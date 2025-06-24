@@ -5,6 +5,7 @@ pkgdesc="Keyboard remapper, Improve keyboard comfort and usability with advanced
 maintainer=("tranquil <tranquiltr0@proton.me>")
 arch=('x86_64')
 url="https://github.com/jtroo/kanata/"
+repology=("project: ${gives}")
 license=('LGPL-3.0-only')
 provides=('kanata')
 depends=('gcc' 'libc-bin')

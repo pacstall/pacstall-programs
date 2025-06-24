@@ -5701,6 +5701,7 @@ pkgbase = kanata-bin
 	provides = kanata
 	license = LGPL-3.0-only
 	maintainer = tranquil <tranquiltr0@proton.me>
+	repology = project: kanata
 	source = https://github.com/jtroo/kanata/releases/download/v1.8.1/kanata
 	source = https://github.com/jtroo/kanata/raw/main/LICENSE
 	sha256sums = 7c123b3897af15e8520e439acde4c9be0c50ccd810a60273d84295750eec4921
