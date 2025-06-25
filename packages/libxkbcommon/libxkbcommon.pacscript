@@ -5,6 +5,7 @@ pkgdesc='keyboard keymap compiler and support library'
 makedepends=(
   'bash-completion'
   'doxygen'
+  'bison'
   'libc6-dev'
   'graphviz'
   'libxcb1-dev'

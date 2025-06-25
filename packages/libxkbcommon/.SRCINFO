@@ -8,6 +8,7 @@ pkgbase = libxkbcommon
 	depends = libxcb-xkb-dev
 	makedepends = bash-completion
 	makedepends = doxygen
+	makedepends = bison
 	makedepends = libc6-dev
 	makedepends = graphviz
 	makedepends = libxcb1-dev
