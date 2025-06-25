@@ -1,11 +1,12 @@
 pkgbase = pkgz
-	pkgver = 0.1.2
+	pkgver = 0.1.4
 	pkgdesc = Fast, extensible CLI package manager written in Crystal
+	arch = amd64
 	makedepends = crystal
 	makedepends = gzip
 	makedepends = tar
 	maintainer = RogueHashrate <roguehashrate@gmail.com>
-	source = @pkgz~0.1.2::https://github.com/roguehashrate/pkgz/archive/refs/tags/v0.1.2.tar.gz
-	sha256sums = e1ea57ac0bfa56c67d49d31f79179d5da5a5ed47e5ebcc136a06585ba39277bb
+	source = @pkgz~0.1.4::https://github.com/roguehashrate/pkgz/archive/refs/tags/v0.1.4.tar.gz
+	sha256sums = 39305d5cb1725006de5006d8d76209087a8c49a7cfc8912497c61f62e535508d
 
 pkgname = pkgz
