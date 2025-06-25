@@ -1,7 +1,7 @@
 pkgname='libxkbcommon'
 arch=('any')
 pkgver='1.10.0'
-pkgdesc='keyboard keymap compiler and support library'
+pkgdesc='Keyboard keymap compiler and support library'
 makedepends=(
   'bash-completion'
   'doxygen'
