@@ -15,6 +15,7 @@ makedepends=(
   'wayland-protocols'
   'xkb-data'
   'x11proto-dev'
+  'libxcb-xkb-dev'
 )
 depends=(
   'libxml2'
