@@ -18,6 +18,7 @@ pkgbase = libxkbcommon
 	makedepends = wayland-protocols
 	makedepends = xkb-data
 	makedepends = x11proto-dev
+	makedepends = libxcb-xkb-dev
 	replaces = libxkbcommon-tools
 	replaces = libxkbcommon-x11-0
 	replaces = libxkbcommon-x11-dev
