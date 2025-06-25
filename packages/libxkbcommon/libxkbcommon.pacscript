@@ -6,6 +6,7 @@ makedepends=(
   'bash-completion'
   'doxygen'
   'bison'
+  'pkg-config'
   'libc6-dev'
   'graphviz'
   'libxcb1-dev'
