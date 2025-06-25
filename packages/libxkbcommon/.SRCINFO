@@ -1,6 +1,6 @@
 pkgbase = libxkbcommon
 	pkgver = 1.10.0
-	pkgdesc = keyboard keymap compiler and support library
+	pkgdesc = Keyboard keymap compiler and support library
 	url = https://xkbcommon.org
 	arch = any
 	depends = libxml2
