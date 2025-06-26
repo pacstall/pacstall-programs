@@ -11,7 +11,7 @@ provides=('kanata')
 depends=('gcc' 'libc-bin' 'systemd')
 source=(
   "https://github.com/jtroo/kanata/releases/download/v${pkgver//_/-}/kanata"
-  "https://github.com/jtroo/kanata/raw/main/LICENSE"
+  "https://github.com/jtroo/kanata/raw/v${pkgver//_/-}/LICENSE"
 )
 sha256sums=(
   '440ce0f754adc32b1e9d0f47c0016c59222eaad7c1b2c86ce19f2559e4d54ffa'
@@ -47,7 +47,7 @@ WantedBy=default.target' | tee "${pkgdir}/etc/systemd/system/kanata.service" > /
 )
 
 (defalias
-  escctrl (tap-hold 150 150 esc lctl)
+  escctrl (tap-hold 100 100 esc lctl)
 )
 
 (deflayer base
@@ -56,7 +56,12 @@ WantedBy=default.target' | tee "${pkgdir}/etc/systemd/system/kanata.service" > /
 }
 
 post_install() {
-  systemctl daemon-reload
-  systemctl enable kanata.service
-  systemctl start kanata.service
+  fancy_message info "
+
+  \e[1mYou may enable the service to start kanata on boot by running:\e[0m
+    \e[32msystemctl daemon-reload\e[0m
+    \e[32msystemctl enable kanata.service\e[0m
+  \e[1mTo start kanata now, additionally run\e[0m
+    \e[32msystemctl start kanata.service\e[0m
+  "
 }
