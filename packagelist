@@ -327,6 +327,7 @@ libtomlplusplus-header
 libwebrtc-audio-processing1-deb
 libx86emu
 libxapp1-deb
+libxkbcommon
 lightpad-git
 linked-deb
 linux-headers-deb
@@ -475,6 +476,7 @@ nerd-fonts-cascadia-code
 nerd-fonts-fira-code
 nerd-fonts-hack
 nerd-fonts-jetbrains-mono
+nodejs-deb
 nodejs-lts-deb
 nofetch
 noisetorch-bin

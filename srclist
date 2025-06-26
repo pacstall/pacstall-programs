@@ -3125,7 +3125,7 @@ pkgname = firefox-arm64-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 139.0.4
+	pkgver = 140.0
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3135,10 +3135,10 @@ pkgbase = firefox-bin
 	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/139.0.4/linux-x86_64/en-US/firefox-139.0.4.tar.xz
-	sha256sums_amd64 = fe22686f09a0c46390fea430b26cccc323d92af26869699f394f25b5e71527a3
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/139.0.4/linux-aarch64/en-US/firefox-139.0.4.tar.xz
-	sha256sums_arm64 = b59b346c9e671de73ffa4f5b5c72b98a91918849d31988c3251f8e91bdbb72b6
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/140.0/linux-x86_64/en-US/firefox-140.0.tar.xz
+	sha256sums_amd64 = ca3469774734743b878bca2cfb7efb7b8a8eb4a3c15c2f1f427fbc0472ad3f6e
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/140.0/linux-aarch64/en-US/firefox-140.0.tar.xz
+	sha256sums_arm64 = ee6fadf005a4a833debe5dabf13efbc43498270a584219fa0594f03c3f590007
 
 pkgname = firefox-bin
 ---
@@ -6658,6 +6658,49 @@ pkgbase = libxapp1-deb
 
 pkgname = libxapp1-deb
 ---
+pkgbase = libxkbcommon
+	pkgver = 1.10.0
+	pkgdesc = Keyboard keymap compiler and support library
+	url = https://xkbcommon.org
+	arch = any
+	depends = libxml2
+	depends = xkb-data
+	depends = libxcb-xkb-dev
+	makedepends = bash-completion
+	makedepends = doxygen
+	makedepends = bison
+	makedepends = pkg-config
+	makedepends = libc6-dev
+	makedepends = graphviz
+	makedepends = libxcb1-dev
+	makedepends = libxml2-dev
+	makedepends = meson
+	makedepends = libwayland-dev
+	makedepends = wayland-protocols
+	makedepends = xkb-data
+	makedepends = x11proto-dev
+	makedepends = libxcb-xkb-dev
+	replaces = libxkbcommon-tools
+	replaces = libxkbcommon-x11-0
+	replaces = libxkbcommon-x11-dev
+	replaces = libxkbcommon0
+	replaces = libxkbcommon-dev
+	replaces = libxkbregistry0
+	replaces = libxkbregistry-dev
+	provides = libxkbcommon-tools=1.10.0
+	provides = libxkbcommon-x11-0=1.10.0
+	provides = libxkbcommon-x11-dev=1.10.0
+	provides = libxkbcommon0=1.10.0
+	provides = libxkbcommon-dev=1.10.0
+	provides = libxkbregistry0=1.10.0
+	provides = libxkbregistry-dev=1.10.0
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: libxkbcommon
+	source = @libxkbcommon~1.10.0::https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.10.0.tar.gz
+	sha256sums = 0427585a4d6ca17c9fc1ac4b539bf303348e9080af70c5ea402503bc370a9631
+
+pkgname = libxkbcommon
+---
 pkgbase = lightpad-git
 	gives = com.github.libredeb.lightpad
 	pkgver = 0.0.8
@@ -8076,15 +8119,15 @@ pkgname = mullvad-vpn-beta-deb
 ---
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
-	pkgver = 2025.6
+	pkgver = 2025.7
 	pkgdesc = The Mullvad VPN client app for desktop
 	arch = amd64
 	breaks = mullvad-vpn-beta-deb
 	breaks = mullvad-vpn-git
 	replaces = mullvad-vpn
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.6/MullvadVPN-2025.6_amd64.deb
-	sha256sums = a632639dbd343c8f496ca82dcf4f1ea80a045f50779e935a6f6fa3f566ba3dea
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.7/MullvadVPN-2025.7_amd64.deb
+	sha256sums = c0a9b008b17e1ff07264560640c1094fa82602dd806b4bd96a5a9a329b4f8e15
 
 pkgname = mullvad-vpn-deb
 ---
@@ -8930,6 +8973,29 @@ pkgname = ttf-victor-mono-nerd
 pkgname = ttf-zed-mono-nerd
 	pkgdesc = Patched font Zed Mono from nerd fonts library
 	license = OFL-1.1-no-RFN
+---
+pkgbase = nodejs-deb
+	gives = nodejs
+	pkgver = 24.1.0
+	pkgdesc = JavaScript runtime built on Chrome's V8 JavaScript engine
+	url = https://nodejs.org
+	arch = amd64
+	arch = arm64
+	breaks = nodejs
+	breaks = nodejs-git
+	breaks = nodejs-bin
+	breaks = nodejs-app
+	replaces = nodejs
+	replaces = node
+	license = MIT
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: nodejs
+	source_amd64 = https://deb.nodesource.com/node_24.x/pool/main/n/nodejs/nodejs_24.1.0-1nodesource1_amd64.deb
+	sha256sums_amd64 = 4d970d1d72243db38db9431f625199c007f1d3a204ec649ad4b85f88f3916525
+	source_arm64 = https://deb.nodesource.com/node_24.x/pool/main/n/nodejs/nodejs_24.1.0-1nodesource1_arm64.deb
+	sha256sums_arm64 = ac7c94306484f5cff01b93d3734e607fc455785141addf0a4934b0c4e2310e8f
+
+pkgname = nodejs-deb
 ---
 pkgbase = nodejs-lts-deb
 	gives = nodejs
@@ -15616,7 +15682,7 @@ pkgbase = youtube-music-deb
 pkgname = youtube-music-deb
 ---
 pkgbase = yt-dlp
-	pkgver = 2025.06.09
+	pkgver = 2025.06.25
 	pkgdesc = A youtube-dl fork with additional features and fixes
 	arch = all
 	depends = python3
@@ -15625,8 +15691,8 @@ pkgbase = yt-dlp
 	breaks = yt-dlp-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: yt-dlp
-	source = https://github.com/yt-dlp/yt-dlp/releases/download/2025.06.09/yt-dlp
-	sha256sums = efba94b3be7911b96bf35bb7437dcf218ab7d244def6d57982af5609f9aeeeb0
+	source = https://github.com/yt-dlp/yt-dlp/releases/download/2025.06.25/yt-dlp
+	sha256sums = 7925ac3ef520c3bb8c9c645ffbbabe8b7ee5b5a5ad6f2cb09d4a50212bbdd072
 
 pkgname = yt-dlp
 ---
