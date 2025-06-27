@@ -1,7 +1,7 @@
 pkgbase = ubxi-kde-desktop-git
 	gives = ubxi-kde-desktop
 	pkgver = 0.0.1
-	pkgrel = 3
+	pkgrel = 4
 	pkgdesc = UBXI KDE Plasma Desktop
 	priority = required
 	arch = amd64
