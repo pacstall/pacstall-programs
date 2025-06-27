@@ -38,6 +38,7 @@ build() {
   mkdir -p "${pkgdir}/usr/share/color-schemes"
   mkdir -p "${pkgdir}/usr/share/applications"
   mkdir -p "${pkgdir}/etc/xdg"
+  mkdir -p "${pkgdir}/usr/share/wayland-sessions"
 }
 
 package() {
