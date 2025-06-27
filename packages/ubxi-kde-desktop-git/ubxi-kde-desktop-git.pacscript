@@ -72,7 +72,11 @@ package() {
   cp plasma/applications/{krunner,kwin-overview}.desktop "${pkgdir}/usr/share/applications"
 
   # Patch Wayland session
-  cp /usr/share/wayland-sessions/plasma.desktop "${pkgdir}/usr/share/wayland-sessions/plasma.desktop"
+  if ! -f [[ /usr/share/wayland-sessions/plasma.desktop ]]; then
+    cp /usr/share/wayland-sessions/plasma.desktop "${pkgdir}/usr/share/wayland-sessions/plasma.desktop"
+  else
+    cp /usr/share/wayland-sessions/plasma.desktop.bak "${pkgdir}/usr/share/wayland-sessions/plasma.desktop"
+  fi
   sed -i 's|^Exec=.*|Exec=/usr/bin/startplasma-wayland|' "${pkgdir}/usr/share/wayland-sessions/plasma.desktop"
 }
 
