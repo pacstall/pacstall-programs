@@ -1,7 +1,7 @@
 pkgname="ubxi-kde-desktop-git"
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="3"
 source=("https://github.com/rhino-linux/ubxi-kde-desktop.git")
 depends=(
   "plasma-desktop" "konsole" "systemsettings" "plasma-nm" "plasma-disks"
@@ -18,6 +18,7 @@ optdepends=(
   "plasma-thunderbolt: Plasma addons for managing Thunderbolt devices"
   "powerdevil: Global power saver settings"
 )
+makedepends=("plasma-session-wayland")
 pacdeps=("rhino-ubxi-core")
 replaces=("unicorn-desktop" "unicorn-mobile")
 gives="ubxi-kde-desktop"
@@ -68,10 +69,24 @@ package() {
 
   # KRunner for Search Bar and KWin Overview for Desktop Switcher
   cp plasma/applications/{krunner,kwin-overview}.desktop "${pkgdir}/usr/share/applications"
+
+  # Patch Wayland session
+  cp /usr/share/wayland-sessions/plasma.desktop "${pkgdir}/usr/share/wayland-sessions/plasma.desktop"
+  sed -i 's|^Exec=.*|Exec=/usr/bin/startplasma-wayland|' "${pkgdir}/usr/share/wayland-sessions/plasma.desktop"
+}
+
+pre_install() {
+  sudo dpkg-divert --quiet --package "${pkgname}" --divert /usr/share/wayland-sessions/plasma.desktop.bak --rename /usr/share/wayland-sessions/plasma.desktop
 }
 
 post_install() {
   if ! [[ -f "${homedir}/.config/kglobalshortcutsrc" ]]; then
     cp "/etc/xdg/kglobalshortcutsrc" "${homedir}/.config"
+  fi
+}
+
+post_remove() {
+  if ! [[ -d "${STAGEDIR}/${pkgname}" ]]; then
+    sudo dpkg-divert --quiet --package "${pkgname}" --remove --rename /usr/share/wayland-sessions/plasma.desktop
   fi
 }
