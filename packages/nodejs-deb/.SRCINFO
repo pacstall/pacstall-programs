@@ -15,8 +15,8 @@ pkgbase = nodejs-deb
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: nodejs
 	source_amd64 = https://deb.nodesource.com/node_24.x/pool/main/n/nodejs/nodejs_24.1.0-1nodesource1_amd64.deb
-	sha256sums_amd64 = 4d970d1d72243db38db9431f625199c007f1d3a204ec649ad4b85f88f3916525
+	sha256sums_amd64 = e7a421d23efe71cba59671d177135f6ee2b5da76d4a9ce800d53e1098aec317a
 	source_arm64 = https://deb.nodesource.com/node_24.x/pool/main/n/nodejs/nodejs_24.1.0-1nodesource1_arm64.deb
-	sha256sums_arm64 = ac7c94306484f5cff01b93d3734e607fc455785141addf0a4934b0c4e2310e8f
+	sha256sums_arm64 = 678124bd7befcaa97d2f42cf3527d918c26896a72bcb846be4f9792a99ca7f21
 
 pkgname = nodejs-deb
