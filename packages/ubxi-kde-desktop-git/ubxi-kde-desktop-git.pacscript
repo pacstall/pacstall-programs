@@ -77,7 +77,7 @@ package() {
 }
 
 pre_install() {
-  sudo dpkg-divert --quiet --package "${pkgname}" --divert /usr/share/wayland-sessions/plasma.desktop.bak --rename /usr/share/wayland-sessions/plasma.desktop
+  sudo dpkg-divert --quiet --package "${gives}" --divert /usr/share/wayland-sessions/plasma.desktop.bak --rename /usr/share/wayland-sessions/plasma.desktop
 }
 
 post_install() {
@@ -88,6 +88,6 @@ post_install() {
 
 post_remove() {
   if ! [[ -d "${STAGEDIR}/${pkgname}" ]]; then
-    sudo dpkg-divert --quiet --package "${pkgname}" --remove --rename /usr/share/wayland-sessions/plasma.desktop
+    sudo dpkg-divert --quiet --package "${gives}" --remove --rename /usr/share/wayland-sessions/plasma.desktop
   fi
 }
