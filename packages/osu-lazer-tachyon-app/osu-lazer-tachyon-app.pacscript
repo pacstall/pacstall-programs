@@ -1,17 +1,18 @@
-pkgname="osu-lazer-app"
+pkgname="osu-lazer-tachyon-app"
+gives="osu-lazer"
 arch=("amd64")
-pkgver="2025.607.0"
-pkgdesc="The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew."
+pkgver="2025.625.0-tachyon"
+pkgdesc="The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew. - Tachyon Release"
 url='https://osu.ppy.sh'
 license=("MIT" "CC-BY-NC-4.0")
 depends=("libfuse2")
-conflicts=("osu-lazer" "osu-lazer-git")
-replaces=("osu-lazer-tachyon-app")
+conflicts=("${gives}" "${gives}-git")
+replaces=("${gives}-app")
 noextract=("osu.AppImage")
 source=(
   "${pkgname}-${pkgver}.AppImage::https://github.com/ppy/osu/releases/download/${pkgver}/osu.AppImage"
   # png is ignored so i have to take it from the repo
-  "icon.png::https://raw.githubusercontent.com/ppy/osu/master/assets/lazer.png"
+  "icon.png::https://raw.githubusercontent.com/ppy/osu/refs/tags/${pkgver}/assets/lazer.png"
   "osu-lazer"
   "osu-lazer.desktop"
 )
