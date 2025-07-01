@@ -5556,6 +5556,22 @@ pkgbase = joplin-desktop-app
 
 pkgname = joplin-desktop-app
 ---
+pkgbase = kakoune-kakboard-git
+	gives = kakoune-kakboard
+	pkgver = 0.0.0
+	pkgdesc = Clipboard integration for Kakoune
+	url = https://github.com/lePerdu/kakboard
+	arch = all
+	depends = kakoune
+	optdepends = wl-clipboard: for Wayland clipboard integration
+	optdepends = xclip: for X11 clipboard integration
+	optdepends = xsel: for X11 clipboard integration
+	license = MIT
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	source = kakoune-kakboard::https://github.com/lePerdu/kakboard.git
+
+pkgname = kakoune-kakboard-git
+---
 pkgbase = kakoune
 	pkgver = 2025.06.03
 	pkgdesc = mawww's experiment for a better code editor
