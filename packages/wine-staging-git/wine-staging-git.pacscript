@@ -53,7 +53,6 @@ optdepends=("liblcms2-dev: color management"
 
 prepare() {
   cd "${srcdir}"/wine
-  rm -rf build-{64}
   mkdir -p wine64-build
 
   # restore the wine tree to its git origin state, without wine-staging patches
