@@ -20,4 +20,3 @@ package() {
   "${pkgdir}/usr/bin/${gives}" completion fish | install -Dm644 /dev/stdin "${pkgdir}/usr/share/fish/vendor_completions.d/talm.fish"
   "${pkgdir}/usr/bin/${gives}" completion zsh | install -Dm644 /dev/stdin "${pkgdir}/usr/share/zsh/site-functions/_talm"
 }
-

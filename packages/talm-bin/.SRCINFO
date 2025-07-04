@@ -16,4 +16,3 @@ pkgbase = talm-bin
 	sha256sums_i386 = f840826eb84daea7fddc6fb9feaceda7968bce6afd5101e0b48c983eb50f0533
 
 pkgname = talm-bin
-
