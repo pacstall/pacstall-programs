@@ -1,9 +1,9 @@
 pkgname="r2modman-deb"
 gives="r2modman"
-pkgver="3.2.0"
+pkgver="3.2.1"
 source=("https://github.com/ebkr/r2modmanPlus/releases/download/v${pkgver}/r2modman_${pkgver}_amd64.deb")
 pkgdesc="Simple and easy to use mod manager for many games using Thunderstore"
-sha256sums=("e8957b4d70e067d5e161c8ff53f5178856515ef5fe081d1d05c70819a3769b14")
+sha256sums=("39b098afa5bd09697cc5e1e89fa8fdb16d6e79afe69b45ead2eaeb685f1a2cee")
 arch=('amd64')
 repology=("project: ${gives}")
 maintainer=("raik199x <raik199x@mail.ru>")
