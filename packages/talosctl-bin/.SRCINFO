@@ -1,0 +1,17 @@
+pkgbase = talosctl-bin
+	gives = talosctl
+	pkgver = 1.10.5
+	pkgdesc = CLI tool for managing Talos Linux clusters securely
+	arch = amd64
+	arch = arm64
+	arch = armhf
+	maintainer = faelau <git@faessler.sh>
+	repology = project: talosctl
+	source_amd64 = talosctl~1.10.5::https://github.com/siderolabs/talos/releases/download/v1.10.5/talosctl-linux-amd64
+	sha256sums_amd64 = 7d7a9b053e441fb1326ee3ad7a62433f0ab5b2230e736aee1f8b25964250776b
+	source_arm64 = talosctl~1.10.5::https://github.com/siderolabs/talos/releases/download/v1.10.5/talosctl-linux-arm64
+	sha256sums_arm64 = 6e98f1aa8890b93d9dcc2f496f61ab778a0f24fcde59849905b739de10ebdd30
+	source_armhf = talosctl~1.10.5::https://github.com/siderolabs/talos/releases/download/v1.10.5/talosctl-linux-armv7
+	sha256sums_armhf = 452381a0983c28f6602c15ca5c38e701b9a60b27c7647fd7afd1183bca6b6a6f
+
+pkgname = talosctl-bin
