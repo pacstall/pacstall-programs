@@ -27,7 +27,7 @@ makedepends=(
   "libxml2-dev" "libxslt1-dev" "libfaudio-dev" "libgstreamer1.0-dev" "libgstreamer-plugins-base1.0-dev"
   "libmpg123-dev" "libjxr-dev" "libosmesa6-dev" "libsdl2-dev" "libudev-dev"
   "libvkd3d-dev" "libvulkan-dev" "gcc-mingw-w64" "gcc-multilib" "g++-multilib"
-  "flex" "bison" "libx11-dev" "xorg-dev" "oss4-dev | alsa-oss| oss-compat" "libwayland-dev" "libxkbregistry-dev"
+  "flex" "bison" "libx11-dev" "xorg-dev" "oss4-dev | alsa-oss | oss-compat" "libwayland-dev" "libxkbregistry-dev"
 )
 
 depends=(
