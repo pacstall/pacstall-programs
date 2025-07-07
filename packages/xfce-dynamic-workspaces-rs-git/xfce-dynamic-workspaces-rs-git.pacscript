@@ -7,8 +7,8 @@ replaces=("xfce4-dynamic-workspaces-plugin")
 conflicts=("xfce4-dynamic-workspaces-plugin")
 arch=("any")
 pkgver="0.1.0"
-depends=("libwnck-3-0" "libwnck-3-dev" "libgio-2.0-dev" "libgdk-pixbuf-2.0-dev" "libcairo2-dev" "libatk1.0-dev" "libgtk-3-dev" "libgraphene-1.0-dev" "libgtk-4-dev")
-makedepends=("cargo>=1.85.0" "pkg-config" "libwnck-3-0" "libwnck-3-dev" "libgio-2.0-dev" "libgdk-pixbuf-2.0-dev" "libcairo2-dev" "libatk1.0-dev" "libgtk-3-dev" "libgraphene-1.0-dev" "libgtk-4-dev")
+depends=("libwnck-3-0" "libwnck-3-dev")
+makedepends=("cargo>=1.85.0" "pkg-config" "libwnck-3-0" "libwnck-3-dev")
 maintainer=("Elsie19 <hwengerstickel@pm.me>")
 external_connection=true
 
