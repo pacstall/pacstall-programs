@@ -37,7 +37,7 @@ post_install() {
 }
 
 post_remove() {
-  if [[ -L "${homedir}/.config/autostart/dynamic_workspaces.desktop" ]]; then
+  if [[ -f "${homedir}/.config/autostart/dynamic_workspaces.desktop" ]]; then
     sudo rm -f "${homedir}/.config/autostart/dynamic_workspaces.desktop"
   fi
 }

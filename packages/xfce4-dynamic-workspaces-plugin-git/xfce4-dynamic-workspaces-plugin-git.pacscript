@@ -2,8 +2,10 @@ pkgname="xfce4-dynamic-workspaces-plugin-git"
 source=("https://github.com/DimseBoms/XFCE-Dynamic-Workspace.git")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="3"
 gives="xfce4-dynamic-workspaces-plugin"
+replaces=("xfce4-dynamic-workspaces")
+conflicts=("${replaces[@]}")
 depends=("python3-gi" "libwnck-3-0" "wmctrl" "gir1.2-notify-0.7")
 pkgdesc="Dynamic workspaces for XFCE, similar to GNOME"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
@@ -33,7 +35,7 @@ post_install() {
 }
 
 post_remove() {
-  if [[ -L "${homedir}/.config/autostart/dynamic_workspaces.desktop" ]]; then
+  if [[ -f "${homedir}/.config/autostart/dynamic_workspaces.desktop" ]]; then
     sudo rm -f "${homedir}/.config/autostart/dynamic_workspaces.desktop"
   fi
 }
