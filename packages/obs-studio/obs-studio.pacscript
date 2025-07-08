@@ -1,7 +1,7 @@
 pkgname="obs-studio"
 repology=("project: ${pkgname}")
 arch=('amd64')
-pkgver="31.0.3"
+pkgver="31.1.0"
 source=(
   "https://github.com/obsproject/obs-studio.git#tag=${pkgver}"
   "https://cdn-fastly.obsproject.com/downloads/cef_binary_6533_linux_x86_64.tar.xz"
@@ -29,7 +29,7 @@ depends=(
 )
 makedepends=(
   # System dependencies
-  "cmake" "ninja-build" "pkg-config" "clang" "clang-format"
+  "cmake" "extra-cmake-modules" "ninja-build" "pkg-config" "clang" "clang-format"
   "build-essential" "curl" "ccache" "zsh" "libnss3-dev"
 
   # OBS core dependencies
