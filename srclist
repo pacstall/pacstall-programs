@@ -10124,6 +10124,7 @@ pkgname = pacstall-qa-git
 ---
 pkgbase = pacstall
 	pkgver = 6.3.2
+	pkgrel = 2
 	pkgdesc = An AUR-inspired package manager for Ubuntu Pacstall is the AUR Ubuntu wishes it had. It takes the concept of the AUR and puts a spin on it, making it easier to install and update downstream programs, without scouring github repos and the likes.
 	url = https://pacstall.dev
 	arch = all

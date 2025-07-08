@@ -1,5 +1,6 @@
 pkgname="pacstall"
 pkgver="6.3.2"
+pkgrel="2"
 arch=("all")
 pkgdesc="An AUR-inspired package manager for Ubuntu
 Pacstall is the AUR Ubuntu wishes it had. It takes the concept of the AUR
@@ -77,4 +78,8 @@ package() {
     msgfmt -o "${pkgdir}/usr/share/locale/${lang}/LC_MESSAGES/pacstall.mo" "misc/po/${lang}.po"
   done
   rm -f "${pkgdir}/usr/share/scripts/update.sh"
+}
+
+pre_install() {
+  rm -f "/usr/share/scripts/update.sh"
 }
