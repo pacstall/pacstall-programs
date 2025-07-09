@@ -8,5 +8,6 @@ maintainer=("Elsie19 <hwengerstickel@pm.me>")
 source=("https://github.com/rhino-linux/calamares-settings.git")
 
 package() {
+  cd "calamares-settings"
   make DESTDIR="${pkgdir}" install
 }
