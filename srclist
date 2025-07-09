@@ -9398,15 +9398,15 @@ pkgname = obs-backgroundremoval
 ---
 pkgbase = obs-studio-deb
 	gives = obs-studio
-	pkgver = 31.0.4
+	pkgver = 31.1.0
 	pkgdesc = Free and open source software for live streaming and screen recording
 	arch = amd64
 	compatible = ubuntu:noble
 	license = GPL-2.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: obs-studio
-	source = https://github.com/obsproject/obs-studio/releases/download/31.0.4/OBS-Studio-31.0.4-Ubuntu-24.04-x86_64.deb
-	sha256sums = a14408bbef1c22c891c52dce971a58e7a6ea6f07200db47fc008ca5a48322d01
+	source = https://github.com/obsproject/obs-studio/releases/download/31.1.0/OBS-Studio-31.1.0-Ubuntu-24.04-x86_64.deb
+	sha256sums = c95d76c492dc1f3527155c24fcc7ca9f14fd8a4c2770a355687f57493320a408
 
 pkgname = obs-studio-deb
 ---
