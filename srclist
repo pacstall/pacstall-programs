@@ -14022,7 +14022,7 @@ pkgname = ugee-tablet-driver-deb
 ---
 pkgbase = ulauncher-deb
 	gives = ulauncher
-	pkgver = 6.0.0~beta19
+	pkgver = 6.0.0~beta20
 	pkgdesc = Application launcher for Linux
 	arch = all
 	depends = gobject-introspection
@@ -14033,8 +14033,8 @@ pkgbase = ulauncher-deb
 	depends = python3-levenshtein
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: ulauncher
-	source = https://github.com/Ulauncher/Ulauncher/releases/download/v6.0.0-beta19/ulauncher_6.0.0.beta19_all.deb
-	sha256sums = 8d58845eeb1f01d04a3daf6efe42d8a063c34eb918c63a3f35c76ebc8836d411
+	source = https://github.com/Ulauncher/Ulauncher/releases/download/v6.0.0-beta20/ulauncher_6.0.0.beta20_all.deb
+	sha256sums = 15c18e8acdc9845a90f133da112cbcd9e0d94db86b749f56c7ee967fb72721cb
 
 pkgname = ulauncher-deb
 ---
