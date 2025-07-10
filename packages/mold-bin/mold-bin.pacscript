@@ -8,7 +8,7 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="mold-bin"
 gives="mold"
-pkgver="2.40.0"
+pkgver="2.40.1"
 url='https://github.com/rui314/mold'
 arch=("amd64" "arm64" "armhf" "ppc64el" "riscv64" "s390x")
 source_amd64=("@${pkgname}~${pkgver}::${url}/releases/download/v${pkgver}/mold-${pkgver}-x86_64-linux.tar.gz")
@@ -17,12 +17,12 @@ source_armhf=("@${pkgname}~${pkgver}::${url}/releases/download/v${pkgver}/mold-$
 source_ppc64el=("@${pkgname}~${pkgver}::${url}/releases/download/v${pkgver}/mold-${pkgver}-ppc64le-linux.tar.gz")
 source_riscv64=("@${pkgname}~${pkgver}::${url}/releases/download/v${pkgver}/mold-${pkgver}-riscv64-linux.tar.gz")
 source_s390x=("@${pkgname}~${pkgver}::${url}/releases/download/v${pkgver}/mold-${pkgver}-s390x-linux.tar.gz")
-sha256sums_amd64=("143e9d9624a2a7ffa25565a8bd3818479029c83b4f5913ed11dd2acaace3fab3")
-sha256sums_arm64=("56442e2e5ee2a23bf1a8bd0d90bc21be5fffa226c96a62c35f225ebd6c9452ab")
-sha256sums_armhf=("56442e2e5ee2a23bf1a8bd0d90bc21be5fffa226c96a62c35f225ebd6c9452ab")
-sha256sums_ppc64el=("56442e2e5ee2a23bf1a8bd0d90bc21be5fffa226c96a62c35f225ebd6c9452ab")
-sha256sums_riscv64=("56442e2e5ee2a23bf1a8bd0d90bc21be5fffa226c96a62c35f225ebd6c9452ab")
-sha256sums_s390x=("56442e2e5ee2a23bf1a8bd0d90bc21be5fffa226c96a62c35f225ebd6c9452ab")
+sha256sums_amd64=("d8892f673602f6437c08fabf7643a98cae8db64544ea5b3071b3be8f6c31c67a")
+sha256sums_arm64=("4ac50a967783ab03b835118de1d7001b3be4f1d21c1a40a55f844e0ce489cf79")
+sha256sums_armhf=("4ac50a967783ab03b835118de1d7001b3be4f1d21c1a40a55f844e0ce489cf79")
+sha256sums_ppc64el=("4ac50a967783ab03b835118de1d7001b3be4f1d21c1a40a55f844e0ce489cf79")
+sha256sums_riscv64=("4ac50a967783ab03b835118de1d7001b3be4f1d21c1a40a55f844e0ce489cf79")
+sha256sums_s390x=("4ac50a967783ab03b835118de1d7001b3be4f1d21c1a40a55f844e0ce489cf79")
 
 pkgdesc="A modern linker"
 breaks=("${gives}-git" "${pkgname}")
