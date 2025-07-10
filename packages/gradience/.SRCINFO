@@ -50,7 +50,6 @@ pkgbase = gradience
 	source = https://github.com/GradienceTeam/Gradience/archive/refs/tags/0.4.1-patch1.tar.gz
 	b2sums = ca16dacd9c5c4af901a5e289d11aafa0a581f43477ea473d06e92a17582b6e397de60ab2e52036602e4028b0fde688a5511c6b7ba0577c08c03a6ed50e04383d
 	pacdeps_noble = python3-zombie-imp
-	pacdeps_oracular = python3-zombie-imp
 	pacdeps_devel = python3-zombie-imp
 	pacdeps_trixie = python3-zombie-imp
 	pacdeps_sid = python3-zombie-imp
