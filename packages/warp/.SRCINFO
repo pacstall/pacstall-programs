@@ -1,6 +1,6 @@
 pkgbase = warp
 	gives = warp
-	pkgver = 0.6.2
+	pkgver = 0.9.2
 	pkgdesc = Fast and secure file transfer
 	arch = any
 	depends = libgtk-4-dev
@@ -33,7 +33,7 @@ pkgbase = warp
 	incompatible = debian:*
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: warp-share-files
-	source = @warp~0.6.2::https://gitlab.gnome.org/World/warp/-/archive/v0.6.2/warp-v0.6.2.tar.gz
-	sha256sums = b3df2017e19c7bf1477b5bd07d857d0d8fe5375ab293d932a8a4e30aba91496a
+	source = @warp~0.9.2::https://gitlab.gnome.org/World/warp/-/archive/v0.9.2/warp-v0.9.2.tar.gz
+	sha256sums = accacbdd3ab504fb0eac0da84292f6dce7282d200d46392d9d86c29da3a2d04d
 
 pkgname = warp
