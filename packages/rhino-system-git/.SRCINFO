@@ -1,6 +1,7 @@
 pkgbase = rhino-system-git
 	gives = rhino-system
 	pkgver = 0.0.1
+	pkgrel = 2
 	pkgdesc = System info and upgrade utility by the Rhino Linux team
 	arch = any
 	depends = python3-gi
@@ -13,6 +14,8 @@ pkgbase = rhino-system-git
 	depends = desktop-file-utils
 	depends = libglib2.0-dev
 	depends = mesa-utils
+	depends = util-linux
+	depends = pciutils
 	makedepends = python3-gi
 	makedepends = gir1.2-adw-1
 	makedepends = gir1.2-gtk-4.0
