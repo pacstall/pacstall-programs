@@ -1313,7 +1313,6 @@ pkgbase = capsfix-git
 	depends_plucky = keyd
 	depends_questing = keyd
 	depends_devel = keyd
-	depends_bookworm = keyd
 	depends_trixie = keyd
 	depends_sid = keyd
 

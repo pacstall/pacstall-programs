@@ -6,10 +6,9 @@ gives="capsfix"
 depends_plucky=('keyd')
 depends_questing=('keyd')
 depends_devel=('keyd')
-depends_bookworm=('keyd')
 depends_trixie=('keyd')
 depends_sid=('keyd')
-if [[ ! "plucky questing devel bookworm trixie sid" =~ ${DISTRO#*:} ]]; then
+if [[ ! "plucky questing devel trixie sid" =~ ${DISTRO#*:} ]]; then
   pacdeps=('keyd-deb')
 fi
 pkgdesc="Fix the nuisance of Caps Lock disable not toggling until key release"
