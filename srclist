@@ -5817,6 +5817,31 @@ pkgbase = keybase-deb
 
 pkgname = keybase-deb
 ---
+pkgbase = keyd-deb
+	gives = keyd
+	pkgver = 2.5.0-4
+	pkgdesc = Keyboard key remapping daemon
+	arch = amd64
+	arch = arm64
+	arch = armhf
+	arch = i386
+	arch = riscv64
+	depends = libc6>=2.34
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: keyd
+	source_amd64 = http://ftp.debian.org/debian/pool/main/k/keyd/keyd_2.5.0-4_amd64.deb
+	sha256sums_amd64 = a
+	source_arm64 = http://ftp.debian.org/debian/pool/main/k/keyd/keyd_2.5.0-4_arm64.deb
+	sha256sums_arm64 = b
+	source_armhf = http://ftp.debian.org/debian/pool/main/k/keyd/keyd_2.5.0-4_armhf.deb
+	sha256sums_armhf = c
+	source_i386 = http://ftp.debian.org/debian/pool/main/k/keyd/keyd_2.5.0-4_i386.deb
+	sha256sums_i386 = d
+	source_riscv64 = http://ftp.debian.org/debian/pool/main/k/keyd/keyd_2.5.0-4_riscv64.deb
+	sha256sums_riscv64 = e
+
+pkgname = keyd-deb
+---
 pkgbase = kirc
 	pkgver = 0.3.3
 	pkgdesc = A tiny IRC client written in POSIX C99
