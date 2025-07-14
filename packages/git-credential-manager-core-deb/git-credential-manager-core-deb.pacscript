@@ -1,9 +1,9 @@
 pkgname="git-credential-manager-core-deb"
-gives="git-credential-manager-core"
+gives="gcm"
 repology=("project: ${gives}")
 pkgver="2.4.1"
 depends=("git")
-source=("https://github.com/git-ecosystem/git-credential-manager/releases/download/v${pkgver}/gcm-linux_amd64.${pkgver}.deb")
+source=("https://github.com/git-ecosystem/git-credential-manager/releases/download/v${pkgver}/${gives}-linux_amd64.${pkgver}.deb")
 pkgdesc="Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services"
 sha256sums=("d65a166f6fc3d6638b356b84b4e1274a95352455f448b06a34926bf6568cd995")
 arch=('amd64')
