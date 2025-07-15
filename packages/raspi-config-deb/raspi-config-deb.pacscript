@@ -1,10 +1,10 @@
 pkgname="raspi-config-deb"
 gives="raspi-config"
 replaces=("${gives}")
-pkgver="20231216"
+pkgver="20250312"
 source=("https://archive.raspberrypi.org/debian/pool/main/r/${gives}/${gives}_${pkgver}_all.deb")
 pkgdesc="Raspberry Pi configuration tool"
-sha256sums=("8e328e0886b58023b03b8cf799a77180650c318df075605684103735c90a747f")
+sha256sums=("a28ae6951f1beb818bbd637664b0e579b5e73ca4bece446365869926ccd2e6e8")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=("all")
 repology=("project: ${gives}")
