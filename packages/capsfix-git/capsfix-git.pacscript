@@ -23,6 +23,19 @@ post_upgrade() {
   # old configs
   sudo rm -f "${homedir}/.config/autostart/capsfix.desktop"
   sudo rm -f "${homedir}/.config/xkb_caps_backup"
+
+  strings=(
+    '      Capsfix Post-Update Information      \n'
+    '===========================================\n'
+    'To update the capsfix config to the latest \n'
+    'version, please re-run the enable script:  \n'
+    '```\n'
+    'sudo capsfix enable\n'
+    '```\n'
+    'This will auto-replace the old config.\n'
+    '===========================================\n'
+  )
+  echo -e "${strings[@]}"
 }
 
 post_remove() {

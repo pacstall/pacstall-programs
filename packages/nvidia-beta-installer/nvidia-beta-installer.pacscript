@@ -19,9 +19,9 @@ post_install() {
     '==============================================\n'
     'To run the installer, use one of the commands:\n'
     '```\n'
-    "sudo ./${gives}\n"
+    "sudo ${gives}\n"
     '# OR\n'
-    "sudo ./NVIDIA-Linux-x86_64-${pkgver}.run\n"
+    "sudo NVIDIA-Linux-x86_64-${pkgver}.run\n"
     '```\n'
     'You may remove this package afterwards. Doing\n'
     'so will not remove any installed modules.\n'
