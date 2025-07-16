@@ -3,11 +3,11 @@ gives="anydesk"
 breaks=("${gives}-deb")
 replaces=("${gives}")
 repology=("project: ${gives}")
-pkgver="7.0.0"
+pkgver="7.0.2"
 source=("@${pkgname}~${pkgver}::https://download.anydesk.com/linux/${gives}-${pkgver}-amd64.tar.gz")
 depends=("libc6" "libgcc1" "libglib2.0-0" "libgtk2.0-0" "libstdc++6" "libx11-6" "libxcb-shm0" "libxcb1" "libpango1.0-dev" "libcairo2" "libxrandr2" "libx11-xcb1" "libxtst6" "libxfixes3" "libxdamage1" "libgtkglext1")
 pkgdesc="Platform independent remote access to personal computers and other devices running the host application - Binary version"
-sha256sums=("0048f8fd2e24ea69c26ff09a8040e1a42b44c41f2922abfb5766ff6ebe270bff")
+sha256sums=("a84e3dad5fd03d891bc80a690cc2ff9fa6ebce6880f77c38edb0cec22283b94a")
 arch=('amd64')
 
 package() {
