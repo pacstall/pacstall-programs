@@ -1,7 +1,7 @@
 pkgbase = goverlay
 	gives = goverlay
 	pkgver = 1.2.0
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = A GUI to help manage Vulkan/OpenGL overlays
 	url = https://github.com/benjamimgois/goverlay/
 	arch = amd64
@@ -9,6 +9,7 @@ pkgbase = goverlay
 	depends = libqt6pas-dev
 	depends = qt6ct
 	depends = adwaita-qt6
+	depends = libqt6printsupport6t64
 	makedepends = git
 	makedepends = libglu1-mesa-dev
 	makedepends = qt6-base-dev
