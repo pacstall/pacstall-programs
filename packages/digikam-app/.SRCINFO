@@ -1,11 +1,11 @@
 pkgbase = digikam-app
 	gives = digikam
-	pkgver = 8.6.0
+	pkgver = 8.7.0
 	pkgdesc = Professional Photo Management with the Power of Open Source from KDE
 	url = https://www.digikam.org
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source = https://download.kde.org/stable/digikam/8.6.0/digiKam-8.6.0-Qt6-x86-64.appimage
-	sha256sums = b99d732eb5daf78a2ea2e41569368fb4fadafbd807f138edb6be688e961e58c3
+	source = https://download.kde.org/stable/digikam/8.7.0/digiKam-8.7.0-Qt6-x86-64.appimage
+	sha256sums = 4a75c235cb25121a2455bd85429fa6f230f37c0872aa4364e8efe50ec0b02309
 
 pkgname = digikam-app
