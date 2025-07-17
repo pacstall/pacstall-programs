@@ -6,8 +6,8 @@ pkgver="1.19.3"
 url='https://www.ppsspp.org'
 source=("https://github.com/hrydgard/ppsspp.git")
 makedepends=(
-  "build-essential" "cmake" "libgl1-mesa-dev" "libminiupnpc-dev"
-  "libfontconfig1-dev" "libvulkan-dev" "libglew-dev" "libwayland-dev"
+  "build-essential" "cmake" "libgl1-mesa-dev" libsdl2-dev libsdl2-ttf-dev
+  "libfontconfig1-dev" "libvulkan-dev" "libglew-dev" "libwayland-dev" "libminiupnpc-dev"
   "libsnappy-dev" "libzip-dev" "libpng-dev" "libzstd-dev"
 )
 depends=(
