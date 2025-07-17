@@ -17,6 +17,7 @@ depends_jammy=("libzip4" "libpng16-16")
 depends_noble=("libzip4t64" "libpng16-16t64")
 depends_plucky=("libzip5" "libpng16-16t64")
 depends_questing=("libzip5" "libpng16-16t64")
+depends_bookworm=("libzip4" "libpng16-16")
 conflicts=("${gives}-app")
 replaces=("${gives}-app")
 pkgdesc="PSP emulator"
