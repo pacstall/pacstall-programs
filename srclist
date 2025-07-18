@@ -5739,14 +5739,14 @@ pkgname = kate5-data-backport-deb
 ---
 pkgbase = kdenlive-app
 	gives = kdenlive
-	pkgver = 25.04.2
+	pkgver = 25.04.3
 	pkgdesc = Free and Open Source Video Editor from KDE
 	url = https://kdenlive.org
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: kdenlive
-	source = https://download.kde.org/stable/kdenlive/25.04/linux/kdenlive-25.04.2-x86_64.AppImage
-	sha256sums = d997f182941fd72a18723b0b1e31134bcbd95c9430c77bd55b8d5087d121044a
+	source = https://download.kde.org/stable/kdenlive/25.04/linux/kdenlive-25.04.3-x86_64.AppImage
+	sha256sums = 57d488f5a484a52e8920e02b2c9263146b5665f4ab045abfd1a8631b2abf939a
 
 pkgname = kdenlive-app
 ---
