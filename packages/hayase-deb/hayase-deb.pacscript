@@ -1,0 +1,12 @@
+pkgname="hayase-deb"
+gives="hayase"
+repology=("project: hayase")
+arch=('amd64')
+pkgver="6.4.13"
+url='https://hayase.watch'
+source=("https://github.com/hayase-app/ui/releases/download/v6.4.13/linux-hayase-${pkgver}-linux.deb")
+sha256sums=("9015c7267b7fcea09dddeaa281f07e8f8808e921a76378eac03d9bb6fdf3ed58")
+conflicts=("${gives}-app")
+pkgdesc="Torrent streaming made simple. Watch anime torrents, real-time with no waiting for downloads"
+maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
+license=('BUSL-1.1')
