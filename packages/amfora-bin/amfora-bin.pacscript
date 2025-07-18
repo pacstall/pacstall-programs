@@ -1,11 +1,11 @@
 pkgname="amfora-bin"
 gives="amfora"
 arch=("amd64")
-pkgver="1.10.0"
+pkgver="1.11.0"
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 pkgdesc="Amfora aims to be the best looking Gemini client with the most features"
 sha256sums=(
-  "b2e9e50954345b38c4481e200944950675d30cdd4e1d7eef50d5b3a528cc1a0a"
+  "a8ac319fd43af5ea7ce967caa4d3d00d20fca7aa8de0fda30a3e0ddde985b3a3"
   "3d029d05cff8c42e82685ce7a61fcaa2118e4cbb6a547816a7d5150868a11092"
   "812e1faad6f6d4817eac60d36813472afebe2980cd2e661151a3d98669274207"
 )
