@@ -1,10 +1,4 @@
 ubuntu:
-  jammy/22.04
-  noble/24.04
-  plucky/25.04
-  questing/25.10
-  devel
-debian:
   bullseye/11
   bookworm/12
   trixie/13
