@@ -1,6 +1,6 @@
 pkgname="ppsspp-git"
 gives="ppsspp"
-repology=("project: hayase")
+repology=("project: ppsspp")
 arch=('amd64' 'arm64')
 pkgver="1.19.3"
 url='https://www.ppsspp.org'
