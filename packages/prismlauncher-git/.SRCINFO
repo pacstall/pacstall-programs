@@ -22,7 +22,5 @@ pkgbase = prismlauncher-git
 	makedepends = qt6-networkauth-dev
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/PrismLauncher/PrismLauncher.git
-	makedepends_jammy = libqt6core5compat6-dev
-	makedepends_jammy = libqt6networkauth6-dev
 
 pkgname = prismlauncher-git

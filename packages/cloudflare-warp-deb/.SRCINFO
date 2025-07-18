@@ -8,9 +8,5 @@ pkgbase = cloudflare-warp-deb
 	compatible = ubuntu:jammy
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: cloudflare-warp
-	source_jammy = https://pkg.cloudflareclient.com/pool/jammy/main/c/cloudflare-warp/cloudflare-warp_2025.4.943.0_amd64.deb
-	source_noble = https://pkg.cloudflareclient.com/pool/noble/main/c/cloudflare-warp/cloudflare-warp_2025.4.943.0_amd64.deb
-	sha256sums_jammy = 4a1c366cd522ae3639355bbc01996c649f857c451c6b402b86744a2c9029d48c
-	sha256sums_noble = 4162de02ad5b848070d54cc6a7ad9c47b29a39c18e9878016491d1dcd801dc96
 
 pkgname = cloudflare-warp-deb

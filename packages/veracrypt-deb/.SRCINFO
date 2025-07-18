@@ -20,9 +20,7 @@ pkgbase = veracrypt-deb
 	repology = project: veracrypt
 	source = https://launchpad.net/veracrypt/trunk/1.26.24/+download/veracrypt-1.26.24-Ubuntu-24.04-amd64.deb
 	sha256sums = 7c9844771203a6e96f7e4b86b245b85f0d1e45ade70f3f81b1d1b178fc81ca87
-	source_jammy = https://launchpad.net/veracrypt/trunk/1.26.24/+download/veracrypt-1.26.24-Ubuntu-22.04-amd64.deb
 	source_bookworm = https://launchpad.net/veracrypt/trunk/1.26.24/+download/veracrypt-1.26.24-Debian-12-amd64.deb
-	sha256sums_jammy = e785216c8a3ee1edc6ac800fc3a471f2390b45205a3af10985006bb263695814
 	sha256sums_bookworm = b00d44779accc803831dd42e0d4c3a63445bb0c26701f0a43d131f76e01f025c
 
 pkgname = veracrypt-deb

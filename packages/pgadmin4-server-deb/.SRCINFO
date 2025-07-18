@@ -12,11 +12,7 @@ pkgbase = pgadmin4-server-deb
 	repology = project: pgadmin4-server
 	source = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/oracular/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.4_amd64.deb
 	sha256sums = c1613700771f70226167ee4c3c1a3fbedb61a193f7c40ff51431460f7954b335
-	source_jammy = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.4_amd64.deb
-	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.4_amd64.deb
 	source_bookworm = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/bookworm/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.4_amd64.deb
-	sha256sums_jammy = 54e31c5ccdec59427e7a08038aa66c75da1704498ce73a03e543b6130377ae56
-	sha256sums_noble = 2e0c581e1a666e3877a235b16bef3dec91705e24f1116b946dea3d6325a2e6b3
 	sha256sums_bookworm = 534e110ce75b66ff58e8c62f005208971af889a7ca5fed55ba1e3a2cce121012
 
 pkgname = pgadmin4-server-deb
