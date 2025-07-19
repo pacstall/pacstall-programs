@@ -1,6 +1,6 @@
 pkgbase = postman-bin
 	gives = postman
-	pkgver = 11.52.5
+	pkgver = 11.54.6
 	pkgdesc = Build, test, and document your APIs faster
 	arch = amd64
 	depends = libxss1
@@ -13,7 +13,7 @@ pkgbase = postman-bin
 	maintainer = Marie Piontek <marie@kaifa.ch>
 	repology = project: postman
 	repology = visiblename: postman-bin
-	source = https://dl.pstmn.io/download/version/11.52.5/linux64
+	source = https://dl.pstmn.io/download/version/11.54.6/linux64
 	source = postman.desktop::https://aur.archlinux.org/cgit/aur.git/plain/postman.desktop?h=postman-bin
 	sha256sums = a1bf3d7171e5253050922f202fc26346a4ab3e0f925a967bf1bb8a47c7273a4f
 	sha256sums = SKIP
