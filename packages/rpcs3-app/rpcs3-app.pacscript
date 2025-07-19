@@ -6,8 +6,8 @@ _pkgsha="9c93ec0bc31bbc94ca4dce2a76ceea80da6f6554"
 source=(
   "https://rpcs3.net/cdn/branding/core-color-png.png"
 )
-source_amd64=("https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-${_pkgsha}/rpcs3-v${pkgver}-${pkgsha:0:8}_linux64.AppImage")
-source_arm64=("https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-${_pkgsha}/rpcs3-v${pkgver}-${pkgsha:0:8}_linux_aarch64.AppImage")
+source_amd64=("https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-${_pkgsha}/rpcs3-v${pkgver}-${_pkgsha:0:8}_linux64.AppImage")
+source_arm64=("https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-${_pkgsha}/rpcs3-v${pkgver}-${_pkgsha:0:8}_linux_aarch64.AppImage")
 url='https://rpcs3.net'
 pkgdesc="PS3 emulator/debugger"
 maintainer=("Thomas Crha <thomas@9bitbyte.com>")
