@@ -7,8 +7,8 @@ license=("GPL-2.0-only")
 pkgdesc="VTE terminal emulator written in GTK"
 depends=(
   "libgdk-pixbuf-2.0-0>=2.22.0"
-  "libglib2.0-0t64>=2.28.0"
-  "libgtk-3-0t64>=3.21.5"
+  "libglib2.0-0>=2.28.0"
+  "libgtk-3-0>=3.21.5"
   "libpango-1.0-0>=1.14.0"
   "libvte-2.91-0>=0.51.90"
   "libx11-6"
