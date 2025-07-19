@@ -1,12 +1,12 @@
 pkgname="krita-app"
 gives="krita"
 arch=("amd64")
-pkgver="5.2.9"
+pkgver="5.2.11"
 url='https://krita.org'
 pkgdesc="Professional free and open source painting program from KDE"
 maintainer=("harrietobrien <harrietobrien@protonmail.com>" "James Ed Randson <jimedrand@disroot.org>")
 source=("https://download.kde.org/stable/${gives}/${pkgver}/${gives}-${pkgver}-x86_64.AppImage")
-sha256sums=("e81dedfdaf52d69daf280856265dcbca81b1c3cfab615a90147a9a63c132b308")
+sha256sums=("09c0c325bdf9b1e8494ce9ae8322b6ca5fcb337a7d4b08c8f3b98b8ab95c5bfd")
 
 package() {
   install -Dm755 "${gives}-${pkgver}-x86_64.AppImage" "${pkgdir}/usr/bin/krita"
