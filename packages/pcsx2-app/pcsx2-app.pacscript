@@ -3,6 +3,7 @@ gives="pcsx2"
 arch=("amd64")
 pkgver="2.4.0"
 repology=("project: pcsx2")
+depends=("libfuse-dev")
 url='https://pcsx2.net'
 pkgdesc="PCSX2 is an open source PlayStation 2 Emulator"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
