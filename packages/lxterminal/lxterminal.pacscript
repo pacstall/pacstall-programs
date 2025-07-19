@@ -20,7 +20,7 @@ makedepends=(
   "intltool"
   "libglib2.0-dev"
   "libgtk2.0-dev"
-  "libvte-dev"
+  "libvte-2.91-dev"
   "libxml2-utils"
   "xsltproc"
 )
