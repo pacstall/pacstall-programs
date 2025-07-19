@@ -4,6 +4,7 @@ pkgbase = pcsx2-app
 	pkgdesc = PCSX2 is an open source PlayStation 2 Emulator
 	url = https://pcsx2.net
 	arch = amd64
+	depends = libfuse-dev
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: pcsx2
 	source = https://github.com/PCSX2/pcsx2/releases/download/v2.4.0/pcsx2-v2.4.0-linux-appimage-x64-Qt.AppImage
