@@ -7346,8 +7346,8 @@ pkgbase = lxterminal
 	url = http://www.lxde.org/
 	arch = amd64
 	depends = libgdk-pixbuf-2.0-0>=2.22.0
-	depends = libglib2.0-0t64>=2.28.0
-	depends = libgtk-3-0t64>=3.21.5
+	depends = libglib2.0-0>=2.28.0
+	depends = libgtk-3-0>=3.21.5
 	depends = libpango-1.0-0>=1.14.0
 	depends = libvte-2.91-0>=0.51.90
 	depends = libx11-6
