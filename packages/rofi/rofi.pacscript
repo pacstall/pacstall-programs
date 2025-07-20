@@ -63,7 +63,7 @@ build() {
 
 check() {
   cd "${pkgname}~${pkgver}"
-  make -j"${NCPU}" check || true
+  make -j"${NCPU}" check
 }
 
 clean() {
