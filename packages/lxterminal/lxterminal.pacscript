@@ -31,7 +31,7 @@ maintainer=("Don Alfons <donalfonsnnisnoni@gmail.com>")
 prepare() {
   cd "${pkgname}~${pkgver}"
   ./autogen.sh
-  ./configure --prefix="/usr/" --enable-gtk3 --enable-man
+  ./configure --prefix=/usr --enable-gtk3 --enable-man
 }
 
 build() {
