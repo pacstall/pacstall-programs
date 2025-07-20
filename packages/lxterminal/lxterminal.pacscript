@@ -44,11 +44,6 @@ check() {
   make -j1 check
 }
 
-clean() {
-  cd "${pkgname}~${pkgver}"
-  make clean || true
-}
-
 package() {
   cd "${pkgname}~${pkgver}"
   make DESTDIR="${pkgdir}" install
