@@ -1,7 +1,7 @@
 pkgname="rofi"
 pkgver="1.7.9.1"
 arch=("any")
-url="https://github.com/davatorium/rofi"
+url='https://github.com/davatorium/rofi'
 license=("MIT")
 pkgdesc="A window switcher, application launcher, and dmenu replacement."
 depends=(
