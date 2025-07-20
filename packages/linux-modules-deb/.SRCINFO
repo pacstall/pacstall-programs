@@ -1,13 +1,13 @@
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.16.0-061600rc5-generic
-	pkgver = 6.16~rc5
+	gives = linux-modules-6.16.0-061600rc6-generic
+	pkgver = 6.16~rc6
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16-rc5/arm64/linux-modules-6.16.0-061600rc5-generic_6.16.0-061600rc5.202507062141_arm64.deb
-	sha256sums_arm64 = 85e1f496e87f525b8baa9291063fd8246328b531d1356482eed4c9c70d7916db
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16-rc5/amd64/linux-modules-6.16.0-061600rc5-generic_6.16.0-061600rc5.202507062141_amd64.deb
-	sha256sums_amd64 = 65fd624c3914b46060527ae7301d72cd42d52a13d5a628d1c0e2dc8e3db4f36d
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16-rc6/arm64/linux-modules-6.16.0-061600rc6-generic_6.16.0-061600rc6.202507132137_arm64.deb
+	sha256sums_arm64 = 073b51d7a99c786ec2e3e29d9cec98565618f83d7f81269dc13c42371a078538
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16-rc6/amd64/linux-modules-6.16.0-061600rc6-generic_6.16.0-061600rc6.202507132137_amd64.deb
+	sha256sums_amd64 = 3a2e5f9e905a593812f25b89d808ebb03f35b25b2c32ce3c23be5af25d7a66c1
 
 pkgname = linux-modules-deb
