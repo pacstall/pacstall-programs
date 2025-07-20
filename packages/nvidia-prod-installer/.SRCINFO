@@ -1,11 +1,14 @@
 pkgbase = nvidia-prod-installer
 	gives = nvidia-prod-installer-570
-	pkgver = 570.169
+	pkgver = 570.172.08
 	pkgdesc = NVIDIA driver installer with both proprietary and open source module options (Production Branch)
 	url = https://www.nvidia.com/en-us/drivers/unix/
 	arch = amd64
+	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://us.download.nvidia.com/XFree86/Linux-x86_64/570.169/NVIDIA-Linux-x86_64-570.169.run
-	sha256sums = 5f32a847795cc5c3f980f79189abac070d91481d7bd3601c02c2829dd3873765
+	source_amd64 = https://us.download.nvidia.com/XFree86/Linux-x86_64/570.172.08/NVIDIA-Linux-x86_64-570.172.08.run
+	sha256sums_amd64 = 0256867e082caf93d7b25fa7c8e69b316062a9c6c72c6e228fad7b238c6fa17d
+	source_arm64 = https://us.download.nvidia.com/XFree86/aarch64/570.172.08/NVIDIA-Linux-aarch64-570.172.08.run
+	sha256sums_arm64 = 15547216f2b514ace7724a5ab4c3327669904a41cafb8d4d9048d3c9b60963d8
 
 pkgname = nvidia-prod-installer
