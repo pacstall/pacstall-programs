@@ -7343,7 +7343,7 @@ pkgname = lutris-git
 pkgbase = lxterminal
 	pkgver = 0.4.1
 	pkgdesc = VTE terminal emulator written in GTK
-	url = http://www.lxde.org/
+	url = https://www.lxde.org/
 	arch = amd64
 	depends = libgdk-pixbuf-2.0-0>=2.22.0
 	depends = libglib2.0-0>=2.28.0
