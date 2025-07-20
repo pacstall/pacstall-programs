@@ -66,11 +66,6 @@ check() {
   make -j"${NCPU}" check
 }
 
-clean() {
-  cd "${pkgname}~${pkgver}"
-  make clean
-}
-
 package() {
   cd "${pkgname}~${pkgver}"
   make install
