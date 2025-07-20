@@ -26,7 +26,7 @@ makedepends=(
 )
 source=("@${pkgname}~${pkgver}::https://github.com/lxde/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=("d5da0646e20ad2be44ef69a9d620be5f1ec43b156dc585ebe203dd7b05c31d88")
-maintainer=("Don Alfons <donalfonsnnisnoni@gmail.com>")
+maintainer=("Don Alfons <donnisnoni@outlook.com>")
 
 prepare() {
   cd "${pkgname}~${pkgver}"
