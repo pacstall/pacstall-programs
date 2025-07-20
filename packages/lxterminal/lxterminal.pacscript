@@ -41,7 +41,7 @@ build() {
 
 check() {
   cd "${pkgname}~${pkgver}"
-  make -j1 check || true
+  make -j1 check
 }
 
 clean() {
