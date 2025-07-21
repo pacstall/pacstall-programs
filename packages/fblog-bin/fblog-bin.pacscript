@@ -1,5 +1,4 @@
 pkgname=("fblog-bin")
-# repology=("project: fblog-bin")
 arch=("amd64")
 pkgver="4.14.0"
 source=("https://github.com/brocode/fblog/releases/download/v${pkgver}/fblog")
