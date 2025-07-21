@@ -53,7 +53,7 @@ maintainer=("Don Alfons <donnisnoni@outlook.com>")
 
 prepare() {
   cd "${pkgname}~${pkgver}"
-  ./configure --prefix="${pkgdir}/usr"
+  ./configure --prefix=/usr
 }
 
 build() {
@@ -68,7 +68,7 @@ check() {
 
 package() {
   cd "${pkgname}~${pkgver}"
-  make install
+  make DESTDIR="${pkgdir}" install
 
   rm -rf "${pkgdir}/usr/include/rofi"
   rm -f "${pkgdir}/usr/lib/pkgconfig/rofi.pc"
