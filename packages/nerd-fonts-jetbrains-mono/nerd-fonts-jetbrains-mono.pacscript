@@ -2,10 +2,10 @@ pkgname="nerd-fonts-jetbrains-mono"
 replaces=("${pkgname}")
 repology=("project: fonts:nerd-fonts")
 arch=("all")
-pkgver="3.1.1"
+pkgver="3.4.0"
 source=("@${pkgname}~${pkgver}::https://github.com/ryanoasis/nerd-fonts/releases/download/v${pkgver}/JetBrainsMono.tar.xz")
 pkgdesc="Patched font JetBrains Mono from Nerd Fonts library"
-sha256sums=("92225abcacf2fe500c59c5f16962528909a0c5caec8e2aa14a6546ff268a1db9")
+sha256sums=("ef552a3e638f25125c6ad4c51176a6adcdce295ab1d2ffacf0db060caf8c1582")
 maintainer=("Damian Bednarczyk <dbednar230@gmail.com>")
 
 package() {
