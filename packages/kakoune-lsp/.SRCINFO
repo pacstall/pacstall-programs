@@ -12,6 +12,7 @@ pkgbase = kakoune-lsp
 	license = Unlicense
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: kak-lsp
 	source = https://github.com/kakoune-lsp/kakoune-lsp/archive/refs/tags/v18.2.0.tar.gz
 	sha256sums = 4823bb733dc3d1e1119af60873b73a62d71d305573abc7d0b016c9077c99913e
 

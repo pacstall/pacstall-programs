@@ -2,6 +2,7 @@ pkgname='kakoune-lsp'
 pkgver='18.2.0'
 pkgdesc='Kakoune Language Server Protocol Client'
 license=('Unlicense' 'MIT')
+repology=('project: kak-lsp')
 url='https://lists.sr.ht/~krobelus/kakoune'
 arch=("amd64" "arm64" "armhf" "i386")
 maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
