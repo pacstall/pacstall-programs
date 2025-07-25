@@ -6,7 +6,7 @@ pkgbase = kakoune-lsp
 	arch = arm64
 	arch = armhf
 	arch = i386
-	makedepends = cargo-1.81
+	makedepends = cargo-1.81 | cargo>=1.81
 	makedepends = make
 	enhances = kakoune
 	license = Unlicense
