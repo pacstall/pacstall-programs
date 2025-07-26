@@ -9,12 +9,14 @@ makedepends=(
   "cmake" "glslang-dev" "libavif-dev" "libbenchmark-dev" "libeis-dev"
   "libinput-dev" "liblcms2-dev" "libluajit-5.1-dev" "libpipewire-0.3-dev"
   "libseat-dev" "libvulkan-dev" "libx11-dev" "libx11-xcb-dev" "libxcb-composite0-dev"
-  "libxcb-errors-dev" "libxcb-ewmh-dev" "libxcb-icccm4-dev" "libxcb-res0-dev" "pkg-config"
+  "libxcb-errors-dev" "libxcb-ewmh-dev" "libxcb-icccm4-dev" "libxcb-res0-dev" "libxcomposite-dev"
+  "libxcursor-dev" "libxdamage-dev" "libxext-dev" "libxfixes-dev" "libxrender-dev" "pkg-config"
 )
 depends=(
   "glslang-tools" "libavif16" "libbenchmark1.9.1" "libeis1" "libinput10"
   "liblcms2-2" "libluajit-5.1-2" "libpipewire-0.3-0t64" "libseat1" "libvulkan1"
-  "libxcb-composite0" "libxcb-errors0" "libxcb-icccm4" "libxcb-res0"
+  "libxcb-composite0" "libxcb-errors0" "libxcb-icccm4" "libxcb-res0" "libxcomposite1"
+  "libxcursor1" "libxdamage1" "libxext6" "libxfixes3" "libxrender1"
 )
 pacdeps=("meson-git" "wayland-protocols-git")
 conflicts=("${gives}")
