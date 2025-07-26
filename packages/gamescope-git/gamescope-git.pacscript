@@ -8,13 +8,13 @@ source=("git+https://github.com/ValveSoftware/gamescope.git")
 makedepends=(
   "cmake" "glslang-dev" "libavif-dev" "libbenchmark-dev" "libeis-dev"
   "libinput-dev" "liblcms2-dev" "libluajit-5.1-dev" "libpipewire-0.3-dev"
-  "libseat-dev" "libx11-dev" "libxcb-composite0-dev" "libxcb-errors-dev" "libxcb-ewmh-dev"
-  "libxcb-icccm4-dev" "libxcb-res0-dev" "pkg-config"
+  "libseat-dev" "libvulkan-dev" "libx11-dev" "libxcb-composite0-dev" "libxcb-errors-dev"
+  "libxcb-ewmh-dev" "libxcb-icccm4-dev" "libxcb-res0-dev" "pkg-config"
 )
 depends=(
   "glslang-tools" "libavif16" "libbenchmark1.9.1" "libeis1" "libinput10"
-  "liblcms2-2" "libluajit-5.1-2" "libpipewire-0.3-0t64" "libseat1" "libxcb-composite0"
-  "libxcb-errors0" "libxcb-icccm4" "libxcb-res0"
+  "liblcms2-2" "libluajit-5.1-2" "libpipewire-0.3-0t64" "libseat1" "libvulkan1"
+  "libxcb-composite0" "libxcb-errors0" "libxcb-icccm4" "libxcb-res0"
 )
 pacdeps=("meson-git" "wayland-protocols-git")
 conflicts=("${gives}")
