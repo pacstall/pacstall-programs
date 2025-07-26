@@ -3541,6 +3541,7 @@ pkgbase = gamescope-git
 	makedepends = libluajit-5.1-dev
 	makedepends = libpipewire-0.3-dev
 	makedepends = libseat-dev
+	makedepends = libx11-dev
 	makedepends = libxcb-composite0-dev
 	makedepends = libxcb-errors-dev
 	makedepends = libxcb-ewmh-dev
