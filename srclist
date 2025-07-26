@@ -6698,6 +6698,7 @@ pkgbase = libwayland-git
 	makedepends = graphviz
 	makedepends = doxygen
 	makedepends = libffi-dev
+	makedepends = libexpat1-dev
 	makedepends = libxslt1-dev
 	makedepends = xmlto
 	pacdeps = meson-git
