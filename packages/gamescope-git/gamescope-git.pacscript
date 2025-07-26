@@ -8,7 +8,7 @@ source=("git+https://github.com/ValveSoftware/gamescope.git")
 makedepends=(
   "cmake" "glslang-dev" "libavif-dev" "libbenchmark-dev" "libeis-dev"
   "libinput-dev" "liblcms2-dev" "libluajit-5.1-dev" "libpipewire-0.3-dev"
-  "libseat-dev" "libxcb-composite0-dev" "libxcb-errors-dev" "libxcb-ewmh-dev"
+  "libseat-dev" "libx11-dev" "libxcb-composite0-dev" "libxcb-errors-dev" "libxcb-ewmh-dev"
   "libxcb-icccm4-dev" "libxcb-res0-dev" "pkg-config"
 )
 depends=(
