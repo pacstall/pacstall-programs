@@ -7,6 +7,7 @@ url='https://wayland.freedesktop.org'
 source=("git+https://gitlab.freedesktop.org/wayland/wayland.git")
 makedepends=("pkg-config" "graphviz" "doxygen" "libxslt1-dev" "xmlto")
 depends=("libffi8" "libexpat1" "libxml2")
+pacdeps=("meson-git")
 provides=(
   "lib${gives}-client0=${pkgver}"
   "lib${gives}-egl1=${pkgver}"

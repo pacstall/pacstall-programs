@@ -12,6 +12,7 @@ pkgbase = libwayland-git
 	makedepends = doxygen
 	makedepends = libxslt1-dev
 	makedepends = xmlto
+	pacdeps = meson-git
 	conflicts = wayland
 	replaces = libwayland-client0
 	replaces = libwayland-egl1
