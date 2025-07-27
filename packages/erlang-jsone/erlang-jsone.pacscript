@@ -4,12 +4,12 @@ pkgver='1.9.0'
 pkgdesc='Erlang JSON library'
 arch=('any')
 repology=("project: ${pkgname}")
-url="https://github.com/sile/${_lib}"
+url='https://github.com/sile/jsone'
 license=('MIT')
 depends=('erlang')
 makedepends=('git' 'make' 'rebar3')
 conflicts=("${pkgname}-git")
-source=("https://github.com/sile/${_lib}/archive/refs/tags/${pkgver}.tar.gz")
+source=("https://github.com/sile/jsone/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=('677d9dd6d613f05dd9a13537769f0f50d3a855a89bf87703024eb909d070c445')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 
