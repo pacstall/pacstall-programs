@@ -1,4 +1,5 @@
-pkgname="rofi"
+pkgbase="rofi"
+pkgname=("rofi" "rofi-dev")
 pkgver="1.7.9.1"
 arch=("any")
 url='https://github.com/davatorium/rofi'
@@ -47,29 +48,43 @@ makedepends=(
 checkdepends=(
   "check"
 )
-source=("@${pkgname}~${pkgver}::https://github.com/davatorium/rofi/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.gz")
+source=("@${pkgbase}~${pkgver}::https://github.com/davatorium/rofi/releases/download/${pkgver}/${pkgbase}-${pkgver}.tar.gz")
 sha256sums=("bb2c0f073b4422acc51a3f97d05275a82464750a33d2f4b120e3d866bb7b9ae5")
 maintainer=("Don Alfons <donnisnoni@outlook.com>")
 
 prepare() {
-  cd "${pkgname}~${pkgver}"
+  cd "${pkgbase}~${pkgver}"
   ./configure --prefix=/usr
 }
 
 build() {
-  cd "${pkgname}~${pkgver}"
+  cd "${pkgbase}~${pkgver}"
   make -j"${NCPU}"
 }
 
 check() {
-  cd "${pkgname}~${pkgver}"
+  cd "${pkgbase}~${pkgver}"
   make -j"${NCPU}" check
 }
 
-package() {
-  cd "${pkgname}~${pkgver}"
+package_rofi() {
+  pkgdesc="A window switcher, application launcher, and dmenu replacement"
+  depends=("${depends[@]}")
+
+  cd "${pkgbase}~${pkgver}"
   make DESTDIR="${pkgdir}" install
 
-  rm -rf "${pkgdir}/usr/include/rofi"
-  rm -f "${pkgdir}/usr/lib/pkgconfig/rofi.pc"
+  rm -rf "${pkgdir:?}/usr/include/rofi"
+  rm -f "${pkgdir:?}/usr/lib/pkgconfig/rofi.pc"
+}
+
+package_rofi-dev() {
+  pkgdesc="Development files for rofi"
+
+  cd "${pkgbase}~${pkgver}"
+  make DESTDIR="${pkgdir}" install
+
+  rm -rf "${pkgdir:?}/usr/bin"
+  rm -rf "${pkgdir:?}/usr/share"
+  rm -rf "${pkgdir:?}/usr/lib/rofi"
 }

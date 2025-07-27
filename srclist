@@ -12072,6 +12072,26 @@ pkgbase = rofi
 	sha256sums = bb2c0f073b4422acc51a3f97d05275a82464750a33d2f4b120e3d866bb7b9ae5
 
 pkgname = rofi
+	pkgdesc = A window switcher, application launcher, and dmenu replacement
+	depends = libcairo2
+	depends = libgdk-pixbuf-2.0-0
+	depends = libglib2.0-0>=2.72
+	depends = libpango-1.0-0>=1.50
+	depends = libpangocairo-1.0-0
+	depends = libstartup-notification0>=0.11
+	depends = libxcb-cursor0
+	depends = libxcb-ewmh2
+	depends = libxcb-icccm4
+	depends = libxcb-randr0
+	depends = libxcb-util1
+	depends = libxcb-xinerama0
+	depends = libxcb-xkb1
+	depends = libxcb1
+	depends = libxkbcommon-x11-0
+	depends = libxkbcommon0>=0.4.1
+
+pkgname = rofi-dev
+	pkgdesc = Development files for rofi
 ---
 pkgbase = rojo-bin
 	gives = rojo
