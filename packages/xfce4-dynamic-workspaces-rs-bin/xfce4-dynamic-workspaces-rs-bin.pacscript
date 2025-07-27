@@ -1,11 +1,11 @@
 gives="xfce4-dynamic-workspaces"
 pkgname="${gives}-rs-bin"
 pkgdesc="Dynamic workspaces for XFCE, similar to GNOME"
-pkgver="0.2.0"
+pkgver="0.3.0"
 arch=("arm64" "amd64")
 source=("${gives}::https://github.com/rhino-linux/${gives}/releases/download/${pkgver}/${gives}-${CARCH}")
-sha256sums_amd64=("87726bd225fed29d5030b5c69a06e2785c5e81b541eeeb83185cbfb83a87f073")
-sha256sums_arm64=("ffe69b4f0fdcac2e74284b6948b71988bc88a0c9105422b5f639733c1475bec8")
+sha256sums_amd64=("0a1d230cee6a71da75628397332168f37a6ca6bb75258a8960d91138f124d6c1")
+sha256sums_arm64=("73bf91185c3cc676aef19a62b1fb4b98bcbd8df3af266bde4e36a410c20c8501")
 provides=("${gives}-plugin")
 replaces=("${provides[@]}")
 conflicts=("${provides[@]}")
