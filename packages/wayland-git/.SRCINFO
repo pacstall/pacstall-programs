@@ -1,4 +1,4 @@
-pkgbase = libwayland-git
+pkgbase = wayland-git
 	gives = wayland
 	pkgver = 1.24.0
 	pkgdesc = Core Wayland window system code and protocol
@@ -37,4 +37,4 @@ pkgbase = libwayland-git
 	repology = project: wayland
 	source = git+https://gitlab.freedesktop.org/wayland/wayland.git
 
-pkgname = libwayland-git
+pkgname = wayland-git

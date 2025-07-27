@@ -1,4 +1,4 @@
-pkgname="libwayland-git"
+pkgname="wayland-git"
 gives="wayland"
 repology=("project: ${gives}")
 arch=('amd64')
