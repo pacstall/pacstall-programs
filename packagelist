@@ -635,6 +635,9 @@ rider-bin
 rio-wayland-deb
 rio-x11-deb
 rnnoise
+rofi:pkgbase
+rofi:rofi-dev
+rofi:rofi
 rojo-bin
 rosary-deb
 rpcs3-app
