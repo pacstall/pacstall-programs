@@ -1,9 +1,9 @@
 pkgname="qt6pas"
 gives="libqt6pas-dev"
-pkgver="6.2.7"
+pkgver="6.2.10"
 _lazarus_tag="3_0"
 _lazarus_version="3.0.0"
-url="https://gitlab.com/freepascal.org/lazarus/"
+url='https://gitlab.com/freepascal.org/lazarus/'
 source=("@${pkgname}~${pkgver}::https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_${_lazarus_tag}/lazarus-lazarus_${_lazarus_tag}.tar.bz2")
 arch=("amd64")
 makedepends=('qt6-base-dev' 'qmake6' 'libgl-dev')

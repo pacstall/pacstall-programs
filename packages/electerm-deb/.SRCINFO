@@ -1,12 +1,12 @@
 pkgbase = electerm-deb
 	gives = electerm
-	pkgver = 1.91.16
+	pkgver = 1.100.20
 	pkgdesc = Open-sourced terminal/ssh/telnet/serialport/sftp client
 	arch = amd64
 	breaks = electerm-bin
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 	repology = project: electerm
-	source = https://github.com/electerm/electerm/releases/download/v1.91.16/electerm-1.91.16-linux-amd64.deb
-	sha256sums = bc9cf74724e602432b19543d1e9f7343d4d35f7992626f23c1a8538d5973487a
+	source = https://github.com/electerm/electerm/releases/download/v1.100.20/electerm-1.100.20-linux-amd64.deb
+	sha256sums = a92057853d0e44149b8997c554875bdd26b4963dd7d9899d5a566dc2df232cce
 
 pkgname = electerm-deb

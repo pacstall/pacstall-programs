@@ -135,7 +135,7 @@ endlessh-git
 enpass-deb
 epson-inkjet-printer-stylus-nx110-series-deb
 epson-printer-utility-deb
-exa-git
+erlfmt
 exercism-cli-bin
 exiftool
 exploitdb-git
@@ -146,7 +146,8 @@ facetimehd-firmware
 fake-ubuntu-advantage-tools-deb
 fast
 fastfetch-git
-fblog-deb
+fblog-bin
+feishin-app
 fennel
 fennel-bin
 ferdium-deb
@@ -156,7 +157,6 @@ ffmpeg4.4
 ffnvcodec-headers
 ffsend-bin
 figma-linux-deb
-firefox-arm64-deb
 firefox-bin
 firefox-deb
 firefox-developer-edition-bin
@@ -221,6 +221,7 @@ goverlay-bin
 gpu-screen-recorder
 gradience
 gradience-git
+gradualizer-git
 graillon
 grapejuice-git
 greetd-phrog
@@ -235,6 +236,7 @@ hamclock-big
 hamclock-bigger
 hamclock-huge
 harmonoid-deb
+hayase-deb
 headset-deb
 helix
 hello
@@ -274,18 +276,23 @@ ivpn-ui-deb
 jellyfin-media-player-deb
 jetbrains-toolbox-bin
 joplin-desktop-app
+jsonnet-bundler-bin
 kakoune
+kakoune-lsp
 kakoune-powerline-git
 kalendar-git
+kanata-bin
 kate-backport-deb
 kate5-data-backport-deb
 kdenlive-app
 keepassxc
 keybase-deb
+keyd-deb
 kirc
 komorebi-fork-deb
 koodo-reader-deb
 krita-app
+kubeswitch-bin
 kvantum
 kwin-krohnkite
 kxstudio-repos-deb
@@ -326,6 +333,7 @@ libtomlplusplus-header
 libwebrtc-audio-processing1-deb
 libx86emu
 libxapp1-deb
+libxkbcommon
 lightpad-git
 linked-deb
 linux-headers-deb
@@ -355,6 +363,7 @@ lunacy-deb
 lunarclient-app
 lutris-deb
 lutris-git
+lxterminal
 ly
 ly-git
 lynxfetch
@@ -474,6 +483,7 @@ nerd-fonts-cascadia-code
 nerd-fonts-fira-code
 nerd-fonts-hack
 nerd-fonts-jetbrains-mono
+nodejs-deb
 nodejs-lts-deb
 nofetch
 noisetorch-bin
@@ -522,6 +532,7 @@ opera-developer-deb
 orchis-kde
 os-installer-git
 osu-lazer-app
+osu-lazer-tachyon-app
 owofetch
 p3x-onenote-app
 pacget-git
@@ -559,6 +570,8 @@ popsicle
 popsicle-app
 postman-bin
 powertop-git
+ppsspp-app
+ppsspp-git
 prettier
 prismlauncher-git
 proton-python-client
@@ -600,6 +613,7 @@ renegate
 reshade-shaders-git
 restic-bin
 resticprofile-bin
+rhino-calamares-settings-git
 rhino-core
 rhino-docker-builder-git
 rhino-grub-theme-git
@@ -684,6 +698,8 @@ suyu-app
 systemcoding-conky
 tabby-deb
 tailscale
+talm-bin
+talosctl-bin
 taskwarrior
 tdrop-git
 teams-for-linux-deb
@@ -792,6 +808,7 @@ xdg-ninja-git
 xdg-terminal-exec-git
 xfce4-deb
 xfce4-dynamic-workspaces-plugin-git
+xfce4-dynamic-workspaces-rs-bin
 xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
 xmind-vana-deb

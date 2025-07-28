@@ -1,9 +1,0 @@
-pkgname='firefox-arm64-deb'
-gives='firefox-arm64-dummy'
-pkgver='136.0+dummy'
-arch=('arm64')
-pacdeps=('firefox-deb')
-source=('https://github.com/oklopfer/debs/raw/master/empty')
-url='https://www.mozilla.org/en-US/firefox'
-pkgdesc='Transitional/deprecated package for firefox-deb'
-maintainer=('Oren Klopfer <oren@taumoda.com>')

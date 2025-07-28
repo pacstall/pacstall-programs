@@ -1,11 +1,11 @@
 pkgname="zig-bin"
 repology=("project: zig")
-pkgver="0.14.0"
+pkgver="0.14.1"
 arch=('amd64' 'arm64')
-sha256sums_amd64=("473ec26806133cf4d1918caf1a410f8403a13d979726a9045b421b685031a982")
-sha256sums_arm64=("ab64e3ea277f6fc5f3d723dcd95d9ce1ab282c8ed0f431b4de880d30df891e4f")
-source_amd64=("@${pkgname}~${pkgver}::https://ziglang.org/download/${pkgver}/zig-linux-x86_64-${pkgver}.tar.xz")
-source_arm64=("@${pkgname}~${pkgver}::https://ziglang.org/download/${pkgver}/zig-linux-aarch64-${pkgver}.tar.xz")
+source_amd64=("@${pkgname}~${pkgver}::https://ziglang.org/download/${pkgver}/zig-x86_64-linux-${pkgver}.tar.xz")
+source_arm64=("@${pkgname}~${pkgver}::https://ziglang.org/download/${pkgver}/zig-aarch64-linux-${pkgver}.tar.xz")
+sha256sums_amd64=("24aeeec8af16c381934a6cd7d95c807a8cb2cf7df9fa40d359aa884195c4716c")
+sha256sums_arm64=("f7a654acc967864f7a050ddacfaa778c7504a0eca8d2b678839c21eea47c992b")
 pkgdesc="General-purpose programming language and toolchain for maintaining robust, optimal and reusable software"
 url='https://ziglang.org/'
 maintainer=("Andrew Barchuk <andrew@raindev.io>")

@@ -1,7 +1,7 @@
 pkgbase = ly
-	pkgver = 1.1.0
+	pkgver = 1.1.1
 	pkgdesc = TUI display manager
-	url = https://codeberg.org/AnErrupTion/ly
+	url = https://codeberg.org/fairyglade/ly
 	priority = required
 	arch = any
 	depends = systemd
@@ -15,7 +15,7 @@ pkgbase = ly
 	license = WTFPL
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: ly
-	source = ly::https://codeberg.org/AnErrupTion/ly/archive/v1.1.0.tar.gz
-	sha256sums = SKIP
+	source = ly::https://codeberg.org/fairyglade/ly/archive/v1.1.1.tar.gz
+	sha256sums = 4d56bf14f091648b180f0d72a3b40647a175713975fb9268d4830cd8dd4184b3
 
 pkgname = ly

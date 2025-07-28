@@ -7,7 +7,6 @@ depends=("nodejs")
 source=("@${pkgname}~${pkgver}::https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz")
 sha256sums=("14841de7b71a93123d22997db22d088debb13976778d869e3622199108e85b4b")
 repology=("project: ${pkgname}")
-maintainer=()
 
 package() {
   cd "${pkgname}~${pkgver}"

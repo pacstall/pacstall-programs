@@ -1,12 +1,12 @@
 pkgname="kdenlive-app"
 gives="kdenlive"
 arch=("amd64")
-pkgver="25.04.2"
+pkgver="25.04.3"
 url='https://kdenlive.org'
 pkgdesc="Free and Open Source Video Editor from KDE"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 source=("https://download.kde.org/stable/${gives}/${pkgver%.*}/linux/${gives}-${pkgver}-x86_64.AppImage")
-sha256sums=("d997f182941fd72a18723b0b1e31134bcbd95c9430c77bd55b8d5087d121044a")
+sha256sums=("57d488f5a484a52e8920e02b2c9263146b5665f4ab045abfd1a8631b2abf939a")
 repology=("project: ${gives}")
 
 package() {

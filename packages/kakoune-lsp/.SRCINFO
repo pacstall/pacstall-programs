@@ -1,0 +1,19 @@
+pkgbase = kakoune-lsp
+	pkgver = 18.2.0
+	pkgdesc = Kakoune Language Server Protocol Client
+	url = https://lists.sr.ht/~krobelus/kakoune
+	arch = amd64
+	arch = arm64
+	arch = armhf
+	arch = i386
+	makedepends = cargo-1.81 | cargo>=1.81
+	makedepends = make
+	enhances = kakoune
+	license = Unlicense
+	license = MIT
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: kak-lsp
+	source = https://github.com/kakoune-lsp/kakoune-lsp/archive/refs/tags/v18.2.0.tar.gz
+	sha256sums = 4823bb733dc3d1e1119af60873b73a62d71d305573abc7d0b016c9077c99913e
+
+pkgname = kakoune-lsp

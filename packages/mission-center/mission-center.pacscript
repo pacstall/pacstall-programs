@@ -2,7 +2,7 @@ pkgname="mission-center"
 pkgver="0.6.0"
 pkgdesc="Monitor your CPU, Memory, Disk, Network and GPU usage"
 arch=("amd64" "arm64")
-url="https://gitlab.com/mission-center-devs/mission-center"
+url='https://gitlab.com/mission-center-devs/mission-center'
 license=("GPL-3.0-or-later")
 depends=(
   "dmidecode"

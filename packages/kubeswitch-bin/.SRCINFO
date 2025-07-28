@@ -1,0 +1,14 @@
+pkgbase = kubeswitch-bin
+	gives = switcher
+	pkgver = 0.9.3
+	pkgdesc = The kubectx for operators
+	arch = amd64
+	arch = arm64
+	maintainer = faelau <git@faessler.sh>
+	repology = project: kubeswitch
+	source_amd64 = switcher~0.9.3::https://github.com/danielfoehrKn/kubeswitch/releases/download/0.9.3/switcher_linux_amd64
+	sha256sums_amd64 = 8554ac5b8767ec337025e01d468bcf9e90be56a0b23891bbb47ecfe4191fa56f
+	source_arm64 = switcher~0.9.3::https://github.com/danielfoehrKn/kubeswitch/releases/download/0.9.3/switcher_linux_arm64
+	sha256sums_arm64 = 7597a5f9f755100969e10ec2f6142dcd9b1ec4012adc227a3aa90ea04964974d
+
+pkgname = kubeswitch-bin

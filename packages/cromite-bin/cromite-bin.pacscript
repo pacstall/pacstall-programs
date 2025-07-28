@@ -1,7 +1,7 @@
 pkgname="cromite-bin"
 gives="cromite"
-pkgver="132.0.6834.163"
-pkgsha="ae296a42b9b1412a54aca8635affabd26ea8ce1e"
+pkgver="138.0.7204.97"
+pkgsha="418943de425329115e0783375c12ee5aec36e2b6"
 arch=("amd64")
 pkgdesc="Cromite is a Chromium fork based on Bromite with built-in support for ad blocking and an eye for privacy"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
@@ -10,7 +10,7 @@ source=(
   "https://www.cromite.org/app_icon.png"
 )
 sha256sums=(
-  "f85d696e4d400b903f675f86aa379a5e8d00f57fbbf8d8f541cf077f6bc5da2e"
+  "0cd315866c9c5df0307067264c56fbde90947a30f1e621a73e98d5317ac9e54b"
   "95ea4e28bc95c30200d832c075a04d79191110573f8bbebf881b81c4cef6c211"
 )
 repology=("project: ${gives}")
