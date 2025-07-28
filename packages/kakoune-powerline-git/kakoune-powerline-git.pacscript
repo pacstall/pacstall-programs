@@ -1,5 +1,6 @@
 pkgname='kakoune-powerline-git'
-pkgname='kakoune-powerline'
+gives='kakoune-powerline'
+conflicts=("${gives}")
 pkgver="1.1.0"
 pkgdesc='Kakoune modeline, but with passion'
 license=('MIT')
@@ -7,16 +8,17 @@ url='https://github.com/andreyorst/powerline.kak'
 arch=("all")
 maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
 source=(
-  "::https://github.com/andreyorst/powerline.kak.git"
+  'https://github.com/andreyorst/powerline.kak.git'
 )
 sha256sums=(
   'SKIP'
 )
 depends=('kakoune')
+enhances=('kakoune')
 
 prepare() {
-  rm -rf "${srcdir}/powerline.kak/.git"
-  rm -rf "${srcdir}/powerline.kak/.github"
+  rm -rf "${srcdir}/powerline.kak/.git" \
+    "${srcdir}/powerline.kak/.github"
 }
 
 package() {
