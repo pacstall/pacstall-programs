@@ -1,5 +1,5 @@
 pkgbase = nano
-	pkgver = 7.2
+	pkgver = 8.5
 	pkgdesc = Free replacement for the Pico text editor
 	arch = any
 	makedepends = libncurses-dev
@@ -13,9 +13,9 @@ pkgbase = nano
 	makedepends = git
 	makedepends = pkg-config
 	makedepends = texinfo
-	license = GPL3
+	license = GPL-3.0
 	repology = project: nano
-	source = @nano~7.2::https://nano-editor.org/dist/v7/nano-7.2.tar.xz
-	sha256sums = 86f3442768bd2873cec693f83cdf80b4b444ad3cc14760b74361474fc87a4526
+	source = @nano~8.5::https://nano-editor.org/dist/v8/nano-8.5.tar.xz
+	sha256sums = 000b011d339c141af9646d43288f54325ff5c6e8d39d6e482b787bbc6654c26a
 
 pkgname = nano

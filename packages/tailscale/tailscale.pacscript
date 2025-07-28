@@ -1,7 +1,7 @@
 pkgname="tailscale"
-pkgver="1.58.2"
+pkgver="1.84.2"
 source=("@${pkgname}~${pkgver}::https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz")
-url="https://tailscale.com"
+url='https://tailscale.com'
 depends=('iptables')
 makedepends=('golang-go' 'git')
 pkgdesc="Private WireGuard networks made easy"
@@ -9,7 +9,8 @@ maintainer=("Nathan <ndowens@artixlinux.org>")
 arch=('amd64')
 repology=("project: ${pkgname}")
 incompatible=('ubuntu:jammy' 'debian:bookworm')
-sha256sums=("452f355408e4e2179872387a863387e06346fc8a6f9887821f9b8a072c6a5b0a")
+sha256sums=("32673e5552e1176f1028a6a90a4c892d2475c92d1e952ca16156dc523d14d914")
+external_connection=true
 
 prepare() {
   cd "${pkgname}~${pkgver}"

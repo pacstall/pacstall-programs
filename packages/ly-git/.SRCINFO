@@ -2,7 +2,7 @@ pkgbase = ly-git
 	gives = ly
 	pkgver = 1.0.2
 	pkgdesc = TUI display manager
-	url = https://codeberg.org/AnErrupTion/ly
+	url = https://codeberg.org/fairyglade/ly
 	priority = required
 	arch = any
 	depends = systemd
@@ -16,7 +16,7 @@ pkgbase = ly-git
 	license = WTFPL
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: ly
-	source = https://codeberg.org/AnErrupTion/ly.git
+	source = https://codeberg.org/fairyglade/ly.git
 	sha256sums = SKIP
 
 pkgname = ly-git

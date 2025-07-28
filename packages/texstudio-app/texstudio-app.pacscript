@@ -9,7 +9,6 @@ source=("https://github.com/texstudio-org/texstudio/releases/download/${pkgver}/
 appimage="${gives}-${pkgver}-x86_64.AppImage"
 sha256sums=("74bb0940d3380b5b039c331ccbdd428b26d0acd4c1f3fc95691f4478252bd405")
 repology=("project: ${gives}")
-maintainer=()
 
 package() {
   cd "${srcdir}"

@@ -6,7 +6,6 @@ pkgdesc='A readline() replacement for UNIX without termcap (ncurses)'
 url='https://troglobit.com/projects/editline/'
 license=('custom:permissive')
 makedepends=('automake' 'libtool')
-maintainer=()
 repology=('project: editline-troglobit')
 source=("${pkgname}::https://github.com/troglobit/editline.git#tag=${pkgver}")
 
