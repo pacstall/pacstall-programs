@@ -1,6 +1,6 @@
 pkgbase = libdrm
 	gives = libdrm
-	pkgver = 2.4.124
+	pkgver = 2.4.125
 	pkgdesc = Userspace interface to kernel DRM services
 	url = https://dri.freedesktop.org/
 	arch = any
@@ -18,16 +18,16 @@ pkgbase = libdrm
 	replaces = libdrm-radeon1
 	replaces = libdrm-amdgpu1
 	replaces = libdrm-dev
-	provides = libdrm2=2.4.124
-	provides = libdrm-common=2.4.124
-	provides = libdrm-intel1=2.4.124
-	provides = libdrm-nouveau2=2.4.124
-	provides = libdrm-radeon1=2.4.124
-	provides = libdrm-amdgpu1=2.4.124
-	provides = libdrm-dev=2.4.124
+	provides = libdrm2=2.4.125
+	provides = libdrm-common=2.4.125
+	provides = libdrm-intel1=2.4.125
+	provides = libdrm-nouveau2=2.4.125
+	provides = libdrm-radeon1=2.4.125
+	provides = libdrm-amdgpu1=2.4.125
+	provides = libdrm-dev=2.4.125
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = xdavius <xdavius@github.com>
-	source = https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-2.4.124/drm-libdrm-2.4.124.tar.gz
-	sha256sums = 49c077f3938147e7c321fe89255eb189c1be68f6ed0aa36e29d38e3db0e84e08
+	source = @drm-libdrm-2.4.125::https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-2.4.125/drm-libdrm-2.4.125.tar.gz
+	sha256sums = dd3e86a9fae99322d6430b28397f8e03ac4fb8deeed9a6e214bd5ced86db68c6
 
 pkgname = libdrm

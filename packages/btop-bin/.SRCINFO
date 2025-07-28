@@ -1,6 +1,6 @@
 pkgbase = btop-bin
 	gives = btop
-	pkgver = 1.4.3
+	pkgver = 1.4.4
 	pkgdesc = A monitor of system resourecs, bpytop ported to C++
 	arch = amd64
 	breaks = btop
@@ -8,7 +8,7 @@ pkgbase = btop-bin
 	breaks = btop-deb
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: btop
-	source = https://github.com/aristocratos/btop/releases/download/v1.4.3/btop-x86_64-linux-musl.tbz
-	sha256sums = 98f11024899fea672490a2d9515f8b8b863c09f33e0e681f4fdbaa37abfd464a
+	source = https://github.com/aristocratos/btop/releases/download/v1.4.4/btop-x86_64-linux-musl.tbz
+	sha256sums = fec7d1b59c671290a0f80d5a32617ea6d60412485fc04318fd194b9550ff6b49
 
 pkgname = btop-bin

@@ -1,0 +1,2 @@
+#!/bin/sh
+env OSU_EXTERNAL_UPDATE_PROVIDER=1 OSU_EXTERNAL_UPDATE_STREAM=Tachyon /opt/osu-lazer/osu.AppImage "$@"

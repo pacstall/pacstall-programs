@@ -49,7 +49,6 @@ pkgbase = gradience-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/GradienceTeam/Gradience.git
 	pacdeps_noble = python3-zombie-imp
-	pacdeps_oracular = python3-zombie-imp
 	pacdeps_devel = python3-zombie-imp
 	pacdeps_trixie = python3-zombie-imp
 	pacdeps_sid = python3-zombie-imp
