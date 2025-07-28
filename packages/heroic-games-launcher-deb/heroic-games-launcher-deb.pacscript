@@ -1,9 +1,9 @@
 pkgname="heroic-games-launcher-deb"
 gives="heroic"
 repology=("project: heroic-games-launcher")
-pkgver="2.17.2"
+pkgver="2.18.0"
 source=("https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v${pkgver}/Heroic-${pkgver}-linux-amd64.deb")
 pkgdesc="An Open Source alternative to the Epic Games launcher"
-sha256sums=("57083684584a5e1765c226e91d5e78b34845ae03738256b79116212e23a4c30d")
+sha256sums=("43abb47c292d7f217d9d9a034b96eabb0d304c9e5f048b2e44f3ee5c7a3e296f")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
