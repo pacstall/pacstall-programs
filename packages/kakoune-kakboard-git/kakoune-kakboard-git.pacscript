@@ -10,6 +10,7 @@ source=(
   "${gives}::https://github.com/lePerdu/kakboard.git"
 )
 depends=('kakoune')
+enhances=('kakoune')
 optdepends=(
   'wl-clipboard: for Wayland clipboard integration'
   'xclip: for X11 clipboard integration'
