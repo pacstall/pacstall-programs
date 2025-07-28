@@ -785,6 +785,7 @@ watchexec-bin
 wavey-launcher-bin
 waydroid-deb
 wayland
+wayland-git
 wayland-protocols-git
 waynergy
 webapp-manager
