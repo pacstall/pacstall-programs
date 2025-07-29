@@ -1,0 +1,25 @@
+pkgname="ffmpeg"
+pkgver="7.1.1"
+pkgdesc="Complete, cross-platform solution to record, convert and stream audio and video"
+repology=("project: ${pkgname}")
+url='https://ffmpeg.org'
+makedepends=("autoconf" "automake" "build-essential" "cmake" "git-core" "libass-dev" "libfreetype6-dev" "libgnutls28-dev" "libmp3lame-dev" "libsdl2-dev" "libtool" "libva-dev" "libvdpau-dev" "libvorbis-dev" "libxcb1-dev" "libxcb-shm0-dev" "libxcb-xfixes0-dev" "meson" "ninja-build" "pkg-config" "texinfo" "wget" "yasm" "zlib1g-dev" "libx264-dev" "libunistring-dev" "libaom-dev" "libdav1d-dev" "nasm" "libx265-dev" "libx265-dev" "libnuma-dev" "libvpx-dev" "libfdk-aac-dev" "libopus-dev" "libaom-dev" "libsvtav1enc-dev" "libdav1d-dev")
+arch=("amd64")
+source=("https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n${pkgver}.tar.gz")
+sha256sums=("f117507dc501f2a6c11f9241d8d0c3213846cfad91764361af37befd6b6c523d")
+maintainer=("Sarim <sarimw@proton.me>")
+
+prepare() {
+  cd "FFmpeg-n${pkgver}"
+  ./configure --pkg-config-flags="--static" --extra-libs="-lpthread -lm" --ld="g++" --enable-gpl --enable-gnutls --enable-libaom --enable-libass --enable-libfdk-aac --enable-libfreetype --enable-libmp3lame --enable-libopus --enable-libsvtav1 --enable-libdav1d --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libx265 --enable-nonfree
+}
+
+build() {
+  cd "FFmpeg-n${pkgver}"
+  make -j"${NCPU}"
+}
+
+package() {
+  cd "FFmpeg-n${pkgver}"
+  make install DESTDIR="${pkgdir}"
+}
