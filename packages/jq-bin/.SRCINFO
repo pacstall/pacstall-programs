@@ -1,0 +1,12 @@
+pkgbase = jq-bin
+	gives = jq
+	pkgver = 1.8.1
+	pkgdesc = Lightweight and flexible command-line JSON processor
+	url = https://jqlang.org/
+	arch = any
+	license = MIT
+	maintainer = Don Alfons <donnisnoni@outlook.com>
+	repology = project: jq
+	source = https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-CARCH_REPLACE
+
+pkgname = jq-bin
