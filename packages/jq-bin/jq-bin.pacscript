@@ -1,6 +1,6 @@
 pkgname="jq-bin"
 gives="jq"
-arch=("any")
+arch=("amd64" "arm64" "armel" "armhf" "i386" "ppc64el" "riscv64" "s390x")
 pkgver="1.8.1"
 repology=("project: ${gives}")
 license=("MIT")
