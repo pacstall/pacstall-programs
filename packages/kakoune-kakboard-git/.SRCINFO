@@ -1,6 +1,6 @@
 pkgbase = kakoune-kakboard-git
 	gives = kakoune-kakboard
-	pkgver = 0.0.0
+	pkgver = 0.0.1
 	pkgdesc = Clipboard integration for Kakoune
 	url = https://github.com/lePerdu/kakboard
 	arch = all
