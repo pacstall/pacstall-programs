@@ -18,5 +18,5 @@ sha256sums_riscv64=("3d7274ea14254f0220b6a6d1b8756a957f739b6a20e3886358377e8ea66
 sha256sums_s390x=("b792df2f5cced0404a5fd3796d7d47625dc087b3e3dcaa81017088590bb2f3a1")
 
 package() {
-  install -Dm755 "${gives}-linux-${CARCH}" -T "${pkgdir:?}/usr/bin/jq"
+  install -Dm755 "${gives}-linux-${CARCH}" -T "${pkgdir}/usr/bin/jq"
 }
