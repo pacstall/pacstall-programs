@@ -1,6 +1,6 @@
 pkgbase = kakoune-auto-pairs-git
 	gives = kakoune-auto-pairs
-	pkgver = 0.0.0
+	pkgver = 0.0.1
 	pkgdesc = Auto-pairing of characters for kakoune
 	url = https://github.com/alexherbo2/auto-pairs.kak
 	arch = all
