@@ -1,17 +1,13 @@
 pkgname='kakoune-auto-pairs-git'
 gives='kakoune-auto-pairs'
-pkgver="0.0.0"
+pkgver="0.0.1"
 pkgdesc='Auto-pairing of characters for kakoune'
 license=('Unlicense')
 url='https://github.com/alexherbo2/auto-pairs.kak'
 arch=("all")
 maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
-source=(
-  'https://github.com/alexherbo2/auto-pairs.kak.git'
-)
-sha256sums=(
-  'SKIP'
-)
+source=('https://github.com/alexherbo2/auto-pairs.kak.git')
+sha256sums=('SKIP')
 depends=('kakoune')
 enhances=('kakoune')
 
