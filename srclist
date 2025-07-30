@@ -778,13 +778,13 @@ pkgname = aws-cli-v2-bin
 ---
 pkgbase = balena-etcher-deb
 	gives = balena-etcher
-	pkgver = 2.1.3
+	pkgver = 2.1.4
 	pkgdesc = Flash OS images to SD cards & USB drives, safely and easily
 	arch = amd64
 	maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>
-	repology = project: balena-etcher
-	source = https://github.com/balena-io/etcher/releases/download/v2.1.3/balena-etcher_2.1.3_amd64.deb
-	sha256sums = edfd6d3bfb1e2ca6d6d926619087ab8600cf8cb8a701ed85ad1be2045a6d660d
+	repology = project: etcher
+	source = https://github.com/balena-io/etcher/releases/download/v2.1.4/balena-etcher_2.1.4_amd64.deb
+	sha256sums = c635213bb0724eb789bc036819cd1adb7d0693fd3bd26622811a8f7bd25e9252
 
 pkgname = balena-etcher-deb
 ---
