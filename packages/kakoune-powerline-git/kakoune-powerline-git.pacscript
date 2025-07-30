@@ -7,12 +7,8 @@ license=('MIT')
 url='https://github.com/andreyorst/powerline.kak'
 arch=("all")
 maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
-source=(
-  'https://github.com/andreyorst/powerline.kak.git'
-)
-sha256sums=(
-  'SKIP'
-)
+source=('https://github.com/andreyorst/powerline.kak.git')
+sha256sums=('SKIP')
 depends=('kakoune')
 enhances=('kakoune')
 
