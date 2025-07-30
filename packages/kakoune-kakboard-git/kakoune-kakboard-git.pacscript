@@ -1,14 +1,12 @@
 pkgname='kakoune-kakboard-git'
-pkgver="0.0.0"
+pkgver="0.0.1"
 pkgdesc='Clipboard integration for Kakoune'
 gives='kakoune-kakboard'
 license=('MIT')
 url='https://github.com/lePerdu/kakboard'
 arch=("all")
 maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
-source=(
-  "${gives}::https://github.com/lePerdu/kakboard.git"
-)
+source=("${gives}::https://github.com/lePerdu/kakboard.git")
 depends=('kakoune')
 enhances=('kakoune')
 optdepends=(
