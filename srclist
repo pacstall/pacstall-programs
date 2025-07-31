@@ -149,7 +149,7 @@ pkgname = amfora-bin
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.15.0
+	pkgver = 3.15.3
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -172,9 +172,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.15.0/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.15.3/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = ebaa815c83df0738953c4388d6394d801e5c8472ed61ef1428da66cf45c2e676
+	sha256sums = f9e3b4823b6bd27815127f21f870d848aa54266ac655aa40a8a77494448ce731
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
