@@ -1,0 +1,39 @@
+pkgbase = xterm
+	pkgver = 401
+	pkgdesc = X terminal emulator xterm is a terminal emulator for the X Window System. It provides DEC VT102 and Tektronix 4014 compatible terminals for programs that cannot use the window system directly. This version implements ISO/ANSI colors and most of the control sequences used by DEC VT220 terminals. This package provides four commands: xterm, which is the traditional terminal emulator; uxterm, which is a wrapper around xterm that is intelligent about locale settings (especially those which use the UTF-8 character encoding), but which requires the luit program from the luit package; koi8rxterm, a wrapper similar to uxterm for locales that use the KOI8-R character set; and lxterm, a simple wrapper that chooses which of the previous commands to execute based on the user's locale settings. A complete list of control sequences supported by the X terminal emulator is provided in /usr/share/doc/xterm. The xterm program uses bitmap images provided by the xbitmaps package. Those interested in using koi8rxterm will likely want to install the xfonts-cyrillic package as well.
+	url = https://invisible-island.net/xterm/
+	arch = any
+	depends = libfontconfig1>=2.12.6
+	depends = libfreetype6>=2.2.1
+	depends = libice6>=1:1.0.0
+	depends = libtinfo6>=6
+	depends = libutempter0>=1.1.5
+	depends = libx11-6
+	depends = libxaw7>=2:1.0.14
+	depends = libxext6
+	depends = libxft2>>2.1.1
+	depends = libxinerama1>=2:1.1.4
+	depends = libxmu6>=2:1.1.3
+	depends = libxpm4
+	depends = libxt6t64
+	depends = xbitmaps
+	makedepends = bsdextrautils
+	makedepends = desktop-file-utils
+	makedepends = groff
+	makedepends = libncurses-dev
+	makedepends = libutempter-dev
+	makedepends = libxaw7-dev
+	makedepends = libxcursor-dev
+	makedepends = libxft-dev
+	makedepends = libxinerama-dev
+	makedepends = libxkbfile-dev
+	makedepends = libxrender-dev
+	makedepends = xbitmaps
+	makedepends = xorg-docs-core
+	provides = x-terminal-emulator
+	recommends = xfonts-cyrillic
+	license = X11
+	maintainer = Don Alfons <donnisnoni@outlook.com>
+	source = @xterm~401::https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/xterm-401.tar.gz
+
+pkgname = xterm
