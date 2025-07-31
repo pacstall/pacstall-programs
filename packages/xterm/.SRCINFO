@@ -15,7 +15,7 @@ pkgbase = xterm
 	depends = libxinerama1>=2:1.1.4
 	depends = libxmu6>=2:1.1.3
 	depends = libxpm4
-	depends = libxt6t64
+	depends = libxt6t64|libxt6
 	depends = xbitmaps
 	makedepends = bsdextrautils
 	makedepends = desktop-file-utils
