@@ -39,7 +39,7 @@ depends=(
   'libxinerama1>=2:1.1.4'
   'libxmu6>=2:1.1.3'
   'libxpm4'
-  'libxt6t64|libxt6'
+  'libxt6'
   'xbitmaps'
 )
 makedepends=(
