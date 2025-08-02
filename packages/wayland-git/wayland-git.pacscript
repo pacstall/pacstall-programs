@@ -9,7 +9,7 @@ makedepends=(
   "pkg-config" "graphviz" "doxygen" "libffi-dev" "libexpat1-dev" "libxslt1-dev" "xmlto"
 
   # 32-bit
-  "libffi-dev:i386" "libexpat1-dev:i386"
+  "gcc-multilib" "g++-multilib" "libffi-dev:i386" "libexpat1-dev:i386"
 )
 depends=(
   "libffi8" "libexpat1" "libxml2"
