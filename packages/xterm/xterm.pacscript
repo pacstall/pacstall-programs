@@ -225,8 +225,9 @@ package() {
 
   echo "${lxterm_script}" > lxterm
   install -m 755 lxterm "${pkgdir}/usr/bin"
+
   echo "${lxterm_man}" > lxterm.1
-  install -m 755 lxterm.1 "${pkgdir}/usr/share/man/man1"
+  install -m 644 lxterm.1 "${pkgdir}/usr/share/man/man1"
 
   install -d "${pkgdir}/usr/share/doc/xterm"
   install -m 644 termcap "${pkgdir}/usr/share/doc/xterm/xterm.termcap"
