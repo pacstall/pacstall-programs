@@ -15156,12 +15156,14 @@ pkgname = waydroid-deb
 pkgbase = wayland-git
 	gives = wayland
 	pkgver = 1.24.0
-	pkgdesc = Core Wayland window system code and protocol
+	pkgdesc = Core Wayland window system code and protocol (development version)
 	url = https://wayland.freedesktop.org
 	arch = amd64
 	depends = libffi8
 	depends = libexpat1
 	depends = libxml2
+	depends = libffi8:i386
+	depends = libexpat1:i386
 	makedepends = pkg-config
 	makedepends = graphviz
 	makedepends = doxygen
@@ -15169,8 +15171,9 @@ pkgbase = wayland-git
 	makedepends = libexpat1-dev
 	makedepends = libxslt1-dev
 	makedepends = xmlto
+	makedepends = libffi-dev:i386
+	makedepends = libexpat1-dev:i386
 	pacdeps = meson-git
-	conflicts = wayland
 	replaces = libwayland-client0
 	replaces = libwayland-egl1
 	replaces = libwayland-server0
@@ -15187,6 +15190,13 @@ pkgbase = wayland-git
 	provides = libwayland-egl-backend-dev=1.24.0
 	provides = libwayland-doc=1.24.0
 	provides = libwayland-bin=1.24.0
+	provides = libwayland-client0:i386=1.24.0
+	provides = libwayland-egl1:i386=1.24.0
+	provides = libwayland-server0:i386=1.24.0
+	provides = libwayland-cursor0:i386=1.24.0
+	provides = libwayland-dev:i386=1.24.0
+	provides = libwayland-egl-backend-dev:i386=1.24.0
+	provides = libwayland-bin:i386=1.24.0
 	license = MIT
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: wayland
