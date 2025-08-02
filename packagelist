@@ -281,6 +281,7 @@ jq-bin
 jsonnet-bundler-bin
 kakoune
 kakoune-lsp
+kakoune-powerline-git
 kalendar-git
 kanata-bin
 kate-backport-deb
