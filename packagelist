@@ -277,6 +277,7 @@ ivpn-ui-deb
 jellyfin-media-player-deb
 jetbrains-toolbox-bin
 joplin-desktop-app
+jq-bin
 jsonnet-bundler-bin
 kakoune
 kakoune-lsp
