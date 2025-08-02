@@ -103,7 +103,7 @@ die () {
     exit 1
 }
 
-if ! which locale >/dev/null 2>&1; then
+if ! command -v locale >/dev/null 2>&1; then
     die "required program \"locale\" not available"
 fi
 
