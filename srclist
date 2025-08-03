@@ -149,7 +149,7 @@ pkgname = amfora-bin
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.15.0
+	pkgver = 3.15.4
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -172,9 +172,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.15.0/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.15.4/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = ebaa815c83df0738953c4388d6394d801e5c8472ed61ef1428da66cf45c2e676
+	sha256sums = b7a155f2cd9fa71fb80ef98235d5d585fd0e43f18d95a8b4e65f333a425956b9
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
@@ -778,13 +778,13 @@ pkgname = aws-cli-v2-bin
 ---
 pkgbase = balena-etcher-deb
 	gives = balena-etcher
-	pkgver = 2.1.3
+	pkgver = 2.1.4
 	pkgdesc = Flash OS images to SD cards & USB drives, safely and easily
 	arch = amd64
 	maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>
-	repology = project: balena-etcher
-	source = https://github.com/balena-io/etcher/releases/download/v2.1.3/balena-etcher_2.1.3_amd64.deb
-	sha256sums = edfd6d3bfb1e2ca6d6d926619087ab8600cf8cb8a701ed85ad1be2045a6d660d
+	repology = project: etcher
+	source = https://github.com/balena-io/etcher/releases/download/v2.1.4/balena-etcher_2.1.4_amd64.deb
+	sha256sums = c635213bb0724eb789bc036819cd1adb7d0693fd3bd26622811a8f7bd25e9252
 
 pkgname = balena-etcher-deb
 ---
@@ -901,21 +901,21 @@ pkgname = betterbird-bin
 ---
 pkgbase = bitwarden-cli-bin
 	gives = bitwarden-cli
-	pkgver = 2025.6.1
+	pkgver = 2025.7.0
 	pkgdesc = Bitwarden's command-line interface - Binary
 	arch = amd64
 	breaks = bitwarden-cli-git
 	replaces = bitwarden-cli
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: bitwarden-cli
-	source = https://github.com/bitwarden/clients/releases/download/cli-v2025.6.1/bw-linux-2025.6.1.zip
-	sha256sums = 6bacf4151842ebcbfe6801770453a9302e8f658f7219d07e1313c007d8b80ac6
+	source = https://github.com/bitwarden/clients/releases/download/cli-v2025.7.0/bw-linux-2025.7.0.zip
+	sha256sums = b0bdaaa1f77d8dbf304e37403fa57a54aa1dafbe7c660d120ad67f286c174adf
 
 pkgname = bitwarden-cli-bin
 ---
 pkgbase = bitwarden-deb
 	gives = bitwarden
-	pkgver = 2025.6.1
+	pkgver = 2025.7.0
 	pkgdesc = Open Source Password Manager
 	arch = amd64
 	breaks = bitwarden-app
@@ -923,8 +923,8 @@ pkgbase = bitwarden-deb
 	replaces = bitwarden
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: bitwarden
-	source = https://github.com/bitwarden/clients/releases/download/desktop-v2025.6.1/Bitwarden-2025.6.1-amd64.deb
-	sha256sums = 38d7ca844ca2928873e9a10460f943b74ed52e2420052e651505bee9f21ded97
+	source = https://github.com/bitwarden/clients/releases/download/desktop-v2025.7.0/Bitwarden-2025.7.0-amd64.deb
+	sha256sums = f8bd7a3054303e7c60074ed15d593d78b22f177dbd0e7f98e820afe26b5fe4a8
 
 pkgname = bitwarden-deb
 ---
@@ -982,14 +982,14 @@ pkgname = ble.sh-git
 ---
 pkgbase = blender-bin
 	gives = blender
-	pkgver = 4.5.0
+	pkgver = 4.5.1
 	pkgdesc = A fully integrated 3D graphics creation suite
 	url = https://www.blender.org/
 	arch = amd64
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: blender
-	source = https://mirrors.ocf.berkeley.edu/blender/release/Blender4.5/blender-4.5.0-linux-x64.tar.xz
-	sha256sums = 1188b95cc12321c770b631939f7c25a096910b6f884a990bf9c0f62d52b38aec
+	source = https://mirrors.ocf.berkeley.edu/blender/release/Blender4.5/blender-4.5.1-linux-x64.tar.xz
+	sha256sums = 085a7ed4ed80c3cb66783bad76f236f39897de5d33884abd133e0c6db94c0f14
 
 pkgname = blender-bin
 ---
@@ -2118,7 +2118,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 0.0.102
+	pkgver = 0.0.103
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -2128,25 +2128,25 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://dl.discordapp.net/apps/linux/0.0.102/discord-0.0.102.deb
-	sha256sums = ab1655cc6493d0e126eeddc4880b2d70ffb836eb558d0b17e1dfff508725f5a4
+	source = https://dl.discordapp.net/apps/linux/0.0.103/discord-0.0.103.deb
+	sha256sums = 837777c52627d2f56243f33da2437bdd29ac8139c2499b8a766bc7c6bf4c0671
 
 pkgname = discord-deb
 ---
 pkgbase = discord-ptb-deb
 	gives = discord-ptb
-	pkgver = 0.0.153
+	pkgver = 0.0.154
 	pkgdesc = Chat for Communities and Friends - Public Test Build
 	url = https://discord.com/
 	arch = amd64
 	repology = project: discord-ptb
-	source = https://ptb.dl2.discordapp.net/apps/linux/0.0.153/discord-ptb-0.0.153.deb
-	sha256sums = f33bdc450720e996a720bee23a3e0611d18df2523d77801b3b3df23b8b35d887
+	source = https://ptb.dl2.discordapp.net/apps/linux/0.0.154/discord-ptb-0.0.154.deb
+	sha256sums = 83203ea4261bc7645d8b6974eeae2c569816f23d495e64da154d80d5b71b7dfe
 
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.102
+	pkgver = 0.0.103
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2164,8 +2164,8 @@ pkgbase = discord
 	optdepends = fonts-noto-color-emoji: emoji support
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.102::https://dl.discordapp.net/apps/linux/0.0.102/discord-0.0.102.tar.gz
-	sha256sums = c6797aed3cbdbae023395e5e5a747bc46f8f47927833b9d87358634418db68e2
+	source = @discord~0.0.103::https://dl.discordapp.net/apps/linux/0.0.103/discord-0.0.103.tar.gz
+	sha256sums = 58d2f2041405a801223e9bf5269a05ae02a0087dcf04e4f1156c5d1dca8d025f
 
 pkgname = discord
 ---
@@ -2525,14 +2525,14 @@ pkgname = eddie-ui-deb
 ---
 pkgbase = electerm-deb
 	gives = electerm
-	pkgver = 1.100.20
+	pkgver = 1.100.30
 	pkgdesc = Open-sourced terminal/ssh/telnet/serialport/sftp client
 	arch = amd64
 	breaks = electerm-bin
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 	repology = project: electerm
-	source = https://github.com/electerm/electerm/releases/download/v1.100.20/electerm-1.100.20-linux-amd64.deb
-	sha256sums = a92057853d0e44149b8997c554875bdd26b4963dd7d9899d5a566dc2df232cce
+	source = https://github.com/electerm/electerm/releases/download/v1.100.30/electerm-1.100.30-linux-amd64.deb
+	sha256sums = 689fd3bfc2875701fa9017b8073b28cf8dcf1116322ebe4e33ae0dddfc3ee155
 
 pkgname = electerm-deb
 ---
@@ -2771,6 +2771,24 @@ pkgbase = epson-printer-utility-deb
 
 pkgname = epson-printer-utility-deb
 ---
+pkgbase = erlang-jsone
+	pkgver = 1.9.0
+	pkgdesc = Erlang JSON library
+	url = https://github.com/sile/jsone
+	arch = any
+	depends = erlang
+	makedepends = git
+	makedepends = make
+	makedepends = rebar3
+	conflicts = erlang-jsone-git
+	license = MIT
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: erlang-jsone
+	source = https://github.com/sile/jsone/archive/refs/tags/1.9.0.tar.gz
+	sha256sums = 677d9dd6d613f05dd9a13537769f0f50d3a855a89bf87703024eb909d070c445
+
+pkgname = erlang-jsone
+---
 pkgbase = erlfmt
 	pkgver = 1.7.0
 	pkgdesc = Automated code formatter for Erlang
@@ -2804,7 +2822,7 @@ pkgbase = exercism-cli-bin
 pkgname = exercism-cli-bin
 ---
 pkgbase = exiftool
-	pkgver = 13.32
+	pkgver = 13.33
 	pkgdesc = Platform-independent Perl library for reading and writing EXIF data
 	url = https://exiftool.org
 	arch = any
@@ -2812,8 +2830,8 @@ pkgbase = exiftool
 	license = GPL-2.0-or-later
 	maintainer = Ishaque <muhammadishaque812@gmail.com>
 	repology = project: exiftool
-	source = https://exiftool.org/Image-ExifTool-13.32.tar.gz
-	sha256sums = e4b462f1a111bde3e3c4519e06d71efaacc576c36f4c3407b3d225c39393c829
+	source = https://exiftool.org/Image-ExifTool-13.33.tar.gz
+	sha256sums = 0cc6ecb10d529969a7e7766f5160ad591efa9bba7513b9185c8a1e6c54421fed
 
 pkgname = exiftool
 ---
@@ -3467,7 +3485,7 @@ pkgname = fselect-git
 ---
 pkgbase = fzf-bin
 	gives = fzf
-	pkgver = 0.62.0
+	pkgver = 0.65.0
 	pkgdesc = general-purpose command-line fuzzy finder It's an interactive Unix filter for command-line that can be used with any list; files, command history, processes, hostnames, bookmarks, git commits, etc.
 	url = https://github.com/junegunn/fzf
 	arch = amd64
@@ -3478,16 +3496,16 @@ pkgbase = fzf-bin
 	license = MIT
 	maintainer = Eric Renfro <psi-jack@linux-help.org>
 	repology = project: fzf
-	source = fzf-0.62.0.tar.gz::https://github.com/junegunn/fzf/archive/refs/tags/v0.62.0.tar.gz
-	sha256sums = e5beae86a3d026b2c2cfc165715d45b831b9f337a9e96f711ba3bc3d15e50900
-	source_amd64 = https://github.com/junegunn/fzf/releases/download/v0.62.0/fzf-0.62.0-linux_amd64.tar.gz
-	sha256sums_amd64 = 64b56dd484a2317d5f04c28ac0791b36807f034adb419209ad39fb6637255794
-	source_arm64 = https://github.com/junegunn/fzf/releases/download/v0.62.0/fzf-0.62.0-linux_arm64.tar.gz
-	sha256sums_arm64 = 929fd132705d02f222a52e23c076018ef3e699793dd5e8c3183bb11ed9b7696e
-	source_ppc64el = https://github.com/junegunn/fzf/releases/download/v0.62.0/fzf-0.62.0-linux_ppc64le.tar.gz
-	sha256sums_ppc64el = 85d78f1527169e570aef8dfe63f7d15d426b409bbafbbce9477fc5c8058def65
-	source_s390x = https://github.com/junegunn/fzf/releases/download/v0.62.0/fzf-0.62.0-linux_s390x.tar.gz
-	sha256sums_s390x = 3e18d7b5f868e4b7fe796cb3ed3b76af6e9d9efae4ed92cbf73283f7907976a1
+	source = fzf-0.65.0.tar.gz::https://github.com/junegunn/fzf/archive/refs/tags/v0.65.0.tar.gz
+	sha256sums = 766e989220453f4b7753a4e99732da5e8550ae3184b3580ffd0c957cabd557b0
+	source_amd64 = https://github.com/junegunn/fzf/releases/download/v0.65.0/fzf-0.65.0-linux_amd64.tar.gz
+	sha256sums_amd64 = eeb492ae609e437a648bec0d0b09647d97c648bfd910b95987ffa64577a5a665
+	source_arm64 = https://github.com/junegunn/fzf/releases/download/v0.65.0/fzf-0.65.0-linux_arm64.tar.gz
+	sha256sums_arm64 = 10fa2aa653fe031fbcb008a7737ba4c2d5f519bb8a2702726b13696d959a7891
+	source_ppc64el = https://github.com/junegunn/fzf/releases/download/v0.65.0/fzf-0.65.0-linux_ppc64le.tar.gz
+	sha256sums_ppc64el = 32089f186fe77dba2004d77fd758759bd79c066e42c9c5f9e4b54535392d13ae
+	source_s390x = https://github.com/junegunn/fzf/releases/download/v0.65.0/fzf-0.65.0-linux_s390x.tar.gz
+	sha256sums_s390x = 7e126e2ad744efc62ff08d5030a88088aef4c45f74e57a0af1196eae1b66723e
 
 pkgname = fzf-bin
 ---
@@ -4787,7 +4805,7 @@ pkgname = harmonoid-deb
 ---
 pkgbase = hayase-deb
 	gives = hayase
-	pkgver = 6.4.16
+	pkgver = 6.4.19
 	pkgdesc = Torrent streaming made simple. Watch anime torrents, real-time with no waiting for downloads
 	url = https://hayase.watch
 	arch = amd64
@@ -4795,8 +4813,8 @@ pkgbase = hayase-deb
 	license = BUSL-1.1
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: hayase
-	source = https://github.com/hayase-app/ui/releases/download/v6.4.16/linux-hayase-6.4.16-linux.deb
-	sha256sums = 424751453f1db0cbe3f20f6ca61c397b5c308a0b9ba9c6ac9d2ca1a7af213724
+	source = https://github.com/hayase-app/ui/releases/download/v6.4.19/linux-hayase-6.4.19-linux.deb
+	sha256sums = de7e9f609cfe5863fb83ec75f48f4fbdb4c0b9fd3dec34e9cee5efaac620e41e
 
 pkgname = hayase-deb
 ---
@@ -4874,13 +4892,13 @@ pkgname = hello
 ---
 pkgbase = heroic-games-launcher-deb
 	gives = heroic
-	pkgver = 2.17.2
+	pkgver = 2.18.0
 	pkgdesc = An Open Source alternative to the Epic Games launcher
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: heroic-games-launcher
-	source = https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.17.2/Heroic-2.17.2-linux-amd64.deb
-	sha256sums = 57083684584a5e1765c226e91d5e78b34845ae03738256b79116212e23a4c30d
+	source = https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.18.0/Heroic-2.18.0-linux-amd64.deb
+	sha256sums = 43abb47c292d7f217d9d9a034b96eabb0d304c9e5f048b2e44f3ee5c7a3e296f
 
 pkgname = heroic-games-launcher-deb
 ---
@@ -5056,13 +5074,13 @@ pkgname = hwinfo-git
 ---
 pkgbase = hydralauncher-deb
 	gives = hydralauncher
-	pkgver = 3.6.2
+	pkgver = 3.6.3
 	pkgdesc = Game launcher with its own embedded BitTorrent client
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: hydralauncher
-	source = https://github.com/hydralauncher/hydra/releases/download/v3.6.2/hydralauncher_3.6.2_amd64.deb
-	sha256sums = d5adf9c89fde73193ad18d8a2732dac24b247463e859e50149bf83c2399a1ffd
+	source = https://github.com/hydralauncher/hydra/releases/download/v3.6.3/hydralauncher_3.6.3_amd64.deb
+	sha256sums = 3378ec90ede960e2f4a6806ab24005a20b96afe5af2793a1eb025a67daa2bd3f
 
 pkgname = hydralauncher-deb
 ---
@@ -5398,7 +5416,7 @@ pkgname = i3lock-color
 ---
 pkgbase = icecat-deb
 	gives = icecat
-	pkgver = 115.24.0
+	pkgver = 128.12.0
 	pkgdesc = GNU version of Firefox which uses ESR branch instead main release branch
 	arch = amd64
 	breaks = icecat-app
@@ -5407,8 +5425,8 @@ pkgbase = icecat-deb
 	replaces = icecat
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: icecat
-	source = https://icecatbrowser.org/assets/icecat/115.24.0/icecat_115.24.0esr-1_amd64.deb
-	sha256sums = f68ce2bd3c3c042064535208b24b48da91f36d6c36a414187d22abc65df6265f
+	source = https://icecatbrowser.org/assets/icecat/128.12.0/icecat_128.12.0esr-1_amd64.deb
+	sha256sums = af8e25a57fa77730f18ace66059c298b84a92a07b00db3b32290c38a81d4dfb9
 
 pkgname = icecat-deb
 ---
@@ -5590,6 +5608,41 @@ pkgbase = joplin-desktop-app
 
 pkgname = joplin-desktop-app
 ---
+pkgbase = jq-bin
+	gives = jq
+	pkgver = 1.8.1
+	pkgdesc = Lightweight and flexible command-line JSON processor
+	url = https://jqlang.org/
+	arch = amd64
+	arch = arm64
+	arch = armel
+	arch = armhf
+	arch = i386
+	arch = ppc64el
+	arch = riscv64
+	arch = s390x
+	license = MIT
+	maintainer = Don Alfons <donnisnoni@outlook.com>
+	repology = project: jq
+	source_amd64 = https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-amd64
+	sha256sums_amd64 = 020468de7539ce70ef1bceaf7cde2e8c4f2ca6c3afb84642aabc5c97d9fc2a0d
+	source_arm64 = https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-arm64
+	sha256sums_arm64 = 6bc62f25981328edd3cfcfe6fe51b073f2d7e7710d7ef7fcdac28d4e384fc3d4
+	source_armel = https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-armel
+	sha256sums_armel = b98e283ff26cd7478f6fb18cc081ca0e0cb2e9980300f0bfc8bb26854d347eb2
+	source_armhf = https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-armhf
+	sha256sums_armhf = ac304e50cf7cd24933d83dc7d0e4f79892a71a92fb02336d4ecaffa8933760bd
+	source_i386 = https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-i386
+	sha256sums_i386 = ee8489cb8acfddf2e6d2ab4308877b5cbb6ec6b55beedb7c6d5a4fafb2879c86
+	source_ppc64el = https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-ppc64el
+	sha256sums_ppc64el = cb10b38f4e5ebb3904f383f24944a6c03a373b4b125d2928ccf52f8ea78f6f73
+	source_riscv64 = https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-riscv64
+	sha256sums_riscv64 = 3d7274ea14254f0220b6a6d1b8756a957f739b6a20e3886358377e8ea6687cf6
+	source_s390x = https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-linux-s390x
+	sha256sums_s390x = b792df2f5cced0404a5fd3796d7d47625dc087b3e3dcaa81017088590bb2f3a1
+
+pkgname = jq-bin
+---
 pkgbase = jsonnet-bundler-bin
 	gives = jb
 	pkgver = 0.6.0
@@ -5619,6 +5672,23 @@ pkgbase = kakoune-auto-pairs-git
 	sha256sums = SKIP
 
 pkgname = kakoune-auto-pairs-git
+---
+pkgbase = kakoune-kakboard-git
+	gives = kakoune-kakboard
+	pkgver = 0.0.1
+	pkgdesc = Clipboard integration for Kakoune
+	url = https://github.com/lePerdu/kakboard
+	arch = all
+	depends = kakoune
+	optdepends = wl-clipboard: for Wayland clipboard integration
+	optdepends = xclip: for X11 clipboard integration
+	optdepends = xsel: for X11 clipboard integration
+	enhances = kakoune
+	license = MIT
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	source = kakoune-kakboard::https://github.com/lePerdu/kakboard.git
+
+pkgname = kakoune-kakboard-git
 ---
 pkgbase = kakoune-lsp
 	pkgver = 18.2.0
@@ -6464,6 +6534,21 @@ pkgbase = libfdk-aac1-deb
 
 pkgname = libfdk-aac1-deb
 ---
+pkgbase = libfdk-aac2-deb
+	gives = libfdk-aac2
+	pkgver = 2.0.2
+	pkgdesc = Open-source library for encoding and decoding AAC (Advanced Audio Coding) audio files
+	arch = amd64
+	breaks = libfdk-aac2-bin
+	breaks = libfdk-aac2
+	replaces = libfdk-aac2
+	maintainer = Sarim <sarimw@proton.me>
+	repology = project: libfdk-aac2
+	source = http://archive.ubuntu.com/ubuntu/pool/multiverse/f/fdk-aac/libfdk-aac2_2.0.2-1_amd64.deb
+	sha256sums = 695b39d0b91c68778b4b21d7dab55a70224e59af1a51856dc648869bf361aa38
+
+pkgname = libfdk-aac2-deb
+---
 pkgbase = libgbinder-deb
 	gives = libgbinder
 	pkgver = 1.1.25
@@ -6631,7 +6716,7 @@ pkgname = libressl
 ---
 pkgbase = librewolf-app
 	gives = librewolf
-	pkgver = 139.0.4-1
+	pkgver = 140.0.4-1
 	pkgdesc = A fork of Firefox, focused on privacy, security and freedom.
 	arch = amd64
 	arch = arm64
@@ -6641,16 +6726,16 @@ pkgbase = librewolf-app
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: librewolf
-	source_amd64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/139.0.4-1/LibreWolf.x86_64.AppImage
+	source_amd64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/140.0.4-1/LibreWolf.x86_64.AppImage
 	source_amd64 = icon.png::https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
 	source_amd64 = librewolf.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/librewolf-app/librewolf.desktop
-	sha256sums_amd64 = cfa84f23849adc20fcdec46137913cef00bd8b1fa53c7bb1dfc8d5421ceefbeb
+	sha256sums_amd64 = 3fb9113d114bb13615433a931fcbc4449f4811688abca276ea91d1bb058ed75f
 	sha256sums_amd64 = SKIP
 	sha256sums_amd64 = SKIP
-	source_arm64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/139.0.4-1/LibreWolf.aarch64.AppImage
+	source_arm64 = https://gitlab.com/api/v4/projects/24386000/packages/generic/librewolf/140.0.4-1/LibreWolf.aarch64.AppImage
 	source_arm64 = icon.png::https://gitlab.com/uploads/-/system/group/avatar/5407097/icon.png
 	source_arm64 = librewolf.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/librewolf-app/librewolf.desktop
-	sha256sums_arm64 = 804d13694441f8ef5a7e18a953557184226748e0be7db3bd595295e7ff9386d0
+	sha256sums_arm64 = 4880da42456f1726713ea0e32e5f5ca7eb294f89be43abd461a93dc47de275aa
 	sha256sums_arm64 = SKIP
 	sha256sums_arm64 = SKIP
 
@@ -6658,7 +6743,7 @@ pkgname = librewolf-app
 ---
 pkgbase = librewolf-deb
 	gives = librewolf
-	pkgver = 139.0.4-1
+	pkgver = 140.0.4-1
 	pkgdesc = A fork of Firefox, focused on privacy, security and freedom
 	arch = amd64
 	arch = arm64
@@ -6674,10 +6759,10 @@ pkgbase = librewolf-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: librewolf
-	source_amd64 = https://repo.librewolf.net/pool/librewolf-139.0.4-1-linux-x86_64-deb.deb
-	sha256sums_amd64 = ba86481f52bcfc82a2cb5e4d61ba6d6e1b16bb871d0ddc49d29a2fb8c68d0681
-	source_arm64 = https://repo.librewolf.net/pool/librewolf-139.0.4-1-linux-arm64-deb.deb
-	sha256sums_arm64 = 16ace40047ee271c97678b182317cbc94c7d2c463c6cbc90f83bde8ca1a03769
+	source_amd64 = https://repo.librewolf.net/pool/librewolf-140.0.4-1-linux-x86_64-deb.deb
+	sha256sums_amd64 = ab4d268abe66d0ebcfe99cdc415330e9277abf7f253b050d3b694b2e1af03710
+	source_arm64 = https://repo.librewolf.net/pool/librewolf-140.0.4-1-linux-arm64-deb.deb
+	sha256sums_arm64 = 2be6f0707565d92874ee98b41fa0558a740da8284dfd8d35f11c79414a61295d
 
 pkgname = librewolf-deb
 ---
@@ -8537,14 +8622,14 @@ pkgbase = nerd-fonts-fira-code
 pkgname = nerd-fonts-fira-code
 ---
 pkgbase = nerd-fonts-hack
-	pkgver = 3.1.1
+	pkgver = 3.4.0
 	pkgdesc = Patched font Hack from Nerd Fonts library
 	arch = all
 	replaces = nerd-fonts-hack
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: fonts:nerd-fonts
-	source = @nerd-fonts-hack~3.1.1::https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.tar.xz
-	sha256sums = 0d820cb2fedb86a15ca1354e03f26443face8b6aa190610263fad1125a409a16
+	source = @nerd-fonts-hack~3.4.0::https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.tar.xz
+	sha256sums = 1d00a1435638084174516975840854368a45ac30bb0bad2c0c49db713b5925f0
 
 pkgname = nerd-fonts-hack
 ---
@@ -9353,7 +9438,7 @@ pkgbase = nuclei-bin
 pkgname = nuclei-bin
 ---
 pkgbase = nushell-bin
-	pkgver = 0.104.0
+	pkgver = 0.106.0
 	pkgdesc = A new type of shell
 	arch = arm64
 	arch = amd64
@@ -9363,16 +9448,16 @@ pkgbase = nushell-bin
 	breaks = nushell-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: nushell
-	source_arm64 = @nushell-bin~0.104.0::https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-aarch64-unknown-linux-gnu.tar.gz
-	sha256sums_arm64 = 987c24b28ec43f057ef3a70b29b9d5b0aab8c793fca90e152b6c4de03e5e7279
-	source_amd64 = @nushell-bin~0.104.0::https://github.com/nushell/nushell/releases/download/0.104.0/nu-0.104.0-x86_64-unknown-linux-gnu.tar.gz
-	sha256sums_amd64 = ad72e032e266f4a75803dd92b63dbeb5d9a68a33a3c713336f8a24c740fdc9b6
+	source_arm64 = @nushell-bin~0.106.0::https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-aarch64-unknown-linux-gnu.tar.gz
+	sha256sums_arm64 = a441dfbb4e69ef9eced4549f05b4f1a83ba9651f291c5d18b3a3f23b67884b6d
+	source_amd64 = @nushell-bin~0.106.0::https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-x86_64-unknown-linux-gnu.tar.gz
+	sha256sums_amd64 = ba0969d7172fd5ed87204593c2688fbb1c27bfe1fb606e6d443dfd6c44ef98c6
 
 pkgname = nushell-bin
 ---
 pkgbase = nutext-bin
 	gives = nutext
-	pkgver = 0.3.4
+	pkgver = 0.5.0
 	pkgdesc = Another translaton plugin for nushell
 	url = https://github.com/rhino-linux/nu_plugin_nutext
 	arch = amd64
@@ -9381,16 +9466,16 @@ pkgbase = nutext-bin
 	replaces = nutext-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: nutext
-	source_amd64 = https://github.com/rhino-linux/nu_plugin_nutext/releases/download/0.3.4/nutext_0.3.4_amd64.zip
-	sha256sums_amd64 = 698717b579cc5522db0cc873c219b7ab8f3a921e9862ddb8b6f09d6dd4d6511f
-	source_arm64 = https://github.com/rhino-linux/nu_plugin_nutext/releases/download/0.3.4/nutext_0.3.4_arm64.zip
-	sha256sums_arm64 = dc25c706b57eb557501daeff7f7f021222a1a3447a879989ffc1481027a3bddb
+	source_amd64 = https://github.com/rhino-linux/nu_plugin_nutext/releases/download/0.5.0/nutext_0.5.0_amd64.zip
+	sha256sums_amd64 = 564ca4eba6c2864446c997d1730dc086eff17f0e8ffbf0645486c10edfa6697c
+	source_arm64 = https://github.com/rhino-linux/nu_plugin_nutext/releases/download/0.5.0/nutext_0.5.0_arm64.zip
+	sha256sums_arm64 = 4adc14516f17f4dedf60ddbc0c4bad5c8907df447ec17bd22cf22defca7a2c8a
 
 pkgname = nutext-bin
 ---
 pkgbase = nutext-git
 	gives = nutext
-	pkgver = 0.3.4
+	pkgver = 0.5.0
 	pkgdesc = Another translaton plugin for nushell
 	url = https://github.com/rhino-linux/nu_plugin_nutext
 	arch = amd64
@@ -9530,20 +9615,20 @@ pkgname = obs-backgroundremoval
 ---
 pkgbase = obs-studio-deb
 	gives = obs-studio
-	pkgver = 31.1.1
+	pkgver = 31.1.2
 	pkgdesc = Free and open source software for live streaming and screen recording
 	arch = amd64
 	compatible = ubuntu:noble
 	license = GPL-2.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: obs-studio
-	source = https://github.com/obsproject/obs-studio/releases/download/31.1.1/OBS-Studio-31.1.1-Ubuntu-24.04-x86_64.deb
-	sha256sums = 4677b7b6a7f464ccdd6161198bd60a8406169e670107d487cd4261245b3e06e6
+	source = https://github.com/obsproject/obs-studio/releases/download/31.1.2/OBS-Studio-31.1.2-Ubuntu-24.04-x86_64.deb
+	sha256sums = 95af3e3961b53c34c40fed5d68d3c6d14444ec592ded93a9c91b56cd5a376fae
 
 pkgname = obs-studio-deb
 ---
 pkgbase = obs-studio
-	pkgver = 31.1.1
+	pkgver = 31.1.2
 	pkgdesc = Free and open source software for live streaming and screen recording
 	arch = amd64
 	depends = libasound2t64
@@ -9697,7 +9782,7 @@ pkgbase = obs-studio
 	license = GPL-2.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: obs-studio
-	source = https://github.com/obsproject/obs-studio.git#tag=31.1.1
+	source = https://github.com/obsproject/obs-studio.git#tag=31.1.2
 	source = https://cdn-fastly.obsproject.com/downloads/cef_binary_6533_linux_x86_64.tar.xz
 	sha256sums = SKIP
 	sha256sums = fab66dfc9cfd2e26fb87798f855aef30c2004edc8e19570d37af555644ae1655
@@ -10121,7 +10206,7 @@ pkgname = osu-lazer-app
 ---
 pkgbase = osu-lazer-tachyon-app
 	gives = osu-lazer
-	pkgver = 2025.724.2
+	pkgver = 2025.729.0
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew. - Tachyon Release
 	url = https://osu.ppy.sh
 	arch = amd64
@@ -10132,11 +10217,11 @@ pkgbase = osu-lazer-tachyon-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-tachyon-app-2025.724.2.AppImage::https://github.com/ppy/osu/releases/download/2025.724.2-tachyon/osu.AppImage
-	source = icon.png::https://raw.githubusercontent.com/ppy/osu/refs/tags/2025.724.2-tachyon/assets/lazer.png
+	source = osu-lazer-tachyon-app-2025.729.0.AppImage::https://github.com/ppy/osu/releases/download/2025.729.0-tachyon/osu.AppImage
+	source = icon.png::https://raw.githubusercontent.com/ppy/osu/refs/tags/2025.729.0-tachyon/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = f0cc25c1ceb3ff1671e9c63d8bd8e3fb83b6b7e4fb95eab1ac092e86f00171e6
+	sha256sums = 615d4eb83edd6fd64c5f0c3df03cc825e8e5d5e6476e91b0930d4785b29e5494
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = 8f7f8ea193ffe960364ca1344e1ca3780281a0a753f34700732655b75e30cc6b
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
@@ -11561,13 +11646,13 @@ pkgname = quintom-cursor-theme-git
 ---
 pkgbase = r2modman-deb
 	gives = r2modman
-	pkgver = 3.2.1
+	pkgver = 3.2.2
 	pkgdesc = Simple and easy to use mod manager for many games using Thunderstore
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: r2modman
-	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.2.1/r2modman_3.2.1_amd64.deb
-	sha256sums = 39b098afa5bd09697cc5e1e89fa8fdb16d6e79afe69b45ead2eaeb685f1a2cee
+	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.2.2/r2modman_3.2.2_amd64.deb
+	sha256sums = da1de2e32a8f4792afadd03d7b3e7d5b041388c63100d3b0ee3a7600b84da146
 
 pkgname = r2modman-deb
 ---
@@ -12111,6 +12196,75 @@ pkgbase = rnnoise
 	sha256sums = 90fce4b00b9ff24c08dbfe31b82ffd43bae383d85c5535676d28b0a2b11c0d37
 
 pkgname = rnnoise
+---
+pkgbase = rofi
+	pkgver = 1.7.9.1
+	pkgdesc = A window switcher, application launcher, and dmenu replacement.
+	url = https://github.com/davatorium/rofi
+	arch = any
+	depends = libcairo2
+	depends = libgdk-pixbuf-2.0-0
+	depends = libglib2.0-0>=2.72
+	depends = libpango-1.0-0>=1.50
+	depends = libpangocairo-1.0-0
+	depends = libstartup-notification0>=0.11
+	depends = libxcb-cursor0
+	depends = libxcb-ewmh2
+	depends = libxcb-icccm4
+	depends = libxcb-randr0
+	depends = libxcb-util1
+	depends = libxcb-xinerama0
+	depends = libxcb-xkb1
+	depends = libxcb1
+	depends = libxkbcommon-x11-0
+	depends = libxkbcommon0>=0.4.1
+	makedepends = bison
+	makedepends = flex>=2.5.39
+	makedepends = libcairo2-dev
+	makedepends = libgdk-pixbuf-2.0-dev
+	makedepends = libglib2.0-dev
+	makedepends = libpango1.0-dev
+	makedepends = libstartup-notification0-dev
+	makedepends = libxcb-cursor-dev
+	makedepends = libxcb-ewmh-dev
+	makedepends = libxcb-icccm4-dev
+	makedepends = libxcb-keysyms1-dev
+	makedepends = libxcb-randr0-dev
+	makedepends = libxcb-util-dev
+	makedepends = libxcb-xinerama0-dev
+	makedepends = libxcb-xkb-dev
+	makedepends = libxcb1-dev
+	makedepends = libxkbcommon-dev
+	makedepends = libxkbcommon-x11-dev
+	makedepends = pandoc
+	makedepends = pkg-config
+	checkdepends = check
+	license = MIT
+	maintainer = Don Alfons <donnisnoni@outlook.com>
+	source = @rofi~1.7.9.1::https://github.com/davatorium/rofi/releases/download/1.7.9.1/rofi-1.7.9.1.tar.gz
+	sha256sums = bb2c0f073b4422acc51a3f97d05275a82464750a33d2f4b120e3d866bb7b9ae5
+
+pkgname = rofi
+	pkgdesc = A window switcher, application launcher, and dmenu replacement
+	depends = libcairo2
+	depends = libgdk-pixbuf-2.0-0
+	depends = libglib2.0-0>=2.72
+	depends = libpango-1.0-0>=1.50
+	depends = libpangocairo-1.0-0
+	depends = libstartup-notification0>=0.11
+	depends = libxcb-cursor0
+	depends = libxcb-ewmh2
+	depends = libxcb-icccm4
+	depends = libxcb-randr0
+	depends = libxcb-util1
+	depends = libxcb-xinerama0
+	depends = libxcb-xkb1
+	depends = libxcb1
+	depends = libxkbcommon-x11-0
+	depends = libxkbcommon0>=0.4.1
+
+pkgname = rofi-dev
+	pkgdesc = Development files for rofi
 ---
 pkgbase = rojo-bin
 	gives = rojo
@@ -13186,14 +13340,14 @@ pkgname = stremio-deb
 ---
 pkgbase = sublime-merge-deb
 	gives = sublime-merge
-	pkgver = 2108
+	pkgver = 2110
 	pkgdesc = Sublime text like Git GUI Client
 	arch = amd64
 	replaces = sublime-merge
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: sublime-merge
-	source = https://download.sublimetext.com/sublime-merge_build-2108_amd64.deb
-	sha256sums = 57e88ecf5eeb7f408d7c312a7f8799d8fe585ea213cad5cc39595687e0ba5caf
+	source = https://download.sublimetext.com/sublime-merge_build-2110_amd64.deb
+	sha256sums = c3180600c51c2ea9c46dd8924a222e9eaf768312c3adc4fbc5a8ae9210b68d3d
 
 pkgname = sublime-merge-deb
 ---
@@ -13696,14 +13850,14 @@ pkgname = thrive-deb
 ---
 pkgbase = thunderbird-bin
 	gives = thunderbird
-	pkgver = 140.0.1
+	pkgver = 141.0
 	pkgdesc = Thunderbird is a free email application that's easy to set up and customize and it's loaded with great features!
 	url = https://www.thunderbird.net/en-US/
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: thunderbird
-	source = https://archive.mozilla.org/pub/thunderbird/releases/140.0.1/linux-x86_64/en-US/thunderbird-140.0.1.tar.xz
-	sha256sums = 97ba814fb587b8ec4f83a5b513e6d2147d9d9c3716f2e7207e60ba8c2cdb3d37
+	source = https://archive.mozilla.org/pub/thunderbird/releases/141.0/linux-x86_64/en-US/thunderbird-141.0.tar.xz
+	sha256sums = 137a75c034b8bda7cbe546555f384e19eba82e51ed531577d5e5d178718568f4
 
 pkgname = thunderbird-bin
 ---
@@ -15081,6 +15235,59 @@ pkgbase = waydroid-deb
 
 pkgname = waydroid-deb
 ---
+pkgbase = wayland-git
+	gives = wayland
+	pkgver = 1.24.0
+	pkgdesc = Core Wayland window system code and protocol (development version)
+	url = https://wayland.freedesktop.org
+	arch = amd64
+	depends = libffi8
+	depends = libexpat1
+	depends = libxml2
+	depends = libffi8:i386
+	depends = libexpat1:i386
+	makedepends = pkg-config
+	makedepends = graphviz
+	makedepends = doxygen
+	makedepends = libffi-dev
+	makedepends = libexpat1-dev
+	makedepends = libxslt1-dev
+	makedepends = xmlto
+	makedepends = gcc-multilib
+	makedepends = g++-multilib
+	makedepends = libffi-dev:i386
+	makedepends = libexpat1-dev:i386
+	pacdeps = meson-git
+	replaces = libwayland-client0
+	replaces = libwayland-egl1
+	replaces = libwayland-server0
+	replaces = libwayland-cursor0
+	replaces = libwayland-dev
+	replaces = libwayland-egl-backend-dev
+	replaces = libwayland-doc
+	replaces = libwayland-bin
+	provides = libwayland-client0=1.24.0
+	provides = libwayland-egl1=1.24.0
+	provides = libwayland-server0=1.24.0
+	provides = libwayland-cursor0=1.24.0
+	provides = libwayland-dev=1.24.0
+	provides = libwayland-egl-backend-dev=1.24.0
+	provides = libwayland-doc=1.24.0
+	provides = libwayland-bin=1.24.0
+	provides = libwayland-client0:i386=1.24.0
+	provides = libwayland-egl1:i386=1.24.0
+	provides = libwayland-server0:i386=1.24.0
+	provides = libwayland-cursor0:i386=1.24.0
+	provides = libwayland-dev:i386=1.24.0
+	provides = libwayland-egl-backend-dev:i386=1.24.0
+	provides = libwayland-bin:i386=1.24.0
+	license = MIT
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: wayland
+	source = git+https://gitlab.freedesktop.org/wayland/wayland.git
+
+pkgname = wayland-git
+---
 pkgbase = wayland-protocols-git
 	gives = wayland-protocols
 	pkgver = 1.41
@@ -15090,8 +15297,8 @@ pkgbase = wayland-protocols-git
 	makedepends = cmake
 	makedepends = pkg-config
 	makedepends = ninja-build
-	makedepends = libwayland-dev>=1.23.0
 	pacdeps = meson-git
+	pacdeps = wayland-git
 	repology = project: wayland-protocols
 	source = git+https://gitlab.freedesktop.org/wayland/wayland-protocols.git
 	sha256sums = SKIP
