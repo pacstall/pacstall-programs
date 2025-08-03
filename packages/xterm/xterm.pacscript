@@ -38,6 +38,10 @@ makedepends=(
   'xorg-docs-core'
 )
 recommends=(
+  'luit'
+  'x11-utils<7.7+6~'
+)
+suggests=(
   'xfonts-cyrillic'
 )
 maintainer=("Don Alfons <donnisnoni@outlook.com>")
