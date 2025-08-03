@@ -1,4 +1,4 @@
-pkgname="ppsspp-git"
+pkgname="ppsspp"
 gives="ppsspp"
 repology=("project: ppsspp")
 arch=('amd64' 'arm64')
