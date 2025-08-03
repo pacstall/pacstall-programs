@@ -4,7 +4,7 @@ repology=("project: ppsspp")
 arch=('amd64' 'arm64')
 pkgver="1.19.3"
 url='https://www.ppsspp.org'
-source=("https://github.com/hrydgard/ppsspp/archive/refs/tags/v${pkgver}.zip")
+source=("${gives}::https://github.com/hrydgard/ppsspp/archive/refs/tags/v${pkgver}.zip")
 makedepends=(
   "build-essential" "cmake" "libgl1-mesa-dev" libsdl2-dev libsdl2-ttf-dev
   "libfontconfig1-dev" "libvulkan-dev" "libglew-dev" "libwayland-dev" "libminiupnpc-dev"
