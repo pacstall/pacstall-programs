@@ -280,7 +280,7 @@ joplin-desktop-app
 jq-bin
 jsonnet-bundler-bin
 kakoune
-kakoune-auto-pairs-git
+kakoune-auto-pairs
 kakoune-kakboard-git
 kakoune-lsp
 kalendar-git
