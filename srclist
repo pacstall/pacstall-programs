@@ -5658,6 +5658,23 @@ pkgbase = jsonnet-bundler-bin
 
 pkgname = jsonnet-bundler-bin
 ---
+pkgbase = kakoune-kakboard-git
+	gives = kakoune-kakboard
+	pkgver = 0.0.1
+	pkgdesc = Clipboard integration for Kakoune
+	url = https://github.com/lePerdu/kakboard
+	arch = all
+	depends = kakoune
+	optdepends = wl-clipboard: for Wayland clipboard integration
+	optdepends = xclip: for X11 clipboard integration
+	optdepends = xsel: for X11 clipboard integration
+	enhances = kakoune
+	license = MIT
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	source = kakoune-kakboard::https://github.com/lePerdu/kakboard.git
+
+pkgname = kakoune-kakboard-git
+---
 pkgbase = kakoune-lsp
 	pkgver = 18.2.0
 	pkgdesc = Kakoune Language Server Protocol Client
