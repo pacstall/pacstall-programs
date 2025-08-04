@@ -317,6 +317,7 @@ libcutefish-git
 libdisplay-info-git
 libdrm
 libeditline-troglobit
+libfdk-aac-dev-deb
 libfdk-aac1-deb
 libfdk-aac2-deb
 libgbinder-deb
