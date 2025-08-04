@@ -3113,11 +3113,11 @@ pkgbase = ffmpeg
 	makedepends = libx265-dev
 	makedepends = libnuma-dev
 	makedepends = libvpx-dev
-	makedepends = libfdk-aac-dev>=2.0.2
 	makedepends = libopus-dev
 	makedepends = libaom-dev
 	makedepends = libsvtav1enc-dev
 	makedepends = libdav1d-dev
+	pacdeps = libfdk-aac2-deb
 	conflicts = ffmpeg4.4
 	breaks = ffmpeg4.4
 	maintainer = Sarim <sarimw@proton.me>
