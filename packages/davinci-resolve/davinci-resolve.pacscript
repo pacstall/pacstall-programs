@@ -3,7 +3,7 @@
 # and authors of the AUR and Nixpkgs packages.
 
 pkgname='davinci-resolve'
-pkgver='19.0.1'
+pkgver='20.0'
 pkgdesc='Professional A/V post-production software suite from Blackmagic Design'
 url='https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion'
 license=('custom:commercial')
