@@ -207,10 +207,10 @@ package() {
   cd "${pkgname}~${pkgver}"
   make DESTDIR="${pkgdir}" install install-ti
 
-  echo "${lxterm_script}" > lxterm
+  printf '%s\n' "${lxterm_script}" > lxterm
   install -m 755 lxterm "${pkgdir}/usr/bin"
 
-  echo "${lxterm_man}" > lxterm.1
+  printf '%s\n' "${lxterm_man}" > lxterm.1
   install -m 644 lxterm.1 "${pkgdir}/usr/share/man/man1"
 
   find "${pkgdir}/usr/share/man/man1/" -type f -print0 | xargs -0 gzip -f
