@@ -215,6 +215,9 @@ package() {
 
   find "${pkgdir}/usr/share/man/man1/" -type f -print0 | xargs -0 gzip -f
 
+  install -d "${pkgdir}/usr/share/licenses/xterm"
+  install -m 644 "COPYING" "${pkgdir}/usr/share/licenses/xterm/LICENSE"
+
   install -d "${pkgdir}/usr/share/doc/xterm"
   install -m 644 termcap "${pkgdir}/usr/share/doc/xterm/xterm.termcap"
   install -m 644 terminfo "${pkgdir}/usr/share/doc/xterm/xterm.terminfo"
