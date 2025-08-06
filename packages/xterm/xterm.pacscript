@@ -213,6 +213,8 @@ package() {
   echo "${lxterm_man}" > lxterm.1
   install -m 644 lxterm.1 "${pkgdir}/usr/share/man/man1"
 
+  find "${pkgdir}/usr/share/man/man1/" -type f -print0 | xargs -0 gzip -f
+
   install -d "${pkgdir}/usr/share/doc/xterm"
   install -m 644 termcap "${pkgdir}/usr/share/doc/xterm/xterm.termcap"
   install -m 644 terminfo "${pkgdir}/usr/share/doc/xterm/xterm.terminfo"
@@ -224,7 +226,7 @@ post_install() {
       --install /usr/bin/x-terminal-emulator \
       x-terminal-emulator "/usr/bin/${term}" 20 \
       --slave /usr/share/man/man1/x-terminal-emulator.1.gz \
-      x-terminal-emulator.1.gz "/usr/share/man/man1/${term}.1"
+      x-terminal-emulator.1.gz "/usr/share/man/man1/${term}.1.gz"
   done
 }
 
