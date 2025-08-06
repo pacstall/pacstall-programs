@@ -135,6 +135,7 @@ endlessh-git
 enpass-deb
 epson-inkjet-printer-stylus-nx110-series-deb
 epson-printer-utility-deb
+erlang-jsone
 erlfmt
 exercism-cli-bin
 exiftool
@@ -147,7 +148,6 @@ fake-ubuntu-advantage-tools-deb
 fast
 fastfetch-git
 fblog-bin
-fblog-deb
 feishin-app
 fennel
 fennel-bin
@@ -278,8 +278,13 @@ ivpn-ui-deb
 jellyfin-media-player-deb
 jetbrains-toolbox-bin
 joplin-desktop-app
+jq-bin
 jsonnet-bundler-bin
 kakoune
+kakoune-auto-pairs-git
+kakoune-kakboard-git
+kakoune-lsp
+kakoune-powerline-git
 kalendar-git
 kanata-bin
 kate-backport-deb
@@ -315,7 +320,9 @@ libcutefish-git
 libdisplay-info-git
 libdrm
 libeditline-troglobit
+libfdk-aac-dev-deb
 libfdk-aac1-deb
+libfdk-aac2-deb
 libgbinder-deb
 libgc-nix
 libglibutil-deb
@@ -636,6 +643,9 @@ rider-bin
 rio-wayland-deb
 rio-x11-deb
 rnnoise
+rofi:pkgbase
+rofi:rofi-dev
+rofi:rofi
 rojo-bin
 rosary-deb
 rpcs3-app
@@ -782,6 +792,7 @@ watchexec-bin
 wavey-launcher-bin
 waydroid-deb
 wayland
+wayland-git
 wayland-protocols-git
 waynergy
 webapp-manager

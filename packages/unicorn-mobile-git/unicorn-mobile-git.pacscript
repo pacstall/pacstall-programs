@@ -2,7 +2,7 @@ pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="4"
+pkgrel="5"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -40,7 +40,7 @@ pacdeps=(
   "cortile"
   "adw-gtk-theme"
   "rhino-xfwm4-theme-git"
-  "xfce4-dynamic-workspaces-plugin-git"
+  "xfce4-dynamic-workspaces-rs-bin"
 )
 gives="unicorn-mobile"
 replaces=("unicorn-desktop" "unicorn-desktop-git")

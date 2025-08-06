@@ -2,7 +2,7 @@ pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="5"
+pkgrel="6"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -51,7 +51,7 @@ pacdeps=(
   "adw-gtk-theme"
   "rhino-xfwm4-theme-git"
   "vala-panel-appmenu-xfce4-git"
-  "xfce4-dynamic-workspaces-plugin-git"
+  "xfce4-dynamic-workspaces-rs-bin"
 )
 gives="unicorn-desktop"
 replaces=("unicorn-mobile" "unicorn-mobile-git")
