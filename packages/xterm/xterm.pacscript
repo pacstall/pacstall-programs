@@ -200,7 +200,7 @@ build() {
 
 check() {
   cd "${pkgname}~${pkgver}"
-  make -j1 check
+  make -j"${NCPU}" check
 }
 
 package() {
