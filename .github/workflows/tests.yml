@@ -56,33 +56,33 @@ jobs:
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
           if  [[ $(awk -F= '$1=="ID" { print $2 }' /etc/os-release) == "ubuntu" ]]; then
-            source /etc/os-release && echo "Types: deb
-            URIs: http://ports.ubuntu.com/ubuntu-ports/
-            Suites: ${VERSION_CODENAME} ${VERSION_CODENAME}-updates ${VERSION_CODENAME}-backports
-            Components: main universe restricted multiverse
-            Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-            Architectures-Remove: amd64 i386
+          source /etc/os-release && echo "Types: deb
+          URIs: http://ports.ubuntu.com/ubuntu-ports/
+          Suites: ${VERSION_CODENAME} ${VERSION_CODENAME}-updates ${VERSION_CODENAME}-backports
+          Components: main universe restricted multiverse
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          Architectures-Remove: amd64 i386
 
-            Types: deb
-            URIs: http://ports.ubuntu.com/ubuntu-ports/
-            Suites: ${VERSION_CODENAME}-security
-            Components: main universe restricted multiverse
-            Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-            Architectures-Remove: amd64 i386
+          Types: deb
+          URIs: http://ports.ubuntu.com/ubuntu-ports/
+          Suites: ${VERSION_CODENAME}-security
+          Components: main universe restricted multiverse
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          Architectures-Remove: amd64 i386
 
-            Types: deb
-            URIs: http://archive.ubuntu.com/ubuntu/
-            Suites: ${VERSION_CODENAME} ${VERSION_CODENAME}-updates ${VERSION_CODENAME}-backports
-            Components: main universe restricted multiverse
-            Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-            Architectures-Remove: arm64
+          Types: deb
+          URIs: http://archive.ubuntu.com/ubuntu/
+          Suites: ${VERSION_CODENAME} ${VERSION_CODENAME}-updates ${VERSION_CODENAME}-backports
+          Components: main universe restricted multiverse
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          Architectures-Remove: arm64
 
-            Types: deb
-            URIs: http://security.ubuntu.com/ubuntu/
-            Suites: ${VERSION_CODENAME}-security
-            Components: main universe restricted multiverse
-            Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-            Architectures-Remove: arm64" | tee /etc/apt/sources.list.d/ubuntu.sources && rm -f /etc/apt/sources.list
+          Types: deb
+          URIs: http://security.ubuntu.com/ubuntu/
+          Suites: ${VERSION_CODENAME}-security
+          Components: main universe restricted multiverse
+          Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
+          Architectures-Remove: arm64" | tee /etc/apt/sources.list.d/ubuntu.sources && rm -f /etc/apt/sources.list
           fi
           apt-get update
           apt-get install apt-utils curl ca-certificates bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y --no-install-recommends
