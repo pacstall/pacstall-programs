@@ -2538,14 +2538,14 @@ pkgname = electerm-deb
 ---
 pkgbase = electronmail-deb
 	gives = electron-mail
-	pkgver = 5.3.0
+	pkgver = 5.3.2
 	pkgdesc = Unofficial ProtonMail Desktop App
 	arch = amd64
 	breaks = electron-mail-app
 	replaces = electron-mail
 	repology = project: electronmail
-	source = https://github.com/vladimiry/ElectronMail/releases/download/v5.3.0/electron-mail-5.3.0-linux-amd64.deb
-	sha256sums = 87ce5709e8eb97cf63436a54dca64cc5b3182c4ed183acc2380ecdd67819fe11
+	source = https://github.com/vladimiry/ElectronMail/releases/download/v5.3.2/electron-mail-5.3.2-linux-amd64.deb
+	sha256sums = 474383c25f07faf3fc7430ccdfc2da7564917924e99b29187a391d26b20f34c8
 
 pkgname = electronmail-deb
 ---
