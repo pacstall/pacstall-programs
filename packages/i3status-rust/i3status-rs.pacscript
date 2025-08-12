@@ -19,4 +19,3 @@ package() {
   cd "${pkgname}-${pkgver}"
   ./install.sh
 }
-
