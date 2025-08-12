@@ -1,18 +1,18 @@
 pkgname="librewolf-app"
 gives="librewolf"
-pkgver="140.0.4-1"
+pkgver="141.0.2-1"
 pkgdesc="A fork of Firefox, focused on privacy, security and freedom."
 arch=('amd64' 'arm64')
 maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")
 breaks=("${gives}-deb" "${gives}-bin" "${gives}-git")
 repology=("project: librewolf")
 sha256sums_amd64=(
-  "3fb9113d114bb13615433a931fcbc4449f4811688abca276ea91d1bb058ed75f"
+  "8b1300469842d00cf0c23ec9fb8391b4bef021d7ef1115d298f3210a456cb4fc"
   "SKIP"
   "SKIP"
 )
 sha256sums_arm64=(
-  "4880da42456f1726713ea0e32e5f5ca7eb294f89be43abd461a93dc47de275aa"
+  "183359ec974bb8b705f4915f7c11846ce4883d46ae2dc9d49f9b83130a6e93d0"
   "SKIP"
   "SKIP"
 )
