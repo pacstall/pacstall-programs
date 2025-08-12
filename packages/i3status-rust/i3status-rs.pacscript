@@ -21,4 +21,3 @@ package() {
   cd "${pkgname[0]}-${pkgver}" && ./install.sh
   install -Dm755 "target/debug/${pkgname[1]}" -t "${pkgdir}/usr/bin"
 }
-
