@@ -10955,7 +10955,7 @@ pkgname = popsicle
 ---
 pkgbase = postman-bin
 	gives = postman
-	pkgver = 11.54.6
+	pkgver = 11.57.6
 	pkgdesc = Build, test, and document your APIs faster
 	arch = amd64
 	depends = libxss1
@@ -10968,9 +10968,9 @@ pkgbase = postman-bin
 	maintainer = Marie Piontek <marie@kaifa.ch>
 	repology = project: postman
 	repology = visiblename: postman-bin
-	source = https://dl.pstmn.io/download/version/11.54.6/linux64
+	source = https://dl.pstmn.io/download/version/11.57.6/linux64
 	source = postman.desktop::https://aur.archlinux.org/cgit/aur.git/plain/postman.desktop?h=postman-bin
-	sha256sums = 413e7baef696c3be75eac28eb89df04932d2ffab36c928f496c24089181ebf0e
+	sha256sums = afc2448a8d984952c0860e2da81480b108c647e156854d3891af9879a05e1097
 	sha256sums = SKIP
 
 pkgname = postman-bin
