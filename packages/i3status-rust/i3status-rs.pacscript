@@ -1,4 +1,4 @@
-pkgname=("i3status-rust" "i3status-rs")
+pkgname="i3status-rust"
 repology=("project: i3status-rust")
 arch=("any")
 pkgver="0.34.0"
@@ -14,7 +14,7 @@ external_connection=true
 
 build() {
   cd "${pkgname[0]}-${pkgver}"
-  cargo build -j"${NCPU}" --locked
+  cargo build -j"${NCPU}" --locked --release
 }
 
 package() {
