@@ -1,6 +1,6 @@
 pkgname="firefox-bin"
 gives="firefox"
-pkgver="141.0"
+pkgver="141.0.3"
 repology=("project: ${gives}")
 replaces=("${gives}-deb" "${gives}-arm64-deb")
 source=("https://ftp.mozilla.org/pub/firefox/releases/${pkgver}/linux-${AARCH}/en-US/firefox-${pkgver}.tar.xz")
@@ -9,8 +9,8 @@ optdepends=("speech-dispatcher: Common interface to speech synthesizers")
 pkgdesc="Free and open-source web browser developed by the Mozilla Foundation"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 arch=('amd64' 'arm64')
-sha256sums_amd64=("2e96728330c1ffc90dbf45ecd10a82237e4ee528245888954000e67435494829")
-sha256sums_arm64=("969ed24ac8ac6c85e5f935802d8768b69f7c49ce100ac1d36d1978f17debf42b")
+sha256sums_amd64=("e935dc3b74cf2cb1086e1e0b4a51d18e4d307e71ce6a20db64fe49d09cc78716")
+sha256sums_arm64=("03ab7f03538b642693f91bc935f55d9eb6df089eac520a65e1e34dc4fdd7049a")
 
 package() {
   cd "${srcdir}"
