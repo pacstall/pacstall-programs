@@ -7,7 +7,7 @@ arch=('x86_64')
 url="https://lmms.io"
 license=('GPL-2.0')
 depends=('libfftw3-dev' 'libfltk1.3-dev' 'fluidsynth' 'lame' 'libgig-dev' 'libqt5x11extras5-dev' 'libsdl2-dev'
-  'stk' 'libqt5svg5-dev')
+  'stk' 'libqt5svg5-dev' 'qttools5-dev' 'qttools5-dev-tools')
 optdepends=('pulseaudio: pulseaudio support'
   'wine: VST plugin support'
   'carla: carla support')
