@@ -7381,6 +7381,7 @@ pkgbase = lmms-git
 	depends = libqt5x11extras5-dev
 	depends = libsdl2-dev
 	depends = stk
+	depends = libqt5svg5-dev
 	makedepends = cmake
 	makedepends = doxygen
 	makedepends = extra-cmake-modules
