@@ -5415,6 +5415,7 @@ pkgbase = i3lock-color
 pkgname = i3lock-color
 ---
 pkgbase = i3status-rust
+	gives = i3status-rs
 	pkgver = 0.34.0
 	pkgdesc = Very resourcefriendly and feature-rich replacement for i3status, written in pure Rust
 	url = https://github.com/greshake/i3status-rust
