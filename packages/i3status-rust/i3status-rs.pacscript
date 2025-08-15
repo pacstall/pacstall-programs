@@ -1,4 +1,5 @@
 pkgname="i3status-rust"
+gives="i3status-rs"
 repology=("project: i3status-rust")
 arch=("any")
 pkgver="0.34.0"
@@ -19,5 +20,5 @@ build() {
 
 package() {
   cd "${pkgname}-${pkgver}" && ./install.sh
-  install -Dm755 "target/debug/i3status-rs" -t "${pkgdir}/usr/bin"
+  install -Dm755 "target/debug/${gives}" -t "${pkgdir}/usr/bin"
 }
