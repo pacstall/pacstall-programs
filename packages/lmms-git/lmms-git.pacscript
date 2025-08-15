@@ -54,7 +54,7 @@ build() {
 package() {
   cd "${gives}/build"
   make DESTDIR="${pkgdir}" install
-  touch LMMS.desktop 
+  touch LMMS.desktop
   echo '[Desktop Entry]
 Name=LMMS
 Exec=lmms
@@ -65,5 +65,5 @@ Categories=Qt;Audio;
 Icon=lmms
 Comment="For making music with your computer by creating melodies, beats, sounds and samples. It supports VST and SoundFont plugins, MIDI and Hydrogen files, and has a user-friendly interface with various editors and automation features."
 StartupWMClass=lmms' > LMMS.desktop
-install -Dm755 "LMMS.desktop" -t "${pkgdir}/usr/share/applications"
+  install -Dm755 "LMMS.desktop" -t "${pkgdir}/usr/share/applications"
 }
