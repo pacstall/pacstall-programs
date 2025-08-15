@@ -1,7 +1,7 @@
 pkgname="an-anime-game-launcher-bin"
 gives="an-anime-game-launcher"
 arch=("amd64")
-pkgver="3.15.4"
+pkgver="3.15.5"
 pkgdesc="Launcher for a specific anime game with auto-patching, discord rpc and time tracking"
 repology=("project: an-anime-game-launcher")
 source=(
@@ -9,7 +9,7 @@ source=(
   "icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png"
 )
 sha256sums=(
-  "b7a155f2cd9fa71fb80ef98235d5d585fd0e43f18d95a8b4e65f333a425956b9"
+  "d2f1787de14c4bf5f649aee723f1001cdf22b8cd1618845cdebaa34d3a109e5e"
   "SKIP"
 )
 depends=("git" "p7zip-full" "webp" "openssl")
