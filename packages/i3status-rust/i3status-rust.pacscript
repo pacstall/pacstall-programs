@@ -9,7 +9,7 @@ pkgdesc='Very resourcefriendly and feature-rich replacement for i3status, writte
 source=("https://github.com/greshake/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
 replaces=("i3status-rust" "i3status-rs")
 sha256sums=("6787174f749f15e9e177a7730f6abeae05de2b156922f6d02e512b31f35d1d17")
-makedepends=("cargo>=1.85.0" "pandoc" "gcc" "libssl-dev" "libsensors-dev" "libpulse-dev" "libnotmuch-dev")
+makedepends=("cargo" "pandoc" "gcc" "libssl-dev" "libsensors-dev" "libpulse-dev" "libnotmuch-dev")
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
 
