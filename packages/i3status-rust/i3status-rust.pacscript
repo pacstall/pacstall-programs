@@ -20,5 +20,5 @@ build() {
 
 package() {
   cd "${pkgname}-${pkgver}" && ./install.sh
-  install -Dm755 "target/debug/${gives}" -t "${pkgdir}/usr/bin"
+  install -Dm755 "target/release/${gives}" -t "${pkgdir}/usr/bin"
 }
