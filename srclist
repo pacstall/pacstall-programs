@@ -7366,6 +7366,44 @@ pkgbase = lm-studio-app
 
 pkgname = lm-studio-app
 ---
+pkgbase = lmms-git
+	gives = lmms
+	pkgver = 1.3.0.alpha.1.r857.gbbdfeff5e
+	pkgrel = 2
+	pkgdesc = The Linux MultiMedia Studio.
+	url = https://lmms.io
+	arch = x86_64
+	depends = libfftw3-dev
+	depends = libfltk1.3-dev
+	depends = fluidsynth
+	depends = lame
+	depends = libgig-dev
+	depends = libqt5x11extras5-dev
+	depends = libsdl2-dev
+	depends = stk
+	makedepends = cmake
+	makedepends = doxygen
+	makedepends = extra-cmake-modules
+	makedepends = libfreetype6-dev
+	makedepends = git
+	makedepends = ladspa-sdk
+	makedepends = qttools5-dev
+	makedepends = wine
+	makedepends = liblist-moreutils-perl
+	makedepends = libxml-parser-perl
+	optdepends = pulseaudio: pulseaudio support
+	optdepends = wine: VST plugin support
+	optdepends = carla: carla support
+	conflicts = lmms
+	provides = lmms
+	license = GPL-2.0
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = git+https://github.com/lmms/lmms.git
+	source = git+https://github.com/Lukas-W/qt5-x11embed.git
+	source = git+https://github.com/rampantpixels/rpmalloc.git
+
+pkgname = lmms-git
+---
 pkgbase = lrz-syncshare-deb
 	gives = lrz-sync-share
 	pkgver = 22.3.100
