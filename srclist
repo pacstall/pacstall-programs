@@ -12336,6 +12336,7 @@ pkgbase = rnnoise
 
 pkgname = rnnoise
 ---
+---
 pkgbase = rofi
 	pkgver = 1.7.9.1
 	pkgdesc = A window switcher, application launcher, and dmenu replacement.
