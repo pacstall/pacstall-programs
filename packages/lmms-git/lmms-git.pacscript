@@ -1,6 +1,7 @@
 pkgname="lmms-git"
 gives="lmms"
 pkgver="1.3.0.alpha.1.r857.gbbdfeff5e"
+<<<<<<< HEAD
 pkgdesc='For making music with your computer by creating melodies, beats, sounds and samples. It supports VST and SoundFont plugins, MIDI and Hydrogen files, and has a user-friendly interface with various editors and automation features.'
 arch=('any')
 url="https://lmms.io"
@@ -53,6 +54,22 @@ conflicts=('lmms' 'lmms-git')
 source=("https://github.com/LMMS/${gives}.git"
   'https://github.com/Lukas-W/qt5-x11embed.git'
   'https://github.com/rampantpixels/rpmalloc.git')
+=======
+pkgrel=2
+pkgdesc='The Linux MultiMedia Studio.'
+arch=('x86_64')
+url="https://lmms.io"
+license=('GPL-2.0')
+depends=('libfftw3-dev' 'libfltk1.3-dev' 'fluidsynth' 'lame' 'libgig-dev' 'libqt5x11extras5-dev' 'libsdl2-dev' 'stk')
+optdepends=('pulseaudio: pulseaudio support' 'wine: VST plugin support' 'carla: carla support')
+makedepends=('cmake' 'doxygen' 'extra-cmake-modules' 'libfreetype6-dev' 'git'
+             'ladspa-sdk' 'qttools5-dev' 'wine' 'liblist-moreutils-perl' 'libxml-parser-perl')
+provides=('lmms')
+conflicts=('lmms')
+source=("https://github.com/${gives}/${gives}.git"
+        'https://github.com/Lukas-W/qt5-x11embed.git'
+        'https://github.com/rampantpixels/rpmalloc.git')
+>>>>>>> da32c6e1 (Modified `lmms-git.pacscript`)
 
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
