@@ -2,7 +2,7 @@ pkgname="lmms-git"
 gives="lmms"
 pkgver="1.3.0.alpha.1.r857.gbbdfeff5e"
 pkgdesc='For making music with your computer by creating melodies, beats, sounds and samples. It supports VST and SoundFont plugins, MIDI and Hydrogen files, and has a user-friendly interface with various editors and automation features.'
-arch=('any')
+arch=('x86_64')
 url="https://lmms.io"
 license=('GPL-2.0')
 depends=(
@@ -48,11 +48,11 @@ makedepends=(
   'liblist-moreutils-perl'
 )
 
-provides=('lmms')
-conflicts=('lmms' 'lmms-git')
+provides=("${gives}")
+conflicts=("${gives}" "${gives}-git" )
 source=("https://github.com/LMMS/${gives}.git"
-  'https://github.com/Lukas-W/qt5-x11embed.git'
-  'https://github.com/rampantpixels/rpmalloc.git')
+        'https://github.com/Lukas-W/qt5-x11embed.git'
+        'https://github.com/rampantpixels/rpmalloc.git')
 
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
@@ -75,12 +75,11 @@ build() {
     -DWANT_SOUNDIO=OFF \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_MODULE_PATH=/usr/share/ECM/find-modules \
-    -DCMAKE_PREFIX_PATH="/usr/include/wine/windows;/usr/lib/x86_64-linux-gnu" \
+    -DCMAKE_PREFIX_PATH="/usr/include/wine/windows" \
     -DQt5Svg_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt5Svg \
     -DWINE_INCLUDE_DIR=/usr/include/wine/windows \
     -DWINE_LIBRARY=/usr/lib32/wine \
     ..
-  #actually aknowledge other defaults
   cmake --build .
 }
 
