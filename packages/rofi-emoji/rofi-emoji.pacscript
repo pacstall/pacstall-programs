@@ -17,6 +17,7 @@ source=("https://github.com/Mange/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz
 
 build() {
   cd ${pkgname}-${pkgver}
+  export PKG_CONFIG=/usr/bin/pkg-config  
   autoreconf -i
   ./configure --prefix=/usr
   make
