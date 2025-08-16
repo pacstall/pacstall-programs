@@ -7411,9 +7411,9 @@ pkgbase = lmms-git
 	provides = lmms
 	license = GPL-2.0
 	maintainer = aKqir24 <aKqir24@github.com>
-	source = git+https://github.com/LMMS/lmms.git
-	source = git+https://github.com/Lukas-W/qt5-x11embed.git
-	source = git+https://github.com/rampantpixels/rpmalloc.git
+	source = https://github.com/LMMS/${gives}.git
+	source = https://github.com/Lukas-W/qt5-x11embed.git
+	source = https://github.com/rampantpixels/rpmalloc.git
 
 pkgname = lmms-git
 ---
