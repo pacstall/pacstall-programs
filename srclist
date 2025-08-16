@@ -6642,8 +6642,8 @@ pkgname = libfdk-aac2-deb
 ---
 pkgbase = libgbinder-deb
 	gives = libgbinder
-	pkgver = 1.1.25
-	pkgrel = 2
+	pkgver = 1.1.42
+	pkgrel = 4
 	pkgdesc = Binder client library
 	arch = amd64
 	arch = arm64
@@ -6655,10 +6655,10 @@ pkgbase = libgbinder-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libgbinder
-	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libgbinder_1.1.25_amd64.deb
-	sha256sums_amd64 = 3d3c4d7075072c7dbe008db47d641b0269a8dea16247f77deb64c4ce2f920978
-	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libgbinder_1.1.25_arm64.deb
-	sha256sums_arm64 = 82a7313d4e63439a9caf0f3dfbfa1ed8ae75468b4fe23250dbbc2d9559232400
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libgbinder_1.1.42_amd64.deb
+	sha256sums_amd64 = 80c780f2eac4ff711b30f849ede60b3a178598ea51ff7c12648ab16765f8d07f
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libgbinder_1.1.42_arm64.deb
+	sha256sums_arm64 = 8c63a641b6ce303a238a6649525da289ae412514ab383d1a2a4567b17ee03c8c
 
 pkgname = libgbinder-deb
 ---
@@ -6682,8 +6682,8 @@ pkgname = libgc-nix
 ---
 pkgbase = libglibutil-deb
 	gives = libglibutil
-	pkgver = 1.0.66
-	pkgrel = 2
+	pkgver = 1.0.79
+	pkgrel = 7
 	pkgdesc = Library of glib utilities
 	arch = amd64
 	arch = arm64
@@ -6694,10 +6694,10 @@ pkgbase = libglibutil-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libglibutil
-	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libglibutil_1.0.66_amd64.deb
-	sha256sums_amd64 = e31c4515d5f7cf5336ff08b9b12ef261ac38700a3c06ea08d7296579f381921d
-	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libglibutil_1.0.66_arm64.deb
-	sha256sums_arm64 = f1cae9ea551e2050fa3a5373ebdb372305b54ae4c519f4a40ee05ac748211f96
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libglibutil_1.0.79_amd64.deb
+	sha256sums_amd64 = ea7703592533938012d7bdde58f2227ac6ddf75a8896b6e95fb404fa3af4354c
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libglibutil_1.0.79_arm64.deb
+	sha256sums_arm64 = 82124586759ce7f27d02824afa30b39e8c0dc035dada22769aa78466172d9d5c
 
 pkgname = libglibutil-deb
 ---
@@ -11468,10 +11468,10 @@ pkgbase = python3-gbinder-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: python3-gbinder
-	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/python3-gbinder_1.1.2_amd64.deb
-	sha256sums_amd64 = c30aa2565cdc031c3b20a8612ef0ab94e40e2d5b2677de382e48a373b1960f5a
-	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/python3-gbinder_1.1.2_arm64.deb
-	sha256sums_arm64 = 8ee6120b5f51f2853207885b4d9542034e9381263c803deaf4cfc6c1b410c8e2
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/python3-gbinder_1.1.2_amd64.deb
+	sha256sums_amd64 = fec13f42bf98e0848549d6c5c9c4685945da643945baf30e556c6f4d1f118bd4
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/python3-gbinder_1.1.2_arm64.deb
+	sha256sums_arm64 = 0eb8f6b33b80a88d191ec442f321f254e03c2a471edce8967afeb6d3b0b4bba1
 
 pkgname = python3-gbinder-deb
 ---
@@ -15307,8 +15307,8 @@ pkgname = wavey-launcher-bin
 ---
 pkgbase = waydroid-deb
 	gives = waydroid
-	pkgver = 1.4.3
-	pkgrel = 2
+	pkgver = 1.5.4
+	pkgrel = 4
 	pkgdesc = Bring Android support on your own Wayland session which runs under LXC container
 	arch = all
 	depends = lxc
@@ -15319,7 +15319,6 @@ pkgbase = waydroid-deb
 	depends = python3-dbus
 	depends = polkitd
 	depends = iptables
-	depends = python3-pyclipper
 	pacdeps = python3-gbinder-deb
 	replaces = waydroid
 	compatible = ubuntu:noble
@@ -15328,8 +15327,8 @@ pkgbase = waydroid-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: waydroid
-	source = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/waydroid_1.4.3_all.deb
-	sha256sums = 19639f5954accc8ee740b530825053b51e4958e37b8b5157925f4ce334004ff5
+	source = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/waydroid_1.5.4_all.deb
+	sha256sums = a2cfea447bebf2436cf4ac2defb042148cd2201bf26bed24033ae3729ddc503c
 
 pkgname = waydroid-deb
 ---

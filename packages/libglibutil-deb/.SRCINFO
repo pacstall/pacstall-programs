@@ -1,7 +1,7 @@
 pkgbase = libglibutil-deb
 	gives = libglibutil
-	pkgver = 1.0.66
-	pkgrel = 2
+	pkgver = 1.0.79
+	pkgrel = 7
 	pkgdesc = Library of glib utilities
 	arch = amd64
 	arch = arm64
@@ -12,9 +12,9 @@ pkgbase = libglibutil-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libglibutil
-	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libglibutil_1.0.66_amd64.deb
-	sha256sums_amd64 = e31c4515d5f7cf5336ff08b9b12ef261ac38700a3c06ea08d7296579f381921d
-	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libglibutil_1.0.66_arm64.deb
-	sha256sums_arm64 = f1cae9ea551e2050fa3a5373ebdb372305b54ae4c519f4a40ee05ac748211f96
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libglibutil_1.0.79_amd64.deb
+	sha256sums_amd64 = ea7703592533938012d7bdde58f2227ac6ddf75a8896b6e95fb404fa3af4354c
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libglibutil_1.0.79_arm64.deb
+	sha256sums_arm64 = 82124586759ce7f27d02824afa30b39e8c0dc035dada22769aa78466172d9d5c
 
 pkgname = libglibutil-deb
