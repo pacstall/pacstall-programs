@@ -54,6 +54,6 @@ package() {
   cd "${gives}/build"
   make DESTDIR="${pkgdir}" install
   desktop_link="https://raw.githubusercontent.com/LMMS/lmms/refs/heads/master/cmake/linux/lmms.desktop"
-  curl -L -o lmms.desktop ${desktop_link} || wget -O lmms.desktop ${desktop_link} 
+  curl -L -o lmms.desktop ${desktop_link} || wget -O lmms.desktop ${desktop_link}
   install -Dm755 "lmms.desktop" -t "${pkgdir}/usr/share/applications"
 }
