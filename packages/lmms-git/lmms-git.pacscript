@@ -64,7 +64,6 @@ prepare() {
   git config submodule.src/3rdparty/qt5-x11embed.url "${srcdir}/qt5-x11embed"
   git config submodule.src/3rdparty/rpmalloc.url "${srcdir}/rpmalloc"
   git -c protocol.file.allow=always submodule update
-  # setting lib dir
   sed -e 's|lib64|lib|g' -i cmake/modules/DetectMachine.cmake
   sed -e 's/\(${BASHCOMP_USER\)/\1/g' -i cmake/modules/BashCompletion.cmake
 }
@@ -79,6 +78,7 @@ build() {
     -DCMAKE_PREFIX_PATH=/usr/include/wine/windows \
     -DWINE_INCLUDE_DIR=/usr/include/wine/windows \
     -DWINE_LIBRARY=/usr/lib32/wine \
+    -DQt5Svg_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt5Svg \
     ..
   #actually aknowledge other defaults
   cmake --build .
