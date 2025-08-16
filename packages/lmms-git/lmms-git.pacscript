@@ -67,7 +67,6 @@ prepare() {
   # setting lib dir
   sed -e 's|lib64|lib|g' -i cmake/modules/DetectMachine.cmake
   sed -e 's/\(${BASHCOMP_USER\)/\1/g' -i cmake/modules/BashCompletion.cmake
-  apt install libqt5svg5-dev
 }
 
 build() {
