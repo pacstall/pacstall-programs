@@ -652,7 +652,6 @@ rnnoise
 rofi:pkgbase
 rofi:rofi-dev
 rofi:rofi
-rofi-emoji
 rojo-bin
 rosary-deb
 rpcs3-app

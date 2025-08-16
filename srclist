@@ -1348,8 +1348,8 @@ pkgbase = carla-git
 	optdepends = python3-liblo: OSC control support
 	optdepends = python3-rdflib: LADSPA-RDF support
 	conflicts = carla-git
-	conflicts = carla-git-git
-	provides = ${pkgname}
+	conflicts = carla
+	provides = carla
 	provides = clap-host
 	provides = dssi
 	provides = ladspa-sdk
@@ -1357,6 +1357,7 @@ pkgbase = carla-git
 	provides = vst3-host
 	provides = vst-host
 	license = GPL-2.0
+	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/falkTX/carla.git
 
 pkgname = carla-git
@@ -12335,7 +12336,6 @@ pkgbase = rnnoise
 	sha256sums = 90fce4b00b9ff24c08dbfe31b82ffd43bae383d85c5535676d28b0a2b11c0d37
 
 pkgname = rnnoise
----
 ---
 pkgbase = rofi
 	pkgver = 1.7.9.1
