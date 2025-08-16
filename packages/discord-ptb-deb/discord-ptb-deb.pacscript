@@ -1,9 +1,9 @@
 pkgname="discord-ptb-deb"
 gives="discord-ptb"
-pkgver="0.0.155"
+pkgver="0.0.156"
 source=("https://ptb.dl2.discordapp.net/apps/linux/${pkgver}/${gives}-${pkgver}.deb")
 url='https://discord.com/'
 pkgdesc="Chat for Communities and Friends - Public Test Build"
-sha256sums=("b8c8a7c68b9d668ae3f9c563e0f6a1887593781c32261ec7ff371d3bc449718d")
+sha256sums=("af2aef590c1196b88f5e1141f25a97edecbc42f1b5e32adac2957f24b90dc67d")
 arch=('amd64')
 repology=("project: ${gives}")
