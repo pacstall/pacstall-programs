@@ -5429,6 +5429,7 @@ pkgbase = i3status-rust
 	makedepends = libnotmuch-dev
 	replaces = i3status-rust
 	replaces = i3status-rs
+	incompatible = *:24.04.2
 	license = GPL-3.0
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: i3status-rust
