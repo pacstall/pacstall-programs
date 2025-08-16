@@ -50,9 +50,9 @@ makedepends=(
 
 provides=('lmms')
 conflicts=('lmms' 'lmms-git')
-source=("git+https://github.com/LMMS/${gives}.git"
-  'git+https://github.com/Lukas-W/qt5-x11embed.git'
-  'git+https://github.com/rampantpixels/rpmalloc.git')
+source=('https://github.com/LMMS/${gives}.git'
+  'https://github.com/Lukas-W/qt5-x11embed.git'
+  'https://github.com/rampantpixels/rpmalloc.git')
 
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
