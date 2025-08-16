@@ -6,12 +6,12 @@ arch=('x86_64')
 url="https://lmms.io"
 license=('GPL-2.0')
 depends=('libfftw3-dev' 'libfltk1.3-dev' 'fluidsynth' 'lame' 'libgig-dev' 'libqt5x11extras5-dev' 'libsdl2-dev'
-  'stk' 'libqt5svg5-dev' 'qttools5-dev' 'qttools5-dev-tools')
+  'stk' 'qttools5-dev' 'qttools5-dev-tools' 'wine')
 optdepends=('pulseaudio: pulseaudio support'
   'wine: VST plugin support'
   'carla: carla support')
 makedepends=('cmake' 'doxygen' 'extra-cmake-modules' 'libfreetype6-dev' 'git'
-  'ladspa-sdk' 'qttools5-dev' 'wine' 'liblist-moreutils-perl' 'libxml-parser-perl')
+  'ladspa-sdk' 'qttools5-dev' 'liblist-moreutils-perl' 'libxml-parser-perl')
 provides=('lmms')
 conflicts=('lmms')
 source=("git+https://github.com/${gives}/${gives}.git"
@@ -31,6 +31,7 @@ prepare() {
   # setting lib dir
   sed -e 's|lib64|lib|g' -i cmake/modules/DetectMachine.cmake
   sed -e 's/\(${BASHCOMP_USER\)/\1/g' -i cmake/modules/BashCompletion.cmake
+  apt install libqt5svg5-dev
 }
 
 build() {
@@ -41,7 +42,7 @@ build() {
     -DWANT_SOUNDIO=OFF \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_MODULE_PATH=/usr/share/ECM/find-modules \
-    -DCMAKE_PREFIX_PATH="/usr/lib/x86_64-linux-gnu/cmake:/usr/include/wine/windows" \
+    -DCMAKE_PREFIX_PATH=/usr/include/wine/windows \
     -DWINE_INCLUDE_DIR=/usr/include/wine/windows \
     -DWINE_LIBRARY=/usr/lib32/wine \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
