@@ -50,7 +50,7 @@ makedepends=(
 
 provides=('lmms')
 conflicts=('lmms' 'lmms-git')
-source=('https://github.com/LMMS/${gives}.git'
+source=("https://github.com/LMMS/${gives}.git"
   'https://github.com/Lukas-W/qt5-x11embed.git'
   'https://github.com/rampantpixels/rpmalloc.git')
 
