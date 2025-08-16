@@ -12302,6 +12302,7 @@ pkgbase = rofi-emoji
 	depends = libc6
 	depends = libglib2.0-0
 	depends = libgcc-s1
+	depends = pkg-config
 	depends = rofi<=1.7.6
 	makedepends = git
 	makedepends = autoconf
