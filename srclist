@@ -12301,6 +12301,7 @@ pkgbase = rofi-emoji
 	depends = libcairo2
 	depends = libc6
 	depends = libglib2.0-0
+	depends = libglib2.0-dev
 	depends = libgcc-s1
 	depends = pkg-config
 	depends = rofi<=1.7.6
