@@ -49,10 +49,10 @@ makedepends=(
 )
 
 provides=("${gives}")
-conflicts=("${gives}" "${gives}-git" )
+conflicts=("${gives}" "${gives}-git")
 source=("https://github.com/LMMS/${gives}.git"
-        'https://github.com/Lukas-W/qt5-x11embed.git'
-        'https://github.com/rampantpixels/rpmalloc.git')
+  'https://github.com/Lukas-W/qt5-x11embed.git'
+  'https://github.com/rampantpixels/rpmalloc.git')
 
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
