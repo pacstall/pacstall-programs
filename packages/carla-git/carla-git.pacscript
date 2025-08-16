@@ -17,6 +17,7 @@ optdepends=(
   'python3-liblo: OSC control support'
   'python3-rdflib: LADSPA-RDF support'
 )
+maintainer=("aKqir24 <aKqir24@github.com>")
 source=("https://github.com/falkTX/${gives}.git")
 build() {
   cd ${gives}
@@ -27,6 +28,8 @@ build() {
 }
 
 package() {
+  depends+=('libasound.so' 'libfluidsynth.so' 'libfreetype.so' 'libGL.so'
+            'liblo.so' 'libmagic.so' 'libsndfile.so')
   cd ${gives}
   make \
     DEFAULT_QT=5 \
