@@ -2,7 +2,7 @@ pkgname="lmms-git"
 gives="lmms"
 pkgver=1.3.0.alpha.1.r857.gbbdfeff5e
 pkgrel=2
-pkgdesc='The Linux MultiMedia Studio.'
+pkgdesc='For making music with your computer by creating melodies, beats, sounds and samples. It supports VST and SoundFont plugins, MIDI and Hydrogen files, and has a user-friendly interface with various editors and automation features.'
 arch=('x86_64')
 url="https://lmms.io"
 license=('GPL-2.0')
@@ -55,15 +55,6 @@ package() {
   cd "${gives}/build"
   make DESTDIR="${pkgdir}" install
   touch LMMS.desktop
-  echo '[Desktop Entry]
-Name=LMMS
-Exec=lmms
-Terminal=false
-Type=Application
-StartupNotify=true
-Categories=Qt;Audio;
-Icon=lmms
-Comment="For making music with your computer by creating melodies, beats, sounds and samples. It supports VST and SoundFont plugins, MIDI and Hydrogen files, and has a user-friendly interface with various editors and automation features."
-StartupWMClass=lmms' > LMMS.desktop
+  echo -e "[Desktop Entry]\nName=LMMS\nExec=lmms\nTerminal=false\nType=Application\nStartupNotify=true\nCategories=Qt;Audio;\nIcon=lmms\nComment='"${pkgdesc}"'\nStartupWMClass=lmms" > LMMS.desktop
   install -Dm755 "LMMS.desktop" -t "${pkgdir}/usr/share/applications"
 }
