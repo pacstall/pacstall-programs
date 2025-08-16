@@ -29,8 +29,9 @@ depends=(
 )
 
 optdepends=(
-  'libwine-dev'
-  'wine'
+  'pulseaudio: pulseaudio support'
+  'wine: VST plugin support'
+  'carla: carla support'
 )
 
 makedepends=(
