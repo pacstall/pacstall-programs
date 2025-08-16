@@ -1,7 +1,6 @@
 pkgname="lmms-git"
 gives="lmms"
-pkgver=1.3.0.alpha.1.r857.gbbdfeff5e
-pkgrel=2
+pkgver="1.3.0.alpha.1.r857.gbbdfeff5e"
 pkgdesc='For making music with your computer by creating melodies, beats, sounds and samples. It supports VST and SoundFont plugins, MIDI and Hydrogen files, and has a user-friendly interface with various editors and automation features.'
 arch=('x86_64')
 url="https://lmms.io"
