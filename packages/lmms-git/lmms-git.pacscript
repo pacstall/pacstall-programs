@@ -5,15 +5,51 @@ pkgdesc='For making music with your computer by creating melodies, beats, sounds
 arch=('x86_64')
 url="https://lmms.io"
 license=('GPL-2.0')
-depends=('libfftw3-dev' 'libfltk1.3-dev' 'fluidsynth' 'lame' 'libgig-dev' 'libqt5x11extras5-dev' 'libsdl2-dev'
-  'stk' 'qttools5-dev' 'qttools5-dev-tools' 'wine')
-optdepends=('pulseaudio: pulseaudio support'
-  'wine: VST plugin support'
-  'carla: carla support')
-makedepends=('cmake' 'doxygen' 'extra-cmake-modules' 'libfreetype6-dev' 'git'
-  'ladspa-sdk' 'qttools5-dev' 'liblist-moreutils-perl' 'libxml-parser-perl')
+depends=(
+  'libsndfile1-dev'
+  'libsamplerate0-dev'
+  'libasound2-dev'
+  'libstk-dev'
+  'libsdl1.2-dev'
+  'portaudio19-dev'
+  'libjack-dev'
+  'ladspa-sdk'
+  'libvorbis-dev'
+  'libfltk1.3-dev'
+  'libpulse-dev'
+  'libfluidsynth-dev'
+  'libfftw3-dev'
+  'libgig-dev'
+  'libmp3lame-dev'
+  'libqt5svg5-dev'
+  'libqt5x11extras5-dev'
+  'libxcb-keysyms1-dev'
+  'libxcb-util0-dev'
+  'libx11-xcb-dev'
+)
+
+optdepends=(
+  'libwine-dev'
+  'wine'
+)
+
+makedepends=(
+  'cmake'
+  'wine'
+  'git'
+  'fluid'
+  'qttools5-dev'
+  'qtbase5-private-dev'
+  'gcc-multilib'
+  'g++-multilib'
+  'libwine-dev:i386'
+  'libxml-parser-perl'
+  'liblist-moreutils-perl'
+)
+
+
 provides=('lmms')
-conflicts=('lmms')
+conflicts=('lmms' 'lmms-git')
 source=("git+https://github.com/${gives}/${gives}.git"
   'git+https://github.com/Lukas-W/qt5-x11embed.git'
   'git+https://github.com/rampantpixels/rpmalloc.git')
