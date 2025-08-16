@@ -27,6 +27,8 @@ build() {
 }
 
 package() {
+  depends+=('libasound.so' 'libfluidsynth.so' 'libfreetype.so' 'libGL.so'
+            'liblo.so' 'libmagic.so' 'libsndfile.so')
   cd ${gives}
   make \
     DEFAULT_QT=5 \
