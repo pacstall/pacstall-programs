@@ -50,7 +50,7 @@ makedepends=(
 
 provides=('lmms')
 conflicts=('lmms' 'lmms-git')
-source=("git+https://github.com/${gives}/${gives}.git"
+source=("git+https://github.com/LMMS/${gives}.git"
   'git+https://github.com/Lukas-W/qt5-x11embed.git'
   'git+https://github.com/rampantpixels/rpmalloc.git')
 
@@ -71,7 +71,6 @@ prepare() {
 
 build() {
   cd "${gives}/build"
-  # TODO: Remove CMAKE_POLICY_VERSION_MINIMUM from here once qt5-x11embed PR#7 is merged.
   cmake -DCMAKE_INSTALL_PREFIX=/usr \
     -DWANT_QT5=ON \
     -DWANT_SOUNDIO=OFF \
@@ -80,7 +79,6 @@ build() {
     -DCMAKE_PREFIX_PATH=/usr/include/wine/windows \
     -DWINE_INCLUDE_DIR=/usr/include/wine/windows \
     -DWINE_LIBRARY=/usr/lib32/wine \
-    -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
     ..
   #actually aknowledge other defaults
   cmake --build .
