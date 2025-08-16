@@ -41,7 +41,7 @@ build() {
     -DWANT_SOUNDIO=OFF \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_MODULE_PATH=/usr/share/ECM/find-modules \
-    -DCMAKE_PREFIX_PATH=/usr/include/wine/windows \
+    -DCMAKE_PREFIX_PATH="/usr/lib/x86_64-linux-gnu/cmake:/usr/include/wine/windows" \
     -DWINE_INCLUDE_DIR=/usr/include/wine/windows \
     -DWINE_LIBRARY=/usr/lib32/wine \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
