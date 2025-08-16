@@ -47,7 +47,6 @@ makedepends=(
   'liblist-moreutils-perl'
 )
 
-
 provides=('lmms')
 conflicts=('lmms' 'lmms-git')
 source=("git+https://github.com/${gives}/${gives}.git"
