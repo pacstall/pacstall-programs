@@ -61,6 +61,7 @@ cachyos-ananicy-rules-git
 cantata
 caprine-deb
 capsfix-git
+carla-git
 cbindgen
 celeste-bin
 cheat
@@ -154,6 +155,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+ffmpeg
 ffmpeg4.4
 ffnvcodec-headers
 ffsend-bin
@@ -265,6 +267,7 @@ hyprwayland-scanner
 i3blocks-git
 i3lock-color
 icecat-deb
+imhex-app
 imwheel-exclude-patched-git
 insomnia-deb
 insync-deb
@@ -646,6 +649,7 @@ rnnoise
 rofi:pkgbase
 rofi:rofi-dev
 rofi:rofi
+rofi-emoji
 rojo-bin
 rosary-deb
 rpcs3-app

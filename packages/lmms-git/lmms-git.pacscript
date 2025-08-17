@@ -5,6 +5,7 @@ pkgdesc='For making music with your computer by creating melodies, beats, sounds
 arch=('x86_64')
 url="https://lmms.io"
 license=('GPL-2.0')
+<<<<<<< HEAD
 maintainer=("aKqir24 <aKqir24@github.com>")
 depends=(
   'git'
@@ -16,6 +17,29 @@ depends=(
   'liblist-moreutils-perl'
   'libxcb-keysyms1-dev'
   'libxcb-util0-dev'
+=======
+depends=(
+  'libsndfile1-dev'
+  'libsamplerate0-dev'
+  'libasound2-dev'
+  'libstk-dev'
+  'libsdl1.2-dev'
+  'portaudio19-dev'
+  'libjack-dev'
+  'ladspa-sdk'
+  'libvorbis-dev'
+  'libfltk1.3-dev'
+  'libpulse-dev'
+  'libfluidsynth-dev'
+  'libfftw3-dev'
+  'libgig-dev'
+  'libmp3lame-dev'
+  'libqt5svg5-dev'
+  'libqt5x11extras5-dev'
+  'libxcb-keysyms1-dev'
+  'libxcb-util0-dev'
+  'libx11-xcb-dev'
+>>>>>>> master
 )
 
 optdepends=(
@@ -27,13 +51,19 @@ optdepends=(
 makedepends=(
   'cmake'
   'wine'
+<<<<<<< HEAD
   'libqt5svg5-dev'
   'libqt5x11extras5-dev'
+=======
+  'git'
+  'fluid'
+>>>>>>> master
   'qttools5-dev'
   'qtbase5-private-dev'
   'gcc-multilib'
   'g++-multilib'
   'libwine-dev:i386'
+<<<<<<< HEAD
   'libsndfile1-dev'
   'libsamplerate0-dev'
   'libasound2-dev'
@@ -47,6 +77,10 @@ makedepends=(
   'libgig-dev'
   'libmp3lame-dev'
   'libx11-xcb-dev'
+=======
+  'libxml-parser-perl'
+  'liblist-moreutils-perl'
+>>>>>>> master
 )
 
 provides=("${gives}")
@@ -87,6 +121,11 @@ build() {
 package() {
   cd "${gives}/build"
   make DESTDIR="${pkgdir}" install
+<<<<<<< HEAD
   cd "${gives}/cmake/linux"
+=======
+  desktop_link="https://raw.githubusercontent.com/LMMS/lmms/refs/heads/master/cmake/linux/lmms.desktop"
+  curl -L -o lmms.desktop ${desktop_link} || wget -O lmms.desktop ${desktop_link}
+>>>>>>> master
   install -Dm755 "lmms.desktop" -t "${pkgdir}/usr/share/applications"
 }

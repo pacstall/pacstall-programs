@@ -1,8 +1,8 @@
 pkgname="floorp-bin"
 gives="floorp"
-pkgver="12.0.15"
+pkgver="12.0.16"
 repology=("project: ${gives}")
-sha256sums_amd64=("7abca82cf6913fd2ad2df82cad4a7de1aa04bb9dd814aee10d7a2909a0470a00")
+sha256sums_amd64=("6e5493d8f692bbb17cb8610167b391433ca038b4cb0491db014373a08cc52e95")
 source_amd64=("${gives}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/floorp-linux-amd64.tar.xz")
 url='https://floorp.app/'
 pkgdesc="Firefox-based Browser build for keeping the Open, Private and Sustainable Web alive"
