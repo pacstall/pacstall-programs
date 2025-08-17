@@ -83,9 +83,14 @@ source=("git+https://github.com/LMMS/${gives}.git"
 provides=("${gives}")
 conflicts=("${gives}" "${gives}-git")
 source=("https://github.com/LMMS/${gives}.git"
+<<<<<<< HEAD
         'https://github.com/Lukas-W/qt5-x11embed.git'
         'https://github.com/rampantpixels/rpmalloc.git')
 >>>>>>> 003a88c4 (Desktop shortcut from repo)
+=======
+  'https://github.com/Lukas-W/qt5-x11embed.git'
+  'https://github.com/rampantpixels/rpmalloc.git')
+>>>>>>> dc185bc1 (Remove not needed commits)
 
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
