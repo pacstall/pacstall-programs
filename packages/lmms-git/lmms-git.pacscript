@@ -21,8 +21,11 @@ depends=(
   'libfftw3-dev'
   'libgig-dev'
   'libmp3lame-dev'
+<<<<<<< HEAD
   'libqt5svg5-dev'
   'libqt5x11extras5-dev'
+=======
+>>>>>>> 56b7b063 (Qt5 fix)
   'libxcb-keysyms1-dev'
   'libxcb-util0-dev'
   'libx11-xcb-dev'
@@ -39,6 +42,11 @@ makedepends=(
   'wine'
   'git'
   'fluid'
+<<<<<<< HEAD
+=======
+  'libqt5svg5-dev'
+  'libqt5x11extras5-dev'
+>>>>>>> 56b7b063 (Qt5 fix)
   'qttools5-dev'
   'qtbase5-private-dev'
   'gcc-multilib'
