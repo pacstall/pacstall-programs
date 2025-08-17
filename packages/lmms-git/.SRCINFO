@@ -41,6 +41,7 @@ pkgbase = lmms-git
 	conflicts = lmms
 	conflicts = lmms-git
 	provides = lmms
+	incompatible = debian:sid
 	license = GPL-2.0
 	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/LMMS/lmms.git
