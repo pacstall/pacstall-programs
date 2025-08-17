@@ -362,10 +362,7 @@ linux-modules-lts-6.6-deb
 linux-modules-stable-deb
 linux-wifi-hotspot-deb
 lix-git
-<<<<<<< HEAD
-=======
 lmms-git
->>>>>>> 11a54f4b (Soureces in pkglist)
 lm-studio-app
 lrz-syncshare-deb
 lsd-deb

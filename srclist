@@ -7352,32 +7352,6 @@ pkgbase = lix-git
 
 pkgname = lix-git
 ---
-<<<<<<< HEAD
-pkgbase = lm-studio-app
-	gives = lm-studio
-	pkgver = 0.3.14-5
-	pkgdesc = Experiment with LLMs on your computer.
-	url = https://lmstudio.ai
-	arch = amd64
-	makedepends = imagemagick
-	replaces = lm-studio
-	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
-	source = https://installers.lmstudio.ai/linux/x64/0.3.14-5/LM-Studio-0.3.14-5-x64.AppImage
-	sha256sums = 5ab3bde5ecfcd7f0345354edd4e8b63f2529ea7bec9903332b4554547d5361b8
-
-pkgname = lm-studio-app
----
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-=======
->>>>>>> 11a54f4b (Soureces in pkglist)
->>>>>>> ab0b280d (Soureces in pkglist)
 pkgbase = lmms-git
 	gives = lmms
 	pkgver = 1.3.0.alpha.1.r857.gbbdfeff5e
@@ -7429,12 +7403,6 @@ pkgbase = lmms-git
 
 pkgname = lmms-git
 ---
-<<<<<<< HEAD
->>>>>>> 370993c1 ([pre-commit.ci] auto fixes from pre-commit.com hooks)
-<<<<<<< HEAD
->>>>>>> e4cb6c81 ([pre-commit.ci] auto fixes from pre-commit.com hooks)
-=======
-=======
 pkgbase = lm-studio-app
 	gives = lm-studio
 	pkgver = 0.3.14-5
@@ -7449,9 +7417,6 @@ pkgbase = lm-studio-app
 
 pkgname = lm-studio-app
 ---
->>>>>>> 11a54f4b (Soureces in pkglist)
->>>>>>> ab0b280d (Soureces in pkglist)
->>>>>>> f44d7094 (Soureces in pkglist)
 pkgbase = lrz-syncshare-deb
 	gives = lrz-sync-share
 	pkgver = 22.3.100
