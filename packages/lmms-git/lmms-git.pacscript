@@ -6,26 +6,13 @@ arch=('x86_64')
 url="https://lmms.io"
 license=('GPL-2.0')
 depends=(
-  'libsndfile1-dev'
-  'libsamplerate0-dev'
-  'libasound2-dev'
-  'libstk-dev'
-  'libsdl1.2-dev'
-  'portaudio19-dev'
+  'git'
+  'fluid'
   'libjack-dev'
-  'ladspa-sdk'
-  'libvorbis-dev'
-  'libfltk1.3-dev'
   'libpulse-dev'
-  'libfluidsynth-dev'
-  'libfftw3-dev'
-  'libgig-dev'
-  'libmp3lame-dev'
-  'libqt5svg5-dev'
-  'libqt5x11extras5-dev'
-  'libxcb-keysyms1-dev'
-  'libxcb-util0-dev'
-  'libx11-xcb-dev'
+  'libvorbis-dev'
+  'libxml-parser-perl'
+  'liblist-moreutils-perl'
 )
 
 optdepends=(
@@ -37,22 +24,34 @@ optdepends=(
 makedepends=(
   'cmake'
   'wine'
-  'git'
-  'fluid'
+  'libsndfile1-dev'
+  'libsamplerate0-dev'
+  'libasound2-dev'
+  'libstk-dev'
+  'libsdl1.2-dev'
+  'portaudio19-dev'
+  'ladspa-sdk'
+  'libfltk1.3-dev'
+  'libfluidsynth-dev'
+  'libfftw3-dev'
+  'libgig-dev'
+  'libmp3lame-dev'
+  'libqt5svg5-dev'
+  'libqt5x11extras5-dev'
+  'libxcb-keysyms1-dev'
+  'libxcb-util0-dev'
+  'libx11-xcb-dev'
   'qttools5-dev'
   'qtbase5-private-dev'
   'gcc-multilib'
   'g++-multilib'
-  'libwine-dev:i386'
-  'libxml-parser-perl'
-  'liblist-moreutils-perl'
-)
+  'libwine-dev:i386')
 
 provides=('lmms')
-conflicts=('lmms' 'lmms-git')
-source=("git+https://github.com/LMMS/${gives}.git"
-  'git+https://github.com/Lukas-W/qt5-x11embed.git'
-  'git+https://github.com/rampantpixels/rpmalloc.git')
+conflicts=('${gives}' '${pkgname}')
+source=("https://github.com/LMMS/${gives}.git"
+        'https://github.com/Lukas-W/qt5-x11embed.git'
+        'https://github.com/rampantpixels/rpmalloc.git')
 
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
@@ -87,7 +86,6 @@ build() {
 package() {
   cd "${gives}/build"
   make DESTDIR="${pkgdir}" install
-  desktop_link="https://raw.githubusercontent.com/LMMS/lmms/refs/heads/master/cmake/linux/lmms.desktop"
-  curl -L -o lmms.desktop ${desktop_link} || wget -O lmms.desktop ${desktop_link}
-  install -Dm755 "lmms.desktop" -t "${pkgdir}/usr/share/applications"
+  cd ..
+  install -Dm755 "cmake/linux/lmms.desktop" -t "${pkgdir}/usr/share/applications"
 }
