@@ -5,6 +5,7 @@ pkgdesc='For making music with your computer by creating melodies, beats, sounds
 arch=('x86_64')
 url="https://lmms.io"
 license=('GPL-2.0')
+maintainer=("aKqir24 <aKqir24@github.com>")
 depends=(
   'git'
   'fluid'
@@ -31,7 +32,6 @@ depends=(
 >>>>>>> 587a7c3a (depends and make deps organazation)
   'libxcb-keysyms1-dev'
   'libxcb-util0-dev'
-  'libx11-xcb-dev'
 )
 
 optdepends=(
@@ -70,6 +70,7 @@ makedepends=(
   'libfftw3-dev'
   'libgig-dev'
   'libmp3lame-dev'
+  'libx11-xcb-dev'
 )
 
 <<<<<<< HEAD
