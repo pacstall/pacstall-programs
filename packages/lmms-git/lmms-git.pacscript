@@ -48,11 +48,19 @@ makedepends=(
   'liblist-moreutils-perl'
 )
 
+<<<<<<< HEAD
 provides=('lmms')
 conflicts=('lmms' 'lmms-git')
 source=("git+https://github.com/LMMS/${gives}.git"
   'git+https://github.com/Lukas-W/qt5-x11embed.git'
   'git+https://github.com/rampantpixels/rpmalloc.git')
+=======
+provides=("${gives}")
+conflicts=("${gives}" "${gives}-git")
+source=("https://github.com/LMMS/${gives}.git"
+        'https://github.com/Lukas-W/qt5-x11embed.git'
+        'https://github.com/rampantpixels/rpmalloc.git')
+>>>>>>> 003a88c4 (Desktop shortcut from repo)
 
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
@@ -87,7 +95,6 @@ build() {
 package() {
   cd "${gives}/build"
   make DESTDIR="${pkgdir}" install
-  desktop_link="https://raw.githubusercontent.com/LMMS/lmms/refs/heads/master/cmake/linux/lmms.desktop"
-  curl -L -o lmms.desktop ${desktop_link} || wget -O lmms.desktop ${desktop_link}
+  cd "${gives}/cmake/linux"
   install -Dm755 "lmms.desktop" -t "${pkgdir}/usr/share/applications"
 }
