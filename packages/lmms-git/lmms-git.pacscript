@@ -91,4 +91,3 @@ package() {
   curl -L -o lmms.desktop ${desktop_link} || wget -O lmms.desktop ${desktop_link}
   install -Dm755 "lmms.desktop" -t "${pkgdir}/usr/share/applications"
 }
-
