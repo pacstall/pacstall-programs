@@ -5,6 +5,8 @@ pkgdesc='For making music with your computer by creating melodies, beats, sounds
 arch=('x86_64')
 url="https://lmms.io"
 license=('GPL-2.0')
+maintainer=("aKqir24 <aKqir24@github.com>")
+incompatible=('debian:sid')
 depends=(
   'git'
   'fluid'
