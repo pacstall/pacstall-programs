@@ -154,6 +154,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+ffmpeg
 ffmpeg4.4
 ffnvcodec-headers
 ffsend-bin
@@ -266,6 +267,7 @@ i3blocks-git
 i3lock-color
 i3status-rust
 icecat-deb
+imhex-app
 imwheel-exclude-patched-git
 insomnia-deb
 insync-deb

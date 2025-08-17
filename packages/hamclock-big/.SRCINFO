@@ -1,5 +1,5 @@
 pkgbase = hamclock-big
-	pkgver = 4.19
+	pkgver = 4.20
 	pkgdesc = Clock and world map with extra features for amateur radio (1600x960 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	arch = any
@@ -19,11 +19,9 @@ pkgbase = hamclock-big
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-big
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.19.tar.gz
-	source = https://raw.githubusercontent.com/fang64/hamclock/refs/heads/patch/pacstall/no-updates.patch
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.20.tar.gz
 	source = hamclock.desktop
-	sha256sums = 370d1f020c06028b35fc12a63ac26be2ab75c46b2319593349018beb5e5587df
-	sha256sums = 03dece6363a7109d3178eec7d88dafe3cea920c471d0076372acefade89294fd
+	sha256sums = 612a49653ae4d4edd43e6840d1de513b536772ffc6d347821fed76a962cfbd0f
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-big
