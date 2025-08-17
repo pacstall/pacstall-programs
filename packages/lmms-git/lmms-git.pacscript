@@ -6,13 +6,12 @@ arch=('x86_64')
 url="https://lmms.io"
 license=('GPL-2.0')
 depends=(
-  'libsndfile1-dev'
-  'libsamplerate0-dev'
-  'libasound2-dev'
-  'libstk-dev'
-  'libsdl1.2-dev'
+  'git'
+  'fluid'
+  'libvorbis-dev'
   'portaudio19-dev'
   'libjack-dev'
+<<<<<<< HEAD
   'ladspa-sdk'
   'libvorbis-dev'
   'libfltk1.3-dev'
@@ -26,6 +25,10 @@ depends=(
   'libqt5x11extras5-dev'
 =======
 >>>>>>> 56b7b063 (Qt5 fix)
+=======
+  'libxml-parser-perl'
+  'liblist-moreutils-perl'
+>>>>>>> 587a7c3a (depends and make deps organazation)
   'libxcb-keysyms1-dev'
   'libxcb-util0-dev'
   'libx11-xcb-dev'
@@ -40,10 +43,13 @@ optdepends=(
 makedepends=(
   'cmake'
   'wine'
+<<<<<<< HEAD
   'git'
   'fluid'
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 587a7c3a (depends and make deps organazation)
   'libqt5svg5-dev'
   'libqt5x11extras5-dev'
 >>>>>>> 56b7b063 (Qt5 fix)
@@ -52,8 +58,18 @@ makedepends=(
   'gcc-multilib'
   'g++-multilib'
   'libwine-dev:i386'
-  'libxml-parser-perl'
-  'liblist-moreutils-perl'
+  'libsndfile1-dev'
+  'libsamplerate0-dev'
+  'libasound2-dev'
+  'libstk-dev'
+  'libsdl1.2-dev'
+  'ladspa-sdk'
+  'libfltk1.3-dev'
+  'libpulse-dev'
+  'libfluidsynth-dev'
+  'libfftw3-dev'
+  'libgig-dev'
+  'libmp3lame-dev'
 )
 
 <<<<<<< HEAD
