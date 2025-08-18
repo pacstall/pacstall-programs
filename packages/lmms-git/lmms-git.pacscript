@@ -67,8 +67,8 @@ prepare() {
   git config submodule.src/3rdparty/rpmalloc.url "${srcdir}/rpmalloc"
   git -c protocol.file.allow=always submodule update
   # setting lib dir
-  sed -e 's|lib64|lib|g' -i cmake/modules/DetectMachine.cmake
-  sed -e 's/\(${BASHCOMP_USER\)/\1/g' -i cmake/modules/BashCompletion.cmake
+  sed -e "s|lib64|lib|g" -i cmake/modules/DetectMachine.cmake
+  sed -e "s/\(${BASHCOMP_USER\)/\1/g" -i cmake/modules/BashCompletion.cmake
 }
 
 build() {
