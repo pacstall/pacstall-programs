@@ -18,19 +18,19 @@ maintainer=("aKqir24 <aKqir24@github.com>")
 source=("https://github.com/Mange/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
 
 build() {
-  cd ${pkgname}-${pkgver}
+  cd "${pkgname}-${pkgver}"
   autoreconf -i
   ./configure --prefix=/usr
   make
 }
 
 check() {
-  cd ${pkgname}-${pkgver}
+  cd "${pkgname}-${pkgver}"
   make check
 }
 
 package() {
-  cd ${pkgname}-${pkgver}
+  cd "${pkgname}-${pkgver}"
   make DESTDIR="${pkgdir}/" install
   install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }
