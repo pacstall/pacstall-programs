@@ -1,5 +1,5 @@
 pkgbase = xterm
-	pkgver = 401
+	pkgver = 401a
 	pkgdesc = X terminal emulator for the X Window System
 	url = https://invisible-island.net/xterm/
 	arch = any
@@ -36,6 +36,6 @@ pkgbase = xterm
 	suggests = xfonts-cyrillic
 	license = X11
 	maintainer = Don Alfons <donnisnoni@outlook.com>
-	source = @xterm~401::https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/xterm-401.tar.gz
+	source = @xterm~401a::https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/xterm-401a.tar.gz
 
 pkgname = xterm
