@@ -1,5 +1,5 @@
-pkgname=xterm
-pkgver=401
+pkgname="xterm"
+pkgver="401"
 provides=("x-terminal-emulator")
 arch=("any")
 section=("x11")
