@@ -1,7 +1,7 @@
 pkgname="rofi-emoji"
 pkgver="3.5.0"
-pkgdesc="A Rofi plugin for selecting emojis"
-url="https://github.com/Mange/rofi-emoji"
+pkgdesc="Rofi plugin for selecting emojis"
+url='https://github.com/Mange/rofi-emoji'
 arch=('x86_64')
 license=("MIT")
 checkdepends=('check')
