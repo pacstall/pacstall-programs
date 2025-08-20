@@ -1,6 +1,6 @@
 pkgbase = rofi-emoji
 	pkgver = 3.5.0
-	pkgdesc = A Rofi plugin for selecting emojis
+	pkgdesc = Rofi plugin for selecting emojis
 	url = https://github.com/Mange/rofi-emoji
 	arch = x86_64
 	depends = libc6
