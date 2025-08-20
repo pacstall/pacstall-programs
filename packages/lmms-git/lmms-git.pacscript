@@ -54,7 +54,6 @@ conflicts=("${gives}" "${pkgname}")
 source=("https://github.com/LMMS/${gives}.git"
   'https://github.com/Lukas-W/qt5-x11embed.git'
   'https://github.com/rampantpixels/rpmalloc.git')
-
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
 
@@ -76,18 +75,18 @@ build() {
     -DWANT_QT5=ON \
     -DWANT_SOUNDIO=OFF \
     -DCMAKE_INSTALL_LIBDIR=lib \
+    -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_MODULE_PATH=/usr/share/ECM/find-modules \
     -DCMAKE_PREFIX_PATH=/usr/include/wine/windows \
     -DWINE_INCLUDE_DIR=/usr/include/wine/windows \
     -DWINE_LIBRARY=/usr/lib32/wine \
     ..
   #actually aknowledge other defaults
-  cmake --build .
+  cmake --build . --parallel "${NCPU}"
 }
 
 package() {
   cd "${gives}/build"
-  make DESTDIR="${pkgdir}" install
-  cd ..
+  make DESTDIR="${pkgdir}" install && cd ..
   install -Dm755 "cmake/linux/lmms.desktop" -t "${pkgdir}/usr/share/applications"
 }
