@@ -34,6 +34,7 @@ package() {
   cd "${pkgname}"
 
   install -vDm755 target/release/niri -t "${pkgdir}/usr/bin/"
+  install -vDm755 resources/niri-session -t "${pkgdir}/usr/bin"
   install -vDm 644 resources/${pkgname}{.service,-shutdown.target} -t "${pkgdir}/usr/lib/systemd/user/"
   install -vDm 644 resources/${pkgname}.desktop -t "${pkgdir}/usr/share/wayland-sessions/"
   install -vDm 644 resources/${pkgname}-portals.conf -t "${pkgdir}/usr/share/xdg-desktop-portal/"
