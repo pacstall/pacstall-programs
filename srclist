@@ -9288,7 +9288,7 @@ pkgname = ttf-zed-mono-nerd
 ---
 pkgbase = niri
 	pkgver = 25.05.1
-	pkgdesc = A scrollable-tiling Wayland compositor.
+	pkgdesc = Scrollable-tiling Wayland compositor.
 	url = https://github.com/YaLTeR/niri
 	arch = amd64
 	arch = arm64
