@@ -1,4 +1,4 @@
-pkgname=("niri")
+pkgname="niri"
 pkgver=("25.05.1")
 arch=("amd64" "arm64")
 pkgdesc=("A scrollable-tiling Wayland compositor.")
