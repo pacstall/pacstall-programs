@@ -21,7 +21,7 @@ build() {
   cd "${pkgname}-${pkgver}"
   autoreconf -i
   ./configure --prefix=/usr
-  make
+  make -j"${NCPU}"
 }
 
 check() {
