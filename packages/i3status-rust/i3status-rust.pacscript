@@ -10,7 +10,6 @@ source=("https://github.com/greshake/${pkgname}/archive/refs/tags/v${pkgver}.tar
 replaces=("i3status-rust" "i3status-rs")
 sha256sums=("6787174f749f15e9e177a7730f6abeae05de2b156922f6d02e512b31f35d1d17")
 makedepends=("cargo" "pandoc" "gcc" "libssl-dev" "libsensors-dev" "libpulse-dev" "libnotmuch-dev")
-incompatible=('*:noble' '*:devel' '*:plucky')
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
 
@@ -20,6 +19,6 @@ build() {
 }
 
 package() {
-  cd "${pkgname}-${pkgver}" && ./install.sh
+  cd "${pkgname}-${pkgver}"
   install -Dm755 "target/release/${gives}" -t "${pkgdir}/usr/bin"
 }
