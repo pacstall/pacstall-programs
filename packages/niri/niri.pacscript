@@ -35,10 +35,10 @@ package() {
 
   install -vDm755 target/release/niri -t "${pkgdir}/usr/bin/"
   install -vDm755 resources/niri-session -t "${pkgdir}/usr/bin"
-  install -vDm 644 resources/${pkgname}{.service,-shutdown.target} -t "${pkgdir}/usr/lib/systemd/user/"
-  install -vDm 644 resources/${pkgname}.desktop -t "${pkgdir}/usr/share/wayland-sessions/"
-  install -vDm 644 resources/${pkgname}-portals.conf -t "${pkgdir}/usr/share/xdg-desktop-portal/"
-  install -vDm 644 resources/default-config.kdl README.md -t "${pkgdir}/usr/share/doc/$pkgname/"
+  install -vDm 644 resources/"${pkgname}"{.service,-shutdown.target} -t "${pkgdir}/usr/lib/systemd/user/"
+  install -vDm 644 resources/"${pkgname}".desktop -t "${pkgdir}/usr/share/wayland-sessions/"
+  install -vDm 644 resources/"${pkgname}"-portals.conf -t "${pkgdir}/usr/share/xdg-desktop-portal/"
+  install -vDm 644 resources/default-config.kdl README.md -t "${pkgdir}/usr/share/doc/${pkgname}/"
 
   # shell auto-completions
   install -vDm 644 bash-completions "${pkgdir}/usr/share/bash-completion/completions/niri"
