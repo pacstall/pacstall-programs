@@ -38,6 +38,6 @@ package() {
   cp hamclock-800x480 "${pkgdir}/usr/bin/hamclock"
   cp hamclock.png "${pkgdir}/usr/share/icons"
   cp LICENSE "${pkgdir}/usr/share/licenses/${gives}"
-  cp hamclock.desktop "${pkgdir}/usr/share/applications/hamclock.desktop"
+  cp ../../hamclock.desktop "${pkgdir}/usr/share/applications/hamclock.desktop"
   chmod -x "${pkgdir}/usr/share/applications/hamclock.desktop"
 }
