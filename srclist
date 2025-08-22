@@ -5464,7 +5464,7 @@ pkgbase = i3status-rust
 	pkgdesc = Very resourcefriendly and feature-rich replacement for i3status, written in pure Rust
 	url = https://github.com/greshake/i3status-rust
 	arch = any
-	makedepends = cargo
+	makedepends = cargo>=1.80
 	makedepends = pandoc
 	makedepends = gcc
 	makedepends = libssl-dev
