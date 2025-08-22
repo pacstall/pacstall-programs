@@ -15,6 +15,8 @@ external_connection=true
 
 build() {
   cd "${pkgname}-${pkgver}"
+  rustup install nightly
+  rustup override set nightly
   cargo build -j"${NCPU}" --locked --release
 }
 
