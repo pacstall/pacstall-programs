@@ -286,6 +286,7 @@ kakoune-auto-pairs-git
 kakoune-kakboard-git
 kakoune-lsp
 kakoune-powerline-git
+kakoune-tree-sitter
 kalendar-git
 kanata-bin
 kate-backport-deb
