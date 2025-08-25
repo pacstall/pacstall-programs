@@ -64,9 +64,8 @@ prepare() {
   git config submodule.src/3rdparty/qt5-x11embed.url "${srcdir}/qt5-x11embed"
   git config submodule.src/3rdparty/rpmalloc.url "${srcdir}/rpmalloc"
   git -c protocol.file.allow=always submodule update
-  # setting lib dir
-  sed -e "s|lib64|lib|g" -i cmake/modules/DetectMachine.cmake
-  sed -e "s/\(${BASHCOMP_USER\)/\1/g" -i cmake/modules/BashCompletion.cmake
+  sed -e 's|lib64|lib|g' -i cmake/modules/DetectMachine.cmake
+  sed -e 's/\(${BASHCOMP_USER\)/\1/g' -i cmake/modules/BashCompletion.cmake
 }
 
 build() {
@@ -86,7 +85,7 @@ build() {
 }
 
 package() {
-  cd "${gives}/build"
-  make DESTDIR="${pkgdir}" install && cd ..
-  install -Dm755 "cmake/linux/lmms.desktop" -t "${pkgdir}/usr/share/applications"
+  cd "lmms/build"
+  make DESTDIR="${pkgdir}" install
+  install -Dm755 "../cmake/linux/lmms.desktop" -t "${pkgdir}/usr/share/applications"
 }
