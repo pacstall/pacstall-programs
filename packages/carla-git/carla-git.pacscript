@@ -20,7 +20,7 @@ optdepends=(
 maintainer=("aKqir24 <aKqir24@github.com>")
 source=("https://github.com/falkTX/${gives}.git")
 build() {
-  cd ${gives}
+  cd "${gives}"
   make features
   make \
     DEFAULT_QT=5 \
@@ -30,7 +30,7 @@ build() {
 package() {
   depends+=('libasound.so' 'libfluidsynth.so' 'libfreetype.so' 'libGL.so'
     'liblo.so' 'libmagic.so' 'libsndfile.so')
-  cd ${gives}
+  cd "${gives}"
   make \
     DEFAULT_QT=5 \
     HAVE_QT4=false \
