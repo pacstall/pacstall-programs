@@ -79,7 +79,7 @@ build() {
     -DWINE_INCLUDE_DIR=/usr/include/wine/windows \
     -DWINE_LIBRARY=/usr/lib32/wine \
     ..
-  #actually aknowledge other defaults
+  # Actually acknowledge other defaults
   cmake --build . --parallel "${NCPU}"
 }
 
