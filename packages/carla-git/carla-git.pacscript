@@ -22,7 +22,7 @@ source=("https://github.com/falkTX/${gives}.git")
 build() {
   cd "${gives}"
   make features
-  make \
+  make -j"${NCPU}" \
     DEFAULT_QT=5 \
     HAVE_QT4=false
 }
