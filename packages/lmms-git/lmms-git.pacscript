@@ -1,7 +1,7 @@
 pkgname="lmms-git"
 gives="lmms"
 pkgver="1.3.0.alpha.1.r857.gbbdfeff5e"
-pkgdesc="For making music with your computer by creating melodies, beats, sounds and samples."
+pkgdesc="Make music with your computer by creating melodies, beats, sounds and samples"
 arch=('x86_64')
 url='https://lmms.io'
 license=('GPL-2.0')
