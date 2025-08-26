@@ -48,7 +48,6 @@ makedepends=(
   'libxml-parser-perl'
   'liblist-moreutils-perl'
 )
-
 provides=("${gives}")
 conflicts=("${gives}" "${pkgname}")
 source=("https://github.com/LMMS/${gives}.git"
