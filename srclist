@@ -163,7 +163,7 @@ pkgname = ananicy-cpp
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.15.4
+	pkgver = 3.15.5
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -186,9 +186,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.15.4/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.15.5/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = b7a155f2cd9fa71fb80ef98235d5d585fd0e43f18d95a8b4e65f333a425956b9
+	sha256sums = d2f1787de14c4bf5f649aee723f1001cdf22b8cd1618845cdebaa34d3a109e5e
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
@@ -216,7 +216,7 @@ pkgbase = android-studio-canary
 pkgname = android-studio-canary
 ---
 pkgbase = android-studio
-	pkgver = 2025.1.1.14
+	pkgver = 2025.1.2.12
 	pkgdesc = Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development
 	arch = amd64
 	depends = libc6-i386
@@ -232,9 +232,9 @@ pkgbase = android-studio
 	repology = project: android-studio
 	repology = repo: aur
 	repology = visiblename: android-studio
-	source = @android-studio~2025.1.1.14::https://dl.google.com/dl/android/studio/ide-zips/2025.1.1.14/android-studio-2025.1.1.14-linux.tar.gz
+	source = @android-studio~2025.1.2.12::https://dl.google.com/dl/android/studio/ide-zips/2025.1.2.12/android-studio-2025.1.2.12-linux.tar.gz
 	source = android-studio.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/android-studio/android-studio.desktop
-	sha256sums = ad364ebcb9752ea734cd73624e65683272c403058e1035b930983ccac8a2c81a
+	sha256sums = 7cb8c26c1f56c2bc7bb226104e6b56bdc7bef137584de6becba1d3b524d85806
 	sha256sums = SKIP
 
 pkgname = android-studio
@@ -1161,7 +1161,7 @@ pkgname = brave-browser-deb
 ---
 pkgbase = brave-browser-nightly-deb
 	gives = brave-browser-nightly
-	pkgver = 1.83.19
+	pkgver = 1.83.50
 	pkgdesc = The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel
 	url = https://brave.com/
 	arch = amd64
@@ -1173,8 +1173,8 @@ pkgbase = brave-browser-nightly-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-nightly-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.83.19/brave-browser-nightly_1.83.19_amd64.deb
-	sha256sums = 00e2f9a7b0754e6e109e87127d208bbe63141ac97b8cd3c03f447d4e6e4f613e
+	source = https://github.com/brave/brave-browser/releases/download/v1.83.50/brave-browser-nightly_1.83.50_amd64.deb
+	sha256sums = f7b37082d3fefc218a9f9298f1db75b127b4564694ca1e3bdc376c3b6c3c7681
 
 pkgname = brave-browser-nightly-deb
 ---
@@ -2179,13 +2179,13 @@ pkgname = discord-deb
 ---
 pkgbase = discord-ptb-deb
 	gives = discord-ptb
-	pkgver = 0.0.155
+	pkgver = 0.0.156
 	pkgdesc = Chat for Communities and Friends - Public Test Build
 	url = https://discord.com/
 	arch = amd64
 	repology = project: discord-ptb
-	source = https://ptb.dl2.discordapp.net/apps/linux/0.0.155/discord-ptb-0.0.155.deb
-	sha256sums = b8c8a7c68b9d668ae3f9c563e0f6a1887593781c32261ec7ff371d3bc449718d
+	source = https://ptb.dl2.discordapp.net/apps/linux/0.0.156/discord-ptb-0.0.156.deb
+	sha256sums = af2aef590c1196b88f5e1141f25a97edecbc42f1b5e32adac2957f24b90dc67d
 
 pkgname = discord-ptb-deb
 ---
@@ -6686,8 +6686,8 @@ pkgname = libfdk-aac-dev-deb
 ---
 pkgbase = libgbinder-deb
 	gives = libgbinder
-	pkgver = 1.1.25
-	pkgrel = 2
+	pkgver = 1.1.42
+	pkgrel = 4
 	pkgdesc = Binder client library
 	arch = amd64
 	arch = arm64
@@ -6699,10 +6699,10 @@ pkgbase = libgbinder-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libgbinder
-	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libgbinder_1.1.25_amd64.deb
-	sha256sums_amd64 = 3d3c4d7075072c7dbe008db47d641b0269a8dea16247f77deb64c4ce2f920978
-	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libgbinder_1.1.25_arm64.deb
-	sha256sums_arm64 = 82a7313d4e63439a9caf0f3dfbfa1ed8ae75468b4fe23250dbbc2d9559232400
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libgbinder_1.1.42_amd64.deb
+	sha256sums_amd64 = 80c780f2eac4ff711b30f849ede60b3a178598ea51ff7c12648ab16765f8d07f
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libgbinder_1.1.42_arm64.deb
+	sha256sums_arm64 = 8c63a641b6ce303a238a6649525da289ae412514ab383d1a2a4567b17ee03c8c
 
 pkgname = libgbinder-deb
 ---
@@ -6726,8 +6726,8 @@ pkgname = libgc-nix
 ---
 pkgbase = libglibutil-deb
 	gives = libglibutil
-	pkgver = 1.0.66
-	pkgrel = 2
+	pkgver = 1.0.79
+	pkgrel = 7
 	pkgdesc = Library of glib utilities
 	arch = amd64
 	arch = arm64
@@ -6738,10 +6738,10 @@ pkgbase = libglibutil-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libglibutil
-	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libglibutil_1.0.66_amd64.deb
-	sha256sums_amd64 = e31c4515d5f7cf5336ff08b9b12ef261ac38700a3c06ea08d7296579f381921d
-	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libglibutil_1.0.66_arm64.deb
-	sha256sums_arm64 = f1cae9ea551e2050fa3a5373ebdb372305b54ae4c519f4a40ee05ac748211f96
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libglibutil_1.0.79_amd64.deb
+	sha256sums_amd64 = ea7703592533938012d7bdde58f2227ac6ddf75a8896b6e95fb404fa3af4354c
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libglibutil_1.0.79_arm64.deb
+	sha256sums_arm64 = 82124586759ce7f27d02824afa30b39e8c0dc035dada22769aa78466172d9d5c
 
 pkgname = libglibutil-deb
 ---
@@ -7085,8 +7085,8 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.16.0-061600
-	pkgver = 6.16
+	gives = linux-headers-6.17.0-061700rc1
+	pkgver = 6.17~rc1
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7094,14 +7094,14 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-headers-6.16.0-061600_6.16.0-061600.202507272138_all.deb
-	sha256sums = 3b6ad1a4c8d2f9cc948e6c19640bce523a296c73865cc9e84392ab0c63653388
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/amd64/linux-headers-6.17.0-061700rc1_6.17.0-061700rc1.202508101740_all.deb
+	sha256sums = fa2902ad2e86c2418a49de6cfb276ec6e38767b9e295c71e18cd60ca4e148274
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-6.16.0-061600-generic
-	pkgver = 6.16
+	gives = linux-headers-6.17.0-061700rc1-generic
+	pkgver = 6.17~rc1
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7111,10 +7111,10 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-headers-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
-	sha256sums_arm64 = 9524277d548b2cd627ed4f5e038aeb761abc896d1a8b9c655bf077121072ffde
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-headers-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
-	sha256sums_amd64 = 8a1187f786d1fc426c8d0da70221563291fe14459a959bad098e7fe81e909e17
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/arm64/linux-headers-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_arm64.deb
+	sha256sums_arm64 = 7960645dd8cc5d213a2aeef392c5322ba63d18baf2d8845ece9d08ba4a406cb1
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/amd64/linux-headers-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_amd64.deb
+	sha256sums_amd64 = 4174245274107b8d6b7cf3bde583934cb6c17462c7b0af1b0b6851b5180d609e
 
 pkgname = linux-headers-generic-deb
 ---
@@ -7137,8 +7137,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.16.0-061600-generic
-	pkgver = 6.16
+	gives = linux-headers-6.16.1-061601-generic
+	pkgver = 6.16.1
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7146,10 +7146,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-headers-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
-	sha256sums_arm64 = 9524277d548b2cd627ed4f5e038aeb761abc896d1a8b9c655bf077121072ffde
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-headers-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
-	sha256sums_amd64 = 8a1187f786d1fc426c8d0da70221563291fe14459a959bad098e7fe81e909e17
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/arm64/linux-headers-6.16.1-061601-generic_6.16.1-061601.202508151544_arm64.deb
+	sha256sums_arm64 = 2689a6f39f9771abf09fc7800dd5206610976f5de1906c42cae75644ae50c88b
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/amd64/linux-headers-6.16.1-061601-generic_6.16.1-061601.202508151544_amd64.deb
+	sha256sums_amd64 = d3cc172eb5512ecdc7109d8802e9082ca692af182da03ecf976d9c7833ae1cd8
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -7184,15 +7184,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.16.0-061600
-	pkgver = 6.16
+	gives = linux-headers-6.16.1-061601
+	pkgver = 6.16.1
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-headers-6.16.0-061600_6.16.0-061600.202507272138_all.deb
-	sha256sums = 3b6ad1a4c8d2f9cc948e6c19640bce523a296c73865cc9e84392ab0c63653388
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/amd64/linux-headers-6.16.1-061601_6.16.1-061601.202508151544_all.deb
+	sha256sums = 1eb384bb714a0fe348e5b863a0aa3a684255a119b132cc97c67c8246dc86b50c
 
 pkgname = linux-headers-stable-deb
 ---
@@ -7215,8 +7215,8 @@ pkgbase = linux-image-okpine-deb
 pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.16.0-061600-generic
-	pkgver = 6.16
+	gives = linux-image-unsigned-6.17.0-061700rc1-generic
+	pkgver = 6.17~rc1
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -7227,10 +7227,10 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-image-unsigned-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
-	sha256sums_arm64 = 649b021fd286dbcae854a5105b801e15ed13e162a363b8f7710e8c8e55d1be5c
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-image-unsigned-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
-	sha256sums_amd64 = 1c7c258d16d36e9dd6d99d7b7c79539e595ce75efbc511052d6810398b72a927
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/arm64/linux-image-unsigned-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_arm64.deb
+	sha256sums_arm64 = 9b2ae287285e5f30a89aff8371f2ac551137616d920a805349acce57e7fb15da
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/amd64/linux-image-unsigned-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_amd64.deb
+	sha256sums_amd64 = 39b43d3cf55b953f5ea88d9fd0362cf138b95cbbc9e2aa5527bd9636d7319f2d
 
 pkgname = linux-image-unsigned-deb
 ---
@@ -7254,8 +7254,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.16.0-061600-generic
-	pkgver = 6.16
+	gives = linux-image-unsigned-6.16.1-061601-generic
+	pkgver = 6.16.1
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -7264,10 +7264,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-image-unsigned-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
-	sha256sums_arm64 = 649b021fd286dbcae854a5105b801e15ed13e162a363b8f7710e8c8e55d1be5c
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-image-unsigned-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
-	sha256sums_amd64 = 1c7c258d16d36e9dd6d99d7b7c79539e595ce75efbc511052d6810398b72a927
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/arm64/linux-image-unsigned-6.16.1-061601-generic_6.16.1-061601.202508151544_arm64.deb
+	sha256sums_arm64 = a8f19af91aee4b7b64dfc96c961477722d7eee876bb4fe0996a7c4d445db4776
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/amd64/linux-image-unsigned-6.16.1-061601-generic_6.16.1-061601.202508151544_amd64.deb
+	sha256sums_amd64 = b8e55a02830b55101d6cf2b7e15a5735a912c33fc96454070adc892dad2255f8
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -7289,7 +7289,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel
-	pkgver = 6.16
+	pkgver = 6.17~rc1
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -7336,16 +7336,16 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.16.0-061600-generic
-	pkgver = 6.16
+	gives = linux-modules-6.17.0-061700rc1-generic
+	pkgver = 6.17~rc1
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-modules-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
-	sha256sums_arm64 = 5f56d0da5be6169207dfd13c99e199795e443df4cd28caf4e940c3a280639a3c
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-modules-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
-	sha256sums_amd64 = 9a085ccadc51acac58dd6a791c5f82d7aaa1ea38a433e68501ff162095fbd86b
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/arm64/linux-modules-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_arm64.deb
+	sha256sums_arm64 = 9bf6847ca4af188c2626097dc98324d80533c8236a29cf6e2851c8ab28e9560e
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/amd64/linux-modules-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_amd64.deb
+	sha256sums_amd64 = eb55e8bc2aebcd9c56a6116d71555e44ed443a8789705be1403b87e2c742beb5
 
 pkgname = linux-modules-deb
 ---
@@ -7367,16 +7367,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.16.0-061600-generic
-	pkgver = 6.16
+	gives = linux-modules-6.16.1-061601-generic
+	pkgver = 6.16.1
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-modules-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
-	sha256sums_arm64 = 5f56d0da5be6169207dfd13c99e199795e443df4cd28caf4e940c3a280639a3c
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-modules-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
-	sha256sums_amd64 = 9a085ccadc51acac58dd6a791c5f82d7aaa1ea38a433e68501ff162095fbd86b
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/arm64/linux-modules-6.16.1-061601-generic_6.16.1-061601.202508151544_arm64.deb
+	sha256sums_arm64 = 378b377bd961f81ae8eb11060c5e0f6cce18598f145bb53b867c1dbf998b7fa7
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/amd64/linux-modules-6.16.1-061601-generic_6.16.1-061601.202508151544_amd64.deb
+	sha256sums_amd64 = 74e168e1dcbb49cf3ca99b331459488122b815cd958e6d0f8568dc38a4ac7873
 
 pkgname = linux-modules-stable-deb
 ---
@@ -8475,15 +8475,15 @@ pkgname = mullvad-vpn-beta-deb
 ---
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
-	pkgver = 2025.7
+	pkgver = 2025.8
 	pkgdesc = The Mullvad VPN client app for desktop
 	arch = amd64
 	breaks = mullvad-vpn-beta-deb
 	breaks = mullvad-vpn-git
 	replaces = mullvad-vpn
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.7/MullvadVPN-2025.7_amd64.deb
-	sha256sums = c0a9b008b17e1ff07264560640c1094fa82602dd806b4bd96a5a9a329b4f8e15
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.8/MullvadVPN-2025.8_amd64.deb
+	sha256sums = 64cba491104ccd3c1f0e527cd005d9720cffc1b655c4c582e1eb52c09280c694
 
 pkgname = mullvad-vpn-deb
 ---
@@ -10322,7 +10322,7 @@ pkgbase = os-installer-git
 pkgname = os-installer-git
 ---
 pkgbase = osu-lazer-app
-	pkgver = 2025.710.0
+	pkgver = 2025.816.0
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
 	url = https://osu.ppy.sh
 	arch = amd64
@@ -10333,11 +10333,11 @@ pkgbase = osu-lazer-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-app-2025.710.0.AppImage::https://github.com/ppy/osu/releases/download/2025.710.0-lazer/osu.AppImage
+	source = osu-lazer-app-2025.816.0.AppImage::https://github.com/ppy/osu/releases/download/2025.816.0-lazer/osu.AppImage
 	source = icon.png::https://raw.githubusercontent.com/ppy/osu/master/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = 4df9bbe7e8e4480ab234190dddc56bc77872c3e022de529ae99228e3bc76467b
+	sha256sums = 98e8a143c9ad1c48aad051259098999749a106a3e2f02a06a30377e7c25cef60
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = 18f9ab3e98e5cc93a5da9baaa3b065c6511e126306107dfb51633406f3e49b0a
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
@@ -10346,7 +10346,7 @@ pkgname = osu-lazer-app
 ---
 pkgbase = osu-lazer-tachyon-app
 	gives = osu-lazer
-	pkgver = 2025.815.0
+	pkgver = 2025.822.0
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew. - Tachyon Release
 	url = https://osu.ppy.sh
 	arch = amd64
@@ -10357,11 +10357,11 @@ pkgbase = osu-lazer-tachyon-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-tachyon-app-2025.815.0.AppImage::https://github.com/ppy/osu/releases/download/2025.815.0-tachyon/osu.AppImage
-	source = icon.png::https://raw.githubusercontent.com/ppy/osu/refs/tags/2025.815.0-tachyon/assets/lazer.png
+	source = osu-lazer-tachyon-app-2025.822.0.AppImage::https://github.com/ppy/osu/releases/download/2025.822.0-tachyon/osu.AppImage
+	source = icon.png::https://raw.githubusercontent.com/ppy/osu/refs/tags/2025.822.0-tachyon/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = 07885a87d8dcdcae3e4dd7b6078908ebf5481a19eb02be2edcdfb674faa51fca
+	sha256sums = 4347f32353a48379acc66a6a5a62a34cf2635b14461b1c68f8df5a734bec6393
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = 8f7f8ea193ffe960364ca1344e1ca3780281a0a753f34700732655b75e30cc6b
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
@@ -11512,10 +11512,10 @@ pkgbase = python3-gbinder-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: python3-gbinder
-	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/python3-gbinder_1.1.2_amd64.deb
-	sha256sums_amd64 = c30aa2565cdc031c3b20a8612ef0ab94e40e2d5b2677de382e48a373b1960f5a
-	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/python3-gbinder_1.1.2_arm64.deb
-	sha256sums_arm64 = 8ee6120b5f51f2853207885b4d9542034e9381263c803deaf4cfc6c1b410c8e2
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/python3-gbinder_1.1.2_amd64.deb
+	sha256sums_amd64 = fec13f42bf98e0848549d6c5c9c4685945da643945baf30e556c6f4d1f118bd4
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/python3-gbinder_1.1.2_arm64.deb
+	sha256sums_arm64 = 0eb8f6b33b80a88d191ec442f321f254e03c2a471edce8967afeb6d3b0b4bba1
 
 pkgname = python3-gbinder-deb
 ---
@@ -15351,8 +15351,8 @@ pkgname = wavey-launcher-bin
 ---
 pkgbase = waydroid-deb
 	gives = waydroid
-	pkgver = 1.4.3
-	pkgrel = 2
+	pkgver = 1.5.4
+	pkgrel = 4
 	pkgdesc = Bring Android support on your own Wayland session which runs under LXC container
 	arch = all
 	depends = lxc
@@ -15363,7 +15363,6 @@ pkgbase = waydroid-deb
 	depends = python3-dbus
 	depends = polkitd
 	depends = iptables
-	depends = python3-pyclipper
 	pacdeps = python3-gbinder-deb
 	replaces = waydroid
 	compatible = ubuntu:noble
@@ -15372,8 +15371,8 @@ pkgbase = waydroid-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: waydroid
-	source = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/waydroid_1.4.3_all.deb
-	sha256sums = 19639f5954accc8ee740b530825053b51e4958e37b8b5157925f4ce334004ff5
+	source = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/waydroid_1.5.4_all.deb
+	sha256sums = a2cfea447bebf2436cf4ac2defb042148cd2201bf26bed24033ae3729ddc503c
 
 pkgname = waydroid-deb
 ---
