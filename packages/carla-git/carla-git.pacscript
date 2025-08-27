@@ -19,6 +19,7 @@ optdepends=(
 )
 maintainer=("aKqir24 <aKqir24@github.com>")
 source=("https://github.com/falkTX/${gives}.git")
+
 build() {
   cd "${gives}"
   make features
