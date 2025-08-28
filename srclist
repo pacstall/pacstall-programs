@@ -149,7 +149,7 @@ pkgname = amfora-bin
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.15.6
+	pkgver = 3.15.5
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -172,9 +172,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.15.6/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.15.5/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = 5701f05d348967dbd35d9a7594495dd0f723ed921d13e5d3aa0d6cc29d897ea3
+	sha256sums = d2f1787de14c4bf5f649aee723f1001cdf22b8cd1618845cdebaa34d3a109e5e
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
@@ -1317,50 +1317,6 @@ pkgbase = capsfix-git
 	depends_sid = keyd
 
 pkgname = capsfix-git
----
-pkgbase = carla-git
-	gives = carla
-	pkgver = 2.5.1.r415.gdd092c74a
-	pkgdesc = Audio Plugin Host
-	url = https://kx.studio/Applications:Carla
-	arch = x86_64
-	depends = libasound2
-	depends = libgcc-s1
-	depends = libc6
-	depends = hicolor-icon-theme
-	depends = libglvnd0
-	depends = libx11-6
-	depends = libxcursor1
-	depends = libxrandr2
-	depends = python3-pyqt5
-	depends = qtbase5-dev
-	depends = libqt5svg5-dev
-	makedepends = file
-	makedepends = fluidsynth
-	makedepends = libfreetype6-dev
-	makedepends = git
-	makedepends = liblo7
-	makedepends = libsndfile1
-	makedepends = qttools5-dev-tools
-	optdepends = jackd2: for using carla with JACK
-	optdepends = lv2-dev: for the LV2 plugin
-	optdepends = vst-host: for the VST plugin (no direct Debian package, use carla)
-	optdepends = python3-liblo: OSC control support
-	optdepends = python3-rdflib: LADSPA-RDF support
-	conflicts = carla-git
-	conflicts = carla
-	provides = carla
-	provides = clap-host
-	provides = dssi
-	provides = ladspa-sdk
-	provides = lv2-dev
-	provides = vst3-host
-	provides = vst-host
-	license = GPL-2.0
-	maintainer = aKqir24 <aKqir24@github.com>
-	source = https://github.com/falkTX/carla.git
-
-pkgname = carla-git
 ---
 pkgbase = cbindgen
 	pkgver = 0.29.0
@@ -5502,29 +5458,6 @@ pkgbase = i3lock-color
 
 pkgname = i3lock-color
 ---
-pkgbase = i3status-rust
-	gives = i3status-rs
-	pkgver = 0.34.0
-	pkgdesc = Very resourcefriendly and feature-rich replacement for i3status, written in pure Rust
-	url = https://github.com/greshake/i3status-rust
-	arch = any
-	makedepends = cargo>=1.80
-	makedepends = pandoc
-	makedepends = gcc
-	makedepends = libssl-dev
-	makedepends = libsensors-dev
-	makedepends = libpulse-dev
-	makedepends = libnotmuch-dev
-	replaces = i3status-rust
-	replaces = i3status-rs
-	license = GPL-3.0
-	maintainer = aKqir24 <aKqir24@github.com>
-	repology = project: i3status-rust
-	source = https://github.com/greshake/i3status-rust/archive/refs/tags/v0.34.0.tar.gz
-	sha256sums = 6787174f749f15e9e177a7730f6abeae05de2b156922f6d02e512b31f35d1d17
-
-pkgname = i3status-rust
----
 pkgbase = icecat-deb
 	gives = icecat
 	pkgver = 128.12.0
@@ -7108,8 +7041,8 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.17.0-061700rc1
-	pkgver = 6.17~rc1
+	gives = linux-headers-6.16.0-061600
+	pkgver = 6.16
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7117,14 +7050,14 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/amd64/linux-headers-6.17.0-061700rc1_6.17.0-061700rc1.202508101740_all.deb
-	sha256sums = fa2902ad2e86c2418a49de6cfb276ec6e38767b9e295c71e18cd60ca4e148274
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-headers-6.16.0-061600_6.16.0-061600.202507272138_all.deb
+	sha256sums = 3b6ad1a4c8d2f9cc948e6c19640bce523a296c73865cc9e84392ab0c63653388
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-6.17.0-061700rc1-generic
-	pkgver = 6.17~rc1
+	gives = linux-headers-6.16.0-061600-generic
+	pkgver = 6.16
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7134,10 +7067,10 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/arm64/linux-headers-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_arm64.deb
-	sha256sums_arm64 = 7960645dd8cc5d213a2aeef392c5322ba63d18baf2d8845ece9d08ba4a406cb1
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/amd64/linux-headers-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_amd64.deb
-	sha256sums_amd64 = 4174245274107b8d6b7cf3bde583934cb6c17462c7b0af1b0b6851b5180d609e
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-headers-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
+	sha256sums_arm64 = 9524277d548b2cd627ed4f5e038aeb761abc896d1a8b9c655bf077121072ffde
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-headers-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
+	sha256sums_amd64 = 8a1187f786d1fc426c8d0da70221563291fe14459a959bad098e7fe81e909e17
 
 pkgname = linux-headers-generic-deb
 ---
@@ -7160,8 +7093,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.16.1-061601-generic
-	pkgver = 6.16.1
+	gives = linux-headers-6.16.0-061600-generic
+	pkgver = 6.16
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7169,10 +7102,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/arm64/linux-headers-6.16.1-061601-generic_6.16.1-061601.202508151544_arm64.deb
-	sha256sums_arm64 = 2689a6f39f9771abf09fc7800dd5206610976f5de1906c42cae75644ae50c88b
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/amd64/linux-headers-6.16.1-061601-generic_6.16.1-061601.202508151544_amd64.deb
-	sha256sums_amd64 = d3cc172eb5512ecdc7109d8802e9082ca692af182da03ecf976d9c7833ae1cd8
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-headers-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
+	sha256sums_arm64 = 9524277d548b2cd627ed4f5e038aeb761abc896d1a8b9c655bf077121072ffde
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-headers-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
+	sha256sums_amd64 = 8a1187f786d1fc426c8d0da70221563291fe14459a959bad098e7fe81e909e17
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -7207,15 +7140,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.16.1-061601
-	pkgver = 6.16.1
+	gives = linux-headers-6.16.0-061600
+	pkgver = 6.16
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/amd64/linux-headers-6.16.1-061601_6.16.1-061601.202508151544_all.deb
-	sha256sums = 1eb384bb714a0fe348e5b863a0aa3a684255a119b132cc97c67c8246dc86b50c
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-headers-6.16.0-061600_6.16.0-061600.202507272138_all.deb
+	sha256sums = 3b6ad1a4c8d2f9cc948e6c19640bce523a296c73865cc9e84392ab0c63653388
 
 pkgname = linux-headers-stable-deb
 ---
@@ -7238,8 +7171,8 @@ pkgbase = linux-image-okpine-deb
 pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.17.0-061700rc1-generic
-	pkgver = 6.17~rc1
+	gives = linux-image-unsigned-6.16.0-061600-generic
+	pkgver = 6.16
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -7250,10 +7183,10 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/arm64/linux-image-unsigned-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_arm64.deb
-	sha256sums_arm64 = 9b2ae287285e5f30a89aff8371f2ac551137616d920a805349acce57e7fb15da
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/amd64/linux-image-unsigned-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_amd64.deb
-	sha256sums_amd64 = 39b43d3cf55b953f5ea88d9fd0362cf138b95cbbc9e2aa5527bd9636d7319f2d
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-image-unsigned-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
+	sha256sums_arm64 = 649b021fd286dbcae854a5105b801e15ed13e162a363b8f7710e8c8e55d1be5c
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-image-unsigned-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
+	sha256sums_amd64 = 1c7c258d16d36e9dd6d99d7b7c79539e595ce75efbc511052d6810398b72a927
 
 pkgname = linux-image-unsigned-deb
 ---
@@ -7277,8 +7210,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.16.1-061601-generic
-	pkgver = 6.16.1
+	gives = linux-image-unsigned-6.16.0-061600-generic
+	pkgver = 6.16
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -7287,10 +7220,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/arm64/linux-image-unsigned-6.16.1-061601-generic_6.16.1-061601.202508151544_arm64.deb
-	sha256sums_arm64 = a8f19af91aee4b7b64dfc96c961477722d7eee876bb4fe0996a7c4d445db4776
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/amd64/linux-image-unsigned-6.16.1-061601-generic_6.16.1-061601.202508151544_amd64.deb
-	sha256sums_amd64 = b8e55a02830b55101d6cf2b7e15a5735a912c33fc96454070adc892dad2255f8
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-image-unsigned-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
+	sha256sums_arm64 = 649b021fd286dbcae854a5105b801e15ed13e162a363b8f7710e8c8e55d1be5c
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-image-unsigned-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
+	sha256sums_amd64 = 1c7c258d16d36e9dd6d99d7b7c79539e595ce75efbc511052d6810398b72a927
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -7312,7 +7245,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.16.1
+	pkgver = 6.16
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -7328,7 +7261,7 @@ pkgbase = linux-kernel-stable
 pkgname = linux-kernel-stable
 ---
 pkgbase = linux-kernel
-	pkgver = 6.17~rc1
+	pkgver = 6.16
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -7359,16 +7292,16 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.17.0-061700rc1-generic
-	pkgver = 6.17~rc1
+	gives = linux-modules-6.16.0-061600-generic
+	pkgver = 6.16
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/arm64/linux-modules-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_arm64.deb
-	sha256sums_arm64 = 9bf6847ca4af188c2626097dc98324d80533c8236a29cf6e2851c8ab28e9560e
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/amd64/linux-modules-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_amd64.deb
-	sha256sums_amd64 = eb55e8bc2aebcd9c56a6116d71555e44ed443a8789705be1403b87e2c742beb5
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-modules-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
+	sha256sums_arm64 = 5f56d0da5be6169207dfd13c99e199795e443df4cd28caf4e940c3a280639a3c
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-modules-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
+	sha256sums_amd64 = 9a085ccadc51acac58dd6a791c5f82d7aaa1ea38a433e68501ff162095fbd86b
 
 pkgname = linux-modules-deb
 ---
@@ -7390,16 +7323,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.16.1-061601-generic
-	pkgver = 6.16.1
+	gives = linux-modules-6.16.0-061600-generic
+	pkgver = 6.16
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/arm64/linux-modules-6.16.1-061601-generic_6.16.1-061601.202508151544_arm64.deb
-	sha256sums_arm64 = 378b377bd961f81ae8eb11060c5e0f6cce18598f145bb53b867c1dbf998b7fa7
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.1/amd64/linux-modules-6.16.1-061601-generic_6.16.1-061601.202508151544_amd64.deb
-	sha256sums_amd64 = 74e168e1dcbb49cf3ca99b331459488122b815cd958e6d0f8568dc38a4ac7873
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/arm64/linux-modules-6.16.0-061600-generic_6.16.0-061600.202507272138_arm64.deb
+	sha256sums_arm64 = 5f56d0da5be6169207dfd13c99e199795e443df4cd28caf4e940c3a280639a3c
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16/amd64/linux-modules-6.16.0-061600-generic_6.16.0-061600.202507272138_amd64.deb
+	sha256sums_amd64 = 9a085ccadc51acac58dd6a791c5f82d7aaa1ea38a433e68501ff162095fbd86b
 
 pkgname = linux-modules-stable-deb
 ---
@@ -7491,57 +7424,6 @@ pkgbase = lm-studio-app
 	sha256sums = 5ab3bde5ecfcd7f0345354edd4e8b63f2529ea7bec9903332b4554547d5361b8
 
 pkgname = lm-studio-app
----
-pkgbase = lmms-git
-	gives = lmms
-	pkgver = 1.3.0.alpha.1.r857.gbbdfeff5e
-	pkgdesc = Make music with your computer by creating melodies, beats, sounds and samples
-	url = https://lmms.io
-	arch = x86_64
-	depends = git
-	depends = fluid
-	depends = libjack-dev
-	depends = libpulse-dev
-	depends = libvorbis-dev
-	makedepends = cmake
-	makedepends = wine
-	makedepends = libsndfile1-dev
-	makedepends = libsamplerate0-dev
-	makedepends = libasound2-dev
-	makedepends = libstk-dev
-	makedepends = libsdl1.2-dev
-	makedepends = portaudio19-dev
-	makedepends = ladspa-sdk
-	makedepends = libfltk1.3-dev
-	makedepends = libfluidsynth-dev
-	makedepends = libfftw3-dev
-	makedepends = libgig-dev
-	makedepends = libmp3lame-dev
-	makedepends = libqt5svg5-dev
-	makedepends = libqt5x11extras5-dev
-	makedepends = libxcb-keysyms1-dev
-	makedepends = libxcb-util0-dev
-	makedepends = libx11-xcb-dev
-	makedepends = qttools5-dev
-	makedepends = qtbase5-private-dev
-	makedepends = gcc-multilib
-	makedepends = g++-multilib
-	makedepends = libwine-dev:i386
-	makedepends = libxml-parser-perl
-	makedepends = liblist-moreutils-perl
-	optdepends = pulseaudio: pulseaudio support
-	optdepends = wine: VST plugin support
-	optdepends = carla: carla support
-	conflicts = lmms
-	conflicts = lmms-git
-	provides = lmms
-	license = GPL-2.0
-	maintainer = aKqir24 <aKqir24@github.com>
-	source = https://github.com/LMMS/lmms.git
-	source = https://github.com/Lukas-W/qt5-x11embed.git
-	source = https://github.com/rampantpixels/rpmalloc.git
-
-pkgname = lmms-git
 ---
 pkgbase = lrz-syncshare-deb
 	gives = lrz-sync-share
@@ -8549,15 +8431,15 @@ pkgname = mullvad-vpn-beta-deb
 ---
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
-	pkgver = 2025.8
+	pkgver = 2025.7
 	pkgdesc = The Mullvad VPN client app for desktop
 	arch = amd64
 	breaks = mullvad-vpn-beta-deb
 	breaks = mullvad-vpn-git
 	replaces = mullvad-vpn
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.8/MullvadVPN-2025.8_amd64.deb
-	sha256sums = 64cba491104ccd3c1f0e527cd005d9720cffc1b655c4c582e1eb52c09280c694
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.7/MullvadVPN-2025.7_amd64.deb
+	sha256sums = c0a9b008b17e1ff07264560640c1094fa82602dd806b4bd96a5a9a329b4f8e15
 
 pkgname = mullvad-vpn-deb
 ---
@@ -10420,7 +10302,7 @@ pkgname = osu-lazer-app
 ---
 pkgbase = osu-lazer-tachyon-app
 	gives = osu-lazer
-	pkgver = 2025.822.0
+	pkgver = 2025.827.0
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew. - Tachyon Release
 	url = https://osu.ppy.sh
 	arch = amd64
@@ -10431,11 +10313,11 @@ pkgbase = osu-lazer-tachyon-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-tachyon-app-2025.822.0.AppImage::https://github.com/ppy/osu/releases/download/2025.822.0-tachyon/osu.AppImage
-	source = icon.png::https://raw.githubusercontent.com/ppy/osu/refs/tags/2025.822.0-tachyon/assets/lazer.png
+	source = osu-lazer-tachyon-app-2025.827.0.AppImage::https://github.com/ppy/osu/releases/download/2025.827.0-tachyon/osu.AppImage
+	source = icon.png::https://raw.githubusercontent.com/ppy/osu/refs/tags/2025.827.0-tachyon/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = 4347f32353a48379acc66a6a5a62a34cf2635b14461b1c68f8df5a734bec6393
+	sha256sums = b185c8a1f799ba49ce7035992050c77f9afded50e448c7d8aca168c15c3ab484
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = 8f7f8ea193ffe960364ca1344e1ca3780281a0a753f34700732655b75e30cc6b
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
@@ -12410,36 +12292,6 @@ pkgbase = rnnoise
 	sha256sums = 90fce4b00b9ff24c08dbfe31b82ffd43bae383d85c5535676d28b0a2b11c0d37
 
 pkgname = rnnoise
----
-pkgbase = rofi-emoji
-	pkgver = 3.5.0
-	pkgdesc = Rofi plugin for selecting emojis
-	url = https://github.com/Mange/rofi-emoji
-	arch = x86_64
-	depends = libc6
-	depends = libgcc-s1
-	depends = rofi<=1.7.6
-	makedepends = pkg-config
-	makedepends = build-essential
-	makedepends = rofi-dev
-	makedepends = libglib2.0-dev
-	makedepends = libcairo2-dev
-	makedepends = libpango1.0-dev
-	makedepends = autoconf
-	makedepends = automake
-	makedepends = libtool
-	makedepends = rofi<=1.7.6
-	checkdepends = check
-	optdepends = xsel: Clipboard interaction under X11
-	optdepends = xclip: Clipboard interaction under X11
-	optdepends = wl-clipboard: Clipboard interaction under Wayland
-	conflicts = rofi-emoji
-	provides = rofi-emoji
-	license = MIT
-	maintainer = aKqir24 <aKqir24@github.com>
-	source = https://github.com/Mange/rofi-emoji/archive/refs/tags/v3.5.0.tar.gz
-
-pkgname = rofi-emoji
 ---
 pkgbase = rofi
 	pkgver = 1.7.9.1
@@ -16449,7 +16301,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.15b
+	pkgver = 1.14.11b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -16484,8 +16336,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.15b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 56e192b134cf31f3097ac001221d960d10f720ee94c499acb6a2260a5ee24731
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.14.11b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = b2dc6e3c7c4e1f7f28628a9d7c51f21ef10013fe11152c87171a9cd5f9ee6778
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -16495,8 +16347,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.15b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = fedb185652b794b0e3ba1277864961c1288478edbe838780b48f70e930e33c9b
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.14.11b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 70a1ec0a4f11c20d9be006a203d1dfe642de776e9b67f18508ebdddd18d16833
 
 pkgname = zen-browser-bin
 ---
