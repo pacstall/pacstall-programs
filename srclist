@@ -12553,7 +12553,7 @@ pkgname = rosary-deb
 ---
 pkgbase = rose-pine-cursor
 	pkgver = 1.1.0
-	pkgdesc = Soho vibes for your mouse cursor.
+	pkgdesc = Soho vibes for your mouse cursor
 	url = https://rosepinetheme.com/themes/cursor/
 	arch = all
 	license = GPL-3.0
