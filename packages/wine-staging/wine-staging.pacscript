@@ -7,8 +7,8 @@ license=("LGPL-2.1-or-later")
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 
 source=(
-  "git+https://gitlab.winehq.org/wine/wine-staging.git#tag=v10.14"
-  "git+https://gitlab.winehq.org/wine/wine.git#wine-10.14"
+  "git+https://gitlab.winehq.org/wine/wine-staging.git#tag=v$${pkgver}"
+  "git+https://gitlab.winehq.org/wine/wine.git#tag=wine-${pkgver}"
   "30-win32-aliases.conf::https://aur.archlinux.org/cgit/aur.git/plain/30-win32-aliases.conf?h=wine-git"
   "wine-binfmt.conf::https://aur.archlinux.org/cgit/aur.git/plain/wine-binfmt.conf?h=wine-git"
 )
@@ -20,7 +20,7 @@ sha256sums=(
 )
 
 makedepends=(
-  "devscripts" "autotools-dev" "autoconf" "libjpeg-turbo8-dev | libjpeg62-turbo-dev" "libjpeg-turbo8-dev:i386 | libjpeg62-turbo-dev:i386"
+  "devscripts" "autotools-dev" "autoconf" "libjpeg-turbo8-dev | libjpeg62-turbo-dev"
   "libasound2-dev" "libpulse-dev" "libdbus-1-dev" "libfontconfig-dev" "libfreetype-dev"
   "libgnutls28-dev" "libpng-dev" "libtiff-dev" "libgl-dev" "libunwind-dev"
   "libxml2-dev" "libxslt1-dev" "libfaudio-dev" "libgstreamer1.0-dev" "libgstreamer-plugins-base1.0-dev"
