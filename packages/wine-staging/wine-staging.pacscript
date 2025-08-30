@@ -7,7 +7,7 @@ license=("LGPL-2.1-or-later")
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 
 source=(
-  "git+https://gitlab.winehq.org/wine/wine-staging.git#tag=v$${pkgver}"
+  "git+https://gitlab.winehq.org/wine/wine-staging.git#tag=v${pkgver}"
   "git+https://gitlab.winehq.org/wine/wine.git#tag=wine-${pkgver}"
   "30-win32-aliases.conf::https://aur.archlinux.org/cgit/aur.git/plain/30-win32-aliases.conf?h=wine-git"
   "wine-binfmt.conf::https://aur.archlinux.org/cgit/aur.git/plain/wine-binfmt.conf?h=wine-git"
