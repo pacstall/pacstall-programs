@@ -167,6 +167,7 @@ firefox-nightly-bin
 firefox-nightly-deb
 fishui-git
 floorp-bin
+flutter-bin
 flyctl-bin
 fm6000-git
 fnlfmt
@@ -182,6 +183,7 @@ fsearch-git
 fselect-git
 fzf-bin
 galaxybudsclient-bin
+gamescope-git
 geekbench4-bin
 geekbench5-bin
 geekbench6-bin
@@ -333,6 +335,7 @@ libhyprgraphics-bin
 libhyprutils-bin
 libicu-deb
 liblcf
+libreoffice-deb
 libresprite-git
 libressl
 librewolf-app
