@@ -168,7 +168,6 @@ firefox-nightly-bin
 firefox-nightly-deb
 fishui-git
 floorp-bin
-flutter-bin
 flyctl-bin
 fm6000-git
 fnlfmt
@@ -338,7 +337,6 @@ libhyprgraphics-bin
 libhyprutils-bin
 libicu-deb
 liblcf
-libreoffice-deb
 libresprite-git
 libressl
 librewolf-app
