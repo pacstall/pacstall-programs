@@ -25,7 +25,6 @@ pacdeps=("meson-git" "wayland-protocols-git")
 conflicts=("${gives}")
 pkgdesc="Micro-compositor for game scaling"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
-incompatible=("debian:bookworm" "ubuntu:noble")
 license=('BSD-2-Clause')
 external_connection=true
 
