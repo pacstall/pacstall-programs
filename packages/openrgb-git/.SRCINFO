@@ -21,8 +21,6 @@ pkgbase = openrgb-git
 	provides = openrgb
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://gitlab.com/CalcProgrammer1/OpenRGB.git
-	source = openrgb.conf::https://aur.archlinux.org/cgit/aur.git/plain/openrgb.conf?h=openrgb-git
 	sha256sums = SKIP
-	sha256sums = b5a53d747422f8b594e3e9615e238457d696732efce94050cdd72182a8645ef2
 
 pkgname = openrgb-git
