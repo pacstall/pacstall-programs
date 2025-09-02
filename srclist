@@ -1122,7 +1122,7 @@ pkgname = bpytop-git
 ---
 pkgbase = brave-browser-beta-deb
 	gives = brave-browser-beta
-	pkgver = 1.82.139
+	pkgver = 1.83.89
 	pkgdesc = Testing version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1133,14 +1133,14 @@ pkgbase = brave-browser-beta-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-beta-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.82.139/brave-browser-beta_1.82.139_amd64.deb
-	sha256sums = b52a9fa193a1758c58363c5e87fb442dc65737fe6252061c30dd84ec8c01041c
+	source = https://github.com/brave/brave-browser/releases/download/v1.83.89/brave-browser-beta_1.83.89_amd64.deb
+	sha256sums = 57d4322c5f36bd058b65fc2d8a4d723a256a25abf98a4bf8af79349e6b0c4a4b
 
 pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.81.131
+	pkgver = 1.81.136
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1152,16 +1152,16 @@ pkgbase = brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.81.131_amd64.deb
-	sha256sums_amd64 = 120662e892b0337c5ffa479c7a72c94f313632d7040678db1bb715a51659144d
-	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.81.131_arm64.deb
-	sha256sums_arm64 = ccc65214d8dbca02131fb867dd09c3c20df404c81ebc4773f155fdc6f713482e
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.81.136_amd64.deb
+	sha256sums_amd64 = cfa9cc83cb70914bf50ad6e8c73b8e630c9f814920115ed700aa01136e95298e
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.81.136_arm64.deb
+	sha256sums_arm64 = 214d3938b4f4232440893d74b4439ac97a4f8bb8990660e7a789f8008fa156bd
 
 pkgname = brave-browser-deb
 ---
 pkgbase = brave-browser-nightly-deb
 	gives = brave-browser-nightly
-	pkgver = 1.83.50
+	pkgver = 1.84.13
 	pkgdesc = The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel
 	url = https://brave.com/
 	arch = amd64
@@ -1173,8 +1173,8 @@ pkgbase = brave-browser-nightly-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-nightly-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.83.50/brave-browser-nightly_1.83.50_amd64.deb
-	sha256sums = f7b37082d3fefc218a9f9298f1db75b127b4564694ca1e3bdc376c3b6c3c7681
+	source = https://github.com/brave/brave-browser/releases/download/v1.84.13/brave-browser-nightly_1.84.13_amd64.deb
+	sha256sums = cd6ee696a3df79610a6e1c55f6c203588873ffb1d848c4c59c05e752383eb983
 
 pkgname = brave-browser-nightly-deb
 ---
@@ -16462,7 +16462,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.15.1b
+	pkgver = 1.15.2b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -16497,8 +16497,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.15.1b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = cbc2ff10003cc011fd9c926f221078545db6a038117fa322b1b2b7e6ace0ac1d
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.15.2b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = d035d4585d5d2811b1850b2e95af5e4ee0c30df6911c560fe5b52408a0110402
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -16508,8 +16508,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.15.1b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = 84c3f48781cf257a0287e288d08a077b1ff86af0cb15064bdb5026caa7b08270
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.15.2b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 01c35497d34245faa59a9a0dc06344624c47c3118c00be69b5f2902296f282ef
 
 pkgname = zen-browser-bin
 ---
