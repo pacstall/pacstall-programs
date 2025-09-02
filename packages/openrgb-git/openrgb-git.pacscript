@@ -31,7 +31,7 @@ maintainer=("xdavius <xdavius@github.com>")
 
 build() {
   cd "${srcdir}/OpenRGB"
-  export CXXFLAGS=${CXXFLAGS/-pipe}
+  export CXXFLAGS=${CXXFLAGS/-pipe/}
   qmake OpenRGB.pro PREFIX=/usr
   make -j"${NCPU}"
 }
