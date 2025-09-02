@@ -1,7 +1,7 @@
 pkgname="openrgb-git"
 gives="openrgb"
 pkgver="1.0rc1"
-pkgrel="1"
+pkgrel="2"
 pkgdesc="Configuration utility for RGB lights supporting motherboards, RAM, & peripherals"
 arch=("amd64" "arm64")
 url='https://gitlab.com/CalcProgrammer1/OpenRGB'
@@ -11,11 +11,9 @@ optdepends=('i2c-tools: Motherboard & RAM access')
 provides=("openrgb")
 conflicts=("openrgb")
 source=("git+https://gitlab.com/CalcProgrammer1/OpenRGB.git"
-  "openrgb.conf::https://aur.archlinux.org/cgit/aur.git/plain/openrgb.conf?h=openrgb-git"
-  "openrgb.service::https://aur.archlinux.org/cgit/aur.git/plain/openrgb.service?h=openrgb-git")
+  "openrgb.conf::https://aur.archlinux.org/cgit/aur.git/plain/openrgb.conf?h=openrgb-git")
 sha256sums=("SKIP"
-  "b5a53d747422f8b594e3e9615e238457d696732efce94050cdd72182a8645ef2"
-  "272dc43a77d0e48d29f32da753c7e05fd635883b173c21047f4eefa8bfc77938")
+  "b5a53d747422f8b594e3e9615e238457d696732efce94050cdd72182a8645ef2")
 maintainer=("xdavius <xdavius@github.com>")
 
 #prepare() {
@@ -33,14 +31,14 @@ maintainer=("xdavius <xdavius@github.com>")
 
 build() {
   cd "${srcdir}/OpenRGB"
-  qmake OpenRGB.pro
+  export CXXFLAGS=${CXXFLAGS/-pipe}
+  qmake OpenRGB.pro PREFIX=/usr
   make -j"${NCPU}"
 }
 
 package() {
   cd "${srcdir}"
   install -Dm644 -t "${pkgdir}"/usr/lib/modules-load.d "."/openrgb.conf
-  install -Dm644 -t "${pkgdir}"/usr/lib/systemd/system "."/openrgb.service
   cd "${srcdir}/OpenRGB"
   make INSTALL_ROOT="${pkgdir}" install
 }
