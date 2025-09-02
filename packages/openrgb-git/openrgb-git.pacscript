@@ -15,7 +15,7 @@ sha256sums=("SKIP")
 maintainer=("xdavius <xdavius@github.com>")
 
 prepare() {
-  cd "${srcdir}
+  cd "${srcdir}"
   echo "i2c-dev" > openrgb.conf
 }
 
@@ -28,7 +28,7 @@ build() {
 
 package() {
   cd "${srcdir}"
-  install -Dm644 -t "${pkgdir}"/usr/lib/modules-load.d "."/openrgb.conf
+  install -Dm644 -t "${pkgdir}"/usr/lib/modules-load.d openrgb.conf
   cd "${srcdir}/OpenRGB"
   make INSTALL_ROOT="${pkgdir}" install
 }
