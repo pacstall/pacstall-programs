@@ -1,5 +1,5 @@
 pkgbase = pacup
-	pkgver = 3.3.11
+	pkgver = 3.3.12
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
@@ -15,7 +15,7 @@ pkgbase = pacup
 	replaces = pacup-bin
 	replaces = pacup-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.11.tar.gz
-	sha256sums = d9f6d5523a0aa584230cdf32675705745651fb2ae8768e8628d48c98dd151469
+	source = https://github.com/pacstall/pacup/archive/refs/tags/3.3.12.tar.gz
+	sha256sums = 0caac4d9d5083fefae1a55fae148a4acf974ec6a7e3b07cf8912978a909393fb
 
 pkgname = pacup

@@ -1,23 +1,25 @@
 pkgname="osu-lazer-app"
 arch=("amd64")
-pkgver="2025.424.0"
+pkgver="2025.816.0"
+_pkgtag="lazer"
 pkgdesc="The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew."
-url="https://osu.ppy.sh"
+url='https://osu.ppy.sh'
 license=("MIT" "CC-BY-NC-4.0")
 depends=("libfuse2")
 conflicts=("osu-lazer" "osu-lazer-git")
+replaces=("osu-lazer-tachyon-app")
 noextract=("osu.AppImage")
 source=(
-  "${pkgname}-${pkgver}.AppImage::https://github.com/ppy/osu/releases/download/${pkgver}/osu.AppImage"
+  "${pkgname}-${pkgver}.AppImage::https://github.com/ppy/osu/releases/download/${pkgver}-${_pkgtag}/osu.AppImage"
   # png is ignored so i have to take it from the repo
   "icon.png::https://raw.githubusercontent.com/ppy/osu/master/assets/lazer.png"
   "osu-lazer"
   "osu-lazer.desktop"
 )
 sha256sums=(
-  "f273a84a435bcc41690e3d058af098236d2d6734f4d981dc2996e57c47e1f99a"
+  "98e8a143c9ad1c48aad051259098999749a106a3e2f02a06a30377e7c25cef60"
   "30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51"
-  "baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957"
+  "18f9ab3e98e5cc93a5da9baaa3b065c6511e126306107dfb51633406f3e49b0a"
   "e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e"
 )
 

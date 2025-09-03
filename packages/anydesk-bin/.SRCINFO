@@ -1,6 +1,6 @@
 pkgbase = anydesk-bin
 	gives = anydesk
-	pkgver = 6.4.0
+	pkgver = 7.0.2
 	pkgdesc = Platform independent remote access to personal computers and other devices running the host application - Binary version
 	arch = amd64
 	depends = libc6
@@ -22,7 +22,7 @@ pkgbase = anydesk-bin
 	breaks = anydesk-deb
 	replaces = anydesk
 	repology = project: anydesk
-	source = @anydesk-bin~6.4.0::https://download.anydesk.com/linux/anydesk-6.4.0-amd64.tar.gz
-	sha256sums = c86cd3a9bbf74904fa57f0dc63c1af4435e2958ad95d5b2640e9eacbfe7e7aff
+	source = @anydesk-bin~7.0.2::https://download.anydesk.com/linux/anydesk-7.0.2-amd64.tar.gz
+	sha256sums = a84e3dad5fd03d891bc80a690cc2ff9fa6ebce6880f77c38edb0cec22283b94a
 
 pkgname = anydesk-bin

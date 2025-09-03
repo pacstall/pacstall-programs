@@ -1,6 +1,6 @@
 pkgbase = notesnook-app
 	gives = notesnook
-	pkgver = 3.0.30
+	pkgver = 3.2.2
 	pkgdesc = End-to-end encrypted note taking alternative to Evernote
 	url = https://notesnook.com
 	arch = amd64
@@ -8,11 +8,11 @@ pkgbase = notesnook-app
 	license = GPL-3.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: notesnook
-	source = https://raw.githubusercontent.com/streetwriters/notesnook/refs/tags/v3.0.30/resources/icon.png
+	source = https://raw.githubusercontent.com/streetwriters/notesnook/refs/tags/v3.2.2/resources/icon.png
 	sha256sums = SKIP
-	source_amd64 = notesnook-3.0.30.AppImage::https://github.com/streetwriters/notesnook/releases/download/v3.0.30/notesnook_linux_x86_64.AppImage
-	sha256sums_amd64 = 0b5cec705beba3d5d16781acaab280f0fa4a6255532559bbff370cd4d46e7526
-	source_arm64 = notesnook-3.0.30.AppImage::https://github.com/streetwriters/notesnook/releases/download/v3.0.30/notesnook_linux_arm64.AppImage
-	sha256sums_arm64 = e47b35dd0423a929bbb4e4b78c37f2d002c0da833305dc585a31e88eac58d35f
+	source_amd64 = notesnook-3.2.2.AppImage::https://github.com/streetwriters/notesnook/releases/download/v3.2.2/notesnook_linux_x86_64.AppImage
+	sha256sums_amd64 = 0ae3a65bd9034e533dfee4c52acb8d49f91827a38d2368d9e32b62296fc722c1
+	source_arm64 = notesnook-3.2.2.AppImage::https://github.com/streetwriters/notesnook/releases/download/v3.2.2/notesnook_linux_arm64.AppImage
+	sha256sums_arm64 = 79d586d378def4ba5844cea23ab51c910c678cc8aea622cc8ce95e40d30824e0
 
 pkgname = notesnook-app

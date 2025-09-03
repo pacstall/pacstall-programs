@@ -1,11 +1,11 @@
 pkgname="anydesk-deb"
 gives="anydesk"
 repology=("project: ${gives}")
-pkgver="6.4.2"
+pkgver="7.0.2"
 source=("http://deb.anydesk.com/pool/main/a/${gives}/${gives}_${pkgver}_amd64.deb")
 breaks=("${gives}-bin")
 pkgdesc="AnyDesk provides platform independent remote access to personal computers and other devices running the host application"
-sha256sums=("5fc5bfac01bc3f3c1f32d2fb3aaa167c75998b08d5e79c56932adb23c0e56772")
+sha256sums=("74170b9f16538576b9f8390c5ab3e5810ef2167ba7c72ed1b63f8ed32c8ebdb7")
 arch=('amd64')
 incompatible=("debian:trixie")
 maintainer=("Oren Klopfer <oren@taumoda.com>")

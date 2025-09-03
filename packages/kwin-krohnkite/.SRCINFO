@@ -1,0 +1,22 @@
+pkgbase = kwin-krohnkite
+	gives = kwin-krohnkite
+	pkgver = 0.9.9.2
+	pkgdesc = Dynamic tiling extension for KWin 6 inspired by dwm
+	url = https://github.com/anametologin/krohnkite
+	arch = all
+	depends = kwin-common>=4:6.0.0
+	makedepends = kwin-common>=4:6.0.0
+	breaks = kwin-krohnkite-git
+	compatible = ubuntu:devel
+	compatible = ubuntu:questing
+	compatible = ubuntu:plucky
+	compatible = ubuntu:oracular
+	compatible = debian:trixie
+	compatible = debian:sid
+	license = MIT
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: kwin-scripts-krohnkite
+	source = https://github.com/anametologin/krohnkite/releases/download/0.9.9.2/krohnkite.kwinscript
+	sha256sums = 42f7f66531d366c74b5fc860381da3517ccb4cdccd1f80c122fcab6e9a8fcf7e
+
+pkgname = kwin-krohnkite

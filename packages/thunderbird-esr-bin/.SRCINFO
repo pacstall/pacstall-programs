@@ -1,12 +1,12 @@
 pkgbase = thunderbird-esr-bin
 	gives = thunderbird-esr
-	pkgver = 128.6.0esr
+	pkgver = 140.1.1esr
 	pkgdesc = Standalone Mail/News reader - binary version (ESR)
 	url = https://www.thunderbird.net/en-US/
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: thunderbird-esr
-	source = https://archive.mozilla.org/pub/thunderbird/releases/128.6.0esr/linux-x86_64/en-US/thunderbird-128.6.0esr.tar.bz2
-	sha256sums = f8e7fdd9a29a196be4e3af54760ad6987d40180644bae4afb68bbf63f931f2b8
+	source = https://archive.mozilla.org/pub/thunderbird/releases/140.1.1esr/linux-x86_64/en-US/thunderbird-140.1.1esr.tar.xz
+	sha256sums = 13932d2417a5b88f392e52390ef90b43b3e21b2406d2c3c75879acc7a9737d49
 
 pkgname = thunderbird-esr-bin

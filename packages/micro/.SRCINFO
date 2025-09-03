@@ -1,5 +1,5 @@
 pkgbase = micro
-	pkgver = 2.0.13
+	pkgver = 2.0.14
 	pkgdesc = A modern and intuitive terminal-based text editor
 	arch = amd64
 	optdepends = xclip: system clipboard support (X11)
@@ -7,7 +7,7 @@ pkgbase = micro
 	replaces = micro
 	maintainer = edward-riley <edward@edwardriley.co.uk>
 	repology = project: micro
-	source = @micro~2.0.13::https://github.com/zyedidia/micro/releases/download/v2.0.13/micro-2.0.13-linux64.tar.gz
-	sha256sums = a50e405d3d09d58f6b2c182429c18537a05f317dc0c3c9cb834b3271362e4781
+	source = @micro~2.0.14::https://github.com/zyedidia/micro/releases/download/v2.0.14/micro-2.0.14-linux64.tar.gz
+	sha256sums = 704e96add9b44e0041179f7934338d330e85230af6869f70b88720830f554786
 
 pkgname = micro

@@ -1,14 +1,14 @@
 pkgbase = flyctl-bin
-	pkgver = 0.2.31
+	pkgver = 0.3.144
 	pkgdesc = Command line tool for fly.io services
 	url = https://fly.io
 	arch = amd64
 	arch = arm64
 	maintainer = Andrew Barchuk <andrew@raindev.io>
 	repology = project: flyctl
-	source_amd64 = @flyctl-bin~0.2.31::https://github.com/superfly/flyctl/releases/download/v0.2.31/flyctl_0.2.31_Linux_x86_64.tar.gz
-	sha256sums_amd64 = 2af82bd13c9fed05fd11682ddc646c436353c87519d91482350d7a0edbb59841
-	source_arm64 = @flyctl-bin~0.2.31::https://github.com/superfly/flyctl/releases/download/v0.2.31/flyctl_0.2.31_Linux_arm64.tar.gz
-	sha256sums_arm64 = b7d5b38c6e6e0d6907520db81caf66cefd086a34d959b9d1fcf7427510f63c60
+	source_amd64 = https://github.com/superfly/flyctl/releases/download/v0.3.144/flyctl_0.3.144_Linux_x86_64.tar.gz
+	sha256sums_amd64 = 8b81469299c1e53c129f469501b341a402b21f1781f5dc25338d4a3910ebad96
+	source_arm64 = https://github.com/superfly/flyctl/releases/download/v0.3.144/flyctl_0.3.144_Linux_arm64.tar.gz
+	sha256sums_arm64 = bea8261d481e815fa725e737af37a3d0f3c13c8227f00780e0f53a4af87ef156
 
 pkgname = flyctl-bin

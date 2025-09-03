@@ -1,5 +1,5 @@
 pkgbase = cbindgen
-	pkgver = 0.27.0
+	pkgver = 0.29.0
 	pkgdesc = A tool for generating C bindings to Rust code
 	url = https://github.com/mozilla/cbindgen
 	arch = amd64
@@ -11,7 +11,7 @@ pkgbase = cbindgen
 	license = MPL-2.0
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: cbindgen
-	source = git+https://github.com/mozilla/cbindgen#tag=v0.27.0
+	source = git+https://github.com/mozilla/cbindgen#tag=v0.29.0
 	b2sums = 76b445f7f9729107a04451433d047f50b5ac52c7dc501685f00d0558dab82e2bc09d23a8b5c33ea231e1a2fae81533ba8e64d21a43d524b6dd0de170114c6ea5
 
 pkgname = cbindgen

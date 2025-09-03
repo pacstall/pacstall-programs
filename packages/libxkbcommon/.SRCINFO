@@ -1,0 +1,42 @@
+pkgbase = libxkbcommon
+	pkgver = 1.10.0
+	pkgdesc = Keyboard keymap compiler and support library
+	url = https://xkbcommon.org
+	arch = any
+	depends = libxml2
+	depends = xkb-data
+	depends = libxcb-xkb-dev
+	makedepends = bash-completion
+	makedepends = doxygen
+	makedepends = bison
+	makedepends = pkg-config
+	makedepends = libc6-dev
+	makedepends = graphviz
+	makedepends = libxcb1-dev
+	makedepends = libxml2-dev
+	makedepends = meson
+	makedepends = libwayland-dev
+	makedepends = wayland-protocols
+	makedepends = xkb-data
+	makedepends = x11proto-dev
+	makedepends = libxcb-xkb-dev
+	replaces = libxkbcommon-tools
+	replaces = libxkbcommon-x11-0
+	replaces = libxkbcommon-x11-dev
+	replaces = libxkbcommon0
+	replaces = libxkbcommon-dev
+	replaces = libxkbregistry0
+	replaces = libxkbregistry-dev
+	provides = libxkbcommon-tools=1.10.0
+	provides = libxkbcommon-x11-0=1.10.0
+	provides = libxkbcommon-x11-dev=1.10.0
+	provides = libxkbcommon0=1.10.0
+	provides = libxkbcommon-dev=1.10.0
+	provides = libxkbregistry0=1.10.0
+	provides = libxkbregistry-dev=1.10.0
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: libxkbcommon
+	source = @libxkbcommon~1.10.0::https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.10.0.tar.gz
+	sha256sums = 0427585a4d6ca17c9fc1ac4b539bf303348e9080af70c5ea402503bc370a9631
+
+pkgname = libxkbcommon

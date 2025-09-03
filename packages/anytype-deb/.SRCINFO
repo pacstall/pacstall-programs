@@ -1,12 +1,12 @@
 pkgbase = anytype-deb
 	gives = anytype
-	pkgver = 0.40.9
+	pkgver = 0.47.6
 	pkgdesc = Operating environment for the new internet. Anytype is a next generation software that breaks down barriers between applications, gives back privacy and data ownership to users.
 	url = https://anytype.io/
 	arch = amd64
 	maintainer = Anifyuli <anifyuliansyah@gmail.com>
 	repology = project: anytype
-	source = https://github.com/anyproto/anytype-ts/releases/download/v0.40.9/anytype_0.40.9_amd64.deb
-	sha256sums = a0360c31b5b0edde9dfb04c9602da8a66eea43d1afc4f508314cc65d65c712a2
+	source = https://github.com/anyproto/anytype-ts/releases/download/v0.47.6/anytype_0.47.6_amd64.deb
+	sha256sums = 460809b46793213af258ed42aee1ed46470725bc110631d699f653a74e0d19d9
 
 pkgname = anytype-deb

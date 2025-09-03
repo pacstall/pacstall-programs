@@ -1,6 +1,6 @@
 pkgbase = shellharden
 	gives = shellharden
-	pkgver = 4.3.0
+	pkgver = 4.3.1
 	pkgdesc = A syntax highlighter and a tool to semi-automate the rewriting of scripts to ShellCheck conformance
 	arch = any
 	makedepends = rustc
@@ -12,7 +12,7 @@ pkgbase = shellharden
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: shellharden
-	source = @shellharden~4.3.0::https://github.com/anordal/shellharden/archive/refs/tags/v4.3.0.zip
-	sha256sums = d6679f7a2a3e96da923b2f04339a966202a24172f1bbc58e56e7982eca2a76dc
+	source = @shellharden~4.3.1::https://github.com/anordal/shellharden/archive/refs/tags/v4.3.1.zip
+	sha256sums = 27a34b2ec942d017af4f632980f9607b7b880e0ff00362981e14c627bfe0bba7
 
 pkgname = shellharden

@@ -1,0 +1,19 @@
+pkgbase = kanata-bin
+	gives = kanata
+	pkgver = 1.9.0
+	pkgdesc = Keyboard remapper, Improve keyboard comfort and usability with advanced customization
+	url = https://github.com/jtroo/kanata/
+	arch = x86_64
+	depends = gcc
+	depends = libc-bin
+	depends = systemd
+	provides = kanata
+	license = LGPL-3.0-only
+	maintainer = tranquil <tranquiltr0@proton.me>
+	repology = project: kanata
+	source = https://github.com/jtroo/kanata/releases/download/v1.9.0/kanata
+	source = https://github.com/jtroo/kanata/raw/v1.9.0/LICENSE
+	sha256sums = 440ce0f754adc32b1e9d0f47c0016c59222eaad7c1b2c86ce19f2559e4d54ffa
+	sha256sums = a5681bf9b05db14d86776930017c647ad9e6e56ff6bbcfdf21e5848288dfaf1b
+
+pkgname = kanata-bin

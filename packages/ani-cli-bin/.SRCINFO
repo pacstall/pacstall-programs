@@ -1,6 +1,6 @@
 pkgbase = ani-cli-bin
 	gives = ani-cli
-	pkgver = 4.8
+	pkgver = 4.10
 	pkgdesc = A cli tool to browse and play anime
 	arch = amd64
 	depends = grep
@@ -12,9 +12,9 @@ pkgbase = ani-cli-bin
 	depends = fzf
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: ani-cli
-	source = https://github.com/pystardust/ani-cli/releases/download/v4.8/ani-cli
-	source = ani-cli.1::https://github.com/pystardust/ani-cli/releases/download/v4.8/ani-cli.1
-	sha256sums = 4a21690493b4aee4165f1881b19d9d696c9f56c5687940e587c542c6caa7c6fe
+	source = https://github.com/pystardust/ani-cli/releases/download/v4.10/ani-cli
+	source = ani-cli.1::https://github.com/pystardust/ani-cli/releases/download/v4.10/ani-cli.1
+	sha256sums = 38599dc5bb65a5b9f78e936ed42ffe16b62095dbc6621a5b578ed3e29aac4f3e
 	sha256sums = SKIP
 
 pkgname = ani-cli-bin

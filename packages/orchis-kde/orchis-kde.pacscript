@@ -1,6 +1,6 @@
 pkgname="orchis-kde"
 pkgdesc="Orchis KDE is a Materia Design theme for KDE Plasma desktop"
-url="https://github.com/vinceliuice/Orchis-kde"
+url='https://github.com/vinceliuice/Orchis-kde'
 # CC-BY-SA is the license of SDDM theme, the rest is under GPL
 license=("GPL-3.0-only" "CC-BY-SA-4.0")
 arch=("any")

@@ -37,6 +37,5 @@ pkgbase = libcamera-git
 	makedepends = meson
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://git.libcamera.org/libcamera/libcamera.git
-	pacdeps_focal = meson-focal-deb
 
 pkgname = libcamera-git

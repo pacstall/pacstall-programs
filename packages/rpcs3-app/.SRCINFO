@@ -1,6 +1,6 @@
 pkgbase = rpcs3-app
 	gives = rpcs3
-	pkgver = 0.0.34-17339
+	pkgver = 0.0.37-18022
 	pkgdesc = PS3 emulator/debugger
 	url = https://rpcs3.net
 	arch = amd64
@@ -8,9 +8,9 @@ pkgbase = rpcs3-app
 	maintainer = Thomas Crha <thomas@9bitbyte.com>
 	source = https://rpcs3.net/cdn/branding/core-color-png.png
 	sha256sums = SKIP
-	source_amd64 = https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-1b87e186c45a21de83e9fdc859af3e0c92ae8509/rpcs3-v0.0.34-17339-1b87e186_linux64.AppImage
-	sha256sums_amd64 = 991a851a84e302a5a898f88a160fcf45e3b49d4dd6c26d2b174ad7ed4b38260a
-	source_arm64 = https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-1b87e186c45a21de83e9fdc859af3e0c92ae8509/rpcs3-v0.0.34-17339-1b87e186_linux_aarch64.AppImage
-	sha256sums_arm64 = b3cb4aa87b0b44cd170410681e7ca987a09c455690efbf39dc4f8e9b35eff3fe
+	source_amd64 = https://github.com/RPCS3/rpcs3-binaries-linux/releases/download/build-9c93ec0bc31bbc94ca4dce2a76ceea80da6f6554/rpcs3-v0.0.37-18022-9c93ec0b_linux64.AppImage
+	sha256sums_amd64 = c73b47d687a77b6b403f191fdc728e3f63b1fa7601d78471c5503af183e2b564
+	source_arm64 = https://github.com/RPCS3/rpcs3-binaries-linux-arm64/releases/download/build-9c93ec0bc31bbc94ca4dce2a76ceea80da6f6554/rpcs3-v0.0.37-18022-9c93ec0b_linux_aarch64.AppImage
+	sha256sums_arm64 = 4ef3819fe6397a91cc7e2555063e1685e037d37920d9e0affcb86704883eab63
 
 pkgname = rpcs3-app

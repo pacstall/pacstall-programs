@@ -1,11 +1,11 @@
 pkgbase = rhino-stampede-dev
-	pkgver = 2024.3
-	pkgrel = 2
+	pkgver = 2025.3
+	pkgrel = 1
 	pkgdesc = Testing suite for Rhino Linux development
 	arch = all
 	pacdeps = unicons-git
+	pacdeps = rhinu-pkg-git
 	conflicts = rhino-server-core
-	conflicts = rhino-ubxi-core
 	compatible = ubuntu:devel
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty

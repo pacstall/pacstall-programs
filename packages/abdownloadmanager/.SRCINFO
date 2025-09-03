@@ -1,11 +1,11 @@
 pkgbase = abdownloadmanager
-	pkgver = 1.5.3
+	pkgver = 1.6.8
 	pkgdesc = Desktop app which lets you manage and organize your download files better than before
 	arch = amd64
 	license = Apache-2.0
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: abdownloadmanager
-	source = https://github.com/amir1376/ab-download-manager/releases/download/v1.5.3/ABDownloadManager_1.5.3_linux_x64.tar.gz
-	sha256sums = ab43c3010cd820ad50f7604c89b5dc75ea9e6a9fa6455416514e77403715931f
+	source = https://github.com/amir1376/ab-download-manager/releases/download/v1.6.8/ABDownloadManager_1.6.8_linux_x64.tar.gz
+	sha256sums = 355be492ca0a4b852da0619782590c6359ff124686fb277a5c30c4452c9b2725
 
 pkgname = abdownloadmanager

@@ -1,6 +1,6 @@
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.15.0-061500rc7
-	pkgver = 6.15~rc7
+	gives = linux-headers-6.17.0-061700rc1
+	pkgver = 6.17~rc1
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -8,7 +8,7 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.15-rc7/amd64/linux-headers-6.15.0-061500rc7_6.15.0-061500rc7.202505182143_all.deb
-	sha256sums = 9f60b6c68fa76b3fc1828d5022f439a6cce5e710be83155aea8db3930671ea69
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/amd64/linux-headers-6.17.0-061700rc1_6.17.0-061700rc1.202508101740_all.deb
+	sha256sums = fa2902ad2e86c2418a49de6cfb276ec6e38767b9e295c71e18cd60ca4e148274
 
 pkgname = linux-headers-deb

@@ -1,6 +1,7 @@
 pkgname="ubxi-kde-desktop-git"
 arch=("amd64" "arm64")
 pkgver="0.0.1"
+pkgrel="4"
 source=("https://github.com/rhino-linux/ubxi-kde-desktop.git")
 depends=(
   "plasma-desktop" "konsole" "systemsettings" "plasma-nm" "plasma-disks"
@@ -8,7 +9,7 @@ depends=(
   "kscreen" "dolphin" "kio-extras" "kdegraphics-thumbnailers" "kde-config-gtk-style"
   "kde-config-gtk-style-preview" "kde-config-screenlocker" "breeze-gtk-theme" "xdg-desktop-portal-gtk" "xdg-desktop-portal-kde"
   "ufw" "vulkan-tools" "wayland-utils" "pulseaudio-utils" "aha" "clinfo"
-  "bluedevil"
+  "bluedevil" "plasma-widgets-addons" "plasma-session-wayland" "plasma-session-x11"
 )
 optdepends=(
   "kde-spectacle: a simple application for capturing desktop screenshots"
@@ -17,6 +18,7 @@ optdepends=(
   "plasma-thunderbolt: Plasma addons for managing Thunderbolt devices"
   "powerdevil: Global power saver settings"
 )
+makedepends=("plasma-session-wayland")
 pacdeps=("rhino-ubxi-core")
 replaces=("unicorn-desktop" "unicorn-mobile")
 gives="ubxi-kde-desktop"
@@ -36,6 +38,7 @@ build() {
   mkdir -p "${pkgdir}/usr/share/color-schemes"
   mkdir -p "${pkgdir}/usr/share/applications"
   mkdir -p "${pkgdir}/etc/xdg"
+  mkdir -p "${pkgdir}/usr/share/wayland-sessions"
 }
 
 package() {
@@ -67,10 +70,28 @@ package() {
 
   # KRunner for Search Bar and KWin Overview for Desktop Switcher
   cp plasma/applications/{krunner,kwin-overview}.desktop "${pkgdir}/usr/share/applications"
+
+  # Patch Wayland session
+  if [[ -f /usr/share/wayland-sessions/plasma.desktop ]]; then
+    cp /usr/share/wayland-sessions/plasma.desktop "${pkgdir}/usr/share/wayland-sessions/plasma.desktop"
+  else
+    cp /usr/share/wayland-sessions/plasma.desktop.bak "${pkgdir}/usr/share/wayland-sessions/plasma.desktop"
+  fi
+  sed -i 's|^Exec=.*|Exec=/usr/bin/startplasma-wayland|' "${pkgdir}/usr/share/wayland-sessions/plasma.desktop"
+}
+
+pre_install() {
+  sudo dpkg-divert --quiet --package "${gives}" --divert /usr/share/wayland-sessions/plasma.desktop.bak --rename /usr/share/wayland-sessions/plasma.desktop
 }
 
 post_install() {
   if ! [[ -f "${homedir}/.config/kglobalshortcutsrc" ]]; then
     cp "/etc/xdg/kglobalshortcutsrc" "${homedir}/.config"
+  fi
+}
+
+post_remove() {
+  if ! [[ -d "${STAGEDIR}/${pkgname}" ]]; then
+    sudo dpkg-divert --quiet --package "${gives}" --remove --rename /usr/share/wayland-sessions/plasma.desktop
   fi
 }

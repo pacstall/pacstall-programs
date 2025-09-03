@@ -1,6 +1,6 @@
 pkgbase = github-cli-deb
 	gives = gh
-	pkgver = 2.72.0
+	pkgver = 2.76.2
 	pkgdesc = GitHub's official command line tool
 	arch = arm64
 	arch = amd64
@@ -9,9 +9,9 @@ pkgbase = github-cli-deb
 	replaces = gh
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: github-cli
-	source_arm64 = https://github.com/cli/cli/releases/download/v2.72.0/gh_2.72.0_linux_arm64.deb
-	sha256sums_arm64 = ddcf9c474ff44952cee53a8f1a2d5ade0a0a7208014ec1c4ac817cd9177ae32c
-	source_amd64 = https://github.com/cli/cli/releases/download/v2.72.0/gh_2.72.0_linux_amd64.deb
-	sha256sums_amd64 = c396a7e674e90ec86809cb5cbbbf4e12369e717e9c2f05fac938f3d09f5592e2
+	source_arm64 = https://github.com/cli/cli/releases/download/v2.76.2/gh_2.76.2_linux_arm64.deb
+	sha256sums_arm64 = 8a4728b3619fc4b21ad74334a9642776a45afe3a473364141d31c09b0452e40d
+	source_amd64 = https://github.com/cli/cli/releases/download/v2.76.2/gh_2.76.2_linux_amd64.deb
+	sha256sums_amd64 = 2958aa0cf0a2a82790913058667bf5a8b67fe0ecdd0d13d5ffe78d90adb04602
 
 pkgname = github-cli-deb

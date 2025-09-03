@@ -1,0 +1,12 @@
+pkgname="libfdk-aac-dev-deb"
+gives="libfdk-aac-dev"
+pkgver="2.0.2"
+arch=('amd64')
+repology=("project: ${gives}")
+replaces=("${gives}")
+breaks=("${gives}-bin" "${gives}")
+pacdeps=("libfdk-aac2-deb")
+pkgdesc="Open-source library for encoding and decoding AAC (Advanced Audio Coding) audio files"
+source=("http://archive.ubuntu.com/ubuntu/pool/multiverse/f/fdk-aac/${gives}_${pkgver}-1_amd64.deb")
+sha256sums=("26b968776f7a58ed2c67f6ad399f02264e637b239e0d9e8a7c99648dd9edfd14")
+maintainer=("Sarim <sarimw@proton.me>")
