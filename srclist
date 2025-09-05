@@ -3025,7 +3025,7 @@ pkgname = fblog-bin
 ---
 pkgbase = feishin-app
 	gives = feishin
-	pkgver = 0.18.0
+	pkgver = 0.19.0
 	pkgdesc = A modern self-hosted music player
 	url = https://github.com/jeffvli/feishin/
 	arch = amd64
@@ -3034,12 +3034,12 @@ pkgbase = feishin-app
 	makedepends = libfuse2
 	maintainer = faelau <git@faessler.sh>
 	repology = project: feishin
-	source = https://raw.githubusercontent.com/jeffvli/feishin/refs/tags/v0.18.0/resources/icon.png
+	source = https://raw.githubusercontent.com/jeffvli/feishin/refs/tags/v0.19.0/resources/icon.png
 	sha256sums = SKIP
-	source_amd64 = feishin-0.18.0.AppImage::https://github.com/jeffvli/feishin/releases/download/v0.18.0/Feishin-0.18.0-linux-x86_64.AppImage
-	sha256sums_amd64 = c03754efd5cfbfe10bbecad86480f1f21be92dfc31ce315f4f0c71713246763b
-	source_arm64 = feishin-0.18.0.AppImage::https://github.com/jeffvli/feishin/releases/download/v0.18.0/Feishin-0.18.0-linux-arm64.AppImage
-	sha256sums_arm64 = a848a78f01eed57f4e61470e0af1717d83bc93681fc3b25d6f0e8a52088677f2
+	source_amd64 = feishin-0.19.0.AppImage::https://github.com/jeffvli/feishin/releases/download/v0.19.0/Feishin-linux-x86_64.AppImage
+	sha256sums_amd64 = a133b3cd9c6feb75b5199ca7c2ab108f47dbfed3977db0f828b0afcfd6aad76c
+	source_arm64 = feishin-0.19.0.AppImage::https://github.com/jeffvli/feishin/releases/download/v0.19.0/Feishin-linux-arm64.AppImage
+	sha256sums_arm64 = 9bc13c515793575c7af50b06cac3d73dd0ca091c75670e5a858711823bbb22ce
 
 pkgname = feishin-app
 ---
@@ -8729,7 +8729,7 @@ pkgname = neovide-bin
 ---
 pkgbase = neovim-app
 	gives = neovim
-	pkgver = 0.11.0
+	pkgver = 0.11.4
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	arch = amd64
@@ -8741,16 +8741,16 @@ pkgbase = neovim-app
 	replaces = neovim-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source_amd64 = https://github.com/neovim/neovim/releases/download/v0.11.0/nvim-linux-x86_64.appimage
-	sha256sums_amd64 = ca44cd43fe8d55418414496e8ec7bac83f611705ece167f4ccb93cbf46fec6c0
-	source_arm64 = https://github.com/neovim/neovim/releases/download/v0.11.0/nvim-linux-arm64.appimage
-	sha256sums_arm64 = 307972fd1e14f68e3a24c23a48e91387399385a3cf3d80e319542c01efe3bcf2
+	source_amd64 = https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-x86_64.appimage
+	sha256sums_amd64 = 79e7e160f9505819a5e12f3d9366be94213f5309fb912ef4ef3af52df3982977
+	source_arm64 = https://github.com/neovim/neovim/releases/download/v0.11.4/nvim-linux-arm64.appimage
+	sha256sums_arm64 = ab54ea9decf32d63a868810dcbc6d0cf8d1592435e383bd84e3d4f4d341ad3ab
 
 pkgname = neovim-app
 ---
 pkgbase = neovim-git
 	gives = neovim
-	pkgver = 0.11.0
+	pkgver = 0.11.4
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	arch = any
@@ -8784,7 +8784,7 @@ pkgbase = neovim-git
 pkgname = neovim-git
 ---
 pkgbase = neovim
-	pkgver = 0.11.2
+	pkgver = 0.11.4
 	pkgdesc = Neovim is a vim fork maintained by the community
 	url = https://neovim.io/
 	arch = any
@@ -8806,8 +8806,8 @@ pkgbase = neovim
 	replaces = neovim-runtime
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source = https://github.com/neovim/neovim/archive/refs/tags/v0.11.2.tar.gz
-	sha256sums = 324759a1bcd1a80b32a7eae1516ee761ec3e566d08284a24c4c7ca59079aabfa
+	source = https://github.com/neovim/neovim/archive/refs/tags/v0.11.4.tar.gz
+	sha256sums = 83cf9543bedab8bec8c11cd50ccd9a4bf1570420a914b9a28f83ad100ca6d524
 
 pkgname = neovim
 ---
@@ -15678,17 +15678,17 @@ pkgname = webapp-manager
 ---
 pkgbase = webcord-deb
 	gives = webcord
-	pkgver = 4.11.0
+	pkgver = 4.11.1
 	pkgdesc = A Discord and Fosscord client implemented directly without Discord API.
 	arch = amd64
 	arch = arm64
 	replaces = webcord
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: webcord
-	source_amd64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.11.0/webcord_4.11.0_amd64.deb
-	sha256sums_amd64 = a94ed77cf334218985ec82b5216d93f2d548b341635e27b684aa9608329fe746
-	source_arm64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.11.0/webcord_4.11.0_arm64.deb
-	sha256sums_arm64 = 826328bbfabc3f8924f3939bb978bcaeb520011869a04ba863850abfc47840e8
+	source_amd64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.11.1/webcord_4.11.1_amd64.deb
+	sha256sums_amd64 = a14da3b829a2b24ce5c10db0cec557d1070c9e5346aef2c2d1f2b2ee785af2df
+	source_arm64 = https://github.com/SpacingBat3/WebCord/releases/download/v4.11.1/webcord_4.11.1_arm64.deb
+	sha256sums_arm64 = 44983beda6efc79f84a0b181ef66d2a4a765143d7ff15da48cbe82beddc4355a
 
 pkgname = webcord-deb
 ---
