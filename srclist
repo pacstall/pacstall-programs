@@ -3025,7 +3025,7 @@ pkgname = fblog-bin
 ---
 pkgbase = feishin-app
 	gives = feishin
-	pkgver = 0.18.0
+	pkgver = 0.19.0
 	pkgdesc = A modern self-hosted music player
 	url = https://github.com/jeffvli/feishin/
 	arch = amd64
@@ -3034,12 +3034,12 @@ pkgbase = feishin-app
 	makedepends = libfuse2
 	maintainer = faelau <git@faessler.sh>
 	repology = project: feishin
-	source = https://raw.githubusercontent.com/jeffvli/feishin/refs/tags/v0.18.0/resources/icon.png
+	source = https://raw.githubusercontent.com/jeffvli/feishin/refs/tags/v0.19.0/resources/icon.png
 	sha256sums = SKIP
-	source_amd64 = feishin-0.18.0.AppImage::https://github.com/jeffvli/feishin/releases/download/v0.18.0/Feishin-0.18.0-linux-x86_64.AppImage
-	sha256sums_amd64 = c03754efd5cfbfe10bbecad86480f1f21be92dfc31ce315f4f0c71713246763b
-	source_arm64 = feishin-0.18.0.AppImage::https://github.com/jeffvli/feishin/releases/download/v0.18.0/Feishin-0.18.0-linux-arm64.AppImage
-	sha256sums_arm64 = a848a78f01eed57f4e61470e0af1717d83bc93681fc3b25d6f0e8a52088677f2
+	source_amd64 = feishin-0.19.0.AppImage::https://github.com/jeffvli/feishin/releases/download/v0.19.0/Feishin-linux-x86_64.AppImage
+	sha256sums_amd64 = a133b3cd9c6feb75b5199ca7c2ab108f47dbfed3977db0f828b0afcfd6aad76c
+	source_arm64 = feishin-0.19.0.AppImage::https://github.com/jeffvli/feishin/releases/download/v0.19.0/Feishin-linux-arm64.AppImage
+	sha256sums_arm64 = 9bc13c515793575c7af50b06cac3d73dd0ca091c75670e5a858711823bbb22ce
 
 pkgname = feishin-app
 ---
