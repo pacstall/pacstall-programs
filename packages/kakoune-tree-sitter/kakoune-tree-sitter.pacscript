@@ -4,7 +4,7 @@ pkgdesc='Tree-sitter plugin for Kakoune'
 license=('BSD-3-Clause')
 repology=('project: kak-tree-sitter')
 url='https://git.sr.ht/~hadronized/kak-tree-sitter'
-arch=("amd64" "arm64" "armhf" "i386")
+arch=('amd64' 'arm64' 'armhf' 'i386')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 source=("https://git.sr.ht/~hadronized/kak-tree-sitter/archive/kak-tree-sitter-config-v${pkgver}.tar.gz")
 sha256sums=('9b3142ce81872de3e7f68390e2d2b510cb7d20bb3c51ad22832e94abb648fbfe')
@@ -34,7 +34,7 @@ check() {
 
 package() {
   cd "${srcdir}/kak-tree-sitter-kak-tree-sitter-config-v${pkgver}"
-  install -Dm755 "target/release/kak-tree-sitter" "${pkgdir}/usr/local/bin/kak-tree-sitter"
-  install -Dm755 "target/release/ktsctl" "${pkgdir}/usr/local/bin/ktsctl"
-  install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+  install -Dm755 'target/release/kak-tree-sitter' "${pkgdir}/usr/local/bin/kak-tree-sitter"
+  install -Dm755 'target/release/ktsctl' "${pkgdir}/usr/local/bin/ktsctl"
+  install -Dm644 'LICENSE' "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
