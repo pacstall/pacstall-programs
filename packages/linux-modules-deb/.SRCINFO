@@ -1,13 +1,13 @@
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.17.0-061700rc1-generic
-	pkgver = 6.17~rc1
+	gives = linux-modules-6.17.0-061700rc4-generic
+	pkgver = 6.17~rc4
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/arm64/linux-modules-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_arm64.deb
-	sha256sums_arm64 = 9bf6847ca4af188c2626097dc98324d80533c8236a29cf6e2851c8ab28e9560e
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc1/amd64/linux-modules-6.17.0-061700rc1-generic_6.17.0-061700rc1.202508101740_amd64.deb
-	sha256sums_amd64 = eb55e8bc2aebcd9c56a6116d71555e44ed443a8789705be1403b87e2c742beb5
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc4/arm64/linux-modules-6.17.0-061700rc4-generic_6.17.0-061700rc4.202508312336_arm64.deb
+	sha256sums_arm64 = 498c19f1c01530a66923e5eeec97b07c3c543d5283375f02908bdb0d0424a02c
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc4/amd64/linux-modules-6.17.0-061700rc4-generic_6.17.0-061700rc4.202508312336_amd64.deb
+	sha256sums_amd64 = 209acddc7c8a12066888be96e7aa6b09fbaaf2acaf4aec82d6e8a4c45c655889
 
 pkgname = linux-modules-deb
