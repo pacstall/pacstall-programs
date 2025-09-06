@@ -5,9 +5,9 @@ license=('BSD-3-Clause')
 repology=('project: kak-tree-sitter')
 url='https://git.sr.ht/~hadronized/kak-tree-sitter'
 arch=("amd64" "arm64" "armhf" "i386")
-maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
+maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 source=("https://git.sr.ht/~hadronized/kak-tree-sitter/archive/kak-tree-sitter-config-v${pkgver}.tar.gz")
-sha256sums=("9b3142ce81872de3e7f68390e2d2b510cb7d20bb3c51ad22832e94abb648fbfe")
+sha256sums=('9b3142ce81872de3e7f68390e2d2b510cb7d20bb3c51ad22832e94abb648fbfe')
 _min_cargo='1.86'
 makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo}")
 depends=('tree-sitter-cli')
@@ -26,10 +26,7 @@ build() {
 check() {
   cd "${srcdir}/kak-tree-sitter-kak-tree-sitter-config-v${pkgver}"
   if type "cargo-${_min_cargo}"; then
-    #alias rustdoc="rustdoc-${_min_cargo}"
-    #sh -c "cargo-${_min_cargo} test"
-    # This doesn't work
-    true
+    RUSTDOC="rustdoc-${_min_cargo}" sh -c "cargo-${_min_cargo} test"
   else
     cargo test
   fi
