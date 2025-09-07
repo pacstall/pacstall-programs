@@ -41,4 +41,3 @@ package() {
   install -Dm644 "completions/ya.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/ya.fish"
   install -Dm644 "completions/yazi.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/yazi.fish"
 }
-
