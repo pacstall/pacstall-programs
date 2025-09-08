@@ -17,7 +17,7 @@ external_connection=true
 build() {
   cd "${srcdir}/kak-tree-sitter-kak-tree-sitter-config-v${pkgver}"
   if type "cargo-${_min_cargo}"; then
-    "cargo-${_min_cargo}" build -j${NCPU} --release --locked
+    "cargo-${_min_cargo}" build -j"${NCPU}" --release --locked
   else
     cargo build -j"${NCPU}" --release --locked
   fi
