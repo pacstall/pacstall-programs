@@ -26,7 +26,7 @@ build() {
 check() {
   cd "${srcdir}/kak-tree-sitter-kak-tree-sitter-config-v${pkgver}"
   if type "cargo-${_min_cargo}"; then
-    RUSTDOC="rustdoc-${_min_cargo}" sh -c "cargo-${_min_cargo} test"
+    RUSTDOC="rustdoc-${_min_cargo}" "cargo-${_min_cargo}" test
   else
     cargo test
   fi
