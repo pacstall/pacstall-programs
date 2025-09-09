@@ -1,4 +1,4 @@
-pkgname="vinegar-git"
+pkgname="vinegar"
 repology=("project: vinegar")
 arch=('amd64')
 pkgver="1.8.1"
@@ -27,18 +27,17 @@ optdepends=(
   "gamemode: Gamemode integration"
   "wine: A required dependency (made optional for flexibility)"
 )
-gives="vinegar"
 pkgdesc="Open-source, minimal, configurable, fast bootstrapper for running Roblox on Linux"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-3.0-only')
 external_connection=true
 
 build() {
-  cd "${gives}"
+  cd "${pkgname}"
   make -j"${NCPU}"
 }
 
 package() {
-  cd "${gives}"
+  cd "${pkgname}"
   make DESTDIR="${pkgdir}" install
 }
