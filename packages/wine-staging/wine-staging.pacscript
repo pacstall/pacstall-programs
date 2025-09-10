@@ -5,7 +5,6 @@ pkgver="10.14"
 url='https://www.wine-staging.com'
 license=("LGPL-2.1-or-later")
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
-
 source=(
   "git+https://gitlab.winehq.org/wine/wine-staging.git#tag=v${pkgver}"
   "git+https://gitlab.winehq.org/wine/wine.git#tag=wine-${pkgver}"
@@ -18,7 +17,6 @@ sha256sums=(
   "SKIP"
   "SKIP"
 )
-
 makedepends=(
   "devscripts" "autotools-dev" "autoconf" "libjpeg-turbo8-dev | libjpeg62-turbo-dev"
   "libasound2-dev" "libpulse-dev" "libdbus-1-dev" "libfontconfig-dev" "libfreetype-dev"
@@ -28,7 +26,6 @@ makedepends=(
   "libvkd3d-dev" "libvulkan-dev" "gcc-mingw-w64" "gcc-multilib" "g++-multilib"
   "flex" "bison" "libx11-dev" "xorg-dev" "oss4-dev | alsa-oss | oss-compat" "libwayland-dev" "libxkbregistry-dev"
 )
-
 depends=(
   "libjpeg-turbo8-dev | libjpeg62-turbo-dev" "libasound2-dev" "libpulse-dev" "libdbus-1-dev"
   "libfontconfig-dev" "libfreetype-dev" "libgnutls28-dev" "libpng-dev" "libtiff-dev"
@@ -36,9 +33,7 @@ depends=(
   "libgstreamer1.0-dev" "libgstreamer-plugins-base1.0-dev" "libmpg123-dev" "libjxr-dev" "libosmesa6-dev"
   "libsdl2-dev" "libudev-dev" "libvkd3d-dev" "libvulkan-dev" "libx11-dev" "xorg-dev" "oss4-dev | alsa-oss | oss-compat"
 )
-
 conflicts=("wine-staging-git" "wine" "wine64" "libwine" "fonts-wine")
-
 optdepends=("liblcms2-dev: color management"
   "libcups2-dev: printing support"
   "libgphoto2-dev: still image support"
@@ -55,7 +50,6 @@ prepare() {
   mkdir -p wine64-build
 
   # restore the wine tree to its git origin state, without wine-staging patches
-  printf '%s\n' '  -> Cleaning wine source code tree...'
   git -C wine reset --hard HEAD # restore tracked files
   git -C wine clean -xdf        # delete untracked files
 
@@ -67,9 +61,7 @@ prepare() {
   cd "${srcdir}"
 
   # apply all wine-staging patches
-  printf '%s\n' '  -> Applying wine-staging patches...'
   wine-staging/staging/patchinstall.py DESTDIR="${srcdir}/wine" --all
-
 }
 
 build() {
