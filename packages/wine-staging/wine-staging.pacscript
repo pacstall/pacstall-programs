@@ -54,7 +54,6 @@ prepare() {
   git -C wine clean -xdf        # delete untracked files
 
   # change back to the wine upstream commit that this version of wine-staging is based in
-  printf '%s\n' '  -> Changing wine HEAD to the wine-staging base commit...'
   git -C wine config --local advice.detachedHead false
   git -C wine checkout "$(wine-staging/staging/patchinstall.py --upstream-commit)"
 
