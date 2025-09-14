@@ -7,7 +7,7 @@ arch=('amd64' 'arm64')
 license=('MPL-2.0' 'LGPL-3.0-or-later')
 depends=('dbus' 'libglib2.0-0' 'hicolor-icon-theme' 'libxml2-dev')
 optdepends=(
-  "coinor-libcbc3: required by the Calc solver"
+  "coinor-cbc: required by the Calc solver"
   "libgstreamer-plugins-base1.0-0: for multimedia content"
   "libgtk-3-0: for GTK3 integration"
   "default-jdk: required by extension-wiki-publisher and extension-nlpsolver"
