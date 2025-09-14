@@ -14,10 +14,10 @@ optdepends=(
   "default-jre: adds java support"
   "libqt5gui5: for Qt5 desktop integration"
 )
-source_amd64=("https://www.libreoffice.org/donate/dl/deb-x86_64/${pkgver}/en-US/LibreOffice_${pkgver}_Linux_x86_64_deb.tar.gz")
-source_arm64=("https://github.com/rustdesk/rustdesk/releases/download/${pkgver}/${gives}_${pkgver}_Linux_aarch64_deb.tar.gz")
-sha1sums_amd64=("d98956f6d484f694debd3c41eee261d099158a8a")
-sha1sums_arm64=("6810d4bbd04e136ced055c58806c15ce4856306d")
+source_amd64=("https://download.documentfoundation.org/libreoffice/stable/${pkgver}/deb/LibreOffice_${pkgver}_Linux_x86_64_deb.tar.gz")
+source_arm64=("https://download.documentfoundation.org/libreoffice/stable/${pkgver}/deb/LibreOffice_${pkgver}_Linux_aarch64_deb.tar.gz")
+sha256sums_amd64=("f367c434aee8352e9742e192bedcdaef194ffcbcfeaf760c6300fb4fecbba73c")
+sha256sums_arm64=("9a73b06dba875f55a01397d31771ec845218ed83e313140c977eb44223ad2e66")
 provides=("${gives}" "${gives}-en-US")
 conflicts=("${pkgname}" "${gives}")
 replaces=("${conflicts[@]}")
