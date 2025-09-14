@@ -14,7 +14,7 @@ optdepends=(
   "default-jre: adds java support"
   "libqt5gui5: for Qt5 desktop integration"
 )
-source_amd64=("https://download.documentfoundation.org/libreoffice/stable/${pkgver}/deb/LibreOffice_${pkgver}_Linux_x86_64_deb.tar.gz")
+source_amd64=("https://download.documentfoundation.org/libreoffice/stable/${pkgver}/deb/LibreOffice_${pkgver}_Linux_x86-64_deb.tar.gz")
 source_arm64=("https://download.documentfoundation.org/libreoffice/stable/${pkgver}/deb/LibreOffice_${pkgver}_Linux_aarch64_deb.tar.gz")
 sha256sums_amd64=("f367c434aee8352e9742e192bedcdaef194ffcbcfeaf760c6300fb4fecbba73c")
 sha256sums_arm64=("9a73b06dba875f55a01397d31771ec845218ed83e313140c977eb44223ad2e66")
