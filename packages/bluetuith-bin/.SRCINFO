@@ -1,0 +1,15 @@
+pkgbase = bluetuith-bin
+	gives = bluetuith
+	pkgver = 0.2.5
+	pkgdesc = TUI bluetooth manager for Linux
+	arch = amd64
+	depends = bluez
+	depends = bluetooth
+	depends = obexftp
+	depends = bluez-tools
+	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: bluetuith-bin
+	source = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.5/bluetuith_0.2.5_Linux_x86_64.tar.gz
+	sha256sums = 844211fb057ea2c4e6efd0b01bc21b5ec41c5b2db6af57819d19f04d44624af7
+
+pkgname = bluetuith-bin
