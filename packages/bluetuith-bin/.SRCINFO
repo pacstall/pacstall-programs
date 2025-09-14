@@ -1,7 +1,7 @@
 pkgbase = bluetuith-bin
 	gives = bluetuith
 	pkgver = 0.2.5
-	pkgdesc = UI bluetooth manager for Linux
+	pkgdesc = TUI bluetooth manager for Linux
 	arch = amd64
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: bluetuith-bin
