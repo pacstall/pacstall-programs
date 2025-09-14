@@ -13934,7 +13934,7 @@ pkgname = telegram-bin
 ---
 pkgbase = tenacity-git
 	gives = tenacity
-	pkgver = 1.3.3
+	pkgver = 1.3.4
 	pkgdesc = FLOSS Audacity Fork. No telemetry, crash reports and other shenanigans like that!
 	arch = any
 	depends = libc6
@@ -13964,8 +13964,6 @@ pkgbase = tenacity-git
 	depends = libavcodec-dev
 	depends = libavformat-dev
 	depends = libavutil-dev
-	depends = libflac++10
-	depends = libflac12
 	depends = libportsmf-dev
 	depends = libwxbase3.2-1
 	depends = libwxgtk3.2-1
