@@ -47,6 +47,7 @@ ble.sh-git
 blender-bin
 bluegriffon-deb
 blueprint-compiler
+bluetuith-bin
 bottles
 bottom-deb
 bpytop-git
@@ -288,6 +289,7 @@ kakoune-auto-pairs-git
 kakoune-kakboard-git
 kakoune-lsp
 kakoune-powerline-git
+kakoune-tree-sitter
 kalendar-git
 kanata-bin
 kate-backport-deb
@@ -773,6 +775,7 @@ vega-strike-git
 ventoy-bin
 veracrypt-deb
 vesktop-deb
+vinegar
 vinegar-git
 viper4linux
 virtualbox-deb
@@ -814,6 +817,7 @@ whatsdesk-deb
 whatsie
 whatsie-git
 windscribe-beta-gui-deb
+wine-staging
 wine-staging-git
 winetricks-git
 wsysmon-bin
