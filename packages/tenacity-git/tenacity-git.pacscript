@@ -87,7 +87,7 @@ prepare() {
   cd tenacity
   git submodule init
   git config submodule.vcpkg.update none
-  git config submodule.lib-src/libnyquist.url "${srcdir}/tenacity-libnyquist"
+  git config submodule.lib-src/libnyquist.url "../tenacity-libnyquist"
   git -c protocol.file.allow=always submodule update
 
   cd images/icons
@@ -109,8 +109,7 @@ build() {
     -DwxWidgets_CONFIG_EXECUTABLE=/usr/bin/wx-config \
     -Wno-dev \
     ..
-  cmake --build .
-  make -j"${NCPU}" .
+  cmake --build . --parallel "${NCPU}"  
 }
 
 package() {
@@ -118,9 +117,13 @@ package() {
   make DESTDIR="${pkgdir}" install
   [[ -f "${pkgdir}/usr/tenacity" ]] && rm "${pkgdir}/usr/tenacity" # remove unused launch script
 
+  if [[ -f "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-audacity-project.xpm" ]]; then
   mv "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-audacity-project.xpm" \
-    "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-tenacity-project.xpm"
+     "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-tenacity-project.xpm"
+  fi
 
   chrpath --delete "${pkgdir}"/usr/lib/x86_64-linux-gnu/tenacity/*.so
   chrpath --delete "${pkgdir}"/usr/lib/x86_64-linux-gnu/tenacity/modules/*.so
+
+  ln -sf /usr/lib/x86_64-linux-gnu/tenacity/tenacity /usr/bin/tenacity
 }
