@@ -114,7 +114,7 @@ build() {
 
 package() {
   cd tenacity/build
-  cmake --install build --prefix /usr --destdir "${pkgdir}"
+  DESTDIR="${pkgdir}" cmake --install . --prefix /usr
   [[ -f "${pkgdir}/usr/tenacity" ]] && rm "${pkgdir}/usr/tenacity" # remove unused launch script
 
   if [[ -f "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-audacity-project.xpm" ]]; then
