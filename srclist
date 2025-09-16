@@ -163,7 +163,7 @@ pkgname = ananicy-cpp
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.15.6
+	pkgver = 3.16.0
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -186,9 +186,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.15.6/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.16.0/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = 5701f05d348967dbd35d9a7594495dd0f723ed921d13e5d3aa0d6cc29d897ea3
+	sha256sums = 8d447e2132cb6454191d901bd0b16b40f7c7e5d194ca1cad24d705f8cf330189
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
@@ -1022,6 +1022,22 @@ pkgbase = blueprint-compiler
 	sha256sums = 01feb8263fe7a450b0a9fed0fd54cf88947aaf00f86cc7da345f8b39a0e7bd30
 
 pkgname = blueprint-compiler
+---
+pkgbase = bluetuith-bin
+	gives = bluetuith
+	pkgver = 0.2.5
+	pkgdesc = TUI bluetooth manager for Linux
+	arch = amd64
+	depends = bluez
+	depends = bluetooth
+	depends = obexftp
+	depends = bluez-tools
+	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: bluetuith-bin
+	source = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.5/bluetuith_0.2.5_Linux_x86_64.tar.gz
+	sha256sums = 844211fb057ea2c4e6efd0b01bc21b5ec41c5b2db6af57819d19f04d44624af7
+
+pkgname = bluetuith-bin
 ---
 pkgbase = bottles
 	pkgver = 51.13
@@ -3252,7 +3268,7 @@ pkgname = figma-linux-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 141.0.3
+	pkgver = 142.0.1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3262,16 +3278,16 @@ pkgbase = firefox-bin
 	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/141.0.3/linux-x86_64/en-US/firefox-141.0.3.tar.xz
-	sha256sums_amd64 = e935dc3b74cf2cb1086e1e0b4a51d18e4d307e71ce6a20db64fe49d09cc78716
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/141.0.3/linux-aarch64/en-US/firefox-141.0.3.tar.xz
-	sha256sums_arm64 = 03ab7f03538b642693f91bc935f55d9eb6df089eac520a65e1e34dc4fdd7049a
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/142.0.1/linux-x86_64/en-US/firefox-142.0.1.tar.xz
+	sha256sums_amd64 = 8f47a714610a624ad536a652a70242aa894a37f65565fd3103d4366869743b91
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/142.0.1/linux-aarch64/en-US/firefox-142.0.1.tar.xz
+	sha256sums_arm64 = ee3c8aeb57740c4a20b97136876cd40e4b60870ab0068e78ab9de22f2a01399a
 
 pkgname = firefox-bin
 ---
 pkgbase = firefox-deb
 	gives = firefox
-	pkgver = 141.0.3
+	pkgver = 142.0.1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3279,16 +3295,16 @@ pkgbase = firefox-deb
 	replaces = firefox-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/141.0.3/linux-x86_64/en-US/firefox-141.0.3.deb
-	sha256sums_amd64 = 8759a5ac286998cc167624543ca6b06bc35a4e66682fd07612a1d50872647494
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/141.0.3/linux-aarch64/en-US/firefox-141.0.3.deb
-	sha256sums_arm64 = 20b8bfaab6866b2943578da30e8333a13477efec472ad30dd5fb0c762ff70106
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/142.0.1/linux-x86_64/en-US/firefox-142.0.1.deb
+	sha256sums_amd64 = add45e90dbc5c2fc03ddf74663ba767a6a4198f3015b8b18dd5ce00277da3afb
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/142.0.1/linux-aarch64/en-US/firefox-142.0.1.deb
+	sha256sums_arm64 = b61d8ee547110540996581b98ff175a6024664291f3b67b90240b0a57f31e2af
 
 pkgname = firefox-deb
 ---
 pkgbase = firefox-developer-edition-bin
 	gives = firefox-developer-edition
-	pkgver = 142.0b8
+	pkgver = 143.0b9
 	pkgdesc = The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector.
 	url = https://www.mozilla.org/en-US/firefox/developer/
 	arch = amd64
@@ -3302,16 +3318,16 @@ pkgbase = firefox-developer-edition-bin
 	repology = project: firefox
 	repology = visiblename: firefox-developer-edition
 	repology = status: devel
-	source_amd64 = https://download-installer.cdn.mozilla.net/pub/devedition/releases/142.0b8/linux-x86_64/en-US/firefox-142.0b8.tar.xz
+	source_amd64 = https://download-installer.cdn.mozilla.net/pub/devedition/releases/143.0b9/linux-x86_64/en-US/firefox-143.0b9.tar.xz
 	source_amd64 = firefox-developer-edition.desktop
 	source_amd64 = firefox-developer-edition.png::https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png
-	sha256sums_amd64 = 531d1c3d5be93c9c44bdeb45afe0034d18e5e7b653dd85949c574ea9b4dc7269
+	sha256sums_amd64 = ef116160db98534128eb3cf2c848d6e0d5f874da4ec7850837404cf4cc78aceb
 	sha256sums_amd64 = SKIP
 	sha256sums_amd64 = SKIP
-	source_arm64 = https://download-installer.cdn.mozilla.net/pub/devedition/releases/142.0b8/linux-aarch64/en-US/firefox-142.0b8.tar.xz
+	source_arm64 = https://download-installer.cdn.mozilla.net/pub/devedition/releases/143.0b9/linux-aarch64/en-US/firefox-143.0b9.tar.xz
 	source_arm64 = firefox-developer-edition.desktop
 	source_arm64 = firefox-developer-edition.png::https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png
-	sha256sums_arm64 = c674c557754d5c9405666d00635bc622707047a304f07c6b1ba8d0296481b904
+	sha256sums_arm64 = da954b044215a4f35e3466ee0f39c01f408afed8b42172f727a939db73c11e4c
 	sha256sums_arm64 = SKIP
 	sha256sums_arm64 = SKIP
 
@@ -3319,7 +3335,7 @@ pkgname = firefox-developer-edition-bin
 ---
 pkgbase = firefox-nightly-bin
 	gives = firefox-nightly
-	pkgver = 143.0a1
+	pkgver = 144.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3328,14 +3344,14 @@ pkgbase = firefox-nightly-bin
 	replaces = firefox-nightly-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-143.0a1.en-US.linux-x86_64.tar.xz
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-143.0a1.en-US.linux-aarch64.tar.xz
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-144.0a1.en-US.linux-x86_64.tar.xz
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-144.0a1.en-US.linux-aarch64.tar.xz
 
 pkgname = firefox-nightly-bin
 ---
 pkgbase = firefox-nightly-deb
 	gives = firefox-nightly
-	pkgver = 143.0a1
+	pkgver = 144.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3344,8 +3360,8 @@ pkgbase = firefox-nightly-deb
 	replaces = firefox-nightly-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-143.0a1.en-US.linux-x86_64.deb
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-143.0a1.en-US.linux-aarch64.deb
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-144.0a1.en-US.linux-x86_64.deb
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-144.0a1.en-US.linux-aarch64.deb
 
 pkgname = firefox-nightly-deb
 ---
@@ -4893,7 +4909,7 @@ pkgname = harmonoid-deb
 ---
 pkgbase = hayase-deb
 	gives = hayase
-	pkgver = 6.4.29
+	pkgver = 6.4.31
 	pkgdesc = Torrent streaming made simple. Watch anime torrents, real-time with no waiting for downloads
 	url = https://hayase.watch
 	arch = amd64
@@ -4901,8 +4917,8 @@ pkgbase = hayase-deb
 	license = BUSL-1.1
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: hayase
-	source = https://github.com/hayase-app/ui/releases/download/v6.4.29/linux-hayase-6.4.29-linux.deb
-	sha256sums = 9988d2bcf5f8fcf92c30b465301cb0efb22e917f4d3c3c821728c00f1e52cb1e
+	source = https://github.com/hayase-app/ui/releases/download/v6.4.31/linux-hayase-6.4.31-linux.deb
+	sha256sums = 7e53e35eb359d99afa7dc2e9a857b32fa3175cdc6cbfdd4c53c2a8745b06d2b0
 
 pkgname = hayase-deb
 ---
@@ -5007,7 +5023,7 @@ pkgname = highlight-pointer-bin
 ---
 pkgbase = honkers-launcher-bin
 	gives = honkers-launcher
-	pkgver = 1.10.2
+	pkgver = 1.11.0
 	pkgdesc = Launcher for a honkers game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -5028,9 +5044,9 @@ pkgbase = honkers-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: honkers-launcher
-	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.10.2/honkers-launcher
+	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.11.0/honkers-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/honkers-launcher/main/assets/images/icon.png
-	sha256sums = fad29685e319b9411725d5ac55b37420af509ec02924ad52de78f5715af87813
+	sha256sums = 0f4fad2a6200e79ce8ad48a0782a00e8135aa74e4e2623c917c94f92408600eb
 	sha256sums = SKIP
 
 pkgname = honkers-launcher-bin
@@ -7127,8 +7143,8 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.17.0-061700rc4
-	pkgver = 6.17~rc4
+	gives = linux-headers-6.17.0-061700rc6
+	pkgver = 6.17~rc6
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7136,14 +7152,14 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc4/amd64/linux-headers-6.17.0-061700rc4_6.17.0-061700rc4.202508312336_all.deb
-	sha256sums = 5447ccd0c1c61a6182375771193bcca3349129b78b1d0d27dd3a9fe98b94a59b
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc6/amd64/linux-headers-6.17.0-061700rc6_6.17.0-061700rc6.202509142238_all.deb
+	sha256sums = 6378261a4641cd688acc203fac919fb4f30146c18438447dd68bab771ae8c5de
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-6.17.0-061700rc4-generic
-	pkgver = 6.17~rc4
+	gives = linux-headers-6.17.0-061700rc6-generic
+	pkgver = 6.17~rc6
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7153,10 +7169,10 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc4/arm64/linux-headers-6.17.0-061700rc4-generic_6.17.0-061700rc4.202508312336_arm64.deb
-	sha256sums_arm64 = 34281cdd6fc857d0d9bdbc5dcc70332429270b19b86b3b7a08e356a23d861a1e
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc4/amd64/linux-headers-6.17.0-061700rc4-generic_6.17.0-061700rc4.202508312336_amd64.deb
-	sha256sums_amd64 = 0f4565402f628be6b27e7d1d49d98cb6f7e3aa000824828b918edeb8cb18fa2d
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc6/arm64/linux-headers-6.17.0-061700rc6-generic_6.17.0-061700rc6.202509142238_arm64.deb
+	sha256sums_arm64 = be61eeb3e5c0df95665ea023971a4e0765a4a9504fe7be9a69adede27c413575
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc6/amd64/linux-headers-6.17.0-061700rc6-generic_6.17.0-061700rc6.202509142238_amd64.deb
+	sha256sums_amd64 = 635bac3ad27d56526b64202a6937b4a65b78e2015f2dcc1787c877b54196d1a9
 
 pkgname = linux-headers-generic-deb
 ---
@@ -7179,8 +7195,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.16.5-061605-generic
-	pkgver = 6.16.5
+	gives = linux-headers-6.16.7-061607-generic
+	pkgver = 6.16.7
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7188,10 +7204,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.5/arm64/linux-headers-6.16.5-061605-generic_6.16.5-061605.202509041605_arm64.deb
-	sha256sums_arm64 = ac73fe25724b140e8812386d540ff96793749880f532f5e0a08d05546d4e4c12
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.5/amd64/linux-headers-6.16.5-061605-generic_6.16.5-061605.202509041605_amd64.deb
-	sha256sums_amd64 = 023c733780d9b9e2f366dd2045d87da8bacda5db8a64fad7ea26ead8c3595693
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.7/arm64/linux-headers-6.16.7-061607-generic_6.16.7-061607.202509111546_arm64.deb
+	sha256sums_arm64 = b7f38c74f645c46f1e903e7e9e12b070ce57118b37972d9ce5aac57c65a12108
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.7/amd64/linux-headers-6.16.7-061607-generic_6.16.7-061607.202509111546_amd64.deb
+	sha256sums_amd64 = 33c01f8cf1c9388d2f170b51da3d7025a0383795e47131f7e52cc4a7709ecec7
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -7226,15 +7242,15 @@ pkgbase = linux-headers-okpine-deb
 pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.16.5-061605
-	pkgver = 6.16.5
+	gives = linux-headers-6.16.7-061607
+	pkgver = 6.16.7
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.5/amd64/linux-headers-6.16.5-061605_6.16.5-061605.202509041605_all.deb
-	sha256sums = 95f8060d1c0a30bebf7f27d7d9e676dd5e67ceeb38dd719394874278b6af85d3
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.7/amd64/linux-headers-6.16.7-061607_6.16.7-061607.202509111546_all.deb
+	sha256sums = 33cdbfc31ca1abf0ff1fc1ab2c952bcc7877e4e7482aeecd7eab6c3f18e269d1
 
 pkgname = linux-headers-stable-deb
 ---
@@ -7257,8 +7273,8 @@ pkgbase = linux-image-okpine-deb
 pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.17.0-061700rc4-generic
-	pkgver = 6.17~rc4
+	gives = linux-image-unsigned-6.17.0-061700rc6-generic
+	pkgver = 6.17~rc6
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -7269,10 +7285,10 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc4/arm64/linux-image-unsigned-6.17.0-061700rc4-generic_6.17.0-061700rc4.202508312336_arm64.deb
-	sha256sums_arm64 = 64358e7380c421146c0eaa04d75a36add9b9574c522762bb63d5343569d5c59b
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc4/amd64/linux-image-unsigned-6.17.0-061700rc4-generic_6.17.0-061700rc4.202508312336_amd64.deb
-	sha256sums_amd64 = 7a15bcb34e0ea9832fb47a189fbf766ee4c9d7602ac404286aef8681993a85cb
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc6/arm64/linux-image-unsigned-6.17.0-061700rc6-generic_6.17.0-061700rc6.202509142238_arm64.deb
+	sha256sums_arm64 = dd002e64c60f091116cb9069e6d8e50a688d84ff2eaa67417c63675fcd191e2f
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc6/amd64/linux-image-unsigned-6.17.0-061700rc6-generic_6.17.0-061700rc6.202509142238_amd64.deb
+	sha256sums_amd64 = 152eac7f6d0d1c928fbf6678f715f518c1937bfa64a212fc1b3ab8b2a7d60725
 
 pkgname = linux-image-unsigned-deb
 ---
@@ -7296,8 +7312,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.16.5-061605-generic
-	pkgver = 6.16.5
+	gives = linux-image-unsigned-6.16.7-061607-generic
+	pkgver = 6.16.7
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -7306,10 +7322,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.5/arm64/linux-image-unsigned-6.16.5-061605-generic_6.16.5-061605.202509041605_arm64.deb
-	sha256sums_arm64 = e066415de151c49649407f54f6b3eae986e0eb00f632a4198cc609ce531f1ec7
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.5/amd64/linux-image-unsigned-6.16.5-061605-generic_6.16.5-061605.202509041605_amd64.deb
-	sha256sums_amd64 = ac5ac5bf844c54f58a729bb012760ab0865db19a9a8db164d99c827972f3d636
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.7/arm64/linux-image-unsigned-6.16.7-061607-generic_6.16.7-061607.202509111546_arm64.deb
+	sha256sums_arm64 = ce98f33ff194ad4b71b5ef32e37a61636b78e0d221b7e84a4a55e7452df1d762
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.7/amd64/linux-image-unsigned-6.16.7-061607-generic_6.16.7-061607.202509111546_amd64.deb
+	sha256sums_amd64 = 91bd3fefaf43b2b4d4a2c41554449e761d0535091f782a598db500c6356fdd69
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -7331,7 +7347,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel
-	pkgver = 6.17~rc4
+	pkgver = 6.17~rc6
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -7378,16 +7394,16 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.17.0-061700rc4-generic
-	pkgver = 6.17~rc4
+	gives = linux-modules-6.17.0-061700rc6-generic
+	pkgver = 6.17~rc6
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc4/arm64/linux-modules-6.17.0-061700rc4-generic_6.17.0-061700rc4.202508312336_arm64.deb
-	sha256sums_arm64 = 498c19f1c01530a66923e5eeec97b07c3c543d5283375f02908bdb0d0424a02c
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc4/amd64/linux-modules-6.17.0-061700rc4-generic_6.17.0-061700rc4.202508312336_amd64.deb
-	sha256sums_amd64 = 209acddc7c8a12066888be96e7aa6b09fbaaf2acaf4aec82d6e8a4c45c655889
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc6/arm64/linux-modules-6.17.0-061700rc6-generic_6.17.0-061700rc6.202509142238_arm64.deb
+	sha256sums_arm64 = c4342e2d06fbec0a6626aea5fe4ca727df685ac6bf09a21c1d0e52d9d1dda368
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.17-rc6/amd64/linux-modules-6.17.0-061700rc6-generic_6.17.0-061700rc6.202509142238_amd64.deb
+	sha256sums_amd64 = 76e7a0a5d0f7edf3464f6f26063b601fb70c0a3de934f41568f33d5654d81f45
 
 pkgname = linux-modules-deb
 ---
@@ -7409,16 +7425,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.16.5-061605-generic
-	pkgver = 6.16.5
+	gives = linux-modules-6.16.7-061607-generic
+	pkgver = 6.16.7
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.5/arm64/linux-modules-6.16.5-061605-generic_6.16.5-061605.202509041605_arm64.deb
-	sha256sums_arm64 = ba419b4669cb374d848b87731ac5040273b92f60083fe7f1a38aa3ad6f09d4a9
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.5/amd64/linux-modules-6.16.5-061605-generic_6.16.5-061605.202509041605_amd64.deb
-	sha256sums_amd64 = 7c387be9c7cf246a7cb546089307e92e825a8c205e2abf76038d51ca11899656
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.7/arm64/linux-modules-6.16.7-061607-generic_6.16.7-061607.202509111546_arm64.deb
+	sha256sums_arm64 = 64b0d7f7178b1560f05231800e230230b047e41483a456a087f211b4aa0dfb29
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.16.7/amd64/linux-modules-6.16.7-061607-generic_6.16.7-061607.202509111546_amd64.deb
+	sha256sums_amd64 = faf210f8a808eec923a0f8276840e2feadf73d1bede36daab5986e5452305599
 
 pkgname = linux-modules-stable-deb
 ---
@@ -13069,7 +13085,7 @@ pkgname = sleek-deb
 ---
 pkgbase = sleepy-launcher-bin
 	gives = sleepy-launcher
-	pkgver = 1.3.0
+	pkgver = 1.4.0
 	pkgdesc = Sleepy game launcher for Linux with telemetry disabling
 	arch = amd64
 	depends = git
@@ -13090,9 +13106,9 @@ pkgbase = sleepy-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: sleepy-launcher
-	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.3.0/sleepy-launcher
+	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.4.0/sleepy-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/sleepy-launcher/main/assets/images/icon.png
-	sha256sums = 361e9c6be7563f5ae6821d01448ac78559de817fc6d3089e88246805cb3ad6ca
+	sha256sums = 5d883fcfd70e0e76483d358c4eac1685c3b1139b75c17d41a9abfe2d221fe043
 	sha256sums = SKIP
 
 pkgname = sleepy-launcher-bin
@@ -14044,7 +14060,7 @@ pkgname = tgpt-bin
 ---
 pkgbase = the-honkers-railway-launcher-bin
 	gives = the-honkers-railway-launcher
-	pkgver = 1.10.0
+	pkgver = 1.11.1
 	pkgdesc = The Honkers Railway launcher for Linux with automatic patching and telemetry disabling
 	arch = amd64
 	depends = git
@@ -14065,9 +14081,9 @@ pkgbase = the-honkers-railway-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: the-honkers-railway-launcher
-	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.10.0/honkers-railway-launcher
+	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.11.1/honkers-railway-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/the-honkers-railway-launcher/main/assets/images/icon.png
-	sha256sums = cf510d352db44a4f2de7bd4d7492dd3f7c911b8cf4b74e701bf6f6b26c3db596
+	sha256sums = e87af898c455822bc59e6e8f27c8b88db0ea223e38bbe9ea960214b61c29de7e
 	sha256sums = SKIP
 
 pkgname = the-honkers-railway-launcher-bin
