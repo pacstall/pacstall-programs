@@ -9,7 +9,7 @@ makedepends=(
   "clang"
   "chrpath"
   "libgtk-3-dev"
-  "libasound2-dev" 
+  "libasound2-dev"
   "libjack-jackd2-dev"
   "build-essential"
   "libavcodec-dev"
