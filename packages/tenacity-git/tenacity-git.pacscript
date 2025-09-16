@@ -123,6 +123,6 @@ package() {
   fi
 
   if command -v chrpath &> /dev/null; then
-    find "${pkgdir}/usr/lib/x86_64-linux-gnu/tenacity" -name '*.so' -exec chrpath --delete {} \; 2>/dev/null
+    find "${pkgdir}/usr/lib/x86_64-linux-gnu/tenacity" -name '*.so' -exec chrpath --delete {} \; 2> /dev/null
   fi
 }
