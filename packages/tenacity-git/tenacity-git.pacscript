@@ -6,7 +6,7 @@ pkgver="1.3.4"
 arch=("any")
 pkgdesc="FLOSS Audacity Fork. No telemetry, crash reports and other shenanigans like that!"
 makedepends=(
-  "clang"
+  "gcc"
   "chrpath"
   "libgtk-3-dev"
   "libasound2-dev"
@@ -103,7 +103,7 @@ prepare() {
 
 build() {
   cd tenacity/build
-  CC=clang CXX=clang++ cmake \
+  CC=gcc CXX=g++ cmake \
     -DCMAKE_BUILD_TYPE=RelWithDebInfo \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DwxWidgets_CONFIG_EXECUTABLE=/usr/bin/wx-config \
