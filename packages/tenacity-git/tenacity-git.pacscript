@@ -109,7 +109,7 @@ build() {
     -DwxWidgets_CONFIG_EXECUTABLE=/usr/bin/wx-config \
     -Wno-dev \
     ..
-  cmake --build . --parallel "${NCPU}"  
+  cmake --build . --parallel "${NCPU}"
 }
 
 package() {
@@ -118,8 +118,8 @@ package() {
   [[ -f "${pkgdir}/usr/tenacity" ]] && rm "${pkgdir}/usr/tenacity" # remove unused launch script
 
   if [[ -f "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-audacity-project.xpm" ]]; then
-  mv "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-audacity-project.xpm" \
-     "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-tenacity-project.xpm"
+    mv "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-audacity-project.xpm" \
+      "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-tenacity-project.xpm"
   fi
 
   chrpath --delete "${pkgdir}"/usr/lib/x86_64-linux-gnu/tenacity/*.so
