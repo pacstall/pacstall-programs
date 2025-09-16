@@ -124,6 +124,4 @@ package() {
 
   chrpath --delete "${pkgdir}"/usr/lib/x86_64-linux-gnu/tenacity/*.so
   chrpath --delete "${pkgdir}"/usr/lib/x86_64-linux-gnu/tenacity/modules/*.so
-
-  ln -sf /usr/lib/x86_64-linux-gnu/tenacity/tenacity /usr/bin/tenacity
 }
