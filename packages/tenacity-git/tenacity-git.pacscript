@@ -6,6 +6,11 @@ pkgver="1.3.4"
 arch=("any")
 pkgdesc="FLOSS Audacity Fork. No telemetry, crash reports and other shenanigans like that!"
 makedepends=(
+  "clang"
+  "chrpath"
+  "libgtk-3-dev"
+  "libasound2-dev" 
+  "libjack-jackd2-dev"
   "build-essential"
   "libavcodec-dev"
   "libavformat-dev"
@@ -75,7 +80,7 @@ depends=(
 )
 
 optdepends=("ffmpeg: additional import/export capabilities")
-maintainer=("echometerain <echometer@disroot.org>" "xdavius <xdavius@github.com>")
+maintainer=("echometerain <echometer@disroot.org>" "xdavius <xdavius@github.com>" "aKqir24 <aKqir24@github.com>")
 external_connection=true
 
 prepare() {
