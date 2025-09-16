@@ -122,6 +122,7 @@ package() {
       "${pkgdir}/usr/share/pixmaps/gnome-mime-application-x-tenacity-project.xpm"
   fi
 
-  chrpath --delete "${pkgdir}"/usr/lib/x86_64-linux-gnu/tenacity/*.so
-  chrpath --delete "${pkgdir}"/usr/lib/x86_64-linux-gnu/tenacity/modules/*.so
+  if command -v chrpath &> /dev/null; then
+    find "${pkgdir}/usr/lib/x86_64-linux-gnu/tenacity" -name '*.so' -exec chrpath --delete {} \; 2>/dev/null
+  fi
 }
