@@ -29,7 +29,7 @@ build() {
 	cd "${gives}-${pkgver}"
 
 	meson setup build --prefix=/usr --buildtype=release
-	meson compile -C build
+	meson compile -C build -j"${NCPU}"
 }
 
 package() {
