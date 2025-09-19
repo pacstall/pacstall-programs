@@ -1,7 +1,7 @@
 pkgname="betterbird-bin"
 gives="betterbird"
-pkgver="128.11.0esr"
-_build=bb28
+pkgver="140.3.0esr"
+_build=bb11
 pkgdesc="Fine-tuned version of Mozilla Thunderbird, Thunderbird on steroids, if you will"
 maintainer=("tranquil <tranquiltr0@proton.me>")
 arch=("x86_64")
@@ -9,11 +9,11 @@ url='https://www.betterbird.eu/index.html'
 repology=("project: betterbird")
 depends=("libdbus-glib-1-2" "hunspell")
 source=(
-  "https://www.betterbird.eu/downloads/LinuxArchive/${gives}-${pkgver}-${_build}.en-US.linux-x86_64.tar.bz2"
+  "https://www.betterbird.eu/downloads/LinuxArchive/${gives}-${pkgver}-${_build}.en-US.linux-x86_64.tar.xz"
   "eu.betterbird.Betterbird.desktop"
 )
 sha256sums=(
-  "46ac8e4577f7f10e7ee8f0377a15eac644ac77b1e77a39cd05cbd2a338de45f1"
+  "4341c8602c51f57a8aa5112e3a7d0fa954672503940561403c34ff8c05eacda4"
   "bce809385dc48951ca6309776ed8fe5213ebbce301a790349172a799d8987151"
 )
 
