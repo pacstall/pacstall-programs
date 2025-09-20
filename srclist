@@ -262,7 +262,7 @@ pkgname = ani-cli-bin
 ---
 pkgbase = anydesk-bin
 	gives = anydesk
-	pkgver = 7.0.2
+	pkgver = 7.1.0
 	pkgdesc = Platform independent remote access to personal computers and other devices running the host application - Binary version
 	arch = amd64
 	depends = libc6
@@ -284,8 +284,8 @@ pkgbase = anydesk-bin
 	breaks = anydesk-deb
 	replaces = anydesk
 	repology = project: anydesk
-	source = @anydesk-bin~7.0.2::https://download.anydesk.com/linux/anydesk-7.0.2-amd64.tar.gz
-	sha256sums = a84e3dad5fd03d891bc80a690cc2ff9fa6ebce6880f77c38edb0cec22283b94a
+	source = @anydesk-bin~7.1.0::https://download.anydesk.com/linux/anydesk-7.1.0-amd64.tar.gz
+	sha256sums = 0a9966659ae59cc8e69e93afcc53224863279d23579d7894b657978b45f9da5a
 
 pkgname = anydesk-bin
 ---
