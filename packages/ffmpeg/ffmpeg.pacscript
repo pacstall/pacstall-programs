@@ -1,5 +1,5 @@
 pkgname="ffmpeg"
-pkgver="7.1.1"
+pkgver="8.0"
 arch=("amd64")
 url='https://ffmpeg.org'
 repology=("project: ${pkgname}")
@@ -46,7 +46,7 @@ makedepends=("autoconf"
   "libunistring-dev"
   "libxcb-xfixes0-dev")
 source=("https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n${pkgver}.tar.gz")
-sha256sums=("f117507dc501f2a6c11f9241d8d0c3213846cfad91764361af37befd6b6c523d")
+sha256sums=("dd4030dbfdc34d9ff255a116bdd1caade42500ac2981efa27f8b151cc54c7b9e")
 
 prepare() {
   cd "FFmpeg-n${pkgver}"

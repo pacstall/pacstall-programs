@@ -3143,7 +3143,7 @@ pkgbase = feroxbuster-bin
 pkgname = feroxbuster-bin
 ---
 pkgbase = ffmpeg
-	pkgver = 7.1.1
+	pkgver = 8.0
 	pkgdesc = Complete, cross-platform solution to record, convert and stream audio and video
 	url = https://ffmpeg.org
 	arch = amd64
@@ -3189,8 +3189,8 @@ pkgbase = ffmpeg
 	breaks = ffmpeg4.4
 	maintainer = Sarim <sarimw@proton.me>
 	repology = project: ffmpeg
-	source = https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n7.1.1.tar.gz
-	sha256sums = f117507dc501f2a6c11f9241d8d0c3213846cfad91764361af37befd6b6c523d
+	source = https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n8.0.tar.gz
+	sha256sums = dd4030dbfdc34d9ff255a116bdd1caade42500ac2981efa27f8b151cc54c7b9e
 
 pkgname = ffmpeg
 ---
