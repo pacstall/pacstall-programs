@@ -3642,26 +3642,6 @@ pkgbase = galaxybudsclient-bin
 
 pkgname = galaxybudsclient-bin
 ---
-<<<<<<< HEAD
-pkgbase = gearlever-git
-	gives = gearlever
-	pkgver = 3.4.2
-	pkgdesc = Manage AppImages with ease
-	url = https://mijorus.it/projects/gearlever
-	arch = any
-	depends = libadwaita-1-dev
-	depends = python3-xdg
-	makedepends = meson
-	makedepends = ninja-build
-	makedepends = python3
-	makedepends = pkg-config
-	makedepends = libgtk-4-dev
-	license = GPL-3.0
-	maintainer = aKqir24 <aKqir24@github.com>
-	source = https://github.com/mijorus/gearlever/archive/refs/tags/3.4.2.tar.gz
-
-pkgname = gearlever-git
-=======
 pkgbase = gamescope-git
 	gives = gamescope
 	pkgver = 3.16.14
@@ -3739,7 +3719,25 @@ pkgbase = gamescope-git
 	source = git+https://github.com/ValveSoftware/gamescope.git
 
 pkgname = gamescope-git
->>>>>>> b5a6530b (add: gamescope-git)
+---
+pkgbase = gearlever-git
+	gives = gearlever
+	pkgver = 3.4.2
+	pkgdesc = Manage AppImages with ease
+	url = https://mijorus.it/projects/gearlever
+	arch = any
+	depends = libadwaita-1-dev
+	depends = python3-xdg
+	makedepends = meson
+	makedepends = ninja-build
+	makedepends = python3
+	makedepends = pkg-config
+	makedepends = libgtk-4-dev
+	license = GPL-3.0
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/mijorus/gearlever/archive/refs/tags/3.4.2.tar.gz
+
+pkgname = gearlever-git
 ---
 pkgbase = geekbench4-bin
 	gives = geekbench4
