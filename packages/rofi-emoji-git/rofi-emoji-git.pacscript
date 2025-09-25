@@ -1,0 +1,37 @@
+pkgname="rofi-emoji-git"
+gives="rofi-emoji"
+pkgver="3.5.0"
+pkgdesc="Rofi plugin for selecting emojis"
+url='https://github.com/Mange/rofi-emoji'
+arch=('x86_64')
+license=("MIT")
+checkdepends=('check')
+depends=('libc6' 'libgcc-s1' 'rofi>=1.7.7')
+makedepends=('pkg-config' 'build-essential' 'rofi-dev'
+  'libglib2.0-dev' 'libcairo2-dev' 'libpango1.0-dev'
+  'autoconf' 'automake' 'libtool' 'rofi<=1.7.6')
+optdepends=("xsel: Clipboard interaction under X11"
+  "xclip: Clipboard interaction under X11"
+  "wl-clipboard: Clipboard interaction under Wayland")
+provides=("${pkgname}")
+conflicts=("${pkgname}" "${gives}")
+maintainer=("aKqir24 <aKqir24@github.com>")
+source=("https://github.com/Mange/${gives}.git")
+
+build() {
+  cd "${gives}"
+  autoreconf -i
+  ./configure --prefix=/usr
+  make -j"${NCPU}"
+}
+
+check() {
+  cd "${gives}"
+  make check
+}
+
+package() {
+  cd "${gives}"
+  make DESTDIR="${pkgdir}/" install
+  install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${gives}"
+}
