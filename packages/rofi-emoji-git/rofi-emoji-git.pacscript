@@ -10,7 +10,7 @@ depends=('libc6' 'libgcc-s1')
 makedepends=('pkg-config' 'build-essential' 'rofi-dev'
   'libglib2.0-dev' 'libcairo2-dev' 'libpango1.0-dev'
   'autoconf' 'automake' 'libtool')
-pacdeps=('rofi>=1.7.6')
+pacdeps=('rofi:pkgbase')
 optdepends=("xsel: Clipboard interaction under X11"
   "xclip: Clipboard interaction under X11"
   "wl-clipboard: Clipboard interaction under Wayland")
