@@ -6,10 +6,10 @@ url='https://github.com/Mange/rofi-emoji'
 arch=('x86_64')
 license=("MIT")
 checkdepends=('check')
-depends=('libc6' 'libgcc-s1' 'rofi>=1.7.7')
+depends=('libc6' 'libgcc-s1')
 makedepends=('pkg-config' 'build-essential' 'rofi-dev'
   'libglib2.0-dev' 'libcairo2-dev' 'libpango1.0-dev'
-  'autoconf' 'automake' 'libtool' 'rofi<=1.7.6')
+  'autoconf' 'automake' 'libtool' 'rofi>=1.7.6')
 optdepends=("xsel: Clipboard interaction under X11"
   "xclip: Clipboard interaction under X11"
   "wl-clipboard: Clipboard interaction under Wayland")
