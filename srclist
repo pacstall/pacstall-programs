@@ -3645,7 +3645,7 @@ pkgname = galaxybudsclient-bin
 ---
 pkgbase = gearlever-git
 	gives = gearlever
-	pkgver = 3.4.2
+	pkgver = 3.4.3
 	pkgdesc = Manage AppImages with ease
 	url = https://mijorus.it/projects/gearlever
 	arch = any
@@ -3658,7 +3658,7 @@ pkgbase = gearlever-git
 	makedepends = libgtk-4-dev
 	license = GPL-3.0
 	maintainer = aKqir24 <aKqir24@github.com>
-	source = https://github.com/mijorus/gearlever/archive/refs/tags/3.4.2.tar.gz
+	source = https://github.com/mijorus/gearlever.git
 
 pkgname = gearlever-git
 ---
