@@ -12471,7 +12471,6 @@ pkgbase = rofi-emoji-git
 	arch = x86_64
 	depends = libc6
 	depends = libgcc-s1
-	depends = rofi>=1.7.7
 	makedepends = pkg-config
 	makedepends = build-essential
 	makedepends = rofi-dev
@@ -12481,7 +12480,7 @@ pkgbase = rofi-emoji-git
 	makedepends = autoconf
 	makedepends = automake
 	makedepends = libtool
-	makedepends = rofi<=1.7.6
+	makedepends = rofi>=1.7.6
 	checkdepends = check
 	optdepends = xsel: Clipboard interaction under X11
 	optdepends = xclip: Clipboard interaction under X11
