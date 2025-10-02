@@ -18,8 +18,6 @@ prepare() {
   sed -i "s/7zz/7z/g" src/providers/AppImageProvider.py
   sed -i "s|get_appimage_offset|/usr/lib/gearlever/get_appimage_offset|g" src/providers/AppImageProvider.py
   find . -name "meson.build" -exec sed -i 's/\.path()/\.full_path()/g' {} +
-
-  meson setup build/ --buildtype=release --prefix=/usr
 }
 
 build() {
