@@ -10,6 +10,7 @@ source=("https://github.com/WhatsApp/${pkgname}/archive/refs/tags/v${pkgver}.tar
 sha256sums=('280721884157fa38ab959e87c0031910f067c3b8bf539497edd188def5edd035')
 makedepends=('openjdk-8-jdk-headless')
 depends=('openjdk-8-jre-headless')
+pacdeps=('sbt-deb')
 external_connection=true
 
 build() {
