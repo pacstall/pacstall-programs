@@ -32,6 +32,7 @@ pkgbase = zen-browser-bin
 	maintainer = D-Brox <davidfbg00@gmail.com>
 	maintainer = tranquil <tranquiltr0@proton.me>
 	repology = project: zen-browser
+	repology = repo: aur
 	depends_amd64 = libpangocairo-1.0-0
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
