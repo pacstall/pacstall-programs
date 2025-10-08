@@ -103,6 +103,7 @@ deskcut-deb
 digikam-app
 dino-git
 directx-headers-git
+direnv-bin
 discord
 discord-canary
 discord-canary-deb
@@ -177,6 +178,7 @@ font-downloader
 forticlient-deb
 fpc-laz-deb
 fpc-src-deb
+framework-system-bin
 freetube-deb
 freshfetch-git
 fsearch-deb
@@ -184,6 +186,7 @@ fsearch-git
 fselect-git
 fzf-bin
 galaxybudsclient-bin
+gearlever-git
 geekbench4-bin
 geekbench5-bin
 geekbench6-bin
@@ -272,6 +275,7 @@ i3status-rust
 icecat-deb
 imhex-app
 imwheel-exclude-patched-git
+input-leap-bin
 insomnia-deb
 insync-deb
 intel-undervolt
@@ -305,6 +309,7 @@ koodo-reader-deb
 krita-app
 kubeswitch-bin
 kvantum
+kvantum-theme-libadwaita-git
 kwin-krohnkite
 kxstudio-repos-deb
 lagrange
@@ -668,6 +673,7 @@ rustdesk-deb
 rustrover-bin
 sayonara
 sayonara-git
+sbt-deb
 schildichat-deb
 scrcpy
 sed

@@ -1,11 +1,11 @@
 pkgbase = chezmoi-deb
 	gives = chezmoi
-	pkgver = 2.63.1
+	pkgver = 2.65.2
 	pkgdesc = Manage your dotfiles across multiple diverse machines, securely
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: chezmoi
-	source = https://github.com/twpayne/chezmoi/releases/download/v2.63.1/chezmoi_2.63.1_linux_amd64.deb
-	sha256sums = 158e45e5c3338cefb0dd8f76b2ea871c9c297f45d55fedb542c11879922e5d36
+	source = https://github.com/twpayne/chezmoi/releases/download/v2.65.2/chezmoi_2.65.2_linux_amd64.deb
+	sha256sums = 2ca2b375a972896c90ac843713f203bdade94bb1a926b1375c0b611a2b0c1a88
 
 pkgname = chezmoi-deb
