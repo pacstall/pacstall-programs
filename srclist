@@ -6338,6 +6338,18 @@ pkgbase = kubeswitch-bin
 
 pkgname = kubeswitch-bin
 ---
+pkgbase = kvantum-theme-libadwaita-git
+	gives = kvantum-theme-libadwaita
+	pkgver = 0.0.1
+	pkgdesc = Libaidwaita theme for Kvantum
+	arch = any
+	depends = qt5-style-kvantum | qt6-style-kvantum
+	license = GPL-3.0
+	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
+	source = kvantum-theme-libadwaita-git~0.0.1::https://github.com/GabePoel/KvLibadwaita.git
+
+pkgname = kvantum-theme-libadwaita-git
+---
 pkgbase = kvantum
 	pkgver = 1.0.10
 	pkgdesc = SVG-based theme engine for Qt
