@@ -7992,15 +7992,15 @@ pkgname = mailspring-deb
 ---
 pkgbase = maitreya-deb
 	gives = maitreya8
-	pkgver = 8.1.1
+	pkgver = 8.2
 	pkgdesc = Maitreya is a free software for western and Vedic astrology (Jyotish)
 	arch = amd64
 	replaces = maitreya
 	replaces = maitreya8
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: maitreya
-	source = https://github.com/martin-pe/maitreya8/releases/download/v8.1.1/maitreya8_8.1.1_debian_bookworm_amd64.deb
-	sha256sums = 1e8f90c8c58e2a2a26f717335c29af8680f918eba04de12b2f0c08b2e9b8245b
+	source = https://github.com/martin-pe/maitreya8/releases/download/v8.2/maitreya8_8.2_ubuntu24a_amd64.deb
+	sha256sums = 58c95c52cbdb6812379e07de7d22d2dd88079c72e21a2be51a7d88a3b9149352
 
 pkgname = maitreya-deb
 ---
