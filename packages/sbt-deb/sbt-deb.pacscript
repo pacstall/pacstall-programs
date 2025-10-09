@@ -1,11 +1,11 @@
 pkgname='sbt-deb'
 gives='sbt'
-pkgver='1.11.6'
+pkgver='1.11.7'
 breaks=("${gives}" "${gives}-bin" "${gives}-git")
 source=("https://scala.jfrog.io/artifactory/debian/${gives}-${pkgver}.deb")
 repology=("project: ${gives}")
 pkgdesc='The interactive build tool for Scala and Java'
-sha256sums=('2ea080aad6457a514879f4a793c9b86bdbb9d6b7d30d56d98edf7bd7e2eac3c2')
+sha256sums=('7e5e80083206002abc2217bebb4bdb69d8a271715e4c77d859f959ad8e6cdf2b')
 arch=("all")
 license=('Apache-2.0')
 depends=('openjdk-8-jre-headless | openjdk-11-jre-headless | openjdk-17-jre-headless | openjdk-21-jre-headless')
