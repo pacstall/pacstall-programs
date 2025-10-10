@@ -56,4 +56,3 @@ package() {
   cd "${gives}-manifest/build"
   make DESTDIR="${pkgdir}" install
 }
-

@@ -34,6 +34,7 @@ pkgbase = mcpelauncher-linux-git
 	makedepends = qml-module-qtwebengine
 	optdepends = mcpelauncher-msa-ui-qt: Microsoft authentication for versions before 1.16.1X
 	license = GPL-3.0-only
+	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/minecraft-linux/mcpelauncher-manifest.git
 
 pkgname = mcpelauncher-linux-git
