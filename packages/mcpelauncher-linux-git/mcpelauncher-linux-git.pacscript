@@ -10,7 +10,6 @@ external_connection=true
 
 depends=('git')
 makedepends=(
-  'g++'
   'clang'
   'cmake'
   'make'
