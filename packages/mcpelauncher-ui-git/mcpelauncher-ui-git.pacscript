@@ -7,7 +7,7 @@ arch=('amd64')
 license=('GPL-3.0-only')
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
-
+pacdeps=('minecraft-linux-git')
 depends=('git')
 makedepends=(
   'libssl-dev'
