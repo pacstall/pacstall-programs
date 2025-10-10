@@ -1,16 +1,15 @@
-# Maintainer: Ash <xash at riseup d0t net>
-# Former Maintainer: Paul <paul@mrarm.io>
 pkgname=mcpelauncher-msa-git
-pkgver="v0.9.0.r1.gcfcebaa"
-pkgrel=1
-pkgdesc="Microsoft Account authentication daemon for mcpelauncher"
+gives='mcpelauncher-msa'
+pkgver="0.9.0.r1.gcfcebaa"
+pkgdesc="Microsoft Account authentication user interface (Qt) for the mcpelauncher-msa-daemon"
 arch=('x86_64' 'i686')
 url="https://github.com/minecraft-linux/msa-manifest"
 license=('MIT')
-makedepends=('git' 'cmake')
+makedepends=('git' 'cmake' 'ninja')
 depends=('curl' 'openssl')
 provides=('mcpelauncher-msa')
 conflicts=('mcpelauncher-msa')
+maintainer=("aKqir24 <aKqir24@github.com>")
 source=(
   'git+https://github.com/minecraft-linux/msa-manifest.git'
   'git+https://github.com/minecraft-linux/logger.git'
@@ -26,38 +25,36 @@ source=(
   'nlohmann_json_license.txt::https://raw.githubusercontent.com/nlohmann/json/develop/LICENSE.MIT'
 )
 
-pkgver() {
-  cd 'msa-manifest'
-  git describe --long --tags | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
-}
 prepare() {
-  cd msa-manifest
+  cd "$srcdir/msa-manifest"
   git submodule init
-  git config submodule.logger.url "${srcdir}/logger"
-  git config submodule.base64.url "${srcdir}/base64"
-  git config submodule.file-util.url "${srcdir}/file-util"
-  git config submodule.arg-parser.url "${srcdir}/arg-parser"
-  git config submodule.rapidxml.url "${srcdir}/rapidxml"
-  git config submodule.simple-ipc.url "${srcdir}/simple-ipc"
-  git config submodule.daemon-utils.url "${srcdir}/daemon-utils"
-  git config submodule.msa.url "${srcdir}/msa"
-  git config submodule.msa-daemon.url "${srcdir}/msa-daemon"
-  git config submodule.msa-daemon-client.url "${srcdir}/msa-daemon-client"
-  git submodule update logger base64 file-util arg-parser rapidxml simple-ipc daemon-utils msa msa-daemon msa-daemon-client
+  for submodule in {logger,base64,file-util,arg-parser,rapidxml,simple-ipc,daemon-utils,msa,msa-daemon,msa-daemon-client,msa-ui-gtk,msa-ui-qt};
+  do
+  git config submodule.$submodule.url "$srcdir/$submodule"
+  done
+  git -c protocol.file.allow=always submodule update
 }
+
 build() {
-  cd msa-manifest
-  mkdir -p build
-  cd build
-  cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=RelWithDebInfo -DMSA_UI_PATH_DEV=OFF ..
-  make
+  cd "$srcdir"
+
+  cmake -S msa-manifest -B build \
+  -G Ninja \
+  -DCMAKE_INSTALL_PREFIX=/usr \
+  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+  -DENABLE_MSA_DAEMON=OFF \
+  -DENABLE_MSA_QT_UI=ON \
+  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
+  -Wno-dev
+
+  cmake --build build --parallel "${NCPU}"
 }
+
 package() {
-  cd msa-manifest/build
-  make DESTDIR="${pkgdir}" install
+  cd "${srcdir}"
+  DESTDIR="${pkgdir}" cmake --install build
 
-  install -Dm644 ../msa-daemon/LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
-  install -Dm644 ../../nlohmann_json_license.txt "${pkgdir}/usr/share/licenses/${pkgname}/nlohmann_json_license.txt"
-  install -Dm644 ../rapidxml/license.txt "${pkgdir}/usr/share/licenses/${pkgname}/rapidxml_license.txt"
+  install -Dm644 "$srcdir/msa-manifest/msa-ui-qt/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -Dm644 "$srcdir/msa-manifest/msa-daemon-client/LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE.MIT"
+  install -Dm644 "$srcdir/nlohmann_json_license.txt" "I$pkgdir/usr/share/licenses/$pkgname/nlohmann_json_license.txt"
 }
-
