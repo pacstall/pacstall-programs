@@ -24,6 +24,7 @@ pkgbase = mcpelauncher-ui-git
 	makedepends = qml-module-qt-labs-settings
 	makedepends = qml-module-qt-labs-folderlistmodel
 	optdepends = mcpelauncher-msa-ui-qt: Microsoft authentication for versions before 1.16.1X
+	pacdeps = minecraft-linux-git
 	license = GPL-3.0-only
 	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/minecraft-linux/mcpelauncher-ui-manifest.git
