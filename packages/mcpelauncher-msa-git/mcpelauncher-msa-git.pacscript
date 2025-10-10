@@ -60,4 +60,3 @@ package() {
   install -Dm644 ../../nlohmann_json_license.txt "${pkgdir}/usr/share/licenses/${pkgname}/nlohmann_json_license.txt"
   install -Dm644 ../rapidxml/license.txt "${pkgdir}/usr/share/licenses/${pkgname}/rapidxml_license.txt"
 }
-
