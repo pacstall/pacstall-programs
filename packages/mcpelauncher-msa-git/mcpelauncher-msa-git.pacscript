@@ -28,9 +28,8 @@ source=(
 prepare() {
   cd "$srcdir/msa-manifest"
   git submodule init
-  for submodule in {logger,base64,file-util,arg-parser,rapidxml,simple-ipc,daemon-utils,msa,msa-daemon,msa-daemon-client,msa-ui-gtk,msa-ui-qt};
-  do
-  git config submodule.$submodule.url "$srcdir/$submodule"
+  for submodule in {logger,base64,file-util,arg-parser,rapidxml,simple-ipc,daemon-utils,msa,msa-daemon,msa-daemon-client,msa-ui-gtk,msa-ui-qt}; do
+    git config submodule.$submodule.url "$srcdir/$submodule"
   done
   git -c protocol.file.allow=always submodule update
 }
@@ -39,13 +38,13 @@ build() {
   cd "$srcdir"
 
   cmake -S msa-manifest -B build \
-  -G Ninja \
-  -DCMAKE_INSTALL_PREFIX=/usr \
-  -DCMAKE_BUILD_TYPE=RelWithDebInfo \
-  -DENABLE_MSA_DAEMON=OFF \
-  -DENABLE_MSA_QT_UI=ON \
-  -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
-  -Wno-dev
+    -G Ninja \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+    -DENABLE_MSA_DAEMON=OFF \
+    -DENABLE_MSA_QT_UI=ON \
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5 \
+    -Wno-dev
 
   cmake --build build --parallel "${NCPU}"
 }
