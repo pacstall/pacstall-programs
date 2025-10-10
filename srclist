@@ -4965,7 +4965,7 @@ pkgname = harmonoid-deb
 ---
 pkgbase = hayase-deb
 	gives = hayase
-	pkgver = 6.4.31
+	pkgver = 6.4.33
 	pkgdesc = Torrent streaming made simple. Watch anime torrents, real-time with no waiting for downloads
 	url = https://hayase.watch
 	arch = amd64
@@ -4973,8 +4973,8 @@ pkgbase = hayase-deb
 	license = BUSL-1.1
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: hayase
-	source = https://github.com/hayase-app/ui/releases/download/v6.4.31/linux-hayase-6.4.31-linux.deb
-	sha256sums = 7e53e35eb359d99afa7dc2e9a857b32fa3175cdc6cbfdd4c53c2a8745b06d2b0
+	source = https://github.com/hayase-app/ui/releases/download/v6.4.33/linux-hayase-6.4.33-linux.deb
+	sha256sums = 8de18dc281da6ac2181e8bcda357ab099ed5c5ebb56d0287244079faf2df6f2d
 
 pkgname = hayase-deb
 ---
