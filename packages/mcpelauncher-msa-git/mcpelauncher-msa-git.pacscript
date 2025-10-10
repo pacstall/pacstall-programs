@@ -1,7 +1,7 @@
 # Maintainer: Ash <xash at riseup d0t net>
 # Former Maintainer: Paul <paul@mrarm.io>
 pkgname=mcpelauncher-msa-git
-pkgver=v0.9.0.r1.gcfcebaa
+pkgver="v0.9.0.r1.gcfcebaa"
 pkgrel=1
 pkgdesc="Microsoft Account authentication daemon for mcpelauncher"
 arch=('x86_64' 'i686')
