@@ -8083,7 +8083,6 @@ pkgbase = mcpelauncher-linux-git
 	url = https://github.com/minecraft-linux/mcpelauncher-manifest
 	arch = amd64
 	depends = git
-	makedepends = g++
 	makedepends = clang
 	makedepends = cmake
 	makedepends = make
