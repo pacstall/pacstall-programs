@@ -5,6 +5,7 @@ pkgdesc="Minecraft: Pocket Edition launcher for Linux"
 url="https://github.com/minecraft-linux/mcpelauncher-manifest"
 arch=('amd64')
 license=('GPL-3.0-only')
+external_connection=true
 
 depends=('git')
 makedepends=(
