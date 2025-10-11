@@ -1,5 +1,5 @@
 pkgbase = linux-kernel
-	pkgver = 6.17~rc6
+	pkgver = 6.17~rc7
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
