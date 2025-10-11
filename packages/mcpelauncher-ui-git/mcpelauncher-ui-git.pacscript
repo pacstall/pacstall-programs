@@ -11,6 +11,7 @@ external_connection=true
 pacdeps=('mcpelauncher-linux-git')
 depends=('git')
 makedepends=(
+  'libxrandr-dev'
   'libssl-dev'
   'libcurl4-openssl-dev'
   'libuv1-dev'
