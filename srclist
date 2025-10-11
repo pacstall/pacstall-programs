@@ -4965,7 +4965,7 @@ pkgname = harmonoid-deb
 ---
 pkgbase = hayase-deb
 	gives = hayase
-	pkgver = 6.4.31
+	pkgver = 6.4.33
 	pkgdesc = Torrent streaming made simple. Watch anime torrents, real-time with no waiting for downloads
 	url = https://hayase.watch
 	arch = amd64
@@ -4973,8 +4973,8 @@ pkgbase = hayase-deb
 	license = BUSL-1.1
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: hayase
-	source = https://github.com/hayase-app/ui/releases/download/v6.4.31/linux-hayase-6.4.31-linux.deb
-	sha256sums = 7e53e35eb359d99afa7dc2e9a857b32fa3175cdc6cbfdd4c53c2a8745b06d2b0
+	source = https://github.com/hayase-app/ui/releases/download/v6.4.33/linux-hayase-6.4.33-linux.deb
+	sha256sums = 8de18dc281da6ac2181e8bcda357ab099ed5c5ebb56d0287244079faf2df6f2d
 
 pkgname = hayase-deb
 ---
@@ -8076,6 +8076,46 @@ pkgbase = mcontrolcenter-bin
 
 pkgname = mcontrolcenter-bin
 ---
+pkgbase = mcpelauncher-linux-git
+	gives = mcpelauncher
+	pkgver = 1.5.3
+	pkgdesc = Minecraft: Pocket Edition launcher for Linux
+	url = https://github.com/minecraft-linux/mcpelauncher-manifest
+	arch = amd64
+	depends = git
+	makedepends = clang
+	makedepends = cmake
+	makedepends = make
+	makedepends = ca-certificates
+	makedepends = libssl-dev
+	makedepends = libpng-dev
+	makedepends = libx11-dev
+	makedepends = libxi-dev
+	makedepends = libcurl4-openssl-dev
+	makedepends = libudev-dev
+	makedepends = libevdev-dev
+	makedepends = libegl1-mesa-dev
+	makedepends = libasound2
+	makedepends = qtbase5-dev
+	makedepends = qtwebengine5-dev
+	makedepends = qtdeclarative5-dev
+	makedepends = libqt5svg5-dev
+	makedepends = qml-module-qtquick2
+	makedepends = qml-module-qtquick-layouts
+	makedepends = qml-module-qtquick-controls
+	makedepends = qml-module-qtquick-controls2
+	makedepends = qml-module-qtquick-window2
+	makedepends = qml-module-qtquick-dialogs
+	makedepends = qml-module-qt-labs-settings
+	makedepends = qml-module-qt-labs-folderlistmodel
+	makedepends = qml-module-qtwebengine
+	optdepends = mcpelauncher-msa-ui-qt: Microsoft authentication for versions before 1.16.1X
+	license = GPL-3.0-only
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/minecraft-linux/mcpelauncher-manifest.git
+
+pkgname = mcpelauncher-linux-git
+---
 pkgbase = mdbook-linkcheck
 	pkgver = 0.7.7
 	pkgdesc = A backend for mdbook which will check your links for you
@@ -8484,12 +8524,11 @@ pkgbase = minecraft-launcher
 	depends = libgbm1
 	depends = libfontconfig1
 	depends = libgcc1
-	depends = libgdk-pixbuf2.0-0
+	depends = libgdk-pixbuf-2.0-0
 	depends = libglib2.0-0
 	depends = libgtk-3-0
 	depends = libnspr4
 	depends = libnss3
-	depends = libpango1.0-0
 	depends = libpango-1.0-0
 	depends = libpangocairo-1.0-0
 	depends = libstdc++6
@@ -11456,7 +11495,7 @@ pkgname = protonmail-bridge-deb
 ---
 pkgbase = protonplus
 	gives = protonplus
-	pkgver = 0.5.10
+	pkgver = 0.5.13
 	pkgdesc = A modern compatibility tools manager
 	url = https://github.com/Vysp3r/ProtonPlus
 	arch = x86_64
@@ -11480,8 +11519,8 @@ pkgbase = protonplus
 	incompatible = ubuntu:jammy
 	license = GPL-3.0-or-later
 	maintainer = Vysp3r <dev@vysp3r.com>
-	source = protonplus-0.5.10.tar.gz::https://github.com/Vysp3r/ProtonPlus/archive/refs/tags/v0.5.10.tar.gz
-	sha256sums = 21e06b5956bb86287a160b2c065a869124773601e7757937b56d0e5d8fcabffc
+	source = protonplus-0.5.13.tar.gz::https://github.com/Vysp3r/ProtonPlus/archive/refs/tags/v0.5.13.tar.gz
+	sha256sums = 6ff702f06a655696c5e5aecc782a1dd7c7ec248af4db394b1077564cb92a1691
 
 pkgname = protonplus
 ---
@@ -16744,7 +16783,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.16.3b
+	pkgver = 1.16.4b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -16781,8 +16820,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.16.3b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 1fe8d1052faa4d01bf4685aaaddbf691946897a0abf69d1490e9021303a7ce23
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.16.4b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 1fe3081479c73327c70a4b74c44781b42c796be9214bf2a5831fad5e6792c41b
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -16792,8 +16831,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.16.3b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = 28c117a9447657f8e717235029c2ca9fb8f230e8379448037736518259c10d16
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.16.4b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 59a479bb2b2f37e08a14990cd91074ec89d5346626d4fddb4793b1d2b430eacc
 
 pkgname = zen-browser-bin
 ---
