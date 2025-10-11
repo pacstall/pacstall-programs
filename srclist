@@ -8076,6 +8076,46 @@ pkgbase = mcontrolcenter-bin
 
 pkgname = mcontrolcenter-bin
 ---
+pkgbase = mcpelauncher-linux-git
+	gives = mcpelauncher
+	pkgver = 1.5.3
+	pkgdesc = Minecraft: Pocket Edition launcher for Linux
+	url = https://github.com/minecraft-linux/mcpelauncher-manifest
+	arch = amd64
+	depends = git
+	makedepends = clang
+	makedepends = cmake
+	makedepends = make
+	makedepends = ca-certificates
+	makedepends = libssl-dev
+	makedepends = libpng-dev
+	makedepends = libx11-dev
+	makedepends = libxi-dev
+	makedepends = libcurl4-openssl-dev
+	makedepends = libudev-dev
+	makedepends = libevdev-dev
+	makedepends = libegl1-mesa-dev
+	makedepends = libasound2
+	makedepends = qtbase5-dev
+	makedepends = qtwebengine5-dev
+	makedepends = qtdeclarative5-dev
+	makedepends = libqt5svg5-dev
+	makedepends = qml-module-qtquick2
+	makedepends = qml-module-qtquick-layouts
+	makedepends = qml-module-qtquick-controls
+	makedepends = qml-module-qtquick-controls2
+	makedepends = qml-module-qtquick-window2
+	makedepends = qml-module-qtquick-dialogs
+	makedepends = qml-module-qt-labs-settings
+	makedepends = qml-module-qt-labs-folderlistmodel
+	makedepends = qml-module-qtwebengine
+	optdepends = mcpelauncher-msa-ui-qt: Microsoft authentication for versions before 1.16.1X
+	license = GPL-3.0-only
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/minecraft-linux/mcpelauncher-manifest.git
+
+pkgname = mcpelauncher-linux-git
+---
 pkgbase = mdbook-linkcheck
 	pkgver = 0.7.7
 	pkgdesc = A backend for mdbook which will check your links for you
