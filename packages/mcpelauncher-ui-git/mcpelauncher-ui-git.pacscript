@@ -8,7 +8,7 @@ license=('GPL-3.0')
 maintainer=("aKqir24 <aKqir24@github.com>")
 conflicts=("${gives}-qt")
 external_connection=true
-pacdeps=('minecraft-linux-git')
+pacdeps=('mcpelauncher-linux-git')
 depends=('git')
 makedepends=(
   'libssl-dev'
