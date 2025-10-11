@@ -8,14 +8,14 @@ arch=('all')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 source=("https://github.com/WhatsApp/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=('280721884157fa38ab959e87c0031910f067c3b8bf539497edd188def5edd035')
-makedepends=('openjdk-8-jdk-headless')
-depends=('openjdk-8-jre-headless')
+makedepends=('openjdk-8-jdk-headless | openjdk-11-jdk-headless | openjdk-17-jdk-headless')
+depends=('openjdk-8-jre-headless | openjdk-11-jre-headless | openjdk-17-jre-headless')
 pacdeps=('sbt-deb') # This is in reality only a makedepend, but to my knowledge Pacstall does not support "make-pac-deps"
 external_connection=true
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}/${pkgname}"
-  sbt assembly --java-home "/usr/lib/jvm/java-8-openjdk-${CARCH}"
+  sbt assembly --java-home "$(find /usr/lib/jvm -regextype 'posix-extended' -regex "/usr/lib/jvm/java-(8|11|17)-openjdk-${CARCH}" | head -1)"
 }
 
 package() {
