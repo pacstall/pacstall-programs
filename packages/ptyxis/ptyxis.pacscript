@@ -1,5 +1,5 @@
 pkgname="ptyxis"
-pkgver="47.7"
+pkgver="48.4"
 pkgdesc='A terminal for a container-oriented desktop'
 arch=('any')
 url='https://gitlab.gnome.org/chergert/ptyxis'

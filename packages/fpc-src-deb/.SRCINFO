@@ -5,7 +5,7 @@ pkgbase = fpc-src-deb
 	arch = amd64
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: fpc
-	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.4/fpc-src_3.2.2-210709_amd64.deb
+	source = https://cytranet-dal.dl.sourceforge.net/project/lazarus/Lazarus%20Linux%20amd64%20DEB/Lazarus%204.0/fpc-src_3.2.2-210709_amd64.deb
 	sha256sums = 8c9e145d8056754a9ca39ce3e52e982b8e4816124984c5f542f2a874e721ad53
 
 pkgname = fpc-src-deb

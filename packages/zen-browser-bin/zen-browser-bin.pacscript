@@ -1,21 +1,21 @@
 pkgname="zen-browser-bin"
 gives="zen-browser"
-pkgver="1.12.10b"
+pkgver="1.16.4b"
 pkgdesc="Experience tranquillity while browsing the web without people tracking you!"
-url="https://zen-browser.app/"
+url='https://zen-browser.app/'
 license=("MPL-2.0")
-repology=("project: zen-browser")
+repology=("project: zen-browser" "repo: aur")
 arch=("amd64" "arm64")
-maintainer=("D-Brox <davidfbg00@gmail.com>")
+maintainer=("D-Brox <davidfbg00@gmail.com>" "tranquil <tranquiltr0@proton.me>")
 depends=("libasound2" "libatk1.0-0" "libc6" "libcairo-gobject2" "libcairo2" "libdbus-1-3" "libfontconfig1" "libfreetype6" "libgcc-s1" "libgdk-pixbuf-2.0-0" "libglib2.0-0" "libgtk-3-0" "libpango-1.0-0" "libstdc++6" "libx11-6" "libx11-xcb1" "libxcb-shm0" "libxcb1" "libxcomposite1" "libxdamage1" "libxext6" "libxfixes3" "libxrandr2")
 depends_amd64=("libpangocairo-1.0-0" "libxcursor1" "libxi6" "libxrender1")
 depends_arm64=("libevent-2.1-7" "libffi8" "libnspr4" "libnss3" "libvpx9" "zlib1g" "fontconfig" "procps" "debianutils")
 
 source_amd64=("https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-x86_64.tar.xz")
-sha256sums_amd64=('b3513f9121628667ed337051c0373186d2cb1e6c6f50d56a716e67c2abca48f2')
+sha256sums_amd64=('1fe3081479c73327c70a4b74c44781b42c796be9214bf2a5831fad5e6792c41b')
 
 source_arm64=("https://github.com/zen-browser/desktop/releases/download/${pkgver}/zen.linux-aarch64.tar.xz")
-sha256sums_arm64=('9800d75d116e06654a242c3fab50d1b9dea5003219ac0a3fa4f48444bb0c95a4')
+sha256sums_arm64=('59a479bb2b2f37e08a14990cd91074ec89d5346626d4fddb4793b1d2b430eacc')
 
 package() {
   cd "${srcdir}"
@@ -69,12 +69,4 @@ exec /usr/lib/zen-browser/zen-bin "$@"' | tee "${pkgdir}/usr/bin/zen-browser" > 
     ln -s "/usr/lib/zen-browser/browser/chrome/icons/default/default${i/x*/}.png" \
       "${pkgdir}/usr/share/icons/hicolor/${i}/apps/zen-browser.png"
   done
-
-  # Policies
-  mkdir -p "${pkgdir}/usr/lib/zen-browser/distribution"
-  echo '{
-    "policies": {
-        "DisableAppUpdate": true
-    }
-}' | tee "${pkgdir}/usr/lib/zen-browser/distribution/policies.json" > /dev/null
 }

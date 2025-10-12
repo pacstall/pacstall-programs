@@ -1,0 +1,11 @@
+pkgbase = fblog-bin
+	pkgver = 4.14.0
+	pkgdesc = Small command-line JSON Log viewer
+	arch = amd64
+	conflicts = fblog-deb
+	license = WTFPL
+	maintainer = Sarim <sarimbinwaseem@protonmaill.com>
+	source = https://github.com/brocode/fblog/releases/download/v4.14.0/fblog
+	sha256sums = 0fb91ef3639130547bca63c044fcfe467ac1aba828f1f1f8e41a8c2a556ecb38
+
+pkgname = fblog-bin

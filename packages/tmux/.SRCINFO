@@ -1,5 +1,5 @@
 pkgbase = tmux
-	pkgver = 3.3
+	pkgver = 3.5
 	pkgdesc = A terminal multiplexer
 	arch = any
 	makedepends = gcc
@@ -8,6 +8,7 @@ pkgbase = tmux
 	makedepends = bison
 	makedepends = libncurses-dev
 	makedepends = libevent-dev
+	makedepends = libutempter-dev
 	optdepends = libutempter-dev: Record user sessions to utmp and wtmp files
 	breaks = tmux-git
 	breaks = tmux-bin
@@ -15,7 +16,7 @@ pkgbase = tmux
 	breaks = tmux-app
 	replaces = tmux
 	maintainer = Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>
-	source = @tmux~3.3::https://github.com/tmux/tmux/releases/download/3.3/tmux-3.3.tar.gz
-	sha256sums = b2382ac391f6a1c5b93293016cdc9488337d9a04b9d611ae05eac164740351dc
+	source = @tmux~3.5::https://github.com/tmux/tmux/releases/download/3.5/tmux-3.5.tar.gz
+	sha256sums = 2fe01942e7e7d93f524a22f2c883822c06bc258a4d61dba4b407353d7081950f
 
 pkgname = tmux

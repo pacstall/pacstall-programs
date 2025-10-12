@@ -1,10 +1,10 @@
 pkgbase = smplayer-deb
 	gives = smplayer
-	pkgver = 23.6.0
+	pkgver = 25.6.0
 	pkgdesc = Complete front-end for MPlayer/MPV
 	arch = amd64
 	repology = project: smplayer
-	source = https://github.com/smplayer-dev/smplayer/releases/download/v23.6.0/smplayer_23.6.0-1.debian-buster_amd64.deb
-	sha256sums = 685030e2e3ee9ad5d95dc266b90c402506b9fe5b193ff05411955ed1db8bedbb
+	source = https://github.com/smplayer-dev/smplayer/releases/download/v25.6.0/smplayer_25.6.0-1.debian-buster_amd64.deb
+	sha256sums = 83f743a3ff42d1782e245b834adb2afc3c2e0ace77cf3c7d88f0095bdb2ad40d
 
 pkgname = smplayer-deb

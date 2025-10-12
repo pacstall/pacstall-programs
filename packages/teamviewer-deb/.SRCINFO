@@ -1,6 +1,6 @@
 pkgbase = teamviewer-deb
 	gives = teamviewer
-	pkgver = 15.53.6
+	pkgver = 15.66.6
 	pkgdesc = Application for remote desktop sharing and online meetings
 	arch = amd64
 	arch = arm64
@@ -15,12 +15,12 @@ pkgbase = teamviewer-deb
 	breaks = teamviewer-app
 	breaks = teamviewer-deb
 	replaces = teamviewer
-	license = custom
+	license = custom:custom
 	maintainer = heyzsh <haidarzsh@gmail.com>
 	repology = project: teamviewer
 	source_amd64 = https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
-	sha256sums_amd64 = 9955eb3241b2684cae7845ae93102ffb41a8e176b52100a3973eb047667ceae3
+	sha256sums_amd64 = c900f68851451e547abd7ff9bc4b41aa620eb465dae1e1db13bbfb31d5e005db
 	source_arm64 = https://download.teamviewer.com/download/linux/teamviewer_arm64.deb
-	sha256sums_arm64 = dd429662e8c72590d819fe73a27bcb99fc98348d8db38d20c595b26648430efd
+	sha256sums_arm64 = 5aa0b8ff97a0ab7a4781be2ff043debc90c33666ac86e42bf95050b852ddafb4
 
 pkgname = teamviewer-deb

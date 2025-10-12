@@ -1,10 +1,10 @@
 pkgname='coreutils-single'
 _pkgname='coreutils'
 arch=("any")
-pkgver='9.4'
+pkgver='9.7'
 pkgdesc='GNU Core Utilities (multicall binary)'
 source=("https://ftp.gnu.org/gnu/${_pkgname}/${_pkgname}-${pkgver}.tar.xz")
-sha256sums=('ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52')
+sha256sums=('e8bb26ad0293f9b5a1fc43fb42ba970e312c66ce92c1b0b16713d7500db251bf')
 makedepends=(
   'bison'
   'gettext'
@@ -17,7 +17,6 @@ makedepends=(
   'libssl-dev'
   'texinfo'
 )
-maintainer=()
 repology=("project: ${_pkgname}")
 
 build() {

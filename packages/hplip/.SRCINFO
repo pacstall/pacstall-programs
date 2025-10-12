@@ -1,7 +1,7 @@
 pkgbase = hplip
 	pkgver = 3.24.4
 	pkgdesc = Drivers for HP DeskJet, OfficeJet, Photosmart, Business Inkjet and some LaserJet
-	url = https://hplipopensource.com
+	url = https://developers.hp.com/hp-linux-imaging-and-printing
 	arch = amd64
 	depends = python3-dbus
 	depends = python3-distro

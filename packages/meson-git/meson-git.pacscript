@@ -3,7 +3,7 @@ gives="meson"
 pkgver="1.5"
 pkgdesc="SCons-like build system that use python as a front-end language and Ninja as a building backend with debian-meson forked from arch-meson"
 arch=(any)
-url='http://mesonbuild.com/'
+url='https://mesonbuild.com/'
 depends=("python3" "ninja-build")
 makedepends=(
   "git"

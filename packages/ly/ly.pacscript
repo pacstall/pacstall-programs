@@ -1,10 +1,10 @@
 pkgname="ly"
 repology=("project: ${pkgname}")
 arch=('any')
-pkgver="1.1.0"
-url='https://codeberg.org/AnErrupTion/ly'
-source=("${pkgname}::https://codeberg.org/AnErrupTion/ly/archive/v${pkgver}.tar.gz")
-sha256sums=('SKIP')
+pkgver="1.1.2"
+url='https://codeberg.org/fairyglade/ly'
+source=("${pkgname}::https://codeberg.org/fairyglade/ly/archive/v${pkgver}.tar.gz")
+sha256sums=("8f491d09045bb680680b553556f9db7af89c6644a257352839f98c4e98028fd0")
 depends=("systemd")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")

@@ -1,16 +1,17 @@
 pkgbase = electrum-git
 	gives = electrum
-	pkgver = 4.4.5
+	pkgver = 4.6.2
 	pkgdesc = FOSS Bitcoin wallet written in Python - Git version
 	arch = all
 	depends = python3-pyqt5
-	depends = python3
-	depends = libsecp256k1-0
 	depends = python3-cryptography
+	makedepends = libsecp256k1-dev
+	makedepends = python3
 	makedepends = python3-setuptools
 	breaks = electrum-bin
 	breaks = electrum
 	breaks = electrum-app
+	maintainer = amadv <aaronmadved@gmail.com>
 	source = https://github.com/spesmilo/electrum.git
 
 pkgname = electrum-git

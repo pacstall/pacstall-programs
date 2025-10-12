@@ -1,6 +1,6 @@
 pkgbase = onnxruntime-bin
 	gives = onnxruntime
-	pkgver = 1.17.1
+	pkgver = 1.22.0
 	pkgdesc = Cross-platform inference and training machine-learning accelerator
 	arch = amd64
 	replaces = onnxruntime
@@ -10,7 +10,7 @@ pkgbase = onnxruntime-bin
 	replaces = onnxruntime-gpu-bin
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: onnxruntime
-	source = @onnxruntime-bin~1.17.1::https://github.com/microsoft/onnxruntime/releases/download/v1.17.1/onnxruntime-linux-x64-1.17.1.tgz
-	sha256sums = 89b153af88746665909c758a06797175ae366280cbf25502c41eb5955f9a555e
+	source = @onnxruntime-bin~1.22.0::https://github.com/microsoft/onnxruntime/releases/download/v1.22.0/onnxruntime-linux-x64-1.22.0.tgz
+	sha256sums = 8344d55f93d5bc5021ce342db50f62079daf39aaafb5d311a451846228be49b3
 
 pkgname = onnxruntime-bin

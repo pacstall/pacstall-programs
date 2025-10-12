@@ -1,27 +1,15 @@
 pkgname="floorp-bin"
 gives="floorp"
-pkgver="11.27.0"
+pkgver="12.0.16"
 repology=("project: ${gives}")
-sha256sums_amd64=("7bceaf11bf76bde39fa60f5566ff7296fc23a6f83fc5d621ba32f973559369de")
-sha256sums_arm64=("851cd74cd8f947073012a5b9de1e0fb0525f6d64452fb5fbb4b11b54ec926e05")
-source_amd64=("${gives}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-x86_64.tar.bz2")
-source_arm64=("${gives}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/${gives}-${pkgver}.linux-aarch64.tar.bz2")
+sha256sums_amd64=("6e5493d8f692bbb17cb8610167b391433ca038b4cb0491db014373a08cc52e95")
+source_amd64=("${gives}::https://github.com/Floorp-Projects/Floorp/releases/download/v${pkgver}/floorp-linux-amd64.tar.xz")
 url='https://floorp.app/'
 pkgdesc="Firefox-based Browser build for keeping the Open, Private and Sustainable Web alive"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-arch=('amd64' 'arm64')
+arch=('amd64')
 
 package() {
-  if [[ ${CARCH} == "arm64" ]]; then
-    fancy_message warn "Floorp is not running properly on ${BBlue}arm64${NC}. It should only be installed for development."
-    if [[ ! -f "${METADIR}/${pkgname}-override" ]]; then
-      if ask "[${BYellow}*${NC}] ${BOLD}WARNING${NC}: Cancel installation?" Y; then
-        exit
-      fi
-    fi
-    mkdir -p "${pkgdir}/${METADIR}"
-    touch "${pkgdir}/${METADIR}/${pkgname}-override"
-  fi
   mkdir -p "${pkgdir}/usr/lib/floorp"
   cp -r "${gives}"/* "${pkgdir}/usr/lib/floorp"
   chmod +x "${pkgdir}/usr/lib/floorp/floorp"
