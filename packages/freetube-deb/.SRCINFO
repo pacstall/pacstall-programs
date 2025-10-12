@@ -5,7 +5,7 @@ pkgbase = freetube-deb
 	arch = amd64
 	maintainer = Archisman Panigrahi <apandada1ATgmailDotcom>
 	repology = project: freetube
-	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.9-beta/freetube_0.23.9_amd64.deb
+	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.9-beta/freetube_0.23.9_beta_amd64.deb
 	sha256sums = bb18ee3cfadcddf71ee050bc9162f8ad71152754d8dafcf873e042f170929d94
 
 pkgname = freetube-deb
