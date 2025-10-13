@@ -12,6 +12,7 @@ pacdeps=('mcpelauncher-linux-git')
 depends=('git')
 makedepends=(
   'libxcursor1'
+  'libxcursor-dev'
   'libxrandr-dev'
   'libxinerama-dev'
   'libxext-dev'
