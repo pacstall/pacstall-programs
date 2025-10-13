@@ -1137,7 +1137,7 @@ pkgname = bpytop-git
 ---
 pkgbase = brave-browser-beta-deb
 	gives = brave-browser-beta
-	pkgver = 1.83.89
+	pkgver = 1.84.119
 	pkgdesc = Testing version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1148,8 +1148,8 @@ pkgbase = brave-browser-beta-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-beta-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.83.89/brave-browser-beta_1.83.89_amd64.deb
-	sha256sums = 57d4322c5f36bd058b65fc2d8a4d723a256a25abf98a4bf8af79349e6b0c4a4b
+	source = https://github.com/brave/brave-browser/releases/download/v1.84.119/brave-browser-beta_1.84.119_amd64.deb
+	sha256sums = 4dc596d5e0e3474d734328d424f8faef65226442e029983e150f0166740de8be
 
 pkgname = brave-browser-beta-deb
 ---
