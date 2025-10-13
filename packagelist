@@ -393,7 +393,7 @@ makedeb-deb
 mangohud
 marktext-deb
 mcontrolcenter-bin
-mcpelauncher-msa-git
+mcpelauncher-linux-git
 mdbook
 mdbook-linkcheck
 megabasterd-bin
