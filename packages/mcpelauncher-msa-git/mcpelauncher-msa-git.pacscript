@@ -1,5 +1,5 @@
 pkgname=mcpelauncher-msa-git
-gives='mcpelauncher-msa'
+gives='msa-manifest'
 pkgver="0.9.0.r1.gcfcebaa"
 pkgdesc="Microsoft Account authentication user interface (Qt) for the mcpelauncher-msa-daemon"
 arch=('x86_64' 'i686')
@@ -11,32 +11,18 @@ provides=('mcpelauncher-msa')
 conflicts=('mcpelauncher-msa')
 maintainer=("aKqir24 <aKqir24@github.com>")
 source=(
-  'git+https://github.com/minecraft-linux/msa-manifest.git'
-  'git+https://github.com/minecraft-linux/logger.git'
-  'git+https://github.com/minecraft-linux/base64.git'
-  'git+https://github.com/minecraft-linux/file-util.git'
-  'git+https://github.com/minecraft-linux/arg-parser.git'
-  'git+https://github.com/minecraft-linux/rapidxml.git'
-  'git+https://github.com/MCMrARM/simple-ipc.git'
-  'git+https://github.com/minecraft-linux/daemon-utils.git'
-  'git+https://github.com/minecraft-linux/msa.git'
-  'git+https://github.com/minecraft-linux/msa-daemon.git'
-  'git+https://github.com/minecraft-linux/msa-daemon-client.git'
-  'nlohmann_json_license.txt::https://raw.githubusercontent.com/nlohmann/json/develop/LICENSE.MIT'
+  "https://github.com/minecraft-linux/${gives}.git"
+  "https://raw.githubusercontent.com/nlohmann/json/develop/LICENSE.MIT"
 )
-
+external_connection=true
 prepare() {
-  cd "$srcdir/msa-manifest"
-  git submodule init
-  for submodule in {logger,base64,file-util,arg-parser,rapidxml,simple-ipc,daemon-utils,msa,msa-daemon,msa-daemon-client,msa-ui-gtk,msa-ui-qt}; do
-    git config submodule.$submodule.url "$srcdir/$submodule"
-  done
-  git -c protocol.file.allow=always submodule update
+  cd "${gives}"
+  git submodule update --init --recursive
+  mkdir -p build
 }
 
 build() {
-  cd "$srcdir"
-
+  cd "${gives}"
   cmake -S msa-manifest -B build \
     -G Ninja \
     -DCMAKE_INSTALL_PREFIX=/usr \
