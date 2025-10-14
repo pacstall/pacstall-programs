@@ -1,0 +1,15 @@
+pkgbase = yazi
+	pkgver = 25.5.31
+	pkgrel = 1
+	pkgdesc = Yazi — blazing-fast terminal file manager (prebuilt binaries)
+	url = https://github.com/sxyazi/yazi
+	arch = amd64
+	arch = arm64
+	license = MIT
+	maintainer = DrCodfish <TheRealDrCodfish@gmail.com>
+	sha256sums = SKIP
+	sha256sums = SKIP
+	source_amd64 = https://github.com/sxyazi/yazi/releases/download/v25.5.31/yazi-x86_64-unknown-linux-gnu.zip
+	source_arm64 = https://github.com/sxyazi/yazi/releases/download/v25.5.31/yazi-aarch64-unknown-linux-gnu.zip
+
+pkgname = yazi
