@@ -4,12 +4,12 @@ pacdeps=("unicorn-desktop-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-g
 depends=("printer-driver-all-enforce")
 pkgdesc="Transitional package to provide all core Rhino Linux software"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-compatible=("ubuntu:devel" "ubuntu:questing")
+compatible=("ubuntu:devel" "ubuntu:questing" "ubuntu:resolute")
 replaces=("rhino-pine-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
 pkgver="2025.3"
-pkgrel="1"
+pkgrel="2"
 style="(mainline)"
 branch="devel"
 
