@@ -1,7 +1,7 @@
 pkgname="vinegar"
 repology=("project: vinegar")
 arch=('amd64')
-pkgver="1.8.1"
+pkgver="1.9.1"
 url='https://vinegarhq.org/'
 source=("https://github.com/vinegarhq/vinegar.git#tag=v${pkgver}")
 makedepends=(
