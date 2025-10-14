@@ -1,6 +1,6 @@
 pkgname="linux-kernel"
 arch=("amd64" "arm64")
-pkgver="6.17~rc7"
+pkgver="6.18~rc1"
 source=("https://github.com/oklopfer/debs/raw/master/empty.tar.xz")
 pacdeps=("linux-headers-deb" "linux-headers-generic-deb" "linux-modules-deb" "linux-image-unsigned-deb")
 pkgdesc="Provides the latest Linux kernel via the Ubuntu mainline repositories"
