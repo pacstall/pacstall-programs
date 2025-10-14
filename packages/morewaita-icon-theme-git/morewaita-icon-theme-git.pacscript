@@ -1,12 +1,12 @@
 _pkgname="morewaita"
-gives="${_pkgname}-icon-theme"
+gives="morewaita-icon-theme"
 pkgname="${gives}-git"
 arch=("all")
 pkgver="48.4"
 maintainer=("Rodrigo Tavares <dev@rodrigotavar.es>")
 source=("${pkgname}~${pkgver}::https://github.com/somepaulo/MoreWaita.git")
 makedepends=("meson" "ninja-build")
-pkgdesc="An Adwaita style extra icons theme for Gnome Shell."
+pkgdesc="Adwaita style extra icons theme for Gnome Shell."
 repology=("project: ${gives}")
 provides=("${_pkgname}" "${_pkgname}-icon-theme")
 conflicts=("${_pkgname}" "${_pkgname}-icon-theme-git")
@@ -19,5 +19,5 @@ build() {
 
 package() {
   cd "${pkgname}~${pkgver}"
-  ninja -C "build" install > /dev/null
+  ninja -C "build" install
 }

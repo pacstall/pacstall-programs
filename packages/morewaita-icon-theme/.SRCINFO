@@ -1,6 +1,6 @@
 pkgbase = morewaita-icon-theme
 	pkgver = 48.4
-	pkgdesc = An Adwaita style extra icons theme for Gnome Shell.
+	pkgdesc = Adwaita style extra icons theme for Gnome Shell
 	arch = all
 	makedepends = meson
 	makedepends = ninja-build
