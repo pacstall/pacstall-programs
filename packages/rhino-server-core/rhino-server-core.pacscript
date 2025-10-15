@@ -8,7 +8,7 @@ replaces=("rhino-core" "rhino-pine-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
 pkgver="2025.3"
-pkgrel="2"
+pkgrel="1"
 style="(server)"
 branch="devel"
 
