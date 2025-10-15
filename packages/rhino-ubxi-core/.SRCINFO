@@ -1,6 +1,6 @@
 pkgbase = rhino-ubxi-core
 	pkgver = 2025.3
-	pkgrel = 2
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 	priority = essential
 	arch = all
