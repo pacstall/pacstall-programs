@@ -394,6 +394,7 @@ mangohud
 marktext-deb
 mcontrolcenter-bin
 mcpelauncher-linux-git
+mcpelauncher-ui-git
 mdbook
 mdbook-linkcheck
 megabasterd-bin
@@ -418,6 +419,8 @@ mobile-usb-networking-deb
 modprobed-db
 moka-icon-theme
 mold-bin
+morewaita-icon-theme
+morewaita-icon-theme-git
 mullvad-vpn-beta-deb
 mullvad-vpn-deb
 muse-hub-deb
