@@ -11,7 +11,6 @@ source=("${url}/api/releases/${_channel}/${pkgver}/zed-linux-${AARCH}.tar.gz")
 sha256sums_x86_64=("a555f90a0322a2293c71df47aebffe63116a1cf206ef5a7e6eed07589c2b3c95")
 sha256sums_aarch64=("ebc024038375c3baa6b5e118b6ec589c67372c3434cc52ba7d57a68c332d980c")
 maintainer=("bibelin <balian1belin@yandex.ru>" "aKqir24 <aKqir24@github.com>")
-depends("xdg-desktop-portal" "xdg-desktop-portal-gtk")
 
 # Desktop file should be renamed to dev.zed.Zed.desktop to show correct icon in GNOME on Wayland
 # Issue: https://github.com/zed-industries/zed/issues/16694
