@@ -5,6 +5,7 @@ pkgbase = niri
 	arch = amd64
 	arch = arm64
 	depends = libdisplay-info2
+	depends = libseat1
 	makedepends = libudev-dev
 	makedepends = libwayland-dev
 	makedepends = libseat-dev
