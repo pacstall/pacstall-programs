@@ -1,5 +1,5 @@
-pkgname=("niri")
-pkgver=("25.08")
+pkgname="niri"
+pkgver="25.08"
 arch=("amd64" "arm64")
 pkgdesc=("A scrollable-tiling Wayland compositor.")
 url=("https://github.com/YaLTeR/niri")
