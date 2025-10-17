@@ -20,30 +20,29 @@ optdepends=("fuzzel: application launcher similar to rofi drun mode"
   "gnome-keyring: implements the secret portal, for certain apps to work"
   "policykit-1-gnome: when apps need to ask for root permissions")
 
-
 maintainer=("Alxhr0 <alxhr0@proton.me>")
 
 build() {
-    cd "${pkgname}"
-    cargo b --release --features default -j"${NCPU}"
-    for shell in bash fish zsh; do
-        cargo run --release --bin niri -- \
-            completions "${shell}" > "${shell}-completions"
-    done
+  cd "${pkgname}"
+  cargo b --release --features default -j"${NCPU}"
+  for shell in bash fish zsh; do
+    cargo run --release --bin niri -- \
+      completions "${shell}" > "${shell}-completions"
+  done
 }
 
 package() {
-    cd "${pkgname}"
+  cd "${pkgname}"
 
-    install -vDm755 target/release/${pkgname} -t "${pkgdir}/usr/bin/"
-    install -vDm755 resources/${pkgname}-session -t "${pkgdir}/usr/bin/"
-    install -vDm 644 resources/${pkgname}{.service,-shutdown.target} -t "${pkgdir}/usr/lib/systemd/user/"
-    install -vDm 644 resources/${pkgname}.desktop -t "${pkgdir}/usr/share/wayland-sessions/"
-    install -vDm 644 resources/${pkgname}-portals.conf -t "${pkgdir}/usr/share/xdg-desktop-portal/"
-    install -vDm 644 resources/default-config.kdl README.md -t "${pkgdir}/usr/share/doc/$pkgname/"
+  install -vDm755 target/release/${pkgname} -t "${pkgdir}/usr/bin/"
+  install -vDm755 resources/${pkgname}-session -t "${pkgdir}/usr/bin/"
+  install -vDm 644 resources/${pkgname}{.service,-shutdown.target} -t "${pkgdir}/usr/lib/systemd/user/"
+  install -vDm 644 resources/${pkgname}.desktop -t "${pkgdir}/usr/share/wayland-sessions/"
+  install -vDm 644 resources/${pkgname}-portals.conf -t "${pkgdir}/usr/share/xdg-desktop-portal/"
+  install -vDm 644 resources/default-config.kdl README.md -t "${pkgdir}/usr/share/doc/$pkgname/"
 
-    # shell auto-completions
-    install -vDm 644 bash-completions "${pkgdir}/usr/share/bash-completion/completions/niri"
-    install -vDm 644 fish-completions "${pkgdir}/usr/share/fish/vendor_completions.d/niri.fish"
-    install -vDm 644 zsh-completions "${pkgdir}/usr/share/zsh/site-functions/_niri"
+  # shell auto-completions
+  install -vDm 644 bash-completions "${pkgdir}/usr/share/bash-completion/completions/niri"
+  install -vDm 644 fish-completions "${pkgdir}/usr/share/fish/vendor_completions.d/niri.fish"
+  install -vDm 644 zsh-completions "${pkgdir}/usr/share/zsh/site-functions/_niri"
 }
