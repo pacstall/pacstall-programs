@@ -1,6 +1,6 @@
 pkgbase = rhino-pine-core
 	pkgver = 2025.3
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
 	arch = all
