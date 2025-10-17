@@ -2,7 +2,7 @@ pkgname="niri"
 pkgver="25.08"
 arch=("amd64" "arm64")
 pkgdesc=("A scrollable-tiling Wayland compositor.")
-url=("https://github.com/YaLTeR/niri")
+url="https://github.com/YaLTeR/niri"
 license=('GPL-3.0-or-later')
 source=("${url}.git#tag=v${pkgver}")
 external_connection=true
