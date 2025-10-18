@@ -26,7 +26,7 @@ build() {
   cd "${pkgname}"
   cargo b --release --features default -j"${NCPU}"
   for shell in bash fish zsh; do
-    cargo run --release --bin niri -- \
+    cargo run --locked --release --bin niri -- \
       completions "${shell}" > "${shell}-completions"
   done
 }
