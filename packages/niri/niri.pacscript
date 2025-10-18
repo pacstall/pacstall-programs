@@ -24,7 +24,7 @@ maintainer=("Alxhr0 <alxhr0@proton.me>")
 
 build() {
   cd "${pkgname}"
-  cargo b --release --features default -j"${NCPU}"
+  cargo build --locked --release --features default -j"${NCPU}"
   for shell in bash fish zsh; do
     cargo run --locked --release --bin niri -- \
       completions "${shell}" > "${shell}-completions"
