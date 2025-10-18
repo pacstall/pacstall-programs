@@ -1,6 +1,6 @@
 pkgbase = niri
 	pkgver = 25.08
-	pkgdesc = A scrollable-tiling Wayland compositor.
+	pkgdesc = Scrollable-tiling Wayland compositor
 	url = https://github.com/YaLTeR/niri
 	arch = amd64
 	arch = arm64
