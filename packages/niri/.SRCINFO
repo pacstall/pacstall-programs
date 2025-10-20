@@ -1,0 +1,39 @@
+pkgbase = niri
+	pkgver = 25.08
+	pkgdesc = Scrollable-tiling Wayland compositor
+	url = https://github.com/YaLTeR/niri
+	arch = amd64
+	arch = arm64
+	depends = libdisplay-info2
+	depends = libseat1
+	makedepends = libudev-dev
+	makedepends = libwayland-dev
+	makedepends = libseat-dev
+	makedepends = libglib2.0-dev
+	makedepends = libclang-dev
+	makedepends = cargo>=1.80.1
+	makedepends = libpipewire-0.3-dev
+	makedepends = libcairo2-dev
+	makedepends = libpango1.0-dev
+	makedepends = libdisplay-info-dev
+	makedepends = libinput-dev
+	makedepends = libgbm-dev
+	makedepends = libxkbcommon-dev
+	optdepends = fuzzel: application launcher similar to rofi drun mode
+	optdepends = waybar: highly customizable Wayland bar
+	optdepends = alacritty: a cross-platform OpenGL terminal emulator
+	optdepends = mako-notifier: notification daemon for Wayland
+	optdepends = swaybg: wallpaper tool for Wayland compositors
+	optdepends = swaylock: screen locker for Wayland
+	optdepends = xdg-desktop-portal-gtk: implements most of the basic functionality
+	optdepends = xdg-desktop-portal-gnome: screencasting support
+	optdepends = gnome-keyring: implements the secret portal, for certain apps to work
+	optdepends = policykit-1-gnome: when apps need to ask for root permissions
+	incompatible = debian:bullseye
+	incompatible = debian:bookworm
+	incompatible = ubuntu:jammy
+	license = GPL-3.0-or-later
+	maintainer = Alxhr0 <alxhr0@proton.me>
+	source = https://github.com/YaLTeR/niri.git#tag=v25.08
+
+pkgname = niri
