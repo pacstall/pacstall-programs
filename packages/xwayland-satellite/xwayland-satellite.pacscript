@@ -11,12 +11,12 @@ makedepends=("clang" "xwayland" "libwayland-dev" "libclang-dev" "pkg-config" "ca
 maintainer=("Alxhr0 <alxhr0@proton.me>")
 
 build() {
-    cd "${pkgname}"
-    cargo b --release -j"${NCPU}"
+  cd "${pkgname}"
+  cargo b --release -j"${NCPU}"
 }
 
 package() {
-    cd "${pkgname}"
+  cd "${pkgname}"
 
-    install -vDm755 target/release/${pkgname} -t "${pkgdir}/usr/bin/"
+  install -vDm755 target/release/${pkgname} -t "${pkgdir}/usr/bin/"
 }
