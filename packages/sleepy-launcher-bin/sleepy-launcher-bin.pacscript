@@ -1,7 +1,7 @@
 pkgname="sleepy-launcher-bin"
 gives="sleepy-launcher"
 arch=("amd64")
-pkgver="1.4.0"
+pkgver="1.5.0"
 pkgdesc="Sleepy game launcher for Linux with telemetry disabling"
 repology=("project: sleepy-launcher")
 source=(
@@ -9,7 +9,7 @@ source=(
   "icon.png::https://raw.githubusercontent.com/an-anime-team/sleepy-launcher/main/assets/images/icon.png"
 )
 sha256sums=(
-  "5d883fcfd70e0e76483d358c4eac1685c3b1139b75c17d41a9abfe2d221fe043"
+  "3f5ca7642fb34f721ca7ed52c379ca2d1f603a11274ea95fa19b7a672f5cc9c4"
   "SKIP"
 )
 depends=("git" "p7zip-full" "webp")

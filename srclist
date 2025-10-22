@@ -13411,7 +13411,7 @@ pkgname = sleek-deb
 ---
 pkgbase = sleepy-launcher-bin
 	gives = sleepy-launcher
-	pkgver = 1.4.0
+	pkgver = 1.5.0
 	pkgdesc = Sleepy game launcher for Linux with telemetry disabling
 	arch = amd64
 	depends = git
@@ -13432,9 +13432,9 @@ pkgbase = sleepy-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: sleepy-launcher
-	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.4.0/sleepy-launcher
+	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.5.0/sleepy-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/sleepy-launcher/main/assets/images/icon.png
-	sha256sums = 5d883fcfd70e0e76483d358c4eac1685c3b1139b75c17d41a9abfe2d221fe043
+	sha256sums = 3f5ca7642fb34f721ca7ed52c379ca2d1f603a11274ea95fa19b7a672f5cc9c4
 	sha256sums = SKIP
 
 pkgname = sleepy-launcher-bin
