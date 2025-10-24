@@ -5052,13 +5052,13 @@ pkgname = hello
 ---
 pkgbase = heroic-games-launcher-deb
 	gives = heroic
-	pkgver = 2.18.0
+	pkgver = 2.18.1
 	pkgdesc = An Open Source alternative to the Epic Games launcher
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: heroic-games-launcher
-	source = https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.18.0/Heroic-2.18.0-linux-amd64.deb
-	sha256sums = 43abb47c292d7f217d9d9a034b96eabb0d304c9e5f048b2e44f3ee5c7a3e296f
+	source = https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.18.1/Heroic-2.18.1-linux-amd64.deb
+	sha256sums = 4f696b7593107a90ed3ff947a4b1e0dbf1734ba41cbcb8f366559fe963c43fad
 
 pkgname = heroic-games-launcher-deb
 ---
