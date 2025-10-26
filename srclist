@@ -148,7 +148,7 @@ pkgname = amfora-bin
 ---
 pkgbase = an-anime-game-launcher-bin
 	gives = an-anime-game-launcher
-	pkgver = 3.16.0
+	pkgver = 3.17.0
 	pkgdesc = Launcher for a specific anime game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -171,9 +171,9 @@ pkgbase = an-anime-game-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: an-anime-game-launcher
-	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.16.0/anime-game-launcher
+	source = https://github.com/an-anime-team/an-anime-game-launcher/releases/download/3.17.0/anime-game-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/an-anime-game-launcher/main/assets/images/icon.png
-	sha256sums = 8d447e2132cb6454191d901bd0b16b40f7c7e5d194ca1cad24d705f8cf330189
+	sha256sums = e380d50f81cc067e6b8feabcd9d34adbcaff1cf475116691108ba01661a438d7
 	sha256sums = SKIP
 
 pkgname = an-anime-game-launcher-bin
@@ -1137,7 +1137,7 @@ pkgname = bpytop-git
 ---
 pkgbase = brave-browser-beta-deb
 	gives = brave-browser-beta
-	pkgver = 1.84.122
+	pkgver = 1.85.87
 	pkgdesc = Testing version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1148,14 +1148,14 @@ pkgbase = brave-browser-beta-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-beta-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.84.122/brave-browser-beta_1.84.122_amd64.deb
-	sha256sums = e36ec7b57996c44260b3866b776a61e38b1bd17b180802ada82abfa64faa3e19
+	source = https://github.com/brave/brave-browser/releases/download/v1.85.87/brave-browser-beta_1.85.87_amd64.deb
+	sha256sums = 5c74658254599c478e5b6fc90dc7616421787d20d78bef4a7d4b94ffec54dc80
 
 pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.83.112
+	pkgver = 1.83.120
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1167,16 +1167,16 @@ pkgbase = brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.83.112_amd64.deb
-	sha256sums_amd64 = 43457957d25818080a015dcbe377f2e48f288c8731c94ec2e4e9eabdab6590f1
-	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.83.112_arm64.deb
-	sha256sums_arm64 = 22a3f16edde7088aebaabdf2552d200dd898b10d8e5d59b775a6d8f001fb20ad
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.83.120_amd64.deb
+	sha256sums_amd64 = 13520a73a7ed04ef3c5955dad1182300586d72404d9bf853420c733332b5ecf6
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.83.120_arm64.deb
+	sha256sums_arm64 = 0d05fe1ca34b6a423a1bb2b9dd299c9ad980fa1ed99af91c8d481dfe4dc2fdc7
 
 pkgname = brave-browser-deb
 ---
 pkgbase = brave-browser-nightly-deb
 	gives = brave-browser-nightly
-	pkgver = 1.85.52
+	pkgver = 1.85.84
 	pkgdesc = The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel
 	url = https://brave.com/
 	arch = amd64
@@ -1188,8 +1188,8 @@ pkgbase = brave-browser-nightly-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-nightly-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.85.52/brave-browser-nightly_1.85.52_amd64.deb
-	sha256sums = 6b0145609db42948064b6d8086153e64aaaa0d509882bec3647731f07cf66a5b
+	source = https://github.com/brave/brave-browser/releases/download/v1.85.84/brave-browser-nightly_1.85.84_amd64.deb
+	sha256sums = b1810cb0e947b655ec9cd2836eceece625952c6732ba5a91a421892af4760727
 
 pkgname = brave-browser-nightly-deb
 ---
@@ -3554,13 +3554,13 @@ pkgname = framework-system-bin
 ---
 pkgbase = freetube-deb
 	gives = freetube
-	pkgver = 0.23.9
+	pkgver = 0.23.12
 	pkgdesc = An Open Source YouTube app for privacy.
 	arch = amd64
 	maintainer = Archisman Panigrahi <apandada1ATgmailDotcom>
 	repology = project: freetube
-	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.9-beta/freetube_0.23.9_beta_amd64.deb
-	sha256sums = bb18ee3cfadcddf71ee050bc9162f8ad71152754d8dafcf873e042f170929d94
+	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.12-beta/freetube_0.23.12_beta_amd64.deb
+	sha256sums = a330ec57bf96822fd4bd8a2675a00e919c932adefe04a09eda1ba8b9d79e3046
 
 pkgname = freetube-deb
 ---
@@ -5079,7 +5079,7 @@ pkgname = highlight-pointer-bin
 ---
 pkgbase = honkers-launcher-bin
 	gives = honkers-launcher
-	pkgver = 1.11.0
+	pkgver = 1.12.0
 	pkgdesc = Launcher for a honkers game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -5100,9 +5100,9 @@ pkgbase = honkers-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: honkers-launcher
-	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.11.0/honkers-launcher
+	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.12.0/honkers-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/honkers-launcher/main/assets/images/icon.png
-	sha256sums = 0f4fad2a6200e79ce8ad48a0782a00e8135aa74e4e2623c917c94f92408600eb
+	sha256sums = 09a0ab93cccfc4d442b2ac8b31c8a40dce140055844f6e4446b0be34b5254552
 	sha256sums = SKIP
 
 pkgname = honkers-launcher-bin
@@ -10724,7 +10724,7 @@ pkgname = osu-lazer-app
 ---
 pkgbase = osu-lazer-tachyon-app
 	gives = osu-lazer
-	pkgver = 2025.911.0
+	pkgver = 2025.1022.0
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew. - Tachyon Release
 	url = https://osu.ppy.sh
 	arch = amd64
@@ -10735,11 +10735,11 @@ pkgbase = osu-lazer-tachyon-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-tachyon-app-2025.911.0.AppImage::https://github.com/ppy/osu/releases/download/2025.911.0-tachyon/osu.AppImage
-	source = icon.png::https://raw.githubusercontent.com/ppy/osu/refs/tags/2025.911.0-tachyon/assets/lazer.png
+	source = osu-lazer-tachyon-app-2025.1022.0.AppImage::https://github.com/ppy/osu/releases/download/2025.1022.0-tachyon/osu.AppImage
+	source = icon.png::https://raw.githubusercontent.com/ppy/osu/refs/tags/2025.1022.0-tachyon/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = 317c81e34f14318c764c2c3907ee2ef3dc43980dca911ab0c1b0561f6d959226
+	sha256sums = d0f02be6d06267769d1bdf0e26647abf5c287d2f08c6dde67d8b20525d1139a0
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
 	sha256sums = 8f7f8ea193ffe960364ca1344e1ca3780281a0a753f34700732655b75e30cc6b
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
@@ -13380,7 +13380,7 @@ pkgname = sleek-deb
 ---
 pkgbase = sleepy-launcher-bin
 	gives = sleepy-launcher
-	pkgver = 1.4.0
+	pkgver = 1.5.0
 	pkgdesc = Sleepy game launcher for Linux with telemetry disabling
 	arch = amd64
 	depends = git
@@ -13401,9 +13401,9 @@ pkgbase = sleepy-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: sleepy-launcher
-	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.4.0/sleepy-launcher
+	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.5.0/sleepy-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/sleepy-launcher/main/assets/images/icon.png
-	sha256sums = 5d883fcfd70e0e76483d358c4eac1685c3b1139b75c17d41a9abfe2d221fe043
+	sha256sums = 3f5ca7642fb34f721ca7ed52c379ca2d1f603a11274ea95fa19b7a672f5cc9c4
 	sha256sums = SKIP
 
 pkgname = sleepy-launcher-bin
@@ -14152,7 +14152,7 @@ pkgname = tdrop-git
 ---
 pkgbase = teams-for-linux-deb
 	gives = teams-for-linux
-	pkgver = 2.2.1
+	pkgver = 2.6.3
 	pkgdesc = Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
 	arch = amd64
 	arch = arm64
@@ -14162,10 +14162,10 @@ pkgbase = teams-for-linux-deb
 	breaks = teams-for-linux-app
 	maintainer = matusaurio <matusaurio@github.com>
 	repology = project: teams-for-linux
-	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.2.1/teams-for-linux_2.2.1_amd64.deb
-	sha256sums_amd64 = 7c889642299ca63e8a70a1088ffc84f1a9c55d13073f473370ae02a56a5e3da1
-	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.2.1/teams-for-linux_2.2.1_arm64.deb
-	sha256sums_arm64 = 50cab61ba54972137b2fcbaa2670a38a4a65e4455ca928d9ebe3d80c86896493
+	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.6.3/teams-for-linux_2.6.3_amd64.deb
+	sha256sums_amd64 = 3672669b9d6f9d852bc73ed6ee9d96ff69f05ba0e198d4bd0f71c2906d1e278e
+	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.6.3/teams-for-linux_2.6.3_arm64.deb
+	sha256sums_arm64 = 28c870c0de366b7786ea13709363026245a0e3390295f6900a5f1052f339eb90
 
 pkgname = teams-for-linux-deb
 ---
@@ -14361,7 +14361,7 @@ pkgname = tgpt-bin
 ---
 pkgbase = the-honkers-railway-launcher-bin
 	gives = the-honkers-railway-launcher
-	pkgver = 1.11.1
+	pkgver = 1.12.1
 	pkgdesc = The Honkers Railway launcher for Linux with automatic patching and telemetry disabling
 	arch = amd64
 	depends = git
@@ -14382,9 +14382,9 @@ pkgbase = the-honkers-railway-launcher-bin
 	incompatible = debian:bullseye
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: the-honkers-railway-launcher
-	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.11.1/honkers-railway-launcher
+	source = https://github.com/an-anime-team/the-honkers-railway-launcher/releases/download/1.12.1/honkers-railway-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/the-honkers-railway-launcher/main/assets/images/icon.png
-	sha256sums = e87af898c455822bc59e6e8f27c8b88db0ea223e38bbe9ea960214b61c29de7e
+	sha256sums = 0232bc393e1dbf957cc5bcea14e34058063a4d3d271b494c67ef872d6e8c160d
 	sha256sums = SKIP
 
 pkgname = the-honkers-railway-launcher-bin
@@ -15381,7 +15381,7 @@ pkgname = veracrypt-deb
 ---
 pkgbase = vesktop-deb
 	gives = vesktop
-	pkgver = 1.5.8
+	pkgver = 1.6.0
 	pkgdesc = A custom Discord client that aims to provide better customizability, performance, and improved Linux support
 	arch = arm64
 	arch = amd64
@@ -15396,10 +15396,10 @@ pkgbase = vesktop-deb
 	depends = libsecret-1-0
 	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: vesktop
-	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.5.8/vesktop_1.5.8_arm64.deb
-	sha256sums_arm64 = 13ff8f70b51a8f26df9adc45fc7c638485ebf2ffa1129992ead8d5e351768f16
-	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.5.8/vesktop_1.5.8_amd64.deb
-	sha256sums_amd64 = 55832e33e5369133b7634616a0a4a4577e1284f363fe0827df75e4b701999704
+	source_arm64 = https://github.com/Vencord/vesktop/releases/download/v1.6.0/vesktop_1.6.0_arm64.deb
+	sha256sums_arm64 = 9829c60e164fcf5157d3e10b424a6c62470b50e31816d81216aba732797f9b16
+	source_amd64 = https://github.com/Vencord/vesktop/releases/download/v1.6.0/vesktop_1.6.0_amd64.deb
+	sha256sums_amd64 = 3af17d0fe0e59ac6f4672c1e877688d90f294772ea42727e1ea2820aceee2f73
 
 pkgname = vesktop-deb
 ---
@@ -16907,7 +16907,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.16.4b
+	pkgver = 1.17b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -16944,8 +16944,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.16.4b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 1fe3081479c73327c70a4b74c44781b42c796be9214bf2a5831fad5e6792c41b
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.17b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 912aab116cf9775fd1ac7a421f2ed307291e03da395c1e6988e3d3403c82ad7f
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -16955,8 +16955,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.16.4b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = 59a479bb2b2f37e08a14990cd91074ec89d5346626d4fddb4793b1d2b430eacc
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.17b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = e27422fa702f10bfd59874a0d0fb98445a4bda2a677a4a5d6cb37abed1da237c
 
 pkgname = zen-browser-bin
 ---
