@@ -13,8 +13,6 @@ depends=(
   'libpulse-dev'
   'libvorbis-dev'
   'libqt5x11extras5'
-  'libfltk1.3-dev'
-  'libstk-dev'
 )
 
 optdepends=(
@@ -27,6 +25,8 @@ optdepends=(
 
 makedepends=(
   'cmake'
+  'libfltk1.3-dev'
+  'libstk-dev'
   'libqt5x11extras5'
   'libsndfile1-dev'
   'libsamplerate0-dev'
