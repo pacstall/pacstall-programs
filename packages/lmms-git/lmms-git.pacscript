@@ -71,11 +71,11 @@ prepare() {
 build() {
   cd "${gives}/build"
   cmake -DCMAKE_INSTALL_PREFIX=/usr \
+    -DWANT_VST=ON \
+    -DWANT_QT5=ON \
+    -DWANT_WINE=ON \
     -DWANT_VST_32=0N \
     -DWANT_VST_64=0N \
-    -DWANT_VST=ON \
-    -DWANT_WINE=ON \
-    -DWANT_QT6=ON \
     -DWANT_SOUNDIO=OFF \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_BUILD_TYPE=Release \
