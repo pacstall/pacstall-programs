@@ -20,7 +20,6 @@ optdepends=(
   'wine: VST plugin support'
   'libogg-dev: Multimedia container format'
   'carla: carla support'
-  'libfluidsynth-dev: SoundFont synthesis library'
 )
 
 makedepends=(
@@ -32,6 +31,7 @@ makedepends=(
   'libsamplerate0-dev'
   'libasound2-dev'
   'libsdl1.2-dev'
+  'libfluidsynth-dev'
   'portaudio19-dev'
   'ladspa-sdk'
   'libfftw3-dev'
