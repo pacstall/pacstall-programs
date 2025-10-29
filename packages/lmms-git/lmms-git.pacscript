@@ -27,6 +27,7 @@ makedepends=(
   'libfltk1.3-dev'
   'libstk-dev'
   'libqt5x11extras5'
+  'libqt5x11extras5-dev'
   'libsndfile1-dev'
   'libsamplerate0-dev'
   'libasound2-dev'
