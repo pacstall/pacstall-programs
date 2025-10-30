@@ -12,31 +12,33 @@ depends=(
   'libjack-dev'
   'libpulse-dev'
   'libvorbis-dev'
+  'libqt5x11extras5'
 )
 
 optdepends=(
   'pulseaudio: pulseaudio support'
   'wine: VST plugin support'
+  'libogg-dev: Multimedia container format'
   'carla: carla support'
 )
 
 makedepends=(
   'cmake'
-  'wine'
+  'libfltk1.3-dev'
+  'libstk-dev'
+  'libqt5x11extras5'
+  'libqt5x11extras5-dev'
   'libsndfile1-dev'
   'libsamplerate0-dev'
   'libasound2-dev'
-  'libstk-dev'
   'libsdl1.2-dev'
+  'libfluidsynth-dev'
   'portaudio19-dev'
   'ladspa-sdk'
-  'libfltk1.3-dev'
-  'libfluidsynth-dev'
   'libfftw3-dev'
   'libgig-dev'
   'libmp3lame-dev'
   'libqt5svg5-dev'
-  'libqt5x11extras5-dev'
   'libxcb-keysyms1-dev'
   'libxcb-util0-dev'
   'libx11-xcb-dev'
@@ -70,7 +72,11 @@ prepare() {
 build() {
   cd "${gives}/build"
   cmake -DCMAKE_INSTALL_PREFIX=/usr \
+    -DWANT_VST=ON \
     -DWANT_QT5=ON \
+    -DWANT_WINE=ON \
+    -DWANT_VST_32=0N \
+    -DWANT_VST_64=0N \
     -DWANT_SOUNDIO=OFF \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_BUILD_TYPE=Release \
