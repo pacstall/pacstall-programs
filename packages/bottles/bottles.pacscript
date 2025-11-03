@@ -67,8 +67,8 @@ compatible=(
   "ubuntu:devel"
 )
 source=(
-	"${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz"
-	https://estudio-debian.pages.dev/static/resources/disable-flatpak-check.patch
+  "${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz"
+  https://estudio-debian.pages.dev/static/resources/disable-flatpak-check.patch
 )
 sha256sums=(
   b684e9b1699351f40f345312404870916502e75c168fcbca11310effff23bb90
