@@ -1,5 +1,5 @@
 pkgname="bottles"
-pkgver="51.13"
+pkgver="52.0"
 pkgdesc="Easily manage wine and proton prefixes"
 arch=("amd64")
 url='https://github.com/bottlesdevs/Bottles'
@@ -21,6 +21,7 @@ depends=(
   "libwebkit2gtk-4.1-0"
   "gir1.2-adw-1"
   "gir1.2-gtksource-5"
+  "gir1.2-xdp-1.0"
   "python3"
   "python3-chardet"
   "python3-gi"
@@ -65,14 +66,21 @@ compatible=(
   "ubuntu:oracular"
   "ubuntu:devel"
 )
-source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=("ba582ef2eaec4f3e533fd92b9b064223373e55b4d942113f071fc90800d49c34")
+source=(
+  "${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/${pkgver}.tar.gz"
+  https://estudio-debian.pages.dev/static/resources/disable-flatpak-check.patch
+)
+sha256sums=(
+  b684e9b1699351f40f345312404870916502e75c168fcbca11310effff23bb90
+  012f00b6678ff20bb0a43c592c8f6b6af0d315053bf0473aa3f3b56c74845b73
+)
 
 build() {
   if [[ -d Bottles ]]; then
     rm -rf Bottles
   fi
   mv Bottles*/ Bottles/
+  patch --forward --directory=Bottles --strip=1 --input=../disable-flatpak-check.patch
   cd "Bottles"
   meson --prefix="/usr" build
   ninja -C build -j"${NCPU}"
