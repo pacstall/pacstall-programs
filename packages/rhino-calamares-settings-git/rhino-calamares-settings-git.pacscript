@@ -9,5 +9,5 @@ source=("https://github.com/rhino-linux/calamares-settings.git")
 
 package() {
   cd "calamares-settings"
-  make DESTDIR="${pkgdir}" install
+  make DESTDIR="${pkgdir}" ARCH="${AARCH}" install
 }
