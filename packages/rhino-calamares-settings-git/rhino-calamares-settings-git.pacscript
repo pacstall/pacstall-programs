@@ -1,6 +1,6 @@
 pkgname="rhino-calamares-settings-git"
 gives="rhino-calamares-settings"
-arch=("all")
+arch=("amd64" "arm64")
 pkgver="0.0.1"
 makedepends=("make")
 pkgdesc="Modules and settings for the Rhino Linux calamares installer"
