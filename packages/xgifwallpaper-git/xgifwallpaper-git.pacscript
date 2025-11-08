@@ -28,11 +28,10 @@ external_connection=true
 
 build() {
   cd "${gives}"
-  echo "Building with ${NCPU} parallel jobs..."
   cargo build --release --locked --all-features --target-dir=target -j"${NCPU}"
 }
 
 package() {
   cd "${gives}"
-  install -Dm755 "target/release/${pkgname}" -t "${pkgdir}/usr/bin"
+  install -Dm755 "target/release/${gives}" -t "${pkgdir}/usr/bin"
 }
