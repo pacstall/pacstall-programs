@@ -44,7 +44,7 @@ prepare() {
 
 build() {
   cd "${gives}"
-  python3 setup.py build -j"${NCPU}"
+  python3 -m build --wheel --no-isolation
 }
 
 package() {
