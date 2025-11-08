@@ -17,9 +17,9 @@ makedepends=(
   "git"
   "cargo"
   "rustc"
-  "libx11-6"
-  "libxinerama1"
-  "libxext6"
+  "libx11-dev"
+  "libxinerama-dev"
+  "libxext-dev"
 )
 
 source=("${url}.git")
