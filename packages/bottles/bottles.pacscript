@@ -1,5 +1,5 @@
 pkgname="bottles"
-pkgver="52.0"
+pkgver="52.1"
 pkgdesc="Easily manage wine and proton prefixes"
 arch=("amd64")
 url='https://github.com/bottlesdevs/Bottles'
@@ -71,7 +71,7 @@ source=(
   https://estudio-debian.pages.dev/static/resources/disable-flatpak-check.patch
 )
 sha256sums=(
-  b684e9b1699351f40f345312404870916502e75c168fcbca11310effff23bb90
+  98f43de630fdf2a18f4aa471b941dd334314824d9a568c33e3c7eb4415023502
   012f00b6678ff20bb0a43c592c8f6b6af0d315053bf0473aa3f3b56c74845b73
 )
 
@@ -82,7 +82,7 @@ build() {
   mv Bottles*/ Bottles/
   patch --forward --directory=Bottles --strip=1 --input=../disable-flatpak-check.patch
   cd "Bottles"
-  meson --prefix="/usr" build
+  meson setup --prefix="/usr" build
   ninja -C build -j"${NCPU}"
 }
 
