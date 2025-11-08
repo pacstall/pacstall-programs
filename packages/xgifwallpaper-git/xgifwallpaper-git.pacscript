@@ -1,0 +1,39 @@
+pkgname="xgifwallpaper-git"
+gives="xgifwallpaper"
+pkgver="0.3.2"
+pkgdesc="Use an animated GIF as wallpaper on X11 systems"
+arch=("amd64" "arm64")
+url="https://github.com/calculon102/xgifwallpaper"
+license=("GPL-3.0-only")
+
+depends=(
+  "libc6"
+  "libx11-6"
+  "libxau6"
+  "libxcb1"
+  "libxdmcp6"
+  "libxinerama1"
+  "libxext6"
+)
+makedepends=(
+  "gcc"
+  "git"
+  "cargo"
+  "rustc"
+)
+
+source=("${url}.git")
+maintainer=("aKqir24 <aKqir24&github.com>")
+external_connection=true
+
+build() {
+  cd "${gives}"
+  echo "Building with ${NCPU} parallel jobs..."
+  cargo build --release --locked --all-features --target-dir=target -j"${NCPU}"
+}
+
+package() {
+  cd "${gives}"
+  install -Dm755 "target/release/${pkgname}" -t "${pkgdir}/usr/bin"
+}
+
