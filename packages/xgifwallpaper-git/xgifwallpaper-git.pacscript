@@ -8,18 +8,18 @@ license=("GPL-3.0-only")
 
 depends=(
   "libc6"
-  "libx11-6"
   "libxau6"
   "libxcb1"
   "libxdmcp6"
-  "libxinerama1"
-  "libxext6"
 )
 makedepends=(
   "gcc"
   "git"
   "cargo"
   "rustc"
+  "libx11-6"
+  "libxinerama1"
+  "libxext6"
 )
 
 source=("${url}.git")
