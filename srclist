@@ -16872,6 +16872,34 @@ pkgbase = zap
 
 pkgname = zap
 ---
+pkgbase = zapzap
+	pkgver = 6.2.3.1
+	pkgrel = 1
+	pkgdesc = WhatsApp desktop application written in PyQt6 + PyQt6‑WebEngine
+	url = https://github.com/rafatosta/zapzap
+	arch = x86_64
+	depends = python3-pyqt6
+	depends = python3-pyqt6.qtwebengine
+	depends = python3-dbus
+	depends = qt6-wayland
+	depends = python3-jaraco.text
+	depends = python3-inflect
+	depends = python3-pydantic
+	depends = python3-typing-extensions
+	depends = pyqt6-dev-tools
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools>=40.8.0
+	makedepends = python3-wheel
+	makedepends = desktop-file-utils
+	optdepends = hunspell: spell check
+	license = GPL-3.0-only
+	source = git+https://github.com/rafatosta/zapzap#tag=6.2.3.1
+	b2sums = 5997d545fbee428634a72df0c632d61ae22422b940c19f5776e73f4407980848f6aa5df375f01ca3cd190682a83e2e04f1b2ff63800ef4dc58f2cac2faf92cfb
+
+pkgname = zapzap
+---
 pkgbase = zed-editor-preview-bin
 	gives = zed-editor-preview
 	pkgver = 0.165.3
