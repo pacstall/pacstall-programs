@@ -11,7 +11,6 @@ depends=(
   "python3-pil"
   "scrot"
   "libgtk-3-0"
-  "python3-setuptools"
   "python3-gi"
   "slop"
 )
@@ -21,6 +20,7 @@ makedepends=(
   "python3-build"
   "python3-installer"
   "python3-wheel"
+  "python3-setuptools"
 )
 optdepends=(
   "xclip: command line clipboard support"
