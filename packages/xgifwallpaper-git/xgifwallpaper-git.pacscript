@@ -36,4 +36,3 @@ package() {
   cd "${gives}"
   install -Dm755 "target/release/${pkgname}" -t "${pkgdir}/usr/bin"
 }
-
