@@ -1,10 +1,10 @@
 pkgname="linux-modules-deb"
-gives="linux-modules-6.17.0-061700rc6-generic"
-pkgver="6.17~rc6"
-buildver="6.17.0-061700rc6.202509142238"
+gives="linux-modules-6.18.0-061800rc3-generic"
+pkgver="6.18~rc3"
+buildver="6.18.0-061800rc3.202510262341"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("c4342e2d06fbec0a6626aea5fe4ca727df685ac6bf09a21c1d0e52d9d1dda368")
-sha256sums_amd64=("76e7a0a5d0f7edf3464f6f26063b601fb70c0a3de934f41568f33d5654d81f45")
+sha256sums_arm64=("8ef5f1f00d6b774233a363184363c13df9754547cda7ae19bda2dd76d0e98ea0")
+sha256sums_amd64=("376675284282e896c9a594bbf395f30f5736f6fb68b9ab44e79a766d251cb68a")
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Ubuntu Linux mainline kernel (Linux Modules)"
 maintainer=("Oren Klopfer <oren@taumoda.com>")

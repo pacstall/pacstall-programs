@@ -1,10 +1,10 @@
 pkgname="linux-image-unsigned-deb"
-gives="linux-image-unsigned-6.17.0-061700rc6-generic"
-pkgver="6.17~rc6"
-buildver="6.17.0-061700rc6.202509142238"
+gives="linux-image-unsigned-6.18.0-061800rc3-generic"
+pkgver="6.18~rc3"
+buildver="6.18.0-061800rc3.202510262341"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("dd002e64c60f091116cb9069e6d8e50a688d84ff2eaa67417c63675fcd191e2f")
-sha256sums_amd64=("152eac7f6d0d1c928fbf6678f715f518c1937bfa64a212fc1b3ab8b2a7d60725")
+sha256sums_arm64=("d71dce3b7fe84bbbc72e9d765736065c66a0249484a05ec40896784bdd4e45b7")
+sha256sums_amd64=("2b3e7d97cb0f898453d51c193160244d7ecba6f630db01155b98a391f0ce234a")
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Ubuntu Linux mainline kernel (Unsigned image)"
 pacdeps=("linux-headers-generic-deb" "linux-modules-deb")

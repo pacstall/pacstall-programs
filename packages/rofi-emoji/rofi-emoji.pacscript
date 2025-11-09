@@ -32,5 +32,6 @@ check() {
 package() {
   cd "${pkgname}-${pkgver}"
   make DESTDIR="${pkgdir}/" install
+  libtool --finish /usr/lib/x86_64-linux-gnu/rofi//
   install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
 }

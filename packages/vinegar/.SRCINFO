@@ -1,5 +1,5 @@
 pkgbase = vinegar
-	pkgver = 1.8.1
+	pkgver = 1.9.1
 	pkgdesc = Open-source, minimal, configurable, fast bootstrapper for running Roblox on Linux
 	url = https://vinegarhq.org/
 	arch = amd64
@@ -24,6 +24,6 @@ pkgbase = vinegar
 	license = GPL-3.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: vinegar
-	source = https://github.com/vinegarhq/vinegar.git#tag=v1.8.1
+	source = https://github.com/vinegarhq/vinegar.git#tag=v1.9.1
 
 pkgname = vinegar

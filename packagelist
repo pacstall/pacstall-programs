@@ -103,6 +103,7 @@ deskcut-deb
 digikam-app
 dino-git
 directx-headers-git
+direnv-bin
 discord
 discord-canary
 discord-canary-deb
@@ -137,6 +138,7 @@ endlessh-git
 enpass-deb
 epson-inkjet-printer-stylus-nx110-series-deb
 epson-printer-utility-deb
+eqwalizer
 erlang-jsone
 erlang-language-platform
 erlfmt
@@ -177,6 +179,7 @@ font-downloader
 forticlient-deb
 fpc-laz-deb
 fpc-src-deb
+framework-system-bin
 freetube-deb
 freshfetch-git
 fsearch-deb
@@ -184,6 +187,7 @@ fsearch-git
 fselect-git
 fzf-bin
 galaxybudsclient-bin
+gearlever-git
 geekbench4-bin
 geekbench5-bin
 geekbench6-bin
@@ -272,6 +276,7 @@ i3status-rust
 icecat-deb
 imhex-app
 imwheel-exclude-patched-git
+input-leap-bin
 insomnia-deb
 insync-deb
 intel-undervolt
@@ -305,6 +310,7 @@ koodo-reader-deb
 krita-app
 kubeswitch-bin
 kvantum
+kvantum-theme-libadwaita-git
 kwin-krohnkite
 kxstudio-repos-deb
 lagrange
@@ -389,6 +395,8 @@ makedeb-deb
 mangohud
 marktext-deb
 mcontrolcenter-bin
+mcpelauncher-linux-git
+mcpelauncher-ui-git
 mdbook
 mdbook-linkcheck
 megabasterd-bin
@@ -413,6 +421,8 @@ mobile-usb-networking-deb
 modprobed-db
 moka-icon-theme
 mold-bin
+morewaita-icon-theme
+morewaita-icon-theme-git
 mullvad-vpn-beta-deb
 mullvad-vpn-deb
 muse-hub-deb
@@ -497,6 +507,7 @@ nerd-fonts-cascadia-code
 nerd-fonts-fira-code
 nerd-fonts-hack
 nerd-fonts-jetbrains-mono
+niri
 nodejs-deb
 nodejs-lts-deb
 nofetch
@@ -668,6 +679,7 @@ rustdesk-deb
 rustrover-bin
 sayonara
 sayonara-git
+sbt-deb
 schildichat-deb
 scrcpy
 sed

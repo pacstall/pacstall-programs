@@ -1,0 +1,16 @@
+pkgbase = sbt-deb
+	gives = sbt
+	pkgver = 1.11.7
+	pkgdesc = The interactive build tool for Scala and Java
+	arch = all
+	depends = openjdk-8-jre-headless | openjdk-11-jre-headless | openjdk-17-jre-headless | openjdk-21-jre-headless
+	breaks = sbt
+	breaks = sbt-bin
+	breaks = sbt-git
+	license = Apache-2.0
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: sbt
+	source = https://scala.jfrog.io/artifactory/debian/sbt-1.11.7.deb
+	sha256sums = 7e5e80083206002abc2217bebb4bdb69d8a271715e4c77d859f959ad8e6cdf2b
+
+pkgname = sbt-deb
