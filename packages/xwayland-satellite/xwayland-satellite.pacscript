@@ -2,7 +2,7 @@ pkgname="xwayland-satellite"
 pkgver="0.7"
 arch=("amd64" "arm64")
 pkgdesc="Xwayland outside your Wayland."
-url="https://github.com/Supreeeme/xwayland-satellite"
+url='https://github.com/Supreeeme/xwayland-satellite'
 license=('GPL-3.0-or-later')
 source=("${url}.git#tag=v${pkgver}")
 external_connection=true
