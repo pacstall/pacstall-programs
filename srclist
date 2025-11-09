@@ -16707,7 +16707,7 @@ pkgbase = xwayland-satellite
 	makedepends = libwayland-dev
 	makedepends = libclang-dev
 	makedepends = pkg-config
-	makedepends = cargo>=1.80.0
+	makedepends = cargo>=1.83.0
 	makedepends = libxcb-cursor-dev
 	makedepends = libxkbcommon-dev
 	incompatible = debian:bullseye
