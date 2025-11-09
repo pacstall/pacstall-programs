@@ -12,7 +12,7 @@ maintainer=("Alxhr0 <alxhr0@proton.me>")
 
 build() {
   cd "${pkgname}"
-  cargo b --release -j"${NCPU}"
+  cargo build --locked --release -j"${NCPU}"
 }
 
 package() {
