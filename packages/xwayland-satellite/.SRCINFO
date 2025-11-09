@@ -1,6 +1,6 @@
 pkgbase = xwayland-satellite
 	pkgver = 0.7
-	pkgdesc = Xwayland outside your Wayland.
+	pkgdesc = Xwayland outside your Wayland
 	url = https://github.com/Supreeeme/xwayland-satellite
 	arch = amd64
 	arch = arm64
