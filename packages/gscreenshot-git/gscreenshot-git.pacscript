@@ -32,7 +32,6 @@ optdepends=(
 )
 conflicts=("${gives}" "${pkgname}")
 provides=("${gives}")
-
 source=("https://github.com/thenaterhood/gscreenshot.git")
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
