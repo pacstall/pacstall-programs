@@ -26,7 +26,7 @@ external_connection=true
 
 build() {
   cd "${gives}"
-  cargo build --release --locked --all-features --target-dir=target -j"${NCPU}"
+  cargo build --release --locked --all-features -j"${NCPU}"
 }
 
 package() {
