@@ -20,7 +20,6 @@ makedepends=(
   "libxinerama-dev"
   "libxext-dev"
 )
-
 source=("${url}.git")
 maintainer=("aKqir24 <aKqir24&github.com>")
 external_connection=true
