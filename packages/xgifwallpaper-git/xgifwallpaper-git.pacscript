@@ -5,7 +5,6 @@ pkgdesc="Use an animated GIF as wallpaper on X11 systems"
 arch=("amd64" "arm64")
 url='https://github.com/calculon102/xgifwallpaper'
 license=("GPL-3.0-only")
-
 depends=(
   "libc6"
   "libxau6"
