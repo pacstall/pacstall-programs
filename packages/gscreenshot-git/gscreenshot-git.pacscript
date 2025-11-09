@@ -3,7 +3,7 @@ gives="gscreenshot"
 pkgver="3.11.0"
 pkgdesc="Screenshot tool supporting multiple backends"
 arch=("any" "amd64" "arm64")
-url="https://github.com/thenaterhood/${gives}"
+url='https://github.com/thenaterhood/gscreenshot'
 license=("GPL-3.0-only")
 
 depends=(
