@@ -17,5 +17,5 @@ build() {
 
 package() {
   cd "${pkgname}"
-  install -vDm755 target/release/${pkgname} -t "${pkgdir}/usr/bin/"
+  install -vDm755 target/release/"${pkgname}" -t "${pkgdir}/usr/bin/"
 }
