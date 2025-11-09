@@ -5,7 +5,6 @@ pkgdesc="Screenshot tool supporting multiple backends"
 arch=("any" "amd64" "arm64")
 url='https://github.com/thenaterhood/gscreenshot'
 license=("GPL-3.0-only")
-
 depends=(
   "python3"
   "python3-pil"
