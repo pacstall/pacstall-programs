@@ -138,7 +138,9 @@ endlessh-git
 enpass-deb
 epson-inkjet-printer-stylus-nx110-series-deb
 epson-printer-utility-deb
+eqwalizer
 erlang-jsone
+erlang-language-platform
 erlfmt
 exercism-cli-bin
 exiftool
@@ -236,6 +238,7 @@ grive2
 grive2-git
 grub-btrfs
 grub-customizer-git
+gscreenshot-git
 gtkhash
 hakuneko-deb
 hamclock
@@ -843,9 +846,11 @@ xfce4-dynamic-workspaces-plugin-git
 xfce4-dynamic-workspaces-rs-bin
 xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
+xgifwallpaper-git
 xmind-vana-deb
 xonotic
 xpadneo-dkms
+xwayland-satellite
 yabridge
 yad
 yafetch-git

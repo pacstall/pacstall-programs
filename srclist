@@ -1140,7 +1140,7 @@ pkgname = bpytop-git
 ---
 pkgbase = brave-browser-beta-deb
 	gives = brave-browser-beta
-	pkgver = 1.85.87
+	pkgver = 1.85.97
 	pkgdesc = Testing version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1151,14 +1151,14 @@ pkgbase = brave-browser-beta-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-beta-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.85.87/brave-browser-beta_1.85.87_amd64.deb
-	sha256sums = 5c74658254599c478e5b6fc90dc7616421787d20d78bef4a7d4b94ffec54dc80
+	source = https://github.com/brave/brave-browser/releases/download/v1.85.97/brave-browser-beta_1.85.97_amd64.deb
+	sha256sums = 62bab164d8d29b20ba5ced8413ec5a8bb4f1b22b4257c15afde1be2c1236c789
 
 pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.83.120
+	pkgver = 1.84.135
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1170,16 +1170,16 @@ pkgbase = brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.83.120_amd64.deb
-	sha256sums_amd64 = 13520a73a7ed04ef3c5955dad1182300586d72404d9bf853420c733332b5ecf6
-	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.83.120_arm64.deb
-	sha256sums_arm64 = 0d05fe1ca34b6a423a1bb2b9dd299c9ad980fa1ed99af91c8d481dfe4dc2fdc7
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.84.135_amd64.deb
+	sha256sums_amd64 = 98f66ab3348f90c0bbede518f82a53cd86db0ca30ab7b2e833a96772006a485a
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.84.135_arm64.deb
+	sha256sums_arm64 = 0de9246ef3a9567f8d0d2ce5b6269fb12edc13641b567e3b988695bd75105143
 
 pkgname = brave-browser-deb
 ---
 pkgbase = brave-browser-nightly-deb
 	gives = brave-browser-nightly
-	pkgver = 1.85.84
+	pkgver = 1.86.58
 	pkgdesc = The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel
 	url = https://brave.com/
 	arch = amd64
@@ -1191,8 +1191,8 @@ pkgbase = brave-browser-nightly-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-nightly-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.85.84/brave-browser-nightly_1.85.84_amd64.deb
-	sha256sums = b1810cb0e947b655ec9cd2836eceece625952c6732ba5a91a421892af4760727
+	source = https://github.com/brave/brave-browser/releases/download/v1.86.58/brave-browser-nightly_1.86.58_amd64.deb
+	sha256sums = 13741fe675e4b21b86191aee1d7b1b1637a89132da65152ccfff96e2881afa62
 
 pkgname = brave-browser-nightly-deb
 ---
@@ -2857,6 +2857,22 @@ pkgbase = epson-printer-utility-deb
 
 pkgname = epson-printer-utility-deb
 ---
+pkgbase = eqwalizer
+	pkgver = 0.25.3
+	pkgdesc = A type-checker for Erlang
+	url = https://github.com/WhatsApp/eqwalizer
+	arch = all
+	depends = openjdk-8-jre-headless | openjdk-11-jre-headless | openjdk-17-jre-headless
+	makedepends = openjdk-8-jdk-headless | openjdk-11-jdk-headless | openjdk-17-jdk-headless
+	pacdeps = sbt-deb
+	license = Apache-2.0
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: eqwalizer
+	source = https://github.com/WhatsApp/eqwalizer/archive/refs/tags/v0.25.3.tar.gz
+	sha256sums = 280721884157fa38ab959e87c0031910f067c3b8bf539497edd188def5edd035
+
+pkgname = eqwalizer
+---
 pkgbase = erlang-jsone
 	pkgver = 1.9.0
 	pkgdesc = Erlang JSON library
@@ -2874,6 +2890,26 @@ pkgbase = erlang-jsone
 	sha256sums = 677d9dd6d613f05dd9a13537769f0f50d3a855a89bf87703024eb909d070c445
 
 pkgname = erlang-jsone
+---
+pkgbase = erlang-language-platform
+	pkgver = 2025-09-11
+	pkgdesc = LSP server and CLI for the Erlang programming language
+	url = https://whatsapp.github.io/erlang-language-platform
+	arch = any
+	depends = erlang
+	makedepends = cargo-1.88 | cargo>=1.88
+	makedepends = erlang
+	makedepends = rebar3
+	makedepends = sed
+	pacdeps = erlfmt
+	pacdeps = eqwalizer
+	license = Apache-2.0
+	license = MIT
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2025-09-11.tar.gz
+	sha256sums = 7f0e9d8fb34258ffc9689a784eadbcdaa1ded6f6d91bee6689074de08b3f5bc8
+
+pkgname = erlang-language-platform
 ---
 pkgbase = erlfmt
 	pkgver = 1.7.0
@@ -4791,6 +4827,42 @@ pkgbase = grub-customizer-git
 	sha256sums = SKIP
 
 pkgname = grub-customizer-git
+---
+pkgbase = gscreenshot-git
+	gives = gscreenshot
+	pkgver = 3.11.0
+	pkgdesc = Screenshot tool supporting multiple backends
+	url = https://github.com/thenaterhood/gscreenshot
+	arch = any
+	arch = amd64
+	arch = arm64
+	depends = python3
+	depends = python3-pil
+	depends = scrot
+	depends = libgtk-3-0
+	depends = python3-gi
+	depends = slop
+	makedepends = fakeroot
+	makedepends = gettext
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-wheel
+	makedepends = python3-setuptools
+	optdepends = xclip: command line clipboard support
+	optdepends = xdg-utils: for opening screenshot files from gscreenshot
+	optdepends = pandoc: for generating the manpage at build (or use go-md2man)
+	optdepends = go-md2man: for generating the manpage at build (or use pandoc)
+	optdepends = slurp: for region selection on Wayland
+	optdepends = wl-clipboard: Wayland clipboard support
+	optdepends = python3-dbus: required when using the XDG desktop portal backend
+	conflicts = gscreenshot
+	conflicts = gscreenshot-git
+	provides = gscreenshot
+	license = GPL-3.0-only
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/thenaterhood/gscreenshot.git
+
+pkgname = gscreenshot-git
 ---
 pkgbase = gtkhash
 	pkgver = 1.5
@@ -16661,6 +16733,30 @@ pkgbase = xfce4-settings-pine-git
 
 pkgname = xfce4-settings-pine-git
 ---
+pkgbase = xgifwallpaper-git
+	gives = xgifwallpaper
+	pkgver = 0.3.2
+	pkgdesc = Use an animated GIF as wallpaper on X11 systems
+	url = https://github.com/calculon102/xgifwallpaper
+	arch = amd64
+	arch = arm64
+	depends = libc6
+	depends = libxau6
+	depends = libxcb1
+	depends = libxdmcp6
+	makedepends = gcc
+	makedepends = git
+	makedepends = cargo
+	makedepends = rustc
+	makedepends = libx11-dev
+	makedepends = libxinerama-dev
+	makedepends = libxext-dev
+	license = GPL-3.0-only
+	maintainer = aKqir24 <aKqir24&github.com>
+	source = https://github.com/calculon102/xgifwallpaper.git
+
+pkgname = xgifwallpaper-git
+---
 pkgbase = xmind-vana-deb
 	gives = xmind-vana
 	pkgver = 23.05.1745
@@ -16701,6 +16797,29 @@ pkgbase = xpadneo-dkms
 	source = rename-marker.patch::https://aur.archlinux.org/cgit/aur.git/plain/rename-marker.patch?h=xpadneo-dkms
 
 pkgname = xpadneo-dkms
+---
+pkgbase = xwayland-satellite
+	pkgver = 0.7
+	pkgdesc = Xwayland outside your Wayland
+	url = https://github.com/Supreeeme/xwayland-satellite
+	arch = amd64
+	arch = arm64
+	makedepends = clang
+	makedepends = xwayland
+	makedepends = libwayland-dev
+	makedepends = libclang-dev
+	makedepends = pkg-config
+	makedepends = cargo>=1.83.0
+	makedepends = libxcb-cursor-dev
+	makedepends = libxkbcommon-dev
+	incompatible = debian:bullseye
+	incompatible = debian:bookworm
+	incompatible = ubuntu:jammy
+	license = GPL-3.0-or-later
+	maintainer = Alxhr0 <alxhr0@proton.me>
+	source = https://github.com/Supreeeme/xwayland-satellite.git#tag=v0.7
+
+pkgname = xwayland-satellite
 ---
 pkgbase = yabridge
 	pkgver = 5.1.1
