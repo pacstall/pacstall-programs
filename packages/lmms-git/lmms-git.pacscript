@@ -56,7 +56,6 @@ source=("https://github.com/LMMS/${gives}.git"
 maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
 
-
 prepare() {
   cd "${gives}"
   mkdir -vp build
@@ -67,7 +66,6 @@ prepare() {
   sed -e 's|lib64|lib|g' -i cmake/modules/DetectMachine.cmake
   sed -e "s/\(${BASHCOMP_USER}\)/\1/g" -i cmake/modules/BashCompletion.cmake
 }
-
 
 build() {
   cd "${gives}/build"
