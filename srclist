@@ -3844,14 +3844,14 @@ pkgname = ghcup-bin
 ---
 pkgbase = ghostty-app
 	gives = ghostty
-	pkgver = 1.2.0
+	pkgver = 1.2.3
 	pkgdesc = Fast, feature-rich, and cross-platform terminal emulator
 	url = https://github.com/psadi/ghostty-appimage
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: ghostty
-	source = https://github.com/psadi/ghostty-appimage/releases/download/v1.2.0/Ghostty-1.2.0-x86_64.AppImage
-	sha256sums = 1fa61888197f80c60b818a5f8fc5f413b7e91f925290c906f417b9281958bf16
+	source = https://github.com/psadi/ghostty-appimage/releases/download/v1.2.3/Ghostty-1.2.3-x86_64.AppImage
+	sha256sums = cf239a0a9383aa9a148da2f6c6444993f871618cf4309d4db15d7be992d16725
 
 pkgname = ghostty-app
 ---
