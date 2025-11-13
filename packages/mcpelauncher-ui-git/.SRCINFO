@@ -5,6 +5,7 @@ pkgbase = mcpelauncher-ui-git
 	url = https://github.com/minecraft-linux/mcpelauncher-manifest
 	arch = amd64
 	depends = git
+	depends = qtwebengine5-dev
 	makedepends = libxcursor-dev
 	makedepends = libxrandr-dev
 	makedepends = libxinerama-dev
