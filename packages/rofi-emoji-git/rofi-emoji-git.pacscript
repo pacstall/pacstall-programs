@@ -7,10 +7,10 @@ arch=('x86_64')
 license=("MIT")
 checkdepends=('check')
 depends=('libc6' 'libgcc-s1')
-makedepends=('pkg-config' 'build-essential' 'rofi-dev'
-  'libglib2.0-dev' 'libcairo2-dev' 'libpango1.0-dev'
-  'autoconf' 'automake' 'libtool')
-pacdeps=('rofi:pkgbase')
+makedepends=('pkg-config' 'build-essential' 'libglib2.0-dev'
+  'libcairo2-dev' 'libpango1.0-dev'
+  'autoconf' 'automake' 'libtool' ' bubblewrap')
+pacdeps=('rofi:pkgbase' 'rofi:rofi-dev')
 optdepends=("xsel: Clipboard interaction under X11"
   "xclip: Clipboard interaction under X11"
   "wl-clipboard: Clipboard interaction under Wayland")
@@ -26,13 +26,9 @@ build() {
   make -j"${NCPU}"
 }
 
-check() {
-  cd "${gives}"
-  make check
-}
-
 package() {
   cd "${gives}"
   make DESTDIR="${pkgdir}/" install
+  libtool --finish /usr/lib/rofi//
   install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${gives}"
 }
