@@ -9,7 +9,14 @@ maintainer=("aKqir24 <aKqir24@github.com>")
 conflicts=("${gives}-qt")
 external_connection=true
 pacdeps=('mcpelauncher-linux-git')
-depends=('git')
+depends=(
+  'git'
+  'qtwebengine5-dev'
+  'libqt5quickcontrols2-5'
+  'libqt5quicktemplates2-5'
+  'qml-module-qtquick-controls2'
+  'qml-module-qtquick-templates2'
+)
 makedepends=(
   'libxcursor-dev'
   'libxrandr-dev'
