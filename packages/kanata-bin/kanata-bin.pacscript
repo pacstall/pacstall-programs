@@ -22,6 +22,7 @@ package() {
 
   install -Dm755 "${pkgname}~${pkgver}/kanata_linux_x64" "${pkgdir}/usr/bin/kanata"
   install -Dm644 "LICENSE" "${pkgdir}/usr/share/doc/${gives}/copyright"
+
   # Create and install systemd service file
   mkdir -p "${pkgdir}/etc/systemd/system/"
   # shellcheck disable=SC2016
@@ -39,11 +40,9 @@ Restart=no
 [Install]
 WantedBy=default.target' | tee "${pkgdir}/etc/systemd/system/kanata.service" > /dev/null
 
-  # Create and install default keyboard configuration only when the system
-  # doesn't already have an /etc/kanata directory (avoid overwriting existing)
-  if [[ ! -d "/etc/kanata" ]]; then
-    mkdir -p "${pkgdir}/etc/kanata/"
-    echo ';; Caps to escape on tap / control on hold configuration for Kanata
+  # Create and install default configuration file
+  mkdir -p "${pkgdir}/etc/kanata/"
+  echo ';; Caps to escape on tap / control on hold configuration for Kanata
 
 (defsrc
   caps
@@ -58,7 +57,6 @@ WantedBy=default.target' | tee "${pkgdir}/etc/systemd/system/kanata.service" > /
   ;; replace caps just escape (no control key) by using the below line instead of "caps (tap-hold 100 100 esc lctl)"
   ;; caps esc
 )' | tee "${pkgdir}/etc/kanata/config.kbd" > /dev/null
-  fi
 }
 
 post_install() {
