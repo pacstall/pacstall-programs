@@ -17,6 +17,7 @@ sha256sums=(
   'fe6ba3768c1a7a60d94628a613f168f464b7ab88d34077e26896a7d3967e5eb6'
   'a5681bf9b05db14d86776930017c647ad9e6e56ff6bbcfdf21e5848288dfaf1b'
 )
+backup=('etc/kanata/config.kbd')
 
 package() {
 
