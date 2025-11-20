@@ -1,0 +1,23 @@
+pkgbase = kitty-bin
+	gives = kitty
+	pkgver = 0.44.0
+	pkgdesc = Fast, feature-rich GPU based terminal emulator
+	url = https://sw.kovidgoyal.net/kitty/
+	arch = amd64
+	depends = libc6
+	depends = libdbus-1-3
+	depends = libfontconfig1
+	depends = libx11-6
+	depends = libx11-xcb1
+	depends = libxcb-xkb1
+	depends = libxcursor1
+	depends = xkb-data
+	recommends = libcanberra0
+	suggests = imagemagick
+	license = GPL-3.0-only
+	maintainer = Tom Dryer <tomdryer.com@gmail.com>
+	repology = project: kitty-terminal
+	source = https://github.com/kovidgoyal/kitty/releases/download/v0.44.0/kitty-0.44.0-x86_64.txz
+	sha256sums = 5b502801c8814c9fc5a2e8d9cfdf1c2ec5ee78b3e647f898704ad537a2ff452d
+
+pkgname = kitty-bin
