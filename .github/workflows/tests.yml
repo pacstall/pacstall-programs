@@ -32,7 +32,7 @@ jobs:
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
       - id: checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       - id: paths
         uses: dorny/paths-filter@v3
         with:
