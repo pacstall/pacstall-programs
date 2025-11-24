@@ -1,13 +1,13 @@
 pkgname="lazygit"
 gives="lazygit"
 arch=("amd64")
-pkgver="0.55.0"
+pkgver="0.56.0"
 source=("@${pkgname}~${pkgver}::https://github.com/jesseduffield/lazygit/releases/download/v${pkgver}/lazygit_${pkgver}_Linux_x86_64.tar.gz")
 url='https://github.com/jesseduffield/lazygit'
 pkgdesc="simple terminal UI for git commands"
 maintainer=("Thomas Crha <thomas@9bitbyte.com>" "raik199x <raik199x@mail.ru>")
 depends=("git")
-sha256sums=("e7c1c2d127ebdb241398f3daf05907a71a0c977ff12beba6b8ebdb069f9dba6a")
+sha256sums=("ced13c2ae074bbf6c201bc700ee2971e193b811c3b2ae0ed4d00d6225c6c9ab7")
 
 package() {
   cd "${pkgname}~${pkgver}"
