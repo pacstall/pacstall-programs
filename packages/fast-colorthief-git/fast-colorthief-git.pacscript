@@ -11,6 +11,8 @@ depends=(
 )
 makedepends=(
   "cmake"
+  "build-essential"
+  "python3-dev"
   "python3-build"
   "python3-installer"
   "python3-wheel"
