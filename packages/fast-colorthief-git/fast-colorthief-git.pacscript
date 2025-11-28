@@ -10,8 +10,6 @@ depends=(
   "python3-numpy"
 )
 makedepends=(
-  "fakeroot"
-  "gettext"
   "python3-build"
   "python3-installer"
   "python3-wheel"
