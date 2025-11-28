@@ -10,14 +10,13 @@ depends=(
   "python3-pil"
   "python3-scipy"
 )
-makedeps=(
-  "python3"
-  "python3-dev"
+makedepends=(
   "build-essential"
+  "python3-dev"
   "python3-build"
+  "python3-installer"
   "python3-wheel"
   "python3-setuptools"
-  "python3-installer"
 )
 provides=("${gives}")
 source=("https://github.com/metakirby5/colorz.git")
