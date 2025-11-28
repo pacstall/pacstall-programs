@@ -30,5 +30,5 @@ build() {
 package() {
   cd "${gives}"
   python3 -m installer --destdir="${pkgdir}" dist/*.whl
-  install -D -m644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+  install -D -m644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
