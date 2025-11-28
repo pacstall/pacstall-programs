@@ -12,6 +12,7 @@ depends=(
 )
 makedeps=(
   "python3-build"
+  "python3-wheel"
   "python3-setuptools"
   "python3-installer"
 )
