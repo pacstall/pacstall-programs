@@ -1,0 +1,24 @@
+pkgbase = python-desktop-entry-lib
+	gives = desktop-entry-lib
+	pkgver = 5.0
+	pkgdesc = Library for working with .desktop files
+	url = https://codeberg.org/JakobDev/desktop-entry-lib
+	arch = any
+	depends = python3
+	depends = xdg-user-dirs
+	depends = desktop-file-utils
+	makedepends = python3
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	makedepends = python3-build
+	makedepends = python3-sphinx
+	makedepends = python3-installer
+	makedepends = make
+	optdepends = python3-jeepney: Install desktop entries using xdg-desktop-portal
+	pacdeps = python3‑sphinx-furo
+	pacdeps = python3‑sphinx-copybutton
+	license = BSD-2-Clause
+	source = python-desktop-entry-lib-5.0.tar.gz::https://codeberg.org/JakobDev/desktop-entry-lib/archive/5.0.tar.gz
+	sha256sums = 726f4a654f4e4c4c17242245bc5f17595990d3b4928c16fa6b9140ccea31f7db
+
+pkgname = python-desktop-entry-lib
