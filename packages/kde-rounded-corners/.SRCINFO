@@ -1,0 +1,29 @@
+pkgbase = kde-rounded-corners
+	gives = kde-rounded-corners
+	pkgver = 0.8.5
+	pkgdesc = Makes the window borders round
+	url = https://github.com/matinlotfali/KDE-Rounded-Corners
+	arch = all
+	depends = libdrm2
+	depends = kwin-common>=4:6.0.0
+	depends = libkf6kcmutils6
+	depends = qt6-base-private-dev
+	depends = qt6-base-dev-tools
+	makedepends = git
+	makedepends = cmake
+	makedepends = g++
+	makedepends = extra-cmake-modules
+	makedepends = kwin-dev>=4:6.0.0
+	makedepends = qt6-base-private-dev
+	makedepends = qt6-base-dev-tools
+	makedepends = libkf6kcmutils-dev
+	makedepends = libdrm-dev
+	breaks = kde-rounded-corners-git
+	breaks = kde-rounded-corners-deb
+	license = GPL-3.0-only
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: kde-rounded-corners
+	source = https://github.com/matinlotfali/KDE-Rounded-Corners/archive/refs/tags/v0.8.5.tar.gz
+	sha256sums = 363dab6461c1bcb25331e2e99350987f8d29a95c9fb74fd7956a76bf5dc678f2
+
+pkgname = kde-rounded-corners
