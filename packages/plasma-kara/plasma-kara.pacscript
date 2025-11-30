@@ -15,7 +15,6 @@ package() {
   destdir="${pkgdir}/usr/local/share/plasma/plasmoids/org.dhruv8sh.kara"
   mkdir -p "${destdir}"
   cd "${srcdir}/kara-${pkgver}"
-  ls "${srcdir}"
   cp -r "./contents" "./metadata.json" "${destdir}"
-  install -Dm644 "./LICENSE" "${pkgdir}/usr/share/licenses/${gives}/LICENSE"
+  install -Dm644 "./LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
