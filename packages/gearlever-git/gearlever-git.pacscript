@@ -7,7 +7,7 @@ url='https://mijorus.it/projects/gearlever'
 license=('GPL-3.0')
 maintainer=('aKqir24 <aKqir24@github.com>')
 makedepends=('meson' 'ninja-build' 'python3' 'pkg-config' 'libgtk-4-dev')
-depends=('libadwaita-1-dev' 'python3-xdg' 'python3-desktop-entry-lib' 'python3-gi' 'python3-ftputil')
+depends=('libadwaita-1-dev' 'python3-xdg')
 source=("https://github.com/mijorus/${gives}.git")
 
 prepare() {
