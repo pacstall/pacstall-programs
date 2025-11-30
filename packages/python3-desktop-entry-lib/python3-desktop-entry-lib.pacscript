@@ -7,13 +7,13 @@ arch=('any')
 license=('BSD-2-Clause')
 depends=('python3' 'xdg-user-dirs' 'desktop-file-utils')
 makedepends=(
-   'python3'
-   'python3-setuptools'
-   'python3-wheel'
-   'python3-build'
-   'python3-sphinx'
-   'python3-installer'
-   'make'
+  'python3'
+  'python3-setuptools'
+  'python3-wheel'
+  'python3-build'
+  'python3-sphinx'
+  'python3-installer'
+  'make'
 )
 pacdeps=('python3‑sphinx-furo' 'python3‑sphinx-copybutton')
 optdepends=("python3-jeepney: Install desktop entries using xdg-desktop-portal")
@@ -21,18 +21,18 @@ source=("${pkgname}-${pkgver}.tar.gz::https://codeberg.org/JakobDev/${gives}/arc
 sha256sums=("726f4a654f4e4c4c17242245bc5f17595990d3b4928c16fa6b9140ccea31f7db")
 
 build() {
-      cd ${gives}
-      python -m build --wheel --no-isolation
+  cd ${gives}
+  python -m build --wheel --no-isolation
 
-      cd docs
-      make man html
+  cd docs
+  make man html
 }
 
 package() {
-      cd ${gives}
-      python -m installer --destdir "$pkgdir" dist/*.whl
-      install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
-      install -Dm644 "docs/_build/man/desktop-entry-lib.1" -t "${pkgdir}/usr/share/man/man1"
-      mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
-      cp -r docs/_build/html/* "${pkgdir}/usr/share/doc//${pkgname}"
+  cd ${gives}
+  python -m installer --destdir "$pkgdir" dist/*.whl
+  install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+  install -Dm644 "docs/_build/man/desktop-entry-lib.1" -t "${pkgdir}/usr/share/man/man1"
+  mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+  cp -r docs/_build/html/* "${pkgdir}/usr/share/doc//${pkgname}"
 }
