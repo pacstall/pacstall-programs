@@ -11421,6 +11421,21 @@ pkgbase = planner-git
 
 pkgname = planner-git
 ---
+pkgbase = plasma-compact-shutdown-git
+	gives = plasma-compact-shutdown
+	pkgver = 1.2
+	pkgdesc = KDE applet for a compact shutdown menu
+	url = https://github.com/ChickenLegsOz/org.kde.plasma.compact-shutdown
+	arch = all
+	depends = plasma-desktop>=4:6.0.0
+	breaks = plasma-compact-shutdown
+	license = GPL-3.0-only
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	source = plasma-compact-shutdown-git::https://github.com/ChickenLegsOz/org.kde.plasma.compact-shutdown.git
+	sha256sums = SKIP
+
+pkgname = plasma-compact-shutdown-git
+---
 pkgbase = plexmediaserver-deb
 	gives = plexmediaserver
 	pkgver = 1.41.8.9834-071366d65
