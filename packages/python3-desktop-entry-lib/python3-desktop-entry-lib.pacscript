@@ -33,7 +33,7 @@ build() {
 
 package() {
   cd "${gives}"
-  python3 -m installer --destdir="$pkgdir" dist/*.whl
+  python3 -m installer --destdir="${pkgdir}" dist/*.whl
   install -Dm644 "LICENSE" -t "${pkgdir}/usr/share/licenses/${pkgname}"
   install -Dm644 "docs/_build/man/desktop-entry-lib.1" -t "${pkgdir}/usr/share/man/man1"
   mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
