@@ -18,7 +18,7 @@ prepare() {
   mkdir build
   cd build
   cmake ..
-  cmake --build . -j
+  cmake --build . -j"${NCPU}"
 }
 
 package() {
