@@ -1,7 +1,7 @@
 pkgname="colorz-git"
 gives="colorz"
 pkgver="1.0.3"
-pkgdesc="k-means color scheme generator."
+pkgdesc="k-means color scheme generator"
 arch=("any")
 url='https://github.com/metakirby5/colorz'
 license=("MIT")
