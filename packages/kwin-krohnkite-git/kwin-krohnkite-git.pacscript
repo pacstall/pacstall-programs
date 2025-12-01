@@ -1,5 +1,5 @@
-gives='kwin-krohnkite'
-pkgname="${gives}-git"
+pkgname="kwin-krohnkite-git"
+gives="kwin-krohnkite"
 pkgdesc="Dynamic tiling extension for KWin 6 inspired by dwm"
 pkgver='0.9.9.2'
 repology=('project: kwin-scripts-krohnkite')
