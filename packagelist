@@ -151,6 +151,7 @@ f1multiviewer-deb
 facetimehd-firmware
 fake-ubuntu-advantage-tools-deb
 fast
+fast-colorthief-git
 fastfetch-git
 fblog-bin
 feishin-app
@@ -588,6 +589,7 @@ picom
 pipes.sh-bin
 pipewire
 planner-git
+plasma-compact-shutdown-git
 plexmediaserver-deb
 polybar
 pomatez-deb

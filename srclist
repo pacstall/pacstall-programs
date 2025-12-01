@@ -2892,7 +2892,7 @@ pkgbase = erlang-jsone
 pkgname = erlang-jsone
 ---
 pkgbase = erlang-language-platform
-	pkgver = 2025-09-11
+	pkgver = 2025-11-04
 	pkgdesc = LSP server and CLI for the Erlang programming language
 	url = https://whatsapp.github.io/erlang-language-platform
 	arch = any
@@ -2906,8 +2906,8 @@ pkgbase = erlang-language-platform
 	license = Apache-2.0
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
-	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2025-09-11.tar.gz
-	sha256sums = 7f0e9d8fb34258ffc9689a784eadbcdaa1ded6f6d91bee6689074de08b3f5bc8
+	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2025-11-04.tar.gz
+	sha256sums = 625afec4217799df80116ac68eaf58a20dd73fa8b1e7c19f1a0e829bb1a56bb0
 
 pkgname = erlang-language-platform
 ---
@@ -11396,6 +11396,21 @@ pkgbase = planner-git
 
 pkgname = planner-git
 ---
+pkgbase = plasma-compact-shutdown-git
+	gives = plasma-compact-shutdown
+	pkgver = 1.2
+	pkgdesc = KDE applet for a compact shutdown menu
+	url = https://github.com/ChickenLegsOz/org.kde.plasma.compact-shutdown
+	arch = all
+	depends = plasma-desktop>=4:6.0.0
+	breaks = plasma-compact-shutdown
+	license = GPL-3.0-only
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	source = plasma-compact-shutdown-git::https://github.com/ChickenLegsOz/org.kde.plasma.compact-shutdown.git
+	sha256sums = SKIP
+
+pkgname = plasma-compact-shutdown-git
+---
 pkgbase = plexmediaserver-deb
 	gives = plexmediaserver
 	pkgver = 1.41.8.9834-071366d65
@@ -17065,7 +17080,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.17.7b
+	pkgver = 1.17.10b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -17102,8 +17117,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.17.7b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 2a61f0146b870485896ca255faef92aa60a51da3e54fae8a8c48d99dd99059f9
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.17.10b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = b5eb0a384e7bc6096d98482708467978de8822e89aa7ecaca45b73f54d38f11f
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -17113,8 +17128,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.17.7b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = 7ecbe3fcb4c613f0a8e48a363ff036f2a526f50cb4d1df67b4b057c692f674e5
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.17.10b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 1a6235803dc4920be6af34de2973baf4091a5c449ebf76f30f208965dff6e607
 
 pkgname = zen-browser-bin
 ---
