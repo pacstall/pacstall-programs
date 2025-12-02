@@ -1,5 +1,5 @@
 pkgname="ubxi-lomiri-desktop"
-arch=("all")
+arch=("amd64" "arm64" "riscv64")
 pkgver="0.0.1"
 source=("https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty")
 depends=(
@@ -15,6 +15,7 @@ depends=(
   "lomiri-keyboard-german" "lomiri-keyboard-italian" "lomiri-keyboard-portuguese" "lomiri-keyboard-russian"
   "lomiri-keyboard-spanish" "lomiri-keyboard-swedish"
 )
+depends_amd64=("mir-graphics-drivers-nvidia")
 pacdeps=("rhino-ubxi-core")
 priority='required'
 pkgdesc="UBXI Lomiri Desktop"

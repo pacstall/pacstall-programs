@@ -15061,7 +15061,9 @@ pkgbase = ubxi-lomiri-desktop
 	pkgver = 0.0.1
 	pkgdesc = UBXI Lomiri Desktop
 	priority = required
-	arch = all
+	arch = amd64
+	arch = arm64
+	arch = riscv64
 	depends = alsa-ucm-conf
 	depends = ciborium
 	depends = contactsd
@@ -15114,6 +15116,7 @@ pkgbase = ubxi-lomiri-desktop
 	compatible = ubuntu:*
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty
+	depends_amd64 = mir-graphics-drivers-nvidia
 
 pkgname = ubxi-lomiri-desktop
 ---
