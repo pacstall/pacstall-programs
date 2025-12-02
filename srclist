@@ -1608,6 +1608,28 @@ pkgbase = cmatrix
 
 pkgname = cmatrix
 ---
+pkgbase = colorz-git
+	gives = colorz
+	pkgver = 1.0.3
+	pkgdesc = k-means color scheme generator
+	url = https://github.com/metakirby5/colorz
+	arch = any
+	depends = python3
+	depends = python3-pil
+	depends = python3-scipy
+	makedepends = build-essential
+	makedepends = python3-dev
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-wheel
+	makedepends = python3-setuptools
+	provides = colorz
+	license = MIT
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/metakirby5/colorz.git
+
+pkgname = colorz-git
+---
 pkgbase = com.github.mirkobrombin.bottles-deb
 	gives = com.github.mirkobrombin.bottles
 	pkgver = 1
