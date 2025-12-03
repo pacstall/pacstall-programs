@@ -16851,7 +16851,7 @@ pkgbase = xgifwallpaper-git
 	makedepends = libxinerama-dev
 	makedepends = libxext-dev
 	license = GPL-3.0-only
-	maintainer = aKqir24 <aKqir24&github.com>
+	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/calculon102/xgifwallpaper.git
 
 pkgname = xgifwallpaper-git
