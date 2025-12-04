@@ -1,4 +1,4 @@
-pkgname="python-desktop-entry-lib"
+pkgname="python3-desktop-entry-lib"
 gives="desktop-entry-lib"
 pkgver="5.0"
 pkgdesc="Library for working with .desktop files"
