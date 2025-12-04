@@ -19,6 +19,7 @@ makedepends=(
   'python3-ftputil'
   'make'
 )
+provides=("${pkgname}")
 optdepends=("python3-jeepney: Install desktop entries using xdg-desktop-portal")
 source=("${pkgname}-${pkgver}.tar.gz::https://codeberg.org/JakobDev/${gives}/archive/${pkgver}.tar.gz")
 sha256sums=("726f4a654f4e4c4c17242245bc5f17595990d3b4928c16fa6b9140ccea31f7db")
