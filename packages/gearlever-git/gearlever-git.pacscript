@@ -13,7 +13,6 @@ source=("https://github.com/mijorus/${gives}.git")
 
 prepare() {
   cd "${gives}"
-
   # Some small fixes & patches
   sed -i "s/\(\['arch'\]\)/['uname', '-m']/g" src/AppDetails.py src/models/UpdateManager.py
   sed -i "s/7zz/7z/g" src/providers/AppImageProvider.py
