@@ -15,9 +15,9 @@ prepare() {
   cd "${gives}"
 
   # Some small fixes & patches
-  sed -i "s/\(\['arch'\]\)/['uname', '-m']/g" src/AppDetails.py src/models/UpdateManager.py
+  sed -i "s/\(\['arch'\]\)/['uname', '-m']/g" src/AppDetails.py
   sed -i "s/7zz/7z/g" src/providers/AppImageProvider.py
-  sed -i "s|get_appimage_offset|/usr/lib/gearlever/get_appimage_offset|g" src/providers/AppImageProvider.py
+  sed -i "s/get_appimage_offset/\/usr\/lib\/gearlever\/get_appimage_offset/g" src/providers/AppImageProvider.py
   find . -name "meson.build" -exec sed -i 's/\.path()/\.full_path()/g' {} +
 }
 
