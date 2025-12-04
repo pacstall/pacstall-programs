@@ -1608,6 +1608,28 @@ pkgbase = cmatrix
 
 pkgname = cmatrix
 ---
+pkgbase = colorz-git
+	gives = colorz
+	pkgver = 1.0.3
+	pkgdesc = k-means color scheme generator
+	url = https://github.com/metakirby5/colorz
+	arch = any
+	depends = python3
+	depends = python3-pil
+	depends = python3-scipy
+	makedepends = build-essential
+	makedepends = python3-dev
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-wheel
+	makedepends = python3-setuptools
+	provides = colorz
+	license = MIT
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/metakirby5/colorz.git
+
+pkgname = colorz-git
+---
 pkgbase = com.github.mirkobrombin.bottles-deb
 	gives = com.github.mirkobrombin.bottles
 	pkgver = 1
@@ -2892,7 +2914,7 @@ pkgbase = erlang-jsone
 pkgname = erlang-jsone
 ---
 pkgbase = erlang-language-platform
-	pkgver = 2025-09-11
+	pkgver = 2025-11-04
 	pkgdesc = LSP server and CLI for the Erlang programming language
 	url = https://whatsapp.github.io/erlang-language-platform
 	arch = any
@@ -2906,8 +2928,8 @@ pkgbase = erlang-language-platform
 	license = Apache-2.0
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
-	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2025-09-11.tar.gz
-	sha256sums = 7f0e9d8fb34258ffc9689a784eadbcdaa1ded6f6d91bee6689074de08b3f5bc8
+	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2025-11-04.tar.gz
+	sha256sums = 625afec4217799df80116ac68eaf58a20dd73fa8b1e7c19f1a0e829bb1a56bb0
 
 pkgname = erlang-language-platform
 ---
@@ -3041,6 +3063,31 @@ pkgbase = fake-ubuntu-advantage-tools-deb
 	sha256sums = 78a153d33409abfd8a487bfcba335f184b9d52d88d6820f5deaa2f9027043d37
 
 pkgname = fake-ubuntu-advantage-tools-deb
+---
+pkgbase = fast-colorthief-git
+	gives = fast-colorthief
+	pkgver = 0.0.5
+	pkgdesc = Selection of most dominant colors in image using Modified Median Cut Quantization
+	url = https://github.com/bedapisl/fast-colorthief
+	arch = any
+	arch = amd64
+	depends = python3
+	depends = python3-pil
+	depends = python3-numpy
+	makedepends = cmake
+	makedepends = build-essential
+	makedepends = python3-dev
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-wheel
+	makedepends = python3-setuptools
+	conflicts = fast-colorthief
+	conflicts = fast-colorthief-git
+	provides = fast-colorthief
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/bedapisl/fast-colorthief.git
+
+pkgname = fast-colorthief-git
 ---
 pkgbase = fast
 	pkgver = 0.0.4
@@ -4917,7 +4964,7 @@ pkgbase = hakuneko-deb
 pkgname = hakuneko-deb
 ---
 pkgbase = hamclock-big
-	pkgver = 4.20
+	pkgver = 4.21
 	pkgdesc = Clock and world map with extra features for amateur radio (1600x960 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	arch = any
@@ -4937,15 +4984,15 @@ pkgbase = hamclock-big
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-big
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.20.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.21.tar.gz
 	source = hamclock.desktop
-	sha256sums = 612a49653ae4d4edd43e6840d1de513b536772ffc6d347821fed76a962cfbd0f
+	sha256sums = 0349f395e3b889280dc30bf5d285b168b10f65459de08c0aab06882e76b1144b
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-big
 ---
 pkgbase = hamclock-bigger
-	pkgver = 4.20
+	pkgver = 4.21
 	pkgdesc = Clock and world map with extra features for amateur radio (2400x1440 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	arch = any
@@ -4965,15 +5012,15 @@ pkgbase = hamclock-bigger
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-bigger
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.20.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.21.tar.gz
 	source = hamclock.desktop
-	sha256sums = 612a49653ae4d4edd43e6840d1de513b536772ffc6d347821fed76a962cfbd0f
+	sha256sums = 0349f395e3b889280dc30bf5d285b168b10f65459de08c0aab06882e76b1144b
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-bigger
 ---
 pkgbase = hamclock-huge
-	pkgver = 4.20
+	pkgver = 4.21
 	pkgdesc = Clock and world map with extra features for amateur radio (3200x1920 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	arch = any
@@ -4993,15 +5040,15 @@ pkgbase = hamclock-huge
 	replaces = hamclock-bigger
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock-huge
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.20.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.21.tar.gz
 	source = hamclock.desktop
-	sha256sums = 612a49653ae4d4edd43e6840d1de513b536772ffc6d347821fed76a962cfbd0f
+	sha256sums = 0349f395e3b889280dc30bf5d285b168b10f65459de08c0aab06882e76b1144b
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock-huge
 ---
 pkgbase = hamclock
-	pkgver = 4.20
+	pkgver = 4.21
 	pkgdesc = Clock and world map with extra features for amateur radio (800x480 version)
 	url = https://clearskyinstitute.com/ham/HamClock
 	arch = any
@@ -5021,9 +5068,9 @@ pkgbase = hamclock
 	replaces = hamclock-huge
 	maintainer = Roy Williams <fang64@gmail.com>
 	repology = project: hamclock
-	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.20.tar.gz
+	source = https://github.com/fang64/hamclock/archive/refs/tags/v4.21.tar.gz
 	source = hamclock.desktop
-	sha256sums = 612a49653ae4d4edd43e6840d1de513b536772ffc6d347821fed76a962cfbd0f
+	sha256sums = 0349f395e3b889280dc30bf5d285b168b10f65459de08c0aab06882e76b1144b
 	sha256sums = df56e16e9bfab4a6259fd8e9fdffbe8f8d24ff395d2d27434dfd4bfe4adfa85d
 
 pkgname = hamclock
@@ -11399,6 +11446,21 @@ pkgbase = planner-git
 
 pkgname = planner-git
 ---
+pkgbase = plasma-compact-shutdown-git
+	gives = plasma-compact-shutdown
+	pkgver = 1.2
+	pkgdesc = KDE applet for a compact shutdown menu
+	url = https://github.com/ChickenLegsOz/org.kde.plasma.compact-shutdown
+	arch = all
+	depends = plasma-desktop>=4:6.0.0
+	breaks = plasma-compact-shutdown
+	license = GPL-3.0-only
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	source = plasma-compact-shutdown-git::https://github.com/ChickenLegsOz/org.kde.plasma.compact-shutdown.git
+	sha256sums = SKIP
+
+pkgname = plasma-compact-shutdown-git
+---
 pkgbase = plexmediaserver-deb
 	gives = plexmediaserver
 	pkgver = 1.41.8.9834-071366d65
@@ -11909,6 +11971,33 @@ pkgbase = python3-darkdetect
 	sha256sums = 100eea1a610bb19610a68b11ff468c13b1c2863d1254c2d5b37d198a1beb3227
 
 pkgname = python3-darkdetect
+---
+pkgbase = python-desktop-entry-lib
+	gives = desktop-entry-lib
+	pkgver = 5.0
+	pkgdesc = Library for working with .desktop files
+	url = https://codeberg.org/JakobDev/desktop-entry-lib
+	arch = any
+	depends = python3
+	depends = xdg-user-dirs
+	depends = desktop-file-utils
+	makedepends = python3
+	makedepends = furo
+	makedepends = python3-sphinx-copybutton
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	makedepends = python3-build
+	makedepends = python3-sphinx
+	makedepends = python3-installer
+	makedepends = python3-ftputil
+	makedepends = make
+	optdepends = python3-jeepney: Install desktop entries using xdg-desktop-portal
+	license = BSD-2-Clause
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = python-desktop-entry-lib-5.0.tar.gz::https://codeberg.org/JakobDev/desktop-entry-lib/archive/5.0.tar.gz
+	sha256sums = 726f4a654f4e4c4c17242245bc5f17595990d3b4928c16fa6b9140ccea31f7db
+
+pkgname = python-desktop-entry-lib
 ---
 pkgbase = python3-editables
 	pkgver = 0.5
@@ -16761,7 +16850,7 @@ pkgbase = xgifwallpaper-git
 	makedepends = libxinerama-dev
 	makedepends = libxext-dev
 	license = GPL-3.0-only
-	maintainer = aKqir24 <aKqir24&github.com>
+	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/calculon102/xgifwallpaper.git
 
 pkgname = xgifwallpaper-git
@@ -17041,7 +17130,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.17.7b
+	pkgver = 1.17.10b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -17078,8 +17167,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.17.7b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 2a61f0146b870485896ca255faef92aa60a51da3e54fae8a8c48d99dd99059f9
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.17.10b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = b5eb0a384e7bc6096d98482708467978de8822e89aa7ecaca45b73f54d38f11f
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -17089,8 +17178,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.17.7b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = 7ecbe3fcb4c613f0a8e48a363ff036f2a526f50cb4d1df67b4b057c692f674e5
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.17.10b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 1a6235803dc4920be6af34de2973baf4091a5c449ebf76f30f208965dff6e607
 
 pkgname = zen-browser-bin
 ---
