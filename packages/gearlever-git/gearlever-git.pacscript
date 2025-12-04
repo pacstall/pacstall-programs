@@ -1,6 +1,6 @@
 pkgname="gearlever-git"
 gives="gearlever"
-pkgver="3.4.3"
+pkgver="4.0.3"
 pkgdesc="Manage AppImages with ease"
 arch=('any')
 url='https://mijorus.it/projects/gearlever'
