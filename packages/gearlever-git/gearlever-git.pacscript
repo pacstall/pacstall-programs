@@ -1,18 +1,18 @@
 pkgname="gearlever-git"
 gives="gearlever"
-pkgver="3.4.3"
+pkgver="4.0.3"
 pkgdesc="Manage AppImages with ease"
 arch=('any')
 url='https://mijorus.it/projects/gearlever'
 license=('GPL-3.0')
 maintainer=('aKqir24 <aKqir24@github.com>')
 makedepends=('meson' 'ninja-build' 'python3' 'pkg-config' 'libgtk-4-dev')
-depends=('libadwaita-1-dev' 'python3-xdg')
+depends=('libadwaita-1-dev' 'python3-xdg' 'python3-gi' 'python3-ftputil' 'python3-dbus')
+pacdeps=('python3-desktop-entry-lib')
 source=("https://github.com/mijorus/${gives}.git")
 
 prepare() {
   cd "${gives}"
-
   # Some small fixes & patches
   sed -i "s/\(\['arch'\]\)/['uname', '-m']/g" src/AppDetails.py src/models/UpdateManager.py
   sed -i "s/7zz/7z/g" src/providers/AppImageProvider.py
