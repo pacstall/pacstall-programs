@@ -1,4 +1,4 @@
-pkgbase = python-desktop-entry-lib
+pkgbase = python3-desktop-entry-lib
 	gives = desktop-entry-lib
 	pkgver = 5.0
 	pkgdesc = Library for working with .desktop files
@@ -18,9 +18,10 @@ pkgbase = python-desktop-entry-lib
 	makedepends = python3-ftputil
 	makedepends = make
 	optdepends = python3-jeepney: Install desktop entries using xdg-desktop-portal
+	provides = python3-desktop-entry-lib
 	license = BSD-2-Clause
 	maintainer = aKqir24 <aKqir24@github.com>
-	source = python-desktop-entry-lib-5.0.tar.gz::https://codeberg.org/JakobDev/desktop-entry-lib/archive/5.0.tar.gz
+	source = python3-desktop-entry-lib-5.0.tar.gz::https://codeberg.org/JakobDev/desktop-entry-lib/archive/5.0.tar.gz
 	sha256sums = 726f4a654f4e4c4c17242245bc5f17595990d3b4928c16fa6b9140ccea31f7db
 
-pkgname = python-desktop-entry-lib
+pkgname = python3-desktop-entry-lib
