@@ -615,6 +615,7 @@ pulsar-deb
 pycharm-community-bin
 python3-anyascii
 python3-darkdetect
+python3-desktop-entry-lib
 python3-editables
 python3-flit-core
 python3-fvs
