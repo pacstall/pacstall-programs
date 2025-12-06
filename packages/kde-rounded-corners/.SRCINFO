@@ -1,6 +1,6 @@
 pkgbase = kde-rounded-corners
 	gives = kde-rounded-corners
-	pkgver = 0.8.5
+	pkgver = 0.8.6
 	pkgdesc = Makes the window borders round
 	url = https://github.com/matinlotfali/KDE-Rounded-Corners
 	arch = all
@@ -23,7 +23,7 @@ pkgbase = kde-rounded-corners
 	license = GPL-3.0-only
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: kde-rounded-corners
-	source = https://github.com/matinlotfali/KDE-Rounded-Corners/archive/refs/tags/v0.8.5.tar.gz
-	sha256sums = 363dab6461c1bcb25331e2e99350987f8d29a95c9fb74fd7956a76bf5dc678f2
+	source = https://github.com/matinlotfali/KDE-Rounded-Corners/archive/refs/tags/v0.8.6.tar.gz
+	sha256sums = 11201977db534c07e193cbd3466921c69477287cb1d7fbe452d6887778667cc0
 
 pkgname = kde-rounded-corners
