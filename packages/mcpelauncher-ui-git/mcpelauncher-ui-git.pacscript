@@ -38,7 +38,6 @@ makedepends=(
   qml6-module-qtquick
   qml6-module-qtquick-layouts
   qml6-module-qtquick-controls
-  qml6-module-qtquick-controls2
   qml6-module-qtquick-window
   qml6-module-qtquick-dialogs
   qml6-module-qt-labs-settings
