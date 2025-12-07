@@ -23,7 +23,7 @@ prepare() {
 
 build() {
   cd "${srcdir}/${pkgname}"
-  npm run tsc --
+  npm run tsc
 }
 
 package() {
