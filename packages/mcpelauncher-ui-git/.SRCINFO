@@ -30,7 +30,6 @@ pkgbase = mcpelauncher-ui-git
 	makedepends = qml6-module-qtquick
 	makedepends = qml6-module-qtquick-layouts
 	makedepends = qml6-module-qtquick-controls
-	makedepends = qml6-module-qtquick-controls2
 	makedepends = qml6-module-qtquick-window
 	makedepends = qml6-module-qtquick-dialogs
 	makedepends = qml6-module-qt-labs-settings
