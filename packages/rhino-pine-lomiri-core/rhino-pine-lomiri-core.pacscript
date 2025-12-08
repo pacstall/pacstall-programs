@@ -13,6 +13,7 @@ arch=("all")
 pkgver="2025.3"
 
 package() {
+  mkdir -p "${pkgdir}/usr/share/wireplumber/wireplumber.conf.d"
   echo 'monitor.alsa.rules = [
     {
       matches = [
