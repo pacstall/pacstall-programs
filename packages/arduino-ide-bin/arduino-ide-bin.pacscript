@@ -7,7 +7,7 @@ maintainer=("DismissedGuy <me@mikealmel.ooo>")
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 source=(
   "@${pkgname}~${pkgver}::https://downloads.arduino.cc/${gives}/${gives}_${pkgver}_Linux_64bit.zip"
-  "arduino.svg::https://www.arduino.cc/wiki/370832ed4114dd35d498f2f449b4781e/arduino.svg"
+  "arduino.svg::https://upload.wikimedia.org/wikipedia/commons/7/73/Arduino_IDE_logo.svg"
   "${gives}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${gives}.desktop"
 )
 pkgdesc="An open-source IDE that makes it easy to write code and upload it to Arduino boards"

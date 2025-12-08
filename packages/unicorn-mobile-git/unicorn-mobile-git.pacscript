@@ -2,7 +2,7 @@ pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="5"
+pkgrel="6"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -126,6 +126,7 @@ post_install() {
     mkdir -p "${homedir}/.lightpad"
   fi
   cp /etc/skel/.lightpad/* "${homedir}/.lightpad"
+  sudo chown -cR "${PACSTALL_USER}" "${homedir}/.lightpad"
   if ! [[ -f "${homedir}/.config/docks.ini" ]]; then
     cp -r "/etc/skel/.config/docks.ini" "${homedir}/.config/docks.ini"
   fi

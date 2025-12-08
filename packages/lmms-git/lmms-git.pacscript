@@ -7,41 +7,41 @@ url='https://lmms.io'
 license=('GPL-2.0')
 maintainer=("aKqir24 <aKqir24@github.com>")
 depends=(
-  'git'
   'fluid'
   'libjack-dev'
   'libpulse-dev'
   'libvorbis-dev'
+  'libqt6gui6'
+  'libqt6widgets6'
+  'libqt6core6'
 )
-
 optdepends=(
   'pulseaudio: pulseaudio support'
   'wine: VST plugin support'
+  'libogg-dev: Multimedia container format'
   'carla: carla support'
 )
-
 makedepends=(
   'cmake'
-  'wine'
+  'libfltk1.3-dev'
+  'libstk-dev'
+  'libqt6core5compat6-dev'
+  'libqt6svg6-dev'
+  'qt6-base-dev'
+  'qt6-tools-dev'
   'libsndfile1-dev'
   'libsamplerate0-dev'
   'libasound2-dev'
-  'libstk-dev'
-  'libsdl1.2-dev'
+  'libsdl2-dev'
+  'libfluidsynth-dev'
   'portaudio19-dev'
   'ladspa-sdk'
-  'libfltk1.3-dev'
-  'libfluidsynth-dev'
   'libfftw3-dev'
   'libgig-dev'
   'libmp3lame-dev'
-  'libqt5svg5-dev'
-  'libqt5x11extras5-dev'
   'libxcb-keysyms1-dev'
   'libxcb-util0-dev'
   'libx11-xcb-dev'
-  'qttools5-dev'
-  'qtbase5-private-dev'
   'gcc-multilib'
   'g++-multilib'
   'libwine-dev:i386'
@@ -60,8 +60,8 @@ prepare() {
   cd "${gives}"
   mkdir -vp build
   git submodule init
-  git config submodule.src/3rdparty/qt5-x11embed.url "${srcdir}/qt5-x11embed"
   git config submodule.src/3rdparty/rpmalloc.url "${srcdir}/rpmalloc"
+  git config --unset submodule.src/3rdparty/qt5-x11embed.url || true
   git -c protocol.file.allow=always submodule update
   sed -e 's|lib64|lib|g' -i cmake/modules/DetectMachine.cmake
   sed -e "s/\(${BASHCOMP_USER}\)/\1/g" -i cmake/modules/BashCompletion.cmake
@@ -70,7 +70,11 @@ prepare() {
 build() {
   cd "${gives}/build"
   cmake -DCMAKE_INSTALL_PREFIX=/usr \
-    -DWANT_QT5=ON \
+    -DWANT_VST=ON \
+    -DWANT_QT6=ON \
+    -DWANT_WINE=ON \
+    -DWANT_VST_32=0N \
+    -DWANT_VST_64=0N \
     -DWANT_SOUNDIO=OFF \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_BUILD_TYPE=Release \

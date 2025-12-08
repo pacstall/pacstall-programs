@@ -77,6 +77,7 @@ cloudflare-warp-deb
 cmake-data-deb
 cmake-deb
 cmatrix
+colorz-git
 com.github.mirkobrombin.bottles-deb
 conky-manager-zcot-git
 coreutils-single
@@ -138,7 +139,9 @@ endlessh-git
 enpass-deb
 epson-inkjet-printer-stylus-nx110-series-deb
 epson-printer-utility-deb
+eqwalizer
 erlang-jsone
+erlang-language-platform
 erlfmt
 exercism-cli-bin
 exiftool
@@ -149,6 +152,7 @@ f1multiviewer-deb
 facetimehd-firmware
 fake-ubuntu-advantage-tools-deb
 fast
+fast-colorthief-git
 fastfetch-git
 fblog-bin
 feishin-app
@@ -236,6 +240,7 @@ grive2
 grive2-git
 grub-btrfs
 grub-customizer-git
+gscreenshot-git
 gtkhash
 hakuneko-deb
 hamclock
@@ -298,6 +303,7 @@ kalendar-git
 kanata-bin
 kate-backport-deb
 kate5-data-backport-deb
+kde-rounded-corners
 kdenlive-app
 keepassxc
 keybase-deb
@@ -586,6 +592,7 @@ picom
 pipes.sh-bin
 pipewire
 planner-git
+plasma-compact-shutdown-git
 plexmediaserver-deb
 polybar
 pomatez-deb
@@ -610,6 +617,7 @@ pulsar-deb
 pycharm-community-bin
 python3-anyascii
 python3-darkdetect
+python3-desktop-entry-lib
 python3-editables
 python3-flit-core
 python3-fvs
@@ -844,9 +852,11 @@ xfce4-dynamic-workspaces-plugin-git
 xfce4-dynamic-workspaces-rs-bin
 xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
+xgifwallpaper-git
 xmind-vana-deb
 xonotic
 xpadneo-dkms
+xwayland-satellite
 yabridge
 yad
 yafetch-git
