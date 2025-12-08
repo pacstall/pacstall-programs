@@ -12,6 +12,23 @@ priority="essential"
 arch=("all")
 pkgver="2025.3"
 
+package() {
+  echo "monitor.alsa.rules = [
+    {
+      matches = [
+        {
+          device.name = \"alsa_card.platform-hdmi-sound\"
+        }
+      ]
+      actions = {
+        update-props = {
+          device.disabled = true
+        }
+      }
+    }
+  ]" | tee "${pkgdir}/usr/share/wireplumber/wireplumber.conf.d/alsa-disable-hdmi.conf" > /dev/null
+}
+
 post_install() {
   if [[ -f /usr/bin/enable-modem ]]; then
     echo 'START_DAEMON="true"
