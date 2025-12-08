@@ -13,11 +13,11 @@ arch=("all")
 pkgver="2025.3"
 
 package() {
-  echo "monitor.alsa.rules = [
+  echo 'monitor.alsa.rules = [
     {
       matches = [
         {
-          device.name = \"alsa_card.platform-hdmi-sound\"
+          device.name = "alsa_card.platform-hdmi-sound"
         }
       ]
       actions = {
@@ -26,7 +26,7 @@ package() {
         }
       }
     }
-  ]" | tee "${pkgdir}/usr/share/wireplumber/wireplumber.conf.d/alsa-disable-hdmi.conf" > /dev/null
+  ]' | tee "${pkgdir}/usr/share/wireplumber/wireplumber.conf.d/alsa-disable-hdmi.conf" > /dev/null
 }
 
 post_install() {
