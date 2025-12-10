@@ -1,6 +1,6 @@
 pkgname="mcpelauncher-ui-git"
 gives="mcpelauncher-ui"
-pkgver="1.5.3"
+pkgver="1.5.4"
 pkgdesc="Minecraft: Pocket Edition launcher UI"
 url="https://github.com/minecraft-linux/mcpelauncher-manifest"
 arch=('amd64')
@@ -11,11 +11,9 @@ external_connection=true
 pacdeps=('mcpelauncher-linux-git')
 depends=(
   'git'
-  'qtwebengine5-dev'
-  'libqt5quickcontrols2-5'
-  'libqt5quicktemplates2-5'
-  'qml-module-qtquick-controls2'
-  'qml-module-qtquick-templates2'
+  'qt6-webengine-dev'
+  'qml6-module-qtquick-controls'
+  'qml6-module-qtquick-templates'
 )
 makedepends=(
   libxcursor-dev
