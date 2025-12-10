@@ -10313,7 +10313,7 @@ pkgbase = obs-studio-deb
 pkgname = obs-studio-deb
 ---
 pkgbase = obs-studio
-	pkgver = 32.0.0
+	pkgver = 32.0.3
 	pkgdesc = Free and open source software for live streaming and screen recording
 	arch = amd64
 	depends = libasound2t64
@@ -10467,7 +10467,7 @@ pkgbase = obs-studio
 	license = GPL-2.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: obs-studio
-	source = https://github.com/obsproject/obs-studio.git#tag=32.0.0
+	source = https://github.com/obsproject/obs-studio.git#tag=32.0.3
 	source = https://cdn-fastly.obsproject.com/downloads/cef_binary_6533_linux_x86_64.tar.xz
 	sha256sums = SKIP
 	sha256sums = fab66dfc9cfd2e26fb87798f855aef30c2004edc8e19570d37af555644ae1655
