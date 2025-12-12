@@ -32,6 +32,7 @@ build() {
     --enable-libfreetype \
     --enable-libpulse \
     --enable-shared \
+    --enable-libx264 \
     --enable-version3
 
   make -j"${NCPU}"
