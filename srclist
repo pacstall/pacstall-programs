@@ -12549,8 +12549,8 @@ pkgbase = rhino-calamares-settings-git
 pkgname = rhino-calamares-settings-git
 ---
 pkgbase = rhino-core
-	pkgver = 2025.3
-	pkgrel = 2
+	pkgver = 2025.4
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
 	arch = all
@@ -12646,8 +12646,8 @@ pkgbase = rhino-neofetch-git
 pkgname = rhino-neofetch-git
 ---
 pkgbase = rhino-pine-core
-	pkgver = 2025.3
-	pkgrel = 2
+	pkgver = 2025.4
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
 	arch = all
@@ -12674,7 +12674,7 @@ pkgbase = rhino-pine-core
 pkgname = rhino-pine-core
 ---
 pkgbase = rhino-pine-lomiri-core
-	pkgver = 2025.3
+	pkgver = 2025.4
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile (Lomiri) software
 	priority = essential
 	arch = all
@@ -12715,8 +12715,8 @@ pkgbase = rhino-plymouth-theme-git
 pkgname = rhino-plymouth-theme-git
 ---
 pkgbase = rhino-server-core
-	pkgver = 2025.3
-	pkgrel = 2
+	pkgver = 2025.4
+	pkgrel = 1
 	pkgdesc = Transitional package to provide minimal core Rhino Linux software
 	priority = essential
 	arch = all
@@ -12839,8 +12839,8 @@ pkgbase = rhino-system-git
 pkgname = rhino-system-git
 ---
 pkgbase = rhino-ubxi-core
-	pkgver = 2025.3
-	pkgrel = 2
+	pkgver = 2025.4
+	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 	priority = essential
 	arch = all
