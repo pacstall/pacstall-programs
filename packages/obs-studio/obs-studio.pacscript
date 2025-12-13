@@ -40,7 +40,7 @@ makedepends=(
   "libxinerama-dev" "libxcb1-dev" "libx11-xcb-dev" "libxcb-xfixes0-dev" "swig"
   "libcmocka-dev" "libxss-dev" "libglvnd-dev" "libgles2-mesa-dev" "libwayland-dev"
   "librist-dev" "libsrt-openssl-dev" "libpci-dev" "libpipewire-0.3-dev" "libqrcodegencpp-dev"
-  "uthash-dev"
+  "uthash-dev" "libsimde-dev"
 
   # Qt6 dependencies
   "qt6-base-dev" "qt6-base-private-dev" "qt6-svg-dev" "qt6-wayland" "qt6-image-formats-plugins"
