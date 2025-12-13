@@ -8,8 +8,8 @@ compatible=("ubuntu:devel" "ubuntu:questing" "ubuntu:resolute")
 replaces=("rhino-pine-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
-pkgver="2025.3"
-pkgrel="2"
+pkgver="2025.4"
+pkgrel="1"
 style="(mainline)"
 branch="devel"
 
