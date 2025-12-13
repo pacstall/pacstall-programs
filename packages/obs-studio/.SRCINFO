@@ -123,6 +123,7 @@ pkgbase = obs-studio
 	makedepends = libpipewire-0.3-dev
 	makedepends = libqrcodegencpp-dev
 	makedepends = uthash-dev
+	makedepends = libsimde-dev
 	makedepends = qt6-base-dev
 	makedepends = qt6-base-private-dev
 	makedepends = qt6-svg-dev
