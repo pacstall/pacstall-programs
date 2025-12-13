@@ -10,7 +10,7 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 compatible=("ubuntu:devel" "ubuntu:questing" "ubuntu:resolute")
 priority="essential"
 arch=("all")
-pkgver="2025.3"
+pkgver="2025.4"
 
 package() {
   mkdir -p "${pkgdir}/usr/share/wireplumber/wireplumber.conf.d"
