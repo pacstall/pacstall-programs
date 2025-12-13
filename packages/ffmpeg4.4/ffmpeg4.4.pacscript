@@ -5,7 +5,7 @@ pkgdesc='Complete solution to record, convert and stream audio and video'
 url=https://ffmpeg.org/
 source=("git+https://git.ffmpeg.org/ffmpeg.git#tag=n${pkgver}"
   "https://gitlab.archlinux.org/archlinux/packaging/packages/ffmpeg4.4/-/raw/main/binutils-2.41.patch")
-makedepends=("pkg-config" "nasm" "gnutls-dev" "libdrm-dev" "libfontconfig-dev" "libpulse-dev")
+makedepends=("pkg-config" "nasm" "gnutls-dev" "libdrm-dev" "libfontconfig-dev" "libpulse-dev" "x264")
 maintainer=("Elsie19 <hwengerstickel@pm>")
 
 prepare() {
