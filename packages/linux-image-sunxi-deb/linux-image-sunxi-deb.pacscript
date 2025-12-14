@@ -1,0 +1,12 @@
+pkgname="linux-image-sunxi-deb"
+pkgver="6.12.62"
+basever="6.12"
+gives="linux-image-${basever}-sunxi"
+source=("https://repo.mobian.org/pool/main/l/linux-${basever}-sunxi/${gives}_${pkgver}-1_arm64.deb")
+sha256sums=("1b3534acb1a0cea8579f448ddf6bd04a0a9cb02899646c674b56991aae3aa641")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+pkgdesc="Linux kernel image files built for PINE64 Sunxi devices (Mobian)"
+arch=('arm64')
+repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline")
+pacdeps=("linux-headers-sunxi-deb")
+depends=("initramfs-tools")

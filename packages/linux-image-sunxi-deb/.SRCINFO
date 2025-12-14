@@ -1,0 +1,16 @@
+pkgbase = linux-image-sunxi-deb
+	gives = linux-image-6.12-sunxi
+	pkgver = 6.12.62
+	pkgdesc = Linux kernel image files built for PINE64 Sunxi devices (Mobian)
+	arch = arm64
+	depends = initramfs-tools
+	pacdeps = linux-headers-sunxi-deb
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: linux
+	repology = repo: aur
+	repology = srcname: linux-mainline
+	repology = binname: linux-mainline
+	source = https://repo.mobian.org/pool/main/l/linux-6.12-sunxi/linux-image-6.12-sunxi_6.12.62-1_arm64.deb
+	sha256sums = 1b3534acb1a0cea8579f448ddf6bd04a0a9cb02899646c674b56991aae3aa641
+
+pkgname = linux-image-sunxi-deb
