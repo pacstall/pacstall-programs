@@ -3314,6 +3314,8 @@ pkgbase = ffmpeg4.4
 	makedepends = libdrm-dev
 	makedepends = libfontconfig-dev
 	makedepends = libpulse-dev
+	makedepends = libx264-164
+	makedepends = libx264-dev
 	maintainer = Elsie19 <hwengerstickel@pm>
 	source = git+https://git.ffmpeg.org/ffmpeg.git#tag=n4.4.4
 	source = https://gitlab.archlinux.org/archlinux/packaging/packages/ffmpeg4.4/-/raw/main/binutils-2.41.patch
