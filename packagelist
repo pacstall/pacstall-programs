@@ -365,8 +365,12 @@ linux-headers-generic-lts-6.6-deb
 linux-headers-generic-stable-deb
 linux-headers-lts-6.6-deb
 linux-headers-okpine-deb
+linux-headers-rockchip-deb
 linux-headers-stable-deb
+linux-headers-sunxi-deb
 linux-image-okpine-deb
+linux-image-rockchip-deb
+linux-image-sunxi-deb
 linux-image-unsigned-deb
 linux-image-unsigned-lts-6.6-deb
 linux-image-unsigned-stable-deb
