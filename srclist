@@ -7516,6 +7516,21 @@ pkgbase = linux-headers-okpine-deb
 
 pkgname = linux-headers-okpine-deb
 ---
+pkgbase = linux-headers-rockchip-deb
+	gives = linux-headers-6.18-rockchip
+	pkgver = 6.18.1
+	pkgdesc = Linux kernel header files built for PINE64 Rockchip devices (Mobian)
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: linux
+	repology = repo: aur
+	repology = srcname: linux-mainline
+	repology = binname: linux-mainline-headers
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-headers-6.18-rockchip_6.18.1-1_arm64.deb
+	sha256sums = 5206470f3ee24de78d04eef7b80feac083db8281a94a214fd6da2a6f804d063a
+
+pkgname = linux-headers-rockchip-deb
+---
 pkgbase = linux-headers-stable-deb
 	gives = linux-headers-6.18.1-061801
 	pkgver = 6.18.1
@@ -7528,6 +7543,21 @@ pkgbase = linux-headers-stable-deb
 	sha256sums = e30643751637711179f0dd1b046119d0dc3f79307b7741a086fa9c554827196f
 
 pkgname = linux-headers-stable-deb
+---
+pkgbase = linux-headers-sunxi-deb
+	gives = linux-headers-6.12-sunxi64
+	pkgver = 6.12.62
+	pkgdesc = Linux kernel header files built for PINE64 Sunxi devices (Mobian)
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: linux
+	repology = repo: aur
+	repology = srcname: linux-mainline
+	repology = binname: linux-mainline-headers
+	source = https://repo.mobian.org/pool/main/l/linux-6.12-sunxi64/linux-headers-6.12-sunxi64_6.12.62-1_arm64.deb
+	sha256sums = dbf9eb1f30611e4cfe2d3c472231ad2735fa070ca0a2af04556fa7b888d75270
+
+pkgname = linux-headers-sunxi-deb
 ---
 pkgbase = linux-image-okpine-deb
 	gives = linux-image-6.9.0-okpine
@@ -7546,6 +7576,40 @@ pkgbase = linux-image-okpine-deb
 	sha256sums = 60cf364f4977bd1cfb94d64cc62368940ec61e08743af3a75f58e2e4f0e3ce16
 
 pkgname = linux-image-okpine-deb
+---
+pkgbase = linux-image-rockchip-deb
+	gives = linux-image-6.18-rockchip
+	pkgver = 6.18.1
+	pkgdesc = Linux kernel image files built for PINE64 Rockchip devices (Mobian)
+	arch = arm64
+	depends = initramfs-tools
+	pacdeps = linux-headers-rockchip-deb
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: linux
+	repology = repo: aur
+	repology = srcname: linux-mainline
+	repology = binname: linux-mainline
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-image-6.18-rockchip_6.18.1-1_arm64.deb
+	sha256sums = 5a740de37178f78e10e1fbdefbeb8da5708b7c403a901f3622a5f42505a783f3
+
+pkgname = linux-image-rockchip-deb
+---
+pkgbase = linux-image-sunxi-deb
+	gives = linux-image-6.12-sunxi64
+	pkgver = 6.12.62
+	pkgdesc = Linux kernel image files built for PINE64 Sunxi devices (Mobian)
+	arch = arm64
+	depends = initramfs-tools
+	pacdeps = linux-headers-sunxi-deb
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: linux
+	repology = repo: aur
+	repology = srcname: linux-mainline
+	repology = binname: linux-mainline
+	source = https://repo.mobian.org/pool/main/l/linux-6.12-sunxi64/linux-image-6.12-sunxi64_6.12.62-1_arm64.deb
+	sha256sums = 1b3534acb1a0cea8579f448ddf6bd04a0a9cb02899646c674b56991aae3aa641
+
+pkgname = linux-image-sunxi-deb
 ---
 pkgbase = linux-image-unsigned-deb
 	gives = linux-image-unsigned-6.18.0-061800rc3-generic
