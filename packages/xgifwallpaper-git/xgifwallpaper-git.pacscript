@@ -21,7 +21,7 @@ makedepends=(
   "libxext-dev"
 )
 source=("${url}.git")
-maintainer=("aKqir24 <aKqir24&github.com>")
+maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
 
 build() {

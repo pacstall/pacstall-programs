@@ -1,0 +1,10 @@
+pkgname="linux-headers-rockchip-deb"
+pkgver="6.18.1"
+basever="6.18"
+gives="linux-headers-${basever}-rockchip"
+source=("https://repo.mobian.org/pool/main/l/linux-${basever}-rockchip/${gives}_${pkgver}-1_arm64.deb")
+sha256sums=("5206470f3ee24de78d04eef7b80feac083db8281a94a214fd6da2a6f804d063a")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+pkgdesc="Linux kernel header files built for PINE64 Rockchip devices (Mobian)"
+arch=('arm64')
+repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")

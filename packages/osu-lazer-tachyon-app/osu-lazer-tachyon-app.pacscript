@@ -1,7 +1,7 @@
 pkgname="osu-lazer-tachyon-app"
 gives="osu-lazer"
 arch=("amd64")
-pkgver="2025.1029.0"
+pkgver="2025.1203.0"
 _pkgtag="tachyon"
 pkgdesc="The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew. - Tachyon Release"
 url='https://osu.ppy.sh'
@@ -18,7 +18,7 @@ source=(
   "osu-lazer.desktop"
 )
 sha256sums=(
-  "d7a2b5b348ff11b788f1884b73cf702f8bc7be576382ebc6191b63c2d7f9de8a"
+  "bd2a0abd761d6b7844790826967b9bf80dd939345d53b1451e9cf584320edf83"
   "30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51"
   "8f7f8ea193ffe960364ca1344e1ca3780281a0a753f34700732655b75e30cc6b"
   "e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e"

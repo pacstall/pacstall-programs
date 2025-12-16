@@ -303,6 +303,7 @@ kalendar-git
 kanata-bin
 kate-backport-deb
 kate5-data-backport-deb
+kde-rounded-corners
 kdenlive-app
 keepassxc
 keybase-deb
@@ -364,8 +365,12 @@ linux-headers-generic-lts-6.6-deb
 linux-headers-generic-stable-deb
 linux-headers-lts-6.6-deb
 linux-headers-okpine-deb
+linux-headers-rockchip-deb
 linux-headers-stable-deb
+linux-headers-sunxi-deb
 linux-image-okpine-deb
+linux-image-rockchip-deb
+linux-image-sunxi-deb
 linux-image-unsigned-deb
 linux-image-unsigned-lts-6.6-deb
 linux-image-unsigned-stable-deb
@@ -615,6 +620,7 @@ pulsar-deb
 pycharm-community-bin
 python3-anyascii
 python3-darkdetect
+python3-desktop-entry-lib
 python3-editables
 python3-flit-core
 python3-fvs
@@ -651,6 +657,7 @@ rhino-kvantum-theme-git
 rhino-lightdm-theme-git
 rhino-neofetch-git
 rhino-pine-core
+rhino-pine-lomiri-core
 rhino-pkg-git
 rhino-plymouth-theme-git
 rhino-server-core
@@ -773,6 +780,7 @@ typescript
 typora-deb
 u-boot-mobian-deb
 ubxi-kde-desktop-git
+ubxi-lomiri-desktop
 ufetch-debian
 ufetch-ubuntu
 ugee-tablet-driver-deb
