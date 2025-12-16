@@ -11544,6 +11544,7 @@ pkgname = planner-git
 pkgbase = plasma-compact-shutdown-git
 	gives = plasma-compact-shutdown
 	pkgver = 1.2
+	pkgrel = 2
 	pkgdesc = KDE applet for a compact shutdown menu
 	url = https://github.com/ChickenLegsOz/org.kde.plasma.compact-shutdown
 	arch = all
