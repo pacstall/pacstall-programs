@@ -1,0 +1,9 @@
+pkgname="libation-deb"
+pkgver="12.8.2"
+gives="libation"
+breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
+pkgdesc="Free and open source app to manage your Audible books"
+maintainer=("Robert McRackan <rmcrackan@gmail.com>")
+source=("https://github.com/rmcrackan/Libation/releases/download/v{pkgver}/Libation.${pkgver}-linux-chardonnay-${arch}.deb")
+sha256sums=("19cbc5b12bdb8f2901a8f2511ea2432a2adacb7fdf3e720f0ddd03e85b6c2d4b")
+arch=('arm64' 'amd64')

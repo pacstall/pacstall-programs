@@ -330,15 +330,16 @@ lenovolegionlinux-git
 lens
 lf-bin
 libaquamarine-bin
+libation-deb
 libcamera-git
 libcs50-git
 libcutefish-git
 libdisplay-info-git
 libdrm
 libeditline-troglobit
-libfdk-aac-dev-deb
 libfdk-aac1-deb
 libfdk-aac2-deb
+libfdk-aac-dev-deb
 libgbinder-deb
 libgc-nix
 libglibutil-deb
