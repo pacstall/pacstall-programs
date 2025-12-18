@@ -2592,7 +2592,7 @@ pkgname = dunst
 ---
 pkgbase = dust-bin
 	gives = dust
-	pkgver = 1.2.1
+	pkgver = 1.2.3
 	pkgdesc = A more intuitive version of du in rust
 	arch = amd64
 	breaks = dust
