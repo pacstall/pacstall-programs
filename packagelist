@@ -294,6 +294,7 @@ joplin-desktop-app
 jq-bin
 jsonnet-bundler-bin
 kakoune
+kakoune-ansi-git
 kakoune-auto-pairs-git
 kakoune-kakboard-git
 kakoune-lsp
