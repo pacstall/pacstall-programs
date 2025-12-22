@@ -1,8 +1,6 @@
-maintainer=("XIVLauncher Linux Maintainers <franz@goat.place>")
-pkgname=xivlauncher-bin
+pkgname="xivlauncher-bin"
 repology=("project: xivauncher.core")
-pkgver=1.3.0
-pkgrel=0
+pkgver="1.3.0"
 pkgdesc="Custom Launcher for Final Fantasy XIV Online (Crossplatform rewrite)"
 arch=('amd64')
 url='https://github.com/goatcorp/XIVLauncher.Core/'
@@ -18,8 +16,8 @@ depends=(
 optdepends=(
   'steam: If you have a Steam Service Account'
 )
-extensions=()
-provides=("xivlauncher=${pkgver}")
+provides=("xivlauncher")
+maintainer=("XIVLauncher Linux Maintainers <franz@goat.place>")
 conflicts=(
   "xivlauncher-git"
   "xivlaucher"
