@@ -23,7 +23,7 @@ conflicts=(
   "xivlaucher"
 )
 source=(
-  "XIVLauncher.Core-${pkgver}.${pkgrel}.tar.gz::https://github.com/goatcorp/XIVLauncher.Core/releases/download/${pkgver}/XIVLauncher.Core.tar.gz"
+  "XIVLauncher.Core-${pkgver}.tar.gz::https://github.com/goatcorp/XIVLauncher.Core/releases/download/${pkgver}/XIVLauncher.Core.tar.gz"
   "512.png::https://raw.githubusercontent.com/goatcorp/XIVLauncher.Core/main/misc/linux_distrib/512.png"
   "XIVLauncher.desktop"
   "xivlauncher-core"
