@@ -8,10 +8,12 @@ license=("MIT")
 checkdepends=('check')
 depends=('rofi' 'libc6' 'libgcc-s1')
 makedepends=(
-  'pkg-config' 'build-essential' 'libglib2.0-dev'
+  'rofi' 'pkg-config' 'build-essential' 'libglib2.0-dev'
   'libcairo2-dev' 'libpango1.0-dev'
   'autoconf' 'automake' 'libtool' 'bubblewrap')
-optdepends=("wl-clipboard: Clipboard interaction under Wayland")
+optdepends=("xsel: Clipboard interaction under X11"
+  "xclip: Clipboard interaction under X11"
+  "wl-clipboard: Clipboard interaction under Wayland")
 provides=("${pkgname}")
 conflicts=("${pkgname}")
 replaces=("${gives}")
