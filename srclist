@@ -13539,7 +13539,7 @@ pkgname = shell-color-scripts
 ---
 pkgbase = shellcheck-bin
 	gives = shellcheck
-	pkgver = 0.10.0
+	pkgver = 0.11.0
 	pkgdesc = Gives warnings and suggestions for bash/sh shell scripts
 	url = https://www.shellcheck.net/
 	arch = amd64
@@ -13549,8 +13549,8 @@ pkgbase = shellcheck-bin
 	breaks = shellcheck-app
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: shellcheck
-	source = @shellcheck-bin~0.10.0::https://github.com/koalaman/shellcheck/releases/download/v0.10.0/shellcheck-v0.10.0.linux.x86_64.tar.xz
-	sha256sums = 6c881ab0698e4e6ea235245f22832860544f17ba386442fe7e9d629f8cbedf87
+	source = @shellcheck-bin~0.11.0::https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.linux.x86_64.tar.xz
+	sha256sums = 8c3be12b05d5c177a04c29e3c78ce89ac86f1595681cab149b65b97c4e227198
 
 pkgname = shellcheck-bin
 ---
