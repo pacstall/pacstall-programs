@@ -6,16 +6,15 @@ url='https://github.com/Mange/rofi-emoji'
 arch=('x86_64')
 license=("MIT")
 checkdepends=('check')
-depends=('libc6' 'libgcc-s1')
-makedepends=('pkg-config' 'build-essential' 'libglib2.0-dev'
+depends=('rofi' 'libc6' 'libgcc-s1')
+makedepends=(
+  'pkg-config' 'build-essential' 'libglib2.0-dev'
   'libcairo2-dev' 'libpango1.0-dev'
-  'autoconf' 'automake' 'libtool' ' bubblewrap')
-pacdeps=('rofi:pkgbase' 'rofi:rofi-dev')
-optdepends=("xsel: Clipboard interaction under X11"
-  "xclip: Clipboard interaction under X11"
-  "wl-clipboard: Clipboard interaction under Wayland")
+  'autoconf' 'automake' 'libtool' 'bubblewrap')
+optdepends=("wl-clipboard: Clipboard interaction under Wayland")
 provides=("${pkgname}")
-conflicts=("${pkgname}" "${gives}")
+conflicts=("${pkgname}")
+replaces=("${gives}")
 maintainer=("aKqir24 <aKqir24@github.com>")
 source=("https://github.com/Mange/${gives}.git")
 
@@ -24,6 +23,11 @@ build() {
   autoreconf -i
   ./configure --prefix=/usr
   make -j"${NCPU}"
+}
+
+check() {
+  cd "${gives}"
+  make check
 }
 
 package() {
