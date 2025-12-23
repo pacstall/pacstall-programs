@@ -6032,6 +6032,25 @@ pkgbase = jsonnet-bundler-bin
 
 pkgname = jsonnet-bundler-bin
 ---
+pkgbase = kakoune-ansi-git
+	gives = kakoune-ansi
+	pkgver = 0.2.8
+	pkgdesc = Support for rendering ANSI-colored text in Kakoune
+	url = https://github.com/eraserhd/kak-ansi
+	arch = any
+	depends = kakoune
+	makedepends = make
+	makedepends = sed
+	checkdepends = bash
+	enhances = kakoune
+	license = Unlicense
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	source = kakoune-ansi::https://github.com/eraserhd/kak-ansi.git
+	checkdepends_debian = moreutils
+	checkdepends_debian = grep
+
+pkgname = kakoune-ansi-git
+---
 pkgbase = kakoune-auto-pairs-git
 	gives = kakoune-auto-pairs
 	pkgver = 0.0.1
