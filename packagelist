@@ -677,6 +677,7 @@ rofi:pkgbase
 rofi:rofi-dev
 rofi:rofi
 rofi-emoji
+rofi-wayland
 rojo-bin
 rosary-deb
 rose-pine-cursor
