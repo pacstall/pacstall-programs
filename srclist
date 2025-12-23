@@ -13088,7 +13088,6 @@ pkgbase = rofi-wayland
 	makedepends = libgdk-pixbuf-2.0-dev
 	makedepends = libxkbcommon-dev
 	makedepends = wayland-protocols
-	checkdepends = check
 	conflicts = rofi-dev
 	replaces = rofi
 	replaces = rofi-x11
