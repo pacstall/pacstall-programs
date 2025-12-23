@@ -789,14 +789,14 @@ pkgname = balena-etcher-deb
 ---
 pkgbase = bat-deb
 	gives = bat
-	pkgver = 0.25.0
+	pkgver = 0.26.1
 	pkgdesc = A cat(1) clone with wings
 	arch = amd64
 	replaces = bat
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: bat-cat
-	source = https://github.com/sharkdp/bat/releases/download/v0.25.0/bat_0.25.0_amd64.deb
-	sha256sums = 7e6afdffaea04b394f466f6f719a1e0565572a4b59d6cb9969843355b684e2dc
+	source = https://github.com/sharkdp/bat/releases/download/v0.26.1/bat_0.26.1_amd64.deb
+	sha256sums = ad59954aa1540e526f97267f60557ea5ef4c7dcf91a0811254134537cb353a3c
 
 pkgname = bat-deb
 ---
@@ -832,7 +832,7 @@ pkgname = batsignal
 ---
 pkgbase = bazecor-app
 	gives = bazecor
-	pkgver = 1.7.0
+	pkgver = 1.8.3
 	pkgdesc = Bazecor is the graphical configurator for the Dygma Raise
 	arch = amd64
 	depends = usbutils
@@ -843,9 +843,9 @@ pkgbase = bazecor-app
 	breaks = bazecor-git
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: bazecor
-	source = https://github.com/Dygmalab/Bazecor/releases/download/v1.7.0/Bazecor-1.7.0-x64.AppImage
+	source = https://github.com/Dygmalab/Bazecor/releases/download/v1.8.3/Bazecor-1.8.3-x64.AppImage
 	source = https://raw.githubusercontent.com/Elsie19/images/master/bazecor.png
-	sha256sums = 8bee840604fc16fdc6376ab09ebf901fd99c0d3a1e42f8ade76a91b77d18f6c3
+	sha256sums = 380c0778b2db5be16529ecb14be3023938ab1c2bea669b626176de0379786097
 	sha256sums = SKIP
 
 pkgname = bazecor-app
@@ -900,15 +900,15 @@ pkgname = betterbird-bin
 ---
 pkgbase = bitwarden-cli-bin
 	gives = bitwarden-cli
-	pkgver = 2025.11.0
+	pkgver = 2025.12.0
 	pkgdesc = Bitwarden's command-line interface - Binary
 	arch = amd64
 	breaks = bitwarden-cli-git
 	replaces = bitwarden-cli
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: bitwarden-cli
-	source = https://github.com/bitwarden/clients/releases/download/cli-v2025.11.0/bw-linux-2025.11.0.zip
-	sha256sums = 943f0107b3a471e7376b08f118e21a59583afeb49e4eb86f378e3b0d7c79c969
+	source = https://github.com/bitwarden/clients/releases/download/cli-v2025.12.0/bw-linux-2025.12.0.zip
+	sha256sums = 0a5ea0c81aedae91f29a5a316d01c73af4a7275db4fad56d069eb90e28b1c55f
 
 pkgname = bitwarden-cli-bin
 ---
@@ -981,14 +981,14 @@ pkgname = ble.sh-git
 ---
 pkgbase = blender-bin
 	gives = blender
-	pkgver = 4.5.3
+	pkgver = 5.0.1
 	pkgdesc = A fully integrated 3D graphics creation suite
 	url = https://www.blender.org/
 	arch = amd64
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: blender
-	source = https://mirrors.ocf.berkeley.edu/blender/release/Blender4.5/blender-4.5.3-linux-x64.tar.xz
-	sha256sums = 975c58fcb244273838534bba771e64ad87739216b0f9b39a888531a49a72d845
+	source = https://mirrors.ocf.berkeley.edu/blender/release/Blender5.0/blender-5.0.1-linux-x64.tar.xz
+	sha256sums = 8019580ee1b7262e505f4196a00237ccf743c88d205b38d34201510676e60b09
 
 pkgname = blender-bin
 ---
@@ -1140,7 +1140,7 @@ pkgname = bpytop-git
 ---
 pkgbase = brave-browser-beta-deb
 	gives = brave-browser-beta
-	pkgver = 1.85.97
+	pkgver = 1.86.116
 	pkgdesc = Testing version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1151,14 +1151,14 @@ pkgbase = brave-browser-beta-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-beta-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.85.97/brave-browser-beta_1.85.97_amd64.deb
-	sha256sums = 62bab164d8d29b20ba5ced8413ec5a8bb4f1b22b4257c15afde1be2c1236c789
+	source = https://github.com/brave/brave-browser/releases/download/v1.86.116/brave-browser-beta_1.86.116_amd64.deb
+	sha256sums = d2a38bd998ceddc2eb5e3862cb79a3fbe01b391f7f4f0f902db1a95459c2550a
 
 pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.84.135
+	pkgver = 1.85.118
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1170,10 +1170,10 @@ pkgbase = brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.84.135_amd64.deb
-	sha256sums_amd64 = 98f66ab3348f90c0bbede518f82a53cd86db0ca30ab7b2e833a96772006a485a
-	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.84.135_arm64.deb
-	sha256sums_arm64 = 0de9246ef3a9567f8d0d2ce5b6269fb12edc13641b567e3b988695bd75105143
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.85.118_amd64.deb
+	sha256sums_amd64 = 23efb73aafa25b8bae71c2a249ae45c12eb9d9a4feb45408d03d27e0daba535c
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.85.118_arm64.deb
+	sha256sums_arm64 = c67ef1e8ed8954abb62a570c5d2a3b3f8a1361f5720b54b83887a65caf36bc3d
 
 pkgname = brave-browser-deb
 ---
@@ -2074,13 +2074,13 @@ pkgname = davinci-resolve
 ---
 pkgbase = dbeaver-ce-deb
 	gives = dbeaver-ce
-	pkgver = 25.1.0
+	pkgver = 25.3.1
 	pkgdesc = Free universal database tool and SQL client
 	arch = amd64
 	maintainer = KwonNam Son <kwon37xi@gmail.com>
 	repology = project: dbeaver
-	source = https://github.com/dbeaver/dbeaver/releases/download/25.1.0/dbeaver-ce_25.1.0_amd64.deb
-	sha256sums = 2a234edff84cb3aee94ff99371aacebf62629403c199ec8fb2af3d85c43411bb
+	source = https://github.com/dbeaver/dbeaver/releases/download/25.3.1/dbeaver-ce_25.3.1_amd64.deb
+	sha256sums = af5f6a7d94231f7f346feb8a364d8dd01deb3ef0c62d48f8775eb0823c987e16
 
 pkgname = dbeaver-ce-deb
 ---
@@ -2203,7 +2203,7 @@ pkgbase = discord-canary-deb
 pkgname = discord-canary-deb
 ---
 pkgbase = discord-canary
-	pkgver = 0.0.735
+	pkgver = 0.0.838
 	pkgdesc = Chat for Communities and Friends - Unstable
 	url = https://discord.com/
 	arch = amd64
@@ -2225,8 +2225,8 @@ pkgbase = discord-canary
 	depends = libgbm1
 	maintainer = DismissedGuy <me@mikealmel.ooo>
 	repology = project: discord-canary
-	source = @discord-canary~0.0.735::https://canary.dl2.discordapp.net/apps/linux/0.0.735/discord-canary-0.0.735.tar.gz
-	sha256sums = 085d06e5d4fbb643b986c1119378e85ed64a5883cebf1c7d2a367b24aa2d37fb
+	source = @discord-canary~0.0.838::https://canary.dl2.discordapp.net/apps/linux/0.0.838/discord-canary-0.0.838.tar.gz
+	sha256sums = 405e13f205e679b1de3e54566c264eba2348214679c6368b3954535f58904662
 
 pkgname = discord-canary
 ---
@@ -2260,7 +2260,7 @@ pkgbase = discord-ptb-deb
 pkgname = discord-ptb-deb
 ---
 pkgbase = discord
-	pkgver = 0.0.108
+	pkgver = 0.0.119
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -2278,8 +2278,8 @@ pkgbase = discord
 	optdepends = fonts-noto-color-emoji: emoji support
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.108::https://dl.discordapp.net/apps/linux/0.0.108/discord-0.0.108.tar.gz
-	sha256sums = 84a161ca5128be3f3d5b1a537b193347d0bab4de3b57d8832906290a38288efc
+	source = @discord~0.0.119::https://dl.discordapp.net/apps/linux/0.0.119/discord-0.0.119.tar.gz
+	sha256sums = fcd7e01c15ec5166280c4546cf5dc6054d484a949d0793a6ae3852376e5204c8
 
 pkgname = discord
 ---
@@ -2573,7 +2573,7 @@ pkgbase = duf-deb
 pkgname = duf-deb
 ---
 pkgbase = dunst
-	pkgver = 1.12.2
+	pkgver = 1.13.0
 	pkgdesc = A highly configurable and lightweight notification daemon
 	arch = any
 	makedepends = libdbus-1-dev
@@ -2585,8 +2585,8 @@ pkgbase = dunst
 	makedepends = libnotify-dev
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: dunst
-	source = @dunst~1.12.2::https://github.com/dunst-project/dunst/archive/refs/tags/v1.12.2.tar.gz
-	sha256sums = 8f7664bd4e6083e9604e282145fe5b8dee7655fa0b099a5b682a2549e1f33d32
+	source = @dunst~1.13.0::https://github.com/dunst-project/dunst/archive/refs/tags/v1.13.0.tar.gz
+	sha256sums = 7a8a1813977ad5941488c66b914501703fc0f6e12e631dc18506ad617242e7a0
 
 pkgname = dunst
 ---
@@ -5080,14 +5080,14 @@ pkgname = hamclock
 ---
 pkgbase = harmonoid-deb
 	gives = harmonoid
-	pkgver = 0.3.10
+	pkgver = 0.3.17
 	pkgdesc = Plays & manages your music library. Looks beautiful & juicy. Playlists, visuals, synced lyrics, pitch shift, volume boost & more
 	url = https://harmonoid.com/
 	arch = amd64
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: harmonoid
-	source = https://github.com/alexmercerind2/harmonoid-releases/releases/download/v0.3.10/harmonoid-linux-x86_64.deb
-	sha256sums = 3a365371a383e0dd6562bfeceea8bdb876824cbc058203c42b89574374407043
+	source = https://github.com/alexmercerind2/harmonoid-releases/releases/download/v0.3.17/harmonoid-linux-x86_64.deb
+	sha256sums = b1b91190f1855856cd5ec63e5945b4a987cb55dbada3aeae2f8b3c8412f5ccac
 
 pkgname = harmonoid-deb
 ---
@@ -13361,7 +13361,7 @@ pkgname = rust-motd-deb
 ---
 pkgbase = rustdesk-deb
 	gives = rustdesk
-	pkgver = 1.4.2
+	pkgver = 1.4.4
 	pkgdesc = Yet another remote desktop software, written in Rust
 	arch = amd64
 	arch = arm64
@@ -13389,14 +13389,14 @@ pkgbase = rustdesk-deb
 	replaces = rustdesk
 	maintainer = xdavius <xdavius@github.com>
 	maintainer = medaey <medaey@hotmail.com>
-	maintainer = akqir24 <aKqir24@github.com>
+	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: rustdesk
-	source_amd64 = https://github.com/rustdesk/rustdesk/releases/download/1.4.2/rustdesk-1.4.2-x86_64.deb
-	sha256sums_amd64 = e5b8a1bb3ea697716263c9309c79db667aedb3e024400dc3d07f5aaa0edfb907
-	source_arm64 = https://github.com/rustdesk/rustdesk/releases/download/1.4.2/rustdesk-1.4.2-aarch64.deb
-	sha256sums_arm64 = d5b1461386c34d738a05e5c46589e7ae5b9dd950c4969903d43f73a771369907
-	source_armhf = https://github.com/rustdesk/rustdesk/releases/download/1.4.2/rustdesk-1.4.2-armv7-sciter.deb
-	sha256sums_armhf = a30f1539d8b8c29343cf666938edef1970bb0b243296f92d8b9df94b39a7e681
+	source_amd64 = https://github.com/rustdesk/rustdesk/releases/download/1.4.4/rustdesk-1.4.4-x86_64.deb
+	sha256sums_amd64 = db722ef63ee3e1e410ab34aba7b6dd3b416a61516f3b744f9b9707ee9639e46c
+	source_arm64 = https://github.com/rustdesk/rustdesk/releases/download/1.4.4/rustdesk-1.4.4-aarch64.deb
+	sha256sums_arm64 = 1a7fad258bc814b0ea03dc8d87b469301c62725e958663ff2da6e060a1d5c5b0
+	source_armhf = https://github.com/rustdesk/rustdesk/releases/download/1.4.4/rustdesk-1.4.4-armv7-sciter.deb
+	sha256sums_armhf = 037d7a8387b162973228d07377fe366fd6e7388f293d1cb5f7f8f5f879644560
 
 pkgname = rustdesk-deb
 ---
@@ -13577,7 +13577,7 @@ pkgname = shell-color-scripts
 ---
 pkgbase = shellcheck-bin
 	gives = shellcheck
-	pkgver = 0.10.0
+	pkgver = 0.11.0
 	pkgdesc = Gives warnings and suggestions for bash/sh shell scripts
 	url = https://www.shellcheck.net/
 	arch = amd64
@@ -13587,8 +13587,8 @@ pkgbase = shellcheck-bin
 	breaks = shellcheck-app
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: shellcheck
-	source = @shellcheck-bin~0.10.0::https://github.com/koalaman/shellcheck/releases/download/v0.10.0/shellcheck-v0.10.0.linux.x86_64.tar.xz
-	sha256sums = 6c881ab0698e4e6ea235245f22832860544f17ba386442fe7e9d629f8cbedf87
+	source = @shellcheck-bin~0.11.0::https://github.com/koalaman/shellcheck/releases/download/v0.11.0/shellcheck-v0.11.0.linux.x86_64.tar.xz
+	sha256sums = 8c3be12b05d5c177a04c29e3c78ce89ac86f1595681cab149b65b97c4e227198
 
 pkgname = shellcheck-bin
 ---
@@ -13836,7 +13836,7 @@ pkgbase = snd-hda-macbookpro
 pkgname = snd-hda-macbookpro
 ---
 pkgbase = soar
-	pkgver = 0.6.3
+	pkgver = 0.8.1
 	pkgdesc = Fast, modern package manager for Static Binaries and Portable Formats
 	url = https://soar.qaidvoid.dev/
 	arch = any
@@ -13844,8 +13844,8 @@ pkgbase = soar
 	license = MIT
 	maintainer = Elsie19 <hwengerstickel@pm.me>
 	repology = project: soar
-	source = https://github.com/pkgforge/soar/archive/refs/tags/v0.6.3.tar.gz
-	sha256sums = ccb28356d524daea65ec437d956c74d05b4d0adbc4103edff0f3c68177ea2fa4
+	source = https://github.com/pkgforge/soar/archive/refs/tags/v0.8.1.tar.gz
+	sha256sums = 208230b0f4588c84d52cf8ac64074f1815ca38658e5e1e4655474869b32e61ff
 
 pkgname = soar
 ---
@@ -16835,6 +16835,24 @@ pkgbase = winetricks-git
 	sha512sums = SKIP
 
 pkgname = winetricks-git
+---
+pkgbase = wlrobs
+	pkgver = 1.2
+	pkgdesc = Obs-studio plugin that allows you to screen capture on wlroots based wayland compositors
+	arch = any
+	depends = obs-studio
+	makedepends = libwayland-dev
+	makedepends = libobs-dev
+	makedepends = pkg-config
+	makedepends = meson
+	makedepends = libwlroots-0.18
+	makedepends = ninja-build
+	conflicts = wlrobs
+	maintainer = akqir24 <aKqir24@github.com>
+	repology = project: wlrobs
+	source = https://hg.sr.ht/~scoopta/wlrobs/archive/v1.2.tar.gz
+
+pkgname = wlrobs
 ---
 pkgbase = wsysmon-bin
 	gives = wsysmon
