@@ -13,10 +13,12 @@ makedepends=(
   'autoconf' 'automake' 'libtool' 'bubblewrap')
 optdepends=("xsel: Clipboard interaction under X11"
   "xclip: Clipboard interaction under X11"
-  "wl-clipboard: Clipboard interaction under Wayland")
+  "wl-clipboard: Clipboard interaction under Wayland"
+  "rofi-wayland: For wayland support in rofi")
 provides=("${pkgname}")
 conflicts=("${pkgname}")
 replaces=("${gives}")
+pacdeps=("rofi")
 maintainer=("aKqir24 <aKqir24@github.com>")
 source=("https://github.com/Mange/${gives}.git")
 
