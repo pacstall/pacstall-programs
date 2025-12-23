@@ -678,6 +678,7 @@ rofi:rofi-dev
 rofi:rofi
 rofi-emoji
 rofi-wayland
+rofi-x11
 rojo-bin
 rosary-deb
 rose-pine-cursor
