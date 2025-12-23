@@ -294,6 +294,7 @@ joplin-desktop-app
 jq-bin
 jsonnet-bundler-bin
 kakoune
+kakoune-ansi-git
 kakoune-auto-pairs-git
 kakoune-kakboard-git
 kakoune-lsp
@@ -858,6 +859,7 @@ xfce4-dynamic-workspaces-rs-bin
 xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
 xgifwallpaper-git
+xivlauncher-bin
 xmind-vana-deb
 xonotic
 xpadneo-dkms
