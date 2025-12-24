@@ -23,7 +23,6 @@ pkgbase = xivlauncher
 	depends = desktop-file-utils
 	depends = libjxr0
 	depends = xdg-utils
-	makedepends = dotnet-sdk-10.0
 	makedepends = git
 	optdepends = steam: If you have a Steam Service Account
 	conflicts = xivlauncher-bin

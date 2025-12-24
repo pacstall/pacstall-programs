@@ -27,7 +27,7 @@ depends=(
   'libjxr0'
   'xdg-utils'
 )
-makedepends=("dotnet-sdk-10.0" "git")
+makedepends=("git")
 optdepends=(
   'steam: If you have a Steam Service Account'
 )
@@ -49,11 +49,31 @@ sha512sums=(
 )
 
 prepare() {
+  # Set up a temporary dotnet environment because we can't trust various distros to havw the APT repo for it
+
+  echo "Setting up dotnet 10 locally"
+  cd "${srcdir}"
+  DOTNET_VER="10.0.101"
+  DOTNET_FILE="dotnet-sdk-${DOTNET_VER}-linux-x64.tar.gz"
+  export DOTNET_ROOT="${srcdir}/dotnet"
+
+  echo "Downloading dotnet"
+  curl -o "${srcdir}/${DOTNET_FILE}" "https://builds.dotnet.microsoft.com/dotnet/Sdk/${DOTNET_VER}/${DOTNET_FILE}"
+  mkdir -p "${DOTNET_ROOT}" && tar zxf "${srcdir}/${DOTNET_FILE}" -C "${DOTNET_ROOT}"
+
+  export PATH=${PATH}:${DOTNET_ROOT}:${DOTNET_ROOT}/tools
+
   cd "${srcdir}/XIVLauncher.Core"
   git submodule update --init --recursive
+  dotnet restore "${srcdir}/XIVLauncher.Core/src"
 }
 
 build() {
+  # set up dotnet vars again because they get unset
+  export DOTNET_ROOT="${srcdir}/dotnet"
+  export PATH=${PATH}:${DOTNET_ROOT}:${DOTNET_ROOT}/tools
+
+  # Now we can build the launcher
   mkdir -p "${srcdir}/build"
   cd "${srcdir}/XIVLauncher.Core/src/XIVLauncher.Core/"
   echo "dotnet publish -r linux-x64 --sc -o \"${srcdir}/build\" --configuration Release -p:BuildHash=$(git rev-parse --short HEAD)"
