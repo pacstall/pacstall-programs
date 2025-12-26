@@ -1,7 +1,7 @@
 pkgbase = rofi-wayland
 	gives = rofi
 	pkgver = 2.0.0
-	pkgdesc = A window switcher, application launcher, and dmenu replacement for wayland.
+	pkgdesc = Window switcher, application launcher, and dmenu replacement for wayland
 	url = https://github.com/davatorium/rofi
 	arch = any
 	depends = libglib2.0-0
