@@ -1,6 +1,6 @@
 pkgbase = qt6pas
 	gives = libqt6pas-dev
-	pkgver = 6.2.7
+	pkgver = 6.2.10
 	pkgdesc = Free Pascal Qt6 binding library updated by lazarus IDE
 	url = https://gitlab.com/freepascal.org/lazarus/
 	arch = amd64
@@ -10,7 +10,7 @@ pkgbase = qt6pas
 	provides = libqt6pas1
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: qt6pas
-	source = @qt6pas~6.2.7::https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_3_0/lazarus-lazarus_3_0.tar.bz2
+	source = @qt6pas~6.2.10::https://gitlab.com/freepascal.org/lazarus/lazarus/-/archive/lazarus_3_0/lazarus-lazarus_3_0.tar.bz2
 	sha256sums = 053ebb9d703162617a6c5bbd26e78aacb45e439d9a9964aa3197eaada2aa8c2e
 
 pkgname = qt6pas

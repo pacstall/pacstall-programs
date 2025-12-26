@@ -3,7 +3,7 @@ gives="hakuneko-desktop"
 pkgver="8.3.4"
 nightly="20200705.1"
 arch=("amd64" "arm64" "armhf" "i386")
-url="https://github.com/manga-download/hakuneko"
+url='https://github.com/manga-download/hakuneko'
 pkgdesc="HakuNeko is a cross-platform downloader for manga and anime from various websites"
 maintainer=("Diegiwg <diegiwg@gmail.com>")
 

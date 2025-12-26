@@ -1,11 +1,11 @@
 pkgbase = nerd-fonts-hack
-	pkgver = 3.1.1
+	pkgver = 3.4.0
 	pkgdesc = Patched font Hack from Nerd Fonts library
 	arch = all
 	replaces = nerd-fonts-hack
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: fonts:nerd-fonts
-	source = @nerd-fonts-hack~3.1.1::https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Hack.tar.xz
-	sha256sums = 0d820cb2fedb86a15ca1354e03f26443face8b6aa190610263fad1125a409a16
+	source = @nerd-fonts-hack~3.4.0::https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Hack.tar.xz
+	sha256sums = 1d00a1435638084174516975840854368a45ac30bb0bad2c0c49db713b5925f0
 
 pkgname = nerd-fonts-hack

@@ -1,13 +1,13 @@
 pkgname="webstorm-bin"
-pkgver="2024.3.2"
+pkgver="2025.1"
 gives="webstorm"
 arch=("amd64" "arm64")
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="Powerful and versatile IDE for JavaScript, TypeScript, HTML, CSS, React, Angular, Vue, and Node.js development."
 source_amd64=("https://download.jetbrains.com/${gives}/WebStorm-${pkgver}.tar.gz")
-sha256sums_amd64=("2e9054ae506e578cf89e4cea017d953c416281470a4a5728b157e43ac4888d4e")
+sha256sums_amd64=("f181eb1348c04a60f860fd9ea9616261c6c012a7916e76380652d129e87503ea")
 source_arm64=("https://download.jetbrains.com/${gives}/WebStorm-${pkgver}-aarch64.tar.gz")
-sha256sums_arm64=("9914fe6e6b5f0a7e87c9628fdf70b5083b68ec14b8873ad6847e4ea8e8c80a96")
+sha256sums_arm64=("51fd7420fb49ff8851d3b4b1079f8d7afebe9631a76e7d1d4fd3e66d42332c6c")
 repology=("project: webstorm")
 
 package() {

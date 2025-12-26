@@ -1,0 +1,14 @@
+pkgbase = hayase-deb
+	gives = hayase
+	pkgver = 6.4.34
+	pkgdesc = Torrent streaming made simple. Watch anime torrents, real-time with no waiting for downloads
+	url = https://hayase.watch
+	arch = amd64
+	conflicts = hayase-app
+	license = BUSL-1.1
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: hayase
+	source = https://github.com/hayase-app/ui/releases/download/v6.4.34/linux-hayase-6.4.34-linux.deb
+	sha256sums = 4846bf39a99887f6c4fd047756d355af04e7ccbaf7e346989b77b48d4e62fdfd
+
+pkgname = hayase-deb

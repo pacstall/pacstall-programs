@@ -1,0 +1,14 @@
+pkgbase = nvidia-beta-installer
+	gives = nvidia-beta-installer-580
+	pkgver = 580.65.06
+	pkgdesc = NVIDIA driver installer with both proprietary and open source module options (Beta Branch)
+	url = https://www.nvidia.com/en-us/drivers/unix/
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = https://us.download.nvidia.com/XFree86/Linux-x86_64/580.65.06/NVIDIA-Linux-x86_64-580.65.06.run
+	sha256sums_amd64 = 04b10867af585e765cfbfdcf39ed5f4bd112375bebab0172eaa187c6aa5024ff
+	source_arm64 = https://us.download.nvidia.com/XFree86/aarch64/580.65.06/NVIDIA-Linux-aarch64-580.65.06.run
+	sha256sums_arm64 = e02acdc0d20d4a541aa5026bfddb1b9b4fc6bc64ae3b04ff9cb9c892700cf9c4
+
+pkgname = nvidia-beta-installer

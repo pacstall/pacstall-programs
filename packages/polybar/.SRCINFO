@@ -1,6 +1,6 @@
 pkgbase = polybar
 	gives = polybar
-	pkgver = 3.7.1
+	pkgver = 3.7.2
 	pkgdesc = Polybar aims to help users build beautiful and highly customizable status bars for their desktop environment, without the need of having a black belt in shell scripting
 	arch = any
 	makedepends = cmake
@@ -30,7 +30,7 @@ pkgbase = polybar
 	optdepends = libnl-genl-3-dev: network
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: polybar
-	source = @polybar~3.7.1::https://github.com/polybar/polybar/releases/download/3.7.1/polybar-3.7.1.tar.gz
-	sha256sums = 5de6ad385ba09dc453a4e5ec7054749a4882b5b21a62c17ae40bf7c90613ff0f
+	source = @polybar~3.7.2::https://github.com/polybar/polybar/releases/download/3.7.2/polybar-3.7.2.tar.gz
+	sha256sums = e2feacbd02e7c94baed7f50b13bcbf307d95df0325c3ecae443289ba5b56af29
 
 pkgname = polybar

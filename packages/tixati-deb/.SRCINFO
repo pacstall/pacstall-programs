@@ -1,6 +1,6 @@
 pkgbase = tixati-deb
 	gives = tixati
-	pkgver = 3.19
+	pkgver = 3.35
 	pkgdesc = Tixati is a peer-to-peer file sharing program that uses the popular BitTorrent protocol
 	arch = amd64
 	depends = traceroute
@@ -10,7 +10,7 @@ pkgbase = tixati-deb
 	replaces = tixati
 	maintainer = heyzsh <haidarzsh@gmail.com>
 	repology = project: tixati
-	source = https://download2.tixati.com/download/tixati_3.19-1_amd64.deb
-	sha256sums = 68dd8a2db7400cb85e53d0ffac2a74ab66cbb4a8d56b2a509eb043f84b883cc9
+	source = https://download.tixati.com/tixati_3.35-1_amd64.deb
+	sha256sums = adea1c8ea43eeeaee845d9caef335fb7b91942c17a0be347007999420c70d1ef
 
 pkgname = tixati-deb

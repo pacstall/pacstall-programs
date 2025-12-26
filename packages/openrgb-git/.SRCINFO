@@ -1,6 +1,6 @@
 pkgbase = openrgb-git
 	gives = openrgb
-	pkgver = 0.9
+	pkgver = 1.0rc1
 	pkgrel = 2
 	pkgdesc = Configuration utility for RGB lights supporting motherboards, RAM, & peripherals
 	url = https://gitlab.com/CalcProgrammer1/OpenRGB
@@ -21,10 +21,6 @@ pkgbase = openrgb-git
 	provides = openrgb
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://gitlab.com/CalcProgrammer1/OpenRGB.git
-	source = openrgb.conf::https://aur.archlinux.org/cgit/aur.git/plain/openrgb.conf?h=openrgb-git
-	source = openrgb.service::https://aur.archlinux.org/cgit/aur.git/plain/openrgb.service?h=openrgb-git
 	sha256sums = SKIP
-	sha256sums = b5a53d747422f8b594e3e9615e238457d696732efce94050cdd72182a8645ef2
-	sha256sums = 272dc43a77d0e48d29f32da753c7e05fd635883b173c21047f4eefa8bfc77938
 
 pkgname = openrgb-git

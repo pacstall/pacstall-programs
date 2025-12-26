@@ -7,7 +7,7 @@ breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
 arch=('amd64')
 sha256sums=("b81f5ba21f134087c0294d809f89e5442d641d7be297bb128807cbce00849e9b")
 source=("https://github.com/cheat/cheat/releases/download/${pkgver}/cheat-linux-amd64.gz")
-url="https://github.com/cheat/cheat"
+url='https://github.com/cheat/cheat'
 pkgdesc="Create and view interactive cheatsheets on the command-line"
 maintainer=("Arrowsome <ramtintoosi@gmail.com>")
 

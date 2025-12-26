@@ -1,6 +1,6 @@
 pkgbase = firefox-nightly-deb
 	gives = firefox-nightly
-	pkgver = 138.0a1
+	pkgver = 144.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -9,7 +9,7 @@ pkgbase = firefox-nightly-deb
 	replaces = firefox-nightly-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-138.0a1.en-US.linux-x86_64.deb
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-138.0a1.en-US.linux-aarch64.deb
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-144.0a1.en-US.linux-x86_64.deb
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-144.0a1.en-US.linux-aarch64.deb
 
 pkgname = firefox-nightly-deb

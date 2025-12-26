@@ -1,20 +1,19 @@
 pkgname="galaxybudsclient-bin"
 gives="galaxybudsclient"
-pkgver="5.1.0"
+pkgver="5.1.2"
 pkgdesc="Unofficial Galaxy Buds Manager for Windows and Linux"
 repology=("project: galaxybudsclient")
-url="https://github.com/timschneeb/GalaxyBudsClient"
+url='https://github.com/timschneeb/GalaxyBudsClient'
 arch=("amd64" "arm64" "armhf")
 depends=("bluetooth")
-maintainer=()
 
 source_amd64=("${url}/releases/download/${pkgver}/GalaxyBudsClient_Linux_64bit_Portable.bin")
 source_arm64=("${url}/releases/download/${pkgver}/GalaxyBudsClient_Linux_arm64_Portable.bin")
 source_armhf=("${url}/releases/download/${pkgver}/GalaxyBudsClient_Linux_arm_Portable.bin")
 source=("${url}/blob/${pkgver}/GalaxyBudsClient/Resources/icon.png?raw=true")
-sha256sums_amd64=('09dfdb8f6a5f7ffc38a5fda9ca99311acf3ac56454d00b3105b59282a841857e')
-sha256sums_arm64=('e7d0ef2b8b8ac496e7d7f257e655ceefe083dfdd65b3c45cc5578572479bc892')
-sha256sums_armhf=('e15a9eb81ccb7c0ea38694bd26121484b4f9ab2219b5f97d895f10bad5921d3b')
+sha256sums_amd64=('13e6dee834cff02ff772b8eaebdd5631e1e3e6556b365e6dbb0184c7fa68da00')
+sha256sums_arm64=('51a1857faa24e52b2dc2b15e2839221bfac707826dac9e0235b9abd9d39d0abd')
+sha256sums_armhf=('cb7c2b7b00a64886b9d04b4411cf47e2a531ccad718fe018fbd633ffe47aaa5a')
 sha256sums=('15783ad016b4fc50395456da8bd4838441582f5394a0731c0038fdc692289d51')
 
 package() {

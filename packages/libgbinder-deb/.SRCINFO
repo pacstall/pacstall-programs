@@ -1,7 +1,7 @@
 pkgbase = libgbinder-deb
 	gives = libgbinder
-	pkgver = 1.1.25
-	pkgrel = 2
+	pkgver = 1.1.42
+	pkgrel = 4
 	pkgdesc = Binder client library
 	arch = amd64
 	arch = arm64
@@ -13,9 +13,9 @@ pkgbase = libgbinder-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: libgbinder
-	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libgbinder_1.1.25_amd64.deb
-	sha256sums_amd64 = 3d3c4d7075072c7dbe008db47d641b0269a8dea16247f77deb64c4ce2f920978
-	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/libgbinder_1.1.25_arm64.deb
-	sha256sums_arm64 = 82a7313d4e63439a9caf0f3dfbfa1ed8ae75468b4fe23250dbbc2d9559232400
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libgbinder_1.1.42_amd64.deb
+	sha256sums_amd64 = 80c780f2eac4ff711b30f849ede60b3a178598ea51ff7c12648ab16765f8d07f
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/libgbinder_1.1.42_arm64.deb
+	sha256sums_arm64 = 8c63a641b6ce303a238a6649525da289ae412514ab383d1a2a4567b17ee03c8c
 
 pkgname = libgbinder-deb

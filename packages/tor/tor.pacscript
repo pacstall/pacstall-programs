@@ -3,12 +3,12 @@ repology=("project: ${pkgname}")
 replaces=("${pkgname}")
 breaks=("${pkgname}-git")
 arch=("any")
-pkgver="0.4.7.13"
+pkgver="0.4.8.16"
 source=("@${pkgname}~${pkgver}::https://dist.torproject.org/${pkgname}-${pkgver}.tar.gz")
 makedepends=("make" "autoconf" "libevent-dev" "libnss3-dev" "libzstd-dev" "liblzma-dev" "openssl" "libssl-dev" "ca-certificates" "libseccomp-dev" "zlib1g-dev")
 depends=("openssl")
 pkgdesc="Tor protects your privacy on the internet by hiding the connection between your Internet address and the services you use"
-sha256sums=("2079172cce034556f110048e26083ce9bea751f3154b0ad2809751815b11ea9d")
+sha256sums=("6540dd377a120fb8e7d27530aa3b7ff72a0fa5b4f670fe1d64c987c1cfd390cb")
 
 build() {
   cd "${pkgname}~${pkgver}"

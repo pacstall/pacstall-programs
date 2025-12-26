@@ -9,7 +9,6 @@ license=('MIT')
 depends=('jq')
 pacdeps=('glow-deb')
 source=("${gives}::${url}.git")
-maintainer=()
 repology=("project: ${gives}")
 
 package() {

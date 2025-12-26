@@ -1,6 +1,6 @@
 pkgbase = hyperfine-bin
 	gives = hyperfine
-	pkgver = 1.17.0
+	pkgver = 1.19.0
 	pkgdesc = A command-line benchmarking tool
 	arch = amd64
 	breaks = hyperfine
@@ -9,7 +9,7 @@ pkgbase = hyperfine-bin
 	breaks = hyperfine-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: hyperfine
-	source = @hyperfine-bin~1.17.0::https://github.com/sharkdp/hyperfine/releases/download/v1.17.0/hyperfine-v1.17.0-x86_64-unknown-linux-musl.tar.gz
-	sha256sums = 563de47d843810de501e3e6bfcb4571a4ff957eab811c2af87be23d1c599ae47
+	source = @hyperfine-bin~1.19.0::https://github.com/sharkdp/hyperfine/releases/download/v1.19.0/hyperfine-v1.19.0-x86_64-unknown-linux-musl.tar.gz
+	sha256sums = 825287143f397774093539ca2458854ab3735c0e8a1aaf075c22edce7d261556
 
 pkgname = hyperfine-bin

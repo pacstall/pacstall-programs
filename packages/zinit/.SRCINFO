@@ -1,7 +1,7 @@
 pkgbase = zinit
 	gives = zinit
-	pkgver = 3.13.1
-	pkgdesc = A flexible and fast Zsh plugin manager
+	pkgver = 3.14.0
+	pkgdesc = Flexible and fast Zsh plugin manager
 	url = https://github.com/zdharma-continuum/zinit
 	arch = amd64
 	depends = git
@@ -11,7 +11,7 @@ pkgbase = zinit
 	license = MIT
 	maintainer = Bahar KURT <kurtbahartr@gmail.com>
 	repology = project: zinit
-	source = @zinit~3.13.1::https://github.com/zdharma-continuum/zinit/archive/refs/tags/v3.13.1.tar.gz
-	sha256sums = 41359f41815a6461cab50ff5ba0b94dc40adcdb3646c9e71021064146a2a336a
+	source = @zinit~3.14.0::https://github.com/zdharma-continuum/zinit/archive/refs/tags/v3.14.0.tar.gz
+	sha256sums = 4707baaad983d2ea911b4c2fddde9e7876593b3dc969a5efd9d387c9e3d03bb3
 
 pkgname = zinit

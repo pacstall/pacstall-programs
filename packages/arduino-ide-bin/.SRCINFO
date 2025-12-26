@@ -1,6 +1,6 @@
 pkgbase = arduino-ide-bin
 	gives = arduino-ide
-	pkgver = 2.3.2
+	pkgver = 2.3.6
 	pkgdesc = An open-source IDE that makes it easy to write code and upload it to Arduino boards
 	arch = amd64
 	breaks = arduino-ide
@@ -9,10 +9,10 @@ pkgbase = arduino-ide-bin
 	breaks = arduino-ide-git
 	maintainer = DismissedGuy <me@mikealmel.ooo>
 	repology = project: arduino
-	source = @arduino-ide-bin~2.3.2::https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.2_Linux_64bit.zip
-	source = arduino.svg::https://www.arduino.cc/wiki/370832ed4114dd35d498f2f449b4781e/arduino.svg
+	source = @arduino-ide-bin~2.3.6::https://downloads.arduino.cc/arduino-ide/arduino-ide_2.3.6_Linux_64bit.zip
+	source = arduino.svg::https://upload.wikimedia.org/wikipedia/commons/7/73/Arduino_IDE_logo.svg
 	source = arduino-ide.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/arduino-ide-bin/arduino-ide.desktop
-	sha256sums = 1a23b911043a247116ace846f03a0265c719dcd49cf9a8af09334db4d3916e88
+	sha256sums = 33bf2cb868abf92b3d160f7433dcd6348cec1c9e633b5c9e1c761f630f87b82b
 	sha256sums = SKIP
 	sha256sums = SKIP
 

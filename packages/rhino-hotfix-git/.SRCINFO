@@ -1,12 +1,14 @@
 pkgbase = rhino-hotfix-git
 	gives = rhino-hotfix
 	pkgver = 0.0.1
+	pkgrel = 2
 	pkgdesc = Fetch and run hotfixes for Rhino Linux
 	arch = all
 	depends = jq
 	depends = curl
 	compatible = ubuntu:devel
-	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
+	compatible = ubuntu:resolute
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = rhino-hotfix::https://github.com/rhino-linux/hotfix.git
 

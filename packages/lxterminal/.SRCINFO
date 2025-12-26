@@ -1,0 +1,27 @@
+pkgbase = lxterminal
+	pkgver = 0.4.1
+	pkgdesc = VTE terminal emulator written in GTK
+	url = https://www.lxde.org/
+	arch = amd64
+	depends = libgdk-pixbuf-2.0-0>=2.22.0
+	depends = libglib2.0-0>=2.28.0
+	depends = libgtk-3-0>=3.21.5
+	depends = libpango-1.0-0>=1.14.0
+	depends = libvte-2.91-0>=0.51.90
+	depends = libx11-6
+	makedepends = autotools-dev
+	makedepends = docbook-xml
+	makedepends = docbook-xsl
+	makedepends = intltool
+	makedepends = libglib2.0-dev
+	makedepends = libgtk2.0-dev
+	makedepends = libvte-2.91-dev
+	makedepends = libxml2-utils
+	makedepends = xsltproc
+	provides = x-terminal-emulator
+	license = GPL-2.0-only
+	maintainer = Don Alfons <donnisnoni@outlook.com>
+	source = @lxterminal~0.4.1::https://github.com/lxde/lxterminal/archive/refs/tags/0.4.1.tar.gz
+	sha256sums = d5da0646e20ad2be44ef69a9d620be5f1ec43b156dc585ebe203dd7b05c31d88
+
+pkgname = lxterminal

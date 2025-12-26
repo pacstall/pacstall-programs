@@ -1,6 +1,6 @@
 pkgbase = nutext-git
 	gives = nutext
-	pkgver = 0.3.2
+	pkgver = 0.5.0
 	pkgdesc = Another translaton plugin for nushell
 	url = https://github.com/rhino-linux/nu_plugin_nutext
 	arch = amd64

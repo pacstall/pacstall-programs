@@ -1,6 +1,6 @@
 # based on the Arch Linux PKGBUILD (https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=gnucash-git)
 pkgname="gnucash"
-pkgver="5.10"
+pkgver="5.11"
 pkgdesc="Personal and small-business financial-accounting application"
 url='http://www.gnucash.org'
 repology=("project: ${pkgname}")
@@ -9,7 +9,7 @@ source=(
   "https://github.com/Gnucash/gnucash/releases/download/${pkgver}/gnucash-${pkgver}.tar.gz"
 )
 sha256sums=(
-  "7370fa0f56b574ff459745b6154ca02076e4f2ef97d2907c8721605225b80524"
+  "a5d3a12991cff287267f6896d70bd8b3fe7030fb552b1d18067300d0ed7f8a2f"
 )
 
 maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")

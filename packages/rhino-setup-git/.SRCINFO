@@ -1,7 +1,6 @@
 pkgbase = rhino-setup-git
 	gives = rhino-setup
-	pkgver = 2025.1
-	pkgrel = 4
+	pkgver = 2025.3-2
 	pkgdesc = Rhino Linux Setup Prompt
 	arch = any
 	depends = libgtk-4-dev

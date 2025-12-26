@@ -1,5 +1,5 @@
 pkgbase = tailscale
-	pkgver = 1.58.2
+	pkgver = 1.84.2
 	pkgdesc = Private WireGuard networks made easy
 	url = https://tailscale.com
 	arch = amd64
@@ -10,7 +10,7 @@ pkgbase = tailscale
 	incompatible = debian:bookworm
 	maintainer = Nathan <ndowens@artixlinux.org>
 	repology = project: tailscale
-	source = @tailscale~1.58.2::https://github.com/tailscale/tailscale/archive/refs/tags/v1.58.2.tar.gz
-	sha256sums = 452f355408e4e2179872387a863387e06346fc8a6f9887821f9b8a072c6a5b0a
+	source = @tailscale~1.84.2::https://github.com/tailscale/tailscale/archive/refs/tags/v1.84.2.tar.gz
+	sha256sums = 32673e5552e1176f1028a6a90a4c892d2475c92d1e952ca16156dc523d14d914
 
 pkgname = tailscale

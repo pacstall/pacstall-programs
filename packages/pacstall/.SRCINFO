@@ -1,5 +1,5 @@
 pkgbase = pacstall
-	pkgver = 6.2.1
+	pkgver = 6.3.8
 	pkgdesc = An AUR-inspired package manager for Ubuntu Pacstall is the AUR Ubuntu wishes it had. It takes the concept of the AUR and puts a spin on it, making it easier to install and update downstream programs, without scouring github repos and the likes.
 	url = https://pacstall.dev
 	arch = all
@@ -13,7 +13,7 @@ pkgbase = pacstall
 	depends = gzip
 	depends = sensible-utils
 	depends = iputils-ping
-	depends = lsb-release
+	depends = ca-certificates
 	depends = aptitude
 	depends = bubblewrap
 	depends = build-essential
@@ -30,6 +30,6 @@ pkgbase = pacstall
 	backup = usr/share/pacstall/update
 	maintainer = Pacstall Team <pacstall@pm.me>
 	maintainer = Elsie19 <hwengerstickel@pm.me>
-	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.2.1.zip
+	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.3.8.zip
 
 pkgname = pacstall

@@ -1,0 +1,18 @@
+pkgbase = talm-bin
+	gives = talm
+	pkgver = 0.15.0
+	pkgdesc = Manage Talos Linux the GitOps Way!
+	arch = amd64
+	arch = arm64
+	arch = i386
+	breaks = talm
+	maintainer = faelau <git@faessler.sh>
+	repology = project: talm
+	source_amd64 = talm~0.15.0::https://github.com/cozystack/talm/releases/download/v0.15.0/talm-linux-amd64.tar.gz
+	sha256sums_amd64 = 8283ba822d2d2da93be633ee9123992ab918412a6d2da4af6c7863de109e6178
+	source_arm64 = talm~0.15.0::https://github.com/cozystack/talm/releases/download/v0.15.0/talm-linux-arm64.tar.gz
+	sha256sums_arm64 = a068cf8eda490e1203a762eb0016a6c9688247253381229ee407da4ee8d364a3
+	source_i386 = talm~0.15.0::https://github.com/cozystack/talm/releases/download/v0.15.0/talm-linux-i386.tar.gz
+	sha256sums_i386 = f840826eb84daea7fddc6fb9feaceda7968bce6afd5101e0b48c983eb50f0533
+
+pkgname = talm-bin

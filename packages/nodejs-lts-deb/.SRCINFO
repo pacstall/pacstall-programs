@@ -1,6 +1,6 @@
 pkgbase = nodejs-lts-deb
 	gives = nodejs
-	pkgver = 18.15.0
+	pkgver = 22.16.0
 	pkgdesc = Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine
 	arch = amd64
 	breaks = nodejs
@@ -12,7 +12,7 @@ pkgbase = nodejs-lts-deb
 	maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
 	repology = project: nodejs
 	repology = repo: centos_stream_9
-	source = https://deb.nodesource.com/node_18.x/pool/main/n/nodejs/nodejs_18.15.0-deb-1nodesource1_amd64.deb
-	sha256sums = c253e9021faf026115d45ae8ea56f5c587483baebeab1394578c3cd1d44d9c64
+	source = https://deb.nodesource.com/node_22.x/pool/main/n/nodejs/nodejs_22.16.0-1nodesource1_amd64.deb
+	sha256sums = 8abd60d8adcda17faf9d56c850eb721f409697fd532cfb776c56674ed8f6732f
 
 pkgname = nodejs-lts-deb

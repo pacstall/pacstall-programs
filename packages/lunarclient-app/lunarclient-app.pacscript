@@ -2,8 +2,7 @@ PACSTALL_DOWNLOADER=curl
 _gives=lunarclient
 pkgname="${_gives}-app"
 repology=("project: lunar-client")
-pkgver="3.2.4"
-pkgrel="2"
+pkgver="3.3.11"
 arch=("amd64")
 pkgdesc="PvP modpack for all modern versions of Minecraft"
 url='https://lunarclient.com'
@@ -18,7 +17,7 @@ source=(
   "https://raw.githubusercontent.com/Mythbusters123/lunarclient-app/main/${_gives}.desktop"
 )
 sha256sums=(
-  'aae0a052ce84c2f88d7ffaa36af3d794502202b79095353fd5f2de548a639a01'
+  '6699e89408df5c21ba7b1a7508e8676f49d911709a195699efcff7c82a99a782'
   '28d489d41431bdaa784342a227abdfbbb525bbe831f98d34747ec557b6e02f05'
   'SKIP'
 )

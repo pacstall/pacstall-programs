@@ -1,12 +1,12 @@
 pkgbase = bat-deb
 	gives = bat
-	pkgver = 0.24.0
+	pkgver = 0.26.1
 	pkgdesc = A cat(1) clone with wings
 	arch = amd64
 	replaces = bat
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: bat-cat
-	source = https://github.com/sharkdp/bat/releases/download/v0.24.0/bat_0.24.0_amd64.deb
-	sha256sums = fa9353fa0c6e1e67b87757c4bd6bf515f85d3fc16d41b12cc26f7a673892ad01
+	source = https://github.com/sharkdp/bat/releases/download/v0.26.1/bat_0.26.1_amd64.deb
+	sha256sums = ad59954aa1540e526f97267f60557ea5ef4c7dcf91a0811254134537cb353a3c
 
 pkgname = bat-deb

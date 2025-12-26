@@ -1,16 +1,45 @@
 pkgname="gtkhash"
 arch=("any")
-pkgver="1.4"
+pkgver="1.5"
 source=("@${pkgname}~${pkgver}::https://github.com/tristanheaven/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz")
-makedepends=("autoconf" "automake" "libtool" "intltool" "wget")
-depends=("libgtk-3-dev" "libglib2.0-dev" "libgcrypt-dev" "nettle-dev" "libb2-dev" "openssl" "libmbedtls-dev")
+makedepends=(build-essential
+  libtool
+  gettext
+  autopoint
+  appstream
+  libglib2.0-dev
+  libgtk-3-dev
+  libgcrypt20-dev
+  nettle-dev
+  libb2-dev
+  libmbedtls-dev
+  libssl-dev
+  linux-libc-dev
+  librsvg2-bin
+  libxml2-utils
+  at-spi2-core
+  xvfb
+  gnome-icon-theme)
 replaces=("${pkgname}")
-pkgdesc="gtkhash is a desktop utility for computing message digests or checksums."
-sha256sums=("20b57dbb8f6c6d7323f573c111a11640603a422c5f9da7b302a4981e4adc37c4")
+pkgdesc="Desktop utility for computing message digests or checksums"
+sha256sums=("7102a192eca3e82ed67a8252a6850440e50c1dbea7c6364bda154ec80f8ff005")
 
 build() {
+  local config_flags=(
+    --enable-debug
+    --enable-blake2
+    --enable-gcrypt
+    --enable-glib-checksums
+    --enable-mbedtls
+    --enable-nettle
+    --enable-libcrypto
+    --enable-linux-crypto
+    --disable-dependency-tracking
+  )
+
   cd "${pkgname}~${pkgver}"
-  ./configure --enable-mbedtls --enable-nettle
+  ./autogen.sh
+  ./configure "${config_flags[@]}"
   make -j"${NCPU}"
 }
 

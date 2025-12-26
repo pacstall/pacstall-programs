@@ -15,6 +15,7 @@ pkgbase = appmenu-registrar-backport
 	compatible = ubuntu:oracular
 	compatible = ubuntu:devel
 	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
 	license = LGPL-3.0-or-later
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://gitlab.com/vala-panel-project/vala-panel-appmenu/-/archive/24.02/vala-panel-appmenu-24.02.tar.gz

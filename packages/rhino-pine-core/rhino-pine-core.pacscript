@@ -3,16 +3,16 @@ source=("https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text
 pacdeps=("unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "rhino-hotfix-git" "u-boot-mobian-deb" "mobile-usb-networking-deb")
 depends=("initramfs-tools" "printer-driver-all-enforce")
 if [[ -f /usr/bin/enable-modem ]]; then
-  depends+=("eg25-manager" "modemmanager" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "ofono" "ofono-scripts" "gpsd")
+  depends+=("eg25-manager | ofono-scripts" "modemmanager | ofono" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "gpsd")
 fi
 pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-compatible=("ubuntu:devel" "ubuntu:plucky")
+compatible=("ubuntu:devel" "ubuntu:questing" "ubuntu:resolute")
 replaces=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
-pkgver="2025.2"
-pkgrel="2"
+pkgver="2025.4"
+pkgrel="1"
 style="(mobile)"
 branch="devel"
 

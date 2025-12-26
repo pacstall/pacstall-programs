@@ -1,9 +1,0 @@
-pkgbase = obs-ndi-deb
-	gives = obs-ndi
-	pkgver = 4.9.1
-	pkgdesc = Network A/V in OBS Studio with NewTek's NDI technology
-	arch = amd64
-	source = https://github.com/Palakis/obs-ndi/releases/download/4.9.1/obs-ndi_4.9.1-1_amd64.deb
-	sha256sums = e91a27370dcbee0879fb27ffec8dba149825f47909a92e31a001e87e64e7329b
-
-pkgname = obs-ndi-deb

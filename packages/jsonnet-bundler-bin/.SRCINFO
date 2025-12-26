@@ -1,0 +1,14 @@
+pkgbase = jsonnet-bundler-bin
+	gives = jb
+	pkgver = 0.6.0
+	pkgdesc = Jsonnet package manager
+	arch = amd64
+	arch = arm64
+	maintainer = faelau <git@faessler.sh>
+	repology = project: jsonnet-bundler
+	source_amd64 = jb~0.6.0::https://github.com/jsonnet-bundler/jsonnet-bundler/releases/download/v0.6.0/jb-linux-amd64
+	sha256sums_amd64 = 78e54afbbc3ff3e0942b1576b4992277df4f6beb64cddd58528a76f0cd70db54
+	source_arm64 = jb~0.6.0::https://github.com/jsonnet-bundler/jsonnet-bundler/releases/download/v0.6.0/jb-linux-arm64
+	sha256sums_arm64 = 19f2da64816137cd87a82dd963c752ff4b7c8701fc1ed7b979c356321dcf3f5a
+
+pkgname = jsonnet-bundler-bin

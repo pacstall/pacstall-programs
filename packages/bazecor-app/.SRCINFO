@@ -1,6 +1,6 @@
 pkgbase = bazecor-app
 	gives = bazecor
-	pkgver = 1.6.2
+	pkgver = 1.8.3
 	pkgdesc = Bazecor is the graphical configurator for the Dygma Raise
 	arch = amd64
 	depends = usbutils
@@ -11,9 +11,9 @@ pkgbase = bazecor-app
 	breaks = bazecor-git
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: bazecor
-	source = https://github.com/Dygmalab/Bazecor/releases/download/v1.6.2/Bazecor-1.6.2-x64.AppImage
+	source = https://github.com/Dygmalab/Bazecor/releases/download/v1.8.3/Bazecor-1.8.3-x64.AppImage
 	source = https://raw.githubusercontent.com/Elsie19/images/master/bazecor.png
-	sha256sums = 15fa3009b9e1188d2c82516fc5fec072d5090bd2ec8fded48b4f2739b0678e81
+	sha256sums = 380c0778b2db5be16529ecb14be3023938ab1c2bea669b626176de0379786097
 	sha256sums = SKIP
 
 pkgname = bazecor-app

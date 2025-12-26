@@ -1,0 +1,24 @@
+pkgbase = keyd-deb
+	gives = keyd
+	pkgver = 2.5.0-4
+	pkgdesc = Keyboard key remapping daemon
+	arch = amd64
+	arch = arm64
+	arch = armhf
+	arch = i386
+	arch = riscv64
+	depends = libc6>=2.34
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: keyd
+	source_amd64 = http://ftp.debian.org/debian/pool/main/k/keyd/keyd_2.5.0-4_amd64.deb
+	sha256sums_amd64 = 1026a168630c8e00ef0356b7e15bc298de2ba535228c1b05772f7c55828b61a1
+	source_arm64 = http://ftp.debian.org/debian/pool/main/k/keyd/keyd_2.5.0-4_arm64.deb
+	sha256sums_arm64 = 406f18b2103680fbe34a1e35b1e60794560c28fe206091fb7ae5cec8e4ccb6bd
+	source_armhf = http://ftp.debian.org/debian/pool/main/k/keyd/keyd_2.5.0-4_armhf.deb
+	sha256sums_armhf = f0e9974d4866c470c3a00befd8494baf70b09282a8de8c9098e09408147c98fa
+	source_i386 = http://ftp.debian.org/debian/pool/main/k/keyd/keyd_2.5.0-4_i386.deb
+	sha256sums_i386 = 933b4ffaf3efd23619826e149ccfea1984929dbc7276efabb5863e03e0157b4a
+	source_riscv64 = http://ftp.debian.org/debian/pool/main/k/keyd/keyd_2.5.0-4_riscv64.deb
+	sha256sums_riscv64 = 1840aee6074fde916c8bc11fae021e7aac32253f3da6ba8fc709308290b73414
+
+pkgname = keyd-deb

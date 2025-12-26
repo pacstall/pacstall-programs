@@ -1,11 +1,11 @@
 pkgbase = r2modman-deb
 	gives = r2modman
-	pkgver = 3.1.58
+	pkgver = 3.2.2
 	pkgdesc = Simple and easy to use mod manager for many games using Thunderstore
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: r2modman
-	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.1.58/r2modman_3.1.58_amd64.deb
-	sha256sums = f97ebf293b98193450d57e8ede22560e08314fd457c7dab905fd009ca6f1ef3d
+	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.2.2/r2modman_3.2.2_amd64.deb
+	sha256sums = da1de2e32a8f4792afadd03d7b3e7d5b041388c63100d3b0ee3a7600b84da146
 
 pkgname = r2modman-deb

@@ -1,0 +1,9 @@
+pkgname="rhinu-pkg-git"
+gives="${pkgname%-git}"
+source=("https://github.com/rhino-linux/rhino-pkg.git")
+arch=("all")
+pkgver="2.0.0"
+pkgrel="2"
+pacdeps=("rhino-pkg-git")
+pkgdesc="Rhino-pkg wrapper script - Nushell rewrite"
+maintainer=("Oren Klopfer <oren@taumoda.com>" "Elsie19 <elsie19@pm.me>")

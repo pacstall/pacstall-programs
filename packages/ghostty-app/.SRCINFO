@@ -1,11 +1,12 @@
 pkgbase = ghostty-app
 	gives = ghostty
-	pkgver = 1.1.3
+	pkgver = 1.2.3
 	pkgdesc = Fast, feature-rich, and cross-platform terminal emulator
 	url = https://github.com/psadi/ghostty-appimage
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
-	source = https://github.com/psadi/ghostty-appimage/releases/download/v1.1.3/Ghostty-1.1.3-x86_64.AppImage
-	sha256sums = 83872b5c2d9d8d069d933f9ec9ae7c9a5de2de9831a92fc0601ebf0797573041
+	repology = project: ghostty
+	source = https://github.com/psadi/ghostty-appimage/releases/download/v1.2.3/Ghostty-1.2.3-x86_64.AppImage
+	sha256sums = cf239a0a9383aa9a148da2f6c6444993f871618cf4309d4db15d7be992d16725
 
 pkgname = ghostty-app

@@ -1,6 +1,6 @@
 pkgbase = github-cli-bin
 	gives = gh
-	pkgver = 2.65.0
+	pkgver = 2.76.2
 	pkgdesc = GitHub's official command line tool - Binary version
 	arch = amd64
 	breaks = gh-git
@@ -8,7 +8,7 @@ pkgbase = github-cli-bin
 	replaces = gh
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: gh
-	source = @github-cli-bin~2.65.0::https://github.com/cli/cli/releases/download/v2.65.0/gh_2.65.0_linux_amd64.tar.gz
-	sha256sums = 762569efe785082b7d1feb06995efece1a9cecce16da8503ac6fdbcbea04085b
+	source = @github-cli-bin~2.76.2::https://github.com/cli/cli/releases/download/v2.76.2/gh_2.76.2_linux_amd64.tar.gz
+	sha256sums = 62544b0f3759bbf1155c0ac3d75838b5fe23d66dfb75cf8368f84fff8f82b93e
 
 pkgname = github-cli-bin

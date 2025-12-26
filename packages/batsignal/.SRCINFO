@@ -1,5 +1,5 @@
 pkgbase = batsignal
-	pkgver = 1.6.4
+	pkgver = 1.8.0
 	pkgdesc = A lightweight battery monitor daemon
 	arch = any
 	makedepends = pkg-config
@@ -9,7 +9,7 @@ pkgbase = batsignal
 	breaks = batsignal-git
 	maintainer = Harshwardhan Mehrotra <harshwardhanmehrotra@gmail.com>
 	repology = project: batsignal
-	source = @batsignal~1.6.4::https://github.com/electrickite/batsignal/archive/refs/tags/1.6.4.tar.gz
-	sha256sums = 58439dac2b678ab798831fe861c06d2d5c128c4bb4bae1476a62ba1771da3983
+	source = https://github.com/electrickite/batsignal/archive/refs/tags/1.8.0.tar.gz
+	sha256sums = c8c2a048f4aa105aae389d9d765b76057d4998dbfc29a7dfeaf66351eaa7cba1
 
 pkgname = batsignal

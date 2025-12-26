@@ -1,6 +1,6 @@
 pkgbase = ulauncher-deb
 	gives = ulauncher
-	pkgver = 6.0.0~beta16
+	pkgver = 6.0.0~beta20
 	pkgdesc = Application launcher for Linux
 	arch = all
 	depends = gobject-introspection
@@ -11,7 +11,7 @@ pkgbase = ulauncher-deb
 	depends = python3-levenshtein
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: ulauncher
-	source = https://github.com/Ulauncher/Ulauncher/releases/download/v6.0.0-beta16/ulauncher_6.0.0.beta16_all.deb
-	sha256sums = a1ea338d32d0a2fc2ad740c16f7e3a4b220d192f3d8af3b1ba7ff361f0d624a1
+	source = https://github.com/Ulauncher/Ulauncher/releases/download/v6.0.0-beta20/ulauncher_6.0.0.beta20_all.deb
+	sha256sums = 15c18e8acdc9845a90f133da112cbcd9e0d94db86b749f56c7ee967fb72721cb
 
 pkgname = ulauncher-deb

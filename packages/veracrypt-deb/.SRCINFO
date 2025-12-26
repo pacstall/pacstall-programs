@@ -1,6 +1,6 @@
 pkgbase = veracrypt-deb
 	gives = veracrypt
-	pkgver = 1.26.14
+	pkgver = 1.26.24
 	pkgdesc = VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux
 	arch = amd64
 	breaks = veracrypt
@@ -18,11 +18,11 @@ pkgbase = veracrypt-deb
 	compatible = *:sid
 	maintainer = Zahrun <Zahrun@github.com>
 	repology = project: veracrypt
-	source = https://launchpad.net/veracrypt/trunk/1.26.14/+download/veracrypt-1.26.14-Ubuntu-24.04-amd64.deb
-	sha256sums = 6252213d62386107867f4af398c05b1dc0eeec1c92d00e2410eb94baf0b16056
-	source_jammy = https://launchpad.net/veracrypt/trunk/1.26.14/+download/veracrypt-1.26.14-Ubuntu-22.04-amd64.deb
-	source_bookworm = https://launchpad.net/veracrypt/trunk/1.26.14/+download/veracrypt-1.26.14-Debian-12-amd64.deb
-	sha256sums_jammy = 26d80ce138e3293390ac031d967d56c70ee0318a5876c350721c2c8bb5c7f215
-	sha256sums_bookworm = 413a4931b58d00d1530615257cc2a1be8135b99479cefe4ed56240e2dd879d8e
+	source = https://launchpad.net/veracrypt/trunk/1.26.24/+download/veracrypt-1.26.24-Ubuntu-24.04-amd64.deb
+	sha256sums = 7c9844771203a6e96f7e4b86b245b85f0d1e45ade70f3f81b1d1b178fc81ca87
+	source_jammy = https://launchpad.net/veracrypt/trunk/1.26.24/+download/veracrypt-1.26.24-Ubuntu-22.04-amd64.deb
+	source_bookworm = https://launchpad.net/veracrypt/trunk/1.26.24/+download/veracrypt-1.26.24-Debian-12-amd64.deb
+	sha256sums_jammy = e785216c8a3ee1edc6ac800fc3a471f2390b45205a3af10985006bb263695814
+	sha256sums_bookworm = b00d44779accc803831dd42e0d4c3a63445bb0c26701f0a43d131f76e01f025c
 
 pkgname = veracrypt-deb

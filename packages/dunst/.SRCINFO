@@ -1,5 +1,5 @@
 pkgbase = dunst
-	pkgver = 1.9.2
+	pkgver = 1.13.0
 	pkgdesc = A highly configurable and lightweight notification daemon
 	arch = any
 	makedepends = libdbus-1-dev
@@ -11,7 +11,7 @@ pkgbase = dunst
 	makedepends = libnotify-dev
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: dunst
-	source = @dunst~1.9.2::https://github.com/dunst-project/dunst/archive/refs/tags/v1.9.2.tar.gz
-	sha256sums = fa6ce45c0af4bae188b0d679a5ba92f8f9b7e4301bb1bb476e82df26bce9e71a
+	source = @dunst~1.13.0::https://github.com/dunst-project/dunst/archive/refs/tags/v1.13.0.tar.gz
+	sha256sums = 7a8a1813977ad5941488c66b914501703fc0f6e12e631dc18506ad617242e7a0
 
 pkgname = dunst

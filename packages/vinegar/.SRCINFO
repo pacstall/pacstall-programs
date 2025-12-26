@@ -1,0 +1,29 @@
+pkgbase = vinegar
+	pkgver = 1.9.1
+	pkgdesc = Open-source, minimal, configurable, fast bootstrapper for running Roblox on Linux
+	url = https://vinegarhq.org/
+	arch = amd64
+	depends = libgtk-4-1
+	depends = libadwaita-1-0
+	makedepends = golang>=2:1.22
+	makedepends = pkg-config
+	makedepends = imagemagick
+	makedepends = gcc
+	makedepends = libwayland-dev
+	makedepends = libx11-dev
+	makedepends = libx11-xcb-dev
+	makedepends = libxkbcommon-x11-dev
+	makedepends = libgles2-mesa-dev
+	makedepends = libegl1-mesa-dev
+	makedepends = libffi-dev
+	makedepends = libxcursor-dev
+	makedepends = libvulkan-dev
+	makedepends = libglib2.0-dev-bin
+	optdepends = gamemode: Gamemode integration
+	optdepends = wine: A required dependency (made optional for flexibility)
+	license = GPL-3.0-only
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: vinegar
+	source = https://github.com/vinegarhq/vinegar.git#tag=v1.9.1
+
+pkgname = vinegar

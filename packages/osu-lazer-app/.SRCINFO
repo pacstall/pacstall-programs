@@ -1,21 +1,22 @@
 pkgbase = osu-lazer-app
-	pkgver = 2025.418.0
+	pkgver = 2025.1218.0
 	pkgdesc = The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew.
 	url = https://osu.ppy.sh
 	arch = amd64
 	depends = libfuse2
 	conflicts = osu-lazer
 	conflicts = osu-lazer-git
+	replaces = osu-lazer-tachyon-app
 	noextract = osu.AppImage
 	license = MIT
 	license = CC-BY-NC-4.0
-	source = osu-lazer-app-2025.418.0.AppImage::https://github.com/ppy/osu/releases/download/2025.418.0/osu.AppImage
+	source = osu-lazer-app-2025.1218.0.AppImage::https://github.com/ppy/osu/releases/download/2025.1218.0-lazer/osu.AppImage
 	source = icon.png::https://raw.githubusercontent.com/ppy/osu/master/assets/lazer.png
 	source = osu-lazer
 	source = osu-lazer.desktop
-	sha256sums = 06b40162176acdeca8f1f42803c43cba9af379cc573dbae297ed7f96f61061b5
+	sha256sums = f532dd0a54bdf9b0edd3f70e36c4230799d49a2b3ead63a8e4902dc38a1e194d
 	sha256sums = 30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51
-	sha256sums = baeea5b234e65707a4e6a563eacac89063bf20047d64125cd1f26c3c52aae957
+	sha256sums = 18f9ab3e98e5cc93a5da9baaa3b065c6511e126306107dfb51633406f3e49b0a
 	sha256sums = e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e
 
 pkgname = osu-lazer-app

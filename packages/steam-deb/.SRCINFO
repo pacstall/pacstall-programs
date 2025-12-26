@@ -1,6 +1,6 @@
 pkgbase = steam-deb
 	gives = steam-launcher
-	pkgver = 1.0.0.81
+	pkgver = 1.0.0.82
 	pkgdesc = Steam is a video game digital distribution service by Valve
 	arch = amd64
 	breaks = steam-launcher-bin

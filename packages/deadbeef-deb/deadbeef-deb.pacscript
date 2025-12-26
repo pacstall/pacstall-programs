@@ -8,6 +8,6 @@ breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app" "${gives}-deb")
 arch=("amd64")
 sha256sums=("c0e95beedb2dc3ee6de604048593b2b12a4ea001ad3185c41947b4f7d854ecf6")
 source=("https://cfhcable.dl.sourceforge.net/project/deadbeef/travis/linux/${pkgver}/deadbeef-static_${pkgver}-${build_version}_amd64.deb")
-url="https://deadbeef.sourceforge.io"
+url='https://deadbeef.sourceforge.io'
 pkgdesc="A modular cross-platform audio player"
 maintainer=("Arrowsome <ramtintoosi@gmail.com>")

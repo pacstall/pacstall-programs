@@ -1,0 +1,22 @@
+pkgbase = nodejs-deb
+	gives = nodejs
+	pkgver = 24.1.0
+	pkgdesc = JavaScript runtime built on Chrome's V8 JavaScript engine
+	url = https://nodejs.org
+	arch = amd64
+	arch = arm64
+	breaks = nodejs
+	breaks = nodejs-git
+	breaks = nodejs-bin
+	breaks = nodejs-app
+	replaces = nodejs
+	replaces = node
+	license = MIT
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: nodejs
+	source_amd64 = https://deb.nodesource.com/node_24.x/pool/main/n/nodejs/nodejs_24.1.0-1nodesource1_amd64.deb
+	sha256sums_amd64 = e7a421d23efe71cba59671d177135f6ee2b5da76d4a9ce800d53e1098aec317a
+	source_arm64 = https://deb.nodesource.com/node_24.x/pool/main/n/nodejs/nodejs_24.1.0-1nodesource1_arm64.deb
+	sha256sums_arm64 = 678124bd7befcaa97d2f42cf3527d918c26896a72bcb846be4f9792a99ca7f21
+
+pkgname = nodejs-deb

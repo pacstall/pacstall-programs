@@ -1,7 +1,7 @@
 pkgname="hyfetch-git"
 gives="hyfetch"
 pkgdesc="Neofetch with LGBTQ pride flags"
-url="https://github.com/hykilpikonna/hyfetch"
+url='https://github.com/hykilpikonna/hyfetch'
 source=("https://github.com/hykilpikonna/hyfetch.git")
 maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
 arch=("all")

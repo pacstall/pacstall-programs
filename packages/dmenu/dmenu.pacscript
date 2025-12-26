@@ -1,12 +1,12 @@
 pkgname="dmenu"
 arch=("any")
-pkgver="5.2"
+pkgver="5.3"
 source=("@${pkgname}~${pkgver}::https://dl.suckless.org/tools/${pkgname}-${pkgver}.tar.gz")
 makedepends=("libxinerama-dev" "libxft-dev")
 breaks=("${pkgname}" "${pkgname}_run" "${pkgname}_path")
 repology=("project: ${pkgname}")
 pkgdesc="A generic menu for X"
-sha256sums=("d4d4ca77b59140f272272db537e05bb91a5914f56802652dc57e61a773d43792")
+sha256sums=("1a8f53e6fd2d749839ec870c5e27b3e14da5c3eeacbfcb945d159e1d5433795f")
 
 build() {
   cd "${pkgname}~${pkgver}"

@@ -1,6 +1,6 @@
 pkgbase = docker-bin
 	gives = docker
-	pkgver = 27.5.1
+	pkgver = 28.3.2
 	pkgdesc = Docker Engine Static Binaries
 	arch = arm64
 	arch = amd64
@@ -30,9 +30,9 @@ pkgbase = docker-bin
 	provides = runc
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: docker
-	source_arm64 = https://download.docker.com/linux/static/stable/aarch64/docker-27.5.1.tgz
-	sha256sums_arm64 = e6b53725a73763ab3f988c73f8772eaed429754c1a579db5ff11f21990fd1817
-	source_amd64 = https://download.docker.com/linux/static/stable/x86_64/docker-27.5.1.tgz
-	sha256sums_amd64 = 4f798b3ee1e0140eab5bf30b0edc4e84f4cdb53255a429dc3bbae9524845d640
+	source_arm64 = https://download.docker.com/linux/static/stable/aarch64/docker-28.3.2.tgz
+	sha256sums_arm64 = 61c65bddb74ea73ba9644769ae673b9cb05b8ae66902393d6123d05a5b07ee01
+	source_amd64 = https://download.docker.com/linux/static/stable/x86_64/docker-28.3.2.tgz
+	sha256sums_amd64 = 9d274a3f330764ebd9cc82fe29e5dd5d0569bc34f9f53e3ac8905444cd88b413
 
 pkgname = docker-bin

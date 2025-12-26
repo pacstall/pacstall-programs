@@ -1,6 +1,6 @@
 pkgbase = upscayl-app
 	gives = upscayl
-	pkgver = 2.5.5
+	pkgver = 2.15.0
 	pkgdesc = Free and Open Source AI Image Upscaler for Linux, MacOS and Windows
 	arch = amd64
 	breaks = upscayl
@@ -9,10 +9,10 @@ pkgbase = upscayl-app
 	breaks = upscayl-git
 	maintainer = 0x262D <pacstall@copypaste.anonaddy.me>
 	repology = project: upscayl
-	source = https://github.com/TGS963/upscayl/releases/download/v2.5.5/Upscayl-2.5.5-linux.AppImage
+	source = https://github.com/TGS963/upscayl/releases/download/v2.15.0/Upscayl-2.15.0-linux.AppImage
 	source = upscayl.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/upscayl-app/upscayl.desktop
 	source = upscayl.svg::https://raw.githubusercontent.com/upscayl/upscayl/main/docs/logo/logo.svg
-	sha256sums = aa92f1386a6147d887bed6fc01965a32272dfe0f302e42fb0e1af89addcb65d9
+	sha256sums = 6459457e589bcb99e779ea442dce608bacda33916b7019a8862b7c6252aa8229
 	sha256sums = SKIP
 	sha256sums = SKIP
 

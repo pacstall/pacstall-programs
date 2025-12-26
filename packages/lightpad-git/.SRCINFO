@@ -1,7 +1,6 @@
 pkgbase = lightpad-git
-	gives = com.github.libredeb.lightpad
-	pkgver = 0.0.8
-	pkgrel = 2
+	gives = io.github.libredeb.lightpad
+	pkgver = 0.1.0
 	pkgdesc = A lightweight, simple and powerful application launcher
 	arch = any
 	depends = meson
@@ -35,6 +34,12 @@ pkgbase = lightpad-git
 	makedepends = python3-wheel
 	makedepends = python3-setuptools
 	makedepends = gnome-menus
+	replaces = lightpad
+	replaces = com.github.libredeb.lightpad
+	replaces = io.github.libredeb.lightpad
+	provides = lightpad
+	provides = com.github.libredeb.lightpad
+	provides = io.github.libredeb.lightpad
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/libredeb/lightpad.git
 

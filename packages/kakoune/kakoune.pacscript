@@ -1,14 +1,13 @@
 pkgname="kakoune"
-pkgver="2024.05.18"
+pkgver="2025.06.03"
 pkgdesc="mawww's experiment for a better code editor"
 license=('Unlicense')
 repology=("project: ${pkgname}")
-url="https://kakoune.org/"
+url='https://kakoune.org/'
 arch=("amd64" "arm64" "armhf" "i386")
 replaces=("${pkgname}")
-maintainer=()
 source=("https://github.com/mawww/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=("50f2920db8ab8f71556b73dfd6d53fb924f67d1c60b9882050cfecfaa3aed31f")
+sha256sums=("e065dbb715bfe6b0abdaeee775243115748bd540a346d0212fdca6c20c13d340")
 
 build() {
   make -C "${pkgname}-${pkgver}" -j"${NCPU}"

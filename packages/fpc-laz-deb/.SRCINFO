@@ -7,7 +7,7 @@ pkgbase = fpc-laz-deb
 	provides = fpc
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: fpc
-	source = https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%203.4/fpc-laz_3.2.2-210709_amd64.deb
+	source = https://cytranet-dal.dl.sourceforge.net/project/lazarus/Lazarus%20Linux%20amd64%20DEB/Lazarus%204.0/fpc-laz_3.2.2-210709_amd64.deb
 	sha256sums = 92000f2b831184e153aab0c910f8ae9240450e5c6d76dc189cf53116ee501d83
 
 pkgname = fpc-laz-deb

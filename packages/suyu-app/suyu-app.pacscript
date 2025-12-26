@@ -10,7 +10,6 @@ commit="0de49070e4"
 appimage="${gives}--${timestamp}-${commit}.AppImage"
 source=("https://git.suyu.dev/${gives}/${gives}/releases/download/v${pkgver}/${appimage}")
 sha256sums=("dbab16853bc1e8ad62fcaddf9b0620e690c8522fbbc6cdddcfcc958f9abb1f47")
-maintainer=()
 repology=("project: ${gives}")
 
 package() {

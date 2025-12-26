@@ -35,7 +35,7 @@ external_connection=true
 
 build() {
   cd "${gives}"
-  make -j"${NCPU}"
+  make VERSION="v${pkgver}-${git_pkgver}" -j"${NCPU}"
 }
 
 package() {

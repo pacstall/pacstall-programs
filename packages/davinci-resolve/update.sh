@@ -6,8 +6,8 @@ msg() {
   printf >&2 '>>> %s\n' "$@"
 }
 
-tmpdir=
-# shellcheck disable=SC2317
+unset tmpdir
+# shellcheck disable=SC2317,SC2329
 cleanup() {
   if [[ -n ${tmpdir} && -d ${tmpdir} ]]; then
     if [[ ${PWD} == "${tmpdir}" ]]; then

@@ -7,7 +7,6 @@ pkgver='19.0.1'
 pkgdesc='Professional A/V post-production software suite from Blackmagic Design'
 url='https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion'
 license=('custom:commercial')
-maintainer=()
 repology=("project: ${pkgname}")
 external_connection='true'
 arch=('amd64')

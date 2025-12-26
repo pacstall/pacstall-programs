@@ -1,0 +1,12 @@
+pkgbase = rhinu-pkg-git
+	gives = rhinu-pkg
+	pkgver = 2.0.0
+	pkgrel = 2
+	pkgdesc = Rhino-pkg wrapper script - Nushell rewrite
+	arch = all
+	pacdeps = rhino-pkg-git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://github.com/rhino-linux/rhino-pkg.git
+
+pkgname = rhinu-pkg-git

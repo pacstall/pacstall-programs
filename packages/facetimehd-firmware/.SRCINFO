@@ -1,0 +1,16 @@
+pkgbase = facetimehd-firmware
+	pkgver = 1.0.0
+	pkgdesc = FacetimeHD firmware download and extraction tool
+	url = https://github.com/patjak/facetimehd-firmware
+	arch = amd64
+	makedepends = xz-utils
+	makedepends = cpio
+	makedepends = curl
+	makedepends = make
+	provides = bcwc-pcie-firmware
+	license = GPL-2.0-only
+	maintainer = Dheeraj Reddy <dheerajre@proton.me>
+	source = @facetimehd-firmware~1.0.0::https://github.com/patjak/facetimehd-firmware/archive/refs/tags/v1.0.0.zip
+	sha256sums = 6883c3fefb372ccd78598eaca7fae97025ff3e543b096703667b296fbf45d7bd
+
+pkgname = facetimehd-firmware

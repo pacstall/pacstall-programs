@@ -1,5 +1,5 @@
 pkgbase = btrfs-assistant
-	pkgver = 2.1.1
+	pkgver = 2.2
 	pkgdesc = Manage BTRFS subvolumes and snapper snapshots
 	url = https://gitlab.com/btrfs-assistant/btrfs-assistant
 	arch = amd64
@@ -28,7 +28,7 @@ pkgbase = btrfs-assistant
 	backup = etc/btrfs-assistant.conf
 	license = GPL-3.0-only
 	maintainer = Eric Renfro <psi-jack@linux-help.org
-	source = btrfs-assistant-2.1.1.tar.gz::https://gitlab.com/btrfs-assistant/btrfs-assistant/-/archive/2.1.1/btrfs-assistant-2.1.1.tar.gz
-	sha256sums = cabc3824651606bd37db1809d7d2eeeaa724180d138613bff3490362751b9594
+	source = btrfs-assistant-2.2.tar.gz::https://gitlab.com/btrfs-assistant/btrfs-assistant/-/archive/2.2/btrfs-assistant-2.2.tar.gz
+	sha256sums = cf478b7a5673a456b3aa09df2a875aae8a023511a14ef901970666b93c28ebb9
 
 pkgname = btrfs-assistant

@@ -1,6 +1,6 @@
 pkgname="alacritty"
 arch=("any")
-pkgver="0.15.0"
+pkgver="0.16.0"
 repology=("project: alacritty")
 source=("@${pkgname}~${pkgver}::https://github.com/alacritty/alacritty/archive/refs/tags/v${pkgver}.tar.gz")
 makedepends=("cargo" "cmake" "pkg-config" "libfreetype6-dev" "libfontconfig1-dev" "libxcb-xfixes0-dev" "python3" "gzip" "scdoc")
@@ -8,7 +8,7 @@ pkgdesc="A fast, cross-platform, OpenGL terminal emulator"
 maintainer=("Warofzen <warofzen1@protonmail.com>")
 incompatible=('debian:bullseye' 'debian:bookworm')
 external_connection=true
-sha256sums=("aa4479c99547c0b6860760b5b704865f629ffe1f1ec374153c2cd84e53ce5412")
+sha256sums=("7baaf26acd80f6b7ceceb2c984b0d43b4089af2d12db3cbaa60ad1243d712e72")
 
 build() {
   cd "${pkgname}~${pkgver}"

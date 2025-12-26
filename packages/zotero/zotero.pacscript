@@ -1,9 +1,9 @@
 pkgname="zotero"
 repology=("project: zotero")
-pkgver="7.0.11"
+pkgver="7.0.15"
 source=("@${pkgname}~${pkgver}::https://download.zotero.org/client/release/${pkgver}/Zotero-${pkgver}_linux-x86_64.tar.bz2")
 pkgdesc="Your personal research assistant"
-sha256sums=("4a5760e2c47ec06d171f4d2609c9ece5cc9f633360ed140fe2ff7954d33a46ee")
+sha256sums=("d16a8aca23562c025e07e274524fbf7cc1225f67f6075b1958ec896eeb4523bf")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 

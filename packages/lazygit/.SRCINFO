@@ -1,13 +1,13 @@
 pkgbase = lazygit
 	gives = lazygit
-	pkgver = 0.49.0
+	pkgver = 0.56.0
 	pkgdesc = simple terminal UI for git commands
 	url = https://github.com/jesseduffield/lazygit
 	arch = amd64
 	depends = git
 	maintainer = Thomas Crha <thomas@9bitbyte.com>
 	maintainer = raik199x <raik199x@mail.ru>
-	source = @lazygit~0.49.0::https://github.com/jesseduffield/lazygit/releases/download/v0.49.0/lazygit_0.49.0_Linux_x86_64.tar.gz
-	sha256sums = ae9c9a3fcea9cdaf6511a7ca0040210cc71ab481fc773e53737cbfe92da974ce
+	source = @lazygit~0.56.0::https://github.com/jesseduffield/lazygit/releases/download/v0.56.0/lazygit_0.56.0_Linux_x86_64.tar.gz
+	sha256sums = ced13c2ae074bbf6c201bc700ee2971e193b811c3b2ae0ed4d00d6225c6c9ab7
 
 pkgname = lazygit

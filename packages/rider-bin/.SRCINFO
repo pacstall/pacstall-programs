@@ -1,14 +1,14 @@
 pkgbase = rider-bin
 	gives = rider
-	pkgver = 2024.3.3
+	pkgver = 2025.1.3
 	pkgdesc = The world's most loved .NET and game dev IDE
 	arch = amd64
 	arch = arm64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: rider
-	source_amd64 = https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.3.3.tar.gz
-	sha256sums_amd64 = 3185826c0d85c06bf18c5ece3f5f9698acef006932b7a92b6cb190fd4d8e2807
-	source_arm64 = https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2024.3.3-aarch64.tar.gz
-	sha256sums_arm64 = 8ca14eeae6a9164da955f9e292dda788bda53a031c24ef6c2fab505e3e2f175b
+	source_amd64 = https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.1.3.tar.gz
+	sha256sums_amd64 = 7fce2077fbd3cb4c80e56af4607c2450db81a727b93cc41e155b3ab3779d7b90
+	source_arm64 = https://download-cdn.jetbrains.com/rider/JetBrains.Rider-2025.1.3-aarch64.tar.gz
+	sha256sums_arm64 = ed6a185bf4768509febf4664e8577b518ce23f974a6b6d5a183d546d3da2d1a5
 
 pkgname = rider-bin

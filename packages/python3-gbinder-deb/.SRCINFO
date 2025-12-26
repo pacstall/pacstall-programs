@@ -13,9 +13,9 @@ pkgbase = python3-gbinder-deb
 	compatible = debian:sid
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: python3-gbinder
-	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/python3-gbinder_1.1.2_amd64.deb
-	sha256sums_amd64 = c30aa2565cdc031c3b20a8612ef0ab94e40e2d5b2677de382e48a373b1960f5a
-	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/python3-gbinder_1.1.2_arm64.deb
-	sha256sums_arm64 = 8ee6120b5f51f2853207885b4d9542034e9381263c803deaf4cfc6c1b410c8e2
+	source_amd64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/python3-gbinder_1.1.2_amd64.deb
+	sha256sums_amd64 = fec13f42bf98e0848549d6c5c9c4685945da643945baf30e556c6f4d1f118bd4
+	source_arm64 = https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.5.4/python3-gbinder_1.1.2_arm64.deb
+	sha256sums_arm64 = 0eb8f6b33b80a88d191ec442f321f254e03c2a471edce8967afeb6d3b0b4bba1
 
 pkgname = python3-gbinder-deb

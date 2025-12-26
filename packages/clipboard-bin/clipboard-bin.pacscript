@@ -8,17 +8,17 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="clipboard-bin"
 gives="clipboard"
-pkgver="0.9.1"
+pkgver="0.10.0"
 pkgdesc="Cut, copy, and paste anything in your terminal"
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 arch=("amd64" "arm64" "armhf" "ppc64el" "riscv64")
 repology=("project: clipboard")
 source=("@${pkgname}~${pkgver}::https://github.com/Slackadays/Clipboard/releases/download/${pkgver}/${gives}-linux-${CARCH}.zip")
-sha256sums_amd64=("20d616468b3b3e06c5434331c83b102ad86af101c9d94887c315d0e3497e8a0f")
-sha256sums_arm64=("ac0ffb7cbbdb1c9ed43c52171c50b0a60546f3438af11c767a4fcefe319a95b1")
-sha256sums_armhf=("8af12ddaf673b15a28ebd9d3f9e65720cea13bd6683e7761c5254255671d45a8")
-sha256sums_ppc64el=("666a2421866c137a18851e9e3c43829b75a8c426af3b6d2b7def32c984fc0b04")
-sha256sums_riscv64=("5fba87633d04887029cf3b3cb63cc10cc294a7b2de3c169e8dfb82a959f5d7fe")
+sha256sums_amd64=("23a654c05aee16a0945eb933d5466122c38bdbc9aa39f6dd168d25bf51591441")
+sha256sums_arm64=("aad8a3057f568afaddb091ffbb8b9d4af95e3d01bb6d182243c3a1d3dec3a60a")
+sha256sums_armhf=("9361733715561ed5084c78d147dd1ee7200bd2a6c970ef992187f214d160cf89")
+sha256sums_ppc64el=("5392cf06915bb5c6ac45f781e7bf6a7d2878c8ece07bfea7542a2eab9cf03db4")
+sha256sums_riscv64=("5253566df73265e11ce24f82892933b998f561b912dcc834f4a10c56c271e042")
 
 package() {
   cd "${pkgname}~${pkgver}"

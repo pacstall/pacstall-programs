@@ -1,11 +1,11 @@
 pkgname="webapp-manager"
 arch=("all")
-pkgver="1.3.4"
+pkgver="1.4.0"
 makedepends=("gettext")
 depends=("gir1.2-xapp-1.0" "python3" "python3-bs4" "python3-configobj" "python3-gi" "python3-setproctitle" "python3-tldextract" "xapps-common" "python3-pil" "libglib2.0-bin")
 pkgdesc="Run websites as if they were apps"
 repology=("project: webapp-manager")
-sha256sums=("818ec1186e028d538b0e7a9237b9fc8c68e804356d322a0a7ba5451c909fcbad")
+sha256sums=("2d098765cc1d9124cceb4a32b06f38bd96a4e003d4a5bd8c83d850f34c877c73")
 incompatible=("*:jammy" "*:bullseye")
 source=("@${pkgname}~${pkgver}::https://github.com/linuxmint/webapp-manager/archive/refs/tags/${pkgver}.tar.gz")
 maintainer=("Zahrun <Zahrun@github.com>")

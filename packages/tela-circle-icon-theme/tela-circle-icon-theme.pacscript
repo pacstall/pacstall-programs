@@ -1,10 +1,10 @@
 pkgname="tela-circle-icon-theme"
 arch=('any')
-pkgver="2023-06-25"
+pkgver="2025-02-10"
 pkgdesc="A flat, colorful icon theme"
 repology=("project: tela-circle-icon-theme" "repo: aur")
 source=("@${pkgname}~${pkgver}::https://github.com/vinceliuice/Tela-circle-icon-theme/archive/refs/tags/${pkgver}.zip")
-sha256sums=("9caaf41608a565a82f1057391d3ac7a4a1e276d9df6fc56367b202ffb8484b48")
+sha256sums=("96728dd1b173e60602d3ffc7679ceffbcde1dbb7503c46b4d09c3ba5e65ee8bc")
 maintainer=("Herisson <spaceguybox@outlook.com>")
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git")

@@ -1,12 +1,12 @@
 pkgbase = opera-developer-deb
 	gives = opera-developer
-	pkgver = 116.0.5341.0
+	pkgver = 121.0.5586.0
 	pkgdesc = Opera is a fast, secure, and user-friendly web browser - Developer
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: opera
 	repology = visiblename: opera-developer
-	source = https://get.geo.opera.com/pub/opera-developer/116.0.5341.0/linux/opera-developer_116.0.5341.0_amd64.deb
-	sha256sums = 17fac31759cc05fb82ce617c7fb2129029ca421a04fa79a3215ad15059fb33be
+	source = https://get.geo.opera.com/pub/opera-developer/121.0.5586.0/linux/opera-developer_121.0.5586.0_amd64.deb
+	sha256sums = 5335ea32dcabe6b695ad5b3a26b5b49ca04028460288f48108cdc87b1075c6ec
 
 pkgname = opera-developer-deb

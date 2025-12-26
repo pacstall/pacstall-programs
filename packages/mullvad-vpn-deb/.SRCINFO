@@ -1,13 +1,13 @@
 pkgbase = mullvad-vpn-deb
 	gives = mullvad-vpn
-	pkgver = 2025.5
+	pkgver = 2025.10
 	pkgdesc = The Mullvad VPN client app for desktop
 	arch = amd64
 	breaks = mullvad-vpn-beta-deb
 	breaks = mullvad-vpn-git
 	replaces = mullvad-vpn
 	repology = project: mullvad-vpn
-	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.5/MullvadVPN-2025.5_amd64.deb
-	sha256sums = 9fa08d6e21637aa3a04fbd97d88282382a7186fef27d56f5e5d8fccb5f7f5e5d
+	source = https://github.com/mullvad/mullvadvpn-app/releases/download/2025.10/MullvadVPN-2025.10_amd64.deb
+	sha256sums = 3afd935b8e4c37fb7e746b87f884dbca6ee19efdba524daebf0d25238e17bf11
 
 pkgname = mullvad-vpn-deb

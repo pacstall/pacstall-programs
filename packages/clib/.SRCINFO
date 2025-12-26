@@ -1,11 +1,11 @@
 pkgbase = clib
-	pkgver = 2.8.3
+	pkgver = 2.8.7
 	pkgdesc = C package manager-ish
 	arch = any
 	makedepends = gcc
 	makedepends = libcurl4-gnutls-dev
 	repology = project: clib
-	source = @clib~2.8.3::https://github.com/clibs/clib/archive/refs/tags/2.8.3.tar.gz
-	sha256sums = 0ad8262d13ef138a12452e67e081e3eb31a264e2040cfce09417e8f7eed4e1f5
+	source = @clib~2.8.7::https://github.com/clibs/clib/archive/refs/tags/2.8.7.tar.gz
+	sha256sums = 83d5767e363c3ed4b4271000b9ce63b6e11b6c4740df910e0074f844fb34258e
 
 pkgname = clib

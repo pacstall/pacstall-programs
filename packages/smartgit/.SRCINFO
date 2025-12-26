@@ -1,5 +1,5 @@
 pkgbase = smartgit
-	pkgver = 22.1.7
+	pkgver = 24.1.3
 	pkgdesc = Graphical Git client with support for GitHub, Bitbucket and GitLab
 	arch = any
 	depends = git
@@ -7,6 +7,6 @@ pkgbase = smartgit
 	depends = libcurl4
 	maintainer = echometerain <echometer@disroot.org>
 	repology = project: smartgit
-	source = @smartgit~22.1.7::https://www.syntevo.com/downloads/smartgit/smartgit-linux-22_1_7.tar.gz
+	source = @smartgit~24.1.3::https://www.syntevo.com/downloads/smartgit/smartgit-linux-24_1_3.tar.gz
 
 pkgname = smartgit

@@ -1,12 +1,12 @@
 pkgbase = opera-deb
 	gives = opera-stable
-	pkgver = 114.0.5282.185
+	pkgver = 120.0.5543.161
 	pkgdesc = Multi-platform web browser developed by its namesake company Opera
 	arch = amd64
 	replaces = opera-stable
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: opera
-	source = https://deb.opera.com/opera/pool/non-free/o/opera-stable/opera-stable_114.0.5282.185_amd64.deb
-	sha256sums = f938bcc6a8df93e9dc4defdd3ddb7291a0f7ba85abecc8f0c301f6b7103d1106
+	source = https://deb.opera.com/opera/pool/non-free/o/opera-stable/opera-stable_120.0.5543.161_amd64.deb
+	sha256sums = 37b910edaf3580e5a30efc62d85303909e1fdaf73aaf78574b10e43b04d98060
 
 pkgname = opera-deb

@@ -1,9 +1,0 @@
-pkgbase = libndi4-deb
-	gives = libndi4
-	pkgver = 4.5.1-1
-	pkgdesc = dependency for obs-ndi
-	arch = amd64
-	source = https://github.com/Palakis/obs-ndi/releases/download/4.9.1/libndi4_4.5.1-1_amd64.deb
-	sha256sums = d82e4231c6543ee978c85d114edd8f038c902b9be858aa6c5e847af39031f30b
-
-pkgname = libndi4-deb

@@ -1,6 +1,6 @@
 pkgbase = aws-cli-v2-bin
 	gives = aws-cli-v2
-	pkgver = 2.21.0
+	pkgver = 2.27.40
 	pkgdesc = Universal Command Line Interface for Amazon Web Services v2
 	arch = amd64
 	depends = groff
@@ -9,7 +9,7 @@ pkgbase = aws-cli-v2-bin
 	replaces = awscli
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: awscli
-	source = @aws-cli-v2-bin~2.21.0::https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.21.0.zip
-	sha256sums = 0bb85fe4db44b35f111aae651e9dfc38f90c1db8cc582544944ad788cf5d1549
+	source = @aws-cli-v2-bin~2.27.40::https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.27.40.zip
+	sha256sums = 61aae8013cb01740d36e4aadc7b0e1fc37894c0d821a5b52ec516f473df974ea
 
 pkgname = aws-cli-v2-bin

@@ -1,13 +1,13 @@
 pkgname="thunderbird-bin"
 gives="thunderbird"
-pkgver="133.0"
+pkgver="141.0"
 arch=('amd64')
 repology=("project: ${gives}")
-url="https://www.thunderbird.net/en-US/"
+url='https://www.thunderbird.net/en-US/'
 pkgdesc="Thunderbird is a free email application that's easy to set up and customize and it's loaded with great features!"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
-source=("https://archive.mozilla.org/pub/${gives}/releases/${pkgver}/linux-x86_64/en-US/${gives}-${pkgver}.tar.bz2")
-sha256sums=("e48c8d10752b228bde7944ae82b91ea282b0fbdadbb1b64eac556ef3aaf9ee49")
+source=("https://archive.mozilla.org/pub/${gives}/releases/${pkgver}/linux-x86_64/en-US/${gives}-${pkgver}.tar.xz")
+sha256sums=("137a75c034b8bda7cbe546555f384e19eba82e51ed531577d5e5d178718568f4")
 
 package() {
   cd "${srcdir}"

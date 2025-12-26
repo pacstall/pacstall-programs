@@ -1,13 +1,13 @@
 ubuntu:
-  focal/20.04
   jammy/22.04
   noble/24.04
-  oracular/24.10
   plucky/25.04
   questing/25.10
+  resolute/26.04
   devel
 debian:
   bullseye/11
   bookworm/12
   trixie/13
+  forky/14
   sid

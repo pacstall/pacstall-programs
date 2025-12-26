@@ -1,14 +1,14 @@
 pkgbase = go-task-deb
 	gives = task
-	pkgver = 3.39.2
+	pkgver = 3.44.0
 	pkgdesc = A task runner / simpler Make alternative written in Go
 	arch = amd64
 	arch = arm64
 	maintainer = lfromanini <lfromanini@yahoo.com>
 	repology = project: task
-	source_amd64 = https://github.com/go-task/task/releases/download/v3.39.2/task_linux_amd64.deb
-	sha256sums_amd64 = d4ea84524cc4e0969e84f063fc99b9aba2090ec259c00a2e12d9ed1a182cf6af
-	source_arm64 = https://github.com/go-task/task/releases/download/v3.39.2/task_linux_arm64.deb
-	sha256sums_arm64 = 2a5685880d1f0130e26ad27fbb556c01073b628247f46c79e4456d925ee5e44c
+	source_amd64 = https://github.com/go-task/task/releases/download/v3.44.0/task_linux_amd64.deb
+	sha256sums_amd64 = cdd55b9908d3ef0889bb2270132f7bdb90e50d85b645c57434385cb8ea80cc42
+	source_arm64 = https://github.com/go-task/task/releases/download/v3.44.0/task_linux_arm64.deb
+	sha256sums_arm64 = 13d82f9194b3d2f9b601a29501e53adc5c7f151e181b93d6858404f35da0295f
 
 pkgname = go-task-deb

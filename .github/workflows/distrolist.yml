@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: master
 
@@ -72,7 +72,7 @@ jobs:
           fi
           added_entries="$(echo "$diff_output" | grep '^+ ' | sed 's/^\+  //' | awk -v ORS=', ' '{print "`"$0"`"}' | sed 's/, $//')"
           removed_entries="$(echo "$diff_output" | grep '^- ' | sed 's/^-  //' | awk -v ORS=', ' '{print "`"$0"`"}' | sed 's/, $//')"
-          title="upd(distrolist): "
+          title="ci(distrolist): "
           if [[ -n "$added_entries" && -z "$removed_entries" ]]; then
             title+="add ${added_entries}"
           elif [[ -z "$added_entries" && -n "$removed_entries" ]]; then
@@ -92,7 +92,7 @@ jobs:
 
       - name: Create PR if changes detected
         if: env.changes_detected == 'true'
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           add-paths: distrolist

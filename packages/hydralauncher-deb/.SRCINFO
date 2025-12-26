@@ -1,11 +1,11 @@
 pkgbase = hydralauncher-deb
 	gives = hydralauncher
-	pkgver = 3.4.3
+	pkgver = 3.6.8
 	pkgdesc = Game launcher with its own embedded BitTorrent client
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: hydralauncher
-	source = https://github.com/hydralauncher/hydra/releases/download/v3.4.3/hydralauncher_3.4.3_amd64.deb
-	sha256sums = 4af40c7bf75be2279f76a7b0296f496209a08911f8f213dc1850246e7d761df9
+	source = https://github.com/hydralauncher/hydra/releases/download/v3.6.8/hydralauncher_3.6.8_amd64.deb
+	sha256sums = e50dc808c1cfb7301f630731aa20379cc849231daa5f17056f3f1c5b4d59e9d4
 
 pkgname = hydralauncher-deb

@@ -2,14 +2,46 @@ pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="3"
-depends=("xfwm4" "xfdashboard" "xfdashboard-plugins" "plank" "dconf-cli" "yaru-theme-icon"
-  "yaru-theme-gtk" "papirus-icon-theme" "onboard" "xfce4-helpers" "xiccd" "xfce4" "dbus-x11"
-  "hardinfo" "xarchiver" "xdg-desktop-portal-gtk" "xserver-xorg-video-vesa" "xserver-xorg-video-fbdev"
-  "tumbler" "tumbler-plugins-extra" "ffmpegthumbnailer" "bluez-firmware | linux-firmware-raspi"
-  "xserver-xorg-input-multitouch" "xserver-xorg-input-synaptics" "ukui-touchpadserver"
-  "pipewire-audio | pulseaudio-module-bluetooth" "bluetooth" "alsa-ucm-conf")
-pacdeps=("xfce4-settings-pine-git" "lightpad-git" "papirus-folders" "ulauncher-deb" "cortile" "adw-gtk-theme" "rhino-xfwm4-theme-git" "xfce4-dynamic-workspaces-plugin-git")
+pkgrel="6"
+depends=(
+  "xfwm4"
+  "xfdashboard"
+  "xfdashboard-plugins"
+  "plank"
+  "dconf-cli"
+  "yaru-theme-icon"
+  "yaru-theme-gtk"
+  "papirus-icon-theme"
+  "onboard"
+  "xfce4-helpers"
+  "xiccd"
+  "xfce4"
+  "dbus-x11"
+  "hardinfo"
+  "xarchiver"
+  "xdg-desktop-portal-gtk"
+  "xserver-xorg-video-fbdev"
+  "tumbler"
+  "tumbler-plugins-extra"
+  "ffmpegthumbnailer"
+  "bluez-firmware | linux-firmware-raspi"
+  "xserver-xorg-input-multitouch"
+  "xserver-xorg-input-synaptics"
+  "ukui-touchpadserver"
+  "pipewire-audio | pulseaudio-module-bluetooth"
+  "bluetooth"
+  "alsa-ucm-conf"
+)
+pacdeps=(
+  "xfce4-settings-pine-git"
+  "lightpad-git"
+  "papirus-folders"
+  "ulauncher-deb"
+  "cortile"
+  "adw-gtk-theme"
+  "rhino-xfwm4-theme-git"
+  "xfce4-dynamic-workspaces-rs-bin"
+)
 gives="unicorn-mobile"
 replaces=("unicorn-desktop" "unicorn-desktop-git")
 priority="required"
@@ -94,6 +126,7 @@ post_install() {
     mkdir -p "${homedir}/.lightpad"
   fi
   cp /etc/skel/.lightpad/* "${homedir}/.lightpad"
+  sudo chown -cR "${PACSTALL_USER}" "${homedir}/.lightpad"
   if ! [[ -f "${homedir}/.config/docks.ini" ]]; then
     cp -r "/etc/skel/.config/docks.ini" "${homedir}/.config/docks.ini"
   fi

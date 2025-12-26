@@ -1,11 +1,11 @@
 pkgbase = obsidian-deb
 	gives = obsidian
-	pkgver = 1.6.7
+	pkgver = 1.8.10
 	pkgdesc = Powerful and extensible knowledge base editor that uses markdown
 	arch = amd64
 	maintainer = Hepno <me@hepno.dev>
 	repology = project: obsidian
-	source = https://github.com/obsidianmd/obsidian-releases/releases/download/v1.6.7/obsidian_1.6.7_amd64.deb
-	sha256sums = 772da38d23b15f0f5d7cf17024a1948ff2c073b2195954743703178bf1254b36
+	source = https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.10/obsidian_1.8.10_amd64.deb
+	sha256sums = da19b2755013e9def37271cf04ce7485c03a22fa02b0951e4108884dcd1bd774
 
 pkgname = obsidian-deb

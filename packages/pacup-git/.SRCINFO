@@ -1,6 +1,6 @@
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.11
+	pkgver = 3.3.12
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl

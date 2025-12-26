@@ -1,12 +1,12 @@
 pkgbase = sublime-text-deb
 	gives = sublime-text
-	pkgver = 4180
+	pkgver = 4200
 	pkgdesc = Sublime text light text editor for programmers
 	arch = amd64
 	replaces = sublime-text
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: sublime-text
-	source = https://download.sublimetext.com/sublime-text_build-4180_amd64.deb
-	sha256sums = a5460f6f9bd82ab5962a1efd6213eef3ca0ac7705d103c2f3d2eb74671f035d4
+	source = https://download.sublimetext.com/sublime-text_build-4200_amd64.deb
+	sha256sums = 79a687ffd749004eb4360243dc2133a68bbc8243f890ff3f8f5b00835870c7ea
 
 pkgname = sublime-text-deb

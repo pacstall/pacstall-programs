@@ -1,0 +1,14 @@
+pkgbase = nvidia-feat-installer
+	gives = nvidia-feat-installer-575
+	pkgver = 575.64.05
+	pkgdesc = NVIDIA driver installer with both proprietary and open source module options (New Feature Branch)
+	url = https://www.nvidia.com/en-us/drivers/unix/
+	arch = amd64
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source_amd64 = https://us.download.nvidia.com/XFree86/Linux-x86_64/575.64.05/NVIDIA-Linux-x86_64-575.64.05.run
+	sha256sums_amd64 = 85f2b50f912261c1917a0b2cf7e1f9743affd008fdc0f209f4d5563f774d502d
+	source_arm64 = https://us.download.nvidia.com/XFree86/aarch64/575.64.05/NVIDIA-Linux-aarch64-575.64.05.run
+	sha256sums_arm64 = 19113d544128b1b63b4cbe073c5a32a3401ce638011ec660f6c04a27804b86c0
+
+pkgname = nvidia-feat-installer

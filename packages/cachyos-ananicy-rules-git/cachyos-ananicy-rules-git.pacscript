@@ -6,7 +6,6 @@ pkgdesc="ananicy-cpp rules for CachyOS"
 pacdeps=('ananicy-cpp')
 url='https://github.com/CachyOS/ananicy-rules'
 source=("https://github.com/CachyOS/ananicy-rules.git")
-maintainer=()
 
 package() {
   cd "ananicy-rules"

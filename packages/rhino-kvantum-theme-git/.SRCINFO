@@ -1,7 +1,7 @@
 pkgbase = rhino-kvantum-theme-git
 	gives = rhino-kvantum-theme
 	pkgver = 0.0.1
-	pkgrel = 2
+	pkgrel = 3
 	pkgdesc = Rhino Linux Kvantum theme
 	arch = all
 	depends = qt6-style-kvantum | qt5-style-kvantum

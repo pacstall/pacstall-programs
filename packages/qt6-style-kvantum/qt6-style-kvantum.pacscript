@@ -1,6 +1,6 @@
 pkgname="qt6-style-kvantum"
 pkgdesc="Kvantum style engine (binaries, localization and themes)"
-url="https://github.com/tsujan/Kvantum"
+url='https://github.com/tsujan/Kvantum'
 license=("GPL-3.0-or-later")
 _qt5="qt5-style-kvantum"
 conflicts=("${_qt5}" "${_qt5}-themes" "${_qt5}-l10n" "${pkgname}-themes" "${pkgname}-l10n")

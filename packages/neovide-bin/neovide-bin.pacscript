@@ -11,8 +11,7 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 pkgname="neovide-bin"
 gives="neovide"
 arch=("amd64")
-pkgver="0.12.2"
-pkgrel="2"
+pkgver="0.15.0"
 pkgdesc="No nonsense neovim client in Rust"
 source=(
   "@${pkgname}~${pkgver}::https://github.com/neovide/neovide/releases/download/${pkgver}/neovide-linux-x86_64.tar.gz"
@@ -25,7 +24,7 @@ source=(
 )
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 sha256sums=(
-  "f2e13a9d1941ea8418b5fde5a884892202657aff0b8fcddcf540b7d4caa69c24"
+  "218b70f1e509ea249d036095b5f37f5225e5cbfedebb51d1b758279bef124446"
   "SKIP"
   "SKIP"
   "SKIP"

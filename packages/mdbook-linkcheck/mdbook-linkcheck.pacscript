@@ -5,7 +5,6 @@ pkgdesc='A backend for mdbook which will check your links for you'
 url='https://www.michaelfbryan.com/mdbook-linkcheck/mdbook_linkcheck/index.html'
 makedepends=('cargo')
 pacdeps=('mdbook')
-maintainer=()
 repology=("project: ${pkgname}")
 source=("https://github.com/Michael-F-Bryan/mdbook-linkcheck/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=('3194243acf12383bd328a9440ab1ae304e9ba244d3bd7f85f1c23b0745c4847a')

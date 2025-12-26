@@ -1,5 +1,5 @@
 pkgbase = tor
-	pkgver = 0.4.7.13
+	pkgver = 0.4.8.16
 	pkgdesc = Tor protects your privacy on the internet by hiding the connection between your Internet address and the services you use
 	arch = any
 	depends = openssl
@@ -17,7 +17,7 @@ pkgbase = tor
 	breaks = tor-git
 	replaces = tor
 	repology = project: tor
-	source = @tor~0.4.7.13::https://dist.torproject.org/tor-0.4.7.13.tar.gz
-	sha256sums = 2079172cce034556f110048e26083ce9bea751f3154b0ad2809751815b11ea9d
+	source = @tor~0.4.8.16::https://dist.torproject.org/tor-0.4.8.16.tar.gz
+	sha256sums = 6540dd377a120fb8e7d27530aa3b7ff72a0fa5b4f670fe1d64c987c1cfd390cb
 
 pkgname = tor

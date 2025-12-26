@@ -1,15 +1,14 @@
 pkgname="texstudio-app"
 gives="texstudio"
-pkgver="4.8.3"
+pkgver="4.8.7"
 pkgdesc="A fully featured LaTeX editor"
 url='https://www.texstudio.org'
 arch=('amd64')
 replaces=("${gives}")
 source=("https://github.com/texstudio-org/texstudio/releases/download/${pkgver}/${gives}-${pkgver}-x86_64.AppImage")
 appimage="${gives}-${pkgver}-x86_64.AppImage"
-sha256sums=("737c968412cd9bae9e63dc3cd0f2025fa111c4e52c07fc3515d15b569101a6f8")
+sha256sums=("74bb0940d3380b5b039c331ccbdd428b26d0acd4c1f3fc95691f4478252bd405")
 repology=("project: ${gives}")
-maintainer=()
 
 package() {
   cd "${srcdir}"

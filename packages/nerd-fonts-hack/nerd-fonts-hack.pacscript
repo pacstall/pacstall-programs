@@ -2,10 +2,10 @@ pkgname="nerd-fonts-hack"
 replaces=("${pkgname}")
 repology=("project: fonts:nerd-fonts")
 arch=("all")
-pkgver="3.1.1"
+pkgver="3.4.0"
 source=("@${pkgname}~${pkgver}::https://github.com/ryanoasis/nerd-fonts/releases/download/v${pkgver}/Hack.tar.xz")
 pkgdesc="Patched font Hack from Nerd Fonts library"
-sha256sums=("0d820cb2fedb86a15ca1354e03f26443face8b6aa190610263fad1125a409a16")
+sha256sums=("1d00a1435638084174516975840854368a45ac30bb0bad2c0c49db713b5925f0")
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 package() {

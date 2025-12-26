@@ -3,9 +3,13 @@ pkgbase = capsfix-git
 	pkgver = 0.0.1
 	pkgdesc = Fix the nuisance of Caps Lock disable not toggling until key release
 	arch = all
-	depends = perl
-	depends = x11-xkb-utils
+	pacdeps = keyd-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/oklopfer/capsfix.git
+	depends_plucky = keyd
+	depends_questing = keyd
+	depends_devel = keyd
+	depends_trixie = keyd
+	depends_sid = keyd
 
 pkgname = capsfix-git

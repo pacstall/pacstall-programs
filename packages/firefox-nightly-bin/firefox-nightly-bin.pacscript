@@ -1,6 +1,6 @@
 pkgname="firefox-nightly-bin"
 gives="firefox-nightly"
-pkgver="138.0a1"
+pkgver="144.0a1"
 repology=("project: ${gives}")
 replaces=("${gives}" "${gives}-deb")
 source_amd64=("https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-${pkgver}.en-US.linux-x86_64.tar.xz")

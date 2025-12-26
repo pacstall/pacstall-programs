@@ -1,0 +1,16 @@
+pkgbase = betterbird-bin
+	gives = betterbird
+	pkgver = 140.3.0esr
+	pkgdesc = Fine-tuned version of Mozilla Thunderbird, Thunderbird on steroids, if you will
+	url = https://www.betterbird.eu/index.html
+	arch = x86_64
+	depends = libdbus-glib-1-2
+	depends = hunspell
+	maintainer = tranquil <tranquiltr0@proton.me>
+	repology = project: betterbird
+	source = https://www.betterbird.eu/downloads/LinuxArchive/betterbird-140.3.0esr-bb11.en-US.linux-x86_64.tar.xz
+	source = eu.betterbird.Betterbird.desktop
+	sha256sums = 4341c8602c51f57a8aa5112e3a7d0fa954672503940561403c34ff8c05eacda4
+	sha256sums = bce809385dc48951ca6309776ed8fe5213ebbce301a790349172a799d8987151
+
+pkgname = betterbird-bin

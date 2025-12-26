@@ -1,16 +1,16 @@
 pkgbase = fnlfmt
-	pkgver = 0.3.0
+	pkgver = 0.3.2
 	pkgdesc = A formatter for fennel source code
 	arch = all
 	depends = lua5.3
 	makedepends = lua5.3
-	breaks = -bin
-	breaks = -git
-	breaks = -deb
-	breaks = -app
+	breaks = fnlfmt-bin
+	breaks = fnlfmt-git
+	breaks = fnlfmt-deb
+	breaks = fnlfmt-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: fnlfmt
-	source = @fnlfmt~0.3.0::https://git.sr.ht/~technomancy/fnlfmt/archive/0.3.0.tar.gz
-	sha256sums = 8baa2f5ed98f449139f6bd8b4859575c4cfeacc60c0a8884ecaa27bc94e69156
+	source = @fnlfmt~0.3.2::https://git.sr.ht/~technomancy/fnlfmt/archive/0.3.2.tar.gz
+	sha256sums = 646c9033481a70c4430ced7397f6bc04b1d214fd35bee1579dd4c7901b81ac94
 
 pkgname = fnlfmt

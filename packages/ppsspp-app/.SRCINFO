@@ -1,0 +1,20 @@
+pkgbase = ppsspp-app
+	gives = ppsspp
+	pkgver = 1.19.3
+	pkgdesc = PSP emulator
+	url = https://www.ppsspp.org
+	arch = amd64
+	arch = arm64
+	conflicts = ppsspp-git
+	replaces = ppsspp-git
+	license = GPL-2.0-or-later
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: ppsspp
+	source = https://raw.githubusercontent.com/hrydgard/ppsspp/refs/tags/v1.19.3/ppsspp.desktop.in
+	sha256sums = 0221b1fa71ec7bbbf4f2f8eb2753ebb45ab7b934b1c86569757ad385d34a6d3c
+	source_amd64 = ppsspp.AppImage::https://github.com/hrydgard/ppsspp/releases/download/v1.19.3/PPSSPP-v1.19.3-anylinux-x86_64.AppImage
+	sha256sums_amd64 = 540f317c1ed6661894167d2dce21b62295857e1a912274982da7048cf2256466
+	source_arm64 = ppsspp.AppImage::https://github.com/hrydgard/ppsspp/releases/download/v1.19.3/PPSSPP-v1.19.3-anylinux-aarch64.AppImage
+	sha256sums_arm64 = ba0b659df9405fda8e7f394e28282b71ab1e15f829fab1c57c1d423c5a50cefe
+
+pkgname = ppsspp-app

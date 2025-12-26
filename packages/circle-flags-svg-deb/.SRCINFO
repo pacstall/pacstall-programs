@@ -1,12 +1,12 @@
 pkgbase = circle-flags-svg-deb
 	gives = circle-flags-svg
-	pkgver = 2.6.2
+	pkgver = 2.7.0
 	pkgdesc = Circle flags in SVG format
 	arch = all
 	maintainer = Zahrun <zahrun@murena.io>
 	repology = project: circle-flags
 	repology = repo: linux_mint_21
-	source = http://packages.linuxmint.com/pool/main/c/circle-flags/circle-flags-svg_2.6.2_all.deb
-	sha256sums = eceb87d03a8c9fdc3c8b2aba0e8b287fc90d55232429a0ece872f33790d395b4
+	source = http://packages.linuxmint.com/pool/main/c/circle-flags/circle-flags-svg_2.7.0_all.deb
+	sha256sums = 69eb7cd284ab229b004a36a01404ff9dd4536c30fa4207f453eeebaa545bfade
 
 pkgname = circle-flags-svg-deb

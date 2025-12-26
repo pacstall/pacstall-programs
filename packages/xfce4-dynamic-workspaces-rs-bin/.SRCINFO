@@ -1,0 +1,18 @@
+pkgbase = xfce4-dynamic-workspaces-rs-bin
+	gives = xfce4-dynamic-workspaces
+	pkgver = 0.3.0
+	pkgdesc = Dynamic workspaces for XFCE, similar to GNOME
+	arch = arm64
+	arch = amd64
+	depends = libwnck-3-0
+	depends = libwnck-3-dev
+	conflicts = xfce4-dynamic-workspaces-plugin
+	replaces = xfce4-dynamic-workspaces-plugin
+	provides = xfce4-dynamic-workspaces-plugin
+	maintainer = Elsie19 <hwengerstickel@pm.me>
+	source_arm64 = xfce4-dynamic-workspaces::https://github.com/rhino-linux/xfce4-dynamic-workspaces/releases/download/0.3.0/xfce4-dynamic-workspaces-arm64
+	sha256sums_arm64 = 73bf91185c3cc676aef19a62b1fb4b98bcbd8df3af266bde4e36a410c20c8501
+	source_amd64 = xfce4-dynamic-workspaces::https://github.com/rhino-linux/xfce4-dynamic-workspaces/releases/download/0.3.0/xfce4-dynamic-workspaces-amd64
+	sha256sums_amd64 = 0a1d230cee6a71da75628397332168f37a6ca6bb75258a8960d91138f124d6c1
+
+pkgname = xfce4-dynamic-workspaces-rs-bin

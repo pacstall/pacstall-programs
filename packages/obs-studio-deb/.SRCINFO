@@ -1,13 +1,13 @@
 pkgbase = obs-studio-deb
 	gives = obs-studio
-	pkgver = 31.0.2
+	pkgver = 32.0.3
 	pkgdesc = Free and open source software for live streaming and screen recording
 	arch = amd64
 	compatible = ubuntu:noble
 	license = GPL-2.0-only
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: obs-studio
-	source = https://github.com/obsproject/obs-studio/releases/download/31.0.2/OBS-Studio-31.0.2-Ubuntu-24.04-x86_64.deb
-	sha256sums = d8a44e2aa53049a88f7f434b329582b918fd6a2d487ca9a47213be0bfc67191a
+	source = https://github.com/obsproject/obs-studio/releases/download/32.0.3/OBS-Studio-32.0.3-Ubuntu-24.04-x86_64.deb
+	sha256sums = 3d5737a3e88762931f17068288bab8749b0de9ad39e71418eb97391b5477fb64
 
 pkgname = obs-studio-deb

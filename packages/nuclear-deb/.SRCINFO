@@ -1,6 +1,6 @@
 pkgbase = nuclear-deb
 	gives = nuclear
-	pkgver = 0.6.17
+	pkgver = 0.6.48
 	pkgdesc = Streaming music player that finds free music for you
 	arch = amd64
 	breaks = nuclear

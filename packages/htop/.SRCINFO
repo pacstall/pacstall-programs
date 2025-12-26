@@ -1,13 +1,13 @@
 pkgbase = htop
 	gives = htop
-	pkgver = 3.2.2
+	pkgver = 3.4.1
 	pkgdesc = htop is a cross-platform interactive process viewer.
 	arch = any
 	makedepends = dh-autoreconf
 	makedepends = libncurses5-dev
 	makedepends = libncursesw5-dev
 	replaces = htop
-	source = @htop~3.2.2::https://github.com/htop-dev/htop/archive/refs/tags/3.2.2.tar.gz
-	sha256sums = 3829c742a835a0426db41bb039d1b976420c21ec65e93b35cd9bfd2d57f44ac8
+	source = @htop~3.4.1::https://github.com/htop-dev/htop/archive/refs/tags/3.4.1.tar.gz
+	sha256sums = af9ec878f831b7c27d33e775c668ec79d569aa781861c995a0fbadc1bdb666cf
 
 pkgname = htop

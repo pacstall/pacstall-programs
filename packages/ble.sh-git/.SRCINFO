@@ -1,0 +1,17 @@
+pkgbase = ble.sh-git
+	gives = ble.sh
+	pkgver = 0.4.0-devel3
+	pkgdesc = Replacement for Bash's line editor with enhanced features
+	url = https://github.com/akinomyoga/ble.sh
+	arch = all
+	depends = bash
+	makedepends = make
+	makedepends = gawk
+	optdepends = mawk: for faster processing
+	breaks = ble.sh
+	license = BSD-3-Clause
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: blesh
+	source = https://github.com/akinomyoga/ble.sh.git
+
+pkgname = ble.sh-git

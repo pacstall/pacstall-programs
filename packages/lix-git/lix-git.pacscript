@@ -5,7 +5,6 @@ pkgver='2.90'
 pkgdesc='A modern, delicious implementation of the Nix package manager, focused on correctness, usability, and growth'
 url='https://lix.systems'
 source=('lix::https://github.com/lix-project/lix.git')
-maintainer=()
 repology=('project: lix-nix')
 conflicts=('lix' 'nix-bin' 'nix-setup-systemd')
 external_connection='true'

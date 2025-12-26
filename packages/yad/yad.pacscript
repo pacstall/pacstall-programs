@@ -1,6 +1,6 @@
 pkgname="yad"
 arch=("any")
-pkgver="14.0"
+pkgver="14.1"
 source=("@${pkgname}~${pkgver}::https://github.com/v1cont/${pkgname}/releases/download/v${pkgver}/${pkgname}-${pkgver}.tar.xz"
   "debian12.patch")
 makedepends=("autotools-dev" "intltool" "libgtk-3-dev" "automake")
@@ -8,7 +8,7 @@ depends=("libc6" "libcairo2" "libgdk-pixbuf2.0-0" "libglib2.0-0" "libgtk-3-0" "l
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-app" "${pkgname}-git" "${pkgname}-deb")
 gives="yad"
 pkgdesc="Yet Another Dialog"
-sha256sums=("2829681f0a9ebd07b7f651c6266d5bf6199235ef027c4936a76988e0471f8e1d")
+sha256sums=("dde047a915cd8d3892c32b6ba031876f5cda673e01882c99613f043867c88133")
 optdepends=("libwebkit2gtk-4.0-dev: for supporting HTML dialog"
   "libgtksourceview-3.0-dev: for enabling syntax highlighting in text-info dialog"
   "libgspell-1-dev: for support spell checking in text fields")

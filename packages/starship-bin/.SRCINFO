@@ -1,7 +1,6 @@
 pkgbase = starship-bin
 	gives = starship
-	pkgver = 1.19.0
-	pkgrel = 2
+	pkgver = 1.23.0
 	pkgdesc = The minimal, blazing-fast, and infinitely customizable prompt for any shell
 	arch = amd64
 	breaks = starship
@@ -10,7 +9,7 @@ pkgbase = starship-bin
 	breaks = starship-git
 	maintainer = charitarthchugh <37895518+charitarthchugh@users.noreply.github.com>
 	repology = project: starship
-	source = https://github.com/starship/starship/releases/download/v1.19.0/starship-x86_64-unknown-linux-gnu.tar.gz
-	sha256sums = 04710e277f7802ddf41400b650233a8954892bb9326768d82fff7d360ff37c58
+	source = https://github.com/starship/starship/releases/download/v1.23.0/starship-x86_64-unknown-linux-gnu.tar.gz
+	sha256sums = cef41df04378c6f692913c5d9c1032d3b9a4369a1d2f3296c8300ed8838c2197
 
 pkgname = starship-bin

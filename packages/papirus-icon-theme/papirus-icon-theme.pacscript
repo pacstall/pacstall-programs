@@ -1,10 +1,10 @@
 pkgname="papirus-icon-theme"
 arch=("all")
-pkgver="20231201"
+pkgver="20250501"
 pkgdesc="Papirus icon theme"
 repology=("project: papirus-icon-theme" "repo: aur")
 source=("@${pkgname}~${pkgver}::https://github.com/PapirusDevelopmentTeam/${pkgname}/archive/${pkgver}/${pkgname}-${pkgver}.tar.gz")
-sha256sums=("9dde683d6444ed2d3b3dacf8579b04d527ce278cef575d606f690c7b31c7aebd")
+sha256sums=("3831a487f813479ad3224fdbfb0c7023f23056899bc78c93737f341aa655558e")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 gives="${pkgname}"
 breaks=("${pkgname}" "${pkgname}-git")

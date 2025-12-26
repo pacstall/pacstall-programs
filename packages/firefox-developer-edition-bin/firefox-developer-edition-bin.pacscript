@@ -1,18 +1,23 @@
 pkgname="firefox-developer-edition-bin"
-pkgver="137.0b10"
+pkgver="143.0b9"
 gives="firefox-developer-edition"
-arch=("amd64")
+arch=("amd64" "arm64")
 pkgdesc="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
-url="https://www.mozilla.org/en-US/firefox/developer/"
+url='https://www.mozilla.org/en-US/firefox/developer/'
 maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")
 source=(
-  "https://download-installer.cdn.mozilla.net/pub/devedition/releases/${pkgver}/linux-x86_64/en-US/firefox-${pkgver}.tar.xz"
+  "https://download-installer.cdn.mozilla.net/pub/devedition/releases/${pkgver}/linux-${AARCH}/en-US/firefox-${pkgver}.tar.xz"
   "${gives}.desktop"
   "${gives}.png::https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
 )
-sha256sums=(
-  "8ed06e738c2d2106a030c9ea233d1745d1d1190191d5acabfb619343d6600620"
+sha256sums_amd64=(
+  "ef116160db98534128eb3cf2c848d6e0d5f874da4ec7850837404cf4cc78aceb"
+  "SKIP"
+  "SKIP"
+)
+sha256sums_arm64=(
+  "da954b044215a4f35e3466ee0f39c01f408afed8b42172f727a939db73c11e4c"
   "SKIP"
   "SKIP"
 )

@@ -2,8 +2,7 @@ maintainer=("0x262D <pacstall@copypaste.anonaddy.me>")
 pkgname="feroxbuster-bin"
 gives="feroxbuster"
 depends=("fonts-noto-color-emoji")
-pkgver="2.10.0"
-pkgrel="2"
+pkgver="2.11.0"
 pkgdesc="A fast, simple, recursive content discovery tool written in Rust"
 source=(
   "https://github.com/epi052/${gives}/releases/download/v${pkgver}/x86_64-linux-${gives}.tar.gz"
@@ -12,7 +11,7 @@ source=(
   "${gives}.fish::https://raw.githubusercontent.com/epi052/${gives}/v${pkgver}/shell_completions/${gives}.fish"
 )
 sha256sums=(
-  "dc511b6b2da4462cacd8d8985b49620e29f431d97d45efc7d305c436d4603b13"
+  "2c6f2804b32e28eba93b0cfd6c793e8ca4ab1e070659c447bf273a61404cee2f"
   "SKIP"
   "SKIP"
   "SKIP"

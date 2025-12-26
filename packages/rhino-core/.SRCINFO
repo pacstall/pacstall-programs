@@ -1,5 +1,5 @@
 pkgbase = rhino-core
-	pkgver = 2025.2
+	pkgver = 2025.4
 	pkgrel = 1
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
@@ -16,7 +16,8 @@ pkgbase = rhino-core
 	replaces = rhino-server-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
-	compatible = ubuntu:plucky
+	compatible = ubuntu:questing
+	compatible = ubuntu:resolute
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 

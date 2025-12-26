@@ -1,0 +1,17 @@
+pkgbase = erlang-jsone
+	pkgver = 1.9.0
+	pkgdesc = Erlang JSON library
+	url = https://github.com/sile/jsone
+	arch = any
+	depends = erlang
+	makedepends = git
+	makedepends = make
+	makedepends = rebar3
+	conflicts = erlang-jsone-git
+	license = MIT
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: erlang-jsone
+	source = https://github.com/sile/jsone/archive/refs/tags/1.9.0.tar.gz
+	sha256sums = 677d9dd6d613f05dd9a13537769f0f50d3a855a89bf87703024eb909d070c445
+
+pkgname = erlang-jsone

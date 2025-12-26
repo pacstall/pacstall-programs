@@ -1,12 +1,12 @@
 pkgbase = yabridge
-	pkgver = 5.0.5
+	pkgver = 5.1.1
 	pkgdesc = A modern and transparent way to use Windows VST2 and VST3 plugins on Linux.
 	arch = any
 	optdepends = wine: 32-bit windows emulator
 	optdepends = wine64: 64-bit windows emulator
 	maintainer = echometerain <echometer@disroot.org>
 	repology = project: yabridge
-	source = @yabridge~5.0.5::https://github.com/robbert-vdh/yabridge/releases/download/5.0.5/yabridge-5.0.5.tar.gz
-	sha256sums = 3ddc6e0989dad93e0275a83362fcfc0cb26b6dbfb8be7fc689410c02eb36455f
+	source = @yabridge~5.1.1::https://github.com/robbert-vdh/yabridge/releases/download/5.1.1/yabridge-5.1.1.tar.gz
+	sha256sums = d11f0307412b5566b09a75ed4aa191266db56d22f4de4d20e4fbde6296cd1a47
 
 pkgname = yabridge

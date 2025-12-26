@@ -1,0 +1,14 @@
+pkgbase = rose-pine-cursor
+	pkgver = 1.1.0
+	pkgdesc = Soho vibes for your mouse cursor
+	url = https://rosepinetheme.com/themes/cursor/
+	arch = all
+	license = GPL-3.0
+	maintainer = tranquil <tranquiltr0@proton.me>
+	repology = project: rose-pine-cursor
+	source = https://github.com/rose-pine/cursor/releases/download/v1.1.0/BreezeX-RosePine-Linux.tar.xz
+	source = https://github.com/rose-pine/cursor/releases/download/v1.1.0/BreezeX-RosePineDawn-Linux.tar.xz
+	sha256sums = b330d59ce8e0e460209f638a97ce772b78d9e6b56ccf63c8a50e9d941289a1af
+	sha256sums = 85a9dfc31f68a13d536e67200abeb72956300b5388cd3c239b1ce2e198dcadd8
+
+pkgname = rose-pine-cursor

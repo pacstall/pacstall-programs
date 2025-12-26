@@ -1,0 +1,21 @@
+pkgbase = ly
+	pkgver = 1.1.2
+	pkgdesc = TUI display manager
+	url = https://codeberg.org/fairyglade/ly
+	priority = required
+	arch = any
+	depends = systemd
+	makedepends = build-essential
+	makedepends = libpam0g-dev
+	makedepends = libxcb-xkb-dev
+	pacdeps = zig-bin
+	conflicts = ly-git
+	replaces = lightdm
+	replaces = sddm
+	license = WTFPL
+	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
+	repology = project: ly
+	source = ly::https://codeberg.org/fairyglade/ly/archive/v1.1.2.tar.gz
+	sha256sums = 8f491d09045bb680680b553556f9db7af89c6644a257352839f98c4e98028fd0
+
+pkgname = ly

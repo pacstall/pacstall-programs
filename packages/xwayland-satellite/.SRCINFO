@@ -1,0 +1,22 @@
+pkgbase = xwayland-satellite
+	pkgver = 0.7
+	pkgdesc = Xwayland outside your Wayland
+	url = https://github.com/Supreeeme/xwayland-satellite
+	arch = amd64
+	arch = arm64
+	makedepends = clang
+	makedepends = xwayland
+	makedepends = libwayland-dev
+	makedepends = libclang-dev
+	makedepends = pkg-config
+	makedepends = cargo>=1.83.0
+	makedepends = libxcb-cursor-dev
+	makedepends = libxkbcommon-dev
+	incompatible = debian:bullseye
+	incompatible = debian:bookworm
+	incompatible = ubuntu:jammy
+	license = GPL-3.0-or-later
+	maintainer = Alxhr0 <alxhr0@proton.me>
+	source = https://github.com/Supreeeme/xwayland-satellite.git#tag=v0.7
+
+pkgname = xwayland-satellite

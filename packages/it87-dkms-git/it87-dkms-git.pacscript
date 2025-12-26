@@ -2,7 +2,7 @@ pkgname="it87-dkms-git"
 gives="it87"
 pkgver="152"
 _pkgoldver="152"
-pkgrel="2"
+pkgrel="3"
 pkgdesc="Linux Driver for ITE LPC chips"
 arch=('x86_64')
 url='https://github.com/frankcrawford/it87'
@@ -35,12 +35,12 @@ package() {
 post_upgrade() {
   if dkms status | grep -q "${gives}/${_oldpkgver}"; then
     dkms remove -m "${gives}" -v "${_pkgoldver}" --all
-    dkms add -m "${gives}" -v "${pkgver}"
-    dkms build -m "${gives}" -v "${pkgver}"
-    dkms install -m "${gives}" -v "${pkgver}" --force
-
-    update-initramfs -u
   fi
+  dkms add -m "${gives}" -v "${pkgver}"
+  dkms build -m "${gives}" -v "${pkgver}"
+  dkms install -m "${gives}" -v "${pkgver}" --force
+
+  update-initramfs -u
 }
 
 post_install() {
