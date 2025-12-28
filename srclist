@@ -13059,6 +13059,44 @@ pkgbase = rofi-emoji
 
 pkgname = rofi-emoji
 ---
+pkgbase = rofi-wayland
+	gives = rofi
+	pkgver = 2.0.0
+	pkgdesc = Window switcher, application launcher, and dmenu replacement for wayland
+	url = https://github.com/davatorium/rofi
+	arch = any
+	depends = libglib2.0-0
+	depends = libpango-1.0-0
+	depends = libpangocairo-1.0-0
+	depends = libcairo2
+	depends = libgdk-pixbuf-2.0-0
+	depends = libxkbcommon0
+	depends = libwayland-client0
+	depends = libwayland-cursor0
+	depends = libwayland-egl1
+	makedepends = gcc
+	makedepends = meson
+	makedepends = ninja-build
+	makedepends = pkg-config
+	makedepends = flex>=2.5.39
+	makedepends = bison
+	makedepends = check
+	makedepends = libwayland-dev
+	makedepends = libglib2.0-dev
+	makedepends = libpango1.0-dev
+	makedepends = libcairo2-dev
+	makedepends = libgdk-pixbuf-2.0-dev
+	makedepends = libxkbcommon-dev
+	makedepends = wayland-protocols
+	conflicts = rofi-dev
+	replaces = rofi
+	replaces = rofi-x11
+	license = MIT
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/davatorium/rofi/releases/download/2.0.0/rofi-2.0.0.tar.gz
+
+pkgname = rofi-wayland
+---
 pkgbase = rofi-x11
 	gives = rofi
 	pkgver = 2.0.0
