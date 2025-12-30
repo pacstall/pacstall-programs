@@ -1,0 +1,15 @@
+pkgbase = libation-deb
+	gives = libation
+	pkgver = 12.8.2
+	pkgdesc = Free and open source app to manage your Audible books
+	arch = arm64
+	arch = amd64
+	breaks = libation
+	breaks = libation-git
+	breaks = libation-bin
+	breaks = libation-app
+	maintainer = Tobias Heinlein <nionxtrix@mailbox.org>
+	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v12.8.2/Libation.12.8.2-linux-chardonnay-arm64.deb
+	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v12.8.2/Libation.12.8.2-linux-chardonnay-amd64.deb
+
+pkgname = libation-deb
