@@ -65,16 +65,16 @@ sha256sums=("f81659b175306ff487e35d88d6b36128e85a793bfb56b64fa22c62eb54c4abd0")
 maintainer=("Don Alfons <donnisnoni@outlook.com>" "aKqir24 <aKqir24@github.com>")
 
 prepare() {
-  cd "${gives}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
   meson setup build/ --buildtype=release --prefix=/usr
 }
 
 build() {
-  cd "${gives}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
   ninja -C build/ -j"${NCPU}"
 }
 
 package() {
-  cd "${gives}-${pkgver}"
+  cd "${pkgname}-${pkgver}"
   DESTDIR="${pkgdir}" ninja -C build/ install
 }
