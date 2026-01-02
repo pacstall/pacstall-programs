@@ -29,7 +29,6 @@ makedepends=(
   "libpango1.0-dev"
   "libcairo2-dev"
   "libgdk-pixbuf-2.0-dev"
-  "libxkbcommon-dev"
   "wayland-protocols"
 )
 replaces=("${gives}" "${gives}-x11")
