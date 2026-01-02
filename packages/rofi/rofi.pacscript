@@ -1,5 +1,4 @@
-pkgbase="rofi"
-pkgname=("rofi" "rofi-dev")
+pkgname="rofi"
 pkgver="2.0.0"
 arch=("any")
 url='https://github.com/davatorium/rofi'
@@ -61,7 +60,7 @@ makedepends=(
   "libxkbcommon-x11-dev"
   "pkg-config"
 )
-source=("@${pkgbase}~${pkgver}::https://github.com/davatorium/rofi/releases/download/${pkgver}/${pkgbase}-${pkgver}.tar.gz")
+source=("https://github.com/davatorium/rofi/releases/download/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 sha256sums=("f81659b175306ff487e35d88d6b36128e85a793bfb56b64fa22c62eb54c4abd0")
 maintainer=("Don Alfons <donnisnoni@outlook.com>" "aKqir24 <aKqir24@github.com>")
 

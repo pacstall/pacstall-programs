@@ -58,9 +58,7 @@ pkgbase = rofi
 	license = MIT
 	maintainer = Don Alfons <donnisnoni@outlook.com>
 	maintainer = aKqir24 <aKqir24@github.com>
-	source = @rofi~2.0.0::https://github.com/davatorium/rofi/releases/download/2.0.0/rofi-2.0.0.tar.gz
+	source = https://github.com/davatorium/rofi/releases/download/2.0.0/rofi-2.0.0.tar.gz
 	sha256sums = f81659b175306ff487e35d88d6b36128e85a793bfb56b64fa22c62eb54c4abd0
 
 pkgname = rofi
-
-pkgname = rofi-dev
