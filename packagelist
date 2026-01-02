@@ -331,6 +331,7 @@ lenovolegionlinux-git
 lens
 lf-bin
 libaquamarine-bin
+libation-deb
 libcamera-git
 libcs50-git
 libcutefish-git
@@ -677,6 +678,8 @@ rofi:pkgbase
 rofi:rofi-dev
 rofi:rofi
 rofi-emoji
+rofi-wayland
+rofi-x11
 rojo-bin
 rosary-deb
 rose-pine-cursor
@@ -846,6 +849,7 @@ windscribe-beta-gui-deb
 wine-staging
 wine-staging-git
 winetricks-git
+wlrobs
 wsysmon-bin
 xapps-common-deb
 xcb-util-errors

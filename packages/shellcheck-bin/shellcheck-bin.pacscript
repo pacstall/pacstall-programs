@@ -1,9 +1,9 @@
 pkgname="shellcheck-bin"
 gives="shellcheck"
-pkgver="0.10.0"
+pkgver="0.11.0"
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
 pkgdesc="Gives warnings and suggestions for bash/sh shell scripts"
-sha256sums=("6c881ab0698e4e6ea235245f22832860544f17ba386442fe7e9d629f8cbedf87")
+sha256sums=("8c3be12b05d5c177a04c29e3c78ce89ac86f1595681cab149b65b97c4e227198")
 source=("@${pkgname}~${pkgver}::https://github.com/koalaman/shellcheck/releases/download/v${pkgver}/shellcheck-v${pkgver}.linux.x86_64.tar.xz")
 url='https://www.shellcheck.net/'
 arch=('amd64')
