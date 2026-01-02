@@ -1,11 +1,20 @@
 pkgbase="rofi"
 pkgname=("rofi" "rofi-dev")
-pkgver="1.7.9.1"
+pkgver="2.0.0"
 arch=("any")
 url='https://github.com/davatorium/rofi'
 license=("MIT")
-pkgdesc="A window switcher, application launcher, and dmenu replacement."
+pkgdesc="A window switcher, application launcher, and dmenu replacement for wayland and x11."
 depends=(
+  "libglib2.0-0"
+  "libpango-1.0-0"
+  "libpangocairo-1.0-0"
+  "libcairo2"
+  "libgdk-pixbuf-2.0-0"
+  "libxkbcommon0"
+  "libwayland-client0"
+  "libwayland-cursor0"
+  "libwayland-egl1"
   "libcairo2"
   "libgdk-pixbuf-2.0-0"
   "libglib2.0-0>=2.72"
@@ -24,10 +33,19 @@ depends=(
   "libxkbcommon0>=0.4.1"
 )
 makedepends=(
-  "bison"
+  "gcc"
+  "meson"
+  "ninja-build"
+  "pkg-config"
   "flex>=2.5.39"
+  "bison"
+  "libwayland-dev"
+  "libglib2.0-dev"
+  "libpango1.0-dev"
   "libcairo2-dev"
   "libgdk-pixbuf-2.0-dev"
+  "libxkbcommon-dev"
+  "wayland-protocols"
   "libglib2.0-dev"
   "libpango1.0-dev"
   "libstartup-notification0-dev"
@@ -40,51 +58,24 @@ makedepends=(
   "libxcb-xinerama0-dev"
   "libxcb-xkb-dev"
   "libxcb1-dev"
-  "libxkbcommon-dev"
   "libxkbcommon-x11-dev"
-  "pandoc"
   "pkg-config"
 )
-checkdepends=(
-  "check"
-)
 source=("@${pkgbase}~${pkgver}::https://github.com/davatorium/rofi/releases/download/${pkgver}/${pkgbase}-${pkgver}.tar.gz")
-sha256sums=("bb2c0f073b4422acc51a3f97d05275a82464750a33d2f4b120e3d866bb7b9ae5")
-maintainer=("Don Alfons <donnisnoni@outlook.com>")
+sha256sums=("f81659b175306ff487e35d88d6b36128e85a793bfb56b64fa22c62eb54c4abd0")
+maintainer=("Don Alfons <donnisnoni@outlook.com>" "aKqir24 <aKqir24@github.com>")
 
 prepare() {
-  cd "${pkgbase}~${pkgver}"
-  ./configure --prefix=/usr
+  cd "${gives}-${pkgver}"
+  meson setup build/ --buildtype=release --prefix=/usr
 }
 
 build() {
-  cd "${pkgbase}~${pkgver}"
-  make -j"${NCPU}"
+  cd "${gives}-${pkgver}"
+  ninja -C build/ -j"${NCPU}"
 }
 
-check() {
-  cd "${pkgbase}~${pkgver}"
-  make -j"${NCPU}" check
-}
-
-package_rofi() {
-  pkgdesc="A window switcher, application launcher, and dmenu replacement"
-  depends=("${depends[@]}")
-
-  cd "${pkgbase}~${pkgver}"
-  make DESTDIR="${pkgdir}" install
-
-  rm -rf "${pkgdir:?}/usr/include/rofi"
-  rm -f "${pkgdir:?}/usr/lib/pkgconfig/rofi.pc"
-}
-
-package_rofi-dev() {
-  pkgdesc="Development files for rofi"
-
-  cd "${pkgbase}~${pkgver}"
-  make DESTDIR="${pkgdir}" install
-
-  rm -rf "${pkgdir:?}/usr/bin"
-  rm -rf "${pkgdir:?}/usr/share"
-  rm -rf "${pkgdir:?}/usr/lib/rofi"
+package() {
+  cd "${gives}-${pkgver}"
+  DESTDIR="${pkgdir}" ninja -C build/ install
 }
