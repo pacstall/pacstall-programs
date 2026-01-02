@@ -5,7 +5,7 @@ pkgver="3.40"
 gives="scangearmp2"
 pkgdesc="Scanner driver for Canon Pixma MG3000 series"
 arch=("amd64" "i386")
-url="https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx"
+url='https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx'
 
 depends=(
   "libatk1.0-0>=1.29.3"
