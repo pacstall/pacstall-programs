@@ -25,7 +25,6 @@ pkgbase = rofi-wayland
 	makedepends = libpango1.0-dev
 	makedepends = libcairo2-dev
 	makedepends = libgdk-pixbuf-2.0-dev
-	makedepends = libxkbcommon-dev
 	makedepends = wayland-protocols
 	conflicts = rofi-dev
 	replaces = rofi
