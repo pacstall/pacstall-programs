@@ -1280,6 +1280,32 @@ pkgbase = cachyos-ananicy-rules-git
 
 pkgname = cachyos-ananicy-rules-git
 ---
+pkgbase = canon-pixma-mg3000-complete-deb
+	gives = cnijfilter2
+	pkgver = 5.40
+	pkgdesc = Complete stand alone driver set printing for Canon Pixma MG3000 series
+	url = https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx
+	arch = amd64
+	arch = i386
+	depends = libc6>=2.7
+	depends = libgcc1
+	depends = libcups2
+	depends = libstdc++6
+	depends = binutils
+	depends = cups
+	depends = libxml2>=2.7.4
+	depends = libcupsimage2>=1.4.0
+	depends = libusb-0.1-4
+	depends = libpopt0
+	depends = libtiff6
+	optdepends = scangearmp2-deb: Scanner driver for Canon
+	replaces = cnijfilter2
+	maintainer = aKqir24 <aKqir24@github.com>
+	source_amd64 = https://files.catbox.moe/mmxzt2.deb
+	source_i386 = https://files.catbox.moe/8tiosl.deb
+
+pkgname = canon-pixma-mg3000-complete-deb
+---
 pkgbase = cantata
 	gives = cantata
 	pkgver = 2.5.0
