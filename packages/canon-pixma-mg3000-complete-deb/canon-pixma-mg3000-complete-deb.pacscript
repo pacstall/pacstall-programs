@@ -5,7 +5,7 @@ pkgver="5.40"
 gives="cnijfilter2"
 pkgdesc="Complete stand alone driver set printing for Canon Pixma MG3000 series"
 arch=("amd64" "i386")
-url="https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx"
+url='https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx'
 
 depends=(
   "libc6>=2.7"
