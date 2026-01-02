@@ -8,17 +8,17 @@ arch=("amd64" "i386")
 url="https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx"
 
 depends=(
-	"libc6>=2.7"
-	"libgcc1"
-	"libcups2"
-	"libstdc++6"
-	"libxml2"
-	"binutils"
-	"cups"
-	"libcupsimage2"
-	"libusb-0.1-4"
-	"libpopt0"
-	"libtiff6"
+  "libc6>=2.7"
+  "libgcc1"
+  "libcups2"
+  "libstdc++6"
+  "libxml2"
+  "binutils"
+  "cups"
+  "libcupsimage2"
+  "libusb-0.1-4"
+  "libpopt0"
+  "libtiff6"
 )
 optdepends=("scangearmp2-deb: Scanner driver for Canon")
 replaces=("${gives}")
@@ -27,14 +27,14 @@ source_amd64=("https://files.catbox.moe/mmxzt2.deb")
 source_i386=("https://files.catbox.moe/8tiosl.deb")
 
 package() {
-	_ppdFile="canonmg3000.ppd"
+  _ppdFile="canonmg3000.ppd"
 
-	install -Dm644 /usr/share/ppd/${_ppdFile} \
-  	  "${pkgdir}/usr/share/cups/model/${_ppdFile}"
+  install -Dm644 /usr/share/ppd/${_ppdFile} \
+    "${pkgdir}/usr/share/cups/model/${_ppdFile}"
 
-  	rm -rf usr/share/ppd
-  	cp -a usr "${pkgdir}/"
+  rm -rf usr/share/ppd
+  cp -a usr "${pkgdir}/"
 
-  	find usr/share/doc -name 'LICENSE*' -exec install -Dm644 {} \
-  	  "${pkgdir}/usr/share/licenses/${pkgname}/$(basename {})" \;
+  find usr/share/doc -name 'LICENSE*' -exec install -Dm644 {} \
+    "${pkgdir}/usr/share/licenses/${pkgname}/$(basename {})" \;
 }
