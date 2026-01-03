@@ -3,7 +3,7 @@ pkgver="2.0.0"
 arch=("any")
 url='https://github.com/davatorium/rofi'
 license=("MIT")
-pkgdesc="A window switcher, application launcher, and dmenu replacement for wayland and x11."
+pkgdesc="Window switcher, application launcher, and dmenu replacement for wayland and x11"
 depends=(
   "libglib2.0-0"
   "libpango-1.0-0"
