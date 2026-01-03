@@ -6842,7 +6842,7 @@ pkgname = libaquamarine-bin
 ---
 pkgbase = libation-deb
 	gives = libation
-	pkgver = 12.8.2
+	pkgver = 13.1.0
 	pkgdesc = Free and open source app to manage your Audible books
 	arch = arm64
 	arch = amd64
