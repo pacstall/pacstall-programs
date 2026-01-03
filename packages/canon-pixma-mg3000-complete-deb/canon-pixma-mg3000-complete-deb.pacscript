@@ -29,7 +29,7 @@ source_i386=("https://files.catbox.moe/8tiosl.deb")
 package() {
   _ppdFile="canonmg3000.ppd"
 
-  install -Dm644 /usr/share/ppd/${_ppdFile} \
+  install -Dm644 /usr/share/ppd/"${_ppdFile}" \
     "${pkgdir}/usr/share/cups/model/${_ppdFile}"
 
   rm -rf usr/share/ppd
