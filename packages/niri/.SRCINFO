@@ -1,10 +1,10 @@
 pkgbase = niri
-	pkgver = 25.08
+	pkgver = 25.11
 	pkgdesc = Scrollable-tiling Wayland compositor
 	url = https://github.com/YaLTeR/niri
 	arch = amd64
 	arch = arm64
-	depends = libdisplay-info2
+	depends = libdisplay-info3
 	depends = libseat1
 	makedepends = libudev-dev
 	makedepends = libwayland-dev
@@ -31,9 +31,11 @@ pkgbase = niri
 	optdepends = policykit-1-gnome: when apps need to ask for root permissions
 	incompatible = debian:bullseye
 	incompatible = debian:bookworm
+	incompatible = debian:trixie
 	incompatible = ubuntu:jammy
+	incompatible = ubuntu:noble
 	license = GPL-3.0-or-later
 	maintainer = Alxhr0 <alxhr0@proton.me>
-	source = https://github.com/YaLTeR/niri.git#tag=v25.08
+	source = https://github.com/YaLTeR/niri.git#tag=v25.11
 
 pkgname = niri
