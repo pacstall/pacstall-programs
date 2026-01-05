@@ -1,7 +1,7 @@
 pkgname="sleepy-launcher-bin"
 gives="sleepy-launcher"
 arch=("amd64")
-pkgver="1.6.1"
+pkgver="1.6.2"
 pkgdesc="Sleepy game launcher for Linux with telemetry disabling"
 repology=("project: sleepy-launcher")
 source=(
