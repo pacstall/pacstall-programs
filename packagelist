@@ -695,6 +695,7 @@ rustrover-bin
 sayonara
 sayonara-git
 sbt-deb
+scenefx-git
 schildichat-deb
 scrcpy
 sed
@@ -850,6 +851,7 @@ wine-staging
 wine-staging-git
 winetricks-git
 wlrobs
+wlroots-git
 wsysmon-bin
 xapps-common-deb
 xcb-util-errors
