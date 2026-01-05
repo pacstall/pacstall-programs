@@ -14442,6 +14442,10 @@ pkgbase = suyu-app
 
 pkgname = suyu-app
 ---
+pkgbase = swayfx-git
+
+pkgname = swayfx-git
+---
 pkgbase = systemcoding-conky
 	gives = conky
 	pkgver = 1.0
