@@ -4,7 +4,7 @@ pkgver="2.0.0"
 arch=("any")
 url='https://github.com/davatorium/rofi'
 license=("MIT")
-pkgdesc="Window switcher, application launcher, and dmenu replacement"
+pkgdesc="Window switcher, application launcher, and dmenu replacement for x11"
 depends=(
   "libcairo2"
   "libgdk-pixbuf-2.0-0"

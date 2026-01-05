@@ -6842,7 +6842,7 @@ pkgname = libaquamarine-bin
 ---
 pkgbase = libation-deb
 	gives = libation
-	pkgver = 12.8.2
+	pkgver = 13.1.0
 	pkgdesc = Free and open source app to manage your Audible books
 	arch = arm64
 	arch = amd64
@@ -6851,8 +6851,8 @@ pkgbase = libation-deb
 	breaks = libation-bin
 	breaks = libation-app
 	maintainer = Tobias Heinlein <nionxtrix@mailbox.org>
-	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v12.8.2/Libation.12.8.2-linux-chardonnay-arm64.deb
-	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v12.8.2/Libation.12.8.2-linux-chardonnay-amd64.deb
+	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v13.1.0/Libation.13.1.0-linux-chardonnay-arm64.deb
+	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v13.1.0/Libation.13.1.0-linux-chardonnay-amd64.deb
 
 pkgname = libation-deb
 ---
@@ -13116,7 +13116,7 @@ pkgname = rofi-wayland
 pkgbase = rofi-x11
 	gives = rofi
 	pkgver = 2.0.0
-	pkgdesc = Window switcher, application launcher, and dmenu replacement
+	pkgdesc = Window switcher, application launcher, and dmenu replacement for x11
 	url = https://github.com/davatorium/rofi
 	arch = any
 	depends = libcairo2
@@ -13565,6 +13565,32 @@ pkgbase = sbt-deb
 	sha256sums = 7e5e80083206002abc2217bebb4bdb69d8a271715e4c77d859f959ad8e6cdf2b
 
 pkgname = sbt-deb
+---
+pkgbase = scangearmp2-deb
+	gives = scangearmp2
+	pkgver = 3.40
+	pkgdesc = Scanner driver for Canon Pixma MG3000 series
+	url = https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx
+	arch = amd64
+	arch = i386
+	depends = libatk1.0-0>=1.29.3
+	depends = libc6>=2.7
+	depends = libcairo2>=1.2.4
+	depends = libfontconfig1>=2.8.0
+	depends = libfreetype6>=2.2.1
+	depends = libgcc1
+	depends = libglib2.0-0>=2.16.0
+	depends = libgtk2.0-0>=2.12.0
+	depends = libpango-1.0-0
+	depends = libstdc++6>=4.1.1
+	depends = libusb-1.0-0>=2:1.0.6
+	optdepends = canon-pixma-mg3000-complete-deb: Printing driver for Canon Pixma MG3000 series
+	replaces = scangearmp2
+	maintainer = aKqir24 <aKqir24@github.com>
+	source_amd64 = https://files.catbox.moe/o3gvrl.deb
+	source_i386 = https://files.catbox.moe/7mgcmi.deb
+
+pkgname = scangearmp2-deb
 ---
 pkgbase = schildichat-deb
 	gives = schildichat-desktop
