@@ -16948,9 +16948,8 @@ pkgbase = wlrobs
 
 pkgname = wlrobs
 ---
-pkgbase = wlroots-git
-	gives = wlroots
-	pkgver = 0.20.0.r7488.62c86fb9
+pkgbase = wlroots
+	pkgver = 0.19.2
 	pkgdesc = Modular Wayland compositor library (git development version)
 	url = https://gitlab.freedesktop.org/wlroots/wlroots
 	arch = amd64
@@ -16967,11 +16966,14 @@ pkgbase = wlroots-git
 	depends = libpixman-1-0
 	depends = libwayland-client0
 	depends = seatd
+	depends = libseat1
 	depends = glslang-tools
 	depends = libvulkan1
 	depends = libdisplay-info2
 	makedepends = git
+	makedepends = bison
 	makedepends = meson
+	makedepends = cmake
 	makedepends = ninja-build
 	makedepends = pkg-config
 	makedepends = libvulkan-dev
@@ -16979,13 +16981,15 @@ pkgbase = wlroots-git
 	makedepends = wayland-protocols
 	makedepends = libliftoff-dev
 	makedepends = libdisplay-info-dev
+	makedepends = libexpat1-dev
+	makedepends = libxml2-dev
 	conflicts = wlroots
 	provides = wlroots
 	license = MIT
 	maintainer = aKqir24 <aKqir24@github.com>
-	source = https://gitlab.freedesktop.org/wlroots/wlroots.git
+	source = https://gitlab.freedesktop.org/wlroots/wlroots/-/archive/0.19.2/wlroots-0.19.2.tar.gz
 
-pkgname = wlroots-git
+pkgname = wlroots
 ---
 pkgbase = wsysmon-bin
 	gives = wsysmon
