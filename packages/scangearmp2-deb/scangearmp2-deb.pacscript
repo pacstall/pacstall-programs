@@ -1,7 +1,7 @@
 pkgname="scangearmp2-deb"
 pkgver="3.40"
 gives="scangearmp2"
-pkgdesc="Scanner driver for Canon Pixma MG3000 series"
+pkgdesc="Scanner driver and gui for Canon Pixma MG3000 series"
 arch=("amd64" "i386")
 url='https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx'
 depends=(
@@ -22,3 +22,17 @@ replaces=("${gives}")
 maintainer=("aKqir24 <aKqir24@github.com>")
 source_amd64=("https://files.catbox.moe/o3gvrl.deb")
 source_i386=("https://files.catbox.moe/7mgcmi.deb")
+
+package() {
+  install -d "${pkgdir}/usr/share/applications"
+  cat << EOF > "${pkgdir}/usr/share/applications/scangearmp2.desktop"
+[Desktop Entry]
+Type=Application
+Name=ScanGear MP
+Comment=Scanner interface for Canon printers
+Exec=/usr/bin/scangearmp2 %f
+Icon=printer-scanner
+Terminal=false
+Categories=Application;Utilities
+EOF
+}
