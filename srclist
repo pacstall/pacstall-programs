@@ -13359,7 +13359,6 @@ pkgbase = rust-bin
 	arch = x86_64
 	arch = aarch64
 	arch = i686
-	arch = i386
 	replaces = rustc
 	replaces = libstd-rust-1.80
 	replaces = libstd-rust-dev
