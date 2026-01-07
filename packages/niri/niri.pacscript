@@ -6,7 +6,6 @@ url='https://github.com/YaLTeR/niri'
 license=('GPL-3.0-or-later')
 source=("${url}.git#tag=v${pkgver}")
 external_connection=true
-incompatible=('debian:bullseye' 'debian:bookworm' 'debian:trixie' 'ubuntu:jammy' 'ubuntu:noble' 'ubuntu:questing')
 makedepends=("libudev-dev" "libwayland-dev" "libseat-dev" "libglib2.0-dev" "libclang-dev" "cargo>=1.80.1" "libpipewire-0.3-dev" "libcairo2-dev" "libpango1.0-dev" "libdisplay-info-dev" "libinput-dev" "libgbm-dev" "libxkbcommon-dev")
 depends=("libdisplay-info3" "libseat1")
 optdepends=("fuzzel: application launcher similar to rofi drun mode"
