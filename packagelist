@@ -674,9 +674,7 @@ rider-bin
 rio-wayland-deb
 rio-x11-deb
 rnnoise
-rofi:pkgbase
-rofi:rofi-dev
-rofi:rofi
+rofi
 rofi-emoji
 rofi-wayland
 rofi-x11
