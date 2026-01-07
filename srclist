@@ -9965,12 +9965,6 @@ pkgbase = niri
 	optdepends = xdg-desktop-portal-gnome: screencasting support
 	optdepends = gnome-keyring: implements the secret portal, for certain apps to work
 	optdepends = policykit-1-gnome: when apps need to ask for root permissions
-	incompatible = debian:bullseye
-	incompatible = debian:bookworm
-	incompatible = debian:trixie
-	incompatible = ubuntu:jammy
-	incompatible = ubuntu:noble
-	incompatible = ubuntu:questing
 	license = GPL-3.0-or-later
 	maintainer = Alxhr0 <alxhr0@proton.me>
 	source = https://github.com/YaLTeR/niri.git#tag=v25.11
