@@ -17,6 +17,7 @@ conflicts=("${pkgname}")
 maintainer=("aKqir24 <aKqir24@github.com>")
 source=("https://github.com/Mange/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
 
+
 build() {
   cd "${pkgname}-${pkgver}"
   autoreconf -i
