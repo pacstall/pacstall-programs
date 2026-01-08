@@ -5143,6 +5143,51 @@ pkgbase = headset-deb
 
 pkgname = headset-deb
 ---
+pkgbase = helium-browser-bin
+	gives = helium-browser
+	pkgver = 0.7.7.1
+	pkgrel = 1
+	pkgdesc = Private, fast, and honest web browser based on Chromium
+	url = https://github.com/imputnet/helium-linux
+	arch = amd64
+	arch = arm64
+	depends = libgtk-3-0t64
+	depends = libnss3
+	depends = libasound2t64
+	depends = xdg-utils
+	depends = libxss1
+	depends = libcups2
+	depends = libgcrypt20
+	depends = fonts-liberation
+	depends = systemd
+	depends = dbus
+	depends = libpulse0
+	depends = pciutils
+	depends = libva2
+	depends = libffi8
+	depends = desktop-file-utils
+	depends = hicolor-icon-theme
+	depends = ca-certificates
+	optdepends = pipewire: WebRTC desktop sharing under Wayland
+	optdepends = kdialog: support for native dialogs in Plasma
+	optdepends = libgtk-4-1: for --gtk-version=4 (GTK4 IME might work better on Wayland)
+	optdepends = gnome-keyring: password storage backend on GNOME / Xfce
+	optdepends = kwallet6: support for storing passwords in KWallet on Plasma
+	optdepends = upower: Battery Status API support
+	license = GPL-3.0-only
+	license = BSD-3-Clause
+	maintainer = tranquil-tr0 <tranquil-tr0@proton.me>
+	source_amd64 = helium-0.7.7.1-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/0.7.7.1/helium-0.7.7.1-x86_64_linux.tar.xz
+	source_amd64 = LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/0.7.7.1/LICENSE.ungoogled_chromium
+	sha256sums_amd64 = 698f46c080cf4dcb249b9e4d96e4b2c640870ba76b77a05d05a358661af39511
+	sha256sums_amd64 = 9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d
+	source_arm64 = helium-0.7.7.1-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/0.7.7.1/helium-0.7.7.1-arm64_linux.tar.xz
+	source_arm64 = LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/0.7.7.1/LICENSE.ungoogled_chromium
+	sha256sums_arm64 = efa849d7dfdb1f3744d7ffe478617d8a66243073b2e951e9039e9bc44920c200
+	sha256sums_arm64 = 9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d
+
+pkgname = helium-browser-bin
+---
 pkgbase = helix
 	pkgver = 25.01.1
 	pkgdesc = A post-modern modal text editor
