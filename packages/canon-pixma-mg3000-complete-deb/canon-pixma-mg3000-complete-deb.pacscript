@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 pkgname="canon-pixma-mg3000-complete-deb"
 pkgver="5.40"
 gives="cnijfilter2"
