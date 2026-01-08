@@ -11,11 +11,6 @@ makedepends=(
   "pkg-config" "build-essential" "libglib2.0-dev"
   "libcairo2-dev" "libpango1.0-dev"
   "autoconf" "automake" "libtool" "bubblewrap")
-optdepends=("xsel: Clipboard interaction under X11"
-  "xclip: Clipboard interaction under X11"
-  "wl-clipboard: Clipboard interaction under Wayland"
-  "rofi-wayland: For wayland only support in rofi"
-  "rofi-x11: For x11 only support in rofi")
 conflicts=("${pkgname}" "${gives}")
 replaces=("${gives}")
 pacdeps=("rofi")
