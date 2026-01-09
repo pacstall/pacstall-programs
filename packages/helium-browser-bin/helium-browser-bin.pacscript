@@ -1,5 +1,5 @@
 _pkgname="helium"
-pkgname="${_pkgname}-browser-bin"
+pkgname="helium-browser-bin"
 gives="helium-browser"
 pkgver=0.7.7.1
 pkgrel=1
