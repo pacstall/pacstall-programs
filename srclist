@@ -3502,6 +3502,30 @@ pkgbase = firefox-nightly-deb
 
 pkgname = firefox-nightly-deb
 ---
+pkgbase = firmware-brcm80211-deb
+	gives = firmware-brcm80211
+	pkgver = 20251111
+	pkgdesc = Firmware files for Broadcom chips
+	arch = all
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: firmware-brcm80211
+	source = http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/firmware-brcm80211_20251111-1_all.deb
+	sha256sums = 7295a005c5765a1e31629a83f2ea95cbdcb9a14950dc58e394b56cdb8e316094
+
+pkgname = firmware-brcm80211-deb
+---
+pkgbase = firmware-realtek-deb
+	gives = firmware-realtek
+	pkgver = 20251111
+	pkgdesc = Firmware files for Realtek chips
+	arch = all
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: firmware-realtek
+	source = http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/firmware-realtek_20251111-1_all.deb
+	sha256sums = d992227ed8b886a26aa15528153e2eaa68d625cd1b53d9fddef8c4632adda16a
+
+pkgname = firmware-realtek-deb
+---
 pkgbase = fishui-git
 	gives = fishui
 	pkgver = 0.8
@@ -7624,7 +7648,7 @@ pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-rockchip-deb
 	gives = linux-headers-6.18-rockchip
-	pkgver = 6.18.1
+	pkgver = 6.18.3
 	pkgdesc = Linux kernel header files built for PINE64 Rockchip devices (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7632,8 +7656,8 @@ pkgbase = linux-headers-rockchip-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-headers-6.18-rockchip_6.18.1-1_arm64.deb
-	sha256sums = 5206470f3ee24de78d04eef7b80feac083db8281a94a214fd6da2a6f804d063a
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-headers-6.18-rockchip_6.18.3-1_arm64.deb
+	sha256sums = c9b1682cb6d8c4af7240d31a6d18c11067410856ff289e6d5f7730228fc0cd02
 
 pkgname = linux-headers-rockchip-deb
 ---
@@ -7652,7 +7676,7 @@ pkgname = linux-headers-stable-deb
 ---
 pkgbase = linux-headers-sunxi-deb
 	gives = linux-headers-6.12-sunxi64
-	pkgver = 6.12.62
+	pkgver = 6.12.63
 	pkgdesc = Linux kernel header files built for PINE64 Sunxi devices (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7660,8 +7684,8 @@ pkgbase = linux-headers-sunxi-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-6.12-sunxi64/linux-headers-6.12-sunxi64_6.12.62-1_arm64.deb
-	sha256sums = dbf9eb1f30611e4cfe2d3c472231ad2735fa070ca0a2af04556fa7b888d75270
+	source = https://repo.mobian.org/pool/main/l/linux-6.12-sunxi64/linux-headers-6.12-sunxi64_6.12.63-1_arm64.deb
+	sha256sums = 813bea68d10cc9a880fc17eacc855883f55cc6dc4aeb93d6980b610a5824cd0e
 
 pkgname = linux-headers-sunxi-deb
 ---
@@ -7685,7 +7709,7 @@ pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-rockchip-deb
 	gives = linux-image-6.18-rockchip
-	pkgver = 6.18.1
+	pkgver = 6.18.3
 	pkgdesc = Linux kernel image files built for PINE64 Rockchip devices (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -7695,14 +7719,16 @@ pkgbase = linux-image-rockchip-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-image-6.18-rockchip_6.18.1-1_arm64.deb
-	sha256sums = 5a740de37178f78e10e1fbdefbeb8da5708b7c403a901f3622a5f42505a783f3
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-image-6.18-rockchip_6.18.3-1_arm64.deb
+	sha256sums = 3692e0f899c7b84532116a32ca2739b3f054a1c190b349e003b55ac13065d674
+	depends_debian = firmware-brcm80211
+	pacdeps_ubuntu = firmware-brcm80211-deb
 
 pkgname = linux-image-rockchip-deb
 ---
 pkgbase = linux-image-sunxi-deb
 	gives = linux-image-6.12-sunxi64
-	pkgver = 6.12.62
+	pkgver = 6.12.63
 	pkgdesc = Linux kernel image files built for PINE64 Sunxi devices (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -7712,8 +7738,10 @@ pkgbase = linux-image-sunxi-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.12-sunxi64/linux-image-6.12-sunxi64_6.12.62-1_arm64.deb
-	sha256sums = 1b3534acb1a0cea8579f448ddf6bd04a0a9cb02899646c674b56991aae3aa641
+	source = https://repo.mobian.org/pool/main/l/linux-6.12-sunxi64/linux-image-6.12-sunxi64_6.12.63-1_arm64.deb
+	sha256sums = 336c512ae527ec01112a3b5feb2fe3efad038e3861997e2e394ab91085db0138
+	depends_debian = firmware-realtek
+	pacdeps_ubuntu = firmware-realtek-deb
 
 pkgname = linux-image-sunxi-deb
 ---
@@ -13891,7 +13919,7 @@ pkgname = sleek-deb
 ---
 pkgbase = sleepy-launcher-bin
 	gives = sleepy-launcher
-	pkgver = 1.6.1
+	pkgver = 1.6.2
 	pkgdesc = Sleepy game launcher for Linux with telemetry disabling
 	arch = amd64
 	depends = git
@@ -13910,11 +13938,10 @@ pkgbase = sleepy-launcher-bin
 	incompatible = debian:stretch
 	incompatible = debian:buster
 	incompatible = debian:bullseye
-	maintainer = vbrabandt <vbrabandt@proton.me>
 	repology = project: sleepy-launcher
-	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.6.1/sleepy-launcher
+	source = https://github.com/an-anime-team/sleepy-launcher/releases/download/1.6.2/sleepy-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/sleepy-launcher/main/assets/images/icon.png
-	sha256sums = 2a62a567df4c6dd4f8a7dfa8c01447d004e89832b1a6f74a867d0daec5716484
+	sha256sums = b16d88dd8179a4af043ff1860d35918b1d405ff776b27fa426c534f0f9a55c2f
 	sha256sums = SKIP
 
 pkgname = sleepy-launcher-bin
