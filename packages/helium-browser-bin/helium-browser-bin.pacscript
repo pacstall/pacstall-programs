@@ -6,7 +6,7 @@ pkgrel=1
 pkgdesc="Private, fast, and honest web browser based on Chromium"
 maintainer=("tranquil-tr0 <tranquil-tr0@proton.me>")
 arch=('amd64' 'arm64')
-url="https://github.com/imputnet/helium-linux"
+url='https://github.com/imputnet/helium-linux'
 license=('GPL-3.0-only' 'BSD-3-Clause')
 depends=('libgtk-3-0t64' 'libnss3' 'libasound2t64' 'xdg-utils' 'libxss1' 'libcups2' 'libgcrypt20'
   'fonts-liberation' 'systemd' 'dbus' 'libpulse0' 'pciutils' 'libva2'
