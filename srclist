@@ -4889,8 +4889,8 @@ pkgbase = grive2
 pkgname = grive2
 ---
 pkgbase = grub-btrfs
-	pkgver = 4.13
-	pkgdesc = Include btrfs snapshots in GRUB boot options
+	pkgver = 4.14
+	pkgdesc = Include btrfs snapshots at boot options. (Grub menu)
 	url = https://github.com/Antynea/grub-btrfs
 	arch = any
 	depends = btrfs-progs
@@ -4898,9 +4898,10 @@ pkgbase = grub-btrfs
 	optdepends = snapper: For snapper support
 	optdepends = inotify-tools: For grub-btrfsd daemon
 	license = GPL-3.0-only
-	maintainer = Eric Renfro <psi-jack@linux-help.org
-	source = grub-btrfs-4.13.tar.gz::https://github.com/Antynea/grub-btrfs/archive/4.13.tar.gz
-	b2sums = e2f11a0a8282e3ec8ff8223e3bad70b5d5c5e81b4d740a1bf3554db412dbe48a8a0f216f4e6c65ae1d11c01a27b8b92bae9b470c60d2389505ce089511536e1a
+	maintainer = Eric Renfro <psi-jack@linux-help.org>
+	maintainer = Tianyu Lu <tianyu@lu.fm>
+	source = grub-btrfs-4.14.tar.gz::https://github.com/Antynea/grub-btrfs/archive/refs/tags/v4.14.tar.gz
+	b2sums = 361fabb41e603f84af096925db7498e24ff68436b9f32cc6d1fe81dd4db58826d02052181d577b6484290016c11009d0b138c4187fcedb76848ef7a52b55222f
 
 pkgname = grub-btrfs
 ---
