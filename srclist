@@ -775,6 +775,35 @@ pkgbase = aws-cli-v2-bin
 
 pkgname = aws-cli-v2-bin
 ---
+pkgbase = awww-git
+	gives = awww
+	pkgver = 0.11.2.r82.gcb3be36
+	pkgdesc = Efficient animated wallpaper daemon for Wayland, controlled at runtime
+	url = https://codeberg.org/LGFae/awww
+	arch = amd64
+	arch = arm64
+	depends = libxkbcommon0
+	depends = liblz4-1
+	makedepends = git
+	makedepends = dav1d
+	makedepends = scdoc
+	makedepends = liblz4-dev
+	makedepends = libdav1d-dev
+	makedepends = pkg-config
+	makedepends = wayland-protocols
+	makedepends = libwayland-dev
+	pacdeps = rust-bin
+	conflicts = awww
+	conflicts = swww
+	replaces = swww
+	provides = awww
+	license = GPL-3.0-or-later
+	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: awww
+	source = https://codeberg.org/LGFae/awww.git
+
+pkgname = awww-git
+---
 pkgbase = balena-etcher-deb
 	gives = balena-etcher
 	pkgver = 2.1.4
