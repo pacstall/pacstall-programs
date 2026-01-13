@@ -1,6 +1,6 @@
 pkgbase = grub-btrfs
 	pkgver = 4.14
-	pkgdesc = Include btrfs snapshots at boot options. (Grub menu)
+	pkgdesc = Include btrfs snapshots at boot options
 	url = https://github.com/Antynea/grub-btrfs
 	arch = any
 	depends = btrfs-progs
