@@ -1,7 +1,7 @@
 pkgname="grub-btrfs"
 arch=("any")
 pkgver="4.14"
-pkgdesc='Include btrfs snapshots at boot options. (Grub menu)'
+pkgdesc='Include btrfs snapshots at boot options'
 url='https://github.com/Antynea/grub-btrfs'
 license=('GPL-3.0-only')
 depends=('btrfs-progs' 'grub2-common')
