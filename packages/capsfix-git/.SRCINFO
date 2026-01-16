@@ -6,7 +6,6 @@ pkgbase = capsfix-git
 	pacdeps = keyd-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/oklopfer/capsfix.git
-	depends_plucky = keyd
 	depends_questing = keyd
 	depends_devel = keyd
 	depends_trixie = keyd
