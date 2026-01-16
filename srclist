@@ -17351,7 +17351,7 @@ pkgbase = xpadneo-dkms
 pkgname = xpadneo-dkms
 ---
 pkgbase = xwayland-satellite
-	pkgver = 0.7
+	pkgver = 0.8
 	pkgdesc = Xwayland outside your Wayland
 	url = https://github.com/Supreeeme/xwayland-satellite
 	arch = amd64
@@ -17364,12 +17364,9 @@ pkgbase = xwayland-satellite
 	makedepends = cargo>=1.83.0
 	makedepends = libxcb-cursor-dev
 	makedepends = libxkbcommon-dev
-	incompatible = debian:bullseye
-	incompatible = debian:bookworm
-	incompatible = ubuntu:jammy
 	license = GPL-3.0-or-later
 	maintainer = Alxhr0 <alxhr0@proton.me>
-	source = https://github.com/Supreeeme/xwayland-satellite.git#tag=v0.7
+	source = https://github.com/Supreeeme/xwayland-satellite.git#tag=v0.8
 
 pkgname = xwayland-satellite
 ---
