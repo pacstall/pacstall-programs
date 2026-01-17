@@ -1,0 +1,24 @@
+pkgbase = fast-colorthief-git
+	gives = fast-colorthief
+	pkgver = 0.0.5
+	pkgdesc = Selection of most dominant colors in image using Modified Median Cut Quantization
+	url = https://github.com/bedapisl/fast-colorthief
+	arch = any
+	arch = amd64
+	depends = python3
+	depends = python3-pil
+	depends = python3-numpy
+	makedepends = cmake
+	makedepends = build-essential
+	makedepends = python3-dev
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-wheel
+	makedepends = python3-setuptools
+	conflicts = fast-colorthief
+	conflicts = fast-colorthief-git
+	provides = fast-colorthief
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/bedapisl/fast-colorthief.git
+
+pkgname = fast-colorthief-git

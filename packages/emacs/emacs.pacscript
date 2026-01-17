@@ -71,16 +71,16 @@ NOGZ="YES"        # Don't compress .el files.
 
 pkgname="emacs"
 arch=("any")
-pkgver="30.1"
+pkgver="30.2"
 source=("@${pkgname}~${pkgver}::http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
 makedepends=("git" "autoconf" "texinfo" "pkg-config" "libncurses-dev" "libjpeg-dev" "libpng-dev" "libtiff-dev" "libgnutls28-dev" "libgif-dev" "libxaw7-dev" "libxpm-dev" "libtree-sitter-dev")
-depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2" "libjansson-dev" "gpm")
+depends_nox=("libalsaplayer0" "libgnutls28-dev" "libxml2-16 | libxml2" "libjansson-dev" "gpm")
 depends=("${depends_nox[@]}" "m17n-lib-bin" "libharfbuzz0b")
 gives="${pkgname}"
 breaks=("${pkgname}-git" "${pkgname}-nox")
 replaces=("${pkgname}-git" "${pkgname}-nox")
-sha256sums=("6ccac1ae76e6af93c6de1df175e8eb406767c23da3dd2a16aa67e3124a6f138f")
+sha256sums=("b3f36f18a6dd2715713370166257de2fae01f9d38cfe878ced9b1e6ded5befd9")
 repology=("project: emacs")
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then

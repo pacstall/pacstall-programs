@@ -1,6 +1,6 @@
 pkgname="mcpelauncher-ui-git"
 gives="mcpelauncher-ui"
-pkgver="1.5.3"
+pkgver="1.5.4"
 pkgdesc="Minecraft: Pocket Edition launcher UI"
 url="https://github.com/minecraft-linux/mcpelauncher-manifest"
 arch=('amd64')
@@ -11,38 +11,35 @@ external_connection=true
 pacdeps=('mcpelauncher-linux-git')
 depends=(
   'git'
-  'qtwebengine5-dev'
-  'libqt5quickcontrols2-5'
-  'libqt5quicktemplates2-5'
-  'qml-module-qtquick-controls2'
-  'qml-module-qtquick-templates2'
+  'qt6-webengine-dev'
+  'qml6-module-qtquick-controls'
+  'qml6-module-qtquick-templates'
 )
 makedepends=(
-  'libxcursor-dev'
-  'libxrandr-dev'
-  'libxinerama-dev'
-  'libxext-dev'
-  'libx11-dev'
-  'libxi-dev'
-  'libxrender-dev'
-  'libssl-dev'
-  'libcurl4-openssl-dev'
-  'libuv1-dev'
-  'libzip-dev'
-  'libprotobuf-dev'
-  'protobuf-compiler'
-  'qtbase5-dev'
-  'qtwebengine5-dev'
-  'qtdeclarative5-dev'
-  'libqt5svg5-dev'
-  'qml-module-qtquick2'
-  'qml-module-qtquick-layouts'
-  'qml-module-qtquick-controls'
-  'qml-module-qtquick-controls2'
-  'qml-module-qtquick-window2'
-  'qml-module-qtquick-dialogs'
-  'qml-module-qt-labs-settings'
-  'qml-module-qt-labs-folderlistmodel'
+  libxcursor-dev
+  libxrandr-dev
+  libxinerama-dev
+  libxext-dev
+  libx11-dev
+  libxi-dev
+  libxrender-dev
+  libssl-dev
+  libcurl4-openssl-dev
+  libuv1-dev
+  libzip-dev
+  libprotobuf-dev
+  protobuf-compiler
+  qt6-base-dev
+  qt6-webengine-dev
+  qt6-declarative-dev
+  libqt6svg6-dev
+  qml6-module-qtquick
+  qml6-module-qtquick-layouts
+  qml6-module-qtquick-controls
+  qml6-module-qtquick-window
+  qml6-module-qtquick-dialogs
+  qml6-module-qt-labs-settings
+  qml6-module-qt-labs-folderlistmodel
 )
 
 optdepends=('mcpelauncher-msa-ui-qt: Microsoft authentication for versions before 1.16.1X')

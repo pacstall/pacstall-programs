@@ -17,7 +17,6 @@ pkgbase = wavey-launcher-bin
 	incompatible = debian:stretch
 	incompatible = debian:buster
 	incompatible = debian:bullseye
-	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: wavey-launcher
 	source = https://github.com/an-anime-team/wavey-launcher/releases/download/1.0.1/wavey-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/wavey-launcher/main/assets/images/icon.png

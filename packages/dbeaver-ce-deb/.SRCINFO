@@ -1,11 +1,11 @@
 pkgbase = dbeaver-ce-deb
 	gives = dbeaver-ce
-	pkgver = 25.1.0
+	pkgver = 25.3.1
 	pkgdesc = Free universal database tool and SQL client
 	arch = amd64
 	maintainer = KwonNam Son <kwon37xi@gmail.com>
 	repology = project: dbeaver
-	source = https://github.com/dbeaver/dbeaver/releases/download/25.1.0/dbeaver-ce_25.1.0_amd64.deb
-	sha256sums = 2a234edff84cb3aee94ff99371aacebf62629403c199ec8fb2af3d85c43411bb
+	source = https://github.com/dbeaver/dbeaver/releases/download/25.3.1/dbeaver-ce_25.3.1_amd64.deb
+	sha256sums = af5f6a7d94231f7f346feb8a364d8dd01deb3ef0c62d48f8775eb0823c987e16
 
 pkgname = dbeaver-ce-deb

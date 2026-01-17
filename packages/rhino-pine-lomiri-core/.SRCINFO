@@ -1,0 +1,16 @@
+pkgbase = rhino-pine-lomiri-core
+	pkgver = 2025.4
+	pkgdesc = Transitional package to provide all core Rhino Linux Mobile (Lomiri) software
+	priority = essential
+	arch = all
+	depends = initramfs-tools
+	pacdeps = ubxi-lomiri-desktop
+	pacdeps = u-boot-mobian-deb
+	pacdeps = mobile-usb-networking-deb
+	compatible = ubuntu:devel
+	compatible = ubuntu:questing
+	compatible = ubuntu:resolute
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty
+
+pkgname = rhino-pine-lomiri-core

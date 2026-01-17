@@ -8,11 +8,11 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="dust-bin"
 gives="dust"
-pkgver="1.2.1"
+pkgver="1.2.3"
 pkgdesc="A more intuitive version of du in rust"
 source=("@${pkgname}~${pkgver}::https://github.com/bootandy/dust/releases/download/v${pkgver}/dust-v${pkgver}-x86_64-unknown-linux-musl.tar.gz")
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
-sha256sums=("15716b5c0df538f30025d2db7c509fc6d5540f4ecc1eaf555e0c639c67ed7abf")
+sha256sums=("2767e53a07a6f887c95d80dc7b976fbb0f85c24fa19e83704639ff5d67ebfbf4")
 arch=('amd64')
 repology=("project: du-dust")
 
