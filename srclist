@@ -6164,7 +6164,7 @@ pkgbase = kakoune-kakboard-git
 pkgname = kakoune-kakboard-git
 ---
 pkgbase = kakoune-lsp
-	pkgver = 18.2.0
+	pkgver = 19.0.1
 	pkgdesc = Kakoune Language Server Protocol Client
 	url = https://lists.sr.ht/~krobelus/kakoune
 	arch = amd64
@@ -6178,8 +6178,8 @@ pkgbase = kakoune-lsp
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: kak-lsp
-	source = https://github.com/kakoune-lsp/kakoune-lsp/archive/refs/tags/v18.2.0.tar.gz
-	sha256sums = 4823bb733dc3d1e1119af60873b73a62d71d305573abc7d0b016c9077c99913e
+	source = https://github.com/kakoune-lsp/kakoune-lsp/archive/refs/tags/v19.0.1.tar.gz
+	sha256sums = 53cc4a4feb6ba6cc737a6bc2f4a3c7c11967acd02af8137a25c6f7db039ee559
 
 pkgname = kakoune-lsp
 ---
