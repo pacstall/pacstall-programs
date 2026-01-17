@@ -11673,6 +11673,21 @@ pkgbase = plasma-compact-shutdown-git
 
 pkgname = plasma-compact-shutdown-git
 ---
+pkgbase = plasma-kara
+	pkgver = 0.7.3
+	pkgdesc = KDE applet for the Plasma pager
+	url = https://github.com/dhruv8sh/kara
+	arch = all
+	depends = plasma-desktop>=4:6.0.0
+	breaks = plasma-kara-git
+	license = GPL-3.0-only
+	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
+	repology = project: kara
+	source = https://github.com/dhruv8sh/kara/archive/refs/tags/v0.7.3.tar.gz
+	sha256sums = f7b794f56ec7d9056d511f0d313c354ed57246ad1c5500869c4a2f0e82bcc77b
+
+pkgname = plasma-kara
+---
 pkgbase = plexmediaserver-deb
 	gives = plexmediaserver
 	pkgver = 1.41.8.9834-071366d65
