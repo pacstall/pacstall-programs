@@ -1,5 +1,6 @@
 pkgname="scangearmp2-deb"
 pkgver="3.40"
+pkgrel=1
 gives="scangearmp2"
 pkgdesc="Scanner driver and gui for Canon Pixma MG3000 series"
 arch=("amd64" "i386")
@@ -17,15 +18,17 @@ depends=(
   "libstdc++6>=4.1.1"
   "libusb-1.0-0>=2:1.0.6"
 )
-optdepends=("canon-pixma-mg3000-complete-deb: Printing driver for Canon Pixma MG3000 series")
+pacdeps=("canon-pixma-mg3000-complete-deb")
 replaces=("${gives}")
 maintainer=("aKqir24 <aKqir24@github.com>")
 source_amd64=("https://files.catbox.moe/o3gvrl.deb")
 source_i386=("https://files.catbox.moe/7mgcmi.deb")
 
-package() {
-  install -d "${pkgdir}/usr/share/applications"
-  cat << EOF > "${pkgdir}/usr/share/applications/scangearmp2.desktop"
+post_install() {
+  cd "${srcdir}"
+  fancy_message info "Installing ${gives}.desktop file"
+
+  cat << EOF > "${gives}.desktop"
 [Desktop Entry]
 Type=Application
 Name=ScanGear MP
@@ -35,4 +38,11 @@ Icon=printer-scanner
 Terminal=false
 Categories=Application;Utilities
 EOF
+
+  install -Dm644 "${srcdir}/${gives}.desktop" "${pkgdir}/usr/share/applications/${gives}.desktop"
+}
+
+post_remove() {
+  # Remove the .desktop file ( it doesn't work in my machine though )
+  sudo rm -f "/usr/share/applications/scangearmp2.desktop"
 }

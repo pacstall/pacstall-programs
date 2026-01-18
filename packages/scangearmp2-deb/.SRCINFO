@@ -1,6 +1,7 @@
 pkgbase = scangearmp2-deb
 	gives = scangearmp2
 	pkgver = 3.40
+	pkgrel = 1
 	pkgdesc = Scanner driver and gui for Canon Pixma MG3000 series
 	url = https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx
 	arch = amd64
@@ -16,7 +17,7 @@ pkgbase = scangearmp2-deb
 	depends = libpango-1.0-0
 	depends = libstdc++6>=4.1.1
 	depends = libusb-1.0-0>=2:1.0.6
-	optdepends = canon-pixma-mg3000-complete-deb: Printing driver for Canon Pixma MG3000 series
+	pacdeps = canon-pixma-mg3000-complete-deb
 	replaces = scangearmp2
 	maintainer = aKqir24 <aKqir24@github.com>
 	source_amd64 = https://files.catbox.moe/o3gvrl.deb
