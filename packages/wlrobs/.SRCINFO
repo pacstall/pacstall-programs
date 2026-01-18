@@ -1,0 +1,17 @@
+pkgbase = wlrobs
+	pkgver = 1.2
+	pkgdesc = Obs-studio plugin that allows you to screen capture on wlroots based wayland compositors
+	arch = any
+	depends = obs-studio
+	makedepends = libwayland-dev
+	makedepends = libobs-dev
+	makedepends = pkg-config
+	makedepends = meson
+	makedepends = libwlroots-0.18
+	makedepends = ninja-build
+	conflicts = wlrobs
+	maintainer = akqir24 <aKqir24@github.com>
+	repology = project: wlrobs
+	source = https://hg.sr.ht/~scoopta/wlrobs/archive/v1.2.tar.gz
+
+pkgname = wlrobs

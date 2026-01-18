@@ -30,6 +30,7 @@ audiorelay-bin
 audiorelay-deb
 awesome-git
 aws-cli-v2-bin
+awww-git
 balena-etcher-deb
 bat
 bat-deb
@@ -59,6 +60,7 @@ btop-bin
 btrfs-assistant
 btrfs-du-bin
 cachyos-ananicy-rules-git
+canon-pixma-mg3000-complete-deb
 cantata
 caprine-deb
 capsfix-git
@@ -77,6 +79,7 @@ cloudflare-warp-deb
 cmake-data-deb
 cmake-deb
 cmatrix
+colorz-git
 com.github.mirkobrombin.bottles-deb
 conky-manager-zcot-git
 coreutils-single
@@ -151,6 +154,7 @@ f1multiviewer-deb
 facetimehd-firmware
 fake-ubuntu-advantage-tools-deb
 fast
+fast-colorthief-git
 fastfetch-git
 fblog-bin
 feishin-app
@@ -169,6 +173,8 @@ firefox-deb
 firefox-developer-edition-bin
 firefox-nightly-bin
 firefox-nightly-deb
+firmware-brcm80211-deb
+firmware-realtek-deb
 fishui-git
 floorp-bin
 flyctl-bin
@@ -292,6 +298,7 @@ joplin-desktop-app
 jq-bin
 jsonnet-bundler-bin
 kakoune
+kakoune-ansi-git
 kakoune-auto-pairs-git
 kakoune-kakboard-git
 kakoune-lsp
@@ -301,6 +308,7 @@ kalendar-git
 kanata-bin
 kate-backport-deb
 kate5-data-backport-deb
+kde-rounded-corners
 kdenlive-app
 keepassxc
 keybase-deb
@@ -327,6 +335,7 @@ lenovolegionlinux-git
 lens
 lf-bin
 libaquamarine-bin
+libation-deb
 libcamera-git
 libcs50-git
 libcutefish-git
@@ -362,8 +371,12 @@ linux-headers-generic-lts-6.6-deb
 linux-headers-generic-stable-deb
 linux-headers-lts-6.6-deb
 linux-headers-okpine-deb
+linux-headers-rockchip-deb
 linux-headers-stable-deb
+linux-headers-sunxi-deb
 linux-image-okpine-deb
+linux-image-rockchip-deb
+linux-image-sunxi-deb
 linux-image-unsigned-deb
 linux-image-unsigned-lts-6.6-deb
 linux-image-unsigned-stable-deb
@@ -588,6 +601,8 @@ picom
 pipes.sh-bin
 pipewire
 planner-git
+plasma-compact-shutdown-git
+plasma-kara
 plexmediaserver-deb
 polybar
 pomatez-deb
@@ -612,6 +627,7 @@ pulsar-deb
 pycharm-community-bin
 python3-anyascii
 python3-darkdetect
+python3-desktop-entry-lib
 python3-editables
 python3-flit-core
 python3-fvs
@@ -648,6 +664,7 @@ rhino-kvantum-theme-git
 rhino-lightdm-theme-git
 rhino-neofetch-git
 rhino-pine-core
+rhino-pine-lomiri-core
 rhino-pkg-git
 rhino-plymouth-theme-git
 rhino-server-core
@@ -662,10 +679,10 @@ rider-bin
 rio-wayland-deb
 rio-x11-deb
 rnnoise
-rofi:pkgbase
-rofi:rofi-dev
-rofi:rofi
+rofi
 rofi-emoji
+rofi-wayland
+rofi-x11
 rojo-bin
 rosary-deb
 rose-pine-cursor
@@ -681,6 +698,7 @@ rustrover-bin
 sayonara
 sayonara-git
 sbt-deb
+scangearmp2-deb
 schildichat-deb
 scrcpy
 sed
@@ -770,6 +788,7 @@ typescript
 typora-deb
 u-boot-mobian-deb
 ubxi-kde-desktop-git
+ubxi-lomiri-desktop
 ufetch-debian
 ufetch-ubuntu
 ugee-tablet-driver-deb
@@ -834,6 +853,7 @@ windscribe-beta-gui-deb
 wine-staging
 wine-staging-git
 winetricks-git
+wlrobs
 wsysmon-bin
 xapps-common-deb
 xcb-util-errors
@@ -847,6 +867,7 @@ xfce4-dynamic-workspaces-rs-bin
 xfce4-hotcorner-plugin-git
 xfce4-settings-pine-git
 xgifwallpaper-git
+xivlauncher-bin
 xmind-vana-deb
 xonotic
 xpadneo-dkms

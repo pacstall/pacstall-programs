@@ -1,5 +1,5 @@
 pkgname="exiftool"
-pkgver="13.33"
+pkgver="13.43"
 pkgdesc="Platform-independent Perl library for reading and writing EXIF data"
 maintainer=("Ishaque <muhammadishaque812@gmail.com>")
 url='https://exiftool.org'
@@ -8,7 +8,7 @@ license=("GPL-2.0-or-later")
 depends=('perl')
 repology=("project: ${pkgname}")
 source=("https://exiftool.org/Image-ExifTool-${pkgver}.tar.gz")
-sha256sums=('0cc6ecb10d529969a7e7766f5160ad591efa9bba7513b9185c8a1e6c54421fed')
+sha256sums=('1beef514c895705b3e3eafea3602db6b4830697f37b997b6ae9795cdfa2608d1')
 
 build() {
   cd "Image-ExifTool-${pkgver}"
