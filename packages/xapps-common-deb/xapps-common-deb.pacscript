@@ -6,4 +6,4 @@ repology=("project: xapps")
 source=("http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_${pkgver}+virginia_all.deb")
 sha256sums=("5423e5bf2309a687e651f9f0c90e8f107e58c6512614787147e19e7e96474f1a")
 pkgdesc="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")

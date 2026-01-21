@@ -6,5 +6,5 @@ pkgver="5.3.9"
 source=("https://www.bitwig.com/dl/Bitwig%20Studio/${pkgver}/installer_linux/${gives}-${pkgver}.deb")
 pkgdesc="Digital audio workstation for music production, remixing and live performance"
 sha256sums=("14d0090ba3ce509a72758cb860aac8ea94f379db1ad377724f2d8b193c5a11be")
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 repology=("project: bitwig-studio")

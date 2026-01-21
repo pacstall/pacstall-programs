@@ -7,5 +7,5 @@ source=("https://github.com/royshil/obs-backgroundremoval/releases/download/${pk
 pkgdesc="OBS plugin to replace the background in portrait images and video"
 sha256sums=("3db40f02f278dd567b553bc451d2e4127024c0de8fca4423cbb892e9b329f551")
 arch=('amd64')
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 incompatible=("debian:bullseye")

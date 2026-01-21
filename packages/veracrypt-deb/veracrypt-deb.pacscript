@@ -12,4 +12,4 @@ sha256sums=("7c9844771203a6e96f7e4b86b245b85f0d1e45ade70f3f81b1d1b178fc81ca87")
 compatible=("*:jammy" "*:lunar" "*:mantic" "*:noble" "*:oracular" "*:devel" "*:bullseye" "*:bookworm" "*:trixie" "*:sid")
 pkgdesc="VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux"
 arch=('amd64')
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
