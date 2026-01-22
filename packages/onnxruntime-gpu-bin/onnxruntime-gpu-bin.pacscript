@@ -6,7 +6,7 @@ pkgver="1.22.0"
 source=("@${pkgname}~${pkgver}::https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-gpu-${pkgver}.tgz")
 pkgdesc="Cross-platform inference and training machine-learning accelerator with gpu support"
 sha256sums=("2a19dbfa403672ec27378c3d40a68f793ac7a6327712cd0e8240a86be2b10c55")
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 replaces=("${gives}-1-7-0-bin" "${gives}" "${gives}-bin")
 
 package() {

@@ -7,7 +7,7 @@ breaks=("${gives}" "${gives}-bin" "${gives}-deb" "${gives}-app" "${gives}-git")
 pkgdesc="A lightweight and simple fetch tool"
 sha256sums=("ec85100a912c0bdd06a82a9647d19a5c6d1d51c3a262d60b9ac8f17570fbfb39")
 repology=("project: ${gives}")
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 
 package() {
   cd "${pkgname}~${pkgver}"

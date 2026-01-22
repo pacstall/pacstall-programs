@@ -7,7 +7,7 @@ breaks=("${gives}")
 replaces=("${gives}")
 arch=('amd64')
 pkgdesc="OBS plugin to replace the background in portrait images and video"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 incompatible=('*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
 
 build() {

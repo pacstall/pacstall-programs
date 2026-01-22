@@ -8,7 +8,7 @@ repology=("project: webapp-manager")
 sha256sums=("2d098765cc1d9124cceb4a32b06f38bd96a4e003d4a5bd8c83d850f34c877c73")
 incompatible=("*:jammy" "*:bullseye")
 source=("@${pkgname}~${pkgver}::https://github.com/linuxmint/webapp-manager/archive/refs/tags/${pkgver}.tar.gz")
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 
 prepare() {
   cd "${pkgname}~${pkgver}"

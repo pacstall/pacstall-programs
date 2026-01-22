@@ -6,4 +6,4 @@ source=("https://download1.rstudio.org/electron/jammy/amd64/rstudio-${pkgver:0:9
 pkgdesc="RStudio is an integrated development environment (IDE) for R"
 sha256sums=("a85734b70843d6157a423829ffbcff9eadc739403ab1c7425c17236f733f95d8")
 arch=('amd64')
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")

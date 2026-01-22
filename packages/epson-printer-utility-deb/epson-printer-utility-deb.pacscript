@@ -10,5 +10,5 @@ sha256sums=(
   "f0e1b61ef6beec5180f6cf31ffbb87f4831b81181ecface5e73d57037d914492"
 )
 arch=('amd64')
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 repology=("project: ${gives}")

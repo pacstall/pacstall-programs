@@ -17,7 +17,7 @@ pkgbase = obs-backgroundremoval-git
 	incompatible = *:bionic
 	incompatible = *:buster
 	incompatible = *:bullseye
-	maintainer = Zahrun <Zahrun@github.com>
+	maintainer = Zahrun <zahrunAtmurenaDotio>
 	source = https://github.com/royshil/obs-backgroundremoval.git
 
 pkgname = obs-backgroundremoval-git

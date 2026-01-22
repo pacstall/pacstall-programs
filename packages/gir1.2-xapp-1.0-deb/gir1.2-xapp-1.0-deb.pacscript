@@ -7,4 +7,4 @@ source=("http://packages.linuxmint.com/pool/backport/x/xapp/gir1.2-xapp-1.0_${pk
 sha256sums=("c72dcf0346b3b4b9ee44670d629a03564bab60bf21cade48ec3f59ac396fd35b")
 arch=('amd64')
 pkgdesc="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")

@@ -7,4 +7,4 @@ pkgver="4.9"
 sha256sums=("3a55c81976ae0d25466491bad6eb162250f7dea58eb2ce606796049f7f516ebd")
 source=("http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_${pkgver}_all.deb")
 pkgdesc="An IPTV streaming application with support for live TV, movies and series"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")

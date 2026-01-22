@@ -7,7 +7,7 @@ pkgver="1.22.0"
 source=("@${pkgname}~${pkgver}::https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-${pkgver}.tgz")
 pkgdesc="Cross-platform inference and training machine-learning accelerator"
 sha256sums=("8344d55f93d5bc5021ce342db50f62079daf39aaafb5d311a451846228be49b3")
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 
 package() {
   cd "${pkgname}~${pkgver}"
