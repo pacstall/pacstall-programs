@@ -11989,7 +11989,7 @@ pkgname = protonmail-bridge-deb
 ---
 pkgbase = protonplus
 	gives = protonplus
-	pkgver = 0.5.13
+	pkgver = 0.5.15
 	pkgdesc = A modern compatibility tools manager
 	url = https://github.com/Vysp3r/ProtonPlus
 	arch = x86_64
@@ -12013,8 +12013,8 @@ pkgbase = protonplus
 	incompatible = ubuntu:jammy
 	license = GPL-3.0-or-later
 	maintainer = Vysp3r <dev@vysp3r.com>
-	source = protonplus-0.5.13.tar.gz::https://github.com/Vysp3r/ProtonPlus/archive/refs/tags/v0.5.13.tar.gz
-	sha256sums = 6ff702f06a655696c5e5aecc782a1dd7c7ec248af4db394b1077564cb92a1691
+	source = protonplus-0.5.15.tar.gz::https://github.com/Vysp3r/ProtonPlus/archive/refs/tags/v0.5.15.tar.gz
+	sha256sums = e09bd8cdfe3d622a15b142b93b317af055858c50ddd058a5a3f009208f985edd
 
 pkgname = protonplus
 ---
