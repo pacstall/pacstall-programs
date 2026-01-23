@@ -12,8 +12,14 @@ maintainer=("Zahrun <zahrunAtmurenaDotio>")
 package() {
   cd "${pkgname}~${pkgver}"
   install -Dm755 "lib/lib${gives}.so.${pkgver}" -t "${pkgdir}/usr/local/lib"
-  install -Dm644 include/* -t "${pkgdir}/usr/local/include"
+  install -Dm755 "lib/lib${gives}_*.so" -t "${pkgdir}/usr/local/lib"
+  cp -r lib/cmake lib/pkgconfig "${pkgdir}/usr/local/lib/"
+  sed -i s^/lib64^/lib^g \
+    "${pkgdir}/usr/local/lib/cmake/${gives}/${gives}Targets-release.cmake" \
+    "${pkgdir}/usr/local/lib/pkgconfig/lib${gives}.pc"
+  mkdir -p "${pkgdir}/usr/local/include/${gives}"
+  cp -r include/* "${pkgdir}/usr/local/include/${gives}/"
   install -Dm644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}"
-  mkdir -p "${pkgdir}/usr/local/lib"
   ln -sf "/usr/local/lib/lib${gives}.so.${pkgver}" "${pkgdir}/usr/local/lib/lib${gives}.so"
+  ln -sf "/usr/local/lib/lib${gives}.so.${pkgver}" "${pkgdir}/usr/local/lib/lib${gives}.so.1"
 }
