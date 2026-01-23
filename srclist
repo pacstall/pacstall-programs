@@ -3990,14 +3990,14 @@ pkgname = ghostty-app
 ---
 pkgbase = gir1.2-xapp-1.0-deb
 	gives = gir1.2-xapp-1.0
-	pkgver = 2.8.5
+	pkgver = 3.2.2
 	pkgdesc = Components which are common to multiple desktop environments and required to implement cross-DE solutions
 	arch = amd64
 	pacdeps = libxapp1-deb
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: xapps
-	source = http://packages.linuxmint.com/pool/backport/x/xapp/gir1.2-xapp-1.0_2.8.5+wilma_amd64.deb
-	sha256sums = c72dcf0346b3b4b9ee44670d629a03564bab60bf21cade48ec3f59ac396fd35b
+	source = http://packages.linuxmint.com/pool/backport/x/xapp/gir1.2-xapp-1.0_3.2.2+zena_amd64.deb
+	sha256sums = 65d2411de6bf98d86d297bcccc640a2b04198d8c4f9875551c9bf02c41b2ca5c
 
 pkgname = gir1.2-xapp-1.0-deb
 ---
