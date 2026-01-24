@@ -11,7 +11,7 @@ pkgdesc="OBS plugin to replace the background in portrait images and video"
 sha256sums=("787f427e306abf9561f1a6686cd0e0a9228af1b429a991676d11235fd0ad98d1")
 maintainer=("Zahrun <zahrunAtmurenaDotio>")
 
-incompatible=('*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
+incompatible=('*:noble' '*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
 
 build() {
   cd "${pkgname}~${pkgver}"

@@ -10470,6 +10470,7 @@ pkgbase = obs-backgroundremoval
 	pacdeps = onnxruntime-bin
 	breaks = obs-backgroundremoval-git
 	replaces = obs-backgroundremoval
+	incompatible = *:noble
 	incompatible = *:jammy
 	incompatible = *:focal
 	incompatible = *:bionic
