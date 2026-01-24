@@ -1,10 +1,10 @@
 pkgname="libxapp1-deb"
 gives="libxapp1"
-pkgver="2.8.2"
+pkgver="3.2.2"
 repology=("project: xapps")
 pacdeps=("xapps-common-deb")
-source=("http://packages.linuxmint.com/pool/backport/x/xapp/libxapp1_${pkgver}+virginia_amd64.deb")
-sha256sums=("7a329280e1c551e1edda99ee1a90db372a550a61f66b4853b3503b0dba2ef1fc")
+source=("http://packages.linuxmint.com/pool/backport/x/xapp/libxapp1_${pkgver}+zena_amd64.deb")
+sha256sums=("1e423f8c59839fb9b8c43a6f73bcc40c4675e58c29291a718c2608a60bebcfe6")
 arch=('amd64')
 pkgdesc="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
 maintainer=("Zahrun <zahrunAtmurenaDotio>")
