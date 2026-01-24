@@ -16604,7 +16604,7 @@ pkgbase = webapp-manager-deb
 pkgname = webapp-manager-deb
 ---
 pkgbase = webapp-manager
-	pkgver = 1.4.0
+	pkgver = 1.4.6
 	pkgdesc = Run websites as if they were apps
 	arch = all
 	depends = gir1.2-xapp-1.0
@@ -16622,8 +16622,8 @@ pkgbase = webapp-manager
 	incompatible = *:bullseye
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: webapp-manager
-	source = @webapp-manager~1.4.0::https://github.com/linuxmint/webapp-manager/archive/refs/tags/1.4.0.tar.gz
-	sha256sums = 2d098765cc1d9124cceb4a32b06f38bd96a4e003d4a5bd8c83d850f34c877c73
+	source = @webapp-manager~1.4.6::https://github.com/linuxmint/webapp-manager/archive/refs/tags/1.4.6.tar.gz
+	sha256sums = 14834bca23a8b961c84c478cf9068f92cc6a5bb3a02fa2f2db9b37d348536931
 
 pkgname = webapp-manager
 ---
