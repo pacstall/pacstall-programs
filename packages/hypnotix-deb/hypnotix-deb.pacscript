@@ -1,7 +1,7 @@
 pkgname="hypnotix-deb"
 gives="hypnotix"
 repology=("project: ${gives}")
-pacdeps=("gir1.2-xapp-1.0-deb" "circle-flags-svg-deb" "python3-imdbpy-deb")
+pacdeps=("gir1.2-xapp-1.0-deb" "circle-flags-svg-deb")
 arch=("all")
 pkgver="5.6"
 sha256sums=("184fb7590cf256f8f4a594750b94ffbc207d762ebaf7896423880cdeeb87467f")

@@ -5501,7 +5501,6 @@ pkgbase = hypnotix-deb
 	arch = all
 	pacdeps = gir1.2-xapp-1.0-deb
 	pacdeps = circle-flags-svg-deb
-	pacdeps = python3-imdbpy-deb
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: hypnotix
 	source = http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_5.6_all.deb
