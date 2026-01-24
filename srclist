@@ -11421,7 +11421,7 @@ pkgname = pdfmm-git
 ---
 pkgbase = pfetch-bin
 	gives = pfetch
-	pkgver = 0.6.0
+	pkgver = 1.10.0
 	pkgdesc = A lightweight and simple fetch tool
 	arch = amd64
 	breaks = pfetch
@@ -11431,8 +11431,8 @@ pkgbase = pfetch-bin
 	breaks = pfetch-git
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: pfetch
-	source = @pfetch-bin~0.6.0::https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.zip
-	sha256sums = ec85100a912c0bdd06a82a9647d19a5c6d1d51c3a262d60b9ac8f17570fbfb39
+	source = @pfetch-bin~1.10.0::https://github.com/Un1q32/pfetch/archive/refs/tags/1.10.0.zip
+	sha256sums = 38548f03ec48415b41026157486ac577dcc533684ede9054898972e3a17d752b
 
 pkgname = pfetch-bin
 ---
