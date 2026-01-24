@@ -11414,6 +11414,7 @@ pkgbase = pdfmm-git
 	depends = zenity
 	depends = ghostscript
 	breaks = pdfmm
+	maintainer = Zahrun <zahrunAtmurenaDotio>
 	source = https://github.com/jpfleury/pdfmm.git
 	sha256sums = 3a1d5046490cbeb1f3a3eae34d66ea0e714a19a01f15dc43cb1d31fbb58d7a51
 
