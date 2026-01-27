@@ -5,7 +5,7 @@ source=("@${pkgname}~${pkgver}::https://github.com/Zahrun/libspa-0.2-bluetooth/r
 pkgdesc="Adds AAC bluetooth codec to pipewire"
 sha256sums=("9a235d1b5d8bb52302f9c8159da828ca7c8de15614233967d484d92cba4e56c2")
 arch=('amd64')
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 depends=("libspa-0.2-bluetooth")
 
 package() {

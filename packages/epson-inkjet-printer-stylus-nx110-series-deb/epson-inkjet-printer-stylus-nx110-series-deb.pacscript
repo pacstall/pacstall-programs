@@ -6,6 +6,6 @@ depends=("lsb")
 pkgdesc="Driver for Epson Stylus NX110, Epson Stylus SX110, Epson Stylus TX110, Epson Stylus TX111, Epson Stylus TX112 , Epson Stylus TX115, Epson Stylus TX117"
 sha256sums=("4bc20572b7f4bf9d4a8fa344e0bc161f38fa2caf7d636973e68945e433e24afb")
 arch=('amd64')
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 repology=("project: ${gives}")
 incompatible=("ubuntu:lunar" "ubuntu:mantic" "debian:*")

@@ -1,14 +1,14 @@
 pkgbase = hypnotix-deb
 	gives = hypnotix
-	pkgver = 4.9
+	pkgver = 5.6
 	pkgdesc = An IPTV streaming application with support for live TV, movies and series
 	arch = all
 	pacdeps = gir1.2-xapp-1.0-deb
 	pacdeps = circle-flags-svg-deb
 	pacdeps = python3-imdbpy-deb
-	maintainer = Zahrun <Zahrun@github.com>
+	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: hypnotix
-	source = http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_4.9_all.deb
-	sha256sums = 3a55c81976ae0d25466491bad6eb162250f7dea58eb2ce606796049f7f516ebd
+	source = http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_5.6_all.deb
+	sha256sums = 184fb7590cf256f8f4a594750b94ffbc207d762ebaf7896423880cdeeb87467f
 
 pkgname = hypnotix-deb

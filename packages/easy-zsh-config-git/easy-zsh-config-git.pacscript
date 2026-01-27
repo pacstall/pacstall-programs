@@ -8,7 +8,7 @@ depends=("zsh" "zsh-syntax-highlighting" "zsh-autosuggestions")
 breaks=("${gives}")
 replaces=("${gives}")
 pkgdesc="A simple but fast and out of the box configuration of zsh powered by oh-my-posh and zsh plugins"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 
 prepare() {
   cd "easy-zsh-config"

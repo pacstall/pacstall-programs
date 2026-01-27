@@ -30,6 +30,7 @@ audiorelay-bin
 audiorelay-deb
 awesome-git
 aws-cli-v2-bin
+awww-git
 balena-etcher-deb
 bat
 bat-deb
@@ -172,6 +173,8 @@ firefox-deb
 firefox-developer-edition-bin
 firefox-nightly-bin
 firefox-nightly-deb
+firmware-brcm80211-deb
+firmware-realtek-deb
 fishui-git
 floorp-bin
 flyctl-bin
@@ -599,6 +602,7 @@ pipes.sh-bin
 pipewire
 planner-git
 plasma-compact-shutdown-git
+plasma-kara
 plexmediaserver-deb
 polybar
 pomatez-deb
@@ -852,6 +856,7 @@ wine-staging-git
 winetricks-git
 wlrobs
 wsysmon-bin
+xapp-symbolic-icons-deb
 xapps-common-deb
 xcb-util-errors
 xclicker-deb

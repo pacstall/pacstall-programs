@@ -7,4 +7,4 @@ source=("http://packages.linuxmint.com/pool/backport/x/xapp/libxapp1_${pkgver}+v
 sha256sums=("7a329280e1c551e1edda99ee1a90db372a550a61f66b4853b3503b0dba2ef1fc")
 arch=('amd64')
 pkgdesc="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")

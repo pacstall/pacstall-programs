@@ -8,7 +8,7 @@ replaces=("${pkgname}")
 arch=('amd64')
 pkgdesc="OBS plugin to replace the background in portrait images and video"
 sha256sums=("50687434e49c005a881977ea46877c00da974a10810db2ee23b0b3fbeed7d6aa")
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 
 incompatible=('*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
 

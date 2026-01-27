@@ -7,5 +7,5 @@ sha256sums_amd64=("4418107cef872ee06ffb777406869238263e1a7f0b21e77b08dd705b22c93
 sha256sums_arm64=("82bc8e7fec2c170384ce42c9c1ba6012b6d72380ccad4cc5f03e57db8e91c911")
 pkgdesc="A Community-led Hyper-Hackable Text Editor"
 arch=('amd64' 'arm64')
-maintainer=("Zahrun <Zahrun@github.com>" "AJStrong <ajstrongdev@proton.me>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>" "AJStrong <ajstrongdev@proton.me>")
 repology=("project: pulsar-edit")
