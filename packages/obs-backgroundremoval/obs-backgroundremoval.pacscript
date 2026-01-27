@@ -1,20 +1,21 @@
 pkgname="obs-backgroundremoval"
 repology=("project: obs-backgroundremoval")
-pkgver="1.1.12"
+pkgver="1.3.5"
 source=("@${pkgname}~${pkgver}::https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/${pkgver}.tar.gz")
-makedepends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libgl1-mesa-dev" "ninja-build" "cmake")
+makedepends=("libobs-dev" "libcurl4-openssl-dev" "libssl-dev" "qt6-base-dev" "libgl1-mesa-dev" "ninja-build" "cmake" "libopencv-dev" "pkg-config")
+pacdeps=("onnxruntime-bin")
 breaks=("${pkgname}-git")
 replaces=("${pkgname}")
 arch=('amd64')
 pkgdesc="OBS plugin to replace the background in portrait images and video"
-sha256sums=("50687434e49c005a881977ea46877c00da974a10810db2ee23b0b3fbeed7d6aa")
+sha256sums=("787f427e306abf9561f1a6686cd0e0a9228af1b429a991676d11235fd0ad98d1")
 maintainer=("Zahrun <zahrunAtmurenaDotio>")
 
-incompatible=('*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
+incompatible=('*:noble' '*:jammy' '*:focal' '*:bionic' '*:buster' '*:bullseye')
 
 build() {
   cd "${pkgname}~${pkgver}"
-  cmake --preset linux-x86_64 -DCMAKE_INSTALL_PREFIX=/usr
+  cmake --preset ubuntu-x86_64 -DVCPKG_TARGET_TRIPLET="" -DUSE_PKGCONFIG=ON -DUSE_SYSTEM_ONNXRUNTIME=ON -DCMAKE_INSTALL_PREFIX=/usr
   cmake --build build_x86_64 --parallel
 }
 
