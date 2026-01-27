@@ -17076,13 +17076,14 @@ pkgname = xapp-symbolic-icons-deb
 ---
 pkgbase = xapps-common-deb
 	gives = xapps-common
-	pkgver = 2.8.2
+	pkgver = 3.2.2
 	pkgdesc = Components which are common to multiple desktop environments and required to implement cross-DE solutions
 	arch = all
+	pacdeps = xapp-symbolic-icons-deb
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: xapps
-	source = http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_2.8.2+virginia_all.deb
-	sha256sums = 5423e5bf2309a687e651f9f0c90e8f107e58c6512614787147e19e7e96474f1a
+	source = http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_3.2.2+zena_all.deb
+	sha256sums = 570aeb2c8bf5f8083dab1d517962c7ff6b07536c9f966b5ccb98ac30fe438c6c
 
 pkgname = xapps-common-deb
 ---
