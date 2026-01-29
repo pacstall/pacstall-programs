@@ -1,0 +1,15 @@
+pkgbase = cosmic-ext-niri
+	pkgver = 0.1.0
+	pkgrel = 1
+	pkgdesc = COSMIC-based alternative session with the niri compositor
+	url = https://github.com/Drakulix/cosmic-ext-extra-sessions
+	arch = amd64
+	arch = arm64
+	makedepends = cargo
+	pacdeps = cosmic-ext-alternative-startup-git
+	pacdeps = niri-git
+	nosubmodules = cosmic-ext-extra-sessions
+	license = GPL-3.0-or-later
+	source = https://github.com/Drakulix/cosmic-ext-extra-sessions.git
+
+pkgname = cosmic-ext-niri
