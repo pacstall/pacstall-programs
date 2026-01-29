@@ -10049,7 +10049,7 @@ pkgname = ttf-zed-mono-nerd
 	license = OFL-1.1-no-RFN
 ---
 pkgbase = niri-git
-	pkgver = 25.05.1
+	pkgver = 25.11
 	pkgrel = 1
 	pkgdesc = Scrollable-tiling Wayland compositor
 	url = https://github.com/YaLTeR/niri

@@ -1,5 +1,5 @@
 pkgname=niri-git
-pkgver="25.05.1"
+pkgver="25.11"
 pkgrel=1
 url="https://github.com/YaLTeR/niri"
 pkgdesc="Scrollable-tiling Wayland compositor"
@@ -28,10 +28,15 @@ external_connection=true
 build() {
   cd "niri"
   cargo build --locked --release
+  for shell in bash fish zsh; do
+    cargo run --locked --release --bin niri -- \
+      completions "${shell}" > "${shell}-completions"
+  done
 }
 
 package() {
   cd "niri"
+
   install -Dm755 target/release/niri -t "${pkgdir}/usr/bin/"
   install -Dm755 resources/niri-session -t "${pkgdir}/usr/bin/"
   install -Dm644 resources/niri.desktop -t "${pkgdir}/usr/share/wayland-sessions/"
@@ -39,4 +44,9 @@ package() {
   install -Dm644 resources/niri.service -t "${pkgdir}/usr/lib/systemd/user/"
   install -Dm644 resources/niri-shutdown.target -t "${pkgdir}/usr/lib/systemd/user/"
   install -Dm644 resources/default-config.kdl -t "${pkgdir}/usr/share/doc/niri"
+
+  # shell auto-completions
+  install -vDm 644 bash-completions "${pkgdir}"/usr/share/bash-completion/completions/niri
+  install -vDm 644 fish-completions "${pkgdir}"/usr/share/fish/vendor_completions.d/niri.fish
+  install -vDm 644 zsh-completions "${pkgdir}"/usr/share/zsh/site-functions/_niri
 }
