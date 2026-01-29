@@ -8,7 +8,7 @@ license=(GPL-3.0-or-later)
 provides=("niri")
 conflicts=("niri" "niri-bin")
 
-makedepends=("gcc" "cargo" "clang" "rustc" "git-lfs" "libudev-dev" "libgbm-dev" "libxkbcommon-dev" "libegl1-mesa-dev" "libwayland-dev" "libinput-dev" "libdbus-1-dev" "libsystemd-dev" "libseat-dev" "libpipewire-0.3-dev" "libpango1.0-dev" "libdisplay-info-dev")
+makedepends=("gcc" "rustup | cargo >= 1.85" "clang" "git-lfs" "libudev-dev" "libgbm-dev" "libxkbcommon-dev" "libegl1-mesa-dev" "libwayland-dev" "libinput-dev" "libdbus-1-dev" "libsystemd-dev" "libseat-dev" "libpipewire-0.3-dev" "libpango1.0-dev" "libdisplay-info-dev")
 depends=("libudev1" "libgbm1" "libxkbcommon0" "libegl1" "libinput10" "libdbus-1-3" "libsystemd0" "libseat1" "libpipewire-0.3-0" "libpango1.0-dev" "libdisplay-info3 | libdisplay-info2 | libdisplay-info1")
 optdepends=("fuzzel: application launcher similar to rofi drun mode"
   "waybar: highly customizable Wayland bar"
@@ -27,6 +27,7 @@ external_connection=true
 
 build() {
   cd "niri"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build --locked --release
   for shell in bash fish zsh; do
     cargo run --locked --release --bin niri -- \
