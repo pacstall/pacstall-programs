@@ -17,9 +17,8 @@ pkgbase = niri-git
 	depends = libpango1.0-dev
 	depends = libdisplay-info3 | libdisplay-info2 | libdisplay-info1
 	makedepends = gcc
-	makedepends = cargo
+	makedepends = cargo>=1.85 | rustup
 	makedepends = clang
-	makedepends = rustc
 	makedepends = git-lfs
 	makedepends = libudev-dev
 	makedepends = libgbm-dev
