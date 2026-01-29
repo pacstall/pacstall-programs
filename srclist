@@ -10096,6 +10096,7 @@ pkgbase = niri-git
 	conflicts = niri-bin
 	provides = niri
 	license = GPL-3.0-or-later
+	repology = project: niri
 	source = https://github.com/YaLTeR/niri.git
 
 pkgname = niri-git

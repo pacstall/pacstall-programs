@@ -24,6 +24,7 @@ optdepends=("fuzzel: application launcher similar to rofi drun mode"
 arch=("amd64" "arm64")
 source=("https://github.com/YaLTeR/niri.git")
 external_connection=true
+repology=("project: niri")
 
 build() {
   cd "niri"
