@@ -1,7 +1,6 @@
-pkgname=cosmic-ext-alternative-startup-git
+pkgname="cosmic-ext-alternative-startup-git"
 pkgver="0.1.0"
-pkgrel=1
-url="https://github.com/Drakulix/cosmic-ext-alternative-startup"
+url='https://github.com/Drakulix/cosmic-ext-alternative-startup'
 pkgdesc="Alternative entry point for cosmic-session's compositor ipc interface"
 license=(GPL-3.0-or-later)
 provides=("cosmic-ext-alternative-startup")
