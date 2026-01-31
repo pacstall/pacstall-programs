@@ -10024,14 +10024,23 @@ pkgbase = niri
 	url = https://github.com/YaLTeR/niri
 	arch = amd64
 	arch = arm64
-	depends = libdisplay-info3
+	depends = libudev1
+	depends = libgbm1
+	depends = libxkbcommon0
+	depends = libegl1
+	depends = libinput10
+	depends = libdbus-1-3
+	depends = libsystemd0
 	depends = libseat1
+	depends = libpipewire-0.3-0
+	depends = libpango1.0-dev
+	depends = libdisplay-info3 | libdisplay-info2 | libdisplay-info1
 	makedepends = libudev-dev
 	makedepends = libwayland-dev
 	makedepends = libseat-dev
 	makedepends = libglib2.0-dev
 	makedepends = libclang-dev
-	makedepends = cargo>=1.80.1
+	makedepends = cargo>=1.85 | rustup
 	makedepends = libpipewire-0.3-dev
 	makedepends = libcairo2-dev
 	makedepends = libpango1.0-dev
@@ -10049,8 +10058,12 @@ pkgbase = niri
 	optdepends = xdg-desktop-portal-gnome: screencasting support
 	optdepends = gnome-keyring: implements the secret portal, for certain apps to work
 	optdepends = policykit-1-gnome: when apps need to ask for root permissions
+	conflicts = niri-git
+	conflicts = niri-bin
+	provides = niri
 	license = GPL-3.0-or-later
 	maintainer = Alxhr0 <alxhr0@proton.me>
+	repology = project: niri
 	source = https://github.com/YaLTeR/niri.git#tag=v25.11
 
 pkgname = niri
