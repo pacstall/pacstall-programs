@@ -5,14 +5,11 @@ pkgdesc="Scrollable-tiling Wayland compositor"
 url='https://github.com/YaLTeR/niri'
 license=('GPL-3.0-or-later')
 maintainer=("Alxhr0 <alxhr0@proton.me>")
-
 provides=("niri")
 conflicts=("niri-git" "niri-bin")
-
 repology=("project: niri")
 source=("${url}.git#tag=v${pkgver}")
 external_connection=true
-
 makedepends=("libudev-dev" "libwayland-dev" "libseat-dev" "libglib2.0-dev" "libclang-dev" "cargo>=1.85 | rustup" "libpipewire-0.3-dev" "libcairo2-dev" "libpango1.0-dev" "libdisplay-info-dev" "libinput-dev" "libgbm-dev" "libxkbcommon-dev")
 depends=("libudev1" "libgbm1" "libxkbcommon0" "libegl1" "libinput10" "libdbus-1-3" "libsystemd0" "libseat1" "libpipewire-0.3-0" "libpango1.0-dev" "libdisplay-info3 | libdisplay-info2 | libdisplay-info1")
 optdepends=("fuzzel: application launcher similar to rofi drun mode"
