@@ -1,5 +1,5 @@
 pkgbase = linux-kernel-stable
-	pkgver = 6.18.1
+	pkgver = 6.18.7
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
