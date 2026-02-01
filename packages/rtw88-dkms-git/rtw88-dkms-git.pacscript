@@ -16,19 +16,21 @@ makedepends=(
 optdepends=("usb-modeswitch: A tool that can switch the adapter from CD-ROM mode to Wi-Fi mode")
 source=("https://github.com/lwfinger/${gives}.git")
 maintainer=("aKqir24 <aKqir24@github.com>")
-external_connection=true
 
 prepare() {
   cd "${gives}"
   rm -f convert_firmware.*
-  sed -e "/POST_INSTALL/d" -e "/PACKAGE_VERSION/d" -i dkms.conf
-  printf "PACKAGE_VERSION=\"@PKGVER@\"\n" >> dkms.conf
-
+	sed -e "/POST_INSTALL/d" -e "/PACKAGE_VERSION/d" -i dkms.conf
+	printf "PACKAGE_VERSION=\"@PKGVER@\"\n" >> dkms.conf
 }
 
 package() {
   cd "${gives}"
-  install -Dm 644 -t "${pkgdir}"/usr/src/${gives}-r${pkgver} *.c *.h Makefile dkms.conf
-  install -Dm 644 -t "${pkgdir}"/etc/modprobe.d rtw88.conf
-  sed -e "s/@PKGVER@/${pkgver}/" -i "${pkgdir}"/usr/src/${gives}-r${pkgver}/dkms.conf
+  install -Dm644 -t "${pkgdir}/usr/src/${gives}-${pkgver}" -- *.c *.h Makefile dkms.conf
+  install -Dm644 rtw88.conf "${pkgdir}/etc/modprobe.d/rtw88.conf"
+  sed -e "s/@PKGVER@/${pkgver}/" -i "${pkgdir}/usr/src/${gives}-${pkgver}/dkms.conf"
+}
+
+post_install() {
+  fancy_message info "Please do this after install:\n sudo dkms add -m rtw88 -v ${pkgver}\n sudo dkms build -m rtw88 -v ${pkgver}\n sudo dkms install -m rtw88 -v ${pkgver}"
 }
