@@ -20,8 +20,8 @@ maintainer=("aKqir24 <aKqir24@github.com>")
 prepare() {
   cd "${gives}"
   rm -f convert_firmware.*
-	sed -e "/POST_INSTALL/d" -e "/PACKAGE_VERSION/d" -i dkms.conf
-	printf "PACKAGE_VERSION=\"@PKGVER@\"\n" >> dkms.conf
+  sed -e "/POST_INSTALL/d" -e "/PACKAGE_VERSION/d" -i dkms.conf
+  printf "PACKAGE_VERSION=\"@PKGVER@\"\n" >> dkms.conf
 }
 
 package() {
