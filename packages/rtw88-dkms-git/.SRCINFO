@@ -7,6 +7,7 @@ pkgbase = rtw88-dkms-git
 	arch = arm64
 	depends = dkms
 	makedepends = git
+	makedepends = perl
 	makedepends = build-essential
 	makedepends = linux-headers-
 	optdepends = usb-modeswitch: A tool that can switch the adapter from CD-ROM mode to Wi-Fi mode
