@@ -10,6 +10,7 @@ depends=(
 )
 makedepends=(
   "git"
+  "perl"
   "build-essential"
   "linux-headers-${KVER}"
 )
@@ -20,8 +21,10 @@ maintainer=("aKqir24 <aKqir24@github.com>")
 prepare() {
   cd "${gives}"
   rm -f convert_firmware.*
-  sed -e "/POST_INSTALL/d" -e "/PACKAGE_VERSION/d" -i dkms.conf
-  printf "PACKAGE_VERSION=\"@PKGVER@\"\n" >> dkms.conf
+	sed -e "/POST_INSTALL/d" -e "/PACKAGE_VERSION/d" -i dkms.conf
+	printf "PACKAGE_VERSION=\"@PKGVER@\"\n" >> dkms.conf
+  perl -pi -e 's/\r$//' dkms.conf
+  sudo perl -pi -e 's/\r$//' /usr/src/rtw88-${pkgver}/dkms.conf 2>/dev/null || true
 }
 
 package() {
@@ -33,4 +36,8 @@ package() {
 
 post_install() {
   fancy_message info "Please do this after install:\n sudo dkms add -m rtw88 -v ${pkgver}\n sudo dkms build -m rtw88 -v ${pkgver}\n sudo dkms install -m rtw88 -v ${pkgver}"
+}
+
+post_remove() {
+  rm -rf "/usr/src/${gives}-${pkgver}"
 }
