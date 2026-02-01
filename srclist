@@ -2576,14 +2576,14 @@ pkgname = dotdrop
 ---
 pkgbase = drawio-desktop-deb
 	gives = draw.io
-	pkgver = 28.0.4
+	pkgver = 29.3.0
 	pkgdesc = Diagram drawing application built on web technology
 	arch = amd64
 	maintainer = JonBoyleCoding <programmerfalcon@gmail.com>
 	repology = project: drawio-desktop
 	repology = visiblename: drawio-desktop
-	source = https://github.com/jgraph/drawio-desktop/releases/download/v28.0.4/drawio-amd64-28.0.4.deb
-	sha256sums = fb10f723f0aacaba06faf6d3fae6a04cc86588d6704a72aad001e4f22f4f72b4
+	source = https://github.com/jgraph/drawio-desktop/releases/download/v29.3.0/drawio-amd64-29.3.0.deb
+	sha256sums = 06f3d776729b99c01f0520e5e461a99827cf9b1b9856cc34f6ff19561b7545d2
 
 pkgname = drawio-desktop-deb
 ---
@@ -5500,7 +5500,6 @@ pkgbase = hypnotix-deb
 	arch = all
 	pacdeps = gir1.2-xapp-1.0-deb
 	pacdeps = circle-flags-svg-deb
-	pacdeps = python3-imdbpy-deb
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: hypnotix
 	source = http://packages.linuxmint.com/pool/main/h/hypnotix/hypnotix_5.6_all.deb
@@ -7414,14 +7413,14 @@ pkgname = libx86emu
 ---
 pkgbase = libxapp1-deb
 	gives = libxapp1
-	pkgver = 2.8.2
+	pkgver = 3.2.2
 	pkgdesc = Components which are common to multiple desktop environments and required to implement cross-DE solutions
 	arch = amd64
 	pacdeps = xapps-common-deb
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: xapps
-	source = http://packages.linuxmint.com/pool/backport/x/xapp/libxapp1_2.8.2+virginia_amd64.deb
-	sha256sums = 7a329280e1c551e1edda99ee1a90db372a550a61f66b4853b3503b0dba2ef1fc
+	source = http://packages.linuxmint.com/pool/backport/x/xapp/libxapp1_3.2.2+zena_amd64.deb
+	sha256sums = 1e423f8c59839fb9b8c43a6f73bcc40c4675e58c29291a718c2608a60bebcfe6
 
 pkgname = libxapp1-deb
 ---
@@ -7529,8 +7528,8 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-6.18.0-061800rc3
-	pkgver = 6.18~rc3
+	gives = linux-headers-6.19.0-061900rc5
+	pkgver = 6.19~rc5
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7538,14 +7537,14 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18-rc3/amd64/linux-headers-6.18.0-061800rc3_6.18.0-061800rc3.202510262341_all.deb
-	sha256sums = 99573a68df9b6be1b84db788268694778f531e8c574de5931d689311e09ed065
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/amd64/linux-headers-6.19.0-061900rc5_6.19.0-061900rc5.202601120354_all.deb
+	sha256sums = 79664c1237552dab446f7a30dc1e7fac21750f0020cf0e5f338fe070e615301a
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-6.18.0-061800rc3-generic
-	pkgver = 6.18~rc3
+	gives = linux-headers-6.19.0-061900rc5-generic
+	pkgver = 6.19~rc5
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7555,10 +7554,10 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18-rc3/arm64/linux-headers-6.18.0-061800rc3-generic_6.18.0-061800rc3.202510262341_arm64.deb
-	sha256sums_arm64 = 3294ed178a9a7be1bc36828123b69d9cccebd63d2b0713bc411a7f98488da8b3
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18-rc3/amd64/linux-headers-6.18.0-061800rc3-generic_6.18.0-061800rc3.202510262341_amd64.deb
-	sha256sums_amd64 = a099b7568b0f640d7a1bf3d52ac452433490ef1097779d4c017cc8b4575e899e
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/arm64/linux-headers-6.19.0-061900rc5-generic_6.19.0-061900rc5.202601120354_arm64.deb
+	sha256sums_arm64 = 55afd086c7c53302a11c89cd33e63a1a7b8423282a9b9b72494365c67ce3b86e
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/amd64/linux-headers-6.19.0-061900rc5-generic_6.19.0-061900rc5.202601120354_amd64.deb
+	sha256sums_amd64 = d1224491789b171f9c60c484a13d035d6108fc3d30e836f28bdf2779a2512f7b
 
 pkgname = linux-headers-generic-deb
 ---
@@ -7581,8 +7580,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.18.1-061801-generic
-	pkgver = 6.18.1
+	gives = linux-headers-6.18.7-061807-generic
+	pkgver = 6.18.7
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7590,10 +7589,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.1/arm64/linux-headers-6.18.1-061801-generic_6.18.1-061801.202512121839_arm64.deb
-	sha256sums_arm64 = 2e6a21cd35ee48e8d4846a4271df4af603dbf0f8f03bc03c53d578a0c9fc1dae
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.1/amd64/linux-headers-6.18.1-061801-generic_6.18.1-061801.202512121839_amd64.deb
-	sha256sums_amd64 = 2df81e42cb38d6201989dd0a43778e8c343e6b96a7de054d93e8363c8e81f6cd
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/arm64/linux-headers-6.18.7-061807-generic_6.18.7-061807.202601231045_arm64.deb
+	sha256sums_arm64 = db8a413d9c20171e03bd89d033f761feb7d2d63fe3c8088413b7fd0e9baf7a65
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/amd64/linux-headers-6.18.7-061807-generic_6.18.7-061807.202601231045_amd64.deb
+	sha256sums_amd64 = 7d5849d859db8603e9fbcd3c9bc9d3d6bd62e9e86b87a42a553ed0526634d04c
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -7643,15 +7642,15 @@ pkgbase = linux-headers-rockchip-deb
 pkgname = linux-headers-rockchip-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.18.1-061801
-	pkgver = 6.18.1
+	gives = linux-headers-6.18.7-061807
+	pkgver = 6.18.7
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.1/amd64/linux-headers-6.18.1-061801_6.18.1-061801.202512121839_all.deb
-	sha256sums = e30643751637711179f0dd1b046119d0dc3f79307b7741a086fa9c554827196f
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/amd64/linux-headers-6.18.7-061807_6.18.7-061807.202601231045_all.deb
+	sha256sums = bac6b6c771197b82256f8a1abce0c169c9eededf2d919fbeeb24e0e3c843c04a
 
 pkgname = linux-headers-stable-deb
 ---
@@ -7727,8 +7726,8 @@ pkgbase = linux-image-sunxi-deb
 pkgname = linux-image-sunxi-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.18.0-061800rc3-generic
-	pkgver = 6.18~rc3
+	gives = linux-image-unsigned-6.19.0-061900rc5-generic
+	pkgver = 6.19~rc5
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -7739,10 +7738,10 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18-rc3/arm64/linux-image-unsigned-6.18.0-061800rc3-generic_6.18.0-061800rc3.202510262341_arm64.deb
-	sha256sums_arm64 = d71dce3b7fe84bbbc72e9d765736065c66a0249484a05ec40896784bdd4e45b7
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18-rc3/amd64/linux-image-unsigned-6.18.0-061800rc3-generic_6.18.0-061800rc3.202510262341_amd64.deb
-	sha256sums_amd64 = 2b3e7d97cb0f898453d51c193160244d7ecba6f630db01155b98a391f0ce234a
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/arm64/linux-image-unsigned-6.19.0-061900rc5-generic_6.19.0-061900rc5.202601120354_arm64.deb
+	sha256sums_arm64 = 28043a56e8fb1bcf581c8a85ad9d77dfc734c5bccc3b706a21fdf5fced723945
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/amd64/linux-image-unsigned-6.19.0-061900rc5-generic_6.19.0-061900rc5.202601120354_amd64.deb
+	sha256sums_amd64 = 911987ad9a44380a3e0547aabddf39c94ab8018da19833d29ec2f41252529b18
 
 pkgname = linux-image-unsigned-deb
 ---
@@ -7766,8 +7765,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.18.1-061801-generic
-	pkgver = 6.18.1
+	gives = linux-image-unsigned-6.18.7-061807-generic
+	pkgver = 6.18.7
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -7776,10 +7775,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.1/arm64/linux-image-unsigned-6.18.1-061801-generic_6.18.1-061801.202512121839_arm64.deb
-	sha256sums_arm64 = d22e1e7c1f904d6b17c084313353ca9569d2f45fb5a0859c4bc2548016bd3425
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.1/amd64/linux-image-unsigned-6.18.1-061801-generic_6.18.1-061801.202512121839_amd64.deb
-	sha256sums_amd64 = 5f7692037aee0b75468e5d68f0c63f872403284570871b007db52cac46093876
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/arm64/linux-image-unsigned-6.18.7-061807-generic_6.18.7-061807.202601231045_arm64.deb
+	sha256sums_arm64 = 187d2c37785efa11e6253045656c7e19342302a0990ba2ea296de96d2107f0b7
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/amd64/linux-image-unsigned-6.18.7-061807-generic_6.18.7-061807.202601231045_amd64.deb
+	sha256sums_amd64 = a2ca2b476c470fd7a187920eb14196d2eb22f2d1b26b2b541bfed7c5fb725f73
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -7801,7 +7800,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.18.1
+	pkgver = 6.18.7
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -7817,7 +7816,7 @@ pkgbase = linux-kernel-stable
 pkgname = linux-kernel-stable
 ---
 pkgbase = linux-kernel
-	pkgver = 6.18~rc3
+	pkgver = 6.19~rc5
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -7848,16 +7847,16 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.18.0-061800rc3-generic
-	pkgver = 6.18~rc3
+	gives = linux-modules-6.19.0-061900rc5-generic
+	pkgver = 6.19~rc5
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18-rc3/arm64/linux-modules-6.18.0-061800rc3-generic_6.18.0-061800rc3.202510262341_arm64.deb
-	sha256sums_arm64 = 8ef5f1f00d6b774233a363184363c13df9754547cda7ae19bda2dd76d0e98ea0
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18-rc3/amd64/linux-modules-6.18.0-061800rc3-generic_6.18.0-061800rc3.202510262341_amd64.deb
-	sha256sums_amd64 = 376675284282e896c9a594bbf395f30f5736f6fb68b9ab44e79a766d251cb68a
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/arm64/linux-modules-6.19.0-061900rc5-generic_6.19.0-061900rc5.202601120354_arm64.deb
+	sha256sums_arm64 = 236e570fb36a96ae7f86df597f971031cc10c4a7691f3fda1ba014df6db520fe
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/amd64/linux-modules-6.19.0-061900rc5-generic_6.19.0-061900rc5.202601120354_amd64.deb
+	sha256sums_amd64 = 936ae03ca8a6c4936a19cc13fb3b10c91497ee6b292b5ec5b9c89fe9d2873c18
 
 pkgname = linux-modules-deb
 ---
@@ -7879,16 +7878,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.18.1-061801-generic
-	pkgver = 6.18.1
+	gives = linux-modules-6.18.7-061807-generic
+	pkgver = 6.18.7
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.1/arm64/linux-modules-6.18.1-061801-generic_6.18.1-061801.202512121839_arm64.deb
-	sha256sums_arm64 = 972fd371d54ba627c88ff24438aa7802a9ad63d308693c6670e937dee758e9c4
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.1/amd64/linux-modules-6.18.1-061801-generic_6.18.1-061801.202512121839_amd64.deb
-	sha256sums_amd64 = 56574f9c7a83674c20f96c200a0eac4c56568c7fd4a508633beb57085a429dd0
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/arm64/linux-modules-6.18.7-061807-generic_6.18.7-061807.202601231045_arm64.deb
+	sha256sums_arm64 = 91107612ef0ff767ce52acfbedf14e46ebd7a5a23f93c3cd7561d4d28ae1bea0
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/amd64/linux-modules-6.18.7-061807-generic_6.18.7-061807.202601231045_amd64.deb
+	sha256sums_amd64 = 1782857e3d2674bf178e0166745a439125666596597fcee752855fe012f378e5
 
 pkgname = linux-modules-stable-deb
 ---
@@ -10020,14 +10019,23 @@ pkgbase = niri
 	url = https://github.com/YaLTeR/niri
 	arch = amd64
 	arch = arm64
-	depends = libdisplay-info3
+	depends = libudev1
+	depends = libgbm1
+	depends = libxkbcommon0
+	depends = libegl1
+	depends = libinput10
+	depends = libdbus-1-3
+	depends = libsystemd0
 	depends = libseat1
+	depends = libpipewire-0.3-0
+	depends = libpango1.0-dev
+	depends = libdisplay-info3 | libdisplay-info2 | libdisplay-info1
 	makedepends = libudev-dev
 	makedepends = libwayland-dev
 	makedepends = libseat-dev
 	makedepends = libglib2.0-dev
 	makedepends = libclang-dev
-	makedepends = cargo>=1.80.1
+	makedepends = cargo>=1.85 | rustup
 	makedepends = libpipewire-0.3-dev
 	makedepends = libcairo2-dev
 	makedepends = libpango1.0-dev
@@ -10045,8 +10053,12 @@ pkgbase = niri
 	optdepends = xdg-desktop-portal-gnome: screencasting support
 	optdepends = gnome-keyring: implements the secret portal, for certain apps to work
 	optdepends = policykit-1-gnome: when apps need to ask for root permissions
+	conflicts = niri-git
+	conflicts = niri-bin
+	provides = niri
 	license = GPL-3.0-or-later
 	maintainer = Alxhr0 <alxhr0@proton.me>
+	repology = project: niri
 	source = https://github.com/YaLTeR/niri.git#tag=v25.11
 
 pkgname = niri
@@ -10412,7 +10424,7 @@ pkgname = obquit-git
 ---
 pkgbase = obs-backgroundremoval-deb
 	gives = obs-backgroundremoval
-	pkgver = 1.3.5
+	pkgver = 1.3.6
 	pkgdesc = OBS plugin to replace the background in portrait images and video
 	arch = amd64
 	breaks = obs-backgroundremoval
@@ -10420,14 +10432,14 @@ pkgbase = obs-backgroundremoval-deb
 	incompatible = debian:bullseye
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: obs-backgroundremoval
-	source = https://github.com/royshil/obs-backgroundremoval/releases/download/1.3.5/obs-backgroundremoval-1.3.5-x86_64-linux-gnu.deb
-	sha256sums = 455a45f3be415f50039eeed9a23e62edb5de35c8795f9e0ddf035d9103a6ef96
+	source = https://github.com/royshil/obs-backgroundremoval/releases/download/1.3.6/obs-backgroundremoval-1.3.6-x86_64-linux-gnu.deb
+	sha256sums = 3d0d000b7688e39571fd9d10c5c1473020c94cc962a89e8a18c1df6ca76f3b33
 
 pkgname = obs-backgroundremoval-deb
 ---
 pkgbase = obs-backgroundremoval-git
 	gives = obs-backgroundremoval
-	pkgver = 1.1.8
+	pkgver = 1.3.5
 	pkgdesc = OBS plugin to replace the background in portrait images and video
 	arch = amd64
 	makedepends = libobs-dev
@@ -10437,8 +10449,12 @@ pkgbase = obs-backgroundremoval-git
 	makedepends = libgl1-mesa-dev
 	makedepends = ninja-build
 	makedepends = cmake
+	makedepends = pkg-config
+	makedepends = libopencv-dev
+	pacdeps = onnxruntime-bin
 	breaks = obs-backgroundremoval
 	replaces = obs-backgroundremoval
+	incompatible = *:noble
 	incompatible = *:jammy
 	incompatible = *:focal
 	incompatible = *:bionic
@@ -10450,7 +10466,7 @@ pkgbase = obs-backgroundremoval-git
 pkgname = obs-backgroundremoval-git
 ---
 pkgbase = obs-backgroundremoval
-	pkgver = 1.1.12
+	pkgver = 1.3.5
 	pkgdesc = OBS plugin to replace the background in portrait images and video
 	arch = amd64
 	makedepends = libobs-dev
@@ -10460,8 +10476,12 @@ pkgbase = obs-backgroundremoval
 	makedepends = libgl1-mesa-dev
 	makedepends = ninja-build
 	makedepends = cmake
+	makedepends = libopencv-dev
+	makedepends = pkg-config
+	pacdeps = onnxruntime-bin
 	breaks = obs-backgroundremoval-git
 	replaces = obs-backgroundremoval
+	incompatible = *:noble
 	incompatible = *:jammy
 	incompatible = *:focal
 	incompatible = *:bionic
@@ -10469,8 +10489,8 @@ pkgbase = obs-backgroundremoval
 	incompatible = *:bullseye
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: obs-backgroundremoval
-	source = @obs-backgroundremoval~1.1.12::https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/1.1.12.tar.gz
-	sha256sums = 50687434e49c005a881977ea46877c00da974a10810db2ee23b0b3fbeed7d6aa
+	source = @obs-backgroundremoval~1.3.5::https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/1.3.5.tar.gz
+	sha256sums = 787f427e306abf9561f1a6686cd0e0a9228af1b429a991676d11235fd0ad98d1
 
 pkgname = obs-backgroundremoval
 ---
@@ -11409,6 +11429,7 @@ pkgbase = pdfmm-git
 	depends = zenity
 	depends = ghostscript
 	breaks = pdfmm
+	maintainer = Zahrun <zahrunAtmurenaDotio>
 	source = https://github.com/jpfleury/pdfmm.git
 	sha256sums = 3a1d5046490cbeb1f3a3eae34d66ea0e714a19a01f15dc43cb1d31fbb58d7a51
 
@@ -11416,7 +11437,7 @@ pkgname = pdfmm-git
 ---
 pkgbase = pfetch-bin
 	gives = pfetch
-	pkgver = 0.6.0
+	pkgver = 1.10.0
 	pkgdesc = A lightweight and simple fetch tool
 	arch = amd64
 	breaks = pfetch
@@ -11426,8 +11447,8 @@ pkgbase = pfetch-bin
 	breaks = pfetch-git
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: pfetch
-	source = @pfetch-bin~0.6.0::https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.zip
-	sha256sums = ec85100a912c0bdd06a82a9647d19a5c6d1d51c3a262d60b9ac8f17570fbfb39
+	source = @pfetch-bin~1.10.0::https://github.com/Un1q32/pfetch/archive/refs/tags/1.10.0.zip
+	sha256sums = 38548f03ec48415b41026157486ac577dcc533684ede9054898972e3a17d752b
 
 pkgname = pfetch-bin
 ---
@@ -12127,17 +12148,17 @@ pkgname = ptyxis
 ---
 pkgbase = pulsar-deb
 	gives = pulsar
-	pkgver = 1.128.0
+	pkgver = 1.130.1
 	pkgdesc = A Community-led Hyper-Hackable Text Editor
 	arch = amd64
 	arch = arm64
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	maintainer = AJStrong <ajstrongdev@proton.me>
 	repology = project: pulsar-edit
-	source_amd64 = https://github.com/pulsar-edit/pulsar/releases/download/v1.128.0/Linux.pulsar_1.128.0_amd64.deb
-	sha256sums_amd64 = 4418107cef872ee06ffb777406869238263e1a7f0b21e77b08dd705b22c9315f
-	source_arm64 = https://github.com/pulsar-edit/pulsar/releases/download/v1.128.0/ARM.Linux.pulsar_1.128.0_arm64.deb
-	sha256sums_arm64 = 82bc8e7fec2c170384ce42c9c1ba6012b6d72380ccad4cc5f03e57db8e91c911
+	source_amd64 = https://github.com/pulsar-edit/pulsar/releases/download/v1.130.1/Linux.pulsar_1.130.1_amd64.deb
+	sha256sums_amd64 = 4e57acc5ee016e04bd7c4fea8c10f331530ad27e28441e306840b20fab06328e
+	source_arm64 = https://github.com/pulsar-edit/pulsar/releases/download/v1.130.1/ARM.Linux.pulsar_1.130.1_arm64.deb
+	sha256sums_arm64 = 80d88695348b18a12910284b92fdc317a1e01e9ad7c0ae91233bbbc738214489
 
 pkgname = pulsar-deb
 ---
@@ -14713,7 +14734,7 @@ pkgname = tdrop-git
 ---
 pkgbase = teams-for-linux-deb
 	gives = teams-for-linux
-	pkgver = 2.6.3
+	pkgver = 2.6.19
 	pkgdesc = Unofficial Microsoft Teams client for Linux using Electron. It uses the Web App and wraps it as a standalone application using Electron.
 	arch = amd64
 	arch = arm64
@@ -14723,10 +14744,10 @@ pkgbase = teams-for-linux-deb
 	breaks = teams-for-linux-app
 	maintainer = matusaurio <matusaurio@github.com>
 	repology = project: teams-for-linux
-	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.6.3/teams-for-linux_2.6.3_amd64.deb
-	sha256sums_amd64 = 3672669b9d6f9d852bc73ed6ee9d96ff69f05ba0e198d4bd0f71c2906d1e278e
-	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.6.3/teams-for-linux_2.6.3_arm64.deb
-	sha256sums_arm64 = 28c870c0de366b7786ea13709363026245a0e3390295f6900a5f1052f339eb90
+	source_amd64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.6.19/teams-for-linux_2.6.19_amd64.deb
+	sha256sums_amd64 = e25882cc0808a81013250359ccaf9dc5719c48b7962780ad93610a9ea806f7e9
+	source_arm64 = https://github.com/IsmaelMartinez/teams-for-linux/releases/download/v2.6.19/teams-for-linux_2.6.19_arm64.deb
+	sha256sums_arm64 = 5e371ff14cbd21cc590e3945135259e32751b5a2ac7aac122ffdcc29bdc616a4
 
 pkgname = teams-for-linux-deb
 ---
@@ -16614,18 +16635,18 @@ pkgname = waynergy
 ---
 pkgbase = webapp-manager-deb
 	gives = webapp-manager
-	pkgver = 1.3.4
+	pkgver = 1.4.6
 	pkgdesc = Run websites as if they were apps.
 	arch = all
 	maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>
 	repology = project: webapp-manager
-	source = http://packages.linuxmint.com/pool/main/w/webapp-manager/webapp-manager_1.3.4_all.deb
-	sha256sums = 4a2d60bb94ae106e6d8084b1de5a73b86fa02a1a404f8e35088951a23ed36008
+	source = http://packages.linuxmint.com/pool/main/w/webapp-manager/webapp-manager_1.4.6_all.deb
+	sha256sums = 75f8c5d5edb0fc440880b801810b2a0231a772f901162e0c824c0bfa5727bcff
 
 pkgname = webapp-manager-deb
 ---
 pkgbase = webapp-manager
-	pkgver = 1.4.0
+	pkgver = 1.4.6
 	pkgdesc = Run websites as if they were apps
 	arch = all
 	depends = gir1.2-xapp-1.0
@@ -16643,8 +16664,8 @@ pkgbase = webapp-manager
 	incompatible = *:bullseye
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: webapp-manager
-	source = @webapp-manager~1.4.0::https://github.com/linuxmint/webapp-manager/archive/refs/tags/1.4.0.tar.gz
-	sha256sums = 2d098765cc1d9124cceb4a32b06f38bd96a4e003d4a5bd8c83d850f34c877c73
+	source = @webapp-manager~1.4.6::https://github.com/linuxmint/webapp-manager/archive/refs/tags/1.4.6.tar.gz
+	sha256sums = 14834bca23a8b961c84c478cf9068f92cc6a5bb3a02fa2f2db9b37d348536931
 
 pkgname = webapp-manager
 ---
@@ -17097,13 +17118,14 @@ pkgname = xapp-symbolic-icons-deb
 ---
 pkgbase = xapps-common-deb
 	gives = xapps-common
-	pkgver = 2.8.2
+	pkgver = 3.2.2
 	pkgdesc = Components which are common to multiple desktop environments and required to implement cross-DE solutions
 	arch = all
+	pacdeps = xapp-symbolic-icons-deb
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: xapps
-	source = http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_2.8.2+virginia_all.deb
-	sha256sums = 5423e5bf2309a687e651f9f0c90e8f107e58c6512614787147e19e7e96474f1a
+	source = http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_3.2.2+zena_all.deb
+	sha256sums = 570aeb2c8bf5f8083dab1d517962c7ff6b07536c9f966b5ccb98ac30fe438c6c
 
 pkgname = xapps-common-deb
 ---
@@ -17631,7 +17653,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.17.15b
+	pkgver = 1.18.1b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -17668,8 +17690,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.17.15b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 13ef9d59e25c61b0af9b182f89ad1a5b08eb197d9e61668f145d752dda378778
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.18.1b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 30ca665eb275d5a1515de506bf7e290eb6792a8fdfe5540cfe4ed6a0f1c31d3c
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -17679,8 +17701,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.17.15b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = 7a8fe1832af18eb367fb4327f0097b6ef241ff3eaa12f36994a0bd58a3766f5f
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.18.1b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 45227d672ee192cd49c3e02d6dc1fcc66aad9e20565d60deb74b80ed483f7eb3
 
 pkgname = zen-browser-bin
 ---
