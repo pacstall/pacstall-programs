@@ -21,14 +21,14 @@ external_connection=true
 prepare() {
   cd "${gives}"
   rm -f convert_firmware.*
-	sed -e "/POST_INSTALL/d" -e "/PACKAGE_VERSION/d" -i dkms.conf
-	printf "PACKAGE_VERSION=\"@PKGVER@\"\n" >> dkms.conf
+  sed -e "/POST_INSTALL/d" -e "/PACKAGE_VERSION/d" -i dkms.conf
+  printf "PACKAGE_VERSION=\"@PKGVER@\"\n" >> dkms.conf
 
 }
 
 package() {
   cd "${gives}"
   install -Dm 644 -t "${pkgdir}"/usr/src/${gives}-r${pkgver} *.c *.h Makefile dkms.conf
-	install -Dm 644 -t "${pkgdir}"/etc/modprobe.d rtw88.conf
- 	sed -e "s/@PKGVER@/${pkgver}/" -i "${pkgdir}"/usr/src/${gives}-r${pkgver}/dkms.conf
+  install -Dm 644 -t "${pkgdir}"/etc/modprobe.d rtw88.conf
+  sed -e "s/@PKGVER@/${pkgver}/" -i "${pkgdir}"/usr/src/${gives}-r${pkgver}/dkms.conf
 }
