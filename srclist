@@ -13474,16 +13474,21 @@ pkgbase = rtl8821cu-dkms-git
 	depends = kmod
 	depends = bc
 	depends = iproute2
-	makedepends = bash
-	makedepends = nano
-	makedepends = bc
-	makedepends = build-essential
-	makedepends = linux-headers-
 	optdepends = usb-modeswitch: A tool that can switch the adapter from CD-ROM mode to Wi-Fi mode
 	pacdeps = firmware-realtek-deb
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: rtl8821cu-dkms-git
 	source = https://github.com/morrownr/8821cu-20210916.git
+	makedepends_amd64 = bash
+	makedepends_amd64 = nano
+	makedepends_amd64 = bc
+	makedepends_amd64 = build-essential
+	makedepends_amd64 = linux-headers-amd64
+	makedepends_arm64 = bash
+	makedepends_arm64 = nano
+	makedepends_arm64 = bc
+	makedepends_arm64 = build-essential
+	makedepends_arm64 = linux-headers-arm64
 
 pkgname = rtl8821cu-dkms-git
 ---
