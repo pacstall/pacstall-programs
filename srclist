@@ -1053,17 +1053,26 @@ pkgname = blueprint-compiler
 ---
 pkgbase = bluetuith-bin
 	gives = bluetuith
-	pkgver = 0.2.5
+	pkgver = 0.2.6
 	pkgdesc = TUI bluetooth manager for Linux
 	arch = amd64
+	arch = i386
+	arch = arm64
 	depends = bluez
 	depends = bluetooth
 	depends = obexftp
 	depends = bluez-tools
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: bluetuith-bin
-	source = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.5/bluetuith_0.2.5_Linux_x86_64.tar.gz
-	sha256sums = 844211fb057ea2c4e6efd0b01bc21b5ec41c5b2db6af57819d19f04d44624af7
+	sha256sums = f206731d16c446ade39907dc88f961ed3ef07a12911cf7432a2b768aefa62717
+	sha256sums = 5feece622f7af5e86dcb4d6207f7b33499af9c7408d223fe59defc73af2d98f8
+	sha256sums = 63af4aae960c1754f8931c9022d926a29e9da6f82269c181d1726aad61312d92
+	sha256sums = dc48b9e1edbae8358db940ad5972e902a509996fbd66c9d4619adab5b3e4a681
+	sha256sums = 317b3ddffd4f368b5bdf0bf6f5e80995d7a77b985415d2b8bc35444b6314e0d4
+	sha256sums = f443c29f465b2dc655becbc1e258c2525ad080bb2b390c2e2cf5b3e407df6629
+	source_amd64 = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.6/bluetuith_0.2.6_Linux_x86_64.tar.gz
+	source_i386 = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.6/bluetuith_0.2.6_Linux_i686.tar.gz
+	source_arm64 = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.6/bluetuith_0.2.6_Linux_aarch64.tar.gz
 
 pkgname = bluetuith-bin
 ---
