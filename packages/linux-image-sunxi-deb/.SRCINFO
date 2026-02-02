@@ -1,6 +1,6 @@
 pkgbase = linux-image-sunxi-deb
-	gives = linux-image-6.12-sunxi64
-	pkgver = 6.12.63
+	gives = linux-image-6.18-sunxi64
+	pkgver = 6.18.8
 	pkgdesc = Linux kernel image files built for PINE64 Sunxi devices (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -10,8 +10,8 @@ pkgbase = linux-image-sunxi-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.12-sunxi64/linux-image-6.12-sunxi64_6.12.63-1_arm64.deb
-	sha256sums = 336c512ae527ec01112a3b5feb2fe3efad038e3861997e2e394ab91085db0138
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-image-6.18-sunxi64_6.18.8-2_arm64.deb
+	sha256sums = b7729c013cf017cb12352eb9f4ce5e6a395be97b71aecc0f701ece6dde97c9a6
 	depends_debian = firmware-realtek
 	pacdeps_ubuntu = firmware-realtek-deb
 
