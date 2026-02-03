@@ -2,10 +2,30 @@ pkgname="legcord-deb"
 gives="legcord"
 depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libsecret-1-0")
 repology=("project: ${gives}")
-pkgver="1.1.6"
+
+# Auto-detect latest version from GitHub
+pkgver="$(
+  wget -qO- https://github.com/Legcord/Legcord/releases/latest \
+  | sed -n 's|.*/tag/v\([0-9.]*\)".*|\1|p' \
+  | head -n1
+)"
+
 arch=('arm64' 'amd64')
-sha256sums_arm64=("e5445eaed2c9c17834f0941fa3454b92cc947359785dcceafbea40cec68d70ac")
-sha256sums_amd64=("6fa257162d237d585ae23051d462d6f59531d14d48602b5d6e66f30e2bd5a14b")
+
+# Auto-generate SHA256 sums per architecture
+sha256sums_arm64=("$(
+  wget -qO- "https://github.com/Legcord/Legcord/releases/download/v${pkgver}/Legcord-${pkgver}-linux-arm64.deb" \
+  | sha256sum \
+  | awk '{print $1}'
+)")
+
+sha256sums_amd64=("$(
+  wget -qO- "https://github.com/Legcord/Legcord/releases/download/v${pkgver}/Legcord-${pkgver}-linux-amd64.deb" \
+  | sha256sum \
+  | awk '{print $1}'
+)")
+
 source=("https://github.com/Legcord/Legcord/releases/download/v${pkgver}/Legcord-${pkgver}-linux-${CARCH}.deb")
+
 pkgdesc="Custom client designed to enhance your Discord experience while keeping everything lightweight"
 maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")
