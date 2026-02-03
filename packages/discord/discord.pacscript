@@ -1,5 +1,5 @@
 pkgname="discord"
-pkgver="0.0.122"
+pkgver="0.0.123"
 maintainer=("Sonakrie <sonakrie@shockinteractive.xyz>")
 source=("@${pkgname}~${pkgver}::https://dl.discordapp.net/apps/linux/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 url='https://discord.com/'
