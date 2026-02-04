@@ -17,7 +17,7 @@ pkgbase = legcord-deb
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: legcord
 	source_arm64 = https://github.com/Legcord/Legcord/releases/download/v1.2.1/Legcord-1.2.1-linux-arm64.deb
-	sha256sums_arm64 = f63a2c952f601bd87ece4d447788c02e60028ee9805151237e227df9bd734560
+	sha256sums_arm64 = 2cb95e0286ad5acbaac45b8d3427d93c11003bee57e65127d3a3e089bdf53a9a
 	source_amd64 = https://github.com/Legcord/Legcord/releases/download/v1.2.1/Legcord-1.2.1-linux-amd64.deb
 	sha256sums_amd64 = f63a2c952f601bd87ece4d447788c02e60028ee9805151237e227df9bd734560
 
