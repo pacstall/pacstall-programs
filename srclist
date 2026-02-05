@@ -13680,10 +13680,10 @@ pkgname = sbt-deb
 ---
 pkgbase = scangearmp2-deb
 	gives = scangearmp2
-	pkgver = 3.40
+	pkgver = 4.20.1
 	pkgrel = 1
-	pkgdesc = Scanner driver and gui for Canon Pixma MG3000 series
-	url = https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx
+	pkgdesc = Sane backend for the canon's scanner
+	url = https://github.com/ThierryHFR/scangearmp2
 	arch = amd64
 	arch = i386
 	depends = libatk1.0-0>=1.29.3
@@ -13700,8 +13700,8 @@ pkgbase = scangearmp2-deb
 	pacdeps = canon-pixma-mg3000-complete-deb
 	replaces = scangearmp2
 	maintainer = aKqir24 <aKqir24@github.com>
-	source_amd64 = https://files.catbox.moe/o3gvrl.deb
-	source_i386 = https://files.catbox.moe/7mgcmi.deb
+	source_amd64 = https://github.com/ThierryHFR/scangearmp2/releases/download/4.20.1/scangearmp2_4.20-1bullseye+1_amd64.deb
+	source_i386 = https://github.com/ThierryHFR/scangearmp2/releases/download/4.20.1/scangearmp2_4.20-1bullseye+1_i386.deb
 
 pkgname = scangearmp2-deb
 ---

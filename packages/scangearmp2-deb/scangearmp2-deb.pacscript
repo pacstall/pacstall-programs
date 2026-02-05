@@ -1,10 +1,10 @@
 pkgname="scangearmp2-deb"
-pkgver="3.40"
+pkgver="4.20.1"
 pkgrel=1
 gives="scangearmp2"
-pkgdesc="Scanner driver and gui for Canon Pixma MG3000 series"
+pkgdesc="Sane backend for the canon's scanner"
 arch=("amd64" "i386")
-url='https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx'
+url='https://github.com/ThierryHFR/scangearmp2'
 depends=(
   "libatk1.0-0>=1.29.3"
   "libc6>=2.7"
@@ -21,8 +21,7 @@ depends=(
 pacdeps=("canon-pixma-mg3000-complete-deb")
 replaces=("${gives}")
 maintainer=("aKqir24 <aKqir24@github.com>")
-source_amd64=("https://files.catbox.moe/o3gvrl.deb")
-source_i386=("https://files.catbox.moe/7mgcmi.deb")
+source=("https://github.com/ThierryHFR/${gives}/releases/download/${pkgver}/${gives}_4.20-1bullseye+1_${CARCH}.deb")
 
 post_install() {
   cd "${srcdir}"
