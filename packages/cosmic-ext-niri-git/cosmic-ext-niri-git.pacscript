@@ -1,6 +1,6 @@
 pkgname="cosmic-ext-niri"
 pkgver="0.1.0"
-url="https://github.com/Drakulix/cosmic-ext-extra-sessions"
+url='https://github.com/Drakulix/cosmic-ext-extra-sessions'
 pkgdesc="COSMIC-based alternative session with the niri compositor"
 license=("GPL-3.0-or-later")
 makedepends=("cargo")

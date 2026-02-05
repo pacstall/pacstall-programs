@@ -1,6 +1,6 @@
 pkgname=niri-git
 pkgver="25.11"
-url="https://github.com/YaLTeR/niri"
+url='https://github.com/YaLTeR/niri'
 pkgdesc="Scrollable-tiling Wayland compositor"
 license=("GPL-3.0-or-later")
 provides=("niri")
