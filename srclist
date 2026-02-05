@@ -1787,7 +1787,6 @@ pkgname = cosmic-ext-alternative-startup-git
 ---
 pkgbase = cosmic-ext-niri
 	pkgver = 0.1.0
-	pkgrel = 1
 	pkgdesc = COSMIC-based alternative session with the niri compositor
 	url = https://github.com/Drakulix/cosmic-ext-extra-sessions
 	arch = amd64
@@ -10049,7 +10048,6 @@ pkgname = ttf-zed-mono-nerd
 ---
 pkgbase = niri-git
 	pkgver = 25.11
-	pkgrel = 1
 	pkgdesc = Scrollable-tiling Wayland compositor
 	url = https://github.com/YaLTeR/niri
 	arch = amd64
