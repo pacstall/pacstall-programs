@@ -1,8 +1,8 @@
 pkgname="pacstallion-deb"
 gives="pacstallion"
 pkgver="1.0.1"
-pkgdesc="Pacstall GUI."
-url="https://pacstallion.imy.com.ly/"
+pkgdesc="Pacstall GUI"
+url='https://pacstallion.imy.com.ly/'
 arch=('amd64' 'arm64')
 license=('GPL-3.0-only')
 source_amd64=("https://github.com/IMYdev/pacstallion/releases/download/v${pkgver}/${gives}.amd64.${pkgver}.deb")
