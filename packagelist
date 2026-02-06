@@ -584,6 +584,7 @@ pacstall-docker-builder-git
 pacstall-gui-git
 pacstall-mime-git
 pacstall-qa-git
+pacstallion
 pacup
 pacup-git
 panagement
