@@ -1,7 +1,7 @@
 pkgbase = pacstallion-deb
 	gives = pacstallion
 	pkgver = 1.0.1
-	pkgdesc = Pacstall GUI.
+	pkgdesc = Pacstall GUI
 	url = https://pacstallion.imy.com.ly/
 	arch = amd64
 	arch = arm64
