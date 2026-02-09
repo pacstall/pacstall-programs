@@ -1,6 +1,6 @@
 pkgname="scangearmp2-sane-git"
 pkgver="4.20.1"
-pkgrel=1
+repology=("project: scangearmp2-sane")
 gives="scangearmp2"
 pkgdesc="Sane backend for the canon's scanner"
 arch=("amd64" "i386")

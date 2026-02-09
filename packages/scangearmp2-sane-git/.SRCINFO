@@ -1,7 +1,6 @@
 pkgbase = scangearmp2-sane-git
 	gives = scangearmp2
 	pkgver = 4.20.1
-	pkgrel = 1
 	pkgdesc = Sane backend for the canon's scanner
 	url = https://github.com/ThierryHFR/scangearmp2
 	arch = amd64
@@ -30,6 +29,7 @@ pkgbase = scangearmp2-sane-git
 	conflicts = scangearmp2-deb
 	replaces = scangearmp2-deb
 	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: scangearmp2-sane
 	source = https://github.com/ThierryHFR/scangearmp2.git
 
 pkgname = scangearmp2-sane-git
