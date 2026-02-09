@@ -1,0 +1,11 @@
+pkgbase = browseros-deb
+	gives = browseros
+	pkgver = 0.34.0
+	pkgdesc = BrowserOS - AI-powered browser
+	url = https://github.com/browseros-ai/BrowserOS
+	arch = amd64
+	maintainer = TPM28 <contact@tpm28.com>
+	source = https://github.com/browseros-ai/BrowserOS/releases/download/v0.34.0/BrowserOS_v0.34.0_amd64.deb
+	sha256sums = SKIP
+
+pkgname = browseros-deb
