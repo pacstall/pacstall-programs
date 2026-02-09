@@ -66,7 +66,7 @@ build() {
 package() {
   cd "${gives}"
   make -C build install DESTDIR="${pkgdir}"
-  mkdir -p ${pkgdir}/usr/share/licenses/${pkgname}
-  mv ${pkgdir}/usr/share/scangearmp2/doc/* ${pkgdir}/usr/share/licenses/${pkgname}/
-  rmdir ${pkgdir}/usr/share/scangearmp2/doc/
+  mkdir -p "${pkgdir}/usr/share/licenses/${pkgname}"
+  mv "${pkgdir}"/usr/share/scangearmp2/doc/* "${pkgdir}/usr/share/licenses/${pkgname}/"
+  rmdir "${pkgdir}/usr/share/scangearmp2/doc/"
 }

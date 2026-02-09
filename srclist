@@ -13824,7 +13824,7 @@ pkgbase = scangearmp2-sane-git
 	makedepends = git
 	makedepends = intltool
 	makedepends = cmake
-	makedepends = libjpeg62-turbo
+	makedepends = libjpeg62-turbo | libjpeg-turbo8 | libjpeg8
 	makedepends = libusb-1.0-0>=2:1.0.6
 	makedepends = pkg-config
 	makedepends = libusb-1.0-0-dev>=2:1.0.6
