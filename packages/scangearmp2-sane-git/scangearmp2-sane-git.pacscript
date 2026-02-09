@@ -23,7 +23,7 @@ makedepends=(
   "git"
   "intltool"
   "cmake"
-  "libjpeg62-turbo"
+  "libjpeg62-turbo | libjpeg-turbo8 | libjpeg8"
   "libusb-1.0-0>=2:1.0.6"
   "pkg-config"
   "libusb-1.0-0-dev>=2:1.0.6"
