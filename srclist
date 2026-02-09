@@ -1771,6 +1771,34 @@ pkgbase = cortile
 
 pkgname = cortile
 ---
+pkgbase = cosmic-ext-alternative-startup-git
+	pkgver = 0.1.0
+	pkgdesc = Alternative entry point for cosmic-session's compositor ipc interface
+	url = https://github.com/Drakulix/cosmic-ext-alternative-startup
+	arch = amd64
+	arch = arm64
+	makedepends = cargo
+	provides = cosmic-ext-alternative-startup
+	license = GPL-3.0-or-later
+	source = https://github.com/Drakulix/cosmic-ext-alternative-startup.git
+
+pkgname = cosmic-ext-alternative-startup-git
+---
+pkgbase = cosmic-ext-niri
+	pkgver = 0.1.0
+	pkgdesc = COSMIC-based alternative session with the niri compositor
+	url = https://github.com/Drakulix/cosmic-ext-extra-sessions
+	arch = amd64
+	arch = arm64
+	makedepends = cargo
+	pacdeps = cosmic-ext-alternative-startup-git
+	pacdeps = niri-git
+	nosubmodules = cosmic-ext-extra-sessions
+	license = GPL-3.0-or-later
+	source = https://github.com/Drakulix/cosmic-ext-extra-sessions.git
+
+pkgname = cosmic-ext-niri
+---
 pkgbase = couture
 	pkgver = 1.6
 	pkgdesc = Couture gives you exquisite control over your dynamics, and particularly attacks.
@@ -3434,7 +3462,7 @@ pkgname = figma-linux-deb
 ---
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 142.0.1
+	pkgver = 147.0.2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3444,16 +3472,16 @@ pkgbase = firefox-bin
 	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/142.0.1/linux-x86_64/en-US/firefox-142.0.1.tar.xz
-	sha256sums_amd64 = 8f47a714610a624ad536a652a70242aa894a37f65565fd3103d4366869743b91
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/142.0.1/linux-aarch64/en-US/firefox-142.0.1.tar.xz
-	sha256sums_arm64 = ee3c8aeb57740c4a20b97136876cd40e4b60870ab0068e78ab9de22f2a01399a
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/147.0.2/linux-x86_64/en-US/firefox-147.0.2.tar.xz
+	sha256sums_amd64 = 691ed0831506907cdb94a6a4a6dee9a7ff2f2b64d51e84edbce5b0cfb7b812fa
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/147.0.2/linux-aarch64/en-US/firefox-147.0.2.tar.xz
+	sha256sums_arm64 = 55c094094d235bb27e90cff02b5cbaef090dec5abccbe106919e0e5d720322d5
 
 pkgname = firefox-bin
 ---
 pkgbase = firefox-deb
 	gives = firefox
-	pkgver = 142.0.1
+	pkgver = 147.0.2
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3461,16 +3489,16 @@ pkgbase = firefox-deb
 	replaces = firefox-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/142.0.1/linux-x86_64/en-US/firefox-142.0.1.deb
-	sha256sums_amd64 = add45e90dbc5c2fc03ddf74663ba767a6a4198f3015b8b18dd5ce00277da3afb
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/142.0.1/linux-aarch64/en-US/firefox-142.0.1.deb
-	sha256sums_arm64 = b61d8ee547110540996581b98ff175a6024664291f3b67b90240b0a57f31e2af
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/147.0.2/linux-x86_64/en-US/firefox-147.0.2.deb
+	sha256sums_amd64 = 124c8862e5f961abe29681b18c162a2f0a82c901892f621c7a3a649ac0dfb492
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/147.0.2/linux-aarch64/en-US/firefox-147.0.2.deb
+	sha256sums_arm64 = a9e2d9133c95c5f83b98a6f5aa6eb3a428e972565f5fd496cb30954b8f725da9
 
 pkgname = firefox-deb
 ---
 pkgbase = firefox-developer-edition-bin
 	gives = firefox-developer-edition
-	pkgver = 143.0b9
+	pkgver = 148.0b10
 	pkgdesc = The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector.
 	url = https://www.mozilla.org/en-US/firefox/developer/
 	arch = amd64
@@ -3484,16 +3512,16 @@ pkgbase = firefox-developer-edition-bin
 	repology = project: firefox
 	repology = visiblename: firefox-developer-edition
 	repology = status: devel
-	source_amd64 = https://download-installer.cdn.mozilla.net/pub/devedition/releases/143.0b9/linux-x86_64/en-US/firefox-143.0b9.tar.xz
+	source_amd64 = https://download-installer.cdn.mozilla.net/pub/devedition/releases/148.0b10/linux-x86_64/en-US/firefox-148.0b10.tar.xz
 	source_amd64 = firefox-developer-edition.desktop
 	source_amd64 = firefox-developer-edition.png::https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png
-	sha256sums_amd64 = ef116160db98534128eb3cf2c848d6e0d5f874da4ec7850837404cf4cc78aceb
+	sha256sums_amd64 = 4d57d3cb466992573440492bb90b00124d66b2154f14a7dd95ac171e18c1b4ba
 	sha256sums_amd64 = SKIP
 	sha256sums_amd64 = SKIP
-	source_arm64 = https://download-installer.cdn.mozilla.net/pub/devedition/releases/143.0b9/linux-aarch64/en-US/firefox-143.0b9.tar.xz
+	source_arm64 = https://download-installer.cdn.mozilla.net/pub/devedition/releases/148.0b10/linux-aarch64/en-US/firefox-148.0b10.tar.xz
 	source_arm64 = firefox-developer-edition.desktop
 	source_arm64 = firefox-developer-edition.png::https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png
-	sha256sums_arm64 = da954b044215a4f35e3466ee0f39c01f408afed8b42172f727a939db73c11e4c
+	sha256sums_arm64 = ee90517be76f773b8b835a4959149aef2c7d6bc4c94997227826dcc2cacae689
 	sha256sums_arm64 = SKIP
 	sha256sums_arm64 = SKIP
 
@@ -3501,7 +3529,7 @@ pkgname = firefox-developer-edition-bin
 ---
 pkgbase = firefox-nightly-bin
 	gives = firefox-nightly
-	pkgver = 144.0a1
+	pkgver = 149.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3510,14 +3538,14 @@ pkgbase = firefox-nightly-bin
 	replaces = firefox-nightly-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-144.0a1.en-US.linux-x86_64.tar.xz
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-144.0a1.en-US.linux-aarch64.tar.xz
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-149.0a1.en-US.linux-x86_64.tar.xz
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-149.0a1.en-US.linux-aarch64.tar.xz
 
 pkgname = firefox-nightly-bin
 ---
 pkgbase = firefox-nightly-deb
 	gives = firefox-nightly
-	pkgver = 144.0a1
+	pkgver = 149.0a1
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation (Nightly)
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -3526,8 +3554,8 @@ pkgbase = firefox-nightly-deb
 	replaces = firefox-nightly-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox-nightly
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-144.0a1.en-US.linux-x86_64.deb
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-144.0a1.en-US.linux-aarch64.deb
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-149.0a1.en-US.linux-x86_64.deb
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-149.0a1.en-US.linux-aarch64.deb
 
 pkgname = firefox-nightly-deb
 ---
@@ -7628,7 +7656,7 @@ pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-rockchip-deb
 	gives = linux-headers-6.18-rockchip
-	pkgver = 6.18.3
+	pkgver = 6.18.8
 	pkgdesc = Linux kernel header files built for PINE64 Rockchip devices (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7636,8 +7664,8 @@ pkgbase = linux-headers-rockchip-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-headers-6.18-rockchip_6.18.3-1_arm64.deb
-	sha256sums = c9b1682cb6d8c4af7240d31a6d18c11067410856ff289e6d5f7730228fc0cd02
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-headers-6.18-rockchip_6.18.8-1_arm64.deb
+	sha256sums = b37b818c3de2c02f96caa62473c316415a3687e6b238a137c423ebac9314ca94
 
 pkgname = linux-headers-rockchip-deb
 ---
@@ -7655,8 +7683,8 @@ pkgbase = linux-headers-stable-deb
 pkgname = linux-headers-stable-deb
 ---
 pkgbase = linux-headers-sunxi-deb
-	gives = linux-headers-6.12-sunxi64
-	pkgver = 6.12.63
+	gives = linux-headers-6.18-sunxi64
+	pkgver = 6.18.8
 	pkgdesc = Linux kernel header files built for PINE64 Sunxi devices (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7664,8 +7692,8 @@ pkgbase = linux-headers-sunxi-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-6.12-sunxi64/linux-headers-6.12-sunxi64_6.12.63-1_arm64.deb
-	sha256sums = 813bea68d10cc9a880fc17eacc855883f55cc6dc4aeb93d6980b610a5824cd0e
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-headers-6.18-sunxi64_6.18.8-2_arm64.deb
+	sha256sums = 939678d705bce1048244fe8e2deda9da89d8c4769a883c537a8d07184598bc1f
 
 pkgname = linux-headers-sunxi-deb
 ---
@@ -7689,7 +7717,7 @@ pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-rockchip-deb
 	gives = linux-image-6.18-rockchip
-	pkgver = 6.18.3
+	pkgver = 6.18.8
 	pkgdesc = Linux kernel image files built for PINE64 Rockchip devices (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -7699,16 +7727,16 @@ pkgbase = linux-image-rockchip-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-image-6.18-rockchip_6.18.3-1_arm64.deb
-	sha256sums = 3692e0f899c7b84532116a32ca2739b3f054a1c190b349e003b55ac13065d674
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-image-6.18-rockchip_6.18.8-1_arm64.deb
+	sha256sums = ddace0e43118fde74d39afd2634c06385400866658f705d2f8ff021738a48689
 	depends_debian = firmware-brcm80211
 	pacdeps_ubuntu = firmware-brcm80211-deb
 
 pkgname = linux-image-rockchip-deb
 ---
 pkgbase = linux-image-sunxi-deb
-	gives = linux-image-6.12-sunxi64
-	pkgver = 6.12.63
+	gives = linux-image-6.18-sunxi64
+	pkgver = 6.18.8
 	pkgdesc = Linux kernel image files built for PINE64 Sunxi devices (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -7718,8 +7746,8 @@ pkgbase = linux-image-sunxi-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.12-sunxi64/linux-image-6.12-sunxi64_6.12.63-1_arm64.deb
-	sha256sums = 336c512ae527ec01112a3b5feb2fe3efad038e3861997e2e394ab91085db0138
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-image-6.18-sunxi64_6.18.8-2_arm64.deb
+	sha256sums = b7729c013cf017cb12352eb9f4ce5e6a395be97b71aecc0f701ece6dde97c9a6
 	depends_debian = firmware-realtek
 	pacdeps_ubuntu = firmware-realtek-deb
 
@@ -10013,6 +10041,58 @@ pkgname = ttf-zed-mono-nerd
 	pkgdesc = Patched font Zed Mono from nerd fonts library
 	license = OFL-1.1-no-RFN
 ---
+pkgbase = niri-git
+	pkgver = 25.11
+	pkgdesc = Scrollable-tiling Wayland compositor
+	url = https://github.com/YaLTeR/niri
+	arch = amd64
+	arch = arm64
+	depends = libudev1
+	depends = libgbm1
+	depends = libxkbcommon0
+	depends = libegl1
+	depends = libinput10
+	depends = libdbus-1-3
+	depends = libsystemd0
+	depends = libseat1
+	depends = libpipewire-0.3-0
+	depends = libpango1.0-dev
+	depends = libdisplay-info3 | libdisplay-info2 | libdisplay-info1
+	makedepends = gcc
+	makedepends = cargo>=1.85 | rustup
+	makedepends = clang
+	makedepends = git-lfs
+	makedepends = libudev-dev
+	makedepends = libgbm-dev
+	makedepends = libxkbcommon-dev
+	makedepends = libegl1-mesa-dev
+	makedepends = libwayland-dev
+	makedepends = libinput-dev
+	makedepends = libdbus-1-dev
+	makedepends = libsystemd-dev
+	makedepends = libseat-dev
+	makedepends = libpipewire-0.3-dev
+	makedepends = libpango1.0-dev
+	makedepends = libdisplay-info-dev
+	optdepends = fuzzel: application launcher similar to rofi drun mode
+	optdepends = waybar: highly customizable Wayland bar
+	optdepends = alacritty: a cross-platform OpenGL terminal emulator
+	optdepends = mako-notifier: notification daemon for Wayland
+	optdepends = swaybg: wallpaper tool for Wayland compositors
+	optdepends = swaylock: screen locker for Wayland
+	optdepends = xdg-desktop-portal-gtk: implements most of the basic functionality
+	optdepends = xdg-desktop-portal-gnome: screencasting support
+	optdepends = gnome-keyring: implements the secret portal, for certain apps to work
+	optdepends = policykit-1-gnome: when apps need to ask for root permissions
+	conflicts = niri
+	conflicts = niri-bin
+	provides = niri
+	license = GPL-3.0-or-later
+	repology = project: niri
+	source = https://github.com/YaLTeR/niri.git
+
+pkgname = niri-git
+---
 pkgbase = niri
 	pkgver = 25.11
 	pkgdesc = Scrollable-tiling Wayland compositor
@@ -11254,6 +11334,22 @@ pkgbase = pacstall
 	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.3.8.zip
 
 pkgname = pacstall
+---
+pkgbase = pacstallion-deb
+	gives = pacstallion
+	pkgver = 1.0.1
+	pkgdesc = Pacstall GUI
+	url = https://pacstallion.imy.com.ly/
+	arch = amd64
+	arch = arm64
+	license = GPL-3.0-only
+	maintainer = IMYdev <omranmansour096@gmail.com>
+	source_amd64 = https://github.com/IMYdev/pacstallion/releases/download/v1.0.1/pacstallion.amd64.1.0.1.deb
+	sha256sums_amd64 = 85490de25d7c412d29ac42162a650a1d44304807de3bdd344688f4780a558345
+	source_arm64 = https://github.com/IMYdev/pacstallion/releases/download/v1.0.1/pacstallion.arm64.1.0.1.deb
+	sha256sums_arm64 = 66de07708062714634b3bfb97e50155d8e15736b100e2b1663f19ddc4c5e2761
+
+pkgname = pacstallion-deb
 ---
 pkgbase = pacup-git
 	gives = pacup
@@ -13682,8 +13778,8 @@ pkgbase = scangearmp2-sane-git
 	gives = scangearmp2
 	pkgver = 4.20.1
 	pkgrel = 1
-	pkgdesc = Scanner driver and gui for Canon Pixma MG3000 series
-	url = https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx
+	pkgdesc = Sane backend for the canon's scanner
+	url = https://github.com/ThierryHFR/scangearmp2
 	arch = amd64
 	arch = i386
 	depends = libatk1.0-0>=2.2.0
@@ -17634,7 +17730,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.18.1b
+	pkgver = 1.18.4b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -17671,8 +17767,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.18.1b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 30ca665eb275d5a1515de506bf7e290eb6792a8fdfe5540cfe4ed6a0f1c31d3c
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.18.4b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 23ed45c78fbfe9a50ff3d2dd20bb54c681c11305865a75a91ecb527026a53b12
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -17682,8 +17778,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.18.1b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = 45227d672ee192cd49c3e02d6dc1fcc66aad9e20565d60deb74b80ed483f7eb3
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.18.4b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = 9c3821d54c6813605017596ad52a38d3e0b2199494ce596c62b798936e9a6176
 
 pkgname = zen-browser-bin
 ---

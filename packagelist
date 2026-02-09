@@ -85,6 +85,8 @@ conky-manager-zcot-git
 coreutils-single
 cortile
 cortile-bin
+cosmic-ext-alternative-startup-git
+cosmic-ext-niri-git
 couture
 cromite-bin
 ctop-bin
@@ -522,6 +524,7 @@ nerd-fonts-fira-code
 nerd-fonts-hack
 nerd-fonts-jetbrains-mono
 niri
+niri-git
 nodejs-deb
 nodejs-lts-deb
 nofetch
@@ -581,6 +584,7 @@ pacstall-docker-builder-git
 pacstall-gui-git
 pacstall-mime-git
 pacstall-qa-git
+pacstallion-deb
 pacup
 pacup-git
 panagement

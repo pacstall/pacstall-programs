@@ -1,0 +1,12 @@
+pkgbase = cosmic-ext-alternative-startup-git
+	pkgver = 0.1.0
+	pkgdesc = Alternative entry point for cosmic-session's compositor ipc interface
+	url = https://github.com/Drakulix/cosmic-ext-alternative-startup
+	arch = amd64
+	arch = arm64
+	makedepends = cargo
+	provides = cosmic-ext-alternative-startup
+	license = GPL-3.0-or-later
+	source = https://github.com/Drakulix/cosmic-ext-alternative-startup.git
+
+pkgname = cosmic-ext-alternative-startup-git

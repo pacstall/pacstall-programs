@@ -2,9 +2,9 @@ pkgname="scangearmp2-sane-git"
 pkgver="4.20.1"
 pkgrel=1
 gives="scangearmp2"
-pkgdesc="Scanner driver and gui for Canon Pixma MG3000 series"
+pkgdesc="Sane backend for the canon's scanner"
 arch=("amd64" "i386")
-url='https://www.canon-europe.com/support/consumer_products/products/fax__multifunctionals/inkjet/pixma_mg_series/pixma_mg3000.aspx'
+url='https://github.com/ThierryHFR/scangearmp2'
 depends=(
   "libatk1.0-0>=2.2.0"
   "libc6>=2.7"
@@ -34,8 +34,6 @@ replaces=("${gives}-deb")
 conflicts=("${gives}-deb")
 maintainer=("aKqir24 <aKqir24@github.com>")
 source=("https://github.com/ThierryHFR/scangearmp2.git")
-
-
 post_install() {
   cd "${srcdir}"
   fancy_message info "Installing ${gives}.desktop file"
