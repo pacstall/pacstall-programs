@@ -1066,9 +1066,9 @@ pkgbase = bluetuith-bin
 	repology = project: bluetuith-bin
 	source_amd64 = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.6/bluetuith_0.2.6_Linux_x86_64.tar.gz
 	sha256sums_amd64 = f206731d16c446ade39907dc88f961ed3ef07a12911cf7432a2b768aefa62717
-	source_i386 = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.6/bluetuith_0.2.6_Linux_i686.tar.gz
+	source_i386 = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.6/bluetuith_0.2.6_Linux_i386.tar.gz
 	sha256sums_i386 = 5feece622f7af5e86dcb4d6207f7b33499af9c7408d223fe59defc73af2d98f8
-	source_arm64 = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.6/bluetuith_0.2.6_Linux_aarch64.tar.gz
+	source_arm64 = https://github.com/bluetuith-org/bluetuith/releases/download/v0.2.6/bluetuith_0.2.6_Linux_arm64.tar.gz
 	sha256sums_arm64 = 63af4aae960c1754f8931c9022d926a29e9da6f82269c181d1726aad61312d92
 
 pkgname = bluetuith-bin
