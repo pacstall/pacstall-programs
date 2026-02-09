@@ -694,6 +694,7 @@ rpcs3-app
 rpi-imager-app
 rsbbi-git
 rstudio-deb
+rtl8821cu-dkms-git
 rust-bin
 rust-bindgen-git
 rust-motd-deb

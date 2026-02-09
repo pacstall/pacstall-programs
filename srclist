@@ -13558,6 +13558,36 @@ pkgbase = rstudio-deb
 
 pkgname = rstudio-deb
 ---
+pkgbase = rtl8821cu-dkms-git
+	gives = 8821cu-20210916
+	pkgver = 5.12.0.4
+	pkgdesc = Linux Driver for USB WiFi Adapters that are based on the RTL8811CU, RTL8821CU, RTL8821CUH and RTL8731AU Chipsets
+	url = https://github.com/morrownr/8821cu-20210916
+	arch = amd64
+	arch = arm64
+	depends = dkms
+	depends = curl
+	depends = kmod
+	depends = bc
+	depends = iproute2
+	optdepends = usb-modeswitch: A tool that can switch the adapter from CD-ROM mode to Wi-Fi mode
+	pacdeps = firmware-realtek-deb
+	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: rtl8821cu-dkms-git
+	source = https://github.com/morrownr/8821cu-20210916.git
+	makedepends_amd64 = bash
+	makedepends_amd64 = nano
+	makedepends_amd64 = bc
+	makedepends_amd64 = build-essential
+	makedepends_amd64 = linux-headers-amd64
+	makedepends_arm64 = bash
+	makedepends_arm64 = nano
+	makedepends_arm64 = bc
+	makedepends_arm64 = build-essential
+	makedepends_arm64 = linux-headers-arm64
+
+pkgname = rtl8821cu-dkms-git
+---
 pkgbase = rust-bin
 	gives = rust
 	pkgver = 1.92.0
