@@ -1322,7 +1322,7 @@ pkgbase = canon-pixma-mg3000-complete-deb
 	depends = libstdc++6
 	depends = binutils
 	depends = cups
-	depends = libxml2>=2.7.4
+	depends = libxml2>=2.7.4 | libxml2-16
 	depends = libcupsimage2>=1.4.0
 	depends = libusb-0.1-4
 	depends = libpopt0
