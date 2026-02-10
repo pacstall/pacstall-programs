@@ -12,7 +12,7 @@ depends=(
   "libstdc++6"
   "binutils"
   "cups"
-  "libxml2>=2.7.4"
+  "libxml2>=2.7.4 | libxml2-16"
   "libcupsimage2>=1.4.0"
   "libusb-0.1-4"
   "libpopt0"
