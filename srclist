@@ -8430,6 +8430,23 @@ pkgbase = marktext-deb
 
 pkgname = marktext-deb
 ---
+pkgbase = master-pdf-editor-deb
+	gives = master-pdf-editor
+	pkgver = 4.3.89
+	pkgdesc = Complete solution for creation and editing PDF files - Free version without watermark
+	url = https://code-industry.net/free-pdf-editor/
+	arch = i386
+	arch = amd64
+	replaces = master-pdf-editor
+	maintainer = Fabio Di Giorgio <ravnos@duck.com>
+	repology = project: master-pdf-editor
+	source_i386 = https://code-industry.net/public/master-pdf-editor-4.3.89_i386.deb
+	sha256sums_i386 = 6d14a288dfdafe9c67112d130189ce95bfb4fcebdb7b3af064ae08af4e033047
+	source_amd64 = https://code-industry.net/public/master-pdf-editor-4.3.89_qt5.amd64.deb
+	sha256sums_amd64 = f873acade96df48881c997baef7b8ba5284a941025ab29c9d68173c6203a444a
+
+pkgname = master-pdf-editor-deb
+---
 pkgbase = mcontrolcenter-bin
 	gives = mcontrolcenter
 	pkgver = 0.5.0
