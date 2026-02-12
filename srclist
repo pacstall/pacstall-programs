@@ -565,6 +565,30 @@ pkgbase = arduino-ide-bin
 
 pkgname = arduino-ide-bin
 ---
+pkgbase = artemisrgb-bin
+	gives = artemisrgb
+	pkgver = 1.2025.0819.0
+	pkgdesc = Universal RGB control software
+	url = https://artemis-rgb.com/
+	arch = x86_64
+	depends = dotnet-runtime-8.0 | dotnet-runtime-7.0
+	depends = hicolor-icon-theme
+	depends = libc6
+	depends = bash
+	depends = zlib1g
+	depends = fontconfig
+	depends = libstdc++6
+	makedepends = unzip
+	conflicts = artemisrgb
+	conflicts = artemisrgb-git
+	provides = artemisrgb
+	license = custom:PolyForm Noncommercial License 1.0.0
+	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
+	source = artemisrgb-bin-1.2025.0819.0.zip::https://updating.artemis-rgb.com/api/artifacts/3795832408
+	sha256sums = 424b0abdc63a60709cbc217393c80d1112aa6f97a4b0e6a797c2fd7d59e6a790
+
+pkgname = artemisrgb-bin
+---
 pkgbase = asdf-vm
 	pkgver = 0.18.0
 	pkgdesc = Extendable version manager with support for Ruby, Node.js, Elixir, Erlang & more
