@@ -1214,7 +1214,7 @@ pkgname = brave-browser-deb
 ---
 pkgbase = brave-browser-nightly-deb
 	gives = brave-browser-nightly
-	pkgver = 1.87.139
+	pkgver = 1.89.26
 	pkgdesc = The Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel
 	url = https://brave.com/
 	arch = amd64
@@ -1226,8 +1226,8 @@ pkgbase = brave-browser-nightly-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-nightly-bin
-	source = https://github.com/brave/brave-browser/releases/download/v1.87.139/brave-browser-nightly_1.87.139_amd64.deb
-	sha256sums = 589dcc7af0652d45a7f0d84ccba796716e15c6eaf73b9666a0d821fb53bd3896
+	source = https://github.com/brave/brave-browser/releases/download/v1.89.26/brave-browser-nightly_1.89.26_amd64.deb
+	sha256sums = 5a2783f5fd873a5ec9815a3ed942d4587e9f1da6a76c404313fc87bac6d0ecad
 
 pkgname = brave-browser-nightly-deb
 ---
