@@ -1,0 +1,9 @@
+pkgbase = rhino-wallpapers-git
+	gives = rhino-wallpapers
+	pkgver = 0.0.1
+	pkgdesc = Default Rhino Linux wallpapers
+	arch = all
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://github.com/rhino-linux/wallpapers
+
+pkgname = rhino-wallpapers-git
