@@ -1,6 +1,6 @@
 pkgname="discord"
-pkgver="0.0.119"
-maintainer=("Elsie19 <elsie19@pm.me>")
+pkgver="0.0.123"
+maintainer=("Sonakrie <sonakrie@shockinteractive.xyz>")
 source=("@${pkgname}~${pkgver}::https://dl.discordapp.net/apps/linux/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 url='https://discord.com/'
 depends=("libc6" "libasound2" "libatomic1" "libnotify4" "libnspr4" "libnss3" "libstdc++6" "libxss1" "libxtst6" "libayatana-appindicator3-1" "libc++1")
