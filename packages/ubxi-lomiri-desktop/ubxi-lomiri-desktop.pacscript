@@ -8,7 +8,7 @@ depends=(
   "morph-browser" "lomiri-desktop-session" "lomiri-download-manager" "lomiri-greeter" "lomiri-indicator-location"
   "lomiri-indicator-transfer-download-manager" "lomiri-polkit-agent" "libqt5multimedia5-plugins"
   "lomiri-location-service-bin" "qml-module-lomiri-notifications" "repowerd" "usb-modeswitch" "xwayland"
-  "mesa-vulkan-drivers" "mir-graphics-drivers-desktop"
+  "mesa-libgallium" "mesa-vulkan-drivers" "mir-graphics-drivers-desktop"
   "lomiri-addressbook-app" "lomiri-calculator-app" "lomiri-calendar-app" "lomiri-camera-app" "lomiri-clock-app"
   "lomiri-cloudsync-app" "lomiri-dekko-app" "lomiri-docviewer-app" "lomiri-filemanager-app" "lomiri-gallery-app"
   "lomiri-teleports-app" "lomiri-tfamanager-app" "lomiri-weather-app" "lomiri-mediaplayer-app" "lomiri-music-app"
