@@ -12985,6 +12985,22 @@ pkgbase = rhino-lightdm-theme-git
 
 pkgname = rhino-lightdm-theme-git
 ---
+pkgbase = rhino-lomiri-default-settings-git
+	gives = rhino-lomiri-default-settings
+	pkgver = 0.0.1
+	pkgdesc = Rhino Linux branding for Lomiri Desktop
+	arch = all
+	depends = lomiri-schemas
+	depends = desktop-base
+	depends = dconf-gsettings-backend | gsettings-backend
+	depends = qmltermwidget-common
+	pacdeps = rhino-branding-git
+	pacdeps = rhino-wallpapers-git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/rhino-linux/lomiri-default-settings.git
+
+pkgname = rhino-lomiri-default-settings-git
+---
 pkgbase = rhino-neofetch-git
 	gives = rhino-neofetch
 	pkgver = 0.0.1
