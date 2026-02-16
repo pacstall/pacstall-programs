@@ -12868,6 +12868,16 @@ pkgbase = resticprofile-bin
 
 pkgname = resticprofile-bin
 ---
+pkgbase = rhino-branding-git
+	gives = rhino-branding
+	pkgver = 0.0.1
+	pkgdesc = Rhino branding
+	arch = all
+	maintainer = Elsie19 <elsie19@pm.me>
+	source = https://github.com/rhino-linux/branding.git
+
+pkgname = rhino-branding-git
+---
 pkgbase = rhino-calamares-settings-git
 	gives = rhino-calamares-settings
 	pkgver = 0.0.1
