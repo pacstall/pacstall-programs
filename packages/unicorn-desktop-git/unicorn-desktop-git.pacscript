@@ -67,11 +67,11 @@ backup=('etc/X11/xorg.conf.d/50-synaptics.conf')
 
 build() {
   cd "unicorn"
-  mkdir -p "${pkgdir}/usr/share/backgrounds"
   mkdir -p "${pkgdir}/usr/share/doc"
   mkdir -p "${pkgdir}/etc/skel/.config"
   mkdir -p "${pkgdir}/usr/share/icons"
   mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
+  mkdir -p "${pkgdir}/usr/share/backgrounds/rhino"
   mkdir -p "${pkgdir}/usr/share/applications"
   mkdir -p "${pkgdir}/usr/share/plank/themes"
   mkdir -p "${pkgdir}/etc/skel/.lightpad"
