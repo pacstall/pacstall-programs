@@ -44,17 +44,15 @@ build() {
 }
 
 package() {
-  # Wallpapers for Plasma
-  for i in wallpapers/*; do
-    ln -sf "/usr/share/wallpapers/rhino/${i#*wallpapers/}" "${pkgdir}/usr/share/${i}"
-  done
-
   cd "${gives}"
   # Icons
   for i in svg png; do
     ln -sf "/usr/share/branding/rhino/logo.${i}" "${pkgdir}/usr/share/icons/logo.${i}"
   done
   cp rhino/icons/{uniDesktop,uniPlasma,uniSearch}.png "${pkgdir}/usr/share/icons"
+
+  # Wallpapers for Plasma
+  cp -r rhino/wallpapers "${pkgdir}/usr/share"
 
   # Plasma Global Theme
   cp -r plasma/look-and-feel/org.rhinolinux.unicorn.desktop "${pkgdir}/usr/share/plasma/look-and-feel"
