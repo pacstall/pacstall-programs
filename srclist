@@ -15585,7 +15585,7 @@ pkgname = u-boot-mobian-deb
 pkgbase = ubxi-kde-desktop-git
 	gives = ubxi-kde-desktop
 	pkgver = 0.0.1
-	pkgrel = 4
+	pkgrel = 5
 	pkgdesc = UBXI KDE Plasma Desktop
 	priority = required
 	arch = amd64
@@ -15627,12 +15627,15 @@ pkgbase = ubxi-kde-desktop-git
 	optdepends = plasma-thunderbolt: Plasma addons for managing Thunderbolt devices
 	optdepends = powerdevil: Global power saver settings
 	pacdeps = rhino-ubxi-core
+	pacdeps = rhino-wallpapers-git
+	pacdeps = rhino-branding-git
 	replaces = unicorn-desktop
 	replaces = unicorn-mobile
 	compatible = ubuntu:*
 	license = GPL-3.0-or-later
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	source = https://github.com/rhino-linux/ubxi-kde-desktop.git
+	source = https://github.com/rhino-linux/wallpapers.git
 
 pkgname = ubxi-kde-desktop-git
 ---

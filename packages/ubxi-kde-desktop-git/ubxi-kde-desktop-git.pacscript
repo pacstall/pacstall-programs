@@ -1,8 +1,11 @@
 pkgname="ubxi-kde-desktop-git"
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="4"
-source=("https://github.com/rhino-linux/ubxi-kde-desktop.git")
+pkgrel="5"
+source=(
+  "https://github.com/rhino-linux/ubxi-kde-desktop.git"
+  "https://github.com/rhino-linux/wallpapers.git"
+)
 depends=(
   "plasma-desktop" "konsole" "systemsettings" "plasma-nm" "plasma-disks"
   "plasma-firewall" "plasma-pa" "plasma-systemmonitor" "kinfocenter" "kmenuedit"
@@ -19,7 +22,7 @@ optdepends=(
   "powerdevil: Global power saver settings"
 )
 makedepends=("plasma-session-wayland")
-pacdeps=("rhino-ubxi-core")
+pacdeps=("rhino-ubxi-core" "rhino-wallpapers-git" "rhino-branding-git")
 replaces=("unicorn-desktop" "unicorn-mobile")
 gives="ubxi-kde-desktop"
 priority='required'
@@ -29,7 +32,6 @@ compatible=('ubuntu:*')
 license=('GPL-3.0-or-later')
 
 build() {
-  cd "${gives}"
   mkdir -p "${pkgdir}/usr/share/icons"
   mkdir -p "${pkgdir}/usr/share/wallpapers"
   mkdir -p "${pkgdir}/usr/share/plasma/desktoptheme"
@@ -42,14 +44,17 @@ build() {
 }
 
 package() {
+  # Wallpapers for Plasma
+  for i in wallpapers/*; do
+    ln -sf "/usr/share/wallpapers/rhino/${i#*wallpapers/}" "${pkgdir}/usr/share/${i}"
+  done
+
   cd "${gives}"
   # Icons
-  install -Dm644 "rhino/logos/logo.png" -t "${pkgdir}/usr/share/icons"
-  install -Dm644 "rhino/logos/logo.svg" -t "${pkgdir}/usr/share/icons"
+  for i in svg png; do
+    ln -sf "/usr/share/branding/rhino/logo.${i}" "${pkgdir}/usr/share/icons/logo.${i}"
+  done
   cp rhino/icons/{uniDesktop,uniPlasma,uniSearch}.png "${pkgdir}/usr/share/icons"
-
-  # Wallpapers for Plasma
-  cp -r rhino/wallpapers "${pkgdir}/usr/share"
 
   # Plasma Global Theme
   cp -r plasma/look-and-feel/org.rhinolinux.unicorn.desktop "${pkgdir}/usr/share/plasma/look-and-feel"
