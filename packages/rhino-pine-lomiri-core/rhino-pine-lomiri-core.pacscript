@@ -1,6 +1,6 @@
 pkgname="rhino-pine-lomiri-core"
 source=("https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty")
-pacdeps=("rhino-wallpapers-git" "rhino-branding-git" "ubxi-lomiri-desktop" "u-boot-mobian-deb" "mobile-usb-networking-deb")
+pacdeps=("ubxi-lomiri-desktop" "u-boot-mobian-deb" "mobile-usb-networking-deb")
 depends=("initramfs-tools")
 if [[ -f /usr/bin/enable-modem ]]; then
   depends+=("eg25-manager | ofono-scripts" "modemmanager | ofono" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "gpsd")
@@ -11,7 +11,6 @@ compatible=("ubuntu:devel" "ubuntu:questing" "ubuntu:resolute")
 priority="essential"
 arch=("all")
 pkgver="2025.4"
-pkgrel="2"
 
 package() {
   mkdir -p "${pkgdir}/usr/share/wireplumber/wireplumber.conf.d"

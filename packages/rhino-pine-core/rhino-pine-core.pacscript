@@ -1,6 +1,6 @@
 pkgname="rhino-pine-core"
 source=("https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png")
-pacdeps=("unicorn-mobile-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-wallpapers-git" "rhino-branding-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "rhino-hotfix-git" "u-boot-mobian-deb" "mobile-usb-networking-deb")
+pacdeps=("rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-wallpapers-git" "rhino-branding-git" "unicorn-mobile-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "rhino-hotfix-git" "u-boot-mobian-deb" "mobile-usb-networking-deb")
 depends=("initramfs-tools" "printer-driver-all-enforce")
 if [[ -f /usr/bin/enable-modem ]]; then
   depends+=("eg25-manager | ofono-scripts" "modemmanager | ofono" "gnome-calls" "gnome-contacts" "chatty" "callaudiod" "feedbackd" "gpsd")

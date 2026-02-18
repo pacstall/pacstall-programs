@@ -1,12 +1,9 @@
 pkgbase = rhino-pine-lomiri-core
 	pkgver = 2025.4
-	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile (Lomiri) software
 	priority = essential
 	arch = all
 	depends = initramfs-tools
-	pacdeps = rhino-wallpapers-git
-	pacdeps = rhino-branding-git
 	pacdeps = ubxi-lomiri-desktop
 	pacdeps = u-boot-mobian-deb
 	pacdeps = mobile-usb-networking-deb
