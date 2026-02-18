@@ -13207,6 +13207,7 @@ pkgname = rhino-ubxi-core
 pkgbase = rhino-wallpapers-git
 	gives = rhino-wallpapers
 	pkgver = 0.0.1
+	pkgrel = 2
 	pkgdesc = Default Rhino Linux wallpapers
 	arch = all
 	maintainer = Elsie19 <elsie19@pm.me>
