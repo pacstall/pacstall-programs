@@ -8,7 +8,7 @@ pkgdesc="Rhino branding"
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 package() {
-  for i in "svg" "png"; do
+  for i in svg png; do
     install -Dm644 branding/logo."${i}" -t "${pkgdir}/usr/share/branding/rhino/"
   done
   emb="${pkgdir}/usr/share/icons/desktop-base/scalable/emblems/"
