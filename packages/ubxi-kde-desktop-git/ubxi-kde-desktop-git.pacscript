@@ -2,10 +2,7 @@ pkgname="ubxi-kde-desktop-git"
 arch=("amd64" "arm64")
 pkgver="0.0.1"
 pkgrel="5"
-source=(
-  "https://github.com/rhino-linux/ubxi-kde-desktop.git"
-  "https://github.com/rhino-linux/wallpapers.git"
-)
+source=("https://github.com/rhino-linux/ubxi-kde-desktop.git")
 depends=(
   "plasma-desktop" "konsole" "systemsettings" "plasma-nm" "plasma-disks"
   "plasma-firewall" "plasma-pa" "plasma-systemmonitor" "kinfocenter" "kmenuedit"
