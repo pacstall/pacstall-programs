@@ -54,6 +54,7 @@ pacdeps=(
   "adw-gtk-theme"
   "rhino-xfwm4-theme-git"
   "rhino-wallpapers-git"
+  "rhino-branding-git"
   "vala-panel-appmenu-xfce4-git"
   "xfce4-dynamic-workspaces-rs-bin"
 )
@@ -86,7 +87,7 @@ build() {
 
 package() {
   for i in wallpapers/*; do
-    for j in "rhino" "xfce"; do
+    for j in rhino xfce; do
       ln -sf "/usr/share/wallpapers/rhino/${i#*wallpapers/}" "${pkgdir}/usr/share/backgrounds/${j}/${i#*wallpapers/}"
     done
   done
@@ -113,8 +114,9 @@ package() {
   cp -r unicorn-dashboard "${pkgdir}/usr/share/themes"
   install -Dm644 "50-synaptics.conf" -t "${pkgdir}/etc/X11/xorg.conf.d"
   install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
-  install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
-  install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
+  for i in svg png; do
+    ln -sf "/usr/share/branding/rhino/logo.${i}" "${pkgdir}/usr/share/icons/logo.${i}"
+  done
 }
 
 post_install() {

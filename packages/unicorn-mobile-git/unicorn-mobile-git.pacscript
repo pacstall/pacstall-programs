@@ -44,6 +44,7 @@ pacdeps=(
   "adw-gtk-theme"
   "rhino-xfwm4-theme-git"
   "rhino-wallpapers-git"
+  "rhino-branding-git"
   "xfce4-dynamic-workspaces-rs-bin"
 )
 gives="unicorn-mobile"
@@ -105,8 +106,9 @@ package() {
   cp -r unicorn-dashboard "${pkgdir}/usr/share/themes"
   install -Dm644 "50-synaptics.conf" -t "${pkgdir}/etc/X11/xorg.conf.d"
   install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
-  install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
-  install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
+  for i in svg png; do
+    ln -sf "/usr/share/branding/rhino/logo.${i}" "${pkgdir}/usr/share/icons/logo.${i}"
+  done
   cp -r onboard "${pkgdir}/etc/skel/.local/share"
   cp -r Dot-Transparent "${pkgdir}/usr/share/icons"
 }

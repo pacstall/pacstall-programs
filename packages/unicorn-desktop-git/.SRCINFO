@@ -50,6 +50,7 @@ pkgbase = unicorn-desktop-git
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
 	pacdeps = rhino-wallpapers-git
+	pacdeps = rhino-branding-git
 	pacdeps = vala-panel-appmenu-xfce4-git
 	pacdeps = xfce4-dynamic-workspaces-rs-bin
 	replaces = unicorn-mobile
