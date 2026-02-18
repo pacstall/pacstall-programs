@@ -1,6 +1,7 @@
 pkgbase = rhino-branding-git
 	gives = rhino-branding
 	pkgver = 0.0.1
+	pkgrel = 2
 	pkgdesc = Rhino branding
 	arch = all
 	maintainer = Elsie19 <elsie19@pm.me>
