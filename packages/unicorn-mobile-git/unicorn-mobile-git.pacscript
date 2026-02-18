@@ -1,8 +1,11 @@
 pkgname="unicorn-mobile-git"
-source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
+source=(
+  "https://github.com/rhino-linux/unicorn.git#branch=mobile"
+  "https://github.com/rhino-linux/wallpapers.git"
+)
 arch=("all")
 pkgver="0.0.1"
-pkgrel="6"
+pkgrel="7"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -40,6 +43,7 @@ pacdeps=(
   "cortile"
   "adw-gtk-theme"
   "rhino-xfwm4-theme-git"
+  "rhino-wallpapers-git"
   "xfce4-dynamic-workspaces-rs-bin"
 )
 gives="unicorn-mobile"
@@ -72,6 +76,10 @@ build() {
 }
 
 package() {
+  ln -s "/usr/share/wallpapers/rhino" "${pkgdir}/usr/share/backgrounds/rhino"
+  for i in wallpapers/*; do
+    ln -sf "/usr/share/wallpapers/rhino/${i#*wallpapers/}" "${pkgdir}/usr/share/backgrounds/xfce/${i#*wallpapers/}"
+  done
   cd "unicorn"
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
@@ -87,11 +95,9 @@ package() {
   cp -r failsafe/xfce4/* "${pkgdir}/etc/xdg/xdg-unicorn/xfce4"
   install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
   install -Dm644 "60-unicorn.conf" -t "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
-  cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
   cp docks.ini "${pkgdir}/etc/skel/.config"
   cp onboard.ini "${pkgdir}/usr/share/onboard"
-  cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
   cp icons/* "${pkgdir}/usr/share/icons"
   cp applications/* "${pkgdir}/usr/share/applications"
   cp lightpad/* "${pkgdir}/etc/skel/.lightpad"
