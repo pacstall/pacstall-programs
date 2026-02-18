@@ -85,7 +85,6 @@ build() {
 }
 
 package() {
-  ln -s "/usr/share/wallpapers/rhino" "${pkgdir}/usr/share/backgrounds/rhino"
   for i in wallpapers/*; do
     for j in "rhino" "xfce"; do
       ln -sf "/usr/share/wallpapers/rhino/${i#*wallpapers/}" "${pkgdir}/usr/share/backgrounds/${j}/${i#*wallpapers/}"
