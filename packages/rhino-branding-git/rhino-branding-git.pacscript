@@ -11,5 +11,7 @@ package() {
   for i in "svg" "png"; do
     install -Dm644 branding/logo."${i}" -t "${pkgdir}/usr/share/branding/rhino/"
   done
-  ln -sf "/usr/share/branding/rhino/logo.svg" "${pkgdir}/usr/share/icons/desktop-base/scalable/emblems/emblem-rhino.svg"
+  emb="${pkgdir}/usr/share/icons/desktop-base/scalable/emblems/"
+  mkdir -p "${emb}"
+  ln -sf "/usr/share/branding/rhino/logo.svg" "${emb}/emblem-rhino.svg"
 }
