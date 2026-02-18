@@ -1,12 +1,14 @@
 pkgbase = rhino-ubxi-core
 	pkgver = 2025.4
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 	priority = essential
 	arch = all
 	depends = printer-driver-all-enforce
 	pacdeps = rhino-kvantum-theme-git
 	pacdeps = rhino-plymouth-theme-git
+	pacdeps = rhino-wallpapers-git
+	pacdeps = rhino-branding-git
 	pacdeps = rhino-pkg-git
 	pacdeps = rhino-neofetch-git
 	pacdeps = rhino-system-git
