@@ -1,9 +1,10 @@
 pkgname="xapps-common-deb"
 gives="xapps-common"
 arch=("all")
-pkgver="2.8.2"
+pkgver="3.2.2"
+pacdeps=("xapp-symbolic-icons-deb")
 repology=("project: xapps")
-source=("http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_${pkgver}+virginia_all.deb")
-sha256sums=("5423e5bf2309a687e651f9f0c90e8f107e58c6512614787147e19e7e96474f1a")
+source=("http://packages.linuxmint.com/pool/backport/x/xapp/xapps-common_${pkgver}+zena_all.deb")
+sha256sums=("570aeb2c8bf5f8083dab1d517962c7ff6b07536c9f966b5ccb98ac30fe438c6c")
 pkgdesc="Components which are common to multiple desktop environments and required to implement cross-DE solutions"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")

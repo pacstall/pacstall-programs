@@ -6,4 +6,4 @@ source=("https://github.com/lakinduakash/linux-wifi-hotspot/releases/download/v$
 pkgdesc="Feature-rich wifi hotspot creator for Linux which provides both GUI and command-line interface. It is also able to create a hotspot using the same wifi card which is connected to an AP already ( Similar to Windows 10)."
 sha256sums=("3231badec87e3183f61fea43dd6a71a9be881d301e4e65a620855ea3d6f21ad4")
 arch=('amd64')
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")

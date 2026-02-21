@@ -22,7 +22,7 @@ pkgbase = touchegg-git
 	breaks = touchegg-bin
 	breaks = touchegg-deb
 	breaks = touchegg-app
-	maintainer = Zahrun <Zahrun@github.com>
+	maintainer = Zahrun <zahrunAtmurenaDotio>
 	source = https://github.com/JoseExposito/touchegg.git
 
 pkgname = touchegg-git

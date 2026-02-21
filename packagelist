@@ -30,6 +30,7 @@ audiorelay-bin
 audiorelay-deb
 awesome-git
 aws-cli-v2-bin
+awww-git
 balena-etcher-deb
 bat
 bat-deb
@@ -59,6 +60,7 @@ btop-bin
 btrfs-assistant
 btrfs-du-bin
 cachyos-ananicy-rules-git
+canon-pixma-mg3000-complete-deb
 cantata
 caprine-deb
 capsfix-git
@@ -83,6 +85,8 @@ conky-manager-zcot-git
 coreutils-single
 cortile
 cortile-bin
+cosmic-ext-alternative-startup-git
+cosmic-ext-niri-git
 couture
 cromite-bin
 ctop-bin
@@ -171,6 +175,8 @@ firefox-deb
 firefox-developer-edition-bin
 firefox-nightly-bin
 firefox-nightly-deb
+firmware-brcm80211-deb
+firmware-realtek-deb
 fishui-git
 floorp-bin
 flyctl-bin
@@ -331,6 +337,7 @@ lenovolegionlinux-git
 lens
 lf-bin
 libaquamarine-bin
+libation-deb
 libcamera-git
 libcs50-git
 libcutefish-git
@@ -403,6 +410,7 @@ maitreya-deb
 makedeb-deb
 mangohud
 marktext-deb
+master-pdf-editor-deb
 mcontrolcenter-bin
 mcpelauncher-linux-git
 mcpelauncher-ui-git
@@ -517,6 +525,7 @@ nerd-fonts-fira-code
 nerd-fonts-hack
 nerd-fonts-jetbrains-mono
 niri
+niri-git
 nodejs-deb
 nodejs-lts-deb
 nofetch
@@ -576,6 +585,7 @@ pacstall-docker-builder-git
 pacstall-gui-git
 pacstall-mime-git
 pacstall-qa-git
+pacstallion-deb
 pacup
 pacup-git
 panagement
@@ -597,6 +607,7 @@ pipes.sh-bin
 pipewire
 planner-git
 plasma-compact-shutdown-git
+plasma-kara
 plexmediaserver-deb
 polybar
 pomatez-deb
@@ -649,6 +660,7 @@ renegate
 reshade-shaders-git
 restic-bin
 resticprofile-bin
+rhino-branding-git
 rhino-calamares-settings-git
 rhino-core
 rhino-docker-builder-git
@@ -667,16 +679,16 @@ rhino-setup-git
 rhino-stampede-dev
 rhino-system-git
 rhino-ubxi-core
+rhino-wallpapers-git
 rhino-xfwm4-theme-git
 rhinu-pkg-git
 rider-bin
 rio-wayland-deb
 rio-x11-deb
 rnnoise
-rofi:pkgbase
-rofi:rofi-dev
-rofi:rofi
+rofi
 rofi-emoji
+rofi-wayland
 rofi-x11
 rojo-bin
 rosary-deb
@@ -693,6 +705,7 @@ rustrover-bin
 sayonara
 sayonara-git
 sbt-deb
+scangearmp2-sane-git
 schildichat-deb
 scrcpy
 sed
@@ -849,6 +862,7 @@ wine-staging-git
 winetricks-git
 wlrobs
 wsysmon-bin
+xapp-symbolic-icons-deb
 xapps-common-deb
 xcb-util-errors
 xclicker-deb

@@ -90,7 +90,7 @@ pkgbase = kalendar-git
 	incompatible = debian:stretch
 	incompatible = debian:buster
 	incompatible = debian:bullseye
-	maintainer = Zahrun <Zahrun@github.com>
+	maintainer = Zahrun <zahrunAtmurenaDotio>
 	source = https://invent.kde.org/pim/kalendar.git
 
 pkgname = kalendar-git

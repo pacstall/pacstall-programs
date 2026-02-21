@@ -1,0 +1,9 @@
+pkgname="xapp-symbolic-icons-deb"
+gives="xapp-symbolic-icons"
+arch=("all")
+pkgver="1.0.9"
+repology=("project: xapp-symbolic-icons")
+source=("http://packages.linuxmint.com/pool/main/x/xapp-symbolic-icons/xapp-symbolic-icons_${pkgver}_all.deb")
+sha256sums=("dd99f740af5f4d1c374f3116748ec8e8c6ca791d2ce666e711d7f735a1b52ba5")
+pkgdesc="Set of symbolic icons for GTK applications"
+maintainer=("Zahrun <zahrunAtmurenaDotio>")

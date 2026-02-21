@@ -1,7 +1,7 @@
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
 	pkgver = 0.0.1
-	pkgrel = 6
+	pkgrel = 7
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
 	arch = all
@@ -39,6 +39,8 @@ pkgbase = unicorn-mobile-git
 	pacdeps = cortile
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
+	pacdeps = rhino-wallpapers-git
+	pacdeps = rhino-branding-git
 	pacdeps = xfce4-dynamic-workspaces-rs-bin
 	replaces = unicorn-desktop
 	replaces = unicorn-desktop-git
@@ -46,5 +48,6 @@ pkgbase = unicorn-mobile-git
 	backup = etc/X11/xorg.conf.d/50-synaptics.conf
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/unicorn.git#branch=mobile
+	source = https://github.com/rhino-linux/wallpapers.git
 
 pkgname = unicorn-mobile-git

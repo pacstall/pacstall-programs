@@ -1,10 +1,10 @@
 pkgbase = erlang-language-platform
-	pkgver = 2025-11-04
+	pkgver = 2026-01-15
 	pkgdesc = LSP server and CLI for the Erlang programming language
 	url = https://whatsapp.github.io/erlang-language-platform
 	arch = any
 	depends = erlang
-	makedepends = cargo-1.88 | cargo>=1.88
+	makedepends = cargo-1.91 | cargo>=1.91
 	makedepends = erlang
 	makedepends = rebar3
 	makedepends = sed
@@ -13,7 +13,8 @@ pkgbase = erlang-language-platform
 	license = Apache-2.0
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
-	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2025-11-04.tar.gz
-	sha256sums = 625afec4217799df80116ac68eaf58a20dd73fa8b1e7c19f1a0e829bb1a56bb0
+	repology = project: elp
+	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2026-01-15.tar.gz
+	sha256sums = de792fdc92234bbccc80242d3481e92cfee993ed90cf977c9b3b2f5e8c071d94
 
 pkgname = erlang-language-platform

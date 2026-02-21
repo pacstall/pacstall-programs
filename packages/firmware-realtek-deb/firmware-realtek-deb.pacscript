@@ -1,0 +1,9 @@
+pkgname="firmware-realtek-deb"
+gives="${pkgname%-deb}"
+pkgver="20251111"
+arch=("all")
+repology=("project: ${gives}")
+source=("http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/${gives}_${pkgver}-1_all.deb")
+pkgdesc="Firmware files for Realtek chips"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums=("d992227ed8b886a26aa15528153e2eaa68d625cd1b53d9fddef8c4632adda16a")

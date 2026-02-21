@@ -6,7 +6,7 @@ pkgbase = zsh-history-substring-search-git
 	depends = zsh
 	breaks = zsh-history-substring-search
 	replaces = zsh-history-substring-search
-	maintainer = Zahrun <Zahrun@github.com>
+	maintainer = Zahrun <zahrunAtmurenaDotio>
 	source = https://github.com/zsh-users/zsh-history-substring-search.git
 
 pkgname = zsh-history-substring-search-git

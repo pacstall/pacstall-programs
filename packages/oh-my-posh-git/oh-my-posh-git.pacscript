@@ -9,7 +9,7 @@ pacdeps=("nerd-fonts-hack")
 breaks=("${gives}")
 replaces=("${gives}")
 pkgdesc="A prompt theme engine for any shell"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 incompatible=('*:bookworm')
 external_connection=true
 

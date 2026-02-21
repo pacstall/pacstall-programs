@@ -7,7 +7,7 @@ depends=("gettext" "qml-module-org-kde-kirigami2" "qml-module-qtquick-layouts" "
 breaks=("${gives}" "${gives}-bin" "${gives}-app" "${gives}-deb")
 pkgdesc="A calendar application using Akonadi to sync with external services (Nextcloud, GMail, ...)"
 incompatible=("ubuntu:bionic" "ubuntu:focal" "ubuntu:jammy" "ubuntu:kinetic" "debian:stretch" "debian:buster" "debian:bullseye")
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 arch=('amd64')
 
 build() {

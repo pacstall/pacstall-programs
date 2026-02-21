@@ -1,6 +1,6 @@
 pkgbase = vscode-deb
 	gives = code
-	pkgver = 1.105.0
+	pkgver = 1.109.4
 	pkgdesc = lightweight but powerful source code editor
 	url = https://code.visualstudio.com/
 	arch = amd64
@@ -8,11 +8,11 @@ pkgbase = vscode-deb
 	arch = armhf
 	makedepends = gpg
 	maintainer = Diegiwg <diegiwg@gmail.com>
-	source_amd64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.105.0-1759933565_amd64.deb
-	sha256sums_amd64 = da3676be6826dcbaab1d054b546311971e121ed6645ffd054409eeaf42675d7e
-	source_arm64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.105.0-1759933569_arm64.deb
-	sha256sums_arm64 = 4fdbbe128ed43a7e0feef4310ec133ae3fab50e6bdd52f402b2ada29e3a863bb
-	source_armhf = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.105.0-1759933556_armhf.deb
-	sha256sums_armhf = d3864c639cbb4bef3eab202f86b42139f36159b5a4538abd97f912d1cd7c841b
+	source_amd64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.109.4-1771257466_amd64.deb
+	sha256sums_amd64 = 693451149c02f72f8d346e7e5c30afb80ab1f0d175a7ecf7c3ced0900bb83507
+	source_arm64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.109.4-1771257672_arm64.deb
+	sha256sums_arm64 = 742a44c2e0e8fd1c09dcf23f5527407956f3abafef31735d00e69d8b770058d6
+	source_armhf = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.109.4-1771257673_armhf.deb
+	sha256sums_armhf = 18cb079ed6f71f668c546d67cc35e6d2a9f6eef7baddc0909e2e62094b299d36
 
 pkgname = vscode-deb

@@ -1,8 +1,11 @@
 pkgname="unicorn-desktop-git"
-source=("https://github.com/rhino-linux/unicorn.git")
+source=(
+  "https://github.com/rhino-linux/unicorn.git"
+  "https://github.com/rhino-linux/wallpapers.git"
+)
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="7"
+pkgrel="8"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -50,6 +53,8 @@ pacdeps=(
   "cortile"
   "adw-gtk-theme"
   "rhino-xfwm4-theme-git"
+  "rhino-wallpapers-git"
+  "rhino-branding-git"
   "vala-panel-appmenu-xfce4-git"
   "xfce4-dynamic-workspaces-rs-bin"
 )
@@ -63,11 +68,11 @@ backup=('etc/X11/xorg.conf.d/50-synaptics.conf')
 
 build() {
   cd "unicorn"
-  mkdir -p "${pkgdir}/usr/share/backgrounds"
   mkdir -p "${pkgdir}/usr/share/doc"
   mkdir -p "${pkgdir}/etc/skel/.config"
   mkdir -p "${pkgdir}/usr/share/icons"
   mkdir -p "${pkgdir}/usr/share/backgrounds/xfce"
+  mkdir -p "${pkgdir}/usr/share/backgrounds/rhino"
   mkdir -p "${pkgdir}/usr/share/applications"
   mkdir -p "${pkgdir}/usr/share/plank/themes"
   mkdir -p "${pkgdir}/etc/skel/.lightpad"
@@ -81,6 +86,11 @@ build() {
 }
 
 package() {
+  for i in wallpapers/*; do
+    for j in rhino xfce; do
+      ln -sf "/usr/share/wallpapers/rhino/${i#*wallpapers/}" "${pkgdir}/usr/share/backgrounds/${j}/${i#*wallpapers/}"
+    done
+  done
   cd "unicorn"
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
@@ -96,18 +106,17 @@ package() {
   cp -r failsafe/xfce4/* "${pkgdir}/etc/xdg/xdg-unicorn/xfce4"
   install -Dm644 "unicorn.desktop" -t "${pkgdir}/usr/share/xsessions"
   install -Dm644 "60-unicorn.conf" -t "${pkgdir}/usr/share/lightdm/lightdm.conf.d"
-  cp -r rhino "${pkgdir}/usr/share/backgrounds/"
   cp -r rhinoplank "${pkgdir}/usr/share/plank/themes"
   cp docks.ini "${pkgdir}/etc/skel/.config"
-  cp rhino/* "${pkgdir}/usr/share/backgrounds/xfce"
   cp icons/* "${pkgdir}/usr/share/icons"
   cp applications/* "${pkgdir}/usr/share/applications"
   cp lightpad/* "${pkgdir}/etc/skel/.lightpad"
   cp -r unicorn-dashboard "${pkgdir}/usr/share/themes"
   install -Dm644 "50-synaptics.conf" -t "${pkgdir}/etc/X11/xorg.conf.d"
   install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
-  install -Dm644 "logo.png" -t "${pkgdir}/usr/share/icons"
-  install -Dm644 "logo.svg" -t "${pkgdir}/usr/share/icons"
+  for i in svg png; do
+    ln -sf "/usr/share/branding/rhino/logo.${i}" "${pkgdir}/usr/share/icons/logo.${i}"
+  done
 }
 
 post_install() {

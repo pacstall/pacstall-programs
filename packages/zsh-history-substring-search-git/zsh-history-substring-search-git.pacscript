@@ -7,7 +7,7 @@ depends=("zsh")
 breaks=("${gives}")
 replaces=("${gives}")
 pkgdesc="ZSH port of Fish history search (up arrow)"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 
 package() {
   cd "zsh-history-substring-search"

@@ -10,7 +10,7 @@ pkgbase = easy-zsh-config-git
 	pacdeps = zsh-history-substring-search-git
 	breaks = easy-zsh-config
 	replaces = easy-zsh-config
-	maintainer = Zahrun <Zahrun@github.com>
+	maintainer = Zahrun <zahrunAtmurenaDotio>
 	source = https://github.com/wszqkzqk/easy-zsh-config.git
 
 pkgname = easy-zsh-config-git

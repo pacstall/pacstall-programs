@@ -12,5 +12,5 @@ pacdeps_jammy=("libicu-deb")
 source=("https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_Unstable/amd64/fsearch_${pkgver}-1+3.15_amd64.deb")
 sha256sums=("40d5453743c8bca6e15a80b6d4d035594d6629048c98b07c1d30d61a182eebd8")
 pkgdesc="FSearch is a fast file search utility, inspired by Everything Search Engine"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 arch=('amd64')

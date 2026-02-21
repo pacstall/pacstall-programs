@@ -1,7 +1,7 @@
 pkgbase = ubxi-kde-desktop-git
 	gives = ubxi-kde-desktop
 	pkgver = 0.0.1
-	pkgrel = 4
+	pkgrel = 5
 	pkgdesc = UBXI KDE Plasma Desktop
 	priority = required
 	arch = amd64
@@ -43,6 +43,8 @@ pkgbase = ubxi-kde-desktop-git
 	optdepends = plasma-thunderbolt: Plasma addons for managing Thunderbolt devices
 	optdepends = powerdevil: Global power saver settings
 	pacdeps = rhino-ubxi-core
+	pacdeps = rhino-wallpapers-git
+	pacdeps = rhino-branding-git
 	replaces = unicorn-desktop
 	replaces = unicorn-mobile
 	compatible = ubuntu:*

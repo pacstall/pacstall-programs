@@ -1,6 +1,6 @@
 pkgname="rhino-core"
 source=("https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png")
-pacdeps=("unicorn-desktop-git" "rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "rhino-hotfix-git")
+pacdeps=("rhino-kvantum-theme-git" "rhino-plymouth-theme-git" "rhino-wallpapers-git" "rhino-branding-git" "unicorn-desktop-git" "rhino-pkg-git" "rhino-neofetch-git" "rhino-system-git" "rhino-hotfix-git")
 depends=("printer-driver-all-enforce")
 pkgdesc="Transitional package to provide all core Rhino Linux software"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
@@ -9,7 +9,7 @@ replaces=("rhino-pine-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
 pkgver="2025.4"
-pkgrel="1"
+pkgrel="2"
 style="(mainline)"
 branch="devel"
 

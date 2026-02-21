@@ -1,7 +1,7 @@
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
-	pkgrel = 7
+	pkgrel = 8
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
 	arch = amd64
@@ -49,6 +49,8 @@ pkgbase = unicorn-desktop-git
 	pacdeps = cortile
 	pacdeps = adw-gtk-theme
 	pacdeps = rhino-xfwm4-theme-git
+	pacdeps = rhino-wallpapers-git
+	pacdeps = rhino-branding-git
 	pacdeps = vala-panel-appmenu-xfce4-git
 	pacdeps = xfce4-dynamic-workspaces-rs-bin
 	replaces = unicorn-mobile
@@ -57,6 +59,7 @@ pkgbase = unicorn-desktop-git
 	backup = etc/X11/xorg.conf.d/50-synaptics.conf
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/unicorn.git
+	source = https://github.com/rhino-linux/wallpapers.git
 	depends_amd64 = xserver-xorg-video-intel
 	depends_amd64 = xserver-xorg-video-vesa
 
