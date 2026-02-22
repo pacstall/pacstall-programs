@@ -5,7 +5,7 @@ source=(
 )
 arch=("all")
 pkgver="0.0.1"
-pkgrel="7"
+pkgrel="8"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -121,8 +121,10 @@ post_install() {
     if [[ -f "${homedir}/.config/${i}/gtk.css" && ! -f "${homedir}/.config/${i}/gtk.css-unicorn.bak" ]]; then
       mv "${homedir}/.config/${i}/gtk.css" "${homedir}/.config/${i}/gtk.css-unicorn.bak"
       cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
-      sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
+    elif [[ ! -f "${homedir}/.config/${i}/gtk.css-unicorn.bak" ]]; then
+      cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
     fi
+    sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
   done
   if [[ -f "${homedir}/.config/gtk-3.0/gtk.css" ]]; then
     sudo sed -i '/^\.-vala-panel-appmenu-core > \* {/,/^}/d' "${homedir}/.config/gtk-3.0/gtk.css"
