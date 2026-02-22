@@ -9,6 +9,8 @@ pkgbase = rhino-lomiri-default-settings-git
 	depends = qmltermwidget-common
 	pacdeps = rhino-branding-git
 	pacdeps = rhino-wallpapers-git
+	pacdeps = rhino-kvantum-theme-git
+	pacdeps = rhino-adwaita-theme-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/lomiri-default-settings.git
 
