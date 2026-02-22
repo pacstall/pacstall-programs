@@ -1,0 +1,10 @@
+pkgbase = rhino-adwaita-theme-git
+	gives = rhino-adwaita-theme
+	pkgver = 0.0.1
+	pkgdesc = Rhino Linux Adwaita theme overrides
+	arch = all
+	pacdeps = adw-gtk-theme
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://github.com/rhino-linux/AdwRhino.git
+
+pkgname = rhino-adwaita-theme-git
