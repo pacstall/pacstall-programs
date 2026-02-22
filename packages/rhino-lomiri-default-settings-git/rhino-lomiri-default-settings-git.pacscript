@@ -10,5 +10,5 @@ pacdeps=("rhino-branding-git" "rhino-wallpapers-git" "rhino-kvantum-theme-git" "
 
 package() {
   install -Dm644 "${gives#rhino-}"/10_rhino-lomiri.gschema.override -t "${pkgdir}/usr/share/glib-2.0/schemas"
-  install -Dm644 "${gives#rhino-}"/Rhino.colorscheme "${pkgdir}/usr/share/QMLTermWidget/color-schemes"
+  install -Dm644 "${gives#rhino-}"/Rhino.colorscheme -t "${pkgdir}/usr/share/QMLTermWidget/color-schemes"
 }
