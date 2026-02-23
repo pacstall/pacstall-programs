@@ -1,5 +1,5 @@
 pkgbase = dmenu
-	pkgver = 5.3
+	pkgver = 5.4
 	pkgdesc = A generic menu for X
 	arch = any
 	makedepends = libxinerama-dev
@@ -8,7 +8,7 @@ pkgbase = dmenu
 	breaks = dmenu_run
 	breaks = dmenu_path
 	repology = project: dmenu
-	source = @dmenu~5.3::https://dl.suckless.org/tools/dmenu-5.3.tar.gz
-	sha256sums = 1a8f53e6fd2d749839ec870c5e27b3e14da5c3eeacbfcb945d159e1d5433795f
+	source = @dmenu~5.4::https://dl.suckless.org/tools/dmenu-5.4.tar.gz
+	sha256sums = 8fbace2a0847aa80fe861066b118252dcc7b4ca0a0a8f3a93af02da8fb6cd453
 
 pkgname = dmenu
