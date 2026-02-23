@@ -1,6 +1,7 @@
 pkgbase = rhino-adwaita-theme-git
 	gives = rhino-adwaita-theme
 	pkgver = 0.0.1
+	pkgrel = 2
 	pkgdesc = Rhino Linux Adwaita theme overrides
 	arch = all
 	pacdeps = adw-gtk-theme
