@@ -110,9 +110,9 @@ package() {
   for i in svg png; do
     ln -sf "/usr/share/branding/rhino/logo.${i}" "${pkgdir}/usr/share/icons/logo.${i}"
   done
-  for i in $(dpkg -L rhino-wallpapers 2>/dev/null | awk '/\.png$/' 2>/dev/null); do
+  for i in $(dpkg -L rhino-wallpapers 2> /dev/null | awk '/\.png$/' 2> /dev/null); do
     for j in rhino xfce; do
-      if [[ -n "${i}" ]]; then
+      if [[ -n ${i} ]]; then
         ln -sf "${i}" "${pkgdir}/usr/share/backgrounds/${j}/${i##*/}"
       fi
     done
