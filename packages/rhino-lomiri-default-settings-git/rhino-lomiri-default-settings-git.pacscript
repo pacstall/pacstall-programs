@@ -8,24 +8,18 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 depends=("lomiri-schemas" "desktop-base" "dconf-gsettings-backend | gsettings-backend" "qmltermwidget-common")
 pacdeps=("rhino-branding-git" "rhino-wallpapers-git" "rhino-kvantum-theme-git" "rhino-adwaita-theme-git")
 
+pre_install() {
+  sudo dpkg-divert --quiet --package "${gives}" --divert /usr/share/QMLTermWidget/color-schemes/Ubuntu-upstream.colorscheme --rename /usr/share/QMLTermWidget/color-schemes/Ubuntu.colorscheme
+}
+
 package() {
   install -Dm644 "${gives#rhino-}"/10_rhino-lomiri.gschema.override -t "${pkgdir}/usr/share/glib-2.0/schemas"
   install -Dm644 "${gives#rhino-}"/Rhino.colorscheme -t "${pkgdir}/usr/share/QMLTermWidget/color-schemes"
+  ln -sf "/usr/share/QMLTermWidget/color-schemes/Rhino.colorscheme" "${pkgdir}/usr/share/QMLTermWidget/color-schemes/Ubuntu.colorscheme"
 }
 
-post_install() {
-  if ! [[ -d "${homedir}/.config" ]]; then
-    mkdir -p "${homedir}/.config"
+post_remove() {
+  if ! [[ -d "${STAGEDIR}/${pkgname}" ]]; then
+    sudo dpkg-divert --quiet --package "${gives}" --remove --rename /usr/share/QMLTermWidget/color-schemes/Ubuntu.colorscheme
   fi
-  for i in gtk-3.0 gtk-4.0; do
-    if [[ -f "/usr/share/branding/rhino/${i}/gtk.css" ]]; then
-      if [[ -f "${homedir}/.config/${i}/gtk.css" && ! -f "${homedir}/.config/${i}/gtk.css-unicorn.bak" ]]; then
-        mv "${homedir}/.config/${i}/gtk.css" "${homedir}/.config/${i}/gtk.css-unicorn.bak"
-        cp -r "/usr/share/branding/rhino/${i}" "${homedir}/.config"
-      elif [[ ! -f "${homedir}/.config/${i}/gtk.css-unicorn.bak" ]]; then
-        cp -r "/usr/share/branding/rhino/${i}" "${homedir}/.config"
-      fi
-      sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
-    fi
-  done
 }
