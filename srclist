@@ -353,12 +353,12 @@ pkgname = appmenu-registrar-backport
 ---
 pkgbase = apptainer-deb
 	gives = apptainer
-	pkgver = 1.4.1
+	pkgver = 1.4.5
 	pkgdesc = container platform focused on supporting "Mobility of Compute" formerly known as Singularity
 	arch = amd64
 	repology = project: apptainer
-	source = https://github.com/apptainer/apptainer/releases/download/v1.4.1/apptainer_1.4.1_amd64.deb
-	sha256sums = 9a0663f6e680d270dd3675f94cabf35dc324bb8673f5c6b645005e5aa1bd6d88
+	source = https://github.com/apptainer/apptainer/releases/download/v1.4.5/apptainer_1.4.5_amd64.deb
+	sha256sums = 70f19af846501acfbc2e42e7cfeee9ee11ddbbfa1c3502d0d99cde34e8e0af05
 
 pkgname = apptainer-deb
 ---
