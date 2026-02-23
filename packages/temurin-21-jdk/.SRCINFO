@@ -1,6 +1,5 @@
 pkgbase = temurin-21-jdk
 	pkgver = 21.0.10.u7
-	pkgrel = 1
 	pkgdesc = Eclipse Temurin 21
 	url = https://adoptium.net/
 	arch = amd64
