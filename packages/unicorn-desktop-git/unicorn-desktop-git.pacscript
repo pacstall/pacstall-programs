@@ -5,7 +5,7 @@ source=(
 )
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="9"
+pkgrel="10"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -55,6 +55,7 @@ pacdeps=(
   "rhino-xfwm4-theme-git"
   "rhino-wallpapers-git"
   "rhino-branding-git"
+  "rhino-adwaita-theme-git"
   "vala-panel-appmenu-xfce4-git"
   "xfce4-dynamic-workspaces-rs-bin"
 )
@@ -95,7 +96,7 @@ package() {
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
   # Install
-  for i in xfce4 plank autostart cortile ulauncher gtk-3.0 gtk-4.0; do
+  for i in xfce4 plank autostart cortile ulauncher; do
     cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
   install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
@@ -123,15 +124,6 @@ post_install() {
   if ! [[ -d "${homedir}/.config" ]]; then
     mkdir -p "${homedir}/.config"
   fi
-  for i in gtk-3.0 gtk-4.0; do
-    if [[ -f "${homedir}/.config/${i}/gtk.css" && ! -f "${homedir}/.config/${i}/gtk.css-unicorn.bak" ]]; then
-      mv "${homedir}/.config/${i}/gtk.css" "${homedir}/.config/${i}/gtk.css-unicorn.bak"
-      cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
-    elif [[ ! -f "${homedir}/.config/${i}/gtk.css-unicorn.bak" ]]; then
-      cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
-    fi
-    sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
-  done
   if [[ -f "${homedir}/.config/gtk-3.0/gtk.css" ]]; then
     sudo sed -i '/^\.-vala-panel-appmenu-core > \* {/,/^}/d' "${homedir}/.config/gtk-3.0/gtk.css"
   fi

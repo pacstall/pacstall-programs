@@ -1,7 +1,7 @@
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
-	pkgrel = 9
+	pkgrel = 10
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
 	arch = amd64
@@ -51,6 +51,7 @@ pkgbase = unicorn-desktop-git
 	pacdeps = rhino-xfwm4-theme-git
 	pacdeps = rhino-wallpapers-git
 	pacdeps = rhino-branding-git
+	pacdeps = rhino-adwaita-theme-git
 	pacdeps = vala-panel-appmenu-xfce4-git
 	pacdeps = xfce4-dynamic-workspaces-rs-bin
 	replaces = unicorn-mobile
