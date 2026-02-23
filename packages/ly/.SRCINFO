@@ -1,5 +1,5 @@
 pkgbase = ly
-	pkgver = 1.1.2
+	pkgver = 1.3.2
 	pkgdesc = TUI display manager
 	url = https://codeberg.org/fairyglade/ly
 	priority = required
@@ -15,7 +15,7 @@ pkgbase = ly
 	license = WTFPL
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: ly
-	source = ly::https://codeberg.org/fairyglade/ly/archive/v1.1.2.tar.gz
-	sha256sums = 8f491d09045bb680680b553556f9db7af89c6644a257352839f98c4e98028fd0
+	source = ly::https://codeberg.org/fairyglade/ly/archive/v1.3.2.tar.gz
+	sha256sums = db069cc2dcacc64b2890552a10ec8547aee4f9b9e5b0bc6b07c3d5d431a757e6
 
 pkgname = ly
