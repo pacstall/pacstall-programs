@@ -1,7 +1,7 @@
 pkgbase = unicorn-desktop-git
 	gives = unicorn-desktop
 	pkgver = 0.0.1
-	pkgrel = 10
+	pkgrel = 11
 	pkgdesc = Unicorn Desktop by the Rhino Linux Team
 	priority = required
 	arch = amd64
@@ -60,7 +60,6 @@ pkgbase = unicorn-desktop-git
 	backup = etc/X11/xorg.conf.d/50-synaptics.conf
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/unicorn.git
-	source = https://github.com/rhino-linux/wallpapers.git
 	depends_amd64 = xserver-xorg-video-intel
 	depends_amd64 = xserver-xorg-video-vesa
 

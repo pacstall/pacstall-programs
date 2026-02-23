@@ -1,7 +1,7 @@
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
 	pkgver = 0.0.1
-	pkgrel = 9
+	pkgrel = 10
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
 	arch = all
@@ -49,6 +49,5 @@ pkgbase = unicorn-mobile-git
 	backup = etc/X11/xorg.conf.d/50-synaptics.conf
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/unicorn.git#branch=mobile
-	source = https://github.com/rhino-linux/wallpapers.git
 
 pkgname = unicorn-mobile-git

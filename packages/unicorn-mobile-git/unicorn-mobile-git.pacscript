@@ -1,11 +1,8 @@
 pkgname="unicorn-mobile-git"
-source=(
-  "https://github.com/rhino-linux/unicorn.git#branch=mobile"
-  "https://github.com/rhino-linux/wallpapers.git"
-)
+source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="9"
+pkgrel="10"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -78,11 +75,6 @@ build() {
 }
 
 package() {
-  for i in wallpapers/*; do
-    for j in "rhino" "xfce"; do
-      ln -sf "/usr/share/wallpapers/rhino/${i#*wallpapers/}" "${pkgdir}/usr/share/backgrounds/${j}/${i#*wallpapers/}"
-    done
-  done
   cd "unicorn"
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
@@ -107,11 +99,18 @@ package() {
   cp -r unicorn-dashboard "${pkgdir}/usr/share/themes"
   install -Dm644 "50-synaptics.conf" -t "${pkgdir}/etc/X11/xorg.conf.d"
   install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
+  cp -r onboard "${pkgdir}/etc/skel/.local/share"
+  cp -r Dot-Transparent "${pkgdir}/usr/share/icons"
   for i in svg png; do
     ln -sf "/usr/share/branding/rhino/logo.${i}" "${pkgdir}/usr/share/icons/logo.${i}"
   done
-  cp -r onboard "${pkgdir}/etc/skel/.local/share"
-  cp -r Dot-Transparent "${pkgdir}/usr/share/icons"
+  for i in $(dpkg -L rhino-wallpapers 2>/dev/null | awk '/\.png$/' 2>/dev/null); do
+    for j in rhino xfce; do
+      if [[ -n "${i}" ]]; then
+        ln -sf "${i}" "${pkgdir}/usr/share/backgrounds/${j}/${i##*/}"
+      fi
+    done
+  done
 }
 
 post_install() {

@@ -1,11 +1,8 @@
 pkgname="unicorn-desktop-git"
-source=(
-  "https://github.com/rhino-linux/unicorn.git"
-  "https://github.com/rhino-linux/wallpapers.git"
-)
+source=("https://github.com/rhino-linux/unicorn.git")
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="10"
+pkgrel="11"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -87,11 +84,6 @@ build() {
 }
 
 package() {
-  for i in wallpapers/*; do
-    for j in rhino xfce; do
-      ln -sf "/usr/share/wallpapers/rhino/${i#*wallpapers/}" "${pkgdir}/usr/share/backgrounds/${j}/${i#*wallpapers/}"
-    done
-  done
   cd "unicorn"
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
@@ -117,6 +109,13 @@ package() {
   install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
   for i in svg png; do
     ln -sf "/usr/share/branding/rhino/logo.${i}" "${pkgdir}/usr/share/icons/logo.${i}"
+  done
+  for i in $(dpkg -L rhino-wallpapers 2>/dev/null | awk '/\.png$/' 2>/dev/null); do
+    for j in rhino xfce; do
+      if [[ -n "${i}" ]]; then
+        ln -sf "${i}" "${pkgdir}/usr/share/backgrounds/${j}/${i##*/}"
+      fi
+    done
   done
 }
 
