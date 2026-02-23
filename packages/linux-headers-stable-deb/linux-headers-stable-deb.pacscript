@@ -1,10 +1,10 @@
 pkgname="linux-headers-stable-deb"
-gives="linux-headers-6.18.7-061807"
-pkgver="6.18.7"
-buildver="6.18.7-061807.202601231045"
+gives="linux-headers-6.19.3-061903"
+pkgver="6.19.3"
+buildver="6.19.3-061903.202602191659"
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb")
 pkgdesc="Ubuntu Linux stable kernel (Headers)"
-sha256sums=("bac6b6c771197b82256f8a1abce0c169c9eededf2d919fbeeb24e0e3c843c04a")
+sha256sums=("61c4ac05daf62eafa25d152d549f9a481f0bfb576ccdb0e6977acee05ab6d2f2")
 arch=('all')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: distrowatch")

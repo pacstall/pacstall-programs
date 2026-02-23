@@ -7612,8 +7612,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-6.18.7-061807-generic
-	pkgver = 6.18.7
+	gives = linux-headers-6.19.3-061903-generic
+	pkgver = 6.19.3
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7621,10 +7621,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/arm64/linux-headers-6.18.7-061807-generic_6.18.7-061807.202601231045_arm64.deb
-	sha256sums_arm64 = db8a413d9c20171e03bd89d033f761feb7d2d63fe3c8088413b7fd0e9baf7a65
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/amd64/linux-headers-6.18.7-061807-generic_6.18.7-061807.202601231045_amd64.deb
-	sha256sums_amd64 = 7d5849d859db8603e9fbcd3c9bc9d3d6bd62e9e86b87a42a553ed0526634d04c
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19.3/arm64/linux-headers-6.19.3-061903-generic_6.19.3-061903.202602191659_arm64.deb
+	sha256sums_arm64 = 18d2f77d0363b94b47523fbb494a4eaa45d1ac8861de4d01069e1c6266bd9d19
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19.3/amd64/linux-headers-6.19.3-061903-generic_6.19.3-061903.202602191659_amd64.deb
+	sha256sums_amd64 = 60f7e9fd5959f68813720beb262c08212c7d06d7eaa24a4804fcd58368c1fd37
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -7674,15 +7674,15 @@ pkgbase = linux-headers-rockchip-deb
 pkgname = linux-headers-rockchip-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-6.18.7-061807
-	pkgver = 6.18.7
+	gives = linux-headers-6.19.3-061903
+	pkgver = 6.19.3
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/amd64/linux-headers-6.18.7-061807_6.18.7-061807.202601231045_all.deb
-	sha256sums = bac6b6c771197b82256f8a1abce0c169c9eededf2d919fbeeb24e0e3c843c04a
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19.3/amd64/linux-headers-6.19.3-061903_6.19.3-061903.202602191659_all.deb
+	sha256sums = 61c4ac05daf62eafa25d152d549f9a481f0bfb576ccdb0e6977acee05ab6d2f2
 
 pkgname = linux-headers-stable-deb
 ---
@@ -7797,8 +7797,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-6.18.7-061807-generic
-	pkgver = 6.18.7
+	gives = linux-image-unsigned-6.19.3-061903-generic
+	pkgver = 6.19.3
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -7807,10 +7807,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/arm64/linux-image-unsigned-6.18.7-061807-generic_6.18.7-061807.202601231045_arm64.deb
-	sha256sums_arm64 = 187d2c37785efa11e6253045656c7e19342302a0990ba2ea296de96d2107f0b7
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/amd64/linux-image-unsigned-6.18.7-061807-generic_6.18.7-061807.202601231045_amd64.deb
-	sha256sums_amd64 = a2ca2b476c470fd7a187920eb14196d2eb22f2d1b26b2b541bfed7c5fb725f73
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19.3/arm64/linux-image-unsigned-6.19.3-061903-generic_6.19.3-061903.202602191659_arm64.deb
+	sha256sums_arm64 = 5eb4191b49f7bf0ac29e94a72e6c5334e614cdb6d4a8aed3ab36bec5a92b0932
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19.3/amd64/linux-image-unsigned-6.19.3-061903-generic_6.19.3-061903.202602191659_amd64.deb
+	sha256sums_amd64 = 319ce60b16d986a24f9589d7fa509ab9c8e1fa121dd5fee158cd35c09f75bffc
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -7832,7 +7832,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 6.18.7
+	pkgver = 6.19.3
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -7910,16 +7910,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-6.18.7-061807-generic
-	pkgver = 6.18.7
+	gives = linux-modules-6.19.3-061903-generic
+	pkgver = 6.19.3
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/arm64/linux-modules-6.18.7-061807-generic_6.18.7-061807.202601231045_arm64.deb
-	sha256sums_arm64 = 91107612ef0ff767ce52acfbedf14e46ebd7a5a23f93c3cd7561d4d28ae1bea0
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.18.7/amd64/linux-modules-6.18.7-061807-generic_6.18.7-061807.202601231045_amd64.deb
-	sha256sums_amd64 = 1782857e3d2674bf178e0166745a439125666596597fcee752855fe012f378e5
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19.3/arm64/linux-modules-6.19.3-061903-generic_6.19.3-061903.202602191659_arm64.deb
+	sha256sums_arm64 = 24d4f48318c698e185da08f8104ca993371f1ef2307ed9de584d7d39797d6a16
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19.3/amd64/linux-modules-6.19.3-061903-generic_6.19.3-061903.202602191659_amd64.deb
+	sha256sums_amd64 = 3ba6314218137d6c4f162cf8668a62ebee0afd1b605475495f2e4f71c843ec7f
 
 pkgname = linux-modules-stable-deb
 ---
