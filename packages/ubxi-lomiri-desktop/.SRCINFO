@@ -1,6 +1,6 @@
 pkgbase = ubxi-lomiri-desktop
 	pkgver = 0.0.1
-	pkgrel = 2
+	pkgrel = 3
 	pkgdesc = UBXI Lomiri Desktop
 	priority = required
 	arch = amd64
@@ -28,6 +28,7 @@ pkgbase = ubxi-lomiri-desktop
 	depends = mesa-libgallium
 	depends = mesa-vulkan-drivers
 	depends = mir-graphics-drivers-desktop
+	depends = qt6-wayland
 	depends = lomiri-addressbook-app
 	depends = lomiri-calculator-app
 	depends = lomiri-calendar-app
