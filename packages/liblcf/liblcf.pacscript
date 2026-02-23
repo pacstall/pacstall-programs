@@ -1,5 +1,5 @@
 pkgname="liblcf"
-pkgver="0.8"
+pkgver="0.8.1"
 pkgdesc="Library to handle RPG Maker 2000/2003 and EasyRPG projects"
 arch=('i386' 'amd64' 'arm64' 'armhf')
 url='https://easyrpg.org'
@@ -14,7 +14,7 @@ if [[ ! "buster focal bullseye jammy" =~ ${DISTRO#*:} ]]; then
   depends+=('libicu72')
 fi
 source=("@${pkgname}~${pkgver}::https://easyrpg.org/downloads/player/${pkgver}/${pkgname}-${pkgver}.tar.xz")
-sha256sums=('6b0d8c7fefe3d66865336406f69ddf03fe59e52b5601687265a4d1e47a25c386')
+sha256sums=('e827b265702cf7d9f4af24b8c10df2c608ac70754ef7468e34836201ff172273')
 repology=("project: ${pkgname}")
 
 build() {
