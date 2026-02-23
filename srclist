@@ -9176,7 +9176,7 @@ pkgbase = morewaita-icon-theme-git
 pkgname = morewaita-icon-theme-git
 ---
 pkgbase = morewaita-icon-theme
-	pkgver = 48.4
+	pkgver = 49
 	pkgdesc = Adwaita style extra icons theme for Gnome Shell
 	arch = all
 	makedepends = meson
@@ -9189,7 +9189,7 @@ pkgbase = morewaita-icon-theme
 	provides = morewaita-icon-theme
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: morewaita-icon-theme
-	source = morewaita-icon-theme~48.4::https://github.com/somepaulo/MoreWaita.git#tag=v48.4
+	source = morewaita-icon-theme~49::https://github.com/somepaulo/MoreWaita.git#tag=v49
 
 pkgname = morewaita-icon-theme
 ---
