@@ -11,8 +11,7 @@ url='https://fly.io'
 maintainer=("Andrew Barchuk <andrew@raindev.io>")
 
 package() {
-  install -Dm755 "./flyctl" -t "${pkgdir}/usr/bin"
-  ln -sf "${pkgdir}/usr/bin/flyctl" "${pkdir}/usr/bin/fly"
+  install -Dm755 flyctl "${pkgdir}/usr/bin/fly"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
