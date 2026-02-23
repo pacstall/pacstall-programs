@@ -8131,14 +8131,14 @@ pkgname = lunarclient-app
 ---
 pkgbase = lutris-deb
 	gives = lutris
-	pkgver = 0.5.18
+	pkgver = 0.5.20
 	pkgdesc = open source gaming platform
 	arch = all
 	depends = python3-gi-cairo
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: lutris
-	source = https://github.com/lutris/lutris/releases/download/v0.5.18/lutris_0.5.18_all.deb
-	sha256sums = 883e3c2701fb5c86ed2b358ca66a68382060efb5b665711a238a48a1e7b0fa75
+	source = https://github.com/lutris/lutris/releases/download/v0.5.20/lutris_0.5.20_all.deb
+	sha256sums = 4ae67cfb6ff85219eaa207dd28fbb069037e4ddbc74e93a601136397f94ee017
 
 pkgname = lutris-deb
 ---
