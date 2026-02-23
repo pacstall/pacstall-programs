@@ -1,13 +1,13 @@
 pkgbase = linux-modules-deb
-	gives = linux-modules-6.19.0-061900rc5-generic
-	pkgver = 6.19~rc5
+	gives = linux-modules-7.0.0-070000rc1-generic
+	pkgver = 7.0~rc1
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/arm64/linux-modules-6.19.0-061900rc5-generic_6.19.0-061900rc5.202601120354_arm64.deb
-	sha256sums_arm64 = 236e570fb36a96ae7f86df597f971031cc10c4a7691f3fda1ba014df6db520fe
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/amd64/linux-modules-6.19.0-061900rc5-generic_6.19.0-061900rc5.202601120354_amd64.deb
-	sha256sums_amd64 = 936ae03ca8a6c4936a19cc13fb3b10c91497ee6b292b5ec5b9c89fe9d2873c18
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0-rc1/arm64/linux-modules-7.0.0-070000rc1-generic_7.0.0-070000rc1.202602222250_arm64.deb
+	sha256sums_arm64 = 9456248c1a69afcc6398bb5a99747365bf34bedc9215ed245ab3425ff18eec42
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0-rc1/amd64/linux-modules-7.0.0-070000rc1-generic_7.0.0-070000rc1.202602222250_amd64.deb
+	sha256sums_amd64 = a278df76cc288f47b5b18993379a3fc1a9f2ff4bc23d71c0a5dccb5a0de1a09d
 
 pkgname = linux-modules-deb
