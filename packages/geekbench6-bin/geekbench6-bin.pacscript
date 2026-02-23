@@ -1,10 +1,10 @@
 pkgname="geekbench6-bin"
 gives="geekbench6"
-pkgver="6.4.0"
+pkgver="6.6.0"
 source=("@${pkgname}~${pkgver}::https://cdn.geekbench.com/Geekbench-${pkgver}-Linux.tar.gz")
 pkgdesc="Geekbench is a cross-platform benchmark that measures your system's performance with the press of a button"
 arch=('amd64')
-sha256sums=("43833053774816178a292331cc205923c5e8168ada378d41b9119532125a50ac")
+sha256sums=("c94510f3658cd31d55bbc5feb21aef19f5a34ff4036f789643c0dc212104b0e7")
 maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
 
 package() {
