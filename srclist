@@ -10774,13 +10774,13 @@ pkgname = obs-studio
 ---
 pkgbase = obsidian-deb
 	gives = obsidian
-	pkgver = 1.8.10
+	pkgver = 1.11.7
 	pkgdesc = Powerful and extensible knowledge base editor that uses markdown
 	arch = amd64
 	maintainer = Hepno <me@hepno.dev>
 	repology = project: obsidian
-	source = https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.10/obsidian_1.8.10_amd64.deb
-	sha256sums = da19b2755013e9def37271cf04ce7485c03a22fa02b0951e4108884dcd1bd774
+	source = https://github.com/obsidianmd/obsidian-releases/releases/download/v1.11.7/obsidian_1.11.7_amd64.deb
+	sha256sums = 967e4f24a608f76a57fb00798a0416e14bf7db92b62bb16728ae123e1ef48123
 
 pkgname = obsidian-deb
 ---
