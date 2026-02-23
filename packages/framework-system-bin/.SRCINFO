@@ -1,12 +1,12 @@
 pkgbase = framework-system-bin
-	pkgver = 0.4.5
+	pkgver = 0.5.0
 	pkgdesc = Tools to interact with the Framework Computer systems
 	url = https://github.com/FrameworkComputer/framework-system
 	arch = amd64
 	license = BSD-3-Clause
 	maintainer = Elsie19 <hwengerstickel@pm.me>
 	repology = project: framework-system
-	source = https://github.com/FrameworkComputer/framework-system/releases/download/v0.4.5/framework_tool
-	sha256sums = e94af70b2a287577c3d7e26e92e1a3910bd27b725543ac5763b7cd348d8fb57d
+	source = https://github.com/FrameworkComputer/framework-system/releases/download/v0.5.0/framework_tool
+	sha256sums = 920283caef7466e224d52be7b90eba1ca616c391f23ad581e874ff09f81f11bc
 
 pkgname = framework-system-bin
