@@ -8078,19 +8078,19 @@ pkgname = lrz-syncshare-deb
 ---
 pkgbase = lsd-deb
 	gives = lsd
-	pkgver = 1.1.5
+	pkgver = 1.2.0
 	pkgdesc = The next gen ls command
 	arch = amd64
 	arch = arm64
 	arch = i386
 	maintainer = KwonNam Son <kwon37xi@gmail.com>
 	repology = project: lsd
-	source_amd64 = https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd_1.1.5_amd64.deb
-	sha256sums_amd64 = a4d003799509a2a1c04c349876b7890e6b48f811e2ecc206d2c400d43c345474
-	source_arm64 = https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd_1.1.5_arm64.deb
-	sha256sums_arm64 = e39a7a0ffc4cc1f857a2f31aeb2fc7c5f6180ac8e37d102f885cbced7afa0f21
-	source_i386 = https://github.com/lsd-rs/lsd/releases/download/v1.1.5/lsd_1.1.5_i686.deb
-	sha256sums_i386 = 1e8391664250599ca57a84ae1afc257544e562cdcc98d4385d2db575b751c3c6
+	source_amd64 = https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd_1.2.0_amd64.deb
+	sha256sums_amd64 = b212d4c941fa0960c44d94d44039645802a5b7cc8554900e4d53bab5b2574f07
+	source_arm64 = https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd_1.2.0_arm64.deb
+	sha256sums_arm64 = 9f799c1258b6acbefbb2135b6128ab4369ea3872fb1d402cb5375aa7184dd677
+	source_i386 = https://github.com/lsd-rs/lsd/releases/download/v1.2.0/lsd_1.2.0_i686.deb
+	sha256sums_i386 = 88381cd9573fe236b648a3481cb1e386c60c7a26601ab435bbce02e2bf9ca4aa
 
 pkgname = lsd-deb
 ---

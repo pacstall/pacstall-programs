@@ -1,12 +1,12 @@
 pkgname="lsd-deb"
 gives="lsd"
 repology=("project: ${gives}")
-pkgver="1.1.5"
+pkgver="1.2.0"
 pkgdesc="The next gen ls command"
 arch=("amd64" "arm64" "i386")
 source=("https://github.com/${gives}-rs/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_${CARCH}.deb")
 source_i386=("https://github.com/${gives}-rs/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_${AARCH}.deb")
 maintainer=("KwonNam Son <kwon37xi@gmail.com>")
-sha256sums_amd64=("a4d003799509a2a1c04c349876b7890e6b48f811e2ecc206d2c400d43c345474")
-sha256sums_arm64=("e39a7a0ffc4cc1f857a2f31aeb2fc7c5f6180ac8e37d102f885cbced7afa0f21")
-sha256sums_i386=("1e8391664250599ca57a84ae1afc257544e562cdcc98d4385d2db575b751c3c6")
+sha256sums_amd64=("b212d4c941fa0960c44d94d44039645802a5b7cc8554900e4d53bab5b2574f07")
+sha256sums_arm64=("9f799c1258b6acbefbb2135b6128ab4369ea3872fb1d402cb5375aa7184dd677")
+sha256sums_i386=("88381cd9573fe236b648a3481cb1e386c60c7a26601ab435bbce02e2bf9ca4aa")
