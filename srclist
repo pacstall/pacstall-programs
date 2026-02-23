@@ -9293,7 +9293,7 @@ pkgbase = nala-deb
 pkgname = nala-deb
 ---
 pkgbase = nano
-	pkgver = 8.5
+	pkgver = 8.7
 	pkgdesc = Free replacement for the Pico text editor
 	arch = any
 	makedepends = libncurses-dev
@@ -9309,8 +9309,8 @@ pkgbase = nano
 	makedepends = texinfo
 	license = GPL-3.0
 	repology = project: nano
-	source = @nano~8.5::https://nano-editor.org/dist/v8/nano-8.5.tar.xz
-	sha256sums = 000b011d339c141af9646d43288f54325ff5c6e8d39d6e482b787bbc6654c26a
+	source = @nano~8.7::https://nano-editor.org/dist/v8/nano-8.7.tar.xz
+	sha256sums = afd287aa672c48b8e1a93fdb6c6588453d527510d966822b687f2835f0d986e9
 
 pkgname = nano
 ---

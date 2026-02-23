@@ -1,11 +1,11 @@
 pkgname="nano"
 arch=("any")
-pkgver="8.5"
+pkgver="8.7"
 license=("GPL-3.0")
 source=("@${pkgname}~${pkgver}::https://nano-editor.org/dist/v${pkgver%.*}/${pkgname}-${pkgver}.tar.xz")
 makedepends=("libncurses-dev" "groff" "autoconf" "make" "automake" "autopoint" "gcc" "gettext" "git" "pkg-config" "texinfo")
 pkgdesc="Free replacement for the Pico text editor"
-sha256sums=("000b011d339c141af9646d43288f54325ff5c6e8d39d6e482b787bbc6654c26a")
+sha256sums=("afd287aa672c48b8e1a93fdb6c6588453d527510d966822b687f2835f0d986e9")
 repology=("project: nano")
 
 prepare() {
