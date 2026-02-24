@@ -10,6 +10,7 @@ pkgbase = liblcf
 	makedepends = pkg-config
 	makedepends = libexpat1-dev
 	makedepends = libicu-dev
+	makedepends = libinih-dev
 	makedepends = libicu78 | libicu77 | libicu76 | libicu75 | libicu74 | libicu70 | libicu67
 	provides = lcf2xml
 	repology = project: liblcf
