@@ -1,6 +1,6 @@
 pkgbase = tidal-hifi-bin
 	gives = tidal-hifi
-	pkgver = 5.19.0
+	pkgver = 6.1.0
 	pkgdesc = The web version of listen.tidal.com running in electron with hifi support thanks to widevine
 	arch = amd64
 	depends = libxss1
@@ -13,10 +13,10 @@ pkgbase = tidal-hifi-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: tidal-hifi
 	repology = visiblename: tidal-hifi-bin
-	source = @tidal-hifi-bin~5.19.0::https://github.com/Mastermindzh/tidal-hifi/releases/download/5.19.0/tidal-hifi-5.19.0.tar.gz
+	source = @tidal-hifi-bin~6.1.0::https://github.com/Mastermindzh/tidal-hifi/releases/download/6.1.0/tidal-hifi-6.1.0.tar.gz
 	source = icon.png::https://github.com/Mastermindzh/tidal-hifi/raw/master/build/icon.png
 	source = tidal-hifi.desktop::https://aur.archlinux.org/cgit/aur.git/plain/tidal-hifi.desktop?h=tidal-hifi-bin
-	sha256sums = c4b0b03b9e4570d795074723702a7199c7674a2ea38546ee24593b9d3645e402
+	sha256sums = 66eef54ddd75cd4c8283f4a6e8bd4d807e447f894fcc968d36632097ac22ede7
 	sha256sums = SKIP
 	sha256sums = SKIP
 
