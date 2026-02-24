@@ -7256,7 +7256,7 @@ pkgbase = libicu-deb
 pkgname = libicu-deb
 ---
 pkgbase = liblcf
-	pkgver = 0.8
+	pkgver = 0.8.1
 	pkgdesc = Library to handle RPG Maker 2000/2003 and EasyRPG projects
 	url = https://easyrpg.org
 	arch = i386
@@ -7264,16 +7264,15 @@ pkgbase = liblcf
 	arch = arm64
 	arch = armhf
 	depends = libexpat1
-	depends = libicu72
 	makedepends = pkg-config
 	makedepends = libexpat1-dev
 	makedepends = libicu-dev
+	makedepends = libinih-dev
+	makedepends = libicu78 | libicu77 | libicu76 | libicu75 | libicu74 | libicu70 | libicu67
 	provides = lcf2xml
 	repology = project: liblcf
-	source = @liblcf~0.8::https://easyrpg.org/downloads/player/0.8/liblcf-0.8.tar.xz
-	sha256sums = 6b0d8c7fefe3d66865336406f69ddf03fe59e52b5601687265a4d1e47a25c386
-	depends_jammy = libicu70
-	depends_bullseye = libicu67
+	source = @liblcf~0.8.1::https://easyrpg.org/downloads/player/0.8.1/liblcf-0.8.1.tar.xz
+	sha256sums = e827b265702cf7d9f4af24b8c10df2c608ac70754ef7468e34836201ff172273
 
 pkgname = liblcf
 ---
