@@ -1,13 +1,13 @@
 pkgbase = signal-desktop-deb
 	gives = signal-desktop
-	pkgver = 7.58.0
+	pkgver = 7.90.0
 	pkgdesc = Signal Private Messenger for Linux
 	arch = amd64
 	breaks = signal-desktop-app
 	maintainer = Jon Banafato <pacstall@jonafato.com>
 	repology = project: signal-desktop
 	repology = repo: arch
-	source = https://updates.signal.org/desktop/apt/pool/s/signal-desktop/signal-desktop_7.58.0_amd64.deb
-	sha256sums = 55e125fb782262fc77f3d1c2582a37a39735ed2dc9687709feb45356cf4f10ae
+	source = https://updates.signal.org/desktop/apt/pool/s/signal-desktop/signal-desktop_7.90.0_amd64.deb
+	sha256sums = ed94d9b9ce37609449b32e1dcea88f11a1f5491e58d0c99b72f82fdb0f3b416d
 
 pkgname = signal-desktop-deb
