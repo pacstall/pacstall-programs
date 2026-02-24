@@ -12296,7 +12296,7 @@ pkgbase = pycharm-community-bin
 pkgname = pycharm-community-bin
 ---
 pkgbase = python3-anyascii
-	pkgver = 0.3.2
+	pkgver = 0.3.3
 	pkgdesc = Unicode to ASCII transliteration
 	url = https://anyascii.com/
 	arch = any
@@ -12308,8 +12308,8 @@ pkgbase = python3-anyascii
 	pacdeps = python3-flit-core
 	license = ISC
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/anyascii/anyascii/archive/refs/tags/0.3.2.tar.gz
-	b2sums = 9b9440d26872404487ff791dda5e7695f5f8504743d750c89b80d2a77595decfb2f1389b6636af8723a358b0e56988f074acb403d7860539c522cfa4b5b3f06a
+	source = https://github.com/anyascii/anyascii/archive/refs/tags/0.3.3.tar.gz
+	b2sums = b43e568664f4bcbc5fce976ed07bf6c7a40b475b1e06a8196f280cd66fa7eb45cc8786ede112da6e2176afc297df8e84edb9ce2de169a6a3e278eb625ea7b0a6
 
 pkgname = python3-anyascii
 ---
