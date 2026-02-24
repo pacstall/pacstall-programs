@@ -11637,7 +11637,7 @@ pkgbase = pgmigrate
 pkgname = pgmigrate
 ---
 pkgbase = picom
-	pkgver = 12.5
+	pkgver = 13
 	pkgdesc = A lightweight compositor for X11
 	url = https://github.com/yshui/picom
 	arch = any
@@ -11697,8 +11697,8 @@ pkgbase = picom
 	breaks = jonaburg-picom-git
 	replaces = picom
 	repology = project: picom
-	source = @picom~12.5::https://github.com/yshui/picom/archive/refs/tags/v12.5.tar.gz
-	sha256sums = 627fa5d7c590df3ba8d2c41eb35d3859f7826bd28fa49e92a0e04fb60ed77904
+	source = @picom~13::https://github.com/yshui/picom/archive/refs/tags/v13.tar.gz
+	sha256sums = db9791a54255742c924ef82a6a882042636d61de0fa61bc14c5e56279cf5791c
 
 pkgname = picom
 ---

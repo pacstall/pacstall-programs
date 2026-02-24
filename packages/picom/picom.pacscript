@@ -1,7 +1,7 @@
 pkgname="picom"
 url='https://github.com/yshui/picom'
 arch=("any")
-pkgver="12.5"
+pkgver="13"
 pkgdesc="A lightweight compositor for X11"
 repology=("project: ${pkgname}")
 replaces=("${pkgname}")
@@ -34,7 +34,7 @@ optdepends=(
   "x11-utils: for picom-trans"
 )
 source=("@${pkgname}~${pkgver}::https://github.com/yshui/picom/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=("627fa5d7c590df3ba8d2c41eb35d3859f7826bd28fa49e92a0e04fb60ed77904")
+sha256sums=("db9791a54255742c924ef82a6a882042636d61de0fa61bc14c5e56279cf5791c")
 external_connection='true'
 
 prepare() {
