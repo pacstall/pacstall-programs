@@ -2,7 +2,7 @@ _parent_name="flit"
 _name="${_parent_name}_core"
 pkgname="python3-${_name/_/-}"
 arch=("any")
-pkgver="3.9.0"
+pkgver="3.12.0"
 pkgdesc="A PEP 517 build backend for packages using Flit"
 url="https://github.com/pypa/${_parent_name}/tree/main/${_name/-/_}"
 _url="https://github.com/pypa/${_parent_name}"
@@ -17,7 +17,7 @@ checkdepends=(
   'python3-testpath'
 )
 source=("${_parent_name}-${pkgver}.tar.gz::${_url}/archive/refs/tags/${pkgver}.tar.gz")
-b2sums=('bae3baf324016e25f8422a79c60b91c3a6f3422ca57b20c3585444c912dfaca23b73e147912d503b9b78f69bbb7db861ab926b29ff081c5c75ada155e914c4a3')
+b2sums=('b7e97a8665aeac90d81b033450cec7e3d1f6661916e3f5f7443025723047291b3482414d3189cafa56df859a3a4ba8f868526ec39db7888b55f24a12529ececf')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
