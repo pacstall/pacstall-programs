@@ -13313,7 +13313,7 @@ pkgbase = rnnoise
 pkgname = rnnoise
 ---
 pkgbase = rofi-emoji
-	pkgver = 3.5.0
+	pkgver = 4.1.0
 	pkgdesc = Rofi plugin for selecting emojis
 	url = https://github.com/Mange/rofi-emoji
 	arch = x86_64
@@ -13338,7 +13338,7 @@ pkgbase = rofi-emoji
 	provides = rofi-emoji
 	license = MIT
 	maintainer = aKqir24 <aKqir24@github.com>
-	source = https://github.com/Mange/rofi-emoji/archive/refs/tags/v3.5.0.tar.gz
+	source = https://github.com/Mange/rofi-emoji/archive/refs/tags/v4.1.0.tar.gz
 
 pkgname = rofi-emoji
 ---
