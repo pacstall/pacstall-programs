@@ -1,10 +1,10 @@
 pkgname="pulsar-deb"
 gives="pulsar"
-pkgver="1.130.1"
+pkgver="1.131.1"
 source_amd64=("https://github.com/pulsar-edit/pulsar/releases/download/v${pkgver}/Linux.pulsar_${pkgver}_amd64.deb")
 source_arm64=("https://github.com/pulsar-edit/pulsar/releases/download/v${pkgver}/ARM.Linux.pulsar_${pkgver}_arm64.deb")
-sha256sums_amd64=("4e57acc5ee016e04bd7c4fea8c10f331530ad27e28441e306840b20fab06328e")
-sha256sums_arm64=("80d88695348b18a12910284b92fdc317a1e01e9ad7c0ae91233bbbc738214489")
+sha256sums_amd64=("a997e4a7d5a30fcba18e1bbf9a1b902ebae03f9995474ab08b33c5c7bb92d593")
+sha256sums_arm64=("9900048746c57def7af94ba5433c99a5bdfcd74581a8f57c3ea1551744f3412a")
 pkgdesc="A Community-led Hyper-Hackable Text Editor"
 arch=('amd64' 'arm64')
 maintainer=("Zahrun <zahrunAtmurenaDotio>" "AJStrong <ajstrongdev@proton.me>")
