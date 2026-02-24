@@ -6,13 +6,7 @@ url='https://easyrpg.org'
 provides=('lcf2xml')
 makedepends=('pkg-config' 'libexpat1-dev' 'libicu-dev')
 depends=('libexpat1')
-depends_buster=('libicu63')
-depends_focal=('libicu66')
-depends_bullseye=('libicu67')
-depends_jammy=('libicu70')
-if [[ ! "buster focal bullseye jammy" =~ ${DISTRO#*:} ]]; then
-  depends+=('libicu72')
-fi
+makedepends=("libicu78 | libicu77 | libicu76 | libicu75 | libicu74 | libicu70 | libicu67")
 source=("@${pkgname}~${pkgver}::https://easyrpg.org/downloads/player/${pkgver}/${pkgname}-${pkgver}.tar.xz")
 sha256sums=('e827b265702cf7d9f4af24b8c10df2c608ac70754ef7468e34836201ff172273')
 repology=("project: ${pkgname}")
