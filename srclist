@@ -12699,13 +12699,13 @@ pkgname = quintom-cursor-theme-git
 ---
 pkgbase = r2modman-deb
 	gives = r2modman
-	pkgver = 3.2.2
+	pkgver = 3.2.14
 	pkgdesc = Simple and easy to use mod manager for many games using Thunderstore
 	arch = amd64
 	maintainer = raik199x <raik199x@mail.ru>
 	repology = project: r2modman
-	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.2.2/r2modman_3.2.2_amd64.deb
-	sha256sums = da1de2e32a8f4792afadd03d7b3e7d5b041388c63100d3b0ee3a7600b84da146
+	source = https://github.com/ebkr/r2modmanPlus/releases/download/v3.2.14/r2modman_3.2.14_amd64.deb
+	sha256sums = 6f98c34a113b6a80eedb7443d35f7a2207ebeb355a42121c3d3ea05296986250
 
 pkgname = r2modman-deb
 ---
