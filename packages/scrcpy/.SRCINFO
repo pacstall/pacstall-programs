@@ -1,5 +1,5 @@
 pkgbase = scrcpy
-	pkgver = 3.3.1
+	pkgver = 3.3.4
 	pkgdesc = Display and control your Android device
 	url = https://github.com/Genymobile/scrcpy
 	arch = amd64
@@ -19,9 +19,9 @@ pkgbase = scrcpy
 	makedepends = ninja-build
 	replaces = scrcpy
 	repology = project: scrcpy
-	source = @scrcpy~3.3.1::https://github.com/Genymobile/scrcpy/archive/refs/tags/v3.3.1.tar.gz
-	source = scrcpy-server::https://github.com/Genymobile/scrcpy/releases/download/v3.3.1/scrcpy-server-v3.3.1
-	sha256sums = 9999d2ff3605e1c5d1efb0b737ed6e240a93a928091ab356ba07199c92f52ace
-	sha256sums = a0f70b20aa4998fbf658c94118cd6c8dab6abbb0647a3bdab344d70bc1ebcbb8
+	source = @scrcpy~3.3.4::https://github.com/Genymobile/scrcpy/archive/refs/tags/v3.3.4.tar.gz
+	source = scrcpy-server::https://github.com/Genymobile/scrcpy/releases/download/v3.3.4/scrcpy-server-v3.3.4
+	sha256sums = 03b72d1f71ca7783cff2995ca7cd8c67b9b75038a3cc35e443a1913e951b49dd
+	sha256sums = 8588238c9a5a00aa542906b6ec7e6d5541d9ffb9b5d0f6e1bc0e365e2303079e
 
 pkgname = scrcpy
