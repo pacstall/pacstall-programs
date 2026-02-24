@@ -17626,7 +17626,6 @@ pkgbase = yad
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: yad
 	source = @yad~14.2::https://github.com/v1cont/yad/releases/download/v14.2/yad-14.2.tar.xz
-	source = debian12.patch
 	sha256sums = 5cab399af8d9a10b76d477f848180d00addba38f4f1272a05b153a393bba3038
 
 pkgname = yad
