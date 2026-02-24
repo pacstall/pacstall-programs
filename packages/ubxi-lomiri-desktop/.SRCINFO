@@ -1,6 +1,6 @@
 pkgbase = ubxi-lomiri-desktop
 	pkgver = 0.0.1
-	pkgrel = 3
+	pkgrel = 4
 	pkgdesc = UBXI Lomiri Desktop
 	priority = required
 	arch = amd64
@@ -55,6 +55,7 @@ pkgbase = ubxi-lomiri-desktop
 	depends = lomiri-keyboard-spanish
 	depends = lomiri-keyboard-swedish
 	pacdeps = rhino-ubxi-core
+	pacdeps = rhino-lomiri-default-settings-git
 	compatible = ubuntu:*
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty

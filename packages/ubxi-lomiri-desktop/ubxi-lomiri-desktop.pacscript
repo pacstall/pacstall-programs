@@ -1,7 +1,7 @@
 pkgname="ubxi-lomiri-desktop"
 arch=("amd64" "arm64" "riscv64")
 pkgver="0.0.1"
-pkgrel="3"
+pkgrel="4"
 source=("https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty")
 depends=(
   "alsa-ucm-conf" "ciborium" "contactsd" "deviceinfo-extras" "deviceinfo-tools" "iio-sensor-proxy"
@@ -17,7 +17,7 @@ depends=(
   "lomiri-keyboard-spanish" "lomiri-keyboard-swedish"
 )
 depends_amd64=("mir-graphics-drivers-nvidia")
-pacdeps=("rhino-ubxi-core")
+pacdeps=("rhino-ubxi-core" "rhino-lomiri-default-settings-git")
 priority='required'
 pkgdesc="UBXI Lomiri Desktop"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
