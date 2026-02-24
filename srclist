@@ -11482,7 +11482,7 @@ pkgname = papirus-icon-theme
 ---
 pkgbase = parsec-deb
 	gives = parsec
-	pkgver = 150-86e
+	pkgver = 150-97c
 	pkgdesc = Simple, low-latency game streaming
 	arch = amd64
 	incompatible = debian:sid
