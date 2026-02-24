@@ -1,5 +1,5 @@
 pkgname='nvidia-beta-installer'
-pkgver='580.65.06'
+pkgver='590.44.01'
 gives="${pkgname}-${pkgver%%.*}"
 arch=('amd64' 'arm64')
 maintainer=('Oren Klopfer <oren@taumoda.com>')
@@ -7,8 +7,8 @@ url='https://www.nvidia.com/en-us/drivers/unix/'
 pkgdesc='NVIDIA driver installer with both proprietary and open source module options (Beta Branch)'
 source_amd64=("https://us.download.nvidia.com/XFree86/Linux-x86_64/${pkgver}/NVIDIA-Linux-x86_64-${pkgver}.run")
 source_arm64=("https://us.download.nvidia.com/XFree86/aarch64/${pkgver}/NVIDIA-Linux-aarch64-${pkgver}.run")
-sha256sums_amd64=('04b10867af585e765cfbfdcf39ed5f4bd112375bebab0172eaa187c6aa5024ff')
-sha256sums_arm64=('e02acdc0d20d4a541aa5026bfddb1b9b4fc6bc64ae3b04ff9cb9c892700cf9c4')
+sha256sums_amd64=('55b91568ac0495a6b3a237f19079f3fe737fe68964d777b3930fc442384a3e6b')
+sha256sums_arm64=('829ab3d3b685c7e94104e18f30291b9795fc28130fc03aac4be9273c7a4bff98')
 
 package() {
   install -Dm755 "NVIDIA-Linux-x86_64-${pkgver}.run" -t "${pkgdir}/usr/bin"
