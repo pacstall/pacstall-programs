@@ -15,6 +15,7 @@ pkgbase = yad
 	makedepends = autotools-dev
 	makedepends = libgtk-3-dev
 	makedepends = automake
+	makedepends = autopoint
 	breaks = yad
 	breaks = yad-bin
 	breaks = yad-app
