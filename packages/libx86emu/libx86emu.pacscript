@@ -17,10 +17,10 @@ prepare() {
 }
 
 build() {
-  make -C "${pkgdir}" LIBDIR=/usr/lib -j"${NCPU}"
+  make -C "${pkgname}" LIBDIR=/usr/lib -j"${NCPU}"
 }
 
 package() {
-  make -C "${pkgdir}" LIBDIR=/usr/lib DESTDIR="${pkgdir}" install
+  make -C "${pkgname}" LIBDIR=/usr/lib DESTDIR="${pkgdir}" install
   install -Dm644 "${pkgname}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
