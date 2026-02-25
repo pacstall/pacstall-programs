@@ -12,37 +12,35 @@ breaks=("${pkgname}-git" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-deb" "${p
 repology=("project: opentoonz")
 
 prepare() {
-  cd "${pkgname}~${pkgver}/toonz"
-  mkdir build
+  cd "${pkgname}~${pkgver}"
+
+  cd thirdparty/tiff-4.0.3
+  autoreconf -fiv
 }
 
 build() {
-  cd "${pkgname}~${pkgver}"
-
-  cd "thirdparty/tiff-4.0.3"
+  pushd "${pkgname}~${pkgver}/thirdparty/tiff-4.0.3"
   ./configure --with-pic --disable-jbig
   make -j"${NCPU}"
-  cd "../../"
+  popd
 
-  cd "toonz/build"
-  cmake "../sources"
-  make -j"${NCPU}"
+  local cmake_options=(
+    -B build
+    -S "${pkgname}/toonz/sources"
+    -G Ninja
+    -D CMAKE_INSTALL_PREFIX=/usr
+    -D CMAKE_SKIP_RPATH=YES
+    -D WITH_TRANSLATION=OFF
+    -D CMAKE_POLICY_VERSION_MINIMUM=3.5
+    -D CMAKE_C_STANDARD=17
+    -D WITH_SYSTEM_LZO=ON
+  )
 
+  cmake "${cmake_options[@]}"
+  cmake --build build -j"${NCPU}"
 }
 
 package() {
-  cd "${pkgname}~${pkgver}/toonz/build"
-
-  mkdir -p "${pkgdir}/usr/share/pixmaps/"
-  mkdir -p "${pkgdir}/usr/share/applications/"
-  make install DESTDIR="${pkgdir}"
-  cd "../../"
-  install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.txt"
-  chmod +x "${pkgdir}/opt/${pkgname}/bin/opentoonz"
-
-  install -Dm755 "toonz/sources/xdg-data/io.github.OpenToonz.desktop" "${pkgdir}/usr/share/applications/"
-  install -Dm644 "toonz/sources/xdg-data/io.github.OpenToonz.png" "${pkgdir}/usr/share/pixmaps/"
-
-  printf '#!/bin/sh\nsh /opt/opentoonz/bin/opentoonz' | tee "${pkgdir}/usr/bin/opentoonz" > /dev/null
-  chmod +x "${pkgdir}/usr/bin/opentoonz"
+  DESTDIR="${pkgdir}" cmake --install build
+  install -vDm644 -t "${pkgdir}/usr/share/licenses/${pkgname}" "${pkgname}~${pkgver}/LICENSE.txt"
 }
