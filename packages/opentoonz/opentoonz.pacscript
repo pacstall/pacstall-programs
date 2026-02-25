@@ -12,53 +12,37 @@ breaks=("${pkgname}-git" "${pkgname}-deb" "${pkgname}-app" "${pkgname}-deb" "${p
 repology=("project: opentoonz")
 
 prepare() {
-  cd "${pkgname}~${pkgver}"
-
-  mkdir -p "/home/${LOGNAME}/.config/OpenToonz"
-  cp -r "./stuff" "/home/${LOGNAME}/.config/OpenToonz/"
-  chown -R "${LOGNAME}" "/home/${LOGNAME}/.config/OpenToonz/"
-
-  cd "toonz" || return
+  cd "${pkgname}~${pkgver}/toonz"
   mkdir build
-  cd "../" || return
 }
 
 build() {
   cd "${pkgname}~${pkgver}"
 
-  cd "thirdparty/tiff-4.0.3" || return
+  cd "thirdparty/tiff-4.0.3"
   ./configure --with-pic --disable-jbig
   make -j"${NCPU}"
-  cd "../../" || return
+  cd "../../"
 
-  cd "toonz/build" || return
+  cd "toonz/build"
   cmake "../sources"
   make -j"${NCPU}"
-  cd "../../" || return
 
 }
 
 package() {
-  cd "${pkgname}~${pkgver}"
+  cd "${pkgname}~${pkgver}/toonz/build"
 
-  cd "toonz/build" || return
   mkdir -p "${pkgdir}/usr/share/pixmaps/"
   mkdir -p "${pkgdir}/usr/share/applications/"
   make install DESTDIR="${pkgdir}"
-  cd "../../" || return
+  cd "../../"
   install -Dm644 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.txt"
   chmod +x "${pkgdir}/opt/${pkgname}/bin/opentoonz"
 
   install -Dm755 "toonz/sources/xdg-data/io.github.OpenToonz.desktop" "${pkgdir}/usr/share/applications/"
   install -Dm644 "toonz/sources/xdg-data/io.github.OpenToonz.png" "${pkgdir}/usr/share/pixmaps/"
 
-  printf '#!/bin/sh\nsh /opt/opentoonz/bin/opentoonz' | tee /usr/bin/opentoonz > /dev/null
-  chmod +x "/usr/bin/opentoonz"
-}
-
-post_remove() {
-  ask "Do you want to remove your opentoonz config?" N
-  if [[ ${answer} -eq 1 ]]; then
-    rm -rf "/home/${LOGNAME}/.config/OpenToonz/"
-  fi
+  printf '#!/bin/sh\nsh /opt/opentoonz/bin/opentoonz' | tee "${pkgdir}/usr/bin/opentoonz" > /dev/null
+  chmod +x "${pkgdir}/usr/bin/opentoonz"
 }
