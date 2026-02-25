@@ -1,6 +1,6 @@
-pkgname=eclipse-rcp-bin
+pkgname="eclipse-rcp-bin"
 pkgver="4.38"
-_release=2025-12
+_release="2025-12"
 pkgdesc="IDE for Rich Client Platform (RCP) and Remote Application Platform (RAP)"
 arch=('amd64')
 url="https://eclipse.org/ide"
