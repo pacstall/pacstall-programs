@@ -7,7 +7,6 @@ pkgbase = libx86emu
 	pacdeps = setconf
 	provides = libx86emu-dev
 	maintainer = xdavius <xdavius@github.com>
-	source = @libx86emu~3.7::https://github.com/wfeldt/libx86emu/archive/refs/tags/3.7.tar.gz
-	sha256sums = 03754aede79530baa0e862e1aad5527e9c1bd3371736b1ab5a2bc769e4a3d680
+	source = git+https://github.com/wfeldt/libx86emu#tag=3.7
 
 pkgname = libx86emu
