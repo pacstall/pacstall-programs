@@ -11,6 +11,6 @@ pkgbase = sbt-deb
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: sbt
 	source = https://scala.jfrog.io/artifactory/debian/sbt-1.12.4.deb
-	sha256sums = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+	sha256sums = 75e8cc7b72f1b3f728d6a902339f93aace647c1c83e7b66687b28324ab2b4893
 
 pkgname = sbt-deb
