@@ -6635,7 +6635,8 @@ pkgbase = kvantum
 	makedepends = g++
 	makedepends = cmake
 	makedepends = libx11-dev
-	makedepends = qt6-base-dev
+	makedepends = qt6-base-dev>=6.6.0
+	makedepends = qt6-svg-dev
 	makedepends = libkf5windowsystem-dev
 	makedepends = libxext-dev
 	breaks = qt5-style-kvantum

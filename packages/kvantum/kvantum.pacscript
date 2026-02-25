@@ -2,7 +2,7 @@ pkgname="kvantum"
 arch=("any")
 pkgver="1.1.6"
 source=("@${pkgname}~${pkgver}::https://github.com/tsujan/Kvantum/releases/download/V${pkgver}/Kvantum-${pkgver}.tar.xz")
-makedepends=("g++" "cmake" "libx11-dev" "qt6-base-dev" "libkf5windowsystem-dev" "libxext-dev")
+makedepends=("g++" "cmake" "libx11-dev" "qt6-base-dev>=6.6.0" "qt6-svg-dev" "libkf5windowsystem-dev" "libxext-dev")
 breaks=("qt5-style-kvantum")
 pkgdesc="SVG-based theme engine for Qt"
 incompatible=('debian:bullseye')
