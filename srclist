@@ -7429,15 +7429,14 @@ pkgname = libwebrtc-audio-processing1-deb
 ---
 pkgbase = libx86emu
 	gives = libx86emu3
-	pkgver = 3.5
+	pkgver = 3.7
 	pkgdesc = x86 emulation library
 	url = https://github.com/wfeldt/libx86emu
 	arch = amd64
 	pacdeps = setconf
 	provides = libx86emu-dev
 	maintainer = xdavius <xdavius@github.com>
-	source = git+https://github.com/wfeldt/libx86emu#tag=3.5
-	sha256sums = SKIP
+	source = git+https://github.com/wfeldt/libx86emu#tag=3.7
 
 pkgname = libx86emu
 ---
