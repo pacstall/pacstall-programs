@@ -7,9 +7,9 @@ pkgbase = kvantum
 	makedepends = libx11-dev
 	makedepends = qt6-base-dev>=6.6.0
 	makedepends = qt6-svg-dev
-	makedepends = libkf5windowsystem-dev
+	makedepends = libkf6windowsystem-dev
 	makedepends = libxext-dev
-	breaks = qt5-style-kvantum
+	breaks = qt6-style-kvantum
 	incompatible = debian:bullseye
 	source = @kvantum~1.1.6::https://github.com/tsujan/Kvantum/releases/download/V1.1.6/Kvantum-1.1.6.tar.xz
 	sha256sums = 018df6bf93924c5af55c927998f096f8c70845a2f6031f5e0fcc95edb336674b
