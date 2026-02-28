@@ -1,0 +1,11 @@
+pkgname="linux-headers-sc7280-deb"
+pkgver="6.18.15"
+basever="6.18"
+buildver="1"
+gives="linux-headers-${basever}-sc7280"
+source=("https://repo.mobian.org/pool/main/l/linux-${basever}-sc7280/${gives}_${pkgver}-${buildver}_arm64.deb")
+sha256sums=("7a978f35a990aa9c9b79065fce1929eab08006916d160396ad007123cc1ed03c")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+pkgdesc="Linux kernel header files built for Fairphone 5 (Mobian)"
+arch=('arm64')
+repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")
