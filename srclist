@@ -7686,6 +7686,21 @@ pkgbase = linux-headers-rockchip-deb
 
 pkgname = linux-headers-rockchip-deb
 ---
+pkgbase = linux-headers-sc7280-deb
+	gives = linux-headers-6.18-sc7280
+	pkgver = 6.18.15
+	pkgdesc = Linux kernel header files built for Fairphone 5 (Mobian)
+	arch = arm64
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: linux
+	repology = repo: aur
+	repology = srcname: linux-mainline
+	repology = binname: linux-mainline-headers
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sc7280/linux-headers-6.18-sc7280_6.18.15-1_arm64.deb
+	sha256sums = 7a978f35a990aa9c9b79065fce1929eab08006916d160396ad007123cc1ed03c
+
+pkgname = linux-headers-sc7280-deb
+---
 pkgbase = linux-headers-stable-deb
 	gives = linux-headers-6.19.3-061903
 	pkgver = 6.19.3
@@ -7750,6 +7765,23 @@ pkgbase = linux-image-rockchip-deb
 	pacdeps_ubuntu = firmware-brcm80211-deb
 
 pkgname = linux-image-rockchip-deb
+---
+pkgbase = linux-image-sc7280-deb
+	gives = linux-image-6.18-sc7280
+	pkgver = 6.18.15
+	pkgdesc = Linux kernel image files built for Fairphone 5 (Mobian)
+	arch = arm64
+	depends = initramfs-tools
+	pacdeps = linux-headers-sc7280-deb
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: linux
+	repology = repo: aur
+	repology = srcname: linux-mainline
+	repology = binname: linux-mainline
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sc7280/linux-image-6.18-sc7280_6.18.15-1_arm64.deb
+	sha256sums = 681b39a4aa3d4390e50f6294e4fc18b0d1c61785c809989c67f7256e64d54977
+
+pkgname = linux-image-sc7280-deb
 ---
 pkgbase = linux-image-sunxi-deb
 	gives = linux-image-6.18-sunxi64
