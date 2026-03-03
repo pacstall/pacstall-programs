@@ -1,12 +1,12 @@
 pkgname="rhino-kvantum-theme-git"
 gives="rhino-kvantum-theme"
-depends=("qt6-style-kvantum | qt5-style-kvantum")
+depends=("qt-style-kvantum | qt6-style-kvantum | qt5-style-kvantum")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Rhino Linux Kvantum theme"
 source=("https://github.com/rhino-linux/KvRhino.git")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="3"
+pkgrel="4"
 
 package() {
   cd "KvRhino"
