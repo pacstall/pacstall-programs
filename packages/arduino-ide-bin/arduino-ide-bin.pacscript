@@ -1,7 +1,7 @@
 pkgname="arduino-ide-bin"
 gives="arduino-ide"
 arch=("amd64")
-pkgver="2.3.7"
+pkgver="2.3.8"
 repology=("project: arduino")
 maintainer=("DismissedGuy <me@mikealmel.ooo>")
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
@@ -12,7 +12,7 @@ source=(
 )
 pkgdesc="An open-source IDE that makes it easy to write code and upload it to Arduino boards"
 sha256sums=(
-  "09f940d03350d286094b5a9e4fb297b7d156b1789e827f0d2bcf77c09fc04a78"
+  "226932e402fbdd6763f3988257cf0f69050934f92cdd01ede9dab99e1a238bdb"
   "SKIP"
   "SKIP"
 )
