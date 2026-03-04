@@ -2,13 +2,16 @@ pkgname="capsfix-git"
 source=("https://github.com/oklopfer/capsfix.git")
 arch=("all")
 pkgver="0.0.1"
+pkgrel="2"
 gives="capsfix"
 depends_plucky=('keyd')
 depends_questing=('keyd')
+depends_resolute=('keyd')
 depends_devel=('keyd')
 depends_trixie=('keyd')
+depends_forky=('keyd')
 depends_sid=('keyd')
-if [[ ! "plucky questing devel trixie sid" =~ ${DISTRO#*:} ]]; then
+if [[ ! "plucky questing resolute devel trixie forky sid" =~ ${DISTRO#*:} ]]; then
   pacdeps=('keyd-deb')
 fi
 pkgdesc="Fix the nuisance of Caps Lock disable not toggling until key release"
