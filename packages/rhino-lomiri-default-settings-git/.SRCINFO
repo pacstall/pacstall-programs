@@ -1,6 +1,7 @@
 pkgbase = rhino-lomiri-default-settings-git
 	gives = rhino-lomiri-default-settings
 	pkgver = 0.0.1
+	pkgrel = 2
 	pkgdesc = Rhino Linux branding for Lomiri Desktop
 	arch = all
 	depends = lomiri-schemas
