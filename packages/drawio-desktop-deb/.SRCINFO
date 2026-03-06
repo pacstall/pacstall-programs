@@ -1,12 +1,12 @@
 pkgbase = drawio-desktop-deb
 	gives = draw.io
-	pkgver = 29.3.0
+	pkgver = 29.5.2
 	pkgdesc = Diagram drawing application built on web technology
 	arch = amd64
 	maintainer = JonBoyleCoding <programmerfalcon@gmail.com>
 	repology = project: drawio-desktop
 	repology = visiblename: drawio-desktop
-	source = https://github.com/jgraph/drawio-desktop/releases/download/v29.3.0/drawio-amd64-29.3.0.deb
-	sha256sums = 06f3d776729b99c01f0520e5e461a99827cf9b1b9856cc34f6ff19561b7545d2
+	source = https://github.com/jgraph/drawio-desktop/releases/download/v29.5.2/drawio-amd64-29.5.2.deb
+	sha256sums = ae51a748de1a457bb54a1a8c2c9d5d5b24e56ca6af5f5a868ce5a55536a68e83
 
 pkgname = drawio-desktop-deb

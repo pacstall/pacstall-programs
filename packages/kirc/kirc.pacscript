@@ -1,13 +1,13 @@
 pkgname="kirc"
 repology=("project: ${pkgname}")
 arch=("any")
-pkgver="0.3.3"
+pkgver="1.2.2"
 source=("@${pkgname}~${pkgver}::https://github.com/mcpcpc/${pkgname}/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("automake")
 breaks=("${pkgname}-git")
 replaces=("${pkgname}")
 pkgdesc="A tiny IRC client written in POSIX C99"
-sha256sums=("c76e545efc400486401f387ef266260d4508f9b6265df7f61c0d5b002fec164b")
+sha256sums=("a54bc4d1a644f6fcb610f702454affc241b26da7fbde51951e0ec59133fa7b1d")
 maintainer=("WRM-42 <y8bsbahy@anonaddy.me>")
 
 build() {

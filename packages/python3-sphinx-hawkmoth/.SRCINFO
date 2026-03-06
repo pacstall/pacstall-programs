@@ -1,7 +1,6 @@
 pkgbase = python3-sphinx-hawkmoth
 	gives = python3-sphinx-hawkmoth
-	pkgver = 0.19.0
-	pkgrel = 2
+	pkgver = 0.22.0
 	pkgdesc = Sphinx autodoc C extension
 	url = https://github.com/jnikula/hawkmoth
 	arch = any
@@ -19,7 +18,7 @@ pkgbase = python3-sphinx-hawkmoth
 	pacdeps = python3-editables
 	license = BSD-2-Clause
 	maintainer = xdavius <xdavius@github.com>
-	source = python3-sphinx-hawkmoth::https://github.com/jnikula/hawkmoth/archive/refs/tags/v0.19.0.tar.gz
-	sha256sums = 998b1d031383b8993b20622f851b88e787a71c0ece41f86d996c1402a3ef42ae
+	source = python3-sphinx-hawkmoth::https://github.com/jnikula/hawkmoth/archive/refs/tags/v0.22.0.tar.gz
+	sha256sums = 549328f0555a81280dc47d6910ce240fd1808702cb6cd88a37cf5c86f572ffbc
 
 pkgname = python3-sphinx-hawkmoth

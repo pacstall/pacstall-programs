@@ -1,11 +1,8 @@
 pkgname="unicorn-mobile-git"
-source=(
-  "https://github.com/rhino-linux/unicorn.git#branch=mobile"
-  "https://github.com/rhino-linux/wallpapers.git"
-)
+source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="7"
+pkgrel="10"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -45,6 +42,7 @@ pacdeps=(
   "rhino-xfwm4-theme-git"
   "rhino-wallpapers-git"
   "rhino-branding-git"
+  "rhino-adwaita-theme-git"
   "xfce4-dynamic-workspaces-rs-bin"
 )
 gives="unicorn-mobile"
@@ -77,16 +75,11 @@ build() {
 }
 
 package() {
-  for i in wallpapers/*; do
-    for j in "rhino" "xfce"; do
-      ln -sf "/usr/share/wallpapers/rhino/${i#*wallpapers/}" "${pkgdir}/usr/share/backgrounds/${j}/${i#*wallpapers/}"
-    done
-  done
   cd "unicorn"
   # Install doc
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
   # Install
-  for i in xfce4 plank autostart cortile ulauncher gtk-3.0 gtk-4.0; do
+  for i in xfce4 plank autostart cortile ulauncher; do
     cp -r "${i}" "${pkgdir}/etc/skel/.config"
   done
   install -Dm755 "startunicorn" -t "${pkgdir}/usr/bin"
@@ -106,24 +99,24 @@ package() {
   cp -r unicorn-dashboard "${pkgdir}/usr/share/themes"
   install -Dm644 "50-synaptics.conf" -t "${pkgdir}/etc/X11/xorg.conf.d"
   install -Dm644 "unicorn_badge-symbolic.svg" -t "${pkgdir}/usr/share/icons/hicolor/scalable/places"
+  cp -r onboard "${pkgdir}/etc/skel/.local/share"
+  cp -r Dot-Transparent "${pkgdir}/usr/share/icons"
   for i in svg png; do
     ln -sf "/usr/share/branding/rhino/logo.${i}" "${pkgdir}/usr/share/icons/logo.${i}"
   done
-  cp -r onboard "${pkgdir}/etc/skel/.local/share"
-  cp -r Dot-Transparent "${pkgdir}/usr/share/icons"
+  for i in $(dpkg -L rhino-wallpapers 2> /dev/null | awk '/\.png$/' 2> /dev/null); do
+    for j in rhino xfce; do
+      if [[ -n ${i} ]]; then
+        ln -sf "${i}" "${pkgdir}/usr/share/backgrounds/${j}/${i##*/}"
+      fi
+    done
+  done
 }
 
 post_install() {
   if ! [[ -d "${homedir}/.config" ]]; then
     mkdir -p "${homedir}/.config"
   fi
-  for i in gtk-3.0 gtk-4.0; do
-    if [[ -f "${homedir}/.config/${i}/gtk.css" && ! -f "${homedir}/.config/${i}/gtk.css-unicorn.bak" ]]; then
-      mv "${homedir}/.config/${i}/gtk.css" "${homedir}/.config/${i}/gtk.css-unicorn.bak"
-      cp -r "/etc/skel/.config/${i}" "${homedir}/.config"
-      sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/${i}"
-    fi
-  done
   if [[ -f "${homedir}/.config/gtk-3.0/gtk.css" ]]; then
     sudo sed -i '/^\.-vala-panel-appmenu-core > \* {/,/^}/d' "${homedir}/.config/gtk-3.0/gtk.css"
   fi

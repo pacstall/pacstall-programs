@@ -1,6 +1,6 @@
 pkgname="osu-lazer-app"
 arch=("amd64")
-pkgver="2026.102.1"
+pkgver="2026.119.0"
 _pkgtag="lazer"
 pkgdesc="The future of osu! and the beginning of an open era! Commonly known by the codename osu!lazer. Pew pew."
 url='https://osu.ppy.sh'
@@ -17,7 +17,7 @@ source=(
   "osu-lazer.desktop"
 )
 sha256sums=(
-  "de852d5d0dcf59231f21a4217ec929b721139735cd1d5de7035b0ee480a6b318"
+  "971f2553db4d5c3f74ae968a948c91d02e1e4a2bdf9950093fb5aafa7dc7b74f"
   "30cf4df3fd76006b08a0bcb6a325fb2fdcf6a4371f77001da3c38cbce871bd51"
   "18f9ab3e98e5cc93a5da9baaa3b065c6511e126306107dfb51633406f3e49b0a"
   "e08a76a780960fffbd63fed26df21f0e7846d9bc8b366bfdbb54b07bf543113e"

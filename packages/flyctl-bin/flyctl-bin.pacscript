@@ -1,9 +1,9 @@
 pkgname="flyctl-bin"
 repology=("project: flyctl")
-pkgver="0.3.144"
+pkgver="0.4.14"
 arch=("amd64" "arm64")
-sha256sums_amd64=("8b81469299c1e53c129f469501b341a402b21f1781f5dc25338d4a3910ebad96")
-sha256sums_arm64=("bea8261d481e815fa725e737af37a3d0f3c13c8227f00780e0f53a4af87ef156")
+sha256sums_amd64=("3bfdce07d87f8618d3352b30affed368bcfe2da7e77333e3b8198998bb87e713")
+sha256sums_arm64=("f70a3087ecc9526220f92777f6f24f28d6a7f969a64dd81e2300c3f59e6bf39d")
 source_amd64=("https://github.com/superfly/flyctl/releases/download/v${pkgver}/flyctl_${pkgver}_Linux_x86_64.tar.gz")
 source_arm64=("https://github.com/superfly/flyctl/releases/download/v${pkgver}/flyctl_${pkgver}_Linux_arm64.tar.gz")
 pkgdesc="Command line tool for fly.io services"
@@ -11,8 +11,7 @@ url='https://fly.io'
 maintainer=("Andrew Barchuk <andrew@raindev.io>")
 
 package() {
-  install -Dm755 "./flyctl" -t "${pkgdir}/usr/bin"
-  ln -sf /usr/bin/flyctl "${pkdir}/usr/bin/fly"
+  install -Dm755 flyctl "${pkgdir}/usr/bin/fly"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:

@@ -1,12 +1,12 @@
 pkgbase = libressl
-	pkgver = 3.7.3
+	pkgver = 4.2.1
 	pkgdesc = LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014, with goals of modernizing the codebase, improving security, and applying best practice development processes.
 	arch = any
 	breaks = libressl-git
 	breaks = libressl-bin
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: libressl
-	source = @libressl~3.7.3::https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.7.3.tar.gz
-	sha256sums = 7948c856a90c825bd7268b6f85674a8dcd254bae42e221781b24e3f8dc335db3
+	source = @libressl~4.2.1::https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.2.1.tar.gz
+	sha256sums = 6d5c2f58583588ea791f4c8645004071d00dfa554a5bf788a006ca1eb5abd70b
 
 pkgname = libressl

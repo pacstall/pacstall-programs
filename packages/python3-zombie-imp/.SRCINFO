@@ -1,5 +1,5 @@
 pkgbase = python3-zombie-imp
-	pkgver = 0.0.2
+	pkgver = 0.0.4
 	pkgdesc = A copy of the imp module that was removed in Python 3.12
 	url = https://github.com/encukou/zombie-imp
 	arch = any
@@ -15,7 +15,7 @@ pkgbase = python3-zombie-imp
 	compatible = *:devel
 	license = GPL-3.0-or-later
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = https://github.com/encukou/zombie-imp/archive/refs/tags/v0.0.2.tar.gz
-	sha512sums = 25fcb8633dab3f5b8546ec0bfaf82e0c6a17373ec4c5d87219d1e93aeaac8deeae2b68c827edbd2b2aecb8a900a516d0819493c241e64a2217b8626a8a0155af
+	source = https://github.com/encukou/zombie-imp/archive/refs/tags/v0.0.4.tar.gz
+	sha512sums = 03212d32abd41d58d08fcafdaa77ba5fe951ec75ca1558a45e6cd17f344cefdbf92fb487e401f17c43a4835dbca0bab49fff60fc9e5afb561b39a74d87fbf14c
 
 pkgname = python3-zombie-imp

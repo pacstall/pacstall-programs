@@ -1,12 +1,12 @@
 pkgbase = kdenlive-app
 	gives = kdenlive
-	pkgver = 25.04.3
+	pkgver = 25.12.2
 	pkgdesc = Free and Open Source Video Editor from KDE
 	url = https://kdenlive.org
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: kdenlive
-	source = https://download.kde.org/stable/kdenlive/25.04/linux/kdenlive-25.04.3-x86_64.AppImage
-	sha256sums = 57d488f5a484a52e8920e02b2c9263146b5665f4ab045abfd1a8631b2abf939a
+	source = https://download.kde.org/stable/kdenlive/25.12/linux/kdenlive-25.12.2-x86_64.AppImage
+	sha256sums = 1917a2473ead9d5e5295e74ae17622a433ffabf1cb63d02f9bbf1920dfbe6e5b
 
 pkgname = kdenlive-app

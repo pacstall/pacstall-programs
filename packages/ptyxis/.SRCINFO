@@ -1,5 +1,5 @@
 pkgbase = ptyxis
-	pkgver = 48.4
+	pkgver = 49.3
 	pkgdesc = A terminal for a container-oriented desktop
 	url = https://gitlab.gnome.org/chergert/ptyxis
 	arch = any
@@ -28,6 +28,6 @@ pkgbase = ptyxis
 	makedepends = appstream
 	license = GPL-3.0-or-later
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source = ptyxis::git+https://gitlab.gnome.org/chergert/ptyxis#tag=48.4
+	source = ptyxis::git+https://gitlab.gnome.org/chergert/ptyxis#tag=49.3
 
 pkgname = ptyxis
