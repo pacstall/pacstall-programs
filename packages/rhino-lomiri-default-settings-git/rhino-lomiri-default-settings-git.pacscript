@@ -24,6 +24,7 @@ post_install() {
   mkdir -p "${homedir}/.config/lomiri-ui-toolkit"
   if ! [[ -f "${homedir}/.config/lomiri-ui-toolkit/theme.ini" ]]; then
     sudo cp "/etc/skel/.config/lomiri-ui-toolkit/theme.ini" "${homedir}/.config/lomiri-ui-toolkit/theme.ini"
+    sudo chown -cR "${PACSTALL_USER}" "${homedir}/.config/lomiri-ui-toolkit"
   fi
 }
 
