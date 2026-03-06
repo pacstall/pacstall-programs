@@ -22,5 +22,5 @@ package() {
 
   install -Dm644 "completions/${pkgname}.bash" "${pkgdir}/usr/share/bash-completion/completions/${pkgname}"
   install -Dm644 "completions/${pkgname}.fish" "${pkgdir}/usr/share/fish/vendor_completions.d/${pkgname}.fish"
-  install -Dm644 "completions/${pkgname}.zsh"  "${pkgdir}/usr/share/zsh/site-functions/_${pkgname}"
+  install -Dm644 "completions/${pkgname}.zsh" "${pkgdir}/usr/share/zsh/site-functions/_${pkgname}"
 }
