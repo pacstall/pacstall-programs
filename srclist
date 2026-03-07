@@ -3597,13 +3597,13 @@ pkgname = firmware-brcm80211-deb
 ---
 pkgbase = firmware-realtek-deb
 	gives = firmware-realtek
-	pkgver = 20251111
+	pkgver = 20260110
 	pkgdesc = Firmware files for Realtek chips
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firmware-realtek
-	source = http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/firmware-realtek_20251111-1_all.deb
-	sha256sums = d992227ed8b886a26aa15528153e2eaa68d625cd1b53d9fddef8c4632adda16a
+	source = http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/firmware-realtek_20260110-1_all.deb
+	sha256sums = c1c58efb28e1b5e01007f5db93b014f2573048091c8931f233a90a5732bca72c
 
 pkgname = firmware-realtek-deb
 ---
