@@ -8501,14 +8501,14 @@ pkgname = master-pdf-editor-deb
 ---
 pkgbase = mcontrolcenter-bin
 	gives = mcontrolcenter
-	pkgver = 0.5.0
+	pkgver = 0.5.1
 	pkgdesc = MControlCenter is a Free and Open Source GNU/Linux application that allows you to change the settings of MSI laptops.
 	arch = amd64
 	depends = libqt5widgets5
 	maintainer = সৌম্যদীপ <soumyadeepghosh2004@zohomail.in>
 	repology = project: mcontrolcenter
-	source = @mcontrolcenter-bin~0.5.0::https://github.com/dmitry-s93/MControlCenter/releases/download/0.5.0/MControlCenter-0.5.0-bin.tar.gz
-	sha256sums = b5507918e229b15d06f1829f5d9fcc062a1c9d430468170ef4d31fdc4e8a8907
+	source = @mcontrolcenter-bin~0.5.1::https://github.com/dmitry-s93/MControlCenter/releases/download/0.5.1/MControlCenter-0.5.1-bin.tar.gz
+	sha256sums = 704849b907a77e564056805413fda1e146ade91914c50fb26f508b79e26b41b0
 
 pkgname = mcontrolcenter-bin
 ---
