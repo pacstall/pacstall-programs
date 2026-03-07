@@ -4410,7 +4410,7 @@ pkgname = go-task-deb
 ---
 pkgbase = godot-bin
 	gives = godot
-	pkgver = 4.4
+	pkgver = 4.6.1
 	pkgdesc = Multi-platform 2D and 3D game engine
 	url = https://godotengine.org/
 	arch = amd64
@@ -4420,18 +4420,18 @@ pkgbase = godot-bin
 	license = MIT
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: godot
-	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/4.4/misc/dist/linux/org.godotengine.Godot.desktop
-	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/4.4/misc/dist/linux/org.godotengine.Godot.xml
-	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/4.4/icon.svg
-	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/4.4/misc/dist/linux/godot.6
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/4.6.1/misc/dist/linux/org.godotengine.Godot.desktop
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/4.6.1/misc/dist/linux/org.godotengine.Godot.xml
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/4.6.1/icon.svg
+	source = https://raw.githubusercontent.com/godotengine/godot/refs/heads/4.6.1/misc/dist/linux/godot.6
 	sha256sums = SKIP
 	sha256sums = SKIP
 	sha256sums = SKIP
 	sha256sums = SKIP
-	source_amd64 = https://github.com/godotengine/godot/releases/download/4.4-stable/Godot_v4.4-stable_linux.x86_64.zip
-	sha256sums_amd64 = 05d2c4d6f9b52a620df4b8b9bdd5113a1a53ea83f6edd16042d609fd24ec75a4
-	source_arm64 = https://github.com/godotengine/godot/releases/download/4.4-stable/Godot_v4.4-stable_linux.arm64.zip
-	sha256sums_arm64 = f0ffda9dd432b964fb71de5bcc2fe8702bcef647eec3d99e1dad8f3f8bd6ce18
+	source_amd64 = https://github.com/godotengine/godot/releases/download/4.6.1-stable/Godot_v4.6.1-stable_linux.x86_64.zip
+	sha256sums_amd64 = cecd0cb6b55e931318a9d7237dc4197d69ea914966787a454808523626e2789f
+	source_arm64 = https://github.com/godotengine/godot/releases/download/4.6.1-stable/Godot_v4.6.1-stable_linux.arm64.zip
+	sha256sums_arm64 = 4e735876036ff95a9917247ad618328e981e38b91661853a3b7d781171fbf085
 
 pkgname = godot-bin
 ---
