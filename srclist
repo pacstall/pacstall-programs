@@ -2729,6 +2729,24 @@ pkgbase = eclipse-rcp-bin
 
 pkgname = eclipse-rcp-bin
 ---
+pkgbase = eclipse-rcptt-bin
+	gives = eclipse-rcptt
+	pkgver = 2.7.3
+	pkgdesc = Eclipse RCP Testing Tool IDE
+	url = https://eclipse.org/rcptt
+	arch = amd64
+	depends = libwebkit2gtk-4.1-0
+	license = EPL-2.0
+	maintainer = Matthias Mailänder <matthias@mailaender.name>
+	source = https://cdimage.debian.org/mirror/eclipse.org/rcptt/release/2.7.3/ide/rcptt.ide-2.7.3-linux.gtk.x86_64.zip
+	source = https://raw.githubusercontent.com/eclipse-linuxtools/org.eclipse.linuxtools.eclipse-build/refs/heads/master/desktopintegration/eclipse-rcptt.png
+	source = https://raw.githubusercontent.com/eclipse-linuxtools/org.eclipse.linuxtools.eclipse-build/refs/heads/master/desktopintegration/eclipse-rcptt.desktop
+	sha512sums = 908de8b338da1be732b52740607a8e0a57c6e3c4a3293fd9112310664a3f62f8f8b9899dc257c3c4a768643b721f3a8ea04bc633e4367d92a6ef0f0228d38b19
+	sha512sums = df5b0fb3b465c19033bf73a9b3ca67ed0f107b1ebdedee0240952c8913a8225134717e59d74d5445b24f7fab08d20f97f7e11628d384fc4968e4869059501f74
+	sha512sums = 002a074ce1a41bc84bf688c21e3e8e94ba4662b167f459e5cc46397434565fab30520cc78e062407ac7eaba73d84604ff2d16aa27c3aa2d39cc9aea27d969d8c
+
+pkgname = eclipse-rcptt-bin
+---
 pkgbase = eddie-ui-deb
 	gives = eddie-ui
 	pkgver = 2.24.6
