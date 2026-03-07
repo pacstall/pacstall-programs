@@ -1,10 +1,10 @@
 pkgname="emby-server-deb"
-pkgver="4.8.11.0"
+pkgver="4.9.3.0"
 repology=("project: emby")
 gives="emby-server"
 breaks=("${gives}" "${gives}-bin" "${gives}-git")
 source=("https://github.com/MediaBrowser/Emby.Releases/releases/download/${pkgver}/${pkgname}_${pkgver}_amd64.deb")
-sha256sums=("65fdca96eeac432b1b1bd8bc5bae209274c6dfeb2e2c34b41a96957f25394c40")
+sha256sums=("4edf8fe819d89b979f4aebbab05f598bbabf44b87f460fb3222e6912a8b0a733")
 arch=('amd64')
 pkgdesc="Emby brings together your personal videos, music, photos, and live television"
 maintainer=("Warofzen <warofzen1@protonmail.com>")

@@ -2904,7 +2904,7 @@ pkgname = emacs
 ---
 pkgbase = emby-server-deb
 	gives = emby-server
-	pkgver = 4.8.11.0
+	pkgver = 4.9.3.0
 	pkgdesc = Emby brings together your personal videos, music, photos, and live television
 	arch = amd64
 	breaks = emby-server
@@ -2912,8 +2912,8 @@ pkgbase = emby-server-deb
 	breaks = emby-server-git
 	maintainer = Warofzen <warofzen1@protonmail.com>
 	repology = project: emby
-	source = https://github.com/MediaBrowser/Emby.Releases/releases/download/4.8.11.0/emby-server-deb_4.8.11.0_amd64.deb
-	sha256sums = 65fdca96eeac432b1b1bd8bc5bae209274c6dfeb2e2c34b41a96957f25394c40
+	source = https://github.com/MediaBrowser/Emby.Releases/releases/download/4.9.3.0/emby-server-deb_4.9.3.0_amd64.deb
+	sha256sums = 4edf8fe819d89b979f4aebbab05f598bbabf44b87f460fb3222e6912a8b0a733
 
 pkgname = emby-server-deb
 ---
