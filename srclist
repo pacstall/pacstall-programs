@@ -17901,7 +17901,7 @@ pkgname = zed-editor-stable-bin
 ---
 pkgbase = zen-browser-bin
 	gives = zen-browser
-	pkgver = 1.19b
+	pkgver = 1.19.1b
 	pkgdesc = Experience tranquillity while browsing the web without people tracking you!
 	url = https://zen-browser.app/
 	arch = amd64
@@ -17938,8 +17938,8 @@ pkgbase = zen-browser-bin
 	depends_amd64 = libxcursor1
 	depends_amd64 = libxi6
 	depends_amd64 = libxrender1
-	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.19b/zen.linux-x86_64.tar.xz
-	sha256sums_amd64 = 0bd9227975924b02a1b304551360553078e582ff9aef8eee1ea0ca86a61f8e03
+	source_amd64 = https://github.com/zen-browser/desktop/releases/download/1.19.1b/zen.linux-x86_64.tar.xz
+	sha256sums_amd64 = 40a9d137e6a33e4477e9428d62f245d8e8f4610a72cfb624a97070c2e3ddfdab
 	depends_arm64 = libevent-2.1-7
 	depends_arm64 = libffi8
 	depends_arm64 = libnspr4
@@ -17949,8 +17949,8 @@ pkgbase = zen-browser-bin
 	depends_arm64 = fontconfig
 	depends_arm64 = procps
 	depends_arm64 = debianutils
-	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.19b/zen.linux-aarch64.tar.xz
-	sha256sums_arm64 = aeb3614b39eba7b4371491bd1ada3ecec1bd19b6891640eef6ca5077d2bf429d
+	source_arm64 = https://github.com/zen-browser/desktop/releases/download/1.19.1b/zen.linux-aarch64.tar.xz
+	sha256sums_arm64 = b8b3b1c16a9b8ad2b05ba84544d4217c20f488f6c4b2ef894951d2dcebbfa3df
 
 pkgname = zen-browser-bin
 ---
