@@ -1,7 +1,7 @@
 pkgname="godot-bin"
 repology=("project: godot")
 arch=('amd64' 'arm64')
-pkgver="4.4"
+pkgver="4.6.1"
 url='https://godotengine.org/'
 source=(
   "https://raw.githubusercontent.com/godotengine/godot/refs/heads/${pkgver}/misc/dist/linux/org.godotengine.Godot.desktop"
@@ -17,8 +17,8 @@ sha256sums=(
   'SKIP'
   'SKIP'
 )
-sha256sums_amd64=("05d2c4d6f9b52a620df4b8b9bdd5113a1a53ea83f6edd16042d609fd24ec75a4")
-sha256sums_arm64=("f0ffda9dd432b964fb71de5bcc2fe8702bcef647eec3d99e1dad8f3f8bd6ce18")
+sha256sums_amd64=("cecd0cb6b55e931318a9d7237dc4197d69ea914966787a454808523626e2789f")
+sha256sums_arm64=("4e735876036ff95a9917247ad618328e981e38b91661853a3b7d781171fbf085")
 conflicts=("godot-mono-bin" "godot-git")
 gives="godot"
 pkgdesc="Multi-platform 2D and 3D game engine"
