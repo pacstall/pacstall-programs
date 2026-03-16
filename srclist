@@ -16081,6 +16081,27 @@ pkgbase = universal-ctags-git
 
 pkgname = universal-ctags-git
 ---
+pkgbase = upk-git
+	pkgver = 1.2.0.r0.g6ae333d
+	pkgrel = 1
+	pkgdesc = Ubuntu Package Kit - Universal package manager wrapper (Git version)
+	url = https://github.com/undefinederror/upk
+	arch = any
+	depends = python3
+	depends = python3-click
+	depends = python3-rich
+	conflicts = upk
+	provides = upk
+	recommends = nala
+	recommends = snapd
+	recommends = flatpak
+	recommends = pacstall
+	license = MIT
+	source = upk-git::git+https://github.com/undefinederror/upk.git
+	sha256sums = SKIP
+
+pkgname = upk-git
+---
 pkgbase = upscayl-app
 	gives = upscayl
 	pkgver = 2.15.0
