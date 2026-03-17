@@ -12582,6 +12582,40 @@ pkgbase = python3-pypresence
 
 pkgname = python3-pypresence
 ---
+pkgbase = python3-pywal16
+	gives = pywal16
+	pkgver = 3.8.14
+	pkgdesc = Generate and change color-schemes on the fly (fork that uses 16 colors)
+	url = https://github.com/eylles/pywal16
+	arch = any
+	depends = python3
+	depends = imagemagick
+	makedepends = git
+	makedepends = python3-setuptools
+	optdepends = colorz: alternative color backend
+	optdepends = python-colorthief: alternative color backend
+	optdepends = fast-colorthief: alternative color backend (faster fork of colorthief)
+	optdepends = x11-xserver-utils: save colors to X db for new terminals to use
+	optdepends = bspwm: reload bspwm colors
+	optdepends = i3-wm: reload i3 colors
+	optdepends = kitty: reload kitty colors
+	optdepends = polybar: reload polybar colors
+	optdepends = sway: reload sway colors
+	optdepends = feh: set wallpaper for X (pywal's #1 choice)
+	optdepends = xwallpaper: set wallpaper for X (pywal's #2 choice)
+	optdepends = nitrogen: set wallpaper for X (pywal's #3 choice)
+	optdepends = hsetroot: set wallpaper for X (pywal's #4 choice)
+	conflicts = wal
+	conflicts = pywal
+	provides = python3-pywal16
+	provides = pywal
+	license = MIT
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/eylles/pywal16/archive/refs/tags/3.8.14.tar.gz
+	sha256sums = 7f56a7d00b1c0b9c5b44b846d83d0f7ad0b2c6c0c4e6f628d9c7381031743294
+
+pkgname = python3-pywal16
+---
 pkgbase = python3-sphinx-hawkmoth
 	gives = python3-sphinx-hawkmoth
 	pkgver = 0.22.0
