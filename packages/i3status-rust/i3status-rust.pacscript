@@ -1,4 +1,4 @@
-pa60257035f293d171cc2d433c1d62aa99d1596944f56b52818021014d1d551a9kgname="i3status-rust"
+pkgname="i3status-rust"
 gives="i3status-rs"
 repology=("project: i3status-rust")
 arch=("any")
