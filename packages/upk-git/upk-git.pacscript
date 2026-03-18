@@ -1,16 +1,14 @@
 pkgname="upk-git"
 pkgver="1.2.1"
-pkgrel=1
 pkgdesc="Ubuntu Package Kit - Universal package manager wrapper"
 arch=('any')
-url="https://github.com/undefinederror/upk"
+url='https://github.com/undefinederror/upk'
 maintainer=("undefinederror <github@object.ninja>")
 license=('MIT')
 depends=('python3' 'python3-click' 'python3-rich')
 provides=("upk")
 conflicts=("upk")
 source=("https://github.com/undefinederror/upk.git")
-sha256sums=('SKIP')
 
 build() {
   cd "upk"
