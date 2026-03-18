@@ -16083,7 +16083,6 @@ pkgname = universal-ctags-git
 ---
 pkgbase = upk-git
 	pkgver = 1.2.1
-	pkgrel = 1
 	pkgdesc = Ubuntu Package Kit - Universal package manager wrapper
 	url = https://github.com/undefinederror/upk
 	arch = any
@@ -16095,7 +16094,6 @@ pkgbase = upk-git
 	license = MIT
 	maintainer = undefinederror <github@object.ninja>
 	source = https://github.com/undefinederror/upk.git
-	sha256sums = SKIP
 
 pkgname = upk-git
 ---
