@@ -13,7 +13,7 @@ source=("https://github.com/undefinederror/upk.git")
 build() {
   cd "upk"
   mkdir -p "completions"
-  _UPK_COMPLETE=bash_source python3 -m upk.upk > "completions/upk.bash" || true
+  _UPK_COMPLETE=bash_source python3 -m upk.upk > "completions/upk.bash"
 }
 
 package() {
