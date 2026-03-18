@@ -6,6 +6,7 @@ url='https://github.com/undefinederror/upk'
 maintainer=("undefinederror <github@object.ninja>")
 license=('MIT')
 depends=('python3' 'python3-click' 'python3-rich')
+makedepends=('python3' 'python3-click')
 provides=("upk")
 conflicts=("upk")
 source=("https://github.com/undefinederror/upk.git")
