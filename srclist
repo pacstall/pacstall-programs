@@ -6985,7 +6985,7 @@ pkgname = libaquamarine-bin
 ---
 pkgbase = libation-deb
 	gives = libation
-	pkgver = 13.1.8
+	pkgver = 13.3.2
 	pkgdesc = Free and open source app to manage your Audible books
 	arch = arm64
 	arch = amd64
@@ -6994,8 +6994,8 @@ pkgbase = libation-deb
 	breaks = libation-bin
 	breaks = libation-app
 	maintainer = Tobias Heinlein <nionxtrix@mailbox.org>
-	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v13.1.8/Libation.13.1.8-linux-chardonnay-arm64.deb
-	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v13.1.8/Libation.13.1.8-linux-chardonnay-amd64.deb
+	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v13.3.2/Libation.13.3.2-linux-chardonnay-arm64.deb
+	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v13.3.2/Libation.13.3.2-linux-chardonnay-amd64.deb
 
 pkgname = libation-deb
 ---
