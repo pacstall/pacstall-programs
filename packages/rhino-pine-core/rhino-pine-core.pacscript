@@ -12,7 +12,7 @@ replaces=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
 pkgver="2025.4"
-pkgrel="2"
+pkgrel="3"
 style="(mobile)"
 branch="devel"
 
@@ -34,13 +34,18 @@ NAME=\"Rhino Linux\"
 VERSION_ID=\"${pkgver}\"
 VERSION=\"${pkgver} ${style}\"
 VERSION_CODENAME=\"${branch}\"
-ID=ubuntu
-ID_LIKE=debian
+ID=rhinolinux
+ID_LIKE=\"ubuntu debian\"
 HOME_URL=\"https://rhinolinux.org/\"
 SUPPORT_URL=\"https://github.com/rhino-linux\"
-BUG_REPORT_URL=\"https://github.com/rhino-linux\"
+BUG_REPORT_URL=\"https://github.com/rhino-linux/tracker/issues\"
 PRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"
-UBUNTU_CODENAME=\"${branch}\"" | tee "${pkgdir}/usr/lib/os-release" > /dev/null
+UBUNTU_CODENAME=\"${branch}\"
+UBUNTU_PRETTY_NAME=\"Ubuntu ${branch}\"
+UBUNTU_NAME=\"Ubuntu\"
+UBUNTU_VERSION_ID=\"${branch}\"
+UBUNTU_VERSION=\"${branch}\"
+UBUNTU_VERSION_CODENAME=\"${branch}\"" | tee "${pkgdir}/usr/lib/os-release" > /dev/null
 }
 
 post_install() {
