@@ -1,5 +1,5 @@
 pkgbase = linux-kernel
-	pkgver = 7.0~rc1
+	pkgver = 7.0~rc5
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
