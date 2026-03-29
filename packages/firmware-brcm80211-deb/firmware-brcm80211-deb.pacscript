@@ -1,9 +1,9 @@
 pkgname="firmware-brcm80211-deb"
 gives="${pkgname%-deb}"
-pkgver="20260110"
+pkgver="20260309"
 arch=("all")
 repology=("project: ${gives}")
 source=("http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/${gives}_${pkgver}-1_all.deb")
 pkgdesc="Firmware files for Broadcom chips"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-sha256sums=("6cfc8f96e1da0044eb6f96e31fdf707a49d4a613273ea16de90b5098e7205907")
+sha256sums=("59aad8a96dbbc33c693d19fbb4ba56d163d772781bff6eec9f018b5b40f1fe6e")
