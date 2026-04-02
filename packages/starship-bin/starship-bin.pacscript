@@ -1,9 +1,9 @@
 pkgname="starship-bin"
 gives="starship"
-pkgver="1.23.0"
+pkgver="1.24.2"
 source=("https://github.com/starship/starship/releases/download/v${pkgver}/starship-x86_64-unknown-linux-gnu.tar.gz")
 pkgdesc="The minimal, blazing-fast, and infinitely customizable prompt for any shell"
-sha256sums=("cef41df04378c6f692913c5d9c1032d3b9a4369a1d2f3296c8300ed8838c2197")
+sha256sums=("3f12f61883ff324c1dbe7b885fa125d5490960e5cad6a12eeaa34695ec1b5744")
 arch=('amd64')
 breaks=("${gives}" "${gives}-deb" "${gives}-app" "${gives}-git")
 repology=("project: ${gives}")

@@ -1,11 +1,10 @@
 pkgname="timeshift"
 repology=("project: timeshift")
 arch=("any")
-pkgver="24.06.6"
-pkgrel="2"
+pkgver="25.12.4"
 maintainer=("Paul Cosma (saenai) <paul.cosma97@gmail.com>")
 source=("@${pkgname}~${pkgver}::https://github.com/linuxmint/timeshift/archive/refs/tags/${pkgver}.zip")
-sha256sums=("775e30bb6c5eaa8741c1aabbd4a5a06c7964c4bff14ee680be87bb8484761391")
+sha256sums=("d9bde6b332655ce707806133165bd649789390d5ab2c5cbd78e0a2fc5089078c")
 makedepends=("debhelper" "autotools-dev" "gzip" "valac" "libgtk-3-dev" "libgee-0.8-dev" "libjson-glib-dev" "libvte-2.91-dev" "libxapp-dev" "meson" "ninja-build" "help2man")
 depends=("rsync" "btrfs-progs")
 breaks=("${pkgname}-git" "${pkgname}-deb" "${pkgname}-bin" "${pkgname}-app")

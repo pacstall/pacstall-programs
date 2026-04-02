@@ -1,11 +1,11 @@
 pkgbase = waf
-	pkgver = 2.1.6
+	pkgver = 2.1.9
 	pkgdesc = Waf is a Python-based framework for configuring, compiling and installing applications.
 	arch = any
 	depends = python3
 	makedepends = python3
 	maintainer = echometerain <echometer@disroot.org>
-	source = @waf~2.1.6::https://gitlab.com/ita1024/waf/-/archive/waf-2.1.6/waf-waf-2.1.6.zip
-	sha256sums = 1bf7c726fb693fbf3e754e757c0cd0133a3159156518d42d6579c4ad88c607e0
+	source = @waf~2.1.9::https://gitlab.com/ita1024/waf/-/archive/waf-2.1.9/waf-waf-2.1.9.zip
+	sha256sums = 47c555fb57ea72d0a2e31f13e74c2588d9686b7c4c63ce0dbbf7fb894390b720
 
 pkgname = waf
