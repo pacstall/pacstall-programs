@@ -46,7 +46,11 @@ post_install() {
     usermod -a -G video ollama
   fi
 
-  usermod -a -G ollama "${PACSTALL_USER}"
+  if [[ -n ${PACSTALL_USER:-} ]] && [[ ${PACSTALL_USER} != root ]] && id -u "${PACSTALL_USER}" > /dev/null 2>&1; then
+    usermod -a -G ollama "${PACSTALL_USER}"
+  else
+    fancy_message info 'To allow a user to access Ollama, run: sudo usermod -a -G ollama <username>'
+  fi
 
   SYSTEMCTL_RUNNING="$(systemctl is-system-running || true)"
   case ${SYSTEMCTL_RUNNING} in
