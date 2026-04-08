@@ -27,7 +27,7 @@ package() {
   install -Dm644 extra/completions/alacritty.fish -t "${pkgdir}/usr/share/fish/vendor_completions.d"
   install -Dm644 extra/completions/_alacritty -t "${pkgdir}/usr/share/zsh/vendor-completions"
 
-  mkdir -p "${pkgdir}/usr/local/share/man/man1" "${pkgdir}/usr/local/share/man/man5"
+  mkdir -p "${pkgdir}/usr/local/share/man/man1" "${pkgdir}/usr/local/share/man/man5" "${pkgdir}/usr/local/share/man/man7"
   scdoc < extra/man/alacritty.1.scd | gzip -c | tee "${pkgdir}/usr/local/share/man/man1/alacritty.1.gz" > /dev/null
   scdoc < extra/man/alacritty-msg.1.scd | gzip -c | tee "${pkgdir}/usr/local/share/man/man1/alacritty-msg.1.gz" > /dev/null
   scdoc < extra/man/alacritty.5.scd | gzip -c | tee "${pkgdir}/usr/local/share/man/man5/alacritty.5.gz" > /dev/null
