@@ -91,7 +91,7 @@ pkgbase = adw-gtk3
 pkgname = adw-gtk3
 ---
 pkgbase = alacritty
-	pkgver = 0.16.1
+	pkgver = 0.17.0
 	pkgdesc = A fast, cross-platform, OpenGL terminal emulator
 	arch = any
 	makedepends = cargo
@@ -107,8 +107,8 @@ pkgbase = alacritty
 	incompatible = debian:bookworm
 	maintainer = Warofzen <warofzen1@protonmail.com>
 	repology = project: alacritty
-	source = @alacritty~0.16.1::https://github.com/alacritty/alacritty/archive/refs/tags/v0.16.1.tar.gz
-	sha256sums = b7240df4a52c004470977237a276185fc97395d59319480d67cad3c4347f395e
+	source = @alacritty~0.17.0::https://github.com/alacritty/alacritty/archive/refs/tags/v0.17.0.tar.gz
+	sha256sums = 38d6527d346cda5c6049332a1f3338a89ea66cd7981b54d4c3ce801b392496f8
 
 pkgname = alacritty
 ---
