@@ -90,6 +90,22 @@ pkgbase = adw-gtk3
 
 pkgname = adw-gtk3
 ---
+pkgbase = aic8800d80-wifi-bt-dkms-git
+	pkgver = 1.0.0
+	pkgdesc = Kernel modules for AIC8800D80 USB dongle WIFI AX900 with BT5.4
+	url = https://github.com/shenmintao/aic8800d80
+	arch = any
+	depends = dkms
+	makedepends = git
+	conflicts = aic8800d80
+	conflicts = aic8800
+	license = GPL-2.0-only
+	maintainer = xdavius <xdavius@gmail.com>
+	source = git+https://github.com/shenmintao/aic8800d80.git#branch=bluetooth
+	sha512sums = SKIP
+
+pkgname = aic8800d80-wifi-bt-dkms-git
+---
 pkgbase = alacritty
 	pkgver = 0.17.0
 	pkgdesc = A fast, cross-platform, OpenGL terminal emulator
