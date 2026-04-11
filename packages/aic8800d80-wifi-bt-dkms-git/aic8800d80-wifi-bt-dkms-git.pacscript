@@ -34,7 +34,7 @@ package() {
 
 post_upgrade() {
   if dkms status | grep -q "${_dkmsname}/${pkgver}"; then
-    dkms remove -m "${_dkmsname}" -v "${oldver}" --all
+    dkms remove -m "${_dkmsname}" -v "${pkgver}" --all
   fi
   dkms add -m "${_dkmsname}" -v "${pkgver}"
   dkms build -m "${_dkmsname}" -v "${pkgver}"
