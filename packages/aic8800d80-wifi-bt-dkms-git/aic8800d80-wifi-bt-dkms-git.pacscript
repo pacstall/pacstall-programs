@@ -45,8 +45,6 @@ post_upgrade() {
 
 post_install() {
   KERNEL_VERSION=$(uname -r)
-  RED='\033[0;31m'
-  NC='\033[0m'
   if [[ -d "/lib/modules/${KERNEL_VERSION}/build" ]]; then
     if ! dkms status | grep -q "${_dkmsname}/${pkgver}"; then
       dkms add -m "${_dkmsname}" -v "${pkgver}"
@@ -57,8 +55,8 @@ post_install() {
       fi
     fi
   else
-    echo -e "${RED}Error : Linux Headers for ${KERNEL_VERSION} not installed.${NC}"
-    exit 0
+    echo -e "${BOLD}Error${NC}: Linux Headers for ${KERNEL_VERSION} not installed."
+    exit 1
   fi
 }
 
