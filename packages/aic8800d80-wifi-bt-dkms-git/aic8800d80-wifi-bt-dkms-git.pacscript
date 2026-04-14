@@ -5,7 +5,6 @@ conflicts=('aic8800d80' 'aic8800')
 pkgver='1.0.0'
 pkgdesc='Kernel modules for AIC8800D80 USB dongle WIFI AX900 with BT5.4'
 arch=('any')
-makedepends=("git")
 depends=("dkms")
 url="https://github.com/shenmintao/aic8800d80"
 license=('GPL-2.0-only')
@@ -55,7 +54,7 @@ post_install() {
       fi
     fi
   else
-    echo -e "${BOLD}Error${NC}: Linux Headers for ${KERNEL_VERSION} not installed."
+    echo -e "${BOLD}ERROR${NC}: Linux headers for ${KERNEL_VERSION} not installed."
     exit 1
   fi
 }
