@@ -54,7 +54,7 @@ post_install() {
       fi
     fi
   else
-    echo -e "${BOLD}ERROR${NC}: Linux headers for ${KERNEL_VERSION} not installed."
+    echo -e "${BOLD}ERROR:${NC} Linux headers for ${KERNEL_VERSION} not installed."
     exit 1
   fi
 }
