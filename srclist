@@ -6575,6 +6575,29 @@ pkgbase = kirc
 
 pkgname = kirc
 ---
+pkgbase = kiro-cli-bin
+	gives = kiro-cli
+	pkgver = 2.0.0
+	pkgrel = 1
+	pkgdesc = AI-powered agentic coding assistant for the terminal
+	url = https://kiro.dev/cli/
+	arch = amd64
+	arch = arm64
+	depends = libc6
+	depends = libgcc-s1
+	conflicts = amazon-q-cli-bin
+	breaks = amazon-q-cli-bin
+	replaces = amazon-q-cli-bin
+	license = custom:Kiro
+	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
+	repology = project: kiro-cli
+	source_amd64 = kiro-cli-bin-2.0.0-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.0.0/kirocli-x86_64-linux.tar.zst
+	sha256sums_amd64 = 53f0a97f910394e3e07e2f363f0adea3d2a4811d5322fe12d675a9bf45cf181c
+	source_arm64 = kiro-cli-bin-2.0.0-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.0.0/kirocli-aarch64-linux.tar.zst
+	sha256sums_arm64 = 702441c7729beb33348e00972c27767569ff03022ab18a51b9294b7f418f7243
+
+pkgname = kiro-cli-bin
+---
 pkgbase = komorebi-fork-deb
 	gives = komorebi
 	pkgver = 2.2.1
