@@ -8,6 +8,7 @@ depends=(
   libasound2
   libfontconfig1
   libpcap0.8
+  libcap2-bin
 )
 url='https://sniffnet.net/'
 pkgdesc="Sniffnet is a network monitoring tool to help you easily keep track of your Internet traffic."

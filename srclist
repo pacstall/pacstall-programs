@@ -14334,6 +14334,7 @@ pkgbase = sniffnet-deb
 	depends = libasound2
 	depends = libfontconfig1
 	depends = libpcap0.8
+	depends = libcap2-bin
 	replaces = sniffnet
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: sniffnet
