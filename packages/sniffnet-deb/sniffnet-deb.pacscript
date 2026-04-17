@@ -4,6 +4,11 @@ gives="sniffnet"
 pkgver="1.5.0"
 replaces=("${gives}")
 repology=("project: ${gives}")
+depends=(
+  libasound2
+  libfontconfig1
+  libpcap0.8
+)
 url='https://sniffnet.net/'
 pkgdesc="Sniffnet is a network monitoring tool to help you easily keep track of your Internet traffic."
 maintainer=("Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
