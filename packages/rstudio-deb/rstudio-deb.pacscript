@@ -1,9 +1,9 @@
 pkgname="rstudio-deb"
 gives="rstudio"
 repology=("project: ${gives}")
-pkgver="2026.01.1.403"
+pkgver="2026.01.2.418"
 source=("https://download1.rstudio.org/electron/jammy/amd64/rstudio-${pkgver:0:9}-${pkgver:10}-amd64.deb")
 pkgdesc="RStudio is an integrated development environment (IDE) for R"
-sha256sums=("d1d2a5bf628e3aab11a9d5bfceaa58da68d0a638eedb7b7dd381f5699b409cf9")
+sha256sums=("b625f58b9c787b04f2f3de57130765566621d6d4a6ba840493c52a89c778296d")
 arch=('amd64')
 maintainer=("Zahrun <zahrunAtmurenaDotio>")

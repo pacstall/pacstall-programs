@@ -132,6 +132,7 @@ dunst
 dust-bin
 easy-zsh-config-git
 eclipse-rcp-bin
+eclipse-rcptt-bin
 eddie-ui-deb
 electerm-deb
 electronmail-deb
@@ -646,6 +647,7 @@ python3-levenshtein-deb
 python3-material-color-utilities
 python3-moddb
 python3-pypresence
+python3-pywal16
 python3-sphinx-hawkmoth
 python3-vkbasalt-cli
 python3-zombie-imp
@@ -814,6 +816,7 @@ unicons-git
 unicorn-desktop-git
 unicorn-mobile-git
 universal-ctags-git
+upk-git
 upscayl-app
 uwufetch
 vala-panel-appmenu-xfce4-git
