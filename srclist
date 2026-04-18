@@ -3038,7 +3038,7 @@ pkgbase = erlang-jsone
 pkgname = erlang-jsone
 ---
 pkgbase = erlang-language-platform
-	pkgver = 2026-02-10
+	pkgver = 2026-02-27
 	pkgdesc = LSP server and CLI for the Erlang programming language
 	url = https://whatsapp.github.io/erlang-language-platform
 	arch = any
@@ -3053,8 +3053,8 @@ pkgbase = erlang-language-platform
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: elp
-	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2026-02-10.tar.gz
-	sha256sums = 11c0366637df4b2e388bcbadca3cb16828120d272bece3e8eb8f8b1554e4ec78
+	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2026-02-27.tar.gz
+	sha256sums = 60e31c9fa6bb7578640b7f2db07e19108dbf35267d3959bd18786463eb7b431c
 
 pkgname = erlang-language-platform
 ---
