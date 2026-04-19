@@ -1,7 +1,7 @@
 pkgbase = geekbenchai-bin
 	gives = geekbenchai
 	pkgver = 1.7.0
-	pkgdesc = Geekbench AI is a cross-platform benchmark that evaluates AI workload performance
+	pkgdesc = Cross-platform benchmark that evaluates AI workload performance
 	arch = amd64
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	source = @geekbenchai-bin~1.7.0::https://cdn.geekbench.com/GeekbenchAI-1.7.0-Linux.tar.gz
