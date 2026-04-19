@@ -17,12 +17,9 @@ conflicts=('amazon-q-cli-bin')
 breaks=('amazon-q-cli-bin')
 replaces=('amazon-q-cli-bin')
 maintainer=("Rodrigo Tavares <dev@rodrigotavar.es>")
-
 _base_url="https://desktop-release.q.us-east-1.amazonaws.com/${pkgver}"
-
 source_amd64=("${pkgname}-${pkgver}-amd64.tar.zst::${_base_url}/kirocli-x86_64-linux.tar.zst")
 sha256sums_amd64=("53f0a97f910394e3e07e2f363f0adea3d2a4811d5322fe12d675a9bf45cf181c")
-
 source_arm64=("${pkgname}-${pkgver}-arm64.tar.zst::${_base_url}/kirocli-aarch64-linux.tar.zst")
 sha256sums_arm64=("702441c7729beb33348e00972c27767569ff03022ab18a51b9294b7f418f7243")
 
