@@ -1,6 +1,6 @@
 pkgbase = opentoonz
 	gives = opentoonz
-	pkgver = 1.7.1
+	pkgver = 1.7.1.1
 	pkgdesc = An open-source full-featured 2D animation creation software
 	arch = any
 	depends = qtchooser
@@ -30,7 +30,6 @@ pkgbase = opentoonz
 	makedepends = libfreetype6-dev
 	makedepends = libjson-c-dev
 	makedepends = qtwayland5
-	makedepends = libmypaint-dev
 	makedepends = libopencv-dev
 	makedepends = libturbojpeg-dev
 	makedepends = libmypaint-dev
@@ -39,7 +38,7 @@ pkgbase = opentoonz
 	makedepends = libgles2-mesa-dev
 	makedepends = libglib2.0-dev
 	makedepends = liblzma-dev
-	makedepends = cmake
+	makedepends = cmake>=3.10
 	makedepends = build-essential
 	makedepends = git
 	breaks = opentoonz-git
@@ -49,7 +48,7 @@ pkgbase = opentoonz
 	breaks = opentoonz-bin
 	maintainer = echometerain <echometer@disroot.org>
 	repology = project: opentoonz
-	source = @opentoonz~1.7.1::https://github.com/opentoonz/opentoonz/archive/refs/tags/v1.7.1.tar.gz
-	sha256sums = d0daf60d06510efe15d0db3f9eed0162499ed58061504dca27892c2b9ea5f22d
+	source = @opentoonz~1.7.1.1::https://github.com/opentoonz/opentoonz/archive/refs/tags/v1.7.1.1.tar.gz
+	sha256sums = 94f5251043e3fe00758b9e00ab935b8dc719784214a521f32ff6d4465af0c4c2
 
 pkgname = opentoonz
