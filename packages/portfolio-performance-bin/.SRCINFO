@@ -1,7 +1,7 @@
 pkgbase = portfolio-performance-bin
 	gives = portfolio-performance
 	pkgver = 0.83.1
-	pkgdesc = An open source tool to calculate the overall performance of an investment portfolio
+	pkgdesc = Open source tool to calculate the overall performance of an investment portfolio
 	arch = amd64
 	arch = arm64
 	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
