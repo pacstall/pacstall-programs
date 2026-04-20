@@ -2612,14 +2612,14 @@ pkgname = dotdrop
 ---
 pkgbase = drawio-desktop-deb
 	gives = draw.io
-	pkgver = 29.6.6
+	pkgver = 29.7.8
 	pkgdesc = Diagram drawing application built on web technology
 	arch = amd64
 	maintainer = JonBoyleCoding <programmerfalcon@gmail.com>
 	repology = project: drawio-desktop
 	repology = visiblename: drawio-desktop
-	source = https://github.com/jgraph/drawio-desktop/releases/download/v29.6.6/drawio-amd64-29.6.6.deb
-	sha256sums = 8470f56ab7e0a6083a4e3ae802038f6defbc3df1701caf9d1e8a5cff74321bcf
+	source = https://github.com/jgraph/drawio-desktop/releases/download/v29.7.8/drawio-amd64-29.7.8.deb
+	sha256sums = d035d15990e40bac83cd2986b77ae337f1a8a9d6fb5a69507d0894a4575260f9
 
 pkgname = drawio-desktop-deb
 ---
