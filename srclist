@@ -8219,14 +8219,28 @@ pkgname = lunarclient-app
 ---
 pkgbase = lutris-deb
 	gives = lutris
-	pkgver = 0.5.20
-	pkgdesc = open source gaming platform
+	pkgver = 0.5.22
+	pkgdesc = Open source gaming platform
+	url = https://lutris.net
 	arch = all
 	depends = python3-gi-cairo
+	optdepends = fluidsynth: For games that have MIDI music
+	optdepends = gamemode: Allows games to request a temporary set of optimisations
+	optdepends = innoextract: Extract Inno Setup installers
+	optdepends = mesa-vulkan-drivers: Vulkan support
+	optdepends = mangohud: Display the games FPS + other information
+	optdepends = python3-evdev: Controller support
+	optdepends = python3-pefile: Extract icons from Windows executables
+	optdepends = python3-protobuf: BattleNet integration
+	optdepends = wine: easiest way to get all the libraries missing from the Lutris runtime
+	optdepends = winetricks: use system winetricks
+	optdepends = mesa-vulkan-drivers:i386: lib32 Vulkan support
+	license = GPL-3.0-only
 	maintainer = Oren Klopfer <oren@taumoda.com>
+	maintainer = pejuton <pejuton@proton.me>
 	repology = project: lutris
-	source = https://github.com/lutris/lutris/releases/download/v0.5.20/lutris_0.5.20_all.deb
-	sha256sums = 4ae67cfb6ff85219eaa207dd28fbb069037e4ddbc74e93a601136397f94ee017
+	source = https://github.com/lutris/lutris/releases/download/v0.5.22/lutris_0.5.22_all.deb
+	sha256sums = 88a350357e0438b423cdf93108f27942de094dc19f973df73839f3b0b0bafaa0
 
 pkgname = lutris-deb
 ---
