@@ -12038,6 +12038,20 @@ pkgbase = popsicle
 
 pkgname = popsicle
 ---
+pkgbase = portfolio-performance-bin
+	gives = portfolio-performance
+	pkgver = 0.83.1
+	pkgdesc = Open source tool to calculate the overall performance of an investment portfolio
+	arch = amd64
+	arch = arm64
+	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
+	source = @portfolio-performance-bin~0.83.1::https://github.com/portfolio-performance/portfolio/releases/download/0.83.1/PortfolioPerformance-0.83.1-linux.gtk.x86_64.tar.gz
+	sha256sums = 310dc6039315f1e5839eeed25999bd8576d1c564cc3b4e2e34a390576c7a62f7
+	source_arm64 = @portfolio-performance-bin~0.83.1::https://github.com/portfolio-performance/portfolio/releases/download/0.83.1/PortfolioPerformance-0.83.1-linux.gtk.aarch64.tar.gz
+	sha256sums_arm64 = d4634f1a7b36aa820b0623de8d3108ea7b81949b5093ecd5048b5dc30b4b3888
+
+pkgname = portfolio-performance-bin
+---
 pkgbase = postman-bin
 	gives = postman
 	pkgver = 11.85.1
