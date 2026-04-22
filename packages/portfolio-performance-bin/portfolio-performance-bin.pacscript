@@ -12,16 +12,7 @@ maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
 package() {
   local extracted_root appdir
   extracted_root="${pkgname}~${pkgver}"
-
-  if [[ -d "${extracted_root}/portfolio" ]]; then
-    appdir="${extracted_root}/portfolio"
-  elif [[ -d "portfolio" ]]; then
-    appdir="portfolio"
-  else
-    appdir="$(dirname "$(find . -maxdepth 3 -type f -name 'PortfolioPerformance' | head -n 1)")"
-  fi
-
-  [[ -n ${appdir} && -d ${appdir} ]] || return 1
+  appdir="${extracted_root}/PortfolioPerformance"
 
   mkdir -p "${pkgdir}/opt/${gives}"
   cp -a "${appdir}/." "${pkgdir}/opt/${gives}/"
