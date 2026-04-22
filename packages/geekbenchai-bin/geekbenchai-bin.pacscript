@@ -8,19 +8,7 @@ sha256sums=("062911d73c45f310e1f2cf3708fccdab371139c75b40e948c36f7863ce027443")
 maintainer=("Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
 
 package() {
-  local srcdir
-  if [[ -d "${pkgname}~${pkgver}/GeekbenchAI-${pkgver}-Linux" ]]; then
-    srcdir="${pkgname}~${pkgver}/GeekbenchAI-${pkgver}-Linux"
-  elif [[ -d "${pkgname}~${pkgver}" ]]; then
-    srcdir="${pkgname}~${pkgver}"
-  elif [[ -d "GeekbenchAI-${pkgver}-Linux" ]]; then
-    srcdir="GeekbenchAI-${pkgver}-Linux"
-  else
-    echo "Could not find extracted GeekbenchAI directory"
-    return 1
-  fi
-
-  cd "${srcdir}"
+  cd "${pkgname}~${pkgver}" || return 1
   install -Dm755 "banff" -t "${pkgdir}/opt/${gives}/"
   install -Dm755 "banff_avx2" -t "${pkgdir}/opt/${gives}/"
   install -Dm755 "banff_x86_64" -t "${pkgdir}/opt/${gives}/"
