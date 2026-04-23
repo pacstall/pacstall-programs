@@ -13963,6 +13963,22 @@ pkgbase = rustrover-bin
 
 pkgname = rustrover-bin
 ---
+pkgbase = sarasa-gothic
+	pkgver = 1.0.37
+	pkgdesc = CJK programming font based on Iosevka and Source Han Sans
+	url = https://github.com/be5invis/Sarasa-Gothic
+	arch = all
+	replaces = sarasa-gothic
+	license = OFL-1.1
+	maintainer = Huang Rui <vowstar@gmail.com>
+	repology = project: sarasa-gothic
+	source = @sarasa-gothic~1.0.37::https://github.com/be5invis/Sarasa-Gothic/releases/download/v1.0.37/Sarasa-TTC-1.0.37.zip
+	source = LICENSE::https://raw.githubusercontent.com/be5invis/Sarasa-Gothic/v1.0.37/LICENSE
+	sha256sums = 608ba9cd77d20277a9eea290e2c36dc40054883c09bf35f942d89476e6041dbe
+	sha256sums = 32c932e0dbae4f6e6386964bbc2d04178707665a05ca65cf636241af13d50a53
+
+pkgname = sarasa-gothic
+---
 pkgbase = sayonara-git
 	gives = sayonara
 	pkgver = 1.10.0
