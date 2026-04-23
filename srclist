@@ -6750,6 +6750,40 @@ pkgbase = kxstudio-repos-deb
 
 pkgname = kxstudio-repos-deb
 ---
+pkgbase = lact
+	pkgver = 0.8.4
+	pkgdesc = Linux GPU Control Application
+	url = https://github.com/ilya-zlobintsev/LACT
+	arch = x86_64
+	arch = aarch64
+	depends = hwdata
+	depends = vulkan-tools
+	depends = clinfo
+	depends = libgtk-4-1
+	depends = libdrm2
+	depends = libdrm-amdgpu1
+	depends = libadwaita-1-0
+	makedepends = cargo>=1.84 | rustup
+	makedepends = make
+	makedepends = git
+	makedepends = clang
+	makedepends = vulkan-tools
+	makedepends = clinfo
+	makedepends = libgtk-4-dev
+	makedepends = pkg-config
+	makedepends = build-essential
+	makedepends = libdrm-dev
+	makedepends = dbus
+	makedepends = libadwaita-1-dev
+	backup = etc/lact/config.yaml
+	license = MIT
+	maintainer = pejuton <pejuton@proton.me>
+	repology = project: lact
+	source = https://github.com/ilya-zlobintsev/LACT.git#commit=b65ae69a1e554f6ff2aef8cda95fe78d99dd3ca8
+	sha256sums = SKIP
+
+pkgname = lact
+---
 pkgbase = lagrange
 	pkgver = 1.19.4
 	pkgdesc = A Beautiful Gemini Client
