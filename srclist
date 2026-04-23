@@ -3971,6 +3971,17 @@ pkgbase = geekbench6-bin
 
 pkgname = geekbench6-bin
 ---
+pkgbase = geekbenchai-bin
+	gives = geekbenchai
+	pkgver = 1.7.0
+	pkgdesc = Cross-platform benchmark that evaluates AI workload performance
+	arch = amd64
+	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
+	source = @geekbenchai-bin~1.7.0::https://cdn.geekbench.com/GeekbenchAI-1.7.0-Linux.tar.gz
+	sha256sums = 062911d73c45f310e1f2cf3708fccdab371139c75b40e948c36f7863ce027443
+
+pkgname = geekbenchai-bin
+---
 pkgbase = genymotion-bin
 	gives = genymotion
 	pkgver = 3.6.0
