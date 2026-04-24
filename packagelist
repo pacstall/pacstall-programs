@@ -202,6 +202,7 @@ gearlever-git
 geekbench4-bin
 geekbench5-bin
 geekbench6-bin
+geekbenchai-bin
 genymotion-bin
 gfn-electron-bin
 ghcup-bin
@@ -319,6 +320,7 @@ keepassxc
 keybase-deb
 keyd-deb
 kirc
+kiro-cli-bin
 komorebi-fork-deb
 koodo-reader-deb
 krita-app
@@ -327,6 +329,7 @@ kvantum
 kvantum-theme-libadwaita-git
 kwin-krohnkite
 kxstudio-repos-deb
+lact
 lagrange
 latte-dock-git
 lazarus-project-deb
@@ -619,6 +622,7 @@ pomatez-deb
 popcorn-time-deb
 popsicle
 popsicle-app
+portfolio-performance-bin
 postman-bin
 powertop-git
 ppsspp-app
@@ -710,6 +714,7 @@ rust-bindgen-git
 rust-motd-deb
 rustdesk-deb
 rustrover-bin
+sarasa-gothic
 sayonara
 sayonara-git
 sbt-deb
@@ -734,6 +739,7 @@ smartgit
 smplayer-deb
 snapper-rollback-git
 snd-hda-macbookpro
+sniffnet-deb
 soar
 softmaker-freeoffice-2024-deb
 softmaker-office-2024-deb

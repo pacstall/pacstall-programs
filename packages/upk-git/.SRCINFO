@@ -9,6 +9,7 @@ pkgbase = upk-git
 	makedepends = python3
 	makedepends = python3-click
 	makedepends = python3-rich
+	makedepends = python3-setuptools
 	conflicts = upk
 	provides = upk
 	license = MIT
