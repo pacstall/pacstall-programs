@@ -13,7 +13,13 @@ depends=("python3-requests"
   "python3-xattr"
   "ffmpeg")
 recommends=("wget")
-makedepends=("python3-build" "python3-installer")
+makedepends=(
+  "python3-build"
+  "python3-installer"
+  "python3-wheel"
+  "python3-setuptools"
+  "python3-flit-scm"
+)
 pkgdesc="Download videos from Yle Areena"
 maintainer=("pejuton <pejuton@proton.me>")
 license=('GPL-3.0-or-later')
