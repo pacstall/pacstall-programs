@@ -1,0 +1,22 @@
+pkgbase = yle-dl-git
+	gives = yle-dl
+	pkgver = 20250730
+	pkgdesc = Download videos from Yle Areena
+	url = https://aajanki.github.io/yle-dl/index.html
+	arch = any
+	depends = python3-requests
+	depends = python3-lxml
+	depends = python3-configargparse
+	depends = python3-psutil
+	depends = python3-xattr
+	depends = ffmpeg
+	makedepends = python3-build
+	makedepends = python3-installer
+	recommends = wget
+	license = GPL-3.0-or-later
+	maintainer = pejuton <pejuton@proton.me>
+	repology = project: yle-dl
+	source = https://github.com/aajanki/yle-dl.git
+	sha256sums = SKIP
+
+pkgname = yle-dl-git
