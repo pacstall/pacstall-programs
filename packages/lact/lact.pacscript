@@ -1,8 +1,8 @@
 pkgname="lact"
 repology=("project: lact")
 arch=('x86_64' 'aarch64')
-pkgver="0.8.4"
-_commit='b65ae69a1e554f6ff2aef8cda95fe78d99dd3ca8'
+pkgver="0.9.0"
+_commit='454a6e24af830a1f434385fc3faebec19c0cbefa'
 url='https://github.com/ilya-zlobintsev/LACT'
 source=("https://github.com/ilya-zlobintsev/LACT.git#commit=${_commit}")
 sha256sums=("SKIP")
@@ -13,7 +13,7 @@ depends=("hwdata"
   "libdrm2"
   "libdrm-amdgpu1"
   "libadwaita-1-0")
-makedepends=("cargo>=1.84 | rustup"
+makedepends=("cargo>=1.93 | rustup"
   "make"
   "git"
   "clang"
