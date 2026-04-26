@@ -13,6 +13,7 @@ pkgbase = yle-dl-git
 	makedepends = python3-build
 	makedepends = python3-installer
 	makedepends = flit
+	checkdepends = python3-pytest
 	recommends = wget
 	license = GPL-3.0-or-later
 	maintainer = pejuton <pejuton@proton.me>
