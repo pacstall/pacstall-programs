@@ -1,0 +1,14 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index a6d3a9e..c71cbe6 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -5,8 +5,7 @@ readme = "README.md"
+ authors = [
+     {name = "Antti Ajanki", email = "antti.ajanki@iki.fi"}
+ ]
+-license = "GPL-3.0-or-later"
+-license-files = ["COPYING"]
++license = {file="COPYING"}
+ dependencies = [
+     "requests",
+     "lxml",
