@@ -2,7 +2,7 @@ pkgname="kiro-ide-bin"
 gives="kiro-ide"
 repology=("project: kiro-ide")
 pkgver="0.11.133"
-pkgdesc="An AI-powered IDE for modern development"
+pkgdesc="AI-powered IDE for modern development"
 url='https://kiro.dev'
 arch=('amd64')
 # By downloading and using Kiro IDE, you agree to the following:
