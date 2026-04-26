@@ -19,7 +19,12 @@ makedepends=(
   "python3-installer"
   "flit"
 )
-checkdepends=("python3-pytest" "python3-lxml")
+checkdepends=(
+  "python3-pytest"
+  "python3-lxml"
+  "python3-configargparse"
+  "python3-requests"
+)
 pkgdesc="Download videos from Yle Areena"
 maintainer=("pejuton <pejuton@proton.me>")
 license=('GPL-3.0-or-later')
