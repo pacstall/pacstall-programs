@@ -13,7 +13,7 @@ depends=("hwdata"
   "libdrm2"
   "libdrm-amdgpu1"
   "libadwaita-1-0")
-makedepends=("cargo>=1.84 | rustup"
+makedepends=("cargo>=1.93 | rustup"
   "make"
   "git"
   "clang"
