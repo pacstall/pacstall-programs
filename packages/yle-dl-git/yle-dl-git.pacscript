@@ -34,6 +34,11 @@ prepare() {
   fi
 }
 
+check() {
+  cd "${gives}"
+  python3 -m pytest tests/unit
+}
+
 build() {
   cd "${gives}"
   python3 -m build --wheel --no-isolation
