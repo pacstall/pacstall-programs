@@ -6,7 +6,7 @@ pkgver="20250730"
 url='https://aajanki.github.io/yle-dl/index.html'
 source=("https://github.com/aajanki/yle-dl.git"
   "flit-3.9-license-format.patch")
-sha256sums=("SKIP" "963db0531c9be7d009e7544e95481ab2f1d92059b44d02c9e38407187e065893")
+sha256sums=("SKIP" "ab4f650ae1d4eb0099d1b15b1e066da0361d7531c8c94813b37d9e2521b3906c")
 depends=("python3-requests"
   "python3-lxml"
   "python3-configargparse"
@@ -19,7 +19,7 @@ makedepends=(
   "python3-installer"
   "flit"
 )
-checkdepends=("python3-pytest")
+checkdepends=("python3-pytest" "python3-lxml")
 pkgdesc="Download videos from Yle Areena"
 maintainer=("pejuton <pejuton@proton.me>")
 license=('GPL-3.0-or-later')

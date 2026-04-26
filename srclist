@@ -18004,6 +18004,7 @@ pkgbase = yle-dl-git
 	makedepends = python3-installer
 	makedepends = flit
 	checkdepends = python3-pytest
+	checkdepends = python3-lxml
 	recommends = wget
 	license = GPL-3.0-or-later
 	maintainer = pejuton <pejuton@proton.me>
@@ -18011,7 +18012,7 @@ pkgbase = yle-dl-git
 	source = https://github.com/aajanki/yle-dl.git
 	source = flit-3.9-license-format.patch
 	sha256sums = SKIP
-	sha256sums = 963db0531c9be7d009e7544e95481ab2f1d92059b44d02c9e38407187e065893
+	sha256sums = ab4f650ae1d4eb0099d1b15b1e066da0361d7531c8c94813b37d9e2521b3906c
 
 pkgname = yle-dl-git
 ---
