@@ -1,6 +1,6 @@
 pkgbase = linux-headers-deb
-	gives = linux-headers-7.0.0-070000
-	pkgver = 7.0
+	gives = linux-headers-7.1.0-070100rc1
+	pkgver = 7.1~rc1
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -8,7 +8,7 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0/amd64/linux-headers-7.0.0-070000_7.0.0-070000.202604122140_all.deb
-	sha256sums = 73d20f28d218040ff14a2952d5189f13045a963955e46d61f2245ff1ff915245
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1-rc1/amd64/linux-headers-7.1.0-070100rc1_7.1.0-070100rc1.202604262141_all.deb
+	sha256sums = 794c16ad7b9e24ec757aa667bbc86cd69b0c3a425da822bc6d1560ea56370212
 
 pkgname = linux-headers-deb

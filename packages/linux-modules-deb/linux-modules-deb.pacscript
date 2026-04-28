@@ -1,10 +1,10 @@
 pkgname="linux-modules-deb"
-gives="linux-modules-7.0.0-070000-generic"
-pkgver="7.0"
-buildver="7.0.0-070000.202604122140"
+gives="linux-modules-7.1.0-070100rc1-generic"
+pkgver="7.1~rc1"
+buildver="7.1.0-070100rc1.202604262141"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("08e2aa91e20dca4d04a612abaa988376ef4b57175bb41691a70c2e275f754af0")
-sha256sums_amd64=("88f00647eec96e639a936b148623b73df1e467c617cf0be0c2518f4b9c09f585")
+sha256sums_arm64=("e44ddafb3aa265f638c8232f682a1874880c89638d091dfcf2b2a5e44469693b")
+sha256sums_amd64=("34a718739ef48a45876fdae4543c13c9ab4a0a461d90dd9948ea457e3eb1ab06")
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Ubuntu Linux mainline kernel (Linux Modules)"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
