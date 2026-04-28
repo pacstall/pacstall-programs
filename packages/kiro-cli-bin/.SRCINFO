@@ -1,7 +1,6 @@
 pkgbase = kiro-cli-bin
 	gives = kiro-cli
-	pkgver = 2.0.0
-	pkgrel = 1
+	pkgver = 2.1.1
 	pkgdesc = AI-powered agentic coding assistant for the terminal
 	url = https://kiro.dev/cli/
 	arch = amd64
@@ -14,9 +13,9 @@ pkgbase = kiro-cli-bin
 	license = custom:Kiro
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: kiro-cli
-	source_amd64 = kiro-cli-bin-2.0.0-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.0.0/kirocli-x86_64-linux.tar.zst
-	sha256sums_amd64 = 53f0a97f910394e3e07e2f363f0adea3d2a4811d5322fe12d675a9bf45cf181c
-	source_arm64 = kiro-cli-bin-2.0.0-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.0.0/kirocli-aarch64-linux.tar.zst
-	sha256sums_arm64 = 702441c7729beb33348e00972c27767569ff03022ab18a51b9294b7f418f7243
+	source_amd64 = kiro-cli-bin-2.1.1-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.1.1/kirocli-x86_64-linux.tar.zst
+	sha256sums_amd64 = 4368a39d3f071c3434dd1f3191dd8e26744ad05d4b8ca8ac515b403d92335979
+	source_arm64 = kiro-cli-bin-2.1.1-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.1.1/kirocli-aarch64-linux.tar.zst
+	sha256sums_arm64 = 9fa17511f53cd35576d5527136f9079f3e9314bc8b30a0594069b490f527a1c6
 
 pkgname = kiro-cli-bin
