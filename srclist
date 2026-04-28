@@ -15868,6 +15868,29 @@ pkgbase = typora-deb
 
 pkgname = typora-deb
 ---
+pkgbase = typst-bin
+	gives = typst
+	pkgver = 0.14.2
+	pkgdesc = Markup-based typesetting system that is powerful and easy to learn
+	url = https://typst.app
+	arch = amd64
+	arch = arm64
+	arch = armhf
+	breaks = typst
+	breaks = typst-git
+	breaks = typst-deb
+	license = Apache-2.0
+	maintainer = Huang Rui <vowstar@gmail.com>
+	repology = project: typst
+	source_amd64 = https://github.com/typst/typst/releases/download/v0.14.2/typst-x86_64-unknown-linux-musl.tar.xz
+	sha256sums_amd64 = a6044cbad2a954deb921167e257e120ac0a16b20339ec01121194ff9d394996d
+	source_arm64 = https://github.com/typst/typst/releases/download/v0.14.2/typst-aarch64-unknown-linux-musl.tar.xz
+	sha256sums_arm64 = 491b101aa40a3a7ea82a3f8a6232cabb4e6a7e233810082e5ac812d43fdcd47a
+	source_armhf = https://github.com/typst/typst/releases/download/v0.14.2/typst-armv7-unknown-linux-musleabi.tar.xz
+	sha256sums_armhf = 55bfbeadebc01c2116f1fea606dcd72fe30e1d8b02fbe61d5ed77d68c6ece298
+
+pkgname = typst-bin
+---
 pkgbase = u-boot-mobian-deb
 	gives = u-boot-menu
 	pkgver = 4.2.2mobian1
