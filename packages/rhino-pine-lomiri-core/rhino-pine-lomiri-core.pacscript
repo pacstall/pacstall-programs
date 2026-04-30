@@ -7,10 +7,11 @@ if [[ -f /usr/bin/enable-modem ]]; then
 fi
 pkgdesc="Transitional package to provide all core Rhino Linux Mobile (Lomiri) software"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-compatible=("ubuntu:devel" "ubuntu:questing" "ubuntu:resolute")
+compatible=("ubuntu:devel" "ubuntu:resolute" "ubuntu:stonking")
 priority="essential"
 arch=("all")
 pkgver="2025.4"
+pkgrel="2"
 
 package() {
   mkdir -p "${pkgdir}/usr/share/wireplumber/wireplumber.conf.d"
