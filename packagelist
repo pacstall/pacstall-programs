@@ -212,6 +212,7 @@ git-butler-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
+git-review
 gitblade-deb
 gitfiend-deb
 github-cli-bin
