@@ -3,7 +3,7 @@ repology=("project: git-review")
 pkgver="2.5.0"
 pkgdesc="Tool to submit code to Gerrit"
 arch=('any')
-url="https://opendev.org/opendev/git-review"
+url='https://opendev.org/opendev/git-review'
 license=('Apache-2.0')
 depends=(
   "git"
