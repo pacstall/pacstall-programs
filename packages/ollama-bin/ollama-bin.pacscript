@@ -71,7 +71,7 @@ post_upgrade() {
       SERVICE_ENABLED="$(systemctl is-enabled ollama || true)"
       case ${SERVICE_ENABLED} in
         enabled | enabled-runtime)
-          systemctl restart ollama
+          echo 'Ollama is enabled and currently running. In order to not disrupt your workflow, the service will not be restarted automatically. If you want to restart the service to apply the update, please run: systemctl restart ollama'
           ;;
         *) ;;
       esac
