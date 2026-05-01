@@ -24,8 +24,3 @@ package() {
   install -Dm755 "meowdo" -t "${pkgdir}/usr/bin"
   install -Dm644 "README.md" -t "${pkgdir}/usr/share/doc/${pkgname}"
 }
-
-post_install() {
-  echo "meowdo installed successfully!"
-  echo "Run 'meowdo' to start using your new todo list."
-}
