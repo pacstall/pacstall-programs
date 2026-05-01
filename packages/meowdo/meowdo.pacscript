@@ -1,6 +1,5 @@
 pkgname="meowdo"
 pkgver="1.3.5"
-pkgrel="1"
 pkgdesc="Cute, keyboard-driven todo list with a cat sidekick for your terminal"
 arch=('amd64' 'arm64')
 url="https://github.com/Sycorlax/Meowdo"
