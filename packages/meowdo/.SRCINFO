@@ -1,7 +1,6 @@
 pkgbase = meowdo
 	pkgver = 1.3.5
-	pkgrel = 1
-	pkgdesc = A cute, keyboard-driven todo list with a cat sidekick for your terminal
+	pkgdesc = Cute, keyboard-driven todo list with a cat sidekick for your terminal
 	url = https://github.com/Sycorlax/Meowdo
 	arch = amd64
 	arch = arm64
