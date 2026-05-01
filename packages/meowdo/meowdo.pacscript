@@ -10,10 +10,6 @@ makedepends=("gcc" "make" "libncurses-dev")
 maintainer=("Sycorlax <mehdidiuori2002@gmail.com>")
 license=('GPL-3.0')
 
-prepare() {
-  cd "${pkgname^}-${pkgver}"
-}
-
 build() {
   cd "${pkgname^}-${pkgver}"
   make
