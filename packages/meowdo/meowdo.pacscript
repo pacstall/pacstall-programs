@@ -12,7 +12,7 @@ license=('GPL-3.0')
 
 build() {
   cd "${pkgname^}-${pkgver}"
-  make
+  make -j"${NCPU}"
 }
 
 package() {
