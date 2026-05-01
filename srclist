@@ -16705,7 +16705,7 @@ pkgname = vkroots-git
 ---
 pkgbase = vscode-deb
 	gives = code
-	pkgver = 1.109.4
+	pkgver = 1.118.1
 	pkgdesc = lightweight but powerful source code editor
 	url = https://code.visualstudio.com/
 	arch = amd64
@@ -16713,12 +16713,12 @@ pkgbase = vscode-deb
 	arch = armhf
 	makedepends = gpg
 	maintainer = Diegiwg <diegiwg@gmail.com>
-	source_amd64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.109.4-1771257466_amd64.deb
-	sha256sums_amd64 = 693451149c02f72f8d346e7e5c30afb80ab1f0d175a7ecf7c3ced0900bb83507
-	source_arm64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.109.4-1771257672_arm64.deb
-	sha256sums_arm64 = 742a44c2e0e8fd1c09dcf23f5527407956f3abafef31735d00e69d8b770058d6
-	source_armhf = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.109.4-1771257673_armhf.deb
-	sha256sums_armhf = 18cb079ed6f71f668c546d67cc35e6d2a9f6eef7baddc0909e2e62094b299d36
+	source_amd64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.118.1-1777474985_amd64.deb
+	sha256sums_amd64 = ace6f418c2b034a33629784fb75b74c4dfe9a7edf84eba3b88540f74595c65a1
+	source_arm64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.118.1-1777474997_arm64.deb
+	sha256sums_arm64 = 03a08f166a604ef6783fb96ecc8495a6bb236232dd2fb87c2d7555ee7f7901e4
+	source_armhf = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.118.1-1777474990_armhf.deb
+	sha256sums_armhf = c360943fea0bba1f5a3d071b277edc7dcc7ea69ea830de90350e789caebfec45
 
 pkgname = vscode-deb
 ---
