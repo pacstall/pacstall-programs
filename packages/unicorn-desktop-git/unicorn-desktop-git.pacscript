@@ -2,7 +2,7 @@ pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="11"
+pkgrel="12"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -35,7 +35,6 @@ depends=(
   "bluez-firmware | linux-firmware-raspi"
   "xserver-xorg-input-multitouch"
   "xserver-xorg-input-synaptics"
-  "ukui-touchpadserver"
   "pipewire-audio | pulseaudio-module-bluetooth"
   "bluetooth"
   "libxfce4ui-utils"
