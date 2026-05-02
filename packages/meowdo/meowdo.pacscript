@@ -8,7 +8,7 @@ sha256sums=('SKIP')
 depends=("libncurses6")
 makedepends=("gcc" "make" "libncurses-dev")
 maintainer=("Sycorlax <mehdidiuori2002@gmail.com>")
-license=('GPL-3.0')
+license=('GPL-3.0-only')
 
 build() {
   cd "${pkgname^}-${pkgver}"
