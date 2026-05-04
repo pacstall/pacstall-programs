@@ -11,10 +11,8 @@ pkgbase = scx-scheds
 	depends = libelf1t64
 	depends = libprotobuf32t64
 	depends = zlib1g
-	makedepends = cargo>=1.82
+	makedepends = cargo>=1.88 | rustup
 	makedepends = build-essential
-	makedepends = cmake
-	makedepends = rustc
 	makedepends = clang
 	makedepends = llvm
 	makedepends = pkg-config
@@ -22,12 +20,14 @@ pkgbase = scx-scheds
 	makedepends = protobuf-compiler
 	makedepends = libseccomp-dev
 	makedepends = libbpf-dev
+	makedepends = libzstd-dev
 	makedepends = pahole
 	conflicts = scx-scheds
 	provides = scx-scheds
 	recommends = scx-loader
 	incompatible = debian:bullseye
 	incompatible = debian:bookworm
+	incompatible = debian:trixie
 	incompatible = ubuntu:jammy
 	incompatible = ubuntu:noble
 	backup = etc/default/scx

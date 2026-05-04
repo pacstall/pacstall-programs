@@ -12,7 +12,7 @@ sha256sums=('SKIP')
 provides=("${pkgname}")
 conflicts=("${pkgname}")
 limit_kver=">=6.12"
-incompatible=("debian:bullseye" "debian:bookworm" "ubuntu:jammy" "ubuntu:noble")
+incompatible=("debian:bullseye" "debian:bookworm" "debian:trixie" "ubuntu:jammy" "ubuntu:noble")
 depends=(
   "bash"
   "bpftool"
@@ -24,10 +24,8 @@ depends=(
   "zlib1g"
 )
 makedepends=(
-  "cargo>=1.82"
+  "cargo>=1.88 | rustup"
   "build-essential"
-  "cmake"
-  "rustc"
   "clang"
   "llvm"
   "pkg-config"
@@ -35,6 +33,7 @@ makedepends=(
   "protobuf-compiler"
   "libseccomp-dev"
   "libbpf-dev"
+  "libzstd-dev"
   "pahole"
 )
 recommends=("scx-loader")
@@ -46,6 +45,7 @@ prepare() {
   cd "${_gitname}"
 
   export CARGO_HOME="${srcdir}/cargo-home"
+  export RUSTUP_TOOLCHAIN=stable
 
   cargo fetch --locked --target "${AARCH}-unknown-linux-gnu"
 }
@@ -55,6 +55,7 @@ build() {
 
   export CARGO_HOME="${srcdir}/cargo-home"
   export CARGO_TARGET_DIR=target
+  export RUSTUP_TOOLCHAIN=stable
 
   cargo build \
     --release \
@@ -86,16 +87,15 @@ package() {
 }
 
 pre_remove() {
-  # Stop systemd service if started
-  if (systemctl -q is-active scx.service); then
-    systemctl stop -v scx.service
-    fancy_message warn "Stopped 'scx.service'. If package upgrade or reinstall, start it again after install."
-  fi
-
-  # Disable systemd service if enabled
-  if (systemctl -q is-enabled scx.service); then
-    systemctl disable -v scx.service
-    fancy_message warn "Disabled 'scx.service'. If package upgrade or reinstall, enable it again after install."
+  if [[ -x "/usr/bin/systemctl" ]]; then
+    if systemctl -q is-active scx.service 2> /dev/null; then
+      systemctl stop scx.service || true
+      fancy_message warn "Stopped 'scx.service'. If package upgrade or reinstall, start it again after install."
+    fi
+    if systemctl -q is-enabled scx.service 2> /dev/null; then
+      systemctl disable scx.service || true
+      fancy_message warn "Disabled 'scx.service'. If package upgrade or reinstall, enable it again after install."
+    fi
   fi
 }
 
