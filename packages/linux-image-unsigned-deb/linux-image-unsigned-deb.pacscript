@@ -1,10 +1,10 @@
 pkgname="linux-image-unsigned-deb"
-gives="linux-image-unsigned-7.1.0-070100rc1-generic"
-pkgver="7.1~rc1"
-buildver="7.1.0-070100rc1.202604262141"
+gives="linux-image-unsigned-7.1.0-070100rc2-generic"
+pkgver="7.1~rc2"
+buildver="7.1.0-070100rc2.202605032137"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("291d5b6385722c4c659e7b81a0577045755c67b48308bf884e073b0617f1cde8")
-sha256sums_amd64=("c2d5813997bd26d3a4f5b5f06bdb8612f88fb68e0b04a08f84652e1742eb284b")
+sha256sums_arm64=("2f6c049b43d35b5dd12054241e8829bbb4883ca22703995804f9ba0d84294db8")
+sha256sums_amd64=("8c8c3e3ea76c27db662e0d0bc97943f1938bf95d4e2df259e83dc9a05c0b7d8e")
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Ubuntu Linux mainline kernel (Unsigned image)"
 pacdeps=("linux-headers-generic-deb" "linux-modules-deb")
