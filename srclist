@@ -11559,7 +11559,7 @@ pkgname = pacstallion-deb
 ---
 pkgbase = pacup-git
 	gives = pacup
-	pkgver = 3.3.12
+	pkgver = 3.4.0
 	pkgdesc = Help maintainers update pacscripts (next-gen Perl rewrite)
 	arch = all
 	depends = libdata-compare-perl
