@@ -9234,7 +9234,7 @@ pkgbase = mint-themes
 pkgname = mint-themes
 ---
 pkgbase = mission-center
-	pkgver = 0.6.0
+	pkgver = 1.1.0
 	pkgdesc = Monitor your CPU, Memory, Disk, Network and GPU usage
 	url = https://gitlab.com/mission-center-devs/mission-center
 	arch = amd64
@@ -9262,8 +9262,8 @@ pkgbase = mission-center
 	compatible = ubuntu:oracular
 	compatible = ubuntu:devel
 	license = GPL-3.0-or-later
-	source = https://gitlab.com/mission-center-devs/mission-center/-/archive/v0.6.0/mission-center-v0.6.0.tar.gz
-	sha256sums = 62ddce4f5078be8b9fca66923916012fe049799e5c11ef8f40377592be9c2f58
+	source = https://gitlab.com/mission-center-devs/mission-center/-/archive/v1.1.0/mission-center-v1.1.0.tar.gz
+	sha256sums = 7c634958158ab47c9a46445380314d3550382965b192a28de9253a3a83a2b7ee
 
 pkgname = mission-center
 ---
