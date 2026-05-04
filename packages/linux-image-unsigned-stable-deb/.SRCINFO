@@ -1,6 +1,6 @@
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-7.0.2-070002-generic
-	pkgver = 7.0.2
+	gives = linux-image-unsigned-7.0.3-070003-generic
+	pkgver = 7.0.3
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -9,9 +9,9 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.2/arm64/linux-image-unsigned-7.0.2-070002-generic_7.0.2-070002.202604271502_arm64.deb
-	sha256sums_arm64 = 37542cd391e61bdc49f9fef979c6c954530f00e22553120571560f3131130360
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.2/amd64/linux-image-unsigned-7.0.2-070002-generic_7.0.2-070002.202604271502_amd64.deb
-	sha256sums_amd64 = 490e325d80fad1b8e81f2837eba96a153d849a136fc1c4b302f467fc1d6b13a5
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.3/arm64/linux-image-unsigned-7.0.3-070003-generic_7.0.3-070003.202604301017_arm64.deb
+	sha256sums_arm64 = 23dff4e126b58178d7c45e633d789d6b8a6ac661c3bf3991582d273f794b1218
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.3/amd64/linux-image-unsigned-7.0.3-070003-generic_7.0.3-070003.202604301017_amd64.deb
+	sha256sums_amd64 = ce84dfc38a9d6e8093c3f83e084e7fd8814d489c45cfc8f0229b2419cfc58808
 
 pkgname = linux-image-unsigned-stable-deb
