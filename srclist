@@ -6125,7 +6125,7 @@ pkgname = jellyfin-media-player-deb
 ---
 pkgbase = jetbrains-toolbox-bin
 	gives = jetbrains-toolbox
-	pkgver = 1.24.12080
+	pkgver = 3.2.0.65851
 	pkgdesc = JetBrains Toolbox is a suite of professional development tools for a range of languages and technologies using JetBrains IDEs
 	arch = amd64
 	breaks = jetbrains-toolbox
@@ -6134,8 +6134,8 @@ pkgbase = jetbrains-toolbox-bin
 	breaks = jetbrains-toolbox-app
 	replaces = jetbrains-toolbox
 	maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
-	source = @jetbrains-toolbox-bin~1.24.12080::https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-1.24.12080.tar.gz
-	sha256sums = d819065a45d29d53646490fbd8ca45dbcaa3d544bdbc6da4494377460ddf6b79
+	source = @jetbrains-toolbox-bin~3.2.0.65851::https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-3.2.0.65851.tar.gz
+	sha256sums = 65a01f13773c1f235e568d0f33fbeb6f415b583aabedd32f83dec781f0303eba
 
 pkgname = jetbrains-toolbox-bin
 ---
