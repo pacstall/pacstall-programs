@@ -2,7 +2,7 @@ pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="10"
+pkgrel="11"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -27,7 +27,6 @@ depends=(
   "bluez-firmware | linux-firmware-raspi"
   "xserver-xorg-input-multitouch"
   "xserver-xorg-input-synaptics"
-  "ukui-touchpadserver"
   "pipewire-audio | pulseaudio-module-bluetooth"
   "bluetooth"
   "alsa-ucm-conf"

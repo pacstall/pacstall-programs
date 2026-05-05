@@ -213,6 +213,7 @@ git-butler-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
+git-review
 gitblade-deb
 gitfiend-deb
 github-cli-bin
@@ -321,6 +322,7 @@ keybase-deb
 keyd-deb
 kirc
 kiro-cli-bin
+kiro-ide-bin
 komorebi-fork-deb
 koodo-reader-deb
 krita-app
@@ -808,6 +810,7 @@ tuckr
 tutanota-app
 typescript
 typora-deb
+typst-bin
 u-boot-mobian-deb
 ubxi-kde-desktop-git
 ubxi-lomiri-desktop
@@ -903,6 +906,7 @@ yandex-browser-beta-deb
 yandex-browser-corporate-deb
 yandex-browser-stable-deb
 yandex-disk-deb
+yle-dl-git
 youtube-dl-git
 youtube-music-deb
 yt-dlp

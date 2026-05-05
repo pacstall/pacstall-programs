@@ -1,13 +1,13 @@
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-7.0.0-070000-generic
-	pkgver = 7.0
+	gives = linux-modules-7.0.3-070003-generic
+	pkgver = 7.0.3
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0/arm64/linux-modules-7.0.0-070000-generic_7.0.0-070000.202604122140_arm64.deb
-	sha256sums_arm64 = 08e2aa91e20dca4d04a612abaa988376ef4b57175bb41691a70c2e275f754af0
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0/amd64/linux-modules-7.0.0-070000-generic_7.0.0-070000.202604122140_amd64.deb
-	sha256sums_amd64 = 88f00647eec96e639a936b148623b73df1e467c617cf0be0c2518f4b9c09f585
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.3/arm64/linux-modules-7.0.3-070003-generic_7.0.3-070003.202604301017_arm64.deb
+	sha256sums_arm64 = 0ac933ff864199c94a57fbbac59a33055cf3a8b3a65b86a6bae7e696b339e3e3
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.3/amd64/linux-modules-7.0.3-070003-generic_7.0.3-070003.202604301017_amd64.deb
+	sha256sums_amd64 = a42b3241d39fb853dfabc99024625ffefa117adb141a35261900a6953f02655d
 
 pkgname = linux-modules-stable-deb
