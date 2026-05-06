@@ -13876,6 +13876,7 @@ pkgbase = rtl8821cu-dkms-git
 	arch = amd64
 	arch = arm64
 	depends = dkms
+	depends = firmware-realtek
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: rtl8821cu-dkms-git
 	source = https://github.com/morrownr/8821cu-20210916.git
