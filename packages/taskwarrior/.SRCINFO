@@ -1,6 +1,6 @@
 pkgbase = taskwarrior
 	gives = taskwarrior
-	pkgver = 3.4.1
+	pkgver = 3.4.2
 	pkgdesc = Command line task list management utility with a multitude of features, developed as a portable open source project with an active and quite vast ecosystem of tools, hooks and extensions
 	arch = any
 	makedepends = g++
@@ -16,7 +16,7 @@ pkgbase = taskwarrior
 	replaces = taskwarrior
 	maintainer = JonBoyleCoding <programmerfalcon@gmail.com>
 	repology = project: taskwarrior
-	source = @taskwarrior~3.4.1::https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v3.4.1/task-3.4.1.tar.gz
-	sha256sums = 23eb60f73e42f16111cc3912b44ee12be6768860a2db2a9c6a47f8ac4786bac3
+	source = @taskwarrior~3.4.2::https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v3.4.2/task-3.4.2.tar.gz
+	sha256sums = d302761fcd1268e4a5a545613a2b68c61abd50c0bcaade3b3e68d728dd02e716
 
 pkgname = taskwarrior

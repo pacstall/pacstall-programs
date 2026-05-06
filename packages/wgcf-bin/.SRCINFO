@@ -1,9 +1,9 @@
 pkgbase = wgcf-bin
-	pkgver = 2.2.26
+	pkgver = 2.2.30
 	pkgdesc = Cross-platform, unofficial CLI for Cloudflare Warp
 	arch = amd64
 	maintainer = Wildy Sheverando <hai@shiwildy.com>
-	source = https://github.com/ViRb3/wgcf/releases/download/v2.2.26/wgcf_2.2.26_linux_amd64
-	sha256sums = b49e7c52307df1f0a9ccd13ad12f87bf7ee7092df4e189f064d81860ec6f4bf5
+	source = https://github.com/ViRb3/wgcf/releases/download/v2.2.30/wgcf_2.2.30_linux_amd64
+	sha256sums = fc443008fe29a6f0b05b45d27436b7ce89e87a6836718597ccb39e41da418304
 
 pkgname = wgcf-bin

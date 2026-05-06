@@ -1,5 +1,5 @@
 pkgname="tailscale"
-pkgver="1.84.2"
+pkgver="1.94.2"
 source=("@${pkgname}~${pkgver}::https://github.com/tailscale/tailscale/archive/refs/tags/v${pkgver}.tar.gz")
 url='https://tailscale.com'
 depends=('iptables')
@@ -9,7 +9,7 @@ maintainer=("Nathan <ndowens@artixlinux.org>")
 arch=('amd64')
 repology=("project: ${pkgname}")
 incompatible=('ubuntu:jammy' 'debian:bookworm')
-sha256sums=("32673e5552e1176f1028a6a90a4c892d2475c92d1e952ca16156dc523d14d914")
+sha256sums=("c45975beb4cb7bab8047cfba77ec8b170570d184f3c806258844f3e49c60d7aa")
 external_connection=true
 
 prepare() {

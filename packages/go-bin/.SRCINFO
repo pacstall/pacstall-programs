@@ -1,6 +1,6 @@
 pkgbase = go-bin
 	gives = go
-	pkgver = 1.24.4
+	pkgver = 1.26.0
 	pkgdesc = Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
 	arch = amd64
 	breaks = go
@@ -16,7 +16,7 @@ pkgbase = go-bin
 	replaces = golang-go
 	maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
 	repology = project: go
-	source = @go-bin~1.24.4::https://go.dev/dl/go1.24.4.linux-amd64.tar.gz
-	sha256sums = 77e5da33bb72aeaef1ba4418b6fe511bc4d041873cbf82e5aa6318740df98717
+	source = @go-bin~1.26.0::https://go.dev/dl/go1.26.0.linux-amd64.tar.gz
+	sha256sums = aac1b08a0fb0c4e0a7c1555beb7b59180b05dfc5a3d62e40e9de90cd42f88235
 
 pkgname = go-bin

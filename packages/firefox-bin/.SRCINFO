@@ -1,6 +1,6 @@
 pkgbase = firefox-bin
 	gives = firefox
-	pkgver = 142.0.1
+	pkgver = 147.0.4
 	pkgdesc = Free and open-source web browser developed by the Mozilla Foundation
 	url = https://www.mozilla.org/en-US/firefox
 	arch = amd64
@@ -10,9 +10,9 @@ pkgbase = firefox-bin
 	replaces = firefox-arm64-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firefox
-	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/142.0.1/linux-x86_64/en-US/firefox-142.0.1.tar.xz
-	sha256sums_amd64 = 8f47a714610a624ad536a652a70242aa894a37f65565fd3103d4366869743b91
-	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/142.0.1/linux-aarch64/en-US/firefox-142.0.1.tar.xz
-	sha256sums_arm64 = ee3c8aeb57740c4a20b97136876cd40e4b60870ab0068e78ab9de22f2a01399a
+	source_amd64 = https://ftp.mozilla.org/pub/firefox/releases/147.0.4/linux-x86_64/en-US/firefox-147.0.4.tar.xz
+	sha256sums_amd64 = fdafe715d3b3ee406e306a27fd91f3e8bdee2fd35c1b3834df6c9134be6265ca
+	source_arm64 = https://ftp.mozilla.org/pub/firefox/releases/147.0.4/linux-aarch64/en-US/firefox-147.0.4.tar.xz
+	sha256sums_arm64 = 6e42ecfd0cad1a56490decdace9a230bd4a5c0fad8f1f4a989538c4fc0a71eca
 
 pkgname = firefox-bin

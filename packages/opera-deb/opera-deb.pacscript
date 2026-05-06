@@ -2,10 +2,10 @@ maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgname="opera-deb"
 gives="opera-stable"
 replaces=("${gives}")
-pkgver="120.0.5543.161"
+pkgver="127.0.5778.76"
 source=("https://deb.opera.com/opera/pool/non-free/o/opera-stable/${gives}_${pkgver}_amd64.deb")
 pkgdesc="Multi-platform web browser developed by its namesake company Opera"
-sha256sums=("37b910edaf3580e5a30efc62d85303909e1fdaf73aaf78574b10e43b04d98060")
+sha256sums=("06bfd8c3f52f0a9f9f383eb263a5507713b5690af9646304b5e3cd61446daa9d")
 arch=('amd64')
 repology=("project: opera")
 

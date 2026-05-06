@@ -1,10 +1,10 @@
 pkgbase = helix
-	pkgver = 25.01.1
+	pkgver = 25.07.1
 	pkgdesc = A post-modern modal text editor
 	arch = any
 	makedepends = cargo>=1.76.0
 	repology = project: helix
-	source = @helix~25.01.1::https://github.com/helix-editor/helix/releases/download/25.01.1/helix-25.01.1-source.tar.xz
-	sha256sums = 12508c4f5b9ae6342299bd40d281cd9582d3b51487bffe798f3889cb8f931609
+	source = @helix~25.07.1::https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-source.tar.xz
+	sha256sums = 2d0cf264ac77f8c25386a636e2b3a09a23dec555568cc9a5b2927f84322f544e
 
 pkgname = helix

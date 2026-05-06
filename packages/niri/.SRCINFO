@@ -1,5 +1,5 @@
 pkgbase = niri
-	pkgver = 25.11
+	pkgver = 26.04
 	pkgdesc = Scrollable-tiling Wayland compositor
 	url = https://github.com/YaLTeR/niri
 	arch = amd64
@@ -44,6 +44,6 @@ pkgbase = niri
 	license = GPL-3.0-or-later
 	maintainer = Alxhr0 <alxhr0@proton.me>
 	repology = project: niri
-	source = https://github.com/YaLTeR/niri.git#tag=v25.11
+	source = https://github.com/YaLTeR/niri.git#tag=v26.04
 
 pkgname = niri

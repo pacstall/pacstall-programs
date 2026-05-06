@@ -1,5 +1,5 @@
 pkgname='nvidia-prod-installer'
-pkgver='570.181'
+pkgver='580.126.18'
 gives="${pkgname}-${pkgver%%.*}"
 arch=('amd64' 'arm64')
 maintainer=('Oren Klopfer <oren@taumoda.com>')
@@ -7,8 +7,8 @@ url='https://www.nvidia.com/en-us/drivers/unix/'
 pkgdesc='NVIDIA driver installer with both proprietary and open source module options (Production Branch)'
 source_amd64=("https://us.download.nvidia.com/XFree86/Linux-x86_64/${pkgver}/NVIDIA-Linux-x86_64-${pkgver}.run")
 source_arm64=("https://us.download.nvidia.com/XFree86/aarch64/${pkgver}/NVIDIA-Linux-aarch64-${pkgver}.run")
-sha256sums_amd64=('f06d25ce3f1802ea507ada4b5dc46b3c2c8b38503db6f68f3ef016bab8e3dcf9')
-sha256sums_arm64=('d695037529b8e6e2218341c485f85a93d5d3fc813f5d455b76dadca5a6d9dca5')
+sha256sums_amd64=('a7781b2e1c2d65c6580914c76e79ed454d02945df84711c033070a092a9ab49d')
+sha256sums_arm64=('a6bbb159094bbabca644becf6d1db8340e9d368c30c17df9a7a8fd98120370db')
 
 package() {
   install -Dm755 "NVIDIA-Linux-x86_64-${pkgver}.run" -t "${pkgdir}/usr/bin"

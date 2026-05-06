@@ -1,6 +1,6 @@
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-6.19.0-061900rc5-generic
-	pkgver = 6.19~rc5
+	gives = linux-image-unsigned-7.1.0-070100rc2-generic
+	pkgver = 7.1~rc2
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -11,9 +11,9 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/arm64/linux-image-unsigned-6.19.0-061900rc5-generic_6.19.0-061900rc5.202601120354_arm64.deb
-	sha256sums_arm64 = 28043a56e8fb1bcf581c8a85ad9d77dfc734c5bccc3b706a21fdf5fced723945
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.19-rc5/amd64/linux-image-unsigned-6.19.0-061900rc5-generic_6.19.0-061900rc5.202601120354_amd64.deb
-	sha256sums_amd64 = 911987ad9a44380a3e0547aabddf39c94ab8018da19833d29ec2f41252529b18
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1-rc2/arm64/linux-image-unsigned-7.1.0-070100rc2-generic_7.1.0-070100rc2.202605032137_arm64.deb
+	sha256sums_arm64 = 2f6c049b43d35b5dd12054241e8829bbb4883ca22703995804f9ba0d84294db8
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1-rc2/amd64/linux-image-unsigned-7.1.0-070100rc2-generic_7.1.0-070100rc2.202605032137_amd64.deb
+	sha256sums_amd64 = 8c8c3e3ea76c27db662e0d0bc97943f1938bf95d4e2df259e83dc9a05c0b7d8e
 
 pkgname = linux-image-unsigned-deb

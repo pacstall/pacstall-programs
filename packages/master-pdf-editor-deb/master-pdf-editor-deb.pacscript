@@ -1,0 +1,13 @@
+pkgname="master-pdf-editor-deb"
+gives="master-pdf-editor"
+pkgdesc="Complete solution for creation and editing PDF files - Free version without watermark"
+replaces=("${gives}")
+repology=("project: ${gives}")
+url='https://code-industry.net/free-pdf-editor/'
+arch=("i386" "amd64")
+pkgver="4.3.89"
+maintainer=("Fabio Di Giorgio <ravnos@duck.com>")
+source_amd64=("https://code-industry.net/public/${gives}-${pkgver}_qt5.amd64.deb")
+source_i386=("https://code-industry.net/public/${gives}-${pkgver}_i386.deb")
+sha256sums_amd64=("f873acade96df48881c997baef7b8ba5284a941025ab29c9d68173c6203a444a")
+sha256sums_i386=("6d14a288dfdafe9c67112d130189ce95bfb4fcebdb7b3af064ae08af4e033047")

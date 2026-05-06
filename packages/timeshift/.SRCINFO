@@ -1,6 +1,5 @@
 pkgbase = timeshift
-	pkgver = 24.06.6
-	pkgrel = 2
+	pkgver = 25.12.4
 	pkgdesc = System restore utility that takes snapshots at regular intervals using rsync or BTRFS.
 	arch = any
 	depends = rsync
@@ -24,7 +23,7 @@ pkgbase = timeshift
 	replaces = timeshift-btrfs
 	maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
 	repology = project: timeshift
-	source = @timeshift~24.06.6::https://github.com/linuxmint/timeshift/archive/refs/tags/24.06.6.zip
-	sha256sums = 775e30bb6c5eaa8741c1aabbd4a5a06c7964c4bff14ee680be87bb8484761391
+	source = @timeshift~25.12.4::https://github.com/linuxmint/timeshift/archive/refs/tags/25.12.4.zip
+	sha256sums = d9bde6b332655ce707806133165bd649789390d5ab2c5cbd78e0a2fc5089078c
 
 pkgname = timeshift

@@ -1,0 +1,21 @@
+diff --git a/pyproject.toml b/pyproject.toml
+index a6d3a9e..825e819 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -5,8 +5,7 @@ readme = "README.md"
+ authors = [
+     {name = "Antti Ajanki", email = "antti.ajanki@iki.fi"}
+ ]
+-license = "GPL-3.0-or-later"
+-license-files = ["COPYING"]
++license = {file="COPYING"}
+ dependencies = [
+     "requests",
+     "lxml",
+@@ -81,5 +80,5 @@ quote-style = "single"
+ disable_error_code = "import-untyped"
+
+ [build-system]
+-requires = ["flit_core >=3.11,<4"]
++requires = ["flit_core >=3.9,<4"]
+ build-backend = "flit_core.buildapi"

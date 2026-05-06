@@ -1,7 +1,7 @@
 pkgname="python3-anyascii"
 _name="${pkgname#python3-}"
 arch=("any")
-pkgver="0.3.2"
+pkgver="0.3.3"
 pkgdesc='Unicode to ASCII transliteration'
 url=https://anyascii.com/
 license=('ISC')
@@ -10,7 +10,7 @@ makedepends=('git' 'python3-build' 'python3-installer')
 checkdepends=('python3-pytest')
 pacdeps=('python3-flit-core')
 source=("https://github.com/${_name}/${_name}/archive/refs/tags/${pkgver}.tar.gz")
-b2sums=('9b9440d26872404487ff791dda5e7695f5f8504743d750c89b80d2a77595decfb2f1389b6636af8723a358b0e56988f074acb403d7860539c522cfa4b5b3f06a')
+b2sums=('b43e568664f4bcbc5fce976ed07bf6c7a40b475b1e06a8196f280cd66fa7eb45cc8786ede112da6e2176afc297df8e84edb9ce2de169a6a3e278eb625ea7b0a6')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {

@@ -1,5 +1,5 @@
 pkgbase = discord
-	pkgver = 0.0.119
+	pkgver = 0.0.125
 	pkgdesc = Chat for Communities and Friends
 	url = https://discord.com/
 	arch = amd64
@@ -17,7 +17,7 @@ pkgbase = discord
 	optdepends = fonts-noto-color-emoji: emoji support
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: discord
-	source = @discord~0.0.119::https://dl.discordapp.net/apps/linux/0.0.119/discord-0.0.119.tar.gz
-	sha256sums = fcd7e01c15ec5166280c4546cf5dc6054d484a949d0793a6ae3852376e5204c8
+	source = @discord~0.0.125::https://dl.discordapp.net/apps/linux/0.0.125/discord-0.0.125.tar.gz
+	sha256sums = 032294ab61898cc6a6dabee842375006106c4d86e156d9d469378b3f87a64481
 
 pkgname = discord

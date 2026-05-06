@@ -1,7 +1,7 @@
 _pkgname="morewaita"
 pkgname="morewaita-icon-theme"
 arch=("all")
-pkgver="48.4"
+pkgver="49"
 maintainer=("Rodrigo Tavares <dev@rodrigotavar.es>")
 source=("${pkgname}~${pkgver}::https://github.com/somepaulo/MoreWaita.git#tag=v${pkgver}")
 makedepends=("meson" "ninja-build")

@@ -1,6 +1,6 @@
 pkgbase = bottom-deb
 	gives = bottom
-	pkgver = 0.11.0
+	pkgver = 0.12.3
 	pkgdesc = A customizable cross-platform graphical process/system monitor for the terminal
 	url = https://clementtsang.github.io/bottom
 	arch = amd64
@@ -11,11 +11,11 @@ pkgbase = bottom-deb
 	replaces = bottom
 	maintainer = Nezred <jmnezred@pm.me>
 	repology = project: bottom
-	source_amd64 = https://github.com/ClementTsang/bottom/releases/download/0.11.0/bottom_0.11.0-1_amd64.deb
-	sha256sums_amd64 = 45c9120c202b34203ec9b1ed1a39ec66d8a6008fe44c854cf65787190d5d20c4
-	source_arm64 = https://github.com/ClementTsang/bottom/releases/download/0.11.0/bottom_0.11.0-1_arm64.deb
-	sha256sums_arm64 = 746b7d4af72a9717682797e74fa7ce719832ba44e16e46448babd771ef170ff3
-	source_armhf = https://github.com/ClementTsang/bottom/releases/download/0.11.0/bottom_0.11.0-1_armhf.deb
-	sha256sums_armhf = 2feef7ba824512abc8cd8a48a77b77e353ca5bb3f4ff7869256dd5b049e491b2
+	source_amd64 = https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_0.12.3-1_amd64.deb
+	sha256sums_amd64 = 75dd4aa31eeb61087925c434627191062d9811b5da91c75ed28b83137a42ff27
+	source_arm64 = https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_0.12.3-1_arm64.deb
+	sha256sums_arm64 = 6247af81c0f5befe46d95f8e34444e8f1aae04a525c571565fce4e1a0d3682a0
+	source_armhf = https://github.com/ClementTsang/bottom/releases/download/0.12.3/bottom_0.12.3-1_armhf.deb
+	sha256sums_armhf = 8b6cd6a68675975cbac785ddfacde4083c92d618b0783c8b5fabda3699c8cf3a
 
 pkgname = bottom-deb

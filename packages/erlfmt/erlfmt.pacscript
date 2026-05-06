@@ -1,5 +1,5 @@
 pkgname="erlfmt"
-pkgver="1.7.0"
+pkgver="1.8.0"
 pkgdesc="Automated code formatter for Erlang"
 arch=('any')
 repology=("project: ${pkgname}")
@@ -9,7 +9,7 @@ depends=('erlang')
 makedepends=('git' 'rebar3')
 conflicts=("${pkgname}-git")
 source=("https://github.com/WhatsApp/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('7d566b5f012ce4e2db74e18edb7da4cf69fd49a2f80effdddf989f5f0051db5f')
+sha256sums=('c7205f3a28dac589c623f21546d63d5b04cc669545d03485cb88552de0117f43')
 maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
 external_connection=true
 
