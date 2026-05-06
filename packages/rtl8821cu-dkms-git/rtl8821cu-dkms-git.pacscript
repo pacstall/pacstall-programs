@@ -15,6 +15,11 @@ package() {
   mkdir -p "${pkgdir}/usr/src/rtl8821cu-5.12.0.4"
   cp -r * "${pkgdir}/usr/src/rtl8821cu-5.12.0.4"
   chown -R root:root "${pkgdir}/usr/src/rtl8821cu-5.12.0.4"
+
+  # install modprobe .conf file
+  mkdir -p "${pkgdir}/etc/modprobe.d"
+  cp "${pkgdir}/usr/src/rtl8821cu-5.12.0.4/8821cu.conf" "${pkgdir}/etc/modprobe.d/rtl8821cu.conf"
+
 }
 
 post_upgrade() {
