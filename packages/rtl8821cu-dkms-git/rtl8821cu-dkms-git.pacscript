@@ -14,7 +14,7 @@ _dkmsver="5.12.0.4"
 package() {
   cd "${srcdir}/8821cu-20210916"
   mkdir -p "${pkgdir}/usr/src/rtl8821cu-5.12.0.4"
-  cp -r * "${pkgdir}/usr/src/rtl8821cu-5.12.0.4"
+  cp -r ./* "${pkgdir}/usr/src/rtl8821cu-5.12.0.4"
   chown -R root:root "${pkgdir}/usr/src/rtl8821cu-5.12.0.4"
 
   # install modprobe .conf file
@@ -24,7 +24,7 @@ package() {
 }
 
 post_upgrade() {
-  if dkms status | grep -q "${_dkmsname}/$_dkmsver}"; then
+  if dkms status | grep -q "${_dkmsname}/${_dkmsver}"; then
     dkms remove -m "${_dkmsname}" -v "${_dkmsver}" --all
   fi
   dkms install -m "${_dkmsname}" -v "${_dkmsver}" --force
