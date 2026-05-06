@@ -5,6 +5,7 @@ pkgdesc="Linux Driver for USB WiFi Adapters that are based on the RTL8811CU, RTL
 pkgver="1.0.0"
 arch=("amd64" "arm64")
 url='https://github.com/morrownr/8821cu-20210916'
+source=("https://github.com/morrownr/8821cu-20210916.git")
 maintainer=("aKqir24 <aKqir24@github.com>")
 depends=("dkms")
 _dkmsname="rtl8821cu"

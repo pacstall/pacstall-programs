@@ -8,5 +8,6 @@ pkgbase = rtl8821cu-dkms-git
 	depends = dkms
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: rtl8821cu-dkms-git
+	source = https://github.com/morrownr/8821cu-20210916.git
 
 pkgname = rtl8821cu-dkms-git
