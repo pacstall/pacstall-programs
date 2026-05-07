@@ -22,7 +22,7 @@ package() {
 
   # Copy source and dkms config
   install -d "${pkgdir}/usr/src/"
-  cp -a "./*" "${pkgdir}/usr/src/${_dkmsname}-${pkgver}/"
+  cp -a ./* "${pkgdir}/usr/src/${_dkmsname}-${pkgver}/"
 
   # Fixing perms
   find "${pkgdir}/usr/src/${_dkmsname}/${pkgver}" -type d -exec chmod 755 {} \;
