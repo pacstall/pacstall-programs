@@ -7,7 +7,8 @@ arch=("amd64" "arm64")
 url='https://github.com/morrownr/8821cu-20210916'
 source=("https://github.com/morrownr/8821cu-20210916.git")
 maintainer=("aKqir24 <aKqir24@github.com>")
-depends=("dkms" "firmware-realtek")
+depends=("dkms")
+optdepends=("firmware-realtek: realtek non-free-firmware")
 _dkmsname="rtl8821cu"
 
 package() {
