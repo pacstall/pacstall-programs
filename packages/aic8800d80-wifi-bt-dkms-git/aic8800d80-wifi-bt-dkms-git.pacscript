@@ -21,7 +21,7 @@ package() {
   cp -a "./fw/aic8800D80" "${pkgdir}/usr/lib/firmware/"
 
   # Copy source and dkms config
-  install -d "${pkgdir}/usr/src/"
+  install -d "${pkgdir}/usr/src/${_dkmsname}-${pkgver}"
   cp -a ./* "${pkgdir}/usr/src/${_dkmsname}-${pkgver}/"
 
   # Fixing perms
