@@ -7,7 +7,7 @@ pkgbase = aic8800d80-wifi-bt-dkms-git
 	conflicts = aic8800d80
 	conflicts = aic8800
 	license = GPL-2.0-only
-	maintainer = xdavius <xdavius@gmail.com>
+	maintainer = xdavius <xdavius@github.com>
 	source = git+https://github.com/shenmintao/aic8800d80.git#branch=bluetooth
 	sha512sums = SKIP
 
