@@ -21,9 +21,9 @@ package() {
   cp -a "${pkgdir}/usr/src/${_dkmsname}/${pkgver}/8821cu.conf" "${pkgdir}/etc/modprobe.d/8821cu.conf"
 
   # Fixing perms
-  find "${pkgdir}/usr/src/${_dkmsname}/${pkgver}" -type d -exec chmod 755 {} +
-  find "${pkgdir}/usr/src/${_dkmsname}/${pkgver}" -type f -exec chmod 644 {} +
-  find "${pkgdir}/usr/src/${_dkmsname}/${pkgver}" -type f -name "*.sh" -exec chmod 755 {} +
+  find "${pkgdir}/usr/src/" -type d -exec chmod 755 {} +
+  find "${pkgdir}/usr/src/" -type f -exec chmod 644 {} +
+  find "${pkgdir}/usr/src/" -type f -name "*.sh" -exec chmod 755 {} +
 }
 
 pre_upgrade() {
@@ -55,6 +55,6 @@ post_install() {
       fi
     fi
   else
-    echo -e "${BOLD}ERROR:${NC} Linux headers for ${KERNEL_VERSION} not installed."
+    echo -e "${BOLD}ERROR:${NC} Linux headers for ${KVER} not installed."
   fi
 }
