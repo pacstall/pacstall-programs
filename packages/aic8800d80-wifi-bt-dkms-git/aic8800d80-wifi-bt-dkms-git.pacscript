@@ -9,7 +9,7 @@ license=('GPL-2.0-only')
 source=('git+https://github.com/shenmintao/aic8800d80.git#branch=bluetooth')
 sha512sums=('SKIP')
 maintainer=("xdavius <xdavius@github.com>")
-_dkmsname='aic8800'
+_dkmsname='aic8800d80'
 
 package() {
   cd "${srcdir}/aic8800d80"
@@ -25,9 +25,9 @@ package() {
   cp -a ./* "${pkgdir}/usr/src/${_dkmsname}-${pkgver}/"
 
   # Fixing perms
-  find "${pkgdir}/usr/src/${_dkmsname}/${pkgver}" -type d -exec chmod 755 {} \;
-  find "${pkgdir}/usr/src/${_dkmsname}/${pkgver}" -type f -exec chmod 644 {} \;
-  find "${pkgdir}/usr/src/${_dkmsname}/${pkgver}" -type f -name "*.sh" -exec chmod 755 {} +
+  find "${pkgdir}/usr/src/" -type d -exec chmod 755 {} \;
+  find "${pkgdir}/usr/src/" -type f -exec chmod 644 {} \;
+  find "${pkgdir}/usr/src/" -type f -name "*.sh" -exec chmod 755 {} +
 }
 
 pre_upgrade() {
