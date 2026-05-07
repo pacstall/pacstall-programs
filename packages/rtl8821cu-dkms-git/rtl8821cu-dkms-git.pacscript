@@ -12,17 +12,17 @@ _dkmsname="rtl8821cu"
 
 package() {
   cd "${srcdir}/8821cu-20210916"
-  mkdir -p "${pkgdir}/usr/src/${pkgver}"
-  cp -a ./* "${pkgdir}/usr/src/${pkgver}"
+  mkdir -p "${pkgdir}/usr/src/${_dkmsname}/${pkgver}"
+  cp -a ./* "${pkgdir}/usr/src/${_dkmsname}/${pkgver}"
 
   # Install modprobe .conf file
   mkdir -p "${pkgdir}/etc/modprobe.d"
-  cp -a "${pkgdir}/usr/src/${pkgver}/8821cu.conf" "${pkgdir}/etc/modprobe.d/8821cu.conf"
+  cp -a "${pkgdir}/usr/src/${_dkmsname}/${pkgver}/8821cu.conf" "${pkgdir}/etc/modprobe.d/8821cu.conf"
 
   # Fixing perms
-  find "${pkgdir}/usr/src/${pkgver}" -type d -exec chmod 755 {} +
-  find "${pkgdir}/usr/src/${pkgver}" -type f -exec chmod 644 {} +
-  find "${pkgdir}/usr/src/${pkgver}" -type f -name "*.sh" -exec chmod 755 {} +
+  find "${pkgdir}/usr/src/${_dkmsname}/${pkgver}" -type d -exec chmod 755 {} +
+  find "${pkgdir}/usr/src/${_dkmsname}/${pkgver}" -type f -exec chmod 644 {} +
+  find "${pkgdir}/usr/src/${_dkmsname}/${pkgver}" -type f -name "*.sh" -exec chmod 755 {} +
 }
 
 pre_upgrade() {
