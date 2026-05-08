@@ -1,5 +1,7 @@
 # Contributing
 
+*Excerpted from <https://github.com/pacstall/pacstall/wiki/Pacscript-101>.*
+
 ## Creating a PR
 
 * Please **do not** create Pacscripts on GitHub. We use pre-commit to ensure

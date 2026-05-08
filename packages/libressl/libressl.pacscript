@@ -8,11 +8,11 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="libressl"
 arch=("any")
-pkgver="3.7.3"
+pkgver="4.2.1"
 source=("@${pkgname}~${pkgver}::https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-${pkgver}.tar.gz")
 pkgdesc="LibreSSL is a version of the TLS/crypto stack forked from OpenSSL in 2014, with goals of modernizing the codebase, improving security, and applying best practice development processes."
 breaks=("${pkgname}-git" "${pkgname}-bin")
-sha256sums=("7948c856a90c825bd7268b6f85674a8dcd254bae42e221781b24e3f8dc335db3")
+sha256sums=("6d5c2f58583588ea791f4c8645004071d00dfa554a5bf788a006ca1eb5abd70b")
 repology=("project: libressl")
 
 prepare() {

@@ -1,11 +1,11 @@
 pkgname="prettier"
 arch=("all")
-pkgver="3.5.3"
+pkgver="3.8.1"
 pkgdesc="An opinionated code formatter"
 url='https://prettier.io'
 depends=("nodejs")
 source=("@${pkgname}~${pkgver}::https://registry.npmjs.org/prettier/-/prettier-${pkgver}.tgz")
-sha256sums=("14841de7b71a93123d22997db22d088debb13976778d869e3622199108e85b4b")
+sha256sums=("5531dc6006ad06b642d5342438909f85dc53e87c50556753c908229b213fb4f4")
 repology=("project: ${pkgname}")
 
 package() {

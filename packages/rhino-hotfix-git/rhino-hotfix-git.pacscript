@@ -3,9 +3,9 @@ gives="rhino-hotfix"
 source=("${gives}::https://github.com/rhino-linux/hotfix.git")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="3"
 depends=("jq" "curl")
-compatible=("ubuntu:devel" "ubuntu:questing" "ubuntu:resolute")
+compatible=("ubuntu:devel" "ubuntu:resolute" "ubuntu:stonking")
 pkgdesc="Fetch and run hotfixes for Rhino Linux"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 

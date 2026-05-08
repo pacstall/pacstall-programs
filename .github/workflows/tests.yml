@@ -34,7 +34,7 @@ jobs:
       - id: checkout
         uses: actions/checkout@v6
       - id: paths
-        uses: dorny/paths-filter@v3
+        uses: dorny/paths-filter@v4
         with:
           filters: |
             pacscripts:

@@ -1,13 +1,13 @@
 pkgbase = tabby-deb
 	gives = tabby-terminal
-	pkgver = 1.0.223
+	pkgver = 1.0.230
 	pkgdesc = A terminal for the modern age
 	arch = amd64
 	breaks = tabby
 	breaks = tabby-app
 	maintainer = Herisson <spaceguybox@outlook.com>
 	repology = project: tabby-terminal
-	source = https://github.com/Eugeny/tabby/releases/download/v1.0.223/tabby-1.0.223-linux-x64.deb
-	sha256sums = 93028e1ae6b62a7675921fc43241668f675336c1bbe4891906ced3c80dc99d13
+	source = https://github.com/Eugeny/tabby/releases/download/v1.0.230/tabby-1.0.230-linux-x64.deb
+	sha256sums = 643c942000ce4b6bef7d15f8f3969eed0edf86d186db8bec0d144c9e502a9d09
 
 pkgname = tabby-deb

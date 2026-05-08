@@ -1,8 +1,8 @@
 pkgbase = alacritty
-	pkgver = 0.16.0
+	pkgver = 0.17.0
 	pkgdesc = A fast, cross-platform, OpenGL terminal emulator
 	arch = any
-	makedepends = cargo
+	makedepends = cargo>=1.85.0
 	makedepends = cmake
 	makedepends = pkg-config
 	makedepends = libfreetype6-dev
@@ -15,7 +15,7 @@ pkgbase = alacritty
 	incompatible = debian:bookworm
 	maintainer = Warofzen <warofzen1@protonmail.com>
 	repology = project: alacritty
-	source = @alacritty~0.16.0::https://github.com/alacritty/alacritty/archive/refs/tags/v0.16.0.tar.gz
-	sha256sums = 7baaf26acd80f6b7ceceb2c984b0d43b4089af2d12db3cbaa60ad1243d712e72
+	source = @alacritty~0.17.0::https://github.com/alacritty/alacritty/archive/refs/tags/v0.17.0.tar.gz
+	sha256sums = 38d6527d346cda5c6049332a1f3338a89ea66cd7981b54d4c3ce801b392496f8
 
 pkgname = alacritty

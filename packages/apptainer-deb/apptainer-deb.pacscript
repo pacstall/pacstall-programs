@@ -1,8 +1,8 @@
 pkgname="apptainer-deb"
 gives="apptainer"
-pkgver="1.4.1"
+pkgver="1.4.5"
 source=("https://github.com/apptainer/apptainer/releases/download/v${pkgver}/apptainer_${pkgver}_amd64.deb")
 pkgdesc='container platform focused on supporting "Mobility of Compute" formerly known as Singularity'
-sha256sums=("9a0663f6e680d270dd3675f94cabf35dc324bb8673f5c6b645005e5aa1bd6d88")
+sha256sums=("70f19af846501acfbc2e42e7cfeee9ee11ddbbfa1c3502d0d99cde34e8e0af05")
 arch=('amd64')
 repology=("project: ${gives}")

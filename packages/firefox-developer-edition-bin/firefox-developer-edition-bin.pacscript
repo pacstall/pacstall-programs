@@ -1,5 +1,5 @@
 pkgname="firefox-developer-edition-bin"
-pkgver="143.0b9"
+pkgver="148.0b15"
 gives="firefox-developer-edition"
 arch=("amd64" "arm64")
 pkgdesc="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
@@ -12,12 +12,12 @@ source=(
   "${gives}.png::https://www.mozilla.org/media/img/structured-data/logo-firefox-developer.8aedc8028e4d.png"
 )
 sha256sums_amd64=(
-  "ef116160db98534128eb3cf2c848d6e0d5f874da4ec7850837404cf4cc78aceb"
+  "db7144bed6613578ad176b982e1560866bad7f0529b4074a4f997735b05cafdb"
   "SKIP"
   "SKIP"
 )
 sha256sums_arm64=(
-  "da954b044215a4f35e3466ee0f39c01f408afed8b42172f727a939db73c11e4c"
+  "ab5b50ad33b593b2b0c2f22be46919863e5a610a80a4cb919db0057569c5ef5c"
   "SKIP"
   "SKIP"
 )

@@ -1,8 +1,8 @@
 pkgname=("fblog-bin")
 arch=("amd64")
-pkgver="4.14.0"
+pkgver="4.17.0"
 source=("https://github.com/brocode/fblog/releases/download/v${pkgver}/fblog")
-sha256sums=("0fb91ef3639130547bca63c044fcfe467ac1aba828f1f1f8e41a8c2a556ecb38")
+sha256sums=("2bc0a97ae4f03ec8169f6ce1319099ac4b6f9901247f62ffc61178a7347a59e4")
 conflicts=("fblog-deb")
 pkgdesc="Small command-line JSON Log viewer"
 maintainer=("Sarim <sarimbinwaseem@protonmaill.com>")

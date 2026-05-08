@@ -1,6 +1,6 @@
 pkgbase = qogir-gtk-theme-bin
 	gives = qogir-gtk-theme
-	pkgver = 2024-05-22
+	pkgver = 2025-08-17
 	pkgdesc = Qogir is a flat Design theme for GTK
 	arch = amd64
 	depends = gtk2-engines-murrine
@@ -13,7 +13,7 @@ pkgbase = qogir-gtk-theme-bin
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: qogir-theme
 	repology = repo: nix_unstable
-	source = @qogir-gtk-theme-bin~2024-05-22::https://github.com/vinceliuice/Qogir-theme/archive/2024-05-22.tar.gz
-	sha256sums = 9ccebe06ef467f2628ddea7e5a6b09f671d486283a06f89eb7e888e01648dd5f
+	source = @qogir-gtk-theme-bin~2025-08-17::https://github.com/vinceliuice/Qogir-theme/archive/2025-08-17.tar.gz
+	sha256sums = cc7a1a6f7449571251bbfd338e3e671254ba93bee41c5b997bf5a6626faaae8f
 
 pkgname = qogir-gtk-theme-bin

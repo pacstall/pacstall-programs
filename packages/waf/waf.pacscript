@@ -1,11 +1,11 @@
 pkgname="waf"
 arch=("any")
-pkgver="2.1.6"
+pkgver="2.1.9"
 source=("@${pkgname}~${pkgver}::https://gitlab.com/ita1024/waf/-/archive/waf-${pkgver}/waf-waf-${pkgver}.zip")
 pkgdesc="Waf is a Python-based framework for configuring, compiling and installing applications."
 makedepends=("python3")
 depends=("python3")
-sha256sums=("1bf7c726fb693fbf3e754e757c0cd0133a3159156518d42d6579c4ad88c607e0")
+sha256sums=("47c555fb57ea72d0a2e31f13e74c2588d9686b7c4c63ce0dbbf7fb894390b720")
 maintainer=("echometerain <echometer@disroot.org>")
 
 build() {

@@ -9,13 +9,13 @@ maintainer=("wizard-28 <wiz28@pm.me>")
 pkgname="qogir-gtk-theme-bin"
 gives="qogir-gtk-theme"
 arch=("amd64")
-pkgver="2024-05-22"
+pkgver="2025-08-17"
 pkgdesc="Qogir is a flat Design theme for GTK"
 source=("@${pkgname}~${pkgver}::https://github.com/vinceliuice/Qogir-theme/archive/${pkgver}.tar.gz")
 depends=("gtk2-engines-murrine" "gtk2-engines-pixbuf")
 makedepends=("libsass1")
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
-sha256sums=("9ccebe06ef467f2628ddea7e5a6b09f671d486283a06f89eb7e888e01648dd5f")
+sha256sums=("cc7a1a6f7449571251bbfd338e3e671254ba93bee41c5b997bf5a6626faaae8f")
 repology=("project: qogir-theme" "repo: nix_unstable")
 
 # To specify flags for theme installation you have two options
