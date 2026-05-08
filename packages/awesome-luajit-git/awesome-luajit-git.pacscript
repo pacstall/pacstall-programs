@@ -65,7 +65,7 @@ package() {
 
   make install DESTDIR="${pkgdir}"
   mkdir -p "${pkgdir}/usr/share/xsessions"
-  ln -sf /usr/local/share/xsessions/"${gives}".desktop "${pkgdir}/usr/share/xsessions/${gives}.desktop"
+  ln -sf /usr/share/xsessions/"${gives}".desktop "${pkgdir}/usr/share/xsessions/${gives}.desktop"
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
