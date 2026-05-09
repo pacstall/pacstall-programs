@@ -40,8 +40,7 @@ optdepends=("rlwrap: readline support for awesome-client"
   "awesome-extra: additional modules for awesome"
   "awesome-doc: documentation for awesome")
 breaks=("${gives}" "${gives}-bin")
-replaces=("${gives}" "${gives}-bin" "${gives-doc}")
-conflicts=("${gives-doc}")
+replaces=("${gives}" "${gives}-bin")
 
 build() {
   cd "${gives}"
