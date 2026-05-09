@@ -835,12 +835,10 @@ pkgbase = awesome-luajit-git
 	optdepends = feh: for icon generation etc
 	optdepends = awesome-extra: additional modules for awesome
 	optdepends = awesome-doc: documentation for awesome
-	conflicts = awesome
 	breaks = awesome
 	breaks = awesome-bin
 	replaces = awesome
 	replaces = awesome-bin
-	replaces = awesome
 	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/awesomeWM/awesome.git
 
