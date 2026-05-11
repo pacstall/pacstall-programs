@@ -1,6 +1,6 @@
 pkgbase = kiro-ide-bin
 	gives = kiro-ide
-	pkgver = 0.11.133
+	pkgver = 0.12.155
 	pkgdesc = AI-powered IDE for modern development
 	url = https://kiro.dev
 	arch = amd64
@@ -11,7 +11,7 @@ pkgbase = kiro-ide-bin
 	license = custom:Kiro
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: kiro-ide
-	source = https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/0.11.133/tar/kiro-ide-0.11.133-stable-linux-x64.tar.gz
-	sha256sums = 0fc635c376266e02af369377b0bbfe1992dc4fb1c041a1a308bf5849dac76db0
+	source = https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/0.12.155/tar/kiro-ide-0.12.155-stable-linux-x64.tar.gz
+	sha256sums = 1c998494222c79e2dd18738536d683ab2a5836a0067cf02b75d601313694cdb6
 
 pkgname = kiro-ide-bin
