@@ -18,8 +18,6 @@ depends=(
   "gir1.2-pango-1.0" "gir1.2-glib-2.0" "gir1.2-gdkpixbuf-2.0"
   "gir1.2-freedesktop" "wmctrl"
 )
-
-# Build dependencies
 makedepends=(
   "cmake" "pkg-config" "libglib2.0-dev"
   "asciidoctor" "imagemagick" "gzip" "luajit"
