@@ -1,10 +1,10 @@
 pkgname="linux-image-rockchip-deb"
-pkgver="6.18.28"
+pkgver="6.18.30"
 basever="6.18"
 buildver="1"
 gives="linux-image-${basever}-rockchip"
 source=("https://repo.mobian.org/pool/main/l/linux-${basever}-rockchip/${gives}_${pkgver}-${buildver}_arm64.deb")
-sha256sums=("78af71ba4ae4ef53d3437e144c58f9a9e6c7c26bca395b5e73758fae6f2ab66b")
+sha256sums=("6649494ae51a2a754ae66032c73fe0d355929a32c06ccf11fecafde2d29e79f0")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Linux kernel image files built for PINE64 Rockchip devices (Mobian)"
 arch=('arm64')
