@@ -6628,7 +6628,7 @@ pkgname = kirc
 ---
 pkgbase = kiro-cli-bin
 	gives = kiro-cli
-	pkgver = 2.2.0
+	pkgver = 2.3.0
 	pkgdesc = AI-powered agentic coding assistant for the terminal
 	url = https://kiro.dev/cli/
 	arch = amd64
@@ -6641,16 +6641,16 @@ pkgbase = kiro-cli-bin
 	license = custom:Kiro
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: kiro-cli
-	source_amd64 = kiro-cli-bin-2.2.0-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.2.0/kirocli-x86_64-linux.tar.zst
-	sha256sums_amd64 = e2818fe641d8f19d4d7c81d1df98dd10cef6beed188457be2e93545e4fa6223f
-	source_arm64 = kiro-cli-bin-2.2.0-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.2.0/kirocli-aarch64-linux.tar.zst
-	sha256sums_arm64 = 0f23b894f009e53070eda79c90bd562e9f340c9e1fa946483207d438b0accdb9
+	source_amd64 = kiro-cli-bin-2.3.0-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.3.0/kirocli-x86_64-linux.tar.zst
+	sha256sums_amd64 = 882a9150b8420e7e2239c0cc80a062153d1de5fdb201486dfda3e36fb06d1ee8
+	source_arm64 = kiro-cli-bin-2.3.0-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.3.0/kirocli-aarch64-linux.tar.zst
+	sha256sums_arm64 = 4880153471cd86fc1ae9cb304f3f99030fe2864dcdd6a5506cca73814dd909e2
 
 pkgname = kiro-cli-bin
 ---
 pkgbase = kiro-ide-bin
 	gives = kiro-ide
-	pkgver = 0.12.155
+	pkgver = 0.12.184
 	pkgdesc = AI-powered IDE for modern development
 	url = https://kiro.dev
 	arch = amd64
@@ -6661,8 +6661,8 @@ pkgbase = kiro-ide-bin
 	license = custom:Kiro
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: kiro-ide
-	source = https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/0.12.155/tar/kiro-ide-0.12.155-stable-linux-x64.tar.gz
-	sha256sums = 1c998494222c79e2dd18738536d683ab2a5836a0067cf02b75d601313694cdb6
+	source = https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/0.12.184/tar/kiro-ide-0.12.184-stable-linux-x64.tar.gz
+	sha256sums = e93dd94ba29a101916d0449032234edd4072b64d007788359a8052e9d6024c0b
 
 pkgname = kiro-ide-bin
 ---
