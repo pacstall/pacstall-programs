@@ -14206,6 +14206,7 @@ pkgbase = scx-loader
 	pacdeps = scx-scheds
 	conflicts = scx-loader
 	provides = scx-loader
+	backup = usr/share/scx_loader/config.toml
 	license = GPL-2.0-only
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: scx-loader

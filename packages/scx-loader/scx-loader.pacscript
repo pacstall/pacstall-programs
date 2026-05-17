@@ -22,6 +22,7 @@ makedepends=(
   "llvm"
   "pkg-config"
 )
+backup=('usr/share/scx_loader/config.toml')
 maintainer=("pejuton <pejuton@proton.me>")
 external_connection=true
 
