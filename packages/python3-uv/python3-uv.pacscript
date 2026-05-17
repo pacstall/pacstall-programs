@@ -1,0 +1,39 @@
+pkgname='python3-uv'
+pkgver='0.11.14'
+pkgdesc='Fast Python package and project manager, written in Rust.'
+license=('Apache-2.0' 'MIT')
+repology=('project: python:uv')
+url='https://github.com/astral-sh/uv'
+arch=('any')
+maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
+source=("https://github.com/astral-sh/uv/archive/refs/tags/${pkgver}.tar.gz")
+sha256sums=('17e2cca308b31247079e732f21ca43ac07ee44657dc947560beb0ddbca9121e0')
+_min_cargo='1.93'
+makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo}")
+external_connection=true
+
+build() {
+  cd "${srcdir}/uv-${pkgver}"
+  if type "cargo-${_min_cargo}"; then
+    "cargo-${_min_cargo}" build -j"${NCPU}" --release --locked
+  else
+    cargo build -j"${NCPU}" --release --locked
+  fi
+}
+
+check() {
+  cd "${srcdir}/uv-${pkgver}"
+  if type "cargo-${_min_cargo}"; then
+    "cargo-${_min_cargo}" check -j"${NCPU}" --release --locked
+  else
+    cargo check -j"${NCPU}" --release --locked
+  fi
+}
+
+package() {
+  cd "${srcdir}/uv-${pkgver}"
+  install -Dm755 "target/release/uv" "${pkgdir}/usr/local/bin/uv"
+  install -Dm755 "target/release/uvx" "${pkgdir}/usr/local/bin/uvx"
+  install -Dm644 'LICENSE-MIT' "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE-MIT"
+  install -Dm644 'LICENSE-APACHE' "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE-APACHE"
+}
