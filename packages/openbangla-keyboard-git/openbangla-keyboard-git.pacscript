@@ -47,8 +47,8 @@ build() {
   cmake .. \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_EXPERIMENTAL_LANGUAGE_BINDINGS=Rust \
-    -DCMAKE_Rust_COMPILER=/usr/bin/rustc
+    -DRUSTC_EXECUTABLE=/usr/bin/rustc \
+    -DCARGO_EXECUTABLE=/usr/bin/cargo
   make -j"${NCPU}"
 }
 
@@ -56,3 +56,4 @@ package() {
   cd "${srcdir}/OpenBangla-Keyboard/build"
   make install DESTDIR="${pkgdir}"
 }
+
