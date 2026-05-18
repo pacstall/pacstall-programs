@@ -56,4 +56,3 @@ package() {
   cd "${srcdir}/OpenBangla-Keyboard/build"
   make install DESTDIR="${pkgdir}"
 }
-
