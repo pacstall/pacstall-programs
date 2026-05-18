@@ -18,39 +18,39 @@ replaces=("${gives}")
 conflicts=("${gives}")
 
 depends=(
-    "ibus"
-    "libzstd1"
-    "libqt5gui5"
-    "libqt5widgets5"
-    "libqt5network5"
+  "ibus"
+  "libzstd1"
+  "libqt5gui5"
+  "libqt5widgets5"
+  "libqt5network5"
 )
 makedepends=(
-    "cmake"
-    "build-essential"
-    "rustc"
-    "cargo"
-    "libibus-1.0-dev"
-    "qtbase5-dev"
-    "qtbase5-dev-tools"
-    "libzstd-dev"
+  "cmake"
+  "build-essential"
+  "rustc"
+  "cargo"
+  "libibus-1.0-dev"
+  "qtbase5-dev"
+  "qtbase5-dev-tools"
+  "libzstd-dev"
 )
 
 prepare() {
-    cd "${srcdir}/OpenBangla-Keyboard"
-    git submodule update --init --recursive
-    pkgver="r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
+  cd "${srcdir}/OpenBangla-Keyboard"
+  git submodule update --init --recursive
+  pkgver="r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
 }
 
 build() {
-    cd "${srcdir}/OpenBangla-Keyboard"
-    mkdir -p build && cd build
-    cmake .. \
-        -DCMAKE_INSTALL_PREFIX=/usr \
-        -DCMAKE_BUILD_TYPE=Release
-    make -j"${NCPU}"
+  cd "${srcdir}/OpenBangla-Keyboard"
+  mkdir -p build && cd build
+  cmake .. \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release
+  make -j"${NCPU}"
 }
 
 package() {
-    cd "${srcdir}/OpenBangla-Keyboard/build"
-    make install DESTDIR="${pkgdir}"
+  cd "${srcdir}/OpenBangla-Keyboard/build"
+  make install DESTDIR="${pkgdir}"
 }
