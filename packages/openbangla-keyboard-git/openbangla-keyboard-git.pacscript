@@ -46,7 +46,10 @@ build() {
   mkdir -p build && cd build
   cmake .. \
     -DCMAKE_INSTALL_PREFIX=/usr \
-    -DCMAKE_BUILD_TYPE=Release
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_EXPERIMENTAL_LANGUAGE_BINDINGS=Rust \
+    -DCMAKE_Rust_COMPILER=rustc
+
   make -j"${NCPU}"
 }
 
