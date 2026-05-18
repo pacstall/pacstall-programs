@@ -2,11 +2,11 @@ pkgname="scx-scheds"
 pkgdesc="sched_ext schedulers and tools"
 repology=("project: scx-scheds")
 arch=('x86_64')
-pkgver="1.1.0"
+pkgver="1.1.1"
 url='https://github.com/sched-ext/scx'
 license=('GPL-2.0-only')
 _gitname='scx'
-_commit='c505008f6cf917b86950734eb869048e1a462fa0'
+_commit='0eedd05bc233129fd3c884d7045edeb2c2a474a7'
 source=("git+https://github.com/sched-ext/${_gitname}#commit=${_commit}")
 sha256sums=('SKIP')
 provides=("${pkgname}")
@@ -63,7 +63,7 @@ build() {
     --all-features \
     --workspace \
     --jobs "${NCPU}" \
-    --exclude scx_mitosis \
+    --exclude scx_flow \
     --exclude scx_rlfifo \
     --exclude scx_wd40 \
     --exclude scxcash \
