@@ -38,6 +38,7 @@ makedepends=(
 prepare() {
   cd "${srcdir}/OpenBangla-Keyboard"
   git submodule update --init --recursive
+  sed -i 's/^[[:space:]]*enable_language(Rust)/#enable_language(Rust)/' CMakeLists.txt
   pkgver="r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
 }
 
