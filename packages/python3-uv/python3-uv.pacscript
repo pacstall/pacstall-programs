@@ -21,7 +21,6 @@ build() {
   fi
 }
 
-
 package() {
   cd "${srcdir}/uv-${pkgver}"
   install -Dm755 "target/release/uv" "${pkgdir}/usr/local/bin/uv"
