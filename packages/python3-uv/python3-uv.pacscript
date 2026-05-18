@@ -1,6 +1,6 @@
 pkgname='python3-uv'
 pkgver='0.11.14'
-pkgdesc='Fast Python package and project manager, written in Rust.'
+pkgdesc='Fast Python package and project manager, written in Rust'
 license=('Apache-2.0' 'MIT')
 repology=('project: python:uv')
 url='https://github.com/astral-sh/uv'
@@ -21,14 +21,6 @@ build() {
   fi
 }
 
-check() {
-  cd "${srcdir}/uv-${pkgver}"
-  if type "cargo-${_min_cargo}"; then
-    "cargo-${_min_cargo}" check -j"${NCPU}" --release --locked
-  else
-    cargo check -j"${NCPU}" --release --locked
-  fi
-}
 
 package() {
   cd "${srcdir}/uv-${pkgver}"
