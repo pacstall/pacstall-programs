@@ -1,7 +1,7 @@
 pkgbase = unicorn-mobile-git
 	gives = unicorn-mobile
 	pkgver = 0.0.1
-	pkgrel = 10
+	pkgrel = 11
 	pkgdesc = Unicorn Desktop Mobile variant by the Rhino Linux Team
 	priority = required
 	arch = all
@@ -28,7 +28,6 @@ pkgbase = unicorn-mobile-git
 	depends = bluez-firmware | linux-firmware-raspi
 	depends = xserver-xorg-input-multitouch
 	depends = xserver-xorg-input-synaptics
-	depends = ukui-touchpadserver
 	depends = pipewire-audio | pulseaudio-module-bluetooth
 	depends = bluetooth
 	depends = alsa-ucm-conf

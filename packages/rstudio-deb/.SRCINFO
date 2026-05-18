@@ -1,11 +1,11 @@
 pkgbase = rstudio-deb
 	gives = rstudio
-	pkgver = 2026.01.1.403
+	pkgver = 2026.01.2.418
 	pkgdesc = RStudio is an integrated development environment (IDE) for R
 	arch = amd64
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: rstudio
-	source = https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.01.1-403-amd64.deb
-	sha256sums = d1d2a5bf628e3aab11a9d5bfceaa58da68d0a638eedb7b7dd381f5699b409cf9
+	source = https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.01.2-418-amd64.deb
+	sha256sums = b625f58b9c787b04f2f3de57130765566621d6d4a6ba840493c52a89c778296d
 
 pkgname = rstudio-deb

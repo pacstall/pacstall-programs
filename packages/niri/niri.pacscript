@@ -1,5 +1,5 @@
 pkgname="niri"
-pkgver="25.11"
+pkgver="26.04"
 arch=("amd64" "arm64")
 pkgdesc="Scrollable-tiling Wayland compositor"
 url='https://github.com/YaLTeR/niri'

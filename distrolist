@@ -3,6 +3,7 @@ ubuntu:
   noble/24.04
   questing/25.10
   resolute/26.04
+  stonking/26.10
   devel
 debian:
   bullseye/11

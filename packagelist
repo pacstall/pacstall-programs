@@ -201,6 +201,7 @@ gearlever-git
 geekbench4-bin
 geekbench5-bin
 geekbench6-bin
+geekbenchai-bin
 genymotion-bin
 gfn-electron-bin
 ghcup-bin
@@ -211,6 +212,7 @@ git-butler-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
+git-review
 gitblade-deb
 gitfiend-deb
 github-cli-bin
@@ -318,6 +320,8 @@ keepassxc
 keybase-deb
 keyd-deb
 kirc
+kiro-cli-bin
+kiro-ide-bin
 komorebi-fork-deb
 koodo-reader-deb
 krita-app
@@ -326,6 +330,7 @@ kvantum
 kvantum-theme-libadwaita-git
 kwin-krohnkite
 kxstudio-repos-deb
+lact
 lagrange
 latte-dock-git
 lazarus-project-deb
@@ -618,6 +623,7 @@ pomatez-deb
 popcorn-time-deb
 popsicle
 popsicle-app
+portfolio-performance-bin
 postman-bin
 powertop-git
 ppsspp-app
@@ -704,17 +710,20 @@ rpcs3-app
 rpi-imager-app
 rsbbi-git
 rstudio-deb
+rtl8821cu-dkms-git
 rust-bin
 rust-bindgen-git
 rust-motd-deb
 rustdesk-deb
 rustrover-bin
+sarasa-gothic
 sayonara
 sayonara-git
 sbt-deb
 scangearmp2-sane-git
 schildichat-deb
 scrcpy
+scx-scheds
 sed
 setconf
 shell-color-scripts
@@ -733,6 +742,7 @@ smartgit
 smplayer-deb
 snapper-rollback-git
 snd-hda-macbookpro
+sniffnet-deb
 soar
 softmaker-freeoffice-2024-deb
 softmaker-office-2024-deb
@@ -801,6 +811,7 @@ tuckr
 tutanota-app
 typescript
 typora-deb
+typst-bin
 u-boot-mobian-deb
 ubxi-kde-desktop-git
 ubxi-lomiri-desktop
@@ -896,6 +907,7 @@ yandex-browser-beta-deb
 yandex-browser-corporate-deb
 yandex-browser-stable-deb
 yandex-disk-deb
+yle-dl-git
 youtube-dl-git
 youtube-music-deb
 yt-dlp
