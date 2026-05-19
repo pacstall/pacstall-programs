@@ -8320,29 +8320,6 @@ pkgbase = lmms-git
 
 pkgname = lmms-git
 ---
-pkgbase = low-latency-layer-git
-	gives = low-latency-layer
-	pkgver = 0.1.0
-	pkgdesc = Vulkan layer for hardware agnostic input latency reduction
-	url = https://github.com/Korthos-Software/low_latency_layer
-	arch = x86_64
-	depends = libgcc-s1
-	makedepends = build-essential
-	makedepends = cmake
-	makedepends = vulkan-utility-libraries-dev
-	makedepends = vulkan-tools
-	makedepends = glslang-dev
-	makedepends = glslc
-	conflicts = low-latency-layer
-	provides = low-latency-layer
-	license = MIT
-	maintainer = pejuton <pejuton@proton.me>
-	repology = project: low-latency-layer
-	source = git+https://github.com/Korthos-Software/low_latency_layer.git
-	sha256sums = SKIP
-
-pkgname = low-latency-layer-git
----
 pkgbase = lrz-syncshare-deb
 	gives = lrz-sync-share
 	pkgver = 22.3.100
@@ -16980,6 +16957,29 @@ pkgbase = vscodium-deb
 	sha256sums_amd64 = 1f4e89b0a223da2c28cd19fd95da33fd7af6a466fe12934e812c28b6cd9495ee
 
 pkgname = vscodium-deb
+---
+pkgbase = vulkan-low-latency-layer-git
+	gives = vulkan-low-latency-layer
+	pkgver = 0.1.0
+	pkgdesc = Vulkan layer for hardware agnostic input latency reduction
+	url = https://github.com/Korthos-Software/low_latency_layer
+	arch = x86_64
+	depends = libgcc-s1
+	makedepends = build-essential
+	makedepends = cmake
+	makedepends = vulkan-utility-libraries-dev
+	makedepends = libvulkan-dev
+	makedepends = glslang-dev
+	makedepends = glslc
+	conflicts = vulkan-low-latency-layer
+	provides = vulkan-low-latency-layer
+	license = MIT
+	maintainer = pejuton <pejuton@proton.me>
+	repology = project: vulkan-low-latency-layer
+	source = git+https://github.com/Korthos-Software/low_latency_layer.git
+	sha256sums = SKIP
+
+pkgname = vulkan-low-latency-layer-git
 ---
 pkgbase = vyprvpn-deb
 	gives = vyprvpn

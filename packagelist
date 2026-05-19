@@ -403,7 +403,6 @@ linux-wifi-hotspot-deb
 lix-git
 lm-studio-app
 lmms-git
-low-latency-layer
 lrz-syncshare-deb
 lsd-deb
 lunacy-deb
@@ -854,6 +853,7 @@ vscode-languageservers:vscode-json-languageserver
 vscode-languageservers:vscode-html-languageserver
 vscodium-bin
 vscodium-deb
+vulkan-low-latency-layer
 vyprvpn-deb
 waf
 walc-app

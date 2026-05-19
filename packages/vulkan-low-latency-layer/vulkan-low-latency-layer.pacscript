@@ -1,5 +1,5 @@
-pkgname="low-latency-layer-git"
-gives="low-latency-layer"
+pkgname="vulkan-low-latency-layer-git"
+gives="vulkan-low-latency-layer"
 _gitname="low_latency_layer"
 pkgdesc="Vulkan layer for hardware agnostic input latency reduction"
 repology=("project: ${gives}")
@@ -18,7 +18,7 @@ makedepends=(
   "build-essential"
   "cmake"
   "vulkan-utility-libraries-dev"
-  "vulkan-tools"
+  "libvulkan-dev"
   "glslang-dev"
   "glslc"
 )
