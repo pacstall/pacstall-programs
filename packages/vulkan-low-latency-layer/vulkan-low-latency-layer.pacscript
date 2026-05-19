@@ -29,6 +29,7 @@ build() {
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_INSTALL_LIBDIR=lib \
+    -DCMAKE_CXX_FLAGS="${CXXFLAGS} -DNDEBUG" \
     -Wno-dev
 
   cmake --build build --parallel "${NCPU}"
