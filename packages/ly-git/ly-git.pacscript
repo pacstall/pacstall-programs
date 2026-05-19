@@ -24,13 +24,30 @@ prepare() {
 
 build() {
   cd "ly"
-
   zig build
 }
 
 package() {
   cd "ly"
-  zig build -Ddest_directory="${pkgdir}" installexe
+  case "$(ps -p 1 -o comm=)" in
+    "init")
+        init="sysvinit"
+        depends=("sysvinit")
+        ;;
+    "systemd")
+        init="systemd"
+        depends=("systemd")
+        ;;
+    "openrc"|"runit-init")
+        init="openrc"
+        depends=("openrc")
+        ;;
+    *)
+        # Fallback/Catch-all for unknown or custom init systems
+        fancy_message error "Unknown init system detected." >&2
+        ;;
+  esac
+  zig build -Ddest_directory="${pkgdir}" installexe -Dinit_system=$init
 }
 
 post_install() {
