@@ -1,7 +1,7 @@
 pkgname=("ly-git")
 repology=("project: ly")
 arch=('any')
-pkgver="1.0.2"
+pkgver="1.5.0"
 url='https://codeberg.org/fairyglade/ly'
 source=("https://codeberg.org/fairyglade/ly.git")
 sha256sums=('SKIP')
