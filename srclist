@@ -8648,7 +8648,7 @@ pkgbase = matugen-git
 	license = GPL-2.0
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: matugen
-	source = https://github.com/InioX/matugen
+	source = https://github.com/InioX/matugen.git
 
 pkgname = matugen-git
 ---
