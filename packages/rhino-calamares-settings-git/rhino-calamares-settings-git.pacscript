@@ -5,6 +5,7 @@ pkgver="0.0.1"
 makedepends=("make")
 pkgdesc="Modules and settings for the Rhino Linux calamares installer"
 maintainer=("Elsie19 <hwengerstickel@pm.me>")
+replaces=("rhino-calamares-settings-lomiri")
 source=("https://github.com/rhino-linux/calamares-settings.git")
 
 package() {

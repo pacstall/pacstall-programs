@@ -13210,10 +13210,24 @@ pkgbase = rhino-calamares-settings-git
 	arch = amd64
 	arch = arm64
 	makedepends = make
+	replaces = rhino-calamares-settings-lomiri
 	maintainer = Elsie19 <hwengerstickel@pm.me>
 	source = https://github.com/rhino-linux/calamares-settings.git
 
 pkgname = rhino-calamares-settings-git
+---
+pkgbase = rhino-calamares-settings-lomiri-git
+	gives = rhino-calamares-settings-lomiri
+	pkgver = 0.0.1
+	pkgdesc = Modules and settings for the Rhino Linux calamares installer on Lomiri
+	arch = amd64
+	arch = arm64
+	makedepends = make
+	replaces = rhino-calamares-settings
+	maintainer = Elsie19 <hwengerstickel@pm.me>
+	source = https://github.com/rhino-linux/calamares-settings.git
+
+pkgname = rhino-calamares-settings-lomiri-git
 ---
 pkgbase = rhino-core
 	pkgver = 2025.4
