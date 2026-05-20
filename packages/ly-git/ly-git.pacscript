@@ -30,17 +30,13 @@ build() {
 package() {
   cd "ly"
   case "$(ps -p 1 -o comm=)" in
-    "init") init="sysvinit";;
-    "systemd") init="systemd";;
-    "openrc") nit="openrc";;
-    "runit-init") init="runit";;
-    *)
-        # Fallback/Catch-all for unknown or custom init systems
-        fancy_message error "Unknown init system detected." >&2
-        ;;
+    "init") init="sysvinit" ;;
+    "openrc") init="openrc" ;;
+    "runit-init") init="runit" ;;
+    *) init="systemd" ;;
   esac
   depends=("${init}")
-  zig build -Ddest_directory="${pkgdir}" installexe -Dinit_system=$init
+  zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${init}"
 }
 
 post_install() {
