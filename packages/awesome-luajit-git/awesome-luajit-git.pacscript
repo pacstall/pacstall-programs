@@ -61,8 +61,12 @@ package() {
   cd "${gives}/build"
 
   make install DESTDIR="${pkgdir}"
-  mkdir -p "${pkgdir}/usr/share/xsessions"
+  mkdir -p "/usr/share/xsessions"
   cp ../"${gives}".desktop /usr/share/xsessions/"${gives}".desktop
+}
+
+post_remove() {
+  rm -f /usr/share/xsessions/"${gives}".desktop
 }
 
 # vim:set ft=sh ts=2 sw=2 et:
