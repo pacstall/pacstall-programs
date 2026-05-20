@@ -30,23 +30,16 @@ build() {
 package() {
   cd "ly"
   case "$(ps -p 1 -o comm=)" in
-    "init")
-        init="sysvinit"
-        depends=("sysvinit")
-        ;;
-    "systemd")
-        init="systemd"
-        depends=("systemd")
-        ;;
-    "openrc"|"runit-init")
-        init="openrc"
-        depends=("openrc")
-        ;;
+    "init") init="sysvinit";;
+    "systemd") init="systemd";;
+    "openrc") nit="openrc";;
+    "runit-init") init="runit";;
     *)
         # Fallback/Catch-all for unknown or custom init systems
         fancy_message error "Unknown init system detected." >&2
         ;;
   esac
+  depends=("${init}")
   zig build -Ddest_directory="${pkgdir}" installexe -Dinit_system=$init
 }
 
