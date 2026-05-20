@@ -63,7 +63,6 @@ package() {
   make install DESTDIR="${pkgdir}"
   mkdir -p "${pkgdir}/usr/share/xsessions"
   cp ../"${gives}".desktop "${pkgdir}"/usr/share/xsessions/
-  ln -sf "${pkgdir}"/usr/share/xsessions/"${gives}".desktop "/usr/share/xsessions"
 }
 
 post_remove() {
