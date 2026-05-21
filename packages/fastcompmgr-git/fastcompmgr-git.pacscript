@@ -1,4 +1,4 @@
-#This script is based on asyync1024 <asyync1024@proton.me> AUR 
+#This script is based on asyync1024 <asyync1024@proton.me> AUR
 
 pkgname="fastcompmgr-git"
 gives="fastcompmgr"
@@ -9,24 +9,24 @@ arch=('amd64')
 url="https://github.com/tycho-kirchner/fastcompmgr"
 license=('MIT')
 depends=(
-    "libc6" 
-    "libx11-6" 
-    "libxcomposite1" 
-    "libxdamage1" 
-    "libxfixes3" 
-    "libxrender1"
+  "libc6"
+  "libx11-6"
+  "libxcomposite1"
+  "libxdamage1"
+  "libxfixes3"
+  "libxrender1"
 )
 makedepends=(
-    "git" 
-    "make" 
-    "gcc" 
-    "pkg-config"
-    "libc6-dev"
-    "libx11-dev"
-    "libxcomposite-dev"
-    "libxdamage-dev"
-    "libxfixes-dev"
-    "libxrender-dev"
+  "git"
+  "make"
+  "gcc"
+  "pkg-config"
+  "libc6-dev"
+  "libx11-dev"
+  "libxcomposite-dev"
+  "libxdamage-dev"
+  "libxfixes-dev"
+  "libxrender-dev"
 )
 provides=("${gives}")
 conflicts=("${gives}")
