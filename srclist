@@ -7883,7 +7883,7 @@ pkgname = linux-headers-okpine-deb
 ---
 pkgbase = linux-headers-rockchip-deb
 	gives = linux-headers-6.18-rockchip
-	pkgver = 6.18.30
+	pkgver = 6.18.32
 	pkgdesc = Linux kernel header files built for PINE64 Rockchip devices (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7891,14 +7891,14 @@ pkgbase = linux-headers-rockchip-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-headers-6.18-rockchip_6.18.30-1_arm64.deb
-	sha256sums = 0a49e5621854baef7f537199418942f5066388327abc67749ebee9e48268adda
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-headers-6.18-rockchip_6.18.32-1_arm64.deb
+	sha256sums = 0f5552ee98c1d82b6115f330e61c607ddbbebf5e3500503f286ac0a6e8d49f0b
 
 pkgname = linux-headers-rockchip-deb
 ---
 pkgbase = linux-headers-sc7280-deb
 	gives = linux-headers-6.18-sc7280
-	pkgver = 6.18.31
+	pkgver = 6.18.32
 	pkgdesc = Linux kernel header files built for Fairphone 5 (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7906,8 +7906,8 @@ pkgbase = linux-headers-sc7280-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-sc7280/linux-headers-6.18-sc7280_6.18.31-1_arm64.deb
-	sha256sums = 674a66830fb88d7d3f03cbdedda44af3c34f6daed09a407b1abca6360c907bdf
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sc7280/linux-headers-6.18-sc7280_6.18.32-1_arm64.deb
+	sha256sums = d049e1e55a32ca996f859919a17622e8f8c9be3266d7f33daed00beeb790a930
 
 pkgname = linux-headers-sc7280-deb
 ---
@@ -7926,7 +7926,7 @@ pkgname = linux-headers-stable-deb
 ---
 pkgbase = linux-headers-sunxi-deb
 	gives = linux-headers-6.18-sunxi64
-	pkgver = 6.18.30
+	pkgver = 6.18.32
 	pkgdesc = Linux kernel header files built for PINE64 Sunxi devices (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7934,8 +7934,8 @@ pkgbase = linux-headers-sunxi-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-headers-6.18-sunxi64_6.18.30-1_arm64.deb
-	sha256sums = c9ce94fc9a012376b7af6a4500710fc93fdb1448db31f43e32ddeea99fac202c
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-headers-6.18-sunxi64_6.18.32-1_arm64.deb
+	sha256sums = e7641493002dcda7a25ab7fcafd210d4b0cbbae4b5b9f241553745c75212ad8c
 
 pkgname = linux-headers-sunxi-deb
 ---
@@ -7959,7 +7959,7 @@ pkgname = linux-image-okpine-deb
 ---
 pkgbase = linux-image-rockchip-deb
 	gives = linux-image-6.18-rockchip
-	pkgver = 6.18.30
+	pkgver = 6.18.32
 	pkgdesc = Linux kernel image files built for PINE64 Rockchip devices (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -7969,8 +7969,8 @@ pkgbase = linux-image-rockchip-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-image-6.18-rockchip_6.18.30-1_arm64.deb
-	sha256sums = 6649494ae51a2a754ae66032c73fe0d355929a32c06ccf11fecafde2d29e79f0
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-image-6.18-rockchip_6.18.32-1_arm64.deb
+	sha256sums = 41e3682f47dfefe1bba30af224965141c98362c1f07e0d743bf263faa17ea386
 	depends_debian = firmware-brcm80211
 	pacdeps_ubuntu = firmware-brcm80211-deb
 
@@ -7978,7 +7978,7 @@ pkgname = linux-image-rockchip-deb
 ---
 pkgbase = linux-image-sc7280-deb
 	gives = linux-image-6.18-sc7280
-	pkgver = 6.18.31
+	pkgver = 6.18.32
 	pkgdesc = Linux kernel image files built for Fairphone 5 (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -7988,14 +7988,14 @@ pkgbase = linux-image-sc7280-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-sc7280/linux-image-6.18-sc7280_6.18.31-1_arm64.deb
-	sha256sums = 3b8569a5f6641ce991b0c70c94e4d33bd9a9c505499c5c4d0a47548013e0a5bc
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sc7280/linux-image-6.18-sc7280_6.18.32-1_arm64.deb
+	sha256sums = 8e2488f8eb40483ab75e0a3a89760698ca1f7b75e095a150beda76267651bfde
 
 pkgname = linux-image-sc7280-deb
 ---
 pkgbase = linux-image-sunxi-deb
 	gives = linux-image-6.18-sunxi64
-	pkgver = 6.18.30
+	pkgver = 6.18.32
 	pkgdesc = Linux kernel image files built for PINE64 Sunxi devices (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -8005,8 +8005,8 @@ pkgbase = linux-image-sunxi-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-image-6.18-sunxi64_6.18.30-1_arm64.deb
-	sha256sums = bb95e1aa7d60e4e08cc68dd7c3592a2c1695d55640e761d0c8138722763c3c7c
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-image-6.18-sunxi64_6.18.32-1_arm64.deb
+	sha256sums = 97b8f28a5baaf3ad39fedb87eaf635f3f4d51b7e96586423fe2955f765d3cc5c
 	depends_debian = firmware-realtek
 	pacdeps_ubuntu = firmware-realtek-deb
 
