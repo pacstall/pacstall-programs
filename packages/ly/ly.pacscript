@@ -7,6 +7,7 @@ source=("${pkgname}::https://codeberg.org/fairyglade/ly/archive/v${pkgver}.tar.g
 sha256sums=("db069cc2dcacc64b2890552a10ec8547aee4f9b9e5b0bc6b07c3d5d431a757e6")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
+depends=()
 conflicts=("${pkgname}-git")
 replaces=("lightdm" "sddm")
 pkgdesc="TUI display manager"
@@ -34,7 +35,7 @@ package() {
     "runit-init") init="runit" ;;
     *) init="systemd" ;;
   esac
-  depends=("${init}")
+  depends+=("${init}")
   zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${init}"
 }
 
