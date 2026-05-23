@@ -5,7 +5,7 @@ pkgver="1.5.0"
 url='https://codeberg.org/fairyglade/ly'
 source=("https://codeberg.org/fairyglade/ly.git")
 sha256sums=('SKIP')
-depends=("systemd")
+depends=()
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
 gives="ly"
@@ -34,7 +34,7 @@ package() {
     "runit-init") init="runit" ;;
     *) init="systemd" ;;
   esac
-  depends=("${init}")
+  depends+=("${init}")
   zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${init}"
 }
 
