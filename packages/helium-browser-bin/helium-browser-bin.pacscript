@@ -48,52 +48,7 @@ package() {
     "${pkgdir}/usr/share/icons/hicolor/256x256/apps/helium-browser.png"
   install -Dm644 "${srcdir}/LICENSE.ungoogled_chromium" \
     "${pkgdir}/usr/share/doc/${pkgname}/LICENSE.ungoogled_chromium"
-  install -dm755 "${pkgdir}/usr/bin"
-  cat > "${pkgdir}/usr/bin/helium-browser" << 'EOF'
-#!/bin/bash
-set -euo pipefail
-
-XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-"$HOME/.config"}"
-
-SYS_CONF="/etc/helium-browser-flags.conf"
-USR_CONF="${XDG_CONFIG_HOME}/helium-browser-flags.conf"
-
-FLAGS=()
-
-append_flags_file() {
-  local file="$1"
-  [[ -r "$file" ]] || return 0
-  local line safe_line
-  while IFS= read -r line; do
-    [[ "$line" =~ ^[[:space:]]*(#|$) ]] && continue
-    case "$line" in
-      *'$('*|*'`'*)
-        echo "Warning: ignoring unsafe line in $file: $line" >&2
-        continue
-        ;;
-    esac
-    set -f
-    safe_line=${line//$/\\$}
-    safe_line=${safe_line//~/\\~}
-    eval "set -- $safe_line"
-    set +f
-    for token in "$@"; do
-      FLAGS+=("$token")
-    done
-  done < "$file"
-}
-
-append_flags_file "$SYS_CONF"
-append_flags_file "$USR_CONF"
-
-if [[ -n "${HELIUM_USER_FLAGS:-}" ]]; then
-  read -r -a ENV_FLAGS <<< "$HELIUM_USER_FLAGS"
-  FLAGS+=("${ENV_FLAGS[@]}")
-fi
-
-export CHROME_VERSION_EXTRA="stable"
-
-exec /usr/lib/helium-browser/chrome "${FLAGS[@]}" "$@"
-EOF
+  # Install the wrapper script
+  install -Dm755 "${srcdir}/helium-browser" "${pkgdir}/usr/bin/helium-browser"
   chmod 755 "${pkgdir}/usr/bin/helium-browser"
 }
