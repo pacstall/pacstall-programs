@@ -8514,7 +8514,6 @@ pkgbase = ly-git
 	url = https://codeberg.org/fairyglade/ly
 	priority = required
 	arch = any
-	depends = systemd
 	makedepends = build-essential
 	makedepends = libpam0g-dev
 	makedepends = libxcb-xkb-dev
