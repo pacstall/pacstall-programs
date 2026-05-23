@@ -675,6 +675,7 @@ resticprofile-bin
 rhino-adwaita-theme-git
 rhino-branding-git
 rhino-calamares-settings-git
+rhino-calamares-settings-lomiri-git
 rhino-core
 rhino-docker-builder-git
 rhino-grub-theme-git
