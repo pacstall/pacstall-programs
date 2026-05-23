@@ -1,5 +1,5 @@
 pkgbase = stellarium
-	pkgver = 25.1
+	pkgver = 25.4
 	pkgdesc = Stellarium is a free open source planetarium for your computer. It shows a realistic sky in 3D, just like what you see with the naked eye, binoculars or a telescope.
 	arch = any
 	makedepends = cmake
@@ -39,7 +39,7 @@ pkgbase = stellarium
 	makedepends = libqt6webengine6-data
 	makedepends = qml6-module-qtcharts
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = @stellarium~25.1::https://github.com/Stellarium/stellarium/releases/download/v25.1/stellarium-25.1.tar.xz
-	sha256sums = 610384311455ce75f9b02f0d3d50e5cc127c36e67008817ea8cbab0bdadeaf5a
+	source = @stellarium~25.4::https://github.com/Stellarium/stellarium/releases/download/v25.4/stellarium-25.4.tar.xz
+	sha256sums = e376e0dc28eae0f7c4b3686fed9c2129c69a87a371b33e24bd79559a5142d613
 
 pkgname = stellarium

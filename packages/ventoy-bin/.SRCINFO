@@ -1,6 +1,6 @@
 pkgbase = ventoy-bin
 	gives = ventoy
-	pkgver = 1.1.04
+	pkgver = 1.1.10
 	pkgdesc = A new bootable USB solution
 	url = https://www.ventoy.net
 	arch = amd64
@@ -16,7 +16,7 @@ pkgbase = ventoy-bin
 	license = GPL-3.0-or-later
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: ventoy
-	source = @ventoy-bin~1.1.04::https://github.com/ventoy/Ventoy/releases/download/v1.1.04/ventoy-1.1.04-linux.tar.gz
+	source = @ventoy-bin~1.1.10::https://github.com/ventoy/Ventoy/releases/download/v1.1.10/ventoy-1.1.10-linux.tar.gz
 	source = https://aur.archlinux.org/cgit/aur.git/plain/sanitize.patch?h=ventoy-bin
 	source = https://aur.archlinux.org/cgit/aur.git/plain/ventoy?h=ventoy-bin
 	source = https://aur.archlinux.org/cgit/aur.git/plain/ventoy-extend-persistent?h=ventoy-bin
@@ -25,7 +25,7 @@ pkgbase = ventoy-bin
 	source = https://aur.archlinux.org/cgit/aur.git/plain/ventoyplugson?h=ventoy-bin
 	source = https://aur.archlinux.org/cgit/aur.git/plain/ventoy.desktop?h=ventoy-bin
 	source = https://aur.archlinux.org/cgit/aur.git/plain/ventoyweb?h=ventoy-bin
-	sha256sums = c77603e8b5cd51d75eb7dd54ea9bd2961c83c7fca8539541b86127f2e790673f
+	sha256sums = 1113abe6e1bb712834fe574a966621a912858004f4fefd701666ec97c5beb208
 	sha256sums = SKIP
 	sha256sums = SKIP
 	sha256sums = SKIP

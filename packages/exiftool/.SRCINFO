@@ -1,5 +1,5 @@
 pkgbase = exiftool
-	pkgver = 13.43
+	pkgver = 13.51
 	pkgdesc = Platform-independent Perl library for reading and writing EXIF data
 	url = https://exiftool.org
 	arch = any
@@ -7,7 +7,7 @@ pkgbase = exiftool
 	license = GPL-2.0-or-later
 	maintainer = Ishaque <muhammadishaque812@gmail.com>
 	repology = project: exiftool
-	source = https://exiftool.org/Image-ExifTool-13.43.tar.gz
-	sha256sums = 1beef514c895705b3e3eafea3602db6b4830697f37b997b6ae9795cdfa2608d1
+	source = https://exiftool.org/Image-ExifTool-13.51.tar.gz
+	sha256sums = 73b7f1035b20b00bfb6b15aff32799ec88523e48d5ed46c8952b7c54a3aae70f
 
 pkgname = exiftool

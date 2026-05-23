@@ -1,10 +1,10 @@
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgname="nuclei-bin"
 gives="nuclei"
-pkgver="3.4.5"
+pkgver="3.7.0"
 pkgdesc="Fast and customisable vulnerability scanner based on simple YAML based DSL"
 source=("@${pkgname}~${pkgver}::https://github.com/projectdiscovery/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_linux_amd64.zip")
-sha256sums=("d8ad9aa75df5aa0b1a74618a670a685e0946badca9f04780bf17fbda2ec5e451")
+sha256sums=("aadbae75a5bd2cec08d9e1ae340a4f15dc95c159e9369ed805b36f97e6ee2062")
 arch=('amd64')
 breaks=("${gives}" "${gives}-deb" "${gives}-git")
 repology=("project: ${gives}")

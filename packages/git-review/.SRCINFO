@@ -1,0 +1,19 @@
+pkgbase = git-review
+	pkgver = 2.5.0
+	pkgdesc = Tool to submit code to Gerrit
+	url = https://opendev.org/opendev/git-review
+	arch = any
+	depends = git
+	depends = python3-requests
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-pbr
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	license = Apache-2.0
+	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
+	repology = project: git-review
+	source = https://opendev.org/opendev/git-review.git#tag=2.5.0
+	sha256sums = 80dd10ea2f43036ac61a4618335e413d99dd6ea1af7bb424011c277218fc7e7b
+
+pkgname = git-review

@@ -5,6 +5,7 @@ pkgbase = rhino-calamares-settings-git
 	arch = amd64
 	arch = arm64
 	makedepends = make
+	replaces = rhino-calamares-settings-lomiri
 	maintainer = Elsie19 <hwengerstickel@pm.me>
 	source = https://github.com/rhino-linux/calamares-settings.git
 

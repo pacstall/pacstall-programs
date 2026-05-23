@@ -1,7 +1,7 @@
 pkgname="grub-btrfs"
 arch=("any")
-pkgver="4.13"
-pkgdesc='Include btrfs snapshots in GRUB boot options'
+pkgver="4.14"
+pkgdesc='Include btrfs snapshots at boot options'
 url='https://github.com/Antynea/grub-btrfs'
 license=('GPL-3.0-only')
 depends=('btrfs-progs' 'grub2-common')
@@ -9,9 +9,9 @@ optdepends=(
   'snapper: For snapper support'
   'inotify-tools: For grub-btrfsd daemon'
 )
-source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/${pkgver}.tar.gz")
-b2sums=('e2f11a0a8282e3ec8ff8223e3bad70b5d5c5e81b4d740a1bf3554db412dbe48a8a0f216f4e6c65ae1d11c01a27b8b92bae9b470c60d2389505ce089511536e1a')
-maintainer=("Eric Renfro <psi-jack@linux-help.org")
+source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz")
+b2sums=('361fabb41e603f84af096925db7498e24ff68436b9f32cc6d1fe81dd4db58826d02052181d577b6484290016c11009d0b138c4187fcedb76848ef7a52b55222f')
+maintainer=("Eric Renfro <psi-jack@linux-help.org>" "Tianyu Lu <tianyu@lu.fm>")
 
 package() {
   cd "${pkgname}-${pkgver}"

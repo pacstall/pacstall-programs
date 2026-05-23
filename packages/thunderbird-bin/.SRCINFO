@@ -1,12 +1,12 @@
 pkgbase = thunderbird-bin
 	gives = thunderbird
-	pkgver = 141.0
+	pkgver = 147.0.2
 	pkgdesc = Thunderbird is a free email application that's easy to set up and customize and it's loaded with great features!
 	url = https://www.thunderbird.net/en-US/
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: thunderbird
-	source = https://archive.mozilla.org/pub/thunderbird/releases/141.0/linux-x86_64/en-US/thunderbird-141.0.tar.xz
-	sha256sums = 137a75c034b8bda7cbe546555f384e19eba82e51ed531577d5e5d178718568f4
+	source = https://archive.mozilla.org/pub/thunderbird/releases/147.0.2/linux-x86_64/en-US/thunderbird-147.0.2.tar.xz
+	sha256sums = d57a0f5e537f164eff58eb420dced496720722580bde2cb9822f64cec88f9198
 
 pkgname = thunderbird-bin

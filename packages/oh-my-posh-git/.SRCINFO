@@ -9,7 +9,7 @@ pkgbase = oh-my-posh-git
 	breaks = oh-my-posh
 	replaces = oh-my-posh
 	incompatible = *:bookworm
-	maintainer = Zahrun <Zahrun@github.com>
+	maintainer = Zahrun <zahrunAtmurenaDotio>
 	source = https://github.com/JanDeDobbeleer/oh-my-posh.git
 
 pkgname = oh-my-posh-git

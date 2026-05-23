@@ -1,11 +1,11 @@
 pkgname="pulsar-deb"
 gives="pulsar"
-pkgver="1.128.0"
+pkgver="1.131.1"
 source_amd64=("https://github.com/pulsar-edit/pulsar/releases/download/v${pkgver}/Linux.pulsar_${pkgver}_amd64.deb")
 source_arm64=("https://github.com/pulsar-edit/pulsar/releases/download/v${pkgver}/ARM.Linux.pulsar_${pkgver}_arm64.deb")
-sha256sums_amd64=("4418107cef872ee06ffb777406869238263e1a7f0b21e77b08dd705b22c9315f")
-sha256sums_arm64=("82bc8e7fec2c170384ce42c9c1ba6012b6d72380ccad4cc5f03e57db8e91c911")
+sha256sums_amd64=("a997e4a7d5a30fcba18e1bbf9a1b902ebae03f9995474ab08b33c5c7bb92d593")
+sha256sums_arm64=("9900048746c57def7af94ba5433c99a5bdfcd74581a8f57c3ea1551744f3412a")
 pkgdesc="A Community-led Hyper-Hackable Text Editor"
 arch=('amd64' 'arm64')
-maintainer=("Zahrun <Zahrun@github.com>" "AJStrong <ajstrongdev@proton.me>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>" "AJStrong <ajstrongdev@proton.me>")
 repology=("project: pulsar-edit")

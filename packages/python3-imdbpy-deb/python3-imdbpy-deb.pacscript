@@ -5,5 +5,5 @@ pkgver="6.8"
 source=("http://ftp.debian.org/debian/pool/main/i/imdbpy/python3-imdbpy_${pkgver}-3_all.deb")
 sha256sums=("78c7fd315f07fcb004bb41849d297babe0c31bc7f9d0e16470d4e8d97e62fdb0")
 pkgdesc="A package to retrieve and manage the data of the IMDb movie database about both movies and people"
-maintainer=("Zahrun <Zahrun@github.com>")
+maintainer=("Zahrun <zahrunAtmurenaDotio>")
 repology=("project: imdbpy" "repo: debian_bullseye")

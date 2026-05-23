@@ -1,10 +1,10 @@
 pkgname="mailspring-deb"
 gives="mailspring"
-pkgver="1.15.1"
+pkgver="1.17.4"
 replaces=("${gives}")
 source=("https://github.com/Foundry376/Mailspring/releases/download/${pkgver}/mailspring-${pkgver}-amd64.deb")
 pkgdesc="Mailspring is a new version of Nylas Mail maintained by one of the original authors. It's faster, leaner, and shipping today!"
-sha256sums=("fa09506b3dfa98a32d9cd7b21c7e1bad99b361ef521c2b5c70ee82209a531f69")
+sha256sums=("3c7c5ee38cb35fd673f9f42edf4917f5ea4b11e1b7c2aa952f7a79f991cc9a8b")
 arch=('amd64')
 repology=("project: mailspring")
 maintainer=("Lanius <laniusone@pm.me>")

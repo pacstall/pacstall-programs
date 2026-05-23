@@ -1,11 +1,11 @@
 pkgbase = caprine-deb
 	gives = caprine
-	pkgver = 2.60.3
+	pkgver = 2.61.0
 	pkgdesc = Elegant Facebook Messenger desktop app
 	arch = amd64
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: caprine
-	source = https://github.com/sindresorhus/caprine/releases/download/v2.60.3/caprine_2.60.3_amd64.deb
-	sha256sums = 9e307a7aa1667eeca7a8d38b49e34e5b11dfb49b5e60d3adc81472bd176922a3
+	source = https://github.com/sindresorhus/caprine/releases/download/v2.61.0/caprine_2.61.0_amd64.deb
+	sha256sums = 647e2e3480a8bf4209f88de4298278c8e91161f78111919c58f3b9823e643423
 
 pkgname = caprine-deb
