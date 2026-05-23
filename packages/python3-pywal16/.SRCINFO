@@ -28,6 +28,6 @@ pkgbase = python3-pywal16
 	license = MIT
 	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/eylles/pywal16/archive/refs/tags/3.8.15.tar.gz
-	sha256sums = ae16f56786ded270a7eef0e74a211db7b14d32605a7bca66a03252a46b151911
+	sha256sums = cd3e4588c453b844dd222d861b52b7a7c88a3396b3e104300ef1db27b9492b1d
 
 pkgname = python3-pywal16
