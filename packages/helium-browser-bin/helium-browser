@@ -42,4 +42,3 @@ fi
 export CHROME_VERSION_EXTRA="stable"
 
 exec /usr/lib/helium-browser/chrome "${FLAGS[@]}" "$@"
-EOF
