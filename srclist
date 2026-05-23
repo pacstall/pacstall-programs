@@ -5170,7 +5170,6 @@ pkgname = headset-deb
 pkgbase = helium-browser-bin
 	gives = helium-browser
 	pkgver = 0.7.7.1
-	pkgrel = 1
 	pkgdesc = Private, fast, and honest web browser based on Chromium
 	url = https://github.com/imputnet/helium-linux
 	arch = amd64
