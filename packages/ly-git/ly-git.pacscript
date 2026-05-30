@@ -5,7 +5,6 @@ pkgver="1.5.0"
 url='https://codeberg.org/fairyglade/ly'
 source=("https://codeberg.org/fairyglade/ly.git")
 sha256sums=('SKIP')
-depends=()
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
 gives="ly"
