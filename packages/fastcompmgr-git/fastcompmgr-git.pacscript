@@ -33,11 +33,6 @@ conflicts=("${gives}")
 source=("https://github.com/tycho-kirchner/${gives}.git")
 maintainer=("aKqir24 <aKqir24@github.com")
 
-pkgver() {
-  cd "${gives}"
-  git describe --long --tags | sed -r 's/([^-]*-g)/r\1/;s/-/./g;s/v//g'
-}
-
 build() {
   cd "${gives}"
   make -j"${NCPU}"
