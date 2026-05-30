@@ -1,7 +1,6 @@
 pkgbase = nuitka-git
 	pkgver = 2.4.6.r61.g58d849260
-	pkgrel = 1
-	pkgdesc = A Python compiler
+	pkgdesc = Python compiler
 	url = https://nuitka.net/
 	arch = any
 	depends = libxml2 | libxml2-16
