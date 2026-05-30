@@ -2767,17 +2767,21 @@ pkgname = dunst
 ---
 pkgbase = dust-bin
 	gives = dust
-	pkgver = 1.2.3
+	pkgver = 1.2.4
 	pkgdesc = A more intuitive version of du in rust
 	arch = amd64
+	arch = arm64
 	breaks = dust
 	breaks = dust-git
 	breaks = dust-deb
 	breaks = dust-app
 	maintainer = wizard-28 <wiz28@pm.me>
+	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: du-dust
-	source = @dust-bin~1.2.3::https://github.com/bootandy/dust/releases/download/v1.2.3/dust-v1.2.3-x86_64-unknown-linux-musl.tar.gz
-	sha256sums = 2767e53a07a6f887c95d80dc7b976fbb0f85c24fa19e83704639ff5d67ebfbf4
+	source_amd64 = @dust-bin~1.2.4::https://github.com/bootandy/dust/releases/download/v1.2.4/dust-v1.2.4-x86_64-unknown-linux-musl.tar.gz
+	sha256sums_amd64 = 4e313f9f854017e58a2ada4c0d1774677b8cf53d63ab55a991d5871d5f504452
+	source_arm64 = @dust-bin~1.2.4::https://github.com/bootandy/dust/releases/download/v1.2.4/dust-v1.2.4-aarch64-unknown-linux-musl.tar.gz
+	sha256sums_arm64 = e09b0d24b5da0fa06aecf1561849c13ae41ef055c1ce7077e35e9a46744b16af
 
 pkgname = dust-bin
 ---
