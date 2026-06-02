@@ -1,18 +1,18 @@
 pkgbase = gitui-git
 	gives = gitui
-	pkgver = 0.26.3
+	pkgver = 0.28.1
 	pkgdesc = Blazing fast terminal-ui for git written in Rust
 	url = https://github.com/extrawurst/gitui
 	arch = any
+	depends = git
 	depends = gcc
 	depends = libgit2-dev
 	depends = libxcb1
 	depends = zlib1g-dev
 	makedepends = git
-	makedepends = cargo
 	makedepends = python3
 	makedepends = cmake
-	incompatible = debian:bookworm
+	pacdeps = rust-bin
 	maintainer = pythoncrazy <pinakpaliwal07@gmail.com>
 	source = https://github.com/extrawurst/gitui.git
 
