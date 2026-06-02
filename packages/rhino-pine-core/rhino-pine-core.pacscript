@@ -11,8 +11,8 @@ compatible=("ubuntu:devel" "ubuntu:resolute" "ubuntu:stonking")
 replaces=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
-pkgver="2025.4"
-pkgrel="4"
+pkgver="2026.1"
+pkgrel="1"
 style="(mobile)"
 branch="devel"
 

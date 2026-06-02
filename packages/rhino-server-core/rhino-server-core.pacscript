@@ -7,8 +7,8 @@ compatible=("ubuntu:devel" "ubuntu:resolute" "ubuntu:stonking")
 replaces=("rhino-core" "rhino-pine-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
-pkgver="2025.4"
-pkgrel="3"
+pkgver="2026.1"
+pkgrel="1"
 style="(server)"
 branch="devel"
 

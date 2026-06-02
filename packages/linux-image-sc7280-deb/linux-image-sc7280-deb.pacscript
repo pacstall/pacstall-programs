@@ -1,10 +1,10 @@
 pkgname="linux-image-sc7280-deb"
-pkgver="6.18.26"
+pkgver="6.18.32"
 basever="6.18"
 buildver="1"
 gives="linux-image-${basever}-sc7280"
 source=("https://repo.mobian.org/pool/main/l/linux-${basever}-sc7280/${gives}_${pkgver}-${buildver}_arm64.deb")
-sha256sums=("8ca1d1ee772267016141514226952cd3f7e3b648e19b7a6f6d1e5c5c4eadf734")
+sha256sums=("8e2488f8eb40483ab75e0a3a89760698ca1f7b75e095a150beda76267651bfde")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Linux kernel image files built for Fairphone 5 (Mobian)"
 arch=('arm64')
