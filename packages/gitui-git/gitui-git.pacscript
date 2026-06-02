@@ -6,10 +6,9 @@ source=("https://github.com/extrawurst/gitui.git")
 maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
 arch=("any")
 pkgver="0.28.1"
-depends=('gcc' 'libgit2-dev' 'libxcb1' 'zlib1g-dev')
+depends=('git' 'gcc' 'libgit2-dev' 'libxcb1' 'zlib1g-dev')
 makedepends=('git' 'python3' 'cmake')
 pacdeps=("rust-bin")
-incompatible=('debian:bookworm')
 external_connection="true"
 
 prepare() {
