@@ -1408,16 +1408,16 @@ pkgbase = canon-pixma-mg3000-complete-deb
 	arch = amd64
 	arch = i386
 	depends = libc6>=2.7
-	depends = libgcc1
+	depends = libgcc-s1 | libgcc1
 	depends = libcups2
 	depends = libstdc++6
 	depends = binutils
 	depends = cups
 	depends = libxml2>=2.7.4 | libxml2-16
 	depends = libcupsimage2
-	depends = libusb-0.1-4 | libusb-1.0-0
+	depends = libusb-1.0-0
 	depends = libpopt0
-	depends = libtiff6
+	depends = libtiff6 | libtiff5
 	optdepends = scangearmp2-deb: Scanner driver for Canon
 	replaces = cnijfilter2
 	maintainer = aKqir24 <aKqir24@github.com>
