@@ -29,6 +29,7 @@ aseprite
 audiorelay-bin
 audiorelay-deb
 awesome-git
+awesome-luajit-git
 aws-cli-v2-bin
 awww-git
 balena-etcher-deb
@@ -675,6 +676,7 @@ resticprofile-bin
 rhino-adwaita-theme-git
 rhino-branding-git
 rhino-calamares-settings-git
+rhino-calamares-settings-lomiri-git
 rhino-core
 rhino-docker-builder-git
 rhino-grub-theme-git
@@ -711,6 +713,7 @@ rpcs3-app
 rpi-imager-app
 rsbbi-git
 rstudio-deb
+rtl8821cu-dkms-git
 rust-bin
 rust-bindgen-git
 rust-motd-deb
@@ -723,6 +726,8 @@ sbt-deb
 scangearmp2-sane-git
 schildichat-deb
 scrcpy
+scx-loader
+scx-scheds
 sed
 setconf
 shell-color-scripts

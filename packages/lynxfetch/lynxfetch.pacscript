@@ -1,11 +1,11 @@
 pkgname="lynxfetch"
 arch=("amd64")
-pkgver="1.1.3"
+pkgver="1.1.4"
 source=("https://gitlab.com/${pkgname}/${pkgname}/-/archive/${pkgver}/${pkgname}-${pkgver}.tar.gz")
 makedepends=("libdbus-1-dev" "pkg-config")
 pacdeps=("rust-bin")
 pkgdesc="Super fast, versatile, and customizable command-line fetcher"
-sha512sums=("1bc09348d8f4f74f914299d08ee9a42a549d06ef03813bd9ab9d7fe572fa367cd8754fbe43a03d3886230032b239b14623bf5eedb21785f563e4c0d495f8bc8c")
+sha512sums=("cdbf28238faa58248ba09dc67530b169af6f2d0edb01e7db3fe9470d8feb380c4345f98a9ccacfa1fa773d0e936cdb6a2730bb31c37de0b1dccb00c482d90923")
 maintainer=("CELESTIFYX Team <celestifyx@gmail.com>")
 external_connection=true
 

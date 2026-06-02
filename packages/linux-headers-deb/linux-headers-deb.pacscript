@@ -1,10 +1,10 @@
 pkgname="linux-headers-deb"
-gives="linux-headers-7.1.0-070100rc2"
-pkgver="7.1~rc2"
-buildver="7.1.0-070100rc2.202605032137"
+gives="linux-headers-7.1.0-070100rc4"
+pkgver="7.1~rc4"
+buildver="7.1.0-070100rc4.202605191531"
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/amd64/${gives}_${buildver}_all.deb")
 pkgdesc="Ubuntu Linux mainline kernel (Headers)"
-sha256sums=("9e7144750e405254fa28b5f43b4734d52757104c26708bff51425a541821a55e")
+sha256sums=("84a412223f7d080d3188144c11d7186b366a621959b36b1096447272834be6e7")
 arch=('all')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline-headers")
