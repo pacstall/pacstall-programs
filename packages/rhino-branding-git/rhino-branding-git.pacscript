@@ -7,6 +7,10 @@ pkgrel="3"
 pkgdesc="Rhino branding"
 maintainer=("Elsie19 <elsie19@pm.me>")
 
+pre_install() {
+  sudo dpkg-divert --quiet --package "${gives}" --divert "/etc/skel/.bashrc-divert" --rename "/etc/skel/.bashrc"
+}
+
 package() {
   for i in svg png; do
     install -Dm644 branding/"logo.${i}" -t "${pkgdir}/usr/share/branding/rhino/"
@@ -15,4 +19,8 @@ package() {
   mkdir -p "${emb}"
   ln -sf "/usr/share/branding/rhino/logo.svg" "${emb}/emblem-rhino.svg"
   cp bashrc /etc/.bashrc
+}
+
+post_remove() {
+  sudo dpkg-divert --quiet --package "${gives}" --remove --rename "/etc/skel/.bashrc"
 }
