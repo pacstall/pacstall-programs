@@ -47,8 +47,8 @@ suggests=(
 maintainer=("Don Alfons <donnisnoni@outlook.com>")
 source=(
   "@${pkgname}~${pkgver}::https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/${pkgname}-${pkgver}.tar.gz"
-  "lxterm::https://raw.githubusercontent.com/itsdonnix/pacstall-programs/master/packages/xterm/lxterm"
-  "lxterm.1::https://raw.githubusercontent.com/itsdonnix/pacstall-programs/master/packages/xterm/lxterm.1"
+  "lxterm::https://raw.githubusercontent.com/itsdonnix/pacstall-programs/xterm/packages/xterm/lxterm"
+  "lxterm.1::https://raw.githubusercontent.com/itsdonnix/pacstall-programs/xterm/packages/xterm/lxterm.1"
 )
 sha256sum=(
   "3da2b5e64cb49b03aa13057d85e62e1f2e64f7c744719c00d338d11cd3e6ca1a"
