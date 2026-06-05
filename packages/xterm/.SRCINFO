@@ -37,5 +37,7 @@ pkgbase = xterm
 	license = X11
 	maintainer = Don Alfons <donnisnoni@outlook.com>
 	source = @xterm~401a::https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/xterm-401a.tar.gz
+	source = lxterm::https://raw.githubusercontent.com/itsdonnix/pacstall-programs/master/packages/xterm/lxterm
+	source = lxterm.1::https://raw.githubusercontent.com/itsdonnix/pacstall-programs/master/packages/xterm/lxterm.1
 
 pkgname = xterm

@@ -45,8 +45,16 @@ suggests=(
   'xfonts-cyrillic'
 )
 maintainer=("Don Alfons <donnisnoni@outlook.com>")
-source=("@${pkgname}~${pkgver}::https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/${pkgname}-${pkgver}.tar.gz")
-sha256sum=("3da2b5e64cb49b03aa13057d85e62e1f2e64f7c744719c00d338d11cd3e6ca1a")
+source=(
+  "@${pkgname}~${pkgver}::https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/${pkgname}-${pkgver}.tar.gz"
+  "lxterm::https://raw.githubusercontent.com/itsdonnix/pacstall-programs/master/packages/xterm/lxterm"
+  "lxterm.1::https://raw.githubusercontent.com/itsdonnix/pacstall-programs/master/packages/xterm/lxterm.1"
+)
+sha256sum=(
+  "3da2b5e64cb49b03aa13057d85e62e1f2e64f7c744719c00d338d11cd3e6ca1a"
+  "92f030891c2306718e242ee784b9c12bb5dfcd01baf34c1992162011caec892f"
+  "2b8de0753450ab2fdd9bc5a10f5fa9feaac4abae3b86ac773aef3652a6e56cda"
+)
 bins=('xterm' 'uxterm' 'koi8rxterm' 'lxterm')
 CFLAGS=(
   '-g'
@@ -74,94 +82,6 @@ CPPFLAGS=(
   '-DDEF_ALLOW_FONT=False'
   '-DDEF_ALLOW_TCAP=False'
   '-DDEF_DISALLOWED_WINDOW=\"1,2,3,4,5,6,7,8,9,11,13,14,18,19,20,21,GetSelection,SetSelection,SetWinLines,SetXprop\"'
-)
-
-lxterm_script=$(
-  cat << 'EOF'
-#!/bin/sh
-
-PROGNAME=${0##*/}
-
-die () {
-    echo "${PROGNAME}: fatal error: $*" >&2
-    exit 1
-}
-
-if ! command -v locale >/dev/null 2>&1; then
-    die "required program \"locale\" not available"
-fi
-
-case "$(locale charmap 2>/dev/null)" in
-    KOI8-R)
-        XTERM=koi8rxterm
-        ;;
-    UTF-8)
-        XTERM=uxterm
-        ;;
-    *)
-        XTERM=xterm
-        ;;
-esac
-
-exec "${XTERM}" "$@"
-EOF
-)
-lxterm_man=$(
-  cat << EOF
-.TH lxterm 1 "2004-12-19" "Debian Project"
-.SH NAME
-lxterm \- locale\-sensitive wrapper for xterm
-.SH SYNOPSIS
-.B lxterm
-[
-.I xterm-options
-]
-.SH DESCRIPTION
-.B lxterm
-is a wrapper around the
-.BR xterm (1)
-program that invokes
-.BR xterm ,
-.BR koi8rxterm (1),
-or
-.BR uxterm (1)
-as appropriate, based on the user's locale setting.
-All arguments to
-.B lxterm
-are passed to
-.B xterm
-without processing; the
-.BR \-class ,
-.BR \-k8 ,
-and
-.B \-u8
-options should not be specified because they are used by
-.B koi8rxterm
-and
-.BR uxterm .
-See the
-.B xterm
-manual page for more information on
-.IR xterm-options .
-.PP
-The
-.BR locale (1)
-utility is used to determine the character set used by the current locale.
-If the character set is UTF-8,
-.B uxterm
-is invoked; if the character set is KOI8-R,
-.B koi8rxtem
-is invoked; otherwise, \(oqplain\(cq
-.B xterm
-is invoked.
-.SH AUTHOR
-Branden Robinson
-.SH "SEE ALSO"
-.BR locale (1),
-.BR koi8rxterm (1),
-.BR uxterm (1),
-.BR xterm (1)
-EOF
 )
 
 prepare() {
@@ -207,11 +127,8 @@ package() {
   cd "${pkgname}~${pkgver}"
   make DESTDIR="${pkgdir}" install install-ti
 
-  printf '%s\n' "${lxterm_script}" > lxterm
-  install -m 755 lxterm "${pkgdir}/usr/bin"
-
-  printf '%s\n' "${lxterm_man}" > lxterm.1
-  install -m 644 lxterm.1 "${pkgdir}/usr/share/man/man1"
+  install -m 755 "${srcdir}/lxterm" "${pkgdir}/usr/bin/lxterm"
+  install -m 644 "${srcdir}/lxterm.1" "${pkgdir}/usr/share/man/man1/lxterm.1"
 
   find "${pkgdir}/usr/share/man/man1/" -type f -print0 | xargs -0 gzip -f
 
