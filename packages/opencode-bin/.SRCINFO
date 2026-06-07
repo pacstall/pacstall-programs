@@ -1,7 +1,7 @@
 pkgbase = opencode-bin
 	gives = opencode
 	pkgver = 1.16.0
-	pkgdesc = AI coding agent built for the terminal.
+	pkgdesc = AI coding agent built for the terminal
 	url = https://github.com/anomalyco/opencode
 	arch = amd64
 	arch = arm64
