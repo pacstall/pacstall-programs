@@ -857,6 +857,7 @@ vscode-languageservers:vscode-json-languageserver
 vscode-languageservers:vscode-html-languageserver
 vscodium-bin
 vscodium-deb
+vulkan-low-latency-layer
 vyprvpn-deb
 waf
 walc-app
