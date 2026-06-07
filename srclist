@@ -14378,13 +14378,13 @@ pkgbase = scrcpy
 pkgname = scrcpy
 ---
 pkgbase = scx-loader
-	pkgver = 1.1.0
+	pkgver = 1.1.1
 	pkgdesc = System daemon and DBus-based loader for sched-ext schedulers
 	url = https://github.com/sched-ext/scx-loader
 	arch = x86_64
 	depends = libgcc-s1
 	depends = polkitd
-	makedepends = cargo>=1.88 | rustup
+	makedepends = cargo>=1.95 | rustup
 	makedepends = build-essential
 	makedepends = clang
 	makedepends = llvm
@@ -14396,7 +14396,7 @@ pkgbase = scx-loader
 	license = GPL-2.0-only
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: scx-loader
-	source = git+https://github.com/sched-ext/scx-loader#commit=1e475504316b4a588d1f3634b2e40a5859067744
+	source = git+https://github.com/sched-ext/scx-loader#commit=0f45f59efdf2bb3a2ccdeec8ddd06a3efe99234a
 	sha256sums = SKIP
 
 pkgname = scx-loader
