@@ -658,6 +658,7 @@ python3-nuitka
 python3-pypresence
 python3-pywal16
 python3-sphinx-hawkmoth
+python3-uv
 python3-vkbasalt-cli
 python3-zombie-imp
 qogir-gtk-theme-bin
