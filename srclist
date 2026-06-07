@@ -11258,6 +11258,33 @@ pkgbase = onnxruntime-gpu-bin
 
 pkgname = onnxruntime-gpu-bin
 ---
+pkgbase = openbangla-keyboard-git
+	gives = openbangla-keyboard
+	pkgver = 0.0.0
+	pkgdesc = An OpenSource, Unicode compliant Bengali Input Method
+	url = https://github.com/OpenBangla/OpenBangla-Keyboard
+	arch = amd64
+	depends = ibus
+	depends = libzstd1
+	depends = libqt5gui5
+	depends = libqt5widgets5
+	depends = libqt5network5
+	makedepends = cmake
+	makedepends = build-essential
+	makedepends = rustc
+	makedepends = cargo
+	makedepends = libibus-1.0-dev
+	makedepends = qtbase5-dev
+	makedepends = qtbase5-dev-tools
+	makedepends = libzstd-dev
+	conflicts = openbangla-keyboard
+	replaces = openbangla-keyboard
+	maintainer = Niamot <58494481+niam0t@users.noreply.github.com>
+	repology = project: openbangla-keyboard
+	source = git+https://github.com/OpenBangla/OpenBangla-Keyboard.git
+
+pkgname = openbangla-keyboard-git
+---
 pkgbase = opendoas-git
 	gives = opendoas
 	pkgver = 6.8.2
