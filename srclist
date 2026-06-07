@@ -7878,8 +7878,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-7.0.9-070009-generic
-	pkgver = 7.0.9
+	gives = linux-headers-7.0.11-070011-generic
+	pkgver = 7.0.11
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7887,10 +7887,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.9/arm64/linux-headers-7.0.9-070009-generic_7.0.9-070009.202605191504_arm64.deb
-	sha256sums_arm64 = f495b9c8ec2da0019540b2ef4b1adfe27883284038930643012337df0064e9c0
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.9/amd64/linux-headers-7.0.9-070009-generic_7.0.9-070009.202605191504_amd64.deb
-	sha256sums_amd64 = 77e02a084ecdce8c861a75b5b788b7485242181f1ee3a427119c2327a4e000a0
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/arm64/linux-headers-7.0.11-070011-generic_7.0.11-070011.202606011647_arm64.deb
+	sha256sums_arm64 = 339986e32bfcc63ca9fead8154ce2bf668b8500003ca0dca4c49d6d81bd18231
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/amd64/linux-headers-7.0.11-070011-generic_7.0.11-070011.202606011647_amd64.deb
+	sha256sums_amd64 = 4a6475f86503ecd9ac4239ce7bde7b228eeae8930553b55d07bdeb172be1277a
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -7955,15 +7955,15 @@ pkgbase = linux-headers-sc7280-deb
 pkgname = linux-headers-sc7280-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-7.0.9-070009
-	pkgver = 7.0.9
+	gives = linux-headers-7.0.11-070011
+	pkgver = 7.0.11
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.9/amd64/linux-headers-7.0.9-070009_7.0.9-070009.202605191504_all.deb
-	sha256sums = 59e9af6ee5f6218f6f5000b4ce30e11ee47c6895060755653db1223040f77900
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/amd64/linux-headers-7.0.11-070011_7.0.11-070011.202606011647_all.deb
+	sha256sums = 4c68c94e3a48001581a0038cfb5bee187be30655db01c3f2f73c859e9fa6aac8
 
 pkgname = linux-headers-stable-deb
 ---
@@ -8095,8 +8095,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-7.0.9-070009-generic
-	pkgver = 7.0.9
+	gives = linux-image-unsigned-7.0.11-070011-generic
+	pkgver = 7.0.11
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -8105,10 +8105,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.9/arm64/linux-image-unsigned-7.0.9-070009-generic_7.0.9-070009.202605191504_arm64.deb
-	sha256sums_arm64 = c686afb09f0e2bf0a1f48c66128bba9f1c19f9f5606c68ed7eac9fc16b8708f5
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.9/amd64/linux-image-unsigned-7.0.9-070009-generic_7.0.9-070009.202605191504_amd64.deb
-	sha256sums_amd64 = d837bf4feb861267a741bda82378a3cd43513531d9691bab5eaed3230619fb68
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/arm64/linux-image-unsigned-7.0.11-070011-generic_7.0.11-070011.202606011647_arm64.deb
+	sha256sums_arm64 = 173021bc1cf3c15121678eb6c518f86d5e99c02cee51a10699afaf25710e231a
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/amd64/linux-image-unsigned-7.0.11-070011-generic_7.0.11-070011.202606011647_amd64.deb
+	sha256sums_amd64 = afc8fba25f5fab074cff25ca1e1b590bcb4abe6daf9027114aebebbcd836574d
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -8130,7 +8130,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 7.0.9
+	pkgver = 7.0.11
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -8208,16 +8208,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-7.0.9-070009-generic
-	pkgver = 7.0.9
+	gives = linux-modules-7.0.11-070011-generic
+	pkgver = 7.0.11
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.9/arm64/linux-modules-7.0.9-070009-generic_7.0.9-070009.202605191504_arm64.deb
-	sha256sums_arm64 = b84f9f0aa46bcc31efc52a47d29493243d6b2755ad247a6742563e7eecbd312b
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.9/amd64/linux-modules-7.0.9-070009-generic_7.0.9-070009.202605191504_amd64.deb
-	sha256sums_amd64 = 6750c8f4476e7584bb1a7ed515c9ee57493fafa10fc53557bf901001b93090c6
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/arm64/linux-modules-7.0.11-070011-generic_7.0.11-070011.202606011647_arm64.deb
+	sha256sums_arm64 = cbda4c074761b0c1546bebc69c325e27ec668d9ed6a1755f9821958b8f3d22de
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/amd64/linux-modules-7.0.11-070011-generic_7.0.11-070011.202606011647_amd64.deb
+	sha256sums_amd64 = 8e3cbac62058a450cdc97517d47ba4a454650356d9b32521c6ed13dcee64ac82
 
 pkgname = linux-modules-stable-deb
 ---
