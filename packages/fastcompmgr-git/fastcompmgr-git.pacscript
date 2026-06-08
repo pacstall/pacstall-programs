@@ -6,7 +6,7 @@ pkgver="0.5.r20.ga449edb"
 pkgrel="2"
 pkgdesc="An early Compton-based compositor for X11 focused on performance. (git)"
 arch=('amd64')
-url="https://github.com/tycho-kirchner/fastcompmgr"
+url='https://github.com/tycho-kirchner/fastcompmgr'
 license=('MIT')
 depends=(
   "libc6"
