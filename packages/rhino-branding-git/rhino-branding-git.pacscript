@@ -18,8 +18,7 @@ package() {
   emb="${pkgdir}/usr/share/icons/desktop-base/scalable/emblems/"
   mkdir -p "${emb}"
   ln -sf "/usr/share/branding/rhino/logo.svg" "${emb}/emblem-rhino.svg"
-  mkdir -p "${pkgdir}/etc/skel/.bashrc"
-  cp bashrc "${pkgdir}/etc/skel/.bashrc"
+  install -Dm644 branding/bashrc "${pkgdir}/etc/skel/.bashrc"
 }
 
 post_install() {
