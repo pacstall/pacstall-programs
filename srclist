@@ -18250,6 +18250,7 @@ pkgbase = xwayland-satellite
 	url = https://github.com/Supreeeme/xwayland-satellite
 	arch = amd64
 	arch = arm64
+	depends = xwayland
 	makedepends = clang
 	makedepends = xwayland
 	makedepends = libwayland-dev
