@@ -18,7 +18,14 @@ package() {
   emb="${pkgdir}/usr/share/icons/desktop-base/scalable/emblems/"
   mkdir -p "${emb}"
   ln -sf "/usr/share/branding/rhino/logo.svg" "${emb}/emblem-rhino.svg"
-  cp bashrc /etc/skel/.bashrc
+  install -Dm644 bashrc /etc/skel/.bashrc
+}
+
+post_install() {
+  if ! [[ -f "${homedir}/.bashrc" ]]; then
+    cp /etc/skel/.bashrc "${homedir}/.bashrc"
+    sudo chown -cR "${PACSTALL_USER}" "${homedir}/.bashrc"
+  fi
 }
 
 post_remove() {
