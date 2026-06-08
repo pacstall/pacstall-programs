@@ -29,5 +29,5 @@ post_install() {
 }
 
 post_remove() {
-  sudo dpkg-divert --quiet --package "${gives}" --remove --rename "/root/.bashrc"
+  sudo dpkg-divert --quiet --package "${gives}" --remove --rename "/etc/skel/.bashrc"
 }
