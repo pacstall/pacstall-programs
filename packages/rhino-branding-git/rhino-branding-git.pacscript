@@ -8,7 +8,7 @@ pkgdesc="Rhino branding"
 maintainer=("Elsie19 <elsie19@pm.me>")
 
 pre_install() {
-  sudo dpkg-divert --quiet --package "${gives}" --divert "/etc/skel/.bashrc-divert" --rename "/etc/skel/.bashrc"
+  sudo dpkg-divert --quiet --package "${gives}" --divert "/root/.bashrc-divert" --rename "/etc/skel/.bashrc"
 }
 
 package() {
@@ -29,5 +29,5 @@ post_install() {
 }
 
 post_remove() {
-  sudo dpkg-divert --quiet --package "${gives}" --remove --rename "/etc/skel/.bashrc"
+  sudo dpkg-divert --quiet --package "${gives}" --remove --rename "/root/.bashrc"
 }
