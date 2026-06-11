@@ -24,6 +24,7 @@ jobs:
         shell: bash
         USER: dio
         LOGNAME: dio
+        SUDO_USER: dio
         DEBIAN_FRONTEND: noninteractive
 
     steps:
@@ -117,7 +118,6 @@ jobs:
         if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
-          SUDO_USER: dio
           PACSTALL_VERSION: ${{ matrix.PACSTALL_VERSION }}
         run: |
           curl -fsSL 'https://pacstall.dev/q/install?dnt' \
@@ -140,7 +140,6 @@ jobs:
         shell: sudo -E -u dio bash {0}
         env:
           PRNUM: ${{ github.event.pull_request.number }}
-          SUDO_USER: dio
           GITHUB_ACTIONS: true
           METADIR: /var/lib/pacstall/metadata
         run: |
@@ -163,7 +162,6 @@ jobs:
         if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
-          SUDO_USER: dio
           GITHUB_ACTIONS: true
         run: |
           mapfile -t list < <(pacstall -L)
@@ -176,7 +174,6 @@ jobs:
         if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
-          SUDO_USER: dio
           GITHUB_ACTIONS: true
           METADIR: /var/lib/pacstall/metadata
         run: |
