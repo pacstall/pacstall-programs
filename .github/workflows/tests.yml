@@ -1,7 +1,5 @@
 name: tests
 
-x-dio-shell: &dio-shell sudo -E -u dio bash {0}
-
 on:
   pull_request: {}
   workflow_dispatch:
@@ -129,7 +127,7 @@ jobs:
           chmod -R 777 /tmp
 
       - name: Install Pacstall
-        shell: *dio-shell
+        shell: sudo -E -u dio bash {0}
         env:
           SUDO_USER: dio
           PACSTALL_VERSION: ${{ matrix.PACSTALL_VERSION }}
@@ -151,7 +149,7 @@ jobs:
 
       - name: Installing Packages
         if: steps.changes.outputs.pacscripts == 'true'
-        shell: *dio-shell
+        shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
           PRNUM: ${{ github.event.pull_request.number }}
@@ -174,7 +172,7 @@ jobs:
           done
       - name: Output Package Trees
         if: steps.changes.outputs.pacscripts == 'true'
-        shell: *dio-shell
+        shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
           SUDO_USER: dio
@@ -188,7 +186,7 @@ jobs:
           done
       - name: Uninstalling Packages
         if: steps.changes.outputs.pacscripts == 'true'
-        shell: *dio-shell
+        shell: sudo -E -u dio bash {0}
         env:
           DEBIAN_FRONTEND: noninteractive
           SUDO_USER: dio
