@@ -117,8 +117,6 @@ jobs:
       - name: Install Pacstall
         if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
-        env:
-          PACSTALL_VERSION: ${{ matrix.PACSTALL_VERSION }}
         run: |
           curl -fsSL 'https://pacstall.dev/q/install?dnt' \
             -o pacstall-install.sh
@@ -133,6 +131,12 @@ jobs:
             's/ignore_stack=false/ignore_stack=true/' \
             /usr/bin/pacstall
 
+      - name: Set Pacstall Version
+        if: steps.changes.outputs.pacscripts == 'true'
+        env:
+          PACSTALL_VERSION: ${{ matrix.PACSTALL_VERSION }}
+        shell: sudo -E -u dio bash {0}
+        run: |
           pacstall -U pacstall "${PACSTALL_VERSION}"
 
       - name: Installing Packages
