@@ -40,6 +40,7 @@ jobs:
       - id: changes
         uses: dorny/paths-filter@v4
         with:
+          list-files: shell
           filters: |
             pacscripts:
               - 'packages/*/*.pacscript'
@@ -156,7 +157,7 @@ jobs:
           GITHUB_ACTIONS: true
           METADIR: /var/lib/pacstall/metadata
         run: |
-          for changed_file in ${{ steps.changes.outputs.pacscripts }}; do
+          for changed_file in ${{ steps.changes.outputs.pacscripts_files }}; do
             if [[ ${changed_file} == *".pacscript" ]]; then
               pacscript_file=`basename "${changed_file}"`
               package_name="${pacscript_file/.pacscript/}"
