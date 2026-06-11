@@ -1,10 +1,10 @@
 pkgname="1password-cli-bin"
 gives="1password-cli"
 repology=("project: ${gives}")
-pkgver="2.32.1"
+pkgver="2.34.0"
 source=("@${pkgname}~${pkgver}::https://cache.agilebits.com/dist/1P/op2/pkg/v${pkgver}/op_linux_amd64_v${pkgver}.zip")
 pkgdesc="1Password CLI"
-sha256sums=("64a49db2d1b0333f3bee88546e3e84995e530e25f2c783fb5d4081d01a05b2a1")
+sha256sums=("198b05dcf9a0972778ce5a4e262c459979b0c837257b5da65e2fba6187734226")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
