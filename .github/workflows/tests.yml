@@ -1,13 +1,6 @@
 name: tests
 
-on:
-  pull_request: {}
-  workflow_dispatch:
-    inputs:
-      debug_enabled:
-        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
-        required: false
-        default: false
+on: pull_request
 
 defaults:
   run:
@@ -44,10 +37,6 @@ jobs:
           filters: |
             pacscripts:
               - 'packages/*/*.pacscript'
-
-      - name: Setup tmate session
-        if: steps.changes.outputs.pacscripts == 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled
-        uses: mxschmitt/action-tmate@v3
 
       - name: Install system utilities
         if: steps.changes.outputs.pacscripts == 'true'
@@ -158,17 +147,19 @@ jobs:
           METADIR: /var/lib/pacstall/metadata
         run: |
           for changed_file in ${{ steps.changes.outputs.pacscripts_files }}; do
-            if [[ ${changed_file} == *".pacscript" ]]; then
-              pacscript_file=`basename "${changed_file}"`
-              package_name="${pacscript_file/.pacscript/}"
-              if [[ -f "${METADIR}/${package_name}" ]]; then
-                echo "Package ${package_name} has already been installed."
-              else
-                echo "Running pacstall -Qa for ${package_name}..."
-                echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
-                pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY} || exit 1
-              fi
+            [[ ${changed_file} == *".pacscript" ]] || continue
+
+            package_name="$(basename "${changed_file%.pacscript}")"
+
+            if [[ -f "${METADIR}/${package_name}" ]]; then
+              echo "Package ${package_name} has already been installed" >&2
+              continue
             fi
+
+            echo "Running 'pacstall -Qa' for ${package_name}..."
+            echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
+
+            pacstall -Qa "${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}" || exit 1
           done
       - name: Output Package Trees
         if: steps.changes.outputs.pacscripts == 'true'
