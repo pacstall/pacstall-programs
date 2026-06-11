@@ -140,7 +140,6 @@ jobs:
         if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
-          DEBIAN_FRONTEND: noninteractive
           PRNUM: ${{ github.event.pull_request.number }}
           SUDO_USER: dio
           GITHUB_ACTIONS: true
@@ -165,7 +164,6 @@ jobs:
         if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
-          DEBIAN_FRONTEND: noninteractive
           SUDO_USER: dio
           GITHUB_ACTIONS: true
         run: |
@@ -179,7 +177,6 @@ jobs:
         if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
-          DEBIAN_FRONTEND: noninteractive
           SUDO_USER: dio
           GITHUB_ACTIONS: true
           METADIR: /var/lib/pacstall/metadata
