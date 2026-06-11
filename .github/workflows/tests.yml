@@ -137,7 +137,7 @@ jobs:
 
           chmod +x pacstall-install.sh
 
-          printf 'N\n' | ./pacstall-install.sh
+          printf 'N\n' | sudo ./pacstall-install.sh
 
           rm pacstall-install.sh
 
