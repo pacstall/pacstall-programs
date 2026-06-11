@@ -44,15 +44,12 @@ jobs:
             pacscripts:
               - 'packages/*/*.pacscript'
 
-      - name: Stop early
-        if: steps.changes.outputs.pacscripts != 'true'
-        run: exit 0
-
       - name: Setup tmate session
-        if: github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled
+        if: steps.changes.outputs.pacscripts == 'true' && github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled
         uses: mxschmitt/action-tmate@v3
 
       - name: Install system utilities
+        if: steps.changes.outputs.pacscripts == 'true'
         run: |
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
@@ -110,6 +107,7 @@ jobs:
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
 
       - name: Create test user
+        if: steps.changes.outputs.pacscripts == 'true'
         run: |
           useradd \
             --create-home \
@@ -127,6 +125,7 @@ jobs:
           chmod -R 777 /tmp
 
       - name: Install Pacstall
+        if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
           SUDO_USER: dio
