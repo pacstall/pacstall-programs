@@ -17,6 +17,7 @@ defaults:
 
 jobs:
   run-tests:
+    name: "${{ matrix.OS }} / ${{ matrix.PACSTALL_VERSION }}"
     strategy:
       fail-fast: false
       matrix:
