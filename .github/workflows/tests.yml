@@ -108,7 +108,7 @@ jobs:
             --uid 1001 \
             dio
 
-          sed -i \
+          sudo sed -i \
             's/^%sudo.*/%sudo ALL=(ALL) NOPASSWD:ALL/' \
             /etc/sudoers
 
