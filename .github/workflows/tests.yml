@@ -99,9 +99,19 @@ jobs:
       - name: Create test user
         if: steps.changes.outputs.pacscripts == 'true'
         run: |
-          useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
-          sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
-          chown -R $USER /tmp
+          useradd \
+            --create-home \
+            --home-dir /home/dio \
+            --shell /bin/bash \
+            --gid root \
+            --groups sudo \
+            --uid 1001 \
+            dio
+
+          sed -i \
+            's/^%sudo.*/%sudo ALL=(ALL) NOPASSWD:ALL/' \
+            /etc/sudoers
+
           chmod -R 777 /tmp
 
       - name: Install Pacstall
