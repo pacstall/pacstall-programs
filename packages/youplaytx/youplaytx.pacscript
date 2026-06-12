@@ -1,73 +1,60 @@
 pkgname="youplaytx"
 pkgver="0.4.4"
-pkgrel=1
+pkgrel="1"
 pkgdesc="A full-screen, dual-pane YouTube audio player for the terminal"
+arch=("any")
 url="https://codeberg.org/ProfP303/youplaytx"
 license=("GPL-3.0-or-later")
-arch=("any")
 maintainer=("ProfP303 <prof.p@gmx.net>")
 
-depends=(
-  "python3"
-  "mpv"
-  "python3-mpv"
-  "yt-dlp"
-  "python3-pyperclip"
-  "python3-platformdirs"
-  "python3-tomli-w"
-  "python3-pip"
-  "python3-mdit-py-plugins"
-  "python3-linkify-it"
-)
+# Apt only provides system-level deps; Python deps (textual, python-mpv,
+# yt-dlp, pyperclip, platformdirs, tomli-w) come from PyPI into a venv,
+# because Ubuntu's python3-textual is far too old for this app.
+depends=("python3" "python3-venv" "mpv")
 
-makedepends=(
-  "python3-build"
-  "python3-installer"
-  "python3-wheel"
-  "python3-setuptools"
-  "python3-setuptools-scm"
-)
+# REQUIRED: pacstall builds inside a bubblewrap sandbox without network
+# access unless this is set. pip needs it to reach PyPI.
+external_connection=true
 
-# Debian trixie versions of the following are too old for textual 8.x:
-#   python3-textual  2.1.2   (needs >=3.0.0, compact= missing)
-#   python3-rich     13.7.1  (needs >=14.2.0)
-#   python3-pygments 2.17.2  (needs >=2.19.2)
-#   python3-markdown-it-py — not packaged separately
-# All four are downloaded here (before bwrap) and installed offline.
-_textual_ver="8.2.7"
-_rich_ver="15.0.0"
-_pygments_ver="2.20.0"
-_mditpy_ver="4.2.0"
-
-source=(
-  "https://codeberg.org/ProfP303/youplaytx/archive/v${pkgver}.tar.gz"
-  "textual-${_textual_ver}-py3-none-any.whl::https://files.pythonhosted.org/packages/a8/f5/c1e18bc0707300a0e90204343abbf7d7acd6fb7ebe03a6d4893b99a234b8/textual-${_textual_ver}-py3-none-any.whl"
-  "rich-${_rich_ver}-py3-none-any.whl::https://files.pythonhosted.org/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-${_rich_ver}-py3-none-any.whl"
-  "pygments-${_pygments_ver}-py3-none-any.whl::https://files.pythonhosted.org/packages/f4/7e/a72dd26f3b0f4f2bf1dd8923c85f7ceb43172af56d63c7383eb62b332364/pygments-${_pygments_ver}-py3-none-any.whl"
-  "markdown_it_py-${_mditpy_ver}-py3-none-any.whl::https://files.pythonhosted.org/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-${_mditpy_ver}-py3-none-any.whl"
-)
-hash=("SKIP" "SKIP" "SKIP" "SKIP" "SKIP")
-
-build() {
-  cd "${srcdir}/${pkgname}"
-  python3 -m build --wheel --no-isolation
-}
+source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz")
+sha256sums=("21b66bd0c4c59620a4a9a7aa8ae6bd89dc7461657eb12e2d7ae415d7a6574b40")
 
 package() {
+  # Do not rely on auto-cd: enter the extracted source explicitly.
+  # Forgejo/Codeberg tag tarballs extract to "<reponame>/" (no version).
   cd "${srcdir}/${pkgname}"
-  python3 -m installer --destdir="${pkgdir}" dist/*.whl
 
-  # Debian Python uses dist-packages, not site-packages.
-  # pip --prefix installs to site-packages (wrong), so we use --target directly.
-  local _pyver
-  _pyver="python$(python3 -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
-  local _destlib="${pkgdir}/usr/local/lib/${_pyver}/dist-packages"
-  mkdir -p "${_destlib}"
+  local appdir="/opt/${pkgname}"
+  local stagedir="${pkgdir}${appdir}"
 
-  pip3 install --no-index --no-deps --ignore-installed \
-    --target="${_destlib}" \
-    "${srcdir}/markdown_it_py-${_mditpy_ver}-py3-none-any.whl" \
-    "${srcdir}/pygments-${_pygments_ver}-py3-none-any.whl" \
-    "${srcdir}/rich-${_rich_ver}-py3-none-any.whl" \
-    "${srcdir}/textual-${_textual_ver}-py3-none-any.whl"
+  # 1) Self-contained venv inside the staged package.
+  python3 -m venv "${stagedir}"
+
+  # 2) Install the app + its PyPI deps. Calling pip as `python -m pip`
+  #    (instead of the `pip` script) avoids the kernel's shebang length
+  #    limit, which the long ${pkgdir} staging path can exceed.
+  #    --no-compile: bytecode is generated in step 4 with clean paths.
+  "${stagedir}/bin/python" -m pip install --no-cache-dir --no-compile .
+
+  # 3) Strip the staging prefix from every *text* file that embeds it:
+  #    console-script shebangs, activate scripts, pyvenv.cfg (its
+  #    "command =" line records ${pkgdir} on Python 3.11+), and pip's
+  #    RECORD/direct_url.json metadata. --binary-files=without-match
+  #    guarantees sed never touches a binary file.
+  grep -rlZ --binary-files=without-match "${pkgdir}" "${stagedir}" \
+    | xargs -0r sed -i "s|${pkgdir}||g"
+
+  # 4) Pre-compile bytecode with the staging prefix stripped (-s), so
+  #    .pyc files and tracebacks reference /opt/... — and Python never
+  #    needs to write into the root-owned /opt at runtime.
+  "${stagedir}/bin/python" -m compileall -q -s "${pkgdir}" "${stagedir}/lib"
+
+  # 5) Launcher on PATH. The symlink target must be the FINAL path,
+  #    never ${pkgdir} — pkgdir is a temporary staging root that is
+  #    deleted after the .deb is built.
+  mkdir -p "${pkgdir}/usr/bin"
+  ln -sf "${appdir}/bin/${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
+
+  # 6) License.
+  install -Dm644 LICENSE -t "${pkgdir}/usr/share/doc/${pkgname}"
 }
