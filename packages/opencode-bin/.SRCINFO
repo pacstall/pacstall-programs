@@ -1,6 +1,6 @@
 pkgbase = opencode-bin
 	gives = opencode
-	pkgver = 1.16.0
+	pkgver = 1.17.3
 	pkgdesc = AI coding agent built for the terminal
 	url = https://github.com/anomalyco/opencode
 	arch = amd64
@@ -8,9 +8,9 @@ pkgbase = opencode-bin
 	depends = ripgrep
 	license = MIT
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://github.com/anomalyco/opencode/releases/download/v1.16.0/opencode-linux-x64.tar.gz
-	sha256sums_amd64 = a741c43e737b2033f5e7ee151b162341e441034d6a64b172272a3f3a3729e87d
-	source_arm64 = https://github.com/anomalyco/opencode/releases/download/v1.16.0/opencode-linux-arm64.tar.gz
-	sha256sums_arm64 = 06ef602b9bc8a624fdc8e927673e7daa4cb70f1e57c5584023ca93631c4a476e
+	source_amd64 = https://github.com/anomalyco/opencode/releases/download/v1.17.3/opencode-linux-x64.tar.gz
+	sha256sums_amd64 = d4bd238a2c1ff56aca1cd3397d21a0a317f5992234517a7f8e2afbbd72010a7d
+	source_arm64 = https://github.com/anomalyco/opencode/releases/download/v1.17.3/opencode-linux-arm64.tar.gz
+	sha256sums_arm64 = 861b8c66ced51d6d9a66ea773ce47ede663a44bd17d837b9c21acfa3468801e5
 
 pkgname = opencode-bin
