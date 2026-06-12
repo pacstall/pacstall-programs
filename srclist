@@ -18258,6 +18258,37 @@ pkgbase = yle-dl-git
 
 pkgname = yle-dl-git
 ---
+pkgbase = youplaytx
+	pkgver = 0.4.4
+	pkgrel = 1
+	pkgdesc = A full-screen, dual-pane YouTube audio player for the terminal
+	url = https://codeberg.org/ProfP303/youplaytx
+	arch = any
+	depends = python3
+	depends = mpv
+	depends = python3-mpv
+	depends = yt-dlp
+	depends = python3-pyperclip
+	depends = python3-platformdirs
+	depends = python3-tomli-w
+	depends = python3-pip
+	depends = python3-mdit-py-plugins
+	depends = python3-linkify-it
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-wheel
+	makedepends = python3-setuptools
+	makedepends = python3-setuptools-scm
+	license = GPL-3.0-or-later
+	maintainer = ProfP303 <prof.p@gmx.net>
+	source = https://codeberg.org/ProfP303/youplaytx/archive/v0.4.4.tar.gz
+	source = textual-8.2.7-py3-none-any.whl::https://files.pythonhosted.org/packages/a8/f5/c1e18bc0707300a0e90204343abbf7d7acd6fb7ebe03a6d4893b99a234b8/textual-8.2.7-py3-none-any.whl
+	source = rich-15.0.0-py3-none-any.whl::https://files.pythonhosted.org/packages/82/3b/64d4899d73f91ba49a8c18a8ff3f0ea8f1c1d75481760df8c68ef5235bf5/rich-15.0.0-py3-none-any.whl
+	source = pygments-2.20.0-py3-none-any.whl::https://files.pythonhosted.org/packages/f4/7e/a72dd26f3b0f4f2bf1dd8923c85f7ceb43172af56d63c7383eb62b332364/pygments-2.20.0-py3-none-any.whl
+	source = markdown_it_py-4.2.0-py3-none-any.whl::https://files.pythonhosted.org/packages/b3/81/4da04ced5a082363ecfa159c010d200ecbd959ae410c10c0264a38cac0f5/markdown_it_py-4.2.0-py3-none-any.whl
+
+pkgname = youplaytx
+---
 pkgbase = youtube-dl-git
 	gives = youtube-dl
 	pkgver = 2021.12.17
