@@ -5,7 +5,6 @@ pkgver="1.3.2"
 url='https://codeberg.org/fairyglade/ly'
 source=("${pkgname}::https://codeberg.org/fairyglade/ly/archive/v${pkgver}.tar.gz")
 sha256sums=("db069cc2dcacc64b2890552a10ec8547aee4f9b9e5b0bc6b07c3d5d431a757e6")
-depends=("systemd")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
 conflicts=("${pkgname}-git")
@@ -29,7 +28,14 @@ build() {
 
 package() {
   cd "ly"
-  zig build -Ddest_directory="${pkgdir}" installexe
+  case "$(ps -p 1 -o comm=)" in
+    "init") init="sysvinit" ;;
+    "openrc") init="openrc" ;;
+    "runit-init") init="runit" ;;
+    *) init="systemd" ;;
+  esac
+  depends+=("${init}")
+  zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${init}"
 }
 
 post_install() {
