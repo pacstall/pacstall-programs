@@ -8601,12 +8601,11 @@ pkgname = lxterminal
 ---
 pkgbase = ly-git
 	gives = ly
-	pkgver = 1.0.2
+	pkgver = 1.5.0
 	pkgdesc = TUI display manager
 	url = https://codeberg.org/fairyglade/ly
 	priority = required
 	arch = any
-	depends = systemd
 	makedepends = build-essential
 	makedepends = libpam0g-dev
 	makedepends = libxcb-xkb-dev

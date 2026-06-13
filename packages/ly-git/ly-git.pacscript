@@ -1,11 +1,10 @@
 pkgname=("ly-git")
 repology=("project: ly")
 arch=('any')
-pkgver="1.0.2"
+pkgver="1.5.0"
 url='https://codeberg.org/fairyglade/ly'
 source=("https://codeberg.org/fairyglade/ly.git")
 sha256sums=('SKIP')
-depends=("systemd")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
 gives="ly"
@@ -23,17 +22,22 @@ prepare() {
 }
 
 build() {
-  cd "ly"
-
-  zig build
+  cd "ly" && zig build
 }
 
 package() {
   cd "ly"
-  zig build -Ddest_directory="${pkgdir}" installexe
+  case "$(ps -p 1 -o comm=)" in
+    "init") init="sysvinit" ;;
+    "openrc") init="openrc" ;;
+    "runit-init") init="runit" ;;
+    *) init="systemd" ;;
+  esac
+  depends+=("${init}")
+  zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${init}"
 }
 
 post_install() {
-  fancy_message info "Finished installation. To enable Ly, run sudo systemctl enable ly.service"
+  fancy_message info "Finished installation. To enable Ly, depending on your init run sudo systemctl enable ly.service"
   fancy_message info "If you need to switch between ttys after Ly's start you also have to disable getty on Ly's tty to prevent 'login' from spawning on top of it by running sudo systemctl disable getty@tty2.service"
 }
