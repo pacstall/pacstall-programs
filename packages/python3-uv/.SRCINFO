@@ -3,7 +3,7 @@ pkgbase = python3-uv
 	pkgdesc = Fast Python package and project manager, written in Rust
 	url = https://github.com/astral-sh/uv
 	arch = any
-	makedepends = cargo-1.93 | cargo>=1.93
+	makedepends = cargo-1.94 | cargo>=1.94
 	license = Apache-2.0
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>

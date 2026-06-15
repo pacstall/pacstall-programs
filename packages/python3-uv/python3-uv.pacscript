@@ -8,7 +8,7 @@ arch=('any')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 source=("https://github.com/astral-sh/uv/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=('12316609d3cd474a67d9b7e08991db7ec19390395ba03f56e79d39c6afbb723a')
-_min_cargo='1.93'
+_min_cargo='1.94'
 makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo}")
 external_connection=true
 
