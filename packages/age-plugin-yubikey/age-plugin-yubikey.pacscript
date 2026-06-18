@@ -3,23 +3,20 @@ pkgver="0.5.1"
 pkgrel="1"
 pkgdesc="YubiKey plugin for age clients"
 arch=("amd64" "arm64")
-url="https://github.com/str4d/age-plugin-yubikey"
+url='https://github.com/str4d/age-plugin-yubikey'
 license=("Apache-2.0" "MIT")
 maintainer=("Abhinandan <dev@nmabhinandan.xyz>")
 repology=("project: age-plugin-yubikey")
 external_connection=true
-
 depends=(
   "pcscd"
   "libpcsclite1"
 )
-
 makedepends=(
-  "cargo"
+  "cargo>=1.70"
   "libpcsclite-dev"
   "pkg-config"
 )
-
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/str4d/age-plugin-yubikey/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=("SKIP")
 
