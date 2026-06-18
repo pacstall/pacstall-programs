@@ -6789,7 +6789,7 @@ pkgname = kirc
 ---
 pkgbase = kiro-cli-bin
 	gives = kiro-cli
-	pkgver = 2.5.1
+	pkgver = 2.7.0
 	pkgdesc = AI-powered agentic coding assistant for the terminal
 	url = https://kiro.dev/cli/
 	arch = amd64
@@ -6802,16 +6802,16 @@ pkgbase = kiro-cli-bin
 	license = custom:Kiro
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: kiro-cli
-	source_amd64 = kiro-cli-bin-2.5.1-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.5.1/kirocli-x86_64-linux.tar.zst
-	sha256sums_amd64 = 662aa7958f8ebff130df2e86a95e26c43fe29697fbe422eacdb39c0ee56cc3bc
-	source_arm64 = kiro-cli-bin-2.5.1-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.5.1/kirocli-aarch64-linux.tar.zst
-	sha256sums_arm64 = fb5ba6af32dc457d527c8bab1cb5b44c9a781933142bf35cb59ee0a4c8dc4189
+	source_amd64 = kiro-cli-bin-2.7.0-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.7.0/kirocli-x86_64-linux.tar.zst
+	sha256sums_amd64 = 53119478593f3b03268522ae824df025c4515bd2dbdf697c604dd7230043b59e
+	source_arm64 = kiro-cli-bin-2.7.0-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.7.0/kirocli-aarch64-linux.tar.zst
+	sha256sums_arm64 = d887ae7f9495465230dcb4ed64cc79bbf5fc3238689ddb7117bcf97263c02db8
 
 pkgname = kiro-cli-bin
 ---
 pkgbase = kiro-ide-bin
 	gives = kiro-ide
-	pkgver = 0.12.263
+	pkgver = 0.12.333
 	pkgdesc = AI-powered IDE for modern development
 	url = https://kiro.dev
 	arch = amd64
@@ -6822,8 +6822,8 @@ pkgbase = kiro-ide-bin
 	license = custom:Kiro
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: kiro-ide
-	source = https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/0.12.263/tar/kiro-ide-0.12.263-stable-linux-x64.tar.gz
-	sha256sums = 3c39bc9626fd740e643f1c9a5736eb9a627005be81add6f6cc8307d6ee0c25e3
+	source = https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/0.12.333/tar/kiro-ide-0.12.333-stable-linux-x64.tar.gz
+	sha256sums = 1048f4873ddfc4fb5eb227d7b856f40d07c51da620390d708246aa70d31e5fce
 
 pkgname = kiro-ide-bin
 ---
@@ -7876,8 +7876,8 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-7.1.0-070100rc5
-	pkgver = 7.1~rc5
+	gives = linux-headers-7.1.0-070100
+	pkgver = 7.1
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -7885,14 +7885,14 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1-rc5/amd64/linux-headers-7.1.0-070100rc5_7.1.0-070100rc5.202605242141_all.deb
-	sha256sums = 88e6bf8cf4f4dc050b471449fae453553f3b995c2a2a4ea657bd082ea2a2ab07
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/amd64/linux-headers-7.1.0-070100_7.1.0-070100.202606141628_all.deb
+	sha256sums = 805164c719bd0caaa59ea160e5aaf9769ecd6269a36e58fe0ed1cdf0a0c1b284
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-7.1.0-070100rc5-generic
-	pkgver = 7.1~rc5
+	gives = linux-headers-7.1.0-070100-generic
+	pkgver = 7.1
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7902,10 +7902,10 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1-rc5/arm64/linux-headers-7.1.0-070100rc5-generic_7.1.0-070100rc5.202605242141_arm64.deb
-	sha256sums_arm64 = 5bc7e8b0a645fa2dff583a530aa13fe81e0de12f70b21f0fed981a0813053840
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1-rc5/amd64/linux-headers-7.1.0-070100rc5-generic_7.1.0-070100rc5.202605242141_amd64.deb
-	sha256sums_amd64 = 6b9771de76e896802fc943d82d31032738f309d7c701d34cc511e22fc990b8e9
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/arm64/linux-headers-7.1.0-070100-generic_7.1.0-070100.202606141628_arm64.deb
+	sha256sums_arm64 = 089a642a1f437c3427aae9a9f521f6e48a0bac5e66b4aae5bd38397b60be181b
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/amd64/linux-headers-7.1.0-070100-generic_7.1.0-070100.202606141628_amd64.deb
+	sha256sums_amd64 = 937fb4a073e1dd3b6e58076c8fb55641c5209ce13004e15b94e275349ee60c2b
 
 pkgname = linux-headers-generic-deb
 ---
@@ -7928,8 +7928,8 @@ pkgbase = linux-headers-generic-lts-6.6-deb
 pkgname = linux-headers-generic-lts-6.6-deb
 ---
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-7.0.11-070011-generic
-	pkgver = 7.0.11
+	gives = linux-headers-7.1.0-070100-generic
+	pkgver = 7.1
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -7937,10 +7937,10 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/arm64/linux-headers-7.0.11-070011-generic_7.0.11-070011.202606011647_arm64.deb
-	sha256sums_arm64 = 339986e32bfcc63ca9fead8154ce2bf668b8500003ca0dca4c49d6d81bd18231
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/amd64/linux-headers-7.0.11-070011-generic_7.0.11-070011.202606011647_amd64.deb
-	sha256sums_amd64 = 4a6475f86503ecd9ac4239ce7bde7b228eeae8930553b55d07bdeb172be1277a
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/arm64/linux-headers-7.1.0-070100-generic_7.1.0-070100.202606141628_arm64.deb
+	sha256sums_arm64 = 089a642a1f437c3427aae9a9f521f6e48a0bac5e66b4aae5bd38397b60be181b
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/amd64/linux-headers-7.1.0-070100-generic_7.1.0-070100.202606141628_amd64.deb
+	sha256sums_amd64 = 937fb4a073e1dd3b6e58076c8fb55641c5209ce13004e15b94e275349ee60c2b
 
 pkgname = linux-headers-generic-stable-deb
 ---
@@ -8005,15 +8005,15 @@ pkgbase = linux-headers-sc7280-deb
 pkgname = linux-headers-sc7280-deb
 ---
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-7.0.11-070011
-	pkgver = 7.0.11
+	gives = linux-headers-7.1.0-070100
+	pkgver = 7.1
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/amd64/linux-headers-7.0.11-070011_7.0.11-070011.202606011647_all.deb
-	sha256sums = 4c68c94e3a48001581a0038cfb5bee187be30655db01c3f2f73c859e9fa6aac8
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/amd64/linux-headers-7.1.0-070100_7.1.0-070100.202606141628_all.deb
+	sha256sums = 805164c719bd0caaa59ea160e5aaf9769ecd6269a36e58fe0ed1cdf0a0c1b284
 
 pkgname = linux-headers-stable-deb
 ---
@@ -8106,8 +8106,8 @@ pkgbase = linux-image-sunxi-deb
 pkgname = linux-image-sunxi-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-7.1.0-070100rc5-generic
-	pkgver = 7.1~rc5
+	gives = linux-image-unsigned-7.1.0-070100-generic
+	pkgver = 7.1
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -8118,10 +8118,10 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1-rc5/arm64/linux-image-unsigned-7.1.0-070100rc5-generic_7.1.0-070100rc5.202605242141_arm64.deb
-	sha256sums_arm64 = b9bef58f74e112aeb6b3a6aa90d826749d3ab6db0913200d80324e23c2e0ff1e
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1-rc5/amd64/linux-image-unsigned-7.1.0-070100rc5-generic_7.1.0-070100rc5.202605242141_amd64.deb
-	sha256sums_amd64 = 36848c4d98722568ae406999998cef3802d52a21fa56efb68a9e5aca0ccc695f
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/arm64/linux-image-unsigned-7.1.0-070100-generic_7.1.0-070100.202606141628_arm64.deb
+	sha256sums_arm64 = 97a6b434dd5af24da1feb3578570f61dc475a5a53381abd1e54a29718ac79a18
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/amd64/linux-image-unsigned-7.1.0-070100-generic_7.1.0-070100.202606141628_amd64.deb
+	sha256sums_amd64 = 0eb31904a2cbc7de2de2e13dc42514e76e375ef4c2f476672d38b2c850a9db78
 
 pkgname = linux-image-unsigned-deb
 ---
@@ -8145,8 +8145,8 @@ pkgbase = linux-image-unsigned-lts-6.6-deb
 pkgname = linux-image-unsigned-lts-6.6-deb
 ---
 pkgbase = linux-image-unsigned-stable-deb
-	gives = linux-image-unsigned-7.0.11-070011-generic
-	pkgver = 7.0.11
+	gives = linux-image-unsigned-7.1.0-070100-generic
+	pkgver = 7.1
 	pkgdesc = Ubuntu Linux stable kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -8155,10 +8155,10 @@ pkgbase = linux-image-unsigned-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/arm64/linux-image-unsigned-7.0.11-070011-generic_7.0.11-070011.202606011647_arm64.deb
-	sha256sums_arm64 = 173021bc1cf3c15121678eb6c518f86d5e99c02cee51a10699afaf25710e231a
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/amd64/linux-image-unsigned-7.0.11-070011-generic_7.0.11-070011.202606011647_amd64.deb
-	sha256sums_amd64 = afc8fba25f5fab074cff25ca1e1b590bcb4abe6daf9027114aebebbcd836574d
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/arm64/linux-image-unsigned-7.1.0-070100-generic_7.1.0-070100.202606141628_arm64.deb
+	sha256sums_arm64 = 97a6b434dd5af24da1feb3578570f61dc475a5a53381abd1e54a29718ac79a18
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/amd64/linux-image-unsigned-7.1.0-070100-generic_7.1.0-070100.202606141628_amd64.deb
+	sha256sums_amd64 = 0eb31904a2cbc7de2de2e13dc42514e76e375ef4c2f476672d38b2c850a9db78
 
 pkgname = linux-image-unsigned-stable-deb
 ---
@@ -8180,7 +8180,7 @@ pkgbase = linux-kernel-lts-6.6
 pkgname = linux-kernel-lts-6.6
 ---
 pkgbase = linux-kernel-stable
-	pkgver = 7.0.11
+	pkgver = 7.1
 	pkgdesc = Provides the latest stable Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -8196,7 +8196,7 @@ pkgbase = linux-kernel-stable
 pkgname = linux-kernel-stable
 ---
 pkgbase = linux-kernel
-	pkgver = 7.1~rc5
+	pkgver = 7.1
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -8227,16 +8227,16 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-7.1.0-070100rc5-generic
-	pkgver = 7.1~rc5
+	gives = linux-modules-7.1.0-070100-generic
+	pkgver = 7.1
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1-rc5/arm64/linux-modules-7.1.0-070100rc5-generic_7.1.0-070100rc5.202605242141_arm64.deb
-	sha256sums_arm64 = d7ef230e3ffc740651924eecfef10a21d2908d034fc4f2ce0970e825f73c12ec
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1-rc5/amd64/linux-modules-7.1.0-070100rc5-generic_7.1.0-070100rc5.202605242141_amd64.deb
-	sha256sums_amd64 = f7ae1666c50208291cef1e29a296028bb19bc16b648d9f30aeefc04d54050e40
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/arm64/linux-modules-7.1.0-070100-generic_7.1.0-070100.202606141628_arm64.deb
+	sha256sums_arm64 = 1a180f91fd09c9dde5f22e537919cca11a36cca76da7bacf7cf242dd5226032d
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/amd64/linux-modules-7.1.0-070100-generic_7.1.0-070100.202606141628_amd64.deb
+	sha256sums_amd64 = 57a7b66e6e67fd5560f99f7321afe5d3c6221f2d8a32489a922cbb8d10319fdb
 
 pkgname = linux-modules-deb
 ---
@@ -8258,16 +8258,16 @@ pkgbase = linux-modules-lts-6.6-deb
 pkgname = linux-modules-lts-6.6-deb
 ---
 pkgbase = linux-modules-stable-deb
-	gives = linux-modules-7.0.11-070011-generic
-	pkgver = 7.0.11
+	gives = linux-modules-7.1.0-070100-generic
+	pkgver = 7.1
 	pkgdesc = Ubuntu Linux stable kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/arm64/linux-modules-7.0.11-070011-generic_7.0.11-070011.202606011647_arm64.deb
-	sha256sums_arm64 = cbda4c074761b0c1546bebc69c325e27ec668d9ed6a1755f9821958b8f3d22de
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.11/amd64/linux-modules-7.0.11-070011-generic_7.0.11-070011.202606011647_amd64.deb
-	sha256sums_amd64 = 8e3cbac62058a450cdc97517d47ba4a454650356d9b32521c6ed13dcee64ac82
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/arm64/linux-modules-7.1.0-070100-generic_7.1.0-070100.202606141628_arm64.deb
+	sha256sums_arm64 = 1a180f91fd09c9dde5f22e537919cca11a36cca76da7bacf7cf242dd5226032d
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/amd64/linux-modules-7.1.0-070100-generic_7.1.0-070100.202606141628_amd64.deb
+	sha256sums_amd64 = 57a7b66e6e67fd5560f99f7321afe5d3c6221f2d8a32489a922cbb8d10319fdb
 
 pkgname = linux-modules-stable-deb
 ---
@@ -13033,17 +13033,17 @@ pkgbase = python3-sphinx-hawkmoth
 pkgname = python3-sphinx-hawkmoth
 ---
 pkgbase = python3-uv
-	pkgver = 0.11.14
+	pkgver = 0.11.21
 	pkgdesc = Fast Python package and project manager, written in Rust
 	url = https://github.com/astral-sh/uv
 	arch = any
-	makedepends = cargo-1.93 | cargo>=1.93
+	makedepends = cargo-1.94 | cargo>=1.94
 	license = Apache-2.0
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: python:uv
-	source = https://github.com/astral-sh/uv/archive/refs/tags/0.11.14.tar.gz
-	sha256sums = 17e2cca308b31247079e732f21ca43ac07ee44657dc947560beb0ddbca9121e0
+	source = https://github.com/astral-sh/uv/archive/refs/tags/0.11.21.tar.gz
+	sha256sums = 12316609d3cd474a67d9b7e08991db7ec19390395ba03f56e79d39c6afbb723a
 
 pkgname = python3-uv
 ---
@@ -13600,8 +13600,10 @@ pkgname = rhino-pkg-git
 pkgbase = rhino-plymouth-theme-git
 	gives = rhino-plymouth-theme
 	pkgver = 0.0.1
+	pkgrel = 2
 	pkgdesc = Rhino Linux Plymouth theme
 	arch = all
+	provides = plymouth-theme
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/plymouth.git
 
@@ -14619,7 +14621,7 @@ pkgname = shellharden
 ---
 pkgbase = shfmt-bin
 	gives = shfmt
-	pkgver = 3.12.0
+	pkgver = 3.13.1
 	pkgdesc = Format shell programs
 	url = https://github.com/mvdan/sh
 	arch = amd64
@@ -14633,14 +14635,14 @@ pkgbase = shfmt-bin
 	breaks = shfmt-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: shfmt
-	source_amd64 = https://github.com/mvdan/sh/releases/download/v3.12.0/shfmt_v3.12.0_linux_amd64
-	sha256sums_amd64 = d9fbb2a9c33d13f47e7618cf362a914d029d02a6df124064fff04fd688a745ea
-	source_arm64 = https://github.com/mvdan/sh/releases/download/v3.12.0/shfmt_v3.12.0_linux_arm64
-	sha256sums_arm64 = 5f3fe3fa6a9f766e6a182ba79a94bef8afedafc57db0b1ad32b0f67fae971ba4
-	source_armhf = https://github.com/mvdan/sh/releases/download/v3.12.0/shfmt_v3.12.0_linux_arm
-	sha256sums_armhf = a93c1ed5be25ce9dd0fd62c4cf0af7453740d234725877b973e6c6a8c7598500
-	source_i386 = https://github.com/mvdan/sh/releases/download/v3.12.0/shfmt_v3.12.0_linux_386
-	sha256sums_i386 = 6b67da16834a215cc8c565bfbcfaa0303809456d8cafad28cb2eeea35a88904d
+	source_amd64 = https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_linux_amd64
+	sha256sums_amd64 = fb096c5d1ac6beabbdbaa2874d025badb03ee07929f0c9ff67563ce8c75398b1
+	source_arm64 = https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_linux_arm64
+	sha256sums_arm64 = 32d92acaa5cd8abb29fc49dac123dc412442d5713967819d8af2c29f1b3857c7
+	source_armhf = https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_linux_arm
+	sha256sums_armhf = f6c23b95971bcc5ebf86411bccefb79f1e99f8efe7c722d980a3f244838b1398
+	source_i386 = https://github.com/mvdan/sh/releases/download/v3.13.1/shfmt_v3.13.1_linux_386
+	sha256sums_i386 = 5f9a2c46249dab66d7767df676083ea6a3313831ca9f4bc29e4c21af87bd4f5e
 
 pkgname = shfmt-bin
 ---
@@ -16351,7 +16353,7 @@ pkgname = ubxi-kde-desktop-git
 ---
 pkgbase = ubxi-lomiri-desktop
 	pkgver = 0.0.1
-	pkgrel = 6
+	pkgrel = 7
 	pkgdesc = UBXI Lomiri Desktop
 	priority = required
 	arch = amd64
@@ -16383,6 +16385,7 @@ pkgbase = ubxi-lomiri-desktop
 	depends = libqt6wlshellintegration6
 	depends = libqt6waylandcompositorwlshell6
 	depends = libqt6waylandcompositorxdgshell6
+	depends = liblomirisystemsettingsprivate0.0
 	depends = qml6-module-qtwayland-compositor
 	depends = qml-module-qtwayland-compositor
 	depends = lomiri-addressbook-app
@@ -16411,6 +16414,7 @@ pkgbase = ubxi-lomiri-desktop
 	depends = lomiri-keyboard-spanish
 	depends = lomiri-keyboard-swedish
 	depends = lomiri-system-settings-cellular
+	depends = lomiri-system-settings-phone
 	pacdeps = rhino-ubxi-core
 	pacdeps = rhino-lomiri-default-settings-git
 	compatible = ubuntu:*
@@ -18582,7 +18586,7 @@ pkgname = zed-editor-preview-bin
 ---
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 0.208.4
+	pkgver = 1.6.3
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -18592,11 +18596,12 @@ pkgbase = zed-editor-stable-bin
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
 	maintainer = aKqir24 <aKqir24@github.com>
+	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/0.208.4/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = a555f90a0322a2293c71df47aebffe63116a1cf206ef5a7e6eed07589c2b3c95
-	source_aarch64 = https://zed.dev/api/releases/stable/0.208.4/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = ebc024038375c3baa6b5e118b6ec589c67372c3434cc52ba7d57a68c332d980c
+	source_x86_64 = https://zed.dev/api/releases/stable/1.6.3/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 0fd618752e4282fa46977863af6b7cdc190ae2db7e0b33aeaf835438e0538db5
+	source_aarch64 = https://zed.dev/api/releases/stable/1.6.3/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = bb7373c2bab7b809251030a86b3d350b31df40f6a3ae5454fff0afa3ad61877e
 
 pkgname = zed-editor-stable-bin
 ---
