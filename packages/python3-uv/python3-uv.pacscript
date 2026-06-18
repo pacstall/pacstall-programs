@@ -1,5 +1,5 @@
 pkgname='python3-uv'
-pkgver='0.11.14'
+pkgver='0.11.21'
 pkgdesc='Fast Python package and project manager, written in Rust'
 license=('Apache-2.0' 'MIT')
 repology=('project: python:uv')
@@ -7,8 +7,8 @@ url='https://github.com/astral-sh/uv'
 arch=('any')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 source=("https://github.com/astral-sh/uv/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('17e2cca308b31247079e732f21ca43ac07ee44657dc947560beb0ddbca9121e0')
-_min_cargo='1.93'
+sha256sums=('12316609d3cd474a67d9b7e08991db7ec19390395ba03f56e79d39c6afbb723a')
+_min_cargo='1.94'
 makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo}")
 external_connection=true
 
