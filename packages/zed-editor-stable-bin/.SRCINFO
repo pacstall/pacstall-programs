@@ -1,6 +1,6 @@
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 1.6.3
+	pkgver = 1.7.2
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -12,9 +12,9 @@ pkgbase = zed-editor-stable-bin
 	maintainer = aKqir24 <aKqir24@github.com>
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/1.6.3/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 0fd618752e4282fa46977863af6b7cdc190ae2db7e0b33aeaf835438e0538db5
-	source_aarch64 = https://zed.dev/api/releases/stable/1.6.3/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = bb7373c2bab7b809251030a86b3d350b31df40f6a3ae5454fff0afa3ad61877e
+	source_x86_64 = https://zed.dev/api/releases/stable/1.7.2/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = b9d6987934c2a03833f5f196508f15ab8868d42396dc1a7607186ad70d6e9c02
+	source_aarch64 = https://zed.dev/api/releases/stable/1.7.2/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 2854e2b3757ed6520b4b8f94ec79426c8ec21efd2444c8beff33f408c90a8a48
 
 pkgname = zed-editor-stable-bin
