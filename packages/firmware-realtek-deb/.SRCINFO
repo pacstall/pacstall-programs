@@ -1,11 +1,11 @@
 pkgbase = firmware-realtek-deb
 	gives = firmware-realtek
-	pkgver = 20260410
+	pkgver = 20260519
 	pkgdesc = Firmware files for Realtek chips
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firmware-realtek
-	source = http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/firmware-realtek_20260410-1_all.deb
-	sha256sums = efb8afa90722b819c9b76fdc08ba0a134e59159502c20021b1c4dd2fda494188
+	source = http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/firmware-realtek_20260519-1_all.deb
+	sha256sums = a0f3bdb39aa75ac4153e4ba1ac3ef3429dbbc47e5e8d5f174f06ad9a68a4c1c6
 
 pkgname = firmware-realtek-deb
