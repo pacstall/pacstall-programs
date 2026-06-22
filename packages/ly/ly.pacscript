@@ -29,23 +29,12 @@ build() {
 
 package() {
   cd "ly"
-<<<<<<< HEAD
   zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${_INIT_SYSTEM}"
-=======
-  case "$(ps -p 1 -o comm=)" in
-    "init") init="sysvinit" ;;
-    "openrc") init="openrc" ;;
-    "runit-init") init="runit" ;;
-    *) init="systemd" ;;
-  esac
-  depends+=("${init}")
-  zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${init}"
->>>>>>> master
 }
 
 post_install() {
   case "${_INIT_SYSTEM}" in
-    "systemd") POST_SETUP_MSG=("sudo systemctl enable ly.service" "sudo systemctl disable getty@tty2.service")
+    "systemd") POST_SETUP_MSG=("sudo systemctl enable ly.service" "sudo systemctl disable getty@tty2.service");;
     "openrc") POST_SETUP_MSG=("rc-update add ly" "rc-update del agetty.tty2");;
     "runit") POST_SETUP_MSG=("ln -s /etc/sv/ly /var/service/" "rm /var/service/agetty-tty2");;
     "s6") POST_SETUP_MSG=("s6-service add default ly-srv && s6-db-reload" "s6-rc -u change ly-srv");;
