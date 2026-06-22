@@ -29,7 +29,18 @@ build() {
 
 package() {
   cd "ly"
+<<<<<<< HEAD
   zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${_INIT_SYSTEM}"
+=======
+  case "$(ps -p 1 -o comm=)" in
+    "init") init="sysvinit" ;;
+    "openrc") init="openrc" ;;
+    "runit-init") init="runit" ;;
+    *) init="systemd" ;;
+  esac
+  depends+=("${init}")
+  zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${init}"
+>>>>>>> master
 }
 
 post_install() {
