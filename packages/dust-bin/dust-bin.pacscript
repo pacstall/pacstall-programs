@@ -4,18 +4,16 @@
 #  \        //       \/   --   \
 #   \__/\  / \_______ \______  /
 #        \/          \/      \/
-maintainer=("wizard-28 <wiz28@pm.me>" "aKqir24 <aKqir24@github.com>")
+maintainer=("wizard-28 <wiz28@pm.me>")
 
 pkgname="dust-bin"
 gives="dust"
-pkgver="1.2.4"
+pkgver="1.2.3"
 pkgdesc="A more intuitive version of du in rust"
-arch=('amd64' 'arm64')
-source_amd64=("@${pkgname}~${pkgver}::https://github.com/bootandy/dust/releases/download/v${pkgver}/dust-v${pkgver}-x86_64-unknown-linux-musl.tar.gz")
-source_arm64=("@${pkgname}~${pkgver}::https://github.com/bootandy/dust/releases/download/v${pkgver}/dust-v${pkgver}-aarch64-unknown-linux-musl.tar.gz")
+source=("@${pkgname}~${pkgver}::https://github.com/bootandy/dust/releases/download/v${pkgver}/dust-v${pkgver}-x86_64-unknown-linux-musl.tar.gz")
 breaks=("${gives}" "${gives}-git" "${gives}-deb" "${gives}-app")
-sha256sums_amd64=("4e313f9f854017e58a2ada4c0d1774677b8cf53d63ab55a991d5871d5f504452")
-sha256sums_arm64=("e09b0d24b5da0fa06aecf1561849c13ae41ef055c1ce7077e35e9a46744b16af")
+sha256sums=("2767e53a07a6f887c95d80dc7b976fbb0f85c24fa19e83704639ff5d67ebfbf4")
+arch=('amd64')
 repology=("project: du-dust")
 
 package() {

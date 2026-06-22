@@ -16,7 +16,7 @@ depends=(
   "libxcb-randr0" "libxcb-shape0" "libxcb-xinerama0"
   "libxcb-xkb1" "libxcb-xtest0" "libxcb-xfixes0" "libx11-6"
   "gir1.2-pango-1.0" "gir1.2-glib-2.0" "gir1.2-gdkpixbuf-2.0"
-  "gir1.2-freedesktop" "wmctrl" "luajit" "lua-lgi"
+  "gir1.2-freedesktop" "wmctrl"
 )
 makedepends=(
   "cmake" "pkg-config" "libglib2.0-dev"
@@ -58,8 +58,11 @@ build() {
 }
 
 package() {
-  cd "${gives}"
-  make -C build DESTDIR="${pkgdir}" install
-  cp "${gives}.desktop" "${pkgdir}/usr/share/xsessions/"
+  cd "${gives}/build"
+
+  make install DESTDIR="${pkgdir}"
+  mkdir -p "${pkgdir}/usr/share/xsessions"
+  ln -sf /usr/share/xsessions/"${gives}".desktop "${pkgdir}/usr/share/xsessions/${gives}.desktop"
 }
+
 # vim:set ft=sh ts=2 sw=2 et:

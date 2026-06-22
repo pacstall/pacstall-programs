@@ -1,6 +1,6 @@
 pkgbase = rhino-pine-lomiri-core
-	pkgver = 2026.1
-	pkgrel = 1
+	pkgver = 2025.4
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile (Lomiri) software
 	priority = essential
 	arch = all

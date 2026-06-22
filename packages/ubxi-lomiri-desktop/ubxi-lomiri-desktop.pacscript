@@ -1,7 +1,7 @@
 pkgname="ubxi-lomiri-desktop"
 arch=("amd64" "arm64" "riscv64")
 pkgver="0.0.1"
-pkgrel="6"
+pkgrel="5"
 source=("https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty")
 depends=(
   "alsa-ucm-conf" "ciborium" "contactsd" "deviceinfo-extras" "deviceinfo-tools" "iio-sensor-proxy"
@@ -16,7 +16,7 @@ depends=(
   "lomiri-teleports-app" "lomiri-tfamanager-app" "lomiri-weather-app" "lomiri-mediaplayer-app" "lomiri-music-app"
   "lomiri-keyboard-dutch" "lomiri-keyboard-emoji" "lomiri-keyboard-english" "lomiri-keyboard-french"
   "lomiri-keyboard-german" "lomiri-keyboard-italian" "lomiri-keyboard-portuguese" "lomiri-keyboard-russian"
-  "lomiri-keyboard-spanish" "lomiri-keyboard-swedish" " lomiri-system-settings-cellular"
+  "lomiri-keyboard-spanish" "lomiri-keyboard-swedish"
 )
 depends_amd64=("mir-graphics-drivers-nvidia")
 pacdeps=("rhino-ubxi-core" "rhino-lomiri-default-settings-git")

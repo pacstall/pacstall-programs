@@ -1,21 +1,23 @@
 name: tests
-
-on: pull_request
-
+on:
+  pull_request: {}
+  workflow_dispatch:
+    inputs:
+      debug_enabled:
+        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+        required: false
+        default: false
 defaults:
   run:
     shell: bash
-
 jobs:
   run-tests:
     strategy:
-      fail-fast: false
       matrix:
         OS: ["ubuntu:latest", "ubuntu:devel", "ubuntu:rolling", "debian:stable", "debian:testing", "debian:unstable"]
         PACSTALL_VERSION: ["master", "develop"]
-
+      fail-fast: false
     runs-on: ubuntu-latest
-
     container:
       image: ${{ matrix.OS }}
       options: --privileged
@@ -24,31 +26,37 @@ jobs:
         shell: bash
         USER: dio
         LOGNAME: dio
-        SUDO_USER: dio
         DEBIAN_FRONTEND: noninteractive
-
     steps:
-      - uses: actions/checkout@v6
-
-      - id: changes
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.debug_enabled }}
+      - id: checkout
+        uses: actions/checkout@v6
+      - id: paths
         uses: dorny/paths-filter@v4
         with:
-          list-files: shell
           filters: |
             pacscripts:
               - 'packages/*/*.pacscript'
-
-      - name: Install system utilities
-        if: steps.changes.outputs.pacscripts == 'true'
+      - id: files
+        uses: Ana06/get-changed-files@v2.3.0
+      - name: Check for Pacscript changes
+        run: |
+          touch .no-pacscript-changes
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} == *".pacscript" ]]; then
+              rm -f .no-pacscript-changes
+              break
+            fi
+          done
+      - name: Install System Utilities
+        if: steps.paths.outputs.pacscripts == 'true'
         run: |
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
-
-          if [[ $(. /etc/os-release; echo "$ID") == ubuntu ]]; then
-            . /etc/os-release
-
-            cat > /etc/apt/sources.list.d/ubuntu.sources <<EOF
-          Types: deb
+          if  [[ $(awk -F= '$1=="ID" { print $2 }' /etc/os-release) == "ubuntu" ]]; then
+          source /etc/os-release && echo "Types: deb
           URIs: http://ports.ubuntu.com/ubuntu-ports/
           Suites: ${VERSION_CODENAME} ${VERSION_CODENAME}-updates ${VERSION_CODENAME}-backports
           Components: main universe restricted multiverse
@@ -74,113 +82,78 @@ jobs:
           Suites: ${VERSION_CODENAME}-security
           Components: main universe restricted multiverse
           Signed-By: /usr/share/keyrings/ubuntu-archive-keyring.gpg
-          Architectures-Remove: arm64
-          EOF
-
-            rm -f /etc/apt/sources.list
+          Architectures-Remove: arm64" | tee /etc/apt/sources.list.d/ubuntu.sources && rm -f /etc/apt/sources.list
           fi
-
           apt-get update
-          apt-get install -y --no-install-recommends \
-            apt-utils \
-            bash \
-            ca-certificates \
-            curl \
-            desktop-file-utils \
-            git \
-            iputils-ping \
-            keyboard-configuration \
-            lsb-release \
-            sudo \
-            wget
-
+          apt-get install apt-utils curl ca-certificates bash wget git sudo iputils-ping keyboard-configuration lsb-release desktop-file-utils -y --no-install-recommends
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
-
-      - name: Create test user
-        if: steps.changes.outputs.pacscripts == 'true'
+      - name: Setup Test User
+        if: steps.paths.outputs.pacscripts == 'true'
         run: |
-          useradd \
-            --create-home \
-            --home-dir /home/dio \
-            --shell /bin/bash \
-            --gid root \
-            --groups sudo \
-            --uid 1001 \
-            dio
-
-          sed -i \
-            's/^%sudo.*/%sudo ALL=(ALL) NOPASSWD:ALL/' \
-            /etc/sudoers
-
+          useradd -rm -d /home/$USER -s /bin/bash -g root -G sudo -u 1001 $USER
+          sudo sed -i "s/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL) NOPASSWD:ALL/g" /etc/sudoers
+          chown -R $USER /tmp
           chmod -R 777 /tmp
-
-      - name: Install Pacstall
-        if: steps.changes.outputs.pacscripts == 'true'
-        shell: sudo -E -u dio bash {0}
+      - name: Installing Pacstall
+        if: steps.paths.outputs.pacscripts == 'true'
         run: |
-          curl -fsSL 'https://pacstall.dev/q/install?dnt' \
-            -o pacstall-install.sh
-
-          chmod +x pacstall-install.sh
-
-          printf 'N\n' | sudo ./pacstall-install.sh
-
-          rm pacstall-install.sh
-
-          sudo sed -i \
-            's/ignore_stack=false/ignore_stack=true/' \
-            /usr/bin/pacstall
-
-      - name: Set Pacstall Version
-        if: steps.changes.outputs.pacscripts == 'true'
+          export SUDO_USER=$USER
+          curl -fsSL https://pacstall.dev/q/install\?dnt > pacstall-install.sh || curl -fsSL https://git.io/JsADh > pacstall-install.sh
+          chmod +x ./pacstall-install.sh
+          echo N\n | sudo -E ./pacstall-install.sh
+          rm ./pacstall-install.sh
+          sudo sed -i 's/ignore_stack=false/ignore_stack=true/g' /usr/bin/pacstall
+          pacstall -U pacstall ${{ matrix.PACSTALL_VERSION }}
+          ls -lad /tmp/pacstall
+        shell: sudo -E -u dio bash {0}
         env:
-          PACSTALL_VERSION: ${{ matrix.PACSTALL_VERSION }}
-        shell: sudo -E -u dio bash {0}
-        run: |
-          pacstall -U pacstall "${PACSTALL_VERSION}"
-
+          SUDO_USER: dio
       - name: Installing Packages
-        if: steps.changes.outputs.pacscripts == 'true'
-        shell: sudo -E -u dio bash {0}
-        env:
-          PRNUM: ${{ github.event.pull_request.number }}
-          GITHUB_ACTIONS: true
-          METADIR: /var/lib/pacstall/metadata
+        if: steps.paths.outputs.pacscripts == 'true'
         run: |
-          for changed_file in ${{ steps.changes.outputs.pacscripts_files }}; do
-            [[ ${changed_file} == *".pacscript" ]] || continue
-
-            package_name="$(basename "${changed_file%.pacscript}")"
-
-            if [[ -f "${METADIR}/${package_name}" ]]; then
-              echo "Package ${package_name} has already been installed" >&2
-              continue
+          export SUDO_USER=$USER
+          export DEBIAN_FRONTEND=noninteractive
+          export GITHUB_ACTIONS=true
+          export METADIR=/var/lib/pacstall/metadata
+          PRNUM="$(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')"
+          for changed_file in ${{ steps.files.outputs.added_modified }}; do
+            if [[ ${changed_file} == *".pacscript" ]]; then
+              pacscript_file=`basename "${changed_file}"`
+              package_name="${pacscript_file/.pacscript/}"
+              if [[ -f "${METADIR}/${package_name}" ]]; then
+                echo "Package ${package_name} has already been installed."
+              else
+                echo "Running pacstall -Qa for ${package_name}..."
+                echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
+                pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY} || exit 1
+              fi
             fi
-
-            echo "Running 'pacstall -Qa' for ${package_name}..."
-            echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
-
-            pacstall -Qa "${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}" || exit 1
           done
-      - name: Output Package Trees
-        if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
-          GITHUB_ACTIONS: true
+          DEBIAN_FRONTEND: noninteractive
+      - name: Output Package Trees
+        if: steps.paths.outputs.pacscripts == 'true'
         run: |
+          export SUDO_USER=$USER
+          export DEBIAN_FRONTEND=noninteractive
+          export GITHUB_ACTIONS=true
           mapfile -t list < <(pacstall -L)
           for pkg in "${list[@]}"; do
             echo "${pkg}:"
             pacstall -T "${pkg}"
             echo "---"
           done
-      - name: Uninstalling Packages
-        if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
-          GITHUB_ACTIONS: true
-          METADIR: /var/lib/pacstall/metadata
+          DEBIAN_FRONTEND: noninteractive
+      - name: Uninstalling Packages
+        if: steps.paths.outputs.pacscripts == 'true'
         run: |
+          export SUDO_USER=$USER
+          export DEBIAN_FRONTEND=noninteractive
+          export GITHUB_ACTIONS=true
+          export METADIR=/var/lib/pacstall/metadata
           function array.contains() {
               local check
               local -n arra="${1:?No array passed to array.contains}"
@@ -203,3 +176,6 @@ jobs:
               echo "Running pacstall -R for ${changed_file}..."
               pacstall --disable-prompts -R ${changed_file} || exit 1
           done
+        shell: sudo -E -u dio bash {0}
+        env:
+          DEBIAN_FRONTEND: noninteractive

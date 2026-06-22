@@ -1,6 +1,6 @@
 pkgbase = linux-image-sc7280-deb
 	gives = linux-image-6.18-sc7280
-	pkgver = 6.18.34
+	pkgver = 6.18.31
 	pkgdesc = Linux kernel image files built for Fairphone 5 (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -10,7 +10,7 @@ pkgbase = linux-image-sc7280-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-sc7280/linux-image-6.18-sc7280_6.18.34-1_arm64.deb
-	sha256sums = 229d5993fbca6461f92feb587658736730a1aa951b6198182ddbbcce5e8cf91e
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sc7280/linux-image-6.18-sc7280_6.18.31-1_arm64.deb
+	sha256sums = 3b8569a5f6641ce991b0c70c94e4d33bd9a9c505499c5c4d0a47548013e0a5bc
 
 pkgname = linux-image-sc7280-deb

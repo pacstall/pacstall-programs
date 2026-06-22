@@ -2,10 +2,10 @@ pkgname="scx-loader"
 pkgdesc="System daemon and DBus-based loader for sched-ext schedulers"
 repology=("project: scx-loader")
 arch=('x86_64')
-pkgver="1.1.1"
+pkgver="1.1.0"
 url='https://github.com/sched-ext/scx-loader'
 license=('GPL-2.0-only')
-_commit='0f45f59efdf2bb3a2ccdeec8ddd06a3efe99234a'
+_commit='1e475504316b4a588d1f3634b2e40a5859067744'
 source=("git+https://github.com/sched-ext/${pkgname}#commit=${_commit}")
 sha256sums=('SKIP')
 provides=("${pkgname}")
@@ -16,7 +16,7 @@ depends=(
   "polkitd"
 )
 makedepends=(
-  "cargo>=1.95 | rustup"
+  "cargo>=1.88 | rustup"
   "build-essential"
   "clang"
   "llvm"
@@ -30,7 +30,6 @@ prepare() {
   cd "${pkgname}"
 
   export CARGO_HOME="${srcdir}/cargo-home"
-  export RUSTUP_HOME="${srcdir}/rustup-home"
   export RUSTUP_TOOLCHAIN=stable
 
   cargo fetch --locked --target "${AARCH}-unknown-linux-gnu"
@@ -40,7 +39,6 @@ build() {
   cd "${pkgname}"
 
   export CARGO_HOME="${srcdir}/cargo-home"
-  export RUSTUP_HOME="${srcdir}/rustup-home"
   export CARGO_TARGET_DIR=target
   export RUSTUP_TOOLCHAIN=stable
 
