@@ -34,12 +34,12 @@ package() {
 
 post_install() {
   case "${_INIT_SYSTEM}" in
-    "systemd") POST_SETUP_MSG=("sudo systemctl enable ly.service" "sudo systemctl disable getty@tty2.service");;
-    "openrc") POST_SETUP_MSG=("rc-update add ly" "rc-update del agetty.tty2");;
-    "runit") POST_SETUP_MSG=("ln -s /etc/sv/ly /var/service/" "rm /var/service/agetty-tty2");;
-    "s6") POST_SETUP_MSG=("s6-service add default ly-srv && s6-db-reload" "s6-rc -u change ly-srv");;
-    "dinit") POST_SETUP_MSG=("dinitctl enable ly" "sudo ${EDITOR} /etc/dinit.d/config/console.conf and modify ACTIVE_CONSOLES");;
-    "sysvinit") POST_SETUP_MSG=("update-rc.d ly defaults" "sudo ${EDITOR} /etc/inittab and comment out the line containing tty2")
+    "openrc") POST_SETUP_MSG=("rc-update add ly" "rc-update del agetty.tty2") ;;
+    "runit") POST_SETUP_MSG=("ln -s /etc/sv/ly /var/service/" "rm /var/service/agetty-tty2") ;;
+    "s6") POST_SETUP_MSG=("s6-service add default ly-srv && s6-db-reload" "s6-rc -u change ly-srv") ;;
+    "dinit") POST_SETUP_MSG=("dinitctl enable ly" "sudo ${EDITOR} /etc/dinit.d/config/console.conf and modify ACTIVE_CONSOLES") ;;
+    "sysvinit") POST_SETUP_MSG=("update-rc.d ly defaults" "sudo ${EDITOR} /etc/inittab and comment out the line containing tty2") ;;
+    *) POST_SETUP_MSG=("sudo systemctl enable ly.service" "sudo systemctl disable getty@tty2.service") ;;
   esac
 
   fancy_message info "Finished installation. To enable Ly, run ${POST_SETUP_MSG[0]}"
