@@ -1,6 +1,5 @@
 pkgname="age-plugin-yubikey"
 pkgver="0.5.1"
-pkgrel="1"
 pkgdesc="YubiKey plugin for age clients"
 arch=("amd64" "arm64")
 url='https://github.com/str4d/age-plugin-yubikey'
