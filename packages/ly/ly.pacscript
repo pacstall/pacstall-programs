@@ -42,6 +42,6 @@ post_install() {
     "systemd" | *) POST_SETUP_MSG=("sudo systemctl enable ly.service" "sudo systemctl disable getty@tty2.service") ;;
   esac
 
-  fancy_message info "Finished installation. To enable Ly, run ${POST_SETUP_MSG[0]}"
+  fancy_message info "Finished installation. To enable Ly, run '${POST_SETUP_MSG[0]}'"
   fancy_message info "If you need to switch between ttys after Ly's start you also have to disable getty on Ly's tty to prevent 'login' from spawning on top of it by running '${POST_SETUP_MSG[1]}'"
 }
