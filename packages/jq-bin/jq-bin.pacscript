@@ -5,9 +5,13 @@ pkgver="1.8.2"
 repology=("project: ${gives}")
 license=("MIT")
 url='https://jqlang.org/'
-source=("https://github.com/jqlang/${gives}/releases/download/${gives}-${pkgver}/${gives}-linux-${CARCH}")
+source=(
+  "https://github.com/jqlang/${gives}/releases/download/${gives}-${pkgver}/${gives}-linux-${CARCH}"
+  "https://raw.githubusercontent.com/jqlang/jq/refs/tags/jq-${pkgver}/jq.1.prebuilt"
+)
 pkgdesc="Lightweight and flexible command-line JSON processor"
 maintainer=("Don Alfons <donnisnoni@outlook.com>")
+makedepends=("gzip")
 sha256sums_amd64=("b1c22172dd303f3be49e935aa56aa48a8b7a46e0bc838b4997d3bb451495870f")
 sha256sums_arm64=("8b85c817833814ddca00a144c33705546355afccf0cf39b188f3cdb48b852309")
 sha256sums_armel=("d88f6bd640ef8909b3deb587f12c03a0ed38fe8bd5e2e882e2b1bf88f5dab8d2")
@@ -19,4 +23,6 @@ sha256sums_s390x=("42b3306c786e3352e3097b8aa03ca0e5631bdc7a6bf133bb8ddd9e4b148d2
 
 package() {
   install -Dm755 "${gives}-linux-${CARCH}" -T "${pkgdir}/usr/bin/jq"
+  install -Dm644 "jq.1.prebuilt" -T "${pkgdir}/usr/share/man/man1/jq.1"
+  gzip -9n "${pkgdir}/usr/share/man/man1/jq.1"
 }
