@@ -20,6 +20,10 @@ prepare() {
 
 build() {
   cd "${gives}"
+
+  # A temporary fix for the material-colors submodule not being found
+  rm -r 'material-colors' && git clone 'https://github.com/Aiving/material-colors.git'
+
   cargo build -j"${NCPU}" --release --frozen
 }
 
