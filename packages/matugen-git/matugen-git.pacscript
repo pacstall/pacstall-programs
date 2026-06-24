@@ -6,7 +6,7 @@ pkgver="4.1.0"
 license=("GPL-2.0")
 url='https://github.com/InioX/matugen'
 pkgdesc='Material you color generation tool with templates'
-source=("https://github.com/InioX/${gives}.git")
+source=("${gives}"::"git+$https://github.com/InioX/${gives}.git")
 replaces=("i3status-rust" "i3status-rs")
 pacdeps=("rust-bin")
 makedepends=("git")
@@ -20,10 +20,6 @@ prepare() {
 
 build() {
   cd "${gives}"
-
-  # A temporary fix for the material-colors submodule not being found
-  rm -r 'material-colors' && git clone 'https://github.com/Aiving/material-colors.git'
-
   cargo build -j"${NCPU}" --release --frozen
 }
 
