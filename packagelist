@@ -128,6 +128,7 @@ dotdrop
 drawio-desktop-deb
 dremio-bin
 dropbox-deb
+dsview
 duf-deb
 dunst
 dust-bin
@@ -160,6 +161,7 @@ facetimehd-firmware
 fake-ubuntu-advantage-tools-deb
 fast
 fast-colorthief-git
+fastcompmgr-git
 fastfetch-git
 fblog-bin
 feishin-app
@@ -330,6 +332,7 @@ kubeswitch-bin
 kvantum
 kvantum-theme-libadwaita-git
 kwin-krohnkite
+kwin-krohnkite-git
 kxstudio-repos-deb
 lact
 lagrange
@@ -429,6 +432,7 @@ mdbook
 mdbook-linkcheck
 megabasterd-bin
 megasync-deb
+meowdo
 mercury-browser-deb
 mesa-kisak-fresh
 meson-focal-deb
@@ -573,6 +577,7 @@ onefetch-bin
 onlyoffice-desktopeditors-deb
 onnxruntime-bin
 onnxruntime-gpu-bin
+opencode-bin
 opendoas-git
 openrgb-git
 opensnitch-deb
@@ -653,9 +658,11 @@ python3-imdbpy-deb
 python3-levenshtein-deb
 python3-material-color-utilities
 python3-moddb
+python3-nuitka
 python3-pypresence
 python3-pywal16
 python3-sphinx-hawkmoth
+python3-uv
 python3-vkbasalt-cli
 python3-zombie-imp
 qogir-gtk-theme-bin
@@ -844,6 +851,7 @@ vinegar-git
 viper4linux
 virtualbox-deb
 virtualbox-guest-iso
+visualvm-bin
 vivaldi-deb
 vivarium
 vkroots-git
@@ -855,6 +863,7 @@ vscode-languageservers:vscode-json-languageserver
 vscode-languageservers:vscode-html-languageserver
 vscodium-bin
 vscodium-deb
+vulkan-low-latency-layer
 vyprvpn-deb
 waf
 walc-app
