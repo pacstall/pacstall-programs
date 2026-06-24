@@ -6,6 +6,7 @@ pkgbase = sesh-bin
 	arch = amd64
 	arch = i386
 	depends = zoxide
+	makedepends = gzip
 	maintainer = Don Alfons <donnisnoni@outlook.com>
 	repology = project: sesh
 	source_arm64 = sesh-bin~2.26.2::https://github.com/joshmedeski/sesh/releases/download/v2.26.2/sesh_Linux_arm64.tar.gz
