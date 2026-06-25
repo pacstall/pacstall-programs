@@ -1,7 +1,7 @@
 pkgname="kiro-cli-bin"
 gives="kiro-cli"
 repology=("project: kiro-cli")
-pkgver="2.7.0"
+pkgver="2.9.0"
 pkgdesc="AI-powered agentic coding assistant for the terminal"
 url='https://kiro.dev/cli/'
 arch=('amd64' 'arm64')
@@ -18,9 +18,9 @@ replaces=('amazon-q-cli-bin')
 maintainer=("Rodrigo Tavares <dev@rodrigotavar.es>")
 _base_url="https://desktop-release.q.us-east-1.amazonaws.com/${pkgver}"
 source_amd64=("${pkgname}-${pkgver}-amd64.tar.zst::${_base_url}/kirocli-x86_64-linux.tar.zst")
-sha256sums_amd64=("53119478593f3b03268522ae824df025c4515bd2dbdf697c604dd7230043b59e")
+sha256sums_amd64=("ee9ef0a203f7e1d73585c377cb993b506828bd3121d7f037390e06efbc054267")
 source_arm64=("${pkgname}-${pkgver}-arm64.tar.zst::${_base_url}/kirocli-aarch64-linux.tar.zst")
-sha256sums_arm64=("d887ae7f9495465230dcb4ed64cc79bbf5fc3238689ddb7117bcf97263c02db8")
+sha256sums_arm64=("f535d9466d27c56604053b5fa9ff8f22fcdd345b57b735f7bee84fdee7f49bbf")
 
 prepare() {
   cd kirocli/bin
