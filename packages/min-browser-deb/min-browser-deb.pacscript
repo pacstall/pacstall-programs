@@ -1,11 +1,11 @@
 pkgname="min-browser-deb"
 gives="min"
-pkgver="1.35.3"
+pkgver="1.35.5"
 arch=("amd64" "arm64")
 repology=("project: ${gives}")
 pkgdesc="Min is a fast and minimal browser that protects your privacy"
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
 source_amd64=("https://github.com/minbrowser/${gives}/releases/download/v${pkgver}/${gives}-${pkgver}-amd64.deb")
-sha256sums_amd64=("d9647fae3243ebab9ee46b84fec9751bccfa106f582e1a6126855e7a95f0c07f")
+sha256sums_amd64=("f0c20ff68a313f1d8c82e4f5023bb3673ad65efc84ce827350ea48144008a9f9")
 source_arm64=("https://github.com/minbrowser/${gives}/releases/download/v${pkgver}/${gives}-${pkgver}-arm64.deb")
-sha256sums_arm64=("678a14cbb93e69b0b04dd84fb1c44411cf52fe08b8b5847b3e589d38380f96a6")
+sha256sums_arm64=("02cd4d50ea92034666b3ea2d70c90817f3b30a2f6bb2977988e4f836a90e9985")
