@@ -1,6 +1,6 @@
 pkgbase = rust-bin
 	gives = rust
-	pkgver = 1.93.1
+	pkgver = 1.96.0
 	pkgdesc = Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety
 	url = https://www.rust-lang.org/
 	arch = x86_64
@@ -39,11 +39,11 @@ pkgbase = rust-bin
 	maintainer = xdavius <xdavius@github.com>
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: rust
-	source_x86_64 = https://static.rust-lang.org/dist/rust-1.93.1-x86_64-unknown-linux-gnu.tar.xz
-	sha256sums_x86_64 = 518872275a3648f735471d7add854d39171c5a6b17f423c4d7f931f52120c2af
-	source_aarch64 = https://static.rust-lang.org/dist/rust-1.93.1-aarch64-unknown-linux-gnu.tar.xz
-	sha256sums_aarch64 = 701d55b62286bed013ceb2393ff7687d0953205605afaa15c62e2cd18024c32c
-	source_i686 = https://static.rust-lang.org/dist/rust-1.93.1-i686-unknown-linux-gnu.tar.xz
-	sha256sums_i686 = 7ed2f462bf353060233899722393d78845068f89b15711db03aeba7f2290362f
+	source_x86_64 = https://static.rust-lang.org/dist/rust-1.96.0-x86_64-unknown-linux-gnu.tar.xz
+	sha256sums_x86_64 = c295047583a56238ea06b43f849f4b877fa12bfd4c7103f8d9a74c94c9c4e108
+	source_aarch64 = https://static.rust-lang.org/dist/rust-1.96.0-aarch64-unknown-linux-gnu.tar.xz
+	sha256sums_aarch64 = 371eadcca97062219cbd8593628eb5d2802bc370515d085fedce1b56b2baed57
+	source_i686 = https://static.rust-lang.org/dist/rust-1.96.0-i686-unknown-linux-gnu.tar.xz
+	sha256sums_i686 = 9f1f65f624e4c5e41b45be61d1c7e6cd595b77001f66cb9b830ac0e502d2d301
 
 pkgname = rust-bin
