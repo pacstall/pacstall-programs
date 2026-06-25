@@ -9514,7 +9514,7 @@ pkgname = mobile-usb-networking-deb
 ---
 pkgbase = modprobed-db
 	gives = modprobed-db
-	pkgver = 2.48
+	pkgver = 2.50
 	pkgdesc = Keeps track of EVERY kernel module ever used - useful for make localmodconfig
 	url = https://wiki.archlinux.org/index.php/Modprobed-db
 	arch = any
@@ -9525,8 +9525,8 @@ pkgbase = modprobed-db
 	replaces = modprobed-db-git
 	license = MIT
 	maintainer = xdavius <xdavius@github.com>
-	source = @modprobed-db~2.48::https://github.com/graysky2/modprobed-db/archive/v2.48.tar.gz
-	sha256sums = 746635f2cfbe977e715981b3e7db2fb6c8fc406cecc1ebaee1a9fa7582adafa9
+	source = @modprobed-db~2.50::https://github.com/graysky2/modprobed-db/archive/v2.50.tar.gz
+	sha256sums = 8cd9b490896a5e1e3eddf9c5a7dd771de8627965ffad0ca6426d25c886d904ee
 
 pkgname = modprobed-db
 ---
