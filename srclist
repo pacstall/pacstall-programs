@@ -7414,7 +7414,7 @@ pkgname = libdisplay-info-git
 ---
 pkgbase = libdrm
 	gives = libdrm
-	pkgver = 2.4.125
+	pkgver = 2.4.134
 	pkgdesc = Userspace interface to kernel DRM services
 	url = https://dri.freedesktop.org/
 	arch = any
@@ -7432,17 +7432,17 @@ pkgbase = libdrm
 	replaces = libdrm-radeon1
 	replaces = libdrm-amdgpu1
 	replaces = libdrm-dev
-	provides = libdrm2=2.4.125
-	provides = libdrm-common=2.4.125
-	provides = libdrm-intel1=2.4.125
-	provides = libdrm-nouveau2=2.4.125
-	provides = libdrm-radeon1=2.4.125
-	provides = libdrm-amdgpu1=2.4.125
-	provides = libdrm-dev=2.4.125
+	provides = libdrm2=2.4.134
+	provides = libdrm-common=2.4.134
+	provides = libdrm-intel1=2.4.134
+	provides = libdrm-nouveau2=2.4.134
+	provides = libdrm-radeon1=2.4.134
+	provides = libdrm-amdgpu1=2.4.134
+	provides = libdrm-dev=2.4.134
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = xdavius <xdavius@github.com>
-	source = @drm-libdrm-2.4.125::https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-2.4.125/drm-libdrm-2.4.125.tar.gz
-	sha256sums = dd3e86a9fae99322d6430b28397f8e03ac4fb8deeed9a6e214bd5ced86db68c6
+	source = @drm-libdrm-2.4.134::https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-2.4.134/drm-libdrm-2.4.134.tar.gz
+	sha256sums = cc9862a6c24b15436a6bb7cc8d2d1fee694cc38e5fe6e05faf5dd25438836daf
 
 pkgname = libdrm
 ---
