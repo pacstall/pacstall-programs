@@ -912,13 +912,13 @@ pkgname = awww-git
 ---
 pkgbase = balena-etcher-deb
 	gives = balena-etcher
-	pkgver = 2.1.4
+	pkgver = 2.1.6
 	pkgdesc = Flash OS images to SD cards & USB drives, safely and easily
 	arch = amd64
 	maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>
 	repology = project: etcher
-	source = https://github.com/balena-io/etcher/releases/download/v2.1.4/balena-etcher_2.1.4_amd64.deb
-	sha256sums = c635213bb0724eb789bc036819cd1adb7d0693fd3bd26622811a8f7bd25e9252
+	source = https://github.com/balena-io/etcher/releases/download/v2.1.6/balena-etcher_2.1.6_amd64.deb
+	sha256sums = 2bdebb46c9f750a9abf11c188ff69a405b4a4fed114333d634c3b3fe59a64057
 
 pkgname = balena-etcher-deb
 ---
