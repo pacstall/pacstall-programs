@@ -6503,7 +6503,7 @@ pkgbase = kakoune-tree-sitter
 pkgname = kakoune-tree-sitter
 ---
 pkgbase = kakoune
-	pkgver = 2025.06.03
+	pkgver = 2026.05.21
 	pkgdesc = mawww's experiment for a better code editor
 	url = https://kakoune.org/
 	arch = amd64
@@ -6513,8 +6513,8 @@ pkgbase = kakoune
 	replaces = kakoune
 	license = Unlicense
 	repology = project: kakoune
-	source = https://github.com/mawww/kakoune/archive/refs/tags/v2025.06.03.tar.gz
-	sha256sums = e065dbb715bfe6b0abdaeee775243115748bd540a346d0212fdca6c20c13d340
+	source = https://github.com/mawww/kakoune/archive/refs/tags/v2026.05.21.tar.gz
+	sha256sums = 7ef778bd199e05977841e6f69aad2bee6cd58fb23b0e4bc265d012d42de17580
 
 pkgname = kakoune
 ---
