@@ -1,13 +1,13 @@
 pkgbase = cromite-bin
 	gives = cromite
-	pkgver = 138.0.7204.184
+	pkgver = 148.0.7778.168
 	pkgdesc = Cromite is a Chromium fork based on Bromite with built-in support for ad blocking and an eye for privacy
 	arch = amd64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: cromite
-	source = https://github.com/uazo/cromite/releases/download/v138.0.7204.184-0509d052981e047d6670967788a3e916c70fd4b9/chrome-lin64.tar.gz
+	source = https://github.com/uazo/cromite/releases/download/v148.0.7778.168-cb3baf14f52eb4365d017f640f85310735c19b79/chrome-lin64.tar.gz
 	source = https://www.cromite.org/app_icon.png
-	sha256sums = babcd56252aa76ba616f186a0b1da1b428e34f693070833370d36a87e651ed71
+	sha256sums = f27c78fe320dd5bfd53b05b4a33547a2c80c6ac83ad106807466910faeda9a4d
 	sha256sums = 95ea4e28bc95c30200d832c075a04d79191110573f8bbebf881b81c4cef6c211
 
 pkgname = cromite-bin
