@@ -1,12 +1,12 @@
 pkgname="rambox-deb"
 gives="rambox"
-pkgver="2.4.1"
+pkgver="2.6.3"
 arch=('amd64')
 url='https://rambox.app'
 repology=("project: rambox")
 depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libsecret-1-0")
 optdepends=("libappindicator3-1: AppIndicator/SysTray Support")
-sha256sums=("554316ce93c134dc072092d3c76127a89c5e7fa09b3dc7a69d1e4eae24934ad4")
+sha256sums=("a2aa80c6a79ffb373315d3f205441ffe8353d5b6753b2d0174a53e494635da01")
 source=("https://github.com/ramboxapp/download/releases/download/v${pkgver}/Rambox-${pkgver}-linux-x64.deb")
 replaces=("${pkgname}" "${gives}")
 conflicts=("${replaces[@]}")
