@@ -10,7 +10,6 @@ pkgbase = ollama-bin
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project:ollama
 	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550 | libnvidia-compute-555 | libnvidia-compute-560 | libnvidia-compute-565 | libnvidia-compute-570 | libnvidia-compute-575 | libnvidia-compute-580 | libnvidia-compute-590: required to use CUDA on NVIDIA GPU
-	optdepends_debian = libcuda1: required to use CUDA on NVIDIA GPU
 	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.22.1/ollama-linux-amd64.tar.zst
 	source_amd64 = ollama.service
 	sha256sums_amd64 = e27c0fe8f60a824162f81ce07b4bfda767dce4f357d762e149b3d0de0abad9fb

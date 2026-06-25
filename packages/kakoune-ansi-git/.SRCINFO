@@ -12,7 +12,5 @@ pkgbase = kakoune-ansi-git
 	license = Unlicense
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	source = kakoune-ansi::https://github.com/eraserhd/kak-ansi.git
-	checkdepends_debian = moreutils
-	checkdepends_debian = grep
 
 pkgname = kakoune-ansi-git

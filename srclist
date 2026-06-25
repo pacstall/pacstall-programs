@@ -1479,10 +1479,6 @@ pkgbase = capsfix-git
 	source = https://github.com/oklopfer/capsfix.git
 	depends_questing = keyd
 	depends_resolute = keyd
-	depends_devel = keyd
-	depends_trixie = keyd
-	depends_forky = keyd
-	depends_sid = keyd
 
 pkgname = capsfix-git
 ---
@@ -1720,9 +1716,7 @@ pkgbase = cmake-data-deb
 	repology = project: cmake
 	repology = repo: debian_unstable
 	source_jammy = http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake-data_3.25.1-1ubuntu1_all.deb
-	source_bullseye = http://ftp.debian.org/debian/pool/main/c/cmake/cmake-data_3.25.1-1~bpo11+1_all.deb
 	sha256sums_jammy = 8633c1235e841faa70eb1c58f451338a73048dbddb4d97c482cca92dde61c567
-	sha256sums_bullseye = 6c7c8d91c045ccf44c9cc7dc1f05d8431707df4651bf18b4a3ee34847bc205f3
 
 pkgname = cmake-data-deb
 ---
@@ -1738,9 +1732,7 @@ pkgbase = cmake-deb
 	repology = project: cmake
 	repology = repo: debian_unstable
 	source_jammy = http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.25.1-1ubuntu1_amd64.deb
-	source_bullseye = http://ftp.debian.org/debian/pool/main/c/cmake/cmake_3.25.1-1~bpo11+1_amd64.deb
 	sha256sums_jammy = a8c139c0cf500e47a521930f9e0cf5a814fbed60145a29bb37e7f7ae03a27ca4
-	sha256sums_bullseye = 5561f20944ef4d9d3ea496bc92dff5b1d5adea3cfee1fa302a7298bedeb03f9e
 
 pkgname = cmake-deb
 ---
@@ -3983,11 +3975,7 @@ pkgbase = fsearch-deb
 	sha256sums = 40d5453743c8bca6e15a80b6d4d035594d6629048c98b07c1d30d61a182eebd8
 	pacdeps_jammy = libicu-deb
 	source_jammy = https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_12/amd64/fsearch_0.2.3-1+3.1_amd64.deb
-	source_bullseye = https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_11/amd64/fsearch_0.2.3-1+3.1_amd64.deb
-	source_bookworm = https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_12/amd64/fsearch_0.2.3-1+3.1_amd64.deb
 	sha256sums_jammy = 2f8b3b9a0153499b161866df64e081777f9085c789911817178986d96c220fcb
-	sha256sums_bullseye = 1ecaacb7e1f2b3eab3c15c7307bab0cbea9c0a8aa32ffc195e0d354a86d3a0f6
-	sha256sums_bookworm = 2f8b3b9a0153499b161866df64e081777f9085c789911817178986d96c220fcb
 
 pkgname = fsearch-deb
 ---
@@ -4894,36 +4882,9 @@ pkgbase = gpu-screen-recorder
 	depends_noble = libavfilter9
 	depends_noble = libswresample4
 	depends_noble = libpipewire-0.3-0t64
-	depends_bullseye = libavcodec58
-	depends_bullseye = libavutil56
-	depends_bullseye = libavformat58
-	depends_bullseye = libavfilter7
-	depends_bullseye = libswresample3
-	depends_bullseye = libpipewire-0.3-0
-	depends_bookworm = libavcodec59
-	depends_bookworm = libavutil57
-	depends_bookworm = libavformat59
-	depends_bookworm = libavfilter8
-	depends_bookworm = libswresample4
-	depends_bookworm = libpipewire-0.3-0
-	depends_trixie = libavcodec61
-	depends_trixie = libavutil59
-	depends_trixie = libavformat61
-	depends_trixie = libavfilter10
-	depends_trixie = libswresample5
-	depends_trixie = libpipewire-0.3-0t64
-	depends_sid = libavcodec61
-	depends_sid = libavutil59
-	depends_sid = libavformat61
-	depends_sid = libavfilter10
-	depends_sid = libswresample5
-	depends_sid = libpipewire-0.3-0t64
 	optdepends_ubuntu = libnvidia-encode-390 | libnvidia-encode-418 | libnvidia-encode-430 | libnvidia-encode-440 | libnvidia-encode-450 | libnvidia-encode-455 | libnvidia-encode-460 | libnvidia-encode-465 | libnvidia-encode-470 | libnvidia-encode-495 | libnvidia-encode-510 | libnvidia-encode-515 | libnvidia-encode-520 | libnvidia-encode-525 | libnvidia-encode-530 | libnvidia-encode-535 | libnvidia-encode-545 | libnvidia-encode-550: Required to record your screen on NVIDIA
 	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550: Required to record your screen on NVIDIA
 	optdepends_ubuntu = libnvidia-fbc1-390 | libnvidia-fbc1-418 | libnvidia-fbc1-430 | libnvidia-fbc1-440 | libnvidia-fbc1-450 | libnvidia-fbc1-455 | libnvidia-fbc1-460 | libnvidia-fbc1-465 | libnvidia-fbc1-470 | libnvidia-fbc1-495 | libnvidia-fbc1-510 | libnvidia-fbc1-515 | libnvidia-fbc1-520 | libnvidia-fbc1-525 | libnvidia-fbc1-530 | libnvidia-fbc1-535 | libnvidia-fbc1-545 | libnvidia-fbc1-550: Required to record your screen on NVIDIA on X11
-	optdepends_debian = libnvidia-encode1: Required to record your screen on NVIDIA
-	optdepends_debian = libcuda1: Required to record your screen on NVIDIA
-	optdepends_debian = libnvidia-fbc1: Required to record your screen on NVIDIA on X11
 
 pkgname = gpu-screen-recorder
 ---
@@ -4978,9 +4939,6 @@ pkgbase = gradience-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/GradienceTeam/Gradience.git
 	pacdeps_noble = python3-zombie-imp
-	pacdeps_devel = python3-zombie-imp
-	pacdeps_trixie = python3-zombie-imp
-	pacdeps_sid = python3-zombie-imp
 
 pkgname = gradience-git
 ---
@@ -5036,9 +4994,6 @@ pkgbase = gradience
 	source = https://github.com/GradienceTeam/Gradience/archive/refs/tags/0.4.1-patch1.tar.gz
 	b2sums = ca16dacd9c5c4af901a5e289d11aafa0a581f43477ea473d06e92a17582b6e397de60ab2e52036602e4028b0fde688a5511c6b7ba0577c08c03a6ed50e04383d
 	pacdeps_noble = python3-zombie-imp
-	pacdeps_devel = python3-zombie-imp
-	pacdeps_trixie = python3-zombie-imp
-	pacdeps_sid = python3-zombie-imp
 
 pkgname = gradience
 ---
@@ -5893,18 +5848,8 @@ pkgbase = hyprland
 	sha256sums = de53d764606131c8aacc209f8a3ad6e619fdcddd16a7cdf4d8ca343816bb8c1b
 	makedepends_noble = vulkan-utility-libraries-dev
 	makedepends_noble = libdrm-dev
-	makedepends_devel = vulkan-utility-libraries-dev
-	makedepends_devel = libdrm-dev
-	makedepends_trixie = vulkan-validationlayers-dev
-	makedepends_trixie = libdrm-dev
-	makedepends_sid = vulkan-validationlayers-dev
-	makedepends_sid = libdrm-dev
 	pacdeps_noble = libtomlplusplus-header
 	pacdeps_noble = xdg-desktop-portal-hyprland
-	pacdeps_devel = libtomlplusplus-header
-	pacdeps_devel = xdg-desktop-portal-hyprland
-	pacdeps_trixie = xdg-desktop-portal-hyprland
-	pacdeps_sid = xdg-desktop-portal-hyprland
 
 pkgname = hyprland
 ---
@@ -6128,26 +6073,12 @@ pkgbase = input-leap-bin
 	depends_noble = libportal1
 	depends_questing = libei1
 	depends_questing = libportal1
-	depends_trixie = libei1
-	depends_trixie = libportal1
-	depends_forky = libei1
-	depends_forky = libportal1
-	depends_sid = libei1
-	depends_sid = libportal1
 	source_jammy = https://github.com/input-leap/input-leap/releases/download/v3.0.3/input-leap-ubuntu-22-04-v3.0.3.tar.gz
 	source_noble = https://github.com/input-leap/input-leap/releases/download/v3.0.3/input-leap-ubuntu-24-04-v3.0.3.tar.gz
 	source_questing = https://github.com/input-leap/input-leap/releases/download/v3.0.3/input-leap-ubuntu-24-10-v3.0.3.tar.gz
-	source_bookworm = https://github.com/input-leap/input-leap/releases/download/v3.0.3/input-leap-debian-12-v3.0.3.tar.gz
-	source_trixie = https://github.com/input-leap/input-leap/releases/download/v3.0.3/input-leap-debian-12-latest-libei-v3.0.3.tar.gz
-	source_forky = https://github.com/input-leap/input-leap/releases/download/v3.0.3/input-leap-debian-12-latest-libei-v3.0.3.tar.gz
-	source_sid = https://github.com/input-leap/input-leap/releases/download/v3.0.3/input-leap-debian-12-latest-libei-v3.0.3.tar.gz
 	sha256sums_jammy = 48516fe7ede3685da5036ae9887f2b37f98e3a8817dde1ed0704eaa844b9a863
 	sha256sums_noble = 18f5f791e911bf373b2484757e60d9d38bcd7bbaae6d23bf78541eb22c337c5a
 	sha256sums_questing = b0bd213b45aaf8dd3631dd630334d8c9d7ad973497b50fc496726228d54419e6
-	sha256sums_bookworm = 271a147bd73c3fe590635c3deee3fe424e5f8830ca4a14b7f927dc7c6fd19989
-	sha256sums_trixie = b08dd7575c57174030af5ce1eed2788e16f0543f938cfac390e46cfbb18ff53a
-	sha256sums_forky = b08dd7575c57174030af5ce1eed2788e16f0543f938cfac390e46cfbb18ff53a
-	sha256sums_sid = b08dd7575c57174030af5ce1eed2788e16f0543f938cfac390e46cfbb18ff53a
 
 pkgname = input-leap-bin
 ---
@@ -6276,11 +6207,7 @@ pkgbase = jellyfin-media-player-deb
 	source = https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.11.1/jellyfin-media-player_1.11.1-1_amd64-jammy.deb
 	sha256sums = e5aa0c7fbb093ac519c1041873571baa2c5bbb6fdd7db16430be15c291f770c7
 	source_noble = https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.11.1/jellyfin-media-player_1.11.1-1_amd64-noble.deb
-	source_bookworm = https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.11.1/jellyfin-media-player_1.11.1-1_amd64-bookworm.deb
-	source_trixie = https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.11.1/jellyfin-media-player_1.11.1-1_amd64-trixie.deb
 	sha256sums_noble = a8ac03f054b7da418249b4ed32033eea146d7ca5d08fa4e3bd33ee5e36048c5d
-	sha256sums_bookworm = eed40a2a2c10bdae4d7b1ecb2a8dfa8dd22e90916273087e1b9836182dee315c
-	sha256sums_trixie = fb246b38aeea7e6ba999ac7018fd12e6f37859ffb577b45ead414fad28655123
 
 pkgname = jellyfin-media-player-deb
 ---
@@ -6390,8 +6317,6 @@ pkgbase = kakoune-ansi-git
 	license = Unlicense
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	source = kakoune-ansi::https://github.com/eraserhd/kak-ansi.git
-	checkdepends_debian = moreutils
-	checkdepends_debian = grep
 
 pkgname = kakoune-ansi-git
 ---
@@ -8073,7 +7998,6 @@ pkgbase = linux-image-rockchip-deb
 	repology = binname: linux-mainline
 	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-image-6.18-rockchip_6.18.36-1_arm64.deb
 	sha256sums = 1c28a919606876ba26c964cd45ba11a0eaedc4d45ab66900ce6c4613d9223c6a
-	depends_debian = firmware-brcm80211
 	pacdeps_ubuntu = firmware-brcm80211-deb
 
 pkgname = linux-image-rockchip-deb
@@ -8109,7 +8033,6 @@ pkgbase = linux-image-sunxi-deb
 	repology = binname: linux-mainline
 	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-image-6.18-sunxi64_6.18.36-1_arm64.deb
 	sha256sums = 314c1fb5669bb5f506d7a6cd086a4ca41a0095cdb5497ce68280d92fecbfd178
-	depends_debian = firmware-realtek
 	pacdeps_ubuntu = firmware-realtek-deb
 
 pkgname = linux-image-sunxi-deb
@@ -8992,12 +8915,8 @@ pkgbase = megasync-deb
 	repology = project: megasync
 	source_jammy = https://mega.nz/linux/repo/xUbuntu_22.04/amd64/megasync_5.2.1-4.1_amd64.deb
 	source_noble = https://mega.nz/linux/repo/xUbuntu_24.04/amd64/megasync_5.2.1-2.1_amd64.deb
-	source_bullseye = https://mega.nz/linux/repo/Debian_11/amd64/megasync_5.2.1-4.1_amd64.deb
-	source_bookworm = https://mega.nz/linux/repo/Debian_12/amd64/megasync_5.2.1-4.1_amd64.deb
 	sha256sums_jammy = 5b8ce6c03a0a933832451eab2425519e7fa8480f58b5a0c6d9457476ec0e9aa1
 	sha256sums_noble = 3e1f9816c449dede48a095d7cdcba733be26739fb1e6cbc1a43a47a372654865
-	sha256sums_bullseye = 304ae53fbdbbfa5fd290c97129e93df9ef0ea5610b94a68e8a4e6d8cee8fd1b3
-	sha256sums_bookworm = 5a63deac549fd09daeca479fd0bbbf0cb329dc9bef1245a334a1a75535548635
 
 pkgname = megasync-deb
 ---
@@ -11245,7 +11164,6 @@ pkgbase = ollama-bin
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project:ollama
 	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550 | libnvidia-compute-555 | libnvidia-compute-560 | libnvidia-compute-565 | libnvidia-compute-570 | libnvidia-compute-575 | libnvidia-compute-580 | libnvidia-compute-590: required to use CUDA on NVIDIA GPU
-	optdepends_debian = libcuda1: required to use CUDA on NVIDIA GPU
 	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.22.1/ollama-linux-amd64.tar.zst
 	source_amd64 = ollama.service
 	sha256sums_amd64 = e27c0fe8f60a824162f81ce07b4bfda767dce4f357d762e149b3d0de0abad9fb
@@ -12004,10 +11922,8 @@ pkgbase = pgadmin4-desktop-deb
 	sha256sums = 5721b426c51dfee997bc0687ea7eef4b81bb1e9c65af2396fe62b821fb4a7b72
 	source_jammy = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.5_amd64.deb
 	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.5_amd64.deb
-	source_bookworm = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/bookworm/dists/pgadmin4/main/binary-amd64/pgadmin4-desktop_9.5_amd64.deb
 	sha256sums_jammy = 669fdbb300b6dba81690881925dd91f2a08fcf595474bd6a219b486305fb11ca
 	sha256sums_noble = f8edb5da744f4dc139262526a922417c0e01554da939357a18bade22e9769c15
-	sha256sums_bookworm = 0b9d9f02714e5dabca4693cffec719389ee5683d69c87fdd1040d343c9479979
 
 pkgname = pgadmin4-desktop-deb
 ---
@@ -12027,10 +11943,8 @@ pkgbase = pgadmin4-server-deb
 	sha256sums = 512307389ed6f780ce292bbcf651e88af56a8fd122c039e6f44d859727410a47
 	source_jammy = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/jammy/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.5_amd64.deb
 	source_noble = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/noble/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.5_amd64.deb
-	source_bookworm = https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/bookworm/dists/pgadmin4/main/binary-amd64/pgadmin4-server_9.5_amd64.deb
 	sha256sums_jammy = fc302407b5c116a59b2cf2028a8e65249e6603a147e5c7081abe9611b56030c5
 	sha256sums_noble = 1f67f157ff9cd4fd5c6e8e7aa2cccf30b3e79d50e5cf2c50fe9dce9258ff592f
-	sha256sums_bookworm = ba577f415a211845f5d935129ee636d4eeb70843f3ca5d155701bd6dc84c78c1
 
 pkgname = pgadmin4-server-deb
 ---
@@ -12471,8 +12385,6 @@ pkgbase = ppsspp-git
 	depends_noble = libpng16-16t64
 	depends_questing = libzip5
 	depends_questing = libpng16-16t64
-	depends_bookworm = libzip4
-	depends_bookworm = libpng16-16
 
 pkgname = ppsspp-git
 ---
@@ -16913,9 +16825,7 @@ pkgbase = veracrypt-deb
 	source = https://launchpad.net/veracrypt/trunk/1.26.24/+download/veracrypt-1.26.24-Ubuntu-24.04-amd64.deb
 	sha256sums = 7c9844771203a6e96f7e4b86b245b85f0d1e45ade70f3f81b1d1b178fc81ca87
 	source_jammy = https://launchpad.net/veracrypt/trunk/1.26.24/+download/veracrypt-1.26.24-Ubuntu-22.04-amd64.deb
-	source_bookworm = https://launchpad.net/veracrypt/trunk/1.26.24/+download/veracrypt-1.26.24-Debian-12-amd64.deb
 	sha256sums_jammy = e785216c8a3ee1edc6ac800fc3a471f2390b45205a3af10985006bb263695814
-	sha256sums_bookworm = b00d44779accc803831dd42e0d4c3a63445bb0c26701f0a43d131f76e01f025c
 
 pkgname = veracrypt-deb
 ---
@@ -17036,12 +16946,8 @@ pkgbase = virtualbox-deb
 	repology = project: virtualbox
 	source_jammy = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Ubuntu~jammy_amd64.deb
 	source_noble = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Ubuntu~noble_amd64.deb
-	source_bullseye = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Debian~bullseye_amd64.deb
-	source_bookworm = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Debian~bookworm_amd64.deb
 	sha256sums_jammy = 0094042f659eac5f4f82bd2f1afa00ed6f0c5cec3b43a873cc4b61f43e4fb8f0
 	sha256sums_noble = b1e8406c141ff40221cebe5a99224ec74f1960d1491986d3bb1300a99c4790a1
-	sha256sums_bullseye = 0ea7dc51de62e9ce65862ea72635eeefcdf21016fe54444d3f956f0119ac0ac0
-	sha256sums_bookworm = e87626c95d3162939c397a003f0d2772419cfe138e68ea1074430fbca8c6c13f
 
 pkgname = virtualbox-deb
 ---
