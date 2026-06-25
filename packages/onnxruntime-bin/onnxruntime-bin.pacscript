@@ -3,10 +3,10 @@ gives="onnxruntime"
 repology=("project: onnxruntime")
 replaces=("${gives}" "${gives}-bin" "${gives}-1-7-0-bin" "${gives}-gpu" "${gives}-gpu-bin")
 arch=("amd64")
-pkgver="1.22.0"
+pkgver="1.27.0"
 source=("@${pkgname}~${pkgver}::https://github.com/microsoft/onnxruntime/releases/download/v${pkgver}/onnxruntime-linux-x64-${pkgver}.tgz")
 pkgdesc="Cross-platform inference and training machine-learning accelerator"
-sha256sums=("8344d55f93d5bc5021ce342db50f62079daf39aaafb5d311a451846228be49b3")
+sha256sums=("547e40a48f1fe73e3f812d7c88a948612c23f896b91e4e2ee1e232d7b468246f")
 maintainer=("Zahrun <zahrunAtmurenaDotio>")
 
 package() {
