@@ -2388,15 +2388,15 @@ pkgname = direnv-bin
 ---
 pkgbase = discord-canary-deb
 	gives = discord-canary
-	pkgver = 0.0.735
+	pkgver = 1.0.1345
 	pkgdesc = Chat for Communities and Friends Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com
 	arch = amd64
 	conflicts = discord-canary
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: discord-canary
-	source = https://canary.dl2.discordapp.net/apps/linux/0.0.735/discord-canary-0.0.735.deb
-	sha256sums = 981fb85e20e7547022a5bc45a91693e6f7b756f405a8e0e8e2c43f19a2320dab
+	source = https://canary.dl2.discordapp.net/apps/linux/1.0.1345/discord-canary-1.0.1345.deb
+	sha256sums = 5a3fbd2a5d8344da80c98c4ebf9075f268f09d9c748b7c97af14edae89f6c621
 
 pkgname = discord-canary-deb
 ---
