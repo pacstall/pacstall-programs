@@ -6925,7 +6925,7 @@ pkgbase = kvantum-theme-libadwaita-git
 pkgname = kvantum-theme-libadwaita-git
 ---
 pkgbase = kvantum
-	pkgver = 1.1.6
+	pkgver = 1.1.8
 	pkgdesc = SVG-based theme engine for Qt
 	arch = any
 	makedepends = g++
@@ -6937,8 +6937,8 @@ pkgbase = kvantum
 	makedepends = libxext-dev
 	breaks = qt6-style-kvantum
 	incompatible = debian:bullseye
-	source = @kvantum~1.1.6::https://github.com/tsujan/Kvantum/releases/download/V1.1.6/Kvantum-1.1.6.tar.xz
-	sha256sums = 018df6bf93924c5af55c927998f096f8c70845a2f6031f5e0fcc95edb336674b
+	source = @kvantum~1.1.8::https://github.com/tsujan/Kvantum/releases/download/V1.1.8/Kvantum-1.1.8.tar.xz
+	sha256sums = 7aa9099345e48048ebdad768f583944ac042f87b216fa0b26a169c7e05425047
 
 pkgname = kvantum
 ---
