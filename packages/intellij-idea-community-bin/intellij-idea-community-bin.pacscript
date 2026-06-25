@@ -1,17 +1,17 @@
 pkgname="intellij-idea-community-bin"
-pkgver="2024.3.3"
+pkgver="2026.1.3"
 gives="intellij-idea-community"
 arch=("amd64" "arm64")
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>" "James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="IDE for developing computer software written in Java, Kotlin, Groovy, and other JVM-based languages"
-source_amd64=("https://download.jetbrains.com/idea/ideaIC-${pkgver}.tar.gz")
-sha256sums_amd64=("ae3c45fe515fef672f52ce5c4701bc40a5f82cb94f21fed2c6e66c22e3dc91db")
-source_arm64=("https://download.jetbrains.com/idea/ideaIC-${pkgver}-aarch64.tar.gz")
-sha256sums_arm64=("9ce7e15135e97e92601654f456a6211127c165b35f62784886c4ec3b466af8f9")
+source_amd64=("https://github.com/JetBrains/intellij-community/releases/download/idea-${pkgver}/idea-${pkgver}.tar.gz")
+source_arm64=("https://github.com/JetBrains/intellij-community/releases/download/idea-${pkgver}/idea-${pkgver}-aarch64.tar.gz")
+sha256sums_amd64=("54d7938d7d892fc738890986b74115cf4ed11d7e74bac6888e912ecd783db837")
+sha256sums_arm64=("2c77a40856cce5deacbbbe27555ace1c5cb25f92b23f6e8f48b41cba9f6db4e5")
 repology=("project: ${gives}")
 
 package() {
-  cd "${srcdir}/idea-IC-243.24978.46"
+  cd "${srcdir}"/idea-IC-*
   install -dm755 "${pkgdir}/usr/share/licenses/intellij-idea-community"
   install -dm755 "${pkgdir}/usr/share/intellij-idea-community"
   install -dm755 "${pkgdir}/usr/share/pixmaps"
