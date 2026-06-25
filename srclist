@@ -4294,13 +4294,13 @@ pkgname = git-credential-manager-core-deb
 ---
 pkgbase = git-delta-deb
 	gives = git-delta
-	pkgver = 0.18.2
+	pkgver = 0.19.2
 	pkgdesc = A viewer for git and diff output
 	arch = amd64
 	incompatible = debian:bullseye
 	repology = project: git-delta
-	source = https://github.com/dandavison/delta/releases/download/0.18.2/git-delta_0.18.2_amd64.deb
-	sha256sums = 1658c7b61825d411b50734f34016101309e4b6e7f5799944cf8e4ac542cebd7f
+	source = https://github.com/dandavison/delta/releases/download/0.19.2/git-delta_0.19.2_amd64.deb
+	sha256sums = ea4f0222950ee750a3d38dd80d03bce4cee07a3f63928fc47548383bcaf23093
 
 pkgname = git-delta-deb
 ---
