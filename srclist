@@ -7111,7 +7111,7 @@ pkgname = lazarus-project-deb
 ---
 pkgbase = lazydocker-bin
 	gives = lazydocker
-	pkgver = 0.24.4
+	pkgver = 0.25.2
 	pkgdesc = The lazier way to manage everything docker
 	url = https://github.com/jesseduffield/lazydocker
 	arch = amd64
@@ -7122,10 +7122,10 @@ pkgbase = lazydocker-bin
 	license = MIT
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: lazydocker
-	source_amd64 = https://github.com/jesseduffield/lazydocker/releases/download/v0.24.4/lazydocker_0.24.4_Linux_x86_64.tar.gz
-	sha256sums_amd64 = c47e6f4b61debde5422183c7eb446a704a92c58b4c35bbd128c722d8bf269a86
-	source_arm64 = https://github.com/jesseduffield/lazydocker/releases/download/v0.24.4/lazydocker_0.24.4_Linux_arm64.tar.gz
-	sha256sums_arm64 = 0fcf85b736895f46daa38eec5871ef1ca3d1e38b20201b2811b26258faccf1c7
+	source_amd64 = https://github.com/jesseduffield/lazydocker/releases/download/v0.25.2/lazydocker_0.25.2_Linux_x86_64.tar.gz
+	sha256sums_amd64 = 0d9dbfc26068b218e7ed84b104748cadc6e3cf733c0afd35465306fb39b9523c
+	source_arm64 = https://github.com/jesseduffield/lazydocker/releases/download/v0.25.2/lazydocker_0.25.2_Linux_arm64.tar.gz
+	sha256sums_arm64 = 005c38b685aaa557e7d646d83a3dadb5024340eeed8c6a2e1949eee6f530de23
 
 pkgname = lazydocker-bin
 ---
