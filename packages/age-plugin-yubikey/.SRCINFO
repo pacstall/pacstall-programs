@@ -2,8 +2,7 @@ pkgbase = age-plugin-yubikey
 	pkgver = 0.5.1
 	pkgdesc = YubiKey plugin for age clients
 	url = https://github.com/str4d/age-plugin-yubikey
-	arch = amd64
-	arch = arm64
+	arch = any
 	depends = pcscd
 	depends = libpcsclite1
 	makedepends = cargo>=1.70
