@@ -8474,15 +8474,15 @@ pkgname = lsd-deb
 ---
 pkgbase = lunacy-deb
 	gives = lunacy
-	pkgver = 12.3
+	pkgver = 14.1
 	pkgdesc = Free design software that keeps your flow with AI tools and built-in graphics
 	url = https://icons8.com/lunacy/
 	arch = amd64
 	maintainer = Anifyuli <anifyuliansyah@gmail.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: lunacy
-	source = https://lcdn.icons8.com/setup/Lunacy_12.3.deb
-	sha256sums = 49ae8b9c1f981a41e93691138c61d850284216ee868a7cfe5503bc74f2954411
+	source = https://lcdn.icons8.com/setup/Lunacy_14.1.deb
+	sha256sums = ae23a5bdddd9c5d0b0e697b9bf44748ea54ca4e14e8957eac66821f18aa73ddd
 
 pkgname = lunacy-deb
 ---
