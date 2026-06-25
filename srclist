@@ -2911,14 +2911,14 @@ pkgname = eddie-ui-deb
 ---
 pkgbase = electerm-deb
 	gives = electerm
-	pkgver = 2.10.6
+	pkgver = 3.15.76
 	pkgdesc = Open-sourced terminal/ssh/telnet/serialport/sftp client
 	arch = amd64
 	breaks = electerm-bin
 	maintainer = Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>
 	repology = project: electerm
-	source = https://github.com/electerm/electerm/releases/download/v2.10.6/electerm-2.10.6-linux-amd64.deb
-	sha256sums = ad46b322c96de06fbc30cd8dc26c18107e876a0a7ba1de94378d2b411749d091
+	source = https://github.com/electerm/electerm/releases/download/v3.15.76/electerm-3.15.76-linux-amd64.deb
+	sha256sums = eff593121dcf077981e2636ca078786031d478cc6bf2cafcee76f82c71ca4e64
 
 pkgname = electerm-deb
 ---
