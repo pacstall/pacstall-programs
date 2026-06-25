@@ -6398,7 +6398,7 @@ pkgname = jsonnet-bundler-bin
 ---
 pkgbase = kakoune-ansi-git
 	gives = kakoune-ansi
-	pkgver = 0.2.8
+	pkgver = 0.3.0
 	pkgdesc = Support for rendering ANSI-colored text in Kakoune
 	url = https://github.com/eraserhd/kak-ansi
 	arch = any
