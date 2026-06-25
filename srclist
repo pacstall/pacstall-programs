@@ -8961,14 +8961,14 @@ pkgbase = mdbook-linkcheck
 pkgname = mdbook-linkcheck
 ---
 pkgbase = mdbook
-	pkgver = 0.5.2
+	pkgver = 0.5.3
 	pkgdesc = Utility to create modern online books from Markdown files
 	url = https://rust-lang.github.io/mdBook/
 	arch = any
 	makedepends = cargo>=1.88.0
 	repology = project: mdbook
-	source = https://github.com/rust-lang/mdBook/archive/refs/tags/v0.5.2.tar.gz
-	sha256sums = 2c8615a17c5670f9aa6d8dbf77c343cf430f95f571f28a87bb7aaa8f29c1ac5b
+	source = https://github.com/rust-lang/mdBook/archive/refs/tags/v0.5.3.tar.gz
+	sha256sums = 7c3e2907c0482fc9721a46ac42d7954600d795ce2152bed418553999ec1ee8f1
 
 pkgname = mdbook
 ---
