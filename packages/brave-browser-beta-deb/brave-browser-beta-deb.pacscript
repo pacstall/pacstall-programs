@@ -1,12 +1,12 @@
 pkgname="brave-browser-beta-deb"
 gives="brave-browser-beta"
 arch=("amd64")
-pkgver="1.91.142"
+pkgver="1.93.105"
 breaks=("${gives}-bin" "${gives}-git" "${gives}-app")
 source=("https://github.com/brave/brave-browser/releases/download/v${pkgver}/${gives}_${pkgver}_amd64.deb")
 url='https://brave.com/'
 pkgdesc="Testing version of world's most unique, privacy friendly web browser"
-sha256sums=("3540d1235aa945eff8ea0e4eb04d228cd00f84b54451730e7a5a29de67a593a2")
+sha256sums=("cbf062cceba211c836ede1a18187c067ae124e703067f11f7e350e493a6356ed")
 pacdeps=("brave-keyring-deb")
 repology=("project: brave" "visiblename: brave-beta-bin")
 maintainer=("Elsie19 <elsie19@pm.me>")
