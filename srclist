@@ -10984,7 +10984,7 @@ pkgbase = obs-backgroundremoval-git
 pkgname = obs-backgroundremoval-git
 ---
 pkgbase = obs-backgroundremoval
-	pkgver = 1.3.5
+	pkgver = 1.3.7
 	pkgdesc = OBS plugin to replace the background in portrait images and video
 	arch = amd64
 	makedepends = libobs-dev
@@ -11007,8 +11007,8 @@ pkgbase = obs-backgroundremoval
 	incompatible = *:bullseye
 	maintainer = Zahrun <zahrunAtmurenaDotio>
 	repology = project: obs-backgroundremoval
-	source = @obs-backgroundremoval~1.3.5::https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/1.3.5.tar.gz
-	sha256sums = 787f427e306abf9561f1a6686cd0e0a9228af1b429a991676d11235fd0ad98d1
+	source = @obs-backgroundremoval~1.3.7::https://github.com/royshil/obs-backgroundremoval/archive/refs/tags/1.3.7.tar.gz
+	sha256sums = 0994dd60cb34f132273fb3d0be7db770cdb7c732d08908b584b74b44bc820da1
 
 pkgname = obs-backgroundremoval
 ---
