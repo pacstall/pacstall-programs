@@ -2955,7 +2955,7 @@ pkgname = electrum-git
 ---
 pkgbase = element-desktop-deb
 	gives = element-desktop
-	pkgver = 1.12.10
+	pkgver = 1.12.22
 	pkgdesc = Element is a feature-packed Matrix client
 	url = https://element.io/
 	arch = amd64
@@ -2965,8 +2965,8 @@ pkgbase = element-desktop-deb
 	replaces = element-desktop
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: element-desktop
-	source = https://packages.element.io/debian/pool/main/e/element-desktop/element-desktop_1.12.10_amd64.deb
-	sha256sums = 4af04be4a6396f6b060a8c67b9ff590e23af327a933e83f374a3f9cbe0a88fe7
+	source = https://packages.element.io/debian/pool/main/e/element-desktop/element-desktop_1.12.22_amd64.deb
+	sha256sums = db9231fbec645824adad2e84af2c3311cf3df306f43b96e9bacc97957385049a
 
 pkgname = element-desktop-deb
 ---
