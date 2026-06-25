@@ -6257,14 +6257,14 @@ pkgname = it87-dkms-git
 ---
 pkgbase = ivpn-deb
 	gives = ivpn
-	pkgver = 3.15.0
+	pkgver = 3.15.6
 	pkgdesc = Official IVPN Desktop app - Base Package
 	arch = amd64
 	breaks = ivpn-git
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: ivpn
-	source = https://repo.ivpn.net/stable/pool/ivpn_3.15.0_amd64.deb
-	sha256sums = b8db37c58ff6896d353f5f338eafbe8532a09a0e1afa3be0f438bd9846a21bea
+	source = https://repo.ivpn.net/stable/pool/ivpn_3.15.6_amd64.deb
+	sha256sums = 78c6b8a0c86b434d6ad9d7e734730dbb352cb77ae07c47a7f1ab77bb88db1125
 
 pkgname = ivpn-deb
 ---
