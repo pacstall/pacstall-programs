@@ -1,5 +1,5 @@
 pkgname="cbindgen"
-pkgver="0.29.2"
+pkgver="0.29.4"
 pkgdesc="A tool for generating C bindings to Rust code"
 url='https://github.com/mozilla/cbindgen'
 repology=("project: ${pkgname}")
