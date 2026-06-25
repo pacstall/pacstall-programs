@@ -1,5 +1,5 @@
 pkgname='kakoune-ansi-git'
-pkgver="0.2.8"
+pkgver="0.3.0"
 pkgdesc='Support for rendering ANSI-colored text in Kakoune'
 gives='kakoune-ansi'
 license=('Unlicense')
