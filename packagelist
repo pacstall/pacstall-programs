@@ -736,6 +736,7 @@ scrcpy
 scx-loader
 scx-scheds
 sed
+sesh-bin
 setconf
 shellcheck-bin
 shell-color-scripts
