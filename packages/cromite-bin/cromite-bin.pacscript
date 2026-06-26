@@ -24,5 +24,5 @@ package() {
   chmod +x "${pkgdir}/usr/share/cromite/chrome"
   mkdir -p "${pkgdir}/usr/share/pixmaps"
   cp "${srcdir}/cromite.svg" "${pkgdir}/usr/share/pixmaps/cromite.svg"
-  install -Dm644 "${srcdir}/cromite.desktop" "/usr/share/applications/cromite.desktop"
+  install -Dm644 "${srcdir}/cromite.desktop" "${pkgdir}/usr/share/applications/cromite.desktop"
 }
