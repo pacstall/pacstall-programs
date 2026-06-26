@@ -1,8 +1,8 @@
 pkgname="lact"
 repology=("project: lact")
 arch=('x86_64' 'aarch64')
-pkgver="0.9.0"
-_commit='454a6e24af830a1f434385fc3faebec19c0cbefa'
+pkgver="0.9.1"
+_commit='6a7d0960eed5f05cab7b6f1a01d87dbf31d425d1'
 url='https://github.com/ilya-zlobintsev/LACT'
 source=("https://github.com/ilya-zlobintsev/LACT.git#commit=${_commit}")
 sha256sums=("SKIP")
