@@ -2,7 +2,7 @@
 
 pkgname="nuitka-git"
 pkgver="2.4.6.r61.g58d849260"
-repology=("project: nuitka") 
+repology=("project: nuitka")
 pkgdesc="Python compiler"
 arch=('any')
 pkgrel=2

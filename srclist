@@ -10811,7 +10811,7 @@ pkgname = nuclei-bin
 ---
 pkgbase = nuitka-git
 	pkgver = 2.4.6.r61.g58d849260
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Python compiler
 	url = https://nuitka.net/
 	arch = any
@@ -10838,6 +10838,7 @@ pkgbase = nuitka-git
 	provides = nuitka
 	license = Apache-2.0
 	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: nuitka
 	source = git+https://github.com/Nuitka/Nuitka.git
 
 pkgname = nuitka-git
