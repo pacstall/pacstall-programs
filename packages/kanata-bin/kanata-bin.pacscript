@@ -24,7 +24,7 @@ backup=('etc/kanata/config.kbd')
 package() {
   install -Dm755 "${pkgname}~${pkgver}/kanata_linux_x64" "${pkgdir}/usr/bin/kanata"
   install -Dm644 "LICENSE" "${pkgdir}/usr/share/doc/${gives}/copyright"
-  install -Dm644 "kanata.service" "${pkgdir}/usr/lib/systemd/system/"
+  install -Dm644 "kanata.service" "${pkgdir}/usr/lib/systemd/system/kanata.service"
 }
 
 post_install() {
