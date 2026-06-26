@@ -7803,7 +7803,7 @@ pkgbase = libxapp1-deb
 pkgname = libxapp1-deb
 ---
 pkgbase = libxkbcommon
-	pkgver = 1.13.1
+	pkgver = 1.13.2
 	pkgdesc = Keyboard keymap compiler and support library
 	url = https://xkbcommon.org
 	arch = any
@@ -7831,17 +7831,17 @@ pkgbase = libxkbcommon
 	replaces = libxkbcommon-dev
 	replaces = libxkbregistry0
 	replaces = libxkbregistry-dev
-	provides = libxkbcommon-tools=1.13.1
-	provides = libxkbcommon-x11-0=1.13.1
-	provides = libxkbcommon-x11-dev=1.13.1
-	provides = libxkbcommon0=1.13.1
-	provides = libxkbcommon-dev=1.13.1
-	provides = libxkbregistry0=1.13.1
-	provides = libxkbregistry-dev=1.13.1
+	provides = libxkbcommon-tools=1.13.2
+	provides = libxkbcommon-x11-0=1.13.2
+	provides = libxkbcommon-x11-dev=1.13.2
+	provides = libxkbcommon0=1.13.2
+	provides = libxkbcommon-dev=1.13.2
+	provides = libxkbregistry0=1.13.2
+	provides = libxkbregistry-dev=1.13.2
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: libxkbcommon
-	source = @libxkbcommon~1.13.1::https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.13.1.tar.gz
-	sha256sums = aeb951964c2f7ecc08174cb5517962d157595e9e3f38fc4a130b91dc2f9fec18
+	source = @libxkbcommon~1.13.2::https://github.com/xkbcommon/libxkbcommon/archive/refs/tags/xkbcommon-1.13.2.tar.gz
+	sha256sums = acc4d5f7c3cbba5f9f8d08d8bdbeede84ecede46792f47929aa9321873385528
 
 pkgname = libxkbcommon
 ---
