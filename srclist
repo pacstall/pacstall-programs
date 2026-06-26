@@ -10811,6 +10811,7 @@ pkgname = nuclei-bin
 ---
 pkgbase = nuitka-git
 	pkgver = 2.4.6.r61.g58d849260
+	pkgrel = 1
 	pkgdesc = Python compiler
 	url = https://nuitka.net/
 	arch = any
@@ -10833,11 +10834,11 @@ pkgbase = nuitka-git
 	makedepends = libxslt1.1
 	optdepends = chrpath: for building standalone executables
 	conflicts = nuitka
+	conflicts = python3-nuitka
 	provides = nuitka
 	license = Apache-2.0
 	maintainer = aKqir24 <aKqir24@github.com>
 	source = git+https://github.com/Nuitka/Nuitka.git
-	sha256sums = SKIP
 
 pkgname = nuitka-git
 ---
