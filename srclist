@@ -7442,7 +7442,7 @@ pkgbase = libdrm
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = xdavius <xdavius@github.com>
 	source = @drm-libdrm-2.4.134::https://gitlab.freedesktop.org/mesa/drm/-/archive/libdrm-2.4.134/drm-libdrm-2.4.134.tar.gz
-	sha256sums = cc9862a6c24b15436a6bb7cc8d2d1fee694cc38e5fe6e05faf5dd25438836daf
+	sha256sums = 6b18e4834b0c061232cb5c11e98a6ecdc72ebc6bc282d124406b7a9d4e089ce2
 
 pkgname = libdrm
 ---
