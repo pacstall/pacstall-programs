@@ -11,6 +11,7 @@ pkgbase = lact
 	depends = libdrm2
 	depends = libdrm-amdgpu1
 	depends = libadwaita-1-0
+	depends = libdisplay-info-bin
 	makedepends = cargo>=1.93 | rustup
 	makedepends = make
 	makedepends = git
@@ -23,6 +24,7 @@ pkgbase = lact
 	makedepends = libdrm-dev
 	makedepends = dbus
 	makedepends = libadwaita-1-dev
+	makedepends = libdisplay-info-dev
 	backup = etc/lact/config.yaml
 	license = MIT
 	maintainer = pejuton <pejuton@proton.me>

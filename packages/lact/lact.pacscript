@@ -12,7 +12,8 @@ depends=("hwdata"
   "libgtk-4-1"
   "libdrm2"
   "libdrm-amdgpu1"
-  "libadwaita-1-0")
+  "libadwaita-1-0"
+  "libdisplay-info-bin")
 makedepends=("cargo>=1.93 | rustup"
   "make"
   "git"
@@ -24,7 +25,8 @@ makedepends=("cargo>=1.93 | rustup"
   "build-essential"
   "libdrm-dev"
   "dbus"
-  "libadwaita-1-dev")
+  "libadwaita-1-dev"
+  "libdisplay-info-dev")
 pkgdesc="Linux GPU Control Application"
 backup=('etc/lact/config.yaml')
 maintainer=("pejuton <pejuton@proton.me>")
