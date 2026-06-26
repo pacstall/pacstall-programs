@@ -6,8 +6,10 @@ pkgbase = cromite-bin
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: cromite
 	source = https://github.com/uazo/cromite/releases/download/v148.0.7778.168-cb3baf14f52eb4365d017f640f85310735c19b79/chrome-lin64.tar.gz
-	source = https://www.cromite.org/app_icon.png
+	source = cromite.svg
+	source = cromite.desktop
 	sha256sums = f27c78fe320dd5bfd53b05b4a33547a2c80c6ac83ad106807466910faeda9a4d
-	sha256sums = 95ea4e28bc95c30200d832c075a04d79191110573f8bbebf881b81c4cef6c211
+	sha256sums = SKIP
+	sha256sums = SKIP
 
 pkgname = cromite-bin
