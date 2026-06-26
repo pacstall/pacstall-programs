@@ -24,8 +24,8 @@ prepare() {
 build() {
   cmake -B build -S "${pkgname}-${pkgver}" \
     -DCMAKE_INSTALL_PREFIX=/usr \
-    -DBUILD_SHARED=1 \
-    make -C build
+    -DBUILD_SHARED=1
+  make -C build
 }
 
 package() {
