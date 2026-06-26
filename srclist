@@ -10810,6 +10810,7 @@ pkgbase = nuclei-bin
 pkgname = nuclei-bin
 ---
 pkgbase = nuitka-git
+	gives = nuitka
 	pkgver = 2.4.6.r61.g58d849260
 	pkgrel = 2
 	pkgdesc = Python compiler

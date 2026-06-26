@@ -1,7 +1,7 @@
 # This script was originally based from Chocobo1 <chocobo1@archlinux.net>
 
 pkgname="nuitka-git"
-gives="nuitka" 
+gives="nuitka"
 pkgver="2.4.6.r61.g58d849260"
 repology=("project: nuitka")
 pkgdesc="Python compiler"
