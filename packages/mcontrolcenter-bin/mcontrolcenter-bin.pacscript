@@ -19,20 +19,3 @@ package() {
   install -Dm644 "${gives}-helper.conf" "${pkgdir}/usr/share/dbus-1/system.d/${gives}-helper.conf"
   install -Dm644 "${gives}.helper.service" "${pkgdir}/usr/share/dbus-1/system-services/${gives}.helper.service"
 }
-
-post_install() {
-  if ask "Do you want this program to start at startup?" Y; then
-    sudo -u "${PACSTALL_USER}" mkdir -p "${homedir}/.config/autostart"
-    sudo -u "${PACSTALL_USER}" cp /usr/share/applications/mcontrolcenter.desktop "${homedir}/.config/autostart/mcontrolcenter.desktop"
-    echo "Copied desktop file to ${homedir}/.config/autostart folder, program will now start upon startup"
-  else
-    echo "Program will not start upon startup"
-  fi
-}
-
-post_remove() {
-  if [[ -f "${homedir}/.config/autostart/mcontrolcenter.desktop" ]]; then
-    rm -f "${homedir}/.config/autostart/mcontrolcenter.desktop"
-    fancy_message info "Config file for auto-start is removed"
-  fi
-}
