@@ -6708,7 +6708,7 @@ pkgname = kdenlive-app
 ---
 pkgbase = keepassxc
 	gives = org.freedesktop.secrets
-	pkgver = 2.7.11
+	pkgver = 2.7.12
 	pkgdesc = Cross-platform community-driven port of Keepass password manager
 	arch = any
 	depends = argon2
@@ -6756,8 +6756,8 @@ pkgbase = keepassxc
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = Medaey <medaey@github.com>
 	repology = project: keepassxc
-	source = @keepassxc~2.7.11::https://github.com/keepassxreboot/keepassxc/releases/download/2.7.11/keepassxc-2.7.11-src.tar.xz
-	sha256sums = ce76b02d396369726aaf695bb46b79c0cc41a0c4f9ec806bde1233cb22e6ef62
+	source = @keepassxc~2.7.12::https://github.com/keepassxreboot/keepassxc/releases/download/2.7.12/keepassxc-2.7.12-src.tar.xz
+	sha256sums = be34eeb297881adea4f894c7c6e4a1835bd7927f8043ddea495040df4792a7de
 
 pkgname = keepassxc
 ---
