@@ -18,7 +18,6 @@ maintainer=("xdavius <xdavius@github.com>")
 
 prepare() {
   cd "${pkgname}-${pkgver}"
-  rm -rf thirdparty/jsoncpp
   patch -p1 < ../openvr-fix-vsprintf_s.patch
 }
 
