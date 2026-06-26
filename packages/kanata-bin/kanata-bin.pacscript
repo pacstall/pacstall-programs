@@ -15,7 +15,7 @@ source=(
   "https://raw.githubusercontent.com/jtroo/kanata/refs/tags/v${pkgver}/LICENSE"
 )
 sha256sums=(
-  'fe6ba3768c1a7a60d94628a613f168f464b7ab88d34077e26896a7d3967e5eb6'
+  'd9f634afb4c7f078cc2aacf3998fd65b432d4d83296cc48a89f941525459b4e2'
   'SKIP'
   'a5681bf9b05db14d86776930017c647ad9e6e56ff6bbcfdf21e5848288dfaf1b'
 )
