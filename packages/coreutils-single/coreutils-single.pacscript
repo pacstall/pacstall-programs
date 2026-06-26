@@ -17,6 +17,7 @@ makedepends=(
   'libssl-dev'
   'texinfo'
 )
+replaces=("rust-coreutils")
 repology=("project: ${_pkgname}")
 
 build() {
