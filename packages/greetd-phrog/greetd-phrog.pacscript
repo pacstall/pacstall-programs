@@ -5,7 +5,7 @@ url='https://github.com/samcday/phrog'
 arch=('amd64' 'arm64')
 license=('GPL-3.0-only')
 depends=('phosh' 'greetd' 'libphosh-0.45-0' 'libglib2.0-bin')
-makedepends=('cargo' 'libphosh-0.45-dev')
+makedepends=('cargo>=1.87' 'libphosh-0.45-dev')
 source=("${url}/archive/${pkgver}/phrog-${pkgver}.tar.gz")
 sha512sums=('4ac04d47e1b0b33e6f8794e5317258002be79500ab38deee49eb0c97fd34eb832516ab6ace004d782fd5e5fa54f8ed81affc712503822c51e46ed33036c1f5cd')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
