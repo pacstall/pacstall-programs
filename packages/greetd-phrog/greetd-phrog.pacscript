@@ -4,15 +4,12 @@ pkgdesc="Mobile device greeter"
 url='https://github.com/samcday/phrog'
 arch=('amd64' 'arm64')
 license=('GPL-3.0-only')
-depends=('phosh' 'greetd' 'libphosh-0.43-0' 'libglib2.0-bin')
-makedepends=('cargo' 'libphosh-0.43-dev')
-source=("${url}/archive/${pkgver}/phrog-${pkgver}.tar.gz"
-  "libphosh-0.43.patch")
-sha512sums=('4ac04d47e1b0b33e6f8794e5317258002be79500ab38deee49eb0c97fd34eb832516ab6ace004d782fd5e5fa54f8ed81affc712503822c51e46ed33036c1f5cd'
-  '00962de17ea6bc215e18fa5c613f663bb249632d4392bf9a5a36cb15315101983feea34b04ee8bc5c5b5e4290d9e73137ee561042a8e4bfd94caad1219a93d8f')
+depends=('phosh' 'greetd' 'libphosh-0.45-0' 'libglib2.0-bin')
+makedepends=('cargo' 'libphosh-0.45-dev')
+source=("${url}/archive/${pkgver}/phrog-${pkgver}.tar.gz")
+sha512sums=('4ac04d47e1b0b33e6f8794e5317258002be79500ab38deee49eb0c97fd34eb832516ab6ace004d782fd5e5fa54f8ed81affc712503822c51e46ed33036c1f5cd')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 external_connection=true
-compatible=("ubuntu:devel" "ubuntu:plucky" "ubuntu:questing")
 
 build() {
   cd "phrog-${pkgver}"
