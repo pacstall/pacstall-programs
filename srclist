@@ -4566,27 +4566,27 @@ pkgbase = gnucash
 	pkgver = 5.15
 	pkgdesc = Personal and small-business financial-accounting application
 	url = http://www.gnucash.org
-	arch = amd64
+	arch = any
 	depends = libaqbanking44
-	depends = guile-3.0
+	depends = guile-3.0>=2.0.9
 	depends = libwebkit2gtk-4.1-0
 	depends = libxml2
 	makedepends = git
 	makedepends = cmake
-	makedepends = swig
+	makedepends = swig>=3.0.12
 	makedepends = pkg-config
-	makedepends = libwebkit2gtk-4.1-dev
-	makedepends = libxml2-dev
+	makedepends = libwebkit2gtk-4.1-dev>=2.14.1
+	makedepends = libxml2-dev>=2.9.4
 	makedepends = libxslt-dev
-	makedepends = libaqbanking-dev
-	makedepends = libboost-all-dev
-	makedepends = guile-3.0-dev
-	makedepends = libgwengui-gtk3-dev
-	makedepends = libofx-dev
+	makedepends = libaqbanking-dev>=6.4.0
+	makedepends = libboost-all-dev>=1.67.0
+	makedepends = guile-3.0-dev>=2.0.9
+	makedepends = libgwengui-gtk3-dev>=5.8.0
+	makedepends = libofx-dev>=0.9.12
 	makedepends = xsltproc
-	makedepends = libdbi-dev
+	makedepends = libdbi-dev>=0.8.3
 	makedepends = libdbd-mysql
-	makedepends = libgtest-dev
+	makedepends = libgtest-dev>=1.8.0
 	optdepends = evince: for print preview
 	optdepends = libdate-manip-perl: for stock information lookups
 	optdepends = libfinance-quote-perl: for stock information lookups
