@@ -9,7 +9,7 @@ pkgdesc="Another translaton plugin for nushell"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pacdeps=("nushell-bin")
 replaces=("${gives}-bin")
-makedepends=("cargo>=1.82.0")
+makedepends=("cargo>=1.93.1")
 external_connection=true
 
 package() {
