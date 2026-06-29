@@ -200,6 +200,18 @@ jobs:
           mapfile -t list < <(pacstall -L)
           dep_tree.loop_traits order "${list[@]}"
           for changed_file in "${order[@]}"; do
-              echo "Running pacstall -R for ${changed_file}..."
-              pacstall --disable-prompts -R ${changed_file} || exit 1
+              unset pbase srcbase pkgprior
+              pbase="$(pacstall -Ci ${changed_file} base 2> /dev/null || echo pkgbase)"
+              if [[ ${pbase} == "pkgbase" ]]; then
+                srcbase="${changed_file}"
+              else
+                srcbase="${pbase}"
+              fi
+              pkgprior="$(./scripts/srcinfo.sh read packages/${srcbase}/.SRCINFO priority ${pbase}:${changed_file})"
+              if [[ ${pkgprior} == "essential" ]]; then
+                echo "Skipping removal of essential package ${changed_file}..."
+              else
+                echo "Running pacstall -R for ${changed_file}..."
+                pacstall --disable-prompts -R ${changed_file} || exit 1
+              fi
           done
