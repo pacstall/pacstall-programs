@@ -1,0 +1,48 @@
+pkgname="bingspotany-bin"
+pkgver="1.1.1"
+pkgrel="1"
+pkgdesc="A modern, cross-platform daily wallpaper manager fetching from Bing and Spotlight"
+maintainer="darkinsun <42946064+darkinsun@users.noreply.github.com>"
+arch=('amd64')
+url="https://github.com/darkinsun/BingSpotAny"
+license=('GPL-3.0')
+source=("https://github.com/darkinsun/BingSpotAny/releases/download/v${pkgver}/BingSpotAny-Linux-x64.tar.gz")
+
+# SHA256 Hash from your local generation
+sha256sums=('66b9c1020a9ca87bf2ace988d3fb51aef5698900ce4e2290ac4e87c095bb2617')
+
+build() {
+    # Skip build step since we use a pre-compiled binary
+    true
+}
+
+package() {
+    # 1. Create standard Linux system directories
+    install -d "${pkgdir}/opt/BingSpotAny"
+    install -d "${pkgdir}/usr/bin"
+    install -d "${pkgdir}/usr/share/applications"
+
+    # 2. Go directly inside the folder extracted from the tar.gz file
+    cd "${srcdir}/BingSpotAny-Linux-x64"
+
+    # 3. Copy all files inside the folder to the /opt directory
+    cp -r * "${pkgdir}/opt/BingSpotAny/"
+
+    # 4. Ensure the main binary is executable
+    chmod +x "${pkgdir}/opt/BingSpotAny/BingSpotAny"
+
+    # 5. Create a symlink so the user can just type 'bingspotany'
+    ln -s "/opt/BingSpotAny/BingSpotAny" "${pkgdir}/usr/bin/bingspotany"
+
+    # 6. Generate a native Linux Desktop Shortcut
+    cat <<EOF > "${pkgdir}/usr/share/applications/bingspotany.desktop"
+[Desktop Entry]
+Name=BingSpotAny
+Comment=Daily wallpaper manager (Runs in system tray)
+Exec=/usr/bin/bingspotany
+Icon=/opt/BingSpotAny/Assets/icon.png
+Terminal=false
+Type=Application
+Categories=Utility;DesktopSettings;
+EOF
+}
