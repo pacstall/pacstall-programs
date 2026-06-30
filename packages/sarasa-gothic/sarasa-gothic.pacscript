@@ -1,5 +1,5 @@
 pkgname="sarasa-gothic"
-pkgver="1.0.37"
+pkgver="1.0.39"
 arch=("all")
 url='https://github.com/be5invis/Sarasa-Gothic'
 license=('OFL-1.1')
@@ -12,7 +12,7 @@ source=(
   "LICENSE::https://raw.githubusercontent.com/be5invis/Sarasa-Gothic/v${pkgver}/LICENSE"
 )
 sha256sums=(
-  "608ba9cd77d20277a9eea290e2c36dc40054883c09bf35f942d89476e6041dbe"
+  "b5598f6a0e97ed6e78c4491ba3a0a59c6acc42e0a6621c17e7ef8b26c6930ec7"
   "32c932e0dbae4f6e6386964bbc2d04178707665a05ca65cf636241af13d50a53"
 )
 

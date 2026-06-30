@@ -1,7 +1,7 @@
 pkgname="ffnvcodec-headers"
 gives="ffnvcodec-headers"
 arch=("all")
-pkgver="12.2.72.0"
+pkgver="13.0.19.0"
 url='https://git.videolan.org/git/ffmpeg/nv-codec-headers.git'
 pkgdesc="FFmpeg version of headers required to interface with Nvidias codec APIs"
 maintainer=("Luis Garcia <pacstall@luigi311.com>")
@@ -11,7 +11,7 @@ source=(
   "@${pkgname}~${pkgver}::https://github.com/FFmpeg/nv-codec-headers/releases/download/n${pkgver}/nv-codec-headers-${pkgver}.tar.gz"
 )
 sha256sums=(
-  "c295a2ba8a06434d4bdc5c2208f8a825285210d71d91d572329b2c51fd0d4d03"
+  "13da39edb3a40ed9713ae390ca89faa2f1202c9dda869ef306a8d4383e242bee"
 )
 
 makedepends=(

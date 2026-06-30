@@ -1,14 +1,14 @@
 pkgname="hello"
 repology=("project: ${pkgname}")
 arch=("all")
-pkgver="2.12.2"
+pkgver="2.12.3"
 source=("@${pkgname}~${pkgver}::https://ftp.gnu.org/gnu/${pkgname}/${pkgname}-${pkgver}.tar.gz")
 makedepends=("build-essential")
 depends=("libc6")
 breaks=("${pkgname}-git" "${pkgname}-traditional")
 replaces=("${pkgname}")
 pkgdesc="GNU implementation of the classic program that prints 'Hello, world!' when you run it"
-sha256sums=("5a9a996dc292cc24dcf411cee87e92f6aae5b8d13bd9c6819b4c7a9dce0818ab")
+sha256sums=("0d5f60154382fee10b114a1c34e785d8b1f492073ae2d3a6f7b147687b366aa0")
 maintainer=("WRM-42 <y8bsbahy@anonaddy.me>")
 
 build() {
