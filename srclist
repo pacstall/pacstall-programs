@@ -18578,6 +18578,22 @@ pkgbase = yle-dl-git
 
 pkgname = yle-dl-git
 ---
+pkgbase = youplaytx
+	pkgver = 0.4.4
+	pkgrel = 1
+	pkgdesc = Full-screen, dual-pane YouTube audio player for the terminal
+	url = https://codeberg.org/ProfP303/youplaytx
+	arch = any
+	depends = python3
+	depends = python3-venv
+	depends = mpv
+	license = GPL-3.0-or-later
+	maintainer = ProfP303 <prof.p@gmx.net>
+	source = youplaytx-0.4.4.tar.gz::https://codeberg.org/ProfP303/youplaytx/archive/v0.4.4.tar.gz
+	sha256sums = 21b66bd0c4c59620a4a9a7aa8ae6bd89dc7461657eb12e2d7ae415d7a6574b40
+
+pkgname = youplaytx
+---
 pkgbase = youtube-dl-git
 	gives = youtube-dl
 	pkgver = 2021.12.17
