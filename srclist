@@ -10832,6 +10832,41 @@ pkgbase = nuclei-bin
 
 pkgname = nuclei-bin
 ---
+pkgbase = nuitka-git
+	gives = nuitka
+	pkgver = 2.4.6.r61.g58d849260
+	pkgrel = 2
+	pkgdesc = Python compiler
+	url = https://nuitka.net/
+	arch = any
+	depends = libxml2 | libxml2-16
+	depends = libxslt1.1
+	depends = python3
+	depends = python3-ordered-set
+	depends = python3-pip
+	depends = python3-setuptools
+	depends = python3-tomli
+	depends = python3-wheel
+	depends = python3-yaml
+	makedepends = git
+	makedepends = python3-build
+	makedepends = python3-installer
+	makedepends = python3-setuptools
+	makedepends = python3-wheel
+	makedepends = python3-tomli
+	makedepends = libxml2 | libxml2-16
+	makedepends = libxslt1.1
+	optdepends = chrpath: for building standalone executables
+	conflicts = nuitka
+	conflicts = python3-nuitka
+	provides = nuitka
+	license = Apache-2.0
+	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: nuitka
+	source = git+https://github.com/Nuitka/Nuitka.git
+
+pkgname = nuitka-git
+---
 pkgbase = nushell-bin
 	pkgver = 0.106.0
 	pkgdesc = A new type of shell
@@ -12946,38 +12981,6 @@ pkgbase = python3-moddb
 	sha256sums = SKIP
 
 pkgname = python3-moddb
----
-pkgbase = nuitka-git
-	pkgver = 2.4.6.r61.g58d849260
-	pkgdesc = Python compiler
-	url = https://nuitka.net/
-	arch = any
-	depends = libxml2 | libxml2-16
-	depends = libxslt1.1
-	depends = python3
-	depends = python3-ordered-set
-	depends = python3-pip
-	depends = python3-setuptools
-	depends = python3-tomli
-	depends = python3-wheel
-	depends = python3-yaml
-	makedepends = git
-	makedepends = python3-build
-	makedepends = python3-installer
-	makedepends = python3-setuptools
-	makedepends = python3-wheel
-	makedepends = python3-tomli
-	makedepends = libxml2 | libxml2-16
-	makedepends = libxslt1.1
-	optdepends = chrpath: for building standalone executables
-	conflicts = nuitka
-	provides = nuitka
-	license = Apache-2.0
-	maintainer = aKqir24 <aKqir24@github.com>
-	source = git+https://github.com/Nuitka/Nuitka.git
-	sha256sums = SKIP
-
-pkgname = nuitka-git
 ---
 pkgbase = python3-pypresence
 	gives = python3-pypresence
