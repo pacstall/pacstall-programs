@@ -7,6 +7,7 @@ license=('GPL-3.0-or-later')
 source=("${url}.git#tag=v${pkgver}")
 external_connection=true
 makedepends=("clang" "xwayland" "libwayland-dev" "libclang-dev" "pkg-config" "cargo>=1.83.0" "libxcb-cursor-dev" "libxkbcommon-dev")
+depends=("xwayland")
 maintainer=("Alxhr0 <alxhr0@proton.me>")
 
 build() {
