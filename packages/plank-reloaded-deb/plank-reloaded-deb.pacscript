@@ -1,0 +1,12 @@
+pkgname="plank-reloaded-deb"
+gives="plank-reloaded"
+replaces=("plank")
+conflicts=("plank" "libplank-common" "libplank1")
+pkgver="0.11.169"
+url='https://github.com/zquestz/plank-reloaded'
+source=("https://github.com/zquestz/plank-reloaded/releases/download/${pkgver}/plank-reloaded.deb")
+pkgdesc="Elegant and simple dock"
+sha256sums=("0619cb727895e3f0831d33f55b69579c414d10460c5092d5bd2cbaf13cc2e068")
+arch=("amd64")
+maintainer=("Elsie19 <elsie19@pm.me>")
+repology=("project: ${gives}")
