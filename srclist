@@ -3456,6 +3456,30 @@ pkgbase = fblog-bin
 
 pkgname = fblog-bin
 ---
+pkgbase = fd-deb
+	gives = fd
+	pkgver = 10.4.2
+	pkgdesc = A simple, fast and user-friendly alternative to 'find'
+	arch = amd64
+	arch = arm64
+	arch = armhf
+	arch = i386
+	breaks = fd-bin
+	breaks = fd-git
+	breaks = fd-app
+	maintainer = Don Alfons donnisnoni@outlook.com
+	repology = project: fd-find
+	source_amd64 = https://github.com/sharkdp/fd/releases/download/v10.4.2/fd_10.4.2_amd64.deb
+	sha256sums_amd64 = 0e44eb5fca93f09bc6f5430b90acdf44c8e069d0a903700aeb4820629337b67b
+	source_arm64 = https://github.com/sharkdp/fd/releases/download/v10.4.2/fd_10.4.2_arm64.deb
+	sha256sums_arm64 = caa91b8c0fad7ba1964a78e4932a82e3a5deb747fa40d0922a8c692b6d5e0ce1
+	source_armhf = https://github.com/sharkdp/fd/releases/download/v10.4.2/fd_10.4.2_armhf.deb
+	sha256sums_armhf = 91f53586e22959fb6e39a523566142d11840007ab7f0c35da10a675385ad0586
+	source_i386 = https://github.com/sharkdp/fd/releases/download/v10.4.2/fd_10.4.2_i686.deb
+	sha256sums_i386 = 9b52bb0031840592e8275efbae36d9d963f9f9e130a6f8ec897911b45c5956b3
+
+pkgname = fd-deb
+---
 pkgbase = feishin-app
 	gives = feishin
 	pkgver = 1.13.0
