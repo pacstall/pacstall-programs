@@ -34,7 +34,16 @@ makedepends=(
   "libseccomp-dev"
   "libbpf-dev"
   "libzstd-dev"
+  "zlib1g-dev"
   "pahole"
+  "make"
+  "cmake"
+  "gcc"
+  "autoconf"
+  "autopoint"
+  "flex"
+  "bison"
+  "gawk"
 )
 recommends=("scx-loader")
 backup=('etc/default/scx')
@@ -45,6 +54,7 @@ prepare() {
   cd "${_gitname}"
 
   export CARGO_HOME="${srcdir}/cargo-home"
+  export RUSTUP_HOME="${srcdir}/rustup-home"
   export RUSTUP_TOOLCHAIN=stable
 
   cargo fetch --locked --target "${AARCH}-unknown-linux-gnu"
@@ -54,6 +64,7 @@ build() {
   cd "${_gitname}"
 
   export CARGO_HOME="${srcdir}/cargo-home"
+  export RUSTUP_HOME="${srcdir}/rustup-home"
   export CARGO_TARGET_DIR=target
   export RUSTUP_TOOLCHAIN=stable
 
