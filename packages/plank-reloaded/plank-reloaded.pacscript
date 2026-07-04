@@ -1,7 +1,7 @@
 pkgname="plank-reloaded"
 arch=("any")
 pkgver="0.11.169"
-provides=("plank")
+provides=("plank=${pkgver}")
 replaces=("plank")
 conflicts=("plank" "libplank-common" "libplank1")
 pkgdesc="Elegant and simple dock"

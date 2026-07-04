@@ -33,7 +33,7 @@ pkgbase = plank-reloaded
 	conflicts = libplank-common
 	conflicts = libplank1
 	replaces = plank
-	provides = plank
+	provides = plank=0.11.169
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: plank-reloaded
 	source = https://github.com/zquestz/plank-reloaded/archive/refs/tags/0.11.169.tar.gz
