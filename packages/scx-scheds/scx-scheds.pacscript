@@ -2,11 +2,11 @@ pkgname="scx-scheds"
 pkgdesc="sched_ext schedulers and tools"
 repology=("project: scx-scheds")
 arch=('x86_64')
-pkgver="1.1.1"
+pkgver="1.1.2"
 url='https://github.com/sched-ext/scx'
 license=('GPL-2.0-only')
 _gitname='scx'
-_commit='0eedd05bc233129fd3c884d7045edeb2c2a474a7'
+_commit='b68cb3c829312b43785225bcfd445a3ecefef5c2'
 source=("git+https://github.com/sched-ext/${_gitname}#commit=${_commit}")
 sha256sums=('SKIP')
 provides=("${pkgname}")
@@ -24,7 +24,7 @@ depends=(
   "zlib1g"
 )
 makedepends=(
-  "cargo>=1.88 | rustup"
+  "cargo>=1.94.1 | rustup"
   "build-essential"
   "clang"
   "llvm"
@@ -63,14 +63,14 @@ build() {
     --all-features \
     --workspace \
     --jobs "${NCPU}" \
+    --exclude scx_forge \
     --exclude scx_flow \
     --exclude scx_rlfifo \
-    --exclude scx_wd40 \
-    --exclude scxcash \
     --exclude xtask \
     --exclude vmlinux_docify \
     --exclude scx_arena_selftests \
-    --exclude scx_bpf_unittests
+    --exclude scx_characterize \
+    --exclude scx_forge_agent
 }
 
 package() {
