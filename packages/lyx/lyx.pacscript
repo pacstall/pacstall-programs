@@ -2,8 +2,8 @@ pkgname="lyx"
 arch=("any")
 pkgver="2.5.1"
 pkgdesc="An advanced WYSIWYM document processor & LaTeX front-end"
-depends=("libqt6svg6-dev" "texlive-base" "python3" "imagemagick" "libhunspell-dev" "file" "hicolor-icon-theme" "desktop-file-utils")
-makedepends=("bc" "libx11-dev" "qt6-base-dev" "libenchant-2-dev" "libqt6svg6-dev" "pkg-config" "libxkbcommon-dev")
+depends=("qt6-svg-dev" "texlive-base" "python3" "imagemagick" "libhunspell-dev" "file" "hicolor-icon-theme" "desktop-file-utils")
+makedepends=("bc" "libx11-dev" "qt6-base-dev" "libenchant-2-dev" "qt6-svg-dev" "pkg-config" "libxkbcommon-dev")
 optdepends=("rcs: built-in version control system"
   "texlive-latex-base: float wrap support")
 source=("@${pkgname}~${pkgver}::https://ftp.lip6.fr/pub/lyx/stable/2.5.x/lyx-${pkgver}.tar.xz")
