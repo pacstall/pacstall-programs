@@ -1,5 +1,5 @@
 pkgbase = dotdrop
-	pkgver = 1.15.0
+	pkgver = 1.16.2
 	pkgdesc = Save your dotfiles once, deploy them everywhere
 	arch = all
 	depends = python3
@@ -11,7 +11,7 @@ pkgbase = dotdrop
 	depends = diffutils
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: dotdrop
-	source = @dotdrop~1.15.0::https://github.com/deadc0de6/dotdrop/archive/refs/tags/v1.15.0.zip
-	sha256sums = f3f753f24fb2b1a70072a89b177657b1605999431aad99cd12fd797bafc1debb
+	source = @dotdrop~1.16.2::https://github.com/deadc0de6/dotdrop/archive/refs/tags/v1.16.2.zip
+	sha256sums = f331a9cc9e32f54aa97869e2e26d5b92f1b7d164295da54ea22b578f017d2a32
 
 pkgname = dotdrop

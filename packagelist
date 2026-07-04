@@ -4,6 +4,7 @@ abdownloadmanager
 adapta-gtk-theme-git
 adw-gtk-theme
 adw-gtk3
+age-plugin-yubikey
 alacritty
 amf-headers
 amfora-bin
@@ -736,6 +737,7 @@ scrcpy
 scx-loader
 scx-scheds
 sed
+sesh-bin
 setconf
 shell-color-scripts
 shellcheck-bin
@@ -912,6 +914,7 @@ xivlauncher-bin
 xmind-vana-deb
 xonotic
 xpadneo-dkms
+xterm
 xwayland-satellite
 yabridge
 yad

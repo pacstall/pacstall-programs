@@ -1,10 +1,10 @@
 pkgname="electerm-deb"
 gives="electerm"
 repology=("project: ${gives}")
-pkgver="2.10.6"
+pkgver="3.15.76"
 source=("https://github.com/electerm/electerm/releases/download/v${pkgver}/electerm-${pkgver}-linux-amd64.deb")
 breaks=("${gives}-bin")
 pkgdesc="Open-sourced terminal/ssh/telnet/serialport/sftp client"
-sha256sums=("ad46b322c96de06fbc30cd8dc26c18107e876a0a7ba1de94378d2b411749d091")
+sha256sums=("eff593121dcf077981e2636ca078786031d478cc6bf2cafcee76f82c71ca4e64")
 arch=('amd64')
 maintainer=("Gianluca Mastrolonardo <gianlucamastrolonardo10@gmail.com>")
