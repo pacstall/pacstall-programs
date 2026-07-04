@@ -307,6 +307,7 @@ jetbrains-toolbox-bin
 joplin-desktop-app
 jq-bin
 jsonnet-bundler-bin
+jujutsu-bin
 kakoune
 kakoune-ansi-git
 kakoune-auto-pairs-git
