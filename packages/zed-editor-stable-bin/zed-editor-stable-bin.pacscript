@@ -1,6 +1,6 @@
 pkgname="zed-editor-stable-bin"
 pkgdesc="A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter"
-pkgver="1.8.2"
+pkgver="1.9.0"
 repology=("project: zed-editor")
 gives="zed-editor"
 license=("GPL-3.0-or-later" "AGPL-3.0-or-later" "Apache-2.0")
@@ -8,8 +8,8 @@ arch=("x86_64" "aarch64")
 url='https://zed.dev'
 _channel="stable"
 source=("${url}/api/releases/${_channel}/${pkgver}/zed-linux-${AARCH}.tar.gz")
-sha256sums_x86_64=("5096390f6d1a209bc2acb8d9b634dcd516709af33a0fc2ff62a0edb0cbc88108")
-sha256sums_aarch64=("a2e7abe14a95c8878e5b6b4758cb1be031ef336549fe6cc8013f6d17a73db1d0")
+sha256sums_x86_64=("39e553ce3a00feeb78eab63a5cb7237cb460f3c9596b1b19052ceb7b9e8ec4dd")
+sha256sums_aarch64=("fe1c02c1a0bc18ebb4f67f936862a944e6a97c66a3666ee0bf2ccbac47e2e83c")
 maintainer=("bibelin <balian1belin@yandex.ru>" "aKqir24 <aKqir24@github.com>" "Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
 
 # Desktop file should be renamed to dev.zed.Zed.desktop to show correct icon in GNOME on Wayland
