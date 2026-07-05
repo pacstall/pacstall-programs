@@ -42,6 +42,9 @@ depends=(
   "alsa-ucm-conf"
   "blueman"
   "gtk2-engines-pixbuf"
+  "libadwaita-1-0"
+  "libpanel-1-1"
+  "lightdm"
   "mousepad"
   "mugshot"
   "qt-style-kvantum"
@@ -71,14 +74,9 @@ pacdeps=(
   "vala-panel-appmenu-xfce4-git"
   "xfce4-dynamic-workspaces-rs-bin"
 )
+recommends=("lightdm-gtk-greeter")
 gives="unicorn-desktop"
 replaces=("unicorn-mobile" "unicorn-mobile-git")
-recommends=(
-  "libadwaita-1-0"
-  "libpanel-1-1"
-  "lightdm"
-  "lightdm-gtk-greeter"
-)
 priority="required"
 pkgdesc="Unicorn Desktop by the Rhino Linux Team"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
