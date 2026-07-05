@@ -12186,6 +12186,48 @@ pkgbase = pipewire
 
 pkgname = pipewire
 ---
+pkgbase = plank-reloaded
+	pkgver = 0.11.169
+	pkgdesc = Elegant and simple dock
+	url = https://github.com/zquestz/plank-reloaded
+	arch = any
+	depends = bamfdaemon
+	depends = libgee-0.8-2
+	depends = libgnome-menu-3-0
+	depends = libwnck-3-0
+	depends = libcanberra0t64 | libcanberra0
+	depends = libc6
+	makedepends = git
+	makedepends = cmake
+	makedepends = gettext
+	makedepends = desktop-file-utils
+	makedepends = libdbusmenu-glib-dev
+	makedepends = libdbusmenu-gtk3-dev
+	makedepends = meson
+	makedepends = ninja-build
+	makedepends = valac
+	makedepends = libgnome-menu-3-dev
+	makedepends = libxml2-utils
+	makedepends = libgtk-3-dev
+	makedepends = libgee-0.8-dev
+	makedepends = libbamf3-dev
+	makedepends = libwnck-3-dev
+	makedepends = libcanberra-dev
+	makedepends = libxi-dev
+	makedepends = libxfixes-dev
+	makedepends = build-essential
+	makedepends = pkg-config
+	conflicts = plank
+	conflicts = libplank-common
+	conflicts = libplank1
+	replaces = plank
+	provides = plank=0.11.169
+	maintainer = Elsie19 <elsie19@pm.me>
+	repology = project: plank-reloaded
+	source = https://github.com/zquestz/plank-reloaded/archive/refs/tags/0.11.169.tar.gz
+
+pkgname = plank-reloaded
+---
 pkgbase = planner-git
 	pkgver = 4.1
 	pkgdesc = Task manager with Todoist support designed for GNU/Linux
