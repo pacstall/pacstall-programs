@@ -4,22 +4,12 @@ pkgver="0.0.1"
 pkgrel="8"
 source=("https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty")
 lomiri_keyboards=(
-  "lomiri-keyboard-arabic" "lomiri-keyboard-azerbaijani" "lomiri-keyboard-belarusian"
-  "lomiri-keyboard-bengali" "lomiri-keyboard-bengali-avro" "lomiri-keyboard-bengali-probhat"
-  "lomiri-keyboard-bosnian" "lomiri-keyboard-bulgarian" "lomiri-keyboard-catalan"
-  "lomiri-keyboard-chinese-chewing" "lomiri-keyboard-chinese-pinyin" "lomiri-keyboard-croatian"
-  "lomiri-keyboard-czech" "lomiri-keyboard-danish" "lomiri-keyboard-dutch"
-  "lomiri-keyboard-emoji" "lomiri-keyboard-english" "lomiri-keyboard-english-dvorak"
-  "lomiri-keyboard-esperanto" "lomiri-keyboard-finnish" "lomiri-keyboard-french"
-  "lomiri-keyboard-german" "lomiri-keyboard-greek" "lomiri-keyboard-hebrew"
-  "lomiri-keyboard-hungarian" "lomiri-keyboard-icelandic" "lomiri-keyboard-italian"
-  "lomiri-keyboard-japanese" "lomiri-keyboard-korean" "lomiri-keyboard-latvian"
-  "lomiri-keyboard-lithuanian" "lomiri-keyboard-macedonian" "lomiri-keyboard-norwegian-bokmal"
-  "lomiri-keyboard-persian" "lomiri-keyboard-polish" "lomiri-keyboard-portuguese"
-  "lomiri-keyboard-romanian" "lomiri-keyboard-russian" "lomiri-keyboard-scottish-gaelic"
-  "lomiri-keyboard-serbian" "lomiri-keyboard-slovenian" "lomiri-keyboard-spanish"
-  "lomiri-keyboard-swedish" "lomiri-keyboard-swiss-french" "lomiri-keyboard-thai"
-  "lomiri-keyboard-turkish" "lomiri-keyboard-ukrainian"
+  lomiri-keyboard-{arabic,azerbaijani,belarusian,bengali,bengali-avro,bengali-probhat,\
+bosnian,bulgarian,catalan,chinese-chewing,chinese-pinyin,croatian,czech,danish,dutch,\
+emoji,english,english-dvorak,esperanto,finnish,french,german,greek,hebrew,hungarian,\
+icelandic,italian,japanese,korean,latvian,lithuanian,macedonian,norwegian-bokmal,persian,\
+polish,portuguese,romanian,russian,scottish-gaelic,serbian,slovenian,spanish,swedish,\
+swiss-french,thai,turkish,ukrainian}
 )
 depends=(
   "alsa-ucm-conf" "ciborium" "contactsd" "deviceinfo-extras" "deviceinfo-tools" "iio-sensor-proxy"
