@@ -4,12 +4,7 @@ pkgver="0.0.1"
 pkgrel="8"
 source=("https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty")
 lomiri_keyboards=(
-  lomiri-keyboard-{arabic,azerbaijani,belarusian,bengali,bengali-avro,bengali-probhat,\
-bosnian,bulgarian,catalan,chinese-chewing,chinese-pinyin,croatian,czech,danish,dutch,\
-emoji,english,english-dvorak,esperanto,finnish,french,german,greek,hebrew,hungarian,\
-icelandic,italian,japanese,korean,latvian,lithuanian,macedonian,norwegian-bokmal,persian,\
-polish,portuguese,romanian,russian,scottish-gaelic,serbian,slovenian,spanish,swedish,\
-swiss-french,thai,turkish,ukrainian}
+  lomiri-keyboard-{arabic,azerbaijani,belarusian,bengali,bengali-avro,bengali-probhat,bosnian,bulgarian,catalan,chinese-chewing,chinese-pinyin,croatian,czech,danish,dutch,emoji,english,english-dvorak,esperanto,finnish,french,german,greek,hebrew,hungarian,icelandic,italian,japanese,korean,latvian,lithuanian,macedonian,norwegian-bokmal,persian,polish,portuguese,romanian,russian,scottish-gaelic,serbian,slovenian,spanish,swedish,swiss-french,thai,turkish,ukrainian}
 )
 depends=(
   "alsa-ucm-conf" "ciborium" "contactsd" "deviceinfo-extras" "deviceinfo-tools" "iio-sensor-proxy"
