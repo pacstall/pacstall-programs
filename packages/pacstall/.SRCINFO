@@ -29,7 +29,7 @@ pkgbase = pacstall
 	backup = usr/share/pacstall/repo/pacstallrepo
 	backup = usr/share/pacstall/update
 	maintainer = Pacstall Team <pacstall@pm.me>
-	maintainer = Elsie19 <hwengerstickel@pm.me>
+	maintainer = Elsie19 <elsie19@pm.me>
 	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.4.1.zip
 
 pkgname = pacstall

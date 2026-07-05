@@ -3608,7 +3608,7 @@ pkgbase = ffmpeg4.4
 	makedepends = libpulse-dev
 	makedepends = libx264-164
 	makedepends = libx264-dev
-	maintainer = Elsie19 <hwengerstickel@pm>
+	maintainer = Elsie19 <elsie19@pm.me>
 	source = git+https://git.ffmpeg.org/ffmpeg.git#tag=n4.4.4
 	source = https://gitlab.archlinux.org/archlinux/packaging/packages/ffmpeg4.4/-/raw/main/binutils-2.41.patch
 
@@ -3949,7 +3949,7 @@ pkgbase = framework-system-bin
 	url = https://github.com/FrameworkComputer/framework-system
 	arch = amd64
 	license = BSD-3-Clause
-	maintainer = Elsie19 <hwengerstickel@pm.me>
+	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: framework-system
 	source = https://github.com/FrameworkComputer/framework-system/releases/download/v0.6.4/framework_tool
 	sha256sums = 83b04df1fbd950c88bb569e91503cbf7a616663ad7ff6cbcb0e99a67509a8584
@@ -11773,7 +11773,7 @@ pkgbase = pacstall
 	backup = usr/share/pacstall/repo/pacstallrepo
 	backup = usr/share/pacstall/update
 	maintainer = Pacstall Team <pacstall@pm.me>
-	maintainer = Elsie19 <hwengerstickel@pm.me>
+	maintainer = Elsie19 <elsie19@pm.me>
 	source = https://github.com/pacstall/pacstall/archive/refs/tags/6.4.1.zip
 
 pkgname = pacstall
@@ -13452,7 +13452,7 @@ pkgbase = rhino-calamares-settings-git
 	arch = arm64
 	makedepends = make
 	replaces = rhino-calamares-settings-lomiri
-	maintainer = Elsie19 <hwengerstickel@pm.me>
+	maintainer = Elsie19 <elsie19@pm.me>
 	source = https://github.com/rhino-linux/calamares-settings.git
 
 pkgname = rhino-calamares-settings-git
@@ -13465,7 +13465,7 @@ pkgbase = rhino-calamares-settings-lomiri-git
 	arch = arm64
 	makedepends = make
 	replaces = rhino-calamares-settings
-	maintainer = Elsie19 <hwengerstickel@pm.me>
+	maintainer = Elsie19 <elsie19@pm.me>
 	source = https://github.com/rhino-linux/calamares-settings.git
 
 pkgname = rhino-calamares-settings-lomiri-git
@@ -14955,7 +14955,7 @@ pkgbase = soar
 	arch = any
 	makedepends = cargo>=1.82.0
 	license = MIT
-	maintainer = Elsie19 <hwengerstickel@pm.me>
+	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: soar
 	source = https://github.com/pkgforge/soar/archive/refs/tags/v0.11.0.tar.gz
 	sha256sums = ad5d8b11d53b0be18b7dd773febdaa1cdf83f997c5886ec6c22ad24e04c44692
@@ -18291,7 +18291,7 @@ pkgbase = xfce4-dynamic-workspaces-rs-bin
 	conflicts = xfce4-dynamic-workspaces-plugin
 	replaces = xfce4-dynamic-workspaces-plugin
 	provides = xfce4-dynamic-workspaces-plugin
-	maintainer = Elsie19 <hwengerstickel@pm.me>
+	maintainer = Elsie19 <elsie19@pm.me>
 	source_arm64 = xfce4-dynamic-workspaces::https://github.com/rhino-linux/xfce4-dynamic-workspaces/releases/download/0.3.0/xfce4-dynamic-workspaces-arm64
 	sha256sums_arm64 = 73bf91185c3cc676aef19a62b1fb4b98bcbd8df3af266bde4e36a410c20c8501
 	source_amd64 = xfce4-dynamic-workspaces::https://github.com/rhino-linux/xfce4-dynamic-workspaces/releases/download/0.3.0/xfce4-dynamic-workspaces-amd64
