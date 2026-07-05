@@ -8705,10 +8705,10 @@ pkgbase = lyrebird-git
 pkgname = lyrebird-git
 ---
 pkgbase = lyx
-	pkgver = 2.3.7-1
+	pkgver = 2.5.1
 	pkgdesc = An advanced WYSIWYM document processor & LaTeX front-end
 	arch = any
-	depends = libqt5svg5-dev
+	depends = qt6-svg-dev
 	depends = texlive-base
 	depends = python3
 	depends = imagemagick
@@ -8718,16 +8718,17 @@ pkgbase = lyx
 	depends = desktop-file-utils
 	makedepends = bc
 	makedepends = libx11-dev
-	makedepends = qtbase5-dev
+	makedepends = qt6-base-dev
 	makedepends = libenchant-2-dev
-	makedepends = libqt5svg5-dev
+	makedepends = qt6-svg-dev
 	makedepends = pkg-config
+	makedepends = libxkbcommon-dev
 	optdepends = rcs: built-in version control system
 	optdepends = texlive-latex-base: float wrap support
 	maintainer = cat-master21 <96554164+cat-master21@users.noreply.github.com>
 	repology = project: lyx
-	source = @lyx~2.3.7-1::https://ftp.lip6.fr/pub/lyx/stable/2.3.x/lyx-2.3.7-1.tar.gz
-	sha256sums = 910bb48d9b19c0cfeb6ec845eb318515f33a63ea7892a99b2e7b67c6b518bacd
+	source = @lyx~2.5.1::https://ftp.lip6.fr/pub/lyx/stable/2.5.x/lyx-2.5.1.tar.xz
+	sha256sums = f2a2387bcb3f2f546c1fc13e4c74cb4f8aa648706ce5788ef705dd51344d2cfd
 
 pkgname = lyx
 ---
