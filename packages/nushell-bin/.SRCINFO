@@ -1,5 +1,5 @@
 pkgbase = nushell-bin
-	pkgver = 0.106.0
+	pkgver = 0.114.0
 	pkgdesc = A new type of shell
 	arch = arm64
 	arch = amd64
@@ -9,9 +9,9 @@ pkgbase = nushell-bin
 	breaks = nushell-app
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: nushell
-	source_arm64 = @nushell-bin~0.106.0::https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-aarch64-unknown-linux-gnu.tar.gz
-	sha256sums_arm64 = a441dfbb4e69ef9eced4549f05b4f1a83ba9651f291c5d18b3a3f23b67884b6d
-	source_amd64 = @nushell-bin~0.106.0::https://github.com/nushell/nushell/releases/download/0.106.0/nu-0.106.0-x86_64-unknown-linux-gnu.tar.gz
-	sha256sums_amd64 = ba0969d7172fd5ed87204593c2688fbb1c27bfe1fb606e6d443dfd6c44ef98c6
+	source_arm64 = @nushell-bin~0.114.0::https://github.com/nushell/nushell/releases/download/0.114.0/nu-0.114.0-aarch64-unknown-linux-gnu.tar.gz
+	sha256sums_arm64 = 280163b9a2b3c54e45ded348b577a569cdf2a292e8fe9d77fe02405c3415c8c3
+	source_amd64 = @nushell-bin~0.114.0::https://github.com/nushell/nushell/releases/download/0.114.0/nu-0.114.0-x86_64-unknown-linux-gnu.tar.gz
+	sha256sums_amd64 = 3896777ebf3678f6d41736a5e995ba8360b338eb73c713254fc024e08ec72289
 
 pkgname = nushell-bin
