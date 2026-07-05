@@ -2,7 +2,7 @@ pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="11"
+pkgrel="12"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -30,6 +30,25 @@ depends=(
   "pipewire-audio | pulseaudio-module-bluetooth"
   "bluetooth"
   "alsa-ucm-conf"
+  "blueman"
+  "gtk2-engines-pixbuf"
+  "libadwaita-1-0"
+  "libpanel-1-1"
+  "lightdm"
+  "mousepad"
+  "mugshot"
+  "qt-style-kvantum"
+  "qt-style-kvantum-themes"
+  "thunar"
+  "thunar-volman"
+  "xfce4-appfinder"
+  "xfce4-goodies"
+  "xfce4-notifyd"
+  "xfce4-panel"
+  "xfce4-session"
+  "xfce4-settings"
+  "xfce4-terminal"
+  "xfdesktop4"
 )
 pacdeps=(
   "xfce4-settings-pine-git"
@@ -44,6 +63,7 @@ pacdeps=(
   "rhino-adwaita-theme-git"
   "xfce4-dynamic-workspaces-rs-bin"
 )
+recommends=("lightdm-gtk-greeter")
 gives="unicorn-mobile"
 replaces=("unicorn-desktop" "unicorn-desktop-git")
 priority="required"
