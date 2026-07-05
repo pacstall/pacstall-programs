@@ -10,7 +10,7 @@ provides=("${gives}-plugin")
 replaces=("${provides[@]}")
 conflicts=("${provides[@]}")
 depends=("libwnck-3-0" "libwnck-3-dev")
-maintainer=("Elsie19 <hwengerstickel@pm.me>")
+maintainer=("Elsie19 <elsie19@pm.me>")
 
 package() {
   install -Dm755 "${gives}" -t "${pkgdir}/usr/bin/"

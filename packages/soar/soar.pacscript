@@ -8,7 +8,7 @@ pkgdesc='Fast, modern package manager for Static Binaries and Portable Formats'
 source=("https://github.com/pkgforge/soar/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=("ad5d8b11d53b0be18b7dd773febdaa1cdf83f997c5886ec6c22ad24e04c44692")
 makedepends=("cargo>=1.82.0")
-maintainer=("Elsie19 <hwengerstickel@pm.me>")
+maintainer=("Elsie19 <elsie19@pm.me>")
 external_connection=true
 
 build() {

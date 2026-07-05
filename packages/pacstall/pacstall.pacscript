@@ -37,7 +37,7 @@ recommends=(
 )
 maintainer=(
   "Pacstall Team <pacstall@pm.me>"
-  "Elsie19 <hwengerstickel@pm.me>"
+  "Elsie19 <elsie19@pm.me>"
 )
 backup=('usr/share/pacstall/repo/pacstallrepo' 'usr/share/pacstall/update')
 source=("https://github.com/pacstall/pacstall/archive/refs/tags/${pkgver}.zip")
