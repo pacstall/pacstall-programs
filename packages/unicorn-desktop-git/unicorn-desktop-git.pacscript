@@ -2,7 +2,7 @@ pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="13"
+pkgrel="14"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -16,7 +16,6 @@ depends=(
   "xfce4-pulseaudio-plugin"
   "xfce4-helpers"
   "pavucontrol"
-  "plank"
   "dconf-cli"
   "yaru-theme-icon"
   "yaru-theme-gtk"
@@ -67,6 +66,7 @@ pacdeps=(
   "ulauncher-deb"
   "cortile"
   "adw-gtk-theme"
+  "plank-reloaded"
   "rhino-xfwm4-theme-git"
   "rhino-wallpapers-git"
   "rhino-branding-git"
