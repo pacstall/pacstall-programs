@@ -1,6 +1,6 @@
 pkgname="fd-deb"
 gives="fd"
-pkgdesc="A simple, fast and user-friendly alternative to 'find'"
+pkgdesc="Simple, fast and user-friendly alternative to 'find'"
 maintainer=("Don Alfons <donnisnoni@outlook.com>")
 repology=("project: fd-find")
 arch=("amd64" "arm64" "armhf" "i386")
