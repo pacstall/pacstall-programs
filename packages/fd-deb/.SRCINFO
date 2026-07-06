@@ -1,7 +1,7 @@
 pkgbase = fd-deb
 	gives = fd
 	pkgver = 10.4.2
-	pkgdesc = A simple, fast and user-friendly alternative to 'find'
+	pkgdesc = Simple, fast and user-friendly alternative to 'find'
 	arch = amd64
 	arch = arm64
 	arch = armhf
