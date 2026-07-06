@@ -1,8 +1,9 @@
 pkgname="plank-reloaded"
 arch=("any")
 pkgver="0.11.169"
-provides=("plank=${pkgver}")
-replaces=("plank")
+pkgrel="2"
+provides=("plank=${pkgver}" "libplank-common=${pkgver}" "libplank1=${pkgver}")
+replaces=("plank" "libplank-common" "libplank1")
 conflicts=("plank" "libplank-common" "libplank1")
 pkgdesc="Elegant and simple dock"
 url='https://github.com/zquestz/plank-reloaded'
