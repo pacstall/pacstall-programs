@@ -3441,6 +3441,27 @@ pkgbase = fblog-bin
 
 pkgname = fblog-bin
 ---
+pkgbase = fd-deb
+	gives = fd
+	pkgver = 10.4.2
+	pkgdesc = Simple, fast and user-friendly alternative to 'find'
+	arch = amd64
+	arch = arm64
+	arch = armhf
+	arch = i386
+	maintainer = Don Alfons <donnisnoni@outlook.com>
+	repology = project: fd-find
+	source_amd64 = https://github.com/sharkdp/fd/releases/download/v10.4.2/fd_10.4.2_amd64.deb
+	sha256sums_amd64 = 0e44eb5fca93f09bc6f5430b90acdf44c8e069d0a903700aeb4820629337b67b
+	source_arm64 = https://github.com/sharkdp/fd/releases/download/v10.4.2/fd_10.4.2_arm64.deb
+	sha256sums_arm64 = caa91b8c0fad7ba1964a78e4932a82e3a5deb747fa40d0922a8c692b6d5e0ce1
+	source_armhf = https://github.com/sharkdp/fd/releases/download/v10.4.2/fd_10.4.2_armhf.deb
+	sha256sums_armhf = 91f53586e22959fb6e39a523566142d11840007ab7f0c35da10a675385ad0586
+	source_i386 = https://github.com/sharkdp/fd/releases/download/v10.4.2/fd_10.4.2_i686.deb
+	sha256sums_i386 = 9b52bb0031840592e8275efbae36d9d963f9f9e130a6f8ec897911b45c5956b3
+
+pkgname = fd-deb
+---
 pkgbase = feishin-app
 	gives = feishin
 	pkgver = 1.13.0
@@ -6803,7 +6824,7 @@ pkgname = kirc
 ---
 pkgbase = kiro-cli-bin
 	gives = kiro-cli
-	pkgver = 2.10.0
+	pkgver = 2.11.0
 	pkgdesc = AI-powered agentic coding assistant for the terminal
 	url = https://kiro.dev/cli/
 	arch = amd64
@@ -6816,16 +6837,16 @@ pkgbase = kiro-cli-bin
 	license = custom:Kiro
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: kiro-cli
-	source_amd64 = kiro-cli-bin-2.10.0-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.10.0/kirocli-x86_64-linux.tar.zst
-	sha256sums_amd64 = 551539f9beb55090d03a55eb7e46ee5c38185c9e4395b70afe14524cba6e684e
-	source_arm64 = kiro-cli-bin-2.10.0-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.10.0/kirocli-aarch64-linux.tar.zst
-	sha256sums_arm64 = 07831ff5dda63eec84c44f92092acffad902f28de3649c18dbb5538a2406e99b
+	source_amd64 = kiro-cli-bin-2.11.0-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.11.0/kirocli-x86_64-linux.tar.zst
+	sha256sums_amd64 = c2e602ca962b7b03d6898a684460cdeafe1bdffce484218602c1f081cdf650ca
+	source_arm64 = kiro-cli-bin-2.11.0-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.11.0/kirocli-aarch64-linux.tar.zst
+	sha256sums_arm64 = bd203fe40486414e4654bfbba908e21396232ae76e792d56ad1fcee2c23f0b3e
 
 pkgname = kiro-cli-bin
 ---
 pkgbase = kiro-ide-bin
 	gives = kiro-ide
-	pkgver = 1.0.0
+	pkgver = 1.0.89
 	pkgdesc = AI-powered IDE for modern development
 	url = https://kiro.dev
 	arch = amd64
@@ -6836,8 +6857,8 @@ pkgbase = kiro-ide-bin
 	license = custom:Kiro
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: kiro-ide
-	source = https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/1.0.0/tar/kiro-ide-1.0.0-stable-linux-x64.tar.gz
-	sha256sums = 367a18e469b2a325b9087829e0ae03e972cbb7d4dbdd74bf28eaa216842f6a16
+	source = https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/1.0.89/tar/kiro-ide-1.0.89-stable-linux-x64.tar.gz
+	sha256sums = 219600726e902b9c37a66cea4b0e27a0fc6d5a33e1226ac11ee2575d07351191
 
 pkgname = kiro-ide-bin
 ---
@@ -12174,6 +12195,7 @@ pkgname = pipewire
 ---
 pkgbase = plank-reloaded
 	pkgver = 0.11.169
+	pkgrel = 2
 	pkgdesc = Elegant and simple dock
 	url = https://github.com/zquestz/plank-reloaded
 	arch = any
@@ -12207,7 +12229,11 @@ pkgbase = plank-reloaded
 	conflicts = libplank-common
 	conflicts = libplank1
 	replaces = plank
+	replaces = libplank-common
+	replaces = libplank1
 	provides = plank=0.11.169
+	provides = libplank-common=0.11.169
+	provides = libplank1=0.11.169
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: plank-reloaded
 	source = https://github.com/zquestz/plank-reloaded/archive/refs/tags/0.11.169.tar.gz
@@ -13638,14 +13664,14 @@ pkgname = rhino-pine-lomiri-core
 ---
 pkgbase = rhino-pkg-git
 	gives = rhino-pkg
-	pkgver = 2.0.4
+	pkgver = 2.0.5
 	pkgdesc = Rhino-pkg wrapper script
 	arch = all
 	depends = aptitude
 	makedepends = make
 	pacdeps = nutext-bin
-	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = Elsie19 <elsie19@pm.me>
+	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://github.com/rhino-linux/rhino-pkg.git
 
 pkgname = rhino-pkg-git
