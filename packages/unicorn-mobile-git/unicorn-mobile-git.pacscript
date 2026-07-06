@@ -2,12 +2,11 @@ pkgname="unicorn-mobile-git"
 source=("https://github.com/rhino-linux/unicorn.git#branch=mobile")
 arch=("all")
 pkgver="0.0.1"
-pkgrel="12"
+pkgrel="13"
 depends=(
   "xfwm4"
   "xfdashboard"
   "xfdashboard-plugins"
-  "plank"
   "dconf-cli"
   "yaru-theme-icon"
   "yaru-theme-gtk"
@@ -57,6 +56,7 @@ pacdeps=(
   "ulauncher-deb"
   "cortile"
   "adw-gtk-theme"
+  "plank-reloaded"
   "rhino-xfwm4-theme-git"
   "rhino-wallpapers-git"
   "rhino-branding-git"
