@@ -12195,6 +12195,7 @@ pkgname = pipewire
 ---
 pkgbase = plank-reloaded
 	pkgver = 0.11.169
+	pkgrel = 2
 	pkgdesc = Elegant and simple dock
 	url = https://github.com/zquestz/plank-reloaded
 	arch = any
@@ -12228,7 +12229,11 @@ pkgbase = plank-reloaded
 	conflicts = libplank-common
 	conflicts = libplank1
 	replaces = plank
+	replaces = libplank-common
+	replaces = libplank1
 	provides = plank=0.11.169
+	provides = libplank-common=0.11.169
+	provides = libplank1=0.11.169
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: plank-reloaded
 	source = https://github.com/zquestz/plank-reloaded/archive/refs/tags/0.11.169.tar.gz
