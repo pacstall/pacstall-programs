@@ -8,7 +8,7 @@ sha256sums=("16fe5f07cc7a23930880b14d905883644cdc4b574d1c146629f6b98ee8fbbab9")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
 conflicts=("${pkgname}-git")
-replaces=("lightdm" "sddm")
+replaces=("ly-git" "lightdm" "sddm")
 pkgdesc="TUI display manager"
 priority='required'
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
@@ -29,7 +29,7 @@ build() {
 
 package() {
   cd "ly"
-  zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${_INIT_SYSTEM}"
+  zig build -Ddest_directory="${pkgdir}" installexe -Dinit_system="${_INIT_SYSTEM}"
 }
 
 post_install() {
