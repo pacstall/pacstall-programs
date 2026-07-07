@@ -1,7 +1,7 @@
 _pkgname="helium"
 pkgname="helium-browser-bin"
 gives="helium-browser"
-pkgver="0.7.7.1"
+pkgver="0.14.3.1"
 pkgdesc="Private, fast, and honest web browser based on Chromium"
 maintainer=("tranquil-tr0 <tranquil-tr0@proton.me>")
 arch=('amd64' 'arm64')
@@ -22,10 +22,8 @@ source_amd64=(
 source_arm64=(
   "${_pkgname}-${pkgver}-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-arm64_linux.tar.xz"
   "LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/${pkgver}/LICENSE.ungoogled_chromium")
-sha256sums_amd64=('698f46c080cf4dcb249b9e4d96e4b2c640870ba76b77a05d05a358661af39511'
-  '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d')
-sha256sums_arm64=('efa849d7dfdb1f3744d7ffe478617d8a66243073b2e951e9039e9bc44920c200'
-  '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d')
+sha256sums_amd64=('98404a938f96f4c8b2bbb92bed0422fd60c7e1591ec6bd69c4dc5e8b67212793')
+sha256sums_arm64=('8fa248704be9ec4475a306ffed407ad777d600b24021c005f7dd9b2e707e3448')
 
 prepare() {
   _archdir="${_pkgname}-${pkgver}-$([[ ${CARCH} == "arm64" ]] && echo "arm64" || echo "x86_64")_linux"
