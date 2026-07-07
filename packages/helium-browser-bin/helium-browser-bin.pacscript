@@ -24,8 +24,16 @@ source_arm64=(
   "helium-browser::https://files.catbox.moe/xqrvs8"
   "${_pkgname}-${pkgver}-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-arm64_linux.tar.xz"
   "LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/${pkgver}/LICENSE.ungoogled_chromium")
-sha256sums_amd64=('98404a938f96f4c8b2bbb92bed0422fd60c7e1591ec6bd69c4dc5e8b67212793')
-sha256sums_arm64=('8fa248704be9ec4475a306ffed407ad777d600b24021c005f7dd9b2e707e3448')
+sha256sums_amd64=(
+  '98404a938f96f4c8b2bbb92bed0422fd60c7e1591ec6bd69c4dc5e8b67212793'
+  'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2'
+  '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
+)
+sha256sums_arm64=(
+  '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
+  '8fa248704be9ec4475a306ffed407ad777d600b24021c005f7dd9b2e707e3448'
+  'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2
+)
 
 prepare() {
   _archdir="${_pkgname}-${pkgver}-$([[ ${CARCH} == "arm64" ]] && echo "arm64" || echo "x86_64")_linux"
