@@ -1352,16 +1352,16 @@ pkgname = brave-keyring-deb
 ---
 pkgbase = btop-bin
 	gives = btop
-	pkgver = 1.4.5
-	pkgdesc = A monitor of system resourecs, bpytop ported to C++
+	pkgver = 1.4.7
+	pkgdesc = A monitor of system resources, bpytop ported to C++
 	arch = amd64
 	breaks = btop
 	breaks = btop-git
 	breaks = btop-deb
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: btop
-	source = https://github.com/aristocratos/btop/releases/download/v1.4.5/btop-x86_64-linux-musl.tbz
-	sha256sums = 206b0f9334e93c06de9025eaf90676c374ca79815b41dadff1b36ef4e4e6d1d4
+	source = https://github.com/aristocratos/btop/releases/download/v1.4.7/btop-x86_64-unknown-linux-musl.tar.gz
+	sha256sums = 5099054dd6a101bd12eb6ff3702a9a6a3f57aaa27923a0da478ae5b517faf335
 
 pkgname = btop-bin
 ---
