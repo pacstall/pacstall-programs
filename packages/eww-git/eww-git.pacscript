@@ -10,25 +10,25 @@ source=("https://github.com/elkowar/eww.git")
 replaces=("${gives}")
 pacdeps=("rust-bin")
 makedepends=(
-    "libcairo2-dev"
-    "libdbusmenu-gtk3-dev"
-    "libgdk-pixbuf-2.0-dev"
-    "libglib2.0-dev"
-    "libgtk-3-dev"
-    "libgtk-layer-shell-dev"
-    "libpango1.0-dev"
-    "git" 
+  "libcairo2-dev"
+  "libdbusmenu-gtk3-dev"
+  "libgdk-pixbuf-2.0-dev"
+  "libglib2.0-dev"
+  "libgtk-3-dev"
+  "libgtk-layer-shell-dev"
+  "libpango1.0-dev"
+  "git"
 )
 depends=(
-    "libc6"
-    "libcairo2"
-    "libcairo-gobject2"
-    "libdbusmenu-gtk3-4"
-    "libgcc-s1"
-    "libgdk-pixbuf-2.0-0"
-    "libglib2.0-0"
-    "libgtk-3-0"
-    "libpango-1.0-0"
+  "libc6"
+  "libcairo2"
+  "libcairo-gobject2"
+  "libdbusmenu-gtk3-4"
+  "libgcc-s1"
+  "libgdk-pixbuf-2.0-0"
+  "libglib2.0-0"
+  "libgtk-3-0"
+  "libpango-1.0-0"
 )
 maintainer=("aKqir24 <aKqir24@github.com>")
 optdepends=("libgtk-layer-shell0: Wayland needs this")

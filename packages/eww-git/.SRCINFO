@@ -27,6 +27,6 @@ pkgbase = eww-git
 	license = MIT
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: eww
-	source = https://github.com/greshake/eww-git/archive/refs/tags/v0.6.0.r53.g8661abf.tar.gz
+	source = https://github.com/elkowar/eww.git
 
 pkgname = eww-git
