@@ -1,0 +1,11 @@
+pkgname="windscribe-deb"
+gives="windscribe"
+repology=("project: ${gives}")
+pkgver="2.23.11"
+arch=("amd64" "arm64")
+source_amd64=("https://github.com/Windscribe/Desktop-App/releases/download/v${pkgver}/${gives}_${pkgver}_amd64.deb")
+sha256sums_amd64=("9b22ad0369e7539d309c21a2535f46aa7d805d9e2ad6250dbbc376de87c333ee")
+source_arm64=("https://github.com/Windscribe/Desktop-App/releases/download/v${pkgver}/${gives}_${pkgver}_arm64.deb")
+sha256sums_arm64=("9f6bf75d4579c2e9193235b18bc2d603426b08558df31d2a4eb47fc92335d42c")
+pkgdesc="Windscribe VPN desktop client."
+maintainer=("IMYdev <omranmansour096@gmail.com>")
