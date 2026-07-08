@@ -32,12 +32,12 @@ prepare() {
   # Use project's Casilda dependency
   meson subprojects download casilda --sourcedir="${gives}"
   meson subprojects update casilda --sourcedir="${gives}"
-} 
+}
 
 build() {
   cd "${gives}" && mkdir _build
-  
-  # Configure project and build it 
+
+  # Configure project and build it
   sed -i "s/pygobject_dep = dependency('pygobject-3.0', version: '>= 3.52.0')/ /g" meson.build
   meson setup --wipe --prefix=~/.local _build .
   meson compile -C _build -j"${NCPU}"
