@@ -40,7 +40,7 @@ build() {
   if [[ ${XDG_SESSION_TYPE} == "wayland" ]]; then
     DISPLAY_SERVER="wayland"
   fi
-  cargo build -j"${NCPU}" --release --no-default-features --features "${DISPLAY_SERVER}"
+  cargo build -j"${NCPU}" --release --locked --no-default-features --features "${DISPLAY_SERVER}"
 }
 
 package() {
