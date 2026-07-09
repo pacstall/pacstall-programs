@@ -30,9 +30,10 @@ provides=("${gives}")
 source=(
   "git+https://github.com/xmonad/xmonad.git"
   "12.yaml::https://files.catbox.moe/yhpni5.yaml"
+  "stack-setup-2.yaml::https://files.catbox.moe/y57e5d.yaml"
   "xmonad.desktop::https://files.catbox.moe/dfm0qr.desktop"
-  "dynamic-compilation.patch::https://aur.archlinux.org/cgit/aur.git/plain/dynamic-compilation.patch?h=xmonad-git"
   "xmonad.svg::https://aur.archlinux.org/cgit/aur.git/plain/xmonad.svg?h=xmonad-git"
+  "dynamic-compilation.patch::https://aur.archlinux.org/cgit/aur.git/plain/dynamic-compilation.patch?h=xmonad-git"
 )
 external_connection=true
 
@@ -46,7 +47,10 @@ build() {
 
   # Initialize stack and compile the binary cleanly
   stack setup
-  stack build --snapshot "${srcdir}/12.yaml" --local-bin-path="${srcdir}/bin" --copy-bins
+  export STACK_SETUP_INFO_YAML="${srcdir}/stack-setup-2.yaml"
+  stack build \
+    --snapshot "${srcdir}/12.yaml" \
+    --local-bin-path="${srcdir}/bin" --copy-bins
 }
 
 package() {

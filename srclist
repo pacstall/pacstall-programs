@@ -18513,9 +18513,10 @@ pkgbase = xmonad-git
 	maintainer = aKqir24 <aKqir24@github.com>
 	source = git+https://github.com/xmonad/xmonad.git
 	source = 12.yaml::https://files.catbox.moe/yhpni5.yaml
+	source = stack-setup-2.yaml::https://files.catbox.moe/y57e5d.yaml
 	source = xmonad.desktop::https://files.catbox.moe/dfm0qr.desktop
-	source = dynamic-compilation.patch::https://aur.archlinux.org/cgit/aur.git/plain/dynamic-compilation.patch?h=xmonad-git
 	source = xmonad.svg::https://aur.archlinux.org/cgit/aur.git/plain/xmonad.svg?h=xmonad-git
+	source = dynamic-compilation.patch::https://aur.archlinux.org/cgit/aur.git/plain/dynamic-compilation.patch?h=xmonad-git
 
 pkgname = xmonad-git
 ---
