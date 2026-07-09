@@ -7164,7 +7164,7 @@ pkgname = lbry-deb
 ---
 pkgbase = leftwm-git
 	pkgver = 0.5.4.r29.g89f09638
-	pkgdesc = A tiling window manager for the adventurer
+	pkgdesc = Tiling window manager for the adventurer
 	url = https://github.com/leftwm/leftwm
 	arch = amd64
 	arch = i386
