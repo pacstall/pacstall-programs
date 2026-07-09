@@ -20,7 +20,7 @@ prepare() {
 
 build() {
   cd "${pkgname}"
-  cargo build -j"${NCPU}" --profile optimized --no-default-features --features=x11rb,lefthk,sys-log,leftwm-watchdog
+  cargo build -j"${NCPU}" --profile optimized --locked --no-default-features --features=x11rb,lefthk,sys-log,leftwm-watchdog
 }
 
 package() {
