@@ -7,7 +7,7 @@ source=("https://codeberg.org/fairyglade/ly.git")
 makedepends=("build-essential" "libpam0g-dev" "libxcb-xkb-dev")
 pacdeps=("zig-bin")
 conflicts=("ly")
-replaces=("lightdm" "sddm")
+replaces=("ly" "lightdm" "sddm")
 pkgdesc="TUI display manager"
 priority='required'
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
@@ -28,7 +28,7 @@ build() {
 
 package() {
   cd "ly"
-  zig build -Ddest_directory="${pkgdir} installexe -Dinit_system=${_INIT_SYSTEM}"
+  zig build -Ddest_directory="${pkgdir}" installexe -Dinit_system="${_INIT_SYSTEM}"
 }
 
 post_install() {
