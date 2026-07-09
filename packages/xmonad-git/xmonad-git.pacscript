@@ -29,6 +29,7 @@ conflicts=("${gives}")
 provides=("${gives}")
 source=(
   "git+https://github.com/xmonad/xmonad.git"
+  "12.yaml::https://files.catbox.moe/yhpni5.yaml"
   "xmonad.desktop::https://files.catbox.moe/dfm0qr.desktop"
   "dynamic-compilation.patch::https://aur.archlinux.org/cgit/aur.git/plain/dynamic-compilation.patch?h=xmonad-git"
   "xmonad.svg::https://aur.archlinux.org/cgit/aur.git/plain/xmonad.svg?h=xmonad-git"
@@ -45,7 +46,7 @@ build() {
 
   # Initialize stack and compile the binary cleanly
   stack setup
-  stack build --local-bin-path="${srcdir}/bin" --copy-bins
+  stack build --snapshot "${srcdir}/12.yaml" --local-bin-path="${srcdir}/bin" --copy-bins
 }
 
 package() {
