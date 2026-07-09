@@ -8,4 +8,5 @@ sha256sums_amd64=("9b22ad0369e7539d309c21a2535f46aa7d805d9e2ad6250dbbc376de87c33
 source_arm64=("https://github.com/Windscribe/Desktop-App/releases/download/v${pkgver}/${gives}_${pkgver}_arm64.deb")
 sha256sums_arm64=("9f6bf75d4579c2e9193235b18bc2d603426b08558df31d2a4eb47fc92335d42c")
 pkgdesc='Windscribe VPN desktop client'
+url='https://windscribe.com/'
 maintainer=("IMYdev <omranmansour096@gmail.com>")
