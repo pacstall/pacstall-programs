@@ -17957,6 +17957,7 @@ pkgbase = windscribe-deb
 	gives = windscribe
 	pkgver = 2.23.11
 	pkgdesc = Windscribe VPN desktop client
+	url = https://windscribe.com/
 	arch = amd64
 	arch = arm64
 	maintainer = IMYdev <omranmansour096@gmail.com>
