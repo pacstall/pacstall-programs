@@ -1,7 +1,7 @@
 pkgbase = paseo-deb
 	gives = paseo
 	pkgver = 0.1.104
-	pkgdesc = One interface for Claude Code, Codex, Copilot, OpenCode, and Pi agents. Run agents in parallel on your own machines from desktop, mobile, web, and CLI.
+	pkgdesc = One interface for Claude Code, Codex, Copilot, OpenCode, and Pi agents Run agents in parallel on your own machines from desktop, mobile, web, and CLI.
 	url = https://paseo.sh
 	arch = amd64
 	replaces = paseo

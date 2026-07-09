@@ -4,7 +4,7 @@ replaces=("${gives}")
 pkgver="0.1.104"
 arch=("amd64")
 url='https://paseo.sh'
-pkgdesc="One interface for Claude Code, Codex, Copilot, OpenCode, and Pi agents.
+pkgdesc="One interface for Claude Code, Codex, Copilot, OpenCode, and Pi agents
 Run agents in parallel on your own machines from desktop, mobile, web, and CLI."
 project=("project: paseo")
 license=('AGPL-3.0')
