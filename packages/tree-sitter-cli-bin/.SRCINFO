@@ -1,7 +1,7 @@
 pkgbase = tree-sitter-cli-bin
 	gives = tree-sitter-cli
 	pkgver = 0.26.10
-	pkgdesc = A CLI for developing, testing, and using Tree-sitter grammars
+	pkgdesc = CLI for developing, testing, and using Tree-sitter grammars
 	url = https://tree-sitter.github.io/tree-sitter/
 	arch = amd64
 	arch = arm64
