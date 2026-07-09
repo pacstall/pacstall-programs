@@ -11,7 +11,6 @@ replaces=("i3status-rust" "i3status-rs")
 sha256sums=("f73d46eb2b7854e69195c063b69592da855848526f8eb0f427568e59859dbe5e")
 pacdeps=("rust-bin")
 makedepends=("pandoc" "gcc" "libssl-dev" "libsensors-dev" "libpulse-dev" "libnotmuch-dev")
-maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
 
 build() {
