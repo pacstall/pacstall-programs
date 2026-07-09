@@ -1,6 +1,6 @@
 pkgname=leftwm-git
 pkgver="0.5.4.r29.g89f09638"
-pkgdesc="A tiling window manager for the adventurer"
+pkgdesc="Tiling window manager for the adventurer"
 arch=('amd64' 'i386')
 url="https://github.com/leftwm/leftwm"
 pacdeps=('rust-bin')
