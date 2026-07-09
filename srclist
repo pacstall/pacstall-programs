@@ -6081,7 +6081,6 @@ pkgbase = i3status-rust
 	replaces = i3status-rust
 	replaces = i3status-rs
 	license = GPL-3.0
-	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: i3status-rust
 	source = https://github.com/greshake/i3status-rust/archive/refs/tags/v0.36.1.tar.gz
 	sha256sums = f73d46eb2b7854e69195c063b69592da855848526f8eb0f427568e59859dbe5e
@@ -15823,7 +15822,6 @@ pkgbase = tenacity-git
 	optdepends = ffmpeg: additional import/export capabilities
 	maintainer = echometerain <echometer@disroot.org>
 	maintainer = xdavius <xdavius@github.com>
-	maintainer = aKqir24 <aKqir24@github.com>
 	source = git+https://codeberg.org/tenacityteam/tenacity.git
 	source = tenacity-libnyquist::git+https://codeberg.org/tenacityteam/libnyquist.git
 
@@ -18442,7 +18440,6 @@ pkgbase = xgifwallpaper-git
 	makedepends = libxinerama-dev
 	makedepends = libxext-dev
 	license = GPL-3.0-only
-	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/calculon102/xgifwallpaper.git
 
 pkgname = xgifwallpaper-git

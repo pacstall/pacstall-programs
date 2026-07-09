@@ -14,7 +14,6 @@ pkgbase = i3status-rust
 	replaces = i3status-rust
 	replaces = i3status-rs
 	license = GPL-3.0
-	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: i3status-rust
 	source = https://github.com/greshake/i3status-rust/archive/refs/tags/v0.36.1.tar.gz
 	sha256sums = f73d46eb2b7854e69195c063b69592da855848526f8eb0f427568e59859dbe5e
