@@ -54,7 +54,7 @@ build() {
 }
 
 package() {
-  cd "${srcdir}/${gives}" || return 1
+  cd "${srcdir}/${gives}"
 
   # Install the compiled standalone binary directly
   install -Dm 755 "${srcdir}/bin/xmonad" "${pkgdir}/usr/bin/xmonad"
