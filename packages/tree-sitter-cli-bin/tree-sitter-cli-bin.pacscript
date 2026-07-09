@@ -6,7 +6,7 @@ url='https://tree-sitter.github.io/tree-sitter/'
 license=("MIT")
 repology=("project: ${gives}")
 breaks=("${gives}" "${gives}-deb" "${gives}-git")
-pkgdesc="A CLI for developing, testing, and using Tree-sitter grammars"
+pkgdesc="CLI for developing, testing, and using Tree-sitter grammars"
 maintainer=("Don Alfons <donnisnoni@outlook.com>")
 recommends=(
   "nodejs: Required for the 'generate' command"
