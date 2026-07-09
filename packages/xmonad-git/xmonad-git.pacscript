@@ -43,7 +43,7 @@ prepare() {
 }
 
 build() {
-  cd "${srcdir}/${gives}" || return 1
+  cd "${srcdir}/${gives}"
 
   # Initialize stack and compile the binary cleanly
   stack setup
