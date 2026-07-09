@@ -38,7 +38,7 @@ source=(
 external_connection=true
 
 prepare() {
-  cd "${gives}" || return 1
+  cd "${gives}"
   patch -p1 -i "${srcdir}/dynamic-compilation.patch"
 }
 
