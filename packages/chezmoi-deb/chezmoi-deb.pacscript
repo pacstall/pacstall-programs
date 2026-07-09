@@ -1,9 +1,9 @@
 pkgname="chezmoi-deb"
 gives="chezmoi"
-pkgver="2.70.5"
+pkgver="2.71.0"
 source=("https://github.com/twpayne/${gives}/releases/download/v${pkgver}/${gives}_${pkgver}_linux_amd64.deb")
 pkgdesc="Manage your dotfiles across multiple diverse machines, securely"
-sha256sums=("5e5203411292a25c3014114055e4a89669887c3bfd8893b152f1824d08ec4b98")
+sha256sums=("a8880a1b01e877c3e5da250b9f882ce9fa39962686d75f436fa21e021fa092b1")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: chezmoi")
