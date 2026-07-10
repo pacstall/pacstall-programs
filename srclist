@@ -4432,16 +4432,16 @@ pkgname = gitfiend-deb
 ---
 pkgbase = github-cli-bin
 	gives = gh
-	pkgver = 2.95.0
+	pkgver = 2.96.0
 	pkgdesc = GitHub's official command line tool - Binary version
 	arch = amd64
 	breaks = gh-git
 	breaks = gh-deb
 	replaces = gh
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	repology = project: gh
-	source = @github-cli-bin~2.95.0::https://github.com/cli/cli/releases/download/v2.95.0/gh_2.95.0_linux_amd64.tar.gz
-	sha256sums = 25d1e4729e8808c9ed3d613e96ebd3f3e44446f2d368c89d878a71a36ddb3d8c
+	repology = project: github-cli
+	source = @github-cli-bin~2.96.0::https://github.com/cli/cli/releases/download/v2.96.0/gh_2.96.0_linux_amd64.tar.gz
+	sha256sums = 83d5c2ccad5498f58bf6368acb1ab32588cf43ab3a4b1c301bf36328b1c8bd60
 
 pkgname = github-cli-bin
 ---
