@@ -16,6 +16,7 @@ pkgbase = git
 	makedepends = install-info
 	makedepends = zlib1g-dev
 	makedepends = zlib1g
+	makedepends = cargo
 	breaks = git-git
 	replaces = git
 	maintainer = Oren Klopfer <oren@taumoda.com>
