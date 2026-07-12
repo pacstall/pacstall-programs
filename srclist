@@ -1035,15 +1035,15 @@ pkgname = betterbird-bin
 ---
 pkgbase = bitwarden-cli-bin
 	gives = bitwarden-cli
-	pkgver = 2026.5.0
+	pkgver = 2026.6.0
 	pkgdesc = Bitwarden's command-line interface - Binary
 	arch = amd64
 	breaks = bitwarden-cli-git
 	replaces = bitwarden-cli
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: bitwarden-cli
-	source = https://github.com/bitwarden/clients/releases/download/cli-v2026.5.0/bw-linux-2026.5.0.zip
-	sha256sums = 5ddbf5383bec9c71613d7b699ffa5249b5e7b68b2a3d15b4c75738ba8a8f9a19
+	source = https://github.com/bitwarden/clients/releases/download/cli-v2026.6.0/bw-linux-2026.6.0.zip
+	sha256sums = 392549496c712ab86bfbd6c27302df9fd2c431cfc7a47e26941ac3e3893f4d27
 
 pkgname = bitwarden-cli-bin
 ---
