@@ -18922,7 +18922,7 @@ pkgbase = yt-dlp
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: yt-dlp
 	source = https://github.com/yt-dlp/yt-dlp/releases/download/2026.07.04/yt-dlp
-	sha256sums = 0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5
+	sha256sums = 495be29ff4d9d4e9be7eabdfef225221e5d5282e77f2f505abc6dca80349f3fd
 
 pkgname = yt-dlp
 ---
