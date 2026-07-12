@@ -1,6 +1,6 @@
 pkgname="tree-sitter-cli-bin"
 gives="tree-sitter-cli"
-pkgver="0.26.10"
+pkgver="0.26.11"
 arch=("amd64" "arm64" "armhf" "i386")
 url='https://tree-sitter.github.io/tree-sitter/'
 license=("MIT")
@@ -17,10 +17,10 @@ source_amd64=("https://github.com/tree-sitter/tree-sitter/releases/download/v${p
 source_arm64=("https://github.com/tree-sitter/tree-sitter/releases/download/v${pkgver}/${gives}-linux-arm64.zip")
 source_armhf=("https://github.com/tree-sitter/tree-sitter/releases/download/v${pkgver}/${gives}-linux-arm.zip")
 source_i386=("https://github.com/tree-sitter/tree-sitter/releases/download/v${pkgver}/${gives}-linux-x86.zip")
-sha256sums_amd64=("5aca1172aae08050d0d1184046377d850c04065205185ebafde361afff8d9f62")
-sha256sums_arm64=("6a455e6c0c21ddb732d182e3c46e3a8ca1121718254ce684a9dc730ff2367e02")
-sha256sums_armhf=("dbe92018186e33ee8eaaec220663acd9afba8a8c823e9a30ced1bc8acf315c3d")
-sha256sums_i386=("e639f6a8715edbecb618e042f2adaad644f44bdabbe28c49d815a556b34887d9")
+sha256sums_amd64=("ff1b7f9863f2faafd78dc0e66d902ee85b37f709b314b22c009f51caf233eebd")
+sha256sums_arm64=("db28509fe6db8902f9d14c43c486858c7486b42c3a96b30e811e73f105762336")
+sha256sums_armhf=("bcf2bbcee574b118cdeede47a8ec76b4a534d14a08cf25808b9305eb1c26b9a2")
+sha256sums_i386=("1ce9e7a78acf3ccbda9f6e7efe0958738d4320b3fd0aeeae1fa4fb358342159e")
 
 package() {
   cd "${srcdir}"
