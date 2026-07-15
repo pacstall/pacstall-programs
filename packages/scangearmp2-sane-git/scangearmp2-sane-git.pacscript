@@ -64,7 +64,7 @@ post_remove() {
 
 build() {
   cd "${gives}" && mkdir build
-  cmake -B build -DCMAKE_INSTALL_PREFIX="/" -DCMAKE_BUILD_TYPE=Release # -DBUILD_TESTING=OFF
+  cmake -B build -DCMAKE_INSTALL_PREFIX="/" -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF
   make -j"${NCPU}" -C build
 }
 
