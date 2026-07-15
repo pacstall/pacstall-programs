@@ -7226,15 +7226,16 @@ pkgname = lazydocker-bin
 ---
 pkgbase = lazygit
 	gives = lazygit
-	pkgver = 0.62.2
+	pkgver = 0.63.0
 	pkgdesc = simple terminal UI for git commands
 	url = https://github.com/jesseduffield/lazygit
 	arch = amd64
 	depends = git
 	maintainer = Thomas Crha <thomas@9bitbyte.com>
 	maintainer = raik199x <raik199x@mail.ru>
-	source = @lazygit~0.62.2::https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygit_0.62.2_Linux_x86_64.tar.gz
-	sha256sums = 8b9a4c2d0969cbea92b45c956dd2a44e1ba76900c9df49f1c60984045ce77984
+	repology = project: lazygit
+	source = @lazygit~0.63.0::https://github.com/jesseduffield/lazygit/releases/download/v0.63.0/lazygit_0.63.0_Linux_x86_64.tar.gz
+	sha256sums = cf5cfa3e116d7775f3600a51ec1d9ce7ba554a08b9566c7c2da83cb0023efabf
 
 pkgname = lazygit
 ---
