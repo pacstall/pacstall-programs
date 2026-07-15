@@ -1,5 +1,5 @@
 pkgname="scangearmp2-sane-git"
-pkgver="4.20.1"
+pkgver="4.91"
 repology=("project: scangearmp2-sane")
 gives="scangearmp2"
 pkgdesc="Sane backend for the canon's scanner"
@@ -13,7 +13,7 @@ depends=(
   "libfreetype6>=2.2.1"
   "libgcc1"
   "libglib2.0-0>=2.32.0"
-  "libgtk-3-0>=3.24.0"
+  "libgtk-4-1"
   "libpango-1.0-0>=1.29.4"
   "libstdc++6>=4.1.1"
   "libusb-1.0-0>=2:1.0.6"
@@ -27,7 +27,7 @@ makedepends=(
   "libusb-1.0-0>=2:1.0.6"
   "pkg-config"
   "libusb-1.0-0-dev>=2:1.0.6"
-  "libgtk-3-dev"
+  "libgtk-4-dev"
   "libsane-dev"
 )
 replaces=("${gives}-deb")
@@ -58,8 +58,8 @@ post_remove() {
 }
 
 build() {
-  cd "${gives}"
-  cmake -B build -DCMAKE_INSTALL_PREFIX="/" -DCMAKE_BUILD_TYPE=Release
+  cd "${gives}" && mkdir build
+  cmake -B build -DCMAKE_INSTALL_PREFIX="/" -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF
   make -j"${NCPU}" -C build
 }
 
