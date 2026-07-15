@@ -14630,6 +14630,11 @@ pkgbase = scangearmp2-sane-git
 	makedepends = libusb-1.0-0-dev>=2:1.0.6
 	makedepends = libgtk-4-dev
 	makedepends = libsane-dev
+	makedepends = build-essential
+	makedepends = libjpeg-dev
+	makedepends = libjpeg-dev
+	makedepends = libtiff-dev
+	makedepends = zlib1g-dev
 	conflicts = scangearmp2-deb
 	replaces = scangearmp2-deb
 	maintainer = aKqir24 <aKqir24@github.com>
