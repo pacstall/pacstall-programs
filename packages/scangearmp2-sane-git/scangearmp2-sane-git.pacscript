@@ -29,6 +29,11 @@ makedepends=(
   "libusb-1.0-0-dev>=2:1.0.6"
   "libgtk-4-dev"
   "libsane-dev"
+  "build-essential"
+  "libjpeg-dev"
+  "libjpeg-dev"
+  "libtiff-dev"
+  "zlib1g-dev"
 )
 replaces=("${gives}-deb")
 conflicts=("${gives}-deb")
@@ -59,7 +64,7 @@ post_remove() {
 
 build() {
   cd "${gives}" && mkdir build
-  cmake -B build -DCMAKE_INSTALL_PREFIX="/" -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF
+  cmake -B build -DCMAKE_INSTALL_PREFIX="/" -DCMAKE_BUILD_TYPE=Release # -DBUILD_TESTING=OFF
   make -j"${NCPU}" -C build
 }
 
