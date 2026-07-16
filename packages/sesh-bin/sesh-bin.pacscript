@@ -15,7 +15,6 @@ source_i386=("${pkgname}~${pkgver}::https://github.com/joshmedeski/sesh/releases
 maintainer=("Don Alfons <donnisnoni@outlook.com>")
 
 package() {
-  cd "${pkgname}~${pkgver}"
   install -Dm755 sesh -t "${pkgdir}/usr/bin"
   install -Dm644 share/man/man1/sesh.1 -t "${pkgdir}/usr/share/man/man1"
   gzip -9n "${pkgdir}/usr/share/man/man1/sesh.1"
