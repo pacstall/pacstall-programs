@@ -6,11 +6,12 @@ url='https://github.com/Supreeeme/xwayland-satellite'
 license=('GPL-3.0-or-later')
 source=("${url}.git#tag=v${pkgver}")
 external_connection=true
-makedepends=("clang" "xwayland" "libwayland-dev" "libclang-dev" "pkg-config" "cargo>=1.83.0" "libxcb-cursor-dev" "libxkbcommon-dev")
+makedepends=("clang" "xwayland" "libwayland-dev" "libclang-dev" "pkg-config" "cargo>=1.83.0 | rustup" "libxcb-cursor-dev" "libxkbcommon-dev")
 maintainer=("Alxhr0 <alxhr0@proton.me>")
 
 build() {
   cd "${pkgname}"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build --locked --release -j"${NCPU}"
 }
 
