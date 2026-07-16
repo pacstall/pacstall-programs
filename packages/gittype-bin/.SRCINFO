@@ -4,12 +4,11 @@ pkgbase = gittype-bin
 	pkgdesc = CLI code-typing game that turns your source code into typing challenges
 	arch = amd64
 	arch = arm64
-	depends = git
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: gittype-bin
 	source_amd64 = https://github.com/unhappychoice/gittype/releases/download/v0.10.0/gittype-v0.10.0-x86_64-unknown-linux-gnu.tar.gz
-	sha256sums_amd64 = 145888f0e3959d29832c7395403c2327e0f03b9591e4cdd3f712741cf0f934e9
+	sha256sums_amd64 = 5e227fa47ba38602ac159bfc3d52cd6978924bf69523f1063ee7577e969d391d
 	source_arm64 = https://github.com/unhappychoice/gittype/releases/download/v0.10.0/gittype-v0.10.0-aarch64-unknown-linux-gnu.tar.gz
-	sha256sums_arm64 = 45c001c0320306178c3fc17d0927b34c48886c4235b032ad9ca73f4b358c7237
+	sha256sums_arm64 = d260b03e28cbccfba8aa5055f349e1ce75565db62057d426357437f7159f0356
 
 pkgname = gittype-bin
