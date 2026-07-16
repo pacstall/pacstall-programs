@@ -4,18 +4,20 @@ pkgver='0.5.4'
 pkgdesc='Utility to create modern online books from Markdown files'
 url='https://rust-lang.github.io/mdBook/'
 repology=("project: ${pkgname}")
-makedepends=('cargo>=1.88.0')
+makedepends=('cargo>=1.88.0 | rustup')
 source=("https://github.com/rust-lang/mdBook/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=('107614330c35c77d53b6f6ce7826c50eed087650efe5646a4d0a16ca6bf5544b')
 external_connection=true
 
 build() {
   cd "mdBook-${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build -j"${NCPU}" --release --locked
 }
 
 check() {
   cd "mdBook-${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   cargo test --locked
 }
 

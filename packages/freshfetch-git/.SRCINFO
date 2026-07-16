@@ -4,7 +4,7 @@ pkgbase = freshfetch-git
 	pkgdesc = A fresh take on Neofetch
 	url = https://github.com/K4rakara/freshfetch
 	arch = amd64
-	makedepends = cargo
+	makedepends = cargo | rustup
 	maintainer = pythoncrazy <pinakpaliwal07@gmail.com>
 	source = https://github.com/K4rakara/freshfetch.git
 

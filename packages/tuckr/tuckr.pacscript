@@ -4,7 +4,7 @@ pkgdesc="Super powered replacement for GNU Stow"
 arch=('amd64' 'i386' 'arm64')
 url='https://github.com/RaphGL/Tuckr'
 license=('GPL-3.0')
-makedepends=('cargo>=1.80' 'git')
+makedepends=('cargo>=1.80 | rustup' 'git')
 source=("git+${url}#tag=${pkgver}")
 sha256sums=("SKIP")
 repology=("project: tuckr")

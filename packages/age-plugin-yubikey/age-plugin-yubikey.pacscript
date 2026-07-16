@@ -12,7 +12,7 @@ depends=(
   "libpcsclite1"
 )
 makedepends=(
-  "cargo>=1.70"
+  "cargo>=1.70 | rustup"
   "libpcsclite-dev"
   "pkg-config"
 )
@@ -21,6 +21,7 @@ sha256sums=("SKIP")
 
 build() {
   cd "${pkgname}-${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build -j"${NCPU}" --release --locked
 }
 

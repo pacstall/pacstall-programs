@@ -7,12 +7,13 @@ url='https://soar.qaidvoid.dev/'
 pkgdesc='Fast, modern package manager for Static Binaries and Portable Formats'
 source=("https://github.com/pkgforge/soar/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=("ad5d8b11d53b0be18b7dd773febdaa1cdf83f997c5886ec6c22ad24e04c44692")
-makedepends=("cargo>=1.82.0")
+makedepends=("cargo>=1.82.0 | rustup")
 maintainer=("Elsie19 <elsie19@pm.me>")
 external_connection=true
 
 build() {
   cd "soar-${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build -j"${NCPU}" --release --locked
 }
 

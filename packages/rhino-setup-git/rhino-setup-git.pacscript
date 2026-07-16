@@ -2,7 +2,7 @@ pkgname="rhino-setup-git"
 source=("https://github.com/rhino-linux/rhino-setup.git")
 arch=("any")
 pkgver="2025.3-2"
-makedepends=("libgtk-4-dev" "libadwaita-1-dev" "gettext" "desktop-file-utils" "rustc" "cargo" "meson" "ninja-build")
+makedepends=("libgtk-4-dev" "libadwaita-1-dev" "gettext" "desktop-file-utils" "cargo | rustup" "meson" "ninja-build")
 depends=("libgtk-4-dev" "libadwaita-1-dev" "gettext" "desktop-file-utils" "uidmap" "pkexec")
 gives="rhino-setup"
 replaces="${gives}-bin"
@@ -13,6 +13,7 @@ incompatible=("debian:*")
 
 build() {
   cd "rhino-setup"
+  export RUSTUP_TOOLCHAIN=stable
   meson build
   mkdir -p "${pkgdir}/etc/skel/.config/autostart"
 }

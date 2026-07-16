@@ -1,7 +1,7 @@
 pkgname="rsbbi-git"
 pkgrel="2"
 gives="rsbbi"
-makedepends=("cargo" "rustc" "pkg-config" "librust-openssl-dev")
+makedepends=("cargo | rustup" "pkg-config" "librust-openssl-dev")
 pkgdesc="A Rust-Based Rabbi, using Sefaria's API"
 source=("https://github.com/Elsie19/rsbbi.git")
 arch=("any")
@@ -15,6 +15,7 @@ incompatible=("debian:bookworm")
 
 build() {
   cd "${gives}"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build -j"${NCPU}" --locked --release
 }
 

@@ -4,7 +4,7 @@ source=("https://github.com/eza-community/eza.git")
 arch=("any")
 pkgver="0.18.15"
 url='https://eza.rocks'
-makedepends=("cargo" "libgit2-dev" "cmake" "rustc" "pandoc")
+makedepends=("cargo | rustup" "libgit2-dev" "cmake" "rustc" "pandoc")
 pkgdesc="A modern, maintained replacement for ls"
 external_connection=true
 maintainer=("Elsie19 <elsie19@pm.me>")
@@ -17,6 +17,7 @@ prepare() {
 
 build() {
   cd "eza"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build -j"${NCPU}" --release --locked
   pandoc --standalone -f markdown -t man "man/eza.1.md" > target/man1/eza.1
   pandoc --standalone -f markdown -t man "man/eza_colors.5.md" > target/man5/eza_colors.5

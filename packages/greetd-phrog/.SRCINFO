@@ -8,7 +8,7 @@ pkgbase = greetd-phrog
 	depends = greetd
 	depends = libphosh-0.45-0
 	depends = libglib2.0-bin
-	makedepends = cargo>=1.87
+	makedepends = cargo>=1.87 | rustup
 	makedepends = libphosh-0.45-dev
 	license = GPL-3.0-only
 	maintainer = Oren Klopfer <oren@taumoda.com>

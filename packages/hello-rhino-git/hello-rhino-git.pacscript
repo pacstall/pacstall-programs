@@ -4,7 +4,7 @@ source=("https://github.com/rhino-linux/hello-rhino.git")
 arch=("any")
 pkgver="2025.2"
 depends=("libssl-dev" "gettext")
-makedepends=("cargo>=1.80.0" "meson" "ninja-build" "gettext")
+makedepends=("cargo>=1.80.0 | rustup" "meson" "ninja-build" "gettext")
 pkgdesc="Greeter application for Rhino Linux"
 maintainer=("AJStrong <ajstrongdev@proton.me>")
 external_connection=true
@@ -16,6 +16,7 @@ prepare() {
 
 build() {
   cd "${gives}"
+  export RUSTUP_TOOLCHAIN=stable
   ninja -C build/ -j"${NCPU}"
 }
 

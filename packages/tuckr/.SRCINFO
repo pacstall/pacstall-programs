@@ -5,7 +5,7 @@ pkgbase = tuckr
 	arch = amd64
 	arch = i386
 	arch = arm64
-	makedepends = cargo>=1.80
+	makedepends = cargo>=1.80 | rustup
 	makedepends = git
 	license = GPL-3.0
 	maintainer = Bahar KURT <kurtbahartr@gmail.com>

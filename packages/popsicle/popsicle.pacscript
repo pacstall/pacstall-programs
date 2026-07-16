@@ -4,7 +4,7 @@ arch=("any")
 pkgver="1.3.3"
 source=("@${pkgname}~${pkgver}::https://github.com/pop-os/popsicle/archive/refs/tags/1.3.3.zip")
 license="MIT"
-makedepends=("cargo" "libgtk-3-dev" "help2man")
+makedepends=("cargo | rustup" "libgtk-3-dev" "help2man")
 pkgdesc="Multiple USB File Flasher"
 external_connection=true
 maintainer=("James Ed Randson <jimedrand@disroot.org>")
@@ -13,10 +13,12 @@ compatible=("debian:trixie")
 
 build() {
   cd "${pkgname}~${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   make -j"${NCPU}"
 }
 
 package() {
   cd "${pkgname}~${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   make install DESTDIR="${pkgdir}"
 }

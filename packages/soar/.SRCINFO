@@ -3,7 +3,7 @@ pkgbase = soar
 	pkgdesc = Fast, modern package manager for Static Binaries and Portable Formats
 	url = https://soar.qaidvoid.dev/
 	arch = any
-	makedepends = cargo>=1.82.0
+	makedepends = cargo>=1.82.0 | rustup
 	license = MIT
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: soar

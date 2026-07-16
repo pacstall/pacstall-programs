@@ -24,9 +24,8 @@ makedepends=(
   "python3-build"
   "python3-hatchling"
   "python3-installer"
-  "cargo"
+  "cargo | rustup"
 )
-pacdeps=("rust-bin")
 pkgdesc="Tool for launching non-steam games with Proton"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-3.0-only')
@@ -34,6 +33,7 @@ external_connection=true
 
 prepare() {
   cd "${gives}"
+  export RUSTUP_TOOLCHAIN=stable
   ./configure.sh --prefix=/usr --use-system-pyzstd --use-system-urllib
 
   patch Makefile.in "${srcdir}"/Makefile.patch
