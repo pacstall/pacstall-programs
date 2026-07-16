@@ -1,0 +1,47 @@
+name: Validate SHA256sums
+on: pull_request
+jobs:
+  validate-sha:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dorny/paths-filter@v4
+        id: changes
+        with:
+          list-files: shell
+          filters: |
+            pacscripts:
+              - 'packages/*/*.pacscript'
+      - name: Validate hashes for all arches
+        if: steps.changes.outputs.pacscripts == 'true'
+        run: |
+          set -euo pipefail
+          for f in ${{ steps.changes.outputs.pacscripts_files }}; do
+            [[ $f == *.pacscript ]] || continue
+            echo "::group::Checking $f"
+            # get arch list
+            arch_list=$(bash -c 'source "$1"; echo "${arch[*]}"' _ "$f")
+            for arch_name in $arch_list; do
+              echo "-- $arch_name --"
+              bash -c '
+                export CARCH="$2"
+                source "$1"
+                for idx in "${!source[@]}"; do
+                  url="${source[$idx]}"
+                  eval "exp=\"\${sha256sums_${2}[$idx]:-}\""
+                  [[ -z "$exp" || "$exp" == "SKIP" ]] && continue
+                  echo "URL: $url"
+                  echo "Expected: $exp"
+                  curl -LfsS "$url" -o /tmp/pkg.deb
+                  actual=$(sha256sum /tmp/pkg.deb | cut -d" " -f1)
+                  echo "Actual: $actual"
+                  if [[ "$actual" != "$exp" ]]; then
+                    echo "::error::SHA mismatch in $1 [$2] - expected $exp got $actual"
+                    exit 1
+                  fi
+                  echo "OK"
+                done
+              ' _ "$f" "$arch_name"
+            done
+            echo "::endgroup::"
+          done
