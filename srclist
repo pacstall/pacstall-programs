@@ -11773,6 +11773,34 @@ pkgbase = owofetch
 
 pkgname = owofetch
 ---
+pkgbase = oxwm-git
+	gives = oxwm
+	pkgver = 0.12.0.0.gdd25e8c
+	pkgdesc = Window Manager Inspired by DWM, but with better sane defaults
+	url = https://github.com/tonybanters/oxwm
+	arch = amd64
+	depends = libfreetype6
+	depends = libx11-6
+	depends = libxft2
+	depends = libxinerama1
+	depends = libfontconfig1
+	depends = liblua5.4-0
+	makedepends = git
+	makedepends = libfreetype6-dev
+	makedepends = libx11-dev
+	makedepends = libxft-dev
+	makedepends = libxinerama-dev
+	makedepends = libfontconfig1-dev
+	makedepends = liblua5.4-dev
+	pacdeps = zig-bin
+	conflicts = oxwm
+	provides = oxwm
+	license = GPL-3.0
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/tonybanters/oxwm.git
+
+pkgname = oxwm-git
+---
 pkgbase = p3x-onenote-app
 	gives = p3x-onenote
 	pkgver = 2026.4.132
