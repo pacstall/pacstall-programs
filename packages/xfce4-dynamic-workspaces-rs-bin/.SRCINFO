@@ -2,6 +2,7 @@ pkgbase = xfce4-dynamic-workspaces-rs-bin
 	gives = xfce4-dynamic-workspaces
 	pkgver = 0.3.0
 	pkgdesc = Dynamic workspaces for XFCE, similar to GNOME
+	url = https://github.com/rhino-linux/xfce4-dynamic-workspaces
 	arch = arm64
 	arch = amd64
 	depends = libwnck-3-0

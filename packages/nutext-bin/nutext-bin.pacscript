@@ -4,6 +4,7 @@ repology=("project: ${gives}")
 arch=("amd64" "arm64")
 pkgver="0.6.2"
 url='https://github.com/rhino-linux/nu_plugin_nutext'
+bugs='https://github.com/rhino-linux/nu_plugin_nutext/issues'
 source_amd64=("${url}/releases/download/${pkgver}/${gives}_${pkgver}_amd64.zip")
 source_arm64=("${url}/releases/download/${pkgver}/${gives}_${pkgver}_arm64.zip")
 sha256sums_amd64=("75377b65ba4486f450abd1fe5b8841b335f15fd1363d0020da8978dad20cc6d3")
