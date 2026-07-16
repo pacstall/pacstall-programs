@@ -18659,6 +18659,38 @@ pkgbase = xmind-vana-deb
 
 pkgname = xmind-vana-deb
 ---
+pkgbase = xmonad-git
+	gives = xmonad
+	pkgver = 0.17.0.r24.ge25d090
+	pkgdesc = Lightweight X11 tiled window manager written in Haskell
+	url = http://xmonad.org/
+	arch = amd64
+	depends = ghc
+	depends = libghc-x11-dev
+	depends = libghc-mtl-dev
+	depends = libghc-utf8-string-dev
+	depends = libghc-extensible-exceptions-dev
+	depends = libghc-setlocale-dev
+	makedepends = git
+	makedepends = haskell-stack
+	makedepends = libx11-dev
+	makedepends = libxinerama-dev
+	makedepends = libxrandr-dev
+	makedepends = libxss-dev
+	makedepends = libxft-dev
+	conflicts = xmonad
+	provides = xmonad
+	license = BSD-3-Clause
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = git+https://github.com/xmonad/xmonad.git
+	source = 12.yaml::https://files.catbox.moe/yhpni5.yaml
+	source = stack-setup-2.yaml::https://files.catbox.moe/y57e5d.yaml
+	source = xmonad.desktop::https://files.catbox.moe/dfm0qr.desktop
+	source = xmonad.svg::https://aur.archlinux.org/cgit/aur.git/plain/xmonad.svg?h=xmonad-git
+	source = dynamic-compilation.patch::https://aur.archlinux.org/cgit/aur.git/plain/dynamic-compilation.patch?h=xmonad-git
+
+pkgname = xmonad-git
+---
 pkgbase = xonotic
 	gives = xonotic
 	pkgver = 0.8.6
