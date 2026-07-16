@@ -11774,6 +11774,34 @@ pkgbase = owofetch
 
 pkgname = owofetch
 ---
+pkgbase = oxwm-git
+	gives = oxwm
+	pkgver = 0.12.0.0.gdd25e8c
+	pkgdesc = Window Manager Inspired by DWM, but with better sane defaults
+	url = https://github.com/tonybanters/oxwm
+	arch = amd64
+	depends = libfreetype6
+	depends = libx11-6
+	depends = libxft2
+	depends = libxinerama1
+	depends = libfontconfig1
+	depends = liblua5.4-0
+	makedepends = git
+	makedepends = libfreetype6-dev
+	makedepends = libx11-dev
+	makedepends = libxft-dev
+	makedepends = libxinerama-dev
+	makedepends = libfontconfig1-dev
+	makedepends = liblua5.4-dev
+	pacdeps = zig-bin
+	conflicts = oxwm
+	provides = oxwm
+	license = GPL-3.0
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://github.com/tonybanters/oxwm.git
+
+pkgname = oxwm-git
+---
 pkgbase = p3x-onenote-app
 	gives = p3x-onenote
 	pkgver = 2026.4.132
@@ -18539,6 +18567,7 @@ pkgbase = xfce4-dynamic-workspaces-rs-bin
 	gives = xfce4-dynamic-workspaces
 	pkgver = 0.3.0
 	pkgdesc = Dynamic workspaces for XFCE, similar to GNOME
+	url = https://github.com/rhino-linux/xfce4-dynamic-workspaces
 	arch = arm64
 	arch = amd64
 	depends = libwnck-3-0
@@ -18659,6 +18688,38 @@ pkgbase = xmind-vana-deb
 
 pkgname = xmind-vana-deb
 ---
+pkgbase = xmonad-git
+	gives = xmonad
+	pkgver = 0.17.0.r24.ge25d090
+	pkgdesc = Lightweight X11 tiled window manager written in Haskell
+	url = http://xmonad.org/
+	arch = amd64
+	depends = ghc
+	depends = libghc-x11-dev
+	depends = libghc-mtl-dev
+	depends = libghc-utf8-string-dev
+	depends = libghc-extensible-exceptions-dev
+	depends = libghc-setlocale-dev
+	makedepends = git
+	makedepends = haskell-stack
+	makedepends = libx11-dev
+	makedepends = libxinerama-dev
+	makedepends = libxrandr-dev
+	makedepends = libxss-dev
+	makedepends = libxft-dev
+	conflicts = xmonad
+	provides = xmonad
+	license = BSD-3-Clause
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = git+https://github.com/xmonad/xmonad.git
+	source = 12.yaml::https://files.catbox.moe/yhpni5.yaml
+	source = stack-setup-2.yaml::https://files.catbox.moe/y57e5d.yaml
+	source = xmonad.desktop::https://files.catbox.moe/dfm0qr.desktop
+	source = xmonad.svg::https://aur.archlinux.org/cgit/aur.git/plain/xmonad.svg?h=xmonad-git
+	source = dynamic-compilation.patch::https://aur.archlinux.org/cgit/aur.git/plain/dynamic-compilation.patch?h=xmonad-git
+
+pkgname = xmonad-git
+---
 pkgbase = xonotic
 	gives = xonotic
 	pkgver = 0.8.6
@@ -18743,7 +18804,7 @@ pkgbase = xwayland-satellite
 	makedepends = libwayland-dev
 	makedepends = libclang-dev
 	makedepends = pkg-config
-	makedepends = cargo>=1.83.0
+	makedepends = cargo>=1.83.0 | rustup
 	makedepends = libxcb-cursor-dev
 	makedepends = libxkbcommon-dev
 	license = GPL-3.0-or-later

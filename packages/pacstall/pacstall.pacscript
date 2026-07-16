@@ -6,6 +6,7 @@ Pacstall is the AUR Ubuntu wishes it had. It takes the concept of the AUR
 and puts a spin on it, making it easier to install and update downstream programs,
 without scouring github repos and the likes."
 url='https://pacstall.dev'
+bugs='https://github.com/pacstall/pacstall/issues'
 depends=(
   'bash'
   'curl'
