@@ -12,6 +12,7 @@ jobs:
           filters: |
             pacscripts:
               - 'packages/*/*.pacscript'
+              - '.github/workflows/validate-sha.yml'
       - name: Validate hashes for all arches
         if: steps.changes.outputs.pacscripts == 'true'
         run: |
