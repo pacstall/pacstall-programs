@@ -9879,7 +9879,8 @@ pkgbase = nautilus-open-in-blackbox-git
 pkgname = nautilus-open-in-blackbox-git
 ---
 pkgbase = neofetch
-	pkgver = 7.1.1
+	pkgver = 7.1.0
+	pkgrel = 2
 	pkgdesc = Command-line system information tool
 	arch = all
 	optdepends = w3m-img: image preview
@@ -9889,7 +9890,7 @@ pkgbase = neofetch
 	optdepends = caca-utils: image preview
 	optdepends = libcaca-dev: image preview
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = @neofetch~7.1.1::https://github.com/dylanaraps/neofetch/archive/7.1.1.zip
+	source = @neofetch~7.1.0::https://github.com/dylanaraps/neofetch/archive/7.1.0.zip
 	sha256sums = e610da6561f17c8161337d0c4115da310be576e8699fa2add64e14eeb3f3dcf1
 
 pkgname = neofetch
