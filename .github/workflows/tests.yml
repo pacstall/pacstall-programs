@@ -150,17 +150,25 @@ jobs:
           for changed_file in ${{ steps.changes.outputs.pacscripts_files }}; do
             [[ ${changed_file} == *".pacscript" ]] || continue
 
+            echo "::group::${changed_file}"
+
             package_name="$(basename "${changed_file%.pacscript}")"
 
             if [[ -f "${METADIR}/${package_name}" ]]; then
               echo "Package ${package_name} has already been installed" >&2
+              echo "::endgroup::"
               continue
             fi
 
             echo "Running 'pacstall -Qa' for ${package_name}..."
             echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
 
-            pacstall -Qa "${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}" || exit 1
+            pacstall -Qa "${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
+            ret=$?
+            echo "::endgroup::"
+            if ((ret != 0)); then
+              exit 1
+            fi
           done
       - name: Output Package Trees
         if: steps.changes.outputs.pacscripts == 'true'
@@ -170,9 +178,9 @@ jobs:
         run: |
           mapfile -t list < <(pacstall -L)
           for pkg in "${list[@]}"; do
-            echo "${pkg}:"
+            echo "::group::${pkg}"
             pacstall -T "${pkg}"
-            echo "---"
+            echo "::endgroup::"
           done
       - name: Show APT Packages
         if: steps.changes.outputs.pacscripts == 'true'
@@ -182,12 +190,12 @@ jobs:
         run: |
           mapfile -t list < <(pacstall -L)
           for pkg in "${list[@]}"; do
+            echo "::group::${pkg}"
             gives="$(pacstall -Ci "${pkg}" _gives 2>/dev/null || echo "${pkg}")"
             version="$(dpkg-query -W -f='${Version}' "$gives")"
-            echo "apt-cache show ${gives}=${version}:"
             apt-cache show "${gives}=${version}"
             unset gives version
-            echo "---"
+            echo "::endgroup::"
           done
       - name: Uninstalling Packages
         if: steps.changes.outputs.pacscripts == 'true'
@@ -215,6 +223,7 @@ jobs:
           mapfile -t list < <(pacstall -L)
           dep_tree.loop_traits order "${list[@]}"
           for changed_file in "${order[@]}"; do
+              echo "::group::${changed_file}"
               unset pbase srcbase pkgprior
               pbase="$(pacstall -Ci ${changed_file} base 2> /dev/null || echo pkgbase)"
               if [[ ${pbase} == "pkgbase" ]]; then
@@ -226,7 +235,11 @@ jobs:
               if [[ ${pkgprior} == "essential" ]]; then
                 echo "Skipping removal of essential package ${changed_file}..."
               else
-                echo "Running pacstall -R for ${changed_file}..."
-                pacstall --disable-prompts -R ${changed_file} || exit 1
+                pacstall --disable-prompts -R ${changed_file}
+                ret=$?
+                echo "::endgroup::"
+                if ((ret != 0)); then
+                  exit 1
+                fi
               fi
           done
