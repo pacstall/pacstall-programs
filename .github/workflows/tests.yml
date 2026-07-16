@@ -163,12 +163,8 @@ jobs:
             echo "Running 'pacstall -Qa' for ${package_name}..."
             echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
 
-            pacstall -Qa "${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
-            ret=$?
+            pacstall -Qa "${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}" || exit 1
             echo "::endgroup::"
-            if ((ret != 0)); then
-              exit 1
-            fi
           done
       - name: Output Package Trees
         if: steps.changes.outputs.pacscripts == 'true'
@@ -235,11 +231,7 @@ jobs:
               if [[ ${pkgprior} == "essential" ]]; then
                 echo "Skipping removal of essential package ${changed_file}..."
               else
-                pacstall --disable-prompts -R ${changed_file}
-                ret=$?
+                pacstall --disable-prompts -R ${changed_file} || exit 1
                 echo "::endgroup::"
-                if ((ret != 0)); then
-                  exit 1
-                fi
               fi
           done

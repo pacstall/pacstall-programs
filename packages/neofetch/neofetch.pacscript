@@ -1,7 +1,6 @@
 pkgname="neofetch"
 arch=("all")
-pkgver="7.1.0"
-pkgrel="2"
+pkgver="7.1.1"
 source=("@${pkgname}~${pkgver}::https://github.com/dylanaraps/neofetch/archive/${pkgver}.zip")
 optdepends=("w3m-img: image preview"
   "libsixel-dev: image preview"
