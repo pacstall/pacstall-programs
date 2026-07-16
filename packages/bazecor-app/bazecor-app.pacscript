@@ -1,7 +1,9 @@
 pkgname="bazecor-app"
 gives="bazecor"
 pkgver="1.9.0"
-pkgdesc="Bazecor is the graphical configurator for the Dygma Raise"
+pkgdesc="Graphical configurator for the Dygma Raise"
+url='https://github.com/Dygmalab/Bazecor'
+bugs='https://github.com/Dygmalab/Bazecor/issues'
 source=(
   "https://github.com/Dygmalab/Bazecor/releases/download/v${pkgver}/Bazecor-${pkgver}-x64.AppImage"
   "https://raw.githubusercontent.com/Elsie19/images/master/bazecor.png"

@@ -1,7 +1,8 @@
 pkgbase = bazecor-app
 	gives = bazecor
 	pkgver = 1.9.0
-	pkgdesc = Bazecor is the graphical configurator for the Dygma Raise
+	pkgdesc = Graphical configurator for the Dygma Raise
+	url = https://github.com/Dygmalab/Bazecor
 	arch = amd64
 	depends = usbutils
 	depends = udev
