@@ -35,9 +35,9 @@ jobs:
             echo "sha256_x86_64=${sha256sums_x86_64[@]}"
             echo "sha256_aarch64=${sha256sums_aarch64[@]}"
           ' > /tmp/aur-vars.txt
-          
+
           cat /tmp/aur-vars.txt
-          
+
           # Read into step outputs
           {
             echo "pkgver=$(grep '^pkgver=' /tmp/aur-vars.txt | cut -d= -f2-)"
@@ -62,7 +62,7 @@ jobs:
         run: |
           echo "AUR version: ${{ steps.aur_vars.outputs.pkgver }}"
           echo "Pacscript version: ${{ steps.current_vars.outputs.pkgver }}"
-          
+
           if [ "${{ steps.aur_vars.outputs.pkgver }}" = "${{ steps.current_vars.outputs.pkgver }}" ] \
              && [ "${{ steps.aur_vars.outputs.pkghash_x64 }}" = "${{ steps.current_vars.outputs.pkghash_x86_64 }}" ]; then
             echo "No update needed"
@@ -81,28 +81,28 @@ jobs:
           HASH_ARM64="${{ steps.aur_vars.outputs.pkghash_arm64 }}"
           SHA256_X86="${{ steps.aur_vars.outputs.sha256_x86_64 }}"
           SHA256_ARM="${{ steps.aur_vars.outputs.sha256_aarch64 }}"
-          
+
           # Remove quotes from AUR values (AUR PKGBUILD uses single quotes)
           HASH_X64="${HASH_X64//\'/}"
           HASH_ARM64="${HASH_ARM64//\'/}"
           SHA256_X86="${SHA256_X86//\'/}"
           SHA256_ARM="${SHA256_ARM//\'/}"
-          
+
           echo "Updating to version: $AUR_VER"
           echo "Hash x64: $HASH_X64"
           echo "Hash arm64: $HASH_ARM64"
-          
+
           # Update pkgver
           sed -i "s/^pkgver=\".*\"/pkgver=\"${AUR_VER}\"/" "$PACSCRIPT"
-          
+
           # Update pkghash values
           sed -i "s/^_pkghash_x86_64=\".*\"/_pkghash_x86_64=\"${HASH_X64}\"/" "$PACSCRIPT"
           sed -i "s/^_pkghash_arm64=\".*\"/_pkghash_arm64=\"${HASH_ARM64}\"/" "$PACSCRIPT"
-          
+
           # Update sha256sums
           sed -i "s/^sha256sums_amd64=(\".*\")/sha256sums_amd64=(\"${SHA256_X86}\")/" "$PACSCRIPT"
           sed -i "s/^sha256sums_arm64=(\".*\")/sha256sums_arm64=(\"${SHA256_ARM}\")/" "$PACSCRIPT"
-          
+
           echo "=== Updated pacscript ==="
           cat "$PACSCRIPT"
 

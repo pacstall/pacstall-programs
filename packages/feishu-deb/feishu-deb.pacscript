@@ -42,31 +42,31 @@ WRAPPER
 
   # 修正 desktop 文件
   local desktop="${pkgdir}/usr/share/applications/bytedance-feishu.desktop"
-  if [[ -f $desktop ]]; then
-    sed -i "s|bytedance-feishu-stable|feishu|g" "$desktop"
-    sed -i 's|StartupNotify=true|StartupNotify=true\nStartupWMClass=feishu|g' "$desktop"
-    mv "$desktop" "${pkgdir}/usr/share/applications/feishu.desktop"
+  if [[ -f ${desktop} ]]; then
+    sed -i "s|bytedance-feishu-stable|feishu|g" "${desktop}"
+    sed -i 's|StartupNotify=true|StartupNotify=true\nStartupWMClass=feishu|g' "${desktop}"
+    mv "${desktop}" "${pkgdir}/usr/share/applications/feishu.desktop"
   fi
 
   # 修正菜单文件
   local menu="${pkgdir}/usr/share/menu/bytedance-feishu.menu"
-  if [[ -f $menu ]]; then
-    sed -i "s|bytedance-feishu-stable|feishu|g" "$menu" 2> /dev/null || true
-    sed -i "s|bytedance-feishu|feishu|g" "$menu" 2> /dev/null || true
-    mv "$menu" "${pkgdir}/usr/share/menu/feishu.menu"
+  if [[ -f ${menu} ]]; then
+    sed -i "s|bytedance-feishu-stable|feishu|g" "${menu}" 2> /dev/null || true
+    sed -i "s|bytedance-feishu|feishu|g" "${menu}" 2> /dev/null || true
+    mv "${menu}" "${pkgdir}/usr/share/menu/feishu.menu"
   fi
 
   # 修正 appdata 文件
   local appdata="${pkgdir}/usr/share/appdata/bytedance-feishu.appdata.xml"
-  if [[ -f $appdata ]]; then
-    sed -i 's|bytedance-feishu|feishu|g' "$appdata"
-    mv "$appdata" "${pkgdir}/usr/share/appdata/feishu.appdata.xml"
+  if [[ -f ${appdata} ]]; then
+    sed -i 's|bytedance-feishu|feishu|g' "${appdata}"
+    mv "${appdata}" "${pkgdir}/usr/share/appdata/feishu.appdata.xml"
   fi
 
   # 修正主二进制中的路径引用
   local binary="${pkgdir}/opt/bytedance/feishu/bytedance-feishu-stable"
-  if [[ -f $binary ]]; then
-    sed -i 's|bytedance-feishu-stable|feishu|g' "$binary"
+  if [[ -f ${binary} ]]; then
+    sed -i 's|bytedance-feishu-stable|feishu|g' "${binary}"
   fi
 
   # 重命名 man page
