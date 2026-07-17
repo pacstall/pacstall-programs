@@ -2,6 +2,7 @@ pkgbase = gittype-bin
 	gives = gittype
 	pkgver = 0.10.0
 	pkgdesc = CLI code-typing game that turns your source code into typing challenges
+	url = https://github.com/unhappychoice/gittype
 	arch = amd64
 	arch = arm64
 	maintainer = aKqir24 <aKqir24@github.com>
