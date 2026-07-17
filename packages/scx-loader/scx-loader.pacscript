@@ -2,10 +2,10 @@ pkgname="scx-loader"
 pkgdesc="System daemon and DBus-based loader for sched-ext schedulers"
 repology=("project: scx-loader")
 arch=('x86_64')
-pkgver="1.1.1"
+pkgver="1.1.2"
 url='https://github.com/sched-ext/scx-loader'
 license=('GPL-2.0-only')
-_commit='0f45f59efdf2bb3a2ccdeec8ddd06a3efe99234a'
+_commit='cb98827b9864eec956c48ad51399e8bbb7618e1d'
 source=("git+https://github.com/sched-ext/${pkgname}#commit=${_commit}")
 sha256sums=('SKIP')
 provides=("${pkgname}")
