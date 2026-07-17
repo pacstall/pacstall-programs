@@ -2,6 +2,7 @@ pkgname="gittype-bin"
 gives="gittype"
 repology=("project: ${pkgname}")
 pkgver='0.10.0'
+url='https://github.com/unhappychoice/gittype'
 maintainer=("aKqir24 <aKqir24@github.com>")
 pkgdesc='CLI code-typing game that turns your source code into typing challenges'
 source_amd64=("https://github.com/unhappychoice/gittype/releases/download/v${pkgver}/gittype-v${pkgver}-x86_64-unknown-linux-gnu.tar.gz")
