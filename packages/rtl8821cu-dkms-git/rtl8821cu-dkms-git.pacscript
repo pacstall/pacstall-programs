@@ -8,17 +8,18 @@ url='https://github.com/morrownr/8821cu-20210916'
 source=("https://github.com/morrownr/8821cu-20210916.git")
 maintainer=("aKqir24 <aKqir24@github.com>")
 depends=("dkms")
+makedeps=("linux-headers-amd64")
 optdepends=("firmware-realtek: realtek non-free-firmware")
 _dkmsname="rtl8821cu"
 
 package() {
   cd "${srcdir}/8821cu-20210916"
-  mkdir -p "${pkgdir}/usr/src/${_dkmsname}/${pkgver}"
-  cp -a ./* "${pkgdir}/usr/src/${_dkmsname}/${pkgver}"
+  mkdir -p "${pkgdir}/usr/src/${_dkmsname}-${pkgver}"
+  cp -a ./* "${pkgdir}/usr/src/${_dkmsname}-${pkgver}"
 
   # Install modprobe .conf file
   mkdir -p "${pkgdir}/etc/modprobe.d"
-  cp -a "${pkgdir}/usr/src/${_dkmsname}/${pkgver}/8821cu.conf" "${pkgdir}/etc/modprobe.d/8821cu.conf"
+  cp -a "${pkgdir}/usr/src/${_dkmsname}-${pkgver}/8821cu.conf" "${pkgdir}/etc/modprobe.d/8821cu.conf"
 
   # Fixing perms
   find "${pkgdir}/usr/src/" -type d -exec chmod 755 {} +
