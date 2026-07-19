@@ -10,3 +10,4 @@ debian:
   trixie/13
   forky/14
   sid
+  rc-buggy
