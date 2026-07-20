@@ -4500,6 +4500,22 @@ pkgbase = gitkraken-deb
 
 pkgname = gitkraken-deb
 ---
+pkgbase = gittype-bin
+	gives = gittype
+	pkgver = 0.10.0
+	pkgdesc = CLI code-typing game that turns your source code into typing challenges
+	url = https://github.com/unhappychoice/gittype
+	arch = amd64
+	arch = arm64
+	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: gittype-bin
+	source_amd64 = https://github.com/unhappychoice/gittype/releases/download/v0.10.0/gittype-v0.10.0-x86_64-unknown-linux-gnu.tar.gz
+	sha256sums_amd64 = 5e227fa47ba38602ac159bfc3d52cd6978924bf69523f1063ee7577e969d391d
+	source_arm64 = https://github.com/unhappychoice/gittype/releases/download/v0.10.0/gittype-v0.10.0-aarch64-unknown-linux-gnu.tar.gz
+	sha256sums_arm64 = d260b03e28cbccfba8aa5055f349e1ce75565db62057d426357437f7159f0356
+
+pkgname = gittype-bin
+---
 pkgbase = gitui-git
 	gives = gitui
 	pkgver = 0.28.1
