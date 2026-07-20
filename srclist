@@ -8032,8 +8032,8 @@ pkgbase = linked-deb
 pkgname = linked-deb
 ---
 pkgbase = linux-headers-deb
-	gives = linux-headers-7.2.0-070200rc1
-	pkgver = 7.2~rc1
+	gives = linux-headers-7.2.0-070200rc4
+	pkgver = 7.2~rc4
 	pkgdesc = Ubuntu Linux mainline kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -8041,14 +8041,14 @@ pkgbase = linux-headers-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc1/amd64/linux-headers-7.2.0-070200rc1_7.2.0-070200rc1.202606281938_all.deb
-	sha256sums = 6c688b52bfefac033a765f7013d1a8db5443d3521d1155157409ee2ff4523600
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc4/amd64/linux-headers-7.2.0-070200rc4_7.2.0-070200rc4.202607192132_all.deb
+	sha256sums = 567c23992fbaff8ffcd78c3a255b56970e6302ebe3d372c189884df03fded889
 
 pkgname = linux-headers-deb
 ---
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-7.2.0-070200rc1-generic
-	pkgver = 7.2~rc1
+	gives = linux-headers-7.2.0-070200rc4-generic
+	pkgver = 7.2~rc4
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -8058,10 +8058,10 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc1/arm64/linux-headers-7.2.0-070200rc1-generic_7.2.0-070200rc1.202606281938_arm64.deb
-	sha256sums_arm64 = 2b198acc760d32b0828de128f103e0f2653da4c475585db725fe2ffc4ae50b9f
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc1/amd64/linux-headers-7.2.0-070200rc1-generic_7.2.0-070200rc1.202606281938_amd64.deb
-	sha256sums_amd64 = 5ccf9fb5e01bca9d0859733bd54169002687c9ff575bd404e50d9066135d5575
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc4/arm64/linux-headers-7.2.0-070200rc4-generic_7.2.0-070200rc4.202607192132_arm64.deb
+	sha256sums_arm64 = 10dad770fd741ebcf9296b197b11b427839a2d32c0e977303734013aeed1eece
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc4/amd64/linux-headers-7.2.0-070200rc4-generic_7.2.0-070200rc4.202607192132_amd64.deb
+	sha256sums_amd64 = ef266f170418ba104a09051fa11ab553a23557c0451f38a947291bc3ed013456
 
 pkgname = linux-headers-generic-deb
 ---
@@ -8262,8 +8262,8 @@ pkgbase = linux-image-sunxi-deb
 pkgname = linux-image-sunxi-deb
 ---
 pkgbase = linux-image-unsigned-deb
-	gives = linux-image-unsigned-7.2.0-070200rc1-generic
-	pkgver = 7.2~rc1
+	gives = linux-image-unsigned-7.2.0-070200rc4-generic
+	pkgver = 7.2~rc4
 	pkgdesc = Ubuntu Linux mainline kernel (Unsigned image)
 	arch = arm64
 	arch = amd64
@@ -8274,10 +8274,10 @@ pkgbase = linux-image-unsigned-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc1/arm64/linux-image-unsigned-7.2.0-070200rc1-generic_7.2.0-070200rc1.202606281938_arm64.deb
-	sha256sums_arm64 = dab345459971f238a4932b17b915dc3fb1a0ea26bc9dd60ad6730cd6be1fd4f7
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc1/amd64/linux-image-unsigned-7.2.0-070200rc1-generic_7.2.0-070200rc1.202606281938_amd64.deb
-	sha256sums_amd64 = 9c766fd2a847718ba2ca8c605a6e290d20be2163f428fa6fda7506305625843d
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc4/arm64/linux-image-unsigned-7.2.0-070200rc4-generic_7.2.0-070200rc4.202607192132_arm64.deb
+	sha256sums_arm64 = 0f4cbabf8c4b8d36170e46bf25c507d32a00c46856666da96a2c96eed1f20280
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc4/amd64/linux-image-unsigned-7.2.0-070200rc4-generic_7.2.0-070200rc4.202607192132_amd64.deb
+	sha256sums_amd64 = e1a59ad037fbad619aac9e784152aa38ce9be17a7340854887958b730ca55634
 
 pkgname = linux-image-unsigned-deb
 ---
@@ -8352,7 +8352,7 @@ pkgbase = linux-kernel-stable
 pkgname = linux-kernel-stable
 ---
 pkgbase = linux-kernel
-	pkgver = 7.2~rc1
+	pkgver = 7.2~rc4
 	pkgdesc = Provides the latest Linux kernel via the Ubuntu mainline repositories
 	arch = amd64
 	arch = arm64
@@ -8383,16 +8383,16 @@ pkgbase = linux-libc-dev-okpine-deb
 pkgname = linux-libc-dev-okpine-deb
 ---
 pkgbase = linux-modules-deb
-	gives = linux-modules-7.2.0-070200rc1-generic
-	pkgver = 7.2~rc1
+	gives = linux-modules-7.2.0-070200rc4-generic
+	pkgver = 7.2~rc4
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc1/arm64/linux-modules-7.2.0-070200rc1-generic_7.2.0-070200rc1.202606281938_arm64.deb
-	sha256sums_arm64 = b827feebf230b799c27a5e8f769e7cc741162d2b060cf3c82f05a11e30432723
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc1/amd64/linux-modules-7.2.0-070200rc1-generic_7.2.0-070200rc1.202606281938_amd64.deb
-	sha256sums_amd64 = 287217daf1fcf0b61c2a53ea884d0655b513cec4141b2de48ac04040be69a4ad
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc4/arm64/linux-modules-7.2.0-070200rc4-generic_7.2.0-070200rc4.202607192132_arm64.deb
+	sha256sums_arm64 = b7823334d8d4a4ffbbf2ecf5fd8dc69e23f73ec7a47876b83301b29c5bd6ee90
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc4/amd64/linux-modules-7.2.0-070200rc4-generic_7.2.0-070200rc4.202607192132_amd64.deb
+	sha256sums_amd64 = fda427762e06bab31b19cd295a3b9f261a1a6f2f2c765c46ff8be498b999119f
 
 pkgname = linux-modules-deb
 ---
