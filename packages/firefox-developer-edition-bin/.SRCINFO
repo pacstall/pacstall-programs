@@ -1,6 +1,7 @@
 pkgbase = firefox-developer-edition-bin
 	gives = firefox-developer-edition
 	pkgver = 153.0b6
+	pkgrel = 2
 	pkgdesc = The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector.
 	url = https://www.mozilla.org/en-US/firefox/developer/
 	arch = amd64
