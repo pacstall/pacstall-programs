@@ -17,22 +17,22 @@ optdepends=('pipewire: WebRTC desktop sharing under Wayland'
   'kwallet6: support for storing passwords in KWallet on Plasma'
   'upower: Battery Status API support')
 source_amd64=(
-  "helium-browser::https://files.catbox.moe/xqrvs8"
+  "helium-browser.sh::https://files.catbox.moe/xqrvs8"
   "${_pkgname}-${pkgver}-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-x86_64_linux.tar.xz"
   "LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/${pkgver}/LICENSE.ungoogled_chromium")
 source_arm64=(
-  "helium-browser::https://files.catbox.moe/xqrvs8"
+  "helium-browser.sh::https://files.catbox.moe/xqrvs8"
   "${_pkgname}-${pkgver}-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-arm64_linux.tar.xz"
   "LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/${pkgver}/LICENSE.ungoogled_chromium")
 sha256sums_amd64=(
-  '98404a938f96f4c8b2bbb92bed0422fd60c7e1591ec6bd69c4dc5e8b67212793'
   'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2'
+  '98404a938f96f4c8b2bbb92bed0422fd60c7e1591ec6bd69c4dc5e8b67212793'
   '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
 )
 sha256sums_arm64=(
-  '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
+  'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2'
   '8fa248704be9ec4475a306ffed407ad777d600b24021c005f7dd9b2e707e3448'
-  'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2
+  '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
 )
 
 prepare() {
@@ -57,6 +57,6 @@ package() {
   install -Dm644 "${srcdir}/LICENSE.ungoogled_chromium" \
     "${pkgdir}/usr/share/doc/${pkgname}/LICENSE.ungoogled_chromium"
   # Install the wrapper script
-  install -Dm755 "${srcdir}/helium-browser" "${pkgdir}/usr/bin/helium-browser"
+  install -Dm755 "${srcdir}/helium-browser.sh" "${pkgdir}/usr/bin/helium-browser"
   chmod 755 "${pkgdir}/usr/bin/helium-browser"
 }
