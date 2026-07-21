@@ -12,7 +12,6 @@ makedepends=(
   "qttools5-dev-tools"
 )
 pkgdesc="Database Browser for SQLite"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('MPL-2.0' 'GPL-3.0+')
 
 prepare() {

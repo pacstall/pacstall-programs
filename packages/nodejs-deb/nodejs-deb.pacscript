@@ -12,5 +12,4 @@ sha256sums_arm64=("1e62878536fc75982dd20b9d7d8760d4a6a7e72fbdc0461bffb22efcffad4
 breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
 replaces=("${gives}" "node")
 pkgdesc="JavaScript runtime built on Chrome's V8 JavaScript engine"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('MIT')

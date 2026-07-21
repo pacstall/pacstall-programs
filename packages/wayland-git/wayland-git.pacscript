@@ -42,7 +42,6 @@ replaces=(
   "lib${gives}-dev" "lib${gives}-egl-backend-dev" "lib${gives}-doc" "lib${gives}-bin"
 )
 pkgdesc="Core Wayland window system code and protocol (development version)"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('MIT')
 
 prepare() {

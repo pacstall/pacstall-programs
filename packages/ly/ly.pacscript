@@ -11,7 +11,6 @@ conflicts=("${pkgname}-git")
 replaces=("ly-git" "lightdm" "sddm")
 pkgdesc="TUI display manager"
 priority='required'
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('WTFPL')
 external_connection=true
 

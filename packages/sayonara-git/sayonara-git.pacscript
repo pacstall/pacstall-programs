@@ -11,7 +11,6 @@ makedepends=("cmake" "gstreamer1.0-plugins-bad" "gstreamer1.0-plugins-ugly" "lam
   "libtag1-dev" "pkg-config" "qtbase5-dev" "qttools5-dev" "qttools5-dev-tools" "vorbis-tools" "zlib1g-dev")
 conflicts=("${gives}")
 pkgdesc="Small, clear and fast audio player for Linux written in C++"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-3.0-only')
 
 prepare() {
