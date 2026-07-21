@@ -1,9 +1,12 @@
 # This script was originally based from Chocobo1 <chocobo1@archlinux.net>
 
 pkgname="nuitka-git"
+gives="nuitka"
 pkgver="2.4.6.r61.g58d849260"
+repology=("project: nuitka")
 pkgdesc="Python compiler"
 arch=('any')
+pkgrel=2
 url="https://nuitka.net/"
 license=('Apache-2.0')
 depends=(
@@ -29,9 +32,8 @@ makedepends=(
 )
 optdepends=("chrpath: for building standalone executables")
 provides=("nuitka")
-conflicts=("nuitka")
+conflicts=("nuitka" "python3-nuitka")
 source=("git+https://github.com/Nuitka/Nuitka.git")
-sha256sums=('SKIP')
 maintainer=("aKqir24 <aKqir24@github.com>")
 
 build() {

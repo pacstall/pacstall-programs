@@ -562,6 +562,7 @@ nowpm
 nu-tongues-bin
 nuclear-deb
 nuclei-bin
+nuitka-git
 nushell-bin
 nutext-bin
 nutext-git
@@ -667,7 +668,6 @@ python3-imdbpy-deb
 python3-levenshtein-deb
 python3-material-color-utilities
 python3-moddb
-python3-nuitka
 python3-pypresence
 python3-pywal16
 python3-sphinx-hawkmoth
