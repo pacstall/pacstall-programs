@@ -10,7 +10,6 @@ sha256sums_amd64=("0d9dbfc26068b218e7ed84b104748cadc6e3cf733c0afd35465306fb39b95
 sha256sums_arm64=("005c38b685aaa557e7d646d83a3dadb5024340eeed8c6a2e1949eee6f530de23")
 pacdeps=("docker-bin" "docker-compose-plugin-bin" "docker-buildx-plugin-bin")
 pkgdesc="The lazier way to manage everything docker"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('MIT')
 
 package() {
