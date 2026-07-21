@@ -3,7 +3,7 @@ pkgbase = fselect-git
 	pkgver = 0.8.4
 	pkgdesc = Find files with SQL-like queries
 	arch = any
-	makedepends = cargo | rustup
+	makedepends = cargo>=1.89 | rustup
 	incompatible = debian:bullseye
 	maintainer = Diego Magdaleno <diegomagdaleno@pm.me>
 	source = https://github.com/jhspetersson/fselect.git
