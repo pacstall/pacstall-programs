@@ -1,6 +1,6 @@
 pkgname="fselect-git"
 gives="fselect"
-makedepends=("cargo | rustup")
+makedepends=("cargo>=1.89 | rustup")
 pkgdesc="Find files with SQL-like queries"
 source=("https://github.com/jhspetersson/fselect.git")
 arch=("any")
