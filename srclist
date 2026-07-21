@@ -4871,7 +4871,7 @@ pkgname = google-earth-pro-stable-deb
 ---
 pkgbase = goverlay-bin
 	gives = goverlay
-	pkgver = 1.2.0
+	pkgver = 1.8.4
 	pkgdesc = Graphical UI to help manage Linux overlays
 	arch = amd64
 	depends = mangohud
