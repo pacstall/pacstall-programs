@@ -24,7 +24,6 @@ sha256sums_arm64=("f0ffda9dd432b964fb71de5bcc2fe8702bcef647eec3d99e1dad8f3f8bd6c
 conflicts=("godot-bin" "godot-git" "godot-mono-git")
 gives="godot-mono"
 pkgdesc="Multi-platform 2D and 3D game engine"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('MIT')
 
 prepare() {
