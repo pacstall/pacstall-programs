@@ -1,6 +1,6 @@
 pkgname="tre-git"
 gives="tre"
-makedepends=("cargo" "rustc")
+makedepends=("cargo | rustup")
 pkgdesc="Tree command, improved"
 source=("https://github.com/dduan/tre.git")
 arch=("all")
@@ -11,6 +11,7 @@ incompatible=("debian:bullseye")
 
 build() {
   cd "tre"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build -j"${NCPU}" --release --locked
 }
 

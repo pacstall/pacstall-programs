@@ -3,7 +3,7 @@ arch=("any")
 pkgver="0.17.0"
 repology=("project: alacritty")
 source=("@${pkgname}~${pkgver}::https://github.com/alacritty/alacritty/archive/refs/tags/v${pkgver}.tar.gz")
-makedepends=("cargo>=1.85.0" "cmake" "pkg-config" "libfreetype6-dev" "libfontconfig1-dev" "libxcb-xfixes0-dev" "python3" "gzip" "scdoc")
+makedepends=("cargo>=1.85.0 | rustup" "cmake" "pkg-config" "libfreetype6-dev" "libfontconfig1-dev" "libxcb-xfixes0-dev" "python3" "gzip" "scdoc")
 pkgdesc="A fast, cross-platform, OpenGL terminal emulator"
 maintainer=("Warofzen <warofzen1@protonmail.com>")
 incompatible=('debian:bullseye' 'debian:bookworm')
@@ -12,6 +12,7 @@ sha256sums=("38d6527d346cda5c6049332a1f3338a89ea66cd7981b54d4c3ce801b392496f8")
 
 build() {
   cd "${pkgname}~${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build -j"${NCPU}" --release --locked
 }
 

@@ -5,7 +5,7 @@ pkgbase = nutext-git
 	url = https://github.com/rhino-linux/nu_plugin_nutext
 	arch = amd64
 	arch = arm64
-	makedepends = cargo>=1.95.0
+	makedepends = cargo>=1.95.0 | rustup
 	pacdeps = nushell-bin
 	replaces = nutext-bin
 	maintainer = Oren Klopfer <oren@taumoda.com>

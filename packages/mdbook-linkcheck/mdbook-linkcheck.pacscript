@@ -3,7 +3,7 @@ arch=("any")
 pkgver='0.7.7'
 pkgdesc='A backend for mdbook which will check your links for you'
 url='https://www.michaelfbryan.com/mdbook-linkcheck/mdbook_linkcheck/index.html'
-makedepends=('cargo')
+makedepends=('cargo | rustup')
 pacdeps=('mdbook')
 repology=("project: ${pkgname}")
 source=("https://github.com/Michael-F-Bryan/mdbook-linkcheck/archive/refs/tags/v${pkgver}.tar.gz")
@@ -12,16 +12,19 @@ external_connection='true'
 
 prepare() {
   cd "${pkgname}-${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   CARGO_HOME=crates cargo fetch --locked
 }
 
 build() {
   cd "${pkgname}-${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   CARGO_HOME=crates cargo build --release --offline --all-features
 }
 
 check() {
   cd "${pkgname}-${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   CARGO_HOME=crates cargo test --all-features
 }
 

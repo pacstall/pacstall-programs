@@ -10,7 +10,7 @@ depends=(
 )
 makedepends=(
   "blueprint-compiler"
-  "cargo"
+  "cargo | rustup"
   "meson"
   "gettext"
   "pkg-config"

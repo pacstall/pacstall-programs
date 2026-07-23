@@ -1,6 +1,6 @@
 pkgname="fselect-git"
 gives="fselect"
-makedepends=("cargo" "rustc")
+makedepends=("cargo>=1.89 | rustup")
 pkgdesc="Find files with SQL-like queries"
 source=("https://github.com/jhspetersson/fselect.git")
 arch=("any")
@@ -11,6 +11,7 @@ incompatible=("debian:bullseye")
 
 build() {
   cd "fselect"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build -j"${NCPU}" --release --locked
 }
 

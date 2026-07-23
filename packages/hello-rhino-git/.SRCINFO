@@ -5,7 +5,7 @@ pkgbase = hello-rhino-git
 	arch = any
 	depends = libssl-dev
 	depends = gettext
-	makedepends = cargo>=1.80.0
+	makedepends = cargo>=1.80.0 | rustup
 	makedepends = meson
 	makedepends = ninja-build
 	makedepends = gettext

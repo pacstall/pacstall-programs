@@ -6,7 +6,7 @@ url='https://github.com/K4rakara/freshfetch'
 source=("https://github.com/K4rakara/freshfetch.git")
 maintainer=("pythoncrazy <pinakpaliwal07@gmail.com>")
 pkgver="0.2.0"
-makedepends=('cargo')
+makedepends=('cargo | rustup')
 external_connection="true"
 
 build() {

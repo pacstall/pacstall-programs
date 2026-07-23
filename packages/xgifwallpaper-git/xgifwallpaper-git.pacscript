@@ -14,8 +14,7 @@ depends=(
 makedepends=(
   "gcc"
   "git"
-  "cargo"
-  "rustc"
+  "cargo | rustup"
   "libx11-dev"
   "libxinerama-dev"
   "libxext-dev"
@@ -25,6 +24,7 @@ external_connection=true
 
 build() {
   cd "${gives}"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build --release --locked --all-features -j"${NCPU}"
 }
 

@@ -9,10 +9,11 @@ pkgdesc="Another translaton plugin for nushell"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pacdeps=("nushell-bin")
 replaces=("${gives}-bin")
-makedepends=("cargo>=1.95.0")
+makedepends=("cargo>=1.95.0 | rustup")
 external_connection=true
 
 package() {
   cd "${gives}"
+  export RUSTUP_TOOLCHAIN=stable
   make all DESTDIR="${pkgdir}"
 }

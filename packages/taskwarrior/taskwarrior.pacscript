@@ -4,7 +4,7 @@ repology=("project: taskwarrior")
 arch=("any")
 pkgver="3.4.2"
 source=("@${pkgname}~${pkgver}::https://github.com/GothenburgBitFactory/taskwarrior/releases/download/v${pkgver}/task-${pkgver}.tar.gz")
-makedepends=("g++" "cmake" "git" "uuid-dev" "gnutls-dev" "cargo>=1.81.0")
+makedepends=("g++" "cmake" "git" "uuid-dev" "gnutls-dev" "cargo>=1.81.0 | rustup")
 pkgdesc="Command line task list management utility with a multitude of features, developed as a portable open source project with an active and quite vast ecosystem of tools, hooks and extensions"
 sha256sums=("d302761fcd1268e4a5a545613a2b68c61abd50c0bcaade3b3e68d728dd02e716")
 maintainer=("JonBoyleCoding <programmerfalcon@gmail.com>")
@@ -14,6 +14,7 @@ external_connection=true
 
 build() {
   cd "${pkgname}~${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build -j"${NCPU}" --release --locked
   cmake -DCMAKE_INSTALL_PREFIX="/usr" .
   make -j"${NCPU}"

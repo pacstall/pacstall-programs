@@ -3,13 +3,14 @@ arch=("any")
 pkgver="25.07.1"
 repology=("project: helix")
 source=("@${pkgname}~${pkgver}::https://github.com/helix-editor/helix/releases/download/${pkgver}/helix-${pkgver}-source.tar.xz")
-makedepends=("cargo>=1.76.0")
+makedepends=("cargo>=1.76.0 | rustup")
 pkgdesc="A post-modern modal text editor"
 external_connection=true
 sha256sums=("2d0cf264ac77f8c25386a636e2b3a09a23dec555568cc9a5b2927f84322f544e")
 
 build() {
   cd "${pkgname}~${pkgver}"
+  export RUSTUP_TOOLCHAIN=stable
   cargo build -j"${NCPU}" --release --locked
 }
 

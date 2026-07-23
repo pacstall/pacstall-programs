@@ -12,7 +12,7 @@ makedepends_amd64=('libcpuid-dev')
 makedepends=(
   'bison'
   'busybox-static'
-  'cargo'
+  'cargo | rustup'
   'cmake'
   'doxygen'
   'flex'
@@ -83,6 +83,7 @@ prepare() {
 
 build() {
   cd lix
+  export RUSTUP_TOOLCHAIN=stable
   env -C lix-doc CARGO_HOME=crates \
     cargo build -j"${NCPU}" --release --offline
   export LIBRARY_PATH=${PWD}/lix-doc/target/release

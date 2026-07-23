@@ -5,7 +5,7 @@ pkgbase = age-plugin-yubikey
 	arch = any
 	depends = pcscd
 	depends = libpcsclite1
-	makedepends = cargo>=1.70
+	makedepends = cargo>=1.70 | rustup
 	makedepends = libpcsclite-dev
 	makedepends = pkg-config
 	license = Apache-2.0
