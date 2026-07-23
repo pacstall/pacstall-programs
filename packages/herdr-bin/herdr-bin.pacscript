@@ -1,4 +1,4 @@
-pkgname=("herdr-bin")
+pkgname="herdr-bin"
 gives="herdr"
 pkgver="0.7.5"
 repology=("project: herdr")
