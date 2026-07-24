@@ -8980,6 +8980,23 @@ pkgbase = matugen-bin
 
 pkgname = matugen-bin
 ---
+pkgbase = matugen-git
+	gives = matugen
+	pkgver = 4.1.0
+	pkgdesc = Material you color generation tool with templates
+	url = https://github.com/InioX/matugen
+	arch = any
+	makedepends = git
+	pacdeps = rust-bin
+	replaces = i3status-rust
+	replaces = i3status-rs
+	license = GPL-2.0
+	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: matugen
+	source = matugen::git+://github.com/InioX/matugen.git
+
+pkgname = matugen-git
+---
 pkgbase = mcontrolcenter-bin
 	gives = mcontrolcenter
 	pkgver = 0.5.1
