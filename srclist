@@ -10700,6 +10700,7 @@ pkgbase = niri
 	optdepends = xdg-desktop-portal-gnome: screencasting support
 	optdepends = gnome-keyring: implements the secret portal, for certain apps to work
 	optdepends = policykit-1-gnome: when apps need to ask for root permissions
+	pacdeps = xwayland-satellite
 	conflicts = niri-git
 	conflicts = niri-bin
 	provides = niri
