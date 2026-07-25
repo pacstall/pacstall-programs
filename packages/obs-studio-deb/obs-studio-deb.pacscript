@@ -6,6 +6,5 @@ pkgver="32.1.2"
 source=("https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-${pkgver}-Ubuntu-24.04-x86_64.deb")
 pkgdesc="Free and open source software for live streaming and screen recording"
 sha256sums=("a3bb1b0176604dad9e22710e057f0fdd76e8afb600e0e1914c30464ae49908e8")
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 compatible=("ubuntu:noble")
 license=('GPL-2.0-only')

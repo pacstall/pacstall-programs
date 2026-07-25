@@ -10,7 +10,6 @@ conflicts=("ly")
 replaces=("ly" "lightdm" "sddm")
 pkgdesc="TUI display manager"
 priority='required'
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('WTFPL')
 external_connection=true
 

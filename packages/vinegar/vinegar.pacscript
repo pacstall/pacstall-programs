@@ -28,7 +28,6 @@ optdepends=(
   "wine: A required dependency (made optional for flexibility)"
 )
 pkgdesc="Open-source, minimal, configurable, fast bootstrapper for running Roblox on Linux"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-3.0-only')
 external_connection=true
 

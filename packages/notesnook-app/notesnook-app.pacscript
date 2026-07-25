@@ -11,7 +11,6 @@ sha256sums=('SKIP')
 sha256sums_amd64=("c49738761f754dcc6f07cdfae1b557a80ba9c97c599a928cceca1ee399869a12")
 sha256sums_arm64=("337b01516b68781e3a25f129d6841ee136e9c29aa0a31b50df5dd16e64b46864")
 pkgdesc="End-to-end encrypted note taking alternative to Evernote"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-3.0-only')
 
 prepare() {

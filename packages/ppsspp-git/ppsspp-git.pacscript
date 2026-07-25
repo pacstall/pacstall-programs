@@ -21,7 +21,6 @@ depends_bookworm=("libzip4" "libpng16-16")
 conflicts=("${gives}-app")
 replaces=("${gives}-app")
 pkgdesc="PSP emulator"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-2.0-or-later')
 
 prepare() {

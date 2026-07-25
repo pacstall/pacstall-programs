@@ -59,7 +59,6 @@ optdepends=(
 )
 pacdeps=("rnnoise")
 pkgdesc="Free and open source software for live streaming and screen recording"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-2.0-only')
 
 prepare() {
