@@ -1,6 +1,6 @@
 pkgbase = linux-headers-generic-stable-deb
-	gives = linux-headers-7.1.4-070104-generic
-	pkgver = 7.1.4
+	gives = linux-headers-7.1.5-070105-generic
+	pkgver = 7.1.5
 	pkgdesc = Ubuntu Linux stable kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -8,9 +8,9 @@ pkgbase = linux-headers-generic-stable-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1.4/arm64/linux-headers-7.1.4-070104-generic_7.1.4-070104.202607181533_arm64.deb
-	sha256sums_arm64 = 4f401a51a2ddbe5e0a424a6fd507df09006cad216305d080021ca44d39f118d6
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1.4/amd64/linux-headers-7.1.4-070104-generic_7.1.4-070104.202607181533_amd64.deb
-	sha256sums_amd64 = 845afeec9f66d2d785015ade6b0d6c7a91bf8084b32d34ceb40cc86a51f0c21d
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1.5/arm64/linux-headers-7.1.5-070105-generic_7.1.5-070105.202607241434_arm64.deb
+	sha256sums_arm64 = 98ad8beaf069d75cb2f40e379bc1dd6eb572b6ad0fa87ad4046f0c8ff21b1cf3
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1.5/amd64/linux-headers-7.1.5-070105-generic_7.1.5-070105.202607241434_amd64.deb
+	sha256sums_amd64 = b3965628185fbd28a6b966f9a6a37e14ab44428548ab93021b3be65fa7de26c5
 
 pkgname = linux-headers-generic-stable-deb
