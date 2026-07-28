@@ -145,7 +145,6 @@ emacs-git
 emby-server-deb
 endlessh-git
 enpass-deb
-epson-inkjet-printer-stylus-nx110-series-deb
 epson-printer-utility-deb
 eqwalizer
 erlang-jsone
@@ -224,6 +223,7 @@ github-cli-bin
 github-cli-deb
 github-desktop-deb
 gitkraken-deb
+gittype-bin
 gitui-git
 gldriver-test-deb
 glffetch-git
@@ -270,6 +270,7 @@ hello
 hello-rhino-bin
 hello-rhino-git
 herbstluftwm-git
+herdr-bin
 heroic-games-launcher-deb
 highlight-pointer-bin
 honkers-launcher-bin
@@ -568,6 +569,7 @@ nutext-git
 nvidia-beta-installer
 nvidia-feat-installer
 nvidia-prod-installer
+nvm-git
 obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-deb

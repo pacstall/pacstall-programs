@@ -1,5 +1,5 @@
 pkgname="xwayland-satellite"
-pkgver="0.8.1"
+pkgver="0.8.2"
 arch=("amd64" "arm64")
 pkgdesc="Xwayland outside your Wayland"
 url='https://github.com/Supreeeme/xwayland-satellite'

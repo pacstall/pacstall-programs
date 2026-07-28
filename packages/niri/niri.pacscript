@@ -22,6 +22,7 @@ optdepends=("fuzzel: application launcher similar to rofi drun mode"
   "xdg-desktop-portal-gnome: screencasting support"
   "gnome-keyring: implements the secret portal, for certain apps to work"
   "policykit-1-gnome: when apps need to ask for root permissions")
+pacdeps=("xwayland-satellite")
 
 build() {
   cd "${pkgname}"
