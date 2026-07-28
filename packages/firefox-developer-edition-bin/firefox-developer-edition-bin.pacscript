@@ -1,5 +1,6 @@
 pkgname="firefox-developer-edition-bin"
 pkgver="153.0b6"
+pkgrel="2"
 gives="firefox-developer-edition"
 arch=("amd64" "arm64")
 pkgdesc="The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector."
