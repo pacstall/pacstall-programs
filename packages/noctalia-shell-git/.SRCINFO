@@ -74,6 +74,7 @@ pkgbase = noctalia-shell-git
 	optdepends = upower: power management integration
 	optdepends = wtype: virtual keyboard input
 	optdepends = ddcutil: monitor DDC/CI control
+	incompatible = debian:stable
 	maintainer = AJStrong <ajstrongdev@pm.me>
 	source = https://github.com/noctalia-dev/noctalia.git
 
