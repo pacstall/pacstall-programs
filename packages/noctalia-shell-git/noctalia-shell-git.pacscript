@@ -15,6 +15,7 @@ makedepends=("just" "meson" "ninja-build" "git"
 optdepends=("libjemalloc-dev: reduces memory fragmentation in long-running sessions")
 pkgdesc="A sleek, customizable desktop shell crafted for Wayland"
 maintainer=("AJStrong <ajstrongdev@pm.me>")
+incompatible=('debian:stable')
 external_connection=true
 
 prepare() {
