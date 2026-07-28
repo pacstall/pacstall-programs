@@ -35,6 +35,7 @@ pkgbase = noctalia-shell-git
 	makedepends = libwireplumber-0.5-dev
 	makedepends = libxml2-dev
 	optdepends = libjemalloc-dev: reduces memory fragmentation in long-running sessions
+	incompatible = debian:stable
 	maintainer = AJStrong <ajstrongdev@pm.me>
 	source = https://github.com/noctalia-dev/noctalia.git
 
