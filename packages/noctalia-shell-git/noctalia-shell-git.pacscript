@@ -4,11 +4,11 @@ source=("https://github.com/noctalia-dev/noctalia.git")
 arch=("any")
 pkgver="1.0.0"
 makedepends=("just" "meson" "ninja-build" "git"
-  "libwayland-dev" "wayland-protocols" "libfreetype-dev" "libfontconfig-dev"
+  "libwayland-dev" "wayland-protocols>=1.45" "libfreetype-dev" "libfontconfig-dev"
   "libcairo2-dev" "libpango1.0-dev" "librsvg2-dev" "libxkbcommon-dev"
   "libepoxy-dev" "libgles-dev" "libwebp-dev" "libjxl-dev" "libcurl4-gnutls-dev"
-  "libmd4c-dev" "nlohmann-json3-dev" "libsdbus-c++-dev" "libsecret-1-dev"
-  "libsodium-dev" "libstb-dev" "libtomlplusplus-dev"
+  "libmd4c-dev" "nlohmann-json3-dev" "libsdbus-c++-dev" "libsecret-1-dev>=0.20"
+  "libsodium-dev>=1.0.18" "libstb-dev" "libtomlplusplus-dev"
   "libpipewire-0.3-dev" "libpam0g-dev" "libpolkit-agent-1-dev"
   "libpolkit-gobject-1-dev" "libqalculate-dev" "libwireplumber-0.5-dev"
   "libxml2-dev")
@@ -22,17 +22,15 @@ depends=(
   "libqalculate23" "librsvg2-2" "libsdbus-c++2" "libsecret-1-0"
   "libsodium23" "libstdc++6" "libtomlplusplus3t64"
   "libwayland-client0" "libwayland-egl1" "libwebp7"
-  "libwireplumber-0.5-0" "libxkbcommon0" "libxml2"
-)
+  "libwireplumber-0.5-0" "libxkbcommon0" "libxml2")
 optdepends=(
   "libjemalloc-dev: reduces memory fragmentation in long-running sessions"
   "upower: power management integration"
   "wtype: virtual keyboard input"
   "ddcutil: monitor DDC/CI control"
 )
-pkgdesc="A sleek, customizable desktop shell crafted for Wayland"
+pkgdesc="Sleek, customizable desktop shell crafted for Wayland"
 maintainer=("AJStrong <ajstrongdev@pm.me>")
-incompatible=('debian:stable')
 external_connection=true
 
 prepare() {
