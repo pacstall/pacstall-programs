@@ -27,8 +27,8 @@ depends=(
   "libpipewire-0.3-0t64" "libpolkit-agent-1-0" "libpolkit-gobject-1-0"
   "libqalculate23" "librsvg2-2" "libsdbus-c++2" "libsecret-1-0"
   "libsodium23" "libstdc++6" "libtomlplusplus3t64" "libical3"
-  "libwayland-client0" "libwayland-egl1" "libwebp7""libical-dev" "libsndfile-dev" "libharfbuzz-dev"
-  "libwireplumber-0.5-0" "libxkbcommon0" "libxml2" "libsndfile1" "upower" "ddcutil")
+  "libwayland-client0" "libwayland-egl1" "libwebp7" "libical-dev" "libsndfile-dev" "libharfbuzz-dev"
+  "libwireplumber-0.5-0" "libxkbcommon0" "libxml2-dev" "libsndfile1" "upower" "ddcutil")
 
 prepare() {
   cd "${gives}"
