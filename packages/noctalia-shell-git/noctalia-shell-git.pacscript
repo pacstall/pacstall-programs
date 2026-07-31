@@ -1,9 +1,9 @@
 pkgname="noctalia-shell-git"
 gives="noctalia"
 source=("https://github.com/noctalia-dev/noctalia.git")
-arch=("amd64" "arm64")
-pkgver="5.0.0-beta.7"
-pkgdesc="A sleek, customizable desktop shell crafted for Wayland."
+arch=("any")
+pkgver="1.0.0"
+pkgdesc="Sleek, customizable desktop shell crafted for Wayland."
 url='https://github.com/noctalia-dev/noctalia'
 license=('MIT')
 maintainer=("AJStrong <ajstrongdev@pm.me>")
@@ -17,7 +17,7 @@ makedepends=("meson" "ninja-build" "git"
   "libsodium-dev>=1.0.18" "libstb-dev" "libtomlplusplus-dev"
   "libpipewire-0.3-dev" "libpam0g-dev" "libpolkit-agent-1-dev"
   "libpolkit-gobject-1-dev" "libqalculate-dev" "libwireplumber-0.5-dev"
-  "libxml2-dev" "libical-dev" "libsndfile-dev" "libharfbuzz-dev")
+  "libxml2-dev" "libical-dev" "libsndfile-dev" "libharfbuzz-dev" "libjmalloc-dev" "libical-dev" "libsndfile-dev" "libharfbuzz-dev")
 depends=(
   "bash" "git" "pipewire" "libc6" "libcairo2"
   "libcurl3t64-gnutls" "libegl1" "libfontconfig1" "libfreetype6"
@@ -27,13 +27,8 @@ depends=(
   "libpipewire-0.3-0t64" "libpolkit-agent-1-0" "libpolkit-gobject-1-0"
   "libqalculate23" "librsvg2-2" "libsdbus-c++2" "libsecret-1-0"
   "libsodium23" "libstdc++6" "libtomlplusplus3t64" "libical3"
-  "libwayland-client0" "libwayland-egl1" "libwebp7"
-  "libwireplumber-0.5-0" "libxkbcommon0" "libxml2" "libsndfile1")
-buildeps=(
-  "libjemalloc-dev: reduces memory fragmentation in long-running sessions (glibc only)"
-  "upower: power management integration"
-  "ddcutil: external monitor brightness control"
-)
+  "libwayland-client0" "libwayland-egl1" "libwebp7""libical-dev" "libsndfile-dev" "libharfbuzz-dev"
+  "libwireplumber-0.5-0" "libxkbcommon0" "libxml2" "libsndfile1" "upower" "ddcutil")
 
 prepare() {
   cd "${gives}"
