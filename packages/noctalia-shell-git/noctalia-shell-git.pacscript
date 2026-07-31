@@ -17,7 +17,7 @@ makedepends=("meson" "ninja-build" "git"
   "libsodium-dev>=1.0.18" "libstb-dev" "libtomlplusplus-dev"
   "libpipewire-0.3-dev" "libpam0g-dev" "libpolkit-agent-1-dev"
   "libpolkit-gobject-1-dev" "libqalculate-dev" "libwireplumber-0.5-dev"
-  "libxml2-dev" "libical-dev" "libsndfile-dev" "libharfbuzz-dev" "libjmalloc-dev" "libical-dev" "libsndfile-dev" "libharfbuzz-dev")
+  "libxml2-dev" "libical-dev" "libsndfile-dev" "libharfbuzz-dev" "libjemalloc-dev" "libical-dev" "libsndfile-dev" "libharfbuzz-dev")
 depends=(
   "bash" "git" "pipewire" "libc6" "libcairo2"
   "libcurl3t64-gnutls" "libegl1" "libfontconfig1" "libfreetype6"
