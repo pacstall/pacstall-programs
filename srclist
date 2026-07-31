@@ -10754,6 +10754,7 @@ pkgbase = noctalia-shell-git
 	depends = libstdc++6
 	depends = libtomlplusplus3t64
 	depends = libical3
+	depends = libical3
 	depends = libwayland-client0
 	depends = libwayland-egl1
 	depends = libwebp7libical-dev
@@ -10804,6 +10805,7 @@ pkgbase = noctalia-shell-git
 	makedepends = libharfbuzz-dev
 	license = MIT
 	maintainer = AJStrong <ajstrongdev@pm.me>
+	repology = project: noctalia
 	repology = project: noctalia
 	source = https://github.com/noctalia-dev/noctalia.git
 
