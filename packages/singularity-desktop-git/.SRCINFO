@@ -1,4 +1,5 @@
 pkgbase = singularity-desktop-git
+	gives = singularity-desktop
 	pkgver = 0.1.0
 	pkgdesc = The Singularity Desktop Environment
 	url = https://sinty.dev/
@@ -42,6 +43,6 @@ pkgbase = singularity-desktop-git
 	makedepends = libgbm-dev
 	license = GPL-3.0
 	maintainer = IMY <omranmansour096@gmail.com>
-	source = https://github.com/singularityos-lab/singularity-desktop
+	source = https://github.com/singularityos-lab/singularity-desktop.git
 
 pkgname = singularity-desktop-git

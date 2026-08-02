@@ -1,12 +1,13 @@
 maintainer=("IMY <omranmansour096@gmail.com>")
 pkgname='singularity-desktop-git'
+gives='singularity-desktop'
 pkgver=0.1.0
 pkgdesc='The Singularity Desktop Environment'
 url='https://sinty.dev/'
 license=('GPL-3.0')
 arch=('amd64')
 
-source=("https://github.com/singularityos-lab/singularity-desktop")
+source=("https://github.com/singularityos-lab/${gives}.git")
 
 makedepends=(
   'meson'
@@ -51,17 +52,18 @@ depends=(
   'xdg-desktop-portal'
 )
 
-build() {
-  cd "${srcdir}/"
-  meson setup build \
-    --prefix=/usr \
-    -Dbuildtype=release
+prepare() {
+  cd "${gives}"
+  meson setup build
+}
 
+build() {
+  cd "${gives}"
   meson compile -C build
 }
 
 package() {
-  cd "${srcdir}/"
+  cd "${gives}"
   DESTDIR="${pkgdir}" meson install -C build
 }
 
