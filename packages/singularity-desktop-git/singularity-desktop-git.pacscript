@@ -52,7 +52,7 @@ depends=(
 )
 
 build() {
-  cd "${srcdir}/${pkgname}"
+  cd "${srcdir}/"
   meson setup build \
     --prefix=/usr \
     -Dbuildtype=release
@@ -61,7 +61,7 @@ build() {
 }
 
 package() {
-  cd "${srcdir}/${pkgname}"
+  cd "${srcdir}/"
   DESTDIR="${pkgdir}" meson install -C build
 }
 
