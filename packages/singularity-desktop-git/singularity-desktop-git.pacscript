@@ -43,7 +43,6 @@ makedepends=(
   'libliftoff-dev'
   'hwdata'
   'libgbm-dev'
-  'gir1.2-gee-0.8'
 )
 
 depends=(
@@ -52,6 +51,7 @@ depends=(
   'qt6-xdgdesktopportal-platformtheme'
   'appmenu-gtk3-module'
   'xdg-desktop-portal'
+  'libgee-0.8-2'
 )
 
 prepare() {
