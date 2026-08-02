@@ -44,7 +44,7 @@ makedepends=(
 )
 
 depends=(
-  'gtk4-layer-shell'
+  'libgtk4-layer-shell0'
   'libdecor-0-plugin-1-gtk'
   'qt6-xdgdesktopportal-platformtheme'
   'appmenu-gtk3-module'
