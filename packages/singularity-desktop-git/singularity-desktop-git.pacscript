@@ -10,6 +10,7 @@ arch=('amd64')
 source=("https://github.com/singularityos-lab/${gives}.git")
 
 makedepends=(
+  'cmake'
   'meson'
   'ninja-build'
   'valac'
@@ -42,6 +43,7 @@ makedepends=(
   'libliftoff-dev'
   'hwdata'
   'libgbm-dev'
+  'gir1.2-gee-0.8'
 )
 
 depends=(
