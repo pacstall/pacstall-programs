@@ -90,6 +90,10 @@ depends=(
 prepare() {
   cd "${gives}"
   meson setup build
+  git clone https://github.com/singularityos-lab/vetro.git
+  cd vetro
+  go build -o vetro .
+  sudo install -Dm755 vetro /usr/local/bin/vetro
 }
 
 build() {
