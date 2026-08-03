@@ -15208,16 +15208,16 @@ pkgbase = sniffnet-deb
 pkgname = sniffnet-deb
 ---
 pkgbase = soar
-	pkgver = 0.11.0
+	pkgver = 0.13.0
 	pkgdesc = Fast, modern package manager for Static Binaries and Portable Formats
 	url = https://soar.qaidvoid.dev/
 	arch = any
-	makedepends = cargo>=1.82.0
+	makedepends = cargo>=1.88.0 | rustup
 	license = MIT
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: soar
-	source = https://github.com/pkgforge/soar/archive/refs/tags/v0.11.0.tar.gz
-	sha256sums = ad5d8b11d53b0be18b7dd773febdaa1cdf83f997c5886ec6c22ad24e04c44692
+	source = https://github.com/pkgforge/soar/archive/refs/tags/v0.13.0.tar.gz
+	sha256sums = 1d289ea0291dd9b1ccaf5a124aa66005c31fd4fb3d0952a6f0df4a2231371ed2
 
 pkgname = soar
 ---
