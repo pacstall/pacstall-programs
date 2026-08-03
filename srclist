@@ -15579,8 +15579,8 @@ pkgbase = stellarium
 	makedepends = qml6-module-qtcharts
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: stellarium
-	source = @stellarium~26.2::https://github.com/Stellarium/stellarium/releases/download/v26.2/stellarium-26.2.tar.xz
-	sha256sums = 9a068d00aac82151f2b24c7f278847a2f9416f31f17c0326fc56ee4cc4cb1aed
+	source = @stellarium~26.2::https://github.com/Stellarium/stellarium/archive/refs/tags/v26.2.tar.gz
+	sha256sums = 43c3c124a44be60b70cd288d8f55fc32ce7f5a02f16f762bd4858da780a85882
 
 pkgname = stellarium
 ---
