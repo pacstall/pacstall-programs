@@ -13,7 +13,7 @@ external_connection=true
 
 build() {
   cd "soar-${pkgver}"
-  cargo build -j"${NCPU}" --release--locked
+  cargo build -j"${NCPU}" --release --locked
 }
 
 package() {
