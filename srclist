@@ -4029,15 +4029,15 @@ pkgbase = fpc-src-deb
 pkgname = fpc-src-deb
 ---
 pkgbase = framework-system-bin
-	pkgver = 0.6.4
+	pkgver = 0.6.5
 	pkgdesc = Tools to interact with the Framework Computer systems
 	url = https://github.com/FrameworkComputer/framework-system
 	arch = amd64
 	license = BSD-3-Clause
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: framework-system
-	source = https://github.com/FrameworkComputer/framework-system/releases/download/v0.6.4/framework_tool
-	sha256sums = 83b04df1fbd950c88bb569e91503cbf7a616663ad7ff6cbcb0e99a67509a8584
+	source = https://github.com/FrameworkComputer/framework-system/releases/download/v0.6.5/framework_tool
+	sha256sums = 0b223b09dbf0c05cfd18878e0be113294e35ea32120b93de1888a26cf6595cfc
 
 pkgname = framework-system-bin
 ---
