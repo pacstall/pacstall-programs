@@ -9,8 +9,8 @@ pkgdesc="Tool for undervolting and throttling limits alteration for Intel CPUs"
 
 prepare() {
   cd "${pkgname}~${pkgver}"
-  # other flags are '--enable-systemd', '--enable-slogind', '--enable-openrc'
-  ./configure
+  # other flags are '--enable-slogind', '--enable-openrc'
+  ./configure --enable-systemd
 }
 
 build() {
