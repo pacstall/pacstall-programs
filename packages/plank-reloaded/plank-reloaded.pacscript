@@ -1,7 +1,6 @@
 pkgname="plank-reloaded"
 arch=("any")
-pkgver="0.11.169"
-pkgrel="2"
+pkgver="0.11.171"
 provides=("plank=${pkgver}" "libplank-common=${pkgver}" "libplank1=${pkgver}")
 replaces=("plank" "libplank-common" "libplank1")
 conflicts=("plank" "libplank-common" "libplank1")
