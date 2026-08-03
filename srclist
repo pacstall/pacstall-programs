@@ -6350,7 +6350,7 @@ pkgbase = intellij-idea-community-bin
 pkgname = intellij-idea-community-bin
 ---
 pkgbase = internxt-deb
-	gives = internxt-drive
+	gives = internxt
 	pkgver = 2.6.1
 	pkgdesc = Safest cloud storage for all your files, photos, and more
 	arch = amd64

@@ -1,5 +1,5 @@
 pkgname="internxt-deb"
-gives="internxt-drive"
+gives="internxt"
 pkgver="2.6.1"
 repology=("project: internxt")
 source=("https://github.com/internxt/drive-desktop-linux/releases/download/v${pkgver}/internxt_${pkgver}_amd64.deb")
