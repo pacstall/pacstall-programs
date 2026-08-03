@@ -15538,8 +15538,8 @@ pkgbase = steamtinkerlaunch-git
 pkgname = steamtinkerlaunch-git
 ---
 pkgbase = stellarium
-	pkgver = 25.4
-	pkgdesc = Stellarium is a free open source planetarium for your computer. It shows a realistic sky in 3D, just like what you see with the naked eye, binoculars or a telescope.
+	pkgver = 26.2
+	pkgdesc = Free open source planetarium for your computer It shows a realistic sky in 3D, just like what you see with the naked eye, binoculars or a telescope
 	arch = any
 	makedepends = cmake
 	makedepends = zlib1g-dev
@@ -15578,8 +15578,9 @@ pkgbase = stellarium
 	makedepends = libqt6webengine6-data
 	makedepends = qml6-module-qtcharts
 	maintainer = Elsie19 <elsie19@pm.me>
-	source = @stellarium~25.4::https://github.com/Stellarium/stellarium/releases/download/v25.4/stellarium-25.4.tar.xz
-	sha256sums = e376e0dc28eae0f7c4b3686fed9c2129c69a87a371b33e24bd79559a5142d613
+	repology = project: stellarium
+	source = @stellarium~26.2::https://github.com/Stellarium/stellarium/releases/download/v26.2/stellarium-26.2.tar.xz
+	sha256sums = 9a068d00aac82151f2b24c7f278847a2f9416f31f17c0326fc56ee4cc4cb1aed
 
 pkgname = stellarium
 ---
