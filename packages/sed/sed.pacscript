@@ -1,6 +1,7 @@
 pkgname="sed"
 arch=("any")
 pkgver="4.10"
+priority="essential"
 source=("@${pkgname}~${pkgver}::https://ftp.gnu.org/gnu/sed/sed-${pkgver}.tar.xz")
 makedepends=("autoconf" "automake")
 depends=("libselinux1" "libc6" "libacl1")
