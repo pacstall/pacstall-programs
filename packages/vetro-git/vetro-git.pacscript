@@ -7,11 +7,10 @@ url='https://sinty.dev/'
 license=('GPL-3.0')
 arch=('amd64')
 external_connection=true
-
 source=("https://github.com/singularityos-lab/${gives}.git")
 
 makedepends=(
-  'golang-go'
+  'golang-go>=1.24'
   'gir1.2-gtk-4.0'
 )
 
@@ -22,5 +21,5 @@ build() {
 
 package() {
   cd "${gives}"
-  install -Dm755 "${gives}" -t "${pkgdir}/opt/${gives}/bin/"
+  install -Dm755 "${gives}" -t "${pkgdir}/usr/bin/"
 }
