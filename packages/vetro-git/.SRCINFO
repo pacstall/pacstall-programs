@@ -1,0 +1,13 @@
+pkgbase = vetro-git
+	gives = vetro
+	pkgver = 1.0.0
+	pkgdesc = The Singularity Desktop Environment
+	url = https://sinty.dev/
+	arch = amd64
+	makedepends = golang-go
+	makedepends = gir1.2-gtk-4.0
+	license = GPL-3.0
+	maintainer = IMY <omranmansour096@gmail.com>
+	source = https://github.com/singularityos-lab/vetro.git
+
+pkgname = vetro-git
