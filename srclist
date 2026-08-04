@@ -4119,7 +4119,7 @@ pkgname = fselect-git
 ---
 pkgbase = fzf-bin
 	gives = fzf
-	pkgver = 0.74.1
+	pkgver = 0.74.2
 	pkgdesc = general-purpose command-line fuzzy finder It's an interactive Unix filter for command-line that can be used with any list; files, command history, processes, hostnames, bookmarks, git commits, etc.
 	url = https://github.com/junegunn/fzf
 	arch = amd64
@@ -4130,16 +4130,16 @@ pkgbase = fzf-bin
 	license = MIT
 	maintainer = Eric Renfro <psi-jack@linux-help.org>
 	repology = project: fzf
-	source = fzf-0.74.1.tar.gz::https://github.com/junegunn/fzf/archive/refs/tags/v0.74.1.tar.gz
-	sha256sums = ba37120bbe45966c6eba6a00c8ea64b86c3c57e349cb55b1c3e0f522976fd978
-	source_amd64 = https://github.com/junegunn/fzf/releases/download/v0.74.1/fzf-0.74.1-linux_amd64.tar.gz
-	sha256sums_amd64 = df53438be5f51e151bb4044d78fda72bdfe209e3ecd2baecae48e8dea370c81b
-	source_arm64 = https://github.com/junegunn/fzf/releases/download/v0.74.1/fzf-0.74.1-linux_arm64.tar.gz
-	sha256sums_arm64 = f22204dd1a091d43e102268d062fd53b47133c8d8581671ee5eb225b75e31183
-	source_ppc64el = https://github.com/junegunn/fzf/releases/download/v0.74.1/fzf-0.74.1-linux_ppc64le.tar.gz
-	sha256sums_ppc64el = 62536669f83b9f7dfdca9d4ecc8d27af2ffe3ebc251693151ff32267f022af1e
-	source_s390x = https://github.com/junegunn/fzf/releases/download/v0.74.1/fzf-0.74.1-linux_s390x.tar.gz
-	sha256sums_s390x = 3fcce26f1e31f5f444a8a8dddd3d332c6dd6ff8fe0edea87e26bbb9e28be11d6
+	source = fzf-0.74.2.tar.gz::https://github.com/junegunn/fzf/archive/refs/tags/v0.74.2.tar.gz
+	sha256sums = 3ce36bd4fb0cde458a7f93c11ef534408d92c3bf19e6acc90e112f3e9e2acc60
+	source_amd64 = https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-linux_amd64.tar.gz
+	sha256sums_amd64 = b3648f48675612b69ee35371cf6dc99ca96d767e89b912d079080916ac8ba8bd
+	source_arm64 = https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-linux_arm64.tar.gz
+	sha256sums_arm64 = 1373e3f5ed3c468179d4529942ddd96c234bcad1bcacaf238916e26a5234b5b2
+	source_ppc64el = https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-linux_ppc64le.tar.gz
+	sha256sums_ppc64el = 14d70f5cffb79924f2118294f86f31046bbffa04df37cd20db727d498f431736
+	source_s390x = https://github.com/junegunn/fzf/releases/download/v0.74.2/fzf-0.74.2-linux_s390x.tar.gz
+	sha256sums_s390x = 74a13cec14445102d92c6e9b488ee3ac6b17ebeb8c7becbf3d781a8a14cc70ba
 
 pkgname = fzf-bin
 ---
