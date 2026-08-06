@@ -1,13 +1,13 @@
 pkgbase = paseo-deb
 	gives = paseo
-	pkgver = 0.2.4
+	pkgver = 0.2.5
 	pkgdesc = One interface for Claude Code, Codex, Copilot, OpenCode, and Pi agents Run agents in parallel on your own machines from desktop, mobile, web, and CLI.
 	url = https://paseo.sh
 	arch = amd64
 	replaces = paseo
 	license = AGPL-3.0
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://github.com/getpaseo/paseo/releases/download/v0.2.4/Paseo-0.2.4-amd64.deb
-	sha256sums_amd64 = 1a58b208ce70cdb4bac44fb13228608121dd631ed5c06e166a25c10a1e190394
+	source_amd64 = https://github.com/getpaseo/paseo/releases/download/v0.2.5/Paseo-0.2.5-amd64.deb
+	sha256sums_amd64 = 2159168b005f9d95e446ac38a58d0e6d3a21c45da6813c9ff9917d0d71414ea5
 
 pkgname = paseo-deb
