@@ -1,12 +1,12 @@
 pkgname="hyprlang"
-pkgver="0.5.0"
+pkgver="0.6.8"
 pkgdesc="implementation library for the hypr config language"
 arch=("amd64" "arm64")
 url="https://github.com/hyprwm/${pkgname}"
 depends=("build-essential")
 makedepends=("cmake")
 source=("@${pkgname}~${pkgver}::${url}/archive/v${pkgver}/${pkgname}-${pkgver}.tar.gz")
-sha256sums=("c59e705f2c2ff9ea4e2b183fdf0bc20a62b7162604a657d6352716a1fd5061b2")
+sha256sums=("d10a0778b646e04d83e8b90cc0f764fb96958c01a15c3c0678d95a40fc647ed5")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 
 build() {
