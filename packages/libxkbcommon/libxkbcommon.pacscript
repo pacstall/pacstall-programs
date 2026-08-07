@@ -1,6 +1,6 @@
 pkgname='libxkbcommon'
 arch=('any')
-pkgver='1.13.1'
+pkgver='1.13.2'
 pkgdesc='Keyboard keymap compiler and support library'
 makedepends=(
   'bash-completion'
@@ -44,7 +44,7 @@ provides=(
 
 url='https://xkbcommon.org'
 source=("@${pkgname}~${pkgver}::https://github.com/xkbcommon/${pkgname}/archive/refs/tags/xkbcommon-${pkgver}.tar.gz")
-sha256sums=('aeb951964c2f7ecc08174cb5517962d157595e9e3f38fc4a130b91dc2f9fec18')
+sha256sums=('acc4d5f7c3cbba5f9f8d08d8bdbeede84ecede46792f47929aa9321873385528')
 repology=("project: ${pkgname}")
 maintainer=('Oren Klopfer <oren@taumoda.com>')
 

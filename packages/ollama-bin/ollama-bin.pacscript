@@ -1,22 +1,22 @@
 pkgname="ollama-bin"
 gives="ollama"
 pkgdesc="Get up and running with large language models"
-repology=("project:ollama")
+repology=("project: ollama")
 license=("MIT")
 url='https://ollama.com/'
 arch=("amd64" "arm64")
-pkgver="0.22.1"
+pkgver="0.32.0"
 makedepends=("zstd")
 source=(
   "https://github.com/${gives}/${gives}/releases/download/v${pkgver}/${gives}-linux-${CARCH}.tar.zst"
   "ollama.service"
 )
 sha256sums_amd64=(
-  "e27c0fe8f60a824162f81ce07b4bfda767dce4f357d762e149b3d0de0abad9fb"
+  "56362d7609dfa9e35aaebb7c9cab25605d8f0528ec3d5d585dc83d6642002bab"
   "e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a"
 )
 sha256sums_arm64=(
-  "77388fbdf7fc72e1ca4471204b06915c3979705b17a1ccea5bc02748054a314a"
+  "2c1fbc47a5351c74f5400d7e4b1104bb470291af5d2f425c37c151487a477ad6"
   "e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a"
 )
 optdepends_ubuntu=(

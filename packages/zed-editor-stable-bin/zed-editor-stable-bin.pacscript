@@ -1,6 +1,6 @@
 pkgname="zed-editor-stable-bin"
 pkgdesc="A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter"
-pkgver="0.208.4"
+pkgver="1.14.2"
 repology=("project: zed-editor")
 gives="zed-editor"
 license=("GPL-3.0-or-later" "AGPL-3.0-or-later" "Apache-2.0")
@@ -8,9 +8,9 @@ arch=("x86_64" "aarch64")
 url='https://zed.dev'
 _channel="stable"
 source=("${url}/api/releases/${_channel}/${pkgver}/zed-linux-${AARCH}.tar.gz")
-sha256sums_x86_64=("a555f90a0322a2293c71df47aebffe63116a1cf206ef5a7e6eed07589c2b3c95")
-sha256sums_aarch64=("ebc024038375c3baa6b5e118b6ec589c67372c3434cc52ba7d57a68c332d980c")
-maintainer=("bibelin <balian1belin@yandex.ru>" "aKqir24 <aKqir24@github.com>")
+sha256sums_x86_64=("6c476103b49a87dc62c46b8cc4dca84c0458ed53537de664ebdbc99b47daee2d")
+sha256sums_aarch64=("1c1d45a86a34301d1e9338ca344bfff9e3dea327a54ec24a61e74285172b1f78")
+maintainer=("bibelin <balian1belin@yandex.ru>" "aKqir24 <aKqir24@github.com>" "Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
 
 # Desktop file should be renamed to dev.zed.Zed.desktop to show correct icon in GNOME on Wayland
 # Issue: https://github.com/zed-industries/zed/issues/16694

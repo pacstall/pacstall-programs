@@ -9,6 +9,7 @@ pkgbase = gearlever-git
 	depends = python3-gi
 	depends = python3-ftputil
 	depends = python3-dbus
+	depends = python3-requests
 	makedepends = meson
 	makedepends = ninja-build
 	makedepends = python3
