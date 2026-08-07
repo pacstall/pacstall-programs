@@ -1,7 +1,7 @@
 _pkgname="helium"
 pkgname="helium-browser-bin"
 gives="helium-browser"
-pkgver="0.14.3.1"
+pkgver="0.15.2.1"
 pkgdesc="Private, fast, and honest web browser based on Chromium"
 maintainer=("tranquil-tr0 <tranquil-tr0@proton.me>")
 arch=('amd64' 'arm64')
@@ -26,12 +26,12 @@ source_arm64=(
   "LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/${pkgver}/LICENSE.ungoogled_chromium")
 sha256sums_amd64=(
   'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2'
-  '98404a938f96f4c8b2bbb92bed0422fd60c7e1591ec6bd69c4dc5e8b67212793'
+  'f81c374f2efb70b400f27061c75823c971548c16e7e1131353f0fd15cf4368ac'
   '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
 )
 sha256sums_arm64=(
   'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2'
-  '8fa248704be9ec4475a306ffed407ad777d600b24021c005f7dd9b2e707e3448'
+  '04578d97587bdf270aa0d120d0d1886f131ff237b634a8ce428aa3f5d4d72600'
   '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
 )
 
