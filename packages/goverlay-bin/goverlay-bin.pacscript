@@ -1,7 +1,7 @@
 pkgname="goverlay-bin"
 gives="goverlay"
 arch=("amd64")
-pkgver="1.2.0"
+pkgver="1.8.4"
 _pkgver="1.2"
 source=(
   "https://github.com/benjamimgois/goverlay/releases/download/${_pkgver}/goverlay.tar.xz"
