@@ -1,7 +1,8 @@
 # This script was originally based from Chocobo1 <chocobo1@archlinux.net>
 
-pkgname="nuitka-git"
-pkgver="2.4.6.r61.g58d849260"
+pkgname="python3-nuitka"
+pkgver="4.1.3"
+gives="nuitka" 
 pkgdesc="Python compiler"
 arch=('any')
 url="https://nuitka.net/"
@@ -28,28 +29,20 @@ makedepends=(
   "libxslt1.1"
 )
 optdepends=("chrpath: for building standalone executables")
-provides=("nuitka")
-conflicts=("nuitka")
-source=("git+https://github.com/Nuitka/Nuitka.git")
-sha256sums=('SKIP')
+provides=("${gives}")
+conflicts=("${gives}")
+source=("https://github.com/Nuitka/Nuitka/archive/refs/tags/${pkgver}.tar.gz")
 maintainer=("aKqir24 <aKqir24@github.com>")
 
 build() {
-  cd "Nuitka"
+  cd "Nuitka-${pkgver}"
 
-  python3 \
-    -m build \
-    --wheel \
-    --no-isolation
+  python3 -m build --wheel --no-isolation
 }
 
 package() {
-  cd "Nuitka"
+  cd "Nuitka-${pkgver}"
 
-  python3 \
-    -m installer \
-    --destdir="${pkgdir}" \
-    dist/*.whl
-
+  python3 -m installer --destdir="${pkgdir}" dist/*.whl
   install -Dm644 Changelog.rst Developer_Manual.rst README.rst -t "${pkgdir}/usr/share/doc/nuitka"
 }
