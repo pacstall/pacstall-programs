@@ -13239,8 +13239,9 @@ pkgbase = python3-moddb
 
 pkgname = python3-moddb
 ---
-pkgbase = nuitka-git
-	pkgver = 2.4.6.r61.g58d849260
+pkgbase = python3-nuitka
+	gives = nuitka
+	pkgver = 4.1.3
 	pkgdesc = Python compiler
 	url = https://nuitka.net/
 	arch = any
@@ -13266,10 +13267,9 @@ pkgbase = nuitka-git
 	provides = nuitka
 	license = Apache-2.0
 	maintainer = aKqir24 <aKqir24@github.com>
-	source = git+https://github.com/Nuitka/Nuitka.git
-	sha256sums = SKIP
+	source = https://github.com/Nuitka/Nuitka/archive/refs/tags/4.1.3.tar.gz
 
-pkgname = nuitka-git
+pkgname = python3-nuitka
 ---
 pkgbase = python3-pypresence
 	gives = python3-pypresence
