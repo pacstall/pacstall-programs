@@ -13220,8 +13220,9 @@ pkgbase = python-pywalfox
 	depends = python3
 	makedepends = python3
 	makedepends = python3-setuptools
-	license = MPL2
-	source = https://pypi.python.org/packages/source/p//-2.9.0.tar.gz
+	license = MPL-2.0
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://pypi.python.org/packages/source/p/pywalfox/pywalfox-2.9.0.tar.gz
 	sha256sums = 8a0dee4f7adfa78609314905f245e5da1bb4d7f0d1cae7a3da56c4e284dd3501
 
 pkgname = python-pywalfox
