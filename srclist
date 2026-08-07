@@ -4050,6 +4050,35 @@ pkgbase = framework-system-bin
 
 pkgname = framework-system-bin
 ---
+pkgbase = freesmlauncher-git
+	gives = freesmlauncher
+	pkgver = 0.r0
+	pkgdesc = Prism Launcher fork aimed to provide a free way to play Minecraft
+	url = https://github.com/FreesmTeam/FreesmLauncher
+	arch = amd64
+	arch = arm64
+	makedepends = build-essential
+	makedepends = cmake
+	makedepends = ninja-build
+	makedepends = extra-cmake-modules
+	makedepends = openjdk-17-jdk
+	makedepends = qt6-base-dev
+	makedepends = qt6-networkauth-dev
+	makedepends = libqt6svg6-dev
+	makedepends = libcmark-dev
+	makedepends = libarchive-dev
+	makedepends = libgl-dev
+	makedepends = libqrencode-dev
+	makedepends = scdoc
+	makedepends = libtomlplusplus-dev
+	makedepends = libvulkan-dev
+	makedepends = gamemode-dev
+	makedepends = zlib1g-dev
+	maintainer = CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>
+	source = git+https://github.com/FreesmTeam/FreesmLauncher.git
+
+pkgname = freesmlauncher-git
+---
 pkgbase = freetube-deb
 	gives = freetube
 	pkgver = 0.24.1
