@@ -1,19 +1,11 @@
 pkgname="freesmlauncher-git"
 gives="freesmlauncher"
-pkgdesc="A Prism Launcher fork aimed to provide a free way to play Minecraft"
-homepage="https://github.com/FreesmTeam/FreesmLauncher"
+pkgdesc="Prism Launcher fork aimed to provide a free way to play Minecraft"
+url='https://github.com/FreesmTeam/FreesmLauncher'
 maintainer="CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>"
-pkgrel="1"
 pkgver="0.r0"
 arch=("amd64" "arm64")
-
 source=("git+https://github.com/FreesmTeam/FreesmLauncher.git")
-
-pkgver() {
-  cd "${srcdir}/FreesmLauncher"
-  printf "%s.r%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
-}
-
 makedepends=(
   "build-essential"
   "cmake"
@@ -42,7 +34,7 @@ build() {
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DLauncher_BUILD_PLATFORM="Pacstall"
 
-  cmake --build build -j"$(nproc)"
+  cmake --build build -j"${NCPU}"
 }
 
 package() {
