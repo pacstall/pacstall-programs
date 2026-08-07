@@ -8,7 +8,6 @@ license=('GPL-3.0')
 arch=('amd64')
 external_connection=true
 source=("https://github.com/singularityos-lab/${gives}.git")
-
 makedepends=(
   'golang-go>=1.24'
   'gir1.2-gtk-4.0'
