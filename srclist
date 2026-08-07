@@ -24,9 +24,9 @@ pkgbase = 86box-app
 	repology = project: 86box
 	source = https://raw.githubusercontent.com/86Box/86Box/refs/tags/v6.0/src/unix/assets/net.86box.86Box.desktop
 	sha256sums = SKIP
-	source_amd64 = https://github.com/86Box/86Box/releases/download/v6.0/86Box-Linux-x86_64-b9001.AppImage
+	source_amd64 = 86box.AppImage::https://github.com/86Box/86Box/releases/download/v6.0/86Box-Linux-x86_64-b9001.AppImage
 	sha256sums_amd64 = 535d3c329f8c32b601103970c86d80aa80298f345452c3524ea2f433624727a4
-	source_arm64 = https://github.com/86Box/86Box/releases/download/v6.0/86Box-NDR-Linux-arm64-b9001.AppImage
+	source_arm64 = 86box.AppImage::https://github.com/86Box/86Box/releases/download/v6.0/86Box-NDR-Linux-arm64-b9001.AppImage
 	sha256sums_arm64 = da1f0c733d7a35059f153398d9978574d38e80019256b336dda9aaca9453a143
 
 pkgname = 86box-app
