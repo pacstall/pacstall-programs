@@ -80,7 +80,7 @@ depends=(
 )
 
 optdepends=("ffmpeg: additional import/export capabilities")
-maintainer=("echometerain <echometer@disroot.org>" "xdavius <xdavius@github.com>" "aKqir24 <aKqir24@github.com>")
+maintainer=("echometerain <echometer@disroot.org>" "xdavius <xdavius@github.com>")
 external_connection=true
 
 prepare() {

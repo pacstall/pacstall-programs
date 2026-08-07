@@ -1,12 +1,12 @@
 pkgname='mdbook'
 arch=("any")
-pkgver='0.5.3'
+pkgver='0.5.4'
 pkgdesc='Utility to create modern online books from Markdown files'
 url='https://rust-lang.github.io/mdBook/'
 repology=("project: ${pkgname}")
 makedepends=('cargo>=1.88.0')
 source=("https://github.com/rust-lang/mdBook/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('7c3e2907c0482fc9721a46ac42d7954600d795ce2152bed418553999ec1ee8f1')
+sha256sums=('107614330c35c77d53b6f6ce7826c50eed087650efe5646a4d0a16ca6bf5544b')
 external_connection=true
 
 build() {

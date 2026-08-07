@@ -2,7 +2,7 @@ pkgname="unicorn-desktop-git"
 source=("https://github.com/rhino-linux/unicorn.git")
 arch=("amd64" "arm64")
 pkgver="0.0.1"
-pkgrel="12"
+pkgrel="14"
 depends=(
   "xfwm4"
   "xfdashboard"
@@ -16,7 +16,6 @@ depends=(
   "xfce4-pulseaudio-plugin"
   "xfce4-helpers"
   "pavucontrol"
-  "plank"
   "dconf-cli"
   "yaru-theme-icon"
   "yaru-theme-gtk"
@@ -40,6 +39,25 @@ depends=(
   "libxfce4ui-utils"
   "at-spi2-core"
   "alsa-ucm-conf"
+  "blueman"
+  "gtk2-engines-pixbuf"
+  "libadwaita-1-0"
+  "libpanel-1-1"
+  "lightdm"
+  "mousepad"
+  "mugshot"
+  "qt-style-kvantum"
+  "qt-style-kvantum-themes"
+  "thunar"
+  "thunar-volman"
+  "xfce4-appfinder"
+  "xfce4-goodies"
+  "xfce4-notifyd"
+  "xfce4-panel"
+  "xfce4-session"
+  "xfce4-settings"
+  "xfce4-terminal"
+  "xfdesktop4"
 )
 depends_amd64=("xserver-xorg-video-intel" "xserver-xorg-video-vesa")
 pacdeps=(
@@ -48,6 +66,7 @@ pacdeps=(
   "ulauncher-deb"
   "cortile"
   "adw-gtk-theme"
+  "plank-reloaded"
   "rhino-xfwm4-theme-git"
   "rhino-wallpapers-git"
   "rhino-branding-git"
@@ -55,6 +74,7 @@ pacdeps=(
   "vala-panel-appmenu-xfce4-git"
   "xfce4-dynamic-workspaces-rs-bin"
 )
+recommends=("lightdm-gtk-greeter")
 gives="unicorn-desktop"
 replaces=("unicorn-mobile" "unicorn-mobile-git")
 priority="required"

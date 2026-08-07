@@ -2,11 +2,11 @@ pkgname="github-cli-bin"
 gives="gh"
 breaks=("${gives}-git" "${gives}-deb")
 replaces=("${gives}")
-repology=("project: ${gives}")
-pkgver="2.95.0"
+repology=("project: github-cli")
+pkgver="2.97.0"
 source=("@${pkgname}~${pkgver}::https://github.com/cli/cli/releases/download/v${pkgver}/${gives}_${pkgver}_linux_amd64.tar.gz")
 pkgdesc="GitHub's official command line tool - Binary version"
-sha256sums=("25d1e4729e8808c9ed3d613e96ebd3f3e44446f2d368c89d878a71a36ddb3d8c")
+sha256sums=("a2c9b8497e1f85b1ad0dfcb78b5a622e098801b8e461e459e88e1ee12f018112")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 

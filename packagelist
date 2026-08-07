@@ -67,6 +67,7 @@ cantata
 caprine-deb
 capsfix-git
 carla-git
+cava
 cbindgen
 celeste-bin
 cheat
@@ -82,7 +83,6 @@ cmake-data-deb
 cmake-deb
 cmatrix
 colorz-git
-com.github.mirkobrombin.bottles-deb
 conky-manager-zcot-git
 coreutils-single
 cortile
@@ -146,12 +146,12 @@ emacs-git
 emby-server-deb
 endlessh-git
 enpass-deb
-epson-inkjet-printer-stylus-nx110-series-deb
 epson-printer-utility-deb
 eqwalizer
 erlang-jsone
 erlang-language-platform
 erlfmt
+eww-git
 exercism-cli-bin
 exiftool
 exploitdb-git
@@ -165,6 +165,7 @@ fast-colorthief-git
 fastcompmgr-git
 fastfetch-git
 fblog-bin
+fd-deb
 feishin-app
 fennel
 fennel-bin
@@ -223,6 +224,7 @@ github-cli-bin
 github-cli-deb
 github-desktop-deb
 gitkraken-deb
+gittype-bin
 gitui-git
 gldriver-test-deb
 glffetch-git
@@ -268,6 +270,8 @@ helix
 hello
 hello-rhino-bin
 hello-rhino-git
+herbstluftwm-git
+herdr-bin
 heroic-games-launcher-deb
 highlight-pointer-bin
 honkers-launcher-bin
@@ -307,6 +311,7 @@ jetbrains-toolbox-bin
 joplin-desktop-app
 jq-bin
 jsonnet-bundler-bin
+jujutsu-bin
 kakoune
 kakoune-ansi-git
 kakoune-auto-pairs-git
@@ -342,6 +347,7 @@ lazarus-project-deb
 lazydocker-bin
 lazygit
 lbry-deb
+leftwm-git
 legcord-deb
 lemonbar-xft-git
 lenovolegionlinux-dkms-git
@@ -564,6 +570,7 @@ nutext-git
 nvidia-beta-installer
 nvidia-feat-installer
 nvidia-prod-installer
+nvm-git
 obquit-git
 obs-backgroundremoval
 obs-backgroundremoval-deb
@@ -595,6 +602,7 @@ os-installer-git
 osu-lazer-app
 osu-lazer-tachyon-app
 owofetch
+oxwm-git
 p3x-onenote-app
 pacget-git
 paconvert-git
@@ -612,6 +620,7 @@ paper-icon-theme
 papirus-folders
 papirus-icon-theme
 parsec-deb
+paseo-deb
 pb-git
 pcsx2-app
 pdf-mix-tool-git
@@ -623,6 +632,7 @@ pgmigrate
 picom
 pipes.sh-bin
 pipewire
+plank-reloaded
 planner-git
 plasma-compact-shutdown-git
 plasma-kara
@@ -817,6 +827,7 @@ torguard-deb
 touchegg-deb
 touchegg-git
 tre-git
+tree-sitter-cli-bin
 treefetch-bin
 truckersmp-cli
 ttf-fira-sans
@@ -892,6 +903,7 @@ whatsdesk-deb
 whatsie
 whatsie-git
 windscribe-beta-gui-deb
+windscribe-deb
 wine-staging
 wine-staging-git
 winetricks-git
@@ -912,8 +924,11 @@ xfce4-settings-pine-git
 xgifwallpaper-git
 xivlauncher-bin
 xmind-vana-deb
+xmonad-git
 xonotic
 xpadneo-dkms
+xpra
+xterm
 xwayland-satellite
 yabridge
 yad

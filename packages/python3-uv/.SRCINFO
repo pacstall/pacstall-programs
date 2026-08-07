@@ -1,5 +1,5 @@
 pkgbase = python3-uv
-	pkgver = 0.11.21
+	pkgver = 0.11.26
 	pkgdesc = Fast Python package and project manager, written in Rust
 	url = https://github.com/astral-sh/uv
 	arch = any
@@ -8,7 +8,7 @@ pkgbase = python3-uv
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: python:uv
-	source = https://github.com/astral-sh/uv/archive/refs/tags/0.11.21.tar.gz
-	sha256sums = 12316609d3cd474a67d9b7e08991db7ec19390395ba03f56e79d39c6afbb723a
+	source = https://github.com/astral-sh/uv/archive/refs/tags/0.11.26.tar.gz
+	sha256sums = 3af425f543cca1b4af1cf6829b15f7a1deb9d39bca57c04f70e15042a7bc4a3a
 
 pkgname = python3-uv

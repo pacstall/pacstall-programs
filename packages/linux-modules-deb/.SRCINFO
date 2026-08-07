@@ -1,13 +1,13 @@
 pkgbase = linux-modules-deb
-	gives = linux-modules-7.1.0-070100-generic
-	pkgver = 7.1
+	gives = linux-modules-7.2.0-070200rc5-generic
+	pkgver = 7.2~rc5
 	pkgdesc = Ubuntu Linux mainline kernel (Linux Modules)
 	arch = arm64
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/arm64/linux-modules-7.1.0-070100-generic_7.1.0-070100.202606141628_arm64.deb
-	sha256sums_arm64 = 1a180f91fd09c9dde5f22e537919cca11a36cca76da7bacf7cf242dd5226032d
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.1/amd64/linux-modules-7.1.0-070100-generic_7.1.0-070100.202606141628_amd64.deb
-	sha256sums_amd64 = 57a7b66e6e67fd5560f99f7321afe5d3c6221f2d8a32489a922cbb8d10319fdb
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc5/arm64/linux-modules-7.2.0-070200rc5-generic_7.2.0-070200rc5.202607262232_arm64.deb
+	sha256sums_arm64 = 5a124a45dc01be266ae7ce458bf19eec3c16003822f3af4dffe7bbfd1caa0379
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2-rc5/amd64/linux-modules-7.2.0-070200rc5-generic_7.2.0-070200rc5.202607262232_amd64.deb
+	sha256sums_amd64 = 70be72bf7525e39095633364fea156cc936b7e200d0de1862a521d80d5ba3087
 
 pkgname = linux-modules-deb

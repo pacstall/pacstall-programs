@@ -1,8 +1,8 @@
 pkgname="blender-bin"
 gives="blender"
-pkgver="5.1.2"
+pkgver="5.2.0"
 source=("https://mirrors.ocf.berkeley.edu/blender/release/Blender${pkgver%.*}/blender-${pkgver}-linux-x64.tar.xz")
-sha256sums=("aaccb355f50183979b698bcce7467103a76261b5fa59f4972295842662a285fb")
+sha256sums=("96f6c181a30f4950607839dc84d42a354b250d8a0231b098b59b7bc69c351c48")
 url='https://www.blender.org/'
 arch=("amd64")
 pkgdesc="A fully integrated 3D graphics creation suite"
