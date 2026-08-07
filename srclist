@@ -13124,6 +13124,7 @@ pkgbase = python3-moddb
 pkgname = python3-moddb
 ---
 pkgbase = python3-nuitka
+	gives = nuitka
 	pkgver = 4.1.3
 	pkgdesc = Python compiler
 	url = https://nuitka.net/
@@ -13150,7 +13151,7 @@ pkgbase = python3-nuitka
 	provides = nuitka
 	license = Apache-2.0
 	maintainer = aKqir24 <aKqir24@github.com>
-	source = git+https://github.com/Nuitka/Nuitka/archive/refs/tags/4.1.3.tar.gz
+	source = https://github.com/Nuitka/Nuitka/archive/refs/tags/4.1.3.tar.gz
 
 pkgname = python3-nuitka
 ---

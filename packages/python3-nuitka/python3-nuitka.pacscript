@@ -2,7 +2,7 @@
 
 pkgname="python3-nuitka"
 pkgver="4.1.3"
-gives="nuitka" 
+gives="nuitka"
 pkgdesc="Python compiler"
 arch=('any')
 url="https://nuitka.net/"
