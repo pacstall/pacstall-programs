@@ -9,7 +9,6 @@ pkgbase = zed-editor-stable-bin
 	license = AGPL-3.0-or-later
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
-	maintainer = aKqir24 <aKqir24@github.com>
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: zed-editor
 	source_x86_64 = https://zed.dev/api/releases/stable/1.14.2/zed-linux-x86_64.tar.gz
