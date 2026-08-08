@@ -869,7 +869,6 @@ pkgbase = awesome-luajit-git
 	breaks = awesome-bin
 	replaces = awesome
 	replaces = awesome-bin
-	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/awesomeWM/awesome.git
 
 pkgname = awesome-luajit-git
@@ -1850,7 +1849,6 @@ pkgbase = colorz-git
 	makedepends = python3-setuptools
 	provides = colorz
 	license = MIT
-	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/metakirby5/colorz.git
 
 pkgname = colorz-git
@@ -3418,7 +3416,6 @@ pkgbase = fast-colorthief-git
 	conflicts = fast-colorthief
 	conflicts = fast-colorthief-git
 	provides = fast-colorthief
-	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/bedapisl/fast-colorthief.git
 
 pkgname = fast-colorthief-git
@@ -14528,7 +14525,6 @@ pkgbase = rust-bin
 	provides = cargo
 	provides = cargo-doc
 	maintainer = xdavius <xdavius@github.com>
-	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: rust
 	source_x86_64 = https://static.rust-lang.org/dist/rust-1.96.0-x86_64-unknown-linux-gnu.tar.xz
 	sha256sums_x86_64 = c295047583a56238ea06b43f849f4b877fa12bfd4c7103f8d9a74c94c9c4e108
@@ -18463,7 +18459,6 @@ pkgbase = wlrobs
 	makedepends = libwlroots-0.18
 	makedepends = ninja-build
 	conflicts = wlrobs
-	maintainer = akqir24 <aKqir24@github.com>
 	repology = project: wlrobs
 	source = https://hg.sr.ht/~scoopta/wlrobs/archive/v1.2.tar.gz
 
@@ -19220,7 +19215,6 @@ pkgbase = zed-editor-stable-bin
 	license = AGPL-3.0-or-later
 	license = Apache-2.0
 	maintainer = bibelin <balian1belin@yandex.ru>
-	maintainer = aKqir24 <aKqir24@github.com>
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: zed-editor
 	source_x86_64 = https://zed.dev/api/releases/stable/1.14.2/zed-linux-x86_64.tar.gz
