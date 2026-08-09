@@ -5601,18 +5601,12 @@ pkgbase = helium-browser-bin
 	license = GPL-3.0-only
 	license = BSD-3-Clause
 	maintainer = tranquil-tr0 <tranquil-tr0@proton.me>
-	source_amd64 = helium-browser.sh::https://files.catbox.moe/xqrvs8
+	sha256sums = efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2
+	sha256sums = 9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d
 	source_amd64 = helium-0.15.2.1-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/0.15.2.1/helium-0.15.2.1-x86_64_linux.tar.xz
-	source_amd64 = LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/0.15.2.1/LICENSE.ungoogled_chromium
-	sha256sums_amd64 = efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2
 	sha256sums_amd64 = f81c374f2efb70b400f27061c75823c971548c16e7e1131353f0fd15cf4368ac
-	sha256sums_amd64 = 9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d
-	source_arm64 = helium-browser.sh::https://files.catbox.moe/xqrvs8
 	source_arm64 = helium-0.15.2.1-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/0.15.2.1/helium-0.15.2.1-arm64_linux.tar.xz
-	source_arm64 = LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/0.15.2.1/LICENSE.ungoogled_chromium
-	sha256sums_arm64 = efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2
 	sha256sums_arm64 = 04578d97587bdf270aa0d120d0d1886f131ff237b634a8ce428aa3f5d4d72600
-	sha256sums_arm64 = 9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d
 
 pkgname = helium-browser-bin
 ---
