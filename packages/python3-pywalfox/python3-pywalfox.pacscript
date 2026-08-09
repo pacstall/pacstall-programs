@@ -3,7 +3,6 @@
 pkgname="python-pywalfox"
 gives="pywalfox"
 pkgver="2.9.0"
-pkgrel="1"
 pkgdesc="Native app used alongside the Pywalfox browser extension"
 arch=('any' 'amd64' 'arm64')
 url='https://github.com/frewacom/pywalfox'
