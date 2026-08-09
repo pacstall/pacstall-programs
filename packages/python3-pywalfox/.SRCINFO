@@ -1,12 +1,9 @@
 pkgbase = python-pywalfox
 	gives = pywalfox
 	pkgver = 2.9.0
-	pkgrel = 1
 	pkgdesc = Native app used alongside the Pywalfox browser extension
 	url = https://github.com/frewacom/pywalfox
 	arch = any
-	arch = amd64
-	arch = arm64
 	depends = python3
 	makedepends = python3
 	makedepends = python3-setuptools
