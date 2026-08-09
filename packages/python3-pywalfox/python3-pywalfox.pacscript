@@ -16,7 +16,7 @@ sha256sums=("8a0dee4f7adfa78609314905f245e5da1bb4d7f0d1cae7a3da56c4e284dd3501")
 prepare() {
   cd "${gives}-${pkgver}"
   local site_packages
-  site_packages=$(python3 -c "import site; print(site.getsitepackages()[0])")
+  site_packages="$(python3 -c "import site; print(site.getsitepackages()[0])")"
   sed -i "s:<path>:${site_packages}/pywalfox/bin/main.sh:" pywalfox/assets/manifest.json
 }
 
