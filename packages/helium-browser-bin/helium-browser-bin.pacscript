@@ -16,24 +16,17 @@ optdepends=('pipewire: WebRTC desktop sharing under Wayland'
   'gnome-keyring: password storage backend on GNOME / Xfce'
   'kwallet6: support for storing passwords in KWallet on Plasma'
   'upower: Battery Status API support')
-source_amd64=(
-  "helium-browser.sh::https://files.catbox.moe/xqrvs8"
-  "${_pkgname}-${pkgver}-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-x86_64_linux.tar.xz"
-  "LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/${pkgver}/LICENSE.ungoogled_chromium")
 source_arm64=(
   "helium-browser.sh::https://files.catbox.moe/xqrvs8"
-  "${_pkgname}-${pkgver}-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-arm64_linux.tar.xz"
   "LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/${pkgver}/LICENSE.ungoogled_chromium")
-sha256sums_amd64=(
+source_amd64=("${_pkgname}-${pkgver}-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-x86_64_linux.tar.xz")
+source_arm64=("${_pkgname}-${pkgver}-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-arm64_linux.tar.xz")
+sha256sums=(
   'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2'
-  'f81c374f2efb70b400f27061c75823c971548c16e7e1131353f0fd15cf4368ac'
   '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
 )
-sha256sums_arm64=(
-  'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2'
-  '04578d97587bdf270aa0d120d0d1886f131ff237b634a8ce428aa3f5d4d72600'
-  '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
-)
+sha256sums_amd64=('f81c374f2efb70b400f27061c75823c971548c16e7e1131353f0fd15cf4368ac')
+sha256sums_arm64=('04578d97587bdf270aa0d120d0d1886f131ff237b634a8ce428aa3f5d4d72600')
 
 prepare() {
   _archdir="${_pkgname}-${pkgver}-$([[ ${CARCH} == "arm64" ]] && echo "arm64" || echo "x86_64")_linux"
