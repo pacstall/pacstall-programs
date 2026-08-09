@@ -1,7 +1,7 @@
 _pkgname="helium"
 pkgname="helium-browser-bin"
 gives="helium-browser"
-pkgver="0.15.2.1"
+pkgver="0.15.3.1"
 pkgdesc="Private, fast, and honest web browser based on Chromium"
 maintainer=("tranquil-tr0 <tranquil-tr0@proton.me>")
 arch=('amd64' 'arm64')
@@ -25,8 +25,8 @@ sha256sums=(
   'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2'
   '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
 )
-sha256sums_amd64=('f81c374f2efb70b400f27061c75823c971548c16e7e1131353f0fd15cf4368ac')
-sha256sums_arm64=('04578d97587bdf270aa0d120d0d1886f131ff237b634a8ce428aa3f5d4d72600')
+sha256sums_amd64=('2046164d9e3c8a8b9f0c27735e01b2fd3670ddd1e1e399aa66e3d6d23dc3a186')
+sha256sums_arm64=('ffb4b5efae7dde3962d2b484c61013c0dc7765c564af0b90959d1d53bb4c3e35')
 
 prepare() {
   _archdir="${_pkgname}-${pkgver}-$([[ ${CARCH} == "arm64" ]] && echo "arm64" || echo "x86_64")_linux"
