@@ -33,5 +33,11 @@ pkgbase = helium-browser-bin
 	maintainer = tranquil-tr0 <tranquil-tr0@proton.me>
 	source = helium-browser.sh::https://files.catbox.moe/xqrvs8
 	source = LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/0.15.3.1/LICENSE.ungoogled_chromium
+	sha256sums = efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2
+	sha256sums = 9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d
+	source_amd64 = helium-0.15.3.1-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/0.15.3.1/helium-0.15.3.1-x86_64_linux.tar.xz
+	sha256sums_amd64 = 2046164d9e3c8a8b9f0c27735e01b2fd3670ddd1e1e399aa66e3d6d23dc3a186
+	source_arm64 = helium-0.15.3.1-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/0.15.3.1/helium-0.15.3.1-arm64_linux.tar.xz
+	sha256sums_arm64 = ffb4b5efae7dde3962d2b484c61013c0dc7765c564af0b90959d1d53bb4c3e35
 
 pkgname = helium-browser-bin
