@@ -1,6 +1,6 @@
 pkgbase = helium-browser-bin
 	gives = helium-browser
-	pkgver = 0.15.2.1
+	pkgver = 0.15.3.1
 	pkgdesc = Private, fast, and honest web browser based on Chromium
 	url = https://github.com/imputnet/helium-linux
 	arch = amd64
@@ -33,9 +33,9 @@ pkgbase = helium-browser-bin
 	maintainer = tranquil-tr0 <tranquil-tr0@proton.me>
 	sha256sums = efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2
 	sha256sums = 9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d
-	source_amd64 = helium-0.15.2.1-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/0.15.2.1/helium-0.15.2.1-x86_64_linux.tar.xz
-	sha256sums_amd64 = f81c374f2efb70b400f27061c75823c971548c16e7e1131353f0fd15cf4368ac
-	source_arm64 = helium-0.15.2.1-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/0.15.2.1/helium-0.15.2.1-arm64_linux.tar.xz
-	sha256sums_arm64 = 04578d97587bdf270aa0d120d0d1886f131ff237b634a8ce428aa3f5d4d72600
+	source_amd64 = helium-0.15.3.1-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/0.15.3.1/helium-0.15.3.1-x86_64_linux.tar.xz
+	sha256sums_amd64 = 2046164d9e3c8a8b9f0c27735e01b2fd3670ddd1e1e399aa66e3d6d23dc3a186
+	source_arm64 = helium-0.15.3.1-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/0.15.3.1/helium-0.15.3.1-arm64_linux.tar.xz
+	sha256sums_arm64 = ffb4b5efae7dde3962d2b484c61013c0dc7765c564af0b90959d1d53bb4c3e35
 
 pkgname = helium-browser-bin
