@@ -16,16 +16,16 @@ optdepends=('pipewire: WebRTC desktop sharing under Wayland'
   'gnome-keyring: password storage backend on GNOME / Xfce'
   'kwallet6: support for storing passwords in KWallet on Plasma'
   'upower: Battery Status API support')
-source_arm64=(
+source=(
   "helium-browser.sh::https://files.catbox.moe/xqrvs8"
   "LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/${pkgver}/LICENSE.ungoogled_chromium")
-  "${_pkgname}-${pkgver}-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-x86_64_linux.tar.xz")
-  "${_pkgname}-${pkgver}-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-arm64_linux.tar.xz")
 sha256sums=(
   'efe795e5e946fc6737844d403f1cb9845ebaa21ca8c0ac7af53d13ff4fb7daf2'
-  '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d'
-  '2046164d9e3c8a8b9f0c27735e01b2fd3670ddd1e1e399aa66e3d6d23dc3a186'
-  'ffb4b5efae7dde3962d2b484c61013c0dc7765c564af0b90959d1d53bb4c3e35')
+  '9539b394e4179952698894bd62ef6566b6804ab0ff360dcf3a511cfaf7f78c4d')
+source_amd64=("${_pkgname}-${pkgver}-x86_64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-x86_64_linux.tar.xz")
+source_arm64=("${_pkgname}-${pkgver}-arm64_linux.tar.xz::https://github.com/imputnet/helium-linux/releases/download/${pkgver}/${_pkgname}-${pkgver}-arm64_linux.tar.xz")
+sha256sums_amd64=('2046164d9e3c8a8b9f0c27735e01b2fd3670ddd1e1e399aa66e3d6d23dc3a186')
+sha256sums_arm64=('ffb4b5efae7dde3962d2b484c61013c0dc7765c564af0b90959d1d53bb4c3e35')
 
 prepare() {
   _archdir="${_pkgname}-${pkgver}-$([[ ${CARCH} == "arm64" ]] && echo "arm64" || echo "x86_64")_linux"

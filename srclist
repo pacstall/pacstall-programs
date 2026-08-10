@@ -5601,8 +5601,8 @@ pkgbase = helium-browser-bin
 	license = GPL-3.0-only
 	license = BSD-3-Clause
 	maintainer = tranquil-tr0 <tranquil-tr0@proton.me>
-	source_arm64 = helium-browser.sh::https://files.catbox.moe/xqrvs8
-	source_arm64 = LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/0.15.3.1/LICENSE.ungoogled_chromium
+	source = helium-browser.sh::https://files.catbox.moe/xqrvs8
+	source = LICENSE.ungoogled_chromium::https://raw.githubusercontent.com/imputnet/helium-linux/0.15.3.1/LICENSE.ungoogled_chromium
 
 pkgname = helium-browser-bin
 ---
