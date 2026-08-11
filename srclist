@@ -19099,6 +19099,35 @@ pkgbase = yandex-disk-deb
 
 pkgname = yandex-disk-deb
 ---
+pkgbase = yazi-git
+	gives = yazi
+	pkgver = 0.r0
+	pkgdesc = Blazing fast terminal file manager written in Rust
+	url = https://yazi-rs.github.io
+	arch = amd64
+	arch = arm64
+	makedepends = file
+	makedepends = git
+	makedepends = ffmpeg
+	makedepends = p7zip-full
+	makedepends = jq
+	makedepends = poppler-utils
+	makedepends = fd-find
+	makedepends = ripgrep
+	makedepends = fzf
+	makedepends = zoxide
+	makedepends = imagemagick
+	makedepends = wl-clipboard
+	makedepends = xclip
+	makedepends = build-essential
+	makedepends = libgcc-12-dev
+	makedepends = glibc-source
+	pacdeps = rust-bin
+	maintainer = CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>
+	source = git+https://github.com/sxyazi/yazi.git
+
+pkgname = yazi-git
+---
 pkgbase = yle-dl-git
 	gives = yle-dl
 	pkgver = 20250730
