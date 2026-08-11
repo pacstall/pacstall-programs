@@ -29,8 +29,8 @@ maintainer=("bibelin <balian1belin@yandex.ru>")
 
 package() {
   install -Dm755 "${srcdir}/bin/ollama" "${pkgdir}/usr/bin/${gives}"
-  find "${srcdir}/lib/${gives}" -type "f" -exec install -Dm644 "{}" -t "${pkgdir}/usr/lib/${gives}" \;
-  find "${srcdir}/lib/${gives}" -type "l" -exec install -Dm644 "{}" -t "${pkgdir}/usr/lib/${gives}" \;
+  find "${srcdir}/lib/${gives}" -type "f" -exec install -Dm755 "{}" -t "${pkgdir}/usr/lib/${gives}" \;
+  find "${srcdir}/lib/${gives}" -type "l" -exec cp -av "{}" -t "${pkgdir}/usr/lib/${gives}" \;
   install -Dm644 "${gives}.service" "${pkgdir}/usr/lib/systemd/system/${gives}.service"
 }
 
