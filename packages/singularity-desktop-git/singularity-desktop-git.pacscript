@@ -77,6 +77,11 @@ makedepends=(
   'libgbm-dev'
   'libgee-0.8-dev'
   'gobject-introspection'
+  'libcrypt-dev'
+)
+
+pacdeps=(
+  'vetro-git'
 )
 
 depends=(
@@ -90,10 +95,6 @@ depends=(
 prepare() {
   cd "${gives}"
   meson setup build
-  git clone https://github.com/singularityos-lab/vetro.git
-  cd vetro
-  go build -o vetro .
-  sudo install -Dm755 vetro /usr/local/bin/vetro
 }
 
 build() {
@@ -107,13 +108,13 @@ package() {
 }
 
 postinst() {
-  glib-compile-schemas /usr/share/glib-2.0/schemas &> /dev/null || true
-  update-desktop-database -q /usr/share/applications &> /dev/null || true
-  gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor &> /dev/null || true
+  glib-compile-schemas /usr/share/glib-2.0/schemas
+  update-desktop-database -q /usr/share/applications
+  gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 }
 
 postrm() {
-  glib-compile-schemas /usr/share/glib-2.0/schemas &> /dev/null || true
-  update-desktop-database -q /usr/share/applications &> /dev/null || true
-  gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor &> /dev/null || true
+  glib-compile-schemas /usr/share/glib-2.0/schemas
+  update-desktop-database -q /usr/share/applications
+  gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
 }
