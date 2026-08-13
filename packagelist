@@ -266,6 +266,7 @@ hamclock-huge
 harmonoid-deb
 hayase-deb
 headset-deb
+helium-browser-bin
 helix
 hello
 hello-rhino-bin
@@ -672,6 +673,7 @@ python3-moddb
 python3-nuitka
 python3-pypresence
 python3-pywal16
+python3-pywalfox
 python3-sphinx-hawkmoth
 python3-uv
 python3-vkbasalt-cli
@@ -860,6 +862,7 @@ vega-strike-git
 ventoy-bin
 veracrypt-deb
 vesktop-deb
+vetro-git
 vinegar
 vinegar-git
 viper4linux
