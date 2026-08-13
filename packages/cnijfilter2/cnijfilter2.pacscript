@@ -70,13 +70,10 @@ build() {
 
 check() {
   cd "${pkgname}-source-${pkgver}-1"
-  cd "cmdtocanonij2" && make check
-  cd "../cmdtocanonij3" && make check
-  cd "../cnijbe2" && make check
-  cd "../lgmon3" && make check
-  cd "../rastertocanonij" && make check
-  cd "../tocanonij" && make check
-  cd "../tocnpwg" && make check
+  local dir
+  for dir in cmdtocanonij2 cmdtocanonij3 cnijbe2 lgmon3 rastertocanonij tocanonij tocnpwg; do
+    make -C "$dir" check
+  done
 }
 
 package() {
