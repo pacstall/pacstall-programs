@@ -12,7 +12,7 @@ source=("https://github.com/singularityos-lab/${gives}.git")
 makedepends=(
   'build-essential'
   'cmake'
-  'meson'
+  'meson>=1.10.0'
   'ninja-build'
   'valac'
   'git'
