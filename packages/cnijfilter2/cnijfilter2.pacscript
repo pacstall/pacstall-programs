@@ -1,4 +1,4 @@
-# Maintainer: unit73e <unit73e@gmail.com>
+# Script is based on unit73e <unit73e@gmail.com>
 
 pkgname="cnijfilter2"
 pkgver="6.81"
@@ -30,71 +30,34 @@ prepare() {
 
 build() {
   cd "${pkgname}-source-${pkgver}-1"
-  cd "cmdtocanonij2"
-  ./autogen.sh --prefix=/usr --datadir=/usr/share \
-    LDFLAGS="-L../../com/libs_bin_${CARCH}"
-  make -j"${NCPU}"
+  local common_flags="--prefix=/usr --datadir=/usr/share LDFLAGS=-L../../com/libs_bin_${CARCH}"
 
-  cd "../cmdtocanonij3"
-  ./autogen.sh --prefix=/usr \
-    --datadir=/usr/share \
-    LDFLAGS="-L../../com/libs_bin_${CARCH}"
-  make -j"${NCPU}"
-
-  cd "../cnijbe2"
-  ./autogen.sh --prefix=/usr \
-    --enable-progpath=/usr/bin
-  make -j"${NCPU}"
-
-  cd "../lgmon3"
-  ./autogen.sh --prefix=/usr \
-    --enable-libpath=/usr/lib/bjlib2 \
-    --enable-progpath=/usr/bin \
-    --datadir=/usr/share \
-    LDFLAGS="-L../../com/libs_bin_${CARCH}"
-  make -j"${NCPU}"
-
-  cd "../rastertocanonij"
-  ./autogen.sh --prefix=/usr \
-    --enable-progpath=/usr/bin
-  make -j"${NCPU}"
-
-  cd "../tocanonij"
-  ./autogen.sh --prefix=/usr
-  make -j"${NCPU}"
-
-  cd "../tocnpwg"
-  ./autogen.sh --prefix=/usr
-  make -j"${NCPU}"
+  (cd cmdtocanonij2 && ./autogen.sh "${common_flags}") && make -C cmdtocanonij2 -j"${NCPU}"
+  (cd cmdtocanonij3 && ./autogen.sh "${common_flags}") && make -C cmdtocanonij3 -j"${NCPU}"
+  (cd cnijbe2 && ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin) && make -C cnijbe2 -j"${NCPU}"
+  (cd lgmon3 && ./autogen.sh "${common_flags}" --enable-libpath=/usr/lib/bjlib2 --enable-progpath=/usr/bin) && make -C lgmon3 -j"${NCPU}"
+  (cd rastertocanonij && ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin) && make -C rastertocanonij -j"${NCPU}"
+  (cd tocanonij && ./autogen.sh --prefix=/usr) && make -C tocanonij -j"${NCPU}"
+  (cd tocnpwg && ./autogen.sh --prefix=/usr) && make -C tocnpwg -j"${NCPU}"
 }
 
 check() {
   cd "${pkgname}-source-${pkgver}-1"
-  local dir
   for dir in cmdtocanonij2 cmdtocanonij3 cnijbe2 lgmon3 rastertocanonij tocanonij tocnpwg; do
-    make -C "$dir" check
+    make -C "${dir}" check
   done
 }
 
 package() {
-  mkdir -p "${pkgdir}/usr/lib/bjlib2"
-  mkdir -p "${pkgdir}/usr/bin"
-  mkdir -p "${pkgdir}/usr/lib/cups/filter"
-  mkdir -p "${pkgdir}/usr/lib/cups/backend"
-  mkdir -p "${pkgdir}/usr/share/cups/model"
+  mkdir -p "${pkgdir}"/usr/{lib/bjlib2,bin,share/cups/model,lib/cups/{filter,backend}}
 
   cd "${pkgname}-source-${pkgver}-1"
   install -m644 "com/ini/cnnet.ini" "${pkgdir}/usr/lib/bjlib2"
   install -sm755 "com/libs_bin_${CARCH}"/*.so.* "${pkgdir}/usr/lib"
-  install -Dm644 "doc/LICENSE-cnijfilter-${pkgver}EN.txt" \
-    "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+  install -Dm644 "doc/LICENSE-cnijfilter-${pkgver}EN.txt" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+  install -m644 ppd/*.ppd "${pkgdir}/usr/share/cups/model"
 
-  cd "ppd" && install -m644 ./*.ppd "${pkgdir}/usr/share/cups/model"
-  cd "../cmdtocanonij2" && make DESTDIR="${pkgdir}" install
-  cd "../cmdtocanonij3" && make DESTDIR="${pkgdir}" install
-  cd "../cnijbe2" && make DESTDIR="${pkgdir}" install
-  cd "../lgmon3" && make DESTDIR="${pkgdir}" install
-  cd "../rastertocanonij" && make DESTDIR="${pkgdir}" install
-  cd "../tocanonij" && make DESTDIR="${pkgdir}" install
-  cd "../tocnpwg" && make DESTDIR="${pkgdir}" install
+  for dir in cmdtocanonij2 cmdtocanonij3 cnijbe2 lgmon3 rastertocanonij tocanonij tocnpwg; do
+    make -C "${dir}" DESTDIR="${pkgdir}" install
+  done
 }
