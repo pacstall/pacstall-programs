@@ -1,8 +1,8 @@
 pkgname="lact"
 repology=("project: lact")
 arch=('x86_64' 'aarch64')
-pkgver="0.9.1"
-_commit='6a7d0960eed5f05cab7b6f1a01d87dbf31d425d1'
+pkgver="0.10.0"
+_commit='2aa6d0d770546fb36dd8714801c373060e4dd912'
 url='https://github.com/ilya-zlobintsev/LACT'
 source=("https://github.com/ilya-zlobintsev/LACT.git#commit=${_commit}")
 sha256sums=("SKIP")
@@ -14,7 +14,7 @@ depends=("hwdata"
   "libdrm-amdgpu1"
   "libadwaita-1-0"
   "libdisplay-info-bin")
-makedepends=("cargo>=1.93 | rustup"
+makedepends=("cargo>=1.97 | rustup"
   "make"
   "git"
   "clang"
@@ -36,8 +36,8 @@ external_connection=true
 prepare() {
   cd "LACT"
   export CARGO_HOME="${srcdir}/cargo-home"
+  export RUSTUP_HOME="${srcdir}/rustup-home"
   export RUSTUP_TOOLCHAIN=stable
-  export CARGO_NET_GIT_FETCH_WITH_CLI="true"
   cargo fetch --locked --target "${AARCH}-unknown-linux-gnu"
 }
 
@@ -46,9 +46,9 @@ build() {
   CFLAGS+=' -ffat-lto-objects'
 
   export CARGO_HOME="${srcdir}/cargo-home"
+  export RUSTUP_HOME="${srcdir}/rustup-home"
   export RUSTUP_TOOLCHAIN=stable
   export CARGO_TARGET_DIR=target
-  export CARGO_NET_GIT_FETCH_WITH_CLI="true"
   cargo build -p lact --frozen --release --jobs "${NCPU}"
 }
 
