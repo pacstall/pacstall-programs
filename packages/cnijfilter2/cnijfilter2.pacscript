@@ -4,14 +4,13 @@ pkgname="cnijfilter2"
 pkgver="6.81"
 pkgdesc="Canon IJ Printer Driver for Linux"
 arch=('i686' 'x86_64')
-url="https://www.canon.com.au/home-printers"
+url='https://www.canon.com.au/home-printers'
 license=('GPL-2.0-only' 'custom:canon')
 depends=('cups' 'libxml2 | libxml2-16' 'ghostscript')
 makedepends=('automake' 'autoconf' 'build-essential' 'libtool-bin' 'libglib2.0-dev' 'libcups2-dev' 'libxml2-dev' 'pkg-config')
 provides=('tocanonij' 'tocnpwg' 'cnijlgmon3')
 breaks=('cnijfilter' 'cnijfilter-mg3600')
 maintainer=("aKqir24 <aKqir24@github.com>")
-
 source=("https://gdlp01.c-wss.com/gds/4/0100012534/01/${pkgname}-source-${pkgver}-1.tar.gz"
   'add-missing-import.patch::https://aur.archlinux.org/cgit/aur.git/plain/add-missing-import.patch?h=cnijfilter2'
   'fix-libxml2-config.patch::https://aur.archlinux.org/cgit/aur.git/plain/fix-libxml2-config.patch?h=cnijfilter2'
@@ -34,18 +33,18 @@ build() {
   cd "cmdtocanonij2"
   ./autogen.sh --prefix=/usr --datadir=/usr/share \
     LDFLAGS="-L../../com/libs_bin_${CARCH}"
-  make
+  make -j"${NCPU}"
 
   cd "../cmdtocanonij3"
   ./autogen.sh --prefix=/usr \
     --datadir=/usr/share \
     LDFLAGS="-L../../com/libs_bin_${CARCH}"
-  make
+  make -j"${NCPU}"
 
   cd "../cnijbe2"
   ./autogen.sh --prefix=/usr \
     --enable-progpath=/usr/bin
-  make
+  make -j"${NCPU}"
 
   cd "../lgmon3"
   ./autogen.sh --prefix=/usr \
@@ -53,20 +52,20 @@ build() {
     --enable-progpath=/usr/bin \
     --datadir=/usr/share \
     LDFLAGS="-L../../com/libs_bin_${CARCH}"
-  make
+  make -j"${NCPU}"
 
   cd "../rastertocanonij"
   ./autogen.sh --prefix=/usr \
     --enable-progpath=/usr/bin
-  make
+  make -j"${NCPU}"
 
   cd "../tocanonij"
   ./autogen.sh --prefix=/usr
-  make
+  make -j"${NCPU}"
 
   cd "../tocnpwg"
   ./autogen.sh --prefix=/usr
-  make
+  make -j"${NCPU}"
 }
 
 check() {
