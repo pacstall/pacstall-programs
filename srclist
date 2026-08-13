@@ -4410,7 +4410,7 @@ pkgbase = git-git
 	makedepends = install-info
 	makedepends = zlib1g-dev
 	makedepends = zlib1g
-	makedepends = cargo
+	makedepends = cargo>=1.49.0 | rustup
 	makedepends = git
 	breaks = git
 	replaces = git
