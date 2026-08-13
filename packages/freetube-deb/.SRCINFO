@@ -1,11 +1,11 @@
 pkgbase = freetube-deb
 	gives = freetube
-	pkgver = 0.25.1
+	pkgver = 0.25.2
 	pkgdesc = An Open Source YouTube app for privacy.
 	arch = amd64
 	maintainer = Archisman Panigrahi <apandada1ATgmailDotcom>
 	repology = project: freetube
-	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.1-beta/freetube_0.25.1_beta_amd64.deb
-	sha256sums = e30a9e4f0bb0887d0691f5479e04963f8d9aec8d232f9d1cef6577b8af1a50ab
+	source = https://github.com/FreeTubeApp/FreeTube/releases/download/v0.25.2-beta/freetube_0.25.2_beta_amd64.deb
+	sha256sums = 582930fab1a75bf59152d5bd94fd3a238b0f34c8d61ec6c7f317c0fa5bf8266e
 
 pkgname = freetube-deb
