@@ -39,6 +39,5 @@ build() {
 
 package() {
   cd "${srcdir}/FreesmLauncher"
-
   DESTDIR="${pkgdir}" cmake --install build
 }
