@@ -99,7 +99,7 @@ prepare() {
 
 build() {
   cd "${gives}"
-  meson compile -C build
+  meson compile -C build -j"${NCPU}"
 }
 
 package() {
