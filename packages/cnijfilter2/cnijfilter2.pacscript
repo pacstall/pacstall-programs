@@ -26,19 +26,25 @@ prepare() {
   patch -Np1 -i ../add-missing-import.patch
   patch -Np1 -i ../fix-libxml2-config.patch
   patch -Np1 -i ../gcc15-fix.patch
+
+  # Run autogen.sh with flags across all subdirectories
+  local common_flags="--prefix=/usr --datadir=/usr/share LDFLAGS=-L../../com/libs_bin_${CARCH}"
+
+  (cd cmdtocanonij2 && ./autogen.sh "${common_flags}")
+  (cd cmdtocanonij3 && ./autogen.sh "${common_flags}")
+  (cd cnijbe2 && ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin)
+  (cd lgmon3 && ./autogen.sh "${common_flags}" --enable-libpath=/usr/lib/bjlib2 --enable-progpath=/usr/bin)
+  (cd rastertocanonij && ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin)
+  (cd tocanonij && ./autogen.sh --prefix=/usr)
+  (cd tocnpwg && ./autogen.sh --prefix=/usr)
 }
 
 build() {
   cd "${pkgname}-source-${pkgver}-1"
-  local common_flags="--prefix=/usr --datadir=/usr/share LDFLAGS=-L../../com/libs_bin_${CARCH}"
 
-  (cd cmdtocanonij2 && ./autogen.sh "${common_flags}") && make -C cmdtocanonij2 -j"${NCPU}"
-  (cd cmdtocanonij3 && ./autogen.sh "${common_flags}") && make -C cmdtocanonij3 -j"${NCPU}"
-  (cd cnijbe2 && ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin) && make -C cnijbe2 -j"${NCPU}"
-  (cd lgmon3 && ./autogen.sh "${common_flags}" --enable-libpath=/usr/lib/bjlib2 --enable-progpath=/usr/bin) && make -C lgmon3 -j"${NCPU}"
-  (cd rastertocanonij && ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin) && make -C rastertocanonij -j"${NCPU}"
-  (cd tocanonij && ./autogen.sh --prefix=/usr) && make -C tocanonij -j"${NCPU}"
-  (cd tocnpwg && ./autogen.sh --prefix=/usr) && make -C tocnpwg -j"${NCPU}"
+  for dir in cmdtocanonij2 cmdtocanonij3 cnijbe2 lgmon3 rastertocanonij tocanonij tocnpwg; do
+    make -C "${dir}" -j"${NCPU}"
+  done
 }
 
 check() {
