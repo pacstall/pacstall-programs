@@ -6,7 +6,7 @@ pkgdesc="Fast, scalable, distributed revision control system"
 url='https://git-scm.com/'
 maintainer="CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>"
 pkgver="0.r0"
-arch=("amd64" "arm64" "i386")
+arch=("any")
 source=("git+https://github.com/git/git.git")
 makedepends=(
   "build-essential"
