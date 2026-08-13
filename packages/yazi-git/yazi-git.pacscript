@@ -31,7 +31,7 @@ build() {
   cd "${srcdir}/yazi"
 
   export CARGO_HOME="${srcdir}/cargo-cache"
-  cargo build --release --locked
+  cargo build -j"${NCPU}" --release --locked
 }
 
 package() {
