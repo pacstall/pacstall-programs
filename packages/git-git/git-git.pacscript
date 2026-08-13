@@ -8,7 +8,6 @@ maintainer="CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>"
 pkgver="0.r0"
 arch=("amd64" "arm64" "i386")
 source=("git+https://github.com/git/git.git")
-
 makedepends=(
   "build-essential"
   "dh-autoreconf"
@@ -25,7 +24,7 @@ makedepends=(
   "install-info"
   "zlib1g-dev"
   "zlib1g"
-  "cargo"
+  "cargo>=1.49.0 | rustup"
   "git"
 )
 
