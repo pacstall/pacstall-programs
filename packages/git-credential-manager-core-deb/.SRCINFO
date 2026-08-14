@@ -1,12 +1,12 @@
 pkgbase = git-credential-manager-core-deb
 	gives = gcm
-	pkgver = 2.6.1
+	pkgver = 2.9.1
 	pkgdesc = Secure, cross-platform Git credential storage with authentication to GitHub, Azure Repos, and other popular Git hosting services
 	arch = amd64
 	depends = git
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: gcm
-	source = https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.6.1/gcm-linux_amd64.2.6.1.deb
-	sha256sums = 0890a0ab6ea82af962ab55325a96eac73c14cd75d62469c9ecc845682eaaa810
+	source = https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.9.1/gcm-linux-x64-2.9.1.deb
+	sha256sums = a0c59d2ea873a930fd1c41031a25cb31055d31baaf80c10726847e1c1f7aa951
 
 pkgname = git-credential-manager-core-deb

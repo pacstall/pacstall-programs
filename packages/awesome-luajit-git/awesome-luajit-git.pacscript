@@ -6,7 +6,6 @@ pkgdesc="awesome window manager built with luajit"
 source=("https://github.com/awesomeWM/${gives}.git")
 arch=("any")
 pkgver="4.3"
-maintainer=("aKqir24 <aKqir24@github.com>")
 depends=(
   "libcairo2" "libcairo-gobject2" "libdbus-1-3" "dbus-x11"
   "libgdk-pixbuf-2.0-0" "libxdg-basedir1" "libxkbcommon-x11-0"
@@ -16,7 +15,7 @@ depends=(
   "libxcb-randr0" "libxcb-shape0" "libxcb-xinerama0"
   "libxcb-xkb1" "libxcb-xtest0" "libxcb-xfixes0" "libx11-6"
   "gir1.2-pango-1.0" "gir1.2-glib-2.0" "gir1.2-gdkpixbuf-2.0"
-  "gir1.2-freedesktop" "wmctrl"
+  "gir1.2-freedesktop" "wmctrl" "luajit" "lua-lgi"
 )
 makedepends=(
   "cmake" "pkg-config" "libglib2.0-dev"
@@ -58,15 +57,8 @@ build() {
 }
 
 package() {
-  cd "${gives}/build"
-
-  make install DESTDIR="${pkgdir}"
-  mkdir -p "${pkgdir}/usr/share/xsessions"
-  cp ../"${gives}".desktop "${pkgdir}"/usr/share/xsessions/
+  cd "${gives}"
+  make -C build DESTDIR="${pkgdir}" install
+  cp "${gives}.desktop" "${pkgdir}/usr/share/xsessions/"
 }
-
-post_remove() {
-  rm -f /usr/share/xsessions/"${gives}".desktop
-}
-
 # vim:set ft=sh ts=2 sw=2 et:

@@ -1,9 +1,9 @@
 pkgname="obsidian-deb"
 gives="obsidian"
-pkgver="1.11.7"
+pkgver="1.12.7"
 source=("https://github.com/obsidianmd/obsidian-releases/releases/download/v${pkgver}/obsidian_${pkgver}_amd64.deb")
 pkgdesc="Powerful and extensible knowledge base editor that uses markdown"
-sha256sums=("967e4f24a608f76a57fb00798a0416e14bf7db92b62bb16728ae123e1ef48123")
+sha256sums=("3644e3ef19bcd23db4d17f7c73311b5245429391a2a48b361da93375f59712b0")
 maintainer=("Hepno <me@hepno.dev>")
 arch=("amd64")
 repology=("project: obsidian")

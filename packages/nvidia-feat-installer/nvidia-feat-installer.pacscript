@@ -1,5 +1,5 @@
 pkgname='nvidia-feat-installer'
-pkgver='590.48.01'
+pkgver='610.43.02'
 gives="${pkgname}-${pkgver%%.*}"
 arch=('amd64' 'arm64')
 maintainer=('Oren Klopfer <oren@taumoda.com>')
@@ -7,8 +7,8 @@ url='https://www.nvidia.com/en-us/drivers/unix/'
 pkgdesc='NVIDIA driver installer with both proprietary and open source module options (New Feature Branch)'
 source_amd64=("https://us.download.nvidia.com/XFree86/Linux-x86_64/${pkgver}/NVIDIA-Linux-x86_64-${pkgver}.run")
 source_arm64=("https://us.download.nvidia.com/XFree86/aarch64/${pkgver}/NVIDIA-Linux-aarch64-${pkgver}.run")
-sha256sums_amd64=('b9e2f80693781431cc87f4cd29109e133dcecb50a50d6b68d4b3bf2d696bd689')
-sha256sums_arm64=('14ecfb7faa56d4d18cd9fef891b3fa2db3628f12a3e59b59d3c6e6d1a0befd80')
+sha256sums_amd64=('3034a054bb4cdf7752ff8dc272564cb105513804bff53538945901b16ca77463')
+sha256sums_arm64=('8ac5939e891403f7735a870504b6a59e4e3e3b9812131563b37755a5d61353cf')
 
 package() {
   install -Dm755 "NVIDIA-Linux-x86_64-${pkgver}.run" -t "${pkgdir}/usr/bin"
