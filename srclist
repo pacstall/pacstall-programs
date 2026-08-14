@@ -4389,7 +4389,7 @@ pkgbase = git-extras-git
 pkgname = git-extras-git
 ---
 pkgbase = git-git
-	pkgver = 0.r0
+	pkgver = 2.55.0
 	pkgdesc = Fast, scalable, distributed revision control system
 	url = https://git-scm.com/
 	arch = any
