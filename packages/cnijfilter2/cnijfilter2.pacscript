@@ -7,7 +7,7 @@ arch=('i686' 'x86_64')
 url='https://www.canon.com.au/home-printers'
 license=('GPL-2.0-only' 'custom:canon')
 depends=('cups' 'libxml2 | libxml2-16' 'ghostscript')
-makedepends=('automake' 'autoconf' 'build-essential' 'libtool-bin' 'libglib2.0-dev' 'libcups2-dev' 'libxml2-dev' 'pkg-config')
+makedepends=('automake' 'autoconf' 'build-essential' 'libusb-1.0-0-dev' 'libtool-bin' 'libglib2.0-dev' 'libcups2-dev' 'libxml2-dev' 'pkg-config')
 provides=('tocanonij' 'tocnpwg' 'cnijlgmon3')
 breaks=('cnijfilter' 'cnijfilter-mg3600')
 maintainer=("aKqir24 <aKqir24@github.com>")
@@ -22,18 +22,19 @@ sha256sums=('a75716fc9b2823ed61bda09bd720e188f0cb309c012e975a89815738ae71bb1b'
 
 prepare() {
   cd "${pkgname}-source-${pkgver}-1"
+
+  sed -i '1i #include <stdbool.h>' lgmon3/src/common/libcnnet2_type.h
   sed -e '/GET_PROTOCOL/ s:^int:extern &:g' -i 'lgmon3/src/cnijlgmon3.c'
-  patch -Np1 -i ../add-missing-import.patch
-  patch -Np1 -i ../fix-libxml2-config.patch
-  patch -Np1 -i ../gcc15-fix.patch
+  patch -Np1 -i "../add-missing-import.patch"
+  patch -Np1 -i "../fix-libxml2-config.patch"
+  patch -Np1 -i "../gcc15-fix.patch"
 
-  # Run autogen.sh with flags across all subdirectories
-  local common_flags="--prefix=/usr --datadir=/usr/share LDFLAGS=-L../../com/libs_bin_${CARCH}"
+  export LDFLAGS="-L../../com/libs_bin_${AARCH}"
 
-  (cd cmdtocanonij2 && ./autogen.sh "${common_flags}")
-  (cd cmdtocanonij3 && ./autogen.sh "${common_flags}")
+  (cd cmdtocanonij2 && ./autogen.sh --prefix=/usr --datadir=/usr/share)
+  (cd cmdtocanonij3 && ./autogen.sh --prefix=/usr --datadir=/usr/share)
   (cd cnijbe2 && ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin)
-  (cd lgmon3 && ./autogen.sh "${common_flags}" --enable-libpath=/usr/lib/bjlib2 --enable-progpath=/usr/bin)
+  (cd lgmon3 && ./autogen.sh --prefix=/usr --datadir=/usr/share --enable-libpath=/usr/lib/bjlib2 --enable-progpath=/usr/bin)
   (cd rastertocanonij && ./autogen.sh --prefix=/usr --enable-progpath=/usr/bin)
   (cd tocanonij && ./autogen.sh --prefix=/usr)
   (cd tocnpwg && ./autogen.sh --prefix=/usr)
@@ -59,7 +60,7 @@ package() {
 
   cd "${pkgname}-source-${pkgver}-1"
   install -m644 "com/ini/cnnet.ini" "${pkgdir}/usr/lib/bjlib2"
-  install -sm755 "com/libs_bin_${CARCH}"/*.so.* "${pkgdir}/usr/lib"
+  install -sm755 "com/libs_bin_${CARCH}"/*.so* "${pkgdir}/usr/lib"
   install -Dm644 "doc/LICENSE-cnijfilter-${pkgver}EN.txt" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
   install -m644 ppd/*.ppd "${pkgdir}/usr/share/cups/model"
 
