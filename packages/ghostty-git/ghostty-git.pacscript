@@ -19,5 +19,5 @@ makedepends=(
 build() {
   cd "${srcdir}/ghostty"
 
-  zig build -p ${pkgdir}/usr -Doptimize=ReleaseFast -fno-sys=gtk4-layer-shell
+  zig build -p "${pkgdir}"/usr -Doptimize=ReleaseFast -fno-sys=gtk4-layer-shell
 }
