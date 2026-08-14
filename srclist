@@ -1400,7 +1400,7 @@ pkgbase = cachyos-ananicy-rules-git
 
 pkgname = cachyos-ananicy-rules-git
 ---
-pkgbase = canon-pixma-mg3000-complete-deb
+pkgbase = canon-pixma-mg3000-deb
 	gives = cnijfilter2
 	pkgver = 5.40
 	pkgdesc = Complete stand alone driver set printing for Canon Pixma MG3000 series
@@ -1422,9 +1422,11 @@ pkgbase = canon-pixma-mg3000-complete-deb
 	replaces = cnijfilter2
 	maintainer = aKqir24 <aKqir24@github.com>
 	source_amd64 = https://files.catbox.moe/mmxzt2.deb
+	sha256sums_amd64 = b98281e43d3f28bc21c6d76de5fa3a6fce3430c79fc1fde6835574f2748085a8
 	source_i386 = https://files.catbox.moe/8tiosl.deb
+	sha256sums_i386 = ea72ad1a1ef1cb91144e40b8fff0dd9ca9bcf61d893b8bec15dfbb4d8545fe80
 
-pkgname = canon-pixma-mg3000-complete-deb
+pkgname = canon-pixma-mg3000-deb
 ---
 pkgbase = cantata
 	gives = cantata
