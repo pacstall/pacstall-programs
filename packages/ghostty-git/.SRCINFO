@@ -10,6 +10,7 @@ pkgbase = ghostty-git
 	makedepends = gettext
 	makedepends = libxml2-utils
 	makedepends = pkg-config | pkgconf
+	makedepends = gtk4-layer-shell
 	pacdeps = zig-bin
 	pacdeps = blueprint-compiler
 	maintainer = CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>
