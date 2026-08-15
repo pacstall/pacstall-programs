@@ -14,10 +14,11 @@ makedepends=(
   "gettext"
   "libxml2-utils"
   "pkg-config | pkgconf"
+  "gtk4-layer-shell"
 )
 
 build() {
   cd "${srcdir}/ghostty"
 
-  zig build -p "${pkgdir}"/usr -Doptimize=ReleaseFast -fno-sys=gtk4-layer-shell
+  zig build -p "${pkgdir}"/usr -Doptimize=ReleaseFast
 }
