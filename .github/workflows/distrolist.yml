@@ -41,7 +41,7 @@ jobs:
                 next
               }
               NR > 1 && (($6 > current_date) || ($7 > current_date) || ($6 == "")) &&
-              ($4 <= current_date) && $3 != "experimental" {
+              ($4 <= current_date) && $3 != "experimental" && $3 != "rc-buggy" {
                 gsub(" LTS", "", $1);
                 if ($1 != "") {
                   print "  " $3 "/" $1

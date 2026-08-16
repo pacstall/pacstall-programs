@@ -1,5 +1,5 @@
 pkgname="xterm"
-pkgver="401a"
+pkgver="410"
 provides=("x-terminal-emulator")
 arch=("any")
 section=("x11")
@@ -51,7 +51,7 @@ source=(
   "lxterm.1"
 )
 sha256sum=(
-  "3da2b5e64cb49b03aa13057d85e62e1f2e64f7c744719c00d338d11cd3e6ca1a"
+  "6b0232f00aead7ccdcebdf07e9458884d6c45247dd0574b3efd190cb7b15c1b0"
   "92f030891c2306718e242ee784b9c12bb5dfcd01baf34c1992162011caec892f"
   "2b8de0753450ab2fdd9bc5a10f5fa9feaac4abae3b86ac773aef3652a6e56cda"
 )

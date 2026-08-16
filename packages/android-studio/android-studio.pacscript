@@ -1,6 +1,6 @@
 pkgname="android-studio"
-pkgver="2026.1.1.10"
-_vername="quail1-patch2"
+pkgver="2026.1.3.7"
+_vername="quail3"
 arch=("amd64")
 repology=("project: ${pkgname}" "repo: aur" "visiblename: ${pkgname}")
 replaces=("${pkgname}" "${pkgname}-beta" "${pkgname}-canary")
@@ -12,7 +12,7 @@ source=(
   "${pkgname}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${pkgname}.desktop"
 )
 sha256sums=(
-  "fbd3f116d12caed724ea8da0d2cdae7e791170f79f2aa11273ea0f2d22a224dc"
+  "36832122557ab73ca68dfd9bd989ddac40103ac003ca10e04c949a1f61578a67"
   "SKIP"
 )
 
@@ -35,10 +35,7 @@ package() {
 }
 
 post_install() {
-
   sudo update-desktop-database -q
-  # Finished installation
-  fancy_message info "Finished installation. Please start Android Studio to configure it!"
 }
 
 post_remove() {

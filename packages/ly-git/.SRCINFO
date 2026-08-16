@@ -9,6 +9,7 @@ pkgbase = ly-git
 	makedepends = libxcb-xkb-dev
 	pacdeps = zig-bin
 	conflicts = ly
+	replaces = ly
 	replaces = lightdm
 	replaces = sddm
 	license = WTFPL

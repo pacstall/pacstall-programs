@@ -5,18 +5,18 @@ repology=("project: ollama")
 license=("MIT")
 url='https://ollama.com/'
 arch=("amd64" "arm64")
-pkgver="0.30.10"
+pkgver="0.32.6"
 makedepends=("zstd")
 source=(
   "https://github.com/${gives}/${gives}/releases/download/v${pkgver}/${gives}-linux-${CARCH}.tar.zst"
   "ollama.service"
 )
 sha256sums_amd64=(
-  "046d8f28e58d58477a49558d8d1bcb2e81ca8b287f93c44b12ff919c10d178dd"
+  "dec2fa50d24e6868ca3c4c977d69d059399372105f951a9acc320a5a79aadcfc"
   "e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a"
 )
 sha256sums_arm64=(
-  "b626aef722ddb9d64dd20a76eeba9267abc5e9494faabb97839db85462b707d7"
+  "18fecc359b9366a8462e664d9eccf11e8405e5101fe968ee141689106eea0bd2"
   "e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a"
 )
 optdepends_ubuntu=(
@@ -29,8 +29,8 @@ maintainer=("bibelin <balian1belin@yandex.ru>")
 
 package() {
   install -Dm755 "${srcdir}/bin/ollama" "${pkgdir}/usr/bin/${gives}"
-  find "${srcdir}/lib/${gives}" -type "f" -exec install -Dm644 "{}" -t "${pkgdir}/usr/lib/${gives}" \;
-  find "${srcdir}/lib/${gives}" -type "l" -exec install -Dm644 "{}" -t "${pkgdir}/usr/lib/${gives}" \;
+  find "${srcdir}/lib/${gives}" -type "f" -exec install -Dm755 "{}" -t "${pkgdir}/usr/lib/${gives}" \;
+  find "${srcdir}/lib/${gives}" -type "l" -exec cp -av "{}" -t "${pkgdir}/usr/lib/${gives}" \;
   install -Dm644 "${gives}.service" "${pkgdir}/usr/lib/systemd/system/${gives}.service"
 }
 

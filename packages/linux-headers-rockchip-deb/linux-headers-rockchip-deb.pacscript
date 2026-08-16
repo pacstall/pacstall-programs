@@ -1,10 +1,10 @@
 pkgname="linux-headers-rockchip-deb"
-pkgver="6.18.36"
+pkgver="6.18.44"
 basever="6.18"
 buildver="1"
 gives="linux-headers-${basever}-rockchip"
 source=("https://repo.mobian.org/pool/main/l/linux-${basever}-rockchip/${gives}_${pkgver}-${buildver}_arm64.deb")
-sha256sums=("7afc57838db2df6fe429a68484684c3e09046292b2dd509e7c153995215779e7")
+sha256sums=("cd9a8566c55c9e8c760696418af813f7f8bb7f0fc7ea0104886e17e05da8463b")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Linux kernel header files built for PINE64 Rockchip devices (Mobian)"
 arch=('arm64')

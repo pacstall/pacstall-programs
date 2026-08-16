@@ -1,11 +1,12 @@
 pkgname="pacstall"
-pkgver="6.4.1"
+pkgver="6.4.2"
 arch=("all")
 pkgdesc="An AUR-inspired package manager for Ubuntu
 Pacstall is the AUR Ubuntu wishes it had. It takes the concept of the AUR
 and puts a spin on it, making it easier to install and update downstream programs,
 without scouring github repos and the likes."
 url='https://pacstall.dev'
+bugs='https://github.com/pacstall/pacstall/issues'
 depends=(
   'bash'
   'curl'
@@ -37,7 +38,7 @@ recommends=(
 )
 maintainer=(
   "Pacstall Team <pacstall@pm.me>"
-  "Elsie19 <hwengerstickel@pm.me>"
+  "Elsie19 <elsie19@pm.me>"
 )
 backup=('usr/share/pacstall/repo/pacstallrepo' 'usr/share/pacstall/update')
 source=("https://github.com/pacstall/pacstall/archive/refs/tags/${pkgver}.zip")

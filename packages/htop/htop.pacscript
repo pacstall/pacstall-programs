@@ -1,12 +1,12 @@
 pkgname="htop"
 gives="htop"
 arch=("any")
-pkgver="3.5.1"
+pkgver="3.5.2"
 source=("@${pkgname}~${pkgver}::https://github.com/htop-dev/htop/archive/refs/tags/${pkgver}.tar.gz")
 makedepends=("dh-autoreconf" "libncurses5-dev" "libncursesw5-dev")
 replaces=("htop")
 pkgdesc="htop is a cross-platform interactive process viewer."
-sha256sums=("dfc4a09845e9bc86f466a722e62b8f87d59028ff39689077ff2257a6a605061d")
+sha256sums=("a66a62bbd1eba59889c68f868b643e53320eea93da19f43ba13c822a826d82ba")
 prepare() {
   cd "${pkgname}~${pkgver}"
   ./autogen.sh

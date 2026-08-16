@@ -1,5 +1,5 @@
 pkgbase = scx-scheds
-	pkgver = 1.1.1
+	pkgver = 1.1.2
 	pkgdesc = sched_ext schedulers and tools
 	url = https://github.com/sched-ext/scx
 	arch = x86_64
@@ -11,7 +11,7 @@ pkgbase = scx-scheds
 	depends = libelf1t64
 	depends = libprotobuf32t64
 	depends = zlib1g
-	makedepends = cargo>=1.88 | rustup
+	makedepends = cargo>=1.94.1 | rustup
 	makedepends = build-essential
 	makedepends = clang
 	makedepends = llvm
@@ -21,7 +21,16 @@ pkgbase = scx-scheds
 	makedepends = libseccomp-dev
 	makedepends = libbpf-dev
 	makedepends = libzstd-dev
+	makedepends = zlib1g-dev
 	makedepends = pahole
+	makedepends = make
+	makedepends = cmake
+	makedepends = gcc
+	makedepends = autoconf
+	makedepends = autopoint
+	makedepends = flex
+	makedepends = bison
+	makedepends = gawk
 	conflicts = scx-scheds
 	provides = scx-scheds
 	recommends = scx-loader
@@ -34,7 +43,7 @@ pkgbase = scx-scheds
 	license = GPL-2.0-only
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: scx-scheds
-	source = git+https://github.com/sched-ext/scx#commit=0eedd05bc233129fd3c884d7045edeb2c2a474a7
+	source = git+https://github.com/sched-ext/scx#commit=b68cb3c829312b43785225bcfd445a3ecefef5c2
 	sha256sums = SKIP
 
 pkgname = scx-scheds
