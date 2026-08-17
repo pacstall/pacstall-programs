@@ -3,6 +3,7 @@ pkgbase = freesmlauncher-git
 	pkgver = 0.r0
 	pkgdesc = Prism Launcher fork aimed to provide a free way to play Minecraft
 	url = https://github.com/FreesmTeam/FreesmLauncher
+	arch = any
 	makedepends = build-essential
 	makedepends = cmake
 	makedepends = ninja-build
