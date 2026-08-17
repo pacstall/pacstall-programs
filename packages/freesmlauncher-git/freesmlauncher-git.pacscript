@@ -4,7 +4,6 @@ pkgdesc="Prism Launcher fork aimed to provide a free way to play Minecraft"
 url='https://github.com/FreesmTeam/FreesmLauncher'
 maintainer="CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>"
 pkgver="0.r0"
-arch=("amd64" "arm64")
 source=("git+https://github.com/FreesmTeam/FreesmLauncher.git")
 makedepends=(
   "build-essential"
