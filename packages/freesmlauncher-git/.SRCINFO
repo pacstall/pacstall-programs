@@ -13,6 +13,7 @@ pkgbase = freesmlauncher-git
 	makedepends = qt6-networkauth-dev
 	makedepends = libqt6svg6-dev
 	makedepends = libcmark-dev
+	makedepends = cmark
 	makedepends = libarchive-dev
 	makedepends = libgl-dev
 	makedepends = libqrencode-dev

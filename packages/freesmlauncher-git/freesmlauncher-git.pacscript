@@ -16,6 +16,7 @@ makedepends=(
   "qt6-networkauth-dev"
   "libqt6svg6-dev"
   "libcmark-dev"
+  "cmark"
   "libarchive-dev"
   "libgl-dev"
   "libqrencode-dev"
@@ -28,6 +29,9 @@ makedepends=(
 
 build() {
   cd "${srcdir}/FreesmLauncher"
+
+  # test to compile successfully because without this it wouldnt work right now
+  sed -i '/<property name="supportedDragActions">/,+2d' launcher/ui/dialogs/ModToggleConfirmDialog.ui
 
   cmake -S . -B build \
     -DCMAKE_BUILD_TYPE=Release \
