@@ -30,7 +30,6 @@ pkgbase = megasync-deb
 	source_noble_amd64 = https://mega.nz/linux/repo/xUbuntu_24.04/amd64/megasync_6.5.1-1.1_amd64.deb
 	source_resolute_amd64 = https://mega.nz/linux/repo/xUbuntu_26.04/amd64/megasync_6.5.1-1.1_amd64.deb
 	source_trixie_amd64 = https://mega.nz/linux/repo/Debian_13/amd64/megasync_6.5.1-1.1_amd64.deb
-	source_forky_amd64 = https://mega.nz/linux/repo/Debian_testing/amd64/megasync_6.5.1-1.1_amd64.deb
 	sha256sums_jammy_amd64 = 1592db8747c6edb2d430fd60f9de1403105ca1aea586c93d021e4e4ea50e7157
 	sha256sums_noble_amd64 = f669a25ba899bbb21a057babeb6fd0b621f023c7301c877f5fccb96f0c20d950
 	sha256sums_resolute_amd64 = 64169aba4583cefa4698b995428602b956cdb0f7bdcace6cf424a7f6da764152
