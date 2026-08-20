@@ -1,6 +1,6 @@
 pkgbase = libation-deb
 	gives = libation
-	pkgver = 13.7.7
+	pkgver = 13.7.10
 	pkgdesc = Free and open source app to manage your Audible books
 	arch = arm64
 	arch = amd64
@@ -10,7 +10,7 @@ pkgbase = libation-deb
 	breaks = libation-app
 	maintainer = Tobias Heinlein <nionxtrix@mailbox.org>
 	repology = project: libation
-	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v13.7.7/Libation.13.7.7-linux-chardonnay-arm64.deb
-	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v13.7.7/Libation.13.7.7-linux-chardonnay-amd64.deb
+	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v13.7.10/Libation.13.7.10-linux-chardonnay-arm64.deb
+	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v13.7.10/Libation.13.7.10-linux-chardonnay-amd64.deb
 
 pkgname = libation-deb
