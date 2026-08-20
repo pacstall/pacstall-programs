@@ -1,0 +1,25 @@
+pkgbase = noctalia-deb
+	gives = noctalia
+	pkgver = 5.0.0~beta.8
+	pkgdesc = A sleek, customizable desktop shell crafted for Wayland
+	url = https://github.com/noctalia-dev/noctalia
+	arch = amd64
+	arch = arm64
+	breaks = noctalia-git
+	breaks = noctalia-bin
+	breaks = noctalia-app
+	breaks = noctalia-shell
+	breaks = noctalia-shell-git
+	replaces = noctalia
+	compatible = ubuntu:resolute
+	compatible = ubuntu:stonking
+	compatible = ubuntu:devel
+	license = MIT
+	maintainer = AJStrong <ajstrongdev@pm.me>
+	repology = project: noctalia
+	source_amd64 = https://pkg.noctalia.dev/deb/resolute/noctalia_5.0.0~beta.8-1ubuntu1_amd64.deb
+	sha256sums_amd64 = 06db444633ea37960c144b766dbda07883b9445350d4376ba85abf978fa1258d
+	source_arm64 = https://pkg.noctalia.dev/deb/resolute/noctalia_5.0.0~beta.8-1ubuntu1_arm64.deb
+	sha256sums_arm64 = 21cdddeb8b598698a0dbaf801dfc262e4584b141ce079ff876c78c68b7201f6b
+
+pkgname = noctalia-deb

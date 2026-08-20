@@ -1,0 +1,17 @@
+pkgname="noctalia-deb"
+gives="noctalia"
+repology=("project: ${gives}")
+pkgver="5.0.0~beta.8"
+_debrel="1ubuntu1"
+url='https://github.com/noctalia-dev/noctalia'
+source_amd64=("https://pkg.noctalia.dev/deb/resolute/${gives}_${pkgver}-${_debrel}_amd64.deb")
+source_arm64=("https://pkg.noctalia.dev/deb/resolute/${gives}_${pkgver}-${_debrel}_arm64.deb")
+sha256sums_amd64=("06db444633ea37960c144b766dbda07883b9445350d4376ba85abf978fa1258d")
+sha256sums_arm64=("21cdddeb8b598698a0dbaf801dfc262e4584b141ce079ff876c78c68b7201f6b")
+arch=('amd64' 'arm64')
+compatible=("ubuntu:resolute" "ubuntu:stonking" "ubuntu:devel")
+breaks=("${gives}-git" "${gives}-bin" "${gives}-app" "${gives}-shell" "${gives}-shell-git")
+replaces=("${gives}")
+pkgdesc="A sleek, customizable desktop shell crafted for Wayland"
+maintainer=("AJStrong <ajstrongdev@pm.me>")
+license=('MIT')
