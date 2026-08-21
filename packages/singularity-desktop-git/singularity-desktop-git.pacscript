@@ -6,9 +6,7 @@ pkgdesc='The Singularity Desktop Environment'
 url='https://sinty.dev/'
 license=('GPL-3.0')
 arch=('amd64')
-
 source=("https://github.com/singularityos-lab/${gives}.git")
-
 makedepends=(
   'build-essential'
   'cmake'
