@@ -1,7 +1,7 @@
 maintainer=("IMY <omranmansour096@gmail.com>")
 pkgname='singularity-desktop-git'
 gives='singularity-desktop'
-pkgver=0.1.0
+pkgver="0.1.0"
 pkgdesc='The Singularity Desktop Environment'
 url='https://sinty.dev/'
 license=('GPL-3.0')
