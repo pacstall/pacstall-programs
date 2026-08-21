@@ -105,7 +105,7 @@ package() {
   DESTDIR="${pkgdir}" meson install -C build
 }
 
-postinst() {
+post_install() {
   glib-compile-schemas /usr/share/glib-2.0/schemas
   update-desktop-database -q /usr/share/applications
   gtk-update-icon-cache -q -t -f /usr/share/icons/hicolor
