@@ -10,6 +10,7 @@ pkgbase = cnijfilter2
 	makedepends = automake
 	makedepends = autoconf
 	makedepends = build-essential
+	makedepends = libusb-1.0-0-dev
 	makedepends = libtool-bin
 	makedepends = libglib2.0-dev
 	makedepends = libcups2-dev

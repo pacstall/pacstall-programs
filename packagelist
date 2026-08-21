@@ -70,6 +70,7 @@ carla-git
 cava
 cbindgen
 celeste-bin
+chatgpt-deb
 cheat
 chezmoi-deb
 chwp-deb
@@ -218,6 +219,7 @@ git-butler-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
+git-git
 git-review
 gitblade-deb
 gitfiend-deb
@@ -477,6 +479,7 @@ neofetch
 neovide-bin
 neovim
 neovim-app
+neovim-deb
 neovim-git
 nerd-fonts:pkgbase
 nerd-fonts:ttf-iawriter-nerd
@@ -760,6 +763,7 @@ sidequest-bin
 signal-desktop-beta-deb
 signal-desktop-deb
 simplex-desktop-app
+singularity-desktop-git
 slack-deb
 sleek-deb
 sleepy-launcher-bin

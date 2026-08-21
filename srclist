@@ -1640,6 +1640,27 @@ pkgbase = celeste-bin
 
 pkgname = celeste-bin
 ---
+pkgbase = chatgpt-deb
+	gives = chatgpt
+	pkgver = 26.803.81509
+	pkgdesc = ChatGPT desktop application by OpenAI
+	url = https://developers.openai.com/codex/app
+	arch = amd64
+	arch = arm64
+	breaks = chatgpt
+	breaks = chatgpt-deb
+	replaces = chatgpt
+	replaces = chatgpt-deb
+	license = custom:Proprietary
+	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
+	repology = project: chatgpt
+	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.803.81509_amd64.deb
+	sha256sums_amd64 = a9bf91a368f9f7c4eea38082a9fb8fb46b8d005b719a6d7715d2e5a1982c38eb
+	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.803.81509_arm64.deb
+	sha256sums_arm64 = f38fcc194eca9ab0327dc10c92340681eae77c5d75164df700384ce2adaccbc1
+
+pkgname = chatgpt-deb
+---
 pkgbase = cheat
 	gives = cheat
 	pkgver = 5.1.0
@@ -1661,13 +1682,13 @@ pkgname = cheat
 ---
 pkgbase = chezmoi-deb
 	gives = chezmoi
-	pkgver = 2.71.0
+	pkgver = 2.72.0
 	pkgdesc = Manage your dotfiles across multiple diverse machines, securely
 	arch = amd64
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: chezmoi
-	source = https://github.com/twpayne/chezmoi/releases/download/v2.71.0/chezmoi_2.71.0_linux_amd64.deb
-	sha256sums = a8880a1b01e877c3e5da250b9f882ce9fa39962686d75f436fa21e021fa092b1
+	source = https://github.com/twpayne/chezmoi/releases/download/v2.72.0/chezmoi_2.72.0_linux_amd64.deb
+	sha256sums = 6023435f5393553345ec10c75cd8160658c415f2bf9c3d8def3e120c92faf629
 
 pkgname = chezmoi-deb
 ---
@@ -1844,6 +1865,7 @@ pkgbase = cnijfilter2
 	makedepends = automake
 	makedepends = autoconf
 	makedepends = build-essential
+	makedepends = libusb-1.0-0-dev
 	makedepends = libtool-bin
 	makedepends = libglib2.0-dev
 	makedepends = libcups2-dev
@@ -4444,6 +4466,36 @@ pkgbase = git-extras-git
 
 pkgname = git-extras-git
 ---
+pkgbase = git-git
+	pkgver = 2.55.0
+	pkgdesc = Fast, scalable, distributed revision control system
+	url = https://git-scm.com/
+	arch = any
+	makedepends = build-essential
+	makedepends = dh-autoreconf
+	makedepends = cmake
+	makedepends = gcc
+	makedepends = libcurl4-gnutls-dev
+	makedepends = libexpat1-dev
+	makedepends = gettext
+	makedepends = libz-dev
+	makedepends = libssl-dev
+	makedepends = asciidoc
+	makedepends = xmlto
+	makedepends = docbook2x
+	makedepends = install-info
+	makedepends = zlib1g-dev
+	makedepends = zlib1g
+	makedepends = cargo>=1.49.0 | rustup
+	makedepends = git
+	breaks = git
+	replaces = git
+	provides = git
+	maintainer = CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>
+	source = git+https://github.com/git/git.git
+
+pkgname = git-git
+---
 pkgbase = git-review
 	pkgver = 2.5.0
 	pkgdesc = Tool to submit code to Gerrit
@@ -4909,16 +4961,17 @@ pkgname = google-chrome-beta-deb
 ---
 pkgbase = google-chrome-deb
 	gives = google-chrome-stable
-	pkgver = 137.0.7151.119
+	pkgver = 151.0.7922.137
 	pkgdesc = The popular and trusted web browser by Google
 	arch = amd64
 	replaces = google-chrome-stable
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: google-chrome
+	repology = visiblename: google-chrome
 	repology = repo: aur
-	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_137.0.7151.119-1_amd64.deb
-	sha256sums = 11c537a6e94fd48fbc90abed1c94af35ab68dbf6f317e5da64802f266e8a187a
+	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_151.0.7922.137-1_amd64.deb
+	sha256sums = e6dabf044cf9cd0279cfe86efa431682c18bfc06d06339ce055aaa87ae871727
 
 pkgname = google-chrome-deb
 ---
@@ -7072,7 +7125,7 @@ pkgname = kirc
 ---
 pkgbase = kiro-cli-bin
 	gives = kiro-cli
-	pkgver = 2.16.2
+	pkgver = 2.18.0
 	pkgdesc = AI-powered agentic coding assistant for the terminal
 	url = https://kiro.dev/cli/
 	arch = amd64
@@ -7085,16 +7138,16 @@ pkgbase = kiro-cli-bin
 	license = custom:Kiro
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: kiro-cli
-	source_amd64 = kiro-cli-bin-2.16.2-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.16.2/kirocli-x86_64-linux.tar.zst
-	sha256sums_amd64 = 8bcd1d939604ce3b8adafe7c321459a9a9f27fe9afaaedf519d6d4e21e8e0b4f
-	source_arm64 = kiro-cli-bin-2.16.2-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.16.2/kirocli-aarch64-linux.tar.zst
-	sha256sums_arm64 = a8757ed4a5de2870894df6a3ff2f7e4ced2927970ea41989ebc53e9571904ba3
+	source_amd64 = kiro-cli-bin-2.18.0-amd64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.18.0/kirocli-x86_64-linux.tar.zst
+	sha256sums_amd64 = d8241eb930b1db38d22bcbb5c1ee6c5f87b28668b2719f3059359997588a3eaf
+	source_arm64 = kiro-cli-bin-2.18.0-arm64.tar.zst::https://desktop-release.q.us-east-1.amazonaws.com/2.18.0/kirocli-aarch64-linux.tar.zst
+	sha256sums_arm64 = 3e3662990a935b9eede61e17fa5deaae8ed4f8e08b68c0578de527b6823c64ff
 
 pkgname = kiro-cli-bin
 ---
 pkgbase = kiro-ide-bin
 	gives = kiro-ide
-	pkgver = 1.0.242
+	pkgver = 1.0.293
 	pkgdesc = AI-powered IDE for modern development
 	url = https://kiro.dev
 	arch = amd64
@@ -7105,8 +7158,8 @@ pkgbase = kiro-ide-bin
 	license = custom:Kiro
 	maintainer = Rodrigo Tavares <dev@rodrigotavar.es>
 	repology = project: kiro-ide
-	source = https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/1.0.242/tar/kiro-ide-1.0.242-stable-linux-x64.tar.gz
-	sha256sums = 1d4ae0a287ccccba0a34dbe6f2dbcc50a4658f695cc871619f753e06c394999c
+	source = https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed/1.0.293/tar/kiro-ide-1.0.293-stable-linux-x64.tar.gz
+	sha256sums = 79095a24b7f1f0dbf541986d47073d5bff6dbcf813cd4cff52659abf019c5e47
 
 pkgname = kiro-ide-bin
 ---
@@ -7574,7 +7627,7 @@ pkgname = libaquamarine-bin
 ---
 pkgbase = libation-deb
 	gives = libation
-	pkgver = 13.7.7
+	pkgver = 13.7.10
 	pkgdesc = Free and open source app to manage your Audible books
 	arch = arm64
 	arch = amd64
@@ -7584,8 +7637,8 @@ pkgbase = libation-deb
 	breaks = libation-app
 	maintainer = Tobias Heinlein <nionxtrix@mailbox.org>
 	repology = project: libation
-	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v13.7.7/Libation.13.7.7-linux-chardonnay-arm64.deb
-	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v13.7.7/Libation.13.7.7-linux-chardonnay-amd64.deb
+	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v13.7.10/Libation.13.7.10-linux-chardonnay-arm64.deb
+	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v13.7.10/Libation.13.7.10-linux-chardonnay-amd64.deb
 
 pkgname = libation-deb
 ---
@@ -9121,7 +9174,7 @@ pkgbase = master-pdf-editor-deb
 pkgname = master-pdf-editor-deb
 ---
 pkgbase = matugen-bin
-	pkgver = 4.1.0
+	pkgver = 4.2.0
 	pkgdesc = Material you color generation tool with templates
 	url = https://github.com/InioX/matugen
 	arch = x86_64
@@ -9129,8 +9182,8 @@ pkgbase = matugen-bin
 	license = GPL-2.0
 	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: matugen
-	source = https://github.com/InioX/matugen/releases/download/v4.1.0/matugen-4.1.0-x86_64.tar.gz
-	sha256sums = ba46c324d578c782d42644f526df559be81d53352926f5bb2826c98d1340beb0
+	source = https://github.com/InioX/matugen/releases/download/v4.2.0/matugen-4.2.0-x86_64.tar.gz
+	sha256sums = a2e3b50e49ed6439999ba3c252ed04fabd98ee4e9d12e5e5dff2e66370569751
 
 pkgname = matugen-bin
 ---
@@ -10105,6 +10158,28 @@ pkgbase = neovim-app
 	sha256sums_arm64 = 3b819841c975b9c206eff5676b5827921cc09867059452615e2e02d9c0a665af
 
 pkgname = neovim-app
+---
+pkgbase = neovim-deb
+	gives = neovim
+	pkgver = 0.12.4
+	pkgdesc = Neovim is a vim fork maintained by the community
+	url = https://neovim.io/
+	arch = arm64
+	arch = amd64
+	conflicts = neovim
+	conflicts = neovim-git
+	conflicts = neovim-bin
+	conflicts = neovim-app
+	replaces = neovim
+	replaces = neovim-git
+	replaces = neovim-bin
+	replaces = neovim-app
+	maintainer = Tobias Heinlein <nionxtrix@mailbox.org>
+	repology = project: neovim
+	source_arm64 = https://github.com/neovim/neovim-releases/releases/download/v0.12.4/nvim-linux-arm64.deb
+	source_amd64 = https://github.com/neovim/neovim-releases/releases/download/v0.12.4/nvim-linux-x86_64.deb
+
+pkgname = neovim-deb
 ---
 pkgbase = neovim-git
 	gives = neovim
@@ -11555,7 +11630,7 @@ pkgname = oil
 ---
 pkgbase = ollama-bin
 	gives = ollama
-	pkgver = 0.32.6
+	pkgver = 0.32.14
 	pkgdesc = Get up and running with large language models
 	url = https://ollama.com/
 	arch = amd64
@@ -11566,13 +11641,13 @@ pkgbase = ollama-bin
 	repology = project: ollama
 	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550 | libnvidia-compute-555 | libnvidia-compute-560 | libnvidia-compute-565 | libnvidia-compute-570 | libnvidia-compute-575 | libnvidia-compute-580 | libnvidia-compute-590: required to use CUDA on NVIDIA GPU
 	optdepends_debian = libcuda1: required to use CUDA on NVIDIA GPU
-	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.32.6/ollama-linux-amd64.tar.zst
+	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.32.14/ollama-linux-amd64.tar.zst
 	source_amd64 = ollama.service
-	sha256sums_amd64 = dec2fa50d24e6868ca3c4c977d69d059399372105f951a9acc320a5a79aadcfc
+	sha256sums_amd64 = c620917a71e146ab3a7f893084f066069c4c65d144ef8379a91c3cbe8b27de8f
 	sha256sums_amd64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
-	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.32.6/ollama-linux-arm64.tar.zst
+	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.32.14/ollama-linux-arm64.tar.zst
 	source_arm64 = ollama.service
-	sha256sums_arm64 = 18fecc359b9366a8462e664d9eccf11e8405e5101fe968ee141689106eea0bd2
+	sha256sums_arm64 = 7802b739fbdc74df556600f1619f86457b69dce913301cf2d91f7f9d7f7a41b8
 	sha256sums_arm64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
 
 pkgname = ollama-bin
@@ -13114,17 +13189,17 @@ pkgname = pulsar-deb
 ---
 pkgbase = pycharm-community-bin
 	gives = pycharm-community
-	pkgver = 2025.1.2
+	pkgver = 2026.2.1
 	pkgdesc = Python IDE for professional developers aimed at productivity with a keyboard-centric focus.
 	arch = amd64
 	arch = arm64
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	repology = project: pycharm
-	source_amd64 = https://download.jetbrains.com/python/pycharm-community-2025.1.2.tar.gz
-	sha256sums_amd64 = 193fbbb638235c4c671bb6c6b432f43a2d46f7f7ebd6b5f2cc8a1db7db93c5d6
-	source_arm64 = https://download.jetbrains.com/python/pycharm-community-2025.1.2-aarch64.tar.gz
-	sha256sums_arm64 = 10e7426804d649d3c5bdbfc365cf85fe73dd7e74e67fd1e4c82645e8532d17e7
+	source_amd64 = https://github.com/JetBrains/intellij-community/releases/download/pycharm/2026.2.1/pycharm-2026.2.1.tar.gz
+	sha256sums_amd64 = 6d51f228c9a6c8927447c4498c40cb24dca6b5fe75436e7402328eefd27d5f01
+	source_arm64 = https://github.com/JetBrains/intellij-community/releases/download/pycharm/2026.2.1/pycharm-2026.2.1-aarch64.tar.gz
+	sha256sums_arm64 = 63201898bcf2f621a22aecbaa36155a4659eaad7873148e6b2a05d51bb78d41e
 
 pkgname = pycharm-community-bin
 ---
@@ -13457,17 +13532,17 @@ pkgbase = python3-sphinx-hawkmoth
 pkgname = python3-sphinx-hawkmoth
 ---
 pkgbase = python3-uv
-	pkgver = 0.11.26
+	pkgver = 0.12.5
 	pkgdesc = Fast Python package and project manager, written in Rust
 	url = https://github.com/astral-sh/uv
 	arch = any
-	makedepends = cargo-1.94 | cargo>=1.94
+	makedepends = cargo-1.95.0 | cargo>=1.95.0 | rustup
 	license = Apache-2.0
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: python:uv
-	source = https://github.com/astral-sh/uv/archive/refs/tags/0.11.26.tar.gz
-	sha256sums = 3af425f543cca1b4af1cf6829b15f7a1deb9d39bca57c04f70e15042a7bc4a3a
+	source = https://github.com/astral-sh/uv/archive/refs/tags/0.12.5.tar.gz
+	sha256sums = e349c9eb85876921895330f6fee5f01f109d5ec06dcd3b475fb7b4b8de75eac6
 
 pkgname = python3-uv
 ---
@@ -15159,6 +15234,92 @@ pkgbase = simplex-desktop-app
 	sha512sums = beb599ee499d8207c8be48d7d7e9cec82b75bb64b1c1cff5450bb43c05c4c0d70539b374c5ca834893c248d388e188c2281183a42bc781799ea36d3bc1fc4c31
 
 pkgname = simplex-desktop-app
+---
+pkgbase = singularity-desktop-git
+	gives = singularity-desktop
+	pkgver = 0.1.0
+	pkgdesc = The Singularity Desktop Environment
+	url = https://sinty.dev/
+	arch = amd64
+	depends = libgtk4-layer-shell0
+	depends = libdecor-0-plugin-1-gtk
+	depends = qt6-xdgdesktopportal-platformtheme
+	depends = appmenu-gtk3-module
+	depends = xdg-desktop-portal
+	makedepends = build-essential
+	makedepends = cmake
+	makedepends = meson>=1.10.0
+	makedepends = ninja-build
+	makedepends = valac
+	makedepends = git
+	makedepends = gettext
+	makedepends = pkg-config
+	makedepends = scdoc
+	makedepends = golang-go
+	makedepends = libgtk-4-dev
+	makedepends = libglib2.0-dev
+	makedepends = libgtk4-layer-shell-dev
+	makedepends = libdecor-0-dev
+	makedepends = wayland-protocols
+	makedepends = libwayland-dev
+	makedepends = libnm-dev
+	makedepends = libupower-glib-dev
+	makedepends = libpulse-dev
+	makedepends = libgoa-1.0-dev
+	makedepends = libgoa-backend-1.0-dev
+	makedepends = libpolkit-agent-1-dev
+	makedepends = libpolkit-gobject-1-dev
+	makedepends = libgnome-desktop-4-dev
+	makedepends = libsoup-3.0-dev
+	makedepends = libjson-glib-dev
+	makedepends = libpeas-2-dev
+	makedepends = libvte-2.91-gtk4-dev
+	makedepends = libgtksourceview-5-dev
+	makedepends = libgstreamer1.0-dev
+	makedepends = libgstreamer-plugins-base1.0-dev
+	makedepends = libpipewire-0.3-dev
+	makedepends = libsecret-1-dev
+	makedepends = librsvg2-dev
+	makedepends = libpoppler-glib-dev
+	makedepends = libwebkitgtk-6.0-dev
+	makedepends = libxml2-dev
+	makedepends = libpango1.0-dev
+	makedepends = libcairo2-dev
+	makedepends = libpixman-1-dev
+	makedepends = libinput-dev
+	makedepends = libxkbcommon-dev
+	makedepends = libxcb1-dev
+	makedepends = libxcb-ewmh-dev
+	makedepends = libxcb-icccm4-dev
+	makedepends = libxcb-composite0-dev
+	makedepends = libxcb-res0-dev
+	makedepends = libdbusmenu-glib-dev
+	makedepends = libatspi2.0-dev
+	makedepends = libtracker-sparql-3.0-dev
+	makedepends = libgudev-1.0-dev
+	makedepends = libudev-dev
+	makedepends = libsystemd-dev
+	makedepends = libpng-dev
+	makedepends = libsodium-dev
+	makedepends = libgcrypt20-dev
+	makedepends = libpam0g-dev
+	makedepends = libdrm-dev
+	makedepends = libseat-dev
+	makedepends = libdisplay-info-dev
+	makedepends = libliftoff-dev
+	makedepends = hwdata
+	makedepends = xwayland
+	makedepends = sassc
+	makedepends = libgbm-dev
+	makedepends = libgee-0.8-dev
+	makedepends = gobject-introspection
+	makedepends = libcrypt-dev
+	pacdeps = vetro-git
+	license = GPL-3.0
+	maintainer = IMY <omranmansour096@gmail.com>
+	source = https://github.com/singularityos-lab/singularity-desktop.git
+
+pkgname = singularity-desktop-git
 ---
 pkgbase = slack-deb
 	gives = slack-desktop
@@ -17667,7 +17828,7 @@ pkgname = vkroots-git
 ---
 pkgbase = vscode-deb
 	gives = code
-	pkgver = 1.133.0
+	pkgver = 1.134.0
 	pkgdesc = lightweight but powerful source code editor
 	url = https://code.visualstudio.com/
 	arch = amd64
@@ -17676,12 +17837,12 @@ pkgbase = vscode-deb
 	makedepends = gpg
 	maintainer = Diegiwg <diegiwg@gmail.com>
 	repology = project: vscode
-	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.133.0/linux-deb-x64/stable
-	sha256sums_amd64 = d064e87e22f556b8a91e1354b5227e340597324e52886dbb288551596b00e34a
-	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.133.0/linux-deb-arm64/stable
-	sha256sums_arm64 = b20bfb21c5b3656e3411391c5c18df1782aedd7cd3bda0b9c08363ea261fca4b
-	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.133.0/linux-deb-armhf/stable
-	sha256sums_armhf = f68acc6874f59d829779d82e259cfb339ca168b5707f406cfc262353e5d34e45
+	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.134.0/linux-deb-x64/stable
+	sha256sums_amd64 = dcd3a2f52d53df079cd389662ff1fdbeb629938331d3a63655fed929f8d49f19
+	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.134.0/linux-deb-arm64/stable
+	sha256sums_arm64 = b30f5bda4855231681cc7fe22d4a59e7dbee2be170b0e4fb04c7e83b9f9affe5
+	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.134.0/linux-deb-armhf/stable
+	sha256sums_armhf = 01460717d4f4c7b3109cc06b8df5ba579e98ea373751cc0ed4ae7928f26fad89
 
 pkgname = vscode-deb
 ---
