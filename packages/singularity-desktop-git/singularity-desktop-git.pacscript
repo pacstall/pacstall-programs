@@ -77,11 +77,7 @@ makedepends=(
   'gobject-introspection'
   'libcrypt-dev'
 )
-
-pacdeps=(
-  'vetro-git'
-)
-
+pacdeps=('vetro-git')
 depends=(
   'libgtk4-layer-shell0'
   'libdecor-0-plugin-1-gtk'
