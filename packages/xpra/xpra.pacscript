@@ -1,11 +1,11 @@
 pkgname="xpra"
 arch=("any")
-pkgver="6.5.2"
+pkgver="6.5.3"
 pkgdesc="Persistent remote applications for X"
 url='https://xpra.org/'
 license=("GPL-2.0-or-later")
 source=("https://github.com/Xpra-org/xpra/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=("8b6af68f9d26bd7fc3416aa927e308137152abf3ca4608aedb1e0ae0342c4944")
+sha256sums=("87ac8dbf38fa162402ab95f4591d9906d3695e26958943f6d833dc105bce905c")
 makedepends=(
   "python3"
   "python3-setuptools"
