@@ -10757,7 +10757,7 @@ pkgname = niri
 ---
 pkgbase = noctalia-deb
 	gives = noctalia
-	pkgver = 5.0.0~beta.8
+	pkgver = 5.0.0~beta.9
 	pkgdesc = A sleek, customizable desktop shell crafted for Wayland
 	url = https://github.com/noctalia-dev/noctalia
 	arch = amd64
@@ -10776,16 +10776,18 @@ pkgbase = noctalia-deb
 	license = MIT
 	maintainer = AJStrong <ajstrongdev@pm.me>
 	repology = project: noctalia
-	source_ubuntu_amd64 = https://pkg.noctalia.dev/deb/resolute/noctalia_5.0.0~beta.8-1ubuntu1_amd64.deb
-	source_trixie_amd64 = https://pkg.noctalia.dev/deb/trixie/noctalia_5.0.0~beta.8-1+deb13u1_amd64.deb
-	source_sid_amd64 = https://pkg.noctalia.dev/deb/unstable/noctalia_5.0.0~beta.8-1_amd64.deb
-	sha256sums_ubuntu_amd64 = 06db444633ea37960c144b766dbda07883b9445350d4376ba85abf978fa1258d
-	sha256sums_trixie_amd64 = 9955cfdedb9e0acf0c1bd6c26c1f6848599c5f3590eb16ddd68216207f997f1b
-	sha256sums_sid_amd64 = a89af08baf0d384099635342987efff14fac9bd7460fbbe8d89fff611017cb0d
-	source_ubuntu_arm64 = https://pkg.noctalia.dev/deb/resolute/noctalia_5.0.0~beta.8-1ubuntu1_arm64.deb
-	source_trixie_arm64 = https://pkg.noctalia.dev/deb/trixie/noctalia_5.0.0~beta.8-1+deb13u1_arm64.deb
-	sha256sums_ubuntu_arm64 = 21cdddeb8b598698a0dbaf801dfc262e4584b141ce079ff876c78c68b7201f6b
-	sha256sums_trixie_arm64 = b3d88f161bab82d0dd69433543c7caa61a839bc190677f7ce7e7dd7c2a222e10
+	source_ubuntu_amd64 = https://pkg.noctalia.dev/deb/resolute/noctalia_5.0.0~beta.9-2ubuntu1_amd64.deb
+	source_trixie_amd64 = https://pkg.noctalia.dev/deb/trixie/noctalia_5.0.0~beta.9-1+deb13u1_amd64.deb
+	source_sid_amd64 = https://pkg.noctalia.dev/deb/unstable/noctalia_5.0.0~beta.9-2_amd64.deb
+	sha256sums_ubuntu_amd64 = 5c28340d76138208631e04d1ba04eb8d6c6cf312bed6c659e835cae874762727
+	sha256sums_trixie_amd64 = 6991b877a0d3b61d824ccf4eedc3c06580f464c8477b562a66ac624392ff3eb0
+	sha256sums_sid_amd64 = c41e8f9ce3277d620a713bf515b00e7f07861724dd83e4d2826d411570419d99
+	source_ubuntu_arm64 = https://pkg.noctalia.dev/deb/resolute/noctalia_5.0.0~beta.9-2ubuntu1_arm64.deb
+	source_trixie_arm64 = https://pkg.noctalia.dev/deb/trixie/noctalia_5.0.0~beta.9-1+deb13u1_arm64.deb
+	source_sid_arm64 = https://pkg.noctalia.dev/deb/unstable/noctalia_5.0.0~beta.9-2_arm64.deb
+	sha256sums_ubuntu_arm64 = 2dc26e355bf6dd314add26cc25ba4af3889dbdafa012105ef960bbe1f1c1c5ea
+	sha256sums_trixie_arm64 = 6660fc930aabba3047fdb8b8690526324d45b81e59b4249254a210b4513dc35d
+	sha256sums_sid_arm64 = 9272a60f921adfdc17810e396286804b21cc252de969c6f3cde96adb907236e2
 
 pkgname = noctalia-deb
 ---
