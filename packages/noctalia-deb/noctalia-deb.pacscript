@@ -7,6 +7,7 @@ pkgdesc="A sleek, customizable desktop shell crafted for Wayland"
 maintainer=("AJStrong <ajstrongdev@pm.me>")
 license=('MIT')
 arch=('amd64' 'arm64')
+depends=("libc6>=2.43" "libcairo2>=1.2.4" "libcurl3t64-gnutls>=7.16.2" "libegl1" "libfontconfig1>=2.12.6" "libfreetype6>=2.2.1" "libgcc-s1>=4.3" "libglib2.0-0t64>=2.80.0" "libharfbuzz0b>=5.1.0" "libical3t64>=3.0.0" "libjemalloc2>=5.0.0" "libjxl0.11>-0.7.0" "libmd4c0>=0.2.7" "libpam0g>=0.99.7.1" "libpango>=1.44.6" "libpangocairo-1.0.0>=1.14.0" "libpangoft2-1.0.0 >=1.37.2" "libpipewire-0.3-0t64>=0.3.6" "libpolkit-agent-1-0>=0.99" "libpolkit-gobject-1-0>=0.94" "libqalculate23>5.9.0" "librsvg2-2>=2.52.5" "libsdbus-c++2>=2.2.1" "libsecret-1-0>0.19.1" "libsndfile1>=1.0.20" "libsodium>=1.0.14" "libstdc++6>=15" "libtomlplusplus3t64>=3.2.0" "libwayland-client0>=1.23.0" "libwayland-egl1>=1.15.0" "libwebp>=1.5.0" "libwireplumer-0.5-0>=0.4.81" "libxkbcommon0>=0.8.0" "libxml2-16>=2.14.1" "noctalia-data = 5.0.0~beta.9-2ubuntu1" "bash>=5.2.37" "pipewire" "git")
 compatible=("debian:trixie" "debian:sid" "ubuntu:resolute" "ubuntu:stonking" "ubuntu:devel")
 breaks=("${gives}-git" "${gives}-bin" "${gives}-app" "${gives}-shell" "${gives}-shell-git")
 replaces=("${gives}")
