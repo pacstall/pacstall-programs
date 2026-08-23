@@ -9,4 +9,3 @@ source_arm64=("https://github.com/cyanfish/${gives}/releases/download/v${pkgver}
 sha256sums_amd64=("fd653b1caea6d076d19a3dcaa14e9f1091ae9267ac84c0379d4766f4a339fe12")
 source_amd64=("https://github.com/cyanfish/${gives}/releases/download/v${pkgver}/${gives}-${pkgver}-linux-x64.deb")
 pkgdesc="NAPS2 is a document scanning application with a focus on simplicity and ease of use"
-maintainer=("")
