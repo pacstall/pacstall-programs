@@ -3,7 +3,6 @@ arch=("any")
 arch=("any")
 pkgver="3.7c"
 repology=("project: ${pkgname}")
-gives="tmux"
 source=("@${pkgname}~${pkgver}::https://github.com/tmux/tmux/releases/download/${pkgver}/tmux-${pkgver}.tar.gz")
 makedepends=("gcc" "make" "pkg-config" "bison" "libncurses-dev" "libevent-dev" "libutempter-dev")
 breaks=("${pkgname}-git" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
