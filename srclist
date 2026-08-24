@@ -16562,7 +16562,6 @@ pkgbase = tmpmail-bin
 pkgname = tmpmail-bin
 ---
 pkgbase = tmux
-	gives = tmux
 	pkgver = 3.7c
 	pkgdesc = A terminal multiplexer
 	arch = any
