@@ -19440,7 +19440,6 @@ pkgname = yle-dl-git
 ---
 pkgbase = youplaytx
 	pkgver = 0.4.4
-	pkgrel = 1
 	pkgdesc = Full-screen, dual-pane YouTube audio player for the terminal
 	url = https://codeberg.org/ProfP303/youplaytx
 	arch = any
