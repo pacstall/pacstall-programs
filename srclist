@@ -407,7 +407,7 @@ pkgbase = apx-git
 	pkgver = 2.4.3
 	pkgdesc = Package manager meant to be simple to use, but also powerful with support to installing packages from multiple sources without altering the root filesystem
 	arch = any
-	makedepends = golang-1.22-go
+	makedepends = golang-1.22-go | golang-go>=1.22
 	pacdeps = distrobox
 	breaks = apx
 	incompatible = *:bullseye
@@ -1291,7 +1291,7 @@ pkgname = bpytop-git
 ---
 pkgbase = brave-browser-beta-deb
 	gives = brave-browser-beta
-	pkgver = 1.94.99
+	pkgver = 1.95.87
 	pkgdesc = Testing version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1303,16 +1303,16 @@ pkgbase = brave-browser-beta-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-beta-bin
-	source_amd64 = https://github.com/brave/brave-browser/releases/download/v1.94.99/brave-browser-beta_1.94.99_amd64.deb
-	sha256sums_amd64 = 451029d4a0459690e5d6673779eec4fdde826b9ab1688bea7b3986980805be6a
-	source_arm64 = https://github.com/brave/brave-browser/releases/download/v1.94.99/brave-browser-beta_1.94.99_arm64.deb
-	sha256sums_arm64 = acd555f1af016ed69bb372bc90bc2fca57ab21ce64d8af471faab2ba5548661d
+	source_amd64 = https://github.com/brave/brave-browser/releases/download/v1.95.87/brave-browser-beta_1.95.87_amd64.deb
+	sha256sums_amd64 = 8d3111efeffc588b13a651e6f323f47b8eb41d06db9d7be4ce4279c18ffe92a6
+	source_arm64 = https://github.com/brave/brave-browser/releases/download/v1.95.87/brave-browser-beta_1.95.87_arm64.deb
+	sha256sums_arm64 = 4b0443464f07b5af5b83b7f2f0bfc1413de9195bd559565bfcbbb65351fd4d02
 
 pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.93.129
+	pkgver = 1.93.138
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1324,16 +1324,16 @@ pkgbase = brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.93.129_amd64.deb
-	sha256sums_amd64 = 7ceca77a8f24ce81aa95d4fa9d847316a832d7e5a128685c4a42504c2778c3a9
-	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.93.129_arm64.deb
-	sha256sums_arm64 = a4eeaf4f34efece29c3f9b89c2571cfaf51d83fd0b9b643a6a99c48634716ac3
+	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.93.138_amd64.deb
+	sha256sums_amd64 = cf18b2d443f067241e13662484c4b9523f13ff089ba1fc27c88f67911586ac9f
+	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.93.138_arm64.deb
+	sha256sums_arm64 = 5965e7d90d9ac6187dfca53aeefeb07f8be64515ee6262476cd9b23afbef83d7
 
 pkgname = brave-browser-deb
 ---
 pkgbase = brave-browser-nightly-deb
 	gives = brave-browser-nightly
-	pkgver = 1.95.27
+	pkgver = 1.95.84
 	pkgdesc = Brave browser is a fast, private and secure web browser for PC, Mac and mobile - Nightly channel
 	url = https://brave.com/
 	arch = amd64
@@ -1346,10 +1346,10 @@ pkgbase = brave-browser-nightly-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: brave
 	repology = visiblename: brave-nightly-bin
-	source_amd64 = https://github.com/brave/brave-browser/releases/download/v1.95.27/brave-browser-nightly_1.95.27_amd64.deb
-	sha256sums_amd64 = fbd322b98e054beb6b10801f89f9bc4b742111b034a14beeeca414cfe1f46c05
-	source_arm64 = https://github.com/brave/brave-browser/releases/download/v1.95.27/brave-browser-nightly_1.95.27_arm64.deb
-	sha256sums_arm64 = a2d300a8d66214c2ab05cceaf0d4dc43dcc5be2f8d50dbef8e34bb62fd78f696
+	source_amd64 = https://github.com/brave/brave-browser/releases/download/v1.95.84/brave-browser-nightly_1.95.84_amd64.deb
+	sha256sums_amd64 = 21ace551862f5c3f9be8447e3b6cc758aceda74886f72858949ebe11f70d3225
+	source_arm64 = https://github.com/brave/brave-browser/releases/download/v1.95.84/brave-browser-nightly_1.95.84_arm64.deb
+	sha256sums_arm64 = c3abf441abe8c6d58a966dc2416df9798ae051ff4bc19dd24d2cc706c2f83420
 
 pkgname = brave-browser-nightly-deb
 ---
@@ -1642,7 +1642,7 @@ pkgname = celeste-bin
 ---
 pkgbase = chatgpt-deb
 	gives = chatgpt
-	pkgver = 26.803.81509
+	pkgver = 26.818.41705
 	pkgdesc = ChatGPT desktop application by OpenAI
 	url = https://developers.openai.com/codex/app
 	arch = amd64
@@ -1654,10 +1654,10 @@ pkgbase = chatgpt-deb
 	license = custom:Proprietary
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: chatgpt
-	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.803.81509_amd64.deb
-	sha256sums_amd64 = a9bf91a368f9f7c4eea38082a9fb8fb46b8d005b719a6d7715d2e5a1982c38eb
-	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.803.81509_arm64.deb
-	sha256sums_arm64 = f38fcc194eca9ab0327dc10c92340681eae77c5d75164df700384ce2adaccbc1
+	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.818.41705_amd64.deb
+	sha256sums_amd64 = c927c985577bde5baccecc77f02e14b311d94e6230156621faf92579ac036a55
+	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.818.41705_arm64.deb
+	sha256sums_arm64 = 6375ad1e8a094f76791e20b9f31c888719cecfa13f0add2c4bbc809606f73481
 
 pkgname = chatgpt-deb
 ---
@@ -2529,7 +2529,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 1.0.153
+	pkgver = 1.0.154
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -2539,8 +2539,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://stable.dl2.discordapp.net/apps/linux/1.0.153/discord-1.0.153.deb
-	sha256sums = c3f05c71ba97a258d45f870b2e9a9067ea077681fcd43e64dac3d992dea4ecff
+	source = https://stable.dl2.discordapp.net/apps/linux/1.0.154/discord-1.0.154.deb
+	sha256sums = ba1aef3fdcfe9f102685eedeff7d7e357a1e6eefd2ed5bdce77cdbda31810428
 
 pkgname = discord-deb
 ---
@@ -3124,23 +3124,26 @@ pkgbase = emacs
 	pkgdesc = An extensible, customizable, free/libre text editor — and more.
 	arch = any
 	depends = libalsaplayer0
-	depends = libgnutls28-dev
-	depends = libxml2-16 | libxml2
-	depends = libjansson-dev
 	depends = gpm
-	depends = m17n-lib-bin
-	depends = libharfbuzz0b
 	depends = libgccjit0
-	depends = libgccjit-12-dev | libgccjit-11-dev
-	depends = libgtk-4-dev | libgtk-3-dev
+	depends = libharfbuzz0b
+	depends = libjansson4
+	depends = libxml2-16 | libxml2
+	depends = libgnutls30
+	depends = libsqlite3-0
+	depends = libwebp7 | libwebp6
+	depends = liblcms2-2
+	depends = libnss3
+	depends = libgtk-4-1 | libgtk-3-0
 	depends = libsm6
 	depends = libxcb-util1
 	depends = libxcb1
 	depends = libjpeg-turbo8 | libjpeg62-turbo
 	depends = libpng16-16
-	depends = libgif-dev
-	depends = libwebp7 | libweb6
+	depends = libgif7
 	depends = libtiff6 | libtiff5
+	depends = libasound2
+	depends = libatopology2
 	depends = libcairo2
 	makedepends = git
 	makedepends = autoconf
@@ -3150,17 +3153,28 @@ pkgbase = emacs
 	makedepends = libjpeg-dev
 	makedepends = libpng-dev
 	makedepends = libtiff-dev
-	makedepends = libgnutls28-dev
 	makedepends = libgif-dev
 	makedepends = libxaw7-dev
 	makedepends = libxpm-dev
-	makedepends = libtree-sitter-dev
+	makedepends = libgccjit-12-dev | libgccjit-11-dev
+	makedepends = libharfbuzz-dev
+	makedepends = libjansson-dev
+	makedepends = libxml2-dev
+	makedepends = libgnutls28-dev
+	makedepends = libsqlite3-dev
+	makedepends = libwebp-dev
+	makedepends = liblcms2-dev
+	makedepends = libnss3-dev
+	makedepends = libsystemd-dev
 	makedepends = x11proto-dev
 	makedepends = libxi-dev
+	makedepends = libgtk-4-dev | libgtk-3-dev
+	optdepends = texlive-latex-recommended: for exporting org-mode buffers to PDF
 	breaks = emacs-git
 	breaks = emacs-nox
 	replaces = emacs-git
 	replaces = emacs-nox
+	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: emacs
 	source = @emacs~30.2::http://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
@@ -3693,7 +3707,7 @@ pkgbase = feroxbuster-bin
 pkgname = feroxbuster-bin
 ---
 pkgbase = ffmpeg
-	pkgver = 8.1.2
+	pkgver = 9.0.1
 	pkgdesc = Complete, cross-platform solution to record, convert and stream audio and video
 	url = https://ffmpeg.org
 	arch = amd64
@@ -3738,8 +3752,8 @@ pkgbase = ffmpeg
 	maintainer = Sarim <sarimw@proton.me>
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: ffmpeg
-	source = https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n8.1.2.tar.gz
-	sha256sums = 9fd092511605bbebafe095ea6d38d9e40f34d12f7386e1258372df8be0576eb7
+	source = https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n9.0.1.tar.gz
+	sha256sums = 195d54bebe1a27f84d77f4b989d193466f305b355da92292766a69f16880b18a
 
 pkgname = ffmpeg
 ---
@@ -5796,7 +5810,7 @@ pkgname = herbstluftwm-git
 ---
 pkgbase = herdr-bin
 	gives = herdr
-	pkgver = 0.7.5
+	pkgver = 0.8.2
 	pkgdesc = Supervise multiple coding agents in one terminal
 	url = https://herdr.dev
 	arch = amd64
@@ -5809,10 +5823,10 @@ pkgbase = herdr-bin
 	license = AGPL-3.0-or-later
 	maintainer = Jochen Hörmann <jochen.hoermann@gmail.com>
 	repology = project: herdr
-	source_amd64 = herdr::https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-linux-x86_64
-	sha256sums_amd64 = 3dc83288073e4c2d3c679a30e7be97bcca9141c6fd17dbbb9219142e95c59253
-	source_arm64 = herdr::https://github.com/ogulcancelik/herdr/releases/download/v0.7.5/herdr-linux-aarch64
-	sha256sums_arm64 = 32e763a1499a6b694b1d708e4f062b743be1da9f34fcfa4d212d6db6fe09a8b9
+	source_amd64 = herdr::https://github.com/ogulcancelik/herdr/releases/download/v0.8.2/herdr-linux-x86_64
+	sha256sums_amd64 = 976150a14d490c94b243ea2e1a7eb2dfb67f12e36b182db90936f6728e6aecf4
+	source_arm64 = herdr::https://github.com/ogulcancelik/herdr/releases/download/v0.8.2/herdr-linux-aarch64
+	sha256sums_arm64 = f55610658e1c2e0d2aaef730b4b2ab885f7f8ba00285ab372bfb14f2e3d5b40d
 
 pkgname = herdr-bin
 ---
@@ -5845,7 +5859,7 @@ pkgname = highlight-pointer-bin
 ---
 pkgbase = honkers-launcher-bin
 	gives = honkers-launcher
-	pkgver = 1.13.0
+	pkgver = 1.14.0
 	pkgdesc = Launcher for a honkers game with auto-patching, discord rpc and time tracking
 	arch = amd64
 	depends = git
@@ -5864,11 +5878,10 @@ pkgbase = honkers-launcher-bin
 	incompatible = debian:stretch
 	incompatible = debian:buster
 	incompatible = debian:bullseye
-	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: honkers-launcher
-	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.13.0/honkers-launcher
+	source = https://github.com/an-anime-team/honkers-launcher/releases/download/1.14.0/honkers-launcher
 	source = icon.png::https://raw.githubusercontent.com/an-anime-team/honkers-launcher/main/assets/images/icon.png
-	sha256sums = 4a4d61f860f37b40d34fd763f6a08e71d89f9ad0ee2368dcb4f4c307c4d9c36a
+	sha256sums = 49ffc7b1fda8b3a234e8e79416f3ed468b1187a369b1d2e4d97118d21aa1d6cf
 	sha256sums = SKIP
 
 pkgname = honkers-launcher-bin
@@ -6739,7 +6752,7 @@ pkgbase = kakoune-kakboard-git
 pkgname = kakoune-kakboard-git
 ---
 pkgbase = kakoune-lsp
-	pkgver = 21.0.1
+	pkgver = 21.0.2
 	pkgdesc = Kakoune Language Server Protocol Client
 	url = https://lists.sr.ht/~krobelus/kakoune
 	arch = amd64
@@ -6753,8 +6766,8 @@ pkgbase = kakoune-lsp
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: kak-lsp
-	source = https://github.com/kakoune-lsp/kakoune-lsp/archive/refs/tags/v21.0.1.tar.gz
-	sha256sums = 2b56a1084b5dacfaab9dad50e6ae7b0b94470d5a9c0718700a949162fa04ae4b
+	source = https://github.com/kakoune-lsp/kakoune-lsp/archive/refs/tags/v21.0.2.tar.gz
+	sha256sums = 34b4718af5ee39a05a1a176a25cdde4333d2de548e84c148389552e893bc7cc0
 
 pkgname = kakoune-lsp
 ---
@@ -8366,7 +8379,7 @@ pkgname = linux-headers-stable-deb
 ---
 pkgbase = linux-headers-sunxi-deb
 	gives = linux-headers-6.18-sunxi64
-	pkgver = 6.18.45
+	pkgver = 6.18.46
 	pkgdesc = Linux kernel header files built for PINE64 Sunxi devices (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -8374,8 +8387,8 @@ pkgbase = linux-headers-sunxi-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-headers-6.18-sunxi64_6.18.45-1_arm64.deb
-	sha256sums = 19aec9e79d8dcefdd4c26234ab3aa77132206efd8e350a18f8e53769398175a8
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-headers-6.18-sunxi64_6.18.46-1_arm64.deb
+	sha256sums = 5bafb2cf24fa2a6e32bac3ed47c604c5e2e8503b1955b321e9c04cb4e4a72d71
 
 pkgname = linux-headers-sunxi-deb
 ---
@@ -8435,7 +8448,7 @@ pkgname = linux-image-sc7280-deb
 ---
 pkgbase = linux-image-sunxi-deb
 	gives = linux-image-6.18-sunxi64
-	pkgver = 6.18.45
+	pkgver = 6.18.46
 	pkgdesc = Linux kernel image files built for PINE64 Sunxi devices (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -8445,8 +8458,8 @@ pkgbase = linux-image-sunxi-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-image-6.18-sunxi64_6.18.45-1_arm64.deb
-	sha256sums = 879d85aa66468cb5cf42238abe1a4052ddf9edc825e541cc8ac96af4bebb56b7
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-image-6.18-sunxi64_6.18.46-1_arm64.deb
+	sha256sums = 5ffa6012e58620ef25131d2d01a152e540bd56edd8c64d87d52679bb9fc0cb7e
 	depends_debian = firmware-realtek
 	pacdeps_ubuntu = firmware-realtek-deb
 
@@ -10055,17 +10068,16 @@ pkgname = nano
 ---
 pkgbase = naps2-deb
 	gives = naps2
-	pkgver = 8.2.1
+	pkgver = 8.3.2
 	pkgdesc = NAPS2 is a document scanning application with a focus on simplicity and ease of use
 	arch = arm64
 	arch = amd64
 	depends = libsane1
-	maintainer = vbrabandt2005 <vbrabandt@proton.me>
 	repology = project: naps2
-	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v8.2.1/naps2-8.2.1-linux-arm64.deb
-	sha256sums_arm64 = 357593e5da1562f21f7601b79b0060548b821849e797e3908b812fb14ac6c807
-	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v8.2.1/naps2-8.2.1-linux-x64.deb
-	sha256sums_amd64 = 8e23c4a6d7f0b75512459cc29a639ec395355f222375291ed674525c7c9cd4b7
+	source_arm64 = https://github.com/cyanfish/naps2/releases/download/v8.3.2/naps2-8.3.2-linux-arm64.deb
+	sha256sums_arm64 = 8a39330f466eff4630054b790c732ee44f661a9d71619926a0caf542729f0544
+	source_amd64 = https://github.com/cyanfish/naps2/releases/download/v8.3.2/naps2-8.3.2-linux-x64.deb
+	sha256sums_amd64 = fd653b1caea6d076d19a3dcaa14e9f1091ae9267ac84c0379d4766f4a339fe12
 
 pkgname = naps2-deb
 ---
@@ -10126,7 +10138,7 @@ pkgname = neovide-bin
 ---
 pkgbase = neovim-app
 	gives = neovim
-	pkgver = 0.12.4
+	pkgver = 0.12.5
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	arch = amd64
@@ -10138,10 +10150,10 @@ pkgbase = neovim-app
 	replaces = neovim-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source_amd64 = https://github.com/neovim/neovim/releases/download/v0.12.4/nvim-linux-x86_64.appimage
-	sha256sums_amd64 = cdbd8b533b500e272021e1021eafcfe28a77fc4d769465a8f1a48a34002383a7
-	source_arm64 = https://github.com/neovim/neovim/releases/download/v0.12.4/nvim-linux-arm64.appimage
-	sha256sums_arm64 = 3b819841c975b9c206eff5676b5827921cc09867059452615e2e02d9c0a665af
+	source_amd64 = https://github.com/neovim/neovim/releases/download/v0.12.5/nvim-linux-x86_64.appimage
+	sha256sums_amd64 = d429822f6994770e3bb10330e0baf21e72b0afe66e0507cb3c631c1c65f4bf41
+	source_arm64 = https://github.com/neovim/neovim/releases/download/v0.12.5/nvim-linux-arm64.appimage
+	sha256sums_arm64 = 4ba6c8f5df71e414367b4778ac4e0744f57b0a5dbefc2eccdc55caf0a32f766a
 
 pkgname = neovim-app
 ---
@@ -10169,7 +10181,7 @@ pkgname = neovim-deb
 ---
 pkgbase = neovim-git
 	gives = neovim
-	pkgver = 0.12.4
+	pkgver = 0.12.5
 	pkgdesc = Vim fork maintained by the community
 	url = https://neovim.io/
 	arch = any
@@ -10203,7 +10215,7 @@ pkgbase = neovim-git
 pkgname = neovim-git
 ---
 pkgbase = neovim
-	pkgver = 0.12.4
+	pkgver = 0.12.5
 	pkgdesc = Neovim is a vim fork maintained by the community
 	url = https://neovim.io/
 	arch = any
@@ -10225,8 +10237,8 @@ pkgbase = neovim
 	replaces = neovim-runtime
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: neovim
-	source = https://github.com/neovim/neovim/archive/refs/tags/v0.12.4.tar.gz
-	sha256sums = 2727da95d2b8b809bc7c71e085452e47dfe1d8aa7cfaa15c68004e23f6f0a6dd
+	source = https://github.com/neovim/neovim/archive/refs/tags/v0.12.5.tar.gz
+	sha256sums = a810c95332317bd0017e1ca07e376a8472c79075cbed00fa3737d190a8a0a45a
 
 pkgname = neovim
 ---
@@ -11696,7 +11708,7 @@ pkgname = onnxruntime-gpu-bin
 ---
 pkgbase = opencode-bin
 	gives = opencode
-	pkgver = 1.18.18
+	pkgver = 1.18.21
 	pkgdesc = AI coding agent built for the terminal
 	url = https://github.com/anomalyco/opencode
 	arch = amd64
@@ -11704,10 +11716,10 @@ pkgbase = opencode-bin
 	depends = ripgrep
 	license = MIT
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://github.com/anomalyco/opencode/releases/download/v1.18.18/opencode-linux-x64.tar.gz
-	sha256sums_amd64 = 0cddc222418b8553669905a8980c0cda7088f00da24d83d6ac76b01c9fdb2aaf
-	source_arm64 = https://github.com/anomalyco/opencode/releases/download/v1.18.18/opencode-linux-arm64.tar.gz
-	sha256sums_arm64 = dcb1b5ec5687b43f87749560021f9203f3809e0ce5ae44ff9be8ae17083fe4ba
+	source_amd64 = https://github.com/anomalyco/opencode/releases/download/v1.18.21/opencode-linux-x64.tar.gz
+	sha256sums_amd64 = d910c3ed7613bb5791a328904615d41cc25b7d3a6b470e3199ab0426a995b38a
+	source_arm64 = https://github.com/anomalyco/opencode/releases/download/v1.18.21/opencode-linux-arm64.tar.gz
+	sha256sums_arm64 = d30d2cba74617f4e7b96e25563c9572ffe453f9eae70fc0df16286813537ee72
 
 pkgname = opencode-bin
 ---
@@ -12314,15 +12326,15 @@ pkgname = parsec-deb
 ---
 pkgbase = paseo-deb
 	gives = paseo
-	pkgver = 0.3.1
+	pkgver = 0.5.0
 	pkgdesc = One interface for Claude Code, Codex, Copilot, OpenCode, and Pi agents Run agents in parallel on your own machines from desktop, mobile, web, and CLI.
 	url = https://paseo.sh
 	arch = amd64
 	replaces = paseo
 	license = AGPL-3.0
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://github.com/getpaseo/paseo/releases/download/v0.3.1/Paseo-0.3.1-amd64.deb
-	sha256sums_amd64 = ea4f07aa22d2ab4aeaa34510160dbd0a9b4e8d4fb4e2872ff56fd6d7ae5898ee
+	source_amd64 = https://github.com/getpaseo/paseo/releases/download/v0.5.0/Paseo-0.5.0-amd64.deb
+	sha256sums_amd64 = f3ce0caac2a6dc511a8474d792cdfb641dbf4307ae1d894772e9cc230946270c
 
 pkgname = paseo-deb
 ---
@@ -14993,7 +15005,7 @@ pkgbase = scx-loader
 pkgname = scx-loader
 ---
 pkgbase = scx-scheds
-	pkgver = 1.1.2
+	pkgver = 1.1.3
 	pkgdesc = sched_ext schedulers and tools
 	url = https://github.com/sched-ext/scx
 	arch = x86_64
@@ -15037,7 +15049,7 @@ pkgbase = scx-scheds
 	license = GPL-2.0-only
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: scx-scheds
-	source = git+https://github.com/sched-ext/scx#commit=b68cb3c829312b43785225bcfd445a3ecefef5c2
+	source = git+https://github.com/sched-ext/scx#commit=c8728c6b6a3fde451f0f10b95f99aad7a32a750a
 	sha256sums = SKIP
 
 pkgname = scx-scheds
@@ -16562,7 +16574,7 @@ pkgbase = tmpmail-bin
 pkgname = tmpmail-bin
 ---
 pkgbase = tmux
-	pkgver = 3.5
+	pkgver = 3.7c
 	pkgdesc = A terminal multiplexer
 	arch = any
 	makedepends = gcc
@@ -16579,8 +16591,9 @@ pkgbase = tmux
 	breaks = tmux-app
 	replaces = tmux
 	maintainer = Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>
-	source = @tmux~3.5::https://github.com/tmux/tmux/releases/download/3.5/tmux-3.5.tar.gz
-	sha256sums = 2fe01942e7e7d93f524a22f2c883822c06bc258a4d61dba4b407353d7081950f
+	repology = project: tmux
+	source = @tmux~3.7c::https://github.com/tmux/tmux/releases/download/3.7c/tmux-3.7c.tar.gz
+	sha256sums = 7c60cae9a0e25288e2e24750aafc9e8800fc7fd4555e447e1b29ee4201cfb3bf
 
 pkgname = tmux
 ---
@@ -16984,7 +16997,7 @@ pkgname = ubxi-kde-desktop-git
 ---
 pkgbase = ubxi-lomiri-desktop
 	pkgver = 0.0.1
-	pkgrel = 8
+	pkgrel = 9
 	pkgdesc = UBXI Lomiri Desktop
 	priority = required
 	arch = amd64
@@ -17034,6 +17047,7 @@ pkgbase = ubxi-lomiri-desktop
 	depends = lomiri-weather-app
 	depends = lomiri-mediaplayer-app
 	depends = lomiri-music-app
+	depends = lomiri-terminal-app
 	depends = lomiri-system-settings-cellular
 	depends = lomiri-system-settings-phone
 	depends = lomiri-keyboard-arabic
@@ -19103,7 +19117,7 @@ pkgbase = xpadneo-dkms
 pkgname = xpadneo-dkms
 ---
 pkgbase = xpra
-	pkgver = 6.5.2
+	pkgver = 6.5.3
 	pkgdesc = Persistent remote applications for X
 	url = https://xpra.org/
 	arch = any
@@ -19189,8 +19203,8 @@ pkgbase = xpra
 	license = GPL-2.0-or-later
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: xpra
-	source = https://github.com/Xpra-org/xpra/archive/refs/tags/v6.5.2.tar.gz
-	sha256sums = 8b6af68f9d26bd7fc3416aa927e308137152abf3ca4608aedb1e0ae0342c4944
+	source = https://github.com/Xpra-org/xpra/archive/refs/tags/v6.5.3.tar.gz
+	sha256sums = 87ac8dbf38fa162402ab95f4591d9906d3695e26958943f6d833dc105bce905c
 
 pkgname = xpra
 ---
@@ -19506,7 +19520,7 @@ pkgname = zed-editor-preview-bin
 ---
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 1.15.0
+	pkgver = 1.16.1
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -19517,10 +19531,10 @@ pkgbase = zed-editor-stable-bin
 	maintainer = bibelin <balian1belin@yandex.ru>
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/1.15.0/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = abf751395da92fcac783e1ec59e9812ac4c4ebb33a27f7f51059edde1aee99f9
-	source_aarch64 = https://zed.dev/api/releases/stable/1.15.0/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = ac73c9491adf06acfe17b322b0d5564e16d96cb0214d3b6a5bc72d67dd351741
+	source_x86_64 = https://zed.dev/api/releases/stable/1.16.1/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 9e611add0c40e86b150372458a2d7b78d101c54924dc7bca8db27ce20d97c661
+	source_aarch64 = https://zed.dev/api/releases/stable/1.16.1/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 384499c75d75c6aab53110dbc1d8856f6f774baaa32dc57b9963f9e29f8d007b
 
 pkgname = zed-editor-stable-bin
 ---
