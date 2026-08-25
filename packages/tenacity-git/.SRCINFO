@@ -75,7 +75,6 @@ pkgbase = tenacity-git
 	optdepends = ffmpeg: additional import/export capabilities
 	maintainer = echometerain <echometer@disroot.org>
 	maintainer = xdavius <xdavius@github.com>
-	maintainer = aKqir24 <aKqir24@github.com>
 	source = git+https://codeberg.org/tenacityteam/tenacity.git
 	source = tenacity-libnyquist::git+https://codeberg.org/tenacityteam/libnyquist.git
 

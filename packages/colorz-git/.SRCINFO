@@ -15,7 +15,6 @@ pkgbase = colorz-git
 	makedepends = python3-setuptools
 	provides = colorz
 	license = MIT
-	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/metakirby5/colorz.git
 
 pkgname = colorz-git

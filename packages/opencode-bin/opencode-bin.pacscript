@@ -1,7 +1,7 @@
 pkgname="opencode-bin"
 arch=("amd64" "arm64")
 gives="opencode"
-pkgver="1.17.3"
+pkgver="1.18.21"
 url='https://github.com/anomalyco/opencode'
 pkgdesc="AI coding agent built for the terminal"
 project=("project: opencode")
@@ -9,9 +9,9 @@ depends=("ripgrep")
 license=('MIT')
 maintainer=("Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
 source_amd64=("https://github.com/anomalyco/${gives}/releases/download/v${pkgver}/${gives}-linux-x64.tar.gz")
-sha256sums_amd64=("d4bd238a2c1ff56aca1cd3397d21a0a317f5992234517a7f8e2afbbd72010a7d")
+sha256sums_amd64=("d910c3ed7613bb5791a328904615d41cc25b7d3a6b470e3199ab0426a995b38a")
 source_arm64=("https://github.com/anomalyco/${gives}/releases/download/v${pkgver}/${gives}-linux-arm64.tar.gz")
-sha256sums_arm64=("861b8c66ced51d6d9a66ea773ce47ede663a44bd17d837b9c21acfa3468801e5")
+sha256sums_arm64=("d30d2cba74617f4e7b96e25563c9572ffe453f9eae70fc0df16286813537ee72")
 
 package() {
   install -Dm755 "${srcdir}/opencode" "${pkgdir}/usr/bin/opencode"

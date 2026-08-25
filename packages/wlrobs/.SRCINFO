@@ -10,7 +10,6 @@ pkgbase = wlrobs
 	makedepends = libwlroots-0.18
 	makedepends = ninja-build
 	conflicts = wlrobs
-	maintainer = akqir24 <aKqir24@github.com>
 	repology = project: wlrobs
 	source = https://hg.sr.ht/~scoopta/wlrobs/archive/v1.2.tar.gz
 

@@ -1,0 +1,53 @@
+.TH lxterm 1 "2004-12-19" "Debian Project"
+.SH NAME
+lxterm \- locale\-sensitive wrapper for xterm
+.SH SYNOPSIS
+.B lxterm
+[
+.I xterm-options
+]
+.SH DESCRIPTION
+.B lxterm
+is a wrapper around the
+.BR xterm (1)
+program that invokes
+.BR xterm ,
+.BR koi8rxterm (1),
+or
+.BR uxterm (1)
+as appropriate, based on the user's locale setting.
+All arguments to
+.B lxterm
+are passed to
+.B xterm
+without processing; the
+.BR \-class ,
+.BR \-k8 ,
+and
+.B \-u8
+options should not be specified because they are used by
+.B koi8rxterm
+and
+.BR uxterm .
+See the
+.B xterm
+manual page for more information on
+.IR xterm-options .
+.PP
+The
+.BR locale (1)
+utility is used to determine the character set used by the current locale.
+If the character set is UTF-8,
+.B uxterm
+is invoked; if the character set is KOI8-R,
+.B koi8rxtem
+is invoked; otherwise, \(oqplain\(cq
+.B xterm
+is invoked.
+.SH AUTHOR
+Branden Robinson
+.SH "SEE ALSO"
+.BR locale (1),
+.BR koi8rxterm (1),
+.BR uxterm (1),
+.BR xterm (1)

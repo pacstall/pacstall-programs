@@ -20,7 +20,6 @@ makedepends=(
 )
 provides=("${gives}")
 source=("https://github.com/metakirby5/colorz.git")
-maintainer=("aKqir24 <aKqir24@github.com>")
 
 build() {
   cd "${gives}"

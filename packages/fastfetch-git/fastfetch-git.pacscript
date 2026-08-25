@@ -12,7 +12,7 @@ pkgdesc="Like neofetch, but much faster because written in c"
 source=("https://github.com/LinusDierheimer/fastfetch.git")
 arch=("any")
 license=("MIT")
-pkgver="2.37.0"
+pkgver="2.65.2"
 repology=("project: ${gives}")
 checkdepends=("cmake")
 makedepends=("cmake>=3.12" "pkg-config" "python3" "libvulkan-dev" "libwayland-dev" "libxcb-randr0-dev" "libxrandr-dev" "libdrm-dev" "libdconf-dev" "zlib1g-dev" "libchafa-dev" "libxfconf-0-dev" "libdbus-1-dev" "libmagickcore-dev" "libegl-dev" "libosmesa6-dev" "ocl-icd-opencl-dev" "libpulse-dev" "libddcutil-dev" "libelf-dev")
