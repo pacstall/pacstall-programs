@@ -11,7 +11,7 @@ pkgbase = scx-scheds
 	depends = libelf1t64
 	depends = libprotobuf32t64
 	depends = zlib1g
-	makedepends = cargo>=1.94.1 | rustup
+	makedepends = cargo-1.94 | cargo>=1.94 | rustup
 	makedepends = build-essential
 	makedepends = clang
 	makedepends = llvm

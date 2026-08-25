@@ -3,6 +3,7 @@ pkgdesc="sched_ext schedulers and tools"
 repology=("project: scx-scheds")
 arch=('x86_64')
 pkgver="1.1.2"
+_min_cargo='1.94'
 url='https://github.com/sched-ext/scx'
 license=('GPL-2.0-only')
 _gitname='scx'
@@ -24,7 +25,7 @@ depends=(
   "zlib1g"
 )
 makedepends=(
-  "cargo>=1.94.1 | rustup"
+  "cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup"
   "build-essential"
   "clang"
   "llvm"
@@ -56,6 +57,7 @@ prepare() {
   export CARGO_HOME="${srcdir}/cargo-home"
   export RUSTUP_HOME="${srcdir}/rustup-home"
   export RUSTUP_TOOLCHAIN=stable
+  export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
 
   cargo fetch --locked --target "${AARCH}-unknown-linux-gnu"
 }
@@ -67,6 +69,7 @@ build() {
   export RUSTUP_HOME="${srcdir}/rustup-home"
   export CARGO_TARGET_DIR=target
   export RUSTUP_TOOLCHAIN=stable
+  export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
 
   cargo build \
     --release \

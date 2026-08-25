@@ -3275,7 +3275,7 @@ pkgbase = erlang-language-platform
 	url = https://whatsapp.github.io/erlang-language-platform
 	arch = any
 	depends = erlang
-	makedepends = cargo-1.91 | cargo>=1.91
+	makedepends = cargo-1.91 | cargo>=1.91 | rustup
 	makedepends = erlang
 	makedepends = rebar3
 	makedepends = sed
@@ -6746,7 +6746,7 @@ pkgbase = kakoune-lsp
 	arch = arm64
 	arch = armhf
 	arch = i386
-	makedepends = cargo-1.81 | cargo>=1.81
+	makedepends = cargo-1.81 | cargo>=1.81 | rustup
 	makedepends = make
 	enhances = kakoune
 	license = Unlicense
@@ -6783,7 +6783,7 @@ pkgbase = kakoune-tree-sitter
 	arch = armhf
 	arch = i386
 	depends = tree-sitter-cli
-	makedepends = cargo-1.86 | cargo>=1.86
+	makedepends = cargo-1.86 | cargo>=1.86 | rustup
 	enhances = kakoune
 	license = BSD-3-Clause
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
@@ -7301,7 +7301,7 @@ pkgbase = lact
 	depends = libdrm-amdgpu1
 	depends = libadwaita-1-0
 	depends = libdisplay-info-bin
-	makedepends = cargo>=1.97 | rustup
+	makedepends = cargo-1.97 | cargo>=1.97 | rustup
 	makedepends = make
 	makedepends = git
 	makedepends = clang
@@ -13522,7 +13522,7 @@ pkgbase = python3-uv
 	pkgdesc = Fast Python package and project manager, written in Rust
 	url = https://github.com/astral-sh/uv
 	arch = any
-	makedepends = cargo-1.95.0 | cargo>=1.95.0 | rustup
+	makedepends = cargo-1.95 | cargo>=1.95 | rustup
 	license = Apache-2.0
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
@@ -14975,7 +14975,7 @@ pkgbase = scx-loader
 	arch = x86_64
 	depends = libgcc-s1
 	depends = polkitd
-	makedepends = cargo>=1.95 | rustup
+	makedepends = cargo-1.95 | cargo>=1.95 | rustup
 	makedepends = build-essential
 	makedepends = clang
 	makedepends = llvm
@@ -15005,7 +15005,7 @@ pkgbase = scx-scheds
 	depends = libelf1t64
 	depends = libprotobuf32t64
 	depends = zlib1g
-	makedepends = cargo>=1.94.1 | rustup
+	makedepends = cargo-1.94 | cargo>=1.94 | rustup
 	makedepends = build-essential
 	makedepends = clang
 	makedepends = llvm
@@ -19388,7 +19388,7 @@ pkgbase = yazi-git
 	makedepends = build-essential
 	makedepends = libgcc-12-dev
 	makedepends = glibc-source
-	pacdeps = rust-bin
+	makedepends = cargo-1.95 | cargo>=1.95 | rustup
 	maintainer = CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>
 	source = git+https://github.com/sxyazi/yazi.git
 
