@@ -24,12 +24,8 @@ maintainer=("Alxhr0 <alxhr0@proton.me>")
 build() {
   cd "${pkgname}"
   export RUSTUP_TOOLCHAIN=stable
-  if [[ -x /usr/bin/cargo-${_cargo_ver} ]]; then
-    local cargo_path="/usr/bin/cargo-${_cargo_ver}"
-  else
-    local cargo_path="cargo"
-  fi
-  "${cargo_path}" build --locked --release -j"${NCPU}" -F systemd
+  export PATH="/usr/lib/rust-${_cargo_ver}/bin:${PATH}"
+  cargo build --locked --release -j"${NCPU}" -F systemd
 }
 
 package() {
