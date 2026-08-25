@@ -1,0 +1,20 @@
+pkgbase = chatgpt-deb
+	gives = chatgpt
+	pkgver = 26.818.41705
+	pkgdesc = ChatGPT desktop application by OpenAI
+	url = https://developers.openai.com/codex/app
+	arch = amd64
+	arch = arm64
+	breaks = chatgpt
+	breaks = chatgpt-deb
+	replaces = chatgpt
+	replaces = chatgpt-deb
+	license = custom:Proprietary
+	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
+	repology = project: chatgpt
+	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.818.41705_amd64.deb
+	sha256sums_amd64 = c927c985577bde5baccecc77f02e14b311d94e6230156621faf92579ac036a55
+	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.818.41705_arm64.deb
+	sha256sums_arm64 = 6375ad1e8a094f76791e20b9f31c888719cecfa13f0add2c4bbc809606f73481
+
+pkgname = chatgpt-deb

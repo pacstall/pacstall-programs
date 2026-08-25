@@ -1,5 +1,5 @@
 pkgbase = android-studio
-	pkgver = 2025.3.2.6-panda2
+	pkgver = 2026.1.3.7
 	pkgdesc = Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development
 	arch = amd64
 	depends = libc6-i386
@@ -15,9 +15,9 @@ pkgbase = android-studio
 	repology = project: android-studio
 	repology = repo: aur
 	repology = visiblename: android-studio
-	source = @android-studio~2025.3.2.6-panda2::https://dl.google.com/dl/android/studio/ide-zips/2025.3.2.6/android-studio-panda2-linux.tar.gz
+	source = @android-studio~2026.1.3.7::https://dl.google.com/dl/android/studio/ide-zips/2026.1.3.7/android-studio-quail3-linux.tar.gz
 	source = android-studio.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/android-studio/android-studio.desktop
-	sha256sums = 32942d8cd7688192cf3cd07bf282fb120035b9bd9b56e6f13c5540e6d39807e9
+	sha256sums = 36832122557ab73ca68dfd9bd989ddac40103ac003ca10e04c949a1f61578a67
 	sha256sums = SKIP
 
 pkgname = android-studio

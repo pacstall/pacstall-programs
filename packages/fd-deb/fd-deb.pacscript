@@ -1,0 +1,15 @@
+pkgname="fd-deb"
+gives="fd"
+pkgdesc="Simple, fast and user-friendly alternative to 'find'"
+maintainer=("Don Alfons <donnisnoni@outlook.com>")
+repology=("project: fd-find")
+arch=("amd64" "arm64" "armhf" "i386")
+pkgver="10.4.2"
+source_amd64=("https://github.com/sharkdp/fd/releases/download/v${pkgver}/fd_${pkgver}_amd64.deb")
+source_arm64=("https://github.com/sharkdp/fd/releases/download/v${pkgver}/fd_${pkgver}_arm64.deb")
+source_armhf=("https://github.com/sharkdp/fd/releases/download/v${pkgver}/fd_${pkgver}_armhf.deb")
+source_i386=("https://github.com/sharkdp/fd/releases/download/v${pkgver}/fd_${pkgver}_i686.deb")
+sha256sums_amd64=("0e44eb5fca93f09bc6f5430b90acdf44c8e069d0a903700aeb4820629337b67b")
+sha256sums_arm64=("caa91b8c0fad7ba1964a78e4932a82e3a5deb747fa40d0922a8c692b6d5e0ce1")
+sha256sums_armhf=("91f53586e22959fb6e39a523566142d11840007ab7f0c35da10a675385ad0586")
+sha256sums_i386=("9b52bb0031840592e8275efbae36d9d963f9f9e130a6f8ec897911b45c5956b3")

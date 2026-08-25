@@ -1,10 +1,10 @@
 pkgname="linux-headers-sunxi-deb"
-pkgver="6.18.32"
+pkgver="6.18.46"
 basever="6.18"
 buildver="1"
 gives="linux-headers-${basever}-sunxi64"
 source=("https://repo.mobian.org/pool/main/l/linux-${basever}-sunxi64/${gives}_${pkgver}-${buildver}_arm64.deb")
-sha256sums=("e7641493002dcda7a25ab7fcafd210d4b0cbbae4b5b9f241553745c75212ad8c")
+sha256sums=("5bafb2cf24fa2a6e32bac3ed47c604c5e2e8503b1955b321e9c04cb4e4a72d71")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Linux kernel header files built for PINE64 Sunxi devices (Mobian)"
 arch=('arm64')

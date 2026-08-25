@@ -1,0 +1,15 @@
+pkgbase = windscribe-deb
+	gives = windscribe
+	pkgver = 2.23.11
+	pkgdesc = Windscribe VPN desktop client
+	url = https://windscribe.com/
+	arch = amd64
+	arch = arm64
+	maintainer = IMYdev <omranmansour096@gmail.com>
+	repology = project: windscribe
+	source_amd64 = https://github.com/Windscribe/Desktop-App/releases/download/v2.23.11/windscribe_2.23.11_amd64.deb
+	sha256sums_amd64 = 9b22ad0369e7539d309c21a2535f46aa7d805d9e2ad6250dbbc376de87c333ee
+	source_arm64 = https://github.com/Windscribe/Desktop-App/releases/download/v2.23.11/windscribe_2.23.11_arm64.deb
+	sha256sums_arm64 = 9f6bf75d4579c2e9193235b18bc2d603426b08558df31d2a4eb47fc92335d42c
+
+pkgname = windscribe-deb

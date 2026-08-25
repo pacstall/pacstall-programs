@@ -1,0 +1,21 @@
+pkgbase = herdr-bin
+	gives = herdr
+	pkgver = 0.8.2
+	pkgdesc = Supervise multiple coding agents in one terminal
+	url = https://herdr.dev
+	arch = amd64
+	arch = arm64
+	conflicts = herdr
+	conflicts = herdr-git
+	conflicts = herdr-deb
+	conflicts = herdr-app
+	provides = herdr
+	license = AGPL-3.0-or-later
+	maintainer = Jochen Hörmann <jochen.hoermann@gmail.com>
+	repology = project: herdr
+	source_amd64 = herdr::https://github.com/ogulcancelik/herdr/releases/download/v0.8.2/herdr-linux-x86_64
+	sha256sums_amd64 = 976150a14d490c94b243ea2e1a7eb2dfb67f12e36b182db90936f6728e6aecf4
+	source_arm64 = herdr::https://github.com/ogulcancelik/herdr/releases/download/v0.8.2/herdr-linux-aarch64
+	sha256sums_arm64 = f55610658e1c2e0d2aaef730b4b2ab885f7f8ba00285ab372bfb14f2e3d5b40d
+
+pkgname = herdr-bin

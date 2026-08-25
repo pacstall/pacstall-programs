@@ -1,12 +1,12 @@
 pkgname="cloudflare-warp-deb"
 repology=("project: cloudflare-warp")
 arch=('amd64')
-pkgver="2025.10.186.0"
+pkgver="2026.4.1390.0"
 url=('https://one.one.one.one/')
 source_noble=("https://pkg.cloudflareclient.com/pool/noble/main/c/cloudflare-warp/cloudflare-warp_${pkgver}_amd64.deb")
 source_jammy=("https://pkg.cloudflareclient.com/pool/jammy/main/c/cloudflare-warp/cloudflare-warp_${pkgver}_amd64.deb")
-sha256sums_noble=("97e72c0d205744015bdb4ef9722080944d1b4b9178f260082bf06fd6bdd0f061")
-sha256sums_jammy=("d0330c5fc4d0beabad25de1d48aa60ad4590cd5fc7f612749b85a1dcc576b71d")
+sha256sums_noble=("b84c268377b061970e0328dc71f42bce7d0cda4ca9f39b84386c29f6dd004a4a")
+sha256sums_jammy=("0e44f22051bbc93a04b5820844a3008ad4b2e2ac522cdda0e3989b57e1e1a3ee")
 gives="cloudflare-warp"
 pkgdesc="Cloudflare Warp Client"
 maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")

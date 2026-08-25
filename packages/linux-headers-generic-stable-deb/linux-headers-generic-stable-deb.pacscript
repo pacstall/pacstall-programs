@@ -1,10 +1,10 @@
 pkgname="linux-headers-generic-stable-deb"
-gives="linux-headers-7.0.9-070009-generic"
-pkgver="7.0.9"
-buildver="7.0.9-070009.202605191504"
+gives="linux-headers-7.2.0-070200-generic"
+pkgver="7.2"
+buildver="7.2.0-070200.202608162350"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("f495b9c8ec2da0019540b2ef4b1adfe27883284038930643012337df0064e9c0")
-sha256sums_amd64=("77e02a084ecdce8c861a75b5b788b7485242181f1ee3a427119c2327a4e000a0")
+sha256sums_arm64=("238ccb17c4ec6951e855203d96eb0b5f3f185df666ceeda8b2e4d9c14057074e")
+sha256sums_amd64=("d11f17d04613c3192d670f56693e0297b4e697d42f91a459da4f7c243e2a4d3d")
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Ubuntu Linux stable kernel (Generic headers)"
 pacdeps=("linux-headers-stable-deb")

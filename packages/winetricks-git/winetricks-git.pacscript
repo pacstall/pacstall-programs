@@ -8,6 +8,7 @@ url='https://github.com/Winetricks/winetricks'
 source=("https://github.com/Winetricks/winetricks.git")
 sha512sums=('SKIP')
 makedepends=("make")
+depends=("cabextract")
 maintainer=("xdavius <xdavius@github.com>")
 repology=("project: winetricks")
 
