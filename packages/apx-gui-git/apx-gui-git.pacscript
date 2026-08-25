@@ -63,7 +63,7 @@ makedepends=(
 )
 pacdeps=("distrobox" "apx-git")
 breaks=("${gives}")
-pkgdesc="A frontend in GTK 4 and Libadwaita for Apx."
+pkgdesc="Frontend in GTK 4 and Libadwaita for Apx"
 maintainer=("Lobanokivan11 <lobanokivan11@gmail.com>")
 external_connection=true
 incompatible=('*:bullseye' '*:bookworm')
