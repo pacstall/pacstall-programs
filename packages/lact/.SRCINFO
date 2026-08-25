@@ -12,7 +12,7 @@ pkgbase = lact
 	depends = libdrm-amdgpu1
 	depends = libadwaita-1-0
 	depends = libdisplay-info-bin
-	makedepends = cargo>=1.97 | rustup
+	makedepends = cargo-1.97 | cargo>=1.97 | rustup
 	makedepends = make
 	makedepends = git
 	makedepends = clang

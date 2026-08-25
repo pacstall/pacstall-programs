@@ -4,7 +4,7 @@ pkgbase = erlang-language-platform
 	url = https://whatsapp.github.io/erlang-language-platform
 	arch = any
 	depends = erlang
-	makedepends = cargo-1.91 | cargo>=1.91
+	makedepends = cargo-1.91 | cargo>=1.91 | rustup
 	makedepends = erlang
 	makedepends = rebar3
 	makedepends = sed
