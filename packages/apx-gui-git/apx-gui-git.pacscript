@@ -66,7 +66,6 @@ breaks=("${gives}")
 pkgdesc="Frontend in GTK 4 and Libadwaita for Apx"
 maintainer=("Lobanokivan11 <lobanokivan11@gmail.com>")
 external_connection=true
-incompatible=('*:bullseye' '*:bookworm')
 
 prepare() {
   cd "${gives}"
