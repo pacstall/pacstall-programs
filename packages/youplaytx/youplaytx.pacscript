@@ -1,6 +1,5 @@
 pkgname="youplaytx"
 pkgver="0.4.4"
-pkgrel="1"
 pkgdesc="Full-screen, dual-pane YouTube audio player for the terminal"
 arch=("any")
 url='https://codeberg.org/ProfP303/youplaytx'
