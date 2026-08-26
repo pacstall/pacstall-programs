@@ -13,25 +13,18 @@ makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup" 'make')
 enhances=('kakoune')
 external_connection=true
 
-prepare() {
-  if type "cargo-${_min_cargo}"; then
-    sed -i "s/cargo/cargo-${_min_cargo}/g" "${srcdir}/${pkgname}-${pkgver}/Makefile"
-  fi
-}
-
 build() {
+  export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
   make -C "${pkgname}-${pkgver}" build
 }
 
 check() {
   cd "${pkgname}-${pkgver}"
-  if type "cargo-${_min_cargo}"; then
-    sh -c "cargo-${_min_cargo} test"
-  else
-    cargo test
-  fi
+  export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
+  cargo test
 }
 
 package() {
+  export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
   make -C "${pkgname}-${pkgver}" DESTDIR="${pkgdir}" PREFIX="/usr/local" install
 }
