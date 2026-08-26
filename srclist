@@ -4990,20 +4990,21 @@ pkgbase = google-earth-pro-stable-deb
 
 pkgname = google-earth-pro-stable-deb
 ---
-pkgbase = go-task-deb
-	gives = task
-	pkgver = 3.52.0
-	pkgdesc = A task runner / simpler Make alternative written in Go
-	arch = amd64
-	arch = arm64
-	maintainer = lfromanini <lfromanini@yahoo.com>
-	repology = project: task
-	source_amd64 = https://github.com/go-task/task/releases/download/v3.52.0/task_3.52.0_linux_amd64.deb
-	sha256sums_amd64 = 61f17eec53067d008228f17a53e113fda25c5ff3693f030d0eeeff8a8a4cbe3d
-	source_arm64 = https://github.com/go-task/task/releases/download/v3.52.0/task_3.52.0_linux_arm64.deb
-	sha256sums_arm64 = ce9f182274a9c0e5cb993b1cddb8fdb6f9857904138ba5181467b23ee1a4ec88
+pkgbase = goose-cli-bin
+	gives = goose
+	pkgver = 1.47.0
+	pkgdesc = Your native open source AI agent
+	url = https://goose-docs.ai
+	arch = x86_64
+	arch = aarch64
+	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: goose
+	source_x86_64 = https://github.com/aaif-goose/goose/releases/download/v1.47.0/goose-x86_64-unknown-linux-gnu.tar.gz
+	sha256sums_x86_64 = 446e014bd0412fcedbeb2dee845d6d5bfcad630944b01280fb35f6e4feb1112a
+	source_aarch64 = https://github.com/aaif-goose/goose/releases/download/v1.47.0/goose-aarch64-unknown-linux-gnu.tar.gz
+	sha256sums_aarch64 = d51c19d0eb7d97c1916d39a5ae01af2cf8a27665165b5082190ab76de64914d1
 
-pkgname = go-task-deb
+pkgname = goose-cli-bin
 ---
 pkgbase = goverlay-bin
 	gives = goverlay
@@ -10940,7 +10941,7 @@ pkgname = niri
 ---
 pkgbase = nodejs-deb
 	gives = nodejs
-	pkgver = 24.1.0
+	pkgver = 26.7.0
 	pkgdesc = JavaScript runtime built on Chrome's V8 JavaScript engine
 	url = https://nodejs.org
 	arch = amd64
@@ -10954,10 +10955,10 @@ pkgbase = nodejs-deb
 	license = MIT
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: nodejs
-	source_amd64 = https://deb.nodesource.com/node_24.x/pool/main/n/nodejs/nodejs_24.1.0-1nodesource1_amd64.deb
-	sha256sums_amd64 = e7a421d23efe71cba59671d177135f6ee2b5da76d4a9ce800d53e1098aec317a
-	source_arm64 = https://deb.nodesource.com/node_24.x/pool/main/n/nodejs/nodejs_24.1.0-1nodesource1_arm64.deb
-	sha256sums_arm64 = 678124bd7befcaa97d2f42cf3527d918c26896a72bcb846be4f9792a99ca7f21
+	source_amd64 = https://deb.nodesource.com/node_26.x/pool/main/n/nodejs/nodejs_26.7.0-1nodesource1_amd64.deb
+	sha256sums_amd64 = 3aeac1e8aa4b4dcd3aefec4425e6f683101b24ca349bfe2b491be41e10d0c721
+	source_arm64 = https://deb.nodesource.com/node_26.x/pool/main/n/nodejs/nodejs_26.7.0-1nodesource1_arm64.deb
+	sha256sums_arm64 = 1e62878536fc75982dd20b9d7d8760d4a6a7e72fbdc0461bffb22efcffad4a66
 
 pkgname = nodejs-deb
 ---
