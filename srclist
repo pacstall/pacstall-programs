@@ -9193,7 +9193,6 @@ pkgbase = megasync-deb
 	breaks = megasync-deb
 	replaces = megasync
 	incompatible = debian:sid
-	incompatible = debian:forky
 	incompatible = ubuntu:devel
 	incompatible = *:bookworm
 	incompatible = *:bullseye
