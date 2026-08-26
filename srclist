@@ -479,8 +479,6 @@ pkgbase = apx-gui-git
 	pacdeps = distrobox
 	pacdeps = apx-git
 	breaks = apx-gui
-	incompatible = *:bullseye
-	incompatible = *:bookworm
 	maintainer = Lobanokivan11 <lobanokivan11@gmail.com>
 	source = https://github.com/Vanilla-OS/apx-gui.git
 
