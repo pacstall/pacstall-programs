@@ -21,6 +21,7 @@ appmenu-registrar-backport
 apptainer-deb
 apptainer-suid-deb
 apx-git
+apx-gui-git
 aqua-ide-bin
 ardour-git
 arduino-cli-bin

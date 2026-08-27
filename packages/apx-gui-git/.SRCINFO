@@ -1,0 +1,26 @@
+pkgbase = apx-gui-git
+	gives = apx-gui
+	pkgver = 1.1.0
+	pkgdesc = Frontend in GTK 4 and Libadwaita for Apx
+	arch = any
+	depends = python3
+	depends = python3-gi
+	depends = gir1.2-gtk-4.0
+	depends = libadwaita-1-0
+	depends = gir1.2-vte-3.91
+	depends = python3-yaml
+	depends = python3-podman
+	depends = gettext
+	makedepends = build-essential
+	makedepends = meson
+	makedepends = libadwaita-1-dev
+	makedepends = desktop-file-utils
+	makedepends = pkg-config
+	makedepends = libglib2.0-dev
+	pacdeps = distrobox
+	pacdeps = apx-git
+	breaks = apx-gui
+	maintainer = Lobanokivan11 <lobanokivan11@gmail.com>
+	source = https://github.com/Vanilla-OS/apx-gui.git
+
+pkgname = apx-gui-git
