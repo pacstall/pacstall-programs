@@ -37,7 +37,6 @@ pkgbase = rust-bin
 	provides = cargo
 	provides = cargo-doc
 	maintainer = xdavius <xdavius@github.com>
-	maintainer = aKqir24 <aKqir24@github.com>
 	repology = project: rust
 	source_x86_64 = https://static.rust-lang.org/dist/rust-1.96.0-x86_64-unknown-linux-gnu.tar.xz
 	sha256sums_x86_64 = c295047583a56238ea06b43f849f4b877fa12bfd4c7103f8d9a74c94c9c4e108

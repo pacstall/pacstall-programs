@@ -1,5 +1,5 @@
 pkgbase = lact
-	pkgver = 0.9.1
+	pkgver = 0.10.0
 	pkgdesc = Linux GPU Control Application
 	url = https://github.com/ilya-zlobintsev/LACT
 	arch = x86_64
@@ -12,7 +12,7 @@ pkgbase = lact
 	depends = libdrm-amdgpu1
 	depends = libadwaita-1-0
 	depends = libdisplay-info-bin
-	makedepends = cargo>=1.93 | rustup
+	makedepends = cargo-1.97 | cargo>=1.97 | rustup
 	makedepends = make
 	makedepends = git
 	makedepends = clang
@@ -29,7 +29,7 @@ pkgbase = lact
 	license = MIT
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: lact
-	source = https://github.com/ilya-zlobintsev/LACT.git#commit=6a7d0960eed5f05cab7b6f1a01d87dbf31d425d1
+	source = https://github.com/ilya-zlobintsev/LACT.git#commit=2aa6d0d770546fb36dd8714801c373060e4dd912
 	sha256sums = SKIP
 
 pkgname = lact

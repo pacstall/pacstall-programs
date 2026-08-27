@@ -5,7 +5,7 @@ pkgbase = scx-loader
 	arch = x86_64
 	depends = libgcc-s1
 	depends = polkitd
-	makedepends = cargo>=1.95 | rustup
+	makedepends = cargo-1.95 | cargo>=1.95 | rustup
 	makedepends = build-essential
 	makedepends = clang
 	makedepends = llvm

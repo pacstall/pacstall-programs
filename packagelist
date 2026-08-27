@@ -70,6 +70,7 @@ carla-git
 cava
 cbindgen
 celeste-bin
+chatgpt-deb
 cheat
 chezmoi-deb
 chwp-deb
@@ -82,6 +83,7 @@ cloudflare-warp-deb
 cmake-data-deb
 cmake-deb
 cmatrix
+cnijfilter2
 colorz-git
 conky-manager-zcot-git
 coreutils-single
@@ -217,6 +219,7 @@ git-butler-deb
 git-credential-manager-core-deb
 git-delta-deb
 git-extras-git
+git-git
 git-review
 gitblade-deb
 gitfiend-deb
@@ -243,6 +246,7 @@ google-chrome-beta-deb
 google-chrome-deb
 google-chrome-unstable-deb
 google-earth-pro-stable-deb
+goose-cli-bin
 goverlay
 goverlay-bin
 gpu-screen-recorder
@@ -266,6 +270,7 @@ hamclock-huge
 harmonoid-deb
 hayase-deb
 headset-deb
+helium-browser-bin
 helix
 hello
 hello-rhino-bin
@@ -475,6 +480,7 @@ neofetch
 neovide-bin
 neovim
 neovim-app
+neovim-deb
 neovim-git
 nerd-fonts:pkgbase
 nerd-fonts:ttf-iawriter-nerd
@@ -672,6 +678,7 @@ python3-moddb
 python3-nuitka
 python3-pypresence
 python3-pywal16
+python3-pywalfox
 python3-sphinx-hawkmoth
 python3-uv
 python3-vkbasalt-cli
@@ -757,6 +764,7 @@ sidequest-bin
 signal-desktop-beta-deb
 signal-desktop-deb
 simplex-desktop-app
+singularity-desktop-git
 slack-deb
 sleek-deb
 sleepy-launcher-bin
@@ -859,6 +867,7 @@ vega-strike-git
 ventoy-bin
 veracrypt-deb
 vesktop-deb
+vetro-git
 vinegar
 vinegar-git
 viper4linux
@@ -937,6 +946,7 @@ yandex-browser-beta-deb
 yandex-browser-corporate-deb
 yandex-browser-stable-deb
 yandex-disk-deb
+yazi-git
 yle-dl-git
 youtube-dl-git
 youtube-music-deb

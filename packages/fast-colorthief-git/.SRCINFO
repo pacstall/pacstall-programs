@@ -18,7 +18,6 @@ pkgbase = fast-colorthief-git
 	conflicts = fast-colorthief
 	conflicts = fast-colorthief-git
 	provides = fast-colorthief
-	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/bedapisl/fast-colorthief.git
 
 pkgname = fast-colorthief-git

@@ -9,7 +9,7 @@ maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 source=("https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/${pkgver}.tar.gz")
 sha256sums=('60e31c9fa6bb7578640b7f2db07e19108dbf35267d3959bd18786463eb7b431c')
 _min_cargo='1.91'
-makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo}" 'erlang' 'rebar3' 'sed')
+makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup" 'erlang' 'rebar3' 'sed')
 depends=('erlang')
 pacdeps=('erlfmt' 'eqwalizer')
 external_connection=true
@@ -28,11 +28,8 @@ prepare() {
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
-  if type "cargo-${_min_cargo}"; then
-    "cargo-${_min_cargo}" build -j"${NCPU}" --release
-  else
-    cargo build -j"${NCPU}" --release
-  fi
+  export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
+  cargo build -j"${NCPU}" --release
 }
 
 package() {

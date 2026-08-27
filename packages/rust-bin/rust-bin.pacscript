@@ -15,7 +15,7 @@ sha256sums_i686=("9f1f65f624e4c5e41b45be61d1c7e6cd595b77001f66cb9b830ac0e502d2d3
 provides=(rustc libstd-rust-1.80 libstd-rust-dev libstd-rust-dev-windows libstd-rust-dev-wasm32 rust-gdb rust-lldb rust-llvm rust-doc rust-src rust-clippy rustfmt rust-all cargo cargo-doc)
 replaces=("${provides[@]}")
 
-maintainer=("xdavius <xdavius@github.com>" "aKqir24 <aKqir24@github.com>")
+maintainer=("xdavius <xdavius@github.com>")
 
 package() {
   cd "rust-${pkgver}-${AARCH}-unknown-linux-gnu"

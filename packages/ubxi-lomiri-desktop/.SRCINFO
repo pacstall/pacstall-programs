@@ -1,6 +1,6 @@
 pkgbase = ubxi-lomiri-desktop
 	pkgver = 0.0.1
-	pkgrel = 8
+	pkgrel = 9
 	pkgdesc = UBXI Lomiri Desktop
 	priority = required
 	arch = amd64
@@ -50,6 +50,7 @@ pkgbase = ubxi-lomiri-desktop
 	depends = lomiri-weather-app
 	depends = lomiri-mediaplayer-app
 	depends = lomiri-music-app
+	depends = lomiri-terminal-app
 	depends = lomiri-system-settings-cellular
 	depends = lomiri-system-settings-phone
 	depends = lomiri-keyboard-arabic

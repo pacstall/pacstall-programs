@@ -1,19 +1,19 @@
 pkgbase = kakoune-lsp
-	pkgver = 21.0.1
+	pkgver = 21.0.2
 	pkgdesc = Kakoune Language Server Protocol Client
 	url = https://lists.sr.ht/~krobelus/kakoune
 	arch = amd64
 	arch = arm64
 	arch = armhf
 	arch = i386
-	makedepends = cargo-1.81 | cargo>=1.81
+	makedepends = cargo-1.81 | cargo>=1.81 | rustup
 	makedepends = make
 	enhances = kakoune
 	license = Unlicense
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: kak-lsp
-	source = https://github.com/kakoune-lsp/kakoune-lsp/archive/refs/tags/v21.0.1.tar.gz
-	sha256sums = 2b56a1084b5dacfaab9dad50e6ae7b0b94470d5a9c0718700a949162fa04ae4b
+	source = https://github.com/kakoune-lsp/kakoune-lsp/archive/refs/tags/v21.0.2.tar.gz
+	sha256sums = 34b4718af5ee39a05a1a176a25cdde4333d2de548e84c148389552e893bc7cc0
 
 pkgname = kakoune-lsp

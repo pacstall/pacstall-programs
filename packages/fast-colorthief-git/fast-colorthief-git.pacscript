@@ -21,7 +21,6 @@ makedepends=(
 conflicts=("${gives}" "${pkgname}")
 provides=("${gives}")
 source=("https://github.com/bedapisl/fast-colorthief.git")
-maintainer=("aKqir24 <aKqir24@github.com>")
 external_connection=true
 
 build() {

@@ -1,5 +1,5 @@
 pkgname="libation-deb"
-pkgver="13.7.4"
+pkgver="13.7.10"
 gives="libation"
 breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
 pkgdesc="Free and open source app to manage your Audible books"
