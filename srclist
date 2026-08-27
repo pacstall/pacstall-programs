@@ -975,7 +975,7 @@ pkgname = batsignal
 ---
 pkgbase = bazecor-app
 	gives = bazecor
-	pkgver = 1.9.2
+	pkgver = 1.10.0
 	pkgdesc = Graphical configurator for the Dygma Raise
 	url = https://github.com/Dygmalab/Bazecor
 	arch = amd64
@@ -987,9 +987,9 @@ pkgbase = bazecor-app
 	breaks = bazecor-git
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: bazecor
-	source = https://github.com/Dygmalab/Bazecor/releases/download/v1.9.2/Bazecor-1.9.2-x64.AppImage
+	source = https://github.com/Dygmalab/Bazecor/releases/download/v1.10.0/Bazecor-1.10.0-x64.AppImage
 	source = https://raw.githubusercontent.com/Elsie19/images/master/bazecor.png
-	sha256sums = f5e9b54bbffed9c58962a3844a0195fe4247964f9aec039a87289b37734326ff
+	sha256sums = b5d92e67b6087477ad74b8b911493d1ccbd6d265b43aab1bdbcc6c7a2b1eb364
 	sha256sums = SKIP
 
 pkgname = bazecor-app
