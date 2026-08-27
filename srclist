@@ -5005,6 +5005,22 @@ pkgbase = google-earth-pro-stable-deb
 
 pkgname = google-earth-pro-stable-deb
 ---
+pkgbase = goose-cli-bin
+	gives = goose
+	pkgver = 1.47.0
+	pkgdesc = Your native open source AI agent
+	url = https://goose-docs.ai
+	arch = x86_64
+	arch = aarch64
+	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: goose
+	source_x86_64 = https://github.com/aaif-goose/goose/releases/download/v1.47.0/goose-x86_64-unknown-linux-gnu.tar.gz
+	sha256sums_x86_64 = 446e014bd0412fcedbeb2dee845d6d5bfcad630944b01280fb35f6e4feb1112a
+	source_aarch64 = https://github.com/aaif-goose/goose/releases/download/v1.47.0/goose-aarch64-unknown-linux-gnu.tar.gz
+	sha256sums_aarch64 = d51c19d0eb7d97c1916d39a5ae01af2cf8a27665165b5082190ab76de64914d1
+
+pkgname = goose-cli-bin
+---
 pkgbase = goverlay-bin
 	gives = goverlay
 	pkgver = 1.2.0
@@ -10940,7 +10956,7 @@ pkgname = niri
 ---
 pkgbase = nodejs-deb
 	gives = nodejs
-	pkgver = 24.1.0
+	pkgver = 26.7.0
 	pkgdesc = JavaScript runtime built on Chrome's V8 JavaScript engine
 	url = https://nodejs.org
 	arch = amd64
@@ -10954,10 +10970,10 @@ pkgbase = nodejs-deb
 	license = MIT
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: nodejs
-	source_amd64 = https://deb.nodesource.com/node_24.x/pool/main/n/nodejs/nodejs_24.1.0-1nodesource1_amd64.deb
-	sha256sums_amd64 = e7a421d23efe71cba59671d177135f6ee2b5da76d4a9ce800d53e1098aec317a
-	source_arm64 = https://deb.nodesource.com/node_24.x/pool/main/n/nodejs/nodejs_24.1.0-1nodesource1_arm64.deb
-	sha256sums_arm64 = 678124bd7befcaa97d2f42cf3527d918c26896a72bcb846be4f9792a99ca7f21
+	source_amd64 = https://deb.nodesource.com/node_26.x/pool/main/n/nodejs/nodejs_26.7.0-1nodesource1_amd64.deb
+	sha256sums_amd64 = 3aeac1e8aa4b4dcd3aefec4425e6f683101b24ca349bfe2b491be41e10d0c721
+	source_arm64 = https://deb.nodesource.com/node_26.x/pool/main/n/nodejs/nodejs_26.7.0-1nodesource1_arm64.deb
+	sha256sums_arm64 = 1e62878536fc75982dd20b9d7d8760d4a6a7e72fbdc0461bffb22efcffad4a66
 
 pkgname = nodejs-deb
 ---
@@ -17853,7 +17869,7 @@ pkgname = vkroots-git
 ---
 pkgbase = vscode-deb
 	gives = code
-	pkgver = 1.134.0
+	pkgver = 1.135.0
 	pkgdesc = lightweight but powerful source code editor
 	url = https://code.visualstudio.com/
 	arch = amd64
@@ -17862,12 +17878,12 @@ pkgbase = vscode-deb
 	makedepends = gpg
 	maintainer = Diegiwg <diegiwg@gmail.com>
 	repology = project: vscode
-	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.134.0/linux-deb-x64/stable
-	sha256sums_amd64 = dcd3a2f52d53df079cd389662ff1fdbeb629938331d3a63655fed929f8d49f19
-	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.134.0/linux-deb-arm64/stable
-	sha256sums_arm64 = b30f5bda4855231681cc7fe22d4a59e7dbee2be170b0e4fb04c7e83b9f9affe5
-	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.134.0/linux-deb-armhf/stable
-	sha256sums_armhf = 01460717d4f4c7b3109cc06b8df5ba579e98ea373751cc0ed4ae7928f26fad89
+	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.135.0/linux-deb-x64/stable
+	sha256sums_amd64 = e8101720f0a48f8e6ae5a4112d10ffea5f13d298e7d0a7012b4e36eebc53022c
+	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.135.0/linux-deb-arm64/stable
+	sha256sums_arm64 = 20f1717805ed723c8846e14df3280c6132a663ff71e32068aaa70f3e4c8b1ca4
+	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.135.0/linux-deb-armhf/stable
+	sha256sums_armhf = 78e64befb925f85a34239db6e9c9c7c28d368df2ad42e7ff6b2f2876c394a22a
 
 pkgname = vscode-deb
 ---
