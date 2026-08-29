@@ -4,6 +4,6 @@ pkgver="0.25.3"
 source=("https://github.com/FreeTubeApp/FreeTube/releases/download/v${pkgver}-beta/${gives}_${pkgver}_beta_amd64.deb")
 pkgdesc="Open Source YouTube app for privacy"
 repology=("project: freetube")
-sha256sums=("745d46bddb5a45e704fe2a75c31fb8fc23a71b5564a9fc3eb7acf9f8ddb85a30")
+sha256sums=("3a75dc4ef65edf184222c3389855be4699d04cce321e9695bb2989a50db2ba5d")
 arch=('amd64')
 maintainer=("Archisman Panigrahi <apandada1ATgmailDotcom>")
