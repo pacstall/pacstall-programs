@@ -23,7 +23,6 @@ pkgbase = git-git
 	breaks = git
 	replaces = git
 	provides = git
-	maintainer = CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>
 	source = git+https://github.com/git/git.git
 
 pkgname = git-git

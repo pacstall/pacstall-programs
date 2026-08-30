@@ -2,7 +2,6 @@ pkgname="yazi-git"
 gives="yazi"
 pkgdesc="Blazing fast terminal file manager written in Rust"
 url='https://yazi-rs.github.io'
-maintainer="CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>"
 pkgver="0.r0"
 arch=("amd64" "arm64")
 source=("git+https://github.com/sxyazi/yazi.git")

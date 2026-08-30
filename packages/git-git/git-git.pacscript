@@ -4,7 +4,6 @@ replaces=("git")
 breaks=("git")
 pkgdesc="Fast, scalable, distributed revision control system"
 url='https://git-scm.com/'
-maintainer="CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>"
 pkgver="2.55.0"
 arch=("any")
 source=("git+https://github.com/git/git.git")
