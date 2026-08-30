@@ -7361,7 +7361,7 @@ pkgbase = kxstudio-repos-deb
 pkgname = kxstudio-repos-deb
 ---
 pkgbase = lact
-	pkgver = 0.10.0
+	pkgver = 0.10.1
 	pkgdesc = Linux GPU Control Application
 	url = https://github.com/ilya-zlobintsev/LACT
 	arch = x86_64
@@ -7391,7 +7391,7 @@ pkgbase = lact
 	license = MIT
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: lact
-	source = https://github.com/ilya-zlobintsev/LACT.git#commit=2aa6d0d770546fb36dd8714801c373060e4dd912
+	source = https://github.com/ilya-zlobintsev/LACT.git#commit=30dc182391e2c002f6f7c988e76aa477a4772aa2
 	sha256sums = SKIP
 
 pkgname = lact
