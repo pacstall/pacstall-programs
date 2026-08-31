@@ -16,15 +16,3 @@ sha256sum_arm64=("777bfa16b2ef6a78ad36f1e0c28b5dd4adda1dc0cc9aea32b6fba8e1c5a41d
 package() {
   install -Dm755 llama-swap -t "${pkgdir}/usr/bin"
 }
-
-post_install() {
-  cat << EOF
-
-llama-swap ${pkgver} installed!
-
-If haven't already installed llama.cpp, you can use the following command:
-
-curl -LsSf https://llama.app/install.sh | sh
-
-EOF
-}
