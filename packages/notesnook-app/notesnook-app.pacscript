@@ -1,17 +1,17 @@
 pkgname="notesnook-app"
 repology=("project: notesnook")
 arch=('amd64' 'arm64')
-pkgver="3.3.23"
+pkgver="3.4.7"
 url='https://notesnook.com'
 gives="notesnook"
 source=("https://raw.githubusercontent.com/streetwriters/notesnook/refs/tags/v${pkgver}/resources/icon.png")
 source_amd64=("${gives}-${pkgver}.AppImage::https://github.com/streetwriters/notesnook/releases/download/v${pkgver}/notesnook_linux_x86_64.AppImage")
 source_arm64=("${gives}-${pkgver}.AppImage::https://github.com/streetwriters/notesnook/releases/download/v${pkgver}/notesnook_linux_arm64.AppImage")
 sha256sums=('SKIP')
-sha256sums_amd64=("c49738761f754dcc6f07cdfae1b557a80ba9c97c599a928cceca1ee399869a12")
-sha256sums_arm64=("337b01516b68781e3a25f129d6841ee136e9c29aa0a31b50df5dd16e64b46864")
+sha256sums_amd64=("37035f853b9f276e70a9d66e45757bdda54e1e376a18f4388d974c5da5bedef3")
+sha256sums_arm64=("7408cb3a25afa33268cfc3bf7de2ab338fea13d5d2f3720d038202e20599b60d")
 pkgdesc="End-to-end encrypted note taking alternative to Evernote"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
+maintainer=("Tai Lam <taivlam-aur-mpr.tinsmith796@silomails.com>")
 license=('GPL-3.0-only')
 
 prepare() {
