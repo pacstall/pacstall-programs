@@ -1,0 +1,18 @@
+pkgbase = llama-swap-bin
+	gives = llama-swap
+	pkgver = 251
+	pkgdesc = Reliable model swapping for any local OpenAI/Anthropic compatible server
+	url = https://github.com/mostlygeek/llama-swap/
+	arch = amd64
+	arch = arm64
+	replaces = llama-swap
+	replaces = llama-swap-bin
+	replaces = llama-swap-deb
+	replaces = llama-swap-git
+	license = MIT
+	maintainer = Tobias Heinlein <niontrix@mailbox.org>
+	repology = project: llama-swap
+	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v251/llama-swap_251_linux_amd64.tar.gz
+	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v251/llama-swap_251_linux_arm64.tar.gz
+
+pkgname = llama-swap-bin
