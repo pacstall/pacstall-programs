@@ -1840,9 +1840,7 @@ pkgbase = cmake-data-deb
 	repology = project: cmake
 	repology = repo: debian_unstable
 	source_jammy = http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake-data_3.25.1-1ubuntu1_all.deb
-	source_bullseye = http://ftp.debian.org/debian/pool/main/c/cmake/cmake-data_3.25.1-1~bpo11+1_all.deb
 	sha256sums_jammy = 8633c1235e841faa70eb1c58f451338a73048dbddb4d97c482cca92dde61c567
-	sha256sums_bullseye = 6c7c8d91c045ccf44c9cc7dc1f05d8431707df4651bf18b4a3ee34847bc205f3
 
 pkgname = cmake-data-deb
 ---
@@ -1858,9 +1856,7 @@ pkgbase = cmake-deb
 	repology = project: cmake
 	repology = repo: debian_unstable
 	source_jammy = http://archive.ubuntu.com/ubuntu/pool/main/c/cmake/cmake_3.25.1-1ubuntu1_amd64.deb
-	source_bullseye = http://ftp.debian.org/debian/pool/main/c/cmake/cmake_3.25.1-1~bpo11+1_amd64.deb
 	sha256sums_jammy = a8c139c0cf500e47a521930f9e0cf5a814fbed60145a29bb37e7f7ae03a27ca4
-	sha256sums_bullseye = 5561f20944ef4d9d3ea496bc92dff5b1d5adea3cfee1fa302a7298bedeb03f9e
 
 pkgname = cmake-deb
 ---
@@ -4181,10 +4177,8 @@ pkgbase = fsearch-deb
 	sha256sums = 40d5453743c8bca6e15a80b6d4d035594d6629048c98b07c1d30d61a182eebd8
 	pacdeps_jammy = libicu-deb
 	source_jammy = https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_12/amd64/fsearch_0.2.3-1+3.1_amd64.deb
-	source_bullseye = https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_11/amd64/fsearch_0.2.3-1+3.1_amd64.deb
 	source_bookworm = https://download.opensuse.org/repositories/home:/cboxdoerfer/Debian_12/amd64/fsearch_0.2.3-1+3.1_amd64.deb
 	sha256sums_jammy = 2f8b3b9a0153499b161866df64e081777f9085c789911817178986d96c220fcb
-	sha256sums_bullseye = 1ecaacb7e1f2b3eab3c15c7307bab0cbea9c0a8aa32ffc195e0d354a86d3a0f6
 	sha256sums_bookworm = 2f8b3b9a0153499b161866df64e081777f9085c789911817178986d96c220fcb
 
 pkgname = fsearch-deb
@@ -5152,12 +5146,6 @@ pkgbase = gpu-screen-recorder
 	depends_noble = libavfilter9
 	depends_noble = libswresample4
 	depends_noble = libpipewire-0.3-0t64
-	depends_bullseye = libavcodec58
-	depends_bullseye = libavutil56
-	depends_bullseye = libavformat58
-	depends_bullseye = libavfilter7
-	depends_bullseye = libswresample3
-	depends_bullseye = libpipewire-0.3-0
 	depends_bookworm = libavcodec59
 	depends_bookworm = libavutil57
 	depends_bookworm = libavformat59
@@ -9405,11 +9393,9 @@ pkgbase = megasync-deb
 	repology = project: megasync
 	source_jammy = https://mega.nz/linux/repo/xUbuntu_22.04/amd64/megasync_5.2.1-4.1_amd64.deb
 	source_noble = https://mega.nz/linux/repo/xUbuntu_24.04/amd64/megasync_5.2.1-2.1_amd64.deb
-	source_bullseye = https://mega.nz/linux/repo/Debian_11/amd64/megasync_5.2.1-4.1_amd64.deb
 	source_bookworm = https://mega.nz/linux/repo/Debian_12/amd64/megasync_5.2.1-4.1_amd64.deb
 	sha256sums_jammy = 5b8ce6c03a0a933832451eab2425519e7fa8480f58b5a0c6d9457476ec0e9aa1
 	sha256sums_noble = 3e1f9816c449dede48a095d7cdcba733be26739fb1e6cbc1a43a47a372654865
-	sha256sums_bullseye = 304ae53fbdbbfa5fd290c97129e93df9ef0ea5610b94a68e8a4e6d8cee8fd1b3
 	sha256sums_bookworm = 5a63deac549fd09daeca479fd0bbbf0cb329dc9bef1245a334a1a75535548635
 
 pkgname = megasync-deb
@@ -17831,11 +17817,9 @@ pkgbase = virtualbox-deb
 	repology = project: virtualbox
 	source_jammy = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Ubuntu~jammy_amd64.deb
 	source_noble = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Ubuntu~noble_amd64.deb
-	source_bullseye = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Debian~bullseye_amd64.deb
 	source_bookworm = https://download.virtualbox.org/virtualbox/7.1.6/virtualbox-7.1_7.1.6-167084~Debian~bookworm_amd64.deb
 	sha256sums_jammy = 0094042f659eac5f4f82bd2f1afa00ed6f0c5cec3b43a873cc4b61f43e4fb8f0
 	sha256sums_noble = b1e8406c141ff40221cebe5a99224ec74f1960d1491986d3bb1300a99c4790a1
-	sha256sums_bullseye = 0ea7dc51de62e9ce65862ea72635eeefcdf21016fe54444d3f956f0119ac0ac0
 	sha256sums_bookworm = e87626c95d3162939c397a003f0d2772419cfe138e68ea1074430fbca8c6c13f
 
 pkgname = virtualbox-deb
