@@ -5,7 +5,6 @@ ubuntu:
   stonking/26.10
   devel
 debian:
-  bullseye/11
   bookworm/12
   trixie/13
   forky/14
