@@ -1,6 +1,7 @@
 pkgbase = tutanota-app
 	gives = tutanota
 	pkgver = 357.260901.0
+	pkgrel = 2
 	pkgdesc = Tutanota is the world's most secure email service, easy to use and private by design.
 	arch = amd64
 	breaks = tutanota-deb
