@@ -1,6 +1,6 @@
 pkgbase = tutanota-app
 	gives = tutanota
-	pkgver = 218.240227.0
+	pkgver = 357.260901.0
 	pkgdesc = Tutanota is the world's most secure email service, easy to use and private by design.
 	arch = amd64
 	breaks = tutanota-deb
@@ -8,14 +8,11 @@ pkgbase = tutanota-app
 	breaks = tutanota-git
 	breaks = tutanota
 	replaces = tutanota
-	maintainer = Paul Cosma (saenai) <paul.cosma97@gmail.com>
+	maintainer = Tai Lam <taivlam-aur-mpr.tinsmith796@silomails.com>
 	repology = project: tutanota
-	repology = repo: homebrew_casks
-	source = https://mail.tutanota.com/desktop/tutanota-desktop-linux.AppImage
-	source = tutanota.desktop
-	source = tutanota.png::https://icons-for-free.com/download-icon-super+tiny+icons+tutanota-1324450784669328293_256.png
-	sha256sums = 2acd38e99da3c9c39beb7ab7835ea726b1e9687d05247f9cf9919395d7c79652
-	sha256sums = SKIP
-	sha256sums = e76f83c33cab7c3b1e7d4c827927e0c883bc7f41cb2e2f3ce7d493cd96970d76
+	source = https://github.com/tutao/tutanota/releases/download/tutanota-desktop-release-357.260901.0/tutanota-desktop-linux.AppImage
+	source = tutanota.png::https://raw.githubusercontent.com/tutao/tutanota/refs/heads/master/resources/desktop-icons/icon/512.png
+	sha256sums = ba605c7dd7f33eb90939cf6c3fce05417dd2b68f69337d86499843aa743f019e
+	sha256sums = d4bd07956e4b7e99d21e382dbdfdbbcaf9b26dfc270546444f41e54556f7e18e
 
 pkgname = tutanota-app
