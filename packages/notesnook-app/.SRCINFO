@@ -1,6 +1,7 @@
 pkgbase = notesnook-app
 	gives = notesnook
 	pkgver = 3.4.7
+	pkgrel = 2
 	pkgdesc = End-to-end encrypted note taking alternative to Evernote
 	url = https://notesnook.com
 	arch = amd64

@@ -2,6 +2,7 @@ pkgname="notesnook-app"
 repology=("project: notesnook")
 arch=('amd64' 'arm64')
 pkgver="3.4.7"
+pkgrel=2
 url='https://notesnook.com'
 gives="notesnook"
 source=("https://raw.githubusercontent.com/streetwriters/notesnook/refs/tags/v${pkgver}/resources/icon.png")
@@ -23,7 +24,7 @@ package() {
   install -Dm644 "icon.png" "${pkgdir}/usr/share/pixmaps/${gives}.png"
 
   cat << EOF > "${pkgdir}/usr/share/applications/${gives}.desktop"
-  [Desktop Entry]
+[Desktop Entry]
 Type=Application
 Name=Notesnook
 Icon=notesnook
