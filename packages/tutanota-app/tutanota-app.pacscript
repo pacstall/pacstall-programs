@@ -4,6 +4,7 @@ gives="tutanota"
 pkgname="${gives}-app"
 arch=("amd64")
 pkgver="357.260901.0"
+pkgrel=2
 pkgdesc="Tutanota is the world's most secure email service, easy to use and private by design."
 source=(
   "https://github.com/tutao/tutanota/releases/download/tutanota-desktop-release-${pkgver}/tutanota-desktop-linux.AppImage"
@@ -17,22 +18,18 @@ sha256sums=(
 )
 repology=("project: tutanota")
 
-__created_desktop_file="yes"
-
 package() {
   cd "${srcdir}"
   # Install AppImage
   install -Dm755 "tutanota-desktop-linux.AppImage" "${pkgdir}/usr/bin/${gives}"
 
-  if ask "\nTutanota creates its own desktop file during the first launch.\nDo you want to create a desktop file anyway?" N; then
+  # Install desktop application icon
+  install -Dm644 "${srcdir}/${gives}.png" "${pkgdir}/usr/share/pixmaps/${gives}.png"
 
-    # Install desktop icon
-    install -Dm644 "${srcdir}/${gives}.png" "${pkgdir}/usr/share/pixmaps/${gives}.png"
+  # Install .desktop file
+  mkdir -p "${pkgdir}/usr/share/applications"
 
-    # Install .desktop file
-    mkdir -p "${pkgdir}/usr/share/applications"
-
-    cat << EOF > "${pkgdir}/usr/share/applications/${gives}.desktop"
+  cat << EOF > "${pkgdir}/usr/share/applications/${gives}.desktop"
 [Desktop Entry]
 Version=1.0
 Name=Tutanota
@@ -47,24 +44,6 @@ StartupWMClass=Tutanota
 Categories=Email;Network;Office;
 SingleMainWindow=true
 EOF
-
-  else
-    __created_desktop_file="no"
-  fi
-}
-
-post_install() {
-  # Return early if nothing else to do
-  if [[ ${__created_desktop_file} == "yes" ]]; then
-    return 0
-  fi
-
-  if ask "Do you want to run Tutanota now to set the desktop file?" Y; then
-    echo 'Important!: Remember to click "Yes" when Tutanota prompts you to integrate with the desktop environment.'
-    nohup tutanota &
-  else
-    echo "Important!: Remember to run $($ tutanota) to open Tutanota and create the desktop file."
-  fi
 }
 
 post_remove() {
