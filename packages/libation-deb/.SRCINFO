@@ -11,6 +11,8 @@ pkgbase = libation-deb
 	maintainer = Tobias Heinlein <nionxtrix@mailbox.org>
 	repology = project: libation
 	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v14.0.1/Libation.14.0.1-linux-chardonnay-arm64.deb
+	sha256sums_arm64 = a377213bd9c36307863a3fa893e5dbda448890bee6947dd2e7d3dfe54e27788e
 	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v14.0.1/Libation.14.0.1-linux-chardonnay-amd64.deb
+	sha256sums_amd64 = ac0784183317c3cbcabc0cb8a664adf9dcb407501292b1ac97afa145d976aeb0
 
 pkgname = libation-deb
