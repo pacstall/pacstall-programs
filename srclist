@@ -13702,6 +13702,19 @@ pkgbase = python3-zombie-imp
 
 pkgname = python3-zombie-imp
 ---
+pkgbase = qbe
+	pkgver = 1.3
+	pkgdesc = Compiler backend that aims to provide 70% of the performance of industrial optimizing compilers in 10% of the code
+	url = https://c9x.me/compile/
+	arch = any
+	makedepends = gcc | clang
+	maintainer = Elsie19 <elsie19@pm.me>
+	repology = project: qbe
+	source = https://c9x.me/compile/release/qbe-1.3.tar.xz
+	sha256sums = d587905d620dc5e1d2bfa7c2cc642b9b837aa89a3188c6e37b53d756cf66e320
+
+pkgname = qbe
+---
 pkgbase = qogir-gtk-theme-bin
 	gives = qogir-gtk-theme
 	pkgver = 2025-08-17
