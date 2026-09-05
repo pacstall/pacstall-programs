@@ -7698,7 +7698,7 @@ pkgname = libaquamarine-bin
 ---
 pkgbase = libation-deb
 	gives = libation
-	pkgver = 14.0.0
+	pkgver = 14.0.1
 	pkgdesc = Free and open source app to manage your Audible books
 	arch = arm64
 	arch = amd64
@@ -7708,8 +7708,10 @@ pkgbase = libation-deb
 	breaks = libation-app
 	maintainer = Tobias Heinlein <nionxtrix@mailbox.org>
 	repology = project: libation
-	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v14.0.0/Libation.14.0.0-linux-chardonnay-arm64.deb
-	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v14.0.0/Libation.14.0.0-linux-chardonnay-amd64.deb
+	source_arm64 = https://github.com/rmcrackan/Libation/releases/download/v14.0.1/Libation.14.0.1-linux-chardonnay-arm64.deb
+	sha256sums_arm64 = a377213bd9c36307863a3fa893e5dbda448890bee6947dd2e7d3dfe54e27788e
+	source_amd64 = https://github.com/rmcrackan/Libation/releases/download/v14.0.1/Libation.14.0.1-linux-chardonnay-amd64.deb
+	sha256sums_amd64 = ac0784183317c3cbcabc0cb8a664adf9dcb407501292b1ac97afa145d976aeb0
 
 pkgname = libation-deb
 ---
@@ -8780,7 +8782,7 @@ pkgname = lix-git
 ---
 pkgbase = llama-swap-bin
 	gives = llama-swap
-	pkgver = 251
+	pkgver = 252
 	pkgdesc = Reliable model swapping for any local OpenAI/Anthropic compatible server
 	url = https://github.com/mostlygeek/llama-swap/
 	arch = amd64
@@ -8792,8 +8794,8 @@ pkgbase = llama-swap-bin
 	license = MIT
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	repology = project: llama-swap
-	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v251/llama-swap_251_linux_amd64.tar.gz
-	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v251/llama-swap_251_linux_arm64.tar.gz
+	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v252/llama-swap_252_linux_amd64.tar.gz
+	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v252/llama-swap_252_linux_arm64.tar.gz
 
 pkgname = llama-swap-bin
 ---
