@@ -9636,6 +9636,7 @@ pkgbase = mesa-kisak-fresh
 	maintainer = xdavius <xdavius@github.com>
 	repology = project: mesa
 	source = https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa/+sourcefiles/mesa/24.3.0~kisak1~j/mesa_24.3.0~kisak1~j.tar.xz
+	sha256sums = 3cad69b5a773928040a14e9cfadbca9f074660c9201eba7e73b2e6163ae6514e
 
 pkgname = mesa-kisak-fresh
 ---
@@ -12733,6 +12734,7 @@ pkgbase = plank-reloaded
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: plank-reloaded
 	source = https://github.com/zquestz/plank-reloaded/archive/refs/tags/0.11.172.tar.gz
+	sha256sums = 8beb003b03370273b7329fa6e3633eb213288e9676360e70e8a855bb84438c81
 
 pkgname = plank-reloaded
 ---
@@ -13770,6 +13772,7 @@ pkgbase = qt6-style-kvantum
 	license = GPL-3.0-or-later
 	maintainer = bibelin <balian1belin@yandex.ru>
 	source = https://github.com/tsujan/Kvantum/releases/download/V1.1.3/Kvantum-1.1.3.tar.xz
+	sha256sums = d9e4eca0c0a760a032c7c26c1baffa1409eb2ad6f1c05d341109fa5751a3f041
 
 pkgname = qt6-style-kvantum
 ---
@@ -19366,6 +19369,9 @@ pkgbase = xterm
 	source = @xterm~410::https://github.com/ThomasDickey/xterm-snapshots/archive/refs/tags/xterm-410.tar.gz
 	source = lxterm
 	source = lxterm.1
+	sha256sums = 6b0232f00aead7ccdcebdf07e9458884d6c45247dd0574b3efd190cb7b15c1b0
+	sha256sums = 92f030891c2306718e242ee784b9c12bb5dfcd01baf34c1992162011caec892f
+	sha256sums = 2b8de0753450ab2fdd9bc5a10f5fa9feaac4abae3b86ac773aef3652a6e56cda
 
 pkgname = xterm
 ---
