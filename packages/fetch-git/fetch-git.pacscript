@@ -18,5 +18,5 @@ build() {
 package() {
   cd "${srcdir}/fetch"
 
-  make DESTDIR="$pkgdir" install
+  make DESTDIR="${pkgdir}" install
 }
