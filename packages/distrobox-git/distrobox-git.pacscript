@@ -1,7 +1,7 @@
 maintainer=("xdavius <xdavius@github.com>")
 pkgname="distrobox-git"
 gives="distrobox"
-pkgver=1.7.2.1
+pkgver=2.0.0-rc.4
 pkgdesc="Use any linux distribution inside your terminal"
 arch=('any')
 url='https://github.com/89luca89/distrobox'
@@ -18,7 +18,7 @@ repology=("project: distrobox")
 
 package() {
   cd "${srcdir}/${pkgname%-git}"
-  ./install -P "${pkgdir}/usr"
+  ./install -P "${pkgdir}/usr" --v2 --version ${pkgver}
 
   find docs -name "*.md" \
     -exec install -Dm 644 -t "${pkgdir}/usr/share/doc/${pkgname%-git}" {} +
