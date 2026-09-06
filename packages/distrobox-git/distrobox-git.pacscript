@@ -8,6 +8,7 @@ url='https://github.com/89luca89/distrobox'
 provides=("${pkgname}")
 conflicts=("${pkgname%-git}")
 makedepends=('git')
+external_connection=true
 optdepends=(
   'docker.io: enable docker usage'
   'podman: enable podman usage'
