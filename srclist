@@ -11721,7 +11721,7 @@ pkgname = oil
 ---
 pkgbase = ollama-bin
 	gives = ollama
-	pkgver = 0.33.2
+	pkgver = 0.33.3
 	pkgdesc = Get up and running with large language models
 	url = https://ollama.com/
 	arch = amd64
@@ -11732,13 +11732,13 @@ pkgbase = ollama-bin
 	repology = project: ollama
 	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550 | libnvidia-compute-555 | libnvidia-compute-560 | libnvidia-compute-565 | libnvidia-compute-570 | libnvidia-compute-575 | libnvidia-compute-580 | libnvidia-compute-590: required to use CUDA on NVIDIA GPU
 	optdepends_debian = libcuda1: required to use CUDA on NVIDIA GPU
-	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.33.2/ollama-linux-amd64.tar.zst
+	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.33.3/ollama-linux-amd64.tar.zst
 	source_amd64 = ollama.service
-	sha256sums_amd64 = 9785247dea264d9072f09f6c9c0eb4b8e666892826a3d8388eba3e8fb9ed1db9
+	sha256sums_amd64 = c13cea8f3389db4145f8a6cb88d1747242a48639d7c13e3bda7c1ebdc6eebb2f
 	sha256sums_amd64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
-	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.33.2/ollama-linux-arm64.tar.zst
+	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.33.3/ollama-linux-arm64.tar.zst
 	source_arm64 = ollama.service
-	sha256sums_arm64 = 6c648fd62bc8ea18d19aeb0900a03ff2d6a1fc830d901348d070fb93aca4630e
+	sha256sums_arm64 = 4425a112af999ae6572c1ce211fbabeaca7bab23ed5860972acdfc0cc2358420
 	sha256sums_arm64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
 
 pkgname = ollama-bin
@@ -11798,6 +11798,23 @@ pkgbase = onnxruntime-gpu-bin
 	sha256sums = 2a19dbfa403672ec27378c3d40a68f793ac7a6327712cd0e8240a86be2b10c55
 
 pkgname = onnxruntime-gpu-bin
+---
+pkgbase = open-webui-desktop-deb
+	gives = open-webui
+	pkgver = 0.0.20
+	pkgdesc = User-friendly AI chat interface that supports Ollama, OpenAI API
+	arch = arm64
+	arch = amd64
+	breaks = open-webui
+	breaks = open-webui-git
+	breaks = open-webui-bin
+	breaks = open-webui-app
+	maintainer = Tobias Heinlein <nionxtrix@mailbox.org>
+	repology = project: open-webui-desktop
+	source_arm64 = https://github.com/open-webui/desktop/releases/download/v0.0.20/open-webui_arm64.deb
+	source_amd64 = https://github.com/open-webui/desktop/releases/download/v0.0.20/open-webui_amd64.deb
+
+pkgname = open-webui-desktop-deb
 ---
 pkgbase = opencode-bin
 	gives = opencode
@@ -17948,21 +17965,22 @@ pkgname = vkroots-git
 ---
 pkgbase = vscode-deb
 	gives = code
-	pkgver = 1.136.0
+	pkgver = 1.136.1
 	pkgdesc = lightweight but powerful source code editor
 	url = https://code.visualstudio.com/
 	arch = amd64
 	arch = arm64
 	arch = armhf
 	makedepends = gpg
+	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	maintainer = Diegiwg <diegiwg@gmail.com>
 	repology = project: vscode
-	source_amd64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.136.0-1788342447_amd64.deb
-	sha256sums_amd64 = 7cc48f2cd51640c7c098740fa3f566dcbdbe5b47e91e86aaecec9d109e3631d3
-	source_arm64 = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.136.0-1788342618_arm64.deb
-	sha256sums_arm64 = f92d9cf4602efe15107bca44b47e9a16765829c755b60c3c1f3975e551798618
-	source_armhf = https://packages.microsoft.com/repos/code/pool/main/c/code/code_1.136.0-1788342292_armhf.deb
-	sha256sums_armhf = aabb727fa1914c90dd8f50aa90d3079a63d3fac09fe4219ccf634b3867644eb1
+	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.136.1/linux-deb-x64/stable
+	sha256sums_amd64 = 4463c4e249a19d7746603f2ec3745c345d3cd55b009d36e824158d15c35509ef
+	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.136.1/linux-deb-arm64/stable
+	sha256sums_arm64 = baa72f92d3feaa76d015202c57271475ea15809e635587279171a972cdd612a4
+	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.136.1/linux-deb-armhf/stable
+	sha256sums_armhf = 02ddb5c5cbc2d5f4db25a3d7bb365c60eef0a017fa64b1994b131544677319e3
 
 pkgname = vscode-deb
 ---
