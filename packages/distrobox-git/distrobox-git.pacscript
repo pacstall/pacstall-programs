@@ -19,7 +19,7 @@ repology=("project: distrobox")
 
 package() {
   cd "${srcdir}/${pkgname%-git}"
-  ./install -P "${pkgdir}/usr" --v2 --version ${pkgver}
+  ./install -P "${pkgdir}/usr" --v2 --version "${pkgver}"
 
   find docs -name "*.md" \
     -exec install -Dm 644 -t "${pkgdir}/usr/share/doc/${pkgname%-git}" {} +
