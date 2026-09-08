@@ -15118,7 +15118,7 @@ pkgbase = scrcpy
 pkgname = scrcpy
 ---
 pkgbase = scx-loader
-	pkgver = 1.1.2
+	pkgver = 1.1.3
 	pkgdesc = System daemon and DBus-based loader for sched-ext schedulers
 	url = https://github.com/sched-ext/scx-loader
 	arch = x86_64
@@ -15136,7 +15136,7 @@ pkgbase = scx-loader
 	license = GPL-2.0-only
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: scx-loader
-	source = git+https://github.com/sched-ext/scx-loader#commit=cb98827b9864eec956c48ad51399e8bbb7618e1d
+	source = git+https://github.com/sched-ext/scx-loader#commit=eab0ea026f3f86879373b86ca64735b66719f6df
 	sha256sums = SKIP
 
 pkgname = scx-loader
