@@ -1,6 +1,6 @@
 pkgname="openbangla-keyboard-git"
 gives="openbangla-keyboard"
-pkgdesc="An OpenSource, Unicode compliant Bengali Input Method"
+pkgdesc="Unicode compliant Bengali input method"
 url="https://github.com/OpenBangla/OpenBangla-Keyboard"
 maintainer=("Niamot <58494481+niam0t@users.noreply.github.com>")
 
