@@ -32,12 +32,6 @@ makedepends=(
   "libzstd-dev"
 )
 
-prepare() {
-  cd "${srcdir}/OpenBangla-Keyboard"
-  git submodule update --init --recursive
-  pkgver="r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
-}
-
 build() {
   cd "${srcdir}/OpenBangla-Keyboard"
   mkdir -p build && cd build
