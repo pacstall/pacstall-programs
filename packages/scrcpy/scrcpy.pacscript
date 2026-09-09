@@ -4,8 +4,8 @@ pkgdesc="Display and control your Android device"
 repology=("project: ${pkgname}")
 url='https://github.com/Genymobile/scrcpy'
 arch=("amd64" "arm64")
-makedepends=("libavcodec-dev" "libavdevice-dev" "libavformat-dev" "libavutil-dev" "libsdl2-dev" "libswresample-dev" "libusb-1.0-0-dev" "meson" "ninja-build")
-depends=("adb" "ffmpeg" "libsdl2-2.0-0" "libusb-1.0-0")
+makedepends=("libavcodec-dev" "libavdevice-dev" "libavformat-dev" "libavutil-dev" "libsdl3-dev" "libswresample-dev" "libusb-1.0-0-dev" "meson" "ninja-build")
+depends=("adb" "ffmpeg" "libsdl3-0" "libusb-1.0-0")
 replaces=("${pkgname}")
 source=(
   "@${pkgname}~${pkgver}::https://github.com/Genymobile/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz"
