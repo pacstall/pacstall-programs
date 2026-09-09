@@ -9,7 +9,7 @@ external_connection="true"
 arch=("amd64")
 source=("git+https://github.com/OpenBangla/OpenBangla-Keyboard.git")
 repology=("project: ${gives}")
-pkgver="0.0.0"
+pkgver="0.0.1"
 
 replaces=("${gives}")
 conflicts=("${gives}")
