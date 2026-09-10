@@ -1,19 +1,19 @@
 pkgname="scrcpy"
-pkgver="3.3.4"
+pkgver="4.1"
 pkgdesc="Display and control your Android device"
 repology=("project: ${pkgname}")
 url='https://github.com/Genymobile/scrcpy'
 arch=("amd64" "arm64")
-makedepends=("libavcodec-dev" "libavdevice-dev" "libavformat-dev" "libavutil-dev" "libsdl2-dev" "libswresample-dev" "libusb-1.0-0-dev" "meson" "ninja-build")
-depends=("adb" "ffmpeg" "libsdl2-2.0-0" "libusb-1.0-0")
+makedepends=("libavcodec-dev" "libavdevice-dev" "libavformat-dev" "libavutil-dev" "libsdl3-dev" "libswresample-dev" "libusb-1.0-0-dev" "meson" "ninja-build")
+depends=("adb" "ffmpeg" "libsdl3-0" "libusb-1.0-0")
 replaces=("${pkgname}")
 source=(
   "@${pkgname}~${pkgver}::https://github.com/Genymobile/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz"
   "${pkgname}-server::https://github.com/Genymobile/${pkgname}/releases/download/v${pkgver}/${pkgname}-server-v${pkgver}"
 )
 sha256sums=(
-  "03b72d1f71ca7783cff2995ca7cd8c67b9b75038a3cc35e443a1913e951b49dd"
-  "8588238c9a5a00aa542906b6ec7e6d5541d9ffb9b5d0f6e1bc0e365e2303079e"
+  "537b2ade623cb94b6edddfa5c61bf0b0af21484aa8365ea2531b686ea573249a"
+  "deacb991ed2509715160ffdc7907e47b4160eb30d1566217e9047fd5b8850cae"
 )
 
 prepare() {

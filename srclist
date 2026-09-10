@@ -1669,7 +1669,7 @@ pkgname = celeste-bin
 ---
 pkgbase = chatgpt-deb
 	gives = chatgpt
-	pkgver = 26.901.20858
+	pkgver = 26.903.61454
 	pkgdesc = ChatGPT desktop application by OpenAI
 	url = https://developers.openai.com/codex/app
 	arch = amd64
@@ -1681,10 +1681,10 @@ pkgbase = chatgpt-deb
 	license = custom:Proprietary
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: chatgpt
-	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.901.20858_amd64.deb
-	sha256sums_amd64 = 42a6477f22f4136d62321eda7b4697a79da1eb66d61dcb85ab0420860a1a5223
-	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.901.20858_arm64.deb
-	sha256sums_arm64 = a9b6cabc7a4f38e62e78b37b5950050d3a189d4502dc7ca6e1285a7899d87469
+	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.903.61454_amd64.deb
+	sha256sums_amd64 = 2caa7df314ce37e9048359d8e6a4a78e24574a3b54d6bf510f17754b66dda775
+	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.903.61454_arm64.deb
+	sha256sums_arm64 = e545cd78672e1313ff3f0d377772dd4ee7444400357ca85313d732da8d7e6693
 
 pkgname = chatgpt-deb
 ---
@@ -2556,7 +2556,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 1.0.156
+	pkgver = 1.0.157
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -2566,8 +2566,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://stable.dl2.discordapp.net/apps/linux/1.0.156/discord-1.0.156.deb
-	sha256sums = 88bd5dce5bba6af0499d202ddc3f75e9de642060cb5389191569c42be444fae9
+	source = https://stable.dl2.discordapp.net/apps/linux/1.0.157/discord-1.0.157.deb
+	sha256sums = ed8773b0b85838dc8e18ec2317ac55bdc6fc7b6af0cc46109ceba002764ffbaa
 
 pkgname = discord-deb
 ---
@@ -2987,7 +2987,7 @@ pkgbase = easy-zsh-config-git
 pkgname = easy-zsh-config-git
 ---
 pkgbase = eclipse-rcp-bin
-	pkgver = 4.40
+	pkgver = 4.41
 	pkgdesc = IDE for Rich Client Platform (RCP) and Remote Application Platform (RAP)
 	url = https://eclipse.org/ide
 	arch = amd64
@@ -2996,9 +2996,9 @@ pkgbase = eclipse-rcp-bin
 	license = EPL-2.0
 	maintainer = Matthias Mailänder <matthias@mailaender.name>
 	repology = project: eclipse-rcp
-	source = https://cdimage.debian.org/mirror/eclipse.org/technology/epp/downloads/release/2026-06/R/eclipse-rcp-2026-06-R-linux-gtk-x86_64.tar.gz
+	source = https://cdimage.debian.org/mirror/eclipse.org/technology/epp/downloads/release/2026-09/R/eclipse-rcp-2026-09-R-linux-gtk-x86_64.tar.gz
 	source = eclipse.desktop::https://raw.githubusercontent.com/eclipse-linuxtools/org.eclipse.linuxtools.eclipse-build/refs/heads/master/desktopintegration/eclipse.desktop
-	sha512sums = df0c35a056f4f151f0ee5ed36869aff023a2b9418ac1ef8b77938f4978de1a9c71b760e927b354175002a9e1385c981ad1d93a78561c30230945e589a6b97ecc
+	sha512sums = a727e8130f88547aff2912e4b6ff3ba1b2a525d24b853acbeb43aa69886d926188bb553847261314c530e98d35744697cbfeef76fb7b46152ab05b52beb2cded
 	sha512sums = bb5c1bbf07c52a68b123f40d35ffa1b09a0743003c734e53c0a0b23c4bb81a28c25b1be0c74b1507da8237db96b06f5e53baf6b6234bbc102e54602c30207291
 
 pkgname = eclipse-rcp-bin
@@ -11818,7 +11818,7 @@ pkgname = open-webui-desktop-deb
 ---
 pkgbase = opencode-bin
 	gives = opencode
-	pkgver = 1.18.27
+	pkgver = 1.18.30
 	pkgdesc = AI coding agent built for the terminal
 	url = https://github.com/anomalyco/opencode
 	arch = amd64
@@ -11826,10 +11826,10 @@ pkgbase = opencode-bin
 	depends = ripgrep
 	license = MIT
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://github.com/anomalyco/opencode/releases/download/v1.18.27/opencode-linux-x64.tar.gz
-	sha256sums_amd64 = 4af5494f9433f59db8c1e344198f0ee72a50c06ec009fb4a8aeab4c2d4abd702
-	source_arm64 = https://github.com/anomalyco/opencode/releases/download/v1.18.27/opencode-linux-arm64.tar.gz
-	sha256sums_arm64 = 8cbc134eb5e100baf61ee7196150f503e352056e703276e2d8637c38bafd2c39
+	source_amd64 = https://github.com/anomalyco/opencode/releases/download/v1.18.30/opencode-linux-x64.tar.gz
+	sha256sums_amd64 = 55007246858165496ff85ba1c2b648f7421e8e2013bf4189a680c9ff8e699d17
+	source_arm64 = https://github.com/anomalyco/opencode/releases/download/v1.18.30/opencode-linux-arm64.tar.gz
+	sha256sums_arm64 = 4111a55c2a02c0fac314bd51e9a2330280e6d29d2b85b9554fff6d62612566ed
 
 pkgname = opencode-bin
 ---
@@ -15090,35 +15090,35 @@ pkgbase = schildichat-deb
 pkgname = schildichat-deb
 ---
 pkgbase = scrcpy
-	pkgver = 3.3.4
+	pkgver = 4.1
 	pkgdesc = Display and control your Android device
 	url = https://github.com/Genymobile/scrcpy
 	arch = amd64
 	arch = arm64
 	depends = adb
 	depends = ffmpeg
-	depends = libsdl2-2.0-0
+	depends = libsdl3-0
 	depends = libusb-1.0-0
 	makedepends = libavcodec-dev
 	makedepends = libavdevice-dev
 	makedepends = libavformat-dev
 	makedepends = libavutil-dev
-	makedepends = libsdl2-dev
+	makedepends = libsdl3-dev
 	makedepends = libswresample-dev
 	makedepends = libusb-1.0-0-dev
 	makedepends = meson
 	makedepends = ninja-build
 	replaces = scrcpy
 	repology = project: scrcpy
-	source = @scrcpy~3.3.4::https://github.com/Genymobile/scrcpy/archive/refs/tags/v3.3.4.tar.gz
-	source = scrcpy-server::https://github.com/Genymobile/scrcpy/releases/download/v3.3.4/scrcpy-server-v3.3.4
-	sha256sums = 03b72d1f71ca7783cff2995ca7cd8c67b9b75038a3cc35e443a1913e951b49dd
-	sha256sums = 8588238c9a5a00aa542906b6ec7e6d5541d9ffb9b5d0f6e1bc0e365e2303079e
+	source = @scrcpy~4.1::https://github.com/Genymobile/scrcpy/archive/refs/tags/v4.1.tar.gz
+	source = scrcpy-server::https://github.com/Genymobile/scrcpy/releases/download/v4.1/scrcpy-server-v4.1
+	sha256sums = 537b2ade623cb94b6edddfa5c61bf0b0af21484aa8365ea2531b686ea573249a
+	sha256sums = deacb991ed2509715160ffdc7907e47b4160eb30d1566217e9047fd5b8850cae
 
 pkgname = scrcpy
 ---
 pkgbase = scx-loader
-	pkgver = 1.1.2
+	pkgver = 1.1.3
 	pkgdesc = System daemon and DBus-based loader for sched-ext schedulers
 	url = https://github.com/sched-ext/scx-loader
 	arch = x86_64
@@ -15136,7 +15136,7 @@ pkgbase = scx-loader
 	license = GPL-2.0-only
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: scx-loader
-	source = git+https://github.com/sched-ext/scx-loader#commit=cb98827b9864eec956c48ad51399e8bbb7618e1d
+	source = git+https://github.com/sched-ext/scx-loader#commit=eab0ea026f3f86879373b86ca64735b66719f6df
 	sha256sums = SKIP
 
 pkgname = scx-loader
@@ -16155,6 +16155,63 @@ pkgbase = suyu-app
 	sha256sums = dbab16853bc1e8ad62fcaddf9b0620e690c8522fbbc6cdddcfcc958f9abb1f47
 
 pkgname = suyu-app
+---
+pkgbase = syncthing-bin
+	gives = syncthing
+	pkgver = 2.1.5
+	pkgdesc = Open Source Continuous Replication / Cluster Synchronization Thing
+	url = https://syncthing.net/
+	arch = amd64
+	arch = arm64
+	arch = armhf
+	arch = i386
+	conflicts = syncthing
+	provides = syncthing
+	license = MPL-2.0
+	maintainer = aKqir24 <aKqir24@github.com>
+	repology = project: syncthing
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/stdiscosrv.1
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-bep.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/strelaysrv.1
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-config.5
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-device-ids.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-event-api.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-faq.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-globaldisco.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-localdisco.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-networking.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-relay.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-rest-api.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-security.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-stignore.5
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing-versioning.7
+	source = https://raw.githubusercontent.com/syncthing/syncthing/refs/heads/main/man/syncthing.1
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	source_amd64 = @syncthing-bin-amd64::https://github.com/syncthing/syncthing/releases/download/v2.1.5/syncthing-linux-amd64-v2.1.5.tar.gz
+	sha256sums_amd64 = 3d222b609f7ab2944e02748cb10488b4160d446b49e0eafc107ef2a525ab3486
+	source_arm64 = @syncthing-bin-arm64::https://github.com/syncthing/syncthing/releases/download/v2.1.5/syncthing-linux-arm64-v2.1.5.tar.gz
+	sha256sums_arm64 = 3666f3069feeee3651e185f867759206059755101797bdd69ea5317610130855
+	source_armhf = @syncthing-bin-armhf::https://github.com/syncthing/syncthing/releases/download/v2.1.5/syncthing-linux-arm-v2.1.5.tar.gz
+	sha256sums_armhf = bb328aa18f70545b91cfa91c88416bec9d11de3500cbc63315d6fcd670ce6076
+	source_i386 = @syncthing-bin-i386::https://github.com/syncthing/syncthing/releases/download/v2.1.5/syncthing-linux-386-v2.1.5.tar.gz
+	sha256sums_i386 = a6bbf3606c5cf934a50122b403c8c563c72d5e19173648a9cf091cd25c2b229d
+
+pkgname = syncthing-bin
 ---
 pkgbase = systemcoding-conky
 	gives = conky
@@ -17965,7 +18022,7 @@ pkgname = vkroots-git
 ---
 pkgbase = vscode-deb
 	gives = code
-	pkgver = 1.136.1
+	pkgver = 1.137.0
 	pkgdesc = lightweight but powerful source code editor
 	url = https://code.visualstudio.com/
 	arch = amd64
@@ -17975,12 +18032,12 @@ pkgbase = vscode-deb
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	maintainer = Diegiwg <diegiwg@gmail.com>
 	repology = project: vscode
-	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.136.1/linux-deb-x64/stable
-	sha256sums_amd64 = 4463c4e249a19d7746603f2ec3745c345d3cd55b009d36e824158d15c35509ef
-	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.136.1/linux-deb-arm64/stable
-	sha256sums_arm64 = baa72f92d3feaa76d015202c57271475ea15809e635587279171a972cdd612a4
-	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.136.1/linux-deb-armhf/stable
-	sha256sums_armhf = 02ddb5c5cbc2d5f4db25a3d7bb365c60eef0a017fa64b1994b131544677319e3
+	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.137.0/linux-deb-x64/stable
+	sha256sums_amd64 = fd4dff72c44598d3acb885b448256f5d82cf53f59538d97fc7d3c8d8d9d574d3
+	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.137.0/linux-deb-arm64/stable
+	sha256sums_arm64 = 8bff558a659d351328f5a1e319802073b59dac42f95cc0f9b2ef1b0c27387431
+	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.137.0/linux-deb-armhf/stable
+	sha256sums_armhf = b86cdd666e972a5a555d34298c91239bcbaada69ee882c4a36fe1e74d1df2070
 
 pkgname = vscode-deb
 ---
@@ -18580,13 +18637,13 @@ pkgname = wgcf-bin
 ---
 pkgbase = whatsdesk-deb
 	gives = whatsdesk
-	pkgver = 0.3.9-76
+	pkgver = 0.3.14
 	pkgdesc = Unofficial client of Whatsapp
 	url = https://gitlab.com/zerkc/whatsdesk
 	arch = amd64
 	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
-	source = https://zerkc.gitlab.io/whatsdesk/whatsdesk_0.3.9_amd64.deb
-	sha256sums = 4756f5c9f22e889fcec3aa34c587cb10bc6e7ccb476d6481e58267c4f6df181e
+	source = https://zerkc.gitlab.io/whatsdesk/downloads/whatsdesk_0.3.14_amd64.deb
+	sha256sums = 7bf1d4117af11fc394c179ecd3c6ccf70cbedbab6f148db5c162d153eb1620fa
 
 pkgname = whatsdesk-deb
 ---
@@ -19643,7 +19700,7 @@ pkgname = zap
 ---
 pkgbase = zcode-deb
 	gives = zcode
-	pkgver = 3.10.2
+	pkgver = 3.11.2
 	pkgdesc = Next-gen vibe coding with multiple AI agents — official harness for GLM
 	url = https://zcode.z.ai
 	arch = amd64
@@ -19664,10 +19721,10 @@ pkgbase = zcode-deb
 	breaks = zcode-app
 	replaces = zcode
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://cdn-zcode.z.ai/zcode/electron/releases/3.10.2/linux-x64/ZCode-3.10.2-linux-x64.deb
-	sha256sums_amd64 = b618cfa70c8f7c8a1a6e2950565cc441c298b801bb2389c292eb0d3add6bf0c0
-	source_arm64 = https://cdn-zcode.z.ai/zcode/electron/releases/3.10.2/linux-arm64/ZCode-3.10.2-linux-arm64.deb
-	sha256sums_arm64 = fcd57d2ee41e764d7fe171612db52e8fc7d23135328de484a5092c25f9c17f32
+	source_amd64 = https://cdn-zcode.z.ai/zcode/electron/releases/3.11.2/linux-x64/ZCode-3.11.2-linux-x64.deb
+	sha256sums_amd64 = 7d13b838631302cf61e1b8040cb67f349ec23566795897f1746432c5c5d77d5b
+	source_arm64 = https://cdn-zcode.z.ai/zcode/electron/releases/3.11.2/linux-arm64/ZCode-3.11.2-linux-arm64.deb
+	sha256sums_arm64 = de31487b97aade1365bdbf1c3a1624336cd163db8996416a4f8946f491eeedb0
 
 pkgname = zcode-deb
 ---
@@ -19692,7 +19749,7 @@ pkgname = zed-editor-preview-bin
 ---
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 1.18.0
+	pkgver = 1.18.1
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -19703,10 +19760,10 @@ pkgbase = zed-editor-stable-bin
 	maintainer = bibelin <balian1belin@yandex.ru>
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/1.18.0/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 60ee2da27b378c5d00cbfc4e9e0c9842e37795803c4565754f41be5423898799
-	source_aarch64 = https://zed.dev/api/releases/stable/1.18.0/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 1e966d0258d0d96c06dd9216f6e1df223c535b6c5e39c7562912bda8481f63c1
+	source_x86_64 = https://zed.dev/api/releases/stable/1.18.1/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = eea62268d8ec5fd3587df06fa76e072c104cca5e0b0b0abecbc28ae5b87c0bad
+	source_aarch64 = https://zed.dev/api/releases/stable/1.18.1/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 7ee93bcd1059c4f0d700578ccfa00aebda5fc521c943fe3ffbf71aac41a081a7
 
 pkgname = zed-editor-stable-bin
 ---
