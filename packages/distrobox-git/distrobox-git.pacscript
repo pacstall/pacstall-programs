@@ -7,7 +7,7 @@ arch=('any')
 url='https://github.com/89luca89/distrobox'
 provides=("${pkgname}")
 conflicts=("${pkgname%-git}")
-makedepends=('git')
+makedepends=('git' 'golang-go')
 external_connection=true
 optdepends=(
   'docker.io: enable docker usage'
