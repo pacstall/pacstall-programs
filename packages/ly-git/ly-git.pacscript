@@ -40,13 +40,13 @@ post_install() {
       ;;
     "runit")
       POST_SETUP_MSG=("ln -s /etc/sv/ly /var/service/" "rm /var/service/agetty-tty2")
-      [[ -d "/etc/runit/sv/ly" ]] || mkdir -p "/etc/runit/sv/ly"
+      mkdir -p "/etc/runit/sv/ly"
       chmod +x ly-runit-service/run && chmod +x ly-runit-service/finish
       cp -r ly-runit-service /etc/runit/sv/ly
       ;;
     "s6")
       POST_SETUP_MSG=("s6-service add default ly-srv && s6-db-reload" "s6-rc -u change ly-srv")
-      [[ -d "/etc/s6-rc/sources/ly" ]] || mkdir -p /etc/s6-rc/sources/ly
+      mkdir -p "/etc/s6-rc/sources/ly"
       cp -r ly-s6 /etc/s6-rc/sources/ly
       s6-rc-init -c /etc/s6-rc/compiled /run/s6-rc
       ;;
