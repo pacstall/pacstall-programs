@@ -2614,6 +2614,7 @@ pkgbase = distrobox-git
 	url = https://github.com/89luca89/distrobox
 	arch = any
 	makedepends = git
+	makedepends = golang-go
 	optdepends = docker.io: enable docker usage
 	optdepends = podman: enable podman usage
 	conflicts = distrobox
