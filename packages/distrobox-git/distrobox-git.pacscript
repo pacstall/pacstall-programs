@@ -19,5 +19,6 @@ repology=("project: distrobox")
 
 package() {
   cd "${srcdir}/${pkgname%-git}"
-  ./install -P "${pkgdir}/usr" --v2 --version "${pkgver}"
+  make build
+  make install PREFIX="${pkgdir}"
 }
