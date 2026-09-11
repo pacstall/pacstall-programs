@@ -9089,7 +9089,7 @@ pkgbase = ly
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: ly
 	source = ly::https://codeberg.org/fairyglade/ly/archive/v1.4.1.tar.gz
-	sha256sums = 16fe5f07cc7a23930880b14d905883644cdc4b574d1c146629f6b98ee8fbbab9
+	sha256sums = 4d1c10422e6c5b8d5a795150e4c364c82404f900c1a04318b83fe8d81fade58b
 
 pkgname = ly
 ---
