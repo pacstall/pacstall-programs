@@ -17,8 +17,15 @@ source=("${pkgname%-git}::git+${url}")
 sha256sums=('SKIP')
 repology=("project: distrobox")
 
+build() {
+  cd "${srcdir}/${pkgname%-git}"
+  mkdir prebuilt
+  cd prebuilt
+  make build
+}
+
 package() {
   cd "${srcdir}/${pkgname%-git}"
-  make build
-  make install PREFIX="${pkgdir}/usr"
+  cd prebuilt
+  make install DESTDIR="${pkgdir}" PREFIX="${pkgdir}/usr"
 }
