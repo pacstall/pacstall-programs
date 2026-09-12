@@ -32,13 +32,36 @@ package() {
 }
 
 post_install() {
+  cd "${srcdir}/ly/res"
   case "${_INIT_SYSTEM}" in
-    "openrc") POST_SETUP_MSG=("rc-update add ly" "rc-update del agetty.tty2") ;;
-    "runit") POST_SETUP_MSG=("ln -s /etc/sv/ly /var/service/" "rm /var/service/agetty-tty2") ;;
-    "s6") POST_SETUP_MSG=("s6-service add default ly-srv && s6-db-reload" "s6-rc -u change ly-srv") ;;
-    "dinit") POST_SETUP_MSG=("dinitctl enable ly" "sudo ${EDITOR} /etc/dinit.d/config/console.conf and modify ACTIVE_CONSOLES") ;;
-    "sysvinit") POST_SETUP_MSG=("update-rc.d ly defaults" "sudo ${EDITOR} /etc/inittab and comment out the line containing tty2") ;;
-    "systemd" | *) POST_SETUP_MSG=("sudo systemctl enable ly.service" "sudo systemctl disable getty@tty2.service") ;;
+    "openrc")
+      POST_SETUP_MSG=("rc-update add ly" "rc-update del agetty.tty2")
+      chmod +x ly-openrc && cp -a ly-openrc /etc/init.d/ly
+      ;;
+    "runit")
+      POST_SETUP_MSG=("ln -s /etc/runit/sv/ly /etc/service/" "rm /etc/service/agetty-tty2")
+      mkdir -p "/etc/runit/sv/ly"
+      chmod +x ly-runit-service/run && chmod +x ly-runit-service/finish
+      cp -r -a ly-runit-service/. /etc/runit/sv/ly
+      ;;
+    "s6")
+      POST_SETUP_MSG=("s6-service add default ly-srv && s6-db-reload" "s6-rc -u change ly-srv")
+      mkdir -p "/etc/s6-rc/sources/ly"
+      cp -r ly-s6/. /etc/s6-rc/sources/ly
+      s6-rc-init -c /etc/s6-rc/compiled /run/s6-rc
+      ;;
+    "dinit")
+      POST_SETUP_MSG=("sudo dinitctl enable ly" "sudo ${EDITOR} /etc/dinit.d/config/console.conf and modify ACTIVE_CONSOLES")
+      cp ly-dinit /etc/dinit.d/ly
+      ;;
+    "sysvinit")
+      POST_SETUP_MSG=("update-rc.d ly defaults" "sudo ${EDITOR} /etc/inittab and comment out the line containing tty2")
+      chmod +x ly-sysvinit && cp -p ly-sysvinit /etc/init.d/
+      ;;
+    "systemd" | *)
+      POST_SETUP_MSG=("sudo systemctl enable ly.service" "sudo systemctl disable getty@tty2.service")
+      cp ly@.service /etc/systemd/system/ && cp ly-kmsconvt@.service /etc/systemd/system/
+      ;;
   esac
 
   fancy_message info "Finished installation. To enable Ly, run '${POST_SETUP_MSG[0]}'"

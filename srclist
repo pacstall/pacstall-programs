@@ -5866,7 +5866,7 @@ pkgname = herbstluftwm-git
 ---
 pkgbase = herdr-bin
 	gives = herdr
-	pkgver = 0.8.2
+	pkgver = 0.9.0
 	pkgdesc = Supervise multiple coding agents in one terminal
 	url = https://herdr.dev
 	arch = amd64
@@ -5879,10 +5879,10 @@ pkgbase = herdr-bin
 	license = AGPL-3.0-or-later
 	maintainer = Jochen Hörmann <jochen.hoermann@gmail.com>
 	repology = project: herdr
-	source_amd64 = herdr::https://github.com/ogulcancelik/herdr/releases/download/v0.8.2/herdr-linux-x86_64
-	sha256sums_amd64 = 976150a14d490c94b243ea2e1a7eb2dfb67f12e36b182db90936f6728e6aecf4
-	source_arm64 = herdr::https://github.com/ogulcancelik/herdr/releases/download/v0.8.2/herdr-linux-aarch64
-	sha256sums_arm64 = f55610658e1c2e0d2aaef730b4b2ab885f7f8ba00285ab372bfb14f2e3d5b40d
+	source_amd64 = herdr::https://github.com/ogulcancelik/herdr/releases/download/v0.9.0/herdr-linux-x86_64
+	sha256sums_amd64 = 4fa1a01158dd8043da92d31b270780b0dcc10603038d9b61cac4d81ab63fb71f
+	source_arm64 = herdr::https://github.com/ogulcancelik/herdr/releases/download/v0.9.0/herdr-linux-aarch64
+	sha256sums_arm64 = 9c8db20fb7e7427b138d5367113f1621ffd319f2f65d6f009e2594029115f0d2
 
 pkgname = herdr-bin
 ---
@@ -8781,7 +8781,7 @@ pkgname = lix-git
 ---
 pkgbase = llama-swap-bin
 	gives = llama-swap
-	pkgver = 251
+	pkgver = 252
 	pkgdesc = Reliable model swapping for any local OpenAI/Anthropic compatible server
 	url = https://github.com/mostlygeek/llama-swap/
 	arch = amd64
@@ -8793,8 +8793,10 @@ pkgbase = llama-swap-bin
 	license = MIT
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	repology = project: llama-swap
-	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v251/llama-swap_251_linux_amd64.tar.gz
-	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v251/llama-swap_251_linux_arm64.tar.gz
+	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v252/llama-swap_252_linux_amd64.tar.gz
+	sha256sums_amd64 = 5f858d72a90ae28aa7c75d34df25d05f9d7daec8c47b9503fb8a264bc6d95d25
+	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v252/llama-swap_252_linux_arm64.tar.gz
+	sha256sums_arm64 = 19d204a821db038759123088b6e9d3357c4d13bcec0cef0c1bc75e3dcebf60ec
 
 pkgname = llama-swap-bin
 ---
@@ -9090,7 +9092,7 @@ pkgbase = ly
 	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: ly
 	source = ly::https://codeberg.org/fairyglade/ly/archive/v1.4.1.tar.gz
-	sha256sums = 16fe5f07cc7a23930880b14d905883644cdc4b574d1c146629f6b98ee8fbbab9
+	sha256sums = 4d1c10422e6c5b8d5a795150e4c364c82404f900c1a04318b83fe8d81fade58b
 
 pkgname = ly
 ---
@@ -11722,7 +11724,7 @@ pkgname = oil
 ---
 pkgbase = ollama-bin
 	gives = ollama
-	pkgver = 0.33.3
+	pkgver = 0.34.0
 	pkgdesc = Get up and running with large language models
 	url = https://ollama.com/
 	arch = amd64
@@ -11733,13 +11735,13 @@ pkgbase = ollama-bin
 	repology = project: ollama
 	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550 | libnvidia-compute-555 | libnvidia-compute-560 | libnvidia-compute-565 | libnvidia-compute-570 | libnvidia-compute-575 | libnvidia-compute-580 | libnvidia-compute-590: required to use CUDA on NVIDIA GPU
 	optdepends_debian = libcuda1: required to use CUDA on NVIDIA GPU
-	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.33.3/ollama-linux-amd64.tar.zst
+	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.34.0/ollama-linux-amd64.tar.zst
 	source_amd64 = ollama.service
-	sha256sums_amd64 = c13cea8f3389db4145f8a6cb88d1747242a48639d7c13e3bda7c1ebdc6eebb2f
+	sha256sums_amd64 = cf95886728959aa09910bb34de5cca1cc5a8f68003b5597197d3f2c2d57c0804
 	sha256sums_amd64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
-	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.33.3/ollama-linux-arm64.tar.zst
+	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.34.0/ollama-linux-arm64.tar.zst
 	source_arm64 = ollama.service
-	sha256sums_arm64 = 4425a112af999ae6572c1ce211fbabeaca7bab23ed5860972acdfc0cc2358420
+	sha256sums_arm64 = 6a9e5b3650c2024d8a78da86b23876f6eea238657a3262d7e5ec0f3688c5d28e
 	sha256sums_arm64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
 
 pkgname = ollama-bin
