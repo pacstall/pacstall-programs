@@ -1,13 +1,14 @@
 maintainer=("xdavius <xdavius@github.com>")
 pkgname="distrobox-git"
 gives="distrobox"
-pkgver=1.7.2.1
+pkgver="2.0.0-rc.4"
 pkgdesc="Use any linux distribution inside your terminal"
 arch=('any')
 url='https://github.com/89luca89/distrobox'
 provides=("${pkgname}")
 conflicts=("${pkgname%-git}")
-makedepends=('git')
+makedepends=('git' 'golang-go')
+external_connection=true
 optdepends=(
   'docker.io: enable docker usage'
   'podman: enable podman usage'
@@ -16,10 +17,15 @@ source=("${pkgname%-git}::git+${url}")
 sha256sums=('SKIP')
 repology=("project: distrobox")
 
+build() {
+  cd "${srcdir}/${pkgname%-git}"
+  mkdir prebuilt
+  cd prebuilt
+  make build
+}
+
 package() {
   cd "${srcdir}/${pkgname%-git}"
-  ./install -P "${pkgdir}/usr"
-
-  find docs -name "*.md" \
-    -exec install -Dm 644 -t "${pkgdir}/usr/share/doc/${pkgname%-git}" {} +
+  cd prebuilt
+  make install DESTDIR="${pkgdir}" PREFIX="${pkgdir}/usr"
 }
