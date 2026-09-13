@@ -19,13 +19,10 @@ repology=("project: distrobox")
 
 build() {
   cd "${srcdir}/${pkgname%-git}"
-  mkdir prebuilt
-  cd prebuilt
   make build
 }
 
 package() {
   cd "${srcdir}/${pkgname%-git}"
-  cd prebuilt
   make install DESTDIR="${pkgdir}" PREFIX="${pkgdir}/usr"
 }
