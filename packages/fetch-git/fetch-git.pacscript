@@ -5,7 +5,7 @@ url='https://github.com/areofyl/fetch'
 maintainer="CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>"
 pkgver="2.3.0"
 arch=("any")
-license="ISC"
+license=('ISC')
 source=("git+https://github.com/areofyl/fetch.git")
 makdepends=(
   "make"
