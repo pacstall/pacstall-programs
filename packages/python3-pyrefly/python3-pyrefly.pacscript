@@ -20,6 +20,6 @@ build() {
 
 package() {
   cd "${srcdir}/pyrefly-${pkgver}"
-  install -Dm755 "target/release/pyrefly" "${pkgdir}/usr/local/bin/pyrefly"
+  install -Dm755 "target/release/pyrefly" "${pkgdir}/usr/bin/pyrefly"
   install -Dm644 'LICENSE' "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
