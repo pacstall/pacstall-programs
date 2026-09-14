@@ -175,6 +175,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+fetch-git
 ffmpeg
 ffmpeg4.4
 ffnvcodec-headers
