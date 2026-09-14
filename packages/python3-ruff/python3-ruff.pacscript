@@ -20,6 +20,6 @@ build() {
 
 package() {
   cd "${srcdir}/ruff-${pkgver}"
-  install -Dm755 "target/release/ruff" "${pkgdir}/usr/local/bin/ruff"
+  install -Dm755 "target/release/ruff" "${pkgdir}/usr/bin/ruff"
   install -Dm644 'LICENSE' "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
 }
