@@ -1,10 +1,10 @@
 pkgname="linux-headers-stable-deb"
-gives="linux-headers-7.2.0-070200"
-pkgver="7.2"
-buildver="7.2.0-070200.202608162350"
+gives="linux-headers-7.2.5-070205"
+pkgver="7.2.5"
+buildver="7.2.5-070205.202609111348"
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/amd64/${gives}_${buildver}_all.deb")
 pkgdesc="Ubuntu Linux stable kernel (Headers)"
-sha256sums=("569ba0593323006d2e88e7017d27e5858f3d570014d9014da5e25252394a53cd")
+sha256sums=("cdcc5ab4eb8d05bd13b1821087604e295672e03f5cbe6fa72d65f3f707699f79")
 arch=('all')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 repology=("project: linux" "repo: distrowatch")
