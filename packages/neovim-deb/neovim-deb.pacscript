@@ -1,5 +1,5 @@
 pkgname="neovim-deb"
-pkgver="0.12.4"
+pkgver="0.12.5"
 url='https://neovim.io/'
 arch=('arm64' 'amd64')
 gives="neovim"

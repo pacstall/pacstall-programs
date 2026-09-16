@@ -1,7 +1,7 @@
 pkgname="kiro-ide-bin"
 gives="kiro-ide"
 repology=("project: kiro-ide")
-pkgver="1.0.293"
+pkgver="1.0.337"
 pkgdesc="AI-powered IDE for modern development"
 url='https://kiro.dev'
 arch=('amd64')
@@ -15,7 +15,7 @@ depends=('libgtk-3-0' 'libnss3' 'libasound2' 'libxkbfile1')
 maintainer=("Rodrigo Tavares <dev@rodrigotavar.es>")
 _base_url="https://prod.download.desktop.kiro.dev/releases/stable/linux-x64/signed"
 source=("${_base_url}/${pkgver}/tar/kiro-ide-${pkgver}-stable-linux-x64.tar.gz")
-sha256sums=('79095a24b7f1f0dbf541986d47073d5bff6dbcf813cd4cff52659abf019c5e47')
+sha256sums=('dbda72f764687f75609355bdda18a3d00efc28c57845a67e2806da6234f6aea2')
 
 package() {
   install -d "${pkgdir}/opt/kiro-ide"

@@ -1,0 +1,15 @@
+pkgname="zcode-deb"
+gives="zcode"
+arch=("amd64" "arm64")
+pkgver="3.11.2"
+replaces=("${gives}")
+breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app")
+url='https://zcode.z.ai'
+pkgdesc="Next-gen vibe coding with multiple AI agents — official harness for GLM"
+maintainer=("Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
+depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libsecret-1-0")
+optdepends=("libappindicator3-1: system tray icon support")
+source_amd64=("https://cdn-zcode.z.ai/zcode/electron/releases/${pkgver}/linux-x64/ZCode-${pkgver}-linux-x64.deb")
+sha256sums_amd64=("7d13b838631302cf61e1b8040cb67f349ec23566795897f1746432c5c5d77d5b")
+source_arm64=("https://cdn-zcode.z.ai/zcode/electron/releases/${pkgver}/linux-arm64/ZCode-${pkgver}-linux-arm64.deb")
+sha256sums_arm64=("de31487b97aade1365bdbf1c3a1624336cd163db8996416a4f8946f491eeedb0")

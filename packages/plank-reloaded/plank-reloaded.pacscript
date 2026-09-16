@@ -9,7 +9,7 @@ url='https://github.com/zquestz/plank-reloaded'
 maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: ${pkgname}")
 source=("https://github.com/zquestz/plank-reloaded/archive/refs/tags/${pkgver}.tar.gz")
-sha256sum=("8beb003b03370273b7329fa6e3633eb213288e9676360e70e8a855bb84438c81")
+sha256sums=("8beb003b03370273b7329fa6e3633eb213288e9676360e70e8a855bb84438c81")
 makedepends=(
   "git"
   "cmake"

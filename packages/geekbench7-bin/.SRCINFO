@@ -1,0 +1,11 @@
+pkgbase = geekbench7-bin
+	gives = geekbench7
+	pkgver = 7.0.0
+	pkgdesc = Cross-platform benchmark that measures your system's performance with the press of a button
+	url = https://www.geekbench.com
+	arch = amd64
+	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
+	source = @geekbench7-bin~7.0.0::https://cdn.geekbench.com/Geekbench-7.0.0-Linux.tar.gz
+	sha256sums = 961a00ac0ac432ffa6874764e86c59d2e098fff65b5b398bb9381bf7fc46c81b
+
+pkgname = geekbench7-bin

@@ -5,7 +5,7 @@ pkgdesc="Mesa Fresh from Kisak PPA Sources - No opencl"
 arch=('amd64')
 url='https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa'
 source=("https://launchpad.net/~kisak/+archive/ubuntu/kisak-mesa/+sourcefiles/mesa/${pkgver}~kisak1~j/mesa_${pkgver}~kisak1~j.tar.xz")
-sha256sum=("3cad69b5a773928040a14e9cfadbca9f074660c9201eba7e73b2e6163ae6514e")
+sha256sums=("3cad69b5a773928040a14e9cfadbca9f074660c9201eba7e73b2e6163ae6514e")
 
 depends=(
   "libx11-dev"

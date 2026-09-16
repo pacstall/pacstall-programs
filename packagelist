@@ -21,6 +21,7 @@ appmenu-registrar-backport
 apptainer-deb
 apptainer-suid-deb
 apx-git
+apx-gui-git
 aqua-ide-bin
 ardour-git
 arduino-cli-bin
@@ -174,6 +175,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+fetch-git
 ffmpeg
 ffmpeg4.4
 ffnvcodec-headers
@@ -208,6 +210,7 @@ gearlever-git
 geekbench4-bin
 geekbench5-bin
 geekbench6-bin
+geekbench7-bin
 geekbenchai-bin
 genymotion-bin
 gfn-electron-bin
@@ -278,6 +281,7 @@ hello-rhino-git
 herbstluftwm-git
 herdr-bin
 heroic-games-launcher-deb
+hfdownloader-bin
 highlight-pointer-bin
 honkers-launcher-bin
 hplip
@@ -416,6 +420,7 @@ linux-modules-lts-6.6-deb
 linux-modules-stable-deb
 linux-wifi-hotspot-deb
 lix-git
+llama-swap-bin
 lm-studio-app
 lmms-git
 lrz-syncshare-deb
@@ -591,6 +596,7 @@ onefetch-bin
 onlyoffice-desktopeditors-deb
 onnxruntime-bin
 onnxruntime-gpu-bin
+open-webui-desktop-deb
 opencode-bin
 opendoas-git
 openrgb-git
@@ -642,6 +648,7 @@ planner-git
 plasma-compact-shutdown-git
 plasma-kara
 plexmediaserver-deb
+pnpm-bin
 polybar
 pomatez-deb
 popcorn-time-deb
@@ -677,12 +684,15 @@ python3-material-color-utilities
 python3-moddb
 python3-nuitka
 python3-pypresence
+python3-pyrefly
 python3-pywal16
 python3-pywalfox
+python3-ruff
 python3-sphinx-hawkmoth
 python3-uv
 python3-vkbasalt-cli
 python3-zombie-imp
+qbe
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qt6-style-kvantum
@@ -800,6 +810,7 @@ surf-distrotube-git
 surfshark-gui-deb
 suru-icon-theme-git
 suyu-app
+syncthing-bin
 systemcoding-conky
 tabby-deb
 tailscale
@@ -952,6 +963,7 @@ youtube-dl-git
 youtube-music-deb
 yt-dlp
 zap
+zcode-deb
 zed-editor-preview-bin
 zed-editor-stable-bin
 zen-browser-bin

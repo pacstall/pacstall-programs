@@ -1,0 +1,12 @@
+pkgname="open-webui-desktop-deb"
+pkgver="0.0.20"
+gives="open-webui"
+breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
+pkgdesc="User-friendly AI chat interface that supports Ollama, OpenAI API"
+repology=("project: open-webui-desktop")
+maintainer="Tobias Heinlein <nionxtrix@mailbox.org>"
+source_amd64=("https://github.com/open-webui/desktop/releases/download/v${pkgver}/open-webui_amd64.deb")
+source_arm64=("https://github.com/open-webui/desktop/releases/download/v${pkgver}/open-webui_arm64.deb")
+sha256sum_amd64="85bd6f16a77b170b05c0fcfd4c46d945d2f1444e8fe65a35c29bb1c2cd65d447"
+sha256sum_arm64="bd756e3aa43120ad377a906a45f9c261321d60f79610342dac58f91525565953"
+arch=('arm64' 'amd64')

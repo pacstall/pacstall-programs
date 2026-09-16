@@ -50,7 +50,7 @@ source=(
   "lxterm"
   "lxterm.1"
 )
-sha256sum=(
+sha256sums=(
   "6b0232f00aead7ccdcebdf07e9458884d6c45247dd0574b3efd190cb7b15c1b0"
   "92f030891c2306718e242ee784b9c12bb5dfcd01baf34c1992162011caec892f"
   "2b8de0753450ab2fdd9bc5a10f5fa9feaac4abae3b86ac773aef3652a6e56cda"

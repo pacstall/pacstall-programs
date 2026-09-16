@@ -41,5 +41,6 @@ pkgbase = plank-reloaded
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: plank-reloaded
 	source = https://github.com/zquestz/plank-reloaded/archive/refs/tags/0.11.172.tar.gz
+	sha256sums = 8beb003b03370273b7329fa6e3633eb213288e9676360e70e8a855bb84438c81
 
 pkgname = plank-reloaded

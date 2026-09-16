@@ -1,10 +1,10 @@
 pkgname="linux-image-sunxi-deb"
-pkgver="6.18.46"
+pkgver="6.18.51"
 basever="6.18"
 buildver="1"
 gives="linux-image-${basever}-sunxi64"
 source=("https://repo.mobian.org/pool/main/l/linux-${basever}-sunxi64/${gives}_${pkgver}-${buildver}_arm64.deb")
-sha256sums=("5ffa6012e58620ef25131d2d01a152e540bd56edd8c64d87d52679bb9fc0cb7e")
+sha256sums=("6812d8b52c1a7c94352b38bc08250827bc282fec6797d0dd1d37377ff1c0b569")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
 pkgdesc="Linux kernel image files built for PINE64 Sunxi devices (Mobian)"
 arch=('arm64')

@@ -7,7 +7,7 @@ conflicts=("${_qt5}" "${_qt5}-themes" "${_qt5}-l10n" "${pkgname}-themes" "${pkgn
 arch=("any")
 pkgver="1.1.3"
 source=("https://github.com/tsujan/Kvantum/releases/download/V${pkgver}/Kvantum-${pkgver}.tar.xz")
-sha256sum=("d9e4eca0c0a760a032c7c26c1baffa1409eb2ad6f1c05d341109fa5751a3f041")
+sha256sums=("d9e4eca0c0a760a032c7c26c1baffa1409eb2ad6f1c05d341109fa5751a3f041")
 compatible=(
   "ubuntu:oracular"
   "debian:testing"
