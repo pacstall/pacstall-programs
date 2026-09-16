@@ -12,10 +12,7 @@ sha256sums=('SKIP')
 sha256sums_amd64=("37035f853b9f276e70a9d66e45757bdda54e1e376a18f4388d974c5da5bedef3")
 sha256sums_arm64=("7408cb3a25afa33268cfc3bf7de2ab338fea13d5d2f3720d038202e20599b60d")
 pkgdesc="End-to-end encrypted note taking alternative to Evernote"
-<<<<<<< HEAD
 maintainer=("Tai Lam <taivlam-aur-mpr.tinsmith796@silomails.com>")
-=======
->>>>>>> 96c2847c5 (rm: maintainership)
 license=('GPL-3.0-only')
 
 prepare() {
