@@ -16810,8 +16810,13 @@ pkgname = tmpmail-bin
 ---
 pkgbase = tmux
 	pkgver = 3.7c
+	pkgrel = 2
 	pkgdesc = A terminal multiplexer
 	arch = any
+	depends = libevent-core-2.1-7t64 | libevent-core-2.1-7
+	depends = libevent-pthreads-2.1-7t64 | libevent-pthreads-2.1-7
+	depends = libtinfo6
+	depends = libutempter0
 	makedepends = gcc
 	makedepends = make
 	makedepends = pkg-config
