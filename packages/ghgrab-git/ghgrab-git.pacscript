@@ -4,13 +4,11 @@ pkgdesc="Simple, pretty terminal tool that lets you browse and download files fr
 url='https://ghgrab.readthedocs.io/'
 maintainer=("CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>")
 pkgver="2.0.2"
-arch=('amd64' 'arm64')   
+arch=('amd64' 'arm64')
 license=('MIT')
 source=("git+https://github.com/abhixdd/ghgrab.git")
 external_connection=true
-makdepends=(
-  "cargo"
-)
+pacdeps=("rust-bin")
 
 build() {
   cd "${srcdir}/ghgrab"
