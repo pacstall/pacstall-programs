@@ -14,6 +14,7 @@ sha256sums=(
   "SKIP"
 )
 repology=("project: visualvm")
+maintainer=("Matthias Mailänder <matthias@mailaender.name>")
 
 package() {
   cd "${srcdir}"
