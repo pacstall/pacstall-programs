@@ -5,7 +5,6 @@ pkgbase = obs-studio-deb
 	arch = amd64
 	compatible = ubuntu:noble
 	license = GPL-2.0-only
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: obs-studio
 	source = https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Ubuntu-24.04-x86_64.deb
 	sha256sums = a3bb1b0176604dad9e22710e057f0fdd76e8afb600e0e1914c30464ae49908e8

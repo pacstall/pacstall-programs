@@ -9,7 +9,6 @@ pkgbase = lazydocker-bin
 	pacdeps = docker-compose-plugin-bin
 	pacdeps = docker-buildx-plugin-bin
 	license = MIT
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: lazydocker
 	source_amd64 = https://github.com/jesseduffield/lazydocker/releases/download/v0.25.2/lazydocker_0.25.2_Linux_x86_64.tar.gz
 	sha256sums_amd64 = 0d9dbfc26068b218e7ed84b104748cadc6e3cf733c0afd35465306fb39b9523c

@@ -152,7 +152,6 @@ pkgbase = obs-studio
 	optdepends = vlc: VLC Media Source
 	pacdeps = rnnoise
 	license = GPL-2.0-only
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: obs-studio
 	source = https://github.com/obsproject/obs-studio.git#tag=32.1.2
 	source = https://cdn-fastly.obsproject.com/downloads/cef_binary_6533_linux_x86_64.tar.xz

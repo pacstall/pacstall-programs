@@ -19,7 +19,6 @@ pkgbase = sqlitebrowser
 	makedepends = qttools5-dev-tools
 	license = MPL-2.0
 	license = GPL-3.0+
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: sqlitebrowser
 	source = https://github.com/sqlitebrowser/sqlitebrowser/archive/refs/tags/v3.13.1.tar.gz
 	sha256sums = 1044ba67d649cabc459eb887c016f70d6a404ad651390ab33bf7859dc7f1b67b

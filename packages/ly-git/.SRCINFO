@@ -13,7 +13,6 @@ pkgbase = ly-git
 	replaces = lightdm
 	replaces = sddm
 	license = WTFPL
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: ly
 	source = https://codeberg.org/fairyglade/ly.git
 
