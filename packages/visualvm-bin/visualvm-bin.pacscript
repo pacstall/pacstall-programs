@@ -34,6 +34,7 @@ Icon=visualvm
 Categories=Development;Java;
 Terminal=false
 Type=Application
+StartupWMClass=VisualVM 2.2.1
 END
 
   install -Dm644 "visualvm.desktop" -t "${pkgdir}/usr/share/applications"
