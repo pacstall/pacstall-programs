@@ -19,7 +19,7 @@ repology=("project: distrobox")
 
 build() {
   cd "${srcdir}/${pkgname%-git}"
-  make build
+  make build -j"${NCPU}"
 }
 
 package() {
