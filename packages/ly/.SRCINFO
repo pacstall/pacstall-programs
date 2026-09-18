@@ -13,7 +13,6 @@ pkgbase = ly
 	replaces = lightdm
 	replaces = sddm
 	license = WTFPL
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: ly
 	source = ly::https://codeberg.org/fairyglade/ly/archive/v1.4.1.tar.gz
 	sha256sums = 4d1c10422e6c5b8d5a795150e4c364c82404f900c1a04318b83fe8d81fade58b

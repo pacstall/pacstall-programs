@@ -6,7 +6,6 @@ pkgbase = cloudflare-warp-deb
 	arch = amd64
 	compatible = ubuntu:noble
 	compatible = ubuntu:jammy
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: cloudflare-warp
 	source_jammy = https://pkg.cloudflareclient.com/pool/jammy/main/c/cloudflare-warp/cloudflare-warp_2026.4.1390.0_amd64.deb
 	source_noble = https://pkg.cloudflareclient.com/pool/noble/main/c/cloudflare-warp/cloudflare-warp_2026.4.1390.0_amd64.deb

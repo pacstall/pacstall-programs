@@ -6,7 +6,6 @@ source_amd64=("https://github.com/amir1376/ab-download-manager/releases/download
 source_arm64=("https://github.com/amir1376/ab-download-manager/releases/download/v${pkgver}/ABDownloadManager_${pkgver}_linux_arm64.tar.gz")
 sha256sums_amd64=("daae532dfc07231dae02fce371a66b50e6c1ef4ca94a705bb3b5f2b996825ee7")
 sha256sums_arm64=("9d4add145477a28c339d8db938997d82eb2200851feab5ac432926359794a3e3")
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 repology=("project: ab-download-manager")
 license=('Apache-2.0')
 

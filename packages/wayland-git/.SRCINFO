@@ -45,7 +45,6 @@ pkgbase = wayland-git
 	provides = libwayland-egl-backend-dev:i386=1.24.0
 	provides = libwayland-bin:i386=1.24.0
 	license = MIT
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: wayland
 	source = git+https://gitlab.freedesktop.org/wayland/wayland.git
 

@@ -4,7 +4,6 @@ arch=("any")
 pkgver="10.14"
 url='https://www.wine-staging.com'
 license=("LGPL-2.1-or-later")
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 source=(
   "git+https://gitlab.winehq.org/wine/wine-staging.git#tag=v${pkgver}"
   "git+https://gitlab.winehq.org/wine/wine.git#tag=wine-${pkgver}"

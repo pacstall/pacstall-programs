@@ -9,5 +9,4 @@ source_arm64=("https://github.com/Figma-Linux/figma-linux/releases/download/v${p
 sha256sums_amd64=("ea515e89e7258b2b9376750209b2e9a105a2bb993738f1f16fe545d7b1ad111a")
 sha256sums_arm64=("32475046069b95857d44a07d6ec442beb7765d020ad55a245bd71b7c08a4c8f3")
 pkgdesc="Unofficial Electron-based Figma desktop app for Linux"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-2.0-only')

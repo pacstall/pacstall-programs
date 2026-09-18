@@ -28,7 +28,6 @@ makedepends=(
 )
 pacdeps=("rust-bin")
 pkgdesc="Tool for launching non-steam games with Proton"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-3.0-only')
 external_connection=true
 

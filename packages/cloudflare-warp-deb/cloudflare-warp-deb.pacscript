@@ -9,5 +9,4 @@ sha256sums_noble=("b84c268377b061970e0328dc71f42bce7d0cda4ca9f39b84386c29f6dd004
 sha256sums_jammy=("0e44f22051bbc93a04b5820844a3008ad4b2e2ac522cdda0e3989b57e1e1a3ee")
 gives="cloudflare-warp"
 pkgdesc="Cloudflare Warp Client"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 compatible=('ubuntu:noble' 'ubuntu:jammy')
