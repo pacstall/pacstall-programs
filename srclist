@@ -4424,6 +4424,20 @@ pkgbase = ghcup-bin
 
 pkgname = ghcup-bin
 ---
+pkgbase = ghgrab-git
+	gives = ghgrab
+	pkgver = 2.0.2
+	pkgdesc = Simple, pretty terminal tool that lets you browse and download files from GitHub, GitLab, Codeberg, Gitea, and Forgejo without leaving your CLI
+	url = https://ghgrab.readthedocs.io/
+	arch = amd64
+	arch = arm64
+	makedepends = cargo-1.88 | cargo>=1.88 | rustup
+	license = MIT
+	maintainer = CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>
+	source = git+https://github.com/abhixdd/ghgrab.git
+
+pkgname = ghgrab-git
+---
 pkgbase = ghostty-app
 	gives = ghostty
 	pkgver = 1.3.1
