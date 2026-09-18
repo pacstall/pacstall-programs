@@ -5,6 +5,7 @@ pkgbase = visualvm-bin
 	url = https://visualvm.github.io/
 	arch = any
 	depends = openjdk-8-jdk | openjdk-11-jdk | openjdk-17-jdk | openjdk-21-jdk | openjdk-25-jdk
+	maintainer = Matthias Mailänder <matthias@mailaender.name>
 	repology = project: visualvm
 	source = https://github.com/oracle/visualvm/releases/download/2.2.1/visualvm_221.zip
 	source = visualvm.png::https://avatars.githubusercontent.com/u/16240463
