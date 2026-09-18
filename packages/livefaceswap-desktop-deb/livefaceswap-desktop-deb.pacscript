@@ -1,0 +1,10 @@
+pkgname="livefaceswap-desktop-deb"
+gives="livefaceswap-desktop"
+pkgver="0.2.10"
+pkgdesc="Cloud-powered live Face Swap, Live Try-On and Live Restyle with a webcam. Linux has in-app preview, but no virtual camera. An account, internet connection and session credits are required."
+url="https://livefaceswap.ai/desktop"
+arch=("amd64")
+compatible=("ubuntu:resolute")
+source=("https://github.com/LiveFaceSwapAI/livefaceswap/releases/download/v${pkgver}/LiveFaceSwap-Linux-${pkgver}-amd64.deb")
+sha256sums=("072b2343e78537c264444ebb4cd35ee85361978d828b416888ec72bb21a117c5")
+maintainer=("LiveFaceSwap AI <support@livefaceswap.ai>")
