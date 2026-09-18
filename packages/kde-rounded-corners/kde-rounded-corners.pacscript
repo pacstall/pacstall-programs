@@ -1,13 +1,13 @@
 pkgname='kde-rounded-corners'
 pkgdesc='Makes the window borders round'
-pkgver='0.9.0'
+pkgver='0.10.0'
 gives='kde-rounded-corners'
 repology=("project: ${gives}")
 arch=('all')
 breaks=("${gives}-git" "${gives}-deb")
 url='https://github.com/matinlotfali/KDE-Rounded-Corners'
 source=("https://github.com/matinlotfali/KDE-Rounded-Corners/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('4acaf2dad31a22cbfa009bdce836b969177996527237eb8c62c8393e03622c5f')
+sha256sums=('f3f03d96e17ae4b7dcee6347a01c75de6f90ed19e070e98ae8bf2dd71ae276db')
 license=('GPL-3.0-only')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 makedepends=('git' 'cmake' 'g++' 'extra-cmake-modules' 'kwin-dev>=4:6.0.0' 'qt6-base-private-dev' 'qt6-base-dev-tools' 'libkf6kcmutils-dev' 'libdrm-dev')

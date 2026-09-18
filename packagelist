@@ -175,6 +175,7 @@ fennel-bin
 ferdium-deb
 ferium-bin
 feroxbuster-bin
+fetch-git
 ffmpeg
 ffmpeg4.4
 ffnvcodec-headers
@@ -683,12 +684,15 @@ python3-material-color-utilities
 python3-moddb
 python3-nuitka
 python3-pypresence
+python3-pyrefly
 python3-pywal16
 python3-pywalfox
+python3-ruff
 python3-sphinx-hawkmoth
 python3-uv
 python3-vkbasalt-cli
 python3-zombie-imp
+qbe
 qogir-gtk-theme-bin
 qogir-icon-theme-bin
 qt6-style-kvantum

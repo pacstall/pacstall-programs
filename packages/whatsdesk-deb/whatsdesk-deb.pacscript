@@ -1,9 +1,9 @@
 pkgname="whatsdesk-deb"
 gives="whatsdesk"
-pkgver="0.3.14"
+pkgver="0.3.15"
 pkgdesc="Unofficial client of Whatsapp"
 maintainer=("chrisb09 <christian.brinkmann09@gmail.com>")
 arch=('amd64')
 source=("https://zerkc.gitlab.io/whatsdesk/downloads/whatsdesk_${pkgver}_amd64.deb")
-sha256sums=("7bf1d4117af11fc394c179ecd3c6ccf70cbedbab6f148db5c162d153eb1620fa")
+sha256sums=("ce1d579ebb3a7919b248737258860afe676b95a1bd456219de85a833067a9284")
 url='https://gitlab.com/zerkc/whatsdesk'
