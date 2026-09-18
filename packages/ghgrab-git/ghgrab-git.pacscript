@@ -8,17 +8,17 @@ arch=('amd64' 'arm64')
 license=('MIT')
 source=("git+https://github.com/abhixdd/ghgrab.git")
 external_connection=true
-pacdeps=("rust-bin")
+_min_cargo='1.88'
+makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup")
 
 build() {
   cd "${srcdir}/ghgrab"
-  cargo build --release
+  export CARGO_HOME="${srcdir}/cargo-cache"
+  export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
+  cargo build -j"${NCPU}" --release --locked
 }
 
 package() {
   cd "${srcdir}/ghgrab"
-
-  install -Dm755 -d "${pkgdir}/usr/bin"
-
-  install -Dm755 "target/release/ghgrab" "${pkgdir}/usr/bin/ghgrab"
+  install -Dm755 "target/release/ghgrab" -t "${pkgdir}/usr/bin"
 }

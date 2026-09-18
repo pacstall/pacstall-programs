@@ -4436,7 +4436,7 @@ pkgbase = ghgrab-git
 	url = https://ghgrab.readthedocs.io/
 	arch = amd64
 	arch = arm64
-	pacdeps = rust-bin
+	makedepends = cargo-1.88 | cargo>=1.88 | rustup
 	license = MIT
 	maintainer = CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>
 	source = git+https://github.com/abhixdd/ghgrab.git
