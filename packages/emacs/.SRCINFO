@@ -12,6 +12,7 @@ pkgbase = emacs
 	depends = libgnutls30
 	depends = libsqlite3-0
 	depends = libwebp7 | libwebp6
+	depends = libwebpdecoder3
 	depends = liblcms2-2
 	depends = libnss3
 	depends = libgtk-4-1 | libgtk-3-0
