@@ -1,7 +1,7 @@
 pkgbase = bes2600-firmware-git
 	gives = bes2600-firmware
 	pkgver = 0.0.1
-	pkgrel = 2
+	pkgrel = 3
 	pkgdesc = firmware files for BES2600 WLAN/BT combo chip and PineTab2 systemd files for controlling
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
