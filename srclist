@@ -401,6 +401,18 @@ pkgbase = apptainer-suid-deb
 
 pkgname = apptainer-suid-deb
 ---
+pkgbase = aptui-git
+	pkgver = 0.8.2
+	pkgdesc = TUI package manager for APT-based Linux distributions
+	url = https://github.com/mexirica/aptui
+	arch = any
+	makedepends = golang
+	provides = aptui
+	maintainer = CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>
+	source = git+https://github.com/mexirica/aptui.git
+
+pkgname = aptui-git
+---
 pkgbase = apx-git
 	gives = apx
 	pkgver = 2.4.3
