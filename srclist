@@ -8741,6 +8741,18 @@ pkgbase = linux-wifi-hotspot-deb
 
 pkgname = linux-wifi-hotspot-deb
 ---
+pkgbase = livefaceswap-desktop-deb
+	gives = livefaceswap-desktop
+	pkgver = 0.2.10
+	pkgdesc = Cloud-powered live Face Swap
+	url = https://livefaceswap.ai/desktop
+	arch = amd64
+	maintainer = LiveFaceSwap AI <support@livefaceswap.ai>
+	source = https://github.com/LiveFaceSwapAI/livefaceswap/releases/download/v0.2.10/LiveFaceSwap-Linux-0.2.10-amd64.deb
+	sha256sums = 072b2343e78537c264444ebb4cd35ee85361978d828b416888ec72bb21a117c5
+
+pkgname = livefaceswap-desktop-deb
+---
 pkgbase = lix-git
 	gives = lix
 	pkgver = 2.90
