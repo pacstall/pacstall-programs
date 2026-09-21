@@ -197,6 +197,7 @@ foliate-deb
 font-downloader
 forticlient-deb
 fp5-alsa-git
+fp5-deviceinfo
 fp5-firmware-git
 fpc-laz-deb
 fpc-src-deb
