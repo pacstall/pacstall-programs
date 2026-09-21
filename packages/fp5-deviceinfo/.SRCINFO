@@ -1,0 +1,10 @@
+pkgbase = fp5-deviceinfo
+	pkgver = 0.0.1
+	pkgdesc = DeviceInfo data for Fairphone 5
+	arch = any
+	depends = deviceinfo-tools
+	depends = libdeviceinfo0
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty
+
+pkgname = fp5-deviceinfo
