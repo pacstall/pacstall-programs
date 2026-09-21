@@ -8806,7 +8806,7 @@ pkgname = lix-git
 ---
 pkgbase = llama-swap-bin
 	gives = llama-swap
-	pkgver = 252
+	pkgver = 256
 	pkgdesc = Reliable model swapping for any local OpenAI/Anthropic compatible server
 	url = https://github.com/mostlygeek/llama-swap/
 	arch = amd64
@@ -8818,10 +8818,10 @@ pkgbase = llama-swap-bin
 	license = MIT
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	repology = project: llama-swap
-	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v252/llama-swap_252_linux_amd64.tar.gz
-	sha256sums_amd64 = 5f858d72a90ae28aa7c75d34df25d05f9d7daec8c47b9503fb8a264bc6d95d25
-	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v252/llama-swap_252_linux_arm64.tar.gz
-	sha256sums_arm64 = 19d204a821db038759123088b6e9d3357c4d13bcec0cef0c1bc75e3dcebf60ec
+	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v256/llama-swap_256_linux_amd64.tar.gz
+	sha256sums_amd64 = 557757336cde1a667f0b200d4a84c48c9f5fdf561fd8ae969a2bed9d8c94ec48
+	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v256/llama-swap_256_linux_arm64.tar.gz
+	sha256sums_arm64 = f921f33063a34ef25b7061d7153fbafaa954061ad131f48e84e782b22f6cd0ee
 
 pkgname = llama-swap-bin
 ---
