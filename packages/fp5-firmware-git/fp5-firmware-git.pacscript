@@ -58,7 +58,7 @@ package() {
   # udev rules
   echo 'SUBSYSTEM=="misc", KERNEL=="fastrpc-adsp*", ENV{IIO_SENSOR_PROXY_TYPE}+="ssc-accel ssc-proximity"
 SUBSYSTEM=="misc", KERNEL=="fastrpc-*", ENV{ACCEL_MOUNT_MATRIX}+="-1, 0, 0; 0, -1, 0; 0, 0, -1"' \
-| tee "${pkgdir}/etc/udev/rules.d/99-fp5-sensors.rules" > /dev/null
+    | tee "${pkgdir}/etc/udev/rules.d/99-fp5-sensors.rules" > /dev/null
 
   # systemd service
   echo '[Unit]
@@ -87,6 +87,6 @@ post_install() {
 post_remove() {
   if [[ -f /etc/systemd/system/multi-user.target.wants/hexagonrpcd-adsp-sensorspd.service ]]; then
     sudo rm -f /etc/systemd/system/multi-user.target.wants/hexagonrpcd-adsp-sensorspd.service \
-    && echo "Removed /etc/systemd/system/multi-user.target.wants/hexagonrpcd-adsp-sensorspd.service."
+      && echo "Removed /etc/systemd/system/multi-user.target.wants/hexagonrpcd-adsp-sensorspd.service."
   fi
 }
