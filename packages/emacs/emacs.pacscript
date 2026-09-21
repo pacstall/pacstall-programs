@@ -211,7 +211,7 @@ fi
 # Needs a graphical frame: no-op under CLI, so the dep is skipped there too.
 if [[ ${WEBP} == "YES" && ${CLI} != "YES" ]]; then
   makedepends+=("libwebp-dev")
-  depends+=("libwebp7 | libwebp6")
+  depends+=("libwebp7 | libwebp6" "libwebpdecoder3")
 fi
 
 # Needs a graphical frame: no-op under CLI, so the dep is skipped there too.
