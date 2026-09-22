@@ -9,7 +9,7 @@ source=("git+https://github.com/mexirica/aptui.git")
 external_connection=true
 _min_golang='1.26'
 makedepends=(
-  "golang-${_min_golang}"
+  "golang-${_min_golang}-go | golang-go>=${_min_golang}"
 )
 
 build() {
