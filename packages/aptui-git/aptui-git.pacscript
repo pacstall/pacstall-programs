@@ -8,7 +8,7 @@ pkgver="0.8.2"
 arch=("any")
 source=("git+https://github.com/mexirica/aptui.git")
 external_connection=true
-_min_golang='1.26'
+_min_golang='1.24'
 makedepends=(
   "golang-${_min_golang}-go | golang-go>=${_min_golang}"
 )
