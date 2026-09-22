@@ -4,7 +4,7 @@ pkgbase = aptui-git
 	pkgdesc = TUI package manager for APT-based Linux distributions
 	url = https://github.com/mexirica/aptui
 	arch = any
-	makedepends = golang-1.24-go | golang-go>=1.24
+	makedepends = golang-1.26-go | golang-go>=1.26
 	provides = aptui
 	maintainer = CiccioBro17 <203853964+CiccioBro17@users.noreply.github.com>
 	source = git+https://github.com/mexirica/aptui.git
