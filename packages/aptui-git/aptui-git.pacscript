@@ -1,4 +1,5 @@
 pkgname="aptui-git"
+gives="aptui"
 provides=("aptui")
 pkgdesc="TUI package manager for APT-based Linux distributions"
 url='https://github.com/mexirica/aptui'
