@@ -14,6 +14,7 @@ makedepends=(
 
 build() {
   cd "${srcdir}/aptui"
+  export PATH="/usr/lib/go-${_min_golang}/bin:${PATH}"
   go build -o aptui .
 }
 
