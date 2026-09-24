@@ -1336,7 +1336,7 @@ pkgname = brave-browser-beta-deb
 ---
 pkgbase = brave-browser-deb
 	gives = brave-browser
-	pkgver = 1.93.138
+	pkgver = 1.96.55
 	pkgdesc = Release version of world's most unique, privacy friendly web browser
 	url = https://brave.com/
 	arch = amd64
@@ -1348,10 +1348,10 @@ pkgbase = brave-browser-deb
 	maintainer = Elsie19 <elsie19@pm.me>
 	maintainer = bibelin <balian1belin@yandex.ru>
 	repology = project: brave
-	source_amd64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.93.138_amd64.deb
-	sha256sums_amd64 = cf18b2d443f067241e13662484c4b9523f13ff089ba1fc27c88f67911586ac9f
-	source_arm64 = https://brave-browser-apt-release.s3.brave.com/pool/main/b/brave-browser/brave-browser_1.93.138_arm64.deb
-	sha256sums_arm64 = 5965e7d90d9ac6187dfca53aeefeb07f8be64515ee6262476cd9b23afbef83d7
+	source_amd64 = https://github.com/brave/brave-browser/releases/download/v1.96.55/brave-browser_1.96.55_amd64.deb
+	sha256sums_amd64 = 06c47f3580f2797ec6b27f9fdb96d9bc61174acee8f4a070c62e5736c1677dbe
+	source_arm64 = https://github.com/brave/brave-browser/releases/download/v1.96.55/brave-browser_1.96.55_arm64.deb
+	sha256sums_arm64 = 8e59715795165a3d584d7d76b6952c43d51fa67ee3b47920543e533aef7934f3
 
 pkgname = brave-browser-deb
 ---
