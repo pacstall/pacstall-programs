@@ -7,7 +7,9 @@ maintainer=("Sarim <sarimw@proton.me>" "pejuton <pejuton@proton.me>")
 breaks=("ffmpeg4.4")
 conflicts=("ffmpeg4.4")
 pkgdesc="Complete, cross-platform solution to record, convert and stream audio and video"
-pacdeps=("libfdk-aac-dev-deb")
+pacdeps_debian=("libfdk-aac-dev-deb") # available in non-free archives
+pacdeps_jammy=("libfdk-aac-dev-deb")  # available in multiverse repository
+makedepends_ubuntu=("libfdk-aac-dev")
 makedepends=("autoconf"
   "automake"
   "cmake"
