@@ -15550,6 +15550,20 @@ pkgbase = singularity-desktop-git
 
 pkgname = singularity-desktop-git
 ---
+pkgbase = skrepka-deb
+	gives = skrepka
+	pkgver = 0.3.0
+	pkgdesc = Clipboard history for the Linux desktop, synced with your other machines
+	url = https://github.com/psoldunov/skrepka
+	arch = amd64
+	license = MIT
+	maintainer = Philipp Soldunov <69530789+psoldunov@users.noreply.github.com>
+	repology = project: skrepka
+	source = https://github.com/psoldunov/skrepka/releases/download/v0.3.0/skrepka-linux-x86_64.deb
+	sha256sums = 8d6331a1b872ee4353c89b43515b4425a87523cbd0466163fb218a954f294ad4
+
+pkgname = skrepka-deb
+---
 pkgbase = slack-deb
 	gives = slack-desktop
 	pkgver = 4.48.95
