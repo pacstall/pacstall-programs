@@ -1,5 +1,5 @@
 pkgname='python3-ruff'
-pkgver='0.16.7'
+pkgver='0.16.8'
 pkgdesc='Fast Python linter and code formatter, written in Rust'
 license=('MIT')
 repology=('project: python:ruff')
@@ -7,7 +7,7 @@ url='https://github.com/astral-sh/ruff'
 arch=('any')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 source=("https://github.com/astral-sh/ruff/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('c3114db827dd947aa96603387318ea0099c65c6d88abb2704f9e63fc11407097')
+sha256sums=('42f2b5af083151646886e7eddcf10ebfdfa89d4ba1a8146b82422497688921d3')
 _min_cargo='1.96'
 makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup")
 external_connection=true
