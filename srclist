@@ -3740,7 +3740,7 @@ pkgbase = fetch-git
 pkgname = fetch-git
 ---
 pkgbase = ffmpeg
-	pkgver = 9.0.1
+	pkgver = 9.0.2
 	pkgdesc = Complete, cross-platform solution to record, convert and stream audio and video
 	url = https://ffmpeg.org
 	arch = amd64
@@ -3779,14 +3779,16 @@ pkgbase = ffmpeg
 	makedepends = libsvtav1enc-dev
 	makedepends = libunistring-dev
 	makedepends = libxcb-xfixes0-dev
-	pacdeps = libfdk-aac-dev-deb
 	conflicts = ffmpeg4.4
 	breaks = ffmpeg4.4
 	maintainer = Sarim <sarimw@proton.me>
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: ffmpeg
-	source = https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n9.0.1.tar.gz
-	sha256sums = 195d54bebe1a27f84d77f4b989d193466f305b355da92292766a69f16880b18a
+	source = https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n9.0.2.tar.gz
+	sha256sums = 6e374ed621e48faa40639307dff48ba6fe574a509977956d2cce9669b7cc27e9
+	makedepends_ubuntu = libfdk-aac-dev
+	pacdeps_jammy = libfdk-aac-dev-deb
+	pacdeps_debian = libfdk-aac-dev-deb
 
 pkgname = ffmpeg
 ---

@@ -1,5 +1,5 @@
 pkgname="ffmpeg"
-pkgver="9.0.1"
+pkgver="9.0.2"
 arch=("amd64")
 url='https://ffmpeg.org'
 repology=("project: ${pkgname}")
@@ -7,7 +7,9 @@ maintainer=("Sarim <sarimw@proton.me>" "pejuton <pejuton@proton.me>")
 breaks=("ffmpeg4.4")
 conflicts=("ffmpeg4.4")
 pkgdesc="Complete, cross-platform solution to record, convert and stream audio and video"
-pacdeps=("libfdk-aac-dev-deb")
+pacdeps_debian=("libfdk-aac-dev-deb") # available in non-free archives
+pacdeps_jammy=("libfdk-aac-dev-deb")  # available in multiverse repository
+makedepends_ubuntu=("libfdk-aac-dev")
 makedepends=("autoconf"
   "automake"
   "cmake"
@@ -44,7 +46,7 @@ makedepends=("autoconf"
   "libunistring-dev"
   "libxcb-xfixes0-dev")
 source=("https://github.com/FFmpeg/FFmpeg/archive/refs/tags/n${pkgver}.tar.gz")
-sha256sums=("195d54bebe1a27f84d77f4b989d193466f305b355da92292766a69f16880b18a")
+sha256sums=("6e374ed621e48faa40639307dff48ba6fe574a509977956d2cce9669b7cc27e9")
 
 prepare() {
   cd "FFmpeg-n${pkgver}"
