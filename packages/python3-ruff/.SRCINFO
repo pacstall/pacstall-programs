@@ -1,5 +1,5 @@
 pkgbase = python3-ruff
-	pkgver = 0.16.7
+	pkgver = 0.16.8
 	pkgdesc = Fast Python linter and code formatter, written in Rust
 	url = https://github.com/astral-sh/ruff
 	arch = any
@@ -7,7 +7,7 @@ pkgbase = python3-ruff
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: python:ruff
-	source = https://github.com/astral-sh/ruff/archive/refs/tags/0.16.7.tar.gz
-	sha256sums = c3114db827dd947aa96603387318ea0099c65c6d88abb2704f9e63fc11407097
+	source = https://github.com/astral-sh/ruff/archive/refs/tags/0.16.8.tar.gz
+	sha256sums = 42f2b5af083151646886e7eddcf10ebfdfa89d4ba1a8146b82422497688921d3
 
 pkgname = python3-ruff
