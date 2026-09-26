@@ -7,6 +7,7 @@ pkgdesc="1Password CLI"
 sha256sums=("7a7b7168f521d31838f0cc59abf172527853308c9b9cceee34895121acb0be0f")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>")
+nothing=""
 
 package() {
   cd "${pkgname}~${pkgver}"
