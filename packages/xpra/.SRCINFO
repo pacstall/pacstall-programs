@@ -1,5 +1,5 @@
 pkgbase = xpra
-	pkgver = 6.5.3
+	pkgver = 6.5.4
 	pkgdesc = Persistent remote applications for X
 	url = https://xpra.org/
 	arch = any
@@ -85,7 +85,7 @@ pkgbase = xpra
 	license = GPL-2.0-or-later
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: xpra
-	source = https://github.com/Xpra-org/xpra/archive/refs/tags/v6.5.3.tar.gz
-	sha256sums = 87ac8dbf38fa162402ab95f4591d9906d3695e26958943f6d833dc105bce905c
+	source = https://github.com/Xpra-org/xpra/archive/refs/tags/v6.5.4.tar.gz
+	sha256sums = f7bc6adc65be9684aac70e5bef15c4d1f363d14bd94f6c3df93d933f7ea208a6
 
 pkgname = xpra
