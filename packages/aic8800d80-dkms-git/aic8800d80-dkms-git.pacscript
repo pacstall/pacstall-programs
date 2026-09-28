@@ -35,7 +35,7 @@ package() {
 }
 
 pre_upgrade() {
-  if dkms status "${_dkmsname}/${pkgver}" 2>/dev/null | grep -q .; then
+  if dkms status "${_dkmsname}/${pkgver}" 2> /dev/null | grep -q .; then
     dkms remove -m "${_dkmsname}" -v "${pkgver}" --all
   fi
 }
@@ -50,7 +50,7 @@ post_upgrade() {
 }
 
 pre_remove() {
-  if dkms status "${_dkmsname}/${pkgver}" 2>/dev/null | grep -q .; then
+  if dkms status "${_dkmsname}/${pkgver}" 2> /dev/null | grep -q .; then
     dkms remove -m "${_dkmsname}" -v "${pkgver}" --all
   fi
 }
@@ -65,7 +65,7 @@ post_install() {
   local kernel_version
   kernel_version="$(uname -r)"
   if [[ -d "/lib/modules/${kernel_version}/build" ]]; then
-    if dkms status "${_dkmsname}/${pkgver}" 2>/dev/null | grep -q .; then
+    if dkms status "${_dkmsname}/${pkgver}" 2> /dev/null | grep -q .; then
       dkms remove -m "${_dkmsname}" -v "${pkgver}" --all
     fi
     dkms add -m "${_dkmsname}" -v "${pkgver}"
