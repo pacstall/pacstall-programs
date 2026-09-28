@@ -1,0 +1,19 @@
+pkgbase = aic8800d80-dkms-git
+	gives = aic8800d80-dkms
+	pkgver = 1.0.0
+	pkgdesc = Kernel modules for AIC8800D80 USB WiFi adapters
+	url = https://github.com/shenmintao/aic8800d80
+	arch = amd64
+	depends = dkms
+	depends = eject
+	depends = rfkill
+	depends = usb-modeswitch
+	conflicts = aic8800d80
+	conflicts = aic8800
+	conflicts = aic8800d80-legacy-dkms-git
+	license = GPL-2.0-only
+	maintainer = xdavius <xdavius@github.com>
+	source = git+https://github.com/shenmintao/aic8800d80.git#branch=main
+	sha512sums = SKIP
+
+pkgname = aic8800d80-dkms-git
