@@ -1,16 +1,16 @@
-pkgname='aic8800d80-dkms-git'
-gives='aic8800d80-dkms'
-conflicts=('aic8800d80' 'aic8800' 'aic8800d80-legacy-dkms-git')
-pkgver='1.0.0'
-pkgdesc='Kernel modules for AIC8800D80 USB WiFi adapters'
+pkgname="aic8800d80-dkms-git"
+gives="aic8800d80-dkms"
+conflicts=("aic8800d80" "aic8800" "aic8800d80-legacy-dkms-git")
+pkgver="1.0.0"
+pkgdesc="Kernel modules for AIC8800D80 USB WiFi adapters"
 arch=('amd64')
 depends=("dkms" "eject" "rfkill" "usb-modeswitch")
-url="https://github.com/shenmintao/aic8800d80"
+url='https://github.com/shenmintao/aic8800d80'
 license=('GPL-2.0-only')
-source=('git+https://github.com/shenmintao/aic8800d80.git#branch=main')
+source=("git+https://github.com/shenmintao/aic8800d80.git#branch=main")
 sha512sums=('SKIP')
 maintainer=("xdavius <xdavius@github.com>")
-_dkmsname='aic8800'
+_dkmsname="aic8800"
 
 package() {
   cd "${srcdir}/aic8800d80"
