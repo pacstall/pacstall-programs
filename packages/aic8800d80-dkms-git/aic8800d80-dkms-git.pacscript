@@ -46,7 +46,7 @@ post_upgrade() {
   dkms add -m "${_dkmsname}" -v "${pkgver}"
   dkms build -m "${_dkmsname}" -v "${pkgver}"
   dkms install -m "${_dkmsname}" -v "${pkgver}" --force
-  if [[ -f /usr/sbin/update-initramfs ]]; then
+  if [[ -x /usr/sbin/update-initramfs ]]; then
     update-initramfs -u
   fi
 }
@@ -58,7 +58,7 @@ pre_remove() {
 }
 
 post_remove() {
-  if [[ -f /usr/sbin/update-initramfs ]]; then
+  if [[ -x /usr/sbin/update-initramfs ]]; then
     update-initramfs -u
   fi
 }
@@ -73,7 +73,7 @@ post_install() {
     dkms add -m "${_dkmsname}" -v "${pkgver}"
     dkms build -m "${_dkmsname}" -v "${pkgver}"
     dkms install -m "${_dkmsname}" -v "${pkgver}" --force
-    if [[ -f /usr/sbin/update-initramfs ]]; then
+    if [[ -x /usr/sbin/update-initramfs ]]; then
       update-initramfs -u
     fi
   else
