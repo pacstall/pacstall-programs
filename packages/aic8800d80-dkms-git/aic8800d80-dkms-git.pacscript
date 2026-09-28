@@ -1,6 +1,6 @@
 pkgname="aic8800d80-dkms-git"
 gives="aic8800d80-dkms"
-conflicts=("aic8800d80" "aic8800" "aic8800d80-legacy-dkms-git")
+conflicts=("aic8800d80" "aic8800")
 pkgver="1.0.0"
 pkgdesc="Kernel modules for AIC8800D80 USB WiFi adapters"
 arch=('amd64')
