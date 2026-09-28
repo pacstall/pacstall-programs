@@ -129,6 +129,8 @@ pkgbase = aic8800d80-dkms-git
 	depends = usb-modeswitch
 	conflicts = aic8800d80
 	conflicts = aic8800
+	breaks = aic8800d80-legacy-dkms
+	replaces = aic8800d80-legacy-dkms
 	license = GPL-2.0-only
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://github.com/shenmintao/aic8800d80.git#branch=main
@@ -137,7 +139,7 @@ pkgbase = aic8800d80-dkms-git
 pkgname = aic8800d80-dkms-git
 ---
 pkgbase = aic8800d80-legacy-dkms-git
-	gives = aic8800d80-dkms
+	gives = aic8800d80-legacy-dkms
 	pkgver = 1.0.0
 	pkgdesc = Legacy MCU kernel modules for AIC8800D80 USB WiFi adapters
 	url = https://github.com/shenmintao/aic8800d80
@@ -148,6 +150,8 @@ pkgbase = aic8800d80-legacy-dkms-git
 	depends = usb-modeswitch
 	conflicts = aic8800d80
 	conflicts = aic8800
+	breaks = aic8800d80-dkms
+	replaces = aic8800d80-dkms
 	license = GPL-2.0-only
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://github.com/shenmintao/aic8800d80.git#branch=legacy-mcu1

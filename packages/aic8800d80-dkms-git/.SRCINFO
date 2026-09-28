@@ -10,6 +10,8 @@ pkgbase = aic8800d80-dkms-git
 	depends = usb-modeswitch
 	conflicts = aic8800d80
 	conflicts = aic8800
+	breaks = aic8800d80-legacy-dkms
+	replaces = aic8800d80-legacy-dkms
 	license = GPL-2.0-only
 	maintainer = xdavius <xdavius@github.com>
 	source = git+https://github.com/shenmintao/aic8800d80.git#branch=main
