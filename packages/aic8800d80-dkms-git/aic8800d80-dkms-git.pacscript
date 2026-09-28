@@ -77,6 +77,6 @@ post_install() {
       update-initramfs -u
     fi
   else
-    echo "ERROR: Linux headers for ${kernel_version} are not installed."
+    echo "ERROR: Linux headers for ${kernel_version} are not installed." 1>&2
   fi
 }
