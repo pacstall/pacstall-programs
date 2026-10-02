@@ -1,7 +1,7 @@
 pkgname="zcode-deb"
 gives="zcode"
 arch=("amd64" "arm64")
-pkgver="3.14.3"
+pkgver="3.14.4"
 replaces=("${gives}")
 breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app")
 url='https://zcode.z.ai'
@@ -10,6 +10,6 @@ maintainer=("Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
 depends=("libgtk-3-0" "libnotify4" "libnss3" "libxss1" "libxtst6" "xdg-utils" "libatspi2.0-0" "libuuid1" "libsecret-1-0")
 optdepends=("libappindicator3-1: system tray icon support")
 source_amd64=("https://cdn-zcode.z.ai/zcode/electron/releases/${pkgver}/linux-x64/ZCode-${pkgver}-linux-x64.deb")
-sha256sums_amd64=("8512fb78889686c7ecdc91a609a86e6b408255a10db0c9afba0d3e377b0b5b4f")
+sha256sums_amd64=("d753618845e5e057c29ccbc3917c08a4c8d99355deef7d6a0f4d2916ba69e4be")
 source_arm64=("https://cdn-zcode.z.ai/zcode/electron/releases/${pkgver}/linux-arm64/ZCode-${pkgver}-linux-arm64.deb")
-sha256sums_arm64=("18263ced23563fd4c9afcaa6971da9541126d53c81f91f0bb28c938bd9efd477")
+sha256sums_arm64=("6874d0b12f9522840746d81f39a001648be68eed3aa80c1348a4e360c44ef718")
