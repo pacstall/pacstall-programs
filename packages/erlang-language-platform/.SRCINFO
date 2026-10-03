@@ -1,5 +1,5 @@
 pkgbase = erlang-language-platform
-	pkgver = 2026-02-27
+	pkgver = 2026-08-10
 	pkgdesc = LSP server and CLI for the Erlang programming language
 	url = https://whatsapp.github.io/erlang-language-platform
 	arch = any
@@ -14,7 +14,7 @@ pkgbase = erlang-language-platform
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: elp
-	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2026-02-27.tar.gz
-	sha256sums = 60e31c9fa6bb7578640b7f2db07e19108dbf35267d3959bd18786463eb7b431c
+	source = https://github.com/WhatsApp/erlang-language-platform/archive/refs/tags/2026-08-10.tar.gz
+	sha256sums = f6de7b05d3522bea8b0697eef48a0902c2003a0fb01732772a533ec63feb7df0
 
 pkgname = erlang-language-platform
