@@ -1,7 +1,7 @@
 pkgname="rustdesk-deb"
 gives="rustdesk"
 repology=("project: ${gives}")
-pkgver="1.4.9"
+pkgver="1.5.0"
 arch=('amd64' 'arm64' 'armhf')
 depends=(
   "libgtk-3-0" "libxcb-randr0" "libxdo3" "libxfixes3" "libxcb-shape0" "libxcb-xfixes0"
@@ -11,8 +11,8 @@ depends=(
 source_amd64=("https://github.com/rustdesk/rustdesk/releases/download/${pkgver}/${gives}-${pkgver}-x86_64.deb")
 source_arm64=("https://github.com/rustdesk/rustdesk/releases/download/${pkgver}/${gives}-${pkgver}-aarch64.deb")
 source_armhf=("https://github.com/rustdesk/rustdesk/releases/download/${pkgver}/${gives}-${pkgver}-armv7-sciter.deb")
-sha256sums_amd64=("7244ba47c40e804172044bfbe659467c54ce46554c98e78c8c0406f1d612fda3")
-sha256sums_arm64=("ce62c996f14d33f3bbe3a330e953644a44bace7f05885a7953f7395d69fb49c0")
+sha256sums_amd64=("4e2b9701d25a7ef373f3d09bda584a37d6902f97a6ab15f2e86d4a5783e2a0ec")
+sha256sums_arm64=("1f2fc9be8321c10347aa33cb13198c6a956aec272c5e58ac81f4c0ef04037df3")
 sha256sums_armhf=("7c5f602f2978963fe00d75d69ec141261f27ad27920740d7c37313c402c486c8")
 conflicts=("${pkgname}" "${gives}")
 replaces=("${conflicts[@]}")
