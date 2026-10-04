@@ -239,6 +239,7 @@ gitkraken-deb
 gittype-bin
 gitui-git
 gldriver-test-deb
+gleam-bin
 glffetch-git
 glow-deb
 gnome-shell-extension-installer-git
