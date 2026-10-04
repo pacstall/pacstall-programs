@@ -1,0 +1,16 @@
+pkgbase = gleam-bin
+	gives = gleam
+	pkgver = 1.18.1
+	pkgdesc = Friendly language for building type-safe systems that scale!
+	url = https://gleam.run
+	arch = amd64
+	arch = arm64
+	optdepends = erlang-dev: Erlang/OTP development libraries and headers.
+	optdepends = rebar3: Erlang tool to create, develop and release Erlang libraries and applications.
+	license = Apache-2.0
+	source_amd64 = https://github.com/gleam-lang/gleam/releases/download/v1.18.1/gleam-v1.18.1-x86_64-unknown-linux-musl.tar.gz
+	sha256sums_amd64 = 4955a38c2e8c99457458e2471472ccd5ee3c45bd7637a315ce33bccf0dd75d9e
+	source_arm64 = https://github.com/gleam-lang/gleam/releases/download/v1.18.1/gleam-v1.18.1-aarch64-unknown-linux-musl.tar.gz
+	sha256sums_arm64 = ea08a64846677f36da7f2e9163c4393dd9a9dee814d13a8fb28fbe7dcbf32f6d
+
+pkgname = gleam-bin
