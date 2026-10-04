@@ -1,6 +1,6 @@
 pkgbase = linux-headers-rockchip-deb
 	gives = linux-headers-6.18-rockchip
-	pkgver = 6.18.51
+	pkgver = 6.18.55
 	pkgdesc = Linux kernel header files built for PINE64 Rockchip devices (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -8,7 +8,7 @@ pkgbase = linux-headers-rockchip-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-headers-6.18-rockchip_6.18.51-1_arm64.deb
-	sha256sums = 01000bdaee4513b7b5ce8428e54e956e4c61bb150c445d4945506eda075e794b
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-headers-6.18-rockchip_6.18.55-1_arm64.deb
+	sha256sums = ce62431a1badc119ed8cfb6e33a59bc026e0da2798ba679f38b4c928337479ba
 
 pkgname = linux-headers-rockchip-deb
