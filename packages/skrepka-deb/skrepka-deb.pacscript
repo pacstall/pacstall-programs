@@ -1,11 +1,11 @@
 pkgname="skrepka-deb"
 gives="skrepka"
-pkgver="0.3.1"
+pkgver="0.4.0"
 pkgdesc="Clipboard history for the Linux desktop, synced with your other machines"
 url='https://github.com/psoldunov/skrepka'
 license=("MIT")
 arch=("amd64")
 repology=("project: ${gives}")
 source=("${url}/releases/download/v${pkgver}/skrepka-linux-x86_64.deb")
-sha256sums=("0352a301aba56966063f6bfed494c1212a65016d8cf2a2d30e20e2ba218ea3f4")
+sha256sums=("f6f0087376616871c91ed2d978e86315161e9e774632241b980efb8d662250bc")
 maintainer=("Philipp Soldunov <69530789+psoldunov@users.noreply.github.com>")
