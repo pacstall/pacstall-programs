@@ -4820,7 +4820,7 @@ pkgname = gldriver-test-deb
 ---
 pkgbase = gleam-bin
 	gives = gleam
-	pkgver = 1.19.0
+	pkgver = 1.19.1
 	pkgdesc = Friendly language for building type-safe systems that scale!
 	url = https://gleam.run
 	arch = amd64
@@ -4829,10 +4829,10 @@ pkgbase = gleam-bin
 	optdepends = rebar3: Erlang tool to create, develop and release Erlang libraries and applications.
 	license = Apache-2.0
 	maintainer = AJ <ajstrongdev@pm.me>
-	source_amd64 = https://github.com/gleam-lang/gleam/releases/download/v1.19.0/gleam-v1.19.0-x86_64-unknown-linux-musl.tar.gz
-	sha256sums_amd64 = 6083148cb404460810afe35e7878527e58fd2512dd79a76b47d59723815753be
-	source_arm64 = https://github.com/gleam-lang/gleam/releases/download/v1.19.0/gleam-v1.19.0-aarch64-unknown-linux-musl.tar.gz
-	sha256sums_arm64 = b7677e3763eb7a6752e37f9a7f6f9451419cab5ccdbf4a41814a81356c58cc1d
+	source_amd64 = https://github.com/gleam-lang/gleam/releases/download/v1.19.1/gleam-v1.19.1-x86_64-unknown-linux-musl.tar.gz
+	sha256sums_amd64 = 221bff0758372aae76cfe440b7445f9f5c7ea67947297b1112115c798fd18385
+	source_arm64 = https://github.com/gleam-lang/gleam/releases/download/v1.19.1/gleam-v1.19.1-aarch64-unknown-linux-musl.tar.gz
+	sha256sums_arm64 = b0eeed8c625471c2ab0fab7058b53979c47fa3bd84315b49b69481e26d583f7d
 
 pkgname = gleam-bin
 ---
