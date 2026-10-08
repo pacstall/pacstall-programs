@@ -1,0 +1,14 @@
+pkgname="neovim-deb"
+pkgver="0.12.5"
+url='https://neovim.io/'
+arch=('arm64' 'amd64')
+gives="neovim"
+replaces=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
+conflicts=("${replaces[@]}")
+pkgdesc="Neovim is a vim fork maintained by the community"
+repology=("project: neovim")
+maintainer="Tobias Heinlein <nionxtrix@mailbox.org>"
+source_amd64=("https://github.com/neovim/neovim-releases/releases/download/v${pkgver}/nvim-linux-x86_64.deb")
+source_arm64=("https://github.com/neovim/neovim-releases/releases/download/v${pkgver}/nvim-linux-arm64.deb")
+sha256sum_amd64=("43ec002317dc6c408a52cddb8fd9f257a8482729480fa19b718e2f444c05b2cb")
+sha256sum_arm64=("6f0067181596e624f252e629a5d5472b335fe66a250489453cbefd657cdb760a")

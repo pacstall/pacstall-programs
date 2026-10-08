@@ -13,7 +13,6 @@ sha256sums_arm64=("ba0b659df9405fda8e7f394e28282b71ab1e15f829fab1c57c1d423c5a50c
 conflicts=("${gives}-git")
 replaces=("${gives}-git")
 pkgdesc="PSP emulator"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-2.0-or-later')
 
 prepare() {

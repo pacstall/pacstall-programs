@@ -1,0 +1,24 @@
+pkgbase = pnpm-bin
+	gives = pnpm
+	pkgver = 11.24.0
+	pkgdesc = Fast, disk space efficient package manager
+	url = https://pnpm.io
+	arch = amd64
+	arch = arm64
+	depends = libatomic1
+	breaks = pnpm
+	breaks = pnpm-git
+	breaks = pnpm-deb
+	breaks = pnpm-app
+	replaces = pnpm
+	license = MIT
+	maintainer = Ren Tatsumoto <tatsu@autistici.org>
+	repology = project: pnpm
+	source = LICENSE::https://raw.githubusercontent.com/pnpm/pnpm/v11.24.0/LICENSE
+	sha256sums = 4b8e2a57502758b2d034ece9cabf19dd098c5609003ed8dbdafd085274f25bd9
+	source_amd64 = https://github.com/pnpm/pnpm/releases/download/v11.24.0/pnpm-linux-x64.tar.gz
+	sha256sums_amd64 = 0a9b76dedb5fe8cc5e7f3a9fd70854181cfb08a487ebaf0c9cfb044dc860936c
+	source_arm64 = https://github.com/pnpm/pnpm/releases/download/v11.24.0/pnpm-linux-arm64.tar.gz
+	sha256sums_arm64 = 52f9cd410ef3bbb1cdd79c399b27772fa6d929bc3cf7c80ff3923a81e1c93be3
+
+pkgname = pnpm-bin

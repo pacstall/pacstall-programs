@@ -26,15 +26,12 @@ pkgbase = ppsspp-git
 	conflicts = ppsspp-app
 	replaces = ppsspp-app
 	license = GPL-2.0-or-later
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: ppsspp
 	source = https://github.com/hrydgard/ppsspp.git
 	depends_jammy = libzip4
 	depends_jammy = libpng16-16
 	depends_noble = libzip4t64
 	depends_noble = libpng16-16t64
-	depends_questing = libzip5
-	depends_questing = libpng16-16t64
 	depends_bookworm = libzip4
 	depends_bookworm = libpng16-16
 

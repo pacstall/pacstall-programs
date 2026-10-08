@@ -13,7 +13,6 @@ source=("https://hg.sr.ht/~scoopta/wlrobs/archive/v${pkgver}.tar.gz")
 conflicts=("${pkgname}")
 depends=("obs-studio")
 pkgdesc="Obs-studio plugin that allows you to screen capture on wlroots based wayland compositors"
-maintainer=("akqir24 <aKqir24@github.com>")
 
 prepare() {
   cd "${pkgname}-v${pkgver}"

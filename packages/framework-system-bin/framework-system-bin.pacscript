@@ -1,12 +1,12 @@
 pkgname="framework-system-bin"
-pkgver="0.6.1"
+pkgver="0.6.5"
 pkgdesc="Tools to interact with the Framework Computer systems"
 url='https://github.com/FrameworkComputer/framework-system'
 arch=("amd64")
 license=("BSD-3-Clause")
-maintainer=("Elsie19 <hwengerstickel@pm.me>")
+maintainer=("Elsie19 <elsie19@pm.me>")
 source=("https://github.com/FrameworkComputer/framework-system/releases/download/v${pkgver}/framework_tool")
-sha256sums=("51665b79752c6bb7a41fc41436eca90db83ebdb51e411fecc2a778729e634207")
+sha256sums=("0b223b09dbf0c05cfd18878e0be113294e35ea32120b93de1888a26cf6595cfc")
 repology=("project: framework-system")
 
 package() {

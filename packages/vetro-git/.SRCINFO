@@ -1,0 +1,13 @@
+pkgbase = vetro-git
+	gives = vetro
+	pkgver = 1.0.0
+	pkgdesc = Declarative GTK4 UI transpiler
+	url = https://sinty.dev/
+	arch = amd64
+	makedepends = golang-go>=1.24
+	makedepends = gir1.2-gtk-4.0
+	license = GPL-3.0
+	maintainer = IMY <omranmansour096@gmail.com>
+	source = https://github.com/singularityos-lab/vetro.git
+
+pkgname = vetro-git

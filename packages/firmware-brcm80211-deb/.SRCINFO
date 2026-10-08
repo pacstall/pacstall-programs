@@ -1,11 +1,11 @@
 pkgbase = firmware-brcm80211-deb
 	gives = firmware-brcm80211
-	pkgver = 20260410
+	pkgver = 20260810
 	pkgdesc = Firmware files for Broadcom chips
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: firmware-brcm80211
-	source = http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/firmware-brcm80211_20260410-1_all.deb
-	sha256sums = b886f78af5344dd771039b759cdfe3cbfffac928777a8cff8266ca972acc1260
+	source = http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/firmware-brcm80211_20260810-1_all.deb
+	sha256sums = 877af07edf2328c730c68f69363f592d86ac95168419727e994fb52e192e9de9
 
 pkgname = firmware-brcm80211-deb

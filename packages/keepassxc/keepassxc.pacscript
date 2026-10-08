@@ -1,10 +1,10 @@
 pkgname="keepassxc"
 arch=("any")
-pkgver="2.7.11"
+pkgver="2.7.12"
 pkgdesc="Cross-platform community-driven port of Keepass password manager"
 repology=("project: keepassxc")
 source=("@${pkgname}~${pkgver}::https://github.com/keepassxreboot/keepassxc/releases/download/${pkgver}/keepassxc-${pkgver}-src.tar.xz")
-sha256sums=("ce76b02d396369726aaf695bb46b79c0cc41a0c4f9ec806bde1233cb22e6ef62")
+sha256sums=("be34eeb297881adea4f894c7c6e4a1835bd7927f8043ddea495040df4792a7de")
 maintainer=("Oren Klopfer <oren@taumoda.com>" "Medaey <medaey@github.com>")
 gives="org.freedesktop.secrets"
 breaks=("${pkgname}" "${pkgname}-bin" "${pkgname}-git" "${pkgname}-deb")

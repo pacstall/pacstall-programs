@@ -1,7 +1,7 @@
 pkgname="megabasterd-bin"
 gives="megabasterd"
 arch=("amd64")
-pkgver="8.22"
+pkgver="8.57"
 pkgdesc="Yet another unofficial (and ugly) cross-platform MEGA downloader/uploader/streaming suite"
 url="https://github.com/tonikelope/${gives}"
 depends=("java11-runtime")
@@ -10,7 +10,7 @@ source=(
   "${gives}.png::https://raw.githubusercontent.com/tonikelope/${gives}/v${pkgver}/src/main/resources/images/pica_roja_big.png"
 )
 sha256sums=(
-  "4a31af5c8eeeb2559747b34222dc63f43a0ca8a558bb9bdba256d7954e90d003"
+  "583c9824617a30baca8320135c8115cdfac66ac92c7fcf4bde0d14546ba0292e"
   "SKIP"
 )
 repology=("project: ${gives}")

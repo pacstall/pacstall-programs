@@ -7,7 +7,7 @@ pkgbase = kakoune-tree-sitter
 	arch = armhf
 	arch = i386
 	depends = tree-sitter-cli
-	makedepends = cargo-1.86 | cargo>=1.86
+	makedepends = cargo-1.86 | cargo>=1.86 | rustup
 	enhances = kakoune
 	license = BSD-3-Clause
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>

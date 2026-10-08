@@ -1,0 +1,28 @@
+pkgbase = git-git
+	pkgver = 2.55.0
+	pkgdesc = Fast, scalable, distributed revision control system
+	url = https://git-scm.com/
+	arch = any
+	makedepends = build-essential
+	makedepends = dh-autoreconf
+	makedepends = cmake
+	makedepends = gcc
+	makedepends = libcurl4-gnutls-dev
+	makedepends = libexpat1-dev
+	makedepends = gettext
+	makedepends = libz-dev
+	makedepends = libssl-dev
+	makedepends = asciidoc
+	makedepends = xmlto
+	makedepends = docbook2x
+	makedepends = install-info
+	makedepends = zlib1g-dev
+	makedepends = zlib1g
+	makedepends = cargo>=1.49.0 | rustup
+	makedepends = git
+	breaks = git
+	replaces = git
+	provides = git
+	source = git+https://github.com/git/git.git
+
+pkgname = git-git

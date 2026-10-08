@@ -1,0 +1,36 @@
+pkgbase = cnijfilter2
+	pkgver = 6.81
+	pkgdesc = Canon IJ Printer Driver for Linux
+	url = https://www.canon.com.au/home-printers
+	arch = i686
+	arch = x86_64
+	depends = cups
+	depends = libxml2 | libxml2-16
+	depends = ghostscript
+	makedepends = automake
+	makedepends = autoconf
+	makedepends = build-essential
+	makedepends = libusb-1.0-0-dev
+	makedepends = libtool-bin
+	makedepends = libglib2.0-dev
+	makedepends = libcups2-dev
+	makedepends = libxml2-dev
+	makedepends = pkg-config
+	breaks = cnijfilter
+	breaks = cnijfilter-mg3600
+	provides = tocanonij
+	provides = tocnpwg
+	provides = cnijlgmon3
+	license = GPL-2.0-only
+	license = custom:canon
+	maintainer = aKqir24 <aKqir24@github.com>
+	source = https://gdlp01.c-wss.com/gds/4/0100012534/01/cnijfilter2-source-6.81-1.tar.gz
+	source = add-missing-import.patch::https://aur.archlinux.org/cgit/aur.git/plain/add-missing-import.patch?h=cnijfilter2
+	source = fix-libxml2-config.patch::https://aur.archlinux.org/cgit/aur.git/plain/fix-libxml2-config.patch?h=cnijfilter2
+	source = gcc15-fix.patch::https://aur.archlinux.org/cgit/aur.git/plain/gcc15-fix.patch?h=cnijfilter2
+	sha256sums = a75716fc9b2823ed61bda09bd720e188f0cb309c012e975a89815738ae71bb1b
+	sha256sums = a1f2ebcfa0c5c6e0d680480bd349ff4b8e4315d031315819ff92a1c11e3d2281
+	sha256sums = 25ab9319e30b221a2095733d0d8b576931cf5e320a47ea57dec1b1b5be1548f2
+	sha256sums = 268dfd75e58f6849655c0de54580e494c630e517fb9dd3a9a023ea3253640c9b
+
+pkgname = cnijfilter2

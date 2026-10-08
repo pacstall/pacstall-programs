@@ -1,0 +1,12 @@
+pkgbase = fp5-firmware-git
+	gives = fp5-firmware
+	pkgver = 0.0.1
+	pkgdesc = Firmware for Fairphone 5
+	arch = any
+	depends = droid-juicer
+	depends = hexagonrpcd
+	pacdeps = pil-squasher-git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = fp5-firmware::https://github.com/FairBlobs/FP5-firmware.git
+
+pkgname = fp5-firmware-git

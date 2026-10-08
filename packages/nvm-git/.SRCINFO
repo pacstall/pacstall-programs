@@ -1,0 +1,16 @@
+pkgbase = nvm-git
+	gives = nvm
+	pkgver = 0.40.6
+	pkgdesc = Node Version Manager for managing multiple active Node.js versions
+	url = https://github.com/nvm-sh/nvm
+	arch = any
+	depends = curl
+	makedepends = git
+	optdepends = bash-completion: Bash completion support
+	breaks = nvm
+	license = MIT
+	maintainer = AJStrong <ajstrongdev@pm.me>
+	repology = project: nvm
+	source = nvm::https://github.com/nvm-sh/nvm.git
+
+pkgname = nvm-git

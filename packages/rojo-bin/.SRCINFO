@@ -5,7 +5,6 @@ pkgbase = rojo-bin
 	url = https://rojo.space
 	arch = amd64
 	conflicts = rojo-git
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: rojo
 	source = @rojo::https://github.com/rojo-rbx/rojo/releases/download/v7.6.1/rojo-7.6.1-linux-x86_64.zip
 	sha256sums = a9542a713036897fdbd0173e7a105ea409658333133c949025fcb6f1a7ca909d

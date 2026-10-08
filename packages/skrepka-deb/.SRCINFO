@@ -1,0 +1,13 @@
+pkgbase = skrepka-deb
+	gives = skrepka
+	pkgver = 0.4.0
+	pkgdesc = Clipboard history for the Linux desktop, synced with your other machines
+	url = https://github.com/psoldunov/skrepka
+	arch = amd64
+	license = MIT
+	maintainer = Philipp Soldunov <69530789+psoldunov@users.noreply.github.com>
+	repology = project: skrepka
+	source = https://github.com/psoldunov/skrepka/releases/download/v0.4.0/skrepka-linux-x86_64.deb
+	sha256sums = f6f0087376616871c91ed2d978e86315161e9e774632241b980efb8d662250bc
+
+pkgname = skrepka-deb

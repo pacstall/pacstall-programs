@@ -20,7 +20,6 @@ pkgbase = umu-launcher-git
 	makedepends = cargo
 	pacdeps = rust-bin
 	license = GPL-3.0-only
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: umu-launcher
 	source = https://github.com/Open-Wine-Components/umu-launcher.git
 	source = Makefile.patch

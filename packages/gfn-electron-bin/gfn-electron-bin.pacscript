@@ -1,7 +1,7 @@
 pkgname="gfn-electron-bin"
 gives="geforcenow-electron"
 arch=("amd64")
-pkgver="2.2.0"
+pkgver="3.0.0"
 pkgdesc="Linux desktop client for GeForce NOW, using Electron"
 repology=("project: geforcenow-electron")
 source=(
@@ -9,7 +9,7 @@ source=(
   "icon.png::https://raw.githubusercontent.com/hmlendea/geforcenow-electron/master/icon.png"
 )
 sha256sums=(
-  "ec62644e6f94eb4919c0895f73736b2074686c829144506162be38074ef1da2a"
+  "25825bce9cca3dda5d83336bb479f1354e3bcf957c322416fd59781578ed94d2"
   "SKIP"
 )
 maintainer=("Marie Piontek <marie@kaifa.ch>")

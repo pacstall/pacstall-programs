@@ -1,6 +1,6 @@
 pkgbase = rambox-deb
 	gives = rambox
-	pkgver = 2.4.1
+	pkgver = 2.6.3
 	pkgdesc = Workspace simplifier
 	url = https://rambox.app
 	arch = amd64
@@ -21,7 +21,7 @@ pkgbase = rambox-deb
 	maintainer = Eric Renfro <psi-jack@linux-help.org>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: rambox
-	source = https://github.com/ramboxapp/download/releases/download/v2.4.1/Rambox-2.4.1-linux-x64.deb
-	sha256sums = 554316ce93c134dc072092d3c76127a89c5e7fa09b3dc7a69d1e4eae24934ad4
+	source = https://github.com/ramboxapp/download/releases/download/v2.6.3/Rambox-2.6.3-linux-x64.deb
+	sha256sums = a2aa80c6a79ffb373315d3f205441ffe8353d5b6753b2d0174a53e494635da01
 
 pkgname = rambox-deb

@@ -1,7 +1,7 @@
 pkgname="obs-studio"
 repology=("project: ${pkgname}")
 arch=('amd64')
-pkgver="32.0.4"
+pkgver="32.1.2"
 source=(
   "https://github.com/obsproject/obs-studio.git#tag=${pkgver}"
   "https://cdn-fastly.obsproject.com/downloads/cef_binary_6533_linux_x86_64.tar.xz"
@@ -59,7 +59,6 @@ optdepends=(
 )
 pacdeps=("rnnoise")
 pkgdesc="Free and open source software for live streaming and screen recording"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 license=('GPL-2.0-only')
 
 prepare() {

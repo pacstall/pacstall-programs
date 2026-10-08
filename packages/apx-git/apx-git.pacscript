@@ -3,7 +3,7 @@ gives="apx"
 source=("https://github.com/Vanilla-OS/apx.git")
 arch=("any")
 pkgver="2.4.3"
-makedepends=("golang-1.22-go")
+makedepends=("golang-1.22-go | golang-go>=1.22")
 pacdeps=("distrobox")
 breaks=("${gives}")
 pkgdesc="Package manager meant to be simple to use, but also powerful with support to installing packages from multiple sources without altering the root filesystem"

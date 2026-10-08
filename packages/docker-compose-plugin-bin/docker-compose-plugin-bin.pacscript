@@ -1,14 +1,14 @@
 pkgname="docker-compose-plugin-bin"
 gives="docker-compose-plugin"
 replaces=("${gives}")
-pkgver="5.1.3"
+pkgver="5.2.0"
 pkgdesc="Docker Compose cli plugin"
 url='https://github.com/docker/compose'
 arch=('amd64' 'arm64')
 repology=("project: docker-compose")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-sha256sums_amd64=("a0298760c9772d2c06888fc8703a487c94c3c3b0134adeef830742a2fc7647b4")
-sha256sums_arm64=("e8105a3e687ea7e0b0f81abe4bf9269c8a2801fb72c2b498b5ff2472bc54145f")
+sha256sums_amd64=("018f9612ecabc5f2d7aaa53d6f5f44453a87611e2d72c8ef84d7b1eca070e719")
+sha256sums_arm64=("739de570a0adf5eab12830db980f549fb5f44ad6b266e1e43e20f6f9df7cbcca")
 source_amd64=("https://github.com/docker/compose/releases/download/v${pkgver}/docker-compose-linux-x86_64")
 source_arm64=("https://github.com/docker/compose/releases/download/v${pkgver}/docker-compose-linux-aarch64")
 

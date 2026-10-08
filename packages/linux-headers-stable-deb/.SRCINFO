@@ -1,12 +1,12 @@
 pkgbase = linux-headers-stable-deb
-	gives = linux-headers-7.0.9-070009
-	pkgver = 7.0.9
+	gives = linux-headers-7.2.6-070206
+	pkgver = 7.2.6
 	pkgdesc = Ubuntu Linux stable kernel (Headers)
 	arch = all
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	repology = project: linux
 	repology = repo: distrowatch
-	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.0.9/amd64/linux-headers-7.0.9-070009_7.0.9-070009.202605191504_all.deb
-	sha256sums = 59e9af6ee5f6218f6f5000b4ce30e11ee47c6895060755653db1223040f77900
+	source = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.2.6/amd64/linux-headers-7.2.6-070206_7.2.6-070206.202609141300_all.deb
+	sha256sums = eb3eee8cba41d71aae8ce8d48e75656eca7928f1c317f20f3d85bf835ee310b5
 
 pkgname = linux-headers-stable-deb

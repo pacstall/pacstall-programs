@@ -1,17 +1,17 @@
 pkgbase = nutext-bin
 	gives = nutext
-	pkgver = 0.5.0
+	pkgver = 0.6.2
 	pkgdesc = Another translaton plugin for nushell
 	url = https://github.com/rhino-linux/nu_plugin_nutext
 	arch = amd64
 	arch = arm64
 	pacdeps = nushell-bin
 	replaces = nutext-git
-	maintainer = Oren Klopfer <oren@taumoda.com>
+	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: nutext
-	source_amd64 = https://github.com/rhino-linux/nu_plugin_nutext/releases/download/0.5.0/nutext_0.5.0_amd64.zip
-	sha256sums_amd64 = 564ca4eba6c2864446c997d1730dc086eff17f0e8ffbf0645486c10edfa6697c
-	source_arm64 = https://github.com/rhino-linux/nu_plugin_nutext/releases/download/0.5.0/nutext_0.5.0_arm64.zip
-	sha256sums_arm64 = 4adc14516f17f4dedf60ddbc0c4bad5c8907df447ec17bd22cf22defca7a2c8a
+	source_amd64 = https://github.com/rhino-linux/nu_plugin_nutext/releases/download/0.6.2/nutext_0.6.2_amd64.zip
+	sha256sums_amd64 = 75377b65ba4486f450abd1fe5b8841b335f15fd1363d0020da8978dad20cc6d3
+	source_arm64 = https://github.com/rhino-linux/nu_plugin_nutext/releases/download/0.6.2/nutext_0.6.2_arm64.zip
+	sha256sums_arm64 = dc21912d064c95a9c4ea50015de0370f09d7242eae6877bedbca1fb7056935e9
 
 pkgname = nutext-bin

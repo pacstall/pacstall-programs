@@ -1,10 +1,10 @@
 pkgname="google-chrome-deb"
 gives="google-chrome-stable"
-repology=("project: google-chrome" "repo: aur")
+repology=("project: google-chrome" "visiblename: google-chrome" "repo: aur")
 replaces=("${gives}")
-pkgver="137.0.7151.119"
+pkgver="152.0.7977.64"
 source=("https://dl.google.com/linux/chrome/deb/pool/main/g/${gives}/${gives}_${pkgver}-1_amd64.deb")
 pkgdesc="The popular and trusted web browser by Google"
-sha256sums=("11c537a6e94fd48fbc90abed1c94af35ab68dbf6f317e5da64802f266e8a187a")
+sha256sums=("4eae0736a812d9bc851cd2937f7af00e47dbaf8305845eed452703ff009873c7")
 arch=('amd64')
 maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")

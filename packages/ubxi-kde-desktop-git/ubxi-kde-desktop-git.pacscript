@@ -24,7 +24,6 @@ replaces=("unicorn-desktop" "unicorn-mobile")
 gives="ubxi-kde-desktop"
 priority='required'
 pkgdesc="UBXI KDE Plasma Desktop"
-maintainer=("villamorrd <villamorrd@students.nu-moa.edu.ph>")
 compatible=('ubuntu:*')
 license=('GPL-3.0-or-later')
 

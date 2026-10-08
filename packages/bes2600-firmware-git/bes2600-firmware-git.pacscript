@@ -2,7 +2,7 @@ pkgname="bes2600-firmware-git"
 gives="bes2600-firmware"
 arch=("all")
 pkgver="0.0.1"
-pkgrel="2"
+pkgrel="3"
 pkgdesc="firmware files for BES2600 WLAN/BT combo chip and PineTab2 systemd files for controlling"
 source=("https://gitlab.com/pine64-org/bes2600-firmware.git")
 maintainer=("Oren Klopfer <oren@taumoda.com>")
@@ -60,7 +60,7 @@ post_install() {
 }
 
 post_remove() {
-  if [[ -f /bin/systemctl ]]; then
-    sudo rm /etc/systemd/system/multi-user.target.wants/pinetab2-bluetooth.service && echo "Removed /etc/systemd/system/multi-user.target.wants/pinetab2-bluetooth.service."
+  if [[ -f /etc/systemd/system/multi-user.target.wants/pinetab2-bluetooth.service ]]; then
+    sudo rm -f /etc/systemd/system/multi-user.target.wants/pinetab2-bluetooth.service && echo "Removed /etc/systemd/system/multi-user.target.wants/pinetab2-bluetooth.service."
   fi
 }

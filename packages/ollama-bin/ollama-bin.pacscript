@@ -1,22 +1,22 @@
 pkgname="ollama-bin"
 gives="ollama"
 pkgdesc="Get up and running with large language models"
-repology=("project:ollama")
+repology=("project: ollama")
 license=("MIT")
 url='https://ollama.com/'
 arch=("amd64" "arm64")
-pkgver="0.22.1"
+pkgver="0.34.4"
 makedepends=("zstd")
 source=(
   "https://github.com/${gives}/${gives}/releases/download/v${pkgver}/${gives}-linux-${CARCH}.tar.zst"
   "ollama.service"
 )
 sha256sums_amd64=(
-  "e27c0fe8f60a824162f81ce07b4bfda767dce4f357d762e149b3d0de0abad9fb"
+  "c238986e61d40c0cc5f4a9b9e40b9eea104350b77efa34741fc134e105cb9533"
   "e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a"
 )
 sha256sums_arm64=(
-  "77388fbdf7fc72e1ca4471204b06915c3979705b17a1ccea5bc02748054a314a"
+  "96f50a1192133028cf4e010d8c333f8af14b1505db6be7b2034c11487e7fd7e6"
   "e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a"
 )
 optdepends_ubuntu=(
@@ -29,8 +29,8 @@ maintainer=("bibelin <balian1belin@yandex.ru>")
 
 package() {
   install -Dm755 "${srcdir}/bin/ollama" "${pkgdir}/usr/bin/${gives}"
-  find "${srcdir}/lib/${gives}" -type "f" -exec install -Dm644 "{}" -t "${pkgdir}/usr/lib/${gives}" \;
-  find "${srcdir}/lib/${gives}" -type "l" -exec install -Dm644 "{}" -t "${pkgdir}/usr/lib/${gives}" \;
+  find "${srcdir}/lib/${gives}" -type "f" -exec install -Dm755 "{}" -t "${pkgdir}/usr/lib/${gives}" \;
+  find "${srcdir}/lib/${gives}" -type "l" -exec cp -av "{}" -t "${pkgdir}/usr/lib/${gives}" \;
   install -Dm644 "${gives}.service" "${pkgdir}/usr/lib/systemd/system/${gives}.service"
 }
 

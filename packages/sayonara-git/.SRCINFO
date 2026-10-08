@@ -23,7 +23,6 @@ pkgbase = sayonara-git
 	makedepends = zlib1g-dev
 	conflicts = sayonara
 	license = GPL-3.0-only
-	maintainer = villamorrd <villamorrd@students.nu-moa.edu.ph>
 	repology = project: sayonara
 	source = sayonara-git~1.10.0::https://gitlab.com/luciocarreras/sayonara-player.git
 	sha256sums = 7efa5facf7eacaa4ecd3414cdd62ef576804df5ed5516fa7aa4488cb27c2f6ac

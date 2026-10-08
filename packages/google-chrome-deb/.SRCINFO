@@ -1,14 +1,15 @@
 pkgbase = google-chrome-deb
 	gives = google-chrome-stable
-	pkgver = 137.0.7151.119
+	pkgver = 152.0.7977.64
 	pkgdesc = The popular and trusted web browser by Google
 	arch = amd64
 	replaces = google-chrome-stable
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = James Ed Randson <jimedrand@disroot.org>
 	repology = project: google-chrome
+	repology = visiblename: google-chrome
 	repology = repo: aur
-	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_137.0.7151.119-1_amd64.deb
-	sha256sums = 11c537a6e94fd48fbc90abed1c94af35ab68dbf6f317e5da64802f266e8a187a
+	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_152.0.7977.64-1_amd64.deb
+	sha256sums = 4eae0736a812d9bc851cd2937f7af00e47dbaf8305845eed452703ff009873c7
 
 pkgname = google-chrome-deb

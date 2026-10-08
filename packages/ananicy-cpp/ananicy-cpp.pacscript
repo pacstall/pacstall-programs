@@ -1,8 +1,8 @@
 pkgname="ananicy-cpp"
 arch=("any")
-pkgver="1.1.0"
+pkgver="1.2.0"
 source=("@${pkgname}~${pkgver}::https://gitlab.com/ananicy-cpp/ananicy-cpp/-/archive/v${pkgver}/ananicy-cpp-v${pkgver}.tar.gz")
-sha256sums=("49f59e8fa842c7603be344b7317eace773c3e416d881dae4ad7779b39b03fc4a")
+sha256sums=("d75157b9588748ce6ae04c3e2d71625d8eec6bf2d23e06f8cb6f9687c74813f7")
 pkgdesc="Rewrite of Ananicy in C++"
 repology=("project: ananicy-cpp")
 makedepends=("cmake" "g++" "libsystemd-dev" "ninja-build")

@@ -9,27 +9,21 @@ maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 source=("https://git.sr.ht/~hadronized/kak-tree-sitter/archive/kak-tree-sitter-config-v${pkgver}.tar.gz")
 sha256sums=('9b3142ce81872de3e7f68390e2d2b510cb7d20bb3c51ad22832e94abb648fbfe')
 _min_cargo='1.86'
-makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo}")
+makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup")
 depends=('tree-sitter-cli')
 enhances=('kakoune')
 external_connection=true
 
 build() {
   cd "${srcdir}/kak-tree-sitter-kak-tree-sitter-config-v${pkgver}"
-  if type "cargo-${_min_cargo}"; then
-    "cargo-${_min_cargo}" build -j"${NCPU}" --release --locked
-  else
-    cargo build -j"${NCPU}" --release --locked
-  fi
+  export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
+  cargo build -j"${NCPU}" --release --locked
 }
 
 check() {
   cd "${srcdir}/kak-tree-sitter-kak-tree-sitter-config-v${pkgver}"
-  if type "cargo-${_min_cargo}"; then
-    RUSTDOC="rustdoc-${_min_cargo}" "cargo-${_min_cargo}" test
-  else
-    cargo test
-  fi
+  export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
+  cargo test
 }
 
 package() {

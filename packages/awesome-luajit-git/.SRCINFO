@@ -80,7 +80,6 @@ pkgbase = awesome-luajit-git
 	breaks = awesome-bin
 	replaces = awesome
 	replaces = awesome-bin
-	maintainer = aKqir24 <aKqir24@github.com>
 	source = https://github.com/awesomeWM/awesome.git
 
 pkgname = awesome-luajit-git

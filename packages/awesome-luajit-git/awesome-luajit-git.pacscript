@@ -6,7 +6,6 @@ pkgdesc="awesome window manager built with luajit"
 source=("https://github.com/awesomeWM/${gives}.git")
 arch=("any")
 pkgver="4.3"
-maintainer=("aKqir24 <aKqir24@github.com>")
 depends=(
   "libcairo2" "libcairo-gobject2" "libdbus-1-3" "dbus-x11"
   "libgdk-pixbuf-2.0-0" "libxdg-basedir1" "libxkbcommon-x11-0"

@@ -1,5 +1,6 @@
 pkgname="android-studio"
-pkgver="2025.3.2.6-panda2"
+pkgver="2026.1.3.7"
+_vername="quail3"
 arch=("amd64")
 repology=("project: ${pkgname}" "repo: aur" "visiblename: ${pkgname}")
 replaces=("${pkgname}" "${pkgname}-beta" "${pkgname}-canary")
@@ -7,11 +8,11 @@ depends=("libc6-i386" "lib32ncurses6" "lib32stdc++6" "lib32z1" "libbz2-1.0:i386"
 maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")
 pkgdesc="Android Studio is the official integrated development environment (IDE) for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development"
 source=(
-  "@${pkgname}~${pkgver}::https://dl.google.com/dl/android/studio/ide-zips/${pkgver%%-*}/${pkgname}-${pkgver##*-}-linux.tar.gz"
+  "@${pkgname}~${pkgver}::https://dl.google.com/dl/android/studio/ide-zips/${pkgver}/${pkgname}-${_vername}-linux.tar.gz"
   "${pkgname}.desktop::https://raw.githubusercontent.com/pacstall/pacstall-programs/master/packages/${pkgname}/${pkgname}.desktop"
 )
 sha256sums=(
-  "32942d8cd7688192cf3cd07bf282fb120035b9bd9b56e6f13c5540e6d39807e9"
+  "36832122557ab73ca68dfd9bd989ddac40103ac003ca10e04c949a1f61578a67"
   "SKIP"
 )
 
@@ -34,10 +35,7 @@ package() {
 }
 
 post_install() {
-
   sudo update-desktop-database -q
-  # Finished installation
-  fancy_message info "Finished installation. Please start Android Studio to configure it!"
 }
 
 post_remove() {

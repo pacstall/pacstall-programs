@@ -1,7 +1,7 @@
 pkgname="f1multiviewer-deb"
 gives="multiviewer-for-f1"
 repology=("project: f1multiviewer")
-pkgver="2.5.1"
+pkgver="2.7.3"
 buildver="137424055"
 maintainer=("DismissedGuy <me@mikealmel.ooo>")
 url='https://multiviewer.app/'

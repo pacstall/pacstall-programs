@@ -1,0 +1,10 @@
+pkgbase = fp5-alsa-git
+	gives = fp5-alsa
+	pkgver = 0.0.1
+	pkgdesc = ALSA files for Fairphone 5
+	arch = all
+	depends = alsa-ucm-conf
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	source = fp5-alsa::https://github.com/sc7280-mainline/alsa-ucm-conf.git
+
+pkgname = fp5-alsa-git
