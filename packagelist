@@ -22,6 +22,7 @@ appimagelauncher-deb
 appmenu-registrar-backport
 apptainer-deb
 apptainer-suid-deb
+aptui-git
 apx-git
 apx-gui-git
 aqua-ide-bin
