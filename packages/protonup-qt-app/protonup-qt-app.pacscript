@@ -1,13 +1,13 @@
 pkgname="protonup-qt-app"
 gives="net.davidotek.pupgui2"
-pkgver="2.15.1"
+pkgver="2.16.0"
 pkgdesc="Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris"
 source=(
   "https://github.com/DavidoTek/ProtonUp-Qt/releases/download/v${pkgver}/ProtonUp-Qt-${pkgver}-x86_64.AppImage"
   "net.davidotek.pupgui2.png::https://raw.githubusercontent.com/DavidoTek/ProtonUp-Qt/main/share/icons/hicolor/256x256/apps/net.davidotek.pupgui2.png"
 )
 sha256sums=(
-  "fd78efb1ffa0907a525784462494b9b42938f9fd7c019f3eaea3b8faf837e8c1"
+  "862a717502f0b9601f23e849a4b4dfe3d69aed7e7ca262cf1bdc4a553f8de7ec"
   "SKIP"
 )
 arch=('amd64')
