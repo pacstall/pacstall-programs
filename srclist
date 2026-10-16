@@ -6003,7 +6003,7 @@ pkgname = heroic-games-launcher-deb
 ---
 pkgbase = hfdownloader-bin
 	gives = hfdownloader
-	pkgver = 3.2.0
+	pkgver = 3.4.0
 	pkgdesc = Simple go utility to download HuggingFace Models and Datasets
 	url = https://github.com/bodaay/HuggingFaceModelDownloader
 	arch = amd64
@@ -6013,8 +6013,8 @@ pkgbase = hfdownloader-bin
 	breaks = hfdownloader-app
 	breaks = hfdownloader-git
 	repology = project: hfdownloader
-	source_amd64 = https://github.com/bodaay/HuggingFaceModelDownloader/releases/download/v3.2.0/hfdownloader_linux_amd64_v3.2.0
-	source_arm64 = https://github.com/bodaay/HuggingFaceModelDownloader/releases/download/v3.2.0/hfdownloader_linux_arm64_v3.2.0
+	source_amd64 = https://github.com/bodaay/HuggingFaceModelDownloader/releases/download/v3.4.0/hfdownloader_linux_amd64_v3.4.0
+	source_arm64 = https://github.com/bodaay/HuggingFaceModelDownloader/releases/download/v3.4.0/hfdownloader_linux_arm64_v3.4.0
 
 pkgname = hfdownloader-bin
 ---
