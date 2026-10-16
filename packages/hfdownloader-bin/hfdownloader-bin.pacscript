@@ -1,7 +1,7 @@
 pkgname="hfdownloader-bin"
 gives="hfdownloader"
 arch=("amd64" "arm64")
-pkgver="3.2.0"
+pkgver="3.4.0"
 pkgdesc="Simple go utility to download HuggingFace Models and Datasets"
 repology=("project: hfdownloader")
 url='https://github.com/bodaay/HuggingFaceModelDownloader'
