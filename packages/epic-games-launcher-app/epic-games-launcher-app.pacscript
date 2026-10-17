@@ -8,6 +8,8 @@ source=("https://content-download-egs.distro.on.epicgames.com/Builds/EGLv2/${pkg
 noextract=("${_appimage}")
 sha256sums=("5cf8607bb0a8f29a9887249d491c3c41ea3d0e8ed06a86695aa8e3b6000edae6")
 arch=('amd64')
+url='https://launcher.epicgames.com/'
+license=('custom:proprietary')
 maintainer=("pejuton <pejuton@proton.me>")
 
 prepare() {
@@ -26,7 +28,7 @@ exec env APPIMAGELAUNCHER_DISABLE=1 /opt/epic-games-launcher/EpicGamesLauncher-x
 EOF
   install -Dm644 /dev/stdin "${pkgdir}/usr/share/applications/${gives}.desktop" << EOF
 [Desktop Entry]
-Name=Epic Games Launcher
+Name=Epic Games Launcher (Preview)
 Comment=Epic Games Launcher
 Icon=${gives}
 Exec=env APPIMAGELAUNCHER_DISABLE=1 ${gives}
