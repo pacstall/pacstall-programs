@@ -71,23 +71,34 @@ build() {
   export RUSTUP_TOOLCHAIN=stable
   export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
 
+  clang_version=$(clang -dumpversion | cut -d. -f1)
+
+  exclude_args=(
+    --exclude scx_forge
+    --exclude scx_flow
+    --exclude scx_mavd
+    --exclude scx_mlfq
+    --exclude scx_nitosis
+    --exclude scx_rlfifo
+    --exclude xtask
+    --exclude vmlinux_docify
+    --exclude scx_arena_libarena_selftests
+    --exclude scx_arena_selftests
+    --exclude scx_characterize
+    --exclude scx_forge_agent
+  )
+
+  if ((clang_version < 22)); then
+    fancy_message warn "cid-form schedulers depend on clang >= 22, or set SCX_ALLOW_OLD_CLANG=1 to build anyway."
+    exclude_args+=(--exclude scx_eevdf)
+  fi
+
   cargo build \
     --release \
     --frozen \
     --workspace \
     --jobs "${NCPU}" \
-    --exclude scx_forge \
-    --exclude scx_flow \
-    --exclude scx_mavd \
-    --exclude scx_mlfq \
-    --exclude scx_nitosis \
-    --exclude scx_rlfifo \
-    --exclude xtask \
-    --exclude vmlinux_docify \
-    --exclude scx_arena_libarena_selftests \
-    --exclude scx_arena_selftests \
-    --exclude scx_characterize \
-    --exclude scx_forge_agent
+    "${exclude_args[@]}"
 }
 
 package() {
