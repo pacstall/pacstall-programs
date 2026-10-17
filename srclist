@@ -3300,6 +3300,20 @@ pkgbase = enpass-deb
 
 pkgname = enpass-deb
 ---
+pkgbase = epic-games-launcher-app
+	gives = epic-games-launcher
+	pkgver = 0.97.0
+	pkgdesc = Official Epic Games Store launcher (Preview)
+	url = https://launcher.epicgames.com/
+	arch = amd64
+	noextract = EpicGamesLauncher-x86_64.AppImage
+	license = custom:proprietary
+	maintainer = pejuton <pejuton@proton.me>
+	source = https://content-download-egs.distro.on.epicgames.com/Builds/EGLv2/0.97.0%2Bg4f63cc1/Linux/EpicGamesLauncher-x86_64.AppImage
+	sha256sums = 5cf8607bb0a8f29a9887249d491c3c41ea3d0e8ed06a86695aa8e3b6000edae6
+
+pkgname = epic-games-launcher-app
+---
 pkgbase = epson-printer-utility-deb
 	gives = epson-printer-utility
 	pkgver = 1.2.2
