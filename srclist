@@ -4019,6 +4019,18 @@ pkgbase = firmware-brcm80211-deb
 
 pkgname = firmware-brcm80211-deb
 ---
+pkgbase = firmware-qcom-soc-deb
+	gives = firmware-qcom-soc
+	pkgver = 20260916
+	pkgdesc = Firmware files for Qualcomm chips
+	arch = all
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: firmware-qcom-soc
+	source = http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/firmware-qcom-soc_20260916-1_all.deb
+	sha256sums = 36b50bf02eef6d5176307d2c52dbb2f51f9ac2090ca3484b2ad8e036da2ddc2f
+
+pkgname = firmware-qcom-soc-deb
+---
 pkgbase = firmware-realtek-deb
 	gives = firmware-realtek
 	pkgver = 20260810
