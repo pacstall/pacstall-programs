@@ -8546,8 +8546,8 @@ pkgbase = linux-headers-rockchip-deb
 pkgname = linux-headers-rockchip-deb
 ---
 pkgbase = linux-headers-sc7280-deb
-	gives = linux-headers-7.1-sc7280
-	pkgver = 7.1.5
+	gives = linux-headers-7.2-sc7280
+	pkgver = 7.2.11
 	pkgdesc = Linux kernel header files built for Fairphone 5 (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -8555,8 +8555,8 @@ pkgbase = linux-headers-sc7280-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-7.1-sc7280/linux-headers-7.1-sc7280_7.1.5-1_arm64.deb
-	sha256sums = d5d7e3b5e5f10e0602fa104ea8617248abc3721fe403c0bbfbecdf37889207d2
+	source = https://repo.mobian.org/pool/main/l/linux-7.2-sc7280/linux-headers-7.2-sc7280_7.2.11-1_arm64.deb
+	sha256sums = 7351373b825ea3b9871757cdd7d1e256902eafb3535b1eabf2e39f7118a1b13f
 
 pkgname = linux-headers-sc7280-deb
 ---
@@ -8626,8 +8626,8 @@ pkgbase = linux-image-rockchip-deb
 pkgname = linux-image-rockchip-deb
 ---
 pkgbase = linux-image-sc7280-deb
-	gives = linux-image-7.1-sc7280
-	pkgver = 7.1.5
+	gives = linux-image-7.2-sc7280
+	pkgver = 7.2.11
 	pkgdesc = Linux kernel image files built for Fairphone 5 (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -8637,8 +8637,8 @@ pkgbase = linux-image-sc7280-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-7.1-sc7280/linux-image-7.1-sc7280_7.1.5-1_arm64.deb
-	sha256sums = 51ebe7487c4dd17a0c8b20041bd0b406096c1332a36d6beec9adb7d1076697a8
+	source = https://repo.mobian.org/pool/main/l/linux-7.2-sc7280/linux-image-7.2-sc7280_7.2.11-1_arm64.deb
+	sha256sums = cb440f9f8ae90c1610424117216ec6f91fd3eb17429bc19eb9a68760691d657b
 
 pkgname = linux-image-sc7280-deb
 ---
