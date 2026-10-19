@@ -15315,7 +15315,7 @@ pkgbase = scx-loader
 pkgname = scx-loader
 ---
 pkgbase = scx-scheds
-	pkgver = 1.1.3
+	pkgver = 1.1.4
 	pkgdesc = sched_ext schedulers and tools
 	url = https://github.com/sched-ext/scx
 	arch = x86_64
@@ -15359,7 +15359,7 @@ pkgbase = scx-scheds
 	license = GPL-2.0-only
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: scx-scheds
-	source = git+https://github.com/sched-ext/scx#commit=c8728c6b6a3fde451f0f10b95f99aad7a32a750a
+	source = git+https://github.com/sched-ext/scx#commit=e7b3a219617472cf78880ac424714e52c932db61
 	sha256sums = SKIP
 
 pkgname = scx-scheds
