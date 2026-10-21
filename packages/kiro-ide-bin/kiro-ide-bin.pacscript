@@ -87,11 +87,11 @@ Keywords=kiro;' | tee "${pkgdir}/usr/share/applications/kiro-ide-url-handler.des
 }
 
 post_install() {
-  update-desktop-database > /dev/null 2>&1 || true
-  update-mime-database /usr/share/mime > /dev/null 2>&1 || true
+  update-desktop-database
+  update-mime-database /usr/share/mime
 }
 
 post_remove() {
-  update-desktop-database > /dev/null 2>&1 || true
-  update-mime-database /usr/share/mime > /dev/null 2>&1 || true
+  update-desktop-database
+  update-mime-database /usr/share/mime
 }
