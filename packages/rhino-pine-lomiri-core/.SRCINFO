@@ -1,6 +1,6 @@
 pkgbase = rhino-pine-lomiri-core
 	pkgver = 2026.1
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile (Lomiri) software
 	priority = essential
 	arch = all
@@ -9,8 +9,8 @@ pkgbase = rhino-pine-lomiri-core
 	pacdeps = u-boot-mobian-deb
 	pacdeps = mobile-usb-networking-deb
 	compatible = ubuntu:devel
-	compatible = ubuntu:resolute
 	compatible = ubuntu:stonking
+	compatible = ubuntu:tenacious
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty
 
