@@ -1708,7 +1708,7 @@ pkgname = celeste-bin
 ---
 pkgbase = chatgpt-deb
 	gives = chatgpt
-	pkgver = 26.1007.71326
+	pkgver = 26.1016.61520
 	pkgdesc = ChatGPT desktop application by OpenAI
 	url = https://developers.openai.com/codex/app
 	arch = amd64
@@ -1720,10 +1720,10 @@ pkgbase = chatgpt-deb
 	license = custom:Proprietary
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: chatgpt
-	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1007.71326_amd64.deb
-	sha256sums_amd64 = 0e006b4931712f5a90d4cd04972c6e0b533cedcdfdb2b51946d5b9367471f556
-	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1007.71326_arm64.deb
-	sha256sums_arm64 = d9fbd854a1522edb2b53c755a3ea5ecfa67b3f8c035313405b50967242efba0a
+	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1016.61520_amd64.deb
+	sha256sums_amd64 = 9add622916c5fa3861afd95081af77e25488c108ca9c543e1f67560b390d28d4
+	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1016.61520_arm64.deb
+	sha256sums_arm64 = c5498348581f7607102ac6f206c9f87668cce36c8c7dbb4c0209e25cd8a60b11
 
 pkgname = chatgpt-deb
 ---
