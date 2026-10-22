@@ -1,16 +1,35 @@
 pkgname='python3-ruff'
-pkgver='0.16.10'
+pkgver='0.17.1'
 pkgdesc='Fast Python linter and code formatter, written in Rust'
 license=('MIT')
 repology=('project: python:ruff')
 url='https://github.com/astral-sh/ruff'
 arch=('any')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
-source=("https://github.com/astral-sh/ruff/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('c8ea3637edc68ac9d17c9143a2a432540370e3768a220b9978e931e5f89d6260')
+_attestation_id='56321670'
+source=(
+  "ruff-${pkgver}.tar.gz::https://github.com/astral-sh/ruff/releases/download/${pkgver}/source.tar.gz"
+  "attestations.json::https://github.com/astral-sh/ruff/attestations/${_attestation_id}/download"
+)
+noextract=("ruff-${pkgver}.tar.gz")
+sha256sums=(
+  'f0514f245685770aa34b4d689a7a16783beba245623df9b01d3f10716f4e82a3'
+  '45ab13551cbe5b9d2cee806343186ec60c7a0baef5265be301c7c2b82e370090'
+)
 _min_cargo='1.97'
-makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup")
+makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup" "cosign")
 external_connection=true
+
+prepare() {
+  cosign verify-blob-attestation "${srcdir}/ruff-${pkgver}.tar.gz" \
+    --bundle "${srcdir}/attestations.json" \
+    --type 'https://slsa.dev/provenance/v1' \
+    --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \
+    --certificate-identity "${url}/.github/workflows/release.yml@refs/heads/main" \
+    || return 1
+
+  tar xf "${srcdir}/ruff-${pkgver}.tar.gz"
+}
 
 build() {
   cd "${srcdir}/ruff-${pkgver}"
