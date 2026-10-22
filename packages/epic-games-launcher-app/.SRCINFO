@@ -1,13 +1,13 @@
 pkgbase = epic-games-launcher-app
 	gives = epic-games-launcher
-	pkgver = 0.97.0
+	pkgver = 0.100.0
 	pkgdesc = Official Epic Games Store launcher (Preview)
 	url = https://launcher.epicgames.com/
 	arch = amd64
 	noextract = EpicGamesLauncher-x86_64.AppImage
 	license = custom:proprietary
 	maintainer = pejuton <pejuton@proton.me>
-	source = https://content-download-egs.distro.on.epicgames.com/Builds/EGLv2/0.97.0%2Bg4f63cc1/Linux/EpicGamesLauncher-x86_64.AppImage
-	sha256sums = 5cf8607bb0a8f29a9887249d491c3c41ea3d0e8ed06a86695aa8e3b6000edae6
+	source = https://content-download-egs.distro.on.epicgames.com/Builds/EGLv2/0.100.0%2Bg9dfc3c3/Linux/EpicGamesLauncher-x86_64.AppImage
+	sha256sums = a9b7e40e3e5220bce97068b3974a796530e5bdbc77db1e1beba0d7bdbed0b44e
 
 pkgname = epic-games-launcher-app

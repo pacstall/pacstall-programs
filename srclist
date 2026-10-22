@@ -1708,7 +1708,7 @@ pkgname = celeste-bin
 ---
 pkgbase = chatgpt-deb
 	gives = chatgpt
-	pkgver = 26.1007.71326
+	pkgver = 26.1016.61520
 	pkgdesc = ChatGPT desktop application by OpenAI
 	url = https://developers.openai.com/codex/app
 	arch = amd64
@@ -1720,10 +1720,10 @@ pkgbase = chatgpt-deb
 	license = custom:Proprietary
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: chatgpt
-	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1007.71326_amd64.deb
-	sha256sums_amd64 = 0e006b4931712f5a90d4cd04972c6e0b533cedcdfdb2b51946d5b9367471f556
-	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1007.71326_arm64.deb
-	sha256sums_arm64 = d9fbd854a1522edb2b53c755a3ea5ecfa67b3f8c035313405b50967242efba0a
+	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1016.61520_amd64.deb
+	sha256sums_amd64 = 9add622916c5fa3861afd95081af77e25488c108ca9c543e1f67560b390d28d4
+	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1016.61520_arm64.deb
+	sha256sums_arm64 = c5498348581f7607102ac6f206c9f87668cce36c8c7dbb4c0209e25cd8a60b11
 
 pkgname = chatgpt-deb
 ---
@@ -2589,7 +2589,7 @@ pkgname = discord-canary
 ---
 pkgbase = discord-deb
 	gives = discord
-	pkgver = 1.0.162
+	pkgver = 1.0.165
 	pkgdesc = Chat for Communities and Friends. Discord is the easiest way to communicate over voice, video, and text. Chat, hang out, and stay close with your friends and communities
 	url = https://discord.com/
 	arch = amd64
@@ -2599,8 +2599,8 @@ pkgbase = discord-deb
 	maintainer = ObsidianPresidium <emil@aarestrup.nu>
 	maintainer = Medaey <medaey@hotmail.com>
 	repology = project: discord
-	source = https://stable.dl2.discordapp.net/apps/linux/1.0.162/discord-1.0.162.deb
-	sha256sums = e7f346569784ef47eaa530c058d810bef686c7c063efcee6493d56d138f139cc
+	source = https://stable.dl2.discordapp.net/apps/linux/1.0.165/discord-1.0.165.deb
+	sha256sums = 2a5c3a97b65a93f3bd2cb8b93fb1317d7ace7f85ee947d07ee97eb762638b48d
 
 pkgname = discord-deb
 ---
@@ -3302,15 +3302,15 @@ pkgname = enpass-deb
 ---
 pkgbase = epic-games-launcher-app
 	gives = epic-games-launcher
-	pkgver = 0.97.0
+	pkgver = 0.100.0
 	pkgdesc = Official Epic Games Store launcher (Preview)
 	url = https://launcher.epicgames.com/
 	arch = amd64
 	noextract = EpicGamesLauncher-x86_64.AppImage
 	license = custom:proprietary
 	maintainer = pejuton <pejuton@proton.me>
-	source = https://content-download-egs.distro.on.epicgames.com/Builds/EGLv2/0.97.0%2Bg4f63cc1/Linux/EpicGamesLauncher-x86_64.AppImage
-	sha256sums = 5cf8607bb0a8f29a9887249d491c3c41ea3d0e8ed06a86695aa8e3b6000edae6
+	source = https://content-download-egs.distro.on.epicgames.com/Builds/EGLv2/0.100.0%2Bg9dfc3c3/Linux/EpicGamesLauncher-x86_64.AppImage
+	sha256sums = a9b7e40e3e5220bce97068b3974a796530e5bdbc77db1e1beba0d7bdbed0b44e
 
 pkgname = epic-games-launcher-app
 ---
@@ -11961,7 +11961,7 @@ pkgname = open-webui-desktop-deb
 ---
 pkgbase = opencode-bin
 	gives = opencode
-	pkgver = 1.19.0
+	pkgver = 1.19.3
 	pkgdesc = AI coding agent built for the terminal
 	url = https://github.com/anomalyco/opencode
 	arch = amd64
@@ -11969,10 +11969,10 @@ pkgbase = opencode-bin
 	depends = ripgrep
 	license = MIT
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://github.com/anomalyco/opencode/releases/download/v1.19.0/opencode-linux-x64.tar.gz
-	sha256sums_amd64 = 7bb9e61ad6feacf2e89c10a6a2c1840e3de4220bb50ba1fc7110f31806076aec
-	source_arm64 = https://github.com/anomalyco/opencode/releases/download/v1.19.0/opencode-linux-arm64.tar.gz
-	sha256sums_arm64 = e9841d43d3e1a8f36ed2691592d3b8b4fb097e606c8b559a277a1b845840e26b
+	source_amd64 = https://github.com/anomalyco/opencode/releases/download/v1.19.3/opencode-linux-x64.tar.gz
+	sha256sums_amd64 = 13a8fb2978302071b86f9d7e00da9c8895f9cd846978379c3bdc6a5333536c9b
+	source_arm64 = https://github.com/anomalyco/opencode/releases/download/v1.19.3/opencode-linux-arm64.tar.gz
+	sha256sums_arm64 = 7900818a6a98881edbbadab4b7525940eff3b9750040c200481f9f56cacee405
 
 pkgname = opencode-bin
 ---
@@ -12578,15 +12578,15 @@ pkgname = parsec-deb
 ---
 pkgbase = paseo-deb
 	gives = paseo
-	pkgver = 0.11.2
+	pkgver = 0.12.0
 	pkgdesc = One interface for Claude Code, Codex, Copilot, OpenCode, and Pi agents Run agents in parallel on your own machines from desktop, mobile, web, and CLI.
 	url = https://paseo.sh
 	arch = amd64
 	replaces = paseo
 	license = AGPL-3.0
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://github.com/getpaseo/paseo/releases/download/v0.11.2/Paseo-0.11.2-amd64.deb
-	sha256sums_amd64 = 09b4573407cc92f12008cdd9324cb6dc3ea472fca3ee044c935eb49fd1e991a8
+	source_amd64 = https://github.com/getpaseo/paseo/releases/download/v0.12.0/Paseo-0.12.0-amd64.deb
+	sha256sums_amd64 = 3bb741849b961d251eb107984c894b4dd01348a59343e9d7b105b9eb22e0f76e
 
 pkgname = paseo-deb
 ---
@@ -13848,7 +13848,7 @@ pkgbase = python3-sphinx-hawkmoth
 pkgname = python3-sphinx-hawkmoth
 ---
 pkgbase = python3-uv
-	pkgver = 0.12.22
+	pkgver = 0.13.4
 	pkgdesc = Fast Python package and project manager, written in Rust
 	url = https://github.com/astral-sh/uv
 	arch = any
@@ -13857,8 +13857,8 @@ pkgbase = python3-uv
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: python:uv
-	source = https://github.com/astral-sh/uv/archive/refs/tags/0.12.22.tar.gz
-	sha256sums = 056ef9a33d6812a51153799ce5b35b08f02f4f37b32a26d22e99245a1f16b77c
+	source = https://github.com/astral-sh/uv/archive/refs/tags/0.13.4.tar.gz
+	sha256sums = 182d66815490dbb497b456a6fde93c7e66ae7f27a50a2065b3b5a06fbb3a20bd
 
 pkgname = python3-uv
 ---
@@ -14248,7 +14248,7 @@ pkgname = rhino-calamares-settings-lomiri-git
 ---
 pkgbase = rhino-core
 	pkgver = 2026.1
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux software
 	priority = essential
 	arch = all
@@ -14266,8 +14266,8 @@ pkgbase = rhino-core
 	replaces = rhino-server-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
-	compatible = ubuntu:resolute
 	compatible = ubuntu:stonking
+	compatible = ubuntu:tenacious
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -14366,7 +14366,7 @@ pkgname = rhino-neofetch-git
 ---
 pkgbase = rhino-pine-core
 	pkgver = 2026.1
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile software
 	priority = essential
 	arch = all
@@ -14387,8 +14387,8 @@ pkgbase = rhino-pine-core
 	replaces = rhino-server-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
-	compatible = ubuntu:resolute
 	compatible = ubuntu:stonking
+	compatible = ubuntu:tenacious
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -14396,7 +14396,7 @@ pkgname = rhino-pine-core
 ---
 pkgbase = rhino-pine-lomiri-core
 	pkgver = 2026.1
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux Mobile (Lomiri) software
 	priority = essential
 	arch = all
@@ -14405,8 +14405,8 @@ pkgbase = rhino-pine-lomiri-core
 	pacdeps = u-boot-mobian-deb
 	pacdeps = mobile-usb-networking-deb
 	compatible = ubuntu:devel
-	compatible = ubuntu:resolute
 	compatible = ubuntu:stonking
+	compatible = ubuntu:tenacious
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/refs/heads/master/empty
 
@@ -14440,7 +14440,7 @@ pkgname = rhino-plymouth-theme-git
 ---
 pkgbase = rhino-server-core
 	pkgver = 2026.1
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide minimal core Rhino Linux software
 	priority = essential
 	arch = all
@@ -14451,8 +14451,8 @@ pkgbase = rhino-server-core
 	replaces = rhino-pine-core
 	replaces = rhino-ubxi-core
 	compatible = ubuntu:devel
-	compatible = ubuntu:resolute
 	compatible = ubuntu:stonking
+	compatible = ubuntu:tenacious
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -14564,7 +14564,7 @@ pkgname = rhino-system-git
 ---
 pkgbase = rhino-ubxi-core
 	pkgver = 2026.1
-	pkgrel = 1
+	pkgrel = 2
 	pkgdesc = Transitional package to provide all core Rhino Linux software, without a desktop environment
 	priority = essential
 	arch = all
@@ -14581,8 +14581,8 @@ pkgbase = rhino-ubxi-core
 	replaces = rhino-pine-core
 	replaces = rhino-server-core
 	compatible = ubuntu:devel
-	compatible = ubuntu:resolute
 	compatible = ubuntu:stonking
+	compatible = ubuntu:tenacious
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	source = https://raw.githubusercontent.com/oklopfer/debs/master/logos/rhino-text.png
 
@@ -18226,7 +18226,7 @@ pkgname = vkroots-git
 ---
 pkgbase = vscode-deb
 	gives = code
-	pkgver = 1.142.0
+	pkgver = 1.143.0
 	pkgdesc = lightweight but powerful source code editor
 	url = https://code.visualstudio.com/
 	arch = amd64
@@ -18236,12 +18236,12 @@ pkgbase = vscode-deb
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	maintainer = Diegiwg <diegiwg@gmail.com>
 	repology = project: vscode
-	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.142.0/linux-deb-x64/stable
-	sha256sums_amd64 = 33454f7d2d7bc79a5925b3e794d106fb454a10c6a635ddfeb908a63659a44ec5
-	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.142.0/linux-deb-arm64/stable
-	sha256sums_arm64 = 036b445fe4c634f0917cb0d09f4ce43048da1b2797d3fd2169c645ea9a261af8
-	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.142.0/linux-deb-armhf/stable
-	sha256sums_armhf = a2fd8d9458dc9443761d9970b68782897f14cf41e9dae0a74b58869c748b673b
+	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.143.0/linux-deb-x64/stable
+	sha256sums_amd64 = f045a886dbfd1aa47ec49dd6880d79a95570c9afde627510897b5cf692db5f2a
+	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.143.0/linux-deb-arm64/stable
+	sha256sums_arm64 = f2e0ffb9f370b46b8ddbe49fa099f436e9f6344579ddd15a534bc7825ab4ed98
+	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.143.0/linux-deb-armhf/stable
+	sha256sums_armhf = 92f66d304dd526ccadf63c6d2098347e23a2dcfa2f2e334915612f5787d2845a
 
 pkgname = vscode-deb
 ---
@@ -19902,7 +19902,7 @@ pkgname = zap
 ---
 pkgbase = zcode-deb
 	gives = zcode
-	pkgver = 3.15.3
+	pkgver = 3.16.2
 	pkgdesc = Next-gen vibe coding with multiple AI agents — official harness for GLM
 	url = https://zcode.z.ai
 	arch = amd64
@@ -19923,10 +19923,10 @@ pkgbase = zcode-deb
 	breaks = zcode-app
 	replaces = zcode
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://cdn-zcode.z.ai/zcode/electron/releases/3.15.3/linux-x64/ZCode-3.15.3-linux-x64.deb
-	sha256sums_amd64 = bcb36cc5b64b3899129e0ca520901e8ee996f81c07288d86808be96f56d66015
-	source_arm64 = https://cdn-zcode.z.ai/zcode/electron/releases/3.15.3/linux-arm64/ZCode-3.15.3-linux-arm64.deb
-	sha256sums_arm64 = 5b0d39e8ed352f8dc96fd9d406c0e64fe622e570673e78db2f29a81122c69d15
+	source_amd64 = https://cdn-zcode.z.ai/zcode/electron/releases/3.16.2/linux-x64/ZCode-3.16.2-linux-x64.deb
+	sha256sums_amd64 = 31ba7519cddd732dbb61f7c1e52ef6d26081d1b135fa93950dbc5d400c26abbc
+	source_arm64 = https://cdn-zcode.z.ai/zcode/electron/releases/3.16.2/linux-arm64/ZCode-3.16.2-linux-arm64.deb
+	sha256sums_arm64 = 35bc72a8b9316703eca135f336e486a39740c9a3344423ead2e2038502c17cf0
 
 pkgname = zcode-deb
 ---
@@ -19951,7 +19951,7 @@ pkgname = zed-editor-preview-bin
 ---
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 1.24.2
+	pkgver = 1.25.2
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -19962,10 +19962,10 @@ pkgbase = zed-editor-stable-bin
 	maintainer = bibelin <balian1belin@yandex.ru>
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/1.24.2/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 020a3b02a9f4bb5e0015bad7cc644262bf4ea32cd7ef6f7f4691946d43af0f89
-	source_aarch64 = https://zed.dev/api/releases/stable/1.24.2/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 96a54806a7e286452078bdfc94b63c7bf6b8324ffcb16c5c60ff1fd96743ea45
+	source_x86_64 = https://zed.dev/api/releases/stable/1.25.2/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = b405ebea810c82ff84854631e7b2853ae1f22dd1b7e306cb57726471c6617508
+	source_aarch64 = https://zed.dev/api/releases/stable/1.25.2/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 5cc192ea154b273efd9a090b76ec5fe482647cbc9aea27a41fb9b42d8c95d63c
 
 pkgname = zed-editor-stable-bin
 ---
