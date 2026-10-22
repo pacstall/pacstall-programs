@@ -23,7 +23,7 @@ external_connection=true
 prepare() {
   cosign verify-blob-attestation "${srcdir}/ruff-${pkgver}.tar.gz" \
     --bundle "${srcdir}/attestations.json" \
-    --new-bundle-format \
+    --type 'https://slsa.dev/provenance/v1' \
     --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \
     --certificate-identity "${url}/.github/workflows/release.yml@refs/heads/main" \
     || return 1
