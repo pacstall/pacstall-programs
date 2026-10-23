@@ -1,0 +1,19 @@
+pkgbase = opencode-v2-bin
+	gives = opencode
+	pkgver = 2.1.3
+	pkgdesc = AI coding agent built for the terminal (V2)
+	url = https://github.com/anomalyco/opencode
+	arch = amd64
+	arch = arm64
+	depends = ripgrep
+	breaks = opencode-bin
+	replaces = opencode-bin
+	license = MIT
+	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
+	repology = project: opencode
+	source_amd64 = cli-linux-x64-2.1.3.tgz::https://registry.npmjs.org/@opencode/cli-linux-x64/-/cli-linux-x64-2.1.3.tgz
+	sha256sums_amd64 = c251bb3962813919d5eb8c0f43cd1cb3ab1d7a0cd28b2e556985706413005cb0
+	source_arm64 = cli-linux-arm64-2.1.3.tgz::https://registry.npmjs.org/@opencode/cli-linux-arm64/-/cli-linux-arm64-2.1.3.tgz
+	sha256sums_arm64 = 85046ccd46334022a702dc6e53231fefd994ff935a3b934b95390776b36b98c8
+
+pkgname = opencode-v2-bin
