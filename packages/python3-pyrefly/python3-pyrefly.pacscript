@@ -1,5 +1,5 @@
 pkgname='python3-pyrefly'
-pkgver='1.3.2'
+pkgver='1.4.0'
 pkgdesc='Fast type checker and language server for Python'
 license=('MIT')
 repology=('project: python:pyrefly')
@@ -7,7 +7,7 @@ url='https://pyrefly.org/'
 arch=('any')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 source=("https://github.com/facebook/pyrefly/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=('7da05b862497dafa3d34e7b574a9954f4daec71fe8423eb32f3765982d705b10')
+sha256sums=('491cef3a7daf3028233ce9a1f22b36bce52670f29848559f998c4fd6cf2b4b61')
 _min_cargo='1.97'
 makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup")
 external_connection=true
