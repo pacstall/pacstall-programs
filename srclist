@@ -17112,7 +17112,7 @@ pkgname = torbrowser-launcher-git
 ---
 pkgbase = torflix-deb
 	gives = torflix
-	pkgver = 0.3.0
+	pkgver = 0.3.1
 	pkgdesc = Torrent video streaming and downloads with a built-in player
 	url = https://github.com/gary23w/torflix
 	arch = amd64
@@ -17120,8 +17120,8 @@ pkgbase = torflix-deb
 	license = MIT
 	license = Apache-2.0
 	maintainer = Garrett Stimpson <info@garrettstimpson.ca>
-	source = https://github.com/gary23w/torflix/releases/download/v0.3.0/Torflix-0.3.0-linux-amd64.deb
-	sha256sums = a25727d93dc155e010e69f771023e2fe366e6c966c0b2d0be8736b36f861ebbc
+	source = https://github.com/gary23w/torflix/releases/download/v0.3.1/Torflix-0.3.1-linux-amd64.deb
+	sha256sums = 6a62f6134ffb8b50f21cd2d9f07d40aa01fb27ac883d0c4d45d6fb4d6d76f8b8
 
 pkgname = torflix-deb
 ---
