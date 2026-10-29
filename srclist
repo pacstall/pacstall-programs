@@ -8923,7 +8923,7 @@ pkgname = lix-git
 ---
 pkgbase = llama-swap-bin
 	gives = llama-swap
-	pkgver = 265
+	pkgver = 268
 	pkgdesc = Reliable model swapping for any local OpenAI/Anthropic compatible server
 	url = https://github.com/mostlygeek/llama-swap/
 	arch = amd64
@@ -8935,8 +8935,8 @@ pkgbase = llama-swap-bin
 	license = MIT
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	repology = project: llama-swap
-	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v265/llama-swap_265_linux_amd64.tar.gz
-	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v265/llama-swap_265_linux_arm64.tar.gz
+	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v268/llama-swap_268_linux_amd64.tar.gz
+	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v268/llama-swap_268_linux_arm64.tar.gz
 
 pkgname = llama-swap-bin
 ---
