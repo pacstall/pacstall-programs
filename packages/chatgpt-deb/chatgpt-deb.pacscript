@@ -2,15 +2,15 @@
 # This Pacstall package extracts the application payload directly, omitting upstream repository installation.
 pkgname="chatgpt-deb"
 gives="chatgpt"
-pkgver="26.1021.22027"
+pkgver="26.1023.51421"
 arch=('amd64' 'arm64')
 pkgdesc="ChatGPT desktop application by OpenAI"
 url='https://developers.openai.com/codex/app'
 license=("custom:Proprietary")
 source_amd64=("https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/${gives}/${gives}_${pkgver}_amd64.deb")
 source_arm64=("https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/${gives}/${gives}_${pkgver}_arm64.deb")
-sha256sums_amd64=("eb0831c734f154f93f8ebcf0e17d118da0dea7dc1737dc61a1e71444375bf190")
-sha256sums_arm64=("68de1ec44066871e4177ba1ca793ebee6ba238397f13c794e45b14941c1261fb")
+sha256sums_amd64=("4484dc2b54fc0978beb23b8d8d717494e4e0b4fbeab0a876739105e50b44de5a")
+sha256sums_arm64=("e7478d84f2938dd373fa61c52b0f200b07d610e48947052bd8ad74769b7fd3fb")
 replaces=("${gives}" "${pkgname}")
 breaks=("${replaces[@]}")
 repology=("project: chatgpt")
