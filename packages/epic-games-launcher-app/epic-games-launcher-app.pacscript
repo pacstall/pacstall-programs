@@ -1,7 +1,7 @@
 pkgname="epic-games-launcher-app"
 gives="epic-games-launcher"
-pkgver="0.105.0"
-_commit="gc9a97d0"
+pkgver="0.106.0"
+_commit="g0cb1183"
 pkgdesc="Official Epic Games Store launcher (Preview)"
 _appimage=EpicGamesLauncher-x86_64.AppImage
 source=("https://content-download-egs.distro.on.epicgames.com/Builds/EGLv2/${pkgver}%2B${_commit}/Linux/${_appimage}")
