@@ -1,0 +1,15 @@
+pkgname="aster-mail-deb"
+gives="aster-mail"
+pkgver="1.4.79"
+arch=("amd64" "arm64")
+pkgdesc="Privacy focused, end-to-end encrypted email client for Aster Mail"
+url='https://astermail.org'
+license=("AGPL-3.0-only")
+source_amd64=("https://github.com/Aster-Privacy/Aster-Mail/releases/download/v${pkgver}/Aster.Mail_${pkgver}_amd64.deb")
+source_arm64=("https://github.com/Aster-Privacy/Aster-Mail/releases/download/v${pkgver}/Aster.Mail_${pkgver}_arm64.deb")
+sha256sums_amd64=("e235d5ab580ca931903947365ccbc466fa6ea9fcaf88ad76725aae3ef5cb51f6")
+sha256sums_arm64=("9da9754a8a4b2583ad32ca88dde46c8c68db0d1a6e900bd1688e4cd0151455cf")
+breaks=("${gives}" "${gives}-bin" "${gives}-git" "${gives}-app")
+replaces=("${gives}")
+repology=("project: aster-mail")
+maintainer=("Aster <hello@astermail.org>")

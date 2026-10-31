@@ -1,0 +1,21 @@
+pkgbase = aster-mail-deb
+	gives = aster-mail
+	pkgver = 1.4.79
+	pkgdesc = Privacy focused, end-to-end encrypted email client for Aster Mail
+	url = https://astermail.org
+	arch = amd64
+	arch = arm64
+	breaks = aster-mail
+	breaks = aster-mail-bin
+	breaks = aster-mail-git
+	breaks = aster-mail-app
+	replaces = aster-mail
+	license = AGPL-3.0-only
+	maintainer = Aster <hello@astermail.org>
+	repology = project: aster-mail
+	source_amd64 = https://github.com/Aster-Privacy/Aster-Mail/releases/download/v1.4.79/Aster.Mail_1.4.79_amd64.deb
+	sha256sums_amd64 = e235d5ab580ca931903947365ccbc466fa6ea9fcaf88ad76725aae3ef5cb51f6
+	source_arm64 = https://github.com/Aster-Privacy/Aster-Mail/releases/download/v1.4.79/Aster.Mail_1.4.79_arm64.deb
+	sha256sums_arm64 = 9da9754a8a4b2583ad32ca88dde46c8c68db0d1a6e900bd1688e4cd0151455cf
+
+pkgname = aster-mail-deb
