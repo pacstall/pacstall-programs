@@ -2,22 +2,22 @@ PACSTALL_DOWNLOADER=curl
 _gives=lunarclient
 pkgname="${_gives}-app"
 repology=("project: lunar-client")
-pkgver="3.3.11"
+pkgver="3.7.28"
 arch=("amd64")
-pkgdesc="PvP modpack for all modern versions of Minecraft"
+pkgdesc="Lunar Client is the free all-in-one modpack available on all versions of Minecraft that enhances your gameplay experience by providing you with all of your favorite mods, settings, and cosmetics!"
 url='https://lunarclient.com'
 makedepends=("libfuse2")
 replaces=("lunarclient" "lunar-client")
 breaks=("lunarclient-deb" "lunarclient-bin")
 maintainer=("Mythbusters123 <atr10605@icloud.com>")
-_appimage="Lunar%20Client-${pkgver}.AppImage"
+_appimage="Lunar%20Client-${pkgver}-ow.AppImage"
 source=(
-  "https://launcherupdates.lunarclientcdn.com/${_appimage}"
+  "https://launcher-releases.lunarclientprod.com/master/6e18b5a4f4ebbd4c7ecff572f1700cedce1f248bcb157adce5ec49be9e081a23/${_appimage}"
   "https://raw.githubusercontent.com/Mythbusters123/lunarclient-app/main/${_gives}.png"
   "https://raw.githubusercontent.com/Mythbusters123/lunarclient-app/main/${_gives}.desktop"
 )
 sha256sums=(
-  '6699e89408df5c21ba7b1a7508e8676f49d911709a195699efcff7c82a99a782'
+  'f79e41dc877fc3865463e3c5d507aab4ee2f572649ec28380cf02a657c53f968'
   '28d489d41431bdaa784342a227abdfbbb525bbe831f98d34747ec557b6e02f05'
   'SKIP'
 )
