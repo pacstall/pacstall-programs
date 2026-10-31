@@ -20164,3 +20164,14 @@ pkgbase = zsh-history-substring-search-git
 	source = https://github.com/zsh-users/zsh-history-substring-search.git
 
 pkgname = zsh-history-substring-search-git
+---
+pkgbase = zyrngis-deb
+	gives = zyrngis
+	pkgver = 1.1.9
+	pkgdesc = Offline topographic maps, 3D terrain and team tools for the field
+	arch = amd64
+	maintainer = Grange Dev Group <support@zyrntopo.com>
+	source = https://pois.zyrntopo.com/downloads/zyrngis-1.1.9-linux-amd64.deb
+	sha256sums = 45b05085fb84c1e4c9cf45beadf8cf3fd4f40774f92efa795c301e0dad965355
+
+pkgname = zyrngis-deb
