@@ -1,0 +1,19 @@
+pkgbase = bun-bin
+	gives = bun
+	pkgver = 1.4.4
+	pkgdesc = Incredibly fast JavaScript and TypeScript runtime, bundler, test runner, and package manager
+	url = https://bun.sh
+	arch = amd64
+	arch = arm64
+	depends = unzip
+	breaks = bun
+	replaces = bun
+	license = MIT
+	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
+	repology = project: bun
+	source_amd64 = https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-x64.zip
+	sha256sums_amd64 = bf8ccbfb2b0b80159e0f9a6d15c55317add8077534dbc6130a3edb52fccb395c
+	source_arm64 = https://github.com/oven-sh/bun/releases/download/bun-v1.4.4/bun-linux-aarch64.zip
+	sha256sums_arm64 = baa6bb36f51d6e58561e02bbea825038a9df454f673d6d776e8bbf86f8c7850e
+
+pkgname = bun-bin
