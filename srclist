@@ -20169,6 +20169,7 @@ pkgbase = zyrngis-deb
 	gives = zyrngis
 	pkgver = 1.1.9
 	pkgdesc = Offline topographic maps, 3D terrain and team tools for the field
+	url = https://zyrntopo.com/workstation
 	arch = amd64
 	maintainer = Grange Dev Group <support@zyrntopo.com>
 	source = https://pois.zyrntopo.com/downloads/zyrngis-1.1.9-linux-amd64.deb
