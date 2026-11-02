@@ -4,7 +4,7 @@ gives="010editor"
 pkgdesc="Text and hex editor with templates"
 arch=('x86_64')
 url='https://www.sweetscape.com/010editor/'
-depends=('libpng16-16t64')
+depends=('libastyle3' 'libpng16-16t64' 'libxkbcommon0' 'libxkbcommon-x11-0')
 source=('010editor.desktop')
 source_x86_64=("https://download.sweetscape.com/010EditorLinux64Installer${pkgver}.tar.gz")
 sha256sums=('e3398b117934840828a96cd33534fc9b9242ec96089c2f283add137975499766')
@@ -24,4 +24,9 @@ package() {
   install -Dm0644 "010editor.desktop" "${pkgdir}/usr/share/applications/010editor.desktop"
 
   rm -r "${pkgdir}/usr/lib/010editor/uninstall"
+
+  ln -sf "/usr/lib/x86_64-linux-gnu/libastyle.so.3" "${pkgdir}/usr/lib/010editor/lib/libastyle.so"
+  ln -sf "/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0" "${pkgdir}/usr/lib/010editor/lib/libxkbcommon.so.0"
+  ln -sf "/usr/lib/x86_64-linux-gnu/libxkbcommon-x11.so.0" "${pkgdir}/usr/lib/010editor/lib/libxkbcommon-x11.so.0"
+  rm "${pkgdir}/usr/lib/010editor/lib/"{libssl,libcrypto}.so.1.1
 }
