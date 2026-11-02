@@ -17862,6 +17862,25 @@ pkgbase = upscayl-app
 
 pkgname = upscayl-app
 ---
+pkgbase = uskmaker-deb
+	gives = uskmaker
+	pkgver = 0.29.0
+	pkgdesc = AI-powered UltraStar Deluxe & YARG karaoke package generator
+	url = https://github.com/walterfr/UltraStarKaraokeMaker
+	arch = amd64
+	breaks = uskmaker
+	breaks = uskmaker-bin
+	breaks = uskmaker-git
+	breaks = uskmaker-app
+	replaces = uskmaker
+	license = MIT
+	maintainer = Walter <walterfr@users.noreply.github.com>
+	repology = project: uskmaker
+	source_amd64 = https://github.com/walterfr/UltraStarKaraokeMaker/releases/download/v0.29.0/USKMaker_0.29.0_amd64.deb
+	sha256sums_amd64 = b82dfefe7dcff083953735d2d3e26447f99243fc6b891e957d1fa6850d0b94a9
+
+pkgname = uskmaker-deb
+---
 pkgbase = uwufetch
 	pkgver = 2.1
 	pkgdesc = Meme system info tool for Linux, based on nyan/uwu trend on r/linuxmasterrace
