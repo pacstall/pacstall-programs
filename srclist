@@ -4040,6 +4040,29 @@ pkgbase = firefox-nightly-deb
 
 pkgname = firefox-nightly-deb
 ---
+pkgbase = fireperf-deb
+	gives = fireperf
+	pkgver = 0.3.0-1.build-271.1
+	pkgdesc = Network benchmarking tool for firewalls and connection tracking
+	url = https://www.ipfire.org/fireperf
+	arch = amd64
+	arch = arm64
+	depends = libc6>=2.35
+	depends = libncursesw6>=6
+	depends = libtinfo6>=6
+	depends = liburing2>=2.3
+	breaks = fireperf
+	replaces = fireperf
+	license = GPL-3.0-or-later
+	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
+	repology = project: fireperf
+	source_amd64 = https://repo.ipfire.org/debian/fireperf/master/pool/bookworm/main/amd64/fireperf_0.3.0-1.build-271.1_amd64.deb
+	sha256sums_amd64 = 1041aca64227105562990dac43c63a7f480ee5e6c706afeb3577e7142c28dbae
+	source_arm64 = https://repo.ipfire.org/debian/fireperf/master/pool/bookworm/main/arm64/fireperf_0.3.0-1.build-271.1_arm64.deb
+	sha256sums_arm64 = 3c27b7949ba07b38fb3269dbc7c0fa48e87689e1fd7fcf452aa81d6acf9db178
+
+pkgname = fireperf-deb
+---
 pkgbase = firmware-brcm80211-deb
 	gives = firmware-brcm80211
 	pkgver = 20260916
