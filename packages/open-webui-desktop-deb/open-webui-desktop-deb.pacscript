@@ -1,5 +1,5 @@
 pkgname="open-webui-desktop-deb"
-pkgver="0.0.20"
+pkgver="0.1.4"
 gives="open-webui"
 breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
 pkgdesc="User-friendly AI chat interface that supports Ollama, OpenAI API"
