@@ -1,9 +1,9 @@
 pkgname="zyrngis-deb"
 gives="zyrngis"
-pkgver="1.1.10"
+pkgver="1.1.11"
 source=("https://pois.zyrntopo.com/downloads/${gives}-${pkgver}-linux-amd64.deb")
 pkgdesc="Offline topographic maps, 3D terrain and team tools for the field"
 url='https://zyrntopo.com/workstation'
-sha256sums=("403e3e4dd1e3a2516563c8a2c76850699fa88b3d0cc3f0acec4633d9dd3ef34b")
+sha256sums=("c5604063a7db2cc974bdbc23ce291734ff38d573b148757d1daf3720e04583d1")
 arch=("amd64")
 maintainer=("Grange Dev Group <support@zyrntopo.com>")
