@@ -10,7 +10,6 @@ repology=("project: bun")
 breaks=("${gives}")
 replaces=("${gives}")
 depends=("unzip")
-
 source_amd64=("https://github.com/oven-sh/bun/releases/download/bun-v${pkgver}/bun-linux-x64.zip")
 sha256sums_amd64=("bf8ccbfb2b0b80159e0f9a6d15c55317add8077534dbc6130a3edb52fccb395c")
 source_arm64=("https://github.com/oven-sh/bun/releases/download/bun-v${pkgver}/bun-linux-aarch64.zip")
