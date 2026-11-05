@@ -1,6 +1,6 @@
 pkgbase = vscode-deb
 	gives = code
-	pkgver = 1.144.1
+	pkgver = 1.145.0
 	pkgdesc = lightweight but powerful source code editor
 	url = https://code.visualstudio.com/
 	arch = amd64
@@ -10,11 +10,11 @@ pkgbase = vscode-deb
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	maintainer = Diegiwg <diegiwg@gmail.com>
 	repology = project: vscode
-	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.144.1/linux-deb-x64/stable
-	sha256sums_amd64 = 6ea99a41d03b62a5c6658bab66f12210322ebe4214dfa5f0bf1a3ca97501b848
-	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.144.1/linux-deb-arm64/stable
-	sha256sums_arm64 = 799be313359c09cb91dd32b2b7c951497a6cb5d423a0950d074a870828ca3465
-	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.144.1/linux-deb-armhf/stable
-	sha256sums_armhf = b9370f4963b9b653aa4906d3ec4d3f1c044531dba2210632b89929266a7bda9d
+	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.145.0/linux-deb-x64/stable
+	sha256sums_amd64 = 64cb445811a347df1b5118a17117cfd5ac0ab7e2cc41832351b938364d17cacd
+	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.145.0/linux-deb-arm64/stable
+	sha256sums_arm64 = da4c873ae450a5da60c55e409a15672c01baacfe5d36e2d4b56b06ea0db14c41
+	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.145.0/linux-deb-armhf/stable
+	sha256sums_armhf = e1ac7767c1941eb551cf838aef2eaccd6715410bc3516873cf38a11a8974cd71
 
 pkgname = vscode-deb
