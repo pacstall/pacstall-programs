@@ -1,0 +1,9 @@
+pkgname="firmware-qcom-soc-deb"
+gives="${pkgname%-deb}"
+pkgver="20260916"
+arch=("all")
+repology=("project: ${gives}")
+source=("http://ftp.debian.org/debian/pool/non-free-firmware/f/firmware-nonfree/${gives}_${pkgver}-1_all.deb")
+pkgdesc="Firmware files for Qualcomm chips"
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+sha256sums=("36b50bf02eef6d5176307d2c52dbb2f51f9ac2090ca3484b2ad8e036da2ddc2f")
