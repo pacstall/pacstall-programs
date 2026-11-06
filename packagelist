@@ -1,3 +1,4 @@
+010editor-bin
 1password-cli-bin
 86box-app
 abdownloadmanager
@@ -30,6 +31,7 @@ arduino-cli-bin
 arduino-ide-bin
 asdf-vm
 aseprite
+aster-mail-deb
 audiorelay-bin
 audiorelay-deb
 awesome-git
@@ -64,6 +66,7 @@ brave-keyring-deb
 btop-bin
 btrfs-assistant
 btrfs-du-bin
+bun-bin
 cachyos-ananicy-rules-git
 canon-pixma-mg3000-complete-deb
 cantata
@@ -151,7 +154,6 @@ emacs-git
 emby-server-deb
 endlessh-git
 enpass-deb
-epic-games-launcher-app
 epson-printer-utility-deb
 eqwalizer
 erlang-jsone
@@ -189,6 +191,7 @@ firefox-deb
 firefox-developer-edition-bin
 firefox-nightly-bin
 firefox-nightly-deb
+fireperf-deb
 firmware-brcm80211-deb
 firmware-realtek-deb
 fishui-git
@@ -884,6 +887,7 @@ unicorn-mobile-git
 universal-ctags-git
 upk-git
 upscayl-app
+uskmaker-deb
 uwufetch
 vala-panel-appmenu-xfce4-git
 vega-strike-engine-git
@@ -990,3 +994,4 @@ zoom-deb
 zotero
 zoxide-deb
 zsh-history-substring-search-git
+zyrngis-deb

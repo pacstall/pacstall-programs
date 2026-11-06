@@ -1,6 +1,6 @@
 pkgbase = open-webui-desktop-deb
 	gives = open-webui
-	pkgver = 0.0.20
+	pkgver = 0.1.4
 	pkgdesc = User-friendly AI chat interface that supports Ollama, OpenAI API
 	arch = arm64
 	arch = amd64
@@ -10,7 +10,7 @@ pkgbase = open-webui-desktop-deb
 	breaks = open-webui-app
 	maintainer = Tobias Heinlein <nionxtrix@mailbox.org>
 	repology = project: open-webui-desktop
-	source_arm64 = https://github.com/open-webui/desktop/releases/download/v0.0.20/open-webui_arm64.deb
-	source_amd64 = https://github.com/open-webui/desktop/releases/download/v0.0.20/open-webui_amd64.deb
+	source_arm64 = https://github.com/open-webui/desktop/releases/download/v0.1.4/open-webui_arm64.deb
+	source_amd64 = https://github.com/open-webui/desktop/releases/download/v0.1.4/open-webui_amd64.deb
 
 pkgname = open-webui-desktop-deb

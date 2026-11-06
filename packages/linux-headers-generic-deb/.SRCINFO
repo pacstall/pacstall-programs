@@ -1,6 +1,6 @@
 pkgbase = linux-headers-generic-deb
-	gives = linux-headers-7.3.0-070300rc3-generic
-	pkgver = 7.3~rc3
+	gives = linux-headers-7.4.0-070400rc1-generic
+	pkgver = 7.4~rc1
 	pkgdesc = Ubuntu Linux mainline kernel (Generic headers)
 	arch = arm64
 	arch = amd64
@@ -10,9 +10,9 @@ pkgbase = linux-headers-generic-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.3-rc3/arm64/linux-headers-7.3.0-070300rc3-generic_7.3.0-070300rc3.202609132247_arm64.deb
-	sha256sums_arm64 = 81c976946c941f2c70825c013351b1980d0097197636a6f6668a93885f79f22d
-	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.3-rc3/amd64/linux-headers-7.3.0-070300rc3-generic_7.3.0-070300rc3.202609132247_amd64.deb
-	sha256sums_amd64 = 8729c4497868a83b9f89ed0c5daa3459faec7a6005817b7199cca315a33e1313
+	source_arm64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.4-rc1/arm64/linux-headers-7.4.0-070400rc1-generic_7.4.0-070400rc1.202611012313_arm64.deb
+	sha256sums_arm64 = 1e01b87ee4bccd11babe1212b55afbd9a18521ad23799f950b6f95cdcb4c5619
+	source_amd64 = https://kernel.ubuntu.com/~kernel-ppa/mainline/v7.4-rc1/amd64/linux-headers-7.4.0-070400rc1-generic_7.4.0-070400rc1.202611012313_amd64.deb
+	sha256sums_amd64 = e0355b0f5078ef23d5ff8df828bb773269da3c6b2af2a18a603d600817184d44
 
 pkgname = linux-headers-generic-deb
