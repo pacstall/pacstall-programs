@@ -13890,20 +13890,20 @@ pkgbase = python-pywalfox
 pkgname = python-pywalfox
 ---
 pkgbase = python3-ruff
-	pkgver = 0.17.2
+	pkgver = 0.17.4
 	pkgdesc = Fast Python linter and code formatter, written in Rust
 	url = https://github.com/astral-sh/ruff
 	arch = any
 	makedepends = cargo-1.97 | cargo>=1.97 | rustup
 	makedepends = cosign
-	noextract = ruff-0.17.2.tar.gz
+	noextract = ruff-0.17.4.tar.gz
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: python:ruff
-	source = ruff-0.17.2.tar.gz::https://github.com/astral-sh/ruff/releases/download/0.17.2/source.tar.gz
-	source = attestations.json::https://github.com/astral-sh/ruff/attestations/58768444/download
-	sha256sums = 092282e13163a88fb2a57ae5f2d34d3e54c4f3e0fa6a5fdf101e4b748cea7317
-	sha256sums = 2011907f7ce145a3503e08f5cdbef2efb7a36d5cecf202d37e2d5d65ab834e23
+	source = ruff-0.17.4.tar.gz::https://github.com/astral-sh/ruff/releases/download/0.17.4/source.tar.gz
+	source = attestations.json::https://github.com/astral-sh/ruff/attestations/64177046/download
+	sha256sums = f8dcb8612f1ce95bc0ce806752c11a675688f299fa940445ba3edbe7cb2fff83
+	sha256sums = 481ef39b5eb6edc8daec224f3689b16a415ee2aebadda92901126abee6eb2ec4
 
 pkgname = python3-ruff
 ---
