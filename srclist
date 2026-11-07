@@ -9052,7 +9052,7 @@ pkgname = lunacy-deb
 ---
 pkgbase = lunarclient-app
 	pkgver = 3.7.28
-	pkgdesc = Lunar Client is the free all-in-one modpack available on all versions of Minecraft that enhances your gameplay experience by providing you with all of your favorite mods, settings, and cosmetics!
+	pkgdesc = Free all-in-one modpack available on all versions of Minecraft
 	url = https://lunarclient.com
 	arch = amd64
 	makedepends = libfuse2
