@@ -13933,21 +13933,21 @@ pkgbase = python3-sphinx-hawkmoth
 pkgname = python3-sphinx-hawkmoth
 ---
 pkgbase = python3-uv
-	pkgver = 0.13.5
+	pkgver = 0.13.7
 	pkgdesc = Fast Python package and project manager, written in Rust
 	url = https://github.com/astral-sh/uv
 	arch = any
 	makedepends = cargo-1.97 | cargo>=1.97 | rustup
 	makedepends = cosign
-	noextract = uv-0.13.5.tar.gz
+	noextract = uv-0.13.7.tar.gz
 	license = Apache-2.0
 	license = MIT
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: python:uv
-	source = uv-0.13.5.tar.gz::https://github.com/astral-sh/uv/releases/download/0.13.5/source.tar.gz
-	source = attestations.json::https://github.com/astral-sh/uv/attestations/58461417/download
-	sha256sums = 1af98369e94f841426a673323760155d7507119c05c55456bdecbcb151eaaea4
-	sha256sums = 2275a313c794bcbd0caf14e5cd5b14c6c4ae6207ef4d2c2f93b8e456b37d837a
+	source = uv-0.13.7.tar.gz::https://github.com/astral-sh/uv/releases/download/0.13.7/source.tar.gz
+	source = attestations.json::https://github.com/astral-sh/uv/attestations/62929524/download
+	sha256sums = 6e44f545ee8e9037bcc7c375018bc2c38d84327a6d08f3eb51525444ab50d21a
+	sha256sums = 245b49b4473adfd8439afcc06b994e710bdeec9b1cecee09eed4f31951eb15f4
 
 pkgname = python3-uv
 ---
