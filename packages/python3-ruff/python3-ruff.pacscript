@@ -1,20 +1,20 @@
 pkgname='python3-ruff'
-pkgver='0.17.2'
+pkgver='0.17.4'
 pkgdesc='Fast Python linter and code formatter, written in Rust'
 license=('MIT')
 repology=('project: python:ruff')
 url='https://github.com/astral-sh/ruff'
 arch=('any')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
-_attestation_id='58768444'
+_attestation_id='64177046'
 source=(
   "ruff-${pkgver}.tar.gz::https://github.com/astral-sh/ruff/releases/download/${pkgver}/source.tar.gz"
   "attestations.json::https://github.com/astral-sh/ruff/attestations/${_attestation_id}/download"
 )
 noextract=("ruff-${pkgver}.tar.gz")
 sha256sums=(
-  '092282e13163a88fb2a57ae5f2d34d3e54c4f3e0fa6a5fdf101e4b748cea7317'
-  '2011907f7ce145a3503e08f5cdbef2efb7a36d5cecf202d37e2d5d65ab834e23'
+  'f8dcb8612f1ce95bc0ce806752c11a675688f299fa940445ba3edbe7cb2fff83'
+  '481ef39b5eb6edc8daec224f3689b16a415ee2aebadda92901126abee6eb2ec4'
 )
 _min_cargo='1.97'
 makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup" "cosign")
