@@ -1,7 +1,7 @@
 pkgname="kwin-krohnkite-git"
 gives="kwin-krohnkite"
 pkgdesc="Dynamic tiling extension for KWin 6 inspired by dwm"
-pkgver='0.9.9.11'
+pkgver='0.9.11.0'
 repology=('project: kwin-scripts-krohnkite')
 arch=('all')
 breaks=("${gives}")
@@ -11,7 +11,7 @@ sha256sums=('SKIP')
 license=('MIT')
 maintainer=('Erik Hedlund <erikcghedlund@outlook.com>')
 depends=('kwin-common>=4:6.0.0')
-makedepends=('npm' '7zip')
+makedepends=('npm' '7zip' 'kwin-common>=4:6.0.0')
 external_connection=true
 
 prepare() {
