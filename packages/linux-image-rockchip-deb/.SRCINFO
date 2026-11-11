@@ -1,6 +1,6 @@
 pkgbase = linux-image-rockchip-deb
 	gives = linux-image-6.18-rockchip
-	pkgver = 6.18.57
+	pkgver = 6.18.60
 	pkgdesc = Linux kernel image files built for PINE64 Rockchip devices (Mobian)
 	arch = arm64
 	depends = initramfs-tools
@@ -10,8 +10,8 @@ pkgbase = linux-image-rockchip-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-image-6.18-rockchip_6.18.57-1_arm64.deb
-	sha256sums = c37d3b76b6315dc5ebff32fe6310211d30fc35ebe178c64341a44d16303514d5
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-rockchip/linux-image-6.18-rockchip_6.18.60-1_arm64.deb
+	sha256sums = d01d7e49c5401be471842c624dd91c1d7b406f72e9676005663c3ebf02984702
 	depends_debian = firmware-brcm80211
 	pacdeps_ubuntu = firmware-brcm80211-deb
 
