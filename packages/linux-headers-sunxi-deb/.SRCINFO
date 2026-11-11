@@ -1,6 +1,6 @@
 pkgbase = linux-headers-sunxi-deb
 	gives = linux-headers-6.18-sunxi64
-	pkgver = 6.18.57
+	pkgver = 6.18.60
 	pkgdesc = Linux kernel header files built for PINE64 Sunxi devices (Mobian)
 	arch = arm64
 	maintainer = Oren Klopfer <oren@taumoda.com>
@@ -8,7 +8,7 @@ pkgbase = linux-headers-sunxi-deb
 	repology = repo: aur
 	repology = srcname: linux-mainline
 	repology = binname: linux-mainline-headers
-	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-headers-6.18-sunxi64_6.18.57-1_arm64.deb
-	sha256sums = 51af65aec3906e4d27420764c79869cd37b8bee4d34ce63977dcbe3a16cb6d5d
+	source = https://repo.mobian.org/pool/main/l/linux-6.18-sunxi64/linux-headers-6.18-sunxi64_6.18.60-1_arm64.deb
+	sha256sums = 87af2a578d74c8fe18b063f5937cc5bddfcb2ee2e54bfe5b1601ef5a7bea9d08
 
 pkgname = linux-headers-sunxi-deb
