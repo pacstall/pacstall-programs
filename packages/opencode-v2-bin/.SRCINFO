@@ -1,6 +1,6 @@
 pkgbase = opencode-v2-bin
 	gives = opencode
-	pkgver = 2.2.6
+	pkgver = 2.2.7
 	pkgdesc = AI coding agent built for the terminal (V2)
 	url = https://github.com/anomalyco/opencode
 	arch = amd64
@@ -11,9 +11,9 @@ pkgbase = opencode-v2-bin
 	license = MIT
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: opencode
-	source_amd64 = cli-linux-x64-2.2.6.tgz::https://registry.npmjs.org/@opencode/cli-linux-x64/-/cli-linux-x64-2.2.6.tgz
-	sha256sums_amd64 = dfcd69f1d511ae10ed626768b41d84b8100cc4aa64cecb69da38ba7a29d33551
-	source_arm64 = cli-linux-arm64-2.2.6.tgz::https://registry.npmjs.org/@opencode/cli-linux-arm64/-/cli-linux-arm64-2.2.6.tgz
-	sha256sums_arm64 = 22352e200630ec61a48a65b9f5c2b627328ae5002658d81c067f67c5fb689898
+	source_amd64 = cli-linux-x64-2.2.7.tgz::https://registry.npmjs.org/@opencode/cli-linux-x64/-/cli-linux-x64-2.2.7.tgz
+	sha256sums_amd64 = d65935464f93f07913633f977cb99723af64eeff6ae7a822722ce89bedabdd45
+	source_arm64 = cli-linux-arm64-2.2.7.tgz::https://registry.npmjs.org/@opencode/cli-linux-arm64/-/cli-linux-arm64-2.2.7.tgz
+	sha256sums_arm64 = 7e74ceb64fe5704ff2fdef3dee45866efcb580d71f182a6cae29606cad1f8b52
 
 pkgname = opencode-v2-bin
