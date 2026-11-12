@@ -15184,7 +15184,7 @@ pkgname = rust-motd-deb
 ---
 pkgbase = rustdesk-deb
 	gives = rustdesk
-	pkgver = 1.5.1
+	pkgver = 1.5.3
 	pkgdesc = Yet another remote desktop software, written in Rust
 	arch = amd64
 	arch = arm64
@@ -15213,11 +15213,11 @@ pkgbase = rustdesk-deb
 	maintainer = xdavius <xdavius@github.com>
 	maintainer = medaey <medaey@hotmail.com>
 	repology = project: rustdesk
-	source_amd64 = https://github.com/rustdesk/rustdesk/releases/download/1.5.1/rustdesk-1.5.1-x86_64.deb
-	sha256sums_amd64 = b5d682ad90cb7571ecbdbf26eef58d3c4514e726a74ef6d08ce3f0b114ef0bd9
-	source_arm64 = https://github.com/rustdesk/rustdesk/releases/download/1.5.1/rustdesk-1.5.1-aarch64.deb
-	sha256sums_arm64 = d1471ed916dc21e3ae3965f936c51944e1f2635a6d521fcc4663486696018465
-	source_armhf = https://github.com/rustdesk/rustdesk/releases/download/1.5.1/rustdesk-1.5.1-armv7-sciter.deb
+	source_amd64 = https://github.com/rustdesk/rustdesk/releases/download/1.5.3/rustdesk-1.5.3-x86_64.deb
+	sha256sums_amd64 = 81096d2f65fd43352540c351bca15bb0712a2a6f9efa4c95e9fff25cb97b3b81
+	source_arm64 = https://github.com/rustdesk/rustdesk/releases/download/1.5.3/rustdesk-1.5.3-aarch64.deb
+	sha256sums_arm64 = fa85e8d3ccd45e2e303c2d1359af5dc51aa93d880e39ba47c9b04bfabd82ae19
+	source_armhf = https://github.com/rustdesk/rustdesk/releases/download/1.5.3/rustdesk-1.5.3-armv7-sciter.deb
 	sha256sums_armhf = 7c5f602f2978963fe00d75d69ec141261f27ad27920740d7c37313c402c486c8
 
 pkgname = rustdesk-deb
