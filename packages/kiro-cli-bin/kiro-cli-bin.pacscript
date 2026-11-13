@@ -1,7 +1,7 @@
 pkgname="kiro-cli-bin"
 gives="kiro-cli"
 repology=("project: kiro-cli")
-pkgver="2.35.1"
+pkgver="3.2.1"
 pkgdesc="AI-powered agentic coding assistant for the terminal"
 url='https://kiro.dev/cli/'
 arch=('amd64' 'arm64')
@@ -18,32 +18,11 @@ replaces=('amazon-q-cli-bin')
 maintainer=("Rodrigo Tavares <dev@rodrigotavar.es>")
 _base_url="https://desktop-release.q.us-east-1.amazonaws.com/${pkgver}"
 source_amd64=("${pkgname}-${pkgver}-amd64.tar.zst::${_base_url}/kirocli-x86_64-linux.tar.zst")
-sha256sums_amd64=("f08a0ee73b67c06922d9a80676756dd45652b18345e518d3364b4b720ef0d68b")
+sha256sums_amd64=("ab4b3a4b5ccdeb082cd160020e5fa915831efe49769a281ad7d118c6bbb55c94")
 source_arm64=("${pkgname}-${pkgver}-arm64.tar.zst::${_base_url}/kirocli-aarch64-linux.tar.zst")
-sha256sums_arm64=("0c88e1fb6cdb1d7d83bcfc6f551309be20a97202e26e41404b6a37573d23a64d")
-
-prepare() {
-  cd kirocli/bin
-  # shellcheck disable=SC2016
-  sed -i 's|\$HOME/.local/bin/kiro-cli|/usr/bin/kiro-cli|g' q qchat
-}
-
-build() {
-  cd kirocli
-  mkdir -p completions
-  ./bin/kiro-cli completion bash > completions/kiro-cli
-  ./bin/kiro-cli completion zsh > completions/_kiro-cli
-  ./bin/kiro-cli completion fish > completions/kiro-cli.fish
-}
+sha256sums_arm64=("8ebeb48bc41c7b013cbbfa8425a7b29da112b9976efcb0d72144e04c82e38f0a")
 
 package() {
   cd kirocli
   install -Dm755 bin/kiro-cli -t "${pkgdir}/usr/bin"
-  install -Dm755 bin/kiro-cli-chat -t "${pkgdir}/usr/bin"
-  install -Dm755 bin/kiro-cli-term -t "${pkgdir}/usr/bin"
-  install -Dm755 bin/q -t "${pkgdir}/usr/bin"
-  install -Dm755 bin/qchat -t "${pkgdir}/usr/bin"
-  install -Dm644 completions/kiro-cli -t "${pkgdir}/usr/share/bash-completion/completions"
-  install -Dm644 completions/_kiro-cli -t "${pkgdir}/usr/share/zsh/vendor-completions"
-  install -Dm644 completions/kiro-cli.fish -t "${pkgdir}/usr/share/fish/vendor_completions.d"
 }
