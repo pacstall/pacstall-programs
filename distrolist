@@ -1,12 +1,183 @@
-ubuntu:
-  jammy/22.04
-  noble/24.04
-  resolute/26.04
-  stonking/26.10
-  tenacious/27.04
-  devel
-debian:
-  bookworm/12
-  trixie/13
-  forky/14
-  sid
+  /<html>
+  /<head>
+  /  <meta content="width=device-width
+  /  <title>Waiting for GitLab to boot</title>
+  /  <style>
+  /    body {
+  /      color: #333238;
+  /      text-align: center;
+  /    }
+  
+  /    h1 {
+  /      font-size: 1.75rem;
+  /      line-height: 2.25rem;
+  /      margin: 1rem 0;
+  /    }
+  
+  /    p {
+  /      margin-bottom: .5rem;
+  /    }
+  
+  /    img {
+  /      display: block;
+  /      margin: 0 auto;
+  /    }
+  
+  /    a {
+  /      text-decoration: none;
+  /      color: #1068bf;
+  /    }
+  
+  /    a:hover {
+  /      text-decoration: underline;
+  /    }
+  
+  /    .error-container {
+  /      max-width: 65ch;
+  /      margin: auto;
+  /      padding: 1rem 0;
+  /    }
+  
+  /    .action-container {
+  /      margin-top: 1.5rem;
+  /    }
+  
+  /    .go-back {
+  /      display: none;
+  /    }
+  
+  /    .footer {
+  /      margin: 1rem 0 0 0;
+  /      padding: 1rem 0 0 0;
+  /      border-top: 1px solid #dcdcde;
+  /      color: #737278;
+  /      font-size: 0.75rem;
+  /    }
+  /    .footer p {
+  /      margin: 0;
+  /    }
+  /  </style>
+  /</head>
+  
+  /<body>
+  /  <div class="error-container">
+  /    <img src='/-/error-illustrations/error-502-lg.svg' alt="502 error"/>
+  /    <h1>HTTP 502: Waiting for GitLab to boot</h1>
+  /    <p>It can take up to a few minutes for GitLab to boot completely.</p>
+  /    <p>This page will automatically reload every 5 seconds.</p>
+  /    <div class="action-container">
+  /      <a href="javascript:history.back()" class="js-go-back go-back">Go back</a>
+  /    </div>
+  
+  /    <div class="footer">
+  /      <p>Refreshed at <span id="refreshedAt"></span></p>
+  /    </div>
+  /  </div>
+  
+  /  <script>
+  /    const now = new Date();
+  /    const refreshedAt = now.toLocaleTimeString();
+  
+  /    document.getElementById("refreshedAt").innerText = refreshedAt;
+  
+  /    window.setTimeout(() => location.reload()
+  
+  /    if (history.length > 1) {
+  /      const goBack = document.querySelector('.js-go-back');
+  /      goBack.style.display = 'inline';
+  /    }
+  /  </script>
+  /</body>
+  /</html>
+  /<!DOCTYPE html>
+  /<html>
+  /<head>
+  /  <meta content="width=device-width
+  /  <title>Waiting for GitLab to boot</title>
+  /  <style>
+  /    body {
+  /      color: #333238;
+  /      text-align: center;
+  /    }
+  
+  /    h1 {
+  /      font-size: 1.75rem;
+  /      line-height: 2.25rem;
+  /      margin: 1rem 0;
+  /    }
+  
+  /    p {
+  /      margin-bottom: .5rem;
+  /    }
+  
+  /    img {
+  /      display: block;
+  /      margin: 0 auto;
+  /    }
+  
+  /    a {
+  /      text-decoration: none;
+  /      color: #1068bf;
+  /    }
+  
+  /    a:hover {
+  /      text-decoration: underline;
+  /    }
+  
+  /    .error-container {
+  /      max-width: 65ch;
+  /      margin: auto;
+  /      padding: 1rem 0;
+  /    }
+  
+  /    .action-container {
+  /      margin-top: 1.5rem;
+  /    }
+  
+  /    .go-back {
+  /      display: none;
+  /    }
+  
+  /    .footer {
+  /      margin: 1rem 0 0 0;
+  /      padding: 1rem 0 0 0;
+  /      border-top: 1px solid #dcdcde;
+  /      color: #737278;
+  /      font-size: 0.75rem;
+  /    }
+  /    .footer p {
+  /      margin: 0;
+  /    }
+  /  </style>
+  /</head>
+  
+  /<body>
+  /  <div class="error-container">
+  /    <img src='/-/error-illustrations/error-502-lg.svg' alt="502 error"/>
+  /    <h1>HTTP 502: Waiting for GitLab to boot</h1>
+  /    <p>It can take up to a few minutes for GitLab to boot completely.</p>
+  /    <p>This page will automatically reload every 5 seconds.</p>
+  /    <div class="action-container">
+  /      <a href="javascript:history.back()" class="js-go-back go-back">Go back</a>
+  /    </div>
+  
+  /    <div class="footer">
+  /      <p>Refreshed at <span id="refreshedAt"></span></p>
+  /    </div>
+  /  </div>
+  
+  /  <script>
+  /    const now = new Date();
+  /    const refreshedAt = now.toLocaleTimeString();
+  
+  /    document.getElementById("refreshedAt").innerText = refreshedAt;
+  
+  /    window.setTimeout(() => location.reload()
+  
+  /    if (history.length > 1) {
+  /      const goBack = document.querySelector('.js-go-back');
+  /      goBack.style.display = 'inline';
+  /    }
+  /  </script>
+  /</body>
+  /</html>
