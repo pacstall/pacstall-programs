@@ -1,9 +1,9 @@
 pkgname="livefaceswap-desktop-deb"
 gives="livefaceswap-desktop"
-pkgver="0.2.10"
+pkgver="0.2.17"
 pkgdesc="Cloud-powered live Face Swap"
 url='https://livefaceswap.ai/desktop'
 arch=("amd64")
 source=("https://github.com/LiveFaceSwapAI/livefaceswap/releases/download/v${pkgver}/LiveFaceSwap-Linux-${pkgver}-amd64.deb")
-sha256sums=("072b2343e78537c264444ebb4cd35ee85361978d828b416888ec72bb21a117c5")
+sha256sums=("ff40165f81c1491a4945cbd90b5d121863651b81b2fa5a5c6b248cdebd7e8766")
 maintainer=("LiveFaceSwap AI <support@livefaceswap.ai>")
