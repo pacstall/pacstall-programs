@@ -3363,7 +3363,7 @@ pkgname = enpass-deb
 ---
 pkgbase = epic-games-launcher-deb
 	gives = epic-games-launcher
-	pkgver = 0.113.0
+	pkgver = 0.115.0
 	pkgdesc = Official Epic Games Store launcher (Preview)
 	url = https://launcher.epicgames.com/
 	arch = amd64
@@ -3371,8 +3371,8 @@ pkgbase = epic-games-launcher-deb
 	provides = epic-games-launcher
 	license = custom:proprietary
 	maintainer = pejuton <pejuton@proton.me>
-	source = https://content-download-egs.distro.on.epicgames.com/Builds/EGLv2/0.113.0%2Bg2164614/Linux/EpicGamesLauncher-x86_64.deb
-	sha256sums = 884def8de247bc279bea571be6f5dec6c5481ac94cc06af62b577624be56c201
+	source = EpicGamesLauncher-0.115.0-gd6d2ef8-x86_64.deb::https://content-download-egs.distro.on.epicgames.com/Builds/EGLv2/0.115.0%2Bgd6d2ef8/Linux/EpicGamesLauncher-x86_64.deb
+	sha256sums = 618adc0bcc778bbb1f49738110d5c219e861ed4cb7adb72b24fb5503156a6d63
 
 pkgname = epic-games-launcher-deb
 ---
