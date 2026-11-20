@@ -1,0 +1,11 @@
+pkgname="torflix-deb"
+gives="torflix"
+pkgver="0.31.1"
+pkgdesc="Torrent video streaming and downloads with a built-in player"
+arch=('amd64')
+url="https://github.com/gary23w/torflix"
+license=('MIT' 'Apache-2.0')
+maintainer=("Garrett Stimpson <info@garrettstimpson.ca>")
+source=("https://github.com/gary23w/torflix/releases/download/v${pkgver}/Torflix-${pkgver}-linux-amd64.deb")
+sha256sums=("60189075f8ababcb2b28707a17dec2e5edd333fcd291d466b2222b28971e7835")
+optdepends=("ffmpeg: audio transcoding for codecs unsupported by the built-in player")
