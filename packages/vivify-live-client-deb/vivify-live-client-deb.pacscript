@@ -1,0 +1,9 @@
+pkgname="vivify-live-client-deb"
+gives="vivify-live-client"
+pkgver="0.2.17"
+pkgdesc="Realtime AI face swap and virtual try-on desktop client"
+url='https://vivify.video'
+arch=("amd64")
+source=("https://r2.vivify.video/downloads/client/stable/linux-x64/Vivify-Live-Linux-${pkgver}-amd64.deb")
+sha256sums=("539a45727a793b35f6da3fe96838c723d5b5d2ef8a26f4cfdc811a390cf4702c")
+maintainer=("Vivify <support@vivify.video>")
