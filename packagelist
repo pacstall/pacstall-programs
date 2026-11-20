@@ -194,6 +194,7 @@ firefox-nightly-bin
 firefox-nightly-deb
 fireperf-deb
 firmware-brcm80211-deb
+firmware-qcom-soc-deb
 firmware-realtek-deb
 fishui-git
 floorp-bin
