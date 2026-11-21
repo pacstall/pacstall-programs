@@ -13911,7 +13911,7 @@ pkgbase = python3-ruff
 	pkgdesc = Fast Python linter and code formatter, written in Rust
 	url = https://github.com/astral-sh/ruff
 	arch = any
-	makedepends = cargo-1.97 | cargo>=1.97 | rustup
+	makedepends = cargo-1.98 | cargo>=1.98 | rustup
 	makedepends = cosign
 	noextract = ruff-0.17.6.tar.gz
 	license = MIT

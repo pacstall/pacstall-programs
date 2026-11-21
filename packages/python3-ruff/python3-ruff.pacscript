@@ -16,7 +16,7 @@ sha256sums=(
   '0378ef60356caaad7b84653691a5d57a1d8b57fd59d173cfc27b0fd4a91a13f3'
   '5813b0ebc960f89ded17829a1430d7acb8099e5897b0b8a8f39b7984a0f25c5d'
 )
-_min_cargo='1.97'
+_min_cargo='1.98'
 makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup" "cosign")
 external_connection=true
 
