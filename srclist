@@ -7084,7 +7084,7 @@ pkgbase = kakoune-powerline-git
 pkgname = kakoune-powerline-git
 ---
 pkgbase = kakoune-tree-sitter
-	pkgver = 3.0.0
+	pkgver = 3.2.2
 	pkgdesc = Tree-sitter plugin for Kakoune
 	url = https://git.sr.ht/~hadronized/kak-tree-sitter
 	arch = amd64
@@ -7092,13 +7092,13 @@ pkgbase = kakoune-tree-sitter
 	arch = armhf
 	arch = i386
 	depends = tree-sitter-cli
-	makedepends = cargo-1.86 | cargo>=1.86 | rustup
+	makedepends = cargo-1.88 | cargo>=1.88 | rustup
 	enhances = kakoune
 	license = BSD-3-Clause
 	maintainer = Erik Hedlund <erikcghedlund@outlook.com>
 	repology = project: kak-tree-sitter
-	source = https://git.sr.ht/~hadronized/kak-tree-sitter/archive/kak-tree-sitter-config-v3.0.0.tar.gz
-	sha256sums = 9b3142ce81872de3e7f68390e2d2b510cb7d20bb3c51ad22832e94abb648fbfe
+	source = https://git.sr.ht/~hadronized/kak-tree-sitter/archive/ktsctl-v3.1.4.tar.gz
+	sha256sums = 28c3c0509e1e05b4b49214dde44d73e8ca89632b6dc9b34fe9b6ffedb890b270
 
 pkgname = kakoune-tree-sitter
 ---
