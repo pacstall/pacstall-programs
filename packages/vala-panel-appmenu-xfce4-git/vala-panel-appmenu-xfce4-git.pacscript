@@ -9,6 +9,7 @@ makedepends=(
   'valac-0.56-vapi>=0.56.18'
   'libglib2.0-dev'
   'libgirepository1.0-dev'
+  'libjson-glib-dev'
   'libxfce4panel-2.0-dev'
   'libxfce4ui-2-dev'
   'libwnck-3-dev'
