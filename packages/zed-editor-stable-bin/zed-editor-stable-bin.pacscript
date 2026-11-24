@@ -12,7 +12,7 @@ sha256sums_x86_64=("3584ba728a182d0281ffd269361330d077ec9511c537432a7d9142bc76a7
 sha256sums_aarch64=("c835844e7bc8587eb3a55eecb0666a85505c6740004b367e764358f3bbb20f98")
 maintainer=("bibelin <balian1belin@yandex.ru>" "Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
 
-# Desktop file should be renamed to dev.zed.Zed.desktop to show correct icon in GNOME on Wayland
+# Desktop file must be named dev.zed.Zed.desktop to show correct icon in GNOME on Wayland
 # Issue: https://github.com/zed-industries/zed/issues/16694
 _desktop="dev.zed.Zed.desktop"
 
@@ -27,7 +27,7 @@ package() {
       "${pkgdir}/usr/share/icons/hicolor/${size}/apps/${gives}.png"
   done
 
-  install -Dm644 "zed.app/share/applications/zed.desktop" "${pkgdir}/usr/share/applications/${_desktop}"
+  install -Dm644 "zed.app/share/applications/${_desktop}" -t "${pkgdir}/usr/share/applications/"
   # "zed" command can conflict with /usr/sbin/zed from zfs-zed package
   sed -i "s/Exec=zed/Exec=${gives}/g" "${pkgdir}/usr/share/applications/${_desktop}"
   sed -i "s/Icon=zed/Icon=${gives}/g" "${pkgdir}/usr/share/applications/${_desktop}"
