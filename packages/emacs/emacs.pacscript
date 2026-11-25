@@ -109,7 +109,7 @@ TREE_SITTER=      # Tree-sitter incremental parsing. Still relatively new
 
 pkgname="emacs"
 arch=("any")
-pkgver="30.2"
+pkgver="31.1"
 source=("@${pkgname}~${pkgver}::http://ftpmirror.gnu.org/emacs/emacs-${pkgver}.tar.xz")
 pkgdesc="An extensible, customizable, free/libre text editor — and more."
 repology=("project: ${pkgname}")
@@ -121,7 +121,7 @@ depends=("${depends_nox[@]}")
 gives="${pkgname}"
 breaks=("${pkgname}-git" "${pkgname}-nox")
 replaces=("${pkgname}-git" "${pkgname}-nox")
-sha256sums=("b3f36f18a6dd2715713370166257de2fae01f9d38cfe878ced9b1e6ded5befd9")
+sha256sums=("1da5790d9580c81932b5bf700633114468da7b3412d69faa767daebf974f4586")
 repology=("project: emacs")
 
 if [[ ${GOLD} == "YES" && ${CLANG} != "YES" ]]; then
