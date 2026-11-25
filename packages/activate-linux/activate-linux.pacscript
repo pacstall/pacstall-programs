@@ -8,7 +8,7 @@ license=("GPL-3.0-only")
 source=("${url}/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=("5c1ab8dc9ddfc3984398f410cd5cf6169609650659d9474b88b1d852a1c3c32b")
 makedepends=("gcc" "make" "gawk" "pkg-config" "libcairo2-dev" "libpango1.0-dev" "libx11-dev" "libxext-dev" "libxfixes-dev" "libxinerama-dev" "libxrandr-dev" "libwayland-dev" "wayland-protocols" "libconfig-dev")
-depends=("libc6" "libcairo2" "libglib2.0-0t64 | libglib2.0-0" "libpango-1.0-0" "libpangocairo-1.0-0" "libx11-6" "libxext6" "libxfixes3" "libxinerama1" "libxrandr2" "libwayland-client0" "libconfig11 | libconfig9")
+depends=("libc6" "libcairo2" "libglib2.0-0t64 | libglib2.0-0" "libpango-1.0-0" "libpangocairo-1.0-0" "libx11-6" "libxext6" "libxfixes3" "libxinerama1" "libxrandr2" "libwayland-client0" "libconfig15 | libconfig11 | libconfig9")
 maintainer=("Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
 
 build() {
