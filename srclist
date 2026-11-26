@@ -64,6 +64,45 @@ pkgbase = abdownloadmanager
 
 pkgname = abdownloadmanager
 ---
+pkgbase = activate-linux
+	pkgver = 1.2.0
+	pkgdesc = The Activate Windows watermark ported to Linux
+	url = https://github.com/MrGlockenspiel/activate-linux
+	arch = any
+	depends = libc6
+	depends = libcairo2
+	depends = libglib2.0-0t64 | libglib2.0-0
+	depends = libpango-1.0-0
+	depends = libpangocairo-1.0-0
+	depends = libx11-6
+	depends = libxext6
+	depends = libxfixes3
+	depends = libxinerama1
+	depends = libxrandr2
+	depends = libwayland-client0
+	depends = libconfig15 | libconfig11 | libconfig9
+	makedepends = gcc
+	makedepends = make
+	makedepends = gawk
+	makedepends = pkg-config
+	makedepends = libcairo2-dev
+	makedepends = libpango1.0-dev
+	makedepends = libx11-dev
+	makedepends = libxext-dev
+	makedepends = libxfixes-dev
+	makedepends = libxinerama-dev
+	makedepends = libxrandr-dev
+	makedepends = libwayland-dev
+	makedepends = wayland-protocols
+	makedepends = libconfig-dev
+	license = GPL-3.0-only
+	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
+	repology = project: activate-linux
+	source = https://github.com/MrGlockenspiel/activate-linux/archive/refs/tags/v1.2.0.tar.gz
+	sha256sums = 5c1ab8dc9ddfc3984398f410cd5cf6169609650659d9474b88b1d852a1c3c32b
+
+pkgname = activate-linux
+---
 pkgbase = adapta-gtk-theme-git
 	gives = adapta-gtk-theme
 	pkgver = 3.95.0.11
@@ -1769,7 +1808,7 @@ pkgname = celeste-bin
 ---
 pkgbase = chatgpt-deb
 	gives = chatgpt
-	pkgver = 26.1120.41243
+	pkgver = 26.1120.50957
 	pkgdesc = ChatGPT desktop application by OpenAI
 	url = https://developers.openai.com/codex/app
 	arch = amd64
@@ -1781,10 +1820,10 @@ pkgbase = chatgpt-deb
 	license = custom:Proprietary
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: chatgpt
-	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1120.41243_amd64.deb
-	sha256sums_amd64 = 3baa1e745a5a3f59f917e92f25b9edf1284a0306b75f1f2e360a766df38b8b23
-	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1120.41243_arm64.deb
-	sha256sums_arm64 = 72b8b9ff2daa7bc750fb2149cec753f5ca06caef2157592777a45475f4292f27
+	source_amd64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1120.50957_amd64.deb
+	sha256sums_amd64 = e8ab38df96d6070fd5d4582a606490637728243bb529e9edae19b3f0a6e664d2
+	source_arm64 = https://persistent.oaistatic.com/codex-app-prod/linux/deb/pool/main/c/chatgpt/chatgpt_26.1120.50957_arm64.deb
+	sha256sums_arm64 = d11adb9a13d21bc5f514885924207af0e8689a978328550e3a43895a69603d89
 
 pkgname = chatgpt-deb
 ---
@@ -3243,7 +3282,7 @@ pkgname = emacs-git
 ---
 pkgbase = emacs
 	gives = emacs
-	pkgver = 30.2
+	pkgver = 31.1
 	pkgdesc = An extensible, customizable, free/libre text editor — and more.
 	arch = any
 	depends = libalsaplayer0
@@ -3301,8 +3340,8 @@ pkgbase = emacs
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: emacs
-	source = @emacs~30.2::http://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
-	sha256sums = b3f36f18a6dd2715713370166257de2fae01f9d38cfe878ced9b1e6ded5befd9
+	source = @emacs~31.1::http://ftpmirror.gnu.org/emacs/emacs-31.1.tar.xz
+	sha256sums = 1da5790d9580c81932b5bf700633114468da7b3412d69faa767daebf974f4586
 
 pkgname = emacs
 ---
@@ -4085,7 +4124,7 @@ pkgname = firefox-nightly-deb
 ---
 pkgbase = fireperf-deb
 	gives = fireperf
-	pkgver = 0.3.0-1.build-271.1
+	pkgver = 0.3.0-1.build-332.1
 	pkgdesc = Network benchmarking tool for firewalls and connection tracking
 	url = https://www.ipfire.org/fireperf
 	arch = amd64
@@ -4099,10 +4138,10 @@ pkgbase = fireperf-deb
 	license = GPL-3.0-or-later
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: fireperf
-	source_amd64 = https://repo.ipfire.org/debian/fireperf/master/pool/bookworm/main/amd64/fireperf_0.3.0-1.build-271.1_amd64.deb
-	sha256sums_amd64 = 1041aca64227105562990dac43c63a7f480ee5e6c706afeb3577e7142c28dbae
-	source_arm64 = https://repo.ipfire.org/debian/fireperf/master/pool/bookworm/main/arm64/fireperf_0.3.0-1.build-271.1_arm64.deb
-	sha256sums_arm64 = 3c27b7949ba07b38fb3269dbc7c0fa48e87689e1fd7fcf452aa81d6acf9db178
+	source_amd64 = https://repo.ipfire.org/debian/fireperf/master/pool/bookworm/main/amd64/fireperf_0.3.0-1.build-332.1_amd64.deb
+	sha256sums_amd64 = a7bebc771610b3c5cd42d310ae676827c91cc744f358e95eae100e88e647c01d
+	source_arm64 = https://repo.ipfire.org/debian/fireperf/master/pool/bookworm/main/arm64/fireperf_0.3.0-1.build-332.1_arm64.deb
+	sha256sums_arm64 = 7b8dec5c4e6b803dd48c7f43c7e2f9a9153393230fd3872cfef2ef4cd4468102
 
 pkgname = fireperf-deb
 ---
@@ -5210,7 +5249,7 @@ pkgname = google-chrome-beta-deb
 ---
 pkgbase = google-chrome-deb
 	gives = google-chrome-stable
-	pkgver = 156.0.8078.73
+	pkgver = 158.0.8127.88
 	pkgdesc = The popular and trusted web browser by Google
 	arch = amd64
 	replaces = google-chrome-stable
@@ -5219,8 +5258,8 @@ pkgbase = google-chrome-deb
 	repology = project: google-chrome
 	repology = visiblename: google-chrome
 	repology = repo: aur
-	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_156.0.8078.73-1_amd64.deb
-	sha256sums = fd19c6895dad77f4d7f712c2d9f0d5eb682f4a6e7ff22b1bd0d40d03710d288c
+	source = https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_158.0.8127.88-1_amd64.deb
+	sha256sums = a656b2db00a8cb7f13a1d754f6aad91f84014906452c6dfb7f3ead93035da03b
 
 pkgname = google-chrome-deb
 ---
@@ -7629,16 +7668,16 @@ pkgname = lact
 ---
 pkgbase = ladybird-deb
 	gives = ladybird
-	pkgver = 2026.47.7-1~ubuntu24.04
+	pkgver = 2026.47.8-1~ubuntu24.04
 	pkgdesc = Independent web browser
 	url = https://ladybird.org
 	arch = amd64
 	arch = arm64
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://apt.ladybird.org/pool/main/l/ladybird/ladybird_2026.47.7-1~ubuntu24.04_amd64.deb
-	sha256sums_amd64 = 67e33f0a234b672734b8965ea7dd5c63c8f0b616313b91d43522c53ad686b1d4
-	source_arm64 = https://apt.ladybird.org/pool/main/l/ladybird/ladybird_2026.47.7-1~ubuntu24.04_arm64.deb
-	sha256sums_arm64 = 7550a3a13f6a5455a00422017423f3a8c6e995fd6843806bb841fc5c5bd4949c
+	source_amd64 = https://apt.ladybird.org/pool/main/l/ladybird/ladybird_2026.47.8-1~ubuntu24.04_amd64.deb
+	sha256sums_amd64 = f45bd4f822f45ebf1ca8a8c044d42a9da99fa80fabab09b845df73ea8d1d6726
+	source_arm64 = https://apt.ladybird.org/pool/main/l/ladybird/ladybird_2026.47.8-1~ubuntu24.04_arm64.deb
+	sha256sums_arm64 = 5725720a6326f211e94ade2a2ffe7e6f6f4248f983d16d9f4b19fea73d65a83a
 
 pkgname = ladybird-deb
 ---
@@ -9025,7 +9064,7 @@ pkgname = lix-git
 ---
 pkgbase = llama-swap-bin
 	gives = llama-swap
-	pkgver = 272
+	pkgver = 275
 	pkgdesc = Reliable model swapping for any local OpenAI/Anthropic compatible server
 	url = https://github.com/mostlygeek/llama-swap/
 	arch = amd64
@@ -9037,8 +9076,8 @@ pkgbase = llama-swap-bin
 	license = MIT
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	repology = project: llama-swap
-	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v272/llama-swap_272_linux_amd64.tar.gz
-	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v272/llama-swap_272_linux_arm64.tar.gz
+	source_amd64 = https://github.com/mostlygeek/llama-swap/releases/download/v275/llama-swap_275_linux_amd64.tar.gz
+	source_arm64 = https://github.com/mostlygeek/llama-swap/releases/download/v275/llama-swap_275_linux_arm64.tar.gz
 
 pkgname = llama-swap-bin
 ---
@@ -11959,7 +11998,7 @@ pkgname = oil
 ---
 pkgbase = ollama-bin
 	gives = ollama
-	pkgver = 0.40.13
+	pkgver = 0.40.18
 	pkgdesc = Get up and running with large language models
 	url = https://ollama.com/
 	arch = amd64
@@ -11970,13 +12009,13 @@ pkgbase = ollama-bin
 	repology = project: ollama
 	optdepends_ubuntu = libnvidia-compute-390 | libnvidia-compute-418 | libnvidia-compute-430 | libnvidia-compute-440 | libnvidia-compute-450 | libnvidia-compute-455 | libnvidia-compute-460 | libnvidia-compute-465 | libnvidia-compute-470 | libnvidia-compute-495 | libnvidia-compute-510 | libnvidia-compute-515 | libnvidia-compute-520 | libnvidia-compute-525 | libnvidia-compute-530 | libnvidia-compute-535 | libnvidia-compute-545 | libnvidia-compute-550 | libnvidia-compute-555 | libnvidia-compute-560 | libnvidia-compute-565 | libnvidia-compute-570 | libnvidia-compute-575 | libnvidia-compute-580 | libnvidia-compute-590: required to use CUDA on NVIDIA GPU
 	optdepends_debian = libcuda1: required to use CUDA on NVIDIA GPU
-	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.40.13/ollama-linux-amd64.tar.zst
+	source_amd64 = https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-linux-amd64.tar.zst
 	source_amd64 = ollama.service
-	sha256sums_amd64 = c9490e0f520be21271d969e6703f012268b1d39f8b70dd58854e5bfef7a75bb6
+	sha256sums_amd64 = b82649006cb5b54ed1237fa2d1a26a7f939a4fd03150033759acbff7ff315adf
 	sha256sums_amd64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
-	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.40.13/ollama-linux-arm64.tar.zst
+	source_arm64 = https://github.com/ollama/ollama/releases/download/v0.40.18/ollama-linux-arm64.tar.zst
 	source_arm64 = ollama.service
-	sha256sums_arm64 = 913d9a28da6da86d551ce4ca531457767bb14d511cbc1d5ca93e9b3b8b9a8666
+	sha256sums_arm64 = 63f01dae3b65641866991e75e2aecb7aed8a4041f4c2c3c7d92862c5a47ebed6
 	sha256sums_arm64 = e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a
 
 pkgname = ollama-bin
@@ -12073,7 +12112,7 @@ pkgname = opencode-bin
 ---
 pkgbase = opencode-v2-bin
 	gives = opencode
-	pkgver = 2.4.1
+	pkgver = 2.4.2
 	pkgdesc = AI coding agent built for the terminal (V2)
 	url = https://github.com/anomalyco/opencode
 	arch = amd64
@@ -12084,10 +12123,10 @@ pkgbase = opencode-v2-bin
 	license = MIT
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: opencode
-	source_amd64 = cli-linux-x64-2.4.1.tgz::https://registry.npmjs.org/@opencode/cli-linux-x64/-/cli-linux-x64-2.4.1.tgz
-	sha256sums_amd64 = 9dbef68f231a311b56441c73c7bec01f6d87ebe44523ad14a7ba4716ff5c2031
-	source_arm64 = cli-linux-arm64-2.4.1.tgz::https://registry.npmjs.org/@opencode/cli-linux-arm64/-/cli-linux-arm64-2.4.1.tgz
-	sha256sums_arm64 = 9eb4567ff0fab90b6dac106f786652a0ec15d65e25ffbcbb106e5ed1cee4f4e2
+	source_amd64 = cli-linux-x64-2.4.2.tgz::https://registry.npmjs.org/@opencode/cli-linux-x64/-/cli-linux-x64-2.4.2.tgz
+	sha256sums_amd64 = 99d288cb5c68411622cbd5a5629afb8f07110cd0a748d7cdd7eb34b08cf56f5a
+	source_arm64 = cli-linux-arm64-2.4.2.tgz::https://registry.npmjs.org/@opencode/cli-linux-arm64/-/cli-linux-arm64-2.4.2.tgz
+	sha256sums_arm64 = d0847f587adca7339c69e22631c50edd6e4f97dee99cec8596e1ec810b98ae95
 
 pkgname = opencode-v2-bin
 ---
@@ -15430,7 +15469,7 @@ pkgbase = scrcpy
 pkgname = scrcpy
 ---
 pkgbase = scx-loader
-	pkgver = 1.1.3
+	pkgver = 1.2.0
 	pkgdesc = System daemon and DBus-based loader for sched-ext schedulers
 	url = https://github.com/sched-ext/scx-loader
 	arch = x86_64
@@ -15441,14 +15480,13 @@ pkgbase = scx-loader
 	makedepends = clang
 	makedepends = llvm
 	makedepends = pkg-config
-	pacdeps = scx-scheds
 	conflicts = scx-loader
 	provides = scx-loader
 	backup = usr/share/scx_loader/config.toml
 	license = GPL-2.0-only
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: scx-loader
-	source = git+https://github.com/sched-ext/scx-loader#commit=eab0ea026f3f86879373b86ca64735b66719f6df
+	source = git+https://github.com/sched-ext/scx-loader#commit=ab63397c80df471c67c5d769128dc48e69d3f2f8
 	sha256sums = SKIP
 
 pkgname = scx-loader
@@ -17093,8 +17131,7 @@ pkgbase = tmpmail-bin
 pkgname = tmpmail-bin
 ---
 pkgbase = tmux
-	pkgver = 3.7c
-	pkgrel = 2
+	pkgver = 3.8
 	pkgdesc = A terminal multiplexer
 	arch = any
 	depends = libevent-core-2.1-7t64 | libevent-core-2.1-7
@@ -17116,8 +17153,8 @@ pkgbase = tmux
 	replaces = tmux
 	maintainer = Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>
 	repology = project: tmux
-	source = @tmux~3.7c::https://github.com/tmux/tmux/releases/download/3.7c/tmux-3.7c.tar.gz
-	sha256sums = 7c60cae9a0e25288e2e24750aafc9e8800fc7fd4555e447e1b29ee4201cfb3bf
+	source = @tmux~3.8::https://github.com/tmux/tmux/releases/download/3.8/tmux-3.8.tar.gz
+	sha256sums = e79c699c7e949dccd0a4a125e17b8d1261e311b16979dbc8eb34542f3966d82e
 
 pkgname = tmux
 ---
@@ -18367,7 +18404,7 @@ pkgname = vkroots-git
 ---
 pkgbase = vscode-deb
 	gives = code
-	pkgver = 1.147.0
+	pkgver = 1.148.0
 	pkgdesc = lightweight but powerful source code editor
 	url = https://code.visualstudio.com/
 	arch = amd64
@@ -18377,12 +18414,12 @@ pkgbase = vscode-deb
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	maintainer = Diegiwg <diegiwg@gmail.com>
 	repology = project: vscode
-	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.147.0/linux-deb-x64/stable
-	sha256sums_amd64 = 749efcdf5008a8323d76773b836199cdecf708fdb993f0f0544d9475176837ab
-	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.147.0/linux-deb-arm64/stable
-	sha256sums_arm64 = 13b65c06a51f573db750878fa671cd89701b5f628e73d5309b7b0c2884814101
-	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.147.0/linux-deb-armhf/stable
-	sha256sums_armhf = 467450ee5f046663bff4e0191c772a18765b729a04a8c63ac02e4770d092a8ac
+	source_amd64 = vscode-amd64.deb::https://update.code.visualstudio.com/1.148.0/linux-deb-x64/stable
+	sha256sums_amd64 = da33c10565e17b83f93508a365222f31bba116ab5c9e7bef7f562783943fd513
+	source_arm64 = vscode-arm64.deb::https://update.code.visualstudio.com/1.148.0/linux-deb-arm64/stable
+	sha256sums_arm64 = e5615144459c865cf5689ac1cd11ed5507532c64aace93ab8eb2c185a2565f18
+	source_armhf = vscode-armhf.deb::https://update.code.visualstudio.com/1.148.0/linux-deb-armhf/stable
+	sha256sums_armhf = 549192dc9297c9d94c15bfcc5abff4ff278d4a737ee2f062a6cfdc1e0730859a
 
 pkgname = vscode-deb
 ---
@@ -20092,7 +20129,7 @@ pkgname = zed-editor-preview-bin
 ---
 pkgbase = zed-editor-stable-bin
 	gives = zed-editor
-	pkgver = 1.29.3
+	pkgver = 1.30.2
 	pkgdesc = A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter
 	url = https://zed.dev
 	arch = x86_64
@@ -20103,10 +20140,10 @@ pkgbase = zed-editor-stable-bin
 	maintainer = bibelin <balian1belin@yandex.ru>
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
 	repology = project: zed-editor
-	source_x86_64 = https://zed.dev/api/releases/stable/1.29.3/zed-linux-x86_64.tar.gz
-	sha256sums_x86_64 = 44b0f350aa7bf4551d1b0aaa2d3b673a6de2c03bc5e979b3592fd2180b4f77c1
-	source_aarch64 = https://zed.dev/api/releases/stable/1.29.3/zed-linux-aarch64.tar.gz
-	sha256sums_aarch64 = 5f1de233ac02d8c9eff68e9ab4207274df3ddbd2cf9fa6f8a80ef5487f03e8ee
+	source_x86_64 = https://zed.dev/api/releases/stable/1.30.2/zed-linux-x86_64.tar.gz
+	sha256sums_x86_64 = 210e6a08dc5343123254dfa9b9dd7a6e828e6ac2b10f98cd4ed1bd7d68cca2df
+	source_aarch64 = https://zed.dev/api/releases/stable/1.30.2/zed-linux-aarch64.tar.gz
+	sha256sums_aarch64 = 497e1732287e974fce9268f828e1053ae384fdec193cbd81f8b0c294ae0efe6f
 
 pkgname = zed-editor-stable-bin
 ---

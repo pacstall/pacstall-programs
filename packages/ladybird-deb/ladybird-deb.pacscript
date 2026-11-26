@@ -1,10 +1,10 @@
 pkgname="ladybird-deb"
 gives="ladybird"
-pkgver="2026.47.7-1~ubuntu24.04"
+pkgver="2026.47.8-1~ubuntu24.04"
 pkgdesc="Independent web browser"
 url='https://ladybird.org'
 arch=("amd64" "arm64")
 maintainer=("Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
 source=("https://apt.ladybird.org/pool/main/l/ladybird/ladybird_${pkgver}_${CARCH}.deb")
-sha256sums_amd64=("67e33f0a234b672734b8965ea7dd5c63c8f0b616313b91d43522c53ad686b1d4")
-sha256sums_arm64=("7550a3a13f6a5455a00422017423f3a8c6e995fd6843806bb841fc5c5bd4949c")
+sha256sums_amd64=("f45bd4f822f45ebf1ca8a8c044d42a9da99fa80fabab09b845df73ea8d1d6726")
+sha256sums_arm64=("5725720a6326f211e94ade2a2ffe7e6f6f4248f983d16d9f4b19fea73d65a83a")
