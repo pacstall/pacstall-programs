@@ -36,15 +36,11 @@ prepare() {
   cd "${srcdir}/OpenBangla-Keyboard"
   git submodule update --init --recursive
 
-  # --- Fix experimental Rust support in CMake ---
-  # Insert CMAKE_EXPERIMENTAL_RUST before enable_language(Rust)
-  # The UUID below is for CMake 4.x (used by current Ubuntu/Debian CI images).
-  # Older CMake versions may need a different UUID; see the note below.
   if grep -q 'enable_language(Rust)' CMakeLists.txt; then
-    sed -i '/enable_language(Rust)/i set(CMAKE_EXPERIMENTAL_RUST "3cc9b32c-47d3-4056-8953-d74e69fc0d6c")' CMakeLists.txt
+    sed -i 's|enable_language(Rust)|if(CMAKE_VERSION VERSION_GREATER_EQUAL "4.4.0")\n  set(CMAKE_EXPERIMENTAL_RUST "b6fdddce-bf66-41a5-bc5f-077f6fa4d2a1")\nelse()\n  set(CMAKE_EXPERIMENTAL_RUST "3cc9b32c-47d3-4056-8953-d74e69fc0d6c")\nendif()\nenable_language(Rust)|' CMakeLists.txt
   fi
 
-  pkgver="r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
+  pkgver="${pkgver}r$(git rev-list --count HEAD).$(git rev-parse --short HEAD)"
 }
 
 build() {
