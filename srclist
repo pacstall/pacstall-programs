@@ -17131,8 +17131,7 @@ pkgbase = tmpmail-bin
 pkgname = tmpmail-bin
 ---
 pkgbase = tmux
-	pkgver = 3.7c
-	pkgrel = 2
+	pkgver = 3.8
 	pkgdesc = A terminal multiplexer
 	arch = any
 	depends = libevent-core-2.1-7t64 | libevent-core-2.1-7
@@ -17154,8 +17153,8 @@ pkgbase = tmux
 	replaces = tmux
 	maintainer = Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>
 	repology = project: tmux
-	source = @tmux~3.7c::https://github.com/tmux/tmux/releases/download/3.7c/tmux-3.7c.tar.gz
-	sha256sums = 7c60cae9a0e25288e2e24750aafc9e8800fc7fd4555e447e1b29ee4201cfb3bf
+	source = @tmux~3.8::https://github.com/tmux/tmux/releases/download/3.8/tmux-3.8.tar.gz
+	sha256sums = e79c699c7e949dccd0a4a125e17b8d1261e311b16979dbc8eb34542f3966d82e
 
 pkgname = tmux
 ---
