@@ -3282,7 +3282,7 @@ pkgname = emacs-git
 ---
 pkgbase = emacs
 	gives = emacs
-	pkgver = 30.2
+	pkgver = 31.1
 	pkgdesc = An extensible, customizable, free/libre text editor — and more.
 	arch = any
 	depends = libalsaplayer0
@@ -3340,8 +3340,8 @@ pkgbase = emacs
 	maintainer = Tobias Heinlein <niontrix@mailbox.org>
 	maintainer = wizard-28 <wiz28@pm.me>
 	repology = project: emacs
-	source = @emacs~30.2::http://ftpmirror.gnu.org/emacs/emacs-30.2.tar.xz
-	sha256sums = b3f36f18a6dd2715713370166257de2fae01f9d38cfe878ced9b1e6ded5befd9
+	source = @emacs~31.1::http://ftpmirror.gnu.org/emacs/emacs-31.1.tar.xz
+	sha256sums = 1da5790d9580c81932b5bf700633114468da7b3412d69faa767daebf974f4586
 
 pkgname = emacs
 ---
