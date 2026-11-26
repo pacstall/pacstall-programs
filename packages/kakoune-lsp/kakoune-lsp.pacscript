@@ -1,5 +1,5 @@
 pkgname='kakoune-lsp'
-pkgver='21.0.2'
+pkgver='22.0.0'
 pkgdesc='Kakoune Language Server Protocol Client'
 license=('Unlicense' 'MIT')
 repology=('project: kak-lsp')
@@ -7,8 +7,8 @@ url='https://lists.sr.ht/~krobelus/kakoune'
 arch=("amd64" "arm64" "armhf" "i386")
 maintainer=("Erik Hedlund <erikcghedlund@outlook.com>")
 source=("https://github.com/${pkgname}/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=("34b4718af5ee39a05a1a176a25cdde4333d2de548e84c148389552e893bc7cc0")
-_min_cargo='1.81'
+sha256sums=("fe631342dc68692ac8cf3ff454e83d37756998e85f27f33d0cfd923c1309a7e0")
+_min_cargo='1.88'
 makedepends=("cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup" 'make')
 enhances=('kakoune')
 external_connection=true

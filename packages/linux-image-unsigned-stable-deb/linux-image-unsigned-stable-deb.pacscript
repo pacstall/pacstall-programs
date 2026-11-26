@@ -1,10 +1,10 @@
 pkgname="linux-image-unsigned-stable-deb"
-gives="linux-image-unsigned-7.2.6-070206-generic"
-pkgver="7.2.6"
-buildver="7.2.6-070206.202609141300"
+gives="linux-image-unsigned-7.3.4-070304-generic"
+pkgver="7.3.4"
+buildver="7.3.4-070304.202611102049"
 arch=('arm64' 'amd64')
-sha256sums_arm64=("02aae8e32fe4d44d47d26b41b9800b9129f0e986840f5a72bdd04b7c78ef5ce8")
-sha256sums_amd64=("9d3929b017a488c8ca265ff14bb19f15217097247a709816e0875eaa7dcc4b61")
+sha256sums_arm64=("f5942812f85450bdf1cfb7ac2ef34d6c153382995cfcc6b3d6d5fb70bc81b8f7")
+sha256sums_amd64=("48299beda9ce0b56caa67a7938c8ce570f5b3186d2ef61a6b01631e7586acc73")
 source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
 pkgdesc="Ubuntu Linux stable kernel (Unsigned image)"
 pacdeps=("linux-headers-generic-stable-deb" "linux-modules-stable-deb")

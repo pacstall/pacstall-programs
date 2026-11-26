@@ -1,0 +1,14 @@
+pkgbase = ladybird-deb
+	gives = ladybird
+	pkgver = 2026.47.8-1~ubuntu24.04
+	pkgdesc = Independent web browser
+	url = https://ladybird.org
+	arch = amd64
+	arch = arm64
+	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
+	source_amd64 = https://apt.ladybird.org/pool/main/l/ladybird/ladybird_2026.47.8-1~ubuntu24.04_amd64.deb
+	sha256sums_amd64 = f45bd4f822f45ebf1ca8a8c044d42a9da99fa80fabab09b845df73ea8d1d6726
+	source_arm64 = https://apt.ladybird.org/pool/main/l/ladybird/ladybird_2026.47.8-1~ubuntu24.04_arm64.deb
+	sha256sums_arm64 = 5725720a6326f211e94ade2a2ffe7e6f6f4248f983d16d9f4b19fea73d65a83a
+
+pkgname = ladybird-deb

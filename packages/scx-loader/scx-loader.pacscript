@@ -2,16 +2,15 @@ pkgname="scx-loader"
 pkgdesc="System daemon and DBus-based loader for sched-ext schedulers"
 repology=("project: scx-loader")
 arch=('x86_64')
-pkgver="1.1.3"
+pkgver="1.2.0"
 _min_cargo="1.95"
 url='https://github.com/sched-ext/scx-loader'
 license=('GPL-2.0-only')
-_commit='eab0ea026f3f86879373b86ca64735b66719f6df'
+_commit='ab63397c80df471c67c5d769128dc48e69d3f2f8'
 source=("git+https://github.com/sched-ext/${pkgname}#commit=${_commit}")
 sha256sums=('SKIP')
 provides=("${pkgname}")
 conflicts=("${pkgname}")
-pacdeps=("scx-scheds")
 depends=(
   "libgcc-s1"
   "polkitd"
@@ -55,7 +54,6 @@ package() {
 
   install -vDm755 target/release/scx_loader -t "${pkgdir}/usr/bin/"
   install -vDm755 target/release/scxctl -t "${pkgdir}/usr/bin/"
-  install -vDm755 target/release/scxtui -t "${pkgdir}/usr/bin/"
 
   # Install runtime assets via xtask
   # (systemd units, D-Bus services, configs, sample files)

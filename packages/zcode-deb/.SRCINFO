@@ -1,6 +1,6 @@
 pkgbase = zcode-deb
 	gives = zcode
-	pkgver = 3.14.4
+	pkgver = 4.0.0
 	pkgdesc = Next-gen vibe coding with multiple AI agents — official harness for GLM
 	url = https://zcode.z.ai
 	arch = amd64
@@ -21,9 +21,9 @@ pkgbase = zcode-deb
 	breaks = zcode-app
 	replaces = zcode
 	maintainer = Christian F. Brinkmann <christian.brinkmann09@gmail.com>
-	source_amd64 = https://cdn-zcode.z.ai/zcode/electron/releases/3.14.4/linux-x64/ZCode-3.14.4-linux-x64.deb
-	sha256sums_amd64 = d753618845e5e057c29ccbc3917c08a4c8d99355deef7d6a0f4d2916ba69e4be
-	source_arm64 = https://cdn-zcode.z.ai/zcode/electron/releases/3.14.4/linux-arm64/ZCode-3.14.4-linux-arm64.deb
-	sha256sums_arm64 = 6874d0b12f9522840746d81f39a001648be68eed3aa80c1348a4e360c44ef718
+	source_amd64 = https://cdn-zcode.z.ai/zcode/electron/releases/4.0.0/linux-x64/ZCode-4.0.0-linux-x64.deb
+	sha256sums_amd64 = 402f0eea0e3dfa23e3176525ae08d0f4101ced64ddbbe77c88ade87c53ab256a
+	source_arm64 = https://cdn-zcode.z.ai/zcode/electron/releases/4.0.0/linux-arm64/ZCode-4.0.0-linux-arm64.deb
+	sha256sums_arm64 = 961a872c505473b03649faf5f4eff8055b214dd017d5a79da532fabbca17de25
 
 pkgname = zcode-deb

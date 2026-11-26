@@ -1,6 +1,6 @@
 pkgname="zed-editor-stable-bin"
 pkgdesc="A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter"
-pkgver="1.22.0"
+pkgver="1.30.2"
 repology=("project: zed-editor")
 gives="zed-editor"
 license=("GPL-3.0-or-later" "AGPL-3.0-or-later" "Apache-2.0")
@@ -8,11 +8,11 @@ arch=("x86_64" "aarch64")
 url='https://zed.dev'
 _channel="stable"
 source=("${url}/api/releases/${_channel}/${pkgver}/zed-linux-${AARCH}.tar.gz")
-sha256sums_x86_64=("5ce3991b34a8fad0a23625f5821cda601c7150a6cc69683c097b8d1b083abc50")
-sha256sums_aarch64=("8b3c5d6e506056a9456ed33072081fd64db84ce47cdf34d4936442cc4f08394a")
+sha256sums_x86_64=("210e6a08dc5343123254dfa9b9dd7a6e828e6ac2b10f98cd4ed1bd7d68cca2df")
+sha256sums_aarch64=("497e1732287e974fce9268f828e1053ae384fdec193cbd81f8b0c294ae0efe6f")
 maintainer=("bibelin <balian1belin@yandex.ru>" "Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
 
-# Desktop file should be renamed to dev.zed.Zed.desktop to show correct icon in GNOME on Wayland
+# Desktop file must be named dev.zed.Zed.desktop to show correct icon in GNOME on Wayland
 # Issue: https://github.com/zed-industries/zed/issues/16694
 _desktop="dev.zed.Zed.desktop"
 
@@ -27,7 +27,7 @@ package() {
       "${pkgdir}/usr/share/icons/hicolor/${size}/apps/${gives}.png"
   done
 
-  install -Dm644 "zed.app/share/applications/zed.desktop" "${pkgdir}/usr/share/applications/${_desktop}"
+  install -Dm644 "zed.app/share/applications/${_desktop}" -t "${pkgdir}/usr/share/applications/"
   # "zed" command can conflict with /usr/sbin/zed from zfs-zed package
   sed -i "s/Exec=zed/Exec=${gives}/g" "${pkgdir}/usr/share/applications/${_desktop}"
   sed -i "s/Icon=zed/Icon=${gives}/g" "${pkgdir}/usr/share/applications/${_desktop}"

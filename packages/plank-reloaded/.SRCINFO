@@ -1,5 +1,5 @@
 pkgbase = plank-reloaded
-	pkgver = 0.11.172
+	pkgver = 0.11.175
 	pkgdesc = Elegant and simple dock
 	url = https://github.com/zquestz/plank-reloaded
 	arch = any
@@ -35,12 +35,12 @@ pkgbase = plank-reloaded
 	replaces = plank
 	replaces = libplank-common
 	replaces = libplank1
-	provides = plank=0.11.172
-	provides = libplank-common=0.11.172
-	provides = libplank1=0.11.172
+	provides = plank=0.11.175
+	provides = libplank-common=0.11.175
+	provides = libplank1=0.11.175
 	maintainer = Elsie19 <elsie19@pm.me>
 	repology = project: plank-reloaded
-	source = https://github.com/zquestz/plank-reloaded/archive/refs/tags/0.11.172.tar.gz
-	sha256sums = 8beb003b03370273b7329fa6e3633eb213288e9676360e70e8a855bb84438c81
+	source = https://github.com/zquestz/plank-reloaded/archive/refs/tags/0.11.175.tar.gz
+	sha256sums = 0c1e2e667d174a39bd67e08034038f5ca5a1e307c4ff7f62179f7721af804089
 
 pkgname = plank-reloaded

@@ -26,6 +26,8 @@ makedepends=(
   'libxinerama-dev'
   'libfontconfig1-dev'
   'liblua5.4-dev'
+  'libinput-dev'
+  'libudev-dev'
 )
 provides=("${gives}")
 conflicts=("${gives}")

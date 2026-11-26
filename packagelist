@@ -1,6 +1,8 @@
+010editor-bin
 1password-cli-bin
 86box-app
 abdownloadmanager
+activate-linux
 adapta-gtk-theme-git
 adw-gtk-theme
 adw-gtk3
@@ -30,6 +32,7 @@ arduino-cli-bin
 arduino-ide-bin
 asdf-vm
 aseprite
+aster-mail-deb
 audiorelay-bin
 audiorelay-deb
 awesome-git
@@ -64,6 +67,7 @@ brave-keyring-deb
 btop-bin
 btrfs-assistant
 btrfs-du-bin
+bun-bin
 cachyos-ananicy-rules-git
 canon-pixma-mg3000-complete-deb
 cantata
@@ -151,6 +155,7 @@ emacs-git
 emby-server-deb
 endlessh-git
 enpass-deb
+epic-games-launcher-deb
 epson-printer-utility-deb
 eqwalizer
 erlang-jsone
@@ -188,6 +193,7 @@ firefox-deb
 firefox-developer-edition-bin
 firefox-nightly-bin
 firefox-nightly-deb
+fireperf-deb
 firmware-brcm80211-deb
 firmware-realtek-deb
 fishui-git
@@ -319,6 +325,7 @@ insync-deb
 intel-undervolt
 intellij-idea-community-bin
 internxt-deb
+iris-autocomplete-deb
 it87-dkms-git
 ivpn-deb
 ivpn-ui-deb
@@ -357,6 +364,7 @@ kwin-krohnkite
 kwin-krohnkite-git
 kxstudio-repos-deb
 lact
+ladybird-deb
 lagrange
 latte-dock-git
 lazarus-project-deb
@@ -607,6 +615,7 @@ onnxruntime-gpu-bin
 open-webui-desktop-deb
 openbangla-keyboard-git
 opencode-bin
+opencode-v2-bin
 opendoas-git
 openrgb-git
 opensnitch-deb
@@ -882,6 +891,7 @@ unicorn-mobile-git
 universal-ctags-git
 upk-git
 upscayl-app
+uskmaker-deb
 uwufetch
 vala-panel-appmenu-xfce4-git
 vega-strike-engine-git
@@ -987,3 +997,4 @@ zoom-deb
 zotero
 zoxide-deb
 zsh-history-substring-search-git
+zyrngis-deb

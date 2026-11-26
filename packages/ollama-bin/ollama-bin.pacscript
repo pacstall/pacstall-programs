@@ -5,18 +5,18 @@ repology=("project: ollama")
 license=("MIT")
 url='https://ollama.com/'
 arch=("amd64" "arm64")
-pkgver="0.34.4"
+pkgver="0.40.18"
 makedepends=("zstd")
 source=(
   "https://github.com/${gives}/${gives}/releases/download/v${pkgver}/${gives}-linux-${CARCH}.tar.zst"
   "ollama.service"
 )
 sha256sums_amd64=(
-  "c238986e61d40c0cc5f4a9b9e40b9eea104350b77efa34741fc134e105cb9533"
+  "b82649006cb5b54ed1237fa2d1a26a7f939a4fd03150033759acbff7ff315adf"
   "e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a"
 )
 sha256sums_arm64=(
-  "96f50a1192133028cf4e010d8c333f8af14b1505db6be7b2034c11487e7fd7e6"
+  "63f01dae3b65641866991e75e2aecb7aed8a4041f4c2c3c7d92862c5a47ebed6"
   "e6893011419cf5d3073f713a130f112b61bbd1ce6f64ee9b4513c6f020f9624a"
 )
 optdepends_ubuntu=(

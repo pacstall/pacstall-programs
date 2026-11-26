@@ -1,5 +1,5 @@
 pkgname="pacstall"
-pkgver="6.4.2"
+pkgver="7.0.0"
 arch=("all")
 pkgdesc="An AUR-inspired package manager for Ubuntu
 Pacstall is the AUR Ubuntu wishes it had. It takes the concept of the AUR

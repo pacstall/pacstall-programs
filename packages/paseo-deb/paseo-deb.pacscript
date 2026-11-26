@@ -1,7 +1,7 @@
 pkgname="paseo-deb"
 gives="paseo"
 replaces=("${gives}")
-pkgver="0.10.3"
+pkgver="0.17.4"
 arch=("amd64")
 url='https://paseo.sh'
 pkgdesc="One interface for Claude Code, Codex, Copilot, OpenCode, and Pi agents
@@ -10,4 +10,4 @@ project=("project: paseo")
 license=('AGPL-3.0')
 maintainer=("Christian F. Brinkmann <christian.brinkmann09@gmail.com>")
 source_amd64=("https://github.com/getpaseo/paseo/releases/download/v${pkgver}/Paseo-${pkgver}-amd64.deb")
-sha256sums_amd64=("4a4fa74c6d55243532c57317c4b9ffb26e2749714af4e4f9bdf7ce8950861702")
+sha256sums_amd64=("c72ea6bc80b6e66c54c67e9060f675a40bf607dd99f0a04e5e7c39d01d28fcf9")

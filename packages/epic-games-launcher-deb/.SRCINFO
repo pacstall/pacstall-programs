@@ -1,0 +1,14 @@
+pkgbase = epic-games-launcher-deb
+	gives = epic-games-launcher
+	pkgver = 0.120.0
+	pkgdesc = Official Epic Games Store launcher (Preview)
+	url = https://launcher.epicgames.com/
+	arch = amd64
+	conflicts = epic-games-launcher
+	provides = epic-games-launcher
+	license = custom:proprietary
+	maintainer = pejuton <pejuton@proton.me>
+	source = EpicGamesLauncher-0.120.0-gc4bf6af-x86_64.deb::https://content-download-egs.distro.on.epicgames.com/Builds/EGLv2/0.120.0%2Bgc4bf6af/Linux/EpicGamesLauncher-x86_64.deb
+	sha256sums = 9d5a8de058f47aac4581c0661879ccd4b68bd54943aa94e8e09db8bb641df109
+
+pkgname = epic-games-launcher-deb

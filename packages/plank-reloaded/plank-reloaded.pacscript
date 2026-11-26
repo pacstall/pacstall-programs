@@ -1,6 +1,6 @@
 pkgname="plank-reloaded"
 arch=("any")
-pkgver="0.11.172"
+pkgver="0.11.175"
 provides=("plank=${pkgver}" "libplank-common=${pkgver}" "libplank1=${pkgver}")
 replaces=("plank" "libplank-common" "libplank1")
 conflicts=("plank" "libplank-common" "libplank1")
@@ -9,7 +9,7 @@ url='https://github.com/zquestz/plank-reloaded'
 maintainer=("Elsie19 <elsie19@pm.me>")
 repology=("project: ${pkgname}")
 source=("https://github.com/zquestz/plank-reloaded/archive/refs/tags/${pkgver}.tar.gz")
-sha256sums=("8beb003b03370273b7329fa6e3633eb213288e9676360e70e8a855bb84438c81")
+sha256sums=("0c1e2e667d174a39bd67e08034038f5ca5a1e307c4ff7f62179f7721af804089")
 makedepends=(
   "git"
   "cmake"

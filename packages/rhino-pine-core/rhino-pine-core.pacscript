@@ -7,12 +7,12 @@ if [[ -f /usr/bin/enable-modem ]]; then
 fi
 pkgdesc="Transitional package to provide all core Rhino Linux Mobile software"
 maintainer=("Oren Klopfer <oren@taumoda.com>")
-compatible=("ubuntu:devel" "ubuntu:resolute" "ubuntu:stonking")
+compatible=("ubuntu:devel" "ubuntu:stonking" "ubuntu:tenacious")
 replaces=("rhino-core" "rhino-server-core" "rhino-ubxi-core")
 priority="essential"
 arch=("all")
 pkgver="2026.1"
-pkgrel="1"
+pkgrel="2"
 style="(mobile)"
 branch="devel"
 

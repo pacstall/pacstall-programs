@@ -1,8 +1,7 @@
 pkgname="tmux"
 arch=("any")
 arch=("any")
-pkgver="3.7c"
-pkgrel="2"
+pkgver="3.8"
 repology=("project: ${pkgname}")
 source=("@${pkgname}~${pkgver}::https://github.com/tmux/tmux/releases/download/${pkgver}/tmux-${pkgver}.tar.gz")
 makedepends=("gcc" "make" "pkg-config" "bison" "libncurses-dev" "libevent-dev" "libutempter-dev")
@@ -15,7 +14,7 @@ depends=(
 breaks=("${pkgname}-git" "${pkgname}-bin" "${pkgname}-deb" "${pkgname}-app")
 replaces=("tmux")
 pkgdesc="A terminal multiplexer"
-sha256sums=("7c60cae9a0e25288e2e24750aafc9e8800fc7fd4555e447e1b29ee4201cfb3bf")
+sha256sums=("e79c699c7e949dccd0a4a125e17b8d1261e311b16979dbc8eb34542f3966d82e")
 optdepends=("libutempter-dev: Record user sessions to utmp and wtmp files")
 maintainer=("Harshwardhan Mehrotra <abrakadabra18262@protonmail.com>")
 
