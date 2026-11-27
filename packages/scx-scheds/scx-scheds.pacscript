@@ -2,37 +2,36 @@ pkgname="scx-scheds"
 pkgdesc="sched_ext schedulers and tools"
 repology=("project: scx-scheds")
 arch=('x86_64')
-pkgver="1.1.4"
+pkgver="1.1.5"
 _min_cargo='1.94'
 url='https://github.com/sched-ext/scx'
 license=('GPL-2.0-only')
 _gitname='scx'
-_commit='e7b3a219617472cf78880ac424714e52c932db61'
+_commit='9e28779f65603bbab06b62392089adc96b9bcc65'
 source=("git+https://github.com/sched-ext/${_gitname}#commit=${_commit}")
 sha256sums=('SKIP')
-provides=("${pkgname}")
-conflicts=("${pkgname}")
+replaces=("scx-loader<1.2.0") # scxtui was moved from scx-loader to sched-ext/scx
+breaks=("scx-loader<1.2.0")
 limit_kver=">=6.12"
-incompatible=("debian:bullseye" "debian:bookworm" "debian:trixie" "ubuntu:jammy" "ubuntu:noble")
+incompatible=("debian:bookworm" "debian:trixie" "ubuntu:jammy" "ubuntu:noble")
 depends=(
   "bash"
   "bpftool"
   "libgcc-s1"
-  "libseccomp2"
   "libbpf1>=1.3"
   "libelf1t64"
   "libprotobuf32t64"
   "zlib1g"
+  "polkitd"
 )
 makedepends=(
   "cargo-${_min_cargo} | cargo>=${_min_cargo} | rustup"
   "build-essential"
-  "clang"
+  "clang-22"
   "llvm"
   "pkg-config"
   "libelf-dev"
   "protobuf-compiler"
-  "libseccomp-dev"
   "libbpf-dev"
   "libzstd-dev"
   "zlib1g-dev"
@@ -70,16 +69,10 @@ build() {
   export CARGO_TARGET_DIR=target
   export RUSTUP_TOOLCHAIN=stable
   export PATH="/usr/lib/rust-${_min_cargo}/bin:${PATH}"
-
-  clang_version=$(clang -dumpversion | cut -d. -f1)
+  export BPF_CLANG=clang-22
 
   exclude_args=(
     --exclude scx_forge
-    --exclude scx_flow
-    --exclude scx_mavd
-    --exclude scx_mlfq
-    --exclude scx_nitosis
-    --exclude scx_rlfifo
     --exclude xtask
     --exclude vmlinux_docify
     --exclude scx_arena_libarena_selftests
@@ -88,10 +81,10 @@ build() {
     --exclude scx_forge_agent
   )
 
-  if ((clang_version < 22)); then
-    fancy_message warn "cid-form schedulers depend on clang >= 22, or set SCX_ALLOW_OLD_CLANG=1 to build anyway."
-    exclude_args+=(--exclude scx_eevdf)
-  fi
+  for sched in scheds/experimental/*/; do
+    [[ -d ${sched} ]] || continue
+    exclude_args+=(--exclude "$(basename "${sched}")")
+  done
 
   cargo build \
     --release \
@@ -112,6 +105,11 @@ package() {
   # Systemd service
   install -vDm644 services/scx.service -t "${pkgdir}/usr/lib/systemd/system"
   install -vDm644 services/scx -t "${pkgdir}/etc/default"
+
+  # Scheduler catalog and policy for scxcli
+  install -vDm644 services/catalog.json -t "${pkgdir}/usr/share/scx"
+  install -vDm644 tools/scxcli/org.sched_ext.scxcli.policy \
+    -t "${pkgdir}/usr/share/polkit-1/actions"
 }
 
 pre_remove() {
