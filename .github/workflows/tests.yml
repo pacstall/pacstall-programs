@@ -7,11 +7,38 @@ defaults:
     shell: bash
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      pacscripts: ${{ steps.changes.outputs.pacscripts }}
+      pacscripts_files: ${{ steps.changes.outputs.pacscripts_files }}
+      os_matrix: ${{ steps.matrix.outputs.os_matrix }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - id: changes
+        uses: dorny/paths-filter@v4
+        with:
+          list-files: shell
+          filters: |
+            pacscripts:
+              - 'packages/*/*.pacscript'
+
+      - id: matrix
+        if: steps.changes.outputs.pacscripts == 'true'
+        env:
+          PAC_FILES: ${{ steps.changes.outputs.pacscripts_files }}
+        run: |
+          os_matrix="$(bash .github/scripts/resolve-ci-matrix.sh "$PAC_FILES")"
+          echo "os_matrix=${os_matrix}" >> "$GITHUB_OUTPUT"
+
   run-tests:
+    needs: prepare
+    if: needs.prepare.outputs.pacscripts == 'true'
     strategy:
       fail-fast: false
       matrix:
-        OS: ["ubuntu:latest", "ubuntu:devel", "ubuntu:rolling", "debian:stable", "debian:testing", "debian:unstable"]
+        OS: ${{ fromJson(needs.prepare.outputs.os_matrix || '["ubuntu:latest"]') }}
         PACSTALL_VERSION: ["master", "develop"]
 
     runs-on: ubuntu-latest
@@ -30,16 +57,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - id: changes
-        uses: dorny/paths-filter@v4
-        with:
-          list-files: shell
-          filters: |
-            pacscripts:
-              - 'packages/*/*.pacscript'
-
       - name: Install system utilities
-        if: steps.changes.outputs.pacscripts == 'true'
         run: |
           dpkg --add-architecture i386
           dpkg --add-architecture arm64
@@ -97,7 +115,6 @@ jobs:
           ln -fs /usr/share/zoneinfo/Africa/Libreville /etc/localtime
 
       - name: Create test user
-        if: steps.changes.outputs.pacscripts == 'true'
         run: |
           useradd \
             --create-home \
@@ -115,7 +132,6 @@ jobs:
           chmod -R 777 /tmp
 
       - name: Install Pacstall
-        if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         run: |
           curl -fsSL 'https://pacstall.dev/q/install?dnt' \
@@ -132,7 +148,6 @@ jobs:
             /usr/bin/pacstall
 
       - name: Set Pacstall Version
-        if: steps.changes.outputs.pacscripts == 'true'
         env:
           PACSTALL_VERSION: ${{ matrix.PACSTALL_VERSION }}
         shell: sudo -E -u dio bash {0}
@@ -140,14 +155,15 @@ jobs:
           pacstall -U pacstall "${PACSTALL_VERSION}"
 
       - name: Installing Packages
-        if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
           PRNUM: ${{ github.event.pull_request.number }}
           GITHUB_ACTIONS: true
           METADIR: /var/lib/pacstall/metadata
+          PAC_FILES: ${{ needs.prepare.outputs.pacscripts_files }}
+          MATRIX_OS: ${{ matrix.OS }}
         run: |
-          for changed_file in ${{ steps.changes.outputs.pacscripts_files }}; do
+          for changed_file in ${PAC_FILES}; do
             [[ ${changed_file} == *".pacscript" ]] || continue
 
             echo "::group::${changed_file}"
@@ -160,6 +176,12 @@ jobs:
               continue
             fi
 
+            if ! bash .github/scripts/resolve-ci-matrix.sh --check-current "${changed_file}"; then
+              echo "Skipping ${package_name} (incompatible with this container)..."
+              echo "::endgroup::"
+              continue
+            fi
+
             echo "Running 'pacstall -Qa' for ${package_name}..."
             echo "pacstall -Qa ${package_name}#${PRNUM}@github:${GITHUB_REPOSITORY}"
 
@@ -167,7 +189,6 @@ jobs:
             echo "::endgroup::"
           done
       - name: Output Package Trees
-        if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
           GITHUB_ACTIONS: true
@@ -179,7 +200,6 @@ jobs:
             echo "::endgroup::"
           done
       - name: Show APT Packages
-        if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
           GITHUB_ACTIONS: true
@@ -194,7 +214,6 @@ jobs:
             echo "::endgroup::"
           done
       - name: Uninstalling Packages
-        if: steps.changes.outputs.pacscripts == 'true'
         shell: sudo -E -u dio bash {0}
         env:
           GITHUB_ACTIONS: true
