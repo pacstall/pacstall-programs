@@ -3715,6 +3715,7 @@ pkgbase = fastx5-client-deb
 	pkgdesc = Connect to a FastX server via SSH or HTTPS
 	url = https://www.starnet.com/fastx/
 	arch = amd64
+	compatible = ubuntu:noble
 	maintainer = chrisb09 <christian.brinkmann09@gmail.com>
 	source = https://www.starnet.com/files/private/FastX-client/fastx5-client_5.1.14_amd64.deb
 	sha256sums = 1ef6b7918234eb8c04d2afe2cbfccd8737f3171302e02435a6c2389f97af7c87
