@@ -9214,7 +9214,7 @@ pkgname = lunarclient-app
 ---
 pkgbase = lutris-deb
 	gives = lutris
-	pkgver = 0.5.22
+	pkgver = 0.5.23
 	pkgdesc = Open source gaming platform
 	url = https://lutris.net
 	arch = all
@@ -9234,8 +9234,8 @@ pkgbase = lutris-deb
 	maintainer = Oren Klopfer <oren@taumoda.com>
 	maintainer = pejuton <pejuton@proton.me>
 	repology = project: lutris
-	source = https://github.com/lutris/lutris/releases/download/v0.5.22/lutris_0.5.22_all.deb
-	sha256sums = 88a350357e0438b423cdf93108f27942de094dc19f973df73839f3b0b0bafaa0
+	source = https://github.com/lutris/lutris/releases/download/v0.5.23/lutris_0.5.23_all.deb
+	sha256sums = 6459e8a208053e5f9e5db24939e668356933b116e71ac37c22d3d773b00c5f13
 
 pkgname = lutris-deb
 ---
